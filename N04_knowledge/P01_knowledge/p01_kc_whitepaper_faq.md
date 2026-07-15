@@ -51,7 +51,7 @@ Yes. CEXAI is provider-agnostic. Edit `.cex/config/nucleus_models.yaml` to point
 
 ### Q4. Does CEXAI work offline / air-gapped?
 
-Yes, in two ways. (1) The complete free-tier setup uses Ollama locally -- no API keys, no internet, Mode B with pre-compiled prompt packages. (2) The 156 CLI tools (`_tools/cex_*.py`) are pure Python with no network calls -- routing, validation, retrieval, scoring, compilation all run offline. Whitepaper §5.3 documents the free profile; stress test data (§7.6) shows `llama3.1:8b` is the currently passing local model.
+Yes, in two ways. (1) The complete free-tier setup uses Ollama locally -- no API keys, no internet, Mode B with pre-compiled prompt packages. (2) The 88 CLI tools (`_tools/cex_*.py`) are pure Python with no network calls -- routing, validation, retrieval, scoring, compilation all run offline. Whitepaper §5.3 documents the free profile; stress test data (§7.6) shows `llama3.1:8b` is the currently passing local model.
 
 ## Pipeline & Performance
 
@@ -113,7 +113,7 @@ The Exchange is git-native. Every artifact carries its identity in YAML frontmat
 
 ### Q16. Can I use just the tools without the full system?
 
-Yes. The 156 tools at `_tools/cex_*.py` are independent Python scripts with documented CLIs. Pick any subset: `cex_doctor.py` validates artifacts, `cex_compile.py` compiles `.md` to `.yaml`, `cex_retriever.py` does TF-IDF search, `cex_intent_resolver.py` maps phrases to kind/pillar tuples, `cex_score.py` computes structural scores. They expect the artifact format (frontmatter + body) but do not require the full nucleus directory tree, the runtime configuration, or the dispatch scripts. The whitepaper §6 lists the principal tools.
+Yes. The 88 tools at `_tools/cex_*.py` are independent Python scripts with documented CLIs. Pick any subset: `cex_doctor.py` validates artifacts, `cex_compile.py` compiles `.md` to `.yaml`, `cex_retriever.py` does TF-IDF search, `cex_intent_resolver.py` maps phrases to kind/pillar tuples, `cex_score.py` computes structural scores. They expect the artifact format (frontmatter + body) but do not require the full nucleus directory tree, the runtime configuration, or the dispatch scripts. The whitepaper §6 lists the principal tools.
 
 ## Cross-Reference
 
