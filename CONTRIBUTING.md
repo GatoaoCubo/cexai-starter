@@ -39,7 +39,7 @@ By participating you agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
 ## First fix in 5 minutes
 
 ```bash
-git clone https://github.com/GatoaoCubo/https://github.com/GatoaoCubo/cexai-starter.git
+git clone https://github.com/GatoaoCubo/cexai-starter.git
 cd https://github.com/GatoaoCubo/cexai-starter
 sh start.sh                      # or .\start.ps1 on Windows -- confirm it still runs
 python _tools/cex_bootstrap.py --check   # confirm: BOOTSTRAPPED: Sua Empresa
@@ -70,7 +70,7 @@ you installed its Python deps).
 Not a code contribution, but the most common reason people open an issue here: you want a
 repo like this one, filled in for **your** company instead of left as `[preencher]`.
 
-**[Open an issue](https://github.com/GatoaoCubo/https://github.com/GatoaoCubo/cexai-starter/issues/new?title=I%20want%20my%20own%20sovereign%20repo&body=Company%3A%20%0ASite%3A%20%0AIndustry%3A%20)**
+**[Open an issue](https://github.com/GatoaoCubo/cexai-starter/issues/new?title=I%20want%20my%20own%20sovereign%20repo&body=Company%3A%20%0ASite%3A%20%0AIndustry%3A%20)**
 with your company name, site, and industry. You will get the next steps back. This
 starter's own storefront also runs a richer, in-app equivalent at `/intake`.
 

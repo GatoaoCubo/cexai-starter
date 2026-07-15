@@ -119,7 +119,7 @@ running apps (colors, catalog, hero copy) end to end is exactly what the factory
 ## 60-second run
 
 ```bash
-git clone https://github.com/GatoaoCubo/https://github.com/GatoaoCubo/cexai-starter.git
+git clone https://github.com/GatoaoCubo/cexai-starter.git
 cd https://github.com/GatoaoCubo/cexai-starter
 
 # Mac / Linux / WSL / Git-Bash
@@ -155,7 +155,7 @@ Based on CEXAI (Apache-2.0) -- see [License](#license) below.
 Filling every `[preencher]` by hand works -- but the CEXAI factory can do it for you in one
 fabrication run, the same `/genesis` service that produced this starter. Open an issue:
 
-**[github.com/GatoaoCubo/https://github.com/GatoaoCubo/cexai-starter/issues/new?title=I%20want%20my%20own%20sovereign%20repo&body=Company%3A%20%0ASite%3A%20%0AIndustry%3A%20](https://github.com/GatoaoCubo/https://github.com/GatoaoCubo/cexai-starter/issues/new?title=I%20want%20my%20own%20sovereign%20repo&body=Company%3A%20%0ASite%3A%20%0AIndustry%3A%20)**
+**[github.com/GatoaoCubo/cexai-starter/issues/new?title=I%20want%20my%20own%20sovereign%20repo&body=Company%3A%20%0ASite%3A%20%0AIndustry%3A%20](https://github.com/GatoaoCubo/cexai-starter/issues/new?title=I%20want%20my%20own%20sovereign%20repo&body=Company%3A%20%0ASite%3A%20%0AIndustry%3A%20)**
 
 with your company name, site, and industry -- you get the next steps back. This starter's
 own storefront also runs a richer, in-app equivalent at `/intake`
@@ -179,7 +179,7 @@ Guia completo: [QUICKSTART.md](QUICKSTART.md).
 `python _tools/cex_bootstrap.py` (interativo) ou `--from-file sua_marca.yaml`.
 
 **Quer que a fábrica preencha para você?** Abra um issue em
-[github.com/GatoaoCubo/https://github.com/GatoaoCubo/cexai-starter/issues/new](https://github.com/GatoaoCubo/https://github.com/GatoaoCubo/cexai-starter/issues/new)
+[github.com/GatoaoCubo/cexai-starter/issues/new](https://github.com/GatoaoCubo/cexai-starter/issues/new)
 com o nome da sua empresa, site e segmento.
 
 ## Every placeholder is yours to fill
