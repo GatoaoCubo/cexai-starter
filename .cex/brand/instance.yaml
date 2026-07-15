@@ -3,7 +3,7 @@ schema: cex.instance/1
 slug: starter
 framework:
   source: snapshot              # git -> snapshot (sovereign fork; no phone-home)
-  repo: github.com/GatoaoCubo/cex
+  repo: github.com/GatoaoCubo/cexai-starter
   ref: v1.14.0
   version: 1.14.0
   content_hash: 293c086dd34bde24cb2d892e8ab95ea53df05cc0ff046a27f77d0170401afd34

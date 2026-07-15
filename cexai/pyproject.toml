@@ -61,7 +61,7 @@ docs = ["mkdocs", "mkdocs-material"]
 cexai = "cexai.foundation.invocation.cli:app"
 
 [project.urls]
-Specs = "https://github.com/GatoaoCubo/cex/tree/main/cexai-specs"
+Specs = "https://github.com/GatoaoCubo/cexai-starter"
 
 # -----------------------------------------------------------------------------
 # Packaging: the importable package is the nested cexai/ dir; tests are excluded
