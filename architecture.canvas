@@ -1,0 +1,135 @@
+{
+  "nodes": [
+    {
+      "id": "title",
+      "type": "text",
+      "x": -700, "y": -900, "width": 1400, "height": 110,
+      "color": "0",
+      "text": "# CEXAI Sovereign Starter\n**125 kinds** | **119 builders** | **12 pillars** | **8 nuclei** | **88 tools** -- sovereign, unfilled by design, Apache-2.0\nEvery `file:` card below is a live embed of a real file in this repo -- click through, it is not a diagram."
+    },
+
+    {
+      "id": "hub",
+      "type": "file",
+      "file": "HOME.md",
+      "x": -110, "y": -730, "width": 220, "height": 130,
+      "color": "#d45cf5"
+    },
+
+    { "id": "nav-readme",     "type": "file", "file": "README.md",     "x": -515, "y": -540, "width": 190, "height": 100, "color": "0" },
+    { "id": "nav-quickstart", "type": "file", "file": "QUICKSTART.md", "x": -305, "y": -540, "width": 190, "height": 100, "color": "0" },
+    { "id": "nav-index",      "type": "file", "file": "INDEX.md",      "x":  -95, "y": -540, "width": 190, "height": 100, "color": "0" },
+    { "id": "nav-agents",     "type": "file", "file": "AGENTS.md",     "x":  115, "y": -540, "width": 190, "height": 100, "color": "0" },
+    { "id": "nav-cookbook",   "type": "file", "file": "COOKBOOK.md",   "x":  325, "y": -540, "width": 190, "height": 100, "color": "0" },
+
+    {
+      "id": "sep-nuclei",
+      "type": "text",
+      "x": -700, "y": -400, "width": 1400, "height": 30,
+      "color": "0",
+      "text": "### 8 Nuclei -- one 12-pillar department each (read yourself, in-session -- no dispatch/grid in this starter)"
+    },
+
+    { "id": "n00", "type": "file", "file": "N00_genesis/rules/n00-genesis.md",             "x": -770, "y": -340, "width": 175, "height": 140, "color": "#cc9da5" },
+    { "id": "n01", "type": "file", "file": "N01_intelligence/rules/n01-intelligence.md",   "x": -575, "y": -340, "width": 175, "height": 140, "color": "#6c8ebf" },
+    { "id": "n02", "type": "file", "file": "N02_marketing/rules/n02-marketing.md",         "x": -380, "y": -340, "width": 175, "height": 140, "color": "#e84393" },
+    { "id": "n03", "type": "file", "file": "N03_engineering/rules/n03-builder.md",         "x": -185, "y": -340, "width": 175, "height": 140, "color": "#ff7675" },
+    { "id": "n04", "type": "file", "file": "N04_knowledge/rules/n04-knowledge.md",         "x":   10, "y": -340, "width": 175, "height": 140, "color": "#f3b5b8" },
+    { "id": "n05", "type": "file", "file": "N05_operations/rules/n05-operations.md",       "x":  205, "y": -340, "width": 175, "height": 140, "color": "#fd79a8" },
+    { "id": "n06", "type": "file", "file": "N06_commercial/rules/n06-commercial.md",       "x":  400, "y": -340, "width": 175, "height": 140, "color": "#e17055" },
+    { "id": "n07", "type": "file", "file": "N07_admin/rules/n07-admin.md",                 "x":  595, "y": -340, "width": 175, "height": 140, "color": "#00cec9" },
+
+    {
+      "id": "sep-8f",
+      "type": "text",
+      "x": -700, "y": -160, "width": 1400, "height": 30,
+      "color": "0",
+      "text": "### 8F Reasoning Pipeline -- every artifact, every nucleus, F1 through F8. Full protocol: [[INDEX|INDEX.md]]"
+    },
+
+    { "id": "f1", "type": "text", "x": -612, "y": -100, "width": 140, "height": 90, "color": "4", "text": "**F1**\nCONSTRAIN\n`kind + schema`" },
+    { "id": "f2", "type": "text", "x": -457, "y": -100, "width": 140, "height": 90, "color": "4", "text": "**F2**\nBECOME\n`load builder ISOs`" },
+    { "id": "f3", "type": "text", "x": -302, "y": -100, "width": 140, "height": 90, "color": "4", "text": "**F3**\nINJECT\n`context + KCs`" },
+    { "id": "f4", "type": "text", "x": -147, "y": -100, "width": 140, "height": 90, "color": "5", "text": "**F4**\nREASON\n`plan sections`" },
+    { "id": "f5", "type": "text", "x":    8, "y": -100, "width": 140, "height": 90, "color": "5", "text": "**F5**\nCALL\n`tools + reuse scan`" },
+    { "id": "f6", "type": "text", "x":  163, "y": -100, "width": 140, "height": 90, "color": "6", "text": "**F6**\nPRODUCE\n`generate artifact`" },
+    { "id": "f7", "type": "text", "x":  318, "y": -100, "width": 140, "height": 90, "color": "1", "text": "**F7**\nGOVERN\n`quality gate`" },
+    { "id": "f8", "type": "text", "x":  473, "y": -100, "width": 140, "height": 90, "color": "0", "text": "**F8**\nCOLLABORATE\n`save + signal`" },
+
+    {
+      "id": "sep-pillars",
+      "type": "text",
+      "x": -700, "y": 30, "width": 1400, "height": 30,
+      "color": "0",
+      "text": "### 12 Pillars -- domain taxonomy every nucleus mirrors (all 8 nuclei carry all 12)"
+    },
+
+    { "id": "p01", "type": "text", "x": -495, "y": 90, "width": 150, "height": 70, "color": "#6abf69", "text": "**P01**\nKnowledge" },
+    { "id": "p02", "type": "text", "x": -327, "y": 90, "width": 150, "height": 70, "color": "#5b9bd5", "text": "**P02**\nModel" },
+    { "id": "p03", "type": "text", "x": -159, "y": 90, "width": 150, "height": 70, "color": "#a855f7", "text": "**P03**\nPrompt" },
+    { "id": "p04", "type": "text", "x":    9, "y": 90, "width": 150, "height": 70, "color": "#e8734a", "text": "**P04**\nTools" },
+    { "id": "p05", "type": "text", "x":  177, "y": 90, "width": 150, "height": 70, "color": "#d4af37", "text": "**P05**\nOutput" },
+    { "id": "p06", "type": "text", "x":  345, "y": 90, "width": 150, "height": 70, "color": "#26c6da", "text": "**P06**\nSchema" },
+
+    { "id": "p07", "type": "text", "x": -495, "y": 180, "width": 150, "height": 70, "color": "#c4b550", "text": "**P07**\nEvaluation" },
+    { "id": "p08", "type": "text", "x": -327, "y": 180, "width": 150, "height": 70, "color": "#a0845c", "text": "**P08**\nArchitecture" },
+    { "id": "p09", "type": "text", "x": -159, "y": 180, "width": 150, "height": 70, "color": "#7a7a7a", "text": "**P09**\nConfig" },
+    { "id": "p10", "type": "text", "x":    9, "y": 180, "width": 150, "height": 70, "color": "#9c6fd4", "text": "**P10**\nMemory" },
+    { "id": "p11", "type": "text", "x":  177, "y": 180, "width": 150, "height": 70, "color": "#e06c8e", "text": "**P11**\nFeedback" },
+    { "id": "p12", "type": "text", "x":  345, "y": 180, "width": 150, "height": 70, "color": "#d4af37", "text": "**P12**\nOrchestration" },
+
+    {
+      "id": "sep-foundation",
+      "type": "text",
+      "x": -700, "y": 290, "width": 1400, "height": 30,
+      "color": "0",
+      "text": "### Foundation -- builders, tools, the kind registry"
+    },
+
+    {
+      "id": "fnd-builders",
+      "type": "text",
+      "x": -520, "y": 350, "width": 320, "height": 100,
+      "color": "0",
+      "text": "**archetypes/builders/**\n119 builders x 12 ISOs = 1,428 ISO files\n(+ 12 shared helper files in `_shared/`)"
+    },
+    {
+      "id": "fnd-tools",
+      "type": "text",
+      "x": -160, "y": 350, "width": 320, "height": 100,
+      "color": "0",
+      "text": "**_tools/**\n88 Python CLI tools\n`cex_doctor` . `cex_8f_runner` . `cex_bootstrap` . `cex_compile` . `cex_score`"
+    },
+    {
+      "id": "fnd-kinds",
+      "type": "text",
+      "x": 200, "y": 350, "width": 320, "height": 100,
+      "color": "0",
+      "text": "**125 typed kinds**\n`.cex/kinds_meta.json`\ne.g. [[N00_genesis/P01_knowledge/library/kind/kc_agent|kc_agent]] . [[N00_genesis/P01_knowledge/library/kind/kc_knowledge_card|kc_knowledge_card]] . [[N00_genesis/P01_knowledge/library/kind/kc_prompt_template|kc_prompt_template]]"
+    }
+  ],
+  "edges": [
+    { "id": "e-hub-readme",     "fromNode": "hub", "toNode": "nav-readme",     "fromSide": "bottom", "toSide": "top", "label": "start here" },
+    { "id": "e-hub-quickstart", "fromNode": "hub", "toNode": "nav-quickstart", "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-hub-index",     "fromNode": "hub", "toNode": "nav-index",      "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-hub-agents",    "fromNode": "hub", "toNode": "nav-agents",     "fromSide": "bottom", "toSide": "top" },
+    { "id": "e-hub-cookbook",  "fromNode": "hub", "toNode": "nav-cookbook",   "fromSide": "bottom", "toSide": "top" },
+
+    { "id": "e-hub-n00", "fromNode": "hub", "toNode": "n00", "fromSide": "bottom", "toSide": "top", "color": "#cc9da5", "label": "department" },
+    { "id": "e-hub-n01", "fromNode": "hub", "toNode": "n01", "fromSide": "bottom", "toSide": "top", "color": "#6c8ebf" },
+    { "id": "e-hub-n02", "fromNode": "hub", "toNode": "n02", "fromSide": "bottom", "toSide": "top", "color": "#e84393" },
+    { "id": "e-hub-n03", "fromNode": "hub", "toNode": "n03", "fromSide": "bottom", "toSide": "top", "color": "#ff7675" },
+    { "id": "e-hub-n04", "fromNode": "hub", "toNode": "n04", "fromSide": "bottom", "toSide": "top", "color": "#f3b5b8" },
+    { "id": "e-hub-n05", "fromNode": "hub", "toNode": "n05", "fromSide": "bottom", "toSide": "top", "color": "#fd79a8" },
+    { "id": "e-hub-n06", "fromNode": "hub", "toNode": "n06", "fromSide": "bottom", "toSide": "top", "color": "#e17055" },
+    { "id": "e-hub-n07", "fromNode": "hub", "toNode": "n07", "fromSide": "bottom", "toSide": "top", "color": "#00cec9" },
+
+    { "id": "e-f1-f2", "fromNode": "f1", "toNode": "f2", "fromSide": "right", "toSide": "left" },
+    { "id": "e-f2-f3", "fromNode": "f2", "toNode": "f3", "fromSide": "right", "toSide": "left" },
+    { "id": "e-f3-f4", "fromNode": "f3", "toNode": "f4", "fromSide": "right", "toSide": "left" },
+    { "id": "e-f4-f5", "fromNode": "f4", "toNode": "f5", "fromSide": "right", "toSide": "left" },
+    { "id": "e-f5-f6", "fromNode": "f5", "toNode": "f6", "fromSide": "right", "toSide": "left" },
+    { "id": "e-f6-f7", "fromNode": "f6", "toNode": "f7", "fromSide": "right", "toSide": "left" },
+    { "id": "e-f7-f8", "fromNode": "f7", "toNode": "f8", "fromSide": "right", "toSide": "left" }
+  ]
+}

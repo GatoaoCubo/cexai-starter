@@ -1,0 +1,436 @@
+/* @settings
+name: CEX Nucleus Theme
+id: cex-nucleus-theme
+settings:
+  -
+    id: cex-nuclei-heading
+    title: Nucleus Colors
+    type: heading
+    level: 1
+  -
+    id: cex-n01-intelligence
+    title: N01 Intelligence (Analytical Envy)
+    type: variable-color
+    format: hex
+    default: '#6c8ebf'
+  -
+    id: cex-n02-marketing
+    title: N02 Marketing (Creative Lust) — Limbic System
+    type: variable-color
+    format: hex
+    default: '#e84393'
+  -
+    id: cex-n03-engineering
+    title: N03 Engineering (Inventive Pride) — Motor Cortex
+    type: variable-color
+    format: hex
+    default: '#ff7675'
+  -
+    id: cex-n04-knowledge
+    title: N04 Knowledge (Knowledge Gluttony) — Hippocampus
+    type: variable-color
+    format: hex
+    default: '#f3b5b8'
+  -
+    id: cex-n05-operations
+    title: N05 Operations (Gating Wrath) — Amygdala
+    type: variable-color
+    format: hex
+    default: '#fd79a8'
+  -
+    id: cex-n06-commercial
+    title: N06 Commercial (Strategic Greed) — Nucleus Accumbens
+    type: variable-color
+    format: hex
+    default: '#e17055'
+  -
+    id: cex-n07-admin
+    title: N07 Orchestrator (Orchestrating Sloth) — Corpus Callosum
+    type: variable-color
+    format: hex
+    default: '#d4af37'
+  -
+    id: cex-layout-heading
+    title: Layout
+    type: heading
+    level: 1
+  -
+    id: cex-accent
+    title: Accent Color
+    type: variable-color
+    format: hex
+    default: '#00cec9'
+  -
+    id: cex-bg-primary
+    title: Background Primary
+    type: variable-color
+    format: hex
+    default: '#0a0a0a'
+  -
+    id: cex-bg-secondary
+    title: Background Secondary
+    type: variable-color
+    format: hex
+    default: '#111111'
+*/
+
+/* ============================================================
+   CEX NUCLEUS THEME v3.0 — Black & Gold Edition
+   Convention over Configuration, visualized.
+   ============================================================ */
+
+:root {
+  /* Tier 1: Nuclei — neural/brain-mapped */
+  --cex-n00-genesis:      #cc9da5;  /* Brain stem — warm tissue pink */
+  --cex-n01-intelligence:  #6c8ebf;  /* Prefrontal cortex — cortical blue */
+  --cex-n02-marketing:     #e84393;  /* Limbic system — hot synapse pink */
+  --cex-n03-engineering:   #ff7675;  /* Motor cortex — bright coral */
+  --cex-n04-knowledge:     #f3b5b8;  /* Hippocampus — brain tissue pink */
+  --cex-n05-operations:    #fd79a8;  /* Amygdala — electric magenta */
+  --cex-n06-commercial:    #e17055;  /* Nucleus accumbens — warm rose */
+  --cex-n07-admin:         #00cec9;  /* Corpus callosum — synapse teal */
+
+  /* Tier 2: Infrastructure — muted neural */
+  --cex-archetypes:  #b8a0a0;
+  --cex-tools:       #a09090;
+  --cex-docs:        #c4a8a8;
+  --cex-reports:     #8a7a7a;
+
+  /* Tier 3: Periphery — dim tissue */
+  --cex-output:      #6a5a5a;
+  --cex-dashboards:  #8b7a7a;
+  --cex-sdk:         #7a8a7a;
+  --cex-showoff:     #9e8a8a;
+
+  /* System — synapse accent (teal = the bridge, the connector) */
+  --cex-accent: #e84393;
+  --cex-synapse: #e84393;
+  --cex-synapse-dim: #c0356e;
+  --cex-synapse-bright: #ff6bb5;
+  --cex-tissue: #f3b5b8;
+  --cex-cortex: #6c8ebf;
+}
+
+/* ---- DARK MODE (Black & Gold) ---- */
+.theme-dark {
+  --background-primary:          #0a0a0a;
+  --background-primary-alt:      #111111;
+  --background-secondary:        #111111;
+  --background-secondary-alt:    #161616;
+  --background-modifier-border:  #2a2a2a;
+  --background-modifier-form-field: #0a0a0a;
+  --text-normal:                 #e0e0e0;
+  --text-muted:                  #8a8a8a;
+  --text-faint:                  #4a4a4a;
+  --text-accent:                 var(--cex-synapse);
+  --interactive-accent:          var(--cex-synapse);
+  --interactive-accent-hover:    var(--cex-synapse-bright);
+  --text-on-accent:              #0a0a0a;
+  --text-highlight-bg:           rgba(232, 67, 147, 0.15);
+  --text-selection:              rgba(232, 67, 147, 0.25);
+}
+
+/* ---- LIGHT MODE (kept minimal) ---- */
+.theme-light {
+  --background-primary:          #fafafa;
+  --background-secondary:        #f0efe8;
+  --background-modifier-border:  #d4cfc0;
+  --text-accent:                 var(--cex-synapse-dim);
+  --interactive-accent:          var(--cex-synapse-dim);
+}
+
+/* ============================================================
+   FILE EXPLORER — nucleus folder color badges
+   ============================================================ */
+.nav-folder-title[data-path^="N00"] { border-left: 3px solid var(--cex-n00-genesis); }
+.nav-folder-title[data-path^="N01"] { border-left: 3px solid var(--cex-n01-intelligence); }
+.nav-folder-title[data-path^="N02"] { border-left: 3px solid var(--cex-n02-marketing); }
+.nav-folder-title[data-path^="N03"] { border-left: 3px solid var(--cex-n03-engineering); }
+.nav-folder-title[data-path^="N04"] { border-left: 3px solid var(--cex-n04-knowledge); }
+.nav-folder-title[data-path^="N05"] { border-left: 3px solid var(--cex-n05-operations); }
+.nav-folder-title[data-path^="N06"] { border-left: 3px solid var(--cex-n06-commercial); }
+.nav-folder-title[data-path^="N07"] { border-left: 3px solid var(--cex-n07-admin); }
+.nav-folder-title[data-path^="archetypes"] { border-left: 3px solid var(--cex-archetypes); }
+.nav-folder-title[data-path^="_tools"] { border-left: 3px solid var(--cex-tools); }
+.nav-folder-title[data-path^="_docs"] { border-left: 3px solid var(--cex-docs); }
+.nav-folder-title[data-path^="_dashboards"] { border-left: 3px solid var(--cex-dashboards); }
+.nav-folder-title[data-path^="cex_sdk"] { border-left: 3px solid var(--cex-sdk); }
+.nav-folder-title[data-path^="docs"] { border-left: 3px solid var(--cex-synapse); }
+
+/* Pillar subfolders inside nuclei */
+.nav-folder-title[data-path*="P01"] { border-left: 3px solid #6abf69; }
+.nav-folder-title[data-path*="P02"] { border-left: 3px solid #5b9bd5; }
+.nav-folder-title[data-path*="P03"] { border-left: 3px solid #a855f7; }
+.nav-folder-title[data-path*="P04"] { border-left: 3px solid #e8734a; }
+.nav-folder-title[data-path*="P05"] { border-left: 3px solid #d4af37; }
+.nav-folder-title[data-path*="P06"] { border-left: 3px solid #26c6da; }
+.nav-folder-title[data-path*="P07"] { border-left: 3px solid #c4b550; }
+.nav-folder-title[data-path*="P08"] { border-left: 3px solid #a0845c; }
+.nav-folder-title[data-path*="P09"] { border-left: 3px solid #7a7a7a; }
+.nav-folder-title[data-path*="P10"] { border-left: 3px solid #9c6fd4; }
+.nav-folder-title[data-path*="P11"] { border-left: 3px solid #e06c8e; }
+.nav-folder-title[data-path*="P12"] { border-left: 3px solid #d4af37; }
+
+/* ============================================================
+   FRONTMATTER — gold-accented container
+   ============================================================ */
+.frontmatter-container {
+  background-color: var(--background-secondary);
+  border-left: 3px solid var(--cex-synapse);
+  border-radius: 6px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+/* ============================================================
+   HEADINGS — gold hierarchy
+   ============================================================ */
+.cm-header-1, .markdown-rendered h1 {
+  color: var(--cex-synapse);
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 4px;
+}
+.cm-header-2, .markdown-rendered h2 {
+  color: var(--cex-synapse-bright);
+}
+.cm-header-3, .markdown-rendered h3 {
+  color: var(--cex-n01-intelligence);
+}
+.cm-header-4, .markdown-rendered h4 {
+  color: var(--text-muted);
+  font-size: 1.05em;
+}
+
+/* ============================================================
+   WIKILINKS — gold accent
+   ============================================================ */
+.cm-hmd-internal-link,
+.internal-link {
+  color: var(--cex-synapse);
+  text-decoration: none;
+}
+.cm-hmd-internal-link:hover,
+.internal-link:hover {
+  color: var(--cex-synapse-bright);
+  text-decoration: underline;
+}
+
+/* ============================================================
+   TAGS — gold pill style
+   ============================================================ */
+.tag {
+  background-color: rgba(232, 67, 147, 0.1);
+  border: 1px solid rgba(232, 67, 147, 0.2);
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.82em;
+  color: var(--cex-synapse-dim);
+}
+.tag:hover {
+  background-color: var(--cex-synapse);
+  color: #0a0a0a;
+}
+
+/* ============================================================
+   TABLES — gold-accented headers, zebra striping
+   ============================================================ */
+.markdown-rendered table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.92em;
+}
+.markdown-rendered th {
+  background-color: rgba(232, 67, 147, 0.08);
+  border-bottom: 2px solid var(--cex-synapse-dim);
+  text-align: left;
+  padding: 6px 10px;
+  color: var(--cex-synapse);
+}
+.markdown-rendered td {
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.markdown-rendered tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+.markdown-rendered tr:hover {
+  background-color: rgba(232, 67, 147, 0.05);
+}
+
+/* ============================================================
+   CALLOUTS — CEX-styled, gold-tinted
+   ============================================================ */
+.callout[data-callout="info"] {
+  --callout-color: 232, 67, 147;
+  --callout-icon: lucide-brain;
+}
+.callout[data-callout="warning"] {
+  --callout-color: 232, 115, 74;
+  --callout-icon: lucide-alert-triangle;
+}
+.callout[data-callout="success"] {
+  --callout-color: 106, 191, 105;
+  --callout-icon: lucide-check-circle;
+}
+.callout[data-callout="nucleus"] {
+  --callout-color: 253, 121, 168;
+  --callout-icon: lucide-cpu;
+}
+.callout[data-callout="pipeline"] {
+  --callout-color: 255, 118, 117;
+  --callout-icon: lucide-workflow;
+}
+.callout[data-callout="kind"] {
+  --callout-color: 168, 85, 247;
+  --callout-icon: lucide-package;
+}
+
+/* ============================================================
+   CODE BLOCKS — subtle gold border
+   ============================================================ */
+.cm-s-obsidian .HyperMD-codeblock {
+  background-color: #111111;
+}
+code {
+  background-color: rgba(232, 67, 147, 0.08);
+  border: 1px solid rgba(232, 67, 147, 0.12);
+  border-radius: 3px;
+  padding: 1px 4px;
+  font-size: 0.88em;
+  color: var(--cex-synapse-bright);
+}
+pre code {
+  background-color: transparent;
+  border: none;
+  color: var(--text-normal);
+}
+
+/* ============================================================
+   GRAPH VIEW — neural synapses
+   Lines = axons/dendrites (warm pink glow)
+   Nodes = neurons (tissue colored by nucleus group)
+   ============================================================ */
+
+/* Lines: synaptic connections — deep rose from anatomical palette.
+   Ref: color-hex monochrome brain palette deep tone #a02040.
+   Higher red saturation reads as rose against dark bg (vs pastel = white). */
+.graph-view.color-line {
+  color: rgba(160, 32, 64, 0.55);
+}
+
+/* Default unmatched nodes — soft brain tissue pink */
+.graph-view.color-fill {
+  color: #cc9da5;
+}
+
+/* Highlighted node — hot synapse flash */
+.graph-view.color-fill-focused {
+  color: #e84393;
+}
+
+/* Highlighted neighbors — warm glow */
+.graph-view.color-fill-highlight {
+  color: #f3b5b8;
+}
+
+/* Dimmed non-highlighted — faded tissue */
+.graph-view.color-fill-unresolved {
+  color: #4a3a3e;
+}
+
+/* Attachment nodes */
+.graph-view.color-fill-attachment {
+  color: #8a6a70;
+}
+
+/* Tag nodes */
+.graph-view.color-fill-tag {
+  color: #fd79a8;
+  opacity: 0.92;
+}
+
+/* Graph text — subtle, doesn't compete with nodes */
+.graph-view.color-text {
+  color: rgba(243, 181, 184, 0.7);
+}
+
+/* Hovered lines brighten — brand magenta synapse firing */
+.graph-view.color-line-highlight {
+  color: rgba(232, 67, 147, 0.90);
+}
+
+/* ============================================================
+   STATUS BAR — gold border
+   ============================================================ */
+.status-bar {
+  background-color: #0a0a0a;
+  border-top: 1px solid var(--cex-synapse-dim);
+  font-size: 0.8em;
+}
+
+/* ============================================================
+   SIDEBAR — deeper black
+   ============================================================ */
+.workspace-split.mod-left-split {
+  background-color: #080808;
+}
+.workspace-tab-header-container {
+  background-color: #080808;
+}
+
+/* ============================================================
+   PROPERTIES PANEL — compact, gold keys
+   ============================================================ */
+.metadata-properties {
+  font-size: 0.88em;
+}
+.metadata-property-key {
+  color: var(--cex-synapse-dim);
+  font-weight: 600;
+}
+.metadata-property-value {
+  color: var(--text-normal);
+}
+
+/* ============================================================
+   SCROLLBAR — slim, gold on hover
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cex-synapse-dim);
+}
+
+/* ============================================================
+   ACTIVE LINE & CURSOR — gold tint
+   ============================================================ */
+.cm-active {
+  background-color: rgba(232, 67, 147, 0.03) !important;
+}
+.cm-cursor {
+  border-left-color: var(--cex-synapse) !important;
+}
+
+/* ============================================================
+   CHECKBOXES — gold when checked
+   ============================================================ */
+input[type="checkbox"]:checked {
+  accent-color: var(--cex-synapse);
+}
+
+/* ============================================================
+   BLOCKQUOTES — gold left border
+   ============================================================ */
+blockquote, .markdown-rendered blockquote {
+  border-left: 3px solid var(--cex-synapse-dim);
+  color: var(--text-muted);
+}
