@@ -40,7 +40,7 @@ By participating you agree to the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ```bash
 git clone https://github.com/GatoaoCubo/cexai-starter.git
-cd https://github.com/GatoaoCubo/cexai-starter
+cd cexai-starter
 sh start.sh                      # or .\start.ps1 on Windows -- confirm it still runs
 python _tools/cex_bootstrap.py --check   # confirm: BOOTSTRAPPED: Sua Empresa
 ```

@@ -120,7 +120,7 @@ running apps (colors, catalog, hero copy) end to end is exactly what the factory
 
 ```bash
 git clone https://github.com/GatoaoCubo/cexai-starter.git
-cd https://github.com/GatoaoCubo/cexai-starter
+cd cexai-starter
 
 # Mac / Linux / WSL / Git-Bash
 sh start.sh

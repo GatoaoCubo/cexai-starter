@@ -18,7 +18,7 @@ is verified against this repo's own launcher scripts -- see `start.sh` / `start.
 
 ```bash
 git clone https://github.com/GatoaoCubo/cexai-starter.git
-cd https://github.com/GatoaoCubo/cexai-starter
+cd cexai-starter
 ```
 
 ## 2. Make it yours (optional, recommended -- about 2 minutes)
