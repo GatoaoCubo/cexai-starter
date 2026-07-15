@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="280" height="80" fill="#0b0f1a" rx="8"/>
+  <g transform="translate(16,16)">
+    <rect x="0" y="0" width="48" height="48" fill="none" stroke="url(#g)" stroke-width="2.5" rx="6"/>
+    <line x1="16" y1="0" x2="16" y2="48" stroke="url(#g)" stroke-width="1.2" opacity="0.6"/>
+    <line x1="32" y1="0" x2="32" y2="48" stroke="url(#g)" stroke-width="1.2" opacity="0.6"/>
+    <line x1="0" y1="16" x2="48" y2="16" stroke="url(#g)" stroke-width="1.2" opacity="0.6"/>
+    <line x1="0" y1="32" x2="48" y2="32" stroke="url(#g)" stroke-width="1.2" opacity="0.6"/>
+    <circle cx="8" cy="8" r="2.5" fill="url(#g)"/>
+    <circle cx="40" cy="40" r="2.5" fill="url(#g)"/>
+    <circle cx="40" cy="8" r="2.5" fill="url(#g)"/>
+    <circle cx="8" cy="40" r="2.5" fill="url(#g)"/>
+    <circle cx="24" cy="24" r="3" fill="url(#g)"/>
+  </g>
+  <text x="80" y="36" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="22" font-weight="700" fill="#e2e8f0">CEX<tspan fill="url(#g)">AI</tspan></text>
+  <text x="80" y="56" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="9" fill="#64748b" letter-spacing="2">COGNITIVE EXCHANGE</text>
+</svg>

@@ -1,0 +1,24 @@
+# Tenant .gitignore -- INVERSION (DP3 gitignore_profile=tenant).
+# COMMITTED (the tenant's identity + activated taxonomy are version-controlled):
+#   brand/  overlay/  brand/tenant_config.json  .cex/kinds_meta.json  archetypes/builders/
+#   .cex/brand/  .cex/overlays/  (the brain GLOBAL read-path mirror -- residual #4)
+# IGNORED (secrets + ephemeral runtime + build output):
+secrets/
+.env
+.env.*
+# ...but DO ship the app env TEMPLATES (offline-render defaults on clone); only the real
+# .env / .env.local stay ignored above.
+!**/.env.example
+**/runtime/
+# memory is scoped to .cex/ so this pattern never shadows the vendored cexai SDK package
+# cexai/cexai/memory/ (a real, committed source dir -- NOT ephemeral runtime memory).
+.cex/**/memory/
+.cex/runtime/
+.cex/cache/
+.cex/distill/
+.cex/total_index/
+node_modules/
+.next/
+__pycache__/
+*.pyc
+*.tsbuildinfo

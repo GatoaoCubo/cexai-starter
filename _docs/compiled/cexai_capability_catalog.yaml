@@ -1,0 +1,455 @@
+# cexai_capability_catalog.yaml
+# =============================================================================
+# The DEFAULT capability catalog for the CEXAI product dashboard.
+#
+# This is the BASE set of dashboard "cards" -- the shared registry that both
+# _tools/cex_run_capability.py (the headless runtime) and the dashboard backend
+# consume. It is loaded by _tools/cex_capability_registry.py.
+#
+# Spec: _docs/compiled/spec_cexai_product_build_v1.md
+#   - B.5  the card -> nucleus map (capability, label, nucleus, kind, pillar, verb)
+#   - D    the overlay -> dashboard binding (enabled_capabilities)
+#   - A.3  run_capability resolves OVERLAY-FIRST, this base table second
+#   - OQ6  "should the base card table be a versioned artifact the platform
+#          ships, so cards stay consistent across tenants and the overlay only
+#          EXTENDS it? Recommended yes." -- THIS FILE is that versioned artifact.
+#
+# A tenant OVERLAY (.cex/tenants/<tid>/overlay/kinds_overlay.yaml) may:
+#   * gate which of these BASE cards are visible, via a top-level
+#     `enabled_capabilities: [research, ads, ...]` list (omit => all base cards);
+#   * add tenant-CUSTOM cards via its `kinds:` map (resolved by the runtime,
+#     overlay-first). Custom cards are NOT in this base catalog.
+#
+# FROZEN-KIND MOAT (spec 0b): a card here can never target a frozen kind
+# (workflow, pipeline_template, prompt_compiler, reasoning_trace, quality_gate,
+# dispatch_rule, handoff). The registry asserts this on load -- a frozen target
+# is a hard error, not a silent drop.
+#
+# Each record carries the runtime tuple (nucleus/kind/pillar/verb) PLUS the
+# dashboard-facing presentation fields (title/description/icon/label/
+# default_intent_hint). The runtime reads the tuple; the dashboard reads the
+# presentation fields. One source of truth for both.
+#
+# ASCII-only (.claude/rules/ascii-code-rule.md): icons are short [tag] tokens,
+# no emoji.
+# =============================================================================
+
+version: 1.0.0
+
+# The base capability cards. Ordered = the default dashboard display order.
+capabilities:
+
+  - capability: research
+    label: Research
+    title: Research
+    description: >-
+      Produce a structured, sourced intelligence brief (a knowledge card).
+      Competitor scans, market research, fact capture. Template-first card.
+    icon: "[search]"
+    nucleus: N01
+    kind: knowledge_card
+    pillar: P01
+    verb: analyze
+    default_intent_hint: "Research <topic> -- competitors, pricing, and market signals"
+
+  - capability: ads
+    label: Ads / Copy
+    title: Ads and Copy
+    description: >-
+      Generate brand-voice ad copy and campaign prompt templates -- hooks,
+      CTAs, and platform-length variants for a campaign.
+    icon: "[ad]"
+    nucleus: N02
+    kind: prompt_template
+    pillar: P03
+    verb: create
+    default_intent_hint: "Write ad copy for <product/offer> targeting <audience>"
+    # F3 INJECT source: the N02 brand-voice templates (tone/forbidden-words/voice-diff
+    # matrix). The prompt_template builder loads this at F3 so ads output respects the
+    # tenant brand_config voice. Declared here (not as a code edit to the generic
+    # builder ISO) so the wire is tenant-generic + non-brittle; the runtime/builder
+    # reads ``inject_sources`` when assembling F3 context.
+    inject_sources:
+      - "N02_marketing/P03_prompt/p03_pt_brand_voice_templates.md"
+      - ".cex/brand/brand_config.yaml"
+
+  - capability: pricing
+    label: Pricing
+    title: Pricing
+    description: >-
+      Design pricing tiers, funnels, and monetization models -- differentiated
+      tiers, feature gating, and revenue framing.
+    icon: "[price]"
+    nucleus: N06
+    kind: content_monetization
+    pillar: P11
+    verb: create
+    default_intent_hint: "Design pricing tiers for <product>"
+
+  - capability: roi_calc
+    label: ROI Calculator
+    title: ROI Calculator
+    description: >-
+      Quantify the value a buyer gets -- hours and money saved, payback period,
+      and annual return -- as a transparent, input-driven proof model.
+    icon: "[roi]"
+    nucleus: N06
+    kind: roi_calculator
+    pillar: P11
+    verb: create
+    default_intent_hint: "Build an ROI case for <buyer/segment> -- team size, hourly rate, current effort"
+
+  - capability: funnel_diag
+    label: Funnel Diagnostic
+    title: Funnel Diagnostic
+    description: >-
+      Find the highest-ROI leak across the funnel (attract -> engage -> convert ->
+      retain -> expand) and rank the fixes by impact per effort.
+    icon: "[funnel]"
+    nucleus: N06
+    kind: tool_card
+    pillar: P11
+    verb: analyze
+    default_intent_hint: "Diagnose the funnel for <product> -- per-stage metrics, find the biggest leak"
+
+  - capability: media_photo
+    label: Media / Photo
+    title: Media and Photo
+    description: >-
+      Produce an image / photo BRIEF (a multimodal prompt). The downstream media
+      render (ffmpeg / TTS pipeline) is a separate non-SDK step, out of scope here.
+    icon: "[photo]"
+    nucleus: N02
+    kind: multimodal_prompt
+    pillar: P03
+    verb: create
+    default_intent_hint: "Create a photo brief for <scene/subject>"
+
+  - capability: content
+    label: Content
+    title: Content
+    description: >-
+      Capture knowledge / documentation content (a knowledge card) -- RAG-ready
+      docs, internal know-how, and reference material.
+    icon: "[doc]"
+    nucleus: N04
+    kind: knowledge_card
+    pillar: P01
+    verb: document
+    default_intent_hint: "Document <process/topic> as a knowledge card"
+
+  - capability: docs
+    label: Knowledge / Docs
+    title: Knowledge and Docs
+    description: >-
+      Capture and structure knowledge / documentation (a knowledge card) for
+      RAG and doc retrieval.
+    icon: "[docs]"
+    nucleus: N04
+    kind: knowledge_card
+    pillar: P01
+    verb: document
+    default_intent_hint: "Capture <subject> as RAG-ready documentation"
+
+  - capability: landing
+    label: Landing Page
+    title: Landing Page
+    description: >-
+      Build a conversion-oriented landing page (responsive, SEO-aware) for a
+      product or offer.
+    icon: "[page]"
+    nucleus: N03
+    kind: landing_page
+    pillar: P05
+    verb: create
+    default_intent_hint: "Build a landing page for <product/offer>"
+
+  # ===========================================================================
+  # NEXT-WAVE CATALOG-TUPLE CARDS (roadmap "the 12 to build next").
+  # Each runs on the EXISTING dashboard shell (no new component). Every kind is
+  # verified present in .cex/kinds_meta.json AND NOT in the frozen set
+  # (workflow, pipeline_template, prompt_compiler, reasoning_trace, quality_gate,
+  # dispatch_rule, handoff) -- the registry asserts this on load.
+  # ===========================================================================
+
+  - capability: tier_designer
+    label: Plan Matrix
+    title: Plan Matrix / Tier Designer
+    description: >-
+      Design a subscription plan matrix -- differentiated tiers, feature gating,
+      and price anchoring -- as a typed subscription_tier artifact.
+    icon: "[price]"
+    nucleus: N06
+    kind: subscription_tier
+    pillar: P11
+    verb: create
+    default_intent_hint: "Design the plan matrix for <product> -- 3 tiers, feature gating, anchor price"
+    # F3 INJECT source: the N06 pricing-framework pattern (tier ladder + gating
+    # heuristics) grounds the tier matrix. Declared here (not a builder edit) so the
+    # wire stays tenant-generic; the builder reads inject_sources at F3.
+    inject_sources:
+      - "N06_commercial/P08_architecture/pattern_pricing_framework.md"
+
+  - capability: product_docs
+    label: Product Docs
+    title: Product Docs
+    description: >-
+      Capture product documentation as a RAG-ready knowledge card -- features,
+      setup, and how-to reference structured for retrieval.
+    icon: "[docs]"
+    nucleus: N04
+    kind: knowledge_card
+    pillar: P01
+    verb: document
+    default_intent_hint: "Document <product/feature> -- setup, usage, and reference"
+
+  - capability: email_builder
+    label: Email Builder
+    title: Email Builder
+    description: >-
+      Generate a responsive HTML email prompt template -- subject lines, preheader,
+      and on-brand body blocks for a campaign or lifecycle send.
+    icon: "[ad]"
+    nucleus: N02
+    kind: prompt_template
+    pillar: P03
+    verb: create
+    default_intent_hint: "Write a marketing email for <campaign/audience> -- subject, preheader, body"
+    # F3 INJECT source: the N02 responsive-HTML-email knowledge card (table-layout,
+    # inline-CSS, client-compat rules) so output renders across mail clients.
+    inject_sources:
+      - "N02_marketing/P01_knowledge/kc_email_html_responsive.md"
+      - ".cex/brand/brand_config.yaml"
+
+  - capability: oauth_connect
+    label: OAuth Connect
+    title: OAuth Connect
+    description: >-
+      Produce a typed OAuth app configuration -- client id/secret slots, scopes,
+      redirect URIs, and token endpoints -- to wire a third-party integration.
+    icon: "[plug]"
+    nucleus: N03
+    kind: oauth_app_config
+    pillar: P04
+    verb: create
+    default_intent_hint: "Configure an OAuth connection to <provider> -- scopes + redirect URIs"
+
+  - capability: competitor_benchmark
+    label: Competitor Benchmark
+    title: Competitor Benchmark Matrix
+    description: >-
+      Build a competitor benchmark matrix -- rivals scored across the dimensions
+      that matter to your buyer, with sourced cells and a positioning read.
+    icon: "[search]"
+    nucleus: N01
+    kind: competitive_matrix
+    pillar: P01
+    verb: analyze
+    default_intent_hint: "Benchmark <product> against <competitors> across price, features, and positioning"
+    # F3 INJECT sources: the N01 competitive-grid output shape + the analysis contract
+    # (dimensions, scoring rubric, source-citation requirement) pre-bind the matrix shape.
+    inject_sources:
+      - "N01_intelligence/P05_output/output_competitive_grid.md"
+      - "N01_intelligence/P06_schema/competitive_analysis_contract.md"
+
+  # ===========================================================================
+  # SPEC 05 -- the lead-gen suite, Phase 1a (docs/specs/05_leadgen_suite/spec.md).
+  # The scraping/lead-gen vertical: find leads around a seed across the available
+  # channels (b2c_marketplace | b2b_cnpj | ugc_social) and emit a typed lead LIST.
+  # D1: it REUSES the research_pipeline kind (0 kinds_meta/doctor churn; NOT a
+  # frozen kind). Its run writes tenant_data rows of kind="leads" (the leads
+  # managed_entity seeds the CRM -- the next vertical). The structured-generator
+  # seam (@register("leadgen")) owns the output; CEXAgent.build is NOT used. Honest
+  # by construction: never fabricates a name/contact/CNPJ/signal; every channel
+  # reports ok|blocked|skipped|failed; missing optional input -> the mold default.
+  # ===========================================================================
+  - capability: leadgen
+    label: Captacao de Leads
+    title: Captacao de Leads (Lead-gen / scraping)
+    description: >-
+      Find leads around a seed across the available channels (B2C marketplace,
+      B2B CNPJ, UGC social) -- a typed lead list with per-source honest status
+      (ok / blocked / skipped) and a go/no-go verdict. Never fabricates a contact;
+      seeds the CRM (the leads entity).
+    icon: "[funnel]"
+    nucleus: N01
+    kind: research_pipeline
+    pillar: P04
+    verb: analyze
+    default_intent_hint: "Encontre leads para <perfil> a partir de <seed> -- marketplace, CNPJ, social"
+
+  # ===========================================================================
+  # CAPABILITY LAYER -- Wave 1 (mission LEVTEST / CAPABILITY_LAYER). The flagship
+  # "Cole um produto -> anuncio" research vertical (plan_capability_layer_FINAL
+  # _2026-06-18.md, V1). 0 NEW KINDS: it resolves to the existing knowledge_card
+  # kind (the research artifact). The tenant_data row is discriminated by the
+  # ``capability`` column (pesquisa_produto) + the persisted kind. The dual-output
+  # renderer (cex_output_contract) projects its 30-field result; the pipeline
+  # (cex_run_pipeline) chains it into the ads capability via the C3 open_vars
+  # adapter. Single-step in W1 (STORM fan-out is W2).
+  # ===========================================================================
+  - capability: pesquisa_produto
+    label: Pesquisa de Produto
+    title: Pesquisa de Produto (Produto -> Anuncio)
+    description: >-
+      Pesquisa de produto across the marketplaces (ML / Shopee / Amazon /
+      Magalu) -- price band, ranking, competitor gaps, and keywords -- as a
+      30-field dual-output card that chains straight into ad copy.
+    icon: "[search]"
+    nucleus: N01
+    kind: knowledge_card
+    pillar: P01
+    verb: analyze
+    default_intent_hint: "Pesquise <produto> -- preco de mercado, concorrentes, lacunas e palavras-chave"
+    # F3 INJECT sources: the codexa-v2 pesquisa pipeline + the 30-field output contract
+    # ground the research shape (the contract the dual renderer emits). Declared here so the
+    # wire is tenant-generic; the builder reads inject_sources at F3.
+    inject_sources:
+      - "N04_knowledge/P06_schema/p06_dc_capability_artifact.md"
+
+  # ===========================================================================
+  # DASHBOARD ROADMAP -- Wave 1 (spec_dashboard_roadmap Sec 4 W1). The Research
+  # Universe: ONE seed (product / brand / CNPJ / company / keyword / store:id) ->
+  # the 10-lane orchestrator (cex_research_universe) fans out the relevant lanes
+  # (CNPJ/IBGE firmographics + market-sizing, app-store/Reddit/YouTube social,
+  # Reclame Aqui reputation, PT sentiment, SEO keywords, multi-perspective
+  # questions) -> ONE unified multi-source report. This is NOT an LLM build: the
+  # runtime (cex_run_capability) routes the synthetic ``research_universe`` kind
+  # straight to the orchestrator, NOT CEXAgent.build. Each lane is degrade-never +
+  # honest-blocked without its credential; the report's endpoint_status carries
+  # per-lane ok/blocked/skipped provenance (never fabricated). The dashboard renders
+  # per-section cards (default JSON) or projects the report via render_universe
+  # (?render_format=md|html). 0 NEW KINDS in the taxonomy -- research_universe is a
+  # runtime route discriminator, NOT a registered (or frozen) kind. overlay-gateable
+  # via enabled_capabilities like every other card.
+  # ===========================================================================
+  - capability: research_universe
+    label: Research Universe
+    title: Research Universe (Multi-Source Brain)
+    description: >-
+      Run ONE seed (a product, brand, CNPJ, company, keyword, or store:id) through
+      the full research brain -- firmographics (CNPJ/IBGE), social signal (app store
+      / Reddit / YouTube), reputation (Reclame Aqui), PT sentiment, SEO keywords, and
+      multi-perspective questions -- as ONE unified multi-source report with honest
+      per-lane status (ok / blocked / skipped) and provenance.
+    icon: "[universe]"
+    nucleus: N01
+    kind: research_universe
+    pillar: P01
+    verb: analyze
+    default_intent_hint: "Pesquise <produto/marca/CNPJ> -- firmografia, social, reputacao, SEO e perguntas"
+    # OPTIONAL input: a ``kinds`` list (a subset of the orchestrator lane names --
+    # cnpj/ibge/appstore/reddit/youtube/reclame_aqui/seo/questions) FORCES exactly those
+    # lanes regardless of the inferred seed type. Passed through options['kinds']; the
+    # orchestrator drops unknown names honestly (never fabricates a lane). Omit -> the seed
+    # type is inferred and the relevant lanes are auto-selected.
+
+  # ===========================================================================
+  # N06 BRANDBOOK Cell B (commit 86e6e0ef8d): complete brand book from brand
+  # materials. Routes through the structured-generator seam (MOLDED_REAL_SEAM
+  # @register("brandbook")); CEXAgent.build is NOT used. 8 frozen output sections.
+  # NEVER-FABRICATE: placeholders emitted for any field that lacks real input.
+  # ===========================================================================
+  - capability: brandbook
+    label: Brand Book
+    title: Brand Book
+    description: >-
+      Build a complete brand book from brand materials (name, essence, logo,
+      colour palette, and any brand text / URL / PDF). Produces 8 structured
+      sections: brand identity, colour palette, typography, brand persona,
+      logo use guidelines, imagery style, messaging framework, and do/don't
+      guardrails. Never-fabricate: sections with no input emit editable
+      [fornecer: ...] placeholders.
+    icon: "[brand]"
+    nucleus: N06
+    kind: brandbook
+    pillar: P05
+    verb: create
+    default_intent_hint: "Build the brand book for <brand name> -- paste essence and any brand materials"
+    input_contract:
+      - key: brand_name
+        kind: text
+        label: "Nome da marca"
+        required: true
+      - key: brand_essence
+        kind: text
+        label: "Essencia (1 frase)"
+        required: false
+      - key: brand_materials
+        kind: text
+        label: "Materiais da marca (URL, PDF path, ou texto livre)"
+        required: false
+      - key: brand_materials_palette
+        kind: text
+        label: "Paleta de cores (JSON array de hex ou lista separada por virgula)"
+        required: false
+
+  # ===========================================================================
+  # W3 SOURCING (contract foundation). Two buy-side capabilities that turn tenant
+  # supplier catalogs into a sourcing decision. Both molded in
+  # apps/dashboard_web/lib/molds.ts (sections 15-16 of the I/O contract). Kinds
+  # opportunity_matrix / product_match are verified present in kinds_meta.json AND
+  # NOT in the frozen set. inject_sources ground them in the on-disk rigor specs:
+  # n01_sourcing_rigor (provenance/triangulation/honest-null -- both) + n06_unit_econ
+  # (margin math -- sourcing_opportunity).
+  # ===========================================================================
+  - capability: sourcing_opportunity
+    label: Sourcing Opportunity
+    title: Sourcing Opportunity Matrix
+    description: >-
+      Cross supplier cost (the offer side, parsed from your supplier catalogs)
+      against market price and demand per product type, rank by margin with a
+      skeptical re-check of the top-N, and emit a go/no-go sourcing verdict.
+    icon: "[matrix]"
+    nucleus: N06
+    kind: opportunity_matrix
+    pillar: P11
+    verb: analyze
+    default_intent_hint: "Find the best products to source from <supplier catalog> -- cost vs market margin"
+    # F3 INJECT sources: the N01 sourcing-rigor invariants (triangulation, provenance,
+    # freshness band, honest-null) applied to the buy side + the N06 unit-economics
+    # contract (cost->price->take-rate->margin math + health thresholds). Declared here
+    # (not a builder edit) so the wire is tenant-generic; the builder reads inject_sources at F3.
+    inject_sources:
+      - "_docs/specs/contract/n01_sourcing_rigor.md"
+      - "_docs/specs/contract/n06_unit_econ.md"
+
+  - capability: product_match
+    label: Product Match
+    title: Product Match + Catalog Audit
+    description: >-
+      Match a supplier item to a marketplace listing by photo, dimension, and
+      supplier code (EAN excluded on purpose -- every reseller recodes it), with
+      confidence, divergent-registration flags, and a reliability verdict.
+    icon: "[match]"
+    nucleus: N03
+    kind: product_match
+    pillar: P04
+    verb: analyze
+    default_intent_hint: "Match <supplier items> to marketplace listings by photo + dimension + code"
+    # F3 INJECT source: the N01 sourcing-rigor spec (provenance-as-section + honest-null --
+    # an offline match returns NAO, never a fabricated link). Declared here so the wire stays
+    # tenant-generic; the builder reads inject_sources at F3.
+    inject_sources:
+      - "_docs/specs/contract/n01_sourcing_rigor.md"
+
+  - capability: marketplace_listing
+    label: Marketplace Listing
+    title: Marketplace Listing (Channel Projection)
+    description: >-
+      Map a canonical product into a per-channel marketplace listing payload
+      (e.g. Mercado Livre Items API body) + a readiness report (PUBLISH-READY
+      or NOT-READY with missing fields / warnings). Map/validate are pure;
+      publish stays operator-gated.
+    icon: "[list]"
+    nucleus: N06
+    kind: marketplace_listing
+    pillar: P05
+    verb: create
+    default_intent_hint: "Map <product> into a <marketplace> listing -- title, price, category, readiness"
+    # F3 INJECT source: the canonical_product contract this projects from
+    # (_tools/cex_canonical_product.py) + the channel adapter seam
+    # (_tools/cex_channel_adapter.py). Declared here so the wire stays
+    # tenant-generic; the builder reads inject_sources at F3.
+    inject_sources:
+      - "docs/schema/contracts/canonical_product.schema.json"

@@ -1,0 +1,4 @@
+# kinds_overlay.yaml -- tenant intent->kind routing (frozen-kind moat enforced).
+slug: starter
+kind_overrides: {}
+custom_capabilities: []         # operator post-step (D4)

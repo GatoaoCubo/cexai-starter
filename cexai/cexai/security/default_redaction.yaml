@@ -1,0 +1,26 @@
+# CEXAI v1 default span-attribute redaction patterns (05_agno FR-009).
+#
+# DOCUMENTATION / OVERRIDE MIRROR ONLY. The authoritative copy is the in-code
+# tuple DEFAULT_REDACTION_PATTERNS in cexai/governance/tracing/redaction.py.
+# This file is loaded LAZILY (PyYAML is not a hard dependency); when PyYAML is
+# absent or this file is missing, the in-code defaults stand (Article XIV
+# offline, Article VIII anti-abstraction -- no new hard dep).
+#
+# Each entry is a plain ASCII regex. A matching substring in any span (or span
+# event) attribute value is MASKED with "[REDACTED]" before export -- masked,
+# not dropped, so the attribute keeps its shape. Order matters: the Anthropic
+# sk-ant- form precedes the broader OpenAI sk- form so one key is never
+# half-matched twice.
+#
+# To override, point cexai.governance.tracing.load_redaction_config(path) at a
+# copy of this file with an edited `patterns:` list.
+
+version: 1
+
+patterns:
+  - 'sk-ant-[A-Za-z0-9_-]{8,}'                          # Anthropic API key
+  - 'sk-[A-Za-z0-9]{20,}'                               # OpenAI API key
+  - 'AIza[A-Za-z0-9_-]{10,}'                            # Google API key
+  - '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'    # email address
+  - '\b\d{3}-\d{2}-\d{4}\b'                             # US Social Security Number
+  - '\+?\d{1,2}[ .-]?\(?\d{3}\)?[ .-]?\d{3}[ .-]?\d{4}'  # US phone number

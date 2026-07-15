@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------------------------------------------------------------------
+   CEXAI Dashboard -- base layer.
+   Dark, sovereign-lab control surface. The body sits on deep ink with an
+   ambient synapse grid; boldness is reserved for the cyan 8F filament.
+--------------------------------------------------------------------------- */
+
+:root {
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-ink text-text font-sans antialiased;
+    background-image:
+      radial-gradient(120% 80% at 50% -10%, rgba(56, 189, 248, 0.06), transparent 60%),
+      linear-gradient(to right, rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+    background-size: 100% 100%, 44px 44px, 44px 44px;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgba(94, 234, 212, 0.25);
+    color: #ffffff;
+  }
+
+  /* Visible keyboard focus everywhere -- accessibility floor. The accent is now
+     CSS-var-driven (tailwind synapse.DEFAULT); here we reference --accent directly
+     (the tailwind "/ <alpha-value>" placeholder is only valid inside tailwind's
+     color processing, NOT raw CSS). The fallback is the EXACT current cyan triplet
+     so with no active tenant this outline is byte-identical. */
+  :focus-visible {
+    outline: 2px solid hsl(var(--accent, 171 77% 64%));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Scrollbars tuned to the surface. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: theme("colors.line.strong") transparent;
+  }
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background: theme("colors.line.strong");
+    border-radius: 999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+}
+
+@layer components {
+  /* The eyebrow label device -- monospace, tracked, used over sections. */
+  .eyebrow {
+    @apply font-mono text-2xs uppercase tracking-eyebrow text-text-faint;
+  }
+
+  /* A raised panel surface. */
+  .panel {
+    @apply rounded-card border border-line bg-panel shadow-panel;
+  }
+
+  /* The primary action -- the one place cyan is allowed to fill. */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill bg-synapse px-5 py-2.5
+      font-medium text-ink transition-all duration-200 hover:bg-synapse-bright
+      hover:shadow-glow active:translate-y-px disabled:cursor-not-allowed
+      disabled:opacity-40 disabled:hover:shadow-none;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill border border-line
+      bg-transparent px-4 py-2 text-text-muted transition-colors duration-200
+      hover:border-line-strong hover:text-text;
+  }
+
+  /* Text input on the dark surface. */
+  .field {
+    @apply w-full rounded-lg border border-line bg-panel-sunken px-3.5 py-2.5 text-text
+      placeholder:text-text-faint transition-colors duration-200
+      focus:border-synapse-dim focus:outline-none focus:ring-1 focus:ring-synapse-dim;
+  }
+
+  /* A hairline tag / chip. */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-pill border border-line bg-panel-sunken
+      px-2.5 py-1 font-mono text-2xs uppercase tracking-wider text-text-muted;
+  }
+}
+
+/* Respect reduced motion -- kill ambient + decorative animation. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

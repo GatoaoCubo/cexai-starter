@@ -1,0 +1,88 @@
+---
+kind: config
+id: bld_config_eval_metric
+pillar: P09
+llm_function: CONSTRAIN
+purpose: Naming, paths, limits for eval_metric production
+quality: null
+title: "Config Eval Metric"
+version: "1.0.0"
+author: wave1_builder_gen_v2
+tags: [eval_metric, builder, config]
+tldr: "Production constraints for eval metric: naming (p07_em_{{name}}.md), output paths (P07/), size limit 4096B. Single metric def."
+domain: "eval_metric construction"
+created: "2026-04-14"
+updated: "2026-04-14"
+8f: "F1_constrain"
+keywords: [limits for eval_metric production, eval_metric construction, config eval metric, output paths, size limit, single metric def, eval_metric, builder, config, p07_em_<metric_name>]
+density_score: 0.85
+related:
+  - bld_config_eval_framework
+  - bld_config_ab_test_config
+  - bld_config_api_reference
+  - bld_config_collaboration_pattern
+  - bld_config_agents_md
+---
+
+## Naming Convention
+Pattern: `p07_em_<metric_name>`
+Examples:
+- p07_em_accuracy
+- p07_em_f1_score
+
+## Paths
+Artifacts: `/mnt/artifacts/p07/em/<metric_name>/`
+Checksum: `/mnt/checksums/p07/em/<metric_name>.sha256`
+Note: Use POSIX-compliant paths only
+
+## Limits
+max_bytes: 4096
+max_turns: 100
+effort_level: 3
+
+## Hooks
+pre_build: null
+post_build: null
+on_error: null
+on_quality_fail: null
+
+## Domain-Specific Constraints
+
+| Constraint | Value |
+|-----------|-------|
+| Boundary | Single metric def |
+| Dependencies | scoring_rubric |
+| Primary 8F function | F7_govern |
+| Max artifact size | 4096 bytes |
+
+## Edge Cases
+
+| Scenario | Handling |
+|----------|---------|
+| Missing required frontmatter field | Fail H01 gate; return to F6 |
+| ID collision with existing artifact | Append version suffix (_v2) |
+| Body exceeds 4096 bytes | Trim prose sections; preserve tables |
+| Dependency scoring_rubric not found | Warn; proceed with defaults |
+
+## Properties
+
+| Property | Value |
+|----------|-------|
+| Kind | `config` |
+| Pillar | P09 |
+| Domain | eval metric construction |
+| Pipeline | 8F (F1-F8) |
+| Scorer | cex_score.py |
+| Compiler | cex_compile.py |
+| Retriever | cex_retriever.py |
+| Quality target | 9.0+ |
+| Density target | 0.85+ |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| bld_config_eval_framework | sibling | 0.53 |
+| bld_config_ab_test_config | sibling | 0.51 |
+| bld_config_api_reference | sibling | 0.49 |
+| bld_config_collaboration_pattern | sibling | 0.48 |
+| bld_config_agents_md | sibling | 0.47 |

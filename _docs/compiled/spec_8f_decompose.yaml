@@ -1,0 +1,329 @@
+id: spec_8f_decompose
+kind: decision_record
+title: '8F Decomposition: Multi-Tier Pipeline Architecture'
+version: 2.0.0
+status: stable
+author: n07
+created: 2026-04-28
+updated: 2026-04-28
+mission: 8F_DECOMPOSE
+evidence: STRESS_TEST 2026-04-28 (6 runtimes, 36 tasks, 4 waves)
+deferred:
+- MISSION_OLLAMA_F6_FINETUNE (local model training from 2000+ artifact JSONL)
+tags:
+- 8f
+- decomposition
+- multi-model
+- structural-scoring
+- council
+quality: null
+related:
+- spec_infinite_bootstrap_loop
+- p01_kc_claude_model_capabilities_2026
+- decision_record_runtime_coverage
+- mental_model_cex_architecture
+- spec_cex_architecture_review
+- n00_readme
+- bld_knowledge_card_nucleus_def
+- p02_fc_cex_model_fallback
+- p02_mc_claude_opus_4
+- p01_faq_cex_common_questions
+1_problem_statement: 'STRESS_TEST results (2026-04-28):
+
+
+  | Runtime   | Delivered | Time  | Quality | Failure Mode                    |
+
+  |-----------|-----------|-------|---------|---------------------------------|
+
+  | Opus      | 6/6       | ~8m   | 8.5-9.1 | None                            |
+
+  | Sonnet    | 5/6       | ~8.5m | 8.8 avg | Git lock contention (1 nucleus) |
+
+  | Haiku v1  | 3/6       | ~3m   | 9.0*    | Signal without deliverable      |
+
+  | Haiku v2  | 2/6       | ~8m   | 8.5-9.1 | Same (race fix did not help)    |
+
+  | Gemini    | 2/6       | 25m+  | 8.5 avg | Hallucinated data + hung        |
+
+  | Codex     | 0/6       | ~3m   | n/a     | Destructive (modifies existing) |
+
+  | Ollama    | 0/6       | ~5m   | n/a     | Zero output                     |
+
+
+  Root cause: only Opus/Sonnet can execute the full 8F pipeline autonomously.
+
+  Cheaper models fail at different stages but could succeed at isolated stages.'
+2_solution_3_stage_decomposition: "STAGE 1: THINK     (F1 CONSTRAIN + F2 BECOME + F3 INJECT + F4 REASON)\n  Who:   Opus /\
+  \ Sonnet (the model already running as N07 or nucleus)\n  Input: user intent + kind + pillar\n  Output: PROMPT PACKAGE (.md\
+  \ structured file)\n  Cost:  ~2K tokens (reasoning only, no generation)\n\nSTAGE 2: GENERATE  (F6 PRODUCE)\n  Who:   Any\
+  \ model (Haiku / Gemini Flash / Ollama fine-tuned)\n  Input: prompt package (complete instructions + data + template)\n\
+  \  Output: raw artifact (.md with frontmatter + body)\n  Cost:  model-dependent (cheapest available)\n\nSTAGE 3: VALIDATE\
+  \  (F7 GOVERN + F8 COLLABORATE)\n  Who:   Tool council (cex_doctor + cex_score + cex_compile)\n        + cross-nucleus review\
+  \ (N05 validates N03 output)\n  Input: raw artifact\n  Output: scored artifact (structural_score) + git commit + signal\n\
+  \  Cost:  0 tokens (tools only) or ~2K (cross-nucleus, within session)"
+3_prompt_package_format_stage_1_output: 'Structured Markdown. No parser needed. Human-readable, LLM-friendly.
+
+
+  ---
+
+  package_type: f6_prompt_package
+
+  target_kind: knowledge_card
+
+  target_pillar: P01
+
+  target_path: N04_knowledge/P01_knowledge/kc_react_patterns.md
+
+  builder_isos_loaded: 12
+
+  context_sources: 4
+
+  density_target: 0.85
+
+  max_bytes: 8192
+
+  ---
+
+
+  ## IDENTITY (from F2 BECOME)
+
+  You are a knowledge-card-builder. Your role: ...
+
+  Sin lens: Knowledge Gluttony (completeness over brevity).
+
+
+  ## CONTEXT (from F3 INJECT)
+
+  ### Existing artifacts in this domain:
+
+  - kc_frontend_patterns.md (related, score 8.5)
+
+  - kc_component_architecture.md (related, score 9.0)
+
+
+  ### Knowledge sources:
+
+  [pre-compiled context from preflight, KCs, examples]
+
+
+  ## PLAN (from F4 REASON)
+
+  Sections: [Concept, Patterns, Anti-patterns, Examples, Related]
+
+  Approach: template (match 72% with kc_frontend_patterns)
+
+  Density target: 0.88
+
+
+  ## TEMPLATE (fill this)
+
+  ---
+
+  id: kc_react_patterns
+
+  kind: knowledge_card
+
+  pillar: P01
+
+  quality: null
+
+  version: 1.0.0
+
+  tags: [react, patterns, frontend]
+
+  ---
+
+
+  ## Concept
+
+  [FILL: 2-3 paragraphs defining React patterns in CEX context]
+
+
+  ## Patterns
+
+  [FILL: table with columns: Pattern | When to Use | Example]
+
+
+  ## Anti-patterns
+
+  [FILL: 3-5 anti-patterns with why they fail]
+
+
+  ## Related Artifacts
+
+  [FILL: table with columns: Artifact | Relationship | Score]'
+4_model_tier_definitions: "# .cex/config/nucleus_models.yaml additions\ntiers:\n  full_8f:\n    models: [claude-opus-4-6,\
+  \ claude-sonnet-4-6]\n    capabilities: [F1, F2, F3, F4, F5, F6, F7, F8]\n    use_for: autonomous end-to-end dispatch (solo,\
+  \ grid)\n\n  f6_generation:\n    models: [claude-haiku-4-5, gemini-2.5-flash]\n    capabilities: [F6]\n    use_for: receive\
+  \ prompt package, produce artifact\n    requires: prompt_package input + Stage 3 validation\n    budget: included in subscription\
+  \ (Haiku) or free tier (Flash)\n\n  preflight_aux:\n    models: [gemini-2.5-pro, codex]\n    capabilities: [web_fetch, code_scan,\
+  \ index_build]\n    use_for: Phase 0 preflight, read-only code analysis\n    restriction: NEVER write artifacts, NEVER git\
+  \ commit\n    budget: free tier (Gemini) or subscription (Codex)\n\n  local_f6:\n    models: [ollama-finetuned]\n    capabilities:\
+  \ [F6]\n    use_for: template filling from trained patterns\n    requires: MISSION_OLLAMA_F6_FINETUNE complete\n    status:\
+  \ DEFERRED\n\n  unsupported:\n    models: [ollama-raw, codex-grid]\n    reason: >\n      STRESS_TEST 2026-04-28: ollama-raw\
+  \ 0/6 (zero output),\n      codex-grid 0/6 (destructive -- deletes/modifies existing artifacts)\n    status: BLOCKED until\
+  \ evidence changes"
+5_structural_score_v2: ''
+formula_10_points_deterministic_zero_llm_cost: '| # | Check                | Points | Tool               | Status   |
+
+  |---|----------------------|--------|--------------------|----------|
+
+  | 1 | frontmatter_valid    | 1.0    | cex_doctor.py      | EXISTS   |
+
+  | 2 | density_above_085    | 1.0    | cex_doctor.py      | EXISTS   |
+
+  | 3 | wikilinks_resolve    | 1.0    | cex_doctor.py      | EXISTS   |
+
+  | 4 | compile_clean        | 1.0    | cex_compile.py     | EXISTS   |
+
+  | 5 | ascii_clean          | 1.0    | cex_sanitize.py    | EXISTS   |
+
+  | 6 | size_under_cap       | 1.0    | cex_doctor.py      | EXISTS   |
+
+  | 7 | has_related          | 1.0    | cex_score.py L1    | EXISTS   |
+
+  | 8 | has_tags             | 1.0    | cex_score.py L1    | EXISTS   |
+
+  | 9 | artifact_on_disk     | 1.0    | NEW (path check)   | NEW      |
+
+  | 10| git_committed        | 1.0    | NEW (git show)     | NEW      |'
+integration: "# In artifact frontmatter (computed, not self-reported)\nquality: null              # LLM opinion -- stays null\
+  \ until peer review\nstructural_score: 8        # 8/10 checks passed (deterministic)\nstructural_details:\n  frontmatter_valid:\
+  \ true\n  density_above_085: true\n  wikilinks_resolve: false   # 1 broken link\n  compile_clean: true\n  ascii_clean: true\n\
+  \  size_under_cap: true\n  has_related: true\n  has_tags: true\n  artifact_on_disk: true\n  git_committed: false       #\
+  \ not yet committed"
+signal_without_deliverable_gate: "New BLOCKING gate in cex_doctor.py:\n\nIF signal.status == \"complete\" AND artifact_on_disk\
+  \ == false:\n  VERDICT: FAIL (BLOCKING)\n  MESSAGE: \"Nucleus signaled complete but artifact not found at {path}\"\n  ACTION:\
+  \ do not trust signal, do not count as delivered\n\nThis catches the Haiku/Sonnet failure pattern at the toolchain level."
+6_tool_based_council_f7c: ''
+architecture_zero_api_cost: 'Judge 1: cex_doctor.py   →  structural health (frontmatter, density, wiring)
+
+  Judge 2: cex_score.py    →  structural score (Layer 1 only, skip semantic)
+
+  Judge 3: cex_compile.py  →  parse integrity (YAML, wikilinks, schema)
+
+
+  Consensus:  all 3 PASS → artifact accepted
+
+  Divergence: any FAIL while others PASS → flag for human review
+
+  All FAIL:   artifact rejected, return to F6'
+cross_nucleus_review_within_existing_session_2k_tokens: 'When multiple nuclei are running (grid dispatch):
+
+  - The PRODUCING nucleus does NOT validate its own output
+
+  - N05 (operations) validates all other nuclei''s artifacts
+
+  - N05 is already booted and running -- zero marginal API cost
+
+  - Review uses the scoring_rubric, not free-form LLM judgment'
+deferred_council_async_for_solo_dispatch: 'When only 1 nucleus runs (no N05 available):
+
+  - Artifact lands with structural_score only
+
+  - Next `/evolve` sweep runs semantic scoring in batch
+
+  - User already pays for the /evolve session -- council piggybacks'
+7_wave_plan: ''
+wave_1_design_artifacts_n07_produces_directly: '| # | Artifact | Kind | Path |
+
+  |---|----------|------|------|
+
+  | 1 | This spec | decision_record | _docs/specs/spec_8f_decompose.md |
+
+  | 2 | Prompt Package interface | interface | N00_genesis/P06_schema/p06_if_prompt_package.md |
+
+  | 3 | Architecture diagram | diagram | N07_admin/P08_architecture/p08_dg_8f_decomposed.md |'
+wave_2_pipeline_scoring_dispatch_n03_n05: '| # | Artifact | Kind | Nucleus | Path |
+
+  |---|----------|------|---------|------|
+
+  | 4 | Decomposed 8F pipeline | pipeline_template | N03 | N03_engineering/P12_orchestration/p12_pt_8f_decomposed.md |
+
+  | 5 | Structural Score v2 rubric | scoring_rubric | N05 | N05_operations/P07_evals/p07_sr_structural_score_v2.md |'
+wave_3_wiring_dispatch_n05: '| # | Deliverable | Type | Nucleus |
+
+  |---|-------------|------|---------|
+
+  | 6 | cex_score.py: add checks 9+10 | code change | N05 |
+
+  | 7 | cex_doctor.py: add signal-without-deliverable gate | code change | N05 |
+
+  | 8 | nucleus_models.yaml: add tier definitions | config change | N05 |
+
+  | 9 | resolve_model.ps1: read tier, route F6 tasks | code change | N05 |'
+future_mission_referenced_not_scoped_here: '| Mission | Depends On | Deliverable |
+
+  |---------|-----------|-------------|
+
+  | MISSION_OLLAMA_F6_FINETUNE | Unsloth Blackwell fix + 2000 JSONL pairs | Fine-tuned 8B model for F6 generation |'
+8_success_criteria: '| Metric | Current | Target |
+
+  |--------|---------|--------|
+
+  | Haiku grid delivery rate | 2-3/6 | 6/6 (via prompt package + validation) |
+
+  | Structural scoring coverage | ~80% (8 checks) | 100% (10 checks) |
+
+  | Signal-without-deliverable detection | 0% (undetected) | 100% (BLOCKING gate) |
+
+  | F7c COUNCIL API cost | n/a | 0 tokens (tool-based) |
+
+  | Non-Claude model usability | grid only (fails) | scoped roles (preflight, F6, read-only) |'
+9_section_5_dispatch_sh_integration_w2_podcast_oss_v2: 'The decomposed pipeline is exposed as a first-class dispatch mode:
+
+
+  bash _spawn/dispatch.sh decompose <nucleus> "<task>" [-1 model] [-2 model] [--dry-run] [--skip-stage-3]'
+wiring_overview: "dispatch.sh decompose\n       |\n       v\n_tools/cex_decompose.py            <-- orchestrator (Python,\
+  \ ASCII-only)\n       |\n       +-- Stage 1: subprocess(_tools/cex_8f_runner.py --stage 1 --mode B ...)\n       |      env:\
+  \ CEX_DECOMPOSE_STAGE=1, CEX_MODEL_OVERRIDE=<stage_1_model>\n       |      output: .cex/runtime/packages/pp_<kind>_<task_id>.md\n\
+  \       |\n       +-- Stage 2: subprocess(_tools/cex_8f_runner.py --stage 2 --mode B\n       |                       --prompt-package\
+  \ <pkg> --execute ...)\n       |      env: CEX_DECOMPOSE_STAGE=2, CEX_MODEL_OVERRIDE=<stage_2_model>\n       |      output:\
+  \ artifact under target nucleus\n       |\n       +-- Stage 3: deterministic tools (no LLM)\n              cex_doctor.py\
+  \ + cex_compile.py + signal_writer.write_signal(...)"
+stage_model_resolution: "- `_tools/cex_decompose.py` reads `tiers.decompose` from\n  `.cex/config/nucleus_models.yaml`:\n\
+  \  - `stage_1` (default `claude-opus-4-7`)\n  - `stage_2` (default `claude-haiku-4-5-20251001`)\n  - `stage_2_fallback`\
+  \ (ordered list, e.g. `[gemini-2.5-flash-lite, qwen3:8b]`)\n- Override precedence at runtime: CLI flag > env var\n  (`CEX_DECOMPOSE_STAGE{1,2}_MODEL`)\
+  \ > YAML > default.\n- `_tools/cex_boot_pipeline.py` reads `CEX_DECOMPOSE_STAGE` and applies the\n  matching `tiers.decompose.stage_{N}`\
+  \ override on the spawned nucleus's model."
+stage_protocol_signal_handshake: '| Stage | Trigger          | Success signal              | On failure                                |
+
+  |-------|------------------|-----------------------------|-------------------------------------------|
+
+  | 1     | dispatch.sh      | `pp_*.md` written under packages/ | exit 2; orchestrator stops               |
+
+  | 2     | orchestrator     | artifact on disk            | exit 3 after fallback chain exhausted     |
+
+  | 3     | orchestrator     | `cex_doctor` 0 FAILs + git commit + `signal_writer.write_signal(nucleus, "complete", 9.0)`
+  | exit 4 (FAIL surfaced to N07) |'
+acceptance_for_9_w2: "- `bash _spawn/dispatch.sh decompose n03 \"test\" --dry-run` exits 0 and prints\n  the intended Stage\
+  \ 1 / Stage 2 / Stage 3 subprocess calls.\n- `python _tools/cex_decompose.py --nucleus n04 --task \"...\"` runs end-to-end\n\
+  \  and produces a single git commit covering the new artifact.\n- `git log --since=\"N seconds\"` shows ONE commit (not\
+  \ 3), Stage 3 batches all\n  changes including the prompt_package metadata.\n- All new code (`cex_decompose.py`) passes\
+  \ ASCII sanitizer and PEP8."
+related_artifacts: '| Artifact | Relationship | Score |
+
+  |----------|-------------|-------|
+
+  | [[8f-reasoning]] | upstream | 0.95 |
+
+  | [[n07-orchestrator]] | upstream | 0.90 |
+
+  | [[spec_hybrid_scoring]] | related | 0.70 |
+
+  | [[p07_sr_structural_score_v2]] | downstream | 0.65 |
+
+  | [[p12_pt_8f_decomposed]] | downstream | 0.60 |
+
+  | [[p06_if_prompt_package]] | downstream | 0.55 |
+
+  | [[spec_infinite_bootstrap_loop]] | related | 0.30 |
+
+  | [[decision_record_runtime_coverage]] | sibling | 0.25 |
+
+  | [[mental_model_cex_architecture]] | related | 0.24 |
+
+  | [[p02_fc_cex_model_fallback]] | related | 0.23 |
+
+  | [[p02_mc_claude_opus_4]] | related | 0.23 |'
+structural_score: 8

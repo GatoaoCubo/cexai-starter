@@ -1,0 +1,85 @@
+-- down_20260616000004_tenant_vault_storage.sql
+-- ROLLBACK (down-migration) for 20260616000004_tenant_vault_storage.sql.
+-- Reverses the `secrets` (Vault RPC) + `ft` (Storage) surfaces:
+--   * DROP the SECURITY DEFINER function tenant_vault_upsert(uuid,text,text).
+--   * DROP the two RLS policies CEX added to storage.objects (tenant_boundary +
+--     service_role_all).
+-- Idempotent (every statement is IF EXISTS).
+--
+-- ############################################################################
+-- ##  BLAST RADIUS -- SHARED SCHEMA + PLATFORM-OWNED TABLE. READ FIRST.      ##
+-- ##                                                                          ##
+-- ##  storage.objects is the SHARED Supabase Storage catalog -- ALL tenants'  ##
+-- ##  FT corpora/adapters live there under tenant/<id>/ prefixes, isolated    ##
+-- ##  only by the tenant_boundary policy this rollback removes.               ##
+-- ##                                                                          ##
+-- ##  CRITICAL SECURITY EFFECT OF THIS ROLLBACK:                              ##
+-- ##  Dropping `tenant_boundary` on storage.objects REMOVES the per-tenant    ##
+-- ##  prefix isolation. If RLS stays ENABLED with no permissive grant, the    ##
+-- ##  fail-closed result is that `authenticated` sees 0 objects (a DoS, not a ##
+-- ##  leak). But if any OTHER permissive policy grants access (or RLS is      ##
+-- ##  later disabled on this platform table), removing the boundary can       ##
+-- ##  EXPOSE every tenant's objects. Do NOT leave storage.objects in a half-  ##
+-- ##  rolled-back state: either restore the forward migration's boundary, or  ##
+-- ##  confirm RLS remains enabled and no other grant exists.                  ##
+-- ############################################################################
+--
+-- ############################################################################
+-- ##  OWNERSHIP CAVEAT (proven on STAGING 2026-06-20, map Sec 5d):           ##
+-- ##  storage.objects is OWNED by `supabase_storage_admin`, a platform role.  ##
+-- ##  The `postgres` role used by the Supabase Management API AND a direct    ##
+-- ##  psql connection is NON-superuser and does NOT assume that owner role,   ##
+-- ##  so DROP POLICY ... ON storage.objects FAILED on the forward apply with  ##
+-- ##  `must be owner of table objects`. The SAME failure will hit THIS        ##
+-- ##  rollback's storage.objects statements. To run them you need the owner   ##
+-- ##  path: the Supabase Dashboard (Storage policies UI), `supabase db push`  ##
+-- ##  with owner auth, or a GRANT/SET ROLE supabase_storage_admin from a      ##
+-- ##  superuser. The Vault function DROP (postgres-ownable) will run fine     ##
+-- ##  regardless -- the two halves can be applied separately.                 ##
+-- ############################################################################
+--
+-- WHAT THIS FILE DOES *NOT* DO (deliberately):
+--   * It does NOT DROP TABLE storage.objects -- that table is platform-owned
+--     Supabase infrastructure shared by the whole project; dropping it would break
+--     Storage entirely. We only remove the POLICIES CEX added to it.
+--   * It does NOT `ALTER TABLE storage.objects DISABLE ROW LEVEL SECURITY`. The
+--     forward migration's step 0 ran a DEFENSIVE `ENABLE ROW LEVEL SECURITY`.
+--     Disabling RLS on a shared platform table on the way out would be DANGEROUS
+--     (it would expose every object to any authenticated caller). Leaving RLS
+--     ENABLED is the safe default -- with the boundary policy gone and RLS on, the
+--     fail-closed state is "no permissive grant -> 0 rows", not "all rows".
+--     If the project shipped storage.objects RLS OFF originally and you must
+--     restore THAT exact prior state, do so MANUALLY and deliberately, aware of the
+--     exposure:  -- ALTER TABLE storage.objects DISABLE ROW LEVEL SECURITY;  (DO NOT
+--     uncomment without understanding it re-globalizes object visibility.)
+--   * It does NOT delete any Vault secrets created via tenant_vault_upsert. Those
+--     live in the `vault` schema (vault.secrets), survive this function DROP, and
+--     are a SEPARATE, even-more-sensitive teardown. Removing secrets is out of
+--     scope for a schema rollback -- handle credential destruction + rotation via
+--     _docs/compiled/runbook_service_role_custody.md, not here.
+--
+-- NOT APPLIED in this task. PREPARE-ONLY -- authored structurally, NOT run against
+-- any live DB.
+--
+-- DEPENDENCY ORDER (reverse of the forward migration):
+--   forward = function -> ENABLE RLS -> boundary policy -> service_role policy.
+--   reverse = service_role policy -> boundary policy -> function. (RLS ENABLE is
+--   intentionally NOT reversed -- see above.)
+
+-- ==========================================================================
+-- A. Storage policies on storage.objects (OWNER-GATED -- see ownership caveat).
+--    Run these from an owner-capable path (Dashboard / db push / storage_admin).
+-- ==========================================================================
+DROP POLICY IF EXISTS service_role_all ON storage.objects;
+DROP POLICY IF EXISTS tenant_boundary ON storage.objects;
+-- (storage.objects RLS left ENABLED on purpose; table NOT dropped -- platform-owned.)
+
+-- ==========================================================================
+-- B. The Vault SECURITY DEFINER RPC (postgres-ownable -- runs without the storage
+--    owner role). The signature MUST match the forward CREATE exactly so the right
+--    overload is dropped: tenant_vault_upsert(uuid, text, text). Dropping the
+--    function automatically removes the GRANT EXECUTE ... TO service_role on it (a
+--    function's privileges are dropped with the function), so no separate REVOKE is
+--    needed. Existing vault.secrets rows are NOT touched (see header).
+-- ==========================================================================
+DROP FUNCTION IF EXISTS tenant_vault_upsert(uuid, text, text);

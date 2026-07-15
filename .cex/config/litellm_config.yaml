@@ -1,0 +1,132 @@
+# LiteLLM Proxy Configuration for CEX (FREE MODE, tuned per-nucleus)
+# 2026-04-15 round 2: added gemma2:9b to bench. New winners:
+#   gemma2:9b wins N01/N02/N03/N05/N06 (fast + raw --- frontmatter on N03)
+#   qwen3:14b still wins N04 (only model naming real citations, e.g. Sparck-Jones 1972)
+#   llama3.1:8b still wins N07 (longer structured plans at comparable speed)
+# Disqualified: qwen3:8b (thinking-budget = 0 bytes on N05), gemma4:26b (VRAM overflow).
+#
+# Benchmark data: .cex/runtime/benchmarks/summary.json
+# Decision rationale: _docs/specs/spec_claude_vs_free_routing.md
+#
+# To enable paid fallback (ordered chain, NOT pool duplication):
+#   router_settings:
+#     fallbacks:
+#       - {cex-n01: [cex-n01-free]}
+#   with a paired model_list entry e.g. cex-n01-free -> ollama/qwen3:14b.
+
+model_list:
+  # --- N07 Orchestrator (gemma2:9b 8.6s; haiku hits 22.3s for 2x volume) ---
+  - model_name: cex-n07
+    litellm_params:
+      model: ollama/gemma2:9b
+      api_base: http://localhost:11434
+
+  # --- N01 Intelligence (gemma2:9b fastest adherent, 5.5s) ---
+  - model_name: cex-n01
+    litellm_params:
+      model: ollama/gemma2:9b
+      api_base: http://localhost:11434
+
+  # --- N02 Marketing (gemma2:9b 5.0s, tied with llama) ---
+  - model_name: cex-n02
+    litellm_params:
+      model: ollama/gemma2:9b
+      api_base: http://localhost:11434
+
+  # --- N03 Builder (gemma2:9b produces raw --- frontmatter in 5.1s vs qwen3:14b 11.6s) ---
+  - model_name: cex-n03
+    litellm_params:
+      model: ollama/gemma2:9b
+      api_base: http://localhost:11434
+
+  # --- N04 Knowledge (gemma2:9b 6.7s; qwen3:14b citation win NOT reproducible) ---
+  # Round 2 (2026-04-15): neither model cited Sparck-Jones. Use gemma2
+  # for speed; production KCs still require Claude Opus or human review.
+  - model_name: cex-n04
+    litellm_params:
+      model: ollama/gemma2:9b
+      api_base: http://localhost:11434
+
+  # --- N05 Operations (gemma2:9b 6.4s, llama close behind at 6.8s) ---
+  - model_name: cex-n05
+    litellm_params:
+      model: ollama/gemma2:9b
+      api_base: http://localhost:11434
+
+  # --- N06 Commercial (gemma2:9b 6.1s adherent) ---
+  - model_name: cex-n06
+    litellm_params:
+      model: ollama/gemma2:9b
+      api_base: http://localhost:11434
+
+  # ============================================================
+  # STRONG profile -- a frontier model via OpenRouter (ONE key -> any model).
+  # Set OPENROUTER_API_KEY, point a nucleus (or the native CLI) at "cex-n07-strong".
+  # Use the provider's CURRENT slug (model ids rotate ~monthly). The grid-test above
+  # timed out 0/6 on a local 8B x6-concurrent -- THIS is the fix for that.
+  # ============================================================
+  - model_name: cex-n07-strong
+    litellm_params:
+      model: openrouter/z-ai/glm-5.2            # swap: deepseek/deepseek-chat | google/gemini-3-pro | openai/gpt-5.4 | moonshotai/kimi-k2.6
+      api_base: https://openrouter.ai/api/v1
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # ---- FREE, runs OFFLINE on this machine (Ollama; NO key needed) ----
+  - model_name: free-llama
+    litellm_params: { model: ollama/llama3.1:8b, api_base: http://localhost:11434 }
+  - model_name: free-qwen
+    litellm_params: { model: ollama/qwen3:14b, api_base: http://localhost:11434 }
+  - model_name: free-qwen-coder
+    litellm_params: { model: ollama/qwen2.5-coder:7b, api_base: http://localhost:11434 }
+  - model_name: free-gemma
+    litellm_params: { model: ollama/gemma2:9b, api_base: http://localhost:11434 }
+  - model_name: free-qwen-small
+    litellm_params: { model: ollama/qwen3:8b, api_base: http://localhost:11434 }
+
+  # ---- FREE via OpenRouter (needs OPENROUTER_API_KEY; ~20 req/min, 200/day;
+  #      ":free" ids rotate + are being deprecated in 2026 -- the Ollama locals above
+  #      are the RELIABLE free tier. Confirm the current slug before relying on these) ----
+  - model_name: free-qwen-coder-or
+    litellm_params:
+      model: openrouter/qwen/qwen3-coder:free
+      api_base: https://openrouter.ai/api/v1
+      api_key: os.environ/OPENROUTER_API_KEY
+  - model_name: free-deepseek-or
+    litellm_params:
+      model: openrouter/deepseek/deepseek-chat-v3:free
+      api_base: https://openrouter.ai/api/v1
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # ============================================================
+  # GLM via self-hosted Open WebUI (OpenAI-compat) -- NOT the OpenRouter
+  # cloud "glm-5.2" route above (cex-n07-strong). This is the founder's own
+  # box (container 9-IA-GLM, reached via `ssh cexai-server`), Open WebUI
+  # v0.10.2 on localhost:3000/api. Local (off-box) use requires a tunnel:
+  #   ssh -N -L 13000:localhost:3000 cexai-server
+  # then point OPENWEBUI_API_BASE at the tunnel port instead of the box port.
+  # glm-5.2 is a REASONING model -- use max_tokens >= 200 or content comes
+  # back empty (thinking eats a small budget). Full writeup + the other 6
+  # models exposed by this endpoint: N05_operations/P02_model/p02_mp_openwebui_glm.md
+  # ============================================================
+  - model_name: glm-openwebui
+    litellm_params:
+      model: openai/glm-5.2
+      api_base: os.environ/OPENWEBUI_API_BASE
+      api_key: os.environ/OPENWEBUI_API_KEY
+
+litellm_settings:
+  # Drop provider-unsupported params so a NATIVE client can route to a local model.
+  # The native claude CLI sends Anthropic-only params (e.g. context_management) that
+  # ollama rejects; drop_params strips them before forwarding. Found by dogfooding
+  # boot/cex_anymodel.ps1 against ollama/gemma2:9b -- essential for the any-model CLI seam.
+  drop_params: true
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+
+router_settings:
+  routing_strategy: simple-shuffle
+  num_retries: 2
+  timeout: 120
+  retry_after: 5
+  allowed_fails: 2

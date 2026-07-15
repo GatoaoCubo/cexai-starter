@@ -1,0 +1,93 @@
+# =============================================================================
+# CEXAI -- Typed Meta-Control Plane for Agent Stacks (foundation package)
+# =============================================================================
+#
+# Self-contained, installable package. From this directory (cexai/):
+#   pip install -e .            # install cexai.foundation
+#   pip install -e .[test]      # + pytest, hypothesis, vcrpy
+#   python -m pytest -q         # run the test suite
+#
+# This package is designed for eventual extraction into its own repository
+# (per cexai-specs/_revisions/v01_sprint_plan.md Day 0). Until then it lives
+# inside the cex monorepo as a self-contained subtree. The root cex-tools
+# pyproject builds only ["cex_sdk", "_tools"]; it does NOT discover this tree.
+#
+# absorbs: 08_goose/library-first-packaging
+# =============================================================================
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cexai"
+version = "1.1.0"
+description = "CEXAI foundation -- runtime governance layer over multi-provider LLMs (llm + mcp + invocation + tracing + open_vars)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "CEXAI maintainers" }]
+keywords = ["llm", "mcp", "multi-provider", "agent", "governance", "cexai"]
+
+# v1 provider set per spec FR-002 (Anthropic + OpenAI + Google + Ollama) plus
+# the MCP SDK, validation, CLI, and OpenTelemetry tracing substrate.
+dependencies = [
+    "anthropic",
+    "openai",
+    "google-generativeai",
+    "ollama",
+    "mcp",
+    "pydantic>=2",
+    "typer",
+    "opentelemetry-sdk",
+    "opentelemetry-exporter-otlp",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "hypothesis", "vcrpy"]
+# v0.2 memory substrate backends. OPTIONAL so `pip install -e ./cexai` stays
+# light; the vector/graph/episodic impls (W1/W2) import these lazily and fall
+# back when a dep is absent (02 edge case: embedding model unavailable).
+memory = ["hnswlib", "duckdb", "networkx", "tree-sitter"]
+# Docs toolchain (ADR 007). OPTIONAL -- `pip install -e .[docs]` builds the MkDocs
+# site under docs/. mkdocs.yml uses the built-in `readthedocs` theme so the site
+# builds with mkdocs alone; mkdocs-material is the recommended (ADR-007) upgrade.
+docs = ["mkdocs", "mkdocs-material"]
+
+[project.scripts]
+# W3: the invocation CLI lands in W3. Console-script entry points are lazy --
+# setuptools does NOT import the target at install time, so declaring it now
+# does not break `pip install -e .` even though the module does not exist yet.
+cexai = "cexai.foundation.invocation.cli:app"
+
+[project.urls]
+Specs = "https://github.com/GatoaoCubo/cex/tree/main/cexai-specs"
+
+# -----------------------------------------------------------------------------
+# Packaging: the importable package is the nested cexai/ dir; tests are excluded
+# from the wheel but remain on disk for `python -m pytest`.
+# -----------------------------------------------------------------------------
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cexai*"]
+exclude = ["tests*"]
+
+# Ship the stack-blueprint feature templates (vertical 16/17) + the vertical-19
+# provisioning protocol as package data so a built wheel is self-contained. The
+# loader reads these via importlib.resources; vertical 18's vendored corpus is NOT
+# packaged (reference-only, stays in cexai-specs). setuptools>=68 supports `**`.
+[tool.setuptools.package-data]
+"cexai.distribution.blueprints" = ["data/**/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = ["-ra", "--strict-markers"]
+markers = [
+    "contract: cross-provider contract tests (W1 RED->GREEN)",
+    "integration: requires real providers or MCP fixtures",
+    "unit: fast isolated unit tests (no live providers, no MCP)",
+    "bench: benchmark corpora (nightly)",
+    "governance: constitution / article compliance checks",
+]

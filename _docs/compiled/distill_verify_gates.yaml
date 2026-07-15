@@ -1,0 +1,242 @@
+# distill_verify_gates.yaml
+# =============================================================================
+# H-EVAL ASSERTIONS v1 -- declarative per-gate assertions for cex_distill.py's P5 verify stage
+# (register row R-007, FASE H / R-161 transplant). Mechanics transplanted from promptfoo (typed
+# assertion registry: one `type -> handler` lookup map) and DeepEval (assert_test: RE-EXECUTE the
+# check, never trust a stored status) -- see N01_intelligence/P01_knowledge/kc_oss_promptfoo.md and
+# kc_oss_deepeval.md for the source research. No code copied; this file + its runner are CEXAI-native.
+#
+# Consumed by: _tools/cex_distill.py `run_declared_gates()`, called from `_verify_emitted_tree()`
+# (P5 verify_repo -> _verify_emitted_tree). Folded into manifest["verify"]["declared_gates"] and
+# wired into verify_repo()'s `gates_ok` AND-chain (a BLOCKING-severity gate that fails makes the
+# whole distill report status="distilled" instead of "verified").
+#
+# Carried into EVERY emitted tenant tree at <out_repo>/_docs/compiled/distill_verify_gates.yaml
+# (unconditional copy in `_emit_repo_files`, same precedent as LICENSE/NOTICE/cexai_capability_catalog
+# .yaml) -- this file is tenant-agnostic infrastructure data, not a tenant secret.
+#
+# --- SCHEMA -----------------------------------------------------------------------------------
+# gates: a list of gate objects. Each gate:
+#   id            (required, str)  -- unique within this file; used to look up a gate's result.
+#   description   (optional, str)  -- human-readable explanation (shown in doctor / audit output).
+#   severity      (optional, str)  -- BLOCKING | HIGH | MEDIUM | OBSERVATION (see
+#                                     .claude/rules/8f-reasoning.md Severity Matrix). v1 ONLY wires
+#                                     BLOCKING into the `ok` rollup (run_declared_gates: `ok` iff
+#                                     every BLOCKING gate passes) -- HIGH/MEDIUM/OBSERVATION are
+#                                     recorded per-gate but do not (yet) fail the rollup. Forward-
+#                                     compatible field: a later wave may wire partial-severity
+#                                     handling once a real use case needs it. Default: BLOCKING.
+#   assert:
+#     type        (required, str)  -- one of the 4 v1 assertion types (below).
+#     ... type-specific fields (below)
+#
+# Open template vars available inside every `assert.command` / `assert.path` / `assert.target`
+# string (resolved via Python str.format(**ctx)):
+#   {python}      -- sys.executable of the process running the gate (Central's own interpreter)
+#   {out_repo}    -- absolute path to the emitted tenant repo root
+#
+# --- THE 4 v1 ASSERTION TYPES -------------------------------------------------------------------
+# file_exists:
+#   assert: {type: file_exists, path: "<templated path>"}
+#   ok iff `path` resolves to an existing regular file.
+#
+# subprocess_exit0:
+#   assert: {type: subprocess_exit0, command: [<templated argv>], cwd: "<templated, default {out_repo}>",
+#            timeout: <seconds, default 60>}
+#   ok iff the subprocess exits 0. Captures stdout/stderr for downstream inspection (the P5
+#   orchestrator re-parses the captured stdout of the `doctor_status` / `offline_import_smoke` gates
+#   below to shape the manifest's rich `verify.doctor` / `verify.offline_import_smoke` blocks --
+#   this file is the single execution point for both; nothing re-runs them a second time).
+#
+# output_contains:
+#   assert: {type: output_contains, path: "<templated path>", value: "<substring>"}
+#   ok iff `value` is a substring of `path`'s text content. Fail-closed: an unreadable path -> ok=False.
+#
+# count_gte:
+#   assert: {type: count_gte, target: "glob:<templated glob pattern>", threshold: <int>}
+#   ok iff the number of filesystem matches for the glob pattern is >= threshold.
+#
+# Unknown/missing `assert.type` -> ok=False ("unknown assertion type") -- a YAML typo must never
+# silently pass. A handler that raises is caught and reported as ok=False, never propagates.
+# =============================================================================
+schema: cex.distill_verify_gates/1
+
+gates:
+  # R-007 fix #1: the emitted tree's OWN cex_doctor.py actually runs and reports real PASS/WARN/FAIL
+  # counts (replaces the literal {status:"structural (lean tenant)", fail:0, warn:0} that shipped
+  # unconditional and identical on every call -- cex_distill.py:4938 prior to this fix).
+  - id: doctor_status
+    description: >
+      cex_doctor.py `check` (read-only, full untruncated stdout -- NOT `summary`, whose agent-io
+      HEAD-truncation at 200 lines can silently cut off the trailing 'Result:' line on a large
+      builder set) actually runs against the emitted tree and exits 0 (fail_count == 0; WARN-only
+      is acceptable).
+    severity: BLOCKING
+    assert:
+      type: subprocess_exit0
+      command: ["{python}", "{out_repo}/_tools/cex_doctor.py", "check"]
+      cwd: "{out_repo}"
+      timeout: 180
+
+  # R-007 fix #2: the vendored cexai package is REALLY importable in the emitted tree (replaces the
+  # text-grep proxy `_cexai_version_smoke`, which only checked for the substring "1.1.0" inside a
+  # file's bytes without ever executing a line of Python -- cex_distill.py:4405-4416 prior to this
+  # fix). The `sys.path.insert(0, 'cexai')` prepend is LOAD-BEARING: an empirically-confirmed
+  # landmine is that a bare `import cexai` (no prepend) can silently resolve to an unrelated AMBIENT
+  # pip-installed 'cexai' package already present in the executing environment instead of the
+  # tenant's own vendored copy -- this mirrors the same pattern `_verify_brain_runnable`'s own smoke
+  # script already uses for `_tools` (cex_distill.py:4797).
+  - id: offline_import_smoke
+    description: >
+      `import cexai` resolves to the emitted repo's OWN vendored package (never an ambient
+      pip-shadow), and its `__version__` is real and non-empty. R-007 round-1 fix: the script's
+      own exit code now reflects `payload['ok']` (`sys.exit(0 if payload['ok'] else 1)`) -- a prior
+      version always printed the payload and fell off the end of the script (implicit exit 0) even
+      when `payload['ok']` was False, which made this BLOCKING gate's `subprocess_exit0` assertion
+      structurally incapable of ever failing (empirically confirmed via fault injection: deleting the
+      vendored cexai/__init__.py still yielded `ok=true` at the gate-rollup level, only the shaped
+      manifest.verify.offline_import_smoke display block -- which is not consulted by
+      run_declared_gates' BLOCKING rollup -- reported the failure).
+    severity: BLOCKING
+    assert:
+      type: subprocess_exit0
+      command:
+        - "{python}"
+        - "-c"
+        - "import json, sys\nsys.path.insert(0, 'cexai')\ntry:\n    import cexai\n    v = getattr(cexai, '__version__', '')\n    payload = {'ok': bool(v), 'cexai_version': v}\nexcept Exception as exc:\n    payload = {'ok': False, 'cexai_version': '', 'error': str(exc)}\nprint(json.dumps(payload))\nsys.exit(0 if payload['ok'] else 1)\n"
+      cwd: "{out_repo}"
+      timeout: 30
+
+  # -- illustrative v1 gates (NOT required to close R-007; prove the "declared not coded" generality
+  #    of the 4-type palette beyond the 2 gates above, which both use subprocess_exit0) --
+  - id: license_present
+    description: "Apache-2.0 LICENSE shipped at repo root."
+    severity: HIGH
+    assert:
+      type: file_exists
+      path: "{out_repo}/LICENSE"
+
+  - id: kc_library_floor
+    description: >
+      At least 1 kind-KC actually carried (a declarative restatement of one of brain_runnable's 3
+      ALL-required signals, cex_distill.py's `_verify_brain_runnable`).
+    severity: BLOCKING
+    assert:
+      type: count_gte
+      target: "glob:{out_repo}/N00_genesis/P01_knowledge/library/kind/kc_*.md"
+      threshold: 1
+
+  # R-148 (H-cookbook) dogfood -- COOKBOOK.md is the consolidated per-tenant operating guide
+  # (`cex_distill.py` `_emit_cookbook`). SEVERITY CHOICE, deliberate (v1 star-rec): BLOCKING here is
+  # safe/meaningful as a CONSISTENCY check, not a bare presence check -- `distill()` already aborts
+  # before P4 whenever `plan.errors` is non-empty (see `distill()`'s `if plan.errors: ... return
+  # manifest` guard), so `plan.slug` is GUARANTEED non-empty by the time P4/P5 run, and
+  # `_emit_cookbook` unconditionally attempts the write whenever `plan.execute` and a slug resolved.
+  # A real execute run therefore ALWAYS reaches the `_write_text_file(... "COOKBOOK.md" ...)` call --
+  # this gate is checking that the emitter's own always-attempts design promise actually landed on
+  # disk (the same "filesystem truth over self-report" spirit as the frozen-kind moat scan), not
+  # gating on some conditional emission path that legitimately skips the file. An ADVISORY severity
+  # was considered and rejected: a cookbook that silently fails to land (e.g. an unexpected I/O error
+  # swallowed by `_emit_cookbook`'s fail-closed try/except) is exactly the kind of "builds but does
+  # not work for the client" gap S5's COMPLETENESS gate exists to catch -- letting it pass unblocked
+  # would reopen that class of bug for this one file.
+  - id: cookbook_present
+    description: >
+      COOKBOOK.md (the R-148 consolidated per-tenant operating guide) actually landed at the emitted
+      tenant repo root -- a consistency check that the emitter's always-attempts write promise held,
+      not a bare optional-presence check (see the severity-choice comment above).
+    severity: BLOCKING
+    assert:
+      type: file_exists
+      path: "{out_repo}/COOKBOOK.md"
+
+# =================================================================================================
+# TENANT UPDATE GATES (cexai-specs/21_tenant-update, T901) -- A SEPARATE, DELIBERATELY NOT-YET-WIRED
+# TOP-LEVEL KEY. Read this comment before adding a `subprocess_exit0` command here expecting it to
+# run automatically -- it will not, and that is intentional (T901's own instruction: "if the yaml
+# shape does not cleanly admit it, document the seam + defer the CI wiring with a note -- do not
+# force it").
+#
+# WHY THIS IS A SEPARATE KEY, NOT MORE ROWS UNDER `gates:` ABOVE:
+#   1. Lifecycle mismatch. Every gate under `gates:` runs at `cex_distill.py`'s OWN P5 verify stage
+#      (`run_declared_gates`, called from `_verify_emitted_tree` -- see `_tools/cex_distill.py`
+#      lines ~5121, ~5950), i.e. IMMEDIATELY after a FRESH emit, against the tree that emit JUST
+#      produced. `cex_tenant_update.py check`/`apply` targets a STRUCTURALLY DIFFERENT moment: an
+#      EXISTING, already-distilled, possibly-diverged tenant tree, receiving a delta from a
+#      SEPARATE Central checkout. Running an "update" gate at fresh-emit time is a category error
+#      (there is nothing to update yet -- `out_repo` IS Central at that exact version).
+#   2. Template-var mismatch. `run_declared_gates(gates_yaml_path, ctx)` is called with EXACTLY
+#      `ctx={"python": sys.executable, "out_repo": out}` (`_tools/cex_distill.py`, the `distill()`
+#      call site) -- confirmed by reading the call site directly. `cex_tenant_update.py` genuinely
+#      needs a SECOND path (a tenant tree DISTINCT from `--central-root`) to do anything meaningful
+#      -- a `{central_root}` (or `{tenant_dir}`) token has no binding in that ctx dict. `_ctx_format`
+#      (`_tools/cex_distill.py`) does a plain per-key literal-replace (NOT `str.format()`), so an
+#      unbound token would pass through UNSUBSTITUTED rather than raising -- silently producing a
+#      broken command path if it were ever picked up by the real runner.
+#   3. Confirmed safe (read the code, not just this comment): `run_declared_gates` does
+#      `(doc or {}).get("gates")` at the TOP LEVEL of this file -- it NEVER looks at any other key.
+#      A NEW top-level key (`tenant_update_gates`, below) is therefore 100% invisible to
+#      `cex_distill.py`'s existing AND-chain: adding it here cannot regress `doctor_status` /
+#      `offline_import_smoke` / `license_present` / `kc_library_floor` / `cookbook_present` above,
+#      cannot flip `distill()`'s `gates_ok` rollup, and requires ZERO change to `cex_distill.py`
+#      (this file's own hard fence: import/reuse only, never edit the engine).
+#
+# WHAT WOULD ACTUALLY WIRE THIS (not built here -- out of this lane's hard fence, which is
+# `_tools/cex_tenant_update.py` + its own tests/docs, NOT `cex_distill.py`): a small, SEPARATE
+# runner (e.g. a future `_tools/cex_tenant_update_verify.py`, or a CI job step) that reads THIS
+# `tenant_update_gates:` key directly, builds its OWN ctx (`{python, tenant_dir, central_root}`),
+# and calls the SAME `run_gate`/`_ASSERTION_HANDLERS` dispatch `cex_distill.py` already exports --
+# reusing the 4-type assertion palette this file's schema defines, without touching `gates:` or
+# `run_declared_gates`'s own ctx contract at all. Until that runner exists, this section is
+# DOCUMENTATION OF A SEAM, not a live CI gate -- exactly what T901 asked for when the natural shape
+# did not cleanly admit forcing it into the existing mechanism.
+#
+# The 2 gates below are illustrative (mirrors the "prove the 4-type palette" precedent set by
+# license_present/kc_library_floor above) -- they show the EXACT command shape a future runner
+# would execute; they use `{tenant_dir}`/`{central_root}` tokens deliberately absent from
+# `run_declared_gates`'s ctx (see point 2 above) so a stray future edit that accidentally merged
+# this list into `gates:` would be immediately obvious (unsubstituted `{central_root}`/
+# `{tenant_dir}` literals in the captured command, not a silent false-pass).
+# =================================================================================================
+tenant_update_gates:
+  schema: cex.tenant_update_verify_gates/1
+  gates:
+    - id: tenant_update_check_resolvable
+      description: >
+        `cex_tenant_update.py check <tenant_dir> --central-root <central_root> --json` resolves to
+        a KNOWN status (current/behind/ahead) -- never `unknown` -- and exits 0. Gates that the
+        tenant's DP2 anchor is genuinely readable before a CI job trusts anything downstream of it.
+      severity: BLOCKING
+      assert:
+        type: subprocess_exit0
+        command:
+          - "{python}"
+          - "{central_root}/_tools/cex_tenant_update.py"
+          - "check"
+          - "{tenant_dir}"
+          - "--central-root"
+          - "{central_root}"
+          - "--json"
+        cwd: "{tenant_dir}"
+        timeout: 60
+
+    - id: tenant_update_apply_no_unresolved_conflicts
+      description: >
+        `cex_tenant_update.py apply <tenant_dir> --central-root <central_root> --execute --json`
+        exits 0 -- i.e. 0 unresolved `conflict` rows remain (FR-014) -- gating a real UPDATE the
+        same disciplined way `doctor_status` gates a FRESH distill above. A `violation` row alone
+        (a FROZEN-path override) never fails this gate; only an unresolved `conflict` does.
+      severity: BLOCKING
+      assert:
+        type: subprocess_exit0
+        command:
+          - "{python}"
+          - "{central_root}/_tools/cex_tenant_update.py"
+          - "apply"
+          - "{tenant_dir}"
+          - "--central-root"
+          - "{central_root}"
+          - "--execute"
+          - "--json"
+        cwd: "{tenant_dir}"
+        timeout: 120

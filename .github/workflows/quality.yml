@@ -1,0 +1,41 @@
+# CEXAI Tenant -- Quality Gate
+# =============================
+# Validates the typed-knowledge layer on every push / PR.
+# Steps: doctor (health) -> sanitize (ASCII-only code gate) -> score (best-effort).
+# No LLM calls, no secrets required (CI-safe).
+
+name: Quality Gate
+
+on:
+  push:
+  pull_request:
+
+# Least-privilege: read-only token.
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    name: Doctor + Sanitize + Score
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Doctor (builder health check)
+        run: python _tools/cex_doctor.py
+
+      - name: Sanitize (ASCII-only code gate)
+        run: python _tools/cex_sanitize.py --check
+
+      - name: Score (peer review, best-effort)
+        continue-on-error: true
+        run: python _tools/cex_score.py --dry-run

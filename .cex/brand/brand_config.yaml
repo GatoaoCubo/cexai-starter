@@ -1,0 +1,14 @@
+# brand_config.yaml -- tenant identity (committed; DP3 gitignore inversion).
+slug: starter
+brand:
+  name: Sua Empresa
+  tagline: [preencher]
+  logo: ""                       # no logo asset supplied -- the storefront shows the brand name as a wordmark
+  domain: starter.local          # local default -- replace with your production domain
+identity:
+  BRAND_NAME: Sua Empresa
+  BRAND_TAGLINE: [preencher]
+# top-level alias (config-structure reconciliation -- top-level-shape reader compatibility):
+BRAND_NAME: Sua Empresa
+BRAND_TAGLINE: [preencher]
+bootstrapped_by: cex_distill

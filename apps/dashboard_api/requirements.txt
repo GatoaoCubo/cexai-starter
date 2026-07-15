@@ -1,0 +1,22 @@
+# CEXAI Dashboard API -- runtime dependencies (Phase 1, T3).
+# Pin floors are conservative; the repo already ships compatible versions.
+
+fastapi>=0.110
+uvicorn[standard]>=0.27
+PyJWT>=2.8
+pydantic>=2.5
+# Required at import time by FastAPI for any Form/File route -- the app
+# crash-loops without it (proven on the 9-IA-GLM deploy, 2026-07-11:
+# "RuntimeError: Form data requires python-multipart", 49 pm2 restarts).
+python-multipart>=0.0.9
+
+# Test-only (TestClient drives the ASGI app in-process; no network).
+httpx>=0.27
+pytest>=8.0
+
+# OPTIONAL live-mode extra (NOT a hard dependency). Install ONLY to enable the live
+# DbSession driver (apps/dashboard_api/pg_session_factory.py). The app + the whole
+# offline test-suite run WITHOUT this -- the driver imports psycopg lazily, and a
+# missing psycopg degrades the request to local-only. Go-live: pip install this, set
+# CEXAI_TENANT_DB_URL + CEXAI_DASHBOARD_SESSION_FACTORY, then validate on staging.
+#   psycopg[binary]>=3.1

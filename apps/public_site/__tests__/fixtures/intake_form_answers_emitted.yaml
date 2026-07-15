@@ -1,0 +1,107 @@
+# R-149 form_v1 answers -- emitted by the /intake web form (apps/public_site).
+# The JSON body below IS valid YAML (JSON is a YAML subset; PyYAML parses it).
+# Template: N02_marketing/P01_knowledge/p01_dq_tenant_intake_form.md
+# Resolve:
+#   python _tools/cex_ingest_registry.py --resolve THIS_FILE \
+#     --out brand_init.yaml --provenance provenance.json --emit-shape shape.json
+# Consume:
+#   python _tools/cex_bootstrap.py [--tenant SLUG] --from-file brand_init.yaml
+{
+  "form_version": 1,
+  "tenant": {
+    "slug": "borealis-cafe"
+  },
+  "identity": {
+    "brand_name": "Cafe Borealis",
+    "brand_tagline": "Cafes especiais do cerrado, torrados na semana do envio",
+    "brand_mission": "Levar cafe especial rastreavel do produtor do cerrado ao metodo de quem prepara em casa",
+    "brand_values": [
+      "rastreabilidade",
+      "frescor",
+      "parceria com produtores",
+      "simplicidade"
+    ],
+    "brand_story": "A Borealis nasceu em 2024 em Patrocinio-MG comprando microlotes direto de tres familias produtoras. A loja propria vive em loja.borealis-cafe.example.com.br e o atacado atende cafeterias da regiao."
+  },
+  "archetype": {
+    "brand_archetype": "everyman",
+    "brand_personality": [
+      "proximo",
+      "curioso",
+      "transparente"
+    ]
+  },
+  "voice": {
+    "tone": "proximo, direto, sem jargao de barista",
+    "formality": 2,
+    "language": "pt-BR",
+    "do": [
+      "explicar a origem em uma frase",
+      "falar de frescor com datas reais",
+      "convidar para provar"
+    ],
+    "dont": [
+      "prometer notas sensoriais miraculosas",
+      "usar jargao sem explicar",
+      "pressionar a compra"
+    ]
+  },
+  "audience": {
+    "icp": "Quem prepara cafe coado ou espresso em casa no Brasil e quer regularidade e frescor sem virar especialista",
+    "transformation": "From cafe de mercado sem data de torra to xicara fresca e rastreavel through assinatura direta do produtor"
+  },
+  "visual": {
+    "colors": {
+      "primary": "#3B2A20",
+      "secondary": "#F4EDE3",
+      "accent": "#C97B3D"
+    },
+    "logo": "https://borealis-cafe.example.com.br/logo.svg",
+    "fonts": {
+      "heading": "Fraunces",
+      "body": "Inter"
+    }
+  },
+  "positioning": {
+    "category": "cafe especial em assinatura (D2C)",
+    "uvp": "Assinatura de cafe especial do cerrado com torra na semana do envio e origem rastreavel em cada pacote",
+    "content_pillars": [
+      "origem e produtores",
+      "metodos de preparo",
+      "frescor e torra"
+    ]
+  },
+  "monetization": {
+    "pricing_model": "hybrid",
+    "currency": "BRL",
+    "tiers": [
+      "b2c-assinatura",
+      "b2c-avulso",
+      "b2b-cafeterias",
+      "marketplace-ml"
+    ]
+  },
+  "location": {
+    "channels": [
+      "loja propria: https://loja.borealis-cafe.example.com.br",
+      "instagram",
+      "mercado livre"
+    ]
+  },
+  "shape_confirm": {
+    "vertical": "retail",
+    "has_store": true,
+    "has_blog": true,
+    "has_b2b": true,
+    "b2b_mode": "wholesale"
+  },
+  "links": {
+    "website": "https://borealis-cafe.example.com.br",
+    "store": "https://loja.borealis-cafe.example.com.br",
+    "instagram": "https://instagram.com/borealiscafe.fake",
+    "whatsapp": "https://wa.me/5500000000000"
+  },
+  "sources": {
+    "site_url": "https://borealis-cafe.example.com.br"
+  }
+}

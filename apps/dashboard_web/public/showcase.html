@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-BR" data-brand="acme">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CEXAI . dois tenants, dois dashboards organicos</title>
+<style>
+/* ============================================================ TOKENS */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased;transition:background .4s ease,color .4s ease}
+
+/* ---- ACME : atelier monocromatico ---- */
+html[data-brand="acme"]{
+  --bg:#f7f6f2; --ink:#141414; --muted:#6f6d66; --faint:#9b988f;
+  --line:#e2dfd6; --line-2:#cfccc1; --panel:#ffffff; --sunken:#f1efe9;
+  --accent:#141414; --accent-ink:#ffffff; --good:#1d6b3f;
+  --radius:3px; --radius-lg:4px;
+  --font-display:"Iowan Old Style",Georgia,"Times New Roman",serif;
+  --font-body:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"SF Mono",ui-monospace,"Cascadia Mono","Consolas",monospace;
+}
+/* ---- GLOBEX : casa quente ---- */
+html[data-brand="globex"]{
+  --bg:#FBF6EC; --ink:#2c2a26; --muted:#857d6f; --faint:#a9a193;
+  --line:#ece2d0; --line-2:#e0d4be; --panel:#ffffff; --sunken:#f6efe1;
+  --accent:#2f6b4f; --accent-2:#c26b47; --accent-ink:#ffffff; --good:#2f6b4f;
+  --radius:16px; --radius-lg:22px;
+  --font-display:"Avenir Next","Nunito",ui-rounded,-apple-system,"Segoe UI",sans-serif;
+  --font-body:"Avenir Next",ui-rounded,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:ui-monospace,"Cascadia Mono","Consolas",monospace;
+}
+
+/* ============================================================ SWITCHER */
+.switch{position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:50;
+  display:flex;gap:4px;padding:5px;border:1px solid var(--line-2);
+  background:color-mix(in srgb,var(--panel) 80%,transparent);
+  backdrop-filter:blur(10px);border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.08)}
+.switch button{font-family:var(--font-body);font-size:13px;font-weight:600;
+  letter-spacing:.2px;border:0;background:transparent;color:var(--muted);
+  padding:8px 18px;border-radius:999px;cursor:pointer;transition:all .25s}
+.switch button.on{background:var(--accent);color:var(--accent-ink)}
+html[data-brand="globex"] .switch button.on{background:var(--accent)}
+
+/* ============================================================ SHELLS */
+.shell{display:none;min-height:100vh}
+html[data-brand="acme"] #shell-acme{display:block}
+html[data-brand="globex"] #shell-globex{display:flex}
+
+/* ---------- ACME shell ---------- */
+.g-wrap{max-width:1180px;margin:0 auto;padding:84px 40px 64px}
+.g-mast{display:flex;align-items:flex-end;justify-content:space-between;
+  border-bottom:1.5px solid var(--ink);padding-bottom:18px}
+.g-word{font-family:var(--font-display);font-size:46px;font-weight:600;
+  letter-spacing:-1px;line-height:.9}
+.g-word span{font-size:20px;color:var(--muted);font-weight:400;letter-spacing:0}
+.g-console{font-family:var(--font-mono);font-size:11px;color:var(--faint);
+  text-align:right;letter-spacing:.3px}
+.g-tag{font-family:var(--font-display);font-style:italic;font-size:15px;
+  color:var(--muted);margin-top:14px}
+.g-hero{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:34px 0 8px;
+  border:1px solid var(--line)}
+.g-stat{padding:20px 22px;border-right:1px solid var(--line)}
+.g-stat:last-child{border-right:0}
+.g-stat b{font-family:var(--font-display);font-size:34px;font-weight:600;display:block;line-height:1}
+.g-stat span{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.8px;margin-top:6px;display:block}
+.g-seclabel{font-family:var(--font-mono);font-size:11px;letter-spacing:2px;
+  text-transform:uppercase;color:var(--faint);margin:40px 0 16px}
+.g-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.g-card{grid-column:span 1;background:var(--panel);border:1px solid var(--line);
+  padding:18px;cursor:pointer;transition:all .2s;position:relative;text-align:left;
+  font-family:inherit;color:inherit;display:flex;flex-direction:column;min-height:158px}
+.g-card:hover{border-color:var(--ink);transform:translateY(-2px)}
+.g-card.wide{grid-column:span 2}
+.g-card .ic{width:24px;height:24px;color:var(--ink)}
+.g-card h3{font-family:var(--font-display);font-size:18px;font-weight:600;margin-top:14px;letter-spacing:-.2px}
+.g-card .fill{font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.45;flex:1}
+.g-card .sig{font-family:var(--font-mono);font-size:10px;color:var(--faint);
+  letter-spacing:.3px;margin-top:12px;border-top:1px solid var(--line);padding-top:9px;
+  display:flex;justify-content:space-between}
+.g-card .sig .run{text-transform:uppercase}
+.g-card:hover .sig .run{color:var(--ink)}
+.g-foot{margin-top:46px;border-top:1px solid var(--line);padding-top:18px;
+  font-size:12px;color:var(--muted);line-height:1.7}
+.g-foot b{color:var(--ink);font-weight:600}
+
+/* ---------- GLOBEX shell ---------- */
+.s-side{width:248px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--line);
+  padding:30px 20px;display:flex;flex-direction:column;position:sticky;top:0;height:100vh}
+.s-badge{font-family:var(--font-display);font-weight:800;font-size:24px;letter-spacing:3px;
+  color:var(--accent);background:var(--sunken);border-radius:14px;padding:14px 18px;text-align:center}
+.s-badge small{display:block;font-size:10px;letter-spacing:2px;color:var(--accent-2);font-weight:700;margin-top:3px}
+.s-nav{margin-top:26px;display:flex;flex-direction:column;gap:4px}
+.s-nav a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:12px;
+  font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;cursor:pointer;transition:all .2s}
+.s-nav a .ic{width:19px;height:19px}
+.s-nav a:hover{background:var(--sunken);color:var(--ink)}
+.s-nav a.on{background:var(--accent);color:#fff}
+.s-side-foot{margin-top:auto;font-family:var(--font-mono);font-size:10px;color:var(--faint);
+  letter-spacing:.5px;text-align:center;line-height:1.6}
+.s-main{flex:1;padding:38px 46px 60px;max-width:1080px}
+.s-greet{background:linear-gradient(120deg,var(--accent) 0%,#3c8161 100%);color:#fff;
+  border-radius:var(--radius-lg);padding:26px 30px;position:relative;overflow:hidden}
+.s-greet h1{font-family:var(--font-display);font-size:27px;font-weight:800;letter-spacing:-.3px}
+.s-greet p{font-size:14px;opacity:.9;margin-top:6px}
+.s-greet .blob{position:absolute;right:-30px;top:-30px;width:160px;height:160px;border-radius:50%;
+  background:var(--accent-2);opacity:.35;filter:blur(8px)}
+.s-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 6px}
+.s-pill{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 18px;display:flex;align-items:center;gap:14px}
+.s-pill .d{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  background:var(--sunken);color:var(--accent);flex-shrink:0}
+.s-pill .d .ic{width:20px;height:20px}
+.s-pill b{font-family:var(--font-display);font-size:22px;font-weight:800;display:block;line-height:1}
+.s-pill span{font-size:11.5px;color:var(--muted);margin-top:3px;display:block}
+.s-h2{font-family:var(--font-display);font-size:20px;font-weight:800;margin:34px 0 16px;letter-spacing:-.2px}
+.s-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.s-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;cursor:pointer;transition:all .25s;text-align:left;font-family:inherit;color:inherit;
+  display:flex;flex-direction:column;min-height:170px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+.s-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(47,107,79,.13);border-color:var(--line-2)}
+.s-card .ic-wrap{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;
+  background:var(--sunken);color:var(--accent)}
+.s-card .ic-wrap .ic{width:23px;height:23px}
+.s-card h3{font-family:var(--font-display);font-size:17px;font-weight:800;margin-top:15px}
+.s-card .fill{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5;flex:1}
+.s-card .sig{font-family:var(--font-mono);font-size:10px;color:var(--faint);margin-top:13px;
+  display:flex;align-items:center;gap:8px}
+.s-card .chip{background:var(--sunken);color:var(--accent);border-radius:999px;padding:3px 9px;font-weight:700;letter-spacing:.3px}
+.s-card .go{margin-left:auto;color:var(--accent-2);font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.s-foot{margin-top:40px;background:var(--sunken);border-radius:var(--radius);padding:20px 24px;
+  font-size:12.5px;color:var(--muted);line-height:1.7}
+.s-foot b{color:var(--ink);font-weight:700}
+
+/* ============================================================ RUN OVERLAY */
+.run{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;
+  background:rgba(20,18,14,.42);backdrop-filter:blur(3px);padding:24px}
+.run.open{display:flex}
+.run-card{background:var(--panel);width:560px;max-width:100%;max-height:88vh;overflow:auto;
+  border:1px solid var(--line-2);position:relative;animation:pop .28s cubic-bezier(.2,.9,.3,1.2)}
+html[data-brand="acme"] .run-card{border-radius:var(--radius)}
+html[data-brand="globex"] .run-card{border-radius:var(--radius-lg);box-shadow:0 30px 70px rgba(47,107,79,.28)}
+@keyframes pop{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+.run-x{position:absolute;top:14px;right:16px;width:30px;height:30px;border:0;background:var(--sunken);
+  color:var(--muted);border-radius:8px;font-size:18px;cursor:pointer;line-height:1}
+html[data-brand="acme"] .run-x{border-radius:3px}
+.run-head{padding:26px 28px 18px;border-bottom:1px solid var(--line)}
+.run-head .lab{font-family:var(--font-display);font-size:22px;font-weight:700}
+.run-head .sub{font-family:var(--font-mono);font-size:11px;color:var(--faint);margin-top:7px;letter-spacing:.3px}
+.run-body{padding:22px 28px 28px}
+.run-intent{font-size:13px;color:var(--muted);margin-bottom:16px}
+.run-intent b{color:var(--ink)}
+.run-trace{font-family:var(--font-mono);font-size:11.5px;line-height:1.95;color:var(--muted);
+  background:var(--sunken);border-radius:var(--radius);padding:14px 16px;min-height:60px;white-space:pre-wrap}
+.run-trace .f{color:var(--accent);font-weight:700}
+html[data-brand="acme"] .run-trace .f{color:var(--ink)}
+.run-trace .ok{color:var(--good);font-weight:700}
+.run-result{margin-top:16px;opacity:0;transform:translateY(8px);transition:all .4s}
+.run-result.show{opacity:1;transform:none}
+.run-result .rl{font-family:var(--font-mono);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--faint);margin-bottom:9px}
+.run-result .rc{background:var(--panel);border:1px dashed var(--line-2);border-radius:var(--radius);
+  padding:16px 18px;font-size:14px;line-height:1.62}
+.run-scope{margin-top:14px;display:none;align-items:center;gap:10px;flex-wrap:wrap;
+  font-family:var(--font-mono);font-size:10.5px;color:var(--muted)}
+.run-scope.show{display:flex}
+.run-scope .b{background:var(--sunken);border-radius:999px;padding:5px 11px;letter-spacing:.3px}
+html[data-brand="acme"] .run-scope .b{border-radius:3px}
+.run-scope .b.lock{color:var(--good);font-weight:700}
+
+@media(max-width:900px){
+  .g-grid,.s-grid{grid-template-columns:repeat(2,1fr)}
+  .g-hero,.s-stats{grid-template-columns:repeat(2,1fr)}
+  .g-card.wide{grid-column:span 2}
+  .s-side{display:none!important}
+  html[data-brand="globex"] #shell-globex{display:block}
+  .s-main{padding:70px 22px 40px}
+  .g-wrap{padding:74px 20px 40px}
+}
+</style>
+</head>
+<body>
+
+<div class="switch">
+  <button data-b="acme" class="on">ACME.pet</button>
+  <button data-b="globex">GLOBEX.casa</button>
+</div>
+
+<!-- ============================ ACME SHELL ============================ -->
+<section id="shell-acme" class="shell">
+  <div class="g-wrap">
+    <header class="g-mast">
+      <div>
+        <div class="g-word">ACME<span>&nbsp;.pet</span></div>
+      </div>
+      <div class="g-console">tenant=acme &middot; plano=operador<br>8F=ativo &middot; RLS=on &middot; CEXAI core</div>
+    </header>
+    <p class="g-tag">O brain da marca pet &mdash; pesquisa, conte&uacute;do e vendas num s&oacute; lugar.</p>
+
+    <div class="g-hero">
+      <div class="g-stat"><b>31</b><span>produtos ativos</span></div>
+      <div class="g-stat"><b>18</b><span>conte&uacute;dos / m&ecirc;s</span></div>
+      <div class="g-stat"><b>204</b><span>contatos no CRM</span></div>
+      <div class="g-stat"><b>7</b><span>pesquisas salvas</span></div>
+    </div>
+
+    <div class="g-seclabel">// capacidades do tenant</div>
+    <div id="acme-grid" class="g-grid"></div>
+
+    <footer class="g-foot">
+      <b>Mesmo framework. Dashboard pr&oacute;prio.</b> Cada bot&atilde;o aqui dispara o pipeline 8F do CEXAI,
+      escopado em <b>tenant=acme</b>: roda com a credencial da ACME, grava no Supabase da ACME,
+      isolado por <b>RLS (tenant_id)</b>. Troque para <b>GLOBEX.casa</b> no topo &mdash; mesmo motor, outra marca, outro layout.
+    </footer>
+  </div>
+</section>
+
+<!-- ============================ GLOBEX SHELL ============================ -->
+<section id="shell-globex" class="shell">
+  <aside class="s-side">
+    <div class="s-badge">GLOBEX<small>UTILIDADE DOM&Eacute;STICA</small></div>
+    <nav class="s-nav">
+      <a class="on" data-ic="home">In&iacute;cio</a>
+      <a data-ic="crm">Clientes</a>
+      <a data-ic="content">Conte&uacute;do</a>
+      <a data-ic="products">Produtos</a>
+      <a data-ic="reports">Relat&oacute;rios</a>
+    </nav>
+    <div class="s-side-foot">rodando em<br><b>CEXAI</b> &middot; tenant=globex<br>RLS on</div>
+  </aside>
+  <main class="s-main">
+    <div class="s-greet">
+      <div class="blob"></div>
+      <h1>Bom dia, GLOBEX &#127807;</h1>
+      <p>Sua casa &mdash; e seu neg&oacute;cio &mdash; organizados por IA.</p>
+    </div>
+
+    <div class="s-stats">
+      <div class="s-pill"><div class="d" data-ic="products"></div><div><b>44</b><span>produtos no cat&aacute;logo</span></div></div>
+      <div class="s-pill"><div class="d" data-ic="crm"></div><div><b>338</b><span>lares no CRM</span></div></div>
+      <div class="s-pill"><div class="d" data-ic="content"></div><div><b>26</b><span>pe&ccedil;as este m&ecirc;s</span></div></div>
+    </div>
+
+    <h2 class="s-h2">O que voc&ecirc; quer criar hoje?</h2>
+    <div id="globex-grid" class="s-grid"></div>
+
+    <footer class="s-foot">
+      <b>O mesmo CEXAI da ACME, com a cara da GLOBEX.</b> O dashboard nasce vazio e a marca o preenche:
+      cores, layout e dados s&atilde;o da GLOBEX. Cada a&ccedil;&atilde;o roda o pipeline 8F escopado em
+      <b>tenant=globex</b>, isolado por <b>RLS</b> &mdash; nenhum dado cruza entre empresas.
+    </footer>
+  </main>
+</section>
+
+<!-- ============================ RUN OVERLAY ============================ -->
+<div id="run" class="run">
+  <div class="run-card">
+    <button class="run-x" onclick="closeRun()">&times;</button>
+    <div class="run-head">
+      <div class="lab" id="run-lab"></div>
+      <div class="sub" id="run-sub"></div>
+    </div>
+    <div class="run-body">
+      <div class="run-intent" id="run-intent"></div>
+      <pre class="run-trace" id="run-trace"></pre>
+      <div class="run-result" id="run-result">
+        <div class="rl">resultado gerado</div>
+        <div class="rc" id="run-rc"></div>
+      </div>
+      <div class="run-scope" id="run-scope"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ------------------------------------------------------------ ICONS */
+var ICONS = {
+  crm:'<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c0-3 2.4-5 5.5-5s5.5 2 5.5 5"/><path d="M16 7.5a3 3 0 0 1 0 5"/><path d="M18 19c0-2.2-1-3.8-2.6-4.6"/>',
+  content:'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M14 6l4 4"/>',
+  products:'<path d="M3 8l9-4 9 4-9 4z"/><path d="M3 8v8l9 4 9-4V8"/><path d="M12 12v8"/>',
+  research:'<circle cx="10.5" cy="10.5" r="6"/><path d="M20 20l-4.5-4.5"/>',
+  ads:'<path d="M4 10v4l9 4V6z"/><path d="M13 8a4 4 0 0 1 0 8"/><path d="M4 14H3a1 1 0 0 1 0-4h1"/>',
+  support:'<path d="M21 12a8 8 0 1 1-3.5-6.6"/><path d="M21 4v5h-5"/><circle cx="8.5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="15.5" cy="12" r="1"/>',
+  reports:'<path d="M4 20V4"/><path d="M4 20h16"/><rect x="7" y="12" width="3" height="5"/><rect x="12" y="8" width="3" height="9"/><rect x="17" y="5" width="3" height="12"/>',
+  knowledge:'<path d="M5 4h11a2 2 0 0 1 2 2v14H7a2 2 0 0 0-2 2z"/><path d="M5 4v14"/><path d="M9 8h6M9 11h6"/>',
+  home:'<path d="M4 11l8-7 8 7"/><path d="M6 10v9h12v-9"/>'
+};
+function svg(name){return '<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+(ICONS[name]||'')+'</svg>';}
+
+/* ------------------------------------------------------------ CAPABILITIES (funcoes mapeadas) */
+var CAPS = [
+  { id:'crm', icon:'crm', label:'CRM', kind:'entity_memory', pillar:'P10', nuc:'N06', wide:true,
+    intent:'segmentar clientes e prever recompra',
+    fill:{ acme:'204 tutores &middot; 12 com recompra de ra&ccedil;&atilde;o prevista',
+           globex:'338 lares &middot; 21 com recompra de refil prevista' },
+    res:{ acme:'Segmento <b>tutores recorrentes</b> (204). 12 entram na janela de recompra de ra&ccedil;&atilde;o nos pr&oacute;ximos 9 dias &mdash; sugest&atilde;o: cupom -10% via WhatsApp.',
+          globex:'Segmento <b>lares ativos</b> (338). 21 com refil de difusor previsto para acabar &mdash; sugest&atilde;o: lembrete sazonal &ldquo;aroma de outono&rdquo;.' } },
+
+  { id:'content', icon:'content', label:'F&aacute;brica de Conte&uacute;do', kind:'prompt_template', pillar:'P03', nuc:'N02', wide:true,
+    intent:'gerar posts, legendas e an&uacute;ncios da marca',
+    fill:{ acme:'18 pe&ccedil;as no m&ecirc;s &middot; Reels + carross&eacute;is pet',
+           globex:'26 pe&ccedil;as &middot; antes/depois + dicas de casa' },
+    res:{ acme:'<b>Reel &mdash; &ldquo;3 sinais de que seu gato ama o arranhador&rdquo;</b><br>Gancho: &ldquo;Ele ignora o sof&aacute;? Ent&atilde;o voc&ecirc; acertou.&rdquo; CTA: link na bio &mdash; arranhador ACME.',
+          globex:'<b>Post &mdash; &ldquo;Antes e depois: cozinha em 5 min&rdquo;</b><br>Gancho: &ldquo;O segredo n&atilde;o &eacute; esfregar mais &mdash; &eacute; o difusor certo.&rdquo; CTA: kit GLOBEX -15%.' } },
+
+  { id:'products', icon:'products', label:'Produtos', kind:'ecommerce_vertical', pillar:'P11', nuc:'N03',
+    intent:'criar e otimizar listings do cat&aacute;logo',
+    fill:{ acme:'31 SKUs &middot; ra&ccedil;&atilde;o, arranhador, brinquedos',
+           globex:'44 SKUs &middot; difusor, kit limpeza, organizadores' },
+    res:{ acme:'Listing gerado: <b>Arranhador Torre ACME</b> &mdash; t&iacute;tulo SEO, 5 bullets, ficha t&eacute;cnica e 3 fotos sugeridas. Pronto p/ Mercado Livre.',
+          globex:'Listing gerado: <b>Difusor Arom&aacute;tico GLOBEX</b> &mdash; t&iacute;tulo SEO, 5 bullets, modo de uso e selo &ldquo;casa que cheira a casa&rdquo;.' } },
+
+  { id:'research', icon:'research', label:'Pesquisa de Mercado', kind:'knowledge_card', pillar:'P01', nuc:'N01',
+    intent:'mapear concorr&ecirc;ncia e tend&ecirc;ncias',
+    fill:{ acme:'concorr&ecirc;ncia pet shop BR &middot; pre&ccedil;os',
+           globex:'tend&ecirc;ncia casa &amp; aroma 2026' },
+    res:{ acme:'7 concorrentes pet mapeados. Faixa de pre&ccedil;o de arranhador: R$79&ndash;R$189. Lacuna: nenhum oferece refil de sisal &mdash; oportunidade ACME.',
+          globex:'Tend&ecirc;ncia: aromas &ldquo;comfort&rdquo; (+38% busca). 4 concorrentes sem linha refil&aacute;vel &mdash; espa&ccedil;o para GLOBEX eco.' } },
+
+  { id:'ads', icon:'ads', label:'An&uacute;ncios / Tr&aacute;fego', kind:'campaign', pillar:'P03', nuc:'N02',
+    intent:'montar campanha paga segmentada',
+    fill:{ acme:'Meta Ads &middot; p&uacute;blico: tutores de gato',
+           globex:'Meta Ads &middot; p&uacute;blico: lares 25&ndash;45' },
+    res:{ acme:'Campanha <b>Recompra Ra&ccedil;&atilde;o</b>: 3 criativos, p&uacute;blico lookalike de compradores, budget R$30/dia, copy A/B pronta.',
+          globex:'Campanha <b>Casa Cheirosa</b>: 3 criativos antes/depois, p&uacute;blico interesse &ldquo;organiza&ccedil;&atilde;o&rdquo;, budget R$40/dia.' } },
+
+  { id:'support', icon:'support', label:'Atendimento', kind:'agent', pillar:'P02', nuc:'N05',
+    intent:'responder clientes no WhatsApp',
+    fill:{ acme:'47 conversas &middot; d&uacute;vidas de ra&ccedil;&atilde;o',
+           globex:'63 conversas &middot; modo de uso difusor' },
+    res:{ acme:'Agente treinado no cat&aacute;logo pet: responde porte/idade, recomenda ra&ccedil;&atilde;o e fecha venda. 47 conversas, 9 prontas p/ checkout.',
+          globex:'Agente treinado nas fichas GLOBEX: explica modo de uso, durabilidade do refil e indica kit. 63 conversas, 14 com carrinho.' } },
+
+  { id:'reports', icon:'reports', label:'Relat&oacute;rios', kind:'usage_report', pillar:'P07', nuc:'N01',
+    intent:'consolidar vendas e ROI da semana',
+    fill:{ acme:'vendas + ROI semanal &middot; por canal',
+           globex:'vendas + ROI semanal &middot; por canal' },
+    res:{ acme:'Semana: R$ 6.480 em vendas (+12%). ROI de an&uacute;ncios 3.1x. Top produto: ra&ccedil;&atilde;o premium 10kg. Alerta: arranhador sem estoque em 4 dias.',
+          globex:'Semana: R$ 9.120 em vendas (+19%). ROI de an&uacute;ncios 3.6x. Top produto: kit difusor + 2 refis. Alerta: organizador esgotando.' } },
+
+  { id:'knowledge', icon:'knowledge', label:'Base de Conhecimento', kind:'rag_source', pillar:'P01', nuc:'N04',
+    intent:'indexar manuais e fichas da marca',
+    fill:{ acme:'manual de produtos pet &middot; FAQ',
+           globex:'fichas t&eacute;cnicas + FAQ de uso' },
+    res:{ acme:'12 documentos indexados (ra&ccedil;&atilde;o, brinquedos, garantia). O atendimento e o conte&uacute;do agora citam fonte real &mdash; zero invento.',
+          globex:'15 fichas t&eacute;cnicas indexadas (difusor, refil, limpeza). Respostas e listings passam a citar a ficha oficial GLOBEX.' } }
+];
+
+/* ------------------------------------------------------------ RENDER */
+function curBrand(){return document.documentElement.getAttribute('data-brand');}
+
+function renderAcme(){
+  var g=document.getElementById('acme-grid'); g.innerHTML='';
+  CAPS.forEach(function(c){
+    var el=document.createElement('button');
+    el.className='g-card'+(c.wide?' wide':'');
+    el.onclick=function(){openRun(c.id);};
+    el.innerHTML =
+      svg(c.icon) +
+      '<h3>'+c.label+'</h3>' +
+      '<div class="fill">'+c.fill.acme+'</div>' +
+      '<div class="sig"><span>'+c.kind+' &middot; '+c.pillar+'</span><span class="run">'+c.nuc+' &rarr;</span></div>';
+    g.appendChild(el);
+  });
+}
+function renderGlobex(){
+  var g=document.getElementById('globex-grid'); g.innerHTML='';
+  CAPS.forEach(function(c){
+    var el=document.createElement('button');
+    el.className='s-card';
+    el.onclick=function(){openRun(c.id);};
+    el.innerHTML =
+      '<div class="ic-wrap">'+svg(c.icon)+'</div>' +
+      '<h3>'+c.label+'</h3>' +
+      '<div class="fill">'+c.fill.globex+'</div>' +
+      '<div class="sig"><span class="chip">'+c.nuc+'</span><span>'+c.kind+'</span><span class="go">abrir &rarr;</span></div>';
+    g.appendChild(el);
+  });
+  // paint sidebar + stat icons
+  document.querySelectorAll('[data-ic]').forEach(function(n){ if(!n.querySelector('svg')) n.insertAdjacentHTML('afterbegin',svg(n.getAttribute('data-ic'))); });
+}
+
+/* ------------------------------------------------------------ BRAND SWITCH */
+function setBrand(b){
+  document.documentElement.setAttribute('data-brand',b);
+  document.querySelectorAll('.switch button').forEach(function(btn){ btn.classList.toggle('on',btn.getAttribute('data-b')===b); });
+  closeRun();
+}
+document.querySelectorAll('.switch button').forEach(function(btn){
+  btn.onclick=function(){ setBrand(btn.getAttribute('data-b')); };
+});
+
+/* ------------------------------------------------------------ RUN (8F demo) */
+var runTimer=null;
+function openRun(id){
+  var c=CAPS.filter(function(x){return x.id===id;})[0]; if(!c) return;
+  var b=curBrand(); var tid=b;
+  document.getElementById('run-lab').innerHTML=c.label;
+  document.getElementById('run-sub').innerHTML=c.kind+' &middot; '+c.pillar+' &middot; nucleus '+c.nuc+' &middot; tenant='+tid;
+  document.getElementById('run-intent').innerHTML='intent: <b>'+c.intent+'</b>';
+  var trace=document.getElementById('run-trace'); trace.innerHTML='';
+  var result=document.getElementById('run-result'); result.classList.remove('show');
+  var scope=document.getElementById('run-scope'); scope.classList.remove('show'); scope.innerHTML='';
+  document.getElementById('run').classList.add('open');
+
+  var score=(9.0+((id.length*2)%9)/10).toFixed(1); // deterministic 9.0-9.8
+  var lines=[
+    ['F1 CONSTRAIN','kind='+c.kind+' pillar='+c.pillar+' &mdash; escopo travado'],
+    ['F2 BECOME','builder '+c.nuc+' carregado (12 ISOs)'],
+    ['F3 INJECT','marca '+(b==='acme'?'ACME':'GLOBEX')+' + hist&oacute;rico + 3 exemplos'],
+    ['F4 REASON','plano montado &mdash; abordagem template'],
+    ['F5 CALL','supabase(tenant='+tid+') &middot; RLS ativo'],
+    ['F6 PRODUCE','rascunho gerado'],
+    ['F7 GOVERN','score '+score+'/10 &middot; gates 6/6'],
+    ['F8 COLLABORATE','salvo &middot; isolado por tenant_id &middot; sinal enviado']
+  ];
+  var i=0;
+  if(runTimer) clearInterval(runTimer);
+  runTimer=setInterval(function(){
+    if(i>=lines.length){
+      clearInterval(runTimer);
+      document.getElementById('run-rc').innerHTML=c.res[b];
+      result.classList.add('show');
+      scope.innerHTML='<span class="b lock">&#128274; tenant='+tid+'</span>'+
+        '<span class="b">RLS isolado</span>'+
+        '<span class="b">credencial pr&oacute;pria</span>'+
+        '<span class="b">0 dados cruzados</span>';
+      scope.classList.add('show');
+      return;
+    }
+    var L=lines[i];
+    var cls=(L[0].indexOf('F8')===0)?'ok':'f';
+    trace.innerHTML+='<span class="'+cls+'">'+L[0]+'</span>  '+L[1]+'\n';
+    trace.scrollTop=trace.scrollHeight;
+    i++;
+  },170);
+}
+function closeRun(){
+  if(runTimer) clearInterval(runTimer);
+  document.getElementById('run').classList.remove('open');
+}
+document.getElementById('run').addEventListener('click',function(e){ if(e.target===this) closeRun(); });
+document.addEventListener('keydown',function(e){ if(e.key==='Escape') closeRun(); });
+
+/* ------------------------------------------------------------ INIT */
+renderAcme(); renderGlobex();
+</script>
+</body>
+</html>

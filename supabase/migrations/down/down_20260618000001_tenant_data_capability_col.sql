@@ -1,0 +1,53 @@
+-- down_20260618000001_tenant_data_capability_col.sql
+-- ROLLBACK (down-migration) for 20260618000001_tenant_data_capability_col.sql.
+-- Reverses ONLY the additive capability column on tenant_data: drops the partial
+-- index idx_tenant_data_capability, then drops the `capability` column. The
+-- tenant_data TABLE ITSELF and every other column / its RLS / all tenant rows are
+-- LEFT INTACT. Idempotent (every statement is IF EXISTS).
+--
+-- ############################################################################
+-- ##  BLAST RADIUS -- SHARED SCHEMA, BUT NARROWER THAN A TABLE DROP.         ##
+-- ##                                                                          ##
+-- ##  This rollback does NOT drop a table -- it removes ONE column from the   ##
+-- ##  shared `tenant_data` table. But that single ALTER still affects ALL     ##
+-- ##  TENANTS' rows at once: DROP COLUMN capability permanently deletes the   ##
+-- ##  capability value of EVERY tenant's row in tenant_data. The rows         ##
+-- ##  survive; the capability slugs on them do not.                           ##
+-- ##                                                                          ##
+-- ##  CAPABILITY DATA LOSS IS PERMANENT unless backed up first. If the slugs  ##
+-- ##  matter, back up tenant_data (or at least SELECT id, tenant_id,          ##
+-- ##  capability) before running this. See                                   ##
+-- ##  _docs/compiled/runbook_backup_restore_rollback.md.                      ##
+-- ##                                                                          ##
+-- ##  APPLICATION-BREAK WARNING: apps/dashboard_api/main.py::                 ##
+-- ##  _read_tenant_results SELECTs the `capability` column. The forward       ##
+-- ##  migration was added precisely to stop that read 500ing                  ##
+-- ##  (`column "capability" does not exist`, SQLSTATE 42703). Running THIS    ##
+-- ##  rollback RE-INTRODUCES that 500 on the /results read path. Only roll    ##
+-- ##  back the column if you are ALSO reverting the dashboard read that       ##
+-- ##  depends on it. This is a real coupling, not a theoretical one.          ##
+-- ############################################################################
+--
+-- NOT APPLIED in this task. PREPARE-ONLY -- authored structurally, NOT run against
+-- any live DB.
+--
+-- DEPENDENCY ORDER (reverse of the forward migration):
+--   forward = ADD COLUMN capability  ->  CREATE INDEX idx_tenant_data_capability.
+--   reverse = DROP INDEX  ->  DROP COLUMN. (Drop the index first; DROP COLUMN would
+--   drop the index implicitly since it indexes that column, but the explicit DROP
+--   INDEX IF EXISTS keeps the reversal readable + idempotent.)
+--
+-- SCOPE NOTE: use THIS file to undo ONLY the capability column while keeping the
+-- tenant_data surface. To tear down the whole tenant_data table instead, use
+-- down_20260616000002_tenant_data.sql (which also removes this column via the
+-- table drop -- do NOT run both).
+
+-- 1. The partial index on (tenant_id, capability) (reverse of forward step 2).
+DROP INDEX IF EXISTS idx_tenant_data_capability;
+
+-- 2. The capability column (reverse of forward step 1). DESTRUCTIVE for the
+--    capability values of ALL tenants' rows; the rows themselves remain. RESTRICT
+--    (no CASCADE) so if some object unexpectedly depends on this column (a view,
+--    a generated column) the DROP ERRORS LOUDLY instead of silently cascading --
+--    investigate before forcing.
+ALTER TABLE tenant_data DROP COLUMN IF EXISTS capability;

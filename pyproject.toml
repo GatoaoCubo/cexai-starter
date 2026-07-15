@@ -1,0 +1,9 @@
+[project]
+name = "cexai-starter"
+version = "0.1.0"
+description = "Sovereign CEXAI tenant brain for sua-empresa (distilled)."
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["cexai", "_tools"]
+package-dir = {cexai = "cexai/cexai"}

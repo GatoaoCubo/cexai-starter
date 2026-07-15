@@ -1,0 +1,551 @@
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# CEX Nucleus Model Configuration
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+#
+# Each nucleus reads its CLI + model from here.
+# Boot scripts and spawn_grid consume this file.
+#
+# CHANGE THESE to match your subscriptions/budget.
+# Low-budget? Use ollama + local models everywhere.
+# Premium? Use the best cloud model per domain.
+#
+# CLI options:  claude | gemini | codex | ollama
+# Model: any model string your CLI supports
+#
+# mcps field convention:
+#   - ".mcp-n0X.json"  -> per-nucleus overlay path (Test-Path checked at boot;
+#                          falls back to root .mcp.json if the overlay is missing)
+#   - ""               -> nucleus runs WITHOUT MCP (no overlay, no root fallback)
+#   The .mcp-n0X.json files are gitignored (see .gitignore: ".mcp-n*.json").
+#   Most users only have root .mcp.json -- the per-nucleus overlay paths
+#   declared below are aspirational, used only if a contributor creates them.
+#
+# Decision: 2026-04-02 — /guide session, user-confirmed
+# Updated: 2026-04-28 — STRESS_TEST_DECOMPOSE evidence:
+#   Opus:   9/9 Mode A, 10/10 structural (gold)
+#   Sonnet: 9/9 Mode A, 10/10 structural (silver, ~same as gold)
+#   Haiku:  9/9 Mode A, 9/10 structural  (production-viable! was 2/6 due to format bug)
+#   Ollama: Mode B 7/10, Mode C 6/10 (3.2 tok/s CPU-only, ~10min/task)
+#   Gemini: SKIPPED (free tier hangs)
+#   Codex:  PENDING
+# Routing insight: Haiku handles full 8F. Use it for cost savings (~10x cheaper).
+# Override per-dispatch: the Task tool (in-session) solo n03 -m claude-haiku-4-5
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# ===================================================================
+# MODEL ALIASES -- dynamic "*_latest" resolution (single source of truth)
+# ===================================================================
+# Plan: opus_latest_dynamic | Decisions: decision_manifest_opus_latest_dynamic.yaml
+#
+# Every resolver (cex_model_resolver.py, cex_boot_pipeline.py, resolve_model.ps1)
+# reads THIS block to expand the shorthand in each nucleus block (model: opus)
+# into a full API model id. Bump a version here ONCE and every boot follows --
+# no per-file edits, ever (this is the fix for "stuck on 4-7 for weeks").
+#
+# Resolution precedence (highest to lowest):
+#   1. CEX_MODEL_OVERRIDE  env -> literal model id (per-dispatch override)
+#   2. CEX_OPUS_TIER       env -> if a literal id, PIN opus to it (rollback);
+#                                 if unset or "latest", follow opus_latest below
+#   3. model_discovery.json     -> fresh (<24h) cached probe values OVERRIDE this
+#                                  block (writer = cex_model_updater --discover, N05)
+#   4. model_aliases: (this)    -> the machine source of truth
+#   5. baked-in baseline const  -> claude-opus-4-8 (DP4 net; boot NEVER hard-fails)
+#
+# Pin / rollback: set CEX_OPUS_TIER=claude-opus-4-7  OR
+#   python _tools/cex_model_updater.py --pin claude-opus-4-7
+model_aliases:
+  # --- Anthropic ---
+  fable_latest:  claude-fable-5        # newest family (founder 2026-06-11)
+  opus_latest:   claude-opus-4-8        # was 4-7; THIS is the fix
+  sonnet_latest: claude-sonnet-4-6
+  haiku_latest:  claude-haiku-4-5-20251001
+  # --- Google ---
+  gemini_pro_latest:        gemini-2.5-pro
+  gemini_flash_latest:      gemini-2.5-flash
+  gemini_flash_lite_latest: gemini-2.5-flash-lite   # cheap tier (W6 google ladder)
+  # --- OpenAI (Codex CLI) ---
+  gpt_latest:      gpt-5.2
+  gpt_mini_latest: gpt-5-mini
+
+# ===================================================================
+# RUNTIME CAPABILITY MATRIX (W4 WIRE_DORMANT)
+# ===================================================================
+# Per-runtime capability flags consumed by
+# cex_router_v2.filter_backends_by_capabilities (the require_parameters-style
+# feature-filter). Mirrors the model_provider kind `capabilities:` schema block
+# (N00_genesis/P02_model/_schema.yaml).
+#
+# RULES (degrade-never + never-fabricate):
+#   - ONLY publicly-documented, verifiable capability facts are declared here.
+#   - An UNSET capability == unknown -> the runtime is NEVER filtered out for it
+#     (missing data != unsupported). Only an explicit `false` (or `0` for an int
+#     field) excludes a runtime from a request that REQUIRES that capability
+#     (fail-closed, no emulation).
+#   - Kill-switch: CEX_CAPABILITY_FILTER=0 -> the filter is a no-op (routing is
+#     byte-identical to pre-W4).
+#   - Keyed by runtime (the `cli:` value). Left unset where model-dependent.
+runtime_capabilities:
+  claude:        # Anthropic Claude API -- docs.anthropic.com (tool use, vision, streaming)
+    tool_calling: true
+    structured_output: true
+    vision: true
+    streaming: true
+    json_mode: true
+    parallel_tool_calls: true
+    context_window: 200000
+  gemini:        # Google Gemini API -- ai.google.dev (function calling, multimodal, responseSchema)
+    tool_calling: true
+    structured_output: true
+    vision: true
+    streaming: true
+    json_mode: true
+    parallel_tool_calls: true
+    context_window: 1000000   # Gemini 2.5 family (~1M input tokens)
+  codex:         # OpenAI GPT via Codex CLI -- platform.openai.com (tools, structured outputs, vision)
+    tool_calling: true
+    structured_output: true
+    vision: true
+    streaming: true
+    json_mode: true
+    parallel_tool_calls: true
+    # context_window/max_output_tokens UNSET: not asserting an exact gpt-5.2 figure.
+  ollama:        # Local Ollama runtime -- ollama.com/blog (tool calling + structured outputs + streaming)
+    tool_calling: true
+    structured_output: true
+    streaming: true
+    json_mode: true
+    # vision UNSET: model-dependent (the configured local models qwen3/gemma are text-only;
+    #   Ollama CAN run vision models, so not declared false -> stays unknown/kept).
+    # parallel_tool_calls/context_window/max_output_tokens UNSET: per-model.
+
+# --- N07: Orchestrator (this session — claude) ---
+n07:
+  cli: claude
+  # FABLE_SELF_HEAL (2026-06-13): self-healing via cex_model_resolver._fable_blocked
+  # / resolve_model.ps1 -- auto-uses fable when the gate clears, opus while blocked.
+  # claude-fable-5 is server-blocked today (~/.claude.json tengu-model-error-overrides
+  # carries a claude-fable-5 key); the resolver substitutes opus until Anthropic drops
+  # that key, then snaps back to fable with NO edit. Force fable: CEX_FABLE_FORCE=1.
+  model: fable
+  flags: "--dangerously-skip-permissions --permission-mode bypassPermissions --no-chrome"
+  mcps: ".mcp-n07.json"
+  context: 1000000
+  domain: orchestration
+  tier: full_8f
+  default_mode: A
+  # fallback_chain: ordered list consumed by cex_cli_resolver.py.
+  # Primary fails (quota/offline/missing) -> next entry is tried.
+  # Rule: never hardcode the CLI -- this YAML IS the config surface.
+  fallback_chain:
+    - {cli: gemini, model: gemini-2.5-flash-lite, flags: "--yolo", tier: f6_generation}
+    - {cli: codex,  model: gpt-5.2,           flags: "--dangerously-bypass-approvals-and-sandbox", tier: preflight_aux}
+    - {cli: ollama, model: gemma4:26b,        flags: "", tier: unsupported}
+    - {cli: ollama, model: qwen3:8b,         flags: "", tier: unsupported}
+  # Legacy single-fallback field -- kept for backward compat with older tools.
+  fallback:
+    cli: ollama
+    model: gemma4:26b
+  fallback_local:
+    cli: ollama
+    model: gemma4:26b
+  notes: "Maestro. Best reasoning for dispatch decisions. Gemma4 MoE as local fallback (4B active, fits 16GB)."
+
+# --- N01: Research & Intelligence ---
+n01:
+  cli: claude
+  model: sonnet
+  flags: "--dangerously-skip-permissions --permission-mode bypassPermissions --no-chrome"
+  context: 1000000
+  domain: research
+  tier: full_8f
+  default_mode: A
+  mcps: ""
+  settings: ".claude/nucleus-settings/n01.json"
+  fallback_chain:
+    - {cli: gemini, model: gemini-2.5-flash-lite, flags: "--yolo", tier: f6_generation}
+    - {cli: codex,  model: gpt-5.2,           flags: "--dangerously-bypass-approvals-and-sandbox", tier: preflight_aux}
+    # R-091 (2026-07-05): the 2 rungs below are tier:unsupported -- this SAME file's
+    # tiers.unsupported block (below) says "BLOCKED per STRESS_TEST evidence. Do not
+    # dispatch." That reads as a self-contradiction (a "fallback" chain listing targets
+    # its own tier definition forbids) but it is NOT a live dispatch hazard today:
+    # cex_router_v2.get_mode() fail-closes on any tier with mode:null (exactly the
+    # unsupported tier) by raising UnsupportedTierError BEFORE dispatch, so these rungs
+    # can never actually be reached as real targets even though they are listed here.
+    # They exist for documentation parity with fallback_local (below) -- "what raw local
+    # model this nucleus would fall back to if the tier were ever unblocked" -- not as
+    # active fallback destinations. A future resolver that walks fallback_chain WITHOUT
+    # checking tier first would misread this as a safe last resort; it is not. (The same
+    # shape repeats in n02/n03/n04/n05/n06's chains below -- not touched here, N01-scoped
+    # per this row.)
+    - {cli: ollama, model: gemma4:26b,        flags: "", tier: unsupported}
+    - {cli: ollama, model: qwen3:8b,         flags: "", tier: unsupported}
+  fallback:
+    cli: gemini
+    model: gemini-2.5-flash-lite
+    flags: "--yolo"
+  fallback_local:
+    cli: ollama
+    model: gemma4:26b
+  notes: "2026-04-13: opus->sonnet. Budget optimization: 5 Sonnet + 2 Opus. Preflight handles context compilation. Fallback uses gemini-2.5-flash-lite."
+
+# --- N02: Marketing & Copy ---
+n02:
+  cli: claude
+  model: sonnet
+  flags: "--dangerously-skip-permissions --permission-mode bypassPermissions --no-chrome"
+  context: 1000000
+  domain: marketing
+  tier: full_8f
+  default_mode: A
+  mcps: ".mcp-n02.json"
+  settings: ".claude/nucleus-settings/n02.json"
+  fallback_chain:
+    - {cli: gemini, model: gemini-2.5-flash-lite, flags: "--yolo", tier: f6_generation}
+    - {cli: codex,  model: gpt-5.2,           flags: "--dangerously-bypass-approvals-and-sandbox", tier: preflight_aux}
+    - {cli: ollama, model: gemma4:26b,        flags: "", tier: unsupported}
+    - {cli: ollama, model: qwen3:8b,         flags: "", tier: unsupported}
+  fallback:
+    cli: gemini
+    model: gemini-2.5-flash-lite
+    flags: "--yolo"
+  fallback_local:
+    cli: ollama
+    model: gemma4:26b
+  notes: "2026-04-13: opus->sonnet. Creative copy is Sonnet sweet spot. Preflight pre-compiles context."
+
+# --- N03: Engineering & Builder ---
+n03:
+  cli: claude
+  model: sonnet
+  flags: "--dangerously-skip-permissions --permission-mode bypassPermissions --no-chrome"
+  context: 1000000
+  domain: engineering
+  tier: full_8f
+  default_mode: A
+  mcps: ".mcp-n03.json"
+  settings: ".claude/nucleus-settings/n03.json"
+  fallback_chain:
+    - {cli: codex,  model: gpt-5.2,           flags: "--dangerously-bypass-approvals-and-sandbox", tier: preflight_aux}
+    - {cli: gemini, model: gemini-2.5-flash-lite, flags: "--yolo", tier: f6_generation}
+    - {cli: ollama, model: gemma4:26b,        flags: "", tier: unsupported}
+    - {cli: ollama, model: qwen3:14b,         flags: "", tier: unsupported}
+  fallback:
+    cli: codex
+    model: gpt-5.2
+    flags: "--dangerously-bypass-approvals-and-sandbox"
+  fallback_local:
+    cli: ollama
+    model: gemma4:26b
+  notes: "2026-07-01: opus->sonnet (SONNET5_DEFAULT_POLICY). Benchmark 9.1==Opus for production builds; N07 Opus keystone remains the grounding backstop. gpt-5 fallback unchanged. Gemma4 MoE local fallback."
+
+# --- N04: Knowledge & RAG ---
+n04:
+  cli: claude
+  model: sonnet
+  flags: "--dangerously-skip-permissions --permission-mode bypassPermissions --no-chrome"
+  context: 1000000
+  domain: knowledge
+  tier: full_8f
+  default_mode: A
+  mcps: ".mcp-n04.json"
+  settings: ".claude/nucleus-settings/n04.json"
+  fallback_chain:
+    - {cli: gemini, model: gemini-2.5-flash-lite, flags: "--yolo", tier: f6_generation}
+    - {cli: codex,  model: gpt-5.2,           flags: "--dangerously-bypass-approvals-and-sandbox", tier: preflight_aux}
+    - {cli: ollama, model: gemma4:26b,        flags: "", tier: unsupported}
+    - {cli: ollama, model: qwen3:8b,         flags: "", tier: unsupported}
+  fallback:
+    cli: gemini
+    model: gemini-2.5-flash-lite
+    flags: "--yolo"
+  fallback_local:
+    cli: ollama
+    model: gemma4:26b
+  notes: "2026-04-13: opus->sonnet. Supabase+complex arch needs Sonnet minimum. Preflight handles context."
+
+# --- N05: Operations & DevOps ---
+n05:
+  cli: claude
+  model: opus
+  flags: "--dangerously-skip-permissions --permission-mode bypassPermissions"
+  context: 1000000
+  domain: operations
+  tier: full_8f
+  default_mode: A
+  mcps: ".mcp-n05.json"
+  settings: ".claude/nucleus-settings/n05.json"
+  # chrome: enabled -- no --no-chrome flag; claude-in-chrome extension handles browser_tool + computer_use
+  fallback_chain:
+    - {cli: codex,  model: gpt-5.2,           flags: "--dangerously-bypass-approvals-and-sandbox", tier: preflight_aux}
+    - {cli: gemini, model: gemini-2.5-flash-lite, flags: "--yolo", tier: f6_generation}
+    - {cli: ollama, model: qwen3:8b,         flags: "", tier: unsupported}
+  fallback:
+    cli: codex
+    model: gpt-5.2
+    flags: "--dangerously-bypass-approvals-and-sandbox"
+  fallback_local:
+    cli: ollama
+    model: qwen3:8b
+  notes: "2026-04-17: sonnet->opus. Promoted for browser_tool + computer_use (UI automation: Supabase, Railway, NotebookLM). Chrome enabled (no --no-chrome). 1M context for multi-step browser sessions."
+
+# --- N06: Commercial & Brand ---
+n06:
+  cli: claude
+  model: sonnet
+  flags: "--dangerously-skip-permissions --permission-mode bypassPermissions --no-chrome"
+  context: 1000000
+  domain: commercial
+  tier: full_8f
+  default_mode: A
+  mcps: ".mcp-n06.json"
+  settings: ".claude/nucleus-settings/n06.json"
+  fallback_chain:
+    - {cli: gemini, model: gemini-2.5-flash-lite, flags: "--yolo", tier: f6_generation}
+    - {cli: codex,  model: gpt-5.2,           flags: "--dangerously-bypass-approvals-and-sandbox", tier: preflight_aux}
+    - {cli: ollama, model: gemma4:26b,        flags: "", tier: unsupported}
+    - {cli: ollama, model: qwen3:8b,         flags: "", tier: unsupported}
+  fallback:
+    cli: gemini
+    model: gemini-2.5-flash-lite
+    flags: "--yolo"
+  fallback_local:
+    cli: ollama
+    model: gemma4:26b
+  notes: "2026-04-13: opus->sonnet. Pricing + monetization structured enough for Sonnet."
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# GRID LOAD DISTRIBUTION (6 simultaneous during /grid):
+#
+#   Claude/Opus:  N03 + N05 + N07 = 3 (deep reasoning + browser automation)
+#   Claude/Sonnet: N01 + N02 + N04 + N06 = 4 (structured tasks)
+#   N07 runs in separate session (doesn't compete with grid)
+#
+# 2026-04-13: Budget optimization. 7 Opus -> 2 Opus + 5 Sonnet.
+# Rationale: Max subscription has token caps. Opus for reasoning-critical
+# (orchestration + 8F artifact construction). Sonnet for well-structured domains.
+# Preflight (local Ollama or Haiku) pre-compiles context to reduce token burn.
+#
+# Fallback principle: always cross-provider (claude -> gemini-flash -> codex -> ollama)
+# Fallback local: qwen3:14b (N03) / qwen3:8b (all others)
+#
+# 2026-04-11: Added fallback_chain (ordered list). Consumed by cex_cli_resolver.py
+# during `-cli auto` mode in spawn_grid.ps1.
+#
+# 2026-04-12: Added ollama_api config for tools that call Ollama via OpenAI SDK.
+# Verified: qwen3:8b and qwen3:14b both respond at localhost:11434/v1.
+# -----------------------------------------------------------------------------------
+
+# --- Preflight Configuration ---
+# Pre-compilation phase: cheap/local model assembles context BEFORE nucleus boots.
+# Reduces token burn on main model by 60-70%.
+# Tool: _tools/cex_preflight.py (reads this config)
+preflight:
+  enabled: true
+  # Strategy: "local" = Ollama only, "cloud" = Haiku only, "hybrid" = local-first + Haiku fallback
+  strategy: hybrid
+  local:
+    cli: ollama
+    model: qwen3:14b
+    fallback_model: qwen3:8b
+    base_url: "http://localhost:11434/v1"
+    timeout_seconds: 30
+    # Tasks the local model handles (zero Max tokens spent):
+    tasks:
+      - file_scanning        # list relevant files for the task
+      - iso_ranking           # rank 13 ISOs by relevance, pick top 3-5
+      - context_dedup         # remove redundant context across sources
+      - token_counting        # count tokens before assembly
+      - embedding_retrieval   # TF-IDF / embedding similarity search
+  cloud:
+    cli: claude
+    model: claude-haiku-4-5-20251001
+    # Haiku is ~60x cheaper than Opus per token
+    tasks:
+      - semantic_ranking      # when local model ranking is uncertain
+      - prompt_compression    # summarize verbose context into dense form
+      - relevance_scoring     # score KC/ISO relevance 0-1 for selection
+  # Budget: max tokens the preflight phase can consume on cloud model
+  cloud_token_budget: 4000
+  # Output: compiled prompt written to .cex/cache/preflight/{nucleus}_{task_hash}.json
+  cache_dir: ".cex/cache/preflight"
+  # Context reduction targets
+  targets:
+    max_isos_per_build: 5           # from 13 -> top 5 most relevant
+    max_kcs_per_build: 3            # from all -> top 3
+    max_context_tokens: 15000       # target ceiling after compilation
+    original_avg_tokens: 50000      # baseline before preflight
+
+# --- Pre-flight Phase 0: MCP external context gather (N07 gateway) ---
+# N07 gathers external context before dispatch so non-Claude runtimes
+# (Codex, Gemini, Ollama) receive rich handoffs without live MCP access.
+# Tool: _tools/cex_preflight_mcp.py (reads preflight_mcp section below)
+# Spec: _docs/specs/spec_preflight_expansion_smart_routing.md
+#
+# Budget split (DP2): 8K external + 7K ISOs/KCs = 15K total per handoff
+# Timeout (DP3): 60s -- generous for network-bound MCP calls
+# Strategy (DP4): tiered -- free defaults + optional premium via env keys
+preflight_mcp:
+  enabled: true
+  max_external_tokens: 8192      # DP2: 8K external context budget
+  timeout_seconds: 60            # DP3: generous for network-bound calls
+  max_queries_per_provider: 3    # max search queries per provider per run
+  delay_between_queries_ms: 1000 # rate-limit guard between queries
+  audit_log: true                # write .cex/cache/preflight/{hash}_audit.json
+  providers:
+    github:
+      enabled: true
+      requires_key: GITHUB_TOKEN
+      operations: [search_repositories, search_code, list_issues, get_file_contents]
+      notes: "Free. Set GITHUB_TOKEN env var (any GitHub account token)."
+    fetch:
+      enabled: true
+      requires_key: null
+      notes: "Direct HTTP GET for specific URLs. No API key needed."
+    markitdown:
+      enabled: true
+      requires_key: null
+      notes: "HTML/PDF to markdown via MCP markitdown tool. No API key needed."
+    brave_search:
+      enabled: false
+      requires_key: BRAVE_API_KEY
+      notes: "Optional. Free tier: 2000 queries/mo. Set BRAVE_API_KEY in .env."
+    firecrawl:
+      enabled: false
+      requires_key: FIRECRAWL_API_KEY
+      notes: "Optional premium. Deep web crawl. Set FIRECRAWL_API_KEY in .env."
+  # Graceful degradation: if all providers unavailable, Phase 0 silently skips.
+  # The nucleus still receives ISO/KC context from Phase 1+2 (no crash).
+
+# --- Ollama API (OpenAI-compatible endpoint for tool-level access) ---
+ollama_api:
+  base_url: "http://localhost:11434/v1"
+  embed_url: "http://localhost:11434/api/embed"
+  models:
+    primary: "gemma4:26b"
+    heavy: "qwen3:14b"
+    light: "qwen3:8b"
+    student: "cex-student"
+  gpu: "RTX 5070 Ti"
+  vram: "16GB"
+  parallel: 6  # OLLAMA_NUM_PARALLEL for concurrent grid inference
+  notes: "Gemma4 MoE (26B total, 4B active) as primary. Fits 16GB. 6x concurrent via OLLAMA_NUM_PARALLEL."
+
+# --- Secretariat Tier (pre-flight intelligence) ---
+# Cheap model that runs BEFORE nucleus dispatch: intent resolution, ISO ranking,
+# context selection. First healthy provider wins. Regex is always-available fallback.
+# Spec: _docs/specs/spec_secretariat_tier.md
+secretariat:
+  enabled: true
+  timeout_seconds: 30
+  intent_confidence_threshold: 0.60
+  fallback_chain:
+    - provider: ollama
+      model: cex-student
+      cost: free
+      capabilities: [intent, iso_ranking, context_selection]
+    - provider: ollama
+      model: qwen3:8b
+      cost: free
+      capabilities: [intent, iso_ranking, context_selection]
+    - provider: anthropic
+      model: claude-haiku-4-5-20251001
+      cost: low
+      requires_key: ANTHROPIC_API_KEY
+      capabilities: [intent, iso_ranking, context_selection]
+    - provider: google
+      model: gemini-2.5-flash
+      cost: free
+      requires_key: GEMINI_API_KEY
+      capabilities: [intent, iso_ranking, context_selection]
+    - provider: local
+      model: cex_intent_resolver
+      cost: zero
+      capabilities: [intent]
+  targets:
+    max_isos_per_build: 5
+    max_kcs_per_build: 3
+    max_context_tokens: 15000
+
+# --- 8F Decomposition Tiers (MISSION_8F_DECOMPOSE) ---
+# Machine-readable tier definitions consumed by cex_8f_runner.py and cex_router_v2.py.
+# Spec: _docs/specs/spec_8f_decompose.md | Evidence: STRESS_TEST 2026-04-28 (77 runs)
+tiers:
+  full_8f:
+    stages: [F1, F2, F3, F4, F5, F6, F7, F8]
+    mode: A
+    description: "Full autonomous 8F pipeline. Model handles all reasoning + generation."
+    min_score: 9.0
+    models: [claude-fable-5, claude-opus-4-8, claude-opus-4-7, claude-sonnet-4-6, claude-haiku-4-5-20251001]
+  f6_generation:
+    stages: [F6]
+    mode: B
+    description: "F6 generation only. Opus pre-compiles F1-F4 into prompt_package. Tools handle F7-F8."
+    min_score: 7.0
+    # DP1 (decision_manifest_glm_bench_2026_07_12.yaml, GLM_BENCH_0712_EXEC):
+    # added glm-openwebui/glm-5.2-fast/glm-cpw/glm-flash -- Lane B snippet
+    # as-is. Bare glm-5.2 deliberately OMITTED (reasoning-budget fragile,
+    # 0-content proven twice; costliest variant; glm-openwebui already
+    # aliases it at the litellm layer). See N05_operations/P07_evals/
+    # p07_bm_glm_openwebui.md Lane B for the full rationale.
+    models: [gemini-2.5-flash-lite, gemini-2.5-flash, gpt-4.1, gpt-5,
+             glm-openwebui, glm-5.2-fast, glm-cpw, glm-flash]
+    prompt_package_dir: ".cex/runtime/packages"
+  preflight_aux:
+    stages: []
+    mode: B
+    description: "Read-only auxiliary tasks. No artifact production. Context gathering only."
+    min_score: null
+    models: [gpt-5, gpt-4.1]
+  local_f6:
+    stages: [F6]
+    mode: B
+    description: "F6 via fine-tuned local model (DEFERRED -- requires MISSION_OLLAMA_F6_FINETUNE)."
+    min_score: 7.0
+    models: [cex-student, llama3.1:8b]
+    status: deferred
+  unsupported:
+    stages: []
+    mode: null
+    description: "BLOCKED per STRESS_TEST evidence. Do not dispatch."
+    models: [qwen3:14b, gemma4:26b, qwen3:8b]
+
+  # 3-stage 8F decompose tier consumed by:
+  #   - _tools/cex_decompose.py    (orchestrator: spawns Stage 1 + Stage 2)
+  #   - _tools/cex_boot_pipeline.py (reads CEX_DECOMPOSE_STAGE -> picks model)
+  #   - the Task tool (in-session) decompose <nucleus> <task>
+  # Spec: _docs/specs/spec_8f_decompose.md (section 5: the Task tool integration)
+  decompose:
+    description: "3-stage 8F decompose: Sonnet reasoning -> Sonnet generation -> tools (zero LLM in Stage 3). SONNET5_DEFAULT_POLICY 2026-07-01."
+    stage_1: claude-sonnet-4-6
+    stage_2: claude-sonnet-4-6
+    stage_2_fallback: [gemini-2.5-flash-lite, qwen3:8b]
+    min_score: 8.0
+    prompt_package_dir: ".cex/runtime/packages"
+
+  # --- Cross-provider escalation ladders (W6: MAX_LEVERAGE provider-agnostic) ---
+  # The smart-escalation ladder (cex_mentor_swarm.ESCALATION_LADDER) generalized
+  # across providers: each ladder climbs cheap -> mid -> premium. A gate-clean
+  # artifact scoring below a tier's `floor` is re-produced at the next (stronger)
+  # tier; the terminal tier has floor: null (accept whatever it produces).
+  # `alias` resolves through model_aliases above (cross-provider -- no hardcoded
+  # slug, no "if claude"). The swarm picks the ladder matching the producer
+  # model's provider (cex_mentor_swarm.load_escalation_ladder). `claude` is the
+  # default and is byte-identical to the pre-W6 hardcoded ladder
+  # (haiku>sonnet>opus) -- backward-compat: Claude defaults unchanged.
+  # Only providers/models already present in this YAML are used (none invented).
+  escalation_ladders:
+    claude:
+      - {tier: haiku,  alias: haiku,  floor: 7.0}
+      - {tier: sonnet, alias: sonnet, floor: 8.0}
+      - {tier: opus,   alias: opus,   floor: null}
+    google:
+      - {tier: flash_lite, alias: gemini_flash_lite, floor: 7.0}
+      - {tier: flash,      alias: gemini_flash,      floor: 8.0}
+      - {tier: pro,        alias: gemini_pro,        floor: null}
+    openai:
+      - {tier: gpt_mini, alias: gpt_mini, floor: 7.0}
+      - {tier: gpt,      alias: gpt,      floor: null}
+    ollama:
+      - {tier: light, alias: "ollama/qwen3:8b",  floor: 7.0}
+      - {tier: heavy, alias: "ollama/qwen3:14b", floor: null}
+

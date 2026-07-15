@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================================================================
+   CEXAI WHITE-LABEL STOREFRONT -- base layer.
+
+   IMPLEMENTS the reference retail design system (refined PB-minimal).
+   This file ships the built-in SAMPLE token VALUES as the static :root default (no FOUC).
+   BrandLayout injects buildCssVars(brand) into a scoped <style> ON TOP at runtime,
+   so a tenant's published catalog reads in ITS brand -- the whole site is the mold.
+
+   The 24 BRAND-VARIABLE tokens are overridable per-tenant; the SYSTEM-LEVEL tokens
+   (status / gradient / shadow / z / motion / type) are inherited unchanged.
+=========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* ---- 24 BRAND-VARIABLE tokens (built-in sample default; tenant overrides these) ----- */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 4%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 4%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 4%;
+  --primary: 0 0% 7%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 96%;
+  --secondary-foreground: 0 0% 7%;
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 38%;
+  --accent: 0 0% 7%;
+  --accent-foreground: 0 0% 100%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --ring: 0 0% 4%;
+  --brand: 258 60% 45%;            /* violet -- brand / primary action ONLY */
+  --brand-foreground: 0 0% 100%;
+  --brand-muted: 258 45% 95%;
+  --highlight: 35 90% 45%;         /* amber -- promo / urgency ONLY */
+  --highlight-foreground: 0 0% 100%;
+  --highlight-muted: 38 100% 96%;
+  --radius: 0.75rem;
+  --font-family-base: var(--font-body), "Inter", system-ui, sans-serif;
+
+  /* ---- SYSTEM-LEVEL tokens (every tenant inherits unchanged) ---------------- */
+  --success: 142 76% 36%;
+  --warning: 38 92% 50%;
+  --info: 199 89% 48%;
+  --destructive: 0 84% 60%;
+
+  --gradient-brand: linear-gradient(135deg, hsl(173 58% 39%), hsl(173 58% 50%));
+  --gradient-highlight: linear-gradient(135deg, hsl(24 95% 53%), hsl(33 100% 58%));
+  --gradient-overlay: linear-gradient(to top, rgb(0 0 0 / 0.8), transparent);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 1px 2px rgb(0 0 0 / 0.06), 0 8px 24px rgb(0 0 0 / 0.08);
+  --shadow-lg: 0 4px 6px rgb(0 0 0 / 0.08), 0 20px 36px rgb(0 0 0 / 0.12);
+
+  --z-base: 1;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 300ms;
+  --ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --tracking-tight: -0.025em;
+  --tracking-wide: 0.025em;
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+}
+
+/* Dark mode -- a system-provided theme class (not a tenant overlay). Reuses the
+   SAME var names with adjusted values; the teal lightens for contrast on dark. */
+.dark {
+  --background: 0 0% 4%;
+  --foreground: 0 0% 96%;
+  --card: 0 0% 7%;
+  --card-foreground: 0 0% 96%;
+  --popover: 0 0% 7%;
+  --popover-foreground: 0 0% 96%;
+  --primary: 0 0% 96%;
+  --primary-foreground: 0 0% 7%;
+  --secondary: 0 0% 14%;
+  --secondary-foreground: 0 0% 96%;
+  --muted: 0 0% 14%;
+  --muted-foreground: 0 0% 64%;
+  --accent: 0 0% 96%;
+  --accent-foreground: 0 0% 7%;
+  --border: 0 0% 18%;
+  --input: 0 0% 18%;
+  --ring: 0 0% 83%;
+  --brand: 173 58% 50%;
+  --brand-muted: 173 30% 14%;
+  --highlight: 24 95% 58%;
+  --highlight-muted: 24 40% 14%;
+  --success: 142 70% 45%;
+  --warning: 38 92% 60%;
+  --info: 199 89% 58%;
+  --destructive: 0 63% 41%;
+  color-scheme: dark;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    /* smooth in-page anchor jumps (the B2B "#contato" CTA). The global
+       prefers-reduced-motion rule below forces this back to auto when asked. */
+    scroll-behavior: smooth;
+    /* keep sticky targets (PDP buy-box) clear of the sticky header on anchor jump. */
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: hsl(var(--brand) / 0.18);
+    color: hsl(var(--foreground));
+  }
+
+  /* Visible keyboard focus everywhere -- the accessibility floor (s8). */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* Centered page shell -- the standard content max-width + responsive gutter. */
+  .shell {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Eyebrow label -- uppercase, tracked, muted. The section kicker device. */
+  .eyebrow {
+    @apply text-eyebrow font-semibold uppercase tracking-eyebrow text-muted-foreground;
+  }
+
+  /* A raised surface card. */
+  .panel {
+    @apply rounded-card border border-border bg-card shadow-sm;
+  }
+
+  /* A hairline chip / tag. */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-pill border border-border bg-secondary
+      px-2.5 py-1 text-2xs font-medium uppercase tracking-wide text-muted-foreground;
+  }
+
+  /* ---- BUTTON CONTRACT (design_system.md s7): 6 states, 3-tier, 44px touch ---- */
+  .btn {
+    @apply inline-flex select-none items-center justify-center gap-2 rounded-pill
+      px-5 text-sm font-semibold leading-none transition-all duration-base ease-standard
+      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2
+      focus-visible:ring-offset-background
+      disabled:pointer-events-none disabled:opacity-50;
+    min-height: 44px; /* 44px touch target */
+  }
+  /* Tier 1 -- primary CTA (black fill). Max 1 per surface. */
+  .btn-primary {
+    @apply btn bg-primary text-primary-foreground shadow-sm
+      hover:-translate-y-0.5 hover:shadow-lg hover:bg-primary/90
+      active:translate-y-0 active:scale-[0.98] active:shadow-sm;
+  }
+  /* Tier 1 alt -- brand-accented primary (teal). Max 1 per surface. */
+  .btn-brand {
+    @apply btn bg-brand text-brand-foreground shadow-sm
+      hover:-translate-y-0.5 hover:shadow-lg hover:bg-brand/90
+      active:translate-y-0 active:scale-[0.98] active:shadow-sm;
+  }
+  /* Promo -- orange. Max 1 per surface; promo / urgency ONLY. */
+  .btn-highlight {
+    @apply btn bg-highlight text-highlight-foreground shadow-sm
+      hover:-translate-y-0.5 hover:shadow-lg hover:bg-highlight/90
+      active:translate-y-0 active:scale-[0.98];
+  }
+  /* Tier 2 -- secondary / outline (neutral). Unlimited per surface. */
+  .btn-outline {
+    @apply btn border border-border bg-transparent text-foreground
+      hover:border-foreground/30 hover:bg-secondary;
+  }
+  .btn-ghost {
+    @apply btn px-4 text-muted-foreground hover:bg-secondary hover:text-foreground;
+  }
+  .btn-lg {
+    @apply px-7 text-base;
+    min-height: 48px;
+  }
+
+  /* Skip link -- off-screen until focused (s8). Targets #main-content. */
+  .skip-link {
+    @apply sr-only;
+  }
+  .skip-link:focus {
+    @apply not-sr-only fixed left-4 top-4 z-[1030] rounded-card border border-border
+      bg-card px-4 py-2 text-sm font-semibold text-foreground shadow-lg;
+  }
+
+  /* 44px minimum touch target utility (s8). */
+  .touch-target {
+    @apply flex items-center justify-center;
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Reduced motion -- mandatory, fires for ALL components; no per-component opt-in (s5). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

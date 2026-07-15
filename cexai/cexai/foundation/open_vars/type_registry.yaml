@@ -1,0 +1,136 @@
+# =============================================================================
+# Open Variables -- v1 Type Token Registry (packaged default)
+# =============================================================================
+# The CLOSED v1 token set: 8 base tokens (spec_open_variables_protocol S 2.2) +
+# 4 custom tokens (ADR 022 D-022-01). This file is the single source of truth a
+# runtime loads at startup (ADR 022 D-022-02 "Discovery surface"). Extending it
+# requires a registered entry + a MINOR protocol bump (D-022-04); removing a
+# token is a MAJOR bump. Each entry follows the D-022-02 registry schema.
+#
+# Token names mirror the W2 schema.TYPE_TOKENS keys exactly so a parse_type
+# result keys straight into this registry; the list family is keyed "list[T]".
+#
+# absorbs: cexai-specs/open-variables-protocol
+# =============================================================================
+tokens:
+  # --- base tokens (8) -- spec S 2.2 -----------------------------------------
+  - name: str
+    base_python: str
+    json_form: string
+    validator: cexai.foundation.open_vars.validators.validate_str
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: spec_open_variables_protocol
+    rationale: "The most common parameterizable slot type; honors min_length, max_length, pattern."
+
+  - name: int
+    base_python: int
+    json_form: integer
+    validator: cexai.foundation.open_vars.validators.validate_int
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: spec_open_variables_protocol
+    rationale: "Integer counts and indices (retry_count, judge_count); honors minimum, maximum."
+
+  - name: float
+    base_python: float
+    json_form: number
+    validator: cexai.foundation.open_vars.validators.validate_float
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: spec_open_variables_protocol
+    rationale: "Calibrated thresholds (pass_threshold, kappa_target); honors minimum, maximum."
+
+  - name: bool
+    base_python: bool
+    json_form: boolean
+    validator: cexai.foundation.open_vars.validators.validate_bool
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: spec_open_variables_protocol
+    rationale: "Binary switches; no constraints apply."
+
+  - name: enum
+    base_python: typing.Literal
+    json_form: string
+    validator: cexai.foundation.open_vars.validators.validate_enum
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: spec_open_variables_protocol
+    rationale: "Closed choice over allowed_values (tone, language); allowed_values is REQUIRED."
+
+  - name: kind_ref
+    base_python: str
+    json_form: string
+    validator: cexai.foundation.open_vars.validators.validate_kind_ref
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: spec_open_variables_protocol
+    rationale: "A reference to another artifact kind via the 'kind:' prefix; resolves in kinds_meta.json."
+
+  - name: list[T]
+    base_python: list
+    json_form: array
+    validator: cexai.foundation.open_vars.validators.validate_list
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: spec_open_variables_protocol
+    rationale: "Homogeneous sequence of element token T (list[str], list[int]); honors min_items, max_items."
+
+  - name: dict
+    base_python: dict
+    json_form: object
+    validator: cexai.foundation.open_vars.validators.validate_dict
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: spec_open_variables_protocol
+    rationale: "Structured payload; an optional schema_ref names a JSON Schema (resolution deferred)."
+
+  # --- custom tokens (4) -- ADR 022 D-022-01 ---------------------------------
+  - name: url
+    base_python: pydantic.HttpUrl
+    json_form: string
+    validator: cexai.foundation.open_vars.validators.validate_url
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: ADR_022
+    rationale: "URL fields are the most common parameterizable surface in spec-kit templates; max_length 2048."
+
+  - name: iso_date
+    base_python: datetime.date
+    json_form: string
+    validator: cexai.foundation.open_vars.validators.validate_iso_date
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: ADR_022
+    rationale: "Date-only fields (release dates, deprecation deadlines); parses via date.fromisoformat."
+
+  - name: iso_datetime
+    base_python: datetime.datetime
+    json_form: string
+    validator: cexai.foundation.open_vars.validators.validate_iso_datetime
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: ADR_022
+    rationale: "Timezone-aware instants (re-bind audit timestamps); parses via datetime.fromisoformat."
+
+  - name: json_schema
+    base_python: dict
+    json_form: object
+    validator: cexai.foundation.open_vars.validators.validate_json_schema
+    json_schema_ref: null
+    min_protocol_version: "1.0"
+    deprecated_in: null
+    introduced_by: ADR_022
+    rationale: "A dict payload with a typed contract; validated at freeze via Draft202012Validator.check_schema."

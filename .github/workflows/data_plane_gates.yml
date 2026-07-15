@@ -1,0 +1,240 @@
+# CEXAI Tenant -- Data-Plane Gates (RLS cross-tenant denial)
+# ==========================================================
+# Proves the multi-tenant Row-Level-Security boundary holds, with NO secrets and
+# NO production DB -- only ephemeral throwaway Postgres service containers:
+#
+#   1. RLS drift-check (detector)  -- _tools/cex_rls_drift_check.py --self-test
+#                                     (DB-free, deterministic; proves the AR1-AR4
+#                                     drift detectors are intact + the declared
+#                                     migrations parse).
+#   2. Cross-tenant denial proof   -- supabase/tests/*denial*.sql run with psql
+#                                     `-v ON_ERROR_STOP=1` over supabase/migrations/
+#                                     (exit 0 == every cross-tenant read/write DENIED).
+#
+# This is the LEAN distilled tenant gate. It is path-scoped to fire only when the
+# data-plane surfaces change. The split into a vanilla(+pgvector) job and a
+# supabase/postgres job mirrors the two engine needs of the SQL proofs: the
+# tenant-table tests need pgvector (tenant_memory does CREATE EXTENSION vector);
+# the storage test binds storage.objects (the Supabase `storage` schema).
+
+name: Data-Plane Gates
+
+on:
+  push:
+    paths:
+      - 'supabase/migrations/**'
+      - 'supabase/tests/**'
+      - '_tools/cex_rls_drift_check.py'
+      - '.github/workflows/data_plane_gates.yml'
+  pull_request:
+    paths:
+      - 'supabase/migrations/**'
+      - 'supabase/tests/**'
+      - '_tools/cex_rls_drift_check.py'
+      - '.github/workflows/data_plane_gates.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: data-plane-gates-${{ github.ref }}
+  cancel-in-progress: true
+
+# Least-privilege: read-only token.
+permissions:
+  contents: read
+
+env:
+  PYTHON_VERSION: '3.12'
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Gate 1: the drift-check DETECTOR is intact. DB-free, deterministic, no secrets.
+  # ---------------------------------------------------------------------------
+  drift-check-detector:
+    name: RLS Drift-Check (detector self-test)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      # stdlib-only tool -- no pip install needed for --self-test.
+      - name: Drift-check self-test (proves the AR drift detectors work, DB-free)
+        run: python _tools/cex_rls_drift_check.py --self-test
+      - name: Declared-migration parse smoke (empty live snapshot, non-blocking)
+        # Parses supabase/migrations/*.sql so a malformed migration is surfaced.
+        # An empty live snapshot makes table-drift fire by design -> NON-BLOCKING
+        # (|| true): its purpose is to log the parse, not to gate (the live drift
+        # check needs a staging snapshot the sovereign tenant supplies itself).
+        run: |
+          echo '{"tables":[],"policies":[]}' \
+            | python _tools/cex_rls_drift_check.py \
+                --migrations supabase/migrations --live-json - || true
+
+  # ---------------------------------------------------------------------------
+  # Gate 2: tenant-table cross-tenant DENIAL proof on a real (ephemeral) Postgres.
+  # pgvector/pgvector:pg16 = vanilla pg16 + the `vector` extension tenant_memory
+  # needs. Covers every tenant_*/agent_* denial test. Storage is the separate job.
+  # ---------------------------------------------------------------------------
+  denial-test-tenant-tables:
+    name: Cross-Tenant Denial Test (tenant tables, real Postgres)
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    services:
+      postgres:
+        # HARDENING (before promoting to a required gate): repin to an immutable
+        # digest -- `image: pgvector/pgvector@sha256:<digest>  # pg16`. Resolve via
+        #   docker buildx imagetools inspect pgvector/pgvector:pg16
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      # Ephemeral local service container ONLY. Not a secret; never a prod/staging ref.
+      PGHOST: localhost
+      PGPORT: '5432'
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: postgres
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install psql client (the runner has none by default)
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends postgresql-client
+      - name: Provision the Supabase roles the denial SQL binds
+        # The .sql files do SET LOCAL ROLE service_role (seed) + authenticated (the
+        # RLS-subject session). A vanilla pgvector image has neither -- create them
+        # (NOLOGIN, no privileges: harmless) or the first role bind would error.
+        run: |
+          set -euo pipefail
+          for role in service_role authenticated; do
+            psql -v ON_ERROR_STOP=1 -c \
+              "DO \$do\$ BEGIN IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname='${role}') THEN EXECUTE format('CREATE ROLE %I NOLOGIN', '${role}'); END IF; END \$do\$;"
+          done
+      - name: Apply ALL tenant-table migrations IN ORDER (skip the storage one)
+        # Lexical (timestamp) order so any tenant-table test runs on a full schema.
+        # The storage migration targets storage.objects (proven in the storage job).
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for mig in $(ls supabase/migrations/*.sql 2>/dev/null | sort); do
+            case "$mig" in
+              *_tenant_vault_storage.sql) echo "SKIP (storage-schema, separate job): $mig"; continue ;;
+            esac
+            echo "APPLY: $mig"
+            psql -v ON_ERROR_STOP=1 -f "$mig"
+          done
+      - name: Run every tenant-table denial proof (glob -- no hardcoded names)
+        # supabase/tests/*denial*.sql; route storage tests to the storage job.
+        # ON_ERROR_STOP=1 turns any RAISE into a non-zero exit == gate FAIL.
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          ran=0
+          for test in supabase/tests/*denial*.sql; do
+            case "$test" in
+              *storage*) echo "SKIP (storage, separate job): $test"; continue ;;
+            esac
+            echo "=== RUN denial proof: $test ==="
+            psql -v ON_ERROR_STOP=1 -f "$test"
+            ran=$((ran + 1))
+          done
+          if [ "$ran" -eq 0 ]; then
+            echo "::notice::No tenant-table denial test matched supabase/tests/*denial*.sql (nothing to prove)."
+          else
+            echo "Tenant-table denial proofs PASSED: ${ran} file(s)."
+          fi
+
+  # ---------------------------------------------------------------------------
+  # Gate 3: storage.objects cross-tenant denial. Needs the Supabase `storage`
+  # schema (vanilla pg / pgvector do NOT have storage.foldername()), so it runs on
+  # the supabase/postgres image. Self-skips cleanly when no storage denial test exists.
+  # ---------------------------------------------------------------------------
+  denial-test-storage:
+    name: Cross-Tenant Denial Test (storage, supabase/postgres)
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    services:
+      postgres:
+        # HARDENING (before promoting to a required gate): repin to an immutable
+        # digest -- `image: supabase/postgres@sha256:<digest>  # 15.8.x`. Resolve via
+        #   docker buildx imagetools inspect supabase/postgres:15.8.1.060
+        # If this exact patch tag is unavailable, bump to the current supabase/postgres
+        # 15.x tag -- the storage schema contract is stable.
+        image: supabase/postgres:15.8.1.060
+        env:
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      PGHOST: localhost
+      PGPORT: '5432'
+      PGUSER: postgres
+      PGPASSWORD: postgres
+      PGDATABASE: postgres
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect whether a storage denial test exists
+        # Degrade-never: no *storage*denial*.sql -> clean no-op (success). It lights
+        # up automatically the moment such a file is present -- zero edit here.
+        id: detect
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          files=(supabase/tests/*storage*denial*.sql)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::No supabase/tests/*storage*denial*.sql -- storage proof not wired; skipping (no-op)."
+          else
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Install psql client
+        if: steps.detect.outputs.present == 'true'
+        run: |
+          set -euo pipefail
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends postgresql-client
+      - name: Provision the Supabase roles the denial SQL binds (idempotent)
+        if: steps.detect.outputs.present == 'true'
+        run: |
+          set -euo pipefail
+          for role in service_role authenticated; do
+            psql -v ON_ERROR_STOP=1 -c \
+              "DO \$do\$ BEGIN IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname='${role}') THEN EXECUTE format('CREATE ROLE %I NOLOGIN', '${role}'); END IF; END \$do\$;"
+          done
+      - name: Apply the storage migration (storage.objects boundary)
+        if: steps.detect.outputs.present == 'true'
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          for mig in supabase/migrations/*_tenant_vault_storage.sql; do
+            echo "APPLY: $mig"
+            psql -v ON_ERROR_STOP=1 -f "$mig"
+          done
+      - name: Run the storage denial proof (glob)
+        if: steps.detect.outputs.present == 'true'
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          ran=0
+          for test in supabase/tests/*storage*denial*.sql; do
+            echo "=== RUN storage denial proof: $test ==="
+            psql -v ON_ERROR_STOP=1 -f "$test"
+            ran=$((ran + 1))
+          done
+          echo "Storage denial proofs PASSED: ${ran} file(s)."

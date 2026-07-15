@@ -1,0 +1,25 @@
+CEXAI -- Typed Meta-Control Plane for Agent Stacks
+Copyright (c) 2026-present CEXAI maintainers
+
+This product includes patterns absorbed from the following projects:
+
+- spec-kit (MIT)               -- github.com/github/spec-kit
+- ruflo (MIT)                  -- github.com/ruvnet/ruflo
+- swarms (Apache-2.0)          -- github.com/kyegomez/swarms
+- claude-flow (MIT)            -- github.com/ruvnet/claude-flow
+- agno (Apache-2.0)            -- github.com/agno-agi/agno
+- graphify (MIT)               -- github.com/safishamsi/graphify
+- claude-mem (Apache-2.0)      -- github.com/thedotmack/claude-mem
+- goose (Apache-2.0)           -- github.com/aaif-goose/goose (AAIF/Linux Foundation)
+- Scrapling (BSD-3-Clause)     -- github.com/D4Vinci/Scrapling
+- skills.sh + agentskills.io   -- open standard
+- welib.org                    -- data source (ethical use only per Principle WL2)
+- jitter.video                 -- SaaS dependency (consumed via REST API)
+
+The cexai.foundation package (vertical 08) absorbs the provider-abstraction and
+MCP-extension patterns of goose (Apache-2.0, AAIF/Linux Foundation). No goose
+source is vendored; all absorptions are PATTERN-ONLY re-implementations in Python.
+
+All Mode A external dependencies retain their original licenses.
+All Mode B in-tree absorptions are PATTERN-ONLY (no code copied verbatim);
+patterns are credited via this NOTICE per Article XVII (License Hygiene).

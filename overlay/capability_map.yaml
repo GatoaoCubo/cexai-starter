@@ -1,0 +1,31 @@
+# capability_map.yaml -- the SELECTOR output (cherry-picked dashboard cards).
+capabilities:
+  enabled:
+    - research
+    - ads
+    - pricing
+    - media_photo
+    - content
+    - docs
+    - landing
+    - tier_designer
+    - product_docs
+    - oauth_connect
+    - competitor_benchmark
+    - leadgen
+    - brandbook
+    - sourcing_opportunity
+    - product_match
+    - marketplace_listing
+  disabled: []
+  custom: []                    # UI scratch -- declared set lives in top-level custom_capabilities:
+managed_entities:
+  - brand_assets
+  - contacts
+  - faq
+  - knowledge_base
+  - offers_coupons
+  - products
+  - rag_sources
+  - records
+custom_capabilities: []        # D4: custom <slug>_* synthesis = NONE in v1
