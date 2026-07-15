@@ -100,4 +100,4 @@ I produce compact, dialectic-configured peer records so agents can ground their 
 | [[user-model-builder]] | upstream | 0.50 |
 | [[kc_user_model]] | upstream | 0.47 |
 | [[bld_architecture_user_model]] | upstream | 0.46 |
-| [[bld_knowledge_card_user_model]] | upstream | 0.36 |
+| [[bld_knowledge_user_model]] | upstream | 0.36 |

@@ -58,8 +58,8 @@ Retention rules:
 
 ## Builder Context
 
-This ISO operates within the `user-model-builder` stack, one of 300 kinds in the CEX
-architecture. Each builder has 13 ISOs covering system prompt, instruction, output template,
+This ISO operates within the `user-model-builder` stack, one of 125 kinds in the CEX
+architecture. Each builder has 12 ISOs covering system prompt, instruction, output template,
 quality gate, examples, schema, config, tools, memory, manifest, architecture, knowledge card,
 and collaboration.
 
@@ -108,5 +108,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_user_model_builder.md
 | [[bld_architecture_user_model]] | upstream | 0.34 |
 | bld_config_memory_type | upstream | 0.33 |
 | [[user-model-builder]] | related | 0.33 |
-| [[bld_collaboration_user_model]] | downstream | 0.32 |
+| [[bld_orchestration_user_model]] | downstream | 0.32 |
 | bld_tools_memory_type | upstream | 0.32 |

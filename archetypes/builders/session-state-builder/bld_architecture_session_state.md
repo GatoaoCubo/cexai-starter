@@ -68,6 +68,6 @@ session_state   --consumed_by-->  context_manager
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[session-state-builder]] | downstream | 0.56 |
-| [[bld_collaboration_session_state]] | downstream | 0.55 |
-| [[p01_kc_session_state]] | downstream | 0.45 |
+| [[bld_orchestration_session_state]] | downstream | 0.55 |
+| [[kc_session_state]] | downstream | 0.45 |
 | [[bld_memory_session_state]] | downstream | 0.45 |

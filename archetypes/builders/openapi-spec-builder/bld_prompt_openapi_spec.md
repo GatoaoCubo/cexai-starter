@@ -88,6 +88,6 @@ related:
 |----------|-------------|-------|
 | [[bld_instruction_client]] | sibling | 0.36 |
 | bld_instruction_cli_tool | sibling | 0.32 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.32 |
+| [[bld_prompt_chunk_strategy]] | sibling | 0.32 |
 | [[p11_qg_openapi_spec]] | downstream | 0.32 |
 | [[bld_architecture_openapi_spec]] | downstream | 0.31 |

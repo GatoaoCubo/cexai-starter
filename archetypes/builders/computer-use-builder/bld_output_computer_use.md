@@ -101,6 +101,6 @@ Resolution: `{{width}}`x`{{height}}` — all coordinates within this space
 |----------|-------------|-------|
 | [[p11_qg_computer_use]] | downstream | 0.48 |
 | p04_cu_desktop_agent | upstream | 0.44 |
-| [[bld_knowledge_card_computer_use]] | upstream | 0.43 |
+| [[bld_knowledge_computer_use]] | upstream | 0.43 |
 | [[computer-use-builder]] | upstream | 0.40 |
-| [[bld_instruction_computer_use]] | upstream | 0.39 |
+| [[bld_prompt_computer_use]] | upstream | 0.39 |

@@ -63,8 +63,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_subscription_tier]] | downstream | 0.39 |
+| [[bld_prompt_subscription_tier]] | downstream | 0.39 |
 | bld_instruction_pricing_page | downstream | 0.36 |
 | [[bld_tools_subscription_tier]] | downstream | 0.36 |
 | [[bld_output_template_subscription_tier]] | downstream | 0.35 |
-| [[bld_collaboration_subscription_tier]] | downstream | 0.32 |
+| [[bld_orchestration_subscription_tier]] | downstream | 0.32 |

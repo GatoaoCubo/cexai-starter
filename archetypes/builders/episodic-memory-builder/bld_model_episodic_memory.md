@@ -116,8 +116,8 @@ ID must match `^p10_ep_[a-z][a-z0-9_]+$`. Body must not exceed 4096 bytes.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_episodic_memory]] | downstream | 0.60 |
+| [[bld_orchestration_episodic_memory]] | downstream | 0.60 |
 | [[bld_architecture_episodic_memory]] | upstream | 0.58 |
-| [[bld_knowledge_card_episodic_memory]] | upstream | 0.57 |
-| [[p01_kc_episodic_memory]] | related | 0.57 |
-| [[bld_instruction_episodic_memory]] | upstream | 0.50 |
+| [[bld_knowledge_episodic_memory]] | upstream | 0.57 |
+| [[kc_episodic_memory]] | related | 0.57 |
+| [[bld_prompt_episodic_memory]] | upstream | 0.50 |

@@ -35,7 +35,7 @@ related:
 | Tool | Purpose | When |
 |------|---------|------|
 | cex_hooks.py | Pre-commit validation: ASCII check, frontmatter, schema | Before F8 COLLABORATE |
-| cex_wave_validator.py | Validate all 13 ISOs in builder package | During audit cycles |
+| cex_wave_validator.py | Validate all 12 ISOs in builder package | During audit cycles |
 
 ## Industry Reference Models
 | Model | Role in multimodal_prompt design |
@@ -49,8 +49,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_version]] | downstream | 0.38 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.35 |
+| [[bld_orchestration_prompt_version]] | downstream | 0.38 |
+| [[bld_orchestration_action_prompt]] | downstream | 0.35 |
 | bld_tools_prompt_optimizer | sibling | 0.33 |
 | bld_knowledge_card_prompt_optimizer | upstream | 0.29 |
 | bld_tools_visual_workflow | sibling | 0.28 |

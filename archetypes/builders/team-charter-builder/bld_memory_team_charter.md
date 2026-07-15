@@ -53,7 +53,7 @@ Review of 12 grid missions: charters with all 8 body sections had 0 mid-mission 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[team-charter-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_team_charter]] | upstream | 0.36 |
-| [[bld_instruction_team_charter]] | upstream | 0.33 |
-| [[bld_collaboration_team_charter]] | downstream | 0.33 |
+| [[bld_knowledge_team_charter]] | upstream | 0.36 |
+| [[bld_prompt_team_charter]] | upstream | 0.33 |
+| [[bld_orchestration_team_charter]] | downstream | 0.33 |
 | [[bld_tools_team_charter]] | upstream | 0.31 |

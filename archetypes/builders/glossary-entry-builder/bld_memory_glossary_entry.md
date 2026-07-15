@@ -57,7 +57,7 @@ Does not apply when: the term requires historical context, usage examples, or op
 ## Builder Context
 
 This ISO operates within the `glossary-entry-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -104,8 +104,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_glossary_entry_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_glossary_entry]] | upstream | 0.44 |
-| [[p01_kc_glossary_entry]] | upstream | 0.43 |
-| [[bld_instruction_glossary_entry]] | upstream | 0.42 |
+| [[bld_knowledge_glossary_entry]] | upstream | 0.44 |
+| [[kc_glossary_entry]] | upstream | 0.43 |
+| [[bld_prompt_glossary_entry]] | upstream | 0.42 |
 | [[glossary-entry-builder]] | upstream | 0.41 |
 | p01_gl_TERM_SLUG | upstream | 0.40 |

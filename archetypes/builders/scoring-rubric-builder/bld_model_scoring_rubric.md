@@ -131,8 +131,8 @@ Max body: 4096 bytes. Every criterion is actionable. No subjective descriptors.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_scoring_rubric]] | related | 0.52 |
+| [[bld_orchestration_scoring_rubric]] | related | 0.52 |
 | [[bld_memory_scoring_rubric]] | downstream | 0.47 |
-| [[bld_knowledge_card_scoring_rubric]] | upstream | 0.47 |
+| [[bld_knowledge_scoring_rubric]] | upstream | 0.47 |
 | [[bld_architecture_scoring_rubric]] | downstream | 0.44 |
 | [[p11_qg_scoring-rubric]] | downstream | 0.41 |

@@ -82,7 +82,7 @@ None — independent builder (layer 0). Memory summaries can be defined standalo
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_scope]] | sibling | 0.39 |
+| [[bld_orchestration_memory_scope]] | sibling | 0.39 |
 | [[memory-summary-builder]] | upstream | 0.38 |
 | bld_collaboration_compression_config | sibling | 0.36 |
-| [[bld_collaboration_session_backend]] | sibling | 0.33 |
+| [[bld_orchestration_session_backend]] | sibling | 0.33 |

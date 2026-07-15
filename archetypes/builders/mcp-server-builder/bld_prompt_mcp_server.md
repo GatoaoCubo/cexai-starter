@@ -118,7 +118,7 @@ Score SOFT gates from `QUALITY_GATES.md`. If soft score < 8.0, revise in the sam
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mcp-server-builder]] | downstream | 0.54 |
-| [[bld_knowledge_card_mcp_server]] | downstream | 0.50 |
+| [[bld_knowledge_mcp_server]] | downstream | 0.50 |
 | [[bld_schema_mcp_server]] | downstream | 0.49 |
 | [[p11_qg_mcp_server]] | downstream | 0.48 |
 | [[bld_memory_mcp_server]] | downstream | 0.47 |

@@ -90,4 +90,4 @@ Five duties bind any agent that emits an artifact:
 | n00_role_assignment_manifest | related | 0.34 |
 | [[agent-builder]] | related | 0.33 |
 | [[role-assignment-builder]] | related | 0.32 |
-| [[bld_collaboration_role_assignment]] | related | 0.31 |
+| [[bld_orchestration_role_assignment]] | related | 0.31 |

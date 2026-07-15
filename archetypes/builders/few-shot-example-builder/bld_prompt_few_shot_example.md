@@ -104,6 +104,6 @@ python _tools/cex_skill_loader.py --verify few
 |----------|-------------|-------|
 | [[few-shot-example-builder]] | upstream | 0.45 |
 | [[p10_lr_few_shot_example_builder]] | downstream | 0.43 |
-| [[bld_instruction_golden_test]] | sibling | 0.42 |
+| [[bld_prompt_golden_test]] | sibling | 0.42 |
 | [[p11_qg_few_shot_example]] | downstream | 0.42 |
-| [[bld_instruction_action_prompt]] | sibling | 0.40 |
+| [[bld_prompt_action_prompt]] | sibling | 0.40 |

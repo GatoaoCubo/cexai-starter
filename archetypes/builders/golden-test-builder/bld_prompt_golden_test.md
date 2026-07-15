@@ -98,8 +98,8 @@ python _tools/cex_skill_loader.py --verify golden
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_action_prompt]] | sibling | 0.39 |
-| [[bld_instruction_output_validator]] | sibling | 0.37 |
-| [[bld_instruction_retriever_config]] | sibling | 0.37 |
-| [[bld_instruction_memory_scope]] | sibling | 0.36 |
-| [[bld_instruction_prompt_version]] | sibling | 0.35 |
+| [[bld_prompt_action_prompt]] | sibling | 0.39 |
+| [[bld_prompt_output_validator]] | sibling | 0.37 |
+| [[bld_prompt_retriever_config]] | sibling | 0.37 |
+| [[bld_prompt_memory_scope]] | sibling | 0.36 |
+| [[bld_prompt_prompt_version]] | sibling | 0.35 |

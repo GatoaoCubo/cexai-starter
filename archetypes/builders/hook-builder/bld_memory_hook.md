@@ -70,7 +70,7 @@ Pattern crystallized after integration testing revealed that early hook designs 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[hook-builder]] | upstream | 0.53 |
-| [[bld_knowledge_card_hook]] | upstream | 0.51 |
-| [[bld_instruction_hook]] | upstream | 0.47 |
+| [[bld_knowledge_hook]] | upstream | 0.51 |
+| [[bld_prompt_hook]] | upstream | 0.47 |
 | [[p11_qg_hook]] | downstream | 0.45 |
 | [[bld_architecture_hook]] | upstream | 0.45 |

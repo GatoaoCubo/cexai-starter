@@ -87,4 +87,4 @@ Lifecycle rules are declarative policies governing artifact state transitions ov
 | [[p03_ins_lifecycle_rule]] | upstream | 0.46 |
 | [[bld_memory_lifecycle_rule]] | upstream | 0.45 |
 | [[p11_qg_lifecycle_rule]] | related | 0.45 |
-| [[bld_collaboration_lifecycle_rule]] | related | 0.41 |
+| [[bld_orchestration_lifecycle_rule]] | related | 0.41 |

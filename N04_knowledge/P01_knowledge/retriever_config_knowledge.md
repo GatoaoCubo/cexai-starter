@@ -101,5 +101,5 @@ You are the consuming agent that acts on this retriever_config under F3 INJECT.
 | p01_retriever_config | sibling | 0.36 |
 | [[retriever-builder]] | related | 0.36 |
 | [[bld_architecture_retriever]] | related | 0.34 |
-| [[p01_kc_retriever]] | related | 0.33 |
+| [[kc_retriever]] | related | 0.33 |
 | n00_retriever_manifest | related | 0.33 |

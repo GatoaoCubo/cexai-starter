@@ -102,8 +102,8 @@ schema_org_mapping: {{true|false}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_ontology]] | upstream | 0.43 |
+| [[bld_prompt_ontology]] | upstream | 0.43 |
 | [[bld_schema_ontology]] | downstream | 0.41 |
 | [[p11_qg_ontology]] | downstream | 0.41 |
-| [[bld_collaboration_ontology]] | downstream | 0.39 |
-| [[bld_knowledge_card_ontology]] | upstream | 0.38 |
+| [[bld_orchestration_ontology]] | downstream | 0.39 |
+| [[bld_knowledge_ontology]] | upstream | 0.38 |

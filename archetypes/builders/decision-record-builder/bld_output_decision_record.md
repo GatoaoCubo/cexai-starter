@@ -135,7 +135,7 @@ Cons:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_decision_record]] | upstream | 0.49 |
+| [[bld_prompt_decision_record]] | upstream | 0.49 |
 | [[decision-record-builder]] | downstream | 0.45 |
 | p08_decision_record | downstream | 0.41 |
 | [[bld_architecture_decision_record]] | downstream | 0.40 |

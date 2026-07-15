@@ -86,7 +86,7 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_llm_judge]] | related | 0.33 |
+| [[bld_orchestration_llm_judge]] | related | 0.33 |
 | [[llm-judge-builder]] | related | 0.31 |
 | kind-builder | related | 0.31 |
 | n00_llm_judge_manifest | related | 0.30 |

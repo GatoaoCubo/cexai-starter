@@ -67,8 +67,8 @@ A toolkit groups related tools into a coherent capability package. Instead of as
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_toolkit]] | sibling | 0.61 |
+| [[bld_knowledge_toolkit]] | sibling | 0.61 |
 | [[p03_ins_toolkit_builder]] | upstream | 0.59 |
 | [[toolkit-builder]] | related | 0.58 |
 | [[bld_config_toolkit]] | downstream | 0.57 |
-| [[bld_collaboration_toolkit]] | upstream | 0.57 |
+| [[bld_orchestration_toolkit]] | upstream | 0.57 |

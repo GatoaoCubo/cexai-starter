@@ -94,6 +94,6 @@ max_tokens: "{{max_tokens}}}}"
 |----------|-------------|-------|
 | [[bld_output_template_output_validator]] | sibling | 0.38 |
 | bld_output_template_hook_config | sibling | 0.37 |
-| [[bld_instruction_constraint_spec]] | upstream | 0.37 |
+| [[bld_prompt_constraint_spec]] | upstream | 0.37 |
 | bld_output_template_runtime_rule | sibling | 0.36 |
 | bld_output_template_effort_profile | sibling | 0.36 |

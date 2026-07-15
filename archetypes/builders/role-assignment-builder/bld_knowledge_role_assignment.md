@@ -68,5 +68,5 @@ The CrewAI idiom of `role + goal + backstory` (the "persona triad") is the empir
 | [[role-assignment-builder]] | downstream | 0.58 |
 | [[bld_tools_role_assignment]] | downstream | 0.40 |
 | [[p11_qg_role_assignment]] | downstream | 0.39 |
-| [[bld_knowledge_card_crew_template]] | sibling | 0.37 |
+| [[bld_knowledge_crew_template]] | sibling | 0.37 |
 | n00_role_assignment_manifest | sibling | 0.37 |

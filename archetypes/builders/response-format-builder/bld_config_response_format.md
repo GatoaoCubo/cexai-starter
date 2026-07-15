@@ -88,7 +88,7 @@ python _tools/cex_score.py --apply bld-config-response-format.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_validation_schema]] | sibling | 0.37 |
-| [[bld_collaboration_response_format]] | upstream | 0.36 |
+| [[bld_orchestration_response_format]] | upstream | 0.36 |
 | [[bld_schema_response_format]] | upstream | 0.33 |
 | bld_config_quality_gate | sibling | 0.32 |
 | [[bld_config_retriever_config]] | sibling | 0.32 |

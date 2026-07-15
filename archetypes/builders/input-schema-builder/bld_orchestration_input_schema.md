@@ -66,8 +66,8 @@ None — independent builder (layer 0). Input schemas are defined from consumer 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_action_prompt]] | sibling | 0.45 |
-| [[bld_collaboration_few_shot_example]] | sibling | 0.42 |
-| [[bld_collaboration_validation_schema]] | sibling | 0.34 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.45 |
+| [[bld_orchestration_few_shot_example]] | sibling | 0.42 |
+| [[bld_orchestration_validation_schema]] | sibling | 0.34 |
 | bld_collaboration_interface | sibling | 0.33 |
-| [[bld_collaboration_prompt_version]] | sibling | 0.31 |
+| [[bld_orchestration_prompt_version]] | sibling | 0.31 |

@@ -77,8 +77,8 @@ I specify retriever config configurations so agents and pipelines can use them.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_chunk_strategy]] | sibling | 0.46 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.40 |
-| [[bld_collaboration_embedding_config]] | sibling | 0.38 |
+| [[bld_orchestration_chunk_strategy]] | sibling | 0.46 |
+| [[bld_orchestration_memory_scope]] | sibling | 0.40 |
+| [[bld_orchestration_embedding_config]] | sibling | 0.38 |
 | [[retriever-config-builder]] | upstream | 0.36 |
 | [[bld_config_retriever_config]] | upstream | 0.35 |

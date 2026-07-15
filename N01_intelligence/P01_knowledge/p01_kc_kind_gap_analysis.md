@@ -352,7 +352,7 @@ scope: {bounded_context_ref}
 [terms this nucleus introduces]
 ```
 
-**Builder:** `domain-vocabulary-builder` (13 ISOs, P01, sin lens: Analytical Envy)
+**Builder:** `domain-vocabulary-builder` (12 ISOs, P01, sin lens: Analytical Envy)
 **Gate:** F7 GOVERN validates: no term listed without anti-pattern + no term that shadows a
 canonical term from kinds_meta.json.
 
@@ -381,7 +381,7 @@ taxonomy is broad but thin at the DDD boundary. The 10 recommended new kinds wou
 true COVERED to ~19% and eliminate the 6 highest-severity overloads.
 
 **Competitive context:** LangChain has ~40 typed objects (Chain, Tool, Memory, Agent, Retriever,
-Callback). AutoGen has ~15. CrewAI has ~8. CEX's 300 kinds is 6-32x larger -- the deepest
+Callback). AutoGen has ~15. CrewAI has ~8. CEX's 125 kinds is 3-16x larger -- the deepest
 typed taxonomy in the AI agent infrastructure space. The DDD gap is not a weakness but a
 growth frontier: 22 MISSING concepts represent 22 builders that could further differentiate CEX
 from every competitor.

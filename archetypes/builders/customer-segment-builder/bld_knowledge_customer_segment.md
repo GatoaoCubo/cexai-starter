@@ -78,6 +78,6 @@ Customer segmentation defines distinct groups of organizations or individuals sh
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[customer-segment-builder]] | downstream | 0.47 |
-| [[p01_kc_icp_frameworks]] | sibling | 0.34 |
-| [[p01_kc_customer_segment]] | sibling | 0.29 |
-| [[bld_collaboration_customer_segment]] | downstream | 0.28 |
+| [[kc_icp_frameworks]] | sibling | 0.34 |
+| [[kc_customer_segment]] | sibling | 0.29 |
+| [[bld_orchestration_customer_segment]] | downstream | 0.28 |

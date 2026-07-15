@@ -49,8 +49,8 @@ Does NOT bind individual agents to roles (that is role-assignment-builder). Does
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_role_assignment]] | sibling | 0.44 |
+| [[bld_orchestration_role_assignment]] | sibling | 0.44 |
 | [[crew-template-builder]] | related | 0.38 |
-| [[bld_collaboration_handoff_protocol]] | sibling | 0.30 |
+| [[bld_orchestration_handoff_protocol]] | sibling | 0.30 |
 | bld_collaboration_pipeline_template | sibling | 0.29 |
-| [[bld_collaboration_agent]] | sibling | 0.28 |
+| [[bld_orchestration_agent]] | sibling | 0.28 |

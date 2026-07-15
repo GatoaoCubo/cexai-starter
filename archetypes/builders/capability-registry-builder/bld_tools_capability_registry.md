@@ -59,6 +59,6 @@ related:
 |----------|-------------|-------|
 | [[capability-registry-builder]] | downstream | 0.33 |
 | bld_tools_kind | sibling | 0.33 |
-| [[bld_collaboration_agent]] | downstream | 0.33 |
-| [[bld_instruction_agent]] | upstream | 0.32 |
-| [[p01_kc_agent]] | upstream | 0.31 |
+| [[bld_orchestration_agent]] | downstream | 0.33 |
+| [[bld_prompt_agent]] | upstream | 0.32 |
+| [[kc_agent]] | upstream | 0.31 |

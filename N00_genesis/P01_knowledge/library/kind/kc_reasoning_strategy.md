@@ -66,7 +66,7 @@ A structured prompting technique to guide LLMs through complex problem-solving b
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reasoning-strategy-builder]] | downstream | 0.43 |
-| [[bld_instruction_reasoning_strategy]] | downstream | 0.38 |
+| [[bld_prompt_reasoning_strategy]] | downstream | 0.38 |
 | p01_kc_chain_of_thought | sibling | 0.36 |
-| [[bld_knowledge_card_reasoning_strategy]] | sibling | 0.36 |
+| [[bld_knowledge_reasoning_strategy]] | sibling | 0.36 |
 | [[p03_qg_reasoning_strategy]] | downstream | 0.35 |

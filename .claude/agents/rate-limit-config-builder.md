@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.31 |
 | [[rate-limit-config-builder]] | related | 0.31 |
-| [[bld_collaboration_rate_limit_config]] | related | 0.28 |
+| [[bld_orchestration_rate_limit_config]] | related | 0.28 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.27 |

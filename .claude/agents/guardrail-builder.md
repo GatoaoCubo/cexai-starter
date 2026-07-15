@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[guardrail-builder]] | related | 0.38 |
 | [[bld_architecture_guardrail]] | related | 0.33 |
 | n00_guardrail_manifest | related | 0.33 |
-| [[bld_collaboration_guardrail]] | related | 0.31 |
+| [[bld_orchestration_guardrail]] | related | 0.31 |
 | kind-builder | related | 0.31 |

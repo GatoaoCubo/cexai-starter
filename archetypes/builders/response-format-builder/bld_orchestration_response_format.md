@@ -72,8 +72,8 @@ I design the format the LLM sees during generation. I do not validate output aft
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_template]] | sibling | 0.39 |
+| [[bld_orchestration_prompt_template]] | sibling | 0.39 |
 | [[response-format-builder]] | related | 0.38 |
-| [[bld_collaboration_action_prompt]] | sibling | 0.38 |
-| [[bld_collaboration_validation_schema]] | sibling | 0.37 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.36 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.38 |
+| [[bld_orchestration_validation_schema]] | sibling | 0.37 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.36 |

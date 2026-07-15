@@ -158,5 +158,5 @@ tags: [content-monetization, pricing, {{domain}}]
 |----------|-------------|-------|
 | [[p11_qg_content_monetization]] | downstream | 0.38 |
 | [[bld_schema_content_monetization]] | downstream | 0.32 |
-| [[bld_instruction_content_monetization]] | upstream | 0.29 |
+| [[bld_prompt_content_monetization]] | upstream | 0.29 |
 | [[content-monetization-builder]] | downstream | 0.29 |

@@ -75,8 +75,8 @@ Calculate ROI for a $200k project with:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_roi_calculator]] | sibling | 0.51 |
-| [[bld_instruction_roi_calculator]] | downstream | 0.41 |
+| [[bld_knowledge_roi_calculator]] | sibling | 0.51 |
+| [[bld_prompt_roi_calculator]] | downstream | 0.41 |
 | [[roi-calculator-builder]] | downstream | 0.41 |
 | [[p11_qg_roi_calculator]] | downstream | 0.36 |
 | [[bld_output_template_roi_calculator]] | downstream | 0.35 |

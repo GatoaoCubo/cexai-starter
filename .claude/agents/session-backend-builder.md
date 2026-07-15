@@ -88,6 +88,6 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[session-backend-builder]] | related | 0.37 |
 | [[bld_architecture_session_backend]] | related | 0.36 |
-| [[bld_collaboration_session_backend]] | related | 0.35 |
-| [[p01_kc_session_backend]] | related | 0.30 |
+| [[bld_orchestration_session_backend]] | related | 0.35 |
+| [[kc_session_backend]] | related | 0.30 |
 | [[bld_tools_session_backend]] | related | 0.30 |

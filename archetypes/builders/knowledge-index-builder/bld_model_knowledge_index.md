@@ -127,7 +127,7 @@ Max body: 4096 bytes. All numeric parameters must include valid ranges or defaul
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_knowledge_index]] | downstream | 0.59 |
-| [[bld_knowledge_card_knowledge_index]] | upstream | 0.53 |
+| [[bld_orchestration_knowledge_index]] | downstream | 0.59 |
+| [[bld_knowledge_knowledge_index]] | upstream | 0.53 |
 | [[bld_architecture_knowledge_index]] | upstream | 0.49 |
-| [[p01_kc_knowledge_index]] | related | 0.47 |
+| [[kc_knowledge_index]] | related | 0.47 |

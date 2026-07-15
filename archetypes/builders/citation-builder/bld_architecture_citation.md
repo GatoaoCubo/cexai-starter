@@ -63,7 +63,7 @@ rag_source, search_tool --> [citation] --> knowledge_card, context_doc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[citation-builder]] | upstream | 0.51 |
-| [[p01_kc_citation]] | upstream | 0.48 |
+| [[kc_citation]] | upstream | 0.48 |
 | [[bld_output_template_citation]] | upstream | 0.46 |
 | [[p10_lr_citation_builder]] | downstream | 0.41 |
-| [[bld_instruction_citation]] | upstream | 0.41 |
+| [[bld_prompt_citation]] | upstream | 0.41 |

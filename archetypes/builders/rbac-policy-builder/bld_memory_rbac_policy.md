@@ -46,7 +46,7 @@ Reviewed policies using "tenant-abc-admin" roles with restricted resource paths 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[rbac-policy-builder]] | upstream | 0.55 |
-| [[bld_knowledge_card_rbac_policy]] | upstream | 0.50 |
+| [[bld_knowledge_rbac_policy]] | upstream | 0.50 |
 | [[kc_rbac_policy]] | upstream | 0.50 |
-| [[bld_instruction_rbac_policy]] | upstream | 0.49 |
+| [[bld_prompt_rbac_policy]] | upstream | 0.49 |
 | [[p09_qg_rbac_policy]] | downstream | 0.43 |

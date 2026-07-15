@@ -97,7 +97,7 @@ A prompt version is an immutable snapshot of a prompt (template, system, or acti
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-version-builder]] | related | 0.51 |
-| [[bld_collaboration_prompt_version]] | downstream | 0.50 |
-| [[bld_knowledge_card_prompt_version]] | sibling | 0.45 |
+| [[bld_orchestration_prompt_version]] | downstream | 0.50 |
+| [[bld_knowledge_prompt_version]] | sibling | 0.45 |
 | n00_prompt_version_manifest | sibling | 0.38 |
 | [[p10_lr_prompt_version_builder]] | downstream | 0.35 |

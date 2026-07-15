@@ -89,4 +89,4 @@ linked_artifacts:
 | [[bld_manifest_lifecycle_rule]] | related | 0.31 |
 | [[p03_ins_lifecycle_rule]] | related | 0.31 |
 | [[bld_architecture_lifecycle_rule]] | related | 0.30 |
-| [[bld_knowledge_card_lifecycle_rule]] | related | 0.30 |
+| [[bld_knowledge_lifecycle_rule]] | related | 0.30 |

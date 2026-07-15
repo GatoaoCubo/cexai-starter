@@ -100,5 +100,5 @@ Rule: lower priority number = loads earlier; higher number wins on rule conflict
 | [[kc_context_file]] | upstream | 0.72 |
 | n00_context_file_manifest | upstream | 0.67 |
 | [[context-file-builder]] | upstream | 0.60 |
-| [[bld_knowledge_card_context_file]] | upstream | 0.59 |
+| [[bld_knowledge_context_file]] | upstream | 0.59 |
 | [\[ctx_`{{scope}}`\]] | upstream | 0.54 |

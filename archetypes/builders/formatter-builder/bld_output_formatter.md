@@ -106,4 +106,4 @@ Engine: `{{template_engine}}`
 | p05_fmt_artifact_creation_report | related | 0.40 |
 | [[p11_qg_formatter]] | downstream | 0.40 |
 | n00_formatter_manifest | related | 0.40 |
-| [[p01_kc_formatter]] | upstream | 0.40 |
+| [[kc_formatter]] | upstream | 0.40 |

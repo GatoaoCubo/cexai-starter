@@ -87,6 +87,6 @@ python _tools/cex_score.py --apply bld-architecture-handoff-protocol.md
 |----------|-------------|-------|
 | [[handoff-protocol-builder]] | upstream | 0.64 |
 | [[bld_output_template_handoff_protocol]] | upstream | 0.44 |
-| [[p01_kc_handoff_protocol]] | upstream | 0.43 |
-| [[bld_collaboration_handoff_protocol]] | downstream | 0.40 |
+| [[kc_handoff_protocol]] | upstream | 0.43 |
+| [[bld_orchestration_handoff_protocol]] | downstream | 0.40 |
 | [[p10_lr_handoff_protocol_builder]] | downstream | 0.37 |

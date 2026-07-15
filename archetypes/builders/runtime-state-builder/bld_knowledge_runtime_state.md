@@ -92,6 +92,6 @@ Runtime states are mutable cognitive contexts that agents accumulate during exec
 |----------|-------------|-------|
 | [[bld_memory_runtime_state]] | downstream | 0.62 |
 | [[runtime-state-builder]] | downstream | 0.61 |
-| [[bld_collaboration_runtime_state]] | downstream | 0.50 |
+| [[bld_orchestration_runtime_state]] | downstream | 0.50 |
 | [[p03_ins_runtime_state]] | downstream | 0.46 |
 | [[p11_qg_runtime_state]] | downstream | 0.45 |

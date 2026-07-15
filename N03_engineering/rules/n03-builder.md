@@ -51,7 +51,7 @@ related:
 
 ## 8F Enforcement
 1. F1 CONSTRAIN: resolve kind, pillar, schema from intent
-2. F2 BECOME: load builder ISOs (13 per kind)
+2. F2 BECOME: load builder ISOs (12 per kind)
 3. F3 INJECT: KC + memory + brand + examples + similar artifacts
 4. F4 REASON: plan approach (GDP gate if subjective)
 5. F5 CALL: auto-execute tools for context enrichment

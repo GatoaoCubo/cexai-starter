@@ -52,5 +52,5 @@ Standardizes and automates the creation of dataset documentation, transforming r
 | [[dataset-card-builder]] | upstream | 0.30 |
 | bld_collaboration_llm_evaluation_scenario | sibling | 0.28 |
 | bld_collaboration_self_improvement_loop | sibling | 0.27 |
-| [[bld_collaboration_agent_profile]] | sibling | 0.27 |
+| [[bld_orchestration_agent_profile]] | sibling | 0.27 |
 | bld_collaboration_agent_computer_interface | sibling | 0.27 |

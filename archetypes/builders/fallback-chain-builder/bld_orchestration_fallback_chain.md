@@ -65,8 +65,8 @@ I design model degradation chains so systems remain available when primary model
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_boot_config]] | sibling | 0.45 |
+| [[bld_orchestration_boot_config]] | sibling | 0.45 |
 | bld_collaboration_dispatch_rule | sibling | 0.43 |
-| [[bld_collaboration_agent]] | sibling | 0.42 |
-| [[bld_collaboration_model_provider]] | sibling | 0.40 |
-| [[bld_collaboration_agent_package]] | sibling | 0.38 |
+| [[bld_orchestration_agent]] | sibling | 0.42 |
+| [[bld_orchestration_model_provider]] | sibling | 0.40 |
+| [[bld_orchestration_agent_package]] | sibling | 0.38 |

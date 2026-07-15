@@ -115,8 +115,8 @@ States the gate value with no boolean conditions and no evaluation line -- fails
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_opportunity_matrix]] | related | 0.45 |
+| [[bld_prompt_opportunity_matrix]] | related | 0.45 |
 | [[opportunity-matrix-builder]] | related | 0.42 |
 | [[p10_mem_opportunity_matrix_builder]] | related | 0.38 |
-| [[bld_knowledge_card_opportunity_matrix]] | related | 0.35 |
+| [[bld_knowledge_opportunity_matrix]] | related | 0.35 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.33 |

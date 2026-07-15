@@ -71,7 +71,7 @@ skill          --depends_on--> instruction
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[instruction-builder]] | upstream | 0.47 |
-| [[p01_kc_instruction]] | upstream | 0.43 |
-| [[bld_collaboration_instruction]] | downstream | 0.43 |
+| [[kc_instruction]] | upstream | 0.43 |
+| [[bld_orchestration_instruction]] | downstream | 0.43 |
 | n00_instruction_manifest | upstream | 0.42 |
 | bld_architecture_skill | sibling | 0.32 |

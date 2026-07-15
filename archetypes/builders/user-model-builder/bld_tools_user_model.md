@@ -83,5 +83,5 @@ python -c "import re; print(re.match(r'^um_[a-z][a-z0-9_]+$', 'um_alice_main'))"
 | [[bld_tools_session_state]] | sibling | 0.43 |
 | [[bld_tools_context_file]] | sibling | 0.34 |
 | bld_tools_terminal_backend | sibling | 0.33 |
-| [[bld_collaboration_user_model]] | downstream | 0.33 |
+| [[bld_orchestration_user_model]] | downstream | 0.33 |
 | [[bld_tools_runtime_state]] | sibling | 0.33 |

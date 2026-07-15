@@ -71,8 +71,8 @@ related:
 | `guardrail` | Safety interlock | "The machine physically cannot proceed if a safety condition is violated" |
 | `env_config` | Factory floor settings | "Temperature, voltage, humidity: the ambient conditions production requires" |
 | `api_client` | External supplier connector | "The standardized connector to the external vendor's loading dock" |
-| `learning_record` ([[p01_kc_learning_record]]) | Post-production audit log | "What we learned from this production run that we will apply to the next" |
-| `entity_memory` ([[p01_kc_entity_memory]]) | Customer/product master record | "The persistent file on this client that all departments share" |
+| `learning_record` ([[kc_learning_record]]) | Post-production audit log | "What we learned from this production run that we will apply to the next" |
+| `entity_memory` ([[kc_entity_memory]]) | Customer/product master record | "The persistent file on this client that all departments share" |
 | `crew_template` ([[kc_crew_template]]) | Multi-department project plan | "When R&D, Marketing, and QA must all contribute to the same deliverable" |
 | `decision_record` | Engineering change order | "Formal record of why we changed the machine settings on this date" |
 | `benchmark` | Performance test protocol | "The standardized test we run on every machine before it goes live" |
@@ -126,7 +126,7 @@ related:
 
 ## Discovery Questions (Socratic Seeds)
 
-1. If the factory has 300 product specs (kinds) but only 12 departments (pillars), how does each department know which specs it's responsible for?
+1. If the factory has 125 product specs (kinds) but only 12 departments (pillars), how does each department know which specs it's responsible for?
 2. A worker (nucleus) receives a work order (handoff) that says "make this product." What information must the work order include so the worker never has to ask a question?
 3. When the QA inspector (F7) rejects a product, it goes back to the production machine (F6). Why is there a maximum of 2 retries, and what happens if the product still fails?
 4. The floor manager (N07) never operates a machine. What would happen if N07 started building artifacts directly?
@@ -179,7 +179,7 @@ For these cases, switch to [[kc_lens_technical]] (DDD bounded contexts, CI/CD pi
 ## Sources
 
 - CEX `CLAUDE.md`: nucleus definitions, 8F pipeline, pillar structure (canonical).
-- `archetypes/builders/` (12 ISOs per kind = 12 department configuration files; 300+ builders x 12 ISOs = 3,624 config files total).
+- `archetypes/builders/` (12 ISOs per kind = 12 department configuration files; 119 builders x 12 ISOs = 1,428 config files total).
 - `_docs/specs/spec_metaphor_dictionary.md`: the source-of-truth metaphor table this lens specializes.
 - Manufacturing metaphor in DevOps: Forsgren, Humble & Kim (2018), "Accelerate" -- DORA metrics, deployment as assembly line throughput.
 - Lean manufacturing (Womack & Jones, 1996): waste elimination, just-in-time, pull-based -- mirrors CEX dispatch + signal architecture.

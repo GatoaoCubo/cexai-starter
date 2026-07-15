@@ -86,8 +86,8 @@ python _tools/cex_score.py --apply bld-memory-learning-record.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_learning_record]] | related | 0.58 |
+| [[bld_knowledge_learning_record]] | related | 0.58 |
 | [[learning-record-builder]] | related | 0.39 |
-| [[bld_collaboration_learning_record]] | related | 0.35 |
+| [[bld_orchestration_learning_record]] | related | 0.35 |
 | [[skill_memory_update]] | related | 0.33 |
 | [[p03_ins_learning_record]] | upstream | 0.33 |

@@ -79,7 +79,7 @@ python _tools/cex_score.py --apply bld-config-lens.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p03_ins_lens]] | upstream | 0.38 |
-| [[bld_collaboration_lens]] | upstream | 0.37 |
+| [[bld_orchestration_lens]] | upstream | 0.37 |
 | [[bld_memory_lens]] | downstream | 0.37 |
 | [[bld_architecture_lens]] | upstream | 0.36 |
 | [[lens-builder]] | upstream | 0.35 |

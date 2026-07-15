@@ -86,8 +86,8 @@ python _tools/cex_score.py --apply bld-memory-spawn-config.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_spawn_config]] | downstream | 0.51 |
-| [[bld_knowledge_card_spawn_config]] | downstream | 0.50 |
+| [[bld_orchestration_spawn_config]] | downstream | 0.51 |
+| [[bld_knowledge_spawn_config]] | downstream | 0.50 |
 | [[spawn-config-builder]] | downstream | 0.50 |
 | [[p11_qg_spawn_config]] | downstream | 0.45 |
 | [[bld_architecture_spawn_config]] | upstream | 0.43 |

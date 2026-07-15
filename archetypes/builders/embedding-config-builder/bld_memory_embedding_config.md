@@ -56,7 +56,7 @@ Embedding pipeline misconfiguration produces incorrect similarity rankings that 
 ## Builder Context
 
 This ISO operates within the `embedding-config-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -111,8 +111,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_embedding_config_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_embedding_config]] | upstream | 0.41 |
+| [[bld_knowledge_embedding_config]] | upstream | 0.41 |
 | [[embedding-config-builder]] | upstream | 0.38 |
-| [[bld_instruction_embedding_config]] | upstream | 0.34 |
+| [[bld_prompt_embedding_config]] | upstream | 0.34 |
 | [[p11_qg_embedding_config]] | downstream | 0.34 |
-| [[p01_kc_embedding_config]] | upstream | 0.31 |
+| [[kc_embedding_config]] | upstream | 0.31 |

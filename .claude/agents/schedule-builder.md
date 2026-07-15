@@ -88,6 +88,6 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.31 |
-| [[bld_collaboration_schedule]] | related | 0.30 |
+| [[bld_orchestration_schedule]] | related | 0.30 |
 | [[schedule-builder]] | related | 0.28 |
 | p06_td_cex_artifact_type_n03 | related | 0.27 |

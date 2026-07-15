@@ -104,7 +104,7 @@ model_card, system_prompt --> [context_window_config] --> prompt_template, agent
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[context-window-config-builder]] | related | 0.53 |
-| [[bld_knowledge_card_context_window_config]] | sibling | 0.52 |
-| [[bld_collaboration_context_window_config]] | downstream | 0.38 |
+| [[bld_knowledge_context_window_config]] | sibling | 0.52 |
+| [[bld_orchestration_context_window_config]] | downstream | 0.38 |
 | [[bld_output_template_context_window_config]] | downstream | 0.37 |
 | [[p11_qg_context_window_config]] | downstream | 0.34 |

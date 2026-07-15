@@ -48,8 +48,8 @@ Reviewed artifacts showed that 70% of failures stemmed from unvalidated input fo
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_content_filter]] | downstream | 0.33 |
+| [[bld_orchestration_content_filter]] | downstream | 0.33 |
 | [[content-filter-builder]] | downstream | 0.32 |
-| [[bld_instruction_content_filter]] | upstream | 0.31 |
+| [[bld_prompt_content_filter]] | upstream | 0.31 |
 | [[bld_schema_content_filter]] | upstream | 0.26 |
 | [[bld_config_content_filter]] | upstream | 0.25 |

@@ -34,7 +34,7 @@ related:
 - 8F Pipeline (F1→F8) — mandatory for every artifact
 - 11 Construction Laws (3 layers: Foundation/Execution/Quality)
 - 3-Phase Build Protocol (pre-flight/execute/synthesize)
-- 300 kinds, 300+ builders, kind resolution via Motor
+- 125 kinds, 119 builders, kind resolution via Motor
 - Quality gates (H01-H07, 12LP, 5D rubric)
 
 ### Layer 2: Software Engineering (NEW — This Mission)

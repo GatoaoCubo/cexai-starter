@@ -78,8 +78,8 @@ agent            --signals-->   routing_entry (registration)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | downstream | 0.59 |
-| [[p01_kc_agent]] | upstream | 0.55 |
+| [[bld_orchestration_agent]] | downstream | 0.59 |
+| [[kc_agent]] | upstream | 0.55 |
 | [[agent-builder]] | upstream | 0.54 |
-| [[bld_knowledge_card_agent]] | upstream | 0.53 |
+| [[bld_knowledge_agent]] | upstream | 0.53 |
 | [[agent-profile-builder]] | upstream | 0.39 |

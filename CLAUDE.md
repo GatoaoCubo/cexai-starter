@@ -6,7 +6,7 @@
 
 **CEXAI is not an agent. It is an AI brain -- and the X stands for Exchange.**
 
-- **Composable** -- 8F x 12 pillars x 300+ kinds = the factory floor.
+- **Composable** -- 8F x 12 pillars x 125 kinds = the factory floor.
 - **Sovereign** -- runs on Claude, GPT, Gemini, or Ollama. Knowledge lives in *your* repo.
 - **Self-assimilating** -- every conversation compiles into typed, governed, searchable knowledge assets.
 
@@ -49,7 +49,7 @@ Nucleus self-load: read `N{0X}_*/rules/n{0X}-*.md` (N07: `.claude/rules/n07-*.md
 | **Orchestrator rules** | `.claude/rules/n07-orchestrator.md` (in-session orchestration + routing + full pointers) |
 | **Nucleus rules** | `N0{1-6}_*/rules/n0{1-6}-*.md` (1 per nucleus, lazy-loaded) |
 | **Builders** | `archetypes/builders/{kind}-builder/` (12 ISOs each) |
-| **Kind registry** | `.cex/kinds_meta.json` (300+ kinds) |
+| **Kind registry** | `.cex/kinds_meta.json` (125 kinds) |
 
 ## 4 Rules
 
@@ -100,4 +100,4 @@ User decides WHAT -> LLM builds HOW -> verify together. Full detail: `.claude/ru
 | Executive summary | `docs/EXECUTIVE_SUMMARY.md` | doc | no -- not in lean distill |
 | Canonical glossary | `docs/glossary.md` | doc | no -- not in lean distill |
 
-> **Taxonomy Hygiene Rule**: if you don't see your concept here, apply the 5-question test in `.claude/rules/composable-crew.md` BEFORE proposing a new kind. The 300-kind taxonomy is sufficient -- gaps are usually composition gaps, not category gaps.
+> **Taxonomy Hygiene Rule**: if you don't see your concept here, apply the 5-question test in `.claude/rules/composable-crew.md` BEFORE proposing a new kind. The 125-kind taxonomy is sufficient -- gaps are usually composition gaps, not category gaps.

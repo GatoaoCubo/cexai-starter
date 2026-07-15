@@ -65,7 +65,7 @@ Until a dedicated toolkit validator exists, validate manually:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_toolkit]] | upstream | 0.61 |
+| [[bld_orchestration_toolkit]] | upstream | 0.61 |
 | [[p03_ins_toolkit_builder]] | upstream | 0.60 |
 | [[bld_architecture_toolkit]] | downstream | 0.58 |
 | [[bld_config_toolkit]] | downstream | 0.57 |

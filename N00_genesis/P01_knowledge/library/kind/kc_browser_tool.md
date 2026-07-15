@@ -96,6 +96,6 @@ A browser tool automates web browser interactions at the DOM level — navigatin
 |----------|-------------|-------|
 | [[browser-tool-builder]] | related | 0.52 |
 | n00_browser_tool_manifest | sibling | 0.50 |
-| [[bld_collaboration_browser_tool]] | downstream | 0.46 |
-| [[bld_knowledge_card_browser_tool]] | sibling | 0.43 |
+| [[bld_orchestration_browser_tool]] | downstream | 0.46 |
+| [[bld_knowledge_browser_tool]] | sibling | 0.43 |
 | p04_browser_tool_NAME | related | 0.40 |

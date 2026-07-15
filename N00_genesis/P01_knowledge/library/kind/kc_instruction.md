@@ -96,7 +96,7 @@ An instruction is a step-by-step execution recipe that tells an agent or pipelin
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[instruction-builder]] | related | 0.51 |
-| [[bld_collaboration_instruction]] | downstream | 0.43 |
+| [[bld_orchestration_instruction]] | downstream | 0.43 |
 | [[bld_architecture_instruction]] | downstream | 0.41 |
 | n00_instruction_manifest | sibling | 0.41 |
 | tpl_instruction | related | 0.39 |

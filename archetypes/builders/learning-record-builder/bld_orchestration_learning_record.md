@@ -70,8 +70,8 @@ I capture success and failure patterns as scored, structured records with densit
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_pattern]] | sibling | 0.35 |
+| [[bld_orchestration_pattern]] | sibling | 0.35 |
 | [[learning-record-builder]] | related | 0.34 |
-| [[bld_collaboration_knowledge_card]] | sibling | 0.32 |
-| [[bld_collaboration_mental_model]] | sibling | 0.28 |
-| [[bld_collaboration_runtime_state]] | sibling | 0.28 |
+| [[bld_orchestration_knowledge_card]] | sibling | 0.32 |
+| [[bld_orchestration_mental_model]] | sibling | 0.28 |
+| [[bld_orchestration_runtime_state]] | sibling | 0.28 |

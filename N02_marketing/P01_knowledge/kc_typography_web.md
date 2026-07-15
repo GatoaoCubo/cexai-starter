@@ -333,7 +333,7 @@ body    { font-family: 'Open Sans', sans-serif; font-weight: 400; }
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_responsive_layout_systems]] | sibling | 0.31 |
+| [[kc_responsive_layout_systems]] | sibling | 0.31 |
 | p01_kc_typography_web | sibling | 0.31 |
 | p06_is_responsive_breakpoints_n02 | downstream | 0.27 |
 | n06_output_pricing_page | downstream | 0.24 |

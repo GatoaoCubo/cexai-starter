@@ -178,7 +178,7 @@ The specific failure modes that killed AutoGen's trajectory:
    and scored. AutoGen had no equivalent.
 
 2. **No typed knowledge layer** -- AutoGen agents exchange messages, not typed artifacts.
-   CEX's 300-kind taxonomy means every exchange has a schema, a pillar, and a quality gate.
+   CEX's 125-kind taxonomy means every exchange has a schema, a pillar, and a quality gate.
    AutoGen's "messages" were free-form -- powerful for demos, brittle for production.
 
 3. **Single runtime lock-in** -- AutoGen was Python/.NET but assumed Azure.

@@ -73,7 +73,7 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_router]] | upstream | 0.44 |
+| [[bld_knowledge_router]] | upstream | 0.44 |
 | [[p11_qg_router]] | downstream | 0.39 |
 | [[bld_schema_router]] | upstream | 0.38 |
 | [[p03_ins_router]] | upstream | 0.37 |

@@ -106,7 +106,7 @@ python _tools/cex_skill_loader.py --verify checkpoint
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[checkpoint-builder]] | downstream | 0.58 |
-| [[bld_collaboration_checkpoint]] | downstream | 0.54 |
+| [[bld_orchestration_checkpoint]] | downstream | 0.54 |
 | [[bld_architecture_checkpoint]] | downstream | 0.52 |
 | [[p10_lr_checkpoint_builder]] | downstream | 0.49 |
-| [[bld_knowledge_card_checkpoint]] | upstream | 0.48 |
+| [[bld_knowledge_checkpoint]] | upstream | 0.48 |

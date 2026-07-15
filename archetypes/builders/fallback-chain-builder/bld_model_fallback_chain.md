@@ -122,8 +122,8 @@ Maximum artifact size: 2048 bytes. If the chain exceeds this, compress step desc
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_fallback_chain]] | downstream | 0.52 |
+| [[bld_orchestration_fallback_chain]] | downstream | 0.52 |
 | [[p10_lr_fallback_chain_builder]] | downstream | 0.46 |
-| [[bld_instruction_fallback_chain]] | downstream | 0.44 |
+| [[bld_prompt_fallback_chain]] | downstream | 0.44 |
 | chain-builder | sibling | 0.43 |
-| [[p01_kc_fallback_chain]] | related | 0.41 |
+| [[kc_fallback_chain]] | related | 0.41 |

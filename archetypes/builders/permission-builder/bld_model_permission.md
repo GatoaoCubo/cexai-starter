@@ -117,6 +117,6 @@ Produce a permission artifact with YAML frontmatter followed by: `## Roles` (tab
 |----------|-------------|-------|
 | [[bld_memory_permission]] | downstream | 0.61 |
 | [[p03_ins_permission]] | upstream | 0.61 |
-| [[bld_knowledge_card_permission]] | upstream | 0.59 |
-| [[bld_collaboration_permission]] | related | 0.56 |
+| [[bld_knowledge_permission]] | upstream | 0.59 |
+| [[bld_orchestration_permission]] | related | 0.56 |
 | [[bld_architecture_permission]] | upstream | 0.55 |

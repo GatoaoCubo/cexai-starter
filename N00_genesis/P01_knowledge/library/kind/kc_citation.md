@@ -99,8 +99,8 @@ rag_source, search_tool --> [citation] --> knowledge_card, context_doc, agent ou
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_citation]] | sibling | 0.63 |
+| [[bld_knowledge_citation]] | sibling | 0.63 |
 | [[citation-builder]] | related | 0.56 |
 | [[bld_schema_citation]] | downstream | 0.53 |
-| [[bld_instruction_citation]] | downstream | 0.53 |
+| [[bld_prompt_citation]] | downstream | 0.53 |
 | [[p10_lr_citation_builder]] | downstream | 0.50 |

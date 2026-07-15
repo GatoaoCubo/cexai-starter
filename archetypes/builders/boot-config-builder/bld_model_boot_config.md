@@ -132,8 +132,8 @@ Max body: 2048 bytes. All constraint values must include units (tokens, seconds,
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_boot_config]] | downstream | 0.56 |
-| [[bld_instruction_boot_config]] | downstream | 0.50 |
-| [[p01_kc_boot_config]] | related | 0.48 |
+| [[bld_orchestration_boot_config]] | downstream | 0.56 |
+| [[bld_prompt_boot_config]] | downstream | 0.50 |
+| [[kc_boot_config]] | related | 0.48 |
 | [[bld_architecture_boot_config]] | downstream | 0.48 |
-| [[bld_knowledge_card_boot_config]] | upstream | 0.45 |
+| [[bld_knowledge_boot_config]] | upstream | 0.45 |

@@ -60,4 +60,4 @@ Sum weights 6.0; `soft = sum(weight*score)/6.0*10`.
 | p06_vs_design_system | upstream | 0.5 |
 | [[bld_output_design_system]] | sibling | 0.42 |
 | p06_ds_ferro | example | 0.42 |
-| [[p01_kc_design_system]] | related | 0.4 |
+| [[kc_design_system]] | related | 0.4 |

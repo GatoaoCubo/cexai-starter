@@ -46,4 +46,4 @@ CONFIG restricts SCHEMA; it never adds fields the schema does not know.
 | [[bld_prompt_design_system]] | sibling | 0.42 |
 | [[bld_eval_design_system]] | downstream | 0.42 |
 | p06_vs_design_system | upstream | 0.4 |
-| [[p01_kc_design_system]] | related | 0.38 |
+| [[kc_design_system]] | related | 0.38 |

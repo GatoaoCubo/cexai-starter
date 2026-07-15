@@ -85,8 +85,8 @@ Rule: baseline MUST fall within declared scale range.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_reward_signal]] | upstream | 0.35 |
+| [[bld_prompt_reward_signal]] | upstream | 0.35 |
 | [[bld_output_template_reward_signal]] | upstream | 0.32 |
-| [[bld_knowledge_card_reward_signal]] | upstream | 0.31 |
+| [[bld_knowledge_reward_signal]] | upstream | 0.31 |
 | [[bld_schema_reward_signal]] | downstream | 0.31 |
 | [[reward-signal-builder]] | downstream | 0.30 |

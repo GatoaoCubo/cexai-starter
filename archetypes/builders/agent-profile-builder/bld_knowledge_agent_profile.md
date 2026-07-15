@@ -67,7 +67,7 @@ Persona construction overlaps with digital twin technologies and character AI, e
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agent-profile-builder]] | downstream | 0.56 |
-| [[bld_collaboration_agent]] | downstream | 0.32 |
-| [[bld_knowledge_card_agent]] | sibling | 0.31 |
+| [[bld_orchestration_agent]] | downstream | 0.32 |
+| [[bld_knowledge_agent]] | sibling | 0.31 |
 | [[agent-builder]] | downstream | 0.30 |
-| [[p01_kc_agent]] | sibling | 0.30 |
+| [[kc_agent]] | sibling | 0.30 |

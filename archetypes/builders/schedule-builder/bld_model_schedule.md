@@ -144,8 +144,8 @@ catch_up: false
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_schedule]] | related | 0.66 |
+| [[bld_orchestration_schedule]] | related | 0.66 |
 | [[p11_qg_schedule]] | upstream | 0.55 |
 | [[bld_architecture_schedule]] | upstream | 0.52 |
-| [[bld_knowledge_card_schedule]] | upstream | 0.52 |
-| [[bld_instruction_schedule]] | upstream | 0.50 |
+| [[bld_knowledge_schedule]] | upstream | 0.52 |
+| [[bld_prompt_schedule]] | upstream | 0.50 |

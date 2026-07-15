@@ -69,7 +69,7 @@ unit_eval       --depends-->     quality_gate
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[unit-eval-builder]] | upstream | 0.47 |
-| [[p01_kc_unit_eval]] | upstream | 0.44 |
-| [[bld_knowledge_card_unit_eval]] | upstream | 0.43 |
+| [[kc_unit_eval]] | upstream | 0.44 |
+| [[bld_knowledge_unit_eval]] | upstream | 0.43 |
 | n00_unit_eval_manifest | upstream | 0.39 |
 | [[bld_architecture_golden_test]] | sibling | 0.39 |

@@ -142,7 +142,7 @@ INPUT: signal JSON content
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[signal-builder]] | downstream | 0.50 |
-| [[bld_knowledge_card_signal]] | downstream | 0.49 |
+| [[bld_knowledge_signal]] | downstream | 0.49 |
 | [[p11_qg_signal]] | downstream | 0.46 |
 | [[bld_architecture_signal]] | downstream | 0.42 |
 | [[bld_schema_signal]] | downstream | 0.38 |

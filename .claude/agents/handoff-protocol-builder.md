@@ -87,7 +87,7 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[handoff-protocol-builder]] | related | 0.46 |
-| [[bld_collaboration_handoff_protocol]] | related | 0.41 |
+| [[bld_orchestration_handoff_protocol]] | related | 0.41 |
 | [[p11_fb_handoff_protocol]] | related | 0.33 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.32 |
 | kind-builder | related | 0.31 |

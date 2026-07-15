@@ -86,8 +86,8 @@ python _tools/cex_score.py --apply bld-memory-agent-card.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_agent_card]] | upstream | 0.50 |
-| [[bld_collaboration_agent_card]] | upstream | 0.47 |
+| [[bld_knowledge_agent_card]] | upstream | 0.50 |
+| [[bld_orchestration_agent_card]] | upstream | 0.47 |
 | [[agent-card-builder]] | upstream | 0.45 |
 | [[p03_ins_agent_card_builder]] | upstream | 0.40 |
 | [[p11_qg_agent-card]] | downstream | 0.35 |

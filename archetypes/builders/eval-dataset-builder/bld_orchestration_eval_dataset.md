@@ -91,7 +91,7 @@ Always state the boundary reason explicitly when redirecting.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[eval-dataset-builder]] | upstream | 0.47 |
-| [[p01_kc_eval_dataset]] | upstream | 0.41 |
+| [[kc_eval_dataset]] | upstream | 0.41 |
 | n00_eval_dataset_manifest | upstream | 0.39 |
-| [[bld_collaboration_golden_test]] | sibling | 0.36 |
+| [[bld_orchestration_golden_test]] | sibling | 0.36 |
 | bld_collaboration_regression_check | sibling | 0.35 |

@@ -98,8 +98,8 @@ A versioned, curated collection of test cases—each with an input, expected out
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_eval_dataset]] | downstream | 0.58 |
+| [[bld_orchestration_eval_dataset]] | downstream | 0.58 |
 | [[eval-dataset-builder]] | related | 0.53 |
 | n00_eval_dataset_manifest | sibling | 0.45 |
 | [[p11_qg_eval_dataset]] | downstream | 0.42 |
-| [[bld_knowledge_card_eval_dataset]] | sibling | 0.41 |
+| [[bld_knowledge_eval_dataset]] | sibling | 0.41 |

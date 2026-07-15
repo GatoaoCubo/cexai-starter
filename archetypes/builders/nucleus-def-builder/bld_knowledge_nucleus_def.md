@@ -107,6 +107,6 @@ cex_router.py (CLI selection), and spawn_grid.ps1 (boot orchestration).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[nucleus-def-builder]] | downstream | 0.55 |
-| [[bld_collaboration_nucleus_def]] | downstream | 0.45 |
+| [[bld_orchestration_nucleus_def]] | downstream | 0.45 |
 | n00_readme | related | 0.44 |
 | [[p02_mm_cex_architecture_n04]] | related | 0.43 |

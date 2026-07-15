@@ -68,10 +68,10 @@ python _tools/cex_compile.py --all          # .md -> typed .yaml
 python _tools/cex_index.py --stats          # SQLite index
 python _tools/cex_retriever.py --query "..." # TF-IDF retrieval
 ```
-Live: `Builders: 301 | Total files: 3612 | Avg density: 0.89`. Those 3612 ISOs
+Live: `Builders: 119 | Total files: 1428 | Avg density: 0.89`. Those 1428 ISOs
 are typed, addressable, version-controlled knowledge any nucleus loads at F3.
 **Pattern.** P10 ships seven memory kinds -- working_memory, episodic_memory,
-[[p01_kc_entity_memory|entity_memory]], knowledge_index, prompt_cache, memory_summary, prospective_memory
+[[kc_entity_memory|entity_memory]], knowledge_index, prompt_cache, memory_summary, prospective_memory
 -- each with its own consolidation and lifecycle policy.
 **Evidence.** `git log` over WHITEPAPER_ANNEXES shows every annex committed as
 a typed artifact, not a clipboard paste.
@@ -86,7 +86,7 @@ every artifact. Quality below 8.0 blocks publication.
 python _tools/cex_score.py --structural artifact.md
 python _tools/cex_doctor.py
 ```
-Live: `Result: 301 PASS | 0 WARN | 0 FAIL | Avg density: 0.89 | Oversized: 0`.
+Live: `Result: 119 PASS | 0 WARN | 0 FAIL | Avg density: 0.89 | Oversized: 0`.
 The scorer is pure Python on bytes -- cannot drift with model versions because
 it does not call models.
 **Pattern.** Three-layer scoring (structural / semantic / LLM council) with
@@ -109,7 +109,7 @@ ls archetypes/builders/knowledge-card-builder/
 Same shape for every kind. F2 BECOME loads all 12; F6 PRODUCE composes.
 **Pattern.** 1:1 ISO/pillar mapping. A kind builder is a record, not a string.
 Re-render is reproducible.
-**Evidence.** 300+ kinds x 12 ISOs = 3612 files. Doctor: `expected 3612`,
+**Evidence.** 119 builders x 12 ISOs = 1428 files. Doctor: `expected 1428`,
 match. Adding a kind = `cex_kind_register.py` + `cex_materialize.py`, no
 copy-paste.
 
@@ -139,12 +139,12 @@ clean artifacts -- zero proprietary lock-in path.
 ## D.7 Output Chaos
 **Problem.** Free-text output. No schema. No type contracts. Every consumer
 writes their own parser.
-**Solution.** 301 typed kinds. Every artifact has frontmatter validated against
+**Solution.** 125 typed kinds. Every artifact has frontmatter validated against
 `_schema.yaml`. Pre-commit hook rejects malformed frontmatter.
 **Example.**
 ```bash
 python -c "import json; m=json.load(open('.cex/kinds_meta.json')); print(len(m))"
-# 301
+# 125
 python _tools/cex_compile.py path/to/artifact.md   # .md -> typed .yaml
 python _tools/cex_doctor.py                        # rejects schema violations
 ```

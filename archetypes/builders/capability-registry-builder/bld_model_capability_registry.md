@@ -74,8 +74,8 @@ NEVER conflate builder sub-agents with nucleus domain agents in the same group.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_capability_registry]] | upstream | 0.49 |
-| [[bld_collaboration_capability_registry]] | downstream | 0.44 |
-| [[bld_collaboration_agent]] | downstream | 0.43 |
+| [[bld_knowledge_capability_registry]] | upstream | 0.49 |
+| [[bld_orchestration_capability_registry]] | downstream | 0.44 |
+| [[bld_orchestration_agent]] | downstream | 0.43 |
 | [[agent-builder]] | sibling | 0.39 |
-| [[p01_kc_agent]] | upstream | 0.39 |
+| [[kc_agent]] | upstream | 0.39 |

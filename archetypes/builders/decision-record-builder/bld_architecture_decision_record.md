@@ -76,7 +76,7 @@ decision      --constrains--> agent
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[decision-record-builder]] | related | 0.65 |
-| [[bld_instruction_decision_record]] | upstream | 0.52 |
-| [[bld_knowledge_card_decision_record]] | upstream | 0.50 |
+| [[bld_prompt_decision_record]] | upstream | 0.52 |
+| [[bld_knowledge_decision_record]] | upstream | 0.50 |
 | n00_decision_record_manifest | related | 0.50 |
 | [[bld_schema_decision_record]] | upstream | 0.48 |

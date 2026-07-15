@@ -87,8 +87,8 @@ Rule: tier MUST match file count (minimal=3, standard=7, complete=10, whitelabel
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_agent_package]] | upstream | 0.53 |
+| [[bld_prompt_agent_package]] | upstream | 0.53 |
 | [[bld_schema_agent_package]] | upstream | 0.50 |
-| [[bld_knowledge_card_agent_package]] | upstream | 0.43 |
+| [[bld_knowledge_agent_package]] | upstream | 0.43 |
 | [[agent-package-builder]] | upstream | 0.43 |
 | p02_iso_codexa_agent | upstream | 0.41 |

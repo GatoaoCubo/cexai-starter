@@ -108,7 +108,7 @@ GREAT: 13 FULL + LEAN in sync; instructions <= 8000 chars; 3 rules; honest degra
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_agent]] | sibling | 0.48 |
+| [[kc_agent]] | sibling | 0.48 |
 | [[agent-package-builder]] | downstream | 0.46 |
 | bld_model_agent_package | downstream | 0.42 |
 | spec_agent_bundle_export | related | 0.36 |

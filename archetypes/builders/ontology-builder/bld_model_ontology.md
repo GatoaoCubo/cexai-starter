@@ -105,7 +105,7 @@ You understand the P01 boundary: an ontology defines the STRUCTURE of knowledge.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_ontology]] | downstream | 0.60 |
-| [[bld_collaboration_ontology]] | downstream | 0.57 |
+| [[bld_orchestration_ontology]] | downstream | 0.57 |
 | n00_ontology_manifest | related | 0.53 |
 | [[kc_ontology]] | related | 0.45 |
 | [[bld_schema_ontology]] | downstream | 0.44 |

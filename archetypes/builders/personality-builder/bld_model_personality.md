@@ -164,7 +164,7 @@ voice:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_personality]] | upstream | 0.69 |
+| [[bld_knowledge_personality]] | upstream | 0.69 |
 | [[kc_personality]] | upstream | 0.68 |
 | n00_personality_manifest | related | 0.66 |
 | [[bld_architecture_personality]] | downstream | 0.58 |

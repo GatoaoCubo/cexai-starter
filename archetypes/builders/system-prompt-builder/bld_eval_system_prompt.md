@@ -138,7 +138,7 @@ You are a helpful assistant. You help users with tasks. Be nice and provide good
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[system-prompt-builder]] | related | 0.47 |
-| [[bld_collaboration_system_prompt]] | related | 0.37 |
+| [[bld_orchestration_system_prompt]] | related | 0.37 |
 | [[bld_memory_system_prompt]] | downstream | 0.34 |
 | [[action-prompt-builder]] | related | 0.34 |
-| [[bld_knowledge_card_system_prompt]] | related | 0.33 |
+| [[bld_knowledge_system_prompt]] | related | 0.33 |

@@ -136,4 +136,4 @@ embeddings = result.embeddings
 | p04_retr_n01 | downstream | 0.55 |
 | [[p01_kc_information_retrieval_fundamentals]] | upstream | 0.42 |
 | rag_source_intelligence | sibling | 0.35 |
-| [[bld_collaboration_embedding_config]] | downstream | 0.30 |
+| [[bld_orchestration_embedding_config]] | downstream | 0.30 |

@@ -78,6 +78,6 @@ Output validator — checks and corrective actions applied to LLM output AFTER g
 |----------|-------------|-------|
 | [[p10_lr_output_validator_builder]] | downstream | 0.47 |
 | [[output-validator-builder]] | related | 0.34 |
-| [[p01_kc_output_validator]] | sibling | 0.33 |
-| [[bld_collaboration_output_validator]] | downstream | 0.32 |
-| [[p01_kc_validation_schema]] | sibling | 0.29 |
+| [[kc_output_validator]] | sibling | 0.33 |
+| [[bld_orchestration_output_validator]] | downstream | 0.32 |
+| [[kc_validation_schema]] | sibling | 0.29 |

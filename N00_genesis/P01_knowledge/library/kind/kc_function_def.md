@@ -97,7 +97,7 @@ A function_def is the JSON Schema declaration of a callable function that an LLM
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[function-def-builder]] | downstream | 0.43 |
-| [[bld_knowledge_card_function_def]] | sibling | 0.40 |
+| [[bld_knowledge_function_def]] | sibling | 0.40 |
 | n00_function_def_manifest | sibling | 0.37 |
-| [[bld_instruction_function_def]] | downstream | 0.33 |
+| [[bld_prompt_function_def]] | downstream | 0.33 |
 | [[bld_architecture_function_def]] | downstream | 0.32 |

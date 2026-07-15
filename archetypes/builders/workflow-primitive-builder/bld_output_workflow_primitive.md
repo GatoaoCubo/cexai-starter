@@ -101,7 +101,7 @@ composable_before: [{{primitive_types_or_omit}}]
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p03_ins_workflow_primitive_builder]] | upstream | 0.46 |
-| [[bld_knowledge_card_workflow_primitive]] | upstream | 0.44 |
+| [[bld_knowledge_workflow_primitive]] | upstream | 0.44 |
 | [[p11_qg_workflow_primitive]] | downstream | 0.42 |
 | [[bld_config_workflow_primitive]] | downstream | 0.38 |
 | [[bld_schema_workflow_primitive]] | downstream | 0.36 |

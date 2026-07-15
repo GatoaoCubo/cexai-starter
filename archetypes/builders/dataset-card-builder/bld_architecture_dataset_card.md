@@ -24,7 +24,7 @@ related:
   - bld_architecture_press_release
   - bld_architecture_contributor_guide
 ---
-## Component Inventory (the 13 ISOs)
+## Component Inventory (the 12 ISOs)
 | # | ISO File | Kind | Pillar | LLM Function | Role |
 | :-- | :--- | :--- | :--- | :--- | :--- |
 | 1 | bld_manifest_dataset_card.md | type_builder | P01 | BECOME | Identity, capabilities, routing |

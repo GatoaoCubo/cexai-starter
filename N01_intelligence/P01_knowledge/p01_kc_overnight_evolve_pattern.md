@@ -95,7 +95,7 @@ This pattern is the engine behind CEX's claim of 9.0 average quality across 3,61
 
 ## Boundary
 
-This is a [[p01_kc_knowledge_card]] -- distilled, static, versioned. NOT an instruction, template, or configuration. Implementation lives in `_tools/cex_evolve.py`. Schedule lives in `overnight.ps1` and `overnight.ps1`.  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
+This is a [[kc_knowledge_card]] -- distilled, static, versioned. NOT an instruction, template, or configuration. Implementation lives in `_tools/cex_evolve.py`. Schedule lives in `overnight.ps1` and `overnight.ps1`.  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
 
 ## Sources
 

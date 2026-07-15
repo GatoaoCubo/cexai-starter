@@ -120,4 +120,4 @@ Auth: `{{auth_method_and_config}}`
 | [[mcp-server-builder]] | upstream | 0.38 |
 | [[p11_qg_mcp_server]] | downstream | 0.37 |
 | [[bld_output_template_function_def]] | sibling | 0.36 |
-| [[bld_knowledge_card_mcp_server]] | upstream | 0.36 |
+| [[bld_knowledge_mcp_server]] | upstream | 0.36 |

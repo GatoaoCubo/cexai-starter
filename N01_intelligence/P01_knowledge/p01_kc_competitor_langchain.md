@@ -356,7 +356,7 @@ growing toward $100M as Fortune 500 penetration deepens.
 | Dimension | LangChain/LangGraph | CEX |
 |-----------|---------------------|-----|
 | Architecture | Framework + graph runtime + observability SaaS | 8-nucleus AI brain + typed knowledge factory |
-| Knowledge system | Untyped (chains = code; no artifact taxonomy) | 300 kinds x 12 pillars x 8F = typed infrastructure |
+| Knowledge system | Untyped (chains = code; no artifact taxonomy) | 125 kinds x 12 pillars x 8F = typed infrastructure |
 | Quality system | Optional (LangSmith scoring is pay-per-trace) | Mandatory (F7 GOVERN; 9.0 target; peer review) |
 | Multi-runtime | Python + JS (2 runtimes) | 4 runtimes (Claude / Codex / Gemini / Ollama) |
 | MCP support | None (no native) | N07 MCP gateway (Phase 0 preflight) |

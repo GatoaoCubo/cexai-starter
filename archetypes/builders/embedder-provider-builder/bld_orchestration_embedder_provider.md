@@ -74,8 +74,8 @@ None. embedder-provider-builder is INDEPENDENT (layer 0 infrastructure).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_vector_store]] | sibling | 0.62 |
-| [[bld_collaboration_model_provider]] | sibling | 0.45 |
-| [[bld_collaboration_embedding_config]] | sibling | 0.44 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.35 |
+| [[bld_orchestration_vector_store]] | sibling | 0.62 |
+| [[bld_orchestration_model_provider]] | sibling | 0.45 |
+| [[bld_orchestration_embedding_config]] | sibling | 0.44 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.35 |
 | [[embedder-provider-builder]] | related | 0.35 |

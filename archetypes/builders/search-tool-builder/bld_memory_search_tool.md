@@ -94,8 +94,8 @@ python _tools/cex_score.py --apply p10-lr-search-tool-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_search_tool]] | upstream | 0.49 |
+| [[bld_knowledge_search_tool]] | upstream | 0.49 |
 | [[search-tool-builder]] | upstream | 0.40 |
 | p04_search_tool_NAME | upstream | 0.36 |
 | [[p11_qg_search_tool]] | downstream | 0.33 |
-| [[bld_collaboration_search_tool]] | downstream | 0.33 |
+| [[bld_orchestration_search_tool]] | downstream | 0.33 |

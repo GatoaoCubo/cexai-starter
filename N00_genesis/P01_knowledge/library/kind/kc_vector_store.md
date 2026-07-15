@@ -79,7 +79,7 @@ A vectordb backend config tells CEX where to store and query embedding vectors. 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_vector_store]] | downstream | 0.51 |
-| [[bld_knowledge_card_vector_store]] | sibling | 0.49 |
+| [[bld_knowledge_vector_store]] | sibling | 0.49 |
 | [[p03_ins_vector_store]] | downstream | 0.48 |
 | [[vector-store-builder]] | downstream | 0.47 |
 | n00_vector_store_manifest | sibling | 0.44 |

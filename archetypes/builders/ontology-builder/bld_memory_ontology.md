@@ -93,7 +93,7 @@ python _tools/cex_score.py --apply --verbose p10_lr_ontology_builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p11_qg_ontology]] | downstream | 0.42 |
-| [[bld_knowledge_card_ontology]] | upstream | 0.41 |
-| [[bld_instruction_ontology]] | upstream | 0.37 |
+| [[bld_knowledge_ontology]] | upstream | 0.41 |
+| [[bld_prompt_ontology]] | upstream | 0.37 |
 | [[ontology-builder]] | upstream | 0.31 |
 | [[bld_schema_ontology]] | upstream | 0.28 |

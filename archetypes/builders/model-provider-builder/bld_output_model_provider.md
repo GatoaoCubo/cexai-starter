@@ -104,5 +104,5 @@ model_provider IS NOT: model_card, embedder_provider, agent, boot_config.
 | [[p03_ins_model_provider]] | upstream | 0.60 |
 | [[p11_qg_model_provider]] | downstream | 0.59 |
 | [[model-provider-builder]] | upstream | 0.57 |
-| [[bld_knowledge_card_model_provider]] | upstream | 0.57 |
-| [[bld_collaboration_model_provider]] | upstream | 0.54 |
+| [[bld_knowledge_model_provider]] | upstream | 0.57 |
+| [[bld_orchestration_model_provider]] | upstream | 0.54 |

@@ -89,8 +89,8 @@ openapi: "3.1.0"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_openapi_spec]] | upstream | 0.53 |
+| [[bld_knowledge_openapi_spec]] | upstream | 0.53 |
 | [[openapi-spec-builder]] | upstream | 0.53 |
 | [[kc_openapi_spec]] | upstream | 0.50 |
-| [[bld_instruction_openapi_spec]] | upstream | 0.40 |
-| [[bld_collaboration_openapi_spec]] | downstream | 0.39 |
+| [[bld_prompt_openapi_spec]] | upstream | 0.40 |
+| [[bld_orchestration_openapi_spec]] | downstream | 0.39 |

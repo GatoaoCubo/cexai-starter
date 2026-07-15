@@ -55,6 +55,6 @@ Role assignment is a structured approach to defining agent responsibilities and 
 |----------|-------------|-------|
 | [[role-assignment-builder]] | downstream | 0.35 |
 | n00_role_assignment_manifest | sibling | 0.33 |
-| [[bld_knowledge_card_role_assignment]] | sibling | 0.28 |
-| [[bld_collaboration_role_assignment]] | downstream | 0.25 |
+| [[bld_knowledge_role_assignment]] | sibling | 0.28 |
+| [[bld_orchestration_role_assignment]] | downstream | 0.25 |
 | [[crew-template-builder]] | downstream | 0.23 |

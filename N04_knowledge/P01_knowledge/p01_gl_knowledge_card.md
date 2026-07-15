@@ -217,8 +217,8 @@ tags: [blockchain, consensus, p01]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_knowledge_card]] | related | 0.31 |
-| [[bld_collaboration_knowledge_card]] | downstream | 0.29 |
-| [[p01_kc_capability_registry]] | downstream | 0.27 |
+| [[kc_knowledge_card]] | related | 0.31 |
+| [[bld_orchestration_knowledge_card]] | downstream | 0.29 |
+| [[kc_capability_registry]] | downstream | 0.27 |
 | n00_knowledge_card_manifest | related | 0.26 |
 | [[knowledge-card-builder]] | downstream | 0.26 |

@@ -220,10 +220,9 @@ User accepts; round 1 reaches 8.6 (clears floor); change is committed.
 **Trigger**: any request naming a video/shorts/landing deliverable in
 `_courses/video_series/` -- "novo shorts pro modulo X", "consertar acentos",
 "re-renderizar", "regenerar karaoke", "limpar pasta", "verificar entrega".
-Promoted from `.claude/skills/cexai-factory.md` (35KB, split 2026-07-03 per
-R-166 -- brand canon half moved to `N02_marketing` PM SOP-07; this SOP holds
-the EXECUTION half). The trigger skill itself stays lean at
-`.claude/skills/cexai-factory.md` (subcommand table + pointers here).
+This SOP holds the EXECUTION half of the media pipeline (split 2026-07-03 per
+R-166 skill triage). The brand-canon half and the trigger-skill's subcommand
+table are Central-only and do not ship in this starter repo.
 
 ### Pipeline (8 stages, idempotent, versioned vN -> vN.1, never overwrite)
 
@@ -342,7 +341,7 @@ degraded run.
 |------|-----------|--------|
 | 2026-07-02 | SOP-01 to SOP-05 | Initial creation, grounded in N05_operations/rules + docs/NUCLEUS_ARCHITECTURE_DOSSIER.md + CI YAML + live boot-script/MCP-config inspection. |
 | 2026-07-03 | SOP-06 | Promoted from `.claude/skills/evolve_on_low_quality.md` per R-166 skill triage (destiny b: single-nucleus operating procedure). |
-| 2026-07-03 | SOP-07 | Promoted (execution half) from `.claude/skills/cexai-factory.md` per R-166 skill triage (destiny d: SPLIT -- brand canon half went to N02 PM SOP-07). |
+| 2026-07-03 | SOP-07 | Promoted (execution half) from a Central-only skill per R-166 skill triage (destiny d: SPLIT -- brand-canon half stayed Central-only, not shipped in this starter). |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

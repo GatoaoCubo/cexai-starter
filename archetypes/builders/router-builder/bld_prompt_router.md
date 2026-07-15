@@ -124,7 +124,7 @@ Body sections (in this order):
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[router-builder]] | related | 0.57 |
-| [[bld_collaboration_router]] | related | 0.56 |
-| [[bld_knowledge_card_router]] | related | 0.54 |
+| [[bld_orchestration_router]] | related | 0.56 |
+| [[bld_knowledge_router]] | related | 0.54 |
 | [[bld_memory_router]] | downstream | 0.54 |
 | [[p11_qg_router]] | downstream | 0.51 |

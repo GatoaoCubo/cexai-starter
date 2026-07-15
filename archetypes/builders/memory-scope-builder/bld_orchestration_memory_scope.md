@@ -79,6 +79,6 @@ I specify memory scope configurations so agents and pipelines can use them.
 |----------|-------------|-------|
 | bld_collaboration_memory_type | sibling | 0.41 |
 | [[memory-scope-builder]] | upstream | 0.38 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.38 |
-| [[bld_collaboration_handoff_protocol]] | sibling | 0.35 |
-| [[bld_collaboration_output_validator]] | sibling | 0.31 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.38 |
+| [[bld_orchestration_handoff_protocol]] | sibling | 0.35 |
+| [[bld_orchestration_output_validator]] | sibling | 0.31 |

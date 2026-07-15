@@ -87,7 +87,7 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[episodic-memory-builder]] | related | 0.34 |
-| [[bld_collaboration_episodic_memory]] | related | 0.31 |
+| [[bld_orchestration_episodic_memory]] | related | 0.31 |
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.30 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.28 |

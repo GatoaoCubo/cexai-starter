@@ -97,7 +97,7 @@ An output_validator applies heuristic, structural, and semantic checks to LLM-ge
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[output-validator-builder]] | downstream | 0.39 |
-| [[bld_knowledge_card_output_validator]] | sibling | 0.38 |
+| [[bld_knowledge_output_validator]] | sibling | 0.38 |
 | n00_output_validator_manifest | sibling | 0.37 |
 | p01_kc_pillar_brief_p05_output_en | sibling | 0.35 |
-| [[p01_kc_parser]] | sibling | 0.34 |
+| [[kc_parser]] | sibling | 0.34 |

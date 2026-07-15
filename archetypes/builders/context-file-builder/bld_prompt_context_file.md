@@ -163,5 +163,5 @@ Verifiable exit: all HARD gates pass; SOFT gate failures logged with remediation
 | [[kc_context_file]] | upstream | 0.56 |
 | [[p11_qg_context_file]] | related | 0.52 |
 | [[context-file-builder]] | related | 0.52 |
-| [[bld_knowledge_card_context_file]] | related | 0.50 |
+| [[bld_knowledge_context_file]] | related | 0.50 |
 | [[bld_memory_context_file]] | downstream | 0.49 |

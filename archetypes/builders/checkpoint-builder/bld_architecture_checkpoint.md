@@ -85,7 +85,7 @@ agent         --depends-->  checkpoint (read/write during execution)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[checkpoint-builder]] | downstream | 0.76 |
-| [[bld_collaboration_checkpoint]] | downstream | 0.73 |
-| [[p01_kc_checkpoint]] | downstream | 0.63 |
-| [[bld_instruction_checkpoint]] | upstream | 0.63 |
+| [[bld_orchestration_checkpoint]] | downstream | 0.73 |
+| [[kc_checkpoint]] | downstream | 0.63 |
+| [[bld_prompt_checkpoint]] | upstream | 0.63 |
 | [[bld_schema_checkpoint]] | upstream | 0.62 |

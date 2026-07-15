@@ -101,5 +101,5 @@ A formal YAML/JSON contract specifying what data a pipeline stage, agent, or too
 | p01_kc_interface | sibling | 0.40 |
 | p01_kc_pillar_brief_p06_schema_en | sibling | 0.38 |
 | n00_input_schema_manifest | sibling | 0.38 |
-| [[p01_kc_type_def]] | sibling | 0.37 |
+| [[kc_type_def]] | sibling | 0.37 |
 | [[input-schema-builder]] | related | 0.36 |

@@ -67,7 +67,7 @@ Freshness decay:
 ## Builder Context
 
 This ISO operates within the `memory-summary-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -122,8 +122,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_memory_summary_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_memory_summary]] | upstream | 0.39 |
+| [[bld_knowledge_memory_summary]] | upstream | 0.39 |
 | [[memory-summary-builder]] | related | 0.38 |
 | bld_tools_memory_type | upstream | 0.37 |
 | bld_config_memory_type | upstream | 0.35 |
-| [[bld_collaboration_memory_summary]] | downstream | 0.33 |
+| [[bld_orchestration_memory_summary]] | downstream | 0.33 |

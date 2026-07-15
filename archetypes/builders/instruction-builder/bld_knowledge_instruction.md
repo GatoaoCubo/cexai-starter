@@ -93,8 +93,8 @@ Instructions are operational recipes that transform a defined start state into a
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_instruction]] | downstream | 0.38 |
+| [[bld_prompt_instruction]] | downstream | 0.38 |
 | [[instruction-builder]] | downstream | 0.35 |
-| [[p01_kc_instruction]] | sibling | 0.34 |
-| [[bld_instruction_action_prompt]] | downstream | 0.31 |
+| [[kc_instruction]] | sibling | 0.34 |
+| [[bld_prompt_action_prompt]] | downstream | 0.31 |
 | [[action-prompt-builder]] | downstream | 0.31 |

@@ -84,6 +84,6 @@ guardrail       --depends-->  extensible
 |----------|-------------|-------|
 | [[enum-def-builder]] | upstream | 0.46 |
 | [[p10_lr_enum_def_builder]] | downstream | 0.38 |
-| [[bld_instruction_enum_def]] | upstream | 0.37 |
+| [[bld_prompt_enum_def]] | upstream | 0.37 |
 | [[p11_qg_enum_def]] | downstream | 0.36 |
-| [[bld_collaboration_enum_def]] | downstream | 0.36 |
+| [[bld_orchestration_enum_def]] | downstream | 0.36 |

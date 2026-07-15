@@ -101,6 +101,6 @@ related:
 |----------|-------------|-------|
 | [[bld_schema_type_def]] | upstream | 0.49 |
 | [[bld_schema_validation_schema]] | upstream | 0.39 |
-| [[bld_knowledge_card_type_def]] | upstream | 0.36 |
+| [[bld_knowledge_type_def]] | upstream | 0.36 |
 | [[p03_ins_type_def]] | upstream | 0.36 |
 | p03_constraint_brand_config_n06 | upstream | 0.33 |

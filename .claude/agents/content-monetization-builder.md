@@ -88,6 +88,6 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | p03_sp_builder_nucleus | related | 0.32 |
 | kind-builder | related | 0.32 |
-| [[p01_kc_content_monetization]] | related | 0.26 |
+| [[kc_content_monetization]] | related | 0.26 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.26 |
 | [[system-prompt-builder]] | related | 0.26 |

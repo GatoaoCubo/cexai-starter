@@ -81,7 +81,7 @@ python _tools/cex_score.py --apply p10-lr-decision-record-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[decision-record-builder]] | upstream | 0.54 |
-| [[bld_knowledge_card_decision_record]] | upstream | 0.51 |
-| [[bld_instruction_decision_record]] | upstream | 0.47 |
+| [[bld_knowledge_decision_record]] | upstream | 0.51 |
+| [[bld_prompt_decision_record]] | upstream | 0.47 |
 | [[bld_architecture_decision_record]] | upstream | 0.46 |
-| [[p01_kc_decision_record]] | upstream | 0.43 |
+| [[kc_decision_record]] | upstream | 0.43 |

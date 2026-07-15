@@ -64,8 +64,8 @@ I define persona, ALWAYS/NEVER constraints, tone, knowledge boundaries, and outp
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | sibling | 0.52 |
+| [[bld_orchestration_agent]] | sibling | 0.52 |
 | [[system-prompt-builder]] | related | 0.41 |
-| [[bld_collaboration_knowledge_card]] | sibling | 0.38 |
-| [[bld_collaboration_action_prompt]] | sibling | 0.38 |
+| [[bld_orchestration_knowledge_card]] | sibling | 0.38 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.38 |
 | [[agent-builder]] | upstream | 0.36 |

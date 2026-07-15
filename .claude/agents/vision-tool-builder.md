@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[vision-tool-builder]] | related | 0.33 |
 | p03_sp_builder_nucleus | related | 0.31 |
 | kind-builder | related | 0.31 |
-| [[bld_collaboration_vision_tool]] | related | 0.30 |
+| [[bld_orchestration_vision_tool]] | related | 0.30 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.27 |

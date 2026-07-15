@@ -93,7 +93,7 @@ Agent_group specs define autonomous processing units in multi-agent architecture
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent_card]] | downstream | 0.51 |
+| [[bld_orchestration_agent_card]] | downstream | 0.51 |
 | [[bld_memory_agent_card]] | downstream | 0.49 |
 | [[agent-card-builder]] | downstream | 0.46 |
 | [[p03_ins_agent_card_builder]] | downstream | 0.43 |

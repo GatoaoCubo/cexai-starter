@@ -99,5 +99,5 @@ A fallback_chain defines an ordered sequence of LLM models to try when the prima
 | p02_fb_model_cascade | related | 0.43 |
 | [[fallback-chain-builder]] | related | 0.43 |
 | [[bld_architecture_fallback_chain]] | downstream | 0.35 |
-| [[bld_collaboration_fallback_chain]] | downstream | 0.35 |
-| [[bld_instruction_fallback_chain]] | downstream | 0.35 |
+| [[bld_orchestration_fallback_chain]] | downstream | 0.35 |
+| [[bld_prompt_fallback_chain]] | downstream | 0.35 |

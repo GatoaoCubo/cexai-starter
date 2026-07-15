@@ -104,5 +104,5 @@ milliseconds from the durable Collections, without LLM inference cost on every l
 |----------|-------------|-------|
 | [[kc_user_model]] | sibling | 0.72 |
 | [[user-model-builder]] | downstream | 0.58 |
-| [[bld_collaboration_user_model]] | downstream | 0.51 |
+| [[bld_orchestration_user_model]] | downstream | 0.51 |
 | [[bld_architecture_user_model]] | downstream | 0.51 |

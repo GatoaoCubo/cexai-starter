@@ -75,5 +75,5 @@ Rule: id MUST equal filename stem.
 | [[bld_config_agent]] | sibling | 0.31 |
 | [[bld_schema_system_prompt]] | upstream | 0.31 |
 | [[bld_config_prompt_version]] | sibling | 0.30 |
-| [[bld_knowledge_card_system_prompt]] | upstream | 0.29 |
+| [[bld_knowledge_system_prompt]] | upstream | 0.29 |
 | bld_config_prompt_compiler | sibling | 0.27 |

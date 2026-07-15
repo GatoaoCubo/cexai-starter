@@ -71,6 +71,6 @@ learning_record  --signals-->  memory_update
 |----------|-------------|-------|
 | [[learning-record-builder]] | downstream | 0.48 |
 | [[bld_architecture_session_state]] | sibling | 0.38 |
-| [[bld_collaboration_learning_record]] | downstream | 0.35 |
+| [[bld_orchestration_learning_record]] | downstream | 0.35 |
 | p01_kc_cex_lp10_memory | upstream | 0.32 |
-| [[p01_kc_learning_record]] | downstream | 0.32 |
+| [[kc_learning_record]] | downstream | 0.32 |

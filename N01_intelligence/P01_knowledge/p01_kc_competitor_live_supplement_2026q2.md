@@ -213,7 +213,7 @@ related:
 | Snapshotting | Durable state with rehydration |
 | Guardrails | Prompt-injection and exfiltration prevention |
 
-**CEX angle:** OpenAI SDK's AGENTS.md + skills + MCP mirrors what CEX already has (CLAUDE.md + skills + MCP gateway). The difference: CEX has 300 typed kinds, 12 pillars, and 8F pipeline. OpenAI SDK is a bare harness -- powerful but unstructured.
+**CEX angle:** OpenAI SDK's AGENTS.md + skills + MCP mirrors what CEX already has (CLAUDE.md + skills + MCP gateway). The difference: CEX has 125 typed kinds, 12 pillars, and 8F pipeline. OpenAI SDK is a bare harness -- powerful but unstructured.
 
 
 | Component | Implementation |
@@ -227,7 +227,7 @@ related:
 
 
 |-----------|-------------|-----|
-| Knowledge persistence | Markdown skills (untyped) | 300 typed kinds x 12 pillars |
+| Knowledge persistence | Markdown skills (untyped) | 125 typed kinds x 12 pillars |
 | Memory model | SQLite FTS5 keyword search | TF-IDF + LLM reranking + entity memory |
 | Quality gates | None (self-assessed) | 8F pipeline + H01-H07 + cex_score.py |
 | Multi-runtime | Single (Python + OpenRouter) | 4 runtimes (Claude/Codex/Gemini/Ollama) |

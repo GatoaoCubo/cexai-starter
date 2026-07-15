@@ -100,6 +100,6 @@ Libraries: `{{pre_installed_libraries_if_any}}`
 |----------|-------------|-------|
 | [[p11_qg_code_executor]] | downstream | 0.42 |
 | [[bld_schema_code_executor]] | downstream | 0.38 |
-| [[bld_instruction_code_executor]] | upstream | 0.37 |
+| [[bld_prompt_code_executor]] | upstream | 0.37 |
 | [[code-executor-builder]] | upstream | 0.37 |
 | p04_exec_python_sandbox | upstream | 0.36 |

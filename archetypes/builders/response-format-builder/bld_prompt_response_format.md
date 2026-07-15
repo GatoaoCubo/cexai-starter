@@ -128,6 +128,6 @@ Body sections (in this order):
 |----------|-------------|-------|
 | [[response-format-builder]] | related | 0.50 |
 | [[bld_architecture_response_format]] | downstream | 0.49 |
-| [[bld_collaboration_response_format]] | related | 0.49 |
+| [[bld_orchestration_response_format]] | related | 0.49 |
 | [[bld_memory_response_format]] | downstream | 0.41 |
-| [[bld_knowledge_card_response_format]] | related | 0.39 |
+| [[bld_knowledge_response_format]] | related | 0.39 |

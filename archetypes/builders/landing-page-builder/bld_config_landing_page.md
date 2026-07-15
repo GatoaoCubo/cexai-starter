@@ -102,6 +102,6 @@ python _tools/cex_score.py --apply bld-config-landing-page.md
 |----------|-------------|-------|
 | [[bld_schema_landing_page]] | related | 0.51 |
 | [[bld_tools_landing_page]] | upstream | 0.41 |
-| [[bld_collaboration_landing_page]] | downstream | 0.38 |
+| [[bld_orchestration_landing_page]] | downstream | 0.38 |
 | [[bld_memory_landing_page]] | downstream | 0.37 |
 | tpl_validation_schema | related | 0.37 |

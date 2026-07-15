@@ -66,6 +66,6 @@ I formalize fundamental truths so governance builders can reference immutable pr
 |----------|-------------|-------|
 | [[axiom-builder]] | upstream | 0.49 |
 | [[bld_architecture_axiom]] | upstream | 0.41 |
-| [[p01_kc_axiom]] | upstream | 0.41 |
-| [[bld_collaboration_guardrail]] | sibling | 0.40 |
-| [[bld_knowledge_card_axiom]] | upstream | 0.39 |
+| [[kc_axiom]] | upstream | 0.41 |
+| [[bld_orchestration_guardrail]] | sibling | 0.40 |
+| [[bld_knowledge_axiom]] | upstream | 0.39 |

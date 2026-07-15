@@ -87,4 +87,4 @@ linked_artifacts:
 | [[p11_qg_scoring-rubric]] | downstream | 0.32 |
 | [[bld_schema_scoring_rubric]] | downstream | 0.31 |
 | [[bld_architecture_scoring_rubric]] | downstream | 0.27 |
-| [[bld_knowledge_card_scoring_rubric]] | upstream | 0.26 |
+| [[bld_knowledge_scoring_rubric]] | upstream | 0.26 |

@@ -77,7 +77,7 @@ related:
 | Bot-generated stars | 4.5M fake stars detected by GitHub (Socket Inc/CMU study, 2025); GitHub's fraud detection can suppress real discovery | Framework X gained 10K stars overnight; all from accounts with no avatar, no repos, no followers -- algorithmic suppression followed | Real stars compound: they fork, contribute, report issues, create tutorials |
 | Posting without a polished README | Developers decide in 3 seconds whether to explore further | Repos with no demo GIF, no quick start, no value prop get 60%+ bounce rate | README must have: 1-sentence value prop, demo GIF, 3-line quick start, badge wall |
 | Arguing with critics | Public arguments amplify negative coverage and signal insecurity | Framework maintainers defending against "why not just use LangChain" comments created viral negative threads | Acknowledge valid criticism, provide data, move on. "That's fair feedback -- here's what we optimize for differently:" |
-| Claiming features you do not have yet | Developer communities verify claims within hours | Frameworks claiming "production-ready" with no test coverage get exposed on HN | Only claim what the repo demonstrates. "300 kinds" is verifiable. "Enterprise-ready" requires proof |
+| Claiming features you do not have yet | Developer communities verify claims within hours | Frameworks claiming "production-ready" with no test coverage get exposed on HN | Only claim what the repo demonstrates. "125 kinds" is verifiable. "Enterprise-ready" requires proof |
 | Spamming WhatsApp/Telegram groups (BR) | BR communities are tight-knit; spam is identified instantly and gets you banned permanently | Automated messages to 20+ Telegram groups = blacklisted across the ecosystem | Engage in 3-5 groups organically for 2+ weeks before sharing anything CEX-related |
 
 ### The Credibility Window
@@ -160,7 +160,7 @@ Every community gives a new member approximately 3-5 interactions before judging
 | Day | Channel | Content | Format | Who Posts | Goal |
 |-----|---------|---------|--------|-----------|------|
 | Mon | GitHub | Polish README final version | README update | Core team | Convert visitors to stars |
-| Tue | r/ClaudeAI | "I built an AI brain on top of Claude Code -- 300 typed artifact kinds, quality gates, multi-runtime. Here's what I learned." | Experience post (1,500 words) | Founder | 50-100 stars, 20+ comments |
+| Tue | r/ClaudeAI | "I built an AI brain on top of Claude Code -- 125 typed artifact kinds, quality gates, multi-runtime. Here's what I learned." | Experience post (1,500 words) | Founder | 50-100 stars, 20+ comments |
 | Wed | r/LocalLLaMA | "CEX runs on Ollama: your knowledge stays local. Here's a typed knowledge system that works offline." | Technical post with benchmarks | Founder | 50-100 stars, sovereignty discussion |
 | Thu | Twitter/X | Thread: "Every AI agent forgets. CEX remembers. Here's how:" (5-tweet thread with demo GIF) | Thread | Founder personal | 200+ impressions, 20-50 stars |
 | Fri | Discord | Open doors; post welcome message; invite early r/ClaudeAI and r/LocalLLaMA responders | Community launch | Core team | 30-50 Discord members |
@@ -182,7 +182,7 @@ Every community gives a new member approximately 3-5 interactions before judging
 |-----|---------|---------|--------|-----------|------|
 | Mon | Preparation | Prepare Show HN post text and Product Hunt page materials | Internal | Core team | Ensure 50+ stars baseline before launch |
 | Tue | Product Hunt | Launch CEX on Product Hunt (aim for Top 5 Product of the Day) | Full product page with demo video, screenshots, testimonials | Core team | 200-800 stars, 1,000-3,000 visits |
-| Wed | Hacker News | "Show HN: CEX -- a typed knowledge system for LLM agents (300 kinds, 8F pipeline, 4 runtimes)" | Show HN submission (12-17 UTC) | Founder | 150-2,000 stars (top 10%: 500-2,000) |
+| Wed | Hacker News | "Show HN: CEX -- a typed knowledge system for LLM agents (125 kinds, 8F pipeline, 4 runtimes)" | Show HN submission (12-17 UTC) | Founder | 150-2,000 stars (top 10%: 500-2,000) |
 | Wed | All | Respond to every HN comment within 3 hours | Aggressive engagement | Founder | HN score boost from engagement |
 | Thu | Twitter/X | Amplification thread: "We hit Hacker News front page. Here's the real story behind CEX:" | Behind-the-scenes thread | Founder personal | Capture HN momentum |
 | Fri | r/AutoGPT | "7 autonomous nuclei that govern each other's output quality -- here's how CEX rethinks multi-agent" | Technical post | Founder | 20-50 stars from autonomous agent enthusiasts |
@@ -195,7 +195,7 @@ Every community gives a new member approximately 3-5 interactions before judging
 | Mon | Blog (Medium/Hashnode) | "How We Built CEX: From 5 Words to 300 Typed Knowledge Artifacts" | Long-form narrative (2,500 words) | Founder | Evergreen SEO, 20-200 stars |
 | Tue | Discord | First "Office Hours" live session -- demo + Q&A | Live event (1 hour) | Founder + core team | Deepen community engagement; 10-20 new active members |
 | Wed | LinkedIn | Article: "Why Your AI Agent Framework Needs Quality Governance" (enterprise angle) | LinkedIn article | Founder | Enterprise visibility, 3-5 inbound inquiries |
-| Thu | r/MachineLearning (monthly self-promo thread) | "CEX: typed knowledge system for AI agents -- 300 artifact kinds, 8F pipeline, 4 runtimes" | Self-promotion thread post | Founder | Compliant exposure to 3M subscribers |
+| Thu | r/MachineLearning (monthly self-promo thread) | "CEX: typed knowledge system for AI agents -- 125 artifact kinds, 8F pipeline, 4 runtimes" | Self-promotion thread post | Founder | Compliant exposure to 3M subscribers |
 | Fri | GitHub Awesome Lists | Submit to: awesome-agents, awesome-llm, awesome-ai-tools, awesome-python | PR submissions | Core team | Long-tail passive discovery (20-200 stars over time) |
 
 ### Weeks 5-8: Amplification
@@ -236,7 +236,7 @@ Every AI agent forgets.
 CEX remembers.
 
 I built a typed knowledge system where intelligence compounds.
-300 artifact kinds. 8-function reasoning pipeline. 4 runtimes.
+125 artifact kinds. 8-function reasoning pipeline. 4 runtimes.
 
 Here's what that means for you: [thread]
 
@@ -262,7 +262,7 @@ LangChain: untyped chains (code)
 CrewAI: untyped roles (ad hoc)
 OpenClaw: untyped skills (13K, 20% compromised)
 
-CEX: 300 TYPED kinds x 12 pillars
+CEX: 125 TYPED kinds x 12 pillars
 Every artifact has: schema, quality score, compilation
 
 Typed knowledge > untyped output.
@@ -290,7 +290,7 @@ Star the repo: [link]
 Join Discord: [link]
 Read the architecture: [link]
 
-What would YOU build with 300 typed artifact kinds?
+What would YOU build with 125 typed artifact kinds?
 ```
 
 ### Reddit Post Template (r/ClaudeAI)
@@ -306,8 +306,8 @@ it evaporates. Next session starts from zero.
 
 **What CEX Does Differently**:
 
-1. **300 typed artifact kinds**: Every output has a kind ([[p01_kc_knowledge_card]], landing_page,
- [[p01_kc_agent]], workflow...), a pillar (P01-P12), and a schema. This means your AI output is
+1. **125 typed artifact kinds**: Every output has a kind ([[kc_knowledge_card]], landing_page,
+ [[kc_agent]], workflow...), a pillar (P01-P12), and a schema. This means your AI output is
  searchable, compilable, and compounding.
 
 2. **8F mandatory reasoning pipeline**: Every task passes through 8 functions --
@@ -342,7 +342,7 @@ Happy to answer questions about the architecture. MIT license, self-hosted.
 Hey everyone! I'm [name], builder of CEX -- a typed knowledge system for LLM agents.
 
 Quick context: CEX treats AI output as typed infrastructure, not disposable chat.
-300 artifact kinds, 12 domain pillars, mandatory quality gates.
+125 artifact kinds, 12 domain pillars, mandatory quality gates.
 
 I'm here because [community name] is where the builders are, and I'd love to
 learn from this community's experience with [topic].
@@ -389,7 +389,7 @@ SECTION 1: The Problem (300 words)
 - Knowledge doesn't compound
 
 SECTION 2: The Architecture Decision (500 words)
-- Why typed knowledge (300 kinds x 12 pillars)
+- Why typed knowledge (125 kinds x 12 pillars)
 - Why mandatory reasoning (8F pipeline)
 - Why multi-runtime (Claude/Gemini/Codex/Ollama)
 - Why quality gates (9.0 target, F7 GOVERN)
@@ -415,7 +415,7 @@ TOTAL: ~1,800 words. Cross-post to Dev.to, Hashnode, Medium.
 ### Newsletter Pitch Template
 
 ```
-Subject: New category in AI tooling: typed knowledge systems (300 kinds, 4 runtimes)
+Subject: New category in AI tooling: typed knowledge systems (125 kinds, 4 runtimes)
 
 Hi [editor name],
 
@@ -424,7 +424,7 @@ untyped chains or ad hoc agent outputs, CEX produces typed, quality-gated
 knowledge artifacts that compound in your git repo.
 
 Why this matters for [newsletter name]'s audience:
-- 300 artifact kinds (from knowledge_card to landing_page to workflow)
+- 125 artifact kinds (from knowledge_card to landing_page to workflow)
 - Mandatory 8-function reasoning pipeline (quality floor: 9.0/10)
 - Runs on Claude, Gemini, Codex, and Ollama (no vendor lock-in)
 - MIT license, self-hosted, zero per-operation fees
@@ -480,7 +480,7 @@ Brazilian communities require a fundamentally different approach from global Eng
 | Portuguese first | All BR community content must be in Portuguese; English posts are ignored or viewed as elitist | Posting the English README | Write a dedicated PT-BR blog post and community introduction |
 | Personal relationships matter | BR communities trust people, not brands | "CEX is a typed knowledge system..." (corporate) | "Oi pessoal, eu construi uma ferramenta que..." (personal) |
 | WhatsApp is for relationships | WA groups expect conversational, not broadcast-style posts | Dropping a link without context | Participating in conversations for days before sharing anything |
-| "Jeitinho" (creative pragmatism) | BR developers value practical shortcuts over theoretical architecture | Leading with "300 kinds x 12 pillars x 8F pipeline" | Leading with "faz uma landing page com 5 palavras" |
+| "Jeitinho" (creative pragmatism) | BR developers value practical shortcuts over theoretical architecture | Leading with "125 kinds x 12 pillars x 8F pipeline" | Leading with "faz uma landing page com 5 palavras" |
 | Community loyalty | Once you earn trust in a BR group, members actively promote you | Spreading thin across 20+ groups | Deep engagement in 5-7 groups |
 | Influencer respect | BR tech influencers (Filipe Deschamps, Rocketseat founders) have outsized impact | Ignoring BR influencer ecosystem | Identify 3-5 BR AI influencers and build relationships |
 
@@ -572,7 +572,7 @@ Repo: [link]
 |---|------|-------------|--------|------------|
 | 1 | Hacker News post gets zero traction | Medium | High | Pre-seed 50+ stars before posting; post at 12-17 UTC on Tue-Wed; have engaging comment responses ready. Fallback: resubmit with different angle after 2 weeks |
 | 2 | Reddit posts flagged as self-promotion | Medium | Medium | Build 2-4 weeks of genuine participation history before posting; post in self-promotion threads where available; frame as experience sharing, not product launch |
-| 3 | "300 kinds is overwhelming" first impression | High | High | README leads with "5 words in, professional artifact out" -- hide complexity behind simplicity. Show 3-5 most useful kinds, not all 300 |
+| 3 | "125 kinds is overwhelming" first impression | High | High | README leads with "5 words in, professional artifact out" -- hide complexity behind simplicity. Show 3-5 most useful kinds, not all 125 |
 | 4 | Critics compare star count to LangChain/CrewAI | High | Medium | Preempt: "We're pre-launch. Here's what we have that they don't: [typed knowledge, quality gates, multi-runtime]." Position production metrics over vanity metrics |
 | 5 | No community tutorials emerge organically | Medium | High | Make CEX trivially demo-able (15-min first artifact path). Create 3 example tutorials yourself. Seed "Good First Issue" labels for contributor onboarding |
 | 6 | BR community sees CEX as "gringo tool" | Low | Medium | All BR content in Portuguese. Lead with personal story. Engage in BR communities for 2+ weeks before any CEX mention. Leverage CrewAI's Joao Moura as proof of BR market appetite |

@@ -11,10 +11,10 @@ tags: [seed-intel, positioning, strategy]
 when_to_use: "When preparing investor pitches, README positioning, or conference talks; when user asks 'what makes CEX different'; when comparing against any specific competitor framework; when drafting marketing copy that needs technical backing"
 axioms:
  - "ALWAYS position CEX as a new category ('Typed Knowledge System') rather than a better version of an existing category -- category creation beats category competition"
- - "ALWAYS back positioning claims with quantitative data from competitor KCs: kind count (300 vs. CrewAI's 2 primitives), governance depth (8F vs. no pipeline), provider coverage (4 runtimes vs. single-provider lock-in)"
+ - "ALWAYS back positioning claims with quantitative data from competitor KCs: kind count (125 vs. CrewAI's 2 primitives), governance depth (8F vs. no pipeline), provider coverage (4 runtimes vs. single-provider lock-in)"
  - "NEVER claim superiority in areas where competitors genuinely lead -- OpenClaw has 335K stars, CrewAI has 60% Fortune 500, LangChain has 1B+ downloads; CEX's advantage is architectural depth, not adoption"
  - "NEVER use the word 'agent' as primary identity -- CEX is an AI brain, not an agent; the positioning document must reinforce this distinction"
-tldr: "CEX occupies no existing market category (not framework, not platform, not gateway, not toolkit) -- it defines 'Typed Knowledge System for LLM Agents' with 300 kinds, 12 pillars, and 8F pipeline as differentiators against 10 tracked competitors across 4 established categories"
+tldr: "CEX occupies no existing market category (not framework, not platform, not gateway, not toolkit) -- it defines 'Typed Knowledge System for LLM Agents' with 125 kinds, 12 pillars, and 8F pipeline as differentiators against 10 tracked competitors across 4 established categories"
 8f: "F3_inject"
 keywords: [langchain, crewai, openclaw, openai agents sdk, rag-first framework, agent framework, agent orchestration platform, self-improving agent]
 related:
@@ -74,7 +74,7 @@ marketing risk.
 
 **Why CEX is not just a "Toolkit":**
 - Toolkits (OpenAI SDK, Pydantic AI) provide typed primitives. CEX provides a complete
- typed KNOWLEDGE system: 300 kinds, 12 pillars, quality gates, self-improvement.
+ typed KNOWLEDGE system: 125 kinds, 12 pillars, quality gates, self-improvement.
 
 **CEX requires a new category.** The three candidate categories analyzed below are:
 
@@ -103,7 +103,7 @@ marketing risk.
  (Framework) | | | (Platform)
  |
  LangChain (124K) | *** CEX ***
- [Graphs + chains, | [300 kinds, 12 pillars,
+ [Graphs + chains, | [125 kinds, 12 pillars,
  LCEL, ecosystem] | 8F pipeline, 4 runtimes]
  |
  Pydantic AI (16.6K) | LlamaIndex (48.9K)
@@ -138,7 +138,7 @@ No competitor occupies this position. Here is why:
 | OpenAI SDK | Code-first, minimal; no typing beyond guardrails |
 
 **The gap is real.** No framework in the market combines:
-1. A typed knowledge taxonomy (300 kinds, 12 pillars)
+1. A typed knowledge taxonomy (125 kinds, 12 pillars)
 2. Multi-agent orchestration (7 nuclei with sin-driven specialization)
 3. Quality governance (8F pipeline, 9.0 target, peer review scoring)
 4. Multi-runtime sovereignty (Claude + Codex + Gemini + Ollama)
@@ -172,19 +172,19 @@ domain-specialized nuclei.
 
 | # | Feature | Unique to CEX? | Nearest Competitor | Gap Size | Aha-Moment Score (1-10) | Demo-able? | CTO-Eval? |
 |---|---------|----------------|-------------------|----------|------------------------|------------|-----------|
-| 1 | 300-Kind Typed Knowledge Taxonomy | YES | Pydantic AI (types I/O, not knowledge) | LARGE | 9 | YES (show kinds_meta.json, builder ISOs) | YES |
+| 1 | 125-Kind Typed Knowledge Taxonomy | YES | Pydantic AI (types I/O, not knowledge) | LARGE | 9 | YES (show kinds_meta.json, builder ISOs) | YES |
 | 2 | 8F Mandatory Reasoning Pipeline | YES | None (all competitors reason ad hoc) | VERY LARGE | 8 | YES (show 8F trace output) | YES |
 | 4 | 7 Sin-Driven Nuclei | YES | CrewAI (roles, but generic and ad hoc) | LARGE | 7 | MODERATE (explain sin lenses) | YES |
 | 5 | GDP (Guided Decision Protocol) | YES | None | LARGE | 7 | YES (show decision manifest) | YES |
 | 6 | Quality Gate System (F7 GOVERN, 9.0 target) | YES | Pydantic AI (pass/fail validation only) | LARGE | 7 | YES (show cex_score.py output) | YES |
 | 8 | Convention-over-Configuration (12 pillars) | YES | None | LARGE | 6 | YES (show pillar directory structure) | YES |
 | 9 | Brand Injection (brand_config.yaml) | YES | None | MODERATE | 5 | YES (show branded output vs. generic) | MODERATE |
-| 10 | 302 Builder Sub-Agents | YES | None at this scale | VERY LARGE | 5 | MODERATE (impressive number, hard to demo quickly) | YES |
+| 10 | 119 Builder Sub-Agents | YES | None at this scale | VERY LARGE | 5 | MODERATE (impressive number, hard to demo quickly) | YES |
 
 ### Analysis by Audience
 
 **For an influencer video (demo-ability is king):**
-Top 3: (1) 300-kind taxonomy -- visually impressive JSON + builder ISOs, (2) 8F trace output --
+Top 3: (1) 125-kind taxonomy -- visually impressive JSON + builder ISOs, (2) 8F trace output --
 shows the pipeline reasoning live, (3) 4-runtime dispatch -- same task running on Claude AND
 Gemini AND Ollama simultaneously.
 
@@ -201,7 +201,7 @@ ISOs -- 12 ISOs per kind means the system knows HOW to build before the develope
 
 The single most powerful differentiator is the combination of items 1 + 2 + 3:
 
-**"A typed knowledge system (300 kinds) with mandatory quality governance (8F pipeline)
+**"A typed knowledge system (125 kinds) with mandatory quality governance (8F pipeline)
 that runs on any LLM provider (4 runtimes)."**
 
 No competitor combines all three: Pydantic AI has typing but no multi-nucleus orchestration,
@@ -239,7 +239,7 @@ Most AI agent frameworks are tool kits. They give you chains, graphs, or roles, 
 to assemble them into something useful. The result is fragile: each project starts from zero,
 knowledge evaporates between sessions, quality is optional, and you are locked into one LLM
 provider's API. CEX inverts this model. Instead of building blocks, CEX provides a complete
-typed knowledge infrastructure: 300 artifact kinds organized across 12 domain pillars, with a
+typed knowledge infrastructure: 125 artifact kinds organized across 12 domain pillars, with a
 mandatory 8-function reasoning pipeline (8F) that ensures every artifact passes quality gates
 before it enters your repository.
 
@@ -284,7 +284,7 @@ The AI industry sells agents -- software that completes a task and forgets. CEX 
 -- infrastructure that thinks, learns, and compounds. The distinction matters: an agent gives
 you output. A brain gives you accumulating organizational intelligence. CEX achieves this
 through three architectural decisions no competitor has combined. First, a typed knowledge
-system: 300 artifact kinds across 12 domain pillars, each with schema validation and quality
+system: 125 artifact kinds across 12 domain pillars, each with schema validation and quality
 scoring. Second, a mandatory reasoning protocol (8F) that ensures every artifact passes
 through 8 functions -- from constraint resolution to governance -- before being committed.
 Third, multi-runtime sovereignty: CEX runs on Claude, Codex, Gemini, and Ollama, ensuring your
@@ -310,9 +310,9 @@ questions." This is AI that builds your organization's knowledge base while you 
 
 **Elevator pitch (30s, EN):**
 "Remember when Rails showed the world that you do not need to configure everything from
-scratch? CEX does the same for AI agents. Drop into any of the 300 artifact kinds and the
+scratch? CEX does the same for AI agents. Drop into any of the 125 artifact kinds and the
 system already knows: which of the 12 domain pillars it belongs to, which builder to load,
-which quality gates to apply, and how to compile the output. 300+ builders, each with 12
+which quality gates to apply, and how to compile the output. 119 builders, each with 12
 specialized ISOs, do the heavy lifting. You focus on intent; CEX handles structure.
 Convention over configuration -- but for AI."
 
@@ -320,7 +320,7 @@ Convention over configuration -- but for AI."
 "Lembra quando o Rails mostrou ao mundo que voce nao precisa configurar tudo do zero? CEX faz
 o mesmo para agentes de IA. Entre em qualquer um dos 300 tipos de artefatos e o sistema ja
 sabe: a qual dos 12 pilares de dominio pertence, qual builder carregar, quais gates de
-qualidade aplicar, e como compilar a saida. 300+ builders, cada um com 12 ISOs
+qualidade aplicar, e como compilar a saida. 119 builders, cada um com 12 ISOs
 especializados, fazem o trabalho pesado. Voce foca na intencao; CEX cuida da estrutura.
 Convencao sobre configuracao -- mas para IA."
 
@@ -329,7 +329,7 @@ In 2004, Ruby on Rails showed the software industry that convention over configu
 produces faster, more consistent results than assembling everything from scratch. In 2026, the
 AI agent space faces the same problem Rails solved: every project starts from zero, every
 developer reinvents structure, and quality depends entirely on individual discipline. CEX
-applies the Rails pattern to AI agents. 300 typed artifact kinds, 12 domain pillars, and 302
+applies the Rails pattern to AI agents. 125 typed artifact kinds, 12 domain pillars, and 119
 specialized builders create a factory floor where the developer's job is to express intent, not
 to build infrastructure. You say "landing page" -- CEX knows it is kind `landing_page`, pillar
 P05, loads the landing-page builder's 12 ISOs, injects brand context, reasons through 8F, and
@@ -355,7 +355,7 @@ extensible where it does not, and productive from the first command.
 | Misunderstanding | Reality | How Competitors Handle This |
 |-----------------|---------|----------------------------|
 | "It is just another agent framework" | CEX is a typed knowledge system, not a framework | CrewAI escaped "framework" by using "crew" metaphor; CEX needs equivalent escape velocity |
-| "300 kinds is overwhelming" | Developers only touch 3-5 kinds in their first session | LangChain has 700+ integrations but leads with 3 (chain, retrieval, agent) |
+| "125 kinds is overwhelming" | Developers only touch 3-5 kinds in their first session | LangChain has 700+ integrations but leads with 3 (chain, retrieval, agent) |
 | "12 pillars is enterprise bloat" | Pillars are the directory convention -- like Rails `/app/models` vs `/app/views` | Rails solved this by making `rails new` scaffold everything automatically |
 | "8F is too process-heavy" | 8F runs automatically -- the developer sees the trace, not the steps | CrewAI hides complexity behind role/goal/backstory simplicity |
 | "7 nuclei with sin names is weird" | Sin lenses are internal optimization bias, not user-facing | CrewAI uses "agents" and "crews" -- familiar metaphors that hide internal complexity |
@@ -368,7 +368,7 @@ extensible where it does not, and productive from the first command.
 | No 5-minute demo path | CRITICAL | Create a "first artifact in 5 commands" README section |
 | README leads with architecture, not value | HIGH | Lead with "what it does for YOU", not "how it works" |
 | No visual demo (GIF/video) | HIGH | 30-second GIF showing `/build landing_page` producing a full artifact |
-| "300 kinds" number without context | MEDIUM | Frame as "300 pre-built blueprints" or "300 artifact recipes" |
+| "125 kinds" number without context | MEDIUM | Frame as "125 pre-built blueprints" or "125 artifact recipes" |
 | "Sin-driven nuclei" without explanation | MEDIUM | Either explain briefly or hide from first-touch materials |
 | No comparison table vs. known frameworks | MEDIUM | Add "CEX vs LangChain vs CrewAI" 5-row table in README |
 | Lack of GitHub stars | LOW-MEDIUM | Expected at launch; mitigate with production metrics ("X artifacts compiled") |
@@ -389,7 +389,7 @@ entry point. CEX must do the same.
 
 | Layer | What CEX Shows | What CEX Hides |
 |-------|---------------|----------------|
-| README hero | "5 words in, professional artifact out" | 300 kinds, 12 pillars, 8F, 7 nuclei |
+| README hero | "5 words in, professional artifact out" | 125 kinds, 12 pillars, 8F, 7 nuclei |
 | First command | `/build landing_page` | Builder ISOs, F1-F8 trace, quality gates |
 | First result | A complete, production-ready artifact | Compilation, indexing, signaling |
 | Second session | The artifact improved itself | learning_record, memory_update, cex_evolve |
@@ -488,7 +488,7 @@ screenshot or OpenClaw's "works while you sleep" status bar.
 
 | Capability | CEX | LangChain | CrewAI | OpenClaw | Hermes | OpenAI SDK | Pydantic AI | MetaGPT | LlamaIndex | AutoGen | Agency Swarm |
 |---------|-----|-----------|--------|----------|--------|------------|-------------|---------|------------|---------|-------------|
-| Typed knowledge taxonomy | 300 kinds | NO | NO | NO | NO | NO | I/O types only | NO | NO | NO | NO |
+| Typed knowledge taxonomy | 125 kinds | NO | NO | NO | NO | NO | I/O types only | NO | NO | NO | NO |
 | Mandatory reasoning pipeline | 8F (F1-F8) | NO | NO | NO | NO | NO | NO | SOP (fixed) | NO | NO | NO |
 | Quality scoring system | 9.0 target, 5D | Optional (LangSmith) | NO | NO | NO | NO | Pass/fail | NO | NO | NO | NO |
 | Multi-runtime sovereignty | 4 runtimes | 2 (Py/JS) | Python | Node.js | Python | Python | Python | Python | Python | Py/.NET | Python |
@@ -549,6 +549,6 @@ All data points sourced from the following Wave 1 knowledge cards:
 |----------|-------------|-------|
 | cm_cex_vs_landscape | downstream | 0.46 |
 | p01_kc_cex_positioning_statement | sibling | 0.32 |
-| [[p01_kc_agent]] | sibling | 0.31 |
-| [[bld_collaboration_agent]] | downstream | 0.31 |
+| [[kc_agent]] | sibling | 0.31 |
+| [[bld_orchestration_agent]] | downstream | 0.31 |
 | [[p01_kc_competitor_openai_sdk]] | sibling | 0.31 |

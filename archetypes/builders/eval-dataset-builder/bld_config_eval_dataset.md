@@ -97,7 +97,7 @@ Rule: all present split values must sum to exactly 1.0. Use 3 decimal places max
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_output_template_eval_dataset]] | upstream | 0.40 |
-| [[bld_knowledge_card_eval_dataset]] | upstream | 0.37 |
+| [[bld_knowledge_eval_dataset]] | upstream | 0.37 |
 | [[bld_tools_eval_dataset]] | upstream | 0.36 |
 | [[p11_qg_eval_dataset]] | downstream | 0.33 |
 | [[bld_schema_eval_dataset]] | upstream | 0.32 |

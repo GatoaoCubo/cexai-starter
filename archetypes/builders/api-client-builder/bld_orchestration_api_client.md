@@ -65,7 +65,7 @@ I specify unidirectional API consumers so agents can call external services reli
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[api-client-builder]] | upstream | 0.46 |
-| [[p01_kc_api_client]] | upstream | 0.35 |
-| [[bld_collaboration_openapi_spec]] | sibling | 0.34 |
+| [[kc_api_client]] | upstream | 0.35 |
+| [[bld_orchestration_openapi_spec]] | sibling | 0.34 |
 | [[bld_tools_client]] | upstream | 0.33 |
 | bld_collaboration_connector | sibling | 0.33 |

@@ -127,5 +127,5 @@ Deliver a `rag_source` artifact with this structure:
 | [[bld_memory_rag_source]] | downstream | 0.54 |
 | [[bld_architecture_rag_source]] | downstream | 0.53 |
 | [[p03_ins_rag_source]] | related | 0.50 |
-| [[bld_knowledge_card_rag_source]] | related | 0.48 |
-| [[p01_kc_rag_source]] | related | 0.48 |
+| [[bld_knowledge_rag_source]] | related | 0.48 |
+| [[kc_rag_source]] | related | 0.48 |

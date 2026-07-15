@@ -139,8 +139,8 @@ Method: {method} | Ratio: {N}:{M} | Preserved: {list} | Dropped: {list}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_summary]] | downstream | 0.53 |
-| [[bld_instruction_memory_summary]] | upstream | 0.48 |
+| [[bld_orchestration_memory_summary]] | downstream | 0.53 |
+| [[bld_prompt_memory_summary]] | upstream | 0.48 |
 | [[bld_architecture_memory_summary]] | upstream | 0.47 |
 | [[p11_qg_memory_summary]] | downstream | 0.44 |
-| [[bld_knowledge_card_memory_summary]] | upstream | 0.42 |
+| [[bld_knowledge_memory_summary]] | upstream | 0.42 |

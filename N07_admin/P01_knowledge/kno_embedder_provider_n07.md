@@ -43,7 +43,7 @@ related:
   - p01_emb_nomic_embed_text
   - p11_qg_embedder_provider
 ---
-<!-- 8F: F1 kind=embedder_provider P01 | F2 embedder-provider-builder 13 ISOs | F3 schema+examples+memory injected | F4 N07 sloth lens: 512d MRL primary, Ollama fallback | F5 no prior artifact | F6 produced | F7 H01-H10 pass quality:null | F8 compile pending -->
+<!-- 8F: F1 kind=embedder_provider P01 | F2 embedder-provider-builder 12 ISOs | F3 schema+examples+memory injected | F4 N07 sloth lens: 512d MRL primary, Ollama fallback | F5 no prior artifact | F6 produced | F7 H01-H10 pass quality:null | F8 compile pending -->
 
 ## Boundary
 

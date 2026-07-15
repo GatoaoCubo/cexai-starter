@@ -84,7 +84,7 @@ python _tools/cex_memory_update.py \
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_learning_record]] | related | 0.32 |
-| [[bld_knowledge_card_learning_record]] | related | 0.31 |
+| [[bld_knowledge_learning_record]] | related | 0.31 |
 | bld_meta_memory_builder | related | 0.27 |
 | [[bld_memory_default]] | related | 0.23 |
 | p01_kc_pillar_brief_p10_memory_en | related | 0.23 |

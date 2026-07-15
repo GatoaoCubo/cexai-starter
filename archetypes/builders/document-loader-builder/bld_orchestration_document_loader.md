@@ -96,7 +96,7 @@ None — document_loader-builder is layer 0. No other builder must complete befo
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[document_loader-builder]] | related | 0.37 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.37 |
-| [[bld_collaboration_retriever]] | sibling | 0.33 |
-| [[p01_kc_document_loader]] | upstream | 0.30 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.37 |
+| [[bld_orchestration_retriever]] | sibling | 0.33 |
+| [[kc_document_loader]] | upstream | 0.30 |
 | p08_dir_rag_pipeline | downstream | 0.29 |

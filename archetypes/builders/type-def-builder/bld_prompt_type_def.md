@@ -132,7 +132,7 @@ SOFT gates (log warnings):
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_type_def]] | upstream | 0.49 |
+| [[bld_knowledge_type_def]] | upstream | 0.49 |
 | [[type-def-builder]] | downstream | 0.45 |
 | [[bld_schema_type_def]] | downstream | 0.44 |
 | [[bld_architecture_type_def]] | downstream | 0.36 |

@@ -73,8 +73,8 @@ NEVER grant a role tools beyond its agent's native toolkit (phantom-tool anti-pa
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_role_assignment]] | upstream | 0.50 |
-| [[bld_collaboration_role_assignment]] | downstream | 0.47 |
+| [[bld_knowledge_role_assignment]] | upstream | 0.50 |
+| [[bld_orchestration_role_assignment]] | downstream | 0.47 |
 | n00_role_assignment_manifest | related | 0.41 |
-| [[bld_instruction_role_assignment]] | downstream | 0.41 |
+| [[bld_prompt_role_assignment]] | downstream | 0.41 |
 | [[p11_qg_role_assignment]] | downstream | 0.40 |

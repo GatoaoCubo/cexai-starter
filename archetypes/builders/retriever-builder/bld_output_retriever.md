@@ -104,7 +104,7 @@ If reranker: name the model, when it fires (after first-pass top_k), what it opt
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[retriever-builder]] | upstream | 0.42 |
-| [[bld_instruction_retriever]] | upstream | 0.42 |
+| [[bld_prompt_retriever]] | upstream | 0.42 |
 | [[bld_schema_retriever]] | downstream | 0.40 |
 | p04_retr_pinecone | upstream | 0.37 |
 | [[p11_qg_retriever]] | downstream | 0.36 |

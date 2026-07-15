@@ -103,6 +103,6 @@ NEVER mix tier-1 and tier-2 syntax in the same template. Set `variable_syntax` t
 |----------|-------------|-------|
 | [[p03_ins_prompt_template]] | upstream | 0.40 |
 | [[bld_memory_prompt_template]] | downstream | 0.40 |
-| [[bld_knowledge_card_prompt_template]] | upstream | 0.38 |
+| [[bld_knowledge_prompt_template]] | upstream | 0.38 |
 | [[prompt-template-builder]] | upstream | 0.36 |
-| [[bld_collaboration_prompt_template]] | upstream | 0.36 |
+| [[bld_orchestration_prompt_template]] | upstream | 0.36 |

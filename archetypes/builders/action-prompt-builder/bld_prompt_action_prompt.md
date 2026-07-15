@@ -81,7 +81,7 @@ python _tools/cex_skill_loader.py --verify action
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[action-prompt-builder]] | related | 0.43 |
-| [[bld_instruction_golden_test]] | sibling | 0.40 |
-| [[bld_instruction_prompt_version]] | sibling | 0.39 |
-| [[bld_instruction_instruction]] | sibling | 0.39 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.39 |
+| [[bld_prompt_golden_test]] | sibling | 0.40 |
+| [[bld_prompt_prompt_version]] | sibling | 0.39 |
+| [[bld_prompt_instruction]] | sibling | 0.39 |
+| [[bld_orchestration_action_prompt]] | downstream | 0.39 |

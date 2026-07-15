@@ -93,8 +93,8 @@ calibration:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_few_shot_example]] | related | 0.35 |
+| [[bld_knowledge_few_shot_example]] | related | 0.35 |
 | [[few-shot-example-builder]] | related | 0.34 |
-| [[bld_collaboration_few_shot_example]] | downstream | 0.33 |
-| [[bld_collaboration_golden_test]] | downstream | 0.30 |
-| [[p01_kc_few_shot_example]] | related | 0.29 |
+| [[bld_orchestration_few_shot_example]] | downstream | 0.33 |
+| [[bld_orchestration_golden_test]] | downstream | 0.30 |
+| [[kc_few_shot_example]] | related | 0.29 |

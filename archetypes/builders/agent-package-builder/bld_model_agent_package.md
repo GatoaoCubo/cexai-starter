@@ -119,8 +119,8 @@ You ALWAYS read SCHEMA.md before producing any artifact. It is your source of tr
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent_package]] | downstream | 0.61 |
-| [[bld_collaboration_agent]] | downstream | 0.54 |
-| [[bld_instruction_agent_package]] | downstream | 0.52 |
-| [[p01_kc_agent_package]] | related | 0.51 |
+| [[bld_orchestration_agent_package]] | downstream | 0.61 |
+| [[bld_orchestration_agent]] | downstream | 0.54 |
+| [[bld_prompt_agent_package]] | downstream | 0.52 |
+| [[kc_agent_package]] | related | 0.51 |
 | [[agent-builder]] | sibling | 0.50 |

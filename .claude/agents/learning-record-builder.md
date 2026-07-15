@@ -88,4 +88,4 @@ Five duties bind any agent that emits an artifact:
 | [[learning-record-builder]] | related | 0.33 |
 | p03_sp_builder_nucleus | related | 0.31 |
 | kind-builder | related | 0.30 |
-| [[p01_kc_learning_record]] | related | 0.30 |
+| [[kc_learning_record]] | related | 0.30 |

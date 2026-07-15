@@ -132,8 +132,8 @@ updated: {{YYYY-MM-DD}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_invariant]] | downstream | 0.51 |
+| [[bld_knowledge_invariant]] | downstream | 0.51 |
 | [[invariant-builder]] | downstream | 0.48 |
 | [[bld_schema_invariant]] | downstream | 0.43 |
 | [[bld_architecture_invariant]] | downstream | 0.43 |
-| [[p01_kc_invariant]] | downstream | 0.40 |
+| [[kc_invariant]] | downstream | 0.40 |

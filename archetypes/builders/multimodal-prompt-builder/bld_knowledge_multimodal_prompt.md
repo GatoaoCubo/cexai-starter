@@ -69,6 +69,6 @@ The field is shaped by research emphasizing cross-modal retrieval, fusion archit
 |----------|-------------|-------|
 | [[multimodal-prompt-builder]] | downstream | 0.65 |
 | [[p10_mem_multimodal_prompt_builder]] | downstream | 0.54 |
-| [[bld_instruction_multimodal_prompt]] | downstream | 0.45 |
+| [[bld_prompt_multimodal_prompt]] | downstream | 0.45 |
 | multi-modal-config-builder | downstream | 0.40 |
 | [[p03_qg_multimodal_prompt]] | downstream | 0.39 |

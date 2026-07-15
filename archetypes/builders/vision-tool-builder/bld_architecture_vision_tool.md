@@ -98,5 +98,5 @@ parser              --consumes-->   output_format
 | n00_vision_tool_manifest | upstream | 0.50 |
 | [[vision-tool-builder]] | upstream | 0.47 |
 | [[p11_qg_vision_tool]] | downstream | 0.44 |
-| [[p01_kc_vision_tool]] | upstream | 0.42 |
+| [[kc_vision_tool]] | upstream | 0.42 |
 | [[bld_architecture_browser_tool]] | sibling | 0.36 |

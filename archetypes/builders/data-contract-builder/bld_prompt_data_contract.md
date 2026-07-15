@@ -81,5 +81,5 @@ python _tools/cex_prompt_optimizer.py --check
 | bld_instruction_domain_event | sibling | 0.35 |
 | [[bld_schema_data_contract]] | downstream | 0.35 |
 | bld_instruction_event_stream | sibling | 0.34 |
-| [[bld_instruction_action_prompt]] | sibling | 0.33 |
+| [[bld_prompt_action_prompt]] | sibling | 0.33 |
 | bld_instruction_alert_rule | sibling | 0.32 |

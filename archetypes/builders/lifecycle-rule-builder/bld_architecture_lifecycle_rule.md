@@ -70,6 +70,6 @@ quality_gate    --depends-->      lifecycle_rule  --signals-->      state_change
 |----------|-------------|-------|
 | [[bld_manifest_lifecycle_rule]] | related | 0.49 |
 | [[p03_ins_lifecycle_rule]] | upstream | 0.45 |
-| [[bld_collaboration_lifecycle_rule]] | downstream | 0.42 |
+| [[bld_orchestration_lifecycle_rule]] | downstream | 0.42 |
 | [[p11_qg_lifecycle_rule]] | downstream | 0.39 |
 | [[bld_memory_lifecycle_rule]] | downstream | 0.39 |

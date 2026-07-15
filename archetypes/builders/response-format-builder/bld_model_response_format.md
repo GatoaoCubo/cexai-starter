@@ -120,7 +120,7 @@ Deliver a `response_format` artifact with this structure:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_response_format]] | related | 0.53 |
+| [[bld_orchestration_response_format]] | related | 0.53 |
 | [[bld_architecture_response_format]] | downstream | 0.50 |
 | [[p03_ins_response_format]] | related | 0.50 |
 | [[bld_memory_response_format]] | downstream | 0.48 |

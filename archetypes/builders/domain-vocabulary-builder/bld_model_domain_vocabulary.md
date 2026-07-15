@@ -97,7 +97,7 @@ quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_domain_vocabulary]] | related | 0.57 |
+| [[kc_domain_vocabulary]] | related | 0.57 |
 | [[bld_kc_domain_vocabulary]] | related | 0.51 |
 | [[bld_rules_domain_vocabulary]] | downstream | 0.49 |
 | [[bld_context_sources_domain_vocabulary]] | downstream | 0.47 |

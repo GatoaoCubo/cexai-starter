@@ -84,6 +84,6 @@ Env configs define the variable contract for a system scope — every environmen
 |----------|-------------|-------|
 | [[env-config-builder]] | downstream | 0.45 |
 | [[p11_qg_env_config]] | downstream | 0.41 |
-| [[bld_instruction_env_config]] | downstream | 0.41 |
-| [[bld_collaboration_env_config]] | downstream | 0.39 |
+| [[bld_prompt_env_config]] | downstream | 0.41 |
+| [[bld_orchestration_env_config]] | downstream | 0.39 |
 | [[p10_lr_env_config_builder]] | downstream | 0.38 |

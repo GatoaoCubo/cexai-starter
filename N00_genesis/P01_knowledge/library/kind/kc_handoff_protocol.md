@@ -97,7 +97,7 @@ A handoff_protocol defines how one agent transfers control to another — what c
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[handoff-protocol-builder]] | related | 0.41 |
-| [[bld_knowledge_card_handoff_protocol]] | sibling | 0.37 |
-| [[bld_collaboration_handoff_protocol]] | downstream | 0.37 |
+| [[bld_knowledge_handoff_protocol]] | sibling | 0.37 |
+| [[bld_orchestration_handoff_protocol]] | downstream | 0.37 |
 | p01_kc_pillar_brief_p12_orchestration_en | sibling | 0.35 |
-| [[p01_kc_agent]] | sibling | 0.34 |
+| [[kc_agent]] | sibling | 0.34 |

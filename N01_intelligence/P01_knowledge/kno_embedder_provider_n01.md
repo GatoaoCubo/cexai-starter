@@ -167,5 +167,5 @@ OUTPUT: an embedder choice the vector store and retriever can both use.
 | [[kno_embedder_provider_n03]] | sibling | 0.39 |
 | [[kno_vector_store_n01]] | related | 0.39 |
 | [[kno_embedder_provider_n05]] | sibling | 0.36 |
-| [[bld_collaboration_model_provider]] | related | 0.35 |
-| [[bld_collaboration_embedder_provider]] | related | 0.34 |
+| [[bld_orchestration_model_provider]] | related | 0.35 |
+| [[bld_orchestration_embedder_provider]] | related | 0.34 |

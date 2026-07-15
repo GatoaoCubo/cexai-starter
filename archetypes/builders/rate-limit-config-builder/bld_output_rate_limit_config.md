@@ -117,5 +117,5 @@ Overage policy: `{{what_happens_when_budget_exceeded}}`
 | [[rate-limit-config-builder]] | downstream | 0.56 |
 | [[p11_qg_rate_limit_config]] | downstream | 0.54 |
 | [[bld_architecture_rate_limit_config]] | downstream | 0.51 |
-| [[bld_instruction_rate_limit_config]] | upstream | 0.51 |
-| [[bld_knowledge_card_rate_limit_config]] | upstream | 0.50 |
+| [[bld_prompt_rate_limit_config]] | upstream | 0.51 |
+| [[bld_knowledge_rate_limit_config]] | upstream | 0.50 |

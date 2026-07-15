@@ -68,7 +68,7 @@ Filename: `p12_sig_`{{event}}`.json`
 ## Builder Context
 
 This ISO operates within the `signal-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.

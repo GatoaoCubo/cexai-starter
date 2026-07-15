@@ -76,4 +76,4 @@ python _tools/cex_score.py --apply bld-config-permission.md
 | [[bld_output_template_permission]] | upstream | 0.41 |
 | [[p03_ins_permission]] | upstream | 0.40 |
 | [[bld_memory_permission]] | downstream | 0.40 |
-| [[bld_knowledge_card_permission]] | upstream | 0.39 |
+| [[bld_knowledge_permission]] | upstream | 0.39 |

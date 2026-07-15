@@ -56,7 +56,7 @@ Applies when: transforming structured data into a human-readable or machine-read
 ## Builder Context
 
 This ISO operates within the `formatter-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -104,7 +104,7 @@ python _tools/cex_score.py --apply --verbose p10_lr_formatter_builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[formatter-builder]] | upstream | 0.42 |
-| [[bld_instruction_formatter]] | upstream | 0.41 |
-| [[bld_collaboration_formatter]] | downstream | 0.35 |
+| [[bld_prompt_formatter]] | upstream | 0.41 |
+| [[bld_orchestration_formatter]] | downstream | 0.35 |
 | [[bld_architecture_formatter]] | upstream | 0.33 |
 | [[bld_schema_formatter]] | upstream | 0.32 |

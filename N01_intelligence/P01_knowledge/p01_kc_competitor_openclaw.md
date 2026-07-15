@@ -10,7 +10,7 @@ quality: null
 tags: [seed-intel, competitor, openclaw, agent-framework, mcp, clawHub]
 when_to_use: "When evaluating community-driven skill ecosystems (ClawHub vs. CEX builders); when analyzing viral OSS growth patterns; when assessing security risks of user-contributed agent skills; when studying non-profit governance models for AI frameworks"
 axioms:
- - "ALWAYS benchmark ClawHub's 13K+ skills against CEX's 300 kinds + 300+ builders -- ClawHub is volume-first/untyped, CEX is governance-first/typed"
+ - "ALWAYS benchmark ClawHub's 13K+ skills against CEX's 125 kinds + 119 builders -- ClawHub is volume-first/untyped, CEX is governance-first/typed"
  - "ALWAYS flag the security liability: community-submitted skills with no quality gate = supply chain attack surface that CEX's 8F pipeline + F7 GOVERN eliminates"
  - "NEVER treat 335K stars as indicative of enterprise readiness -- OpenClaw's strength is consumer messaging integration, not production knowledge systems"
  - "NEVER ignore the OpenAI backing signal -- OpenAI funding a non-profit competitor reveals their agent distribution strategy beyond the Agents SDK"
@@ -290,7 +290,7 @@ OpenAI funding provides runway for the foundation.
 | No quality gates on community contributions | CEX 8F pipeline + H01-H07 HARD gates = quality insurance |
 | Non-technical users cannot self-protect (2 vCPU minimum config complexity) | CEX abstracts complexity behind nucleus dispatch |
 | Founder-dependency risk: Steinberger at OpenAI may reprioritize | CEX has 7-nucleus architecture not dependent on single founder |
-| No typed knowledge system -- skills are unstructured scripts | CEX is a TYPED infrastructure: 300 kinds, 12 pillars, schemas |
+| No typed knowledge system -- skills are unstructured scripts | CEX is a TYPED infrastructure: 125 kinds, 12 pillars, schemas |
 | No compounding intelligence: each agent instance starts fresh | CEX learning_record + memory_update = knowledge compounds |
 | No multi-runtime governance (N07 pattern absent) | CEX N07 orchestrates across Claude/Codex/Gemini/Ollama |
 | Chinese government ban signals trust problem | CEX audit trail (F8) + governed dispatch = compliance-ready |
@@ -319,7 +319,7 @@ governance structure not yet publicly documented. OpenAI has pledged contributio
 | Dimension | OpenClaw | CEX |
 |-----------|----------|-----|
 | Architecture | Monolithic TypeScript gateway | Modular 8-nucleus Python system |
-| Knowledge system | Untyped scripts (skills) | 300 typed kinds x 12 pillars |
+| Knowledge system | Untyped scripts (skills) | 125 typed kinds x 12 pillars |
 | Quality enforcement | None (community free-for-all) | 8F pipeline + H01-H07 gates + 9.0 target |
 | Multi-runtime | Single (Node.js) | 4 runtimes (Claude/Codex/Gemini/Ollama) |
 | Security model | Reactive (CVE-disclosed) | Proactive (governance layer + quality gate) |

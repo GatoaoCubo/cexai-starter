@@ -81,8 +81,8 @@ agent packages are self-contained, portable, LLM-agnostic bundles that encapsula
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_agent_package]] | downstream | 0.52 |
+| [[bld_prompt_agent_package]] | downstream | 0.52 |
 | [[agent-package-builder]] | downstream | 0.49 |
-| [[p01_kc_agent_package]] | sibling | 0.44 |
+| [[kc_agent_package]] | sibling | 0.44 |
 | [[bld_config_agent_package]] | downstream | 0.44 |
 | [[p10_lr_agent_package_builder]] | downstream | 0.44 |

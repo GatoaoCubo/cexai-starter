@@ -87,6 +87,6 @@ python _tools/cex_score.py --apply bld-memory-path-config.md
 |----------|-------------|-------|
 | [[path-config-builder]] | upstream | 0.55 |
 | [[p03_ins_path_config]] | upstream | 0.51 |
-| [[bld_knowledge_card_path_config]] | upstream | 0.48 |
-| [[bld_collaboration_path_config]] | upstream | 0.47 |
+| [[bld_knowledge_path_config]] | upstream | 0.48 |
+| [[bld_orchestration_path_config]] | upstream | 0.47 |
 | n00_path_config_manifest | upstream | 0.42 |

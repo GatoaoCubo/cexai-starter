@@ -69,8 +69,8 @@ system_prompt   --signals-->   identity_load
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_system_prompt]] | upstream | 0.48 |
+| [[bld_orchestration_system_prompt]] | upstream | 0.48 |
 | [[system-prompt-builder]] | upstream | 0.47 |
 | [[bld_architecture_agent]] | sibling | 0.45 |
-| [[bld_collaboration_agent]] | downstream | 0.41 |
-| [[p01_kc_agent]] | upstream | 0.38 |
+| [[bld_orchestration_agent]] | downstream | 0.41 |
+| [[kc_agent]] | upstream | 0.38 |

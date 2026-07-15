@@ -93,8 +93,8 @@ python _tools/cex_score.py --apply p10-lr-browser-tool-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_browser_tool]] | upstream | 0.46 |
+| [[bld_knowledge_browser_tool]] | upstream | 0.46 |
 | [[p11_qg_browser_tool]] | downstream | 0.36 |
 | [[bld_architecture_browser_tool]] | upstream | 0.35 |
 | [[browser-tool-builder]] | upstream | 0.34 |
-| [[bld_instruction_browser_tool]] | upstream | 0.34 |
+| [[bld_prompt_browser_tool]] | upstream | 0.34 |

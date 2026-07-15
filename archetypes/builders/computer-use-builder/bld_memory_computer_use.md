@@ -68,7 +68,7 @@ The 2048-byte body limit is sufficient for action documentation and safety const
 ## Builder Context
 
 This ISO operates within the `computer-use-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -123,8 +123,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_computer_use_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_computer_use]] | upstream | 0.45 |
+| [[bld_knowledge_computer_use]] | upstream | 0.45 |
 | [[p11_qg_computer_use]] | downstream | 0.42 |
-| [[bld_instruction_computer_use]] | upstream | 0.35 |
+| [[bld_prompt_computer_use]] | upstream | 0.35 |
 | [[computer-use-builder]] | upstream | 0.35 |
 | p04_computer_use_NAME | upstream | 0.32 |

@@ -11,7 +11,7 @@ Without a shared canonical vocabulary:
 - Nuclei invent synonyms for the same concept (semantic drift)
 - Artifacts become human-readable but machine-ambiguous
 - Cross-nucleus references break (N01 says "research card", N04 says "knowledge_card")
-- The 300-kind taxonomy erodes into free-form description
+- The 125-kind taxonomy erodes into free-form description
 - LLM-to-LLM communication accumulates translation overhead
 
 **CEX is infrastructure for LLMs, not documentation for humans.**
@@ -51,7 +51,7 @@ A nucleus that speaks without a vocabulary is generating untyped output.
 ### Layer 3: Artifact Output Enforcement
 
 Every artifact must satisfy:
-- Field names in frontmatter: snake_case, from the 300-kind taxonomy
+- Field names in frontmatter: snake_case, from the 125-kind taxonomy
 - Body headings: match pillar domain vocabulary (P01=knowledge terms, P06=schema terms, etc.)
 - No invented synonyms: if "knowledge_card" exists as a kind, NEVER write "research card" or "intel doc"
 - Cross-references: always use canonical path + kind name (not colloquial description)
@@ -78,7 +78,7 @@ type: controlled_vocabulary
 
 These terms are defined in N00_genesis and must not be redefined in nucleus KCs:
 - 8F pipeline (F1-F8): canonical reasoning protocol
-- kind: atomic artifact type from the 300-kind taxonomy
+- kind: atomic artifact type from the 125-kind taxonomy
 - pillar: P01-P12 domain grouping
 - nucleus: N00-N07 operational agent
 - quality_gate: F7 GOVERN validation
@@ -103,7 +103,7 @@ User input (any language, any metaphor)
 cex_intent_resolver.py           -- Python-first, 0 tokens, maps phrase -> {kind, pillar, nucleus, verb}
     |
     v
-p03_pc_cex_universal.md          -- 300+ kinds x PT+EN bilingual pattern table (the prompt compiler)
+p03_pc_cex_universal.md          -- 125 kinds x PT+EN bilingual pattern table (the prompt compiler)
 N00_genesis/P03_prompt/layers/   -- loaded by EVERY nucleus at F1 CONSTRAIN
     |
     v
@@ -118,7 +118,7 @@ Artifact generated in ubiquitous language (the user sees the output, not the voc
 
 This is the correct architecture:
 - Layer 0: `cex_intent_resolver.py` -- deterministic, token-free pre-filter
-- Layer 1: `p03_pc_cex_universal.md` -- universal vocabulary (300+ kinds, N00_genesis)
+- Layer 1: `p03_pc_cex_universal.md` -- universal vocabulary (125 kinds, N00_genesis)
 - Layer 2: `kc_{domain}_vocabulary.md` -- per-nucleus domain overlay
 
 The prompt_compiler (kind=`prompt_compiler`) IS the ubiquitous language enforcement mechanism.
@@ -132,11 +132,11 @@ as a mandatory context source alongside their domain vocabulary KC.
 ## Source of Truth Hierarchy
 
 When a term conflict occurs:
-1. `p03_pc_cex_universal.md` (prompt_compiler kind) -- HIGHEST authority (300+ kinds, PT+EN)
+1. `p03_pc_cex_universal.md` (prompt_compiler kind) -- HIGHEST authority (125 kinds, PT+EN)
 2. `spec_metaphor_dictionary.md` (Industry term column) -- human-readable reference
 3. `N00_genesis/P01_knowledge/kc_*.md` -- canonical definitions
 4. `N0X_{domain}/P01_knowledge/kc_{domain}_vocabulary.md` -- domain extensions
-5. 304-kind taxonomy in `.cex/kinds_meta.json` -- kind names
+5. 125-kind taxonomy in `.cex/kinds_meta.json` -- kind names
 
 If a term does not appear in any of the above: it is NOT canonical.
 Either find the correct term or add it to the prompt_compiler first.

@@ -100,5 +100,5 @@ p {
 | [[n02_kc_typography_web]] | sibling | 0.31 |
 | p06_is_responsive_breakpoints_n02 | downstream | 0.29 |
 | n06_output_pricing_page | downstream | 0.29 |
-| [[p01_kc_responsive_layout_systems]] | sibling | 0.29 |
+| [[kc_responsive_layout_systems]] | sibling | 0.29 |
 | p01_kc_typography_web | sibling | 0.28 |

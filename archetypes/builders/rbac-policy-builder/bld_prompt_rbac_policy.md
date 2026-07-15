@@ -55,5 +55,5 @@ related:
 | [[kc_rbac_policy]] | upstream | 0.48 |
 | [[p10_mem_rbac_policy_builder]] | downstream | 0.47 |
 | [[rbac-policy-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_rbac_policy]] | upstream | 0.43 |
+| [[bld_knowledge_rbac_policy]] | upstream | 0.43 |
 | n00_rbac_policy_manifest | downstream | 0.34 |

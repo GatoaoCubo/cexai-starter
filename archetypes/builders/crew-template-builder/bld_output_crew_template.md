@@ -79,8 +79,8 @@ result = crew.run(inputs=`{{inputs}}`)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_crew_template]] | upstream | 0.47 |
+| [[bld_prompt_crew_template]] | upstream | 0.47 |
 | [[p11_qg_crew_template]] | downstream | 0.39 |
 | [[crew-template-builder]] | downstream | 0.39 |
 | [[bld_schema_crew_template]] | downstream | 0.38 |
-| [[bld_knowledge_card_crew_template]] | upstream | 0.36 |
+| [[bld_knowledge_crew_template]] | upstream | 0.36 |

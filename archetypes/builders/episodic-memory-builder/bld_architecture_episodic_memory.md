@@ -61,7 +61,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[episodic-memory-builder]] | downstream | 0.61 |
-| [[bld_collaboration_episodic_memory]] | downstream | 0.51 |
+| [[bld_orchestration_episodic_memory]] | downstream | 0.51 |
 | bld_architecture_working_memory | sibling | 0.44 |
-| [[p01_kc_episodic_memory]] | downstream | 0.44 |
+| [[kc_episodic_memory]] | downstream | 0.44 |
 | working-memory-builder | downstream | 0.41 |

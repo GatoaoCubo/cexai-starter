@@ -130,7 +130,7 @@ N03 requires filtered retrieval, not blind nearest-neighbor theatrics.
 
 ## Lifecycle Rules
 
-1. Rebuild collection on [[p01_kc_embedding_config|embedding]] family or dimension change.
+1. Rebuild collection on [[kc_embedding_config|embedding]] family or dimension change.
 2. Soft refresh on content hash drift.
 3. Keep source and compiled corpora logically separated.
 4. Archive deleted-source vectors rather than silently orphaning them.
@@ -201,5 +201,5 @@ That is the proud architecture: strong retrieval, low drama, clean operations.
 |----------|-------------|-------|
 | [[kno_vector_store_n01]] | sibling | 0.44 |
 | [[kno_vector_store_n05]] | sibling | 0.42 |
-| [[bld_collaboration_vector_store]] | related | 0.41 |
+| [[bld_orchestration_vector_store]] | related | 0.41 |
 | [[kno_vector_store_n02]] | sibling | 0.37 |

@@ -90,7 +90,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_output_template_document_loader]] | related | 0.35 |
-| [[bld_instruction_document_loader]] | related | 0.30 |
-| [[bld_collaboration_document_loader]] | related | 0.29 |
-| [[bld_knowledge_card_document_loader]] | related | 0.27 |
+| [[bld_prompt_document_loader]] | related | 0.30 |
+| [[bld_orchestration_document_loader]] | related | 0.29 |
+| [[bld_knowledge_document_loader]] | related | 0.27 |
 | [[document_loader-builder]] | related | 0.27 |

@@ -83,8 +83,8 @@ python _tools/cex_score.py --apply bld-memory-rag-source.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_rag_source]] | upstream | 0.48 |
+| [[bld_orchestration_rag_source]] | upstream | 0.48 |
 | [[rag-source-builder]] | upstream | 0.47 |
-| [[p01_kc_rag_source]] | upstream | 0.44 |
-| [[bld_knowledge_card_rag_source]] | upstream | 0.40 |
+| [[kc_rag_source]] | upstream | 0.44 |
+| [[bld_knowledge_rag_source]] | upstream | 0.40 |
 | [[p03_ins_rag_source]] | upstream | 0.40 |

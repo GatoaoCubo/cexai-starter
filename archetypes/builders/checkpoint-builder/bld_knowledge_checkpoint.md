@@ -94,7 +94,7 @@ contract document — it defines the state schema and resume protocol, not the r
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[checkpoint-builder]] | downstream | 0.61 |
-| [[bld_collaboration_checkpoint]] | downstream | 0.59 |
+| [[bld_orchestration_checkpoint]] | downstream | 0.59 |
 | [[bld_architecture_checkpoint]] | downstream | 0.53 |
-| [[bld_instruction_checkpoint]] | downstream | 0.50 |
-| [[p01_kc_checkpoint]] | sibling | 0.50 |
+| [[bld_prompt_checkpoint]] | downstream | 0.50 |
+| [[kc_checkpoint]] | sibling | 0.50 |

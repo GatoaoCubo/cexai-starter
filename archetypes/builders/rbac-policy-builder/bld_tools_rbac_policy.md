@@ -29,7 +29,7 @@ related:
 |------|---------|------|
 | cex_compile.py | Compile artifact .md to .yaml | After save |
 | cex_score.py --apply | Peer review scoring (D1-D5 weighted) | Before publish |
-| cex_doctor.py | Builder health check (validates all 13 ISOs) | Post-build |
+| cex_doctor.py | Builder health check (validates all 12 ISOs) | Post-build |
 | cex_hygiene.py | Artifact CRUD + 8-rule enforcement | Pre-commit |
 
 ## Validation Tools

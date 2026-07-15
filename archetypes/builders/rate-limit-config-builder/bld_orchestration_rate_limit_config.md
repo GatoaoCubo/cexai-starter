@@ -77,7 +77,7 @@ once provider and tier are known.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[rate-limit-config-builder]] | upstream | 0.49 |
-| [[bld_knowledge_card_rate_limit_config]] | upstream | 0.44 |
+| [[bld_knowledge_rate_limit_config]] | upstream | 0.44 |
 | [[bld_tools_rate_limit_config]] | upstream | 0.41 |
 | [[p11_qg_rate_limit_config]] | upstream | 0.39 |
 | [[p10_lr_rate_limit_config_builder]] | upstream | 0.39 |

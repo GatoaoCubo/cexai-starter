@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[bld_tools_toolkit]] | related | 0.36 |
 | n00_toolkit_manifest | related | 0.34 |
 | [[bld_config_toolkit]] | related | 0.33 |
-| [[bld_collaboration_toolkit]] | related | 0.33 |
-| [[p01_kc_toolkit]] | related | 0.33 |
+| [[bld_orchestration_toolkit]] | related | 0.33 |
+| [[kc_toolkit]] | related | 0.33 |

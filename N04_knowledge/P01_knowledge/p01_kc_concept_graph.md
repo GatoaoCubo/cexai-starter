@@ -42,7 +42,7 @@ These concepts have no dependencies -- start here if new to CEX:
 | `CEX` | The enterprise brain system (not an agent) | "What is CEX?" story in any lens |
 | `artifact` | A .md file with YAML frontmatter that encodes one piece of knowledge | "The finished product" in factory lens |
 | `pillar` | P01-P12 domain groupings (12 departments) | "The 12 zones" in game lens |
-| `kind` | Atomic artifact type (300 types exist) | "Product specification" in factory lens |
+| `kind` | Atomic artifact type (125 types exist) | "Product specification" in factory lens |
 
 ## Tier 1 (requires roots)
 
@@ -52,8 +52,8 @@ These concepts have no dependencies -- start here if new to CEX:
 | `builder` | kind, artifact | The machine/archetype that produces one specific kind |
 | `ISO` | builder | The 12 configuration files per builder (1:1 with pillars) |
 | `8F pipeline` | kind, builder, artifact | The 8-step reasoning protocol every task passes through |
-| `knowledge_card` ([[p01_kc_knowledge_card]]) | artifact, pillar (P01) | A dense, searchable atomic fact card |
-| `prompt_template` ([[p01_kc_prompt_template]]) | artifact, pillar (P03) | A reusable mold with variables that generates prompts |
+| `knowledge_card` ([[kc_knowledge_card]]) | artifact, pillar (P01) | A dense, searchable atomic fact card |
+| `prompt_template` ([[kc_prompt_template]]) | artifact, pillar (P03) | A reusable mold with variables that generates prompts |
 
 ## Tier 2 (requires Tier 1)
 
@@ -167,7 +167,7 @@ This is why concept graphs matter: they compile a fuzzy "teach me CEX" intent in
 
 - CEX `CLAUDE.md`: all concept definitions, nucleus identities, 8F pipeline.
 - `_tools/cex_retriever.py` similarity scores were used to validate edge weights between sibling concepts.
-- Dependency ordering: topological sort (Kahn's algorithm, O(V+E)) of CEX knowledge domain (3647-doc corpus).
+- Dependency ordering: topological sort (Kahn's algorithm, O(V+E)) of CEX knowledge domain (full repo doc corpus).
 - Learning path design: Bloom's revised taxonomy (Anderson & Krathwohl, 2001 -- knowledge, comprehension, application, analysis, evaluation, creation).
 - Bloom's original taxonomy (Bloom et al., 1956): https://www.bloomstaxonomy.net/
 - DAG learning theory: Karpicke & Roediger (2008), "The critical importance of retrieval for learning" -- prerequisite chains improve retention.

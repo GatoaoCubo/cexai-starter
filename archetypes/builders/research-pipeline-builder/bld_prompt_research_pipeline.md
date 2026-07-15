@@ -73,4 +73,4 @@ related:
 | p04_cli_research_pipeline_n01 | downstream | 0.38 |
 | [[p11_qg_research_pipeline]] | downstream | 0.37 |
 | p02_agent_research_pipeline_intelligence | upstream | 0.36 |
-| [[bld_knowledge_card_research_pipeline]] | upstream | 0.34 |
+| [[bld_knowledge_research_pipeline]] | upstream | 0.34 |

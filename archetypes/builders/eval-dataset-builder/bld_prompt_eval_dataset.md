@@ -80,8 +80,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_output_validator]] | sibling | 0.46 |
-| [[bld_instruction_retriever_config]] | sibling | 0.46 |
-| [[bld_instruction_memory_scope]] | sibling | 0.45 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.45 |
-| [[bld_instruction_prompt_version]] | sibling | 0.44 |
+| [[bld_prompt_output_validator]] | sibling | 0.46 |
+| [[bld_prompt_retriever_config]] | sibling | 0.46 |
+| [[bld_prompt_memory_scope]] | sibling | 0.45 |
+| [[bld_prompt_chunk_strategy]] | sibling | 0.45 |
+| [[bld_prompt_prompt_version]] | sibling | 0.44 |

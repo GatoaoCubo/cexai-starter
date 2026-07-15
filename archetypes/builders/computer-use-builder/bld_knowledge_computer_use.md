@@ -84,4 +84,4 @@ Computer use tools enable LLMs to interact with graphical interfaces by capturin
 | [[p10_lr_computer_use_builder]] | downstream | 0.51 |
 | [[computer-use-builder]] | downstream | 0.49 |
 | p04_cu_desktop_agent | downstream | 0.44 |
-| [[bld_instruction_computer_use]] | downstream | 0.44 |
+| [[bld_prompt_computer_use]] | downstream | 0.44 |

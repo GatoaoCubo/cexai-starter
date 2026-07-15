@@ -96,6 +96,6 @@ An embedding_config defines which vector model converts text into dense numerica
 |----------|-------------|-------|
 | [[p01_emb_openai_text_embedding_3_small]] | related | 0.49 |
 | [[embedding-config-builder]] | related | 0.49 |
-| [[bld_knowledge_card_embedding_config]] | sibling | 0.48 |
+| [[bld_knowledge_embedding_config]] | sibling | 0.48 |
 | [[bld_architecture_embedding_config]] | downstream | 0.47 |
 | p01_kc_vector_embedding_model_selection | sibling | 0.46 |

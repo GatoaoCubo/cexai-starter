@@ -95,8 +95,8 @@ A mental model is a YAML identity map that encodes an agent's routing logic, dec
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_agent]] | sibling | 0.46 |
-| [[bld_collaboration_mental_model]] | related | 0.42 |
+| [[kc_agent]] | sibling | 0.46 |
+| [[bld_orchestration_mental_model]] | related | 0.42 |
 | [[p03_ins_mental_model]] | downstream | 0.40 |
-| [[bld_collaboration_agent]] | downstream | 0.40 |
+| [[bld_orchestration_agent]] | downstream | 0.40 |
 | [[bld_architecture_agent]] | downstream | 0.39 |

@@ -41,7 +41,7 @@ conversion goal. Built with HTML+Tailwind (zero build step) or React/Next.js/Ast
 PRICING > TESTIMONIALS > FAQ > CTA > FOOTER > META.
 
 ## Builder
-`landing-page-builder` (13 ISOs) — Pillar P05
+`landing-page-builder` (12 ISOs) — Pillar P05
 
 ## What Makes It Different
 Unlike Lovable/Bolt/v0/Framer/Webflow:
@@ -87,7 +87,7 @@ Social-Proof=trust, Pricing=decision, FAQ=objection-clearing, CTA=conversion.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_landing_page]] | sibling | 0.56 |
+| [[bld_knowledge_landing_page]] | sibling | 0.56 |
 | [[landing-page-builder]] | downstream | 0.49 |
 | [[bld_architecture_landing_page]] | downstream | 0.40 |
 | n00_landing_page_manifest | sibling | 0.40 |

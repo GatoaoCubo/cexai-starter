@@ -84,5 +84,5 @@ MCP servers are protocol-compliant providers that expose tools and resources to 
 | [[p03_ins_mcp_server]] | upstream | 0.62 |
 | [[bld_memory_mcp_server]] | downstream | 0.60 |
 | [[mcp-server-builder]] | related | 0.60 |
-| [[p01_kc_mcp_server]] | sibling | 0.50 |
+| [[kc_mcp_server]] | sibling | 0.50 |
 | [[bld_config_mcp_server]] | downstream | 0.50 |

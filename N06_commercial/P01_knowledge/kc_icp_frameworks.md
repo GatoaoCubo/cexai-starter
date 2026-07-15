@@ -431,7 +431,7 @@ They are NOT: enterprise marketers, agencies, or non-technical founders with lar
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[customer-segment-builder]] | downstream | 0.28 |
-| [[bld_knowledge_card_customer_segment]] | sibling | 0.26 |
-| [[p01_kc_competitive_positioning]] | sibling | 0.21 |
+| [[bld_knowledge_customer_segment]] | sibling | 0.26 |
+| [[kc_competitive_positioning]] | sibling | 0.21 |
 | p01_kc_pillar_brief_p03_prompt_en | sibling | 0.21 |
 | n00_customer_segment_manifest | sibling | 0.21 |

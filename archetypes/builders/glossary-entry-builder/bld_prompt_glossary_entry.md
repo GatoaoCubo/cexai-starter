@@ -99,8 +99,8 @@ python _tools/cex_skill_loader.py --verify glossary
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_glossary_entry]] | upstream | 0.43 |
-| [[bld_knowledge_card_glossary_entry]] | upstream | 0.42 |
+| [[kc_glossary_entry]] | upstream | 0.43 |
+| [[bld_knowledge_glossary_entry]] | upstream | 0.42 |
 | [[glossary-entry-builder]] | upstream | 0.42 |
 | p01_gl_TERM_SLUG | upstream | 0.41 |
 | bld_instruction_context_doc | sibling | 0.39 |

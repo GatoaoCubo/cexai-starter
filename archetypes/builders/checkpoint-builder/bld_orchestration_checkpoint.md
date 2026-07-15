@@ -83,6 +83,6 @@ I produce checkpoint artifacts that bind saved state to a specific workflow step
 |----------|-------------|-------|
 | [[checkpoint-builder]] | related | 0.57 |
 | [[bld_architecture_checkpoint]] | upstream | 0.50 |
-| [[bld_knowledge_card_checkpoint]] | upstream | 0.46 |
-| [[p01_kc_checkpoint]] | related | 0.46 |
-| [[bld_instruction_checkpoint]] | upstream | 0.45 |
+| [[bld_knowledge_checkpoint]] | upstream | 0.46 |
+| [[kc_checkpoint]] | related | 0.46 |
+| [[bld_prompt_checkpoint]] | upstream | 0.45 |

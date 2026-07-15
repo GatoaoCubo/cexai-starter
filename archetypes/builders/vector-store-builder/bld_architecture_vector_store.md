@@ -74,7 +74,7 @@ chunker_config     --indirectly-->   vector_store (chunk count affects index siz
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p03_ins_vector_store]] | upstream | 0.48 |
-| [[bld_collaboration_vector_store]] | upstream | 0.47 |
+| [[bld_orchestration_vector_store]] | upstream | 0.47 |
 | [[bld_architecture_embedder_provider]] | sibling | 0.45 |
 | [[vector-store-builder]] | upstream | 0.43 |
 | n00_vector_store_manifest | upstream | 0.42 |

@@ -95,7 +95,7 @@ escalation: "{{escalation}}}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_handoff_protocol]] | downstream | 0.39 |
-| [[bld_instruction_handoff_protocol]] | upstream | 0.37 |
+| [[bld_prompt_handoff_protocol]] | upstream | 0.37 |
 | bld_output_template_runtime_rule | sibling | 0.37 |
 | [[bld_output_template_output_validator]] | sibling | 0.36 |
 | bld_output_template_hook_config | sibling | 0.35 |

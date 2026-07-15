@@ -78,7 +78,7 @@ python _tools/cex_score.py --apply bld-tools-landing-page.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_landing_page]] | downstream | 0.46 |
+| [[bld_orchestration_landing_page]] | downstream | 0.46 |
 | [[bld_memory_landing_page]] | downstream | 0.42 |
 | [[bld_output_template_landing_page]] | downstream | 0.41 |
 | [[bld_schema_landing_page]] | downstream | 0.36 |

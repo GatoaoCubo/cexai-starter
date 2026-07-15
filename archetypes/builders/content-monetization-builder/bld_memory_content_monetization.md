@@ -71,7 +71,7 @@ webhook_secret_env) allows provider swap with zero code changes — only config 
 ## Builder Context
 
 This ISO operates within the `content-monetization-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -129,5 +129,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_content-monetization-builder
 | [[content-monetization-builder]] | downstream | 0.34 |
 | bld_tools_memory_type | upstream | 0.30 |
 | [[bld_config_tagline]] | upstream | 0.29 |
-| [[bld_collaboration_content_monetization]] | downstream | 0.28 |
+| [[bld_orchestration_content_monetization]] | downstream | 0.28 |
 | p10_lr_e2e_eval_builder | sibling | 0.28 |

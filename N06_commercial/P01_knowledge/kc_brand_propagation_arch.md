@@ -455,7 +455,7 @@ Brad Frost defines 5 component levels — tokens permeate all levels:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p01_kc_design_token_arch | sibling | 0.54 |
-| [[p01_kc_brand_tokens_pipeline]] | sibling | 0.40 |
+| [[kc_brand_tokens_pipeline]] | sibling | 0.40 |
 | p01_kc_brand_skill | sibling | 0.38 |
 | p01_kc_color_theory_applied | sibling | 0.35 |
 | [[n02_kc_color_theory_applied]] | sibling | 0.35 |

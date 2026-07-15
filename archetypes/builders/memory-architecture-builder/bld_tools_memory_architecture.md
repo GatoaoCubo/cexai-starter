@@ -59,5 +59,5 @@ related:
 | [[memory-architecture-builder]] | downstream | 0.44 |
 | bld_tools_consolidation_policy | sibling | 0.39 |
 | bld_collaboration_memory_type | downstream | 0.36 |
-| [[bld_knowledge_card_memory_architecture]] | upstream | 0.36 |
-| [[bld_instruction_memory_architecture]] | upstream | 0.34 |
+| [[bld_knowledge_memory_architecture]] | upstream | 0.36 |
+| [[bld_prompt_memory_architecture]] | upstream | 0.34 |

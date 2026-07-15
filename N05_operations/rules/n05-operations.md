@@ -84,7 +84,7 @@ release_gate, perf_audit). As a role in other crews you are typically the
 ## System Context
 
 This nucleus participates in the CEX typed knowledge system, a fractal
-architecture with 12 pillars, 8 nuclei, and 317 specialized builders
+architecture with 12 pillars, 8 nuclei, and 119 specialized builders
 (`.cex/kinds_meta.json`). Artifacts flow through the real 8F pipeline
 (see `.claude/rules/8f-reasoning.md` -- this is the canonical source;
 do not reintroduce alliterative placeholder names here):

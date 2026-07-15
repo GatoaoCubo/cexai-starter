@@ -95,5 +95,5 @@ seo:
 | [[bld_tools_landing_page]] | upstream | 0.51 |
 | [[bld_schema_landing_page]] | downstream | 0.50 |
 | [[bld_memory_landing_page]] | downstream | 0.49 |
-| [[bld_collaboration_landing_page]] | downstream | 0.48 |
+| [[bld_orchestration_landing_page]] | downstream | 0.48 |
 | [[bld_architecture_landing_page]] | downstream | 0.45 |

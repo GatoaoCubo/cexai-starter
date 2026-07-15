@@ -94,6 +94,6 @@ embedding_config, rag_source --> [knowledge_index] --> retriever_config, agent_c
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[knowledge-index-builder]] | related | 0.55 |
-| [[bld_collaboration_knowledge_index]] | downstream | 0.50 |
-| [[bld_knowledge_card_knowledge_index]] | sibling | 0.48 |
-| [[bld_collaboration_embedding_config]] | downstream | 0.45 |
+| [[bld_orchestration_knowledge_index]] | downstream | 0.50 |
+| [[bld_knowledge_knowledge_index]] | sibling | 0.48 |
+| [[bld_orchestration_embedding_config]] | downstream | 0.45 |

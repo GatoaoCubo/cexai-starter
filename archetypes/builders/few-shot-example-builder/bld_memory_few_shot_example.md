@@ -56,7 +56,7 @@ Applies when: teaching format for any artifact type by showing concrete input/ou
 ## Builder Context
 
 This ISO operates within the `few-shot-example-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -104,7 +104,7 @@ python _tools/cex_score.py --apply --verbose p10_lr_few_shot_example_builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[few-shot-example-builder]] | upstream | 0.45 |
-| [[bld_instruction_few_shot_example]] | upstream | 0.39 |
+| [[bld_prompt_few_shot_example]] | upstream | 0.39 |
 | [[p11_qg_few_shot_example]] | downstream | 0.36 |
-| [[bld_collaboration_few_shot_example]] | downstream | 0.34 |
+| [[bld_orchestration_few_shot_example]] | downstream | 0.34 |
 | [[p10_lr_golden_test_builder]] | sibling | 0.34 |

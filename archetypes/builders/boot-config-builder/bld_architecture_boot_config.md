@@ -76,6 +76,6 @@ boot_config  --depends-->   provider_runtime (must exist before boot)
 |----------|-------------|-------|
 | [[boot-config-builder]] | upstream | 0.60 |
 | [[bld_architecture_agent]] | sibling | 0.52 |
-| [[bld_collaboration_boot_config]] | downstream | 0.48 |
-| [[p01_kc_boot_config]] | upstream | 0.46 |
-| [[bld_instruction_boot_config]] | upstream | 0.42 |
+| [[bld_orchestration_boot_config]] | downstream | 0.48 |
+| [[kc_boot_config]] | upstream | 0.46 |
+| [[bld_prompt_boot_config]] | upstream | 0.42 |

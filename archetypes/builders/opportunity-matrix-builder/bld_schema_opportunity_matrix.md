@@ -79,7 +79,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_output_template_opportunity_matrix]] | sibling | 0.55 |
-| [[bld_instruction_opportunity_matrix]] | sibling | 0.50 |
+| [[bld_prompt_opportunity_matrix]] | sibling | 0.50 |
 | [[roi-calculator-builder]] | related | 0.40 |
 | [[research-pipeline-builder]] | related | 0.38 |
 | [[scoring-rubric-builder]] | related | 0.36 |

@@ -129,8 +129,8 @@ Max body: 3KB. Density >= 0.80. No hedge words. No operational detail.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_axiom]] | downstream | 0.58 |
-| [[p01_kc_axiom]] | upstream | 0.56 |
+| [[bld_orchestration_axiom]] | downstream | 0.58 |
+| [[kc_axiom]] | upstream | 0.56 |
 | [[bld_architecture_axiom]] | upstream | 0.56 |
-| [[bld_instruction_axiom]] | upstream | 0.55 |
-| [[bld_knowledge_card_axiom]] | upstream | 0.52 |
+| [[bld_prompt_axiom]] | upstream | 0.55 |
+| [[bld_knowledge_axiom]] | upstream | 0.52 |

@@ -84,5 +84,5 @@ related:
 | [[decision-record-builder]] | downstream | 0.55 |
 | [[bld_architecture_decision_record]] | downstream | 0.48 |
 | [[p10_lr_decision_record_builder]] | downstream | 0.45 |
-| [[bld_knowledge_card_decision_record]] | upstream | 0.44 |
+| [[bld_knowledge_decision_record]] | upstream | 0.44 |
 | [[bld_schema_decision_record]] | downstream | 0.44 |

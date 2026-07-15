@@ -69,8 +69,8 @@ Never guess these values -- always read the source files first.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_nucleus_def]] | upstream | 0.47 |
+| [[bld_knowledge_nucleus_def]] | upstream | 0.47 |
 | [[bld_tools_nucleus_def]] | upstream | 0.44 |
 | [[nucleus-def-builder]] | upstream | 0.42 |
-| [[bld_instruction_nucleus_def]] | upstream | 0.41 |
+| [[bld_prompt_nucleus_def]] | upstream | 0.41 |
 | [[p02_qg_nucleus_def]] | downstream | 0.40 |

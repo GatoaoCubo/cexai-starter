@@ -50,7 +50,7 @@ Does NOT define full agent capabilities (handled by `agent_full-builder`) or ref
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_collaboration_agent_computer_interface | sibling | 0.31 |
-| [[bld_collaboration_agent]] | sibling | 0.30 |
+| [[bld_orchestration_agent]] | sibling | 0.30 |
 | [[agent-profile-builder]] | upstream | 0.29 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.27 |
-| [[bld_collaboration_capability_registry]] | sibling | 0.26 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.27 |
+| [[bld_orchestration_capability_registry]] | sibling | 0.26 |

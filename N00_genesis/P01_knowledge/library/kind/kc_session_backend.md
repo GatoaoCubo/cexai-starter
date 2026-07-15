@@ -80,5 +80,5 @@ A session backend config tells CEX where to persist agent state between turns/ru
 |----------|-------------|-------|
 | [[session-backend-builder]] | upstream | 0.55 |
 | [[bld_architecture_session_backend]] | upstream | 0.54 |
-| [[bld_collaboration_session_backend]] | downstream | 0.50 |
-| [[bld_knowledge_card_session_backend]] | sibling | 0.48 |
+| [[bld_orchestration_session_backend]] | downstream | 0.50 |
+| [[bld_knowledge_session_backend]] | sibling | 0.48 |

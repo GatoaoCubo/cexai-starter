@@ -109,7 +109,7 @@ proof_bar:
 
 features:
   - title: "Typed infrastructure, not prompts"
-    body: "300 artifact kinds. Every agent has a schema, a builder, and a quality gate. No magic strings."
+    body: "125 artifact kinds. Every agent has a schema, a builder, and a quality gate. No magic strings."
   - title: "7 nuclei, one orchestrator"
     body: "Research, marketing, engineering, knowledge, ops, commercial -- all coordinated from N07."
   - title: "4 runtimes, zero lock-in"

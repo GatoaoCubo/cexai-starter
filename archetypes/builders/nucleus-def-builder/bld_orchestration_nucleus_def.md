@@ -85,6 +85,6 @@ N01 intelligence (scans actual nucleus directories)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[nucleus-def-builder]] | upstream | 0.50 |
-| [[bld_knowledge_card_nucleus_def]] | upstream | 0.46 |
+| [[bld_knowledge_nucleus_def]] | upstream | 0.46 |
 | n00_nucleus_def_manifest | upstream | 0.39 |
-| [[bld_collaboration_capability_registry]] | sibling | 0.34 |
+| [[bld_orchestration_capability_registry]] | sibling | 0.34 |

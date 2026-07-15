@@ -77,5 +77,5 @@ episodic_store.append({'event': 'personality_swap', 'to': 'per_{{name}}', 'times
 | [[bld_architecture_personality]] | upstream | 0.59 |
 | [[kc_personality]] | upstream | 0.55 |
 | n00_personality_manifest | upstream | 0.49 |
-| [[bld_knowledge_card_personality]] | upstream | 0.48 |
-| [[bld_collaboration_personality]] | downstream | 0.47 |
+| [[bld_knowledge_personality]] | upstream | 0.48 |
+| [[bld_orchestration_personality]] | downstream | 0.47 |

@@ -93,6 +93,6 @@ The pattern-builder receives a **recurring problem description** and produces a 
 |----------|-------------|-------|
 | [[pattern-builder]] | downstream | 0.44 |
 | [[bld_schema_pattern]] | downstream | 0.44 |
-| [[bld_knowledge_card_pattern]] | upstream | 0.41 |
+| [[bld_knowledge_pattern]] | upstream | 0.41 |
 | [[bld_memory_pattern]] | downstream | 0.40 |
-| [[bld_collaboration_pattern]] | downstream | 0.38 |
+| [[bld_orchestration_pattern]] | downstream | 0.38 |

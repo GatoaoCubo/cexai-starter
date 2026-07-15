@@ -147,8 +147,8 @@ alert_threshold: 0.8
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_rate_limit_config]] | downstream | 0.62 |
+| [[bld_orchestration_rate_limit_config]] | downstream | 0.62 |
 | [[p11_qg_rate_limit_config]] | downstream | 0.61 |
-| [[bld_instruction_rate_limit_config]] | upstream | 0.59 |
+| [[bld_prompt_rate_limit_config]] | upstream | 0.59 |
 | [[bld_architecture_rate_limit_config]] | upstream | 0.57 |
-| [[bld_knowledge_card_rate_limit_config]] | upstream | 0.54 |
+| [[bld_knowledge_rate_limit_config]] | upstream | 0.54 |

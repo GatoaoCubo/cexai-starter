@@ -164,8 +164,8 @@ Embeddings act as the **semantic bridge** between text and vector spaces. They a
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_embedding_config]] | related | 0.40 |
+| [[kc_embedding_config]] | related | 0.40 |
 | [[embedder-provider-builder]] | downstream | 0.39 |
 | p01_kc_supabase_vectors | related | 0.38 |
-| [[p01_kc_embedder_provider]] | related | 0.37 |
+| [[kc_embedder_provider]] | related | 0.37 |
 | p01_kc_vector_embedding_model_selection | related | 0.37 |

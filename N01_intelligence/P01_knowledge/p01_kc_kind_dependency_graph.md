@@ -4,14 +4,14 @@ kind: knowledge_card
 8f: F3_inject
 pillar: P01
 nucleus: n01
-title: "Kind Dependency Graph -- Cross-Kind Build Order for 293 Kinds"
+title: "Kind Dependency Graph -- Cross-Kind Build Order for 125 Kinds"
 version: 1.0.0
 created: 2026-04-18
 author: n01_intelligence
 domain: cex-architecture
 quality: null
 tags: [dependency_graph, kinds, build_order, architecture, critical_path]
-tldr: "Which kinds must exist before a given kind can be built. Full dependency graph for all 293 CEX kinds organized by pillar."
+tldr: "Which kinds must exist before a given kind can be built. Full dependency graph for all 125 CEX kinds organized by pillar."
 keywords: [rag_source, knowledge_card, glossary_entry, embedding_config, retriever_config, entity_memory, chunk_strategy, domain_vocabulary, ontology, mental_model]
 density_score: null
 related:

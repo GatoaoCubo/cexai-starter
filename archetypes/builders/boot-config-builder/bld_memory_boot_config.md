@@ -55,8 +55,8 @@ Provider constraint values change with model updates. Boot configs should be rev
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_provider]] | upstream | 0.49 |
+| [[bld_orchestration_model_provider]] | upstream | 0.49 |
 | [[boot-config-builder]] | upstream | 0.48 |
-| [[bld_collaboration_boot_config]] | downstream | 0.42 |
+| [[bld_orchestration_boot_config]] | downstream | 0.42 |
 | [[bld_config_model_provider]] | upstream | 0.42 |
-| [[p01_kc_boot_config]] | upstream | 0.42 |
+| [[kc_boot_config]] | upstream | 0.42 |

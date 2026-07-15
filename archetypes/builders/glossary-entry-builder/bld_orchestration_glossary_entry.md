@@ -66,7 +66,7 @@ None — independent builder (layer 0). Terms can be defined standalone.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_collaboration_context_doc | sibling | 0.45 |
-| [[bld_collaboration_knowledge_card]] | sibling | 0.41 |
+| [[bld_orchestration_knowledge_card]] | sibling | 0.41 |
 | [[glossary-entry-builder]] | upstream | 0.39 |
-| [[p01_kc_glossary_entry]] | upstream | 0.36 |
+| [[kc_glossary_entry]] | upstream | 0.36 |
 | p01_gl_TERM_SLUG | upstream | 0.36 |

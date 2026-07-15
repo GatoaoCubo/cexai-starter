@@ -74,4 +74,4 @@ python _tools/cex_memory_update.py --check
 | [[kc_constitutional_rule]] | sibling | 0.47 |
 | [[bld_rules_constitutional_rule]] | sibling | 0.45 |
 | [[bld_architecture_constitutional_rule]] | sibling | 0.44 |
-| [[bld_knowledge_card_constitutional_rule]] | sibling | 0.39 |
+| [[bld_knowledge_constitutional_rule]] | sibling | 0.39 |

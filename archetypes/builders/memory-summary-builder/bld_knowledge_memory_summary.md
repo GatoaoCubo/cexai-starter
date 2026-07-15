@@ -90,6 +90,6 @@ Drop: greetings, filler, redundant clarification loops, tool call details when o
 |----------|-------------|-------|
 | [[memory-summary-builder]] | downstream | 0.44 |
 | [[p10_lr_memory_summary_builder]] | downstream | 0.42 |
-| [[p01_kc_memory_summary]] | sibling | 0.36 |
+| [[kc_memory_summary]] | sibling | 0.36 |
 | p01_kc_memory_persistence | sibling | 0.34 |
-| [[bld_collaboration_memory_summary]] | downstream | 0.34 |
+| [[bld_orchestration_memory_summary]] | downstream | 0.34 |

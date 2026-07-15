@@ -84,5 +84,5 @@ Prompt templates are parameterized text molds where fixed structure and dynamic 
 | [[bld_memory_prompt_template]] | downstream | 0.57 |
 | [[prompt-template-builder]] | downstream | 0.57 |
 | [[p03_ins_prompt_template]] | downstream | 0.55 |
-| [[bld_collaboration_prompt_template]] | downstream | 0.50 |
+| [[bld_orchestration_prompt_template]] | downstream | 0.50 |
 | [[schema_prompt_template_builder]] | downstream | 0.45 |

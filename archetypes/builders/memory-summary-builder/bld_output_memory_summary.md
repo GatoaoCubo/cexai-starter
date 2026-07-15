@@ -93,6 +93,6 @@ Timestamps: {{retained|discarded}} — `{{temporal_marker_format}}`
 |----------|-------------|-------|
 | [[memory-summary-builder]] | downstream | 0.41 |
 | [[p11_qg_memory_summary]] | downstream | 0.37 |
-| [[bld_instruction_memory_summary]] | upstream | 0.36 |
+| [[bld_prompt_memory_summary]] | upstream | 0.36 |
 | [[bld_schema_memory_summary]] | downstream | 0.34 |
 | [[p10_lr_memory_summary_builder]] | downstream | 0.31 |

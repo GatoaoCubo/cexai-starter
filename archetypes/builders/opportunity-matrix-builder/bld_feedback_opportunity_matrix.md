@@ -86,7 +86,7 @@ density: 0.85+
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p11_qg_opportunity_matrix]] | sibling | 0.82 |
-| [[bld_instruction_opportunity_matrix]] | sibling | 0.75 |
+| [[bld_prompt_opportunity_matrix]] | sibling | 0.75 |
 | [[opportunity-matrix-builder]] | sibling | 0.70 |
 | [[p11_fb_roi_calculator]] | related | 0.55 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.40 |

@@ -77,8 +77,8 @@ Never set pillar to P10 — that requires a different builder.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_mental_model]] | upstream | 0.39 |
+| [[bld_knowledge_mental_model]] | upstream | 0.39 |
 | [[mental-model-builder]] | upstream | 0.34 |
 | [[p03_ins_mental_model]] | upstream | 0.33 |
 | [[bld_schema_mental_model]] | upstream | 0.31 |
-| [[bld_collaboration_mental_model]] | upstream | 0.31 |
+| [[bld_orchestration_mental_model]] | upstream | 0.31 |

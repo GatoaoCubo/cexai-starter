@@ -77,4 +77,4 @@ I produce YAML permission bundles for agent tool access: tool definitions with c
 | [[p03_ins_toolkit_builder]] | downstream | 0.46 |
 | [[bld_tools_toolkit]] | downstream | 0.43 |
 | [[bld_architecture_toolkit]] | downstream | 0.43 |
-| [[bld_knowledge_card_toolkit]] | upstream | 0.41 |
+| [[bld_knowledge_toolkit]] | upstream | 0.41 |

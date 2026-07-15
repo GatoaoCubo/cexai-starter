@@ -62,6 +62,6 @@ distilled `knowledge_card` provenance and the scoped `knowledge_index`.
 |----------|-------------|-------|
 | [[n04_rs_assimilation]] | upstream | 0.42 |
 | [[p01_retr_assimilation_n04]] | sibling | 0.34 |
-| [[p01_kc_chunk_strategy]] | related | 0.30 |
+| [[kc_chunk_strategy]] | related | 0.30 |
 | p01_kc_rag_chunking_strategies | related | 0.28 |
-| [[bld_collaboration_chunk_strategy]] | related | 0.26 |
+| [[bld_orchestration_chunk_strategy]] | related | 0.26 |

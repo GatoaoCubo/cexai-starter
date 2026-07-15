@@ -83,7 +83,7 @@ Rule: if status == superseded, superseded_by MUST be populated with a valid p08_
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_decision_record]] | upstream | 0.44 |
-| [[bld_instruction_decision_record]] | upstream | 0.43 |
+| [[bld_prompt_decision_record]] | upstream | 0.43 |
 | [[decision-record-builder]] | upstream | 0.41 |
-| [[bld_knowledge_card_decision_record]] | upstream | 0.40 |
+| [[bld_knowledge_decision_record]] | upstream | 0.40 |
 | [[p10_lr_decision_record_builder]] | downstream | 0.40 |

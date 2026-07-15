@@ -146,7 +146,7 @@ expected_output: `{{expected_output}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[unit-eval-builder]] | downstream | 0.48 |
-| [[bld_knowledge_card_unit_eval]] | upstream | 0.47 |
+| [[bld_knowledge_unit_eval]] | upstream | 0.47 |
 | [[bld_architecture_unit_eval]] | downstream | 0.40 |
 | [[bld_schema_unit_eval]] | downstream | 0.39 |
 | [[bld_memory_unit_eval]] | downstream | 0.37 |

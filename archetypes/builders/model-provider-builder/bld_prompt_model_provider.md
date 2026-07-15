@@ -111,7 +111,7 @@ Score all SOFT gates. If soft score < 8.0, revise in the same pass.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[model-provider-builder]] | upstream | 0.61 |
-| [[bld_knowledge_card_model_provider]] | upstream | 0.57 |
-| [[bld_collaboration_model_provider]] | upstream | 0.56 |
+| [[bld_knowledge_model_provider]] | upstream | 0.57 |
+| [[bld_orchestration_model_provider]] | upstream | 0.56 |
 | [[p11_qg_model_provider]] | downstream | 0.54 |
 | [[bld_memory_model_provider]] | downstream | 0.52 |

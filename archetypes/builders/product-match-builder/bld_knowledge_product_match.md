@@ -97,7 +97,7 @@ runs on local data with zero network calls.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_product_match]] | downstream | 0.48 |
-| [[bld_knowledge_card_vision_tool]] | sibling | 0.44 |
+| [[bld_knowledge_vision_tool]] | sibling | 0.44 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.43 |
 | n01_sourcing_rigor | upstream | 0.40 |
 | n03_schema | upstream | 0.36 |

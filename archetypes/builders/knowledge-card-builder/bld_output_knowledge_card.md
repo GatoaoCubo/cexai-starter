@@ -88,8 +88,8 @@ Executive Summary, Spec Table, Patterns, Anti-Patterns, Application, References.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_knowledge_card]] | upstream | 0.24 |
+| [[bld_prompt_knowledge_card]] | upstream | 0.24 |
 | p10_out_knowledge_card | downstream | 0.22 |
 | [[bld_schema_knowledge_card]] | downstream | 0.21 |
 | [[bld_config_knowledge_card]] | downstream | 0.20 |
-| [[bld_knowledge_card_knowledge_card]] | upstream | 0.18 |
+| [[bld_knowledge_knowledge_card]] | upstream | 0.18 |

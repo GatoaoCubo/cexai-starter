@@ -94,6 +94,6 @@ model_tested: "{{model_tested}}}}"
 |----------|-------------|-------|
 | [[prompt-version-builder]] | upstream | 0.41 |
 | [[bld_architecture_prompt_version]] | downstream | 0.40 |
-| [[bld_instruction_prompt_version]] | upstream | 0.37 |
-| [[bld_collaboration_prompt_version]] | downstream | 0.35 |
+| [[bld_prompt_prompt_version]] | upstream | 0.37 |
+| [[bld_orchestration_prompt_version]] | downstream | 0.35 |
 | [[bld_schema_prompt_version]] | downstream | 0.35 |

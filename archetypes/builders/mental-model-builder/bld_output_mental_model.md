@@ -120,6 +120,6 @@ Routes away: `{{routed_domains_with_targets}}`
 |----------|-------------|-------|
 | [[mental-model-builder]] | upstream | 0.44 |
 | [[p03_ins_mental_model]] | upstream | 0.43 |
-| [[bld_knowledge_card_mental_model]] | upstream | 0.43 |
+| [[bld_knowledge_mental_model]] | upstream | 0.43 |
 | [[bld_config_mental_model]] | downstream | 0.39 |
 | [[p11_qg_mental_model]] | downstream | 0.38 |

@@ -72,8 +72,8 @@ NEVER conflate the charter with the handoff -- the charter is WHAT and WHY; the 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_team_charter]] | upstream | 0.55 |
-| [[bld_collaboration_team_charter]] | related | 0.52 |
+| [[bld_knowledge_team_charter]] | upstream | 0.55 |
+| [[bld_orchestration_team_charter]] | related | 0.52 |
 | [[kc_team_charter]] | upstream | 0.46 |
 | [[p10_lr_team_charter_builder]] | upstream | 0.42 |
 | [[bld_tools_team_charter]] | upstream | 0.41 |

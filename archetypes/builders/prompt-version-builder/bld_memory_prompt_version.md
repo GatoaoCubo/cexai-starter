@@ -78,8 +78,8 @@ python _tools/cex_score.py --apply p10-lr-prompt-version-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_prompt_version]] | upstream | 0.48 |
+| [[bld_knowledge_prompt_version]] | upstream | 0.48 |
 | [[prompt-version-builder]] | upstream | 0.47 |
-| [[bld_collaboration_prompt_version]] | downstream | 0.42 |
+| [[bld_orchestration_prompt_version]] | downstream | 0.42 |
 | [[p10_lr_retriever_config_builder]] | sibling | 0.38 |
-| [[p01_kc_prompt_version]] | upstream | 0.37 |
+| [[kc_prompt_version]] | upstream | 0.37 |

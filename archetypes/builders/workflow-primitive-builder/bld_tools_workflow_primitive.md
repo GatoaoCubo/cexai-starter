@@ -70,7 +70,7 @@ Until a dedicated workflow_primitive validator exists, validate manually:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_workflow_primitive]] | downstream | 0.50 |
-| [[bld_collaboration_workflow_primitive]] | upstream | 0.49 |
+| [[bld_orchestration_workflow_primitive]] | upstream | 0.49 |
 | [[bld_config_workflow_primitive]] | downstream | 0.47 |
 | [[workflow-primitive-builder]] | downstream | 0.43 |
 | [[p03_ins_workflow_primitive_builder]] | upstream | 0.42 |

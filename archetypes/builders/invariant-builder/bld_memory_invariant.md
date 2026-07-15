@@ -86,7 +86,7 @@ python _tools/cex_score.py --apply bld-memory-invariant.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[invariant-builder]] | upstream | 0.48 |
-| [[bld_collaboration_invariant]] | upstream | 0.45 |
-| [[bld_knowledge_card_invariant]] | upstream | 0.43 |
+| [[bld_orchestration_invariant]] | upstream | 0.45 |
+| [[bld_knowledge_invariant]] | upstream | 0.43 |
 | [[p03_ins_law]] | upstream | 0.38 |
 | n00_invariant_manifest | upstream | 0.34 |

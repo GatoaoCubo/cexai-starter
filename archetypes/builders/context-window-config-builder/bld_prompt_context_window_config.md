@@ -93,6 +93,6 @@ python _tools/cex_skill_loader.py --verify context
 |----------|-------------|-------|
 | [[bld_config_context_window_config]] | downstream | 0.39 |
 | [[p11_qg_context_window_config]] | downstream | 0.37 |
-| [[p01_kc_context_window_config]] | related | 0.33 |
+| [[kc_context_window_config]] | related | 0.33 |
 | bld_instruction_prompt_cache | sibling | 0.32 |
-| [[bld_instruction_retriever_config]] | sibling | 0.31 |
+| [[bld_prompt_retriever_config]] | sibling | 0.31 |

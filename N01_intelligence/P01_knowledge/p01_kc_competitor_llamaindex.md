@@ -48,7 +48,7 @@ and commercial OCR platforms, while maintaining developer community through the 
 it understands that knowledge infrastructure (indices, retrieval, memory) must underpin agents. However,
 it is entirely data-retrieval-focused and has no typed artifact governance, no nuclei specialization,
 no quality gates, and no 8F reasoning protocol. CEX's P01_knowledge pillar is architecturally superior
-to LlamaIndex: CEX types knowledge into 300 kinds, enforces quality scoring, and compiles knowledge
+to LlamaIndex: CEX types knowledge into 125 kinds, enforces quality scoring, and compiles knowledge
 into searchable artifacts -- LlamaIndex indexes whatever you give it without governance.
 
 ---
@@ -220,7 +220,7 @@ and tutorials are embedded in the codebase itself.
 
 | Weakness | CEX Exploit Angle |
 |----------|------------------|
-| RAG-only depth, shallow orchestration | CEX has 7 specialized nuclei + 300 kinds; LlamaIndex is great at retrieval, weak at agentic governance |
+| RAG-only depth, shallow orchestration | CEX has 7 specialized nuclei + 125 kinds; LlamaIndex is great at retrieval, weak at agentic governance |
 | No typed artifact taxonomy | LlamaIndex indexes documents; CEX produces typed, compilable, scored artifacts |
 | No quality gates | LlamaIndex has no scoring rubric; CEX enforces 9.0 target with 8F pipeline |
 | No multi-nucleus governance | LlamaIndex has agents, not specialized nuclei with domain separation |
@@ -253,7 +253,7 @@ and tutorials are embedded in the codebase itself.
 
 | Dimension | LlamaIndex | CEX |
 |-----------|-----------|-----|
-| Architecture | Index-centric RAG + document agents | 300 kinds x 12 pillars x 7 nuclei |
+| Architecture | Index-centric RAG + document agents | 125 kinds x 12 pillars x 7 nuclei |
 | Knowledge model | External document indexing | Typed internal KC library + entity_memory + learning_records |
 | Quality system | None | 9.0 target, 7 gates, 5D scoring (cex_score.py) |
 | Reasoning protocol | None mandatory (model decides) | Mandatory 8F (F1-F8, every task) |

@@ -81,7 +81,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[retry-policy-builder]] | downstream | 0.63 |
-| [[bld_knowledge_card_retry_policy]] | upstream | 0.57 |
+| [[bld_knowledge_retry_policy]] | upstream | 0.57 |
 | [[kc_retry_policy]] | upstream | 0.55 |
 | [[p11_qg_retry_policy]] | downstream | 0.48 |
 | [[p10_lr_retry_policy_builder]] | downstream | 0.47 |

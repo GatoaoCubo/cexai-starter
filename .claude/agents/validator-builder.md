@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[validator-builder]] | related | 0.38 |
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.30 |
-| [[p01_kc_validator]] | related | 0.30 |
+| [[kc_validator]] | related | 0.30 |
 | [[output-validator-builder]] | related | 0.29 |

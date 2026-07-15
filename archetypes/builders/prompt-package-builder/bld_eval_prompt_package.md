@@ -127,6 +127,6 @@ ISO, fill markers intact).
 |----------|-------------|-------|
 | [[p11_qg_prompt_template]] | sibling | 0.60 |
 | [[p03_ins_prompt_package]] | related | 0.52 |
-| [[bld_knowledge_card_prompt_package]] | related | 0.48 |
+| [[bld_knowledge_prompt_package]] | related | 0.48 |
 | [[prompt-package-builder]] | upstream | 0.45 |
 | [[bld_memory_prompt_package]] | related | 0.40 |

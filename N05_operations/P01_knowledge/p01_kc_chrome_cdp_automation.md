@@ -209,5 +209,5 @@ Full protocol docs: https://chromedevtools.github.io/devtools-protocol/
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p04_browser_cdp_connector | downstream | 0.61 |
-| [[p01_kc_browser_tool]] | sibling | 0.21 |
-| [[bld_knowledge_card_browser_tool]] | sibling | 0.19 |
+| [[kc_browser_tool]] | sibling | 0.21 |
+| [[bld_knowledge_browser_tool]] | sibling | 0.19 |

@@ -84,5 +84,5 @@ Secret configs are credential management specifications that define how sensitiv
 | [[secret-config-builder]] | downstream | 0.56 |
 | [[p10_lr_secret_config_builder]] | downstream | 0.49 |
 | [[bld_config_secret_config]] | downstream | 0.48 |
-| [[bld_collaboration_secret_config]] | downstream | 0.45 |
+| [[bld_orchestration_secret_config]] | downstream | 0.45 |
 | [[bld_output_template_secret_config]] | downstream | 0.44 |

@@ -38,14 +38,14 @@ related:
 ### Q1: What is CEX and why is it different from a regular AI agent?
 
 Most AI agents are a system prompt plus a few tools. CEX is typed infrastructure for LLM agents:
-every piece of knowledge is a **kind**, every kind has a **builder** (13 ISO files), every builder
+every piece of knowledge is a **kind**, every kind has a **builder** (12 ISO files), every builder
 follows the **8F pipeline**, and eight specialized nuclei collaborate through a governance layer.
 
 Key differences:
 
 | Regular Agent | CEX |
 |--------------|-----|
-| System prompt + tools | 300 kinds, 300+ builders, 3647 ISOs |
+| System prompt + tools | 125 kinds, 119 builders, 1428 ISOs |
 | One model | 4 runtimes (Claude, Codex, Gemini, Ollama) |
 | Memory = conversation history | 12-pillar typed knowledge system |
 | No quality enforcement | 3-layer quality scoring (target 9.0) |
@@ -57,24 +57,24 @@ Key differences:
 
 ### Q2: What is a builder, exactly?
 
-A builder is 13 markdown files in `archetypes/builders/{kind}-builder/`. Each file is one ISO
+A builder is 12 markdown files in `archetypes/builders/{kind}-builder/`. Each file is one ISO
 (Instruction Set Object). Together they teach the LLM pipeline one job: how to produce artifacts
 of a specific kind (e.g., `knowledge_card`, `agent`, `landing_page`).
 
-The 13 ISOs map to the 8F pipeline functions:
+The 12 ISOs map to the 8F pipeline functions (verified against
+`archetypes/builders/agent-builder/`, disk-identical for every kind):
 
 | ISO | 8F Function |
 |-----|------------|
-| `bld_manifest_{kind}.md` | F2 BECOME (identity) |
-| `bld_system_prompt_{kind}.md` | F2 BECOME (persona) |
-| `bld_instruction_{kind}.md` | F4 REASON (how to build) |
-| `bld_knowledge_card_{kind}.md` | F3 INJECT (domain knowledge) |
-| `bld_examples_{kind}.md` | F7 GOVERN (reference output) |
-| `bld_quality_gate_{kind}.md` | F7 GOVERN (pass/fail criteria) |
-| `bld_output_template_{kind}.md` | F6 PRODUCE (format) |
+| `bld_model_{kind}.md` | F2 BECOME (identity) |
+| `bld_prompt_{kind}.md` | F6 PRODUCE (persona + generation) |
+| `bld_knowledge_{kind}.md` | F3 INJECT (domain knowledge) |
+| `bld_feedback_{kind}.md` | F7 GOVERN (quality signals) |
+| `bld_eval_{kind}.md` | F7 GOVERN (pass/fail criteria) |
+| `bld_output_{kind}.md` | F6 PRODUCE (format) |
 | `bld_schema_{kind}.md` | F1 CONSTRAIN (input/output schema) |
 | `bld_architecture_{kind}.md` | F1 CONSTRAIN (component map) |
-| `bld_collaboration_{kind}.md` | F8 COLLABORATE (dependencies) |
+| `bld_orchestration_{kind}.md` | F8 COLLABORATE (dependencies) |
 | `bld_memory_{kind}.md` | F3b PERSIST (session learning) |
 | `bld_config_{kind}.md` | F1 CONSTRAIN (builder config) |
 | `bld_tools_{kind}.md` | F5 CALL (available tools) |
@@ -118,7 +118,7 @@ the `cex_doctor.py` check in CI). If you set `quality: 9.5` yourself, the PR wil
 | Check category | What it validates |
 |---------------|-------------------|
 | Frontmatter | Required fields present (id, kind, pillar, quality, version) |
-| ISO completeness | All 13 files exist in every builder directory |
+| ISO completeness | All 12 files exist in every builder directory |
 | Density | Body has sufficient structured content (tables, bullets) |
 | Naming | snake_case filenames, ASCII only, <= 50 chars |
 | Non-ASCII in code | `.py`, `.ps1`, `.sh` files are byte-clean |
@@ -133,8 +133,9 @@ Run it before every commit: `python _tools/cex_doctor.py`
 A kind is an atomic artifact type in the CEX taxonomy. Think of it as a class in OOP:
 a kind defines the schema, pillar, and quality criteria for a category of artifacts.
 
-- 300 kinds are registered in `.cex/kinds_meta.json`
-- 300+ builders exist (some kinds have 2 builder variants)
+- 125 kinds are registered in `.cex/kinds_meta.json` in this starter (verify live:
+  `python -c "import json;print(len(json.load(open('.cex/kinds_meta.json'))))"`)
+- 119 builders exist (1 builder per kind for most; a few kinds share variants)
 - Kinds are grouped into 12 pillars (P01-P12)
 
 Examples by pillar:
@@ -218,7 +219,7 @@ If CI is failing, fix it first -- PRs with failing CI are not reviewed.
 
 | Concept | Location | Purpose |
 |---------|----------|---------|
-| Builder | `archetypes/builders/{kind}-builder/` | 13 ISOs that teach LLM how to produce a kind |
+| Builder | `archetypes/builders/{kind}-builder/` | 12 ISOs that teach LLM how to produce a kind |
 | Sub-agent | `.claude/agents/{kind}-builder.md` | Compiled agent definition for Claude Code |
 
 Sub-agents are auto-generated from builders via `python _tools/cex_materialize.py`.  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->

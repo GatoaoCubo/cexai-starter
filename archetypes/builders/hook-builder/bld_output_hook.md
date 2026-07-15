@@ -100,7 +100,7 @@ Strategy: `{{error_handling}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_hook]] | downstream | 0.44 |
-| [[bld_instruction_hook]] | upstream | 0.42 |
+| [[bld_prompt_hook]] | upstream | 0.42 |
 | [[p11_qg_hook]] | downstream | 0.41 |
 | [[bld_architecture_hook]] | downstream | 0.39 |
 | [[hook-builder]] | upstream | 0.38 |

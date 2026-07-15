@@ -240,8 +240,8 @@ Kind subClassOf (hasBuilder exactly 1 Builder)
 | frontmatter | metadata header | YAML front matter, JSON-LD header | standard CEX format |
 | signal | completion event | A2A Task signal, BPMN End Event | F8 COLLABORATE |
 | handoff | context transfer | A2A Message, FIPA ACL performative | inter-nucleus |
-| builder | artifact factory | Factory pattern, Builder pattern (GoF) | 300+ builders |
-| ISO | builder component | Interface, Module, Mixin | 13 per kind |
+| builder | artifact factory | Factory pattern, Builder pattern (GoF) | 119 builders |
+| ISO | builder component | Interface, Module, Mixin | 12 per kind |
 | GDP | co-pilot protocol | Human-in-the-loop, Decision support | subjective decisions |
 | sin lens | optimization bias | Objective function, Reward function | nucleus identity |
 | archetype | template / prototype | OOP prototype, N00 genesis | N00 is the archetype |

@@ -11,7 +11,7 @@ author: builder_agent
 domain: meta-construction
 quality: null
 tags: [agent-card, builder, N03]
-tldr: "N03 deployment spec: Sonnet 200K context (model-economy 2026-07-01; Opus via W5 escalation ladder below 8.0), 10-120s latency per artifact, 300+ kind coverage, 7-gate quality SLA >= 8.0, 4 failure modes with automatic recovery."
+tldr: "N03 deployment spec: Sonnet 200K context (model-economy 2026-07-01; Opus via W5 escalation ladder below 8.0), 10-120s latency per artifact, 125 kind coverage, 7-gate quality SLA >= 8.0, 4 failure modes with automatic recovery."
 keywords: [meta-construction, kind registration, quality validation, nucleus bootstrap, multi-kind crew, artifact build, cex_8f_motor.py, f7 govern gate, runtime signals]
 density_score: 0.88
 related:
@@ -40,7 +40,7 @@ related:
 
 | Capability | Level |
 |------------|-------|
-| Single artifact build | Expert (99/300 kinds) |
+| Single artifact build | Expert (99/125 kinds) |
 | Multi-kind crew | Advanced (235 crews) |
 | Nucleus bootstrap | Advanced (7+ sequential) |
 | Kind registration | Expert (4-file atomic) |

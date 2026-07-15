@@ -95,8 +95,8 @@ A signal is a lightweight JSON event file written by one agent and read by anoth
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_signal]] | sibling | 0.42 |
+| [[bld_knowledge_signal]] | sibling | 0.42 |
 | bld_collaboration_event_schema | related | 0.42 |
 | [[signal-builder]] | related | 0.40 |
-| [[bld_collaboration_signal]] | related | 0.39 |
+| [[bld_orchestration_signal]] | related | 0.39 |
 | [[p03_ins_signal_builder]] | upstream | 0.35 |

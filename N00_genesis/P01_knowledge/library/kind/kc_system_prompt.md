@@ -117,4 +117,4 @@ This artifact defines **system prompt engineering** as the practice of crafting 
 | p01_kc_pillar_brief_p03_prompt_en | sibling | 0.29 |
 | [[action-prompt-builder]] | downstream | 0.28 |
 | [[bld_memory_system_prompt]] | downstream | 0.27 |
-| [[bld_collaboration_response_format]] | downstream | 0.25 |
+| [[bld_orchestration_response_format]] | downstream | 0.25 |

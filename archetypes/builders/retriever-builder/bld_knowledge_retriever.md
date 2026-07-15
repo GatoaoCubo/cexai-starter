@@ -116,4 +116,4 @@ LangChain BaseRetriever, LlamaIndex QueryEngine, Haystack, ColBERT, BEIR benchma
 | [[bld_memory_retriever]] | downstream | 0.47 |
 | [[bld_architecture_retriever]] | downstream | 0.44 |
 | [[bld_config_retriever]] | upstream | 0.39 |
-| [[bld_instruction_retriever]] | upstream | 0.38 |
+| [[bld_prompt_retriever]] | upstream | 0.38 |

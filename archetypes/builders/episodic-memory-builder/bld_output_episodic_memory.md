@@ -109,4 +109,4 @@ Pruning: `{{what_happens_to_pruned_episodes}}`
 | [[p10_qg_episodic_memory]] | downstream | 0.38 |
 | bld_schema_model_registry | downstream | 0.34 |
 | bld_schema_experiment_tracker | downstream | 0.32 |
-| [[bld_instruction_episodic_memory]] | upstream | 0.30 |
+| [[bld_prompt_episodic_memory]] | upstream | 0.30 |

@@ -74,8 +74,8 @@ token_endpoint_auth_method: "client_secret_post"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_oauth_app_config]] | sibling | 0.42 |
+| [[bld_knowledge_oauth_app_config]] | sibling | 0.42 |
 | ex_oauth_app_config_meli | downstream | 0.40 |
 | [[oauth-app-config-builder]] | downstream | 0.39 |
 | ex_oauth_app_config_bling | downstream | 0.36 |
-| [[bld_instruction_oauth_app_config]] | downstream | 0.35 |
+| [[bld_prompt_oauth_app_config]] | downstream | 0.35 |

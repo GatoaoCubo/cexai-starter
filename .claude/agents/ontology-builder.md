@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[ontology-builder]] | related | 0.42 |
 | n00_ontology_manifest | related | 0.39 |
 | [[bld_architecture_ontology]] | related | 0.39 |
-| [[bld_collaboration_ontology]] | related | 0.35 |
+| [[bld_orchestration_ontology]] | related | 0.35 |
 | kind-builder | related | 0.30 |

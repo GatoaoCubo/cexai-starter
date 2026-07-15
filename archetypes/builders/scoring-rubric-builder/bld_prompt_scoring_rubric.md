@@ -141,7 +141,7 @@ INPUT: weighted_dimensions[], artifact_profile
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_scoring_rubric]] | upstream | 0.41 |
+| [[bld_knowledge_scoring_rubric]] | upstream | 0.41 |
 | [[scoring-rubric-builder]] | downstream | 0.40 |
 | [[bld_memory_scoring_rubric]] | downstream | 0.38 |
 | [[bld_architecture_scoring_rubric]] | downstream | 0.32 |

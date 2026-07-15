@@ -68,7 +68,7 @@ Security rules:
 ## Builder Context
 
 This ISO operates within the `secret-config-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -123,8 +123,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_secret_config_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_secret_config]] | upstream | 0.39 |
-| [[bld_instruction_secret_config]] | upstream | 0.36 |
+| [[bld_knowledge_secret_config]] | upstream | 0.39 |
+| [[bld_prompt_secret_config]] | upstream | 0.36 |
 | [[secret-config-builder]] | upstream | 0.34 |
-| [[bld_collaboration_secret_config]] | downstream | 0.33 |
+| [[bld_orchestration_secret_config]] | downstream | 0.33 |
 | [[bld_output_template_secret_config]] | upstream | 0.33 |

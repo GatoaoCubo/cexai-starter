@@ -74,7 +74,7 @@ or nucleus's own F6 PRODUCE step.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_collaboration_kind | sibling (reflexive-case source) | 0.48 |
-| [[bld_collaboration_prompt_template]] | sibling (contrast) | 0.44 |
-| [[bld_collaboration_response_format]] | related (contrast) | 0.36 |
-| [[bld_collaboration_formatter]] | related (contrast) | 0.32 |
+| [[bld_orchestration_prompt_template]] | sibling (contrast) | 0.44 |
+| [[bld_orchestration_response_format]] | related (contrast) | 0.36 |
+| [[bld_orchestration_formatter]] | related (contrast) | 0.32 |
 | bld_collaboration_field_manifest | sibling | 0.30 |

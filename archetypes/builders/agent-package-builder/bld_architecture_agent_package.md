@@ -77,5 +77,5 @@ agent_package   --consumed_by--> workflow
 | [[agent-builder]] | upstream | 0.45 |
 | [[agent-package-builder]] | upstream | 0.45 |
 | [[bld_architecture_agent]] | sibling | 0.44 |
-| [[p01_kc_agent_package]] | upstream | 0.43 |
-| [[bld_instruction_agent_package]] | upstream | 0.41 |
+| [[kc_agent_package]] | upstream | 0.43 |
+| [[bld_prompt_agent_package]] | upstream | 0.41 |

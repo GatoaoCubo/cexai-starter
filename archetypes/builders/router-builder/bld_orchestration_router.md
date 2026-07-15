@@ -75,6 +75,6 @@ I produce route tables with confidence thresholds, fallback routes, and escalati
 |----------|-------------|-------|
 | [[router-builder]] | related | 0.42 |
 | bld_collaboration_dispatch_rule | sibling | 0.41 |
-| [[bld_collaboration_fallback_chain]] | sibling | 0.36 |
-| [[bld_collaboration_agent]] | sibling | 0.36 |
+| [[bld_orchestration_fallback_chain]] | sibling | 0.36 |
+| [[bld_orchestration_agent]] | sibling | 0.36 |
 | [[p03_ins_router]] | related | 0.35 |

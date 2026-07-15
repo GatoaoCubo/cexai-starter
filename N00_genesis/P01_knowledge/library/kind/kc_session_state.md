@@ -107,5 +107,5 @@ Session state is an ephemeral YAML snapshot of a single execution session — th
 |----------|-------------|-------|
 | [[session-state-builder]] | related | 0.51 |
 | [[bld_memory_session_state]] | related | 0.47 |
-| [[bld_collaboration_session_state]] | related | 0.46 |
+| [[bld_orchestration_session_state]] | related | 0.46 |
 | [[bld_architecture_session_state]] | upstream | 0.44 |

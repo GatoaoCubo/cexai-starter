@@ -74,5 +74,5 @@ python _tools/cex_score.py --apply bld-collaboration-tagline.md
 | [[bld_architecture_tagline]] | upstream | 0.47 |
 | [[bld_tools_tagline]] | upstream | 0.44 |
 | [[bld_memory_tagline]] | upstream | 0.44 |
-| [[bld_collaboration_landing_page]] | sibling | 0.42 |
+| [[bld_orchestration_landing_page]] | sibling | 0.42 |
 | [[tagline-builder]] | upstream | 0.42 |

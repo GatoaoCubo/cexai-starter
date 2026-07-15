@@ -45,7 +45,7 @@ Reviewed artifacts showed 30% higher success rates when modalities were labeled 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[multimodal-prompt-builder]] | upstream | 0.51 |
-| [[bld_knowledge_card_multimodal_prompt]] | upstream | 0.48 |
+| [[bld_knowledge_multimodal_prompt]] | upstream | 0.48 |
 | multi-modal-config-builder | upstream | 0.42 |
 | [[p03_qg_multimodal_prompt]] | downstream | 0.42 |
 | bld_output_template_multi_modal_config | upstream | 0.40 |

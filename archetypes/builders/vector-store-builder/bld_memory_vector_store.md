@@ -90,8 +90,8 @@ python _tools/cex_score.py --apply bld-memory-vector-store.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_vector_store]] | upstream | 0.67 |
+| [[bld_knowledge_vector_store]] | upstream | 0.67 |
 | [[vector-store-builder]] | upstream | 0.60 |
 | [[p11_qg_vector_store]] | downstream | 0.52 |
-| [[p01_kc_vector_store]] | upstream | 0.50 |
+| [[kc_vector_store]] | upstream | 0.50 |
 | [[p03_ins_vector_store]] | upstream | 0.48 |

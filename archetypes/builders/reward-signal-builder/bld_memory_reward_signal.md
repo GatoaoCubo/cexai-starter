@@ -66,8 +66,8 @@ LLM-judge validation:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_reward_signal]] | upstream | 0.42 |
+| [[bld_knowledge_reward_signal]] | upstream | 0.42 |
 | p07_llm_judge | upstream | 0.31 |
 | [[bld_architecture_reward_signal]] | upstream | 0.31 |
-| [[bld_instruction_reward_signal]] | upstream | 0.31 |
-| [[p01_kc_reward_signal]] | downstream | 0.31 |
+| [[bld_prompt_reward_signal]] | upstream | 0.31 |
+| [[kc_reward_signal]] | downstream | 0.31 |

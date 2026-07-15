@@ -70,7 +70,7 @@ guardrail      --depends-->      permission
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[permission-builder]] | downstream | 0.59 |
-| [[bld_collaboration_permission]] | downstream | 0.56 |
+| [[bld_orchestration_permission]] | downstream | 0.56 |
 | [[p11_qg_permission]] | downstream | 0.55 |
 | [[bld_memory_permission]] | downstream | 0.49 |
 | [\[p09_perm_`{{SCOPE_SLUG}}`\]] | downstream | 0.48 |

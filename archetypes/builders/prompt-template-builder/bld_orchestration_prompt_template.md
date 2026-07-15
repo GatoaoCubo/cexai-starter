@@ -74,8 +74,8 @@ I produce parameterized templates with `{{variables}}` — not fixed prompts, no
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_response_format]] | sibling | 0.41 |
-| [[bld_collaboration_action_prompt]] | sibling | 0.41 |
+| [[bld_orchestration_response_format]] | sibling | 0.41 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.41 |
 | [[prompt-template-builder]] | related | 0.39 |
-| [[bld_collaboration_prompt_version]] | sibling | 0.39 |
-| [[bld_collaboration_few_shot_example]] | sibling | 0.36 |
+| [[bld_orchestration_prompt_version]] | sibling | 0.39 |
+| [[bld_orchestration_few_shot_example]] | sibling | 0.36 |

@@ -69,8 +69,8 @@ NEVER USE EAN/GTIN/BARCODE AS THE CROSS-MARKETPLACE JOIN KEY
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_opportunity_matrix]] | upstream | 0.54 |
-| [[bld_instruction_opportunity_matrix]] | upstream | 0.50 |
+| [[bld_knowledge_opportunity_matrix]] | upstream | 0.54 |
+| [[bld_prompt_opportunity_matrix]] | upstream | 0.50 |
 | [[p10_mem_opportunity_matrix_builder]] | upstream | 0.48 |
 | [[p11_qg_opportunity_matrix]] | related | 0.41 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.40 |

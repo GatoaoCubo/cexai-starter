@@ -75,4 +75,4 @@ golden_test (P07)    --depends-->  few_shot_example
 | [[few-shot-example-builder]] | upstream | 0.42 |
 | n00_few_shot_example_manifest | upstream | 0.38 |
 | [[p10_lr_few_shot_example_builder]] | downstream | 0.34 |
-| [[bld_instruction_few_shot_example]] | upstream | 0.33 |
+| [[bld_prompt_few_shot_example]] | upstream | 0.33 |

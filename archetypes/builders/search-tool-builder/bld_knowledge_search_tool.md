@@ -86,6 +86,6 @@ Search tools connect LLM agents to external search services, returning ranked re
 |----------|-------------|-------|
 | [[search-tool-builder]] | downstream | 0.58 |
 | [[p10_lr_search_tool_builder]] | downstream | 0.55 |
-| [[bld_collaboration_search_tool]] | downstream | 0.48 |
+| [[bld_orchestration_search_tool]] | downstream | 0.48 |
 | [[p11_qg_search_tool]] | downstream | 0.47 |
-| [[bld_instruction_search_tool]] | downstream | 0.46 |
+| [[bld_prompt_search_tool]] | downstream | 0.46 |

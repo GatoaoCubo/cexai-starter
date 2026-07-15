@@ -74,7 +74,7 @@ python _tools/cex_score.py --apply bld-tools-tagline.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_tagline]] | downstream | 0.49 |
-| [[bld_collaboration_tagline]] | downstream | 0.46 |
+| [[bld_orchestration_tagline]] | downstream | 0.46 |
 | [[bld_architecture_tagline]] | downstream | 0.44 |
 | n00_tagline_manifest | upstream | 0.40 |
 | [[tagline-builder]] | upstream | 0.39 |

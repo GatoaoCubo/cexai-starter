@@ -129,7 +129,7 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_output_validator]] | downstream | 0.49 |
+| [[bld_orchestration_output_validator]] | downstream | 0.49 |
 | [[bld_architecture_output_validator]] | downstream | 0.46 |
 | [[constraint-spec-builder]] | sibling | 0.42 |
 | [[validator-builder]] | sibling | 0.41 |

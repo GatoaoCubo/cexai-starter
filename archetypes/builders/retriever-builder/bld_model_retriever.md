@@ -155,6 +155,6 @@ All required frontmatter fields present. quality: null. Four body sections requi
 |----------|-------------|-------|
 | [[bld_architecture_retriever]] | downstream | 0.56 |
 | [[search-tool-builder]] | sibling | 0.47 |
-| [[bld_instruction_retriever]] | upstream | 0.46 |
+| [[bld_prompt_retriever]] | upstream | 0.46 |
 | [[p09_kc_retriever_domain]] | downstream | 0.46 |
-| [[bld_collaboration_retriever]] | downstream | 0.45 |
+| [[bld_orchestration_retriever]] | downstream | 0.45 |

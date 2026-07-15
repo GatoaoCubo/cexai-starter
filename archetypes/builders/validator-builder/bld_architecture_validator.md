@@ -69,7 +69,7 @@ validator       --depends-->     type_def
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[validator-builder]] | upstream | 0.50 |
-| [[p01_kc_validator]] | upstream | 0.49 |
+| [[kc_validator]] | upstream | 0.49 |
 | [[p11_qg_validator]] | upstream | 0.44 |
 | [[bld_memory_validator]] | downstream | 0.43 |
 | bld_architecture_quality_gate | sibling | 0.43 |

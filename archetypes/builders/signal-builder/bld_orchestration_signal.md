@@ -73,6 +73,6 @@ I produce minimal JSON payloads for atomic inter-agent status events: complete, 
 |----------|-------------|-------|
 | [[signal-builder]] | related | 0.42 |
 | [[bld_architecture_signal]] | upstream | 0.38 |
-| [[bld_collaboration_session_state]] | sibling | 0.35 |
+| [[bld_orchestration_session_state]] | sibling | 0.35 |
 | bld_collaboration_dispatch_rule | sibling | 0.34 |
 | bld_collaboration_workflow | sibling | 0.34 |

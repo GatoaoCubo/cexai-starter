@@ -72,4 +72,4 @@ path_config     --signals-->   path_resolution_error
 | [[p03_ins_path_config]] | upstream | 0.52 |
 | n00_path_config_manifest | downstream | 0.48 |
 | [[bld_memory_path_config]] | downstream | 0.46 |
-| [[p01_kc_path_config]] | downstream | 0.45 |
+| [[kc_path_config]] | downstream | 0.45 |

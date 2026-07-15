@@ -86,7 +86,7 @@ python _tools/cex_skill_loader.py --verify boot
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[boot-config-builder]] | upstream | 0.50 |
-| [[bld_instruction_agent]] | sibling | 0.43 |
+| [[bld_prompt_agent]] | sibling | 0.43 |
 | [[p11_qg_boot_config]] | downstream | 0.39 |
-| [[bld_knowledge_card_boot_config]] | upstream | 0.38 |
-| [[bld_collaboration_boot_config]] | downstream | 0.38 |
+| [[bld_knowledge_boot_config]] | upstream | 0.38 |
+| [[bld_orchestration_boot_config]] | downstream | 0.38 |

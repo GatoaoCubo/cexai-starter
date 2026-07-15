@@ -77,7 +77,7 @@ Memory scope config — which memory types an agent uses, backends, TTL, and iso
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p10_lr_memory_scope_builder]] | downstream | 0.56 |
-| [[p01_kc_memory_scope]] | sibling | 0.52 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.46 |
+| [[kc_memory_scope]] | sibling | 0.52 |
+| [[bld_orchestration_memory_scope]] | downstream | 0.46 |
 | [[memory-scope-builder]] | related | 0.46 |
 | bld_collaboration_memory_type | downstream | 0.42 |

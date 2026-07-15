@@ -104,4 +104,4 @@ Error response discipline:
 | p06_oas_cex_sdk | upstream | 0.38 |
 | [[bld_config_openapi_spec]] | upstream | 0.36 |
 | [[kc_openapi_spec]] | upstream | 0.36 |
-| [[bld_knowledge_card_openapi_spec]] | upstream | 0.35 |
+| [[bld_knowledge_openapi_spec]] | upstream | 0.35 |

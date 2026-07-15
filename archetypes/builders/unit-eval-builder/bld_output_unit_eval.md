@@ -93,5 +93,5 @@ density_score: {{0.80_to_1.00}}
 | bld_output_template_e2e_eval | sibling | 0.41 |
 | bld_output_template_smoke_eval | sibling | 0.41 |
 | [[bld_output_template_golden_test]] | sibling | 0.41 |
-| [[bld_knowledge_card_unit_eval]] | upstream | 0.37 |
+| [[bld_knowledge_unit_eval]] | upstream | 0.37 |
 | [[p11_qg_unit_eval]] | downstream | 0.37 |

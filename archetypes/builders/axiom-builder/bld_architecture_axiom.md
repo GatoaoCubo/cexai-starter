@@ -74,7 +74,7 @@ axiom             --signals-->   system identity (anchors agent worldview)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[axiom-builder]] | downstream | 0.67 |
-| [[bld_collaboration_axiom]] | downstream | 0.60 |
-| [[bld_instruction_axiom]] | upstream | 0.57 |
-| [[p01_kc_axiom]] | upstream | 0.56 |
+| [[bld_orchestration_axiom]] | downstream | 0.60 |
+| [[bld_prompt_axiom]] | upstream | 0.57 |
+| [[kc_axiom]] | upstream | 0.56 |
 | tpl_axiom | upstream | 0.55 |

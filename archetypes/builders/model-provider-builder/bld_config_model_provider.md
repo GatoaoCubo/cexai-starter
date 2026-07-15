@@ -104,7 +104,7 @@ python _tools/cex_score.py --apply bld-config-model-provider.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_provider]] | upstream | 0.54 |
+| [[bld_orchestration_model_provider]] | upstream | 0.54 |
 | [[model-provider-builder]] | upstream | 0.54 |
 | [[bld_memory_model_provider]] | downstream | 0.53 |
 | bld_config_model_card | sibling | 0.51 |

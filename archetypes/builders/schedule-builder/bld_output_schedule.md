@@ -93,5 +93,5 @@ description: "{{what_this_schedule_triggers_max_200ch}}"
 | [[schedule-builder]] | downstream | 0.49 |
 | [[p11_qg_schedule]] | downstream | 0.44 |
 | [[bld_architecture_schedule]] | downstream | 0.43 |
-| [[bld_instruction_schedule]] | upstream | 0.43 |
+| [[bld_prompt_schedule]] | upstream | 0.43 |
 | [[bld_schema_schedule]] | downstream | 0.41 |

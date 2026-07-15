@@ -137,8 +137,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_citation]] | related | 0.53 |
-| [[bld_knowledge_card_citation]] | related | 0.50 |
-| [[bld_collaboration_citation]] | downstream | 0.49 |
+| [[kc_citation]] | related | 0.53 |
+| [[bld_knowledge_citation]] | related | 0.50 |
+| [[bld_orchestration_citation]] | downstream | 0.49 |
 | [[bld_architecture_citation]] | downstream | 0.47 |
 | [[p10_lr_citation_builder]] | downstream | 0.45 |

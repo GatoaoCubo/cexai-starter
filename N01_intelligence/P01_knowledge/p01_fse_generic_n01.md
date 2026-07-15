@@ -149,6 +149,6 @@ That means every demonstration has to show not just what to say, but how to earn
 |----------|-------------|-------|
 | [[few-shot-example-builder]] | related | 0.31 |
 | [[p01_chunk_n01]] | related | 0.31 |
-| [[bld_collaboration_few_shot_example]] | downstream | 0.27 |
+| [[bld_orchestration_few_shot_example]] | downstream | 0.27 |
 | [[p01_retr_n01]] | related | 0.27 |
 | [[p01_cit_n01]] | related | 0.27 |

@@ -87,6 +87,6 @@ python _tools/cex_score.py --apply bld-memory-lens.md
 |----------|-------------|-------|
 | [[bld_architecture_lens]] | upstream | 0.66 |
 | [[lens-builder]] | upstream | 0.65 |
-| [[bld_collaboration_lens]] | upstream | 0.60 |
+| [[bld_orchestration_lens]] | upstream | 0.60 |
 | p01_kc_cex_lens_concept | upstream | 0.58 |
-| [[bld_knowledge_card_lens]] | upstream | 0.57 |
+| [[bld_knowledge_lens]] | upstream | 0.57 |

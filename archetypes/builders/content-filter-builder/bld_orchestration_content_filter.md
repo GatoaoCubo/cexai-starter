@@ -53,5 +53,5 @@ Does not enforce broad safety constraints (Guardrail) or validate output schemas
 | [[content-filter-builder]] | upstream | 0.36 |
 | [[p10_lr_content_filter_builder]] | upstream | 0.26 |
 | [[bld_config_content_filter]] | upstream | 0.26 |
-| [[bld_instruction_content_filter]] | upstream | 0.25 |
+| [[bld_prompt_content_filter]] | upstream | 0.25 |
 | [[p11_fb_content_filter]] | upstream | 0.24 |

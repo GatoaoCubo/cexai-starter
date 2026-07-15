@@ -103,8 +103,8 @@ segmentation_criteria: [{{criteria_list}}]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_customer_segment]] | upstream | 0.23 |
+| [[bld_knowledge_customer_segment]] | upstream | 0.23 |
 | [[p02_qg_customer_segment]] | downstream | 0.22 |
 | [[customer-segment-builder]] | upstream | 0.18 |
-| [[bld_instruction_customer_segment]] | upstream | 0.18 |
+| [[bld_prompt_customer_segment]] | upstream | 0.18 |
 | n00_customer_segment_manifest | upstream | 0.17 |

@@ -10,7 +10,7 @@ quality: null
 tags: [seed-intel, competitor, openai, agents-sdk, swarm, handoffs, multi-agent]
 when_to_use: "When evaluating platform-owner agent frameworks; when positioning CEX infrastructure depth against SDK minimalism; when analyzing harness/sandbox architecture patterns; when user asks about OpenAI's agent development tools"
 axioms:
-  - "ALWAYS benchmark the 3-primitive model (Agents + Handoffs + Guardrails) against CEX's 300-kind taxonomy -- minimalism vs. infrastructure is the defining axis"
+  - "ALWAYS benchmark the 3-primitive model (Agents + Handoffs + Guardrails) against CEX's 125-kind taxonomy -- minimalism vs. infrastructure is the defining axis"
   - "ALWAYS note the harness system (April 2026) as architectural convergence toward CEX's dispatch model -- long-running agents with sandbox + resume + approval is what the Task tool does"
   - "NEVER ignore the distribution advantage -- OpenAI SDK is the default choice because it ships with the largest API provider; CEX must compete on governance depth, not convenience"
   - "NEVER assume OpenAI-first bias is permanent -- LiteLLM/any-llm support (100+ models) signals intentional neutralization of the lock-in criticism"
@@ -43,7 +43,7 @@ The SDK now supports 100+ LLMs via LiteLLM and any-llm, reducing (but not elimin
 **Strategic signal for CEX:** The SDK is the benchmark every framework is measured against. Its deliberate minimalism
 (no typed knowledge, no quality gates, no multi-runtime governance) is both its strength and the clearest articulation
 of the gap CEX fills. Where the SDK says "here are 3 primitives, build the rest," CEX says "here is a complete
-typed infrastructure -- 300 kinds, 12 pillars, 8F pipeline -- that does the work for you."
+typed infrastructure -- 125 kinds, 12 pillars, 8F pipeline -- that does the work for you."
 
 ---
 
@@ -191,7 +191,7 @@ This creates a structural incentive to keep the SDK free, simple, and maximally 
 
 | Weakness | CEX Exploit Angle |
 |----------|------------------|
-| No typed knowledge system | CEX: 300 kinds x 12 pillars = structured, searchable, typed knowledge -- SDK has zero |
+| No typed knowledge system | CEX: 125 kinds x 12 pillars = structured, searchable, typed knowledge -- SDK has zero |
 | No quality gates | SDK produces unvalidated outputs; CEX enforces 7-gate F7 GOVERN with 9.0 quality floor |
 | No knowledge persistence | SDK memory = session-only; CEX has learning_records, entity_memory, KC library, decay |
 | No reasoning protocol | SDK agents reason ad hoc; CEX enforces 8F pipeline on every task |
@@ -226,7 +226,7 @@ community cohesion than founder-led projects like CrewAI or LlamaIndex.
 
 | Dimension | OpenAI SDK | CEX |
 |-----------|-----------|-----|
-| Architecture | 3 primitives (Agent/Handoff/Guardrail) | 300 kinds x 12 pillars x 8F pipeline |
+| Architecture | 3 primitives (Agent/Handoff/Guardrail) | 125 kinds x 12 pillars x 8F pipeline |
 | Quality model | None (outputs unvalidated by default) | 9.0 target, 7 gates, D1-D5 scoring |
 | Knowledge persistence | Session memory only | typing learning_records, entity_memory, KC library |
 | Reasoning protocol | Ad hoc (model decides) | Mandatory 8F (F1-F8, every task, every time) |
@@ -254,6 +254,6 @@ community cohesion than founder-led projects like CrewAI or LlamaIndex.
 |----------|-------------|-------|
 | p01_kc_atom_03_openai_agents_sdk | sibling | 0.43 |
 | cm_cex_vs_landscape | downstream | 0.32 |
-| [[p01_kc_agent]] | sibling | 0.31 |
+| [[kc_agent]] | sibling | 0.31 |
 | p01_kc_terminology_openai_canonical | sibling | 0.31 |
 | p01_kc_claude_agent_sdk_patterns | sibling | 0.30 |

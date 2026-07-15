@@ -71,6 +71,6 @@ type_def          --signals-->      type_registration
 |----------|-------------|-------|
 | [[type-def-builder]] | upstream | 0.46 |
 | n00_type_def_manifest | upstream | 0.45 |
-| [[bld_collaboration_type_def]] | upstream | 0.42 |
+| [[bld_orchestration_type_def]] | upstream | 0.42 |
 | [[bld_memory_type_def]] | downstream | 0.37 |
-| [[bld_knowledge_card_type_def]] | upstream | 0.37 |
+| [[bld_knowledge_type_def]] | upstream | 0.37 |

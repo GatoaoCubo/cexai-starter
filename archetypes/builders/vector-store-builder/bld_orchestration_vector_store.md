@@ -80,8 +80,8 @@ I produce storage and indexing configurations for vector databases with backend 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_embedder_provider]] | sibling | 0.62 |
-| [[bld_collaboration_embedding_config]] | sibling | 0.39 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.37 |
+| [[bld_orchestration_embedder_provider]] | sibling | 0.62 |
+| [[bld_orchestration_embedding_config]] | sibling | 0.39 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.37 |
 | [[vector-store-builder]] | related | 0.34 |
 | bld_collaboration_knowledge_graph | sibling | 0.33 |

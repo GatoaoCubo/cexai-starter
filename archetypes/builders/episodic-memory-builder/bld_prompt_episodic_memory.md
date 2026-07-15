@@ -76,5 +76,5 @@ related:
 | [[episodic-memory-builder]] | downstream | 0.37 |
 | [[bld_schema_episodic_memory]] | downstream | 0.37 |
 | [[p10_qg_episodic_memory]] | downstream | 0.36 |
-| [[bld_instruction_memory_scope]] | sibling | 0.34 |
-| [[bld_instruction_retriever_config]] | sibling | 0.34 |
+| [[bld_prompt_memory_scope]] | sibling | 0.34 |
+| [[bld_prompt_retriever_config]] | sibling | 0.34 |

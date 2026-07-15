@@ -47,7 +47,7 @@ User decides WHAT -> LLM builds HOW -> verify together.
 | `/cex-doctor` | Full diagnostics (separate from Claude Code's native `/doctor`) (Central-only -- not in this lean repo) |
 | `/consolidate` | Post-dispatch: verify + score + clean (Central-only -- not in this lean repo) |
 | `/evolve [file\|all]` | **AutoResearch**: autonomous artifact improvement loop (Central-only -- not in this lean repo) |
-| `/mentor [question]` | **Vocabulary**: 8F + 12P + 257K taxonomy navigator |
+| `/mentor [question]` | **Vocabulary**: 8F + 12P + 125K taxonomy navigator |
 | `/crew list\|show\|run <name>` | **Composable crew (WAVE8)**: list/inspect/run multi-role teams (Central-only -- not in this lean repo) |
 
 ## Composable Crews (WAVE8)

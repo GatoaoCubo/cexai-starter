@@ -73,5 +73,5 @@ related:
 | bld_instruction_chain | sibling | 0.46 |
 | [[p10_lr_fallback_chain_builder]] | downstream | 0.46 |
 | [[fallback-chain-builder]] | upstream | 0.44 |
-| [[bld_knowledge_card_fallback_chain]] | upstream | 0.41 |
+| [[bld_knowledge_fallback_chain]] | upstream | 0.41 |
 | [[p11_qg_fallback_chain]] | downstream | 0.38 |

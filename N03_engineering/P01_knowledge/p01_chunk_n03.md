@@ -168,6 +168,6 @@ The goal is retrievable craftsmanship.
 |----------|-------------|-------|
 | [[p01_chunk_n05]] | sibling | 0.47 |
 | p01_kc_rag_chunking_strategies | related | 0.43 |
-| [[p01_kc_chunk_strategy]] | related | 0.41 |
+| [[kc_chunk_strategy]] | related | 0.41 |
 | [[p01_chunk_n06]] | sibling | 0.38 |
 | [[p01_chunk_n01]] | sibling | 0.38 |

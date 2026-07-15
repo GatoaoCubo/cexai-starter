@@ -150,8 +150,8 @@ python _tools/cex_score.py --apply bld-memory-prompt-package.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_prompt_package]] | upstream | 0.57 |
+| [[bld_knowledge_prompt_package]] | upstream | 0.57 |
 | [[prompt-package-builder]] | upstream | 0.55 |
 | [[bld_orchestration_prompt_package]] | upstream | 0.47 |
 | [[p03_ins_prompt_package]] | upstream | 0.46 |
-| [[p01_kc_prompt_package]] | upstream | 0.45 |
+| [[kc_prompt_package]] | upstream | 0.45 |

@@ -84,7 +84,7 @@ prompt_package  --signals-->      Stage 3 gate/validate/commit/signal
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-package-builder]] | upstream | 0.53 |
-| [[bld_knowledge_card_prompt_package]] | upstream | 0.50 |
+| [[bld_knowledge_prompt_package]] | upstream | 0.50 |
 | [[bld_memory_prompt_package]] | downstream | 0.49 |
 | [[p03_ins_prompt_package]] | upstream | 0.45 |
 | [[bld_orchestration_prompt_package]] | upstream | 0.42 |

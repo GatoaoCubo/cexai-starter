@@ -117,6 +117,6 @@ density_score: 0.85
 |----------|-------------|-------|
 | [[bld_tools_nucleus_def]] | upstream | 0.49 |
 | [[p02_qg_nucleus_def]] | downstream | 0.47 |
-| [[bld_instruction_nucleus_def]] | upstream | 0.44 |
+| [[bld_prompt_nucleus_def]] | upstream | 0.44 |
 | [[bld_schema_nucleus_def]] | downstream | 0.41 |
-| [[bld_collaboration_nucleus_def]] | downstream | 0.38 |
+| [[bld_orchestration_nucleus_def]] | downstream | 0.38 |

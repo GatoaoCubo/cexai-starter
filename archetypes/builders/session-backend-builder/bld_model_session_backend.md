@@ -100,6 +100,6 @@ You understand the P10 boundary: a session_backend specifies WHERE state is pers
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_session_backend]] | upstream | 0.61 |
-| [[bld_collaboration_session_backend]] | downstream | 0.58 |
-| [[p01_kc_session_backend]] | downstream | 0.58 |
-| [[bld_instruction_session_backend]] | upstream | 0.49 |
+| [[bld_orchestration_session_backend]] | downstream | 0.58 |
+| [[kc_session_backend]] | downstream | 0.58 |
+| [[bld_prompt_session_backend]] | upstream | 0.49 |

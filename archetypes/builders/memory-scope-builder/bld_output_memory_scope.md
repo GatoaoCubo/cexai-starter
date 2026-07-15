@@ -95,7 +95,7 @@ shared_with: "{{shared_with}}}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-scope-builder]] | upstream | 0.42 |
-| [[bld_instruction_memory_scope]] | upstream | 0.38 |
+| [[bld_prompt_memory_scope]] | upstream | 0.38 |
 | [[p11_qg_memory_scope]] | downstream | 0.37 |
 | [[bld_architecture_memory_scope]] | downstream | 0.37 |
 | [[bld_schema_memory_scope]] | downstream | 0.36 |

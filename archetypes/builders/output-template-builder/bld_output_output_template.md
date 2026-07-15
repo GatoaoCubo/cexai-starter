@@ -138,5 +138,5 @@ Body of the same instance:
 | [[bld_schema_output_template]] | upstream | 0.42 |
 | bld_output_template_field_manifest | sibling (reflexive-case example) | 0.36 |
 | [[p10_lr_output_template_builder]] | downstream | 0.33 |
-| [[bld_instruction_output_template]] | upstream | 0.30 |
+| [[bld_prompt_output_template]] | upstream | 0.30 |
 | [[bld_output_template_prompt_template]] | sibling (contrast) | 0.28 |

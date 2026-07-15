@@ -96,7 +96,7 @@ Rate limit configs declare the quota boundaries for LLM API providers: how many 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[rate-limit-config-builder]] | downstream | 0.59 |
-| [[bld_collaboration_rate_limit_config]] | downstream | 0.59 |
+| [[bld_orchestration_rate_limit_config]] | downstream | 0.59 |
 | [[p11_qg_rate_limit_config]] | downstream | 0.56 |
 | [[bld_tools_rate_limit_config]] | downstream | 0.53 |
-| [[bld_instruction_rate_limit_config]] | downstream | 0.52 |
+| [[bld_prompt_rate_limit_config]] | downstream | 0.52 |

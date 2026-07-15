@@ -87,6 +87,6 @@ python _tools/cex_score.py --apply bld-architecture-output-validator.md
 |----------|-------------|-------|
 | [[output-validator-builder]] | upstream | 0.54 |
 | [[bld_architecture_constraint_spec]] | sibling | 0.44 |
-| [[p01_kc_output_validator]] | upstream | 0.36 |
+| [[kc_output_validator]] | upstream | 0.36 |
 | [[constraint-spec-builder]] | upstream | 0.36 |
 | [[bld_output_template_output_validator]] | upstream | 0.35 |

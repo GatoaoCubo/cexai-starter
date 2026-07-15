@@ -79,7 +79,7 @@ python _tools/cex_score.py --apply p10-lr-constraint-spec-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[constraint-spec-builder]] | upstream | 0.50 |
-| [[bld_collaboration_constraint_spec]] | downstream | 0.49 |
-| [[bld_knowledge_card_constraint_spec]] | upstream | 0.46 |
+| [[bld_orchestration_constraint_spec]] | downstream | 0.49 |
+| [[bld_knowledge_constraint_spec]] | upstream | 0.46 |
 | [[bld_architecture_constraint_spec]] | upstream | 0.43 |
-| [[bld_instruction_constraint_spec]] | upstream | 0.40 |
+| [[bld_prompt_constraint_spec]] | upstream | 0.40 |

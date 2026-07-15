@@ -101,7 +101,7 @@ Fallback: `{{fallback_behavior_if_provider_unavailable}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[secret-config-builder]] | downstream | 0.43 |
-| [[bld_knowledge_card_secret_config]] | upstream | 0.40 |
-| [[bld_instruction_secret_config]] | upstream | 0.38 |
+| [[bld_knowledge_secret_config]] | upstream | 0.40 |
+| [[bld_prompt_secret_config]] | upstream | 0.38 |
 | [[bld_schema_secret_config]] | downstream | 0.37 |
 | [[bld_config_secret_config]] | downstream | 0.37 |

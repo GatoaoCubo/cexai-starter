@@ -115,5 +115,5 @@ A test that evaluates a single agent, prompt, or pipeline component in isolation
 | [[bld_architecture_unit_eval]] | downstream | 0.41 |
 | [[unit-eval-builder]] | related | 0.41 |
 | p01_kc_e2e_eval | sibling | 0.41 |
-| [[bld_knowledge_card_unit_eval]] | sibling | 0.35 |
+| [[bld_knowledge_unit_eval]] | sibling | 0.35 |
 | n00_unit_eval_manifest | sibling | 0.35 |

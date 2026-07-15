@@ -95,5 +95,5 @@ python _tools/cex_doctor.py --scope orchestration
 | [[bld_rules_data_contract]] | sibling | 0.37 |
 | bld_rules_bounded_context | sibling | 0.37 |
 | [[domain-vocabulary-builder]] | upstream | 0.36 |
-| [[p01_kc_domain_vocabulary]] | upstream | 0.33 |
-| [[bld_instruction_domain_vocabulary]] | upstream | 0.32 |
+| [[kc_domain_vocabulary]] | upstream | 0.33 |
+| [[bld_prompt_domain_vocabulary]] | upstream | 0.32 |

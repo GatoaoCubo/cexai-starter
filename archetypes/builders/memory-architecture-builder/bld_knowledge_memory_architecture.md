@@ -105,5 +105,5 @@ knowledge graphs, and key-value backends to serve each layer at appropriate late
 |----------|-------------|-------|
 | [[memory-architecture-builder]] | downstream | 0.56 |
 | [[bld_output_template_memory_architecture]] | downstream | 0.49 |
-| [[p01_kc_memory_scope]] | sibling | 0.46 |
+| [[kc_memory_scope]] | sibling | 0.46 |
 | bld_knowledge_card_consolidation_policy | sibling | 0.43 |

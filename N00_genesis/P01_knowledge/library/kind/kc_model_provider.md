@@ -79,8 +79,8 @@ A model provider config defines how CEX connects to an LLM API. Each provider ha
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_provider]] | related | 0.57 |
+| [[bld_orchestration_model_provider]] | related | 0.57 |
 | [[model-provider-builder]] | related | 0.56 |
-| [[bld_knowledge_card_model_provider]] | sibling | 0.54 |
+| [[bld_knowledge_model_provider]] | sibling | 0.54 |
 | [[bld_memory_model_provider]] | downstream | 0.53 |
 | [[p03_ins_model_provider]] | downstream | 0.52 |

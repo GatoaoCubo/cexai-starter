@@ -101,7 +101,7 @@ MONETIZE (this) → PROMOTE (social-publisher) → CONVERT (checkout) → RETAIN
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_content_monetization]] | upstream | 0.43 |
-| [[bld_collaboration_research_pipeline]] | sibling | 0.38 |
+| [[bld_orchestration_research_pipeline]] | sibling | 0.38 |
 | [[content-monetization-builder]] | upstream | 0.38 |
 | bld_collaboration_social_publisher | sibling | 0.34 |
-| [[bld_knowledge_card_content_monetization]] | upstream | 0.31 |
+| [[bld_knowledge_content_monetization]] | upstream | 0.31 |

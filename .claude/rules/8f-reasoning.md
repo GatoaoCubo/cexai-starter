@@ -117,7 +117,7 @@ If FAIL: return to F6 (max 2 retries)
 > the first draft of this note claimed H02 "never fired"; an adversarial judge
 > REFUTED that by direct execution and N07 reproduced it).** H02's id_pattern has
 > two supply lanes in `_tools/cex_8f_runner.py`: (1) the `_schema.yaml`
-> `kinds.{kind}.id_pattern` key -- unpopulated for 0/316 kinds, genuinely dormant;
+> `kinds.{kind}.id_pattern` key -- unpopulated for 0/125 kinds, genuinely dormant;
 > (2) a LIVE extraction (the R-264 structurally-scoped `## ID Pattern`-section
 > extractor, ~lines 551-559 as of 2026-07-07 -- successor to the original
 > whole-body scan at ~503-511; two w7q verifiers flagged the old citation stale)

@@ -92,8 +92,8 @@ NEVER self-score quality -- leave quality: null for peer review.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_memory_architecture]] | upstream | 0.56 |
+| [[bld_knowledge_memory_architecture]] | upstream | 0.56 |
 | consolidation-policy-builder | sibling | 0.50 |
-| [[bld_instruction_memory_architecture]] | upstream | 0.49 |
+| [[bld_prompt_memory_architecture]] | upstream | 0.49 |
 | [[bld_output_template_memory_architecture]] | upstream | 0.45 |
 | [[p10_qg_memory_architecture]] | downstream | 0.45 |

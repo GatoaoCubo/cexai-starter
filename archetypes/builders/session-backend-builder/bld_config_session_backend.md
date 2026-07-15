@@ -73,7 +73,7 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_session_backend]] | downstream | 0.41 |
-| [[bld_knowledge_card_session_backend]] | upstream | 0.40 |
+| [[kc_session_backend]] | downstream | 0.41 |
+| [[bld_knowledge_session_backend]] | upstream | 0.40 |
 | [[bld_schema_session_backend]] | upstream | 0.40 |
 | [[p11_qg_session_backend]] | downstream | 0.40 |

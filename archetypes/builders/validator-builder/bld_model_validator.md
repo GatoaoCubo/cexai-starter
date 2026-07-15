@@ -138,8 +138,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_validator]] | related | 0.51 |
+| [[bld_orchestration_validator]] | related | 0.51 |
 | [[bld_memory_validator]] | downstream | 0.48 |
 | [[p11_qg_validator]] | related | 0.47 |
-| [[bld_knowledge_card_validator]] | upstream | 0.47 |
+| [[bld_knowledge_validator]] | upstream | 0.47 |
 | [[validation-schema-builder]] | sibling | 0.42 |

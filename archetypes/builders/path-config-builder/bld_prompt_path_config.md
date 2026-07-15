@@ -99,7 +99,7 @@ The path-config-builder receives a **system scope** and produces a `path_config`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[path-config-builder]] | downstream | 0.53 |
-| [[bld_knowledge_card_path_config]] | upstream | 0.47 |
+| [[bld_knowledge_path_config]] | upstream | 0.47 |
 | [[bld_memory_path_config]] | downstream | 0.46 |
 | [[bld_schema_path_config]] | downstream | 0.45 |
-| [[bld_collaboration_path_config]] | downstream | 0.41 |
+| [[bld_orchestration_path_config]] | downstream | 0.41 |

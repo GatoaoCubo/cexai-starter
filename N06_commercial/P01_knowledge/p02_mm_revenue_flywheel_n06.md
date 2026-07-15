@@ -102,7 +102,7 @@ Every satisfied customer is a distribution node. CAC via referral < $50 vs $300+
 | Step | Timeline | Action | CEX Kind |
 |------|----------|--------|----------|
 | Welcome | T+0 | Send first-task email + pre-fill brand_config template | onboarding_flow |
-| First session | T+30min | 3-step checklist: brand_config -> first build -> share | [[p01_kc_prompt_template|prompt_template]] |
+| First session | T+30min | 3-step checklist: brand_config -> first build -> share | [[kc_prompt_template|prompt_template]] |
 | Follow-up | T+24h (no build) | "Your first build is waiting" + deep link | action_prompt |
 | Rescue | T+72h (no build) | 15-min onboarding call offer | handoff protocol |
 | Gate | T+7d | >= 3 builds = ACTIVATED; < 3 = high-touch track | quality_gate |

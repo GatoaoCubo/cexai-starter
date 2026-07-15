@@ -76,4 +76,4 @@ NEVER allow **ambiguous phrasing** or **task-agnostic metrics** (e.g., "general 
 | benchmark-suite-builder | sibling | 0.43 |
 | [[p10_mem_eval_metric_builder]] | downstream | 0.38 |
 | judge-config-builder | sibling | 0.29 |
-| [[bld_knowledge_card_eval_metric]] | upstream | 0.28 |
+| [[bld_knowledge_eval_metric]] | upstream | 0.28 |

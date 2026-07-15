@@ -106,8 +106,8 @@ encoding_detector --> parser
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_document_loader]] | upstream | 0.46 |
+| [[kc_document_loader]] | upstream | 0.46 |
 | [[document_loader-builder]] | related | 0.45 |
 | p08_dir_rag_pipeline | downstream | 0.42 |
-| [[bld_collaboration_document_loader]] | related | 0.34 |
+| [[bld_orchestration_document_loader]] | related | 0.34 |
 | [[p11_qg_document_loader]] | downstream | 0.34 |

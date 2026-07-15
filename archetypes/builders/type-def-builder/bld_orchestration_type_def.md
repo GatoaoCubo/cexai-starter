@@ -64,8 +64,8 @@ I produce reusable type vocabulary — primitive, composite, union, and algebrai
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_validation_schema]] | sibling | 0.43 |
+| [[bld_orchestration_validation_schema]] | sibling | 0.43 |
 | [[type-def-builder]] | related | 0.37 |
-| [[bld_collaboration_validator]] | sibling | 0.33 |
-| [[bld_collaboration_enum_def]] | sibling | 0.30 |
+| [[bld_orchestration_validator]] | sibling | 0.33 |
+| [[bld_orchestration_enum_def]] | sibling | 0.30 |
 | n00_type_def_manifest | related | 0.29 |

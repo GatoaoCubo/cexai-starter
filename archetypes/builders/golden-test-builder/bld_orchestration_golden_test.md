@@ -65,8 +65,8 @@ None — independent builder (layer 0). Golden tests are selected from existing 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_few_shot_example]] | sibling | 0.38 |
-| [[bld_collaboration_action_prompt]] | sibling | 0.36 |
+| [[bld_orchestration_few_shot_example]] | sibling | 0.38 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.36 |
 | [[golden-test-builder]] | upstream | 0.35 |
 | bld_collaboration_e2e_eval | sibling | 0.33 |
-| [[bld_collaboration_prompt_version]] | sibling | 0.33 |
+| [[bld_orchestration_prompt_version]] | sibling | 0.33 |

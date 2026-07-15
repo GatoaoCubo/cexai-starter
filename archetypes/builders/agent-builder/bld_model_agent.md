@@ -132,8 +132,8 @@ Max body: 5120 bytes per artifact file.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | downstream | 0.56 |
-| [[bld_knowledge_card_agent]] | upstream | 0.52 |
+| [[bld_orchestration_agent]] | downstream | 0.56 |
+| [[bld_knowledge_agent]] | upstream | 0.52 |
 | [[bld_architecture_agent]] | downstream | 0.52 |
-| [[p01_kc_agent]] | related | 0.51 |
-| [[bld_instruction_agent]] | downstream | 0.49 |
+| [[kc_agent]] | related | 0.51 |
+| [[bld_prompt_agent]] | downstream | 0.49 |

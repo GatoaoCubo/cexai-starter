@@ -77,7 +77,7 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p03_ins_mcp_server]] | upstream | 0.55 |
-| [[bld_knowledge_card_mcp_server]] | upstream | 0.50 |
+| [[bld_knowledge_mcp_server]] | upstream | 0.50 |
 | [[bld_schema_mcp_server]] | upstream | 0.47 |
 | [[mcp-server-builder]] | upstream | 0.43 |
 | [[bld_memory_mcp_server]] | downstream | 0.38 |

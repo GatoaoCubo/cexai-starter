@@ -43,4 +43,4 @@ The systems form a coverage matrix over five aesthetic axes; each instance owns 
 | p08_adr_design_system_kind | upstream | 0.48 |
 | p03_ps_design_system_library_scale | related | 0.45 |
 | [[bld_orchestration_design_system]] | sibling | 0.4 |
-| [[p01_kc_design_system]] | related | 0.4 |
+| [[kc_design_system]] | related | 0.4 |

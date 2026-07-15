@@ -13,7 +13,7 @@ axioms:
   - "ALWAYS note the dogfooding signal -- VRSEN builds and uses Agency Swarm in production daily; this feedback loop produces different quality than academic frameworks (compare: MetaGPT's DORMANT status)"
   - "ALWAYS compare the extension-of-SDK strategy (Agency Swarm leverages OpenAI SDK updates) against CEX's standalone architecture -- parasitic vs. sovereign positioning"
   - "NEVER dismiss 4.2K stars as irrelevant -- Agency Swarm represents the practitioner-tier competitor that large frameworks consistently underestimate"
-  - "NEVER ignore the zero-abstraction-overhead positioning -- radical simplicity is a valid architectural choice that CEX's 300-kind complexity must justify through output quality"
+  - "NEVER ignore the zero-abstraction-overhead positioning -- radical simplicity is a valid architectural choice that CEX's 125-kind complexity must justify through output quality"
 tldr: "Agency Swarm is a lean, community-grown multi-agent framework built on OpenAI's Agents SDK by VRSEN -- disruptive not through technical innovation but through radical simplicity and a creator who ships his own dogfood."
 8f: "F3_inject"
 keywords: [multi-agent orchestration, communication_flows, directed graph, pydantic, gpt-4o, litellm]
@@ -223,7 +223,7 @@ Key threat vectors against CEX:
 
 | Threat | Probability | Mitigation |
 |--------|-------------|-----------|
-| VRSEN adds knowledge taxonomy | Low -- not in public roadmap | CEX 300-kind taxonomy is 4-year compounding advantage |
+| VRSEN adds knowledge taxonomy | Low -- not in public roadmap | CEX 125-kind taxonomy is 4-year compounding advantage |
 | Agency Swarm becomes enterprise-scale | Low -- single creator, no backing | Monitor for VC funding events |
 | OpenAI absorbs Agency Swarm | Low-moderate -- VRSEN has pattern fit | Monitor GitHub activity + VRSEN statements |
 | Community-built alternatives adopt Agency Swarm patterns | Moderate | CEX governance + quality scoring are defensible differentiators |
@@ -239,4 +239,4 @@ the bottom of the market to frameworks with zero onboarding friction.
 | [[p01_kc_competitor_openai_sdk]] | sibling | 0.27 |
 | p01_kc_atom_03_openai_agents_sdk | sibling | 0.26 |
 | [[p01_kc_competitor_autogen]] | sibling | 0.23 |
-| [[p01_kc_agent]] | sibling | 0.22 |
+| [[kc_agent]] | sibling | 0.22 |

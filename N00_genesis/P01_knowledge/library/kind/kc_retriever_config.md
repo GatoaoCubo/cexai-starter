@@ -157,7 +157,7 @@ This pattern generalizes: any retriever configuration can dispatch parallel sub-
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_hook]] | sibling | 0.57 |
+| [[kc_hook]] | sibling | 0.57 |
 | p01_kc_steps | sibling | 0.57 |
 | p01_kc_server_tools | sibling | 0.57 |
 | p01_kc_supabase_mcp | sibling | 0.52 |

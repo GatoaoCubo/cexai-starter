@@ -110,6 +110,6 @@ proposed --> accepted --> deprecated
 |----------|-------------|-------|
 | [[decision-record-builder]] | downstream | 0.66 |
 | [[p10_lr_decision_record_builder]] | downstream | 0.59 |
-| [[p01_kc_decision_record]] | sibling | 0.57 |
+| [[kc_decision_record]] | sibling | 0.57 |
 | [[bld_architecture_decision_record]] | downstream | 0.57 |
-| [[bld_collaboration_decision_record]] | downstream | 0.55 |
+| [[bld_orchestration_decision_record]] | downstream | 0.55 |

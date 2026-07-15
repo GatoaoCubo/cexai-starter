@@ -101,8 +101,8 @@ python _tools/cex_skill_loader.py --verify memory
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_memory_scope]] | sibling | 0.46 |
+| [[bld_prompt_memory_scope]] | sibling | 0.46 |
 | [[memory-summary-builder]] | downstream | 0.44 |
-| [[bld_instruction_handoff_protocol]] | sibling | 0.43 |
-| [[bld_instruction_output_validator]] | sibling | 0.42 |
-| [[bld_instruction_retriever_config]] | sibling | 0.42 |
+| [[bld_prompt_handoff_protocol]] | sibling | 0.43 |
+| [[bld_prompt_output_validator]] | sibling | 0.42 |
+| [[bld_prompt_retriever_config]] | sibling | 0.42 |

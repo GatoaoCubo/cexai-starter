@@ -101,7 +101,7 @@ For reliable context_file production:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_context_file]] | upstream | 0.59 |
+| [[bld_knowledge_context_file]] | upstream | 0.59 |
 | [[kc_context_file]] | upstream | 0.57 |
 | [[context-file-builder]] | upstream | 0.56 |
 | [[p11_qg_context_file]] | upstream | 0.52 |

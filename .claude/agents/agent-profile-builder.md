@@ -88,6 +88,6 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[agent-builder]] | related | 0.39 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.38 |
-| [[bld_collaboration_agent]] | related | 0.37 |
-| [[p01_kc_agent]] | related | 0.35 |
-| [[bld_knowledge_card_agent]] | related | 0.35 |
+| [[bld_orchestration_agent]] | related | 0.37 |
+| [[kc_agent]] | related | 0.35 |
+| [[bld_knowledge_agent]] | related | 0.35 |

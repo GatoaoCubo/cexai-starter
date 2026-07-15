@@ -121,7 +121,7 @@ Body sections: Context, Patterns (what worked), Anti-Patterns (what failed), Fai
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_learning_record]] | related | 0.45 |
+| [[bld_orchestration_learning_record]] | related | 0.45 |
 | [[bld_architecture_learning_record]] | upstream | 0.44 |
 | [[p03_ins_learning_record]] | upstream | 0.43 |
-| [[p01_kc_learning_record]] | related | 0.38 |
+| [[kc_learning_record]] | related | 0.38 |

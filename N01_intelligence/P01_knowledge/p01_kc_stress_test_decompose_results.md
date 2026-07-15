@@ -166,6 +166,6 @@ Legend: score/10. -- = not tested. TIMEOUT = exceeded 300s limit.
 | p08_adr_runtime_coverage_n05 | downstream | 0.30 |
 | p01_kc_claude_model_capabilities_2026 | sibling | 0.28 |
 | [[p01_kc_ollama_deployment_guide]] | sibling | 0.28 |
-| [[p01_kc_spawn_config]] | sibling | 0.26 |
+| [[kc_spawn_config]] | sibling | 0.26 |
 | p01_kc_token_efficiency_gap_map | sibling | 0.26 |
 | p02_fb_model_cascade | downstream | 0.25 |

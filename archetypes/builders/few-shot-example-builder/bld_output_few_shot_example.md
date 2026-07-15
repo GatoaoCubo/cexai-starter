@@ -74,7 +74,7 @@ Which format rule is demonstrated?]
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p11_qg_few_shot_example]] | downstream | 0.45 |
-| [[bld_instruction_few_shot_example]] | upstream | 0.43 |
+| [[bld_prompt_few_shot_example]] | upstream | 0.43 |
 | [[few-shot-example-builder]] | upstream | 0.41 |
 | [[bld_config_few_shot_example]] | downstream | 0.40 |
 | [[p10_lr_few_shot_example_builder]] | downstream | 0.39 |

@@ -99,6 +99,6 @@ User message (turn N)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[user-model-builder]] | downstream | 0.63 |
-| [[bld_collaboration_user_model]] | downstream | 0.61 |
+| [[bld_orchestration_user_model]] | downstream | 0.61 |
 | [[kc_user_model]] | upstream | 0.59 |
 | [[bld_schema_user_model]] | downstream | 0.50 |

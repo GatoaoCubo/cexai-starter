@@ -84,5 +84,5 @@ python _tools/cex_score.py --apply bld-architecture-constraint-spec.md
 | [[constraint-spec-builder]] | upstream | 0.64 |
 | [[p10_lr_constraint_spec_builder]] | downstream | 0.52 |
 | [[p11_qg_constraint_spec]] | downstream | 0.48 |
-| [[bld_collaboration_constraint_spec]] | downstream | 0.47 |
+| [[bld_orchestration_constraint_spec]] | downstream | 0.47 |
 | [[bld_architecture_output_validator]] | sibling | 0.46 |

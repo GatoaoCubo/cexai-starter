@@ -97,7 +97,7 @@ A chunk_strategy defines the method, size, and overlap used to split source docu
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p01_kc_rag_chunking_strategies | sibling | 0.50 |
-| [[bld_knowledge_card_chunk_strategy]] | sibling | 0.45 |
+| [[bld_knowledge_chunk_strategy]] | sibling | 0.45 |
 | p01_chunk_strategy | related | 0.40 |
 | n00_chunk_strategy_manifest | sibling | 0.40 |
 | [[bld_architecture_chunk_strategy]] | downstream | 0.40 |

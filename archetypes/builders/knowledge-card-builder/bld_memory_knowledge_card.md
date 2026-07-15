@@ -80,4 +80,4 @@ Primary function: **INJECT**
 | p01_kc_knowledge_best_practices | upstream | 0.32 |
 | p01_kc_artifact_quality_evaluation_methods | upstream | 0.32 |
 | [[p11_fb_axiom]] | downstream | 0.30 |
-| [[bld_instruction_knowledge_card]] | upstream | 0.28 |
+| [[bld_prompt_knowledge_card]] | upstream | 0.28 |

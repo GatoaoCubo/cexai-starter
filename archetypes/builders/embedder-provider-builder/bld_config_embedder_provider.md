@@ -106,5 +106,5 @@ python _tools/cex_score.py --apply bld-config-embedder-provider.md
 | [[bld_config_model_provider]] | sibling | 0.55 |
 | bld_config_model_card | sibling | 0.50 |
 | [[bld_schema_embedder_provider]] | upstream | 0.43 |
-| [[bld_knowledge_card_embedder_provider]] | upstream | 0.42 |
-| [[bld_collaboration_model_provider]] | upstream | 0.40 |
+| [[bld_knowledge_embedder_provider]] | upstream | 0.42 |
+| [[bld_orchestration_model_provider]] | upstream | 0.40 |

@@ -71,8 +71,8 @@ None — independent builder (layer 0). Enums can be defined standalone before a
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_validation_schema]] | sibling | 0.40 |
+| [[bld_orchestration_validation_schema]] | sibling | 0.40 |
 | [[enum-def-builder]] | upstream | 0.39 |
-| [[bld_collaboration_type_def]] | sibling | 0.36 |
-| [[bld_collaboration_validator]] | sibling | 0.33 |
-| [[bld_knowledge_card_enum_def]] | upstream | 0.33 |
+| [[bld_orchestration_type_def]] | sibling | 0.36 |
+| [[bld_orchestration_validator]] | sibling | 0.33 |
+| [[bld_knowledge_enum_def]] | upstream | 0.33 |

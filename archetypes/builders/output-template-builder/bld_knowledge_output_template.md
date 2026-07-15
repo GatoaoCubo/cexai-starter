@@ -101,7 +101,7 @@ Differs from `prompt_template` (an LLM-facing PROMPT, not the target artifact),
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_output_template]] | downstream | 0.48 |
+| [[bld_prompt_output_template]] | downstream | 0.48 |
 | [[p10_lr_output_template_builder]] | downstream | 0.42 |
 | [[output-template-builder]] | downstream | 0.40 |
 | [[p11_qg_output_template]] | downstream | 0.36 |

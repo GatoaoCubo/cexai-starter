@@ -68,8 +68,8 @@ I compose step-by-step recipes so agents can execute tasks in correct order with
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_action_prompt]] | sibling | 0.45 |
-| [[bld_collaboration_agent]] | sibling | 0.44 |
-| [[bld_collaboration_agent_package]] | sibling | 0.40 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.40 |
-| [[bld_collaboration_boot_config]] | sibling | 0.38 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.45 |
+| [[bld_orchestration_agent]] | sibling | 0.44 |
+| [[bld_orchestration_agent_package]] | sibling | 0.40 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.40 |
+| [[bld_orchestration_boot_config]] | sibling | 0.38 |

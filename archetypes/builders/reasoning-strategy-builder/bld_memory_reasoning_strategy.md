@@ -48,8 +48,8 @@ Reviewed artifacts showed 30% higher success rates when strategies included form
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_reasoning_strategy]] | upstream | 0.30 |
-| [[bld_instruction_reasoning_strategy]] | upstream | 0.30 |
+| [[bld_knowledge_reasoning_strategy]] | upstream | 0.30 |
+| [[bld_prompt_reasoning_strategy]] | upstream | 0.30 |
 | p10_mem_prompt_optimizer_builder | related | 0.30 |
 | p10_lr_planning_strategy_builder | sibling | 0.29 |
 | [[kc_reasoning_strategy]] | upstream | 0.28 |

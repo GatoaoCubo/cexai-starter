@@ -160,7 +160,7 @@ OUTPUT: validated workflow_primitive YAML file
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p11_qg_workflow_primitive]] | downstream | 0.55 |
-| [[bld_knowledge_card_workflow_primitive]] | upstream | 0.55 |
+| [[bld_knowledge_workflow_primitive]] | upstream | 0.55 |
 | [[workflow-primitive-builder]] | downstream | 0.52 |
 | [[bld_output_template_workflow_primitive]] | downstream | 0.49 |
 | [[bld_config_workflow_primitive]] | downstream | 0.47 |

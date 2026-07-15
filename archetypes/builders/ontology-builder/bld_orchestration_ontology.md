@@ -98,5 +98,5 @@ have a schema to build against.
 | [[bld_architecture_ontology]] | upstream | 0.45 |
 | [[ontology-builder]] | upstream | 0.42 |
 | n00_ontology_manifest | upstream | 0.40 |
-| [[bld_instruction_ontology]] | upstream | 0.36 |
+| [[bld_prompt_ontology]] | upstream | 0.36 |
 | [[bld_schema_ontology]] | upstream | 0.34 |

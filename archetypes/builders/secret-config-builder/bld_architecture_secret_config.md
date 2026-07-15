@@ -82,7 +82,7 @@ permission      --gates-->    agent
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[secret-config-builder]] | downstream | 0.51 |
-| [[bld_collaboration_secret_config]] | downstream | 0.43 |
-| [[bld_instruction_secret_config]] | upstream | 0.42 |
+| [[bld_orchestration_secret_config]] | downstream | 0.43 |
+| [[bld_prompt_secret_config]] | upstream | 0.42 |
 | [[bld_schema_secret_config]] | downstream | 0.40 |
-| [[bld_knowledge_card_secret_config]] | upstream | 0.38 |
+| [[bld_knowledge_secret_config]] | upstream | 0.38 |

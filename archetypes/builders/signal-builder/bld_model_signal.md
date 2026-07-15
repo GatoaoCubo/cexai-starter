@@ -126,8 +126,8 @@ Max body: 4096 bytes. Every field definition is precise. No explanatory prose in
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_signal]] | related | 0.44 |
+| [[bld_orchestration_signal]] | related | 0.44 |
 | [[p11_qg_signal]] | upstream | 0.43 |
-| [[bld_knowledge_card_signal]] | related | 0.43 |
+| [[bld_knowledge_signal]] | related | 0.43 |
 | [[p03_ins_signal_builder]] | upstream | 0.42 |
 | [[bld_architecture_signal]] | upstream | 0.42 |

@@ -71,6 +71,6 @@ A research pipeline is a config-driven system that collects, scores, synthesizes
 |----------|-------------|-------|
 | [[research-pipeline-builder]] | downstream | 0.49 |
 | p02_agent_research_pipeline_intelligence | downstream | 0.46 |
-| [[p01_kc_research_pipeline]] | sibling | 0.44 |
-| [[p01_kc_research_methods]] | sibling | 0.43 |
-| [[bld_instruction_research_pipeline]] | downstream | 0.41 |
+| [[kc_research_pipeline]] | sibling | 0.44 |
+| [[kc_research_methods]] | sibling | 0.43 |
+| [[bld_prompt_research_pipeline]] | downstream | 0.41 |

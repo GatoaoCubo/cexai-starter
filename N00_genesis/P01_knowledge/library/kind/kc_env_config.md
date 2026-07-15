@@ -187,7 +187,7 @@ This artifact defines **standard practices for configuring environments in large
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p09_secret_openai_key | downstream | 0.30 |
-| [[bld_knowledge_card_secret_config]] | sibling | 0.29 |
-| [[p01_kc_secret_config]] | sibling | 0.28 |
+| [[bld_knowledge_secret_config]] | sibling | 0.29 |
+| [[kc_secret_config]] | sibling | 0.28 |
 | p09_secret_config | downstream | 0.28 |
 | p09_sec_n07 | downstream | 0.27 |

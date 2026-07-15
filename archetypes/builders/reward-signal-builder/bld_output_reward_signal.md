@@ -96,6 +96,6 @@ Baseline: `{{baseline}}` — `{{what_happens_when_score_falls_below}}`
 |----------|-------------|-------|
 | [[bld_architecture_reward_signal]] | downstream | 0.46 |
 | [[reward-signal-builder]] | downstream | 0.42 |
-| [[bld_instruction_reward_signal]] | upstream | 0.41 |
+| [[bld_prompt_reward_signal]] | upstream | 0.41 |
 | [[bld_schema_reward_signal]] | downstream | 0.40 |
 | [[bld_config_reward_signal]] | downstream | 0.35 |

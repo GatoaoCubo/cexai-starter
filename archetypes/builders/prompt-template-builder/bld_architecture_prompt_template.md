@@ -69,7 +69,7 @@ prompt_template --signals-->   render_error
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-template-builder]] | upstream | 0.53 |
-| [[bld_knowledge_card_prompt_template]] | upstream | 0.50 |
+| [[bld_knowledge_prompt_template]] | upstream | 0.50 |
 | [[bld_memory_prompt_template]] | downstream | 0.49 |
 | [[p03_ins_prompt_template]] | upstream | 0.45 |
-| [[bld_collaboration_prompt_template]] | upstream | 0.42 |
+| [[bld_orchestration_prompt_template]] | upstream | 0.42 |

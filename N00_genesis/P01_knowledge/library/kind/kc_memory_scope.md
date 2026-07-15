@@ -107,8 +107,8 @@ A memory_scope defines what memory an agent has access to, how it persists, and 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_memory_scope]] | sibling | 0.50 |
+| [[bld_knowledge_memory_scope]] | sibling | 0.50 |
 | [[memory-scope-builder]] | related | 0.47 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.45 |
+| [[bld_orchestration_memory_scope]] | downstream | 0.45 |
 | [[bld_architecture_memory_scope]] | downstream | 0.42 |
 | bld_collaboration_memory_type | downstream | 0.42 |

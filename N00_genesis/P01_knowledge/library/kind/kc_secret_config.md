@@ -98,4 +98,4 @@ env_config, permission --> [secret_config] --> rate_limit_config, agent_card
 | p09_sec_n07 | related | 0.46 |
 | p09_secret_config | related | 0.46 |
 | [[bld_architecture_env_config]] | upstream | 0.45 |
-| [[bld_collaboration_env_config]] | downstream | 0.40 |
+| [[bld_orchestration_env_config]] | downstream | 0.40 |

@@ -52,4 +52,4 @@ Does NOT handle composite metrics (benchmark_suite builder), qualitative rubrics
 | bld_collaboration_reward_model | sibling | 0.29 |
 | bld_collaboration_cohort_analysis | sibling | 0.29 |
 | bld_collaboration_ab_test_config | sibling | 0.29 |
-| [[bld_collaboration_white_label_config]] | sibling | 0.27 |
+| [[bld_orchestration_white_label_config]] | sibling | 0.27 |

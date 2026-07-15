@@ -62,5 +62,5 @@ related:
 | [[p02_qg_nucleus_def]] | downstream | 0.46 |
 | [[bld_tools_nucleus_def]] | downstream | 0.43 |
 | [[bld_schema_nucleus_def]] | downstream | 0.40 |
-| [[bld_knowledge_card_nucleus_def]] | upstream | 0.38 |
+| [[bld_knowledge_nucleus_def]] | upstream | 0.38 |
 | [[p10_lr_nucleus_def_builder]] | downstream | 0.37 |

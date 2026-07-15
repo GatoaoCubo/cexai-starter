@@ -74,7 +74,7 @@ runtime_rule (P09) --independent-- env_config (runtime_rule governs behavior lik
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[env-config-builder]] | downstream | 0.59 |
-| [[bld_collaboration_env_config]] | downstream | 0.50 |
+| [[bld_orchestration_env_config]] | downstream | 0.50 |
 | p01_kc_cex_lp09_config | upstream | 0.45 |
 | [[p11_qg_env_config]] | downstream | 0.42 |
 | n00_env_config_manifest | downstream | 0.39 |

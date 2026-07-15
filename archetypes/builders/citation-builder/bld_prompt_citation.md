@@ -93,8 +93,8 @@ python _tools/cex_skill_loader.py --verify citation
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_citation]] | upstream | 0.42 |
+| [[kc_citation]] | upstream | 0.42 |
 | [[bld_output_template_citation]] | downstream | 0.40 |
-| [[bld_instruction_retriever_config]] | sibling | 0.39 |
-| [[bld_instruction_output_validator]] | sibling | 0.39 |
+| [[bld_prompt_retriever_config]] | sibling | 0.39 |
+| [[bld_prompt_output_validator]] | sibling | 0.39 |
 | [[bld_schema_citation]] | downstream | 0.39 |

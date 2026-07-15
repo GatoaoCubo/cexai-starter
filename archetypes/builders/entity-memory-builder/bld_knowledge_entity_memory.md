@@ -82,7 +82,7 @@ Entity memory stores structured facts about named entities — people, tools, co
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[entity-memory-builder]] | downstream | 0.62 |
-| [[bld_collaboration_entity_memory]] | downstream | 0.55 |
-| [[p01_kc_entity_memory]] | sibling | 0.50 |
+| [[bld_orchestration_entity_memory]] | downstream | 0.55 |
+| [[kc_entity_memory]] | sibling | 0.50 |
 | [[bld_schema_entity_memory]] | downstream | 0.50 |
-| [[bld_instruction_entity_memory]] | downstream | 0.48 |
+| [[bld_prompt_entity_memory]] | downstream | 0.48 |

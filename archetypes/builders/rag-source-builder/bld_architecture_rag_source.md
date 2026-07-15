@@ -69,7 +69,7 @@ rag_source       --signals-->     freshness_alert
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[rag-source-builder]] | upstream | 0.53 |
-| [[p01_kc_rag_source]] | upstream | 0.49 |
+| [[kc_rag_source]] | upstream | 0.49 |
 | [[p03_ins_rag_source]] | upstream | 0.47 |
 | [[bld_memory_rag_source]] | downstream | 0.42 |
-| [[bld_knowledge_card_rag_source]] | upstream | 0.41 |
+| [[bld_knowledge_rag_source]] | upstream | 0.41 |

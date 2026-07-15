@@ -100,6 +100,6 @@ System prompts define an LLM agent's permanent identity — who it is, what bina
 |----------|-------------|-------|
 | [[system-prompt-builder]] | related | 0.57 |
 | [[bld_schema_system_prompt]] | downstream | 0.47 |
-| [[bld_collaboration_system_prompt]] | related | 0.36 |
+| [[bld_orchestration_system_prompt]] | related | 0.36 |
 | [[bld_memory_system_prompt]] | downstream | 0.35 |
 | [[action-prompt-builder]] | related | 0.32 |

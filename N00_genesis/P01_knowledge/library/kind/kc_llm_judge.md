@@ -137,7 +137,7 @@ RUBRIC_REF  = <RUBRIC_REF>             # scoring_rubric applied
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_llm_judge]] | downstream | 0.66 |
+| [[bld_orchestration_llm_judge]] | downstream | 0.66 |
 | [[llm-judge-builder]] | related | 0.65 |
 | p07_llm_judge | related | 0.54 |
 | n00_judge_config_manifest | sibling | 0.54 |

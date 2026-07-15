@@ -77,6 +77,6 @@ conditions:
 |----------|-------------|-------|
 | [[p11_qg_role_assignment]] | downstream | 0.49 |
 | [[role-assignment-builder]] | upstream | 0.44 |
-| [[bld_instruction_role_assignment]] | upstream | 0.43 |
-| [[bld_knowledge_card_role_assignment]] | upstream | 0.43 |
+| [[bld_prompt_role_assignment]] | upstream | 0.43 |
+| [[bld_knowledge_role_assignment]] | upstream | 0.43 |
 | [[bld_schema_role_assignment]] | downstream | 0.42 |

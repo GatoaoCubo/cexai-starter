@@ -122,6 +122,6 @@ Body structure (all sections required):
 |----------|-------------|-------|
 | [[p03_ins_mental_model]] | sibling | 0.50 |
 | [[runtime-state-builder]] | related | 0.49 |
-| [[bld_collaboration_runtime_state]] | related | 0.47 |
+| [[bld_orchestration_runtime_state]] | related | 0.47 |
 | [[bld_architecture_runtime_state]] | upstream | 0.42 |
 | [[p11_qg_runtime_state]] | downstream | 0.40 |

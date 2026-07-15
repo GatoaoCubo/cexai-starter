@@ -65,8 +65,8 @@ I set safety boundaries so agents operate within safe limits with clear violatio
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | sibling | 0.46 |
+| [[bld_orchestration_agent]] | sibling | 0.46 |
 | [[guardrail-builder]] | upstream | 0.42 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.36 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.36 |
 | bld_collaboration_bugloop | sibling | 0.35 |
 | [[bld_architecture_guardrail]] | upstream | 0.34 |

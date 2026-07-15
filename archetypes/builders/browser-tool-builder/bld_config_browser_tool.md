@@ -93,8 +93,8 @@ Rule: every browser_tool MUST define timeout (implicit default 30000ms is accept
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_browser_tool]] | upstream | 0.40 |
-| [[bld_knowledge_card_browser_tool]] | upstream | 0.40 |
+| [[bld_prompt_browser_tool]] | upstream | 0.40 |
+| [[bld_knowledge_browser_tool]] | upstream | 0.40 |
 | [[browser-tool-builder]] | upstream | 0.36 |
 | p04_browser_tool_NAME | upstream | 0.35 |
 | [[bld_schema_browser_tool]] | upstream | 0.34 |

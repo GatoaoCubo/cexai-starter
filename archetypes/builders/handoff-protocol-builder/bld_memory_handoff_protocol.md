@@ -78,7 +78,7 @@ python _tools/cex_score.py --apply p10-lr-handoff-protocol-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_handoff_protocol]] | upstream | 0.44 |
+| [[bld_knowledge_handoff_protocol]] | upstream | 0.44 |
 | [[handoff-protocol-builder]] | upstream | 0.44 |
 | [[p10_lr_retriever_config_builder]] | sibling | 0.40 |
 | [[p10_lr_output_validator_builder]] | sibling | 0.38 |

@@ -66,6 +66,6 @@ As AI regulations like the EU AI Act emerge, structured documentation becomes a 
 |----------|-------------|-------|
 | [[dataset-card-builder]] | related | 0.40 |
 | p01_kc_data_residency | sibling | 0.29 |
-| [[p01_kc_dataset_card]] | sibling | 0.29 |
+| [[kc_dataset_card]] | sibling | 0.29 |
 | [[p10_lr_dataset_card_builder]] | downstream | 0.28 |
 | bld_knowledge_card_data_residency | sibling | 0.27 |

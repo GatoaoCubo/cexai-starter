@@ -248,7 +248,7 @@ KC (.md) -> cex_export.py sql   -> SQL INSERT (Supabase pgvector)
 | `cex_evolve.py` | AutoResearch loop for artifact improvement | Continuous improvement |
 | `cex_prompt_layers.py` | Load 15+ pillar artifacts into prompts | Context enrichment |
 | `cex_schema_hydrate.py` | Hydrate ISOs with universal patterns | Builder preparation |
-| `cex_skill_loader.py` | Builder ISO loader: 13 ISOs per kind | F2 BECOME |
+| `cex_skill_loader.py` | Builder ISO loader: 12 ISOs per kind | F2 BECOME |
 | `cex_token_budget.py` | Token counting + budget allocation | Context window management |
 | `cex_research.py` | Research tool for knowledge gathering | Source acquisition |
 | `validate_schema.py` | Schema validation | Contract enforcement |
@@ -293,7 +293,7 @@ N04 has the most MCP servers of any nucleus (5) because knowledge work requires 
 
 6. **5 MCP Servers**: Most connected nucleus. Ingestion (firecrawl + fetch) -> storage (supabase + postgres) -> transformation (notebooklm). This pipeline turns raw web content into indexed, retrievable, transformable knowledge.
 
-7. **20 Sub-Agent Definitions**: Every domain kind has a dedicated builder agent in `.claude/P02_model/`, each loading 13 ISOs. This means N04 can dispatch specialized builders for any knowledge or memory artifact type.
+7. **20 Sub-Agent Definitions**: Every domain kind has a dedicated builder agent in `.claude/P02_model/`, each loading 12 ISOs. This means N04 can dispatch specialized builders for any knowledge or memory artifact type.
 
 8. **P01 Library Depth**: The P01 compiled directory holds 197 example artifacts -- the largest example corpus of any pillar. These serve as F3 injection sources for template-first construction.
 
@@ -385,8 +385,8 @@ N04 is the knowledge infrastructure of CEX. Where N03 builds any artifact and N0
 | [[kc_knowledge_vocabulary]] | upstream | 0.50 |
 | p02_agent_knowledge_n04 | upstream | 0.40 |
 | p03_sp_knowledge_nucleus | downstream | 0.36 |
-| [[bld_collaboration_knowledge_card]] | downstream | 0.34 |
+| [[bld_orchestration_knowledge_card]] | downstream | 0.34 |
 | p02_ap_n04_knowledge | related | 0.31 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.30 |
+| [[bld_orchestration_memory_scope]] | downstream | 0.30 |
 | p12_wf_knowledge | downstream | 0.30 |
 | bld_collaboration_knowledge_graph | related | 0.27 |

@@ -87,6 +87,6 @@ LLM-as-Judge uses a language model to evaluate another model's output, returning
 |----------|-------------|-------|
 | [[p10_lr_llm_judge_builder]] | downstream | 0.50 |
 | [[llm-judge-builder]] | downstream | 0.46 |
-| [[bld_instruction_llm_judge]] | downstream | 0.42 |
-| [[p01_kc_llm_judge]] | sibling | 0.40 |
+| [[bld_prompt_llm_judge]] | downstream | 0.42 |
+| [[kc_llm_judge]] | sibling | 0.40 |
 | [[p11_qg_llm_judge]] | downstream | 0.40 |

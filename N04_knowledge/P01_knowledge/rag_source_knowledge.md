@@ -76,7 +76,7 @@ The `retriever_config` boosts this source when the user's query contains:
 - Capital `CEX` / `CEXAI`
 - Nucleus codes `N00`-`N07`
 - Pillar codes `P01`-`P12`
-- Kind names from `.cex/kinds_meta.json` (300+ kinds)
+- Kind names from `.cex/kinds_meta.json` (125 kinds)
 - Builder names ending in `-builder`
 
 ## 6. Counter-Examples (when NOT to use this source)
@@ -97,9 +97,9 @@ The `retriever_config` boosts this source when the user's query contains:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_rag_source]] | related | 0.32 |
-| [[bld_collaboration_rag_source]] | related | 0.28 |
+| [[bld_orchestration_rag_source]] | related | 0.28 |
 | [[bld_architecture_rag_source]] | related | 0.26 |
-| [[bld_knowledge_card_rag_source]] | related | 0.25 |
+| [[bld_knowledge_rag_source]] | related | 0.25 |
 | [[p03_ins_rag_source]] | related | 0.25 |
 | [[p01_gl_rag]] | upstream | 0.32 |
 | rag_source_supabase | sibling | 0.50 |

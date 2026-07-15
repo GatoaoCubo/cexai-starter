@@ -85,6 +85,6 @@ tldr: "{{dense_summary_max_160ch}}"
 |----------|-------------|-------|
 | p01_gl_TERM_SLUG | upstream | 0.38 |
 | [[p11_qg_glossary_entry]] | downstream | 0.36 |
-| [[bld_knowledge_card_glossary_entry]] | upstream | 0.35 |
+| [[bld_knowledge_glossary_entry]] | upstream | 0.35 |
 | [[bld_config_glossary_entry]] | downstream | 0.34 |
-| [[bld_collaboration_glossary_entry]] | downstream | 0.34 |
+| [[bld_orchestration_glossary_entry]] | downstream | 0.34 |

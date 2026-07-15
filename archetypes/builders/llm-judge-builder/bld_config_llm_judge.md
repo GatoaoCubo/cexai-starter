@@ -95,7 +95,7 @@ Bad: "Very good response."
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_llm_judge]] | upstream | 0.36 |
+| [[bld_prompt_llm_judge]] | upstream | 0.36 |
 | [[bld_config_memory_scope]] | sibling | 0.36 |
 | [[bld_config_prompt_version]] | sibling | 0.35 |
 | [[bld_config_retriever_config]] | sibling | 0.35 |

@@ -81,7 +81,7 @@ python _tools/cex_score.py --apply bld-config-embedding-config.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_embedder_provider]] | sibling | 0.36 |
-| [[bld_knowledge_card_embedding_config]] | upstream | 0.34 |
+| [[bld_knowledge_embedding_config]] | upstream | 0.34 |
 | [[bld_architecture_embedding_config]] | upstream | 0.33 |
 | [[p01_emb_openai_text_embedding_3_small]] | upstream | 0.33 |
-| [[p01_kc_embedding_config]] | upstream | 0.32 |
+| [[kc_embedding_config]] | upstream | 0.32 |

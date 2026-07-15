@@ -111,5 +111,5 @@ A single, human-verified test case that represents the ideal input/output pair a
 | [[bld_architecture_golden_test]] | downstream | 0.36 |
 | [[golden-test-builder]] | related | 0.34 |
 | n00_golden_test_manifest | sibling | 0.34 |
-| [[bld_collaboration_golden_test]] | downstream | 0.32 |
-| [[p01_kc_eval_dataset]] | sibling | 0.30 |
+| [[bld_orchestration_golden_test]] | downstream | 0.32 |
+| [[kc_eval_dataset]] | sibling | 0.30 |

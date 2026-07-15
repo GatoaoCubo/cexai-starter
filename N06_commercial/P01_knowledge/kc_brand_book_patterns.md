@@ -485,4 +485,4 @@ MEASUREMENT:
 | p03_sp_brand_nucleus | downstream | 0.50 |
 | p02_agent_commercial_nucleus | downstream | 0.46 |
 | p01_kc_brand_best_practices | sibling | 0.44 |
-| [[p01_kc_brand_tokens_pipeline]] | sibling | 0.42 |
+| [[kc_brand_tokens_pipeline]] | sibling | 0.42 |

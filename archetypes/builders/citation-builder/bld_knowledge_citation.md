@@ -75,8 +75,8 @@ Citations are structured source attributions that ground LLM outputs in verifiab
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_citation]] | sibling | 0.61 |
+| [[kc_citation]] | sibling | 0.61 |
 | [[citation-builder]] | related | 0.54 |
 | [[p10_lr_citation_builder]] | downstream | 0.48 |
 | [[bld_output_template_citation]] | downstream | 0.42 |
-| [[bld_instruction_citation]] | downstream | 0.42 |
+| [[bld_prompt_citation]] | downstream | 0.42 |

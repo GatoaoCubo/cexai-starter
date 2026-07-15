@@ -82,7 +82,7 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_parser]] | upstream | 0.40 |
+| [[bld_knowledge_parser]] | upstream | 0.40 |
 | [[parser-builder]] | upstream | 0.36 |
 | [[bld_config_formatter]] | sibling | 0.33 |
 | [[bld_schema_parser]] | upstream | 0.33 |

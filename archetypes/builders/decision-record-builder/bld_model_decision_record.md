@@ -155,7 +155,7 @@ quality: null
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_decision_record]] | related | 0.60 |
-| [[bld_knowledge_card_decision_record]] | upstream | 0.55 |
-| [[bld_collaboration_decision_record]] | downstream | 0.54 |
-| [[bld_instruction_decision_record]] | upstream | 0.52 |
-| [[p01_kc_decision_record]] | related | 0.52 |
+| [[bld_knowledge_decision_record]] | upstream | 0.55 |
+| [[bld_orchestration_decision_record]] | downstream | 0.54 |
+| [[bld_prompt_decision_record]] | upstream | 0.52 |
+| [[kc_decision_record]] | related | 0.52 |

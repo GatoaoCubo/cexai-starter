@@ -79,7 +79,7 @@ python _tools/cex_score.py --apply p10-lr-chunk-strategy-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p10_lr_retriever_config_builder]] | sibling | 0.46 |
-| [[bld_knowledge_card_chunk_strategy]] | upstream | 0.45 |
+| [[bld_knowledge_chunk_strategy]] | upstream | 0.45 |
 | [[chunk-strategy-builder]] | upstream | 0.42 |
 | [[p10_lr_output_validator_builder]] | sibling | 0.41 |
 | [[p10_lr_handoff_protocol_builder]] | sibling | 0.40 |

@@ -94,7 +94,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_config_social_publisher | sibling | 0.44 |
-| [[p01_kc_source_catalog]] | upstream | 0.32 |
+| [[kc_source_catalog]] | upstream | 0.32 |
 | [[bld_config_content_monetization]] | sibling | 0.27 |
 | p04_cli_research_pipeline_n01 | upstream | 0.26 |
 | tpl_research_pipeline | upstream | 0.23 |

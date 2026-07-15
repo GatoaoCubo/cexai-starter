@@ -143,8 +143,8 @@ ttl: "24h"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_checkpoint]] | related | 0.79 |
+| [[bld_orchestration_checkpoint]] | related | 0.79 |
 | [[bld_architecture_checkpoint]] | upstream | 0.74 |
-| [[bld_instruction_checkpoint]] | upstream | 0.68 |
-| [[bld_knowledge_card_checkpoint]] | upstream | 0.66 |
-| [[p01_kc_checkpoint]] | related | 0.65 |
+| [[bld_prompt_checkpoint]] | upstream | 0.68 |
+| [[bld_knowledge_checkpoint]] | upstream | 0.66 |
+| [[kc_checkpoint]] | related | 0.65 |

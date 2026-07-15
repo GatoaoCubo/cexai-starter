@@ -117,8 +117,8 @@ Every response that produces an artifact must include:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_golden_test]] | downstream | 0.49 |
-| [[bld_knowledge_card_golden_test]] | upstream | 0.38 |
-| [[bld_instruction_golden_test]] | upstream | 0.37 |
+| [[bld_orchestration_golden_test]] | downstream | 0.49 |
+| [[bld_knowledge_golden_test]] | upstream | 0.38 |
+| [[bld_prompt_golden_test]] | upstream | 0.37 |
 | [[bld_architecture_golden_test]] | downstream | 0.36 |
 | [[p10_lr_golden_test_builder]] | downstream | 0.35 |

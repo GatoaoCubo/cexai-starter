@@ -65,7 +65,7 @@ Criteria design rules:
 ## Builder Context
 
 This ISO operates within the `llm-judge-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -120,8 +120,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_llm_judge_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_llm_judge]] | upstream | 0.51 |
+| [[bld_knowledge_llm_judge]] | upstream | 0.51 |
 | [[llm-judge-builder]] | upstream | 0.44 |
 | p07_llm_judge | upstream | 0.44 |
-| [[bld_collaboration_llm_judge]] | downstream | 0.44 |
-| [[p01_kc_llm_judge]] | upstream | 0.43 |
+| [[bld_orchestration_llm_judge]] | downstream | 0.44 |
+| [[kc_llm_judge]] | upstream | 0.43 |

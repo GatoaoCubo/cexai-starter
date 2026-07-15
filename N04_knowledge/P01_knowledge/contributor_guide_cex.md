@@ -26,10 +26,21 @@ related:
 
 # Contributing to CEX
 
-CEXAI is an open-source AI brain for LLM agents: 300 kinds, 300+ builders, 8 nuclei, and a
-self-assimilating 8F pipeline. Contributions add new builders, knowledge cards, SDK providers,
-or domain-specialized nuclei. Every contribution passes the same quality gates as internal work.
-This guide covers everything from environment setup to a merged PR.
+CEXAI is an open-source AI brain for LLM agents: 125 kinds, 119 builders, 8 nuclei, and a
+self-assimilating 8F pipeline. This guide covers environment setup and the PR process for
+**small corrections inside the brain** -- typo fixes, broken links, factual errors in an
+existing knowledge card, or a bug in an existing builder. Every contribution passes the same
+quality gates as internal work.
+
+> **Scope note (see `CONTRIBUTING.md`):** this repo is a fabricated starter tenant, not the
+> CEXAI engine. Small fixes to *existing* artifacts are welcome as normal PRs here (that is
+> what this guide walks through). **A brand-new builder, a brand-new kind, a new SDK
+> provider, or a new vertical nucleus is a structural brain change** -- those are fabricated
+> by the CEXAI factory (the `/genesis` service), not hand-built in a diff against this
+> starter. If you want a capability this tenant does not have, that is a **fabrication
+> request** (see `CONTRIBUTING.md`'s "Asking for your own fabrication"), not a PR. The
+> walkthroughs below stay useful as a reference for how a builder/nucleus is put together
+> even though they read like "build one from scratch and PR it."
 
 ---
 
@@ -47,12 +58,12 @@ This guide covers everything from environment setup to a merged PR.
 ### Installation
 
 ```bash
-# 1. Fork on GitHub, then clone your fork
-git clone https://github.com/<your-username>/cex.git
-cd cex
+# 1. Fork cexai-starter on GitHub, then clone your fork
+git clone https://github.com/<your-username>/cexai-starter.git
+cd cexai-starter
 
-# 2. Add upstream
-git remote add upstream https://github.com/your-org/cex.git
+# 2. Add the origin starter as a remote (for pulling updates)
+git remote add upstream https://github.com/GatoaoCubo/cexai-starter.git
 
 # 3. Install in editable mode with dev deps
 pip install -e ".[dev]"
@@ -72,7 +83,7 @@ If setup fails, open an issue with `python _tools/cex_doctor.py` output and your
 
 ### Path 1: New Builder (Recommended for First Contribution)
 
-A builder is 13 ISO files in `archetypes/builders/{kind}-builder/`. Builders teach the LLM
+A builder is 12 ISO files in `archetypes/builders/{kind}-builder/`. Builders teach the LLM
 pipeline how to produce a specific kind of artifact.
 
 **Step 1 — Find an unbuild kind:**
@@ -92,23 +103,23 @@ built = {p.name.replace('-builder','') for p in Path('archetypes/builders').iter
 cp -r archetypes/builders/agent-builder archetypes/builders/{kind}-builder
 ```
 
-**Step 3 — Fill all 13 ISOs:**
+**Step 3 — Fill all 12 ISOs** (real filenames, verified against
+`archetypes/builders/agent-builder/` -- disk-identical for every kind):
 
 | # | File | Purpose | Size Target |
 |---|------|---------|-------------|
-| 1 | `bld_system_prompt_{kind}.md` | Identity, role, constraints | 500-800 B |
-| 2 | `bld_instruction_{kind}.md` | Step-by-step execution | 1-2 KB |
-| 3 | `bld_quality_gate_{kind}.md` | Pass/fail criteria | 600-900 B |
-| 4 | `bld_knowledge_card_{kind}.md` | Domain knowledge | max 4 KB |
+| 1 | `bld_model_{kind}.md` | Identity metadata: version, pillar, kind, tags | 400-600 B |
+| 2 | `bld_prompt_{kind}.md` | System identity, role, constraints, persona | 500-800 B |
+| 3 | `bld_eval_{kind}.md` | Pass/fail quality gate criteria | 600-900 B |
+| 4 | `bld_knowledge_{kind}.md` | Domain knowledge | max 4 KB |
 | 5 | `bld_architecture_{kind}.md` | Component map, data flow | 600-900 B |
-| 6 | `bld_collaboration_{kind}.md` | Inter-builder dependencies | 400-600 B |
+| 6 | `bld_orchestration_{kind}.md` | Inter-builder dependencies | 400-600 B |
 | 7 | `bld_memory_{kind}.md` | Learning record schema | 400-600 B |
-| 8 | `bld_examples_{kind}.md` | Input/output examples | 1-2 KB |
+| 8 | `bld_feedback_{kind}.md` | What patterns led to high/low scores | 400-600 B |
 | 9 | `bld_schema_{kind}.md` | Input/output JSON/YAML schema | 600-900 B |
 | 10 | `bld_config_{kind}.md` | Builder configuration | 400-600 B |
-| 11 | `bld_manifest_{kind}.md` | Metadata: version, pillar, kind, tags | 400-600 B |
-| 12 | `bld_output_template_{kind}.md` | Output format template | 1-3 KB |
-| 13 | `bld_tools_{kind}.md` | Available tools and integrations | 400-600 B |
+| 11 | `bld_output_{kind}.md` | Output format template | 1-3 KB |
+| 12 | `bld_tools_{kind}.md` | Available tools and integrations | 400-600 B |
 
 **Step 4 — Validate and PR:**
 
@@ -174,6 +185,11 @@ PR title: `[sdk] add {provider}-provider`
 ---
 
 ### Path 4: Vertical Nucleus
+
+> A brand-new nucleus (N08+) is a structural brain change -- per `CONTRIBUTING.md`, this is
+> a fabrication request routed through the factory, not a hand-authored PR against this
+> starter. The anatomy below stays useful reference material for understanding what a
+> nucleus is made of.
 
 A vertical nucleus is a domain-specialized CEX fractal (N08+). Examples: N08_healthcare,
 N09_fintech, N10_edtech. Each brings domain expertise the core team lacks.
@@ -250,7 +266,7 @@ Format: `[{scope}] {action}: {description}`
 
 Examples:
 ```
-[builder] add changelog-builder (13 ISOs, pillar P01)
+[builder] add changelog-builder (12 ISOs, pillar P01)
 [knowledge] add kc_fhir_resources -- FHIR R4 resource taxonomy
 [fix] cex_doctor: handle empty pillar directory gracefully
 ```
@@ -280,7 +296,7 @@ Reviews assess:
 - Density: tables and bullets, no prose walls
 - Cross-references: does it link to related artifacts correctly?
 - Non-ASCII compliance in code files
-- 13 ISO completeness for builder PRs
+- 12 ISO completeness for builder PRs
 
 **Re-review:** after addressing feedback, re-request review via the GitHub button.
 Do not open a new PR for revisions.
@@ -290,7 +306,7 @@ Do not open a new PR for revisions.
 ## What NOT to Do
 
 - Do not self-score quality -- leave `quality: null` in frontmatter
-- Do not submit a builder with fewer than 13 ISO files
+- Do not submit a builder with fewer than 12 ISO files
 - Do not use Portuguese, emoji, or non-ASCII in code files (`.py`, `.ps1`, `.sh`)
 - Do not open a PR without running `cex_doctor` first
 - Do not put credentials, API keys, or `.env` contents in any file

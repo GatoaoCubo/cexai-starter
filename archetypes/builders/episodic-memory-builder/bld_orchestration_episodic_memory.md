@@ -75,6 +75,6 @@ I provide the temporally-indexed episode schema that enables agents to recall wh
 |----------|-------------|-------|
 | bld_collaboration_working_memory | sibling | 0.51 |
 | [[episodic-memory-builder]] | upstream | 0.48 |
-| [[p01_kc_episodic_memory]] | upstream | 0.40 |
-| [[bld_knowledge_card_episodic_memory]] | upstream | 0.40 |
+| [[kc_episodic_memory]] | upstream | 0.40 |
+| [[bld_knowledge_episodic_memory]] | upstream | 0.40 |
 | [[bld_architecture_episodic_memory]] | upstream | 0.40 |

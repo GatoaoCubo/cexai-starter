@@ -76,8 +76,8 @@ After creating nucleus-def-builder, add to kinds_meta.json:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_nucleus_def]] | upstream | 0.41 |
+| [[bld_prompt_nucleus_def]] | upstream | 0.41 |
 | [[p10_lr_nucleus_def_builder]] | downstream | 0.37 |
-| [[bld_collaboration_nucleus_def]] | downstream | 0.37 |
+| [[bld_orchestration_nucleus_def]] | downstream | 0.37 |
 | [[nucleus-def-builder]] | upstream | 0.36 |
 | [[bld_output_template_nucleus_def]] | downstream | 0.34 |

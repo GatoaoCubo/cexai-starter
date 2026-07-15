@@ -106,7 +106,7 @@ version: `{{version}}` | author: `{{author}}` | quality: null
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_agent]] | downstream | 0.33 |
-| [[bld_knowledge_card_agent]] | upstream | 0.29 |
-| [[bld_instruction_agent]] | upstream | 0.28 |
+| [[bld_knowledge_agent]] | upstream | 0.29 |
+| [[bld_prompt_agent]] | upstream | 0.28 |
 | [[p11_qg_agent]] | downstream | 0.27 |
 | [[bld_schema_agent]] | downstream | 0.27 |

@@ -125,8 +125,8 @@ Deliver a `router` artifact with this structure:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_router]] | related | 0.63 |
+| [[bld_orchestration_router]] | related | 0.63 |
 | [[bld_architecture_router]] | downstream | 0.62 |
 | [[bld_memory_router]] | downstream | 0.57 |
-| [[bld_knowledge_card_router]] | related | 0.54 |
+| [[bld_knowledge_router]] | related | 0.54 |
 | [[p11_qg_router]] | downstream | 0.52 |

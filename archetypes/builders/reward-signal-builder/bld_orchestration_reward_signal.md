@@ -91,7 +91,7 @@ If asked to produce any of the following, REDIRECT with reason:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reward-signal-builder]] | upstream | 0.49 |
-| [[bld_knowledge_card_reward_signal]] | upstream | 0.41 |
+| [[bld_knowledge_reward_signal]] | upstream | 0.41 |
 | n00_reward_signal_manifest | upstream | 0.35 |
 | n00_reward_model_manifest | upstream | 0.35 |
 | kc_reward_model | upstream | 0.34 |

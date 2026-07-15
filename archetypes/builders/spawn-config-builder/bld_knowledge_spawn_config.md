@@ -99,5 +99,5 @@ Spawn configs are YAML artifacts that define exactly how a agent node is launche
 | [[p11_qg_spawn_config]] | related | 0.50 |
 | [[bld_memory_spawn_config]] | upstream | 0.50 |
 | [[spawn-config-builder]] | related | 0.49 |
-| [[p01_kc_spawn_config]] | sibling | 0.49 |
-| [[bld_collaboration_spawn_config]] | related | 0.49 |
+| [[kc_spawn_config]] | sibling | 0.49 |
+| [[bld_orchestration_spawn_config]] | related | 0.49 |

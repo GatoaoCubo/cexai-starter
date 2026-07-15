@@ -108,8 +108,8 @@ retrieval quality at runtime. Always align with document-loader-builder output f
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_retriever_config]] | sibling | 0.34 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.34 |
 | [[retriever-builder]] | upstream | 0.29 |
-| [[bld_collaboration_search_tool]] | sibling | 0.27 |
-| [[bld_collaboration_vector_store]] | sibling | 0.25 |
+| [[bld_orchestration_search_tool]] | sibling | 0.27 |
+| [[bld_orchestration_vector_store]] | sibling | 0.25 |
 | [[bld_architecture_retriever]] | upstream | 0.24 |

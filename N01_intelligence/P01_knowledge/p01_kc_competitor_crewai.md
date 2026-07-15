@@ -35,7 +35,7 @@ it has become the dominant mid-tier agent framework by enterprise adoption. The 
 **Crews** (collaborative agent teams with role specialization) and **Flows** (event-driven production workflows with state management).
 As of April 2026, it powers 1.4 billion agentic executions total, 450M+ per month, and is used by approximately 60% of the Fortune 500.
 
-**Strategic signal for CEX:** Joao Moura is Brazilian. CEX's knowledge system (typed infrastructure, 12 pillars, 300 kinds)
+**Strategic signal for CEX:** Joao Moura is Brazilian. CEX's knowledge system (typed infrastructure, 12 pillars, 125 kinds)
 offers a fundamentally richer architecture than CrewAI's role-crew model. The cultural alignment creates a direct seeding
 angle: BR-to-BR founder story, shared language (PT-BR content), and a clear technical superiority narrative.
 
@@ -185,7 +185,7 @@ Certification courses and enterprise contracts are likely the dominant revenue s
 
 | Weakness | CEX Exploit Angle |
 |----------|------------------|
-| No typed knowledge system | CEX has 300 kinds, 12 pillars, typed artifacts -- CrewAI has zero knowledge architecture |
+| No typed knowledge system | CEX has 125 kinds, 12 pillars, typed artifacts -- CrewAI has zero knowledge architecture |
 | Role-crew abstraction leaks | "Role" is vague; no pillar-scoped domain separation like CEX nuclei |
 | No 8F reasoning pipeline | CrewAI agents reason ad hoc; CEX enforces 8F for every artifact, every time |
 | No quality gates | CrewAI has tracing but no peer-review scoring (D1-D5 dimensions); CEX has cex_score.py |
@@ -215,7 +215,7 @@ Certification courses and enterprise contracts are likely the dominant revenue s
 | Dimension | CrewAI | CEX |
 |-----------|--------|-----|
 | Architecture metaphor | Role-playing crew | Typed knowledge infrastructure |
-| Artifact model | Untyped agent outputs | 300 kinds x 12 pillars |
+| Artifact model | Untyped agent outputs | 125 kinds x 12 pillars |
 | Quality system | Tracing + OTel | 8F pipeline + cex_score.py (9.0 target) |
 | Knowledge persistence | Session memory | learning_records, entity_memory, KC library |
 | Multi-runtime | Python only | Claude + Codex + Gemini + Ollama |

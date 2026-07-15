@@ -92,8 +92,8 @@ python _tools/cex_score.py --apply p10-lr-enum-def-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_enum_def]] | upstream | 0.50 |
+| [[bld_knowledge_enum_def]] | upstream | 0.50 |
 | [[bld_config_enum_def]] | upstream | 0.46 |
-| [[bld_instruction_enum_def]] | upstream | 0.40 |
+| [[bld_prompt_enum_def]] | upstream | 0.40 |
 | [[bld_architecture_enum_def]] | upstream | 0.40 |
 | [[enum-def-builder]] | upstream | 0.34 |

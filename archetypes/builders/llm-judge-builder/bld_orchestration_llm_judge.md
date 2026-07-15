@@ -90,7 +90,7 @@ None — independent builder (layer 0). LLM judges can be defined standalone.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[llm-judge-builder]] | upstream | 0.56 |
-| [[p01_kc_llm_judge]] | upstream | 0.50 |
+| [[kc_llm_judge]] | upstream | 0.50 |
 | bld_collaboration_judge_config | sibling | 0.43 |
 | n00_llm_judge_manifest | upstream | 0.43 |
 | n00_judge_config_manifest | upstream | 0.42 |

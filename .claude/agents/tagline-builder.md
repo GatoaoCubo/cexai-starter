@@ -90,4 +90,4 @@ Five duties bind any agent that emits an artifact:
 | p03_sp_builder_nucleus | related | 0.32 |
 | kind-builder | related | 0.32 |
 | [[bld_tools_tagline]] | related | 0.31 |
-| [[bld_collaboration_tagline]] | related | 0.28 |
+| [[bld_orchestration_tagline]] | related | 0.28 |

@@ -123,7 +123,7 @@ Body sections: State Definitions, Transition Table, Freshness Policy, Review Cyc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_lifecycle_rule]] | related | 0.55 |
-| [[bld_collaboration_lifecycle_rule]] | related | 0.54 |
+| [[bld_orchestration_lifecycle_rule]] | related | 0.54 |
 | [[p03_ins_lifecycle_rule]] | related | 0.42 |
 | [[bld_architecture_lifecycle_rule]] | related | 0.41 |
-| [[bld_knowledge_card_lifecycle_rule]] | related | 0.39 |
+| [[bld_knowledge_lifecycle_rule]] | related | 0.39 |

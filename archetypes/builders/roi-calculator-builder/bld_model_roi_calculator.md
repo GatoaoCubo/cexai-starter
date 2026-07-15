@@ -69,8 +69,8 @@ NEVER MAKE UNSPECIFIED ASSUMPTIONS ABOUT DISCOUNT RATES OR TIME HORIZONS
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_roi_calculator]] | upstream | 0.54 |
-| [[bld_instruction_roi_calculator]] | upstream | 0.50 |
+| [[bld_knowledge_roi_calculator]] | upstream | 0.54 |
+| [[bld_prompt_roi_calculator]] | upstream | 0.50 |
 | [[p10_mem_roi_calculator_builder]] | upstream | 0.48 |
 | [[kc_roi_calculator]] | upstream | 0.48 |
 | [[p11_qg_roi_calculator]] | related | 0.41 |

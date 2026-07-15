@@ -107,6 +107,6 @@ Runtime state is the mutable YAML accumulator for an agent's in-flight decisions
 |----------|-------------|-------|
 | [[bld_memory_runtime_state]] | related | 0.45 |
 | [[runtime-state-builder]] | related | 0.42 |
-| [[bld_collaboration_session_state]] | related | 0.41 |
+| [[bld_orchestration_session_state]] | related | 0.41 |
 | [[bld_architecture_runtime_state]] | upstream | 0.39 |
 | [[session-state-builder]] | related | 0.38 |

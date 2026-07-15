@@ -126,5 +126,5 @@ Minimum template for a new brand:
 | p01_kc_brand_skill | sibling | 0.86 |
 | p12_wf_brand_propagation | downstream | 0.51 |
 | p03_sp_brand_nucleus | downstream | 0.45 |
-| [[p01_kc_brand_book_patterns]] | sibling | 0.43 |
-| [[p01_kc_brand_propagation_arch]] | sibling | 0.42 |
+| [[kc_brand_book_patterns]] | sibling | 0.43 |
+| [[kc_brand_propagation_arch]] | sibling | 0.42 |

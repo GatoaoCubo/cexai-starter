@@ -96,7 +96,7 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_output_template]] | upstream | 0.40 |
+| [[bld_knowledge_output_template]] | upstream | 0.40 |
 | [[bld_schema_output_template]] | downstream | 0.38 |
 | [[p10_lr_output_template_builder]] | downstream | 0.34 |
 | bld_instruction_kind | sibling (reflexive-case source) | 0.32 |

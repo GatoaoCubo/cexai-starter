@@ -128,8 +128,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_version]] | downstream | 0.53 |
-| [[p01_kc_prompt_version]] | related | 0.47 |
+| [[bld_orchestration_prompt_version]] | downstream | 0.53 |
+| [[kc_prompt_version]] | related | 0.47 |
 | [[bld_architecture_prompt_version]] | downstream | 0.46 |
 | [[system-prompt-builder]] | sibling | 0.46 |
 | n00_prompt_version_manifest | related | 0.46 |

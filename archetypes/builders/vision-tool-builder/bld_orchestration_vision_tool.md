@@ -79,7 +79,7 @@ None — independent builder (layer 0). Vision tools can be defined standalone.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[vision-tool-builder]] | upstream | 0.41 |
-| [[bld_collaboration_browser_tool]] | sibling | 0.33 |
-| [[bld_instruction_vision_tool]] | upstream | 0.32 |
-| [[bld_collaboration_computer_use]] | sibling | 0.30 |
-| [[bld_collaboration_search_tool]] | sibling | 0.30 |
+| [[bld_orchestration_browser_tool]] | sibling | 0.33 |
+| [[bld_prompt_vision_tool]] | upstream | 0.32 |
+| [[bld_orchestration_computer_use]] | sibling | 0.30 |
+| [[bld_orchestration_search_tool]] | sibling | 0.30 |

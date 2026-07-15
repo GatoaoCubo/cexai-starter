@@ -101,7 +101,7 @@ python _tools/cex_skill_loader.py --verify formatter
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[formatter-builder]] | downstream | 0.41 |
-| [[bld_instruction_action_prompt]] | sibling | 0.40 |
+| [[bld_prompt_action_prompt]] | sibling | 0.40 |
 | [[p10_lr_formatter_builder]] | downstream | 0.38 |
-| [[bld_instruction_golden_test]] | sibling | 0.37 |
-| [[bld_instruction_few_shot_example]] | sibling | 0.35 |
+| [[bld_prompt_golden_test]] | sibling | 0.37 |
+| [[bld_prompt_few_shot_example]] | sibling | 0.35 |

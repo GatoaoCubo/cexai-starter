@@ -82,8 +82,8 @@ Rule: tier value MUST be one of: free, build, scale, enterprise, or a provider-s
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_rate_limit_config]] | upstream | 0.48 |
-| [[bld_collaboration_rate_limit_config]] | downstream | 0.48 |
+| [[bld_knowledge_rate_limit_config]] | upstream | 0.48 |
+| [[bld_orchestration_rate_limit_config]] | downstream | 0.48 |
 | [[bld_config_model_provider]] | sibling | 0.46 |
 | [[p11_qg_rate_limit_config]] | downstream | 0.45 |
-| [[bld_instruction_rate_limit_config]] | upstream | 0.44 |
+| [[bld_prompt_rate_limit_config]] | upstream | 0.44 |

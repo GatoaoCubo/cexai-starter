@@ -100,7 +100,7 @@ Attempt discipline:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_retry_policy]] | upstream | 0.55 |
+| [[bld_knowledge_retry_policy]] | upstream | 0.55 |
 | [[kc_retry_policy]] | upstream | 0.54 |
 | [[retry-policy-builder]] | upstream | 0.52 |
 | [[bld_architecture_retry_policy]] | upstream | 0.46 |

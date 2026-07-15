@@ -100,4 +100,4 @@ decision_record, pattern --> [law] --> agent_card, workflow, permission
 | [[invariant-builder]] | related | 0.49 |
 | [[bld_architecture_invariant]] | related | 0.49 |
 | [[p03_ins_law]] | upstream | 0.45 |
-| [[bld_knowledge_card_invariant]] | sibling | 0.42 |
+| [[bld_knowledge_invariant]] | sibling | 0.42 |

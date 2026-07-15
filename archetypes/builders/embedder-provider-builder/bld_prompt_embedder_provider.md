@@ -109,4 +109,4 @@ Score all SOFT gates. If soft score < 8.0, revise in the same pass.
 | [[embedder-provider-builder]] | upstream | 0.46 |
 | [[p11_qg_embedder_provider]] | downstream | 0.46 |
 | p03_ins_model_card | sibling | 0.46 |
-| [[bld_knowledge_card_embedder_provider]] | upstream | 0.43 |
+| [[bld_knowledge_embedder_provider]] | upstream | 0.43 |

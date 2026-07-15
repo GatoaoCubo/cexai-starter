@@ -88,6 +88,6 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[spawn-config-builder]] | related | 0.38 |
 | kind-builder | related | 0.31 |
-| [[bld_collaboration_spawn_config]] | related | 0.30 |
+| [[bld_orchestration_spawn_config]] | related | 0.30 |
 | p03_sp_builder_nucleus | related | 0.29 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.26 |

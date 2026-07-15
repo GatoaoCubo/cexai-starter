@@ -51,7 +51,7 @@ Jitter: required when >= 2 schedules share a database, cache, or API rate limit.
 ## Builder Context
 
 This ISO operates within the `schedule-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -107,7 +107,7 @@ python _tools/cex_score.py --apply --verbose p10_lr_schedule_builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[schedule-builder]] | downstream | 0.40 |
-| [[bld_knowledge_card_schedule]] | upstream | 0.38 |
+| [[bld_knowledge_schedule]] | upstream | 0.38 |
 | [[bld_config_schedule]] | upstream | 0.35 |
 | [[bld_output_template_schedule]] | upstream | 0.34 |
 | [[p11_qg_schedule]] | downstream | 0.34 |

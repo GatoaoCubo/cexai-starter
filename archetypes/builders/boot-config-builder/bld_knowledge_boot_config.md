@@ -75,7 +75,7 @@ Boot configs define how an agent initializes on a specific provider runtime (Cla
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[boot-config-builder]] | downstream | 0.51 |
-| [[bld_instruction_boot_config]] | downstream | 0.45 |
-| [[bld_collaboration_boot_config]] | downstream | 0.44 |
+| [[bld_prompt_boot_config]] | downstream | 0.45 |
+| [[bld_orchestration_boot_config]] | downstream | 0.44 |
 | [[p11_qg_boot_config]] | downstream | 0.42 |
-| [[p01_kc_boot_config]] | sibling | 0.42 |
+| [[kc_boot_config]] | sibling | 0.42 |

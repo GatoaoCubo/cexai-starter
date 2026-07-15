@@ -154,6 +154,6 @@ cli_flags:
 |----------|-------------|-------|
 | [[spawn-config-builder]] | downstream | 0.45 |
 | [[p11_qg_spawn_config]] | downstream | 0.42 |
-| [[p01_kc_spawn_config]] | downstream | 0.41 |
+| [[kc_spawn_config]] | downstream | 0.41 |
 | [[bld_schema_spawn_config]] | downstream | 0.37 |
-| [[bld_knowledge_card_spawn_config]] | downstream | 0.36 |
+| [[bld_knowledge_spawn_config]] | downstream | 0.36 |

@@ -98,4 +98,4 @@ law, decision_record --> [pattern] --> workflow, agent_card, instruction
 | [[bld_architecture_pattern]] | related | 0.34 |
 | [[pattern-builder]] | related | 0.34 |
 | [[p03_ins_pattern]] | upstream | 0.32 |
-| [[bld_knowledge_card_pattern]] | sibling | 0.32 |
+| [[bld_knowledge_pattern]] | sibling | 0.32 |

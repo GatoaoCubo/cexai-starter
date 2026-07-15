@@ -118,7 +118,7 @@ Every response that produces an artifact must include:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_guardrail]] | upstream | 0.50 |
-| [[bld_instruction_guardrail]] | upstream | 0.49 |
-| [[bld_collaboration_guardrail]] | downstream | 0.48 |
+| [[bld_prompt_guardrail]] | upstream | 0.49 |
+| [[bld_orchestration_guardrail]] | downstream | 0.48 |
 | [[p10_lr_guardrail_builder]] | upstream | 0.47 |
-| [[bld_knowledge_card_guardrail]] | upstream | 0.45 |
+| [[bld_knowledge_guardrail]] | upstream | 0.45 |

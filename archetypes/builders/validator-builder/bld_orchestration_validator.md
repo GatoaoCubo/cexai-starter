@@ -64,8 +64,8 @@ I define individual pass/fail rules with structured conditions (field/operator/v
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_validation_schema]] | sibling | 0.46 |
+| [[bld_orchestration_validation_schema]] | sibling | 0.46 |
 | bld_collaboration_quality_gate | sibling | 0.39 |
 | [[validator-builder]] | related | 0.39 |
-| [[bld_collaboration_output_validator]] | sibling | 0.35 |
-| [[bld_collaboration_type_def]] | sibling | 0.33 |
+| [[bld_orchestration_output_validator]] | sibling | 0.35 |
+| [[bld_orchestration_type_def]] | sibling | 0.33 |

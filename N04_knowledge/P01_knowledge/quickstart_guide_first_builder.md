@@ -15,7 +15,7 @@ tags:
   - "builder"
   - "onboarding"
   - "contributor"
-tldr: "Clone, install, pick a kind, fill 13 ISOs, pass doctor, open a PR -- done in 30 minutes."
+tldr: "Clone, install, pick a kind, fill 12 ISOs, pass doctor, open a PR -- done in 30 minutes."
 prerequisites:
   - "Python 3.10+"
   - "git"
@@ -48,9 +48,15 @@ density_score: 0.99
 
 ## Overview
 
-This guide takes you from zero to a merged CEX builder contribution in 30 minutes.
-A builder is 12 markdown files that teach the LLM pipeline how to produce one artifact kind.
-You will find an unbuild kind, fill all 13 ISOs, validate, and open a PR.
+This guide walks through how a CEX builder is put together in 30 minutes: 12 markdown
+files (ISOs) that teach the LLM pipeline how to produce one artifact kind.
+
+> **Scope note (see `CONTRIBUTING.md`):** this repo is a fabricated starter tenant, not
+> the CEXAI engine. Adding a brand-new builder for a kind that has none yet is a
+> **structural brain change** -- per `CONTRIBUTING.md`, that is a fabrication request
+> routed through the CEXAI factory (the `/genesis` service), not a hand-authored PR
+> against this starter. This walkthrough stays useful as a reference for the anatomy of
+> a builder, and for fixing a bug in an *existing* one (that part is a normal PR).
 
 ---
 
@@ -66,12 +72,12 @@ You will find an unbuild kind, fill all 13 ISOs, validate, and open a PR.
 
 ## Step 1 -- Fork and Clone (3 min)
 
-Fork the repo on GitHub, then:
+Fork `cexai-starter` on GitHub, then:
 
 ```bash
-git clone https://github.com/<your-username>/cex.git
-cd cex
-git remote add upstream https://github.com/your-org/cex.git
+git clone https://github.com/<your-username>/cexai-starter.git
+cd cexai-starter
+git remote add upstream https://github.com/GatoaoCubo/cexai-starter.git
 pip install -e ".[dev]"
 python _tools/cex_hooks.py install  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
 ```
@@ -179,7 +185,7 @@ python _tools/cex_doctor.py
 ```bash
 git checkout -b builder/{kind}
 git add archetypes/builders/{kind}-builder/
-git commit -m "[builder] add {kind}-builder (13 ISOs, pillar {pillar})"
+git commit -m "[builder] add {kind}-builder (12 ISOs, pillar {pillar})"
 git push origin builder/{kind}
 ```
 

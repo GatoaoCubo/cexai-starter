@@ -79,6 +79,6 @@ I specify handoff protocol configurations so agents and pipelines can use them.
 |----------|-------------|-------|
 | [[handoff-protocol-builder]] | upstream | 0.45 |
 | bld_collaboration_handoff | sibling | 0.43 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.40 |
+| [[bld_orchestration_memory_scope]] | sibling | 0.40 |
 | bld_collaboration_dispatch_rule | sibling | 0.38 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.35 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.35 |

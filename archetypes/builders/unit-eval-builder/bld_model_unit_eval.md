@@ -134,8 +134,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_unit_eval]] | related | 0.49 |
+| [[bld_orchestration_unit_eval]] | related | 0.49 |
 | [[bld_memory_unit_eval]] | downstream | 0.48 |
-| [[bld_knowledge_card_unit_eval]] | upstream | 0.47 |
+| [[bld_knowledge_unit_eval]] | upstream | 0.47 |
 | [[bld_architecture_unit_eval]] | downstream | 0.47 |
 | [[p11_qg_unit_eval]] | related | 0.47 |

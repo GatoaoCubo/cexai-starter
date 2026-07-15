@@ -69,7 +69,7 @@ nucleus  --scoped_by-->    toolkit          --restricts-->  available_tools
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_toolkit]] | upstream | 0.73 |
+| [[bld_orchestration_toolkit]] | upstream | 0.73 |
 | [[bld_tools_toolkit]] | upstream | 0.71 |
 | [[p03_ins_toolkit_builder]] | upstream | 0.71 |
 | [[toolkit-builder]] | upstream | 0.67 |

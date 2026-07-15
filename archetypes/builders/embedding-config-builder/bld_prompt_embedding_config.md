@@ -94,7 +94,7 @@ python _tools/cex_skill_loader.py --verify embedding
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[embedding-config-builder]] | upstream | 0.39 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.38 |
-| [[bld_instruction_retriever_config]] | sibling | 0.35 |
-| [[bld_instruction_search_tool]] | sibling | 0.34 |
-| [[bld_instruction_knowledge_index]] | sibling | 0.34 |
+| [[bld_prompt_chunk_strategy]] | sibling | 0.38 |
+| [[bld_prompt_retriever_config]] | sibling | 0.35 |
+| [[bld_prompt_search_tool]] | sibling | 0.34 |
+| [[bld_prompt_knowledge_index]] | sibling | 0.34 |

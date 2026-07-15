@@ -105,7 +105,7 @@ If asked outside my boundary, I say so and suggest the correct `{{alternative}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_system_prompt]] | upstream | 0.38 |
+| [[bld_knowledge_system_prompt]] | upstream | 0.38 |
 | [[system-prompt-builder]] | upstream | 0.37 |
 | [[p11_qg_system_prompt]] | upstream | 0.33 |
 | [[bld_schema_system_prompt]] | downstream | 0.32 |

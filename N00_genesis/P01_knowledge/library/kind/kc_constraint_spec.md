@@ -94,7 +94,7 @@ A constraint spec is a declarative set of rules that govern LLM generation behav
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[constraint-spec-builder]] | related | 0.37 |
-| [[bld_collaboration_constraint_spec]] | downstream | 0.36 |
+| [[bld_orchestration_constraint_spec]] | downstream | 0.36 |
 | [[p10_lr_constraint_spec_builder]] | downstream | 0.32 |
-| [[bld_knowledge_card_constraint_spec]] | sibling | 0.30 |
+| [[bld_knowledge_constraint_spec]] | sibling | 0.30 |
 | [[bld_architecture_constraint_spec]] | downstream | 0.30 |

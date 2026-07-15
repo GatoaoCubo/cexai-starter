@@ -14,7 +14,7 @@ axioms:
   - "ALWAYS note 106.9M monthly downloads of pydantic-ai-slim -- this is the developer infrastructure layer beneath OpenAI, Anthropic, LangChain, and LlamaIndex simultaneously"
   - "NEVER position against Pydantic AI as a competitor -- position as a complementary layer; CEX could USE Pydantic for runtime validation while providing artifact governance above it"
   - "NEVER underestimate the Logfire observability play (+251% growth) -- Pydantic is building a full-stack typed AI platform: validation + observability + agents"
-tldr: "Pydantic AI is the closest philosophical competitor to CEX -- both bet on typed infrastructure over conversational agents -- but Pydantic AI types LLM I/O while CEX types knowledge artifacts across 300 kinds and 12 pillars."
+tldr: "Pydantic AI is the closest philosophical competitor to CEX -- both bet on typed infrastructure over conversational agents -- but Pydantic AI types LLM I/O while CEX types knowledge artifacts across 125 kinds and 12 pillars."
 8f: "F3_inject"
 keywords: [pydantic, llm, agent framework, type safety, runtime exchange, json schema]
 related:
@@ -114,12 +114,12 @@ Architecture comparison table:
 
 | Layer | Pydantic AI | CEX |
 |-------|-------------|-----|
-| Type system | Pydantic models (runtime validation) | 300-kind taxonomy (artifact classification) |
+| Type system | Pydantic models (runtime validation) | 125-kind taxonomy (artifact classification) |
 | Schema enforcement | JSON schema from model definition | _schema.yaml per pillar (12 pillars) |
 | Quality gate | Pydantic validation (pass/fail) | 8F F7 GOVERN (scored 0-10, 5 dimensions) |
 | Orchestration | pydantic-graph (nodes/edges) | 8F pipeline + P12 orchestration kind |
 | Memory | No native long-term memory | 4-type memory (P10: entity/preference/correction/context) |
-| Knowledge layer | No KC taxonomy | 300 kinds in 12 pillars, builder ISOs |
+| Knowledge layer | No KC taxonomy | 125 kinds in 12 pillars, builder ISOs |
 | Multi-runtime | 15+ model providers | 4 runtimes (Claude/Codex/Gemini/Ollama) |
 | Artifact persistence | No structured persistence | Every artifact: frontmatter + compile + git |
 | Self-assimilation | None | F8 COLLABORATE: save + compile + signal |
@@ -199,7 +199,7 @@ Teams running large-scale Pydantic AI workloads hit the observability paywall.
 | Weakness | Detail |
 |----------|--------|
 | Runtime-only typing | Type safety stops at LLM I/O -- no typed KNOWLEDGE artifacts |
-| No knowledge taxonomy | 300 kinds don't exist -- user must define their own schemas every time |
+| No knowledge taxonomy | 125 kinds don't exist -- user must define their own schemas every time |
 | No quality scoring | Validation is pass/fail -- no 0-10 scored quality gates |
 | No builder ISOs | No 12-pillar builder system -- no accumulated domain knowledge |
 | No multi-nucleus routing | Single agent model -- no sin-driven nucleus specialization |
@@ -224,7 +224,7 @@ not conversational black boxes.** The divergence is in WHERE the typing happens.
 
 | Scope | Pydantic AI | CEX |
 |-------|-------------|-----|
-| Types | LLM inputs and outputs | Knowledge artifacts across 300 kinds |
+| Types | LLM inputs and outputs | Knowledge artifacts across 125 kinds |
 | Granularity | Function-level (per tool call) | System-level (per artifact, per session) |
 | Persistence | None (runtime validation only) | Permanent (compiled + git + indexed) |
 | Compounding | None (each run starts from zero) | Yes (F8 COLLABORATE seeds next session) |
@@ -237,7 +237,7 @@ Pydantic AI is the best competitor for developers who need validated LLM I/O in 
 CEX is the right system for organizations that need sovereign, compounding AI intelligence
 that accumulates in their own repository -- not Logfire's SaaS.
 
-**Convergence risk**: If Pydantic AI adds a knowledge taxonomy layer (300 kinds, builder ISOs,
+**Convergence risk**: If Pydantic AI adds a knowledge taxonomy layer (125 kinds, builder ISOs,
 quality scoring), they have the distribution to commoditize the market. Monitor Samuel Colvin's
 public roadmap for knowledge persistence features.
 
@@ -246,6 +246,6 @@ public roadmap for knowledge persistence features.
 |----------|-------------|-------|
 | p01_kc_llm_output_parsing_validation | sibling | 0.41 |
 | cm_cex_vs_landscape | downstream | 0.34 |
-| [[p01_kc_response_format]] | sibling | 0.31 |
-| [[p01_kc_parser]] | sibling | 0.26 |
+| [[kc_response_format]] | sibling | 0.31 |
+| [[kc_parser]] | sibling | 0.26 |
 | p01_kc_pillar_brief_p06_schema_en | sibling | 0.26 |

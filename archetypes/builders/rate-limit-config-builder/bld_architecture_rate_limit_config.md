@@ -94,6 +94,6 @@ guardrail     --depends-->  rate_limit_config
 |----------|-------------|-------|
 | [[rate-limit-config-builder]] | downstream | 0.70 |
 | [[p11_qg_rate_limit_config]] | downstream | 0.61 |
-| [[bld_knowledge_card_rate_limit_config]] | upstream | 0.55 |
+| [[bld_knowledge_rate_limit_config]] | upstream | 0.55 |
 | [[bld_output_template_rate_limit_config]] | upstream | 0.54 |
-| [[bld_instruction_rate_limit_config]] | upstream | 0.54 |
+| [[bld_prompt_rate_limit_config]] | upstream | 0.54 |

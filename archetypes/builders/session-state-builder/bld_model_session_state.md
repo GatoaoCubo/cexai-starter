@@ -127,8 +127,8 @@ Max body: 4096 bytes. State is minimal and sufficient. No redundant fields.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_session_state]] | related | 0.58 |
+| [[bld_orchestration_session_state]] | related | 0.58 |
 | [[bld_architecture_session_state]] | upstream | 0.52 |
 | [[bld_memory_session_state]] | related | 0.50 |
-| [[p01_kc_session_state]] | related | 0.47 |
-| [[bld_knowledge_card_session_state]] | upstream | 0.46 |
+| [[kc_session_state]] | related | 0.47 |
+| [[bld_knowledge_session_state]] | upstream | 0.46 |

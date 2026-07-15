@@ -133,8 +133,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_output_template_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_output_template]] | upstream | 0.38 |
-| [[bld_instruction_output_template]] | upstream | 0.36 |
+| [[bld_knowledge_output_template]] | upstream | 0.38 |
+| [[bld_prompt_output_template]] | upstream | 0.36 |
 | [[bld_output_template_output_template]] | upstream | 0.32 |
 | [[bld_schema_output_template]] | upstream | 0.30 |
 | n00_output_template_manifest | sibling (source investigation) | 0.28 |

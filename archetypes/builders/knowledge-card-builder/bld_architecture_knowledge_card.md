@@ -75,6 +75,6 @@ knowledge_card --referenced_by--> agent
 |----------|-------------|-------|
 | [[bld_architecture_knowledge_index]] | sibling | 0.32 |
 | [[knowledge-card-builder]] | upstream | 0.32 |
-| [[p01_kc_knowledge_card]] | upstream | 0.31 |
+| [[kc_knowledge_card]] | upstream | 0.31 |
 | [[bld_architecture_rag_source]] | sibling | 0.29 |
 | p01_kc_cex_lp01_knowledge | upstream | 0.29 |

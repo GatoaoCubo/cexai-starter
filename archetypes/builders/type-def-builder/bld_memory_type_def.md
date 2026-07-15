@@ -88,6 +88,6 @@ python _tools/cex_score.py --apply bld-memory-type-def.md
 |----------|-------------|-------|
 | [[type-def-builder]] | upstream | 0.43 |
 | [[bld_architecture_type_def]] | upstream | 0.36 |
-| [[bld_collaboration_type_def]] | upstream | 0.36 |
+| [[bld_orchestration_type_def]] | upstream | 0.36 |
 | n00_type_def_manifest | upstream | 0.35 |
 | [[p11_qg_type_def]] | upstream | 0.34 |

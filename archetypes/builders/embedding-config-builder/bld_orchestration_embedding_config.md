@@ -63,8 +63,8 @@ None — independent builder (layer 0). Embedding configs are defined from requi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_knowledge_index]] | sibling | 0.59 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.44 |
-| [[bld_collaboration_embedder_provider]] | sibling | 0.43 |
-| [[bld_collaboration_knowledge_card]] | sibling | 0.41 |
+| [[bld_orchestration_knowledge_index]] | sibling | 0.59 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.44 |
+| [[bld_orchestration_embedder_provider]] | sibling | 0.43 |
+| [[bld_orchestration_knowledge_card]] | sibling | 0.41 |
 | [[embedding-config-builder]] | upstream | 0.40 |

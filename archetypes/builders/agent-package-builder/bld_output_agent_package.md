@@ -103,6 +103,6 @@ Declared: `{{tier}}`. Files present: `{{files_count}}`/`{{tier_expected}}`.
 |----------|-------------|-------|
 | [[p11_qg_agent_package]] | downstream | 0.44 |
 | [[bld_schema_agent_package]] | downstream | 0.43 |
-| [[bld_instruction_agent_package]] | upstream | 0.43 |
+| [[bld_prompt_agent_package]] | upstream | 0.43 |
 | [[bld_config_agent_package]] | downstream | 0.37 |
 | p02_iso_codexa_agent | upstream | 0.36 |

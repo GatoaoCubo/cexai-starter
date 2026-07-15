@@ -77,7 +77,7 @@ linked_artifacts:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p11_qg_guardrail]] | downstream | 0.44 |
-| [[bld_instruction_guardrail]] | upstream | 0.41 |
+| [[bld_prompt_guardrail]] | upstream | 0.41 |
 | [[bld_config_guardrail]] | downstream | 0.40 |
 | [[bld_architecture_guardrail]] | downstream | 0.36 |
 | [[p10_lr_guardrail_builder]] | downstream | 0.36 |

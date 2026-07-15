@@ -69,6 +69,6 @@ related:
 |----------|-------------|-------|
 | bld_instruction_context_doc | sibling | 0.38 |
 | [[bld_schema_ontology]] | downstream | 0.37 |
-| [[bld_knowledge_card_ontology]] | upstream | 0.37 |
-| [[bld_instruction_output_validator]] | sibling | 0.36 |
-| [[bld_instruction_memory_scope]] | sibling | 0.36 |
+| [[bld_knowledge_ontology]] | upstream | 0.37 |
+| [[bld_prompt_output_validator]] | sibling | 0.36 |
+| [[bld_prompt_memory_scope]] | sibling | 0.36 |

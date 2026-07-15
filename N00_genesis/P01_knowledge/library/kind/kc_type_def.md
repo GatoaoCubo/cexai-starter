@@ -98,8 +98,8 @@ A reusable, named data type definition that specifies the structural shape—fie
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_input_schema]] | sibling | 0.43 |
-| [[p01_kc_enum_def]] | sibling | 0.36 |
+| [[kc_input_schema]] | sibling | 0.43 |
+| [[kc_enum_def]] | sibling | 0.36 |
 | n00_type_def_manifest | sibling | 0.35 |
 | [[bld_architecture_type_def]] | downstream | 0.34 |
 | [[type-def-builder]] | related | 0.33 |

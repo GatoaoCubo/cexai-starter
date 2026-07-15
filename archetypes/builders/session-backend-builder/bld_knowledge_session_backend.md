@@ -91,7 +91,7 @@ Session backends define the persistence contract for agent session state — spe
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_session_backend]] | sibling | 0.49 |
+| [[kc_session_backend]] | sibling | 0.49 |
 | [[session-backend-builder]] | downstream | 0.49 |
 | [[p10_lr_session_backend_builder]] | downstream | 0.46 |
-| [[bld_instruction_session_backend]] | downstream | 0.42 |
+| [[bld_prompt_session_backend]] | downstream | 0.42 |

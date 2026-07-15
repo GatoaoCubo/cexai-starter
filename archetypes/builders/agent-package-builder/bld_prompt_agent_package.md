@@ -91,6 +91,6 @@ related:
 |----------|-------------|-------|
 | [[bld_schema_agent_package]] | downstream | 0.49 |
 | [[bld_config_agent_package]] | downstream | 0.45 |
-| [[bld_knowledge_card_agent_package]] | upstream | 0.45 |
+| [[bld_knowledge_agent_package]] | upstream | 0.45 |
 | [[agent-package-builder]] | upstream | 0.45 |
 | p02_iso_codexa_agent | upstream | 0.44 |

@@ -31,7 +31,7 @@ Builder domain: safety alignment. Primary nucleus: N07.
 | Tool | Function | Stage |
 |------|----------|-------|
 | `cex_compile.py {path}` | Compile artifact to YAML | F8 COLLABORATE |
-| `cex_doctor.py` | Validate builder integrity (13 ISOs present) | F7 GOVERN |
+| `cex_doctor.py` | Validate builder integrity (12 ISOs present) | F7 GOVERN |
 | `cex_retriever.py --query {intent}` | Find similar constitutional_rule artifacts | F5 CALL |
 | `cex_score.py {path}` | Peer-review quality scoring | F7 GOVERN |
 | `cex_hooks.py validate {path}` | Frontmatter + field validation | F7 GOVERN |

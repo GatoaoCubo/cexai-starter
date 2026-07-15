@@ -56,7 +56,7 @@ Session persistence failures divide into: data loss (in-memory backends, no TTL 
 ## Builder Context
 
 This ISO operates within the `session-backend-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -84,7 +84,7 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_session_backend]] | upstream | 0.41 |
-| [[p01_kc_session_backend]] | related | 0.40 |
+| [[bld_knowledge_session_backend]] | upstream | 0.41 |
+| [[kc_session_backend]] | related | 0.40 |
 | [[session-backend-builder]] | upstream | 0.36 |
 | [[p11_qg_session_backend]] | downstream | 0.36 |

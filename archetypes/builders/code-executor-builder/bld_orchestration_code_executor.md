@@ -64,8 +64,8 @@ None — independent builder (layer 0). Code executors are self-contained enviro
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_function_def]] | sibling | 0.36 |
+| [[bld_orchestration_function_def]] | sibling | 0.36 |
 | [[code-executor-builder]] | upstream | 0.35 |
-| [[p01_kc_code_executor]] | upstream | 0.30 |
+| [[kc_code_executor]] | upstream | 0.30 |
 | bld_collaboration_cli_tool | sibling | 0.27 |
-| [[bld_collaboration_handoff_protocol]] | sibling | 0.26 |
+| [[bld_orchestration_handoff_protocol]] | sibling | 0.26 |

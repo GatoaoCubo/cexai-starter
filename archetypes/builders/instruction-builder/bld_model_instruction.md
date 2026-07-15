@@ -131,8 +131,8 @@ estimated_duration: "{human estimate}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_instruction]] | related | 0.48 |
-| [[bld_collaboration_instruction]] | downstream | 0.47 |
+| [[kc_instruction]] | related | 0.48 |
+| [[bld_orchestration_instruction]] | downstream | 0.47 |
 | [[system-prompt-builder]] | sibling | 0.45 |
 | [[bld_architecture_instruction]] | downstream | 0.43 |
 | n00_instruction_manifest | related | 0.43 |

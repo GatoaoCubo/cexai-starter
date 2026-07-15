@@ -113,7 +113,7 @@ Multiple laws are output as a numbered list of the above block. No prose between
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p03_ins_law]] | upstream | 0.53 |
-| [[bld_collaboration_invariant]] | related | 0.50 |
+| [[bld_orchestration_invariant]] | related | 0.50 |
 | [[bld_architecture_invariant]] | related | 0.49 |
-| [[p01_kc_invariant]] | related | 0.46 |
-| [[bld_knowledge_card_invariant]] | related | 0.44 |
+| [[kc_invariant]] | related | 0.46 |
+| [[bld_knowledge_invariant]] | related | 0.44 |

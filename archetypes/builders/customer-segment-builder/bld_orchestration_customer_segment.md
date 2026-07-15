@@ -49,7 +49,7 @@ Does NOT collect raw data (handled by Data_Engineers), validate ICP criteria (ha
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[customer-segment-builder]] | upstream | 0.36 |
-| [[bld_collaboration_competitive_matrix]] | sibling | 0.33 |
-| [[p01_kc_customer_segment]] | upstream | 0.29 |
-| [[bld_instruction_customer_segment]] | upstream | 0.28 |
+| [[bld_orchestration_competitive_matrix]] | sibling | 0.33 |
+| [[kc_customer_segment]] | upstream | 0.29 |
+| [[bld_prompt_customer_segment]] | upstream | 0.28 |
 | [[bld_config_customer_segment]] | upstream | 0.27 |

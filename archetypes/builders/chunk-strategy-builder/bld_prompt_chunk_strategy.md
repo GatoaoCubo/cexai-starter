@@ -95,8 +95,8 @@ python _tools/cex_skill_loader.py --verify chunk
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_retriever_config]] | sibling | 0.64 |
-| [[bld_instruction_output_validator]] | sibling | 0.63 |
-| [[bld_instruction_memory_scope]] | sibling | 0.61 |
-| [[bld_instruction_prompt_version]] | sibling | 0.60 |
-| [[bld_instruction_constraint_spec]] | sibling | 0.59 |
+| [[bld_prompt_retriever_config]] | sibling | 0.64 |
+| [[bld_prompt_output_validator]] | sibling | 0.63 |
+| [[bld_prompt_memory_scope]] | sibling | 0.61 |
+| [[bld_prompt_prompt_version]] | sibling | 0.60 |
+| [[bld_prompt_constraint_spec]] | sibling | 0.59 |

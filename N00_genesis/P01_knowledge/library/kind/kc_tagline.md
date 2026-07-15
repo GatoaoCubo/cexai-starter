@@ -30,7 +30,7 @@ value proposition, or emotional promise. Used across: hero sections, social bios
 headlines, email subjects, pitch decks.
 
 ## Builder
-`tagline-builder` (13 ISOs) — Pillar P03
+`tagline-builder` (12 ISOs) — Pillar P03
 
 ## Frameworks
 | Framework | Pattern | Example |
@@ -70,8 +70,8 @@ python _tools/cex_retriever.py "KC: Tagline" --top 5
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_tagline]] | sibling | 0.53 |
+| [[bld_knowledge_tagline]] | sibling | 0.53 |
 | [[tagline-builder]] | downstream | 0.42 |
-| [[bld_collaboration_tagline]] | downstream | 0.39 |
+| [[bld_orchestration_tagline]] | downstream | 0.39 |
 | n00_tagline_manifest | sibling | 0.37 |
 | [[bld_output_template_tagline]] | downstream | 0.35 |

@@ -75,6 +75,6 @@ I formalize inviolable mandates with enforcement mechanisms and exception protoc
 |----------|-------------|-------|
 | [[invariant-builder]] | related | 0.39 |
 | bld_collaboration_quality_gate | sibling | 0.34 |
-| [[bld_collaboration_pattern]] | sibling | 0.34 |
+| [[bld_orchestration_pattern]] | sibling | 0.34 |
 | [[bld_memory_invariant]] | downstream | 0.33 |
 | [[p03_ins_law]] | upstream | 0.31 |

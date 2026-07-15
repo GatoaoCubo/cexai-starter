@@ -99,6 +99,6 @@ A single, named, executable validation rule that returns PASS or FAIL for a spec
 |----------|-------------|-------|
 | [[validator-builder]] | related | 0.46 |
 | [[bld_architecture_validator]] | downstream | 0.46 |
-| [[bld_knowledge_card_validator]] | sibling | 0.39 |
-| [[bld_collaboration_output_validator]] | downstream | 0.38 |
+| [[bld_knowledge_validator]] | sibling | 0.39 |
+| [[bld_orchestration_output_validator]] | downstream | 0.38 |
 | n00_validator_manifest | sibling | 0.37 |

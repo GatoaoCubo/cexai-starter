@@ -115,7 +115,7 @@ Columns: `{{Codigo, Match?, Fonte casada, Confianca}}`. Confianca filtrada em:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_product_match]] | downstream | 0.38 |
-| [[bld_instruction_product_match]] | upstream | 0.35 |
+| [[bld_prompt_product_match]] | upstream | 0.35 |
 | [[bld_output_template_vision_tool]] | sibling | 0.33 |
 | [[p11_qg_product_match]] | downstream | 0.33 |
 | [[bld_output_template_output_validator]] | sibling | 0.31 |

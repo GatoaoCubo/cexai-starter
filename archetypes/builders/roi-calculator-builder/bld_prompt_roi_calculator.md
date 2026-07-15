@@ -56,4 +56,4 @@ related:
 | [[p11_qg_roi_calculator]] | downstream | 0.45 |
 | [[roi-calculator-builder]] | downstream | 0.44 |
 | [[kc_roi_calculator]] | upstream | 0.42 |
-| [[bld_knowledge_card_roi_calculator]] | upstream | 0.40 |
+| [[bld_knowledge_roi_calculator]] | upstream | 0.40 |

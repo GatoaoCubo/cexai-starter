@@ -81,5 +81,5 @@ Enumerations are finite named value sets that constrain a field to a known list 
 | [[enum-def-builder]] | downstream | 0.49 |
 | [[p10_lr_enum_def_builder]] | downstream | 0.49 |
 | [[bld_config_enum_def]] | downstream | 0.47 |
-| [[bld_instruction_enum_def]] | downstream | 0.45 |
+| [[bld_prompt_enum_def]] | downstream | 0.45 |
 | [[p11_qg_enum_def]] | downstream | 0.45 |

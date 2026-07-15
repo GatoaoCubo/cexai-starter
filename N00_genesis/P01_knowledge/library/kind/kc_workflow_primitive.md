@@ -77,7 +77,7 @@ Workflow primitives are the atomic units that compose into complex agent workflo
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-primitive-builder]] | related | 0.54 |
-| [[bld_knowledge_card_workflow_primitive]] | sibling | 0.51 |
+| [[bld_knowledge_workflow_primitive]] | sibling | 0.51 |
 | [[bld_memory_workflow_primitive]] | upstream | 0.51 |
 | p12_wp_map_reduce | related | 0.50 |
-| [[bld_collaboration_workflow_primitive]] | upstream | 0.46 |
+| [[bld_orchestration_workflow_primitive]] | upstream | 0.46 |

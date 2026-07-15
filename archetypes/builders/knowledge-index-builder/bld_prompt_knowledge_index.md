@@ -85,6 +85,6 @@ python _tools/cex_skill_loader.py --verify knowledge
 |----------|-------------|-------|
 | [[p11_qg_knowledge_index]] | downstream | 0.39 |
 | [[knowledge-index-builder]] | downstream | 0.38 |
-| [[bld_instruction_retriever_config]] | sibling | 0.38 |
-| [[bld_instruction_memory_scope]] | sibling | 0.37 |
-| [[bld_instruction_golden_test]] | sibling | 0.37 |
+| [[bld_prompt_retriever_config]] | sibling | 0.38 |
+| [[bld_prompt_memory_scope]] | sibling | 0.37 |
+| [[bld_prompt_golden_test]] | sibling | 0.37 |

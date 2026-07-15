@@ -78,7 +78,7 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_data_contract]] | sibling | 0.44 |
+| [[kc_data_contract]] | sibling | 0.44 |
 | [[bld_memory_data_contract]] | downstream | 0.33 |
 | [[data-contract-builder]] | downstream | 0.33 |
 | [[bld_context_sources_data_contract]] | downstream | 0.30 |

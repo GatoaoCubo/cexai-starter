@@ -94,4 +94,4 @@ related:
 | [[document_loader-builder]] | related | 0.39 |
 | [[bld_schema_document_loader]] | downstream | 0.38 |
 | [[bld_output_template_document_loader]] | related | 0.38 |
-| [[bld_knowledge_card_document_loader]] | related | 0.37 |
+| [[bld_knowledge_document_loader]] | related | 0.37 |

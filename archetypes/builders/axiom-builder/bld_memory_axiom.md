@@ -57,8 +57,8 @@ Using the negation test eliminated the axiom revision problem: 0 of 17 validated
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_axiom]] | upstream | 0.57 |
-| [[bld_knowledge_card_axiom]] | upstream | 0.57 |
+| [[kc_axiom]] | upstream | 0.57 |
+| [[bld_knowledge_axiom]] | upstream | 0.57 |
 | [[axiom-builder]] | related | 0.52 |
-| [[bld_collaboration_axiom]] | downstream | 0.50 |
+| [[bld_orchestration_axiom]] | downstream | 0.50 |
 | tpl_axiom | upstream | 0.48 |

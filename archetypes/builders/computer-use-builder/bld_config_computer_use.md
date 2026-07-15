@@ -78,5 +78,5 @@ Rule: resolution MUST be WxH format (e.g., "1024x768").
 | [[bld_schema_computer_use]] | upstream | 0.38 |
 | [[bld_output_template_computer_use]] | upstream | 0.38 |
 | [[p11_qg_computer_use]] | downstream | 0.38 |
-| [[bld_knowledge_card_computer_use]] | upstream | 0.38 |
-| [[bld_instruction_computer_use]] | upstream | 0.35 |
+| [[bld_knowledge_computer_use]] | upstream | 0.38 |
+| [[bld_prompt_computer_use]] | upstream | 0.35 |

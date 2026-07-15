@@ -132,8 +132,8 @@ Max body: 4096 bytes. Every field is load-bearing. No filler.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent_card]] | related | 0.56 |
-| [[bld_knowledge_card_agent_card]] | upstream | 0.47 |
+| [[bld_orchestration_agent_card]] | related | 0.56 |
+| [[bld_knowledge_agent_card]] | upstream | 0.47 |
 | [[bld_memory_agent_card]] | downstream | 0.45 |
 | [[agent-builder]] | sibling | 0.43 |
 | [[bld_architecture_agent_card]] | related | 0.43 |

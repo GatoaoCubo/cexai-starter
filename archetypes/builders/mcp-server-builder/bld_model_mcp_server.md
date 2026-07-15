@@ -127,6 +127,6 @@ Body sections: Transport Configuration, Tool Definitions (with JSON-Schema), Res
 |----------|-------------|-------|
 | [[p03_ins_mcp_server]] | upstream | 0.64 |
 | [[bld_memory_mcp_server]] | downstream | 0.62 |
-| [[bld_collaboration_mcp_server]] | related | 0.62 |
-| [[p01_kc_mcp_server]] | upstream | 0.61 |
-| [[bld_knowledge_card_mcp_server]] | related | 0.58 |
+| [[bld_orchestration_mcp_server]] | related | 0.62 |
+| [[kc_mcp_server]] | upstream | 0.61 |
+| [[bld_knowledge_mcp_server]] | related | 0.58 |

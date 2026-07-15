@@ -93,7 +93,7 @@ Note: GDPR-sensitive deployments should set derived_facts_ttl_days <= 730.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_user_model]] | upstream | 0.38 |
+| [[bld_prompt_user_model]] | upstream | 0.38 |
 | [[bld_schema_user_model]] | downstream | 0.37 |
 | [[bld_config_constraint_spec]] | sibling | 0.33 |
 | [[bld_config_memory_scope]] | sibling | 0.32 |

@@ -111,8 +111,8 @@ Hotmart Club (native), Teachable, Thinkific, DS24 member area, Custom LMS.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_content_monetization]] | upstream | 0.39 |
-| [[bld_knowledge_card_content_monetization]] | upstream | 0.36 |
+| [[bld_prompt_content_monetization]] | upstream | 0.39 |
+| [[bld_knowledge_content_monetization]] | upstream | 0.36 |
 | [[bld_architecture_content_monetization]] | upstream | 0.35 |
 | p01_kc_content_platform_comparison | upstream | 0.34 |
-| [[bld_collaboration_content_monetization]] | downstream | 0.32 |
+| [[bld_orchestration_content_monetization]] | downstream | 0.32 |

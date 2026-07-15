@@ -87,7 +87,7 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fallback-chain-builder]] | related | 0.39 |
-| [[bld_collaboration_fallback_chain]] | related | 0.34 |
+| [[bld_orchestration_fallback_chain]] | related | 0.34 |
 | chain-builder | related | 0.33 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.31 |
 | bld_collaboration_chain | related | 0.30 |

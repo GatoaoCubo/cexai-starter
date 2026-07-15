@@ -103,7 +103,7 @@ deadline: "{{deadline_iso8601}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p12_qg_team_charter]] | downstream | 0.43 |
-| [[bld_instruction_team_charter]] | upstream | 0.38 |
-| [[bld_knowledge_card_team_charter]] | upstream | 0.36 |
+| [[bld_prompt_team_charter]] | upstream | 0.38 |
+| [[bld_knowledge_team_charter]] | upstream | 0.36 |
 | [[team-charter-builder]] | downstream | 0.36 |
 | [[bld_schema_team_charter]] | downstream | 0.36 |

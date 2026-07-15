@@ -97,8 +97,8 @@ A code executor is a sandboxed runtime environment where LLM-generated code runs
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_code_executor]] | sibling | 0.48 |
+| [[bld_knowledge_code_executor]] | sibling | 0.48 |
 | [[code-executor-builder]] | related | 0.48 |
 | p04_exec_python_sandbox | related | 0.44 |
-| [[bld_collaboration_code_executor]] | downstream | 0.41 |
+| [[bld_orchestration_code_executor]] | downstream | 0.41 |
 | [[p10_lr_code_executor_builder]] | downstream | 0.37 |

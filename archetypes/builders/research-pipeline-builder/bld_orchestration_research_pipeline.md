@@ -89,4 +89,4 @@ Together they form the cycle: RESEARCH → DECISION → CONTENT → PUBLISH.
 | [[research-pipeline-builder]] | upstream | 0.34 |
 | n01_dr_research_pipeline | related | 0.34 |
 | p04_cli_research_pipeline_n01 | upstream | 0.31 |
-| [[bld_collaboration_content_monetization]] | sibling | 0.30 |
+| [[bld_orchestration_content_monetization]] | sibling | 0.30 |

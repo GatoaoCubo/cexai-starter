@@ -68,4 +68,4 @@ If status == superseded: confirm superseded_by is populated with a valid id.
 | [[bld_tools_retriever_config]] | sibling | 0.45 |
 | [[bld_tools_memory_scope]] | sibling | 0.45 |
 | bld_tools_runtime_rule | sibling | 0.44 |
-| [[bld_collaboration_decision_record]] | downstream | 0.44 |
+| [[bld_orchestration_decision_record]] | downstream | 0.44 |

@@ -119,7 +119,7 @@ Produce a parser artifact with YAML frontmatter followed by: `## Input`, `## Out
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_parser]] | downstream | 0.52 |
-| [[bld_collaboration_parser]] | related | 0.52 |
-| [[bld_knowledge_card_parser]] | upstream | 0.51 |
+| [[bld_orchestration_parser]] | related | 0.52 |
+| [[bld_knowledge_parser]] | upstream | 0.51 |
 | [[bld_schema_parser]] | downstream | 0.50 |
 | [[bld_memory_parser]] | downstream | 0.49 |

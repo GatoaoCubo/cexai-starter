@@ -110,4 +110,4 @@ kind: canonical_product   # WRONG: a channel projection is not the channel-neutr
 | [[bld_rules_canonical_product]] | sibling | 0.48 |
 | [[bld_schema_canonical_product]] | upstream | 0.45 |
 | [[canonical-product-builder]] | upstream | 0.40 |
-| [[bld_instruction_canonical_product]] | sibling | 0.35 |
+| [[bld_prompt_canonical_product]] | sibling | 0.35 |

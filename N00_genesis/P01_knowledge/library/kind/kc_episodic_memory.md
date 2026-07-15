@@ -115,8 +115,8 @@ interaction (agent run) --> [episodic_memory] <-- retrieval (F3 INJECT)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_episodic_memory]] | sibling | 0.58 |
+| [[bld_knowledge_episodic_memory]] | sibling | 0.58 |
 | [[episodic-memory-builder]] | related | 0.48 |
-| [[bld_collaboration_episodic_memory]] | downstream | 0.44 |
+| [[bld_orchestration_episodic_memory]] | downstream | 0.44 |
 | [[bld_schema_episodic_memory]] | related | 0.39 |
 | bld_collaboration_working_memory | downstream | 0.37 |

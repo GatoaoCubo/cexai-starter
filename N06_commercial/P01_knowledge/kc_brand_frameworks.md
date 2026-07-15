@@ -294,6 +294,6 @@ other artifacts reason with, not a brand by itself.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p03_sp_brand_nucleus | downstream | 0.24 |
-| [[p01_kc_competitive_positioning]] | sibling | 0.23 |
+| [[kc_competitive_positioning]] | sibling | 0.23 |
 | p02_agent_commercial_nucleus | downstream | 0.21 |
 | p02_agent_brand_nucleus | downstream | 0.20 |

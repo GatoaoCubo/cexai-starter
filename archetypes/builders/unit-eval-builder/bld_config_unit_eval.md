@@ -86,6 +86,6 @@ python _tools/cex_score.py --apply bld-config-unit-eval.md
 |----------|-------------|-------|
 | [[p11_qg_unit_eval]] | upstream | 0.37 |
 | [[bld_output_template_unit_eval]] | upstream | 0.37 |
-| [[bld_collaboration_unit_eval]] | upstream | 0.36 |
+| [[bld_orchestration_unit_eval]] | upstream | 0.36 |
 | [[unit-eval-builder]] | upstream | 0.35 |
 | [[bld_tools_unit_eval]] | upstream | 0.35 |

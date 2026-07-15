@@ -76,7 +76,7 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_domain_vocabulary]] | sibling | 0.56 |
+| [[kc_domain_vocabulary]] | sibling | 0.56 |
 | [[bld_memory_domain_vocabulary]] | downstream | 0.51 |
 | [[domain-vocabulary-builder]] | related | 0.51 |
 | [[bld_context_sources_domain_vocabulary]] | downstream | 0.47 |

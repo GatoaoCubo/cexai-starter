@@ -52,7 +52,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[team-charter-builder]] | downstream | 0.45 |
-| [[bld_knowledge_card_team_charter]] | upstream | 0.43 |
+| [[bld_knowledge_team_charter]] | upstream | 0.43 |
 | [[kc_team_charter]] | upstream | 0.42 |
-| [[bld_collaboration_team_charter]] | downstream | 0.38 |
+| [[bld_orchestration_team_charter]] | downstream | 0.38 |
 | [[p11_fb_team_charter]] | downstream | 0.33 |

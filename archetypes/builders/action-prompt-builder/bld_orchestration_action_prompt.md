@@ -66,8 +66,8 @@ I produce task-focused prompts so agents can execute specific operations with de
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_version]] | sibling | 0.44 |
-| [[bld_collaboration_few_shot_example]] | sibling | 0.44 |
+| [[bld_orchestration_prompt_version]] | sibling | 0.44 |
+| [[bld_orchestration_few_shot_example]] | sibling | 0.44 |
 | bld_collaboration_context_doc | sibling | 0.43 |
 | [[action-prompt-builder]] | upstream | 0.42 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.40 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.40 |

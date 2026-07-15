@@ -126,7 +126,7 @@ Optional sections (append after Keywords when applicable):
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_type_def]] | downstream | 0.51 |
-| [[bld_knowledge_card_type_def]] | upstream | 0.51 |
+| [[bld_knowledge_type_def]] | upstream | 0.51 |
 | [[p03_ins_type_def]] | upstream | 0.50 |
 | p03_constraint_brand_config_n06 | related | 0.49 |
 | bld_schema_model_registry | sibling | 0.40 |

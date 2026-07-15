@@ -87,8 +87,8 @@ python _tools/cex_score.py --apply bld-memory-embedder-provider.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_embedder_provider]] | upstream | 0.62 |
+| [[bld_knowledge_embedder_provider]] | upstream | 0.62 |
 | [[embedder-provider-builder]] | upstream | 0.51 |
 | [[p11_qg_embedder_provider]] | downstream | 0.51 |
-| [[bld_collaboration_embedder_provider]] | upstream | 0.50 |
+| [[bld_orchestration_embedder_provider]] | upstream | 0.50 |
 | [[p03_ins_embedder_provider]] | upstream | 0.47 |

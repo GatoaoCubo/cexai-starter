@@ -65,5 +65,5 @@ In a grid dispatch building a complete agent memory system:
 | bld_collaboration_consolidation_policy | sibling | 0.52 |
 | bld_collaboration_procedural_memory | sibling | 0.49 |
 | [[memory-architecture-builder]] | upstream | 0.38 |
-| [[bld_collaboration_agent]] | sibling | 0.35 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.31 |
+| [[bld_orchestration_agent]] | sibling | 0.35 |
+| [[bld_orchestration_memory_scope]] | sibling | 0.31 |

@@ -62,7 +62,7 @@ This annex targets readers of the whitepaper specifically. Term selection priori
 | **Hard Gate (H01-H06)** | Six universal validation checks every artifact must pass: YAML valid, id matches filename, kind matches, quality null, required fields, body size. | §2.1 |
 | **Hook** | Mandatory boundary check (pre-commit, pre-save, post-save, validate-all) executed by `cex_hooks.py`; not opt-in. | §6.7 |
 | **ISO** | One of 12 builder instruction files mapped 1:1 to pillars (e.g., `bld_eval_agent.md` is the P07 ISO of agent-builder). | §2.1, App. B |
-| **Kind** | One of 301 artifact types in `.cex/kinds_meta.json`; replaces "type" to avoid programming-language conflicts. | §2.1 |
+| **Kind** | One of 125 artifact types in `.cex/kinds_meta.json`; replaces "type" to avoid programming-language conflicts. | §2.1 |
 | **Knowledge Entropy** | Failure mode: best prompts die in chat threads, decisions die in DMs; nothing compounds without typing. | §1.10 |
 | **Lost in the Middle** | Documented LLM failure where information mid-prompt is ignored more than information at the start or end. | §1.2 |
 | **Mode A** | Monolithic 8F: one capable model (Opus, Sonnet) runs F1 through F8 autonomously. | §3.3 |
@@ -96,7 +96,7 @@ This annex targets readers of the whitepaper specifically. Term selection priori
 
 ## Cross-Reference
 
-The canonical system-wide glossary is `docs/glossary.md` (235 lines, 23 entries with the {definition, input, output, owner, example, anti-pattern} schema). The controlled vocabulary registry is `docs/vocabulary.md`. The metaphor-to-industry-term mapping is `_docs/specs/spec_metaphor_dictionary.md`. The 301-kind registry is `.cex/kinds_meta.json`. This annex compresses; it does not replace.
+The canonical system-wide glossary is `docs/glossary.md` (235 lines, 23 entries with the {definition, input, output, owner, example, anti-pattern} schema). The controlled vocabulary registry is `docs/vocabulary.md`. The metaphor-to-industry-term mapping is `_docs/specs/spec_metaphor_dictionary.md`. The 125-kind registry is `.cex/kinds_meta.json`. This annex compresses; it does not replace.
 
 ## Related Terms
 

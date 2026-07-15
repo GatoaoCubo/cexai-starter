@@ -129,8 +129,8 @@ baseline: 0.7
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_reward_signal]] | downstream | 0.60 |
+| [[bld_orchestration_reward_signal]] | downstream | 0.60 |
 | [[bld_architecture_reward_signal]] | upstream | 0.50 |
-| [[bld_knowledge_card_reward_signal]] | upstream | 0.49 |
-| [[bld_instruction_reward_signal]] | upstream | 0.45 |
+| [[bld_knowledge_reward_signal]] | upstream | 0.49 |
+| [[bld_prompt_reward_signal]] | upstream | 0.45 |
 | [[bld_output_template_reward_signal]] | upstream | 0.42 |

@@ -157,8 +157,8 @@ depends_on: []
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_output_template]] | upstream | 0.44 |
-| [[bld_instruction_output_template]] | upstream | 0.42 |
+| [[bld_knowledge_output_template]] | upstream | 0.44 |
+| [[bld_prompt_output_template]] | upstream | 0.42 |
 | [[prompt-template-builder]] | sibling (contrast) | 0.36 |
 | [[response-format-builder]] | sibling (contrast) | 0.33 |
 | [[formatter-builder]] | sibling (contrast) | 0.30 |

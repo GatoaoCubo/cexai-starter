@@ -48,8 +48,8 @@ Context window configs allocate a model's finite context among prompt sections. 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_context_window_config]] | upstream | 0.43 |
-| [[p01_kc_context_window_config]] | upstream | 0.40 |
+| [[bld_knowledge_context_window_config]] | upstream | 0.43 |
+| [[kc_context_window_config]] | upstream | 0.40 |
 | [[context-window-config-builder]] | upstream | 0.34 |
 | [[bld_output_template_context_window_config]] | upstream | 0.30 |
 | p01_kc_token_budgeting | upstream | 0.28 |

@@ -96,5 +96,5 @@ Rule: lower number = loads earlier; higher number = overrides on conflict (last 
 | [\[ctx_`{{scope}}`\]] | upstream | 0.38 |
 | [[kc_context_file]] | upstream | 0.37 |
 | [[bld_schema_context_file]] | upstream | 0.36 |
-| [[bld_knowledge_card_context_file]] | upstream | 0.36 |
+| [[bld_knowledge_context_file]] | upstream | 0.36 |
 | [[p11_qg_context_file]] | upstream | 0.36 |

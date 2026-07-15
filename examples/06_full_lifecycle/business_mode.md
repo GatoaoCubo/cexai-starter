@@ -68,4 +68,4 @@ find it, inject it, and build on it.
 |----------|-------------|-------|
 | [[ex_full_lifecycle]] | parent | 1.00 |
 | [[ex_lifecycle_engineer_mode]] | sibling | 0.95 |
-| [[p01_kc_knowledge_card]] | reference | 0.85 |
+| [[kc_knowledge_card]] | reference | 0.85 |

@@ -89,7 +89,7 @@ none of them).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[product-match-builder]] | upstream | 0.41 |
-| [[bld_collaboration_vision_tool]] | sibling | 0.35 |
-| [[bld_instruction_product_match]] | upstream | 0.32 |
+| [[bld_orchestration_vision_tool]] | sibling | 0.35 |
+| [[bld_prompt_product_match]] | upstream | 0.32 |
 | [[opportunity-matrix-builder]] | sibling | 0.30 |
 | [[bld_rules_data_contract]] | sibling | 0.28 |

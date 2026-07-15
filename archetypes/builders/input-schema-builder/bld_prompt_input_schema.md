@@ -84,8 +84,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_input_schema]] | upstream | 0.40 |
+| [[bld_knowledge_input_schema]] | upstream | 0.40 |
 | [[bld_schema_input_schema]] | downstream | 0.36 |
 | [[p10_lr_input_schema_builder]] | downstream | 0.34 |
-| [[bld_instruction_instruction]] | sibling | 0.33 |
+| [[bld_prompt_instruction]] | sibling | 0.33 |
 | [[p11_qg_input_schema]] | downstream | 0.33 |

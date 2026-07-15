@@ -33,7 +33,7 @@ related:
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_e2e_test, cex_evolve. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
 <!-- 8F TRACE
 F1 CONSTRAIN: kind=few_shot_example, pillar=P01, max_bytes=5120, naming=p01_fse_{topic}.md
-F2 BECOME: few-shot-example-builder (13 ISOs loaded: schema, system_prompt, instruction, output_template, examples, memory)
+F2 BECOME: few-shot-example-builder (12 ISOs loaded: schema, system_prompt, instruction, output_template, examples, memory)
 F3 INJECT: bld_examples + bld_memory + p01_fse_kc_creation.md (existing). Match: 78%
 F4 REASON: 5 examples, easy->hard arc, N07 orchestrator domain: intent resolution + dispatch + grid
 F5 CALL: Read+Write+compile ready. 1 similar artifact found.

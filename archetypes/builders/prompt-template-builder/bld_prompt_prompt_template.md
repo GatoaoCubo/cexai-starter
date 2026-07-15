@@ -133,7 +133,7 @@ HARD gates (all must pass — fix before delivering):
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-template-builder]] | related | 0.48 |
-| [[bld_knowledge_card_prompt_template]] | upstream | 0.47 |
-| [[bld_collaboration_prompt_template]] | related | 0.47 |
+| [[bld_knowledge_prompt_template]] | upstream | 0.47 |
+| [[bld_orchestration_prompt_template]] | related | 0.47 |
 | [[schema_prompt_template_builder]] | downstream | 0.45 |
 | [[bld_memory_prompt_template]] | downstream | 0.39 |

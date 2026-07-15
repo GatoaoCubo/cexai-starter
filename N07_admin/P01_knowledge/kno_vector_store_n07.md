@@ -66,7 +66,7 @@ related:
 ---
 <!-- 8F TRACE
 F1 CONSTRAIN: kind=vector_store, pillar=P01, max_bytes=4096, naming=p01_vdb_faiss.yaml
-F2 BECOME: vector-store-builder (13 ISOs). Identity: storage+indexing config for RAG
+F2 BECOME: vector-store-builder (12 ISOs). Identity: storage+indexing config for RAG
 F3 INJECT: bld_schema + bld_examples (Chroma golden) + bld_memory (FAISS persistence critical)
 F4 REASON: FAISS IVFFlat chosen -- corpus 2K-5K docs fits in RAM, zero cost, no network dep.
            Sloth lens: simplest backend that satisfies N07 search SLA. No Qdrant/Pinecone.
@@ -231,11 +231,11 @@ Rules:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_knowledge_index]] | downstream | 0.40 |
+| [[kc_knowledge_index]] | downstream | 0.40 |
 | [[bld_memory_vector_store]] | downstream | 0.40 |
 | [[knowledge-index-builder]] | downstream | 0.39 |
-| [[bld_knowledge_card_vector_store]] | upstream | 0.38 |
-| [[bld_collaboration_knowledge_index]] | downstream | 0.34 |
-| [[p01_kc_vector_store]] | upstream | 0.30 |
+| [[bld_knowledge_vector_store]] | upstream | 0.38 |
+| [[bld_orchestration_knowledge_index]] | downstream | 0.34 |
+| [[kc_vector_store]] | upstream | 0.30 |
 | [[p03_ins_vector_store]] | downstream | 0.30 |
-| [[bld_collaboration_embedding_config]] | downstream | 0.30 |
+| [[bld_orchestration_embedding_config]] | downstream | 0.30 |

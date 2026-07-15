@@ -123,6 +123,6 @@ Produce a path_config artifact with YAML frontmatter followed by: `## Path Catal
 |----------|-------------|-------|
 | [[p03_ins_path_config]] | upstream | 0.55 |
 | [[bld_memory_path_config]] | downstream | 0.54 |
-| [[bld_collaboration_path_config]] | related | 0.52 |
+| [[bld_orchestration_path_config]] | related | 0.52 |
 | [[bld_architecture_path_config]] | upstream | 0.50 |
-| [[bld_knowledge_card_path_config]] | upstream | 0.45 |
+| [[bld_knowledge_path_config]] | upstream | 0.45 |

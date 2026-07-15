@@ -64,8 +64,8 @@ Primary 8F verb: INJECT (this card grounds an eval at F3; the running gate lives
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_eval_metric]] | sibling | 0.44 |
+| [[bld_knowledge_eval_metric]] | sibling | 0.44 |
 | [[eval-metric-builder]] | downstream | 0.30 |
 | [[p10_mem_eval_metric_builder]] | downstream | 0.23 |
 | eval-framework-builder | downstream | 0.22 |
-| [[bld_collaboration_eval_metric]] | downstream | 0.22 |
+| [[bld_orchestration_eval_metric]] | downstream | 0.22 |

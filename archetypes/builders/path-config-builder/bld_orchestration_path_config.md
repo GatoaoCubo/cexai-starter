@@ -70,8 +70,8 @@ I define directories, file locations, path resolution rules, and platform-specif
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_env_config]] | sibling | 0.41 |
+| [[bld_orchestration_env_config]] | sibling | 0.41 |
 | [[path-config-builder]] | related | 0.36 |
-| [[bld_collaboration_permission]] | sibling | 0.36 |
+| [[bld_orchestration_permission]] | sibling | 0.36 |
 | [[bld_memory_path_config]] | downstream | 0.33 |
 | [[p03_ins_path_config]] | upstream | 0.32 |

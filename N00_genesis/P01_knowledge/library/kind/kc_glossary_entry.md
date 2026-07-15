@@ -98,7 +98,7 @@ A glossary_entry provides a concise definition of a domain-specific term, inject
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p01_gl_TERM_SLUG | related | 0.53 |
-| [[bld_knowledge_card_glossary_entry]] | sibling | 0.53 |
-| [[bld_instruction_glossary_entry]] | downstream | 0.52 |
+| [[bld_knowledge_glossary_entry]] | sibling | 0.53 |
+| [[bld_prompt_glossary_entry]] | downstream | 0.52 |
 | n00_glossary_entry_manifest | sibling | 0.51 |
 | [[glossary-entry-builder]] | related | 0.48 |

@@ -79,5 +79,5 @@ I produce connection and routing configurations for LLM APIs with tiered model s
 | bld_collaboration_model_card | sibling | 0.52 |
 | [[model-provider-builder]] | related | 0.49 |
 | [[bld_memory_model_provider]] | downstream | 0.47 |
-| [[bld_collaboration_boot_config]] | sibling | 0.43 |
+| [[bld_orchestration_boot_config]] | sibling | 0.43 |
 | [[bld_config_model_provider]] | downstream | 0.41 |

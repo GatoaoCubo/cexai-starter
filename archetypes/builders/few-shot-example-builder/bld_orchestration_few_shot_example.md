@@ -65,8 +65,8 @@ I craft format-exemplifying pairs so prompts can teach LLMs the expected output 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_action_prompt]] | sibling | 0.51 |
-| [[bld_collaboration_golden_test]] | sibling | 0.44 |
-| [[bld_collaboration_input_schema]] | sibling | 0.42 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.51 |
+| [[bld_orchestration_golden_test]] | sibling | 0.44 |
+| [[bld_orchestration_input_schema]] | sibling | 0.42 |
 | [[few-shot-example-builder]] | upstream | 0.41 |
-| [[bld_collaboration_response_format]] | sibling | 0.39 |
+| [[bld_orchestration_response_format]] | sibling | 0.39 |

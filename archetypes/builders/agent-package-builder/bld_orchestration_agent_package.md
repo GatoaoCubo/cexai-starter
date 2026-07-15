@@ -68,8 +68,8 @@ I package agent artifacts so they can be distributed and deployed on any compati
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | sibling | 0.64 |
-| [[bld_collaboration_boot_config]] | sibling | 0.53 |
+| [[bld_orchestration_agent]] | sibling | 0.64 |
+| [[bld_orchestration_boot_config]] | sibling | 0.53 |
 | [[agent-package-builder]] | upstream | 0.44 |
-| [[bld_collaboration_instruction]] | sibling | 0.41 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.38 |
+| [[bld_orchestration_instruction]] | sibling | 0.41 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.38 |

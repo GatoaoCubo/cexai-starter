@@ -119,5 +119,5 @@ density_score: {{0.80_to_1.00}}
 | [[bld_schema_input_schema]] | downstream | 0.39 |
 | [[bld_output_template_function_def]] | sibling | 0.37 |
 | [[p10_lr_input_schema_builder]] | downstream | 0.33 |
-| [[bld_instruction_input_schema]] | upstream | 0.30 |
+| [[bld_prompt_input_schema]] | upstream | 0.30 |
 | [[bld_schema_validation_schema]] | downstream | 0.30 |

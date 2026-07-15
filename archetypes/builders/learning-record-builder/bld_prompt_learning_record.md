@@ -108,7 +108,7 @@ Score SOFT gates from `QUALITY_GATES.md`. If soft score < 8.0, revise in the sam
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[learning-record-builder]] | downstream | 0.39 |
-| [[bld_knowledge_card_learning_record]] | downstream | 0.32 |
-| [[bld_collaboration_learning_record]] | downstream | 0.29 |
+| [[bld_knowledge_learning_record]] | downstream | 0.32 |
+| [[bld_orchestration_learning_record]] | downstream | 0.29 |
 | [[bld_memory_learning_record]] | downstream | 0.28 |
-| [[bld_instruction_input_schema]] | sibling | 0.27 |
+| [[bld_prompt_input_schema]] | sibling | 0.27 |

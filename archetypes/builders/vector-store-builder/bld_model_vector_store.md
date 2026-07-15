@@ -126,7 +126,7 @@ Body sections: Boundary, Backend Matrix, Index Configuration, Namespace Strategy
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_vector_store]] | downstream | 0.57 |
-| [[bld_collaboration_vector_store]] | related | 0.56 |
-| [[bld_knowledge_card_vector_store]] | upstream | 0.51 |
+| [[bld_orchestration_vector_store]] | related | 0.56 |
+| [[bld_knowledge_vector_store]] | upstream | 0.51 |
 | [[p03_ins_vector_store]] | downstream | 0.50 |
 | n00_vector_store_manifest | upstream | 0.46 |

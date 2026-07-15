@@ -285,5 +285,5 @@ N07 picks up the signal, verifies the commit, and marks N04's task complete.
 |----------|-------------|-------|
 | [[ex_full_lifecycle]] | parent | 1.00 |
 | 8f-reasoning | reference | 0.90 |
-| [[p01_kc_knowledge_card]] | template | 0.85 |
+| [[kc_knowledge_card]] | template | 0.85 |
 | [[ex_lifecycle_business_mode]] | sibling | 0.95 |

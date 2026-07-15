@@ -46,7 +46,7 @@ Reviewed artifacts showed success when combining firmographic filters with speci
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[customer-segment-builder]] | upstream | 0.36 |
-| [[bld_instruction_customer_segment]] | upstream | 0.33 |
+| [[bld_prompt_customer_segment]] | upstream | 0.33 |
 | [[p10_mem_eval_metric_builder]] | sibling | 0.26 |
-| [[bld_collaboration_customer_segment]] | downstream | 0.25 |
+| [[bld_orchestration_customer_segment]] | downstream | 0.25 |
 | p10_lr_judge_config_builder | related | 0.23 |

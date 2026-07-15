@@ -124,8 +124,8 @@ social_publisher ──► content_monetization ──► ad_campaign
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_content_monetization]] | downstream | 0.49 |
-| [[bld_instruction_content_monetization]] | upstream | 0.45 |
+| [[bld_orchestration_content_monetization]] | downstream | 0.49 |
+| [[bld_prompt_content_monetization]] | upstream | 0.45 |
 | [[content-monetization-builder]] | downstream | 0.41 |
-| [[bld_knowledge_card_content_monetization]] | upstream | 0.40 |
+| [[bld_knowledge_content_monetization]] | upstream | 0.40 |
 | [[bld_config_content_monetization]] | downstream | 0.37 |

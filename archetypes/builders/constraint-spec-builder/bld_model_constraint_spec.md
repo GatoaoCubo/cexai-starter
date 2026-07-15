@@ -129,8 +129,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_constraint_spec]] | downstream | 0.54 |
+| [[bld_orchestration_constraint_spec]] | downstream | 0.54 |
 | [[bld_architecture_constraint_spec]] | downstream | 0.53 |
 | [[p10_lr_constraint_spec_builder]] | downstream | 0.52 |
 | [[p11_qg_constraint_spec]] | downstream | 0.45 |
-| [[bld_instruction_constraint_spec]] | related | 0.44 |
+| [[bld_prompt_constraint_spec]] | related | 0.44 |

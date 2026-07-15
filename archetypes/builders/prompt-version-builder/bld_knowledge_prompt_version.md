@@ -78,6 +78,6 @@ Prompt version — immutable snapshot of a prompt at a point in time with metric
 |----------|-------------|-------|
 | [[p10_lr_prompt_version_builder]] | downstream | 0.51 |
 | [[prompt-version-builder]] | related | 0.50 |
-| [[p01_kc_prompt_version]] | sibling | 0.46 |
-| [[bld_collaboration_prompt_version]] | downstream | 0.45 |
-| [[bld_instruction_prompt_version]] | related | 0.32 |
+| [[kc_prompt_version]] | sibling | 0.46 |
+| [[bld_orchestration_prompt_version]] | downstream | 0.45 |
+| [[bld_prompt_prompt_version]] | related | 0.32 |

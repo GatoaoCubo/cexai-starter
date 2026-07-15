@@ -73,6 +73,6 @@ knowledge_index      --signals-->   rebuild_trigger (when freshness_threshold ex
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[knowledge-index-builder]] | downstream | 0.51 |
-| [[bld_collaboration_knowledge_index]] | downstream | 0.46 |
+| [[bld_orchestration_knowledge_index]] | downstream | 0.46 |
 | [[p11_qg_knowledge_index]] | downstream | 0.41 |
-| [[bld_instruction_knowledge_index]] | upstream | 0.39 |
+| [[bld_prompt_knowledge_index]] | upstream | 0.39 |

@@ -177,6 +177,6 @@ Optimistic:   500 sales × R$997 + 25% OTO + order bump = R$560,000+
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p03_pt_commercial_nucleus | downstream | 0.54 |
-| [[p01_kc_brand_monetization_models]] | sibling | 0.39 |
+| [[kc_brand_monetization_models]] | sibling | 0.39 |
 | p08_pat_pricing_framework | downstream | 0.37 |
 | p03_sp_commercial_nucleus | downstream | 0.33 |

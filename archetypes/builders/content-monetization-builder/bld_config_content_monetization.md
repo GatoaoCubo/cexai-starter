@@ -114,7 +114,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_content_monetization]] | upstream | 0.36 |
-| [[bld_instruction_content_monetization]] | upstream | 0.33 |
+| [[bld_prompt_content_monetization]] | upstream | 0.33 |
 | bld_config_social_publisher | sibling | 0.32 |
 | [[bld_config_research_pipeline]] | sibling | 0.29 |
-| [[bld_knowledge_card_content_monetization]] | upstream | 0.28 |
+| [[bld_knowledge_content_monetization]] | upstream | 0.28 |

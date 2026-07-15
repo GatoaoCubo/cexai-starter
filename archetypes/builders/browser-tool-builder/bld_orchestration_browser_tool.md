@@ -77,8 +77,8 @@ None — independent builder (layer 0). Browser tools can be defined standalone.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_vision_tool]] | sibling | 0.32 |
-| [[bld_collaboration_search_tool]] | sibling | 0.32 |
+| [[bld_orchestration_vision_tool]] | sibling | 0.32 |
+| [[bld_orchestration_search_tool]] | sibling | 0.32 |
 | [[browser-tool-builder]] | upstream | 0.32 |
 | bld_collaboration_agent_computer_interface | sibling | 0.30 |
-| [[bld_collaboration_computer_use]] | sibling | 0.28 |
+| [[bld_orchestration_computer_use]] | sibling | 0.28 |

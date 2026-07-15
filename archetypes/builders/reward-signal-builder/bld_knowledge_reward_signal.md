@@ -80,7 +80,7 @@ Reward signals are continuous quality scores that drive agent improvement throug
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_reward_signal]] | downstream | 0.58 |
+| [[bld_orchestration_reward_signal]] | downstream | 0.58 |
 | [[reward-signal-builder]] | downstream | 0.54 |
 | p01_kc_reward_and_alignment | sibling | 0.54 |
 | [[p10_lr_reward_signal_builder]] | downstream | 0.47 |

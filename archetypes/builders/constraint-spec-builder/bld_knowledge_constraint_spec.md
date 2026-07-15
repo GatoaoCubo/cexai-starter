@@ -78,6 +78,6 @@ Constraint spec — rules that govern the LLM decoder during generation (grammar
 |----------|-------------|-------|
 | [[p10_lr_constraint_spec_builder]] | downstream | 0.52 |
 | [[constraint-spec-builder]] | related | 0.43 |
-| [[bld_collaboration_constraint_spec]] | downstream | 0.36 |
+| [[bld_orchestration_constraint_spec]] | downstream | 0.36 |
 | [[bld_architecture_constraint_spec]] | downstream | 0.36 |
-| [[p01_kc_constraint_spec]] | sibling | 0.34 |
+| [[kc_constraint_spec]] | sibling | 0.34 |

@@ -119,7 +119,7 @@ Deliver a `runtime_state` artifact with this structure:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_runtime_state]] | related | 0.61 |
-| [[bld_collaboration_runtime_state]] | related | 0.61 |
-| [[bld_knowledge_card_runtime_state]] | upstream | 0.54 |
+| [[bld_orchestration_runtime_state]] | related | 0.61 |
+| [[bld_knowledge_runtime_state]] | upstream | 0.54 |
 | [[p03_ins_runtime_state]] | related | 0.51 |
 | [[bld_architecture_runtime_state]] | upstream | 0.49 |

@@ -74,8 +74,8 @@ python _tools/cex_score.py --apply bld-config-citation.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_citation]] | upstream | 0.39 |
+| [[kc_citation]] | upstream | 0.39 |
 | [[bld_output_template_citation]] | upstream | 0.38 |
-| [[bld_instruction_citation]] | upstream | 0.38 |
+| [[bld_prompt_citation]] | upstream | 0.38 |
 | [[bld_schema_citation]] | upstream | 0.37 |
-| [[bld_knowledge_card_citation]] | upstream | 0.34 |
+| [[bld_knowledge_citation]] | upstream | 0.34 |

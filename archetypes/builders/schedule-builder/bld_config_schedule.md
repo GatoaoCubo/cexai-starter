@@ -78,8 +78,8 @@ Rule: id prefix MUST be `p12_sc_`. File prefix MUST be `p12_sched_`.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_schedule]] | upstream | 0.40 |
+| [[bld_knowledge_schedule]] | upstream | 0.40 |
 | [[schedule-builder]] | downstream | 0.37 |
 | [[p11_qg_schedule]] | downstream | 0.35 |
-| [[bld_instruction_schedule]] | upstream | 0.34 |
+| [[bld_prompt_schedule]] | upstream | 0.34 |
 | [[p10_lr_schedule_builder]] | downstream | 0.33 |

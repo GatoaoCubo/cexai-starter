@@ -86,7 +86,7 @@ Reordering, renaming, or re-layouting any of the four is a HARD FAIL against
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_product_match]] | upstream | 0.33 |
-| [[bld_instruction_product_match]] | upstream | 0.29 |
+| [[bld_prompt_product_match]] | upstream | 0.29 |
 | [[bld_output_template_product_match]] | upstream | 0.29 |
 | [[bld_config_vision_tool]] | sibling | 0.28 |
 | [[bld_context_sources_data_contract]] | sibling | 0.27 |

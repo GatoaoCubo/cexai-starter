@@ -79,7 +79,7 @@ python _tools/cex_score.py --apply p10-lr-memory-scope-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-scope-builder]] | upstream | 0.53 |
-| [[bld_knowledge_card_memory_scope]] | upstream | 0.51 |
+| [[bld_knowledge_memory_scope]] | upstream | 0.51 |
 | bld_collaboration_memory_type | downstream | 0.45 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.45 |
+| [[bld_orchestration_memory_scope]] | downstream | 0.45 |
 | [[bld_architecture_memory_scope]] | upstream | 0.40 |

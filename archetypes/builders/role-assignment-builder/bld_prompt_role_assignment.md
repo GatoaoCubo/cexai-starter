@@ -57,4 +57,4 @@ related:
 | [[bld_schema_role_assignment]] | downstream | 0.53 |
 | [[p11_qg_role_assignment]] | downstream | 0.48 |
 | [[bld_output_template_role_assignment]] | downstream | 0.42 |
-| [[bld_knowledge_card_role_assignment]] | upstream | 0.42 |
+| [[bld_knowledge_role_assignment]] | upstream | 0.42 |

@@ -101,7 +101,7 @@ know the artifact it hands off will be gated before F8, per `cex_decompose.py` l
 `.cex/kind_tool_supplement.json`'s `kind_to_tools["prompt_package"]` currently lists:
 `cex_prompt_cache.py`, `cex_prompt_optimizer.py`, `cex_prompt_layers.py`, `cex_skill_loader.py`,
 `cex_crew_runner.py`. Per the triage decision doc's Sec 3.2 correction, these are SHARED
-boilerplate buckets (~33 generic tool-list groups across all 316 kinds), not prompt_package-
+boilerplate buckets (~33 generic tool-list groups across all 125 kinds), not prompt_package-
 specific dispatch wiring -- the REAL, kind-specific mechanism is `cex_decompose.py` +
 `cex_8f_runner.py`, neither of which appears in that generic bucket.
 

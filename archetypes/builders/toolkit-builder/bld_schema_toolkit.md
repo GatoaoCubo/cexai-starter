@@ -110,7 +110,7 @@ tools:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p03_ins_toolkit_builder]] | upstream | 0.57 |
-| [[bld_knowledge_card_toolkit]] | upstream | 0.54 |
+| [[bld_knowledge_toolkit]] | upstream | 0.54 |
 | [[toolkit-builder]] | upstream | 0.53 |
 | [[p11_qg_toolkit]] | downstream | 0.50 |
 | [[bld_config_toolkit]] | downstream | 0.48 |

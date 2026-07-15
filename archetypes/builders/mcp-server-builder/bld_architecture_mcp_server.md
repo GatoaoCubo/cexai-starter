@@ -71,6 +71,6 @@ mcp_server     --signals-->    health_status
 |----------|-------------|-------|
 | [[mcp-server-builder]] | upstream | 0.51 |
 | n00_mcp_server_manifest | upstream | 0.49 |
-| [[bld_collaboration_mcp_server]] | upstream | 0.49 |
+| [[bld_orchestration_mcp_server]] | upstream | 0.49 |
 | [[p03_ins_mcp_server]] | upstream | 0.47 |
-| [[p01_kc_mcp_server]] | upstream | 0.46 |
+| [[kc_mcp_server]] | upstream | 0.46 |

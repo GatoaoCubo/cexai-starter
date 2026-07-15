@@ -96,4 +96,4 @@ target           --determines-> resolution + actions
 | n00_computer_use_manifest | upstream | 0.52 |
 | [[p11_qg_computer_use]] | downstream | 0.48 |
 | [[bld_architecture_browser_tool]] | sibling | 0.43 |
-| [[bld_collaboration_computer_use]] | downstream | 0.41 |
+| [[bld_orchestration_computer_use]] | downstream | 0.41 |

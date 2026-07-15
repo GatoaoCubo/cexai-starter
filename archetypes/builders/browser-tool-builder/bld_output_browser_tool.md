@@ -117,5 +117,5 @@ Schema:
 | [[p11_qg_browser_tool]] | downstream | 0.37 |
 | [[bld_schema_browser_tool]] | downstream | 0.35 |
 | p04_browser_playwright | upstream | 0.33 |
-| [[bld_knowledge_card_browser_tool]] | upstream | 0.32 |
+| [[bld_knowledge_browser_tool]] | upstream | 0.32 |
 | p04_browser_railway_ui | upstream | 0.31 |

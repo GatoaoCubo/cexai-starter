@@ -115,7 +115,7 @@ Rationale: `{{chain_of_thought_reasoning_then_score_justification}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_llm_judge]] | downstream | 0.31 |
-| [[bld_instruction_llm_judge]] | upstream | 0.30 |
+| [[bld_prompt_llm_judge]] | upstream | 0.30 |
 | [[p11_qg_llm_judge]] | downstream | 0.29 |
-| [[bld_knowledge_card_llm_judge]] | upstream | 0.28 |
+| [[bld_knowledge_llm_judge]] | upstream | 0.28 |
 | [[llm-judge-builder]] | downstream | 0.27 |

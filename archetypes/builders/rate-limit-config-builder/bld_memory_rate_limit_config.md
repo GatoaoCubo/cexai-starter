@@ -94,8 +94,8 @@ python _tools/cex_score.py --apply p10-lr-rate-limit-config-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_rate_limit_config]] | downstream | 0.51 |
+| [[bld_orchestration_rate_limit_config]] | downstream | 0.51 |
 | [[rate-limit-config-builder]] | upstream | 0.51 |
-| [[bld_instruction_rate_limit_config]] | upstream | 0.45 |
-| [[bld_knowledge_card_rate_limit_config]] | upstream | 0.45 |
+| [[bld_prompt_rate_limit_config]] | upstream | 0.45 |
+| [[bld_knowledge_rate_limit_config]] | upstream | 0.45 |
 | [[p11_qg_rate_limit_config]] | downstream | 0.44 |

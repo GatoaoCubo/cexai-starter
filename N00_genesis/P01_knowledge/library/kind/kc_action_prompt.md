@@ -96,8 +96,8 @@ An action prompt is a task-specific instruction that a human or orchestrator inj
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_action_prompt]] | downstream | 0.40 |
-| [[bld_knowledge_card_action_prompt]] | sibling | 0.40 |
+| [[bld_orchestration_action_prompt]] | downstream | 0.40 |
+| [[bld_knowledge_action_prompt]] | sibling | 0.40 |
 | [[action-prompt-builder]] | related | 0.39 |
-| [[p01_kc_instruction]] | sibling | 0.37 |
+| [[kc_instruction]] | sibling | 0.37 |
 | [[bld_architecture_action_prompt]] | downstream | 0.35 |

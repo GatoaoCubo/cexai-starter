@@ -80,6 +80,6 @@ Always null at creation. Updated by validation pipeline, never by the builder.
 |----------|-------------|-------|
 | [[bld_schema_rag_source]] | upstream | 0.34 |
 | [[p11_qg_rag_source]] | downstream | 0.29 |
-| [[bld_knowledge_card_rag_source]] | upstream | 0.29 |
+| [[bld_knowledge_rag_source]] | upstream | 0.29 |
 | [[bld_output_template_rag_source]] | upstream | 0.24 |
 | [[p03_ins_rag_source]] | upstream | 0.24 |

@@ -94,6 +94,6 @@ This ISO selects a reasoning strategy (e.g. chain-of-thought) and the conditions
 |----------|-------------|-------|
 | [[reasoning-strategy-builder]] | upstream | 0.35 |
 | [[p03_qg_reasoning_strategy]] | downstream | 0.33 |
-| [[bld_instruction_reasoning_strategy]] | upstream | 0.32 |
+| [[bld_prompt_reasoning_strategy]] | upstream | 0.32 |
 | [[bld_schema_reasoning_strategy]] | downstream | 0.32 |
-| [[bld_collaboration_reasoning_strategy]] | downstream | 0.31 |
+| [[bld_orchestration_reasoning_strategy]] | downstream | 0.31 |

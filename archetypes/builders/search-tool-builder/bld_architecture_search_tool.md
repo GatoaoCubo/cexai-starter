@@ -98,5 +98,5 @@ function_def --wraps-->     search_tool (as callable)
 | [[search-tool-builder]] | upstream | 0.73 |
 | n00_search_tool_manifest | upstream | 0.53 |
 | [[p11_qg_search_tool]] | downstream | 0.52 |
-| [[bld_collaboration_search_tool]] | downstream | 0.48 |
+| [[bld_orchestration_search_tool]] | downstream | 0.48 |
 | [[bld_architecture_retriever]] | sibling | 0.46 |

@@ -159,5 +159,5 @@ security:
 | [[kc_openapi_spec]] | sibling | 0.80 |
 | [[openapi-spec-builder]] | downstream | 0.64 |
 | [[bld_schema_openapi_spec]] | downstream | 0.61 |
-| [[bld_collaboration_openapi_spec]] | downstream | 0.55 |
+| [[bld_orchestration_openapi_spec]] | downstream | 0.55 |
 | [[bld_architecture_openapi_spec]] | downstream | 0.53 |

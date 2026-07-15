@@ -89,7 +89,7 @@ output_metrics: [{{output_metrics}}]
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_roi_calculator]] | upstream | 0.38 |
-| [[bld_instruction_roi_calculator]] | upstream | 0.36 |
+| [[bld_prompt_roi_calculator]] | upstream | 0.36 |
 | [[bld_schema_roi_calculator]] | downstream | 0.35 |
-| [[bld_knowledge_card_roi_calculator]] | upstream | 0.35 |
+| [[bld_knowledge_roi_calculator]] | upstream | 0.35 |
 | [[roi-calculator-builder]] | downstream | 0.35 |

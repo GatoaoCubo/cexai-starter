@@ -73,5 +73,5 @@ I capture ephemeral in-session snapshots — context window usage, active task, 
 | [[session-state-builder]] | related | 0.54 |
 | [[bld_memory_session_state]] | related | 0.47 |
 | [[bld_architecture_session_state]] | upstream | 0.47 |
-| [[bld_collaboration_signal]] | sibling | 0.42 |
+| [[bld_orchestration_signal]] | sibling | 0.42 |
 | [[bld_memory_runtime_state]] | related | 0.40 |

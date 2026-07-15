@@ -82,4 +82,4 @@ Signals are atomic JSON runtime notifications — the smallest status exchange u
 | [[bld_schema_signal]] | upstream | 0.53 |
 | [[p11_qg_signal]] | upstream | 0.48 |
 | [[p03_ins_signal_builder]] | upstream | 0.48 |
-| [[p01_kc_signal]] | sibling | 0.44 |
+| [[kc_signal]] | sibling | 0.44 |

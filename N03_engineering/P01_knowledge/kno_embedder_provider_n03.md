@@ -203,6 +203,6 @@ Retrieval should feel engineered, not approximate.
 |----------|-------------|-------|
 | [[kno_embedder_provider_n05]] | sibling | 0.41 |
 | [[kno_embedder_provider_n01]] | sibling | 0.41 |
-| [[bld_collaboration_embedder_provider]] | related | 0.40 |
+| [[bld_orchestration_embedder_provider]] | related | 0.40 |
 | [[bld_memory_embedder_provider]] | downstream | 0.38 |
 | [[kno_embedder_provider_n04]] | sibling | 0.36 |

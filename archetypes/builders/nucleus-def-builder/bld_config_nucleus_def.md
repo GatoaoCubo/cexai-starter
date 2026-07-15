@@ -62,5 +62,5 @@ on_quality_fail: re-verify pillars_owned against actual artifact production
 | nucleus_def_n03.md | upstream | 0.25 |
 | nucleus_def_n01.md | upstream | 0.24 |
 | nucleus_def_n04.md | upstream | 0.23 |
-| [[bld_knowledge_card_nucleus_def]] | upstream | 0.23 |
+| [[bld_knowledge_nucleus_def]] | upstream | 0.23 |
 | nucleus_def_n05.md | upstream | 0.22 |

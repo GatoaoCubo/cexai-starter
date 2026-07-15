@@ -139,7 +139,7 @@ Commercial tier: `{{tier}}`. Reference design: `{{reference_system}}`.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_memory_architecture]] | upstream | 0.54 |
+| [[bld_knowledge_memory_architecture]] | upstream | 0.54 |
 | [[memory-architecture-builder]] | downstream | 0.50 |
 | [[bld_schema_memory_architecture]] | downstream | 0.47 |
 | bld_knowledge_card_consolidation_policy | upstream | 0.43 |

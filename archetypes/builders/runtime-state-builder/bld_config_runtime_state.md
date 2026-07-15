@@ -78,6 +78,6 @@ python _tools/cex_score.py --apply bld-config-runtime-state.md
 |----------|-------------|-------|
 | [[bld_tools_runtime_state]] | upstream | 0.29 |
 | [[bld_schema_runtime_state]] | upstream | 0.29 |
-| [[bld_collaboration_runtime_state]] | downstream | 0.28 |
+| [[bld_orchestration_runtime_state]] | downstream | 0.28 |
 | [[bld_config_session_state]] | sibling | 0.27 |
 | [[bld_memory_runtime_state]] | downstream | 0.27 |

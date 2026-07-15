@@ -101,4 +101,4 @@ Parsers are data extraction artifacts that convert raw, semi-structured, or unst
 | [[p03_ins_parser]] | downstream | 0.47 |
 | [[bld_schema_parser]] | downstream | 0.44 |
 | [[bld_memory_parser]] | downstream | 0.42 |
-| [[p01_kc_parser]] | sibling | 0.42 |
+| [[kc_parser]] | sibling | 0.42 |

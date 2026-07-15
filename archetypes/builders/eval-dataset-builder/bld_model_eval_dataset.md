@@ -154,8 +154,8 @@ framework: braintrust | langsmith | deepeval | huggingface | costm
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_eval_dataset]] | downstream | 0.65 |
-| [[bld_knowledge_card_eval_dataset]] | upstream | 0.56 |
-| [[p01_kc_eval_dataset]] | related | 0.52 |
-| [[bld_instruction_eval_dataset]] | upstream | 0.48 |
+| [[bld_orchestration_eval_dataset]] | downstream | 0.65 |
+| [[bld_knowledge_eval_dataset]] | upstream | 0.56 |
+| [[kc_eval_dataset]] | related | 0.52 |
+| [[bld_prompt_eval_dataset]] | upstream | 0.48 |
 | n00_eval_dataset_manifest | related | 0.47 |

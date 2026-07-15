@@ -120,8 +120,8 @@ Every response that produces an artifact must include:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_formatter]] | downstream | 0.55 |
+| [[bld_orchestration_formatter]] | downstream | 0.55 |
 | [[bld_architecture_formatter]] | downstream | 0.53 |
-| [[p01_kc_formatter]] | upstream | 0.48 |
-| [[bld_instruction_formatter]] | upstream | 0.48 |
+| [[kc_formatter]] | upstream | 0.48 |
+| [[bld_prompt_formatter]] | upstream | 0.48 |
 | [[p10_lr_formatter_builder]] | downstream | 0.46 |

@@ -97,8 +97,8 @@ env_config, secret_config --> [rate_limit_config] --> runtime_rule, agent_card
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_rate_limit_config]] | sibling | 0.55 |
+| [[bld_knowledge_rate_limit_config]] | sibling | 0.55 |
 | [[rate-limit-config-builder]] | related | 0.55 |
-| [[bld_collaboration_rate_limit_config]] | downstream | 0.48 |
+| [[bld_orchestration_rate_limit_config]] | downstream | 0.48 |
 | [[p11_qg_rate_limit_config]] | downstream | 0.48 |
 | p01_kc_api_rate_limiting_retry_patterns | sibling | 0.47 |

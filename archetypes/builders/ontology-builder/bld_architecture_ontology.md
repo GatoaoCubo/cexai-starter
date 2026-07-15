@@ -89,7 +89,7 @@ knowledge_card (P01) --independent--> ontology (KCs capture facts; ontology capt
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_ontology]] | downstream | 0.70 |
+| [[bld_orchestration_ontology]] | downstream | 0.70 |
 | [[ontology-builder]] | upstream | 0.69 |
 | n00_ontology_manifest | upstream | 0.67 |
 | [[bld_schema_ontology]] | upstream | 0.49 |

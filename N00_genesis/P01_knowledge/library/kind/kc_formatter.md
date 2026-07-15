@@ -101,6 +101,6 @@ A formatter is a post-generation structural transformer that converts raw LLM te
 |----------|-------------|-------|
 | [[formatter-builder]] | downstream | 0.44 |
 | [[bld_architecture_formatter]] | downstream | 0.41 |
-| [[bld_collaboration_formatter]] | downstream | 0.40 |
+| [[bld_orchestration_formatter]] | downstream | 0.40 |
 | n00_formatter_manifest | sibling | 0.39 |
-| [[bld_collaboration_response_format]] | downstream | 0.38 |
+| [[bld_orchestration_response_format]] | downstream | 0.38 |

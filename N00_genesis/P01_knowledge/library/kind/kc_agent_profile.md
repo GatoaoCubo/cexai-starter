@@ -91,7 +91,7 @@ agent_profile:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agent-profile-builder]] | downstream | 0.31 |
-| [[bld_collaboration_agent]] | downstream | 0.30 |
-| [[bld_knowledge_card_agent]] | sibling | 0.27 |
-| [[bld_collaboration_system_prompt]] | downstream | 0.25 |
-| [[p01_kc_agent]] | sibling | 0.25 |
+| [[bld_orchestration_agent]] | downstream | 0.30 |
+| [[bld_knowledge_agent]] | sibling | 0.27 |
+| [[bld_orchestration_system_prompt]] | downstream | 0.25 |
+| [[kc_agent]] | sibling | 0.25 |

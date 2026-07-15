@@ -55,7 +55,7 @@ Environment configuration failures fall into two categories: security failures (
 ## Builder Context
 
 This ISO operates within the `env-config-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -111,7 +111,7 @@ python _tools/cex_score.py --apply --verbose p10_lr_env_config_builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[env-config-builder]] | upstream | 0.41 |
-| [[bld_instruction_env_config]] | upstream | 0.38 |
-| [[bld_knowledge_card_env_config]] | upstream | 0.36 |
+| [[bld_prompt_env_config]] | upstream | 0.38 |
+| [[bld_knowledge_env_config]] | upstream | 0.36 |
 | [[p11_qg_env_config]] | downstream | 0.34 |
 | bld_tools_memory_type | upstream | 0.32 |

@@ -66,6 +66,6 @@ I design event interception points so systems can react to lifecycle events with
 |----------|-------------|-------|
 | bld_collaboration_hook_config | sibling | 0.45 |
 | [[hook-builder]] | upstream | 0.44 |
-| [[bld_instruction_hook]] | upstream | 0.40 |
-| [[bld_knowledge_card_hook]] | upstream | 0.39 |
+| [[bld_prompt_hook]] | upstream | 0.40 |
+| [[bld_knowledge_hook]] | upstream | 0.39 |
 | bld_knowledge_card_hook_config | upstream | 0.36 |

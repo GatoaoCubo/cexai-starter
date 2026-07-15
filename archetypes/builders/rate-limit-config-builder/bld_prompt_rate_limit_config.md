@@ -107,6 +107,6 @@ python _tools/cex_skill_loader.py --verify rate
 |----------|-------------|-------|
 | [[p11_qg_rate_limit_config]] | downstream | 0.53 |
 | [[rate-limit-config-builder]] | downstream | 0.53 |
-| [[bld_instruction_search_tool]] | sibling | 0.46 |
-| [[bld_instruction_retriever_config]] | sibling | 0.43 |
-| [[bld_knowledge_card_rate_limit_config]] | upstream | 0.43 |
+| [[bld_prompt_search_tool]] | sibling | 0.46 |
+| [[bld_prompt_retriever_config]] | sibling | 0.43 |
+| [[bld_knowledge_rate_limit_config]] | upstream | 0.43 |

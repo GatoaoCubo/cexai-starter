@@ -72,6 +72,6 @@ I design evaluation frameworks with weighted dimensions, tier thresholds, and ca
 |----------|-------------|-------|
 | bld_collaboration_quality_gate | sibling | 0.44 |
 | [[scoring-rubric-builder]] | related | 0.42 |
-| [[bld_knowledge_card_scoring_rubric]] | upstream | 0.38 |
-| [[p01_kc_scoring_rubric]] | related | 0.36 |
+| [[bld_knowledge_scoring_rubric]] | upstream | 0.38 |
+| [[kc_scoring_rubric]] | related | 0.36 |
 | [[bld_memory_scoring_rubric]] | downstream | 0.35 |

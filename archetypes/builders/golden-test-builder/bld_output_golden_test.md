@@ -92,4 +92,4 @@ linked_artifacts:
 | [[bld_output_template_unit_eval]] | sibling | 0.35 |
 | [[bld_output_template_embedding_config]] | sibling | 0.34 |
 | bld_output_template_feature_flag | sibling | 0.34 |
-| [[bld_collaboration_golden_test]] | downstream | 0.34 |
+| [[bld_orchestration_golden_test]] | downstream | 0.34 |

@@ -102,5 +102,5 @@ A document_loader transforms raw files (PDF, HTML, CSV, DOCX, Markdown, JSON) in
 | [[document_loader-builder]] | downstream | 0.43 |
 | [[bld_architecture_document_loader]] | downstream | 0.41 |
 | p08_dir_rag_pipeline | downstream | 0.39 |
-| [[bld_collaboration_document_loader]] | downstream | 0.37 |
-| [[p01_kc_retriever]] | sibling | 0.35 |
+| [[bld_orchestration_document_loader]] | downstream | 0.37 |
+| [[kc_retriever]] | sibling | 0.35 |

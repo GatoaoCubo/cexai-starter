@@ -149,8 +149,8 @@ overlap: 64
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_document_loader]] | upstream | 0.52 |
+| [[kc_document_loader]] | upstream | 0.52 |
 | [[p11_qg_document_loader]] | downstream | 0.50 |
-| [[bld_collaboration_document_loader]] | related | 0.50 |
-| [[bld_knowledge_card_document_loader]] | related | 0.50 |
+| [[bld_orchestration_document_loader]] | related | 0.50 |
+| [[bld_knowledge_document_loader]] | related | 0.50 |
 | [[bld_architecture_document_loader]] | related | 0.46 |

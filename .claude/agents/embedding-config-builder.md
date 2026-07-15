@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[embedding-config-builder]] | related | 0.34 |
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.30 |
-| [[bld_collaboration_embedding_config]] | related | 0.29 |
+| [[bld_orchestration_embedding_config]] | related | 0.29 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.28 |

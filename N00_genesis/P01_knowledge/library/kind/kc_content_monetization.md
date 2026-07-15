@@ -101,7 +101,7 @@ A content_monetization artifact is a declarative pipeline specification that orc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[content-monetization-builder]] | related | 0.50 |
-| [[bld_collaboration_content_monetization]] | downstream | 0.41 |
+| [[bld_orchestration_content_monetization]] | downstream | 0.41 |
 | [[bld_architecture_content_monetization]] | upstream | 0.38 |
 | n06_integration_content_factory | related | 0.38 |
 | p04_fn_content_monetization | upstream | 0.33 |

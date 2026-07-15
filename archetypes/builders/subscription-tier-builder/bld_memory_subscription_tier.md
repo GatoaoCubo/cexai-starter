@@ -55,7 +55,7 @@ Stripe Billing API schema and Chargebee plan docs are the de-facto industry cont
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_subscription_tier]] | upstream | 0.60 |
+| [[bld_knowledge_subscription_tier]] | upstream | 0.60 |
 | [[subscription-tier-builder]] | downstream | 0.56 |
 | [[bld_schema_subscription_tier]] | upstream | 0.49 |
 | [[p11_qg_subscription_tier]] | downstream | 0.40 |

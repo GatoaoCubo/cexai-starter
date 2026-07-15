@@ -92,7 +92,7 @@ python _tools/cex_score.py --apply bld-memory-scoring-rubric.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[scoring-rubric-builder]] | upstream | 0.57 |
-| [[bld_knowledge_card_scoring_rubric]] | upstream | 0.55 |
-| [[bld_collaboration_scoring_rubric]] | upstream | 0.48 |
+| [[bld_knowledge_scoring_rubric]] | upstream | 0.55 |
+| [[bld_orchestration_scoring_rubric]] | upstream | 0.48 |
 | [[p03_ins_scoring_rubric_builder]] | upstream | 0.45 |
 | [[p11_qg_scoring-rubric]] | downstream | 0.41 |

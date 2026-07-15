@@ -69,7 +69,7 @@ In the A2A protocol (Google/Linux Foundation, v0.3 April 2026), the AgentCard is
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[capability-registry-builder]] | downstream | 0.52 |
-| [[p01_kc_agent]] | sibling | 0.39 |
-| [[bld_collaboration_agent]] | downstream | 0.38 |
-| [[bld_knowledge_card_agent]] | sibling | 0.37 |
+| [[kc_agent]] | sibling | 0.39 |
+| [[bld_orchestration_agent]] | downstream | 0.38 |
+| [[bld_knowledge_agent]] | sibling | 0.37 |
 | [[bld_tools_capability_registry]] | downstream | 0.36 |

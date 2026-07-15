@@ -92,7 +92,7 @@ python _tools/cex_score.py --apply bld-config-session-state.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_session_state]] | upstream | 0.38 |
+| [[bld_knowledge_session_state]] | upstream | 0.38 |
 | [[session-state-builder]] | downstream | 0.38 |
 | [[bld_tools_session_state]] | upstream | 0.37 |
 | [[bld_memory_session_state]] | downstream | 0.35 |

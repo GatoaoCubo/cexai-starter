@@ -103,7 +103,7 @@ python _tools/cex_score.py --apply bld-config-toolkit.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p03_ins_toolkit_builder]] | upstream | 0.63 |
-| [[bld_knowledge_card_toolkit]] | upstream | 0.60 |
+| [[bld_knowledge_toolkit]] | upstream | 0.60 |
 | [[toolkit-builder]] | upstream | 0.59 |
 | [[bld_tools_toolkit]] | upstream | 0.56 |
-| [[bld_collaboration_toolkit]] | upstream | 0.56 |
+| [[bld_orchestration_toolkit]] | upstream | 0.56 |

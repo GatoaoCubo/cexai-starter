@@ -87,7 +87,7 @@ python _tools/cex_score.py --apply bld-memory-runtime-state.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[runtime-state-builder]] | related | 0.55 |
-| [[bld_collaboration_runtime_state]] | related | 0.51 |
-| [[bld_knowledge_card_runtime_state]] | upstream | 0.50 |
+| [[bld_orchestration_runtime_state]] | related | 0.51 |
+| [[bld_knowledge_runtime_state]] | upstream | 0.50 |
 | [[bld_memory_session_state]] | sibling | 0.44 |
-| [[bld_collaboration_session_state]] | related | 0.40 |
+| [[bld_orchestration_session_state]] | related | 0.40 |

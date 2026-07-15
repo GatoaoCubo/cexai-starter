@@ -77,8 +77,8 @@ I specify output validator configurations so agents and pipelines can use them.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_constraint_spec]] | sibling | 0.43 |
-| [[bld_collaboration_validation_schema]] | sibling | 0.36 |
+| [[bld_orchestration_constraint_spec]] | sibling | 0.43 |
+| [[bld_orchestration_validation_schema]] | sibling | 0.36 |
 | [[output-validator-builder]] | upstream | 0.34 |
-| [[bld_collaboration_validator]] | sibling | 0.33 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.33 |
+| [[bld_orchestration_validator]] | sibling | 0.33 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.33 |

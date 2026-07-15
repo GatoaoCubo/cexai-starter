@@ -94,8 +94,8 @@ Computer use is screen-level automation where the LLM sees screenshots and issue
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_computer_use]] | sibling | 0.41 |
+| [[bld_knowledge_computer_use]] | sibling | 0.41 |
 | p04_cu_desktop_agent | related | 0.37 |
-| [[bld_collaboration_computer_use]] | downstream | 0.37 |
+| [[bld_orchestration_computer_use]] | downstream | 0.37 |
 | [[p10_lr_computer_use_builder]] | downstream | 0.35 |
 | [[browser-tool-builder]] | related | 0.34 |

@@ -31,7 +31,7 @@ Builder domain: ubiquitous language. Primary nucleus: N04.
 | Tool | Function | Stage |
 |------|----------|-------|
 | `cex_compile.py {path}` | Compile artifact to YAML | F8 COLLABORATE |
-| `cex_doctor.py` | Validate builder integrity (13 ISOs present) | F7 GOVERN |
+| `cex_doctor.py` | Validate builder integrity (12 ISOs present) | F7 GOVERN |
 | `cex_retriever.py --query {intent}` | Find similar domain_vocabulary artifacts | F5 CALL |
 | `cex_score.py {path}` | Peer-review quality scoring | F7 GOVERN |
 | `cex_hooks.py validate {path}` | Frontmatter + field validation | F7 GOVERN |

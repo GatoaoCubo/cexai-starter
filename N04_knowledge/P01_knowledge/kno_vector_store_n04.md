@@ -179,9 +179,9 @@ You are the consuming agent that acts on this vector_store under F3 INJECT.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_vector_store]] | upstream | 0.34 |
+| [[bld_knowledge_vector_store]] | upstream | 0.34 |
 | [[bld_memory_vector_store]] | downstream | 0.33 |
-| [[p01_kc_vector_store]] | upstream | 0.33 |
+| [[kc_vector_store]] | upstream | 0.33 |
 | [[p03_ins_vector_store]] | downstream | 0.32 |
 | p08_adr_vector_db_choice | downstream | 0.30 |
 | [[p09_kc_retriever_domain]] | downstream | 0.30 |

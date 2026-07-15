@@ -83,7 +83,7 @@ Analytical Envy mandate: benchmark each claim against alternatives.
 
 | Substrate | Typed | LLM-agnostic | Audit Trail | M&A Transfer |
 |-----------|-------|--------------|-------------|--------------|
-| **CEXAI typed repo** | Yes (300+ kinds) | Yes (4 runtimes) | git+lineage_record | git clone |
+| **CEXAI typed repo** | Yes (125 kinds) | Yes (4 runtimes) | git+lineage_record | git clone |
 | ChatGPT Teams memory | No | OpenAI-only | Partial | No |
 | Anthropic Projects | No | Anthropic-only | None | No |
 | Notion AI / Glean KB | Schema-light | Vendor-locked | Limited | Partial export |

@@ -109,7 +109,7 @@ An mcp_server is a process that speaks the Model Context Protocol (MCP), exposin
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_mcp_server]] | downstream | 0.53 |
-| [[bld_collaboration_mcp_server]] | downstream | 0.51 |
+| [[bld_orchestration_mcp_server]] | downstream | 0.51 |
 | [[mcp-server-builder]] | downstream | 0.51 |
 | n00_mcp_server_manifest | sibling | 0.46 |
 | [[p03_ins_mcp_server]] | downstream | 0.43 |

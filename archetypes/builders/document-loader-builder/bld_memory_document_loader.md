@@ -68,8 +68,8 @@ but catastrophic at query time.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_document_loader]] | related | 0.43 |
-| [[p01_kc_chunk_strategy]] | upstream | 0.34 |
+| [[bld_knowledge_document_loader]] | related | 0.43 |
+| [[kc_chunk_strategy]] | upstream | 0.34 |
 | [[document_loader-builder]] | related | 0.31 |
-| [[bld_instruction_document_loader]] | related | 0.31 |
+| [[bld_prompt_document_loader]] | related | 0.31 |
 | p08_dir_rag_pipeline | downstream | 0.30 |

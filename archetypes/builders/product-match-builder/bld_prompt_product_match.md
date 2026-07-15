@@ -109,8 +109,8 @@ python _tools/cex_skill_loader.py --verify product_match
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_vision_tool]] | sibling | 0.49 |
-| [[bld_instruction_output_validator]] | sibling | 0.47 |
-| [[bld_instruction_data_contract]] | sibling | 0.45 |
+| [[bld_prompt_vision_tool]] | sibling | 0.49 |
+| [[bld_prompt_output_validator]] | sibling | 0.47 |
+| [[bld_prompt_data_contract]] | sibling | 0.45 |
 | [[bld_schema_product_match]] | upstream | 0.40 |
 | [[bld_output_template_product_match]] | downstream | 0.38 |

@@ -55,7 +55,7 @@ Re-indexing on agent addition/removal is triggered by F8 COLLABORATE in the prod
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[capability-registry-builder]] | upstream | 0.43 |
-| [[bld_collaboration_agent]] | sibling | 0.42 |
-| [[p01_kc_agent]] | upstream | 0.35 |
+| [[bld_orchestration_agent]] | sibling | 0.42 |
+| [[kc_agent]] | upstream | 0.35 |
 | bld_collaboration_agent_computer_interface | sibling | 0.33 |
 | [[bld_architecture_agent]] | upstream | 0.33 |

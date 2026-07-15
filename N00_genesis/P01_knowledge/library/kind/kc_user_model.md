@@ -137,7 +137,7 @@ Fallback chain: `sqlite -> turbopuffer -> lancedb`. pgvector is opt-in via `pgve
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_user_model]] | sibling | 0.54 |
-| [[bld_collaboration_user_model]] | downstream | 0.53 |
+| [[bld_knowledge_user_model]] | sibling | 0.54 |
+| [[bld_orchestration_user_model]] | downstream | 0.53 |
 | [[user-model-builder]] | downstream | 0.53 |
 | [[bld_architecture_user_model]] | downstream | 0.50 |

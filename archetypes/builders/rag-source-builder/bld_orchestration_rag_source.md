@@ -71,8 +71,8 @@ I catalog external URLs with freshness policies and reliability scores — point
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_knowledge_card]] | sibling | 0.41 |
+| [[bld_orchestration_knowledge_card]] | sibling | 0.41 |
 | [[bld_memory_rag_source]] | downstream | 0.38 |
-| [[bld_collaboration_knowledge_index]] | sibling | 0.37 |
-| [[bld_collaboration_citation]] | sibling | 0.36 |
-| [[bld_collaboration_embedding_config]] | sibling | 0.34 |
+| [[bld_orchestration_knowledge_index]] | sibling | 0.37 |
+| [[bld_orchestration_citation]] | sibling | 0.36 |
+| [[bld_orchestration_embedding_config]] | sibling | 0.34 |

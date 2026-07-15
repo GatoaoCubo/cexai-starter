@@ -16,7 +16,7 @@ axioms:
  - "ALWAYS distinguish DORMANT (MetaGPT, AutoGen) from ACTIVE -- legacy stars do not equal current threat"
  - "NEVER claim CEXAI superiority where competitors lead (LC 187M downloads, OpenClaw 363K stars, CrewAI 60% F500)"
  - "NEVER quote DSPy as a peer framework -- it is a prompt-optimization library (used by Hermes GEPA), not an agent platform"
-tldr: "Across 12 architectural dimensions and 8 active competitors, CEXAI uniquely occupies the typed-knowledge governance quadrant: 300+ kinds + 8F mandatory pipeline + 4-runtime sovereignty + zero-token validation -- a combination no competitor can retrofit without rewriting its core."
+tldr: "Across 12 architectural dimensions and 8 active competitors, CEXAI uniquely occupies the typed-knowledge governance quadrant: 125 kinds + 8F mandatory pipeline + 4-runtime sovereignty + zero-token validation -- a combination no competitor can retrofit without rewriting its core."
 8f: "F3_inject"
 keywords: [feature matrix, governance vacuum, runtime sovereignty, typed knowledge, structural score, mode b]
 related:
@@ -39,7 +39,7 @@ AG=AutoGen (DORMANT), MG=MetaGPT (DORMANT).
 
 | # | Dimension | CEXAI | LC | CR | OA | PA | LI | HE | AG | MG |
 |---|-----------|-------|----|----|----|----|----|----|----|----|
-| 1 | Typed artifact taxonomy | 300+ kinds | no | no | no | I/O only | no | no | no | 5 fixed roles |
+| 1 | Typed artifact taxonomy | 125 kinds | no | no | no | I/O only | no | no | no | 5 fixed roles |
 | 2 | Mandatory reasoning pipeline | 8F | no | no | no | no | no | no | no | SOP fixed |
 | 3 | Quality scoring system | 9.0 floor, 5D | LangSmith opt-in | none | none | pass/fail | none | none | none | none |
 | 4 | Multi-runtime sovereignty | 4 unchanged | 2 (Py/JS) | Py | Py | Py 15+ models | Py | Py | Py | Py |
@@ -59,8 +59,8 @@ closest on row 4 but ships no kind taxonomy and locks observability into Logfire
 
 | # | Gap | Why retrofit fails | WP ref |
 |---|-----|--------------------|--------|
-| G1 | 301-kind type system | Requires re-architecting every output as typed artifact with frontmatter+schema+registry. LC/CR/OA/MG ship code-as-output; PA types I/O only. | 2.1 |
-| G2 | Builder pattern (3,646 ISOs) | 12 instruction files x 300+ kinds = pre-compiled domain knowledge. No competitor has per-kind teaching units. | 2.1 |
+| G1 | 125-kind type system | Requires re-architecting every output as typed artifact with frontmatter+schema+registry. LC/CR/OA/MG ship code-as-output; PA types I/O only. | 2.1 |
+| G2 | Builder pattern (1,428 ISOs) | 12 instruction files x 119 builders = pre-compiled domain knowledge. No competitor has per-kind teaching units. | 2.1 |
 | G3 | Mode A/B decomposition | Splits planning (Opus F1-F4) from generation (Haiku/Flash/Ollama F6) via prompt_package. Competitors assume one model per agent run. | 3.3, 6.2 |
 | G4 | Sin-driven nuclei | Decision heuristics per nucleus (Envy seeks data, Wrath blocks gates, Greed maximizes revenue). CrewAI roles are ad-hoc strings. | 4 |
 | G5 | Zero-token structural score | 10 deterministic Python checks replace LLM-as-judge. LangSmith/Logfire have token-cost incentive against this. | 6.1, 6.3 |
@@ -71,7 +71,7 @@ closest on row 4 but ships no kind taxonomy and locks observability into Logfire
 |---|------------------|---------------------|----------------|--------------|
 | N1 | 1.10 Knowledge Entropy | Hermes (skills + L3) | Skills untyped MD; L3 opaque; no cross-instance protocol | Typed kinds + git + frontmatter = portable; F8 writes corpus |
 | N2 | 1.4 Drift + 1.8 Sycophancy | LangSmith LLM-as-judge | Self-scoring = sycophancy; pay-per-trace disincentive; optional | quality:null + F7 GOVERN + cross-nucleus peer review + F7c COUNCIL |
-| N3 | 1.9 Multi-Agent Coordination | PA (typed I/O) | Types stop at function signatures; PA agents invent terms; no shared registry | 301-kind registry + p03_pc_cex_universal compiler enforces vocab |
+| N3 | 1.9 Multi-Agent Coordination | PA (typed I/O) | Types stop at function signatures; PA agents invent terms; no shared registry | 125-kind registry + p03_pc_cex_universal compiler enforces vocab |
 | N4 | 1.6 Vendor Lock-in | PA (15+ providers) | Artifacts do not run unchanged on Ollama; Logfire SaaS lock; LC=2 runtimes | Same 8F+kinds+gates on Cl/Co/Ge/Ol; Mode B prompt_package portable |
 
 ## 4. Adoption Landscape (Apr 24, 2026)

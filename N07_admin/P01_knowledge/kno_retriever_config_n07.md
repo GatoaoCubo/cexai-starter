@@ -34,7 +34,7 @@ related:
 ---
 <!-- 8F TRACE
 F1 CONSTRAIN: kind=retriever_config, pillar=P01, max_bytes=2048, id=p01_retr_n07
-F2 BECOME: retriever-config-builder (13 ISOs loaded). Identity: precision retriever architect.
+F2 BECOME: retriever-config-builder (12 ISOs loaded). Identity: precision retriever architect.
 F3 INJECT: schema + output_template + examples + memory. Template match: 100%.
 F4 REASON: hybrid ratio sparse-dominant (kind/nucleus names are exact keywords), per-doctype top_k, cross-encoder rerank on 20, cache taxonomy + recent handoffs.
 F5 CALL: Write + cex_compile.py ready.
@@ -106,7 +106,7 @@ Applied before retrieval to reduce candidate space:
 | nucleus | enum (n01..n07) | Handoffs, signals, KCs |
 | mission | string match | Handoffs, decision manifests |
 | date_range | ISO 8601 window | Signals (last wave only by default) |
-| kind | enum (300 kinds) | KCs, taxonomy lookups |
+| kind | enum (125 kinds) | KCs, taxonomy lookups |
 | status | enum (pending, complete, failed) | Signals |
 
 Filter precedence: nucleus > mission > date_range > kind > status.
@@ -142,6 +142,6 @@ Filters are pre-retrieval (applied to index, not post-rerank).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p04_retr_n01 | downstream | 0.35 |
-| [[bld_knowledge_card_retriever_config]] | related | 0.34 |
+| [[bld_knowledge_retriever_config]] | related | 0.34 |
 | [[p01_retr_n03]] | sibling | 0.31 |
 | [[p11_qg_retriever_config]] | downstream | 0.31 |

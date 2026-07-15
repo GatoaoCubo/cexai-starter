@@ -49,6 +49,6 @@ Does NOT handle content monetization strategies (Content Team) or pricing page U
 |----------|-------------|-------|
 | bld_collaboration_integration_guide | sibling | 0.37 |
 | bld_collaboration_cohort_analysis | sibling | 0.36 |
-| [[bld_collaboration_white_label_config]] | sibling | 0.36 |
+| [[bld_orchestration_white_label_config]] | sibling | 0.36 |
 | bld_collaboration_reward_model | sibling | 0.35 |
 | bld_collaboration_ab_test_config | sibling | 0.34 |

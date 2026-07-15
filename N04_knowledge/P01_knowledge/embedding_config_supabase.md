@@ -117,6 +117,6 @@ $$;
 |----------|-------------|-------|
 | p01_kc_supabase_vectors | related | 0.69 |
 | p01_kc_supabase_pgvector_rag_setup | related | 0.60 |
-| [[bld_collaboration_embedding_config]] | downstream | 0.37 |
+| [[bld_orchestration_embedding_config]] | downstream | 0.37 |
 | [[vector-store-builder]] | downstream | 0.35 |
-| [[p01_kc_embedding_config]] | related | 0.34 |
+| [[kc_embedding_config]] | related | 0.34 |

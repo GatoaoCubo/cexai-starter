@@ -72,8 +72,8 @@ action_prompt    --produces-->  validated_output
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_action_prompt]] | upstream | 0.45 |
+| [[kc_action_prompt]] | upstream | 0.45 |
 | [[bld_architecture_system_prompt]] | sibling | 0.41 |
 | [[action-prompt-builder]] | upstream | 0.41 |
-| [[bld_knowledge_card_action_prompt]] | upstream | 0.40 |
+| [[bld_knowledge_action_prompt]] | upstream | 0.40 |
 | bld_architecture_chain | sibling | 0.40 |

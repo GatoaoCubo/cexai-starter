@@ -90,7 +90,7 @@ The permission-builder receives a **resource or artifact description** and produ
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[permission-builder]] | downstream | 0.52 |
-| [[bld_collaboration_permission]] | downstream | 0.42 |
-| [[bld_knowledge_card_permission]] | upstream | 0.41 |
+| [[bld_orchestration_permission]] | downstream | 0.42 |
+| [[bld_knowledge_permission]] | upstream | 0.41 |
 | [[bld_memory_permission]] | downstream | 0.37 |
 | [[bld_schema_permission]] | downstream | 0.37 |

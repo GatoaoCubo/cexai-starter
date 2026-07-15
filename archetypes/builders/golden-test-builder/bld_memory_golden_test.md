@@ -55,7 +55,7 @@ Applies when: an artifact has achieved >= 9.5 quality and should serve as a stab
 ## Builder Context
 
 This ISO operates within the `golden-test-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -105,5 +105,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_golden_test_builder.md
 | [[p11_fb_golden_test]] | downstream | 0.42 |
 | p11_fb_ab_test_config | downstream | 0.38 |
 | [[golden-test-builder]] | upstream | 0.38 |
-| [[bld_knowledge_card_golden_test]] | upstream | 0.37 |
+| [[bld_knowledge_golden_test]] | upstream | 0.37 |
 | p11_fb_quality_gate | downstream | 0.35 |

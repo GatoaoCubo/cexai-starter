@@ -105,8 +105,8 @@ Deprecated: {{deprecated_value_list_with_reason_or_"none"}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_enum_def]] | upstream | 0.43 |
+| [[bld_knowledge_enum_def]] | upstream | 0.43 |
 | p06_enum_def | downstream | 0.42 |
 | [[enum-def-builder]] | downstream | 0.41 |
-| [[bld_collaboration_enum_def]] | downstream | 0.39 |
+| [[bld_orchestration_enum_def]] | downstream | 0.39 |
 | [[bld_schema_enum_def]] | downstream | 0.38 |

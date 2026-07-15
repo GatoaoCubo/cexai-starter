@@ -83,7 +83,7 @@ python _tools/cex_score.py --apply bld-config-tagline.md
 ## Builder Context
 
 This ISO operates within the `tagline-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.

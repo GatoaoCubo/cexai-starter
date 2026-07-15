@@ -97,7 +97,7 @@ quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_data_contract]] | upstream | 0.55 |
+| [[kc_data_contract]] | upstream | 0.55 |
 | [[bld_memory_data_contract]] | downstream | 0.45 |
 | [[bld_rules_data_contract]] | downstream | 0.44 |
 | [[bld_architecture_data_contract]] | downstream | 0.41 |

@@ -40,7 +40,7 @@ P01 Knowledge
 
 ## Hierarchy
 ```
-N00_genesis core vocabulary (CEX universal terms: 300 kinds, 8F, 12 pillars)
+N00_genesis core vocabulary (CEX universal terms: 125 kinds, 8F, 12 pillars)
     |
     +-- dv_{nucleus}_vocabulary (per-nucleus domain extension)
     |       +-- dv_n01_vocabulary (intelligence terms)
@@ -66,7 +66,7 @@ domain_vocabulary is the target artifact for the F2b SPEAK sub-step:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_domain_vocabulary]] | upstream | 0.63 |
+| [[kc_domain_vocabulary]] | upstream | 0.63 |
 | [[domain-vocabulary-builder]] | upstream | 0.49 |
 | [[bld_memory_domain_vocabulary]] | downstream | 0.48 |
 | [[bld_kc_domain_vocabulary]] | upstream | 0.48 |

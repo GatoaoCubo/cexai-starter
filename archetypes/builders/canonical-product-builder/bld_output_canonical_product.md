@@ -86,7 +86,7 @@ _conflicts: {{ per-field cross-source disagreement, surfaced for human review }}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_canonical_product]] | downstream | 0.39 |
-| [[bld_instruction_canonical_product]] | related | 0.37 |
+| [[bld_prompt_canonical_product]] | related | 0.37 |
 | [[kc_canonical_product]] | upstream | 0.36 |
 | [[canonical-product-builder]] | downstream | 0.35 |
 | [[bld_qg_canonical_product]] | downstream | 0.30 |

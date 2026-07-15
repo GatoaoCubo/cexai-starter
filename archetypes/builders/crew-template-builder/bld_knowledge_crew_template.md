@@ -66,7 +66,7 @@ CrewAI Process introduced the `sequential` / `hierarchical` topology distinction
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[crew-template-builder]] | downstream | 0.62 |
-| [[bld_instruction_crew_template]] | downstream | 0.51 |
+| [[bld_prompt_crew_template]] | downstream | 0.51 |
 | p01_kc_crewai_patterns | sibling | 0.45 |
 | [[bld_schema_crew_template]] | downstream | 0.40 |
-| [[bld_knowledge_card_role_assignment]] | sibling | 0.39 |
+| [[bld_knowledge_role_assignment]] | sibling | 0.39 |

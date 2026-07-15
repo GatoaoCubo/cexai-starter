@@ -114,6 +114,6 @@ for the human-readable layer.
 |----------|-------------|-------|
 | [[ontology-builder]] | related | 0.47 |
 | n00_ontology_manifest | sibling | 0.43 |
-| [[bld_collaboration_ontology]] | downstream | 0.42 |
+| [[bld_orchestration_ontology]] | downstream | 0.42 |
 | [[bld_architecture_ontology]] | downstream | 0.42 |
-| [[bld_knowledge_card_ontology]] | sibling | 0.39 |
+| [[bld_knowledge_ontology]] | sibling | 0.39 |

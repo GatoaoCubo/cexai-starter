@@ -86,8 +86,8 @@ python _tools/cex_score.py --apply bld-memory-session-state.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_session_state]] | related | 0.54 |
+| [[bld_orchestration_session_state]] | related | 0.54 |
 | [[session-state-builder]] | related | 0.53 |
 | [[bld_memory_runtime_state]] | sibling | 0.49 |
-| [[p01_kc_session_state]] | related | 0.45 |
+| [[kc_session_state]] | related | 0.45 |
 | [[bld_architecture_session_state]] | upstream | 0.44 |

@@ -165,7 +165,7 @@ INPUT: session_state YAML content
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[session-state-builder]] | downstream | 0.46 |
-| [[bld_knowledge_card_session_state]] | upstream | 0.46 |
+| [[bld_knowledge_session_state]] | upstream | 0.46 |
 | [[bld_architecture_session_state]] | downstream | 0.43 |
 | [[bld_schema_session_state]] | downstream | 0.39 |
-| [[bld_collaboration_session_state]] | downstream | 0.37 |
+| [[bld_orchestration_session_state]] | downstream | 0.37 |

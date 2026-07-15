@@ -50,7 +50,7 @@ Zero tolerance for vocabulary drift once this KC is loaded.
 | anti_pattern | Common response to recurring problem that is ineffective or counterproductive | Self-scoring (quality != null), placeholder text, invented kinds | Treating anti-patterns as optional guidelines |
 | architectural_decision_record | Document capturing why an architectural decision was made (Michael Nygard, 2011) | decision_record artifacts in P08; permanent record of WHY, not just WHAT | Changing architecture without documenting rationale |
 | convention_over_configuration | Sensible defaults reduce need for explicit configuration (Rails principle) | CEX: kind -> pillar -> directory follows convention; no config needed | Requiring explicit directory for every artifact |
-| ubiquitous_language | Shared vocabulary between domain experts and developers (DDD, Evans 2003) | kc_{domain}_vocabulary.md per nucleus; all LLM-to-LLM comms use canonical terms | Using "research card" instead of [[p01_kc_knowledge_card|knowledge_card]] |
+| ubiquitous_language | Shared vocabulary between domain experts and developers (DDD, Evans 2003) | kc_{domain}_vocabulary.md per nucleus; all LLM-to-LLM comms use canonical terms | Using "research card" instead of [[kc_knowledge_card|knowledge_card]] |
 | bounded_context | Explicit boundary within which a model applies consistently (DDD) | N03 boundary: artifact construction, schema, quality enforcement. N07 boundary: orchestration | N03 building orchestration artifacts (out of bounded context) |
 | aggregate_root | Cluster of domain objects treated as a unit for data changes (DDD) | Kind+Pillar+Builder is the aggregate root for artifact construction | Treating kind, pillar, builder as independent entities |
 | regression | Defect introduced by a change that previously worked correctly | regression_check_n03.md: quality drop >= 0.5 from baseline | Accepting quality drops as "normal variation" |
@@ -83,7 +83,7 @@ These terms are defined in N00_genesis and must not be redefined in this KC:
 ## Source Hierarchy
 
 When a term conflict occurs, resolve in this order:
-1. p03_pc_cex_universal.md ([[p03_pc_cex_universal|prompt_compiler]] -- 300 kinds, highest authority)
+1. p03_pc_cex_universal.md ([[p03_pc_cex_universal|prompt_compiler]] -- 125 kinds, highest authority)
 2. spec_metaphor_dictionary.md (Industry term column)
 3. N00_genesis/P01_knowledge/kc_*.md (canonical N00 definitions)
 4. This file (N03 domain extensions)

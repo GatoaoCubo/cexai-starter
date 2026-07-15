@@ -66,5 +66,5 @@ Recommended cadence: after each WAVE dispatch cycle.
 | [[capability-registry-builder]] | upstream | 0.40 |
 | n00_capability_registry_manifest | upstream | 0.33 |
 | bld_architecture_kind | upstream | 0.31 |
-| [[bld_collaboration_capability_registry]] | downstream | 0.29 |
+| [[bld_orchestration_capability_registry]] | downstream | 0.29 |
 | [[bld_output_template_capability_registry]] | upstream | 0.29 |

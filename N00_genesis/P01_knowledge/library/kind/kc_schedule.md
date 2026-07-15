@@ -100,5 +100,5 @@ A schedule defines WHEN a workflow or agent_group task runs — via cron express
 | [[schedule-builder]] | related | 0.51 |
 | [[p11_qg_schedule]] | upstream | 0.50 |
 | schedule | related | 0.48 |
-| [[bld_knowledge_card_schedule]] | sibling | 0.45 |
+| [[bld_knowledge_schedule]] | sibling | 0.45 |
 | [[bld_schema_schedule]] | upstream | 0.45 |

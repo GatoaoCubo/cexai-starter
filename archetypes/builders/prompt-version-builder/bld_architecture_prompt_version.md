@@ -89,4 +89,4 @@ python _tools/cex_score.py --apply bld-architecture-prompt-version.md
 | n00_prompt_version_manifest | upstream | 0.52 |
 | [[p11_qg_prompt_version]] | downstream | 0.45 |
 | [[bld_output_template_prompt_version]] | upstream | 0.44 |
-| [[p01_kc_prompt_version]] | upstream | 0.44 |
+| [[kc_prompt_version]] | upstream | 0.44 |

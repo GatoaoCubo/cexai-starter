@@ -75,8 +75,8 @@ validator (P06)     --depends-->  formatter
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_formatter]] | downstream | 0.65 |
+| [[bld_orchestration_formatter]] | downstream | 0.65 |
 | [[formatter-builder]] | upstream | 0.64 |
-| [[p01_kc_formatter]] | upstream | 0.56 |
+| [[kc_formatter]] | upstream | 0.56 |
 | n00_formatter_manifest | upstream | 0.53 |
 | p05_fmt_artifact_creation_report | upstream | 0.53 |

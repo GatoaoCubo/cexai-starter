@@ -65,6 +65,6 @@ When primary retrieval returns nothing above `score_threshold`:
 |----------|-------------|-------|
 | [[n04_rs_assimilation]] | upstream | 0.40 |
 | [[p01_chunk_assimilation_n04]] | sibling | 0.34 |
-| [[p01_kc_retriever]] | related | 0.32 |
+| [[kc_retriever]] | related | 0.32 |
 | [[retriever-builder]] | related | 0.30 |
 | p10_bi_bm25_knowledge | related | 0.28 |

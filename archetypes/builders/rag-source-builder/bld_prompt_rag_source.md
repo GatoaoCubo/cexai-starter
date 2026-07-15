@@ -139,6 +139,6 @@ Body (must stay within 1024 bytes total):
 |----------|-------------|-------|
 | [[rag-source-builder]] | related | 0.46 |
 | [[bld_architecture_rag_source]] | downstream | 0.42 |
-| [[bld_knowledge_card_rag_source]] | related | 0.40 |
+| [[bld_knowledge_rag_source]] | related | 0.40 |
 | [[p11_qg_rag_source]] | downstream | 0.40 |
-| [[p01_kc_rag_source]] | related | 0.38 |
+| [[kc_rag_source]] | related | 0.38 |

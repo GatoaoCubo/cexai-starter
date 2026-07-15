@@ -83,5 +83,5 @@ I produce compact, confidence-scored entity fact records so agents can ground th
 |----------|-------------|-------|
 | [[entity-memory-builder]] | upstream | 0.53 |
 | [[bld_architecture_entity_memory]] | upstream | 0.46 |
-| [[bld_knowledge_card_entity_memory]] | upstream | 0.45 |
-| [[p01_kc_entity_memory]] | upstream | 0.45 |
+| [[bld_knowledge_entity_memory]] | upstream | 0.45 |
+| [[kc_entity_memory]] | upstream | 0.45 |

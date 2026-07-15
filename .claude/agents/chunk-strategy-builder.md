@@ -87,7 +87,7 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[chunk-strategy-builder]] | related | 0.42 |
-| [[bld_collaboration_chunk_strategy]] | related | 0.36 |
+| [[bld_orchestration_chunk_strategy]] | related | 0.36 |
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.30 |
 | [[bld_config_chunk_strategy]] | related | 0.30 |

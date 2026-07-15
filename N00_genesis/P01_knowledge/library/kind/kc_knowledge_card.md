@@ -110,6 +110,6 @@ A knowledge_card is the foundational knowledge unit in CEX — a distilled, stat
 |----------|-------------|-------|
 | p01_kc_pillar_brief_p01_knowledge_en | sibling | 0.36 |
 | p01_kc_context_doc | sibling | 0.34 |
-| [[bld_collaboration_knowledge_card]] | downstream | 0.32 |
+| [[bld_orchestration_knowledge_card]] | downstream | 0.32 |
 | n00_knowledge_card_manifest | sibling | 0.31 |
 | p06_td_cex_artifact_type_n03 | downstream | 0.26 |

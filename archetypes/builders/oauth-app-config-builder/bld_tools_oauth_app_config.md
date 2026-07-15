@@ -52,5 +52,5 @@ related:
 | bld_tools_vad_config | sibling | 0.32 |
 | bld_tools_prosody_config | sibling | 0.29 |
 | bld_tools_ab_test_config | sibling | 0.28 |
-| [[bld_collaboration_oauth_app_config]] | downstream | 0.27 |
+| [[bld_orchestration_oauth_app_config]] | downstream | 0.27 |
 | [[oauth-app-config-builder]] | downstream | 0.26 |

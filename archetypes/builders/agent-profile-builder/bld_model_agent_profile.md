@@ -66,8 +66,8 @@ The agent_profile-builder constructs persona frameworks for autonomous agents, d
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | downstream | 0.49 |
-| [[bld_knowledge_card_agent]] | upstream | 0.45 |
-| [[p01_kc_agent]] | related | 0.44 |
+| [[bld_orchestration_agent]] | downstream | 0.49 |
+| [[bld_knowledge_agent]] | upstream | 0.45 |
+| [[kc_agent]] | related | 0.44 |
 | [[agent-builder]] | sibling | 0.43 |
 | [[bld_architecture_agent]] | downstream | 0.43 |

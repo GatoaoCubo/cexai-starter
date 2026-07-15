@@ -58,6 +58,6 @@ Does NOT produce workflow DAGs (handled by `dag-builder`), dispatch rules (handl
 |----------|-------------|-------|
 | [[team-charter-builder]] | related | 0.46 |
 | [[kc_orchestration_vocabulary]] | upstream | 0.37 |
-| [[bld_knowledge_card_team_charter]] | upstream | 0.34 |
+| [[bld_knowledge_team_charter]] | upstream | 0.34 |
 | [[bld_architecture_team_charter]] | upstream | 0.31 |
 | [[bld_tools_team_charter]] | upstream | 0.31 |

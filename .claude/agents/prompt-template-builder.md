@@ -88,6 +88,6 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[system-prompt-builder]] | related | 0.34 |
 | p03_sp_builder_nucleus | related | 0.32 |
-| [[bld_collaboration_prompt_template]] | related | 0.32 |
+| [[bld_orchestration_prompt_template]] | related | 0.32 |
 | kind-builder | related | 0.31 |
 | p01_kc_pillar_brief_p03_prompt_en | related | 0.31 |

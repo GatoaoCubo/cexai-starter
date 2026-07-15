@@ -72,5 +72,5 @@ lens            --signals-->   analysis_result
 | [[lens-builder]] | upstream | 0.70 |
 | [[p03_ins_lens]] | upstream | 0.60 |
 | [[bld_memory_lens]] | downstream | 0.59 |
-| [[bld_knowledge_card_lens]] | upstream | 0.57 |
-| [[bld_collaboration_lens]] | upstream | 0.57 |
+| [[bld_knowledge_lens]] | upstream | 0.57 |
+| [[bld_orchestration_lens]] | upstream | 0.57 |

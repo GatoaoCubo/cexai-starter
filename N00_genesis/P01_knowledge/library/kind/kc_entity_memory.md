@@ -103,6 +103,6 @@ rag_source, context_doc --> [entity_memory] --> knowledge_index, agent_card
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_entity_memory]] | downstream | 0.56 |
-| [[bld_knowledge_card_entity_memory]] | sibling | 0.51 |
+| [[bld_orchestration_entity_memory]] | downstream | 0.56 |
+| [[bld_knowledge_entity_memory]] | sibling | 0.51 |
 | [[entity-memory-builder]] | related | 0.51 |

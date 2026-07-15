@@ -136,8 +136,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_context_window_config]] | related | 0.50 |
-| [[bld_knowledge_card_context_window_config]] | upstream | 0.43 |
-| [[bld_collaboration_context_window_config]] | downstream | 0.43 |
+| [[kc_context_window_config]] | related | 0.50 |
+| [[bld_knowledge_context_window_config]] | upstream | 0.43 |
+| [[bld_orchestration_context_window_config]] | downstream | 0.43 |
 | n00_context_window_config_manifest | related | 0.38 |
 | [[system-prompt-builder]] | sibling | 0.37 |

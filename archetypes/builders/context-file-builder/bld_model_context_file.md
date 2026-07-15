@@ -139,7 +139,7 @@ Body: instructions only. Total body under 8192 bytes. quality: null always.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_context_file]] | upstream | 0.58 |
-| [[bld_knowledge_card_context_file]] | related | 0.56 |
+| [[bld_knowledge_context_file]] | related | 0.56 |
 | n00_context_file_manifest | related | 0.55 |
-| [[bld_collaboration_context_file]] | related | 0.50 |
+| [[bld_orchestration_context_file]] | related | 0.50 |
 | [[bld_memory_context_file]] | downstream | 0.49 |

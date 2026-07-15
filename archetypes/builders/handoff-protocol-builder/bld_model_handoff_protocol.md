@@ -128,8 +128,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_handoff_protocol]] | downstream | 0.62 |
+| [[bld_orchestration_handoff_protocol]] | downstream | 0.62 |
 | [[bld_architecture_handoff_protocol]] | downstream | 0.50 |
 | [[p10_lr_handoff_protocol_builder]] | downstream | 0.46 |
-| [[bld_knowledge_card_handoff_protocol]] | related | 0.45 |
-| [[p01_kc_handoff_protocol]] | related | 0.45 |
+| [[bld_knowledge_handoff_protocol]] | related | 0.45 |
+| [[kc_handoff_protocol]] | related | 0.45 |

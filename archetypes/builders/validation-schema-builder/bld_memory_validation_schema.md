@@ -87,7 +87,7 @@ python _tools/cex_score.py --apply bld-memory-validation-schema.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[validation-schema-builder]] | upstream | 0.49 |
-| [[bld_knowledge_card_validation_schema]] | upstream | 0.43 |
-| [[bld_collaboration_validation_schema]] | upstream | 0.40 |
+| [[bld_knowledge_validation_schema]] | upstream | 0.43 |
+| [[bld_orchestration_validation_schema]] | upstream | 0.40 |
 | [[p11_qg_validation_schema]] | upstream | 0.38 |
-| [[p01_kc_validation_schema]] | upstream | 0.37 |
+| [[kc_validation_schema]] | upstream | 0.37 |

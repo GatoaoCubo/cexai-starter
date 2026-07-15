@@ -61,5 +61,5 @@ related:
 | p08_adr_opportunity_matrix_kind | upstream | 0.55 |
 | [[roi-calculator-builder]] | sibling | 0.45 |
 | [[opportunity-matrix-builder]] | downstream | 0.42 |
-| [[bld_instruction_opportunity_matrix]] | downstream | 0.38 |
+| [[bld_prompt_opportunity_matrix]] | downstream | 0.38 |
 | [[p11_qg_opportunity_matrix]] | downstream | 0.35 |

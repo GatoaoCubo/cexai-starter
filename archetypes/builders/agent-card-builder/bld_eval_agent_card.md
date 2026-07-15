@@ -134,5 +134,5 @@ WHY THIS IS GOLDEN:
 | p11_qg_dispatch_rule | sibling | 0.36 |
 | [[agent-card-builder]] | upstream | 0.34 |
 | [[p11_qg_agent]] | sibling | 0.34 |
-| [[bld_collaboration_agent_card]] | upstream | 0.33 |
+| [[bld_orchestration_agent_card]] | upstream | 0.33 |
 | p11_qg_quality_gate | sibling | 0.33 |

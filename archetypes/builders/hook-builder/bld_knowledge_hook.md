@@ -83,8 +83,8 @@ Hooks are event interception points that execute code before or after system eve
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_hook]] | downstream | 0.59 |
+| [[bld_prompt_hook]] | downstream | 0.59 |
 | [[hook-builder]] | downstream | 0.56 |
-| [[bld_collaboration_hook]] | downstream | 0.54 |
+| [[bld_orchestration_hook]] | downstream | 0.54 |
 | bld_knowledge_card_hook_config | sibling | 0.48 |
 | [[p10_lr_hook_builder]] | downstream | 0.48 |

@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | n00_checkpoint_manifest | related | 0.34 |
 | [[checkpoint-builder]] | related | 0.33 |
 | [[bld_architecture_checkpoint]] | related | 0.33 |
-| [[bld_collaboration_checkpoint]] | related | 0.32 |
+| [[bld_orchestration_checkpoint]] | related | 0.32 |
 | kind-builder | related | 0.31 |

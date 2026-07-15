@@ -67,7 +67,7 @@ I ensure every prompt component has an allocated budget within model limits.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_collaboration_model_card | sibling | 0.36 |
-| [[bld_collaboration_prompt_version]] | sibling | 0.36 |
-| [[bld_collaboration_prompt_template]] | sibling | 0.35 |
-| [[bld_collaboration_action_prompt]] | sibling | 0.35 |
+| [[bld_orchestration_prompt_version]] | sibling | 0.36 |
+| [[bld_orchestration_prompt_template]] | sibling | 0.35 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.35 |
 | [[context-window-config-builder]] | upstream | 0.34 |

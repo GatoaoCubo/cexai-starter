@@ -64,8 +64,8 @@ None — independent builder (layer 0). Citations reference external sources.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_knowledge_card]] | sibling | 0.40 |
-| [[bld_collaboration_rag_source]] | sibling | 0.39 |
+| [[bld_orchestration_knowledge_card]] | sibling | 0.40 |
+| [[bld_orchestration_rag_source]] | sibling | 0.39 |
 | bld_collaboration_context_doc | sibling | 0.34 |
 | [[citation-builder]] | upstream | 0.31 |
 | bld_collaboration_builder | sibling | 0.29 |

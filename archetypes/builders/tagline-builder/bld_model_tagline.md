@@ -140,7 +140,7 @@ taglines:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_output_template_tagline]] | downstream | 0.54 |
-| [[bld_instruction_tagline]] | related | 0.53 |
-| [[bld_collaboration_tagline]] | downstream | 0.52 |
+| [[bld_prompt_tagline]] | related | 0.53 |
+| [[bld_orchestration_tagline]] | downstream | 0.52 |
 | n00_tagline_manifest | related | 0.50 |
 | [[kc_tagline]] | upstream | 0.49 |

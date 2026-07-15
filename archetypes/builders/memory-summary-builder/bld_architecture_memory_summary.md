@@ -80,7 +80,7 @@ freshness_tracker  --weights-->    output_buffer
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-summary-builder]] | downstream | 0.53 |
-| [[bld_collaboration_memory_summary]] | downstream | 0.41 |
-| [[bld_instruction_memory_summary]] | upstream | 0.35 |
+| [[bld_orchestration_memory_summary]] | downstream | 0.41 |
+| [[bld_prompt_memory_summary]] | upstream | 0.35 |
 | [[p11_qg_memory_summary]] | downstream | 0.35 |
-| [[p01_kc_memory_summary]] | downstream | 0.33 |
+| [[kc_memory_summary]] | downstream | 0.33 |

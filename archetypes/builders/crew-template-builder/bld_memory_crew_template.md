@@ -45,8 +45,8 @@ Treat crew_template as a pure blueprint: reference role_assignment by id, declar
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_crew_template]] | upstream | 0.45 |
+| [[bld_prompt_crew_template]] | upstream | 0.45 |
 | [[crew-template-builder]] | downstream | 0.39 |
 | [[p11_qg_crew_template]] | downstream | 0.39 |
-| [[bld_knowledge_card_crew_template]] | upstream | 0.28 |
+| [[bld_knowledge_crew_template]] | upstream | 0.28 |
 | [[bld_schema_crew_template]] | upstream | 0.26 |

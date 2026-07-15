@@ -93,5 +93,5 @@ Five duties bind any agent that emits an artifact:
 | [[product-match-builder]] | related | 0.33 |
 | p03_sp_builder_nucleus | related | 0.31 |
 | kind-builder | related | 0.31 |
-| [[bld_collaboration_product_match]] | related | 0.30 |
+| [[bld_orchestration_product_match]] | related | 0.30 |
 | p01_kc_pillar_brief_p04_tools_en | related | 0.27 |

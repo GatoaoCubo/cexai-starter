@@ -72,7 +72,7 @@ Action prompts are task-focused messages injected at runtime that specify WHAT a
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[action-prompt-builder]] | downstream | 0.49 |
-| [[p01_kc_action_prompt]] | sibling | 0.40 |
-| [[bld_instruction_action_prompt]] | downstream | 0.38 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.37 |
+| [[kc_action_prompt]] | sibling | 0.40 |
+| [[bld_prompt_action_prompt]] | downstream | 0.38 |
+| [[bld_orchestration_action_prompt]] | downstream | 0.37 |
 | [[bld_architecture_action_prompt]] | downstream | 0.34 |

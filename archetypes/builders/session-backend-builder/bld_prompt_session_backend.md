@@ -101,8 +101,8 @@ python _tools/cex_skill_loader.py --verify session
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_memory_scope]] | sibling | 0.52 |
+| [[bld_prompt_memory_scope]] | sibling | 0.52 |
 | bld_instruction_trace_config | sibling | 0.46 |
 | [[session-backend-builder]] | downstream | 0.44 |
-| [[bld_instruction_retriever_config]] | sibling | 0.44 |
+| [[bld_prompt_retriever_config]] | sibling | 0.44 |
 | bld_instruction_context_doc | sibling | 0.44 |

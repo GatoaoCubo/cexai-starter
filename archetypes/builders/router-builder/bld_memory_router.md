@@ -87,6 +87,6 @@ python _tools/cex_score.py --apply bld-memory-router.md
 |----------|-------------|-------|
 | [[router-builder]] | upstream | 0.56 |
 | [[p03_ins_router]] | upstream | 0.52 |
-| [[bld_collaboration_router]] | upstream | 0.48 |
+| [[bld_orchestration_router]] | upstream | 0.48 |
 | [[bld_architecture_router]] | upstream | 0.47 |
 | [[p11_qg_router]] | downstream | 0.46 |

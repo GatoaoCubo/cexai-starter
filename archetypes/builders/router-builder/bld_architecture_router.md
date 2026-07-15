@@ -70,7 +70,7 @@ router          --depends-->     dispatch_rule
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[router-builder]] | upstream | 0.66 |
-| [[bld_collaboration_router]] | upstream | 0.55 |
+| [[bld_orchestration_router]] | upstream | 0.55 |
 | [[bld_memory_router]] | downstream | 0.54 |
-| [[bld_knowledge_card_router]] | upstream | 0.50 |
+| [[bld_knowledge_router]] | upstream | 0.50 |
 | [[p03_ins_router]] | upstream | 0.50 |

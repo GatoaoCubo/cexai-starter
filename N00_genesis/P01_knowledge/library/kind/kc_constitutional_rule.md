@@ -101,7 +101,7 @@ constitutional_rule (hard constraint, bypass_policy: none, core: true)
 | max_bytes | 2048 |
 | llm_function | CONSTRAIN |
 | core | true (applies to all agents, cannot be scoped) |
-| Builder | constitutional-rule-builder (13 ISOs) |
+| Builder | constitutional-rule-builder (12 ISOs) |
 | Nucleus | N07 (Orchestrator) -- core rules set at orchestrator level |
 | Publish threshold | >= 8.0 (higher than standard due to safety criticality) |
 | Pattern source | Bai et al. Constitutional AI (2022), Anthropic Usage Policy |
@@ -111,6 +111,6 @@ constitutional_rule (hard constraint, bypass_policy: none, core: true)
 |----------|-------------|-------|
 | [[bld_architecture_constitutional_rule]] | sibling | 0.56 |
 | [[bld_manifest_constitutional_rule]] | sibling | 0.54 |
-| [[bld_knowledge_card_constitutional_rule]] | sibling | 0.52 |
+| [[bld_knowledge_constitutional_rule]] | sibling | 0.52 |
 | [[bld_memory_constitutional_rule]] | sibling | 0.46 |
-| [[bld_instruction_constitutional_rule]] | downstream | 0.45 |
+| [[bld_prompt_constitutional_rule]] | downstream | 0.45 |

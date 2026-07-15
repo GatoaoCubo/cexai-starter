@@ -88,6 +88,6 @@ python _tools/cex_score.py --apply bld-memory-signal.md
 |----------|-------------|-------|
 | [[signal-builder]] | downstream | 0.50 |
 | [[bld_architecture_signal]] | upstream | 0.41 |
-| [[bld_collaboration_signal]] | downstream | 0.37 |
-| [[bld_knowledge_card_signal]] | downstream | 0.36 |
+| [[bld_orchestration_signal]] | downstream | 0.37 |
+| [[bld_knowledge_signal]] | downstream | 0.36 |
 | [[p11_qg_signal]] | downstream | 0.33 |

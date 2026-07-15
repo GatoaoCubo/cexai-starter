@@ -85,7 +85,7 @@ monitor        --depends-->  trigger
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[schedule-builder]] | downstream | 0.53 |
-| [[bld_collaboration_schedule]] | downstream | 0.53 |
+| [[bld_orchestration_schedule]] | downstream | 0.53 |
 | [[p11_qg_schedule]] | downstream | 0.47 |
 | [[bld_output_template_schedule]] | upstream | 0.46 |
-| [[bld_knowledge_card_schedule]] | upstream | 0.43 |
+| [[bld_knowledge_schedule]] | upstream | 0.43 |

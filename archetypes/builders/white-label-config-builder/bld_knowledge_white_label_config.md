@@ -86,4 +86,4 @@ White-label platforms commonly use Stripe Connect to manage reseller billing:
 | [[p10_mem_white_label_config_builder]] | downstream | 0.46 |
 | n00_white_label_config_manifest | sibling | 0.43 |
 | [[p11_qg_white_label_config]] | downstream | 0.36 |
-| [[bld_instruction_white_label_config]] | downstream | 0.31 |
+| [[bld_prompt_white_label_config]] | downstream | 0.31 |

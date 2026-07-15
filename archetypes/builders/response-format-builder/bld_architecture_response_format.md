@@ -70,6 +70,6 @@ response_format --signals-->    format_deviation
 |----------|-------------|-------|
 | [[response-format-builder]] | upstream | 0.61 |
 | [[p03_ins_response_format]] | upstream | 0.60 |
-| [[bld_collaboration_response_format]] | upstream | 0.51 |
+| [[bld_orchestration_response_format]] | upstream | 0.51 |
 | [[bld_memory_response_format]] | downstream | 0.50 |
 | p01_kc_cex_lp05_output | upstream | 0.47 |

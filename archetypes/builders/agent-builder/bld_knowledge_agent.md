@@ -80,8 +80,8 @@ An agent is the core runtime identity in an agentic AI system — a persistent p
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | downstream | 0.57 |
+| [[bld_orchestration_agent]] | downstream | 0.57 |
 | [[agent-builder]] | downstream | 0.53 |
 | [[bld_architecture_agent]] | downstream | 0.52 |
-| [[p01_kc_agent]] | sibling | 0.50 |
-| [[bld_instruction_agent]] | downstream | 0.43 |
+| [[kc_agent]] | sibling | 0.50 |
+| [[bld_prompt_agent]] | downstream | 0.43 |

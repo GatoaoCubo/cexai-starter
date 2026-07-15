@@ -130,4 +130,4 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 | [[bld_output_template_retry_policy]] | upstream | 0.43 |
 | [[kc_retry_policy]] | upstream | 0.43 |
 | [[bld_schema_retry_policy]] | upstream | 0.42 |
-| [[bld_instruction_retry_policy]] | upstream | 0.41 |
+| [[bld_prompt_retry_policy]] | upstream | 0.41 |

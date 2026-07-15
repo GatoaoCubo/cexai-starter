@@ -49,5 +49,5 @@ Does NOT run the sourcing pipeline itself (parse + research + join/score is the 
 | [[opportunity-matrix-builder]] | upstream | 0.35 |
 | [[bld_config_opportunity_matrix]] | upstream | 0.30 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.28 |
-| [[bld_instruction_opportunity_matrix]] | upstream | 0.26 |
+| [[bld_prompt_opportunity_matrix]] | upstream | 0.26 |
 | [[roi-calculator-builder]] | related | 0.24 |

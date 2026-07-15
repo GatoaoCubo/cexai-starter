@@ -69,5 +69,5 @@ RBAC policies must balance flexibility with strict boundary enforcement. For exa
 | [[rbac-policy-builder]] | downstream | 0.70 |
 | [[kc_rbac_policy]] | sibling | 0.66 |
 | [[p10_mem_rbac_policy_builder]] | downstream | 0.53 |
-| [[bld_instruction_rbac_policy]] | downstream | 0.47 |
+| [[bld_prompt_rbac_policy]] | downstream | 0.47 |
 | [[p09_qg_rbac_policy]] | downstream | 0.46 |

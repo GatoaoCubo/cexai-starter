@@ -116,7 +116,7 @@ Structure:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_action_prompt]] | downstream | 0.37 |
-| [[bld_instruction_action_prompt]] | upstream | 0.30 |
+| [[bld_prompt_action_prompt]] | upstream | 0.30 |
 | [[bld_output_template_instruction]] | sibling | 0.28 |
 | [[bld_output_template_golden_test]] | sibling | 0.28 |
 | bld_output_template_runtime_rule | sibling | 0.28 |

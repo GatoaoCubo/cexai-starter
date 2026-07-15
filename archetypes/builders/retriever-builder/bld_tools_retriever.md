@@ -79,7 +79,7 @@ H10: wc -c body_only.md <= 2048
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_retriever]] | upstream | 0.39 |
+| [[bld_prompt_retriever]] | upstream | 0.39 |
 | [[p11_qg_retriever]] | downstream | 0.37 |
 | [[tools_prompt_template_builder]] | sibling | 0.36 |
 | [[bld_tools_retriever_config]] | sibling | 0.35 |

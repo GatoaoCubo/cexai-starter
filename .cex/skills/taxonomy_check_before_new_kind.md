@@ -1,6 +1,6 @@
 ---
 name: taxonomy-check-before-new-kind
-description: Run the 5-question composability test before introducing any new kind so the 300-kind taxonomy stays intentional and gaps are filled by composition first.
+description: Run the 5-question composability test before introducing any new kind so the 125-kind taxonomy stays intentional and gaps are filled by composition first.
 when:
   - User proposes "let us create a new kind" or similar add-a-kind intent.
   - A nucleus is about to register an entry in `.cex/kinds_meta.json` for a name that does not yet exist.

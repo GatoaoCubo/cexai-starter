@@ -86,4 +86,4 @@ When a request arrives that is NOT a schedule, redirect explicitly:
 | bld_collaboration_workflow | sibling | 0.37 |
 | [[bld_architecture_schedule]] | upstream | 0.36 |
 | [[p11_qg_schedule]] | upstream | 0.33 |
-| [[bld_knowledge_card_schedule]] | upstream | 0.32 |
+| [[bld_knowledge_schedule]] | upstream | 0.32 |

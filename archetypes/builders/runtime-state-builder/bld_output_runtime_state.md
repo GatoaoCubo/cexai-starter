@@ -87,7 +87,7 @@ linked_artifacts:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p11_qg_runtime_state]] | downstream | 0.34 |
-| [[bld_knowledge_card_runtime_state]] | upstream | 0.33 |
+| [[bld_knowledge_runtime_state]] | upstream | 0.33 |
 | [[runtime-state-builder]] | downstream | 0.32 |
 | [[bld_schema_runtime_state]] | downstream | 0.32 |
 | [[bld_memory_runtime_state]] | downstream | 0.31 |

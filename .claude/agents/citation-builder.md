@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[citation-builder]] | related | 0.37 |
 | kind-builder | related | 0.32 |
 | p03_sp_builder_nucleus | related | 0.32 |
-| [[bld_collaboration_citation]] | related | 0.30 |
+| [[bld_orchestration_citation]] | related | 0.30 |
 | [[p01_faq_cex_common_questions]] | related | 0.27 |

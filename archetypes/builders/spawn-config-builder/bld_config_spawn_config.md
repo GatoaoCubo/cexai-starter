@@ -75,8 +75,8 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_spawn_config]] | downstream | 0.36 |
-| [[p01_kc_spawn_config]] | downstream | 0.36 |
+| [[bld_knowledge_spawn_config]] | downstream | 0.36 |
+| [[kc_spawn_config]] | downstream | 0.36 |
 | [[bld_output_template_spawn_config]] | upstream | 0.33 |
 | [[p11_qg_spawn_config]] | downstream | 0.32 |
 | [[spawn-config-builder]] | downstream | 0.30 |

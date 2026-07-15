@@ -85,8 +85,8 @@ Rule: NEVER use real secret values as examples — always `<PLACEHOLDER>` or `${
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_secret_config]] | upstream | 0.49 |
+| [[bld_knowledge_secret_config]] | upstream | 0.49 |
 | [[secret-config-builder]] | related | 0.47 |
 | [[bld_output_template_secret_config]] | upstream | 0.43 |
-| [[bld_instruction_secret_config]] | upstream | 0.42 |
-| [[bld_collaboration_secret_config]] | downstream | 0.42 |
+| [[bld_prompt_secret_config]] | upstream | 0.42 |
+| [[bld_orchestration_secret_config]] | downstream | 0.42 |

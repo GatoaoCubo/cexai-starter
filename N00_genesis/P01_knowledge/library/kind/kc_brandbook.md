@@ -60,7 +60,7 @@ NOT `personality` (P02) -- one hot-swappable voice/tone/values overlay; the
 brandbook's Persona section is one of 8 sections, not the whole artifact.
 NOT `tagline` (P03) -- a single positioning line; the brandbook's Identity
 section *consumes* one, it doesn't define the tagline format.
-NOT `brand_config` -- not a kind in the 300+ taxonomy at all; it is the
+NOT `brand_config` -- not a kind in the 125-kind taxonomy at all; it is the
 tenant's single platform-identity record (`.cex/brand/brand_config.yaml`, or
 the per-tenant moldgen overlay) that a PASSING brandbook run *writes into*
 (see "Brand-setup write-back" below).
@@ -120,7 +120,7 @@ mechanically (`_parse_palette` only accepts strings matching `_HEX_RE`, a
 |------|--------|------|-----------|
 | [[kc_tagline|tagline]] | P03 | positioning line -> Identity section | consumes |
 | [[kc_personality|personality]] | P02 | voice/tone/archetype -> Persona section | consumes |
-| [[p01_kc_design_system|design_system]] | P06 | color/type tokens -> Paleta + Tipografia sections | consumes |
+| [[kc_design_system|design_system]] | P06 | color/type tokens -> Paleta + Tipografia sections | consumes |
 | [[kc_white_label_config|white_label_config]] | P09 | 24 HSL brand tokens -> Paleta + Tipografia sections | consumes |
 
 (`depends_on` per `.cex/kinds_meta.json`: personality, design_system,
@@ -231,6 +231,6 @@ targets final-publish quality -- the two are complementary, not contradictory.
 | [[bld_knowledge_brandbook]] | sibling (domain knowledge ISO) | 0.42 |
 | p12_ct_brand_discovery | sibling (authoring crew) | 0.42 |
 | [[kc_personality]] | peer (composed kind) | 0.32 |
-| [[p01_kc_design_system]] | peer (composed kind) | 0.30 |
+| [[kc_design_system]] | peer (composed kind) | 0.30 |
 | [[kc_white_label_config]] | peer (composed kind) | 0.28 |
 | [[kc_tagline]] | peer (composed kind) | 0.26 |

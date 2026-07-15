@@ -55,6 +55,6 @@ related:
 |----------|-------------|-------|
 | [[crew-template-builder]] | downstream | 0.55 |
 | [[p11_qg_crew_template]] | downstream | 0.44 |
-| [[bld_knowledge_card_crew_template]] | upstream | 0.42 |
+| [[bld_knowledge_crew_template]] | upstream | 0.42 |
 | [[bld_schema_crew_template]] | downstream | 0.38 |
 | [[p10_lr_crew_template_builder]] | downstream | 0.38 |

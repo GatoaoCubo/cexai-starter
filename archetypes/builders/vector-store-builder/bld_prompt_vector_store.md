@@ -112,4 +112,4 @@ Score all SOFT gates. If soft score < 8.0, revise in the same pass.
 | [[p11_qg_vector_store]] | downstream | 0.47 |
 | [[bld_output_template_vector_store]] | downstream | 0.47 |
 | [[bld_schema_vector_store]] | downstream | 0.46 |
-| [[bld_knowledge_card_vector_store]] | upstream | 0.46 |
+| [[bld_knowledge_vector_store]] | upstream | 0.46 |

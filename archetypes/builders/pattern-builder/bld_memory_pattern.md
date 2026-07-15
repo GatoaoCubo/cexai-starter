@@ -86,7 +86,7 @@ python _tools/cex_score.py --apply bld-memory-pattern.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pattern-builder]] | upstream | 0.49 |
-| [[bld_knowledge_card_pattern]] | upstream | 0.45 |
+| [[bld_knowledge_pattern]] | upstream | 0.45 |
 | [[p03_ins_pattern]] | upstream | 0.43 |
-| [[p01_kc_pattern]] | upstream | 0.41 |
+| [[kc_pattern]] | upstream | 0.41 |
 | [[bld_architecture_pattern]] | upstream | 0.40 |

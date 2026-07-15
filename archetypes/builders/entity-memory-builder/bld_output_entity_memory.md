@@ -78,6 +78,6 @@ Policy: {{append|overwrite|merge|versioned}}
 |----------|-------------|-------|
 | [[bld_schema_entity_memory]] | downstream | 0.45 |
 | [[entity-memory-builder]] | downstream | 0.39 |
-| [[bld_instruction_entity_memory]] | upstream | 0.39 |
+| [[bld_prompt_entity_memory]] | upstream | 0.39 |
 | [[bld_architecture_entity_memory]] | downstream | 0.35 |
-| [[bld_knowledge_card_entity_memory]] | upstream | 0.35 |
+| [[bld_knowledge_entity_memory]] | upstream | 0.35 |

@@ -98,4 +98,4 @@ fetch_k: "{{fetch_k}}}}"
 | bld_output_template_hook_config | sibling | 0.37 |
 | bld_output_template_runtime_rule | sibling | 0.35 |
 | bld_output_template_feature_flag | sibling | 0.35 |
-| [[bld_instruction_retriever_config]] | upstream | 0.35 |
+| [[bld_prompt_retriever_config]] | upstream | 0.35 |

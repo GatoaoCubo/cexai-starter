@@ -98,7 +98,7 @@ A formal contract applied by the SYSTEM after LLM generation to validate that th
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[validation-schema-builder]] | related | 0.41 |
-| [[p01_kc_response_format]] | sibling | 0.38 |
-| [[bld_knowledge_card_validation_schema]] | sibling | 0.38 |
+| [[kc_response_format]] | sibling | 0.38 |
+| [[bld_knowledge_validation_schema]] | sibling | 0.38 |
 | p01_kc_pillar_brief_p06_schema_en | sibling | 0.38 |
-| [[bld_collaboration_validation_schema]] | related | 0.36 |
+| [[bld_orchestration_validation_schema]] | related | 0.36 |

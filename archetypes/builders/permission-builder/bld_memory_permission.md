@@ -86,8 +86,8 @@ python _tools/cex_score.py --apply bld-memory-permission.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_permission]] | upstream | 0.64 |
+| [[bld_knowledge_permission]] | upstream | 0.64 |
 | [[permission-builder]] | upstream | 0.64 |
 | [[p03_ins_permission]] | upstream | 0.49 |
-| [[bld_collaboration_permission]] | upstream | 0.47 |
-| [[p01_kc_permission]] | upstream | 0.45 |
+| [[bld_orchestration_permission]] | upstream | 0.47 |
+| [[kc_permission]] | upstream | 0.45 |

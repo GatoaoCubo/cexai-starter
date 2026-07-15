@@ -47,6 +47,6 @@ related:
 |----------|-------------|-------|
 | auto_accept_handoff | sibling | 0.82 |
 | p03_sp_orchestration_nucleus | upstream | 0.31 |
-| [[bld_collaboration_handoff_protocol]] | downstream | 0.29 |
+| [[bld_orchestration_handoff_protocol]] | downstream | 0.29 |
 | p06_val_n07 | downstream | 0.28 |
 | n00_handoff_manifest | downstream | 0.28 |

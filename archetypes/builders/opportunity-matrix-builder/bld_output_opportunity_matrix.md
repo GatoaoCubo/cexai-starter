@@ -122,7 +122,7 @@ Emitted ONLY for rows carrying `photo_uri` or `dimension`; else one honest-skip 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_opportunity_matrix]] | upstream | 0.38 |
+| [[bld_prompt_opportunity_matrix]] | upstream | 0.38 |
 | [[bld_schema_opportunity_matrix]] | downstream | 0.36 |
 | [[opportunity-matrix-builder]] | downstream | 0.35 |
 | [[p11_qg_opportunity_matrix]] | downstream | 0.34 |

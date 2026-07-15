@@ -75,8 +75,8 @@ Raw state values live in the backend store (SQLite, Postgres, S3), not in the ar
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_checkpoint]] | downstream | 0.43 |
-| [[bld_knowledge_card_checkpoint]] | upstream | 0.39 |
-| [[bld_instruction_checkpoint]] | upstream | 0.39 |
+| [[bld_orchestration_checkpoint]] | downstream | 0.43 |
+| [[bld_knowledge_checkpoint]] | upstream | 0.39 |
+| [[bld_prompt_checkpoint]] | upstream | 0.39 |
 | [[checkpoint-builder]] | downstream | 0.38 |
 | [[bld_architecture_checkpoint]] | upstream | 0.38 |

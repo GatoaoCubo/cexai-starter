@@ -77,7 +77,7 @@ Rule: id MUST equal filename stem.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_validator]] | upstream | 0.37 |
-| [[bld_knowledge_card_validator]] | upstream | 0.35 |
+| [[bld_knowledge_validator]] | upstream | 0.35 |
 | [[p11_qg_validator]] | upstream | 0.35 |
 | [[bld_output_template_validator]] | upstream | 0.35 |
 | [[p03_ins_validator]] | upstream | 0.30 |

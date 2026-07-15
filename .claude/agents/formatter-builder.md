@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[formatter-builder]] | related | 0.41 |
 | [[bld_architecture_formatter]] | related | 0.39 |
 | p05_fmt_artifact_creation_report | related | 0.38 |
-| [[bld_collaboration_formatter]] | related | 0.38 |
+| [[bld_orchestration_formatter]] | related | 0.38 |
 | [[p11_fb_formatter]] | related | 0.34 |

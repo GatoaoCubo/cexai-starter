@@ -88,7 +88,7 @@ python _tools/cex_skill_loader.py --verify agent
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agent-builder]] | upstream | 0.50 |
-| [[bld_collaboration_agent]] | downstream | 0.45 |
-| [[p01_kc_agent]] | upstream | 0.42 |
-| [[bld_knowledge_card_agent]] | upstream | 0.42 |
-| [[bld_instruction_boot_config]] | sibling | 0.39 |
+| [[bld_orchestration_agent]] | downstream | 0.45 |
+| [[kc_agent]] | upstream | 0.42 |
+| [[bld_knowledge_agent]] | upstream | 0.42 |
+| [[bld_prompt_boot_config]] | sibling | 0.39 |

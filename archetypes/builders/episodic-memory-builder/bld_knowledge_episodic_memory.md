@@ -84,8 +84,8 @@ Episodic memory (Tulving, 1972) stores temporally indexed autobiographical event
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_episodic_memory]] | sibling | 0.62 |
+| [[kc_episodic_memory]] | sibling | 0.62 |
 | [[episodic-memory-builder]] | downstream | 0.53 |
-| [[bld_collaboration_episodic_memory]] | downstream | 0.48 |
-| [[bld_instruction_episodic_memory]] | downstream | 0.44 |
+| [[bld_orchestration_episodic_memory]] | downstream | 0.48 |
+| [[bld_prompt_episodic_memory]] | downstream | 0.44 |
 | [[p10_lr_episodic_memory_builder]] | downstream | 0.41 |

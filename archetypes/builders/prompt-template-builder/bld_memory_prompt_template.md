@@ -95,8 +95,8 @@ python _tools/cex_score.py --apply bld-memory-prompt-template.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_prompt_template]] | upstream | 0.57 |
+| [[bld_knowledge_prompt_template]] | upstream | 0.57 |
 | [[prompt-template-builder]] | upstream | 0.55 |
-| [[bld_collaboration_prompt_template]] | upstream | 0.47 |
+| [[bld_orchestration_prompt_template]] | upstream | 0.47 |
 | [[p03_ins_prompt_template]] | upstream | 0.46 |
-| [[p01_kc_prompt_template]] | upstream | 0.45 |
+| [[kc_prompt_template]] | upstream | 0.45 |

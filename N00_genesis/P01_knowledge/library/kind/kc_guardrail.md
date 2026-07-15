@@ -142,5 +142,5 @@ This artifact defines **technical guardrail mechanisms** for LLMs but **does not
 | [[content-filter-builder]] | downstream | 0.36 |
 | [[bld_tools_content_filter]] | downstream | 0.29 |
 | p01_kc_atom_25_safety_taxonomy | sibling | 0.28 |
-| [[bld_knowledge_card_content_filter]] | sibling | 0.25 |
+| [[bld_knowledge_content_filter]] | sibling | 0.25 |
 | p05_output_validator | downstream | 0.24 |

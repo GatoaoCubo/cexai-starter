@@ -156,8 +156,8 @@ every sovereign tenant distills from.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_data_contract]] | upstream (depends_on) | 0.55 |
-| [[p01_kc_validation_schema]] | upstream (depends_on) | 0.52 |
+| [[kc_data_contract]] | upstream (depends_on) | 0.55 |
+| [[kc_validation_schema]] | upstream (depends_on) | 0.52 |
 | [[data-contract-builder]] | sibling | 0.40 |
 | [[validation-schema-builder]] | sibling | 0.38 |
 | kc_value_object | related (P06 typed-record sibling) | 0.32 |

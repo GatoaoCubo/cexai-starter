@@ -69,6 +69,6 @@ I specify GUI control interfaces so LLMs can interact with visual environments.
 |----------|-------------|-------|
 | [[computer-use-builder]] | upstream | 0.46 |
 | bld_collaboration_agent_computer_interface | sibling | 0.40 |
-| [[bld_collaboration_vision_tool]] | sibling | 0.34 |
-| [[bld_instruction_computer_use]] | upstream | 0.33 |
-| [[bld_collaboration_browser_tool]] | sibling | 0.32 |
+| [[bld_orchestration_vision_tool]] | sibling | 0.34 |
+| [[bld_prompt_computer_use]] | upstream | 0.33 |
+| [[bld_orchestration_browser_tool]] | sibling | 0.32 |

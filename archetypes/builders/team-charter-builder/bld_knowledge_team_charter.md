@@ -70,7 +70,7 @@ Every charter is instantiated from a `crew_template_ref`, which defines the crew
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[team-charter-builder]] | downstream | 0.61 |
-| [[bld_collaboration_team_charter]] | downstream | 0.44 |
+| [[bld_orchestration_team_charter]] | downstream | 0.44 |
 | [[bld_tools_team_charter]] | downstream | 0.43 |
 | [[kc_team_charter]] | sibling | 0.42 |
 | [[bld_schema_team_charter]] | downstream | 0.41 |

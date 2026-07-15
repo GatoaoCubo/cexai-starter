@@ -99,6 +99,6 @@ Rule: id MUST equal filename stem.
 |----------|-------------|-------|
 | [[bld_schema_action_prompt]] | sibling | 0.54 |
 | [[bld_schema_instruction]] | sibling | 0.50 |
-| [[bld_knowledge_card_system_prompt]] | upstream | 0.50 |
+| [[bld_knowledge_system_prompt]] | upstream | 0.50 |
 | bld_schema_smoke_eval | sibling | 0.50 |
 | [[bld_schema_runtime_state]] | sibling | 0.49 |

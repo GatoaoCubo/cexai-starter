@@ -92,5 +92,5 @@ Five duties bind any agent that emits an artifact:
 | [[design-system-builder]] | related | 0.35 |
 | kind-builder | related | 0.32 |
 | p06_vs_design_system | upstream | 0.4 |
-| [[p01_kc_design_system]] | related | 0.35 |
+| [[kc_design_system]] | related | 0.35 |
 | p03_sp_builder_nucleus | related | 0.3 |

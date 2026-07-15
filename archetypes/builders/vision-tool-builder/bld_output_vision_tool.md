@@ -112,7 +112,7 @@ Output: `{{json_schema_or_field_description}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_vision_tool]] | downstream | 0.38 |
-| [[bld_instruction_vision_tool]] | upstream | 0.35 |
+| [[bld_prompt_vision_tool]] | upstream | 0.35 |
 | [[bld_output_template_input_schema]] | sibling | 0.33 |
 | [[p11_qg_vision_tool]] | downstream | 0.33 |
 | bld_output_template_runtime_rule | sibling | 0.32 |

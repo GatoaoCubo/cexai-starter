@@ -88,8 +88,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_knowledge_card]] | upstream | 0.37 |
+| [[bld_knowledge_knowledge_card]] | upstream | 0.37 |
 | [[knowledge-card-builder]] | upstream | 0.36 |
 | p01_kc_knowledge_best_practices | upstream | 0.32 |
-| [[bld_instruction_input_schema]] | sibling | 0.30 |
-| [[bld_instruction_instruction]] | sibling | 0.28 |
+| [[bld_prompt_input_schema]] | sibling | 0.30 |
+| [[bld_prompt_instruction]] | sibling | 0.28 |

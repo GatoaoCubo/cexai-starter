@@ -155,7 +155,7 @@ model cannot ask a follow-up question.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_prompt_package]] | related | 0.57 |
-| [[bld_knowledge_card_prompt_package]] | upstream | 0.55 |
+| [[bld_knowledge_prompt_package]] | upstream | 0.55 |
 | [[bld_memory_prompt_package]] | downstream | 0.54 |
 | [[p03_ins_prompt_package]] | related | 0.52 |
 | [[bld_architecture_prompt_package]] | downstream | 0.45 |

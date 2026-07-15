@@ -120,8 +120,8 @@ Maximum artifact size: 1024 bytes.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_few_shot_example]] | downstream | 0.55 |
+| [[bld_orchestration_few_shot_example]] | downstream | 0.55 |
 | [[p10_lr_few_shot_example_builder]] | downstream | 0.46 |
-| [[bld_instruction_few_shot_example]] | downstream | 0.43 |
-| [[bld_knowledge_card_few_shot_example]] | related | 0.41 |
-| [[p01_kc_few_shot_example]] | related | 0.40 |
+| [[bld_prompt_few_shot_example]] | downstream | 0.43 |
+| [[bld_knowledge_few_shot_example]] | related | 0.41 |
+| [[kc_few_shot_example]] | related | 0.40 |

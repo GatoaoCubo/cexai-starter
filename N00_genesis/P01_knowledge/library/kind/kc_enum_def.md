@@ -96,7 +96,7 @@ A shared, reusable list of named string constants used to constrain any field to
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[enum-def-builder]] | related | 0.46 |
-| [[bld_knowledge_card_enum_def]] | sibling | 0.42 |
-| [[bld_collaboration_enum_def]] | downstream | 0.41 |
+| [[bld_knowledge_enum_def]] | sibling | 0.42 |
+| [[bld_orchestration_enum_def]] | downstream | 0.41 |
 | n00_enum_def_manifest | sibling | 0.39 |
-| [[p01_kc_type_def]] | sibling | 0.39 |
+| [[kc_type_def]] | sibling | 0.39 |

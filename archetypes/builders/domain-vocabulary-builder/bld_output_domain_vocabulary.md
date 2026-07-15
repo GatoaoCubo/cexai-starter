@@ -74,8 +74,8 @@ the {{bounded_context}} bounded context.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_domain_vocabulary]] | upstream | 0.47 |
+| [[kc_domain_vocabulary]] | upstream | 0.47 |
 | [[bld_schema_domain_vocabulary]] | downstream | 0.46 |
 | [[bld_qg_domain_vocabulary]] | downstream | 0.45 |
 | [[domain-vocabulary-builder]] | upstream | 0.45 |
-| [[bld_instruction_domain_vocabulary]] | related | 0.43 |
+| [[bld_prompt_domain_vocabulary]] | related | 0.43 |

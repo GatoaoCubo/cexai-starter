@@ -175,9 +175,9 @@ https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching
 | [[nucleus_def_n07]] | downstream | 0.36 |
 | [[nucleus_def_n01]] | downstream | 0.35 |
 | [[nucleus_def_n06]] | downstream | 0.33 |
-| [[bld_knowledge_card_nucleus_def]] | sibling | 0.33 |
+| [[bld_knowledge_nucleus_def]] | sibling | 0.33 |
 | p01_rm_cex | related | 0.32 |
-| [[bld_collaboration_nucleus_def]] | downstream | 0.32 |
+| [[bld_orchestration_nucleus_def]] | downstream | 0.32 |
 | [[nucleus_def_n05]] | downstream | 0.31 |
 | [[p02_mm_cex_architecture_n04]] | related | 0.31 |
 | [[nucleus_def_n03]] | downstream | 0.31 |

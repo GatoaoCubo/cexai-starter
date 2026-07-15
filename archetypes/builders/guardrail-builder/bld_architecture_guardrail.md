@@ -71,7 +71,7 @@ permission (P09)   --depends-->  guardrail
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[guardrail-builder]] | downstream | 0.63 |
-| [[bld_instruction_guardrail]] | upstream | 0.55 |
+| [[bld_prompt_guardrail]] | upstream | 0.55 |
 | n00_guardrail_manifest | downstream | 0.52 |
-| [[bld_collaboration_guardrail]] | downstream | 0.50 |
+| [[bld_orchestration_guardrail]] | downstream | 0.50 |
 | [[p11_qg_guardrail]] | downstream | 0.48 |

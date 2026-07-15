@@ -79,7 +79,7 @@ framework        --executes-->  judge_model
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[llm-judge-builder]] | upstream | 0.67 |
-| [[bld_collaboration_llm_judge]] | downstream | 0.60 |
-| [[p01_kc_llm_judge]] | upstream | 0.51 |
+| [[bld_orchestration_llm_judge]] | downstream | 0.60 |
+| [[kc_llm_judge]] | upstream | 0.51 |
 | [[p11_qg_llm_judge]] | downstream | 0.49 |
-| [[bld_instruction_llm_judge]] | upstream | 0.46 |
+| [[bld_prompt_llm_judge]] | upstream | 0.46 |

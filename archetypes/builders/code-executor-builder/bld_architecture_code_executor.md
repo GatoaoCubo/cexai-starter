@@ -97,5 +97,5 @@ function_def --targets-->   code_executor (runtime binding)
 | [[code-executor-builder]] | upstream | 0.69 |
 | n00_code_executor_manifest | upstream | 0.53 |
 | [[p11_qg_code_executor]] | downstream | 0.50 |
-| [[p01_kc_code_executor]] | upstream | 0.47 |
-| [[bld_collaboration_code_executor]] | downstream | 0.44 |
+| [[kc_code_executor]] | upstream | 0.47 |
+| [[bld_orchestration_code_executor]] | downstream | 0.44 |

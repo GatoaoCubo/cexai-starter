@@ -75,8 +75,8 @@ None — independent builder (layer 0). Knowledge cards are distilled from sourc
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | sibling | 0.41 |
-| [[bld_collaboration_knowledge_index]] | sibling | 0.39 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.37 |
+| [[bld_orchestration_agent]] | sibling | 0.41 |
+| [[bld_orchestration_knowledge_index]] | sibling | 0.39 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.37 |
 | bld_collaboration_context_doc | sibling | 0.33 |
-| [[bld_collaboration_boot_config]] | sibling | 0.33 |
+| [[bld_orchestration_boot_config]] | sibling | 0.33 |

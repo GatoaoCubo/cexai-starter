@@ -165,5 +165,5 @@ N01 stores the reasons a source should win or lose in a conflict.
 | [[citation-builder]] | related | 0.50 |
 | [[bld_schema_citation]] | downstream | 0.47 |
 | n00_citation_manifest | related | 0.45 |
-| [[p01_kc_citation]] | related | 0.45 |
-| [[bld_knowledge_card_citation]] | related | 0.43 |
+| [[kc_citation]] | related | 0.45 |
+| [[bld_knowledge_citation]] | related | 0.43 |

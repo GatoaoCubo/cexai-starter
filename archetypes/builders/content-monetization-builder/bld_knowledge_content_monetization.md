@@ -90,7 +90,7 @@ Stripe (kc_stripe_patterns), Kiwify, Monetizze, Eduzz, Resend, Meta/Google Ads â
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_content_monetization]] | downstream | 0.52 |
-| [[bld_instruction_content_monetization]] | downstream | 0.52 |
+| [[bld_prompt_content_monetization]] | downstream | 0.52 |
 | p01_kc_content_platform_comparison | sibling | 0.52 |
 | [[n06_kc_content_monetization]] | sibling | 0.47 |
-| [[bld_collaboration_content_monetization]] | downstream | 0.45 |
+| [[bld_orchestration_content_monetization]] | downstream | 0.45 |

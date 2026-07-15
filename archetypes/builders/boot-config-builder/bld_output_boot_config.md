@@ -95,6 +95,6 @@ Agent_group: `{{agent_group_name}}`
 |----------|-------------|-------|
 | [[p11_qg_boot_config]] | downstream | 0.43 |
 | [[bld_schema_boot_config]] | downstream | 0.39 |
-| [[bld_knowledge_card_boot_config]] | upstream | 0.34 |
+| [[bld_knowledge_boot_config]] | upstream | 0.34 |
 | [[boot-config-builder]] | upstream | 0.34 |
-| [[bld_instruction_boot_config]] | upstream | 0.33 |
+| [[bld_prompt_boot_config]] | upstream | 0.33 |

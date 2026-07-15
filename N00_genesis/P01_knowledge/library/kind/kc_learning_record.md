@@ -104,6 +104,6 @@ Load this card at F3 INJECT when deciding whether and how to persist a session o
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[learning-record-builder]] | related | 0.38 |
-| [[bld_collaboration_learning_record]] | related | 0.33 |
+| [[bld_orchestration_learning_record]] | related | 0.33 |
 | p01_kc_pillar_brief_p10_memory_en | sibling | 0.30 |
 | [[bld_memory_learning_record]] | related | 0.30 |

@@ -77,7 +77,7 @@ Formatters convert structured data into human-readable or machine-consumable rep
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[formatter-builder]] | downstream | 0.49 |
-| [[bld_instruction_formatter]] | downstream | 0.42 |
+| [[bld_prompt_formatter]] | downstream | 0.42 |
 | [[p10_lr_formatter_builder]] | downstream | 0.39 |
-| [[p01_kc_formatter]] | sibling | 0.37 |
+| [[kc_formatter]] | sibling | 0.37 |
 | [[bld_config_formatter]] | downstream | 0.36 |

@@ -170,6 +170,6 @@ You are the consuming agent that acts on this embedder_provider under F3 INJECT.
 |----------|-------------|-------|
 | bld_collaboration_knowledge_graph | downstream | 0.36 |
 | [[kno_embedder_provider_n02]] | sibling | 0.34 |
-| [[p01_kc_embedder_provider]] | upstream | 0.34 |
+| [[kc_embedder_provider]] | upstream | 0.34 |
 | [[kno_embedder_provider_n03]] | sibling | 0.34 |
 | [[kno_embedder_provider_n06]] | sibling | 0.32 |

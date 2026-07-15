@@ -78,8 +78,8 @@ Rule: freshness_decay must be a float in [0, 1]. Default 0.1.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_summary]] | downstream | 0.33 |
+| [[bld_orchestration_memory_summary]] | downstream | 0.33 |
 | [[p10_lr_memory_summary_builder]] | downstream | 0.32 |
 | [[memory-summary-builder]] | downstream | 0.31 |
-| [[bld_knowledge_card_memory_summary]] | upstream | 0.31 |
+| [[bld_knowledge_memory_summary]] | upstream | 0.31 |
 | [[bld_config_memory_scope]] | sibling | 0.30 |

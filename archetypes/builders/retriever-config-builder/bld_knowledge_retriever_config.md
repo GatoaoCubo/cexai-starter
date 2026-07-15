@@ -77,7 +77,7 @@ Retrieval parameters — how to search and rank chunks from a vector/hybrid stor
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p10_lr_retriever_config_builder]] | downstream | 0.47 |
-| [[p01_kc_retriever]] | sibling | 0.38 |
+| [[kc_retriever]] | sibling | 0.38 |
 | [[retriever-builder]] | downstream | 0.37 |
 | p01_retriever_config | related | 0.37 |
 | [[p11_qg_retriever_config]] | downstream | 0.36 |

@@ -103,4 +103,4 @@ upgrade_path: "{{current_backend}} -> {{next_backend}} (when {{trigger}})"
 | [[p11_qg_session_backend]] | downstream | 0.47 |
 | [[bld_schema_session_backend]] | downstream | 0.43 |
 | [[session-backend-builder]] | downstream | 0.42 |
-| [[p01_kc_session_backend]] | downstream | 0.40 |
+| [[kc_session_backend]] | downstream | 0.40 |

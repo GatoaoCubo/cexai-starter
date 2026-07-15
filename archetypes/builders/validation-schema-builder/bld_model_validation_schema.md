@@ -120,8 +120,8 @@ Body MUST stay under 3072 bytes. Schema must be machine-executable ??? no natura
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_validation_schema]] | related | 0.54 |
+| [[bld_orchestration_validation_schema]] | related | 0.54 |
 | p01_kc_pillar_brief_p06_schema_en | related | 0.43 |
-| [[bld_knowledge_card_validation_schema]] | upstream | 0.42 |
+| [[bld_knowledge_validation_schema]] | upstream | 0.42 |
 | [[validator-builder]] | sibling | 0.40 |
-| [[p01_kc_validation_schema]] | related | 0.39 |
+| [[kc_validation_schema]] | related | 0.39 |

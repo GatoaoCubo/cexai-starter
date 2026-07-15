@@ -46,7 +46,7 @@ Reviewed artifacts showed success when personas included 3-5 distinct, actionabl
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agent-profile-builder]] | upstream | 0.36 |
-| [[bld_knowledge_card_agent_profile]] | upstream | 0.34 |
-| [[bld_collaboration_agent_profile]] | downstream | 0.26 |
+| [[bld_knowledge_agent_profile]] | upstream | 0.34 |
+| [[bld_orchestration_agent_profile]] | downstream | 0.26 |
 | p10_lr_judge_config_builder | sibling | 0.23 |
 | [[p10_mem_eval_metric_builder]] | related | 0.22 |

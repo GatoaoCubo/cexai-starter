@@ -100,4 +100,4 @@ indexing:
 | bld_architecture_kind | downstream | 0.28 |
 | kind-builder | downstream | 0.27 |
 | bld_collaboration_kind | downstream | 0.26 |
-| [[bld_collaboration_knowledge_card]] | downstream | 0.24 |
+| [[bld_orchestration_knowledge_card]] | downstream | 0.24 |

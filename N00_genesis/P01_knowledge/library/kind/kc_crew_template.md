@@ -68,5 +68,5 @@ author the three WAVE8 artifacts it describes.
 | bld_collaboration_quality_gate | downstream | 0.21 |
 | p01_kc_steps | sibling | 0.20 |
 | [[p11_qg_crew_template]] | downstream | 0.20 |
-| [[bld_collaboration_crew_template]] | downstream | 0.19 |
+| [[bld_orchestration_crew_template]] | downstream | 0.19 |
 | p01_kc_skill | sibling | 0.19 |

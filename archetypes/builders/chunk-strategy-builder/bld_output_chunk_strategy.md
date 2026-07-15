@@ -98,4 +98,4 @@ keep_separator: "{{keep_separator}}}}"
 | bld_output_template_hook_config | sibling | 0.36 |
 | bld_output_template_runtime_rule | sibling | 0.36 |
 | [[bld_output_template_retriever_config]] | sibling | 0.36 |
-| [[bld_instruction_chunk_strategy]] | upstream | 0.35 |
+| [[bld_prompt_chunk_strategy]] | upstream | 0.35 |

@@ -77,7 +77,7 @@ by another naming convention. The kind formalizes what those files have always b
 
 ## Scope Hierarchy
 ```
-CEX Universal (prompt_compiler, 300 kinds)
+CEX Universal (prompt_compiler, 125 kinds)
     |
     +-- dv_cex_core_vocabulary (core CEX terms: 8F, 12P, kind, pillar, nucleus)
     |

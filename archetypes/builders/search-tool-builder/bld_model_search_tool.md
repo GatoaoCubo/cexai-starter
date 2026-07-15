@@ -132,8 +132,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_search_tool]] | downstream | 0.66 |
+| [[bld_orchestration_search_tool]] | downstream | 0.66 |
 | [[bld_architecture_search_tool]] | downstream | 0.56 |
-| [[bld_knowledge_card_search_tool]] | upstream | 0.55 |
-| [[bld_instruction_search_tool]] | upstream | 0.50 |
+| [[bld_knowledge_search_tool]] | upstream | 0.55 |
+| [[bld_prompt_search_tool]] | upstream | 0.50 |
 | [[p11_qg_search_tool]] | downstream | 0.49 |

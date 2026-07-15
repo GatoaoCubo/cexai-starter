@@ -68,8 +68,8 @@ NEVER assume single-modality dominance (e.g., text-only fallback).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_multimodal_prompt]] | upstream | 0.58 |
+| [[bld_knowledge_multimodal_prompt]] | upstream | 0.58 |
 | [[p10_mem_multimodal_prompt_builder]] | downstream | 0.50 |
-| [[bld_instruction_multimodal_prompt]] | related | 0.45 |
+| [[bld_prompt_multimodal_prompt]] | related | 0.45 |
 | multi-modal-config-builder | sibling | 0.42 |
 | bld_collaboration_multi_modal_config | downstream | 0.40 |

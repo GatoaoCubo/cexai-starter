@@ -97,5 +97,5 @@ Patterns are named, reusable solutions to recurring problems in a given context.
 | [[bld_memory_pattern]] | downstream | 0.46 |
 | [[p03_ins_pattern]] | downstream | 0.46 |
 | [[pattern-builder]] | downstream | 0.43 |
-| [[p01_kc_pattern]] | sibling | 0.38 |
+| [[kc_pattern]] | sibling | 0.38 |
 | [[bld_architecture_pattern]] | downstream | 0.36 |

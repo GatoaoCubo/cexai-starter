@@ -56,7 +56,7 @@ A guardrail defines safety restrictions with concrete, matchable rules and expli
 ## Builder Context
 
 This ISO operates within the `guardrail-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -104,7 +104,7 @@ python _tools/cex_score.py --apply --verbose p10_lr_guardrail_builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[guardrail-builder]] | downstream | 0.48 |
-| [[bld_instruction_guardrail]] | upstream | 0.47 |
-| [[bld_knowledge_card_guardrail]] | upstream | 0.46 |
+| [[bld_prompt_guardrail]] | upstream | 0.47 |
+| [[bld_knowledge_guardrail]] | upstream | 0.46 |
 | [[p11_qg_guardrail]] | downstream | 0.43 |
 | [[bld_architecture_guardrail]] | upstream | 0.37 |

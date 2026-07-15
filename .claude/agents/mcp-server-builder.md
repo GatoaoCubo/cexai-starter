@@ -86,8 +86,8 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_mcp_server]] | related | 0.37 |
+| [[bld_orchestration_mcp_server]] | related | 0.37 |
 | n00_mcp_server_manifest | related | 0.35 |
-| [[p01_kc_mcp_server]] | related | 0.34 |
+| [[kc_mcp_server]] | related | 0.34 |
 | [[mcp-server-builder]] | related | 0.32 |
 | [[p03_ins_mcp_server]] | related | 0.30 |

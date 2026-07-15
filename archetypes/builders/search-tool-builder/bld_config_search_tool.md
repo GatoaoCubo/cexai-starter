@@ -73,8 +73,8 @@ Rule: NEVER hardcode API keys. Always reference env vars.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_search_tool]] | downstream | 0.41 |
+| [[bld_orchestration_search_tool]] | downstream | 0.41 |
 | [[search-tool-builder]] | upstream | 0.40 |
-| [[bld_knowledge_card_search_tool]] | upstream | 0.38 |
-| [[bld_instruction_search_tool]] | upstream | 0.36 |
+| [[bld_knowledge_search_tool]] | upstream | 0.38 |
+| [[bld_prompt_search_tool]] | upstream | 0.36 |
 | [[bld_output_template_search_tool]] | upstream | 0.34 |

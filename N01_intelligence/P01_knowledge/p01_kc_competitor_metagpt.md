@@ -213,7 +213,7 @@ commercial support of OpenAI.
 |----------|------------------|
 | Fixed company role simulation | CEX nuclei (N01-N07) cover any domain, not just software development |
 | Slow release cadence | v0.8.1 last release April 2024 -- over 1 year stale; CEX has active release cycle |
-| No typed artifact taxonomy | MetaGPT outputs are role-defined but untyped; CEX has 300 kinds x 12 pillars |
+| No typed artifact taxonomy | MetaGPT outputs are role-defined but untyped; CEX has 125 kinds x 12 pillars |
 | No quality scoring system | MetaGPT has no scoring rubric; CEX enforces 9.0 target with 5D scoring |
 | No GDP protocol | No guided decision framework; user gets output without decision co-authorship |
 | Python version restriction | 3.9+ but <3.12; CEX has no such constraint |
@@ -245,8 +245,8 @@ This is a community trust gap CEX can exploit through transparent, named founder
 
 | Dimension | MetaGPT | CEX |
 |-----------|---------|-----|
-| Domain scope | Software development company simulation | Any domain (7 sin-driven nuclei, 300 kinds) |
-| Artifact taxonomy | Role-defined documents + code | 300 typed kinds x 12 pillars |
+| Domain scope | Software development company simulation | Any domain (7 sin-driven nuclei, 125 kinds) |
+| Artifact taxonomy | Role-defined documents + code | 125 typed kinds x 12 pillars |
 | Quality system | None | 8F pipeline + cex_score.py (9.0 target) |
 | Release cadence | Last release April 2024 (>1 year stale) | Active (April 2026 latest) |
 | Runtime support | Python single runtime | Claude + Codex + Gemini + Ollama |

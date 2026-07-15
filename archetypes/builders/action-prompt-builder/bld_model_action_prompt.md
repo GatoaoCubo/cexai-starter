@@ -138,7 +138,7 @@ Max body: 3072 bytes. Every sentence carries information load. No filler.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[system-prompt-builder]] | sibling | 0.53 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.53 |
-| [[bld_instruction_action_prompt]] | related | 0.45 |
-| [[bld_knowledge_card_action_prompt]] | upstream | 0.41 |
+| [[bld_orchestration_action_prompt]] | downstream | 0.53 |
+| [[bld_prompt_action_prompt]] | related | 0.45 |
+| [[bld_knowledge_action_prompt]] | upstream | 0.41 |
 | [[prompt-version-builder]] | sibling | 0.40 |

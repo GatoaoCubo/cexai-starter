@@ -92,7 +92,7 @@ Next.js App Router (optional)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_landing_page]] | downstream | 0.45 |
+| [[bld_orchestration_landing_page]] | downstream | 0.45 |
 | [[kc_landing_page]] | upstream | 0.38 |
 | [[bld_tools_landing_page]] | upstream | 0.38 |
 | [[bld_output_template_landing_page]] | upstream | 0.38 |

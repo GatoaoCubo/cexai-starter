@@ -94,5 +94,5 @@ related:
 | bld_collaboration_event_schema | sibling | 0.41 |
 | [[kc_openapi_spec]] | upstream | 0.36 |
 | [[openapi-spec-builder]] | upstream | 0.36 |
-| [[bld_knowledge_card_openapi_spec]] | upstream | 0.34 |
+| [[bld_knowledge_openapi_spec]] | upstream | 0.34 |
 | [[bld_collaboration_client]] | sibling | 0.32 |

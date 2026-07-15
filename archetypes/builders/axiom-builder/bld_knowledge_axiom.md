@@ -76,8 +76,8 @@ Axioms are immutable foundational truths that define system identity — if an a
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_axiom]] | sibling | 0.52 |
+| [[kc_axiom]] | sibling | 0.52 |
 | [[axiom-builder]] | downstream | 0.49 |
 | [[p10_lr_axiom-builder]] | downstream | 0.47 |
-| [[bld_collaboration_axiom]] | downstream | 0.44 |
+| [[bld_orchestration_axiom]] | downstream | 0.44 |
 | tpl_axiom | downstream | 0.42 |

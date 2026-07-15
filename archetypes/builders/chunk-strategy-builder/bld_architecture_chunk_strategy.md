@@ -83,5 +83,5 @@ python _tools/cex_score.py --apply bld-architecture-chunk-strategy.md
 | [[bld_architecture_retriever_config]] | sibling | 0.49 |
 | [[chunk-strategy-builder]] | upstream | 0.47 |
 | n00_chunk_strategy_manifest | upstream | 0.40 |
-| [[p01_kc_chunk_strategy]] | upstream | 0.39 |
+| [[kc_chunk_strategy]] | upstream | 0.39 |
 | [[p11_qg_chunk_strategy]] | downstream | 0.36 |

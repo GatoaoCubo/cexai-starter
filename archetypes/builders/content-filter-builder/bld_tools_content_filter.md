@@ -73,7 +73,7 @@ This ISO defines a content filter -- the moderation rules that gate output or in
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_tools_safety_policy | sibling | 0.41 |
-| [[bld_knowledge_card_content_filter]] | upstream | 0.38 |
+| [[bld_knowledge_content_filter]] | upstream | 0.38 |
 | [[content-filter-builder]] | downstream | 0.33 |
 | n06_audit_content_filter_builder | downstream | 0.31 |
 | [[kc_content_filter]] | upstream | 0.30 |

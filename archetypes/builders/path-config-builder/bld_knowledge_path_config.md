@@ -101,5 +101,5 @@ Path configs are filesystem path catalogs that define every directory and file p
 | [[p03_ins_path_config]] | downstream | 0.54 |
 | [[bld_memory_path_config]] | downstream | 0.49 |
 | [[path-config-builder]] | downstream | 0.47 |
-| [[bld_collaboration_path_config]] | downstream | 0.46 |
+| [[bld_orchestration_path_config]] | downstream | 0.46 |
 | [[bld_schema_path_config]] | downstream | 0.39 |

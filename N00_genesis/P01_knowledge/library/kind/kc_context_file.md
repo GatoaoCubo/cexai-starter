@@ -149,7 +149,7 @@ control, and priority ordering.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_context_file]] | sibling | 0.65 |
+| [[bld_knowledge_context_file]] | sibling | 0.65 |
 | n00_context_file_manifest | sibling | 0.58 |
 | [[bld_schema_context_file]] | downstream | 0.55 |
 | [[context-file-builder]] | downstream | 0.54 |

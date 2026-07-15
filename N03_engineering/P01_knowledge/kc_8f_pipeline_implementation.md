@@ -106,5 +106,5 @@ Primary function: **INJECT**
 | kc_workflow_run_crate | sibling | 0.30 |
 | p03_ins_doing_tasks | downstream | 0.23 |
 | [[p01_kc_dispatch_modes]] | sibling | 0.21 |
-| [[bld_collaboration_response_format]] | downstream | 0.20 |
+| [[bld_orchestration_response_format]] | downstream | 0.20 |
 | [[kc_system_prompt]] | sibling | 0.19 |

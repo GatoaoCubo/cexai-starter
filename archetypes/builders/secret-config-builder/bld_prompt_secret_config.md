@@ -103,8 +103,8 @@ python _tools/cex_skill_loader.py --verify secret
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_memory_scope]] | sibling | 0.51 |
-| [[bld_instruction_retriever_config]] | sibling | 0.51 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.51 |
-| [[bld_instruction_output_validator]] | sibling | 0.50 |
-| [[bld_instruction_handoff_protocol]] | sibling | 0.49 |
+| [[bld_prompt_memory_scope]] | sibling | 0.51 |
+| [[bld_prompt_retriever_config]] | sibling | 0.51 |
+| [[bld_prompt_chunk_strategy]] | sibling | 0.51 |
+| [[bld_prompt_output_validator]] | sibling | 0.50 |
+| [[bld_prompt_handoff_protocol]] | sibling | 0.49 |

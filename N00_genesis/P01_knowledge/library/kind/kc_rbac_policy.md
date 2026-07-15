@@ -78,8 +78,8 @@ This policy ensures that tenants are completely isolated while allowing necessar
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_rbac_policy]] | sibling | 0.66 |
+| [[bld_knowledge_rbac_policy]] | sibling | 0.66 |
 | [[rbac-policy-builder]] | downstream | 0.61 |
-| [[bld_instruction_rbac_policy]] | downstream | 0.52 |
+| [[bld_prompt_rbac_policy]] | downstream | 0.52 |
 | [[p10_mem_rbac_policy_builder]] | downstream | 0.52 |
 | [[p09_qg_rbac_policy]] | downstream | 0.45 |

@@ -87,7 +87,7 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[search-tool-builder]] | related | 0.37 |
-| [[bld_collaboration_search_tool]] | related | 0.32 |
+| [[bld_orchestration_search_tool]] | related | 0.32 |
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.31 |
 | p01_kc_pillar_brief_p04_tools_en | related | 0.28 |

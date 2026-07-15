@@ -121,8 +121,8 @@ ID must match `^p06_oas_[a-z][a-z0-9_]+$`. Body must not exceed 8192 bytes.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_openapi_spec]] | upstream | 0.63 |
+| [[bld_knowledge_openapi_spec]] | upstream | 0.63 |
 | [[kc_openapi_spec]] | upstream | 0.62 |
-| [[bld_collaboration_openapi_spec]] | downstream | 0.59 |
+| [[bld_orchestration_openapi_spec]] | downstream | 0.59 |
 | [[bld_architecture_openapi_spec]] | downstream | 0.55 |
-| [[bld_instruction_openapi_spec]] | upstream | 0.44 |
+| [[bld_prompt_openapi_spec]] | upstream | 0.44 |

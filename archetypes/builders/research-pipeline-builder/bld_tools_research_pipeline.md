@@ -96,8 +96,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_source_catalog]] | upstream | 0.71 |
+| [[kc_source_catalog]] | upstream | 0.71 |
 | ex_research_pipeline_ecommerce_br | related | 0.44 |
-| [[bld_knowledge_card_search_tool]] | upstream | 0.33 |
+| [[bld_knowledge_search_tool]] | upstream | 0.33 |
 | p04_tool_mcp_config | related | 0.32 |
-| [[bld_collaboration_search_tool]] | downstream | 0.30 |
+| [[bld_orchestration_search_tool]] | downstream | 0.30 |

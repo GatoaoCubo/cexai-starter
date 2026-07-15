@@ -98,8 +98,8 @@ A research_pipeline is a multi-stage autonomous research motor that transforms a
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_research_pipeline]] | sibling | 0.42 |
+| [[bld_knowledge_research_pipeline]] | sibling | 0.42 |
 | [[research-pipeline-builder]] | related | 0.41 |
-| [[bld_instruction_research_pipeline]] | upstream | 0.36 |
+| [[bld_prompt_research_pipeline]] | upstream | 0.36 |
 | p02_agent_research_pipeline_intelligence | upstream | 0.36 |
 | p04_cli_research_pipeline_n01 | related | 0.32 |

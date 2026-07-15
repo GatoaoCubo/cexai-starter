@@ -191,5 +191,5 @@ Call 5 target-audience members, say the name aloud without spelling.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p07_sr_5d_brand_evaluation | downstream | 0.17 |
-| [[p01_kc_brand_book_patterns]] | sibling | 0.17 |
+| [[kc_brand_book_patterns]] | sibling | 0.17 |
 | p03_sp_brand_nucleus | downstream | 0.16 |

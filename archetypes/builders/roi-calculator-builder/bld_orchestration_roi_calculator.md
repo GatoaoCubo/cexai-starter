@@ -51,5 +51,5 @@ Does NOT handle cost budgeting (ops team) or actual usage tracking (usage_report
 | [[roi-calculator-builder]] | upstream | 0.29 |
 | [[bld_config_roi_calculator]] | upstream | 0.29 |
 | n00_roi_calculator_manifest | upstream | 0.26 |
-| [[bld_instruction_roi_calculator]] | upstream | 0.25 |
+| [[bld_prompt_roi_calculator]] | upstream | 0.25 |
 | [[kc_roi_calculator]] | upstream | 0.25 |

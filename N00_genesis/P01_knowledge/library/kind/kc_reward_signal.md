@@ -110,8 +110,8 @@ Primary 8F verb: GOVERN (the reward_signal feeds F7 scoring; it informs, it does
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_llm_judge]] | sibling | 0.35 |
-| [[bld_collaboration_llm_judge]] | downstream | 0.34 |
+| [[kc_llm_judge]] | sibling | 0.35 |
+| [[bld_orchestration_llm_judge]] | downstream | 0.34 |
 | p07_llm_judge | upstream | 0.32 |
 | [[llm-judge-builder]] | upstream | 0.30 |
-| [[bld_knowledge_card_reward_signal]] | sibling | 0.29 |
+| [[bld_knowledge_reward_signal]] | sibling | 0.29 |

@@ -61,8 +61,8 @@ DISCOVER → EXTRACT_USP → GENERATE(5 approaches × 3 lengths) → FILTER(3 te
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_tagline]] | downstream | 0.47 |
+| [[bld_orchestration_tagline]] | downstream | 0.47 |
 | [[bld_tools_tagline]] | upstream | 0.42 |
 | [[bld_memory_tagline]] | downstream | 0.41 |
-| [[bld_instruction_tagline]] | upstream | 0.38 |
+| [[bld_prompt_tagline]] | upstream | 0.38 |
 | [[tagline-builder]] | upstream | 0.37 |

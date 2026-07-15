@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[bld_architecture_workflow_primitive]] | related | 0.42 |
 | [[workflow-primitive-builder]] | related | 0.41 |
 | [[bld_tools_workflow_primitive]] | related | 0.39 |
-| [[bld_collaboration_workflow_primitive]] | related | 0.39 |
+| [[bld_orchestration_workflow_primitive]] | related | 0.39 |
 | n00_workflow_primitive_manifest | related | 0.38 |

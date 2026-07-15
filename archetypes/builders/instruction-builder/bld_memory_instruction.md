@@ -65,7 +65,7 @@ Steps_count in frontmatter must be updated manually after adding or removing ste
 ## Builder Context
 
 This ISO operates within the `instruction-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -110,5 +110,5 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 | [[instruction-builder]] | upstream | 0.41 |
 | p10_lr_chain_builder | sibling | 0.40 |
 | bld_instruction_chain | upstream | 0.39 |
-| [[p01_kc_instruction]] | upstream | 0.37 |
+| [[kc_instruction]] | upstream | 0.37 |
 | tpl_instruction | upstream | 0.37 |

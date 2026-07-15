@@ -71,8 +71,8 @@ NEVER include runtime environment variables or infrastructure-specific credentia
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_white_label_config]] | upstream | 0.49 |
+| [[bld_knowledge_white_label_config]] | upstream | 0.49 |
 | [[p10_mem_white_label_config_builder]] | downstream | 0.48 |
 | n00_white_label_config_manifest | related | 0.37 |
-| [[bld_instruction_white_label_config]] | upstream | 0.36 |
+| [[bld_prompt_white_label_config]] | upstream | 0.36 |
 | [[p11_qg_white_label_config]] | downstream | 0.35 |

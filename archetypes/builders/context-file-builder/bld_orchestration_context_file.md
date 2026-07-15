@@ -89,8 +89,8 @@ templates (prompt_template), or task-scoped recipes (instruction kind).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_system_prompt]] | sibling | 0.41 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.41 |
 | [[context-file-builder]] | related | 0.41 |
 | n00_context_file_manifest | related | 0.37 |
 | [[kc_context_file]] | upstream | 0.37 |
-| [[bld_collaboration_agent]] | sibling | 0.35 |
+| [[bld_orchestration_agent]] | sibling | 0.35 |

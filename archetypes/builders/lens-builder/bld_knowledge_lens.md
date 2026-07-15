@@ -76,5 +76,5 @@ Lenses are analytical perspectives applied to artifacts to filter, emphasize, or
 | [[lens-builder]] | related | 0.63 |
 | [[p03_ins_lens]] | downstream | 0.62 |
 | [[bld_architecture_lens]] | downstream | 0.58 |
-| [[bld_collaboration_lens]] | related | 0.53 |
+| [[bld_orchestration_lens]] | related | 0.53 |
 | [[bld_memory_lens]] | downstream | 0.52 |

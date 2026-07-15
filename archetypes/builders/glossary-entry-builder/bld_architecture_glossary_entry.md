@@ -67,8 +67,8 @@ knowledge_index (P10)    --depends-->  glossary_entry
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_glossary_entry]] | upstream | 0.52 |
+| [[kc_glossary_entry]] | upstream | 0.52 |
 | [[p11_qg_glossary_entry]] | downstream | 0.45 |
 | [[glossary-entry-builder]] | upstream | 0.44 |
 | n00_glossary_entry_manifest | upstream | 0.42 |
-| [[bld_knowledge_card_glossary_entry]] | upstream | 0.41 |
+| [[bld_knowledge_glossary_entry]] | upstream | 0.41 |

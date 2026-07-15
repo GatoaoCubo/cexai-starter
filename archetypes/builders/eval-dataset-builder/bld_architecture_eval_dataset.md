@@ -87,7 +87,7 @@ model           --depends-->  eval_dataset (via eval_runner)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[eval-dataset-builder]] | upstream | 0.50 |
-| [[bld_collaboration_eval_dataset]] | downstream | 0.49 |
-| [[p01_kc_eval_dataset]] | upstream | 0.44 |
+| [[bld_orchestration_eval_dataset]] | downstream | 0.49 |
+| [[kc_eval_dataset]] | upstream | 0.44 |
 | [[p11_qg_eval_dataset]] | downstream | 0.42 |
-| [[bld_instruction_eval_dataset]] | upstream | 0.36 |
+| [[bld_prompt_eval_dataset]] | upstream | 0.36 |

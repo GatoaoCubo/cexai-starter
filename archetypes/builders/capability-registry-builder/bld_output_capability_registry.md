@@ -88,6 +88,6 @@ query_interface: "python _tools/cex_query.py --registry p08_cr_{{registry_name}}
 |----------|-------------|-------|
 | [[capability-registry-builder]] | downstream | 0.39 |
 | [[bld_schema_capability_registry]] | downstream | 0.38 |
-| [[bld_instruction_capability_registry]] | upstream | 0.36 |
+| [[bld_prompt_capability_registry]] | upstream | 0.36 |
 | [[bld_config_capability_registry]] | downstream | 0.35 |
 | [[p08_qg_capability_registry]] | downstream | 0.33 |

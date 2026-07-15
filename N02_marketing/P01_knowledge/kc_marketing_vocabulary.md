@@ -113,7 +113,7 @@ promoted_rules:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | user_journey_n02 | downstream | 0.34 |
-| [[p01_kc_campaign]] | sibling | 0.33 |
+| [[kc_campaign]] | sibling | 0.33 |
 | [[p01_kc_marketing]] | sibling | 0.30 |
 | p04_cli_copy_analyzer_n02 | downstream | 0.25 |
 | p08_cm_n02 | downstream | 0.24 |

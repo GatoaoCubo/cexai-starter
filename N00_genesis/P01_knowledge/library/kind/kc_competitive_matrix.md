@@ -103,5 +103,5 @@ DIFFERENTIATION = <DIFFERENTIATION>  # gap this product exploits
 | sales_playbook_n06 | downstream | 0.30 |
 | kc_discovery_questions | sibling | 0.28 |
 | p01_kc_pillar_brief_p03_prompt_en | sibling | 0.28 |
-| [[p01_kc_competitive_positioning]] | sibling | 0.28 |
+| [[kc_competitive_positioning]] | sibling | 0.28 |
 | p01_kc_pillar_brief_p02_model_en | sibling | 0.28 |

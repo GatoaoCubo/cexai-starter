@@ -110,5 +110,5 @@ A `validator` (P06) is a deterministic, binary (pass/fail) technical check appli
 | [[validator-builder]] | downstream | 0.54 |
 | [[p11_qg_validator]] | downstream | 0.52 |
 | [[bld_memory_validator]] | downstream | 0.47 |
-| [[bld_collaboration_validator]] | downstream | 0.45 |
+| [[bld_orchestration_validator]] | downstream | 0.45 |
 | [[p03_ins_validator]] | downstream | 0.43 |

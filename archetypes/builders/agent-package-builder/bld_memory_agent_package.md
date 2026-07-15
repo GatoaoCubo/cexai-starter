@@ -55,7 +55,7 @@ LLM-agnostic design means: no model names in instructions, no API-specific synta
 ## Builder Context
 
 This ISO operates within the `agent-package-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -102,8 +102,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_agent_package_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_agent_package]] | upstream | 0.43 |
-| [[bld_knowledge_card_agent_package]] | upstream | 0.37 |
+| [[bld_prompt_agent_package]] | upstream | 0.43 |
+| [[bld_knowledge_agent_package]] | upstream | 0.37 |
 | [[agent-package-builder]] | upstream | 0.36 |
 | [[p11_qg_agent_package]] | downstream | 0.33 |
 | [[bld_schema_agent_package]] | upstream | 0.32 |

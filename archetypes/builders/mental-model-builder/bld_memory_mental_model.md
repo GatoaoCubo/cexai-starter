@@ -89,7 +89,7 @@ python _tools/cex_score.py --apply bld-memory-mental-model.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mental-model-builder]] | upstream | 0.60 |
-| [[bld_collaboration_mental_model]] | upstream | 0.58 |
-| [[bld_knowledge_card_mental_model]] | upstream | 0.53 |
+| [[bld_orchestration_mental_model]] | upstream | 0.58 |
+| [[bld_knowledge_mental_model]] | upstream | 0.53 |
 | [[p03_ins_mental_model]] | upstream | 0.46 |
 | [[runtime-state-builder]] | related | 0.41 |

@@ -46,7 +46,7 @@ Reviewed artifacts showed matrices aligned with procurement eval criteria had 30
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[competitive-matrix-builder]] | upstream | 0.29 |
-| [[bld_instruction_competitive_matrix]] | upstream | 0.26 |
+| [[bld_prompt_competitive_matrix]] | upstream | 0.26 |
 | [[p10_mem_eval_metric_builder]] | sibling | 0.24 |
 | p10_mem_case_study_builder | sibling | 0.22 |
-| [[bld_collaboration_competitive_matrix]] | downstream | 0.21 |
+| [[bld_orchestration_competitive_matrix]] | downstream | 0.21 |

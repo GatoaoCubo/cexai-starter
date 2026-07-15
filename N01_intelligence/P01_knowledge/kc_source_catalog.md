@@ -92,6 +92,6 @@ Trends: pytrends → Serper trends → skip
 |----------|-------------|-------|
 | [[bld_tools_research_pipeline]] | downstream | 0.74 |
 | ex_research_pipeline_ecommerce_br | downstream | 0.39 |
-| [[bld_knowledge_card_search_tool]] | sibling | 0.39 |
+| [[bld_knowledge_search_tool]] | sibling | 0.39 |
 | [[bld_config_research_pipeline]] | downstream | 0.35 |
 | [[search-tool-builder]] | downstream | 0.30 |

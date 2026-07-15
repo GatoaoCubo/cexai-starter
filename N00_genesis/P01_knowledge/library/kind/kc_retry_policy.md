@@ -106,7 +106,7 @@ Operation failed?
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_retry_policy]] | sibling | 0.72 |
+| [[bld_knowledge_retry_policy]] | sibling | 0.72 |
 | [[bld_schema_retry_policy]] | downstream | 0.53 |
 | [[retry-policy-builder]] | downstream | 0.52 |
 | [[p10_lr_retry_policy_builder]] | downstream | 0.48 |

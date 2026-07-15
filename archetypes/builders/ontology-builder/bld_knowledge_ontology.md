@@ -102,7 +102,7 @@ Ontologies define formal classification structures for knowledge domains -- spec
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p10_lr_ontology_builder]] | downstream | 0.44 |
-| [[bld_instruction_ontology]] | downstream | 0.43 |
+| [[bld_prompt_ontology]] | downstream | 0.43 |
 | [[kc_ontology]] | sibling | 0.41 |
 | [[ontology-builder]] | related | 0.39 |
 | [[p11_qg_ontology]] | downstream | 0.37 |

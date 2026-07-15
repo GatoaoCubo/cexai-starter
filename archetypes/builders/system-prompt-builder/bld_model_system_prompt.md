@@ -123,8 +123,8 @@ Body MUST stay under 4096 bytes. Every rule must be falsifiable. No filler prose
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_system_prompt]] | related | 0.49 |
-| [[bld_knowledge_card_system_prompt]] | related | 0.49 |
+| [[bld_orchestration_system_prompt]] | related | 0.49 |
+| [[bld_knowledge_system_prompt]] | related | 0.49 |
 | [[bld_memory_system_prompt]] | downstream | 0.47 |
 | [[action-prompt-builder]] | sibling | 0.46 |
 | [[agent-builder]] | sibling | 0.41 |

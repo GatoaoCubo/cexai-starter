@@ -40,9 +40,9 @@ related:
 | CEX system | Multi-agent orchestration framework (300 schemas, 12 bounded contexts, 8 agents) |
 | 8F pipeline | 8-stage build pipeline: Constrain->Become->Inject->Reason->Call->Produce->Govern->Collaborate |
 | 12 pillars | DDD bounded contexts (P01 Knowledge -> P12 Orchestration) |
-| nucleus ([[p01_kc_agent]]) | Autonomous agent with specialized role, domain, tools, sin-driven objective |
+| nucleus ([[kc_agent]]) | Autonomous agent with specialized role, domain, tools, sin-driven objective |
 | N07 orchestrator | Workflow orchestrator (Temporal/Airflow); dispatches + consolidates, never builds |
-| kind | Schema type / artifact class (300 registered; naming, max bytes, pillar, builder) |
+| kind | Schema type / artifact class (125 registered; naming, max bytes, pillar, builder) |
 | builder | Code generator: 12 ISOs per kind (1:1 with pillars); schema + context -> artifact |
 | ISO | Config file per concern (model, prompt, knowledge, tools, output, schema, eval, arch, config, memory, feedback, orchestration) |
 | artifact | .md + YAML frontmatter following kind schema; compiled to .yaml |
@@ -54,7 +54,7 @@ related:
 | dispatch | Task queue: solo (1), grid (N parallel), swarm (N same-kind) |
 | wave | Pipeline stage: sequential group; gate required before next stage |
 | grid | Parallel execution pool (max 6 agents, isolated sessions) |
-| RAG ([[p01_kc_embedding_config]]) | TF-IDF + Haiku reranking on 3647-doc corpus; Phase 0 MCP for external context; hybrid retrieval (dense + sparse) fused via RRF |
+| RAG ([[kc_embedding_config]]) | TF-IDF + Haiku reranking on the full repo doc corpus; Phase 0 MCP for external context; hybrid retrieval (dense + sparse) fused via RRF |
 
 ## Top 20 Kinds: Industry Equivalents
 
@@ -66,7 +66,7 @@ related:
 | `system_prompt` | LLM system message / RLHF instruction set |
 | `workflow` | DAG / state machine (Airflow DAG, GitHub Actions) |
 | `quality_gate` | CI gate: 7 hard gates + 5D rubric |
-| `knowledge_index` | TF-IDF / vector search index (3647 docs) |
+| `knowledge_index` | TF-IDF / vector search index (repo-wide doc corpus) |
 | `guardrail` | Policy enforcement / content filter (halts before F6) |
 | `env_config` | 12-factor environment config (keys, limits, routing) |
 | `entity_memory` | Persistent entity store (shared across sessions + agents) |
@@ -80,7 +80,7 @@ related:
 
 1. **DDD.** 12 pillars = 12 bounded contexts. Cross-pillar refs are explicit artifact IDs. Each context owns its schema + builder registry.
 2. **CI/CD.** 8F is a typed build pipeline: F7 gate (min 8.0), retry budget = 2, F8 compiles `.md` to `.yaml`.
-3. **Typed registry.** 300 kinds with JSON schema + naming rule + max bytes. `cex_doctor.py` = corpus-wide linter.
+3. **Typed registry.** 125 kinds with JSON schema + naming rule + max bytes. `cex_doctor.py` = corpus-wide linter.
 4. **Sin = loss function.** Sin lens = RLHF behavioral prior. N05 (Wrath) maximizes rejection. N07 (Sloth) minimizes direct work, delegates all.
 5. **Self-indexing RAG.** Phase 0: MCP (N07). Phase 1: TF-IDF. Phase 2: Haiku rerank. F8 re-indexes each artifact -- every build compounds the corpus.
 

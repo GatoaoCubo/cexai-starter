@@ -45,8 +45,8 @@ Reviewed artifacts from Q3 2023 demonstrated 30% faster validation when TCO was 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_roi_calculator]] | upstream | 0.47 |
+| [[bld_prompt_roi_calculator]] | upstream | 0.47 |
 | [[roi-calculator-builder]] | downstream | 0.41 |
 | [[p11_qg_roi_calculator]] | downstream | 0.34 |
 | [[kc_roi_calculator]] | upstream | 0.32 |
-| [[bld_knowledge_card_roi_calculator]] | upstream | 0.29 |
+| [[bld_knowledge_roi_calculator]] | upstream | 0.29 |

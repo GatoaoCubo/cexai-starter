@@ -79,5 +79,5 @@ Embedding configs define how text is converted to vectors for semantic search: m
 | [[p11_qg_embedding_config]] | downstream | 0.47 |
 | [[p10_lr_embedding_config_builder]] | downstream | 0.47 |
 | [[embedding-config-builder]] | related | 0.46 |
-| [[p01_kc_embedding_config]] | sibling | 0.45 |
+| [[kc_embedding_config]] | sibling | 0.45 |
 | p01_emb_nomic_embed_text | related | 0.42 |

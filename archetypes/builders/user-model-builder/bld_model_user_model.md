@@ -162,7 +162,7 @@ storage:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_user_model]] | downstream | 0.63 |
+| [[bld_orchestration_user_model]] | downstream | 0.63 |
 | [[bld_architecture_user_model]] | upstream | 0.59 |
 | [[kc_user_model]] | upstream | 0.59 |
-| [[bld_knowledge_card_user_model]] | upstream | 0.51 |
+| [[bld_knowledge_user_model]] | upstream | 0.51 |

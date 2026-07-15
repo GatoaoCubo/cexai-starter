@@ -83,6 +83,6 @@ Guardrails are external safety boundaries that prevent agents from causing damag
 |----------|-------------|-------|
 | [[p10_lr_guardrail_builder]] | downstream | 0.50 |
 | [[guardrail-builder]] | downstream | 0.48 |
-| [[bld_instruction_guardrail]] | downstream | 0.45 |
+| [[bld_prompt_guardrail]] | downstream | 0.45 |
 | [[p11_qg_guardrail]] | downstream | 0.41 |
-| [[bld_collaboration_guardrail]] | downstream | 0.31 |
+| [[bld_orchestration_guardrail]] | downstream | 0.31 |

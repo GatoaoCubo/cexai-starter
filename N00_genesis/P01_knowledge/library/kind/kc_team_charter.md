@@ -117,5 +117,5 @@ DEADLINE          = <DEADLINE>           # completion date
 | [[team-charter-builder]] | downstream | 0.45 |
 | [[bld_tools_team_charter]] | downstream | 0.40 |
 | n00_team_charter_manifest | sibling | 0.39 |
-| [[bld_knowledge_card_team_charter]] | sibling | 0.38 |
-| [[bld_collaboration_team_charter]] | downstream | 0.33 |
+| [[bld_knowledge_team_charter]] | sibling | 0.38 |
+| [[bld_orchestration_team_charter]] | downstream | 0.33 |

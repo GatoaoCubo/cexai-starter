@@ -128,8 +128,8 @@ ID must match `^p09_rtp_[a-z][a-z0-9_]+$`. Body must not exceed 2048 bytes.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_retry_policy]] | upstream | 0.65 |
+| [[bld_knowledge_retry_policy]] | upstream | 0.65 |
 | [[bld_architecture_retry_policy]] | upstream | 0.61 |
 | [[kc_retry_policy]] | upstream | 0.61 |
 | [[p10_lr_retry_policy_builder]] | downstream | 0.54 |
-| [[bld_collaboration_retry_policy]] | downstream | 0.48 |
+| [[bld_orchestration_retry_policy]] | downstream | 0.48 |

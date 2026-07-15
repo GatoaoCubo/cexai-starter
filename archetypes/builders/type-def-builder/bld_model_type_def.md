@@ -121,8 +121,8 @@ Body MUST stay under 3072 bytes. Constraints must be machine-readable structured
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_type_def]] | related | 0.49 |
+| [[bld_orchestration_type_def]] | related | 0.49 |
 | [[bld_architecture_type_def]] | downstream | 0.41 |
 | [[bld_memory_type_def]] | downstream | 0.39 |
 | n00_type_def_manifest | related | 0.37 |
-| [[bld_knowledge_card_type_def]] | upstream | 0.35 |
+| [[bld_knowledge_type_def]] | upstream | 0.35 |

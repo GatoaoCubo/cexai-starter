@@ -14,7 +14,7 @@ tags:
   - "taxonomy"
   - "classification"
   - "hierarchy"
-tldr: "A hierarchical classification system organizing CEX's 300 kinds across 12 pillars with canonical tags, enforced by kind registry and schema contracts."
+tldr: "A hierarchical classification system organizing CEX's 125 kinds across 12 pillars with canonical tags, enforced by kind registry and schema contracts."
 keywords:
   - "kinds across"
   - "pillars with canonical tags"
@@ -116,7 +116,7 @@ Injects structured classification metadata into all CEX artifacts during creatio
 ## Taxonomy Evolution
 
 - **Phase 1 (2025)**: Initial 12 pillars defined with 50 kinds.  
-- **Phase 2 (2026)**: Expanded to 300 kinds across all pillars.  
+- **Phase 2 (2026)**: Expanded to 300 kinds across all pillars (now 125 in this starter).  
 - **Phase 3 (2027)**: Integration with AI-driven classification agents.  
 - **Phase 4 (2028)**: Dynamic schema contracts with versioned evolution.  
 - **Phase 5 (2029)**: Full automation of taxonomy maintenance via machine learning.  
@@ -173,5 +173,5 @@ Injects structured classification metadata into all CEX artifacts during creatio
 | p04_cli_taxonomy_builder_n04 | downstream | 0.29 |
 | p06_schema_taxonomy | downstream | 0.27 |
 | [[ontology-builder]] | related | 0.27 |
-| [[p01_kc_capability_registry]] | downstream | 0.23 |
+| [[kc_capability_registry]] | downstream | 0.23 |
 | p06_is_knowledge_data_model | downstream | 0.22 |

@@ -62,7 +62,7 @@ High for prompts in stable domains. Lower for prompts in exploratory domains whe
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[action-prompt-builder]] | upstream | 0.37 |
-| [[bld_instruction_action_prompt]] | upstream | 0.31 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.30 |
-| [[bld_instruction_input_schema]] | upstream | 0.30 |
-| [[bld_knowledge_card_action_prompt]] | upstream | 0.28 |
+| [[bld_prompt_action_prompt]] | upstream | 0.31 |
+| [[bld_orchestration_action_prompt]] | downstream | 0.30 |
+| [[bld_prompt_input_schema]] | upstream | 0.30 |
+| [[bld_knowledge_action_prompt]] | upstream | 0.28 |

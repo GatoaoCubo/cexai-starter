@@ -92,5 +92,5 @@ Session states are ephemeral snapshots of an agent's execution context — they 
 | [[session-state-builder]] | downstream | 0.49 |
 | [[bld_memory_session_state]] | downstream | 0.43 |
 | [[bld_architecture_session_state]] | downstream | 0.42 |
-| [[bld_collaboration_session_state]] | downstream | 0.40 |
+| [[bld_orchestration_session_state]] | downstream | 0.40 |
 | [[bld_config_session_state]] | downstream | 0.38 |

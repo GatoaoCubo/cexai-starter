@@ -96,7 +96,7 @@ A lifecycle rule is a declarative, evaluable policy that governs when artifacts 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_manifest_lifecycle_rule]] | related | 0.38 |
-| [[bld_collaboration_lifecycle_rule]] | related | 0.33 |
+| [[bld_orchestration_lifecycle_rule]] | related | 0.33 |
 | [[bld_memory_lifecycle_rule]] | upstream | 0.32 |
 | [[p11_qg_lifecycle_rule]] | related | 0.29 |
-| [[bld_knowledge_card_lifecycle_rule]] | sibling | 0.27 |
+| [[bld_knowledge_lifecycle_rule]] | sibling | 0.27 |

@@ -94,6 +94,6 @@ Schedules are temporal trigger definitions that determine WHEN a workflow starts
 |----------|-------------|-------|
 | [[schedule-builder]] | downstream | 0.61 |
 | [[p11_qg_schedule]] | downstream | 0.53 |
-| [[bld_collaboration_schedule]] | downstream | 0.51 |
-| [[bld_instruction_schedule]] | downstream | 0.49 |
-| [[p01_kc_schedule]] | sibling | 0.48 |
+| [[bld_orchestration_schedule]] | downstream | 0.51 |
+| [[bld_prompt_schedule]] | downstream | 0.49 |
+| [[kc_schedule]] | sibling | 0.48 |

@@ -48,8 +48,8 @@ Does NOT handle customer segment analysis (ICP) or narrative content (pitch_deck
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_customer_segment]] | sibling | 0.32 |
+| [[bld_orchestration_customer_segment]] | sibling | 0.32 |
 | bld_collaboration_cohort_analysis | sibling | 0.26 |
-| [[bld_collaboration_eval_metric]] | sibling | 0.25 |
+| [[bld_orchestration_eval_metric]] | sibling | 0.25 |
 | bld_collaboration_discovery_questions | sibling | 0.24 |
 | bld_collaboration_reward_model | sibling | 0.23 |

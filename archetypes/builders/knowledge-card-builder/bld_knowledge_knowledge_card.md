@@ -92,5 +92,5 @@ Knowledge cards are atomic searchable facts — the smallest retrieval unit in a
 | p01_kc_knowledge_best_practices | sibling | 0.41 |
 | [[knowledge-card-builder]] | downstream | 0.39 |
 | p01_kc_creation_best_practices | sibling | 0.38 |
-| [[bld_instruction_knowledge_card]] | downstream | 0.38 |
-| [[bld_collaboration_knowledge_card]] | downstream | 0.32 |
+| [[bld_prompt_knowledge_card]] | downstream | 0.38 |
+| [[bld_orchestration_knowledge_card]] | downstream | 0.32 |

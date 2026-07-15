@@ -87,7 +87,7 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[boot-config-builder]] | related | 0.37 |
-| [[bld_collaboration_boot_config]] | related | 0.34 |
-| [[p01_kc_boot_config]] | related | 0.34 |
+| [[bld_orchestration_boot_config]] | related | 0.34 |
+| [[kc_boot_config]] | related | 0.34 |
 | n00_boot_config_manifest | related | 0.33 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.33 |

@@ -73,7 +73,7 @@ Default: domain_kc. Use meta_kc only for CEX system documentation.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_output_validator]] | sibling | 0.35 |
-| [[bld_collaboration_output_validator]] | downstream | 0.34 |
+| [[bld_orchestration_output_validator]] | downstream | 0.34 |
 | [[p11_fb_validator]] | downstream | 0.30 |
 | p01_kc_knowledge_best_practices | upstream | 0.30 |
 | [[p11_fb_output_validator]] | downstream | 0.29 |

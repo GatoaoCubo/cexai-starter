@@ -55,6 +55,6 @@ This skill is cross-runtime. Non-Claude runtimes read the mirrored copy under `.
 |----------|-------------|-------|
 | bld_collaboration_memory_type | related | 0.33 |
 | p04_skill_memory_extract | related | 0.33 |
-| [[bld_collaboration_memory_scope]] | related | 0.33 |
-| [[p01_kc_memory_scope]] | related | 0.31 |
+| [[bld_orchestration_memory_scope]] | related | 0.33 |
+| [[kc_memory_scope]] | related | 0.31 |
 | [[bld_memory_default]] | related | 0.30 |

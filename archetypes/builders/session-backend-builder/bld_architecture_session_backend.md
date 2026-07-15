@@ -75,7 +75,7 @@ guardrail (P11) --constrains--> session_backend (security rules for encryption a
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[session-backend-builder]] | downstream | 0.70 |
-| [[p01_kc_session_backend]] | downstream | 0.62 |
-| [[bld_collaboration_session_backend]] | downstream | 0.56 |
+| [[kc_session_backend]] | downstream | 0.62 |
+| [[bld_orchestration_session_backend]] | downstream | 0.56 |
 | [[p11_qg_session_backend]] | downstream | 0.53 |
 | [[bld_output_template_session_backend]] | upstream | 0.52 |

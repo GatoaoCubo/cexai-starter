@@ -66,6 +66,6 @@ I design output transformations so data is presented in readable, consumable for
 |----------|-------------|-------|
 | [[formatter-builder]] | upstream | 0.42 |
 | [[bld_architecture_formatter]] | upstream | 0.39 |
-| [[bld_collaboration_input_schema]] | sibling | 0.37 |
-| [[bld_collaboration_response_format]] | sibling | 0.35 |
-| [[bld_collaboration_few_shot_example]] | sibling | 0.35 |
+| [[bld_orchestration_input_schema]] | sibling | 0.37 |
+| [[bld_orchestration_response_format]] | sibling | 0.35 |
+| [[bld_orchestration_few_shot_example]] | sibling | 0.35 |

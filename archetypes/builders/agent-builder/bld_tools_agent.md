@@ -57,7 +57,7 @@ agent_package lists >= 10 files, capabilities_count matches body, llm_function =
 ## Builder Context
 
 This ISO operates within the `agent-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.

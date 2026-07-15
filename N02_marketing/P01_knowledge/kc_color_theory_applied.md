@@ -291,7 +291,7 @@ Success: green background + ✓ icon + "Success" label
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p01_kc_color_theory_applied | sibling | 0.60 |
-| [[p01_kc_brand_propagation_arch]] | sibling | 0.50 |
+| [[kc_brand_propagation_arch]] | sibling | 0.50 |
 | p01_kc_design_token_arch | sibling | 0.46 |
 | p06_is_tailwind_palette_n02 | downstream | 0.39 |
 | n06_output_visual_identity | downstream | 0.36 |

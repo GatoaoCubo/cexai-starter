@@ -94,7 +94,7 @@ python _tools/cex_score.py --apply bld-output-template-invariant.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_output_template_axiom]] | sibling | 0.36 |
-| [[bld_knowledge_card_invariant]] | related | 0.35 |
+| [[bld_knowledge_invariant]] | related | 0.35 |
 | [[bld_schema_invariant]] | related | 0.35 |
 | [\[p08_law_`{{NUMBER}}`\]] | related | 0.31 |
 | [[p03_ins_law]] | related | 0.31 |

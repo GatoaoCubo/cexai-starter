@@ -82,7 +82,7 @@ python _tools/cex_score.py --apply bld-config-context-window-config.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_context_window_config]] | upstream | 0.39 |
+| [[bld_prompt_context_window_config]] | upstream | 0.39 |
 | [[bld_config_retriever_config]] | sibling | 0.39 |
 | [[bld_config_prompt_version]] | sibling | 0.36 |
 | bld_config_quality_gate | sibling | 0.35 |

@@ -128,8 +128,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_chunk_strategy]] | downstream | 0.53 |
+| [[bld_orchestration_chunk_strategy]] | downstream | 0.53 |
 | [[retriever-config-builder]] | sibling | 0.48 |
 | [[p10_lr_chunk_strategy_builder]] | downstream | 0.47 |
-| [[bld_instruction_chunk_strategy]] | downstream | 0.45 |
+| [[bld_prompt_chunk_strategy]] | downstream | 0.45 |
 | [[bld_architecture_chunk_strategy]] | downstream | 0.44 |

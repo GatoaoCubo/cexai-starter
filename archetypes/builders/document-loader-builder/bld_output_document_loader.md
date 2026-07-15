@@ -100,7 +100,7 @@ for legal document RAG), and pipeline position (stage 1: raw file -> chunked Doc
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_document_loader]] | related | 0.45 |
+| [[bld_prompt_document_loader]] | related | 0.45 |
 | [[document_loader-builder]] | related | 0.45 |
 | [[bld_schema_document_loader]] | downstream | 0.44 |
 | [[p11_qg_document_loader]] | downstream | 0.43 |

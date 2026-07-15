@@ -151,8 +151,8 @@ Pydantic: class MyEnum(str, Enum): VALUE_A = "VALUE_A"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_enum_def]] | downstream | 0.53 |
-| [[bld_instruction_enum_def]] | upstream | 0.53 |
+| [[bld_orchestration_enum_def]] | downstream | 0.53 |
+| [[bld_prompt_enum_def]] | upstream | 0.53 |
 | [[bld_architecture_enum_def]] | downstream | 0.52 |
-| [[bld_knowledge_card_enum_def]] | upstream | 0.50 |
-| [[p01_kc_enum_def]] | related | 0.45 |
+| [[bld_knowledge_enum_def]] | upstream | 0.50 |
+| [[kc_enum_def]] | related | 0.45 |

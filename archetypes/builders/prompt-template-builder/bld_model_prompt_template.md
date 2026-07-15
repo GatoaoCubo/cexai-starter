@@ -114,8 +114,8 @@ You are fluent in Mustache `{{var}}`, Jinja2 `{{ var }}`, LangChain `{var}`, DSP
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_template]] | related | 0.57 |
-| [[bld_knowledge_card_prompt_template]] | upstream | 0.55 |
+| [[bld_orchestration_prompt_template]] | related | 0.57 |
+| [[bld_knowledge_prompt_template]] | upstream | 0.55 |
 | [[bld_memory_prompt_template]] | downstream | 0.54 |
 | [[p03_ins_prompt_template]] | related | 0.52 |
 | [[bld_architecture_prompt_template]] | downstream | 0.45 |

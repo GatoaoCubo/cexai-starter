@@ -170,7 +170,7 @@ model to finish*, and `system_prompt` is *the identity riding along inside it*.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prompt_template]] | upstream (the mold `## TEMPLATE` reuses) | 0.55 |
+| [[kc_prompt_template]] | upstream (the mold `## TEMPLATE` reuses) | 0.55 |
 | p01_kc_prompt_compiler | upstream (resolves target_kind before compilation) | 0.52 |
 | [[kc_system_prompt]] | sibling (identity embedded inside, not this kind itself) | 0.35 |
 | p01_kc_reverse_prompt | sibling (P03 runtime-emitted artifact -- contrast: reverse_prompt has no builder path, prompt_package now has both) | 0.33 |

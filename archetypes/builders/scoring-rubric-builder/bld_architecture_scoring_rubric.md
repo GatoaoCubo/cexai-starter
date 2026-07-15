@@ -71,6 +71,6 @@ scoring_rubric    --signals-->   calibration_drift
 |----------|-------------|-------|
 | [[scoring-rubric-builder]] | upstream | 0.50 |
 | [[bld_memory_scoring_rubric]] | downstream | 0.42 |
-| [[bld_knowledge_card_scoring_rubric]] | upstream | 0.42 |
-| [[p01_kc_scoring_rubric]] | upstream | 0.41 |
-| [[bld_collaboration_scoring_rubric]] | upstream | 0.36 |
+| [[bld_knowledge_scoring_rubric]] | upstream | 0.42 |
+| [[kc_scoring_rubric]] | upstream | 0.41 |
+| [[bld_orchestration_scoring_rubric]] | upstream | 0.36 |

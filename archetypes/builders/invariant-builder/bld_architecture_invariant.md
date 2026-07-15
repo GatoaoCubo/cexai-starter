@@ -72,8 +72,8 @@ guardrail       --depends-->   law  --signals-->      violation_event
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_invariant]] | related | 0.52 |
+| [[kc_invariant]] | related | 0.52 |
 | [[invariant-builder]] | related | 0.52 |
 | [[p03_ins_law]] | upstream | 0.47 |
 | [\[p08_law_`{{NUMBER}}`\]] | related | 0.45 |
-| [[bld_collaboration_invariant]] | related | 0.41 |
+| [[bld_orchestration_invariant]] | related | 0.41 |

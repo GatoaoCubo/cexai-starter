@@ -79,7 +79,7 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_signal]] | downstream | 0.55 |
+| [[bld_knowledge_signal]] | downstream | 0.55 |
 | bld_schema_handoff | sibling | 0.46 |
 | [[signal-builder]] | downstream | 0.42 |
 | [[p03_ins_signal_builder]] | upstream | 0.41 |

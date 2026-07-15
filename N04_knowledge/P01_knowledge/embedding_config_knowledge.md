@@ -102,7 +102,7 @@ You are the consuming agent that acts on this embedding_config under F3 INJECT.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[embedding-config-builder]] | related | 0.36 |
-| [[p01_kc_embedding_config]] | related | 0.32 |
+| [[kc_embedding_config]] | related | 0.32 |
 | [[p03_ins_embedder_provider]] | related | 0.32 |
-| [[bld_collaboration_model_provider]] | related | 0.30 |
+| [[bld_orchestration_model_provider]] | related | 0.30 |
 | [[embedder-provider-builder]] | related | 0.30 |

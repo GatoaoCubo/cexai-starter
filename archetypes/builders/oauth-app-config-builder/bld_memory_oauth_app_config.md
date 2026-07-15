@@ -46,7 +46,7 @@ Reviewed 15 configs; 70% had redundant scope definitions. 3 configs failed due t
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[oauth-app-config-builder]] | upstream | 0.37 |
-| [[bld_instruction_oauth_app_config]] | upstream | 0.36 |
+| [[bld_prompt_oauth_app_config]] | upstream | 0.36 |
 | [[kc_oauth_app_config]] | upstream | 0.29 |
-| [[bld_knowledge_card_oauth_app_config]] | upstream | 0.25 |
+| [[bld_knowledge_oauth_app_config]] | upstream | 0.25 |
 | bld_collaboration_partner_listing | downstream | 0.24 |

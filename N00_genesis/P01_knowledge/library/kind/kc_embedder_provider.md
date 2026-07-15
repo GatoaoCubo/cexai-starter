@@ -79,5 +79,5 @@ An embedder provider config connects CEX's knowledge retrieval system to a speci
 | [[p01_emb_openai_text_embedding_3_small]] | related | 0.53 |
 | [[embedder-provider-builder]] | downstream | 0.49 |
 | [[p11_qg_embedder_provider]] | downstream | 0.43 |
-| [[bld_knowledge_card_embedder_provider]] | sibling | 0.43 |
+| [[bld_knowledge_embedder_provider]] | sibling | 0.43 |
 | p01_kc_vector_embedding_model_selection | sibling | 0.43 |

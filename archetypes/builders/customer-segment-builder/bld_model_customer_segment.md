@@ -72,8 +72,8 @@ NEVER MIX ICP definitions with solution features or user experience details.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_customer_segment]] | upstream | 0.41 |
-| [[bld_collaboration_customer_segment]] | downstream | 0.40 |
+| [[bld_knowledge_customer_segment]] | upstream | 0.41 |
+| [[bld_orchestration_customer_segment]] | downstream | 0.40 |
 | [[p10_mem_customer_segment_builder]] | downstream | 0.38 |
-| [[bld_instruction_customer_segment]] | downstream | 0.37 |
-| [[p01_kc_customer_segment]] | upstream | 0.34 |
+| [[bld_prompt_customer_segment]] | downstream | 0.37 |
+| [[kc_customer_segment]] | upstream | 0.34 |

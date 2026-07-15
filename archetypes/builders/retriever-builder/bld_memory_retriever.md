@@ -78,5 +78,5 @@ never ingests.
 | [[bld_architecture_retriever]] | upstream | 0.46 |
 | [[retriever-builder]] | upstream | 0.45 |
 | [[p09_kc_retriever_domain]] | upstream | 0.42 |
-| [[p01_kc_retriever]] | upstream | 0.39 |
-| [[bld_collaboration_retriever]] | downstream | 0.36 |
+| [[kc_retriever]] | upstream | 0.39 |
+| [[bld_orchestration_retriever]] | downstream | 0.36 |

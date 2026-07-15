@@ -74,5 +74,5 @@ python _tools/cex_score.py --apply bld-config-guardrail.md
 | [[bld_schema_guardrail]] | upstream | 0.46 |
 | [[bld_output_template_guardrail]] | upstream | 0.36 |
 | [[p11_qg_guardrail]] | downstream | 0.35 |
-| [[bld_instruction_guardrail]] | upstream | 0.34 |
+| [[bld_prompt_guardrail]] | upstream | 0.34 |
 | n00_guardrail_manifest | downstream | 0.33 |

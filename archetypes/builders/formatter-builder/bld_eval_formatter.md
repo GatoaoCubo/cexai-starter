@@ -146,7 +146,7 @@ WHY THIS IS GOLDEN:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[formatter-builder]] | upstream | 0.42 |
-| [[bld_instruction_formatter]] | upstream | 0.39 |
-| [[bld_collaboration_formatter]] | downstream | 0.38 |
+| [[bld_prompt_formatter]] | upstream | 0.39 |
+| [[bld_orchestration_formatter]] | downstream | 0.38 |
 | [[bld_architecture_formatter]] | upstream | 0.37 |
 | p05_fmt_artifact_creation_report | upstream | 0.36 |

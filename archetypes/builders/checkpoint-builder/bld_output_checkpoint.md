@@ -81,8 +81,8 @@ Chain: `{{parent_checkpoint}}` -> this -> `{{next_checkpoint_if_known}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_checkpoint]] | upstream | 0.48 |
+| [[bld_prompt_checkpoint]] | upstream | 0.48 |
 | [[checkpoint-builder]] | downstream | 0.46 |
 | [[bld_architecture_checkpoint]] | downstream | 0.45 |
-| [[bld_collaboration_checkpoint]] | downstream | 0.44 |
-| [[bld_knowledge_card_checkpoint]] | upstream | 0.43 |
+| [[bld_orchestration_checkpoint]] | downstream | 0.44 |
+| [[bld_knowledge_checkpoint]] | upstream | 0.43 |

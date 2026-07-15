@@ -90,4 +90,4 @@ Five duties bind any agent that emits an artifact:
 | [[nucleus-def-builder]] | related | 0.34 |
 | n00_nucleus_def_manifest | related | 0.34 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.33 |
-| [[bld_collaboration_nucleus_def]] | related | 0.32 |
+| [[bld_orchestration_nucleus_def]] | related | 0.32 |

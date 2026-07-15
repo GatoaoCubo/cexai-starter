@@ -117,4 +117,4 @@ def enforce_vocabulary(text: str) -> str:
 | p08_pat_pricing_framework | downstream | 0.40 |
 | subscription_tier_n06 | downstream | 0.37 |
 | [[p01_kc_few_shot_examples_pricing_scenarios]] | sibling | 0.34 |
-| [[bld_knowledge_card_subscription_tier]] | sibling | 0.33 |
+| [[bld_knowledge_subscription_tier]] | sibling | 0.33 |

@@ -53,6 +53,6 @@ related:
 |----------|-------------|-------|
 | [[bld_tools_role_assignment]] | sibling | 0.40 |
 | bld_tools_pipeline_template | sibling | 0.37 |
-| [[bld_knowledge_card_crew_template]] | upstream | 0.32 |
-| [[bld_instruction_crew_template]] | upstream | 0.28 |
+| [[bld_knowledge_crew_template]] | upstream | 0.32 |
+| [[bld_prompt_crew_template]] | upstream | 0.28 |
 | bld_tools_discovery_questions | sibling | 0.27 |

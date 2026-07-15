@@ -77,8 +77,8 @@ None — independent builder (layer 0).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_version]] | sibling | 0.51 |
-| [[bld_collaboration_output_validator]] | sibling | 0.50 |
+| [[bld_orchestration_prompt_version]] | sibling | 0.51 |
+| [[bld_orchestration_output_validator]] | sibling | 0.50 |
 | [[constraint-spec-builder]] | upstream | 0.40 |
 | [[p10_lr_constraint_spec_builder]] | upstream | 0.37 |
 | [[bld_config_constraint_spec]] | upstream | 0.34 |

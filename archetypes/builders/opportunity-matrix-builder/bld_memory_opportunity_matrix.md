@@ -42,8 +42,8 @@ Successful artifacts transcribe section titles/columns byte-for-byte from `MOLD_
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_opportunity_matrix]] | upstream | 0.47 |
+| [[bld_prompt_opportunity_matrix]] | upstream | 0.47 |
 | [[opportunity-matrix-builder]] | downstream | 0.41 |
 | [[p11_qg_opportunity_matrix]] | downstream | 0.36 |
-| [[bld_knowledge_card_opportunity_matrix]] | upstream | 0.32 |
+| [[bld_knowledge_opportunity_matrix]] | upstream | 0.32 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.30 |

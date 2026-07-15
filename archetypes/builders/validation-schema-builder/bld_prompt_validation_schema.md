@@ -141,6 +141,6 @@ HARD gates (all must pass):
 |----------|-------------|-------|
 | [[bld_schema_validation_schema]] | downstream | 0.40 |
 | [[validation-schema-builder]] | downstream | 0.39 |
-| [[bld_knowledge_card_validation_schema]] | upstream | 0.38 |
-| [[bld_instruction_input_schema]] | sibling | 0.37 |
-| [[bld_collaboration_validation_schema]] | downstream | 0.35 |
+| [[bld_knowledge_validation_schema]] | upstream | 0.38 |
+| [[bld_prompt_input_schema]] | sibling | 0.37 |
+| [[bld_orchestration_validation_schema]] | downstream | 0.35 |

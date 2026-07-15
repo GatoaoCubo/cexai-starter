@@ -102,7 +102,7 @@ Versioned in git. Searchable by any nucleus. Peer-reviewable via F7c COUNCIL.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | 8f-reasoning | upstream | 0.90 |
-| [[p01_kc_knowledge_card]] | reference | 0.85 |
+| [[kc_knowledge_card]] | reference | 0.85 |
 | prompt-compiler-builder | upstream | 0.80 |
 | [[ex_lifecycle_engineer_mode]] | child | 1.00 |
 | [[ex_lifecycle_business_mode]] | child | 1.00 |

@@ -54,6 +54,6 @@ related:
 |----------|-------------|-------|
 | [[customer-segment-builder]] | upstream | 0.37 |
 | [[p10_mem_customer_segment_builder]] | downstream | 0.35 |
-| [[bld_collaboration_customer_segment]] | downstream | 0.30 |
+| [[bld_orchestration_customer_segment]] | downstream | 0.30 |
 | [[p02_qg_customer_segment]] | downstream | 0.29 |
-| [[p01_kc_customer_segment]] | upstream | 0.27 |
+| [[kc_customer_segment]] | upstream | 0.27 |

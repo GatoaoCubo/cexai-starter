@@ -69,8 +69,8 @@ spawn_config    --signals-->    spawn_event
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_spawn_config]] | downstream | 0.63 |
+| [[bld_orchestration_spawn_config]] | downstream | 0.63 |
 | [[spawn-config-builder]] | downstream | 0.49 |
 | [[bld_architecture_agent_card]] | sibling | 0.48 |
-| [[p01_kc_spawn_config]] | downstream | 0.46 |
+| [[kc_spawn_config]] | downstream | 0.46 |
 | bld_architecture_workflow | sibling | 0.45 |

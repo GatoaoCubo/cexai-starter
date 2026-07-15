@@ -86,8 +86,8 @@ python _tools/cex_score.py --apply bld-memory-model-provider.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_provider]] | upstream | 0.63 |
+| [[bld_orchestration_model_provider]] | upstream | 0.63 |
 | [[model-provider-builder]] | upstream | 0.62 |
-| [[bld_knowledge_card_model_provider]] | upstream | 0.60 |
+| [[bld_knowledge_model_provider]] | upstream | 0.60 |
 | [[bld_config_model_provider]] | upstream | 0.53 |
 | [[p03_ins_model_provider]] | upstream | 0.51 |

@@ -69,8 +69,8 @@ output_template.{broader}    --scaffolds--> a nucleus's recurring document (READ
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_output_template]] | upstream | 0.40 |
+| [[bld_knowledge_output_template]] | upstream | 0.40 |
 | bld_architecture_kind | sibling (reflexive-case source) | 0.39 |
 | [[bld_architecture_prompt_template]] | sibling (contrast) | 0.36 |
 | [[output-template-builder]] | upstream | 0.34 |
-| [[bld_instruction_output_template]] | upstream | 0.32 |
+| [[bld_prompt_output_template]] | upstream | 0.32 |

@@ -77,7 +77,7 @@ I produce cognitive maps with routing rules, decision trees, priorities, heurist
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mental-model-builder]] | related | 0.49 |
-| [[bld_collaboration_agent]] | sibling | 0.45 |
+| [[bld_orchestration_agent]] | sibling | 0.45 |
 | bld_collaboration_model_card | sibling | 0.44 |
-| [[bld_collaboration_runtime_state]] | sibling | 0.42 |
+| [[bld_orchestration_runtime_state]] | sibling | 0.42 |
 | [[p03_ins_mental_model]] | downstream | 0.42 |

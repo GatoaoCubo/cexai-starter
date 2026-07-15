@@ -78,7 +78,7 @@ python _tools/cex_score.py --apply p10-lr-output-validator-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_output_validator]] | upstream | 0.47 |
+| [[bld_knowledge_output_validator]] | upstream | 0.47 |
 | [[p10_lr_retriever_config_builder]] | sibling | 0.39 |
 | [[output-validator-builder]] | upstream | 0.39 |
 | [[p10_lr_handoff_protocol_builder]] | sibling | 0.38 |

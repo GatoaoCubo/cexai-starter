@@ -94,7 +94,7 @@ python _tools/cex_score.py --apply p10-lr-checkpoint-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[checkpoint-builder]] | downstream | 0.52 |
-| [[bld_instruction_checkpoint]] | upstream | 0.52 |
+| [[bld_prompt_checkpoint]] | upstream | 0.52 |
 | [[bld_architecture_checkpoint]] | upstream | 0.50 |
-| [[bld_collaboration_checkpoint]] | downstream | 0.50 |
-| [[bld_knowledge_card_checkpoint]] | upstream | 0.46 |
+| [[bld_orchestration_checkpoint]] | downstream | 0.50 |
+| [[bld_knowledge_checkpoint]] | upstream | 0.46 |

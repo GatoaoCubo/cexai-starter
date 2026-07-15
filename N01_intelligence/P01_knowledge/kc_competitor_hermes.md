@@ -317,7 +317,7 @@ code AGENTHERMES01 for free tier access during launch period.
 | 6 messaging integrations (vs OpenClaw's 24+) | CEX does not compete on messaging; N07 dispatch is CLI/API-native |
 | No enterprise features (no SSO, no audit trail, no SOC 2) | CEX F8 COLLABORATE: git commit + signal = audit trail built-in |
 | No multi-nucleus orchestration (single agent, not 7-nucleus grid) | CEX N07 orchestrates 6 parallel nuclei |
-| Ecosystem still maturing (80 projects vs LangChain's 200+ integrations) | CEX's 300+ builders compete on depth, not breadth |
+| Ecosystem still maturing (80 projects vs LangChain's 200+ integrations) | CEX's 119 builders compete on depth, not breadth |
 | No commercial observability layer (no LangSmith equivalent) | CEX cex_score.py + cex_quality_monitor.py + F7 = built-in |
 
 ---
@@ -351,7 +351,7 @@ integrated stack that no other OSS agent framework has.
 | Self-improvement | GEPA (ICLR 2026 Oral); 40% speedup | learning_record + memory_update + cex_evolve.py |
 | Memory architecture | 3-layer (bounded session + SQLite + 8 external L3 providers) | entity_memory + knowledge_index + learning_record |
 | MCP support | Bidirectional (client + server) | N07 MCP gateway (client; Phase 0 preflight) |
-| Knowledge system | Untyped Python skill files | 300 typed kinds x 12 pillars x 8F |
+| Knowledge system | Untyped Python skill files | 125 typed kinds x 12 pillars x 8F |
 | Quality system | None (no quality gates on skills) | F7 GOVERN: 9.0 target; 7 HARD gates; peer review |
 | Multi-nucleus | None (single agent) | 8-nucleus grid (N01-N07 + N00) |
 | Orchestration | None | N07 orchestrator + the Task tool + signal protocol |
@@ -366,7 +366,7 @@ integrated stack that no other OSS agent framework has.
  but lacks published benchmarks.
 3. Star count and community momentum -- 2-month project at 95K stars is extraordinary.
 
-1. Typed infrastructure: 300 kinds vs untyped Python skills.
+1. Typed infrastructure: 125 kinds vs untyped Python skills.
 2. Quality gates: F7 GOVERN + peer review vs no quality enforcement.
 3. Multi-nucleus orchestration: N07 grid vs single-agent.
 4. GDP (co-pilot mode): subjective decisions resolved with user before dispatch.
@@ -397,4 +397,4 @@ integrated stack that no other OSS agent framework has.
 | [[p01_kc_growth_casestudy_viral]] | sibling | 0.40 |
 | cm_cex_vs_landscape | downstream | 0.30 |
 | [[p01_kc_competitor_openclaw]] | sibling | 0.29 |
-| [[p01_kc_agent]] | sibling | 0.27 |
+| [[kc_agent]] | sibling | 0.27 |

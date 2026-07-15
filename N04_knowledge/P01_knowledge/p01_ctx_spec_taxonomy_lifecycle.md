@@ -55,7 +55,7 @@ related:
 
 ## Purpose
 
-CEX operates on 300 typed kinds. Without active stewardship, this taxonomy
+CEX operates on 125 typed kinds. Without active stewardship, this taxonomy
 becomes stale within 12-18 months as new AI2AI protocols, schema standards,
 and agent interoperability specs emerge. This document specifies the automated
 lifecycle system that keeps CEX kinds synchronized with the industry.
@@ -159,7 +159,7 @@ Recency filter: posts from last 7 days with > 50 points.
 Every Monday 08:00 UTC:
   1. Pull diffs from all active watchers (since last run)
   2. Extract candidate kind names via NER + schema heuristics
-  3. Dedupe against existing 300 kinds (embedding similarity > 0.85 = skip)
+  3. Dedupe against existing 125 kinds (embedding similarity > 0.85 = skip)
   4. Score each candidate: adoption + stability + urgency
   5. Write .cex/runtime/taxonomy_candidates/YYYY-MM-DD_{source}_{slug}.md
   6. Signal N07 if any candidate scores >= 7.0
@@ -273,7 +273,7 @@ FOR EACH candidate:
 
 When N07 approves a candidate for build, N03 must create:
 1. `kinds_meta.json` entry (status: draft, spec_version, upstream_source)
-2. `archetypes/builders/{kind}-builder/` -- 13 ISOs
+2. `archetypes/builders/{kind}-builder/` -- 12 ISOs
 3. `N00_genesis/P01_knowledge/library/kind/kc_{kind}.md`
 4. `N00_genesis/P{pillar}/{schema_dir}/tpl_{kind}.md`
 5. `.claude/agents/{kind}-builder.md`
@@ -518,7 +518,7 @@ New kinds added via assimilation MUST populate `upstream_source` and `spec_versi
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p01_kc_cex_llm_vocabulary_whitepaper]] | related | 0.21 |
-| [[bld_knowledge_card_capability_registry]] | related | 0.19 |
+| [[bld_knowledge_capability_registry]] | related | 0.19 |
 | p01_kc_atom_23_multiagent_protocols | related | 0.19 |
 | [[p01_kc_llm_vocabulary_atlas]] | related | 0.19 |
 | p01_kc_taxonomy_completeness_audit | related | 0.19 |

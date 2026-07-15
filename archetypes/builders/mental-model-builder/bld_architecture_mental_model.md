@@ -73,6 +73,6 @@ mental_model    --signals-->   routing_decision
 |----------|-------------|-------|
 | [[mental-model-builder]] | upstream | 0.52 |
 | [[p03_ins_mental_model]] | upstream | 0.50 |
-| [[bld_collaboration_mental_model]] | upstream | 0.48 |
-| [[p01_kc_mental_model]] | upstream | 0.48 |
-| [[bld_knowledge_card_mental_model]] | upstream | 0.47 |
+| [[bld_orchestration_mental_model]] | upstream | 0.48 |
+| [[kc_mental_model]] | upstream | 0.48 |
+| [[bld_knowledge_mental_model]] | upstream | 0.47 |

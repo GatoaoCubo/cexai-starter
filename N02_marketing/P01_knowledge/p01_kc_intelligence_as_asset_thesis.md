@@ -77,7 +77,7 @@ keep you housed. Only one shows up on the balance sheet.
 
 ### Axiom 1 -- Intelligence compounds when exchanged
 
-A [[p01_kc_knowledge_card]] produced by N01 enriches the context for every
+A [[kc_knowledge_card]] produced by N01 enriches the context for every
 future N03 build. A `scoring_rubric` from N05 raises the p01_kc_quality_gate bar
 for every builder that references it. A `workflow` exported from one
 CEXAI instance imports cleanly into another because the type system
@@ -98,7 +98,7 @@ behaviour.
 
 Git is the ledger. `commit` persists institutional memory. `push`
 shares it across teams. `pull` absorbs discoveries from forks. The
-artifact graph -- 300+ kinds, 12 pillars, 7 nuclei -- is the chart of
+artifact graph -- 125 kinds, 12 pillars, 7 nuclei -- is the chart of
 accounts. `cex_doctor.py` is the auditor. `quality: null` plus peer
 review is the audit trail.
 
@@ -180,7 +180,7 @@ on the public internet, not on us."
 
 **Thesis answer:** Institutional memory dies in people's heads when
 it lives there. CEXAI's `workflow`, `scoring_rubric`, and
-[[p01_kc_prompt_template]] kinds let your senior team encode their judgement
+[[kc_prompt_template]] kinds let your senior team encode their judgement
 once. Every junior session runs through the 8-Function Pipeline,
 inherits the institutional context, and produces governed output
 peer-reviewable by the same gates. The brain stays even when staff
@@ -220,7 +220,7 @@ discounts accordingly.
 In a CEXAI-native business, the buyer inherits a repository.
 Specifically:
 
-- A typed knowledge graph with 300+ artifact kinds
+- A typed knowledge graph with 125 artifact kinds
 - Peer-reviewed quality scores on every artifact
 - Provenance via `lineage_record` showing who produced what, when, and from which source
 - A multi-runtime configuration that does not lock the buyer into the seller's vendor contracts
@@ -248,7 +248,7 @@ universal.
 The endgame is a **collective cognition marketplace** -- specialized
 AI brains (healthcare compliance, fintech risk, legal due diligence,
 DTC playbooks, course content) that can be exchanged, forked, and
-composed via the [[p01_kc_knowledge_card]] type system. The X in CEXAI is not metaphorical. It is the unit of
+composed via the [[kc_knowledge_card]] type system. The X in CEXAI is not metaphorical. It is the unit of
 economic activity the system is designed to enable.
 
 You are not building a tool. You are seeding the infrastructure layer

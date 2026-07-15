@@ -72,7 +72,7 @@ I formalize architecture patterns with problem, solution, forces, consequences, 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pattern-builder]] | related | 0.36 |
-| [[bld_collaboration_learning_record]] | sibling | 0.33 |
-| [[bld_collaboration_knowledge_card]] | sibling | 0.30 |
+| [[bld_orchestration_learning_record]] | sibling | 0.33 |
+| [[bld_orchestration_knowledge_card]] | sibling | 0.30 |
 | [[bld_architecture_pattern]] | related | 0.29 |
-| [[bld_collaboration_agent]] | sibling | 0.29 |
+| [[bld_orchestration_agent]] | sibling | 0.29 |

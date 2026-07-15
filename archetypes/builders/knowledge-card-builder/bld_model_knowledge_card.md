@@ -127,8 +127,8 @@ tags: [{tag1}, {tag2}, {tag3}]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_knowledge_card]] | downstream | 0.44 |
-| [[bld_knowledge_card_knowledge_card]] | upstream | 0.42 |
-| [[bld_instruction_knowledge_card]] | downstream | 0.39 |
+| [[bld_orchestration_knowledge_card]] | downstream | 0.44 |
+| [[bld_knowledge_knowledge_card]] | upstream | 0.42 |
+| [[bld_prompt_knowledge_card]] | downstream | 0.39 |
 | n00_knowledge_card_manifest | upstream | 0.33 |
 | model-card-builder | sibling | 0.32 |

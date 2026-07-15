@@ -74,7 +74,7 @@ python _tools/cex_memory_update.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_kc_domain_vocabulary]] | upstream | 0.52 |
-| [[p01_kc_domain_vocabulary]] | upstream | 0.50 |
+| [[kc_domain_vocabulary]] | upstream | 0.50 |
 | [[bld_architecture_domain_vocabulary]] | upstream | 0.47 |
 | bld_memory_bounded_context | sibling | 0.47 |
 | [[bld_context_sources_domain_vocabulary]] | related | 0.44 |

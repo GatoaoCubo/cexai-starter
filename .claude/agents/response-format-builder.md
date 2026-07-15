@@ -87,7 +87,7 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[response-format-builder]] | related | 0.40 |
-| [[bld_collaboration_response_format]] | related | 0.36 |
+| [[bld_orchestration_response_format]] | related | 0.36 |
 | [[bld_memory_response_format]] | related | 0.32 |
 | [[bld_architecture_response_format]] | related | 0.31 |
 | [[system-prompt-builder]] | related | 0.30 |

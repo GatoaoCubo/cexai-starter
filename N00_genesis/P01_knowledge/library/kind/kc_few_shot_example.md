@@ -96,8 +96,8 @@ A few_shot_example is a curated input/output pair injected into prompts to demon
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_few_shot_example]] | downstream | 0.41 |
+| [[bld_orchestration_few_shot_example]] | downstream | 0.41 |
 | [[few-shot-example-builder]] | related | 0.39 |
 | n00_few_shot_example_manifest | sibling | 0.35 |
 | [[p10_lr_few_shot_example_builder]] | downstream | 0.32 |
-| [[bld_knowledge_card_few_shot_example]] | sibling | 0.31 |
+| [[bld_knowledge_few_shot_example]] | sibling | 0.31 |

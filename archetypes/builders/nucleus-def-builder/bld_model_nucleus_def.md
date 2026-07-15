@@ -97,8 +97,8 @@ Every field has a machine consumer. Write for the machine, annotate for the huma
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_nucleus_def]] | upstream | 0.59 |
-| [[bld_collaboration_nucleus_def]] | downstream | 0.53 |
+| [[bld_knowledge_nucleus_def]] | upstream | 0.59 |
+| [[bld_orchestration_nucleus_def]] | downstream | 0.53 |
 | n00_nucleus_def_manifest | related | 0.46 |
 | n00_readme | upstream | 0.41 |
 | [[p02_mm_cex_architecture_n04]] | upstream | 0.39 |

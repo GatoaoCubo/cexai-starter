@@ -135,4 +135,4 @@ OpenClaude ships ~18 bundled hooks as battle-tested implementations:
 | p01_kc_steps | sibling | 0.65 |
 | p01_kc_supabase_mcp | sibling | 0.61 |
 | p01_kc_skill | sibling | 0.56 |
-| [[p01_kc_retriever_config]] | sibling | 0.54 |
+| [[kc_retriever_config]] | sibling | 0.54 |

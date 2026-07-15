@@ -68,8 +68,8 @@ I produce agent definitions so downstream builders can configure, package, and d
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent_package]] | sibling | 0.52 |
-| [[bld_collaboration_boot_config]] | sibling | 0.51 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.47 |
-| [[p01_kc_agent]] | upstream | 0.47 |
+| [[bld_orchestration_agent_package]] | sibling | 0.52 |
+| [[bld_orchestration_boot_config]] | sibling | 0.51 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.47 |
+| [[kc_agent]] | upstream | 0.47 |
 | [[bld_architecture_agent]] | upstream | 0.45 |

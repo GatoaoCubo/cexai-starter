@@ -26,7 +26,7 @@ related:
 ## Inputs
 A target name/brand archetype + an aesthetic coordinate (temperature, density, form, mode, type-voice) + the contract p06_vs_design_system.
 ## Step 1 -- RESEARCH (F3 INJECT)
-- Load [[bld_schema_design_system]] (source of truth) + [[p01_kc_design_system]].
+- Load [[bld_schema_design_system]] (source of truth) + [[kc_design_system]].
 - Fix the aesthetic coordinate; confirm it is not a sibling of an existing system.
 - Decide the single signal hue + the dark/light mode + the type voice.
 ## Step 2 -- COMPOSE (F6 PRODUCE)

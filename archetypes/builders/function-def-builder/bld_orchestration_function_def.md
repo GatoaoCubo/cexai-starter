@@ -65,7 +65,7 @@ None — independent builder (layer 0). Function definitions are self-contained 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[function-def-builder]] | upstream | 0.39 |
-| [[bld_collaboration_search_tool]] | sibling | 0.38 |
-| [[bld_collaboration_code_executor]] | sibling | 0.36 |
-| [[bld_instruction_function_def]] | upstream | 0.29 |
-| [[bld_knowledge_card_function_def]] | upstream | 0.28 |
+| [[bld_orchestration_search_tool]] | sibling | 0.38 |
+| [[bld_orchestration_code_executor]] | sibling | 0.36 |
+| [[bld_prompt_function_def]] | upstream | 0.29 |
+| [[bld_knowledge_function_def]] | upstream | 0.28 |

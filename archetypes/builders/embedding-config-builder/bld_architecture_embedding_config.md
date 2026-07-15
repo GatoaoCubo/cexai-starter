@@ -75,7 +75,7 @@ workflow (P12) --independent-- embedding_config (workflow orchestrates; config p
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[embedding-config-builder]] | upstream | 0.55 |
-| [[bld_collaboration_embedding_config]] | downstream | 0.51 |
-| [[p01_kc_embedding_config]] | upstream | 0.41 |
+| [[bld_orchestration_embedding_config]] | downstream | 0.51 |
+| [[kc_embedding_config]] | upstream | 0.41 |
 | [[p11_qg_embedding_config]] | downstream | 0.39 |
-| [[bld_collaboration_retriever_config]] | downstream | 0.38 |
+| [[bld_orchestration_retriever_config]] | downstream | 0.38 |

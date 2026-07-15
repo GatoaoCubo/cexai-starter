@@ -88,7 +88,7 @@ Quality gate: `bld_quality_gate_agent_profile.md`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_agent_profile]] | upstream | 0.37 |
+| [[bld_prompt_agent_profile]] | upstream | 0.37 |
 | [[p11_qg_agent_profile]] | downstream | 0.23 |
 | p08_audit_agent_profile_builder | downstream | 0.22 |
 | [[bld_schema_agent_profile]] | downstream | 0.19 |

@@ -94,6 +94,6 @@ safety_policy is a document without an enforcement mechanism. You only handle ab
 |----------|-------------|-------|
 | [[kc_constitutional_rule]] | sibling | 0.56 |
 | [[bld_rules_constitutional_rule]] | sibling | 0.53 |
-| [[bld_instruction_constitutional_rule]] | related | 0.50 |
+| [[bld_prompt_constitutional_rule]] | related | 0.50 |
 | [[bld_memory_constitutional_rule]] | sibling | 0.49 |
 | [[bld_architecture_constitutional_rule]] | sibling | 0.48 |

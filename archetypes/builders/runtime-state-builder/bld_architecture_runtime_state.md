@@ -72,5 +72,5 @@ runtime_state   --signals-->      state_update
 | [[runtime-state-builder]] | downstream | 0.60 |
 | [[p03_ins_runtime_state]] | downstream | 0.52 |
 | [[bld_memory_runtime_state]] | downstream | 0.50 |
-| [[bld_collaboration_runtime_state]] | downstream | 0.49 |
+| [[bld_orchestration_runtime_state]] | downstream | 0.49 |
 | [[bld_architecture_session_state]] | sibling | 0.47 |

@@ -204,5 +204,5 @@ The store is intentionally boring, inspectable, and enforceable. That is an oper
 |----------|-------------|-------|
 | [[kno_vector_store_n03]] | sibling | 0.41 |
 | [[vector-store-builder]] | related | 0.40 |
-| [[bld_collaboration_vector_store]] | related | 0.38 |
+| [[bld_orchestration_vector_store]] | related | 0.38 |
 | [[kno_vector_store_n01]] | sibling | 0.35 |

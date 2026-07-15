@@ -118,7 +118,7 @@ python _tools/cex_score.py --apply artifact.md
 ## System Context
 
 This artifact participates in the CEX typed knowledge system, a fractal
-architecture with 12 pillars, 8 nuclei, and 300+ specialized builders.
+architecture with 12 pillars, 8 nuclei, and 119 specialized builders.
 Artifacts flow through the 8F pipeline: CONSTRAIN, BECOME, INJECT, REASON,
 CALL, PRODUCE, GOVERN, and COLLABORATE (F1-F8).
 

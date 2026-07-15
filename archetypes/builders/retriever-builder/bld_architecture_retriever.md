@@ -133,7 +133,7 @@ Stateless at query time — reads, never writes.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[retriever-builder]] | upstream | 0.60 |
-| [[p01_kc_retriever]] | upstream | 0.55 |
+| [[kc_retriever]] | upstream | 0.55 |
 | [[bld_memory_retriever]] | downstream | 0.47 |
 | n00_retriever_manifest | upstream | 0.43 |
 | [[search-tool-builder]] | upstream | 0.42 |

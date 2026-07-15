@@ -82,8 +82,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_reward_signal]] | sibling | 0.43 |
+| [[bld_prompt_reward_signal]] | sibling | 0.43 |
 | [[llm-judge-builder]] | downstream | 0.41 |
 | [[p11_qg_llm_judge]] | downstream | 0.39 |
-| [[bld_instruction_output_validator]] | sibling | 0.39 |
-| [[bld_instruction_eval_dataset]] | sibling | 0.39 |
+| [[bld_prompt_output_validator]] | sibling | 0.39 |
+| [[bld_prompt_eval_dataset]] | sibling | 0.39 |

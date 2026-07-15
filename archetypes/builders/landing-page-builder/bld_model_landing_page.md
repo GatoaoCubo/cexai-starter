@@ -158,7 +158,7 @@ quality_target: 9.0
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_landing_page]] | upstream | 0.55 |
-| [[bld_knowledge_card_landing_page]] | upstream | 0.49 |
+| [[bld_knowledge_landing_page]] | upstream | 0.49 |
 | n00_landing_page_manifest | related | 0.47 |
 | [[bld_schema_landing_page]] | downstream | 0.47 |
 | [[bld_tools_landing_page]] | upstream | 0.46 |

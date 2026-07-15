@@ -71,8 +71,8 @@ I define RBAC/ABAC/ACL rules, role hierarchies, allow/deny lists, and audit trai
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_path_config]] | sibling | 0.44 |
+| [[bld_orchestration_path_config]] | sibling | 0.44 |
 | [[permission-builder]] | related | 0.43 |
 | [[bld_architecture_permission]] | upstream | 0.37 |
 | [[p03_ins_permission]] | upstream | 0.35 |
-| [[bld_collaboration_rbac_policy]] | sibling | 0.35 |
+| [[bld_orchestration_rbac_policy]] | sibling | 0.35 |

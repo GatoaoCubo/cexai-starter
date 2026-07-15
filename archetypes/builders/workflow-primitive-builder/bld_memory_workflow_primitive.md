@@ -84,8 +84,8 @@ python _tools/cex_score.py --apply bld-memory-workflow-primitive.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_workflow_primitive]] | upstream | 0.67 |
+| [[bld_knowledge_workflow_primitive]] | upstream | 0.67 |
 | [[workflow-primitive-builder]] | downstream | 0.64 |
-| [[p01_kc_workflow_primitive]] | downstream | 0.59 |
+| [[kc_workflow_primitive]] | downstream | 0.59 |
 | [[p11_qg_workflow_primitive]] | downstream | 0.54 |
 | [[p03_ins_workflow_primitive_builder]] | upstream | 0.53 |

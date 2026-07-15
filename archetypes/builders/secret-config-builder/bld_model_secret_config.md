@@ -152,8 +152,8 @@ access_pattern: dynamic | static | injected | env
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_secret_config]] | downstream | 0.58 |
-| [[bld_knowledge_card_secret_config]] | upstream | 0.53 |
-| [[bld_instruction_secret_config]] | upstream | 0.50 |
+| [[bld_orchestration_secret_config]] | downstream | 0.58 |
+| [[bld_knowledge_secret_config]] | upstream | 0.53 |
+| [[bld_prompt_secret_config]] | upstream | 0.50 |
 | [[bld_config_secret_config]] | related | 0.48 |
 | [[bld_schema_secret_config]] | related | 0.46 |

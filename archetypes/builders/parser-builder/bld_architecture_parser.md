@@ -70,7 +70,7 @@ parser          --signals-->      parse_error
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[parser-builder]] | upstream | 0.60 |
-| [[bld_collaboration_parser]] | upstream | 0.51 |
+| [[bld_orchestration_parser]] | upstream | 0.51 |
 | n00_parser_manifest | upstream | 0.51 |
-| [[p01_kc_parser]] | upstream | 0.49 |
+| [[kc_parser]] | upstream | 0.49 |
 | [[bld_memory_parser]] | downstream | 0.44 |

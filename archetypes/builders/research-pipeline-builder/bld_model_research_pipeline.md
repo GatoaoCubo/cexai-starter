@@ -144,8 +144,8 @@ Max body: 4096 bytes per builder spec.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_research_pipeline]] | downstream | 0.49 |
+| [[bld_orchestration_research_pipeline]] | downstream | 0.49 |
 | p04_cli_research_pipeline_n01 | related | 0.49 |
-| [[bld_instruction_research_pipeline]] | upstream | 0.47 |
+| [[bld_prompt_research_pipeline]] | upstream | 0.47 |
 | p02_agent_research_pipeline_intelligence | upstream | 0.46 |
-| [[bld_knowledge_card_research_pipeline]] | upstream | 0.45 |
+| [[bld_knowledge_research_pipeline]] | upstream | 0.45 |

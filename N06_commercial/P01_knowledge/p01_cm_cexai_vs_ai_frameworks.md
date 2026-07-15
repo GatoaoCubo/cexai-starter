@@ -15,7 +15,7 @@ tldr: "CEXAI vs 5 frameworks on 12 dimensions. Wins: typed governance, self-assi
 competitors: [LangChain, CrewAI, AutoGen, DSPy, LlamaIndex]
 metrics: [typed_taxonomy, multi_runtime, knowledge_governance, self_assimilation, quality_gates, brand_config, enterprise_sla, implementation_services, sovereign_data, multi_agent, rag_support, license]
 analysis_date: "2026-06-11"
-key_insights: "Only CEXAI ships 300+ typed kinds + quality gates + self-assimilation -- no competitor governs knowledge permanence."
+key_insights: "Only CEXAI ships 125 typed kinds + quality gates + self-assimilation -- no competitor governs knowledge permanence."
 primary_competitor: LangChain
 data_sources:
   - "LangChain docs (docs.langchain.com, 2026-06-11)"
@@ -41,7 +41,7 @@ Analyst: N06 Commercial Nucleus. Date: 2026-06-11.
 
 | Capability | CEXAI | LangChain | CrewAI | AutoGen | DSPy | LlamaIndex |
 |---|---|---|---|---|---|---|
-| Typed artifact taxonomy (300+ kinds) | Yes | No | No | No | No | No |
+| Typed artifact taxonomy (125 kinds) | Yes | No | No | No | No | No |
 | Multi-runtime (non-OpenAI native) | Yes | Partial | Partial | No | Yes | Partial |
 | 12-pillar architecture | Yes | No | No | No | No | No |
 | Self-assimilation loop | Yes | No | No | No | No | No |

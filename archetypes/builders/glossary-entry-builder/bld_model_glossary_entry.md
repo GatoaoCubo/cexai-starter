@@ -119,8 +119,8 @@ Maximum artifact size: 512 bytes. Definition body: 3 lines hard limit.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_glossary_entry]] | downstream | 0.47 |
-| [[bld_knowledge_card_glossary_entry]] | related | 0.47 |
+| [[bld_orchestration_glossary_entry]] | downstream | 0.47 |
+| [[bld_knowledge_glossary_entry]] | related | 0.47 |
 | p01_gl_TERM_SLUG | related | 0.45 |
-| [[bld_instruction_glossary_entry]] | downstream | 0.44 |
-| [[p01_kc_glossary_entry]] | related | 0.42 |
+| [[bld_prompt_glossary_entry]] | downstream | 0.44 |
+| [[kc_glossary_entry]] | related | 0.42 |

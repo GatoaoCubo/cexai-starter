@@ -106,7 +106,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_content_monetization]] | downstream | 0.50 |
-| [[bld_knowledge_card_content_monetization]] | upstream | 0.48 |
+| [[bld_knowledge_content_monetization]] | upstream | 0.48 |
 | [[bld_tools_content_monetization]] | downstream | 0.43 |
-| [[bld_collaboration_content_monetization]] | downstream | 0.40 |
+| [[bld_orchestration_content_monetization]] | downstream | 0.40 |
 | [[n06_kc_content_monetization]] | upstream | 0.39 |

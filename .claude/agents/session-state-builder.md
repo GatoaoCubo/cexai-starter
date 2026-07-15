@@ -86,6 +86,6 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[session-state-builder]] | related | 0.43 |
-| [[p01_kc_session_state]] | related | 0.34 |
+| [[kc_session_state]] | related | 0.34 |
 | [[bld_memory_session_state]] | related | 0.34 |
-| [[bld_collaboration_session_state]] | related | 0.33 |
+| [[bld_orchestration_session_state]] | related | 0.33 |

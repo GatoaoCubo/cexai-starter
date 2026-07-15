@@ -90,6 +90,6 @@ Eval datasets are structured collections of test cases used to measure LLM behav
 |----------|-------------|-------|
 | [[eval-dataset-builder]] | downstream | 0.59 |
 | [[bld_schema_eval_dataset]] | downstream | 0.46 |
-| [[bld_instruction_eval_dataset]] | downstream | 0.42 |
-| [[bld_collaboration_eval_dataset]] | downstream | 0.41 |
+| [[bld_prompt_eval_dataset]] | downstream | 0.42 |
+| [[bld_orchestration_eval_dataset]] | downstream | 0.41 |
 | [[p10_lr_eval_dataset_builder]] | downstream | 0.39 |

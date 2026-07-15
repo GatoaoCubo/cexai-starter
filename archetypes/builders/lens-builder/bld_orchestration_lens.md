@@ -73,5 +73,5 @@ None. Lenses are INDEPENDENT — they can be built from a perspective seed alone
 | [[lens-builder]] | related | 0.48 |
 | [[bld_architecture_lens]] | downstream | 0.43 |
 | [[p03_ins_lens]] | downstream | 0.42 |
-| [[p01_kc_lens]] | related | 0.42 |
+| [[kc_lens]] | related | 0.42 |
 | bld_collaboration_model_card | sibling | 0.41 |

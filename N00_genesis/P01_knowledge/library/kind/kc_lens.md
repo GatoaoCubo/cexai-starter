@@ -96,7 +96,7 @@ A lens is a specialized perspective injected into an agent to shift its reasonin
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_lens]] | downstream | 0.54 |
-| [[bld_collaboration_lens]] | related | 0.54 |
+| [[bld_orchestration_lens]] | related | 0.54 |
 | [[lens-builder]] | related | 0.53 |
 | [[p03_ins_lens]] | downstream | 0.51 |
-| [[p01_kc_agent]] | sibling | 0.50 |
+| [[kc_agent]] | sibling | 0.50 |

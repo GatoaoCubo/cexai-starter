@@ -43,7 +43,7 @@ Token values + system names are original IP. Never copy a known system's palette
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_design_system]] | downstream | 0.5 |
-| [[p01_kc_design_system]] | sibling | 0.48 |
+| [[kc_design_system]] | sibling | 0.48 |
 | p06_vs_design_system | upstream | 0.45 |
 | [[bld_memory_design_system]] | sibling | 0.4 |
 | [[design-system-builder]] | related | 0.4 |

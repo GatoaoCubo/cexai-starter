@@ -63,8 +63,8 @@ I produce post-generation validation contracts applied automatically by the syst
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_validator]] | sibling | 0.39 |
+| [[bld_orchestration_validator]] | sibling | 0.39 |
 | [[validation-schema-builder]] | related | 0.39 |
-| [[bld_collaboration_type_def]] | sibling | 0.37 |
-| [[bld_collaboration_response_format]] | sibling | 0.36 |
-| [[bld_collaboration_output_validator]] | sibling | 0.34 |
+| [[bld_orchestration_type_def]] | sibling | 0.37 |
+| [[bld_orchestration_response_format]] | sibling | 0.36 |
+| [[bld_orchestration_output_validator]] | sibling | 0.34 |

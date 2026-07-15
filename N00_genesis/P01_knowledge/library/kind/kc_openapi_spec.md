@@ -99,8 +99,8 @@ REST API contract needed?
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_openapi_spec]] | sibling | 0.72 |
+| [[bld_knowledge_openapi_spec]] | sibling | 0.72 |
 | [[openapi-spec-builder]] | downstream | 0.56 |
 | [[bld_schema_openapi_spec]] | downstream | 0.55 |
-| [[bld_collaboration_openapi_spec]] | downstream | 0.52 |
+| [[bld_orchestration_openapi_spec]] | downstream | 0.52 |
 | [[bld_architecture_openapi_spec]] | downstream | 0.47 |

@@ -87,7 +87,7 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[openapi-spec-builder]] | related | 0.33 |
-| [[bld_collaboration_openapi_spec]] | related | 0.33 |
+| [[bld_orchestration_openapi_spec]] | related | 0.33 |
 | p03_sp_builder_nucleus | related | 0.32 |
 | kind-builder | related | 0.31 |
 | [[bld_tools_openapi_spec]] | related | 0.28 |

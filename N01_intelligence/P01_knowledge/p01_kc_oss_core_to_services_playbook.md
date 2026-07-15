@@ -93,7 +93,7 @@ Modern OSS: full-spectrum monetization -- individuals, startups, mid-market, ent
 
 ```
 GitHub (free MIT)
-  |-> devs fork CEXAI scaffold -> build AI agents on 304-kind taxonomy
+  |-> devs fork CEXAI scaffold -> build AI agents on 125-kind taxonomy
   |-> enterprises adopt 8F pipeline -> critical AI infra dependency
   |-> operational pain: impl complexity, vertical setup, LoRA fine-tune
   |-> CEXAI services revenue: contracts + vertical + glue-brain fine-tune
@@ -101,7 +101,7 @@ GitHub (free MIT)
 
 | OSS Precedent | CEXAI Analog |
 |--------------|-------------|
-| Free OSS core (MIT/Apache) | 304-kind taxonomy + 8F + compiler tools |
+| Free OSS core (MIT/Apache) | 125-kind taxonomy + 8F + compiler tools |
 | Adoption funnel | GitHub forks; devs building AI agents |
 | Dependency event | Org's AI knowledge lives in CEXAI repo |
 | Conversion trigger | Impl complexity + sovereign fine-tune need |

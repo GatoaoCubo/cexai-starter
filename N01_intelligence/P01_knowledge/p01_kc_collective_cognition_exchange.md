@@ -85,7 +85,7 @@ Analytical Envy mandate: benchmark against >=2 alternatives.
 
 | Ecosystem | Tradeable Unit | Type System | Governance | LLM-Native | Closest Analogue to CEXAI |
 |-----------|----------------|-------------|------------|------------|---------------------------|
-| **CEXAI Exchange** | Typed AI artifacts (300+ kinds) | Strong (schema + 8F) | quality_gate + lineage_record + audit_log | Yes | -- |
+| **CEXAI Exchange** | Typed AI artifacts (125 kinds) | Strong (schema + 8F) | quality_gate + lineage_record + audit_log | Yes | -- |
 | npm | JS packages | Weak (package.json) | Author trust + npm audit | No | Closest in fork/compose mechanics |
 | PyPI | Python packages | Weak (setup.py) | Author trust + safety scanners | No | Closest in versioning discipline |
 | Hugging Face Hub | Models, datasets, spaces | Medium (model card schema) | Card review + community moderation | Yes | Closest in AI-specific governance |
@@ -98,7 +98,7 @@ Three observations:
 - **npm/PyPI prove the substrate at scale.** Versioning, dependency
   resolution, social tooling -- patterns transfer directly.
 - **Hugging Face is closest but type-light.** Model cards are markdown
-  templates, not enforced schemas. CEXAI's 301-kind taxonomy +
+  templates, not enforced schemas. CEXAI's 125-kind taxonomy +
   `cex_doctor` is the missing typing layer.
 - **Custom GPTs are the failure mode.** Vendor-locked, untyped,
   non-portable. The Exchange must be runtime-agnostic by construction.

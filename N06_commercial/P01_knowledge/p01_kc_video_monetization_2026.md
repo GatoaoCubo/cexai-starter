@@ -380,7 +380,7 @@ The Driver-tier PT-BR audience (entrepreneurs, AI-curious, business-builders) is
 | n06_funnel_cex_product | downstream | 0.24 |
 | p01_ctx_monetization_audit_n06_2026_04_08 | related | 0.22 |
 | n06_roi_content_factory | downstream | 0.21 |
-| [[p01_kc_brand_monetization_models]] | sibling | 0.19 |
+| [[kc_brand_monetization_models]] | sibling | 0.19 |
 | [[p01_kc_ai_saas_monetization]] | sibling | 0.18 |
 | p01_ctx_strategy_claude_native_n06 | related | 0.18 |
 | n06_content_factory_pricing | downstream | 0.18 |

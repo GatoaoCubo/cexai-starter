@@ -46,7 +46,7 @@ Analysis of standardized dataset documentation templates and repository metadata
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[dataset-card-builder]] | upstream | 0.31 |
-| [[bld_knowledge_card_dataset_card]] | upstream | 0.26 |
-| [[p01_kc_dataset_card]] | upstream | 0.26 |
+| [[bld_knowledge_dataset_card]] | upstream | 0.26 |
+| [[kc_dataset_card]] | upstream | 0.26 |
 | p01_kc_data_residency | upstream | 0.22 |
-| [[bld_collaboration_dataset_card]] | downstream | 0.18 |
+| [[bld_orchestration_dataset_card]] | downstream | 0.18 |

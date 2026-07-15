@@ -117,7 +117,7 @@ expose). The differentiator is that every stage is typed and governed:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_agent]] | sibling | 0.27 |
+| [[kc_agent]] | sibling | 0.27 |
 | [[p01_kc_cex_llm_vocabulary_whitepaper]] | sibling | 0.26 |
 | [[p01_kc_competitor_autogen]] | sibling | 0.25 |
 | p01_kc_taxonomy_completeness_audit | sibling | 0.24 |

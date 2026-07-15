@@ -135,5 +135,5 @@ status: active
 | [[lens-builder]] | upstream | 0.64 |
 | [[bld_schema_lens]] | downstream | 0.61 |
 | [[bld_architecture_lens]] | downstream | 0.59 |
-| [[bld_knowledge_card_lens]] | upstream | 0.59 |
-| [[bld_collaboration_lens]] | upstream | 0.55 |
+| [[bld_knowledge_lens]] | upstream | 0.59 |
+| [[bld_orchestration_lens]] | upstream | 0.55 |

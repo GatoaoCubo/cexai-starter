@@ -155,8 +155,8 @@ INPUT: all outputs from Phases 1-3
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_agent_card]] | upstream | 0.46 |
-| [[bld_collaboration_agent_card]] | downstream | 0.46 |
+| [[bld_knowledge_agent_card]] | upstream | 0.46 |
+| [[bld_orchestration_agent_card]] | downstream | 0.46 |
 | [[bld_memory_agent_card]] | downstream | 0.45 |
 | [[agent-card-builder]] | downstream | 0.43 |
 | [[bld_architecture_agent_card]] | downstream | 0.36 |

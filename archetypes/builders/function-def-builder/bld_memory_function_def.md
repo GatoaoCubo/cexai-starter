@@ -83,8 +83,8 @@ python _tools/cex_score.py --apply p10-lr-function-def-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_function_def]] | upstream | 0.50 |
-| [[p01_kc_function_def]] | upstream | 0.34 |
+| [[bld_knowledge_function_def]] | upstream | 0.50 |
+| [[kc_function_def]] | upstream | 0.34 |
 | [[p11_qg_function_def]] | downstream | 0.31 |
 | [[function-def-builder]] | upstream | 0.30 |
-| [[bld_instruction_function_def]] | upstream | 0.28 |
+| [[bld_prompt_function_def]] | upstream | 0.28 |

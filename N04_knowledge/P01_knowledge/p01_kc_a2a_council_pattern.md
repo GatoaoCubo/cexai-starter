@@ -178,7 +178,7 @@ available. No MISSING CONTEXT flags raised.
 | [[bld_memory_lens]] | downstream | 0.35 |
 | p11_cr_convene_council | downstream | 0.35 |
 | p01_kc_cex_lens_concept | sibling | 0.34 |
-| [[bld_collaboration_lens]] | downstream | 0.33 |
-| [[p01_kc_lens]] | sibling | 0.33 |
+| [[bld_orchestration_lens]] | downstream | 0.33 |
+| [[kc_lens]] | sibling | 0.33 |
 | n00_lens_manifest | sibling | 0.30 |
 | [[p03_ins_lens]] | downstream | 0.30 |

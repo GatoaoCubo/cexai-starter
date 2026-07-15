@@ -81,5 +81,5 @@ python _tools/cex_score.py --apply p10-lr-retriever-config-builder.md
 | [[p10_lr_chunk_strategy_builder]] | sibling | 0.44 |
 | [[p10_lr_handoff_protocol_builder]] | sibling | 0.41 |
 | [[p10_lr_output_validator_builder]] | sibling | 0.41 |
-| [[bld_knowledge_card_retriever_config]] | upstream | 0.40 |
+| [[bld_knowledge_retriever_config]] | upstream | 0.40 |
 | [[p10_lr_prompt_version_builder]] | sibling | 0.38 |

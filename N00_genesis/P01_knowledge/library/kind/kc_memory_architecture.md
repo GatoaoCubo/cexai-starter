@@ -84,8 +84,8 @@ Load this card at F3 INJECT when reasoning about a system's storage or memory la
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_memory_scope]] | sibling | 0.44 |
+| [[kc_memory_scope]] | sibling | 0.44 |
 | bld_collaboration_memory_type | downstream | 0.39 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.39 |
+| [[bld_orchestration_memory_scope]] | downstream | 0.39 |
 | [[memory-architecture-builder]] | downstream | 0.38 |
-| [[bld_knowledge_card_memory_scope]] | sibling | 0.35 |
+| [[bld_knowledge_memory_scope]] | sibling | 0.35 |

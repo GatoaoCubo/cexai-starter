@@ -222,13 +222,13 @@ Every user intent must resolve to one or more kinds. This map is the exhaustive 
 | N06 (Commercial) | content_monetization | 1 |
 | N07 (Orchestration) | checkpoint, dispatch_rule, handoff, schedule, signal, spawn_config | 6 |
 
-**Total: 300 kinds mapped. 0 gaps.**
+**Total: 123 kinds mapped. 0 gaps.**
 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | downstream | 0.36 |
-| [[bld_collaboration_boot_config]] | downstream | 0.35 |
+| [[bld_orchestration_agent]] | downstream | 0.36 |
+| [[bld_orchestration_boot_config]] | downstream | 0.35 |
 | [[n00_p01_kind_index]] | sibling | 0.32 |
-| [[bld_collaboration_vector_store]] | downstream | 0.32 |
-| [[bld_collaboration_embedder_provider]] | downstream | 0.32 |
+| [[bld_orchestration_vector_store]] | downstream | 0.32 |
+| [[bld_orchestration_embedder_provider]] | downstream | 0.32 |

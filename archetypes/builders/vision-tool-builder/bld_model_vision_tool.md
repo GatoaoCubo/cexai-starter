@@ -138,8 +138,8 @@ confidence_threshold: 0.8
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_vision_tool]] | downstream | 0.62 |
-| [[bld_instruction_vision_tool]] | upstream | 0.55 |
-| [[bld_knowledge_card_vision_tool]] | upstream | 0.49 |
-| [[p01_kc_vision_tool]] | upstream | 0.47 |
+| [[bld_orchestration_vision_tool]] | downstream | 0.62 |
+| [[bld_prompt_vision_tool]] | upstream | 0.55 |
+| [[bld_knowledge_vision_tool]] | upstream | 0.49 |
+| [[kc_vision_tool]] | upstream | 0.47 |
 | n00_vision_tool_manifest | related | 0.44 |

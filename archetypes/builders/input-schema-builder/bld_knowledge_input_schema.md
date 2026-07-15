@@ -76,7 +76,7 @@ Input schemas are unilateral entry contracts — the receiving system declares w
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_input_schema]] | downstream | 0.48 |
+| [[bld_prompt_input_schema]] | downstream | 0.48 |
 | [[p10_lr_input_schema_builder]] | downstream | 0.42 |
 | [[input-schema-builder]] | downstream | 0.40 |
 | [[p11_qg_input_schema]] | downstream | 0.36 |

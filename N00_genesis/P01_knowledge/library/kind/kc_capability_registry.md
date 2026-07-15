@@ -188,7 +188,7 @@ This registry provides a comprehensive framework for managing knowledge across d
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_knowledge_card]] | downstream | 0.25 |
+| [[bld_orchestration_knowledge_card]] | downstream | 0.25 |
 | n00_knowledge_card_manifest | sibling | 0.23 |
 | p01_kc_pillar_brief_p01_knowledge_en | sibling | 0.22 |
 | p01_kc_case_study | sibling | 0.21 |

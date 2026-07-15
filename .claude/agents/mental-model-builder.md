@@ -88,6 +88,6 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[mental-model-builder]] | related | 0.36 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.36 |
-| [[bld_collaboration_mental_model]] | related | 0.36 |
-| [[p01_kc_mental_model]] | related | 0.34 |
-| [[bld_knowledge_card_mental_model]] | related | 0.33 |
+| [[bld_orchestration_mental_model]] | related | 0.36 |
+| [[kc_mental_model]] | related | 0.34 |
+| [[bld_knowledge_mental_model]] | related | 0.33 |

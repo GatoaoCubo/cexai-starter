@@ -53,7 +53,7 @@ Input schemas cover only what goes in. Do not add response shapes or output fiel
 ## Builder Context
 
 This ISO operates within the `input-schema-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 13 ISOs
+specialized builders in the CEX architecture. Each builder has 12 ISOs
 covering system prompt, instruction, output template, quality gate,
 examples, schema, config, tools, memory, manifest, constraints,
 validation schema, and runtime rules.
@@ -100,8 +100,8 @@ python _tools/cex_score.py --apply --verbose p10_lr_input_schema_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_input_schema]] | upstream | 0.38 |
-| [[bld_instruction_input_schema]] | upstream | 0.38 |
+| [[bld_knowledge_input_schema]] | upstream | 0.38 |
+| [[bld_prompt_input_schema]] | upstream | 0.38 |
 | [[bld_output_template_input_schema]] | upstream | 0.34 |
 | [[bld_schema_input_schema]] | upstream | 0.31 |
 | bld_config_memory_type | upstream | 0.30 |

@@ -91,6 +91,6 @@ Rule: builder spec NNN starts at 001 and increments without gaps.
 |----------|-------------|-------|
 | [[agent-builder]] | upstream | 0.37 |
 | [[bld_config_system_prompt]] | sibling | 0.34 |
-| [[bld_instruction_agent]] | upstream | 0.33 |
+| [[bld_prompt_agent]] | upstream | 0.33 |
 | [[bld_config_agent_package]] | sibling | 0.32 |
 | [[bld_schema_agent]] | upstream | 0.31 |

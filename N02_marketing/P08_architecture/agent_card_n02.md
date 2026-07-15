@@ -383,4 +383,4 @@ grid dispatch:
 | output_sdk_validation_self_audit | downstream | 0.29 |
 | n00_p03_kind_index | downstream | 0.25 |
 | [[nucleus_def_n02]] | sibling | 0.30 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.24 |
+| [[bld_orchestration_action_prompt]] | downstream | 0.24 |

@@ -114,7 +114,7 @@ brand: "{{BRAND_NAME}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[tagline-builder]] | upstream | 0.52 |
-| [[bld_collaboration_tagline]] | downstream | 0.44 |
-| [[bld_instruction_tagline]] | upstream | 0.44 |
+| [[bld_orchestration_tagline]] | downstream | 0.44 |
+| [[bld_prompt_tagline]] | upstream | 0.44 |
 | [[bld_tools_tagline]] | upstream | 0.42 |
 | n00_tagline_manifest | upstream | 0.42 |

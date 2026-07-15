@@ -194,4 +194,4 @@ That rule is the N05 expression of Gating Wrath: no silent drift, no mixed evide
 | [[p01_emb_openai_text_embedding_3_small]] | sibling | 0.37 |
 | [[kno_embedder_provider_n02]] | sibling | 0.36 |
 | [[kno_embedder_provider_n06]] | sibling | 0.36 |
-| [[p01_kc_embedder_provider]] | upstream | 0.36 |
+| [[kc_embedder_provider]] | upstream | 0.36 |

@@ -73,7 +73,7 @@ python _tools/cex_memory_update.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[data-contract-builder]] | upstream | 0.43 |
-| [[p01_kc_data_contract]] | upstream | 0.41 |
+| [[kc_data_contract]] | upstream | 0.41 |
 | [[bld_rules_data_contract]] | downstream | 0.38 |
 | [[bld_architecture_data_contract]] | upstream | 0.36 |
 | [[bld_context_sources_data_contract]] | related | 0.35 |

@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | [[memory-scope-builder]] | related | 0.31 |
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.30 |
-| [[bld_collaboration_memory_scope]] | related | 0.29 |
+| [[bld_orchestration_memory_scope]] | related | 0.29 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.28 |

@@ -128,8 +128,8 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_scope]] | downstream | 0.55 |
+| [[bld_orchestration_memory_scope]] | downstream | 0.55 |
 | [[bld_architecture_memory_scope]] | downstream | 0.53 |
 | [[p10_lr_memory_scope_builder]] | downstream | 0.51 |
-| [[p01_kc_memory_scope]] | related | 0.43 |
+| [[kc_memory_scope]] | related | 0.43 |
 | [[p11_qg_memory_scope]] | downstream | 0.42 |

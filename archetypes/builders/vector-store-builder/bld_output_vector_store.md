@@ -116,5 +116,5 @@ Scale guidance:
 | [[p03_ins_vector_store]] | upstream | 0.62 |
 | [[p11_qg_vector_store]] | downstream | 0.47 |
 | [[bld_schema_vector_store]] | downstream | 0.44 |
-| [[p01_kc_vector_store]] | upstream | 0.42 |
-| [[bld_knowledge_card_vector_store]] | upstream | 0.42 |
+| [[kc_vector_store]] | upstream | 0.42 |
+| [[bld_knowledge_vector_store]] | upstream | 0.42 |

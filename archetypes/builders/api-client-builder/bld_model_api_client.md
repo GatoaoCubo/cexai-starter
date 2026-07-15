@@ -144,5 +144,5 @@ Type: {type}
 | [[bld_collaboration_client]] | downstream | 0.64 |
 | [[bld_instruction_client]] | upstream | 0.51 |
 | [[bld_knowledge_card_client]] | upstream | 0.49 |
-| [[p01_kc_api_client]] | related | 0.46 |
+| [[kc_api_client]] | related | 0.46 |
 | db-connector-builder | sibling | 0.43 |

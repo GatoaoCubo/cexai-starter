@@ -119,8 +119,8 @@ body_bytes = len(encode_utf8(body_content))
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | downstream | 0.47 |
-| [[p01_kc_agent]] | upstream | 0.45 |
+| [[bld_orchestration_agent]] | downstream | 0.47 |
+| [[kc_agent]] | upstream | 0.45 |
 | [[p03_ins_runtime_state]] | sibling | 0.44 |
 | [[bld_architecture_agent]] | downstream | 0.42 |
 | [[mental-model-builder]] | upstream | 0.41 |

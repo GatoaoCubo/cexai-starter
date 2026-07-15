@@ -72,8 +72,8 @@ NEVER include identity management details (e.g., SSO, user attributes).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_rbac_policy]] | upstream | 0.67 |
+| [[bld_knowledge_rbac_policy]] | upstream | 0.67 |
 | [[kc_rbac_policy]] | upstream | 0.60 |
 | [[p10_mem_rbac_policy_builder]] | downstream | 0.56 |
-| [[bld_instruction_rbac_policy]] | upstream | 0.50 |
-| [[bld_collaboration_rbac_policy]] | downstream | 0.45 |
+| [[bld_prompt_rbac_policy]] | upstream | 0.50 |
+| [[bld_orchestration_rbac_policy]] | downstream | 0.45 |

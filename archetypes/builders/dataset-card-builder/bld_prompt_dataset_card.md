@@ -61,7 +61,7 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_dataset_card]] | upstream | 0.35 |
+| [[kc_dataset_card]] | upstream | 0.35 |
 | [[dataset-card-builder]] | upstream | 0.33 |
 | [[bld_output_template_dataset_card]] | downstream | 0.31 |
 | n00_dataset_card_manifest | upstream | 0.30 |

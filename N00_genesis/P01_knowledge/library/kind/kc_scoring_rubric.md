@@ -121,8 +121,8 @@ A structured evaluation framework that defines what "good output" means across N
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_scoring_rubric]] | related | 0.53 |
+| [[bld_orchestration_scoring_rubric]] | related | 0.53 |
 | [[scoring-rubric-builder]] | related | 0.44 |
-| [[bld_knowledge_card_scoring_rubric]] | sibling | 0.42 |
+| [[bld_knowledge_scoring_rubric]] | sibling | 0.42 |
 | [[p11_qg_scoring-rubric]] | downstream | 0.41 |
 | [[bld_architecture_scoring_rubric]] | downstream | 0.39 |

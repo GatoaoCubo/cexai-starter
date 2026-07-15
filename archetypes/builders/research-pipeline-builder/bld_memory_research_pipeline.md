@@ -61,7 +61,7 @@ degrades significantly.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[research-pipeline-builder]] | upstream | 0.45 |
-| [[p01_kc_research_methods]] | upstream | 0.43 |
-| [[bld_knowledge_card_research_pipeline]] | upstream | 0.41 |
+| [[kc_research_methods]] | upstream | 0.43 |
+| [[bld_knowledge_research_pipeline]] | upstream | 0.41 |
 | p04_cli_research_pipeline_n01 | upstream | 0.38 |
-| [[bld_instruction_research_pipeline]] | upstream | 0.37 |
+| [[bld_prompt_research_pipeline]] | upstream | 0.37 |

@@ -83,7 +83,7 @@ Code executors are sandboxed environments where LLM-generated code runs safely. 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p10_lr_code_executor_builder]] | downstream | 0.50 |
-| [[p01_kc_code_executor]] | sibling | 0.50 |
+| [[kc_code_executor]] | sibling | 0.50 |
 | [[code-executor-builder]] | downstream | 0.44 |
 | [[p11_qg_code_executor]] | downstream | 0.40 |
 | p04_exec_python_sandbox | downstream | 0.39 |

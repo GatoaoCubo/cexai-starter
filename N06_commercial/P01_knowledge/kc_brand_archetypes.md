@@ -296,7 +296,7 @@ Source: Carl Jung + Margaret Mark & Carol Pearson (The Hero and the Outlaw)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_brand_voice_systems]] | sibling | 0.26 |
+| [[kc_brand_voice_systems]] | sibling | 0.26 |
 | p03_pt_brand_discovery_interview | downstream | 0.21 |
 | p01_kc_brand_voice_consistency_channels | sibling | 0.19 |
 | p03_pt_brand_voice_templates | downstream | 0.18 |

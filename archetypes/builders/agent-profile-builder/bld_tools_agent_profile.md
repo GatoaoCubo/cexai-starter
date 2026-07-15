@@ -48,8 +48,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | downstream | 0.39 |
-| [[p01_kc_agent]] | upstream | 0.38 |
+| [[bld_orchestration_agent]] | downstream | 0.39 |
+| [[kc_agent]] | upstream | 0.38 |
 | [[bld_architecture_agent]] | downstream | 0.33 |
-| [[bld_knowledge_card_agent]] | upstream | 0.32 |
+| [[bld_knowledge_agent]] | upstream | 0.32 |
 | [[agent-profile-builder]] | upstream | 0.28 |

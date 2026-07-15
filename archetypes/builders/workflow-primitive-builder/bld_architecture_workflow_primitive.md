@@ -72,7 +72,7 @@ parallel_primitive  --requires-->       merge_primitive --collects-->     fan_in
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-primitive-builder]] | downstream | 0.70 |
-| [[bld_collaboration_workflow_primitive]] | upstream | 0.68 |
+| [[bld_orchestration_workflow_primitive]] | upstream | 0.68 |
 | [[p03_ins_workflow_primitive_builder]] | upstream | 0.65 |
 | [[bld_tools_workflow_primitive]] | upstream | 0.61 |
 | n00_workflow_primitive_manifest | downstream | 0.58 |

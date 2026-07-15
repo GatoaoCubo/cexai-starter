@@ -177,7 +177,7 @@ Three claimed broken links verified by file search:
 
 2. **Create [\[CEX_ARCHITECTURE_MAP\]]** knowledge_card
    - Referenced 12x from N00_genesis README; never created
-   - Scope: overview diagram of 8 nuclei x 12 pillars x 300 kinds
+   - Scope: overview diagram of 8 nuclei x 12 pillars x 125 kinds
    - Owner: N04, kind=knowledge_card, pillar=P01
 
 3. **Create [\[LLM_PIPELINE\]]** knowledge_card
@@ -251,7 +251,7 @@ You are the consuming agent that acts on this knowledge_card under F3 INJECT.
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_nucleus_def]] | sibling | 0.31 |
+| [[bld_knowledge_nucleus_def]] | sibling | 0.31 |
 | audit_self_review_n05 | downstream | 0.31 |
 | p12_ct_cex_full_grid | downstream | 0.30 |
 | audit_self_review_n01 | downstream | 0.30 |

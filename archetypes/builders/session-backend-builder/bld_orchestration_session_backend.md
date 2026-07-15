@@ -71,5 +71,5 @@ I specify session storage so agents maintain state across turns and restarts.
 | bld_collaboration_compression_config | sibling | 0.50 |
 | [[session-backend-builder]] | upstream | 0.43 |
 | bld_collaboration_trace_config | sibling | 0.40 |
-| [[p01_kc_session_backend]] | upstream | 0.37 |
-| [[bld_collaboration_boot_config]] | sibling | 0.36 |
+| [[kc_session_backend]] | upstream | 0.37 |
+| [[bld_orchestration_boot_config]] | sibling | 0.36 |

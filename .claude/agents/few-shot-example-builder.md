@@ -87,6 +87,6 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[few-shot-example-builder]] | related | 0.42 |
-| [[bld_collaboration_few_shot_example]] | related | 0.37 |
+| [[bld_orchestration_few_shot_example]] | related | 0.37 |
 | n00_few_shot_example_manifest | related | 0.33 |
-| [[p01_kc_few_shot_example]] | related | 0.32 |
+| [[kc_few_shot_example]] | related | 0.32 |

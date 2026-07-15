@@ -105,7 +105,7 @@ python _tools/cex_score.py --apply p10-lr-product-match-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_product_match]] | upstream | 0.43 |
+| [[bld_prompt_product_match]] | upstream | 0.43 |
 | [[bld_output_template_product_match]] | upstream | 0.36 |
 | [[product-match-builder]] | upstream | 0.34 |
 | [[bld_schema_product_match]] | upstream | 0.34 |

@@ -84,7 +84,7 @@ python _tools/cex_score.py --apply bld-memory-mcp-server.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mcp-server-builder]] | upstream | 0.53 |
-| [[p01_kc_mcp_server]] | upstream | 0.51 |
-| [[bld_knowledge_card_mcp_server]] | upstream | 0.51 |
-| [[bld_collaboration_mcp_server]] | upstream | 0.48 |
+| [[kc_mcp_server]] | upstream | 0.51 |
+| [[bld_knowledge_mcp_server]] | upstream | 0.51 |
+| [[bld_orchestration_mcp_server]] | upstream | 0.48 |
 | [[p03_ins_mcp_server]] | upstream | 0.47 |

@@ -132,8 +132,8 @@ Body sections: Boundary, Provider Matrix, Model Tiers, Fallback Chain, Rate Limi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_provider]] | related | 0.68 |
+| [[bld_orchestration_model_provider]] | related | 0.68 |
 | [[bld_memory_model_provider]] | downstream | 0.64 |
-| [[bld_knowledge_card_model_provider]] | upstream | 0.61 |
+| [[bld_knowledge_model_provider]] | upstream | 0.61 |
 | [[p03_ins_model_provider]] | downstream | 0.59 |
 | [[bld_config_model_provider]] | downstream | 0.55 |

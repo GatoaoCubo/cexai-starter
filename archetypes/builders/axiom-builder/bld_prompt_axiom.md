@@ -86,6 +86,6 @@ python _tools/cex_skill_loader.py --verify axiom
 |----------|-------------|-------|
 | [[axiom-builder]] | downstream | 0.43 |
 | [[p11_qg_axiom]] | downstream | 0.40 |
-| [[bld_instruction_golden_test]] | sibling | 0.39 |
+| [[bld_prompt_golden_test]] | sibling | 0.39 |
 | [[bld_architecture_axiom]] | downstream | 0.37 |
-| [[bld_collaboration_axiom]] | downstream | 0.36 |
+| [[bld_orchestration_axiom]] | downstream | 0.36 |

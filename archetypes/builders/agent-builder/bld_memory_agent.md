@@ -55,7 +55,7 @@ The 10 spec files requirement exists because under-specified agents (3-4 files) 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agent-builder]] | upstream | 0.43 |
-| [[bld_collaboration_agent]] | downstream | 0.41 |
-| [[bld_knowledge_card_agent]] | upstream | 0.40 |
-| [[p01_kc_agent]] | upstream | 0.39 |
+| [[bld_orchestration_agent]] | downstream | 0.41 |
+| [[bld_knowledge_agent]] | upstream | 0.40 |
+| [[kc_agent]] | upstream | 0.39 |
 | [[bld_architecture_agent]] | upstream | 0.38 |

@@ -92,7 +92,7 @@ Notification: `{{signal_type_or_none}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_router]] | upstream | 0.48 |
+| [[bld_knowledge_router]] | upstream | 0.48 |
 | [[router-builder]] | upstream | 0.41 |
 | [[bld_config_router]] | downstream | 0.40 |
 | [[p03_ins_router]] | upstream | 0.38 |

@@ -48,8 +48,8 @@ The CrewAI persona triad (role + goal + backstory) is a steerability contract, n
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_role_assignment]] | upstream | 0.39 |
+| [[bld_knowledge_role_assignment]] | upstream | 0.39 |
 | [[role-assignment-builder]] | upstream | 0.35 |
 | [[p11_qg_role_assignment]] | downstream | 0.30 |
 | [[bld_output_template_role_assignment]] | upstream | 0.28 |
-| [[bld_instruction_role_assignment]] | upstream | 0.27 |
+| [[bld_prompt_role_assignment]] | upstream | 0.27 |

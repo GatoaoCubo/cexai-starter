@@ -53,7 +53,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[multimodal-prompt-builder]] | related | 0.44 |
-| [[bld_knowledge_card_multimodal_prompt]] | upstream | 0.39 |
+| [[bld_knowledge_multimodal_prompt]] | upstream | 0.39 |
 | bld_instruction_multi_modal_config | sibling | 0.38 |
 | [[p10_mem_multimodal_prompt_builder]] | downstream | 0.37 |
 | bld_collaboration_multi_modal_config | downstream | 0.37 |

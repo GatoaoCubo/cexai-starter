@@ -101,6 +101,6 @@ workflow        --depends-->  action
 |----------|-------------|-------|
 | [[browser-tool-builder]] | upstream | 0.51 |
 | n00_browser_tool_manifest | upstream | 0.38 |
-| [[bld_knowledge_card_browser_tool]] | upstream | 0.37 |
+| [[bld_knowledge_browser_tool]] | upstream | 0.37 |
 | [[p11_qg_browser_tool]] | downstream | 0.33 |
 | [[p10_lr_browser_tool_builder]] | downstream | 0.33 |

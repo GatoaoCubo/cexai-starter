@@ -102,7 +102,7 @@ python _tools/cex_skill_loader.py --verify hook
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[hook-builder]] | downstream | 0.50 |
-| [[bld_knowledge_card_hook]] | upstream | 0.48 |
+| [[bld_knowledge_hook]] | upstream | 0.48 |
 | [[bld_architecture_hook]] | downstream | 0.46 |
 | [[p11_qg_hook]] | downstream | 0.45 |
-| [[bld_collaboration_hook]] | downstream | 0.45 |
+| [[bld_orchestration_hook]] | downstream | 0.45 |

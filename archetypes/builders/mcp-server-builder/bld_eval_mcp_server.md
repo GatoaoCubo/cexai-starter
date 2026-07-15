@@ -156,6 +156,6 @@ Provides weather data to agents.
 |----------|-------------|-------|
 | [[p03_ins_mcp_server]] | upstream | 0.50 |
 | [[bld_memory_mcp_server]] | upstream | 0.45 |
-| [[bld_collaboration_mcp_server]] | upstream | 0.44 |
+| [[bld_orchestration_mcp_server]] | upstream | 0.44 |
 | [[mcp-server-builder]] | upstream | 0.44 |
 | n00_mcp_server_manifest | upstream | 0.44 |

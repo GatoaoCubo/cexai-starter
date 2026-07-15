@@ -136,8 +136,8 @@ CREATE POLICY "org_rag" ON documents
 | p01_kc_supabase_vectors | related | 0.48 |
 | [[p01_emb_supabase_n04]] | related | 0.45 |
 | [[vector-store-builder]] | downstream | 0.36 |
-| [[bld_collaboration_vector_store]] | downstream | 0.35 |
-| [[bld_collaboration_embedding_config]] | downstream | 0.35 |
+| [[bld_orchestration_vector_store]] | downstream | 0.35 |
+| [[bld_orchestration_embedding_config]] | downstream | 0.35 |
 | [[p01_gl_embedding]] | related | 0.32 |
 | p01_ctx_arch_rag_pipeline_n04 | downstream | 0.32 |
 | p10_out_embedding_batch | downstream | 0.32 |

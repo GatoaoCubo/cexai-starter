@@ -97,4 +97,4 @@ related:
 | [[opportunity-matrix-builder]] | related | 0.45 |
 | sourcing | related | 0.40 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.38 |
-| [[bld_instruction_opportunity_matrix]] | related | 0.35 |
+| [[bld_prompt_opportunity_matrix]] | related | 0.35 |

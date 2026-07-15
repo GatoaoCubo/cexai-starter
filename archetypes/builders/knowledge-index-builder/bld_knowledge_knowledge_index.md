@@ -76,6 +76,6 @@ Brain indexes configure search retrieval by combining BM25 (keyword scoring), FA
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[knowledge-index-builder]] | downstream | 0.60 |
-| [[p01_kc_knowledge_index]] | sibling | 0.47 |
+| [[kc_knowledge_index]] | sibling | 0.47 |
 | p04_plug_brain_search | downstream | 0.47 |
-| [[bld_collaboration_knowledge_index]] | downstream | 0.47 |
+| [[bld_orchestration_knowledge_index]] | downstream | 0.47 |

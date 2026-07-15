@@ -55,6 +55,6 @@ FAISS indexes require local compute for embedding generation. BM25 indexes are C
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[knowledge-index-builder]] | related | 0.40 |
-| [[bld_knowledge_card_knowledge_index]] | upstream | 0.40 |
-| [[bld_collaboration_knowledge_index]] | downstream | 0.37 |
-| [[p01_kc_knowledge_index]] | related | 0.35 |
+| [[bld_knowledge_knowledge_index]] | upstream | 0.40 |
+| [[bld_orchestration_knowledge_index]] | downstream | 0.37 |
+| [[kc_knowledge_index]] | related | 0.35 |

@@ -95,5 +95,5 @@ applies_to: "{{applies_to}}}}"
 | bld_output_template_hook_config | sibling | 0.38 |
 | bld_output_template_runtime_rule | sibling | 0.37 |
 | [[bld_output_template_constraint_spec]] | sibling | 0.36 |
-| [[bld_instruction_output_validator]] | upstream | 0.36 |
+| [[bld_prompt_output_validator]] | upstream | 0.36 |
 | [[bld_output_template_retriever_config]] | sibling | 0.35 |

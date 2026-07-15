@@ -44,7 +44,7 @@ In the CEX WAVE6/WAVE7 grid cycles, orchestrators that used flat agent lists dis
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[capability-registry-builder]] | upstream | 0.41 |
-| [[bld_instruction_capability_registry]] | upstream | 0.38 |
+| [[bld_prompt_capability_registry]] | upstream | 0.38 |
 | [[bld_config_capability_registry]] | upstream | 0.33 |
 | [[p08_qg_capability_registry]] | downstream | 0.31 |
 | [[bld_output_template_capability_registry]] | upstream | 0.31 |

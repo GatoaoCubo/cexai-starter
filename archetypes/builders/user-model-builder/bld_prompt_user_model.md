@@ -74,6 +74,6 @@ related:
 |----------|-------------|-------|
 | [[user-model-builder]] | downstream | 0.42 |
 | [[bld_schema_user_model]] | downstream | 0.41 |
-| [[bld_instruction_memory_scope]] | sibling | 0.41 |
-| [[bld_instruction_output_validator]] | sibling | 0.39 |
-| [[bld_instruction_retriever_config]] | sibling | 0.39 |
+| [[bld_prompt_memory_scope]] | sibling | 0.41 |
+| [[bld_prompt_output_validator]] | sibling | 0.39 |
+| [[bld_prompt_retriever_config]] | sibling | 0.39 |

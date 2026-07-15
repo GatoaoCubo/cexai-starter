@@ -139,7 +139,7 @@ Query + Memory corpus
 
 **Concept**: Instead of hand-writing prompts, define the task signature and let the compiler find the optimal prompt via few-shot example selection + instruction tuning.
 
-**CEX analog**: `cex_crew_runner.py` already does manual prompt composition (13 ISOs + memory + brand + context). DSPy would automate the selection of WHICH context to include.
+**CEX analog**: `cex_crew_runner.py` already does manual prompt composition (12 ISOs + memory + brand + context). DSPy would automate the selection of WHICH context to include.
 
 **Applicability to CEX**:
 
@@ -196,7 +196,7 @@ Kind + Schema + Brand config
 ```
 
 **CEX implementation**: The 8F pipeline's F3 INJECT already loads templates:
-- `archetypes/builders/{kind}-builder/` (13 ISOs per kind)
+- `archetypes/builders/{kind}-builder/` (12 ISOs per kind)
 - `P{xx}/{subdir}/tpl_{kind}.md` (output templates)
 - `brand_inject.py` replaces `{{BRAND_*}}` placeholders
 

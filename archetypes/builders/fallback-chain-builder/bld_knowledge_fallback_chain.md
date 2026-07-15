@@ -77,8 +77,8 @@ Fallback chains implement graceful degradation for LLM systems — when the prim
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_fallback_chain]] | downstream | 0.50 |
+| [[bld_prompt_fallback_chain]] | downstream | 0.50 |
 | [[p10_lr_fallback_chain_builder]] | downstream | 0.47 |
 | [[fallback-chain-builder]] | downstream | 0.45 |
 | [[p11_qg_fallback_chain]] | downstream | 0.41 |
-| [[bld_collaboration_fallback_chain]] | downstream | 0.39 |
+| [[bld_orchestration_fallback_chain]] | downstream | 0.39 |

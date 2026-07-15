@@ -77,6 +77,6 @@ expiry           --governs-->  entity_memory
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[entity-memory-builder]] | downstream | 0.62 |
-| [[bld_collaboration_entity_memory]] | downstream | 0.59 |
-| [[bld_knowledge_card_entity_memory]] | upstream | 0.49 |
-| [[bld_instruction_entity_memory]] | upstream | 0.47 |
+| [[bld_orchestration_entity_memory]] | downstream | 0.59 |
+| [[bld_knowledge_entity_memory]] | upstream | 0.49 |
+| [[bld_prompt_entity_memory]] | upstream | 0.47 |

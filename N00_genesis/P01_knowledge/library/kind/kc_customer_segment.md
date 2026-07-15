@@ -97,7 +97,7 @@ criticality: high
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | n00_customer_segment_manifest | sibling | 0.38 |
-| [[bld_collaboration_customer_segment]] | downstream | 0.36 |
+| [[bld_orchestration_customer_segment]] | downstream | 0.36 |
 | [[customer-segment-builder]] | downstream | 0.35 |
 | p02_ra_segment_researcher.md | downstream | 0.33 |
-| [[bld_instruction_customer_segment]] | downstream | 0.32 |
+| [[bld_prompt_customer_segment]] | downstream | 0.32 |

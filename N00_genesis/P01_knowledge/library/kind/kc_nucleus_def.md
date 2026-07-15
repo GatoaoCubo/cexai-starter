@@ -94,7 +94,7 @@ collapse two nuclei into one bounded context; if a domain already exists, extend
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[nucleus_def_n01]] | instance | 0.50 |
-| [[bld_knowledge_card_nucleus_def]] | builder | 0.46 |
+| [[bld_knowledge_nucleus_def]] | builder | 0.46 |
 | [[nucleus_def_n03]] | instance | 0.44 |
 | [[nucleus_def_n04]] | instance | 0.43 |
 | component_map_n01 | downstream | 0.40 |

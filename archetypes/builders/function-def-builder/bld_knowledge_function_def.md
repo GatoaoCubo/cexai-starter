@@ -82,7 +82,7 @@ Function definitions are JSON Schema specifications that describe callable funct
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p10_lr_function_def_builder]] | downstream | 0.47 |
-| [[p01_kc_function_def]] | sibling | 0.47 |
+| [[kc_function_def]] | sibling | 0.47 |
 | [[function-def-builder]] | downstream | 0.43 |
-| [[bld_instruction_function_def]] | downstream | 0.38 |
+| [[bld_prompt_function_def]] | downstream | 0.38 |
 | n00_function_def_manifest | sibling | 0.35 |

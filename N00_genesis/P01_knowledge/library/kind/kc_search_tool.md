@@ -97,7 +97,7 @@ A search_tool queries external search engines (Tavily, Serper, Perplexity, Brave
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[search-tool-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_search_tool]] | sibling | 0.45 |
+| [[bld_knowledge_search_tool]] | sibling | 0.45 |
 | [[p11_qg_search_tool]] | downstream | 0.43 |
 | n00_search_tool_manifest | sibling | 0.43 |
 | p04_search_tavily | downstream | 0.39 |

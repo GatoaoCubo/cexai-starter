@@ -129,8 +129,8 @@ coercion_enabled: {true|false}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_input_schema]] | upstream | 0.46 |
-| [[bld_instruction_input_schema]] | upstream | 0.45 |
+| [[bld_knowledge_input_schema]] | upstream | 0.46 |
+| [[bld_prompt_input_schema]] | upstream | 0.45 |
 | interface-builder | sibling | 0.44 |
 | p01_kc_pillar_brief_p06_schema_en | related | 0.43 |
 | [[validation-schema-builder]] | sibling | 0.41 |

@@ -72,4 +72,4 @@ The defining contract is p06_vs_design_system; this ISO is its builder-facing re
 | [[bld_output_design_system]] | downstream | 0.5 |
 | [[bld_eval_design_system]] | downstream | 0.48 |
 | bld_model_design_system | sibling | 0.4 |
-| [[p01_kc_design_system]] | related | 0.4 |
+| [[kc_design_system]] | related | 0.4 |

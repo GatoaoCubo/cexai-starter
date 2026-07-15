@@ -103,4 +103,4 @@ A retriever searches a local embedding store, keyword index, or hybrid index and
 | [[retriever-builder]] | downstream | 0.47 |
 | [[bld_memory_retriever]] | downstream | 0.42 |
 | n00_retriever_manifest | sibling | 0.41 |
-| [[bld_knowledge_card_retriever_config]] | sibling | 0.41 |
+| [[bld_knowledge_retriever_config]] | sibling | 0.41 |

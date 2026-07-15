@@ -52,7 +52,7 @@ related:
 ## Cross-Nucleus Shared Terms (DO NOT REDEFINE)
 
 These terms are defined in N00_genesis and must not be redefined:
-- **kind**: atomic artifact type from the 293-kind taxonomy
+- **kind**: atomic artifact type from the 125-kind taxonomy
 - **pillar**: P01-P12 domain grouping
 - **builder**: 12 ISOs teaching 8F how to produce one kind
 - **ISO**: individual instruction file within a builder, 1:1 with a pillar

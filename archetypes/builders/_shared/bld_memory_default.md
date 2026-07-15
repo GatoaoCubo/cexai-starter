@@ -103,4 +103,4 @@ python _tools/cex_memory_update.py --check
 | bld_collaboration_memory_type | downstream | 0.38 |
 | [[bld_feedback_default]] | sibling | 0.36 |
 | [[bld_architecture_default]] | sibling | 0.34 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.33 |
+| [[bld_orchestration_memory_scope]] | downstream | 0.33 |

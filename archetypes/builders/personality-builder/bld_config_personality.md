@@ -98,7 +98,7 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_personality]] | upstream | 0.29 |
+| [[bld_prompt_personality]] | upstream | 0.29 |
 | [[bld_config_default]] | related | 0.28 |
 | [[bld_schema_personality]] | upstream | 0.27 |
 | [[p11_qg_personality]] | downstream | 0.26 |

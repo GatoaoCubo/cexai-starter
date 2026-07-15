@@ -69,7 +69,7 @@ response_format   --precedes-->     validation_schema
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[validation-schema-builder]] | upstream | 0.49 |
-| [[bld_collaboration_validation_schema]] | upstream | 0.47 |
-| [[p01_kc_validation_schema]] | upstream | 0.44 |
+| [[bld_orchestration_validation_schema]] | upstream | 0.47 |
+| [[kc_validation_schema]] | upstream | 0.44 |
 | [[bld_architecture_response_format]] | sibling | 0.42 |
-| [[bld_knowledge_card_validation_schema]] | upstream | 0.42 |
+| [[bld_knowledge_validation_schema]] | upstream | 0.42 |

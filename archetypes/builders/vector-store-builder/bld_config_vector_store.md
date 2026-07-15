@@ -86,7 +86,7 @@ If backend not in list: use "other" and add backend name in tags.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_vector_store]] | upstream | 0.45 |
+| [[bld_knowledge_vector_store]] | upstream | 0.45 |
 | [[p03_ins_vector_store]] | upstream | 0.45 |
 | [[bld_memory_vector_store]] | downstream | 0.42 |
 | [[bld_schema_vector_store]] | upstream | 0.38 |

@@ -139,7 +139,7 @@ inheritance_chain: [ctx_cex_workspace]
 max_bytes: 4096
 ```
 ## ISO Structure Rules
-1. ALWAYS produce all 13 ISOs for any new builder kind
+1. ALWAYS produce all 12 ISOs for any new builder kind
 2. ALWAYS name ISOs `bld_{iso_type}_{kind}.md` in kebab-case builder directory
 3. NEVER skip bld_schema, bld_instruction, or bld_manifest ISOs -- they are mandatory
 

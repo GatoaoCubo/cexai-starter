@@ -146,5 +146,5 @@ Scale guidance:
 | [[p03_ins_vector_store]] | upstream | 0.52 |
 | [[bld_memory_vector_store]] | upstream | 0.46 |
 | [[vector-store-builder]] | upstream | 0.46 |
-| [[bld_knowledge_card_vector_store]] | upstream | 0.43 |
+| [[bld_knowledge_vector_store]] | upstream | 0.43 |
 | [[bld_schema_vector_store]] | upstream | 0.43 |

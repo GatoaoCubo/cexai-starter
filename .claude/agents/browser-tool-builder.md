@@ -89,5 +89,5 @@ Five duties bind any agent that emits an artifact:
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.30 |
 | [[browser-tool-builder]] | related | 0.30 |
-| [[bld_collaboration_browser_tool]] | related | 0.28 |
+| [[bld_orchestration_browser_tool]] | related | 0.28 |
 | n00_browser_tool_manifest | related | 0.27 |

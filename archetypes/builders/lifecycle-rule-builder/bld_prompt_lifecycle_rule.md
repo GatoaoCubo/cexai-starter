@@ -108,4 +108,4 @@ Score SOFT gates from `QUALITY_GATES.md`. If soft score < 8.0, revise in the sam
 | [[p11_qg_lifecycle_rule]] | downstream | 0.40 |
 | [[bld_memory_lifecycle_rule]] | downstream | 0.40 |
 | [[bld_schema_lifecycle_rule]] | downstream | 0.38 |
-| [[bld_knowledge_card_lifecycle_rule]] | downstream | 0.38 |
+| [[bld_knowledge_lifecycle_rule]] | downstream | 0.38 |

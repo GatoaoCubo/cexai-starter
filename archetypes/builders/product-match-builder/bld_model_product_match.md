@@ -182,8 +182,8 @@ audit_min_photo_px: 200
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_product_match]] | downstream | 0.62 |
-| [[bld_instruction_product_match]] | upstream | 0.55 |
-| [[bld_knowledge_card_product_match]] | upstream | 0.49 |
+| [[bld_orchestration_product_match]] | downstream | 0.62 |
+| [[bld_prompt_product_match]] | upstream | 0.55 |
+| [[bld_knowledge_product_match]] | upstream | 0.49 |
 | [[bld_architecture_product_match]] | upstream | 0.47 |
 | [[vision-tool-builder]] | related | 0.40 |

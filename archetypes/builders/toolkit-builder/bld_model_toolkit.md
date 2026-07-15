@@ -128,8 +128,8 @@ Max body: 4096 bytes. Every tool definition is precise. No generic placeholder t
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_toolkit]] | upstream | 0.68 |
+| [[bld_knowledge_toolkit]] | upstream | 0.68 |
 | [[p03_ins_toolkit_builder]] | upstream | 0.65 |
-| [[bld_collaboration_toolkit]] | upstream | 0.63 |
+| [[bld_orchestration_toolkit]] | upstream | 0.63 |
 | [[bld_memory_toolkit]] | downstream | 0.61 |
 | [[bld_config_toolkit]] | downstream | 0.57 |

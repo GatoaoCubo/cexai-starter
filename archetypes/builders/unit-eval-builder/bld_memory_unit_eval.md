@@ -87,7 +87,7 @@ python _tools/cex_score.py --apply bld-memory-unit-eval.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[unit-eval-builder]] | upstream | 0.50 |
-| [[bld_collaboration_unit_eval]] | upstream | 0.47 |
+| [[bld_orchestration_unit_eval]] | upstream | 0.47 |
 | [[p11_qg_unit_eval]] | upstream | 0.46 |
 | n00_unit_eval_manifest | upstream | 0.42 |
 | p02_agent_test_ops | upstream | 0.39 |

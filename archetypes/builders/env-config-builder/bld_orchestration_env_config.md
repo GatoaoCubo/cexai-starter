@@ -65,8 +65,8 @@ I specify environment variables so deployments have correct configuration and se
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_boot_config]] | sibling | 0.47 |
-| [[bld_collaboration_path_config]] | sibling | 0.44 |
+| [[bld_orchestration_boot_config]] | sibling | 0.47 |
+| [[bld_orchestration_path_config]] | sibling | 0.44 |
 | [[env-config-builder]] | upstream | 0.39 |
 | bld_collaboration_trace_config | sibling | 0.36 |
-| [[bld_collaboration_secret_config]] | sibling | 0.34 |
+| [[bld_orchestration_secret_config]] | sibling | 0.34 |

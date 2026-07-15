@@ -62,5 +62,5 @@ related:
 | [[bld_schema_team_charter]] | downstream | 0.45 |
 | [[team-charter-builder]] | downstream | 0.40 |
 | [[p12_qg_team_charter]] | downstream | 0.36 |
-| [[bld_knowledge_card_team_charter]] | upstream | 0.35 |
+| [[bld_knowledge_team_charter]] | upstream | 0.35 |
 | [[bld_output_template_team_charter]] | downstream | 0.34 |

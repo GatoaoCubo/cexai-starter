@@ -85,7 +85,7 @@ If asked to produce any of the following, I MUST redirect and state the boundary
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[decision-record-builder]] | upstream | 0.49 |
-| [[bld_knowledge_card_decision_record]] | upstream | 0.43 |
-| [[p01_kc_decision_record]] | upstream | 0.42 |
+| [[bld_knowledge_decision_record]] | upstream | 0.43 |
+| [[kc_decision_record]] | upstream | 0.42 |
 | [[bld_architecture_decision_record]] | upstream | 0.38 |
 | [[bld_tools_decision_record]] | upstream | 0.38 |

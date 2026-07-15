@@ -79,8 +79,8 @@ When a request arrives that is NOT secret_config, redirect explicitly:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_env_config]] | sibling | 0.38 |
-| [[bld_collaboration_boot_config]] | sibling | 0.37 |
+| [[bld_orchestration_env_config]] | sibling | 0.38 |
+| [[bld_orchestration_boot_config]] | sibling | 0.37 |
 | [[secret-config-builder]] | upstream | 0.37 |
 | p09_sec_n04 | upstream | 0.36 |
-| [[bld_collaboration_path_config]] | sibling | 0.35 |
+| [[bld_orchestration_path_config]] | sibling | 0.35 |

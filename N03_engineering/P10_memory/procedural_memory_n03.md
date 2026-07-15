@@ -56,7 +56,7 @@ execute. If no handoff, report ready."), or an in-session build request.
    HYBRID, < 30% -> FRESH from builder ISOs + base schema.
 6. F5 CALL: confirm compile/doctor/index tooling is reachable; scan for reuse.
 7. F6 PRODUCE: generate at density >= 0.85 (L11 Token Optimization,
-   [[p01_kc_construction_laws]]) -- tables/decision-trees over prose.
+   [[kc_construction_laws]]) -- tables/decision-trees over prose.
 8. F7 GOVERN: quality gate, floor **9.0** (above the 8.0 system default,
    `n03-builder.md:46`) -- "below that, you rebuild". Max 2 F6 retries on
    failure (L07 Resilience).
@@ -82,11 +82,13 @@ execute. If no handoff, report ready."), or an in-session build request.
 4. If `{kind}` has no builder dir yet: do not freehand 12 ISOs by hand. Route
    through the `builder_factory` crew (spec_writer -> iso_generator ->
    test_runner, `P12_orchestration/crews/p12_ct_builder_factory.md`).
-5. **Flagged nuance**: `n03-builder.md:54` and `hybrid_review_n03.md:47,58`
-   say "13 ISOs" -- an older, differently-named set (adds `collaboration`,
-   `examples`, `instruction`, `manifest`, `system_prompt`). Disk + `agent_
-   card_n03.md:78,156` show the current 12-name set (step 2); treat "13" as
-   a stale rule-file line until corrected.
+5. **Resolved nuance** (was flagged, fixed in the STARTER_CLEANUP_0715 pass):
+   `n03-builder.md:54` used to say "13 ISOs" -- an older, differently-named
+   set (adds `collaboration`, `examples`, `instruction`, `manifest`,
+   `system_prompt`). Disk + `agent_card_n03.md:78,156` show the current
+   12-name set (step 2); the rule-file line was corrected to "12 per kind".
+   (`hybrid_review_n03.md` referenced the same pattern but does not ship in
+   this starter repo.)
 
 ---
 
@@ -250,4 +252,4 @@ pillar dirs.
 | revision_loop_policy_n03 | related | 0.33 |
 | p10_lr_call_site_migration | sibling | 0.29 |
 | agent_card_n03 | upstream | 0.28 |
-| [[p01_kc_construction_laws]] | upstream | 0.26 |
+| [[kc_construction_laws]] | upstream | 0.26 |

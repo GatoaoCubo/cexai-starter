@@ -110,7 +110,7 @@ key_insights: "{{top_differentiator_one_sentence}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_competitive_matrix]] | downstream | 0.35 |
-| [[bld_knowledge_card_competitive_matrix]] | upstream | 0.28 |
+| [[bld_knowledge_competitive_matrix]] | upstream | 0.28 |
 | [[bld_output_template_knowledge_card]] | sibling | 0.26 |
 | p08_pat_pricing_framework | downstream | 0.26 |
 | p01_kc_supabase_api | upstream | 0.23 |

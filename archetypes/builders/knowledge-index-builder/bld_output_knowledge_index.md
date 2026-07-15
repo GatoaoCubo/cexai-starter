@@ -97,4 +97,4 @@ linked_artifacts:
 | [[p11_qg_knowledge_index]] | downstream | 0.36 |
 | [[knowledge-index-builder]] | downstream | 0.35 |
 | [[bld_schema_knowledge_index]] | downstream | 0.30 |
-| [[bld_instruction_knowledge_index]] | upstream | 0.29 |
+| [[bld_prompt_knowledge_index]] | upstream | 0.29 |

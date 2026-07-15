@@ -67,8 +67,8 @@ The content_filter-builder agent designs and configures input/output content fil
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_content_filter]] | downstream | 0.42 |
-| [[bld_instruction_content_filter]] | upstream | 0.37 |
+| [[bld_orchestration_content_filter]] | downstream | 0.42 |
+| [[bld_prompt_content_filter]] | upstream | 0.37 |
 | [[kc_guardrail]] | upstream | 0.34 |
 | [[kc_content_filter]] | upstream | 0.32 |
 | [[p10_lr_content_filter_builder]] | upstream | 0.30 |

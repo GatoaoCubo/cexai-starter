@@ -86,7 +86,7 @@ python _tools/cex_score.py --apply bld-memory-lifecycle-rule.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_manifest_lifecycle_rule]] | related | 0.56 |
-| [[bld_collaboration_lifecycle_rule]] | downstream | 0.52 |
-| [[bld_knowledge_card_lifecycle_rule]] | downstream | 0.42 |
+| [[bld_orchestration_lifecycle_rule]] | downstream | 0.52 |
+| [[bld_knowledge_lifecycle_rule]] | downstream | 0.42 |
 | [[p03_ins_lifecycle_rule]] | upstream | 0.41 |
 | [[p11_qg_lifecycle_rule]] | downstream | 0.37 |

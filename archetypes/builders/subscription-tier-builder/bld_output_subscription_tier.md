@@ -53,7 +53,7 @@ quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_subscription_tier]] | upstream | 0.33 |
+| [[bld_prompt_subscription_tier]] | upstream | 0.33 |
 | [[kc_subscription_tier]] | upstream | 0.30 |
 | n00_pricing_page_manifest | related | 0.28 |
 | bld_instruction_pricing_page | upstream | 0.27 |

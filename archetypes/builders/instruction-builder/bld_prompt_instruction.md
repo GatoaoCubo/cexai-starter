@@ -85,8 +85,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_action_prompt]] | sibling | 0.44 |
-| [[bld_instruction_input_schema]] | sibling | 0.42 |
+| [[bld_prompt_action_prompt]] | sibling | 0.44 |
+| [[bld_prompt_input_schema]] | sibling | 0.42 |
 | bld_instruction_context_doc | sibling | 0.36 |
 | [[bld_schema_instruction]] | downstream | 0.36 |
-| [[bld_knowledge_card_instruction]] | upstream | 0.33 |
+| [[bld_knowledge_instruction]] | upstream | 0.33 |

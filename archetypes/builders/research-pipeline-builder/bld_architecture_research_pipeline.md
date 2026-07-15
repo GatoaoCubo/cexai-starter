@@ -113,7 +113,7 @@ config.yaml ──► intent_classifier ──► storm_planner
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p04_cli_research_pipeline_n01 | upstream | 0.33 |
-| [[bld_instruction_research_pipeline]] | upstream | 0.32 |
+| [[bld_prompt_research_pipeline]] | upstream | 0.32 |
 | [[research-pipeline-builder]] | upstream | 0.30 |
-| [[bld_collaboration_research_pipeline]] | downstream | 0.30 |
+| [[bld_orchestration_research_pipeline]] | downstream | 0.30 |
 | p02_agent_research_pipeline_intelligence | upstream | 0.26 |

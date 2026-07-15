@@ -84,6 +84,6 @@ Rule: id MUST equal filename stem.
 |----------|-------------|-------|
 | [[formatter-builder]] | upstream | 0.37 |
 | [[bld_schema_formatter]] | upstream | 0.36 |
-| [[bld_knowledge_card_formatter]] | upstream | 0.36 |
+| [[bld_knowledge_formatter]] | upstream | 0.36 |
 | [[bld_config_parser]] | sibling | 0.35 |
-| [[p01_kc_formatter]] | upstream | 0.32 |
+| [[kc_formatter]] | upstream | 0.32 |

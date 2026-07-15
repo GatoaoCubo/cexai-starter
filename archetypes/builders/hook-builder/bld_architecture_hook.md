@@ -71,7 +71,7 @@ hook          --may_call--> cli_tool
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[hook-builder]] | upstream | 0.61 |
-| [[bld_instruction_hook]] | upstream | 0.55 |
+| [[bld_prompt_hook]] | upstream | 0.55 |
 | bld_collaboration_hook_config | downstream | 0.51 |
 | p04_hook_NAME | upstream | 0.50 |
-| [[bld_collaboration_hook]] | downstream | 0.49 |
+| [[bld_orchestration_hook]] | downstream | 0.49 |

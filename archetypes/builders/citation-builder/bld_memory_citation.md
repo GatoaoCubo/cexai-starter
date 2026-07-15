@@ -48,8 +48,8 @@ Citations ground LLM outputs in verifiable external evidence. The primary failur
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_citation]] | upstream | 0.48 |
+| [[bld_knowledge_citation]] | upstream | 0.48 |
 | [[citation-builder]] | upstream | 0.47 |
-| [[p01_kc_citation]] | upstream | 0.47 |
+| [[kc_citation]] | upstream | 0.47 |
 | [[bld_output_template_citation]] | upstream | 0.39 |
 | [[bld_architecture_citation]] | upstream | 0.39 |

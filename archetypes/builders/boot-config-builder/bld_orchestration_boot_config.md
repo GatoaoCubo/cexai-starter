@@ -66,8 +66,8 @@ I configure provider-specific startup so agents boot correctly on any runtime.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | sibling | 0.60 |
-| [[bld_collaboration_agent_package]] | sibling | 0.50 |
-| [[bld_collaboration_model_provider]] | sibling | 0.45 |
+| [[bld_orchestration_agent]] | sibling | 0.60 |
+| [[bld_orchestration_agent_package]] | sibling | 0.50 |
+| [[bld_orchestration_model_provider]] | sibling | 0.45 |
 | [[boot-config-builder]] | upstream | 0.42 |
-| [[bld_collaboration_fallback_chain]] | sibling | 0.40 |
+| [[bld_orchestration_fallback_chain]] | sibling | 0.40 |

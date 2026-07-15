@@ -132,8 +132,8 @@ Type: {type} | Required: {yes|no} | Default: {val}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_function_def]] | upstream | 0.54 |
+| [[kc_function_def]] | upstream | 0.54 |
 | [[bld_architecture_function_def]] | downstream | 0.49 |
-| [[bld_collaboration_function_def]] | downstream | 0.48 |
-| [[bld_instruction_function_def]] | upstream | 0.47 |
-| [[bld_knowledge_card_function_def]] | upstream | 0.45 |
+| [[bld_orchestration_function_def]] | downstream | 0.48 |
+| [[bld_prompt_function_def]] | upstream | 0.47 |
+| [[bld_knowledge_function_def]] | upstream | 0.45 |

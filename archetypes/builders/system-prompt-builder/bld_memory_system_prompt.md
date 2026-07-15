@@ -87,7 +87,7 @@ python _tools/cex_score.py --apply bld-memory-system-prompt.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[system-prompt-builder]] | upstream | 0.55 |
-| [[bld_collaboration_system_prompt]] | upstream | 0.44 |
-| [[bld_knowledge_card_system_prompt]] | upstream | 0.37 |
+| [[bld_orchestration_system_prompt]] | upstream | 0.44 |
+| [[bld_knowledge_system_prompt]] | upstream | 0.37 |
 | [[action-prompt-builder]] | upstream | 0.37 |
 | [[p11_qg_system_prompt]] | upstream | 0.35 |

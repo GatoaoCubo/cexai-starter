@@ -55,5 +55,5 @@ related:
 | [[p10_mem_opportunity_matrix_builder]] | downstream | 0.49 |
 | [[p11_qg_opportunity_matrix]] | downstream | 0.45 |
 | [[opportunity-matrix-builder]] | downstream | 0.44 |
-| [[bld_knowledge_card_opportunity_matrix]] | upstream | 0.40 |
+| [[bld_knowledge_opportunity_matrix]] | upstream | 0.40 |
 | sourcing | related | 0.38 |

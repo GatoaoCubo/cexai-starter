@@ -101,4 +101,4 @@ python _tools/cex_skill_loader.py --verify guardrail
 | [[p10_lr_guardrail_builder]] | downstream | 0.49 |
 | [[p11_qg_guardrail]] | downstream | 0.48 |
 | [[bld_architecture_guardrail]] | downstream | 0.45 |
-| [[bld_knowledge_card_guardrail]] | upstream | 0.44 |
+| [[bld_knowledge_guardrail]] | upstream | 0.44 |

@@ -26,7 +26,7 @@ full text: `.cex/P09_config/constitution_manifest.md` +
 below and injects it -- guarded by `<!-- producer-rail v1 -->`, idempotently --
 into every `.claude/agents/*.md` sub-agent prompt and into the Stage-2 producer
 rules of `N00_genesis/P03_prompt/tpl_prompt_package.md`. Edit the rail HERE; then
-re-run the wiring tool to propagate. Keep it compact: it duplicates 300+ times.
+re-run the wiring tool to propagate. Keep it compact: it duplicates 121 times.
 
 <!-- RAIL:BEGIN v1 -->
 Every producer and sub-agent obeys this rail -- the producer-relevant subset of the

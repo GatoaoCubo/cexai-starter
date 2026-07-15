@@ -89,8 +89,8 @@ tldr: "{{Dense <=160ch budget description}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_context_window_config]] | upstream | 0.48 |
+| [[kc_context_window_config]] | upstream | 0.48 |
 | [[context-window-config-builder]] | upstream | 0.43 |
 | [[p11_qg_context_window_config]] | downstream | 0.40 |
 | [[bld_config_context_window_config]] | downstream | 0.38 |
-| [[bld_instruction_context_window_config]] | upstream | 0.37 |
+| [[bld_prompt_context_window_config]] | upstream | 0.37 |

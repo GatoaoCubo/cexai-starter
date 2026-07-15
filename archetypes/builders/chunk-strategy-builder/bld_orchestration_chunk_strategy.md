@@ -78,8 +78,8 @@ None — independent builder (layer 0).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_retriever_config]] | sibling | 0.59 |
+| [[bld_orchestration_retriever_config]] | sibling | 0.59 |
 | [[chunk-strategy-builder]] | upstream | 0.38 |
 | [[bld_config_chunk_strategy]] | upstream | 0.38 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.37 |
-| [[bld_collaboration_context_window_config]] | sibling | 0.34 |
+| [[bld_orchestration_memory_scope]] | sibling | 0.37 |
+| [[bld_orchestration_context_window_config]] | sibling | 0.34 |

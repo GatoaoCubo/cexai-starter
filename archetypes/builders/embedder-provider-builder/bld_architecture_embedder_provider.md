@@ -75,4 +75,4 @@ chunker_config     --constrains-->   embedder_provider (max_tokens)
 | [[bld_architecture_vector_store]] | sibling | 0.50 |
 | [[embedder-provider-builder]] | upstream | 0.48 |
 | [[p11_qg_embedder_provider]] | downstream | 0.43 |
-| [[bld_collaboration_embedder_provider]] | upstream | 0.42 |
+| [[bld_orchestration_embedder_provider]] | upstream | 0.42 |

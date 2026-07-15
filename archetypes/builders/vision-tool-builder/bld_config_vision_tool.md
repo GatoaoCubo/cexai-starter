@@ -83,7 +83,7 @@ Rule: use canonical provider names from registry — costm names must document f
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_vision_tool]] | upstream | 0.33 |
-| [[bld_instruction_vision_tool]] | upstream | 0.29 |
+| [[bld_prompt_vision_tool]] | upstream | 0.29 |
 | [[bld_output_template_vision_tool]] | upstream | 0.29 |
 | bld_config_cli_tool | sibling | 0.28 |
 | [[bld_config_memory_scope]] | sibling | 0.28 |

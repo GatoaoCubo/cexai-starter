@@ -79,6 +79,6 @@ python _tools/cex_prompt_optimizer.py --check
 |----------|-------------|-------|
 | bld_instruction_bounded_context | sibling | 0.44 |
 | [[bld_schema_domain_vocabulary]] | downstream | 0.42 |
-| [[p01_kc_domain_vocabulary]] | upstream | 0.41 |
+| [[kc_domain_vocabulary]] | upstream | 0.41 |
 | [[domain-vocabulary-builder]] | upstream | 0.40 |
 | [[bld_qg_domain_vocabulary]] | downstream | 0.40 |

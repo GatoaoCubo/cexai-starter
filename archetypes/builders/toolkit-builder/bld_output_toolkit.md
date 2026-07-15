@@ -99,6 +99,6 @@ review_date: "{{ISO_8601_date_or_omit}}"
 |----------|-------------|-------|
 | [[bld_schema_toolkit]] | downstream | 0.54 |
 | [[p03_ins_toolkit_builder]] | upstream | 0.53 |
-| [[bld_knowledge_card_toolkit]] | upstream | 0.52 |
+| [[bld_knowledge_toolkit]] | upstream | 0.52 |
 | [[bld_config_toolkit]] | downstream | 0.50 |
 | [[toolkit-builder]] | upstream | 0.46 |

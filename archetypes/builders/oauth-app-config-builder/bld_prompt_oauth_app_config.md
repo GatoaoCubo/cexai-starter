@@ -56,4 +56,4 @@ related:
 | [[kc_oauth_app_config]] | upstream | 0.40 |
 | [[p10_lr_oauth_app_config_builder]] | downstream | 0.38 |
 | [[p09_qg_oauth_app_config]] | downstream | 0.36 |
-| [[bld_knowledge_card_oauth_app_config]] | upstream | 0.30 |
+| [[bld_knowledge_oauth_app_config]] | upstream | 0.30 |

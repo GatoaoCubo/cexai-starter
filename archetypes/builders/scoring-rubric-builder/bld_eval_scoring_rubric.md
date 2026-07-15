@@ -116,8 +116,8 @@ This rubric provides the SOFT scoring framework for nuanced quality assessment.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_scoring_rubric]] | upstream | 0.46 |
+| [[bld_orchestration_scoring_rubric]] | upstream | 0.46 |
 | [[scoring-rubric-builder]] | upstream | 0.43 |
-| [[bld_knowledge_card_scoring_rubric]] | upstream | 0.42 |
-| [[p01_kc_scoring_rubric]] | upstream | 0.40 |
+| [[bld_knowledge_scoring_rubric]] | upstream | 0.42 |
+| [[kc_scoring_rubric]] | upstream | 0.40 |
 | [[bld_memory_scoring_rubric]] | upstream | 0.39 |

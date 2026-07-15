@@ -83,6 +83,6 @@ Mental models are design-time cognitive blueprints for agents — structured YAM
 |----------|-------------|-------|
 | [[mental-model-builder]] | downstream | 0.55 |
 | [[p03_ins_mental_model]] | downstream | 0.53 |
-| [[bld_collaboration_mental_model]] | downstream | 0.49 |
+| [[bld_orchestration_mental_model]] | downstream | 0.49 |
 | [[bld_memory_mental_model]] | downstream | 0.44 |
 | [[p11_qg_mental_model]] | downstream | 0.44 |

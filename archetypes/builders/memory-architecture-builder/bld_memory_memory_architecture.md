@@ -62,5 +62,5 @@ These are all correct for computer architecture but wrong for LLM agent memory.
 | [[memory-architecture-builder]] | related | 0.54 |
 | [[p10_qg_memory_architecture]] | downstream | 0.48 |
 | [[bld_tools_memory_architecture]] | upstream | 0.36 |
-| [[bld_instruction_memory_architecture]] | upstream | 0.36 |
+| [[bld_prompt_memory_architecture]] | upstream | 0.36 |
 | consolidation-policy-builder | related | 0.36 |

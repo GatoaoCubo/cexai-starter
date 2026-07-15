@@ -71,8 +71,8 @@ I produce extraction rules, regex patterns, JSON paths, and normalization pipeli
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_response_format]] | sibling | 0.37 |
+| [[bld_orchestration_response_format]] | sibling | 0.37 |
 | [[parser-builder]] | related | 0.35 |
-| [[bld_collaboration_output_validator]] | sibling | 0.35 |
+| [[bld_orchestration_output_validator]] | sibling | 0.35 |
 | [[bld_architecture_parser]] | downstream | 0.30 |
-| [[bld_collaboration_validation_schema]] | sibling | 0.29 |
+| [[bld_orchestration_validation_schema]] | sibling | 0.29 |

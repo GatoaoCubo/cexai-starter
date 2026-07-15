@@ -78,7 +78,7 @@ Rule: use `.yaml` only for this builder — primitives are human-readable compos
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p03_ins_workflow_primitive_builder]] | upstream | 0.54 |
-| [[bld_knowledge_card_workflow_primitive]] | upstream | 0.51 |
+| [[bld_knowledge_workflow_primitive]] | upstream | 0.51 |
 | [[workflow-primitive-builder]] | downstream | 0.50 |
 | [[bld_output_template_workflow_primitive]] | upstream | 0.47 |
 | [[p11_qg_workflow_primitive]] | downstream | 0.46 |

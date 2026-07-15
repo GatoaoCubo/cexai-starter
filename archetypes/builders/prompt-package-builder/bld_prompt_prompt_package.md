@@ -160,7 +160,7 @@ HARD gates (all must pass -- fix before handoff):
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-package-builder]] | related | 0.48 |
-| [[bld_knowledge_card_prompt_package]] | upstream | 0.47 |
+| [[bld_knowledge_prompt_package]] | upstream | 0.47 |
 | [[bld_orchestration_prompt_package]] | related | 0.47 |
 | [[schema_prompt_package_builder]] | downstream | 0.45 |
 | [[bld_memory_prompt_package]] | downstream | 0.39 |

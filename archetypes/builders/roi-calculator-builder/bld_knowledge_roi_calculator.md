@@ -64,6 +64,6 @@ ROI calculators quantify financial returns of technology investments by comparin
 |----------|-------------|-------|
 | [[kc_roi_calculator]] | sibling | 0.51 |
 | [[roi-calculator-builder]] | downstream | 0.49 |
-| [[bld_instruction_roi_calculator]] | downstream | 0.40 |
+| [[bld_prompt_roi_calculator]] | downstream | 0.40 |
 | [[p11_qg_roi_calculator]] | downstream | 0.35 |
 | [[bld_output_template_roi_calculator]] | downstream | 0.32 |

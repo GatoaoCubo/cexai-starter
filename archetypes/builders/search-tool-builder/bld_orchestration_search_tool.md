@@ -65,7 +65,7 @@ None — independent builder (layer 0). Search tools are self-contained provider
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[search-tool-builder]] | upstream | 0.50 |
-| [[bld_collaboration_function_def]] | sibling | 0.36 |
-| [[bld_knowledge_card_search_tool]] | upstream | 0.33 |
-| [[bld_instruction_search_tool]] | upstream | 0.33 |
-| [[bld_collaboration_retriever]] | sibling | 0.32 |
+| [[bld_orchestration_function_def]] | sibling | 0.36 |
+| [[bld_knowledge_search_tool]] | upstream | 0.33 |
+| [[bld_prompt_search_tool]] | upstream | 0.33 |
+| [[bld_orchestration_retriever]] | sibling | 0.32 |

@@ -104,5 +104,5 @@ python _tools/cex_schema_hydrate.py --check
 | bld_schema_aggregate_root | sibling | 0.41 |
 | bld_schema_value_object | sibling | 0.40 |
 | [[bld_output_template_constitutional_rule]] | related | 0.40 |
-| [[bld_instruction_constitutional_rule]] | related | 0.39 |
+| [[bld_prompt_constitutional_rule]] | related | 0.39 |
 | [[bld_schema_guardrail]] | sibling | 0.36 |

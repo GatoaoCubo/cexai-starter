@@ -118,7 +118,7 @@ Produce a pattern artifact with YAML frontmatter followed by: `## Problem`, `## 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_pattern]] | related | 0.53 |
-| [[bld_collaboration_pattern]] | related | 0.51 |
+| [[bld_orchestration_pattern]] | related | 0.51 |
 | [[bld_memory_pattern]] | downstream | 0.48 |
 | [[p03_ins_pattern]] | upstream | 0.44 |
-| [[bld_knowledge_card_pattern]] | upstream | 0.41 |
+| [[bld_knowledge_pattern]] | upstream | 0.41 |

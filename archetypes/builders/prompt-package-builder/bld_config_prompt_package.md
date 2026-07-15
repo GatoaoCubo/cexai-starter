@@ -107,6 +107,6 @@ than resolved unilaterally.
 |----------|-------------|-------|
 | [[p03_ins_prompt_package]] | upstream | 0.40 |
 | [[bld_memory_prompt_package]] | downstream | 0.40 |
-| [[bld_knowledge_card_prompt_package]] | upstream | 0.38 |
+| [[bld_knowledge_prompt_package]] | upstream | 0.38 |
 | [[prompt-package-builder]] | upstream | 0.36 |
 | [[bld_orchestration_prompt_package]] | upstream | 0.36 |

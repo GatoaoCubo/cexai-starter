@@ -77,6 +77,6 @@ Glossary entries are concise, authoritative term definitions: one term, one defi
 |----------|-------------|-------|
 | [[glossary-entry-builder]] | related | 0.57 |
 | p01_gl_TERM_SLUG | related | 0.56 |
-| [[p01_kc_glossary_entry]] | sibling | 0.56 |
-| [[bld_instruction_glossary_entry]] | downstream | 0.54 |
+| [[kc_glossary_entry]] | sibling | 0.56 |
+| [[bld_prompt_glossary_entry]] | downstream | 0.54 |
 | [[p10_lr_glossary_entry_builder]] | downstream | 0.51 |

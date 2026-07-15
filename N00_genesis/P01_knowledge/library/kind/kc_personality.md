@@ -88,7 +88,7 @@ User: /personality default
 | playful | Wit-forward, light, pun-tolerant | Creative, social, entertainment |
 
 ## Builder
-`archetypes/builders/personality-builder/` (13 ISOs)
+`archetypes/builders/personality-builder/` (12 ISOs)
 
 ```bash
 python _tools/cex_8f_runner.py "create researcher personality" --kind personality --execute
@@ -110,7 +110,7 @@ researcher (formal/technical), coach (warm/casual), hacker (dry/playful).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | n00_personality_manifest | sibling | 0.76 |
-| [[bld_knowledge_card_personality]] | sibling | 0.75 |
+| [[bld_knowledge_personality]] | sibling | 0.75 |
 | [[personality-builder]] | downstream | 0.71 |
 | [[bld_architecture_personality]] | downstream | 0.66 |
 | [[bld_schema_personality]] | downstream | 0.56 |

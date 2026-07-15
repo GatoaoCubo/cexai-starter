@@ -76,6 +76,6 @@ circuit_breaker  --depends-->  fallback_chain
 |----------|-------------|-------|
 | [[fallback-chain-builder]] | upstream | 0.52 |
 | [[p11_qg_fallback_chain]] | downstream | 0.50 |
-| [[p01_kc_fallback_chain]] | upstream | 0.44 |
+| [[kc_fallback_chain]] | upstream | 0.44 |
 | n00_fallback_chain_manifest | upstream | 0.40 |
-| [[bld_instruction_fallback_chain]] | upstream | 0.38 |
+| [[bld_prompt_fallback_chain]] | upstream | 0.38 |

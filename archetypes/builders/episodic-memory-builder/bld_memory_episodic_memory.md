@@ -63,7 +63,7 @@ Episodic memory stores without explicit count limits and decay policies become o
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[episodic-memory-builder]] | related | 0.45 |
-| [[bld_knowledge_card_episodic_memory]] | upstream | 0.44 |
-| [[bld_instruction_episodic_memory]] | upstream | 0.35 |
+| [[bld_knowledge_episodic_memory]] | upstream | 0.44 |
+| [[bld_prompt_episodic_memory]] | upstream | 0.35 |
 | [[bld_architecture_episodic_memory]] | upstream | 0.34 |
 | [[bld_schema_episodic_memory]] | related | 0.34 |

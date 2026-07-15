@@ -101,6 +101,6 @@ embedder_provider IS NOT: vector_store, model_provider, retriever, chunker.
 |----------|-------------|-------|
 | [[p03_ins_embedder_provider]] | upstream | 0.56 |
 | [[bld_schema_embedder_provider]] | downstream | 0.45 |
-| [[bld_knowledge_card_embedder_provider]] | upstream | 0.43 |
+| [[bld_knowledge_embedder_provider]] | upstream | 0.43 |
 | [[bld_output_template_model_provider]] | sibling | 0.42 |
 | [[bld_config_embedder_provider]] | downstream | 0.42 |

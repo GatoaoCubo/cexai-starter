@@ -53,7 +53,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_crew_template]] | sibling | 0.41 |
-| [[bld_knowledge_card_role_assignment]] | upstream | 0.37 |
+| [[bld_knowledge_role_assignment]] | upstream | 0.37 |
 | [[role-assignment-builder]] | upstream | 0.36 |
 | [[p11_qg_role_assignment]] | downstream | 0.33 |
 | bld_tools_pipeline_template | sibling | 0.30 |

@@ -79,6 +79,6 @@ related:
 |----------|-------------|-------|
 | [[bld_schema_personality]] | upstream | 0.48 |
 | [[personality-builder]] | upstream | 0.44 |
-| [[bld_instruction_enum_def]] | sibling | 0.43 |
-| [[bld_instruction_output_validator]] | sibling | 0.41 |
-| [[bld_instruction_memory_scope]] | sibling | 0.41 |
+| [[bld_prompt_enum_def]] | sibling | 0.43 |
+| [[bld_prompt_output_validator]] | sibling | 0.41 |
+| [[bld_prompt_memory_scope]] | sibling | 0.41 |

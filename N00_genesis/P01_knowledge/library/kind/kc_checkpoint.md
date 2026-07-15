@@ -95,7 +95,7 @@ A checkpoint is a point-in-time saved state of a running workflow — completed 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[checkpoint-builder]] | related | 0.63 |
-| [[bld_collaboration_checkpoint]] | related | 0.63 |
+| [[bld_orchestration_checkpoint]] | related | 0.63 |
 | [[bld_architecture_checkpoint]] | upstream | 0.61 |
-| [[bld_instruction_checkpoint]] | upstream | 0.53 |
+| [[bld_prompt_checkpoint]] | upstream | 0.53 |
 | p12_checkpoint | related | 0.53 |

@@ -77,7 +77,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[entity-memory-builder]] | downstream | 0.50 |
-| [[bld_knowledge_card_entity_memory]] | upstream | 0.43 |
+| [[bld_knowledge_entity_memory]] | upstream | 0.43 |
 | [[bld_schema_entity_memory]] | downstream | 0.42 |
-| [[bld_instruction_memory_scope]] | sibling | 0.41 |
+| [[bld_prompt_memory_scope]] | sibling | 0.41 |
 | [[bld_output_template_entity_memory]] | downstream | 0.40 |

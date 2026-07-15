@@ -116,7 +116,7 @@ personality_store: N00_genesis/P02_model/  # or nucleus-local P02
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_personality]] | upstream | 0.65 |
-| [[bld_knowledge_card_personality]] | upstream | 0.62 |
+| [[bld_knowledge_personality]] | upstream | 0.62 |
 | [[personality-builder]] | upstream | 0.58 |
 | n00_personality_manifest | upstream | 0.56 |
 | [[bld_memory_personality]] | downstream | 0.52 |

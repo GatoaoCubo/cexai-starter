@@ -104,7 +104,7 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p09_kc_retriever_domain]] | downstream | 0.41 |
-| [[bld_instruction_retriever]] | upstream | 0.39 |
+| [[bld_prompt_retriever]] | upstream | 0.39 |
 | [[bld_output_template_retriever]] | upstream | 0.38 |
 | [[retriever-builder]] | upstream | 0.38 |
 | [[bld_schema_retriever]] | related | 0.34 |

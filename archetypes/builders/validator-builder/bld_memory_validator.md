@@ -88,6 +88,6 @@ python _tools/cex_score.py --apply bld-memory-validator.md
 |----------|-------------|-------|
 | [[validator-builder]] | upstream | 0.57 |
 | [[p11_qg_validator]] | upstream | 0.51 |
-| [[bld_collaboration_validator]] | upstream | 0.50 |
-| [[bld_knowledge_card_validator]] | upstream | 0.49 |
+| [[bld_orchestration_validator]] | upstream | 0.50 |
+| [[bld_knowledge_validator]] | upstream | 0.49 |
 | [[bld_architecture_validator]] | upstream | 0.42 |

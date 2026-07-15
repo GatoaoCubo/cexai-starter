@@ -49,8 +49,8 @@ Does NOT define agent identity (that is agent-builder's job). Does NOT compose t
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_crew_template]] | sibling | 0.41 |
+| [[bld_orchestration_crew_template]] | sibling | 0.41 |
 | [[role-assignment-builder]] | upstream | 0.34 |
-| [[bld_collaboration_toolkit]] | sibling | 0.29 |
-| [[bld_collaboration_agent]] | sibling | 0.29 |
+| [[bld_orchestration_toolkit]] | sibling | 0.29 |
+| [[bld_orchestration_agent]] | sibling | 0.29 |
 | n00_role_assignment_manifest | upstream | 0.29 |

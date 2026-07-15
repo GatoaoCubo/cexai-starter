@@ -197,12 +197,12 @@ goal: move_customer_to_higher_value_offer_without_custom_scope_leak
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_few_shot_example]] | downstream | 0.24 |
+| [[bld_orchestration_few_shot_example]] | downstream | 0.24 |
 | [[few-shot-example-builder]] | related | 0.24 |
-| [[bld_knowledge_card_few_shot_example]] | related | 0.20 |
+| [[bld_knowledge_few_shot_example]] | related | 0.20 |
 | p01_ctx_monetization_audit_n06_2026_04_08 | related | 0.20 |
-| [[p01_kc_few_shot_example]] | related | 0.19 |
+| [[kc_few_shot_example]] | related | 0.19 |
 | [[p10_lr_few_shot_example_builder]] | downstream | 0.19 |
 | p08_pat_pricing_framework | downstream | 0.19 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.19 |
+| [[bld_orchestration_action_prompt]] | downstream | 0.19 |
 | [[action-prompt-builder]] | downstream | 0.19 |

@@ -123,7 +123,7 @@ chunk_overlap: {integer}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_embedding_config]] | downstream | 0.57 |
-| [[bld_collaboration_embedding_config]] | downstream | 0.56 |
-| [[bld_instruction_embedding_config]] | downstream | 0.45 |
+| [[bld_orchestration_embedding_config]] | downstream | 0.56 |
+| [[bld_prompt_embedding_config]] | downstream | 0.45 |
 | [[embedder-provider-builder]] | sibling | 0.44 |
-| [[p01_kc_embedding_config]] | related | 0.43 |
+| [[kc_embedding_config]] | related | 0.43 |

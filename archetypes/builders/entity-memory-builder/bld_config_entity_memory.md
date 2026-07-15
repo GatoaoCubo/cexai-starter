@@ -81,7 +81,7 @@ Rule: every entity_memory MUST declare update_policy.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[entity-memory-builder]] | downstream | 0.34 |
-| [[bld_knowledge_card_entity_memory]] | upstream | 0.33 |
-| [[bld_instruction_entity_memory]] | upstream | 0.33 |
+| [[bld_knowledge_entity_memory]] | upstream | 0.33 |
+| [[bld_prompt_entity_memory]] | upstream | 0.33 |
 | [[bld_config_memory_scope]] | sibling | 0.32 |
 | [[bld_output_template_entity_memory]] | upstream | 0.32 |

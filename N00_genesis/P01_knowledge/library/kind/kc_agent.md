@@ -107,8 +107,8 @@ An agent is the complete identity specification that transforms a general LLM in
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | downstream | 0.56 |
+| [[bld_orchestration_agent]] | downstream | 0.56 |
 | [[bld_architecture_agent]] | downstream | 0.50 |
 | [[agent-builder]] | related | 0.48 |
-| [[bld_knowledge_card_agent]] | sibling | 0.47 |
+| [[bld_knowledge_agent]] | sibling | 0.47 |
 | p02_agent_n03_sdk_test | related | 0.43 |

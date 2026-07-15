@@ -101,8 +101,8 @@ python _tools/cex_skill_loader.py --verify api
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_chunk_strategy]] | sibling | 0.50 |
-| [[bld_instruction_retriever_config]] | sibling | 0.50 |
-| [[bld_instruction_output_validator]] | sibling | 0.48 |
+| [[bld_prompt_chunk_strategy]] | sibling | 0.50 |
+| [[bld_prompt_retriever_config]] | sibling | 0.50 |
+| [[bld_prompt_output_validator]] | sibling | 0.48 |
 | bld_instruction_connector | sibling | 0.47 |
-| [[bld_instruction_search_tool]] | sibling | 0.47 |
+| [[bld_prompt_search_tool]] | sibling | 0.47 |

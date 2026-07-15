@@ -46,7 +46,7 @@ Reviewed artifacts used YAML anchors for shared reseller settings and included v
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[white-label-config-builder]] | upstream | 0.45 |
-| [[bld_knowledge_card_white_label_config]] | upstream | 0.37 |
+| [[bld_knowledge_white_label_config]] | upstream | 0.37 |
 | n00_white_label_config_manifest | upstream | 0.29 |
 | [[p11_qg_white_label_config]] | downstream | 0.27 |
 | p10_lr_playground_config_builder | related | 0.25 |

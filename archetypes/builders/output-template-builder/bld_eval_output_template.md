@@ -137,8 +137,8 @@ row R-299 explicitly forbids; the convention choice must be disclosed, not just 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_output_template]] | sibling | 0.44 |
+| [[bld_prompt_output_template]] | sibling | 0.44 |
 | [[bld_schema_output_template]] | sibling | 0.42 |
-| [[bld_knowledge_card_output_template]] | sibling | 0.40 |
+| [[bld_knowledge_output_template]] | sibling | 0.40 |
 | p11_qg_field_manifest | related | 0.36 |
 | [[p10_lr_output_template_builder]] | downstream | 0.33 |

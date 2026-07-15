@@ -48,7 +48,7 @@ The skill MUST intercept when a planned `Write` or `Edit` would land in one of t
 - `_docs/products/*.md`
 
 Trigger C — **the planned content matches a typed kind**:
-Even if the path looks innocent, if the body would author one of the 300+ kinds in
+Even if the path looks innocent, if the body would author one of the 125 kinds in
 `.cex/kinds_meta.json` (course_module, knowledge_card, prompt_template, agent,
 workflow, retriever, etc.), the work belongs to the kind's owning nucleus, not N07.
 

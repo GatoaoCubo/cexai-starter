@@ -83,8 +83,8 @@ Rule: all values within a single enum MUST use the same case convention.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_enum_def]] | upstream | 0.49 |
+| [[bld_knowledge_enum_def]] | upstream | 0.49 |
 | [[p10_lr_enum_def_builder]] | downstream | 0.47 |
 | [[bld_schema_enum_def]] | upstream | 0.38 |
-| [[bld_instruction_enum_def]] | upstream | 0.38 |
+| [[bld_prompt_enum_def]] | upstream | 0.38 |
 | [[enum-def-builder]] | upstream | 0.35 |

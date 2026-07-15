@@ -70,8 +70,8 @@ agent_card  --signals-->        health_status
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent_card]] | related | 0.51 |
+| [[bld_orchestration_agent_card]] | related | 0.51 |
 | [[agent-card-builder]] | related | 0.50 |
 | [[bld_architecture_spawn_config]] | sibling | 0.46 |
-| [[bld_knowledge_card_agent_card]] | upstream | 0.44 |
+| [[bld_knowledge_agent_card]] | upstream | 0.44 |
 | [[p03_ins_agent_card_builder]] | upstream | 0.41 |

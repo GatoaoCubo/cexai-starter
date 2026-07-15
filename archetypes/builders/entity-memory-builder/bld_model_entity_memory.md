@@ -155,7 +155,7 @@ confidence: 0.0-1.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_entity_memory]] | downstream | 0.63 |
-| [[bld_knowledge_card_entity_memory]] | upstream | 0.59 |
+| [[bld_orchestration_entity_memory]] | downstream | 0.63 |
+| [[bld_knowledge_entity_memory]] | upstream | 0.59 |
 | [[bld_architecture_entity_memory]] | upstream | 0.57 |
-| [[p01_kc_entity_memory]] | related | 0.51 |
+| [[kc_entity_memory]] | related | 0.51 |

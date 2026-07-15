@@ -63,8 +63,8 @@ I define search index configuration so retrieval systems can find content effici
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_embedding_config]] | sibling | 0.56 |
-| [[bld_collaboration_knowledge_card]] | sibling | 0.47 |
+| [[bld_orchestration_embedding_config]] | sibling | 0.56 |
+| [[bld_orchestration_knowledge_card]] | sibling | 0.47 |
 | [[knowledge-index-builder]] | upstream | 0.44 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.37 |
-| [[bld_collaboration_rag_source]] | sibling | 0.36 |
+| [[bld_orchestration_memory_scope]] | sibling | 0.37 |
+| [[bld_orchestration_rag_source]] | sibling | 0.36 |

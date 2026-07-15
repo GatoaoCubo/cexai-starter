@@ -78,6 +78,6 @@ Handoff protocol — trigger conditions, context passed, return contract between
 |----------|-------------|-------|
 | [[p10_lr_handoff_protocol_builder]] | downstream | 0.48 |
 | [[handoff-protocol-builder]] | related | 0.46 |
-| [[bld_collaboration_handoff_protocol]] | downstream | 0.43 |
-| [[p01_kc_handoff_protocol]] | sibling | 0.41 |
+| [[bld_orchestration_handoff_protocol]] | downstream | 0.43 |
+| [[kc_handoff_protocol]] | sibling | 0.41 |
 | bld_collaboration_handoff | downstream | 0.34 |

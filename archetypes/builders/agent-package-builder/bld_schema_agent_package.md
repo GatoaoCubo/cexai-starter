@@ -103,7 +103,7 @@ Rule: id MUST equal directory name with p02_iso_ prefix.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_agent_package]] | upstream | 0.51 |
+| [[bld_prompt_agent_package]] | upstream | 0.51 |
 | bld_schema_kind | sibling | 0.47 |
 | [[bld_config_agent_package]] | downstream | 0.44 |
 | [[bld_schema_scoring_rubric]] | sibling | 0.44 |

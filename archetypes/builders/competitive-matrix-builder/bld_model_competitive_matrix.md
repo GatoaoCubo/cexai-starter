@@ -80,8 +80,8 @@ Never fabricate counters. If counter-data is unavailable, note "no verified coun
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_competitive_matrix]] | related | 0.42 |
+| [[bld_knowledge_competitive_matrix]] | related | 0.42 |
 | [[p01_qg_competitive_matrix]] | downstream | 0.34 |
 | n00_competitive_matrix_manifest | related | 0.30 |
-| [[bld_instruction_competitive_matrix]] | downstream | 0.29 |
+| [[bld_prompt_competitive_matrix]] | downstream | 0.29 |
 | [[bld_schema_competitive_matrix]] | downstream | 0.29 |

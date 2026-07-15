@@ -158,8 +158,8 @@ OUTPUT: validated toolkit YAML file
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_toolkit]] | upstream | 0.66 |
+| [[bld_knowledge_toolkit]] | upstream | 0.66 |
 | [[toolkit-builder]] | downstream | 0.66 |
-| [[bld_collaboration_toolkit]] | upstream | 0.63 |
+| [[bld_orchestration_toolkit]] | upstream | 0.63 |
 | [[bld_schema_toolkit]] | downstream | 0.59 |
 | [[bld_config_toolkit]] | downstream | 0.58 |

@@ -70,6 +70,6 @@ Industries leverage reasoning strategies to enhance transparency, reduce errors,
 |----------|-------------|-------|
 | [[reasoning-strategy-builder]] | downstream | 0.51 |
 | [[kc_reasoning_strategy]] | sibling | 0.41 |
-| [[bld_instruction_reasoning_strategy]] | downstream | 0.36 |
+| [[bld_prompt_reasoning_strategy]] | downstream | 0.36 |
 | [[p03_qg_reasoning_strategy]] | downstream | 0.36 |
 | [[p10_lr_reasoning_strategy_builder]] | downstream | 0.35 |

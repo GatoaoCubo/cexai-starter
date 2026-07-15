@@ -72,8 +72,8 @@ NEVER mix handoff-protocols within one crew (keep transfer format consistent acr
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_crew_template]] | upstream | 0.54 |
-| [[bld_knowledge_card_crew_template]] | upstream | 0.53 |
-| [[bld_collaboration_crew_template]] | related | 0.50 |
+| [[bld_prompt_crew_template]] | upstream | 0.54 |
+| [[bld_knowledge_crew_template]] | upstream | 0.53 |
+| [[bld_orchestration_crew_template]] | related | 0.50 |
 | [[p11_qg_crew_template]] | upstream | 0.41 |
 | n00_role_assignment_manifest | upstream | 0.39 |

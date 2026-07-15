@@ -139,6 +139,6 @@ timeout: 30000
 |----------|-------------|-------|
 | [[bld_architecture_browser_tool]] | downstream | 0.56 |
 | n00_browser_tool_manifest | related | 0.53 |
-| [[bld_knowledge_card_browser_tool]] | upstream | 0.53 |
-| [[bld_collaboration_browser_tool]] | downstream | 0.52 |
-| [[p01_kc_browser_tool]] | related | 0.51 |
+| [[bld_knowledge_browser_tool]] | upstream | 0.53 |
+| [[bld_orchestration_browser_tool]] | downstream | 0.52 |
+| [[kc_browser_tool]] | related | 0.51 |

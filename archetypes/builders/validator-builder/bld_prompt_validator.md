@@ -138,5 +138,5 @@ HARD gates (all must pass):
 | [[p11_qg_validator]] | downstream | 0.48 |
 | [[validator-builder]] | downstream | 0.44 |
 | [[p03_ins_validation_schema]] | sibling | 0.40 |
-| [[bld_knowledge_card_validator]] | upstream | 0.39 |
+| [[bld_knowledge_validator]] | upstream | 0.39 |
 | [[bld_schema_validator]] | downstream | 0.38 |

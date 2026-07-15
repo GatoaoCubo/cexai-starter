@@ -48,8 +48,8 @@ Does NOT handle secret storage (secret-config-builder), SSO federation (sso-conf
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_permission]] | sibling | 0.30 |
-| [[bld_collaboration_secret_config]] | sibling | 0.28 |
+| [[bld_orchestration_permission]] | sibling | 0.30 |
+| [[bld_orchestration_secret_config]] | sibling | 0.28 |
 | [[rbac-policy-builder]] | upstream | 0.25 |
 | bld_collaboration_agent_computer_interface | sibling | 0.23 |
-| [[bld_collaboration_path_config]] | sibling | 0.23 |
+| [[bld_orchestration_path_config]] | sibling | 0.23 |

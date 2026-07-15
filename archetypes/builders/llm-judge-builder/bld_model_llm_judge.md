@@ -155,8 +155,8 @@ Rationale: {why this score}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_llm_judge]] | downstream | 0.67 |
-| [[p01_kc_llm_judge]] | related | 0.58 |
+| [[bld_orchestration_llm_judge]] | downstream | 0.67 |
+| [[kc_llm_judge]] | related | 0.58 |
 | [[bld_architecture_llm_judge]] | downstream | 0.52 |
 | [[p11_qg_llm_judge]] | downstream | 0.48 |
-| [[bld_instruction_llm_judge]] | upstream | 0.46 |
+| [[bld_prompt_llm_judge]] | upstream | 0.46 |

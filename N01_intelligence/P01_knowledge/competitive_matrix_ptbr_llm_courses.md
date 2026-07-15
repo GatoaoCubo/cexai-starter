@@ -52,7 +52,7 @@ CEXAI S1 at **R$147 single-pay** sits in the **low-mid ticket gap** between comm
 | 12. **Eventos presenciais (W=1)** | Nao | Nao | Nao | Nao | **Sim, Brasil + mundo** | **Nao** | **Nao** |
 | 13. **Acesso vitalicio (W=2)** | **Sim, vitalicio** | n/d | 12 meses content + 6m gravacoes | Padrao Hotmart | Recorrencia (12 meses updates) | **Vitalicio** | **Vitalicio** |
 | 14. **Brand authority (W=2)** | Marca regional | Marca pequena | **BSSP firma consultoria** | Alan Dantas (autor) | **Pedro Sobral + Conrado Adolpho** | Founder solo (CEXAI) | Founder + framework 8F/12P |
-| 15. **Methodology depth (W=3)** | Generalista uso IA | Generalista ChatGPT | IA aplicada marketing | IA generativa overview | Curriculo academico AI Business | **8F + 12P + 8 nuclei + 300+ kinds** | **Framework canonico, defensavel** |
+| 15. **Methodology depth (W=3)** | Generalista uso IA | Generalista ChatGPT | IA aplicada marketing | IA generativa overview | Curriculo academico AI Business | **8F + 12P + 8 nuclei + 125 kinds** | **Framework canonico, defensavel** |
 
 ### Scores rolled up (weighted sum / max)
 
@@ -78,7 +78,7 @@ Certificate, Community, FAQ vivo, Prompts library, Glossario PDF, Quizzes, Acess
 
 ### Finding 3: Premium dimension "Methodology depth" is CEXAI's unfair advantage
 
-No competitor has a documented framework (8F pipeline, 12 pillars, 8 nuclei, 300+ kinds). All others teach **tool usage**; CEXAI teaches **typed knowledge engineering**. This is the moat - column 15 weight=3.
+No competitor has a documented framework (8F pipeline, 12 pillars, 8 nuclei, 125 kinds). All others teach **tool usage**; CEXAI teaches **typed knowledge engineering**. This is the moat - column 15 weight=3.
 
 ### Finding 4: Mid-ticket norm is mentoria ao vivo (BSSP/Lendar[IA])
 

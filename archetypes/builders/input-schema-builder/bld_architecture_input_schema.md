@@ -67,8 +67,8 @@ system_prompt --documents--> input_schema
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_input_schema]] | upstream | 0.40 |
+| [[kc_input_schema]] | upstream | 0.40 |
 | bld_architecture_interface | sibling | 0.39 |
-| [[bld_knowledge_card_input_schema]] | upstream | 0.39 |
+| [[bld_knowledge_input_schema]] | upstream | 0.39 |
 | [[input-schema-builder]] | upstream | 0.38 |
-| [[bld_instruction_input_schema]] | upstream | 0.35 |
+| [[bld_prompt_input_schema]] | upstream | 0.35 |

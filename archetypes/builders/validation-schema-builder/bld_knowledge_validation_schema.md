@@ -91,5 +91,5 @@ A `validation_schema` (P06) is a post-generation structural contract the system 
 | [[bld_schema_validation_schema]] | downstream | 0.49 |
 | [[validation-schema-builder]] | downstream | 0.47 |
 | [[p03_ins_validation_schema]] | downstream | 0.43 |
-| [[bld_collaboration_validation_schema]] | downstream | 0.39 |
+| [[bld_orchestration_validation_schema]] | downstream | 0.39 |
 | [[p11_qg_validation_schema]] | downstream | 0.38 |

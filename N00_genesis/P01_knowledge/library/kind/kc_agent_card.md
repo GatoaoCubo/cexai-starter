@@ -131,8 +131,8 @@ CEX equivalent: router_config.yaml model tiers
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_agent]] | sibling | 0.43 |
-| [[p01_kc_mental_model]] | sibling | 0.38 |
-| [[bld_collaboration_agent]] | downstream | 0.35 |
+| [[kc_agent]] | sibling | 0.43 |
+| [[kc_mental_model]] | sibling | 0.38 |
+| [[bld_orchestration_agent]] | downstream | 0.35 |
 | [[agent-card-builder]] | related | 0.33 |
-| [[bld_knowledge_card_agent]] | sibling | 0.32 |
+| [[bld_knowledge_agent]] | sibling | 0.32 |

@@ -100,5 +100,5 @@ A memory summary is a compressed, LLM-generated digest of prior session memories
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_summary]] | downstream | 0.40 |
-| [[p01_kc_session_state]] | sibling | 0.39 |
+| [[bld_orchestration_memory_summary]] | downstream | 0.40 |
+| [[kc_session_state]] | sibling | 0.39 |

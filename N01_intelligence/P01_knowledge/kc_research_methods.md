@@ -90,8 +90,8 @@ The three patterns are multiplicative: STORM×CRAG×CRITIC >> sum of parts.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_research_pipeline]] | sibling | 0.52 |
+| [[bld_knowledge_research_pipeline]] | sibling | 0.52 |
 | [[p10_lr_research-pipeline-builder]] | downstream | 0.47 |
 | [[research-pipeline-builder]] | downstream | 0.43 |
 | p02_agent_research_pipeline_intelligence | downstream | 0.40 |
-| [[p01_kc_research_pipeline]] | sibling | 0.37 |
+| [[kc_research_pipeline]] | sibling | 0.37 |

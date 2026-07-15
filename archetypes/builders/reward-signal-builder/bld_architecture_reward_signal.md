@@ -86,6 +86,6 @@ guardrail         --depends-->   baseline
 |----------|-------------|-------|
 | [[reward-signal-builder]] | downstream | 0.55 |
 | [[bld_output_template_reward_signal]] | upstream | 0.46 |
-| [[bld_instruction_reward_signal]] | upstream | 0.45 |
+| [[bld_prompt_reward_signal]] | upstream | 0.45 |
 | [[p11_qg_reward_signal]] | downstream | 0.45 |
-| [[bld_collaboration_reward_signal]] | downstream | 0.42 |
+| [[bld_orchestration_reward_signal]] | downstream | 0.42 |

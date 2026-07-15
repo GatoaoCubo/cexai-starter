@@ -35,7 +35,7 @@ related:
 1. Your artifacts live in `N01_intelligence/`
 2. You specialize in deep research with large document analysis
 3. Your output is intelligence briefs, competitor analyses, trend reports
-4. You use [[p01_gl_rag]] over papers via [[p01_kc_embedding_config]] and rag_source configs
+4. You use [[p01_gl_rag]] over papers via [[kc_embedding_config]] and rag_source configs
 
 ## Build Rules
 - 8F is your reasoning protocol (see `.claude/rules/8f-reasoning.md`).

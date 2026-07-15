@@ -128,8 +128,8 @@ You are the consuming agent that acts on this chunk_strategy under F3 INJECT.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_chunk_strategy]] | related | 0.31 |
+| [[bld_knowledge_chunk_strategy]] | related | 0.31 |
 | n00_chunk_strategy_manifest | related | 0.28 |
-| [[p01_kc_chunk_strategy]] | related | 0.28 |
+| [[kc_chunk_strategy]] | related | 0.28 |
 | p01_kc_rag_chunking_strategies | related | 0.27 |
-| [[bld_collaboration_chunk_strategy]] | related | 0.27 |
+| [[bld_orchestration_chunk_strategy]] | related | 0.27 |

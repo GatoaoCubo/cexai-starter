@@ -71,7 +71,7 @@ pattern         --signals-->   pattern_application
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pattern-builder]] | related | 0.49 |
-| [[bld_collaboration_pattern]] | related | 0.40 |
-| [[p01_kc_pattern]] | related | 0.37 |
+| [[bld_orchestration_pattern]] | related | 0.40 |
+| [[kc_pattern]] | related | 0.37 |
 | [[bld_memory_pattern]] | downstream | 0.36 |
-| [[bld_knowledge_card_pattern]] | upstream | 0.32 |
+| [[bld_knowledge_pattern]] | upstream | 0.32 |

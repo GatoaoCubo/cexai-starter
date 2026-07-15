@@ -90,4 +90,4 @@ skill          --depends-->  endpoint
 | [[bld_instruction_client]] | upstream | 0.38 |
 | [[bld_collaboration_client]] | downstream | 0.37 |
 | bld_architecture_connector | sibling | 0.36 |
-| [[p01_kc_api_client]] | upstream | 0.32 |
+| [[kc_api_client]] | upstream | 0.32 |

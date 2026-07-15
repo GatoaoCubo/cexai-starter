@@ -93,7 +93,7 @@ tldr: "{{Dense <=160ch summary of source}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_citation]] | downstream | 0.49 |
-| [[p01_kc_citation]] | upstream | 0.48 |
-| [[bld_instruction_citation]] | upstream | 0.48 |
+| [[kc_citation]] | upstream | 0.48 |
+| [[bld_prompt_citation]] | upstream | 0.48 |
 | [[bld_architecture_citation]] | downstream | 0.44 |
 | [[citation-builder]] | upstream | 0.44 |

@@ -30,7 +30,7 @@ related:
   - n00_chunk_strategy_manifest
   - p01_chunk_n05
 ---
-<!-- 8F: F1=chunk_strategy/P01 F2=13 ISOs F3=schema+examples F4=per-band F5=compile F6=4sec F7=null/id-ok F8=compiled -->
+<!-- 8F: F1=chunk_strategy/P01 F2=12 ISOs F3=schema+examples F4=per-band F5=compile F6=4sec F7=null/id-ok F8=compiled -->
 
 ## Overview
 
@@ -93,6 +93,6 @@ Out of scope: embedding model, vector store -- see `embedding_config`.
 |----------|-------------|-------|
 | [[chunk-strategy-builder]] | related | 0.32 |
 | [[p10_lr_chunk_strategy_builder]] | downstream | 0.29 |
-| [[bld_collaboration_chunk_strategy]] | downstream | 0.29 |
+| [[bld_orchestration_chunk_strategy]] | downstream | 0.29 |
 | n00_chunk_strategy_manifest | related | 0.28 |
 | [[p01_chunk_n05]] | sibling | 0.25 |

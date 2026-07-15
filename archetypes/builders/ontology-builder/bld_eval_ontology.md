@@ -140,5 +140,5 @@ structured data systems.
 | [[p10_lr_ontology_builder]] | upstream | 0.36 |
 | [[bld_output_template_ontology]] | upstream | 0.35 |
 | [[ontology-builder]] | upstream | 0.35 |
-| [[bld_knowledge_card_ontology]] | upstream | 0.35 |
-| [[bld_instruction_ontology]] | upstream | 0.34 |
+| [[bld_knowledge_ontology]] | upstream | 0.35 |
+| [[bld_prompt_ontology]] | upstream | 0.34 |

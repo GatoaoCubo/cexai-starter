@@ -65,5 +65,5 @@ I configure CLI flags, MCP profiles, timeout policies, prompt sizing, and handof
 | bld_collaboration_workflow | sibling | 0.57 |
 | [[bld_architecture_spawn_config]] | upstream | 0.48 |
 | [[spawn-config-builder]] | related | 0.46 |
-| [[bld_collaboration_agent_card]] | sibling | 0.41 |
-| [[bld_knowledge_card_spawn_config]] | related | 0.38 |
+| [[bld_orchestration_agent_card]] | sibling | 0.41 |
+| [[bld_knowledge_spawn_config]] | related | 0.38 |

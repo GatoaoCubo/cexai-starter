@@ -85,7 +85,7 @@ python _tools/cex_score.py --apply bld-memory-response-format.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_response_format]] | upstream | 0.52 |
+| [[bld_orchestration_response_format]] | upstream | 0.52 |
 | [[response-format-builder]] | upstream | 0.50 |
 | [[bld_architecture_response_format]] | upstream | 0.44 |
 | [[p03_ins_response_format]] | upstream | 0.44 |

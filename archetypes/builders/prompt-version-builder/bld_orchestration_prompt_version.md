@@ -77,8 +77,8 @@ I specify prompt version configurations so agents and pipelines can use them.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_action_prompt]] | sibling | 0.43 |
-| [[bld_collaboration_constraint_spec]] | sibling | 0.41 |
+| [[bld_orchestration_action_prompt]] | sibling | 0.43 |
+| [[bld_orchestration_constraint_spec]] | sibling | 0.41 |
 | [[prompt-version-builder]] | upstream | 0.37 |
-| [[bld_collaboration_prompt_template]] | sibling | 0.37 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.35 |
+| [[bld_orchestration_prompt_template]] | sibling | 0.37 |
+| [[bld_orchestration_system_prompt]] | sibling | 0.35 |

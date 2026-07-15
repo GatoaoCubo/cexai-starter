@@ -91,7 +91,7 @@ provider_compat --informs-> deployment (which providers support it)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[function-def-builder]] | upstream | 0.62 |
-| [[p01_kc_function_def]] | upstream | 0.51 |
+| [[kc_function_def]] | upstream | 0.51 |
 | n00_function_def_manifest | upstream | 0.49 |
 | [[p11_qg_function_def]] | downstream | 0.39 |
-| [[bld_instruction_function_def]] | upstream | 0.37 |
+| [[bld_prompt_function_def]] | upstream | 0.37 |

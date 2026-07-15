@@ -79,7 +79,7 @@ NEVER use floating-point prices ("9.99") -- Stripe requires integer cents.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_subscription_tier]] | upstream | 0.53 |
-| [[bld_knowledge_card_subscription_tier]] | upstream | 0.49 |
+| [[bld_knowledge_subscription_tier]] | upstream | 0.49 |
 | [[bld_schema_subscription_tier]] | upstream | 0.46 |
 | [[p11_qg_subscription_tier]] | related | 0.44 |
-| [[bld_instruction_subscription_tier]] | upstream | 0.42 |
+| [[bld_prompt_subscription_tier]] | upstream | 0.42 |

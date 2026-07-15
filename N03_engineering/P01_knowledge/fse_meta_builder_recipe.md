@@ -188,8 +188,8 @@ python -c "from _tools.signal_writer import write_signal; write_signal('n03', 'c
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_agent]] | downstream | 0.31 |
-| [[bld_collaboration_agent]] | downstream | 0.31 |
+| [[kc_agent]] | downstream | 0.31 |
+| [[bld_orchestration_agent]] | downstream | 0.31 |
 | [[p11_qg_agent]] | downstream | 0.29 |
 | n00_agent_manifest | downstream | 0.28 |
 | [[agent-builder]] | downstream | 0.26 |

@@ -77,7 +77,7 @@ Chunking method configuration — how to split documents into retrievable segmen
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p10_lr_chunk_strategy_builder]] | downstream | 0.51 |
-| [[p01_kc_chunk_strategy]] | sibling | 0.42 |
+| [[kc_chunk_strategy]] | sibling | 0.42 |
 | [[chunk-strategy-builder]] | related | 0.34 |
 | p01_kc_rag_chunking_strategies | sibling | 0.34 |
 | p01_chunk_strategy | related | 0.33 |

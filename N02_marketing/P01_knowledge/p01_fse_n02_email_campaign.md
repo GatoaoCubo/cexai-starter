@@ -343,5 +343,5 @@ quality_check:
 | p03_pt_email_sequence_template | downstream | 0.34 |
 | p12_wf_cf_email_launch | downstream | 0.30 |
 | [[p01_fse_n02_ad_copy]] | sibling | 0.29 |
-| [[p01_kc_email_sequence]] | related | 0.28 |
+| [[kc_email_sequence]] | related | 0.28 |
 | p01_kc_pillar_brief_p04_tools_en | downstream | 0.24 |

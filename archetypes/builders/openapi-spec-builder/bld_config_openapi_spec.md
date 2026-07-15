@@ -128,6 +128,6 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 |----------|-------------|-------|
 | [[openapi-spec-builder]] | upstream | 0.33 |
 | [[p10_lr_openapi_spec_builder]] | downstream | 0.33 |
-| [[bld_instruction_openapi_spec]] | upstream | 0.31 |
+| [[bld_prompt_openapi_spec]] | upstream | 0.31 |
 | [[bld_schema_openapi_spec]] | upstream | 0.31 |
-| [[bld_knowledge_card_openapi_spec]] | upstream | 0.29 |
+| [[bld_knowledge_openapi_spec]] | upstream | 0.29 |

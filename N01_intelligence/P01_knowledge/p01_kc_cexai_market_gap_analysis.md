@@ -143,7 +143,7 @@ Ranked by frequency-of-expectation (from market scan) and cost-to-deliver:
 | 7 | Suporte/tira-duvidas | 70% | FAQ vivo + canal aluno (founder 30min/wk) | Missing | **P1** |
 | 8 | Biblioteca prompts | 60% | zero (50+ prompts ja existem nos nuclei) | Missing | **P0** |
 
-**Coverage if 8/8 done: 90% of market expectation met**. Plus CEXAI methodology depth (8F + 12P + 8 nuclei + 300+ kinds) = **unique moat dimension** no competitor has.
+**Coverage if 8/8 done: 90% of market expectation met**. Plus CEXAI methodology depth (8F + 12P + 8 nuclei + 125 kinds) = **unique moat dimension** no competitor has.
 
 ## Risk Mitigation Matrix
 

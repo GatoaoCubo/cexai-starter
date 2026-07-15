@@ -106,4 +106,4 @@ Workflow primitives are YAML atomic building blocks — the seven composable typ
 | [[p11_qg_workflow_primitive]] | downstream | 0.61 |
 | [[bld_memory_workflow_primitive]] | downstream | 0.57 |
 | [[workflow-primitive-builder]] | downstream | 0.55 |
-| [[p01_kc_workflow_primitive]] | sibling | 0.51 |
+| [[kc_workflow_primitive]] | sibling | 0.51 |

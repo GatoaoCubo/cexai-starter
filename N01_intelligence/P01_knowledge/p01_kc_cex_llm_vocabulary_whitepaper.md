@@ -622,7 +622,7 @@ How CEX compares to the ecosystem vocabulary it maps.
 | CEX Concept | Industry Equivalent | Why CEX Is Different |
 |-------------|-------------------|---------------------|
 | **8F Pipeline** (F1-F8) | No direct equivalent (closest: DSPy compile, LangGraph checkpoints) | Mandatory 8-step reasoning protocol for ALL tasks, not just builds. No framework enforces reasoning this granularly. |
-| **Builder Archetype** (13 ISOs per kind) | Agent Template/Blueprint (partial) | 13 standardized instruction files per artifact type. No framework packages identity/instruction/manifest/rubric/examples as a reusable unit. |
+| **Builder Archetype** (12 ISOs per kind) | Agent Template/Blueprint (partial) | 13 standardized instruction files per artifact type. No framework packages identity/instruction/manifest/rubric/examples as a reusable unit. |
 | **Fractal Architecture** (N00-N07) | Convention over Configuration (Rails pattern) | Each nucleus mirrors the 12-pillar structure. Self-similar at every scale. No framework does fractal self-organization. |
 | **GDP (Guided Decision Protocol)** | Human-in-the-loop (HITL) | GDP separates WHAT (user) from HOW (LLM) with a manifest bridge. HITL is binary (approve/reject); GDP is structured co-creation. |
 | **Quality: null** | LLM-as-Judge | CEX NEVER self-scores. Peer-review only. Every other framework allows self-evaluation. |
@@ -645,7 +645,7 @@ How CEX compares to the ecosystem vocabulary it maps.
 
 | Dimension | CEX | LangChain/LangGraph | DSPy | CrewAI | Semantic Kernel | AutoGen/AG2 |
 |-----------|-----|--------------------|----- |--------|----------------|-------------|
-| Composition Unit | Nucleus (domain+sin+13 ISOs) | Runnable (pipe \| compose) | Module (Signature+forward) | Agent (role+goal+backstory) | Kernel (DI container) | ConversableAgent |
+| Composition Unit | Nucleus (domain+sin+12 ISOs) | Runnable (pipe \| compose) | Module (Signature+forward) | Agent (role+goal+backstory) | Kernel (DI container) | ConversableAgent |
 | Orchestration | N07 + mission_runner (wave-based) | StateGraph (conditional edges) | Module.forward() composition | Crew (seq/hier/consensus) | Orchestration patterns (5 types) | GroupChat (5 selection methods) |
 | State Management | Git + .cex/runtime/ (file-based) | Checkpointer (SQLite/Postgres) | Module state (in-memory) | FlowState (Pydantic) | KernelArguments + ChatHistory | ConversableAgent.chat_messages |
 | Memory | 4-type (correction/preference/convention/context) | ChatMessageHistory + VectorStore | In-context demos | Unified (LanceDB + SQLite) | VectorStoreCollection | Agent memory dict + RAG |

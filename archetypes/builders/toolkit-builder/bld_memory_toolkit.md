@@ -89,8 +89,8 @@ python _tools/cex_score.py --apply bld-memory-toolkit.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_toolkit]] | upstream | 0.67 |
+| [[bld_knowledge_toolkit]] | upstream | 0.67 |
 | [[toolkit-builder]] | upstream | 0.64 |
 | [[p03_ins_toolkit_builder]] | upstream | 0.56 |
 | [[p11_qg_toolkit]] | downstream | 0.54 |
-| [[bld_collaboration_toolkit]] | upstream | 0.51 |
+| [[bld_orchestration_toolkit]] | upstream | 0.51 |

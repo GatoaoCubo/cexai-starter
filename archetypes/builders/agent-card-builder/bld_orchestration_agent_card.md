@@ -72,6 +72,6 @@ I define the full architecture of an autonomous agent_group — its domain, LLM 
 |----------|-------------|-------|
 | bld_collaboration_model_card | sibling | 0.48 |
 | [[agent-card-builder]] | related | 0.48 |
-| [[bld_knowledge_card_agent_card]] | upstream | 0.45 |
+| [[bld_knowledge_agent_card]] | upstream | 0.45 |
 | [[bld_memory_agent_card]] | downstream | 0.40 |
-| [[bld_collaboration_agent]] | sibling | 0.40 |
+| [[bld_orchestration_agent]] | sibling | 0.40 |

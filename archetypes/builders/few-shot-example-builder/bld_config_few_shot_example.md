@@ -77,6 +77,6 @@ p01_fse_kc_frontmatter.md -> id: p01_fse_kc_frontmatter
 |----------|-------------|-------|
 | [[bld_output_template_few_shot_example]] | upstream | 0.42 |
 | [[bld_schema_few_shot_example]] | upstream | 0.36 |
-| [[bld_instruction_few_shot_example]] | upstream | 0.35 |
+| [[bld_prompt_few_shot_example]] | upstream | 0.35 |
 | [[p11_qg_few_shot_example]] | downstream | 0.34 |
 | [[few-shot-example-builder]] | upstream | 0.30 |

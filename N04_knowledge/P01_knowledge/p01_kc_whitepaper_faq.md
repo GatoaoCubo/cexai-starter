@@ -39,7 +39,7 @@ Whitepaper annex F. Sixteen questions an engineer reading `docs/WHITEPAPER_CEXAI
 
 ### Q1. How is CEXAI different from LangChain?
 
-LangChain is an orchestration framework: it routes and chains LLM calls. CEXAI is a typed knowledge system: it governs what those calls produce. The whitepaper's gap table (§1.11) makes this explicit: LangChain has opt-in callbacks, no typed knowledge taxonomy, no cross-runtime artifact portability, and frequent breaking changes. CEXAI ships 300+ kinds with mandatory schema validation, runtime-agnostic artifacts, and a stable convention-over-configuration API. They are complementary -- you can run LangChain inside an `agent` artifact -- not competitors.
+LangChain is an orchestration framework: it routes and chains LLM calls. CEXAI is a typed knowledge system: it governs what those calls produce. The whitepaper's gap table (§1.11) makes this explicit: LangChain has opt-in callbacks, no typed knowledge taxonomy, no cross-runtime artifact portability, and frequent breaking changes. CEXAI ships 125 kinds with mandatory schema validation, runtime-agnostic artifacts, and a stable convention-over-configuration API. They are complementary -- you can run LangChain inside an `agent` artifact -- not competitors.
 
 ### Q2. How does CEXAI compare to CrewAI / AutoGen / DSPy?
 
@@ -89,7 +89,7 @@ tenant -- verify with `python _tools/cex_bootstrap.py --check`.
 
 One nucleus, one kind, one builder, one pillar. Concretely: clone the repo, keep only `N00_genesis/`, `N03_engineering/`, `archetypes/builders/knowledge_card-builder/`, and `_tools/cex_doctor.py` + `_tools/cex_compile.py`. You lose multi-runtime, crews, swarms, and 6 nuclei -- but you keep the 8F pipeline and zero-token validation. This minimum is ~50MB, single-machine, no API keys (Ollama Mode B). The full repo is ~300MB.
 
-### Q11. What happens if I do not want all 300+ kinds?
+### Q11. What happens if I do not want all 125 kinds?
 
 Nothing breaks. Kinds are loaded lazily by `cex_8f_runner.py` from `.cex/kinds_meta.json`. Unused kinds cost zero runtime. To remove a kind: delete its row from `kinds_meta.json`, delete `archetypes/builders/{kind}-builder/`, delete `N00_genesis/P01_knowledge/library/kind/kc_{kind}.md`. The system continues to work for the remaining kinds.
 

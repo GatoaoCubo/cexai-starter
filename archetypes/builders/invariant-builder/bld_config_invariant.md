@@ -85,7 +85,7 @@ Rule: `id` MUST equal filename stem. File `p08_law_5.md` MUST have `id: p08_law_
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_invariant]] | related | 0.56 |
+| [[bld_knowledge_invariant]] | related | 0.56 |
 | [[bld_schema_invariant]] | related | 0.50 |
 | [[p03_ins_law]] | upstream | 0.46 |
 | [[p11_qg_law]] | downstream | 0.36 |

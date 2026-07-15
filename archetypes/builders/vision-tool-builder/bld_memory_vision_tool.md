@@ -94,7 +94,7 @@ python _tools/cex_score.py --apply p10-lr-vision-tool-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_vision_tool]] | upstream | 0.43 |
+| [[bld_prompt_vision_tool]] | upstream | 0.43 |
 | [[bld_output_template_vision_tool]] | upstream | 0.36 |
 | [[vision-tool-builder]] | upstream | 0.34 |
 | [[bld_schema_vision_tool]] | upstream | 0.34 |

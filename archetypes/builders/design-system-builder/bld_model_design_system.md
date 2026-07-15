@@ -55,5 +55,5 @@ I produce the bindable visual asset that other builders (landing_page, interacti
 | [[bld_schema_design_system]] | upstream | 0.55 |
 | [[bld_prompt_design_system]] | downstream | 0.5 |
 | p06_vs_design_system | upstream | 0.5 |
-| [[p01_kc_design_system]] | related | 0.42 |
+| [[kc_design_system]] | related | 0.42 |
 | [[bld_eval_design_system]] | downstream | 0.4 |

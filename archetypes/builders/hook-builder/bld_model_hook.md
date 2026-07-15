@@ -139,8 +139,8 @@ quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_hook]] | downstream | 0.59 |
-| [[bld_instruction_hook]] | upstream | 0.56 |
+| [[bld_orchestration_hook]] | downstream | 0.59 |
+| [[bld_prompt_hook]] | upstream | 0.56 |
 | [[bld_architecture_hook]] | downstream | 0.56 |
 | hook-config-builder | sibling | 0.55 |
 | bld_collaboration_hook_config | downstream | 0.54 |

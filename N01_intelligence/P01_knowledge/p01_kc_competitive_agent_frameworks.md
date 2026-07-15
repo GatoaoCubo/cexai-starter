@@ -11,7 +11,7 @@ tags: [competitor, synthesis, langchain, autogpt, crewai, autogen, dspy, llamain
 when_to_use: "Positioning CEXAI against the 6 dominant agent frameworks; designing CEXAI features by adoption (proven primitive) or differentiation (exploitable gap)"
 axioms:
   - "ALWAYS frame each competitor as (pattern to adopt, gap to exploit)"
-  - "ALWAYS treat 8F + 12 pillars + 300 kinds as the structural moat none of the 6 have"
+  - "ALWAYS treat 8F + 12 pillars + 125 kinds as the structural moat none of the 6 have"
   - "NEVER claim parity on stars / downloads -- compete on typed-knowledge governance"
   - "NEVER ignore AutoGen lifecycle lesson: corporate-owned OSS deprecates fast"
 tldr: "Six dominant agent frameworks -- LangChain (124K), AutoGPT (184K), CrewAI (49.8K), AutoGen (57K, EOL), DSPy (Stanford), LlamaIndex (48.9K) -- each ship one primitive worth adopting and leave one structural gap CEXAI exploits via typed knowledge + 8F + multi-runtime sovereignty."
@@ -53,7 +53,7 @@ related:
 
 ### CrewAI
 - **Adopt:** **role + goal + backstory in plain English** as the agent spec primitive (faster time-to-first-crew than any graph framework). CEXAI WAVE8 already has role_assignment; tighten the natural-language slot to CrewAI ergonomics.
-- **Exploit:** **no typed-knowledge taxonomy + Python-only**. Session-scoped memory. CEXAI runs Claude/Codex/Gemini/Ollama and persists into 300 kinds across 12 pillars.
+- **Exploit:** **no typed-knowledge taxonomy + Python-only**. Session-scoped memory. CEXAI runs Claude/Codex/Gemini/Ollama and persists into 125 kinds across 12 pillars.
 
 ### AutoGen (Microsoft Research)
 - **Adopt:** **conversation log as inspectable trace** + sandboxed code execution. Borrow the trace primitive into trace_config + reasoning_trace kinds.

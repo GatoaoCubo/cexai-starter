@@ -71,7 +71,7 @@ few_shot_example (P01) --depends--> golden_test
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[golden-test-builder]] | upstream | 0.54 |
-| [[p01_kc_golden_test]] | upstream | 0.48 |
+| [[kc_golden_test]] | upstream | 0.48 |
 | [[bld_architecture_unit_eval]] | sibling | 0.41 |
 | n00_golden_test_manifest | upstream | 0.39 |
 | p01_kc_cex_lp07_evals | upstream | 0.37 |

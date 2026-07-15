@@ -91,6 +91,6 @@ Fallback: attempt in priority order; try next if null.
 |----------|-------------|-------|
 | [[p10_lr_browser_tool_builder]] | downstream | 0.52 |
 | [[browser-tool-builder]] | downstream | 0.51 |
-| [[bld_instruction_browser_tool]] | downstream | 0.47 |
+| [[bld_prompt_browser_tool]] | downstream | 0.47 |
 | p04_browser_playwright | downstream | 0.46 |
 | [[bld_config_browser_tool]] | downstream | 0.44 |

@@ -71,7 +71,7 @@ tags: [{{producer}}, {{consumer}}, data-contract]
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_data_contract]] | downstream | 0.39 |
-| [[bld_instruction_data_contract]] | related | 0.37 |
-| [[p01_kc_data_contract]] | upstream | 0.36 |
+| [[bld_prompt_data_contract]] | related | 0.37 |
+| [[kc_data_contract]] | upstream | 0.36 |
 | [[data-contract-builder]] | downstream | 0.35 |
 | [[bld_qg_data_contract]] | downstream | 0.30 |

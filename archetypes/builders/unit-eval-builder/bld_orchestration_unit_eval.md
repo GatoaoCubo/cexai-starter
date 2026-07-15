@@ -66,6 +66,6 @@ I write isolated unit tests with input, expected_output, and assertions mapped t
 |----------|-------------|-------|
 | bld_collaboration_smoke_eval | sibling | 0.51 |
 | [[unit-eval-builder]] | related | 0.45 |
-| [[bld_collaboration_golden_test]] | sibling | 0.42 |
+| [[bld_orchestration_golden_test]] | sibling | 0.42 |
 | [[p11_qg_unit_eval]] | related | 0.41 |
 | [[bld_memory_unit_eval]] | downstream | 0.41 |

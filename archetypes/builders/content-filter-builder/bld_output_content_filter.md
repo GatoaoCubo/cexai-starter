@@ -150,7 +150,7 @@ Retention: 90 days. PII: hash only (GDPR Art. 5(1)(c) data minimization).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_content_filter]] | upstream | 0.39 |
+| [[bld_knowledge_content_filter]] | upstream | 0.39 |
 | n06_audit_content_filter_builder | downstream | 0.38 |
 | bld_output_template_safety_policy | sibling | 0.34 |
 | bld_knowledge_card_safety_policy | upstream | 0.33 |

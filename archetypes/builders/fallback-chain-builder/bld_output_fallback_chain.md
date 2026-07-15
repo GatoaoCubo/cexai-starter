@@ -83,5 +83,5 @@ Ceiling: `{{cost_ceiling_usd}}` USD.
 | [[p11_qg_fallback_chain]] | downstream | 0.45 |
 | [[bld_schema_fallback_chain]] | downstream | 0.37 |
 | [[bld_architecture_fallback_chain]] | downstream | 0.33 |
-| [[bld_instruction_fallback_chain]] | upstream | 0.30 |
-| [[bld_knowledge_card_fallback_chain]] | upstream | 0.29 |
+| [[bld_prompt_fallback_chain]] | upstream | 0.30 |
+| [[bld_knowledge_fallback_chain]] | upstream | 0.29 |

@@ -48,8 +48,8 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_subscription_tier]] | upstream | 0.33 |
+| [[bld_prompt_subscription_tier]] | upstream | 0.33 |
 | [[kc_subscription_tier]] | upstream | 0.32 |
 | bld_tools_edit_format | sibling | 0.30 |
 | bld_tools_vad_config | sibling | 0.30 |
-| [[bld_collaboration_subscription_tier]] | downstream | 0.30 |
+| [[bld_orchestration_subscription_tier]] | downstream | 0.30 |

@@ -58,4 +58,4 @@ This ISO selects a reasoning strategy (e.g. chain-of-thought) and the conditions
 | [[reasoning-strategy-builder]] | related | 0.31 |
 | [[p03_qg_reasoning_strategy]] | downstream | 0.31 |
 | [[bld_output_template_reasoning_strategy]] | downstream | 0.29 |
-| [[bld_knowledge_card_reasoning_strategy]] | upstream | 0.29 |
+| [[bld_knowledge_reasoning_strategy]] | upstream | 0.29 |

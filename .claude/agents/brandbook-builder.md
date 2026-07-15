@@ -89,7 +89,7 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_brand_book_patterns]] | upstream | 0.39 |
+| [[kc_brand_book_patterns]] | upstream | 0.39 |
 | [[bld_schema_brandbook]] | related | 0.35 |
 | [[bld_prompt_brandbook]] | related | 0.32 |
 | kind-builder | related | 0.31 |

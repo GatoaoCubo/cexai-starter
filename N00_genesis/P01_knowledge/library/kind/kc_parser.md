@@ -101,5 +101,5 @@ A parser extracts structured semantic data from raw LLM text output. It applies 
 | [[parser-builder]] | downstream | 0.50 |
 | n00_parser_manifest | sibling | 0.45 |
 | [[bld_architecture_parser]] | downstream | 0.45 |
-| [[p01_kc_response_format]] | sibling | 0.44 |
-| [[bld_collaboration_parser]] | downstream | 0.41 |
+| [[kc_response_format]] | sibling | 0.44 |
+| [[bld_orchestration_parser]] | downstream | 0.41 |

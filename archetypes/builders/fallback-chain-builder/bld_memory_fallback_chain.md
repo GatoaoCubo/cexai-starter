@@ -59,7 +59,7 @@ Boundary: fallback_chain handles model-layer degradation; prompt sequencing belo
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fallback-chain-builder]] | upstream | 0.48 |
-| [[bld_instruction_fallback_chain]] | upstream | 0.47 |
+| [[bld_prompt_fallback_chain]] | upstream | 0.47 |
 | p01_kc_chain | upstream | 0.43 |
 | p10_lr_chain_builder | sibling | 0.41 |
 | bld_instruction_chain | upstream | 0.38 |

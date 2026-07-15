@@ -72,7 +72,7 @@ data_contract maps to Apache Avro schema, Protobuf IDL, JSON Schema, or OpenAPI:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_data_contract]] | upstream | 0.41 |
+| [[kc_data_contract]] | upstream | 0.41 |
 | [[data-contract-builder]] | upstream | 0.41 |
 | [[bld_memory_data_contract]] | downstream | 0.39 |
 | [[bld_context_sources_data_contract]] | downstream | 0.37 |
