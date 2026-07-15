@@ -22,13 +22,18 @@
     "N05_operations/**/*.md",
     "N06_commercial/**/*.md",
     "N07_admin/**/*.md",
-    "archetypes/builders/**/*.md"
+    "archetypes/builders/**/*.md",
+    ".claude/rules/**/*.md",
+    ".claude/commands/**/*.md",
+    ".claude/skills/**/*.md",
+    "examples/**/*.md"
   ],
   "excluded": [
     "**/node_modules/**",
     "**/compiled/**",
     ".git/**",
-    ".claude/**",
+    ".claude/agents/**",
+    ".claude/nucleus-settings/**",
     ".cex/**",
     ".github/**",
     "apps/**",
@@ -38,7 +43,6 @@
     "brand/**",
     "overlay/**",
     "supabase/**",
-    "examples/**",
     "boot/**",
     "_data/**",
     "**/*.py",
