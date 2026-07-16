@@ -50,7 +50,6 @@ curl -X POST https://api.`{{platform}}`.com/v1/`{{endpoint}}` <!-- e.g., "https:
 ## Authentication
 - Use HMAC-SHA256 with {{secret}} <!-- e.g., "API secret from dashboard" -->
 - Timestamp required in ISO 8601 format <!-- e.g., "2023-10-05T14:48:00Z" -->
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

@@ -64,7 +64,6 @@ Language: `{{script_language}}`
 Arguments: `{{script_args_or_none}}`
 ``{{script_language}}`
 `{{script_content_or_description}}`
-```
 ## Input/Output
 Input (from event):
 1. `{{input_field_1}}`: `{{input_description_1}}`

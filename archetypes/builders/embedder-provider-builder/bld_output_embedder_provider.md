@@ -91,7 +91,6 @@ embedder_provider IS NOT: vector_store, model_provider, retriever, chunker.
 - docs: {{provider_docs_url}}
 - pricing: {{pricing_page_url}}
 - mteb: {{mteb_leaderboard_url}}
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

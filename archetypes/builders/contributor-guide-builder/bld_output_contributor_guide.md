@@ -123,7 +123,6 @@ Reviews assess:
 Sign **{{CLA Name}}**: {{CLA URL}}. Corporate contributors: employer signs corporate CLA if contributing on company time.
 ### Option B: DCO
 Certify each commit with a sign-off: `git commit -s -m "feat: add CSV export"` (adds `Signed-off-by: Name <email>`). Text at https://developercertificate.org/
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

@@ -53,7 +53,6 @@ def generate_report():
     return {"status": "success"}
 ```
 <!-- Insert code snippet here -->
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

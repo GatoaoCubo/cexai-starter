@@ -51,7 +51,6 @@ targeting: "{{targeting_strategy_summary}}"
 `{{lifecycle_stages_create_test_ramp_full_retire}}`
 ## References
 - `{{reference_1}}`
-```
 
 ## Template Standards
 

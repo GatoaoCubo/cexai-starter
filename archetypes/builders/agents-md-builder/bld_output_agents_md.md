@@ -75,7 +75,6 @@ quality: null
 - NEVER force-push to {{protected_branch}}
 - NEVER delete protected branches
 - NEVER rewrite published history
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

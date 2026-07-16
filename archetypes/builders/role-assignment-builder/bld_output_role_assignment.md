@@ -67,7 +67,6 @@ conditions:
 - Sequential process: receives handoff from `{{upstream_role}}`, emits to `{{downstream_role}}`.
 - Hierarchical process: {{manager_or_worker}} position; {{delegation_behavior}}.
 - Consensus process: {{vote_weight}} weight in peer vote.
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

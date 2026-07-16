@@ -79,7 +79,6 @@ linked_artifacts:
 |---------|------|----|-----------|
 | {{event_1}} | {{state_a}} | {{state_b}} | {{when}} |
 | {{event_2}} | {{state_b}} | {{state_c}} | {{when}} |
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

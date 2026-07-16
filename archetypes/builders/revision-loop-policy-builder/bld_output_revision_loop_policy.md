@@ -93,7 +93,6 @@ revision_loop:
  max_iterations: `{{max_iterations}}`
  escalation_target: `{{escalation_target}}`
 ```
-```
 
 ## Variable Reference
 

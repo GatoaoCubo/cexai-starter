@@ -45,7 +45,6 @@ description: `{{description}}` <!-- Brief module overview -->
 def example_function():
     `{{code_logic}}` <!-- e.g., "print('Hello, CEX!')" -->
 ```
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

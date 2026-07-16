@@ -114,7 +114,6 @@ what triggers this webhook and what system receives it.}}
 - **Timeout**: {{30000}}ms — respond 2xx within timeout or retry triggered
 - **Idempotency key**: `{{payload.id}}` — deduplicate on this field
 - **Dead-letter**: after {{3}} failures, route to `{{dead_letter_queue_or_log}}`
-```
 
 #- END TEMPLATE
 #- Verify: body <= 1024 bytes after removing template comments

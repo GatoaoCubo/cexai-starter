@@ -87,7 +87,6 @@ checkpoint_pvc:
 - [x] Kueue ClusterQueue: {{kueue_queue}}
 - [x] OR Volcano PodGroup: {{volcano_pg}}
 - [x] CNCF KAR v1.35 conformance declared
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

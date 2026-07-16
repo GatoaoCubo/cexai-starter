@@ -110,7 +110,6 @@ curation_nudge:
  on_confirm: write_to `{{destination}}`
  on_reject: increment_counter, check_next_threshold
 ```
-```
 
 ## Variable Reference
 

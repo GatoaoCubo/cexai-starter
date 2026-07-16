@@ -113,7 +113,6 @@ metadata:
 | Prompt (per instance) | {{prompt_tokens}} |
 | Completion (per instance) | {{completion_tokens}} |
 | Total ({{num_instances}} instances) | {{total_tokens}} |
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

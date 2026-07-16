@@ -71,7 +71,6 @@ Success indicator: {{measurable_outcome}} (e.g., HTTP 200, console output, file 
 ## Next Steps
 - {{link_to_api_reference}} -- full endpoint docs
 - {{link_to_sdk_example}} -- language-specific integration patterns
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

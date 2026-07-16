@@ -85,7 +85,6 @@ Format: `{{output_format}}`
 Structure:
 ``{{format}}`
 `{{output_structure_example}}`
-```
 ## Validation
 1. `{{criterion_1_verifiable}}`
 2. `{{criterion_2_verifiable}}`

@@ -86,7 +86,6 @@ max_alternatives: `{{max_alternatives}}`
 
 ## Notes
 {{notes_content}}
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

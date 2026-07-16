@@ -52,7 +52,6 @@ partner:
 - ✅ KYC verification required
 - 🔄 Real-time data sync
 - 🔐 Mutual TLS encryption
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

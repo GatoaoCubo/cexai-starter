@@ -91,7 +91,6 @@ step:
 Thought: ...  Action: search(...)  Obs: ...
 Thought: ...  Action: finish       Obs: plan ready
 ```
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

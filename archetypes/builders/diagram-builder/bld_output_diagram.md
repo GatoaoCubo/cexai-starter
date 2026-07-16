@@ -43,7 +43,6 @@ keywords: [`{{keyword_1}}`, `{{keyword_2}}`, `{{keyword_3}}`]
 ## Diagram
 ``{{notation}}`
 `{{the_actual_diagram}}`
-```
 ## Legend
 `{{symbol_and_arrow_explanations}}`
 ## Components

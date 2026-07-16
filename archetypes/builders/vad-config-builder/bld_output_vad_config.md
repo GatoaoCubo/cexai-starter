@@ -94,7 +94,6 @@ call_center:
 
 ## Notes
 {{notes_content}}
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

@@ -63,7 +63,6 @@ def run_test():
 ## Notes
 - {{implementation_details}}
 - {{constraints}}
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

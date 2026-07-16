@@ -61,7 +61,6 @@ terminate: client revokes token, clears sandbox state
 - Iframe sandbox flags: allow-scripts, allow-same-origin (if required, justified)
 - CSP: default-src 'self'; connect-src {{allowed_origins}}; frame-ancestors {{client_origin}}
 - postMessage only; parent-frame DOM access FORBIDDEN (MCP + AAIF requirement)
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

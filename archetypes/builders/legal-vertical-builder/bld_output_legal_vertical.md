@@ -52,7 +52,6 @@ compliance_framework:
 <!-- regulatory_body: e.g., "ESMA", "SEC", "FCA" -->
 <!-- documentation_template: e.g., "KYC Form v2.1", "AML Policy 2023" -->
 <!-- compliance_framework: e.g., "MiFID II", "Dodd-Frank", "MAS 6" -->
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

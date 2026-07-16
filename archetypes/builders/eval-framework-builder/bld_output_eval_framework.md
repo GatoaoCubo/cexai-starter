@@ -55,7 +55,6 @@ parameters:
 | License         | `{{license}}` | <!-- e.g., MIT -->
 | Performance     | `{{perf}}`    | <!-- e.g., 10k/s -->
 | Last Updated    | `{{date}}`    | <!-- YYYY-MM-DD -->
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

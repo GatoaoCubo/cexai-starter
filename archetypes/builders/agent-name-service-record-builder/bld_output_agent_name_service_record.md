@@ -121,7 +121,6 @@ lifecycle:
   last_verified: "`{{LAST_VERIFIED_DATE}}`"
   status: active
 ```
-```
 ---
 
 ## Related Artifacts

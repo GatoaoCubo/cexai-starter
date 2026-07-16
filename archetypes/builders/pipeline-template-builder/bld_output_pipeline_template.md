@@ -70,7 +70,6 @@ from cex_sdk.pipeline import Pipeline
 pl = Pipeline.from_template('p12_pt_`{{scenario}}`.yaml')
 result = pl.run(task='`{{task_description}}`', codebase='`{{repo_path}}`')
 ```
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

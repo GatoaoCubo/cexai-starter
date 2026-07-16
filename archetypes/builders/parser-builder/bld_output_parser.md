@@ -71,7 +71,6 @@ Schema:
 Example:
 ``{{output_format}}`
 `{{sample_output}}`
-```
 ## Error Handling
 Strategy: `{{error_strategy}}`
 1. On extraction failure: `{{failure_behavior}}`

@@ -49,7 +49,6 @@ def faulty_function():
     return 1 / 0  # Raises ZeroDivisionError
 ```
 <!-- Include code blocks for errors, logs, or repro steps -->
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

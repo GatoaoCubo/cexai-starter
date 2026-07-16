@@ -64,7 +64,6 @@ def process_transaction(payload):
     # `{{api_example_code}}`
     return {"status": "success", "txid": "abc123"}
 ```
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

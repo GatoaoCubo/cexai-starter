@@ -72,7 +72,6 @@ linked_artifacts:
 ## References
 1. {{reference_1}}
 2. {{reference_2}}
-```
 
 ## Properties
 

@@ -44,7 +44,6 @@ updated: `{{updated}}` <!-- YYYY-MM-DD -->
 def workflow_step():
     print("`{{step_name}}` executed by `{{role}}`")
 ```
-```
 
 ## Quality Gate Checklist
 

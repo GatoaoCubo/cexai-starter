@@ -57,7 +57,6 @@ payload:
 <!-- Replace {{YYYY-MM-DD}} with date values -->
 <!-- Replace {{action_1}}, {{description_1}}, etc. with step details -->
 <!-- Replace {{user_id}}, {{doc_type}}, {{file_hash}} with sample data -->
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

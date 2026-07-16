@@ -54,7 +54,6 @@ def create_referral(code):
     }
     return requests.post("`{{api_url}}`", json=payload)
 ```
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

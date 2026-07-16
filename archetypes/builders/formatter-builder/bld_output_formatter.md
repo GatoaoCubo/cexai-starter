@@ -71,7 +71,6 @@ Example:
 Engine: `{{template_engine}}`
 ``{{template_syntax}}`
 `{{formatting_template}}`
-```
 ## Edge Cases
 1. Null values: `{{null_handling}}`
 2. Empty strings: `{{empty_handling}}`

@@ -71,7 +71,6 @@ from cex_sdk.crew import Crew
 crew = Crew.from_template('p12_ct_`{{crew_name}}`.md')
 result = crew.run(inputs=`{{inputs}}`)
 ```
-```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |
