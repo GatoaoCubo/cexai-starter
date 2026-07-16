@@ -1,0 +1,82 @@
+---
+kind: architecture
+id: bld_architecture_prospective_memory
+pillar: P08
+llm_function: CONSTRAIN
+purpose: Component map of prospective_memory
+quality: null
+title: "Architecture Prospective Memory"
+version: "1.0.0"
+author: n03_builder
+tags: [prospective_memory, builder, architecture]
+tldr: "prospective_memory stores future-directed agent intentions, distinct from P12 schedule (workflow config)."
+domain: "prospective memory construction"
+created: "2026-04-17"
+updated: "2026-04-17"
+8f: "F1_constrain"
+keywords: [component map of prospective_memory, prospective memory construction, architecture prospective memory, distinct from p, workflow config, prospective_memory, builder, architecture, component inventory, boundary table]
+density_score: 0.90
+related:
+  - p01_kc_prospective_memory
+  - prospective-memory-builder
+  - bld_knowledge_card_prospective_memory
+  - bld_collaboration_prospective_memory
+  - bld_instruction_prospective_memory
+---
+## Component Inventory
+| Name | Role | Owner | Status |
+|------|------|-------|--------|
+| reminders | Future action intents with triggers | prospective_memory | required |
+| owner | Agent/nucleus executing reminders | prospective_memory | required |
+| execution_mechanism | How reminders are polled/fired | prospective_memory | required |
+| trigger_type | time, event, or condition trigger | reminder | required |
+| action_payload | What to do when triggered | reminder | required |
+| schedule | P12 workflow orchestration config -- sibling | P12 | sibling |
+| session_state | Current session data -- sibling | P10 | sibling |
+| episodic_memory | Records of past actions -- sibling | P10 | sibling |
+
+## Boundary Table
+| prospective_memory IS | prospective_memory IS NOT |
+|-----------------------|--------------------------|
+| Agent's future intentions (deferred actions) | Workflow schedule config (that is schedule P12) |
+| Memory of what to do later | Memory of what happened (that is episodic_memory) |
+| Agent-internal reminder store | Cron job or orchestration primitive |
+| Trigger-conditional future actions | Current active task state (that is working_memory) |
+
+## Trigger Type Comparison
+| Type | Example | Mechanism |
+|------|---------|-----------|
+| time | "Check quality scores at 2026-05-01" | datetime or cron |
+| event | "After N01 signals complete, do X" | signal polling |
+| condition | "When quality_score < 7.0, retrain" | state polling |
+
+## Architecture Checklist
+
+- Verify component inventory is complete (no orphans)
+- Validate dependency graph has no cycles
+- Cross-reference with boundary table for scope correctness
+- Test layer map against actual codebase structure
+
+## Architecture Pattern
+
+```yaml
+# Architecture validation
+components: inventoried
+dependencies: acyclic
+boundaries: defined
+layers: mapped
+```
+
+```bash
+python _tools/cex_compile.py {FILE}
+python _tools/cex_doctor.py --scope architecture
+```
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[p01_kc_prospective_memory]] | downstream | 0.47 |
+| [[prospective-memory-builder]] | downstream | 0.47 |
+| [[bld_knowledge_card_prospective_memory]] | upstream | 0.40 |
+| [[bld_collaboration_prospective_memory]] | downstream | 0.37 |
+| [[bld_instruction_prospective_memory]] | upstream | 0.37 |

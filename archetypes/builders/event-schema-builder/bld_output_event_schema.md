@@ -1,0 +1,101 @@
+---
+kind: output_template
+id: bld_output_template_event_schema
+pillar: P05
+llm_function: PRODUCE
+purpose: Template with {{vars}} that the LLM fills to produce an event_schema artifact
+pattern: every field here exists in SCHEMA.md -- template derives, never invents
+quality: null
+title: "Output Template Event Schema"
+version: "1.0.0"
+author: n03_builder
+tags: [event_schema, builder, output_template]
+tldr: "Fill-in template for event_schema: CloudEvents envelope, JSON Schema payload, versioning strategy, consumer table."
+domain: "event schema construction"
+created: "2026-04-17"
+updated: "2026-04-17"
+8f: "F6_produce"
+keywords: [template with, event schema construction, output template event schema, fill-in template for event_schema, cloudevents envelope, json schema payload, versioning strategy, consumer table, event_schema, builder]
+density_score: 0.90
+related:
+  - bld_schema_event_schema
+  - kc_event_schema
+  - p11_qg_event_schema
+  - bld_config_event_schema
+  - bld_knowledge_card_event_schema
+---
+
+# Output Template: event_schema
+
+```yaml
+id: p06_evs_{{event_slug}}
+kind: event_schema
+pillar: P06
+version: "1.0.0"
+created: "{{YYYY-MM-DD}}"
+updated: "{{YYYY-MM-DD}}"
+author: "{{who_produced}}"
+event_type: "{{reverse_domain}}.{{aggregate}}.{{event}}.v{{major}}"
+schema_version: "1.0.0"
+source: "/{{service-name}}"
+datacontenttype: "application/json"
+quality: null
+tags: [event_schema, {{aggregate}}, {{domain_tag}}]
+tldr: "{{EventName}} v{{major}}: {{list_required_fields}}. CloudEvents 1.0. Source: /{{service}}."
+```
+
+## CloudEvents Attributes
+
+| Attribute | Value | Required | Notes |
+|-----------|-------|----------|-------|
+| specversion | "1.0" | YES | CloudEvents spec version |
+| id | UUID | YES | Unique per event |
+| type | "`{{event_type}}`" | YES | Reverse-DNS + version |
+| source | "`{{source}}`" | YES | Producer URI |
+| subject | `{{subject_field_description}}` | REC | Entity identifier |
+| time | RFC3339 timestamp | REC | Event occurrence time |
+| datacontenttype | "application/json" | YES | Payload format |
+
+## Payload Schema
+
+```json
+{
+  "$schema": "https://json-schema.org/draft/2020-12",
+  "type": "object",
+  "required": ["{{required_field_1}}", "{{required_field_2}}"],
+  "properties": {
+    "{{field_1}}": {
+      "type": "{{string|number|integer|boolean}}",
+      "format": "{{uuid|date-time|email|optional}}",
+      "description": "{{field_description}}"
+    },
+    "{{field_2}}": {
+      "type": "{{type}}",
+      "description": "{{description}}"
+    }
+  }
+}
+```
+
+## Versioning
+
+| Strategy | {{ADDITIVE_ONLY|VERSIONED_TYPE}} | Notes |
+|----------|----------------------------------|-------|
+| Add optional field | ALLOWED | Bump schema_version minor |
+| Add required field | PROHIBITED | Create v{{major+1}} event_type |
+| Remove/rename field | PROHIBITED | Create v{{major+1}} event_type |
+
+## Consumers
+
+| Consumer | Context | Action |
+|----------|---------|--------|
+| `{{ConsumerService}}` | `{{context}}` | `{{what_consumer_does}}` |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_schema_event_schema]] | downstream | 0.50 |
+| [[kc_event_schema]] | upstream | 0.47 |
+| [[p11_qg_event_schema]] | downstream | 0.45 |
+| [[bld_config_event_schema]] | downstream | 0.43 |
+| [[bld_knowledge_card_event_schema]] | upstream | 0.38 |

@@ -1,0 +1,59 @@
+---
+kind: collaboration
+id: bld_collaboration_llm_evaluation_scenario
+pillar: P12
+llm_function: COLLABORATE
+purpose: How llm_evaluation_scenario-builder works in crews with other builders
+quality: null
+title: "Collaboration LLM Evaluation Scenario"
+version: "1.0.0"
+author: n06_wave7
+tags: [llm_evaluation_scenario, builder, collaboration, helm]
+tldr: "How llm_evaluation_scenario-builder works in crews with other builders"
+domain: "llm_evaluation_scenario construction"
+created: "2026-04-14"
+updated: "2026-04-14"
+8f: "F8_collaborate"
+keywords: [llm_evaluation_scenario construction, collaboration llm evaluation scenario, llm_evaluation_scenario, builder, collaboration, helm, benchmark-builder, eval_dataset-builder, cex_score.py, crew role
+composes]
+density_score: 0.85
+related:
+  - llm-evaluation-scenario-builder
+  - bld_collaboration_memory_benchmark
+  - bld_collaboration_safety_hazard_taxonomy
+  - bld_collaboration_prompt_technique
+  - n00_llm_evaluation_scenario_manifest
+---
+## Crew Role
+Composes atomic HELM evaluation scenario specifications. Receives task instances and metric definitions from sibling builders; produces scenario specs consumed by experiment orchestration.
+
+## Receives From
+| Builder                 | What                        | Format    |
+|-------------------------|-----------------------------|-----------|
+| eval_dataset-builder    | Task instance set           | YAML      |
+| eval_metric-builder     | Primary metric definition   | YAML      |
+| prompt_template-builder | Adapter template reference  | Markdown  |
+| N01 Intelligence        | HELM taxonomy research      | Markdown  |
+
+## Produces For
+| Builder                    | What                          | Format   |
+|----------------------------|-------------------------------|----------|
+| experiment_config-builder  | Scenario spec for run config  | YAML     |
+| benchmark-builder          | Scenario entry for suite      | Markdown |
+| llm_judge-builder          | Eval criteria reference       | Markdown |
+
+## Boundary
+Does NOT produce full benchmark suites (use `benchmark-builder`).
+Does NOT define raw evaluation datasets (use `eval_dataset-builder`).
+Does NOT score artifacts (use `cex_score.py`).
+Does NOT configure inference infrastructure (use N05 Operations).
+Legal review of dataset licenses is handled by compliance team, not this builder.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[llm-evaluation-scenario-builder]] | upstream | 0.31 |
+| [[bld_collaboration_memory_benchmark]] | sibling | 0.24 |
+| [[bld_collaboration_safety_hazard_taxonomy]] | sibling | 0.23 |
+| [[bld_collaboration_prompt_technique]] | sibling | 0.23 |
+| [[n00_llm_evaluation_scenario_manifest]] | upstream | 0.23 |

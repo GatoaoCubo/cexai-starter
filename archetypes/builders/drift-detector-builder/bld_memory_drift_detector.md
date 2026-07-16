@@ -1,0 +1,72 @@
+---
+quality: null
+quality: null
+id: p11_lr_drift_detector_builder
+kind: learning_record
+pillar: P11
+version: 1.0.0
+created: 2026-04-17
+updated: 2026-04-17
+author: builder_agent
+observation: "Drift detectors with threshold=0 or 'low' string values produced alert storms. Detectors monitoring 'all features' generically missed actionable signals while firing on noise. Concrete feature lists with calibrated numeric thresholds produced useful alerts in 4/5 test deployments."
+pattern: "Always specify features_monitored as named list. Set threshold as numeric float (not string). Include suppression_window in alert_rule to prevent storms. Choose statistical test based on feature type: KS for continuous, chi-square/JS for categorical."
+evidence: "5 test deployments: 2 alert-storm failures (threshold misconfigured), 1 missed-signal failure (features: all), 4/5 successes with named features + numeric thresholds."
+confidence: 0.87
+outcome: SUCCESS
+domain: drift_detector
+tags: [drift-detector, threshold, features-monitored, suppression, statistical-test]
+tldr: "Named features + numeric threshold + suppression_window are load-bearing for drift_detector quality."
+impact_score: 8.0
+decay_rate: 0.02
+memory_scope: project
+title: "Memory Drift Detector"
+8f: "F7_govern"
+keywords: [memory drift detector, named features, numeric threshold, drift-detector, threshold, features-monitored, suppression, statistical-test, learning_record, summary
+two]
+density_score: 0.90
+llm_function: INJECT
+related:
+  - p11_qg_drift_detector
+  - bld_instruction_drift_detector
+  - drift-detector-builder
+  - p01_kc_drift_detector
+  - bld_knowledge_card_drift_detector
+---
+## Summary
+Two decisions dominate drift detector utility: what features to monitor (specific list vs generic "all") and how thresholds are calibrated (numeric vs vague). Generic feature monitoring generates alert fatigue; specific named dimensions produce actionable signals. Numeric thresholds with suppression windows prevent cascade failures after initial detection.
+
+## Pattern
+**Named features + calibrated numeric threshold + suppression window.**
+1. features_monitored: list specific dimension names, not "all"
+2. detection_method: match test to feature type (KS/PSI=continuous, chi-square/JS=categorical)
+3. threshold: always float, not string; calibrate against domain-specific baseline variance
+4. alert_rule.suppression_window: always set; 1-4h for operational detectors
+5. window_config: always declare reference source; rolling baseline > fixed for non-stationary environments
+
+## Anti-Pattern
+1. threshold: "low" -- string values fail numeric comparison
+2. features_monitored: ["all"] -- too broad, alert fatigue
+3. No suppression_window -- cascade alerts on correlated drift
+4. Conflating with regression_check -- different detection method, different remediation
+5. No window_config reference -- detector has no baseline to compare against
+6. PSI on categorical features -- PSI assumes continuous; use JS or chi-square for categoricals
+
+## Properties
+
+| Property | Value |
+|----------|-------|
+| Kind | `learning_record` |
+| Pillar | P11 |
+| Domain | drift_detector |
+| Pipeline | 8F |
+| Target | 9.0+ |
+| Density | 0.85+ |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[p11_qg_drift_detector]] | related | 0.34 |
+| [[bld_instruction_drift_detector]] | upstream | 0.33 |
+| [[drift-detector-builder]] | related | 0.33 |
+| [[p01_kc_drift_detector]] | related | 0.31 |
+| [[bld_knowledge_card_drift_detector]] | upstream | 0.30 |

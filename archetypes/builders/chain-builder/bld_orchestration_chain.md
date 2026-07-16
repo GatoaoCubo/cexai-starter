@@ -1,0 +1,71 @@
+---
+kind: collaboration
+id: bld_collaboration_chain
+pillar: P12
+llm_function: COLLABORATE
+purpose: How chain-builder works in crews with other builders
+pattern: each builder must know its ROLE in a team, what it RECEIVES and PRODUCES
+quality: null
+title: "Collaboration Chain"
+version: "1.0.0"
+author: n03_builder
+tags: [chain, builder, examples]
+tldr: "Golden and anti-examples for chain construction, demonstrating ideal structure and common pitfalls."
+domain: "chain construction"
+created: "2026-04-07"
+updated: "2026-04-07"
+8f: "F8_collaborate"
+keywords: [chain construction, collaboration chain, chain, builder, examples, "### crew: complex task decomposition", my role, crew compositions, prompt pipeline, complex task decomposition]
+density_score: 0.90
+related:
+  - chain-builder
+  - bld_collaboration_action_prompt
+  - p01_kc_chain
+  - bld_collaboration_instruction
+  - n00_chain_manifest
+---
+# Collaboration: chain-builder
+## My Role in Crews
+I am a SPECIALIST. I answer ONE question: "what prompts run in what order, and how does data flow between them?"
+I do not orchestrate agents. I do not define individual task prompts.
+I compose prompt pipelines so multi-step LLM tasks execute in correct sequence with typed data flow.
+## Crew Compositions
+### Crew: "Prompt Pipeline"
+```
+  1. action-prompt-builder -> "individual task prompts (steps)"
+  2. chain-builder -> "sequential composition with data flow"
+  3. input-schema-builder -> "typed contracts between chain steps"
+```
+### Crew: "Complex Task Decomposition"
+```
+  1. instruction-builder -> "step-by-step recipe for task"
+  2. chain-builder -> "prompt chain that implements the recipe"
+  3. e2e-eval-builder -> "end-to-end test of the full chain"
+```
+## Handoff Protocol
+### I Receive
+- seeds: task decomposition (list of steps), data flow description
+- optional: error handling strategy, branching conditions, context passing rules
+### I Produce
+- chain artifact (.md + .yaml frontmatter)
+- committed to: `cex/P03/examples/p03_chain_{scope}.md`
+### I Signal
+- signal: complete (with quality score from QUALITY_GATES)
+- if quality < 8.0: signal retry with failure reasons
+## Builders I Depend On
+- action-prompt-builder: provides individual step prompts composed into the chain
+- input-schema-builder: provides typed contracts for inter-step data flow
+## Builders That Depend On Me
+| Builder | Why |
+|---------|-----|
+| e2e-eval-builder | Tests the full chain from input to final output |
+| dag-builder | May model chain dependencies in execution graphs |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[chain-builder]] | upstream | 0.48 |
+| [[bld_collaboration_action_prompt]] | sibling | 0.46 |
+| [[p01_kc_chain]] | upstream | 0.42 |
+| [[bld_collaboration_instruction]] | sibling | 0.41 |
+| [[n00_chain_manifest]] | upstream | 0.39 |

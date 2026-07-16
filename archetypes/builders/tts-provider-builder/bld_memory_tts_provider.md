@@ -1,0 +1,52 @@
+---
+kind: learning_record
+id: p10_lr_tts_provider_builder
+pillar: P10
+llm_function: INJECT
+purpose: Learned patterns and pitfalls for tts_provider construction
+quality: null
+title: "Learning Record Tts Provider"
+version: "1.0.0"
+author: wave1_builder_gen
+tags: [tts_provider, builder, learning_record]
+tldr: "Learned patterns and pitfalls for tts_provider construction"
+domain: "tts_provider construction"
+created: "2026-04-13"
+updated: "2026-04-13"
+8f: "F7_govern"
+keywords: [tts_provider construction, learning record tts provider, tts_provider, builder, learning_record, tts_provider_builder, synthesize_text(), observation  
+common, pattern  
+modular, evidence  
+reviewed]
+density_score: 0.85
+related:
+  - p10_lr_stt_provider_builder
+  - p10_lr_boot-config-builder
+  - bld_instruction_tts_provider
+  - bld_collaboration_model_provider
+  - bld_collaboration_boot_config
+---
+## Observation  
+Common issues include inconsistent API handling across providers, leading to duplicated code, and misaligned audio format support (e.g., WAV vs. MP3). Configuration mismatches often cause runtime errors during synthesis.  
+
+## Pattern  
+Modular design with provider-specific adapters improves maintainability. Centralized configuration management ensures consistent parameter handling across different TTS backends.  
+
+## Evidence  
+Reviewed artifacts using `tts_provider_builder` with AWS Polly and Azure Cognitive Services showed reduced duplication via interface abstraction and config-driven initialization.  
+
+## Recommendations  
+- Define strict interfaces for provider-specific operations (e.g., `synthesize_text()`).  
+- Use configuration files to decouple provider parameters from implementation logic.  
+- Validate audio format compatibility during artifact construction.  
+- Implement fallback mechanisms for unsupported features in legacy providers.  
+- Document required parameters per provider to avoid runtime configuration errors.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[p10_lr_stt_provider_builder]] | sibling | 0.42 |
+| [[p10_lr_boot-config-builder]] | sibling | 0.35 |
+| [[bld_instruction_tts_provider]] | upstream | 0.31 |
+| [[bld_collaboration_model_provider]] | upstream | 0.30 |
+| [[bld_collaboration_boot_config]] | downstream | 0.27 |

@@ -139,16 +139,16 @@ Full walkthrough, first brain interaction, and troubleshooting: [QUICKSTART.md](
 | Storefront | `apps/public_site` | Public site -- catalog, blog, B2B page, the `/intake` tell-us-about-your-business form |
 | Admin | `apps/dashboard_web` | Tenant dashboard -- content, leads, capability runs |
 | API | `apps/dashboard_api` | FastAPI backend for the capabilities (ads, pricing, research, lead gen, and more) |
-| Typed AI brain | `N00_genesis/` .. `N07_admin/`, `archetypes/builders/`, `cexai/` | 125 kinds, 119 builders, 12 pillars, 8 nuclei, the 8F pipeline -- the same knowledge system that builds CEXAI itself |
+| Typed AI brain | `N00_genesis/` .. `N07_admin/`, `archetypes/builders/`, `cexai/` | 318 kinds, 318 builders, 12 pillars, 8 nuclei, the 8F pipeline -- the same knowledge system that builds CEXAI itself |
 | Operating cookbook | [COOKBOOK.md](COOKBOOK.md) | Generated from this tenant's own emitted state -- boot commands, capability table, knowledge map, quality gates. Never a static template; every section names its own source |
 | Repo map + live-counted stats | [INDEX.md](INDEX.md) | Where everything lives, counted for real |
 | Point-your-agent-here guide | [AGENTS.md](AGENTS.md) | How Claude Code / Codex / Gemini / Ollama should read this repo |
 
-Each `N0X_*` nucleus ships an **identity kit** (rules, machine identity, capability card,
-domain vocabulary), not all 12 pillars pre-filled -- only `N00_genesis/` carries the complete
-mold (schemas for all 12). The rest of a nucleus's pillars appear the first time your own
-`/build` writes into them; git doesn't track empty directories, so nothing was removed. Full
-anatomy + identity-kit table: [HOME.md](HOME.md#anatomy-why-nuclei-look-incomplete).
+Each `N0X_*` nucleus ships all 12 pillar folders: a pre-filled **identity kit** (rules,
+machine identity, capability card, domain vocabulary) plus README-marked pillars that fill
+the first time your own `/build` writes into them. `N00_genesis/` is the complete mold with
+every schema. Full anatomy + identity-kit table:
+[HOME.md](HOME.md#anatomy-why-nuclei-look-incomplete).
 
 Based on CEXAI (Apache-2.0) -- see [License](#license) below.
 

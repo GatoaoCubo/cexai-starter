@@ -1,0 +1,86 @@
+---
+kind: config
+id: bld_config_stt_provider
+pillar: P09
+llm_function: CONSTRAIN
+purpose: Naming, paths, limits for stt_provider production
+quality: null
+title: "Config Stt Provider"
+version: "1.0.0"
+author: wave1_builder_gen
+tags: [stt_provider, builder, config]
+tldr: "Production constraints for stt provider: naming (p04_stt_{{name}}.md), output paths (P04/), size limit 4096B. STT provider integration."
+domain: "stt_provider construction"
+created: "2026-04-13"
+updated: "2026-04-13"
+8f: "F1_constrain"
+keywords: [limits for stt_provider production, stt_provider construction, config stt provider, output paths, size limit, stt provider integration, stt_provider, builder, config, "p04_stt_{{name}}.md"]
+density_score: 0.85
+related:
+  - bld_config_api_reference
+  - bld_config_integration_guide
+  - bld_config_ab_test_config
+  - bld_config_collaboration_pattern
+  - bld_config_agents_md
+---
+
+## Naming Convention  
+Pattern: `p04_stt_{{name}}.md`  
+Examples: `p04_stt_azure.md`, `p04_stt_google.md`  
+{{name}}: lowercase, alphanumeric, hyphens allowed  
+
+## Paths  
+Artifacts: `/artifacts/p04/stt/{{name}}/`  
+Subdirectories: `models/`, `logs/`, `tests/`  
+
+## Limits  
+max_bytes: 4096  
+max_turns: 10  
+effort_level: medium  
+
+## Hooks  
+pre_build: null  
+post_build: null  
+on_error: null  
+on_quality_fail: null
+
+## Domain-Specific Constraints
+
+| Constraint | Value |
+|-----------|-------|
+| Boundary | STT provider integration |
+| Dependencies | api_client |
+| Primary 8F function | F6_produce |
+| Max artifact size | 4096 bytes |
+
+## Edge Cases
+
+| Scenario | Handling |
+|----------|---------|
+| Missing required frontmatter field | Fail H01 gate; return to F6 |
+| ID collision with existing artifact | Append version suffix (_v2) |
+| Body exceeds 4096 bytes | Trim prose sections; preserve tables |
+| Dependency api_client not found | Warn; proceed with defaults |
+
+## Properties
+
+| Property | Value |
+|----------|-------|
+| Kind | `config` |
+| Pillar | P09 |
+| Domain | stt provider construction |
+| Pipeline | 8F (F1-F8) |
+| Scorer | cex_score.py |
+| Compiler | cex_compile.py |
+| Retriever | cex_retriever.py |
+| Quality target | 9.0+ |
+| Density target | 0.85+ |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_config_api_reference]] | sibling | 0.55 |
+| [[bld_config_integration_guide]] | sibling | 0.51 |
+| [[bld_config_ab_test_config]] | sibling | 0.51 |
+| [[bld_config_collaboration_pattern]] | sibling | 0.50 |
+| [[bld_config_agents_md]] | sibling | 0.50 |

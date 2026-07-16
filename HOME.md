@@ -1,6 +1,6 @@
 ---
 title: CEXAI Sovereign Starter
-description: A sovereign, unfilled AI brain -- 125 kinds, 119 builders, 12 pillars, 8 nuclei. Navigate the real architecture, not a diagram of it.
+description: A sovereign, unfilled AI brain -- 318 kinds, 318 builders, 12 pillars, 8 nuclei. Navigate the real architecture, not a diagram of it.
 ---
 
 # CEXAI Sovereign Starter
@@ -95,16 +95,15 @@ Full protocol and the worked "5 words in -> professional artifact out" example: 
 | P05 | Output | P11 | Feedback |
 | P06 | Schema | P12 | Orchestration |
 
-Every one of the 8 nuclei mirrors this same 12-pillar taxonomy by convention -- though
-what's actually on disk varies per nucleus today; only `N00_genesis/` carries all 12 as
-folders right now. The Anatomy section just below explains why the rest look thinner, and
-why that's by design, not a gap.
+Every one of the 8 nuclei carries this same 12-pillar taxonomy on disk -- expand any
+`N0X_*` folder in the sidebar and all 12 subfolders are there. Pillars you have not
+built into yet hold a short README describing what belongs there; the Anatomy section
+just below explains the design.
 
 ## Anatomy: why nuclei look "incomplete"
 
-Open `N01_intelligence/` or any other `N0X_*` folder and you'll find 3-4 pillar subfolders,
-not 12. That's not missing work -- every nucleus ships an **identity kit**, not a pre-filled
-department:
+Every `N0X_*` nucleus carries all 12 pillar folders. What differs is how much each one
+holds on day 1 -- a nucleus ships as an **identity kit**, not a pre-filled department:
 
 | Ships in every nucleus | Lives in |
 |---|---|
@@ -113,11 +112,12 @@ department:
 | Capability card | `P08_architecture/agent_card_n0X.md` |
 | Domain vocabulary | `P01_knowledge/kc_*_vocabulary.md` |
 
-(most nuclei also carry `P10_memory/procedural_memory_n0X.md`, their operating SOPs). The
-complete 12-pillar mold -- every pillar present, schema files included -- ships as
-[[N00_genesis/rules/n00-genesis|N00_genesis]]. The rest of a nucleus's pillars (P03-P07,
-P09, P11, P12) appear the first time your own `/build` writes into them: git does not track
-empty folders, so an un-built pillar is invisible on disk -- nothing was removed.
+(most nuclei also carry `P10_memory/procedural_memory_n0X.md`, their operating SOPs). Every
+other pillar folder holds a short README naming its purpose and example kinds -- a labeled
+shelf, ready for your work. The complete 12-pillar mold -- every schema included -- ships as
+[[N00_genesis/rules/n00-genesis|N00_genesis]]. A pillar fills the first time your own
+`/build` writes into it; until then its README marks the spot. Nothing is missing:
+the factory floor is complete, and the shelves are yours to fill.
 
 ## Navigate
 

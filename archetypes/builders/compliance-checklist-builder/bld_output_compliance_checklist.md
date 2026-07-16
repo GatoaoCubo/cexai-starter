@@ -1,0 +1,72 @@
+---
+kind: output_template
+id: bld_output_template_compliance_checklist
+pillar: P05
+llm_function: PRODUCE
+purpose: Template with vars for compliance_checklist production
+quality: null
+title: "Output Template Compliance Checklist"
+version: "1.0.0"
+author: wave1_builder_gen_v2
+tags: [compliance_checklist, builder, output_template]
+tldr: "Template with vars for compliance_checklist production"
+domain: "compliance_checklist construction"
+created: "2026-04-14"
+updated: "2026-04-14"
+8f: "F6_produce"
+keywords: [compliance_checklist construction, output template compliance checklist, compliance_checklist, builder, output_template, example table, transaction limits, example code block, data encryption standards, related artifacts]
+density_score: 0.85
+related:
+  - bld_config_compliance_checklist
+  - n00_compliance_checklist_manifest
+  - kc_compliance_checklist
+  - bld_output_template_data_residency
+  - p03_sp_verification_agent
+---
+```yaml
+---
+id: p11_cc_{{name}}.md
+name: {{compliance_checklist_name}}
+pillar: P11
+quality: null
+description: {{checklist_description}}
+sections:
+  - title: {{section_title}}
+    items:
+      - {{item_1}}
+      - {{item_2}}
+---
+```
+
+<!-- id: Unique identifier following pattern ^p11_cc_[a-z][a-z0-9_]+.md$ -->
+<!-- name: Name of compliance checklist -->
+<!-- pillar: Always "P11" -->
+<!-- quality: Must be null -->
+<!-- description: Brief overview of checklist purpose -->
+<!-- section_title: Title of checklist section -->
+<!-- item_1: First compliance item -->
+<!-- item_2: Second compliance item -->
+
+**Example Table:**
+| Requirement         | Status | Notes         |
+|---------------------|--------|---------------|
+| KYC Verification    | PASS   | <!-- Pass/fail indicator --> |
+| Transaction Limits  | FAIL   | <!-- Compliance status --> |
+
+**Example Code Block:**
+```python
+# Data Encryption Standards
+def encrypt_data(data):
+    # Implement AES-256 encryption
+    <!-- Add encryption logic here -->
+    return encrypted_data
+```
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_config_compliance_checklist]] | downstream | 0.26 |
+| [[n00_compliance_checklist_manifest]] | downstream | 0.22 |
+| [[kc_compliance_checklist]] | upstream | 0.21 |
+| [[bld_output_template_data_residency]] | sibling | 0.20 |
+| [[p03_sp_verification_agent]] | upstream | 0.18 |

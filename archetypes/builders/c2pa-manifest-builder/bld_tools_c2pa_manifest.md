@@ -1,0 +1,58 @@
+---
+kind: tools
+id: bld_tools_c2pa_manifest
+pillar: P04
+llm_function: CALL
+purpose: Tools available for c2pa_manifest production
+quality: null
+title: "Tools C2PA Manifest"
+version: "1.0.0"
+author: n04_wave7
+tags: [c2pa_manifest, builder, tools, C2PA, COSE, JUMBF, c2pa-rs]
+tldr: "Tools available for c2pa_manifest production"
+domain: "c2pa_manifest construction"
+created: "2026-04-14"
+updated: "2026-04-14"
+8f: "F5_call"
+keywords: [tools available for c, pa_manifest production, pa_manifest construction, tools c, pa manifest, c2pa_manifest, builder, tools, c2pa, cose]
+density_score: 0.85
+related:
+  - bld_knowledge_card_c2pa_manifest
+  - p10_lr_c2pa_manifest_builder
+  - c2pa-manifest-builder
+  - bld_collaboration_c2pa_manifest
+  - bld_instruction_c2pa_manifest
+---
+## Production Tools
+| Tool             | Purpose                              | When                         |
+|------------------|--------------------------------------|------------------------------|
+| cex_compile.py   | Compile manifest YAML to JSON        | After draft produced         |
+| cex_score.py     | Score manifest against quality gates | Post-production validation   |
+| cex_retriever.py | Fetch similar manifest examples      | During context assembly      |
+| cex_doctor.py    | Validate manifest structure          | Pre-commit check             |
+| cex_doctor.py | MIME type and assertion validation   | Schema compliance check      |
+
+## Validation Tools
+| Tool                            | Purpose                                | When                        |
+|---------------------------------|----------------------------------------|-----------------------------|
+| c2pa-rs (Rust)                  | Sign and verify C2PA manifests         | Signing and validation      |
+| c2pa-js (Node)                  | JavaScript C2PA SDK for web platforms  | Browser/Node environments   |
+| verify.contentauthenticity.org  | CAI public verification portal         | Post-build smoke test       |
+| cose_validator                  | Validate COSE_Sign1 signature block    | Cryptographic verification  |
+| jumbf_parser                    | Parse JUMBF box structure in media     | Embedding verification      |
+
+## External References
+- C2PA 2.3 Spec: https://spec.c2pa.org/specifications/specifications/2.3/
+- c2pa-rs (Rust SDK): https://github.com/contentauth/c2pa-rs
+- CAI SDK (JavaScript): https://github.com/contentauth/c2pa-js
+- CAI Verify Portal: https://verify.contentauthenticity.org
+- C2PA Digital Source Types: https://cv.iptc.org/newscodes/digitalsourcetype/
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_knowledge_card_c2pa_manifest]] | upstream | 0.57 |
+| [[p10_lr_c2pa_manifest_builder]] | downstream | 0.56 |
+| [[c2pa-manifest-builder]] | downstream | 0.46 |
+| [[bld_collaboration_c2pa_manifest]] | downstream | 0.45 |
+| [[bld_instruction_c2pa_manifest]] | upstream | 0.44 |

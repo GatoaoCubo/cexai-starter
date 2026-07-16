@@ -1,0 +1,55 @@
+---
+kind: collaboration
+id: bld_collaboration_prompt_technique
+pillar: P12
+llm_function: COLLABORATE
+purpose: How prompt_technique-builder works in crews with other builders
+quality: null
+title: "Collaboration Prompt Technique"
+version: "1.0.0"
+author: wave1_builder_gen_v2
+tags: [prompt_technique, builder, collaboration]
+tldr: "How prompt_technique-builder works in crews with other builders"
+domain: "prompt_technique construction"
+created: "2026-04-14"
+updated: "2026-04-14"
+8f: "F8_collaborate"
+keywords: [prompt_technique construction, collaboration prompt technique, prompt_technique, builder, collaboration, crew role  
+designs, receives from, produces for, boundary  
+does, related artifacts]
+density_score: 0.85
+related:
+  - bld_collaboration_llm_evaluation_scenario
+  - bld_collaboration_agent_computer_interface
+  - bld_collaboration_action_paradigm
+  - prompt-technique-builder
+  - bld_architecture_kind
+---
+## Crew Role  
+Designs and refines specific prompting strategies to enhance model performance, ensuring techniques are adaptable and effective across use cases.  
+
+## Receives From  
+| Builder          | What                  | Format      |  
+|------------------|-----------------------|-------------|  
+| prompt_template-builder | Base templates        | JSON        |  
+| reasoning_strategy-builder | Reasoning frameworks | YAML        |  
+| feedback-builder | User/evaluator feedback | Text file   |  
+
+## Produces For  
+| Builder          | What                  | Format      |  
+|------------------|-----------------------|-------------|  
+| response_generator-builder | Optimized prompt techniques | JSON        |  
+| evaluation-builder | Technique benchmarks  | Markdown    |  
+| documentation-builder | Technique descriptions | API endpoint |  
+
+## Boundary  
+Does NOT implement templates (handled by prompt_template-builder) or reasoning logic (handled by reasoning_strategy-builder). Execution of techniques is managed by response_generator-builder.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_collaboration_llm_evaluation_scenario]] | sibling | 0.24 |
+| [[bld_collaboration_agent_computer_interface]] | sibling | 0.23 |
+| [[bld_collaboration_action_paradigm]] | sibling | 0.21 |
+| [[prompt-technique-builder]] | upstream | 0.21 |
+| [[bld_architecture_kind]] | upstream | 0.21 |

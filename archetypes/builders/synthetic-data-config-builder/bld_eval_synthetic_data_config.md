@@ -1,0 +1,89 @@
+---
+kind: quality_gate
+id: bld_eval_synthetic_data_config
+pillar: P07
+llm_function: GOVERN
+purpose: Quality gate with HARD and SOFT scoring for synthetic_data_config
+quality: null
+title: "Synthetic Data Config Builder - Eval ISO"
+version: "1.0.0"
+author: n03_builder
+tags: [synthetic_data_config, builder, quality_gate]
+tldr: "Quality gate for synthetic data config: validates generation method, quality filters, and decontamination."
+domain: "synthetic data generation"
+created: "2026-04-23"
+updated: "2026-04-23"
+8f: "F7_govern"
+keywords: [synthetic data generation, validates generation method, quality filters, and decontamination, synthetic_data_config, builder, quality_gate, eval, quality gate, fail condition]
+density_score: 0.88
+related:
+  - bld_eval_query_optimizer
+  - bld_eval_inference_config
+  - bld_eval_curriculum_config
+  - bld_eval_tokenizer_config
+  - bld_eval_distillation_config
+---
+## Quality Gate
+
+## HARD Gates
+
+| ID | Check | Fail Condition |
+|----|-------|----------------|
+| H01 | YAML frontmatter valid | Invalid YAML syntax or missing fields |
+| H02 | ID matches pattern | ID does not match ^p01_sdc_[a-z][a-z0-9_]+$ |
+| H03 | kind field matches | kind is not 'synthetic_data_config' |
+| H04 | generation_method defined | generation_method field missing or empty |
+| H05 | quality is null | quality must be null at authoring time |
+| H06 | Required fields present | Missing required fields |
+| H07 | source_model specified | source_model field missing or empty |
+
+## SOFT Scoring
+
+| Dim | Dimension | Weight | Scoring Guide |
+|-----|-----------|--------|---------------|
+| D1 | Method clarity | 0.20 | Method described with parameters (1.0) vs name-only (0.0) |
+| D2 | Quality filters | 0.20 | Numeric thresholds for filters (1.0) vs absent (0.0) |
+| D3 | Decontamination | 0.15 | Eval set overlap removal defined (1.0) vs missing (0.0) |
+| D4 | Seed diversity | 0.15 | Diversity requirements documented |
+| D5 | Output format | 0.10 | Schema and validation rules specified |
+| D6 | Cost estimate | 0.10 | API cost or compute time documented |
+| D7 | Documentation | 0.10 | tldr captures key info in <= 160 characters |
+
+## Actions
+
+| Score | Action |
+|-------|--------|
+| >=9.5 | GOLDEN |
+| >=8.0 | PUBLISH |
+| >=7.0 | REVIEW |
+| <7.0 | REJECT |
+
+## Validation Checklist
+
+| Check | Method | Automated |
+|-------|--------|-----------|
+| Frontmatter schema | cex_compile.py --validate | Yes |
+| Naming convention | Regex match against p01_sdc_{{name}}.md + .yaml | Yes |
+| Size limit | Byte count <= 4096 | Yes |
+| Density score | Token/byte ratio >= 0.85 | Yes |
+| Cross-references valid | Link resolution check | Partial |
+
+## Properties
+
+| Property | Value |
+|----------|-------|
+| Kind | `eval` |
+| Pillar | P07 |
+| Domain | synthetic data config construction |
+| Pipeline | 8F (F1-F8) |
+| Scorer | cex_score.py |
+| Compiler | cex_compile.py |
+| Retriever | cex_retriever.py |
+| Quality target | 9.0+ |
+| Density target | 0.85+ |
+
+### S_RELATED: Cross-Reference Check (SOFT)
+- [ ] `related:` frontmatter field populated (3-15 entries)
+- [ ] `## Related Artifacts` section present in artifact body
+- [ ] At least 1 upstream and 1 downstream reference
+- Penalty: -0.3 if empty (does not block, encourages wiring)

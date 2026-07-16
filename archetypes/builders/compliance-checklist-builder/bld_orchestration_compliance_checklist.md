@@ -1,0 +1,54 @@
+---
+kind: collaboration
+id: bld_collaboration_compliance_checklist
+pillar: P12
+llm_function: COLLABORATE
+purpose: How compliance_checklist-builder works in crews with other builders
+quality: null
+title: "Collaboration Compliance Checklist"
+version: "1.0.0"
+author: wave1_builder_gen_v2
+tags: [compliance_checklist, builder, collaboration]
+tldr: "How compliance_checklist-builder works in crews with other builders"
+domain: "compliance_checklist construction"
+created: "2026-04-14"
+updated: "2026-04-14"
+8f: "F8_collaborate"
+keywords: [compliance_checklist construction, collaboration compliance checklist, compliance_checklist, builder, collaboration, crew role  
+coordinates, receives from, compliance officer, legal team, produces for]
+density_score: 0.85
+related:
+  - bld_collaboration_compliance_framework
+  - bld_collaboration_healthcare_vertical
+  - bld_collaboration_govtech_vertical
+  - bld_collaboration_safety_policy
+  - bld_collaboration_fintech_vertical
+---
+## Crew Role  
+Coordinates creation of audit-specific compliance checklists, ensuring alignment with regulatory requirements and organizational policies.  
+
+## Receives From  
+| Builder       | What                  | Format      |  
+|---------------|-----------------------|-------------|  
+| Compliance Officer | Regulatory updates  | Document    |  
+| Auditor       | Scope of audit        | Form        |  
+| Legal Team    | Policy changes        | Email       |  
+
+## Produces For  
+| Builder       | What                  | Format      |  
+|---------------|-----------------------|-------------|  
+| Compliance Officer | Final checklist     | PDF         |  
+| Auditor       | Executable checklist  | Shared Doc  |  
+| Management    | Review summary        | Dashboard   |  
+
+## Boundary  
+Does NOT enforce runtime compliance or define safety policies. Guardrail checks and behavioral policies are handled by dedicated guardrail_checker and safety_policy_enforcer builders.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_collaboration_compliance_framework]] | sibling | 0.42 |
+| [[bld_collaboration_healthcare_vertical]] | sibling | 0.30 |
+| [[bld_collaboration_govtech_vertical]] | sibling | 0.28 |
+| [[bld_collaboration_safety_policy]] | sibling | 0.27 |
+| [[bld_collaboration_fintech_vertical]] | sibling | 0.26 |

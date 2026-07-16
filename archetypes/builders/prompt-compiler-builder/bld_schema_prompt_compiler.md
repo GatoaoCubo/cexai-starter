@@ -1,0 +1,91 @@
+---
+kind: schema
+id: bld_schema_prompt_compiler
+pillar: P06
+llm_function: CONSTRAIN
+purpose: Formal schema -- SINGLE SOURCE OF TRUTH for prompt_compiler
+pattern: TEMPLATE derives from this. CONFIG restricts this.
+quality: null
+title: "Schema Prompt Compiler"
+version: "1.0.0"
+author: n03_builder
+tags: [prompt_compiler, builder, schema, P03]
+tldr: "Schema defining all fields, structure, and constraints for prompt_compiler artifacts."
+domain: "prompt_compiler construction"
+created: "2026-04-12"
+updated: "2026-04-12"
+8f: "F1_constrain"
+keywords: [prompt_compiler construction, schema prompt compiler, schema defining all fields, prompt_compiler, builder, schema, ## id pattern
+regex:, -- what this artifact is and how to use it
+2., -- all kinds mapped to user input patterns
+3., -- user verbs to canonical actions
+4.]
+density_score: 0.92
+related:
+  - bld_schema_usage_report
+  - bld_schema_dataset_card
+  - bld_schema_action_prompt
+  - bld_schema_reranker_config
+  - bld_schema_quickstart_guide
+---
+
+# Schema: prompt_compiler
+## Frontmatter Fields
+| Field | Type | Required | Default | Notes |
+|-------|------|----------|---------|-------|
+| id | string (p03_pc_{slug}) | YES | - | Namespace compliance |
+| kind | literal "prompt_compiler" | YES | - | Type integrity |
+| pillar | literal "P03" | YES | - | Pillar assignment |
+| title | string | YES | - | Human-readable title |
+| version | semver string | YES | "1.0.0" | Versioning |
+| created | date YYYY-MM-DD | YES | - | Creation date |
+| updated | date YYYY-MM-DD | YES | - | Last update |
+| author | string | YES | - | Producer identity |
+| domain | string | YES | - | Domain this compiler serves |
+| coverage | integer | YES | - | Number of kinds covered |
+| languages | list[string] | YES | - | Supported languages (e.g. [pt-br, en]) |
+| quality | null | YES | null | Never self-score |
+| tags | list[string], len >= 3 | YES | - | Must include "prompt_compiler" |
+| tldr | string <= 160ch | YES | - | Dense summary |
+| density_score | float 0.80-1.00 | OPT | - | Content density |
+## Kind Resolution Entry
+```yaml
+entry:
+  kind: string (one of 124 registered kinds)
+  pillar: string (P01-P12)
+  nucleus: string (N01-N07)
+  patterns_en: list[string] (user input triggers in EN)
+  patterns_pt: list[string] (user input triggers in PT-BR)
+  verb: string (canonical action)
+  8f_emphasis: string (primary 8F function)
+  boundary: string (when NOT to pick this kind)
+```
+## ID Pattern
+Regex: `^p03_pc_[a-z][a-z0-9_]+$`
+Rule: id MUST equal filename stem.
+## Body Structure (required sections)
+1. `## Preamble` -- what this artifact is and how to use it
+2. `## Kind Resolution Table` -- all kinds mapped to user input patterns
+3. `## Verb Resolution Table` -- user verbs to canonical actions
+4. `## Ambiguity Resolution` -- protocol for multi-kind matches
+5. `## Fallback Heuristics` -- handling unrecognized input
+6. `## Nucleus Routing Matrix` -- kind-to-nucleus mapping
+7. `## Behavioral Instructions` -- rules for LLM operating as prompt compiler
+## Constraints
+- max_bytes: 16384 (body only)
+- naming: p03_pc_{slug}.md
+- machine_format: yaml (frontmatter) + markdown (body)
+- id == filename stem
+- quality: null always
+- coverage MUST match actual kinds in Kind Resolution Table
+- languages MUST list all supported languages
+- Every kind in kinds_meta.json MUST appear in Kind Resolution Table
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_schema_usage_report]] | sibling | 0.56 |
+| [[bld_schema_dataset_card]] | sibling | 0.55 |
+| [[bld_schema_action_prompt]] | sibling | 0.55 |
+| [[bld_schema_reranker_config]] | sibling | 0.54 |
+| [[bld_schema_quickstart_guide]] | sibling | 0.54 |

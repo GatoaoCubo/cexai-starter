@@ -60,7 +60,7 @@ NOT `personality` (P02) -- one hot-swappable voice/tone/values overlay; the
 brandbook's Persona section is one of 8 sections, not the whole artifact.
 NOT `tagline` (P03) -- a single positioning line; the brandbook's Identity
 section *consumes* one, it doesn't define the tagline format.
-NOT `brand_config` -- not a kind in the 125-kind taxonomy at all; it is the
+NOT `brand_config` -- not a kind in the 318-kind taxonomy at all; it is the
 tenant's single platform-identity record (`.cex/brand/brand_config.yaml`, or
 the per-tenant moldgen overlay) that a PASSING brandbook run *writes into*
 (see "Brand-setup write-back" below).

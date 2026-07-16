@@ -77,7 +77,7 @@ Run it yourself: `python _tools/cex_8f_runner.py "<intent>" --dry-run --verbose`
 
 ## Looking for a kind?
 
-125 kinds spread across 12 pillars. Browse:
+318 kinds spread across 12 pillars. Browse:
 [`.cex/kinds_meta.json`](.cex/kinds_meta.json) or
 [`N00_genesis/P01_knowledge/library/kind/`](N00_genesis/P01_knowledge/library/kind/).
 For "I have concept X, which kind covers it?", see `CLAUDE.md`'s
@@ -88,15 +88,15 @@ For "I have concept X, which kind covers it?", see `CLAUDE.md`'s
 | Nucleus | Domain | Sin lens | Pillars on disk |
 |---|---|---|---|
 | N00_genesis | archetype (template for the rest) | -- | 12/12 (the complete mold) |
-| N01_intelligence | research | Analytical Envy | 4/12 |
-| N02_marketing | marketing/brand | Creative Lust | 3/12 |
-| N03_engineering | build/construction | Inventive Pride | 4/12 |
-| N04_knowledge | knowledge base | Knowledge Gluttony | 4/12 |
-| N05_operations | quality/ops | Gating Wrath | 4/12 |
-| N06_commercial | monetization | Strategic Greed | 4/12 |
-| N07_admin | orchestration | Orchestrating Sloth | 4/12 |
+| N01_intelligence | research | Analytical Envy | 12/12 |
+| N02_marketing | marketing/brand | Creative Lust | 12/12 |
+| N03_engineering | build/construction | Inventive Pride | 12/12 |
+| N04_knowledge | knowledge base | Knowledge Gluttony | 12/12 |
+| N05_operations | quality/ops | Gating Wrath | 12/12 |
+| N06_commercial | monetization | Strategic Greed | 12/12 |
+| N07_admin | orchestration | Orchestrating Sloth | 12/12 |
 
-> Counts differ by design: each nucleus ships an identity kit and its remaining pillar folders appear the first time your own builds write into them (git does not track empty folders). `N00_genesis/` is the complete 12-pillar mold. See [HOME -> Anatomy](HOME.md#anatomy-why-nuclei-look-incomplete).
+> All 12 pillar folders ship in every nucleus: the identity kit comes pre-filled, the rest hold a README marking what belongs there until your builds fill them. `N00_genesis/` carries every schema. See [HOME -> Anatomy](HOME.md#anatomy-why-nuclei-look-incomplete).
 
 Details, department-vocabulary mapping, and per-nucleus sources:
 [COOKBOOK.md](COOKBOOK.md#nuclei-as-departments).

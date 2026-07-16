@@ -1,0 +1,87 @@
+---
+kind: config
+id: bld_config_playground_config
+pillar: P09
+llm_function: CONSTRAIN
+purpose: Naming, paths, limits for playground_config production
+quality: null
+title: "Config Playground Config"
+version: "1.0.0"
+author: wave1_builder_gen_v2
+tags: [playground_config, builder, config]
+tldr: "Production constraints for playground config: naming (p09_pg_{{name}}.yaml), output paths (P09/), size limit 4096B. Playground spec."
+domain: "playground_config construction"
+created: "2026-04-14"
+updated: "2026-04-14"
+8f: "F1_constrain"
+keywords: [limits for playground_config production, playground_config construction, config playground config, output paths, size limit, playground spec, playground_config, builder, config, "p09_pg_{{name}}.yaml"]
+density_score: 0.85
+related:
+  - bld_config_ab_test_config
+  - bld_config_sandbox_spec
+  - bld_config_graph_rag_config
+  - bld_config_transport_config
+  - bld_config_api_reference
+---
+
+## Naming Convention
+Pattern: `p09_pg_{{name}}.yaml`
+Examples:
+- p09_pg_example.yaml
+- p09_pg_test.yaml
+
+## Paths
+Artifacts: `/mnt/data/cex/playgrounds/p09/{{name}}`
+Logs: `/mnt/data/cex/logs/p09/{{name}}`
+
+## Limits
+- max_bytes: 4096
+- max_turns: 0
+- effort_level: 0
+
+## Hooks
+- pre_build: null
+- post_build: null
+- on_error: null
+- on_quality_fail: null
+
+## Domain-Specific Constraints
+
+| Constraint | Value |
+|-----------|-------|
+| Boundary | Playground spec |
+| Dependencies | env_config, sandbox_spec |
+| Primary 8F function | F6_produce |
+| Max artifact size | 4096 bytes |
+
+## Edge Cases
+
+| Scenario | Handling |
+|----------|---------|
+| Missing required frontmatter field | Fail H01 gate; return to F6 |
+| ID collision with existing artifact | Append version suffix (_v2) |
+| Body exceeds 4096 bytes | Trim prose sections; preserve tables |
+| Dependency env_config not found | Warn; proceed with defaults |
+
+## Properties
+
+| Property | Value |
+|----------|-------|
+| Kind | `config` |
+| Pillar | P09 |
+| Domain | playground config construction |
+| Pipeline | 8F (F1-F8) |
+| Scorer | cex_score.py |
+| Compiler | cex_compile.py |
+| Retriever | cex_retriever.py |
+| Quality target | 9.0+ |
+| Density target | 0.85+ |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_config_ab_test_config]] | sibling | 0.54 |
+| [[bld_config_sandbox_spec]] | sibling | 0.51 |
+| [[bld_config_graph_rag_config]] | sibling | 0.50 |
+| [[bld_config_transport_config]] | sibling | 0.50 |
+| [[bld_config_api_reference]] | sibling | 0.48 |

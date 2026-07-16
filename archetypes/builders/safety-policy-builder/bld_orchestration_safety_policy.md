@@ -1,0 +1,55 @@
+---
+kind: collaboration
+id: bld_collaboration_safety_policy
+pillar: P12
+llm_function: COLLABORATE
+purpose: How safety_policy-builder works in crews with other builders
+quality: null
+title: "Collaboration Safety Policy"
+version: "1.0.0"
+author: wave1_builder_gen
+tags: [safety_policy, builder, collaboration]
+tldr: "How safety_policy-builder works in crews with other builders"
+domain: "safety_policy construction"
+created: "2026-04-13"
+updated: "2026-04-13"
+8f: "F8_collaborate"
+keywords: [safety_policy construction, collaboration safety policy, safety_policy, builder, collaboration, crew role  
+translates, receives from, produces for, boundary  
+does, related artifacts]
+density_score: 0.85
+related:
+  - safety-policy-builder
+  - bld_collaboration_compliance_framework
+  - bld_instruction_safety_policy
+  - kc_safety_policy
+  - bld_config_safety_policy
+---
+## Crew Role  
+Translates safety governance rules into actionable safety policies, ensuring alignment with organizational goals and risk contexts.  
+
+## Receives From  
+| Builder       | What                  | Format     |  
+|---------------|-----------------------|------------|  
+| safety_governance_owner | Governance rules      | JSON       |  
+| threat_modeler  | Risk assessment inputs | YAML       |  
+| policy_repository | Existing policies   | Markdown   |  
+
+## Produces For  
+| Builder       | What                  | Format     |  
+|---------------|-----------------------|------------|  
+| policy_repository | Safety policy documents | Markdown   |  
+| compliance_team   | Policy templates      | JSON       |  
+| audit_team    | Policy validation reports | CSV      |  
+
+## Boundary  
+Does NOT perform threat modeling (handled by threat_modeler) or map policies to regulations (handled by compliance_framework_builder).
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[safety-policy-builder]] | upstream | 0.38 |
+| [[bld_collaboration_compliance_framework]] | sibling | 0.28 |
+| [[bld_instruction_safety_policy]] | upstream | 0.27 |
+| [[kc_safety_policy]] | upstream | 0.27 |
+| [[bld_config_safety_policy]] | upstream | 0.26 |

@@ -1,0 +1,52 @@
+---
+kind: learning_record
+id: p10_lr_diff_strategy_builder
+pillar: P10
+llm_function: INJECT
+purpose: Learned patterns and pitfalls for diff_strategy construction
+quality: null
+title: "Learning Record Diff Strategy"
+version: "1.0.0"
+author: wave1_builder_gen
+tags: [diff_strategy, builder, learning_record]
+tldr: "Learned patterns and pitfalls for diff_strategy construction"
+domain: "diff_strategy construction"
+created: "2026-04-13"
+updated: "2026-04-13"
+8f: "F7_govern"
+keywords: [diff_strategy construction, learning record diff strategy, diff_strategy, builder, learning_record, observation
+developers, pattern
+decoupling, evidence
+reviewed, related artifacts, fuzzy matching]
+density_score: 0.85
+related:
+  - kc_diff_strategy
+  - diff-strategy-builder
+  - bld_output_template_diff_strategy
+  - bld_collaboration_diff_strategy
+  - bld_config_diff_strategy
+---
+## Observation
+Developers often introduce noise by conflating structural changes with content-only differences. Overly aggressive fuzzy matching frequently leads to incorrect patch applications in edge cases.
+
+## Pattern
+Decoupling the detection algorithm from the application logic ensures higher reliability. Implementing a strategy-based approach allows for switching between strict and lenient matching without altering the core engine.
+
+## Evidence
+Reviewed recent implementations of text-based and structural diffing modules.
+
+## Recommendations
+* Isolate the matching algorithm from the patch application logic.
+* Define explicit thresholds for fuzzy matching to prevent drift.
+* Standardize whitespace and line-ending handling within the strategy.
+* Avoid including parsing or formatting logic in the strategy builder.
+* Implement regression tests specifically for character-shift edge cases.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[kc_diff_strategy]] | upstream | 0.25 |
+| [[diff-strategy-builder]] | upstream | 0.21 |
+| [[bld_output_template_diff_strategy]] | upstream | 0.20 |
+| [[bld_collaboration_diff_strategy]] | downstream | 0.20 |
+| [[bld_config_diff_strategy]] | upstream | 0.20 |

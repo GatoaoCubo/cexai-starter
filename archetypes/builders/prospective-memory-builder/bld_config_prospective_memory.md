@@ -1,0 +1,96 @@
+---
+quality: null
+quality: null
+kind: config
+id: bld_config_prospective_memory
+pillar: P09
+llm_function: CONSTRAIN
+purpose: Naming, paths, size limits for prospective_memory
+effort: low
+max_turns: 15
+title: "Config Prospective Memory"
+version: "1.0.0"
+author: n03_builder
+tags: [prospective_memory, builder, config]
+tldr: "Naming, paths, size limits for prospective_memory production."
+domain: "prospective memory construction"
+created: "2026-04-17"
+updated: "2026-04-17"
+8f: "F1_constrain"
+keywords: [size limits for prospective_memory, prospective memory construction, config prospective memory, prospective_memory, builder, config, "p10_pm_{scope}.md", p10_pm_n07_quality_ops.md, prospective-memory-builder/, trigger_type]
+density_score: 0.90
+related:
+  - bld_config_working_memory
+  - bld_config_episodic_memory
+  - bld_config_memory_scope
+  - bld_config_pipeline_template
+  - bld_config_retriever_config
+---
+# Config: prospective_memory Production Rules
+
+## Naming Convention
+| Scope | Convention | Example |
+|-------|-----------|---------|
+| Artifact files | `p10_pm_{scope}.md` | `p10_pm_n07_quality_ops.md` |
+| Builder directory | kebab-case | `prospective-memory-builder/` |
+| Fields | snake_case | `trigger_type`, `action_payload`, `completion_policy` |
+| Store slug | snake_case | `n07_quality_ops`, `n01_research_followup` |
+
+## File Paths
+- Output: `N0x_{domain}/P10_memory/p10_pm_{scope}.md`
+- Compiled: `N0x_{domain}/P10_memory/compiled/p10_pm_{scope}.yaml`
+
+## Size Limits
+- Body: max 2048 bytes
+- Density: >= 0.80
+
+## Trigger Type Enum
+| Value | Mechanism |
+|-------|-----------|
+| time | datetime or cron expression |
+| event | Signal file name or event identifier |
+| condition | State expression that evaluates true/false |
+
+## Completion Policy
+| Value | Meaning |
+|-------|---------|
+| mark_done | Execute once, remove from store |
+| re_schedule | Execute, then reschedule (recurring) |
+
+## Execution Mechanism
+| Value | CEX Tool |
+|-------|---------|
+| schedule_signal | Claude Code ScheduleWakeup |
+| polling | cex_signal_watch.py |
+| wake_notification | session-start boot check |
+
+## Configuration Checklist
+
+- Verify all required fields are present in frontmatter before saving
+- Validate config values against schema constraints (type, range, enum)
+- Cross-reference with related configs to avoid contradictions
+- Test config loading in target runtime before committing
+
+## Validation
+
+```yaml
+# Required config validation
+fields_present: true
+types_valid: true
+ranges_checked: true
+cross_refs_verified: true
+```
+
+```bash
+python _tools/cex_compile.py {FILE}
+python _tools/cex_doctor.py --scope {BUILDER}
+```
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_config_working_memory]] | sibling | 0.43 |
+| [[bld_config_episodic_memory]] | sibling | 0.42 |
+| [[bld_config_memory_scope]] | sibling | 0.34 |
+| [[bld_config_pipeline_template]] | sibling | 0.32 |
+| [[bld_config_retriever_config]] | sibling | 0.31 |

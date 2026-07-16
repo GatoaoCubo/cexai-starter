@@ -1,0 +1,53 @@
+---
+kind: tools
+id: bld_tools_model_registry
+pillar: P04
+llm_function: CALL
+purpose: Tools available for model_registry production
+quality: null
+title: "Tools Model Registry"
+version: "1.0.0"
+author: wave1_builder_gen
+tags: [model_registry, builder, tools]
+tldr: "Tools available for model_registry production"
+domain: "model_registry construction"
+created: "2026-04-13"
+updated: "2026-04-13"
+8f: "F5_call"
+keywords: [model_registry construction, tools model registry, model_registry, builder, tools, external references, registry concept, key fields, lflow model registry, maker model registry]
+density_score: 0.85
+related:
+  - bld_knowledge_card_model_registry
+  - kc_model_registry
+  - model-registry-builder
+  - p10_lr_model_registry_builder
+  - bld_collaboration_model_registry
+---
+## CEX Tools (real -- in _tools/)
+
+| Tool | Purpose | When |
+| :--- | :--- | :--- |
+| cex_compile.py | Compiles artifact .md to .yaml, validates frontmatter | After saving registry entry |
+| cex_score.py | Scores artifact quality (D1-D5, 5-dimension) | After compile, before publish |
+| cex_retriever.py | TF-IDF similarity search across 2184+ artifacts | Find similar registry entries |
+| cex_doctor.py | Health check: frontmatter, schema, pillar placement | Maintenance, CI gate |
+| cex_hygiene.py | Artifact CRUD with 8 hygiene rules enforced | Cleanup, deduplication |
+
+## External References (industry standards, not CEX tools)
+
+| Platform | Registry Concept | Key Fields |
+| :--- | :--- | :--- |
+| MLflow Model Registry | registered_model, model_version, stage, alias | name, version, stage, tags |
+| W&B Artifacts | artifact, type, version, aliases (latest/best) | name, type, version, metadata |
+| SageMaker Model Registry | model_package, model_package_group, approval_status | ModelPackageGroupName, ModelApprovalStatus |
+| Vertex AI Model Registry | model resource, version, evaluation metrics | displayName, versionId, deployedModels |
+| HuggingFace Hub | model_id, safetensors, GGUF variants, model card | modelId, sha, tags, cardData |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_knowledge_card_model_registry]] | upstream | 0.45 |
+| [[kc_model_registry]] | upstream | 0.39 |
+| [[model-registry-builder]] | downstream | 0.37 |
+| [[p10_lr_model_registry_builder]] | downstream | 0.33 |
+| [[bld_collaboration_model_registry]] | downstream | 0.32 |

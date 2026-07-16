@@ -1,0 +1,71 @@
+---
+kind: collaboration
+id: bld_collaboration_handoff
+pillar: P12
+llm_function: COLLABORATE
+purpose: How handoff-builder works in crews with other builders
+pattern: each builder must know its ROLE in a team, what it RECEIVES and PRODUCES
+quality: null
+title: "Collaboration Handoff"
+version: "1.0.0"
+author: n03_builder
+tags: [handoff, builder, examples]
+tldr: "Golden and anti-examples for handoff construction, demonstrating ideal structure and common pitfalls."
+domain: "handoff construction"
+created: "2026-04-07"
+updated: "2026-04-07"
+8f: "F8_collaborate"
+keywords: [handoff construction, collaboration handoff, handoff, builder, examples, "### crew: task delegation", my role, crew compositions, full dispatch setup, task delegation]
+density_score: 0.90
+related:
+  - bld_collaboration_dispatch_rule
+  - bld_collaboration_handoff_protocol
+  - handoff-builder
+  - bld_architecture_handoff
+  - p11_qg_handoff
+---
+# Collaboration: handoff-builder
+## My Role in Crews
+I am a SPECIALIST. I answer ONE question: "what should the target do, with what context, and how should it commit?"
+I do not define routing rules. I do not model dependencies.
+I package delegation instructions so remote executors have everything needed to complete a task.
+## Crew Compositions
+### Crew: "Full Dispatch Setup"
+```
+  1. dispatch-rule-builder -> "routing rules (who receives)"
+  2. dag-builder -> "execution order (when to execute)"
+  3. handoff-builder -> "delegation instructions (what to do)"
+```
+### Crew: "Task Delegation"
+```
+  1. context-doc-builder -> "domain context for the executor"
+  2. instruction-builder -> "step-by-step recipe"
+  3. handoff-builder -> "packaged delegation with scope fence and commit rules"
+```
+## Handoff Protocol
+### I Receive
+- seeds: target executor, task description, scope fence (allowed/forbidden paths)
+- optional: context documents, seed keywords, commit template, quality threshold
+### I Produce
+- handoff artifact (.md with context, tasks, scope fence, commit, signal sections)
+- committed to: `cex/P12/examples/p12_handoff_{mission}_{target}.md`
+### I Signal
+- signal: complete (with quality score from QUALITY_GATES)
+- if quality < 8.0: signal retry with failure reasons
+## Builders I Depend On
+- dispatch-rule-builder: provides routing decision that determines handoff target
+- context-doc-builder: provides domain context embedded in the handoff
+## Builders That Depend On Me
+| Builder | Why |
+|---------|-----|
+| dag-builder | Models handoff dependencies in execution graphs |
+| e2e-eval-builder | Tests that handoff execution produces correct results |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_collaboration_dispatch_rule]] | sibling | 0.48 |
+| [[bld_collaboration_handoff_protocol]] | sibling | 0.47 |
+| [[handoff-builder]] | related | 0.45 |
+| [[bld_architecture_handoff]] | upstream | 0.38 |
+| [[p11_qg_handoff]] | upstream | 0.37 |

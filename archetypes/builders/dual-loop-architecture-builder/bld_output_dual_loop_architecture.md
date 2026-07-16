@@ -1,0 +1,84 @@
+---
+kind: output_template
+id: bld_output_template_dual_loop_architecture
+pillar: P05
+llm_function: PRODUCE
+purpose: Template with vars for dual_loop_architecture production
+quality: null
+title: "Output Template Dual Loop Architecture"
+version: "1.0.0"
+author: wave1_builder_gen
+tags:
+  - "dual_loop_architecture"
+  - "builder"
+  - "output_template"
+tldr: "Template with vars for dual_loop_architecture production"
+domain: "dual_loop_architecture construction"
+created: "2026-04-13"
+updated: "2026-04-13"
+8f: "F6_produce"
+keywords:
+  - "dual_loop_architecture construction"
+  - "dual_loop_architecture"
+  - "builder"
+  - "output_template"
+  - "## loop 1:"
+  - "## loop 2:"
+  - "## integration"
+  - "## use cases"
+  - "## validation"
+  - "## notes"
+density_score: 0.85
+related:
+  - bld_collaboration_dual_loop_architecture
+  - p10_lr_dual_loop_architecture_builder
+  - bld_instruction_dual_loop_architecture
+  - dual-loop-architecture-builder
+  - kc_dual_loop_architecture
+---
+```yaml
+title: {{title}}
+description: {{description}}
+kind: dual_loop_architecture
+pillar: P08
+loops:
+  - name: {{loop1_name}}
+    purpose: {{loop1_purpose}}
+  - name: {{loop2_name}}
+    purpose: {{loop2_purpose}}
+integration: {{integration_details}}
+use_cases: {{use_cases}}
+validation: {{validation_criteria}}
+```
+
+## Overview
+
+This ISO applies to the dual loop pattern, coordinating an outer orchestrator with one or more inner worker loops.
+`{{placeholder_content}}`
+
+## Loop 1: `{{loop1_name}}`
+`{{placeholder_content}}`
+
+## Loop 2: `{{loop2_name}}`
+`{{placeholder_content}}`
+
+## Integration
+`{{placeholder_content}}`
+
+## Use Cases
+`{{placeholder_content}}`
+
+## Validation
+`{{placeholder_content}}`
+
+## Notes
+`{{placeholder_content}}`
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.38 |
+| [[p10_lr_dual_loop_architecture_builder]] | downstream | 0.35 |
+| [[bld_instruction_dual_loop_architecture]] | upstream | 0.33 |
+| [[dual-loop-architecture-builder]] | downstream | 0.33 |
+| [[kc_dual_loop_architecture]] | upstream | 0.32 |

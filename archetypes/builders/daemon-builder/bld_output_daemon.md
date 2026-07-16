@@ -1,0 +1,106 @@
+---
+kind: output_template
+id: bld_output_template_daemon
+pillar: P05
+llm_function: PRODUCE
+purpose: Template with {{vars}} that the LLM fills to produce a daemon artifact
+pattern: every field here exists in SCHEMA.md — template derives, never invents
+quality: null
+title: "Output Template Daemon"
+version: "1.0.0"
+author: n03_builder
+tags: [daemon, builder, examples]
+tldr: "Golden and anti-examples for daemon construction, demonstrating ideal structure and common pitfalls."
+domain: "daemon construction"
+created: "2026-04-07"
+updated: "2026-04-07"
+8f: "F6_produce"
+keywords: [template with, daemon construction, output template daemon, daemon, builder, examples, ## overview, ## lifecycle
+schedule:, startup:, restart:]
+density_score: 0.90
+related:
+  - daemon-builder
+  - bld_schema_daemon
+  - bld_architecture_daemon
+  - p11_qg_daemon
+  - n00_daemon_manifest
+---
+# Output Template: daemon
+```yaml
+id: p04_daemon_{{name_slug}}
+kind: daemon
+pillar: P04
+version: "1.0.0"
+created: "{{YYYY-MM-DD}}"
+updated: "{{YYYY-MM-DD}}"
+author: "{{who_produced}}"
+name: "{{human_readable_daemon_name}}"
+schedule: "{{continuous_or_cron_or_interval}}"
+restart_policy: {{always|on_failure|never}}
+signal_handling: "{{sigterm_behavior_summary}}"
+quality: null
+tags: [daemon, {{tag_2}}, {{tag_3}}]
+tldr: "{{dense_summary_max_160ch}}"
+description: "{{what_daemon_does_max_200ch}}"
+health_check: "{{health_check_strategy}}"
+pid_file: "{{pid_file_path}}"
+resource_limits: "{{cpu_memory_fd_limits}}"
+monitoring: "{{metrics_and_alerting_summary}}"
+logging: {{structured|plaintext|syslog}}
+graceful_shutdown: "{{shutdown_procedure}}"
+max_restarts: "{{N_in_window}}"
+```
+## Overview
+`{{what_daemon_does_and_why_background_1_to_2_sentences}}`
+`{{who_depends_on_it_and_what_triggers_it}}`
+## Lifecycle
+Schedule: `{{schedule_details}}`
+Startup: `{{startup_sequence}}`
+Restart: `{{restart_policy}}` — `{{restart_behavior_details}}`
+Shutdown: `{{graceful_shutdown_procedure}}`
+## Signal Handling
+| Signal | Response |
+|--------|----------|
+| SIGTERM | `{{sigterm_behavior}}` |
+| SIGINT | `{{sigint_behavior}}` |
+| SIGHUP | `{{sighup_behavior}}` |
+| `{{costm_signal}}` | `{{costm_behavior}}` |
+## Monitoring
+Health: `{{health_check_details}}`
+Metrics: `{{metrics_collected}}`
+Alerting: `{{alert_conditions}}`
+Logging: `{{log_format_and_rotation}}`
+## References
+1. `{{reference_1}}`
+2. `{{reference_2}}`
+
+## Template Standards
+
+1. Define all required sections for this output kind
+2. Include frontmatter schema with mandatory fields
+3. Provide structural markers for post-validation
+4. Specify format constraints for markdown YAML JSON
+5. Reference the validation_schema for automated checks
+
+## Properties
+
+| Property | Value |
+|----------|-------|
+| Kind | `output_template` |
+| Pillar | P05 |
+| Domain | daemon construction |
+| Pipeline | 8F (F1-F8) |
+| Scorer | cex_score.py |
+| Compiler | cex_compile.py |
+| Retriever | cex_retriever.py |
+| Quality target | 9.0+ |
+| Density target | 0.85+ |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[daemon-builder]] | upstream | 0.42 |
+| [[bld_schema_daemon]] | downstream | 0.41 |
+| [[bld_architecture_daemon]] | downstream | 0.39 |
+| [[p11_qg_daemon]] | downstream | 0.38 |
+| [[n00_daemon_manifest]] | upstream | 0.36 |

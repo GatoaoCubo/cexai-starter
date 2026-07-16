@@ -6,6 +6,25 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## starter v1.1.0 (2026-07-16)
+
+The starter is now a full structural mirror of the CEXAI catalog -- the complete
+factory floor, still unfilled by design.
+
+### Added
+
+- **Full kind registry**: 318 kinds in `.cex/kinds_meta.json` (was 125).
+- **318 builders** in `archetypes/builders/` (was 119), 12 ISO files each, and
+  **318 builder sub-agents** in `.claude/agents/`.
+- **All 12 pillar folders in every nucleus** (was 3-4): un-built pillars carry a
+  README naming their purpose and example kinds; they fill as your builds write.
+- **2 commands** (`/monitor`, `/spec`) whose dependencies fully ship in this tree.
+
+### Changed
+
+- `HOME.md`, `README.md`, `INDEX.md`, `QUICKSTART.md`, `CLAUDE.md` re-counted
+  against the real tree and the Anatomy narrative updated to the complete mirror.
+
 ## starter v1.0.0 (2026-07-15)
 
 First public version of this fabricated starter tenant repository.

@@ -1,0 +1,49 @@
+---
+kind: learning_record
+id: p10_lr_sandbox_config_builder
+pillar: P10
+llm_function: INJECT
+purpose: Learned patterns and pitfalls for sandbox_config construction
+quality: null
+title: "Learning Record Sandbox Config"
+version: "1.0.0"
+author: wave1_builder_gen
+tags: [sandbox_config, builder, learning_record]
+tldr: "Learned patterns and pitfalls for sandbox_config construction"
+domain: "sandbox_config construction"
+created: "2026-04-13"
+updated: "2026-04-13"
+8f: "F7_govern"
+keywords: [sandbox_config construction, learning record sandbox config, sandbox_config, builder, learning_record, network: isolated, filesystem: read-only, seccomp, secure_sandbox_template.yaml, isolation_policy_v2.json]
+density_score: 0.85
+related:
+  - sandbox-config-builder
+  - playground-config-builder
+  - p10_lr_sandbox_spec_builder
+  - p10_lr_code_executor_builder
+  - sandbox_config_n05
+---
+## Observation  
+Common issues include incomplete isolation boundaries (e.g., network or filesystem leaks) and overly permissive resource limits, leading to security risks or performance instability. Misaligned config layers (e.g., mixing isolation policies with execution logic) often complicate debugging.  
+
+## Pattern  
+Effective configs use layered, declarative structures with explicit isolation scopes (e.g., `network: isolated`, `filesystem: read-only`). Modular components (e.g., reusable `seccomp` profiles) reduce duplication and improve maintainability.  
+
+## Evidence  
+Reviewed `secure_sandbox_template.yaml` and `isolation_policy_v2.json` showed consistent use of granular resource constraints and policy separation.  
+
+## Recommendations  
+- Define isolation boundaries explicitly, avoiding implicit defaults.  
+- Use versioned policy modules for common isolation rules (e.g., `seccomp`, `cgroup`).  
+- Validate configs against a sandbox-specific schema (e.g., `sandbox_config_v3.json`).  
+- Document assumptions about host environment compatibility.  
+- Include fallback mechanisms for unsupported isolation features.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[sandbox-config-builder]] | upstream | 0.35 |
+| [[playground-config-builder]] | upstream | 0.29 |
+| [[p10_lr_sandbox_spec_builder]] | sibling | 0.28 |
+| [[p10_lr_code_executor_builder]] | sibling | 0.28 |
+| [[sandbox_config_n05]] | upstream | 0.27 |

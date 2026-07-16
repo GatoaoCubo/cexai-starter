@@ -1,0 +1,60 @@
+---
+kind: tools
+id: bld_tools_bias_audit
+pillar: P04
+llm_function: CALL
+purpose: Tools available for bias_audit production
+quality: null
+title: "Tools Bias Audit"
+version: "1.0.0"
+author: wave1_builder_gen
+tags: [bias_audit, builder, tools]
+tldr: "Tools available for bias_audit production"
+domain: "bias_audit construction"
+created: "2026-04-13"
+updated: "2026-04-13"
+8f: "F5_call"
+keywords: [bias_audit construction, tools bias audit, bias_audit, builder, tools, production tools
+
+this, validation tools, external references, flow data validation, related artifacts]
+density_score: 0.85
+related:
+  - bld_architecture_bias_audit
+  - bld_collaboration_bias_audit
+  - bld_instruction_bias_audit
+  - kc_bias_audit
+  - bias-audit-builder
+---
+## Production Tools
+
+This ISO drives a bias audit: measuring fairness across demographic slices.
+| Tool | Purpose | When |
+|------|---------|------|
+| cex_compile.py | Aggregates audit data from multiple sources | Pre-audit setup |
+| cex_score.py | Quantifies bias metrics using statistical models | During audit execution |
+| cex_retriever.py | Fetches training/test data for analysis | Pre-audit data collection |
+| cex_doctor.py | Diagnoses inconsistent or missing audit inputs | Pre-audit validation |
+| cex_retriever.py | Identifies biased patterns in model outputs | During audit execution |
+| cex_doctor.py | Generates bias audit summaries and visualizations | Post-audit completion |
+
+## Validation Tools
+| Tool | Purpose | When |
+|------|---------|------|
+| val_checker.py | Validates audit tool inputs/outputs for consistency | Pre/post audit |
+| val_crosschecker.py | Cross-references results with external benchmarks | Post-audit |
+| val_profiler.py | Profiles data distribution for fairness gaps | Pre-audit |
+| val_validator.py | Ensures compliance with regulatory fairness standards | Post-audit |
+
+## External References
+- Fairlearn (Microsoft): Framework for mitigating algorithmic bias
+- IBM AI Fairness 360: Open-source toolkit for bias detection
+- TensorFlow Data Validation: For data quality and bias analysis
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_architecture_bias_audit]] | downstream | 0.43 |
+| [[bld_collaboration_bias_audit]] | downstream | 0.41 |
+| [[bld_instruction_bias_audit]] | upstream | 0.39 |
+| [[kc_bias_audit]] | upstream | 0.35 |
+| [[bias-audit-builder]] | downstream | 0.35 |

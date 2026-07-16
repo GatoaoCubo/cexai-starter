@@ -126,7 +126,7 @@ boot/cex.ps1          # Windows (PowerShell)
 ```
 
 This launches Claude Code pre-loaded as this tenant's N07 orchestrator, with `CLAUDE.md`,
-the brand, and all 125 kinds already in context. Needs the `claude` CLI on `PATH`. From
+the brand, and all 318 kinds already in context. Needs the `claude` CLI on `PATH`. From
 inside that session (or any Claude Code session opened at this repo's root) you get six
 commands:
 

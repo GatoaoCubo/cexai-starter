@@ -1,0 +1,90 @@
+---
+kind: config
+id: bld_config_retrieval_evaluator
+pillar: P09
+llm_function: CONSTRAIN
+purpose: Naming conventions, file paths, size limits, operational constraints
+pattern: CONFIG restricts SCHEMA, never contradicts it
+quality: null
+title: "Retrieval Evaluator Builder - Config ISO"
+version: "1.0.0"
+author: n03_builder
+tags: [retrieval_evaluator, builder, config]
+tldr: "Production config for retrieval evaluator: naming, paths, size limits, and operational constraints."
+domain: "retrieval evaluation"
+created: "2026-04-23"
+updated: "2026-04-23"
+8f: "F1_constrain"
+keywords: [naming conventions, file paths, size limits, operational constraints, retrieval evaluation, and operational constraints, retrieval_evaluator, builder, config, production rules]
+density_score: 0.85
+related:
+  - bld_schema_retrieval_evaluator
+  - bld_output_retrieval_evaluator
+  - bld_config_ab_test_config
+  - bld_config_query_optimizer
+  - bld_config_search_strategy
+---
+# Config: retrieval_evaluator Production Rules
+## Naming Convention
+| Scope | Convention | Example |
+|-------|-----------|---------|
+| Artifact files | p07_re_{evaluator_slug}.md | p07_re_rag_retrieval_v1.md |
+| Builder directory | kebab-case | retrieval-evaluator-builder/ |
+| Frontmatter fields | snake_case | primary_metric, k_values |
+Rule: id MUST equal filename stem.
+## File Paths
+1. Output: P07_evals/examples/p07_re_{evaluator_slug}.md
+2. Compiled: P07_evals/compiled/p07_re_{evaluator_slug}.yaml
+## Size Limits
+1. Body: max 2048 bytes
+2. Total: ~3000 bytes including frontmatter
+3. Density: >= 0.85
+## Metric Enum
+| Metric | Use Case | Position-Aware |
+|--------|----------|----------------|
+| ndcg | Graded relevance, ranked list | Yes |
+| mrr | Single-answer, first hit | Yes |
+| map | Binary relevance, full list | Yes |
+| precision | Top-k accuracy | Partially |
+| recall | Coverage of relevant docs | No |
+## Standard k Values
+| Use Case | Recommended k Values |
+|----------|---------------------|
+| QA / navigational | [1, 3, 5] |
+| Document search | [5, 10, 20] |
+| Recommendation | [10, 20, 50] |
+## Domain-Specific Constraints
+| Constraint | Value |
+|-----------|-------|
+| Boundary | IR-specific retrieval quality evaluation suite |
+| Dependencies | eval_metric, benchmark, retriever_config |
+| Primary 8F function | F3_inject |
+| Max artifact size | 5120 bytes |
+## Edge Cases
+| Scenario | Handling |
+|----------|---------|
+| Missing required frontmatter field | Fail H01 gate; return to F6 |
+| ID collision with existing artifact | Append version suffix (_v2) |
+| Body exceeds 5120 bytes | Trim prose sections; preserve tables |
+| Dependency eval_metric not found | Warn; proceed with defaults |
+## Properties
+| Property | Value |
+|----------|-------|
+| Kind | `config` |
+| Pillar | P09 |
+| Domain | retrieval evaluator construction |
+| Pipeline | 8F (F1-F8) |
+| Scorer | cex_score.py |
+| Compiler | cex_compile.py |
+| Retriever | cex_retriever.py |
+| Quality target | 9.0+ |
+| Density target | 0.85+ |
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_schema_retrieval_evaluator]] | upstream | 0.39 |
+| [[bld_output_retrieval_evaluator]] | upstream | 0.37 |
+| [[bld_config_ab_test_config]] | sibling | 0.33 |
+| [[bld_config_query_optimizer]] | sibling | 0.33 |
+| [[bld_config_search_strategy]] | sibling | 0.32 |

@@ -1,0 +1,52 @@
+---
+kind: memory
+id: p10_mem_case_study_builder
+pillar: P10
+llm_function: INJECT
+purpose: Learned patterns and pitfalls for case_study construction
+quality: null
+title: "Memory Case Study"
+version: "1.0.0"
+author: wave1_builder_gen_v2
+tags: [case_study, builder, memory]
+tldr: "Learned patterns and pitfalls for case_study construction"
+domain: "case_study construction"
+created: "2026-04-14"
+updated: "2026-04-14"
+8f: "F3_inject"
+keywords: [case_study construction, memory case study, case_study, builder, memory, observation
+common, pattern
+strong, evidence
+reviewed, related artifacts, narrative flow]
+density_score: 0.85
+related:
+  - case-study-builder
+  - p05_qg_case_study
+  - bld_knowledge_card_case_study
+  - bld_collaboration_client
+  - p10_mem_competitive_matrix_builder
+---
+## Observation
+Common issues include vague challenge definitions, overly technical solutions, and outcomes that lack measurable impact. Quotes often feel generic or disconnected from the narrative flow.
+
+## Pattern
+Strong case studies use a clear challenge-solution-outcome structure, anchor claims with specific metrics, and integrate quotes that reflect client sentiment without being promotional.
+
+## Evidence
+Reviewed artifacts with 30% higher engagement used client-specific metrics (e.g., "reduced costs by 25%") and quotes that directly tied to the solution’s impact.
+
+## Recommendations
+- Define the challenge with context and pain points (avoid jargon).
+- Frame the solution as a client-centric action, not a feature list.
+- Quantify outcomes with pre/post metrics where possible.
+- Use quotes that highlight emotional or practical benefits, not just approval.
+- Ensure each section transitions logically to maintain narrative flow.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[case-study-builder]] | upstream | 0.41 |
+| [[p05_qg_case_study]] | downstream | 0.25 |
+| [[bld_knowledge_card_case_study]] | upstream | 0.23 |
+| [[bld_collaboration_client]] | downstream | 0.23 |
+| [[p10_mem_competitive_matrix_builder]] | sibling | 0.21 |

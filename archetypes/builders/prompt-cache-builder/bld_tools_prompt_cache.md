@@ -1,0 +1,72 @@
+---
+kind: tools
+id: bld_tools_prompt_cache
+pillar: P04
+llm_function: CALL
+purpose: Tools and APIs available for prompt_cache production
+quality: null
+title: "Tools Prompt Cache"
+version: "1.0.0"
+author: n03_builder
+tags: [prompt_cache, builder, examples]
+tldr: "Golden and anti-examples for prompt cache construction, demonstrating ideal structure and common pitfalls."
+domain: "prompt cache construction"
+created: "2026-04-07"
+updated: "2026-04-07"
+8f: "F5_call"
+keywords: [prompt cache construction, tools prompt cache, prompt_cache, builder, examples, production tools, data sources, tool permissions, pipeline integration, related artifacts]
+density_score: 0.90
+related:
+  - bld_tools_multi_modal_config
+  - bld_tools_context_window_config
+  - bld_tools_citation
+  - bld_tools_retriever_config
+  - bld_tools_prompt_version
+---
+
+# Tools: prompt-cache-builder
+## Production Tools
+| Tool | Purpose | When | Status |
+|------|---------|------|--------|
+| cex_compile.py | Compile .md to .yaml | Phase 3 | ACTIVE |
+| cex_retriever.py | Search existing cache configs | Phase 1 | ACTIVE |
+## Data Sources
+| Source | Path | Data |
+|--------|------|------|
+| CEX Schema | P10_memory/_schema.yaml | Cache config field definitions |
+| Kind KC | P01_knowledge/library/kind/kc_prompt_cache.md | Deep knowledge |
+| Provider docs | External | Anthropic/OpenAI caching specifics |
+## Tool Permissions
+| Category | Tools | Status |
+|----------|-------|--------|
+| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
+| DENIED | (none) | — |
+
+## Pipeline Integration
+
+1. Created via 8F pipeline from F1-Focus through F8-Furnish
+2. Scored by cex_score across three structural layers
+3. Compiled by cex_compile for structural validation
+4. Retrieved by cex_retriever for context injection
+5. Evolved by cex_evolve when quality regresses below target
+
+## Metadata
+
+```yaml
+id: bld_tools_prompt_cache
+pipeline: 8F
+scoring: hybrid_3_layer
+```
+
+```bash
+python _tools/cex_score.py --apply bld-tools-prompt-cache.md
+```
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_tools_multi_modal_config]] | sibling | 0.56 |
+| [[bld_tools_context_window_config]] | sibling | 0.54 |
+| [[bld_tools_citation]] | sibling | 0.53 |
+| [[bld_tools_retriever_config]] | sibling | 0.46 |
+| [[bld_tools_prompt_version]] | sibling | 0.46 |

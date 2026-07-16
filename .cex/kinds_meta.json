@@ -1,4 +1,48 @@
 {
+  "ab_test_config": {
+    "boundary": "A/B test spec. NOT feature_flag (toggle) nor experiment_config (ML training).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "A/B test experiment configuration for conversion optimization",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p11_abt_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "feature_flag",
+      "eval_metric"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "action_paradigm": {
+    "boundary": "Action execution paradigm. NOT agent_computer_interface (specific protocol) nor cli_tool (CLI wrapper).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "How agents execute actions in environments",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p04_act_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "function_def",
+      "skill"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
   "action_prompt": {
     "boundary": "Specific task. The LLM EXECUTES this. NOT prompt_template (reusable template) nor system_prompt (identity).",
     "core": true,
@@ -107,6 +151,71 @@
       ]
     }
   },
+  "agent_computer_interface": {
+    "boundary": "Agent-computer interface. NOT browser_tool (web automation) nor computer_use (screen control).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "GUI/terminal interaction protocol for agents",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 5120,
+    "naming": "p08_aci_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "agent_card",
+      "computer_use"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F2_become"
+  },
+  "agent_grounding_record": {
+    "boundary": "Per-inference grounding record. NOT trace_config (raw OTel spans) nor model_card (training provenance).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Per-inference provenance record: tool calls, RAG chunks, model signature, output hash, OTel/C2PA traceability",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 4096,
+    "naming": "p10_gr_{{inference_id}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "OTel GenAI semconv v1.37 + C2PA v2.3",
+    "depends_on": [
+      "entity_memory",
+      "knowledge_index"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F2_become"
+  },
+  "agent_name_service_record": {
+    "boundary": "Agent discovery record (DNS-like). NOT agent_card (capabilities) nor transport_config (protocol only).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "IETF ANS + CNCF AgentDNS registry record for agent discovery: name, endpoint, PKI cert, protocol adapters",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 3072,
+    "naming": "p04_ans_{{agent_name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "IETF draft-narajala-ans-00 + CNCF AgentDNS",
+    "depends_on": [
+      "agent_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F2_become"
+  },
   "agent_package": {
     "boundary": "Distributable agent package in ISO format. NOT agent (agent spec) -- agent_package is the portable bundle.",
     "core": true,
@@ -151,6 +260,145 @@
     "requires_live_tools": false,
     "primary_8f": "F2_become"
   },
+  "agentic_rag": {
+    "boundary": "Agentic RAG pattern. NOT retriever (simple retrieval) nor agent (agent definition).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Agent-driven retrieval augmented generation pattern",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 5120,
+    "naming": "p01_ar_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "rag_source",
+      "retriever_config",
+      "embedding_config",
+      "chunk_strategy"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
+  "agents_md": {
+    "boundary": "AGENTS.md standardized manifest. NOT CLAUDE.md (vendor-specific) nor README.md (human docs) nor .cursorrules (editor-specific).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "AAIF/OpenAI AGENTS.md project-root manifest: setup/test/lint commands, PR format, deploy rules, coding-agent conventions",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 3072,
+    "naming": "p02_am_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P02",
+    "spec_version": "AAIF 2025-12 / 60K+ project adoption",
+    "status": "stable",
+    "upstream_source": "agents.md",
+    "depends_on": [
+      "agent",
+      "agent_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F2_become"
+  },
+  "aggregate_root": {
+    "boundary": "DDD aggregate root. NOT interface (contract definition) nor input_schema (data validation). Evans Aggregate Root.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "DDD entry point entity that enforces domain invariants and controls access to its aggregate cluster",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p06_ar_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P06",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "Evans DDD 2003",
+    "depends_on": [
+      "type_def",
+      "input_schema",
+      "interface",
+      "value_object",
+      "process_manager",
+      "domain_event"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
+  "ai_rmf_profile": {
+    "boundary": "NIST AI-RMF vertical profile. NOT compliance_framework (broad regulatory mapping) nor threat_model (risk assessment). Structured per AI 600-1 GenAI-profile with action-IDs.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "NIST AI RMF profile artifact -- 4 functions (GOVERN/MAP/MEASURE/MANAGE), 13 GenAI risk categories, action-ID mappings per risk. AI 600-1 compliant.",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p11_rmf_{{profile}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": "600-1",
+    "status": "stable",
+    "upstream_source": "NIST AI 600-1 (July 2024)",
+    "depends_on": [
+      "safety_policy",
+      "guardrail"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "alert_rule": {
+    "boundary": "Monitoring trigger. NOT guardrail (LLM behavior constraint) nor quality_gate (artifact scoring). Industry: Prometheus alerting rule.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Observable threshold condition that triggers a notification or automated response",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p09_alr_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "trace_config",
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "analyst_briefing": {
+    "boundary": "Analyst briefing. NOT pitch_deck (sales) nor case_study (single ref).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Gartner/Forrester/IDC analyst briefing deck with positioning, proof points, customer wins",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p05_ab_{{name}}.md",
+    "nucleus": "N01",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "scoring_rubric"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason",
+    "f7_enforce": true
+  },
   "api_client": {
     "boundary": "Typed unidirectional client. NOT db_connector nor mcp_server.",
     "core": false,
@@ -173,6 +421,114 @@
     "requires_live_tools": false,
     "primary_8f": "F5_call"
   },
+  "api_reference": {
+    "boundary": "API docs. NOT schema (internal) nor sdk_example (code-only).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "API reference doc with endpoints, params, responses, auth, examples",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 8192,
+    "naming": "p06_ar_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P06",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "api_client",
+      "input_schema"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "app_directory_entry": {
+    "boundary": "App directory entry. NOT marketplace_app_manifest (machine spec) nor partner_listing (sales).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "App directory entry for FREE-tier discovery: tagline, screenshots, install steps, demo link",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 4096,
+    "naming": "p05_ade_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "agent_card",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "approval_request": {
+    "boundary": "A runtime human-approval REQUEST INSTANCE emitted when a HITL-tagged operation is reached; NOT hitl_config (the approval POLICY/tagging) nor permission (a capability grant).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Human-approval request instance: gated operation, requester, expiry, approve/deny/timeout status",
+    "last_reviewed": "2026-05-26",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p11_ar_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "hitl_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "audio_tool": {
+    "boundary": "Processes audio input/output. NOT vision_tool (visual) nor notifier (message delivery).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Speech-to-text, text-to-speech, audio analysis",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 2048,
+    "naming": "p04_audio_{{capability}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "toolkit"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "audit_log": {
+    "boundary": "Audit log spec. NOT trace_config (observability) nor regression_check (quality).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Immutable audit log configuration for SOC2 Type II compliance",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p11_al_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config",
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
   "axiom": {
     "boundary": "Immutable fundamental rule. NOT law (P08, adjustable operational) nor instruction (P03, flexible).",
     "core": true,
@@ -193,6 +549,116 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F4_reason"
+  },
+  "backpressure_policy": {
+    "boundary": "Downstream overwhelm handling. NOT rate_limit_config (inbound throttle) nor circuit_breaker (dependency failure). Reactive Streams backpressure.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Policy defining how a system responds when downstream consumers cannot keep up with upstream producers",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p09_bp_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "rate_limit_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "batch_config": {
+    "boundary": "API-level async batch job config. NOT a schedule (cron-based) nor a workflow (multi-step). This is a single bulk request.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Async batch processing config for bulk API operations (OpenAI Batch, Anthropic Batches)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 2048,
+    "naming": "p09_bc_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "benchmark": {
+    "boundary": "Quantitative performance measurement. NOT eval (does not test correctness) nor scoring_rubric (does not define criteria).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Performance measurement (latency, cost, quality)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p07_bm_{{metric}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_dataset",
+      "scoring_rubric",
+      "eval_metric"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "benchmark_suite": {
+    "boundary": "Benchmark suite. NOT benchmark (single benchmark) nor eval_framework (evaluation tooling).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Composite benchmark definition with multiple tasks",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p07_bs_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "benchmark",
+      "eval_dataset",
+      "scoring_rubric"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "bias_audit": {
+    "boundary": "Fairness evaluation. NOT benchmark (general perf) nor eval_metric (single metric def).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Fairness evaluation methodology and results",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p07_ba_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_dataset",
+      "scoring_rubric"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
   },
   "boot_config": {
     "boundary": "Bootstrap per provider (claude, cursor, codex). NOT env_config (P09, generic variables) nor spawn_config (P12, agent_groups).",
@@ -215,6 +681,28 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F2_become"
+  },
+  "bounded_context": {
+    "boundary": "DDD boundary definition. NOT component_map (deployment structure) nor namespace (code boundary). Evans Bounded Context.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Explicit boundary within which a domain model applies, with its own vocabulary and rules",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p08_bc_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "Evans DDD 2003",
+    "depends_on": [
+      "domain_vocabulary",
+      "context_map"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
   },
   "brandbook": {
     "boundary": "Complete brand book -- identity+persona+voice+visual+messaging+do/donts; NOT brand_config (a single platform identity record) nor design_system (tokens only without persona or messaging).",
@@ -261,6 +749,73 @@
     "requires_live_tools": true,
     "primary_8f": "F5_call"
   },
+  "bugloop": {
+    "boundary": "Automatic detect>fix>verify cycle. NOT unit_eval (P07, manual test) nor optimizer (continuous improvement, not correction).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Automatic correction loop (detect > fix > verify)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p11_bl_{{scope}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "regression_check",
+      "quality_gate"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "c2pa_manifest": {
+    "boundary": "C2PA 2.3 manifest with JUMBF/COSE structure. NOT camera capture manifest, document signing, or W3C VC agent identity.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "C2PA 2.3 content credential for AI-generated media: claim, assertions, ingredient, signature, AI-ML generator attribution",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p10_cm_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": "2.3",
+    "status": "stable",
+    "upstream_source": "https://spec.c2pa.org/specifications/specifications/2.3/",
+    "depends_on": [
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "canary_config": {
+    "boundary": "Canary deployment spec. NOT feature_flag (boolean toggle) nor ab_test_config (experiment split). Industry: Argo Rollouts, Flagger.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Gradual traffic rollout configuration for safe deployment with automatic rollback triggers",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p09_cc_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "deployment_manifest",
+      "feature_flag",
+      "ab_test_config",
+      "sandbox_spec"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "canonical_product": {
     "boundary": "Channel-neutral golden record = the UNION of every channel's product fields + per-field provenance + conflict flags. NOT marketplace_listing (a per-channel PROJECTION) nor product_ad (the rendered buyer page). One SKU = one record.",
     "core": false,
@@ -274,7 +829,7 @@
     "pillar": "P06",
     "spec_version": "docs/specs/01_ads_catalog",
     "status": "stable",
-    "upstream_source": "<tenant>/src/lib/adapters/types.ts (CanonicalProduct); central impl _tools/cex_canonical_product.py + docs/schema/contracts/canonical_product.schema.json",
+    "upstream_source": null,
     "depends_on": [
       "data_contract",
       "validation_schema"
@@ -298,6 +853,73 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F2_become"
+  },
+  "case_study": {
+    "boundary": "Case study. NOT pitch_deck (all-purpose) nor testimonial (quote only).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Customer case study with challenge/solution/outcome/quote narrative",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p05_cs_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "customer_segment"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason",
+    "f7_enforce": true
+  },
+  "chain": {
+    "boundary": "Sequence of PROMPTS. NOT workflow (P12, agents+tools).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Chained prompt sequence (output A -> input B)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p03_ch_{{pipeline}}.md",
+    "nucleus": "N03",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "prompt_template",
+      "action_prompt"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "changelog": {
+    "boundary": "Changelog. NOT decision_record (rationale) nor release_notes (prose).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Product changelog entry with semver, features, fixes, breaking changes",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 5120,
+    "naming": "p01_ch_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "learning_record"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
   },
   "checkpoint": {
     "boundary": "Saved state. NOT signal.",
@@ -341,6 +963,50 @@
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
   },
+  "churn_prevention_playbook": {
+    "boundary": "Churn playbook. NOT renewal_workflow (process) nor expansion_play (upsell).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Churn prevention playbook: signal detection, intervention triggers, save-the-account scripts",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p03_cpp_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "cohort_analysis"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "circuit_breaker": {
+    "boundary": "Dependency circuit breaker. NOT fallback_chain (ordered provider fallback) nor rate_limit_config (inbound throttle). Industry: Hystrix, Resilience4j.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Resilience pattern that auto-disables failing dependencies and allows recovery after a cooldown period",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p09_cb_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "retry_policy",
+      "rate_limit_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
   "citation": {
     "boundary": "Source reference with provenance. NOT knowledge_card (the content itself), rag_source (pipeline config), nor glossary_entry (term definition).",
     "core": false,
@@ -363,6 +1029,27 @@
     "primary_8f": "F3_inject",
     "f7_enforce": true
   },
+  "cli_tool": {
+    "boundary": "One-shot command-line tool. NOT skill (no phases) nor daemon (does not persist in background).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Ferramenta CLI",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 1024,
+    "naming": "p04_cli_{{tool}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "function_def"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
   "code_executor": {
     "boundary": "Isolated environment that executes code. NOT cli_tool (one-shot shell command) nor daemon (persistent process).",
     "core": true,
@@ -383,6 +1070,71 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F5_call"
+  },
+  "code_of_conduct": {
+    "boundary": "Code of conduct. NOT contributor_guide (technical) nor governance (decision rules).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Community code of conduct (Contributor Covenant pattern) with reporting + enforcement",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 4096,
+    "naming": "p05_coc_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "cohort_analysis": {
+    "boundary": "Cohort analytics. NOT benchmark (model eval) nor usage_report (billing).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Cohort analysis spec for retention measurement and LTV modeling",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p07_ca_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_dataset",
+      "customer_segment"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
+  "collaboration_pattern": {
+    "boundary": "Coordination pattern. NOT workflow (execution sequence) nor handoff_protocol (handoff rules).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Multi-agent coordination topology",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "COLLABORATE",
+    "max_bytes": 5120,
+    "naming": "p12_collab_{{name}}.md",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "workflow",
+      "agent_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
   },
   "competitive_matrix": {
     "boundary": "Competitive doc. NOT customer_segment (ICP) nor pitch_deck (narrative).",
@@ -407,6 +1159,95 @@
     "primary_8f": "F4_reason",
     "f7_enforce": true
   },
+  "compliance_checklist": {
+    "boundary": "Audit checklist. NOT guardrail (runtime) nor safety_policy (behavior).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Compliance checklist for SOC2, GDPR, HIPAA, EU AI Act audits",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 6144,
+    "naming": "p11_cc_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "quality_gate",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "compliance_framework": {
+    "boundary": "Regulatory compliance mapping. NOT safety_policy (org rules) nor threat_model (risk assessment).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Regulatory mapping and attestation for AI systems",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 5120,
+    "naming": "p11_cfw_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "compliance_checklist",
+      "constitutional_rule"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "component_map": {
+    "boundary": "Structured map of components and connections. NOT diagram (visual) nor agent_card (scope of 1 agent_group).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Component map (what connects to what)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 3072,
+    "naming": "p08_cmap_{{scope}}.yaml",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "agent_card",
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
+  "compression_config": {
+    "added_version": "10.0.0",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Context compression configuration for tool outputs",
+    "last_reviewed": "2026-04-14",
+    "layer": "runtime",
+    "llm_function": "INJECT",
+    "naming": "p10_cc_{{scope}}.yaml",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "sdk_module": "cex_sdk.memory.compression",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "entity_memory",
+      "memory_summary"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "computer_use": {
     "boundary": "GUI interaction via automation. NOT browser_tool (DOM) nor cli_tool (command line).",
     "core": false,
@@ -428,6 +1269,50 @@
     "requires_external_context": false,
     "requires_live_tools": true,
     "primary_8f": "F5_call"
+  },
+  "conformity_assessment": {
+    "boundary": "Annex IV technical documentation package. NOT compliance_framework (general) nor threat_model (risk only).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "EU AI Act Annex IV conformity assessment for high-risk AI systems (Article 43, Aug-2026 deadline)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p11_ca_{{system}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "EU AI Act 2024/1689 Annex IV",
+    "depends_on": [
+      "compliance_framework",
+      "eval_metric"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "consolidation_policy": {
+    "boundary": "Memory lifecycle policy. NOT memory_scope (access rules) nor compression_config (token compression).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Memory lifecycle management policy",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p10_cp_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "entity_memory",
+      "knowledge_index"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
   },
   "constitutional_rule": {
     "boundary": "Absolute constraint. NOT guardrail (soft constraint with fallback) nor safety_policy (policy document). Anthropic Constitutional AI.",
@@ -472,6 +1357,49 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
+  },
+  "content_factory": {
+    "boundary": "Grounded multi-channel content producer: brief -> N per-channel rows -> review -> publish-seam. NOT social_publisher (the publish half only) nor content_monetization (billing pipeline).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Content production pipeline: PRODUCE (grounded, one brief -> N channel rows) > REVIEW (approved-list HITL gate) > PUBLISH-SEAM (vendor-agnostic, provider deferred)",
+    "last_reviewed": "2026-06-23",
+    "llm_function": "PRODUCE",
+    "max_bytes": 8192,
+    "naming": "p04_content_factory_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "social_publisher",
+      "supabase_data_layer"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "content_library": {
+    "boundary": "The Gen-2 content store: one row per (post_id, channel, format) with the approval triad + publish lifecycle. NOT social_publisher (the publisher) nor content_factory (the producer). An instance of supabase_data_layer.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Multi-channel content data layer: one row per (post_id, channel, format), approval triad, publish lifecycle, UNIQUE(post_id, channel, format), RLS admin+service",
+    "last_reviewed": "2026-06-23",
+    "llm_function": "CALL",
+    "max_bytes": 8192,
+    "naming": "p04_content_library_{{slug}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "supabase_data_layer"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
   },
   "content_filter": {
     "boundary": "Content filtering pipeline. NOT guardrail (broad safety constraint) nor output_validator (schema check).",
@@ -529,6 +1457,27 @@
       ]
     }
   },
+  "context_doc": {
+    "boundary": "Domain context for hydrating prompts. NOT knowledge_card (no density gate) nor glossary_entry (does not define a term).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Domain context",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 2048,
+    "naming": "p01_ctx_{{topic}}.md + .yaml",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
   "context_file": {
     "boundary": "Project-scoped .md that shapes every agent turn. NOT system_prompt (agent-level) nor knowledge_card (fact storage) nor prompt_template (parameterized).",
     "core": true,
@@ -556,6 +1505,28 @@
     "requires_live_tools": false,
     "primary_8f": "F2_become"
   },
+  "context_map": {
+    "boundary": "BC relationship map. NOT bounded_context (single BC definition) nor component_map (deployment structure). Evans DDD context mapping.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "DDD diagram of relationships and integration patterns between bounded contexts (upstream/downstream, ACL, OHS)",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p08_cm_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "Evans DDD 2003",
+    "depends_on": [
+      "knowledge_card",
+      "component_map"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
   "context_window_config": {
     "boundary": "Budget allocation spec. NOT prompt_template (content), system_prompt (identity), nor model_card (capabilities).",
     "core": true,
@@ -576,6 +1547,72 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
+  },
+  "contributor_guide": {
+    "boundary": "Contributor guide. NOT integration_guide (consumer) nor code_of_conduct (norms).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "OSS CONTRIBUTING.md spec: dev setup, PR flow, coding standards, review process, CLA",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p05_cg_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "context_doc"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "cost_budget": {
+    "boundary": "Money and token economics. NOT a rate_limit_config (requests/sec) nor a token_budget tool (internal). This is the budget POLICY.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Token budget allocation, spend tracking, cost alerts per provider/model/nucleus",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p09_cb_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config",
+      "usage_quota"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "course_module": {
+    "boundary": "Course content module. NOT a prompt_template nor knowledge_card.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Online course module with learning objectives and assessments",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 8192,
+    "naming": "p05_cm_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "scoring_rubric"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "crew_template": {
     "boundary": "Reusable crew blueprint (roles + process + memory). NOT workflow (P12, generic steps) nor supervisor (P12, crew orchestrator instance) nor handoff (P12, single task transfer). Template does not execute; it instantiates the crew.",
@@ -622,6 +1659,56 @@
       ]
     }
   },
+  "curation_nudge": {
+    "boundary": "Proactive memory-persistence reminder. NOT guardrail (blocks action) nor quality_gate (pass/fail). Nudges ASK.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Periodic prompt to persist knowledge to durable memory",
+    "last_reviewed": "2026-04-18",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p11_cn_{{trigger}}.yaml",
+    "nucleus": "N04",
+    "pillar": "P11",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "guardrail",
+      "quality_gate",
+      "notifier",
+      "memory_summary",
+      "entity_memory",
+      "user_model",
+      "prompt_template"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "curriculum_config": {
+    "boundary": "Training data ordering and adaptive pacing. NOT training_method (how to train) nor dataset_card (data documentation) nor finetune_config (full training job).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Training data ordering, difficulty scheduling, and adaptive pacing configuration",
+    "last_reviewed": "2026-04-23",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p07_cc_{{name}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "dataset_card",
+      "training_method",
+      "eval_metric"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "customer_segment": {
     "boundary": "ICP artifact. NOT user_journey (path) nor persona (not-a-kind).",
     "core": false,
@@ -642,6 +1729,99 @@
     "requires_external_context": true,
     "requires_live_tools": false,
     "primary_8f": "F4_reason"
+  },
+  "cybersec_skill": {
+    "boundary": "Cybersec skill distilled from external Apache 2.0 baseline (mukul975 lead) with mandatory source: trace, framework mapping (ATT&CK/CSF/ATLAS/CVE), and capability gating for offensive variants. NOT skill (no source contract), safety_policy (org rules), nor compliance_framework (regulatory). Anti-fabrication via 4 HARD gates (H_AF1-H_AF4).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Cybersec-domain reusable capability distilled from baseline; source-traced, framework-mapped, capability-gated; 4 anti-fabrication HARD gates enforced at F7 GOVERN",
+    "examples": [
+      "p03_cysk_detecting_prompt_injection",
+      "p03_cysk_aws_cloudtrail_baseline",
+      "p03_cysk_windows_shellbag_analysis"
+    ],
+    "last_reviewed": "2026-05-30",
+    "layer": "",
+    "llm_function": "BECOME",
+    "max_bytes": 5120,
+    "naming": "p03_cysk_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P03",
+    "schema_ref": "archetypes/builders/cybersec-skill-builder/bld_schema_cybersec_skill.md",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": "mukul975/security-skills (Apache 2.0)",
+    "depends_on": [
+      "skill",
+      "safety_policy",
+      "guardrail",
+      "compliance_framework"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F2_become",
+    "autonomy": {
+      "enabled": true,
+      "min_confidence": 0.6,
+      "irreversible": false,
+      "memory_recall_enabled": true,
+      "memory_recall_top_k": 5,
+      "f7_capability": [
+        "citation",
+        "reasoning_trace"
+      ],
+      "anti_fabrication_gates": [
+        "H_AF1",
+        "H_AF2",
+        "H_AF3",
+        "H_AF4"
+      ],
+      "audit_log_mandatory_when": "authorized_use_only == true"
+    }
+  },
+  "daemon": {
+    "boundary": "Persistent background process. NOT hook (single event) nor cli_tool (one-shot execution that terminates).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Processo background",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 1024,
+    "naming": "p04_daemon_{{name}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config",
+      "boot_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "dag": {
+    "boundary": "Acyclic dependency graph between tasks. NOT workflow (direct execution) nor component_map (P08, components).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Acyclic dependency graph",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 3072,
+    "naming": "p12_dag_{{pipeline}}.yaml",
+    "nucleus": "N03",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "workflow",
+      "schedule"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
   },
   "data_contract": {
     "boundary": "Producer-consumer schema contract. NOT dataset_card (data metadata) nor validation_schema (output validation). DDD Published Language.",
@@ -666,6 +1846,28 @@
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
   },
+  "data_residency": {
+    "boundary": "Residency spec. NOT secret_config (credentials) nor rbac_policy (access).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Data residency configuration for GDPR and regional compliance",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 3072,
+    "naming": "p09_dr_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config",
+      "secret_config"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "dataset_card": {
     "boundary": "Dataset documentation. NOT eval_dataset (eval-specific data) nor knowledge_card (general knowledge).",
     "core": false,
@@ -686,6 +1888,28 @@
     "requires_external_context": true,
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
+  },
+  "db_connector": {
+    "boundary": "Access to structured data. NOT api_client nor retriever.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Structured database connector (SQL, GraphQL, REST-to-DB)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 1024,
+    "naming": "p04_conn_{{source}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config",
+      "secret_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": true,
+    "primary_8f": "F5_call"
   },
   "decision_record": {
     "boundary": "Record. NOT law nor pattern.",
@@ -709,6 +1933,32 @@
     "primary_8f": "F4_reason",
     "f7_enforce": true
   },
+  "deployment_manifest": {
+    "boundary": "Release deployment spec. NOT env_config (runtime environment) nor sandbox_spec (test environment). Industry: Kubernetes manifest, Helm values.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Specification of what artifacts to deploy, where to deploy them, and how to configure the deployment",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "COLLABORATE",
+    "max_bytes": 4096,
+    "naming": "p09_dm_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config",
+      "boot_config",
+      "secret_config",
+      "sandbox_spec",
+      "canary_config",
+      "enterprise_sla"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
   "design_system": {
     "boundary": "A selectable, concrete-valued brand visual language -- color/type/space/motion/form tokens + component recipes + usage rules + a CEXAI leverage declaration -- that a design or frontend generator binds to at F3 INJECT. An ACTIVE composable asset, not a passive token dump. NOT brand_config (a single global identity, not a selectable library of many) nor validation_schema (defines the contract SHAPE, not concrete values) nor pattern (P08 architecture semantics).",
     "core": false,
@@ -730,6 +1980,70 @@
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
   },
+  "diagram": {
+    "boundary": "Visual architecture diagram. NOT component_map (structured data) nor pattern (no prescription).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Architecture diagram (ASCII or Mermaid)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 4096,
+    "naming": "p08_diag_{{scope}}.md",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "component_map"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
+  "diff_strategy": {
+    "boundary": "Diff matching strategy. NOT edit_format (format spec) nor parser (generic parsing).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Change application and matching algorithm",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p04_ds_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "function_def"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "discovery_questions": {
+    "boundary": "Discovery qs. NOT sales_playbook (broad) nor customer_segment (ICP).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "MEDDIC/BANT discovery question bank per buyer persona and deal stage",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 4096,
+    "naming": "p01_dq_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
   "dispatch_rule": {
     "boundary": "Dispatch rule keyword>agent_group. NOT router (P02, task>model routing) nor workflow (does not execute, only routes).",
     "core": false,
@@ -750,6 +2064,29 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
+  },
+  "distillation_config": {
+    "boundary": "Teacher-student knowledge transfer and model compression. NOT finetune_config (full model training) nor quantization_config (weight precision reduction) nor model_card (model documentation).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Teacher-student model compression and knowledge distillation setup",
+    "last_reviewed": "2026-04-23",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p02_dc_{{name}}.md + .yaml",
+    "nucleus": "N03",
+    "pillar": "P02",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "finetune_config",
+      "quantization_config",
+      "model_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "document_loader": {
     "boundary": "Transforms raw files into chunked documents. NOT retriever (search over chunks) nor search_tool (external search).",
@@ -773,6 +2110,27 @@
     "requires_live_tools": false,
     "primary_8f": "F5_call"
   },
+  "domain_event": {
+    "boundary": "Domain-level event. NOT signal (system-level) nor audit_log (compliance record). DDD Domain Event.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Immutable record of something significant that happened in the domain, distinct from system-level signals",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "CALL",
+    "max_bytes": 3072,
+    "naming": "p12_dev_{{name}}.md",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "Evans DDD 2003",
+    "depends_on": [
+      "event_schema"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
   "domain_vocabulary": {
     "boundary": "Controlled vocabulary for one domain. NOT glossary_entry (single term) nor ontology (formal relations). DDD Ubiquitous Language registry.",
     "core": true,
@@ -795,6 +2153,159 @@
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
   },
+  "drift_detector": {
+    "boundary": "Distribution shift monitor. NOT regression_check (code regression) nor benchmark (point-in-time score). Industry: Evidently AI, Arize.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Monitor that detects distribution shift in model inputs, outputs, or behavioral patterns over time",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p11_dd_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_metric",
+      "regression_check"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "dual_loop_architecture": {
+    "boundary": "Dual-loop control. NOT workflow (linear flow) nor collaboration_pattern (multi-agent topology).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Outer/inner loop agent control architecture",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "REASON",
+    "max_bytes": 5120,
+    "naming": "p08_dl_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "workflow",
+      "agent_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "e2e_eval": {
+    "boundary": "End-to-end test of complete pipeline. NOT unit_eval (isolated scope) nor benchmark (does not measure performance).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Teste end-to-end (pipeline completo)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p07_e2e_{{pipeline}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "quality_gate",
+      "scoring_rubric"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "ecommerce_vertical": {
+    "boundary": "eCommerce vertical KC. NOT fintech_vertical (payments-only) nor case_study (ref).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "eCommerce industry vertical: cart/checkout, PCI-DSS, recommendation engines, fraud, use cases",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 6144,
+    "naming": "p01_ev_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "edit_format": {
+    "boundary": "Edit format spec. NOT diff_strategy (matching algo) nor formatter (output formatting).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "LLM-to-host file change format specification",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p06_ef_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P06",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "formatter",
+      "type_def"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "edtech_vertical": {
+    "boundary": "EdTech vertical KC. NOT course_module (course content) nor compliance_checklist (audit).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Education/EdTech industry vertical: FERPA, COPPA, LMS integration (LTI), student data privacy, use cases",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 6144,
+    "naming": "p01_etv_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "effort_profile": {
+    "boundary": "effort_profile = WHICH model/thinking to use; runtime_rule = WHEN/HOW to execute.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Effort and thinking level configuration for builder execution",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p09_effort_profile_{{topic}}.md + .yaml",
+    "nucleus": "N03",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
   "embedder_provider": {
     "added_version": "10.0.0",
     "core": true,
@@ -806,7 +2317,7 @@
     "naming": "p01_ep_{{provider}}.yaml",
     "nucleus": "N04",
     "pillar": "P01",
-    "sdk_module": null,
+    "sdk_module": "cex_sdk.knowledge.embedder",
     "spec_version": null,
     "status": "stable",
     "upstream_source": null,
@@ -837,6 +2348,28 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
+  },
+  "enterprise_sla": {
+    "boundary": "SLA contract. NOT quality_gate (runtime) nor compliance_checklist (audit).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Enterprise SLA template with uptime, latency, support commitments",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 6144,
+    "naming": "p11_sla_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "quality_gate",
+      "env_config"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
   },
   "entity_memory": {
     "boundary": "Facts about X. NOT learning_record.",
@@ -940,6 +2473,28 @@
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
   },
+  "eval_framework": {
+    "boundary": "Eval framework. NOT benchmark_suite (benchmark collection) nor eval_metric (single metric).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "End-to-end evaluation framework integration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p07_efw_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_metric",
+      "scoring_rubric"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
   "eval_metric": {
     "boundary": "Single metric def. NOT benchmark_suite (composite) nor scoring_rubric (qualitative rubric).",
     "core": false,
@@ -956,6 +2511,120 @@
     "upstream_source": null,
     "depends_on": [
       "scoring_rubric"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "event_schema": {
+    "boundary": "Event payload schema. NOT data_contract (producer-consumer SLA) nor event_stream (infrastructure config). CloudEvents 1.0 / AsyncAPI 3.0.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "AsyncAPI / CloudEvents schema for event payloads defining structure, versioning, and routing metadata",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p06_evs_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P06",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "CloudEvents 1.0 / AsyncAPI 3.0",
+    "depends_on": [
+      "type_def",
+      "domain_event"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "event_stream": {
+    "boundary": "Real-time event stream config. NOT webhook (single outbound call) nor signal (internal nucleus signal). Industry: Kafka topic, Kinesis stream.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Configuration for a real-time ordered sequence of domain events consumed by one or more subscribers",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "CALL",
+    "max_bytes": 3072,
+    "naming": "p04_es_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "webhook",
+      "signal",
+      "schedule",
+      "api_client",
+      "process_manager",
+      "domain_event"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "expansion_play": {
+    "boundary": "Expansion play. NOT churn_prevention_playbook (defensive) nor sales_playbook (new logo).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Account expansion play: upsell triggers, cross-sell map, NRR mechanics, AE talk track",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p03_ep_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "sales_playbook"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "experiment_config": {
+    "boundary": "Experiment config with variants and metrics. NOT a feature_flag (boolean toggle) nor a benchmark (one-time evaluation).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "A/B test and prompt experiment configuration with variants, metrics, and statistical analysis",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p09_ec_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config",
+      "feature_flag"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "experiment_tracker": {
+    "boundary": "Experiment tracking. NOT benchmark (evaluation suite) nor experiment_config (single experiment settings).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Experiment configuration and results tracking",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p07_et_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "experiment_config",
+      "eval_metric"
     ],
     "requires_external_context": false,
     "requires_live_tools": false,
@@ -983,6 +2652,70 @@
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
   },
+  "faq_entry": {
+    "boundary": "FAQ entry. NOT knowledge_card (broader) nor support_macro (agent canned reply).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "FAQ entry with question, canonical answer, related links, support deflection metric",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 3072,
+    "naming": "p01_faq_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
+  "fabrication_manifest": {
+    "boundary": "The recipe for ONE tenant fabrication (bootstrap orchestrator). REFERENCES a brand_config (does NOT duplicate it) + the chosen capabilities + the 3 layer targets + per-stage status. NOT team_charter (a crew mission contract), NOT deployment_manifest (what/where to deploy), NOT white_label_config (the branding spec it points at).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Per-tenant fabrication recipe: {tenant_id, brand_config_ref, chosen_capabilities[], targets{brain,site,admin}, hosting_target, status, stage_status{A,B,C,D}}. The single source of truth for one bootstrap-orchestrator run (stages A INGEST / B PROVISION / C FABRICATE / D WIRE); idempotent + resumable via stage_status. R-373 (2026-07-14): a second, actively-growing variant of this kind name -- the /genesis S5 run-record (schema cex.fabrication_manifest_run/1, typed .md+frontmatter under N07_admin/P12_orchestration/fabrications/, emitted by cex_fabricate.py) -- is canonical for NEW instances going forward; this description still covers the legacy, gitignored per-tenant state-file shape (schema cex.fabrication_manifest/1), which is grandfathered, not invalid. See kc_fabrication_manifest.md and _docs/specs/SPEC_R373_FABRICATION_MANIFEST_SHAPES_2026_07_14.md for the full reconciliation.",
+    "last_reviewed": "2026-06-23",
+    "llm_function": "COLLABORATE",
+    "max_bytes": 4096,
+    "naming": "p12_fm_{{tenant}}.yaml",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "white_label_config",
+      "capability_registry"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "feature_flag": {
+    "boundary": "Feature flag on/off with gradual rollout. NOT permission (access) nor env_config (generic variable).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Feature flag (on/off, gradual rollout)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 1536,
+    "naming": "p09_ff_{{feature}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "few_shot_example": {
     "boundary": "Input/output pair for few-shot learning. NOT golden_test (P07) which evaluates quality -- only exemplifies format.",
     "core": true,
@@ -1003,6 +2736,95 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
+  },
+  "fhir_agent_capability": {
+    "boundary": "FHIR-native agent capability. NOT general agent (agent_card) nor OAuth2 app (oauth_app_config) nor FHIR workflow (workflow).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "HL7 FHIR R5 AI agent capability declaration: SMART on FHIR scopes, PHI handling, CDS Hooks, AI Transparency extension",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 5120,
+    "naming": "p08_fhir_{{capability}}.md",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": "HL7 AI Office WG 2026 / FHIR R5",
+    "status": "stable",
+    "upstream_source": "confluence.hl7.org/display/AIO",
+    "depends_on": [
+      "agent_card",
+      "api_client"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "field_manifest": {
+    "boundary": "Declarative product-editor description (sections + typed fields) from which the zod schema + publish-gate + rendered form are ALL derived (no drift). NOT input_schema (single data-validation schema, no UI/gate derivation) nor interface (integration contract) nor type_def (single type). ISO = FieldDef/SectionDef/ProductManifest.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Schema-to-form manifest: one declarative field_manifest derives the validation schema, the publish-gate, and the rendered editor; app-logic stays pluggable via a handler registry",
+    "last_reviewed": "2026-06-23",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 8192,
+    "naming": "p06_fm_{{slug}}.md",
+    "nucleus": "N03",
+    "pillar": "P06",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "input_schema",
+      "type_def",
+      "supabase_data_layer"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "finetune_config": {
+    "boundary": "Training config. NOT a model_provider (runtime routing) nor a model_card (documentation). This defines HOW to train/adapt a model.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Fine-tuning job configuration: dataset, base model, adapter type (LoRA/PEFT), hyperparameters, eval metrics",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p02_ft_{{name}}.yaml",
+    "nucleus": "N03",
+    "pillar": "P02",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "training_method",
+      "eval_dataset"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "fintech_vertical": {
+    "boundary": "Fintech vertical KC. NOT compliance_checklist (audit) nor case_study (ref).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Fintech industry vertical: SOC2+PCI-DSS, KYC/AML, fraud detection, use cases",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 6144,
+    "naming": "p01_fv_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
   },
   "formatter": {
     "boundary": "Output format transformer. NOT parser (does not extract data) nor response_format (does not define what the LLM sees).",
@@ -1046,6 +2868,27 @@
     "requires_live_tools": false,
     "primary_8f": "F6_produce"
   },
+  "github_issue_template": {
+    "boundary": "Issue template. NOT pull_request_template (separate) nor faq_entry (answers).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "GitHub issue template (bug/feature/question) with required fields and labels",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 3072,
+    "naming": "p05_git_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
   "glossary_entry": {
     "boundary": "Short domain term definition. NOT knowledge_card (no minimum density) nor context_doc (no scope).",
     "core": false,
@@ -1088,6 +2931,73 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F7_govern"
+  },
+  "govtech_vertical": {
+    "boundary": "Govtech vertical KC. NOT compliance_checklist (audit) nor legal_vertical (private).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Government/govtech industry vertical: FedRAMP, FISMA, GSA, CJIS, accessibility (Section 508), use cases",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 6144,
+    "naming": "p01_gv_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "gpai_technical_doc": {
+    "boundary": "GPAI provider technical documentation per EU-AI-Act Article-53 and Annex-IV. NOT compliance_framework (policy mapping) nor conformity_assessment (high-risk system). Specific to GPAI models submitted to EU AI Office.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "EU AI Act GPAI technical documentation (Annex IV / Article 53) -- training-data summary, compute-budget, energy consumption, evaluation results, intended purpose, downstream-limit.",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p11_gpai_{{model}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": "EU-AI-Act-2024",
+    "status": "stable",
+    "upstream_source": "EU AI Act Article 53 + Annex IV (Aug 2025 active)",
+    "depends_on": [
+      "ai_rmf_profile",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "graph_rag_config": {
+    "boundary": "Graph RAG config. NOT knowledge_graph (graph instance) nor rag_source (document source).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Graph-based RAG architecture configuration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 4096,
+    "naming": "p01_grc_{{name}}.yaml",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "rag_source",
+      "embedding_config",
+      "vector_store"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
   },
   "guardrail": {
     "boundary": "Security and safety boundary constraint. NOT permission (P09, access) nor law (P08, operational).",
@@ -1155,6 +3065,75 @@
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
   },
+  "healthcare_vertical": {
+    "boundary": "Healthcare vertical KC. NOT compliance_checklist (audit) nor case_study (ref).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Healthcare industry vertical: HIPAA, HL7/FHIR, PHI handling, use cases",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 6144,
+    "naming": "p01_hv_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "hibernation_policy": {
+    "boundary": "Idle-state cost guard for serverless backends. NOT cost_budget (spend caps) nor rate_limit_config (throughput).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Policy for hibernating idle serverless workloads to save cost",
+    "last_reviewed": "2026-04-18",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p09_hp_{{backend}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "cost_budget",
+      "rate_limit_config",
+      "terminal_backend",
+      "runtime_rule",
+      "secret_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "hitl_config": {
+    "boundary": "Requires HUMAN judgment. NOT a guardrail (automated block) nor a quality_gate (automated scoring). This pauses for human review.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Human-in-the-loop approval flow configuration: review triggers, escalation chains, timeout actions",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p11_hitl_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "quality_gate",
+      "workflow"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
   "hook": {
     "boundary": "Executable code on pre/post event. NOT lifecycle_rule (P11, declarative rule) nor daemon (persistent process).",
     "core": true,
@@ -1175,6 +3154,73 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
+  },
+  "hook_config": {
+    "boundary": "hook_config = DECLARACAO de quais hooks; hook = IMPLEMENTACAO do hook",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Hook lifecycle configuration for builder execution",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p04_hookconf_{{topic}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "hook",
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "incident_report": {
+    "boundary": "Incident post-mortem. NOT bugloop (auto-fix) nor learning_record (generic learning).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "AI incident documentation and post-mortem",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p11_ir_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "audit_log",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "inference_config": {
+    "boundary": "Inference-time generation parameters. NOT model_provider (which model to call) nor thinking_config (extended reasoning budget) nor streaming_config (transport streaming).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Inference-time parameters: temperature, top_p, sampling strategy, stop sequences, penalties",
+    "last_reviewed": "2026-04-23",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p09_ic_{{name}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "model_provider",
+      "thinking_config",
+      "streaming_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
   },
   "input_schema": {
     "boundary": "Input contract defining required data. NOT validation_schema (output) nor type_def (abstract definition).",
@@ -1218,6 +3264,71 @@
     "requires_live_tools": false,
     "primary_8f": "F6_produce"
   },
+  "integration_guide": {
+    "boundary": "Integration guide. NOT quickstart_guide (5min) nor api_reference (schema).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Deep integration guide for platform partners and paid-tier onboarding",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 8192,
+    "naming": "p05_ig_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "api_reference",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "interactive_demo": {
+    "boundary": "Demo script. NOT playground_config (env) nor product_tour (in-app).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Interactive product demo script with guided-tour steps and talk track",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p05_id_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "landing_page"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": true,
+    "primary_8f": "F6_produce"
+  },
+  "interface": {
+    "boundary": "Bilateral integration contract between agents. NOT input_schema (unilateral) nor signal (P12, simple event).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Agent-to-agent integration contract",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 3072,
+    "naming": "p06_iface_{{contract}}.yaml",
+    "nucleus": "N03",
+    "pillar": "P06",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "input_schema",
+      "output_validator"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "invariant": {
     "boundary": "Inviolable operational law of the system. NOT instruction (P03, flexible) nor guardrail (P11, safety-focused).",
     "core": true,
@@ -1238,6 +3349,47 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
+  },
+  "judge_config": {
+    "boundary": "Judge config. NOT llm_judge (judge instance) nor scoring_rubric (human rubric).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "LLM judge configuration for automated evaluation",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p07_jc_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "content_filter",
+      "audit_log"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "kind_manifest": {
+    "boundary": "Documents a registered KIND's own identity (purpose, schema, builder pointer) -- one manifest per kind, scaffolded under N00_genesis/P0X_*/kind_{kind}/. NOT knowledge_card (a topic/fact card about the world), NOT output_template (a kind-builder's F6 PRODUCE artifact shape), NOT nucleus_def (documents a NUCLEUS, not a kind).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Canonical per-kind manifest: purpose, schema (key fields), and builder pointer for ONE registered kind in the taxonomy (id: n00_{kind}_manifest)",
+    "last_reviewed": "2026-07-10",
+    "llm_function": "INJECT",
+    "max_bytes": 8192,
+    "naming": "kind_{{kind}}/kind_manifest_n00.md",
+    "nucleus": "N03",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
   },
   "knowledge_card": {
     "boundary": "Distilled, static, versioned knowledge. NOT an instruction, template, or configuration.",
@@ -1282,6 +3434,28 @@
     },
     "f7_enforce": true
   },
+  "knowledge_graph": {
+    "boundary": "Relational knowledge structure. NOT an entity_memory (single entity recall) nor a knowledge_index (flat search). This defines RELATIONSHIPS between entities.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Graph-based knowledge schema with entity types, relation types, and traversal strategies for GraphRAG",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 8192,
+    "naming": "p01_kg_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "ontology",
+      "entity_memory"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
   "knowledge_index": {
     "boundary": "Semantic search index (BM25, FAISS). NOT embedding_config (P01, model) nor rag_source (P01, source).",
     "core": true,
@@ -1304,6 +3478,28 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
+  },
+  "kubernetes_ai_requirement": {
+    "boundary": "KAR conformance artifact. NOT env_config (runtime) nor sandbox_config (isolation) nor compliance_framework (regulatory).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "CNCF Kubernetes AI Requirement (KAR) conformance artifact: GPU topology, InfiniBand, MIG, DRA, checkpoint PVCs, multi-node training",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p09_kar_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": "CNCF KAR v1.35 (GA 2025-11)",
+    "status": "stable",
+    "upstream_source": "cncf.io/blog/2026/03/23/cloud-native-agentic-standards/",
+    "depends_on": [
+      "deployment_manifest",
+      "env_config"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
   },
   "landing_page": {
     "builder": "landing-page-builder",
@@ -1366,6 +3562,28 @@
     "requires_live_tools": false,
     "primary_8f": "F7_govern"
   },
+  "legal_vertical": {
+    "boundary": "Legal vertical KC. NOT compliance_checklist (audit) nor case_study (ref).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Legal industry vertical: privilege, billable hour, contract analysis, use cases",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 6144,
+    "naming": "p01_lv_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "lens": {
     "boundary": "Specialized perspective on a domain. NOT agent (no capabilities) nor mental_model (no routing rules).",
     "core": false,
@@ -1409,6 +3627,53 @@
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
   },
+  "lineage_record": {
+    "boundary": "Knowledge provenance. NOT audit_log (compliance event log) nor citation (source reference). Maps to PROV-O standard.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Provenance chain documenting how a knowledge artifact was derived, transformed, and curated",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "INJECT",
+    "max_bytes": 3072,
+    "naming": "p01_lin_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "audit_log",
+      "citation",
+      "learning_record",
+      "entity_memory"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "llm_evaluation_scenario": {
+    "boundary": "Single eval scenario. NOT benchmark (suite) nor eval_metric (measure). Bridges eval_dataset + benchmark.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "HELM Stanford CRFM evaluation scenario: task instances, metric mapping, adapter config, few-shot pool, canonicalization",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p07_evs_{{subject}}_{{capability}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": "HELM v1.4",
+    "status": "stable",
+    "upstream_source": "crfm.stanford.edu/helm/latest/",
+    "depends_on": [
+      "eval_dataset",
+      "scoring_rubric",
+      "llm_judge"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
   "llm_judge": {
     "boundary": "LLM evaluator. NOT scoring_rubric.",
     "core": true,
@@ -1431,6 +3696,28 @@
     "requires_live_tools": false,
     "primary_8f": "F7_govern"
   },
+  "marketplace_app_manifest": {
+    "boundary": "Marketplace manifest. NOT plugin (loadable) nor app_directory_entry (descriptive).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Marketplace app manifest spec for Claude/LangChain/HuggingFace listings (metadata, perms, pricing)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p09_mam_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "agent_card",
+      "env_config"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
   "marketplace_listing": {
     "boundary": "Per-channel PROJECTION of a canonical_product (the output of ChannelAdapter.map). NOT canonical_product (the channel-neutral superset) nor partner_listing (a directory entry). Carries channel-specific payload + _meta + a readiness verdict.",
     "core": false,
@@ -1444,7 +3731,7 @@
     "pillar": "P05",
     "spec_version": "docs/specs/01_ads_catalog",
     "status": "stable",
-    "upstream_source": "<tenant>/src/lib/adapters/channels/mercadolivre.ts; central impl _tools/cex_channel_adapter.py",
+    "upstream_source": null,
     "depends_on": [
       "canonical_product",
       "output_validator"
@@ -1452,6 +3739,28 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F6_produce"
+  },
+  "mcp_app_extension": {
+    "boundary": "MCP Apps Extension app. NOT mcp_server (protocol base) nor browser_tool (Playwright) nor webhook (callback).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "MCP Apps Extension (SEP-1865): app manifest, install/launch/terminate lifecycle, capabilities, permission grants, sandboxed iframe",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p04_mae_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": "SEP-1865 draft 2026 (Anthropic + OpenAI)",
+    "status": "draft",
+    "upstream_source": "github.com/modelcontextprotocol/specification/issues/1865",
+    "depends_on": [
+      "mcp_server",
+      "api_client"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
   },
   "mcp_server": {
     "boundary": "MCP server exposing tools and resources. NOT connector (simple integration) nor client (API consumer).",
@@ -1510,6 +3819,28 @@
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
   },
+  "memory_benchmark": {
+    "boundary": "Memory eval suite. NOT benchmark_suite (general benchmarks) nor memory_architecture (system design).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Memory system quality evaluation suite",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p07_mb_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "benchmark",
+      "entity_memory"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
   "memory_scope": {
     "boundary": "Which memory to use. NOT session_state.",
     "core": false,
@@ -1554,6 +3885,27 @@
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
   },
+  "memory_type": {
+    "boundary": "Classification and policy for memory types. NOT entity_memory (memory instance) nor memory_scope (who accesses) nor memory_summary (summary).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Classification of persistent memory by source, confidence, and decay rate",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 2048,
+    "naming": "p10_mt_{{type_name}}.yaml",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "entity_memory"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
   "mental_model": {
     "boundary": "Fixed agent identity with routing and decisions. NOT runtime_state P10 (variable state per session).",
     "core": true,
@@ -1575,6 +3927,77 @@
     "requires_live_tools": false,
     "primary_8f": "F4_reason"
   },
+  "messaging_gateway": {
+    "boundary": "Multi-platform message transport (TG/Discord/Slack/WhatsApp/Signal/Email). NOT webhook (single-event) nor api_client (outbound only).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Unified multi-platform messaging transport abstraction",
+    "last_reviewed": "2026-04-18",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p04_mg_{{platform}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "user_model",
+      "session_state",
+      "webhook",
+      "api_client",
+      "notifier",
+      "browser_tool",
+      "stt_provider",
+      "voice_pipeline"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "model_architecture": {
+    "boundary": "Architecture definition. NOT model_card (deployment spec) nor model_provider (API integration).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Neural network architecture definition",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "BECOME",
+    "max_bytes": 5120,
+    "naming": "p02_ma_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P02",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "model_card",
+      "model_provider"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F2_become"
+  },
+  "model_card": {
+    "boundary": "LLM spec (pricing, context window, capabilities). NOT agent (P02, who uses the model) nor boot_config (how it starts).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "LLM spec in use (pricing, context, capabilities)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p02_mc_{{model}}.md + .yaml",
+    "nucleus": "N03",
+    "pillar": "P02",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "model_provider"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F2_become"
+  },
   "model_provider": {
     "added_version": "10.0.0",
     "core": true,
@@ -1586,7 +4009,7 @@
     "naming": "p02_mp_{{provider}}.yaml",
     "nucleus": "N05",
     "pillar": "P02",
-    "sdk_module": null,
+    "sdk_module": "cex_sdk.models.providers",
     "spec_version": null,
     "status": "stable",
     "upstream_source": null,
@@ -1597,6 +4020,71 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F2_become"
+  },
+  "model_registry": {
+    "boundary": "Model registry. NOT model_card (single model spec) nor checkpoint (training snapshot).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Model versioning and artifact tracking",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p10_mr_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "model_card",
+      "model_provider"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F2_become"
+  },
+  "motion_scene": {
+    "boundary": "A declarative, programmatic-motion artifact -- render target + elements + keyframes + timeline + easing + transitions + export -- that a renderer compiles to MP4 via an ffmpeg-native pipeline. An ACTIVE composable asset that binds exactly one design_system for palette/type/motion tokens at F3 INJECT. NOT a pipeline_template (orchestration process) nor cli_tool (the renderer itself) nor validation_schema (the contract shape, not the authored scene).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Declarative motion scene: render target + elements[] + keyframes[] + easing + transitions[] + export config + a CEXAI leverage block binding a design_system. Compiles to MP4 via ffmpeg-native renderer. Four canonical primitives: lower_third, title_card, counter, scene_transition.",
+    "last_reviewed": "2026-06-15",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p05_ms_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "design_system",
+      "validation_schema"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "multi_modal_config": {
+    "boundary": "Modality config. NOT vision_tool (visual analysis), audio_tool (processes audio), nor model_card (capabilities).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Input format, resolution, encoding, and routing rules for multi-modal LLM interactions",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 2048,
+    "naming": "p04_mmc_{{capability}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "toolkit"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "multimodal_prompt": {
     "boundary": "Multimodal prompt. NOT prompt_technique (text-only) nor multi_modal_config (model settings).",
@@ -1618,6 +4106,71 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F6_produce"
+  },
+  "naming_rule": {
+    "boundary": "Artifact naming convention rule. NOT validator (P06, validates content) nor type_def (P06, defines type).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Naming rule",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p08_nr_{{scope}}.md",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "notifier": {
+    "boundary": "Sends notification to user/system. NOT webhook (bidirectional event) nor api_client (full integration).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Push notification delivery (email, SMS, Slack, Discord)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 1024,
+    "naming": "p04_notify_{{channel}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "webhook",
+      "api_client"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "nps_survey": {
+    "boundary": "NPS survey. NOT customer_segment (target def) nor cohort_analysis (retention).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "NPS survey config: question, scale, follow-up, segmentation, cadence, response routing",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p11_nps_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
   },
   "nucleus_def": {
     "boundary": "Nucleus contract. NOT agent (individual agent in N0x/agents/) nor model_provider (LLM provider config) nor boot_config (boot runtime).",
@@ -1664,6 +4217,40 @@
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
   },
+  "onboarding_flow": {
+    "boundary": "Activation flow. NOT user_journey (full path) nor workflow (system execution).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "User onboarding flow with activation milestones and aha-moment design",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p05_of_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "user_journey",
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce",
+    "autonomy": {
+      "enabled": true,
+      "prerequisites": [
+        {
+          "action": "blueprint",
+          "when_verb": [
+            "create"
+          ],
+          "irreversible": false
+        }
+      ]
+    }
+  },
   "ontology": {
     "boundary": "Formal classification structure. NOT a knowledge_graph (entity relations) nor a glossary_entry (single term). This defines the CLASSIFICATION SYSTEM itself.",
     "core": false,
@@ -1707,6 +4294,28 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F5_call"
+  },
+  "optimizer": {
+    "boundary": "Process optimizer metric>action. NOT bugloop (one-off correction) nor benchmark (P07, passive measurement).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Process optimizer (metric > action)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p11_opt_{{target}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_metric",
+      "quality_gate"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
   },
   "opportunity_matrix": {
     "boundary": "Scored supplier-cost x market-demand join for buy/sourcing decisions (inbound twin of marketplace listing). NOT competitive_matrix (competitor feature battle card) nor roi_calculator (single-row margin math).",
@@ -1793,6 +4402,28 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F6_produce"
+  },
+  "partner_listing": {
+    "boundary": "Partner listing. NOT case_study (customer ref) nor app_directory_entry (app marketplace).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Partner directory listing for SI/reseller channels with tier, region, certifications, contact",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 4096,
+    "naming": "p05_pl_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "agent_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
   },
   "path_config": {
     "boundary": "File system paths. NOT env_config (generic variables) nor permission (access control).",
@@ -1883,6 +4514,261 @@
     "requires_live_tools": false,
     "primary_8f": "F2_become"
   },
+  "pipeline_template": {
+    "boundary": "Scenario-indexed agent sequence. NOT crew_template (fixed roles) nor workflow (DAG). Pipelines have sequence + revision loops.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Scenario-indexed agent pipeline recipe (new-feature, bug-fix, refactor, perf, infra)",
+    "last_reviewed": "2026-04-18",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p12_pt_{{scenario}}.yaml",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "workflow",
+      "dispatch_rule"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate",
+    "autonomy": {
+      "enabled": true,
+      "prerequisites": [
+        {
+          "action": "spec_kit",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        },
+        {
+          "action": "memory_recall",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        }
+      ]
+    }
+  },
+  "pitch_deck": {
+    "boundary": "Pitch deck. NOT case_study (narrative) nor pricing_page (tier detail).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Sales pitch deck with problem/solution/traction/ask slide structure",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p05_pd_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "customer_segment"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "planning_strategy": {
+    "boundary": "Planning approach. NOT reasoning_strategy (prompt reasoning) nor workflow (execution flow).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Agent planning approach definition",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "REASON",
+    "max_bytes": 5120,
+    "naming": "p03_ps_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "prompt_template",
+      "reasoning_strategy"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
+  "playground_config": {
+    "boundary": "Playground spec. NOT sandbox_spec (isolation) nor interactive_demo (UI).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Playground/sandbox config for interactive product evaluation",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p09_pg_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config",
+      "sandbox_spec"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "plugin": {
+    "boundary": "Pluggable system extension. NOT hook (specific event) nor skill (no structured phases).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Extensao plugavel",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 2048,
+    "naming": "p04_plug_{{name}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "function_def",
+      "toolkit"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "preference_dataset": {
+    "boundary": "RLHF preference data. NOT eval_dataset (evaluation examples) nor golden_test (expected outputs). Industry: RLHF reward modeling.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Curated dataset of human-labeled preference pairs used for RLHF training or direct preference optimization",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "GOVERN",
+    "max_bytes": 4096,
+    "naming": "p11_pd_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_dataset",
+      "customer_segment"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
+  "press_release": {
+    "boundary": "Press release. NOT blog_post (long-form) nor pitch_deck (visual).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Press release with AP-style headline, dateline, lede, quotes, boilerplate, contacts",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 4096,
+    "naming": "p05_pr_{{name}}.md",
+    "nucleus": "N02",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "pricing_page": {
+    "boundary": "Pricing page UI. NOT subscription_tier (data) nor landing_page (top-of-funnel).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Pricing page artifact with tier comparison and conversion copy",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p05_pp_{{name}}.md",
+    "nucleus": "N06",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "subscription_tier",
+      "customer_segment"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce",
+    "autonomy": {
+      "enabled": true,
+      "prerequisites": [
+        {
+          "action": "memory_recall",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        }
+      ]
+    }
+  },
+  "procedural_memory": {
+    "boundary": "Procedural memory. NOT entity_memory (entity facts) nor knowledge_card (declarative knowledge).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Skill and procedure storage/retrieval system",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 32768,
+    "naming": "p10_pm_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "entity_memory"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
+  "process_manager": {
+    "boundary": "Event-driven process coordinator. NOT workflow (step-sequential) nor supervisor (agent hierarchy). Enterprise Integration Patterns: Process Manager.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Event-driven coordinator for multi-step processes that routes domain events and issues commands to participants",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p12_pm_{{name}}.md",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "workflow",
+      "dispatch_rule",
+      "supervisor",
+      "domain_event",
+      "schedule"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
   "product_match": {
     "boundary": "Visual product matching / record-linkage by non-key join (photo+dimension+supplier-code; EAN excluded); doubles as a catalog auditor. NOT vision_tool (the raw primitive) nor competitive_matrix (competitor doc).",
     "core": false,
@@ -1907,6 +4793,50 @@
     "primary_8f": "F4_reason",
     "f7_enforce": true
   },
+  "product_tour": {
+    "boundary": "Product tour. NOT interactive_demo (sales) nor onboarding_flow (activation).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "In-app product tour walkthrough with step/tooltip/trigger spec",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p05_pt_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "user_journey",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "prompt_cache": {
+    "boundary": "Cache config. NOT session_state (ephemeral context), memory_summary (history), nor runtime_state (runtime variables).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "TTL, eviction, and invalidation config for cached LLM prompt/completion pairs",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p10_pc_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P10",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "system_prompt",
+      "prompt_template"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
   "prompt_compiler": {
     "boundary": "Transmutation rules and mappings. NOT a router (routes between providers), NOT a dispatch_rule (routes tasks to agents), NOT a prompt_template (template with vars). This IS the layer that resolves WHAT the user wants before any routing happens.",
     "core": true,
@@ -1924,6 +4854,28 @@
     "depends_on": [
       "prompt_template",
       "prompt_version"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "prompt_optimizer": {
+    "boundary": "Prompt optimizer. NOT prompt_compiler (CEX internal) nor optimizer (general optimization).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Automated prompt improvement and compilation tool",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p03_po_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "prompt_template",
+      "scoring_rubric"
     ],
     "requires_external_context": false,
     "requires_live_tools": false,
@@ -1951,6 +4903,27 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F3_inject"
+  },
+  "prompt_technique": {
+    "boundary": "Prompt technique. NOT prompt_template (reusable template) nor reasoning_strategy (reasoning-specific).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Specific prompting method or pattern",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 4096,
+    "naming": "p03_pt_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "prompt_template"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "prompt_template": {
     "boundary": "Template with variables. NOT user_prompt (fixed) nor system_prompt (identity).",
@@ -2007,6 +4980,48 @@
     "requires_live_tools": false,
     "primary_8f": "F6_produce"
   },
+  "prosody_config": {
+    "boundary": "Prosody/emotion settings. NOT tts_provider (provider integration) nor agent_profile (agent persona).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Voice personality and emotion settings",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 2048,
+    "naming": "p09_prs_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "prospective_memory": {
+    "boundary": "Future-action memory. NOT schedule (workflow schedule config) nor session_state (current session). Cognitive: prospective memory.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Scheduled future actions and reminders that an agent must execute at a future time or trigger condition",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "COLLABORATE",
+    "max_bytes": 2048,
+    "naming": "p10_pm_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "entity_memory"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
   "quality_gate": {
     "boundary": "Quality barrier with numeric score. NOT validator (P06, technical pass/fail) nor scoring_rubric (P07, defines criteria).",
     "core": true,
@@ -2028,6 +5043,73 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F7_govern"
+  },
+  "quantization_config": {
+    "boundary": "Quantization settings. NOT compression_config (context compression) nor model_architecture (full arch).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Model quantization and compression settings",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 2048,
+    "naming": "p09_qc_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "model_card",
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "query_optimizer": {
+    "boundary": "Query transformation and decomposition rules for RAG retrieval. NOT search_strategy (which strategy to use) nor retriever_config (retrieval parameters) nor rag_source (data source definition).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Query rewriting, expansion, and multi-hop decomposition rules for RAG retrieval",
+    "last_reviewed": "2026-04-23",
+    "llm_function": "CALL",
+    "max_bytes": 5120,
+    "naming": "p01_qo_{{name}}.md + .yaml",
+    "nucleus": "N03",
+    "pillar": "P01",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "search_strategy",
+      "retriever_config",
+      "rag_source"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "quickstart_guide": {
+    "boundary": "Quickstart doc. NOT integration_guide (deep) nor sdk_example (code-only).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Quickstart guide artifact for product/API onboarding in under 5 minutes",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 8192,
+    "naming": "p05_qs_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "context_doc"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "rag_source": {
     "boundary": "Pointer to external indexable source. NOT the content itself -- only a reference with URL and freshness.",
@@ -2093,6 +5175,28 @@
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
   },
+  "realtime_session": {
+    "boundary": "Realtime session config. NOT transport_config (network layer) nor voice_pipeline (full architecture).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Live bidirectional session configuration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p09_rs_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "session_state",
+      "session_backend"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
   "reasoning_strategy": {
     "boundary": "Reasoning technique. NOT prompt_technique (generic prompt pattern) nor thinking_config (budget settings).",
     "core": false,
@@ -2126,7 +5230,7 @@
     "naming": "p03_rt_{{topic}}.md",
     "nucleus": "N03",
     "pillar": "P03",
-    "sdk_module": null,
+    "sdk_module": "cex_sdk.reasoning.step",
     "spec_version": null,
     "status": "stable",
     "upstream_source": null,
@@ -2137,6 +5241,151 @@
     "requires_live_tools": false,
     "primary_8f": "F4_reason",
     "f7_enforce": true
+  },
+  "red_team_eval": {
+    "boundary": "Security eval. NOT e2e_eval.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Teste adversarial",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p07_rt_{{target}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "guardrail",
+      "scoring_rubric"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "referral_program": {
+    "boundary": "Referral spec. NOT ab_test_config (experiment) nor content_monetization (pricing).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Referral program design with viral coefficient and reward structure",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p11_rp_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "regression_check": {
+    "boundary": "Current vs previous. NOT benchmark.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Comparacao contra baseline",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p07_rc_{{target}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "quality_gate",
+      "eval_metric"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "renewal_workflow": {
+    "boundary": "Renewal workflow. NOT churn_prevention_playbook (intervention) nor workflow (generic).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Renewal workflow with stages, owners, automation, escalation, contract amendments",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p12_rw_{{name}}.yaml",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "churn_prevention_playbook",
+      "expansion_play"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "repo_map": {
+    "boundary": "Repo context map. NOT component_map (system architecture) nor knowledge_index (search index).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Codebase context extraction strategy",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 5120,
+    "naming": "p01_rm_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "knowledge_card",
+      "context_doc"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason",
+    "autonomy": {
+      "enabled": true,
+      "prerequisites": [
+        {
+          "action": "reposynth",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        }
+      ]
+    }
+  },
+  "reranker_config": {
+    "boundary": "Reranker config. NOT retriever_config (first-stage retrieval) nor retriever (retrieval logic).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Retrieval reranking model and strategy config",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "INJECT",
+    "max_bytes": 2048,
+    "naming": "p01_rr_{{name}}.yaml",
+    "nucleus": "N04",
+    "pillar": "P01",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "retriever_config",
+      "embedding_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
   },
   "research_pipeline": {
     "boundary": "Multi-source research pipeline STORM+CRAG+CRITIC. NOT retriever (local search) nor search_tool (simple web search).",
@@ -2205,6 +5454,29 @@
     "requires_live_tools": false,
     "primary_8f": "F6_produce"
   },
+  "retrieval_evaluator": {
+    "boundary": "IR-specific retrieval quality evaluation suite. NOT eval_metric (single generic metric) nor benchmark (broad model evaluation) nor retriever_config (retrieval parameters).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "RAG-specific information retrieval evaluation metrics (MRR, NDCG, precision@k, recall@k)",
+    "last_reviewed": "2026-04-23",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p07_re_{{name}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_metric",
+      "benchmark",
+      "retriever_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
+  },
   "retriever": {
     "boundary": "Search over embedding store or local index. NOT search_tool (external web search) nor document_loader (ingests files).",
     "core": true,
@@ -2270,6 +5542,74 @@
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
   },
+  "reverse_prompt": {
+    "boundary": "A typed, persisted repo-reconstruction PROMPT artifact synthesized from a public repo (kind:reverse_prompt, open_vars-filled, frozen per ADR 022); NOT prompt_template (the reusable {{var}} template it fills) nor knowledge_card (a factual note).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Repo-reconstruction prompt synthesized from a public repo: instructions to rebuild an equivalent project, filled with target_audience/target_runtime/complexity_level open_vars",
+    "last_reviewed": "2026-05-27",
+    "llm_function": "PRODUCE",
+    "max_bytes": 8192,
+    "naming": "p03_rp_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "prompt_template"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "revision_loop_policy": {
+    "boundary": "Max-N revision iterations before escalation. NOT retry_policy (transient failure) nor quality_gate (single check) nor regression_check (diff vs baseline).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Policy governing max revision iterations and escalation priority",
+    "last_reviewed": "2026-04-18",
+    "llm_function": "GOVERN",
+    "max_bytes": 2048,
+    "naming": "p11_rlp_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "quality_gate",
+      "retry_policy",
+      "regression_check",
+      "bugloop",
+      "pipeline_template"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "reward_model": {
+    "boundary": "Reward model config. NOT rl_algorithm (training algo) nor scoring_rubric (human eval rubric).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Process/outcome reward model configuration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p07_rwm_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "scoring_rubric",
+      "reward_signal"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
   "reward_signal": {
     "boundary": "Score. NOT quality_gate.",
     "core": true,
@@ -2286,6 +5626,28 @@
     "upstream_source": null,
     "depends_on": [
       "eval_metric"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "rl_algorithm": {
+    "boundary": "RL algorithm def. NOT training_method (broader training) nor reward_model (reward function).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Reinforcement learning training algorithm definition",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "BECOME",
+    "max_bytes": 5120,
+    "naming": "p02_rla_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P02",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "reward_model",
+      "training_method"
     ],
     "requires_external_context": false,
     "requires_live_tools": false,
@@ -2370,6 +5732,27 @@
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
   },
+  "runtime_rule": {
+    "boundary": "Technical runtime rule (timeouts, retries). NOT lifecycle_rule (P11, lifecycle) nor law (P08, inviolable).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Runtime rule (timeouts, retries, limits)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p09_rr_{{rule}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "runtime_state": {
     "boundary": "Variable mental state accumulated at runtime. NOT mental_model P02 (fixed agent identity, immutable) nor session_state (ephemeral, snapshot).",
     "core": true,
@@ -2391,6 +5774,151 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
+  },
+  "safety_hazard_taxonomy": {
+    "boundary": "Formal AI safety hazard classification taxonomy per MLCommons AILuminate v1.0. NOT content_filter (runtime filtering pipeline) nor guardrail (enforcement boundary). Provides taxonomy structure; enforcement is downstream.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "MLCommons AILuminate / Llama Guard hazard taxonomy -- 12 hazard-categories (violence/sexual/CBRN/...) + severity-level definitions + response-templates.",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 5120,
+    "naming": "p11_sht_{{scope}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": "AILuminate-1.0",
+    "status": "stable",
+    "upstream_source": "MLCommons AILuminate v1.0 (Dec 2024)",
+    "depends_on": [
+      "safety_policy",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "safety_policy": {
+    "boundary": "Safety governance rules. NOT threat_model (risk assessment) nor compliance_framework (regulatory mapping).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Organizational AI safety governance rules",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 5120,
+    "naming": "p11_sp_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "guardrail",
+      "constitutional_rule"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "saga": {
+    "boundary": "Distributed transaction with compensation. NOT workflow (sequential steps) nor process_manager (event coordination). Saga pattern (Garcia-Molina 1987).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Long-running distributed transaction composed of local steps with compensating actions for rollback",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "COLLABORATE",
+    "max_bytes": 4096,
+    "naming": "p12_saga_{{name}}.md",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "workflow",
+      "dispatch_rule",
+      "process_manager",
+      "chain"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "sales_playbook": {
+    "boundary": "Sales playbook. NOT pitch_deck (deck) nor discovery_questions (subset).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Sales playbook with personas, discovery flow, objection handling, close patterns",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 8192,
+    "naming": "p03_sp_{{name}}.md",
+    "nucleus": "N06",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "prompt_template"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce",
+    "autonomy": {
+      "enabled": true,
+      "prerequisites": [
+        {
+          "action": "memory_recall",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        }
+      ]
+    }
+  },
+  "sandbox_config": {
+    "boundary": "Sandbox/isolation config. NOT env_config (environment vars) nor code_executor (execution logic).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Isolated code execution environment config",
+    "last_reviewed": "2026-04-18",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 2048,
+    "naming": "p09_sb_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": "1.0.1",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "audit_log"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "sandbox_spec": {
+    "boundary": "Sandbox spec. NOT playground_config (interactive) nor env_config (prod).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Isolated sandbox environment spec for enterprise pilot procurement gates",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p09_sb_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
   },
   "schedule": {
     "boundary": "WHEN to run. NOT dispatch_rule.",
@@ -2434,6 +5962,49 @@
     "requires_live_tools": false,
     "primary_8f": "F7_govern"
   },
+  "sdk_example": {
+    "boundary": "SDK example. NOT api_reference (schema) nor integration_guide (narrative).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "SDK code example showing canonical integration patterns per language",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 5120,
+    "naming": "p04_sdk_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "api_client",
+      "function_def"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "search_strategy": {
+    "boundary": "Search/inference strategy. NOT reasoning_strategy (prompt technique) nor retriever (document retrieval).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Inference-time compute allocation strategy",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p04_ss_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "retriever_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
   "search_tool": {
     "boundary": "Searches and returns ranked results. NOT retriever (local vector store) nor document_loader (ingests files).",
     "core": true,
@@ -2474,6 +6045,28 @@
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
   },
+  "self_improvement_loop": {
+    "boundary": "Self-improvement loop. NOT bugloop (bug-specific) nor learning_record (passive learning).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Agent/system self-evolution mechanism",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p11_sil_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "quality_gate",
+      "reward_signal"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
   "session_backend": {
     "added_version": "10.0.0",
     "core": false,
@@ -2485,7 +6078,7 @@
     "naming": "p10_sb_{{backend}}.yaml",
     "nucleus": "N05",
     "pillar": "P10",
-    "sdk_module": null,
+    "sdk_module": "cex_sdk.session.base",
     "spec_version": null,
     "status": "stable",
     "upstream_source": null,
@@ -2540,6 +6133,162 @@
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
   },
+  "skill": {
+    "boundary": "Phased reusable capability with trigger. NOT agent (P02, has identity) or workflow (P12, orchestration steps) or action_prompt (P03, single-turn).",
+    "deprecated_by": null,
+    "description": "Reusable capability with trigger + phases (AgentSkills.io / Semantic Kernel pattern)",
+    "examples": [
+      "p04_skill_git_commit",
+      "p04_skill_web_search",
+      "p04_skill_code_review"
+    ],
+    "last_reviewed": "2026-04-18",
+    "layer": "",
+    "llm_function": "BECOME",
+    "naming": "p04_skill_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P04",
+    "schema_ref": "archetypes/builders/skill-builder/bld_schema_skill.md",
+    "spec_version": "1.0.1",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "function_def"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call",
+    "autonomy": {
+      "enabled": true,
+      "prerequisites": [
+        {
+          "action": "memory_recall",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        }
+      ]
+    }
+  },
+  "slo_definition": {
+    "boundary": "Measurable SLO target. NOT enterprise_sla (contractual SLA) nor quality_gate (build-time artifact scoring).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Measurable service level objective with target threshold and error budget for a system or agent",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p09_slo_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "enterprise_sla",
+      "quality_gate",
+      "benchmark"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "smoke_eval": {
+    "boundary": "Quick sanity test in <30s. NOT unit_eval (deep) nor benchmark (continuous metrics).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Quick sanity test (< 30s)",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p07_se_{{scope}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "quality_gate"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "social_publisher": {
+    "boundary": "Auto-posting pipeline for social networks. NOT notifier (one-off alerts) nor schedule (generic scheduling).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Automatic publishing agent: LOAD>FETCH>SELECT>GENERATE>OPTIMIZE>HASHTAGS>PUBLISH>LOG>NOTIFY>ROTATE",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p04_sp_{{name}}.md",
+    "nucleus": "N02",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "api_client",
+      "prompt_template"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "software_project": {
+    "boundary": "Complete project. NOT component_map (P08, partial view) nor agent_package (P02, agent package).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Complete software project definition -- architecture, dependencies, build, deployment, repo structure",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "BECOME",
+    "max_bytes": 8192,
+    "naming": "p02_software_project_{{slug}}.md + .yaml",
+    "nucleus": "N03",
+    "pillar": "P02",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "agent_card",
+      "context_doc"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate",
+    "autonomy": {
+      "enabled": true,
+      "prerequisites": [
+        {
+          "action": "spec_kit",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        },
+        {
+          "action": "blueprint",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        },
+        {
+          "action": "reposynth",
+          "when_verb": [
+            "create",
+            "improve"
+          ],
+          "irreversible": false
+        }
+      ]
+    }
+  },
   "spawn_config": {
     "boundary": "Agent_groups spawn configuration. NOT boot_config (P02, per-provider) nor env_config (P09, variables).",
     "core": true,
@@ -2561,6 +6310,92 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F1_constrain"
+  },
+  "sso_config": {
+    "boundary": "SSO spec. NOT rbac_policy (authorization) nor secret_config (credentials).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "SSO/SAML/OIDC identity provider integration configuration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 3072,
+    "naming": "p09_sso_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "oauth_app_config",
+      "secret_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "state_machine": {
+    "boundary": "Formal FSM. NOT workflow (DAG of steps) nor process_manager (event coordinator). UML statechart / XState.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Formal finite state machine with states, transitions, guards, and actions governing entity lifecycle",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "COLLABORATE",
+    "max_bytes": 4096,
+    "naming": "p12_sm_{{name}}.md",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "UML 2.5 / XState 5.0",
+    "depends_on": [
+      "workflow",
+      "dispatch_rule"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "streaming_config": {
+    "boundary": "Transport-level streaming config. NOT a response_format (output structure) nor a rate_limit_config (throughput). This controls HOW output is delivered.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "SSE, WebSocket, and chunked response streaming configuration for real-time LLM output",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 2048,
+    "naming": "p05_sc_{{name}}.yaml",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "transport_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "stt_provider": {
+    "boundary": "STT provider integration. NOT voice_pipeline (full arch) nor vad_config (detection settings).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Speech-to-text provider integration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p04_stt_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "api_client"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "subscription_tier": {
     "boundary": "Pricing tier. NOT content_monetization (strategy) nor pricing_page (UI).",
@@ -2602,6 +6437,72 @@
         }
       ]
     }
+  },
+  "supabase_data_layer": {
+    "boundary": "Supabase data layer. NOT db_connector (generic connection) nor api_client (REST client).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Supabase-specific data layer -- tables, RLS policies, edge functions, storage buckets, auth rules",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 8192,
+    "naming": "p04_supabase_data_layer_{{slug}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "db_connector",
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "supervisor": {
+    "boundary": "",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Crew orchestrator that composes and coordinates multiple builders",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "",
+    "max_bytes": 2048,
+    "naming": "ex_director_{topic}.md",
+    "nucleus": "N03",
+    "pillar": "P08",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "agent",
+      "agent_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "synthetic_data_config": {
+    "boundary": "Synthetic training data generation pipeline. NOT dataset_card (data documentation and metadata) nor eval_dataset (evaluation data specification) nor finetune_config (training job parameters).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Synthetic training data generation pipeline configuration",
+    "last_reviewed": "2026-04-23",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p01_sdc_{{name}}.md + .yaml",
+    "nucleus": "N03",
+    "pillar": "P01",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "dataset_card",
+      "eval_dataset"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "system_prompt": {
     "boundary": "Identity + rules + format. Read FIRST by the LLM.",
@@ -2673,6 +6574,119 @@
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
   },
+  "tenant_voice_profile": {
+    "boundary": "The brand-voice mold for the grounded copy engine: Block A generic skeleton + Block B grounding contract (G1-G10) + Block C tenant fill. NOT personality (agent persona) nor system_prompt (identity). May touch labels/framing/prose; NEVER ficha values or quantitative claims.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Tenant brand-voice profile for grounded ad-copy: identity/register/lexicon/mechanics + an inherited 10-rule grounding contract (facts-only, OMIT-on-missing). The voice knob a tenant fills; the copy layer loads it.",
+    "last_reviewed": "2026-06-23",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 8192,
+    "naming": "p03_tvp_{{tenant}}.md",
+    "nucleus": "N03",
+    "pillar": "P03",
+    "spec_version": "docs/specs/01_ads_catalog",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "system_prompt",
+      "guardrail"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "terminal_backend": {
+    "boundary": "Execution environment abstraction (local/docker/ssh/daytona/modal/singularity). NOT sandbox_config (security isolation).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Abstract execution backend selectable at runtime",
+    "last_reviewed": "2026-04-18",
+    "llm_function": "CALL",
+    "max_bytes": 3072,
+    "naming": "p09_tb_{{backend}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "secret_config",
+      "sandbox_config",
+      "env_config",
+      "deployment_manifest",
+      "runtime_rule",
+      "hibernation_policy"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "thinking_config": {
+    "boundary": "Thinking budget config. NOT reasoning_strategy (technique) nor context_window_config (token limits).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Extended thinking and budget token settings",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 2048,
+    "naming": "p09_thk_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "threat_model": {
+    "boundary": "Threat/risk assessment. NOT safety_policy (governance rules) nor guardrail (runtime filter).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Structured hazard/risk assessment for AI systems",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p11_tm_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P11",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "safety_policy",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
+  "tokenizer_config": {
+    "boundary": "Tokenization vocabulary and encoding rules. NOT embedding_config (vector representation parameters) nor model_provider (which model to call) nor context_window_config (token budget limits).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "BPE, sentencepiece, or tiktoken tokenizer parameters and vocabulary configuration",
+    "last_reviewed": "2026-04-23",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p09_tc_{{name}}.md + .yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": "1.0.0",
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "embedding_config",
+      "model_provider"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
   "toolkit": {
     "added_version": "10.0.0",
     "core": true,
@@ -2684,7 +6698,7 @@
     "naming": "p04_tk_{{name}}.md + .yaml",
     "nucleus": "N05",
     "pillar": "P04",
-    "sdk_module": null,
+    "sdk_module": "cex_sdk.tools.toolkit",
     "spec_version": null,
     "status": "stable",
     "upstream_source": null,
@@ -2694,6 +6708,114 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F5_call"
+  },
+  "trace_config": {
+    "added_version": "10.0.0",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Trace/span configuration for 8F pipeline observability",
+    "last_reviewed": "2026-04-14",
+    "layer": "runtime",
+    "llm_function": "GOVERN",
+    "naming": "p07_tc_{{scope}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "sdk_module": "cex_sdk.tracing.exporter",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "training_method": {
+    "boundary": "Training technique. NOT rl_algorithm (RL-specific) nor finetune_config (runtime fine-tune settings).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Model training/adaptation technique definition",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "BECOME",
+    "max_bytes": 5120,
+    "naming": "p02_trm_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P02",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_dataset",
+      "scoring_rubric"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "trajectory_eval": {
+    "boundary": "Trajectory evaluation. NOT benchmark (static eval) nor e2e_eval (end-to-end test).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Agent trajectory evaluation methodology",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 5120,
+    "naming": "p07_te_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_dataset",
+      "scoring_rubric"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "transport_config": {
+    "boundary": "Transport layer config. NOT realtime_session (session lifecycle) nor streaming_config (LLM streaming).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Network transport layer for realtime communication",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 2048,
+    "naming": "p09_tc_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
+  },
+  "tts_provider": {
+    "boundary": "TTS provider integration. NOT voice_pipeline (full arch) nor prosody_config (voice personality).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Text-to-speech provider integration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 4096,
+    "naming": "p04_tts_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "api_client"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "type_def": {
     "boundary": "Custom type definition in the system. NOT input_schema (input contract) nor interface (bilateral contract).",
@@ -2734,6 +6856,84 @@
     "requires_live_tools": false,
     "primary_8f": "F7_govern"
   },
+  "usage_quota": {
+    "boundary": "Quota spec. NOT rate_limit_config (RPM) nor cost_budget (dollars).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Usage quota and fair-use enforcement configuration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 3072,
+    "naming": "p09_uq_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "rate_limit_config",
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain",
+    "autonomy": {
+      "enabled": true,
+      "prerequisites": [
+        {
+          "action": "blueprint",
+          "when_verb": [
+            "create"
+          ],
+          "irreversible": false
+        }
+      ]
+    }
+  },
+  "usage_report": {
+    "boundary": "Usage analytics spec. NOT cost_budget (limits) nor trace_config (telemetry).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Usage analytics report spec for billing and CFO dashboards",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "GOVERN",
+    "max_bytes": 3072,
+    "naming": "p07_ur_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P07",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "eval_metric",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F7_govern"
+  },
+  "user_journey": {
+    "boundary": "Journey map. NOT workflow (system) nor onboarding_flow (activation sub-journey).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "End-to-end user journey map from awareness to conversion",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p05_uj_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P05",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "customer_segment",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
   "user_model": {
     "boundary": "Cross-session dialectic user representation (Honcho-pattern). NOT entity_memory (any entity) nor session_state (single session).",
     "core": true,
@@ -2758,6 +6958,27 @@
     "requires_external_context": true,
     "requires_live_tools": false,
     "primary_8f": "F2_become"
+  },
+  "vad_config": {
+    "boundary": "VAD settings only. NOT voice_pipeline (full arch) nor stt_provider (transcription).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Voice activity detection settings",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 2048,
+    "naming": "p09_vad_{{name}}.yaml",
+    "nucleus": "N05",
+    "pillar": "P09",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F1_constrain"
   },
   "validation_schema": {
     "boundary": "Formal contract enforced by the SYSTEM after generation. NOT response_format P05 (injected into prompt, LLM sees it).",
@@ -2799,6 +7020,51 @@
     "requires_live_tools": false,
     "primary_8f": "F7_govern"
   },
+  "value_object": {
+    "boundary": "Immutable value type. NOT type_def (generic type) nor enum_def (enumeration). Evans Value Object.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Immutable typed value without identity, defined entirely by its attributes and equality",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 2048,
+    "naming": "p06_vo_{{name}}.md",
+    "nucleus": "N03",
+    "pillar": "P06",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": "Evans DDD 2003",
+    "depends_on": [
+      "aggregate_root",
+      "enum_def",
+      "type_def",
+      "input_schema"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F4_reason"
+  },
+  "vc_credential": {
+    "boundary": "VC 2.0 JSON-LD with data-integrity proof. NOT vc-jose-cose (JWT encoding), DID document, or Verifiable Presentation.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "W3C Verifiable Credential 2.0 for AI agent identity, provenance attestation, and cross-domain trust",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CONSTRAIN",
+    "max_bytes": 4096,
+    "naming": "p10_vc_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": "2.0",
+    "status": "stable",
+    "upstream_source": "https://www.w3.org/TR/vc-data-model-2.0/",
+    "depends_on": [
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
   "vector_store": {
     "added_version": "10.0.0",
     "core": true,
@@ -2810,7 +7076,7 @@
     "naming": "p01_vdb_{{backend}}.yaml",
     "nucleus": "N04",
     "pillar": "P01",
-    "sdk_module": null,
+    "sdk_module": "cex_sdk.vectordb",
     "spec_version": null,
     "status": "stable",
     "upstream_source": null,
@@ -2841,6 +7107,95 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F5_call"
+  },
+  "visual_workflow": {
+    "boundary": "Visual workflow editor. NOT workflow (code-defined) nor dag (directed acyclic graph).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "GUI-based workflow editor configuration",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p12_vw_{{name}}.md",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "workflow",
+      "diagram"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
+  },
+  "voice_pipeline": {
+    "boundary": "Voice pipeline architecture. NOT tts_provider (single provider) nor stt_provider (single provider).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "End-to-end voice agent architecture definition",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 5120,
+    "naming": "p04_vp_{{name}}.md",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "stt_provider",
+      "tts_provider",
+      "vad_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "webhook": {
+    "boundary": "Receives or sends events via HTTP. NOT api_client (request-response) nor notifier (message delivery).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Endpoint HTTP event-driven inbound/outbound",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "CALL",
+    "max_bytes": 1024,
+    "naming": "p04_webhook_{{event}}.md + .json",
+    "nucleus": "N05",
+    "pillar": "P04",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "api_client",
+      "env_config"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F5_call"
+  },
+  "webinar_script": {
+    "boundary": "Webinar script. NOT pitch_deck (visual deck) nor sales_playbook (1:1 selling).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Webinar script with intro/agenda/segments/Q&A/CTA + speaker notes + slide cues",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 6144,
+    "naming": "p03_ws_{{name}}.md",
+    "nucleus": "N02",
+    "pillar": "P03",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "prompt_template",
+      "knowledge_card"
+    ],
+    "requires_external_context": true,
+    "requires_live_tools": false,
+    "primary_8f": "F6_produce"
   },
   "white_label_config": {
     "boundary": "White-label spec. NOT brand_config (identity) nor env_config (runtime).",
@@ -2915,6 +7270,27 @@
       ]
     }
   },
+  "workflow_node": {
+    "boundary": "Workflow node type. NOT workflow (full workflow) nor visual_workflow (GUI editor config).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Typed node in visual/programmatic workflow",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 4096,
+    "naming": "p12_wn_{{name}}.md",
+    "nucleus": "N07",
+    "pillar": "P12",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "workflow"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
   "workflow_primitive": {
     "added_version": "10.0.0",
     "core": true,
@@ -2926,7 +7302,7 @@
     "naming": "p12_wp_{{primitive}}.yaml",
     "nucleus": "N03",
     "pillar": "P12",
-    "sdk_module": null,
+    "sdk_module": "cex_sdk.workflow",
     "spec_version": null,
     "status": "stable",
     "upstream_source": null,
@@ -2936,5 +7312,48 @@
     "requires_external_context": false,
     "requires_live_tools": false,
     "primary_8f": "F8_collaborate"
+  },
+  "workflow_run_crate": {
+    "boundary": "Execution provenance packaging. NOT workflow definition (workflow, P12), raw dataset (dataset_card, P01), or agent identity (vc_credential, P10).",
+    "core": false,
+    "deprecated_by": null,
+    "description": "RO-Crate 1.2 Workflow Run Crate: scientific workflow execution provenance with CreateAction, ORCID attribution, and FAIR metadata",
+    "last_reviewed": "2026-04-14",
+    "llm_function": "PRODUCE",
+    "max_bytes": 5120,
+    "naming": "p10_wrc_{{name}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": "1.2",
+    "status": "stable",
+    "upstream_source": "https://www.researchobject.org/ro-crate/specification/1.2/",
+    "depends_on": [
+      "workflow",
+      "knowledge_card"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F8_collaborate"
+  },
+  "working_memory": {
+    "boundary": "Task-scoped short-term memory. NOT session_state (session persistence) nor entity_memory (long-term entity store). Cognitive: working memory.",
+    "core": false,
+    "deprecated_by": null,
+    "description": "Short-term context store for a single active task, cleared after task completion",
+    "last_reviewed": "2026-04-17",
+    "llm_function": "INJECT",
+    "max_bytes": 3072,
+    "naming": "p10_wm_{{task}}.md",
+    "nucleus": "N04",
+    "pillar": "P10",
+    "spec_version": null,
+    "status": "stable",
+    "upstream_source": null,
+    "depends_on": [
+      "entity_memory"
+    ],
+    "requires_external_context": false,
+    "requires_live_tools": false,
+    "primary_8f": "F3_inject"
   }
 }
