@@ -95,9 +95,29 @@ Full protocol and the worked "5 words in -> professional artifact out" example: 
 | P05 | Output | P11 | Feedback |
 | P06 | Schema | P12 | Orchestration |
 
-Every one of the 8 nuclei has all 12 -- open the file explorer's sidebar and expand any
-`N0X_*` folder to see the same 12 subfolders repeat. Convention over configuration, made
-visible.
+Every one of the 8 nuclei mirrors this same 12-pillar taxonomy by convention -- though
+what's actually on disk varies per nucleus today; only `N00_genesis/` carries all 12 as
+folders right now. The Anatomy section just below explains why the rest look thinner, and
+why that's by design, not a gap.
+
+## Anatomy: why nuclei look "incomplete"
+
+Open `N01_intelligence/` or any other `N0X_*` folder and you'll find 3-4 pillar subfolders,
+not 12. That's not missing work -- every nucleus ships an **identity kit**, not a pre-filled
+department:
+
+| Ships in every nucleus | Lives in |
+|---|---|
+| Identity + sin lens | `rules/n0X-*.md` |
+| Machine-readable identity | `P02_model/nucleus_def_n0X.md` |
+| Capability card | `P08_architecture/agent_card_n0X.md` |
+| Domain vocabulary | `P01_knowledge/kc_*_vocabulary.md` |
+
+(most nuclei also carry `P10_memory/procedural_memory_n0X.md`, their operating SOPs). The
+complete 12-pillar mold -- every pillar present, schema files included -- ships as
+[[N00_genesis/rules/n00-genesis|N00_genesis]]. The rest of a nucleus's pillars (P03-P07,
+P09, P11, P12) appear the first time your own `/build` writes into them: git does not track
+empty folders, so an un-built pillar is invisible on disk -- nothing was removed.
 
 ## Navigate
 
@@ -158,3 +178,4 @@ empresa, site e segmento.
 *Front door generated for this checkout's Obsidian Publish graph. Every count above was
 measured, every link was tested against this tree -- see this mission's build report for
 the exact verification commands.*
+

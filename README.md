@@ -144,6 +144,12 @@ Full walkthrough, first brain interaction, and troubleshooting: [QUICKSTART.md](
 | Repo map + live-counted stats | [INDEX.md](INDEX.md) | Where everything lives, counted for real |
 | Point-your-agent-here guide | [AGENTS.md](AGENTS.md) | How Claude Code / Codex / Gemini / Ollama should read this repo |
 
+Each `N0X_*` nucleus ships an **identity kit** (rules, machine identity, capability card,
+domain vocabulary), not all 12 pillars pre-filled -- only `N00_genesis/` carries the complete
+mold (schemas for all 12). The rest of a nucleus's pillars appear the first time your own
+`/build` writes into them; git doesn't track empty directories, so nothing was removed. Full
+anatomy + identity-kit table: [HOME.md](HOME.md#anatomy-why-nuclei-look-incomplete).
+
 Based on CEXAI (Apache-2.0) -- see [License](#license) below.
 
 ## Want it filled FOR you?
