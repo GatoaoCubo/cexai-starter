@@ -69,15 +69,11 @@ This starter ships unfilled -- but the same brain, fully populated for a real bu
 looks like this:
 
 <p align="center">
-  <img src="docs/assets/hero_grid.gif" alt="The domain nuclei working in parallel, filled" width="720">
-</p>
-
-<p align="center">
   <img src="docs/assets/gallery/brain.png" alt="The typed knowledge brain" width="360">
   <img src="docs/assets/gallery/sovereignty.png" alt="Sovereign -- self-hosted, phones home to nobody" width="360">
 </p>
 
-That is a **filled** fabrication in motion: the 6 domain nuclei (N01-N06) producing typed
+That is a **filled** fabrication: the 6 domain nuclei (N01-N06) producing typed
 artifacts in parallel under N07's orchestration, a live storefront and admin dashboard wired
 to real brand tokens, and every `[preencher]` replaced with a real company's own facts. Want
 that, without doing the fill yourself? See

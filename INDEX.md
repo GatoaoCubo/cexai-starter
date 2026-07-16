@@ -33,7 +33,7 @@ https://github.com/GatoaoCubo/cexai-starter/
 +-- start.sh / start.ps1             -- one-command menu launcher (storefront / admin / API / all)
 |
 +-- docs/
-|   +-- assets/          -- logo, hero, favicon, hero_grid.gif, gallery/ (this doc set's own media)
+|   +-- assets/          -- logo, hero, favicon, gallery/ (this doc set's own media)
 |   +-- RUNTIME_ANY_MODEL.md  -- swap the LLM backend behind the native claude CLI
 |   +-- HYDRATION_MAP.md      -- knowledge-carry map for this tenant
 |
