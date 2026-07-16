@@ -31,12 +31,6 @@ tldr: Golden and anti-examples for research pipeline construction, demonstrating
 llm_function: BECOME
 parent: null
 8f: "F5_call"
-related:
-  - bld_collaboration_research_pipeline
-  - p04_cli_research_pipeline_n01
-  - bld_instruction_research_pipeline
-  - p02_agent_research_pipeline_intelligence
-  - bld_knowledge_card_research_pipeline
 ---
 ## Identity
 

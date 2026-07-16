@@ -18,10 +18,6 @@ keywords: [component map of enum_def, and architectural position, enum def const
 density_score: 0.90
 related:
   - enum-def-builder
-  - p10_lr_enum_def_builder
-  - bld_instruction_enum_def
-  - p11_qg_enum_def
-  - bld_collaboration_enum_def
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -83,7 +79,5 @@ guardrail       --depends-->  extensible
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[enum-def-builder]] | upstream | 0.46 |
-| [[p10_lr_enum_def_builder]] | downstream | 0.38 |
 | [[bld_prompt_enum_def]] | upstream | 0.37 |
-| [[p11_qg_enum_def]] | downstream | 0.36 |
 | [[bld_orchestration_enum_def]] | downstream | 0.36 |

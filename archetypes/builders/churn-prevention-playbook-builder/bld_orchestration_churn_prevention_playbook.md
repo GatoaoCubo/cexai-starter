@@ -20,10 +20,6 @@ does, related artifacts]
 density_score: 0.85
 related:
   - churn-prevention-playbook-builder
-  - bld_collaboration_nps_survey
-  - bld_collaboration_renewal_workflow
-  - bld_instruction_churn_prevention_playbook
-  - bld_output_template_churn_prevention_playbook
 ---
 ## Crew Role
 Produces churn intervention playbooks for CS teams. Acts as the retention strategy layer
@@ -56,7 +52,3 @@ Does NOT handle:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[churn-prevention-playbook-builder]] | upstream | 0.37 |
-| [[bld_collaboration_nps_survey]] | sibling | 0.33 |
-| [[bld_collaboration_renewal_workflow]] | sibling | 0.30 |
-| [[bld_instruction_churn_prevention_playbook]] | upstream | 0.27 |
-| [[bld_output_template_churn_prevention_playbook]] | upstream | 0.24 |

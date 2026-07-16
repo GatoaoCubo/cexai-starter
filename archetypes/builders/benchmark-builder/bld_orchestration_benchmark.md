@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [benchmark construction, collaboration benchmark, benchmark, builder, examples, "### crew: performance optimization", my role, crew compositions, quality pipeline, performance optimization]
 density_score: 0.90
 related:
-  - bld_collaboration_golden_test
-  - bld_collaboration_e2e_eval
   - benchmark-builder
-  - bld_collaboration_bugloop
   - bld_architecture_benchmark
 ---
 # Collaboration: benchmark-builder
@@ -64,8 +61,5 @@ None — independent builder (layer 0). Benchmarks can be defined for any system
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_golden_test]] | sibling | 0.43 |
-| [[bld_collaboration_e2e_eval]] | sibling | 0.39 |
 | [[benchmark-builder]] | upstream | 0.35 |
-| [[bld_collaboration_bugloop]] | sibling | 0.34 |
 | [[bld_architecture_benchmark]] | upstream | 0.31 |

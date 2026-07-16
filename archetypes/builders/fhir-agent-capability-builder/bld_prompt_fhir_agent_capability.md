@@ -33,9 +33,7 @@ keywords:
 density_score: 0.85
 related:
   - fhir-agent-capability-builder
-  - bld_knowledge_card_fhir_agent_capability
   - bld_tools_fhir_agent_capability
-  - kc_fhir_agent_capability
   - bld_schema_fhir_agent_capability
 ---
 ## Phase 1: RESEARCH
@@ -72,7 +70,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fhir-agent-capability-builder]] | downstream | 0.69 |
-| [[bld_knowledge_card_fhir_agent_capability]] | upstream | 0.63 |
 | [[bld_tools_fhir_agent_capability]] | downstream | 0.58 |
-| [[kc_fhir_agent_capability]] | upstream | 0.57 |
 | [[bld_schema_fhir_agent_capability]] | downstream | 0.56 |

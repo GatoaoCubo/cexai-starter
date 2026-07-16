@@ -30,7 +30,6 @@ density_score: 0.90
 related:
   - bld_config_model_provider
   - bld_config_embedder_provider
-  - bld_collaboration_model_provider
   - model-provider-builder
   - bld_memory_model_provider
 ---
@@ -98,6 +97,5 @@ python _tools/cex_score.py --apply bld-config-model-card.md
 |----------|-------------|-------|
 | [[bld_config_model_provider]] | sibling | 0.56 |
 | [[bld_config_embedder_provider]] | sibling | 0.48 |
-| [[bld_collaboration_model_provider]] | upstream | 0.45 |
 | [[model-provider-builder]] | upstream | 0.38 |
 | [[bld_memory_model_provider]] | downstream | 0.37 |

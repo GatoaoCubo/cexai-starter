@@ -18,10 +18,6 @@ keywords: [component map of bugloop, and architectural position, bugloop constru
 density_score: 0.90
 related:
   - bugloop-builder
-  - bld_knowledge_card_bugloop
-  - p01_kc_bugloop
-  - p11_qg_bugloop
-  - bld_instruction_bugloop
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -79,7 +75,3 @@ escalation      --produces--> rollback_policy
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bugloop-builder]] | downstream | 0.45 |
-| [[bld_knowledge_card_bugloop]] | upstream | 0.40 |
-| [[p01_kc_bugloop]] | downstream | 0.39 |
-| [[p11_qg_bugloop]] | downstream | 0.37 |
-| [[bld_instruction_bugloop]] | upstream | 0.37 |

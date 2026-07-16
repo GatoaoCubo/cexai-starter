@@ -33,9 +33,6 @@ parent: null
 8f: "F1_constrain"
 related:
   - bld_architecture_session_backend
-  - bld_collaboration_session_backend
-  - p01_kc_session_backend
-  - bld_instruction_session_backend
 ---
 ## Identity
 

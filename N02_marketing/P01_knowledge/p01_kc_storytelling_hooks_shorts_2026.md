@@ -19,7 +19,6 @@ long_tails:
 tags: [shorts, reels, storytelling, hooks, retention, tiktok, youtube, instagram, 2026, solo_creator, dicas_e_truques]
 related:
   - hook-builder
-  - bld_collaboration_hook_config
 ---
 
 # Shorts/Reels Storytelling Playbook 2026

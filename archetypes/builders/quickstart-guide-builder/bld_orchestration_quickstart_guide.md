@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [quickstart_guide construction, collaboration quickstart guide, quickstart_guide, builder, collaboration, crew role  
 creates, receives from, product mgmt, produces for, technical writers]
 density_score: 0.85
-related:
-  - bld_collaboration_integration_guide
-  - bld_collaboration_product_tour
-  - bld_collaboration_reward_model
-  - bld_collaboration_cohort_analysis
-  - bld_collaboration_ab_test_config
 ---
 ## Crew Role  
 Creates concise, user-friendly quickstart guides that enable end-users to achieve first-value outcomes with minimal friction. Collaborates with designers, engineers, and product managers to ensure accuracy and clarity.  
@@ -43,12 +37,3 @@ Creates concise, user-friendly quickstart guides that enable end-users to achiev
 
 ## Boundary  
 Does NOT handle integration details (handled by integration_guide-builder), code examples (handled by sdk_example-builder), or localization (handled by localization-team).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_integration_guide]] | sibling | 0.35 |
-| [[bld_collaboration_product_tour]] | sibling | 0.28 |
-| [[bld_collaboration_reward_model]] | sibling | 0.27 |
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.26 |
-| [[bld_collaboration_ab_test_config]] | sibling | 0.25 |

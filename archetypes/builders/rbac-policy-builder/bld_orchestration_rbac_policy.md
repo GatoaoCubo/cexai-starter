@@ -19,11 +19,7 @@ designs, based access control, receives from, produces for, boundary
 does]
 density_score: 0.85
 related:
-  - bld_collaboration_permission
-  - bld_collaboration_secret_config
   - rbac-policy-builder
-  - bld_collaboration_agent_computer_interface
-  - bld_collaboration_path_config
 ---
 ## Crew Role  
 Designs, validates, and maintains Role-Based Access Control (RBAC) policies to enforce least-privilege access models across systems.  

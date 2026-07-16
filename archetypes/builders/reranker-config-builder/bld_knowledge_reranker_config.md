@@ -21,8 +21,6 @@ related:
   - reranker-config-builder
   - bld_tools_reranker_config
   - p01_kc_information_retrieval_fundamentals
-  - p01_kc_atom_21_rag_taxonomy
-  - n00_reranker_config_manifest
 ---
 ## Domain Overview
 Reranker_config defines strategies for reordering initial retrieval results using machine learning models, enhancing relevance in search and recommendation systems. Unlike first-stage retrievers (e.g., BM25, FAISS), rerankers apply fine-tuned models (e.g., dense retrievers, cross-encoders) to refine top-k candidates. Key applications include e-commerce product search, academic paper retrieval, and conversational AI, where precision over recall is critical. Modern systems often combine traditional scoring (e.g., cosine similarity) with neural ranking (e.g., BERT, DPR) to balance speed and accuracy.
@@ -71,5 +69,3 @@ Reranking addresses limitations of first-stage retrievers, such as lexical misma
 | [[reranker-config-builder]] | related | 0.43 |
 | [[bld_tools_reranker_config]] | downstream | 0.32 |
 | [[p01_kc_information_retrieval_fundamentals]] | sibling | 0.32 |
-| [[p01_kc_atom_21_rag_taxonomy]] | sibling | 0.30 |
-| [[n00_reranker_config_manifest]] | sibling | 0.29 |

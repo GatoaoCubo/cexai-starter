@@ -19,10 +19,6 @@ keywords: [red team eval construction, collaboration red team eval, red_team_eva
 density_score: 0.90
 related:
   - red-team-eval-builder
-  - n00_red_team_eval_manifest
-  - bld_collaboration_unit_eval
-  - p11_fb_red_team_eval
-  - p01_kc_eval_testing
 ---
 # Collaboration: red-team-eval-builder
 ## My Role in Crews
@@ -85,7 +81,3 @@ I configure adversarial evaluations so security teams can probe LLM systems for 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[red-team-eval-builder]] | upstream | 0.45 |
-| [[n00_red_team_eval_manifest]] | upstream | 0.43 |
-| [[bld_collaboration_unit_eval]] | sibling | 0.40 |
-| [[p11_fb_red_team_eval]] | upstream | 0.39 |
-| [[p01_kc_eval_testing]] | upstream | 0.39 |

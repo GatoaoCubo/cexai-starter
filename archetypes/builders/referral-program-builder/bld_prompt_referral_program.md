@@ -18,10 +18,6 @@ keywords: [referral_program construction, instruction referral program, referral
 density_score: 0.85
 related:
   - referral-program-builder
-  - p11_qg_referral_program
-  - bld_knowledge_card_referral_program
-  - p10_mem_referral_program_builder
-  - n00_referral_program_manifest
 ---
 ## Phase 1: RESEARCH  
 1. Analyze target audience demographics and referral behavior patterns.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[referral-program-builder]] | downstream | 0.44 |
-| [[p11_qg_referral_program]] | downstream | 0.42 |
-| [[bld_knowledge_card_referral_program]] | upstream | 0.40 |
-| [[p10_mem_referral_program_builder]] | downstream | 0.35 |
-| [[n00_referral_program_manifest]] | downstream | 0.35 |

@@ -18,11 +18,9 @@ updated: "2026-04-07"
 keywords: [template with, for permission production, permission construction, output template permission, permission, builder, examples, output template, access matrix, allow list]
 density_score: 0.90
 related:
-  - p03_ins_permission
   - permission-builder
   - p09_perm_{{SCOPE_SLUG}}
   - bld_schema_permission
-  - p11_qg_permission
 ---
 # Output Template: permission
 ```yaml
@@ -77,8 +75,6 @@ linked_artifacts:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_permission]] | upstream | 0.41 |
 | [[permission-builder]] | downstream | 0.38 |
 | [\[p09_perm_`{{SCOPE_SLUG}}`\]] | downstream | 0.38 |
 | [[bld_schema_permission]] | downstream | 0.37 |
-| [[p11_qg_permission]] | downstream | 0.37 |

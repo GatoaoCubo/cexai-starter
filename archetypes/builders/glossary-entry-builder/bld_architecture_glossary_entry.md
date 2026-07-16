@@ -17,11 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of glossary_entry, and architectural position, glossary entry construction, architecture glossary entry, glossary_entry, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - p01_kc_glossary_entry
-  - p11_qg_glossary_entry
   - glossary-entry-builder
-  - n00_glossary_entry_manifest
-  - bld_knowledge_card_glossary_entry
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -68,7 +64,6 @@ knowledge_index (P10)    --depends-->  glossary_entry
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_glossary_entry]] | upstream | 0.52 |
-| [[p11_qg_glossary_entry]] | downstream | 0.45 |
 | [[glossary-entry-builder]] | upstream | 0.44 |
 | n00_glossary_entry_manifest | upstream | 0.42 |
 | [[bld_knowledge_glossary_entry]] | upstream | 0.41 |

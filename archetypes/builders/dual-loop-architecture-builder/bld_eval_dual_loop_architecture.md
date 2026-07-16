@@ -19,11 +19,7 @@ keywords: [dual_loop_architecture construction, dual_loop_architecture, builder,
 this, fail condition, scoring guide, audit trail]
 density_score: 0.85
 related:
-  - bld_knowledge_card_dual_loop_architecture
   - dual-loop-architecture-builder
-  - bld_collaboration_dual_loop_architecture
-  - bld_instruction_dual_loop_architecture
-  - kc_dual_loop_architecture
 ---
 ## Quality Gate
 

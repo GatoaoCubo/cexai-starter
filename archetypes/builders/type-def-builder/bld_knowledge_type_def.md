@@ -18,11 +18,9 @@ updated: "2026-04-07"
 keywords: [atomic searchable facts, type def construction, knowledge card type def, type_def, builder, examples, p06_td_*, input_schema, validator, validation_schema]
 density_score: 0.90
 related:
-  - p03_ins_type_def
   - bld_schema_type_def
   - type-def-builder
   - bld_architecture_type_def
-  - p11_qg_type_def
 ---
 # Domain Knowledge: type_def
 ## Executive Summary
@@ -88,8 +86,6 @@ A `type_def` (P06, spec layer) is a reusable named type declaration — the voca
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_type_def]] | downstream | 0.56 |
 | [[bld_schema_type_def]] | downstream | 0.54 |
 | [[type-def-builder]] | downstream | 0.51 |
 | [[bld_architecture_type_def]] | downstream | 0.44 |
-| [[p11_qg_type_def]] | downstream | 0.43 |

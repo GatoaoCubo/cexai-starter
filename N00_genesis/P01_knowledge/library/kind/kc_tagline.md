@@ -16,11 +16,7 @@ domain: "knowledge management"
 tldr: "Defines the knowledge card specification for kc: tagline, with structural rules, validation gates, and integration points."
 when_to_use: "When producing a short memorable phrase that captures brand essence for hero sections or ads"
 related:
-  - bld_knowledge_card_tagline
   - tagline-builder
-  - bld_collaboration_tagline
-  - n00_tagline_manifest
-  - bld_output_template_tagline
 ---
 # Knowledge Card: tagline
 
@@ -74,4 +70,3 @@ python _tools/cex_retriever.py "KC: Tagline" --top 5
 | [[tagline-builder]] | downstream | 0.42 |
 | [[bld_orchestration_tagline]] | downstream | 0.39 |
 | n00_tagline_manifest | sibling | 0.37 |
-| [[bld_output_template_tagline]] | downstream | 0.35 |

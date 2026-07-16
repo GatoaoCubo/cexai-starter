@@ -29,10 +29,7 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_architecture_content_monetization
-  - bld_instruction_content_monetization
-  - bld_config_social_publisher
   - bld_config_research_pipeline
-  - bld_knowledge_card_content_monetization
 ---
 # Config: content_monetization Production Rules
 

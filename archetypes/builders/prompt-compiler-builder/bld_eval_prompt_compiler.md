@@ -23,10 +23,7 @@ updated: '2026-04-12'
 keywords: [prompt compiler, verifies kind coverage, kind: prompt_compiler, yaml.safe_load(frontmatter), p03_pc_*, id.startswith("p03_pc_"), path(file).stem == id]
 density_score: 0.9
 related:
-  - p03_ins_prompt_compiler
   - prompt-compiler-builder
-  - bld_knowledge_card_prompt_compiler
-  - p01_kc_prompt_compiler
   - bld_schema_prompt_compiler
 ---
 ## Quality Gate

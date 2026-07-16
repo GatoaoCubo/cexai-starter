@@ -17,8 +17,6 @@ author: n03_builder
 tldr: "Cross-session dialectic user representation implementing Honcho pattern. SQLite default, pgvector optional. Pre/post-response insight loop per turn."
 when_to_use: "When building persistent per-user memory that grows across sessions via the Honcho dialectic loop"
 related:
-  - bld_knowledge_card_user_model
-  - bld_collaboration_user_model
   - user-model-builder
   - bld_architecture_user_model
 ---

@@ -18,9 +18,6 @@ keywords: [component map of unit_eval, and architectural position, unit eval con
 density_score: 0.90
 related:
   - unit-eval-builder
-  - p01_kc_unit_eval
-  - bld_knowledge_card_unit_eval
-  - n00_unit_eval_manifest
   - bld_architecture_golden_test
 ---
 # Architecture: unit_eval in the CEX

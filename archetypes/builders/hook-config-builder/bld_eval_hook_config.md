@@ -29,10 +29,6 @@ keywords:
 density_score: 0.90
 related:
   - hook-config-builder
-  - bld_instruction_hook_config
-  - bld_knowledge_card_hook_config
-  - bld_collaboration_hook_config
-  - p10_lr_hook_config_builder
 ---
 ## Quality Gate
 

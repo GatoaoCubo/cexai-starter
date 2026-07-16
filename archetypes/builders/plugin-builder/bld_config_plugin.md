@@ -28,10 +28,8 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, plugin construction, config plugin, plugin, builder, examples, "p04_plug_{slug}.md"]
 density_score: 0.90
 related:
-  - bld_collaboration_plugin
   - plugin-builder
   - bld_schema_plugin
-  - bld_knowledge_card_plugin
   - bld_architecture_plugin
 ---
 # Config: plugin Production Rules
@@ -80,8 +78,6 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_plugin]] | upstream | 0.47 |
 | [[plugin-builder]] | upstream | 0.46 |
 | [[bld_schema_plugin]] | upstream | 0.45 |
-| [[bld_knowledge_card_plugin]] | upstream | 0.44 |
 | [[bld_architecture_plugin]] | upstream | 0.44 |

@@ -19,12 +19,6 @@ common, pattern
 effective, evidence
 reviewed]
 density_score: 0.85
-related:
-  - p10_lr_judge_config_builder
-  - p10_lr_planning_strategy_builder
-  - p10_lr_reasoning_strategy_builder
-  - p10_mem_prompt_technique_builder
-  - p10_mem_eval_metric_builder
 ---
 ## Observation
 Common issues include inconsistent formatting, ambiguous instruction phrasing, and over-reliance on generic templates that fail to align with specific use cases. Overlooking validation steps often leads to suboptimal performance in downstream tasks.
@@ -41,12 +35,3 @@ Reviewed artifacts with structured templates showed 30% higher success rates in 
 - Prioritize iterative testing with diverse edge cases.
 - Avoid overly generic language; tailor examples to the target domain.
 - Document assumptions and limitations to guide future refinements.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p10_lr_judge_config_builder]] | related | 0.36 |
-| [[p10_lr_planning_strategy_builder]] | related | 0.32 |
-| [[p10_lr_reasoning_strategy_builder]] | related | 0.30 |
-| [[p10_mem_prompt_technique_builder]] | sibling | 0.29 |
-| [[p10_mem_eval_metric_builder]] | sibling | 0.26 |

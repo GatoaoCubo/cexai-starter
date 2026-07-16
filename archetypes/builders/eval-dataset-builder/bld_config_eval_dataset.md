@@ -28,10 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, eval dataset construction, config eval dataset, eval_dataset, builder, examples, "p07_ds_{dataset_slug}.md"]
 density_score: 0.90
 related:
-  - bld_output_template_eval_dataset
-  - bld_knowledge_card_eval_dataset
   - bld_tools_eval_dataset
-  - p11_qg_eval_dataset
   - bld_schema_eval_dataset
 ---
 # Config: eval_dataset Production Rules
@@ -96,8 +93,6 @@ Rule: all present split values must sum to exactly 1.0. Use 3 decimal places max
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_eval_dataset]] | upstream | 0.40 |
 | [[bld_knowledge_eval_dataset]] | upstream | 0.37 |
 | [[bld_tools_eval_dataset]] | upstream | 0.36 |
-| [[p11_qg_eval_dataset]] | downstream | 0.33 |
 | [[bld_schema_eval_dataset]] | upstream | 0.32 |

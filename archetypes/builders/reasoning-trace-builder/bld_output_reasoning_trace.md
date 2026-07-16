@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [template with, reasoning trace construction, output template reasoning trace, reasoning_trace, builder, examples, "p03_rt_{agent}_{timestamp}.yaml", "p03_rt_{{agent}}_{{timestamp}}.yaml", and, output template]
 density_score: 0.90
 related:
-  - bld_knowledge_card_reasoning_trace
   - bld_schema_reasoning_trace
-  - p03_ins_reasoning_trace_builder
-  - p11_qg_reasoning_trace
   - bld_config_reasoning_trace
 ---
 # Output Template: reasoning_trace
@@ -90,8 +87,5 @@ trigger: "{{instruction_id_or_user_request_or_omit}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.53 |
 | [[bld_schema_reasoning_trace]] | downstream | 0.50 |
-| [[p03_ins_reasoning_trace_builder]] | upstream | 0.50 |
-| [[p11_qg_reasoning_trace]] | downstream | 0.49 |
 | [[bld_config_reasoning_trace]] | downstream | 0.47 |

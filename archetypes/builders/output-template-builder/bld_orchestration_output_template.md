@@ -17,12 +17,6 @@ updated: "2026-07-07"
 8f: "F8_collaborate"
 keywords: [output_template construction, collaboration output template, output_template, builder, examples, "### crew: kind scaffolding stack", my role, crew compositions, reflexive iso9, broader recurring document]
 density_score: 0.87
-related:
-  - bld_collaboration_kind
-  - bld_collaboration_prompt_template
-  - bld_collaboration_response_format
-  - bld_collaboration_formatter
-  - bld_collaboration_field_manifest
 ---
 # Collaboration: output-template-builder
 ## My Role in Crews

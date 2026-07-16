@@ -7,8 +7,6 @@ related:
   - approval-request-builder
   - hitl-config-builder
   - kind-builder
-  - p01_kc_approval_request
-  - adr_v03_governance_taxonomy
 ---
 
 # approval-request-builder Sub-Agent
@@ -108,5 +106,3 @@ Five duties bind any agent that emits an artifact:
 | [[approval-request-builder]] | related | 0.38 |
 | [[hitl-config-builder]] | related (emitting-policy builder) | 0.34 |
 | [[kind-builder]] | related | 0.31 |
-| [[p01_kc_approval_request]] | related | 0.30 |
-| [[adr_v03_governance_taxonomy]] | related (scope-defining ADR) | 0.28 |

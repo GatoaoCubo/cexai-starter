@@ -13,11 +13,7 @@ density_score: 1.0
 source: every-layout.dev, css-tricks.com, web.dev/learn/css
 created: 2026-04-01
 related:
-  - p06_is_responsive_breakpoints_n02
-  - p01_kc_responsive_layouts
-  - n06_output_pricing_page
   - p01_kc_visual_hierarchy_principles
-  - n02_kc_typography_web
 ---
 
 # KC: Responsive Layout Systems
@@ -329,4 +325,3 @@ import Image from 'next/image';
 | p01_kc_responsive_layouts | sibling | 0.56 |
 | n06_output_pricing_page | downstream | 0.53 |
 | [[p01_kc_visual_hierarchy_principles]] | sibling | 0.38 |
-| [[n02_kc_typography_web]] | sibling | 0.30 |

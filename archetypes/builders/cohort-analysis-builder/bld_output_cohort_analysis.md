@@ -18,9 +18,6 @@ keywords: [cohort_analysis construction, output template cohort analysis, cohort
 density_score: 0.85
 related:
   - bld_config_cohort_analysis
-  - bld_instruction_cohort_analysis
-  - n00_cohort_analysis_manifest
-  - p10_mem_cohort_analysis_builder
   - cohort-analysis-builder
 ---
 ```yaml
@@ -53,7 +50,4 @@ print(summary)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_cohort_analysis]] | downstream | 0.31 |
-| [[bld_instruction_cohort_analysis]] | upstream | 0.26 |
-| [[n00_cohort_analysis_manifest]] | downstream | 0.26 |
-| [[p10_mem_cohort_analysis_builder]] | downstream | 0.26 |
 | [[cohort-analysis-builder]] | downstream | 0.25 |

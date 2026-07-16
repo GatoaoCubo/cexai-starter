@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [knowledge index construction, instruction knowledge index, knowledge_index, builder, examples, p10_bi_, write algorithm, write scope, write ranking, write filters]
 density_score: 0.90
 related:
-  - p11_qg_knowledge_index
   - knowledge-index-builder
-  - bld_instruction_retriever_config
-  - bld_instruction_memory_scope
-  - bld_instruction_golden_test
 ---
 # Instructions: How to Produce a knowledge_index
 ## Phase 1: RESEARCH
@@ -83,7 +79,6 @@ python _tools/cex_skill_loader.py --verify knowledge
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_knowledge_index]] | downstream | 0.39 |
 | [[knowledge-index-builder]] | downstream | 0.38 |
 | [[bld_prompt_retriever_config]] | sibling | 0.38 |
 | [[bld_prompt_memory_scope]] | sibling | 0.37 |

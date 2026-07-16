@@ -18,10 +18,6 @@ updated: "2026-04-07"
 keywords: [embedding config construction, collaboration embedding config, embedding_config, builder, examples, "### crew: vector infrastructure", my role, crew compositions, pipeline setup, vector infrastructure]
 density_score: 0.90
 related:
-  - bld_collaboration_knowledge_index
-  - bld_collaboration_retriever_config
-  - bld_collaboration_embedder_provider
-  - bld_collaboration_knowledge_card
   - embedding-config-builder
 ---
 # Collaboration: embedding-config-builder

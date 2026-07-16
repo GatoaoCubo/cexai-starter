@@ -4,10 +4,8 @@ description: "Builds ONE retry_policy artifact via 8F pipeline. Loads retry-poli
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_tools_retry_policy
-  - p01_kc_pillar_brief_p02_model_en
   - retry-policy-builder
 ---
 

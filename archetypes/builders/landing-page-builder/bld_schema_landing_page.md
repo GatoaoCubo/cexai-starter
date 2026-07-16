@@ -17,7 +17,6 @@ keywords: [landing page construction, schema landing page, landing_page, builder
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
-  - n00_landing_page_manifest
   - bld_schema_tagline
   - bld_schema_model_registry
   - bld_config_landing_page

@@ -34,9 +34,7 @@ density_score: 0.90
 related:
   - bld_schema_backpressure_policy
   - bld_architecture_backpressure_policy
-  - p11_qg_backpressure_policy
   - backpressure-policy-builder
-  - bld_output_template_backpressure_policy
 ---
 # Instructions: How to Produce a backpressure_policy
 
@@ -81,6 +79,4 @@ related:
 |----------|-------------|-------|
 | [[bld_schema_backpressure_policy]] | downstream | 0.53 |
 | [[bld_architecture_backpressure_policy]] | downstream | 0.46 |
-| [[p11_qg_backpressure_policy]] | downstream | 0.43 |
 | [[backpressure-policy-builder]] | downstream | 0.43 |
-| [[bld_output_template_backpressure_policy]] | downstream | 0.43 |

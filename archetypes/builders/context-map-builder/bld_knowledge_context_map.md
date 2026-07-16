@@ -17,11 +17,9 @@ author: n03_builder
 keywords: [and conformist patterns, not bounded_context nor component_map, context_map, bounded-context, strategic-design, knowledge card, driven design]
 density_score: 0.90
 related:
-  - kc_context_map
   - context-map-builder
   - bld_architecture_context_map
   - bld_schema_context_map
-  - bld_instruction_context_map
 ---
 
 # Knowledge Card: context_map
@@ -127,8 +125,6 @@ context_map (P08)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_context_map]] | sibling | 0.75 |
 | [[context-map-builder]] | downstream | 0.55 |
 | [[bld_architecture_context_map]] | downstream | 0.52 |
 | [[bld_schema_context_map]] | downstream | 0.51 |
-| [[bld_instruction_context_map]] | downstream | 0.44 |

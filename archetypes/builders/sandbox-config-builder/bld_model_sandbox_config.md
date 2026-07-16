@@ -20,11 +20,8 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - kc_sandbox_config
   - playground-config-builder
   - sandbox-spec-builder
-  - bld_collaboration_sandbox_config
-  - p01_kc_code_executor
 ---
 ## Identity
 
@@ -66,8 +63,5 @@ The sandbox_config-builder agent is a specialized configuration generator respon
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_sandbox_config]] | upstream | 0.46 |
 | [[playground-config-builder]] | sibling | 0.46 |
 | [[sandbox-spec-builder]] | sibling | 0.44 |
-| [[bld_collaboration_sandbox_config]] | downstream | 0.40 |
-| [[p01_kc_code_executor]] | upstream | 0.38 |

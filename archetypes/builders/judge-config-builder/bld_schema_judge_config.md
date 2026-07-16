@@ -58,7 +58,7 @@ related:
 | length_bias_mitigation | string | e.g., "normalize_by_token_count" |
 | calibration_examples | array | Few-shot exemplars with gold scores |
 | self_consistency_n | integer | Number of judge samples to aggregate |
-| provider_override | enum | Override the default LLM provider for this judge instance. One of: `claude`, `gemini`, `gpt`, `ollama`, `codex`. When null, inherits from caller. Used by cross-provider council ([[p12_ct_cross_provider_council]]) to instantiate the same judge_config against different providers. |
+| provider_override | enum | Override the default LLM provider for this judge instance. One of: `claude`, `gemini`, `gpt`, `ollama`, `codex`. When null, inherits from caller. Used by cross-provider council (p12_ct_cross_provider_council) to instantiate the same judge_config against different providers. |
 
 ## ID Pattern
 

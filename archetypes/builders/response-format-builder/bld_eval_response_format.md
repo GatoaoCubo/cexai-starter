@@ -22,12 +22,6 @@ updated: '2026-03-27'
 8f: "F7_govern"
 keywords: [response format, verifies format type, kind: response_format, yaml.safe_load(frontmatter), p05_rf_*, id.startswith("p05_rf_"), path(file).stem == id]
 density_score: 0.85
-related:
-  - p11_qg_quality_gate
-  - p11_qg_prompt_template
-  - bld_collaboration_response_format
-  - p11_qg_few_shot_example
-  - p11_qg_creation_artifacts
 ---
 ## Quality Gate
 

@@ -16,9 +16,7 @@ question_type: "open-ended"
 target_audience: "enterprise economic buyers (CTO, CEO, VP Engineering) + champion"
 sensitivity_level: "low"
 related:
-  - sales_playbook_n06
   - p01_cm_cexai_vs_ai_frameworks
-  - enterprise_sla_cex_platform
 ---
 
 # Discovery Questions -- CEXAI Implementation Services (MEDDIC)

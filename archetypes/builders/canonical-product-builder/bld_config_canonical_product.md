@@ -15,7 +15,6 @@ density_score: 0.88
 created: "2026-07-03"
 updated: "2026-07-03"
 related:
-  - bld_context_sources_data_contract
   - bld_config_validation_schema
   - bld_tools_canonical_product
   - kc_canonical_product
@@ -70,7 +69,6 @@ python _tools/cex_doctor.py --scope canonical-product-builder
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_context_sources_data_contract]] | sibling | 0.50 |
 | [[bld_config_validation_schema]] | sibling | 0.48 |
 | [[bld_tools_canonical_product]] | upstream | 0.42 |
 | [[kc_canonical_product]] | upstream | 0.41 |

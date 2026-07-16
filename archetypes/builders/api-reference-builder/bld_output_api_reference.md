@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [api_reference construction, output template api reference, api_reference, builder, output_template, related artifacts, title description, http method, method, endpoint]
 density_score: 0.85
 related:
-  - kc_api_reference
-  - bld_output_template_integration_guide
-  - p10_lr_api_reference_builder
-  - bld_instruction_api_reference
   - api-reference-builder
 ---
 ```yaml
@@ -71,8 +67,4 @@ Content-Type: application/json
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_api_reference]] | upstream | 0.32 |
-| [[bld_output_template_integration_guide]] | sibling | 0.27 |
-| [[p10_lr_api_reference_builder]] | downstream | 0.24 |
-| [[bld_instruction_api_reference]] | upstream | 0.24 |
 | [[api-reference-builder]] | downstream | 0.24 |

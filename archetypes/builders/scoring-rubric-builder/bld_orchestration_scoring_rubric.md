@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [scoring rubric construction, collaboration scoring rubric, scoring_rubric, builder, examples, "### crew: builder quality governance", "### crew: new artifact kind launch", my role, crew compositions, evaluation system bootstrap]
 density_score: 0.90
 related:
-  - bld_collaboration_quality_gate
   - scoring-rubric-builder
-  - bld_knowledge_card_scoring_rubric
-  - p01_kc_scoring_rubric
   - bld_memory_scoring_rubric
 ---
 # Collaboration: scoring-rubric-builder

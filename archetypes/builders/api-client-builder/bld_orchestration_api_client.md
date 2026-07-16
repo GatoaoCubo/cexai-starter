@@ -19,10 +19,6 @@ keywords: [api client construction, collaboration api client, api_client, builde
 density_score: 0.90
 related:
   - api-client-builder
-  - p01_kc_api_client
-  - bld_collaboration_openapi_spec
-  - bld_tools_client
-  - bld_collaboration_connector
 ---
 # Collaboration: api-client-builder
 ## My Role in Crews
@@ -67,5 +63,4 @@ I specify unidirectional API consumers so agents can call external services reli
 | [[api-client-builder]] | upstream | 0.46 |
 | [[kc_api_client]] | upstream | 0.35 |
 | [[bld_orchestration_openapi_spec]] | sibling | 0.34 |
-| [[bld_tools_client]] | upstream | 0.33 |
 | bld_collaboration_connector | sibling | 0.33 |

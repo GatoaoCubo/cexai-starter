@@ -15,12 +15,6 @@ keywords: [process manager orchestration, workflow coordination, and lifecycle m
 density_score: 0.81
 created: "2026-04-17"
 updated: "2026-04-17"
-related:
-  - bld_rules_event_stream
-  - bld_rules_value_object
-  - bld_manifest_process_manager
-  - bld_rules_aggregate_root
-  - bld_knowledge_card_process_manager
 ---
 # Rules: process_manager
 ## Absolute Rules (HARD -- never violate)
@@ -69,12 +63,3 @@ sequencing: tested
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope orchestration
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_rules_event_stream]] | sibling | 0.37 |
-| [[bld_rules_value_object]] | sibling | 0.36 |
-| [[bld_manifest_process_manager]] | sibling | 0.34 |
-| [[bld_rules_aggregate_root]] | sibling | 0.32 |
-| [[bld_knowledge_card_process_manager]] | sibling | 0.31 |

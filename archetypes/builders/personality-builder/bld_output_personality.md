@@ -32,8 +32,6 @@ keywords:
   - "| humor enum | dry | |"
 density_score: 0.90
 related:
-  - n00_personality_manifest
-  - p11_qg_personality
   - personality-builder
   - bld_schema_personality
   - kc_personality
@@ -133,7 +131,6 @@ If over budget: reduce tone_examples to 3, anti_patterns to 3, values to 3.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | n00_personality_manifest | upstream | 0.59 |
-| [[p11_qg_personality]] | downstream | 0.57 |
 | [[personality-builder]] | upstream | 0.56 |
 | [[bld_schema_personality]] | upstream | 0.51 |
 | [[kc_personality]] | upstream | 0.50 |

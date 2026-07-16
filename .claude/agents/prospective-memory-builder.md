@@ -4,9 +4,7 @@ description: "Builds ONE prospective_memory artifact via 8F pipeline. Loads pros
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_prospective_memory
   - prospective-memory-builder
-  - bld_knowledge_card_prospective_memory
   - memory-scope-builder
   - kind-builder
 ---
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prospective_memory]] | related | 0.37 |
 | [[prospective-memory-builder]] | related | 0.34 |
-| [[bld_knowledge_card_prospective_memory]] | related | 0.31 |
 | [[memory-scope-builder]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |

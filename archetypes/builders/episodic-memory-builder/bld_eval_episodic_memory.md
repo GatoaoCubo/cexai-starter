@@ -32,9 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_episodic_memory
-  - bld_output_template_episodic_memory
-  - bld_instruction_episodic_memory
-  - p10_qg_working_memory
   - episodic-memory-builder
 ---
 ## Quality Gate

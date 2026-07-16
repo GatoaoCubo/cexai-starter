@@ -4,11 +4,8 @@ description: "Builds ONE prompt_optimizer artifact via 8F pipeline. Loads prompt
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p03_prompt_en
-  - p03_sp_builder_nucleus
   - system-prompt-builder
   - kind-builder
-  - n00_prompt_optimizer_manifest
 ---
 
 # prompt-optimizer-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_pillar_brief_p03_prompt_en]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[system-prompt-builder]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_prompt_optimizer_manifest]] | related | 0.29 |

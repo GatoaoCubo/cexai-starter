@@ -20,9 +20,6 @@ density_score: 0.85
 related:
   - bld_tools_sandbox_spec
   - sandbox-spec-builder
-  - kc_sandbox_spec
-  - p09_qg_sandbox_spec
-  - bld_instruction_sandbox_spec
 ---
 ## Domain Overview
 Sandbox_spec artifacts define the isolated environment enterprise buyers and regulated industries require before signing. Where playground_config optimizes for PLG conversion, sandbox_spec optimizes for procurement: separate tenant, separate data, signed audit trail, compliance evidence. Reference implementations include Stripe test mode (dual-key pattern: test_ vs live_ prefixes), AWS Firecracker micro-VMs (sub-125ms boot, KVM isolation), Google gVisor (user-space kernel), and HIPAA/PCI-DSS mandated test environments.
@@ -73,6 +70,3 @@ Sandbox is an enterprise procurement gate. Without a credible sandbox_spec, deal
 |----------|-------------|-------|
 | [[bld_tools_sandbox_spec]] | downstream | 0.39 |
 | [[sandbox-spec-builder]] | downstream | 0.35 |
-| [[kc_sandbox_spec]] | sibling | 0.34 |
-| [[p09_qg_sandbox_spec]] | downstream | 0.32 |
-| [[bld_instruction_sandbox_spec]] | downstream | 0.31 |

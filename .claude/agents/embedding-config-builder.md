@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - embedding-config-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_embedding_config
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # embedding-config-builder Sub-Agent

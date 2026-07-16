@@ -21,9 +21,6 @@ density_score: 0.92
 related:
   - bld_tools_eval_framework
   - bld_schema_eval_framework
-  - bld_collaboration_eval_dataset
-  - p01_kc_pillar_brief_p07_evals_en
-  - bld_collaboration_unit_eval
 ---
 ## Domain Overview
 
@@ -84,6 +81,3 @@ The core distinction for modern agents is task-based eval (static datasets with 
 |----------|-------------|-------|
 | [[bld_tools_eval_framework]] | downstream | 0.56 |
 | [[bld_schema_eval_framework]] | downstream | 0.42 |
-| [[bld_collaboration_eval_dataset]] | downstream | 0.34 |
-| [[p01_kc_pillar_brief_p07_evals_en]] | sibling | 0.33 |
-| [[bld_collaboration_unit_eval]] | downstream | 0.32 |

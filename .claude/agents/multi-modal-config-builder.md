@@ -4,9 +4,7 @@ description: "Builds ONE multi_modal_config artifact via 8F pipeline. Loads mult
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_multi_modal_config
   - bld_config_multi_modal_config
-  - p03_sp_builder_nucleus
   - multi-modal-config-builder
   - kind-builder
 ---
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_multi_modal_config]] | related | 0.36 |
 | [[bld_config_multi_modal_config]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[multi-modal-config-builder]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |

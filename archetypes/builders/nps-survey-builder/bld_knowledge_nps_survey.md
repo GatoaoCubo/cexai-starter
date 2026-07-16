@@ -19,10 +19,6 @@ net promoter score, harvard business review, key concepts, net promoter system, 
 density_score: 0.85
 related:
   - nps-survey-builder
-  - bld_instruction_nps_survey
-  - kc_nps_survey
-  - n00_nps_survey_manifest
-  - p11_qg_nps_survey
 ---
 ## Domain Overview  
 Net Promoter Score (NPS) surveys are a cornerstone of customer experience (CX) measurement, enabling organizations to gauge loyalty and predict growth. The core mechanism involves a single question ("How likely are you to recommend [company/product] to a friend?") on a 0–10 scale, with responses segmented into promoters (9–10), passives (7–8), and detractors (0–6). NPS is widely adopted across industries for its simplicity and correlation with revenue growth, as highlighted in Reichheld’s seminal 2003 Harvard Business Review paper. Follow-up questions, segmentation, and response routing enhance actionable insights, while cadence ensures consistent feedback without survey fatigue.  
@@ -67,7 +63,3 @@ Net Promoter Score (NPS) surveys are a cornerstone of customer experience (CX) m
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[nps-survey-builder]] | downstream | 0.54 |
-| [[bld_instruction_nps_survey]] | downstream | 0.46 |
-| [[kc_nps_survey]] | sibling | 0.45 |
-| [[n00_nps_survey_manifest]] | sibling | 0.40 |
-| [[p11_qg_nps_survey]] | downstream | 0.32 |

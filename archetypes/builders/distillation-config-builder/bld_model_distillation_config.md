@@ -20,7 +20,6 @@ tldr: "Builder identity for distillation config -- teacher-student pairs, temper
 llm_function: BECOME
 8f: "F2_become"
 related:
-  - kc_distillation_config
   - bld_knowledge_distillation_config
   - bld_orchestration_distillation_config
   - bld_prompt_distillation_config
@@ -65,7 +64,6 @@ I do NOT handle: model architecture (agent), synthetic data (synthetic_data_conf
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_distillation_config]] | upstream | 0.61 |
 | [[bld_knowledge_distillation_config]] | upstream | 0.60 |
 | [[bld_orchestration_distillation_config]] | downstream | 0.59 |
 | [[bld_prompt_distillation_config]] | downstream | 0.57 |

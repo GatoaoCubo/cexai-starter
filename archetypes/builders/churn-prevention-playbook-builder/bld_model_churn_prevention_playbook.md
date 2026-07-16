@@ -19,12 +19,6 @@ specializes, gainsight calls, routing
 keywords, crew role
 acts]
 density_score: 0.85
-related:
-  - bld_instruction_churn_prevention_playbook
-  - bld_collaboration_churn_prevention_playbook
-  - bld_knowledge_card_churn_prevention_playbook
-  - p03_qg_churn_prevention_playbook
-  - p10_lr_churn_prevention_playbook_builder
 ---
 ## Identity
 
@@ -83,12 +77,3 @@ ALWAYS use Gainsight/ChurnZero terminology (health score, CTA, playbook, touchpo
 ALWAYS define success criteria for each intervention (what = a successful save).
 NEVER include revenue commitments or discount authority in save scripts.
 NEVER conflate churn prevention with expansion/upsell -- these are separate playbooks.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_churn_prevention_playbook]] | related | 0.49 |
-| [[bld_collaboration_churn_prevention_playbook]] | downstream | 0.46 |
-| [[bld_knowledge_card_churn_prevention_playbook]] | upstream | 0.46 |
-| [[p03_qg_churn_prevention_playbook]] | downstream | 0.40 |
-| [[p10_lr_churn_prevention_playbook_builder]] | downstream | 0.39 |

@@ -17,10 +17,7 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - p03_ins_embedder_provider
   - bld_schema_embedder_provider
-  - bld_knowledge_card_embedder_provider
-  - bld_output_template_model_provider
   - bld_config_embedder_provider
 ---
 # Output Template: embedder_provider

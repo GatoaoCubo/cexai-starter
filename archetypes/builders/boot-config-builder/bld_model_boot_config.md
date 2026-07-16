@@ -31,11 +31,7 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_boot_config
-  - bld_instruction_boot_config
-  - p01_kc_boot_config
   - bld_architecture_boot_config
-  - bld_knowledge_card_boot_config
 ---
 ## Identity
 

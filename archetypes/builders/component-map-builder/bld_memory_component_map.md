@@ -26,10 +26,7 @@ title: "Memory Component Map"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_instruction_component_map
   - bld_config_component_map
-  - bld_collaboration_component_map
-  - bld_knowledge_card_component_map
   - component-map-builder
 ---
 ## Summary
@@ -90,8 +87,5 @@ python _tools/cex_score.py --apply p10-lr-component-map-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_component_map]] | upstream | 0.43 |
 | [[bld_config_component_map]] | related | 0.38 |
-| [[bld_collaboration_component_map]] | downstream | 0.35 |
-| [[bld_knowledge_card_component_map]] | upstream | 0.35 |
 | [[component-map-builder]] | upstream | 0.33 |

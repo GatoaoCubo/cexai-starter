@@ -21,8 +21,6 @@ related:
   - bld_memory_naming_rule
   - bld_tools_naming_rule
   - naming-rule-builder
-  - p01_kc_naming_rule
-  - bld_collaboration_validation_schema
 ---
 # Collaboration: naming-rule-builder
 ## My Role in Crews
@@ -73,5 +71,3 @@ I define scope-bound patterns (prefix, suffix, separator, case, versioning, coll
 | [[bld_memory_naming_rule]] | downstream | 0.41 |
 | [[bld_tools_naming_rule]] | upstream | 0.38 |
 | [[naming-rule-builder]] | related | 0.34 |
-| [[p01_kc_naming_rule]] | downstream | 0.32 |
-| [[bld_collaboration_validation_schema]] | sibling | 0.29 |

@@ -30,10 +30,7 @@ keywords:
   - "entity-lifecycle"
 density_score: 0.90
 related:
-  - bld_knowledge_card_state_machine
   - bld_config_state_machine
-  - kc_state_machine
-  - bld_instruction_state_machine
   - bld_architecture_state_machine
 ---
 ## Quality Gate

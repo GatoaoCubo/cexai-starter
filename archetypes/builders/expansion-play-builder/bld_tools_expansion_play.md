@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [expansion_play construction, tools expansion play, expansion_play, builder, tools, upsell, gainsight, salesforce, production tools, validation tools]
 density_score: 0.85
 related:
-  - bld_knowledge_card_expansion_play
   - expansion-play-builder
   - bld_tools_churn_prevention_playbook
-  - bld_instruction_expansion_play
-  - p10_mem_expansion_play_builder
 ---
 ## Production Tools
 | Tool               | Purpose                                    | When                            |
@@ -56,8 +53,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_expansion_play]] | upstream | 0.33 |
 | [[expansion-play-builder]] | upstream | 0.32 |
 | [[bld_tools_churn_prevention_playbook]] | sibling | 0.30 |
-| [[bld_instruction_expansion_play]] | upstream | 0.30 |
-| [[p10_mem_expansion_play_builder]] | downstream | 0.30 |

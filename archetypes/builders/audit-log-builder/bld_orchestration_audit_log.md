@@ -20,10 +20,6 @@ does, related artifacts]
 density_score: 0.85
 related:
   - audit-log-builder
-  - bld_knowledge_card_audit_log
-  - bld_collaboration_sandbox_config
-  - kc_audit_log
-  - bld_collaboration_sso_config
 ---
 ## Crew Role  
 Collects, formats, and stores system events for compliance, security, and operational auditing. Ensures logs are immutable, searchable, and traceable to specific actions or users.  
@@ -49,7 +45,3 @@ Does NOT handle trace configuration (observability) or regression checks (qualit
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[audit-log-builder]] | upstream | 0.27 |
-| [[bld_knowledge_card_audit_log]] | upstream | 0.26 |
-| [[bld_collaboration_sandbox_config]] | sibling | 0.23 |
-| [[kc_audit_log]] | upstream | 0.22 |
-| [[bld_collaboration_sso_config]] | sibling | 0.22 |

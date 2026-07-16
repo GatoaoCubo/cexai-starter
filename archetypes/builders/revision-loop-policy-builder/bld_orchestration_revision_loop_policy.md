@@ -36,10 +36,6 @@ keywords:
 density_score: 0.87
 related:
  - bld_orchestration_default
- - n00_revision_loop_policy_manifest
- - p11_collab_curation_nudge
- - kc_revision_loop_policy
- - p11_fb_revision_loop_policy
 ---
 ## F8 COLLABORATE Protocol
 
@@ -102,7 +98,3 @@ Recommended action: review gate failures, adjust artifact manually or lower qual
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_default]] | related | 0.34 |
-| [[n00_revision_loop_policy_manifest]] | upstream | 0.31 |
-| [[p11_collab_curation_nudge]] | sibling | 0.28 |
-| [[kc_revision_loop_policy]] | upstream | 0.28 |
-| [[p11_fb_revision_loop_policy]] | upstream | 0.27 |

@@ -18,10 +18,6 @@ keywords: [component map of benchmark, and architectural position, benchmark con
 density_score: 0.90
 related:
   - benchmark-builder
-  - p01_kc_benchmark
-  - bld_collaboration_benchmark
-  - n00_benchmark_manifest
-  - p10_lr_benchmark-builder
 ---
 # Architecture: benchmark in the CEX
 ## Component Inventory
@@ -74,7 +70,3 @@ benchmark         --produces-->  raw_results (feeds downstream consumers)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[benchmark-builder]] | upstream | 0.55 |
-| [[p01_kc_benchmark]] | upstream | 0.46 |
-| [[bld_collaboration_benchmark]] | downstream | 0.44 |
-| [[n00_benchmark_manifest]] | upstream | 0.41 |
-| [[p10_lr_benchmark-builder]] | downstream | 0.37 |

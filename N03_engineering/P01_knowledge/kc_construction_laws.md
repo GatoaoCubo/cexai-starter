@@ -16,10 +16,6 @@ keywords: [shokunin, axiom, token opt, resilience, execution, placeholder, navig
 density_score: 0.94
 related:
   - p02_mm_cex_architecture_n04
-  - p08_cm_n03
-  - p01_faq_cex_common_questions
-  - p01_kc_axiom
-  - p01_kc_pillar_brief_p03_prompt_en
 ---
 
 # The 11 Construction Laws
@@ -173,6 +169,5 @@ L04 Repository -> save if worthy
 |----------|-------------|-------|
 | [[p02_mm_cex_architecture_n04]] | related | 0.22 |
 | p08_cm_n03 | downstream | 0.21 |
-| [[p01_faq_cex_common_questions]] | related | 0.20 |
 | [[kc_axiom]] | sibling | 0.20 |
 | p01_kc_pillar_brief_p03_prompt_en | sibling | 0.20 |

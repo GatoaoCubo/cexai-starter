@@ -20,7 +20,6 @@ related:
   - nucleus_def_n03.md
   - nucleus_def_n01.md
   - nucleus_def_n04.md
-  - bld_knowledge_card_nucleus_def
   - nucleus_def_n05.md
 ---
 ## Naming Convention

@@ -19,7 +19,6 @@ density_score: 0.85
 related:
   - fabrication-manifest-builder
   - kc_orchestration_vocabulary
-  - bld_knowledge_card_fabrication_manifest
   - bld_architecture_fabrication_manifest
   - bld_tools_fabrication_manifest
 ---
@@ -72,6 +71,5 @@ NOT run the real pipeline stages itself -- that is `_tools/cex_bootstrap_orchest
 |----------|-------------|-------|
 | [[fabrication-manifest-builder]] | related | 0.46 |
 | [[kc_orchestration_vocabulary]] | upstream | 0.35 |
-| [[bld_knowledge_card_fabrication_manifest]] | upstream | 0.34 |
 | [[bld_architecture_fabrication_manifest]] | upstream | 0.32 |
 | [[bld_tools_fabrication_manifest]] | upstream | 0.31 |

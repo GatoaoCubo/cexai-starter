@@ -18,10 +18,6 @@ keywords: [component map of eval_dataset, and architectural position, eval datas
 density_score: 0.90
 related:
   - eval-dataset-builder
-  - bld_collaboration_eval_dataset
-  - p01_kc_eval_dataset
-  - p11_qg_eval_dataset
-  - bld_instruction_eval_dataset
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -89,5 +85,4 @@ model           --depends-->  eval_dataset (via eval_runner)
 | [[eval-dataset-builder]] | upstream | 0.50 |
 | [[bld_orchestration_eval_dataset]] | downstream | 0.49 |
 | [[kc_eval_dataset]] | upstream | 0.44 |
-| [[p11_qg_eval_dataset]] | downstream | 0.42 |
 | [[bld_prompt_eval_dataset]] | upstream | 0.36 |

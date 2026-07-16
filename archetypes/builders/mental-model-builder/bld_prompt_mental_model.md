@@ -28,9 +28,6 @@ keywords: [decision trees, domain boundaries, and fallback behavior, instruction
 density_score: 0.95
 llm_function: REASON
 related:
-  - bld_collaboration_agent
-  - p01_kc_agent
-  - p03_ins_runtime_state
   - bld_architecture_agent
   - mental-model-builder
 ---
@@ -121,6 +118,5 @@ body_bytes = len(encode_utf8(body_content))
 |----------|-------------|-------|
 | [[bld_orchestration_agent]] | downstream | 0.47 |
 | [[kc_agent]] | upstream | 0.45 |
-| [[p03_ins_runtime_state]] | sibling | 0.44 |
 | [[bld_architecture_agent]] | downstream | 0.42 |
 | [[mental-model-builder]] | upstream | 0.41 |

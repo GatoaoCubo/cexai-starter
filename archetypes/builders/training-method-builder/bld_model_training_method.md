@@ -21,12 +21,6 @@ llm_function: BECOME
 parent: null
 author: n05_builder
 8f: "F2_become"
-related:
-  - p02_qg_training_method
-  - p10_lr_training_method_builder
-  - bld_instruction_training_method
-  - bld_collaboration_training_method
-  - bld_knowledge_card_training_method
 ---
 ## Identity
 
@@ -112,12 +106,3 @@ Every artifact must pass 10 HARD gates. Never self-score (`quality: null`). Targ
 
 ## Output Format
 Always produce: YAML frontmatter + structured body. Use tables over prose. No self-assessment commentary.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p02_qg_training_method]] | downstream | 0.52 |
-| [[p10_lr_training_method_builder]] | downstream | 0.52 |
-| [[bld_instruction_training_method]] | downstream | 0.49 |
-| [[bld_collaboration_training_method]] | downstream | 0.49 |
-| [[bld_knowledge_card_training_method]] | upstream | 0.47 |

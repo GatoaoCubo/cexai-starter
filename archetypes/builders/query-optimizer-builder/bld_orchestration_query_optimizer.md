@@ -20,7 +20,6 @@ related:
   - bld_architecture_query_optimizer
   - query-optimizer-builder
   - bld_feedback_query_optimizer
-  - kc_query_optimizer
   - bld_memory_query_optimizer
 ---
 # Collaboration: query-optimizer-builder
@@ -82,5 +81,4 @@ I do not configure indexes. I do not build retrieval engines.
 | [[bld_architecture_query_optimizer]] | upstream | 0.56 |
 | [[query-optimizer-builder]] | upstream | 0.52 |
 | [[bld_feedback_query_optimizer]] | upstream | 0.48 |
-| [[kc_query_optimizer]] | upstream | 0.47 |
 | [[bld_memory_query_optimizer]] | upstream | 0.42 |

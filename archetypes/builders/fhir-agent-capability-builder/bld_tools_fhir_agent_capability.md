@@ -18,9 +18,6 @@ keywords: [fhir_agent_capability construction, tools fhir agent capability, fhir
 density_score: 0.85
 related:
   - fhir-agent-capability-builder
-  - bld_knowledge_card_fhir_agent_capability
-  - kc_fhir_agent_capability
-  - bld_instruction_fhir_agent_capability
   - bld_tools_healthcare_vertical
 ---
 ## Production Tools
@@ -53,7 +50,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fhir-agent-capability-builder]] | downstream | 0.61 |
-| [[bld_knowledge_card_fhir_agent_capability]] | upstream | 0.59 |
-| [[kc_fhir_agent_capability]] | upstream | 0.56 |
-| [[bld_instruction_fhir_agent_capability]] | upstream | 0.55 |
 | [[bld_tools_healthcare_vertical]] | sibling | 0.54 |

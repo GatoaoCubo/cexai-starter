@@ -42,10 +42,6 @@ linked_artifacts:
 density_score: null
 data_source: codexa-core (billing_executor, credit_system, cursos_executor, erp_connector, anuncio_validator, email_templates, mercadopago_executor)
 related:
-  - p04_tpl_content_monetization
-  - p12_wf_content_monetization
-  - p04_fn_content_monetization
-  - p01_kc_credit_system_design
   - content-monetization-builder
 ---
 

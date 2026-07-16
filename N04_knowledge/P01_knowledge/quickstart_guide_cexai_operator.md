@@ -24,11 +24,6 @@ keywords:
   - "/init"
   - "/build"
   - "no-code workflow"
-related:
-  - p05_of_cexai_first_mission
-  - p06_ar_cex_cli
-  - p01_faq_cexai_user
-  - p05_qs_first_builder
 density_score: 0.95
 ---
 
@@ -204,16 +199,12 @@ versioned, structured knowledge asset. Every `/build` call does the same.
 
 | Goal | Command |
 |------|---------|
-| Run a full mission (plan -> build -> consolidate) | [[p05_of_cexai_first_mission]] |
-| See all CLI tool flags | [[p06_ar_cex_cli]] |
+| Run a full mission (plan -> build -> consolidate) | p05_of_cexai_first_mission |
+| See all CLI tool flags | p06_ar_cex_cli |
 | Common questions answered | p01_faq_cexai_user |
-| Contribute a new builder | [[p05_qs_first_builder]] |
+| Contribute a new builder | p05_qs_first_builder |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_of_cexai_first_mission]] | downstream | 0.80 |
 | p01_faq_cexai_user | downstream | 0.75 |
-| [[p06_ar_cex_cli]] | downstream | 0.70 |
-| [[p05_qs_first_builder]] | sibling | 0.50 |
-| [[p01_faq_cex_common_questions]] | sibling | 0.40 |

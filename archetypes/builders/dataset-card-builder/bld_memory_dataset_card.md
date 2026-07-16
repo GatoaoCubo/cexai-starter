@@ -21,10 +21,6 @@ analysis, quick start, related artifacts]
 density_score: 0.85
 related:
   - dataset-card-builder
-  - bld_knowledge_card_dataset_card
-  - p01_kc_dataset_card
-  - p01_kc_data_residency
-  - bld_collaboration_dataset_card
 ---
 ## Observation
 Builders often omit critical metadata like licensing, versioning, and specific data collection methodologies. Descriptions frequently lack the granularity required for reproducible data science and downstream integration.

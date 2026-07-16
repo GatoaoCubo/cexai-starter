@@ -22,8 +22,6 @@ density_score: 0.85
 related:
   - thinking-config-builder
   - bld_memory_thinking_config
-  - bld_output_template_thinking_config
-  - bld_instruction_thinking_config
   - bld_config_thinking_config
 ---
 ## Crew Role
@@ -69,6 +67,4 @@ effort_profile builder).
 |----------|-------------|-------|
 | [[thinking-config-builder]] | upstream | 0.41 |
 | [[bld_memory_thinking_config]] | upstream | 0.35 |
-| [[bld_output_template_thinking_config]] | upstream | 0.35 |
-| [[bld_instruction_thinking_config]] | upstream | 0.33 |
 | [[bld_config_thinking_config]] | upstream | 0.33 |

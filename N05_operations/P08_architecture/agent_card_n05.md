@@ -45,11 +45,6 @@ tags: [agent_card, railway, superintendent, fastapi, postgresql, backend-ops]
 tldr: Railway Backend Superintendent deployment spec on Claude Opus with railway/postgresql MCPs for complete FastAPI lifecycle management.
 keywords: [agent card operations, agent_card, railway, superintendent, fastapi, postgresql, backend-ops, railway_superintendent, claude, opus]
 density_score: 0.95
-related:
-  - p02_agent_railway_superintendent
-  - p12_dr_railway_superintendent
-  - p03_sp_railway_superintendent
-  - p01_kc_railway_platform_deep
 ---
 
 # Role

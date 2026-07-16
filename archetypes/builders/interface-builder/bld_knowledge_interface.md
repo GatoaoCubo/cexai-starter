@@ -20,9 +20,6 @@ interfaces, spec table, design patterns]
 density_score: 0.90
 related:
   - interface-builder
-  - bld_instruction_interface
-  - p10_lr_interface_builder
-  - bld_collaboration_interface
   - bld_architecture_interface
 ---
 # Domain Knowledge: interface
@@ -78,7 +75,4 @@ Interfaces are bilateral contracts where both provider and consumer agree on met
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[interface-builder]] | downstream | 0.52 |
-| [[bld_instruction_interface]] | downstream | 0.47 |
-| [[p10_lr_interface_builder]] | downstream | 0.43 |
-| [[bld_collaboration_interface]] | downstream | 0.39 |
 | [[bld_architecture_interface]] | downstream | 0.38 |

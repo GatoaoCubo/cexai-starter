@@ -26,10 +26,7 @@ title: "Memory Agent Package"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_instruction_agent_package
-  - bld_knowledge_card_agent_package
   - agent-package-builder
-  - p11_qg_agent_package
   - bld_schema_agent_package
 ---
 ## Summary
@@ -105,5 +102,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_agent_package_builder.md
 | [[bld_prompt_agent_package]] | upstream | 0.43 |
 | [[bld_knowledge_agent_package]] | upstream | 0.37 |
 | [[agent-package-builder]] | upstream | 0.36 |
-| [[p11_qg_agent_package]] | downstream | 0.33 |
 | [[bld_schema_agent_package]] | upstream | 0.32 |

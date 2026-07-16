@@ -17,10 +17,6 @@ tldr: "Recalled session patterns, corrections, and taxonomy for value_object bui
 keywords: [recalled session patterns, builder, value_object, memory, withx(), tox(), setx(), setx, __post_init__, session patterns]
 density_score: 0.92
 related:
-  - bld_manifest_value_object
-  - kc_value_object
-  - bld_instruction_value_object
-  - bld_knowledge_card_value_object
   - bld_architecture_value_object
 ---
 # Memory: value_object
@@ -79,8 +75,4 @@ Q: "If I find two instances with identical attributes in the database, are they 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_value_object]] | sibling | 0.49 |
-| [[kc_value_object]] | sibling | 0.41 |
-| [[bld_instruction_value_object]] | related | 0.40 |
-| [[bld_knowledge_card_value_object]] | sibling | 0.39 |
 | [[bld_architecture_value_object]] | sibling | 0.37 |

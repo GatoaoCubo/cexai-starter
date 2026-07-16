@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_sandbox_spec
   - kind-builder
-  - p03_sp_builder_nucleus
   - sandbox-spec-builder
-  - p11_fb_sandbox_spec
 ---
 
 # sandbox-spec-builder Sub-Agent
@@ -88,6 +86,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[bld_config_sandbox_spec]] | related | 0.32 |
 | [[kind-builder]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[sandbox-spec-builder]] | related | 0.28 |
-| [[p11_fb_sandbox_spec]] | related | 0.26 |

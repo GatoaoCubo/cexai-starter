@@ -18,10 +18,6 @@ keywords: [component map of hook, and architectural position, hook construction,
 density_score: 0.90
 related:
   - hook-builder
-  - bld_instruction_hook
-  - bld_collaboration_hook_config
-  - p04_hook_NAME
-  - bld_collaboration_hook
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |

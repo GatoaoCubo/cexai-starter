@@ -31,9 +31,7 @@ keywords:
 density_score: 0.85
 related:
   - lens-builder
-  - p03_ins_lens
   - bld_architecture_lens
-  - bld_knowledge_card_lens
   - bld_schema_lens
 ---
 ## Quality Gate

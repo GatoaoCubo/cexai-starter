@@ -33,9 +33,6 @@ density_score: 0.90
 related:
   - bld_memory_runtime_state
   - runtime-state-builder
-  - bld_collaboration_runtime_state
-  - p03_ins_runtime_state
-  - p11_qg_runtime_state
 ---
 # Domain Knowledge: runtime_state
 ## Executive Summary
@@ -93,5 +90,3 @@ Runtime states are mutable cognitive contexts that agents accumulate during exec
 | [[bld_memory_runtime_state]] | downstream | 0.62 |
 | [[runtime-state-builder]] | downstream | 0.61 |
 | [[bld_orchestration_runtime_state]] | downstream | 0.50 |
-| [[p03_ins_runtime_state]] | downstream | 0.46 |
-| [[p11_qg_runtime_state]] | downstream | 0.45 |

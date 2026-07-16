@@ -31,9 +31,7 @@ keywords:
   - "content monetization config"
 density_score: 0.90
 related:
-  - p11_qg_content_monetization
   - bld_schema_content_monetization
-  - bld_instruction_content_monetization
   - content-monetization-builder
 ---
 # Output Template: content_monetization
@@ -156,7 +154,6 @@ tags: [content-monetization, pricing, {{domain}}]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_content_monetization]] | downstream | 0.38 |
 | [[bld_schema_content_monetization]] | downstream | 0.32 |
 | [[bld_prompt_content_monetization]] | upstream | 0.29 |
 | [[content-monetization-builder]] | downstream | 0.29 |

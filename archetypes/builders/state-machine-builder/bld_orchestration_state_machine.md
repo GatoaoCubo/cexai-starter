@@ -19,11 +19,8 @@ updated: "2026-04-17"
 keywords: [state machine construction, collaboration state machine, entity lifecycle specialist, state_machine, builder, collaboration, "### crew: workflow + lifecycle", "### crew: agent lifecycle", my role, crew compositions]
 density_score: 0.90
 related:
-  - kc_state_machine
-  - bld_collaboration_lifecycle_rule
   - state-machine-builder
   - bld_memory_runtime_state
-  - bld_knowledge_card_state_machine
 ---
 # Collaboration: state-machine-builder
 ## My Role in Crews
@@ -92,8 +89,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_state_machine]] | upstream | 0.45 |
-| [[bld_collaboration_lifecycle_rule]] | sibling | 0.39 |
 | [[state-machine-builder]] | related | 0.38 |
 | [[bld_memory_runtime_state]] | upstream | 0.37 |
-| [[bld_knowledge_card_state_machine]] | upstream | 0.36 |

@@ -32,9 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - lens-builder
-  - p03_ins_lens
   - bld_architecture_lens
-  - bld_knowledge_card_lens
   - bld_schema_lens
 ---
 # Output Template: lens
@@ -98,7 +96,6 @@ tldr: "{{dense_summary_max_160ch}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[lens-builder]] | upstream | 0.42 |
-| [[p03_ins_lens]] | upstream | 0.41 |
 | [[bld_architecture_lens]] | downstream | 0.40 |
 | [[bld_knowledge_lens]] | upstream | 0.38 |
 | [[bld_schema_lens]] | downstream | 0.38 |

@@ -21,9 +21,6 @@ density_score: 0.85
 related:
   - workflow-node-builder
   - visual-workflow-builder
-  - kc_visual_workflow
-  - p10_mem_visual_workflow_builder
-  - bld_collaboration_visual_workflow
 ---
 ## Crew Role  
 Defines individual workflow nodes, their behavior, and integration points. Ensures nodes adhere to contract standards for execution and data passing.  
@@ -50,6 +47,3 @@ Does NOT handle full workflow orchestration (Orchestrator), UI configuration (Vi
 |----------|-------------|-------|
 | [[workflow-node-builder]] | related | 0.47 |
 | [[visual-workflow-builder]] | related | 0.40 |
-| [[kc_visual_workflow]] | upstream | 0.36 |
-| [[p10_mem_visual_workflow_builder]] | upstream | 0.36 |
-| [[bld_collaboration_visual_workflow]] | sibling | 0.36 |

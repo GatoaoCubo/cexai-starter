@@ -30,11 +30,7 @@ keywords:
   - "fail condition"
 density_score: 0.85
 related:
-  - p04_qg_stt_provider
-  - bld_instruction_tts_provider
   - tts-provider-builder
-  - n00_tts_provider_manifest
-  - p11_qg_content_filter
 ---
 ## Quality Gate
 

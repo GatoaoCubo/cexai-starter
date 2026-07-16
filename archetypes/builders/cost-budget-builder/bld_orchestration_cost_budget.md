@@ -19,10 +19,7 @@ keywords: [cost budget construction, collaboration cost budget, cost-budget-buil
 density_score: 0.90
 related:
   - cost-budget-builder
-  - bld_collaboration_model_provider
-  - bld_collaboration_boot_config
   - bld_architecture_cost_budget
-  - bld_collaboration_fallback_chain
 ---
 # Collaboration: cost-budget-builder
 ## My Role in Crews
@@ -85,7 +82,4 @@ I govern spend so LLM deployments stay within financial boundaries without surpr
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cost-budget-builder]] | upstream | 0.43 |
-| [[bld_collaboration_model_provider]] | sibling | 0.42 |
-| [[bld_collaboration_boot_config]] | sibling | 0.41 |
 | [[bld_architecture_cost_budget]] | upstream | 0.39 |
-| [[bld_collaboration_fallback_chain]] | sibling | 0.35 |

@@ -18,8 +18,6 @@ tldr: "MetaGPT is a 67.4K-star Chinese-built framework simulating a software com
 8f: "F3_inject"
 keywords: [multi-agent framework, standard operating procedures (sops), llm agents, software artifacts, typed artifact governance, pillar-scoped nuclei, domain-flexible, research-grade rigidity, operational answer]
 related:
-  - p01_kc_atom_13_metagpt_chatdev
-  - cm_cex_vs_landscape
   - p01_kc_competitor_crewai
   - p01_kc_competitor_live_supplement_2026q2
   - p01_kc_cex_positioning_analysis

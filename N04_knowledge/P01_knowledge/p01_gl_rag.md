@@ -16,10 +16,6 @@ density_score: 0.97
 updated: "2026-04-13"
 related:
   - agentic-rag-builder
-  - p01_kc_rag_hybrid
-  - p01_kc_pillar_brief_p01_knowledge_en
-  - kc_graph_rag_config
-  - p01_kc_atom_21_rag_taxonomy
 ---
 
 # Retrieval-Augmented Generation (RAG)

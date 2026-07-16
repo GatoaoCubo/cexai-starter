@@ -30,12 +30,6 @@ keywords:
   - "write base configuration"
   - "write endpoints"
 density_score: 0.90
-related:
-  - bld_instruction_chunk_strategy
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
-  - bld_instruction_connector
-  - bld_instruction_search_tool
 ---
 # Instructions: How to Produce a client
 ## Phase 1: RESEARCH

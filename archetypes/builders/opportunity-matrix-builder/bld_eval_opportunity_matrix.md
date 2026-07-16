@@ -17,11 +17,7 @@ updated: "2026-07-02"
 keywords: [opportunity_matrix construction, quality gate opportunity matrix, opportunity_matrix, builder, quality_gate, sourcing_confiavel, honest-null, golden example, anti-example, hard gates]
 density_score: 0.85
 related:
-  - bld_instruction_opportunity_matrix
   - opportunity-matrix-builder
-  - p10_mem_opportunity_matrix_builder
-  - bld_knowledge_card_opportunity_matrix
-  - p08_adr_opportunity_matrix_kind
 ---
 ## Quality Gate
 
@@ -117,6 +113,5 @@ States the gate value with no boolean conditions and no evaluation line -- fails
 |----------|-------------|-------|
 | [[bld_prompt_opportunity_matrix]] | related | 0.45 |
 | [[opportunity-matrix-builder]] | related | 0.42 |
-| [[p10_mem_opportunity_matrix_builder]] | related | 0.38 |
 | [[bld_knowledge_opportunity_matrix]] | related | 0.35 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.33 |

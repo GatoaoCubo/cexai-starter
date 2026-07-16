@@ -18,9 +18,6 @@ updated: "2026-04-07"
 keywords: [retriever config construction, collaboration retriever config, retriever_config, builder, examples, "### crew: search system", my role, crew compositions, search system, handoff protocol]
 density_score: 0.90
 related:
-  - bld_collaboration_chunk_strategy
-  - bld_collaboration_memory_scope
-  - bld_collaboration_embedding_config
   - retriever-config-builder
   - bld_config_retriever_config
 ---

@@ -33,11 +33,7 @@ llm_function: BECOME
 parent: null
 8f: "F8_collaborate"
 related:
-  - bld_collaboration_checkpoint
   - bld_architecture_checkpoint
-  - bld_instruction_checkpoint
-  - bld_knowledge_card_checkpoint
-  - p01_kc_checkpoint
 ---
 ## Identity
 

@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_event_schema
-  - bld_instruction_function_def
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
-  - bld_instruction_memory_scope
 ---
 # Instructions: How to Produce an event_schema
 
@@ -79,7 +75,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_event_schema]] | downstream | 0.39 |
-| [[bld_instruction_function_def]] | sibling | 0.37 |
-| [[bld_instruction_retriever_config]] | sibling | 0.37 |
-| [[bld_instruction_output_validator]] | sibling | 0.36 |
-| [[bld_instruction_memory_scope]] | sibling | 0.36 |

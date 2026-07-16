@@ -16,7 +16,6 @@ domain: "type def construction"
 keywords: [type def construction, tools type def, tools, type-def, tooling, brain_query, validate_artifact, cex_forge, glob, archetypes/]
 density_score: 0.90
 related:
-  - tools_prompt_template_builder
   - bld_tools_optimizer
   - bld_tools_voice_pipeline
   - bld_tools_collaboration_pattern
@@ -67,7 +66,6 @@ Run these checks before finalizing output (no tool required):
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[tools_prompt_template_builder]] | sibling | 0.39 |
 | bld_tools_optimizer | sibling | 0.37 |
 | bld_tools_voice_pipeline | sibling | 0.37 |
 | bld_tools_collaboration_pattern | sibling | 0.37 |

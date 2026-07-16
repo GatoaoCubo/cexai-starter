@@ -19,10 +19,6 @@ discovery, key concepts, economic buyer, neil rackham, the challenger sale]
 density_score: 0.85
 related:
   - discovery-questions-builder
-  - bld_instruction_discovery_questions
-  - p10_mem_discovery_questions_builder
-  - bld_knowledge_card_sales_playbook
-  - p01_qg_discovery_questions
 ---
 ## Domain Overview
 Discovery questions in MEDDIC/BANT frameworks are structured to uncover buyer motivations, decision dynamics, and deal viability. These questions bridge the gap between sales qualification and solution design, ensuring alignment with the buyer’s strategic goals and organizational constraints. By tailoring questions to buyer personas (e.g., CFO, IT manager) and deal stages (e.g., needs analysis, proposal), sales teams can identify pain points, budget limits, and decision influencers. Unlike general sales playbooks, discovery questions focus on actionable insights rather than broad strategies, enabling personalized engagement.
@@ -64,7 +60,3 @@ Discovery questions in MEDDIC/BANT frameworks are structured to uncover buyer mo
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[discovery-questions-builder]] | related | 0.60 |
-| [[bld_instruction_discovery_questions]] | downstream | 0.52 |
-| [[p10_mem_discovery_questions_builder]] | downstream | 0.51 |
-| [[bld_knowledge_card_sales_playbook]] | sibling | 0.47 |
-| [[p01_qg_discovery_questions]] | downstream | 0.46 |

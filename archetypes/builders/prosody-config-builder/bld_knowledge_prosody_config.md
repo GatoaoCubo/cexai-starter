@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F3_inject"
 keywords: [prosody_config construction, knowledge card prosody config, style tags, provider-specific prosody controls, prosody_config, builder, knowledge_card]
 density_score: 0.92
-related:
-  - hybrid_review2_n03
-  - p09_qg_prosody_config
-  - bld_instruction_prosody_config
-  - bld_output_template_prosody_config
-  - bld_knowledge_card_tts_provider
 ---
 ## Domain Overview
 Prosody_config defines voice personality and emotional expression for TTS output -- pitch, rate, volume, emphasis, pauses, and provider-specific emotion/style tags. The config is consumed by tts_provider at inference time. Two emission paths coexist: (1) **SSML** (W3C Speech Synthesis Markup Language 1.1) -- portable tags recognized by Google Cloud TTS, Azure Speech, AWS Polly, IBM Watson; (2) **provider-native controls** -- JSON/param payloads for neural TTS vendors that exceed SSML expressiveness (ElevenLabs v3, PlayHT Play3.0, Cartesia Sonic, Hume Octave).
@@ -61,12 +55,3 @@ The circumplex model of affect (valence x arousal) maps cleanly onto the two dom
 4. Use `<break>` tags at clause boundaries for natural phrasing (200-500ms typical).
 5. Keep SSML and native payloads in parallel fields -- do NOT conflate.
 6. Test across 3+ providers before shipping; prosody perception is non-portable.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[hybrid_review2_n03]] | downstream | 0.66 |
-| [[p09_qg_prosody_config]] | downstream | 0.64 |
-| [[bld_instruction_prosody_config]] | downstream | 0.54 |
-| [[bld_output_template_prosody_config]] | downstream | 0.43 |
-| [[bld_knowledge_card_tts_provider]] | sibling | 0.41 |

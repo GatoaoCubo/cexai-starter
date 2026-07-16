@@ -29,12 +29,6 @@ tldr: Golden and anti-examples for glossary entry construction, demonstrating id
 llm_function: BECOME
 parent: null
 8f: "F3_inject"
-related:
-  - bld_collaboration_glossary_entry
-  - bld_knowledge_card_glossary_entry
-  - p01_gl_TERM_SLUG
-  - bld_instruction_glossary_entry
-  - p01_kc_glossary_entry
 ---
 ## Identity
 

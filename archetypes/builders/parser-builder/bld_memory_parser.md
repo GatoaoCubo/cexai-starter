@@ -109,7 +109,6 @@ python _tools/cex_score.py --apply bld-memory-parser.md
 | [[parser-builder]] | upstream | 0.50 |
 | [[bld_knowledge_parser]] | upstream | 0.41 |
 | n00_parser_manifest | upstream | 0.39 |
-| [[p03_ins_parser]] | upstream | 0.39 |
 | [[bld_architecture_parser]] | upstream | 0.39 |
 
 

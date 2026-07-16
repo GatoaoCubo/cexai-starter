@@ -18,10 +18,6 @@ keywords: [reranker_config construction, instruction reranker config, reranker_c
 density_score: 0.85
 related:
   - reranker-config-builder
-  - bld_instruction_search_strategy
-  - bld_instruction_playground_config
-  - bld_instruction_planning_strategy
-  - bld_instruction_judge_config
 ---
 ## Phase 1: RESEARCH  
 1. Identify retrieval system requirements and ranking objectives.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reranker-config-builder]] | upstream | 0.38 |
-| [[bld_instruction_search_strategy]] | sibling | 0.32 |
-| [[bld_instruction_playground_config]] | sibling | 0.31 |
-| [[bld_instruction_planning_strategy]] | sibling | 0.28 |
-| [[bld_instruction_judge_config]] | sibling | 0.28 |

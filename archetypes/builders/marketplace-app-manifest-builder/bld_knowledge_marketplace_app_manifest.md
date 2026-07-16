@@ -19,10 +19,6 @@ marketplace, key concepts, metadata schema, permission scopes, pricing model, li
 density_score: 0.85
 related:
   - marketplace-app-manifest-builder
-  - bld_knowledge_card_api_reference
-  - hybrid_review7_n03
-  - kc_marketplace_app_manifest
-  - bld_knowledge_card_quickstart_guide
 ---
 ## Domain Overview  
 Marketplace app manifests standardize metadata, permissions, and pricing for AI/ML tools on platforms like HuggingFace, LangChain, and Claude. They enable discoverability, compliance, and monetization by defining app capabilities, licensing terms, and usage limits. Manifests act as contracts between developers and platforms, ensuring interoperability and adherence to industry norms such as SPDX for licensing and OpenAPI for API definitions.  
@@ -72,7 +68,3 @@ Manifests also govern access control via OAuth 2.0 scopes or IAM policies, while
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[marketplace-app-manifest-builder]] | downstream | 0.40 |
-| [[bld_knowledge_card_api_reference]] | sibling | 0.33 |
-| [[hybrid_review7_n03]] | downstream | 0.32 |
-| [[kc_marketplace_app_manifest]] | sibling | 0.30 |
-| [[bld_knowledge_card_quickstart_guide]] | sibling | 0.29 |

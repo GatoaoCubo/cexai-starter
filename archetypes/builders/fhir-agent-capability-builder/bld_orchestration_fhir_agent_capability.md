@@ -20,9 +20,7 @@ density_score: 0.85
 related:
   - fhir-agent-capability-builder
   - bld_architecture_fhir_agent_capability
-  - bld_collaboration_agent
   - bld_tools_fhir_agent_capability
-  - bld_knowledge_card_fhir_agent_capability
 ---
 ## Crew Role
 Composes FHIR-native AI agent capability declarations for EHR onboarding. Specializes the general agent definition for HL7 healthcare compliance requirements.
@@ -55,6 +53,4 @@ EHR vendor certification testing is coordinated by N05 Operations, not this buil
 |----------|-------------|-------|
 | [[fhir-agent-capability-builder]] | upstream | 0.42 |
 | [[bld_architecture_fhir_agent_capability]] | upstream | 0.36 |
-| [[bld_collaboration_agent]] | sibling | 0.34 |
 | [[bld_tools_fhir_agent_capability]] | upstream | 0.33 |
-| [[bld_knowledge_card_fhir_agent_capability]] | upstream | 0.32 |

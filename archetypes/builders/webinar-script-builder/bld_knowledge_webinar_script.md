@@ -18,11 +18,8 @@ keywords: [webinar_script construction, webinar script knowledge card, key conce
 webinars, zoom webinars]
 density_score: 0.85
 related:
-  - p10_lr_webinar_script_builder
   - webinar-script-builder
-  - bld_instruction_webinar_script
   - bld_tools_webinar_script
-  - bld_collaboration_webinar_script
 ---
 ## Domain Overview
 Webinars are top-funnel awareness and mid-funnel conversion tools. Live interactivity -- real-time Q&A, live demos, co-presence -- is what email and video cannot replicate.
@@ -92,8 +89,5 @@ Webinars are top-funnel awareness and mid-funnel conversion tools. Live interact
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_webinar_script_builder]] | downstream | 0.53 |
 | [[webinar-script-builder]] | downstream | 0.46 |
-| [[bld_instruction_webinar_script]] | downstream | 0.42 |
 | [[bld_tools_webinar_script]] | downstream | 0.36 |
-| [[bld_collaboration_webinar_script]] | downstream | 0.36 |

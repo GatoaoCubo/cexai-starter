@@ -5,9 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - prompt-version-builder
-  - bld_collaboration_prompt_version
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p03_prompt_en
   - system-prompt-builder
 ---
 

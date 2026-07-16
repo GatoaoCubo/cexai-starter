@@ -20,7 +20,6 @@ related:
   - bld_architecture_realtime_session
   - bld_architecture_dataset_card
   - bld_architecture_experiment_tracker
-  - bld_knowledge_card_kind
   - bld_architecture_tts_provider
 ---
 ## Builder ISO Inventory (13 components)
@@ -101,5 +100,4 @@ smart home assistants, voice-enabled applications.
 | [[bld_architecture_realtime_session]] | sibling | 0.59 |
 | [[bld_architecture_dataset_card]] | sibling | 0.41 |
 | [[bld_architecture_experiment_tracker]] | sibling | 0.37 |
-| [[bld_knowledge_card_kind]] | upstream | 0.34 |
 | [[bld_architecture_tts_provider]] | sibling | 0.33 |

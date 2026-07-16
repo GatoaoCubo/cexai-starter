@@ -36,16 +36,9 @@ linked_artifacts:
     - "[[p01_kc_token_optimization_map]]"
 density_score: null
 related:
-  - p08_ac_verification
-  - p03_sp_n03_creation_nucleus
   - kc_admin_vocabulary
-  - p11_fb_retry_policy
   - bld_feedback_default
-  - p11_fb_cost_budget
-  - p11_fb_research_pipeline
   - bld_feedback_few_shot_example
-  - p06_val_n07
-  - p07_rt_8f_govern
 ---
 
 <!-- 8F PIPELINE ===
@@ -182,10 +175,8 @@ structural failures -> full /mission justified). All playbook conclusions above 
 | p08_ac_verification | downstream | 0.21 |
 | p03_sp_n03_creation_nucleus | downstream | 0.19 |
 | [[kc_admin_vocabulary]] | sibling | 0.19 |
-| [[p11_fb_retry_policy]] | downstream | 0.19 |
 | [[bld_feedback_default]] | downstream | 0.18 |
 | p11_fb_cost_budget | downstream | 0.18 |
-| [[p11_fb_research_pipeline]] | downstream | 0.18 |
 | [[bld_feedback_few_shot_example]] | downstream | 0.18 |
 | p06_val_n07 | downstream | 0.18 |
 | p07_rt_8f_govern | downstream | 0.18 |

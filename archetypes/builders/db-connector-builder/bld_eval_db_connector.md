@@ -18,11 +18,7 @@ updated: "2026-03-27"
 keywords: [bidirectional service integration, or mqtt, bidirectional flow coverage, transform rules, health check, and protocol selection rationale, quality-gate]
 density_score: 0.92
 related:
-  - bld_schema_connector
-  - p10_lr_connector_builder
   - db-connector-builder
-  - bld_instruction_connector
-  - bld_collaboration_connector
 ---
 ## Quality Gate
 

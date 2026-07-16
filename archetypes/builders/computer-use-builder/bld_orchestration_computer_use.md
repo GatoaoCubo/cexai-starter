@@ -19,10 +19,6 @@ keywords: [computer use construction, collaboration computer use, computer_use, 
 density_score: 0.90
 related:
   - computer-use-builder
-  - bld_collaboration_agent_computer_interface
-  - bld_collaboration_vision_tool
-  - bld_instruction_computer_use
-  - bld_collaboration_browser_tool
 ---
 # Collaboration: computer-use-builder
 

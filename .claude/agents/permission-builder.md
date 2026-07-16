@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - p09_perm_{{SCOPE_SLUG}}
-  - n00_permission_manifest
   - bld_architecture_permission
-  - p11_qg_permission
-  - bld_collaboration_permission
 ---
 
 # permission-builder Sub-Agent
@@ -88,5 +85,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | n00_permission_manifest | related | 0.35 |
 | [[bld_architecture_permission]] | related | 0.34 |
-| [[p11_qg_permission]] | related | 0.34 |
 | [[bld_orchestration_permission]] | related | 0.33 |

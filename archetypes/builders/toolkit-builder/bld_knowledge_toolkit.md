@@ -19,9 +19,7 @@ keywords: [atomic searchable facts, toolkit construction, knowledge card toolkit
 density_score: 0.90
 related:
   - toolkit-builder
-  - p03_ins_toolkit_builder
   - bld_memory_toolkit
-  - p11_qg_toolkit
   - bld_schema_toolkit
 ---
 # Domain Knowledge: toolkit
@@ -86,7 +84,5 @@ Toolkits are YAML permission bundles — thand access control mechanism for agen
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[toolkit-builder]] | downstream | 0.68 |
-| [[p03_ins_toolkit_builder]] | downstream | 0.65 |
 | [[bld_memory_toolkit]] | downstream | 0.64 |
-| [[p11_qg_toolkit]] | downstream | 0.59 |
 | [[bld_schema_toolkit]] | downstream | 0.58 |

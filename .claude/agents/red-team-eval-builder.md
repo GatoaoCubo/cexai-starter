@@ -4,11 +4,7 @@ description: "Builds ONE red_team_eval artifact via 8F pipeline. Loads red-team-
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_red_team_eval
-  - p11_fb_red_team_eval
   - kind-builder
-  - n00_red_team_eval_manifest
-  - p03_sp_builder_nucleus
 ---
 
 # red-team-eval-builder Sub-Agent
@@ -86,8 +82,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_red_team_eval]] | related | 0.36 |
-| [[p11_fb_red_team_eval]] | related | 0.35 |
 | [[kind-builder]] | related | 0.32 |
-| [[n00_red_team_eval_manifest]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |

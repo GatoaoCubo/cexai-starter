@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [sdk_example construction, quality gate sdk example, sdk_example, builder, quality_gate, "## anti-example 1: missing error handling", quality gate, code example completeness, fail condition, scoring guide]
 density_score: 0.85
-related:
-  - p09_qg_marketplace_app_manifest
-  - p04_qg_stt_provider
-  - p06_qg_api_reference
-  - p06_qg_edit_format
-  - p11_qg_usage_report
 ---
 ## Quality Gate
 

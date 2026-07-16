@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [usage_quota construction, quality gate usage quota, usage_quota, builder, quality_gate, quality gate, fail condition, scoring guide, quota limits, partial missing]
 density_score: 0.85
 related:
-  - p09_qg_marketplace_app_manifest
-  - p11_qg_usage_report
   - bld_schema_usage_quota
-  - bld_instruction_usage_quota
-  - p01_qg_agentic_rag
 ---
 ## Quality Gate
 

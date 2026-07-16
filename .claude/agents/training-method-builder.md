@@ -4,10 +4,7 @@ description: "Builds ONE training_method artifact via 8F pipeline. Loads trainin
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p02_model_en
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_training_method
   - bld_architecture_training_method
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[bld_collaboration_training_method]] | related | 0.29 |
 | [[bld_architecture_training_method]] | related | 0.29 |

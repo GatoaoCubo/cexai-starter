@@ -21,8 +21,6 @@ related:
   - skill-builder
   - bld_architecture_skill
   - bld_memory_skill
-  - n00_skill_manifest
-  - p03_ins_skill_builder
 ---
 # Collaboration: skill-builder
 
@@ -82,5 +80,3 @@ I produce skill definitions so downstream builders can integrate skills into age
 | [[skill-builder]] | upstream | 0.59 |
 | [[bld_architecture_skill]] | upstream | 0.55 |
 | [[bld_memory_skill]] | upstream | 0.52 |
-| [[n00_skill_manifest]] | upstream | 0.45 |
-| [[p03_ins_skill_builder]] | upstream | 0.45 |

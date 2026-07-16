@@ -18,10 +18,6 @@ keywords: [incident_report construction, output template incident report, blamel
 density_score: 0.90
 related:
   - bld_schema_incident_report
-  - kc_incident_report
-  - p11_qg_incident_report
-  - n00_incident_report_manifest
-  - bld_instruction_incident_report
 ---
 ```yaml
 id: p11_ir_{{incident_id}}
@@ -137,7 +133,3 @@ Gap: `{{what_monitoring_or_process_should_have_caught_this_sooner}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_incident_report]] | downstream | 0.33 |
-| [[kc_incident_report]] | upstream | 0.25 |
-| [[p11_qg_incident_report]] | downstream | 0.25 |
-| [[n00_incident_report_manifest]] | downstream | 0.25 |
-| [[bld_instruction_incident_report]] | upstream | 0.24 |

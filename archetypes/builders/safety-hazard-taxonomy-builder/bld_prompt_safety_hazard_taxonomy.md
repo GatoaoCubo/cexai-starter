@@ -18,10 +18,7 @@ keywords: [safety_hazard_taxonomy construction, instruction safety hazard taxono
 density_score: 0.85
 related:
   - safety-hazard-taxonomy-builder
-  - bld_knowledge_card_safety_hazard_taxonomy
   - bld_schema_safety_hazard_taxonomy
-  - bld_output_template_safety_hazard_taxonomy
-  - p11_qg_safety_hazard_taxonomy
 ---
 ## Phase 1: RESEARCH
 1. Identify the taxonomy scope: full AILuminate v1.0 (12 categories) or domain-restricted subset.
@@ -56,7 +53,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[safety-hazard-taxonomy-builder]] | downstream | 0.61 |
-| [[bld_knowledge_card_safety_hazard_taxonomy]] | upstream | 0.55 |
 | [[bld_schema_safety_hazard_taxonomy]] | downstream | 0.54 |
-| [[bld_output_template_safety_hazard_taxonomy]] | downstream | 0.49 |
-| [[p11_qg_safety_hazard_taxonomy]] | downstream | 0.47 |

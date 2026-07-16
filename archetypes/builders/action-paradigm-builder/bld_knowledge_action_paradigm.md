@@ -19,10 +19,7 @@ action, key concepts, action space, environment state, execution engine]
 density_score: 0.85
 related:
   - action-paradigm-builder
-  - bld_instruction_action_paradigm
-  - kc_action_paradigm
   - bld_memory_action_paradigm
-  - p11_qg_action_paradigm
 ---
 ## Domain Overview
 Action paradigms define how agents translate high-level goals into executable actions within dynamic environments. This spans robotics, autonomous systems, and AI, where agents must navigate uncertainty, resource constraints, and real-time feedback. Key challenges include aligning abstract intentions with low-level actuation, managing concurrency, and ensuring robustness against environmental variability. Paradigms often integrate planning, execution, and monitoring layers, drawing from fields like control theory, reinforcement learning, and distributed systems.
@@ -80,7 +77,4 @@ Action paradigms define how agents translate high-level goals into executable ac
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[action-paradigm-builder]] | downstream | 0.45 |
-| [[bld_instruction_action_paradigm]] | downstream | 0.37 |
-| [[kc_action_paradigm]] | sibling | 0.33 |
 | [[bld_memory_action_paradigm]] | downstream | 0.32 |
-| [[p11_qg_action_paradigm]] | downstream | 0.24 |

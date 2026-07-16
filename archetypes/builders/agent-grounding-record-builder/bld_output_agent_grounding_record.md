@@ -16,11 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [produce rendering, agent_grounding_record construction, fill-in template, inference block, model block, audit summary, agent_grounding_record]
 density_score: 0.85
-related:
-  - bld_instruction_agent_grounding_record
-  - kc_agent_grounding_record
-  - bld_quality_gate_agent_grounding_record
-  - bld_manifest_agent_grounding_record
 ---
 # Agent Grounding Record -- Output Template
 ## Usage
@@ -48,11 +43,3 @@ title: "Grounding Record -- {{SHORT_DESCRIPTION_OF_INFERENCE_TASK}}"
 | grounding_coverage_pct | Compute from actual claim analysis; document methodology in Coverage note      |
 | Audit Summary        | Write for a human auditor, not just a machine parser -- prose is appropriate here |
 | Byte budget          | Keep total artifact under 4096 bytes; truncate tables with full_trace_log_ref if needed |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_agent_grounding_record]] | upstream | 0.31 |
-| [[kc_agent_grounding_record]] | upstream | 0.27 |
-| [[bld_quality_gate_agent_grounding_record]] | downstream | 0.26 |
-| [[bld_manifest_agent_grounding_record]] | downstream | 0.26 |

@@ -19,9 +19,6 @@ density_score: null
 related:
   - kc_orchestration_vocabulary
   - p01_kc_concept_graph
-  - p06_val_n07
-  - p02_agent_admin_orchestrator
-  - component_map_n07
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_crew. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

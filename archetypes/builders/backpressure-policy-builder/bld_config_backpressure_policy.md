@@ -30,10 +30,6 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_schema_backpressure_policy
-  - p01_kc_backpressure_policy
-  - bld_instruction_backpressure_policy
-  - p11_qg_backpressure_policy
-  - bld_output_template_backpressure_policy
 ---
 # Config: backpressure_policy Production Rules
 
@@ -84,7 +80,3 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_backpressure_policy]] | upstream | 0.41 |
-| [[p01_kc_backpressure_policy]] | related | 0.40 |
-| [[bld_instruction_backpressure_policy]] | upstream | 0.40 |
-| [[p11_qg_backpressure_policy]] | downstream | 0.38 |
-| [[bld_output_template_backpressure_policy]] | upstream | 0.35 |

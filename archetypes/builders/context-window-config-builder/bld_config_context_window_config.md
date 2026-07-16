@@ -26,7 +26,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, context window config construction, config context window config, context_window_config, builder, examples, "p03_cwc_{model_slug}.yaml"]
 density_score: 0.90
 related:
-  - bld_instruction_context_window_config
   - bld_config_retriever_config
   - bld_config_prompt_version
   - bld_config_quality_gate

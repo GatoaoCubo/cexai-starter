@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - hitl-config-builder
   - bld_architecture_hitl_config
-  - n00_hitl_config_manifest
-  - bld_collaboration_agent
-  - p01_kc_hitl_config
 ---
 # Collaboration: hitl-config-builder
 ## My Role in Crews
@@ -81,6 +78,3 @@ I do not automate filtering (that is guardrail). I do not score quality automati
 |----------|-------------|-------|
 | [[hitl-config-builder]] | upstream | 0.40 |
 | [[bld_architecture_hitl_config]] | upstream | 0.34 |
-| [[n00_hitl_config_manifest]] | upstream | 0.31 |
-| [[bld_collaboration_agent]] | sibling | 0.30 |
-| [[p01_kc_hitl_config]] | upstream | 0.30 |

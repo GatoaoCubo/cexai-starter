@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [prompt_optimizer construction, instruction prompt optimizer, prompt_optimizer, builder, instruction, related artifacts, existing prompt, prompt failure, failure modes, optimization passes]
 density_score: 0.85
 related:
-  - bld_knowledge_card_prompt_optimizer
-  - bld_collaboration_prompt_version
-  - bld_collaboration_action_prompt
-  - bld_knowledge_card_prompt_version
   - prompt-version-builder
 ---
 ## Phase 1: RESEARCH  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_prompt_optimizer]] | upstream | 0.37 |
-| [[bld_collaboration_prompt_version]] | downstream | 0.34 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.31 |
-| [[bld_knowledge_card_prompt_version]] | related | 0.26 |
 | [[prompt-version-builder]] | related | 0.26 |

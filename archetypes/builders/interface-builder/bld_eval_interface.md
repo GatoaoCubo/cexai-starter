@@ -18,11 +18,7 @@ updated: "2026-03-27"
 keywords: [o schemas, and compatibility between agents, versioning strategy, backward compatibility guarantees, and mock specs, quality-gate, interface]
 density_score: 0.92
 related:
-  - bld_instruction_interface
-  - p11_qg_input_schema
   - interface-builder
-  - p11_qg_knowledge_card
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 

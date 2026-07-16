@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_config_context_window_config
-  - p11_qg_context_window_config
-  - p01_kc_context_window_config
-  - bld_instruction_prompt_cache
-  - bld_instruction_retriever_config
 ---
 # Instructions: How to Produce a context_window_config
 ## Phase 1: RESEARCH
@@ -92,7 +88,6 @@ python _tools/cex_skill_loader.py --verify context
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_context_window_config]] | downstream | 0.39 |
-| [[p11_qg_context_window_config]] | downstream | 0.37 |
 | [[kc_context_window_config]] | related | 0.33 |
 | bld_instruction_prompt_cache | sibling | 0.32 |
 | [[bld_prompt_retriever_config]] | sibling | 0.31 |

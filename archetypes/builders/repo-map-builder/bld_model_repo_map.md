@@ -20,10 +20,6 @@ triggers, crew role
 acts]
 density_score: 0.85
 related:
-  - kc_repo_map
-  - n00_repo_map_manifest
-  - p10_lr_repo_map_builder
-  - p08_ac_explore
   - sdk-example-builder
 ---
 ## Identity
@@ -63,8 +59,4 @@ The repo_map-builder agent is a codebase context extraction tool that generates 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_repo_map]] | related | 0.35 |
-| [[n00_repo_map_manifest]] | related | 0.31 |
-| [[p10_lr_repo_map_builder]] | downstream | 0.23 |
-| [[p08_ac_explore]] | downstream | 0.22 |
 | [[sdk-example-builder]] | sibling | 0.21 |

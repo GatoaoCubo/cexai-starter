@@ -17,10 +17,7 @@ updated: "2026-07-03"
 keywords: [content factory construction, tools content factory, content_factory, builder, content-fabric, "python _tools/cex_content_factory.py --demo", "python _tools/cex_content_factory.py --self-test", make_brief, produce_content_bundle, build_library_rows]
 density_score: 0.90
 related:
-  - bld_tools_social_publisher
-  - bld_knowledge_card_content_factory
   - bld_architecture_content_factory
-  - p01_kc_content_factory
   - content-factory-builder
 ---
 # Tools: content-factory-builder
@@ -81,8 +78,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_tools_social_publisher]] | sibling | 0.36 |
-| [[bld_knowledge_card_content_factory]] | upstream | 0.34 |
 | [[bld_architecture_content_factory]] | downstream | 0.31 |
-| [[p01_kc_content_factory]] | upstream | 0.31 |
 | [[content-factory-builder]] | upstream | 0.29 |

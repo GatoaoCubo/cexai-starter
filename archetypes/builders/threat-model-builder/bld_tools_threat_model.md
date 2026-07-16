@@ -19,11 +19,7 @@ keywords: [threat_model construction, tools threat model, threat_model, builder,
 this, external security tools, threat dragon, during phase, microsoft threat modeling tool]
 density_score: 0.85
 related:
-  - bld_output_template_threat_model
-  - p11_qg_threat_model
   - threat-model-builder
-  - bld_instruction_threat_model
-  - p10_lr_threat_model_builder
 ---
 ## CEX Production Tools
 
@@ -53,8 +49,4 @@ This ISO records a threat model: the assets worth protecting and the attacker pr
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_threat_model]] | downstream | 0.45 |
-| [[p11_qg_threat_model]] | downstream | 0.44 |
 | [[threat-model-builder]] | downstream | 0.44 |
-| [[bld_instruction_threat_model]] | upstream | 0.43 |
-| [[p10_lr_threat_model_builder]] | downstream | 0.42 |

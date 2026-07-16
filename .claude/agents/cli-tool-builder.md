@@ -4,11 +4,8 @@ description: "Builds ONE cli_tool artifact via 8F pipeline. Loads cli-tool-build
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_cli_tool
   - cli-tool-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p04_tools_en
 ---
 
 # cli-tool-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_cli_tool]] | related | 0.32 |
 | [[cli-tool-builder]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[p01_kc_pillar_brief_p04_tools_en]] | related | 0.28 |

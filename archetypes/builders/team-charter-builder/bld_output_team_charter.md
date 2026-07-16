@@ -17,9 +17,6 @@ updated: "2026-04-14"
 keywords: [team_charter construction, output template team charter, team_charter, builder, output_template, governance, team charter, mission statement, pillar path, owner nucleus]
 density_score: 0.85
 related:
-  - p12_qg_team_charter
-  - bld_instruction_team_charter
-  - bld_knowledge_card_team_charter
   - team-charter-builder
   - bld_schema_team_charter
 ---
@@ -102,7 +99,6 @@ deadline: "{{deadline_iso8601}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p12_qg_team_charter]] | downstream | 0.43 |
 | [[bld_prompt_team_charter]] | upstream | 0.38 |
 | [[bld_knowledge_team_charter]] | upstream | 0.36 |
 | [[team-charter-builder]] | downstream | 0.36 |

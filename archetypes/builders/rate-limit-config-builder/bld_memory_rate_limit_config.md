@@ -26,11 +26,7 @@ title: "Memory Rate Limit Config"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_collaboration_rate_limit_config
   - rate-limit-config-builder
-  - bld_instruction_rate_limit_config
-  - bld_knowledge_card_rate_limit_config
-  - p11_qg_rate_limit_config
 ---
 ## Summary
 
@@ -98,4 +94,3 @@ python _tools/cex_score.py --apply p10-lr-rate-limit-config-builder.md
 | [[rate-limit-config-builder]] | upstream | 0.51 |
 | [[bld_prompt_rate_limit_config]] | upstream | 0.45 |
 | [[bld_knowledge_rate_limit_config]] | upstream | 0.45 |
-| [[p11_qg_rate_limit_config]] | downstream | 0.44 |

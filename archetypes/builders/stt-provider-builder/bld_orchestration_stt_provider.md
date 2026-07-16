@@ -19,8 +19,6 @@ configures, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_voice_pipeline
-  - bld_collaboration_realtime_session
   - bld_architecture_stt_provider
   - stt-provider-builder
   - bld_memory_voice_pipeline
@@ -48,8 +46,6 @@ Does NOT handle voice_pipeline end-to-end processing (handled by voice_pipeline 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_voice_pipeline]] | sibling | 0.42 |
-| [[bld_collaboration_realtime_session]] | sibling | 0.32 |
 | [[bld_architecture_stt_provider]] | upstream | 0.29 |
 | [[stt-provider-builder]] | upstream | 0.28 |
 | [[bld_memory_voice_pipeline]] | upstream | 0.26 |

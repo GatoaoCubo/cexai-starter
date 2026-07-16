@@ -19,10 +19,6 @@ benchmark, key concepts, task granularity, workload characterization, scalabilit
 density_score: 0.85
 related:
   - benchmark-suite-builder
-  - p10_mem_benchmark_suite_builder
-  - kc_benchmark_suite
-  - bld_instruction_benchmark_suite
-  - p01_kc_memory_benchmark
 ---
 ## Domain Overview
 Benchmark suites are collections of interdependent tasks designed to evaluate system performance across diverse workloads. In AI, they assess models on tasks like inference, training, and reasoning (e.g., MLPerf). In software engineering, they test scalability, latency, and reliability (e.g., SPEC). Suites enable holistic evaluation by combining synthetic and real-world tasks, ensuring systems are stress-tested under varied conditions. They are critical for comparing hardware, frameworks, and algorithms in competitive landscapes like cloud computing and autonomous systems.
@@ -65,7 +61,3 @@ Benchmark suites are collections of interdependent tasks designed to evaluate sy
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[benchmark-suite-builder]] | downstream | 0.47 |
-| [[p10_mem_benchmark_suite_builder]] | downstream | 0.34 |
-| [[kc_benchmark_suite]] | sibling | 0.31 |
-| [[bld_instruction_benchmark_suite]] | downstream | 0.28 |
-| [[p01_kc_memory_benchmark]] | sibling | 0.27 |

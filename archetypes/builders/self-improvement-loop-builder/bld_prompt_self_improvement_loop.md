@@ -18,10 +18,6 @@ keywords: [self_improvement_loop construction, instruction self improvement loop
 density_score: 0.85
 related:
   - self-improvement-loop-builder
-  - bld_instruction_eval_framework
-  - bld_instruction_judge_config
-  - bld_instruction_playground_config
-  - bld_instruction_content_filter
 ---
 ## Phase 1: RESEARCH  
 1. Define self-evolution objectives (e.g., adaptability, efficiency).  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[self-improvement-loop-builder]] | downstream | 0.34 |
-| [[bld_instruction_eval_framework]] | sibling | 0.32 |
-| [[bld_instruction_judge_config]] | sibling | 0.32 |
-| [[bld_instruction_playground_config]] | sibling | 0.30 |
-| [[bld_instruction_content_filter]] | sibling | 0.30 |

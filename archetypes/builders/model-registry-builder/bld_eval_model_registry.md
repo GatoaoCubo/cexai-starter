@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [model registry quality assurance, quality gate, model registry, artifact uris, lineage refs, b standards, model_registry]
 density_score: 0.90
 related:
-  - bld_instruction_model_registry
-  - p11_qg_quality_gate
-  - p11_qg_model_architecture
-  - p11_qg_knowledge_card
   - bld_architecture_model_registry
 ---
 ## Quality Gate

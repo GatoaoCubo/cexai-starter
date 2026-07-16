@@ -19,10 +19,7 @@ keywords: [prompt-package, decompose, mode-b, f6-generation, stage1, stage2, che
 feeds_kinds: [prompt_package]
 density_score: null
 related:
-  - p01_kc_prompt_template
-  - p01_kc_prompt_compiler
   - kc_system_prompt
-  - p01_kc_reverse_prompt
   - prompt-package-builder
 ---
 

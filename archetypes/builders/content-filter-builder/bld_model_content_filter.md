@@ -17,11 +17,8 @@ updated: "2026-04-13"
 keywords: [builder identity, routing for content_filter, content_filter construction, type builder content filter, content_filter, builder, type_builder, filter, sanitize, moderate]
 density_score: 0.85
 related:
-  - bld_collaboration_content_filter
-  - bld_instruction_content_filter
   - kc_guardrail
   - kc_content_filter
-  - p10_lr_content_filter_builder
 ---
 ## Identity
 
@@ -71,4 +68,3 @@ The content_filter-builder agent designs and configures input/output content fil
 | [[bld_prompt_content_filter]] | upstream | 0.37 |
 | [[kc_guardrail]] | upstream | 0.34 |
 | [[kc_content_filter]] | upstream | 0.32 |
-| [[p10_lr_content_filter_builder]] | upstream | 0.30 |

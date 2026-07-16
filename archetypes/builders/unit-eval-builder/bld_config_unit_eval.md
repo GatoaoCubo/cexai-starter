@@ -28,9 +28,6 @@ updated: "2026-04-07"
 keywords: [limits for unit_eval production, unit eval construction, config unit eval, unit_eval, builder, examples, production rules, file paths, size limits, assertion policy]
 density_score: 0.90
 related:
-  - p11_qg_unit_eval
-  - bld_output_template_unit_eval
-  - bld_collaboration_unit_eval
   - unit-eval-builder
   - bld_tools_unit_eval
 ---
@@ -84,8 +81,6 @@ python _tools/cex_score.py --apply bld-config-unit-eval.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_unit_eval]] | upstream | 0.37 |
-| [[bld_output_template_unit_eval]] | upstream | 0.37 |
 | [[bld_orchestration_unit_eval]] | upstream | 0.36 |
 | [[unit-eval-builder]] | upstream | 0.35 |
 | [[bld_tools_unit_eval]] | upstream | 0.35 |

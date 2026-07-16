@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [usage_report construction, quality gate usage report, usage_report, builder, quality_gate, quality gate, fail condition, scoring guide, metric threshold, threshold operator]
 density_score: 0.85
-related:
-  - p03_qg_prompt_technique
-  - p09_qg_marketplace_app_manifest
-  - p05_qg_pricing_page
-  - p01_qg_reranker_config
-  - p07_qg_cohort_analysis
 ---
 ## Quality Gate
 

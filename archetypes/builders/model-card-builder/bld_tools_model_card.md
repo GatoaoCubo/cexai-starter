@@ -21,7 +21,6 @@ related:
   - bld_tools_response_format
   - bld_tools_embedder_provider
   - bld_tools_function_def
-  - p11_qg_model_card
 ---
 # Tools: model-card-builder
 ## Production Tools
@@ -61,4 +60,3 @@ All 10 HARD gates must pass. SOFT gates contribute to score.
 | [[bld_tools_response_format]] | sibling | 0.45 |
 | [[bld_tools_embedder_provider]] | sibling | 0.43 |
 | [[bld_tools_function_def]] | sibling | 0.43 |
-| [[p11_qg_model_card]] | downstream | 0.41 |

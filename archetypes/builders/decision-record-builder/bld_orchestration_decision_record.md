@@ -19,8 +19,6 @@ keywords: [decision record construction, collaboration decision record, decision
 density_score: 0.90
 related:
   - decision-record-builder
-  - bld_knowledge_card_decision_record
-  - p01_kc_decision_record
   - bld_architecture_decision_record
   - bld_tools_decision_record
 ---

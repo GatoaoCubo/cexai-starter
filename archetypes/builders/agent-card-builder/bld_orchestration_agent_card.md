@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [agent card construction, collaboration agent card, agent_card, builder, examples, my role, crew compositions, new agent, architecture documentation, orchestration design]
 density_score: 0.90
 related:
-  - bld_collaboration_model_card
   - agent-card-builder
-  - bld_knowledge_card_agent_card
   - bld_memory_agent_card
-  - bld_collaboration_agent
 ---
 # Collaboration: agent-card-builder
 ## My Role in Crews

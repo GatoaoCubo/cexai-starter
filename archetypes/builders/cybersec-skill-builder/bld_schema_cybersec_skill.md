@@ -22,7 +22,6 @@ related:
   - bld_schema_safety_policy
   - bld_schema_ai_rmf_profile
   - bld_schema_guardrail
-  - p01_kc_cybersec_skill
 ---
 
 # Schema: cybersec_skill
@@ -109,4 +108,3 @@ A single AF gate failure = REJECT regardless of structural score. This is the co
 | [[bld_schema_safety_policy]] | sibling | 0.62 |
 | [[bld_schema_ai_rmf_profile]] | sibling | 0.58 |
 | [[bld_schema_guardrail]] | sibling | 0.55 |
-| [[p01_kc_cybersec_skill]] | downstream | 0.70 |

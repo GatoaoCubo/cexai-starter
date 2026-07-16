@@ -21,7 +21,6 @@ the, spec table, builder files, manifest system_prompt]
 density_score: 0.90
 related:
   - bld_collaboration_builder
-  - p03_sp__builder_builder
   - bld_instruction_builder
   - bld_architecture_kind
   - kind-builder
@@ -81,7 +80,6 @@ The meta-builder is the factory that produces other builders. It operates one ab
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_collaboration_builder]] | downstream | 0.36 |
-| [[p03_sp__builder_builder]] | downstream | 0.33 |
 | [[bld_instruction_builder]] | downstream | 0.31 |
 | [[bld_architecture_kind]] | downstream | 0.31 |
 | [[kind-builder]] | downstream | 0.30 |

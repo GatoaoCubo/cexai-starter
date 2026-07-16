@@ -19,9 +19,7 @@ keywords: [messaging gateway construction, builder tools, find similar gateways,
 density_score: 0.89
 related:
   - bld_tools_terminal_backend
-  - p11_tools_revision_loop_policy
   - bld_tools_personality
-  - bld_collaboration_messaging_gateway
   - messaging-gateway-builder
 ---
 # Tools: messaging_gateway Builder
@@ -90,7 +88,5 @@ python -c "from _tools.signal_writer import write_signal; write_signal('n03', 'c
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_terminal_backend]] | sibling | 0.48 |
-| [[p11_tools_revision_loop_policy]] | related | 0.40 |
 | [[bld_tools_personality]] | related | 0.38 |
-| [[bld_collaboration_messaging_gateway]] | downstream | 0.36 |
 | [[messaging-gateway-builder]] | related | 0.34 |

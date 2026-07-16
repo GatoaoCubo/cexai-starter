@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, audio tool construction, config audio tool, audio_tool, builder, examples, "p04_audio_{capability_slug}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_audio_tool
-  - bld_instruction_audio_tool
-  - p10_lr_audio_tool_builder
   - audio-tool-builder
-  - bld_collaboration_audio_tool
 ---
 # Config: audio_tool Production Rules
 ## Naming Convention
@@ -83,8 +79,4 @@ Rule: every audio_tool MUST declare at least direction, models, formats, and lan
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_audio_tool]] | upstream | 0.55 |
-| [[bld_instruction_audio_tool]] | upstream | 0.48 |
-| [[p10_lr_audio_tool_builder]] | downstream | 0.47 |
 | [[audio-tool-builder]] | upstream | 0.46 |
-| [[bld_collaboration_audio_tool]] | downstream | 0.44 |

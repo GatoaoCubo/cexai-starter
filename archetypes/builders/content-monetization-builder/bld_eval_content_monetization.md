@@ -19,9 +19,6 @@ keywords: [gates for monetization artifacts, margin enforcement, webhook idempot
 density_score: 1.0
 related:
   - content-monetization-builder
-  - bld_output_template_content_monetization
-  - bld_instruction_content_monetization
-  - p10_lr_content-monetization-builder
   - bld_schema_content_monetization
 ---
 ## Quality Gate

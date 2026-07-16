@@ -30,11 +30,7 @@ keywords:
   - "### deprecated"
 density_score: 0.85
 related:
-  - p01_qg_changelog
   - bld_schema_changelog
-  - bld_output_template_changelog
-  - bld_knowledge_card_changelog
-  - kc_changelog
 ---
 ## Phase 1: RESEARCH
 1. Identify the version being documented using SemVer (MAJOR.MINOR.PATCH per semver.org).
@@ -72,8 +68,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_qg_changelog]] | downstream | 0.51 |
 | [[bld_schema_changelog]] | downstream | 0.46 |
-| [[bld_output_template_changelog]] | downstream | 0.46 |
-| [[bld_knowledge_card_changelog]] | upstream | 0.44 |
-| [[kc_changelog]] | upstream | 0.44 |

@@ -29,11 +29,7 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - p03_ins_embedder_provider
-  - p01_emb_openai_text_embedding_3_small
   - embedding-config-builder
-  - bld_collaboration_embedder_provider
-  - p01_kc_embedder_provider
 ---
 ## Identity
 
@@ -123,8 +119,6 @@ Body sections: Boundary, Configuration Matrix, Dimension Tradeoffs, Integration 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_embedder_provider]] | downstream | 0.56 |
-| [[p01_emb_openai_text_embedding_3_small]] | upstream | 0.55 |
 | [[embedding-config-builder]] | sibling | 0.51 |
 | [[bld_orchestration_embedder_provider]] | related | 0.50 |
 | [[kc_embedder_provider]] | upstream | 0.49 |

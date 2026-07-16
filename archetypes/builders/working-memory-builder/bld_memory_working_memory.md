@@ -24,11 +24,7 @@ keywords: [memory working memory, typed slots, clear policy are load-bearing, wo
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_working_memory
   - working-memory-builder
-  - p10_qg_working_memory
-  - bld_instruction_working_memory
-  - bld_output_template_working_memory
 ---
 ## Summary
 Working memory without capacity limits causes context window overflow in multi-step tasks. Typed slots catch errors early. The clear vs promote decision determines whether task insights survive completion -- for research and analysis tasks, promote is almost always the right choice.
@@ -62,8 +58,4 @@ Working memory without capacity limits causes context window overflow in multi-s
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_working_memory]] | upstream | 0.49 |
 | [[working-memory-builder]] | related | 0.46 |
-| [[p10_qg_working_memory]] | downstream | 0.40 |
-| [[bld_instruction_working_memory]] | upstream | 0.39 |
-| [[bld_output_template_working_memory]] | upstream | 0.39 |

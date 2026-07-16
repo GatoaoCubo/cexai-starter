@@ -18,10 +18,7 @@ keywords: [component map of validation_schema, and architectural position, valid
 density_score: 0.90
 related:
   - validation-schema-builder
-  - bld_collaboration_validation_schema
-  - p01_kc_validation_schema
   - bld_architecture_response_format
-  - bld_knowledge_card_validation_schema
 ---
 # Architecture: validation_schema in the CEX
 ## Component Inventory

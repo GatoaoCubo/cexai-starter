@@ -17,10 +17,8 @@ keywords: [tagline construction, architecture tagline, tagline, builder, example
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
-  - bld_collaboration_tagline
   - bld_tools_tagline
   - bld_memory_tagline
-  - bld_instruction_tagline
   - tagline-builder
 ---
 # Architecture: Tagline Builder

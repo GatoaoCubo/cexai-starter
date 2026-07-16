@@ -19,9 +19,6 @@ produces, receives from, produces for]
 density_score: 0.85
 related:
   - nucleus-def-builder
-  - bld_knowledge_card_nucleus_def
-  - n00_nucleus_def_manifest
-  - bld_collaboration_capability_registry
 ---
 ## Crew Role
 Produces formal nucleus_def contracts that make the CEX 8-nucleus fractal architecture

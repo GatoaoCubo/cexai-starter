@@ -18,9 +18,7 @@ keywords: [roi_calculator construction, output template roi calculator, roi_calc
 density_score: 0.85
 related:
   - kc_roi_calculator
-  - bld_instruction_roi_calculator
   - bld_schema_roi_calculator
-  - bld_knowledge_card_roi_calculator
   - roi-calculator-builder
 ---
 ```yaml

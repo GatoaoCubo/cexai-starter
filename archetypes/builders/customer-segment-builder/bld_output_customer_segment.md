@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [customer_segment construction, output template customer segment, customer_segment, builder, output_template, market saa, north america, western europe, customer needs, pain point]
 density_score: 0.85
 related:
-  - bld_knowledge_card_customer_segment
-  - p02_qg_customer_segment
   - customer-segment-builder
-  - bld_instruction_customer_segment
-  - n00_customer_segment_manifest
 ---
 ```yaml
 ---
@@ -104,7 +100,6 @@ segmentation_criteria: [{{criteria_list}}]
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_customer_segment]] | upstream | 0.23 |
-| [[p02_qg_customer_segment]] | downstream | 0.22 |
 | [[customer-segment-builder]] | upstream | 0.18 |
 | [[bld_prompt_customer_segment]] | upstream | 0.18 |
 | n00_customer_segment_manifest | upstream | 0.17 |

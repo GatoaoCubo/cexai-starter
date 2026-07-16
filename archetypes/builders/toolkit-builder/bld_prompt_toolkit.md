@@ -29,9 +29,7 @@ keywords: [toolkit builder instructions, confirmation tiers, and deny lists, lea
 density_score: 0.86
 llm_function: REASON
 related:
-  - bld_knowledge_card_toolkit
   - toolkit-builder
-  - bld_collaboration_toolkit
   - bld_schema_toolkit
   - bld_config_toolkit
 ---

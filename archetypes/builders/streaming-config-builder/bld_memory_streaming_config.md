@@ -36,11 +36,8 @@ this, related artifacts]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_streaming_config
   - streaming-config-builder
   - bld_config_streaming_config
-  - bld_instruction_streaming_config
-  - p11_qg_streaming_config
 ---
 ## Summary
 Streaming configuration failures fall into three categories: connection failures (stream
@@ -102,8 +99,5 @@ config, tools, memory, manifest, architecture, collaboration, and config.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_streaming_config]] | upstream | 0.46 |
 | [[streaming-config-builder]] | upstream | 0.35 |
 | [[bld_config_streaming_config]] | upstream | 0.34 |
-| [[bld_instruction_streaming_config]] | upstream | 0.33 |
-| [[p11_qg_streaming_config]] | downstream | 0.30 |

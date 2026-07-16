@@ -5,10 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - mental-model-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - bld_collaboration_mental_model
-  - p01_kc_mental_model
-  - bld_knowledge_card_mental_model
 ---
 
 # mental-model-builder Sub-Agent

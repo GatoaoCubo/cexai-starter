@@ -25,9 +25,6 @@ long_tails:
 density_score: 1.0
 related:
   - p02_mm_cex_architecture_n04
-  - p06_val_n07
-  - bld_collaboration_kind
-  - component_map_n07
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_e2e_test, cex_evolve. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

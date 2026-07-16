@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [audit_log construction, memory audit log, audit_log, builder, memory, actor, action, timestamp, resource, outcome]
 density_score: 0.85
 related:
-  - bld_instruction_audit_log
   - audit-log-builder
-  - bld_knowledge_card_audit_log
-  - p11_qg_audit_log
-  - kc_audit_log
 ---
 ## Observation
 Common issues include inconsistent event schema, missing required fields (e.g., actor, action, timestamp), and mutable log entries that allow post-creation modifications.
@@ -42,8 +38,4 @@ Reviewed artifacts showed reduced compliance risks when using standardized schem
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_audit_log]] | upstream | 0.44 |
 | [[audit-log-builder]] | downstream | 0.44 |
-| [[bld_knowledge_card_audit_log]] | upstream | 0.31 |
-| [[p11_qg_audit_log]] | downstream | 0.28 |
-| [[kc_audit_log]] | upstream | 0.26 |

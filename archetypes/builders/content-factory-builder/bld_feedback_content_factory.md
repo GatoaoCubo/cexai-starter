@@ -16,10 +16,6 @@ density_score: 0.88
 created: "2026-07-03"
 updated: "2026-07-03"
 related:
-  - p11_fb_social_publisher
-  - p11_qg_content_factory
-  - bld_instruction_content_factory
-  - p01_kc_content_factory
   - content-factory-builder
 ---
 # Feedback: Content Factory
@@ -89,8 +85,4 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_social_publisher]] | sibling | 0.78 |
-| [[p11_qg_content_factory]] | sibling | 0.76 |
-| [[bld_instruction_content_factory]] | sibling | 0.72 |
-| [[p01_kc_content_factory]] | upstream | 0.68 |
 | [[content-factory-builder]] | upstream | 0.65 |

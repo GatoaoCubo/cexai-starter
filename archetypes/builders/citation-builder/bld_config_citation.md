@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, citation construction, config citation, citation, builder, examples, "p01_cit_{topic_slug}.md"]
 density_score: 0.90
 related:
-  - p01_kc_citation
-  - bld_output_template_citation
-  - bld_instruction_citation
   - bld_schema_citation
-  - bld_knowledge_card_citation
 ---
 # Config: citation Production Rules
 ## Naming Convention
@@ -75,7 +71,6 @@ python _tools/cex_score.py --apply bld-config-citation.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_citation]] | upstream | 0.39 |
-| [[bld_output_template_citation]] | upstream | 0.38 |
 | [[bld_prompt_citation]] | upstream | 0.38 |
 | [[bld_schema_citation]] | upstream | 0.37 |
 | [[bld_knowledge_citation]] | upstream | 0.34 |

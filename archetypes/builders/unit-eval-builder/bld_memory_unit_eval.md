@@ -24,10 +24,6 @@ for, unit evals]
 density_score: 0.90
 related:
   - unit-eval-builder
-  - bld_collaboration_unit_eval
-  - p11_qg_unit_eval
-  - n00_unit_eval_manifest
-  - p02_agent_test_ops
 ---
 # Memory: unit-eval-builder
 ## Summary
@@ -88,6 +84,5 @@ python _tools/cex_score.py --apply bld-memory-unit-eval.md
 |----------|-------------|-------|
 | [[unit-eval-builder]] | upstream | 0.50 |
 | [[bld_orchestration_unit_eval]] | upstream | 0.47 |
-| [[p11_qg_unit_eval]] | upstream | 0.46 |
 | n00_unit_eval_manifest | upstream | 0.42 |
 | p02_agent_test_ops | upstream | 0.39 |

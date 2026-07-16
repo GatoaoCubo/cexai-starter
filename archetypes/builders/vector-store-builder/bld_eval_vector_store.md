@@ -17,10 +17,8 @@ updated: "2026-04-06"
 8f: "F7_govern"
 density_score: 0.87
 related:
-  - p03_ins_vector_store
   - bld_memory_vector_store
   - vector-store-builder
-  - bld_knowledge_card_vector_store
   - bld_schema_vector_store
 ---
 ## Quality Gate

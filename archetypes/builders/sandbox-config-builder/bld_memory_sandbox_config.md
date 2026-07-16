@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - sandbox-config-builder
   - playground-config-builder
-  - p10_lr_sandbox_spec_builder
-  - p10_lr_code_executor_builder
-  - sandbox_config_n05
 ---
 ## Observation  
 Common issues include incomplete isolation boundaries (e.g., network or filesystem leaks) and overly permissive resource limits, leading to security risks or performance instability. Misaligned config layers (e.g., mixing isolation policies with execution logic) often complicate debugging.  
@@ -44,6 +41,3 @@ Reviewed `secure_sandbox_template.yaml` and `isolation_policy_v2.json` showed co
 |----------|-------------|-------|
 | [[sandbox-config-builder]] | upstream | 0.35 |
 | [[playground-config-builder]] | upstream | 0.29 |
-| [[p10_lr_sandbox_spec_builder]] | sibling | 0.28 |
-| [[p10_lr_code_executor_builder]] | sibling | 0.28 |
-| [[sandbox_config_n05]] | upstream | 0.27 |

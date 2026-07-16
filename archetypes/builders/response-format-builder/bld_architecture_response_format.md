@@ -18,10 +18,7 @@ keywords: [component map of response_format, and architectural position, respons
 density_score: 0.90
 related:
   - response-format-builder
-  - p03_ins_response_format
-  - bld_collaboration_response_format
   - bld_memory_response_format
-  - p01_kc_cex_lp05_output
 ---
 # Architecture: response_format in the CEX
 ## Component Inventory
@@ -69,7 +66,6 @@ response_format --signals-->    format_deviation
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[response-format-builder]] | upstream | 0.61 |
-| [[p03_ins_response_format]] | upstream | 0.60 |
 | [[bld_orchestration_response_format]] | upstream | 0.51 |
 | [[bld_memory_response_format]] | downstream | 0.50 |
 | p01_kc_cex_lp05_output | upstream | 0.47 |

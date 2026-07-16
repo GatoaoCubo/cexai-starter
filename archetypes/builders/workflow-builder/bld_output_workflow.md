@@ -20,11 +20,8 @@ keywords: [template with, workflow construction, output template workflow, workf
 1. **agent**:, 2. **action**:]
 density_score: 0.90
 related:
-  - bld_knowledge_card_workflow
   - bld_architecture_workflow
-  - p11_qg_workflow
   - bld_config_workflow
-  - p01_kc_workflow
 ---
 # Output Template: workflow
 ```yaml
@@ -101,8 +98,5 @@ density_score: {{0.80-1.00}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_workflow]] | upstream | 0.40 |
 | [[bld_architecture_workflow]] | downstream | 0.39 |
-| [[p11_qg_workflow]] | downstream | 0.38 |
 | [[bld_config_workflow]] | downstream | 0.36 |
-| [[p01_kc_workflow]] | downstream | 0.36 |

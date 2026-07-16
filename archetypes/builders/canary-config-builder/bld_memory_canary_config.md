@@ -19,7 +19,6 @@ related:
   - bld_memory_slo_definition
   - bld_memory_saga
   - bld_memory_default
-  - bld_rules_canary_config
   - bld_memory_data_contract
 ---
 # Memory: canary_config Builder
@@ -69,5 +68,4 @@ python _tools/cex_memory_update.py --check
 | [[bld_memory_slo_definition]] | sibling | 0.38 |
 | [[bld_memory_saga]] | sibling | 0.38 |
 | [[bld_memory_default]] | related | 0.35 |
-| [[bld_rules_canary_config]] | sibling | 0.32 |
 | [[bld_memory_data_contract]] | related | 0.30 |

@@ -28,7 +28,6 @@ related:
   - bld_feedback_query_optimizer
   - bld_orchestration_query_optimizer
   - query-optimizer-builder
-  - kc_query_optimizer
   - bld_architecture_query_optimizer
 ---
 ## Summary
@@ -65,5 +64,4 @@ Patterns derived from builder runs, quality gate failures, and peer review feedb
 | [[bld_feedback_query_optimizer]] | downstream | 0.46 |
 | [[bld_orchestration_query_optimizer]] | downstream | 0.45 |
 | [[query-optimizer-builder]] | upstream | 0.43 |
-| [[kc_query_optimizer]] | upstream | 0.42 |
 | [[bld_architecture_query_optimizer]] | upstream | 0.39 |

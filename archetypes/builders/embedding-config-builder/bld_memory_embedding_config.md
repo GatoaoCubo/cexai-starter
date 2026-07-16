@@ -36,11 +36,7 @@ this]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_embedding_config
   - embedding-config-builder
-  - bld_instruction_embedding_config
-  - p11_qg_embedding_config
-  - p01_kc_embedding_config
 ---
 ## Summary
 Embedding pipeline misconfiguration produces incorrect similarity rankings that appear to work until retrieval quality is measured quantitatively. The four critical decisions - model/dimensions pairing, chunk size, overlap, and distance metric with normalization - interact: a correct choice in one dimension can be undermined by a wrong choice in another.
@@ -114,5 +110,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_embedding_config_builder.md
 | [[bld_knowledge_embedding_config]] | upstream | 0.41 |
 | [[embedding-config-builder]] | upstream | 0.38 |
 | [[bld_prompt_embedding_config]] | upstream | 0.34 |
-| [[p11_qg_embedding_config]] | downstream | 0.34 |
 | [[kc_embedding_config]] | upstream | 0.31 |

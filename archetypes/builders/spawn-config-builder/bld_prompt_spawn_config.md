@@ -30,10 +30,7 @@ density_score: 0.92
 llm_function: REASON
 related:
   - spawn-config-builder
-  - p11_qg_spawn_config
-  - p01_kc_spawn_config
   - bld_schema_spawn_config
-  - bld_knowledge_card_spawn_config
 ---
 ## Context
 The spawn-config-builder produces a `spawn_config` artifact — a structured YAML that defines exactly how a director process is launched. Downstream orchestration scripts consume this artifact to spawn terminals with the correct flags, model, MCP profile, timeout, and prompt strategy.

@@ -30,11 +30,8 @@ keywords:
   - "nucleus_models yaml"
 density_score: 0.85
 related:
-  - bld_knowledge_card_nucleus_def
   - bld_tools_nucleus_def
   - nucleus-def-builder
-  - bld_instruction_nucleus_def
-  - p02_qg_nucleus_def
 ---
 ## Observation
 The CEX architecture has 8 nuclei (N00-N07) but lacked a formal machine-readable
@@ -73,4 +70,3 @@ Never guess these values -- always read the source files first.
 | [[bld_tools_nucleus_def]] | upstream | 0.44 |
 | [[nucleus-def-builder]] | upstream | 0.42 |
 | [[bld_prompt_nucleus_def]] | upstream | 0.41 |
-| [[p02_qg_nucleus_def]] | downstream | 0.40 |

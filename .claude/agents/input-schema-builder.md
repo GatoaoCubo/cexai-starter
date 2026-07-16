@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
   - input-schema-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p06_schema_en
   - validation-schema-builder
 ---
 

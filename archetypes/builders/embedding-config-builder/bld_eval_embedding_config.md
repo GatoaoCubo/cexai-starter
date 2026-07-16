@@ -19,10 +19,8 @@ keywords: [and distance metrics, gates for embedding_config artifacts, validates
 density_score: 0.90
 related:
   - embedding-config-builder
-  - p11_qg_embedder_provider
   - bld_architecture_embedding_config
   - bld_schema_embedding_config
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 
@@ -135,7 +133,6 @@ Rebuild: `python build_indexes_ollama.py --scope all`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[embedding-config-builder]] | upstream | 0.41 |
-| [[p11_qg_embedder_provider]] | sibling | 0.39 |
 | [[bld_architecture_embedding_config]] | upstream | 0.38 |
 | [[bld_schema_embedding_config]] | upstream | 0.37 |
 | p11_qg_quality_gate | sibling | 0.36 |

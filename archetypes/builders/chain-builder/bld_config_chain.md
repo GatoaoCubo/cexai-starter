@@ -28,11 +28,8 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, chain construction, config chain, chain, builder, examples, "p03_ch_{pipeline_slug}.md"]
 density_score: 0.90
 related:
-  - bld_instruction_chain
   - bld_schema_chain
   - chain-builder
-  - p01_kc_chain
-  - p10_lr_chain_builder
 ---
 # Config: chain Production Rules
 ## Naming Convention
@@ -73,8 +70,5 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_chain]] | upstream | 0.40 |
 | [[bld_schema_chain]] | upstream | 0.40 |
 | [[chain-builder]] | upstream | 0.36 |
-| [[p01_kc_chain]] | upstream | 0.36 |
-| [[p10_lr_chain_builder]] | downstream | 0.34 |

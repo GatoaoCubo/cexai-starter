@@ -33,7 +33,6 @@ density_score: 0.88
 related:
   - bld_tools_voice_pipeline
   - bld_tools_collaboration_pattern
-  - tools_prompt_template_builder
   - bld_tools_thinking_config
   - bld_tools_naming_rule
 ---
@@ -136,6 +135,5 @@ without rewriting the full file.
 |----------|-------------|-------|
 | [[bld_tools_voice_pipeline]] | sibling | 0.62 |
 | [[bld_tools_collaboration_pattern]] | sibling | 0.60 |
-| [[tools_prompt_template_builder]] | sibling | 0.60 |
 | [[bld_tools_thinking_config]] | sibling | 0.58 |
 | [[bld_tools_naming_rule]] | sibling | 0.48 |

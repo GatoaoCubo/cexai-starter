@@ -19,10 +19,6 @@ keywords: [preference dataset construction, collaboration preference dataset, pr
 density_score: 0.90
 related:
   - preference-dataset-builder
-  - bld_collaboration_eval_dataset
-  - p11_lr_preference_dataset_builder
-  - bld_collaboration_reward_signal
-  - bld_collaboration_finetune_config
 ---
 # Collaboration: preference-dataset-builder
 
@@ -88,7 +84,3 @@ I produce the training signal specification that alignment pipelines consume.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[preference-dataset-builder]] | upstream | 0.45 |
-| [[bld_collaboration_eval_dataset]] | sibling | 0.38 |
-| [[p11_lr_preference_dataset_builder]] | upstream | 0.37 |
-| [[bld_collaboration_reward_signal]] | sibling | 0.34 |
-| [[bld_collaboration_finetune_config]] | sibling | 0.34 |

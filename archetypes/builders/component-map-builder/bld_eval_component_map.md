@@ -15,12 +15,6 @@ updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.90
 llm_function: GOVERN
-related:
-  - bld_instruction_component_map
-  - p11_qg_instruction
-  - p11_qg_diagram
-  - p11_qg_knowledge_index
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 

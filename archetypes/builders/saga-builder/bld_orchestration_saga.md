@@ -30,11 +30,7 @@ keywords:
   - "naming rules"
 density_score: null
 related:
-  - kc_saga
-  - bld_manifest_saga
   - bld_memory_saga
-  - bld_knowledge_card_saga
-  - bld_quality_gate_saga
 ---
 # Rules: saga Builder
 
@@ -65,8 +61,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_saga]] | sibling | 0.48 |
-| [[bld_manifest_saga]] | downstream | 0.45 |
 | [[bld_memory_saga]] | sibling | 0.45 |
-| [[bld_knowledge_card_saga]] | sibling | 0.44 |
-| [[bld_quality_gate_saga]] | upstream | 0.43 |

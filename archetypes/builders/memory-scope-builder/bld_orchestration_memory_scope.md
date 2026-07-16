@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [memory scope construction, collaboration memory scope, memory_scope, builder, examples, "### crew: memory system", my role, crew compositions, agent design, memory system]
 density_score: 0.90
 related:
-  - bld_collaboration_memory_type
   - memory-scope-builder
-  - bld_collaboration_retriever_config
-  - bld_collaboration_handoff_protocol
-  - bld_collaboration_output_validator
 ---
 # Collaboration: memory-scope-builder
 ## My Role in Crews

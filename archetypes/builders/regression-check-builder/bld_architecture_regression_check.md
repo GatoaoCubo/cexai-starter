@@ -18,10 +18,6 @@ keywords: [component map of regression_check, and architectural position, regres
 density_score: 0.90
 related:
   - regression-check-builder
-  - bld_knowledge_card_regression_check
-  - bld_collaboration_regression_check
-  - bld_instruction_regression_check
-  - p01_kc_regression_check
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -75,7 +71,3 @@ agent           --depends-->  metrics
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[regression-check-builder]] | upstream | 0.56 |
-| [[bld_knowledge_card_regression_check]] | upstream | 0.48 |
-| [[bld_collaboration_regression_check]] | downstream | 0.45 |
-| [[bld_instruction_regression_check]] | upstream | 0.44 |
-| [[p01_kc_regression_check]] | upstream | 0.43 |

@@ -28,11 +28,7 @@ L3: When user needs a multi-service transaction that must be reversible on parti
 isolation: worktree
 isolation_reason: "sagas coordinate multiple services and compensation chains; worktree isolates from main branch during design"
 related:
-  - kc_saga
-  - bld_instruction_saga
   - bld_architecture_saga
-  - bld_knowledge_card_saga
-  - bld_quality_gate_saga
 ---
 ## Identity
 
@@ -95,8 +91,4 @@ Frontmatter + body. Body sections: Goal, Steps (table: id, participant, action, 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_saga]] | upstream | 0.65 |
-| [[bld_instruction_saga]] | related | 0.62 |
 | [[bld_architecture_saga]] | upstream | 0.55 |
-| [[bld_knowledge_card_saga]] | upstream | 0.55 |
-| [[bld_quality_gate_saga]] | upstream | 0.53 |

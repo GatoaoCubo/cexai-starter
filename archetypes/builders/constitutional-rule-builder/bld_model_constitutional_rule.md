@@ -21,8 +21,6 @@ triggers: ["define constitutional rule", "absolute agent constraint", "cannot be
 keywords: [constitutional_rule, cai, hard_constraint, absolute, non_overridable, anthropic]
 related:
   - kc_constitutional_rule
-  - bld_rules_constitutional_rule
-  - bld_instruction_constitutional_rule
   - bld_memory_constitutional_rule
   - bld_architecture_constitutional_rule
 ---
@@ -93,7 +91,6 @@ safety_policy is a document without an enforcement mechanism. You only handle ab
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_constitutional_rule]] | sibling | 0.56 |
-| [[bld_rules_constitutional_rule]] | sibling | 0.53 |
 | [[bld_prompt_constitutional_rule]] | related | 0.50 |
 | [[bld_memory_constitutional_rule]] | sibling | 0.49 |
 | [[bld_architecture_constitutional_rule]] | sibling | 0.48 |

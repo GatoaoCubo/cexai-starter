@@ -18,11 +18,8 @@ updated: "2026-04-17"
 keywords: [fail gate for backpressure_policy, overflow strategy enum, buffer positivity, shed threshold range, watermark consistency, quality-gate, backpressure-policy]
 density_score: 0.90
 related:
-  - bld_output_template_backpressure_policy
-  - bld_instruction_backpressure_policy
   - bld_schema_backpressure_policy
   - bld_architecture_backpressure_policy
-  - bld_knowledge_card_backpressure_policy
 ---
 ## Quality Gate
 

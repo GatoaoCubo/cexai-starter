@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [portable agent bundle packaging, agent package construction, knowledge card agent package, agent_package, builder, examples, domain knowledge, executive summary, spec table, manifest yaml]
 density_score: 0.90
 related:
-  - bld_instruction_agent_package
   - agent-package-builder
-  - p01_kc_agent_package
   - bld_config_agent_package
-  - p10_lr_agent_package_builder
 ---
 # Domain Knowledge: agent_package
 ## Executive Summary
@@ -85,4 +82,3 @@ agent packages are self-contained, portable, LLM-agnostic bundles that encapsula
 | [[agent-package-builder]] | downstream | 0.49 |
 | [[kc_agent_package]] | sibling | 0.44 |
 | [[bld_config_agent_package]] | downstream | 0.44 |
-| [[p10_lr_agent_package_builder]] | downstream | 0.44 |

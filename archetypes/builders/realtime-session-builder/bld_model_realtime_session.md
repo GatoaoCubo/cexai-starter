@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [builder identity, routing for realtime_session, realtime_session construction, type builder realtime session, realtime_session, builder, type_builder]
 density_score: 0.85
 related:
-  - bld_knowledge_card_realtime_session
-  - p10_mem_realtime_session_builder
   - bld_schema_realtime_session
-  - audit_realtime_session_builder
-  - bld_instruction_realtime_session
 ---
 ## Identity
 
@@ -132,8 +128,4 @@ Deliver a `realtime_session` artifact with this structure:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_realtime_session]] | upstream | 0.66 |
-| [[p10_mem_realtime_session_builder]] | downstream | 0.58 |
 | [[bld_schema_realtime_session]] | downstream | 0.58 |
-| [[audit_realtime_session_builder]] | downstream | 0.57 |
-| [[bld_instruction_realtime_session]] | upstream | 0.56 |

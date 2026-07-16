@@ -32,11 +32,8 @@ keywords:
   - "## review trigger"
 density_score: 0.90
 related:
-  - p11_qg_hitl_config
   - bld_schema_hitl_config
-  - bld_instruction_hitl_config
   - bld_architecture_hitl_config
-  - p01_kc_hitl_config
 ---
 # Output Template: hitl_config
 ```yaml
@@ -95,8 +92,5 @@ Fallback: **{{reject|accept_with_flag|retry}}** -- `{{justification_for_this_cho
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_hitl_config]] | downstream | 0.40 |
 | [[bld_schema_hitl_config]] | downstream | 0.39 |
-| [[bld_instruction_hitl_config]] | upstream | 0.35 |
 | [[bld_architecture_hitl_config]] | downstream | 0.34 |
-| [[p01_kc_hitl_config]] | downstream | 0.33 |

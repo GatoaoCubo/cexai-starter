@@ -20,9 +20,6 @@ density_score: 0.85
 related:
   - onboarding-flow-builder
   - quickstart-guide-builder
-  - bld_knowledge_card_onboarding_flow
-  - n00_onboarding_flow_manifest
-  - kc_onboarding_flow
 ---
 ## Crew Role  
 Orchestrates activation steps, validates prerequisites, and triggers system readiness checks for new users or entities.  
@@ -49,6 +46,3 @@ Does NOT handle long-term user data storage (User Profile Service), authenticati
 |----------|-------------|-------|
 | [[onboarding-flow-builder]] | upstream | 0.29 |
 | [[quickstart-guide-builder]] | upstream | 0.27 |
-| [[bld_knowledge_card_onboarding_flow]] | upstream | 0.26 |
-| [[n00_onboarding_flow_manifest]] | upstream | 0.25 |
-| [[kc_onboarding_flow]] | upstream | 0.24 |

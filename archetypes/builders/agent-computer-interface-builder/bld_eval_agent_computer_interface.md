@@ -19,10 +19,6 @@ all]
 density_score: 0.88
 related:
   - bld_schema_agent_computer_interface
-  - p11_qg_quality_gate
-  - bld_output_template_agent_computer_interface
-  - p11_qg_input_schema
-  - p11_qg_knowledge_card
 ---
 ## Quality Gate
 

@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [legal_vertical construction, collaboration legal vertical, legal_vertical, builder, collaboration, crew role  
 assembles, receives from, template repo, case law, produces for]
 density_score: 0.85
-related:
-  - bld_collaboration_govtech_vertical
-  - bld_collaboration_compliance_framework
-  - bld_collaboration_healthcare_vertical
-  - bld_collaboration_compliance_checklist
-  - bld_collaboration_fintech_vertical
 ---
 ## Crew Role  
 Assembles structured legal frameworks, templates, and regulatory-compliant documents for vertical-specific use cases.  
@@ -43,12 +37,3 @@ Assembles structured legal frameworks, templates, and regulatory-compliant docum
 
 ## Boundary  
 Does NOT handle audit trails (compliance_checklist) or case study analysis (case_study). Audits and case studies are managed by their respective specialized builders.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_govtech_vertical]] | sibling | 0.38 |
-| [[bld_collaboration_compliance_framework]] | sibling | 0.34 |
-| [[bld_collaboration_healthcare_vertical]] | sibling | 0.32 |
-| [[bld_collaboration_compliance_checklist]] | sibling | 0.28 |
-| [[bld_collaboration_fintech_vertical]] | sibling | 0.28 |

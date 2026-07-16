@@ -19,10 +19,6 @@ keywords: [benchmark construction, instruction benchmark, benchmark, builder, ex
 density_score: 0.90
 related:
   - benchmark-builder
-  - bld_instruction_golden_test
-  - bld_knowledge_card_benchmark
-  - bld_instruction_boot_config
-  - bld_output_template_benchmark
 ---
 # Instructions: How to Produce a benchmark
 ## Phase 1: RESEARCH
@@ -86,7 +82,3 @@ python _tools/cex_skill_loader.py --verify benchmark
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[benchmark-builder]] | downstream | 0.46 |
-| [[bld_instruction_golden_test]] | sibling | 0.37 |
-| [[bld_knowledge_card_benchmark]] | upstream | 0.36 |
-| [[bld_instruction_boot_config]] | sibling | 0.35 |
-| [[bld_output_template_benchmark]] | downstream | 0.35 |

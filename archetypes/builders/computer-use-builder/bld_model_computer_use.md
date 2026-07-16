@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_computer_use
   - bld_architecture_computer_use
-  - bld_instruction_computer_use
-  - p11_qg_computer_use
-  - bld_knowledge_card_computer_use
 ---
 ## Identity
 
@@ -140,5 +136,4 @@ quality_target: 9.0
 | [[bld_orchestration_computer_use]] | downstream | 0.59 |
 | [[bld_architecture_computer_use]] | downstream | 0.55 |
 | [[bld_prompt_computer_use]] | upstream | 0.54 |
-| [[p11_qg_computer_use]] | downstream | 0.54 |
 | [[bld_knowledge_computer_use]] | upstream | 0.53 |

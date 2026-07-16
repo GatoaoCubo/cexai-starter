@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_schema_expansion_play
   - expansion-play-builder
-  - bld_instruction_expansion_play
-  - bld_knowledge_card_expansion_play
-  - p12_qg_renewal_workflow
 ---
 ## Quality Gate
 

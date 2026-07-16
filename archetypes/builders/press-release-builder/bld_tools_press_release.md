@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [press_release construction, press release builder tools, embargo validator, word counter, and wire service references, press_release, builder, tools, production tools, validation tools]
 density_score: 0.85
 related:
-  - bld_instruction_press_release
   - press-release-builder
-  - bld_knowledge_card_press_release
-  - p10_lr_press_release_builder
-  - bld_collaboration_press_release
 ---
 ## Production Tools
 
@@ -97,8 +93,4 @@ Run tools in this order during F5:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_press_release]] | upstream | 0.36 |
 | [[press-release-builder]] | downstream | 0.32 |
-| [[bld_knowledge_card_press_release]] | upstream | 0.31 |
-| [[p10_lr_press_release_builder]] | downstream | 0.26 |
-| [[bld_collaboration_press_release]] | downstream | 0.26 |

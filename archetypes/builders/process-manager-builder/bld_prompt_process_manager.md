@@ -30,10 +30,7 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_process_manager
-  - bld_manifest_process_manager
-  - kc_process_manager
   - bld_memory_process_manager
-  - bld_instruction_aggregate_root
 ---
 # Instructions: How to Produce a process_manager
 ## Phase 1: RESEARCH
@@ -87,7 +84,4 @@ python _tools/cex_prompt_optimizer.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_process_manager]] | related | 0.46 |
-| [[bld_manifest_process_manager]] | related | 0.41 |
-| [[kc_process_manager]] | upstream | 0.39 |
 | [[bld_memory_process_manager]] | related | 0.39 |
-| [[bld_instruction_aggregate_root]] | sibling | 0.36 |

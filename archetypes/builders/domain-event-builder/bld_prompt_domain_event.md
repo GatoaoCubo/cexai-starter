@@ -18,10 +18,6 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_domain_event
-  - bld_instruction_data_contract
-  - bld_instruction_aggregate_root
-  - bld_instruction_bounded_context
-  - p01_kc_domain_event
 ---
 # Instructions: How to Produce a domain_event
 ## Phase 1: IDENTIFY
@@ -79,7 +75,3 @@ python _tools/cex_prompt_optimizer.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_domain_event]] | downstream | 0.39 |
-| [[bld_instruction_data_contract]] | sibling | 0.38 |
-| [[bld_instruction_aggregate_root]] | sibling | 0.37 |
-| [[bld_instruction_bounded_context]] | sibling | 0.36 |
-| [[p01_kc_domain_event]] | upstream | 0.35 |

@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_instruction_compliance_checklist
-  - p10_mem_compliance_checklist_builder
-  - bld_knowledge_card_compliance_checklist
   - compliance-framework-builder
-  - p11_qg_compliance_checklist
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER ASSUME jurisdictional scope beyond explicitly stated regulations.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_compliance_checklist]] | upstream | 0.55 |
-| [[p10_mem_compliance_checklist_builder]] | upstream | 0.52 |
-| [[bld_knowledge_card_compliance_checklist]] | upstream | 0.52 |
 | [[compliance-framework-builder]] | sibling | 0.49 |
-| [[p11_qg_compliance_checklist]] | related | 0.46 |

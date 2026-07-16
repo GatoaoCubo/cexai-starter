@@ -30,13 +30,7 @@ keywords:
   - "key concepts"
   - "model serving"
 related:
-  - p01_kc_kubernetes_ai_requirement
-  - p01_kc_docker_ai_containerization
   - p01_kc_ollama_deployment_guide
-  - bld_knowledge_card_search_strategy
-  - kc_test_ollama_wrapper
-  - bld_output_template_search_strategy
-  - bld_knowledge_card_usage_quota
 ---
 
 # Container Deployment for LLM Applications

@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_product_match
-  - bld_instruction_product_match
-  - bld_output_template_vision_tool
-  - p11_qg_product_match
-  - bld_output_template_output_validator
 ---
 # Output Template: product_match
 ```yaml
@@ -116,6 +112,3 @@ Columns: `{{Codigo, Match?, Fonte casada, Confianca}}`. Confianca filtrada em:
 |----------|-------------|-------|
 | [[bld_schema_product_match]] | downstream | 0.38 |
 | [[bld_prompt_product_match]] | upstream | 0.35 |
-| [[bld_output_template_vision_tool]] | sibling | 0.33 |
-| [[p11_qg_product_match]] | downstream | 0.33 |
-| [[bld_output_template_output_validator]] | sibling | 0.31 |

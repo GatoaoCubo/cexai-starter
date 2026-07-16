@@ -18,8 +18,6 @@ related:
   - bld_schema_design_system
   - bld_prompt_design_system
   - bld_eval_design_system
-  - p06_vs_design_system
-  - p01_kc_design_system
 ---
 
 # Config: design_system build knobs

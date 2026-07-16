@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - instruction-builder
-  - n00_instruction_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
   - system-prompt-builder
 ---
 

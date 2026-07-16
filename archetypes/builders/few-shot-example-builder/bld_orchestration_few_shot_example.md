@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [few shot example construction, collaboration few shot example, few_shot_example, builder, examples, "### crew: format teaching", my role, crew compositions, prompt quality stack, format teaching]
 density_score: 0.90
 related:
-  - bld_collaboration_action_prompt
-  - bld_collaboration_golden_test
-  - bld_collaboration_input_schema
   - few-shot-example-builder
-  - bld_collaboration_response_format
 ---
 # Collaboration: few-shot-example-builder
 ## My Role in Crews

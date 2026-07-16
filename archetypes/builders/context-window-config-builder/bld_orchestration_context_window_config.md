@@ -18,10 +18,6 @@ updated: "2026-04-07"
 keywords: [context window config construction, collaboration context window config, context_window_config, builder, examples, "### crew: rag optimization", my role, crew compositions, prompt assembly pipeline, handoff protocol]
 density_score: 0.90
 related:
-  - bld_collaboration_model_card
-  - bld_collaboration_prompt_version
-  - bld_collaboration_prompt_template
-  - bld_collaboration_action_prompt
   - context-window-config-builder
 ---
 # Collaboration: context-window-config-builder

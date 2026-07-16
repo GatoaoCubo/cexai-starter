@@ -10,12 +10,6 @@ quality: null
 tags: [skill, shared, cross-reference, wikilinks, karpathy, graph, related]
 tldr: "Every artifact must declare its neighbors. 3-15 related: IDs in frontmatter + ## Related Artifacts table in body. Auto-populated by cex_wikilink.py, curated by builders."
 density_score: 0.93
-related:
-  - p01_kc_cross_reference
-  - p06_td_cex_artifact_type_n03
-  - p01_faq_cex_common_questions
-  - p06_schema_taxonomy
-  - p11_qg_response_format
 ---
 
 # Skill: Cross-Reference Wiring

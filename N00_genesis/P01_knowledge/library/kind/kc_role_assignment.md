@@ -12,9 +12,6 @@ keywords: [role assignment, agent responsibilities, task distribution, delegatio
 density_score: 0.96
 related:
   - role-assignment-builder
-  - n00_role_assignment_manifest
-  - bld_knowledge_card_role_assignment
-  - bld_collaboration_role_assignment
   - crew-template-builder
 ---
 

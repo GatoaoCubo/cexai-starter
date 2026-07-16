@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [define the identity, conformity_assessment construction, conformity_assessment, builder, manifest, conformity assessment builder, act annex]
 density_score: 0.85
-related:
-  - bld_instruction_conformity_assessment
-  - bld_knowledge_card_conformity_assessment
-  - n00_conformity_assessment_manifest
-  - bld_collaboration_conformity_assessment
-  - kc_conformity_assessment
 ---
 ## Identity
 # Conformity Assessment Builder -- Manifest
@@ -69,12 +63,3 @@ related:
 ## Persona
 # Conformity Assessment Builder -- System Prompt
 ---
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_conformity_assessment]] | upstream | 0.53 |
-| [[bld_knowledge_card_conformity_assessment]] | upstream | 0.52 |
-| [[n00_conformity_assessment_manifest]] | related | 0.51 |
-| [[bld_collaboration_conformity_assessment]] | downstream | 0.45 |
-| [[kc_conformity_assessment]] | upstream | 0.44 |

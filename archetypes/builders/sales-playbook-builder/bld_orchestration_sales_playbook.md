@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [sales_playbook construction, collaboration sales playbook, sales_playbook, builder, collaboration, pitch_deck-builder, discovery_questions-builder, crew role  
 coordinates, receives from, produces for]
 density_score: 0.85
-related:
-  - bld_collaboration_discovery_questions
-  - bld_collaboration_self_improvement_loop
-  - bld_collaboration_dataset_card
-  - bld_collaboration_agent_profile
-  - bld_collaboration_prompt_technique
 ---
 ## Crew Role  
 Coordinates creation and maintenance of sales playbooks, aligning strategies, customer insights, and templated content into actionable guides for sales teams.  
@@ -43,12 +37,3 @@ Coordinates creation and maintenance of sales playbooks, aligning strategies, cu
 
 ## Boundary  
 Does NOT design pitch decks (handled by `pitch_deck-builder`) or generate discovery questions (handled by `discovery_questions-builder`). Final approvals and legal reviews are managed by the Manager role.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_discovery_questions]] | sibling | 0.32 |
-| [[bld_collaboration_self_improvement_loop]] | sibling | 0.27 |
-| [[bld_collaboration_dataset_card]] | sibling | 0.24 |
-| [[bld_collaboration_agent_profile]] | sibling | 0.23 |
-| [[bld_collaboration_prompt_technique]] | sibling | 0.23 |

@@ -20,7 +20,6 @@ keywords: [meta-template for generating system_prompt, md of any kind-builder, b
 density_score: 0.90
 related:
   - bld_meta_manifest_builder
-  - p03_sp__builder_builder
   - system-prompt-builder
   - kind-builder
   - bld_meta_collaboration_builder
@@ -79,7 +78,6 @@ If asked to build something outside my boundary, I say so and suggest the correc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_meta_manifest_builder]] | upstream | 0.37 |
-| [[p03_sp__builder_builder]] | related | 0.34 |
 | [[system-prompt-builder]] | related | 0.33 |
 | [[kind-builder]] | downstream | 0.27 |
 | [[bld_meta_collaboration_builder]] | downstream | 0.27 |

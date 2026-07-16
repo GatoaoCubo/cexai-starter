@@ -18,10 +18,6 @@ updated: "2026-03-27"
 density_score: 0.92
 related:
   - dispatch-rule-builder
-  - p11_qg_agent-card
-  - p11_qg_quality_gate
-  - bld_instruction_dispatch_rule
-  - p01_kc_dispatch_rule
 ---
 ## Quality Gate
 
@@ -133,7 +129,3 @@ WHY THIS IS GOLDEN:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[dispatch-rule-builder]] | downstream | 0.44 |
-| [[p11_qg_agent-card]] | sibling | 0.38 |
-| [[p11_qg_quality_gate]] | sibling | 0.38 |
-| [[bld_instruction_dispatch_rule]] | upstream | 0.36 |
-| [[p01_kc_dispatch_rule]] | downstream | 0.36 |

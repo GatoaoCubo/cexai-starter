@@ -31,9 +31,6 @@ llm_function: REASON
 related:
   - skill-builder
   - bld_architecture_skill
-  - bld_collaboration_skill
-  - n00_skill_manifest
-  - bld_knowledge_card_skill
 ---
 ## Context
 The skill-builder produces `skill` artifacts — reusable capabilities defined as ordered
@@ -94,6 +91,3 @@ python _tools/cex_skill_loader.py --verify skill
 |----------|-------------|-------|
 | [[skill-builder]] | downstream | 0.56 |
 | [[bld_architecture_skill]] | downstream | 0.53 |
-| [[bld_collaboration_skill]] | downstream | 0.49 |
-| [[n00_skill_manifest]] | downstream | 0.47 |
-| [[bld_knowledge_card_skill]] | downstream | 0.46 |

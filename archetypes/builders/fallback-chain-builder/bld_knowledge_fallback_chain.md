@@ -19,11 +19,7 @@ keywords: [graceful model degradation, fallback chain construction, knowledge ca
 fallback, spec table, release it]
 density_score: 0.90
 related:
-  - bld_instruction_fallback_chain
-  - p10_lr_fallback_chain_builder
   - fallback-chain-builder
-  - p11_qg_fallback_chain
-  - bld_collaboration_fallback_chain
 ---
 # Domain Knowledge: fallback_chain
 ## Executive Summary
@@ -78,7 +74,5 @@ Fallback chains implement graceful degradation for LLM systems — when the prim
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_prompt_fallback_chain]] | downstream | 0.50 |
-| [[p10_lr_fallback_chain_builder]] | downstream | 0.47 |
 | [[fallback-chain-builder]] | downstream | 0.45 |
-| [[p11_qg_fallback_chain]] | downstream | 0.41 |
 | [[bld_orchestration_fallback_chain]] | downstream | 0.39 |

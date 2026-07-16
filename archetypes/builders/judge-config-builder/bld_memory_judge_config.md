@@ -19,12 +19,6 @@ common, pattern
 effective, evidence
 reviewed, related artifacts, sibling]
 density_score: 0.85
-related:
-  - p10_mem_prompt_optimizer_builder
-  - p10_mem_trajectory_eval_builder
-  - p10_mem_eval_metric_builder
-  - p10_mem_memory_benchmark_builder
-  - p10_lr_playground_config_builder
 ---
 ## Observation
 Common issues include ambiguous criteria leading to inconsistent judgments and incomplete edge case coverage, causing misalignment between intended and actual evaluation outcomes. Overly broad configurations often result in unpredictable scoring behavior.
@@ -41,12 +35,3 @@ Reviewed configs with modular structures showed 30% fewer errors during testing;
 - Include test cases for edge scenarios (e.g., ambiguous inputs, extreme outputs).
 - Align config parameters with the target model’s capabilities to avoid over/under-scoring.
 - Document assumptions and limitations to guide interpreters and auditors.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p10_mem_prompt_optimizer_builder]] | related | 0.37 |
-| [[p10_mem_trajectory_eval_builder]] | related | 0.34 |
-| [[p10_mem_eval_metric_builder]] | related | 0.31 |
-| [[p10_mem_memory_benchmark_builder]] | related | 0.29 |
-| [[p10_lr_playground_config_builder]] | sibling | 0.26 |

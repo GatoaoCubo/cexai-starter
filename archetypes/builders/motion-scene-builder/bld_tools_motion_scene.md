@@ -18,7 +18,6 @@ related:
   - bld_prompt_motion_scene
   - bld_eval_motion_scene
   - bld_orchestration_motion_scene
-  - p06_vs_motion_scene
   - motion-scene-builder
 ---
 
@@ -57,5 +56,4 @@ pre-authored token keys and resolves at render time from the bound design_system
 | [[bld_eval_motion_scene]] | upstream | 0.45 |
 | [[bld_prompt_motion_scene]] | related | 0.42 |
 | [[bld_orchestration_motion_scene]] | sibling | 0.4 |
-| [[p06_vs_motion_scene]] | upstream | 0.4 |
 | [[motion-scene-builder]] | related | 0.38 |

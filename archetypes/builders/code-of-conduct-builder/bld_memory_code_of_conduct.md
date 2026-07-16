@@ -21,10 +21,6 @@ reviewed contributor covenant, contributor covenant, enforcement ladder]
 density_score: 0.87
 related:
   - code-of-conduct-builder
-  - bld_knowledge_card_code_of_conduct
-  - bld_instruction_code_of_conduct
-  - p05_qg_code_of_conduct
-  - n00_code_of_conduct_manifest
 ---
 ## Observation
 CoC artifacts generated without explicit enforcement ladder guidance tend to produce 2-tier structures (allowed/prohibited) that skip the graduated response model. Missing response SLA creates uncertainty for reporters and reduces adoption.
@@ -46,7 +42,3 @@ Reviewed Contributor Covenant v2.1 reference implementation and 20+ OSS project 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[code-of-conduct-builder]] | upstream | 0.42 |
-| [[bld_knowledge_card_code_of_conduct]] | upstream | 0.40 |
-| [[bld_instruction_code_of_conduct]] | upstream | 0.36 |
-| [[p05_qg_code_of_conduct]] | downstream | 0.30 |
-| [[n00_code_of_conduct_manifest]] | upstream | 0.23 |

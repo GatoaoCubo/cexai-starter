@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [nps_survey construction, quality gate nps survey, nps_survey, builder, quality_gate, '^p11_nps_[a-z][a-z0-9_]+\.yaml$', transactional]
 density_score: 0.85
-related:
-  - bld_output_template_nps_survey
-  - p10_lr_nps_survey_builder
-  - bld_instruction_nps_survey
-  - n00_nps_survey_manifest
-  - bld_knowledge_card_nps_survey
 ---
 ## Quality Gate
 

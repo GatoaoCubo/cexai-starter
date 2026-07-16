@@ -26,11 +26,8 @@ title: "Memory Regression Check"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p11_qg_regression_check
-  - bld_knowledge_card_regression_check
   - bld_tools_memory_type
   - bld_config_memory_type
-  - bld_collaboration_regression_check
 ---
 ## Summary
 Regression checks are only as reliable as their baseline reference. A check pointing to "the previous version" becomes irreproducible after deployment rotation — experiment IDs and version tags are stable references that survive deployment cycles. The second failure mode is aggregation masking: a composite score can improve while individual dimensions regress (e.g., +8% fluency / -12% factual accuracy nets positive). Per-metric thresholds with directional sensitivity catch what aggregation hides.
@@ -109,8 +106,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_regression_check_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_regression_check]] | downstream | 0.36 |
-| [[bld_knowledge_card_regression_check]] | upstream | 0.33 |
 | [[bld_tools_memory_type]] | upstream | 0.32 |
 | [[bld_config_memory_type]] | upstream | 0.30 |
-| [[bld_collaboration_regression_check]] | downstream | 0.30 |

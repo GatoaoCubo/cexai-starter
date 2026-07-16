@@ -19,7 +19,6 @@ keywords: [dag construction, schema dag, builder, examples, yaml, "p12_dag_{pipe
 density_score: 0.90
 related:
   - bld_schema_handoff
-  - n00_dag_manifest
   - bld_schema_input_schema
   - bld_schema_usage_report
   - bld_schema_reranker_config
@@ -98,7 +97,6 @@ Rule: id MUST equal filename stem.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_handoff]] | sibling | 0.54 |
-| [[n00_dag_manifest]] | downstream | 0.48 |
 | [[bld_schema_input_schema]] | sibling | 0.48 |
 | [[bld_schema_usage_report]] | sibling | 0.48 |
 | [[bld_schema_reranker_config]] | sibling | 0.47 |

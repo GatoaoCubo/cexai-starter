@@ -18,10 +18,6 @@ updated: "2026-04-07"
 keywords: [embedder provider construction, collaboration embedder provider, embedder_provider, builder, examples, "### crew: upgrade tf-idf to vector search", "### crew: multi-provider embedding comparison", my role, crew compositions, vector search]
 density_score: 0.90
 related:
-  - bld_collaboration_vector_store
-  - bld_collaboration_model_provider
-  - bld_collaboration_embedding_config
-  - bld_collaboration_retriever_config
   - embedder-provider-builder
 ---
 # Collaboration: embedder-provider-builder

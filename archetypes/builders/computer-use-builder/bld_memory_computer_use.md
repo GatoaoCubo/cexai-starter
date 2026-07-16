@@ -26,11 +26,7 @@ title: "Memory Computer Use"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_computer_use
-  - p11_qg_computer_use
-  - bld_instruction_computer_use
   - computer-use-builder
-  - p04_computer_use_NAME
 ---
 ## Summary
 
@@ -124,7 +120,6 @@ python _tools/cex_score.py --apply --verbose p10_lr_computer_use_builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_computer_use]] | upstream | 0.45 |
-| [[p11_qg_computer_use]] | downstream | 0.42 |
 | [[bld_prompt_computer_use]] | upstream | 0.35 |
 | [[computer-use-builder]] | upstream | 0.35 |
 | p04_computer_use_NAME | upstream | 0.32 |

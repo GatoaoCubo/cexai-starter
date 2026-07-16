@@ -28,7 +28,6 @@ related:
   - bld_feedback_distillation_config
   - bld_knowledge_distillation_config
   - distillation-config-builder
-  - kc_distillation_config
   - bld_prompt_distillation_config
 ---
 ## Summary
@@ -65,5 +64,4 @@ Patterns derived from builder runs, quality gate failures, and peer review feedb
 | [[bld_feedback_distillation_config]] | downstream | 0.52 |
 | [[bld_knowledge_distillation_config]] | upstream | 0.52 |
 | [[distillation-config-builder]] | upstream | 0.51 |
-| [[kc_distillation_config]] | upstream | 0.49 |
 | [[bld_prompt_distillation_config]] | upstream | 0.45 |

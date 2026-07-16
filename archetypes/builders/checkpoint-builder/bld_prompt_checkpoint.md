@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - checkpoint-builder
-  - bld_collaboration_checkpoint
   - bld_architecture_checkpoint
-  - p10_lr_checkpoint_builder
-  - bld_knowledge_card_checkpoint
 ---
 # Instructions: How to Produce a checkpoint
 ## Phase 1: RESEARCH
@@ -108,5 +105,4 @@ python _tools/cex_skill_loader.py --verify checkpoint
 | [[checkpoint-builder]] | downstream | 0.58 |
 | [[bld_orchestration_checkpoint]] | downstream | 0.54 |
 | [[bld_architecture_checkpoint]] | downstream | 0.52 |
-| [[p10_lr_checkpoint_builder]] | downstream | 0.49 |
 | [[bld_knowledge_checkpoint]] | upstream | 0.48 |

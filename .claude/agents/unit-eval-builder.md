@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - unit-eval-builder
-  - p11_qg_unit_eval
-  - bld_collaboration_unit_eval
   - kind-builder
-  - p03_sp_builder_nucleus
 ---
 
 # unit-eval-builder Sub-Agent
@@ -87,7 +84,6 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[unit-eval-builder]] | related | 0.40 |
-| [[p11_qg_unit_eval]] | related | 0.32 |
 | [[bld_orchestration_unit_eval]] | related | 0.31 |
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.31 |

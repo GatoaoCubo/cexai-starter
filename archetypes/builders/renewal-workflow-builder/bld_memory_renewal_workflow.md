@@ -19,10 +19,7 @@ renewal, pattern
 stage]
 density_score: 0.85
 related:
-  - bld_instruction_renewal_workflow
   - renewal-workflow-builder
-  - bld_knowledge_card_renewal_workflow
-  - bld_output_template_renewal_workflow
   - bld_config_renewal_workflow
 ---
 ## Observation
@@ -48,8 +45,5 @@ Stage ownership is the most-failed quality dimension: workflows that assign "the
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_renewal_workflow]] | upstream | 0.56 |
 | [[renewal-workflow-builder]] | downstream | 0.51 |
-| [[bld_knowledge_card_renewal_workflow]] | upstream | 0.49 |
-| [[bld_output_template_renewal_workflow]] | upstream | 0.48 |
 | [[bld_config_renewal_workflow]] | upstream | 0.46 |

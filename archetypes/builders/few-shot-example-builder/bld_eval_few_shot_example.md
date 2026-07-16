@@ -17,11 +17,8 @@ updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.90
 related:
-  - p11_qg_response_format
   - few-shot-example-builder
-  - bld_instruction_few_shot_example
   - bld_schema_few_shot_example
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 

@@ -23,7 +23,6 @@ density_score: 1.0
 related:
   - kno_embedder_provider_n02
   - p01_chunk_n06
-  - p01_emb_openai_text_embedding_3_small
   - kno_vector_store_n06
   - kno_embedder_provider_n01
 updated: "2026-05-27"
@@ -186,6 +185,5 @@ fallback_model: text-embedding-3-small
 |----------|-------------|-------|
 | [[kno_embedder_provider_n02]] | sibling | 0.46 |
 | [[p01_chunk_n06]] | upstream | 0.39 |
-| [[p01_emb_openai_text_embedding_3_small]] | sibling | 0.38 |
 | [[kno_vector_store_n06]] | related | 0.34 |
 | [[kno_embedder_provider_n01]] | sibling | 0.34 |

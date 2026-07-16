@@ -30,12 +30,6 @@ keywords:
   - "write overview"
   - "write attack scenarios"
 density_score: 0.90
-related:
-  - bld_instruction_output_validator
-  - bld_instruction_retriever_config
-  - bld_instruction_memory_scope
-  - bld_instruction_chunk_strategy
-  - bld_instruction_prompt_version
 ---
 # Instructions: How to Produce a red_team_eval
 ## Phase 1: RESEARCH
@@ -76,12 +70,3 @@ related:
 10. SOFT gates: score against QUALITY_GATES.md
 11. Cross-check boundary: is this testing BEFORE deployment (red_team_eval) or enforcing AT runtime (guardrail)? Is this adversarial (red_team_eval) or functional (e2e_eval)? Is this isolated unit logic (unit_eval)?
 12. Revise if score < 8.0 before outputting
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_output_validator]] | sibling | 0.43 |
-| [[bld_instruction_retriever_config]] | sibling | 0.43 |
-| [[bld_instruction_memory_scope]] | sibling | 0.43 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.42 |
-| [[bld_instruction_prompt_version]] | sibling | 0.42 |

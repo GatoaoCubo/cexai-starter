@@ -4,11 +4,8 @@ description: "Builds ONE role_assignment artifact via 8F pipeline. Loads role-as
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p02_model_en
-  - n00_role_assignment_manifest
   - agent-builder
   - role-assignment-builder
-  - bld_collaboration_role_assignment
 ---
 
 # role-assignment-builder Sub-Agent

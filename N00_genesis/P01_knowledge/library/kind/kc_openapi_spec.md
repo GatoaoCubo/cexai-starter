@@ -14,10 +14,8 @@ keywords: [openapi specification, rest api, http operations, json schema, securi
 density_score: 1.0
 updated: "2026-04-22"
 related:
-  - bld_knowledge_card_openapi_spec
   - openapi-spec-builder
   - bld_schema_openapi_spec
-  - bld_collaboration_openapi_spec
   - bld_architecture_openapi_spec
 ---
 

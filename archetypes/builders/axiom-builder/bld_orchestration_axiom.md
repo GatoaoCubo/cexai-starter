@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - axiom-builder
   - bld_architecture_axiom
-  - p01_kc_axiom
-  - bld_collaboration_guardrail
-  - bld_knowledge_card_axiom
 ---
 # Collaboration: axiom-builder
 ## My Role in Crews

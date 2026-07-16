@@ -32,11 +32,8 @@ keywords:
   - "context_window_config"
 density_score: 0.90
 related:
-  - bld_instruction_context_window_config
   - context-window-config-builder
-  - p01_kc_context_window_config
   - bld_config_context_window_config
-  - bld_output_template_context_window_config
 ---
 ## Quality Gate
 

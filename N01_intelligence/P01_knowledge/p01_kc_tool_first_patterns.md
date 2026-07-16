@@ -15,9 +15,6 @@ keywords: [lookup table, heuristic, tf-idf, embedding similarity, intent classif
 related:
   - p01_kc_token_optimization_map
   - p01_kc_benchmark_tool_vs_llm
-  - p01_kc_intent_resolution_benchmark
-  - p01_kc_prompt_compiler
-  - p01_kc_input_intent_resolution
 ---
 
 # Tool-First Patterns

@@ -15,10 +15,8 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_domain_vocabulary
   - bld_memory_domain_vocabulary
   - domain-vocabulary-builder
-  - bld_context_sources_domain_vocabulary
   - bld_architecture_domain_vocabulary
 ---
 # Domain Knowledge: domain_vocabulary
@@ -79,5 +77,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 | [[kc_domain_vocabulary]] | sibling | 0.56 |
 | [[bld_memory_domain_vocabulary]] | downstream | 0.51 |
 | [[domain-vocabulary-builder]] | related | 0.51 |
-| [[bld_context_sources_domain_vocabulary]] | downstream | 0.47 |
 | [[bld_architecture_domain_vocabulary]] | downstream | 0.47 |

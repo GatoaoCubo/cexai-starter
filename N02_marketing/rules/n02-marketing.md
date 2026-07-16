@@ -22,13 +22,8 @@ long_tails:
   - "how does N02 break ambiguous copy decisions"
 density_score: 0.90
 related:
-  - p03_sp_marketing_nucleus
-  - p02_agent_n02
   - p01_kc_marketing
-  - p08_cm_n02
   - agent_card_n02
-  - p11_qg_copy_gates
-  - p07_sr_copy_gates
 ---
 
 # N02 Marketing Rules

@@ -31,10 +31,8 @@ keywords:
   - "executive summary path"
 density_score: 0.90
 related:
-  - p03_ins_path_config
   - bld_memory_path_config
   - path-config-builder
-  - bld_collaboration_path_config
   - bld_schema_path_config
 ---
 # Domain Knowledge: path_config
@@ -98,7 +96,6 @@ Path configs are filesystem path catalogs that define every directory and file p
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_path_config]] | downstream | 0.54 |
 | [[bld_memory_path_config]] | downstream | 0.49 |
 | [[path-config-builder]] | downstream | 0.47 |
 | [[bld_orchestration_path_config]] | downstream | 0.46 |

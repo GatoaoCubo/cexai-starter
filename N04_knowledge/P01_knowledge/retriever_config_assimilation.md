@@ -17,11 +17,7 @@ tldr: "Retrieval config for assimilated vertical brains: offline hybrid search (
 keywords: [hybrid, top_k, score_threshold, tfidf, offline retrieval, scoped index, fallback chain, assimilation]
 density_score: null
 related:
-  - n04_rs_assimilation
-  - p01_chunk_assimilation_n04
-  - p01_kc_retriever
   - retriever-builder
-  - p10_bi_bm25_knowledge
 ---
 
 # Assimilation Retriever Config
@@ -63,8 +59,6 @@ When primary retrieval returns nothing above `score_threshold`:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n04_rs_assimilation]] | upstream | 0.40 |
-| [[p01_chunk_assimilation_n04]] | sibling | 0.34 |
 | [[kc_retriever]] | related | 0.32 |
 | [[retriever-builder]] | related | 0.30 |
 | p10_bi_bm25_knowledge | related | 0.28 |

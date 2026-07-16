@@ -18,11 +18,8 @@ updated: "2026-04-18"
 keywords: [terminal_backend construction, collaboration terminal backend, crew role, execution environment selection, receives from, produces for, session manager, dispatch router, terminal_backend, builder]
 density_score: 0.90
 related:
-  - bld_collaboration_session_backend
   - bld_architecture_terminal_backend
-  - n00_terminal_backend_manifest
   - terminal-backend-builder
-  - bld_collaboration_env_config
 ---
 ## Crew Role
 Declares the execution backend for agent sessions. Answers WHERE code runs and HOW it is authenticated and billed. Does NOT handle security isolation (sandbox-config-builder), environment variables (env-config-builder), or deployment targets (deployment-manifest-builder).
@@ -70,8 +67,5 @@ User intent: "run task on GPU"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_session_backend]] | sibling | 0.37 |
 | [[bld_architecture_terminal_backend]] | upstream | 0.33 |
-| [[n00_terminal_backend_manifest]] | upstream | 0.30 |
 | [[terminal-backend-builder]] | upstream | 0.30 |
-| [[bld_collaboration_env_config]] | sibling | 0.29 |

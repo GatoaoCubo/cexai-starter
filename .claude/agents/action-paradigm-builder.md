@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
   - action-paradigm-builder
-  - p03_sp_builder_nucleus
   - bld_config_action_paradigm
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # action-paradigm-builder Sub-Agent
@@ -88,6 +86,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.32 |
 | [[action-paradigm-builder]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[bld_config_action_paradigm]] | related | 0.28 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |

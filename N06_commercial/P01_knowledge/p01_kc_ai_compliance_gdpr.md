@@ -14,12 +14,6 @@ long_tails:
   - "what GDPR requirements apply to an LLM application"
   - "how do I make an AI feature GDPR compliant for EU users"
 density_score: 0.89
-related:
-  - p01_kc_data_residency
-  - bld_knowledge_card_compliance_checklist
-  - kc_compliance_checklist
-  - bld_knowledge_card_data_residency
-  - data-residency-builder
 updated: "2026-05-27"
 ---
 

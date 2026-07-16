@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_memory_summary
-  - bld_instruction_memory_summary
   - bld_architecture_memory_summary
-  - p11_qg_memory_summary
-  - bld_knowledge_card_memory_summary
 ---
 ## Identity
 

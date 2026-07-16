@@ -30,10 +30,6 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_value_object
-  - bld_output_template_value_object
-  - bld_instruction_aggregate_root
-  - bld_manifest_value_object
-  - bld_instruction_action_prompt
 ---
 # Instructions: How to Produce a value_object
 ## Phase 1: RESEARCH
@@ -85,7 +81,3 @@ python _tools/cex_prompt_optimizer.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_value_object]] | related | 0.44 |
-| [[bld_output_template_value_object]] | related | 0.39 |
-| [[bld_instruction_aggregate_root]] | sibling | 0.39 |
-| [[bld_manifest_value_object]] | related | 0.37 |
-| [[bld_instruction_action_prompt]] | sibling | 0.36 |

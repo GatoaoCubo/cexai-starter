@@ -26,9 +26,7 @@ parent: null
 keywords: [prompt_package, mode_b, decompose, stage_1, stage_2, f6_generation, cex_decompose.py, cex_8f_runner.py]
 related:
   - bld_orchestration_prompt_package
-  - bld_knowledge_card_prompt_package
   - bld_memory_prompt_package
-  - p03_ins_prompt_package
   - bld_architecture_prompt_package
   - prompt-template-builder
 ---
@@ -157,6 +155,5 @@ model cannot ask a follow-up question.
 | [[bld_orchestration_prompt_package]] | related | 0.57 |
 | [[bld_knowledge_prompt_package]] | upstream | 0.55 |
 | [[bld_memory_prompt_package]] | downstream | 0.54 |
-| [[p03_ins_prompt_package]] | related | 0.52 |
 | [[bld_architecture_prompt_package]] | downstream | 0.45 |
 | [[prompt-template-builder]] | related | 0.40 |

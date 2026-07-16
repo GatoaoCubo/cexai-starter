@@ -30,11 +30,8 @@ keywords:
   - "first last"
 density_score: 0.85
 related:
-  - bld_instruction_press_release
-  - p05_qg_press_release
   - bld_schema_press_release
   - press-release-builder
-  - bld_collaboration_press_release
 ---
 ## Usage Notes
 Replace all `{{placeholder}}` tokens with real content before delivery.
@@ -106,8 +103,5 @@ Iowa, Maine, Ohio, Texas, Utah.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_press_release]] | upstream | 0.54 |
-| [[p05_qg_press_release]] | downstream | 0.35 |
 | [[bld_schema_press_release]] | downstream | 0.31 |
 | [[press-release-builder]] | related | 0.26 |
-| [[bld_collaboration_press_release]] | downstream | 0.25 |

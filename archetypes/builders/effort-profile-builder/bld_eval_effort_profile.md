@@ -29,9 +29,6 @@ keywords:
 density_score: 1.0
 related:
   - effort-profile-builder
-  - p10_lr_effort_profile_builder
-  - bld_knowledge_card_effort_profile
-  - bld_instruction_effort_profile
   - bld_architecture_effort_profile
 ---
 ## Quality Gate

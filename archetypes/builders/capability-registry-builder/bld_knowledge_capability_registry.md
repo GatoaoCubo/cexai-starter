@@ -18,9 +18,6 @@ keywords: [capability_registry construction, knowledge card capability registry,
 density_score: 0.85
 related:
   - capability-registry-builder
-  - p01_kc_agent
-  - bld_collaboration_agent
-  - bld_knowledge_card_agent
   - bld_tools_capability_registry
 ---
 ## Domain Overview

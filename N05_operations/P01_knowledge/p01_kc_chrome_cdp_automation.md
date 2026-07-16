@@ -14,10 +14,6 @@ title: "Chrome CDP Browser Automation"
 tldr: "Control user Chrome via CDP WebSocket: setup, gotchas, session cookies, click strategies, and NotebookLM integration"
 keywords: [browser automation, chrome cdp browser automation, session cookies, click strategies, and notebooklm integration, knowledge_card, chrome, browser, automation, playwright]
 density_score: 0.98
-related:
-  - p04_browser_cdp_connector
-  - p01_kc_browser_tool
-  - bld_knowledge_card_browser_tool
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_cdp. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

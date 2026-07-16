@@ -19,10 +19,7 @@ agentic, key concepts, reciprocal rank fusion, interleaves reason, industry stan
 density_score: 0.85
 related:
   - bld_tools_agentic_rag
-  - bld_instruction_agentic_rag
   - agentic-rag-builder
-  - kc_query_optimizer
-  - p01_kc_academic_rag_patterns
 ---
 ## Domain Overview
 Agentic RAG extends vanilla RAG by adding a **retrieve->reflect->re-query loop**: the agent evaluates retrieved documents, decides whether they are sufficient, and issues corrective sub-queries before generating. This loop is the defining characteristic separating agentic RAG from static RAG pipelines.
@@ -67,7 +64,4 @@ Published variants differ on where and how the reflection happens: Self-RAG (Asa
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_agentic_rag]] | downstream | 0.54 |
-| [[bld_instruction_agentic_rag]] | downstream | 0.48 |
 | [[agentic-rag-builder]] | related | 0.40 |
-| [[kc_query_optimizer]] | sibling | 0.39 |
-| [[p01_kc_academic_rag_patterns]] | sibling | 0.38 |

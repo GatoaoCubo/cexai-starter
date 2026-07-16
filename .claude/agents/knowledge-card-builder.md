@@ -4,11 +4,7 @@ description: "Builds ONE knowledge_card artifact via 8F pipeline. Loads knowledg
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p06_td_cex_artifact_type_n03
-  - p01_faq_cex_common_questions
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # knowledge-card-builder Sub-Agent
@@ -89,5 +85,4 @@ Five duties bind any agent that emits an artifact:
 | p03_sp_builder_nucleus | related | 0.33 |
 | kind-builder | related | 0.32 |
 | p06_td_cex_artifact_type_n03 | related | 0.29 |
-| [[p01_faq_cex_common_questions]] | related | 0.29 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.28 |

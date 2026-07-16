@@ -42,11 +42,7 @@ keywords:
   - "state_machine artifacts"
 density_score: 1.0
 related:
-  - kc_state_machine
-  - bld_knowledge_card_state_machine
-  - bld_collaboration_state_machine
   - bld_architecture_state_machine
-  - p10_lr_state_machine_builder
 ---
 ## Identity
 
@@ -123,8 +119,4 @@ ID must match `^p12_sm_[a-z][a-z0-9_]+$`. Body must not exceed 4096 bytes.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_state_machine]] | upstream | 0.63 |
-| [[bld_knowledge_card_state_machine]] | upstream | 0.62 |
-| [[bld_collaboration_state_machine]] | related | 0.59 |
 | [[bld_architecture_state_machine]] | upstream | 0.55 |
-| [[p10_lr_state_machine_builder]] | upstream | 0.49 |

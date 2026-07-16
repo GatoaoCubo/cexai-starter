@@ -5,8 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
   - voice-pipeline-builder
 ---
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.30 |
 | [[system-prompt-builder]] | related | 0.28 |
 | [[voice-pipeline-builder]] | related | 0.27 |

@@ -17,11 +17,8 @@ density_score: 0.82
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_instruction_bounded_context
   - bld_schema_domain_vocabulary
-  - p01_kc_domain_vocabulary
   - domain-vocabulary-builder
-  - bld_qg_domain_vocabulary
 ---
 # Instructions: How to Produce a domain_vocabulary
 ## Phase 1: SCOPE
@@ -81,4 +78,3 @@ python _tools/cex_prompt_optimizer.py --check
 | [[bld_schema_domain_vocabulary]] | downstream | 0.42 |
 | [[kc_domain_vocabulary]] | upstream | 0.41 |
 | [[domain-vocabulary-builder]] | upstream | 0.40 |
-| [[bld_qg_domain_vocabulary]] | downstream | 0.40 |

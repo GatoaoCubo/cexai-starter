@@ -17,8 +17,6 @@ updated: "2026-04-14"
 keywords: [press_release construction, press release builder instructions, three-phase build protocol, research the news hook, compose in ap style, validate all gates, press_release, builder, instruction, first last]
 density_score: 0.85
 related:
-  - bld_output_template_press_release
-  - p05_qg_press_release
   - bld_schema_press_release
   - press-release-builder
   - bld_tools_press_release
@@ -88,8 +86,6 @@ If any HARD gate fails, return to Phase 2 and correct before delivery.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_press_release]] | downstream | 0.47 |
-| [[p05_qg_press_release]] | downstream | 0.37 |
 | [[bld_schema_press_release]] | downstream | 0.37 |
 | [[press-release-builder]] | downstream | 0.35 |
 | [[bld_tools_press_release]] | downstream | 0.34 |

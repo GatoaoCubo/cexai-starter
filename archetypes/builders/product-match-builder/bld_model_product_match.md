@@ -35,9 +35,6 @@ llm_function: BECOME
 parent: null
 8f: "F4_reason"
 related:
-  - bld_collaboration_product_match
-  - bld_instruction_product_match
-  - bld_knowledge_card_product_match
   - bld_architecture_product_match
   - vision-tool-builder
 ---

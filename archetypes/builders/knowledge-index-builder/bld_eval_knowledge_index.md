@@ -33,11 +33,7 @@ keywords:
   - "retrieval"
 density_score: 0.87
 related:
-  - p11_qg_agent
-  - bld_instruction_knowledge_index
   - knowledge-index-builder
-  - p11_qg_quality_gate
-  - p11_qg_optimizer
 ---
 ## Quality Gate
 

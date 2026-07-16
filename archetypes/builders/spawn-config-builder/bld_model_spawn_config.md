@@ -31,10 +31,6 @@ llm_function: BECOME
 parent: null
 8f: "F8_collaborate"
 related:
-  - bld_collaboration_spawn_config
-  - p11_qg_spawn_config
-  - p01_kc_spawn_config
-  - bld_knowledge_card_spawn_config
   - bld_memory_spawn_config
 ---
 ## Identity
@@ -138,7 +134,6 @@ quality_target: 9.0
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_spawn_config]] | related | 0.53 |
-| [[p11_qg_spawn_config]] | related | 0.50 |
 | [[kc_spawn_config]] | related | 0.49 |
 | [[bld_knowledge_spawn_config]] | related | 0.46 |
 | [[bld_memory_spawn_config]] | upstream | 0.44 |

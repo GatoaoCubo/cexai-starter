@@ -20,10 +20,7 @@ does, related artifacts]
 density_score: 0.85
 related:
   - trajectory-eval-builder
-  - n00_trajectory_eval_manifest
-  - kc_trajectory_eval
   - bld_config_trajectory_eval
-  - p11_fb_trajectory_eval
 ---
 ## Crew Role  
 Analyzes and evaluates trajectory data to assess performance, safety, and compliance with constraints. Generates metrics, visualizations, and feedback for iterative improvement.  
@@ -49,7 +46,4 @@ Does NOT handle static benchmarking (benchmark_builder), end-to-end testing (e2e
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[trajectory-eval-builder]] | upstream | 0.43 |
-| [[n00_trajectory_eval_manifest]] | upstream | 0.33 |
-| [[kc_trajectory_eval]] | upstream | 0.33 |
 | [[bld_config_trajectory_eval]] | upstream | 0.31 |
-| [[p11_fb_trajectory_eval]] | upstream | 0.27 |

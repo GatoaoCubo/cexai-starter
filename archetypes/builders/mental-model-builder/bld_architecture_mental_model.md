@@ -18,10 +18,6 @@ keywords: [component map of mental_model, and architectural position, mental mod
 density_score: 0.90
 related:
   - mental-model-builder
-  - p03_ins_mental_model
-  - bld_collaboration_mental_model
-  - p01_kc_mental_model
-  - bld_knowledge_card_mental_model
 ---
 # Architecture: mental_model in the CEX
 
@@ -72,7 +68,6 @@ mental_model    --signals-->   routing_decision
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mental-model-builder]] | upstream | 0.52 |
-| [[p03_ins_mental_model]] | upstream | 0.50 |
 | [[bld_orchestration_mental_model]] | upstream | 0.48 |
 | [[kc_mental_model]] | upstream | 0.48 |
 | [[bld_knowledge_mental_model]] | upstream | 0.47 |

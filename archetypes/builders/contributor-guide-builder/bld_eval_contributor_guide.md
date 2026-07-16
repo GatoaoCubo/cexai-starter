@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [contributor_guide construction, quality gate contributor guide, contributor_guide, builder, quality_gate, make generate && make test, git checkout -b feature/your-fix, main, kind/, npm install]
 density_score: 0.85
 related:
-  - bld_output_template_contributor_guide
-  - bld_instruction_contributor_guide
   - contributor-guide-builder
   - bld_tools_contributor_guide
-  - kc_contributor_guide
 ---
 ## Quality Gate
 

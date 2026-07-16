@@ -19,10 +19,6 @@ keywords: [action prompt construction, instruction action prompt, action_prompt,
 density_score: 0.90
 related:
   - action-prompt-builder
-  - bld_instruction_golden_test
-  - bld_instruction_prompt_version
-  - bld_instruction_instruction
-  - bld_collaboration_action_prompt
 ---
 # Instructions: How to Produce an action_prompt
 ## Phase 1: RESEARCH

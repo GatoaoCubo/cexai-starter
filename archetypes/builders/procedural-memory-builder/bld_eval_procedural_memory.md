@@ -28,9 +28,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_procedural_memory
-  - bld_output_template_procedural_memory
-  - bld_instruction_procedural_memory
-  - p10_qg_memory_architecture
   - procedural-memory-builder
 ---
 ## Quality Gate

@@ -4,10 +4,7 @@ description: "Builds ONE memory_benchmark artifact via 8F pipeline. Loads memory
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_collaboration_memory_benchmark
-  - n00_memory_benchmark_manifest
   - bld_config_memory_benchmark
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[bld_collaboration_memory_benchmark]] | related | 0.30 |
-| [[n00_memory_benchmark_manifest]] | related | 0.30 |
 | [[bld_config_memory_benchmark]] | related | 0.29 |

@@ -30,9 +30,6 @@ density_score: 0.90
 related:
   - bld_schema_feature_flag
   - feature-flag-builder
-  - bld_output_template_feature_flag
-  - bld_knowledge_card_feature_flag
-  - bld_collaboration_feature_flag
 ---
 # Config: feature_flag Production Rules
 ## Naming Convention
@@ -71,6 +68,3 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 |----------|-------------|-------|
 | [[bld_schema_feature_flag]] | upstream | 0.35 |
 | [[feature-flag-builder]] | related | 0.34 |
-| [[bld_output_template_feature_flag]] | upstream | 0.34 |
-| [[bld_knowledge_card_feature_flag]] | upstream | 0.33 |
-| [[bld_collaboration_feature_flag]] | downstream | 0.31 |

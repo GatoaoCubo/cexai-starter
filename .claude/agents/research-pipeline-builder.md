@@ -4,10 +4,7 @@ description: "Builds ONE research_pipeline artifact via 8F pipeline. Loads resea
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p03_sp_n03_creation_nucleus
   - system-prompt-builder
 ---
 

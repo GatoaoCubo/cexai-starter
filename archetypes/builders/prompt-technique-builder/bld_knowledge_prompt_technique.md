@@ -18,11 +18,9 @@ keywords: [prompt_technique construction, knowledge card prompt technique, promp
 prompt, hugging face, key concepts, prompt engineering guide, prompt injection]
 density_score: 0.85
 related:
-  - p01_kc_prompt_engineering_best_practices
   - kc_reasoning_strategy
   - prompt-technique-builder
   - bld_tools_prompt_technique
-  - bld_knowledge_card_prompt_optimizer
 ---
 ## Domain Overview
 Prompt_technique refers to methods for structuring input to language models to elicit specific outputs, focusing on alignment, clarity, and control. It underpins applications in NLP, AI research, and industry use cases like chatbots, code generation, and data analysis. Techniques evolve with advancements in LLMs, emphasizing robustness against hallucination, bias, and adversarial inputs.
@@ -67,8 +65,6 @@ The field intersects with prompt engineering, a discipline formalized by OpenAI 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prompt_engineering_best_practices]] | sibling | 0.45 |
 | [[kc_reasoning_strategy]] | sibling | 0.32 |
 | [[prompt-technique-builder]] | downstream | 0.31 |
 | [[bld_tools_prompt_technique]] | downstream | 0.30 |
-| [[bld_knowledge_card_prompt_optimizer]] | sibling | 0.30 |

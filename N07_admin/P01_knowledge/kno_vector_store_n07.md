@@ -55,14 +55,8 @@ linked_artifacts:
   related: [p01_emb_openai_text_embedding_3_small]
 data_source: "https://github.com/facebookresearch/faiss/wiki"
 related:
-  - p01_kc_knowledge_index
   - bld_memory_vector_store
   - knowledge-index-builder
-  - bld_knowledge_card_vector_store
-  - bld_collaboration_knowledge_index
-  - p01_kc_vector_store
-  - p03_ins_vector_store
-  - bld_collaboration_embedding_config
 ---
 <!-- 8F TRACE
 F1 CONSTRAIN: kind=vector_store, pillar=P01, max_bytes=4096, naming=p01_vdb_faiss.yaml
@@ -237,5 +231,4 @@ Rules:
 | [[bld_knowledge_vector_store]] | upstream | 0.38 |
 | [[bld_orchestration_knowledge_index]] | downstream | 0.34 |
 | [[kc_vector_store]] | upstream | 0.30 |
-| [[p03_ins_vector_store]] | downstream | 0.30 |
 | [[bld_orchestration_embedding_config]] | downstream | 0.30 |

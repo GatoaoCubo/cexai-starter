@@ -28,7 +28,6 @@ slots:
 density_score: 1.0
 related:
   - p01_fse_n02_ad_copy
-  - p03_pt_landing_page_template
   - p01_fse_generic_n02
   - p01_kc_marketing
   - landing-page-builder

@@ -17,10 +17,6 @@ short]
 density_score: 0.97
 updated: "2026-04-13"
 related:
-  - p01_kc_knowledge_card
-  - bld_collaboration_knowledge_card
-  - p01_kc_capability_registry
-  - n00_knowledge_card_manifest
   - knowledge-card-builder
 ---
 

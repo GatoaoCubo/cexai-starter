@@ -20,10 +20,6 @@ this, key concepts, inner loop, modern robotics, outer loop, predictive control]
 density_score: 0.85
 related:
   - dual-loop-architecture-builder
-  - bld_collaboration_dual_loop_architecture
-  - kc_dual_loop_architecture
-  - p08_qg_dual_loop_architecture
-  - p10_lr_dual_loop_architecture_builder
 ---
 ## Domain Overview
 
@@ -68,7 +64,3 @@ Industry adoption is driven by the need to balance speed and adaptability. For e
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[dual-loop-architecture-builder]] | downstream | 0.75 |
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.67 |
-| [[kc_dual_loop_architecture]] | sibling | 0.67 |
-| [[p08_qg_dual_loop_architecture]] | downstream | 0.58 |
-| [[p10_lr_dual_loop_architecture_builder]] | downstream | 0.57 |

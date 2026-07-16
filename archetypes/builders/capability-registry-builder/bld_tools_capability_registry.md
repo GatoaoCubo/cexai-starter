@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - capability-registry-builder
   - bld_tools_kind
-  - bld_collaboration_agent
-  - bld_instruction_agent
-  - p01_kc_agent
 ---
 ## Production Tools
 | Tool                  | Purpose                                             | When                        |

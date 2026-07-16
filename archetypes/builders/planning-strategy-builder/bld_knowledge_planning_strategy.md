@@ -18,11 +18,7 @@ keywords: [planning_strategy construction, knowledge card planning strategy, pla
 planning, key concepts, modern approach, task decomposition, contingency plan]
 density_score: 0.85
 related:
-  - kc_planning_strategy
   - planning-strategy-builder
-  - n00_planning_strategy_manifest
-  - bld_knowledge_card_action_paradigm
-  - bld_instruction_planning_strategy
 ---
 ## Domain Overview  
 Planning_strategy defines structured methodologies for agents to sequence actions toward goal achievement in complex environments. It underpins autonomous systems in robotics, logistics, and AI, emphasizing foresight, adaptability, and resource optimization. Unlike workflow execution, planning_strategy focuses on pre-execution decision-making, often involving abstraction, prioritization, and risk mitigation. Key applications include mission planning in aerospace, task scheduling in manufacturing, and pathfinding in autonomous vehicles.  
@@ -67,8 +63,4 @@ Modern planning strategies integrate formal models (e.g., PDDL) and heuristic ap
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_planning_strategy]] | sibling | 0.33 |
 | [[planning-strategy-builder]] | downstream | 0.33 |
-| [[n00_planning_strategy_manifest]] | sibling | 0.32 |
-| [[bld_knowledge_card_action_paradigm]] | sibling | 0.29 |
-| [[bld_instruction_planning_strategy]] | downstream | 0.28 |

@@ -31,10 +31,6 @@ keywords:
 density_score: 0.88
 related:
   - bld_schema_output_template
-  - bld_output_template_field_manifest
-  - p10_lr_output_template_builder
-  - bld_instruction_output_template
-  - bld_output_template_prompt_template
 ---
 # Output Template: output_template
 This kind is REFLEXIVE: the shape below is itself an `output_template` instance,
@@ -137,6 +133,4 @@ Body of the same instance:
 |----------|-------------|-------|
 | [[bld_schema_output_template]] | upstream | 0.42 |
 | bld_output_template_field_manifest | sibling (reflexive-case example) | 0.36 |
-| [[p10_lr_output_template_builder]] | downstream | 0.33 |
 | [[bld_prompt_output_template]] | upstream | 0.30 |
-| [[bld_output_template_prompt_template]] | sibling (contrast) | 0.28 |

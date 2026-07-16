@@ -32,11 +32,8 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - p03_ins_path_config
   - bld_memory_path_config
-  - bld_collaboration_path_config
   - bld_architecture_path_config
-  - bld_knowledge_card_path_config
 ---
 ## Identity
 
@@ -121,7 +118,6 @@ Produce a path_config artifact with YAML frontmatter followed by: `## Path Catal
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_path_config]] | upstream | 0.55 |
 | [[bld_memory_path_config]] | downstream | 0.54 |
 | [[bld_orchestration_path_config]] | related | 0.52 |
 | [[bld_architecture_path_config]] | upstream | 0.50 |

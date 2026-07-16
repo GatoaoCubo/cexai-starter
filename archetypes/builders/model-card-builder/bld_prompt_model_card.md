@@ -29,9 +29,6 @@ density_score: 0.92
 llm_function: REASON
 related:
   - model-card-builder
-  - p03_ins_model_provider
-  - p03_ins_embedder_provider
-  - bld_knowledge_card_model_card
   - bld_memory_model_card
 ---
 ## Context
@@ -109,7 +106,4 @@ Score all 15 SOFT gates from `QUALITY_GATES.md`. If soft score < 8.0, revise in 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[model-card-builder]] | upstream | 0.44 |
-| [[p03_ins_model_provider]] | sibling | 0.42 |
-| [[p03_ins_embedder_provider]] | sibling | 0.41 |
-| [[bld_knowledge_card_model_card]] | upstream | 0.40 |
 | [[bld_memory_model_card]] | downstream | 0.32 |

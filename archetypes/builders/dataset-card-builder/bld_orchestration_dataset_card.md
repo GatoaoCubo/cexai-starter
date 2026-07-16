@@ -19,10 +19,6 @@ standardizes, receives from, produces for, finalized dataset card, related artif
 density_score: 0.85
 related:
   - dataset-card-builder
-  - bld_collaboration_llm_evaluation_scenario
-  - bld_collaboration_self_improvement_loop
-  - bld_collaboration_agent_profile
-  - bld_collaboration_agent_computer_interface
 ---
 ## Crew Role
 Standardizes and automates the creation of dataset documentation, transforming raw metadata, schema definitions, and legal constraints into structured, human-readable dataset cards.

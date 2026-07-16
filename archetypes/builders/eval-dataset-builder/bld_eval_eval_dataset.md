@@ -18,11 +18,7 @@ updated: "2026-03-29"
 keywords: [evaluation dataset, and framework integration, schema completeness, split integrity, size declaration, quality-gate, eval-dataset]
 density_score: 0.90
 related:
-  - p11_qg_cli_tool
-  - p11_qg_quality_gate
   - eval-dataset-builder
-  - p11_qg_enum_def
-  - p11_qg_validator
 ---
 ## Quality Gate
 

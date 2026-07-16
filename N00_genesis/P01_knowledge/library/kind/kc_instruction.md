@@ -22,10 +22,7 @@ linked_artifacts:
   related: []
 related:
   - instruction-builder
-  - bld_collaboration_instruction
   - bld_architecture_instruction
-  - n00_instruction_manifest
-  - tpl_instruction
 ---
 
 # Instruction

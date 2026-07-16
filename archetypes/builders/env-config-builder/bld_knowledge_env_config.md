@@ -20,10 +20,6 @@ env, factor app, spec table]
 density_score: 0.90
 related:
   - env-config-builder
-  - p11_qg_env_config
-  - bld_instruction_env_config
-  - bld_collaboration_env_config
-  - p10_lr_env_config_builder
 ---
 # Domain Knowledge: env_config
 ## Executive Summary
@@ -83,7 +79,5 @@ Env configs define the variable contract for a system scope — every environmen
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[env-config-builder]] | downstream | 0.45 |
-| [[p11_qg_env_config]] | downstream | 0.41 |
 | [[bld_prompt_env_config]] | downstream | 0.41 |
 | [[bld_orchestration_env_config]] | downstream | 0.39 |
-| [[p10_lr_env_config_builder]] | downstream | 0.38 |

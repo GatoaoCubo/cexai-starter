@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [code executor construction, collaboration code executor, code_executor, builder, examples, "### crew: agent runtime", my role, crew compositions, code execution pipeline, agent runtime]
 density_score: 0.90
 related:
-  - bld_collaboration_function_def
   - code-executor-builder
-  - p01_kc_code_executor
-  - bld_collaboration_cli_tool
-  - bld_collaboration_handoff_protocol
 ---
 # Collaboration: code-executor-builder
 ## My Role in Crews

@@ -20,10 +20,6 @@ this, identity
 you]
 density_score: 0.85
 related:
-  - p10_lr_agent_computer_interface_builder
-  - kc_agent_computer_interface
-  - bld_collaboration_agent_computer_interface
-  - bld_collaboration_agent
   - agent-profile-builder
 ---
 ## Identity
@@ -65,8 +61,4 @@ You are the Agent-Computer Interface (ACI) Architect. Your purpose is to design 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_agent_computer_interface_builder]] | downstream | 0.35 |
-| [[kc_agent_computer_interface]] | upstream | 0.33 |
-| [[bld_collaboration_agent_computer_interface]] | downstream | 0.33 |
-| [[bld_collaboration_agent]] | downstream | 0.28 |
 | [[agent-profile-builder]] | sibling | 0.26 |

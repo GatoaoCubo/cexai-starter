@@ -19,10 +19,6 @@ incident, site reliability engineering, key concepts, root cause, microsoft post
 density_score: 0.85
 related:
   - incident-report-builder
-  - kc_incident_report
-  - bld_collaboration_incident_report
-  - bld_instruction_incident_report
-  - n00_incident_report_manifest
 ---
 ## Domain Overview  
 Incident reports in AI systems document the lifecycle of critical failures, focusing on root cause analysis, impact assessment, and corrective actions. Unlike traditional software incidents, AI-related events often involve complex interactions between data, models, and infrastructure, requiring specialized investigation techniques. Post-mortems are central to SRE (Site Reliability Engineering) practices, ensuring transparency and systemic improvements. Industry leaders like Google and Microsoft emphasize blameless post-mortems to foster learning without punitive measures.  
@@ -72,7 +68,3 @@ AI incident reports must address unique challenges: model drift, data biases, in
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[incident-report-builder]] | downstream | 0.58 |
-| [[kc_incident_report]] | sibling | 0.43 |
-| [[bld_collaboration_incident_report]] | downstream | 0.39 |
-| [[bld_instruction_incident_report]] | downstream | 0.39 |
-| [[n00_incident_report_manifest]] | sibling | 0.38 |

@@ -26,10 +26,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - research-pipeline-builder
-  - p01_kc_research_methods
-  - bld_knowledge_card_research_pipeline
-  - p04_cli_research_pipeline_n01
-  - bld_instruction_research_pipeline
 ---
 # Learning: research_pipeline
 

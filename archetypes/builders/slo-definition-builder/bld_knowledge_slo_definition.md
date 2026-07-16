@@ -30,11 +30,7 @@ keywords:
   - "burn rate"
 density_score: null
 related:
-  - kc_slo_definition
-  - bld_quality_gate_slo_definition
-  - bld_manifest_slo_definition
   - bld_memory_slo_definition
-  - bld_instruction_slo_definition
 ---
 # Knowledge Card: slo_definition
 
@@ -93,8 +89,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_slo_definition]] | sibling | 0.45 |
-| [[bld_quality_gate_slo_definition]] | downstream | 0.43 |
-| [[bld_manifest_slo_definition]] | downstream | 0.41 |
 | [[bld_memory_slo_definition]] | sibling | 0.33 |
-| [[bld_instruction_slo_definition]] | downstream | 0.31 |

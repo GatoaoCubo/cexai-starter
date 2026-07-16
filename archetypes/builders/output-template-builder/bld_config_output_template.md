@@ -31,7 +31,6 @@ related:
   - bld_schema_output_template
   - bld_config_kind
   - bld_config_prompt_template
-  - bld_output_template_output_template
   - bld_config_field_manifest
 ---
 # Config: output_template Production Rules
@@ -99,5 +98,4 @@ python _tools/cex_score.py --apply bld-config-output-template.md
 | [[bld_schema_output_template]] | upstream | 0.42 |
 | bld_config_kind | sibling (reflexive-case source) | 0.38 |
 | bld_config_prompt_template | sibling (contrast) | 0.36 |
-| [[bld_output_template_output_template]] | upstream | 0.33 |
 | bld_config_field_manifest | sibling | 0.30 |

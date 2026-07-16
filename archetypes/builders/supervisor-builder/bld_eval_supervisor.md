@@ -26,10 +26,7 @@ keywords: [supervisor, wave topology, dispatch config, quality-gate, orchestrati
 density_score: 0.90
 related:
   - supervisor-builder
-  - bld_collaboration_supervisor
-  - bld_instruction_supervisor
   - bld_architecture_supervisor
-  - p01_kc_supervisor
 ---
 ## Quality Gate
 
@@ -159,7 +156,4 @@ quality: 7.5
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[supervisor-builder]] | upstream | 0.42 |
-| [[bld_collaboration_supervisor]] | downstream | 0.41 |
-| [[bld_instruction_supervisor]] | upstream | 0.39 |
 | [[bld_architecture_supervisor]] | upstream | 0.37 |
-| [[p01_kc_supervisor]] | upstream | 0.34 |

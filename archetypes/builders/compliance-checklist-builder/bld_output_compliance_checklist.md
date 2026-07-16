@@ -18,10 +18,6 @@ keywords: [compliance_checklist construction, output template compliance checkli
 density_score: 0.85
 related:
   - bld_config_compliance_checklist
-  - n00_compliance_checklist_manifest
-  - kc_compliance_checklist
-  - bld_output_template_data_residency
-  - p03_sp_verification_agent
 ---
 ```yaml
 ---
@@ -66,7 +62,3 @@ def encrypt_data(data):
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_compliance_checklist]] | downstream | 0.26 |
-| [[n00_compliance_checklist_manifest]] | downstream | 0.22 |
-| [[kc_compliance_checklist]] | upstream | 0.21 |
-| [[bld_output_template_data_residency]] | sibling | 0.20 |
-| [[p03_sp_verification_agent]] | upstream | 0.18 |

@@ -15,9 +15,6 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_event_stream
-  - bld_instruction_event_stream
-  - bld_quality_gate_event_stream
-  - kc_event_stream
   - bld_memory_event_stream
 ---
 # Output Template: event_stream
@@ -110,7 +107,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_event_stream]] | related | 0.54 |
-| [[bld_instruction_event_stream]] | related | 0.40 |
-| [[bld_quality_gate_event_stream]] | related | 0.40 |
-| [[kc_event_stream]] | upstream | 0.37 |
 | [[bld_memory_event_stream]] | related | 0.32 |

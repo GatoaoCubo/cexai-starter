@@ -16,10 +16,7 @@ density_score: 1.0
 title: Collaboration ISO - webhook
 related:
   - webhook-builder
-  - n00_webhook_manifest
-  - p01_kc_webhook
   - bld_architecture_webhook
-  - bld_collaboration_notifier
 ---
 # Collaboration: webhook-builder
 ## Crew Role
@@ -94,7 +91,4 @@ provides:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[webhook-builder]] | related | 0.56 |
-| [[n00_webhook_manifest]] | related | 0.48 |
-| [[p01_kc_webhook]] | upstream | 0.44 |
 | [[bld_architecture_webhook]] | related | 0.41 |
-| [[bld_collaboration_notifier]] | sibling | 0.40 |

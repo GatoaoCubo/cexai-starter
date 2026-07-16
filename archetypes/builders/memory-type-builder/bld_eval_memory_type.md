@@ -28,12 +28,6 @@ keywords:
   - "hard gates"
   - "fail action"
 density_score: 0.90
-related:
-  - p11_qg_quality_gate
-  - p11_qg_memory_scope
-  - bld_output_template_memory_type
-  - p11_qg_kind_builder
-  - p01_kc_memory_type
 ---
 ## Quality Gate
 

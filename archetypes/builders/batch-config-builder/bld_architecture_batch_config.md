@@ -18,10 +18,6 @@ keywords: [and architectural position, batch config construction, architecture b
 density_score: 0.90
 related:
   - batch-config-builder
-  - bld_collaboration_batch_config
-  - p11_qg_batch_config
-  - bld_knowledge_card_batch_config
-  - p01_kc_batch_config
 ---
 # Architecture: batch_config
 
@@ -91,7 +87,3 @@ feature_flag (P09) --independent-- batch_config (feature_flag is on/off toggle, 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[batch-config-builder]] | downstream | 0.65 |
-| [[bld_collaboration_batch_config]] | downstream | 0.63 |
-| [[p11_qg_batch_config]] | downstream | 0.56 |
-| [[bld_knowledge_card_batch_config]] | upstream | 0.56 |
-| [[p01_kc_batch_config]] | downstream | 0.55 |

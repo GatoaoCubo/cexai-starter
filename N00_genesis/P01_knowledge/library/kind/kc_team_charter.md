@@ -23,9 +23,6 @@ density_score: 1.0
 related:
   - team-charter-builder
   - bld_tools_team_charter
-  - n00_team_charter_manifest
-  - bld_knowledge_card_team_charter
-  - bld_collaboration_team_charter
 updated: "2026-05-27"
 ---
 

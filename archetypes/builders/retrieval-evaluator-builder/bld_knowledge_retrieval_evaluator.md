@@ -21,9 +21,7 @@ retrieval, spec table, precision recall]
 density_score: 0.88
 related:
   - retrieval-evaluator-builder
-  - kc_retrieval_evaluator
   - bld_memory_retrieval_evaluator
-  - p07_em_n04_knowledge
   - bld_prompt_retrieval_evaluator
 ---
 # Domain Knowledge: retrieval_evaluator
@@ -65,7 +63,5 @@ Retrieval evaluators measure how well a search or RAG system returns relevant re
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[retrieval-evaluator-builder]] | downstream | 0.53 |
-| [[kc_retrieval_evaluator]] | sibling | 0.51 |
 | [[bld_memory_retrieval_evaluator]] | downstream | 0.43 |
-| [[p07_em_n04_knowledge]] | downstream | 0.42 |
 | [[bld_prompt_retrieval_evaluator]] | downstream | 0.38 |

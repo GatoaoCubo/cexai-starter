@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for ai_rmf_profile, ai_rmf_profile construction, ai_rmf_profile, builder, type_builder, nist, ai-rmf, governance, identity
 specializes]
 density_score: 0.85
-related:
-  - bld_instruction_ai_rmf_profile
-  - kc_ai_rmf_profile
-  - bld_knowledge_card_ai_rmf_profile
-  - p11_qg_ai_rmf_profile
-  - bld_collaboration_ai_rmf_profile
 ---
 ## Identity
 
@@ -69,12 +63,3 @@ ALWAYS assign implementation status per action-ID: Implemented / Partial / Plann
 NEVER produce narrative risk essays -- output is structured tables with action-ID columns.
 NEVER self-assign quality score; quality field must remain null.
 NEVER omit risk categories even if assessed as Not Applicable -- include with justification.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_ai_rmf_profile]] | upstream | 0.67 |
-| [[kc_ai_rmf_profile]] | upstream | 0.60 |
-| [[bld_knowledge_card_ai_rmf_profile]] | upstream | 0.60 |
-| [[p11_qg_ai_rmf_profile]] | related | 0.58 |
-| [[bld_collaboration_ai_rmf_profile]] | downstream | 0.45 |

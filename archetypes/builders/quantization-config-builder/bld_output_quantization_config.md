@@ -18,10 +18,7 @@ keywords: [quantization_config construction, output template quantization config
 density_score: 0.85
 related:
   - bld_schema_quantization_config
-  - p09_qg_quantization_config
   - bld_schema_model_registry
-  - ex_vision_tool_image_edit
-  - bld_instruction_quantization_config
 ---
 ## Field Guidance
 | Placeholder | Type | Allowed Values | Example |
@@ -66,7 +63,4 @@ calibration_dataset: c4  # Required for GPTQ/AWQ. Options: c4, wikitext2, pile
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_quantization_config]] | downstream | 0.48 |
-| [[p09_qg_quantization_config]] | downstream | 0.33 |
 | [[bld_schema_model_registry]] | downstream | 0.31 |
-| [[ex_vision_tool_image_edit]] | upstream | 0.30 |
-| [[bld_instruction_quantization_config]] | upstream | 0.29 |

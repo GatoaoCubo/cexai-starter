@@ -4,10 +4,7 @@ description: "Builds ONE partner_listing artifact via 8F pipeline. Loads partner
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_partner_listing_manifest
   - bld_config_partner_listing
-  - bld_collaboration_partner_listing
-  - p11_fb_partner_listing
   - kind-builder
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_partner_listing_manifest]] | related | 0.38 |
 | [[bld_config_partner_listing]] | related | 0.37 |
-| [[bld_collaboration_partner_listing]] | related | 0.33 |
-| [[p11_fb_partner_listing]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |

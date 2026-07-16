@@ -5,7 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_domain_event
-  - p03_sp_builder_nucleus
   - kind-builder
   - system-prompt-builder
   - domain-event-builder
@@ -87,7 +86,6 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_domain_event]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[system-prompt-builder]] | related | 0.28 |
 | [[domain-event-builder]] | related | 0.27 |

@@ -19,12 +19,6 @@ misconfigured, pattern
 using, evidence
 reviewed, use id, document id]
 density_score: 0.85
-related:
-  - sso-config-builder
-  - bld_knowledge_card_sso_config
-  - bld_instruction_sso_config
-  - kc_sso_config
-  - p09_qg_sso_config
 ---
 ## Observation
 Misconfigured entity IDs or mismatched SLO URLs often cause SAML/OIDC flows to fail. Overlooking attribute mapping rules can lead to incomplete user profile data post-authentication.
@@ -41,12 +35,3 @@ Reviewed SAML configs with correct entity ID and OIDC configs referencing well-k
 - Separate protocol-specific settings into reusable configuration modules.
 - Enforce SLO/SSO URL consistency across all service provider configs.
 - Document IdP-specific quirks (e.g., custom attribute formats) in config comments.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[sso-config-builder]] | upstream | 0.41 |
-| [[bld_knowledge_card_sso_config]] | upstream | 0.40 |
-| [[bld_instruction_sso_config]] | upstream | 0.39 |
-| [[kc_sso_config]] | upstream | 0.37 |
-| [[p09_qg_sso_config]] | downstream | 0.29 |

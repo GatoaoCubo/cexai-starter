@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - guardrail-builder
-  - p10_lr_guardrail_builder
-  - p11_qg_guardrail
   - bld_architecture_guardrail
-  - bld_knowledge_card_guardrail
 ---
 # Instructions: How to Produce a guardrail
 ## Phase 1: RESEARCH
@@ -98,7 +95,5 @@ python _tools/cex_skill_loader.py --verify guardrail
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[guardrail-builder]] | downstream | 0.50 |
-| [[p10_lr_guardrail_builder]] | downstream | 0.49 |
-| [[p11_qg_guardrail]] | downstream | 0.48 |
 | [[bld_architecture_guardrail]] | downstream | 0.45 |
 | [[bld_knowledge_guardrail]] | upstream | 0.44 |

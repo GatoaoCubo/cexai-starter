@@ -18,11 +18,8 @@ keywords: [multimodal_prompt construction, collaboration multimodal prompt, mult
 synthesizes, receives from, produces for]
 density_score: 0.85
 related:
-  - bld_collaboration_llm_evaluation_scenario
   - multimodal-prompt-builder
   - bld_tools_multimodal_prompt
-  - bld_collaboration_prompt_technique
-  - bld_collaboration_self_improvement_loop
 ---
 ## Crew Role  
 Synthesizes multimodal prompts by integrating text, image, and audio inputs into cohesive instructions for AI models. Acts as a bridge between content creators and technical teams.  

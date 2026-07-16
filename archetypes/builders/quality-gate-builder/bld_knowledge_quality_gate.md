@@ -18,11 +18,9 @@ updated: "2026-04-07"
 keywords: [atomic searchable facts, quality gate construction, knowledge card quality gate, quality_gate, builder, examples, "quality: null", "p11_qg_{gate_slug}", "p11_qg_{slug}.md", quality]
 density_score: 0.90
 related:
-  - p11_qg_quality_gate
   - bld_schema_quality_gate
   - quality-gate-builder
   - bld_memory_quality_gate
-  - p03_ins_quality_gate
 ---
 # Domain Knowledge: quality_gate
 ## Executive Summary
@@ -77,8 +75,6 @@ Quality gates are numeric scoring barriers that block or score artifacts before 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_quality_gate]] | related | 0.52 |
 | [[bld_schema_quality_gate]] | upstream | 0.49 |
 | [[quality-gate-builder]] | related | 0.49 |
 | [[bld_memory_quality_gate]] | upstream | 0.48 |
-| [[p03_ins_quality_gate]] | related | 0.46 |

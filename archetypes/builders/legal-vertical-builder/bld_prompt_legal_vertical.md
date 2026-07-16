@@ -18,10 +18,6 @@ keywords: [legal_vertical construction, instruction legal vertical, legal_vertic
 density_score: 0.85
 related:
   - legal-vertical-builder
-  - p01_qg_legal_vertical
-  - bld_knowledge_card_legal_vertical
-  - p10_mem_legal_vertical_builder
-  - kc_legal_vertical
 ---
 ## Phase 1: RESEARCH  
 1. Analyze privilege logs for attorney-client confidentiality patterns  
@@ -55,7 +51,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[legal-vertical-builder]] | upstream | 0.60 |
-| [[p01_qg_legal_vertical]] | downstream | 0.55 |
-| [[bld_knowledge_card_legal_vertical]] | upstream | 0.54 |
-| [[p10_mem_legal_vertical_builder]] | downstream | 0.43 |
-| [[kc_legal_vertical]] | upstream | 0.32 |

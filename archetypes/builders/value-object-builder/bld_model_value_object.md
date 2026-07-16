@@ -19,10 +19,7 @@ domain: value_object
 triggers: ["define value object", "create immutable type", "typed attribute without identity"]
 keywords: [value_object, ddd, immutable, equality, typed_attribute]
 related:
-  - kc_value_object
   - bld_memory_value_object
-  - bld_instruction_value_object
-  - bld_knowledge_card_value_object
   - bld_architecture_value_object
 ---
 ## Identity
@@ -87,8 +84,5 @@ of named constants. You only handle value object modeling.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_value_object]] | sibling | 0.53 |
 | [[bld_memory_value_object]] | sibling | 0.52 |
-| [[bld_instruction_value_object]] | related | 0.47 |
-| [[bld_knowledge_card_value_object]] | sibling | 0.47 |
 | [[bld_architecture_value_object]] | sibling | 0.44 |

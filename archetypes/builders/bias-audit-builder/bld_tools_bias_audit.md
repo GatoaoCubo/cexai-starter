@@ -20,9 +20,6 @@ this, validation tools, external references, flow data validation, related artif
 density_score: 0.85
 related:
   - bld_architecture_bias_audit
-  - bld_collaboration_bias_audit
-  - bld_instruction_bias_audit
-  - kc_bias_audit
   - bias-audit-builder
 ---
 ## Production Tools
@@ -54,7 +51,4 @@ This ISO drives a bias audit: measuring fairness across demographic slices.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_bias_audit]] | downstream | 0.43 |
-| [[bld_collaboration_bias_audit]] | downstream | 0.41 |
-| [[bld_instruction_bias_audit]] | upstream | 0.39 |
-| [[kc_bias_audit]] | upstream | 0.35 |
 | [[bias-audit-builder]] | downstream | 0.35 |

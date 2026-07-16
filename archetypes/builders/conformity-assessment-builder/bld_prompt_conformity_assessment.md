@@ -19,10 +19,6 @@ keywords: [conformity_assessment construction, three-phase build protocol, confo
 this, identify system type, identify annex, confirm article]
 density_score: 0.85
 related:
-  - bld_knowledge_card_conformity_assessment
-  - bld_manifest_conformity_assessment
-  - bld_collaboration_conformity_assessment
-  - n00_conformity_assessment_manifest
   - bld_memory_conformity_assessment
 ---
 # Conformity Assessment Builder -- Instruction
@@ -182,8 +178,4 @@ git commit -m "[N03] conformity_assessment: {system_name}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_conformity_assessment]] | upstream | 0.62 |
-| [[bld_manifest_conformity_assessment]] | downstream | 0.60 |
-| [[bld_collaboration_conformity_assessment]] | downstream | 0.50 |
-| [[n00_conformity_assessment_manifest]] | downstream | 0.42 |
 | [[bld_memory_conformity_assessment]] | downstream | 0.41 |

@@ -16,10 +16,8 @@ when_to_use: "When configuring retriever_n01 for a new corpus; when comparing em
 keywords: [embedding model, sentence-transformers, bge, mpnet, voyage, openai-embedding, dimension, mteb benchmark, cosine similarity, hnsw, retriever_n01]
 density_score: 0.94
 related:
-  - p04_retr_n01
   - p01_kc_information_retrieval_fundamentals
   - rag_source_intelligence
-  - bld_collaboration_embedding_config
 ---
 
 # Embedding Configuration for N01 Intelligence Retriever

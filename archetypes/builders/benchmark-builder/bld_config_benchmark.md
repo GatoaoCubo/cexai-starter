@@ -32,7 +32,6 @@ related:
   - bld_config_retriever_config
   - bld_config_validation_schema
   - bld_schema_benchmark
-  - bld_output_template_benchmark
 ---
 # Config: benchmark Production Rules
 ## Naming
@@ -90,4 +89,3 @@ python _tools/cex_score.py --apply bld-config-benchmark.md
 | [[bld_config_retriever_config]] | sibling | 0.35 |
 | [[bld_config_validation_schema]] | sibling | 0.34 |
 | [[bld_schema_benchmark]] | upstream | 0.34 |
-| [[bld_output_template_benchmark]] | upstream | 0.33 |

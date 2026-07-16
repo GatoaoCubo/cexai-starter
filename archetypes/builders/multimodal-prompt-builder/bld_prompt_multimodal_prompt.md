@@ -18,10 +18,6 @@ keywords: [multimodal_prompt construction, instruction multimodal prompt, multim
 density_score: 0.85
 related:
   - multimodal-prompt-builder
-  - bld_knowledge_card_multimodal_prompt
-  - bld_instruction_multi_modal_config
-  - p10_mem_multimodal_prompt_builder
-  - bld_collaboration_multi_modal_config
 ---
 ## Phase 1: RESEARCH  
 1. Identify target modalities (vision/audio/text) and their interdependencies.  
@@ -55,5 +51,4 @@ related:
 | [[multimodal-prompt-builder]] | related | 0.44 |
 | [[bld_knowledge_multimodal_prompt]] | upstream | 0.39 |
 | bld_instruction_multi_modal_config | sibling | 0.38 |
-| [[p10_mem_multimodal_prompt_builder]] | downstream | 0.37 |
 | bld_collaboration_multi_modal_config | downstream | 0.37 |

@@ -30,11 +30,8 @@ keywords:
   - "noise environment"
 density_score: 0.85
 related:
-  - p09_qg_vad_config
   - bld_schema_vad_config
   - vad-config-builder
-  - p01_kc_audit_vad_config_builder
-  - kc_vad_config
 ---
 ```yaml
 ---

@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - p10_mem_agentic_rag_builder
-  - n00_agentic_rag_manifest
   - graph-rag-config-builder
-  - bld_instruction_agentic_rag
-  - kc_retrieval_evaluator
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER BYPASS RETRIEVAL STAGE FOR GENERATION DECISIONS
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_agentic_rag_builder]] | downstream | 0.43 |
-| [[n00_agentic_rag_manifest]] | related | 0.41 |
 | [[graph-rag-config-builder]] | sibling | 0.40 |
-| [[bld_instruction_agentic_rag]] | downstream | 0.40 |
-| [[kc_retrieval_evaluator]] | related | 0.36 |

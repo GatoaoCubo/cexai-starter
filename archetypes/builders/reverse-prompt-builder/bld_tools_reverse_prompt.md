@@ -31,9 +31,7 @@ density_score: 0.90
 related:
   - reverse-prompt-builder
   - bld_architecture_reverse_prompt
-  - bld_collaboration_reverse_prompt
   - bld_eval_reverse_prompt
-  - bld_knowledge_card_reverse_prompt
 ---
 
 # Tools -- reverse-prompt-builder
@@ -76,6 +74,4 @@ related:
 |----------|-------------|-------|
 | [[reverse-prompt-builder]] | sibling | 0.61 |
 | [[bld_architecture_reverse_prompt]] | sibling | 0.58 |
-| [[bld_collaboration_reverse_prompt]] | sibling | 0.57 |
 | [[bld_eval_reverse_prompt]] | sibling | 0.56 |
-| [[bld_knowledge_card_reverse_prompt]] | sibling | 0.53 |

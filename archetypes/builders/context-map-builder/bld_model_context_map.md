@@ -41,11 +41,7 @@ keywords:
   - "upstream downstream"
 density_score: 1.0
 related:
-  - kc_context_map
-  - bld_knowledge_card_context_map
   - bld_architecture_context_map
-  - bld_collaboration_context_map
-  - bld_instruction_context_map
 ---
 ## Identity
 
@@ -124,8 +120,4 @@ ID must match `^p08_cm_[a-z][a-z0-9_]+$`. Body must not exceed 4096 bytes.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_context_map]] | upstream | 0.61 |
-| [[bld_knowledge_card_context_map]] | upstream | 0.61 |
 | [[bld_architecture_context_map]] | related | 0.52 |
-| [[bld_collaboration_context_map]] | downstream | 0.49 |
-| [[bld_instruction_context_map]] | upstream | 0.46 |

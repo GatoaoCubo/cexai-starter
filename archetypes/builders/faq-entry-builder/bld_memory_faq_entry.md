@@ -21,10 +21,7 @@ reviewed, related artifacts, canonical answers]
 density_score: 0.85
 related:
   - faq-entry-builder
-  - n00_faq_entry_manifest
   - bld_config_faq_entry
-  - p01_kc_faq_entry
-  - bld_knowledge_card_faq_entry
 ---
 ## Observation
 Common issues in faq_entry artifacts include inconsistent formatting, missing related links, and vague canonical answers that fail to address root causes. Support deflection metrics are often omitted or inaccurately calculated. FAQ entries with ambiguous question phrasing produce lower helpfulness scores than those with precise, user-intent-aligned questions.
@@ -46,7 +43,4 @@ Reviewed artifacts showed 70% of high-performing faq entries had canonical answe
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[faq-entry-builder]] | upstream | 0.43 |
-| [[n00_faq_entry_manifest]] | upstream | 0.38 |
 | [[bld_config_faq_entry]] | upstream | 0.37 |
-| [[p01_kc_faq_entry]] | upstream | 0.34 |
-| [[bld_knowledge_card_faq_entry]] | upstream | 0.33 |

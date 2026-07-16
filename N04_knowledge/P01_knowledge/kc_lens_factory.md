@@ -19,14 +19,9 @@ keywords: [8f pipeline, 12 pillars, nucleus, kind, builder, iso, artifact, quali
 density_score: 0.90
 related:
   - kc_lens_index
-  - p03_pt_mentor_socratic
   - p02_mm_cex_architecture_n04
   - p01_kc_concept_graph
-  - p03_pt_mentor_storyteller
-  - p01_kc_quality_gate
   - kc_crew_template
-  - p01_kc_entity_memory
-  - p01_kc_learning_record
 ---
 
 # Lens: Factory

@@ -31,11 +31,7 @@ keywords:
   - "env_config"
 density_score: 0.90
 related:
-  - bld_instruction_experiment_config
-  - bld_instruction_env_config
   - feature-flag-builder
-  - bld_instruction_session_backend
-  - bld_instruction_context_doc
 ---
 # Instructions: How to Produce a feature_flag
 ## Phase 1: RESEARCH
@@ -73,8 +69,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_experiment_config]] | sibling | 0.40 |
-| [[bld_instruction_env_config]] | sibling | 0.40 |
 | [[feature-flag-builder]] | downstream | 0.38 |
-| [[bld_instruction_session_backend]] | sibling | 0.37 |
-| [[bld_instruction_context_doc]] | sibling | 0.37 |

@@ -18,10 +18,6 @@ keywords: [mcp_app_extension construction, mcp_app_extension, builder, quality_g
 density_score: 0.85
 related:
   - mcp-app-extension-builder
-  - bld_instruction_mcp_app_extension
-  - bld_knowledge_card_mcp_app_extension
-  - bld_output_template_mcp_app_extension
-  - bld_collaboration_mcp_app_extension
 ---
 ## Quality Gate
 

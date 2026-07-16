@@ -19,10 +19,8 @@ keywords: [cybersec_skill collaboration, dogfood loop, commit pattern, capabilit
 density_score: 0.90
 related:
   - cybersec-skill-builder
-  - bld_collaboration_skill
   - bld_architecture_cybersec_skill
   - bld_memory_cybersec_skill
-  - p01_kc_cybersec_skill
 ---
 
 # Collaboration: cybersec-skill-builder
@@ -160,7 +158,5 @@ This is manual per Q10 LOCKED -- no CI auto-trigger on baseline changes.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cybersec-skill-builder]] | upstream | 0.68 |
-| [[bld_collaboration_skill]] | parent | 0.60 |
 | [[bld_architecture_cybersec_skill]] | upstream | 0.55 |
 | [[bld_memory_cybersec_skill]] | upstream | 0.52 |
-| [[p01_kc_cybersec_skill]] | sibling | 0.55 |

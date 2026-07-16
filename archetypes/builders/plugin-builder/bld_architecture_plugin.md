@@ -18,10 +18,7 @@ keywords: [component map of plugin, and architectural position, plugin construct
 density_score: 0.90
 related:
   - plugin-builder
-  - bld_collaboration_plugin
   - bld_memory_plugin
-  - p01_kc_plugin
-  - n00_plugin_manifest
 ---
 # Architecture: plugin in the CEX
 
@@ -72,7 +69,4 @@ plugin          --depends-->    dependency_chain
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[plugin-builder]] | upstream | 0.71 |
-| [[bld_collaboration_plugin]] | upstream | 0.69 |
 | [[bld_memory_plugin]] | downstream | 0.63 |
-| [[p01_kc_plugin]] | upstream | 0.59 |
-| [[n00_plugin_manifest]] | upstream | 0.55 |

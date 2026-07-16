@@ -24,10 +24,7 @@ for, error recovery]
 density_score: 0.90
 related:
   - workflow-builder
-  - bld_knowledge_card_workflow
   - bld_architecture_workflow
-  - p01_kc_workflow
-  - bld_collaboration_workflow
 ---
 # Memory: workflow-builder
 ## Summary
@@ -92,7 +89,4 @@ python _tools/cex_score.py --apply bld-memory-workflow.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-builder]] | downstream | 0.56 |
-| [[bld_knowledge_card_workflow]] | upstream | 0.54 |
 | [[bld_architecture_workflow]] | upstream | 0.52 |
-| [[p01_kc_workflow]] | downstream | 0.49 |
-| [[bld_collaboration_workflow]] | downstream | 0.47 |

@@ -29,11 +29,9 @@ llm_function: BECOME
 parent: null
 8f: "F6_produce"
 related:
-  - bld_collaboration_output_validator
   - bld_architecture_output_validator
   - constraint-spec-builder
   - validator-builder
-  - p10_lr_output_validator_builder
 ---
 ## Identity
 
@@ -133,4 +131,3 @@ quality_target: 9.0
 | [[bld_architecture_output_validator]] | downstream | 0.46 |
 | [[constraint-spec-builder]] | sibling | 0.42 |
 | [[validator-builder]] | sibling | 0.41 |
-| [[p10_lr_output_validator_builder]] | downstream | 0.40 |

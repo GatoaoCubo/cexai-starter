@@ -32,9 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - skill-builder
-  - p03_ins_skill_builder
-  - p11_qg_skill
-  - n00_skill_manifest
   - bld_schema_skill
 ---
 # Domain Knowledge: skill
@@ -96,7 +93,4 @@ Skills are reusable, phase-structured capabilities with a defined trigger — th
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[skill-builder]] | related | 0.58 |
-| [[p03_ins_skill_builder]] | upstream | 0.50 |
-| [[p11_qg_skill]] | downstream | 0.48 |
-| [[n00_skill_manifest]] | sibling | 0.48 |
 | [[bld_schema_skill]] | downstream | 0.48 |

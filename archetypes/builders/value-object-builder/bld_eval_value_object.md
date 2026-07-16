@@ -25,11 +25,7 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - kc_value_object
   - bld_schema_value_object
-  - bld_output_template_value_object
-  - bld_instruction_value_object
-  - bld_manifest_value_object
 ---
 ## Quality Gate
 

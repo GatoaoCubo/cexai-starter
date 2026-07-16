@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [iso layout, agent_computer_interface construction, architecture agent computer interface, action space, observation schema, error protocol, f pipeline integration, agent_computer_interface, builder, architecture]
 density_score: 0.88
 related:
-  - bld_collaboration_agent_computer_interface
   - bld_schema_agent_computer_interface
-  - n00_agent_computer_interface_manifest
-  - bld_output_template_agent_computer_interface
-  - bld_collaboration_agent
 ---
 ## Component Inventory (Artifact Fields)
 | Name | Role | Required | Notes |
@@ -85,8 +81,4 @@ agent_computer_interface --consumed_by------> agent (P02)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent_computer_interface]] | downstream | 0.37 |
 | [[bld_schema_agent_computer_interface]] | upstream | 0.35 |
-| [[n00_agent_computer_interface_manifest]] | related | 0.35 |
-| [[bld_output_template_agent_computer_interface]] | upstream | 0.33 |
-| [[bld_collaboration_agent]] | downstream | 0.32 |

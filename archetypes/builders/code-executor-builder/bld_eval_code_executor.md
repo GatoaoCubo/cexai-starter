@@ -18,9 +18,7 @@ updated: "2026-03-28"
 keywords: [language support, resource limits, and timeout policies, sandbox isolation, timeout policy, language listing, and network access declaration]
 density_score: 0.90
 related:
-  - bld_instruction_code_executor
   - code-executor-builder
-  - p10_lr_code_executor_builder
   - bld_schema_code_executor
   - bld_architecture_code_executor
 ---

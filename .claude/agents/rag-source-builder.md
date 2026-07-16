@@ -4,11 +4,8 @@ description: "Builds ONE rag_source artifact via 8F pipeline. Loads rag-source-b
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - rag-source-builder
-  - p06_td_cex_artifact_type_n03
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # rag-source-builder Sub-Agent

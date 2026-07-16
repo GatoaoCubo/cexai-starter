@@ -18,9 +18,6 @@ keywords: [naming convention, output paths, byte limits, agent_grounding_record 
 density_score: 0.85
 related:
   - bld_tools_agent_grounding_record
-  - bld_collaboration_agent_grounding_record
-  - bld_output_template_agent_grounding_record
-  - bld_quality_gate_agent_grounding_record
   - bld_architecture_agent_grounding_record
 ---
 # Agent Grounding Record Builder -- Config
@@ -119,7 +116,4 @@ A score below 8.0 blocks publication. Score between 8.0 and 9.0 allowed with doc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_agent_grounding_record]] | upstream | 0.51 |
-| [[bld_collaboration_agent_grounding_record]] | downstream | 0.30 |
-| [[bld_output_template_agent_grounding_record]] | upstream | 0.30 |
-| [[bld_quality_gate_agent_grounding_record]] | downstream | 0.29 |
 | [[bld_architecture_agent_grounding_record]] | upstream | 0.29 |

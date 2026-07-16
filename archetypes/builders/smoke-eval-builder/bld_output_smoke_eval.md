@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F6_produce"
 keywords: [template with, for smoke_eval production, smoke eval construction, output template smoke eval, smoke_eval, builder, examples, output template, critical path, on failure]
 density_score: 0.90
-related:
-  - bld_output_template_unit_eval
-  - bld_output_template_golden_test
-  - bld_output_template_e2e_eval
-  - bld_output_template_runtime_rule
-  - bld_output_template_feature_flag
 ---
 # Output Template: smoke_eval
 ```yaml
@@ -88,12 +82,3 @@ density_score: {{0.80_to_1.00}}
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_unit_eval]] | sibling | 0.40 |
-| [[bld_output_template_golden_test]] | sibling | 0.38 |
-| [[bld_output_template_e2e_eval]] | sibling | 0.37 |
-| [[bld_output_template_runtime_rule]] | sibling | 0.36 |
-| [[bld_output_template_feature_flag]] | sibling | 0.33 |

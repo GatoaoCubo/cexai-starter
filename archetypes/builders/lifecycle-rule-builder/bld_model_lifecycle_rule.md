@@ -27,10 +27,7 @@ tldr: Golden and anti-examples for lifecycle rule construction, demonstrating id
 llm_function: BECOME
 related:
   - bld_memory_lifecycle_rule
-  - bld_collaboration_lifecycle_rule
-  - p03_ins_lifecycle_rule
   - bld_architecture_lifecycle_rule
-  - bld_knowledge_card_lifecycle_rule
 ---
 ## Identity
 
@@ -124,6 +121,5 @@ Body sections: State Definitions, Transition Table, Freshness Policy, Review Cyc
 |----------|-------------|-------|
 | [[bld_memory_lifecycle_rule]] | related | 0.55 |
 | [[bld_orchestration_lifecycle_rule]] | related | 0.54 |
-| [[p03_ins_lifecycle_rule]] | related | 0.42 |
 | [[bld_architecture_lifecycle_rule]] | related | 0.41 |
 | [[bld_knowledge_lifecycle_rule]] | related | 0.39 |

@@ -20,7 +20,6 @@ keywords: [model distillation, teacher-student training, loss functions, and com
 distillation, spec table]
 density_score: 0.88
 related:
-  - kc_distillation_config
   - distillation-config-builder
   - bld_prompt_distillation_config
   - bld_feedback_distillation_config
@@ -55,7 +54,6 @@ Distillation configs define how to train a smaller student model to mimic a larg
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_distillation_config]] | sibling | 0.67 |
 | [[distillation-config-builder]] | downstream | 0.66 |
 | [[bld_prompt_distillation_config]] | downstream | 0.60 |
 | [[bld_feedback_distillation_config]] | downstream | 0.56 |

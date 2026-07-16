@@ -26,11 +26,8 @@ title: "Memory OpenAPI Spec"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_output_template_openapi_spec
-  - p06_oas_cex_sdk
   - bld_config_openapi_spec
   - kc_openapi_spec
-  - bld_knowledge_card_openapi_spec
 ---
 ## Summary
 
@@ -100,7 +97,6 @@ Error response discipline:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_openapi_spec]] | upstream | 0.40 |
 | p06_oas_cex_sdk | upstream | 0.38 |
 | [[bld_config_openapi_spec]] | upstream | 0.36 |
 | [[kc_openapi_spec]] | upstream | 0.36 |

@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [template with, for context_window_config production, context window config construction, context_window_config, builder, examples, output template, model name, context window config, context window]
 density_score: 0.90
 related:
-  - p01_kc_context_window_config
   - context-window-config-builder
-  - p11_qg_context_window_config
   - bld_config_context_window_config
-  - bld_instruction_context_window_config
 ---
 # Output Template: context_window_config
 ```yaml
@@ -91,6 +88,5 @@ tldr: "{{Dense <=160ch budget description}}"
 |----------|-------------|-------|
 | [[kc_context_window_config]] | upstream | 0.48 |
 | [[context-window-config-builder]] | upstream | 0.43 |
-| [[p11_qg_context_window_config]] | downstream | 0.40 |
 | [[bld_config_context_window_config]] | downstream | 0.38 |
 | [[bld_prompt_context_window_config]] | upstream | 0.37 |

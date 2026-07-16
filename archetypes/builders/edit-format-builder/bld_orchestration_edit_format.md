@@ -23,9 +23,7 @@ density_score: 0.88
 related:
   - edit-format-builder
   - bld_memory_response_format
-  - bld_collaboration_response_format
   - bld_architecture_edit_format
-  - p03_ins_response_format
 ---
 ## Crew Role
 
@@ -75,6 +73,4 @@ Owns:
 |----------|-------------|-------|
 | [[edit-format-builder]] | upstream | 0.37 |
 | [[bld_memory_response_format]] | upstream | 0.36 |
-| [[bld_collaboration_response_format]] | sibling | 0.36 |
 | [[bld_architecture_edit_format]] | upstream | 0.33 |
-| [[p03_ins_response_format]] | upstream | 0.32 |

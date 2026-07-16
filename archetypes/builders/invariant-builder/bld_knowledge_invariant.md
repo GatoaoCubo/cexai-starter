@@ -18,10 +18,8 @@ updated: "2026-04-07"
 keywords: [atomic searchable facts, invariant construction, knowledge card invariant, invariant, builder, examples, "p08_law_{number}", agent_group, "kind: rule", domain knowledge]
 density_score: 0.90
 related:
-  - p03_ins_law
   - bld_schema_invariant
   - bld_config_invariant
-  - p11_qg_law
   - invariant-builder
 ---
 # Domain Knowledge: law
@@ -84,8 +82,6 @@ Laws are inviolable operational rules — the highest-authority governance artif
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_law]] | upstream | 0.57 |
 | [[bld_schema_invariant]] | related | 0.50 |
 | [[bld_config_invariant]] | related | 0.44 |
-| [[p11_qg_law]] | downstream | 0.44 |
 | [[invariant-builder]] | related | 0.40 |

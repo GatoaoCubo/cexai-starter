@@ -13,7 +13,6 @@ tags: [gstack, attribution, MIT, license-compliance, GSTACK_ASSIM]
 keywords: [MIT license, attribution, gstack, capability assimilation, license ledger, garrytan]
 related:
   - p01_kc_gstack_cex_gap_analysis
-  - kc_repo_assimilation_pipeline
 ---
 
 > N01 license-compliance record. Every capability assimilated from gstack carries a row here.

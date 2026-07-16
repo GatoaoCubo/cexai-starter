@@ -22,12 +22,6 @@ updated: '2026-03-27'
 8f: "F7_govern"
 keywords: [runtime rule, verifies rule type, numeric parameters, kind: runtime_rule, yaml.safe_load(frontmatter), p09_rr_*, id.startswith("p09_rr_")]
 density_score: 0.85
-related:
-  - p11_qg_quality_gate
-  - p11_qg_response_format
-  - p11_qg_prompt_template
-  - p03_ins_runtime_rule
-  - p11_qg_runtime_state
 ---
 ## Quality Gate
 

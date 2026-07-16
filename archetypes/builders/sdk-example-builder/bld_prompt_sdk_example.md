@@ -18,10 +18,6 @@ keywords: [sdk_example construction, instruction sdk example, sdk_example, build
 density_score: 0.85
 related:
   - sdk-example-builder
-  - bld_instruction_tts_provider
-  - bld_instruction_stt_provider
-  - p10_lr_sdk_example_builder
-  - n00_sdk_example_manifest
 ---
 ## Phase 1: RESEARCH  
 1. Identify target programming languages for SDK examples (e.g., Python, Java, JS).  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[sdk-example-builder]] | downstream | 0.37 |
-| [[bld_instruction_tts_provider]] | sibling | 0.27 |
-| [[bld_instruction_stt_provider]] | sibling | 0.26 |
-| [[p10_lr_sdk_example_builder]] | downstream | 0.25 |
-| [[n00_sdk_example_manifest]] | downstream | 0.22 |

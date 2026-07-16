@@ -34,9 +34,6 @@ keywords: [memory ontology, declare disjoint classes, constrain property domains
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p11_qg_ontology
-  - bld_knowledge_card_ontology
-  - bld_instruction_ontology
   - ontology-builder
   - bld_schema_ontology
 ---
@@ -92,7 +89,6 @@ python _tools/cex_score.py --apply --verbose p10_lr_ontology_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_ontology]] | downstream | 0.42 |
 | [[bld_knowledge_ontology]] | upstream | 0.41 |
 | [[bld_prompt_ontology]] | upstream | 0.37 |
 | [[ontology-builder]] | upstream | 0.31 |

@@ -5,9 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - supervisor-builder
-  - bld_collaboration_supervisor
-  - p01_kc_supervisor
-  - bld_instruction_supervisor
   - bld_architecture_supervisor
 ---
 
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[supervisor-builder]] | related | 0.38 |
-| [[bld_collaboration_supervisor]] | related | 0.37 |
-| [[p01_kc_supervisor]] | related | 0.35 |
-| [[bld_instruction_supervisor]] | related | 0.34 |
 | [[bld_architecture_supervisor]] | related | 0.34 |

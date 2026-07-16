@@ -18,8 +18,6 @@ tldr: "LlamaIndex is the RAG-first framework with 48.9K GitHub stars, $27.5M fun
 8f: "F3_inject"
 keywords: [retrieval augmented generation, document agent platform, intelligent document processing, knowledge infrastructure, typed artifact governance, nuclei specialization, quality gates, 8f reasoning protocol]
 related:
-  - p01_kc_atom_07_llamaindex
-  - cm_cex_vs_landscape
   - agentic-rag-builder
   - p01_kc_competitor_crewai
   - p01_kc_competitor_openai_sdk

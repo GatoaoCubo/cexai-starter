@@ -21,10 +21,6 @@ structured, evidence
 reviewed, related artifacts, explicit templates]
 density_score: 0.85
 related:
-  - bld_knowledge_card_reasoning_strategy
-  - bld_instruction_reasoning_strategy
-  - p10_mem_prompt_optimizer_builder
-  - p10_lr_planning_strategy_builder
   - kc_reasoning_strategy
 ---
 ## Observation

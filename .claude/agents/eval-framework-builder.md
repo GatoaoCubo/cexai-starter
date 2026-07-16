@@ -4,11 +4,8 @@ description: "Builds ONE eval_framework artifact via 8F pipeline. Loads eval-fra
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_config_eval_framework
-  - n00_eval_framework_manifest
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # eval-framework-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[bld_config_eval_framework]] | related | 0.30 |
-| [[n00_eval_framework_manifest]] | related | 0.29 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |

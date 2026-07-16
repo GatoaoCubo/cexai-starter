@@ -30,12 +30,6 @@ keywords:
   - "workflow phases"
   - "template standards"
 density_score: 0.90
-related:
-  - bld_output_template_runtime_rule
-  - bld_output_template_feature_flag
-  - bld_output_template_input_schema
-  - bld_output_template_golden_test
-  - bld_output_template_embedding_config
 ---
 # Output Template: skill
 ```yaml
@@ -95,12 +89,3 @@ stack_default: "{{optional_stack_or_omit}}"
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_runtime_rule]] | sibling | 0.37 |
-| [[bld_output_template_feature_flag]] | sibling | 0.36 |
-| [[bld_output_template_input_schema]] | sibling | 0.34 |
-| [[bld_output_template_golden_test]] | sibling | 0.34 |
-| [[bld_output_template_embedding_config]] | sibling | 0.33 |

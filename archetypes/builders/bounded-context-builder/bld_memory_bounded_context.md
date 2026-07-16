@@ -17,8 +17,6 @@ updated: "2026-04-17"
 related:
   - bld_memory_domain_vocabulary
   - bld_memory_data_contract
-  - p01_kc_bounded_context
-  - bld_kc_bounded_context
   - bounded-context-builder
 ---
 # Memory Patterns: bounded_context
@@ -75,6 +73,4 @@ python _tools/cex_memory_update.py --check
 |----------|-------------|-------|
 | [[bld_memory_domain_vocabulary]] | sibling | 0.45 |
 | [[bld_memory_data_contract]] | sibling | 0.40 |
-| [[p01_kc_bounded_context]] | upstream | 0.39 |
-| [[bld_kc_bounded_context]] | upstream | 0.35 |
 | [[bounded-context-builder]] | upstream | 0.35 |

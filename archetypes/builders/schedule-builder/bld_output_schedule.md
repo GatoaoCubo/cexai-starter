@@ -20,9 +20,7 @@ keywords: [template with, schedule construction, output template schedule, sched
 density_score: 0.90
 related:
   - schedule-builder
-  - p11_qg_schedule
   - bld_architecture_schedule
-  - bld_instruction_schedule
   - bld_schema_schedule
 ---
 # Output Template: schedule
@@ -91,7 +89,6 @@ description: "{{what_this_schedule_triggers_max_200ch}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[schedule-builder]] | downstream | 0.49 |
-| [[p11_qg_schedule]] | downstream | 0.44 |
 | [[bld_architecture_schedule]] | downstream | 0.43 |
 | [[bld_prompt_schedule]] | upstream | 0.43 |
 | [[bld_schema_schedule]] | downstream | 0.41 |

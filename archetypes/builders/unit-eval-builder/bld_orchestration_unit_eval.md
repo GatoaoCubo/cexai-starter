@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [unit eval construction, collaboration unit eval, unit_eval, builder, examples, "### crew: test suite", my role, crew compositions, agent build, test suite]
 density_score: 0.90
 related:
-  - bld_collaboration_smoke_eval
   - unit-eval-builder
-  - bld_collaboration_golden_test
-  - p11_qg_unit_eval
   - bld_memory_unit_eval
 ---
 # Collaboration: unit-eval-builder
@@ -67,5 +64,4 @@ I write isolated unit tests with input, expected_output, and assertions mapped t
 | bld_collaboration_smoke_eval | sibling | 0.51 |
 | [[unit-eval-builder]] | related | 0.45 |
 | [[bld_orchestration_golden_test]] | sibling | 0.42 |
-| [[p11_qg_unit_eval]] | related | 0.41 |
 | [[bld_memory_unit_eval]] | downstream | 0.41 |

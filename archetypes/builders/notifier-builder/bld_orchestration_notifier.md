@@ -17,11 +17,8 @@ density_score: 1.0
 domain: "collaboration artifact construction"
 title: "Collaboration Notifier"
 related:
-  - bld_collaboration_webhook
   - notifier-builder
   - bld_architecture_notifier
-  - n00_notifier_manifest
-  - p01_kc_notifier
 ---
 # Collaboration: notifier-builder
 
@@ -109,8 +106,5 @@ Use case: Re-engagement campaign with multi-channel fallback
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_webhook]] | sibling | 0.38 |
 | [[notifier-builder]] | related | 0.38 |
 | [[bld_architecture_notifier]] | related | 0.37 |
-| [[n00_notifier_manifest]] | related | 0.36 |
-| [[p01_kc_notifier]] | upstream | 0.35 |

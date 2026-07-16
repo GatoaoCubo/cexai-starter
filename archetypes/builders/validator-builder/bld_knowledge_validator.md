@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - validator-builder
-  - p11_qg_validator
   - bld_memory_validator
-  - bld_collaboration_validator
-  - p03_ins_validator
 ---
 # Domain Knowledge: validator
 ## Executive Summary
@@ -108,7 +105,5 @@ A `validator` (P06) is a deterministic, binary (pass/fail) technical check appli
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[validator-builder]] | downstream | 0.54 |
-| [[p11_qg_validator]] | downstream | 0.52 |
 | [[bld_memory_validator]] | downstream | 0.47 |
 | [[bld_orchestration_validator]] | downstream | 0.45 |
-| [[p03_ins_validator]] | downstream | 0.43 |

@@ -4,11 +4,7 @@ description: "Builds ONE terminal_backend artifact via 8F pipeline. Loads termin
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
-  - n00_terminal_backend_manifest
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p11_fb_terminal_backend
 ---
 
 # terminal-backend-builder Sub-Agent
@@ -86,8 +82,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[n00_terminal_backend_manifest]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.26 |
-| [[p11_fb_terminal_backend]] | related | 0.26 |

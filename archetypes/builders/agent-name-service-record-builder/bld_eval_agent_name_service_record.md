@@ -27,9 +27,6 @@ keywords:
   - "builder"
 density_score: 0.85
 related:
-  - bld_instruction_agent_name_service_record
-  - bld_output_template_agent_name_service_record
-  - bld_knowledge_card_agent_name_service_record
   - bld_schema_agent_name_service_record
   - bld_memory_agent_name_service_record
 ---

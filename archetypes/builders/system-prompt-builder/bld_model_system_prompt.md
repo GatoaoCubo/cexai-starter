@@ -32,8 +32,6 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_system_prompt
-  - bld_knowledge_card_system_prompt
   - bld_memory_system_prompt
   - action-prompt-builder
   - agent-builder

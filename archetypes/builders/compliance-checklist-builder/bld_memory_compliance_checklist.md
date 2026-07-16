@@ -21,10 +21,6 @@ reviewed]
 density_score: 0.85
 related:
   - compliance-checklist-builder
-  - bld_instruction_compliance_checklist
-  - bld_knowledge_card_compliance_checklist
-  - p11_qg_compliance_checklist
-  - kc_compliance_checklist
 ---
 ## Observation
 Common issues include overly generic controls, misalignment with audit-specific requirements, and inconsistent formatting across checklist items. Missing context for regulatory nuances (e.g., GDPR’s data subject rights vs. HIPAA’s PHI handling) often leads to incomplete coverage.
@@ -46,7 +42,3 @@ Reviewed artifacts showed that checklists with regulatory-specific examples (e.g
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[compliance-checklist-builder]] | downstream | 0.49 |
-| [[bld_instruction_compliance_checklist]] | upstream | 0.45 |
-| [[bld_knowledge_card_compliance_checklist]] | upstream | 0.39 |
-| [[p11_qg_compliance_checklist]] | downstream | 0.37 |
-| [[kc_compliance_checklist]] | upstream | 0.35 |

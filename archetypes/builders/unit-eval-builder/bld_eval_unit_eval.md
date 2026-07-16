@@ -31,10 +31,7 @@ keywords:
 density_score: 0.85
 related:
   - unit-eval-builder
-  - bld_collaboration_unit_eval
   - bld_memory_unit_eval
-  - bld_knowledge_card_unit_eval
-  - p11_qg_validator
 ---
 ## Quality Gate
 

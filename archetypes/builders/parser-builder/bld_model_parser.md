@@ -33,8 +33,6 @@ parent: null
 8f: "F6_produce"
 related:
   - bld_architecture_parser
-  - bld_collaboration_parser
-  - bld_knowledge_card_parser
   - bld_schema_parser
   - bld_memory_parser
 ---

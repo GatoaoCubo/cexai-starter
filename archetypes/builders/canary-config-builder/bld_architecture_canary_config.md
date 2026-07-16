@@ -19,9 +19,6 @@ density_score: null
 related:
   - bld_architecture_slo_definition
   - bld_architecture_deployment_manifest
-  - bld_manifest_canary_config
-  - kc_canary_config
-  - bld_rules_canary_config
 ---
 # Architecture: canary_config
 
@@ -59,6 +56,3 @@ trace_config         (observability data)
 |----------|-------------|-------|
 | [[bld_architecture_slo_definition]] | sibling | 0.46 |
 | [[bld_architecture_deployment_manifest]] | sibling | 0.46 |
-| [[bld_manifest_canary_config]] | downstream | 0.44 |
-| [[kc_canary_config]] | sibling | 0.41 |
-| [[bld_rules_canary_config]] | sibling | 0.36 |

@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - entity-memory-builder
-  - bld_knowledge_card_entity_memory
   - bld_schema_entity_memory
-  - bld_instruction_memory_scope
-  - bld_output_template_entity_memory
 ---
 # Instructions: How to Produce an entity_memory
 ## Phase 1: RESEARCH
@@ -80,4 +77,3 @@ related:
 | [[bld_knowledge_entity_memory]] | upstream | 0.43 |
 | [[bld_schema_entity_memory]] | downstream | 0.42 |
 | [[bld_prompt_memory_scope]] | sibling | 0.41 |
-| [[bld_output_template_entity_memory]] | downstream | 0.40 |

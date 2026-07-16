@@ -24,15 +24,8 @@ tags:
   - council
   - anti_sycophancy
 related:
-  - doc_autonomous_flow
-  - showcase_quickstart_guide_cexai
-  - p11_tools_revision_loop_policy
-  - p02_ap_n04_knowledge
   - bld_tools_terminal_backend
-  - cex_doctor_command
   - bld_tools_personality
-  - p01_rm_cex
-  - p05_cg_cex
 tldr: "Autonomous orchestration is the wiring layer that turns 154 typed-knowledge tools and the 8F pipeline from manual ceremony into mechanical reflexes. Six layers (PreSession, Boot, PreToolUse, PostToolUse, Stop, Skills) fan a single user intent into intent resolution, model routing, quality scoring, indexing, council review, and cost rollup -- without the user typing any tool name. The 8F pipeline becomes a measured metric, not an LLM-discipline rule."
 ---
 
@@ -334,7 +327,6 @@ If the first command returns fewer than 6 distinct tools, the PostToolUse fan-ou
 | n07-orchestrator | sibling | 0.78 |
 | guided-decisions | related | 0.55 |
 | dispatch-depth | related | 0.48 |
-| [[brand_bootstrap]] | related | 0.40 |
 | `_docs/specs/spec_autonomous_tool_wiring.md` | upstream (no-id) | 0.95 |
 | `_docs/TOOLS_INVENTORY.md` | upstream (no-id) | 0.88 |
 | `CLAUDE.md` | upstream (no-id) | 0.75 |
@@ -347,4 +339,3 @@ If the first command returns fewer than 6 distinct tools, the PostToolUse fan-ou
 | cex_doctor_command | downstream | 0.24 |
 | [[bld_tools_personality]] | downstream | 0.23 |
 | p01_rm_cex | related | 0.23 |
-| [[p05_cg_cex]] | downstream | 0.23 |

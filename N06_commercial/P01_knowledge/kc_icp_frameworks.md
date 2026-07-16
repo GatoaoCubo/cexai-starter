@@ -24,10 +24,6 @@ linked_artifacts:
   related: [p01_kc_competitive_positioning, p01_kc_brand_frameworks, p01_kc_commercial_nucleus]
 related:
   - customer-segment-builder
-  - bld_knowledge_card_customer_segment
-  - p01_kc_competitive_positioning
-  - p01_kc_pillar_brief_p03_prompt_en
-  - n00_customer_segment_manifest
 ---
 
 # ICP Frameworks + Buyer Persona — Universal Methods

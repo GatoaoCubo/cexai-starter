@@ -18,12 +18,6 @@ keywords: [compliance_framework construction, collaboration compliance framework
 maps, receives from, produces for, boundary  
 does, related artifacts]
 density_score: 0.85
-related:
-  - bld_collaboration_compliance_checklist
-  - bld_collaboration_legal_vertical
-  - bld_collaboration_safety_policy
-  - bld_collaboration_healthcare_vertical
-  - bld_collaboration_enterprise_sla
 ---
 ## Crew Role  
 Maps regulatory requirements to organizational frameworks, automates compliance checks, and generates audit-ready documentation.  
@@ -44,12 +38,3 @@ Maps regulatory requirements to organizational frameworks, automates compliance 
 
 ## Boundary  
 Does NOT enforce safety policies (handled by safety_policy_builder) or assess threats (handled by threat_model_team).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_compliance_checklist]] | sibling | 0.41 |
-| [[bld_collaboration_legal_vertical]] | sibling | 0.30 |
-| [[bld_collaboration_safety_policy]] | sibling | 0.29 |
-| [[bld_collaboration_healthcare_vertical]] | sibling | 0.29 |
-| [[bld_collaboration_enterprise_sla]] | sibling | 0.27 |

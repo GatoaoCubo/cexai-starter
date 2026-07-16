@@ -29,12 +29,6 @@ tldr: Golden and anti-examples for few shot example construction, demonstrating 
 llm_function: BECOME
 parent: null
 8f: "F3_inject"
-related:
-  - bld_collaboration_few_shot_example
-  - p10_lr_few_shot_example_builder
-  - bld_instruction_few_shot_example
-  - bld_knowledge_card_few_shot_example
-  - p01_kc_few_shot_example
 ---
 ## Identity
 
@@ -121,7 +115,6 @@ Maximum artifact size: 1024 bytes.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_few_shot_example]] | downstream | 0.55 |
-| [[p10_lr_few_shot_example_builder]] | downstream | 0.46 |
 | [[bld_prompt_few_shot_example]] | downstream | 0.43 |
 | [[bld_knowledge_few_shot_example]] | related | 0.41 |
 | [[kc_few_shot_example]] | related | 0.40 |

@@ -21,7 +21,6 @@ density_score: 0.85
 related:
   - bld_orchestration_curriculum_config
   - curriculum-config-builder
-  - kc_curriculum_config
   - bld_output_curriculum_config
   - bld_feedback_curriculum_config
 ---
@@ -89,6 +88,5 @@ Training data ordering and adaptive pacing. NOT training_method (how to train) n
 |----------|-------------|-------|
 | [[bld_orchestration_curriculum_config]] | downstream | 0.64 |
 | [[curriculum-config-builder]] | upstream | 0.57 |
-| [[kc_curriculum_config]] | upstream | 0.47 |
 | [[bld_output_curriculum_config]] | upstream | 0.47 |
 | [[bld_feedback_curriculum_config]] | downstream | 0.46 |

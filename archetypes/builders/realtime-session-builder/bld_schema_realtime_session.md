@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [formal schema for realtime_session, llm bidirectional streaming, single source of truth, realtime_session construction, schema realtime session, interruption policy, tool mid-stream, ephemeral auth, realtime_session, builder]
 density_score: 0.90
 related:
-  - bld_instruction_realtime_session
   - realtime-session-builder
-  - bld_output_template_realtime_session
-  - bld_knowledge_card_realtime_session
-  - n00_realtime_session_manifest
 ---
 ## ID Pattern
 
@@ -87,8 +83,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_realtime_session]] | upstream | 0.50 |
 | [[realtime-session-builder]] | upstream | 0.48 |
-| [[bld_output_template_realtime_session]] | upstream | 0.47 |
-| [[bld_knowledge_card_realtime_session]] | upstream | 0.46 |
-| [[n00_realtime_session_manifest]] | downstream | 0.38 |

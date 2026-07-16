@@ -18,8 +18,6 @@ related:
   - bld_schema_motion_scene
   - bld_prompt_motion_scene
   - bld_eval_motion_scene
-  - p06_vs_motion_scene
-  - p01_kc_motion_scene
 ---
 
 # Config: motion_scene build knobs
@@ -50,5 +48,3 @@ override per brand surface set. `composes_with` defaults to
 | [[bld_schema_motion_scene]] | upstream | 0.5 |
 | [[bld_prompt_motion_scene]] | sibling | 0.42 |
 | [[bld_eval_motion_scene]] | downstream | 0.42 |
-| [[p06_vs_motion_scene]] | upstream | 0.4 |
-| [[p01_kc_motion_scene]] | related | 0.38 |

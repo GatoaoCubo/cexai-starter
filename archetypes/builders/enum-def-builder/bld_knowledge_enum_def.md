@@ -19,10 +19,7 @@ keywords: [enumeration specification, enum def construction, knowledge card enum
 density_score: 0.90
 related:
   - enum-def-builder
-  - p10_lr_enum_def_builder
   - bld_config_enum_def
-  - bld_instruction_enum_def
-  - p11_qg_enum_def
 ---
 # Domain Knowledge: enum_def
 ## Executive Summary
@@ -79,7 +76,5 @@ Enumerations are finite named value sets that constrain a field to a known list 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[enum-def-builder]] | downstream | 0.49 |
-| [[p10_lr_enum_def_builder]] | downstream | 0.49 |
 | [[bld_config_enum_def]] | downstream | 0.47 |
 | [[bld_prompt_enum_def]] | downstream | 0.45 |
-| [[p11_qg_enum_def]] | downstream | 0.45 |

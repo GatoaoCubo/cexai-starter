@@ -30,10 +30,7 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_constitutional_rule
-  - bld_output_template_constitutional_rule
-  - bld_manifest_constitutional_rule
   - kc_constitutional_rule
-  - bld_quality_gate_constitutional_rule
 ---
 # Instructions: How to Produce a constitutional_rule
 ## Phase 1: RESEARCH
@@ -86,7 +83,4 @@ python _tools/cex_prompt_optimizer.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_constitutional_rule]] | related | 0.44 |
-| [[bld_output_template_constitutional_rule]] | related | 0.42 |
-| [[bld_manifest_constitutional_rule]] | related | 0.39 |
 | [[kc_constitutional_rule]] | upstream | 0.37 |
-| [[bld_quality_gate_constitutional_rule]] | related | 0.34 |

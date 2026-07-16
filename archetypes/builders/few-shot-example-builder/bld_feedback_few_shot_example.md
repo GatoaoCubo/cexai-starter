@@ -15,12 +15,6 @@ created: "2026-04-17"
 updated: "2026-04-22"
 author: builder
 tldr: "Anti-patterns and correction protocol for few_shot_example builders. 6 NEVER rules + 4 failure modes + 3-step correction."
-related:
-  - p11_fb_quality_gate
-  - p11_fb_pattern
-  - p11_fb_kind
-  - p11_fb__builder
-  - p11_fb_context_file
 ---
 
 # Feedback: Few Shot Example
@@ -91,7 +85,5 @@ density: 0.85+
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p11_fb_quality_gate | sibling | 0.82 |
-| [[p11_fb_pattern]] | sibling | 0.79 |
 | p11_fb_kind | sibling | 0.79 |
 | p11_fb__builder | sibling | 0.79 |
-| [[p11_fb_context_file]] | sibling | 0.79 |

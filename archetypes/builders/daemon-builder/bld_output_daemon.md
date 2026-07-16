@@ -22,8 +22,6 @@ related:
   - daemon-builder
   - bld_schema_daemon
   - bld_architecture_daemon
-  - p11_qg_daemon
-  - n00_daemon_manifest
 ---
 # Output Template: daemon
 ```yaml
@@ -102,5 +100,3 @@ Logging: `{{log_format_and_rotation}}`
 | [[daemon-builder]] | upstream | 0.42 |
 | [[bld_schema_daemon]] | downstream | 0.41 |
 | [[bld_architecture_daemon]] | downstream | 0.39 |
-| [[p11_qg_daemon]] | downstream | 0.38 |
-| [[n00_daemon_manifest]] | upstream | 0.36 |

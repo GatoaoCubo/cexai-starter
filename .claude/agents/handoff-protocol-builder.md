@@ -5,9 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - handoff-protocol-builder
-  - bld_collaboration_handoff_protocol
-  - p11_fb_handoff_protocol
-  - p01_kc_pillar_brief_p02_model_en
   - kind-builder
 ---
 
@@ -88,6 +85,5 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[handoff-protocol-builder]] | related | 0.46 |
 | [[bld_orchestration_handoff_protocol]] | related | 0.41 |
-| [[p11_fb_handoff_protocol]] | related | 0.33 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.32 |
 | kind-builder | related | 0.31 |

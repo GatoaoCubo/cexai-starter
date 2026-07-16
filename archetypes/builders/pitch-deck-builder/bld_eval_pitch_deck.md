@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [pitch_deck construction, quality gate pitch deck, pitch_deck, builder, quality_gate, quality gate, fail condition, scoring guide, problem solution, missing problem]
 density_score: 0.85
 related:
-  - bld_instruction_pitch_deck
-  - bld_knowledge_card_pitch_deck
   - pitch-deck-builder
-  - p10_mem_pitch_deck_builder
-  - p03_qg_prompt_technique
 ---
 ## Quality Gate
 

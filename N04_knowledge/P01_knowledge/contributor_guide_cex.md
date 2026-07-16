@@ -16,9 +16,6 @@ keywords: [llm pipeline, knowledge cards, sdk providers, domain-specialized nucl
 density_score: 1.0
 related:
   - bld_architecture_kind
-  - p06_td_cex_artifact_type_n03
-  - p05_cg_cexai_showcase
-  - bld_instruction_kind
   - kind-builder
 ---
 

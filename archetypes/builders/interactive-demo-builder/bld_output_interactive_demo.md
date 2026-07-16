@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [interactive_demo construction, output template interactive demo, interactive_demo, builder, output_template, demo overview, talk track, demo flow, feature deep dives, screen_ action_]
 density_score: 0.85
 related:
-  - kc_interactive_demo
-  - p05_qg_interactive_demo
   - interactive-demo-builder
-  - p10_mem_interactive_demo_builder
-  - bld_instruction_interactive_demo
 ---
 <!-- Interactive demo script template. Guided-tour + talk track structure. Replace all `{{vars}}`. -->
 
@@ -82,8 +78,4 @@ use_case: {{primary_use_case}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_interactive_demo]] | upstream | 0.50 |
-| [[p05_qg_interactive_demo]] | downstream | 0.43 |
 | [[interactive-demo-builder]] | related | 0.37 |
-| [[p10_mem_interactive_demo_builder]] | downstream | 0.37 |
-| [[bld_instruction_interactive_demo]] | upstream | 0.37 |

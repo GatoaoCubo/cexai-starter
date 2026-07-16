@@ -19,10 +19,6 @@ synthesizes, receives from, produces for]
 density_score: 0.85
 related:
   - analyst-briefing-builder
-  - bld_knowledge_card_analyst_briefing
-  - bld_instruction_analyst_briefing
-  - p10_mem_analyst_briefing_builder
-  - n00_analyst_briefing_manifest
 ---
 ## Crew Role
 Synthesizes product and market intelligence into structured analyst briefing narratives aligned with Gartner, Forrester, and IDC evaluation frameworks. Serves as the primary AR content production component in analyst-facing workflows.
@@ -50,7 +46,3 @@ Does NOT produce sales pitch decks (handled by `landing_page-builder`), press re
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[analyst-briefing-builder]] | upstream | 0.38 |
-| [[bld_knowledge_card_analyst_briefing]] | upstream | 0.30 |
-| [[bld_instruction_analyst_briefing]] | upstream | 0.30 |
-| [[p10_mem_analyst_briefing_builder]] | upstream | 0.30 |
-| [[n00_analyst_briefing_manifest]] | upstream | 0.28 |

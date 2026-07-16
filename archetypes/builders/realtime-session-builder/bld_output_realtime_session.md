@@ -17,11 +17,8 @@ updated: "2026-04-13"
 keywords: [concrete template for realtime_session, openai realtime, gemini live, anthropic streaming, realtime_session construction, output template realtime session, ephemeral token, realtime_session, builder, output_template]
 density_score: 0.90
 related:
-  - bld_instruction_realtime_session
   - bld_schema_realtime_session
   - realtime-session-builder
-  - bld_knowledge_card_realtime_session
-  - p10_mem_realtime_session_builder
 ---
 ## Artifact Frontmatter (emit verbatim)
 
@@ -112,8 +109,5 @@ if (inflightResponseId) {
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_realtime_session]] | upstream | 0.60 |
 | [[bld_schema_realtime_session]] | downstream | 0.55 |
 | [[realtime-session-builder]] | upstream | 0.52 |
-| [[bld_knowledge_card_realtime_session]] | upstream | 0.51 |
-| [[p10_mem_realtime_session_builder]] | downstream | 0.47 |

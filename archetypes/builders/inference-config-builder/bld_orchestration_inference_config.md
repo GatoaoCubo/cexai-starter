@@ -19,7 +19,6 @@ density_score: 0.85
 related:
   - bld_orchestration_tokenizer_config
   - bld_architecture_inference_config
-  - bld_collaboration_retriever_config
   - inference-config-builder
   - bld_orchestration_distillation_config
 ---
@@ -82,6 +81,5 @@ I do not train models. I do not configure tokenizers.
 |----------|-------------|-------|
 | [[bld_orchestration_tokenizer_config]] | sibling | 0.45 |
 | [[bld_architecture_inference_config]] | upstream | 0.42 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.38 |
 | [[inference-config-builder]] | upstream | 0.36 |
 | [[bld_orchestration_distillation_config]] | sibling | 0.32 |

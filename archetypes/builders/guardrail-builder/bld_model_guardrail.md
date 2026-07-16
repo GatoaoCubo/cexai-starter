@@ -32,10 +32,6 @@ parent: null
 8f: "F7_govern"
 related:
   - bld_architecture_guardrail
-  - bld_instruction_guardrail
-  - bld_collaboration_guardrail
-  - p10_lr_guardrail_builder
-  - bld_knowledge_card_guardrail
 ---
 ## Identity
 
@@ -120,5 +116,4 @@ Every response that produces an artifact must include:
 | [[bld_architecture_guardrail]] | upstream | 0.50 |
 | [[bld_prompt_guardrail]] | upstream | 0.49 |
 | [[bld_orchestration_guardrail]] | downstream | 0.48 |
-| [[p10_lr_guardrail_builder]] | upstream | 0.47 |
 | [[bld_knowledge_guardrail]] | upstream | 0.45 |

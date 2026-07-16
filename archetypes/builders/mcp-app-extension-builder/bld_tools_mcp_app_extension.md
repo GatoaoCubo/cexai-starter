@@ -18,10 +18,6 @@ keywords: [mcp_app_extension construction, tools mcp app extension, mcp_app_exte
 density_score: 0.85
 related:
   - mcp-app-extension-builder
-  - bld_collaboration_mcp_app_extension
-  - bld_knowledge_card_mcp_app_extension
-  - p10_lr_mcp_app_extension_builder
-  - bld_instruction_mcp_app_extension
 ---
 ## Production Tools
 | Tool              | Purpose                                       | When                         |
@@ -52,7 +48,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mcp-app-extension-builder]] | downstream | 0.48 |
-| [[bld_collaboration_mcp_app_extension]] | downstream | 0.46 |
-| [[bld_knowledge_card_mcp_app_extension]] | upstream | 0.42 |
-| [[p10_lr_mcp_app_extension_builder]] | downstream | 0.40 |
-| [[bld_instruction_mcp_app_extension]] | upstream | 0.37 |

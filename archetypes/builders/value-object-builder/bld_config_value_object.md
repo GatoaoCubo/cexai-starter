@@ -15,11 +15,7 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_context_sources_deployment_manifest
   - bld_tools_value_object
-  - bld_context_sources_slo_definition
-  - bld_context_sources_canary_config
-  - bld_context_sources_data_contract
 ---
 # Context Sources: value_object
 ## Mandatory Loads (F3 INJECT)
@@ -69,8 +65,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_context_sources_deployment_manifest]] | sibling | 0.40 |
 | [[bld_tools_value_object]] | sibling | 0.39 |
-| [[bld_context_sources_slo_definition]] | sibling | 0.38 |
-| [[bld_context_sources_canary_config]] | sibling | 0.38 |
-| [[bld_context_sources_data_contract]] | downstream | 0.37 |

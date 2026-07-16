@@ -16,11 +16,6 @@ created: "2026-03-27"
 updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.85
-related:
-  - p11_qg_pattern
-  - p11_qg_quality_gate
-  - p11_qg_law
-  - p11_qg_mental_model
 ---
 ## Quality Gate
 

@@ -18,9 +18,6 @@ updated: "2026-04-07"
 keywords: [citation construction, collaboration citation, citation, builder, examples, "### crew: rag quality", my role, crew compositions, grounded knowledge, handoff protocol]
 density_score: 0.90
 related:
-  - bld_collaboration_knowledge_card
-  - bld_collaboration_rag_source
-  - bld_collaboration_context_doc
   - citation-builder
   - bld_collaboration_builder
 ---

@@ -17,11 +17,8 @@ updated: "2026-04-17"
 keywords: [and architectural position, openapi spec construction, architecture openapi spec, component map, openapi_spec, builder, architecture, component inventory, structure diagram, boundary table]
 density_score: 0.90
 related:
-  - bld_knowledge_card_openapi_spec
   - openapi-spec-builder
   - kc_openapi_spec
-  - bld_instruction_openapi_spec
-  - bld_collaboration_openapi_spec
 ---
 ## Component Inventory
 

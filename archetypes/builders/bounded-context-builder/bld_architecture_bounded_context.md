@@ -27,8 +27,6 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - p01_kc_bounded_context
-  - bld_kc_bounded_context
   - bounded-context-builder
   - bld_memory_bounded_context
   - bld_architecture_data_contract
@@ -86,8 +84,6 @@ BC_B aggregates (internal domain model)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_bounded_context]] | upstream | 0.44 |
-| [[bld_kc_bounded_context]] | upstream | 0.35 |
 | [[bounded-context-builder]] | related | 0.33 |
 | [[bld_memory_bounded_context]] | downstream | 0.29 |
 | [[bld_architecture_data_contract]] | sibling | 0.27 |

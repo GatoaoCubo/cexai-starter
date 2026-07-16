@@ -23,11 +23,8 @@ machine, reproducibility
 for, naming rules]
 density_score: 0.90
 related:
-  - bld_collaboration_naming_rule
   - naming-rule-builder
-  - bld_knowledge_card_naming_rule
   - bld_tools_naming_rule
-  - p03_ins_naming_rule
 ---
 # Memory: naming-rule-builder
 ## Summary
@@ -85,8 +82,5 @@ python _tools/cex_score.py --apply bld-memory-naming-rule.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_naming_rule]] | upstream | 0.50 |
 | [[naming-rule-builder]] | upstream | 0.46 |
-| [[bld_knowledge_card_naming_rule]] | upstream | 0.43 |
 | [[bld_tools_naming_rule]] | upstream | 0.38 |
-| [[p03_ins_naming_rule]] | upstream | 0.37 |

@@ -31,11 +31,7 @@ keywords:
   - "chain text"
 density_score: 0.90
 related:
-  - p10_lr_chunk_strategy_builder
-  - p01_kc_chunk_strategy
   - chunk-strategy-builder
-  - p01_kc_rag_chunking_strategies
-  - p01_chunk_strategy
 ---
 # Domain Knowledge: chunk_strategy
 ## Executive Summary
@@ -76,7 +72,6 @@ Chunking method configuration — how to split documents into retrievable segmen
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_chunk_strategy_builder]] | downstream | 0.51 |
 | [[kc_chunk_strategy]] | sibling | 0.42 |
 | [[chunk-strategy-builder]] | related | 0.34 |
 | p01_kc_rag_chunking_strategies | sibling | 0.34 |

@@ -21,10 +21,6 @@ reviewed, related artifacts, metric definitions]
 density_score: 0.85
 related:
   - usage-report-builder
-  - kc_usage_report
-  - n00_usage_report_manifest
-  - p11_qg_usage_report
-  - bld_instruction_usage_report
 ---
 ## Observation
 Inconsistent metric definitions across reports often lead to misalignment with billing/CFO requirements. Overlooking granular user segmentation causes incomplete insights for resource planning.
@@ -46,7 +42,3 @@ Reviewed 12 usage_report specs; 8 included unified metric definitions and 5 had 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[usage-report-builder]] | upstream | 0.29 |
-| [[kc_usage_report]] | upstream | 0.26 |
-| [[n00_usage_report_manifest]] | upstream | 0.22 |
-| [[p11_qg_usage_report]] | downstream | 0.21 |
-| [[bld_instruction_usage_report]] | upstream | 0.21 |

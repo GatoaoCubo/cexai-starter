@@ -13,11 +13,6 @@ primary_8f: INJECT
 keywords: [--file, --read, --yes-always, --subtree-only, --auto-commits, commit message]
 density_score: 1.0
 updated: "2026-04-13"
-related:
-  - p01_kc_atom_28_code_agents
-  - p01_kc_git_hooks_ci
-  - bld_collaboration_model_card
-  - p08_ac_explore
 ---
 
 # Aider CLI Integration Patterns

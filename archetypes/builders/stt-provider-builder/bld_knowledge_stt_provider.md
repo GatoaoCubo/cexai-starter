@@ -18,11 +18,7 @@ keywords: [stt_provider construction, knowledge card stt provider, stt_provider,
 speech, google speech, azure speech service]
 density_score: 0.85
 related:
-  - kc_stt_provider
   - stt-provider-builder
-  - bld_knowledge_card_audio_tool
-  - p01_kc_audio_tool
-  - p01_kc_audit_stt_provider_builder
 ---
 ## Domain Overview  
 Speech-to-text (STT) provider integration connects applications to third-party ASR services, enabling transcription of audio inputs at varying latency and accuracy tiers. The market splits into cloud hyperscalers and specialized vendors:
@@ -86,8 +82,4 @@ Use cases span voice assistants, call center analytics, meeting transcription, a
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_stt_provider]] | sibling | 0.51 |
 | [[stt-provider-builder]] | downstream | 0.48 |
-| [[bld_knowledge_card_audio_tool]] | sibling | 0.41 |
-| [[p01_kc_audio_tool]] | sibling | 0.39 |
-| [[p01_kc_audit_stt_provider_builder]] | sibling | 0.39 |

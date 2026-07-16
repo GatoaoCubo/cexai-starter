@@ -31,10 +31,6 @@ keywords:
 density_score: null
 related:
   - bld_schema_deployment_manifest
-  - bld_instruction_deployment_manifest
-  - kc_deployment_manifest
-  - bld_quality_gate_deployment_manifest
-  - bld_manifest_deployment_manifest
 ---
 # Output Template: deployment_manifest
 
@@ -93,7 +89,3 @@ Secrets:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_deployment_manifest]] | downstream | 0.48 |
-| [[bld_instruction_deployment_manifest]] | downstream | 0.47 |
-| [[kc_deployment_manifest]] | sibling | 0.44 |
-| [[bld_quality_gate_deployment_manifest]] | downstream | 0.38 |
-| [[bld_manifest_deployment_manifest]] | downstream | 0.32 |

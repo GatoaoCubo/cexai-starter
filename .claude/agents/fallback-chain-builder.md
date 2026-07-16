@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - fallback-chain-builder
-  - bld_collaboration_fallback_chain
   - chain-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - bld_collaboration_chain
 ---
 
 # fallback-chain-builder Sub-Agent

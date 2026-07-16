@@ -18,11 +18,7 @@ keywords: [few-shot, in-context-learning, examples, demonstration]
 feeds_kinds: [few_shot_example]
 density_score: null
 related:
-  - bld_collaboration_few_shot_example
   - few-shot-example-builder
-  - n00_few_shot_example_manifest
-  - p10_lr_few_shot_example_builder
-  - bld_knowledge_card_few_shot_example
 ---
 
 # Few-Shot Example
@@ -99,5 +95,4 @@ A few_shot_example is a curated input/output pair injected into prompts to demon
 | [[bld_orchestration_few_shot_example]] | downstream | 0.41 |
 | [[few-shot-example-builder]] | related | 0.39 |
 | n00_few_shot_example_manifest | sibling | 0.35 |
-| [[p10_lr_few_shot_example_builder]] | downstream | 0.32 |
 | [[bld_knowledge_few_shot_example]] | sibling | 0.31 |

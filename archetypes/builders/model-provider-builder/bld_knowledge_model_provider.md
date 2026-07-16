@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - model-provider-builder
   - bld_memory_model_provider
-  - p03_ins_model_provider
-  - bld_collaboration_model_provider
-  - p11_qg_model_provider
 ---
 # Domain Knowledge: model_provider
 ## Executive Summary
@@ -85,6 +82,4 @@ Model provider configs are connection and routing artifacts for LLM APIs — the
 |----------|-------------|-------|
 | [[model-provider-builder]] | downstream | 0.64 |
 | [[bld_memory_model_provider]] | downstream | 0.63 |
-| [[p03_ins_model_provider]] | downstream | 0.58 |
 | [[bld_orchestration_model_provider]] | downstream | 0.58 |
-| [[p11_qg_model_provider]] | downstream | 0.54 |

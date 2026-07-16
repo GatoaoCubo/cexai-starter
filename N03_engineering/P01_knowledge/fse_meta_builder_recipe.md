@@ -15,10 +15,6 @@ tldr: Complete worked example of building an agent from intent to published arti
 keywords: [resolved_kind, target_pillar, schema, axioms, quality_floor, archetypes, similarity, sast, dependency audit]
 density_score: 0.92
 related:
-  - p01_kc_agent
-  - bld_collaboration_agent
-  - p11_qg_agent
-  - n00_agent_manifest
   - agent-builder
 ---
 
@@ -190,6 +186,5 @@ python -c "from _tools.signal_writer import write_signal; write_signal('n03', 'c
 |----------|-------------|-------|
 | [[kc_agent]] | downstream | 0.31 |
 | [[bld_orchestration_agent]] | downstream | 0.31 |
-| [[p11_qg_agent]] | downstream | 0.29 |
 | n00_agent_manifest | downstream | 0.28 |
 | [[agent-builder]] | downstream | 0.26 |

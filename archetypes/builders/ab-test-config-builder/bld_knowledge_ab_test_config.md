@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [ab_test_config construction, ab_test_config, builder, knowledge_card, domain overview, key concepts, user experience testing standard, control group, reducing bias, group exposed]
 density_score: 0.85
 related:
-  - p06_vs_ab_testing_framework_n02
-  - p01_kc_system_testing_patterns
   - ab-test-config-builder
-  - kc_ab_test_config
-  - p01_kc_ab_testing_content_optimization
 ---
 ## Domain Overview  
 A/B testing is a cornerstone of conversion optimization, enabling data-driven decisions by comparing variations of user experiences to measure impact on key metrics (e.g., click-through rates, revenue). Proper configuration ensures experiments are statistically valid, reducing bias and ensuring actionable insights. This domain intersects with fields like statistics, UX design, and digital marketing, requiring alignment between technical implementation and business goals.  
@@ -69,8 +65,4 @@ Configurations must define hypotheses, traffic allocation, success metrics, and 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p06_vs_ab_testing_framework_n02]] | downstream | 0.37 |
-| [[p01_kc_system_testing_patterns]] | sibling | 0.35 |
 | [[ab-test-config-builder]] | downstream | 0.33 |
-| [[kc_ab_test_config]] | sibling | 0.31 |
-| [[p01_kc_ab_testing_content_optimization]] | sibling | 0.31 |

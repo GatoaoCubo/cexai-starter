@@ -25,9 +25,6 @@ density_score: 0.90
 related:
   - bld_architecture_lens
   - lens-builder
-  - bld_collaboration_lens
-  - p01_kc_cex_lens_concept
-  - bld_knowledge_card_lens
 ---
 # Memory: lens-builder
 ## Summary

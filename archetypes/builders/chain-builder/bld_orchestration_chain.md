@@ -19,10 +19,6 @@ keywords: [chain construction, collaboration chain, chain, builder, examples, "#
 density_score: 0.90
 related:
   - chain-builder
-  - bld_collaboration_action_prompt
-  - p01_kc_chain
-  - bld_collaboration_instruction
-  - n00_chain_manifest
 ---
 # Collaboration: chain-builder
 ## My Role in Crews
@@ -65,7 +61,3 @@ I compose prompt pipelines so multi-step LLM tasks execute in correct sequence w
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[chain-builder]] | upstream | 0.48 |
-| [[bld_collaboration_action_prompt]] | sibling | 0.46 |
-| [[p01_kc_chain]] | upstream | 0.42 |
-| [[bld_collaboration_instruction]] | sibling | 0.41 |
-| [[n00_chain_manifest]] | upstream | 0.39 |

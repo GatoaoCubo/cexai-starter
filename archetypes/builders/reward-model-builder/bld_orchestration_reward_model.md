@@ -17,12 +17,6 @@ updated: "2026-04-13"
 keywords: [reward_model construction, collaboration reward model, reward_model, builder, collaboration, crew role  
 designs, receives from, business team, produces for, model team]
 density_score: 0.85
-related:
-  - bld_collaboration_reranker_config
-  - bld_collaboration_white_label_config
-  - bld_collaboration_ab_test_config
-  - bld_collaboration_product_tour
-  - bld_collaboration_cohort_analysis
 ---
 ## Crew Role  
 Designs and configures reward models to align with business objectives, ensuring compatibility with training frameworks and evaluation systems.  
@@ -43,12 +37,3 @@ Designs and configures reward models to align with business objectives, ensuring
 
 ## Boundary  
 Does NOT implement training algorithms (handled by RL engineers) or define scoring rubrics (handled by evaluation team).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_reranker_config]] | sibling | 0.42 |
-| [[bld_collaboration_white_label_config]] | sibling | 0.38 |
-| [[bld_collaboration_ab_test_config]] | sibling | 0.36 |
-| [[bld_collaboration_product_tour]] | sibling | 0.36 |
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.36 |

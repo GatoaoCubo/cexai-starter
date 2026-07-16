@@ -17,10 +17,8 @@ updated: "2026-04-14"
 keywords: [cncf agentdns, agent_name_service_record construction, key concepts, industry integrations, agent_name_service_record, builder, knowledge_card]
 density_score: 0.85
 related:
-  - bld_manifest_agent_name_service_record
   - bld_tools_agent_name_service_record
   - bld_schema_agent_name_service_record
-  - bld_instruction_agent_name_service_record
   - bld_memory_agent_name_service_record
 ---
 # Agent Name Service Record Builder -- Knowledge Card
@@ -134,8 +132,6 @@ GoDaddy integrated ANS into its registrar infra, leveraging DNS expertise to run
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_agent_name_service_record]] | downstream | 0.64 |
 | [[bld_tools_agent_name_service_record]] | downstream | 0.59 |
 | [[bld_schema_agent_name_service_record]] | downstream | 0.55 |
-| [[bld_instruction_agent_name_service_record]] | downstream | 0.55 |
 | [[bld_memory_agent_name_service_record]] | downstream | 0.54 |

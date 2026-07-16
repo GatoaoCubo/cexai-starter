@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [prompt template construction, collaboration prompt template, prompt_template, builder, examples, "{{variables}}", "### crew: rag-augmented prompt pipeline", "### crew: few-shot template pack", my role, crew compositions]
 density_score: 0.90
 related:
-  - bld_collaboration_response_format
-  - bld_collaboration_action_prompt
   - prompt-template-builder
-  - bld_collaboration_prompt_version
-  - bld_collaboration_few_shot_example
 ---
 # Collaboration: prompt-template-builder
 ## My Role in Crews

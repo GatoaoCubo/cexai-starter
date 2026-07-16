@@ -4,9 +4,7 @@ description: "Builds ONE daemon artifact via 8F pipeline. Loads daemon-builder s
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_daemon
   - daemon-builder
-  - n00_daemon_manifest
   - bld_architecture_daemon
   - kind-builder
 ---
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_daemon]] | related | 0.35 |
 | [[daemon-builder]] | related | 0.34 |
-| [[n00_daemon_manifest]] | related | 0.33 |
 | [[bld_architecture_daemon]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |

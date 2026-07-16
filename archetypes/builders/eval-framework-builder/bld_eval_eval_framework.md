@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [not runtime eval throughput, eval_framework construction, quality gate eval framework, not here, eval_framework, builder, quality_gate, quality gate, fail condition, scoring guide]
 density_score: 0.90
 related:
-  - p07_qg_benchmark_suite
-  - p12_qg_workflow_node
-  - p07_qg_trajectory_eval
-  - p09_qg_playground_config
   - bld_schema_eval_framework
 ---
 ## Quality Gate

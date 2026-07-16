@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [nps_survey construction, output template nps survey, nps_survey, builder, output_template, survey configuration, cadence rules, score routing, related artifacts, downstream]
 density_score: 0.85
 related:
-  - p11_qg_nps_survey
   - nps-survey-builder
-  - kc_nps_survey
-  - n00_nps_survey_manifest
-  - bld_instruction_nps_survey
 ---
 ```yaml
 ---
@@ -87,8 +83,4 @@ detractor:  # 0-6
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_nps_survey]] | downstream | 0.39 |
 | [[nps-survey-builder]] | downstream | 0.35 |
-| [[kc_nps_survey]] | upstream | 0.34 |
-| [[n00_nps_survey_manifest]] | downstream | 0.33 |
-| [[bld_instruction_nps_survey]] | upstream | 0.33 |

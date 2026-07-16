@@ -20,9 +20,6 @@ density_score: 0.85
 related:
   - mcp-app-extension-builder
   - bld_tools_mcp_app_extension
-  - bld_knowledge_card_mcp_app_extension
-  - p10_lr_mcp_app_extension_builder
-  - p04_qg_mcp_app_extension
 ---
 ## Crew Role
 Authors MCP Apps Extension manifests per SEP-1865, aligning capability + permission scopes with the backing mcp_server and with AAIF (Linux Foundation) review criteria used by Anthropic and OpenAI MCP clients.
@@ -49,6 +46,3 @@ Does NOT produce plain mcp_server artifacts (handled by `mcp_server-builder`), b
 |----------|-------------|-------|
 | [[mcp-app-extension-builder]] | upstream | 0.48 |
 | [[bld_tools_mcp_app_extension]] | upstream | 0.44 |
-| [[bld_knowledge_card_mcp_app_extension]] | upstream | 0.39 |
-| [[p10_lr_mcp_app_extension_builder]] | upstream | 0.38 |
-| [[p04_qg_mcp_app_extension]] | upstream | 0.37 |

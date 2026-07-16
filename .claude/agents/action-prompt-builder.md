@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - system-prompt-builder
   - action-prompt-builder
-  - p01_kc_pillar_brief_p03_prompt_en
-  - p03_sp_builder_nucleus
   - kind-builder
 ---
 

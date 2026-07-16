@@ -19,11 +19,7 @@ designs, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_sandbox_spec
-  - bld_collaboration_transport_config
-  - bld_collaboration_sso_config
   - sandbox-config-builder
-  - bld_collaboration_reranker_config
 ---
 ## Crew Role  
 Designs and validates sandbox isolation policies, ensuring secure resource boundaries for execution environments.  
@@ -48,8 +44,4 @@ Does NOT handle environment variables (env_config-builder) or execution logic (c
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_sandbox_spec]] | sibling | 0.33 |
-| [[bld_collaboration_transport_config]] | sibling | 0.27 |
-| [[bld_collaboration_sso_config]] | sibling | 0.27 |
 | [[sandbox-config-builder]] | upstream | 0.27 |
-| [[bld_collaboration_reranker_config]] | sibling | 0.27 |

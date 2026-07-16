@@ -16,11 +16,7 @@ tldr: "Ordered context sources for F3 INJECT in lineage_record builds."
 keywords: [context sources, lineage_record builder, inject in lineage_record builds, context_sources, lineage_record, injection order, knowledge card, quality gate, configuration checklist, archetypes builders]
 density_score: null
 related:
-  - bld_context_sources_deployment_manifest
-  - bld_context_sources_canary_config
-  - bld_context_sources_slo_definition
   - bld_tools_lineage_record
-  - bld_context_sources_saga
 ---
 # Context Sources: lineage_record Builder
 
@@ -59,8 +55,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_context_sources_deployment_manifest]] | sibling | 0.50 |
-| [[bld_context_sources_canary_config]] | sibling | 0.47 |
-| [[bld_context_sources_slo_definition]] | sibling | 0.47 |
 | [[bld_tools_lineage_record]] | sibling | 0.42 |
-| [[bld_context_sources_saga]] | sibling | 0.40 |

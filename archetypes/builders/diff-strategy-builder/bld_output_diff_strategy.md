@@ -17,10 +17,7 @@ updated: "2026-04-13"
 keywords: [diff_strategy construction, output template diff strategy, diff_strategy, builder, output_template, patch application, edge cases, use cases, related artifacts, myers patience]
 density_score: 0.85
 related:
-  - bld_instruction_diff_strategy
-  - p04_qg_diff_strategy
   - diff-strategy-builder
-  - bld_knowledge_card_diff_strategy
   - bld_tools_diff_strategy
 ---
 ```yaml
@@ -75,8 +72,5 @@ Whether --3way fallback is enabled. Whitespace handling.}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_diff_strategy]] | upstream | 0.55 |
-| [[p04_qg_diff_strategy]] | downstream | 0.53 |
 | [[diff-strategy-builder]] | upstream | 0.48 |
-| [[bld_knowledge_card_diff_strategy]] | upstream | 0.45 |
 | [[bld_tools_diff_strategy]] | upstream | 0.43 |

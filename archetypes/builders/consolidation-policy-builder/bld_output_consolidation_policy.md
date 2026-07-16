@@ -17,9 +17,6 @@ updated: "2026-04-14"
 keywords: [llm agent memory consolidation, output template, promotion rules, eviction strategy, importance scoring, tier matrix, consolidation_policy]
 density_score: 0.90
 related:
-  - bld_output_template_memory_architecture
-  - bld_knowledge_card_consolidation_policy
-  - bld_instruction_consolidation_policy
   - bld_schema_consolidation_policy
   - consolidation-policy-builder
 ---
@@ -139,8 +136,5 @@ compliance:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_memory_architecture]] | sibling | 0.54 |
-| [[bld_knowledge_card_consolidation_policy]] | upstream | 0.52 |
-| [[bld_instruction_consolidation_policy]] | upstream | 0.49 |
 | [[bld_schema_consolidation_policy]] | downstream | 0.48 |
 | [[consolidation-policy-builder]] | downstream | 0.44 |

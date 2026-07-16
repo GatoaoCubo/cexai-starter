@@ -19,10 +19,6 @@ keywords: [api consumer definition, unidirectional clients for rest, or grpc ext
 density_score: 0.91
 related:
   - api-client-builder
-  - bld_instruction_client
-  - bld_schema_client
-  - bld_collaboration_client
-  - p11_qg_function_def
 ---
 ## Quality Gate
 

@@ -16,11 +16,7 @@ keywords: [supabase data layer model, data contract, field types, and validation
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
-  - bld_knowledge_card_supabase_data_layer
-  - bld_quality_gate_supabase_data_layer
-  - bld_manifest_supabase_data_layer
   - bld_schema_memory_architecture
-  - p12_wf_supabase_setup
 ---
 # Config Schema
 
@@ -77,8 +73,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_supabase_data_layer]] | upstream | 0.32 |
-| [[bld_quality_gate_supabase_data_layer]] | related | 0.31 |
-| [[bld_manifest_supabase_data_layer]] | downstream | 0.27 |
 | [[bld_schema_memory_architecture]] | sibling | 0.26 |
-| [[p12_wf_supabase_setup]] | downstream | 0.26 |

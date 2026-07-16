@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [edtech_vertical construction, output template edtech vertical, edtech_vertical, builder, output_template, higher ed, regulatory compliance, key requirement, state ed, tech laws]
 density_score: 0.85
 related:
-  - bld_instruction_edtech_vertical
-  - bld_knowledge_card_edtech_vertical
-  - p01_qg_edtech_vertical
   - bld_tools_edtech_vertical
-  - p10_mem_edtech_vertical_builder
 ---
 ```markdown
 ---
@@ -90,8 +86,4 @@ Regulatory scope: FERPA (student records), {{coppa_scope}} COPPA, LTI 1.3 integr
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_edtech_vertical]] | upstream | 0.52 |
-| [[bld_knowledge_card_edtech_vertical]] | upstream | 0.47 |
-| [[p01_qg_edtech_vertical]] | downstream | 0.44 |
 | [[bld_tools_edtech_vertical]] | upstream | 0.40 |
-| [[p10_mem_edtech_vertical_builder]] | downstream | 0.39 |

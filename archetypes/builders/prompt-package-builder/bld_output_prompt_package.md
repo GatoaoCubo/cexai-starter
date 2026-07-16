@@ -15,9 +15,6 @@ density_score: 0.90
 llm_function: PRODUCE
 8f: "F6_produce"
 related:
-  - p03_ins_prompt_package
-  - bld_output_template_prompt_template
-  - schema_prompt_package_builder
   - bld_architecture_prompt_package
   - prompt-package-builder
 ---
@@ -126,8 +123,5 @@ mode: B
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_prompt_package]] | related | 0.29 |
-| [[bld_output_template_prompt_template]] | sibling | 0.25 |
-| [[schema_prompt_package_builder]] | related | 0.24 |
 | [[bld_architecture_prompt_package]] | sibling | 0.23 |
 | [[prompt-package-builder]] | related | 0.21 |

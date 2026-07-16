@@ -17,12 +17,6 @@ updated: "2026-03-28"
 8f: "F7_govern"
 keywords: [valid json schema parameters, llm-facing description, return type, and provider compatibility, quality-gate, function-def, json-schema]
 density_score: 0.90
-related:
-  - p11_qg_search_tool
-  - p11_qg_input_schema
-  - n00_function_def_manifest
-  - p04_fn_search_web
-  - bld_output_template_function_def
 ---
 ## Quality Gate
 

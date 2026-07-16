@@ -19,10 +19,6 @@ keywords: [component map construction, collaboration component map, component_ma
 density_score: 0.90
 related:
   - component-map-builder
-  - bld_collaboration_diagram
-  - bld_collaboration_dispatch_rule
-  - bld_instruction_component_map
-  - bld_collaboration_dag
 ---
 # Collaboration: component-map-builder
 ## My Role in Crews
@@ -66,7 +62,3 @@ None — independent builder (layer 0). Component maps start from system analysi
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[component-map-builder]] | upstream | 0.42 |
-| [[bld_collaboration_diagram]] | sibling | 0.37 |
-| [[bld_collaboration_dispatch_rule]] | sibling | 0.32 |
-| [[bld_instruction_component_map]] | upstream | 0.32 |
-| [[bld_collaboration_dag]] | sibling | 0.31 |

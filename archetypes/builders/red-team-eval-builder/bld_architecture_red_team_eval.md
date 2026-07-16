@@ -18,10 +18,6 @@ keywords: [component map of red_team_eval, and architectural position, red team 
 density_score: 0.90
 related:
   - red-team-eval-builder
-  - p01_kc_red_team_eval
-  - bld_collaboration_red_team_eval
-  - bld_instruction_red_team_eval
-  - p11_qg_red_team_eval
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -71,7 +67,3 @@ guardrail        --follows-->  red_team_eval (deployed after eval passes)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[red-team-eval-builder]] | upstream | 0.57 |
-| [[p01_kc_red_team_eval]] | upstream | 0.44 |
-| [[bld_collaboration_red_team_eval]] | downstream | 0.41 |
-| [[bld_instruction_red_team_eval]] | upstream | 0.41 |
-| [[p11_qg_red_team_eval]] | downstream | 0.37 |

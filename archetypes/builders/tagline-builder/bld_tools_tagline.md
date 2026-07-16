@@ -18,9 +18,7 @@ density_score: 0.90
 llm_function: CALL
 related:
   - bld_memory_tagline
-  - bld_collaboration_tagline
   - bld_architecture_tagline
-  - n00_tagline_manifest
   - tagline-builder
 ---
 # Tools: Tagline Builder

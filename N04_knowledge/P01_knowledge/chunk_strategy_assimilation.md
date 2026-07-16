@@ -16,12 +16,6 @@ tags: [chunk_strategy, n04, assimilation, rag, chunking, offline, P01]
 tldr: "Content-aware chunking for the assimilation engine: heading-based splitting for mixed user corpora (Markdown/docs/code), with sentence-boundary windowing for oversize blocks. Read by cex_distill_orchestrator.py."
 keywords: [heading_based, chunk_size, chunk_overlap, sentence boundary, mixed corpora, section metadata, assimilation]
 density_score: null
-related:
-  - n04_rs_assimilation
-  - p01_retr_assimilation_n04
-  - p01_kc_chunk_strategy
-  - p01_kc_rag_chunking_strategies
-  - bld_collaboration_chunk_strategy
 ---
 
 # Assimilation Chunk Strategy
@@ -60,8 +54,6 @@ distilled `knowledge_card` provenance and the scoped `knowledge_index`.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n04_rs_assimilation]] | upstream | 0.42 |
-| [[p01_retr_assimilation_n04]] | sibling | 0.34 |
 | [[kc_chunk_strategy]] | related | 0.30 |
 | p01_kc_rag_chunking_strategies | related | 0.28 |
 | [[bld_orchestration_chunk_strategy]] | related | 0.26 |

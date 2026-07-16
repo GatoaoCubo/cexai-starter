@@ -22,10 +22,6 @@ axioms:
 linked_artifacts:
   primary: n06_output_brand_book
   related: [p01_kc_brand_archetypes, p01_kc_brand_frameworks, n06_output_discovery_report]
-related:
-  - p07_sr_5d_brand_evaluation
-  - p01_kc_brand_book_patterns
-  - p03_sp_brand_nucleus
 ---
 
 # Brand Naming Patterns

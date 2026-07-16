@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [code_of_conduct construction, code_of_conduct, builder, quality_gate, quality gate, all co, fail condition]
 density_score: 0.87
 related:
-  - bld_instruction_code_of_conduct
-  - bld_knowledge_card_code_of_conduct
   - code-of-conduct-builder
-  - bld_output_template_code_of_conduct
-  - p05_coc_cex
 ---
 ## Quality Gate
 

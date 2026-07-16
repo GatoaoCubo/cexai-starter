@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [path config construction, collaboration path config, path_config, builder, examples, "### crew: plugin deployment setup", "### crew: data pipeline setup", my role, crew compositions, system configuration bootstrap]
 density_score: 0.90
 related:
-  - bld_collaboration_env_config
   - path-config-builder
-  - bld_collaboration_permission
   - bld_memory_path_config
-  - p03_ins_path_config
 ---
 # Collaboration: path-config-builder
 ## My Role in Crews
@@ -74,4 +71,3 @@ I define directories, file locations, path resolution rules, and platform-specif
 | [[path-config-builder]] | related | 0.36 |
 | [[bld_orchestration_permission]] | sibling | 0.36 |
 | [[bld_memory_path_config]] | downstream | 0.33 |
-| [[p03_ins_path_config]] | upstream | 0.32 |

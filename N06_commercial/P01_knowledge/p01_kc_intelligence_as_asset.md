@@ -11,10 +11,6 @@ tags: [valuation, intelligence-as-asset, ai-brain, balance-sheet, intangible-ass
 keywords: [intelligence as asset, ai brain valuation, intangible asset, asc 350, ias 38, dcf, market comps, cost approach, network effects, exchange marketplace]
 density_score: 0.92
 related:
-  - p11_cm_cexai_monetization
-  - p11_cm_exchange_marketplace
-  - subscription_tier_n06
-  - roi_calculator_n06
   - kc_brand_monetization_models
   - p01_kc_ai_saas_monetization
   - kc_competitive_positioning

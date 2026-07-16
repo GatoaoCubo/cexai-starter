@@ -16,12 +16,6 @@ tags: [chunk_strategy, n04, knowledge, rag, chunking, p01, recursive]
 tldr: "Defines the content-aware, hierarchical chunking strategies for N04. Prioritizes semantic boundaries (headers, code blocks, paragraphs) to maximize context cohesion for RAG."
 keywords: [hierarchical_recursive, contextual cohesion, rag performance, separator hierarchy, chunk_size, chunk_overlap, embedding models]
 density_score: 0.89
-related:
-  - bld_knowledge_card_chunk_strategy
-  - n00_chunk_strategy_manifest
-  - p01_kc_chunk_strategy
-  - p01_kc_rag_chunking_strategies
-  - bld_collaboration_chunk_strategy
 slots:
   source_document: "<the document to split>"
   chunk_size: "<target token window>"

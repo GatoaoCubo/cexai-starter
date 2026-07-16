@@ -24,10 +24,6 @@ for, tier thresholds]
 density_score: 0.90
 related:
   - scoring-rubric-builder
-  - bld_knowledge_card_scoring_rubric
-  - bld_collaboration_scoring_rubric
-  - p03_ins_scoring_rubric_builder
-  - p11_qg_scoring-rubric
 ---
 # Memory: scoring-rubric-builder
 ## Summary
@@ -94,5 +90,3 @@ python _tools/cex_score.py --apply bld-memory-scoring-rubric.md
 | [[scoring-rubric-builder]] | upstream | 0.57 |
 | [[bld_knowledge_scoring_rubric]] | upstream | 0.55 |
 | [[bld_orchestration_scoring_rubric]] | upstream | 0.48 |
-| [[p03_ins_scoring_rubric_builder]] | upstream | 0.45 |
-| [[p11_qg_scoring-rubric]] | downstream | 0.41 |

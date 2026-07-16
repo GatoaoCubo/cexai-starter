@@ -19,9 +19,6 @@ keywords: [adversarial llm safety evaluation, red team eval construction, red_te
 density_score: 0.90
 related:
   - red-team-eval-builder
-  - p11_qg_red_team_eval
-  - bld_output_template_red_team_eval
-  - p10_lr_red_team_eval_builder
   - bld_config_red_team_eval
 ---
 # Domain Knowledge: red_team_eval
@@ -91,7 +88,4 @@ Red team evals probe LLM systems with adversarial inputs designed to elicit unsa
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[red-team-eval-builder]] | downstream | 0.49 |
-| [[p11_qg_red_team_eval]] | downstream | 0.43 |
-| [[bld_output_template_red_team_eval]] | downstream | 0.39 |
-| [[p10_lr_red_team_eval_builder]] | downstream | 0.39 |
 | [[bld_config_red_team_eval]] | downstream | 0.38 |

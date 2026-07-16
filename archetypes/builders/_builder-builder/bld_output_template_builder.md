@@ -20,8 +20,6 @@ this, related artifacts, quality gate]
 density_score: 0.90
 related:
   - bld_architecture_kind
-  - p06_td_cex_artifact_type_n03
-  - bld_instruction_kind
   - bld_schema_kind
   - kind-builder
 ---
@@ -91,7 +89,5 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_kind]] | downstream | 0.44 |
-| [[p06_td_cex_artifact_type_n03]] | downstream | 0.41 |
-| [[bld_instruction_kind]] | related | 0.37 |
 | [[bld_schema_kind]] | downstream | 0.35 |
 | [[kind-builder]] | downstream | 0.34 |

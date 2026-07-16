@@ -19,10 +19,7 @@ density_score: 0.90
 llm_function: PRODUCE
 related:
   - tagline-builder
-  - bld_collaboration_tagline
-  - bld_instruction_tagline
   - bld_tools_tagline
-  - n00_tagline_manifest
 ---
 # Output Template: Tagline
 Structured tagline deliverable. Fill every field. Recommended tagline goes in frontmatter `title`.

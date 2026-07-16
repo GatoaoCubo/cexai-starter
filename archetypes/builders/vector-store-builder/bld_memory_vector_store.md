@@ -23,11 +23,7 @@ dimension, reproducibility
 for, vectordb backend]
 density_score: 0.90
 related:
-  - bld_knowledge_card_vector_store
   - vector-store-builder
-  - p11_qg_vector_store
-  - p01_kc_vector_store
-  - p03_ins_vector_store
 ---
 # Memory: vector-store-builder
 ## Summary
@@ -92,6 +88,4 @@ python _tools/cex_score.py --apply bld-memory-vector-store.md
 |----------|-------------|-------|
 | [[bld_knowledge_vector_store]] | upstream | 0.67 |
 | [[vector-store-builder]] | upstream | 0.60 |
-| [[p11_qg_vector_store]] | downstream | 0.52 |
 | [[kc_vector_store]] | upstream | 0.50 |
-| [[p03_ins_vector_store]] | upstream | 0.48 |

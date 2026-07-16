@@ -26,11 +26,9 @@ tldr: "Naming convention, the two-path distinction (pool draft vs synthesizer ru
 keywords: [config reverse prompt, config, reverse-prompt, naming, constraints, "p03_rp_{topic_slug}.md", tree_sha, "records/pool/prompts", two paths]
 density_score: 0.90
 related:
-  - p03_ins_reverse_prompt
   - bld_memory_reverse_prompt
   - bld_schema_reverse_prompt
   - reverse-prompt-builder
-  - bld_collaboration_reverse_prompt
 ---
 # Config -- reverse-prompt-builder
 ## Naming Convention
@@ -73,8 +71,6 @@ Free text; default filler `"general software engineer"` when unresolved (mirrors
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_reverse_prompt]] | upstream | 0.40 |
 | [[bld_memory_reverse_prompt]] | downstream | 0.40 |
 | [[bld_schema_reverse_prompt]] | upstream | 0.38 |
 | [[reverse-prompt-builder]] | upstream | 0.36 |
-| [[bld_collaboration_reverse_prompt]] | upstream | 0.36 |

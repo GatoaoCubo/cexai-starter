@@ -19,10 +19,6 @@ keywords: [template with, feature flag construction, output template feature fla
 -]
 density_score: 0.90
 related:
-  - bld_output_template_runtime_rule
-  - bld_output_template_embedding_config
-  - bld_output_template_golden_test
-  - bld_output_template_skill
   - bld_schema_feature_flag
 ---
 # Output Template: feature_flag

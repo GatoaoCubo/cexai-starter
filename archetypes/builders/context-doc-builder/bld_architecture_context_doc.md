@@ -19,9 +19,6 @@ density_score: 0.90
 related:
   - context-doc-builder
   - bld_schema_context_doc
-  - p01_kc_context_doc
-  - n00_context_doc_manifest
-  - bld_collaboration_context_doc
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -82,6 +79,3 @@ glossary_entry      --depends-->   context_doc
 |----------|-------------|-------|
 | [[context-doc-builder]] | upstream | 0.53 |
 | [[bld_schema_context_doc]] | upstream | 0.43 |
-| [[p01_kc_context_doc]] | upstream | 0.40 |
-| [[n00_context_doc_manifest]] | upstream | 0.37 |
-| [[bld_collaboration_context_doc]] | downstream | 0.34 |

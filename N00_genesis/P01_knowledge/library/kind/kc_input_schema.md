@@ -21,10 +21,6 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - p01_kc_interface
-  - p01_kc_pillar_brief_p06_schema_en
-  - n00_input_schema_manifest
-  - p01_kc_type_def
   - input-schema-builder
 ---
 

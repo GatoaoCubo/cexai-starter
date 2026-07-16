@@ -20,12 +20,6 @@ triggers, crew role
 acts, identity  
 this]
 density_score: 0.85
-related:
-  - kc_github_issue_template
-  - bld_knowledge_card_github_issue_template
-  - n00_github_issue_template_manifest
-  - bld_instruction_github_issue_template
-  - bld_collaboration_github_issue_template
 ---
 ## Identity
 
@@ -69,12 +63,3 @@ ALWAYS use required fields and labels.
 ALWAYS follow markdown syntax (no frontmatter).  
 NEVER include pull_request_template content.  
 NEVER use markdown beyond template structure.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_github_issue_template]] | upstream | 0.55 |
-| [[bld_knowledge_card_github_issue_template]] | upstream | 0.44 |
-| [[n00_github_issue_template_manifest]] | related | 0.43 |
-| [[bld_instruction_github_issue_template]] | upstream | 0.42 |
-| [[bld_collaboration_github_issue_template]] | downstream | 0.42 |

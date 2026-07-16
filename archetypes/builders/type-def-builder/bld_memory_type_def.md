@@ -25,9 +25,6 @@ density_score: 0.90
 related:
   - type-def-builder
   - bld_architecture_type_def
-  - bld_collaboration_type_def
-  - n00_type_def_manifest
-  - p11_qg_type_def
 ---
 # Memory: type-def-builder
 ## Summary
@@ -90,4 +87,3 @@ python _tools/cex_score.py --apply bld-memory-type-def.md
 | [[bld_architecture_type_def]] | upstream | 0.36 |
 | [[bld_orchestration_type_def]] | upstream | 0.36 |
 | n00_type_def_manifest | upstream | 0.35 |
-| [[p11_qg_type_def]] | upstream | 0.34 |

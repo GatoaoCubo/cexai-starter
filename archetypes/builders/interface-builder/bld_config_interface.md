@@ -28,9 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, interface construction, config interface, interface, builder, examples, "p06_iface_{contract_slug}.yaml"]
 density_score: 0.90
 related:
-  - bld_output_template_interface
   - bld_tools_interface
-  - p10_lr_interface_builder
   - bld_config_input_schema
   - bld_schema_interface
 ---
@@ -79,8 +77,6 @@ python _tools/cex_score.py --apply bld-config-interface.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_interface]] | upstream | 0.32 |
 | [[bld_tools_interface]] | upstream | 0.29 |
-| [[p10_lr_interface_builder]] | downstream | 0.29 |
 | [[bld_config_input_schema]] | sibling | 0.29 |
 | [[bld_schema_interface]] | upstream | 0.28 |

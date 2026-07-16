@@ -18,8 +18,6 @@ keywords: [component map of validator, and architectural position, validator con
 density_score: 0.90
 related:
   - validator-builder
-  - p01_kc_validator
-  - p11_qg_validator
   - bld_memory_validator
   - bld_architecture_quality_gate
 ---
@@ -70,6 +68,5 @@ validator       --depends-->     type_def
 |----------|-------------|-------|
 | [[validator-builder]] | upstream | 0.50 |
 | [[kc_validator]] | upstream | 0.49 |
-| [[p11_qg_validator]] | upstream | 0.44 |
 | [[bld_memory_validator]] | downstream | 0.43 |
 | bld_architecture_quality_gate | sibling | 0.43 |

@@ -26,10 +26,6 @@ L2: Encode traffic stages, rollback triggers, and analysis intervals.
 L3: When user needs progressive delivery with automatic rollback on SLO breach.
 isolation: standard
 related:
-  - kc_canary_config
-  - bld_instruction_canary_config
-  - bld_quality_gate_canary_config
-  - bld_knowledge_card_canary_config
   - bld_architecture_canary_config
 ---
 ## Identity
@@ -96,8 +92,4 @@ Frontmatter + body. Body sections: Traffic Stages (table), Rollback Triggers, An
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_canary_config]] | upstream | 0.59 |
-| [[bld_instruction_canary_config]] | related | 0.56 |
-| [[bld_quality_gate_canary_config]] | upstream | 0.53 |
-| [[bld_knowledge_card_canary_config]] | upstream | 0.52 |
 | [[bld_architecture_canary_config]] | upstream | 0.39 |

@@ -27,9 +27,6 @@ keywords: [memory type construction, config memory type, memory_type, builder, e
 density_score: 0.90
 related:
   - bld_tools_memory_type
-  - bld_collaboration_memory_type
-  - bld_manifest_memory_type
-  - bld_collaboration_memory_scope
   - bld_config_tagline
 ---
 # Config: memory_type
@@ -97,7 +94,4 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_memory_type]] | upstream | 0.46 |
-| [[bld_collaboration_memory_type]] | downstream | 0.46 |
-| [[bld_manifest_memory_type]] | upstream | 0.40 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.39 |
 | [[bld_config_tagline]] | sibling | 0.36 |

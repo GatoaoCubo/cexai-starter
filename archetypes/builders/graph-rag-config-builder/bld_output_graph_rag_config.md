@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [graph_rag_config construction, graph_rag_config, builder, output_template, example value, related artifacts, yaml grc_, grc_ yaml, max_depth maximum, traversal depth]
 density_score: 0.85
 related:
-  - bld_output_template_reranker_config
   - graph-rag-config-builder
   - bld_config_graph_rag_config
-  - kc_graph_rag_config
-  - p11_fb_graph_rag_config
 ---
 ```yaml
 ---
@@ -61,8 +58,5 @@ data_sources = [
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_reranker_config]] | sibling | 0.32 |
 | [[graph-rag-config-builder]] | upstream | 0.30 |
 | [[bld_config_graph_rag_config]] | downstream | 0.28 |
-| [[kc_graph_rag_config]] | upstream | 0.28 |
-| [[p11_fb_graph_rag_config]] | downstream | 0.25 |

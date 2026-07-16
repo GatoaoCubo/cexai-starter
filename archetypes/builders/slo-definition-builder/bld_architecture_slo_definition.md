@@ -17,11 +17,8 @@ tldr: "How slo_definition relates to deployment_manifest, quality_gate, benchmar
 keywords: [slo_definition relationships, and enterprise_sla, architecture, slo_definition, relationship graph, kind boundaries, integration points, related artifacts, signal slo_breach, quality_gate build-time]
 density_score: null
 related:
-  - bld_rules_slo_definition
   - bld_architecture_canary_config
   - bld_architecture_deployment_manifest
-  - bld_manifest_slo_definition
-  - kc_slo_definition
 ---
 # Architecture: slo_definition
 
@@ -52,8 +49,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_rules_slo_definition]] | sibling | 0.41 |
 | [[bld_architecture_canary_config]] | sibling | 0.39 |
 | [[bld_architecture_deployment_manifest]] | sibling | 0.34 |
-| [[bld_manifest_slo_definition]] | downstream | 0.32 |
-| [[kc_slo_definition]] | sibling | 0.31 |

@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F8_collaborate"
 related:
-  - bld_collaboration_schedule
-  - p11_qg_schedule
   - bld_architecture_schedule
-  - bld_knowledge_card_schedule
-  - bld_instruction_schedule
 ---
 ## Identity
 
@@ -145,7 +141,6 @@ catch_up: false
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_schedule]] | related | 0.66 |
-| [[p11_qg_schedule]] | upstream | 0.55 |
 | [[bld_architecture_schedule]] | upstream | 0.52 |
 | [[bld_knowledge_schedule]] | upstream | 0.52 |
 | [[bld_prompt_schedule]] | upstream | 0.50 |

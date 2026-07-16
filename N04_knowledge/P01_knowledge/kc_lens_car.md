@@ -31,9 +31,6 @@ data_source: "N04_knowledge/P01_knowledge/kc_lens_factory.md"
 related:
   - kc_lens_index
   - kc_lens_factory
-  - p01_kc_pillar_brief_p02_model_en
-  - p01_kc_pillar_brief_p03_prompt_en
-  - p03_pt_mentor_socratic
 ---
 
 # Lens: Car

@@ -21,10 +21,6 @@ reviewed python, related artifacts, error handling]
 density_score: 0.85
 related:
   - sdk-example-builder
-  - kc_sdk_example
-  - bld_instruction_sdk_example
-  - bld_collaboration_sdk_example
-  - p10_lr_workflow_node_builder
 ---
 ## Observation
 Common issues include inconsistent error handling, lack of parameter validation, and unclear documentation in example code. Language-specific nuances often lead to redundant boilerplate or misaligned integration patterns.
@@ -46,7 +42,3 @@ Reviewed Python and JavaScript examples showed consistent error handling via exc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[sdk-example-builder]] | upstream | 0.41 |
-| [[kc_sdk_example]] | upstream | 0.27 |
-| [[bld_instruction_sdk_example]] | upstream | 0.26 |
-| [[bld_collaboration_sdk_example]] | downstream | 0.23 |
-| [[p10_lr_workflow_node_builder]] | related | 0.21 |

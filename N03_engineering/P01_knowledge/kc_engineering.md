@@ -17,11 +17,8 @@ keywords: [meta-construction, builder, factory, strange-loop, 8F]
 feeds_kinds: [agent, system_prompt, workflow, quality_gate]
 density_score: 0.90
 related:
-  - p06_td_cex_artifact_type_n03
   - bld_architecture_kind
   - kind-builder
-  - bld_collaboration_kind
-  - bld_collaboration_knowledge_card
 ---
 
 # Meta-Construction

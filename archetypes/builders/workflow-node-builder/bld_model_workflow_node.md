@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_collaboration_workflow_node
   - visual-workflow-builder
-  - bld_instruction_workflow_node
-  - bld_instruction_visual_workflow
-  - n00_workflow_node_manifest
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER INTRODUCE CROSS-NODE DEPENDENCIES OR GLOBAL STATE
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_workflow_node]] | related | 0.61 |
 | [[visual-workflow-builder]] | sibling | 0.50 |
-| [[bld_instruction_workflow_node]] | upstream | 0.49 |
-| [[bld_instruction_visual_workflow]] | upstream | 0.46 |
-| [[n00_workflow_node_manifest]] | related | 0.43 |

@@ -18,11 +18,7 @@ updated: "2026-07-03"
 keywords: [publish gate, field manifest, schema-to-form, quality-gate, field-manifest, sections, fields]
 density_score: 0.87
 related:
-  - bld_instruction_field_manifest
   - bld_schema_field_manifest
-  - bld_knowledge_card_field_manifest
-  - p11_qg_input_schema
-  - p10_lr_field_manifest_builder
 ---
 ## Quality Gate
 
@@ -154,8 +150,4 @@ WHY THIS IS GOLDEN:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_field_manifest]] | sibling | 0.44 |
 | [[bld_schema_field_manifest]] | sibling | 0.42 |
-| [[bld_knowledge_card_field_manifest]] | sibling | 0.40 |
-| [[p11_qg_input_schema]] | related | 0.36 |
-| [[p10_lr_field_manifest_builder]] | downstream | 0.33 |

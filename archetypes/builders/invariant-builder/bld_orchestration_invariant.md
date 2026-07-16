@@ -19,10 +19,7 @@ keywords: [invariant construction, collaboration invariant, invariant, builder, 
 density_score: 0.90
 related:
   - invariant-builder
-  - bld_collaboration_quality_gate
-  - bld_collaboration_pattern
   - bld_memory_invariant
-  - p03_ins_law
 ---
 # Collaboration: invariant-builder
 ## My Role in Crews
@@ -77,4 +74,3 @@ I formalize inviolable mandates with enforcement mechanisms and exception protoc
 | bld_collaboration_quality_gate | sibling | 0.34 |
 | [[bld_orchestration_pattern]] | sibling | 0.34 |
 | [[bld_memory_invariant]] | downstream | 0.33 |
-| [[p03_ins_law]] | upstream | 0.31 |

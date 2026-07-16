@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for agents_md, agents_md construction, type builder agents md, routing for agents, md project-root manifests, agents_md, builder, type_builder, identity
 specializes]
 density_score: 0.85
-related:
-  - bld_knowledge_card_agents_md
-  - bld_instruction_agents_md
-  - bld_collaboration_agents_md
-  - p10_lr_agents_md_builder
-  - p02_qg_agents_md
 ---
 ## Identity
 
@@ -66,12 +60,3 @@ ALWAYS write imperative second-person commands to the coding-agent reader.
 ALWAYS keep the file vendor-neutral so Codex, Claude Code, Aider, Cursor, and goose all parse it.
 NEVER duplicate README.md human-oriented prose (project pitch, screenshots, contributor credits).
 NEVER encode vendor-specific directives -- no Claude-only slash commands, no Cursor-only rule blocks; those belong in CLAUDE.md or .cursorrules, complementary to AGENTS.md.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_agents_md]] | upstream | 0.70 |
-| [[bld_instruction_agents_md]] | upstream | 0.51 |
-| [[bld_collaboration_agents_md]] | downstream | 0.50 |
-| [[p10_lr_agents_md_builder]] | downstream | 0.49 |
-| [[p02_qg_agents_md]] | downstream | 0.48 |

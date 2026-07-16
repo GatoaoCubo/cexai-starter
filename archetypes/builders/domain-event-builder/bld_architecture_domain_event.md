@@ -15,11 +15,8 @@ density_score: 1.0
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_domain_event
-  - bld_rules_domain_event
   - domain-event-builder
   - bld_memory_domain_event
-  - bld_context_sources_domain_event
 ---
 # Architecture: domain_event
 ## Position in CEX Kind Taxonomy
@@ -61,8 +58,5 @@ CEX does not enforce event store, but domain_event schema enables it.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_domain_event]] | upstream | 0.42 |
-| [[bld_rules_domain_event]] | downstream | 0.40 |
 | [[domain-event-builder]] | downstream | 0.40 |
 | [[bld_memory_domain_event]] | downstream | 0.34 |
-| [[bld_context_sources_domain_event]] | downstream | 0.30 |

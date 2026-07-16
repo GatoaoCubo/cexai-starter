@@ -28,7 +28,6 @@ related:
   - bld_architecture_user_model
   - bld_config_memory_type
   - user-model-builder
-  - bld_collaboration_user_model
   - bld_tools_memory_type
 ---
 ## Summary

@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - rate-limit-config-builder
-  - p11_qg_rate_limit_config
   - bld_architecture_rate_limit_config
-  - bld_instruction_rate_limit_config
-  - bld_knowledge_card_rate_limit_config
 ---
 # Output Template: rate_limit_config
 
@@ -115,7 +112,6 @@ Overage policy: `{{what_happens_when_budget_exceeded}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[rate-limit-config-builder]] | downstream | 0.56 |
-| [[p11_qg_rate_limit_config]] | downstream | 0.54 |
 | [[bld_architecture_rate_limit_config]] | downstream | 0.51 |
 | [[bld_prompt_rate_limit_config]] | upstream | 0.51 |
 | [[bld_knowledge_rate_limit_config]] | upstream | 0.50 |

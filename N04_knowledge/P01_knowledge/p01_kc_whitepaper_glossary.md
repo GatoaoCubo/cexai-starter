@@ -22,12 +22,10 @@ related:
   - p01_kc_concept_graph
   - p01_kc_whitepaper_faq
   - p02_mm_cex_architecture_n04
-  - p01_faq_cex_common_questions
   - p01_gl_knowledge_card
   - p01_gl_rag
   - p01_gl_embedding
   - glossary-entry-builder
-  - n00_glossary_entry_manifest
 ---
 
 ## Definition
@@ -113,4 +111,3 @@ The canonical system-wide glossary is `docs/glossary.md` (235 lines, 23 entries 
 | [[p01_kc_whitepaper_faq]] | sibling | 0.50 |
 | [[p01_kc_concept_graph]] | sibling | 0.45 |
 | [[p02_mm_cex_architecture_n04]] | related | 0.40 |
-| [[p01_faq_cex_common_questions]] | related | 0.35 |

@@ -19,8 +19,6 @@ density_score: 0.90
 related:
   - hibernation-policy-builder
   - hp_{{backend}}
-  - bld_instruction_kind
-  - kc_hibernation_policy
   - bld_architecture_hibernation_policy
 ---
 ## Primary KC
@@ -64,6 +62,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 |----------|-------------|-------|
 | [[hibernation-policy-builder]] | downstream | 0.24 |
 | [\[hp_`{{backend}}`\]] | downstream | 0.22 |
-| [[bld_instruction_kind]] | downstream | 0.22 |
-| [[kc_hibernation_policy]] | sibling | 0.21 |
 | [[bld_architecture_hibernation_policy]] | downstream | 0.21 |

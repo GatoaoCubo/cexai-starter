@@ -4,9 +4,7 @@ description: "Builds ONE rbac_policy artifact via 8F pipeline. Loads rbac-policy
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
   - bld_config_rbac_policy
   - system-prompt-builder
 ---

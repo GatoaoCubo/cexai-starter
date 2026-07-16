@@ -18,10 +18,6 @@ keywords: [pitch_deck construction, instruction pitch deck, pitch_deck, builder,
 density_score: 0.85
 related:
   - pitch-deck-builder
-  - p05_qg_pitch_deck
-  - bld_knowledge_card_pitch_deck
-  - p10_mem_pitch_deck_builder
-  - bld_output_template_pitch_deck
 ---
 ## Phase 1: RESEARCH  
 1. Define target audience (investors, customers) and their pain points.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pitch-deck-builder]] | downstream | 0.45 |
-| [[p05_qg_pitch_deck]] | downstream | 0.45 |
-| [[bld_knowledge_card_pitch_deck]] | upstream | 0.45 |
-| [[p10_mem_pitch_deck_builder]] | downstream | 0.43 |
-| [[bld_output_template_pitch_deck]] | downstream | 0.37 |

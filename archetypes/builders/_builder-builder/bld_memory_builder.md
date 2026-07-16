@@ -26,11 +26,8 @@ title: "Memory Builder"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_collaboration_validation_schema
   - bld_knowledge_card_builder
   - bld_collaboration_builder
-  - p10_lr_kind_builder
-  - p11_fb_validation_schema
 ---
 ## Summary
 Building builders differs from building artifacts directly because the builder itself is not the final product - the artifacts it generates are. This indirection creates a failure mode where the builder author optimizes for their own understanding of the domain rather than for the reproducibility of outputs by others (or by automated systems).
@@ -60,8 +57,5 @@ High. The schema-first step sequence is domain-agnostic and applies to any build
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_validation_schema]] | upstream | 0.24 |
 | [[bld_knowledge_card_builder]] | upstream | 0.24 |
 | [[bld_collaboration_builder]] | downstream | 0.24 |
-| [[p10_lr_kind_builder]] | sibling | 0.24 |
-| [[p11_fb_validation_schema]] | downstream | 0.24 |

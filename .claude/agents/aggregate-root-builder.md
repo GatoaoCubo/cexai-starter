@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_aggregate_root
-  - bld_manifest_aggregate_root
   - bld_knowledge_aggregate_root
-  - bld_context_sources_aggregate_root
-  - bld_instruction_aggregate_root
 ---
 
 # aggregate-root-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_aggregate_root]] | related | 0.41 |
-| [[bld_manifest_aggregate_root]] | related | 0.40 |
 | [[bld_knowledge_aggregate_root]] | related | 0.38 |
-| [[bld_context_sources_aggregate_root]] | related | 0.37 |
-| [[bld_instruction_aggregate_root]] | related | 0.33 |

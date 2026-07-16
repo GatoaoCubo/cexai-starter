@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [instruction construction, collaboration instruction, instruction, builder, examples, "### crew: task recipe design", my role, crew compositions, new agent end, task recipe design]
 density_score: 0.90
-related:
-  - bld_collaboration_action_prompt
-  - bld_collaboration_agent
-  - bld_collaboration_agent_package
-  - bld_collaboration_system_prompt
-  - bld_collaboration_boot_config
 ---
 # Collaboration: instruction-builder
 ## My Role in Crews

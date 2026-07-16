@@ -7,15 +7,8 @@ version: 1.0.0
 quality: null
 tags: [prompt-caching, optimization, cost-reduction, llm, infrastructure]
 related:
-  - ex_knowledge_card_prompt_caching
-  - bld_knowledge_card_prompt_cache
-  - bld_collaboration_prompt_cache
-  - p01_kc_prompt_cache
   - prompt-cache-builder
-  - p01_kc_caching
-  - bld_output_template_prompt_cache
   - bld_config_prompt_cache
-  - p10_lr_prompt_cache_builder
 primary_8f: INJECT
 slots:
   query_context: "<the question this card is recalled to answer>"

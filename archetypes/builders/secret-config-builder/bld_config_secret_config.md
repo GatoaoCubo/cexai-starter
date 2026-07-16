@@ -27,12 +27,6 @@ updated: "2026-04-07"
 8f: "F1_constrain"
 keywords: [naming conventions, file paths, size limits, operational constraints, secret config construction, config secret config, secret_config, builder, examples, "p09_sec_{slug}.md"]
 density_score: 0.90
-related:
-  - bld_knowledge_card_secret_config
-  - secret-config-builder
-  - bld_output_template_secret_config
-  - bld_instruction_secret_config
-  - bld_collaboration_secret_config
 ---
 # Config: secret_config Production Rules
 ## Naming Convention
@@ -86,7 +80,5 @@ Rule: NEVER use real secret values as examples — always `<PLACEHOLDER>` or `${
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_secret_config]] | upstream | 0.49 |
-| [[secret-config-builder]] | related | 0.47 |
-| [[bld_output_template_secret_config]] | upstream | 0.43 |
 | [[bld_prompt_secret_config]] | upstream | 0.42 |
 | [[bld_orchestration_secret_config]] | downstream | 0.42 |

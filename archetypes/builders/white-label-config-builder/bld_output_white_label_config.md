@@ -18,10 +18,6 @@ keywords: [white_label_config construction, frontmatter field guide, required bo
 density_score: 0.85
 related:
   - bld_config_white_label_config
-  - bld_output_template_collaboration_pattern
-  - bld_output_template_thinking_config
-  - bld_output_template_visual_workflow
-  - bld_output_template_dataset_card
 ---
 ```yaml
 ---
@@ -84,4 +80,3 @@ config:
 | bld_output_template_collaboration_pattern | sibling | 0.29 |
 | bld_output_template_thinking_config | sibling | 0.29 |
 | bld_output_template_visual_workflow | sibling | 0.28 |
-| [[bld_output_template_dataset_card]] | sibling | 0.28 |

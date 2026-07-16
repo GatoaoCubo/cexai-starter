@@ -30,10 +30,6 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_collaboration_drift_detector
-  - p01_kc_drift_detector
-  - bld_instruction_drift_detector
-  - bld_knowledge_card_drift_detector
   - bld_architecture_drift_detector
 ---
 ## Identity
@@ -150,8 +146,4 @@ alert_rule:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_drift_detector]] | downstream | 0.63 |
-| [[p01_kc_drift_detector]] | related | 0.62 |
-| [[bld_instruction_drift_detector]] | upstream | 0.59 |
-| [[bld_knowledge_card_drift_detector]] | upstream | 0.57 |
 | [[bld_architecture_drift_detector]] | upstream | 0.52 |

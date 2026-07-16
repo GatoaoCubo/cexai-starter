@@ -19,11 +19,8 @@ keywords: [structured system inventories, component map construction, knowledge 
 component, spec table, configuration management database]
 density_score: 0.90
 related:
-  - p10_lr_component_map_builder
   - component-map-builder
-  - bld_collaboration_component_map
   - bld_schema_component_map
-  - bld_instruction_component_map
 ---
 # Domain Knowledge: component_map
 ## Executive Summary
@@ -79,8 +76,5 @@ Component maps are structured inventories of system parts and their typed connec
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_component_map_builder]] | downstream | 0.38 |
 | [[component-map-builder]] | downstream | 0.38 |
-| [[bld_collaboration_component_map]] | downstream | 0.35 |
 | [[bld_schema_component_map]] | related | 0.34 |
-| [[bld_instruction_component_map]] | downstream | 0.34 |

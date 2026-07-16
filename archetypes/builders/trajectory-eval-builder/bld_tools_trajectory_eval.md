@@ -18,7 +18,6 @@ keywords: [trajectory_eval construction, tools trajectory eval, trajectory_eval,
 density_score: 0.85
 related:
   - bld_tools_github_issue_template
-  - bld_knowledge_card_trajectory_eval
   - bld_tools_pricing_page
   - bld_tools_prompt_technique
   - bld_tools_self_improvement_loop
@@ -47,7 +46,6 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_github_issue_template]] | sibling | 0.33 |
-| [[bld_knowledge_card_trajectory_eval]] | upstream | 0.33 |
 | [[bld_tools_pricing_page]] | sibling | 0.29 |
 | [[bld_tools_prompt_technique]] | sibling | 0.29 |
 | [[bld_tools_self_improvement_loop]] | sibling | 0.29 |

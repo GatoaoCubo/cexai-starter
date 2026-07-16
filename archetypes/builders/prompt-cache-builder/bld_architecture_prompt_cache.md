@@ -18,9 +18,6 @@ keywords: [component map of prompt_cache, architectural position, prompt cache c
 density_score: 0.90
 related:
   - prompt-cache-builder
-  - bld_output_template_prompt_cache
-  - p01_kc_prompt_cache
-  - bld_collaboration_prompt_cache
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -61,6 +58,3 @@ system_prompt, prompt_template --> [prompt_cache] --> runtime_state, agent_card
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-cache-builder]] | downstream | 0.57 |
-| [[bld_output_template_prompt_cache]] | upstream | 0.48 |
-| [[p01_kc_prompt_cache]] | downstream | 0.45 |
-| [[bld_collaboration_prompt_cache]] | downstream | 0.43 |

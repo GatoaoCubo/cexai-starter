@@ -24,9 +24,6 @@ keywords: [agent_card, skill, handoff, output_validator, prompt_template, runtim
 related:
   - p01_kc_ai2ai_exhaustive_scan_20260414
   - p01_kc_kind_gap_analysis
-  - p01_kc_taxonomy_completeness_audit
-  - p01_kc_terminology_rosetta_stone
-  - p10_out_gap_report
 ---
 
 # AI2AI Coverage Matrix -- CEX 238 Kinds vs 6 Standard Bodies (April 2026)

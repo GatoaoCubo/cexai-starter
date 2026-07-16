@@ -23,8 +23,6 @@ related:
   - interactive-demo-builder
   - onboarding-flow-builder
   - integration-guide-builder
-  - bld_collaboration_onboarding_flow
-  - p10_lr_quickstart_guide_builder
 ---
 ## Identity
 
@@ -74,5 +72,3 @@ NEVER include optional steps, troubleshooting, or edge-case handling.
 | [[interactive-demo-builder]] | sibling | 0.34 |
 | [[onboarding-flow-builder]] | sibling | 0.31 |
 | [[integration-guide-builder]] | sibling | 0.31 |
-| [[bld_collaboration_onboarding_flow]] | downstream | 0.30 |
-| [[p10_lr_quickstart_guide_builder]] | downstream | 0.29 |

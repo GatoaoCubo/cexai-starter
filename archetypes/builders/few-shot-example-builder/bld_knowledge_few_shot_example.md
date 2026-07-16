@@ -21,9 +21,6 @@ density_score: 0.90
 related:
   - bld_schema_few_shot_example
   - few-shot-example-builder
-  - bld_collaboration_few_shot_example
-  - p01_fse_builder_golden
-  - bld_collaboration_golden_test
 ---
 
 # Domain Knowledge: few_shot_example
@@ -82,5 +79,4 @@ Few-shot examples are input/output pairs that teach LLMs format and quality thro
 | [[bld_schema_few_shot_example]] | downstream | 0.40 |
 | [[few-shot-example-builder]] | related | 0.37 |
 | [[bld_orchestration_few_shot_example]] | downstream | 0.35 |
-| [[p01_fse_builder_golden]] | related | 0.32 |
 | [[bld_orchestration_golden_test]] | downstream | 0.31 |

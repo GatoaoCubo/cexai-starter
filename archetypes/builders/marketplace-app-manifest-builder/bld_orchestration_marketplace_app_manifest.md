@@ -19,10 +19,7 @@ generates, receives from
 builder, app developer]
 density_score: 0.85
 related:
-  - bld_collaboration_app_directory_entry
   - marketplace-app-manifest-builder
-  - kc_marketplace_app_manifest
-  - kc_app_directory_entry
   - app-directory-entry-builder
 ---
 ## Crew Role  
@@ -48,8 +45,5 @@ Does NOT handle plugin loading or app directory entries. Plugin loading is manag
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_app_directory_entry]] | sibling | 0.57 |
 | [[marketplace-app-manifest-builder]] | upstream | 0.42 |
-| [[kc_marketplace_app_manifest]] | upstream | 0.39 |
-| [[kc_app_directory_entry]] | upstream | 0.37 |
 | [[app-directory-entry-builder]] | upstream | 0.34 |

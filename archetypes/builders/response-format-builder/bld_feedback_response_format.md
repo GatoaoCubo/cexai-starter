@@ -15,12 +15,6 @@ llm_function: GOVERN
 density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-22"
-related:
-  - p11_fb_retriever
-  - p11_fb_ab_test_config
-  - p11_fb_handoff
-  - p11_fb_research_pipeline
-  - p11_fb_knowledge_graph
 ---
 # Feedback: Response Format
 
@@ -83,8 +77,6 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_retriever]] | sibling | 0.74 |
 | p11_fb_ab_test_config | sibling | 0.74 |
 | p11_fb_handoff | sibling | 0.74 |
-| [[p11_fb_research_pipeline]] | sibling | 0.74 |
 | p11_fb_knowledge_graph | sibling | 0.73 |

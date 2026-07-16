@@ -18,9 +18,6 @@ keywords: [component map of decision_record, and architectural position, decisio
 density_score: 0.90
 related:
   - decision-record-builder
-  - bld_instruction_decision_record
-  - bld_knowledge_card_decision_record
-  - n00_decision_record_manifest
   - bld_schema_decision_record
 ---
 ## Component Inventory

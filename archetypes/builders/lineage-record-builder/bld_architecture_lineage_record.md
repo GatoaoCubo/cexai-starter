@@ -17,11 +17,7 @@ tldr: "How lineage_record relates to knowledge_card, citation, audit_log, and le
 keywords: [lineage_record relationships, and learning_record, architecture, lineage_record, relationship graph, kind boundaries, related artifacts, rag_source, knowledge_card, sibling]
 density_score: null
 related:
-  - kc_lineage_record
   - bld_memory_lineage_record
-  - bld_manifest_lineage_record
-  - bld_knowledge_card_lineage_record
-  - bld_instruction_lineage_record
 ---
 # Architecture: lineage_record
 
@@ -56,8 +52,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_lineage_record]] | sibling | 0.63 |
 | [[bld_memory_lineage_record]] | sibling | 0.60 |
-| [[bld_manifest_lineage_record]] | upstream | 0.56 |
-| [[bld_knowledge_card_lineage_record]] | sibling | 0.53 |
-| [[bld_instruction_lineage_record]] | upstream | 0.39 |

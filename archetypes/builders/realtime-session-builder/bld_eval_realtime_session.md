@@ -18,10 +18,6 @@ keywords: [realtime_session, quality gate, model pair, barge-in, ephemeral auth]
 density_score: 0.90
 related:
   - realtime-session-builder
-  - bld_instruction_realtime_session
-  - bld_knowledge_card_realtime_session
-  - bld_output_template_realtime_session
-  - p10_mem_realtime_session_builder
 ---
 ## Quality Gate
 ## Definition
@@ -196,7 +192,3 @@ Raw API key exposed in browser. H09: mint ephemeral token server-side via `/v1/r
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[realtime-session-builder]] | upstream | 0.47 |
-| [[bld_instruction_realtime_session]] | upstream | 0.46 |
-| [[bld_knowledge_card_realtime_session]] | upstream | 0.44 |
-| [[bld_output_template_realtime_session]] | upstream | 0.43 |
-| [[p10_mem_realtime_session_builder]] | upstream | 0.42 |

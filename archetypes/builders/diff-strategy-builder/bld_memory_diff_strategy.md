@@ -20,10 +20,7 @@ decoupling, evidence
 reviewed, related artifacts, fuzzy matching]
 density_score: 0.85
 related:
-  - kc_diff_strategy
   - diff-strategy-builder
-  - bld_output_template_diff_strategy
-  - bld_collaboration_diff_strategy
   - bld_config_diff_strategy
 ---
 ## Observation
@@ -45,8 +42,5 @@ Reviewed recent implementations of text-based and structural diffing modules.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_diff_strategy]] | upstream | 0.25 |
 | [[diff-strategy-builder]] | upstream | 0.21 |
-| [[bld_output_template_diff_strategy]] | upstream | 0.20 |
-| [[bld_collaboration_diff_strategy]] | downstream | 0.20 |
 | [[bld_config_diff_strategy]] | upstream | 0.20 |

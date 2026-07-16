@@ -31,11 +31,7 @@ keywords:
   - "ms per action. javascript: {{enabled|disabled}}."
 density_score: 0.90
 related:
-  - p11_qg_browser_tool
   - bld_schema_browser_tool
-  - p04_browser_playwright
-  - bld_knowledge_card_browser_tool
-  - p04_browser_railway_ui
 ---
 # Output Template: browser_tool
 ```yaml
@@ -114,7 +110,6 @@ Schema:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_browser_tool]] | downstream | 0.37 |
 | [[bld_schema_browser_tool]] | downstream | 0.35 |
 | p04_browser_playwright | upstream | 0.33 |
 | [[bld_knowledge_browser_tool]] | upstream | 0.32 |

@@ -27,11 +27,6 @@ linked_artifacts:
   related: [N07_admin/P12_orchestration/dispatch_rule_n07.md, N07_admin/P12_orchestration/spawn_config_admin.md]
 density_score: 1.0
 data_source: "N07_admin/P12_orchestration/spawn_config_admin.md"
-related:
-  - p03_sp_admin_orchestrator
-  - p02_agent_admin_orchestrator
-  - p12_wf_admin_orchestration
-  - dispatch
 ---
 
 # CEX Orchestration — Multi-CLI Dispatch

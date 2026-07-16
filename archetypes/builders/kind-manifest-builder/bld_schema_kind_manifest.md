@@ -30,8 +30,6 @@ related:
   - bld_schema_knowledge_card
   - bld_schema_output_template
   - bld_schema_kind
-  - n00_knowledge_card_manifest
-  - p06_td_cex_artifact_type_n03
 ---
 
 # Schema: kind_manifest
@@ -132,5 +130,3 @@ gate: an instance authored against it will correctly carry `kind: kind_manifest`
 | [[bld_schema_knowledge_card]] | contrast (former mis-type, R-310) | 0.46 |
 | [[bld_schema_output_template]] | sibling (same resolution shape, R-298/R-299) | 0.40 |
 | [[bld_schema_kind]] | related (meta-kind-builder that scaffolds NEW kinds) | 0.33 |
-| [[n00_knowledge_card_manifest]] | instance (one of the 294 this schema now governs) | 0.31 |
-| [[p06_td_cex_artifact_type_n03]] | related | 0.28 |

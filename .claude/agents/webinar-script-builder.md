@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_architecture_webinar_script
-  - bld_collaboration_webinar_script
   - bld_config_webinar_script
-  - p11_fb_webinar_script
   - kind-builder
 ---
 
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_webinar_script]] | related | 0.36 |
-| [[bld_collaboration_webinar_script]] | related | 0.33 |
 | [[bld_config_webinar_script]] | related | 0.33 |
-| [[p11_fb_webinar_script]] | related | 0.31 |
 | [[kind-builder]] | related | 0.30 |

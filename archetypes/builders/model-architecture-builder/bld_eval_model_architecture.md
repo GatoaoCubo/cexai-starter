@@ -27,12 +27,6 @@ keywords:
   - "builder"
 density_score: 0.91
 purpose: Quality gate with HARD and SOFT scoring for model_architecture
-related:
-  - bld_instruction_model_architecture
-  - p11_qg_quality_gate
-  - bld_output_template_model_architecture
-  - p11_qg_knowledge_card
-  - p11_qg_model_registry
 ---
 ## Quality Gate
 

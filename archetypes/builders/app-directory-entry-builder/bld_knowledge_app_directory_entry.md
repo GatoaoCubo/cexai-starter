@@ -19,10 +19,6 @@ app, apple app store, google play, key concepts, nielsen norman group, install s
 density_score: 0.85
 related:
   - app-directory-entry-builder
-  - p10_mem_app_directory_entry_builder
-  - kc_app_directory_entry
-  - bld_instruction_app_directory_entry
-  - bld_knowledge_card_interactive_demo
 ---
 ## Domain Overview  
 App directory entries serve as discovery mechanisms in ecosystems like app stores, open source platforms, and developer portals. For free-tier apps, they prioritize user engagement through concise metadata, visual appeal, and low-friction onboarding. Taglines must capture value propositions, screenshots must highlight core features, install steps must minimize barriers, and demo links must enable immediate interaction. These entries compete in crowded markets where users prioritize ease of use and immediate value over paid alternatives.  
@@ -72,7 +68,3 @@ The focus is on human-centric design, not technical specifications. Entries must
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[app-directory-entry-builder]] | downstream | 0.44 |
-| [[p10_mem_app_directory_entry_builder]] | downstream | 0.40 |
-| [[kc_app_directory_entry]] | sibling | 0.37 |
-| [[bld_instruction_app_directory_entry]] | downstream | 0.37 |
-| [[bld_knowledge_card_interactive_demo]] | sibling | 0.26 |

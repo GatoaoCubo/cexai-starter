@@ -19,11 +19,8 @@ keywords: [persistent background process specification, daemon construction, kno
 daemons, spec table, resource limits]
 density_score: 0.90
 related:
-  - bld_instruction_daemon
   - daemon-builder
-  - p11_qg_daemon
   - p04_daemon_{{NAME_SLUG}}
-  - bld_collaboration_daemon
 ---
 # Domain Knowledge: daemon
 ## Executive Summary
@@ -81,8 +78,5 @@ Daemons are persistent background processes that run continuously or on schedule
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_daemon]] | downstream | 0.51 |
 | [[daemon-builder]] | downstream | 0.46 |
-| [[p11_qg_daemon]] | downstream | 0.46 |
 | [\[p04_daemon_`{{NAME_SLUG}}`\]] | downstream | 0.40 |
-| [[bld_collaboration_daemon]] | downstream | 0.38 |

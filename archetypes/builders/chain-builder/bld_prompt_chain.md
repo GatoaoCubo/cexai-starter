@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [chain construction, instruction chain, chain, builder, examples, p03_ch_, write steps, write data flow, write error handling, write branching]
 density_score: 0.90
 related:
-  - p10_lr_chain_builder
-  - bld_knowledge_card_chain
   - chain-builder
-  - p11_qg_chain
   - bld_architecture_chain
 ---
 # Instructions: How to Produce a chain
@@ -60,8 +57,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_chain_builder]] | downstream | 0.50 |
-| [[bld_knowledge_card_chain]] | upstream | 0.45 |
 | [[chain-builder]] | related | 0.42 |
-| [[p11_qg_chain]] | downstream | 0.41 |
 | [[bld_architecture_chain]] | downstream | 0.39 |

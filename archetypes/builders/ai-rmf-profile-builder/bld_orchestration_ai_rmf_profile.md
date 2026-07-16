@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [ai_rmf_profile construction, collaboration ai rmf profile, ai_rmf_profile, builder, collaboration, nist, ai-rmf, govern, measure, manage]
 density_score: 0.85
 related:
-  - bld_collaboration_gpai_technical_doc
-  - bld_collaboration_safety_hazard_taxonomy
   - ai-rmf-profile-builder
-  - bld_instruction_ai_rmf_profile
-  - kc_ai_rmf_profile
 ---
 ## Crew Role
 Produces structured NIST AI-RMF profile artifacts mapping organizational AI risks to AI-RMF functions and action-IDs per AI 600-1 GenAI categories.
@@ -48,8 +44,4 @@ Does NOT handle EU AI Act documentation (use gpai_technical_doc-builder), runtim
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_gpai_technical_doc]] | sibling | 0.34 |
-| [[bld_collaboration_safety_hazard_taxonomy]] | sibling | 0.34 |
 | [[ai-rmf-profile-builder]] | upstream | 0.33 |
-| [[bld_instruction_ai_rmf_profile]] | upstream | 0.27 |
-| [[kc_ai_rmf_profile]] | upstream | 0.27 |

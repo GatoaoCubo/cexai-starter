@@ -22,10 +22,6 @@ linked_artifacts:
   related: []
 related:
   - prompt-version-builder
-  - bld_collaboration_prompt_version
-  - bld_knowledge_card_prompt_version
-  - n00_prompt_version_manifest
-  - p10_lr_prompt_version_builder
 ---
 
 # Prompt Version
@@ -100,4 +96,3 @@ A prompt version is an immutable snapshot of a prompt (template, system, or acti
 | [[bld_orchestration_prompt_version]] | downstream | 0.50 |
 | [[bld_knowledge_prompt_version]] | sibling | 0.45 |
 | n00_prompt_version_manifest | sibling | 0.38 |
-| [[p10_lr_prompt_version_builder]] | downstream | 0.35 |

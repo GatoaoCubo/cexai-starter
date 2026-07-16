@@ -25,12 +25,6 @@ title: "Memory Secret Config"
 8f: "F7_govern"
 density_score: 0.90
 llm_function: INJECT
-related:
-  - bld_knowledge_card_secret_config
-  - bld_instruction_secret_config
-  - secret-config-builder
-  - bld_collaboration_secret_config
-  - bld_output_template_secret_config
 ---
 ## Summary
 Secret configs are consumed by agents at runtime under time pressure — a stale credential or misconfigured access pattern causes silent failures that are expensive to diagnose. Three decisions made at spec time determine safety: rotation method explicitness, access pattern precision, and audit logging.
@@ -125,6 +119,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_secret_config_builder.md
 |----------|-------------|-------|
 | [[bld_knowledge_secret_config]] | upstream | 0.39 |
 | [[bld_prompt_secret_config]] | upstream | 0.36 |
-| [[secret-config-builder]] | upstream | 0.34 |
 | [[bld_orchestration_secret_config]] | downstream | 0.33 |
-| [[bld_output_template_secret_config]] | upstream | 0.33 |

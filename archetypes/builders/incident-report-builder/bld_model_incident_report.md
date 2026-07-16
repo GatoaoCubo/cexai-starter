@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_collaboration_incident_report
-  - bld_knowledge_card_incident_report
-  - n00_incident_report_manifest
-  - bld_instruction_incident_report
-  - p10_lr_incident_report_builder
 ---
 ## Identity
 
@@ -62,12 +56,3 @@ The incident_report-builder agent is a specialized AI system that generates stru
 3. Includes all stakeholders (e.g., responders, managers, external parties) with roles and responsibilities clearly defined.  
 4. Maintains neutrality by avoiding blame attribution; emphasizes systemic issues and process gaps.  
 5. Ensures traceability with timestamps, incident IDs, and audit trails for regulatory and compliance purposes.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_incident_report]] | downstream | 0.56 |
-| [[bld_knowledge_card_incident_report]] | upstream | 0.54 |
-| [[n00_incident_report_manifest]] | related | 0.46 |
-| [[bld_instruction_incident_report]] | upstream | 0.45 |
-| [[p10_lr_incident_report_builder]] | upstream | 0.42 |

@@ -17,7 +17,6 @@ keywords: [model_architecture construction, tools model architecture, tools for 
 density_score: 0.88
 related:
   - bld_tools_training_method
-  - bld_collaboration_model_architecture
   - bld_architecture_model_architecture
   - bld_tools_context_map
   - bld_tools_event_schema
@@ -53,7 +52,6 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_training_method]] | sibling | 0.43 |
-| [[bld_collaboration_model_architecture]] | downstream | 0.34 |
 | [[bld_architecture_model_architecture]] | downstream | 0.33 |
 | [[bld_tools_context_map]] | sibling | 0.33 |
 | [[bld_tools_event_schema]] | sibling | 0.32 |

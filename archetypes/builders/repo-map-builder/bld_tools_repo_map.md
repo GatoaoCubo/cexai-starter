@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F5_call"
 keywords: [repo_map construction, tools repo map, real repo map tools, symbol extraction, token budget, repo_map, builder, tools, tree-sitter, ctags]
 density_score: 0.90
-related:
-  - bld_knowledge_card_repo_map
-  - bld_instruction_repo_map
-  - bld_output_template_repo_map
-  - n05_audit_hybrid_review2
-  - p01_kc_atom_28_code_agents
 ---
 ## Symbol Extraction Tools
 | Tool | Purpose | Command / API |
@@ -75,12 +69,3 @@ related:
 | aider/repomap.py | Full Aider repo map implementation (PageRank + tree-sitter) |
 | aider/linter.py | Tree-sitter language dispatch and query patterns |
 | github.com/paul-gauthier/aider | Reference implementation for repo_map concept |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_repo_map]] | upstream | 0.52 |
-| [[bld_instruction_repo_map]] | upstream | 0.40 |
-| [[bld_output_template_repo_map]] | downstream | 0.36 |
-| [[n05_audit_hybrid_review2]] | downstream | 0.30 |
-| [[p01_kc_atom_28_code_agents]] | upstream | 0.27 |

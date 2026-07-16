@@ -28,10 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, trace config construction, config trace config, trace_config, builder, examples, "p07_tc_{{name}}.yaml"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_trace_config
-  - bld_output_template_trace_config
-  - p07_tc_opentelemetry
-  - p11_qg_trace_config
   - bld_config_memory_scope
 ---
 # Config: trace_config Production Rules
@@ -77,8 +73,4 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_trace_config]] | upstream | 0.33 |
-| [[bld_output_template_trace_config]] | upstream | 0.28 |
-| [[p07_tc_opentelemetry]] | upstream | 0.28 |
-| [[p11_qg_trace_config]] | downstream | 0.26 |
 | [[bld_config_memory_scope]] | sibling | 0.25 |

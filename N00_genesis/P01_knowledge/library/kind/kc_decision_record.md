@@ -19,10 +19,7 @@ feeds_kinds: [decision_record]
 density_score: null
 related:
   - decision-record-builder
-  - bld_knowledge_card_decision_record
-  - bld_collaboration_decision_record
   - bld_architecture_decision_record
-  - p10_lr_decision_record_builder
 ---
 
 # Decision Record
@@ -98,4 +95,3 @@ law, pattern, component_map --> [decision_record] --> law (consequent), pattern
 | [[bld_knowledge_decision_record]] | sibling | 0.54 |
 | [[bld_orchestration_decision_record]] | downstream | 0.52 |
 | [[bld_architecture_decision_record]] | related | 0.49 |
-| [[p10_lr_decision_record_builder]] | downstream | 0.48 |

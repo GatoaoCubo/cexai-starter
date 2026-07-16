@@ -17,10 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of agent, and architectural position, agent construction, architecture agent, agent, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_agent
-  - p01_kc_agent
   - agent-builder
-  - bld_knowledge_card_agent
   - agent-profile-builder
 ---
 # Architecture: agent in the CEX

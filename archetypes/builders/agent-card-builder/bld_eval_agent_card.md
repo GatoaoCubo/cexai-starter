@@ -23,11 +23,7 @@ updated: '2026-03-27'
 keywords: [agent_group spec, agent_card, quality gate, scoring dimensions]
 density_score: 0.97
 related:
-  - p11_qg_dispatch_rule
   - agent-card-builder
-  - p11_qg_agent
-  - bld_collaboration_agent_card
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 
@@ -133,6 +129,5 @@ WHY THIS IS GOLDEN:
 |----------|-------------|-------|
 | p11_qg_dispatch_rule | sibling | 0.36 |
 | [[agent-card-builder]] | upstream | 0.34 |
-| [[p11_qg_agent]] | sibling | 0.34 |
 | [[bld_orchestration_agent_card]] | upstream | 0.33 |
 | p11_qg_quality_gate | sibling | 0.33 |

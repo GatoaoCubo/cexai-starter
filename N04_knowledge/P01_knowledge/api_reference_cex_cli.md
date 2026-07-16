@@ -21,10 +21,6 @@ keywords:
   - "the Task tool"
   - "CLI flags"
   - "developer reference"
-related:
-  - p05_qs_cexai_operator
-  - p05_of_cexai_first_mission
-  - p01_faq_cexai_user
 density_score: 0.95
 ---
 
@@ -427,7 +423,4 @@ prints the resolved boot target only.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_qs_cexai_operator]] | upstream | 0.75 |
-| [[p05_of_cexai_first_mission]] | upstream | 0.65 |
 | p01_faq_cexai_user | sibling | 0.55 |
-| [[p01_faq_cex_common_questions]] | sibling | 0.40 |

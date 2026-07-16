@@ -19,11 +19,9 @@ keywords: [langchain_comparison, ollama_offline, runtime_switching, learning_cur
 density_score: null
 related:
   - p01_kc_whitepaper_glossary
-  - p01_faq_cex_common_questions
   - kc_knowledge_vocabulary
   - p01_kc_concept_graph
   - faq-entry-builder
-  - n00_faq_entry_manifest
   - p02_mm_cex_architecture_n04
   - contributor_guide_cex
   - changelog_cex_v1
@@ -127,7 +125,6 @@ Yes. The 88 tools at `_tools/cex_*.py` are independent Python scripts with docum
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[p01_kc_whitepaper_glossary]] | sibling | 0.55 |
-| [[p01_faq_cex_common_questions]] | upstream | 0.50 |
 | [[kc_knowledge_vocabulary]] | related | 0.40 |
 | [[p02_mm_cex_architecture_n04]] | related | 0.40 |
 | contributor_guide_cex | related | 0.35 |

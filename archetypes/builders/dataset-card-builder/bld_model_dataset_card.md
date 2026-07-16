@@ -19,12 +19,6 @@ this, crew role
 serving, identity
 you]
 density_score: 0.85
-related:
-  - bld_knowledge_card_dataset_card
-  - p01_kc_dataset_card
-  - p10_lr_dataset_card_builder
-  - bld_collaboration_dataset_card
-  - n00_dataset_card_manifest
 ---
 ## Identity
 ## Identity
@@ -65,6 +59,5 @@ You are the Dataset Card Builder, a specialized technical agent engineered to ge
 |----------|-------------|-------|
 | [[bld_knowledge_dataset_card]] | related | 0.41 |
 | [[kc_dataset_card]] | related | 0.41 |
-| [[p10_lr_dataset_card_builder]] | downstream | 0.35 |
 | [[bld_orchestration_dataset_card]] | downstream | 0.31 |
 | n00_dataset_card_manifest | related | 0.27 |

@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for sdk_example, sdk_example construction, type builder sdk example, sdk_example, builder, type_builder, generate sdk code, integration example, language-specific implementation]
 density_score: 0.85
 related:
-  - p10_lr_sdk_example_builder
-  - bld_instruction_sdk_example
   - integration-guide-builder
-  - kc_sdk_example
   - api-reference-builder
 ---
 ## Identity
@@ -69,8 +66,5 @@ NEVER assume prior context or external state without explicit documentation
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_sdk_example_builder]] | downstream | 0.36 |
-| [[bld_instruction_sdk_example]] | upstream | 0.34 |
 | [[integration-guide-builder]] | sibling | 0.33 |
-| [[kc_sdk_example]] | upstream | 0.31 |
 | [[api-reference-builder]] | sibling | 0.30 |

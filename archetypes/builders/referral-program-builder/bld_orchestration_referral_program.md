@@ -19,11 +19,7 @@ designs, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_pricing_page
   - referral-program-builder
-  - p11_qg_referral_program
-  - bld_collaboration_prompt_technique
-  - bld_collaboration_rbac_policy
 ---
 ## Crew Role  
 Designs and manages referral program logic, tracking, and integration with external systems.  
@@ -48,8 +44,4 @@ Does NOT handle A/B test configurations (experiment_config-builder) or pricing m
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_pricing_page]] | sibling | 0.36 |
 | [[referral-program-builder]] | upstream | 0.24 |
-| [[p11_qg_referral_program]] | upstream | 0.21 |
-| [[bld_collaboration_prompt_technique]] | sibling | 0.21 |
-| [[bld_collaboration_rbac_policy]] | sibling | 0.20 |

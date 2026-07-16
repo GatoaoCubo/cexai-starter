@@ -28,10 +28,6 @@ keywords:
 density_score: 0.85
 related:
   - bld_architecture_agent_name_service_record
-  - bld_manifest_agent_name_service_record
-  - bld_knowledge_card_agent_name_service_record
-  - bld_output_template_agent_name_service_record
-  - bld_instruction_agent_name_service_record
 ---
 # Agent Name Service Record Builder -- Collaboration
 
@@ -142,7 +138,3 @@ Action required: re-register with registry_operator={operator}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_agent_name_service_record]] | upstream | 0.57 |
-| [[bld_manifest_agent_name_service_record]] | upstream | 0.56 |
-| [[bld_knowledge_card_agent_name_service_record]] | upstream | 0.50 |
-| [[bld_output_template_agent_name_service_record]] | upstream | 0.49 |
-| [[bld_instruction_agent_name_service_record]] | upstream | 0.48 |

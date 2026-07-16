@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [faq_entry construction, quality gate faq entry, faq_entry, builder, quality_gate, quality gate, fail condition, scoring guide, audit trail, senior editor]
 density_score: 0.85
-related:
-  - p05_qg_integration_guide
-  - p06_qg_api_reference
-  - p01_kc_faq_entry
-  - p01_kc_stripe_patterns
-  - n00_faq_entry_manifest
 ---
 ## Quality Gate
 

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [press_release construction, press release quality gate, hard gates and, scored dimensions, to publish, for golden status, press_release]
 density_score: 0.85
 related:
-  - bld_instruction_press_release
-  - p11_qg_quality_gate
   - bld_schema_press_release
-  - bld_output_template_press_release
-  - p11_qg_kind_builder
 ---
 ## Quality Gate
 ## Definition

@@ -19,10 +19,7 @@ the model registry, key concepts, model versioning, ops standards, model lineage
 density_score: 0.85
 related:
   - model-registry-builder
-  - kc_model_registry
   - bld_tools_model_registry
-  - bld_collaboration_model_card
-  - bld_collaboration_model_registry
 ---
 ## Domain Overview
 The Model Registry serves as the central nervous system for MLOps, acting as a centralized repository for managing the lifecycle of machine learning models. Unlike simple storage, a registry provides the governance, versioning, and metadata management necessary to transition models from experimental training phases to production-ready assets.
@@ -60,7 +57,4 @@ In enterprise environments, the registry enables organizational scalability by p
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[model-registry-builder]] | downstream | 0.55 |
-| [[kc_model_registry]] | sibling | 0.54 |
 | [[bld_tools_model_registry]] | downstream | 0.38 |
-| [[bld_collaboration_model_card]] | downstream | 0.37 |
-| [[bld_collaboration_model_registry]] | downstream | 0.33 |

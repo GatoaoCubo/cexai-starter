@@ -30,12 +30,6 @@ tldr: Golden and anti-examples for chain construction, demonstrating ideal struc
 llm_function: BECOME
 parent: null
 8f: "F3_inject"
-related:
-  - bld_collaboration_chain
-  - p10_lr_chain_builder
-  - p01_kc_chain
-  - bld_knowledge_card_chain
-  - p11_qg_chain
 ---
 ## Identity
 

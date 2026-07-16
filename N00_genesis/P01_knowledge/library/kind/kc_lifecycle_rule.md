@@ -18,11 +18,7 @@ keywords: [freshness, archive, promote]
 feeds_kinds: [lifecycle_rule]
 density_score: null
 related:
-  - bld_manifest_lifecycle_rule
-  - bld_collaboration_lifecycle_rule
   - bld_memory_lifecycle_rule
-  - p11_qg_lifecycle_rule
-  - bld_knowledge_card_lifecycle_rule
 ---
 
 # Lifecycle Rule
@@ -95,8 +91,6 @@ A lifecycle rule is a declarative, evaluable policy that governs when artifacts 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_lifecycle_rule]] | related | 0.38 |
 | [[bld_orchestration_lifecycle_rule]] | related | 0.33 |
 | [[bld_memory_lifecycle_rule]] | upstream | 0.32 |
-| [[p11_qg_lifecycle_rule]] | related | 0.29 |
 | [[bld_knowledge_lifecycle_rule]] | sibling | 0.27 |

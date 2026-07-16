@@ -11,12 +11,6 @@ tldr: "Function Def feedback: anti-patterns, regression signals, and quality imp
 keywords: [function def, function def feedback, regression signals, and quality improvement triggers, feedback, anti-patterns, function_def, common failure modes, correction protocol, key behaviors]
 density_score: 1.0
 updated: "2026-04-22"
-related:
-  - p11_fb_retriever
-  - p11_fb_ab_test_config
-  - p11_fb_handoff
-  - p11_fb_prompt_version
-  - p11_fb_research_pipeline
 ---
 # Feedback: Function Def
 
@@ -80,8 +74,5 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_retriever]] | sibling | 0.77 |
 | p11_fb_ab_test_config | sibling | 0.77 |
 | p11_fb_handoff | sibling | 0.77 |
-| [[p11_fb_prompt_version]] | sibling | 0.76 |
-| [[p11_fb_research_pipeline]] | sibling | 0.76 |

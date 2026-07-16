@@ -31,11 +31,7 @@ keywords:
   - "write seeds"
 density_score: 0.90
 related:
-  - bld_instruction_action_prompt
   - handoff-builder
-  - bld_knowledge_card_handoff
-  - bld_collaboration_handoff
-  - bld_instruction_instruction
 ---
 # Instructions: How to Produce a handoff
 ## Phase 1: RESEARCH
@@ -100,8 +96,4 @@ python _tools/cex_skill_loader.py --verify handoff
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_action_prompt]] | sibling | 0.38 |
 | [[handoff-builder]] | downstream | 0.37 |
-| [[bld_knowledge_card_handoff]] | upstream | 0.37 |
-| [[bld_collaboration_handoff]] | downstream | 0.37 |
-| [[bld_instruction_instruction]] | sibling | 0.35 |

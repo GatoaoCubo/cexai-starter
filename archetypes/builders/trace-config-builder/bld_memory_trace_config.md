@@ -33,10 +33,6 @@ keywords: [memory trace config, no prompt capture, tier retention, f span mappin
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_trace_config
-  - p11_qg_trace_config
-  - bld_instruction_trace_config
-  - p01_kc_trace_config
   - trace-config-builder
 ---
 ## Summary
@@ -77,8 +73,4 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_trace_config]] | upstream | 0.44 |
-| [[p11_qg_trace_config]] | downstream | 0.38 |
-| [[bld_instruction_trace_config]] | upstream | 0.29 |
-| [[p01_kc_trace_config]] | upstream | 0.29 |
 | [[trace-config-builder]] | upstream | 0.25 |

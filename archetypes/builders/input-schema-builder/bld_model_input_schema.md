@@ -30,10 +30,7 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_knowledge_card_input_schema
-  - bld_instruction_input_schema
   - interface-builder
-  - p01_kc_pillar_brief_p06_schema_en
   - validation-schema-builder
 ---
 ## Identity

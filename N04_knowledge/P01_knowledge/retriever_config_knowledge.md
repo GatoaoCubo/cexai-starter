@@ -19,11 +19,8 @@ tldr: "Defines the default vector similarity search retriever for N04, configure
 keywords: [retriever config knowledge, retriever, config, knowledge, search_type, similarity, vector_db, distance_metric, embedding_config, store_type]
 density_score: 0.94
 related:
-  - p01_retriever_config
   - retriever-builder
   - bld_architecture_retriever
-  - p01_kc_retriever
-  - n00_retriever_manifest
 slots:
   query_text: "<the retrieval query>"
   top_k: "<how many results to return>"

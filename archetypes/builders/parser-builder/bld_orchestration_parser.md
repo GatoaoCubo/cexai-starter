@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [parser construction, collaboration parser, parser, builder, examples, "### crew: scraper + extractor", "### crew: agent output routing", my role, crew compositions, output processing pipeline]
 density_score: 0.90
 related:
-  - bld_collaboration_response_format
   - parser-builder
-  - bld_collaboration_output_validator
   - bld_architecture_parser
-  - bld_collaboration_validation_schema
 ---
 # Collaboration: parser-builder
 ## My Role in Crews

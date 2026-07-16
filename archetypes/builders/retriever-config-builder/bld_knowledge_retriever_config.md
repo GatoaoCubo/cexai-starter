@@ -31,11 +31,7 @@ keywords:
   - "chain base"
 density_score: 0.90
 related:
-  - p10_lr_retriever_config_builder
-  - p01_kc_retriever
   - retriever-builder
-  - p01_retriever_config
-  - p11_qg_retriever_config
 ---
 # Domain Knowledge: retriever_config
 ## Executive Summary
@@ -76,8 +72,6 @@ Retrieval parameters — how to search and rank chunks from a vector/hybrid stor
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_retriever_config_builder]] | downstream | 0.47 |
 | [[kc_retriever]] | sibling | 0.38 |
 | [[retriever-builder]] | downstream | 0.37 |
 | p01_retriever_config | related | 0.37 |
-| [[p11_qg_retriever_config]] | downstream | 0.36 |

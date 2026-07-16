@@ -19,10 +19,6 @@ keywords: [feature flag construction, collaboration feature flag, feature_flag, 
 density_score: 0.90
 related:
   - feature-flag-builder
-  - bld_knowledge_card_feature_flag
-  - bld_collaboration_env_config
-  - p01_kc_feature_flag
-  - p10_lr_feature_flag_builder
 ---
 # Collaboration: feature-flag-builder
 ## My Role in Crews
@@ -65,7 +61,3 @@ None — independent builder (layer 0). Flags are defined from product requireme
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[feature-flag-builder]] | upstream | 0.52 |
-| [[bld_knowledge_card_feature_flag]] | upstream | 0.42 |
-| [[bld_collaboration_env_config]] | sibling | 0.42 |
-| [[p01_kc_feature_flag]] | upstream | 0.35 |
-| [[p10_lr_feature_flag_builder]] | upstream | 0.33 |

@@ -32,11 +32,8 @@ keywords: [naming rule builder instructions, classify naming scope, naming_rule,
 density_score: 0.88
 llm_function: REASON
 related:
-  - bld_knowledge_card_naming_rule
   - naming-rule-builder
   - bld_memory_naming_rule
-  - bld_collaboration_naming_rule
-  - p11_qg_naming_rule
 ---
 ## Context
 The naming-rule-builder receives a **scope definition** and produces a `naming_rule` artifact encoding the naming convention for that scope.

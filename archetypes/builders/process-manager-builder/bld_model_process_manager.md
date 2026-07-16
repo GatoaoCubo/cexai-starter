@@ -19,10 +19,7 @@ domain: process_manager
 triggers: ["define process manager", "route domain events", "coordinate multi-step process"]
 keywords: [process_manager, eip, saga, choreography, event_routing, command_dispatch]
 related:
-  - kc_process_manager
   - bld_architecture_process_manager
-  - bld_rules_process_manager
-  - bld_instruction_process_manager
   - bld_memory_process_manager
 ---
 ## Identity
@@ -89,8 +86,5 @@ supervisor manages agent hierarchies. You only handle event-driven process coord
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_process_manager]] | sibling | 0.54 |
 | [[bld_architecture_process_manager]] | sibling | 0.52 |
-| [[bld_rules_process_manager]] | sibling | 0.48 |
-| [[bld_instruction_process_manager]] | related | 0.48 |
 | [[bld_memory_process_manager]] | sibling | 0.47 |

@@ -18,10 +18,7 @@ keywords: [component map of lens, and architectural position, lens construction,
 density_score: 0.90
 related:
   - lens-builder
-  - p03_ins_lens
   - bld_memory_lens
-  - bld_knowledge_card_lens
-  - bld_collaboration_lens
 ---
 # Architecture: lens in the CEX
 ## Component Inventory
@@ -70,7 +67,6 @@ lens            --signals-->   analysis_result
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[lens-builder]] | upstream | 0.70 |
-| [[p03_ins_lens]] | upstream | 0.60 |
 | [[bld_memory_lens]] | downstream | 0.59 |
 | [[bld_knowledge_lens]] | upstream | 0.57 |
 | [[bld_orchestration_lens]] | upstream | 0.57 |

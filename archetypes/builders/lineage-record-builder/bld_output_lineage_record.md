@@ -31,10 +31,6 @@ keywords:
 density_score: null
 related:
   - bld_schema_lineage_record
-  - kc_lineage_record
-  - bld_quality_gate_lineage_record
-  - bld_instruction_lineage_record
-  - bld_rules_lineage_record
 ---
 # Output Template: lineage_record
 
@@ -88,7 +84,3 @@ tldr: "Provenance chain for {{target_artifact_id}}: {{sources_count}} sources, {
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_lineage_record]] | downstream | 0.43 |
-| [[kc_lineage_record]] | sibling | 0.36 |
-| [[bld_quality_gate_lineage_record]] | downstream | 0.36 |
-| [[bld_instruction_lineage_record]] | upstream | 0.33 |
-| [[bld_rules_lineage_record]] | sibling | 0.33 |

@@ -25,13 +25,9 @@ slots:
   target_audience: "n07 orchestrator, n03 builder, cex operators"
 tldr: "Every builder spawn pays ~30k boot tokens; Phase A+A.5 cuts 10.2k/spawn (~32-35%) via a stable shared prefix + claudeMdExcludes that de-auto-loads N07-only rules for n01-n06. OFF = byte-identical fallback. Constitution never excludable."
 related:
-  - rule_n07_admin
   - nucleus_def_n07
   - nucleus_def_n01
   - nucleus_def_n06
-  - bld_knowledge_card_nucleus_def
-  - p01_rm_cex
-  - bld_collaboration_nucleus_def
   - nucleus_def_n05
   - p02_mm_cex_architecture_n04
   - nucleus_def_n03
@@ -171,7 +167,6 @@ https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[rule_n07_admin]] | downstream | 0.39 |
 | [[nucleus_def_n07]] | downstream | 0.36 |
 | [[nucleus_def_n01]] | downstream | 0.35 |
 | [[nucleus_def_n06]] | downstream | 0.33 |

@@ -31,7 +31,6 @@ related:
   - bld_schema_kind_manifest
   - bld_config_kind
   - bld_config_knowledge_card
-  - bld_output_template_kind_manifest
   - bld_config_output_template
 ---
 # Config: kind_manifest Production Rules
@@ -84,5 +83,4 @@ python _tools/cex_score.py --apply bld-config-kind-manifest.md
 | [[bld_schema_kind_manifest]] | upstream | 0.42 |
 | [[bld_config_kind]] | sibling (reflexive-case source) | 0.38 |
 | [[bld_config_knowledge_card]] | sibling (former mis-type contrast) | 0.36 |
-| [[bld_output_template_kind_manifest]] | upstream | 0.33 |
 | [[bld_config_output_template]] | sibling | 0.30 |

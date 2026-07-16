@@ -32,10 +32,6 @@ created: "2026-04-17"
 updated: "2026-04-22"
 related:
   - bld_eval_default
-  - p11_fb_quality_gate
-  - p11_fb_pattern
-  - p11_fb_kind
-  - p11_fb_data_contract
 ---
 # P11 Feedback — Universal Anti-Patterns
 
@@ -122,6 +118,4 @@ After any build where the following occurred, write a learning_record:
 |----------|-------------|-------|
 | [[bld_eval_default]] | sibling | 0.53 |
 | p11_fb_quality_gate | sibling | 0.53 |
-| [[p11_fb_pattern]] | sibling | 0.52 |
 | p11_fb_kind | sibling | 0.52 |
-| [[p11_fb_data_contract]] | sibling | 0.51 |

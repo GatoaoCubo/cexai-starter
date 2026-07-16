@@ -18,10 +18,7 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - kc_constitutional_rule
-  - bld_manifest_constitutional_rule
   - bld_memory_constitutional_rule
-  - bld_rules_constitutional_rule
-  - bld_output_template_constitutional_rule
 ---
 # Architecture: constitutional_rule
 ## Pattern Origin
@@ -85,7 +82,4 @@ python _tools/cex_doctor.py --scope architecture
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_constitutional_rule]] | sibling | 0.50 |
-| [[bld_manifest_constitutional_rule]] | sibling | 0.41 |
 | [[bld_memory_constitutional_rule]] | sibling | 0.39 |
-| [[bld_rules_constitutional_rule]] | sibling | 0.37 |
-| [[bld_output_template_constitutional_rule]] | related | 0.36 |

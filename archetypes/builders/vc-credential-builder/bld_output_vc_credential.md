@@ -34,8 +34,6 @@ keywords:
 density_score: 0.85
 related:
   - bld_schema_vc_credential
-  - p10_qg_vc_credential
-  - bld_instruction_vc_credential
   - bld_tools_vc_credential
 ---
 ```yaml
@@ -125,6 +123,4 @@ updated: "{{date}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_vc_credential]] | downstream | 0.46 |
-| [[p10_qg_vc_credential]] | downstream | 0.43 |
-| [[bld_instruction_vc_credential]] | upstream | 0.42 |
 | [[bld_tools_vc_credential]] | upstream | 0.32 |

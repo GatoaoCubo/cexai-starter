@@ -31,11 +31,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_collaboration_preference_dataset
-  - p11_lr_preference_dataset_builder
-  - bld_knowledge_card_preference_dataset
   - bld_architecture_preference_dataset
-  - bld_instruction_preference_dataset
 ---
 ## Identity
 
@@ -157,8 +153,4 @@ agreement_rate: float 0.0-1.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_preference_dataset]] | downstream | 0.64 |
-| [[p11_lr_preference_dataset_builder]] | related | 0.56 |
-| [[bld_knowledge_card_preference_dataset]] | upstream | 0.54 |
 | [[bld_architecture_preference_dataset]] | upstream | 0.53 |
-| [[bld_instruction_preference_dataset]] | upstream | 0.51 |

@@ -17,10 +17,7 @@ density_score: 1.0
 title: Knowledge Card ISO - notifier
 related:
   - notifier-builder
-  - bld_instruction_notifier
-  - p01_kc_notifier
   - bld_config_notifier
-  - bld_output_template_notifier
 ---
 # Knowledge Card: Notification Delivery
 
@@ -69,7 +66,4 @@ low      -> daily digest, grouped by type, skipped if user opted out
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[notifier-builder]] | related | 0.47 |
-| [[bld_instruction_notifier]] | upstream | 0.46 |
-| [[p01_kc_notifier]] | sibling | 0.39 |
 | [[bld_config_notifier]] | related | 0.39 |
-| [[bld_output_template_notifier]] | related | 0.38 |

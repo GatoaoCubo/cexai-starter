@@ -19,10 +19,7 @@ feeds_kinds: [lens]
 density_score: null
 related:
   - bld_architecture_lens
-  - bld_collaboration_lens
   - lens-builder
-  - p03_ins_lens
-  - p01_kc_agent
 ---
 
 # Lens
@@ -98,5 +95,4 @@ A lens is a specialized perspective injected into an agent to shift its reasonin
 | [[bld_architecture_lens]] | downstream | 0.54 |
 | [[bld_orchestration_lens]] | related | 0.54 |
 | [[lens-builder]] | related | 0.53 |
-| [[p03_ins_lens]] | downstream | 0.51 |
 | [[kc_agent]] | sibling | 0.50 |

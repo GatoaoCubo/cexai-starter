@@ -17,9 +17,6 @@ keywords: [text-embedding-004, jina-embeddings-v2-base-en, cosine similarity, ve
 density_score: 0.91
 related:
   - embedding-config-builder
-  - p01_kc_embedding_config
-  - p03_ins_embedder_provider
-  - bld_collaboration_model_provider
   - embedder-provider-builder
 slots:
   corpus_namespace: "<the index the vectors land in>"
@@ -103,6 +100,5 @@ You are the consuming agent that acts on this embedding_config under F3 INJECT.
 |----------|-------------|-------|
 | [[embedding-config-builder]] | related | 0.36 |
 | [[kc_embedding_config]] | related | 0.32 |
-| [[p03_ins_embedder_provider]] | related | 0.32 |
 | [[bld_orchestration_model_provider]] | related | 0.30 |
 | [[embedder-provider-builder]] | related | 0.30 |

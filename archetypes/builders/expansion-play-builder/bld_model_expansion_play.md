@@ -18,12 +18,6 @@ keywords: [builder identity, routing for expansion_play, expansion_play construc
 specializes, routing
 keywords]
 density_score: 0.85
-related:
-  - bld_knowledge_card_expansion_play
-  - bld_instruction_expansion_play
-  - n00_expansion_play_manifest
-  - p10_mem_expansion_play_builder
-  - kc_expansion_play
 ---
 ## Identity
 
@@ -70,12 +64,3 @@ ALWAYS map the account to minimum two stakeholders (buyer + champion) before str
 NEVER build expansion plays without current product usage data as input.
 NEVER use vague language ("when the time is right", "strong adoption") -- replace with measurable signals.
 NEVER conflate expansion plays with renewal workflows -- expansion is net-new ARR within existing accounts.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_expansion_play]] | upstream | 0.68 |
-| [[bld_instruction_expansion_play]] | related | 0.60 |
-| [[n00_expansion_play_manifest]] | related | 0.50 |
-| [[p10_mem_expansion_play_builder]] | downstream | 0.49 |
-| [[kc_expansion_play]] | upstream | 0.48 |

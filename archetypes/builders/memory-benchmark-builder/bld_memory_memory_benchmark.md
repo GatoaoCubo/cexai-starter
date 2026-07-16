@@ -19,12 +19,6 @@ common, pattern
 modular, evidence
 reviewed, related artifacts, workload diversity]
 density_score: 0.85
-related:
-  - p10_lr_judge_config_builder
-  - p10_mem_trajectory_eval_builder
-  - p10_mem_eval_metric_builder
-  - p10_lr_playground_config_builder
-  - p10_mem_prompt_optimizer_builder
 ---
 ## Observation
 Common issues include inconsistent metric definitions, limited workload diversity, and poor reproducibility due to environment-specific configurations. Artifacts often prioritize single-use cases over comprehensive coverage, leading to incomplete evaluations.
@@ -41,12 +35,3 @@ Reviewed artifacts using standardized metrics (e.g., latency, throughput) showed
 - Automate environment configuration to ensure reproducibility.
 - Document dependencies and execution pipelines explicitly.
 - Include failure modes and error injection tests for robustness validation.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p10_lr_judge_config_builder]] | related | 0.31 |
-| [[p10_mem_trajectory_eval_builder]] | sibling | 0.29 |
-| [[p10_mem_eval_metric_builder]] | sibling | 0.26 |
-| [[p10_lr_playground_config_builder]] | related | 0.26 |
-| [[p10_mem_prompt_optimizer_builder]] | sibling | 0.25 |

@@ -18,10 +18,6 @@ keywords: [component map of dispatch_rule, and architectural position, dispatch 
 density_score: 0.90
 related:
   - dispatch-rule-builder
-  - bld_collaboration_dispatch_rule
-  - p01_kc_dispatch_rule
-  - n00_dispatch_rule_manifest
-  - bld_instruction_dispatch_rule
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -76,7 +72,3 @@ workflow (P12) --independent-- dispatch_rule (workflow sequences steps, DR route
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[dispatch-rule-builder]] | downstream | 0.58 |
-| [[bld_collaboration_dispatch_rule]] | downstream | 0.48 |
-| [[p01_kc_dispatch_rule]] | downstream | 0.46 |
-| [[n00_dispatch_rule_manifest]] | downstream | 0.41 |
-| [[bld_instruction_dispatch_rule]] | upstream | 0.38 |

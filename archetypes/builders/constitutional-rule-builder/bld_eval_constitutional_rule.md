@@ -25,11 +25,8 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - bld_output_template_constitutional_rule
   - bld_schema_constitutional_rule
   - kc_constitutional_rule
-  - bld_instruction_constitutional_rule
-  - p11_qg_guardrail
 ---
 ## Quality Gate
 

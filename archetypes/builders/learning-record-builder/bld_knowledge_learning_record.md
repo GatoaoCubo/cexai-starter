@@ -19,7 +19,6 @@ keywords: [atomic searchable facts, learning record construction, knowledge card
 density_score: 0.90
 related:
   - bld_memory_learning_record
-  - p03_ins_learning_record
   - learning-record-builder
   - skill_memory_update
   - bld_schema_learning_record
@@ -84,7 +83,6 @@ Learning records are persistent experience captures — structured retrospective
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_learning_record]] | related | 0.58 |
-| [[p03_ins_learning_record]] | upstream | 0.39 |
 | [[learning-record-builder]] | related | 0.34 |
 | [[skill_memory_update]] | related | 0.32 |
 | [[bld_schema_learning_record]] | upstream | 0.31 |

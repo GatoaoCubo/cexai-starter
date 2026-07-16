@@ -17,9 +17,6 @@ updated: "2026-04-13"
 keywords: [repo_map construction, output template repo map, repo map template, symbol table, pagerank scores, token budget, file selection heuristics, repo_map, builder, output_template]
 density_score: 0.90
 related:
-  - bld_instruction_repo_map
-  - bld_knowledge_card_repo_map
-  - p01_qg_repo_map
   - bld_tools_repo_map
   - bld_schema_repo_map
 ---
@@ -126,8 +123,5 @@ extraction_method: "{{method}}"     # tree-sitter | ctags | hybrid
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_repo_map]] | upstream | 0.59 |
-| [[bld_knowledge_card_repo_map]] | upstream | 0.52 |
-| [[p01_qg_repo_map]] | downstream | 0.38 |
 | [[bld_tools_repo_map]] | upstream | 0.34 |
 | [[bld_schema_repo_map]] | downstream | 0.28 |

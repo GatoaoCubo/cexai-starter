@@ -19,8 +19,6 @@ density_score: 0.85
 related:
   - opportunity-matrix-builder
   - bld_config_opportunity_matrix
-  - p08_adr_opportunity_matrix_kind
-  - bld_instruction_opportunity_matrix
   - roi-calculator-builder
 ---
 ## Crew Role

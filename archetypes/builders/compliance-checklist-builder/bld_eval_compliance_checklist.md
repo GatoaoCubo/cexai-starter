@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [compliance_checklist construction, quality gate compliance checklist, compliance_checklist, builder, quality_gate, "## anti-example 1: missing specific controls", quality gate, fail condition, scoring guide, golden example]
 density_score: 0.85
 related:
-  - bld_instruction_compliance_checklist
   - compliance-checklist-builder
-  - p09_qg_data_residency
-  - kc_compliance_checklist
-  - p10_mem_compliance_checklist_builder
 ---
 ## Quality Gate
 

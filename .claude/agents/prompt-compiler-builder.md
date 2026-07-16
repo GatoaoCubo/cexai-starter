@@ -4,10 +4,8 @@ description: "Builds ONE prompt_compiler artifact via 8F pipeline. Loads prompt-
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p03_prompt_en
   - prompt-compiler-builder
   - system-prompt-builder
-  - p03_sp_builder_nucleus
   - kind-builder
 ---
 
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_pillar_brief_p03_prompt_en]] | related | 0.35 |
 | [[prompt-compiler-builder]] | related | 0.35 |
 | [[system-prompt-builder]] | related | 0.34 |
-| [[p03_sp_builder_nucleus]] | related | 0.33 |
 | [[kind-builder]] | related | 0.33 |

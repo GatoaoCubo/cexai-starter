@@ -18,11 +18,7 @@ updated: 2026-03-31
 keywords: [stage completeness, source diversity, crag thresholds, critic verification, budget controls, quality-gate, research-pipeline]
 density_score: 1.0
 related:
-  - p02_agent_research_pipeline_intelligence
-  - tpl_research_pipeline
-  - bld_instruction_research_pipeline
   - research-pipeline-builder
-  - p04_rp_marketing_nucleus
 ---
 ## Quality Gate
 

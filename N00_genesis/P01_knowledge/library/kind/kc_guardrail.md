@@ -13,9 +13,6 @@ density_score: 1.0
 related:
   - content-filter-builder
   - bld_tools_content_filter
-  - p01_kc_atom_25_safety_taxonomy
-  - bld_knowledge_card_content_filter
-  - p05_output_validator
 ---
 
 # LLM Safety Guardrails

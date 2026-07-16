@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [white_label_config construction, white_label_config, builder, quality_gate, quality gate, fail condition, scoring guide, golden example, acme corp, partial absent]
 density_score: 0.85
 related:
-  - n00_white_label_config_manifest
   - white-label-config-builder
-  - bld_knowledge_card_white_label_config
-  - p10_mem_white_label_config_builder
-  - p09_qg_marketplace_app_manifest
 ---
 ## Quality Gate
 

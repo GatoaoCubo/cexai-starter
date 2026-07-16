@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [repo_map construction, knowledge card repo map, repo map, pagerank file ranking, token budget, file selection heuristics, repo_map]
 density_score: 0.92
 related:
-  - bld_instruction_repo_map
-  - bld_output_template_repo_map
   - bld_tools_repo_map
-  - p01_qg_repo_map
-  - p01_kc_atom_28_code_agents
 ---
 ## Domain Overview
 Repo_map is the codebase context strategy pioneered by Aider (github.com/paul-gauthier/aider).
@@ -129,8 +125,4 @@ Exclusion rules:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_repo_map]] | downstream | 0.59 |
-| [[bld_output_template_repo_map]] | downstream | 0.50 |
 | [[bld_tools_repo_map]] | downstream | 0.44 |
-| [[p01_qg_repo_map]] | downstream | 0.41 |
-| [[p01_kc_atom_28_code_agents]] | sibling | 0.30 |

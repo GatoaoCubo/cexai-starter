@@ -4,10 +4,8 @@ description: "Builds ONE constitutional_rule artifact via 8F pipeline. Loads con
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_manifest_constitutional_rule
   - bld_tools_constitutional_rule
   - kind-builder
-  - p03_sp_builder_nucleus
   - system-prompt-builder
 ---
 
@@ -86,7 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_constitutional_rule]] | related | 0.35 |
 | [[bld_tools_constitutional_rule]] | related | 0.33 |
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.31 |

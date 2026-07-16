@@ -20,7 +20,6 @@ density_score: 0.98
 related:
   - kno_vector_store_n01
   - kno_vector_store_n05
-  - bld_collaboration_vector_store
   - kno_vector_store_n02
 ---
 <!-- 8F: F1=vector_store/P01 F2=vector-store-builder F3=nucleus_def_n03+kc_vector_store+P01_schema F4=metadata-rich store for engineering retrieval

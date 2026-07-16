@@ -28,11 +28,7 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_model_card
   - bld_memory_model_card
-  - p03_ins_model_card
-  - bld_collaboration_model_provider
-  - bld_knowledge_card_model_card
 ---
 ## Identity
 
@@ -125,8 +121,4 @@ Body sections: Overview, Capabilities Matrix (boolean table with sources), Prici
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_card]] | related | 0.52 |
 | [[bld_memory_model_card]] | downstream | 0.46 |
-| [[p03_ins_model_card]] | downstream | 0.42 |
-| [[bld_collaboration_model_provider]] | related | 0.41 |
-| [[bld_knowledge_card_model_card]] | upstream | 0.40 |

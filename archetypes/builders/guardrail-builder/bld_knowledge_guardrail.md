@@ -19,11 +19,7 @@ keywords: [safety boundary specification, guardrail construction, knowledge card
 guardrails, spec table, anthropic usage policy]
 density_score: 0.90
 related:
-  - p10_lr_guardrail_builder
   - guardrail-builder
-  - bld_instruction_guardrail
-  - p11_qg_guardrail
-  - bld_collaboration_guardrail
 ---
 # Domain Knowledge: guardrail
 ## Executive Summary
@@ -81,8 +77,6 @@ Guardrails are external safety boundaries that prevent agents from causing damag
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_guardrail_builder]] | downstream | 0.50 |
 | [[guardrail-builder]] | downstream | 0.48 |
 | [[bld_prompt_guardrail]] | downstream | 0.45 |
-| [[p11_qg_guardrail]] | downstream | 0.41 |
 | [[bld_orchestration_guardrail]] | downstream | 0.31 |

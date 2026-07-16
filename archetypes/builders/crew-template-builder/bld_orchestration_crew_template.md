@@ -18,11 +18,7 @@ keywords: [crew_template construction, collaboration crew template, crew_templat
 acts, receives from, produces for]
 density_score: 0.87
 related:
-  - bld_collaboration_role_assignment
   - crew-template-builder
-  - bld_collaboration_handoff_protocol
-  - bld_collaboration_pipeline_template
-  - bld_collaboration_agent
 ---
 ## Crew Role
 Acts as the team-architect of P12 orchestration: composes role_assignment atoms into reusable crew blueprints. Upstream from supervisor (which instantiates and runs the crew) and workflow (which may sequence multiple crews).

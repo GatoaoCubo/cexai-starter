@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [nps_survey construction, instruction nps survey, nps_survey, builder, instruction, survey_id, function, version, user_type=enterprise, region=apac]
 density_score: 0.85
 related:
-  - kc_nps_survey
   - nps-survey-builder
-  - bld_knowledge_card_nps_survey
-  - n00_nps_survey_manifest
-  - bld_output_template_nps_survey
 ---
 ## Phase 1: RESEARCH  
 1. Define survey purpose: Align with P11 governance goals (e.g., customer loyalty, product feedback).  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_nps_survey]] | upstream | 0.43 |
 | [[nps-survey-builder]] | downstream | 0.41 |
-| [[bld_knowledge_card_nps_survey]] | upstream | 0.39 |
-| [[n00_nps_survey_manifest]] | downstream | 0.30 |
-| [[bld_output_template_nps_survey]] | downstream | 0.28 |

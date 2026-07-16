@@ -24,9 +24,6 @@ for, restraining forces]
 density_score: 0.90
 related:
   - pattern-builder
-  - bld_knowledge_card_pattern
-  - p03_ins_pattern
-  - p01_kc_pattern
   - bld_architecture_pattern
 ---
 # Memory: pattern-builder
@@ -87,6 +84,5 @@ python _tools/cex_score.py --apply bld-memory-pattern.md
 |----------|-------------|-------|
 | [[pattern-builder]] | upstream | 0.49 |
 | [[bld_knowledge_pattern]] | upstream | 0.45 |
-| [[p03_ins_pattern]] | upstream | 0.43 |
 | [[kc_pattern]] | upstream | 0.41 |
 | [[bld_architecture_pattern]] | upstream | 0.40 |

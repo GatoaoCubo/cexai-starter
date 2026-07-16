@@ -21,7 +21,6 @@ keywords: [ambiguity-doctrine, label-council, multi-valid, disambiguation, eval2
 long_tails: [eval2 ambiguity classes, kind assignment doctrine, CEX intent routing ambiguity]
 tldr: "12 classes cover all 49 ambiguous eval2 rows (35 raw patterns consolidated); each has a single-pick rule and multi-valid exception condition."
 related:
-  - plan_better_eval_2026_06_12
   - p03_pc_cex_universal
 ---
 

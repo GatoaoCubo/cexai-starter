@@ -18,10 +18,6 @@ keywords: [component map of hook_config, and architectural position, hook config
 density_score: 0.90
 related:
   - hook-config-builder
-  - p10_lr_hook_config_builder
-  - p11_qg_hook_config
-  - p01_kc_hook_config
-  - bld_knowledge_card_hook_config
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -80,7 +76,3 @@ python _tools/cex_score.py --apply bld-architecture-hook-config.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[hook-config-builder]] | upstream | 0.68 |
-| [[p10_lr_hook_config_builder]] | downstream | 0.57 |
-| [[p11_qg_hook_config]] | downstream | 0.57 |
-| [[p01_kc_hook_config]] | upstream | 0.55 |
-| [[bld_knowledge_card_hook_config]] | upstream | 0.54 |

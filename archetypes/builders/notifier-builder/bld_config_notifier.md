@@ -40,10 +40,7 @@ keywords:
 density_score: 1.0
 title: Config ISO - notifier
 related:
-  - bld_output_template_notifier
-  - bld_knowledge_card_notifier
   - notifier-builder
-  - bld_instruction_notifier
   - bld_schema_notifier
 ---
 # Config: notifier
@@ -112,8 +109,5 @@ best_effort:   no retry, no ACK wait, fire-and-forget
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_notifier]] | related | 0.53 |
-| [[bld_knowledge_card_notifier]] | related | 0.53 |
 | [[notifier-builder]] | related | 0.50 |
-| [[bld_instruction_notifier]] | upstream | 0.50 |
 | [[bld_schema_notifier]] | downstream | 0.42 |

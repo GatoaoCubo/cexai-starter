@@ -31,7 +31,6 @@ keywords:
   - "pipeline tools"
 density_score: 0.88
 related:
-  - tools_prompt_template_builder
   - bld_tools_collaboration_pattern
   - bld_tools_thinking_config
   - bld_tools_action_paradigm
@@ -134,7 +133,6 @@ without rewriting the full file.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[tools_prompt_template_builder]] | sibling | 0.61 |
 | [[bld_tools_collaboration_pattern]] | sibling | 0.60 |
 | [[bld_tools_thinking_config]] | sibling | 0.60 |
 | [[bld_tools_action_paradigm]] | sibling | 0.60 |

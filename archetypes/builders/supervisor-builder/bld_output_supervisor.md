@@ -31,11 +31,8 @@ keywords:
   - "| {{nucleus}} |"
 density_score: 0.90
 related:
-  - bld_instruction_supervisor
   - bld_config_supervisor
-  - p11_qg_director
   - supervisor-builder
-  - bld_knowledge_card_supervisor
 ---
 # Output Template: supervisor
 ```yaml
@@ -114,8 +111,5 @@ version: `{{version}}` | author: `{{author}}` | quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_supervisor]] | upstream | 0.45 |
 | [[bld_config_supervisor]] | downstream | 0.45 |
-| [[p11_qg_director]] | downstream | 0.44 |
 | [[supervisor-builder]] | upstream | 0.44 |
-| [[bld_knowledge_card_supervisor]] | upstream | 0.40 |

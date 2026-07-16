@@ -19,10 +19,7 @@ keywords: [cli tool construction, collaboration cli tool, cli_tool, builder, exa
 density_score: 0.90
 related:
   - cli-tool-builder
-  - bld_collaboration_hook
-  - bld_collaboration_formatter
   - bld_tools_cli_tool
-  - p01_kc_cli_tool
 ---
 # Collaboration: cli-tool-builder
 ## My Role in Crews
@@ -65,7 +62,4 @@ None — independent builder (layer 0). CLI tools can be defined standalone.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cli-tool-builder]] | upstream | 0.39 |
-| [[bld_collaboration_hook]] | sibling | 0.34 |
-| [[bld_collaboration_formatter]] | sibling | 0.30 |
 | [[bld_tools_cli_tool]] | upstream | 0.29 |
-| [[p01_kc_cli_tool]] | upstream | 0.29 |

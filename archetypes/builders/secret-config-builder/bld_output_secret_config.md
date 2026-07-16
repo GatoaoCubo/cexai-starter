@@ -20,9 +20,6 @@ backend:, paths:
 1., output template]
 density_score: 0.90
 related:
-  - secret-config-builder
-  - bld_knowledge_card_secret_config
-  - bld_instruction_secret_config
   - bld_schema_secret_config
   - bld_config_secret_config
 ---
@@ -100,7 +97,6 @@ Fallback: `{{fallback_behavior_if_provider_unavailable}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[secret-config-builder]] | downstream | 0.43 |
 | [[bld_knowledge_secret_config]] | upstream | 0.40 |
 | [[bld_prompt_secret_config]] | upstream | 0.38 |
 | [[bld_schema_secret_config]] | downstream | 0.37 |

@@ -17,11 +17,7 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - bld_output_template_axiom
-  - bld_output_template_pattern
   - bld_config_learning_record
-  - bld_output_template_runtime_rule
-  - bld_output_template_golden_test
 ---
 # Output Template: learning_record
 ```yaml
@@ -98,8 +94,5 @@ linked_artifacts:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_axiom]] | sibling | 0.36 |
-| [[bld_output_template_pattern]] | sibling | 0.31 |
 | [[bld_config_learning_record]] | downstream | 0.29 |
 | bld_output_template_runtime_rule | sibling | 0.27 |
-| [[bld_output_template_golden_test]] | sibling | 0.26 |

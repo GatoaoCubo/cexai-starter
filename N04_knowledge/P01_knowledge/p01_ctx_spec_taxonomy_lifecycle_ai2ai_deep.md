@@ -14,9 +14,7 @@ keywords: [taxonomy, lifecycle, discovery, scout, deprecation, versioning, taxon
 related:
   - p01_kc_influencer_directory_global
   - p01_kc_influencer_crm_unified
-  - p01_kc_atom_23_multiagent_protocols
   - p01_kc_llm_vocabulary_atlas
-  - p01_kc_taxonomy_completeness_audit
   - p01_ctx_spec_taxonomy_lifecycle
 ---
 

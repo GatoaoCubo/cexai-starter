@@ -19,10 +19,6 @@ keywords: [rate limiting configuration, numeric limit completeness, tier validit
 density_score: 0.90
 related:
   - rate-limit-config-builder
-  - bld_instruction_rate_limit_config
-  - bld_knowledge_card_rate_limit_config
-  - bld_collaboration_rate_limit_config
-  - bld_output_template_rate_limit_config
 ---
 ## Quality Gate
 

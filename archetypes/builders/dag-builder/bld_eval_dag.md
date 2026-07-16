@@ -17,10 +17,7 @@ updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.89
 related:
-  - p11_qg_quality_gate
-  - p11_qg_e2e_eval
   - bld_architecture_dag
-  - p11_qg_dispatch_rule
   - bld_config_dag
 ---
 ## Quality Gate

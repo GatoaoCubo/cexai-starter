@@ -21,10 +21,6 @@ reviewed, related artifacts, offline interactions]
 density_score: 0.85
 related:
   - user-journey-builder
-  - bld_instruction_user_journey
-  - bld_knowledge_card_user_journey
-  - n00_user_journey_manifest
-  - bld_collaboration_user_journey
 ---
 ## Observation
 User journey maps often omit critical touchpoints or conflate system workflows with user actions, leading to fragmented or inaccurate representations. Overemphasis on digital channels can neglect offline interactions, creating incomplete narratives.
@@ -46,7 +42,3 @@ Reviewed artifacts showed higher engagement when maps included customer quotes a
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[user-journey-builder]] | upstream | 0.42 |
-| [[bld_instruction_user_journey]] | upstream | 0.37 |
-| [[bld_knowledge_card_user_journey]] | upstream | 0.29 |
-| [[n00_user_journey_manifest]] | upstream | 0.29 |
-| [[bld_collaboration_user_journey]] | downstream | 0.28 |

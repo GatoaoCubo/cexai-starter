@@ -17,10 +17,7 @@ density_score: 0.96
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - kc_value_object
-  - bld_manifest_value_object
   - bld_architecture_value_object
-  - bld_rules_value_object
   - bld_memory_value_object
 ---
 # Knowledge: value_object
@@ -76,8 +73,5 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_value_object]] | sibling | 0.46 |
-| [[bld_manifest_value_object]] | sibling | 0.40 |
 | [[bld_architecture_value_object]] | sibling | 0.38 |
-| [[bld_rules_value_object]] | sibling | 0.37 |
 | [[bld_memory_value_object]] | sibling | 0.33 |

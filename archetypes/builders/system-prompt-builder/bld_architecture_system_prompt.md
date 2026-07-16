@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of system_prompt, and architectural position, system prompt construction, architecture system prompt, system_prompt, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_system_prompt
   - system-prompt-builder
   - bld_architecture_agent
-  - bld_collaboration_agent
-  - p01_kc_agent
 ---
 # Architecture: system_prompt in the CEX
 ## Component Inventory

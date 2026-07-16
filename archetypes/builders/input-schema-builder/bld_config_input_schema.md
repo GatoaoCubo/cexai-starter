@@ -30,8 +30,6 @@ density_score: 0.90
 related:
   - bld_schema_input_schema
   - bld_config_validation_schema
-  - bld_output_template_input_schema
-  - p10_lr_input_schema_builder
   - bld_config_env_config
 ---
 # Config: input_schema Production Rules
@@ -81,6 +79,4 @@ python _tools/cex_score.py --apply bld-config-input-schema.md
 |----------|-------------|-------|
 | [[bld_schema_input_schema]] | upstream | 0.38 |
 | [[bld_config_validation_schema]] | sibling | 0.34 |
-| [[bld_output_template_input_schema]] | upstream | 0.33 |
-| [[p10_lr_input_schema_builder]] | downstream | 0.32 |
 | [[bld_config_env_config]] | sibling | 0.31 |

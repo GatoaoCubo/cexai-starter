@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_collaboration_reward_signal
   - bld_architecture_reward_signal
-  - bld_knowledge_card_reward_signal
-  - bld_instruction_reward_signal
-  - bld_output_template_reward_signal
 ---
 ## Identity
 

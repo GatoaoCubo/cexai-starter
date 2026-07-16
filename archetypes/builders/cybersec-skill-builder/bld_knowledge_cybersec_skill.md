@@ -21,8 +21,6 @@ related:
   - cybersec-skill-builder
   - bld_schema_cybersec_skill
   - bld_eval_cybersec_skill
-  - p01_kc_cybersec_skill
-  - bld_knowledge_card_skill
 ---
 
 # Domain Knowledge: cybersec_skill
@@ -140,5 +138,3 @@ This is enforced by H_CG1-H_CG4 in `bld_eval_cybersec_skill.md`.
 | [[cybersec-skill-builder]] | upstream | 0.65 |
 | [[bld_schema_cybersec_skill]] | downstream | 0.62 |
 | [[bld_eval_cybersec_skill]] | downstream | 0.60 |
-| [[p01_kc_cybersec_skill]] | sibling | 0.70 |
-| [[bld_knowledge_card_skill]] | parent | 0.55 |

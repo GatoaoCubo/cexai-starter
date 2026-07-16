@@ -31,11 +31,8 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_hook
-  - bld_instruction_hook
   - bld_architecture_hook
   - hook-config-builder
-  - bld_collaboration_hook_config
 ---
 ## Identity
 

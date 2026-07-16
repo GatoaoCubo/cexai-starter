@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [boot config construction, collaboration boot config, boot_config, builder, examples, "### crew: multi-provider deployment", my role, crew compositions, new agent end, provider deployment]
 density_score: 0.90
 related:
-  - bld_collaboration_agent
-  - bld_collaboration_agent_package
-  - bld_collaboration_model_provider
   - boot-config-builder
-  - bld_collaboration_fallback_chain
 ---
 # Collaboration: boot-config-builder
 ## My Role in Crews

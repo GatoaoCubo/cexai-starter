@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [webinar_script construction, hook timing, slide cue density, a seed ratios, cta placement, and follow-up email timing, webinar_script]
 density_score: 0.85
 related:
-  - bld_knowledge_card_webinar_script
   - webinar-script-builder
-  - bld_instruction_webinar_script
-  - p03_qg_webinar_script
   - bld_schema_webinar_script
 ---
 ## Observations
@@ -58,8 +55,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_webinar_script]] | upstream | 0.54 |
 | [[webinar-script-builder]] | upstream | 0.44 |
-| [[bld_instruction_webinar_script]] | upstream | 0.43 |
-| [[p03_qg_webinar_script]] | downstream | 0.41 |
 | [[bld_schema_webinar_script]] | upstream | 0.34 |

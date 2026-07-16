@@ -18,9 +18,6 @@ keywords: [hibernation_policy construction, instruction hibernation policy, hibe
 density_score: 0.90
 related:
   - bld_schema_hibernation_policy
-  - bld_quality_gate_hibernation_policy
-  - kc_hibernation_policy
-  - n00_hibernation_policy_manifest
   - hibernation-policy-builder
 ---
 ## Phase 1: RESEARCH (hibernation_policy)
@@ -67,7 +64,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_hibernation_policy]] | downstream | 0.48 |
-| [[bld_quality_gate_hibernation_policy]] | downstream | 0.46 |
-| [[kc_hibernation_policy]] | upstream | 0.46 |
-| [[n00_hibernation_policy_manifest]] | downstream | 0.41 |
 | [[hibernation-policy-builder]] | downstream | 0.40 |

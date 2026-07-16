@@ -16,10 +16,6 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_tools_constitutional_rule
-  - bld_context_sources_deployment_manifest
-  - bld_context_sources_value_object
-  - bld_context_sources_canary_config
-  - bld_context_sources_slo_definition
 ---
 # Context Sources: constitutional_rule
 ## Mandatory Loads (F3 INJECT)

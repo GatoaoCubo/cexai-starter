@@ -18,10 +18,7 @@ keywords: [component map of prompt_template, and architectural position, prompt 
 density_score: 0.90
 related:
   - prompt-template-builder
-  - bld_knowledge_card_prompt_template
   - bld_memory_prompt_template
-  - p03_ins_prompt_template
-  - bld_collaboration_prompt_template
 ---
 # Architecture: prompt_template in the CEX
 ## Component Inventory
@@ -71,5 +68,4 @@ prompt_template --signals-->   render_error
 | [[prompt-template-builder]] | upstream | 0.53 |
 | [[bld_knowledge_prompt_template]] | upstream | 0.50 |
 | [[bld_memory_prompt_template]] | downstream | 0.49 |
-| [[p03_ins_prompt_template]] | upstream | 0.45 |
 | [[bld_orchestration_prompt_template]] | upstream | 0.42 |

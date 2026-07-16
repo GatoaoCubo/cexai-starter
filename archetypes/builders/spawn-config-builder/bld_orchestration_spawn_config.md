@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [spawn config construction, collaboration spawn config, spawn_config, builder, examples, "### crew: new agent_group onboarding", my role, crew compositions, mission setup, new agent]
 density_score: 0.90
 related:
-  - bld_collaboration_workflow
   - bld_architecture_spawn_config
   - spawn-config-builder
-  - bld_collaboration_agent_card
-  - bld_knowledge_card_spawn_config
 ---
 # Collaboration: spawn-config-builder
 ## My Role in Crews

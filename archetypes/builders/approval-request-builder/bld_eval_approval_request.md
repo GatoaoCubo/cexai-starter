@@ -18,10 +18,7 @@ updated: "2026-07-03"
 keywords: [request-detail fields, status enum, terminal-state discipline, scope disclaimer, gates for approval_request, human-approval request instance]
 density_score: 0.92
 related:
-  - p01_kc_approval_request
-  - bld_knowledge_card_approval_request
   - approval-request-builder
-  - bld_instruction_approval_request
   - bld_schema_approval_request
 ---
 ## Quality Gate

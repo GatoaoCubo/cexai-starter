@@ -20,11 +20,7 @@ clear, evidence
 reviewed, related artifacts, sibling]
 density_score: 0.85
 related:
-  - p10_mem_prompt_optimizer_builder
-  - p10_lr_judge_config_builder
   - prompt-optimizer-builder
-  - p10_lr_planning_strategy_builder
-  - p10_lr_reasoning_strategy_builder
 ---
 ## Observation
 Ambiguous instructions often lead to inconsistent or off-topic outputs. Overloading prompts with excessive details can overwhelm models, reducing effectiveness.
@@ -45,8 +41,4 @@ Reviewed artifacts showed 40% higher success rates with prompts using example-ba
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_prompt_optimizer_builder]] | sibling | 0.31 |
-| [[p10_lr_judge_config_builder]] | related | 0.24 |
 | [[prompt-optimizer-builder]] | upstream | 0.22 |
-| [[p10_lr_planning_strategy_builder]] | related | 0.21 |
-| [[p10_lr_reasoning_strategy_builder]] | related | 0.21 |

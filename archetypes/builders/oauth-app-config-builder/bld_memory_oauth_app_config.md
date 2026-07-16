@@ -20,11 +20,7 @@ modular, evidence
 reviewed, related artifacts, redirect uris, token lifetimes]
 density_score: 0.85
 related:
-  - oauth-app-config-builder
-  - bld_instruction_oauth_app_config
   - kc_oauth_app_config
-  - bld_knowledge_card_oauth_app_config
-  - bld_collaboration_partner_listing
 ---
 ## Observation
 Misconfigured redirect URIs and overly broad scopes are common, leading to security risks or integration failures. Token lifetimes and refresh policies often conflict with partner system constraints.
@@ -45,7 +41,6 @@ Reviewed 15 configs; 70% had redundant scope definitions. 3 configs failed due t
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[oauth-app-config-builder]] | upstream | 0.37 |
 | [[bld_prompt_oauth_app_config]] | upstream | 0.36 |
 | [[kc_oauth_app_config]] | upstream | 0.29 |
 | [[bld_knowledge_oauth_app_config]] | upstream | 0.25 |

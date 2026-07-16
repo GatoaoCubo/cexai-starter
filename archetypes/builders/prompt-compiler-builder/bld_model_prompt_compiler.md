@@ -32,10 +32,6 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - p03_ins_prompt_compiler
-  - p01_kc_prompt_compiler
-  - bld_knowledge_card_prompt_compiler
-  - p11_qg_prompt_compiler
   - bld_architecture_prompt_compiler
 ---
 ## Identity
@@ -117,8 +113,4 @@ Deliver a `prompt_compiler` artifact with this structure:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_prompt_compiler]] | related | 0.65 |
-| [[p01_kc_prompt_compiler]] | related | 0.55 |
-| [[bld_knowledge_card_prompt_compiler]] | related | 0.53 |
-| [[p11_qg_prompt_compiler]] | downstream | 0.52 |
 | [[bld_architecture_prompt_compiler]] | downstream | 0.49 |

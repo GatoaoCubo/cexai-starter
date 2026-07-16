@@ -18,10 +18,6 @@ keywords: [component map of context_window_config, architectural position, conte
 density_score: 0.90
 related:
   - context-window-config-builder
-  - p01_kc_context_window_config
-  - n00_context_window_config_manifest
-  - p11_qg_context_window_config
-  - bld_output_template_context_window_config
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -63,5 +59,3 @@ model_card, system_prompt --> [context_window_config] --> prompt_template, agent
 | [[context-window-config-builder]] | upstream | 0.45 |
 | [[kc_context_window_config]] | upstream | 0.42 |
 | n00_context_window_config_manifest | upstream | 0.38 |
-| [[p11_qg_context_window_config]] | downstream | 0.34 |
-| [[bld_output_template_context_window_config]] | upstream | 0.33 |

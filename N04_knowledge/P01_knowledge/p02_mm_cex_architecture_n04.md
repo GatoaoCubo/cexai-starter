@@ -26,10 +26,7 @@ sources:
   - N05_operations/P01_knowledge/kc_operations_vocabulary.md
   - N06_commercial/P01_knowledge/kc_commercial_vocabulary.md
 related:
-  - p06_td_cex_artifact_type_n03
-  - p01_faq_cex_common_questions
   - bld_architecture_default
-  - n00_readme
 ---
 
 # Mental Model: CEX Architecture
@@ -242,6 +239,5 @@ No other configuration needed. The convention IS the documentation.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p06_td_cex_artifact_type_n03 | downstream | 0.41 |
-| [[p01_faq_cex_common_questions]] | related | 0.39 |
 | [[bld_architecture_default]] | downstream | 0.36 |
 | n00_readme | related | 0.36 |

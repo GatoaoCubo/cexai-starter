@@ -33,11 +33,7 @@ keywords: [manifest component map, demonstrating ideal, component_map, routing
 keywords, crew role, identity
 you, diagram visual, component_map artifacts, identity component-map-builder, component_map structured]
 related:
-  - bld_collaboration_component_map
   - bld_architecture_component_map
-  - n00_component_map_manifest
-  - bld_instruction_component_map
-  - p01_kc_cex_lp08_architecture
 ---
 ## Identity
 
@@ -108,8 +104,4 @@ Output format: YAML frontmatter + Markdown body. Naming: `p08_cmap_{scope_slug}.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_component_map]] | downstream | 0.57 |
 | [[bld_architecture_component_map]] | related | 0.52 |
-| [[n00_component_map_manifest]] | related | 0.44 |
-| [[bld_instruction_component_map]] | upstream | 0.42 |
-| [[p01_kc_cex_lp08_architecture]] | upstream | 0.41 |

@@ -31,9 +31,6 @@ keywords:
   - "inputs"
 density_score: 0.85
 related:
-  - p03_ins_workflow_primitive_builder
-  - bld_knowledge_card_workflow_primitive
-  - bld_output_template_workflow_primitive
   - workflow-primitive-builder
   - bld_config_workflow_primitive
 ---

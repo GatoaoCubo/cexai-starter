@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [white_label_config construction, instruction white label config, white_label_config, builder, instruction, branding.logo_url, max_domains_per_reseller: 5, .yaml, related artifacts, legal compliance]
 density_score: 0.85
-related:
-  - bld_instruction_playground_config
-  - bld_instruction_judge_config
-  - bld_instruction_safety_policy
-  - bld_instruction_eval_framework
-  - bld_instruction_edit_format
 ---
 ## Phase 1: RESEARCH  
 1. Identify branding requirements (logos, color codes, legal disclaimers).  

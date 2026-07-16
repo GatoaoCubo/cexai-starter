@@ -19,7 +19,6 @@ no]
 density_score: 0.90
 related:
   - bld_tools_cli_tool
-  - bld_tools_client
   - bld_tools_retriever_config
   - bld_tools_memory_scope
   - bld_tools_path_config
@@ -78,7 +77,6 @@ python _tools/cex_score.py --apply bld-tools-connector.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_cli_tool]] | sibling | 0.66 |
-| [[bld_tools_client]] | sibling | 0.64 |
 | [[bld_tools_retriever_config]] | sibling | 0.64 |
 | [[bld_tools_memory_scope]] | sibling | 0.64 |
 | [[bld_tools_path_config]] | sibling | 0.63 |

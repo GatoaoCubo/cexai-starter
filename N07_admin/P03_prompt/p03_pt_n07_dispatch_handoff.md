@@ -19,9 +19,6 @@ keywords: [handoff, dispatch, Context pre-loaded, Relevant artifacts, Expected o
 density_score: 0.86
 related:
   - p03_pt_n07_workflow_build_cell
-  - dispatch-depth
-  - guided-decisions
-  - n07-orchestrator
 ---
 
 # Prompt Template: N07 Canonical Dispatch Handoff

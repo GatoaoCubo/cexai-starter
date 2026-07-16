@@ -18,9 +18,7 @@ updated: "2026-04-18"
 keywords: [terminal_backend construction, config terminal backend, builder configuration, default timeout, cost alert threshold, environment directory, hibernation idle threshold, terminal_backend, builder, config]
 density_score: 0.88
 related:
-  - n00_terminal_backend_manifest
   - terminal-backend-builder
-  - bld_collaboration_terminal_backend
   - bld_schema_terminal_backend
   - tb_{{backend}}
 ---
@@ -70,8 +68,6 @@ When `cost_model.billing` is `per_second` or `per_task`:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_terminal_backend_manifest]] | related | 0.40 |
 | [[terminal-backend-builder]] | related | 0.37 |
-| [[bld_collaboration_terminal_backend]] | downstream | 0.35 |
 | [[bld_schema_terminal_backend]] | upstream | 0.34 |
 | [\[tb_`{{backend}}`\]] | related | 0.33 |

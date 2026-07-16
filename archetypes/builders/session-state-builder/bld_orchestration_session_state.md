@@ -21,7 +21,6 @@ related:
   - session-state-builder
   - bld_memory_session_state
   - bld_architecture_session_state
-  - bld_collaboration_signal
   - bld_memory_runtime_state
 ---
 # Collaboration: session-state-builder

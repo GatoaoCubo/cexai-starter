@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [agent_name_service_record construction, agent_name_service_record, builder, architecture, agent name service record builder, component inventory, data flow]
 density_score: 0.85
 related:
-  - bld_collaboration_agent_name_service_record
   - bld_architecture_memory_architecture
-  - bld_manifest_agent_name_service_record
-  - p06_td_cex_artifact_type_n03
   - agent-builder
 ---
 # Agent Name Service Record Builder -- Architecture
@@ -107,8 +104,5 @@ bld_collaboration (COLLABORATE) <-- F8: handoff to downstream kinds
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent_name_service_record]] | downstream | 0.41 |
 | [[bld_architecture_memory_architecture]] | sibling | 0.38 |
-| [[bld_manifest_agent_name_service_record]] | upstream | 0.35 |
-| [[p06_td_cex_artifact_type_n03]] | upstream | 0.33 |
 | [[agent-builder]] | upstream | 0.32 |

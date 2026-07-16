@@ -32,10 +32,7 @@ keywords:
 density_score: 0.85
 related:
   - search-strategy-builder
-  - p04_qg_search_strategy
-  - p10_lr_search_strategy_builder
   - bld_architecture_search_strategy
-  - bld_knowledge_card_search_strategy
 ---
 ```yaml
 id: p04_ss_{{slug}}                # e.g. p04_ss_adaptive_beam_search
@@ -97,7 +94,4 @@ target_entity: "{{GPU cluster|edge node|serverless function|...}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[search-strategy-builder]] | upstream | 0.36 |
-| [[p04_qg_search_strategy]] | downstream | 0.34 |
-| [[p10_lr_search_strategy_builder]] | downstream | 0.33 |
 | [[bld_architecture_search_strategy]] | downstream | 0.31 |
-| [[bld_knowledge_card_search_strategy]] | upstream | 0.28 |

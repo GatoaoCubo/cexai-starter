@@ -32,11 +32,7 @@ keywords:
   - "py signature"
 density_score: 0.90
 related:
-  - bld_knowledge_card_prompt_template
   - prompt-template-builder
-  - bld_collaboration_prompt_template
-  - p03_ins_prompt_template
-  - p01_kc_prompt_template
 ---
 # Memory: prompt-template-builder
 ## Summary
@@ -98,5 +94,4 @@ python _tools/cex_score.py --apply bld-memory-prompt-template.md
 | [[bld_knowledge_prompt_template]] | upstream | 0.57 |
 | [[prompt-template-builder]] | upstream | 0.55 |
 | [[bld_orchestration_prompt_template]] | upstream | 0.47 |
-| [[p03_ins_prompt_template]] | upstream | 0.46 |
 | [[kc_prompt_template]] | upstream | 0.45 |

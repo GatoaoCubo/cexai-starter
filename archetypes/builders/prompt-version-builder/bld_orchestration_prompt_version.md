@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [prompt version construction, collaboration prompt version, prompt_version, builder, examples, "### crew: prompt optimization", my role, crew compositions, prompt lifecycle, prompt optimization]
 density_score: 0.90
 related:
-  - bld_collaboration_action_prompt
-  - bld_collaboration_constraint_spec
   - prompt-version-builder
-  - bld_collaboration_prompt_template
-  - bld_collaboration_system_prompt
 ---
 # Collaboration: prompt-version-builder
 ## My Role in Crews

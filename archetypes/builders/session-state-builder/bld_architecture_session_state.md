@@ -18,8 +18,6 @@ keywords: [component map of session_state, and architectural position, session s
 density_score: 0.90
 related:
   - session-state-builder
-  - bld_collaboration_session_state
-  - p01_kc_session_state
   - bld_memory_session_state
 ---
 # Architecture: session_state in the CEX

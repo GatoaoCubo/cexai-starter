@@ -5,8 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
   - bld_tools_backpressure_policy
 ---
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |
 | [[system-prompt-builder]] | related | 0.26 |
 | [[bld_tools_backpressure_policy]] | related | 0.26 |

@@ -19,10 +19,6 @@ updated: "2026-04-17"
 keywords: [backpressure policy construction, collaboration backpressure policy, consumer lag specialist, works with circuit-breaker, backpressure_policy, builder, collaboration, "### crew: event streaming setup", "### crew: llm inference pipeline", my role]
 density_score: 0.90
 related:
-  - bld_collaboration_circuit_breaker
-  - bld_collaboration_retry_policy
-  - bld_collaboration_rate_limit_config
-  - bld_collaboration_runtime_rule
   - backpressure-policy-builder
 ---
 # Collaboration: backpressure-policy-builder
@@ -87,8 +83,4 @@ None -- independent builder (layer 0). Backpressure policies can be defined stan
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_circuit_breaker]] | sibling | 0.47 |
-| [[bld_collaboration_retry_policy]] | sibling | 0.33 |
-| [[bld_collaboration_rate_limit_config]] | sibling | 0.32 |
-| [[bld_collaboration_runtime_rule]] | sibling | 0.31 |
 | [[backpressure-policy-builder]] | upstream | 0.30 |

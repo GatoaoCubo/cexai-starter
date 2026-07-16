@@ -35,7 +35,6 @@ related:
   - bld_schema_handoff_protocol
   - bld_schema_output_validator
   - bld_schema_memory_scope
-  - bld_schema_connector
 ---
 # Schema: client
 ## Frontmatter Fields

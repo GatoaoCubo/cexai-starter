@@ -20,9 +20,6 @@ density_score: null
 related:
   - bld_architecture_response_format
   - response-format-builder
-  - p03_ins_response_format
-  - p01_kc_parser
-  - bld_collaboration_response_format
 ---
 
 # Response Format
@@ -99,6 +96,5 @@ A response_format defines the output structure injected into the LLM's generatio
 |----------|-------------|-------|
 | [[bld_architecture_response_format]] | downstream | 0.40 |
 | [[response-format-builder]] | downstream | 0.39 |
-| [[p03_ins_response_format]] | downstream | 0.39 |
 | [[kc_parser]] | sibling | 0.38 |
 | [[bld_orchestration_response_format]] | downstream | 0.38 |

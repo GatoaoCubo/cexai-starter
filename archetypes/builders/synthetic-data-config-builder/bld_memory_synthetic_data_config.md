@@ -26,7 +26,6 @@ density_score: 0.85
 llm_function: INJECT
 related:
   - bld_orchestration_synthetic_data_config
-  - kc_synthetic_data_config
   - bld_feedback_synthetic_data_config
   - bld_architecture_synthetic_data_config
   - synthetic-data-config-builder
@@ -63,7 +62,6 @@ Patterns derived from builder runs, quality gate failures, and peer review feedb
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_synthetic_data_config]] | downstream | 0.45 |
-| [[kc_synthetic_data_config]] | upstream | 0.45 |
 | [[bld_feedback_synthetic_data_config]] | downstream | 0.44 |
 | [[bld_architecture_synthetic_data_config]] | upstream | 0.43 |
 | [[synthetic-data-config-builder]] | upstream | 0.43 |

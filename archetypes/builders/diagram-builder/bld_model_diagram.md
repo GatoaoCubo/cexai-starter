@@ -35,11 +35,8 @@ specialist, routing
 keywords, crew role, identity
 you, diagram artifacts, visual representations, ascii mermaid]
 related:
-  - bld_collaboration_diagram
   - component-map-builder
   - bld_architecture_diagram
-  - bld_knowledge_card_diagram
-  - p01_kc_diagram
 ---
 ## Identity
 
@@ -110,8 +107,5 @@ Produce a Markdown artifact with frontmatter (19+ fields: id, kind, domain, pill
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_diagram]] | downstream | 0.57 |
 | [[component-map-builder]] | sibling | 0.49 |
 | [[bld_architecture_diagram]] | related | 0.49 |
-| [[bld_knowledge_card_diagram]] | upstream | 0.48 |
-| [[p01_kc_diagram]] | related | 0.45 |

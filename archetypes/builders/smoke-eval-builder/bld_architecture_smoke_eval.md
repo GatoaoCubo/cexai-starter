@@ -18,10 +18,6 @@ keywords: [component map of smoke_eval, and architectural position, smoke eval c
 density_score: 0.90
 related:
   - smoke-eval-builder
-  - bld_collaboration_smoke_eval
-  - p01_kc_smoke_eval
-  - bld_knowledge_card_smoke_eval
-  - n00_smoke_eval_manifest
 ---
 # Architecture: smoke_eval in the CEX
 ## Component Inventory
@@ -69,7 +65,3 @@ smoke_eval        --depends-->      health_endpoint
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[smoke-eval-builder]] | upstream | 0.47 |
-| [[bld_collaboration_smoke_eval]] | upstream | 0.45 |
-| [[p01_kc_smoke_eval]] | upstream | 0.43 |
-| [[bld_knowledge_card_smoke_eval]] | upstream | 0.37 |
-| [[n00_smoke_eval_manifest]] | upstream | 0.37 |

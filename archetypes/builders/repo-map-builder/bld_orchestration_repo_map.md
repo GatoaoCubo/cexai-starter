@@ -20,10 +20,6 @@ does, related artifacts]
 density_score: 0.85
 related:
   - bld_config_repo_map
-  - p11_fb_repo_map
-  - ctx_n03
-  - bld_collaboration_component_map
-  - p12_wf_code_review
 ---
 ## Crew Role  
 Creates and maintains a consistent, cross-repo context map for navigation and dependency tracking. Ensures alignment between repo structures, ownership, and purpose.  
@@ -49,7 +45,3 @@ Does NOT handle system architecture (component_map-builder), search index (knowl
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_repo_map]] | upstream | 0.36 |
-| [[p11_fb_repo_map]] | upstream | 0.31 |
-| [[ctx_n03]] | upstream | 0.20 |
-| [[bld_collaboration_component_map]] | sibling | 0.18 |
-| [[p12_wf_code_review]] | related | 0.18 |

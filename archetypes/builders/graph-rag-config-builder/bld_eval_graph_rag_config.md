@@ -32,9 +32,6 @@ keywords:
 density_score: 0.85
 related:
   - graph-rag-config-builder
-  - bld_collaboration_knowledge_graph
-  - n00_graph_rag_config_manifest
-  - kc_graph_rag_config
   - knowledge-graph-builder
 ---
 ## Quality Gate

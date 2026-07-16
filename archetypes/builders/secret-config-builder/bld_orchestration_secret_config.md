@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [secret config construction, collaboration secret config, secret_config, builder, examples, "### crew: secure agent deployment", "### crew: llm provider governance", my role, crew compositions, agent runtime security]
 density_score: 0.90
-related:
-  - bld_collaboration_env_config
-  - bld_collaboration_boot_config
-  - secret-config-builder
-  - p09_sec_n04
-  - bld_collaboration_path_config
 ---
 # Collaboration: secret-config-builder
 ## My Role in Crews
@@ -81,6 +75,5 @@ When a request arrives that is NOT secret_config, redirect explicitly:
 |----------|-------------|-------|
 | [[bld_orchestration_env_config]] | sibling | 0.38 |
 | [[bld_orchestration_boot_config]] | sibling | 0.37 |
-| [[secret-config-builder]] | upstream | 0.37 |
 | p09_sec_n04 | upstream | 0.36 |
 | [[bld_orchestration_path_config]] | sibling | 0.35 |

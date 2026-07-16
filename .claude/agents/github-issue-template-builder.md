@@ -4,8 +4,6 @@ description: "Builds ONE github_issue_template artifact via 8F pipeline. Loads g
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p11_fb_github_issue_template
-  - n00_github_issue_template_manifest
   - bld_config_github_issue_template
   - github-issue-template-builder
   - kind-builder
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_github_issue_template]] | related | 0.38 |
-| [[n00_github_issue_template_manifest]] | related | 0.34 |
 | [[bld_config_github_issue_template]] | related | 0.34 |
 | [[github-issue-template-builder]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |

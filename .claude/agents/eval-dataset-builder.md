@@ -5,10 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_eval_dataset
-  - n00_eval_dataset_manifest
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # eval-dataset-builder Sub-Agent

@@ -29,10 +29,7 @@ keywords: [reasoning trace builder instructions, rejected alternatives, and conc
 density_score: 0.86
 llm_function: REASON
 related:
-  - bld_knowledge_card_reasoning_trace
   - reasoning-trace-builder
-  - bld_collaboration_reasoning_trace
-  - p11_qg_reasoning_trace
   - bld_schema_reasoning_trace
 ---
 ## Context
@@ -161,8 +158,5 @@ OUTPUT: validated reasoning_trace YAML file
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.55 |
 | [[reasoning-trace-builder]] | related | 0.54 |
-| [[bld_collaboration_reasoning_trace]] | upstream | 0.52 |
-| [[p11_qg_reasoning_trace]] | downstream | 0.51 |
 | [[bld_schema_reasoning_trace]] | downstream | 0.49 |

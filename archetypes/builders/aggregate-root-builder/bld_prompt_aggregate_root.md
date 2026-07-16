@@ -29,11 +29,7 @@ density_score: 0.81
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_instruction_value_object
   - bld_schema_aggregate_root
-  - bld_manifest_aggregate_root
-  - bld_instruction_process_manager
-  - bld_instruction_action_prompt
 ---
 # Instructions: How to Produce an aggregate_root
 ## Phase 1: RESEARCH
@@ -86,8 +82,4 @@ python _tools/cex_prompt_optimizer.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_value_object]] | sibling | 0.41 |
 | [[bld_schema_aggregate_root]] | related | 0.40 |
-| [[bld_manifest_aggregate_root]] | related | 0.38 |
-| [[bld_instruction_process_manager]] | sibling | 0.37 |
-| [[bld_instruction_action_prompt]] | sibling | 0.37 |

@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - hitl-config-builder
   - bld_architecture_approval_request
-  - n00_approval_request_manifest
-  - bld_collaboration_hitl_config
-  - adr_v03_governance_taxonomy
 ---
 # Collaboration: approval-request-builder
 ## My Role in Crews
@@ -84,6 +81,3 @@ purposes.
 |----------|-------------|-------|
 | [[hitl-config-builder]] | upstream (emitting policy) | 0.40 |
 | [[bld_architecture_approval_request]] | upstream | 0.34 |
-| [[n00_approval_request_manifest]] | upstream | 0.31 |
-| [[bld_collaboration_hitl_config]] | sibling | 0.30 |
-| [[adr_v03_governance_taxonomy]] | related (scope-defining ADR) | 0.30 |

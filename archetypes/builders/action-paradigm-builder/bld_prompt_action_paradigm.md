@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - action-paradigm-builder
   - bld_memory_action_paradigm
-  - bld_knowledge_card_action_paradigm
-  - bld_instruction_action_prompt
-  - p11_qg_action_paradigm
 ---
 ## Phase 1: RESEARCH  
 1. Analyze existing action paradigms (e.g., reactive, deliberative, hybrid).  
@@ -69,6 +66,3 @@ related:
 |----------|-------------|-------|
 | [[action-paradigm-builder]] | downstream | 0.38 |
 | [[bld_memory_action_paradigm]] | downstream | 0.35 |
-| [[bld_knowledge_card_action_paradigm]] | upstream | 0.33 |
-| [[bld_instruction_action_prompt]] | sibling | 0.32 |
-| [[p11_qg_action_paradigm]] | downstream | 0.31 |

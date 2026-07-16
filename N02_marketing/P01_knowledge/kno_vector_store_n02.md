@@ -22,7 +22,6 @@ slots:
 density_score: 1.0
 related:
   - kno_vector_store_n01
-  - p03_ins_vector_store
   - kno_vector_store_n03
   - kno_embedder_provider_n02
   - kno_vector_store_n06
@@ -207,7 +206,6 @@ collection_profile:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kno_vector_store_n01]] | sibling | 0.35 |
-| [[p03_ins_vector_store]] | downstream | 0.33 |
 | [[kno_vector_store_n03]] | sibling | 0.32 |
 | [[kno_embedder_provider_n02]] | related | 0.32 |
 | [[kno_vector_store_n06]] | sibling | 0.31 |

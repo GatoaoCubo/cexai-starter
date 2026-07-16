@@ -4,11 +4,8 @@ description: "Builds ONE code_executor artifact via 8F pipeline. Loads code-exec
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_code_executor
   - code-executor-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # code-executor-builder Sub-Agent

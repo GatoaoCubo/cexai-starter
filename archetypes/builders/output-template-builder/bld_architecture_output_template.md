@@ -17,11 +17,9 @@ updated: "2026-07-07"
 keywords: [component map of output_template, and architectural position, output_template construction, architecture output template, output_template, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.88
 related:
-  - bld_knowledge_card_output_template
   - bld_architecture_kind
   - bld_architecture_prompt_template
   - output-template-builder
-  - bld_instruction_output_template
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |

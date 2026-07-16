@@ -21,10 +21,7 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - bld_collaboration_action_prompt
-  - bld_knowledge_card_action_prompt
   - action-prompt-builder
-  - p01_kc_instruction
   - bld_architecture_action_prompt
 ---
 

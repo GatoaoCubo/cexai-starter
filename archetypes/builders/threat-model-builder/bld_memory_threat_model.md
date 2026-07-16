@@ -22,9 +22,7 @@ reviewed, related artifacts, generic templates]
 density_score: 0.85
 related:
   - threat-model-builder
-  - bld_collaboration_threat_model
   - bld_architecture_threat_model
-  - bld_knowledge_card_threat_model
   - bld_tools_threat_model
 ---
 ## Observation
@@ -51,7 +49,5 @@ Reviewed artifacts from healthcare and finance domains showed improved coverage 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[threat-model-builder]] | downstream | 0.46 |
-| [[bld_collaboration_threat_model]] | downstream | 0.46 |
 | [[bld_architecture_threat_model]] | upstream | 0.41 |
-| [[bld_knowledge_card_threat_model]] | upstream | 0.40 |
 | [[bld_tools_threat_model]] | upstream | 0.38 |

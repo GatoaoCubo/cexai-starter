@@ -18,10 +18,6 @@ keywords: [cybersec_skill architecture, component map, capability gating, source
 density_score: 0.90
 related:
   - cybersec-skill-builder
-  - bld_collaboration_cybersec_skill
-  - p01_kc_cybersec_skill
-  - p03_ins_cybersec_skill_builder
-  - p11_qg_cybersec_skill
 ---
 
 # Architecture: cybersec_skill in the CEX
@@ -125,7 +121,3 @@ N05 Operations (Gating Wrath)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cybersec-skill-builder]] | upstream | 0.68 |
-| [[bld_collaboration_cybersec_skill]] | downstream | 0.62 |
-| [[p01_kc_cybersec_skill]] | upstream | 0.58 |
-| [[p03_ins_cybersec_skill_builder]] | upstream | 0.55 |
-| [[p11_qg_cybersec_skill]] | downstream | 0.58 |

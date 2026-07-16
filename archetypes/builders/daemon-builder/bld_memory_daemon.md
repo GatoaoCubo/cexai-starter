@@ -43,11 +43,8 @@ keywords:
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_daemon
   - p04_daemon_{{NAME_SLUG}}
-  - bld_instruction_daemon
   - bld_tools_memory_type
-  - p11_qg_daemon
 ---
 ## Summary
 Long-running background processes fail in predictable ways: premature PID files mislead supervisors, missing signal handlers corrupt state, and shallow health checks hide real degradation. A three-layer design - startup barrier, signal fence, health probe - eliminates the most common failure modes without adding significant complexity.
@@ -127,8 +124,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_daemon_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_daemon]] | upstream | 0.32 |
 | [\[p04_daemon_`{{NAME_SLUG}}`\]] | upstream | 0.32 |
-| [[bld_instruction_daemon]] | upstream | 0.31 |
 | [[bld_tools_memory_type]] | upstream | 0.29 |
-| [[p11_qg_daemon]] | downstream | 0.28 |

@@ -22,11 +22,7 @@ tldr: "Build a lineage_record documenting entity sources, transformation activit
 keywords: [lineage record builder instructions, transformation activities, and derivation relations, instruction, lineage_record, provenance, target_artifact, sources, activities, agents]
 density_score: null
 related:
-  - kc_lineage_record
-  - bld_manifest_lineage_record
-  - bld_knowledge_card_lineage_record
   - bld_memory_lineage_record
-  - bld_rules_lineage_record
 ---
 ## Context
 The lineage-record-builder produces a `lineage_record` -- a structured provenance chain documenting how a knowledge artifact was derived. Uses PROV-O vocabulary (entity, activity, agent, wasGeneratedBy, wasDerivedFrom, wasAttributedTo, used). NOT audit_log (compliance events), NOT citation (in-text source reference), NOT learning_record (session learning).
@@ -68,8 +64,4 @@ Output: YAML frontmatter + markdown body at `N0X_*/P01_knowledge/p01_lin_{name}.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_lineage_record]] | related | 0.47 |
-| [[bld_manifest_lineage_record]] | related | 0.40 |
-| [[bld_knowledge_card_lineage_record]] | related | 0.38 |
 | [[bld_memory_lineage_record]] | downstream | 0.30 |
-| [[bld_rules_lineage_record]] | downstream | 0.27 |

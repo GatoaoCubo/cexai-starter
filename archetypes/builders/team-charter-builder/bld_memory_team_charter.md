@@ -18,9 +18,6 @@ keywords: [team_charter construction, learning record team charter, team_charter
 density_score: 0.85
 related:
   - team-charter-builder
-  - bld_knowledge_card_team_charter
-  - bld_instruction_team_charter
-  - bld_collaboration_team_charter
   - bld_tools_team_charter
 ---
 ## Observation

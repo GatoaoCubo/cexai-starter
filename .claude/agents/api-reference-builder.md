@@ -5,10 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
-  - p01_faq_cex_common_questions
-  - p03_sp_n03_creation_nucleus
 ---
 
 # api-reference-builder Sub-Agent
@@ -87,7 +83,3 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |
-| [[p01_faq_cex_common_questions]] | related | 0.26 |
-| [[p03_sp_n03_creation_nucleus]] | related | 0.26 |

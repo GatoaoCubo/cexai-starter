@@ -19,10 +19,7 @@ authors, receives from]
 density_score: 0.85
 related:
   - kubernetes-ai-requirement-builder
-  - p10_lr_kubernetes_ai_requirement_builder
-  - bld_knowledge_card_kubernetes_ai_requirement
   - bld_tools_kubernetes_ai_requirement
-  - bld_instruction_kubernetes_ai_requirement
 ---
 ## Crew Role
 Authors CNCF KAR v1.35 conformance artifacts translating ML workload needs (multi-node training, disaggregated inference, LoRA finetune) into declarative cluster-capability requirements: GPU-topology, InfiniBand, MIG, DRA, checkpoint-PVC.
@@ -50,7 +47,4 @@ Does NOT author env_config (runtime env vars -- handled by `env_config-builder`)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kubernetes-ai-requirement-builder]] | upstream | 0.42 |
-| [[p10_lr_kubernetes_ai_requirement_builder]] | upstream | 0.38 |
-| [[bld_knowledge_card_kubernetes_ai_requirement]] | upstream | 0.35 |
 | [[bld_tools_kubernetes_ai_requirement]] | upstream | 0.33 |
-| [[bld_instruction_kubernetes_ai_requirement]] | upstream | 0.33 |

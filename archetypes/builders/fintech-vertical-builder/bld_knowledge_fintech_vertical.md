@@ -19,10 +19,6 @@ the, key concepts, customer due diligence, customer identification program, frau
 density_score: 0.85
 related:
   - fintech-vertical-builder
-  - bld_instruction_fintech_vertical
-  - p01_qg_fintech_vertical
-  - p01_kc_fintech_vertical
-  - p10_mem_fintech_vertical_builder
 ---
 ## Domain Overview
 The fintech industry vertical emphasizes secure, compliant, and scalable financial services, driven by regulatory demands (e.g., SOC2, PCI-DSS) and operational needs (e.g., KYC/AML, fraud detection). SOC2+PCI-DSS compliance ensures data protection and operational integrity, critical for handling sensitive customer information. KYC/AML processes verify identities and prevent financial crimes, while fraud detection leverages AI/ML to identify anomalies in real-time. These pillars underpin trust in digital banking, payments, and lending platforms, requiring robust technical and governance frameworks.
@@ -75,7 +71,3 @@ The fintech industry vertical emphasizes secure, compliant, and scalable financi
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fintech-vertical-builder]] | related | 0.64 |
-| [[bld_instruction_fintech_vertical]] | downstream | 0.57 |
-| [[p01_qg_fintech_vertical]] | downstream | 0.55 |
-| [[p01_kc_fintech_vertical]] | sibling | 0.47 |
-| [[p10_mem_fintech_vertical_builder]] | downstream | 0.46 |

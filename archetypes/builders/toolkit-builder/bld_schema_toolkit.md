@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [toolkit construction, schema toolkit, toolkit, builder, examples, yaml, "p04_tk_{name}.yaml", "confirmation: auto", "confirmation: confirm", "confirmation: deny"]
 density_score: 0.90
 related:
-  - p03_ins_toolkit_builder
-  - bld_knowledge_card_toolkit
   - toolkit-builder
-  - p11_qg_toolkit
   - bld_config_toolkit
 ---
 # Schema: toolkit
@@ -109,8 +106,6 @@ tools:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_toolkit_builder]] | upstream | 0.57 |
 | [[bld_knowledge_toolkit]] | upstream | 0.54 |
 | [[toolkit-builder]] | upstream | 0.53 |
-| [[p11_qg_toolkit]] | downstream | 0.50 |
 | [[bld_config_toolkit]] | downstream | 0.48 |

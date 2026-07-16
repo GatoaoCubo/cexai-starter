@@ -32,11 +32,7 @@ keywords:
   - "socket framer"
 density_score: 0.88
 related:
-  - bld_knowledge_card_transport_config
   - transport-config-builder
-  - p09_qg_transport_config
-  - n00_transport_config_manifest
-  - bld_output_template_transport_config
 ---
 ## Component Inventory
 
@@ -91,8 +87,4 @@ Adjacent builders:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_transport_config]] | upstream | 0.45 |
 | [[transport-config-builder]] | downstream | 0.41 |
-| [[p09_qg_transport_config]] | downstream | 0.38 |
-| [[n00_transport_config_manifest]] | downstream | 0.32 |
-| [[bld_output_template_transport_config]] | upstream | 0.31 |

@@ -19,10 +19,7 @@ keywords: [hook config construction, collaboration hook config, hook_config, bui
 density_score: 0.90
 related:
   - hook-config-builder
-  - bld_collaboration_hook
   - hook-builder
-  - bld_collaboration_retriever_config
-  - bld_knowledge_card_hook_config
 ---
 # Collaboration: hook-config-builder
 ## My Role in Crews
@@ -79,7 +76,4 @@ None — independent builder (layer 0).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[hook-config-builder]] | upstream | 0.44 |
-| [[bld_collaboration_hook]] | sibling | 0.41 |
 | [[hook-builder]] | upstream | 0.37 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.36 |
-| [[bld_knowledge_card_hook_config]] | upstream | 0.36 |

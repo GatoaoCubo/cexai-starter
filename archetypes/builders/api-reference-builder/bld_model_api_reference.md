@@ -20,11 +20,7 @@ triggers, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_instruction_api_reference
-  - kc_api_reference
-  - p10_lr_api_reference_builder
   - sdk-example-builder
-  - bld_collaboration_openapi_spec
 ---
 ## Identity
 
@@ -71,8 +67,4 @@ NEVER INCLUDE SDK code, internal schemas, or implementation details.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_api_reference]] | upstream | 0.40 |
-| [[kc_api_reference]] | upstream | 0.38 |
-| [[p10_lr_api_reference_builder]] | downstream | 0.34 |
 | [[sdk-example-builder]] | sibling | 0.33 |
-| [[bld_collaboration_openapi_spec]] | downstream | 0.33 |

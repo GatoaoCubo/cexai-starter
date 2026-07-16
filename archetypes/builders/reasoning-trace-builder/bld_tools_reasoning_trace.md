@@ -18,8 +18,6 @@ keywords: [reasoning trace construction, tools reasoning trace, reasoning_trace,
 density_score: 0.90
 related:
   - bld_config_reasoning_trace
-  - p01_kc_reasoning_trace
-  - bld_collaboration_reasoning_trace
   - reasoning-trace-builder
   - bld_architecture_reasoning_trace
 ---
@@ -65,7 +63,5 @@ Until a dedicated reasoning_trace validator exists, validate manually:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_reasoning_trace]] | downstream | 0.58 |
-| [[p01_kc_reasoning_trace]] | upstream | 0.56 |
-| [[bld_collaboration_reasoning_trace]] | upstream | 0.56 |
 | [[reasoning-trace-builder]] | upstream | 0.52 |
 | [[bld_architecture_reasoning_trace]] | downstream | 0.50 |

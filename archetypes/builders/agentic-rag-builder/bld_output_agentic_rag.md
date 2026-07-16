@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [agentic_rag construction, output template agentic rag, agentic_rag, builder, output_template, agent configuration, knowledge sources, execution workflow, tool plan, related artifacts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_agentic_rag
-  - bld_instruction_agentic_rag
-  - p01_qg_agentic_rag
-  - kc_query_optimizer
   - bld_tools_agentic_rag
 ---
 ```yaml
@@ -81,8 +77,4 @@ tldr: "{{tldr}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_agentic_rag]] | upstream | 0.35 |
-| [[bld_instruction_agentic_rag]] | upstream | 0.29 |
-| [[p01_qg_agentic_rag]] | downstream | 0.27 |
-| [[kc_query_optimizer]] | upstream | 0.25 |
 | [[bld_tools_agentic_rag]] | upstream | 0.23 |

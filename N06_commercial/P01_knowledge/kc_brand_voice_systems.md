@@ -22,12 +22,6 @@ axioms:
 linked_artifacts:
   primary: n06_output_brand_voice_guide
   related: [p01_kc_brand_archetypes, p03_constraint_brand_voice_contract_n06, p03_sp_commercial_nucleus]
-related:
-  - p03_sp_brand_nucleus
-  - p01_kc_brand_voice_consistency_channels
-  - p03_constraint_brand_voice_contract_n06
-  - ex_feedback_tone_correction
-  - p03_pt_brand_voice_templates
 ---
 
 # Brand Voice Systems — Universal Frameworks

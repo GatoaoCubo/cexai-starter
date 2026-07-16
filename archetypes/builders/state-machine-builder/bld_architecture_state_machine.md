@@ -18,10 +18,7 @@ updated: "2026-04-17"
 keywords: [and architectural position, state machine construction, architecture state machine, component map, exit actions, state_machine, builder, architecture, component inventory, structure diagram]
 density_score: 0.90
 related:
-  - bld_knowledge_card_state_machine
-  - bld_collaboration_state_machine
   - state-machine-builder
-  - kc_state_machine
   - bld_config_state_machine
 ---
 ## Component Inventory
@@ -96,8 +93,5 @@ DELETED                               APPROVED
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_state_machine]] | upstream | 0.52 |
-| [[bld_collaboration_state_machine]] | downstream | 0.51 |
 | [[state-machine-builder]] | downstream | 0.50 |
-| [[kc_state_machine]] | upstream | 0.50 |
 | [[bld_config_state_machine]] | downstream | 0.44 |

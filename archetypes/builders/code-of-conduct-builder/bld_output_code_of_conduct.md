@@ -23,11 +23,7 @@ examples, enforcement responsibilities
 community, community leaders]
 density_score: 0.87
 related:
-  - p05_coc_cex
-  - n00_code_of_conduct_manifest
-  - p05_qg_code_of_conduct
   - code-of-conduct-builder
-  - bld_knowledge_card_code_of_conduct
 ---
 ```markdown
 ---
@@ -113,8 +109,4 @@ Community Impact Guidelines were inspired by
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_coc_cex]] | related | 0.82 |
-| [[n00_code_of_conduct_manifest]] | related | 0.53 |
-| [[p05_qg_code_of_conduct]] | downstream | 0.52 |
 | [[code-of-conduct-builder]] | related | 0.43 |
-| [[bld_knowledge_card_code_of_conduct]] | upstream | 0.42 |

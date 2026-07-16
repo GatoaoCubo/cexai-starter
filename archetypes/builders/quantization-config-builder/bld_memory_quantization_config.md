@@ -21,9 +21,6 @@ reviewed, related artifacts, upstream]
 density_score: 0.85
 related:
   - quantization-config-builder
-  - bld_collaboration_quantization_config
-  - kc_quantization_config
-  - bld_knowledge_card_quantization_config
   - bld_tools_quantization_config
 ---
 ## Observation
@@ -46,7 +43,4 @@ Reviewed 4-bit NF4 and 8-bit integer quantization configuration artifacts.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[quantization-config-builder]] | upstream | 0.43 |
-| [[bld_collaboration_quantization_config]] | downstream | 0.37 |
-| [[kc_quantization_config]] | upstream | 0.32 |
-| [[bld_knowledge_card_quantization_config]] | upstream | 0.31 |
 | [[bld_tools_quantization_config]] | upstream | 0.31 |

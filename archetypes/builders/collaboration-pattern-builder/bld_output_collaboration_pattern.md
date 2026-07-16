@@ -17,10 +17,6 @@ updated: "2026-04-13"
 keywords: [collaboration_pattern construction, output template collaboration pattern, frontmatter field guide, required body sections, filled example, collaboration_pattern, builder, output_template, key activities, success metrics]
 density_score: 0.85
 related:
-  - bld_output_template_dataset_card
-  - bld_output_template_visual_workflow
-  - bld_output_template_thinking_config
-  - bld_output_template_audit_log
   - bld_output_query_optimizer
 ---
 ```yaml
@@ -72,8 +68,4 @@ status: "{{status}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_dataset_card]] | sibling | 0.36 |
-| [[bld_output_template_visual_workflow]] | sibling | 0.36 |
-| [[bld_output_template_thinking_config]] | sibling | 0.35 |
-| [[bld_output_template_audit_log]] | sibling | 0.34 |
 | [[bld_output_query_optimizer]] | sibling | 0.32 |

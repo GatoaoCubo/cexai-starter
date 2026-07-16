@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, search tool construction, config search tool, search_tool, builder, examples, "p04_search_{provider_slug}.md"]
 density_score: 0.90
 related:
-  - bld_collaboration_search_tool
   - search-tool-builder
-  - bld_knowledge_card_search_tool
-  - bld_instruction_search_tool
-  - bld_output_template_search_tool
 ---
 # Config: search_tool Production Rules
 ## Naming Convention
@@ -77,4 +73,3 @@ Rule: NEVER hardcode API keys. Always reference env vars.
 | [[search-tool-builder]] | upstream | 0.40 |
 | [[bld_knowledge_search_tool]] | upstream | 0.38 |
 | [[bld_prompt_search_tool]] | upstream | 0.36 |
-| [[bld_output_template_search_tool]] | upstream | 0.34 |

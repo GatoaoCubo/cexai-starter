@@ -4,9 +4,7 @@ description: "Builds ONE c2pa_manifest artifact via 8F pipeline. Loads c2pa-mani
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_c2pa_manifest
   - c2pa-manifest-builder
-  - bld_knowledge_card_c2pa_manifest
   - kind-builder
 ---
 
@@ -85,7 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_c2pa_manifest]] | related | 0.34 |
 | [[c2pa-manifest-builder]] | related | 0.33 |
-| [[bld_knowledge_card_c2pa_manifest]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |

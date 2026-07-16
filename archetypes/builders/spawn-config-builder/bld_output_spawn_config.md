@@ -31,9 +31,6 @@ keywords:
   - "| | model |"
 density_score: 0.90
 related:
-  - bld_knowledge_card_spawn_config
-  - bld_collaboration_spawn_config
-  - p11_qg_spawn_config
   - bld_architecture_spawn_config
   - spawn-config-builder
 ---
@@ -108,6 +105,5 @@ tldr: "{{dense_summary_max_160ch}}"
 |----------|-------------|-------|
 | [[bld_knowledge_spawn_config]] | downstream | 0.39 |
 | [[bld_orchestration_spawn_config]] | downstream | 0.37 |
-| [[p11_qg_spawn_config]] | downstream | 0.36 |
 | [[bld_architecture_spawn_config]] | downstream | 0.36 |
 | [[spawn-config-builder]] | downstream | 0.34 |

@@ -5,10 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - agent-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - bld_collaboration_agent
-  - p01_kc_agent
-  - bld_knowledge_card_agent
 ---
 
 # agent-profile-builder Sub-Agent

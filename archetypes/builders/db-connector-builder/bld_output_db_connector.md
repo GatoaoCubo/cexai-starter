@@ -31,11 +31,7 @@ keywords:
   - "{{path_or_channel}} —"
 density_score: 0.90
 related:
-  - p10_lr_connector_builder
-  - bld_schema_connector
   - db-connector-builder
-  - bld_instruction_connector
-  - p11_qg_connector
 ---
 # Output Template: connector
 
@@ -116,8 +112,4 @@ Circuit breaker: `{{circuit_breaker_strategy}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_connector_builder]] | downstream | 0.42 |
-| [[bld_schema_connector]] | downstream | 0.41 |
 | [[db-connector-builder]] | upstream | 0.39 |
-| [[bld_instruction_connector]] | upstream | 0.38 |
-| [[p11_qg_connector]] | downstream | 0.38 |

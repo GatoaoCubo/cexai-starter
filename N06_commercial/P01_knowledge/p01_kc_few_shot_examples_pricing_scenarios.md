@@ -16,10 +16,7 @@ long_tails:
   - "show me a worked example of how N06 designs SaaS pricing tiers"
   - "how does N06 reason through an LTV or churn pricing decision step by step"
 related:
-  - subscription_tier_n06
   - kc_commercial_vocabulary
-  - p01_kc_revenue_gap_map
-  - p08_pat_pricing_framework
 ---
 
 # Few-Shot Examples: N06 Pricing Decision Reasoning

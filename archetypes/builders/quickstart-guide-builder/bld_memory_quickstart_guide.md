@@ -21,9 +21,6 @@ reviewed, related artifacts, prioritize user]
 density_score: 0.85
 related:
   - quickstart-guide-builder
-  - p10_lr_integration_guide_builder
-  - bld_instruction_quickstart_guide
-  - bld_instruction_integration_guide
   - integration-guide-builder
 ---
 ## Observation
@@ -46,7 +43,4 @@ Reviewed guides with step-by-step workflows and visual aids (e.g., screenshots) 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[quickstart-guide-builder]] | upstream | 0.34 |
-| [[p10_lr_integration_guide_builder]] | related | 0.30 |
-| [[bld_instruction_quickstart_guide]] | upstream | 0.26 |
-| [[bld_instruction_integration_guide]] | upstream | 0.20 |
 | [[integration-guide-builder]] | upstream | 0.19 |

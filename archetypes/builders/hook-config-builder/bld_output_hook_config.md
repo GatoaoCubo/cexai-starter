@@ -30,12 +30,6 @@ keywords:
   - "## lifecycle"
   - "## integration"
 density_score: 0.90
-related:
-  - bld_output_template_effort_profile
-  - bld_output_template_output_validator
-  - bld_output_template_runtime_rule
-  - bld_output_template_feature_flag
-  - bld_output_template_constraint_spec
 ---
 # Output Template: hook_config
 ```yaml
@@ -86,12 +80,3 @@ error_strategy: "{{error_strategy}}"
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_effort_profile]] | sibling | 0.38 |
-| [[bld_output_template_output_validator]] | sibling | 0.38 |
-| [[bld_output_template_runtime_rule]] | sibling | 0.36 |
-| [[bld_output_template_feature_flag]] | sibling | 0.36 |
-| [[bld_output_template_constraint_spec]] | sibling | 0.35 |

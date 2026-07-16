@@ -4,11 +4,9 @@ description: "Builds ONE landing_page artifact via 8F pipeline. Loads landing-pa
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_landing_page_manifest
   - bld_memory_landing_page
   - kind-builder
   - bld_tools_landing_page
-  - p07_rt_8f_constrain
 ---
 
 # landing-page-builder Sub-Agent

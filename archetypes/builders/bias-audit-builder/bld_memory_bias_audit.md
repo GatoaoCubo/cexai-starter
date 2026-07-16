@@ -22,10 +22,7 @@ reviewed, related artifacts, fairness criteria]
 density_score: 0.85
 related:
   - bias-audit-builder
-  - bld_collaboration_bias_audit
-  - bld_instruction_bias_audit
   - bld_tools_bias_audit
-  - bld_output_template_bias_audit
 ---
 ## Observation
 
@@ -51,7 +48,4 @@ Reviewed artifacts using standardized fairness taxonomies (e.g., demographic par
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bias-audit-builder]] | upstream | 0.50 |
-| [[bld_collaboration_bias_audit]] | downstream | 0.43 |
-| [[bld_instruction_bias_audit]] | upstream | 0.43 |
 | [[bld_tools_bias_audit]] | upstream | 0.42 |
-| [[bld_output_template_bias_audit]] | upstream | 0.35 |

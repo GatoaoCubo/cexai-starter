@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, schedule construction, config schedule, schedule, builder, examples, "p12_sched_{name}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_schedule
   - schedule-builder
-  - p11_qg_schedule
-  - bld_instruction_schedule
-  - p10_lr_schedule_builder
 ---
 # Config: schedule Production Rules
 ## Naming Convention
@@ -80,6 +76,4 @@ Rule: id prefix MUST be `p12_sc_`. File prefix MUST be `p12_sched_`.
 |----------|-------------|-------|
 | [[bld_knowledge_schedule]] | upstream | 0.40 |
 | [[schedule-builder]] | downstream | 0.37 |
-| [[p11_qg_schedule]] | downstream | 0.35 |
 | [[bld_prompt_schedule]] | upstream | 0.34 |
-| [[p10_lr_schedule_builder]] | downstream | 0.33 |

@@ -5,10 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - effort-profile-builder
-  - bld_collaboration_effort_profile
-  - bld_instruction_effort_profile
-  - p10_lr_effort_profile_builder
-  - p03_sp_builder_nucleus
 ---
 
 # effort-profile-builder Sub-Agent
@@ -87,7 +83,3 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[effort-profile-builder]] | related | 0.45 |
-| [[bld_collaboration_effort_profile]] | related | 0.36 |
-| [[bld_instruction_effort_profile]] | related | 0.32 |
-| [[p10_lr_effort_profile_builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |

@@ -17,7 +17,6 @@ density_score: 1.0
 related:
   - p01_retr_n05
   - p01_kc_few_shot_examples_rag_queries
-  - p01_retr_n07
   - p01_retr_n01
 ---
 <!-- 8F: F1=retriever_config/P01 F2=retriever-config-builder F3=nucleus_def_n03+kc_retriever_config+P01_schema F4=hybrid retrieval tuned for builder precision
@@ -175,5 +174,4 @@ That is the smallest serious configuration that protects build quality under rea
 |----------|-------------|-------|
 | [[p01_retr_n05]] | sibling | 0.37 |
 | [[p01_kc_few_shot_examples_rag_queries]] | related | 0.35 |
-| [[p01_retr_n07]] | sibling | 0.31 |
 | [[p01_retr_n01]] | sibling | 0.31 |

@@ -33,11 +33,7 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_webhook
-  - p01_kc_webhook
-  - n00_webhook_manifest
   - bld_architecture_webhook
-  - bld_knowledge_card_webhook
 ---
 ## Identity
 
@@ -161,8 +157,4 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_webhook]] | related | 0.68 |
-| [[p01_kc_webhook]] | upstream | 0.60 |
-| [[n00_webhook_manifest]] | related | 0.59 |
 | [[bld_architecture_webhook]] | related | 0.56 |
-| [[bld_knowledge_card_webhook]] | downstream | 0.53 |

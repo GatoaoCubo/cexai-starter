@@ -33,10 +33,6 @@ parent: null
 8f: "F2_become"
 related:
   - bld_architecture_finetune_config
-  - bld_collaboration_finetune_config
-  - p01_kc_finetune_config
-  - n00_finetune_config_manifest
-  - bld_knowledge_card_finetune_config
 ---
 ## Identity
 
@@ -111,7 +107,3 @@ trained model), and not a boot_config (per-provider startup parameters).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_finetune_config]] | downstream | 0.60 |
-| [[bld_collaboration_finetune_config]] | downstream | 0.55 |
-| [[p01_kc_finetune_config]] | related | 0.52 |
-| [[n00_finetune_config_manifest]] | related | 0.43 |
-| [[bld_knowledge_card_finetune_config]] | upstream | 0.41 |

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [reranker_config construction, quality gate reranker config, reranker_config, builder, quality_gate, quality gate, fail condition, scoring guide, model clarity, strategy validity]
 density_score: 0.85
-related:
-  - p09_qg_marketplace_app_manifest
-  - p11_qg_usage_report
-  - p01_qg_agentic_rag
-  - p04_qg_stt_provider
-  - p04_qg_search_strategy
 ---
 ## Quality Gate
 

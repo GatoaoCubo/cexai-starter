@@ -30,9 +30,7 @@ domain_agents:
 fallback_cli: codex
 related:
   - agent_card_n01
-  - n07-orchestrator
   - kc_nucleus_def
-  - component_map_n01
 tags: [nucleus_def, n01, identity]
 ---
 

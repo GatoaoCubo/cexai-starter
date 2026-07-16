@@ -20,10 +20,6 @@ linked_artifacts:
 title: Knowledge Card ISO - document_loader
 related:
   - bld_memory_document_loader
-  - document_loader-builder
-  - bld_instruction_document_loader
-  - p01_kc_rag_chunking_strategies
-  - p01_kc_chunk_strategy
 ---
 # Domain Knowledge: document_loader
 
@@ -87,7 +83,6 @@ pure PDF: pdfplumber > PyPDF2 (better table/layout handling). For HTML: trafilat
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_document_loader]] | related | 0.49 |
-| [[document_loader-builder]] | related | 0.48 |
 | [[bld_prompt_document_loader]] | related | 0.43 |
 | p01_kc_rag_chunking_strategies | sibling | 0.37 |
 | [[kc_chunk_strategy]] | sibling | 0.37 |

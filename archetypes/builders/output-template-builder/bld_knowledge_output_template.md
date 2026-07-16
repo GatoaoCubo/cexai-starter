@@ -18,10 +18,7 @@ updated: "2026-07-07"
 keywords: [reflexive iso9, recurring output document, output template construction, knowledge card output template, output_template, builder, examples, domain knowledge, naming discrepancy, related artifacts]
 density_score: 0.88
 related:
-  - bld_instruction_output_template
-  - p10_lr_output_template_builder
   - output-template-builder
-  - p11_qg_output_template
   - bld_schema_output_template
 ---
 # Domain Knowledge: output_template
@@ -102,7 +99,5 @@ Differs from `prompt_template` (an LLM-facing PROMPT, not the target artifact),
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_prompt_output_template]] | downstream | 0.48 |
-| [[p10_lr_output_template_builder]] | downstream | 0.42 |
 | [[output-template-builder]] | downstream | 0.40 |
-| [[p11_qg_output_template]] | downstream | 0.36 |
 | [[bld_schema_output_template]] | downstream | 0.34 |

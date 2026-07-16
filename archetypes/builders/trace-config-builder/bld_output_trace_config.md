@@ -31,11 +31,8 @@ keywords:
   - "output template"
 density_score: 0.90
 related:
-  - p11_qg_trace_config
   - bld_schema_trace_config
-  - p07_tc_opentelemetry
   - bld_config_trace_config
-  - bld_knowledge_card_trace_config
 ---
 # Output Template: trace_config
 ```yaml
@@ -101,8 +98,5 @@ Export via `{{export_format}}` to `{{export_path}}`.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_trace_config]] | downstream | 0.41 |
 | [[bld_schema_trace_config]] | downstream | 0.38 |
-| [[p07_tc_opentelemetry]] | downstream | 0.32 |
 | [[bld_config_trace_config]] | downstream | 0.29 |
-| [[bld_knowledge_card_trace_config]] | upstream | 0.29 |

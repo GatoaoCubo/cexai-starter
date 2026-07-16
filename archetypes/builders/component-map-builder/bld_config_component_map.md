@@ -26,10 +26,7 @@ keywords: [component map construction, config component map, component_map, buil
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
-  - p10_lr_component_map_builder
-  - bld_instruction_component_map
   - bld_schema_component_map
-  - bld_collaboration_component_map
   - bld_tools_component_map
 ---
 # Config — component-map-builder
@@ -84,8 +81,5 @@ Contexts: architecture_review, debugging, planning, onboarding
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_component_map_builder]] | related | 0.35 |
-| [[bld_instruction_component_map]] | related | 0.34 |
 | [[bld_schema_component_map]] | related | 0.32 |
-| [[bld_collaboration_component_map]] | related | 0.31 |
 | [[bld_tools_component_map]] | related | 0.30 |

@@ -37,12 +37,6 @@ slots:
   commercial_task: "<pricing | course | funnel | monetization | conversion -- the work to route>"
   crew_role: "<revenue_strategist -- N06's default role inside other crews>"
 density_score: 0.90
-related:
-  - n05_operations
-  - n04_knowledge
-  - n01_intelligence
-  - n02_marketing
-  - build
 ---
 
 # N06 Commercial Rules
@@ -130,12 +124,3 @@ and semantic (40%). All artifacts target quality >= 9.0.
 | Structural | 30% | Automated count-based checks |
 | Rubric | 30% | Quality gate dimension scoring |
 | Semantic | 40% | LLM evaluation (when L1+L2 >= 8.5) |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[n05_operations]] | sibling | 0.60 |
-| [[n04_knowledge]] | sibling | 0.58 |
-| [[n01_intelligence]] | sibling | 0.56 |
-| [[n02_marketing]] | sibling | 0.55 |
-| [[build]] | sibling | 0.35 |

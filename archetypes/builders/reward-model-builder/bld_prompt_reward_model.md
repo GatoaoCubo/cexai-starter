@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [reward_model construction, instruction reward model, reward_model, builder, instruction, reward_config, metrics, weights, thresholds, scaling_functions]
 density_score: 0.85
-related:
-  - bld_instruction_judge_config
-  - bld_instruction_eval_framework
-  - bld_instruction_eval_metric
-  - bld_instruction_benchmark_suite
-  - bld_instruction_playground_config
 ---
 ## Phase 1: RESEARCH  
 1. Define reward_model objectives: align with P07 governance metrics.  
@@ -48,12 +42,3 @@ related:
 - [ ] ✅ Test edge cases: confirm zero-impact and conflicting-outcome handling.  
 - [ ] ✅ Audit governance rules: ensure `governance_rules` align with P07 pillars.  
 - [ ] ✅ Peer review: cross-check with domain experts for logic consistency.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_judge_config]] | sibling | 0.43 |
-| [[bld_instruction_eval_framework]] | sibling | 0.37 |
-| [[bld_instruction_eval_metric]] | sibling | 0.36 |
-| [[bld_instruction_benchmark_suite]] | sibling | 0.32 |
-| [[bld_instruction_playground_config]] | sibling | 0.32 |

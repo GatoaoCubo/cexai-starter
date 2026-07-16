@@ -18,10 +18,7 @@ updated: "2026-04-13"
 keywords: [batch config construction, knowledge card batch config, async batch api, cost reduction vs sync, jsonl i, provider-specific limits, configure cost cap, retry policy, batch_config, builder]
 density_score: 0.90
 related:
-  - bld_instruction_batch_config
   - batch-config-builder
-  - p10_lr_batch_config_builder
-  - p01_kc_batch_config
   - bld_architecture_batch_config
 ---
 # Domain Knowledge: batch_config
@@ -114,8 +111,5 @@ A batch_config is NOT a schedule (cron), NOT a workflow (multi-step), NOT a runt
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_batch_config]] | downstream | 0.62 |
 | [[batch-config-builder]] | downstream | 0.61 |
-| [[p10_lr_batch_config_builder]] | downstream | 0.58 |
-| [[p01_kc_batch_config]] | sibling | 0.58 |
 | [[bld_architecture_batch_config]] | downstream | 0.57 |

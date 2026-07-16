@@ -24,9 +24,6 @@ reliable, error severity]
 density_score: 0.90
 related:
   - validator-builder
-  - p11_qg_validator
-  - bld_collaboration_validator
-  - bld_knowledge_card_validator
   - bld_architecture_validator
 ---
 # Memory: validator-builder
@@ -87,7 +84,6 @@ python _tools/cex_score.py --apply bld-memory-validator.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[validator-builder]] | upstream | 0.57 |
-| [[p11_qg_validator]] | upstream | 0.51 |
 | [[bld_orchestration_validator]] | upstream | 0.50 |
 | [[bld_knowledge_validator]] | upstream | 0.49 |
 | [[bld_architecture_validator]] | upstream | 0.42 |

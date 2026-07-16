@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [self_improvement_loop construction, collaboration self improvement loop, self_improvement_loop, builder, collaboration, bugloop, learning_record, interface_builder, crew role  
 coordinates, receives from]
 density_score: 0.85
-related:
-  - bld_collaboration_action_paradigm
-  - bld_collaboration_planning_strategy
-  - bld_collaboration_dataset_card
-  - bld_collaboration_prompt_optimizer
-  - bld_collaboration_discovery_questions
 ---
 ## Crew Role  
 Coordinates iterative refinement of processes, goals, and strategies through active feedback integration and adaptive planning.  
@@ -45,12 +39,3 @@ Coordinates iterative refinement of processes, goals, and strategies through act
 
 ## Boundary  
 Does NOT handle bug-specific fixes (handled by `bugloop`), passive learning (handled by `learning_record`), or external system integrations (handled by `interface_builder`).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_action_paradigm]] | sibling | 0.30 |
-| [[bld_collaboration_planning_strategy]] | sibling | 0.27 |
-| [[bld_collaboration_dataset_card]] | sibling | 0.27 |
-| [[bld_collaboration_prompt_optimizer]] | sibling | 0.26 |
-| [[bld_collaboration_discovery_questions]] | sibling | 0.26 |

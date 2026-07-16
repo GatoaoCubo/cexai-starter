@@ -32,10 +32,8 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_episodic_memory
-  - p10_qg_episodic_memory
   - bld_schema_model_registry
   - bld_schema_experiment_tracker
-  - bld_instruction_episodic_memory
 ---
 # Output Template: episodic_memory
 ```yaml
@@ -106,7 +104,6 @@ Pruning: `{{what_happens_to_pruned_episodes}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_episodic_memory]] | downstream | 0.39 |
-| [[p10_qg_episodic_memory]] | downstream | 0.38 |
 | bld_schema_model_registry | downstream | 0.34 |
 | bld_schema_experiment_tracker | downstream | 0.32 |
 | [[bld_prompt_episodic_memory]] | upstream | 0.30 |

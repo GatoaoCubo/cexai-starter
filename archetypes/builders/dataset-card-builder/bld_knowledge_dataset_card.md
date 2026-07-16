@@ -19,10 +19,6 @@ dataset, machine learning lifecycle, key concepts, data governance, data enginee
 density_score: 0.85
 related:
   - dataset-card-builder
-  - p01_kc_data_residency
-  - p01_kc_dataset_card
-  - p10_lr_dataset_card_builder
-  - bld_knowledge_card_data_residency
 ---
 ## Domain Overview
 Dataset cards serve as the fundamental layer of transparency in the Machine Learning Lifecycle (MLOps). They provide the necessary metadata, provenance, and ethical context required to ensure that datasets are used responsibly, reproducibly, and legally within production environments.
@@ -67,5 +63,4 @@ As AI regulations like the EU AI Act emerge, structured documentation becomes a 
 | [[dataset-card-builder]] | related | 0.40 |
 | p01_kc_data_residency | sibling | 0.29 |
 | [[kc_dataset_card]] | sibling | 0.29 |
-| [[p10_lr_dataset_card_builder]] | downstream | 0.28 |
 | bld_knowledge_card_data_residency | sibling | 0.27 |

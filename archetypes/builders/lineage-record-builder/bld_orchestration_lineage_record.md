@@ -29,12 +29,6 @@ keywords:
   - "listed least"
   - "agent agent"
 density_score: null
-related:
-  - kc_lineage_record
-  - bld_collaboration_agent
-  - bld_instruction_lineage_record
-  - bld_manifest_lineage_record
-  - p01_kc_agent
 ---
 # Rules: lineage_record Builder
 
@@ -57,12 +51,3 @@ related:
 | Human curator as agent | agent type: human; include name/role |
 | Circular derivation detected | Flag as data integrity issue; escalate to N04 |
 | User confuses with audit_log | Redirect: create audit_log for compliance events |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_lineage_record]] | sibling | 0.28 |
-| [[bld_collaboration_agent]] | downstream | 0.28 |
-| [[bld_instruction_lineage_record]] | upstream | 0.27 |
-| [[bld_manifest_lineage_record]] | upstream | 0.26 |
-| [[p01_kc_agent]] | sibling | 0.25 |

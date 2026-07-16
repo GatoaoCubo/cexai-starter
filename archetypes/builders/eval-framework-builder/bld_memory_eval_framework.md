@@ -21,10 +21,6 @@ reviewed, related artifacts]
 density_score: 0.85
 related:
   - eval-framework-builder
-  - p10_mem_trajectory_eval_builder
-  - bld_collaboration_eval_metric
-  - kc_eval_framework
-  - bld_collaboration_eval_framework
 ---
 ## Observation
 Common issues include inconsistent data formatting between components and unclear metric aggregation logic, leading to fragmented evaluation pipelines. Overlooking versioning of evaluation metrics often causes compatibility drift across framework updates.
@@ -46,7 +42,3 @@ Reviewed artifacts showed frameworks using JSON-schema aligned data interfaces r
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[eval-framework-builder]] | upstream | 0.43 |
-| [[p10_mem_trajectory_eval_builder]] | related | 0.35 |
-| [[bld_collaboration_eval_metric]] | downstream | 0.29 |
-| [[kc_eval_framework]] | upstream | 0.27 |
-| [[bld_collaboration_eval_framework]] | downstream | 0.26 |

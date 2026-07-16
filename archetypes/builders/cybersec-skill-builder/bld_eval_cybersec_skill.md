@@ -19,11 +19,8 @@ last_reviewed: '2026-05-30'
 keywords: [cybersec_skill, quality gates, anti-fabrication, T-code, CVE, framework controls, source provenance, capability gating, audit_log]
 density_score: 0.88
 related:
-  - p11_qg_skill
   - bld_schema_cybersec_skill
-  - p01_kc_cybersec_skill
   - bld_feedback_cybersec_skill
-  - bld_collaboration_cybersec_skill
 ---
 
 ## Quality Gate
@@ -115,8 +112,5 @@ test -e <source> || echo "H_AF4 FAIL: source path missing"
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_skill]] | parent | 0.85 |
 | [[bld_schema_cybersec_skill]] | upstream | 0.80 |
-| [[p01_kc_cybersec_skill]] | upstream | 0.65 |
 | [[bld_feedback_cybersec_skill]] | downstream | 0.60 |
-| [[bld_collaboration_cybersec_skill]] | sibling | 0.55 |

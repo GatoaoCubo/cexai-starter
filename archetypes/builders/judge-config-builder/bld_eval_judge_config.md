@@ -18,10 +18,6 @@ keywords: [not runtime judgment accuracy, judge_config construction, quality gat
 density_score: 0.90
 related:
   - bld_schema_judge_config
-  - p12_qg_workflow_node
-  - p11_qg_llm_judge
-  - bld_knowledge_card_judge_config
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 

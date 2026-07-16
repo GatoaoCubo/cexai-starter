@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [fintech_vertical construction, collaboration fintech vertical, fintech_vertical, builder, collaboration, crew role
 builds, receives from, product mgr, design team, produces for]
 density_score: 0.85
-related:
-  - bld_collaboration_integration_guide
-  - bld_collaboration_healthcare_vertical
-  - bld_collaboration_govtech_vertical
-  - bld_collaboration_compliance_checklist
-  - bld_collaboration_api_reference
 ---
 ## Crew Role
 Builds vertical-specific fintech solutions (e.g., lending, payments) by integrating APIs, customizing features, and ensuring scalability within defined boundaries.
@@ -43,12 +37,3 @@ Builds vertical-specific fintech solutions (e.g., lending, payments) by integrat
 
 ## Boundary
 Does NOT handle compliance validation (Compliance Bldr), audit trails (Audit Bldr), or customer onboarding (Onboarding Bldr).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_integration_guide]] | sibling | 0.28 |
-| [[bld_collaboration_healthcare_vertical]] | sibling | 0.27 |
-| [[bld_collaboration_govtech_vertical]] | sibling | 0.27 |
-| [[bld_collaboration_compliance_checklist]] | sibling | 0.27 |
-| [[bld_collaboration_api_reference]] | sibling | 0.25 |

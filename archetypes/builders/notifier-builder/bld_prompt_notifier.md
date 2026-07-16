@@ -33,10 +33,6 @@ keywords:
 density_score: 0.90
 related:
   - notifier-builder
-  - bld_output_template_notifier
-  - p01_kc_notifier
-  - p11_qg_notifier
-  - bld_knowledge_card_notifier
 ---
 # Instructions: How to Produce a notifier
 
@@ -110,7 +106,3 @@ python _tools/cex_skill_loader.py --verify notifier
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[notifier-builder]] | downstream | 0.53 |
-| [[bld_output_template_notifier]] | downstream | 0.50 |
-| [[p01_kc_notifier]] | upstream | 0.47 |
-| [[p11_qg_notifier]] | downstream | 0.47 |
-| [[bld_knowledge_card_notifier]] | downstream | 0.45 |

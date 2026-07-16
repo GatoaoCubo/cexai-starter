@@ -21,11 +21,7 @@ specializes, routing
 keywords]
 density_score: 0.87
 related:
-  - bld_knowledge_card_memory_benchmark
-  - bld_instruction_memory_benchmark
-  - p01_kc_hybrid_review4_n05
   - memory-architecture-builder
-  - bld_collaboration_memory_benchmark
 ---
 ## Identity
 ## Identity
@@ -78,8 +74,4 @@ NEVER produce benchmarks without specifying the evaluation distance (turns, toke
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_memory_benchmark]] | upstream | 0.54 |
-| [[bld_instruction_memory_benchmark]] | upstream | 0.52 |
-| [[p01_kc_hybrid_review4_n05]] | upstream | 0.38 |
 | [[memory-architecture-builder]] | sibling | 0.37 |
-| [[bld_collaboration_memory_benchmark]] | downstream | 0.37 |

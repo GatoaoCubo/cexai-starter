@@ -30,8 +30,6 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_agent_card
-  - bld_knowledge_card_agent_card
   - bld_memory_agent_card
   - agent-builder
   - bld_architecture_agent_card

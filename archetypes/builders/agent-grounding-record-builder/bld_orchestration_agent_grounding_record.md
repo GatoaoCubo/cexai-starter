@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [define crew role, upstream inputs, downstream consumers, agent_grounding_record construction, chunk metadata from rag_source, agent_grounding_record, builder]
 density_score: 0.85
 related:
-  - bld_manifest_agent_grounding_record
   - bld_architecture_agent_grounding_record
-  - bld_knowledge_card_agent_grounding_record
-  - bld_instruction_agent_grounding_record
 ---
 # Agent Grounding Record Builder -- Collaboration
 ## Crew Role
@@ -101,7 +98,4 @@ Wave 1: N04 produces grounding records -> Wave 2: N05 validates OTel + schema ->
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_agent_grounding_record]] | upstream | 0.48 |
 | [[bld_architecture_agent_grounding_record]] | upstream | 0.47 |
-| [[bld_knowledge_card_agent_grounding_record]] | upstream | 0.44 |
-| [[bld_instruction_agent_grounding_record]] | upstream | 0.38 |

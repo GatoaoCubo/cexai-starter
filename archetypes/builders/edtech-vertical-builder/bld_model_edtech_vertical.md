@@ -19,9 +19,6 @@ specializes, evaluate ed, crew role
 acts]
 density_score: 0.85
 related:
-  - p10_mem_edtech_vertical_builder
-  - p01_qg_edtech_vertical
-  - bld_instruction_edtech_vertical
   - bld_tools_edtech_vertical
   - edtech_vertical_lms_market
 ---
@@ -70,8 +67,5 @@ NEVER bypass FERPA/COPPA compliance checks in generated outputs.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_edtech_vertical_builder]] | downstream | 0.66 |
-| [[p01_qg_edtech_vertical]] | downstream | 0.58 |
-| [[bld_instruction_edtech_vertical]] | downstream | 0.55 |
 | [[bld_tools_edtech_vertical]] | downstream | 0.52 |
 | [[edtech_vertical_lms_market]] | related | 0.48 |

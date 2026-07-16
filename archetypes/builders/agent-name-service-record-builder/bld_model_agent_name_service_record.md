@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [define identity, agentdns registry record builder, agent_name_service_record construction, agent_name_service_record, builder, manifest, agent name service record builder]
 density_score: 0.85
 related:
-  - bld_knowledge_card_agent_name_service_record
   - bld_tools_agent_name_service_record
-  - bld_collaboration_agent_name_service_record
-  - bld_output_template_agent_name_service_record
-  - bld_instruction_agent_name_service_record
 ---
 ## Identity
 # Agent Name Service Record Builder -- Manifest
@@ -110,8 +106,4 @@ with an agent via its ANS name. Think of it as "DNS for AI agents."
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_agent_name_service_record]] | upstream | 0.64 |
 | [[bld_tools_agent_name_service_record]] | related | 0.58 |
-| [[bld_collaboration_agent_name_service_record]] | downstream | 0.57 |
-| [[bld_output_template_agent_name_service_record]] | downstream | 0.55 |
-| [[bld_instruction_agent_name_service_record]] | upstream | 0.53 |

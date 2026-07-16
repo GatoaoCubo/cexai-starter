@@ -18,10 +18,8 @@ each, stack architecture, google fonts]
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
-  - bld_collaboration_landing_page
   - kc_landing_page
   - bld_tools_landing_page
-  - bld_output_template_landing_page
   - landing-page-builder
 ---
 # Architecture: Landing Page Builder
@@ -95,5 +93,4 @@ Next.js App Router (optional)
 | [[bld_orchestration_landing_page]] | downstream | 0.45 |
 | [[kc_landing_page]] | upstream | 0.38 |
 | [[bld_tools_landing_page]] | upstream | 0.38 |
-| [[bld_output_template_landing_page]] | upstream | 0.38 |
 | [[landing-page-builder]] | upstream | 0.37 |

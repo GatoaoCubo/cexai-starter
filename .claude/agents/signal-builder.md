@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - signal-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p03_sp_n03_creation_nucleus
-  - bld_collaboration_signal
 ---
 
 # signal-builder Sub-Agent

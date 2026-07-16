@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [dispatch rule construction, collaboration dispatch rule, dispatch_rule, builder, examples, "### crew: routing table construction", my role, crew compositions, full dispatch setup, routing table construction]
 density_score: 0.90
-related:
-  - bld_collaboration_handoff
-  - bld_collaboration_fallback_chain
-  - bld_collaboration_handoff_protocol
-  - bld_collaboration_router
-  - bld_collaboration_dag
 ---
 # Collaboration: dispatch-rule-builder
 ## My Role in Crews
@@ -61,12 +55,3 @@ I produce routing policies so orchestrators can dispatch work to the correct tar
 | handoff-builder | Creates delegation instructions for dispatched targets |
 | fallback-chain-builder | Defines degradation when dispatch target fails |
 | dag-builder | Models dispatch dependencies in execution graphs |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_handoff]] | sibling | 0.43 |
-| [[bld_collaboration_fallback_chain]] | sibling | 0.40 |
-| [[bld_collaboration_handoff_protocol]] | sibling | 0.38 |
-| [[bld_collaboration_router]] | sibling | 0.35 |
-| [[bld_collaboration_dag]] | sibling | 0.35 |

@@ -34,9 +34,6 @@ cross_provider:
 related:
   - bld_architecture_unit_eval
   - unit-eval-builder
-  - p01_kc_e2e_eval
-  - bld_knowledge_card_unit_eval
-  - n00_unit_eval_manifest
 ---
 
 # Unit Eval

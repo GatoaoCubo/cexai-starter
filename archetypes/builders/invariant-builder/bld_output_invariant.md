@@ -14,11 +14,8 @@ updated: "2026-04-07"
 density_score: 0.90
 llm_function: PRODUCE
 related:
-  - bld_output_template_axiom
-  - bld_knowledge_card_invariant
   - bld_schema_invariant
   - p08_law_{{NUMBER}}
-  - p03_ins_law
 ---
 id: p08_law_`{{number}}`
 kind: invariant
@@ -93,8 +90,6 @@ python _tools/cex_score.py --apply bld-output-template-invariant.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_axiom]] | sibling | 0.36 |
 | [[bld_knowledge_invariant]] | related | 0.35 |
 | [[bld_schema_invariant]] | related | 0.35 |
 | [\[p08_law_`{{NUMBER}}`\]] | related | 0.31 |
-| [[p03_ins_law]] | related | 0.31 |

@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_agent
-  - bld_knowledge_card_agent
   - bld_architecture_agent
-  - p01_kc_agent
-  - bld_instruction_agent
 ---
 ## Identity
 

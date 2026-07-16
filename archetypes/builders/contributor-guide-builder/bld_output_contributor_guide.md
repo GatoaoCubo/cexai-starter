@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [contributor_guide construction, contributor guide output template, full contributing, pr process, and cla, contributor_guide, builder]
 density_score: 0.85
-related:
-  - p05_cg_cex
-  - p05_qg_contributor_guide
-  - bld_instruction_contributor_guide
-  - p05_cg_cexai_showcase
-  - p04_hookconf_github_actions_n05
 ---
 ## Usage Notes
 Replace `{{tokens}}` before delivery; remove this section from final output.

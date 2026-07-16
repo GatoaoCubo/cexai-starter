@@ -13,10 +13,7 @@ keywords: [intent parsing, task decomposition, context initialization, guided de
 density_score: 1.0
 updated: "2026-04-13"
 related:
-  - kc_workflow_run_crate
-  - p03_ins_doing_tasks
   - p01_kc_dispatch_modes
-  - bld_collaboration_response_format
   - kc_system_prompt
 ---
 

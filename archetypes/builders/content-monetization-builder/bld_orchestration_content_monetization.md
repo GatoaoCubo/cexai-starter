@@ -19,10 +19,7 @@ keywords: [content monetization construction, collaboration content monetization
 density_score: 0.90
 related:
   - bld_architecture_content_monetization
-  - bld_collaboration_research_pipeline
   - content-monetization-builder
-  - bld_collaboration_social_publisher
-  - bld_knowledge_card_content_monetization
 ---
 # Collaboration: content-monetization-builder
 

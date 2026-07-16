@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [quantization_config construction, schema quantization config, quantization_config, builder, schema, frontmatter fields, body fields, required body fields, allowed values, recommended body fields]
 density_score: 0.87
 related:
-  - bld_knowledge_card_quantization_config
-  - bld_output_template_quantization_config
   - bld_schema_model_registry
-  - p09_qg_quantization_config
   - bld_schema_experiment_tracker
 ---
 ## Frontmatter Fields
@@ -113,8 +110,5 @@ Examples:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_quantization_config]] | upstream | 0.42 |
-| [[bld_output_template_quantization_config]] | upstream | 0.41 |
 | [[bld_schema_model_registry]] | sibling | 0.39 |
-| [[p09_qg_quantization_config]] | downstream | 0.38 |
 | [[bld_schema_experiment_tracker]] | sibling | 0.35 |

@@ -21,10 +21,6 @@ reviewed, related artifacts, traits]
 density_score: 0.85
 related:
   - agent-profile-builder
-  - bld_knowledge_card_agent_profile
-  - bld_collaboration_agent_profile
-  - p10_lr_judge_config_builder
-  - p10_mem_eval_metric_builder
 ---
 ## Observation
 Common issues include inconsistent trait definitions, overgeneralization of roles, and misalignment between persona goals and use cases. Profiles often lack specificity, leading to ambiguous or unrealistic agent identities.
@@ -49,4 +45,3 @@ Reviewed artifacts showed success when personas included 3-5 distinct, actionabl
 | [[bld_knowledge_agent_profile]] | upstream | 0.34 |
 | [[bld_orchestration_agent_profile]] | downstream | 0.26 |
 | p10_lr_judge_config_builder | sibling | 0.23 |
-| [[p10_mem_eval_metric_builder]] | related | 0.22 |

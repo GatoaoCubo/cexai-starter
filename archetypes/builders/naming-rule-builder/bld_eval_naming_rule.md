@@ -14,12 +14,6 @@ created: "2026-03-27"
 updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.85
-related:
-  - p01_kc_naming_rule
-  - p11_qg_agent
-  - p03_ins_naming_rule
-  - p11_qg_quality_gate
-  - n00_naming_rule_manifest
 ---
 ## Quality Gate
 

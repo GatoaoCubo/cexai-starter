@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [trajectory_eval construction, instruction trajectory eval, trajectory_eval, builder, instruction, related artifacts, sibling, phase, evaluation, trajectory]
 density_score: 0.85
-related:
-  - bld_instruction_judge_config
-  - bld_instruction_eval_framework
-  - bld_instruction_playground_config
-  - bld_instruction_eval_metric
-  - bld_instruction_safety_policy
 ---
 ## Phase 1: RESEARCH  
 1. Review existing agent trajectory evaluation frameworks (e.g., RL benchmarks, safety metrics).  
@@ -48,12 +42,3 @@ related:
 - [ ] Ensure schema compliance (SCHEMA.md) and template adherence (OUTPUT_TEMPLATE.md).  
 - [ ] Test artifact with sample trajectories for usability.  
 - [ ] Obtain stakeholder approval for deployment.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_judge_config]] | sibling | 0.41 |
-| [[bld_instruction_eval_framework]] | sibling | 0.40 |
-| [[bld_instruction_playground_config]] | sibling | 0.33 |
-| [[bld_instruction_eval_metric]] | sibling | 0.30 |
-| [[bld_instruction_safety_policy]] | sibling | 0.29 |

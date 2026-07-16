@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_knowledge_card_regression_check
-  - bld_collaboration_regression_check
-  - p01_kc_regression_check
   - bld_architecture_regression_check
-  - bld_instruction_regression_check
 ---
 ## Identity
 
@@ -113,8 +109,4 @@ SCHEMA.md is the source of truth. Artifact id must match `^p07_rc_[a-z][a-z0-9_]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_regression_check]] | upstream | 0.59 |
-| [[bld_collaboration_regression_check]] | downstream | 0.54 |
-| [[p01_kc_regression_check]] | related | 0.51 |
 | [[bld_architecture_regression_check]] | downstream | 0.49 |
-| [[bld_instruction_regression_check]] | upstream | 0.45 |

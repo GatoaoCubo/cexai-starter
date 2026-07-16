@@ -18,10 +18,6 @@ keywords: [compliance_checklist construction, instruction compliance checklist, 
 density_score: 0.85
 related:
   - compliance-checklist-builder
-  - bld_knowledge_card_compliance_checklist
-  - p11_qg_compliance_checklist
-  - p10_mem_compliance_checklist_builder
-  - kc_compliance_checklist
 ---
 ## Phase 1: RESEARCH  
 1. Gather SOC2 Trust Service Criteria, GDPR data protection principles, HIPAA security rules, and EU AI Act compliance requirements.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[compliance-checklist-builder]] | downstream | 0.51 |
-| [[bld_knowledge_card_compliance_checklist]] | upstream | 0.48 |
-| [[p11_qg_compliance_checklist]] | downstream | 0.46 |
-| [[p10_mem_compliance_checklist_builder]] | downstream | 0.44 |
-| [[kc_compliance_checklist]] | upstream | 0.42 |

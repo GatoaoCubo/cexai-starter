@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [safety_hazard_taxonomy construction, safety_hazard_taxonomy, builder, knowledge_card, mlcommons, ailuminate, llama-guard]
 density_score: 0.85
 related:
-  - bld_instruction_safety_hazard_taxonomy
   - safety-hazard-taxonomy-builder
-  - bld_output_template_safety_hazard_taxonomy
-  - p11_qg_safety_hazard_taxonomy
   - bld_schema_safety_hazard_taxonomy
 ---
 ## Domain Overview
@@ -94,8 +91,5 @@ A safety_hazard_taxonomy artifact formally codifies this classification structur
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_safety_hazard_taxonomy]] | downstream | 0.66 |
 | [[safety-hazard-taxonomy-builder]] | downstream | 0.66 |
-| [[bld_output_template_safety_hazard_taxonomy]] | downstream | 0.58 |
-| [[p11_qg_safety_hazard_taxonomy]] | downstream | 0.48 |
 | [[bld_schema_safety_hazard_taxonomy]] | downstream | 0.48 |

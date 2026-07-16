@@ -36,11 +36,7 @@ this, quality gate, confidence threshold]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_dispatch_rule
   - bld_schema_dispatch_rule
-  - p12_dr_creation
-  - p01_kc_dispatch_rule
-  - bld_instruction_dispatch_rule
 ---
 ## Summary
 Routing rules that match tasks to executors fail in two directions: too narrow (low recall, tasks fall through to default) or too broad (low precision, wrong executor receives tasks). A disciplined keyword set, calibrated confidence threshold, and distinct fallback executor together achieve high recall and precision with a safety net for every miss.
@@ -116,8 +112,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_dispatch_rule_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_dispatch_rule]] | upstream | 0.34 |
 | [[bld_schema_dispatch_rule]] | upstream | 0.31 |
-| [[p12_dr_creation]] | downstream | 0.31 |
-| [[p01_kc_dispatch_rule]] | downstream | 0.29 |
-| [[bld_instruction_dispatch_rule]] | upstream | 0.29 |

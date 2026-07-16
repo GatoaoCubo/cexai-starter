@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [prompt_technique construction, quality gate prompt technique, prompt_technique, builder, quality_gate, quality gate, prompt pattern]
 density_score: 0.85
-related:
-  - p11_qg_usage_report
-  - p09_qg_marketplace_app_manifest
-  - p03_qg_reasoning_strategy
-  - p03_qg_prompt_optimizer
-  - p07_qg_eval_metric
 ---
 ## Quality Gate
 

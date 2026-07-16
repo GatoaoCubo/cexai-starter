@@ -16,9 +16,7 @@ updated: "2026-04-07"
 keywords: [memory type construction, output template memory type, memory_type, builder, examples, output template, required frontmatter, required body sections, min length, decay policy]
 density_score: 0.90
 related:
-  - bld_manifest_memory_type
   - bld_schema_memory_type
-  - bld_instruction_memory_type
   - bld_config_memory_type
 ---
 # Output Template: memory_type
@@ -72,7 +70,5 @@ python _tools/cex_score.py --apply bld-output-template-memory-type.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_memory_type]] | upstream | 0.37 |
 | [[bld_schema_memory_type]] | downstream | 0.34 |
-| [[bld_instruction_memory_type]] | upstream | 0.32 |
 | [[bld_config_memory_type]] | downstream | 0.29 |

@@ -19,10 +19,7 @@ analyst, magic quadrant, forrester wave, key concepts, wave methodology]
 density_score: 0.85
 related:
   - analyst-briefing-builder
-  - bld_instruction_analyst_briefing
   - bld_tools_analyst_briefing
-  - p10_mem_analyst_briefing_builder
-  - p05_qg_analyst_briefing
 ---
 ## Domain Overview
 Analyst briefing artifacts structure vendor-to-analyst communications for Gartner, Forrester, IDC, and similar research firms. They provide the evidence substrate for Magic Quadrant, Forrester Wave, and IDC MarketScape evaluations, as well as one-on-one briefing sessions. An effective analyst briefing converts raw product and market data into a framework-aligned narrative that helps analysts accurately position the vendor in their research.
@@ -72,7 +69,4 @@ Analyst relations (AR) programs at technology vendors invest significantly in br
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[analyst-briefing-builder]] | downstream | 0.73 |
-| [[bld_instruction_analyst_briefing]] | downstream | 0.57 |
 | [[bld_tools_analyst_briefing]] | downstream | 0.56 |
-| [[p10_mem_analyst_briefing_builder]] | downstream | 0.55 |
-| [[p05_qg_analyst_briefing]] | downstream | 0.53 |

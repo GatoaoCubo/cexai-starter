@@ -17,11 +17,8 @@ updated: "2026-04-13"
 keywords: [incident_report construction, tools incident report, incident_report, builder, tools, production tools, validation tools, external references, related artifacts, tools tool]
 density_score: 0.85
 related:
-  - bld_collaboration_incident_report
   - bld_tools_edit_format
   - incident-report-builder
-  - bld_instruction_incident_report
-  - p11_fb_incident_report
 ---
 ## Production Tools
 | Tool | Purpose | When |
@@ -51,8 +48,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_incident_report]] | downstream | 0.32 |
 | [[bld_tools_edit_format]] | sibling | 0.31 |
 | [[incident-report-builder]] | downstream | 0.31 |
-| [[bld_instruction_incident_report]] | upstream | 0.31 |
-| [[p11_fb_incident_report]] | downstream | 0.29 |

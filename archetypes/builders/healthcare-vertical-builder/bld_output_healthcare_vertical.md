@@ -18,9 +18,6 @@ keywords: [healthcare_vertical construction, output template healthcare vertical
 density_score: 0.85
 related:
   - bld_config_healthcare_vertical
-  - p11_fb_healthcare_vertical
-  - n00_healthcare_vertical_manifest
-  - kc_healthcare_vertical
   - bld_schema_healthcare_vertical
 ---
 ```yaml
@@ -57,7 +54,4 @@ def get_patient_data(patient_id):
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_healthcare_vertical]] | downstream | 0.35 |
-| [[p11_fb_healthcare_vertical]] | downstream | 0.28 |
-| [[n00_healthcare_vertical_manifest]] | upstream | 0.23 |
-| [[kc_healthcare_vertical]] | upstream | 0.21 |
 | [[bld_schema_healthcare_vertical]] | downstream | 0.21 |

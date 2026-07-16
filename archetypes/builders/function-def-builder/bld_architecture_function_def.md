@@ -18,10 +18,6 @@ keywords: [component map of function_def, and architectural position, function d
 density_score: 0.90
 related:
   - function-def-builder
-  - p01_kc_function_def
-  - n00_function_def_manifest
-  - p11_qg_function_def
-  - bld_instruction_function_def
 ---
 # Architecture: function_def
 ## Component Inventory
@@ -93,5 +89,4 @@ provider_compat --informs-> deployment (which providers support it)
 | [[function-def-builder]] | upstream | 0.62 |
 | [[kc_function_def]] | upstream | 0.51 |
 | n00_function_def_manifest | upstream | 0.49 |
-| [[p11_qg_function_def]] | downstream | 0.39 |
 | [[bld_prompt_function_def]] | upstream | 0.37 |

@@ -4,11 +4,8 @@ description: "Builds ONE bugloop artifact via 8F pipeline. Loads bugloop-builder
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_bugloop
   - bugloop-builder
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_bugloop_manifest
 ---
 
 # bugloop-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_bugloop]] | related | 0.35 |
 | [[bugloop-builder]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.30 |
-| [[n00_bugloop_manifest]] | related | 0.29 |

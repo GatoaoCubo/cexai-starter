@@ -18,10 +18,7 @@ keywords: [llm agent procedural memory, load schema, define skill namespace, sto
 density_score: 0.90
 related:
   - procedural-memory-builder
-  - bld_knowledge_card_procedural_memory
   - bld_schema_procedural_memory
-  - bld_output_template_procedural_memory
-  - bld_instruction_memory_architecture
 ---
 ## Phase 1: RESEARCH
 
@@ -63,7 +60,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[procedural-memory-builder]] | downstream | 0.52 |
-| [[bld_knowledge_card_procedural_memory]] | upstream | 0.48 |
 | [[bld_schema_procedural_memory]] | downstream | 0.46 |
-| [[bld_output_template_procedural_memory]] | downstream | 0.44 |
-| [[bld_instruction_memory_architecture]] | sibling | 0.42 |

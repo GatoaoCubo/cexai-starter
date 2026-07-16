@@ -18,9 +18,6 @@ keywords: [and architectural position, experiment config construction, architect
 density_score: 0.90
 related:
   - experiment-config-builder
-  - bld_collaboration_experiment_config
-  - p01_kc_experiment_config
-  - p11_qg_experiment_config
   - bld_schema_experiment_config
 ---
 ## Component Inventory
@@ -80,7 +77,4 @@ learning_record (P10) --receives_from--> experiment_config (concluded experiment
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[experiment-config-builder]] | downstream | 0.67 |
-| [[bld_collaboration_experiment_config]] | downstream | 0.60 |
-| [[p01_kc_experiment_config]] | downstream | 0.44 |
-| [[p11_qg_experiment_config]] | downstream | 0.44 |
 | [[bld_schema_experiment_config]] | upstream | 0.44 |

@@ -15,12 +15,6 @@ author: n01_intelligence
 tldr: "N01 task procedure memory: step-by-step SOPs for research pipeline execution (STORM+CRAG+CRITIC), source verification and confidence scoring, grounding/citation discipline, honest-degrade on missing MCP credentials, deep-research crew dispatch, N07 handoff response, and quality self-audit -- plus evidence-cited gotchas and anti-patterns."
 keywords: [research pipeline execution, source verification, confidence scoring, grounding and citation discipline, honest-degrade on missing credentials, deep research crew dispatch, n07 handoff response, quality self-audit, procedural_memory]
 density_score: null
-related:
-  - component_map_n01
-  - p12_ho_n01
-  - p12_ct_source_verification.md
-  - p09_perm_n01
-  - audit_self_review_n01
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_crew. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F3_inject"
 keywords: [builder identity, routing for changelog, changelog construction, type builder changelog, changelog, builder, type_builder, semver, breaking changes, feature update]
 density_score: 0.85
-related:
-  - kc_changelog
-  - bld_knowledge_card_changelog
-  - n00_changelog_manifest
-  - p10_mem_changelog_builder
-  - bld_output_template_changelog
 ---
 ## Identity
 
@@ -65,12 +59,3 @@ ALWAYS use semver and maintain chronological order.
 ALWAYS separate features, fixes, and breaking changes into distinct sections.  
 NEVER include markdown formatting or prose-style descriptions.  
 NEVER merge multiple versions or omit versioned context.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_changelog]] | related | 0.53 |
-| [[bld_knowledge_card_changelog]] | related | 0.50 |
-| [[n00_changelog_manifest]] | related | 0.44 |
-| [[p10_mem_changelog_builder]] | downstream | 0.42 |
-| [[bld_output_template_changelog]] | downstream | 0.40 |

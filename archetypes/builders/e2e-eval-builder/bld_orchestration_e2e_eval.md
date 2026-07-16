@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [e eval construction, collaboration e, e eval, e2e_eval, builder, examples, "### crew: release validation", my role, crew compositions, quality pipeline]
 density_score: 0.90
 related:
-  - bld_collaboration_golden_test
-  - bld_collaboration_benchmark
   - e2e-eval-builder
-  - bld_collaboration_bugloop
-  - bld_collaboration_smoke_eval
 ---
 # Collaboration: e2e-eval-builder
 ## My Role in Crews
@@ -64,8 +60,4 @@ I validate complete pipelines so teams can confirm end-to-end correctness.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_golden_test]] | sibling | 0.51 |
-| [[bld_collaboration_benchmark]] | sibling | 0.43 |
 | [[e2e-eval-builder]] | upstream | 0.40 |
-| [[bld_collaboration_bugloop]] | sibling | 0.37 |
-| [[bld_collaboration_smoke_eval]] | sibling | 0.36 |

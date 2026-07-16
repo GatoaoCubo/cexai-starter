@@ -13,10 +13,7 @@ density_score: 1.0
 updated: "2026-04-13"
 related:
   - ontology-builder
-  - n00_ontology_manifest
-  - bld_collaboration_ontology
   - bld_architecture_ontology
-  - bld_knowledge_card_ontology
 ---
 
 # Ontology (P01)

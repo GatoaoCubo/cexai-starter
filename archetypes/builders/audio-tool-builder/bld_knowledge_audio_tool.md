@@ -21,9 +21,6 @@ density_score: 0.90
 related:
   - audio-tool-builder
   - bld_config_audio_tool
-  - bld_instruction_audio_tool
-  - p10_lr_audio_tool_builder
-  - p01_kc_audio_tool
 ---
 # Domain Knowledge: audio_tool
 ## Executive Summary
@@ -95,6 +92,3 @@ Audio tools process audio signals: converting speech to text (STT), generating s
 |----------|-------------|-------|
 | [[audio-tool-builder]] | downstream | 0.55 |
 | [[bld_config_audio_tool]] | downstream | 0.53 |
-| [[bld_instruction_audio_tool]] | downstream | 0.53 |
-| [[p10_lr_audio_tool_builder]] | downstream | 0.52 |
-| [[p01_kc_audio_tool]] | sibling | 0.49 |

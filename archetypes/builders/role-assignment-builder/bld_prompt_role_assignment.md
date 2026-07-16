@@ -19,9 +19,6 @@ density_score: 0.87
 related:
   - role-assignment-builder
   - bld_schema_role_assignment
-  - p11_qg_role_assignment
-  - bld_output_template_role_assignment
-  - bld_knowledge_card_role_assignment
 ---
 ## Phase 1: RESEARCH
 1. Identify role_name and the crew(s) that will use it (scope).
@@ -55,6 +52,4 @@ related:
 |----------|-------------|-------|
 | [[role-assignment-builder]] | upstream | 0.57 |
 | [[bld_schema_role_assignment]] | downstream | 0.53 |
-| [[p11_qg_role_assignment]] | downstream | 0.48 |
-| [[bld_output_template_role_assignment]] | downstream | 0.42 |
 | [[bld_knowledge_role_assignment]] | upstream | 0.42 |

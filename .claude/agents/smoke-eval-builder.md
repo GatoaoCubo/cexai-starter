@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - smoke-eval-builder
-  - bld_collaboration_smoke_eval
-  - n00_smoke_eval_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
 ---
 
 # smoke-eval-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[smoke-eval-builder]] | related | 0.36 |
-| [[bld_collaboration_smoke_eval]] | related | 0.33 |
-| [[n00_smoke_eval_manifest]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |

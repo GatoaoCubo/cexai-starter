@@ -18,10 +18,6 @@ keywords: [component map of memory_summary, and architectural position, memory s
 density_score: 0.90
 related:
   - memory-summary-builder
-  - bld_collaboration_memory_summary
-  - bld_instruction_memory_summary
-  - p11_qg_memory_summary
-  - p01_kc_memory_summary
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -82,5 +78,4 @@ freshness_tracker  --weights-->    output_buffer
 | [[memory-summary-builder]] | downstream | 0.53 |
 | [[bld_orchestration_memory_summary]] | downstream | 0.41 |
 | [[bld_prompt_memory_summary]] | upstream | 0.35 |
-| [[p11_qg_memory_summary]] | downstream | 0.35 |
 | [[kc_memory_summary]] | downstream | 0.33 |

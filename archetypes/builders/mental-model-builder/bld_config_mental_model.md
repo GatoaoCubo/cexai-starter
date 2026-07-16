@@ -28,11 +28,8 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, mental model construction, config mental model, mental_model, builder, examples, "p02_mm_{agent_slug}.yaml"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_mental_model
   - mental-model-builder
-  - p03_ins_mental_model
   - bld_schema_mental_model
-  - bld_collaboration_mental_model
 ---
 # Config: mental_model Production Rules
 
@@ -79,6 +76,5 @@ Never set pillar to P10 — that requires a different builder.
 |----------|-------------|-------|
 | [[bld_knowledge_mental_model]] | upstream | 0.39 |
 | [[mental-model-builder]] | upstream | 0.34 |
-| [[p03_ins_mental_model]] | upstream | 0.33 |
 | [[bld_schema_mental_model]] | upstream | 0.31 |
 | [[bld_orchestration_mental_model]] | upstream | 0.31 |

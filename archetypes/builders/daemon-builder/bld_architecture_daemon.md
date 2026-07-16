@@ -17,11 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of daemon, and architectural position, daemon construction, architecture daemon, daemon, builder, examples, continuous, component inventory, dependency graph]
 density_score: 0.90
 related:
-  - bld_collaboration_daemon
   - daemon-builder
-  - n00_daemon_manifest
-  - p04_daemon_autonomous
-  - p01_kc_daemon
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -80,8 +76,4 @@ health_check --monitors--> daemon (probes liveness)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_daemon]] | downstream | 0.68 |
 | [[daemon-builder]] | upstream | 0.64 |
-| [[n00_daemon_manifest]] | upstream | 0.63 |
-| [[p04_daemon_autonomous]] | upstream | 0.56 |
-| [[p01_kc_daemon]] | upstream | 0.55 |

@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [smoke eval construction, collaboration smoke eval, smoke_eval, builder, examples, "### crew: new artifact kind quality system", "### crew: skill validation at launch", my role, crew compositions, deploy safety net]
 density_score: 0.90
 related:
-  - bld_collaboration_unit_eval
   - smoke-eval-builder
-  - bld_collaboration_scoring_rubric
-  - p11_qg_smoke-eval
-  - bld_collaboration_e2e_eval
 ---
 # Collaboration: smoke-eval-builder
 ## My Role in Crews
@@ -70,8 +66,4 @@ I produce fast sanity checks under 30 seconds that verify critical paths and hea
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_unit_eval]] | sibling | 0.47 |
 | [[smoke-eval-builder]] | related | 0.43 |
-| [[bld_collaboration_scoring_rubric]] | sibling | 0.40 |
-| [[p11_qg_smoke-eval]] | downstream | 0.39 |
-| [[bld_collaboration_e2e_eval]] | sibling | 0.37 |

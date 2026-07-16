@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for analyst_briefing, analyst_briefing construction, type builder analyst briefing, analyst_briefing, builder, type_builder, identity
 specializes, magic quadrant, gartner magic quadrant]
 density_score: 0.85
-related:
-  - bld_knowledge_card_analyst_briefing
-  - bld_instruction_analyst_briefing
-  - p10_mem_analyst_briefing_builder
-  - bld_collaboration_analyst_briefing
-  - n00_analyst_briefing_manifest
 ---
 ## Identity
 
@@ -67,12 +61,3 @@ ALWAYS frame vendor positioning using analyst framework language (Visionary, Lea
 ALWAYS include quantified evidence for every major capability claim.
 NEVER use unverified market share or growth statistics.
 NEVER confuse analyst briefing with pitch deck -- the audience is the analyst, not a buyer.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_analyst_briefing]] | upstream | 0.72 |
-| [[bld_instruction_analyst_briefing]] | upstream | 0.66 |
-| [[p10_mem_analyst_briefing_builder]] | downstream | 0.58 |
-| [[bld_collaboration_analyst_briefing]] | downstream | 0.58 |
-| [[n00_analyst_briefing_manifest]] | related | 0.56 |

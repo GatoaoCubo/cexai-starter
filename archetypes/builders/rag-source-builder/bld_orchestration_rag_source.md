@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [rag source construction, collaboration rag source, rag_source, builder, examples, "### crew: rag-augmented agent stack", "### crew: research domain setup", my role, crew compositions, knowledge ingestion pipeline]
 density_score: 0.90
 related:
-  - bld_collaboration_knowledge_card
   - bld_memory_rag_source
-  - bld_collaboration_knowledge_index
-  - bld_collaboration_citation
-  - bld_collaboration_embedding_config
 ---
 # Collaboration: rag-source-builder
 ## My Role in Crews

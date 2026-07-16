@@ -19,9 +19,7 @@ updated: "2026-04-17"
 keywords: [context map construction, collaboration context map, ddd strategic design specialist, context_map, builder, collaboration, "### crew: system design package", "### crew: integration hardening", my role, crew compositions]
 density_score: 0.90
 related:
-  - bld_knowledge_card_context_map
   - context-map-builder
-  - kc_context_map
   - bld_architecture_context_map
   - bounded-context-builder
 ---
@@ -92,8 +90,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_context_map]] | upstream | 0.38 |
 | [[context-map-builder]] | upstream | 0.36 |
-| [[kc_context_map]] | upstream | 0.35 |
 | [[bld_architecture_context_map]] | upstream | 0.31 |
 | [[bounded-context-builder]] | upstream | 0.30 |

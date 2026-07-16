@@ -28,10 +28,7 @@ keywords:
 density_score: 0.92
 related:
   - bld_schema_terminal_backend
-  - bld_instruction_terminal_backend
-  - n00_terminal_backend_manifest
   - terminal-backend-builder
-  - bld_output_template_terminal_backend
 ---
 ## Quality Gate
 ## Definition

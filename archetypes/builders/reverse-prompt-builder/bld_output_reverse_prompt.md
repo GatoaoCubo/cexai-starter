@@ -14,10 +14,7 @@ updated: "2026-07-03"
 density_score: 0.90
 llm_function: PRODUCE
 related:
-  - p03_ins_reverse_prompt
-  - schema_reverse_prompt_builder
   - bld_eval_reverse_prompt
-  - bld_output_template_prompt_template
   - bld_architecture_reverse_prompt
 ---
 id: p03_rp_`{{slug}}`
@@ -98,8 +95,5 @@ density_score: `{{density_score}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_reverse_prompt]] | related | 0.29 |
-| [[schema_reverse_prompt_builder]] | related | 0.28 |
 | [[bld_eval_reverse_prompt]] | related | 0.25 |
-| [[bld_output_template_prompt_template]] | sibling | 0.23 |
 | [[bld_architecture_reverse_prompt]] | sibling | 0.21 |

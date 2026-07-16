@@ -20,11 +20,8 @@ keywords: [course_module construction, memory course module, bloom-aligned objec
 modules]
 density_score: 0.88
 related:
-  - p05_qg_course_module
   - bld_schema_course_module
-  - bld_knowledge_card_course_module
   - course-module-builder
-  - n00_course_module_manifest
 ---
 # Memory: course-module-builder
 
@@ -54,8 +51,5 @@ Bloom (1956, revised Anderson & Krathwohl 2001) is the canonical cognitive taxon
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_qg_course_module]] | downstream | 0.35 |
 | [[bld_schema_course_module]] | upstream | 0.33 |
-| [[bld_knowledge_card_course_module]] | upstream | 0.32 |
 | [[course-module-builder]] | upstream | 0.32 |
-| [[n00_course_module_manifest]] | upstream | 0.26 |

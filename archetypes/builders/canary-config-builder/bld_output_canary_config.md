@@ -30,11 +30,7 @@ keywords:
   - "provider provider"
 density_score: null
 related:
-  - bld_instruction_canary_config
-  - bld_quality_gate_canary_config
-  - kc_canary_config
   - bld_schema_canary_config
-  - bld_rules_canary_config
 ---
 # Output Template: canary_config
 
@@ -88,8 +84,4 @@ tldr: "{{service_name}} canary: {{canary_version}} -> 100% over {{stages_count}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_canary_config]] | downstream | 0.44 |
-| [[bld_quality_gate_canary_config]] | downstream | 0.43 |
-| [[kc_canary_config]] | sibling | 0.39 |
 | [[bld_schema_canary_config]] | downstream | 0.35 |
-| [[bld_rules_canary_config]] | sibling | 0.33 |

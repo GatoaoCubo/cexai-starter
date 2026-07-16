@@ -17,10 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of action_prompt, and architectural position, action prompt construction, architecture action prompt, action_prompt, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - p01_kc_action_prompt
   - bld_architecture_system_prompt
   - action-prompt-builder
-  - bld_knowledge_card_action_prompt
   - bld_architecture_chain
 ---
 # Architecture: action_prompt in the CEX

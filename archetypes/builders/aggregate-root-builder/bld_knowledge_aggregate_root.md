@@ -18,11 +18,7 @@ author: knowledge-card-builder
 domain: domain_driven_design
 tldr: "Aggregate Root = transactional consistency boundary with one root entity. External refs only to root. All mutations through root."
 related:
-  - kc_aggregate_root
   - bld_architecture_aggregate_root
-  - bld_context_sources_aggregate_root
-  - bld_manifest_aggregate_root
-  - bld_rules_aggregate_root
 ---
 # Knowledge: aggregate_root
 
@@ -83,8 +79,4 @@ go through the root, which enforces domain invariants atomically.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_aggregate_root]] | sibling | 0.60 |
 | [[bld_architecture_aggregate_root]] | sibling | 0.59 |
-| [[bld_context_sources_aggregate_root]] | sibling | 0.50 |
-| [[bld_manifest_aggregate_root]] | sibling | 0.49 |
-| [[bld_rules_aggregate_root]] | sibling | 0.47 |

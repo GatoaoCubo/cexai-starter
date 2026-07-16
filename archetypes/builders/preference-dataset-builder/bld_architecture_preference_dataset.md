@@ -19,9 +19,6 @@ keywords: [and architectural position, preference dataset construction, architec
 density_score: 0.90
 related:
   - preference-dataset-builder
-  - p11_qg_preference_dataset
-  - bld_output_template_preference_dataset
-  - bld_instruction_preference_dataset
   - bld_schema_preference_dataset
 ---
 ## Component Inventory
@@ -76,7 +73,4 @@ drift_detector       --monitors-->  reward_model
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[preference-dataset-builder]] | downstream | 0.60 |
-| [[p11_qg_preference_dataset]] | downstream | 0.56 |
-| [[bld_output_template_preference_dataset]] | upstream | 0.54 |
-| [[bld_instruction_preference_dataset]] | upstream | 0.48 |
 | [[bld_schema_preference_dataset]] | downstream | 0.48 |

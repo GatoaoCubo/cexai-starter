@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [enterprise_sla construction, quality gate enterprise sla, enterprise_sla, builder, quality_gate, quality gate, fail condition]
 density_score: 0.85
 related:
-  - bld_knowledge_card_enterprise_sla
-  - p11_qg_quality_gate
   - enterprise-sla-builder
-  - p01_kc_enterprise_sla
-  - p09_qg_marketplace_app_manifest
 ---
 ## Quality Gate
 ## Definition

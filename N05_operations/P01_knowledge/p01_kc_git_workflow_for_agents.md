@@ -30,14 +30,7 @@ keywords:
   - "git workflow"
   - "autonomous agents"
 related:
-  - p01_kc_git_worktree_isolation
-  - p01_kc_git_hooks_ci
-  - bld_output_template_contributor_guide
   - p01_kc_aider_integration_patterns
-  - p11_qg_tdd_compliance
-  - p12_wf_auto_ship
-  - p03_ins_action_protocol
-  - p04_hook_pre_commit_qa
 ---
 
 # Git Workflow for Autonomous Agents

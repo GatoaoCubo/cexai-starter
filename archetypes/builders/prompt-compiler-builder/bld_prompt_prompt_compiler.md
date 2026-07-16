@@ -29,10 +29,6 @@ density_score: 0.91
 llm_function: REASON
 related:
   - prompt-compiler-builder
-  - p11_qg_prompt_compiler
-  - p01_kc_prompt_compiler
-  - bld_knowledge_card_prompt_compiler
-  - bld_output_template_prompt_compiler
 ---
 ## Context
 A **prompt_compiler** artifact defines intent-to-artifact transmutation rules: given natural language user input, which {kind, pillar, nucleus, verb} should handle it? It contains a kind resolution table (all 300 kinds), verb resolution (user verbs to canonical actions), ambiguity resolution (multi-match protocol), and fallback heuristics (unrecognized input).
@@ -108,7 +104,3 @@ CHECK: id == filename stem
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-compiler-builder]] | related | 0.54 |
-| [[p11_qg_prompt_compiler]] | downstream | 0.47 |
-| [[p01_kc_prompt_compiler]] | related | 0.44 |
-| [[bld_knowledge_card_prompt_compiler]] | related | 0.43 |
-| [[bld_output_template_prompt_compiler]] | downstream | 0.41 |

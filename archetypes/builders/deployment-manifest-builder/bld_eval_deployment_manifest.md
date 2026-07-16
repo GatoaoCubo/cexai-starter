@@ -25,12 +25,6 @@ keywords:
   - "^p09_dm_[a-z][a-z0-9_]+$"
   - "quality"
 density_score: null
-related:
-  - bld_manifest_deployment_manifest
-  - kc_deployment_manifest
-  - bld_instruction_deployment_manifest
-  - bld_quality_gate_canary_config
-  - bld_knowledge_card_deployment_manifest
 ---
 ## Quality Gate
 

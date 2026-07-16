@@ -33,8 +33,6 @@ keywords:
 density_score: 0.91
 related:
   - benchmark-builder
-  - bld_output_template_benchmark
-  - bld_instruction_benchmark
   - bld_architecture_benchmark
   - bld_schema_benchmark
 ---

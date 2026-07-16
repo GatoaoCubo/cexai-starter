@@ -29,9 +29,6 @@ density_score: 0.91
 llm_function: REASON
 related:
   - model-provider-builder
-  - bld_knowledge_card_model_provider
-  - bld_collaboration_model_provider
-  - p11_qg_model_provider
   - bld_memory_model_provider
 ---
 ## Context
@@ -113,5 +110,4 @@ Score all SOFT gates. If soft score < 8.0, revise in the same pass.
 | [[model-provider-builder]] | upstream | 0.61 |
 | [[bld_knowledge_model_provider]] | upstream | 0.57 |
 | [[bld_orchestration_model_provider]] | upstream | 0.56 |
-| [[p11_qg_model_provider]] | downstream | 0.54 |
 | [[bld_memory_model_provider]] | downstream | 0.52 |

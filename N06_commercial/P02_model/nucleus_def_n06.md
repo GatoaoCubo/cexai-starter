@@ -44,7 +44,6 @@ slots:
   resolved_verb: "one of: price | monetize | package | target | retain"
 related:
   - agent_card_n06
-  - n07-orchestrator
   - kc_nucleus_def
 tags:
   - nucleus_def

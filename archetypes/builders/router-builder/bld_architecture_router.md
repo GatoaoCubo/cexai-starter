@@ -18,10 +18,7 @@ keywords: [component map of router, and architectural position, router construct
 density_score: 0.90
 related:
   - router-builder
-  - bld_collaboration_router
   - bld_memory_router
-  - bld_knowledge_card_router
-  - p03_ins_router
 ---
 # Architecture: router in the CEX
 ## Component Inventory
@@ -73,4 +70,3 @@ router          --depends-->     dispatch_rule
 | [[bld_orchestration_router]] | upstream | 0.55 |
 | [[bld_memory_router]] | downstream | 0.54 |
 | [[bld_knowledge_router]] | upstream | 0.50 |
-| [[p03_ins_router]] | upstream | 0.50 |

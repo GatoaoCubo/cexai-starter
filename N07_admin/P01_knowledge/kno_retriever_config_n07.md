@@ -27,10 +27,7 @@ keywords: [orchestrator retriever config, hybrid bm, vector retriever for n, and
 algorithm, exact match]
 density_score: 1.0
 related:
-  - p04_retr_n01
-  - bld_knowledge_card_retriever_config
   - p01_retr_n03
-  - p11_qg_retriever_config
 ---
 <!-- 8F TRACE
 F1 CONSTRAIN: kind=retriever_config, pillar=P01, max_bytes=2048, id=p01_retr_n07
@@ -144,4 +141,3 @@ Filters are pre-retrieval (applied to index, not post-rerank).
 | p04_retr_n01 | downstream | 0.35 |
 | [[bld_knowledge_retriever_config]] | related | 0.34 |
 | [[p01_retr_n03]] | sibling | 0.31 |
-| [[p11_qg_retriever_config]] | downstream | 0.31 |

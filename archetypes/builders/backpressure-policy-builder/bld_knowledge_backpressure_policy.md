@@ -31,8 +31,6 @@ density_score: 0.90
 related:
   - backpressure-policy-builder
   - bld_architecture_backpressure_policy
-  - p01_kc_backpressure_policy
-  - bld_instruction_backpressure_policy
   - bld_schema_backpressure_policy
 ---
 # Knowledge Card: backpressure_policy
@@ -133,6 +131,4 @@ Typical gap: 30-50% of buffer_size.
 |----------|-------------|-------|
 | [[backpressure-policy-builder]] | downstream | 0.63 |
 | [[bld_architecture_backpressure_policy]] | downstream | 0.61 |
-| [[p01_kc_backpressure_policy]] | sibling | 0.56 |
-| [[bld_instruction_backpressure_policy]] | downstream | 0.55 |
 | [[bld_schema_backpressure_policy]] | downstream | 0.53 |

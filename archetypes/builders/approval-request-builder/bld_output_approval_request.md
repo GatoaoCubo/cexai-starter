@@ -32,11 +32,8 @@ keywords:
   - "## request detail"
 density_score: 0.90
 related:
-  - p11_qg_approval_request
   - bld_schema_approval_request
-  - bld_instruction_approval_request
   - bld_architecture_approval_request
-  - p01_kc_approval_request
 ---
 # Output Template: approval_request
 ```yaml
@@ -100,8 +97,5 @@ for {{test|demo|seed}} purposes; no live watch file backs this instance."}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_approval_request]] | downstream | 0.40 |
 | [[bld_schema_approval_request]] | downstream | 0.39 |
-| [[bld_instruction_approval_request]] | upstream | 0.35 |
 | [[bld_architecture_approval_request]] | downstream | 0.34 |
-| [[p01_kc_approval_request]] | downstream | 0.33 |

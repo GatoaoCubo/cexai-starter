@@ -34,9 +34,6 @@ llm_function: REASON
 related:
   - optimizer-builder
   - bld_memory_optimizer
-  - bld_knowledge_card_optimizer
-  - bld_collaboration_optimizer
-  - p11_qg_optimizer
 ---
 ## Context
 The optimizer-builder receives a **process description** and produces an `optimizer` artifact encoding the metric-to-action cycle for continuous improvement of that process.
@@ -124,6 +121,3 @@ python _tools/cex_skill_loader.py --verify optimizer
 |----------|-------------|-------|
 | [[optimizer-builder]] | downstream | 0.56 |
 | [[bld_memory_optimizer]] | downstream | 0.43 |
-| [[bld_knowledge_card_optimizer]] | upstream | 0.42 |
-| [[bld_collaboration_optimizer]] | downstream | 0.36 |
-| [[p11_qg_optimizer]] | downstream | 0.36 |

@@ -19,8 +19,6 @@ keywords: [id pattern, collections minimum, dialectic config, storage declaratio
 density_score: 0.91
 related:
   - user-model-builder
-  - bld_collaboration_user_model
-  - bld_instruction_user_model
   - bld_schema_user_model
 ---
 ## Quality Gate

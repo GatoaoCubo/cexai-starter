@@ -16,10 +16,7 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_data_contract
-  - bld_instruction_data_contract
-  - p01_kc_data_contract
   - data-contract-builder
-  - bld_qg_data_contract
 ---
 # Output Template: data_contract
 ```markdown
@@ -74,4 +71,3 @@ tags: [{{producer}}, {{consumer}}, data-contract]
 | [[bld_prompt_data_contract]] | related | 0.37 |
 | [[kc_data_contract]] | upstream | 0.36 |
 | [[data-contract-builder]] | downstream | 0.35 |
-| [[bld_qg_data_contract]] | downstream | 0.30 |

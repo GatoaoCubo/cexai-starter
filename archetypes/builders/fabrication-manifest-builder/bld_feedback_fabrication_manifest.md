@@ -16,11 +16,8 @@ density_score: 0.85
 created: "2026-07-03"
 updated: "2026-07-03"
 related:
-  - p11_fb_team_charter
-  - p11_fb_deployment_manifest
   - bld_eval_fabrication_manifest
   - fabrication-manifest-builder
-  - kc_fabrication_manifest
 ---
 # Feedback: Fabrication Manifest
 
@@ -84,8 +81,5 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_team_charter]] | sibling | 0.65 |
-| [[p11_fb_deployment_manifest]] | sibling | 0.62 |
 | [[bld_eval_fabrication_manifest]] | related | 0.55 |
 | [[fabrication-manifest-builder]] | related | 0.50 |
-| [[kc_fabrication_manifest]] | upstream | 0.45 |

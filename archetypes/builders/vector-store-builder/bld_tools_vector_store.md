@@ -21,7 +21,6 @@ related:
   - bld_tools_model_card
   - bld_tools_embedder_provider
   - bld_memory_vector_store
-  - bld_sp_tools_software_project
 ---
 # Tools: vector-store-builder
 ## Production Tools

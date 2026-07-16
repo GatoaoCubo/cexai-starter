@@ -15,12 +15,6 @@ tldr: "8 hard gates for software projects: syntax valid, tests pass, lint clean,
 keywords: [quality gate, software project builder, syntax valid, tests pass, lint clean, no secrets, docker builds]
 density_score: 1.0
 llm_function: GOVERN
-related:
-  - bld_sp_schema_software_project
-  - bld_sp_instruction_software_project
-  - bld_sp_manifest_software_project
-  - p04_cli_software_project_n03
-  - bld_sp_knowledge_card_software_project
 ---
 ## Quality Gate
 

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [churn_prevention_playbook construction, instruction churn prevention playbook, churn_prevention_playbook, builder, instruction, map gainsight, related artifacts, components usage, usage support, intervention triggers]
 density_score: 0.85
 related:
-  - bld_output_template_churn_prevention_playbook
   - churn-prevention-playbook-builder
-  - p03_qg_churn_prevention_playbook
-  - bld_instruction_renewal_workflow
-  - bld_knowledge_card_churn_prevention_playbook
 ---
 ## Phase 1: RESEARCH
 1. Identify churn signals: map health score components (usage, NPS, support tickets, QBR cadence).
@@ -53,8 +49,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_churn_prevention_playbook]] | downstream | 0.45 |
 | [[churn-prevention-playbook-builder]] | related | 0.45 |
-| [[p03_qg_churn_prevention_playbook]] | downstream | 0.42 |
-| [[bld_instruction_renewal_workflow]] | sibling | 0.35 |
-| [[bld_knowledge_card_churn_prevention_playbook]] | upstream | 0.31 |

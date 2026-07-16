@@ -30,9 +30,6 @@ density_score: 0.90
 related:
   - bld_schema_red_team_eval
   - red-team-eval-builder
-  - bld_knowledge_card_red_team_eval
-  - bld_instruction_red_team_eval
-  - p10_lr_red_team_eval_builder
 ---
 # Config: red_team_eval Production Rules
 ## Naming Convention
@@ -85,6 +82,3 @@ Rule: attack_types values MUST be from approved enum in SCHEMA.md.
 |----------|-------------|-------|
 | [[bld_schema_red_team_eval]] | upstream | 0.37 |
 | [[red-team-eval-builder]] | upstream | 0.37 |
-| [[bld_knowledge_card_red_team_eval]] | upstream | 0.35 |
-| [[bld_instruction_red_team_eval]] | upstream | 0.35 |
-| [[p10_lr_red_team_eval_builder]] | downstream | 0.33 |

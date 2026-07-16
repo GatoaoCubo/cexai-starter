@@ -18,10 +18,6 @@ keywords: [rl_algorithm construction, instruction rl algorithm, rl_algorithm, bu
 density_score: 0.85
 related:
   - rl-algorithm-builder
-  - p02_qg_rl_algorithm
-  - bld_collaboration_rl_algorithm
-  - bld_knowledge_card_rl_algorithm
-  - bld_instruction_search_strategy
 ---
 ## Phase 1: RESEARCH  
 1. Define problem domain, reward structure, and environment dynamics.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[rl-algorithm-builder]] | upstream | 0.35 |
-| [[p02_qg_rl_algorithm]] | downstream | 0.33 |
-| [[bld_collaboration_rl_algorithm]] | downstream | 0.31 |
-| [[bld_knowledge_card_rl_algorithm]] | upstream | 0.30 |
-| [[bld_instruction_search_strategy]] | sibling | 0.28 |

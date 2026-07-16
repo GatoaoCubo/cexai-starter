@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_changelog
-  - n00_changelog_manifest
   - changelog-builder
-  - bld_knowledge_card_changelog
   - kind-builder
 ---
 
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_changelog]] | related | 0.36 |
-| [[n00_changelog_manifest]] | related | 0.35 |
 | [[changelog-builder]] | related | 0.34 |
-| [[bld_knowledge_card_changelog]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |

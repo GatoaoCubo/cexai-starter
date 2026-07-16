@@ -18,10 +18,6 @@ keywords: [and architectural position, messaging gateway construction, component
 density_score: 0.91
 related:
   - messaging-gateway-builder
-  - n00_messaging_gateway_manifest
-  - kc_messaging_gateway
-  - bld_kc_messaging_gateway
-  - bld_output_template_messaging_gateway
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -113,7 +109,3 @@ CEX artifacts specify WHAT; the runtime CLI does HOW.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[messaging-gateway-builder]] | upstream | 0.65 |
-| [[n00_messaging_gateway_manifest]] | upstream | 0.63 |
-| [[kc_messaging_gateway]] | upstream | 0.61 |
-| [[bld_kc_messaging_gateway]] | upstream | 0.58 |
-| [[bld_output_template_messaging_gateway]] | upstream | 0.56 |

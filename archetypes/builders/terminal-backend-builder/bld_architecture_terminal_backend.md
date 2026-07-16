@@ -18,10 +18,7 @@ updated: "2026-04-18"
 keywords: [position in p, terminal_backend construction, architecture terminal backend, component map of terminal_backend, backend adapters, auth layer, cost model, terminal_backend, builder, architecture]
 density_score: 0.90
 related:
-  - bld_collaboration_terminal_backend
-  - n00_terminal_backend_manifest
   - terminal-backend-builder
-  - kc_terminal_backend
   - tb_{{backend}}
 ---
 ## Component Inventory
@@ -81,8 +78,5 @@ No agent code changes. This is the "no code changes required" guarantee .
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_terminal_backend]] | downstream | 0.45 |
-| [[n00_terminal_backend_manifest]] | downstream | 0.39 |
 | [[terminal-backend-builder]] | downstream | 0.36 |
-| [[kc_terminal_backend]] | upstream | 0.34 |
 | [\[tb_`{{backend}}`\]] | downstream | 0.34 |

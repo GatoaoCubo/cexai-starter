@@ -32,8 +32,6 @@ related:
   - system-prompt-builder
   - bld_architecture_system_prompt
   - bld_memory_system_prompt
-  - bld_knowledge_card_system_prompt
-  - bld_collaboration_system_prompt
 ---
 ## Context
 The system-prompt-builder produces a `system_prompt` artifact -- a structured YAML containing the full system message injected at the top of every LLM conversation for a specific agent. This prompt defines who the agent is, what it knows, what it must always do, what it must never do, and how it formats responses.

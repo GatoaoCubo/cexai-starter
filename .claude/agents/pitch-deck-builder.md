@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_pitch_deck
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p11_fb_pitch_deck
-  - n00_pitch_deck_manifest
 ---
 
 # pitch-deck-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[bld_config_pitch_deck]] | related | 0.35 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[p11_fb_pitch_deck]] | related | 0.29 |
-| [[n00_pitch_deck_manifest]] | related | 0.28 |

@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F1_constrain"
 keywords: [builder identity, routing for vad_config, vad_config construction, type builder vad config, vad_config, builder, type_builder, sensitivity, aggressiveness, noise_floor_db]
 density_score: 0.85
-related:
-  - bld_knowledge_card_vad_config
-  - kc_vad_config
-  - p01_kc_audit_vad_config_builder
-  - n00_vad_config_manifest
-  - bld_output_template_vad_config
 ---
 ## Identity
 
@@ -67,12 +61,3 @@ The vad_config-builder agent generates Voice Activity Detection (VAD) configurat
 8. Speech/silence timing: min_speech_duration_ms >= 250ms, max_silence_duration_ms 500-2000ms typical.  
 9. quality: null always -- never self-score; quality is assigned by peer review.  
 10. All output artifacts MUST have a use_case section identifying the deployment environment (quiet room, office, call center, outdoor).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_vad_config]] | upstream | 0.66 |
-| [[kc_vad_config]] | upstream | 0.58 |
-| [[p01_kc_audit_vad_config_builder]] | upstream | 0.54 |
-| [[n00_vad_config_manifest]] | related | 0.52 |
-| [[bld_output_template_vad_config]] | upstream | 0.46 |

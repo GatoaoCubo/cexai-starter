@@ -30,12 +30,6 @@ keywords:
   - "## boot sequence"
   - "## dispatch"
 density_score: 0.90
-related:
-  - bld_output_template_embedding_config
-  - bld_output_template_runtime_rule
-  - bld_output_template_golden_test
-  - bld_output_template_feature_flag
-  - bld_output_template_input_schema
 ---
 # Output Template: agent_card
 ```yaml
@@ -119,8 +113,5 @@ tldr: "{{dense_summary_max_160ch}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_embedding_config]] | sibling | 0.41 |
 | bld_output_template_runtime_rule | sibling | 0.34 |
-| [[bld_output_template_golden_test]] | sibling | 0.33 |
 | bld_output_template_feature_flag | sibling | 0.32 |
-| [[bld_output_template_input_schema]] | sibling | 0.32 |

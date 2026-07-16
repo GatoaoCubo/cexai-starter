@@ -18,11 +18,7 @@ updated: "2026-07-10"
 keywords: [per kind identity, kind manifest, quality-gate, kind-manifest, r-310, canonical id pattern]
 density_score: 0.87
 related:
-  - bld_instruction_kind_manifest
   - bld_schema_kind_manifest
-  - bld_knowledge_card_kind_manifest
-  - p11_qg_knowledge_card
-  - p10_lr_kind_manifest_builder
 ---
 ## Quality Gate
 
@@ -108,8 +104,4 @@ WHY THIS FAILS: S02 = 0pts -- this is exactly the "fabricated pointer" failure t
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_kind_manifest]] | sibling | 0.44 |
 | [[bld_schema_kind_manifest]] | sibling | 0.42 |
-| [[bld_knowledge_card_kind_manifest]] | sibling | 0.40 |
-| [[p11_qg_knowledge_card]] | related (former mis-type contrast) | 0.36 |
-| [[p10_lr_kind_manifest_builder]] | downstream | 0.33 |

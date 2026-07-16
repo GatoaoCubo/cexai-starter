@@ -16,7 +16,6 @@ density_score: 0.99
 title: Tools ISO - webhook
 related:
   - bld_tools_notifier
-  - tools_prompt_template_builder
   - bld_tools_voice_pipeline
   - bld_tools_collaboration_pattern
   - bld_tools_action_paradigm
@@ -75,7 +74,6 @@ forge(artifact, path="P04/webhooks/p04_webhook_{event_slug}.md")
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_notifier]] | sibling | 0.45 |
-| [[tools_prompt_template_builder]] | sibling | 0.36 |
 | [[bld_tools_voice_pipeline]] | sibling | 0.35 |
 | [[bld_tools_collaboration_pattern]] | sibling | 0.33 |
 | [[bld_tools_action_paradigm]] | sibling | 0.33 |

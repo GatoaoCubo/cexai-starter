@@ -19,10 +19,7 @@ keywords: [reward signal construction, knowledge card reward signal, reward_sign
 reward, spec table, signal types, key concepts]
 density_score: 0.90
 related:
-  - bld_collaboration_reward_signal
   - reward-signal-builder
-  - p01_kc_reward_and_alignment
-  - p10_lr_reward_signal_builder
   - bld_architecture_reward_signal
 ---
 # Domain Knowledge: reward_signal
@@ -83,5 +80,4 @@ Reward signals are continuous quality scores that drive agent improvement throug
 | [[bld_orchestration_reward_signal]] | downstream | 0.58 |
 | [[reward-signal-builder]] | downstream | 0.54 |
 | p01_kc_reward_and_alignment | sibling | 0.54 |
-| [[p10_lr_reward_signal_builder]] | downstream | 0.47 |
 | [[bld_architecture_reward_signal]] | downstream | 0.44 |

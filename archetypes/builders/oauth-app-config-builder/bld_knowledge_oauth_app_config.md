@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [oauth_app_config construction, oauth_app_config, builder, knowledge_card, read_user, write_orders, domain overview, key concepts, token lifetime, bearer token]
 density_score: 0.85
 related:
-  - oauth-app-config-builder
   - kc_oauth_app_config
-  - hybrid_review7_n03
-  - ex_oauth_app_config_meli
-  - ex_oauth_app_config_bling
 ---
 ## Domain Overview  
 OAuth2/PKCE app config defines secure integration parameters for third-party applications accessing protected APIs. It governs scope permissions, redirect endpoints, token lifetimes, and refresh policies to ensure compliance with security and privacy standards. Proper configuration prevents token misuse, redirect vulnerabilities, and unauthorized access, especially in partner ecosystems where apps may have varying trust levels. This differs from SSO (workforce) and secret management (raw credentials) by focusing on API access control and token lifecycle management.  
@@ -74,7 +70,6 @@ OAuth2/PKCE app config defines secure integration parameters for third-party app
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[oauth-app-config-builder]] | downstream | 0.55 |
 | [[kc_oauth_app_config]] | sibling | 0.50 |
 | hybrid_review7_n03 | downstream | 0.48 |
 | ex_oauth_app_config_meli | downstream | 0.44 |

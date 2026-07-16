@@ -4,11 +4,7 @@ description: "Builds ONE notifier artifact via 8F pipeline. Loads notifier-build
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_notifier_manifest
-  - bld_collaboration_notifier
-  - bld_instruction_notifier
   - notifier-builder
-  - p01_kc_notifier
 ---
 
 # notifier-builder Sub-Agent
@@ -86,8 +82,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_notifier_manifest]] | related | 0.37 |
-| [[bld_collaboration_notifier]] | related | 0.35 |
-| [[bld_instruction_notifier]] | related | 0.35 |
 | [[notifier-builder]] | related | 0.35 |
-| [[p01_kc_notifier]] | related | 0.31 |

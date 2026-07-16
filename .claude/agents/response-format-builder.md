@@ -5,7 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - response-format-builder
-  - bld_collaboration_response_format
   - bld_memory_response_format
   - bld_architecture_response_format
   - system-prompt-builder

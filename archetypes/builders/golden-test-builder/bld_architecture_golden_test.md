@@ -18,10 +18,7 @@ keywords: [component map of golden_test, and architectural position, golden test
 density_score: 0.90
 related:
   - golden-test-builder
-  - p01_kc_golden_test
   - bld_architecture_unit_eval
-  - n00_golden_test_manifest
-  - p01_kc_cex_lp07_evals
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |

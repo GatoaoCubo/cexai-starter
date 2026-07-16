@@ -19,8 +19,6 @@ keywords: [terminal_backend construction, schema terminal backend, formal schema
 density_score: 0.90
 related:
   - bld_schema_sandbox_config
-  - n00_terminal_backend_manifest
-  - p09_qg_terminal_backend
   - bld_schema_reranker_config
   - bld_schema_sandbox_spec
 ---
@@ -85,7 +83,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_sandbox_config]] | sibling | 0.51 |
-| [[n00_terminal_backend_manifest]] | downstream | 0.48 |
-| [[p09_qg_terminal_backend]] | downstream | 0.48 |
 | [[bld_schema_reranker_config]] | sibling | 0.47 |
 | [[bld_schema_sandbox_spec]] | sibling | 0.46 |

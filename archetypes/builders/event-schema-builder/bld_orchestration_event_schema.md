@@ -19,11 +19,7 @@ updated: "2026-04-17"
 keywords: [event schema construction, collaboration event schema, event payload schema specialist, event_schema, builder, collaboration, "### crew: event-driven integration", "### crew: api surface package", my role, crew compositions]
 density_score: 0.90
 related:
-  - bld_collaboration_openapi_spec
   - event-schema-builder
-  - kc_event_schema
-  - bld_instruction_event_schema
-  - p01_kc_signal
 ---
 # Collaboration: event-schema-builder
 ## My Role in Crews
@@ -93,8 +89,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_openapi_spec]] | sibling | 0.43 |
 | [[event-schema-builder]] | upstream | 0.39 |
-| [[kc_event_schema]] | upstream | 0.35 |
-| [[bld_instruction_event_schema]] | upstream | 0.32 |
-| [[p01_kc_signal]] | related | 0.32 |

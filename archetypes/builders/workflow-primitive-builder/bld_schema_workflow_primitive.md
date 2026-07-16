@@ -20,7 +20,6 @@ density_score: 0.90
 related:
   - bld_schema_usage_report
   - bld_schema_reranker_config
-  - p03_ins_workflow_primitive_builder
   - bld_schema_dataset_card
   - bld_schema_pitch_deck
 ---
@@ -123,6 +122,5 @@ No additional required fields. Simplest primitive.
 |----------|-------------|-------|
 | bld_schema_usage_report | sibling | 0.46 |
 | bld_schema_reranker_config | sibling | 0.46 |
-| [[p03_ins_workflow_primitive_builder]] | upstream | 0.46 |
 | [[bld_schema_dataset_card]] | sibling | 0.45 |
 | bld_schema_pitch_deck | sibling | 0.45 |

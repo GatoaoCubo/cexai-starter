@@ -18,8 +18,6 @@ updated: "2026-04-07"
 keywords: [template with, for runtime_state production, runtime state construction, output template runtime state, runtime_state, builder, examples, text, output template, runtime state]
 density_score: 0.90
 related:
-  - p11_qg_runtime_state
-  - bld_knowledge_card_runtime_state
   - runtime-state-builder
   - bld_schema_runtime_state
   - bld_memory_runtime_state

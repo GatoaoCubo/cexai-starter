@@ -31,11 +31,7 @@ keywords:
   - "swarm handoff"
 density_score: 0.90
 related:
-  - p10_lr_handoff_protocol_builder
   - handoff-protocol-builder
-  - bld_collaboration_handoff_protocol
-  - p01_kc_handoff_protocol
-  - bld_collaboration_handoff
 ---
 # Domain Knowledge: handoff_protocol
 ## Executive Summary
@@ -76,7 +72,6 @@ Handoff protocol — trigger conditions, context passed, return contract between
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_handoff_protocol_builder]] | downstream | 0.48 |
 | [[handoff-protocol-builder]] | related | 0.46 |
 | [[bld_orchestration_handoff_protocol]] | downstream | 0.43 |
 | [[kc_handoff_protocol]] | sibling | 0.41 |

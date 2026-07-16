@@ -28,11 +28,9 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, model provider construction, config model provider, model_provider, builder, examples, "p02_mp_{provider}.yaml"]
 density_score: 0.90
 related:
-  - bld_collaboration_model_provider
   - model-provider-builder
   - bld_memory_model_provider
   - bld_config_model_card
-  - p03_ins_model_provider
 ---
 # Config: model_provider Production Rules
 ## Naming Convention
@@ -108,4 +106,3 @@ python _tools/cex_score.py --apply bld-config-model-provider.md
 | [[model-provider-builder]] | upstream | 0.54 |
 | [[bld_memory_model_provider]] | downstream | 0.53 |
 | bld_config_model_card | sibling | 0.51 |
-| [[p03_ins_model_provider]] | upstream | 0.50 |

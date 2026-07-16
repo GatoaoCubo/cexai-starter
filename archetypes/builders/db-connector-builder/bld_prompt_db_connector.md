@@ -30,12 +30,6 @@ keywords:
   - "write service configuration"
   - "write endpoints"
 density_score: 0.90
-related:
-  - bld_instruction_client
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
-  - bld_instruction_handoff_protocol
-  - bld_instruction_memory_scope
 ---
 # Instructions: How to Produce a connector
 
@@ -99,12 +93,3 @@ python _tools/cex_skill_loader.py --verify db
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_client]] | sibling | 0.52 |
-| [[bld_instruction_retriever_config]] | sibling | 0.45 |
-| [[bld_instruction_output_validator]] | sibling | 0.45 |
-| [[bld_instruction_handoff_protocol]] | sibling | 0.44 |
-| [[bld_instruction_memory_scope]] | sibling | 0.43 |

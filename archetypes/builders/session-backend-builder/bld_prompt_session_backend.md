@@ -31,11 +31,7 @@ keywords:
   - "backend specification"
 density_score: 0.90
 related:
-  - bld_instruction_memory_scope
-  - bld_instruction_trace_config
   - session-backend-builder
-  - bld_instruction_retriever_config
-  - bld_instruction_context_doc
 ---
 # Instructions: How to Produce a session_backend
 ## Phase 1: RESEARCH

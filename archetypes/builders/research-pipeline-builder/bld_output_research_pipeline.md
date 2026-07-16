@@ -31,11 +31,7 @@ keywords:
   - "research pipeline config"
 density_score: 0.90
 related:
-  - tpl_research_pipeline
-  - p02_agent_research_pipeline_intelligence
-  - p11_qg_research_pipeline
   - research-pipeline-builder
-  - bld_instruction_research_pipeline
 ---
 # Output Template: research_pipeline
 
@@ -154,6 +150,5 @@ tags: [research-pipeline, STORM, CRAG, {{nicho}}]
 |----------|-------------|-------|
 | tpl_research_pipeline | upstream | 0.34 |
 | p02_agent_research_pipeline_intelligence | upstream | 0.30 |
-| [[p11_qg_research_pipeline]] | downstream | 0.28 |
 | [[research-pipeline-builder]] | upstream | 0.27 |
 | [[bld_prompt_research_pipeline]] | upstream | 0.26 |

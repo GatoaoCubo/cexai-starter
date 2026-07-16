@@ -17,10 +17,7 @@ updated: "2026-04-13"
 density_score: 0.85
 related:
   - search-strategy-builder
-  - bld_output_template_search_strategy
-  - p10_lr_search_strategy_builder
   - bld_architecture_search_strategy
-  - p03_qg_planning_strategy
 ---
 ## Quality Gate
 

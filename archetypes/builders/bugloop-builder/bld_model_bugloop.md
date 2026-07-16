@@ -31,11 +31,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_instruction_bugloop
-  - bld_collaboration_bugloop
-  - p01_kc_bugloop
   - bld_architecture_bugloop
-  - bld_knowledge_card_bugloop
 ---
 ## Identity
 
@@ -122,8 +118,4 @@ SCHEMA.md is the source of truth for field definitions. TEMPLATE derives from SC
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_bugloop]] | upstream | 0.47 |
-| [[bld_collaboration_bugloop]] | downstream | 0.44 |
-| [[p01_kc_bugloop]] | related | 0.43 |
 | [[bld_architecture_bugloop]] | upstream | 0.42 |
-| [[bld_knowledge_card_bugloop]] | upstream | 0.41 |

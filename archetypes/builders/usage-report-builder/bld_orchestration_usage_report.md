@@ -20,9 +20,6 @@ density_score: 0.85
 related:
   - bld_config_usage_report
   - usage-report-builder
-  - bld_collaboration_cohort_analysis
-  - kc_usage_report
-  - bld_collaboration_experiment_tracker
 ---
 ## Crew Role  
 Aggregates, normalizes, and formats usage analytics data into actionable reports for stakeholders. Focuses on query patterns, resource consumption, and user activity metrics.  
@@ -49,6 +46,3 @@ Does NOT enforce cost limits (handled by cost_analyzer) or configure telemetry (
 |----------|-------------|-------|
 | [[bld_config_usage_report]] | upstream | 0.28 |
 | [[usage-report-builder]] | upstream | 0.27 |
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.25 |
-| [[kc_usage_report]] | upstream | 0.24 |
-| [[bld_collaboration_experiment_tracker]] | sibling | 0.24 |

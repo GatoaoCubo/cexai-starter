@@ -28,7 +28,6 @@ updated: "2026-04-13"
 keywords: [naming conventions, file paths, size limits, operational constraints, cost budget construction, config cost budget, bytes max, cost_budget, builder, config]
 density_score: 0.90
 related:
-  - bld_knowledge_card_cost_budget
   - bld_schema_cost_budget
   - bld_config_memory_scope
   - bld_config_prompt_version
@@ -96,7 +95,6 @@ python _tools/cex_score.py --apply bld_config_cost_budget.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_cost_budget]] | upstream | 0.34 |
 | [[bld_schema_cost_budget]] | upstream | 0.34 |
 | [[bld_config_memory_scope]] | sibling | 0.33 |
 | [[bld_config_prompt_version]] | sibling | 0.32 |

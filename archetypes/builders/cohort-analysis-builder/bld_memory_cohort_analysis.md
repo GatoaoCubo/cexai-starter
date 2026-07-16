@@ -21,10 +21,6 @@ artifacts, related artifacts, event-based timestamps]
 density_score: 0.85
 related:
   - cohort-analysis-builder
-  - kc_cohort_analysis
-  - bld_instruction_cohort_analysis
-  - n00_cohort_analysis_manifest
-  - bld_knowledge_card_cohort_analysis
 ---
 ## Observation
 Inconsistent cohort definitions (e.g., using signup date vs. first event) often lead to skewed retention metrics. Overlooking time granularity (e.g., daily vs. weekly) can distort LTV calculations by misrepresenting user behavior patterns.
@@ -46,7 +42,3 @@ Artifacts using calendar-based cohorts showed 20% variance in retention rates co
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cohort-analysis-builder]] | upstream | 0.46 |
-| [[kc_cohort_analysis]] | upstream | 0.46 |
-| [[bld_instruction_cohort_analysis]] | upstream | 0.44 |
-| [[n00_cohort_analysis_manifest]] | upstream | 0.43 |
-| [[bld_knowledge_card_cohort_analysis]] | upstream | 0.36 |

@@ -20,9 +20,6 @@ keywords: [template with, for agent artifact production, agent construction, out
 density_score: 0.90
 related:
   - bld_config_agent
-  - bld_knowledge_card_agent
-  - bld_instruction_agent
-  - p11_qg_agent
   - bld_schema_agent
 ---
 # Output Template: agent
@@ -108,5 +105,4 @@ version: `{{version}}` | author: `{{author}}` | quality: null
 | [[bld_config_agent]] | downstream | 0.33 |
 | [[bld_knowledge_agent]] | upstream | 0.29 |
 | [[bld_prompt_agent]] | upstream | 0.28 |
-| [[p11_qg_agent]] | downstream | 0.27 |
 | [[bld_schema_agent]] | downstream | 0.27 |

@@ -26,10 +26,8 @@ cross_provider:
   bolt: "Full-stack page"
   astro: "Astro page component"
 related:
-  - bld_knowledge_card_landing_page
   - landing-page-builder
   - bld_architecture_landing_page
-  - n00_landing_page_manifest
   - bld_tools_landing_page
 ---
 # Knowledge Card: landing_page

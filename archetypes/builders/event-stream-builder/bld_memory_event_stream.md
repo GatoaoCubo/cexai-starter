@@ -15,10 +15,7 @@ density_score: 0.97
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - kc_event_stream
   - bld_architecture_event_stream
-  - bld_instruction_event_stream
-  - bld_rules_event_stream
   - bld_memory_data_contract
 ---
 # Memory: event_stream
@@ -71,8 +68,5 @@ python _tools/cex_memory_update.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_event_stream]] | sibling | 0.48 |
 | [[bld_architecture_event_stream]] | sibling | 0.45 |
-| [[bld_instruction_event_stream]] | related | 0.39 |
-| [[bld_rules_event_stream]] | sibling | 0.38 |
 | [[bld_memory_data_contract]] | downstream | 0.37 |

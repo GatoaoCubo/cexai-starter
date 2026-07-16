@@ -29,12 +29,6 @@ linked_artifacts:
   related: [n02_kc_visual_hierarchy_principles, n02_kc_typography_web]
 density_score: 0.92
 data_source: primer.style/foundations/color + m3.material.io + webaim.org/contrastchecker + internal_distillation
-related:
-  - p01_kc_color_theory_applied
-  - p01_kc_brand_propagation_arch
-  - p01_kc_design_token_arch
-  - p06_is_tailwind_palette_n02
-  - n06_output_visual_identity
 ---
 
 # Color Theory Applied — Palettes, Systems & Accessibility

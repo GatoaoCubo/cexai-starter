@@ -18,7 +18,6 @@ keywords: [model provider construction, tools model provider, model_provider, bu
 density_score: 0.90
 related:
   - bld_tools_model_card
-  - p11_qg_model_provider
   - bld_tools_rate_limit_config
   - bld_tools_embedder_provider
   - bld_tools_batch_config
@@ -70,7 +69,6 @@ All 10 HARD gates must pass. SOFT gates contribute to score.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_tools_model_card | sibling | 0.61 |
-| [[p11_qg_model_provider]] | downstream | 0.46 |
 | [[bld_tools_rate_limit_config]] | sibling | 0.43 |
 | [[bld_tools_embedder_provider]] | sibling | 0.41 |
 | bld_tools_batch_config | sibling | 0.38 |

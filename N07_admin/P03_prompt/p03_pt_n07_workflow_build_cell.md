@@ -21,8 +21,6 @@ related:
   - p03_pt_n07_workflow_prove_cell
   - p03_pt_n07_workflow_fix_cell
   - p03_pt_n07_dispatch_handoff
-  - p07_jc_spec_fidelity
-  - dispatch-depth
 ---
 
 # Prompt Template: N07 Workflow BUILD Cell

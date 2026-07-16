@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [cohort_analysis construction, quality gate cohort analysis, cohort_analysis, builder, quality_gate, quality gate, fail condition, scoring guide, golden example, missing invalid]
 density_score: 0.85
 related:
-  - bld_instruction_cohort_analysis
-  - n00_cohort_analysis_manifest
-  - kc_cohort_analysis
   - cohort-analysis-builder
-  - p07_qg_benchmark_suite
 ---
 ## Quality Gate
 

@@ -28,10 +28,6 @@ keywords:
 density_score: 0.90
 related:
   - memory-architecture-builder
-  - bld_instruction_memory_architecture
-  - p10_mem_memory_architecture_builder
-  - p10_qg_consolidation_policy
-  - bld_output_template_memory_architecture
 ---
 ## Quality Gate
 ## Definition

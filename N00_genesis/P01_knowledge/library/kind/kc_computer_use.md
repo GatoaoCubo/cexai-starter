@@ -18,10 +18,6 @@ keywords: [screen-control, mouse-keyboard, gui-automation]
 feeds_kinds: [computer_use]
 density_score: null
 related:
-  - bld_knowledge_card_computer_use
-  - p04_cu_desktop_agent
-  - bld_collaboration_computer_use
-  - p10_lr_computer_use_builder
   - browser-tool-builder
 ---
 
@@ -97,5 +93,4 @@ Computer use is screen-level automation where the LLM sees screenshots and issue
 | [[bld_knowledge_computer_use]] | sibling | 0.41 |
 | p04_cu_desktop_agent | related | 0.37 |
 | [[bld_orchestration_computer_use]] | downstream | 0.37 |
-| [[p10_lr_computer_use_builder]] | downstream | 0.35 |
 | [[browser-tool-builder]] | related | 0.34 |

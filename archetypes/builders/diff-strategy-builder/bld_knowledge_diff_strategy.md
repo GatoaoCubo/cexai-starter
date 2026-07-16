@@ -19,10 +19,7 @@ the, key concepts, longest common subsequence, algorithm theory, edit distance]
 density_score: 0.85
 related:
   - bld_tools_diff_strategy
-  - p04_qg_diff_strategy
   - diff-strategy-builder
-  - n06_hybrid_review2_final
-  - bld_instruction_diff_strategy
 ---
 ## Domain Overview
 The diff_strategy domain governs the logic used to identify, compute, and apply transformations between two states. It focuses on the algorithmic selection of the minimal edit script (Insert, Delete, Keep) and the reconciliation logic required to merge divergent histories.
@@ -70,7 +67,4 @@ Unlike parsing or formatting, this domain is concerned with the mathematical and
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_diff_strategy]] | downstream | 0.64 |
-| [[p04_qg_diff_strategy]] | downstream | 0.63 |
 | [[diff-strategy-builder]] | downstream | 0.62 |
-| [[n06_hybrid_review2_final]] | downstream | 0.56 |
-| [[bld_instruction_diff_strategy]] | downstream | 0.51 |

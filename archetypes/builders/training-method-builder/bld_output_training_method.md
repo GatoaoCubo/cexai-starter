@@ -16,11 +16,8 @@ updated: "2026-04-13"
 keywords: [training_method construction, output template training method, training_method, output_template, builder, output template, training method, target task, base model, paradigm rationale]
 density_score: 0.88
 related:
-  - p02_qg_training_method
   - training-method-builder
-  - bld_instruction_training_method
   - bld_schema_training_method
-  - bld_collaboration_training_method
 ---
 # Output Template: training_method
 
@@ -101,8 +98,5 @@ tldr: "{{One-sentence summary of training approach}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p02_qg_training_method]] | downstream | 0.45 |
 | [[training-method-builder]] | upstream | 0.43 |
-| [[bld_instruction_training_method]] | upstream | 0.38 |
 | [[bld_schema_training_method]] | downstream | 0.36 |
-| [[bld_collaboration_training_method]] | downstream | 0.35 |

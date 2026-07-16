@@ -24,10 +24,8 @@ keywords: [system prompt, safety constraints, system_prompt, persona, tone]
 density_score: 0.85
 related:
   - system-prompt-builder
-  - bld_collaboration_system_prompt
   - bld_memory_system_prompt
   - action-prompt-builder
-  - bld_knowledge_card_system_prompt
 ---
 ## Quality Gate
 

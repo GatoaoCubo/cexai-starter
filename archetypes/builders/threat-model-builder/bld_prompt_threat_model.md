@@ -17,10 +17,7 @@ updated: "2026-04-13"
 keywords: [threat_model construction, instruction threat model, threat_model, builder, instruction, act art, information disclosure, related artifacts, poisoning model, model inversion]
 density_score: 0.85
 related:
-  - bld_output_template_threat_model
-  - p11_qg_threat_model
   - bld_tools_threat_model
-  - p10_lr_threat_model_builder
   - bld_schema_threat_model
 ---
 ## Phase 1: RESEARCH  
@@ -58,8 +55,5 @@ This ISO records a threat model: the assets worth protecting and the attacker pr
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_threat_model]] | downstream | 0.50 |
-| [[p11_qg_threat_model]] | downstream | 0.43 |
 | [[bld_tools_threat_model]] | downstream | 0.40 |
-| [[p10_lr_threat_model_builder]] | downstream | 0.37 |
 | [[bld_schema_threat_model]] | downstream | 0.36 |

@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - session-state-builder
-  - p01_kc_session_state
   - bld_memory_session_state
-  - bld_collaboration_session_state
 ---
 
 # session-state-builder Sub-Agent

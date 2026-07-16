@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of model_provider, and architectural position, model provider construction, architecture model provider, model_provider, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_model_provider
   - model-provider-builder
-  - p03_ins_model_provider
   - bld_memory_model_provider
-  - p01_kc_model_provider
 ---
 # Architecture: model_provider in the CEX
 ## Component Inventory
@@ -75,6 +72,5 @@ model_card       --informs-->      model_provider (model IDs, pricing)
 |----------|-------------|-------|
 | [[bld_orchestration_model_provider]] | upstream | 0.57 |
 | [[model-provider-builder]] | upstream | 0.57 |
-| [[p03_ins_model_provider]] | upstream | 0.56 |
 | [[bld_memory_model_provider]] | downstream | 0.49 |
 | [[kc_model_provider]] | upstream | 0.48 |

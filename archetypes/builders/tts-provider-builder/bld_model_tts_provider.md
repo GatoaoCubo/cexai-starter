@@ -18,11 +18,7 @@ keywords: [builder identity, routing for tts_provider, tts_provider construction
 specializes, amazon polly, google cloud]
 density_score: 0.85
 related:
-  - bld_knowledge_card_tts_provider
-  - bld_collaboration_tts_provider
   - voice-pipeline-builder
-  - bld_instruction_tts_provider
-  - kc_tts_provider
 ---
 ## Identity
 
@@ -64,8 +60,4 @@ The tts_provider-builder agent is a specialized integration tool that generates 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_tts_provider]] | upstream | 0.51 |
-| [[bld_collaboration_tts_provider]] | downstream | 0.51 |
 | [[voice-pipeline-builder]] | sibling | 0.48 |
-| [[bld_instruction_tts_provider]] | upstream | 0.43 |
-| [[kc_tts_provider]] | upstream | 0.43 |

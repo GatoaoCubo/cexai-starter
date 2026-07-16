@@ -31,11 +31,8 @@ keywords:
   - "output template"
 density_score: 0.90
 related:
-  - bld_instruction_decision_record
   - decision-record-builder
-  - p08_decision_record
   - bld_architecture_decision_record
-  - p10_lr_decision_record_builder
 ---
 # Output Template: decision_record
 ```yaml
@@ -139,4 +136,3 @@ Cons:
 | [[decision-record-builder]] | downstream | 0.45 |
 | p08_decision_record | downstream | 0.41 |
 | [[bld_architecture_decision_record]] | downstream | 0.40 |
-| [[p10_lr_decision_record_builder]] | downstream | 0.38 |

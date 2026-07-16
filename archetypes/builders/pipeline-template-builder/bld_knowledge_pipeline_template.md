@@ -20,10 +20,6 @@ pipeline, canonical scenarios]
 density_score: 0.88
 related:
  - pipeline-template-builder
- - n00_pipeline_template_manifest
- - kc_pipeline_template
- - p11_qg_pipeline_template
- - pipeline_template_n03
 ---
 ## Domain Overview
 Pipeline templates encode multi-agent scenario-indexed agent sequences for software engineering tasks. Where crew_template defines a reusable TEAM (fixed roles + topology), pipeline_template defines a reusable RECIPE (scenario -> ordered stages -> revision loop). The pattern originates from multi-agent-pattern: 7 canonical scenarios with mandatory @reviewer + @tester gates and max 3 revision iterations. Priority order enforces security concerns over quality over implementation details.
@@ -83,7 +79,3 @@ multi-agent (2025) is the reference implementation of scenario-indexed multi-age
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pipeline-template-builder]] | downstream | 0.64 |
-| [[n00_pipeline_template_manifest]] | sibling | 0.62 |
-| [[kc_pipeline_template]] | sibling | 0.60 |
-| [[p11_qg_pipeline_template]] | downstream | 0.55 |
-| [[pipeline_template_n03]] | downstream | 0.54 |

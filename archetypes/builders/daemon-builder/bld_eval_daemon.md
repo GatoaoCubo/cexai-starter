@@ -18,9 +18,6 @@ updated: "2026-03-27"
 keywords: [gates for daemon artifacts, validates lifecycle completeness, signal handling, health checks, and restart policy correctness, quality-gate, daemon]
 density_score: 0.91
 related:
-  - bld_knowledge_card_daemon
-  - p11_qg_quality_gate
-  - bld_instruction_daemon
   - bld_architecture_daemon
   - daemon-builder
 ---

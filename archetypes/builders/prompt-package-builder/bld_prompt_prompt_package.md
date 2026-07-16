@@ -29,9 +29,7 @@ density_score: 0.90
 llm_function: REASON
 related:
   - prompt-package-builder
-  - bld_knowledge_card_prompt_package
   - bld_orchestration_prompt_package
-  - schema_prompt_package_builder
   - bld_memory_prompt_package
 ---
 ## Context
@@ -162,5 +160,4 @@ HARD gates (all must pass -- fix before handoff):
 | [[prompt-package-builder]] | related | 0.48 |
 | [[bld_knowledge_prompt_package]] | upstream | 0.47 |
 | [[bld_orchestration_prompt_package]] | related | 0.47 |
-| [[schema_prompt_package_builder]] | downstream | 0.45 |
 | [[bld_memory_prompt_package]] | downstream | 0.39 |

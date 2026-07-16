@@ -22,7 +22,6 @@ related:
   - bld_prompt_synthetic_data_config
   - bld_prompt_query_optimizer
   - bld_knowledge_retrieval_evaluator
-  - bld_instruction_input_schema
 ---
 
 # Instructions: How to Produce a retrieval_evaluator
@@ -64,4 +63,3 @@ related:
 | [[bld_prompt_synthetic_data_config]] | sibling | 0.37 |
 | [[bld_prompt_query_optimizer]] | sibling | 0.36 |
 | [[bld_knowledge_retrieval_evaluator]] | upstream | 0.31 |
-| [[bld_instruction_input_schema]] | sibling | 0.31 |

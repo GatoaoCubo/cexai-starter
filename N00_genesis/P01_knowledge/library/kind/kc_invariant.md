@@ -23,8 +23,6 @@ linked_artifacts:
 related:
   - invariant-builder
   - bld_architecture_invariant
-  - p03_ins_law
-  - bld_knowledge_card_invariant
   - p08_law_{{NUMBER}}
 ---
 
@@ -99,5 +97,4 @@ decision_record, pattern --> [law] --> agent_card, workflow, permission
 |----------|-------------|-------|
 | [[invariant-builder]] | related | 0.49 |
 | [[bld_architecture_invariant]] | related | 0.49 |
-| [[p03_ins_law]] | upstream | 0.45 |
 | [[bld_knowledge_invariant]] | sibling | 0.42 |

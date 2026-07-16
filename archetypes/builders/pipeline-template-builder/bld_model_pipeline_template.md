@@ -17,10 +17,6 @@ updated: "2026-04-18"
 keywords: [builder identity, routing for pipeline_template, pipeline_template construction, type builder pipeline template, pipeline_template, builder, type_builder, scenario_indexed]
 density_score: 0.88
 related:
- - n00_pipeline_template_manifest
- - kc_pipeline_template
- - p11_qg_pipeline_template
- - bld_knowledge_card_pipeline_template
  - bld_schema_pipeline_template
 ---
 ## Identity
@@ -71,8 +67,4 @@ NEVER skip mandatory gates; reviewer and tester are non-negotiable gates in all 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_pipeline_template_manifest]] | related | 0.54 |
-| [[kc_pipeline_template]] | upstream | 0.52 |
-| [[p11_qg_pipeline_template]] | upstream | 0.51 |
-| [[bld_knowledge_card_pipeline_template]] | upstream | 0.50 |
 | [[bld_schema_pipeline_template]] | upstream | 0.49 |

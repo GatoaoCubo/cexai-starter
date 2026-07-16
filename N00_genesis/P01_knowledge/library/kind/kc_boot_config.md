@@ -19,10 +19,6 @@ feeds_kinds: [boot_config]
 density_score: null
 related:
   - boot-config-builder
-  - bld_collaboration_boot_config
-  - p10_lr_boot-config-builder
-  - bld_knowledge_card_boot_config
-  - n00_boot_config_manifest
 ---
 
 # Boot Config
@@ -97,6 +93,5 @@ A boot_config defines the initialization sequence for an agent on a specific pro
 |----------|-------------|-------|
 | [[boot-config-builder]] | related | 0.55 |
 | [[bld_orchestration_boot_config]] | downstream | 0.53 |
-| [[p10_lr_boot-config-builder]] | downstream | 0.46 |
 | [[bld_knowledge_boot_config]] | sibling | 0.45 |
 | n00_boot_config_manifest | sibling | 0.43 |

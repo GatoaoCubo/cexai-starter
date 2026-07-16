@@ -20,11 +20,7 @@ builder, text
 role]
 density_score: 0.85
 related:
-  - bld_collaboration_agent_computer_interface
-  - bld_collaboration_agent
   - agent-profile-builder
-  - bld_collaboration_system_prompt
-  - bld_collaboration_capability_registry
 ---
 ## Crew Role  
 Crafts agent personas by synthesizing input constraints, mission statements, and role-specific traits into coherent, boundary-compliant profiles.  

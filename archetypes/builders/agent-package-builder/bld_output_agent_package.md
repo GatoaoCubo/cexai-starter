@@ -31,11 +31,8 @@ keywords:
   - ". files present: {{files_count}}/"
 density_score: 0.90
 related:
-  - p11_qg_agent_package
   - bld_schema_agent_package
-  - bld_instruction_agent_package
   - bld_config_agent_package
-  - p02_iso_codexa_agent
 ---
 # Output Template: agent_package
 ```yaml
@@ -101,7 +98,6 @@ Declared: `{{tier}}`. Files present: `{{files_count}}`/`{{tier_expected}}`.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_agent_package]] | downstream | 0.44 |
 | [[bld_schema_agent_package]] | downstream | 0.43 |
 | [[bld_prompt_agent_package]] | upstream | 0.43 |
 | [[bld_config_agent_package]] | downstream | 0.37 |

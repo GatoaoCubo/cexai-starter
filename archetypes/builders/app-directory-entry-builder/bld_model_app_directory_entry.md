@@ -20,11 +20,7 @@ acts, identity
 the, related artifacts]
 density_score: 0.85
 related:
-  - kc_app_directory_entry
-  - bld_instruction_app_directory_entry
-  - bld_knowledge_card_app_directory_entry
   - marketplace-app-manifest-builder
-  - bld_collaboration_app_directory_entry
 ---
 ## Identity
 
@@ -71,8 +67,4 @@ NEVER reference internal tools, private repositories, or non-public APIs.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_app_directory_entry]] | upstream | 0.48 |
-| [[bld_instruction_app_directory_entry]] | upstream | 0.45 |
-| [[bld_knowledge_card_app_directory_entry]] | upstream | 0.44 |
 | [[marketplace-app-manifest-builder]] | sibling | 0.43 |
-| [[bld_collaboration_app_directory_entry]] | downstream | 0.43 |

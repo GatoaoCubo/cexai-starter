@@ -4,10 +4,7 @@ description: "Builds ONE renewal_workflow artifact via 8F pipeline. Loads renewa
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p11_fb_renewal_workflow
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_renewal_workflow_manifest
   - workflow-builder
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_renewal_workflow]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_renewal_workflow_manifest]] | related | 0.29 |
 | [[workflow-builder]] | related | 0.27 |

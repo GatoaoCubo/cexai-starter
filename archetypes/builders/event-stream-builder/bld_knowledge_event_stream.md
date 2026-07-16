@@ -16,11 +16,7 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - kc_event_stream
-  - bld_manifest_event_stream
   - bld_architecture_event_stream
-  - bld_kc_domain_event
-  - bld_rules_event_stream
 ---
 # Knowledge: event_stream
 ## Core Concept
@@ -75,8 +71,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_event_stream]] | sibling | 0.48 |
-| [[bld_manifest_event_stream]] | sibling | 0.41 |
 | [[bld_architecture_event_stream]] | sibling | 0.36 |
-| [[bld_kc_domain_event]] | sibling | 0.35 |
-| [[bld_rules_event_stream]] | sibling | 0.34 |

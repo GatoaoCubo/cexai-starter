@@ -32,8 +32,6 @@ density_score: 0.91
 related:
   - bld_architecture_session_backend
   - session-backend-builder
-  - bld_output_template_session_backend
-  - p01_kc_session_backend
   - bld_schema_session_backend
 ---
 ## Quality Gate

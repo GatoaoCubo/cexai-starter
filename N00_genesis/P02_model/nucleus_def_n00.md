@@ -44,9 +44,7 @@ long_tails:
   - "what is the N00 genesis nucleus and when is it used"
   - "how do I read a nucleus identity contract for routing"
 related:
-  - n07-orchestrator
   - agent_card_n00
-  - component_map_n00
   - kc_nucleus_def
   - nucleus-def-builder
 tags:

@@ -33,9 +33,7 @@ density_score: 0.90
 related:
   - plugin-builder
   - bld_schema_plugin
-  - bld_collaboration_plugin
   - bld_memory_plugin
-  - bld_output_template_plugin
 ---
 # Domain Knowledge: plugin
 
@@ -97,6 +95,4 @@ Plugins are modular extension artifacts that add capabilities to a host system t
 |----------|-------------|-------|
 | [[plugin-builder]] | downstream | 0.56 |
 | [[bld_schema_plugin]] | downstream | 0.51 |
-| [[bld_collaboration_plugin]] | downstream | 0.50 |
 | [[bld_memory_plugin]] | downstream | 0.45 |
-| [[bld_output_template_plugin]] | downstream | 0.45 |

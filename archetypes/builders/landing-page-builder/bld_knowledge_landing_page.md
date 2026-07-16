@@ -21,7 +21,6 @@ related:
   - landing-page-builder
   - bld_architecture_landing_page
   - bld_tools_landing_page
-  - bld_collaboration_landing_page
 ---
 # Knowledge Card: Landing Page
 

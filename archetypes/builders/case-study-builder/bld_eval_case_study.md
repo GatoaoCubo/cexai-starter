@@ -18,10 +18,7 @@ keywords: [case_study construction, quality gate case study, case_study, builder
 density_score: 0.85
 related:
   - bld_schema_case_study
-  - bld_knowledge_card_case_study
-  - bld_instruction_case_study
   - case-study-builder
-  - p05_qg_pitch_deck
 ---
 ## Quality Gate
 

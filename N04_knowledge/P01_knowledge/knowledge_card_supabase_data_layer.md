@@ -16,11 +16,7 @@ when_to_use: "When N04 needs to design, review, or modify any Supabase data laye
 keywords: [pgvector, hnsw indexes, rl policies, schemas, migration sql, yaml config, realtime publications, edge functions, docker stack]
 density_score: 0.90
 related:
-  - bld_collaboration_supabase_data_layer
   - bld_architecture_supabase_data_layer
-  - p12_dag_mission_supabase_data_layer_n07
-  - p12_dispatch_rule_supabase
-  - p12_wf_supabase_setup
 ---
 
 # N04 Supabase Data Layer — Master KC

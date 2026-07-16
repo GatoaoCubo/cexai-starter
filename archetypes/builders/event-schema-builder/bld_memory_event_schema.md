@@ -26,11 +26,8 @@ title: "Memory Event Schema"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - kc_event_schema
   - bld_config_event_schema
   - bld_schema_event_schema
-  - bld_output_template_event_schema
-  - bld_knowledge_card_event_schema
 ---
 
 ## Summary
@@ -101,8 +98,5 @@ Separation discipline:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_event_schema]] | upstream | 0.45 |
 | [[bld_config_event_schema]] | upstream | 0.44 |
 | [[bld_schema_event_schema]] | upstream | 0.42 |
-| [[bld_output_template_event_schema]] | upstream | 0.34 |
-| [[bld_knowledge_card_event_schema]] | upstream | 0.33 |

@@ -28,11 +28,8 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, and operational constraints, toolkit construction, config toolkit, toolkit, builder, examples, "p04_tk_{name}.yaml", p04_tk_file_ops.yaml]
 density_score: 0.90
 related:
-  - p03_ins_toolkit_builder
-  - bld_knowledge_card_toolkit
   - toolkit-builder
   - bld_tools_toolkit
-  - bld_collaboration_toolkit
 ---
 # Config: toolkit Production Rules
 ## Naming Convention
@@ -102,7 +99,6 @@ python _tools/cex_score.py --apply bld-config-toolkit.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_toolkit_builder]] | upstream | 0.63 |
 | [[bld_knowledge_toolkit]] | upstream | 0.60 |
 | [[toolkit-builder]] | upstream | 0.59 |
 | [[bld_tools_toolkit]] | upstream | 0.56 |

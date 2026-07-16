@@ -33,11 +33,7 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_supervisor
-  - bld_instruction_supervisor
-  - p01_kc_supervisor
   - bld_architecture_supervisor
-  - bld_knowledge_card_supervisor
 ---
 ## Identity
 
@@ -132,8 +128,4 @@ Max body: 2048 bytes per artifact file.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_supervisor]] | downstream | 0.64 |
-| [[bld_instruction_supervisor]] | downstream | 0.55 |
-| [[p01_kc_supervisor]] | downstream | 0.55 |
 | [[bld_architecture_supervisor]] | downstream | 0.54 |
-| [[bld_knowledge_card_supervisor]] | upstream | 0.54 |

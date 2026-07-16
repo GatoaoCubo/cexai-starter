@@ -17,12 +17,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [streaming config construction, instruction streaming config, phase process, research transport needs, compose spec with buffer, validate gates, streaming_config, builder, instruction, quality: null]
 density_score: 0.90
-related:
-  - bld_instruction_session_backend
-  - bld_knowledge_card_streaming_config
-  - bld_instruction_handoff_protocol
-  - bld_instruction_trace_config
-  - bld_instruction_chunk_strategy
 ---
 # Instructions: How to Produce a streaming_config
 
@@ -72,12 +66,3 @@ related:
     it belongs in `output_template`. If it defines data serialization, it belongs in
     `formatter`. If it defines observability, it belongs in `trace_config`.
 11. If score < 8.0: revise in the same pass before outputting
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_session_backend]] | sibling | 0.39 |
-| [[bld_knowledge_card_streaming_config]] | upstream | 0.39 |
-| [[bld_instruction_handoff_protocol]] | sibling | 0.38 |
-| [[bld_instruction_trace_config]] | sibling | 0.38 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.38 |

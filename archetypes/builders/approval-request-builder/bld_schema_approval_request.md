@@ -35,7 +35,6 @@ related:
   - bld_schema_hitl_config
   - bld_schema_permission
   - bld_schema_incident_report
-  - bld_output_template_approval_request
   - bld_config_approval_request
 ---
 
@@ -99,5 +98,4 @@ file, and this builder never writes under `.cexai/approvals/`.
 | [[bld_schema_hitl_config]] | sibling (emitting-policy schema) | 0.58 |
 | [[bld_schema_permission]] | sibling (contrast: standing grant) | 0.45 |
 | [[bld_schema_incident_report]] | sibling (contrast: post-mortem) | 0.42 |
-| [[bld_output_template_approval_request]] | downstream | 0.40 |
 | [[bld_config_approval_request]] | downstream | 0.38 |

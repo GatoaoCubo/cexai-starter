@@ -15,12 +15,6 @@ keywords: [quality gates, supabase data layer builder, with structural rules, va
 density_score: 0.92
 tldr: "Defines the few shot example specification for examples — supabase data layer builder, with structural rules, validation gates, and integration poi..."
 llm_function: GOVERN
-related:
-  - p04_ex_supabase_data_layer_ecommerce
-  - p01_kc_supabase_multi_tenant
-  - bld_instruction_supabase_data_layer
-  - bld_output_template_supabase_data_layer
-  - p04_ex_supabase_data_layer_marketplace
 ---
 ## Quality Gate
 

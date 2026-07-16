@@ -18,10 +18,6 @@ keywords: [competitive_matrix construction, quality gate competitive matrix, com
 density_score: 0.85
 related:
   - competitive-matrix-builder
-  - p05_qg_pricing_page
-  - bld_knowledge_card_competitive_matrix
-  - n00_competitive_matrix_manifest
-  - p09_qg_marketplace_app_manifest
 ---
 ## Quality Gate
 

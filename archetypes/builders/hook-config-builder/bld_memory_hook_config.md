@@ -26,10 +26,7 @@ title: "Memory Hook Config"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_hook_config
   - hook-config-builder
-  - p01_kc_hook_config
-  - p11_qg_hook_config
   - bld_architecture_hook_config
 ---
 ## Summary
@@ -78,8 +75,5 @@ python _tools/cex_score.py --apply p10-lr-hook-config-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_hook_config]] | upstream | 0.56 |
 | [[hook-config-builder]] | upstream | 0.53 |
-| [[p01_kc_hook_config]] | upstream | 0.49 |
-| [[p11_qg_hook_config]] | downstream | 0.48 |
 | [[bld_architecture_hook_config]] | upstream | 0.47 |

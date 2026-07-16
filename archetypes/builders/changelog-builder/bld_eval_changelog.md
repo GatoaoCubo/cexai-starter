@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [changelog construction, quality gate changelog, changelog, builder, quality_gate, quality gate, fail condition, scoring guide, golden example, app changelog]
 density_score: 0.85
 related:
-  - bld_instruction_changelog
-  - bld_knowledge_card_changelog
   - bld_schema_changelog
-  - bld_output_template_changelog
-  - kc_changelog
 ---
 ## Quality Gate
 ## Definition

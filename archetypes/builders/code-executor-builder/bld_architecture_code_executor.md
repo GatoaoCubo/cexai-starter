@@ -18,10 +18,6 @@ keywords: [component map of code_executor, and architectural position, code exec
 density_score: 0.90
 related:
   - code-executor-builder
-  - n00_code_executor_manifest
-  - p11_qg_code_executor
-  - p01_kc_code_executor
-  - bld_collaboration_code_executor
 ---
 # Architecture: code_executor
 ## Component Inventory
@@ -96,6 +92,5 @@ function_def --targets-->   code_executor (runtime binding)
 |----------|-------------|-------|
 | [[code-executor-builder]] | upstream | 0.69 |
 | n00_code_executor_manifest | upstream | 0.53 |
-| [[p11_qg_code_executor]] | downstream | 0.50 |
 | [[kc_code_executor]] | upstream | 0.47 |
 | [[bld_orchestration_code_executor]] | downstream | 0.44 |

@@ -31,10 +31,6 @@ keywords:
 density_score: 0.85
 related:
   - validation-schema-builder
-  - p11_qg_validator
-  - bld_collaboration_validation_schema
-  - bld_knowledge_card_validation_schema
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 

@@ -19,10 +19,6 @@ expansion, net revenue retention, key concepts]
 density_score: 0.85
 related:
   - expansion-play-builder
-  - bld_instruction_expansion_play
-  - n00_expansion_play_manifest
-  - p03_qg_expansion_play
-  - kc_expansion_play
 ---
 ## Domain Overview
 Expansion plays are structured commercial motions designed to grow net revenue within existing customer accounts. The land-and-expand model -- pioneered by Snowflake, Datadog, Slack, and Twilio -- starts with a small initial contract (land) and systematically grows ARR through usage-triggered upsells and feature cross-sells (expand). The key revenue metric is Net Revenue Retention (NRR): an NRR >120% means the existing customer base grows revenue faster than churn removes it, effectively making expansion a lower-CAC growth engine than new logo acquisition.
@@ -68,7 +64,3 @@ Expansion plays are triggered by product usage signals (seat utilization, featur
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[expansion-play-builder]] | downstream | 0.70 |
-| [[bld_instruction_expansion_play]] | downstream | 0.59 |
-| [[n00_expansion_play_manifest]] | sibling | 0.45 |
-| [[p03_qg_expansion_play]] | downstream | 0.45 |
-| [[kc_expansion_play]] | sibling | 0.43 |

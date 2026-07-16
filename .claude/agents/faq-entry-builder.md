@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_faq_entry
-  - n00_faq_entry_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_faq_entry
 ---
 
 # faq-entry-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_faq_entry]] | related | 0.33 |
-| [[n00_faq_entry_manifest]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[p01_kc_faq_entry]] | related | 0.29 |

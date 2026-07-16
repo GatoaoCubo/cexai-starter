@@ -36,10 +36,7 @@ this, quality gate]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_instruction_e2e_eval
-  - bld_knowledge_card_e2e_eval
   - e2e-eval-builder
-  - p01_kc_e2e_eval
   - bld_architecture_e2e_eval
 ---
 ## Summary
@@ -113,8 +110,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_e2e_eval_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_e2e_eval]] | upstream | 0.46 |
-| [[bld_knowledge_card_e2e_eval]] | upstream | 0.43 |
 | [[e2e-eval-builder]] | upstream | 0.40 |
-| [[p01_kc_e2e_eval]] | upstream | 0.38 |
 | [[bld_architecture_e2e_eval]] | upstream | 0.35 |

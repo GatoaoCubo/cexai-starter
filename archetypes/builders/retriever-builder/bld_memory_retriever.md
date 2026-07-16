@@ -20,9 +20,6 @@ title: Memory ISO - retriever
 related:
   - bld_architecture_retriever
   - retriever-builder
-  - p09_kc_retriever_domain
-  - p01_kc_retriever
-  - bld_collaboration_retriever
 ---
 # Memory: retriever-builder
 
@@ -77,6 +74,5 @@ never ingests.
 |----------|-------------|-------|
 | [[bld_architecture_retriever]] | upstream | 0.46 |
 | [[retriever-builder]] | upstream | 0.45 |
-| [[p09_kc_retriever_domain]] | upstream | 0.42 |
 | [[kc_retriever]] | upstream | 0.39 |
 | [[bld_orchestration_retriever]] | downstream | 0.36 |

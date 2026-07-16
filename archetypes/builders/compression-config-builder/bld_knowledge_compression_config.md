@@ -19,11 +19,7 @@ keywords: [context compression strategies, compression config construction, know
 compression, spec table, loss level]
 density_score: 0.90
 related:
-  - p10_lr_compression_config_builder
-  - p11_qg_compression_config
-  - bld_instruction_compression_config
   - compression-config-builder
-  - p01_kc_compression_config
 ---
 # Domain Knowledge: compression_config
 ## Executive Summary
@@ -89,8 +85,4 @@ Compression configs define the token reduction contract for an LLM agent — spe
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_compression_config_builder]] | downstream | 0.53 |
-| [[p11_qg_compression_config]] | downstream | 0.44 |
-| [[bld_instruction_compression_config]] | downstream | 0.42 |
 | [[compression-config-builder]] | downstream | 0.40 |
-| [[p01_kc_compression_config]] | sibling | 0.38 |

@@ -21,10 +21,7 @@ reviewed]
 density_score: 0.85
 related:
   - transport-config-builder
-  - bld_instruction_transport_config
-  - kc_transport_config
   - bld_config_transport_config
-  - bld_collaboration_streaming_config
 ---
 ## Observation  
 Common issues include inconsistent protocol parameterization (e.g., TCP vs. UDP) and overlooking QoS settings during config assembly, leading to suboptimal performance or compatibility gaps.  
@@ -46,7 +43,4 @@ Reviewed artifacts showed 30% fewer bugs in configs using protocol-specific vali
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[transport-config-builder]] | upstream | 0.31 |
-| [[bld_instruction_transport_config]] | upstream | 0.28 |
-| [[kc_transport_config]] | upstream | 0.27 |
 | [[bld_config_transport_config]] | upstream | 0.27 |
-| [[bld_collaboration_streaming_config]] | downstream | 0.25 |

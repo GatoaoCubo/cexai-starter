@@ -20,11 +20,7 @@ acts, identity
 the, connect discovery]
 density_score: 0.85
 related:
-  - bld_knowledge_card_oauth_app_config
   - kc_oauth_app_config
-  - bld_instruction_oauth_app_config
-  - p10_lr_oauth_app_config_builder
-  - bld_collaboration_oauth_app_config
 ---
 ## Identity
 
@@ -74,5 +70,4 @@ NEVER allow wildcard redirect URIs without explicit approval.
 | [[bld_knowledge_oauth_app_config]] | upstream | 0.53 |
 | [[kc_oauth_app_config]] | upstream | 0.49 |
 | [[bld_prompt_oauth_app_config]] | upstream | 0.47 |
-| [[p10_lr_oauth_app_config_builder]] | downstream | 0.42 |
 | [[bld_orchestration_oauth_app_config]] | downstream | 0.37 |

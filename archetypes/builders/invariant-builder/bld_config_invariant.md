@@ -27,10 +27,7 @@ keywords: [invariant construction, config invariant, config, invariant-builder, 
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
-  - bld_knowledge_card_invariant
   - bld_schema_invariant
-  - p03_ins_law
-  - p11_qg_law
   - bld_memory_invariant
 ---
 # invariant-builder — CONFIG
@@ -87,6 +84,4 @@ Rule: `id` MUST equal filename stem. File `p08_law_5.md` MUST have `id: p08_law_
 |----------|-------------|-------|
 | [[bld_knowledge_invariant]] | related | 0.56 |
 | [[bld_schema_invariant]] | related | 0.50 |
-| [[p03_ins_law]] | upstream | 0.46 |
-| [[p11_qg_law]] | downstream | 0.36 |
 | [[bld_memory_invariant]] | downstream | 0.32 |

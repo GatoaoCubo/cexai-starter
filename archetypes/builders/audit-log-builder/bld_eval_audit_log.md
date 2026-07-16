@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [audit_log construction, quality gate audit log, audit_log, builder, quality_gate, "## anti-example 1: missing immutability", quality gate, fail condition, scoring guide, data integrity]
 density_score: 0.85
 related:
-  - p11_qg_compliance_checklist
-  - p11_qg_usage_report
-  - bld_instruction_audit_log
   - audit-log-builder
-  - p09_qg_marketplace_app_manifest
 ---
 ## Quality Gate
 

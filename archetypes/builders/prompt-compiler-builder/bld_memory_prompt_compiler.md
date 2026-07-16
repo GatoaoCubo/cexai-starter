@@ -22,11 +22,7 @@ prompt, impact
 full, best practices, best practice]
 density_score: 0.90
 related:
-  - p01_kc_prompt_compiler
-  - bld_knowledge_card_prompt_compiler
-  - p03_ins_prompt_compiler
   - prompt-compiler-builder
-  - p11_qg_prompt_compiler
 ---
 # Memory: prompt-compiler-builder
 ## Summary
@@ -85,8 +81,4 @@ This artifact is a memory repository for prompt_compiler construction patterns a
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prompt_compiler]] | upstream | 0.54 |
-| [[bld_knowledge_card_prompt_compiler]] | upstream | 0.47 |
-| [[p03_ins_prompt_compiler]] | upstream | 0.47 |
 | [[prompt-compiler-builder]] | upstream | 0.44 |
-| [[p11_qg_prompt_compiler]] | downstream | 0.35 |

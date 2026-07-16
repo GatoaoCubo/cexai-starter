@@ -17,10 +17,8 @@ keywords: [training_method construction, tools training method, schema validator
 density_score: 0.86
 related:
   - bld_tools_model_architecture
-  - p10_lr_training_method_builder
   - training-method-builder
   - bld_architecture_training_method
-  - p11_tools_revision_loop_policy
 ---
 # Tools: training-method-builder
 
@@ -60,7 +58,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_model_architecture]] | sibling | 0.50 |
-| [[p10_lr_training_method_builder]] | downstream | 0.42 |
 | [[training-method-builder]] | upstream | 0.38 |
 | [[bld_architecture_training_method]] | downstream | 0.35 |
-| [[p11_tools_revision_loop_policy]] | related | 0.34 |

@@ -17,10 +17,7 @@ keywords: [saga builder patterns, memory, saga, persistent patterns, common corr
 density_score: null
 related:
   - bld_memory_canary_config
-  - bld_rules_saga
   - bld_memory_slo_definition
-  - bld_instruction_saga
-  - bld_manifest_saga
 ---
 # Memory: saga Builder
 
@@ -67,7 +64,4 @@ python _tools/cex_memory_update.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_canary_config]] | sibling | 0.43 |
-| [[bld_rules_saga]] | sibling | 0.37 |
 | [[bld_memory_slo_definition]] | sibling | 0.35 |
-| [[bld_instruction_saga]] | downstream | 0.35 |
-| [[bld_manifest_saga]] | downstream | 0.35 |

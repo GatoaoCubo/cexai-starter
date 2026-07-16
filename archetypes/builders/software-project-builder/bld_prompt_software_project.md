@@ -15,12 +15,6 @@ tldr: "9-step build pipeline: PARSE→SCAFFOLD→IMPLEMENT→TEST→LINT→DOCKE
 keywords: [software project builder, step build pipeline, each step has inputs, and validation gates, builder, instruction, software-project, pipeline, "{name", type, python, deps, "features}", "src/{name}/"]
 density_score: 0.92
 llm_function: REASON
-related:
-  - bld_sp_manifest_software_project
-  - p04_cli_software_project_n03
-  - bld_sp_schema_software_project
-  - p01_kc_n03_software_engineering
-  - bld_sp_quality_gate_software_project
 ---
 # Software Project Builder — Instruction
 
@@ -79,12 +73,3 @@ PARSE→SCAFFOLD→IMPLEMENT→TEST→LINT→DOCKER→CI→DEPLOY→REVIEW
 | ISO | 1 of 13 builder ISOs |
 | Loader | `cex_skill_loader.py` |
 | Pipeline | Injected at F3 (Compose) |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_sp_manifest_software_project]] | related | 0.44 |
-| [[p04_cli_software_project_n03]] | downstream | 0.44 |
-| [[bld_sp_schema_software_project]] | upstream | 0.43 |
-| [[p01_kc_n03_software_engineering]] | upstream | 0.37 |
-| [[bld_sp_quality_gate_software_project]] | downstream | 0.37 |

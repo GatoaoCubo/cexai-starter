@@ -27,10 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - action-prompt-builder
-  - bld_instruction_action_prompt
-  - bld_collaboration_action_prompt
-  - bld_instruction_input_schema
-  - bld_knowledge_card_action_prompt
 ---
 ## Summary
 An action prompt is a contract between a caller and an execution engine. The 21 frontmatter fields exist to make that contract explicit and machine-verifiable. In forctice, the contract breaks at the edges: inputs near boundary values and output fields with ambiguous format expectations.

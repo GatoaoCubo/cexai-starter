@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [renewal_workflow construction, instruction renewal workflow, renewal_workflow, builder, instruction, renewal, gainsight, configure salesforce opportunity, set gainsight, related artifacts]
 density_score: 0.85
 related:
-  - bld_output_template_renewal_workflow
-  - p10_lr_renewal_workflow_builder
   - renewal-workflow-builder
-  - bld_knowledge_card_renewal_workflow
   - bld_config_renewal_workflow
 ---
 ## Phase 1: RESEARCH
@@ -53,8 +50,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_renewal_workflow]] | downstream | 0.59 |
-| [[p10_lr_renewal_workflow_builder]] | downstream | 0.58 |
 | [[renewal-workflow-builder]] | downstream | 0.58 |
-| [[bld_knowledge_card_renewal_workflow]] | upstream | 0.57 |
 | [[bld_config_renewal_workflow]] | downstream | 0.53 |

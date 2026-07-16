@@ -10,12 +10,6 @@ quality: null
 tags: [skill, shared, copilot, guided-decisions, UX, interaction]
 tldr: "When a decision affects the output, STOP and present numbered options with recommendations. Never assume what the user wants. This is as mandatory as 8F."
 density_score: 0.95
-related:
-  - p01_kc_pillar_brief_p03_prompt_en
-  - p01_kc_pillar_brief_p04_tools_en
-  - p01_kc_pillar_brief_p02_model_en
-  - brand_bootstrap
-  - p01_kc_cex_as_digital_asset
 ---
 
 # Skill: Guided Decision Protocol (GDP)
@@ -311,5 +305,4 @@ The platô between autonomy and collaboration:
 | p01_kc_pillar_brief_p03_prompt_en | related | 0.22 |
 | p01_kc_pillar_brief_p04_tools_en | related | 0.22 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.20 |
-| [[brand_bootstrap]] | sibling | 0.20 |
 | p01_kc_cex_as_digital_asset | related | 0.19 |

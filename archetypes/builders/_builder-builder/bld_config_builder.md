@@ -29,7 +29,6 @@ keywords: [naming conventions, file paths, size limits, builder construction, co
 density_score: 0.90
 related:
   - bld_config_kind
-  - _builder-builder
   - bld_collaboration_builder
   - bld_architecture_kind
   - kind-builder
@@ -94,7 +93,6 @@ python _tools/cex_score.py --apply bld-config-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_kind]] | sibling | 0.41 |
-| [[_builder-builder]] | upstream | 0.40 |
 | [[bld_collaboration_builder]] | downstream | 0.37 |
 | [[bld_architecture_kind]] | upstream | 0.35 |
 | [[kind-builder]] | upstream | 0.33 |

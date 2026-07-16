@@ -30,12 +30,6 @@ keywords:
   - "write overview"
   - "write signal design"
 density_score: 0.90
-related:
-  - bld_instruction_llm_judge
-  - bld_instruction_output_validator
-  - bld_instruction_retriever_config
-  - bld_instruction_memory_scope
-  - bld_instruction_chunk_strategy
 ---
 # Instructions: How to Produce a reward_signal
 ## Phase 1: RESEARCH

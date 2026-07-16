@@ -19,10 +19,6 @@ define, related artifacts, upstream, canonicalization]
 density_score: 0.85
 related:
   - llm-evaluation-scenario-builder
-  - bld_knowledge_card_llm_evaluation_scenario
-  - bld_instruction_llm_evaluation_scenario
-  - bld_collaboration_llm_evaluation_scenario
-  - n00_llm_evaluation_scenario_manifest
 ---
 ## Observation
 HELM scenarios that omit explicit canonicalization rules produce irreproducible results across different runners. The most common failure: open-ended generation tasks without stop_sequences, where model completion bleeds into the next few-shot prompt, corrupting the evaluation context.
@@ -45,7 +41,3 @@ IBM Enterprise HELM audit (2024): 23% of submitted scenarios failed reproducibil
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[llm-evaluation-scenario-builder]] | upstream | 0.40 |
-| [[bld_knowledge_card_llm_evaluation_scenario]] | upstream | 0.30 |
-| [[bld_instruction_llm_evaluation_scenario]] | upstream | 0.30 |
-| [[bld_collaboration_llm_evaluation_scenario]] | downstream | 0.28 |
-| [[n00_llm_evaluation_scenario_manifest]] | upstream | 0.28 |

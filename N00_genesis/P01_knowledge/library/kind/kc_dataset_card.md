@@ -17,8 +17,6 @@ keywords: [jsonl, utf-8 encoding, stratified sampling, tokenized text, cc-by 4.0
 density_score: 0.99
 related:
   - dataset-card-builder
-  - n00_dataset_card_manifest
-  - bld_output_template_dataset_card
   - bld_schema_eval_dataset
   - bld_config_dataset_card
 ---
@@ -154,6 +152,5 @@ sampling_method: stratified
 |----------|-------------|-------|
 | [[dataset-card-builder]] | related | 0.40 |
 | n00_dataset_card_manifest | sibling | 0.40 |
-| [[bld_output_template_dataset_card]] | downstream | 0.35 |
 | [[bld_schema_eval_dataset]] | downstream | 0.34 |
 | [[bld_config_dataset_card]] | downstream | 0.31 |

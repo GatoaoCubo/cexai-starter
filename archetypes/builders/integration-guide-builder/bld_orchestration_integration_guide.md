@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [integration_guide construction, collaboration integration guide, integration_guide, builder, collaboration, crew role  
 creates, receives from, product team, support team, produces for]
 density_score: 0.85
-related:
-  - bld_collaboration_reward_model
-  - bld_collaboration_sdk_example
-  - bld_collaboration_reranker_config
-  - bld_collaboration_cohort_analysis
-  - bld_collaboration_subscription_tier
 ---
 ## Crew Role  
 Creates and maintains comprehensive integration guides, ensuring alignment with product capabilities and developer needs. Collaborates with API, product, and support teams to validate accuracy and completeness.  
@@ -43,12 +37,3 @@ Creates and maintains comprehensive integration guides, ensuring alignment with 
 
 ## Boundary  
 Does NOT handle code implementation (dev teams), quickstart tutorials (quickstart_guide-builder), or API schema details (api_reference-builder).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_reward_model]] | sibling | 0.35 |
-| [[bld_collaboration_sdk_example]] | sibling | 0.35 |
-| [[bld_collaboration_reranker_config]] | sibling | 0.34 |
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.34 |
-| [[bld_collaboration_subscription_tier]] | sibling | 0.33 |

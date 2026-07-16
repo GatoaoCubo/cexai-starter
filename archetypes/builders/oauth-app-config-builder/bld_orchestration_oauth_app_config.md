@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [oauth_app_config construction, collaboration oauth app config, oauth_app_config, builder, collaboration, sso_config-builder, secret_config-builder, crew role  
 manages, receives from, security team]
 density_score: 0.85
-related:
-  - bld_collaboration_reranker_config
-  - bld_collaboration_sandbox_spec
-  - bld_collaboration_ab_test_config
-  - bld_collaboration_sso_config
-  - bld_collaboration_reward_model
 ---
 ## Crew Role  
 Manages OAuth app configuration creation, ensuring proper client ID/secret, scopes, redirect URIs, and compliance with platform policies.  

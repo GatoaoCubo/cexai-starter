@@ -18,11 +18,8 @@ keywords: [crew_template construction, output template crew template, crew_templ
 topology, memory scope]
 density_score: 0.87
 related:
-  - bld_instruction_crew_template
-  - p11_qg_crew_template
   - crew-template-builder
   - bld_schema_crew_template
-  - bld_knowledge_card_crew_template
 ---
 ```markdown
 ---

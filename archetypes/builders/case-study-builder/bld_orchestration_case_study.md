@@ -20,10 +20,6 @@ does, related artifacts]
 density_score: 0.85
 related:
   - bld_tools_case_study
-  - bld_collaboration_agentic_rag
-  - bld_collaboration_cohort_analysis
-  - bld_collaboration_pitch_deck
-  - bld_collaboration_search_strategy
 ---
 ## Crew Role  
 Coordinates research, synthesizes stakeholder input, and structures case study content into a narrative document with analysis, outcomes, and actionable insights.  
@@ -49,7 +45,3 @@ Does NOT handle data analysis (done by data analysts) or create pitch decks/test
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_case_study]] | upstream | 0.24 |
-| [[bld_collaboration_agentic_rag]] | sibling | 0.23 |
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.22 |
-| [[bld_collaboration_pitch_deck]] | sibling | 0.22 |
-| [[bld_collaboration_search_strategy]] | sibling | 0.22 |

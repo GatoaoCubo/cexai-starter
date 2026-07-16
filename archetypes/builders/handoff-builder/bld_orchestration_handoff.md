@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [handoff construction, collaboration handoff, handoff, builder, examples, "### crew: task delegation", my role, crew compositions, full dispatch setup, task delegation]
 density_score: 0.90
 related:
-  - bld_collaboration_dispatch_rule
-  - bld_collaboration_handoff_protocol
   - handoff-builder
   - bld_architecture_handoff
-  - p11_qg_handoff
 ---
 # Collaboration: handoff-builder
 ## My Role in Crews
@@ -64,8 +61,5 @@ I package delegation instructions so remote executors have everything needed to 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_dispatch_rule]] | sibling | 0.48 |
-| [[bld_collaboration_handoff_protocol]] | sibling | 0.47 |
 | [[handoff-builder]] | related | 0.45 |
 | [[bld_architecture_handoff]] | upstream | 0.38 |
-| [[p11_qg_handoff]] | upstream | 0.37 |

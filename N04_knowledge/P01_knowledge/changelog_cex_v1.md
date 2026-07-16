@@ -13,10 +13,6 @@ tags: [changelog, cex, releases, history]
 tldr: "CEX changelog covering the 20 most recent commits: kind assimilation, SDK coverage, multi-runtime grid, open source prep."
 keywords: [kind assimilation, nucleus interconnection map, skill autocreator, cex_sdk agent layer, f8_pipeline, component_maps, structural scores, opus-4-6, sonnet]
 density_score: 1.0
-related:
- - p01_rm_cex
- - p01_kc_cex_project_overview
- - component_map_n07
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_materialize. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

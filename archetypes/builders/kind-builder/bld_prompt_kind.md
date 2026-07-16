@@ -19,10 +19,8 @@ keywords: [kind builder construction, instruction kind builder, phase process, d
 density_score: 0.90
 related:
   - bld_architecture_kind
-  - p06_td_cex_artifact_type_n03
   - kind-builder
   - bld_schema_kind
-  - bld_collaboration_kind
 ---
 # Instructions: How to Produce a Builder Package
 
@@ -90,7 +88,5 @@ Then produce:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_kind]] | downstream | 0.49 |
-| [[p06_td_cex_artifact_type_n03]] | downstream | 0.47 |
 | [[kind-builder]] | downstream | 0.44 |
 | [[bld_schema_kind]] | downstream | 0.40 |
-| [[bld_collaboration_kind]] | downstream | 0.37 |

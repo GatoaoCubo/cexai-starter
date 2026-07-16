@@ -18,7 +18,6 @@ keywords: [healthcare_vertical construction, tools healthcare vertical, healthca
 density_score: 0.85
 related:
   - bld_tools_fhir_agent_capability
-  - bld_collaboration_fhir_agent_capability
   - bld_tools_legal_vertical
   - fhir-agent-capability-builder
   - bld_architecture_fhir_agent_capability
@@ -46,7 +45,6 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_fhir_agent_capability]] | sibling | 0.47 |
-| [[bld_collaboration_fhir_agent_capability]] | downstream | 0.39 |
 | [[bld_tools_legal_vertical]] | sibling | 0.37 |
 | [[fhir-agent-capability-builder]] | downstream | 0.37 |
 | [[bld_architecture_fhir_agent_capability]] | downstream | 0.36 |

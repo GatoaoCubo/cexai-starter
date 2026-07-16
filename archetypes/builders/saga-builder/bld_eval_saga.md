@@ -28,12 +28,6 @@ keywords:
   - "quality gate"
   - "pass condition"
 density_score: null
-related:
-  - bld_instruction_saga
-  - kc_saga
-  - bld_manifest_saga
-  - bld_output_template_saga
-  - bld_rules_saga
 ---
 ## Quality Gate
 

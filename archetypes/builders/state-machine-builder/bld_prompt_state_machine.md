@@ -33,10 +33,7 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_state_machine
-  - p10_lr_state_machine_builder
-  - kc_state_machine
   - state-machine-builder
-  - bld_collaboration_state_machine
 ---
 # Instructions: How to Produce a state_machine
 
@@ -83,7 +80,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_state_machine]] | downstream | 0.48 |
-| [[p10_lr_state_machine_builder]] | downstream | 0.46 |
-| [[kc_state_machine]] | upstream | 0.45 |
 | [[state-machine-builder]] | downstream | 0.44 |
-| [[bld_collaboration_state_machine]] | downstream | 0.43 |

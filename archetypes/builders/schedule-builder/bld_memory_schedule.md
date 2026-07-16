@@ -27,10 +27,7 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - schedule-builder
-  - bld_knowledge_card_schedule
   - bld_config_schedule
-  - bld_output_template_schedule
-  - p11_qg_schedule
 ---
 ## Summary
 Schedules have three silent failure modes that only appear in production: timezone drift on DST transitions, catch-up bursts after downtime, and thundering herd from synchronized starts. All three are preventable at spec time with four field decisions: timezone (explicit IANA), catch_up (false by default), max_concurrent (1 by default), and jitter (0-Ns for shared infra).
@@ -109,5 +106,3 @@ python _tools/cex_score.py --apply --verbose p10_lr_schedule_builder.md
 | [[schedule-builder]] | downstream | 0.40 |
 | [[bld_knowledge_schedule]] | upstream | 0.38 |
 | [[bld_config_schedule]] | upstream | 0.35 |
-| [[bld_output_template_schedule]] | upstream | 0.34 |
-| [[p11_qg_schedule]] | downstream | 0.34 |

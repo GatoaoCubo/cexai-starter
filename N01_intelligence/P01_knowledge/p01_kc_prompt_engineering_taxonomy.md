@@ -24,10 +24,7 @@ keywords: [zero-shot, few-shot, chain-of-thought, tree-of-thought, react, self-c
 density_score: 0.95
 related:
   - kc_reasoning_strategy
-  - p01_kc_chain_of_thought
   - reasoning-strategy-builder
-  - p01_kc_prompt_engineering_best_practices
-  - kc_prompt_technique
 ---
 
 # Prompt Engineering Taxonomy

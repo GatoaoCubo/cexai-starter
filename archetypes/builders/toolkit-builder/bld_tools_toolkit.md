@@ -17,8 +17,6 @@ updated: "2026-04-07"
 keywords: [toolkit construction, tools toolkit, toolkit, builder, examples, cex_skill_loader.py, cex_router.py, cex_compile.py, cex_doctor.py, cex_agent_spawn.py]
 density_score: 0.90
 related:
-  - bld_collaboration_toolkit
-  - p03_ins_toolkit_builder
   - bld_architecture_toolkit
   - bld_config_toolkit
   - toolkit-builder
@@ -66,7 +64,6 @@ Until a dedicated toolkit validator exists, validate manually:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_toolkit]] | upstream | 0.61 |
-| [[p03_ins_toolkit_builder]] | upstream | 0.60 |
 | [[bld_architecture_toolkit]] | downstream | 0.58 |
 | [[bld_config_toolkit]] | downstream | 0.57 |
 | [[toolkit-builder]] | related | 0.53 |

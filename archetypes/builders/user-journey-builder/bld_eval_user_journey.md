@@ -18,10 +18,6 @@ keywords: [user_journey construction, quality gate user journey, user_journey, b
 density_score: 0.85
 related:
   - user-journey-builder
-  - p05_qg_pricing_page
-  - n00_user_journey_manifest
-  - bld_instruction_user_journey
-  - bld_knowledge_card_user_journey
 ---
 ## Quality Gate
 

@@ -31,11 +31,7 @@ keywords:
   - "primary action"
 density_score: 0.90
 related:
-  - bld_instruction_action_prompt
-  - bld_instruction_input_schema
-  - bld_instruction_context_doc
   - bld_schema_instruction
-  - bld_knowledge_card_instruction
 ---
 # Instructions: How to Produce an instruction
 ## Phase 1: RESEARCH

@@ -31,7 +31,6 @@ keywords:
   - "## data mapping"
 density_score: 0.90
 related:
-  - bld_schema_client
   - bld_schema_retriever_config
   - bld_schema_handoff_protocol
   - bld_schema_output_validator
@@ -86,7 +85,6 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_schema_client]] | sibling | 0.66 |
 | [[bld_schema_retriever_config]] | sibling | 0.63 |
 | [[bld_schema_handoff_protocol]] | sibling | 0.62 |
 | [[bld_schema_output_validator]] | sibling | 0.61 |

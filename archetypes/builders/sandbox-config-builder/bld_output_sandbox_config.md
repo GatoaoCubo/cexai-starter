@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [sandbox_config construction, output template sandbox config, sandbox config template, resource limits, network policy, filesystem scope, isolation mechanism, sandbox_config, builder, output_template]
 density_score: 0.90
-related:
-  - bld_instruction_sandbox_config
-  - sandbox_config_n03
-  - p09_qg_sandbox_config
-  - bld_knowledge_card_sandbox_config
-  - sandbox_config_n05
 ---
 ```yaml
 ---
@@ -134,12 +128,3 @@ rlimit_as: `{{memory_bytes}}`
 log_fd: 2
 mount { src: "`{{sandbox_root}}`" dst: "/" is_bind: true rw: false }
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_sandbox_config]] | upstream | 0.55 |
-| [[sandbox_config_n03]] | downstream | 0.46 |
-| [[p09_qg_sandbox_config]] | downstream | 0.43 |
-| [[bld_knowledge_card_sandbox_config]] | upstream | 0.42 |
-| [[sandbox_config_n05]] | downstream | 0.38 |

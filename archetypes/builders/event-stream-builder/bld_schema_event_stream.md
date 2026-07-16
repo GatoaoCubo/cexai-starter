@@ -32,7 +32,6 @@ related:
   - bld_schema_aggregate_root
   - bld_schema_value_object
   - bld_schema_process_manager
-  - bld_output_template_event_stream
   - bld_schema_model_registry
 ---
 # Schema: event_stream
@@ -107,5 +106,4 @@ python _tools/cex_schema_hydrate.py --check
 | [[bld_schema_aggregate_root]] | sibling | 0.45 |
 | [[bld_schema_value_object]] | sibling | 0.41 |
 | [[bld_schema_process_manager]] | sibling | 0.39 |
-| [[bld_output_template_event_stream]] | related | 0.39 |
 | [[bld_schema_model_registry]] | sibling | 0.38 |

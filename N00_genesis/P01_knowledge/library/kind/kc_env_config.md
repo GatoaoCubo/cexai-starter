@@ -11,12 +11,6 @@ tldr: "Runtime environment variables, API keys, provider URLs, and secrets manag
 when_to_use: "When configuring API keys, provider endpoints, feature flags, or secrets for an LLM deployment"
 keywords: [runtime environment variables, api keys, provider urls, .env, .gitignore, openai_api_key=sk-1234567890, environment configuration, key configuration elements, best practice, secrets manager]
 density_score: 0.92
-related:
-  - p09_secret_openai_key
-  - bld_knowledge_card_secret_config
-  - p01_kc_secret_config
-  - p09_secret_config
-  - p09_sec_n07
 ---
 
 # Environment Configuration for LLM Systems

@@ -15,12 +15,6 @@ keywords: [event stream tools, workflow coordination, and lifecycle management, 
 density_score: 0.82
 created: "2026-04-17"
 updated: "2026-04-17"
-related:
-  - bld_rules_process_manager
-  - bld_rules_value_object
-  - bld_rules_aggregate_root
-  - bld_rules_data_contract
-  - bld_rules_constitutional_rule
 ---
 # Rules: event_stream
 ## Absolute Rules (HARD -- never violate)
@@ -68,12 +62,3 @@ sequencing: tested
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope orchestration
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_rules_process_manager]] | sibling | 0.40 |
-| [[bld_rules_value_object]] | sibling | 0.34 |
-| [[bld_rules_aggregate_root]] | sibling | 0.31 |
-| [[bld_rules_data_contract]] | downstream | 0.30 |
-| [[bld_rules_constitutional_rule]] | sibling | 0.30 |

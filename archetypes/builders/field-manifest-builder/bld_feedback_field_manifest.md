@@ -16,11 +16,7 @@ density_score: 0.86
 created: "2026-07-03"
 updated: "2026-07-03"
 related:
-  - p11_qg_field_manifest
-  - p11_fb_input_schema
-  - p11_fb_type_def
   - bld_schema_field_manifest
-  - p11_fb_kind
 ---
 # Feedback: Field Manifest
 
@@ -93,8 +89,4 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_field_manifest]] | sibling | 0.80 |
-| [[p11_fb_input_schema]] | sibling | 0.72 |
-| [[p11_fb_type_def]] | sibling | 0.70 |
 | [[bld_schema_field_manifest]] | related | 0.60 |
-| [[p11_fb_kind]] | sibling | 0.55 |

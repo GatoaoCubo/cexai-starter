@@ -18,10 +18,6 @@ keywords: [quantization_config construction, quality gate quantization config, q
 density_score: 0.87
 related:
   - bld_schema_quantization_config
-  - bld_instruction_quantization_config
-  - p01_kc_hybrid_review3_n05
-  - p09_qg_marketplace_app_manifest
-  - p01_qg_reranker_config
 ---
 ## Quality Gate
 ## HARD Gates

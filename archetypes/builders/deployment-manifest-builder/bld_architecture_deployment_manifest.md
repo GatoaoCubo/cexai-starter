@@ -18,9 +18,7 @@ keywords: [deployment_manifest relationships, and workflow, architecture, deploy
 pillar, related artifacts, sandbox_spec test]
 density_score: null
 related:
-  - bld_manifest_deployment_manifest
   - bld_architecture_canary_config
-  - kc_deployment_manifest
   - bld_memory_deployment_manifest
   - bld_architecture_slo_definition
 ---
@@ -58,8 +56,6 @@ Pillar P09 (Config) -- deployment_manifest is a configuration artifact, not a ru
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_deployment_manifest]] | downstream | 0.45 |
 | [[bld_architecture_canary_config]] | sibling | 0.42 |
-| [[kc_deployment_manifest]] | sibling | 0.39 |
 | [[bld_memory_deployment_manifest]] | sibling | 0.39 |
 | [[bld_architecture_slo_definition]] | sibling | 0.37 |

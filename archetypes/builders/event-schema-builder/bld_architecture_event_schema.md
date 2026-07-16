@@ -17,11 +17,7 @@ updated: "2026-04-17"
 keywords: [and architectural position, event schema construction, architecture event schema, component map, json schema, event_schema, builder, architecture, "- v2:", component inventory]
 density_score: 0.90
 related:
-  - bld_knowledge_card_event_schema
-  - kc_event_schema
   - event-schema-builder
-  - p11_qg_event_schema
-  - bld_output_template_event_schema
 ---
 ## Component Inventory
 
@@ -92,8 +88,4 @@ Type versioning example:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_event_schema]] | upstream | 0.62 |
-| [[kc_event_schema]] | upstream | 0.62 |
 | [[event-schema-builder]] | upstream | 0.60 |
-| [[p11_qg_event_schema]] | downstream | 0.53 |
-| [[bld_output_template_event_schema]] | upstream | 0.50 |

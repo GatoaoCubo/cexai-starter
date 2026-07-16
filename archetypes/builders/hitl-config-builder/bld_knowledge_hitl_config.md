@@ -18,11 +18,7 @@ updated: "2026-04-13"
 keywords: [hitl_config construction, knowledge card hitl config, hitl gate domain knowledge, trigger types, escalation patterns, approval flows, timeout sizing]
 density_score: 0.90
 related:
-  - p01_kc_hitl_config
-  - p11_qg_hitl_config
-  - p10_lr_hitl_config_builder
   - hitl-config-builder
-  - bld_instruction_hitl_config
 ---
 # Domain Knowledge: hitl_config
 ## Executive Summary
@@ -100,8 +96,4 @@ A hitl_config specifies when and how AI-generated outputs pause for human judgme
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_hitl_config]] | sibling | 0.57 |
-| [[p11_qg_hitl_config]] | downstream | 0.41 |
-| [[p10_lr_hitl_config_builder]] | downstream | 0.40 |
 | [[hitl-config-builder]] | downstream | 0.39 |
-| [[bld_instruction_hitl_config]] | downstream | 0.38 |

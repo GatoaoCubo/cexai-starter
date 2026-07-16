@@ -20,10 +20,6 @@ algorithm, fraud detection]
 density_score: 0.85
 related:
   - ecommerce-vertical-builder
-  - p10_mem_ecommerce_vertical_builder
-  - bld_instruction_ecommerce_vertical
-  - kc_ecommerce_vertical
-  - bld_knowledge_card_ecommerce_vertical
 ---
 ```markdown
 ---
@@ -87,7 +83,3 @@ Discount offer: {{discount_pct}}%
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ecommerce-vertical-builder]] | upstream | 0.43 |
-| [[p10_mem_ecommerce_vertical_builder]] | downstream | 0.40 |
-| [[bld_instruction_ecommerce_vertical]] | upstream | 0.39 |
-| [[kc_ecommerce_vertical]] | upstream | 0.39 |
-| [[bld_knowledge_card_ecommerce_vertical]] | upstream | 0.34 |

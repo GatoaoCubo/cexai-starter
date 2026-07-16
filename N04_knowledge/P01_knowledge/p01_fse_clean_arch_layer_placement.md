@@ -22,9 +22,7 @@ source_license: "MIT"
 related:
   - p01_kc_clean_arch_ddd_in_cex
   - p01_fse_entity_vs_value_object
-  - p08_pat_clean_architecture_project_structure
   - p01_kc_repo_assimilation_candidates
-  - few_shot_entity_vs_value_object
 ---
 
 # Few-Shot Example -- Clean Architecture Layer Placement

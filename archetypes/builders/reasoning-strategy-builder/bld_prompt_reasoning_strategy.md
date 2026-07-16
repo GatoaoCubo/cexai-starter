@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - kc_reasoning_strategy
   - reasoning-strategy-builder
-  - p03_qg_reasoning_strategy
-  - bld_output_template_reasoning_strategy
-  - bld_knowledge_card_reasoning_strategy
 ---
 ## Phase 1: RESEARCH  
 
@@ -56,6 +53,4 @@ This ISO selects a reasoning strategy (e.g. chain-of-thought) and the conditions
 |----------|-------------|-------|
 | [[kc_reasoning_strategy]] | upstream | 0.33 |
 | [[reasoning-strategy-builder]] | related | 0.31 |
-| [[p03_qg_reasoning_strategy]] | downstream | 0.31 |
-| [[bld_output_template_reasoning_strategy]] | downstream | 0.29 |
 | [[bld_knowledge_reasoning_strategy]] | upstream | 0.29 |

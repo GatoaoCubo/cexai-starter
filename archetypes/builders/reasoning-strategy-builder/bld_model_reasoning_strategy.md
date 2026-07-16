@@ -22,10 +22,6 @@ acts]
 density_score: 0.85
 related:
   - kc_reasoning_strategy
-  - bld_knowledge_card_reasoning_strategy
-  - bld_output_template_reasoning_strategy
-  - bld_instruction_reasoning_strategy
-  - p03_qg_reasoning_strategy
 ---
 ## Identity
 ## Identity  
@@ -62,6 +58,4 @@ The reasoning_strategy-builder agent is a specialized system that designs struct
 |----------|-------------|-------|
 | [[kc_reasoning_strategy]] | upstream | 0.52 |
 | [[bld_knowledge_reasoning_strategy]] | upstream | 0.52 |
-| [[bld_output_template_reasoning_strategy]] | downstream | 0.43 |
 | [[bld_prompt_reasoning_strategy]] | related | 0.41 |
-| [[p03_qg_reasoning_strategy]] | downstream | 0.39 |

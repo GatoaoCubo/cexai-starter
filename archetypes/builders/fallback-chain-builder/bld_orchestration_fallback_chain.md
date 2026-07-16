@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [fallback chain construction, collaboration fallback chain, fallback_chain, builder, examples, "### crew: full dispatch setup", my role, crew compositions, resilient agent deployment, full dispatch setup]
 density_score: 0.90
-related:
-  - bld_collaboration_boot_config
-  - bld_collaboration_dispatch_rule
-  - bld_collaboration_agent
-  - bld_collaboration_model_provider
-  - bld_collaboration_agent_package
 ---
 # Collaboration: fallback-chain-builder
 ## My Role in Crews

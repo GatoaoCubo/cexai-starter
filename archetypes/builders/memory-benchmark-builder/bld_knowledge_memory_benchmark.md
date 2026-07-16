@@ -20,10 +20,6 @@ memory, key concepts]
 density_score: 0.88
 related:
   - memory-benchmark-builder
-  - bld_instruction_memory_benchmark
-  - bld_knowledge_card_memory_architecture
-  - p01_kc_memory_scope
-  - p01_kc_atom_22_memory_taxonomy
 ---
 ## Domain Overview
 
@@ -80,7 +76,3 @@ contradict itself across turns? (4) hallucination rate -- does the agent fabrica
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-benchmark-builder]] | downstream | 0.53 |
-| [[bld_instruction_memory_benchmark]] | downstream | 0.35 |
-| [[bld_knowledge_card_memory_architecture]] | sibling | 0.34 |
-| [[p01_kc_memory_scope]] | sibling | 0.34 |
-| [[p01_kc_atom_22_memory_taxonomy]] | sibling | 0.32 |

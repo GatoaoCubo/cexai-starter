@@ -19,10 +19,7 @@ feeds_kinds: [vector_store]
 density_score: null
 related:
   - bld_memory_vector_store
-  - bld_knowledge_card_vector_store
-  - p03_ins_vector_store
   - vector-store-builder
-  - n00_vector_store_manifest
 ---
 
 # VectorDB Backend
@@ -80,6 +77,5 @@ A vectordb backend config tells CEX where to store and query embedding vectors. 
 |----------|-------------|-------|
 | [[bld_memory_vector_store]] | downstream | 0.51 |
 | [[bld_knowledge_vector_store]] | sibling | 0.49 |
-| [[p03_ins_vector_store]] | downstream | 0.48 |
 | [[vector-store-builder]] | downstream | 0.47 |
 | n00_vector_store_manifest | sibling | 0.44 |

@@ -18,10 +18,7 @@ keywords: [llm agent procedural memory, procedural_memory-builder patterns, key 
 density_score: 0.90
 related:
   - procedural-memory-builder
-  - bld_knowledge_card_procedural_memory
-  - bld_instruction_procedural_memory
   - bld_tools_procedural_memory
-  - bld_collaboration_procedural_memory
 ---
 ## Observation
 
@@ -65,7 +62,4 @@ system_prompt for procedural_memory, but:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[procedural-memory-builder]] | related | 0.54 |
-| [[bld_knowledge_card_procedural_memory]] | upstream | 0.48 |
-| [[bld_instruction_procedural_memory]] | upstream | 0.47 |
 | [[bld_tools_procedural_memory]] | upstream | 0.39 |
-| [[bld_collaboration_procedural_memory]] | downstream | 0.38 |

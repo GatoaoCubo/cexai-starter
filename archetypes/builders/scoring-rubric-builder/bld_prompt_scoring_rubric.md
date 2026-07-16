@@ -29,11 +29,9 @@ keywords: [scoring rubric builder instructions, per-tier thresholds, concrete sc
 density_score: 0.88
 llm_function: REASON
 related:
-  - bld_knowledge_card_scoring_rubric
   - scoring-rubric-builder
   - bld_memory_scoring_rubric
   - bld_architecture_scoring_rubric
-  - p11_qg_scoring-rubric
 ---
 ## Context
 The scoring-rubric-builder produces `scoring_rubric` artifacts — structured evaluation

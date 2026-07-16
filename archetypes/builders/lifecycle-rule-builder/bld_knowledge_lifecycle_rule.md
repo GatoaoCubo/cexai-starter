@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [atomic searchable facts, lifecycle rule construction, knowledge card lifecycle rule, lifecycle_rule, builder, examples, "p11_lc_{slug}", freshness_days, review_cycle, ownership]
 density_score: 0.90
 related:
-  - bld_manifest_lifecycle_rule
-  - p03_ins_lifecycle_rule
   - bld_memory_lifecycle_rule
-  - p11_qg_lifecycle_rule
-  - bld_collaboration_lifecycle_rule
 ---
 # Domain Knowledge: lifecycle_rule
 ## Executive Summary
@@ -83,8 +79,5 @@ Lifecycle rules are declarative policies governing artifact state transitions ov
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_lifecycle_rule]] | related | 0.47 |
-| [[p03_ins_lifecycle_rule]] | upstream | 0.46 |
 | [[bld_memory_lifecycle_rule]] | upstream | 0.45 |
-| [[p11_qg_lifecycle_rule]] | related | 0.45 |
 | [[bld_orchestration_lifecycle_rule]] | related | 0.41 |

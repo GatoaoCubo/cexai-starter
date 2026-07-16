@@ -19,9 +19,7 @@ density_score: 0.85
 related:
   - capability-registry-builder
   - bld_schema_capability_registry
-  - bld_instruction_capability_registry
   - bld_config_capability_registry
-  - p08_qg_capability_registry
 ---
 ```markdown
 ---
@@ -90,4 +88,3 @@ query_interface: "python _tools/cex_query.py --registry p08_cr_{{registry_name}}
 | [[bld_schema_capability_registry]] | downstream | 0.38 |
 | [[bld_prompt_capability_registry]] | upstream | 0.36 |
 | [[bld_config_capability_registry]] | downstream | 0.35 |
-| [[p08_qg_capability_registry]] | downstream | 0.33 |

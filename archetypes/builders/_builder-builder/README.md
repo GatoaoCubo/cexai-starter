@@ -11,11 +11,8 @@ source: "Extracted from 4 existing builders (model-card, knowledge-card, signal,
 tags: [meta, builder, template, generator]
 density_score: 1.0
 related:
-  - p03_sp__builder_builder
-  - p06_td_cex_artifact_type_n03
   - bld_instruction_builder
   - bld_knowledge_card_builder
-  - bld_instruction_kind
 ---
 
 # _builder-builder: Meta-Template for Generating Any Type-Builder
@@ -209,8 +206,5 @@ Validated against model-card-builder v2.0:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp__builder_builder]] | related | 0.33 |
-| [[p06_td_cex_artifact_type_n03]] | related | 0.31 |
 | [[bld_instruction_builder]] | related | 0.29 |
 | [[bld_knowledge_card_builder]] | sibling | 0.28 |
-| [[bld_instruction_kind]] | related | 0.28 |

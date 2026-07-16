@@ -31,11 +31,7 @@ keywords:
   - "pattern"
 density_score: 0.90
 related:
-  - bld_instruction_component_map
   - diagram-builder
-  - bld_collaboration_diagram
-  - bld_knowledge_card_diagram
-  - bld_instruction_action_prompt
 ---
 # Instructions: How to Produce a diagram
 ## Phase 1: DISCOVER
@@ -94,8 +90,4 @@ python _tools/cex_skill_loader.py --verify diagram
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_component_map]] | sibling | 0.46 |
 | [[diagram-builder]] | related | 0.41 |
-| [[bld_collaboration_diagram]] | downstream | 0.40 |
-| [[bld_knowledge_card_diagram]] | upstream | 0.39 |
-| [[bld_instruction_action_prompt]] | sibling | 0.37 |

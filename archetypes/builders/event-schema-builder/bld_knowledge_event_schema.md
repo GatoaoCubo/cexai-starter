@@ -18,11 +18,9 @@ keywords: [and routing, not data_contract, nor event_stream, event_schema, cloud
 an, apache avro]
 density_score: 0.90
 related:
-  - kc_event_schema
   - event-schema-builder
   - bld_schema_event_schema
   - bld_architecture_event_schema
-  - bld_output_template_event_schema
 ---
 
 # Knowledge Card: event_schema
@@ -144,8 +142,6 @@ event_schema (P06)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_event_schema]] | sibling | 0.80 |
 | [[event-schema-builder]] | downstream | 0.66 |
 | [[bld_schema_event_schema]] | downstream | 0.62 |
 | [[bld_architecture_event_schema]] | downstream | 0.61 |
-| [[bld_output_template_event_schema]] | downstream | 0.54 |

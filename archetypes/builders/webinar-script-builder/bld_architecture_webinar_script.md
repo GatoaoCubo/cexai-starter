@@ -24,7 +24,6 @@ related:
   - bld_architecture_dataset_card
   - bld_architecture_conformity_assessment
   - bld_architecture_experiment_tracker
-  - bld_knowledge_card_kind
 ---
 ## Component Inventory
 
@@ -104,4 +103,3 @@ The webinar_script builder occupies the **P03 Prompt / Live Delivery** layer of 
 | [[bld_architecture_dataset_card]] | sibling | 0.48 |
 | [[bld_architecture_conformity_assessment]] | sibling | 0.44 |
 | [[bld_architecture_experiment_tracker]] | sibling | 0.40 |
-| [[bld_knowledge_card_kind]] | upstream | 0.40 |

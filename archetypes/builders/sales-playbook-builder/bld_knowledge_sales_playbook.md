@@ -18,11 +18,8 @@ keywords: [sales_playbook construction, knowledge card sales playbook, sales_pla
 sales, key concepts, buyer persona methodology, discovery flow, neil rackham]
 density_score: 0.85
 related:
-  - bld_knowledge_card_discovery_questions
   - sales-playbook-builder
-  - p10_mem_sales_playbook_builder
   - discovery-questions-builder
-  - bld_instruction_sales_playbook
 ---
 ## Domain Overview
 Sales playbooks are structured guides used in B2B sales to standardize processes, align teams, and improve win rates. They encapsulate strategies for engaging stakeholders, uncovering needs, and addressing objections through persona-driven approaches. Unlike pitch decks, which focus on presentation, or discovery questions, which are subsets of research, playbooks integrate persona analysis, discovery flows, objection handling, and closing tactics into a cohesive framework. They are critical in consultative selling models, where alignment with buyer journeys and value-based messaging drive outcomes.
@@ -63,8 +60,5 @@ Sales playbooks are structured guides used in B2B sales to standardize processes
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_discovery_questions]] | sibling | 0.48 |
 | [[sales-playbook-builder]] | downstream | 0.47 |
-| [[p10_mem_sales_playbook_builder]] | downstream | 0.38 |
 | [[discovery-questions-builder]] | related | 0.36 |
-| [[bld_instruction_sales_playbook]] | downstream | 0.34 |

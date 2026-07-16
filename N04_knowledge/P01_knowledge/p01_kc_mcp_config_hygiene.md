@@ -18,9 +18,7 @@ when_to_use: "When onboarding a new machine, wiring MCP servers, or auditing sec
 keywords: [mcp.json, gitignore, example-pattern, cex_setup_validator, fresh-clone, api-key, placeholder]
 density_score: null
 related:
-  - p04_mcp_server
   - p01_kc_model_context_protocol
-  - cex_setup_validator
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_setup_validator. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

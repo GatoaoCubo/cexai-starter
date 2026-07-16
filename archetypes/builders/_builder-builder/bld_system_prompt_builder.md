@@ -26,7 +26,6 @@ llm_function: BECOME
 related:
   - system-prompt-builder
   - kind-builder
-  - p03_sp_n03_creation_nucleus
   - bld_knowledge_card_builder
   - bld_instruction_builder
 ---
@@ -75,6 +74,5 @@ Deliver both files in a single response, clearly delimited with file path header
 |----------|-------------|-------|
 | [[system-prompt-builder]] | related | 0.36 |
 | [[kind-builder]] | downstream | 0.34 |
-| [[p03_sp_n03_creation_nucleus]] | sibling | 0.30 |
 | [[bld_knowledge_card_builder]] | upstream | 0.29 |
 | [[bld_instruction_builder]] | related | 0.28 |

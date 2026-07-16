@@ -25,9 +25,7 @@ references:
 related:
   - bld_tools_dual_loop_architecture
   - bld_config_dual_loop_architecture
-  - bld_collaboration_dual_loop_architecture
   - dual-loop-architecture-builder
-  - bld_knowledge_card_dual_loop_architecture
 ---
 ## Component Inventory
 
@@ -65,6 +63,4 @@ Dual-loop is a two-tier agent topology that decouples latency from intelligence.
 |----------|-------------|-------|
 | [[bld_tools_dual_loop_architecture]] | upstream | 0.63 |
 | [[bld_config_dual_loop_architecture]] | downstream | 0.53 |
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.52 |
 | [[dual-loop-architecture-builder]] | related | 0.51 |
-| [[bld_knowledge_card_dual_loop_architecture]] | upstream | 0.51 |

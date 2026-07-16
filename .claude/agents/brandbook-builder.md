@@ -4,11 +4,9 @@ description: "Builds ONE brandbook artifact via 8F pipeline. Loads brandbook-bui
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_brand_book_patterns
   - bld_schema_brandbook
   - bld_prompt_brandbook
   - kind-builder
-  - p03_sp_builder_nucleus
 ---
 
 # brandbook-builder Sub-Agent

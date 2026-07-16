@@ -30,11 +30,8 @@ keywords:
   - "kueue cluster"
 density_score: 0.85
 related:
-  - p09_qg_kubernetes_ai_requirement
   - bld_schema_kubernetes_ai_requirement
-  - bld_instruction_kubernetes_ai_requirement
   - kubernetes-ai-requirement-builder
-  - bld_knowledge_card_kubernetes_ai_requirement
 ---
 ```markdown
 ```yaml

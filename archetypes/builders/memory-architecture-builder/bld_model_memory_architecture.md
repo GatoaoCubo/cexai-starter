@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for memory_architecture, llm agent memory systems, hierarchical layer definitions, storage backends, eviction policies, commercial tier matrices, memory_architecture, builder, type_builder]
 density_score: 0.90
 related:
-  - bld_knowledge_card_memory_architecture
   - consolidation-policy-builder
-  - bld_instruction_memory_architecture
-  - bld_output_template_memory_architecture
-  - p10_qg_memory_architecture
 ---
 ## Identity
 ## Identity
@@ -95,5 +91,3 @@ NEVER self-score quality -- leave quality: null for peer review.
 | [[bld_knowledge_memory_architecture]] | upstream | 0.56 |
 | consolidation-policy-builder | sibling | 0.50 |
 | [[bld_prompt_memory_architecture]] | upstream | 0.49 |
-| [[bld_output_template_memory_architecture]] | upstream | 0.45 |
-| [[p10_qg_memory_architecture]] | downstream | 0.45 |

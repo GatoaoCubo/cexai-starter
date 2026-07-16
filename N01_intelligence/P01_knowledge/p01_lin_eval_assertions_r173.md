@@ -15,11 +15,6 @@ author: "n01_intelligence"
 quality: null
 tags: [lineage_record, knowledge-provenance, guardrails_ai, promptfoo, deepeval, apache2, mit, r173, r174, r162, eval_assertions, d1_honesty]
 tldr: "Provenance for _tools/cex_assertions.py (R-173's typed declarative assertion REGISTRY, fixing cex_score.py's prose-regex hard-gate parsing): clean-room mechanic transplant from 3 permissive sources (guardrails-ai Apache-2.0 register_validator dispatch, promptfoo MIT ASSERTION_HANDLERS dispatch, deepeval Apache-2.0 assert_test() re-execution discipline) -- concepts only, no source code copied, all 3 licenses double-verified in their own kc_oss_* dossiers."  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
-related:
-  - kc_oss_guardrails
-  - kc_oss_promptfoo
-  - kc_oss_deepeval
-  - improvement_register
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_assertions, cex_council, cex_distill. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

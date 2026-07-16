@@ -29,8 +29,6 @@ keywords: [agent_group spec builder instructions, boot sequence, dispatch rules,
 density_score: 0.91
 llm_function: REASON
 related:
-  - bld_knowledge_card_agent_card
-  - bld_collaboration_agent_card
   - bld_memory_agent_card
   - agent-card-builder
   - bld_architecture_agent_card

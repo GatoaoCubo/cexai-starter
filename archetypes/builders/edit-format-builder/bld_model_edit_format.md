@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [builder identity, routing for edit_format, edit_format construction, type builder edit format, edit_format, builder, type_builder, diff -u, diff_strategy, formatter]
 density_score: 0.85
 related:
-  - bld_knowledge_card_edit_format
   - bld_architecture_edit_format
-  - n00_edit_format_manifest
-  - bld_output_template_edit_format
-  - bld_collaboration_edit_format
 ---
 ## Identity
 ## Identity  
@@ -92,8 +88,4 @@ differences (that is diff_strategy).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_edit_format]] | upstream | 0.48 |
 | [[bld_architecture_edit_format]] | downstream | 0.42 |
-| [[n00_edit_format_manifest]] | related | 0.41 |
-| [[bld_output_template_edit_format]] | upstream | 0.38 |
-| [[bld_collaboration_edit_format]] | downstream | 0.38 |

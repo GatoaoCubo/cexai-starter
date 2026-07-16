@@ -20,11 +20,7 @@ structured, evidence
 reviewed, related artifacts, region codes]
 density_score: 0.85
 related:
-  - bld_instruction_partner_listing
   - partner-listing-builder
-  - p05_qg_partner_listing
-  - bld_knowledge_card_partner_listing
-  - kc_partner_listing
 ---
 ## Observation
 Inconsistent formatting of certifications and region codes often leads to confusion. Missing contact details or unclear tier definitions can reduce the listing's usefulness for stakeholders.
@@ -45,8 +41,4 @@ Reviewed artifacts showed that listings with predefined templates had 30% fewer 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_partner_listing]] | upstream | 0.44 |
 | [[partner-listing-builder]] | upstream | 0.39 |
-| [[p05_qg_partner_listing]] | downstream | 0.33 |
-| [[bld_knowledge_card_partner_listing]] | upstream | 0.28 |
-| [[kc_partner_listing]] | upstream | 0.27 |

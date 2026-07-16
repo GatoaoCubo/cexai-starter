@@ -28,9 +28,6 @@ density_score: 0.90
 related:
   - bld_schema_type_def
   - bld_schema_validation_schema
-  - bld_knowledge_card_type_def
-  - p03_ins_type_def
-  - p03_constraint_brand_config_n06
 ---
 ## Naming Convention
 | Element | Rule | Example |
@@ -102,5 +99,4 @@ related:
 | [[bld_schema_type_def]] | upstream | 0.49 |
 | [[bld_schema_validation_schema]] | upstream | 0.39 |
 | [[bld_knowledge_type_def]] | upstream | 0.36 |
-| [[p03_ins_type_def]] | upstream | 0.36 |
 | p03_constraint_brand_config_n06 | upstream | 0.33 |

@@ -18,10 +18,6 @@ keywords: [messaging gateway construction, memory hooks, track active platforms,
 density_score: 0.89
 related:
   - bld_architecture_messaging_gateway
-  - p01_kc_memory_persistence
-  - p01_kc_pillar_brief_p10_memory_en
-  - bld_kc_messaging_gateway
-  - bld_collaboration_user_model
 ---
 # Memory Hooks: messaging_gateway Builder
 
@@ -81,7 +77,3 @@ attributes:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_messaging_gateway]] | upstream | 0.41 |
-| [[p01_kc_memory_persistence]] | upstream | 0.38 |
-| [[p01_kc_pillar_brief_p10_memory_en]] | related | 0.37 |
-| [[bld_kc_messaging_gateway]] | upstream | 0.36 |
-| [[bld_collaboration_user_model]] | downstream | 0.36 |

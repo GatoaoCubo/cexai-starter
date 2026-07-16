@@ -4,10 +4,7 @@ description: "Builds ONE event_stream artifact via 8F pipeline. Loads event-stre
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_manifest_event_stream
   - bld_tools_event_stream
-  - bld_context_sources_event_stream
-  - p03_sp_builder_nucleus
   - kind-builder
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_event_stream]] | related | 0.38 |
 | [[bld_tools_event_stream]] | related | 0.37 |
-| [[bld_context_sources_event_stream]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |

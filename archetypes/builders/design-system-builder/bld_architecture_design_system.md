@@ -15,11 +15,7 @@ tags: [design_system, builder, architecture, composition, P06]
 tldr: "How design_system fits CEXAI: governed by the contract, selected by brand_config, injected into surface generators, scaled by the taste loop."
 density_score: 0.9
 related:
-  - p06_vs_design_system
-  - p08_adr_design_system_kind
-  - p03_ps_design_system_library_scale
   - bld_orchestration_design_system
-  - p01_kc_design_system
 ---
 
 # Architecture: where design_system sits

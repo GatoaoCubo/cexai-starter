@@ -30,10 +30,6 @@ keywords:
   - "generic"
 density_score: 0.90
 related:
-  - bld_instruction_hibernation_policy
-  - bld_quality_gate_hibernation_policy
-  - n00_hibernation_policy_manifest
-  - kc_hibernation_policy
   - hp_{{backend}}
 ---
 ## Required Fields
@@ -101,8 +97,4 @@ Examples:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_hibernation_policy]] | upstream | 0.50 |
-| [[bld_quality_gate_hibernation_policy]] | downstream | 0.50 |
-| [[n00_hibernation_policy_manifest]] | downstream | 0.48 |
-| [[kc_hibernation_policy]] | upstream | 0.43 |
 | [\[hp_`{{backend}}`\]] | downstream | 0.41 |

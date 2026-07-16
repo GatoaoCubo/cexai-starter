@@ -14,7 +14,7 @@ closed `/genesis` service) is not here and is not for sale -- what you have is i
 nobody. Read [[README|README.md]] for the full pitch, or keep reading -- this page is the
 front door into the graph you are looking at right now.
 
-> Every link on this page, and every node in [[architecture|the architecture canvas]],
+> Every link on this page, and every node in the architecture canvas,
 > resolves to a real file in the tree you cloned. Nothing here is illustrative-only --
 > click through and you are reading the actual repo.
 
@@ -131,7 +131,7 @@ the factory floor is complete, and the shelves are yours to fill.
 | To contribute, or ask for your own fabrication | [[CONTRIBUTING\|CONTRIBUTING.md]] |
 | What shipped in this version | [[CHANGELOG\|CHANGELOG.md]] |
 | Behavior expectations | [[CODE_OF_CONDUCT\|CODE_OF_CONDUCT.md]] |
-| The whole architecture, one glance, visually | [[architecture\|architecture.canvas]] |
+| The whole architecture, one glance, visually | architecture.canvas |
 | One kind's full contract, worked example | [[N00_genesis/P01_knowledge/library/kind/kc_agent\|kc_agent.md]], [[N00_genesis/P01_knowledge/library/kind/kc_knowledge_card\|kc_knowledge_card.md]], [[N00_genesis/P01_knowledge/library/kind/kc_prompt_template\|kc_prompt_template.md]] |
 
 The full kind registry (all 125, machine-readable) lives at `.cex/kinds_meta.json` and the

@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [compression config construction, collaboration compression config, compression_config, builder, examples, "### crew: long-running agent setup", my role, crew compositions, context management, running agent setup]
 density_score: 0.90
 related:
-  - bld_collaboration_session_backend
   - compression-config-builder
-  - bld_collaboration_memory_summary
-  - bld_collaboration_memory_scope
   - bld_architecture_compression_config
 ---
 # Collaboration: compression-config-builder
@@ -66,8 +63,5 @@ I specify compression strategies so agents degrade gracefully under token pressu
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_session_backend]] | sibling | 0.55 |
 | [[compression-config-builder]] | upstream | 0.43 |
-| [[bld_collaboration_memory_summary]] | sibling | 0.38 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.35 |
 | [[bld_architecture_compression_config]] | upstream | 0.35 |

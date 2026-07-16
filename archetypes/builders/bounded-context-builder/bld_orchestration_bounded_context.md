@@ -15,11 +15,7 @@ density_score: 0.99
 created: "2026-04-17"
 updated: "2026-07-04"
 related:
-  - bld_rules_domain_vocabulary
-  - bld_rules_data_contract
   - bounded-context-builder
-  - bld_rules_alert_rule
-  - bld_rules_domain_event
 ---
 # Collaboration: bounded_context-builder (Builder Rules Retained)
 
@@ -92,8 +88,4 @@ python _tools/cex_doctor.py --scope orchestration
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_rules_domain_vocabulary]] | sibling | 0.36 |
-| [[bld_rules_data_contract]] | sibling | 0.35 |
 | [[bounded-context-builder]] | upstream | 0.33 |
-| [[bld_rules_alert_rule]] | sibling | 0.32 |
-| [[bld_rules_domain_event]] | sibling | 0.32 |

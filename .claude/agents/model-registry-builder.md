@@ -4,10 +4,8 @@ description: "Builds ONE model_registry artifact via 8F pipeline. Loads model-re
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p02_model_en
   - kind-builder
   - model-registry-builder
-  - p03_sp_builder_nucleus
   - bld_config_model_registry
 ---
 
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[model-registry-builder]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[bld_config_model_registry]] | related | 0.28 |

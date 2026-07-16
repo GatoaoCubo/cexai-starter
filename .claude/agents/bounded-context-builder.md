@@ -7,8 +7,6 @@ related:
   - bounded-context-builder
   - bld_tools_bounded_context
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # bounded-context-builder Sub-Agent
@@ -89,5 +87,3 @@ Five duties bind any agent that emits an artifact:
 | [[bounded-context-builder]] | related | 0.34 |
 | [[bld_tools_bounded_context]] | related | 0.34 |
 | [[kind-builder]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |

@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_action_prompt
-  - bld_instruction_action_prompt
-  - bld_output_template_instruction
-  - bld_output_template_golden_test
-  - bld_output_template_runtime_rule
 ---
 # Output Template: action_prompt
 ```yaml

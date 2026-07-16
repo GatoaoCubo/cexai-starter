@@ -20,10 +20,8 @@ this, bias detector, risk team, in progress, audit logger]
 density_score: 0.85
 related:
   - bld_tools_bias_audit
-  - bld_collaboration_bias_audit
   - bld_architecture_compliance_framework
   - bias-audit-builder
-  - kc_bias_audit
 ---
 ## Component Inventory
 
@@ -54,7 +52,5 @@ bias_audit sits within CEX’s compliance layer, ensuring algorithmic fairness b
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_bias_audit]] | upstream | 0.52 |
-| [[bld_collaboration_bias_audit]] | downstream | 0.41 |
 | [[bld_architecture_compliance_framework]] | sibling | 0.37 |
 | [[bias-audit-builder]] | upstream | 0.33 |
-| [[kc_bias_audit]] | upstream | 0.32 |

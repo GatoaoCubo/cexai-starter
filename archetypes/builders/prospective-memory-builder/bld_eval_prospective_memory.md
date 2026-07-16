@@ -31,11 +31,8 @@ keywords:
   - "golden example"
 density_score: 0.90
 related:
-  - bld_instruction_prospective_memory
   - bld_schema_prospective_memory
   - prospective-memory-builder
-  - bld_output_template_prospective_memory
-  - p01_kc_prospective_memory
 ---
 ## Quality Gate
 

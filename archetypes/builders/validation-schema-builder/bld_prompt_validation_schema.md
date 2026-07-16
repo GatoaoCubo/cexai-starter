@@ -31,9 +31,6 @@ llm_function: REASON
 related:
   - bld_schema_validation_schema
   - validation-schema-builder
-  - bld_knowledge_card_validation_schema
-  - bld_instruction_input_schema
-  - bld_collaboration_validation_schema
 ---
 ## Context
 The validation-schema-builder produces a `validation_schema` artifact -- a structured YAML that defines the formal contract the system enforces on generated output after an LLM call complete. This contract runs automatically; the LLM does not see it.

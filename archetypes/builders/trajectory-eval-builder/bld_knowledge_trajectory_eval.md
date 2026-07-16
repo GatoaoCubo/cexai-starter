@@ -18,10 +18,6 @@ keywords: [trajectory_eval construction, knowledge card trajectory eval, step-le
 density_score: 0.87
 related:
   - bld_tools_trajectory_eval
-  - bld_output_template_trajectory_eval
-  - n00_trajectory_eval_manifest
-  - p01_kc_atom_26_evaluation_taxonomy
-  - p10_lr_chain_builder
 ---
 ## Domain Overview
 Trajectory evaluation in the LLM agent context measures the quality of an agent's sequential
@@ -73,7 +69,3 @@ granular, diagnosable step records.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_trajectory_eval]] | downstream | 0.38 |
-| [[bld_output_template_trajectory_eval]] | downstream | 0.34 |
-| [[n00_trajectory_eval_manifest]] | sibling | 0.34 |
-| [[p01_kc_atom_26_evaluation_taxonomy]] | sibling | 0.31 |
-| [[p10_lr_chain_builder]] | downstream | 0.30 |

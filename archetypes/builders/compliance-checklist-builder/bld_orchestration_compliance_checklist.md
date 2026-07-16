@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [compliance_checklist construction, collaboration compliance checklist, compliance_checklist, builder, collaboration, crew role  
 coordinates, receives from, compliance officer, legal team, produces for]
 density_score: 0.85
-related:
-  - bld_collaboration_compliance_framework
-  - bld_collaboration_healthcare_vertical
-  - bld_collaboration_govtech_vertical
-  - bld_collaboration_safety_policy
-  - bld_collaboration_fintech_vertical
 ---
 ## Crew Role  
 Coordinates creation of audit-specific compliance checklists, ensuring alignment with regulatory requirements and organizational policies.  
@@ -43,12 +37,3 @@ Coordinates creation of audit-specific compliance checklists, ensuring alignment
 
 ## Boundary  
 Does NOT enforce runtime compliance or define safety policies. Guardrail checks and behavioral policies are handled by dedicated guardrail_checker and safety_policy_enforcer builders.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_compliance_framework]] | sibling | 0.42 |
-| [[bld_collaboration_healthcare_vertical]] | sibling | 0.30 |
-| [[bld_collaboration_govtech_vertical]] | sibling | 0.28 |
-| [[bld_collaboration_safety_policy]] | sibling | 0.27 |
-| [[bld_collaboration_fintech_vertical]] | sibling | 0.26 |

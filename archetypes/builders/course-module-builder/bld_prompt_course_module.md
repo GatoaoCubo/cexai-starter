@@ -18,10 +18,6 @@ keywords: [course_module construction, instruction course module, course_module,
 density_score: 0.85
 related:
   - course-module-builder
-  - bld_instruction_planning_strategy
-  - p01_kc_course_module
-  - bld_instruction_playground_config
-  - bld_instruction_judge_config
 ---
 ## Phase 1: RESEARCH  
 1. Identify target audience and learning outcomes for the module.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[course-module-builder]] | downstream | 0.36 |
-| [[bld_instruction_planning_strategy]] | sibling | 0.34 |
-| [[p01_kc_course_module]] | downstream | 0.32 |
-| [[bld_instruction_playground_config]] | sibling | 0.31 |
-| [[bld_instruction_judge_config]] | sibling | 0.31 |

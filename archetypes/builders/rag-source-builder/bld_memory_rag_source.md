@@ -21,11 +21,7 @@ sources, reproducibility
 for, reliability scoring, knowledge card, source pointer]
 density_score: 0.90
 related:
-  - bld_collaboration_rag_source
   - rag-source-builder
-  - p01_kc_rag_source
-  - bld_knowledge_card_rag_source
-  - p03_ins_rag_source
 ---
 # Memory: rag-source-builder
 ## Summary
@@ -87,4 +83,3 @@ python _tools/cex_score.py --apply bld-memory-rag-source.md
 | [[rag-source-builder]] | upstream | 0.47 |
 | [[kc_rag_source]] | upstream | 0.44 |
 | [[bld_knowledge_rag_source]] | upstream | 0.40 |
-| [[p03_ins_rag_source]] | upstream | 0.40 |

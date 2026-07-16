@@ -19,12 +19,6 @@ slots:
   SOURCE: "citation backing each matrix cell"
   DIFFERENTIATION: "gap this product exploits"
 density_score: 0.92
-related:
-  - sales_playbook_n06
-  - kc_discovery_questions
-  - p01_kc_pillar_brief_p03_prompt_en
-  - p01_kc_competitive_positioning
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # Competitive Matrix

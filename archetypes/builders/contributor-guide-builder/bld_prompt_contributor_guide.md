@@ -18,9 +18,6 @@ keywords: [contributor_guide construction, contributor guide builder instruction
 density_score: 0.85
 related:
   - contributor-guide-builder
-  - p10_mem_contributor_guide_builder
-  - p05_qg_contributor_guide
-  - bld_output_template_contributor_guide
   - bld_tools_contributor_guide
 ---
 ## Phase 1: RESEARCH
@@ -82,7 +79,4 @@ ASCII only: no Unicode checkmarks, emoji, or non-Latin characters.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[contributor-guide-builder]] | downstream | 0.48 |
-| [[p10_mem_contributor_guide_builder]] | downstream | 0.41 |
-| [[p05_qg_contributor_guide]] | downstream | 0.41 |
-| [[bld_output_template_contributor_guide]] | downstream | 0.40 |
 | [[bld_tools_contributor_guide]] | downstream | 0.37 |

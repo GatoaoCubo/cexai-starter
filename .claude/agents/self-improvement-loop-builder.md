@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_config_self_improvement_loop
-  - n00_self_improvement_loop_manifest
-  - p11_fb_self_improvement_loop
 ---
 
 # self-improvement-loop-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[bld_config_self_improvement_loop]] | related | 0.30 |
-| [[n00_self_improvement_loop_manifest]] | related | 0.29 |
-| [[p11_fb_self_improvement_loop]] | related | 0.29 |

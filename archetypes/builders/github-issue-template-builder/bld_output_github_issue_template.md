@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [github_issue_template construction, github_issue_template, builder, output_template, markdown, example table, example code, raises zero, related artifacts, title description]
 density_score: 0.85
 related:
-  - kc_github_issue_template
   - bld_schema_github_issue_template
   - github-issue-template-builder
-  - bld_instruction_github_issue_template
-  - n00_github_issue_template_manifest
 ---
 ```markdown
 ```yaml

@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [crew_template construction, quality gate crew template, crew_template, builder, quality_gate, composable, crewai, quality gate, fail condition, scoring guide]
 density_score: 0.88
 related:
-  - bld_instruction_crew_template
   - crew-template-builder
   - bld_schema_crew_template
-  - p10_lr_crew_template_builder
-  - bld_output_template_crew_template
 ---
 ## Quality Gate
 

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [marketplace_app_manifest construction, marketplace_app_manifest, builder, quality_gate, "## anti-example 1: missing required fields", quality gate, fail condition, scoring guide, senior engineer, golden example]
 density_score: 0.85
-related:
-  - p01_qg_reranker_config
-  - p07_qg_benchmark_suite
-  - p09_qg_rbac_policy
-  - p11_qg_usage_report
-  - p05_qg_pricing_page
 ---
 ## Quality Gate
 

@@ -18,10 +18,7 @@ updated: "2026-03-27"
 density_score: 0.91
 related:
   - formatter-builder
-  - bld_instruction_formatter
-  - bld_collaboration_formatter
   - bld_architecture_formatter
-  - p05_fmt_artifact_creation_report
 ---
 ## Quality Gate
 

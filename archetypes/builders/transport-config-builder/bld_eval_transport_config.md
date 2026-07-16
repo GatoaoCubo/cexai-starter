@@ -27,10 +27,8 @@ keywords:
   - "quality gate"
 density_score: 0.90
 related:
-  - bld_output_template_transport_config
   - bld_schema_transport_config
   - transport-config-builder
-  - n00_transport_config_manifest
   - bld_architecture_transport_config
 ---
 ## Quality Gate

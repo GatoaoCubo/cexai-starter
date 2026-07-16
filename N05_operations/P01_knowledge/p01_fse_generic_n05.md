@@ -11,10 +11,7 @@ tags: [n05, operations, few_shot_example, gating_wrath, review, deploy, ci]
 keywords: [operations few shot example, operations, few_shot_example, gating_wrath, review, deploy, release-gate verdict format, failing ci and deploy evidence, structured operational verdict, medium]
 density_score: 0.95
 related:
-  - p03_sp_deploy_ops
   - p01_retr_n05
-  - p02_agent_deploy_ops
-  - p02_ra_smoke_tester.md
 ---
 <!-- 8F: F1=few_shot_example/P01 F2=few-shot-example-builder F3=nucleus_def_n05+P01_schema+kc_few_shot_example+ops examples F4=one high-signal gate verdict example
      F5=shell+apply_patch+cex_compile F6=approx-5KB dense markdown F7=self-check frontmatter+8F+80L+properties+ascii F8=N05_operations/P01_knowledge/kno_few_shot_example_n05.md -->

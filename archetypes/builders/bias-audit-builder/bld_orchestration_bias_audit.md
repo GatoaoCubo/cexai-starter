@@ -21,8 +21,6 @@ density_score: 0.85
 related:
   - bld_tools_bias_audit
   - bias-audit-builder
-  - kc_bias_audit
-  - p10_lr_bias_audit_builder
   - bld_architecture_bias_audit
 ---
 ## Crew Role  
@@ -52,6 +50,4 @@ Does NOT handle benchmarking (use `benchmark_builder`) or define single evaluati
 |----------|-------------|-------|
 | [[bld_tools_bias_audit]] | upstream | 0.42 |
 | [[bias-audit-builder]] | upstream | 0.38 |
-| [[kc_bias_audit]] | upstream | 0.38 |
-| [[p10_lr_bias_audit_builder]] | upstream | 0.37 |
 | [[bld_architecture_bias_audit]] | upstream | 0.35 |

@@ -19,10 +19,6 @@ enterprise, service level agreements, key concepts, service credits, best practi
 density_score: 0.85
 related:
   - enterprise-sla-builder
-  - p01_kc_enterprise_sla
-  - n00_enterprise_sla_manifest
-  - p11_qg_enterprise_sla
-  - p10_mem_enterprise_sla_builder
 ---
 ## Domain Overview  
 Enterprise SLAs (Service Level Agreements) define contractual obligations between service providers and consumers, ensuring alignment on performance, availability, and support expectations. They are critical in cloud computing, SaaS, and IT outsourcing, where downtime, latency, and response times directly impact business operations. SLAs typically include metrics like uptime percentages (e.g., 99.9%), latency thresholds (e.g., <100ms), and support SLAs (e.g., 24/7 escalation paths). These agreements balance accountability with flexibility, often incorporating service credits or penalties for non-compliance.  
@@ -82,7 +78,3 @@ Error budget = 1 - SLO target. Example: 99.9% SLO = 0.1% error budget = 43.8 min
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[enterprise-sla-builder]] | downstream | 0.58 |
-| [[p01_kc_enterprise_sla]] | sibling | 0.44 |
-| [[n00_enterprise_sla_manifest]] | sibling | 0.40 |
-| [[p11_qg_enterprise_sla]] | downstream | 0.39 |
-| [[p10_mem_enterprise_sla_builder]] | downstream | 0.39 |

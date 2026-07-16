@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [onboarding_flow construction, output template onboarding flow, onboarding_flow, builder, output_template, onboarding flow, related artifacts, action_ description_, draft review, review approved]
 density_score: 0.85
 related:
-  - bld_output_template_playground_config
-  - bld_output_template_multimodal_prompt
-  - bld_output_template_integration_guide
   - bld_config_onboarding_flow
-  - bld_output_template_sales_playbook
 ---
 ```markdown
 ---

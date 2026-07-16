@@ -13,11 +13,7 @@ when_to_use: "Load when choosing how to dispatch a task (parallel vs sequential,
 keywords: [claude opus, aider grid, aider crew, aider sweep, aider cascade, parallel execution, sequential execution, context window, resource throttling, batch processing]
 density_score: 1.0
 related:
-  - kc_workflow_run_crate
   - kc_8f_pipeline_implementation
-  - p01_kc_atom_28_code_agents
-  - p01_kc_batching
-  - n06_hybrid_review2_final
 ---
 
 # CEX Dispatch Modes Comparison

@@ -19,10 +19,7 @@ keywords: [kind builder construction, schema kind builder, schema for builder pa
 density_score: 0.90
 related:
   - bld_architecture_kind
-  - p06_td_cex_artifact_type_n03
-  - bld_instruction_kind
   - kind-builder
-  - p11_qg_kind_builder
 ---
 # Schema: kind_builder
 
@@ -87,7 +84,4 @@ In addition to the 13 ISOs, a builder package requires:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_kind]] | downstream | 0.47 |
-| [[p06_td_cex_artifact_type_n03]] | related | 0.46 |
-| [[bld_instruction_kind]] | upstream | 0.43 |
 | [[kind-builder]] | downstream | 0.40 |
-| [[p11_qg_kind_builder]] | downstream | 0.39 |

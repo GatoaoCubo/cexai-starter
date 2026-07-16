@@ -32,9 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - working-memory-builder
-  - bld_collaboration_working_memory
-  - p01_kc_working_memory
-  - p10_qg_working_memory
   - bld_architecture_episodic_memory
 ---
 ## Component Inventory
@@ -93,7 +90,4 @@ working_memory      --discards-->    on clear_on_complete: clear
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[working-memory-builder]] | downstream | 0.71 |
-| [[bld_collaboration_working_memory]] | downstream | 0.58 |
-| [[p01_kc_working_memory]] | downstream | 0.52 |
-| [[p10_qg_working_memory]] | downstream | 0.49 |
 | [[bld_architecture_episodic_memory]] | sibling | 0.49 |

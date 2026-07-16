@@ -19,11 +19,8 @@ updated: "2026-04-17"
 keywords: [openapi spec construction, collaboration openapi spec, api contract specialist, openapi_spec, builder, collaboration, "### crew: integration package", "### crew: api gateway configuration", my role, crew compositions]
 density_score: 0.90
 related:
-  - bld_collaboration_event_schema
   - kc_openapi_spec
   - openapi-spec-builder
-  - bld_knowledge_card_openapi_spec
-  - bld_collaboration_client
 ---
 # Collaboration: openapi-spec-builder
 ## My Role in Crews
@@ -95,4 +92,3 @@ related:
 | [[kc_openapi_spec]] | upstream | 0.36 |
 | [[openapi-spec-builder]] | upstream | 0.36 |
 | [[bld_knowledge_openapi_spec]] | upstream | 0.34 |
-| [[bld_collaboration_client]] | sibling | 0.32 |

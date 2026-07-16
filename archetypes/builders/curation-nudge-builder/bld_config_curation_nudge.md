@@ -17,10 +17,6 @@ tldr: "P09 config knobs for curation_nudge builder"
 keywords: [curation_nudge construction, curation nudge builder, config, curation_nudge, builder, memory, cn_trigger_type, turn_count, cn_threshold]
 density_score: 0.87
 related:
- - bld_kc_curation_nudge
- - kc_curation_nudge
- - p11_mem_curation_nudge
- - p11_ins_curation_nudge
  - curation-nudge-builder
 ---
 ## Builder Configuration
@@ -87,8 +83,4 @@ builder_config:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_kc_curation_nudge]] | upstream | 0.41 |
-| [[kc_curation_nudge]] | upstream | 0.40 |
-| [[p11_mem_curation_nudge]] | upstream | 0.39 |
-| [[p11_ins_curation_nudge]] | related | 0.38 |
 | [[curation-nudge-builder]] | related | 0.37 |

@@ -26,11 +26,7 @@ title: "Memory Effort Profile"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_effort_profile
   - effort-profile-builder
-  - p11_qg_effort_profile
-  - bld_collaboration_effort_profile
-  - bld_instruction_effort_profile
 ---
 ## Summary
 Effort and thinking level configuration for builder execution — maps builder to model and reasoning depth.
@@ -78,8 +74,4 @@ python _tools/cex_score.py --apply p10-lr-effort-profile-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_effort_profile]] | upstream | 0.51 |
 | [[effort-profile-builder]] | upstream | 0.45 |
-| [[p11_qg_effort_profile]] | downstream | 0.38 |
-| [[bld_collaboration_effort_profile]] | downstream | 0.36 |
-| [[bld_instruction_effort_profile]] | upstream | 0.35 |

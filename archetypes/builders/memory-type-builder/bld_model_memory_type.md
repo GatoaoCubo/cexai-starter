@@ -28,9 +28,7 @@ L3: When user needs to define, extend, or audit the memory type taxonomy.
 related:
   - bld_tools_memory_type
   - bld_config_memory_type
-  - bld_collaboration_memory_type
   - bld_memory_memory_type
-  - bld_knowledge_card_memory_type
 ---
 ## Identity
 
@@ -141,6 +139,4 @@ Your memory_type artifacts must define:
 |----------|-------------|-------|
 | [[bld_tools_memory_type]] | downstream | 0.48 |
 | [[bld_config_memory_type]] | downstream | 0.45 |
-| [[bld_collaboration_memory_type]] | downstream | 0.41 |
 | [[bld_memory_memory_type]] | downstream | 0.35 |
-| [[bld_knowledge_card_memory_type]] | upstream | 0.35 |

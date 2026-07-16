@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - formatter-builder
-  - bld_instruction_action_prompt
-  - p10_lr_formatter_builder
-  - bld_instruction_golden_test
-  - bld_instruction_few_shot_example
 ---
 # Instructions: How to Produce a formatter
 ## Phase 1: RESEARCH
@@ -102,6 +98,5 @@ python _tools/cex_skill_loader.py --verify formatter
 |----------|-------------|-------|
 | [[formatter-builder]] | downstream | 0.41 |
 | [[bld_prompt_action_prompt]] | sibling | 0.40 |
-| [[p10_lr_formatter_builder]] | downstream | 0.38 |
 | [[bld_prompt_golden_test]] | sibling | 0.37 |
 | [[bld_prompt_few_shot_example]] | sibling | 0.35 |

@@ -35,9 +35,6 @@ parent: null
 density_score: 1.0
 related:
  - kc_context_file
- - bld_knowledge_card_context_file
- - n00_context_file_manifest
- - bld_collaboration_context_file
  - bld_memory_context_file
 ---
 ## Identity

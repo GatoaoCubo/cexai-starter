@@ -19,10 +19,7 @@ keywords: [template with, for benchmark production, benchmark construction, outp
 density_score: 0.90
 related:
   - bld_schema_benchmark
-  - bld_instruction_benchmark
   - benchmark-builder
-  - p11_qg_benchmark
-  - bld_knowledge_card_benchmark
 ---
 # Output Template: benchmark
 ```yaml
@@ -87,7 +84,4 @@ linked_artifacts:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_benchmark]] | downstream | 0.44 |
-| [[bld_instruction_benchmark]] | upstream | 0.43 |
 | [[benchmark-builder]] | downstream | 0.42 |
-| [[p11_qg_benchmark]] | downstream | 0.40 |
-| [[bld_knowledge_card_benchmark]] | upstream | 0.40 |

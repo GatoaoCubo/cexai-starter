@@ -16,9 +16,7 @@ updated: "2026-04-13"
 keywords: [model_architecture construction, output template model architecture, model_architecture, output_template, builder, output template, design goal, layer structure, layer type, hidden dim]
 density_score: 0.88
 related:
-  - bld_instruction_model_architecture
   - bld_schema_model_architecture
-  - p11_qg_model_architecture
   - bld_config_model_architecture
   - model-architecture-builder
 ---
@@ -89,8 +87,6 @@ tldr: "{{One-sentence description of architecture}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_model_architecture]] | upstream | 0.39 |
 | [[bld_schema_model_architecture]] | downstream | 0.39 |
-| [[p11_qg_model_architecture]] | downstream | 0.33 |
 | [[bld_config_model_architecture]] | downstream | 0.31 |
 | [[model-architecture-builder]] | upstream | 0.31 |

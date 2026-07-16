@@ -27,11 +27,7 @@ keywords:
 density_score: 1.0
 title: Quality Gate ISO - notifier
 related:
-  - bld_instruction_notifier
-  - bld_output_template_notifier
   - notifier-builder
-  - p04_notify_slack
-  - n00_notifier_manifest
 ---
 ## Quality Gate
 

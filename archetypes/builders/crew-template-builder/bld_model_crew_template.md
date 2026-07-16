@@ -18,12 +18,6 @@ keywords: [builder identity, routing for crew_template, crew_template constructi
 density_score: 0.88
 isolation: worktree
 isolation_reason: "crew templates spawn N role_assignments + team_charter at once and orchestrate multi-agent handoffs; worktree lets grid-of-crews experiments run without polluting main"
-related:
-  - bld_instruction_crew_template
-  - bld_knowledge_card_crew_template
-  - bld_collaboration_crew_template
-  - p11_qg_crew_template
-  - n00_role_assignment_manifest
 ---
 ## Identity
 
@@ -75,5 +69,4 @@ NEVER mix handoff-protocols within one crew (keep transfer format consistent acr
 | [[bld_prompt_crew_template]] | upstream | 0.54 |
 | [[bld_knowledge_crew_template]] | upstream | 0.53 |
 | [[bld_orchestration_crew_template]] | related | 0.50 |
-| [[p11_qg_crew_template]] | upstream | 0.41 |
 | n00_role_assignment_manifest | upstream | 0.39 |

@@ -18,10 +18,7 @@ keywords: [conformity_assessment construction, naming convention p, output path 
 density_score: 0.85
 related:
   - bld_tools_conformity_assessment
-  - bld_collaboration_conformity_assessment
   - bld_architecture_conformity_assessment
-  - bld_output_template_conformity_assessment
-  - p05_cg_cex
 ---
 # Conformity Assessment Builder -- Config
 
@@ -138,7 +135,4 @@ git commit -m "[N03] conformity_assessment: {{system_name}} v{{version}} (Annex 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_conformity_assessment]] | upstream | 0.44 |
-| [[bld_collaboration_conformity_assessment]] | downstream | 0.35 |
 | [[bld_architecture_conformity_assessment]] | upstream | 0.25 |
-| [[bld_output_template_conformity_assessment]] | upstream | 0.24 |
-| [[p05_cg_cex]] | upstream | 0.23 |

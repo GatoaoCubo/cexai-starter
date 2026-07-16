@@ -23,8 +23,6 @@ updated: '2026-03-27'
 keywords: [workflow, dependency ordering, steps, execution, signals]
 density_score: 0.85
 related:
-  - p01_kc_workflow
-  - bld_knowledge_card_workflow
   - bld_memory_workflow
   - bld_architecture_workflow
   - workflow-builder
@@ -138,8 +136,6 @@ WHY THIS IS GOLDEN:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_workflow]] | related | 0.47 |
-| [[bld_knowledge_card_workflow]] | upstream | 0.47 |
 | [[bld_memory_workflow]] | upstream | 0.46 |
 | [[bld_architecture_workflow]] | upstream | 0.42 |
 | [[workflow-builder]] | related | 0.42 |

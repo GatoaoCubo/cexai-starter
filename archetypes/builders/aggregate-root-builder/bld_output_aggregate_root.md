@@ -16,9 +16,7 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_aggregate_root
-  - bld_instruction_aggregate_root
   - bld_memory_aggregate_root
-  - bld_manifest_aggregate_root
   - bld_architecture_aggregate_root
 ---
 # Output Template: aggregate_root
@@ -104,7 +102,5 @@ python _tools/cex_doctor.py --scope {BUILDER}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_aggregate_root]] | related | 0.43 |
-| [[bld_instruction_aggregate_root]] | related | 0.42 |
 | [[bld_memory_aggregate_root]] | related | 0.37 |
-| [[bld_manifest_aggregate_root]] | related | 0.37 |
 | [[bld_architecture_aggregate_root]] | related | 0.35 |

@@ -4,10 +4,7 @@ description: "Builds ONE trace_config artifact via 8F pipeline. Loads trace-conf
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p03_sp_n03_creation_nucleus
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |
-| [[p03_sp_n03_creation_nucleus]] | related | 0.30 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |
 | [[system-prompt-builder]] | related | 0.26 |

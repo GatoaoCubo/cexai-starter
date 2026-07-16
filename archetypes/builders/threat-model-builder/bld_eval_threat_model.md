@@ -20,8 +20,6 @@ updated: "2026-04-13"
 keywords: [threat_model, STRIDE, quality gate, risk scoring, mitigation]
 density_score: 0.85
 related:
-  - bld_output_template_threat_model
-  - bld_instruction_threat_model
   - bld_schema_threat_model
   - bld_tools_threat_model
   - threat-model-builder
@@ -150,8 +148,6 @@ Focuses on governance rules (safety policy) rather than assessing risks or threa
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_threat_model]] | upstream | 0.66 |
-| [[bld_instruction_threat_model]] | upstream | 0.53 |
 | [[bld_schema_threat_model]] | upstream | 0.53 |
 | [[bld_tools_threat_model]] | upstream | 0.53 |
 | [[threat-model-builder]] | related | 0.53 |

@@ -21,10 +21,7 @@ reviewed, related artifacts, resource scopes]
 density_score: 0.85
 related:
   - rbac-policy-builder
-  - bld_knowledge_card_rbac_policy
   - kc_rbac_policy
-  - bld_instruction_rbac_policy
-  - p09_qg_rbac_policy
 ---
 ## Observation
 Misaligned role hierarchies often cause unintended access overlaps, while overly broad resource scopes break tenant isolation. Policies frequently omit explicit tenant identifiers, leading to cross-tenant data exposure.
@@ -49,4 +46,3 @@ Reviewed policies using "tenant-abc-admin" roles with restricted resource paths 
 | [[bld_knowledge_rbac_policy]] | upstream | 0.50 |
 | [[kc_rbac_policy]] | upstream | 0.50 |
 | [[bld_prompt_rbac_policy]] | upstream | 0.49 |
-| [[p09_qg_rbac_policy]] | downstream | 0.43 |

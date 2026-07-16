@@ -19,10 +19,6 @@ keywords: [boot config construction, instruction boot config, boot_config, build
 density_score: 0.90
 related:
   - boot-config-builder
-  - bld_instruction_agent
-  - p11_qg_boot_config
-  - bld_knowledge_card_boot_config
-  - bld_collaboration_boot_config
 ---
 # Instructions: How to Produce a boot_config
 ## Phase 1: RESEARCH
@@ -87,6 +83,5 @@ python _tools/cex_skill_loader.py --verify boot
 |----------|-------------|-------|
 | [[boot-config-builder]] | upstream | 0.50 |
 | [[bld_prompt_agent]] | sibling | 0.43 |
-| [[p11_qg_boot_config]] | downstream | 0.39 |
 | [[bld_knowledge_boot_config]] | upstream | 0.38 |
 | [[bld_orchestration_boot_config]] | downstream | 0.38 |

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [not runtime, workflow_node construction, quality gate workflow node, body sections, not runtime behavior, workflow_node, builder, quality_gate, "## anti-example 1: missing type specification", quality gate]
 density_score: 0.90
 related:
-  - n00_workflow_node_manifest
-  - p11_qg_workflow_primitive
-  - bld_output_template_workflow_node
   - bld_schema_workflow_node
-  - p11_qg_content_filter
 ---
 ## Quality Gate
 

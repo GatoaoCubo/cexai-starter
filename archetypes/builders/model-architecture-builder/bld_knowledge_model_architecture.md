@@ -16,11 +16,7 @@ updated: "2026-04-13"
 keywords: [model_architecture construction, knowledge card, architecture types, layer patterns, and compute profiles, model_architecture, knowledge_card, deep_learning, architecture type reference, core mechanism]
 density_score: 0.88
 related:
-  - p10_lr_model_architecture_builder
-  - bld_instruction_model_architecture
   - model-architecture-builder
-  - bld_output_template_model_architecture
-  - p11_qg_model_architecture
 ---
 # Knowledge: model_architecture
 
@@ -73,8 +69,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_model_architecture_builder]] | downstream | 0.42 |
-| [[bld_instruction_model_architecture]] | downstream | 0.36 |
 | [[model-architecture-builder]] | downstream | 0.36 |
-| [[bld_output_template_model_architecture]] | downstream | 0.35 |
-| [[p11_qg_model_architecture]] | downstream | 0.34 |

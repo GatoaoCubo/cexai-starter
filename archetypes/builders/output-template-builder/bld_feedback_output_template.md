@@ -16,11 +16,7 @@ density_score: 0.86
 created: "2026-07-07"
 updated: "2026-07-07"
 related:
-  - p11_qg_output_template
-  - p11_fb_field_manifest
-  - p11_fb_kind
   - bld_schema_output_template
-  - p10_lr_output_template_builder
 ---
 # Feedback: Output Template
 
@@ -94,8 +90,6 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_output_template]] | sibling | 0.80 |
 | p11_fb_field_manifest | sibling | 0.72 |
 | p11_fb_kind | sibling (reflexive-case source) | 0.70 |
 | [[bld_schema_output_template]] | related | 0.60 |
-| [[p10_lr_output_template_builder]] | sibling | 0.55 |

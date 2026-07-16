@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - parser-builder
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_architecture_parser
-  - n00_parser_manifest
 ---
 
 # parser-builder Sub-Agent

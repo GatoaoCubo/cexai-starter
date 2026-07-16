@@ -20,8 +20,6 @@ related:
   - bld_tools_vad_config
   - bld_tools_prosody_config
   - bld_tools_ab_test_config
-  - bld_collaboration_oauth_app_config
-  - oauth-app-config-builder
 ---
 ## Production Tools
 | Tool | Purpose | When |
@@ -53,4 +51,3 @@ related:
 | bld_tools_prosody_config | sibling | 0.29 |
 | bld_tools_ab_test_config | sibling | 0.28 |
 | [[bld_orchestration_oauth_app_config]] | downstream | 0.27 |
-| [[oauth-app-config-builder]] | downstream | 0.26 |

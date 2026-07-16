@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [interface construction, collaboration interface, interface, builder, examples, "### crew: contract stack", my role, crew compositions, integration design, contract stack]
 density_score: 0.90
 related:
-  - bld_collaboration_input_schema
   - interface-builder
-  - bld_collaboration_component_map
-  - bld_collaboration_client
-  - bld_collaboration_validation_schema
 ---
 # Collaboration: interface-builder
 ## My Role in Crews
@@ -67,8 +63,4 @@ I specify bilateral integration contracts so agents and systems interoperate rel
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_input_schema]] | sibling | 0.44 |
 | [[interface-builder]] | upstream | 0.41 |
-| [[bld_collaboration_component_map]] | sibling | 0.35 |
-| [[bld_collaboration_client]] | sibling | 0.31 |
-| [[bld_collaboration_validation_schema]] | sibling | 0.31 |

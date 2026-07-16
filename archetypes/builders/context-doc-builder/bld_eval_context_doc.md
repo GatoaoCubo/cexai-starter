@@ -16,11 +16,7 @@ updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.91
 related:
-  - bld_output_template_context_doc
-  - p11_qg_quality_gate
   - context-doc-builder
-  - p11_qg_kind_builder
-  - p11_qg_cli_tool
 ---
 ## Quality Gate
 

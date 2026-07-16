@@ -31,7 +31,6 @@ related:
   - bld_schema_field_manifest
   - bld_config_input_schema
   - bld_config_type_def
-  - bld_output_template_field_manifest
   - bld_config_supabase_data_layer
 ---
 # Config: field_manifest Production Rules
@@ -107,5 +106,4 @@ python _tools/cex_score.py --apply bld-config-field-manifest.md
 | [[bld_schema_field_manifest]] | upstream | 0.42 |
 | [[bld_config_input_schema]] | sibling | 0.38 |
 | [[bld_config_type_def]] | sibling | 0.36 |
-| [[bld_output_template_field_manifest]] | upstream | 0.33 |
 | [[bld_config_supabase_data_layer]] | sibling | 0.30 |

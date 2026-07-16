@@ -20,9 +20,6 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_instruction_sandbox_spec
-  - kc_sandbox_spec
-  - p10_lr_sandbox_spec_builder
   - sandbox-config-builder
   - playground-config-builder
 ---
@@ -69,8 +66,5 @@ NEVER INCLUDE INTERACTIVE ELEMENTS OR PRODUCTION-READY CONFIGURATIONS.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_sandbox_spec]] | upstream | 0.56 |
-| [[kc_sandbox_spec]] | upstream | 0.52 |
-| [[p10_lr_sandbox_spec_builder]] | downstream | 0.49 |
 | [[sandbox-config-builder]] | sibling | 0.46 |
 | [[playground-config-builder]] | sibling | 0.44 |

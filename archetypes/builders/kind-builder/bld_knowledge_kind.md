@@ -19,7 +19,6 @@ keywords: [iso pattern, kind builder construction, knowledge card kind builder, 
 density_score: 0.90
 related:
   - bld_architecture_kind
-  - p06_td_cex_artifact_type_n03
   - kind-builder
   - bld_schema_kind
 ---
@@ -121,6 +120,5 @@ cex_skill_loader.py discovers builders by:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_kind]] | downstream | 0.50 |
-| [[p06_td_cex_artifact_type_n03]] | downstream | 0.41 |
 | [[kind-builder]] | downstream | 0.40 |
 | [[bld_schema_kind]] | downstream | 0.38 |

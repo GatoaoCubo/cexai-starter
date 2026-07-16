@@ -19,10 +19,6 @@ white, key concepts, accessibility guidelines, branding assets, brand management
 density_score: 0.85
 related:
   - white-label-config-builder
-  - p10_mem_white_label_config_builder
-  - n00_white_label_config_manifest
-  - p11_qg_white_label_config
-  - bld_instruction_white_label_config
 ---
 ## Domain Overview  
 White-label configurations enable SaaS providers to deliver customizable, rebrandable deployments for resellers or enterprise clients. These configurations typically isolate branding, UI/UX, and API integrations from core product logic, allowing resellers to embed the service into their own ecosystems without exposing underlying infrastructure. Key focus areas include dynamic theming, API endpoint customization, and secure credential management. Unlike brand_config (identity-related settings) or env_config (runtime parameters), white_label_config prioritizes reseller-specific overrides while maintaining product integrity.  
@@ -83,7 +79,5 @@ White-label platforms commonly use Stripe Connect to manage reseller billing:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[white-label-config-builder]] | downstream | 0.60 |
-| [[p10_mem_white_label_config_builder]] | downstream | 0.46 |
 | n00_white_label_config_manifest | sibling | 0.43 |
-| [[p11_qg_white_label_config]] | downstream | 0.36 |
 | [[bld_prompt_white_label_config]] | downstream | 0.31 |

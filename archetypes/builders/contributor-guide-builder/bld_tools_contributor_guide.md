@@ -30,10 +30,7 @@ keywords:
   - "(if available) | exit 0 | | id pattern | python:"
 density_score: 0.85
 related:
-  - bld_instruction_contributor_guide
   - contributor-guide-builder
-  - p05_cg_cexai_showcase
-  - p05_qg_contributor_guide
   - bld_tools_event_schema
 ---
 ## Production Tools
@@ -85,8 +82,5 @@ They do not require separate tool files.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_contributor_guide]] | upstream | 0.35 |
 | [[contributor-guide-builder]] | downstream | 0.33 |
-| [[p05_cg_cexai_showcase]] | downstream | 0.33 |
-| [[p05_qg_contributor_guide]] | downstream | 0.32 |
 | [[bld_tools_event_schema]] | sibling | 0.31 |

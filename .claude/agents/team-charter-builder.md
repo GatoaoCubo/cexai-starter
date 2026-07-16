@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - team-charter-builder
   - kind-builder
-  - n00_team_charter_manifest
-  - p03_sp_builder_nucleus
   - kc_team_charter
 ---
 

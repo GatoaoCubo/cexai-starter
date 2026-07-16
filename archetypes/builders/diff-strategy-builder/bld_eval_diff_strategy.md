@@ -27,9 +27,6 @@ keywords:
   - "p04_ds_[a-za-z0-9_-]+"
 density_score: 0.90
 related:
-  - bld_knowledge_card_diff_strategy
-  - bld_output_template_diff_strategy
-  - bld_instruction_diff_strategy
   - diff-strategy-builder
   - bld_tools_diff_strategy
 ---

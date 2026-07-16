@@ -28,7 +28,6 @@ related:
   - bld_feedback_tokenizer_config
   - tokenizer-config-builder
   - bld_orchestration_tokenizer_config
-  - kc_tokenizer_config
   - bld_prompt_tokenizer_config
 ---
 ## Summary
@@ -65,5 +64,4 @@ Patterns derived from builder runs, quality gate failures, and peer review feedb
 | [[bld_feedback_tokenizer_config]] | downstream | 0.55 |
 | [[tokenizer-config-builder]] | upstream | 0.54 |
 | [[bld_orchestration_tokenizer_config]] | downstream | 0.47 |
-| [[kc_tokenizer_config]] | upstream | 0.45 |
 | [[bld_prompt_tokenizer_config]] | upstream | 0.43 |

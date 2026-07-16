@@ -24,8 +24,6 @@ related:
   - bld_architecture_rag_source
   - bld_memory_rag_source
   - rag-source-builder
-  - p03_ins_rag_source
-  - bld_knowledge_card_rag_source
 ---
 
 # RAG Source
@@ -101,5 +99,4 @@ A rag_source is a pointer to an external indexable document — it stores the UR
 | [[bld_architecture_rag_source]] | downstream | 0.49 |
 | [[bld_memory_rag_source]] | downstream | 0.49 |
 | [[rag-source-builder]] | related | 0.46 |
-| [[p03_ins_rag_source]] | related | 0.44 |
 | [[bld_knowledge_rag_source]] | sibling | 0.42 |

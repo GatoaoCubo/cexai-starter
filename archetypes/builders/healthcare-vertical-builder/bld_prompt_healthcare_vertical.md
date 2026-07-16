@@ -18,10 +18,6 @@ keywords: [healthcare_vertical construction, instruction healthcare vertical, he
 density_score: 0.85
 related:
   - healthcare-vertical-builder
-  - bld_knowledge_card_healthcare_vertical
-  - p01_qg_healthcare_vertical
-  - p10_mem_healthcare_vertical_builder
-  - kc_healthcare_vertical
 ---
 ## Phase 1: RESEARCH  
 1. Study HIPAA compliance requirements for data encryption and access controls.  
@@ -54,7 +50,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[healthcare-vertical-builder]] | upstream | 0.55 |
-| [[bld_knowledge_card_healthcare_vertical]] | upstream | 0.54 |
-| [[p01_qg_healthcare_vertical]] | downstream | 0.47 |
-| [[p10_mem_healthcare_vertical_builder]] | downstream | 0.46 |
-| [[kc_healthcare_vertical]] | upstream | 0.43 |

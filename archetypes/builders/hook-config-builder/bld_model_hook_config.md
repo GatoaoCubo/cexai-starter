@@ -28,11 +28,8 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_hook_config
-  - p11_qg_hook_config
   - bld_architecture_hook_config
   - hook-builder
-  - bld_instruction_hook_config
 ---
 ## Identity
 
@@ -128,8 +125,5 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_hook_config]] | downstream | 0.61 |
-| [[p11_qg_hook_config]] | downstream | 0.58 |
 | [[bld_architecture_hook_config]] | downstream | 0.56 |
 | [[hook-builder]] | sibling | 0.55 |
-| [[bld_instruction_hook_config]] | upstream | 0.53 |

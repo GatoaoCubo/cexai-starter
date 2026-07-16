@@ -29,7 +29,6 @@ updated: "2026-04-18"
 keywords: [naming conventions, file paths, size limits, operational constraints for user_model, user model construction, user_model production rules, storage enum, collection rules, user_model, builder]
 density_score: 0.90
 related:
-  - bld_instruction_user_model
   - bld_schema_user_model
   - bld_config_constraint_spec
   - bld_config_memory_scope

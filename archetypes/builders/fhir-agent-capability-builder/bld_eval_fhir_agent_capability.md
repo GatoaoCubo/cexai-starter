@@ -17,10 +17,8 @@ updated: "2026-04-14"
 keywords: [fhir_agent_capability construction, fhir_agent_capability, builder, quality_gate, fhir, hipaa, '^p08_fhir_[a-z][a-z0-9_]+\.md$']
 density_score: 0.85
 related:
-  - bld_instruction_fhir_agent_capability
   - bld_schema_fhir_agent_capability
   - fhir-agent-capability-builder
-  - bld_knowledge_card_fhir_agent_capability
   - healthcare_vertical_fhir_workflows
 ---
 ## Quality Gate

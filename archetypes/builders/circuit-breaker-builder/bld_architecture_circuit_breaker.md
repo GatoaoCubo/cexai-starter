@@ -31,10 +31,6 @@ keywords:
 density_score: 0.90
 related:
   - circuit-breaker-builder
-  - bld_knowledge_card_circuit_breaker
-  - p01_kc_circuit_breaker
-  - p11_qg_circuit_breaker
-  - bld_output_template_circuit_breaker
 ---
 ## Component Inventory
 
@@ -105,7 +101,3 @@ runtime_rule            --parallel-->   (retry after failure, not circuit)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[circuit-breaker-builder]] | downstream | 0.62 |
-| [[bld_knowledge_card_circuit_breaker]] | upstream | 0.60 |
-| [[p01_kc_circuit_breaker]] | downstream | 0.56 |
-| [[p11_qg_circuit_breaker]] | downstream | 0.55 |
-| [[bld_output_template_circuit_breaker]] | upstream | 0.54 |

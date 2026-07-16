@@ -18,8 +18,6 @@ density_score: null
 related:
   - p01_kc_gstack_cex_gap_analysis
   - p01_kc_gstack_attribution_ledger
-  - p04_cli_media_pipeline_n05
-  - spec_design_system_assimilation
 ---
 
 ## Section 1 -- HyperFrames: What It Is + Net-New Verdict

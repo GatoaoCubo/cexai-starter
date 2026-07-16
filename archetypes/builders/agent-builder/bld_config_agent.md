@@ -30,7 +30,6 @@ density_score: 0.90
 related:
   - agent-builder
   - bld_config_system_prompt
-  - bld_instruction_agent
   - bld_config_agent_package
   - bld_schema_agent
 ---

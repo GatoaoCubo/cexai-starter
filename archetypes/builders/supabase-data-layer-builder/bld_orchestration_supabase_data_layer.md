@@ -16,11 +16,7 @@ keywords: [supabase data layer builder, supabase data layer orchestration, workf
 density_score: 1.0
 llm_function: COLLABORATE
 related:
-  - p01_kc_supabase_data_layer_n04
   - bld_architecture_supabase_data_layer
-  - p12_dag_mission_supabase_data_layer_n07
-  - p12_dispatch_rule_supabase
-  - n00_p01_kind_index
 ---
 # Collaboration Map
 
@@ -72,8 +68,4 @@ Nucleus request → N04 reviews → schema change? → migration + RLS → deplo
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_supabase_data_layer_n04]] | upstream | 0.63 |
 | [[bld_architecture_supabase_data_layer]] | upstream | 0.58 |
-| [[p12_dag_mission_supabase_data_layer_n07]] | related | 0.53 |
-| [[p12_dispatch_rule_supabase]] | related | 0.50 |
-| [[n00_p01_kind_index]] | upstream | 0.45 |

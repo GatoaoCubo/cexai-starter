@@ -29,7 +29,6 @@ keywords: [limits for response_format production, response format construction, 
 density_score: 0.90
 related:
   - bld_config_validation_schema
-  - bld_collaboration_response_format
   - bld_schema_response_format
   - bld_config_quality_gate
   - bld_config_retriever_config

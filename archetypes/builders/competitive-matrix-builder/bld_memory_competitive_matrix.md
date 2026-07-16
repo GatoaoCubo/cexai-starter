@@ -21,10 +21,6 @@ reviewed, related artifacts, focus differentiators]
 density_score: 0.85
 related:
   - competitive-matrix-builder
-  - bld_instruction_competitive_matrix
-  - p10_mem_eval_metric_builder
-  - p10_mem_case_study_builder
-  - bld_collaboration_competitive_matrix
 ---
 ## Observation
 Competitive matrices often lack focus on differentiators, leading to bloated comparisons. Inconsistent metrics and vague feature descriptions reduce clarity for sales/procurement teams.
@@ -47,6 +43,5 @@ Reviewed artifacts showed matrices aligned with procurement eval criteria had 30
 |----------|-------------|-------|
 | [[competitive-matrix-builder]] | upstream | 0.29 |
 | [[bld_prompt_competitive_matrix]] | upstream | 0.26 |
-| [[p10_mem_eval_metric_builder]] | sibling | 0.24 |
 | p10_mem_case_study_builder | sibling | 0.22 |
 | [[bld_orchestration_competitive_matrix]] | downstream | 0.21 |

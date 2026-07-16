@@ -17,11 +17,7 @@ updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.85
 related:
-  - p11_qg_model_provider
-  - p06_bp_model_card
   - model-card-builder
-  - p11_qg_embedder_provider
-  - n00_model_card_manifest
 ---
 ## Quality Gate
 

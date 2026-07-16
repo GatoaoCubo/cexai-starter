@@ -20,7 +20,6 @@ density_score: 0.91
 related:
   - kc_user_model
   - user-model-builder
-  - bld_collaboration_user_model
   - bld_architecture_user_model
 ---
 # Domain Knowledge: user_model

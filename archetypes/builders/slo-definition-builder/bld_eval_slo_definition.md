@@ -28,12 +28,6 @@ keywords:
   - "### h_related: cross-reference check (hard) - [ ]"
   - "quality gate"
 density_score: null
-related:
-  - kc_slo_definition
-  - bld_output_template_slo_definition
-  - bld_manifest_slo_definition
-  - bld_knowledge_card_slo_definition
-  - bld_instruction_slo_definition
 ---
 ## Quality Gate
 

@@ -33,10 +33,6 @@ keywords:
 density_score: 0.88
 related:
   - boot-config-builder
-  - bld_instruction_boot_config
-  - bld_knowledge_card_boot_config
-  - p01_kc_boot_config
-  - bld_collaboration_boot_config
 ---
 ## Quality Gate
 

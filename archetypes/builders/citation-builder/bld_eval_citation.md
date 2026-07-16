@@ -30,10 +30,6 @@ keywords:
   - "reliability"
 density_score: 0.90
 related:
-  - p01_kc_citation
-  - p11_qg_golden_test
-  - bld_instruction_citation
-  - bld_output_template_citation
   - bld_schema_citation
 ---
 ## Quality Gate

@@ -18,10 +18,6 @@ keywords: [prompt_technique construction, instruction prompt technique, prompt_t
 density_score: 0.85
 related:
   - bld_config_prompt_technique
-  - bld_collaboration_prompt_technique
-  - bld_instruction_playground_config
-  - n00_prompt_technique_manifest
-  - bld_instruction_edit_format
 ---
 ## Phase 1: RESEARCH  
 1. Identify target domain (e.g., code generation, data analysis).  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_prompt_technique]] | downstream | 0.32 |
-| [[bld_collaboration_prompt_technique]] | downstream | 0.24 |
-| [[bld_instruction_playground_config]] | sibling | 0.24 |
-| [[n00_prompt_technique_manifest]] | related | 0.24 |
-| [[bld_instruction_edit_format]] | sibling | 0.23 |

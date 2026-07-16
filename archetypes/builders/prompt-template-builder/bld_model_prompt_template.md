@@ -33,10 +33,7 @@ parent: null
 8f: "F3_inject"
 keywords: [manifest prompt template, demonstrating ideal, prompt_template, "{{variables}}", "{{var}}", [var], apply mustache]
 related:
-  - bld_collaboration_prompt_template
-  - bld_knowledge_card_prompt_template
   - bld_memory_prompt_template
-  - p03_ins_prompt_template
   - bld_architecture_prompt_template
 ---
 ## Identity
@@ -117,5 +114,4 @@ You are fluent in Mustache `{{var}}`, Jinja2 `{{ var }}`, LangChain `{var}`, DSP
 | [[bld_orchestration_prompt_template]] | related | 0.57 |
 | [[bld_knowledge_prompt_template]] | upstream | 0.55 |
 | [[bld_memory_prompt_template]] | downstream | 0.54 |
-| [[p03_ins_prompt_template]] | related | 0.52 |
 | [[bld_architecture_prompt_template]] | downstream | 0.45 |

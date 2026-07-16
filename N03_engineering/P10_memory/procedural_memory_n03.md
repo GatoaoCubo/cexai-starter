@@ -17,12 +17,7 @@ tldr: "N03 task procedure memory: step-by-step SOPs for the 8F build flow, build
 keywords: [engineering, procedural memory -- n, standard operating procedures, 8f build flow, builder iso loading, compile after save, peer review handoff, frozen kind moat, procedural_memory]
 density_score: null
 related:
-  - rule_n03_builder
-  - p08_pat_construction_triad
-  - revision_loop_policy_n03
-  - p10_lr_call_site_migration
   - agent_card_n03
-  - p01_kc_construction_laws
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_new_nucleus. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
@@ -247,7 +242,6 @@ pillar dirs.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[rule_n03_builder]] | upstream | 0.40 |
 | p08_pat_construction_triad | upstream | 0.36 |
 | revision_loop_policy_n03 | related | 0.33 |
 | p10_lr_call_site_migration | sibling | 0.29 |

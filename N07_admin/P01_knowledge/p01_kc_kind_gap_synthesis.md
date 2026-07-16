@@ -29,10 +29,7 @@ density_score: 0.92
 data_source: "N01_intelligence/P01_knowledge/p01_kc_kind_gap_analysis.md + N03_engineering/P07_evals/p07_bm_kind_gap_audit_m1.md"
 related:
   - p01_kc_kind_gap_analysis
-  - audit_self_review_n03
-  - p07_bm_kind_gap_audit_m1
   - p01_kc_ai2ai_exhaustive_scan_20260414
-  - p06_td_cex_artifact_type_n03
 ---
 
 # CEX Kind Gap Synthesis: Taxonomy + Nucleus Coverage Audit

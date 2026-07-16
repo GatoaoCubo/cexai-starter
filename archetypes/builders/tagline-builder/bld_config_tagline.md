@@ -26,8 +26,6 @@ related:
   - bld_tools_memory_type
   - bld_config_memory_type
   - bld_output_template_builder
-  - tpl_validation_schema
-  - bld_output_template_signal
 ---
 # Config: Tagline Builder
 
@@ -107,4 +105,3 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 | bld_config_memory_type | sibling | 0.44 |
 | bld_output_template_builder | upstream | 0.38 |
 | tpl_validation_schema | related | 0.37 |
-| [[bld_output_template_signal]] | upstream | 0.36 |

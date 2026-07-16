@@ -28,9 +28,6 @@ updated: "2026-04-13"
 keywords: [naming conventions, file paths, size limits, operational constraints, hitl_config construction, config hitl config, fallback enums, hitl_config, builder, config]
 density_score: 0.90
 related:
-  - bld_knowledge_card_hitl_config
-  - bld_instruction_hitl_config
-  - p10_lr_hitl_config_builder
   - bld_config_retriever_config
   - bld_config_memory_scope
 ---
@@ -93,8 +90,5 @@ python _tools/cex_score.py --apply bld-config-hitl-config.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_hitl_config]] | upstream | 0.36 |
-| [[bld_instruction_hitl_config]] | upstream | 0.36 |
-| [[p10_lr_hitl_config_builder]] | downstream | 0.33 |
 | [[bld_config_retriever_config]] | sibling | 0.33 |
 | [[bld_config_memory_scope]] | sibling | 0.32 |

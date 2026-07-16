@@ -26,11 +26,7 @@ title: "Memory Output Validator"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_output_validator
-  - p10_lr_retriever_config_builder
   - output-validator-builder
-  - p10_lr_handoff_protocol_builder
-  - p10_lr_chunk_strategy_builder
 ---
 ## Summary
 Output validator — checks and corrective actions applied to LLM output AFTER generation. The difference between a useful output_validator and a useless one is concrete values
@@ -79,7 +75,4 @@ python _tools/cex_score.py --apply p10-lr-output-validator-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_output_validator]] | upstream | 0.47 |
-| [[p10_lr_retriever_config_builder]] | sibling | 0.39 |
 | [[output-validator-builder]] | upstream | 0.39 |
-| [[p10_lr_handoff_protocol_builder]] | sibling | 0.38 |
-| [[p10_lr_chunk_strategy_builder]] | sibling | 0.38 |

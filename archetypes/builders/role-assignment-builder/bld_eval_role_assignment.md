@@ -18,10 +18,7 @@ keywords: [role_assignment construction, quality gate role assignment, role_assi
 density_score: 0.88
 related:
   - role-assignment-builder
-  - bld_output_template_role_assignment
   - bld_schema_role_assignment
-  - bld_instruction_role_assignment
-  - bld_knowledge_card_role_assignment
 ---
 ## Quality Gate
 

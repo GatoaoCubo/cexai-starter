@@ -4,11 +4,8 @@ description: "Builds ONE pricing_page artifact via 8F pipeline. Loads pricing-pa
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_pricing_page_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_config_pricing_page
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # pricing-page-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_pricing_page_manifest]] | related | 0.33 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[bld_config_pricing_page]] | related | 0.30 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |

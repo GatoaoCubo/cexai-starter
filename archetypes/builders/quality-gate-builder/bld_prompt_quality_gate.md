@@ -28,9 +28,6 @@ keywords: [quality gate builder instructions, instruction, quality-gate, governa
 density_score: 0.91
 llm_function: REASON
 related:
-  - bld_collaboration_quality_gate
-  - bld_knowledge_card_quality_gate
-  - p11_qg_quality_gate
   - quality-gate-builder
   - bld_memory_quality_gate
 ---

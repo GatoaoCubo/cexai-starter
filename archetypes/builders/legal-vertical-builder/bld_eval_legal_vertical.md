@@ -18,10 +18,6 @@ keywords: [legal_vertical construction, quality gate legal vertical, legal_verti
 density_score: 0.85
 related:
   - legal-vertical-builder
-  - bld_instruction_legal_vertical
-  - bld_knowledge_card_legal_vertical
-  - p10_mem_legal_vertical_builder
-  - kc_legal_vertical
 ---
 ## Quality Gate
 

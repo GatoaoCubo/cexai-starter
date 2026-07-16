@@ -17,9 +17,7 @@ updated: '2026-05-30'
 parent: skill-builder
 8f: "F5_call"
 related:
-  - bld_collaboration_cybersec_skill
   - bld_architecture_cybersec_skill
-  - p03_ins_cybersec_skill_builder
   - bld_knowledge_cybersec_skill
   - skill-builder
 ---
@@ -155,8 +153,6 @@ af_gates: [H_AF1, H_AF2, H_AF3, H_AF4]
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_cybersec_skill]] | downstream | 0.65 |
 | [[bld_architecture_cybersec_skill]] | downstream | 0.62 |
-| [[p03_ins_cybersec_skill_builder]] | upstream | 0.60 |
 | [[bld_knowledge_cybersec_skill]] | related | 0.55 |
 | [[skill-builder]] | parent | 0.70 |

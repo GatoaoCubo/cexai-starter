@@ -23,10 +23,8 @@ strict, reproducibility
 for, recovery instructions]
 density_score: 0.90
 related:
-  - bld_collaboration_session_state
   - session-state-builder
   - bld_memory_runtime_state
-  - p01_kc_session_state
   - bld_architecture_session_state
 ---
 # Memory: session-state-builder

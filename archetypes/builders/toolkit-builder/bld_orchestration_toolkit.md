@@ -19,10 +19,8 @@ keywords: [toolkit construction, collaboration toolkit, toolkit, builder, exampl
 density_score: 0.90
 related:
   - toolkit-builder
-  - p03_ins_toolkit_builder
   - bld_tools_toolkit
   - bld_architecture_toolkit
-  - bld_knowledge_card_toolkit
 ---
 # Collaboration: toolkit-builder
 ## My Role in Crews
@@ -74,7 +72,6 @@ I produce YAML permission bundles for agent tool access: tool definitions with c
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[toolkit-builder]] | downstream | 0.47 |
-| [[p03_ins_toolkit_builder]] | downstream | 0.46 |
 | [[bld_tools_toolkit]] | downstream | 0.43 |
 | [[bld_architecture_toolkit]] | downstream | 0.43 |
 | [[bld_knowledge_toolkit]] | upstream | 0.41 |

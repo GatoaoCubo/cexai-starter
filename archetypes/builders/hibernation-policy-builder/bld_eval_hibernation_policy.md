@@ -28,10 +28,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_hibernation_policy
-  - bld_instruction_hibernation_policy
-  - n00_hibernation_policy_manifest
-  - kc_hibernation_policy
-  - bld_output_template_hibernation_policy
 ---
 ## Quality Gate
 ## hibernation_policy HARD Gates (must all pass -- H01-H05)

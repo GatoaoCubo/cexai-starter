@@ -18,11 +18,7 @@ updated: "2026-07-02"
 keywords: [visual record-linkage, catalog audit spec definition, input contract coverage, output section fidelity, match engine honesty, named gate match_confiavel]
 density_score: 0.90
 related:
-  - p11_qg_vision_tool
-  - p11_qg_output_validator
-  - p11_qg_quality_gate
   - bld_schema_product_match
-  - p08_adr_opportunity_matrix_kind
 ---
 ## Quality Gate
 
@@ -157,8 +153,6 @@ Matches products by barcode using AI vision.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_vision_tool]] | sibling | 0.55 |
-| [[p11_qg_output_validator]] | sibling | 0.50 |
 | p11_qg_quality_gate | sibling | 0.44 |
 | [[bld_schema_product_match]] | upstream | 0.40 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.38 |

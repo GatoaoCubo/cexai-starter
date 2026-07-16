@@ -18,8 +18,6 @@ updated: "2026-04-07"
 keywords: [builder construction, collaboration builder, builder, examples, "### crew: builder quality audit", my role, crew compositions, new builder bootstrap, builder quality audit, handoff protocol]
 density_score: 0.90
 related:
-  - bld_collaboration_kind
-  - bld_collaboration_golden_test
   - kind-builder
   - bld_architecture_kind
   - bld_knowledge_card_builder
@@ -73,8 +71,6 @@ None — independent meta-builder (layer 0). I am the origin point for all build
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_kind]] | sibling | 0.34 |
-| [[bld_collaboration_golden_test]] | sibling | 0.29 |
 | [[kind-builder]] | upstream | 0.28 |
 | [[bld_architecture_kind]] | upstream | 0.27 |
 | [[bld_knowledge_card_builder]] | upstream | 0.27 |

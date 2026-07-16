@@ -18,10 +18,6 @@ keywords: [component map of prompt_version, and architectural position, prompt v
 density_score: 0.90
 related:
   - prompt-version-builder
-  - n00_prompt_version_manifest
-  - p11_qg_prompt_version
-  - bld_output_template_prompt_version
-  - p01_kc_prompt_version
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -87,6 +83,4 @@ python _tools/cex_score.py --apply bld-architecture-prompt-version.md
 |----------|-------------|-------|
 | [[prompt-version-builder]] | upstream | 0.64 |
 | n00_prompt_version_manifest | upstream | 0.52 |
-| [[p11_qg_prompt_version]] | downstream | 0.45 |
-| [[bld_output_template_prompt_version]] | upstream | 0.44 |
 | [[kc_prompt_version]] | upstream | 0.44 |

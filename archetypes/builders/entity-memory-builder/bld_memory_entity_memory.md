@@ -29,8 +29,6 @@ related:
   - bld_tools_memory_type
   - bld_config_memory_type
   - entity-memory-builder
-  - bld_knowledge_card_entity_memory
-  - bld_collaboration_memory_type
 ---
 ## Summary
 Entity memory is only as useful as its worst attribute. A single unverified fact injected with the same weight as a primary-source fact degrades the entire grounding block. Three authoring decisions determine whether entity memory is useful or noise: confidence scoring, expiry declaration, and attribute count. Records with >= 3 specific, confidence-scored attributes consistently grounded LLM responses correctly.

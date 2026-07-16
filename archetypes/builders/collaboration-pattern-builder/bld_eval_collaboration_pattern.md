@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [collaboration_pattern construction, quality gate, collaboration pattern, and synchronization rules, collaboration_pattern, builder, quality_gate]
 density_score: 0.88
 related:
-  - p11_qg_quality_gate
   - collaboration-pattern-builder
-  - p11_qg_response_format
-  - p11_qg_prompt_template
-  - p11_qg_runtime_state
 ---
 ## Quality Gate
 

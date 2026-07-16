@@ -18,8 +18,6 @@ keywords: [partner_listing construction, output template partner listing, partne
 density_score: 0.85
 related:
   - bld_tools_partner_listing
-  - n00_partner_listing_manifest
-  - bld_collaboration_partner_listing
   - partner-listing-builder
 ---
 ```markdown

@@ -32,10 +32,7 @@ keywords:
   - "% | warn | {{log|email|webhook|pagerduty}} |"
 density_score: 0.90
 related:
-  - p11_qg_cost_budget
-  - bld_instruction_cost_budget
   - bld_schema_cost_budget
-  - p09_cb_n05_operations
   - cost-budget-builder
 ---
 # Output Template: cost_budget
@@ -86,8 +83,5 @@ Escalation: `{{who_is_notified_and_how}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_cost_budget]] | downstream | 0.46 |
-| [[bld_instruction_cost_budget]] | upstream | 0.44 |
 | [[bld_schema_cost_budget]] | downstream | 0.41 |
-| [[p09_cb_n05_operations]] | downstream | 0.38 |
 | [[cost-budget-builder]] | downstream | 0.38 |

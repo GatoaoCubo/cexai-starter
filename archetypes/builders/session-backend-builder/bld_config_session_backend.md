@@ -28,10 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, session backend construction, config session backend, session_backend, builder, examples, "p10_sb_{{backend}}.yaml"]
 density_score: 0.90
 related:
-  - p01_kc_session_backend
-  - bld_knowledge_card_session_backend
   - bld_schema_session_backend
-  - p11_qg_session_backend
 ---
 # Config: session_backend Production Rules
 ## Naming Convention
@@ -76,4 +73,3 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 | [[kc_session_backend]] | downstream | 0.41 |
 | [[bld_knowledge_session_backend]] | upstream | 0.40 |
 | [[bld_schema_session_backend]] | upstream | 0.40 |
-| [[p11_qg_session_backend]] | downstream | 0.40 |

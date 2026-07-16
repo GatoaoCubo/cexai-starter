@@ -18,11 +18,7 @@ keywords: [eval_framework construction, collaboration eval framework, eval_frame
 designs, receives from, config manager, benchmark suite, eval metric]
 density_score: 0.85
 related:
-  - bld_collaboration_benchmark_suite
-  - bld_collaboration_memory_benchmark
   - eval-framework-builder
-  - bld_collaboration_eval_metric
-  - bld_collaboration_llm_evaluation_scenario
 ---
 ## Crew Role  
 Designs and implements evaluation framework infrastructure, enabling modular integration of metrics, benchmarks, and execution pipelines. Acts as a central coordination layer for evaluation processes.  
@@ -49,8 +45,4 @@ Does NOT collect benchmarks (handled by benchmark_suite) or define individual me
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_benchmark_suite]] | sibling | 0.41 |
-| [[bld_collaboration_memory_benchmark]] | sibling | 0.36 |
 | [[eval-framework-builder]] | upstream | 0.34 |
-| [[bld_collaboration_eval_metric]] | sibling | 0.34 |
-| [[bld_collaboration_llm_evaluation_scenario]] | sibling | 0.32 |

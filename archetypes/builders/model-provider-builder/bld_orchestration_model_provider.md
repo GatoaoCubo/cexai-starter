@@ -18,10 +18,8 @@ updated: "2026-04-07"
 keywords: [model provider construction, collaboration model provider, model_provider, builder, examples, "### crew: bootstrap new cex nucleus", "### crew: cost optimization audit", my role, crew compositions, setup multi]
 density_score: 0.90
 related:
-  - bld_collaboration_model_card
   - model-provider-builder
   - bld_memory_model_provider
-  - bld_collaboration_boot_config
   - bld_config_model_provider
 ---
 # Collaboration: model-provider-builder

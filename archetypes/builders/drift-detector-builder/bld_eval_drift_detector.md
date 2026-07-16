@@ -30,9 +30,7 @@ keywords:
 density_score: 0.90
 related:
   - drift-detector-builder
-  - bld_instruction_drift_detector
   - bld_schema_drift_detector
-  - bld_output_template_drift_detector
   - bld_architecture_drift_detector
 ---
 ## Quality Gate

@@ -21,8 +21,6 @@ source_author: "Donne Martin"
 source_license: "CC-BY-4.0"
 related:
   - p01_kc_repo_assimilation_candidates
-  - p08_pat_caching_strategy
-  - skill_design_scalable_system
   - p01_fse_clean_arch_layer_placement
   - p01_kc_concept_graph
 primary_8f: INJECT

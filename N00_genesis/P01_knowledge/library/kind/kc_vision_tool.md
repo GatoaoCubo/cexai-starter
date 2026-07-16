@@ -22,10 +22,7 @@ linked_artifacts:
   related: []
 related:
   - vision-tool-builder
-  - n00_vision_tool_manifest
-  - p04_vision_tool_NAME
   - kc_multimodal_prompt
-  - p04_vision_gpt4v
 ---
 
 # Vision Tool

@@ -4,7 +4,6 @@ description: "Builds ONE diagram artifact via 8F pipeline. Loads diagram-builder
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_diagram_manifest
   - bld_architecture_diagram
   - bld_config_diagram
   - p08_diag_{{SCOPE_SLUG}}
@@ -86,7 +85,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_diagram_manifest]] | related | 0.40 |
 | [[bld_architecture_diagram]] | related | 0.40 |
 | [[bld_config_diagram]] | related | 0.39 |
 | [[diagram-builder]] | related | 0.35 |

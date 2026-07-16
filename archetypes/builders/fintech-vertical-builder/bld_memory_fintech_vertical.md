@@ -20,11 +20,7 @@ successful, evidence
 reviewed, related artifacts, fraud detection]
 density_score: 0.85
 related:
-  - p01_qg_fintech_vertical
   - fintech-vertical-builder
-  - bld_instruction_fintech_vertical
-  - bld_knowledge_card_fintech_vertical
-  - p01_kc_fintech_vertical
 ---
 ## Observation
 Building fintech_vertical artifacts often faces challenges in aligning SOC2+PCI-DSS with KYC/AML requirements, leading to redundant validation layers. Fraud detection systems frequently lack integration with compliance workflows, creating siloed data flows.
@@ -45,8 +41,4 @@ Reviewed artifacts showed a KYC module with SOC2-aligned logging and PCI-DSS-com
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_qg_fintech_vertical]] | downstream | 0.55 |
 | [[fintech-vertical-builder]] | upstream | 0.54 |
-| [[bld_instruction_fintech_vertical]] | upstream | 0.46 |
-| [[bld_knowledge_card_fintech_vertical]] | upstream | 0.40 |
-| [[p01_kc_fintech_vertical]] | upstream | 0.40 |

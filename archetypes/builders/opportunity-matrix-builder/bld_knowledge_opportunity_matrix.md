@@ -17,11 +17,8 @@ updated: "2026-07-02"
 keywords: [opportunity_matrix construction, knowledge card opportunity matrix, opportunity_matrix, builder, knowledge_card, domain overview, key concepts, buy-side sourcing, take-rate, opp_score]
 density_score: 0.85
 related:
-  - p08_adr_opportunity_matrix_kind
   - roi-calculator-builder
   - opportunity-matrix-builder
-  - bld_instruction_opportunity_matrix
-  - p11_qg_opportunity_matrix
 ---
 ## Domain Overview
 `opportunity_matrix` (P11, N06, verb `analyze`) quantifies buy-side sourcing decisions by crossing supplier cost (the OFFER side, parsed from tenant catalogs) against market price+demand per product type. It is the inbound twin of `marketplace_listing` (the outbound/TUDAO channel-projection mold): both share exactly one seam, the `canonical_product` record, and both reuse the same visual matcher (`product_match`) for identity resolution. The real generator (`_tools/capability_generators/sourcing_opportunity.py`, capability slug `sourcing_opportunity`) is offline-deterministic: it never calls a network or an LLM, and it degrades to honest-null cells rather than fabricating market data when no credential/`demand_sources` is supplied.
@@ -62,4 +59,3 @@ related:
 | [[roi-calculator-builder]] | sibling | 0.45 |
 | [[opportunity-matrix-builder]] | downstream | 0.42 |
 | [[bld_prompt_opportunity_matrix]] | downstream | 0.38 |
-| [[p11_qg_opportunity_matrix]] | downstream | 0.35 |

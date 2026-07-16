@@ -18,9 +18,6 @@ keywords: [workflow_run_crate construction, instruction workflow run crate, work
 density_score: 0.85
 related:
   - workflow-run-crate-builder
-  - bld_knowledge_card_workflow_run_crate
-  - p10_qg_workflow_run_crate
-  - p10_lr_workflow_run_crate_builder
   - bld_tools_workflow_run_crate
 ---
 ## Phase 1: RESEARCH
@@ -58,7 +55,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-run-crate-builder]] | downstream | 0.59 |
-| [[bld_knowledge_card_workflow_run_crate]] | upstream | 0.53 |
-| [[p10_qg_workflow_run_crate]] | downstream | 0.52 |
-| [[p10_lr_workflow_run_crate_builder]] | downstream | 0.47 |
 | [[bld_tools_workflow_run_crate]] | downstream | 0.42 |

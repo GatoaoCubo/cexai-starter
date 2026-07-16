@@ -31,11 +31,8 @@ keywords:
   - "spec table"
 density_score: 0.90
 related:
-  - bld_collaboration_agent_card
   - bld_memory_agent_card
   - agent-card-builder
-  - p03_ins_agent_card_builder
-  - p11_qg_agent-card
 ---
 # Domain Knowledge: agent_card
 ## Executive Summary
@@ -96,5 +93,3 @@ Agent_group specs define autonomous processing units in multi-agent architecture
 | [[bld_orchestration_agent_card]] | downstream | 0.51 |
 | [[bld_memory_agent_card]] | downstream | 0.49 |
 | [[agent-card-builder]] | downstream | 0.46 |
-| [[p03_ins_agent_card_builder]] | downstream | 0.43 |
-| [[p11_qg_agent-card]] | downstream | 0.36 |

@@ -30,12 +30,6 @@ keywords:
   - "## levels"
   - "## integration"
 density_score: 0.90
-related:
-  - bld_output_template_hook_config
-  - bld_output_template_output_validator
-  - bld_output_template_constraint_spec
-  - bld_output_template_runtime_rule
-  - bld_output_template_feature_flag
 ---
 # Output Template: effort_profile
 ```yaml
@@ -89,12 +83,3 @@ temperature: {{temperature}}
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_hook_config]] | sibling | 0.41 |
-| [[bld_output_template_output_validator]] | sibling | 0.38 |
-| [[bld_output_template_constraint_spec]] | sibling | 0.37 |
-| [[bld_output_template_runtime_rule]] | sibling | 0.37 |
-| [[bld_output_template_feature_flag]] | sibling | 0.36 |

@@ -21,10 +21,6 @@ reviewed, related artifacts, upstream]
 density_score: 0.85
 related:
   - enterprise-sla-builder
-  - bld_instruction_enterprise_sla
-  - bld_knowledge_card_enterprise_sla
-  - p11_qg_enterprise_sla
-  - n00_enterprise_sla_manifest
 ---
 ## Observation
 Common issues include vague uptime definitions (e.g., "high availability" without thresholds), inconsistent latency metrics across services, and ambiguous support response time commitments (e.g., "within business hours" without specific SLAs).
@@ -46,7 +42,3 @@ Reviewed artifacts showed 70% of successful SLAs included specific uptime thresh
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[enterprise-sla-builder]] | downstream | 0.45 |
-| [[bld_instruction_enterprise_sla]] | upstream | 0.37 |
-| [[bld_knowledge_card_enterprise_sla]] | upstream | 0.36 |
-| [[p11_qg_enterprise_sla]] | downstream | 0.29 |
-| [[n00_enterprise_sla_manifest]] | downstream | 0.24 |

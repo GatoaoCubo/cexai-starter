@@ -27,9 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - audio-tool-builder
-  - bld_instruction_audio_tool
-  - bld_knowledge_card_audio_tool
-  - bld_collaboration_audio_tool
   - bld_architecture_audio_tool
 ---
 ## Summary
@@ -95,7 +92,4 @@ python _tools/cex_score.py --apply p10-lr-audio-tool-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[audio-tool-builder]] | upstream | 0.57 |
-| [[bld_instruction_audio_tool]] | upstream | 0.57 |
-| [[bld_knowledge_card_audio_tool]] | upstream | 0.52 |
-| [[bld_collaboration_audio_tool]] | downstream | 0.49 |
 | [[bld_architecture_audio_tool]] | upstream | 0.48 |

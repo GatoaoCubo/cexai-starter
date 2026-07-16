@@ -27,11 +27,7 @@ keywords:
   - "api_key: ${, } endpoint: ,  language: ,  sample_rate:"
 density_score: 0.85
 related:
-  - n00_stt_provider_manifest
   - bld_schema_stt_provider
-  - bld_output_template_tts_provider
-  - n00_model_provider_manifest
-  - p04_qg_stt_provider
 ---
 ```yaml
 ---

@@ -19,12 +19,6 @@ specializes, routing
 trigger, crew role  
 acts]
 density_score: 0.85
-related:
-  - p01_qg_legal_vertical
-  - bld_instruction_legal_vertical
-  - bld_knowledge_card_legal_vertical
-  - p10_mem_legal_vertical_builder
-  - kc_legal_vertical
 ---
 ## Identity
 
@@ -71,12 +65,3 @@ ALWAYS document ABA Rule 5.3 compliance for any AI/non-lawyer assistant use case
 NEVER inject compliance_checklist audit items or case_study contextual narratives
 NEVER produce unstructured or opinion-based legal interpretations
 NEVER say "follow legal standards" -- cite the specific rule or statute (e.g., FRCP 26(b)(3), ABA Rule 1.6)
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p01_qg_legal_vertical]] | downstream | 0.61 |
-| [[bld_instruction_legal_vertical]] | downstream | 0.57 |
-| [[bld_knowledge_card_legal_vertical]] | related | 0.57 |
-| [[p10_mem_legal_vertical_builder]] | downstream | 0.47 |
-| [[kc_legal_vertical]] | related | 0.38 |

@@ -31,10 +31,6 @@ keywords:
 density_score: 0.85
 related:
   - spawn-config-builder
-  - p01_kc_spawn_config
-  - bld_knowledge_card_spawn_config
-  - bld_collaboration_spawn_config
-  - bld_output_template_spawn_config
 ---
 ## Quality Gate
 

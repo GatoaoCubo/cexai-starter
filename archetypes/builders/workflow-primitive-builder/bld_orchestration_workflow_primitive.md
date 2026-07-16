@@ -21,8 +21,6 @@ related:
   - workflow-primitive-builder
   - bld_architecture_workflow_primitive
   - bld_tools_workflow_primitive
-  - p03_ins_workflow_primitive_builder
-  - bld_collaboration_workflow
 ---
 # Collaboration: workflow-primitive-builder
 ## My Role in Crews
@@ -77,5 +75,4 @@ I produce YAML atomic blocks for orchestration composition: step, condition, loo
 | [[workflow-primitive-builder]] | downstream | 0.55 |
 | [[bld_architecture_workflow_primitive]] | downstream | 0.49 |
 | [[bld_tools_workflow_primitive]] | downstream | 0.43 |
-| [[p03_ins_workflow_primitive_builder]] | downstream | 0.43 |
 | bld_collaboration_workflow | sibling | 0.42 |

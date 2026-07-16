@@ -31,10 +31,8 @@ keywords:
   - "| required: {{yes|no}} | default:"
 density_score: 0.90
 related:
-  - bld_output_template_input_schema
   - bld_schema_function_def
   - bld_schema_validation_schema
-  - p11_qg_function_def
   - bld_schema_input_schema
 ---
 # Output Template: function_def
@@ -128,8 +126,6 @@ Output:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_input_schema]] | sibling | 0.41 |
 | [[bld_schema_function_def]] | downstream | 0.38 |
 | [[bld_schema_validation_schema]] | downstream | 0.37 |
-| [[p11_qg_function_def]] | downstream | 0.37 |
 | [[bld_schema_input_schema]] | downstream | 0.32 |

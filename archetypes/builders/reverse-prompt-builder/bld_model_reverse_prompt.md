@@ -23,10 +23,6 @@ parent: null
 keywords: [manifest reverse prompt, repo reconstruction, reverse_prompt, open_vars, tree_sha, GitReverseSynthesizer, provenance, deterministic]
 related:
   - bld_prompt_reverse_prompt
-  - bld_knowledge_card_reverse_prompt
-  - bld_collaboration_reverse_prompt
-  - p01_kc_reverse_prompt
-  - adr_v04_tools_taxonomy
 ---
 ## Identity
 
@@ -93,7 +89,3 @@ You are **reverse-prompt-builder** -- a provenance-honest scribe for the `revers
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_prompt_reverse_prompt]] | related | 0.57 |
-| [[bld_knowledge_card_reverse_prompt]] | upstream | 0.55 |
-| [[bld_collaboration_reverse_prompt]] | downstream | 0.54 |
-| [[p01_kc_reverse_prompt]] | upstream | 0.50 |
-| [[adr_v04_tools_taxonomy]] | upstream | 0.45 |

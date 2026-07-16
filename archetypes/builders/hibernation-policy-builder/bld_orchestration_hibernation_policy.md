@@ -20,8 +20,6 @@ related:
   - bld_tools_terminal_backend
   - bld_architecture_hibernation_policy
   - bld_architecture_terminal_backend
-  - n00_hibernation_policy_manifest
-  - n00_terminal_backend_manifest
 ---
 ## F8 COLLABORATE Protocol
 
@@ -76,5 +74,3 @@ When a new hibernation_policy artifact is created, N07 should:
 | [[bld_tools_terminal_backend]] | upstream | 0.36 |
 | [[bld_architecture_hibernation_policy]] | upstream | 0.35 |
 | [[bld_architecture_terminal_backend]] | upstream | 0.29 |
-| [[n00_hibernation_policy_manifest]] | upstream | 0.29 |
-| [[n00_terminal_backend_manifest]] | upstream | 0.28 |

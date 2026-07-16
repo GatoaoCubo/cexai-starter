@@ -28,8 +28,6 @@ related:
   - content-monetization-builder
   - bld_tools_memory_type
   - bld_config_tagline
-  - bld_collaboration_content_monetization
-  - p10_lr_e2e_eval_builder
 ---
 ## Summary
 Content monetization has two orthogonal concerns: business logic (what to charge, how

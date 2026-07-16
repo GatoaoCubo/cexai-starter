@@ -20,9 +20,7 @@ density_score: 0.91
 related:
   - feature-flag-builder
   - bld_schema_feature_flag
-  - p11_qg_quality_gate
   - bld_architecture_feature_flag
-  - bld_collaboration_feature_flag
 ---
 ## Quality Gate
 

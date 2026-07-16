@@ -21,7 +21,6 @@ related:
   - bld_tools_landing_page
   - bld_schema_landing_page
   - bld_memory_landing_page
-  - bld_collaboration_landing_page
   - bld_architecture_landing_page
 ---
 # Output Template: Landing Page

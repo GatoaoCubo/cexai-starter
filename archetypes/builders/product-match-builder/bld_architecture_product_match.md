@@ -18,10 +18,8 @@ keywords: [component map of product_match, and architectural position, product m
 density_score: 0.90
 related:
   - product-match-builder
-  - p11_qg_product_match
   - bld_architecture_vision_tool
   - opportunity-matrix-builder
-  - n01_sourcing_rigor
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -99,7 +97,6 @@ sourcing_opportunity.py --imports--> _normalize_join_key + _audit_text_vs_photo 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[product-match-builder]] | upstream | 0.50 |
-| [[p11_qg_product_match]] | downstream | 0.44 |
 | [[bld_architecture_vision_tool]] | sibling | 0.40 |
 | [[opportunity-matrix-builder]] | sibling | 0.36 |
 | n01_sourcing_rigor | related | 0.34 |

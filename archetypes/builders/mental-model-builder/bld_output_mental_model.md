@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - mental-model-builder
-  - p03_ins_mental_model
-  - bld_knowledge_card_mental_model
   - bld_config_mental_model
-  - p11_qg_mental_model
 ---
 # Output Template: mental_model
 
@@ -119,7 +116,5 @@ Routes away: `{{routed_domains_with_targets}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mental-model-builder]] | upstream | 0.44 |
-| [[p03_ins_mental_model]] | upstream | 0.43 |
 | [[bld_knowledge_mental_model]] | upstream | 0.43 |
 | [[bld_config_mental_model]] | downstream | 0.39 |
-| [[p11_qg_mental_model]] | downstream | 0.38 |

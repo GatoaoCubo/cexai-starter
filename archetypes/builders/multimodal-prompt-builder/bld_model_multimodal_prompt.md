@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for multimodal_prompt, multimodal_prompt construction, type builder multimodal prompt, multimodal_prompt, builder, type_builder, multi_modal_config, <image>, <audio>]
 density_score: 0.85
 related:
-  - bld_knowledge_card_multimodal_prompt
-  - p10_mem_multimodal_prompt_builder
-  - bld_instruction_multimodal_prompt
   - multi-modal-config-builder
-  - bld_collaboration_multi_modal_config
 ---
 ## Identity
 
@@ -69,7 +65,6 @@ NEVER assume single-modality dominance (e.g., text-only fallback).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_multimodal_prompt]] | upstream | 0.58 |
-| [[p10_mem_multimodal_prompt_builder]] | downstream | 0.50 |
 | [[bld_prompt_multimodal_prompt]] | related | 0.45 |
 | multi-modal-config-builder | sibling | 0.42 |
 | bld_collaboration_multi_modal_config | downstream | 0.40 |

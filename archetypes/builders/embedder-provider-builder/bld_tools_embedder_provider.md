@@ -19,7 +19,6 @@ density_score: 0.90
 related:
   - bld_tools_model_card
   - bld_tools_model_provider
-  - p01_emb_openai_text_embedding_3_small
   - embedder-provider-builder
   - bld_tools_vector_store
 ---
@@ -69,6 +68,5 @@ All 10 HARD gates must pass. SOFT gates contribute to score.
 |----------|-------------|-------|
 | bld_tools_model_card | sibling | 0.58 |
 | [[bld_tools_model_provider]] | sibling | 0.53 |
-| [[p01_emb_openai_text_embedding_3_small]] | upstream | 0.42 |
 | [[embedder-provider-builder]] | upstream | 0.42 |
 | [[bld_tools_vector_store]] | sibling | 0.39 |

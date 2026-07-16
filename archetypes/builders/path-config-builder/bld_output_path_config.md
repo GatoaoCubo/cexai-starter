@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_path_config
-  - p03_ins_path_config
-  - p11_qg_path_config
   - path-config-builder
-  - bld_output_template_input_schema
 ---
 # Output Template: path_config
 ```yaml
@@ -109,7 +106,4 @@ file_count: {{N}}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_path_config]] | downstream | 0.47 |
-| [[p03_ins_path_config]] | upstream | 0.38 |
-| [[p11_qg_path_config]] | downstream | 0.36 |
 | [[path-config-builder]] | downstream | 0.36 |
-| [[bld_output_template_input_schema]] | sibling | 0.34 |

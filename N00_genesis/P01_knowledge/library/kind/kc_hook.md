@@ -17,12 +17,6 @@ when_to_use: "Building, reviewing, or reasoning about hook artifacts"
 keywords: [hook, phases, trigger, reusable, capability, workflow, lifecycle]
 feeds_kinds: [hook]
 density_score: null
-related:
-  - p01_kc_server_tools
-  - p01_kc_steps
-  - p01_kc_supabase_mcp
-  - p01_kc_skill
-  - p01_kc_retriever_config
 ---
 
 # Hook

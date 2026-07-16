@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - runtime-rule-builder
   - kind-builder
-  - p03_sp_builder_nucleus
   - system-prompt-builder
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # runtime-rule-builder Sub-Agent
@@ -88,6 +86,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[runtime-rule-builder]] | related | 0.33 |
 | [[kind-builder]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.29 |
 | [[system-prompt-builder]] | related | 0.26 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.26 |

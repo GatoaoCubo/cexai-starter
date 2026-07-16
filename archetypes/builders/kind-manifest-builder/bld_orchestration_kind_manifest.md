@@ -17,12 +17,6 @@ updated: "2026-07-10"
 8f: "F8_collaborate"
 keywords: [kind_manifest construction, collaboration kind manifest, kind_manifest, builder, examples, "### crew: kind scaffolding stack", my role, crew compositions, per-kind identity document, r-310 lineage]
 density_score: 0.87
-related:
-  - bld_collaboration_kind
-  - bld_collaboration_knowledge_card
-  - bld_collaboration_output_template
-  - bld_collaboration_field_manifest
-  - kind-manifest-builder
 ---
 # Collaboration: kind-manifest-builder
 ## My Role in Crews
@@ -61,12 +55,3 @@ I am a SPECIALIST. I answer ONE question: "what does this kind mean, and where d
 |---------|-----|
 | Every one of the 317 kind-builders (informal) | Each MAY inject its own kind's manifest via F3 INJECT for orientation before F6 PRODUCE -- no formal `depends_on` registration exists (kinds_meta.json's `depends_on` list stays `[]` for kind_manifest itself) |
 | N07 (orchestrator, informal) | Reads a target kind's manifest when routing an ambiguous dispatch, per `.claude/rules/n07-input-transmutation.md`'s taxonomy-mapping discipline |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_kind]] | sibling (reflexive-case source) | 0.48 |
-| [[bld_collaboration_knowledge_card]] | sibling (former mis-type contrast) | 0.44 |
-| [[bld_collaboration_output_template]] | related (same resolution shape) | 0.36 |
-| [[bld_collaboration_field_manifest]] | related | 0.32 |
-| [[kind-manifest-builder]] | upstream | 0.30 |

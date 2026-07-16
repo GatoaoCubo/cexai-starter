@@ -13,9 +13,7 @@ density_score: 1.0
 source: motion.dev, joshwcomeau.com, web.dev
 created: 2026-04-01
 related:
-  - p01_kc_css_animation_micro
   - bld_architecture_state_machine
-  - bld_manifest_lifecycle_rule
 ---
 
 # KC: CSS Animation & Micro-interactions
@@ -491,4 +489,3 @@ function Section({ children }) {
 |----------|-------------|-------|
 | p01_kc_css_animation_micro | sibling | 0.42 |
 | bld_architecture_state_machine | downstream | 0.29 |
-| [[bld_manifest_lifecycle_rule]] | related | 0.16 |

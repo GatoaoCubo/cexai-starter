@@ -20,10 +20,6 @@ this, receives from, inner loop, outer loop, produces for]
 density_score: 0.85
 related:
   - dual-loop-architecture-builder
-  - bld_knowledge_card_dual_loop_architecture
-  - kc_dual_loop_architecture
-  - p10_lr_dual_loop_architecture_builder
-  - bld_instruction_dual_loop_architecture
 ---
 ## Crew Role  
 
@@ -51,7 +47,3 @@ Does NOT handle external stakeholder communication (handled by dedicated interfa
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[dual-loop-architecture-builder]] | upstream | 0.61 |
-| [[bld_knowledge_card_dual_loop_architecture]] | upstream | 0.59 |
-| [[kc_dual_loop_architecture]] | upstream | 0.57 |
-| [[p10_lr_dual_loop_architecture_builder]] | upstream | 0.54 |
-| [[bld_instruction_dual_loop_architecture]] | upstream | 0.50 |

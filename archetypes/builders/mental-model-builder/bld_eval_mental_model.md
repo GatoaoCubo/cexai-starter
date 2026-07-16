@@ -18,11 +18,7 @@ updated: "2026-03-27"
 keywords: [mental model, enforces routing rules, decision tree, domain map, and design-time-only scope, quality-gate, mental-model]
 density_score: 0.85
 related:
-  - p03_ins_mental_model
   - mental-model-builder
-  - p11_qg_runtime_state
-  - bld_collaboration_mental_model
-  - bld_knowledge_card_mental_model
 ---
 ## Quality Gate
 

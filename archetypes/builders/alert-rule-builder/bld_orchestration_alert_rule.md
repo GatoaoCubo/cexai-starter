@@ -16,10 +16,7 @@ created: "2026-04-17"
 updated: "2026-07-04"
 related:
   - alert-rule-builder
-  - bld_rules_data_contract
   - bld_memory_alert_rule
-  - bld_rules_bounded_context
-  - bld_rules_domain_vocabulary
 ---
 # Collaboration: alert_rule-builder (Builder Rules Retained)
 
@@ -91,7 +88,4 @@ python _tools/cex_doctor.py --scope orchestration
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[alert-rule-builder]] | upstream | 0.40 |
-| [[bld_rules_data_contract]] | sibling | 0.35 |
 | [[bld_memory_alert_rule]] | upstream | 0.34 |
-| [[bld_rules_bounded_context]] | sibling | 0.33 |
-| [[bld_rules_domain_vocabulary]] | sibling | 0.32 |

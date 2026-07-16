@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [builder identity, routing for gpai_technical_doc, gpai_technical_doc construction, gpai_technical_doc, builder, type_builder, gpai, eu-ai-act, annex-iv, article-53]
 density_score: 0.85
-related:
-  - bld_knowledge_card_gpai_technical_doc
-  - bld_collaboration_gpai_technical_doc
-  - bld_instruction_gpai_technical_doc
-  - p11_qg_gpai_technical_doc
-  - p10_lr_gpai_technical_doc_builder
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS include provider legal entity name and EU representative (if provider is 
 NEVER produce informal model cards -- output follows Annex IV legal structure.
 NEVER self-assign quality score; quality field must remain null.
 NEVER omit energy consumption data -- this is a mandatory Annex IV field.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_gpai_technical_doc]] | upstream | 0.61 |
-| [[bld_collaboration_gpai_technical_doc]] | downstream | 0.45 |
-| [[bld_instruction_gpai_technical_doc]] | upstream | 0.45 |
-| [[p11_qg_gpai_technical_doc]] | related | 0.43 |
-| [[p10_lr_gpai_technical_doc_builder]] | upstream | 0.40 |

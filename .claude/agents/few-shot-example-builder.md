@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - few-shot-example-builder
-  - bld_collaboration_few_shot_example
   - p01_fse_{{TOPIC_SLUG}}
-  - n00_few_shot_example_manifest
-  - p01_kc_few_shot_example
 ---
 
 # few-shot-example-builder Sub-Agent

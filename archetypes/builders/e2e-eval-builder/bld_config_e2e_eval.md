@@ -28,11 +28,9 @@ updated: "2026-04-07"
 keywords: [limits for e, e_eval production, e eval construction, config e, e eval, e2e_eval, builder, examples, production rules, file paths]
 density_score: 0.90
 related:
-  - bld_output_template_e2e_eval
   - bld_schema_e2e_eval
   - bld_tools_e2e_eval
   - bld_config_quality_gate
-  - bld_collaboration_e2e_eval
 ---
 # Config: e2e_eval Production Rules
 ## Naming
@@ -85,8 +83,6 @@ python _tools/cex_score.py --apply bld-config-e2e-eval.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_e2e_eval]] | upstream | 0.42 |
 | [[bld_schema_e2e_eval]] | upstream | 0.35 |
 | [[bld_tools_e2e_eval]] | upstream | 0.35 |
 | [[bld_config_quality_gate]] | sibling | 0.35 |
-| [[bld_collaboration_e2e_eval]] | downstream | 0.34 |

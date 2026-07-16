@@ -27,9 +27,6 @@ title: Memory ISO - eval_dataset
 density_score: 0.96
 related:
   - eval-dataset-builder
-  - bld_knowledge_card_eval_dataset
-  - bld_instruction_eval_dataset
-  - p11_qg_eval_dataset
   - bld_schema_eval_dataset
 ---
 ## Summary
@@ -68,5 +65,4 @@ Versioning rules:
 | [[eval-dataset-builder]] | upstream | 0.46 |
 | [[bld_knowledge_eval_dataset]] | upstream | 0.46 |
 | [[bld_prompt_eval_dataset]] | upstream | 0.39 |
-| [[p11_qg_eval_dataset]] | downstream | 0.37 |
 | [[bld_schema_eval_dataset]] | upstream | 0.32 |

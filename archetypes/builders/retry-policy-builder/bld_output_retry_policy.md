@@ -19,7 +19,6 @@ updated: "2026-04-17"
 keywords: [template with, retry policy construction, output template retry policy, fill-in template for retry_policy, backoff config, retry budget, error classification, retry_policy, builder, output_template]
 density_score: 0.90
 related:
-  - p11_qg_retry_policy
   - bld_config_retry_policy
   - bld_architecture_retry_policy
   - retry-policy-builder
@@ -80,7 +79,6 @@ tldr: "{{operation}} retry: {{max_attempts}} attempts, {{backoff_strategy}} {{in
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_retry_policy]] | downstream | 0.64 |
 | [[bld_config_retry_policy]] | downstream | 0.55 |
 | [[bld_architecture_retry_policy]] | downstream | 0.53 |
 | [[retry-policy-builder]] | downstream | 0.52 |

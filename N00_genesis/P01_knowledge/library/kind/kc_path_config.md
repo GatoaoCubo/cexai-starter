@@ -21,11 +21,7 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - n00_path_config_manifest
-  - p03_ins_path_config
   - bld_architecture_path_config
-  - bld_knowledge_card_path_config
-  - bld_collaboration_path_config
 ---
 
 # Path Config
@@ -98,7 +94,6 @@ env_config, permission --> [path_config] --> agent_card, law, runtime_rule
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | n00_path_config_manifest | sibling | 0.45 |
-| [[p03_ins_path_config]] | upstream | 0.45 |
 | [[bld_architecture_path_config]] | upstream | 0.43 |
 | [[bld_knowledge_path_config]] | sibling | 0.41 |
 | [[bld_orchestration_path_config]] | related | 0.41 |

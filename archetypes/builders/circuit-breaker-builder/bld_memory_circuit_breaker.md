@@ -27,11 +27,8 @@ title: "Memory Circuit Breaker"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p01_kc_circuit_breaker
   - circuit-breaker-builder
-  - p11_qg_circuit_breaker
   - bld_architecture_circuit_breaker
-  - bld_output_template_circuit_breaker
 ---
 ## Summary
 
@@ -68,8 +65,5 @@ Fallback discipline:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_circuit_breaker]] | upstream | 0.44 |
 | [[circuit-breaker-builder]] | upstream | 0.39 |
-| [[p11_qg_circuit_breaker]] | downstream | 0.37 |
 | [[bld_architecture_circuit_breaker]] | upstream | 0.35 |
-| [[bld_output_template_circuit_breaker]] | upstream | 0.34 |

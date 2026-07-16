@@ -22,7 +22,6 @@ slots:
   collection: "<qdrant_marketing_collection>"
 related:
   - kno_embedder_provider_n06
-  - p01_emb_openai_text_embedding_3_small
   - kno_embedder_provider_n04
   - p01_chunk_n02
   - kno_embedder_provider_n05
@@ -218,7 +217,6 @@ embedding_flow:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kno_embedder_provider_n06]] | sibling | 0.41 |
-| [[p01_emb_openai_text_embedding_3_small]] | sibling | 0.39 |
 | [[kno_embedder_provider_n04]] | sibling | 0.35 |
 | [[p01_chunk_n02]] | upstream | 0.34 |
 | [[kno_embedder_provider_n05]] | sibling | 0.33 |

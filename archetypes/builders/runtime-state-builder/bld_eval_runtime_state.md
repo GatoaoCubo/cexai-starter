@@ -23,11 +23,7 @@ updated: '2026-03-27'
 keywords: [runtime state, verifies routing rules, kind: runtime_state, yaml.safe_load(frontmatter), p10_rs_*, id.startswith("p10_rs_"), path(file).stem == id]
 density_score: 0.85
 related:
-  - p11_qg_quality_gate
   - runtime-state-builder
-  - p03_ins_runtime_state
-  - p11_qg_mental_model
-  - p11_qg_response_format
 ---
 ## Quality Gate
 

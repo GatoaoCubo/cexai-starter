@@ -15,10 +15,8 @@ keywords: [model_architecture construction, memory model architecture builder, l
 density_score: 0.88
 llm_function: INJECT
 related:
-  - bld_knowledge_card_model_architecture
   - bld_tools_model_architecture
   - bld_architecture_model_architecture
-  - p11_qg_model_architecture
   - model-architecture-builder
 ---
 # Memory: model-architecture-builder Learning Record
@@ -54,8 +52,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_model_architecture]] | upstream | 0.41 |
 | [[bld_tools_model_architecture]] | upstream | 0.40 |
 | [[bld_architecture_model_architecture]] | upstream | 0.39 |
-| [[p11_qg_model_architecture]] | downstream | 0.34 |
 | [[model-architecture-builder]] | upstream | 0.33 |

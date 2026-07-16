@@ -17,11 +17,8 @@ updated: "2026-04-13"
 keywords: [action_paradigm construction, quality gate, action paradigm, and failure recovery, action_paradigm, builder, quality_gate]
 density_score: 0.88
 related:
-  - p11_qg_quality_gate
   - action-paradigm-builder
-  - p11_qg_runtime_state
   - bld_memory_action_paradigm
-  - p11_qg_response_format
 ---
 ## Quality Gate
 ## Definition

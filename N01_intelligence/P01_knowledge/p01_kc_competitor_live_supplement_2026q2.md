@@ -21,7 +21,6 @@ scrape_timestamp: "2026-04-24T21:30:00Z"
 keywords: [github cli api, stars, forks, open issues, contributors, 30d commits, hyper-active, dormant, langchain, pydantic ai]
 related:
  - kc_competitor_hermes
- - cm_cex_vs_landscape
  - p01_kc_content_formats_global
  - p01_kc_growth_casestudy_viral
  - p01_kc_competitor_metagpt

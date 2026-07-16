@@ -19,10 +19,6 @@ keywords: [action listing, resolution format, coordinate system, safety constrai
 density_score: 0.90
 related:
   - computer-use-builder
-  - bld_knowledge_card_computer_use
-  - bld_instruction_computer_use
-  - bld_output_template_computer_use
-  - p10_lr_computer_use_builder
 ---
 ## Quality Gate
 

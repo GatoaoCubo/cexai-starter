@@ -29,9 +29,6 @@ tldr: Golden and anti-examples for toolkit construction, demonstrating ideal str
 llm_function: BECOME
 8f: "F5_call"
 related:
-  - bld_knowledge_card_toolkit
-  - p03_ins_toolkit_builder
-  - bld_collaboration_toolkit
   - bld_memory_toolkit
   - bld_config_toolkit
 ---
@@ -129,7 +126,6 @@ Max body: 4096 bytes. Every tool definition is precise. No generic placeholder t
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_toolkit]] | upstream | 0.68 |
-| [[p03_ins_toolkit_builder]] | upstream | 0.65 |
 | [[bld_orchestration_toolkit]] | upstream | 0.63 |
 | [[bld_memory_toolkit]] | downstream | 0.61 |
 | [[bld_config_toolkit]] | downstream | 0.57 |

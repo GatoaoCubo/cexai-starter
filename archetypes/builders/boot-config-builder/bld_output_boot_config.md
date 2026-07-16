@@ -19,11 +19,8 @@ keywords: [template with, boot config construction, output template boot config,
 name:]
 density_score: 0.90
 related:
-  - p11_qg_boot_config
   - bld_schema_boot_config
-  - bld_knowledge_card_boot_config
   - boot-config-builder
-  - bld_instruction_boot_config
 ---
 # Output Template: boot_config
 ```yaml
@@ -93,7 +90,6 @@ Agent_group: `{{agent_group_name}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_boot_config]] | downstream | 0.43 |
 | [[bld_schema_boot_config]] | downstream | 0.39 |
 | [[bld_knowledge_boot_config]] | upstream | 0.34 |
 | [[boot-config-builder]] | upstream | 0.34 |

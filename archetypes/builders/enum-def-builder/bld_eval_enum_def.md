@@ -18,10 +18,6 @@ updated: "2026-03-29"
 keywords: [enumeration definition, value completeness, per-value descriptions, extensibility declaration, and framework representation accuracy, quality-gate, enum-def]
 density_score: 0.90
 related:
-  - bld_knowledge_card_enum_def
-  - p11_qg_quality_gate
-  - bld_instruction_enum_def
-  - p11_qg_cli_tool
   - enum-def-builder
 ---
 ## Quality Gate

@@ -21,8 +21,6 @@ tldr: "6-7 I/O pairs teaching LLM to classify an answer as CORRECT/HALLUCINATION
 keywords: [hallucination, refusal, format-error, partial, correct, llm-judge, eval, classification, rag-grounding]
 related:
   - p01_kc_repo_assimilation_candidates
-  - prompt_technique_rag_grounding
-  - few_shot_entity_vs_value_object
   - p01_fse_clean_arch_layer_placement
   - p01_fse_entity_vs_value_object
 primary_8f: INJECT

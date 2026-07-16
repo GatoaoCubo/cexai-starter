@@ -26,11 +26,7 @@ title: "Memory Api Client"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_client
   - api-client-builder
-  - bld_instruction_client
-  - bld_collaboration_client
-  - p11_qg_client
 ---
 ## Summary
 An API client spec that omits retry and pagetion strategy is a spec for a demo, not a production integration. Both are invisible in happy-path testing and catastrophic at scale. Silent pagetion truncation is the most insidious: the client appears to work, returns data, but silently drops records after the first page.
@@ -93,8 +89,4 @@ python _tools/cex_score.py --apply p10-lr-client-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_client]] | upstream | 0.47 |
 | [[api-client-builder]] | upstream | 0.42 |
-| [[bld_instruction_client]] | upstream | 0.39 |
-| [[bld_collaboration_client]] | downstream | 0.38 |
-| [[p11_qg_client]] | downstream | 0.34 |

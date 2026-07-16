@@ -20,10 +20,8 @@ keywords: [template with, session backend construction, output template session 
 density_score: 0.90
 related:
   - bld_architecture_session_backend
-  - p11_qg_session_backend
   - bld_schema_session_backend
   - session-backend-builder
-  - p01_kc_session_backend
 ---
 # Output Template: session_backend
 ```yaml
@@ -100,7 +98,6 @@ upgrade_path: "{{current_backend}} -> {{next_backend}} (when {{trigger}})"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_session_backend]] | downstream | 0.48 |
-| [[p11_qg_session_backend]] | downstream | 0.47 |
 | [[bld_schema_session_backend]] | downstream | 0.43 |
 | [[session-backend-builder]] | downstream | 0.42 |
 | [[kc_session_backend]] | downstream | 0.40 |

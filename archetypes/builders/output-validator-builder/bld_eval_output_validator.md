@@ -28,11 +28,7 @@ keywords:
   - "kind: output_validator"
 density_score: 0.90
 related:
-  - p11_qg_constraint_spec
-  - p11_qg_quality_gate
   - output-validator-builder
-  - p11_qg_prompt_version
-  - bld_instruction_output_validator
 ---
 ## Quality Gate
 

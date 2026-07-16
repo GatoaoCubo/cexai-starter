@@ -18,11 +18,7 @@ keywords: [agentic_rag construction, collaboration agentic rag, agentic_rag, bui
 orchestrates, receives from, data source, user interface, feedback loop]
 density_score: 0.85
 related:
-  - bld_collaboration_search_strategy
-  - bld_collaboration_eval_metric
   - agentic-rag-builder
-  - bld_collaboration_response_format
-  - bld_collaboration_cohort_analysis
 ---
 ## Crew Role  
 Orchestrates the Agentic RAG workflow by integrating retrieval, generation, and feedback loops, ensuring alignment between data sources, query intent, and output quality.  
@@ -49,8 +45,4 @@ Does NOT handle raw data preprocessing (Data Engineers), agent behavior definiti
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_search_strategy]] | sibling | 0.32 |
-| [[bld_collaboration_eval_metric]] | sibling | 0.27 |
 | [[agentic-rag-builder]] | upstream | 0.27 |
-| [[bld_collaboration_response_format]] | sibling | 0.27 |
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.26 |

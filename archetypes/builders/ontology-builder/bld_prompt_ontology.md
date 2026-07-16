@@ -18,11 +18,7 @@ updated: "2026-04-13"
 keywords: [ontology construction, instruction ontology, domain scoping, axiom composition, and structural validation, ontology, builder, instruction, taxonomy, quality: null]
 density_score: 0.90
 related:
-  - bld_instruction_context_doc
   - bld_schema_ontology
-  - bld_knowledge_card_ontology
-  - bld_instruction_output_validator
-  - bld_instruction_memory_scope
 ---
 # Instructions: How to Produce an ontology
 ## Phase 1: RESEARCH

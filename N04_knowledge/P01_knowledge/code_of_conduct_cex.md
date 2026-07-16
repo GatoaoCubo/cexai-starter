@@ -15,10 +15,6 @@ updated: "2026-04-19"
 keywords: [knowledge gluttony, builders, knowledge cards, nuclei, api keys, credentials, pull request threads]
 density_score: 0.85
 related:
-  - bld_output_template_code_of_conduct
-  - n00_code_of_conduct_manifest
-  - p05_qg_code_of_conduct
-  - bld_knowledge_card_code_of_conduct
   - code-of-conduct-builder
 when_to_use: "Load when working on CEX Code of Conduct in P05. Consult for how to act on this code_of_conduct."
 slots:

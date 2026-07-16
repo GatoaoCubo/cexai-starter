@@ -18,9 +18,6 @@ keywords: [ai_rmf_profile construction, instruction ai rmf profile, ai_rmf_profi
 density_score: 0.85
 related:
   - ai-rmf-profile-builder
-  - p11_qg_ai_rmf_profile
-  - kc_ai_rmf_profile
-  - bld_knowledge_card_ai_rmf_profile
   - bld_schema_ai_rmf_profile
 ---
 ## Phase 1: RESEARCH
@@ -54,7 +51,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ai-rmf-profile-builder]] | downstream | 0.63 |
-| [[p11_qg_ai_rmf_profile]] | downstream | 0.54 |
-| [[kc_ai_rmf_profile]] | upstream | 0.47 |
-| [[bld_knowledge_card_ai_rmf_profile]] | upstream | 0.46 |
 | [[bld_schema_ai_rmf_profile]] | downstream | 0.40 |

@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_code_of_conduct
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_code_of_conduct_manifest
-  - p01_faq_cex_common_questions
 ---
 
 # code-of-conduct-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_code_of_conduct]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_code_of_conduct_manifest]] | related | 0.29 |
-| [[p01_faq_cex_common_questions]] | related | 0.27 |

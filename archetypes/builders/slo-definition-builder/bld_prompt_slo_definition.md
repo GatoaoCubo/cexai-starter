@@ -22,11 +22,7 @@ tldr: "Build an slo_definition with SLI metric, target threshold, error budget, 
 keywords: [slo definition builder instructions, target threshold, error budget, and alerting policy, instruction, slo_definition, reliability, service_name, sli_type, sli_metric]
 density_score: null
 related:
-  - kc_slo_definition
-  - bld_manifest_slo_definition
   - bld_schema_slo_definition
-  - bld_quality_gate_slo_definition
-  - bld_output_template_slo_definition
 ---
 ## Context
 The slo-definition-builder produces an `slo_definition` artifact -- a structured specification of a measurable reliability target. NOT enterprise_sla (contractual SLA with external parties), NOT quality_gate (build-time artifact scoring), NOT benchmark (point-in-time performance measurement).
@@ -66,8 +62,4 @@ Required body sections: SLI Definition, Target, Error Budget, Alerting Policy.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_slo_definition]] | upstream | 0.54 |
-| [[bld_manifest_slo_definition]] | related | 0.50 |
 | [[bld_schema_slo_definition]] | upstream | 0.43 |
-| [[bld_quality_gate_slo_definition]] | upstream | 0.43 |
-| [[bld_output_template_slo_definition]] | upstream | 0.42 |

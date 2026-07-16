@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [llm agent memory systems, memory_architecture-builder coordinates with consolidation-policy-builder, eviction rules, skill schema, retrieval config, and agent-builder, parent agent spec, memory_architecture, builder, collaboration]
 density_score: 0.90
 related:
-  - bld_collaboration_consolidation_policy
-  - bld_collaboration_procedural_memory
   - memory-architecture-builder
-  - bld_collaboration_agent
-  - bld_collaboration_memory_scope
 ---
 ## Crew Role
 Defines the structural blueprint for how an LLM agent manages context across sessions.

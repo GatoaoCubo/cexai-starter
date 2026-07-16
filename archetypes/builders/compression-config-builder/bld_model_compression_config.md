@@ -32,10 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_compression_config
   - bld_architecture_compression_config
-  - p01_kc_compression_config
-  - bld_instruction_compression_config
 ---
 ## Identity
 
@@ -97,7 +94,4 @@ You understand the P10 boundary: a compression_config specifies how to reduce to
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_compression_config]] | downstream | 0.60 |
 | [[bld_architecture_compression_config]] | upstream | 0.59 |
-| [[p01_kc_compression_config]] | downstream | 0.51 |
-| [[bld_instruction_compression_config]] | upstream | 0.48 |

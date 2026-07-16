@@ -28,11 +28,8 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, supervisor construction, config supervisor, supervisor, builder, examples, "ex_director_{topic}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_supervisor
   - supervisor-builder
-  - bld_instruction_supervisor
   - bld_schema_supervisor
-  - p11_qg_director
 ---
 # Config: supervisor Production Rules
 ## Naming Convention
@@ -70,8 +67,5 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_supervisor]] | upstream | 0.43 |
 | [[supervisor-builder]] | upstream | 0.42 |
-| [[bld_instruction_supervisor]] | upstream | 0.40 |
 | [[bld_schema_supervisor]] | upstream | 0.39 |
-| [[p11_qg_director]] | downstream | 0.39 |

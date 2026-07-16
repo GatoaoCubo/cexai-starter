@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [data_residency construction, output template data residency, data_residency, builder, output_template, audit logs, acme corp, related artifacts, regions compliance, gdpr ccpa]
 density_score: 0.85
-related:
-  - p09_qg_data_residency
-  - p01_kc_data_residency
-  - bld_knowledge_card_data_residency
-  - data-residency-builder
-  - bld_instruction_data_residency
 ---
 ```yaml
 ---
@@ -62,12 +56,3 @@ residency_config = {
     "audit_logs": False
 }
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p09_qg_data_residency]] | downstream | 0.42 |
-| [[p01_kc_data_residency]] | downstream | 0.36 |
-| [[bld_knowledge_card_data_residency]] | upstream | 0.34 |
-| [[data-residency-builder]] | downstream | 0.34 |
-| [[bld_instruction_data_residency]] | upstream | 0.32 |

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [judge_config construction, output template judge config, judge_config, builder, output_template, example parameters table, sample code block, related artifacts, validation rule, sibling]
 density_score: 0.85
 related:
-  - bld_output_template_playground_config
-  - bld_output_template_workflow_node
   - bld_config_judge_config
-  - bld_output_template_eval_metric
-  - bld_output_template_reranker_config
 ---
 ```yaml
 ---
@@ -69,8 +65,4 @@ rules:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_playground_config]] | sibling | 0.32 |
-| [[bld_output_template_workflow_node]] | sibling | 0.27 |
 | [[bld_config_judge_config]] | downstream | 0.21 |
-| [[bld_output_template_eval_metric]] | sibling | 0.20 |
-| [[bld_output_template_reranker_config]] | sibling | 0.20 |

@@ -35,9 +35,6 @@ parent: null
 related:
   - bld_architecture_retriever
   - search-tool-builder
-  - bld_instruction_retriever
-  - p09_kc_retriever_domain
-  - bld_collaboration_retriever
 ---
 ## Identity
 
@@ -156,5 +153,4 @@ All required frontmatter fields present. quality: null. Four body sections requi
 | [[bld_architecture_retriever]] | downstream | 0.56 |
 | [[search-tool-builder]] | sibling | 0.47 |
 | [[bld_prompt_retriever]] | upstream | 0.46 |
-| [[p09_kc_retriever_domain]] | downstream | 0.46 |
 | [[bld_orchestration_retriever]] | downstream | 0.45 |

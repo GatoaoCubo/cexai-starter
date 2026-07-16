@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_gpai_technical_doc
-  - n00_gpai_technical_doc_manifest
-  - p11_fb_gpai_technical_doc
   - gpai-technical-doc-builder
-  - bld_collaboration_gpai_technical_doc
 ---
 
 # gpai-technical-doc-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_gpai_technical_doc]] | related | 0.41 |
-| [[n00_gpai_technical_doc_manifest]] | related | 0.40 |
-| [[p11_fb_gpai_technical_doc]] | related | 0.39 |
 | [[gpai-technical-doc-builder]] | related | 0.38 |
-| [[bld_collaboration_gpai_technical_doc]] | related | 0.36 |

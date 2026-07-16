@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [safety_policy construction, quality gate safety policy, safety_policy, builder, quality_gate, "p[0-9]{2}-[a-z]{3}-[0-9]{4}", quality gate]
 density_score: 0.85
 related:
-  - kc_safety_policy
   - safety-policy-builder
-  - bld_collaboration_safety_policy
-  - n00_safety_policy_manifest
-  - bld_instruction_safety_policy
 ---
 ## Quality Gate
 

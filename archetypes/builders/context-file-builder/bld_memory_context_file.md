@@ -19,10 +19,8 @@ updated: "2026-04-18"
 keywords: [workspace instruction auto-injection, production lessons for context_file, scope classification mistakes, injection cost traps, inheritance pitfalls, byte budget failures, context_file, builder, memory, hermes_origin]
 density_score: 0.91
 related:
- - bld_knowledge_card_context_file
  - kc_context_file
  - context-file-builder
- - p11_qg_context_file
  - ctx_{{scope}}
 ---
 # Memory: context-file-builder
@@ -104,5 +102,4 @@ For reliable context_file production:
 | [[bld_knowledge_context_file]] | upstream | 0.59 |
 | [[kc_context_file]] | upstream | 0.57 |
 | [[context-file-builder]] | upstream | 0.56 |
-| [[p11_qg_context_file]] | upstream | 0.52 |
 | [\[ctx_`{{scope}}`\]] | upstream | 0.51 |

@@ -17,10 +17,6 @@ density_score: 1.0
 title: Architecture ISO - notifier
 related:
   - notifier-builder
-  - bld_collaboration_notifier
-  - p01_kc_notifier
-  - bld_collaboration_webhook
-  - bld_output_template_notifier
 ---
 # Architecture: notifier
 
@@ -94,7 +90,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[notifier-builder]] | related | 0.61 |
-| [[bld_collaboration_notifier]] | related | 0.58 |
-| [[p01_kc_notifier]] | upstream | 0.58 |
-| [[bld_collaboration_webhook]] | related | 0.52 |
-| [[bld_output_template_notifier]] | related | 0.51 |

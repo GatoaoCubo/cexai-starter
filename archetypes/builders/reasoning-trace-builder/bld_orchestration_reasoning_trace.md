@@ -19,8 +19,6 @@ keywords: [reasoning trace construction, collaboration reasoning trace, reasonin
 density_score: 0.90
 related:
   - reasoning-trace-builder
-  - p01_kc_reasoning_trace
-  - bld_knowledge_card_reasoning_trace
   - bld_memory_reasoning_trace
   - bld_config_reasoning_trace
 ---
@@ -74,7 +72,5 @@ I produce structured YAML traces for agent decision chains: step-evidence-confid
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reasoning-trace-builder]] | downstream | 0.50 |
-| [[p01_kc_reasoning_trace]] | downstream | 0.48 |
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.45 |
 | [[bld_memory_reasoning_trace]] | downstream | 0.41 |
 | [[bld_config_reasoning_trace]] | downstream | 0.40 |

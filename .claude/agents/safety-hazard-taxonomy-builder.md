@@ -4,11 +4,8 @@ description: "Builds ONE safety_hazard_taxonomy artifact via 8F pipeline. Loads 
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_safety_hazard_taxonomy_manifest
   - safety-hazard-taxonomy-builder
-  - bld_collaboration_safety_hazard_taxonomy
   - bld_config_safety_hazard_taxonomy
-  - bld_instruction_safety_hazard_taxonomy
 ---
 
 # safety-hazard-taxonomy-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_safety_hazard_taxonomy_manifest]] | related | 0.48 |
 | [[safety-hazard-taxonomy-builder]] | related | 0.48 |
-| [[bld_collaboration_safety_hazard_taxonomy]] | related | 0.45 |
 | [[bld_config_safety_hazard_taxonomy]] | related | 0.42 |
-| [[bld_instruction_safety_hazard_taxonomy]] | related | 0.35 |

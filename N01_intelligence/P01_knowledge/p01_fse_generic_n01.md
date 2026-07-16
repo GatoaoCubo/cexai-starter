@@ -13,7 +13,6 @@ density_score: 0.98
 related:
   - few-shot-example-builder
   - p01_chunk_n01
-  - bld_collaboration_few_shot_example
   - p01_retr_n01
   - p01_cit_n01
 ---

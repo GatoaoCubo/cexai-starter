@@ -26,11 +26,7 @@ title: "Memory Code Executor"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_code_executor
   - code-executor-builder
-  - p01_kc_code_executor
-  - p11_qg_code_executor
-  - p04_exec_python_sandbox
 ---
 ## Summary
 Code executors are the highest-risk P04 kind because they run arbitrary code. The difference between a safe executor and a dangerous one comes down to three mandatory constraints: timeout (prevents resource exhaustion), network policy (prevents data exfiltration), and sandbox type (prevents host access). All three must be explicit in the spec.
@@ -89,5 +85,4 @@ python _tools/cex_score.py --apply p10-lr-code-executor-builder.md
 | [[bld_knowledge_code_executor]] | upstream | 0.47 |
 | [[code-executor-builder]] | upstream | 0.38 |
 | [[kc_code_executor]] | upstream | 0.37 |
-| [[p11_qg_code_executor]] | downstream | 0.36 |
 | p04_exec_python_sandbox | upstream | 0.34 |

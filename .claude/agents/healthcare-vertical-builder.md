@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_healthcare_vertical
-  - p11_fb_healthcare_vertical
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_output_template_healthcare_vertical
 ---
 
 # healthcare-vertical-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_healthcare_vertical]] | related | 0.33 |
-| [[p11_fb_healthcare_vertical]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[bld_output_template_healthcare_vertical]] | related | 0.29 |

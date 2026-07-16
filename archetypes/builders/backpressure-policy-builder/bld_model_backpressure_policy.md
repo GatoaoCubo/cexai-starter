@@ -44,9 +44,6 @@ keywords:
 density_score: 1.0
 related:
   - bld_architecture_backpressure_policy
-  - bld_knowledge_card_backpressure_policy
-  - p01_kc_backpressure_policy
-  - bld_instruction_backpressure_policy
   - bld_schema_backpressure_policy
 ---
 ## Identity
@@ -123,7 +120,4 @@ ID must match `^p09_bp_[a-z][a-z0-9_]+$`. Body must not exceed 2048 bytes.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_backpressure_policy]] | upstream | 0.59 |
-| [[bld_knowledge_card_backpressure_policy]] | upstream | 0.57 |
-| [[p01_kc_backpressure_policy]] | related | 0.53 |
-| [[bld_instruction_backpressure_policy]] | upstream | 0.51 |
 | [[bld_schema_backpressure_policy]] | upstream | 0.47 |

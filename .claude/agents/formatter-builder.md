@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - formatter-builder
   - bld_architecture_formatter
-  - p05_fmt_artifact_creation_report
-  - bld_collaboration_formatter
-  - p11_fb_formatter
 ---
 
 # formatter-builder Sub-Agent
@@ -90,4 +87,3 @@ Five duties bind any agent that emits an artifact:
 | [[bld_architecture_formatter]] | related | 0.39 |
 | p05_fmt_artifact_creation_report | related | 0.38 |
 | [[bld_orchestration_formatter]] | related | 0.38 |
-| [[p11_fb_formatter]] | related | 0.34 |

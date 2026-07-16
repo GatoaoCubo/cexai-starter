@@ -22,9 +22,6 @@ linked_artifacts:
   related: []
 related:
   - schedule-builder
-  - p11_qg_schedule
-  - schedule
-  - bld_knowledge_card_schedule
   - bld_schema_schedule
 ---
 
@@ -98,7 +95,6 @@ A schedule defines WHEN a workflow or agent_group task runs — via cron express
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[schedule-builder]] | related | 0.51 |
-| [[p11_qg_schedule]] | upstream | 0.50 |
 | schedule | related | 0.48 |
 | [[bld_knowledge_schedule]] | sibling | 0.45 |
 | [[bld_schema_schedule]] | upstream | 0.45 |

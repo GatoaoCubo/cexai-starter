@@ -19,9 +19,6 @@ provides, receives from, produces for]
 density_score: 0.85
 related:
   - capability-registry-builder
-  - bld_collaboration_agent
-  - p01_kc_agent
-  - bld_collaboration_agent_computer_interface
   - bld_architecture_agent
 ---
 ## Crew Role

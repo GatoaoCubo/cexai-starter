@@ -4,11 +4,7 @@ description: "Builds ONE revision_loop_policy artifact via 8F pipeline. Loads re
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p11_fb_revision_loop_policy
-  - n00_revision_loop_policy_manifest
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p11_tools_revision_loop_policy
 ---
 
 # revision-loop-policy-builder Sub-Agent
@@ -86,8 +82,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_revision_loop_policy]] | related | 0.32 |
-| [[n00_revision_loop_policy_manifest]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.30 |
-| [[p11_tools_revision_loop_policy]] | related | 0.30 |

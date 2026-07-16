@@ -18,11 +18,8 @@ keywords: [experiment_tracker construction, knowledge card experiment tracker, e
 in, key concepts, data engineering, industry standard, industry standards]
 density_score: 0.85
 related:
-  - bld_knowledge_card_model_registry
-  - kc_model_registry
   - model-registry-builder
   - experiment-tracker-builder
-  - bld_instruction_model_registry
 ---
 ## Domain Overview
 In the MLOps lifecycle, an experiment tracker serves as the centralized system of record for all iterative model development. It captures the "how" and "what" of training processes, ensuring that every hyperparameter tuning session, architecture change, and data version is documented for auditability and reproducibility.
@@ -67,8 +64,5 @@ Beyond simple logging, modern trackers manage the complex lineage between code, 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_model_registry]] | sibling | 0.44 |
-| [[kc_model_registry]] | sibling | 0.42 |
 | [[model-registry-builder]] | downstream | 0.40 |
 | [[experiment-tracker-builder]] | downstream | 0.34 |
-| [[bld_instruction_model_registry]] | downstream | 0.29 |

@@ -17,10 +17,7 @@ keywords: [ubiquitous language protocol, canonical intelligence tradecraft terms
 density_score: 0.94
 related:
   - p01_kc_information_retrieval_fundamentals
-  - audit_self_review_n01
-  - component_map_n01
   - agent_card_n01
-  - p03_ap_n01
   - p01_kc_research_bias_taxonomy
   - p01_kc_model_context_protocol
 ---

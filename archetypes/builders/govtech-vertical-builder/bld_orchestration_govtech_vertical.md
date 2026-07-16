@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [govtech_vertical construction, collaboration govtech vertical, govtech_vertical, builder, collaboration, crew role  
 integrates, receives from, policy analyst, legal review, tech architect]
 density_score: 0.85
-related:
-  - bld_collaboration_legal_vertical
-  - bld_collaboration_healthcare_vertical
-  - bld_collaboration_compliance_checklist
-  - bld_collaboration_compliance_framework
-  - bld_collaboration_fintech_vertical
 ---
 ## Crew Role  
 Integrates govtech solutions tailored to specific verticals (e.g., healthcare, education), ensuring alignment with policy goals, technical feasibility, and stakeholder needs. Coordinates cross-functional teams to deliver scalable, compliant systems.  
@@ -43,12 +37,3 @@ Integrates govtech solutions tailored to specific verticals (e.g., healthcare, e
 
 ## Boundary  
 Does NOT handle cross-vertical policy harmonization (legal_vertical) or audit-driven compliance checks (compliance_checklist). These are managed by dedicated legal and audit builders.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_legal_vertical]] | sibling | 0.41 |
-| [[bld_collaboration_healthcare_vertical]] | sibling | 0.34 |
-| [[bld_collaboration_compliance_checklist]] | sibling | 0.32 |
-| [[bld_collaboration_compliance_framework]] | sibling | 0.31 |
-| [[bld_collaboration_fintech_vertical]] | sibling | 0.31 |

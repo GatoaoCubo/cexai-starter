@@ -19,7 +19,6 @@ density_score: 0.85
 related:
   - team-charter-builder
   - kc_orchestration_vocabulary
-  - bld_knowledge_card_team_charter
   - bld_architecture_team_charter
   - bld_tools_team_charter
 ---

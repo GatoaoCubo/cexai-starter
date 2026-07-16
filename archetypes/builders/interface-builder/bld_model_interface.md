@@ -31,10 +31,6 @@ parent: null
 8f: "F1_constrain"
 related:
   - input-schema-builder
-  - bld_collaboration_interface
-  - bld_knowledge_card_interface
-  - p01_kc_interface
-  - p01_kc_pillar_brief_p06_schema_en
 ---
 ## Identity
 

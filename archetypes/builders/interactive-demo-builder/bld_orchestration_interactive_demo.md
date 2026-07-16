@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [interactive_demo construction, collaboration interactive demo, interactive_demo, builder, collaboration, crew role  
 creates, receives from, content writer, design team, engineering team]
 density_score: 0.85
-related:
-  - bld_collaboration_product_tour
-  - bld_collaboration_reranker_config
-  - bld_collaboration_ab_test_config
-  - bld_collaboration_reward_model
-  - bld_collaboration_white_label_config
 ---
 ## Crew Role  
 Creates interactive demo scripts by integrating user stories, technical specs, and design assets into cohesive, executable demo flows. Acts as a bridge between content creators and engineers.  
@@ -43,12 +37,3 @@ Creates interactive demo scripts by integrating user stories, technical specs, a
 
 ## Boundary  
 Does NOT handle hosting/deployment (DevOps), user testing (QA Team), or asset storage management (Design Team).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_product_tour]] | sibling | 0.42 |
-| [[bld_collaboration_reranker_config]] | sibling | 0.38 |
-| [[bld_collaboration_ab_test_config]] | sibling | 0.38 |
-| [[bld_collaboration_reward_model]] | sibling | 0.37 |
-| [[bld_collaboration_white_label_config]] | sibling | 0.36 |

@@ -31,8 +31,6 @@ keywords:
   - "steps"
 density_score: 0.85
 related:
-  - p03_ins_reasoning_trace_builder
-  - bld_knowledge_card_reasoning_trace
   - bld_schema_reasoning_trace
   - reasoning-trace-builder
   - bld_memory_reasoning_trace
@@ -125,8 +123,6 @@ FAILURES:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_reasoning_trace_builder]] | upstream | 0.57 |
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.54 |
 | [[bld_schema_reasoning_trace]] | upstream | 0.51 |
 | [[reasoning-trace-builder]] | upstream | 0.46 |
 | [[bld_memory_reasoning_trace]] | upstream | 0.43 |

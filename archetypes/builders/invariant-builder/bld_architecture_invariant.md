@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of law, and architectural position, invariant construction, architecture invariant, invariant, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - p01_kc_invariant
   - invariant-builder
-  - p03_ins_law
   - p08_law_{{NUMBER}}
-  - bld_collaboration_invariant
 ---
 # Architecture: law in the CEX
 ## Component Inventory
@@ -74,6 +71,5 @@ guardrail       --depends-->   law  --signals-->      violation_event
 |----------|-------------|-------|
 | [[kc_invariant]] | related | 0.52 |
 | [[invariant-builder]] | related | 0.52 |
-| [[p03_ins_law]] | upstream | 0.47 |
 | [\[p08_law_`{{NUMBER}}`\]] | related | 0.45 |
 | [[bld_orchestration_invariant]] | related | 0.41 |

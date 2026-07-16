@@ -19,10 +19,7 @@ keywords: [supervisor construction, knowledge card supervisor, supervisor, build
 density_score: 0.90
 related:
   - supervisor-builder
-  - p01_kc_supervisor
-  - bld_instruction_supervisor
   - bld_config_supervisor
-  - p11_qg_director
 ---
 # Domain Knowledge: supervisor
 ## Executive Summary
@@ -83,7 +80,4 @@ A supervisor is the crew orchestration artifact in CEX — a declarative coordin
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[supervisor-builder]] | downstream | 0.54 |
-| [[p01_kc_supervisor]] | sibling | 0.47 |
-| [[bld_instruction_supervisor]] | downstream | 0.46 |
 | [[bld_config_supervisor]] | downstream | 0.44 |
-| [[p11_qg_director]] | downstream | 0.44 |

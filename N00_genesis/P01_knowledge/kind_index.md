@@ -11,9 +11,7 @@ tags: [index, p01, archetype, n00]
 density_score: 1.0
 related:
   - kc_knowledge_vocabulary
-  - p02_ap_n04_knowledge
   - bld_architecture_supabase_data_layer
-  - bld_collaboration_supabase_data_layer
 updated: "2026-05-27"
 ---
 

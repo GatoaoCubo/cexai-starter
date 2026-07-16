@@ -26,10 +26,6 @@ L2: Enforces Ubiquitous Language (Evans DDD) across agents sharing a bounded con
 L3: When agents need consistent term definitions to prevent semantic drift.
 core: true
 related:
-  - p01_kc_domain_vocabulary
-  - bld_kc_domain_vocabulary
-  - bld_rules_domain_vocabulary
-  - bld_context_sources_domain_vocabulary
   - bld_architecture_domain_vocabulary
 ---
 ## Identity
@@ -98,7 +94,4 @@ quality: null
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_domain_vocabulary]] | related | 0.57 |
-| [[bld_kc_domain_vocabulary]] | related | 0.51 |
-| [[bld_rules_domain_vocabulary]] | downstream | 0.49 |
-| [[bld_context_sources_domain_vocabulary]] | downstream | 0.47 |
 | [[bld_architecture_domain_vocabulary]] | downstream | 0.47 |

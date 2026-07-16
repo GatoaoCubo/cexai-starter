@@ -12,10 +12,7 @@ llm_function: CONSTRAIN
 created: 2026-06-22
 updated: 2026-06-22
 related:
-  - p04_ct_distill
   - bld_architecture_document_loader
-  - p06_is_env_contract_n05
-  - p11_qg_vision_tool
 ---
 
 ## Input Schema (MoldField[])
@@ -64,4 +61,3 @@ input_contract:
 | p04_ct_distill | upstream | 0.16 |
 | [[bld_architecture_document_loader]] | upstream | 0.16 |
 | p06_is_env_contract_n05 | sibling | 0.16 |
-| [[p11_qg_vision_tool]] | downstream | 0.15 |

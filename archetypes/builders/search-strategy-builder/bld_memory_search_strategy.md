@@ -21,10 +21,7 @@ reviewed, related artifacts, query complexity]
 density_score: 0.85
 related:
   - search-strategy-builder
-  - bld_knowledge_card_search_strategy
   - bld_architecture_search_strategy
-  - p04_qg_search_strategy
-  - kc_search_strategy
 ---
 ## Observation
 Common issues include over-allocating resources for simple queries or under-allocating for complex ones, leading to inefficiency or timeouts. Strategies often fail to balance latency and accuracy trade-offs during inference.
@@ -46,7 +43,4 @@ Reviewed artifacts showed 20% latency reduction when using query-based compute t
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[search-strategy-builder]] | upstream | 0.51 |
-| [[bld_knowledge_card_search_strategy]] | upstream | 0.37 |
 | [[bld_architecture_search_strategy]] | upstream | 0.33 |
-| [[p04_qg_search_strategy]] | downstream | 0.33 |
-| [[kc_search_strategy]] | upstream | 0.33 |

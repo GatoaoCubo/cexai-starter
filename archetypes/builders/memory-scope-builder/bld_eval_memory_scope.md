@@ -29,10 +29,7 @@ keywords:
 density_score: 0.90
 related:
   - memory-scope-builder
-  - bld_instruction_memory_scope
   - bld_architecture_memory_scope
-  - p11_qg_handoff_protocol
-  - p10_lr_memory_scope_builder
 ---
 ## Quality Gate
 

@@ -20,10 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_instruction_integration_guide
-  - kc_integration_guide
   - sdk-example-builder
-  - p10_lr_integration_guide_builder
   - quickstart-guide-builder
 ---
 ## Identity
@@ -72,8 +69,5 @@ NEVER INCLUDE high-level overviews, schema references, or quickstart-style "5-mi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_integration_guide]] | upstream | 0.38 |
-| [[kc_integration_guide]] | upstream | 0.34 |
 | [[sdk-example-builder]] | sibling | 0.34 |
-| [[p10_lr_integration_guide_builder]] | downstream | 0.33 |
 | [[quickstart-guide-builder]] | sibling | 0.30 |

@@ -30,10 +30,6 @@ tldr: Golden and anti-examples for workflow primitive construction, demonstratin
 llm_function: BECOME
 8f: "F8_collaborate"
 related:
-  - bld_collaboration_workflow_primitive
-  - p03_ins_workflow_primitive_builder
-  - bld_knowledge_card_workflow_primitive
-  - p01_kc_workflow_primitive
   - bld_memory_workflow_primitive
 ---
 ## Identity
@@ -129,7 +125,6 @@ Max body: 4096 bytes. Every field definition is precise. No explanatory prose in
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_workflow_primitive]] | upstream | 0.65 |
-| [[p03_ins_workflow_primitive_builder]] | upstream | 0.61 |
 | [[bld_knowledge_workflow_primitive]] | upstream | 0.61 |
 | [[kc_workflow_primitive]] | related | 0.60 |
 | [[bld_memory_workflow_primitive]] | upstream | 0.60 |

@@ -23,8 +23,6 @@ related:
   - bld_memory_skill
   - cybersec-skill-builder
   - bld_architecture_cybersec_skill
-  - bld_collaboration_cybersec_skill
-  - p01_kc_cybersec_skill
 ---
 
 # Memory: cybersec-skill-builder
@@ -126,5 +124,3 @@ sin_lens: gating_wrath
 | [[bld_memory_skill]] | parent | 0.60 |
 | [[cybersec-skill-builder]] | upstream | 0.55 |
 | [[bld_architecture_cybersec_skill]] | upstream | 0.50 |
-| [[bld_collaboration_cybersec_skill]] | downstream | 0.55 |
-| [[p01_kc_cybersec_skill]] | sibling | 0.62 |

@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [multimodal_prompt construction, tools multimodal prompt, multimodal_prompt, builder, tools, production tools, validation tools, industry reference models, gemini pro vision, haotian liu]
 density_score: 0.85
 related:
-  - bld_collaboration_prompt_version
-  - bld_collaboration_action_prompt
   - bld_tools_prompt_optimizer
-  - bld_knowledge_card_prompt_optimizer
   - bld_tools_visual_workflow
 ---
 ## Production Tools

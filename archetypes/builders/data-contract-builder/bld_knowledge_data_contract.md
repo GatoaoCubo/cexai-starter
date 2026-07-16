@@ -15,10 +15,8 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_data_contract
   - bld_memory_data_contract
   - data-contract-builder
-  - bld_context_sources_data_contract
   - bld_architecture_data_contract
 ---
 # Domain Knowledge: data_contract
@@ -81,5 +79,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 | [[kc_data_contract]] | sibling | 0.44 |
 | [[bld_memory_data_contract]] | downstream | 0.33 |
 | [[data-contract-builder]] | downstream | 0.33 |
-| [[bld_context_sources_data_contract]] | downstream | 0.30 |
 | [[bld_architecture_data_contract]] | downstream | 0.29 |

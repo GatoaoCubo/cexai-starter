@@ -4,10 +4,7 @@ description: "Builds ONE subscription_tier artifact via 8F pipeline. Loads subsc
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - n00_subscription_tier_manifest
   - bld_config_subscription_tier
 ---
 

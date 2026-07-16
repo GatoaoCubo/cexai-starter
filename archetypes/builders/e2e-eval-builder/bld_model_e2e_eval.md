@@ -30,11 +30,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - p01_kc_e2e_eval
   - bld_architecture_e2e_eval
-  - bld_instruction_e2e_eval
-  - n00_e2e_eval_manifest
-  - bld_collaboration_e2e_eval
 ---
 ## Identity
 
@@ -131,8 +127,4 @@ cleanup:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_e2e_eval]] | related | 0.54 |
 | [[bld_architecture_e2e_eval]] | downstream | 0.50 |
-| [[bld_instruction_e2e_eval]] | upstream | 0.48 |
-| [[n00_e2e_eval_manifest]] | related | 0.44 |
-| [[bld_collaboration_e2e_eval]] | downstream | 0.43 |

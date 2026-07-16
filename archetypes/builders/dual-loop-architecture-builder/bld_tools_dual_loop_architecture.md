@@ -20,9 +20,7 @@ density_score: 0.88
 related:
   - bld_config_dual_loop_architecture
   - bld_architecture_dual_loop_architecture
-  - bld_collaboration_dual_loop_architecture
   - dual-loop-architecture-builder
-  - bld_knowledge_card_dual_loop_architecture
 ---
 ## Runtime Tools (what the produced artifact consumes)
 
@@ -63,6 +61,4 @@ This ISO applies to the dual loop pattern, coordinating an outer orchestrator wi
 |----------|-------------|-------|
 | [[bld_config_dual_loop_architecture]] | downstream | 0.65 |
 | [[bld_architecture_dual_loop_architecture]] | downstream | 0.62 |
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.59 |
 | [[dual-loop-architecture-builder]] | downstream | 0.57 |
-| [[bld_knowledge_card_dual_loop_architecture]] | upstream | 0.56 |

@@ -19,9 +19,7 @@ density_score: 0.85
 related:
   - bld_schema_deployment_manifest
   - bld_schema_team_charter
-  - kc_fabrication_manifest
   - fabrication-manifest-builder
-  - bld_output_template_fabrication_manifest
 ---
 ## Top-Level Fields (real shape -- `new_manifest()`, `_tools/cex_bootstrap_orchestrator.py:278-315`)
 ### Required (present from creation)
@@ -77,6 +75,4 @@ not something this builder should silently paper over.
 |----------|-------------|-------|
 | [[bld_schema_deployment_manifest]] | sibling | 0.50 |
 | [[bld_schema_team_charter]] | sibling | 0.48 |
-| [[kc_fabrication_manifest]] | upstream | 0.45 |
 | [[fabrication-manifest-builder]] | downstream | 0.40 |
-| [[bld_output_template_fabrication_manifest]] | downstream | 0.38 |

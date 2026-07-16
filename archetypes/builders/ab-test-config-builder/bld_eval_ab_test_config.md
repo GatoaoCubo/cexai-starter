@@ -18,10 +18,6 @@ keywords: [ab_test_config construction, artifact-level quality gate, validates a
 density_score: 0.87
 related:
   - bld_schema_ab_test_config
-  - p11_qg_quality_gate
-  - p11_qg_feature_flag
-  - p11_qg_guardrail
-  - p12_qg_workflow_node
 ---
 ## Quality Gate
 

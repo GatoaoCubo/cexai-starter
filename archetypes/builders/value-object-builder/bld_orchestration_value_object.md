@@ -15,12 +15,6 @@ keywords: [value object schema, workflow coordination, and lifecycle management,
 density_score: 0.81
 created: "2026-04-17"
 updated: "2026-04-17"
-related:
-  - bld_rules_aggregate_root
-  - bld_rules_process_manager
-  - bld_rules_event_stream
-  - bld_rules_data_contract
-  - bld_knowledge_card_value_object
 ---
 # Rules: value_object
 ## Absolute Rules (HARD -- never violate)
@@ -68,12 +62,3 @@ sequencing: tested
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope orchestration
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_rules_aggregate_root]] | sibling | 0.42 |
-| [[bld_rules_process_manager]] | sibling | 0.36 |
-| [[bld_rules_event_stream]] | sibling | 0.32 |
-| [[bld_rules_data_contract]] | downstream | 0.32 |
-| [[bld_knowledge_card_value_object]] | sibling | 0.30 |

@@ -18,10 +18,6 @@ keywords: [component map of citation, and architectural position, citation const
 density_score: 0.90
 related:
   - citation-builder
-  - p01_kc_citation
-  - bld_output_template_citation
-  - p10_lr_citation_builder
-  - bld_instruction_citation
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -64,6 +60,4 @@ rag_source, search_tool --> [citation] --> knowledge_card, context_doc
 |----------|-------------|-------|
 | [[citation-builder]] | upstream | 0.51 |
 | [[kc_citation]] | upstream | 0.48 |
-| [[bld_output_template_citation]] | upstream | 0.46 |
-| [[p10_lr_citation_builder]] | downstream | 0.41 |
 | [[bld_prompt_citation]] | upstream | 0.41 |

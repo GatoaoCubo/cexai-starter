@@ -21,10 +21,6 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - p01_gl_TERM_SLUG
-  - bld_knowledge_card_glossary_entry
-  - bld_instruction_glossary_entry
-  - n00_glossary_entry_manifest
   - glossary-entry-builder
 ---
 

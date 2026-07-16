@@ -17,10 +17,6 @@ updated: "2026-04-13"
 keywords: [prosody_config construction, output template prosody config, two-shape template, prosody_config, builder, output_template, ssml, related artifacts, yaml prs_, prs_ slug]
 density_score: 0.88
 related:
-  - bld_instruction_prosody_config
-  - p09_qg_prosody_config
-  - hybrid_review2_n03
-  - bld_knowledge_card_prosody_config
   - bld_schema_prosody_config
 ---
 ## Shape A -- SSML emission (Azure/Google/AWS/IBM)
@@ -79,8 +75,4 @@ target_providers: [{{providers_csv}}]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_prosody_config]] | upstream | 0.56 |
-| [[p09_qg_prosody_config]] | downstream | 0.46 |
-| [[hybrid_review2_n03]] | downstream | 0.43 |
-| [[bld_knowledge_card_prosody_config]] | upstream | 0.36 |
 | [[bld_schema_prosody_config]] | downstream | 0.25 |

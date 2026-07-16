@@ -18,9 +18,6 @@ updated: "2026-04-17"
 keywords: [prospective memory construction, collaboration prospective memory, prospective_memory, builder, collaboration, my role, crew compositions, agent memory system, handoff protocol, depend on]
 density_score: 0.90
 related:
-  - bld_collaboration_memory_scope
-  - bld_collaboration_working_memory
-  - bld_knowledge_card_prospective_memory
   - bld_architecture_prospective_memory
   - prospective-memory-builder
 ---
@@ -64,8 +61,5 @@ I do not schedule workflow jobs (that is schedule P12). I do not hold current ta
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_scope]] | sibling | 0.47 |
-| [[bld_collaboration_working_memory]] | sibling | 0.45 |
-| [[bld_knowledge_card_prospective_memory]] | upstream | 0.40 |
 | [[bld_architecture_prospective_memory]] | upstream | 0.39 |
 | [[prospective-memory-builder]] | upstream | 0.38 |

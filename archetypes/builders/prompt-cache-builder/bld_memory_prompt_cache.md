@@ -26,11 +26,7 @@ title: Memory ISO - prompt_cache
 8f: "F7_govern"
 density_score: 0.98
 related:
-  - bld_knowledge_card_prompt_cache
-  - p01_kc_prompt_cache
   - prompt-cache-builder
-  - ex_knowledge_card_prompt_caching
-  - bld_output_template_prompt_cache
 ---
 ## Summary
 Prompt caches reduce LLM latency and cost by reusing prompt/completion pairs. Primary failures are caching everything (pollution), no invalidation (stale), and excessive TTL (outdated).
@@ -48,8 +44,4 @@ Prompt caches reduce LLM latency and cost by reusing prompt/completion pairs. Pr
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_prompt_cache]] | upstream | 0.55 |
-| [[p01_kc_prompt_cache]] | related | 0.51 |
 | [[prompt-cache-builder]] | related | 0.46 |
-| [[ex_knowledge_card_prompt_caching]] | upstream | 0.38 |
-| [[bld_output_template_prompt_cache]] | upstream | 0.35 |

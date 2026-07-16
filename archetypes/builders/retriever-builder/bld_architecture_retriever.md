@@ -32,9 +32,7 @@ density_score: 1.0
 title: Architecture ISO - retriever
 related:
   - retriever-builder
-  - p01_kc_retriever
   - bld_memory_retriever
-  - n00_retriever_manifest
   - search-tool-builder
 ---
 # Architecture: retriever

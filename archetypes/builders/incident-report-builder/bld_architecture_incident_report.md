@@ -21,7 +21,6 @@ related:
   - bld_architecture_compliance_framework
   - incident-report-builder
   - bld_architecture_content_filter
-  - bld_collaboration_incident_report
   - bld_architecture_sandbox_config
 ---
 ## Component Inventory
@@ -54,5 +53,4 @@ Incident_report-builder sits within CEX's P11 Feedback pillar as the post-incide
 | [[bld_architecture_compliance_framework]] | sibling | 0.32 |
 | [[incident-report-builder]] | downstream | 0.31 |
 | [[bld_architecture_content_filter]] | sibling | 0.30 |
-| [[bld_collaboration_incident_report]] | downstream | 0.29 |
 | [[bld_architecture_sandbox_config]] | sibling | 0.29 |

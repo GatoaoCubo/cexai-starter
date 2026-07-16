@@ -31,11 +31,7 @@ keywords:
   - "related artifacts"
 density_score: 0.90
 related:
-  - bld_knowledge_card_input_schema
   - bld_schema_input_schema
-  - p10_lr_input_schema_builder
-  - bld_instruction_instruction
-  - p11_qg_input_schema
 ---
 # Instructions: How to Produce an input_schema
 ## Phase 1: RESEARCH
@@ -86,6 +82,4 @@ related:
 |----------|-------------|-------|
 | [[bld_knowledge_input_schema]] | upstream | 0.40 |
 | [[bld_schema_input_schema]] | downstream | 0.36 |
-| [[p10_lr_input_schema_builder]] | downstream | 0.34 |
 | [[bld_prompt_instruction]] | sibling | 0.33 |
-| [[p11_qg_input_schema]] | downstream | 0.33 |

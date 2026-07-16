@@ -11,12 +11,6 @@ tldr: "Hook feedback: anti-patterns, regression signals, and quality improvement
 keywords: [hook feedback, regression signals, and quality improvement triggers, feedback, anti-patterns, hook, common failure modes, correction protocol, key behaviors, quality thresholds]
 density_score: 1.0
 updated: "2026-04-22"
-related:
-  - p11_fb_retriever
-  - p11_fb_hook_config
-  - p11_fb_ab_test_config
-  - p11_fb_handoff
-  - p11_fb_research_pipeline
 ---
 # Feedback: Hook
 
@@ -80,8 +74,6 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_retriever]] | sibling | 0.77 |
 | p11_fb_hook_config | sibling | 0.77 |
 | p11_fb_ab_test_config | sibling | 0.76 |
 | p11_fb_handoff | sibling | 0.76 |
-| [[p11_fb_research_pipeline]] | sibling | 0.76 |

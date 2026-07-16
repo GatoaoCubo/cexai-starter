@@ -33,7 +33,6 @@ density_score: 0.90
 related:
   - system-prompt-builder
   - bld_schema_system_prompt
-  - bld_collaboration_system_prompt
   - bld_memory_system_prompt
   - action-prompt-builder
 ---

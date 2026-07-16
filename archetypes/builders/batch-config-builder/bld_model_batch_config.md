@@ -34,11 +34,7 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_batch_config
   - bld_architecture_batch_config
-  - bld_knowledge_card_batch_config
-  - bld_instruction_batch_config
-  - p01_kc_batch_config
 ---
 ## Identity
 
@@ -118,8 +114,4 @@ It is NOT a schedule (cron timing belongs in P09 schedule), NOT a workflow
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_batch_config]] | downstream | 0.66 |
 | [[bld_architecture_batch_config]] | upstream | 0.60 |
-| [[bld_knowledge_card_batch_config]] | upstream | 0.56 |
-| [[bld_instruction_batch_config]] | upstream | 0.51 |
-| [[p01_kc_batch_config]] | related | 0.48 |

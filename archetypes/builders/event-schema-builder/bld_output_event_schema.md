@@ -19,10 +19,7 @@ keywords: [template with, event schema construction, output template event schem
 density_score: 0.90
 related:
   - bld_schema_event_schema
-  - kc_event_schema
-  - p11_qg_event_schema
   - bld_config_event_schema
-  - bld_knowledge_card_event_schema
 ---
 
 # Output Template: event_schema
@@ -95,7 +92,4 @@ tldr: "{{EventName}} v{{major}}: {{list_required_fields}}. CloudEvents 1.0. Sour
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_event_schema]] | downstream | 0.50 |
-| [[kc_event_schema]] | upstream | 0.47 |
-| [[p11_qg_event_schema]] | downstream | 0.45 |
 | [[bld_config_event_schema]] | downstream | 0.43 |
-| [[bld_knowledge_card_event_schema]] | upstream | 0.38 |

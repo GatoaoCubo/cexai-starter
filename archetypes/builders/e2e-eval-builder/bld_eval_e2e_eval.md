@@ -18,11 +18,8 @@ updated: "2026-03-27"
 keywords: [e_eval artifacts, gates for e, validates pipeline coverage, stage completeness, fixture validity, assertion specificity, and cleanup protocol]
 density_score: 0.91
 related:
-  - p11_qg_quality_gate
   - e2e-eval-builder
-  - p11_qg_kind_builder
   - bld_architecture_e2e_eval
-  - bld_instruction_e2e_eval
 ---
 ## Quality Gate
 

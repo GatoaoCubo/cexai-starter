@@ -29,10 +29,8 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_aggregate_root
-  - bld_instruction_value_object
   - bld_schema_process_manager
   - bld_schema_constitutional_rule
-  - bld_output_template_value_object
 ---
 # Schema: value_object
 ## Frontmatter Fields
@@ -98,7 +96,5 @@ python _tools/cex_schema_hydrate.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_aggregate_root]] | sibling | 0.44 |
-| [[bld_instruction_value_object]] | related | 0.41 |
 | [[bld_schema_process_manager]] | sibling | 0.39 |
 | [[bld_schema_constitutional_rule]] | sibling | 0.37 |
-| [[bld_output_template_value_object]] | related | 0.36 |

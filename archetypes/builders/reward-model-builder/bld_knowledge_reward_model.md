@@ -18,11 +18,7 @@ keywords: [reward_model construction, knowledge card reward model, reward_model,
 reward, key concepts, reward shaping, sparse rewards, reward scaling]
 density_score: 0.85
 related:
-  - kc_reward_model
   - reward-model-builder
-  - p10_lr_reward_model_builder
-  - n00_reward_model_manifest
-  - p11_rs_n01
 ---
 ## Domain Overview
 Reward models are critical in reinforcement learning (RL) for defining agent behavior through quantifiable objectives. They translate abstract goals (e.g., "safety," "efficiency") into numerical signals that guide learning. Proper configuration ensures alignment with downstream tasks, avoids reward hacking, and balances exploration-exploitation tradeoffs. In industry, reward models are pivotal in autonomous systems, robotics, and large language models (LLMs), where misalignment can lead to unsafe or suboptimal outcomes.
@@ -67,8 +63,4 @@ Reward model design intersects with safety-critical AI, requiring careful calibr
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_reward_model]] | sibling | 0.78 |
 | [[reward-model-builder]] | downstream | 0.70 |
-| [[p10_lr_reward_model_builder]] | downstream | 0.61 |
-| [[n00_reward_model_manifest]] | sibling | 0.59 |
-| [[p11_rs_n01]] | downstream | 0.55 |

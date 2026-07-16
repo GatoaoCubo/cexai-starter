@@ -21,12 +21,6 @@ llm_function: BECOME
 8f: "F3_inject"
 keywords: [d software project builder, capability manifest, build cli-tool for x, build api for x, build pipeline for x, software project builder, manifest
 this, what it does, depends on, hub actions]
-related:
-  - bld_sp_instruction_software_project
-  - p01_kc_n03_software_engineering
-  - p04_cli_software_project_n03
-  - bld_sp_schema_software_project
-  - bld_sp_quality_gate_software_project
 ---
 ## Identity
 
@@ -145,12 +139,3 @@ project/
 - Multi-stage Docker (builder ??? slim runtime, non-root user)
 - No hardcoded secrets (all via env vars + BaseSettings)
 - 8F pipeline mandatory on every artifact produced
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_sp_instruction_software_project]] | related | 0.49 |
-| [[p01_kc_n03_software_engineering]] | upstream | 0.42 |
-| [[p04_cli_software_project_n03]] | downstream | 0.40 |
-| [[bld_sp_schema_software_project]] | upstream | 0.39 |
-| [[bld_sp_quality_gate_software_project]] | downstream | 0.33 |

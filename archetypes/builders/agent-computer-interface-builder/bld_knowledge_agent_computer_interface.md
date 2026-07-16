@@ -18,8 +18,6 @@ keywords: [agent_computer_interface construction, protocol patterns, observation
 density_score: 0.88
 related:
   - bld_tools_agent_computer_interface
-  - bld_output_template_agent_computer_interface
-  - p11_qg_agent_computer_interface
   - bld_architecture_agent_computer_interface
   - agent-computer-interface-builder
 ---
@@ -76,7 +74,5 @@ deterministic observation formats that minimize ambiguity for autonomous agents.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_agent_computer_interface]] | downstream | 0.56 |
-| [[bld_output_template_agent_computer_interface]] | downstream | 0.40 |
-| [[p11_qg_agent_computer_interface]] | downstream | 0.40 |
 | [[bld_architecture_agent_computer_interface]] | downstream | 0.33 |
 | [[agent-computer-interface-builder]] | downstream | 0.32 |

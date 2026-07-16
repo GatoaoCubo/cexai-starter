@@ -18,10 +18,6 @@ keywords: [partner_listing construction, instruction partner listing, partner_li
 density_score: 0.85
 related:
   - partner-listing-builder
-  - bld_knowledge_card_partner_listing
-  - p05_qg_partner_listing
-  - p10_lr_partner_listing_builder
-  - kc_partner_listing
 ---
 ## Phase 1: RESEARCH  
 1. Identify partner data sources (CRM, ERP, channel portals).  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[partner-listing-builder]] | downstream | 0.51 |
-| [[bld_knowledge_card_partner_listing]] | upstream | 0.45 |
-| [[p05_qg_partner_listing]] | downstream | 0.45 |
-| [[p10_lr_partner_listing_builder]] | downstream | 0.41 |
-| [[kc_partner_listing]] | upstream | 0.33 |

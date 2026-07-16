@@ -18,10 +18,6 @@ keywords: [component map of cli_tool, and architectural position, cli tool const
 density_score: 0.90
 related:
   - cli-tool-builder
-  - p01_kc_cli_tool
-  - bld_knowledge_card_cli_tool
-  - p10_lr_cli_tool_builder
-  - bld_architecture_client
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -81,7 +77,3 @@ hook         --depends-->  command
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cli-tool-builder]] | upstream | 0.46 |
-| [[p01_kc_cli_tool]] | upstream | 0.38 |
-| [[bld_knowledge_card_cli_tool]] | upstream | 0.29 |
-| [[p10_lr_cli_tool_builder]] | downstream | 0.27 |
-| [[bld_architecture_client]] | sibling | 0.27 |

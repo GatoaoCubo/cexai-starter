@@ -15,9 +15,6 @@ keywords: [tools iso - retriever, retriever architecture, tool integrations, cli
 density_score: 1.0
 title: Tools ISO - retriever
 related:
-  - bld_instruction_retriever
-  - p11_qg_retriever
-  - tools_prompt_template_builder
   - bld_tools_retriever_config
   - bld_tools_voice_pipeline
 ---
@@ -80,7 +77,5 @@ H10: wc -c body_only.md <= 2048
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_prompt_retriever]] | upstream | 0.39 |
-| [[p11_qg_retriever]] | downstream | 0.37 |
-| [[tools_prompt_template_builder]] | sibling | 0.36 |
 | [[bld_tools_retriever_config]] | sibling | 0.35 |
 | bld_tools_voice_pipeline | sibling | 0.35 |

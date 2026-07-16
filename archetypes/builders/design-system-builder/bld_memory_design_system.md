@@ -17,9 +17,6 @@ density_score: 0.9
 related:
   - bld_knowledge_design_system
   - bld_eval_design_system
-  - p03_ps_design_system_library_scale
-  - p06_ds_ferro
-  - p06_ds_sereno
 ---
 
 # Patterns: design_system builds

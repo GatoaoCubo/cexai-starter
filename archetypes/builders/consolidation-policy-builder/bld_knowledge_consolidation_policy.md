@@ -18,10 +18,6 @@ keywords: [llm agent memory consolidation, knowledge card, consolidation_policy 
 density_score: 0.91
 related:
   - consolidation-policy-builder
-  - bld_knowledge_card_memory_architecture
-  - bld_output_template_memory_architecture
-  - bld_instruction_consolidation_policy
-  - bld_output_template_consolidation_policy
 ---
 ## Domain Overview
 
@@ -121,7 +117,3 @@ high-value facts to semantic memory, and archives or deletes low-value entries. 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[consolidation-policy-builder]] | downstream | 0.59 |
-| [[bld_knowledge_card_memory_architecture]] | sibling | 0.55 |
-| [[bld_output_template_memory_architecture]] | downstream | 0.50 |
-| [[bld_instruction_consolidation_policy]] | downstream | 0.46 |
-| [[bld_output_template_consolidation_policy]] | downstream | 0.43 |

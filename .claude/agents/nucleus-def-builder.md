@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_nucleus_def
   - nucleus-def-builder
-  - n00_nucleus_def_manifest
-  - p01_kc_pillar_brief_p02_model_en
-  - bld_collaboration_nucleus_def
 ---
 
 # nucleus-def-builder Sub-Agent

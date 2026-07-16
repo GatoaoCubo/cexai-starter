@@ -18,9 +18,6 @@ keywords: [prompt_optimizer construction, knowledge card prompt optimizer, promp
 the, key concepts, microsoft research, prompt templates, prompt compression]
 density_score: 0.85
 related:
-  - bld_collaboration_prompt_version
-  - bld_collaboration_action_prompt
-  - bld_instruction_prompt_optimizer
   - prompt-technique-builder
   - prompt-optimizer-builder
 ---
@@ -65,8 +62,5 @@ Prompt optimization differs from general optimization by focusing on linguistic 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_version]] | downstream | 0.41 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.38 |
-| [[bld_instruction_prompt_optimizer]] | downstream | 0.35 |
 | [[prompt-technique-builder]] | downstream | 0.33 |
 | [[prompt-optimizer-builder]] | downstream | 0.33 |

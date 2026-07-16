@@ -26,11 +26,8 @@ title: "Memory Boot Config"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_collaboration_model_provider
   - boot-config-builder
-  - bld_collaboration_boot_config
   - bld_config_model_provider
-  - p01_kc_boot_config
 ---
 ## Summary
 Boot configuration defines how an AI system initializes: identity, constraints, available tools, and provider-specific parameters. The highest-risk design decision is whether to use shared configuration blocks across providers or per-provider blocks. Shared blocks appear to reduce duplication but create hidden compatibility mismatches.

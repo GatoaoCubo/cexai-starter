@@ -4,11 +4,9 @@ description: "Builds ONE capability_registry artifact via 8F pipeline. Loads cap
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p08_architecture_en
   - kind-builder
   - capability-registry-builder
   - bld_config_capability_registry
-  - n00_capability_registry_manifest
 ---
 
 # capability-registry-builder Sub-Agent

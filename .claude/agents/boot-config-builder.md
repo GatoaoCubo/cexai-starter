@@ -5,10 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - boot-config-builder
-  - bld_collaboration_boot_config
-  - p01_kc_boot_config
-  - n00_boot_config_manifest
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # boot-config-builder Sub-Agent

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F5_call"
 keywords: [judge_config construction, tools judge config, real cex pipeline tools, judge_config, builder, tools, production tools, domain tools, filesystem tools, related artifacts]
 density_score: 0.90
-related:
-  - bld_knowledge_card_judge_config
-  - bld_collaboration_llm_judge
-  - p01_kc_llm_judge
-  - n00_judge_config_manifest
-  - bld_collaboration_judge_config
 ---
 ## Production Tools (CEX pipeline -- real, on disk)
 
@@ -51,12 +45,3 @@ related:
 |------|---------|
 | Read, Write, Edit, Glob, Grep | Filesystem tools |
 | brain_query (MCP) | Semantic search across CEX knowledge base |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_judge_config]] | upstream | 0.49 |
-| [[bld_collaboration_llm_judge]] | downstream | 0.47 |
-| [[p01_kc_llm_judge]] | downstream | 0.43 |
-| [[n00_judge_config_manifest]] | downstream | 0.41 |
-| [[bld_collaboration_judge_config]] | downstream | 0.40 |

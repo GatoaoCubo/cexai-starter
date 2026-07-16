@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - fhir-agent-capability-builder
   - bld_schema_fhir_agent_capability
-  - bld_instruction_fhir_agent_capability
-  - bld_knowledge_card_fhir_agent_capability
-  - kc_fhir_agent_capability
 ---
 ```markdown
 ---
@@ -110,6 +107,3 @@ fhir_server_ref: "{{capability_statement_url}}"
 |----------|-------------|-------|
 | [[fhir-agent-capability-builder]] | downstream | 0.57 |
 | [[bld_schema_fhir_agent_capability]] | downstream | 0.56 |
-| [[bld_instruction_fhir_agent_capability]] | upstream | 0.55 |
-| [[bld_knowledge_card_fhir_agent_capability]] | upstream | 0.53 |
-| [[kc_fhir_agent_capability]] | upstream | 0.50 |

@@ -15,11 +15,8 @@ density_score: 1.0
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_domain_vocabulary
   - bld_schema_domain_vocabulary
-  - bld_qg_domain_vocabulary
   - domain-vocabulary-builder
-  - bld_instruction_domain_vocabulary
 ---
 # Output Template: domain_vocabulary
 ```markdown
@@ -76,6 +73,5 @@ the {{bounded_context}} bounded context.
 |----------|-------------|-------|
 | [[kc_domain_vocabulary]] | upstream | 0.47 |
 | [[bld_schema_domain_vocabulary]] | downstream | 0.46 |
-| [[bld_qg_domain_vocabulary]] | downstream | 0.45 |
 | [[domain-vocabulary-builder]] | upstream | 0.45 |
 | [[bld_prompt_domain_vocabulary]] | related | 0.43 |

@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [limits for renewal_workflow production, renewal_workflow construction, config renewal workflow, renewal_workflow, builder, config, renewal, gainsight, "p12_rw_{{name}}.yaml", p12_rw_acme_corp_2026.yaml]
 density_score: 0.85
 related:
-  - bld_instruction_renewal_workflow
-  - bld_output_template_renewal_workflow
-  - bld_knowledge_card_renewal_workflow
-  - p10_lr_renewal_workflow_builder
   - renewal-workflow-builder
 ---
 ## Naming Convention
@@ -59,8 +55,4 @@ on_quality_fail: return to CSM for stage owner assignment and escalation thresho
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_renewal_workflow]] | upstream | 0.47 |
-| [[bld_output_template_renewal_workflow]] | upstream | 0.45 |
-| [[bld_knowledge_card_renewal_workflow]] | upstream | 0.42 |
-| [[p10_lr_renewal_workflow_builder]] | downstream | 0.42 |
 | [[renewal-workflow-builder]] | downstream | 0.39 |

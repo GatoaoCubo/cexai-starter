@@ -19,12 +19,6 @@ common, pattern
 effective, evidence
 reviewed, related artifacts, sibling]
 density_score: 0.85
-related:
-  - p10_mem_prompt_optimizer_builder
-  - p10_lr_reasoning_strategy_builder
-  - p10_lr_judge_config_builder
-  - p10_mem_reranker_config_builder
-  - p10_mem_memory_benchmark_builder
 ---
 ## Observation
 Common issues include vague goal definitions leading to ineffective plans, overcomplication with redundant steps, and poor alignment with agent capabilities.
@@ -41,12 +35,3 @@ Reviewed artifacts showed higher success rates when plans included explicit cons
 - Embed checks for agent capability limits and environmental constraints.
 - Prioritize simplicity; avoid over-engineering with unnecessary subtasks.
 - Validate plans through simulated edge cases during construction.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p10_mem_prompt_optimizer_builder]] | related | 0.36 |
-| [[p10_lr_reasoning_strategy_builder]] | sibling | 0.31 |
-| [[p10_lr_judge_config_builder]] | sibling | 0.29 |
-| [[p10_mem_reranker_config_builder]] | related | 0.24 |
-| [[p10_mem_memory_benchmark_builder]] | related | 0.23 |

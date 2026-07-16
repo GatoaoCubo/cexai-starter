@@ -18,9 +18,6 @@ updated: "2026-04-07"
 keywords: [template with, workflow primitive construction, output template workflow primitive, workflow_primitive, builder, examples, "p12_wp_{type}.yaml", "p12_wp_{{type}}.yaml", "p12_wp_{{type}}_{{name}}.yaml", output template]
 density_score: 0.90
 related:
-  - p03_ins_workflow_primitive_builder
-  - bld_knowledge_card_workflow_primitive
-  - p11_qg_workflow_primitive
   - bld_config_workflow_primitive
   - bld_schema_workflow_primitive
 ---
@@ -100,8 +97,6 @@ composable_before: [{{primitive_types_or_omit}}]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_workflow_primitive_builder]] | upstream | 0.46 |
 | [[bld_knowledge_workflow_primitive]] | upstream | 0.44 |
-| [[p11_qg_workflow_primitive]] | downstream | 0.42 |
 | [[bld_config_workflow_primitive]] | downstream | 0.38 |
 | [[bld_schema_workflow_primitive]] | downstream | 0.36 |

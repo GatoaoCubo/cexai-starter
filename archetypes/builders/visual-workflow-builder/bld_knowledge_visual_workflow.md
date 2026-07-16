@@ -19,10 +19,6 @@ visual, apache ni, key concepts, based interface, visual design patterns]
 density_score: 0.85
 related:
   - visual-workflow-builder
-  - kc_visual_workflow
-  - bld_collaboration_visual_workflow
-  - p10_mem_visual_workflow_builder
-  - bld_instruction_visual_workflow
 ---
 ## Domain Overview
 Visual workflow editors are GUI-based tools enabling users to design, modify, and execute workflows through graphical interfaces. They are pivotal in domains like software development, business process automation, and data science, where abstract logic must be translated into visual constructs. Unlike code-defined workflows or DAGs, these editors prioritize user interaction, often leveraging drag-and-drop, node-based interfaces, and real-time feedback. They align with principles of visual programming languages (VPLs) and human-computer interaction (HCI) research, emphasizing usability and accessibility for non-technical stakeholders.
@@ -69,7 +65,3 @@ Industry adoption spans tools like Figma for UI/UX design, Apache NiFi for data 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[visual-workflow-builder]] | downstream | 0.54 |
-| [[kc_visual_workflow]] | sibling | 0.44 |
-| [[bld_collaboration_visual_workflow]] | downstream | 0.40 |
-| [[p10_mem_visual_workflow_builder]] | downstream | 0.39 |
-| [[bld_instruction_visual_workflow]] | downstream | 0.36 |

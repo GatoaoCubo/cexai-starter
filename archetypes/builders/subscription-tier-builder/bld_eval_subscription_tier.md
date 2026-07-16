@@ -20,8 +20,6 @@ related:
   - bld_schema_subscription_tier
   - subscription-tier-builder
   - bld_memory_subscription_tier
-  - p05_qg_pricing_page
-  - bld_knowledge_card_subscription_tier
 ---
 ## Quality Gate
 

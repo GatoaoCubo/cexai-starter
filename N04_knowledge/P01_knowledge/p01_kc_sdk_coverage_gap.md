@@ -13,9 +13,6 @@ created: "2026-04-18"
 updated: "2026-04-18"
 tldr: "74 kinds across P05 Output, P08 Architecture, P09 Config have zero cex_sdk module coverage. Three new SDK modules are proposed: output_sdk, architecture_sdk, config_sdk."
 keywords: [chunk_strategy, embedding_config, document_loader, rag_source, retriever_config, vector_store, knowledge_index, memory_summary, entity_memory, chain]
-related:
-  - p01_rm_cex
-  - n00_mentor_context
 ---
 
 # CEX SDK Coverage Gap: P05/P08/P09

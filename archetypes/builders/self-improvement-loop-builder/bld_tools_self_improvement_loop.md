@@ -17,7 +17,6 @@ updated: "2026-04-14"
 keywords: [self_improvement_loop construction, tools self improvement loop, self_improvement_loop, builder, tools, production tools, validation tools, external references, lifelong learning machines, related artifacts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_self_improvement_loop
   - bld_tools_prompt_technique
   - bld_tools_churn_prevention_playbook
   - bld_tools_pricing_page
@@ -48,7 +47,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_self_improvement_loop]] | upstream | 0.33 |
 | [[bld_tools_prompt_technique]] | sibling | 0.32 |
 | [[bld_tools_churn_prevention_playbook]] | sibling | 0.28 |
 | [[bld_tools_pricing_page]] | sibling | 0.28 |

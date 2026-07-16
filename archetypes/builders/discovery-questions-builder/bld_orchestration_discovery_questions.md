@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [discovery_questions construction, collaboration discovery questions, discovery_questions, builder, collaboration, sales_playbook_builder, customer_segment_builder, data_analysis_builder, reporting_builder, crew role  
 facilitates]
 density_score: 0.85
-related:
-  - bld_collaboration_sales_playbook
-  - bld_collaboration_self_improvement_loop
-  - bld_collaboration_dataset_card
-  - bld_collaboration_prompt_optimizer
-  - bld_collaboration_action_paradigm
 ---
 ## Crew Role  
 Facilitates structured discovery by generating targeted questions to uncover customer needs, challenges, and priorities for specific use cases.  
@@ -43,12 +37,3 @@ Facilitates structured discovery by generating targeted questions to uncover cus
 
 ## Boundary  
 Does NOT generate broad sales strategies (handled by `sales_playbook_builder`) or define ICPs (handled by `customer_segment_builder`). Avoids data analysis or reporting (handled by `data_analysis_builder` and `reporting_builder`).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_sales_playbook]] | sibling | 0.29 |
-| [[bld_collaboration_self_improvement_loop]] | sibling | 0.27 |
-| [[bld_collaboration_dataset_card]] | sibling | 0.24 |
-| [[bld_collaboration_prompt_optimizer]] | sibling | 0.24 |
-| [[bld_collaboration_action_paradigm]] | sibling | 0.23 |

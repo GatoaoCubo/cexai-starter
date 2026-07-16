@@ -25,9 +25,6 @@ keywords:
 density_score: 0.88
 related:
   - edit-format-builder
-  - bld_collaboration_edit_format
-  - bld_knowledge_card_edit_format
-  - n00_edit_format_manifest
   - bld_architecture_diff_strategy
 ---
 ## Component Inventory
@@ -87,7 +84,4 @@ Adjacent builders:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[edit-format-builder]] | upstream | 0.51 |
-| [[bld_collaboration_edit_format]] | downstream | 0.41 |
-| [[bld_knowledge_card_edit_format]] | upstream | 0.36 |
-| [[n00_edit_format_manifest]] | upstream | 0.36 |
 | [[bld_architecture_diff_strategy]] | sibling | 0.34 |

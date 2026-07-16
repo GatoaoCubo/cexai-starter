@@ -4,10 +4,8 @@ description: "Builds ONE model_architecture artifact via 8F pipeline. Loads mode
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p02_model_en
   - kind-builder
   - bld_architecture_model_architecture
-  - p03_sp_builder_nucleus
   - bld_tools_model_architecture
 ---
 
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.34 |
 | [[kind-builder]] | related | 0.33 |
 | [[bld_architecture_model_architecture]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[bld_tools_model_architecture]] | related | 0.28 |

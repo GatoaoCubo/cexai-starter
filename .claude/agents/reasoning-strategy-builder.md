@@ -4,11 +4,8 @@ description: "Builds ONE reasoning_strategy artifact via 8F pipeline. Loads reas
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p03_prompt_en
-  - p03_sp_builder_nucleus
   - kind-builder
   - system-prompt-builder
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # reasoning-strategy-builder Sub-Agent

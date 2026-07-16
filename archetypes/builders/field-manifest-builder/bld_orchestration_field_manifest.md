@@ -17,12 +17,6 @@ updated: "2026-07-03"
 8f: "F8_collaborate"
 keywords: [field manifest construction, collaboration field manifest, field_manifest, builder, examples, "### crew: product editor stack", my role, crew compositions, contract stack, schema-to-form]
 density_score: 0.87
-related:
-  - bld_collaboration_input_schema
-  - bld_collaboration_type_def
-  - bld_collaboration_supabase_data_layer
-  - bld_collaboration_interface
-  - bld_collaboration_validation_schema
 ---
 # Collaboration: field-manifest-builder
 ## My Role in Crews
@@ -68,12 +62,3 @@ the NEED for but never the implementation of).
 | Builder | Why |
 |---------|-----|
 | (none registered yet) | field_manifest is newly scaffolded (this cell); no other builder in the taxonomy currently lists `field_manifest` in its own `depends_on` -- future admin/editor-shaped kinds may adopt it |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_input_schema]] | sibling | 0.48 |
-| [[bld_collaboration_type_def]] | sibling | 0.44 |
-| [[bld_collaboration_supabase_data_layer]] | sibling | 0.40 |
-| [[bld_collaboration_interface]] | related | 0.32 |
-| [[bld_collaboration_validation_schema]] | related | 0.30 |

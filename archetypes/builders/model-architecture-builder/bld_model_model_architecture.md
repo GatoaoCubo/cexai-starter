@@ -17,11 +17,7 @@ llm_function: BECOME
 purpose: Builder identity, capabilities, routing for model_architecture
 author: wave1_builder_gen
 related:
-  - bld_output_template_model_architecture
-  - bld_knowledge_card_model_architecture
-  - bld_instruction_model_architecture
   - bld_architecture_model_architecture
-  - p11_qg_model_architecture
 ---
 ## Identity
 
@@ -76,8 +72,4 @@ Every artifact must pass 10 HARD gates. Never self-score (`quality: null`). Targ
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_model_architecture]] | downstream | 0.32 |
-| [[bld_knowledge_card_model_architecture]] | upstream | 0.31 |
-| [[bld_instruction_model_architecture]] | downstream | 0.31 |
 | [[bld_architecture_model_architecture]] | downstream | 0.31 |
-| [[p11_qg_model_architecture]] | downstream | 0.29 |

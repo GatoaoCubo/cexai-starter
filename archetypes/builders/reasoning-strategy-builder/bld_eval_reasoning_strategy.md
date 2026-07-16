@@ -30,11 +30,8 @@ keywords:
   - "quality gate"
 density_score: 0.85
 related:
-  - bld_output_template_reasoning_strategy
-  - bld_instruction_reasoning_strategy
   - kc_reasoning_strategy
   - reasoning-strategy-builder
-  - p03_qg_prompt_technique
 ---
 ## Quality Gate
 

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [agentic_rag construction, quality gate agentic rag, agentic_rag, builder, quality_gate, "## anti-example 1: missing agent logic", quality gate, fail condition, execution workflow, scoring guide]
 density_score: 0.85
-related:
-  - p09_qg_marketplace_app_manifest
-  - p01_qg_reranker_config
-  - p11_qg_usage_report
-  - p01_qg_graph_rag_config
-  - p12_qg_workflow_node
 ---
 ## Quality Gate
 

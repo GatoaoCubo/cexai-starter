@@ -32,9 +32,7 @@ keywords:
   - "18 real instances"
 density_score: 0.90
 related:
-  - bld_output_template_output_template
   - bld_model_output_template
-  - n00_output_template_manifest
   - bld_schema_prompt_template
   - bld_schema_kind
 ---
@@ -124,7 +122,6 @@ evidence-based deviation from the field_manifest/approval_request precedent.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_output_template]] | downstream | 0.52 |
 | bld_model_output_template | sibling | 0.44 |
 | n00_output_template_manifest | upstream | 0.42 |
 | bld_schema_prompt_template | sibling (contrast) | 0.34 |

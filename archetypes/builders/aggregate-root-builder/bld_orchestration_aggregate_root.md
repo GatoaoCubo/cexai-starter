@@ -15,12 +15,6 @@ keywords: [aggregate root schema, workflow coordination, and lifecycle managemen
 density_score: 0.82
 created: "2026-04-17"
 updated: "2026-04-17"
-related:
-  - bld_rules_value_object
-  - bld_rules_process_manager
-  - bld_rules_event_stream
-  - kc_aggregate_root
-  - bld_rules_domain_event
 ---
 # Rules: aggregate_root
 ## Absolute Rules (HARD -- never violate)
@@ -68,12 +62,3 @@ sequencing: tested
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope orchestration
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_rules_value_object]] | sibling | 0.47 |
-| [[bld_rules_process_manager]] | sibling | 0.36 |
-| [[bld_rules_event_stream]] | sibling | 0.34 |
-| [[kc_aggregate_root]] | sibling | 0.33 |
-| [[bld_rules_domain_event]] | downstream | 0.32 |

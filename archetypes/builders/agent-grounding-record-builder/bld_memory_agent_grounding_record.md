@@ -16,20 +16,7 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [operational learnings, pitfall patterns, agent_grounding_record construction, key pitfalls, missing output-hash, agent_grounding_record, builder]
 density_score: 0.85
-related:
-  - bld_collaboration_learning_record
-  - p11_fb_agent_grounding_record
-  - kc_agent_grounding_record
-  - p01_kc_learning_record
 ---
 # Agent Grounding Record Builder -- Memory and Learning Record
 ## Purpose
 This file captures operational learnings from the grounding record domain. It is loaded at F3 INJECT to pre-arm the builder with patterns, pitfalls, and recommendations before production begins. Learnings accumulate over time -- older entries lower relevance, newer entries higher weight.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_learning_record]] | related | 0.26 |
-| [[p11_fb_agent_grounding_record]] | downstream | 0.23 |
-| [[kc_agent_grounding_record]] | upstream | 0.22 |
-| [[p01_kc_learning_record]] | related | 0.21 |

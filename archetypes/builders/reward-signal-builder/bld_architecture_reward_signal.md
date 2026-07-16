@@ -18,10 +18,6 @@ keywords: [component map of reward_signal, and architectural position, reward si
 density_score: 0.90
 related:
   - reward-signal-builder
-  - bld_output_template_reward_signal
-  - bld_instruction_reward_signal
-  - p11_qg_reward_signal
-  - bld_collaboration_reward_signal
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -85,7 +81,5 @@ guardrail         --depends-->   baseline
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reward-signal-builder]] | downstream | 0.55 |
-| [[bld_output_template_reward_signal]] | upstream | 0.46 |
 | [[bld_prompt_reward_signal]] | upstream | 0.45 |
-| [[p11_qg_reward_signal]] | downstream | 0.45 |
 | [[bld_orchestration_reward_signal]] | downstream | 0.42 |

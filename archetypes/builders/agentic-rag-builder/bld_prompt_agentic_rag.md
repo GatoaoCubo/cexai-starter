@@ -18,10 +18,7 @@ keywords: [agentic_rag construction, instruction agentic rag, agentic_rag, build
 density_score: 0.85
 related:
   - agentic-rag-builder
-  - bld_knowledge_card_agentic_rag
-  - n00_agentic_rag_manifest
   - graph-rag-config-builder
-  - bld_instruction_graph_rag_config
 ---
 ## Phase 1: RESEARCH  
 1. Identify domain-specific knowledge sources and injection triggers  
@@ -53,7 +50,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agentic-rag-builder]] | upstream | 0.43 |
-| [[bld_knowledge_card_agentic_rag]] | upstream | 0.37 |
-| [[n00_agentic_rag_manifest]] | upstream | 0.35 |
 | [[graph-rag-config-builder]] | upstream | 0.33 |
-| [[bld_instruction_graph_rag_config]] | sibling | 0.33 |

@@ -31,10 +31,7 @@ keywords:
   - "### on auth failure"
 density_score: 0.88
 related:
-  - bld_collaboration_terminal_backend
   - bld_memory_hibernation_policy
-  - p09_qg_terminal_backend
-  - bld_output_template_terminal_backend
   - bld_config_terminal_backend
 ---
 ## What to Persist
@@ -76,8 +73,5 @@ N07 reads `entity_memory` before dispatching to prefer:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_terminal_backend]] | downstream | 0.38 |
 | [[bld_memory_hibernation_policy]] | related | 0.37 |
-| [[p09_qg_terminal_backend]] | downstream | 0.36 |
-| [[bld_output_template_terminal_backend]] | upstream | 0.35 |
 | [[bld_config_terminal_backend]] | upstream | 0.34 |

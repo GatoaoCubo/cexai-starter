@@ -19,10 +19,7 @@ feeds_kinds: [parser]
 density_score: null
 related:
   - parser-builder
-  - n00_parser_manifest
   - bld_architecture_parser
-  - p01_kc_response_format
-  - bld_collaboration_parser
 ---
 
 # Parser

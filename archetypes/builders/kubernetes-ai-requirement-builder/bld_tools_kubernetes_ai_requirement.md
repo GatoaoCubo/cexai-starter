@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [kubernetes_ai_requirement construction, tools kubernetes ai requirement, kubernetes_ai_requirement, builder, tools, production tools, inspect resource, verify infini, validation tools, verify resource]
 density_score: 0.85
 related:
-  - bld_knowledge_card_kubernetes_ai_requirement
-  - p10_lr_kubernetes_ai_requirement_builder
-  - bld_instruction_kubernetes_ai_requirement
   - kubernetes-ai-requirement-builder
-  - p09_qg_kubernetes_ai_requirement
 ---
 ## Production Tools
 | Tool                | Purpose                                           | When                        |
@@ -53,8 +49,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_kubernetes_ai_requirement]] | upstream | 0.50 |
-| [[p10_lr_kubernetes_ai_requirement_builder]] | downstream | 0.49 |
-| [[bld_instruction_kubernetes_ai_requirement]] | upstream | 0.46 |
 | [[kubernetes-ai-requirement-builder]] | downstream | 0.45 |
-| [[p09_qg_kubernetes_ai_requirement]] | downstream | 0.44 |

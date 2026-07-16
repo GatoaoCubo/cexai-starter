@@ -31,11 +31,7 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - p03_ins_mcp_server
   - bld_memory_mcp_server
-  - bld_collaboration_mcp_server
-  - p01_kc_mcp_server
-  - bld_knowledge_card_mcp_server
 ---
 ## Identity
 
@@ -125,7 +121,6 @@ Body sections: Transport Configuration, Tool Definitions (with JSON-Schema), Res
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_mcp_server]] | upstream | 0.64 |
 | [[bld_memory_mcp_server]] | downstream | 0.62 |
 | [[bld_orchestration_mcp_server]] | related | 0.62 |
 | [[kc_mcp_server]] | upstream | 0.61 |

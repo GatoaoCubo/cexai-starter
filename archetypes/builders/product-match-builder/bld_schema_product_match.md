@@ -35,7 +35,6 @@ related:
   - bld_schema_data_contract
   - bld_schema_output_validator
   - bld_config_product_match
-  - bld_output_template_product_match
 ---
 
 # Schema: product_match
@@ -102,4 +101,3 @@ Rule: id MUST equal filename stem. Source: `.cex/kinds_meta.json` naming `p04_pm
 | [[bld_schema_data_contract]] | upstream | 0.40 |
 | [[bld_schema_output_validator]] | upstream | 0.38 |
 | [[bld_config_product_match]] | downstream | 0.35 |
-| [[bld_output_template_product_match]] | downstream | 0.35 |

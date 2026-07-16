@@ -33,8 +33,6 @@ density_score: 0.84
 llm_function: REASON
 related:
   - permission-builder
-  - bld_collaboration_permission
-  - bld_knowledge_card_permission
   - bld_memory_permission
   - bld_schema_permission
 ---

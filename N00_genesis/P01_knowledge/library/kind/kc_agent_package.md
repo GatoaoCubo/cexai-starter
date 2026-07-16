@@ -17,10 +17,8 @@ when_to_use: "Building, reviewing, or porting an agent_package to any LLM surfac
 keywords: [iso, portable, bundle, 12-pillar-fractal, full-lean-profiles, degraded-mode]
 density_score: null
 related:
-  - p01_kc_agent
   - agent-package-builder
   - bld_model_agent_package
-  - spec_agent_bundle_export
 ---
 
 # Portable Agent ISO (agent_package)

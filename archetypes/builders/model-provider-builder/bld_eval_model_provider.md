@@ -18,10 +18,6 @@ updated: "2026-04-06"
 density_score: 0.87
 related:
   - model-provider-builder
-  - p03_ins_model_provider
-  - bld_knowledge_card_model_provider
-  - p11_qg_model_card
-  - p01_kc_model_provider
 ---
 ## Quality Gate
 

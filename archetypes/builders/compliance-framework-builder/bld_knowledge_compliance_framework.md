@@ -18,11 +18,7 @@ keywords: [compliance_framework construction, knowledge card compliance framewor
 regulatory, key concepts, regulatory scope, compliance mapping, jurisdictional overlap]
 density_score: 0.85
 related:
-  - kc_compliance_framework
   - compliance-framework-builder
-  - p10_lr_compliance_framework_builder
-  - bld_instruction_compliance_framework
-  - p11_qg_compliance_framework
 ---
 ## Domain Overview
 Regulatory compliance for AI systems involves aligning technical implementations with legal requirements across jurisdictions. As AI adoption grows, regulators like the EU (AI Act), US (FDA, FTC), and global bodies (OECD) mandate transparency, fairness, and accountability. Compliance frameworks must map AI system capabilities (e.g., data processing, decision-making) to specific regulatory obligations, ensuring traceability from design to deployment. Challenges include overlapping regulations, dynamic policy updates, and verifying compliance across distributed AI workflows.
@@ -65,8 +61,4 @@ Regulatory compliance for AI systems involves aligning technical implementations
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_compliance_framework]] | sibling | 0.48 |
 | [[compliance-framework-builder]] | downstream | 0.47 |
-| [[p10_lr_compliance_framework_builder]] | downstream | 0.46 |
-| [[bld_instruction_compliance_framework]] | downstream | 0.42 |
-| [[p11_qg_compliance_framework]] | downstream | 0.40 |

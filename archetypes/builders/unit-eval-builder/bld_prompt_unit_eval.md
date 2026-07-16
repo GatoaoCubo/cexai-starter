@@ -30,7 +30,6 @@ density_score: 0.90
 llm_function: REASON
 related:
   - unit-eval-builder
-  - bld_knowledge_card_unit_eval
   - bld_architecture_unit_eval
   - bld_schema_unit_eval
   - bld_memory_unit_eval

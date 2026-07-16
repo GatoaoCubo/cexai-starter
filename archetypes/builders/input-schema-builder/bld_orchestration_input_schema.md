@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [input schema construction, collaboration input schema, input_schema, builder, examples, "### crew: prompt engineering", my role, crew compositions, contract stack, prompt engineering]
 density_score: 0.90
-related:
-  - bld_collaboration_action_prompt
-  - bld_collaboration_few_shot_example
-  - bld_collaboration_validation_schema
-  - bld_collaboration_interface
-  - bld_collaboration_prompt_version
 ---
 # Collaboration: input-schema-builder
 ## My Role in Crews

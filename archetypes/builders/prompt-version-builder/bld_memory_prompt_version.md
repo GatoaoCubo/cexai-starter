@@ -26,11 +26,7 @@ title: "Memory Prompt Version"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_prompt_version
   - prompt-version-builder
-  - bld_collaboration_prompt_version
-  - p10_lr_retriever_config_builder
-  - p01_kc_prompt_version
 ---
 ## Summary
 Prompt version — immutable snapshot of a prompt at a point in time with metrics and lineage. The difference between a useful prompt_version and a useless one is concrete values
@@ -81,5 +77,4 @@ python _tools/cex_score.py --apply p10-lr-prompt-version-builder.md
 | [[bld_knowledge_prompt_version]] | upstream | 0.48 |
 | [[prompt-version-builder]] | upstream | 0.47 |
 | [[bld_orchestration_prompt_version]] | downstream | 0.42 |
-| [[p10_lr_retriever_config_builder]] | sibling | 0.38 |
 | [[kc_prompt_version]] | upstream | 0.37 |

@@ -15,11 +15,6 @@ tldr: "Cross-nucleus collaboration: N03 receives specs from N01/N02/N04 and prod
 keywords: [software project builder, cross-nucleus collaboration, receives specs from n, and produces executable code, for deploy ops, for cex tool maintenance, builder, collaboration, software-project, cross-nucleus]
 density_score: 0.88
 llm_function: COLLABORATE
-related:
-  - p12_dr_software_project
-  - p01_kc_n03_software_engineering
-  - bld_collaboration_supabase_data_layer
-  - bld_collaboration_social_publisher
 ---
 # Collaboration
 
@@ -70,11 +65,3 @@ N04 ──schema─→ N03 ──migration→ N04 (execute)
 N06 ──spec──→ N03 ──code──→ N05 (deploy)
 N07 ──req───→ N03 ──tool──→ N07 (integrate)
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p12_dr_software_project]] | downstream | 0.49 |
-| [[p01_kc_n03_software_engineering]] | upstream | 0.35 |
-| [[bld_collaboration_supabase_data_layer]] | sibling | 0.34 |
-| [[bld_collaboration_social_publisher]] | sibling | 0.31 |

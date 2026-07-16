@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_partner_listing
-  - bld_instruction_partner_listing
   - bld_tools_partner_listing
-  - p05_qg_partner_listing
-  - bld_collaboration_partner_listing
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER generate unstructured text; enforce strict schema compliance for all outpu
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_partner_listing]] | upstream | 0.60 |
-| [[bld_instruction_partner_listing]] | upstream | 0.57 |
 | [[bld_tools_partner_listing]] | upstream | 0.50 |
-| [[p05_qg_partner_listing]] | downstream | 0.49 |
-| [[bld_collaboration_partner_listing]] | downstream | 0.42 |

@@ -20,11 +20,7 @@ keywords: [terminal_backend construction, output template terminal backend, back
 every, resource limits, cost model, frontmatter completeness checklist]
 density_score: 0.90
 related:
-  - n00_terminal_backend_manifest
-  - p09_qg_terminal_backend
   - bld_schema_terminal_backend
-  - p03_ins_vector_store
-  - bld_output_template_hibernation_policy
 ---
 ## Output Shape
 
@@ -85,8 +81,4 @@ Every terminal_backend artifact MUST follow this structure:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_terminal_backend_manifest]] | downstream | 0.38 |
-| [[p09_qg_terminal_backend]] | downstream | 0.37 |
 | [[bld_schema_terminal_backend]] | downstream | 0.34 |
-| [[p03_ins_vector_store]] | upstream | 0.30 |
-| [[bld_output_template_hibernation_policy]] | sibling | 0.29 |

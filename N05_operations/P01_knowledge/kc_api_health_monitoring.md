@@ -14,12 +14,6 @@ sources:
   - https://opentelemetry.io/docs/languages/python/
 created: 2026-04-01
 keywords: [api health monitoring, health, monitoring, observability, logging, sentry, opentelemetry, correlation-id, error-budget, health monitoring]
-related:
-  - p05_oval_health_endpoint_n05
-  - p01_kc_fastapi_patterns
-  - p05_oval_middleware_stack_n05
-  - p01_kc_error_handling_python
-  - p01_kc_api_health_monitoring
 ---
 
 # KC: API Health Monitoring

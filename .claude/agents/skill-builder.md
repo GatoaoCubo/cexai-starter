@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - skill-builder
-  - bld_collaboration_skill
   - bld_architecture_skill
-  - p03_ins_skill_builder
-  - n00_skill_manifest
 ---
 
 # skill-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[skill-builder]] | related | 0.44 |
-| [[bld_collaboration_skill]] | related | 0.39 |
 | [[bld_architecture_skill]] | related | 0.37 |
-| [[p03_ins_skill_builder]] | related | 0.33 |
-| [[n00_skill_manifest]] | related | 0.33 |

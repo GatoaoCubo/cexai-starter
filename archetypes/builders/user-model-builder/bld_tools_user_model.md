@@ -21,7 +21,6 @@ related:
   - bld_tools_session_state
   - bld_tools_context_file
   - bld_tools_terminal_backend
-  - bld_collaboration_user_model
   - bld_tools_runtime_state
 ---
 

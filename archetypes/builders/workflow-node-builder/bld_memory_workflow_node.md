@@ -20,11 +20,7 @@ successful, evidence
 reviewed, related artifacts, input output]
 density_score: 0.85
 related:
-  - p10_lr_edit_format_builder
-  - p10_lr_stt_provider_builder
   - workflow-node-builder
-  - p10_lr_sdk_example_builder
-  - p10_mem_benchmark_suite_builder
 ---
 ## Observation
 Common issues include inconsistent input/output schemas, missing metadata for visualization, and poor error propagation leading to silent failures. Nodes often lack clear validation rules, causing mismatches during workflow execution.
@@ -45,8 +41,4 @@ Reviewed artifacts showed nodes with defined schemas had 30% fewer runtime error
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_edit_format_builder]] | sibling | 0.25 |
-| [[p10_lr_stt_provider_builder]] | sibling | 0.24 |
 | [[workflow-node-builder]] | downstream | 0.23 |
-| [[p10_lr_sdk_example_builder]] | related | 0.21 |
-| [[p10_mem_benchmark_suite_builder]] | related | 0.21 |

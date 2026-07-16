@@ -31,11 +31,7 @@ keywords:
   - "guardrails guard"
 density_score: 0.90
 related:
-  - p10_lr_output_validator_builder
   - output-validator-builder
-  - p01_kc_output_validator
-  - bld_collaboration_output_validator
-  - p01_kc_validation_schema
 ---
 # Domain Knowledge: output_validator
 ## Executive Summary
@@ -76,7 +72,6 @@ Output validator — checks and corrective actions applied to LLM output AFTER g
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_output_validator_builder]] | downstream | 0.47 |
 | [[output-validator-builder]] | related | 0.34 |
 | [[kc_output_validator]] | sibling | 0.33 |
 | [[bld_orchestration_output_validator]] | downstream | 0.32 |

@@ -30,10 +30,7 @@ keywords:
   - "quality gate"
 density_score: 0.85
 related:
-  - p04_qg_tts_provider
-  - p12_qg_workflow_node
   - content-filter-builder
-  - p04_qg_stt_provider
   - bld_config_content_filter
 ---
 ## Quality Gate

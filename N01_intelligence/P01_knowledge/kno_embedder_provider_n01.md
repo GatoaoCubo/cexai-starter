@@ -19,8 +19,6 @@ related:
   - kno_embedder_provider_n03
   - kno_vector_store_n01
   - kno_embedder_provider_n05
-  - bld_collaboration_model_provider
-  - bld_collaboration_embedder_provider
 primary_8f: INJECT
 ---
 <!-- 8F: F1=embedder_provider/P01 F2=kc_embedder_provider+example_embedder_provider F3=nucleus_def_n01+kc_embedder_provider+ex_embedder_provider_openai_ada+search_config_intelligence F4=provider selection for comparative retrieval

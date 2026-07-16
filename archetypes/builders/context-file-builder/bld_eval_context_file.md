@@ -30,7 +30,6 @@ keywords:
   - "gates failure"
 density_score: 0.92
 related:
-  - p03_ins_context_file
   - context-file-builder
   - kc_context_file
   - ctx_{{scope}}

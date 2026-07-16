@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - function-def-builder
-  - bld_collaboration_function_def
-  - p01_kc_function_def
   - kind-builder
-  - bld_instruction_function_def
 ---
 
 # function-def-builder Sub-Agent

@@ -33,9 +33,7 @@ density_score: 0.90
 related:
   - bld_schema_agent_package
   - bld_config_agent_package
-  - bld_knowledge_card_agent_package
   - agent-package-builder
-  - p02_iso_codexa_agent
 ---
 # Instructions: How to Produce an agent_package
 ## Phase 1: RESEARCH

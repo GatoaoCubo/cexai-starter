@@ -29,10 +29,6 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_config_output_validator
-  - bld_collaboration_output_validator
-  - p11_fb_validator
-  - p01_kc_knowledge_best_practices
-  - p11_fb_output_validator
 ---
 # Config: knowledge_card Production Rules
 ## Naming Convention
@@ -74,6 +70,4 @@ Default: domain_kc. Use meta_kc only for CEX system documentation.
 |----------|-------------|-------|
 | [[bld_config_output_validator]] | sibling | 0.35 |
 | [[bld_orchestration_output_validator]] | downstream | 0.34 |
-| [[p11_fb_validator]] | downstream | 0.30 |
 | p01_kc_knowledge_best_practices | upstream | 0.30 |
-| [[p11_fb_output_validator]] | downstream | 0.29 |

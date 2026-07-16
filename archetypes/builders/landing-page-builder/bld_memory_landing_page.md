@@ -19,9 +19,7 @@ keywords: [landing page construction, memory landing page, landing_page, builder
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_collaboration_landing_page
   - bld_tools_landing_page
-  - bld_output_template_landing_page
   - bld_architecture_landing_page
   - bld_schema_landing_page
 ---
@@ -69,6 +67,5 @@ python _tools/cex_score.py --apply bld-memory-landing-page.md
 |----------|-------------|-------|
 | [[bld_orchestration_landing_page]] | downstream | 0.38 |
 | [[bld_tools_landing_page]] | upstream | 0.38 |
-| [[bld_output_template_landing_page]] | upstream | 0.35 |
 | [[bld_architecture_landing_page]] | upstream | 0.31 |
 | [[bld_schema_landing_page]] | upstream | 0.30 |

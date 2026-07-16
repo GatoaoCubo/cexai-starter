@@ -33,9 +33,7 @@ density_score: 0.90
 related:
   - bld_schema_eval_dataset
   - eval-dataset-builder
-  - bld_knowledge_card_eval_dataset
   - bld_config_eval_dataset
-  - p11_qg_eval_dataset
 ---
 # Output Template: eval_dataset
 ```yaml
@@ -111,4 +109,3 @@ Version migration: `{{how_to_migrate_from_v1_to_v2_if_schema_changes}}`
 | [[eval-dataset-builder]] | downstream | 0.40 |
 | [[bld_knowledge_eval_dataset]] | upstream | 0.38 |
 | [[bld_config_eval_dataset]] | downstream | 0.37 |
-| [[p11_qg_eval_dataset]] | downstream | 0.36 |

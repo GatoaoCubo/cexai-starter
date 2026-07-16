@@ -19,10 +19,6 @@ keywords: [db connector construction, collaboration db connector, db_connector, 
 density_score: 0.90
 related:
   - db-connector-builder
-  - bld_collaboration_client
-  - bld_tools_connector
-  - bld_instruction_connector
-  - bld_architecture_connector
 ---
 # Collaboration: db-connector-builder
 
@@ -69,7 +65,3 @@ I specify bidirectional integrations so systems can sync data in both directions
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[db-connector-builder]] | upstream | 0.54 |
-| [[bld_collaboration_client]] | sibling | 0.42 |
-| [[bld_tools_connector]] | upstream | 0.39 |
-| [[bld_instruction_connector]] | upstream | 0.38 |
-| [[bld_architecture_connector]] | upstream | 0.37 |

@@ -26,11 +26,7 @@ title: Memory ISO - context_window_config
 8f: "F7_govern"
 density_score: 1.0
 related:
-  - bld_knowledge_card_context_window_config
-  - p01_kc_context_window_config
   - context-window-config-builder
-  - bld_output_template_context_window_config
-  - p01_kc_token_budgeting
 ---
 ## Summary
 Context window configs allocate a model's finite context among prompt sections. The primary failure is insufficient output reserve leading to truncated responses.
@@ -51,5 +47,4 @@ Context window configs allocate a model's finite context among prompt sections. 
 | [[bld_knowledge_context_window_config]] | upstream | 0.43 |
 | [[kc_context_window_config]] | upstream | 0.40 |
 | [[context-window-config-builder]] | upstream | 0.34 |
-| [[bld_output_template_context_window_config]] | upstream | 0.30 |
 | p01_kc_token_budgeting | upstream | 0.28 |

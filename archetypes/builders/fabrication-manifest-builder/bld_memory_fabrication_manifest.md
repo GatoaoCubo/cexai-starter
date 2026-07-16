@@ -18,9 +18,6 @@ keywords: [fabrication_manifest construction, learning record fabrication manife
 density_score: 0.85
 related:
   - fabrication-manifest-builder
-  - bld_knowledge_card_fabrication_manifest
-  - bld_instruction_fabrication_manifest
-  - bld_collaboration_fabrication_manifest
   - bld_tools_fabrication_manifest
 ---
 ## Observation
@@ -76,7 +73,4 @@ confirmed all 7 `stage_status` keys `done`, `hosting_target: cex_managed`, and a
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fabrication-manifest-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_fabrication_manifest]] | upstream | 0.36 |
-| [[bld_instruction_fabrication_manifest]] | upstream | 0.33 |
-| [[bld_collaboration_fabrication_manifest]] | downstream | 0.33 |
 | [[bld_tools_fabrication_manifest]] | upstream | 0.31 |

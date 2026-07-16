@@ -19,10 +19,6 @@ keywords: [experiment config construction, knowledge card experiment config, dom
 density_score: 0.90
 related:
   - experiment-config-builder
-  - p10_lr_experiment_config_builder
-  - bld_instruction_experiment_config
-  - p01_kc_experiment_config
-  - bld_collaboration_experiment_config
 ---
 # Domain Knowledge: experiment_config
 ## Executive Summary
@@ -113,7 +109,3 @@ Common primary metrics for prompt experiments:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[experiment-config-builder]] | downstream | 0.50 |
-| [[p10_lr_experiment_config_builder]] | downstream | 0.46 |
-| [[bld_instruction_experiment_config]] | downstream | 0.42 |
-| [[p01_kc_experiment_config]] | sibling | 0.40 |
-| [[bld_collaboration_experiment_config]] | downstream | 0.39 |

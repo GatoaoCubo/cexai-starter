@@ -15,12 +15,6 @@ domain: "type def construction"
 8f: "F6_produce"
 keywords: [type def construction, output template type def, output-template, type-def, template, template standards, related artifacts, constraint_key_ constraint_value_, keyword_ keyword_, sibling]
 density_score: 0.90
-related:
-  - bld_output_template_runtime_rule
-  - bld_output_template_feature_flag
-  - bld_output_template_embedding_config
-  - bld_output_template_skill
-  - bld_output_template_golden_test
 ---
 ## Template
 ```yaml
@@ -95,6 +89,4 @@ wire_type: {{wire_type}}
 |----------|-------------|-------|
 | bld_output_template_runtime_rule | sibling | 0.34 |
 | bld_output_template_feature_flag | sibling | 0.31 |
-| [[bld_output_template_embedding_config]] | sibling | 0.31 |
 | bld_output_template_skill | sibling | 0.31 |
-| [[bld_output_template_golden_test]] | sibling | 0.30 |

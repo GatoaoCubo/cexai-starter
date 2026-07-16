@@ -29,11 +29,6 @@ sources:
   - https://www.automateed.com/how-often-should-creators-post-in-2025
   - https://truescho.com/en/blog/batch-create-monthly-social-content-2026
   - https://www.justinwelsh.me/newsletter/turn-social-media-impressions-into-dollars
-related:
-  - p12_ct_content_campaign
-  - ex-workflow-multi-marketplace-sync
-  - p02_ap_n04_knowledge
-  - p01_kc_brand_voice_consistency_channels
 ---
 
 # Solo Creator Channels + Production Systems 2026

@@ -28,7 +28,6 @@ related:
   - curriculum-config-builder
   - bld_feedback_curriculum_config
   - bld_orchestration_curriculum_config
-  - kc_curriculum_config
   - bld_knowledge_curriculum_config
 ---
 ## Summary
@@ -65,5 +64,4 @@ Patterns derived from builder runs, quality gate failures, and peer review feedb
 | [[curriculum-config-builder]] | upstream | 0.46 |
 | [[bld_feedback_curriculum_config]] | downstream | 0.46 |
 | [[bld_orchestration_curriculum_config]] | downstream | 0.45 |
-| [[kc_curriculum_config]] | upstream | 0.44 |
 | [[bld_knowledge_curriculum_config]] | upstream | 0.41 |

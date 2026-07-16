@@ -27,8 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - bld_config_context_map
-  - kc_context_map
-  - bld_knowledge_card_context_map
   - context-map-builder
   - bld_architecture_context_map
 ---
@@ -110,7 +108,5 @@ ACL discipline:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_context_map]] | upstream | 0.54 |
-| [[kc_context_map]] | upstream | 0.52 |
-| [[bld_knowledge_card_context_map]] | upstream | 0.49 |
 | [[context-map-builder]] | upstream | 0.45 |
 | [[bld_architecture_context_map]] | upstream | 0.40 |

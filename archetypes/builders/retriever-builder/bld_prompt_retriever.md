@@ -34,8 +34,6 @@ domain: "instruction artifact construction"
 title: "Instruction Retriever"
 related:
   - retriever-builder
-  - bld_output_template_retriever
-  - p11_qg_retriever
   - bld_schema_retriever
   - bld_tools_retriever
 ---
@@ -94,7 +92,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[retriever-builder]] | downstream | 0.46 |
-| [[bld_output_template_retriever]] | downstream | 0.42 |
-| [[p11_qg_retriever]] | downstream | 0.41 |
 | [[bld_schema_retriever]] | downstream | 0.41 |
 | [[bld_tools_retriever]] | downstream | 0.39 |

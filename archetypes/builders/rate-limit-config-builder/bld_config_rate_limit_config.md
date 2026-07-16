@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, rate limit config construction, config rate limit config, rate_limit_config, builder, examples, "p09_ratelimit_{provider}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_rate_limit_config
-  - bld_collaboration_rate_limit_config
   - bld_config_model_provider
-  - p11_qg_rate_limit_config
-  - bld_instruction_rate_limit_config
 ---
 # Config: rate_limit_config Production Rules
 
@@ -85,5 +81,4 @@ Rule: tier value MUST be one of: free, build, scale, enterprise, or a provider-s
 | [[bld_knowledge_rate_limit_config]] | upstream | 0.48 |
 | [[bld_orchestration_rate_limit_config]] | downstream | 0.48 |
 | [[bld_config_model_provider]] | sibling | 0.46 |
-| [[p11_qg_rate_limit_config]] | downstream | 0.45 |
 | [[bld_prompt_rate_limit_config]] | upstream | 0.44 |

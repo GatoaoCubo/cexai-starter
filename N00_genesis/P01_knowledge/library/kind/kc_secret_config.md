@@ -18,11 +18,7 @@ keywords: [secrets_management, credentials, rotation_schedule]
 feeds_kinds: [secret_config]
 density_score: null
 related:
-  - p09_sec_n02
-  - p09_sec_n07
-  - p09_secret_config
   - bld_architecture_env_config
-  - bld_collaboration_env_config
 ---
 
 # Secret Config

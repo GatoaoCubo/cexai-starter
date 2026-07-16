@@ -20,10 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_instruction_reranker_config
-  - bld_knowledge_card_reranker_config
   - agentic-rag-builder
-  - p01_qg_reranker_config
   - retrieval-evaluator-builder
 ---
 ## Identity
@@ -72,8 +69,5 @@ NEVER assume deployment environment specifics (e.g., GPU availability, cloud pro
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_reranker_config]] | downstream | 0.36 |
-| [[bld_knowledge_card_reranker_config]] | related | 0.34 |
 | [[agentic-rag-builder]] | sibling | 0.31 |
-| [[p01_qg_reranker_config]] | downstream | 0.30 |
 | [[retrieval-evaluator-builder]] | sibling | 0.29 |

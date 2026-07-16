@@ -18,11 +18,7 @@ keywords: [knowledge card, domain knowledge for saga, compensation chains, and c
 garcia, core concepts, industry implementations, step functions]
 density_score: null
 related:
-  - kc_saga
-  - bld_manifest_saga
-  - bld_rules_saga
   - bld_architecture_saga
-  - bld_instruction_saga
 ---
 # Knowledge Card: saga
 
@@ -82,8 +78,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_saga]] | sibling | 0.58 |
-| [[bld_manifest_saga]] | downstream | 0.57 |
-| [[bld_rules_saga]] | sibling | 0.49 |
 | [[bld_architecture_saga]] | sibling | 0.48 |
-| [[bld_instruction_saga]] | downstream | 0.46 |

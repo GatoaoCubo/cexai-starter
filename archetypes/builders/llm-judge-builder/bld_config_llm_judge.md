@@ -28,7 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, llm judge construction, config llm judge, llm_judge, builder, examples, "p07_judge_{slug}.md"]
 density_score: 0.90
 related:
-  - bld_instruction_llm_judge
   - bld_config_memory_scope
   - bld_config_prompt_version
   - bld_config_retriever_config

@@ -31,11 +31,6 @@ linked_artifacts:
   primary: p02_agent_commercial_nucleus
   related: [p03_sp_commercial_nucleus, p12_wf_commercial_nucleus, p11_qg_commercial_nucleus]
 density_score: 0.93
-related:
-  - p03_pt_commercial_nucleus
-  - p01_kc_brand_monetization_models
-  - p08_pat_pricing_framework
-  - p03_sp_commercial_nucleus
 ---
 
 # Commercial Monetization — Pricing, Courses & Funnels

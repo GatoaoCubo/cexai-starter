@@ -28,9 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, checkpoint construction, config checkpoint, checkpoint, builder, examples, "p12_ckpt_{workflow}.md"]
 density_score: 0.90
 related:
-  - bld_collaboration_checkpoint
-  - bld_knowledge_card_checkpoint
-  - bld_instruction_checkpoint
   - checkpoint-builder
   - bld_architecture_checkpoint
 ---

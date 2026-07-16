@@ -22,10 +22,6 @@ collaboration]
 density_score: 0.88
 related:
   - collaboration-pattern-builder
-  - p01_kc_pillar_brief_p12_orchestration_en
-  - bld_instruction_collaboration_pattern
-  - p11_qg_collaboration_pattern
-  - p01_kc_multi_agent_orchestration_patterns
 ---
 # Memory: collaboration-pattern-builder
 ## Summary
@@ -92,7 +88,3 @@ against H01-H08 HARD gates.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[collaboration-pattern-builder]] | downstream | 0.53 |
-| [[p01_kc_pillar_brief_p12_orchestration_en]] | downstream | 0.38 |
-| [[bld_instruction_collaboration_pattern]] | upstream | 0.36 |
-| [[p11_qg_collaboration_pattern]] | downstream | 0.36 |
-| [[p01_kc_multi_agent_orchestration_patterns]] | upstream | 0.34 |

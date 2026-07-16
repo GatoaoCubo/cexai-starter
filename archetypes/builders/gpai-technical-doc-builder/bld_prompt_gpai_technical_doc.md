@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [gpai_technical_doc construction, instruction gpai technical doc, gpai_technical_doc, builder, instruction, gpai, eu-ai-act, annex-iv, article-53, training-data]
 density_score: 0.85
 related:
-  - p11_qg_gpai_technical_doc
   - bld_schema_gpai_technical_doc
   - gpai-technical-doc-builder
-  - bld_knowledge_card_gpai_technical_doc
-  - bld_output_template_gpai_technical_doc
 ---
 ## Phase 1: RESEARCH
 1. Identify the GPAI model: name, version, model family, provider entity (legal name + EU representative if non-EU).
@@ -57,8 +54,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_gpai_technical_doc]] | downstream | 0.44 |
 | [[bld_schema_gpai_technical_doc]] | downstream | 0.42 |
 | [[gpai-technical-doc-builder]] | downstream | 0.41 |
-| [[bld_knowledge_card_gpai_technical_doc]] | upstream | 0.36 |
-| [[bld_output_template_gpai_technical_doc]] | downstream | 0.33 |

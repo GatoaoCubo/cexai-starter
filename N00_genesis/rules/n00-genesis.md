@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - nucleus_def_n00
   - agent_card_n00
-  - component_map_n00
-  - n00_readme
-  - n07-orchestrator
 ---
 
 # N00 Genesis Rules

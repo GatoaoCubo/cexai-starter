@@ -18,7 +18,6 @@ related:
   - kc_canonical_product
   - bld_memory_canonical_product
   - canonical-product-builder
-  - bld_context_sources_canonical_product
   - bld_architecture_canonical_product
 ---
 # Domain Knowledge: canonical_product
@@ -86,5 +85,4 @@ python _tools/cex_retriever.py --query "channel-neutral product golden record"
 | [[kc_canonical_product]] | sibling | 0.44 |
 | [[bld_memory_canonical_product]] | downstream | 0.33 |
 | [[canonical-product-builder]] | downstream | 0.33 |
-| [[bld_context_sources_canonical_product]] | downstream | 0.30 |
 | [[bld_architecture_canonical_product]] | downstream | 0.29 |

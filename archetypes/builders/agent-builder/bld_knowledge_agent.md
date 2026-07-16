@@ -19,11 +19,8 @@ keywords: [agent construction, knowledge card agent, agent, builder, examples, d
 an, spec table, spec file, related artifac]
 density_score: 0.90
 related:
-  - bld_collaboration_agent
   - agent-builder
   - bld_architecture_agent
-  - p01_kc_agent
-  - bld_instruction_agent
 ---
 # Domain Knowledge: agent
 ## Executive Summary

@@ -17,11 +17,8 @@ tldr: "How N00_genesis is maintained: schema evolution, kind registration, KC li
 keywords: [genesis layer maintenance, procedural memory -- n, standard operating procedures, schema evolution, kind registration, kc library curation, prompt compiler updates, n00 genesis, distillation carry]
 density_score: null
 related:
-  - n00_procedural_memory_manifest
-  - n00_readme
   - nucleus_def_n00
   - kc_nucleus_def
-  - n00_p01_kind_index
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_flywheel_audit, cex_kind_register, cex_new_nucleus. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
@@ -123,4 +120,3 @@ N00_genesis never boots and is never dispatched: `boot/n00*.ps1` is absent, `boo
 | n00_readme | upstream | 0.38 |
 | [[nucleus_def_n00]] | sibling | 0.32 |
 | [[kc_nucleus_def]] | related | 0.28 |
-| [[n00_p01_kind_index]] | related | 0.25 |

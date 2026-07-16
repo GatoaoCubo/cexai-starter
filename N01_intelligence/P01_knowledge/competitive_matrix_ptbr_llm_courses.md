@@ -17,7 +17,6 @@ tags: [competitive-matrix, hotmart, eduzz, kiwify, ptbr-llm-courses, cexai-s1, t
 density_score: 0.90
 related:
   - p01_kc_cexai_market_gap_analysis
-  - case_study_lendaria_pricing_anchor
 ---
 
 <!-- 8F: F1 constrain=P01/competitive_matrix F2 become=competitive-matrix-builder F3 inject=probe_N01_market+15 web sources F4 reason=5x15 weighted matrix F5 call=WebFetch+WebSearch F6 produce=this file F7 govern=density 0.90+wikilinks 5+ F8 collaborate=commit+signal -->

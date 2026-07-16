@@ -18,10 +18,6 @@ keywords: [agent_name_service_record construction, naming pattern p, output to p
 density_score: 0.85
 related:
   - bld_tools_agent_name_service_record
-  - bld_instruction_agent_name_service_record
-  - bld_collaboration_agent_name_service_record
-  - bld_output_template_agent_name_service_record
-  - bld_manifest_agent_name_service_record
 ---
 # Agent Name Service Record Builder -- Config
 
@@ -150,7 +146,3 @@ in YAML values only. Body text and all field values MUST be ASCII.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_agent_name_service_record]] | upstream | 0.33 |
-| [[bld_instruction_agent_name_service_record]] | upstream | 0.31 |
-| [[bld_collaboration_agent_name_service_record]] | downstream | 0.31 |
-| [[bld_output_template_agent_name_service_record]] | upstream | 0.27 |
-| [[bld_manifest_agent_name_service_record]] | upstream | 0.27 |

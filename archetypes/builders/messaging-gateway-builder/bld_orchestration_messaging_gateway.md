@@ -18,11 +18,8 @@ updated: "2026-04-18"
 keywords: [messaging gateway construction, doctor check, git add targeted paths w, signal mission, messaging_gateway, builder, collaboration, hermes_origin, "### step 2: validate json"]
 density_score: 0.90
 related:
-  - p11_fb_messaging_gateway
   - bld_tools_messaging_gateway
   - bld_tools_kind
-  - p11_qg_handoff
-  - bld_collaboration_kind
 ---
 # Collaboration: messaging_gateway Builder
 
@@ -114,8 +111,5 @@ git revert HEAD  # revert the W1.2 commit
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_messaging_gateway]] | upstream | 0.37 |
 | [[bld_tools_messaging_gateway]] | upstream | 0.37 |
 | [[bld_tools_kind]] | upstream | 0.34 |
-| [[p11_qg_handoff]] | upstream | 0.31 |
-| [[bld_collaboration_kind]] | sibling | 0.29 |

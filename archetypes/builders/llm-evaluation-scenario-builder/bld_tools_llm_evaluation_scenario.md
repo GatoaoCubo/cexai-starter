@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [llm_evaluation_scenario construction, tools llm evaluation scenario, llm_evaluation_scenario, builder, tools, helm, github.com/stanford-crfm/helm, github.com/foundation-model-stack/fms-fmeval, crfm.stanford.edu/helm/latest/, production tools]
 density_score: 0.85
 related:
-  - bld_knowledge_card_llm_evaluation_scenario
   - llm-evaluation-scenario-builder
-  - n00_llm_evaluation_scenario_manifest
-  - bld_instruction_llm_evaluation_scenario
-  - bld_collaboration_llm_evaluation_scenario
 ---
 ## Production Tools
 | Tool                 | Purpose                                    | When                        |
@@ -51,8 +47,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_llm_evaluation_scenario]] | upstream | 0.54 |
 | [[llm-evaluation-scenario-builder]] | downstream | 0.45 |
-| [[n00_llm_evaluation_scenario_manifest]] | downstream | 0.41 |
-| [[bld_instruction_llm_evaluation_scenario]] | upstream | 0.37 |
-| [[bld_collaboration_llm_evaluation_scenario]] | downstream | 0.32 |

@@ -16,12 +16,6 @@ created: "2026-03-27"
 updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.89
-related:
-  - p11_qg_law
-  - p11_fb_axiom
-  - bld_instruction_axiom
-  - p11_qg_quality_gate
-  - p11_fb_quality_gate
 ---
 ## Quality Gate
 

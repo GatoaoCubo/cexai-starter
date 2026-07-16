@@ -20,8 +20,6 @@ related:
   - agent-builder
   - agent-package-builder
   - bld_architecture_agent
-  - p01_kc_agent_package
-  - bld_instruction_agent_package
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |

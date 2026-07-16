@@ -28,9 +28,6 @@ updated: "2026-04-13"
 keywords: [naming conventions, file paths, size limits, operational constraints, batch config construction, config batch config, batch_config, builder, config, "p09_bc_{name_slug}.yaml"]
 density_score: 0.90
 related:
-  - bld_instruction_batch_config
-  - p01_kc_batch_config
-  - bld_knowledge_card_batch_config
   - bld_tools_batch_config
   - bld_schema_batch_config
 ---
@@ -100,8 +97,5 @@ python _tools/cex_score.py --apply bld-config-batch-config.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_batch_config]] | upstream | 0.50 |
-| [[p01_kc_batch_config]] | related | 0.47 |
-| [[bld_knowledge_card_batch_config]] | upstream | 0.46 |
 | [[bld_tools_batch_config]] | upstream | 0.46 |
 | [[bld_schema_batch_config]] | upstream | 0.43 |

@@ -19,8 +19,6 @@ defines, receives from, produces for, related artifacts, upstream]
 density_score: 0.85
 related:
   - quantization-config-builder
-  - p10_lr_quantization_config_builder
-  - kc_quantization_config
   - bld_config_quantization_config
   - bld_tools_quantization_config
 ---
@@ -51,7 +49,5 @@ model inference speed and memory footprint without altering architecture.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[quantization-config-builder]] | upstream | 0.35 |
-| [[p10_lr_quantization_config_builder]] | upstream | 0.30 |
-| [[kc_quantization_config]] | upstream | 0.26 |
 | [[bld_config_quantization_config]] | upstream | 0.25 |
 | [[bld_tools_quantization_config]] | upstream | 0.23 |

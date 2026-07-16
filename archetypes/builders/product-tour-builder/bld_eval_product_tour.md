@@ -18,10 +18,6 @@ keywords: [product_tour construction, quality gate product tour, product_tour, b
 density_score: 0.85
 related:
   - product-tour-builder
-  - bld_knowledge_card_product_tour
-  - p05_qg_pricing_page
-  - p05_qg_interactive_demo
-  - p11_qg_usage_report
 ---
 ## Quality Gate
 

@@ -31,10 +31,7 @@ keywords:
   - "^p03_ap_[a-z][a-z0-9_]+$"
 density_score: 0.87
 related:
-  - p11_qg_browser_tool
   - bld_schema_action_prompt
-  - p11_qg_parser
-  - bld_instruction_action_prompt
   - action-prompt-builder
 ---
 ## Quality Gate

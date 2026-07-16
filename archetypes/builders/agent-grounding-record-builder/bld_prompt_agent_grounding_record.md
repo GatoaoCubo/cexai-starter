@@ -18,10 +18,6 @@ keywords: [agent_grounding_record construction, three-phase protocol, collect tr
 density_score: 0.85
 related:
   - bld_schema_agent_grounding_record
-  - kc_agent_grounding_record
-  - bld_manifest_agent_grounding_record
-  - bld_knowledge_card_agent_grounding_record
-  - bld_output_template_agent_grounding_record
 ---
 # Agent Grounding Record Builder -- Instructions
 ## Overview
@@ -121,7 +117,3 @@ c2pa_manifest_ref: <C2PA manifest URI or null>
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_agent_grounding_record]] | downstream | 0.40 |
-| [[kc_agent_grounding_record]] | upstream | 0.39 |
-| [[bld_manifest_agent_grounding_record]] | downstream | 0.35 |
-| [[bld_knowledge_card_agent_grounding_record]] | upstream | 0.30 |
-| [[bld_output_template_agent_grounding_record]] | downstream | 0.30 |

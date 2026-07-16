@@ -15,12 +15,6 @@ tldr: "Supabase Data Layer prompt: prompt template with variables, tone, and gen
 keywords: [supabase data layer builder, supabase data layer prompt, prompt template with variables, and generation strategy, builder, supabase, data-layer, instruction, pipeline, public]
 density_score: 0.89
 llm_function: REASON
-related:
-  - p12_wf_supabase_setup
-  - bld_output_template_supabase_data_layer
-  - bld_manifest_supabase_data_layer
-  - bld_quality_gate_supabase_data_layer
-  - bld_knowledge_card_supabase_data_layer
 ---
 # Instructions: Supabase Data Layer Pipeline
 
@@ -95,12 +89,3 @@ related:
 ## Phase 10: DOCUMENT
 1. Output migration SQL + config YAML + RLS summary
 2. Signal complete to N07
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p12_wf_supabase_setup]] | downstream | 0.48 |
-| [[bld_output_template_supabase_data_layer]] | related | 0.43 |
-| [[bld_manifest_supabase_data_layer]] | related | 0.43 |
-| [[bld_quality_gate_supabase_data_layer]] | upstream | 0.42 |
-| [[bld_knowledge_card_supabase_data_layer]] | upstream | 0.42 |

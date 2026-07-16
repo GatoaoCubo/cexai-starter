@@ -21,7 +21,6 @@ related:
   - bld_tools_cli_tool
   - bld_tools_retriever_config
   - bld_tools_memory_scope
-  - bld_tools_client
   - bld_tools_handoff_protocol
 ---
 # Tools: mcp-server-builder
@@ -79,5 +78,4 @@ python _tools/cex_score.py --apply bld-tools-mcp-server.md
 | bld_tools_cli_tool | sibling | 0.67 |
 | [[bld_tools_retriever_config]] | sibling | 0.65 |
 | [[bld_tools_memory_scope]] | sibling | 0.64 |
-| [[bld_tools_client]] | sibling | 0.63 |
 | [[bld_tools_handoff_protocol]] | sibling | 0.63 |

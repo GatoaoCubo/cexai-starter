@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [template with, for prompt_cache production, prompt cache construction, output template prompt cache, prompt_cache, builder, examples, output template, prompt cache config, cache strategy]
 density_score: 0.90
 related:
-  - p01_kc_prompt_cache
   - prompt-cache-builder
-  - p11_qg_prompt_cache
-  - bld_knowledge_card_prompt_cache
   - bld_architecture_prompt_cache
 ---
 # Output Template: prompt_cache
@@ -85,8 +82,5 @@ tldr: "{{Dense <=160ch cache config summary}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prompt_cache]] | downstream | 0.48 |
 | [[prompt-cache-builder]] | downstream | 0.48 |
-| [[p11_qg_prompt_cache]] | downstream | 0.46 |
-| [[bld_knowledge_card_prompt_cache]] | upstream | 0.43 |
 | [[bld_architecture_prompt_cache]] | downstream | 0.42 |

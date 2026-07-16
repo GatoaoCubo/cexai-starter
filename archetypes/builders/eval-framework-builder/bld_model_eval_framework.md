@@ -22,9 +22,7 @@ density_score: 0.85
 related:
   - benchmark-suite-builder
   - eval-metric-builder
-  - p10_lr_eval_framework_builder
   - judge-config-builder
-  - kc_eval_framework
 ---
 ## Identity
 
@@ -74,6 +72,4 @@ NEVER ASSUME PRE-EXISTING BENCHMARK DATA; INCLUDE DATA-LOADER SPECIFICATIONS.
 |----------|-------------|-------|
 | [[benchmark-suite-builder]] | sibling | 0.45 |
 | [[eval-metric-builder]] | sibling | 0.42 |
-| [[p10_lr_eval_framework_builder]] | downstream | 0.40 |
 | [[judge-config-builder]] | sibling | 0.36 |
-| [[kc_eval_framework]] | upstream | 0.34 |

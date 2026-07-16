@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [sso_config construction, instruction sso config, sso_config, builder, instruction, idp_config, protocol, attribute_mapping, constraints, user.email]
 density_score: 0.85
-related:
-  - sso-config-builder
-  - bld_knowledge_card_sso_config
-  - kc_sso_config
-  - p10_mem_sso_config_builder
-  - p09_qg_sso_config
 ---
 ## Phase 1: RESEARCH  
 1. Identify required identity providers (IDP) and their supported protocols (SAML, OIDC).  
@@ -48,12 +42,3 @@ related:
 - [ ] ✅ Confirm attribute mappings align with application requirements.  
 - [ ] ✅ Ensure constraints (e.g., `max_age`, `encryption`) meet security policies.  
 - [ ] ✅ Test artifact with IDP using mock SSO flow (e.g., SAML response validation).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[sso-config-builder]] | downstream | 0.49 |
-| [[bld_knowledge_card_sso_config]] | upstream | 0.46 |
-| [[kc_sso_config]] | upstream | 0.46 |
-| [[p10_mem_sso_config_builder]] | downstream | 0.45 |
-| [[p09_qg_sso_config]] | downstream | 0.37 |

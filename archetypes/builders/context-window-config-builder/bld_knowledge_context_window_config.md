@@ -19,11 +19,7 @@ keywords: [context window config construction, context_window_config, builder, e
 context, spec table, key model limits, default output, claude opus]
 density_score: 0.90
 related:
-  - p01_kc_context_window_config
   - context-window-config-builder
-  - p10_lr_context_window_config_builder
-  - bld_collaboration_context_window_config
-  - bld_collaboration_model_card
 ---
 # Domain Knowledge: context_window_config
 ## Executive Summary
@@ -63,6 +59,5 @@ Context window configs allocate token budgets across prompt sections within a mo
 |----------|-------------|-------|
 | [[kc_context_window_config]] | sibling | 0.49 |
 | [[context-window-config-builder]] | downstream | 0.42 |
-| [[p10_lr_context_window_config_builder]] | downstream | 0.32 |
 | [[bld_orchestration_context_window_config]] | downstream | 0.31 |
 | bld_collaboration_model_card | downstream | 0.29 |

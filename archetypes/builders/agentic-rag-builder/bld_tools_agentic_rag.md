@@ -17,7 +17,6 @@ updated: "2026-04-14"
 keywords: [agentic_rag construction, tools agentic rag, agentic_rag, builder, tools, production tools, validation tools, external references, index agent, related artifacts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_agentic_rag
   - bld_tools_graph_rag_config
   - bld_tools_reranker_config
   - bld_tools_rbac_policy
@@ -50,7 +49,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_agentic_rag]] | upstream | 0.43 |
 | [[bld_tools_graph_rag_config]] | sibling | 0.38 |
 | [[bld_tools_reranker_config]] | sibling | 0.37 |
 | [[bld_tools_rbac_policy]] | sibling | 0.35 |

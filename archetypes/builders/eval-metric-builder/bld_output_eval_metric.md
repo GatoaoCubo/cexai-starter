@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [eval_metric construction, output template eval metric, eval_metric, builder, output_template, related artifacts, param description, description, sibling, param]
 density_score: 0.85
 related:
-  - bld_output_template_workflow_node
-  - bld_output_template_playground_config
   - bld_config_eval_metric
-  - bld_output_template_sandbox_spec
-  - bld_output_template_judge_config
 ---
 ```yaml
 ---

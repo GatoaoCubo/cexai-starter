@@ -22,12 +22,6 @@ axioms:
 linked_artifacts:
   primary: p03_pt_brand_book_generator
   related: [p01_kc_brand_voice_systems, p01_kc_brand_frameworks, p03_constraint_brand_book_n06, n06_output_brand_book]
-related:
-  - p01_kc_brand_voice_systems
-  - p03_pt_brand_discovery_interview
-  - p01_kc_brand_voice_consistency_channels
-  - p03_pt_brand_voice_templates
-  - p03_constraint_brand_voice_contract_n06
 ---
 
 # 12 Jungian Brand Archetypes

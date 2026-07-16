@@ -31,7 +31,6 @@ cross_provider:
 related:
   - session-state-builder
   - bld_memory_session_state
-  - bld_collaboration_session_state
   - bld_architecture_session_state
 ---
 

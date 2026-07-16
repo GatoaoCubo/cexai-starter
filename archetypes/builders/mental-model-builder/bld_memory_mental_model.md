@@ -24,9 +24,6 @@ reliable, mental models]
 density_score: 0.90
 related:
   - mental-model-builder
-  - bld_collaboration_mental_model
-  - bld_knowledge_card_mental_model
-  - p03_ins_mental_model
   - runtime-state-builder
 ---
 # Memory: mental-model-builder
@@ -91,5 +88,4 @@ python _tools/cex_score.py --apply bld-memory-mental-model.md
 | [[mental-model-builder]] | upstream | 0.60 |
 | [[bld_orchestration_mental_model]] | upstream | 0.58 |
 | [[bld_knowledge_mental_model]] | upstream | 0.53 |
-| [[p03_ins_mental_model]] | upstream | 0.46 |
 | [[runtime-state-builder]] | related | 0.41 |

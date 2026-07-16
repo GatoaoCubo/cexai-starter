@@ -28,8 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, api client construction, config api client, api_client, builder, examples, "p04_client_{api_slug}.md"]
 density_score: 0.90
 related:
-  - bld_config_connector
-  - bld_knowledge_card_client
   - bld_config_memory_scope
   - bld_config_prompt_version
   - bld_config_retriever_config
@@ -75,7 +73,6 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_config_connector | sibling | 0.40 |
-| [[bld_knowledge_card_client]] | upstream | 0.35 |
 | [[bld_config_memory_scope]] | sibling | 0.32 |
 | [[bld_config_prompt_version]] | sibling | 0.32 |
 | [[bld_config_retriever_config]] | sibling | 0.32 |

@@ -18,10 +18,7 @@ keywords: [and recovers after cooldown, circuit_breaker, resilience, fault-toler
 density_score: 0.90
 related:
   - bld_architecture_circuit_breaker
-  - p01_kc_circuit_breaker
   - circuit-breaker-builder
-  - p11_qg_circuit_breaker
-  - bld_instruction_circuit_breaker
 ---
 # Knowledge Card: circuit_breaker
 
@@ -111,7 +108,4 @@ State changes should emit signals to monitor (P11) for observability.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_circuit_breaker]] | downstream | 0.59 |
-| [[p01_kc_circuit_breaker]] | sibling | 0.55 |
 | [[circuit-breaker-builder]] | downstream | 0.54 |
-| [[p11_qg_circuit_breaker]] | downstream | 0.50 |
-| [[bld_instruction_circuit_breaker]] | downstream | 0.47 |

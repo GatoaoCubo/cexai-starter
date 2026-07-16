@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [agent session state persistence, session backend construction, knowledge card session backend, session_backend, builder, examples, "{nucleus}:{session_id}"]
 density_score: 0.90
 related:
-  - p01_kc_session_backend
   - session-backend-builder
-  - p10_lr_session_backend_builder
-  - bld_instruction_session_backend
 ---
 # Domain Knowledge: session_backend
 ## Executive Summary
@@ -93,5 +90,4 @@ Session backends define the persistence contract for agent session state — spe
 |----------|-------------|-------|
 | [[kc_session_backend]] | sibling | 0.49 |
 | [[session-backend-builder]] | downstream | 0.49 |
-| [[p10_lr_session_backend_builder]] | downstream | 0.46 |
 | [[bld_prompt_session_backend]] | downstream | 0.42 |

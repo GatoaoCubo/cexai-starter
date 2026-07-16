@@ -44,7 +44,6 @@ slots:
   builds_artifacts: false
 related:
   - agent_card_n07
-  - n07-orchestrator
   - kc_nucleus_def
 tags:
   - nucleus_def

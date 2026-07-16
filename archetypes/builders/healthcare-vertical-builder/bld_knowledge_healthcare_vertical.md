@@ -19,10 +19,6 @@ the, protected health information, key concepts, technical framework, security r
 density_score: 0.85
 related:
   - healthcare-vertical-builder
-  - bld_instruction_healthcare_vertical
-  - p01_qg_healthcare_vertical
-  - kc_healthcare_vertical
-  - p10_mem_healthcare_vertical_builder
 ---
 ## Domain Overview
 The healthcare industry vertical centers on managing sensitive patient data, ensuring interoperability through standardized protocols, and adhering to regulatory frameworks like HIPAA. Key challenges include secure handling of Protected Health Information (PHI), seamless data exchange between systems (e.g., EHRs, labs), and compliance with evolving standards such as HL7/FHIR. Use cases span clinical workflows, telemedicine, and population health management, requiring robust data governance and encryption practices.
@@ -77,7 +73,3 @@ Healthcare IT systems must balance innovation with strict privacy controls, ofte
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[healthcare-vertical-builder]] | related | 0.65 |
-| [[bld_instruction_healthcare_vertical]] | downstream | 0.64 |
-| [[p01_qg_healthcare_vertical]] | downstream | 0.56 |
-| [[kc_healthcare_vertical]] | sibling | 0.51 |
-| [[p10_mem_healthcare_vertical_builder]] | downstream | 0.49 |

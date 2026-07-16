@@ -27,10 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - cli-tool-builder
-  - p11_qg_cli_tool
-  - bld_instruction_cli_tool
-  - bld_knowledge_card_cli_tool
-  - p01_kc_cli_tool
 ---
 ## Summary
 CLI tools are consumed programmatically as often as interactively. The difference between a tool that composes well in a pipeline and one that does not comes down to two decisions made at spec time: exit code semantics and flag naming convention. Both are invisible during happy-path use and catastrophic on failure if undefined.
@@ -92,7 +88,3 @@ python _tools/cex_score.py --apply p10-lr-cli-tool-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cli-tool-builder]] | upstream | 0.43 |
-| [[p11_qg_cli_tool]] | downstream | 0.35 |
-| [[bld_instruction_cli_tool]] | upstream | 0.35 |
-| [[bld_knowledge_card_cli_tool]] | upstream | 0.34 |
-| [[p01_kc_cli_tool]] | upstream | 0.31 |

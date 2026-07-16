@@ -15,12 +15,6 @@ tldr: "Component map, dependency graph, and boundary table for document_loader a
 keywords: [architecture iso - document_loader, component map, dependency graph, architecture, document_loader, ingestion, chunking, component inventory, chain document, index text]
 density_score: 1.0
 title: Architecture ISO - document_loader
-related:
-  - p01_kc_document_loader
-  - document_loader-builder
-  - p08_dir_rag_pipeline
-  - bld_collaboration_document_loader
-  - p11_qg_document_loader
 ---
 # Architecture: document_loader
 
@@ -107,7 +101,5 @@ encoding_detector --> parser
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_document_loader]] | upstream | 0.46 |
-| [[document_loader-builder]] | related | 0.45 |
 | p08_dir_rag_pipeline | downstream | 0.42 |
 | [[bld_orchestration_document_loader]] | related | 0.34 |
-| [[p11_qg_document_loader]] | downstream | 0.34 |

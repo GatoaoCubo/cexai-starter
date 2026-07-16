@@ -13,7 +13,6 @@ tags: [gstack, gap-analysis, capability-map, assimilation, GSTACK_ASSIM]
 keywords: [design-shotgun, taste-profile, prompt-injection-defense, diataxis, continuous-checkpoint, capability-gap, gstack, assimilation]
 related:
   - p01_kc_gstack_attribution_ledger
-  - kc_repo_assimilation_pipeline
   - p01_kc_competitive_agent_frameworks
   - p01_kc_competitor_openclaw
 ---

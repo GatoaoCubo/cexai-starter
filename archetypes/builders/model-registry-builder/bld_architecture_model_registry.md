@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [model_registry construction, architecture model registry, model_registry, builder, architecture, component inventory, registry entry, schema validator, quality gate, audit trail]
 density_score: 0.85
 related:
-  - bld_collaboration_model_registry
   - model-registry-builder
-  - bld_knowledge_card_model_registry
-  - bld_instruction_model_registry
-  - kc_model_registry
 ---
 ## Component Inventory
 
@@ -50,8 +46,4 @@ The model_registry-builder serves as the central source of truth within the CEX 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_registry]] | downstream | 0.39 |
 | [[model-registry-builder]] | downstream | 0.39 |
-| [[bld_knowledge_card_model_registry]] | upstream | 0.36 |
-| [[bld_instruction_model_registry]] | upstream | 0.35 |
-| [[kc_model_registry]] | upstream | 0.34 |

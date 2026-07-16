@@ -18,10 +18,6 @@ keywords: [onboarding_flow construction, quality gate onboarding flow, onboardin
 density_score: 0.85
 related:
   - onboarding-flow-builder
-  - kc_onboarding_flow
-  - bld_knowledge_card_onboarding_flow
-  - n00_onboarding_flow_manifest
-  - p10_mem_onboarding_flow_builder
 ---
 ## Quality Gate
 

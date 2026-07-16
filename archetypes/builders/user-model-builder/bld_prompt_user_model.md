@@ -21,9 +21,6 @@ density_score: 0.90
 related:
   - user-model-builder
   - bld_schema_user_model
-  - bld_instruction_memory_scope
-  - bld_instruction_output_validator
-  - bld_instruction_retriever_config
 ---
 # Instructions: How to Produce a user_model
 

@@ -29,10 +29,6 @@ keywords:
   - "golden example"
 density_score: null
 related:
-  - kc_lineage_record
-  - bld_manifest_lineage_record
-  - bld_rules_lineage_record
-  - bld_instruction_lineage_record
   - bld_schema_lineage_record
 ---
 ## Quality Gate

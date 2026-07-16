@@ -17,11 +17,7 @@ density_score: 0.84
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_instruction_domain_vocabulary
   - bounded-context-builder
-  - bld_instruction_aggregate_root
-  - bld_instruction_domain_event
-  - bld_instruction_data_contract
 ---
 # Instructions: How to Produce a bounded_context
 ## Phase 1: SCOPE
@@ -79,8 +75,4 @@ python _tools/cex_prompt_optimizer.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_domain_vocabulary]] | sibling | 0.38 |
 | [[bounded-context-builder]] | downstream | 0.37 |
-| [[bld_instruction_aggregate_root]] | sibling | 0.33 |
-| [[bld_instruction_domain_event]] | sibling | 0.33 |
-| [[bld_instruction_data_contract]] | sibling | 0.33 |

@@ -20,8 +20,6 @@ related:
   - bld_schema_course_module
   - bld_memory_course_module
   - course-module-builder
-  - bld_knowledge_card_course_module
-  - n00_course_module_manifest
 ---
 ## Quality Gate
 

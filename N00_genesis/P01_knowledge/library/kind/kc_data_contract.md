@@ -22,10 +22,8 @@ user_says: ["define contract between X and Y", "schema agreement", "what data do
 long_tails: ["define the schema and SLA between a data producer and consumer", "formalize what data one service exposes to another", "create a schema contract for cross-team data exchange"]
 related:
   - data-contract-builder
-  - bld_kc_data_contract
   - bld_memory_data_contract
   - bld_architecture_data_contract
-  - bld_rules_data_contract
 ---
 
 # Data Contract
@@ -101,7 +99,5 @@ A data_contract is a schema-level agreement between a data producer and consumer
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[data-contract-builder]] | downstream | 0.60 |
-| [[bld_kc_data_contract]] | sibling | 0.52 |
 | [[bld_memory_data_contract]] | downstream | 0.47 |
 | [[bld_architecture_data_contract]] | downstream | 0.44 |
-| [[bld_rules_data_contract]] | downstream | 0.40 |

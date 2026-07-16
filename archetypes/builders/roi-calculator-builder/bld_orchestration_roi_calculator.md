@@ -21,8 +21,6 @@ density_score: 0.85
 related:
   - roi-calculator-builder
   - bld_config_roi_calculator
-  - n00_roi_calculator_manifest
-  - bld_instruction_roi_calculator
   - kc_roi_calculator
 ---
 ## Crew Role  

@@ -28,11 +28,8 @@ keywords: [runtime rule builder instructions, specify timeout, rate limit, trigg
 density_score: 0.93
 llm_function: REASON
 related:
-  - bld_knowledge_card_runtime_rule
   - runtime-rule-builder
   - bld_schema_runtime_rule
-  - bld_collaboration_runtime_rule
-  - p11_qg_runtime_rule
 ---
 ## Context
 A **runtime_rule** specifies the operational parameters that govern how a system component behaves under load, failure, or resource pressure. Rules are technical, numeric, and scoped to a specific component or operation. They are not behavioral policies (law), safety constraints (guardrail), or lifecycle rules — they are configuration-level specifications for engineers and runtime systems to implement.

@@ -11,12 +11,6 @@ tldr: "Approval Request feedback: anti-patterns, regression signals, and quality
 keywords: [approval request, approval request feedback, regression signals, quality improvement triggers, feedback, anti-patterns, approval_request, common failure modes, correction protocol, key behaviors]
 density_score: 1.0
 updated: "2026-07-03"
-related:
-  - p11_fb_hitl_config
-  - p11_fb_permission
-  - p11_fb_incident_report
-  - p10_lr_approval_request_builder
-  - adr_v03_governance_taxonomy
 ---
 # Feedback: Approval Request
 
@@ -89,12 +83,3 @@ average: 8.0+
 gates_passed: 7/7
 density: 0.85+
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p11_fb_hitl_config]] | sibling (emitting-policy builder's feedback) | 0.78 |
-| [[p11_fb_permission]] | sibling (contrast: standing grant) | 0.74 |
-| [[p11_fb_incident_report]] | sibling (contrast: post-mortem) | 0.72 |
-| [[p10_lr_approval_request_builder]] | sibling | 0.68 |
-| [[adr_v03_governance_taxonomy]] | related (scope-defining ADR) | 0.40 |

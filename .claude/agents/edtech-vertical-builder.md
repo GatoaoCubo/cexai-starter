@@ -5,10 +5,8 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_edtech_vertical
-  - p11_fb_edtech_vertical
   - bld_tools_edtech_vertical
   - edtech-vertical-builder
-  - bld_collaboration_edtech_vertical
 ---
 
 # edtech-vertical-builder Sub-Agent
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_edtech_vertical]] | related | 0.36 |
-| [[p11_fb_edtech_vertical]] | related | 0.32 |
 | [[bld_tools_edtech_vertical]] | related | 0.31 |
 | [[edtech-vertical-builder]] | related | 0.30 |
-| [[bld_collaboration_edtech_vertical]] | related | 0.30 |

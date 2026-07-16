@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [validator construction, collaboration validator, validator, builder, examples, "### crew: pre-commit quality gate", my role, crew compositions, artifact governance pipeline, commit quality gate]
 density_score: 0.90
 related:
-  - bld_collaboration_validation_schema
-  - bld_collaboration_quality_gate
   - validator-builder
-  - bld_collaboration_output_validator
-  - bld_collaboration_type_def
 ---
 # Collaboration: validator-builder
 ## My Role in Crews

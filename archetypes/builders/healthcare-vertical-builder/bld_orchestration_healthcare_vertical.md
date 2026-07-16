@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [healthcare_vertical construction, collaboration healthcare vertical, healthcare_vertical, builder, collaboration, crew role  
 integrates, receives from, data engineer, compliance officer, produces for]
 density_score: 0.85
-related:
-  - bld_collaboration_compliance_checklist
-  - bld_collaboration_compliance_framework
-  - bld_collaboration_govtech_vertical
-  - bld_collaboration_legal_vertical
-  - bld_collaboration_fintech_vertical
 ---
 ## Crew Role  
 Integrates healthcare-specific workflows, ensures data interoperability, and aligns vertical features with clinical and operational requirements.  
@@ -43,12 +37,3 @@ Integrates healthcare-specific workflows, ensures data interoperability, and ali
 
 ## Boundary  
 Does NOT handle audit trails, legal documentation, or end-to-end compliance validation (handled by Compliance Officer). Excludes case study development (handled by Research Team).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_compliance_checklist]] | sibling | 0.33 |
-| [[bld_collaboration_compliance_framework]] | sibling | 0.33 |
-| [[bld_collaboration_govtech_vertical]] | sibling | 0.32 |
-| [[bld_collaboration_legal_vertical]] | sibling | 0.31 |
-| [[bld_collaboration_fintech_vertical]] | sibling | 0.30 |

@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [action prompt construction, collaboration action prompt, action_prompt, builder, examples, "### crew: task execution setup", my role, crew compositions, agent prompt stack, task execution setup]
 density_score: 0.90
 related:
-  - bld_collaboration_prompt_version
-  - bld_collaboration_few_shot_example
-  - bld_collaboration_context_doc
   - action-prompt-builder
-  - bld_collaboration_system_prompt
 ---
 # Collaboration: action-prompt-builder
 ## My Role in Crews

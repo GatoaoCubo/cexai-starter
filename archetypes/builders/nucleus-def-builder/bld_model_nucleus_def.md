@@ -20,10 +20,6 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_nucleus_def
-  - bld_collaboration_nucleus_def
-  - n00_nucleus_def_manifest
-  - n00_readme
   - p02_mm_cex_architecture_n04
 ---
 ## Identity

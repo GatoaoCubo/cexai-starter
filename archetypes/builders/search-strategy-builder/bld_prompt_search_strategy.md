@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [search_strategy construction, instruction search strategy, search_strategy, builder, instruction, allocation_rules, compute_allocation(), related artifacts, research findings, sibling]
 density_score: 0.85
-related:
-  - bld_instruction_playground_config
-  - bld_instruction_judge_config
-  - bld_instruction_eval_metric
-  - bld_instruction_planning_strategy
-  - bld_instruction_eval_framework
 ---
 ## Phase 1: RESEARCH  
 1. Analyze compute bottlenecks in inference pipelines  
@@ -48,12 +42,3 @@ related:
 - [ ] ✅ Edge case validation (e.g., 1000+ concurrent queries)  
 - [ ] ✅ Performance benchmark against baseline  
 - [ ] ✅ Peer review for domain-specific accuracy
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_playground_config]] | sibling | 0.38 |
-| [[bld_instruction_judge_config]] | sibling | 0.33 |
-| [[bld_instruction_eval_metric]] | sibling | 0.32 |
-| [[bld_instruction_planning_strategy]] | sibling | 0.31 |
-| [[bld_instruction_eval_framework]] | sibling | 0.30 |

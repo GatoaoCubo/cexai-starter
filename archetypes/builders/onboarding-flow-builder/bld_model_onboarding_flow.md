@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - kc_onboarding_flow
-  - bld_instruction_onboarding_flow
-  - bld_knowledge_card_onboarding_flow
-  - n00_onboarding_flow_manifest
-  - p10_mem_onboarding_flow_builder
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS use activation milestones and aha-moment triggers.
 ALWAYS align with product vision and user persona goals.  
 NEVER include post-onboarding retention mechanics.  
 NEVER reference system backend workflows or technical implementation.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_onboarding_flow]] | upstream | 0.55 |
-| [[bld_instruction_onboarding_flow]] | upstream | 0.53 |
-| [[bld_knowledge_card_onboarding_flow]] | upstream | 0.50 |
-| [[n00_onboarding_flow_manifest]] | related | 0.46 |
-| [[p10_mem_onboarding_flow_builder]] | downstream | 0.45 |

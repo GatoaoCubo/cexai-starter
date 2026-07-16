@@ -20,9 +20,6 @@ density_score: 0.88
 related:
   - experiment-config-builder
   - bld_architecture_experiment_config
-  - bld_collaboration_feature_flag
-  - bld_collaboration_env_config
-  - bld_instruction_experiment_config
 ---
 # Collaboration: experiment-config-builder
 ## My Role in Crews
@@ -89,6 +86,3 @@ controlled trials are statistically valid and operationally safe.
 |----------|-------------|-------|
 | [[experiment-config-builder]] | upstream | 0.41 |
 | [[bld_architecture_experiment_config]] | upstream | 0.36 |
-| [[bld_collaboration_feature_flag]] | sibling | 0.30 |
-| [[bld_collaboration_env_config]] | sibling | 0.28 |
-| [[bld_instruction_experiment_config]] | upstream | 0.27 |

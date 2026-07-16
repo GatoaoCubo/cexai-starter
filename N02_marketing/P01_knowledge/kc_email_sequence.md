@@ -15,10 +15,6 @@ keywords: [persuasion arc, emotional momentum, cta, scarcity, urgency, origin st
 density_score: 0.94
 related:
   - p01_fse_n02_email_campaign
-  - p07_sr_5d_marketing
-  - p12_wf_cf_email_launch
-  - p03_pt_email_sequence_template
-  - p03_ap_copy_generation_n02
 ---
 
 # KC: Email Sequence Strategy

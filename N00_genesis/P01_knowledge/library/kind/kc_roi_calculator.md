@@ -12,11 +12,7 @@ when_to_use: "When building a financial comparison tool for economic buyers eval
 keywords: [return on investment, tco analysis, net present value, internal rate of return, discount rate, salvage value, cash flow, fixed costs, variable costs]
 density_score: 1.0
 related:
-  - bld_knowledge_card_roi_calculator
-  - bld_instruction_roi_calculator
   - roi-calculator-builder
-  - p11_qg_roi_calculator
-  - bld_output_template_roi_calculator
 ---
 
 # ROI Calculator Specification

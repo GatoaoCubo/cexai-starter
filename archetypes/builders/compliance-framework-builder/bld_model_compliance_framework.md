@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_instruction_compliance_framework
   - compliance-checklist-builder
-  - p10_lr_compliance_framework_builder
-  - p11_qg_compliance_framework
-  - bld_knowledge_card_compliance_framework
 ---
 ## Identity
 
@@ -66,8 +62,4 @@ The compliance_framework-builder agent is a specialized tool for mapping AI syst
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_compliance_framework]] | upstream | 0.52 |
 | [[compliance-checklist-builder]] | sibling | 0.48 |
-| [[p10_lr_compliance_framework_builder]] | upstream | 0.48 |
-| [[p11_qg_compliance_framework]] | related | 0.47 |
-| [[bld_knowledge_card_compliance_framework]] | upstream | 0.47 |

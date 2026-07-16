@@ -18,10 +18,7 @@ keywords: [pipeline_template construction, quality gate pipeline template, pipel
 density_score: 0.88
 related:
  - pipeline-template-builder
- - n00_pipeline_template_manifest
  - bld_schema_pipeline_template
- - bld_instruction_pipeline_template
- - bld_output_template_pipeline_template
 ---
 ## Quality Gate
 

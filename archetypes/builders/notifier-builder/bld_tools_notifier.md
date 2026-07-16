@@ -17,7 +17,6 @@ density_score: 1.0
 title: Tools ISO - notifier
 related:
   - bld_tools_webhook
-  - tools_prompt_template_builder
   - bld_tools_voice_pipeline
   - bld_tools_collaboration_pattern
   - bld_tools_naming_rule
@@ -88,7 +87,6 @@ brain_query("notifier rate limit {provider}")
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_webhook]] | sibling | 0.48 |
-| [[tools_prompt_template_builder]] | sibling | 0.44 |
 | [[bld_tools_voice_pipeline]] | sibling | 0.42 |
 | [[bld_tools_collaboration_pattern]] | sibling | 0.41 |
 | [[bld_tools_naming_rule]] | sibling | 0.41 |

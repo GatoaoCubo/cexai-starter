@@ -19,10 +19,6 @@ keywords: [audio tool construction, collaboration audio tool, audio_tool, builde
 density_score: 0.90
 related:
   - audio-tool-builder
-  - p01_kc_audio_tool
-  - bld_knowledge_card_audio_tool
-  - bld_instruction_audio_tool
-  - p10_lr_audio_tool_builder
 ---
 # Collaboration: audio-tool-builder
 ## My Role in Crews
@@ -72,7 +68,3 @@ None — independent builder (layer 0). Audio tools can be defined standalone.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[audio-tool-builder]] | upstream | 0.50 |
-| [[p01_kc_audio_tool]] | upstream | 0.49 |
-| [[bld_knowledge_card_audio_tool]] | upstream | 0.43 |
-| [[bld_instruction_audio_tool]] | upstream | 0.42 |
-| [[p10_lr_audio_tool_builder]] | upstream | 0.40 |

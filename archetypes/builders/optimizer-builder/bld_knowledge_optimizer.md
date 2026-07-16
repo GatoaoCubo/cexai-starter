@@ -31,11 +31,8 @@ keywords:
   - "spec table"
 density_score: 0.90
 related:
-  - p03_ins_optimizer
   - optimizer-builder
   - bld_memory_optimizer
-  - p11_qg_optimizer
-  - bld_collaboration_optimizer
 ---
 # Domain Knowledge: optimizer
 ## Executive Summary
@@ -96,8 +93,5 @@ Optimizers are continuous improvement artifacts encoding the feedback loop: meas
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_optimizer]] | downstream | 0.53 |
 | [[optimizer-builder]] | downstream | 0.46 |
 | [[bld_memory_optimizer]] | downstream | 0.45 |
-| [[p11_qg_optimizer]] | downstream | 0.38 |
-| [[bld_collaboration_optimizer]] | downstream | 0.35 |

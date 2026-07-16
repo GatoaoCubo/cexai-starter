@@ -18,10 +18,6 @@ keywords: [fintech_vertical construction, instruction fintech vertical, fintech_
 density_score: 0.85
 related:
   - fintech-vertical-builder
-  - p01_qg_fintech_vertical
-  - bld_knowledge_card_fintech_vertical
-  - p10_mem_fintech_vertical_builder
-  - p01_kc_fintech_vertical
 ---
 ## Phase 1: RESEARCH  
 1. Identify SOC2+PCI-DSS compliance requirements for fintech data handling.  
@@ -55,7 +51,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fintech-vertical-builder]] | upstream | 0.60 |
-| [[p01_qg_fintech_vertical]] | downstream | 0.55 |
-| [[bld_knowledge_card_fintech_vertical]] | upstream | 0.51 |
-| [[p10_mem_fintech_vertical_builder]] | downstream | 0.47 |
-| [[p01_kc_fintech_vertical]] | upstream | 0.39 |

@@ -18,10 +18,7 @@ keywords: [inject phase, builder, event_stream, context, context sources, mandat
 density_score: 1.0
 related:
   - bld_tools_event_stream
-  - bld_manifest_event_stream
   - bld_tools_event_schema
-  - bld_knowledge_card_event_stream
-  - bld_instruction_event_stream
 ---
 # Context Sources: event_stream
 
@@ -83,7 +80,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_event_stream]] | sibling | 0.37 |
-| [[bld_manifest_event_stream]] | sibling | 0.27 |
 | [[bld_tools_event_schema]] | related | 0.26 |
-| [[bld_knowledge_card_event_stream]] | sibling | 0.26 |
-| [[bld_instruction_event_stream]] | related | 0.25 |

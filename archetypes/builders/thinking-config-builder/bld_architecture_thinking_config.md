@@ -19,10 +19,7 @@ keywords: [thinking_config construction, architecture thinking config, thinking_
 this, config builder, in progress, schema store, data team]
 density_score: 0.85
 related:
-  - bld_collaboration_retriever_config
   - bld_memory_thinking_config
-  - bld_collaboration_thinking_config
-  - bld_instruction_thinking_config
   - bld_orchestration_inference_config
 ---
 ## Component Inventory
@@ -69,8 +66,5 @@ alongside context_window_config (input length) and above reasoning_strategy (met
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_retriever_config]] | downstream | 0.32 |
 | [[bld_memory_thinking_config]] | downstream | 0.31 |
-| [[bld_collaboration_thinking_config]] | downstream | 0.31 |
-| [[bld_instruction_thinking_config]] | upstream | 0.31 |
 | [[bld_orchestration_inference_config]] | downstream | 0.27 |

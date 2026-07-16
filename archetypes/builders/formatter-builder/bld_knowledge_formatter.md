@@ -20,9 +20,6 @@ formatters, spec table]
 density_score: 0.90
 related:
   - formatter-builder
-  - bld_instruction_formatter
-  - p10_lr_formatter_builder
-  - p01_kc_formatter
   - bld_config_formatter
 ---
 # Domain Knowledge: formatter
@@ -78,6 +75,5 @@ Formatters convert structured data into human-readable or machine-consumable rep
 |----------|-------------|-------|
 | [[formatter-builder]] | downstream | 0.49 |
 | [[bld_prompt_formatter]] | downstream | 0.42 |
-| [[p10_lr_formatter_builder]] | downstream | 0.39 |
 | [[kc_formatter]] | sibling | 0.37 |
 | [[bld_config_formatter]] | downstream | 0.36 |

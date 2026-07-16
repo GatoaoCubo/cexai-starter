@@ -19,11 +19,7 @@ keywords: [secret config construction, knowledge card secret config, secret_conf
 secret, spec table, provider patterns, auth method]
 density_score: 0.90
 related:
-  - secret-config-builder
-  - p10_lr_secret_config_builder
   - bld_config_secret_config
-  - bld_collaboration_secret_config
-  - bld_output_template_secret_config
 ---
 # Domain Knowledge: secret_config
 ## Executive Summary
@@ -81,8 +77,5 @@ Secret configs are credential management specifications that define how sensitiv
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[secret-config-builder]] | downstream | 0.56 |
-| [[p10_lr_secret_config_builder]] | downstream | 0.49 |
 | [[bld_config_secret_config]] | downstream | 0.48 |
 | [[bld_orchestration_secret_config]] | downstream | 0.45 |
-| [[bld_output_template_secret_config]] | downstream | 0.44 |

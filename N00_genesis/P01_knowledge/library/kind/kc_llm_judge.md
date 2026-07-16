@@ -31,11 +31,7 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - bld_collaboration_llm_judge
   - llm-judge-builder
-  - p07_llm_judge
-  - n00_judge_config_manifest
-  - n00_llm_judge_manifest
 ---
 
 # LLM Judge

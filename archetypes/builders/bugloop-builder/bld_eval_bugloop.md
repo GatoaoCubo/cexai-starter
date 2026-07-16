@@ -17,11 +17,7 @@ updated: "2026-03-27"
 keywords: [automated correction cycles, correction cycle completeness, fix strategy safety, and verification assertion coverage, quality-gate, bugloop, correction-cycle]
 density_score: 0.92
 related:
-  - bld_instruction_bugloop
   - bugloop-builder
-  - bld_output_template_bugloop
-  - bld_knowledge_card_bugloop
-  - p01_kc_bugloop
 ---
 ## Quality Gate
 

@@ -18,11 +18,8 @@ memory_scope: project
 observation_types: [user, feedback, project, reference]
 llm_function: INJECT
 related:
-  - p03_ins_pattern
   - pattern-builder
-  - p05_qg_pitch_deck
   - bld_memory_pattern
-  - p10_mem_pitch_deck_builder
 ---
 # Memory — Learnings
 
@@ -85,8 +82,5 @@ This ISO describes a software project: its repository layout, modules, and build
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_pattern]] | upstream | 0.26 |
 | [[pattern-builder]] | upstream | 0.22 |
-| [[p05_qg_pitch_deck]] | downstream | 0.22 |
 | [[bld_memory_pattern]] | sibling | 0.21 |
-| [[p10_mem_pitch_deck_builder]] | sibling | 0.21 |

@@ -4,11 +4,8 @@ description: "Builds ONE incident_report artifact via 8F pipeline. Loads inciden
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p11_fb_incident_report
   - bld_config_incident_report
-  - n00_incident_report_manifest
 ---
 
 # incident-report-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p11_fb_incident_report]] | related | 0.29 |
 | [[bld_config_incident_report]] | related | 0.29 |
-| [[n00_incident_report_manifest]] | related | 0.28 |

@@ -18,11 +18,8 @@ keywords: [llm agent memory consolidation, consolidation_policy-builder consumes
 governs, receives from]
 density_score: 0.90
 related:
-  - bld_collaboration_memory_architecture
-  - bld_collaboration_procedural_memory
   - memory-architecture-builder
   - consolidation-policy-builder
-  - bld_output_template_memory_architecture
 ---
 ## Crew Role
 Governs the memory lifecycle within a complete agent memory system. Consumes the parent
@@ -63,8 +60,5 @@ In a grid dispatch building a complete agent memory system:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_architecture]] | sibling | 0.66 |
-| [[bld_collaboration_procedural_memory]] | sibling | 0.60 |
 | [[memory-architecture-builder]] | upstream | 0.45 |
 | [[consolidation-policy-builder]] | upstream | 0.41 |
-| [[bld_output_template_memory_architecture]] | upstream | 0.35 |

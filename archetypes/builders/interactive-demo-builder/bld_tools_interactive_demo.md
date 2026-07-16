@@ -17,7 +17,6 @@ updated: "2026-04-14"
 keywords: [interactive_demo construction, tools interactive demo, interactive_demo, builder, tools, production tools, validation tools, external references, related artifacts, tools tool]
 density_score: 0.85
 related:
-  - bld_knowledge_card_interactive_demo
   - bld_tools_product_tour
   - bld_tools_pitch_deck
   - bld_tools_rbac_policy
@@ -48,7 +47,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_interactive_demo]] | upstream | 0.34 |
 | [[bld_tools_product_tour]] | sibling | 0.33 |
 | [[bld_tools_pitch_deck]] | sibling | 0.33 |
 | [[bld_tools_rbac_policy]] | sibling | 0.30 |

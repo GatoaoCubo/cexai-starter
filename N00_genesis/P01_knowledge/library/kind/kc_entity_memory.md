@@ -29,8 +29,6 @@ cross_provider:
   anthropic: "cache_control ephemeral"
   haystack: "n/a (custom via DocumentStore)"
 related:
-  - bld_collaboration_entity_memory
-  - bld_knowledge_card_entity_memory
   - entity-memory-builder
 ---
 

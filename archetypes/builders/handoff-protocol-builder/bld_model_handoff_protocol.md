@@ -28,11 +28,7 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_handoff_protocol
   - bld_architecture_handoff_protocol
-  - p10_lr_handoff_protocol_builder
-  - bld_knowledge_card_handoff_protocol
-  - p01_kc_handoff_protocol
 ---
 ## Identity
 
@@ -130,6 +126,5 @@ quality_target: 9.0
 |----------|-------------|-------|
 | [[bld_orchestration_handoff_protocol]] | downstream | 0.62 |
 | [[bld_architecture_handoff_protocol]] | downstream | 0.50 |
-| [[p10_lr_handoff_protocol_builder]] | downstream | 0.46 |
 | [[bld_knowledge_handoff_protocol]] | related | 0.45 |
 | [[kc_handoff_protocol]] | related | 0.45 |

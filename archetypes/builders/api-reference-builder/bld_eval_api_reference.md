@@ -32,11 +32,7 @@ keywords:
   - "fail condition"
 density_score: 0.85
 related:
-  - p04_qg_stt_provider
   - bld_schema_api_reference
-  - kc_api_reference
-  - p05_qg_integration_guide
-  - p09_qg_marketplace_app_manifest
 ---
 ## Quality Gate
 

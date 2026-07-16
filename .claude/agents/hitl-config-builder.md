@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - hitl-config-builder
   - kind-builder
-  - bld_collaboration_hitl_config
-  - p03_sp_builder_nucleus
-  - n00_hitl_config_manifest
 ---
 
 # hitl-config-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[hitl-config-builder]] | related | 0.38 |
 | [[kind-builder]] | related | 0.31 |
-| [[bld_collaboration_hitl_config]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[n00_hitl_config_manifest]] | related | 0.29 |

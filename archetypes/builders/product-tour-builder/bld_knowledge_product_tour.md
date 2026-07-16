@@ -18,10 +18,6 @@ keywords: [product_tour construction, knowledge card product tour, product_tour,
 density_score: 0.85
 related:
   - product-tour-builder
-  - kc_product_tour
-  - p05_qg_product_tour
-  - p10_mem_product_tour_builder
-  - bld_instruction_product_tour
 ---
 ## Domain Overview
 Product tours are guided experiences embedded within software interfaces to highlight features, reduce cognitive load, and accelerate feature discovery. Unlike onboarding flows (focused on activation) or sales demos (interactive and scenario-based), product tours prioritize contextual education through tooltips, modals, and step-by-step guidance. They are commonly used in SaaS applications to surface underutilized features, improve user retention, and align product usage with business goals. Effective tours balance visibility with intrusiveness, leveraging principles from UX design and cognitive psychology to minimize friction.
@@ -86,7 +82,3 @@ The primary KPI for any product tour is time-to-value (TTV): how quickly a new u
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[product-tour-builder]] | downstream | 0.46 |
-| [[kc_product_tour]] | sibling | 0.43 |
-| [[p05_qg_product_tour]] | downstream | 0.40 |
-| [[p10_mem_product_tour_builder]] | downstream | 0.38 |
-| [[bld_instruction_product_tour]] | downstream | 0.38 |

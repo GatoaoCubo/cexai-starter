@@ -26,11 +26,7 @@ title: "Memory Field Manifest"
 density_score: 0.86
 llm_function: INJECT
 related:
-  - bld_knowledge_card_field_manifest
-  - bld_instruction_field_manifest
-  - bld_output_template_field_manifest
   - bld_schema_field_manifest
-  - p10_lr_input_schema_builder
 ---
 ## Summary
 field_manifest artifacts describe a schema-to-form DERIVATION, not three independent
@@ -129,8 +125,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_field_manifest_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_field_manifest]] | upstream | 0.38 |
-| [[bld_instruction_field_manifest]] | upstream | 0.36 |
-| [[bld_output_template_field_manifest]] | upstream | 0.32 |
 | [[bld_schema_field_manifest]] | upstream | 0.30 |
-| [[p10_lr_input_schema_builder]] | sibling | 0.28 |

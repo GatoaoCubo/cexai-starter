@@ -11,12 +11,6 @@ tldr: "Golden Test feedback: anti-patterns, regression signals, and quality impr
 keywords: [golden test, golden test feedback, regression signals, and quality improvement triggers, feedback, anti-patterns, golden_test, common failure modes, correction protocol, key behaviors]
 density_score: 1.0
 updated: "2026-04-22"
-related:
-  - p11_fb_ab_test_config
-  - p11_fb_retriever
-  - p11_fb_handoff
-  - p11_fb_research_pipeline
-  - p11_fb_prompt_version
 ---
 # Feedback: Golden Test
 
@@ -81,7 +75,4 @@ density: 0.85+
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p11_fb_ab_test_config | sibling | 0.79 |
-| [[p11_fb_retriever]] | sibling | 0.78 |
 | p11_fb_handoff | sibling | 0.77 |
-| [[p11_fb_research_pipeline]] | sibling | 0.76 |
-| [[p11_fb_prompt_version]] | sibling | 0.76 |

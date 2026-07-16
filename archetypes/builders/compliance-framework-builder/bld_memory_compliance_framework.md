@@ -21,10 +21,6 @@ reviewed, related artifacts, upstream]
 density_score: 0.85
 related:
   - compliance-framework-builder
-  - bld_knowledge_card_compliance_framework
-  - bld_instruction_compliance_framework
-  - kc_compliance_framework
-  - p11_qg_compliance_framework
 ---
 ## Observation
 Common issues include fragmented regulatory mapping, inconsistent attestation criteria, and misalignment between AI system components and jurisdiction-specific requirements. Overlooking dynamic regulatory updates often leads to outdated compliance frameworks.
@@ -46,7 +42,3 @@ Reviewed artifacts showed success with frameworks that explicitly link GDPR and 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[compliance-framework-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_compliance_framework]] | upstream | 0.44 |
-| [[bld_instruction_compliance_framework]] | upstream | 0.44 |
-| [[kc_compliance_framework]] | upstream | 0.39 |
-| [[p11_qg_compliance_framework]] | downstream | 0.37 |

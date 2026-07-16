@@ -21,10 +21,7 @@ reviewed]
 density_score: 0.85
 related:
   - visual-workflow-builder
-  - bld_collaboration_workflow_node
-  - kc_visual_workflow
   - workflow-node-builder
-  - bld_instruction_visual_workflow
 ---
 ## Observation
 Misalignment of nodes and broken connections are common during manual layout. Overlapping elements often occur when workflows grow complex.
@@ -67,7 +64,4 @@ Reviewed artifacts showed 70% had alignment issues; workflows with real-time val
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[visual-workflow-builder]] | downstream | 0.45 |
-| [[bld_collaboration_workflow_node]] | downstream | 0.42 |
-| [[kc_visual_workflow]] | upstream | 0.42 |
 | [[workflow-node-builder]] | downstream | 0.40 |
-| [[bld_instruction_visual_workflow]] | upstream | 0.39 |

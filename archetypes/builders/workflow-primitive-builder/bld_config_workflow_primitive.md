@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, and operational constraints, workflow primitive construction, config workflow primitive, workflow_primitive, builder, examples, "p12_wp_{type}.yaml", p12_wp_step.yaml]
 density_score: 0.90
 related:
-  - p03_ins_workflow_primitive_builder
-  - bld_knowledge_card_workflow_primitive
   - workflow-primitive-builder
-  - bld_output_template_workflow_primitive
-  - p11_qg_workflow_primitive
 ---
 # Config: workflow_primitive Production Rules
 ## Naming Convention
@@ -77,8 +73,5 @@ Rule: use `.yaml` only for this builder — primitives are human-readable compos
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_workflow_primitive_builder]] | upstream | 0.54 |
 | [[bld_knowledge_workflow_primitive]] | upstream | 0.51 |
 | [[workflow-primitive-builder]] | downstream | 0.50 |
-| [[bld_output_template_workflow_primitive]] | upstream | 0.47 |
-| [[p11_qg_workflow_primitive]] | downstream | 0.46 |

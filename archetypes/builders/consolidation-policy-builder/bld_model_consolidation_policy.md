@@ -18,10 +18,6 @@ keywords: [builder identity, routing for consolidation_policy, llm agent memory 
 density_score: 0.90
 related:
   - memory-architecture-builder
-  - bld_instruction_consolidation_policy
-  - bld_knowledge_card_consolidation_policy
-  - p10_mem_consolidation_policy_builder
-  - bld_knowledge_card_memory_architecture
 ---
 ## Identity
 ## Identity
@@ -94,7 +90,3 @@ NEVER self-score quality -- leave quality: null for peer review.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-architecture-builder]] | sibling | 0.58 |
-| [[bld_instruction_consolidation_policy]] | upstream | 0.53 |
-| [[bld_knowledge_card_consolidation_policy]] | upstream | 0.53 |
-| [[p10_mem_consolidation_policy_builder]] | related | 0.50 |
-| [[bld_knowledge_card_memory_architecture]] | upstream | 0.46 |

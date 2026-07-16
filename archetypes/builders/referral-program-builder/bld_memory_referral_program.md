@@ -21,10 +21,6 @@ reviewed, related artifacts, viral coefficient]
 density_score: 0.85
 related:
   - referral-program-builder
-  - kc_referral_program
-  - bld_knowledge_card_referral_program
-  - p11_qg_referral_program
-  - bld_instruction_referral_program
 ---
 ## Observation
 Common issues include underestimating viral coefficient thresholds, leading to slow adoption, and reward structures that incentivize short-term gains over long-term retention.
@@ -46,7 +42,3 @@ Reviewed artifacts showed programs with viral coefficients >1.5 achieved 40% fas
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[referral-program-builder]] | downstream | 0.45 |
-| [[kc_referral_program]] | upstream | 0.38 |
-| [[bld_knowledge_card_referral_program]] | upstream | 0.37 |
-| [[p11_qg_referral_program]] | downstream | 0.35 |
-| [[bld_instruction_referral_program]] | upstream | 0.33 |

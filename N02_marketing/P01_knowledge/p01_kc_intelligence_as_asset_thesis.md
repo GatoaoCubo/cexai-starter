@@ -21,11 +21,7 @@ long_tails:
 tags: [thesis, investment, positioning, asset, ai-brain, founder, n02, jarvis, balance-sheet]
 keywords: [ai brain as asset, intelligence compounds, balance sheet, ai investing vs spending, knowledge equity, sovereign runtime, vendor lock, acquisition transfer, governed knowledge, typed artifact, exchange]
 related:
-  - p03_pt_build_your_jarvis_campaign
-  - p01_kc_cex_positioning_statement
-  - p03_pt_oss_launch_announcements
   - p02_mm_cex_architecture_n04
-  - p06_ar_infra_apis
 ---
 
 ## TL;DR

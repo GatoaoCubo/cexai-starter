@@ -24,11 +24,7 @@ updated: "2026-04-07"
 keywords: [memory type construction, memory memory type, memory_type, builder, examples, cex_memory_types.py, cex_memory_update.py, context, build context, related artifacts]
 density_score: 0.90
 related:
-  - bld_manifest_memory_type
-  - bld_collaboration_memory_type
-  - p11_fb_memory_type
   - bld_tools_memory_type
-  - bld_knowledge_card_memory_type
 ---
 # Memory: memory-type-builder
 
@@ -62,8 +58,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_memory_type]] | upstream | 0.41 |
-| [[bld_collaboration_memory_type]] | downstream | 0.33 |
-| [[p11_fb_memory_type]] | downstream | 0.29 |
 | [[bld_tools_memory_type]] | upstream | 0.27 |
-| [[bld_knowledge_card_memory_type]] | upstream | 0.27 |

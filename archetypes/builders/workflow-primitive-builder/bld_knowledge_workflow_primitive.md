@@ -31,11 +31,8 @@ keywords:
   - "spec table"
 density_score: 0.90
 related:
-  - p03_ins_workflow_primitive_builder
-  - p11_qg_workflow_primitive
   - bld_memory_workflow_primitive
   - workflow-primitive-builder
-  - p01_kc_workflow_primitive
 ---
 # Domain Knowledge: workflow_primitive
 ## Executive Summary
@@ -102,8 +99,6 @@ Workflow primitives are YAML atomic building blocks — the seven composable typ
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_workflow_primitive_builder]] | downstream | 0.63 |
-| [[p11_qg_workflow_primitive]] | downstream | 0.61 |
 | [[bld_memory_workflow_primitive]] | downstream | 0.57 |
 | [[workflow-primitive-builder]] | downstream | 0.55 |
 | [[kc_workflow_primitive]] | sibling | 0.51 |

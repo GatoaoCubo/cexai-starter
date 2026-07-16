@@ -27,11 +27,7 @@ slots:
   pitch_rule: "<no hard pitch before email_N>"
 density_score: 1.0
 related:
-  - p03_pt_email_sequence_template
-  - p12_wf_cf_email_launch
   - p01_fse_n02_ad_copy
-  - p01_kc_email_sequence
-  - p01_kc_pillar_brief_p04_tools_en
 ---
 <!-- 8F TRACE
 F1 CONSTRAIN: kind=few_shot_example, pillar=P01, naming=p01_fse_{topic}.md

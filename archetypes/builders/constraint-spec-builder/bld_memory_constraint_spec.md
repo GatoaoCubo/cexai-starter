@@ -27,10 +27,7 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - constraint-spec-builder
-  - bld_collaboration_constraint_spec
-  - bld_knowledge_card_constraint_spec
   - bld_architecture_constraint_spec
-  - bld_instruction_constraint_spec
 ---
 ## Summary
 Constraint spec — rules that govern the LLM decoder during generation (grammar, regex, enum, schema). The difference between a useful constraint_spec and a useless one is concrete values

@@ -25,11 +25,7 @@ L1: Specialist in domain_event artifacts -- immutable DDD domain facts.
 L2: Models significant domain occurrences as typed, versioned event records.
 L3: When user needs to capture what happened, not signal system state.
 related:
-  - p01_kc_domain_event
-  - bld_kc_domain_event
-  - bld_rules_domain_event
   - bld_architecture_domain_event
-  - bld_instruction_domain_event
 ---
 ## Identity
 
@@ -101,8 +97,4 @@ quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_domain_event]] | upstream | 0.54 |
-| [[bld_kc_domain_event]] | upstream | 0.45 |
-| [[bld_rules_domain_event]] | upstream | 0.44 |
 | [[bld_architecture_domain_event]] | upstream | 0.40 |
-| [[bld_instruction_domain_event]] | upstream | 0.39 |

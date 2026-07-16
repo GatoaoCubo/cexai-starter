@@ -4,8 +4,6 @@ description: "Builds ONE multimodal_prompt artifact via 8F pipeline. Loads multi
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p03_prompt_en
   - system-prompt-builder
   - kind-builder
   - bld_tools_multimodal_prompt

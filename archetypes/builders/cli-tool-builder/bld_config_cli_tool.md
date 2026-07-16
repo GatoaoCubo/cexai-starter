@@ -32,7 +32,6 @@ related:
   - bld_config_retriever_config
   - bld_config_output_validator
   - bld_config_prompt_version
-  - p10_lr_cli_tool_builder
 ---
 # Config: cli_tool Production Rules
 ## Naming Convention
@@ -77,4 +76,3 @@ Rule: every cli_tool MUST define at least codes 0 and 1.
 | [[bld_config_retriever_config]] | sibling | 0.35 |
 | [[bld_config_output_validator]] | sibling | 0.35 |
 | [[bld_config_prompt_version]] | sibling | 0.34 |
-| [[p10_lr_cli_tool_builder]] | downstream | 0.33 |

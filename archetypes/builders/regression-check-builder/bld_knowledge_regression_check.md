@@ -18,9 +18,7 @@ updated: "2026-04-07"
 keywords: [baseline comparison configuration, regression check construction, knowledge card regression check, regression_check, builder, examples, experiment/prod-v1.2, braintrust eval --compare <baseline>, promptfoo eval --compare baseline.json, --save]
 density_score: 0.90
 related:
-  - p01_kc_regression_check
   - regression-check-builder
-  - bld_collaboration_regression_check
   - bld_config_regression_check
   - bld_architecture_regression_check
 ---
@@ -76,8 +74,6 @@ Regression checks compare a current LLM system against a known-good baseline to 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_regression_check]] | sibling | 0.58 |
 | [[regression-check-builder]] | downstream | 0.57 |
-| [[bld_collaboration_regression_check]] | downstream | 0.48 |
 | [[bld_config_regression_check]] | downstream | 0.43 |
 | [[bld_architecture_regression_check]] | downstream | 0.40 |

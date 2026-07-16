@@ -18,10 +18,8 @@ updated: "2026-04-07"
 keywords: [signal construction, schema signal, signal, builder, examples, json, "p12_sig_{event}.json", complete, error, progress]
 density_score: 0.90
 related:
-  - bld_knowledge_card_signal
   - bld_schema_handoff
   - signal-builder
-  - p03_ins_signal_builder
   - bld_schema_session_state
 ---
 # Schema: signal
@@ -82,5 +80,4 @@ related:
 | [[bld_knowledge_signal]] | downstream | 0.55 |
 | bld_schema_handoff | sibling | 0.46 |
 | [[signal-builder]] | downstream | 0.42 |
-| [[p03_ins_signal_builder]] | upstream | 0.41 |
 | [[bld_schema_session_state]] | sibling | 0.40 |

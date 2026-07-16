@@ -19,9 +19,6 @@ keywords: [memory compression, summarized conversation, compression method, rete
 density_score: 0.90
 related:
   - memory-summary-builder
-  - bld_instruction_memory_summary
-  - p11_qg_quality_gate
-  - bld_knowledge_card_memory_summary
   - bld_schema_memory_summary
 ---
 ## Quality Gate

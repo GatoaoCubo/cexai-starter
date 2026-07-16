@@ -31,10 +31,7 @@ keywords:
 density_score: 0.85
 related:
   - validator-builder
-  - bld_output_template_validator
   - bld_schema_validator
-  - bld_knowledge_card_validator
-  - p03_ins_validator
 ---
 ## Quality Gate
 

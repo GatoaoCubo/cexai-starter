@@ -21,9 +21,7 @@ related:
   - brandbook-builder
   - bld_output_brandbook
   - bld_knowledge_brandbook
-  - p12_ct_brand_discovery
   - kc_personality
-  - p01_kc_design_system
   - kc_white_label_config
   - kc_tagline
 ---

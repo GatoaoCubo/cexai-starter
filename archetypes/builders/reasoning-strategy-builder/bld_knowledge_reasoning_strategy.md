@@ -21,9 +21,6 @@ density_score: 0.85
 related:
   - reasoning-strategy-builder
   - kc_reasoning_strategy
-  - bld_instruction_reasoning_strategy
-  - p03_qg_reasoning_strategy
-  - p10_lr_reasoning_strategy_builder
 ---
 ## Domain Overview
 
@@ -71,5 +68,3 @@ Industries leverage reasoning strategies to enhance transparency, reduce errors,
 | [[reasoning-strategy-builder]] | downstream | 0.51 |
 | [[kc_reasoning_strategy]] | sibling | 0.41 |
 | [[bld_prompt_reasoning_strategy]] | downstream | 0.36 |
-| [[p03_qg_reasoning_strategy]] | downstream | 0.36 |
-| [[p10_lr_reasoning_strategy_builder]] | downstream | 0.35 |

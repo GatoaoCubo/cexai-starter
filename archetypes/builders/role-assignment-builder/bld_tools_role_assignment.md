@@ -18,9 +18,7 @@ keywords: [role_assignment construction, tools role assignment, role_assignment,
 density_score: 0.86
 related:
   - bld_tools_crew_template
-  - bld_knowledge_card_role_assignment
   - role-assignment-builder
-  - p11_qg_role_assignment
   - bld_tools_pipeline_template
 ---
 ## Production Tools
@@ -55,5 +53,4 @@ related:
 | [[bld_tools_crew_template]] | sibling | 0.41 |
 | [[bld_knowledge_role_assignment]] | upstream | 0.37 |
 | [[role-assignment-builder]] | upstream | 0.36 |
-| [[p11_qg_role_assignment]] | downstream | 0.33 |
 | bld_tools_pipeline_template | sibling | 0.30 |

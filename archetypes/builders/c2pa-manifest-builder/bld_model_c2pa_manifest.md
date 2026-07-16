@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F3_inject"
 keywords: [builder identity, routing for c, pa_manifest construction, type builder c, pa manifest, c2pa_manifest, builder, type_builder, c2pa, content-credential]
 density_score: 0.85
-related:
-  - bld_knowledge_card_c2pa_manifest
-  - bld_instruction_c2pa_manifest
-  - p10_lr_c2pa_manifest_builder
-  - p10_qg_c2pa_manifest
-  - bld_collaboration_c2pa_manifest
 ---
 ## Identity
 
@@ -67,12 +61,3 @@ ALWAYS set digitalSourceType per C2PA digital source type vocabulary.
 NEVER include raw private key material in the manifest artifact (reference key ID only).
 NEVER omit ingredient hashes -- unsigned ingredient references are unverifiable.
 NEVER self-assign quality score -- peer review only.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_c2pa_manifest]] | upstream | 0.68 |
-| [[bld_instruction_c2pa_manifest]] | upstream | 0.62 |
-| [[p10_lr_c2pa_manifest_builder]] | related | 0.59 |
-| [[p10_qg_c2pa_manifest]] | downstream | 0.55 |
-| [[bld_collaboration_c2pa_manifest]] | downstream | 0.54 |

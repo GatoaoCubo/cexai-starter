@@ -20,10 +20,7 @@ keywords: [template with, state machine construction, output template state mach
 density_score: 0.90
 related:
   - bld_schema_state_machine
-  - bld_instruction_state_machine
   - state-machine-builder
-  - kc_state_machine
-  - bld_knowledge_card_state_machine
 ---
 # Output Template: state_machine
 
@@ -75,7 +72,4 @@ tldr: "{{entity}} lifecycle FSM: {{states_count}} states, {{transitions_count}} 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_state_machine]] | downstream | 0.51 |
-| [[bld_instruction_state_machine]] | upstream | 0.43 |
 | [[state-machine-builder]] | downstream | 0.39 |
-| [[kc_state_machine]] | upstream | 0.35 |
-| [[bld_knowledge_card_state_machine]] | upstream | 0.35 |

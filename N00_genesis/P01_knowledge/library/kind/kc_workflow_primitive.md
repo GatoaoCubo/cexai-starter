@@ -19,10 +19,7 @@ feeds_kinds: [workflow_primitive]
 density_score: null
 related:
   - workflow-primitive-builder
-  - bld_knowledge_card_workflow_primitive
   - bld_memory_workflow_primitive
-  - p12_wp_map_reduce
-  - bld_collaboration_workflow_primitive
 ---
 
 # Workflow Primitive

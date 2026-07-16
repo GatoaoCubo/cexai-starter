@@ -32,11 +32,7 @@ keywords:
   - "class hierarchy"
 density_score: 0.90
 related:
-  - bld_instruction_ontology
   - bld_schema_ontology
-  - p11_qg_ontology
-  - bld_collaboration_ontology
-  - bld_knowledge_card_ontology
 ---
 # Output Template: ontology
 ```yaml
@@ -104,6 +100,5 @@ schema_org_mapping: {{true|false}}
 |----------|-------------|-------|
 | [[bld_prompt_ontology]] | upstream | 0.43 |
 | [[bld_schema_ontology]] | downstream | 0.41 |
-| [[p11_qg_ontology]] | downstream | 0.41 |
 | [[bld_orchestration_ontology]] | downstream | 0.39 |
 | [[bld_knowledge_ontology]] | upstream | 0.38 |

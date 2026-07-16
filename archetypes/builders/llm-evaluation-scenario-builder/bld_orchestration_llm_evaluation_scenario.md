@@ -19,10 +19,6 @@ composes]
 density_score: 0.85
 related:
   - llm-evaluation-scenario-builder
-  - bld_collaboration_memory_benchmark
-  - bld_collaboration_safety_hazard_taxonomy
-  - bld_collaboration_prompt_technique
-  - n00_llm_evaluation_scenario_manifest
 ---
 ## Crew Role
 Composes atomic HELM evaluation scenario specifications. Receives task instances and metric definitions from sibling builders; produces scenario specs consumed by experiment orchestration.
@@ -53,7 +49,3 @@ Legal review of dataset licenses is handled by compliance team, not this builder
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[llm-evaluation-scenario-builder]] | upstream | 0.31 |
-| [[bld_collaboration_memory_benchmark]] | sibling | 0.24 |
-| [[bld_collaboration_safety_hazard_taxonomy]] | sibling | 0.23 |
-| [[bld_collaboration_prompt_technique]] | sibling | 0.23 |
-| [[n00_llm_evaluation_scenario_manifest]] | upstream | 0.23 |

@@ -18,10 +18,7 @@ updated: "2026-07-03"
 keywords: [content factory construction, collaboration content factory, content_factory, builder, content-fabric, "### crew: content fabric end-to-end", my role, crew compositions, produce review publish, content fabric]
 density_score: 0.90
 related:
-  - bld_collaboration_social_publisher
   - content-factory-builder
-  - p01_kc_content_factory
-  - bld_collaboration_content_library
   - bld_tools_content_factory
 ---
 # Collaboration: content-factory-builder
@@ -75,8 +72,5 @@ builders/tenants can implement the review board and (eventually) a provider arm.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_social_publisher]] | sibling | 0.38 |
 | [[content-factory-builder]] | upstream | 0.34 |
-| [[p01_kc_content_factory]] | upstream | 0.31 |
-| [[bld_collaboration_content_library]] | sibling | 0.29 |
 | [[bld_tools_content_factory]] | sibling | 0.27 |

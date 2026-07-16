@@ -19,10 +19,6 @@ this, related artifacts, cart checkout, recommendation engine, fraud detection]
 density_score: 0.85
 related:
   - ecommerce-vertical-builder
-  - p10_mem_ecommerce_vertical_builder
-  - kc_ecommerce_vertical
-  - bld_knowledge_card_ecommerce_vertical
-  - p01_qg_ecommerce_vertical
 ---
 ## Phase 1: RESEARCH  
 1. Analyze cart/checkout user flows and pain points across major platforms.  
@@ -57,7 +53,3 @@ This instruction applies to ecommerce vertical artifacts (cart, checkout, catalo
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ecommerce-vertical-builder]] | upstream | 0.55 |
-| [[p10_mem_ecommerce_vertical_builder]] | downstream | 0.54 |
-| [[kc_ecommerce_vertical]] | upstream | 0.49 |
-| [[bld_knowledge_card_ecommerce_vertical]] | upstream | 0.41 |
-| [[p01_qg_ecommerce_vertical]] | downstream | 0.37 |

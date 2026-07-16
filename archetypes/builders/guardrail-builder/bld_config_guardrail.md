@@ -29,10 +29,6 @@ keywords: [limits for guardrail production, guardrail construction, config guard
 density_score: 0.90
 related:
   - bld_schema_guardrail
-  - bld_output_template_guardrail
-  - p11_qg_guardrail
-  - bld_instruction_guardrail
-  - n00_guardrail_manifest
 ---
 # Config: guardrail Production Rules
 ## Naming
@@ -72,7 +68,5 @@ python _tools/cex_score.py --apply bld-config-guardrail.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_guardrail]] | upstream | 0.46 |
-| [[bld_output_template_guardrail]] | upstream | 0.36 |
-| [[p11_qg_guardrail]] | downstream | 0.35 |
 | [[bld_prompt_guardrail]] | upstream | 0.34 |
 | n00_guardrail_manifest | downstream | 0.33 |

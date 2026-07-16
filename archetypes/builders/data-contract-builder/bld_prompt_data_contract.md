@@ -17,11 +17,7 @@ density_score: 0.83
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_instruction_domain_event
   - bld_schema_data_contract
-  - bld_instruction_event_stream
-  - bld_instruction_action_prompt
-  - bld_instruction_alert_rule
 ---
 # Instructions: How to Produce a data_contract
 ## Phase 1: IDENTIFY

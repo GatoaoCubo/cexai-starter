@@ -18,7 +18,6 @@ related:
   - kc_canonical_product
   - canonical-product-builder
   - bld_memory_canonical_product
-  - bld_context_sources_canonical_product
   - marketplace-listing-builder
 ---
 # Architecture: canonical_product
@@ -79,5 +78,4 @@ additionally enforces the structural law, which JSON Schema cannot express alone
 | [[kc_canonical_product]] | upstream | 0.50 |
 | [[canonical-product-builder]] | upstream | 0.45 |
 | [[bld_memory_canonical_product]] | downstream | 0.39 |
-| [[bld_context_sources_canonical_product]] | downstream | 0.37 |
 | [[marketplace-listing-builder]] | downstream | 0.34 |

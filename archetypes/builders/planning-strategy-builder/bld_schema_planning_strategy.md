@@ -31,11 +31,8 @@ keywords:
   - "p08_ps_tot_bfs_depth4"
 density_score: 0.90
 related:
-  - bld_output_template_planning_strategy
-  - audit_planning_strategy_builder
   - planning-strategy-builder
   - bld_schema_rl_algorithm
-  - p06_schema_kc_structure
 ---
 ## Frontmatter Fields
 
@@ -97,8 +94,5 @@ python _tools/cex_score.py --apply p08_ps_{name}.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_planning_strategy]] | upstream | 0.49 |
-| [[audit_planning_strategy_builder]] | downstream | 0.41 |
 | [[planning-strategy-builder]] | downstream | 0.34 |
 | [[bld_schema_rl_algorithm]] | sibling | 0.30 |
-| [[p06_schema_kc_structure]] | sibling | 0.28 |

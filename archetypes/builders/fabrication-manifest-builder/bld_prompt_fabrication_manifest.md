@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_schema_fabrication_manifest
   - fabrication-manifest-builder
-  - p12_qg_fabrication_manifest
-  - bld_knowledge_card_fabrication_manifest
-  - bld_output_template_fabrication_manifest
 ---
 ## Phase 1: RESEARCH
 1. Read `.cex/kinds_meta.json`'s `fabrication_manifest` entry (boundary, naming, max_bytes,
@@ -75,6 +72,3 @@ related:
 |----------|-------------|-------|
 | [[bld_schema_fabrication_manifest]] | downstream | 0.45 |
 | [[fabrication-manifest-builder]] | downstream | 0.40 |
-| [[p12_qg_fabrication_manifest]] | downstream | 0.36 |
-| [[bld_knowledge_card_fabrication_manifest]] | upstream | 0.35 |
-| [[bld_output_template_fabrication_manifest]] | downstream | 0.34 |

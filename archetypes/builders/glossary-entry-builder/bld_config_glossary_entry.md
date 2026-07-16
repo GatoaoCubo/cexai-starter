@@ -30,7 +30,6 @@ density_score: 0.90
 related:
   - bld_config_retriever_config
   - bld_config_memory_scope
-  - p11_qg_glossary_entry
   - bld_config_prompt_version
   - bld_schema_glossary_entry
 ---
@@ -81,6 +80,5 @@ python _tools/cex_score.py --apply bld-config-glossary-entry.md
 |----------|-------------|-------|
 | [[bld_config_retriever_config]] | sibling | 0.35 |
 | [[bld_config_memory_scope]] | sibling | 0.33 |
-| [[p11_qg_glossary_entry]] | downstream | 0.32 |
 | [[bld_config_prompt_version]] | sibling | 0.32 |
 | [[bld_schema_glossary_entry]] | upstream | 0.32 |

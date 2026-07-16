@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - path-config-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_path_config
   - system-prompt-builder
 ---
 

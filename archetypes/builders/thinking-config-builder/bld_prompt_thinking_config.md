@@ -18,7 +18,6 @@ keywords: [thinking_config construction, instruction thinking config, thinking_c
 density_score: 0.85
 related:
   - thinking-config-builder
-  - p11_qg_thinking_config
   - bld_memory_thinking_config
   - bld_tools_thinking_config
   - bld_config_thinking_config
@@ -71,7 +70,6 @@ This ISO configures a thinking budget: how many tokens the model may spend on in
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[thinking-config-builder]] | downstream | 0.40 |
-| [[p11_qg_thinking_config]] | downstream | 0.37 |
 | [[bld_memory_thinking_config]] | downstream | 0.36 |
 | [[bld_tools_thinking_config]] | downstream | 0.36 |
 | [[bld_config_thinking_config]] | downstream | 0.33 |

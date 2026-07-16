@@ -19,7 +19,6 @@ density_score: 0.92
 related:
   - bld_schema_kind
   - kind-builder
-  - bld_instruction_kind
   - bld_architecture_kind
   - bld_schema_quality_gate
 ---

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [builder identity, routing for judge_config, judge_config construction, type builder judge config, judge_config, builder, type_builder, errormessage, errortype, configversion]
 density_score: 0.85
-related:
-  - bld_collaboration_judge_config
-  - bld_collaboration_llm_judge
-  - n00_llm_judge_manifest
-  - kc_judge_config
-  - p01_kc_llm_judge
 ---
 ## Identity
 
@@ -65,12 +59,3 @@ ALWAYS USE STANDARDIZED JSON SCHEMA FOR CONFIG DEFINITIONS
 ALWAYS INCLUDE VERSION CONTROL METADATA  
 NEVER INJECT SCORING LOGIC OR HUMAN RUBRIC CONTENT  
 NEVER ASSUME FRAMEWORK-SPECIFIC IMPLEMENTATION DETAILS
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_judge_config]] | downstream | 0.45 |
-| [[bld_collaboration_llm_judge]] | downstream | 0.42 |
-| [[n00_llm_judge_manifest]] | related | 0.39 |
-| [[kc_judge_config]] | upstream | 0.38 |
-| [[p01_kc_llm_judge]] | related | 0.38 |

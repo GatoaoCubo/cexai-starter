@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [app_directory_entry construction, app_directory_entry, builder, quality_gate, ## anti-example 1: missing key sections, ## why it fails
 omits critical sections like, quality gate, fail condition, scoring guide, senior manager]
 density_score: 0.85
-related:
-  - bld_instruction_app_directory_entry
-  - kc_app_directory_entry
-  - p09_qg_marketplace_app_manifest
-  - p10_mem_app_directory_entry_builder
-  - p05_qg_interactive_demo
 ---
 ## Quality Gate
 

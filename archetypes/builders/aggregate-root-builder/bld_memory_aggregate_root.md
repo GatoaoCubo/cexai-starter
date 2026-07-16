@@ -16,11 +16,8 @@ author: builder
 domain: domain_driven_design
 tldr: "Session patterns for aggregate_root: size limits, invariant quality, repository constraints, concurrency defaults, event sourcing."
 related:
-  - kc_aggregate_root
   - bld_memory_domain_event
   - bld_architecture_aggregate_root
-  - bld_rules_aggregate_root
-  - bld_output_template_aggregate_root
 ---
 # Memory: aggregate_root
 ## Session Patterns to Remember
@@ -66,8 +63,5 @@ python _tools/cex_memory_update.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_aggregate_root]] | sibling | 0.36 |
 | [[bld_memory_domain_event]] | downstream | 0.36 |
 | [[bld_architecture_aggregate_root]] | sibling | 0.36 |
-| [[bld_rules_aggregate_root]] | sibling | 0.34 |
-| [[bld_output_template_aggregate_root]] | related | 0.33 |

@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - audio-tool-builder
-  - bld_collaboration_audio_tool
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p04_tools_en
 ---
 
 # audio-tool-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[audio-tool-builder]] | related | 0.34 |
-| [[bld_collaboration_audio_tool]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p04_tools_en]] | related | 0.27 |

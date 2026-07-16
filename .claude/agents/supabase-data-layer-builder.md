@@ -4,11 +4,7 @@ description: "Builds ONE supabase_data_layer artifact via 8F pipeline. Loads sup
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_supabase_data_layer_manifest
-  - p01_kc_supabase_data_layer
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p11_fb_supabase_data_layer
 ---
 
 # supabase-data-layer-builder Sub-Agent
@@ -86,8 +82,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_supabase_data_layer_manifest]] | related | 0.33 |
-| [[p01_kc_supabase_data_layer]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |
-| [[p11_fb_supabase_data_layer]] | related | 0.28 |

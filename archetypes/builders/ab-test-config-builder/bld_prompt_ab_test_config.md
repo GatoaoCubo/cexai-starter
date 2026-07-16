@@ -18,8 +18,6 @@ keywords: [ab_test_config construction, instruction ab test config, ab_test_conf
 density_score: 0.85
 related:
   - ab-test-config-builder
-  - bld_collaboration_experiment_config
-  - bld_instruction_experiment_config
   - experiment-config-builder
   - bld_tools_ab_test_config
 ---
@@ -53,7 +51,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ab-test-config-builder]] | downstream | 0.37 |
-| [[bld_collaboration_experiment_config]] | downstream | 0.33 |
-| [[bld_instruction_experiment_config]] | sibling | 0.30 |
 | [[experiment-config-builder]] | downstream | 0.28 |
 | [[bld_tools_ab_test_config]] | downstream | 0.25 |

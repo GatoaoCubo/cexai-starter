@@ -19,10 +19,6 @@ keywords: [router construction, collaboration router, router, builder, examples,
 density_score: 0.90
 related:
   - router-builder
-  - bld_collaboration_dispatch_rule
-  - bld_collaboration_fallback_chain
-  - bld_collaboration_agent
-  - p03_ins_router
 ---
 # Collaboration: router-builder
 ## My Role in Crews
@@ -77,4 +73,3 @@ I produce route tables with confidence thresholds, fallback routes, and escalati
 | bld_collaboration_dispatch_rule | sibling | 0.41 |
 | [[bld_orchestration_fallback_chain]] | sibling | 0.36 |
 | [[bld_orchestration_agent]] | sibling | 0.36 |
-| [[p03_ins_router]] | related | 0.35 |

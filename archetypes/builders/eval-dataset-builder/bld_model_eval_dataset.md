@@ -30,12 +30,6 @@ tldr: Golden and anti-examples for eval dataset construction, demonstrating idea
 llm_function: BECOME
 parent: null
 8f: "F7_govern"
-related:
-  - bld_collaboration_eval_dataset
-  - bld_knowledge_card_eval_dataset
-  - p01_kc_eval_dataset
-  - bld_instruction_eval_dataset
-  - n00_eval_dataset_manifest
 ---
 ## Identity
 

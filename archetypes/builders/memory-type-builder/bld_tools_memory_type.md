@@ -21,7 +21,6 @@ this, related artifacts]
 density_score: 0.90
 related:
   - bld_config_memory_type
-  - bld_manifest_memory_type
   - bld_config_tagline
   - bld_tools_agent
   - bld_output_template_builder
@@ -90,7 +89,6 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_memory_type]] | downstream | 0.46 |
-| [[bld_manifest_memory_type]] | upstream | 0.44 |
 | [[bld_config_tagline]] | downstream | 0.41 |
 | [[bld_tools_agent]] | sibling | 0.36 |
 | [[bld_output_template_builder]] | upstream | 0.35 |

@@ -31,11 +31,8 @@ keywords:
   - "grid"
 density_score: 0.90
 related:
-  - p11_qg_spawn_config
   - bld_memory_spawn_config
   - spawn-config-builder
-  - p01_kc_spawn_config
-  - bld_collaboration_spawn_config
 ---
 # Domain Knowledge: spawn_config
 ## Executive Summary
@@ -96,7 +93,6 @@ Spawn configs are YAML artifacts that define exactly how a agent node is launche
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_spawn_config]] | related | 0.50 |
 | [[bld_memory_spawn_config]] | upstream | 0.50 |
 | [[spawn-config-builder]] | related | 0.49 |
 | [[kc_spawn_config]] | sibling | 0.49 |

@@ -18,10 +18,6 @@ keywords: [case_study construction, output template case study, challenge-soluti
 density_score: 0.85
 related:
   - bld_schema_case_study
-  - bld_instruction_case_study
-  - bld_knowledge_card_case_study
-  - n00_case_study_manifest
-  - p05_qg_case_study
 ---
 ```yaml
 ---
@@ -98,7 +94,3 @@ outcome: "{{primary_kpi_result}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_case_study]] | downstream | 0.45 |
-| [[bld_instruction_case_study]] | upstream | 0.42 |
-| [[bld_knowledge_card_case_study]] | upstream | 0.34 |
-| [[n00_case_study_manifest]] | related | 0.27 |
-| [[p05_qg_case_study]] | downstream | 0.24 |

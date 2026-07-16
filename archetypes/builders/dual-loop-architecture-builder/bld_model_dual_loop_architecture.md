@@ -20,12 +20,6 @@ this, routing
 keywords, crew role  
 acts, dual-loop control]
 density_score: 0.85
-related:
-  - bld_knowledge_card_dual_loop_architecture
-  - bld_collaboration_dual_loop_architecture
-  - kc_dual_loop_architecture
-  - p10_lr_dual_loop_architecture_builder
-  - p08_qg_dual_loop_architecture
 ---
 ## Identity
 
@@ -67,12 +61,3 @@ The dual_loop_architecture-builder agent designs and validates dual-loop control
 3. **Robustness**: Fault tolerance via redundant feedback paths and fail-safe actuation defaults.  
 4. **Modular decomposition**: Each loop must be independently testable and scalable without cross-loop dependencies.  
 5. **Traceable feedback**: All outer-loop decisions must map to measurable inner-loop performance metrics (e.g., error margins, actuator health).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_dual_loop_architecture]] | upstream | 0.75 |
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.70 |
-| [[kc_dual_loop_architecture]] | upstream | 0.67 |
-| [[p10_lr_dual_loop_architecture_builder]] | downstream | 0.61 |
-| [[p08_qg_dual_loop_architecture]] | downstream | 0.58 |

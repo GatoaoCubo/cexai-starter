@@ -18,10 +18,6 @@ density_score: 0.90
 updated: "2026-04-26"
 related:
   - kc_admin_vocabulary
-  - n00_p12_kind_index
-  - skill_catalog_cex
-  - p01_kc_orchestration_best_practices
-  - p12_wf_orchestration_pipeline
 ---
 
 <!-- 8F: F1 constrain=P01/knowledge_card F2 become=knowledge-card-builder F3 inject=ubiquitous-language-rule+spec_metaphor_dictionary+n07-orchestrator-rules+composable-crew F4 reason=vocabulary KC captures all N07 orchestration terms mapped to industry standards F5 call=cex_compile F6 produce=kc_orchestration_vocabulary.md F7 govern=frontmatter+ascii+tables F8 collaborate=N07_admin/P01_knowledge/ -->

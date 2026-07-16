@@ -14,12 +14,6 @@ tags: [agent-card, builder, N03]
 tldr: "N03 deployment spec: Sonnet 200K context (model-economy 2026-07-01; Opus via W5 escalation ladder below 8.0), 10-120s latency per artifact, 125 kind coverage, 7-gate quality SLA >= 8.0, 4 failure modes with automatic recovery."
 keywords: [meta-construction, kind registration, quality validation, nucleus bootstrap, multi-kind crew, artifact build, cex_8f_motor.py, f7 govern gate, runtime signals]
 density_score: 0.88
-related:
-  - agent_card_n03_nucleus
-  - bld_collaboration_kind
-  - p08_pat_builder_construction
-  - p12_spawn_engineering_n03
-  - p06_td_cex_artifact_type_n03
 ---
 
 # Agent Card: Builder Nucleus

@@ -4,10 +4,7 @@ description: "Builds ONE content_monetization artifact via 8F pipeline. Loads co
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_content_monetization
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
 ---
 

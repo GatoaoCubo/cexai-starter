@@ -30,12 +30,6 @@ keywords:
  - "p11_rlp_{{name}}.yaml"
  - "| | h02 |"
 density_score: 0.90
-related:
- - p11_schema_curation_nudge
- - p06_is_env_contract_n05
- - p06_is_checkout_n06
- - p03_ch_content_pipeline
- - n00_revision_loop_policy_manifest
 ---
 ## Frontmatter Schema
 
@@ -155,12 +149,3 @@ Where `name` is a lowercase slug identifying the policy scope (e.g., `standard`,
 4. `### Escalation Protocol` -- numbered steps
 5. `### Boundaries` -- NOT-items (4 minimum)
 6. `### Usage in pipeline_template` -- code block
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p11_schema_curation_nudge]] | sibling | 0.53 |
-| [[p06_is_env_contract_n05]] | upstream | 0.35 |
-| [[p06_is_checkout_n06]] | upstream | 0.32 |
-| [[p03_ch_content_pipeline]] | upstream | 0.29 |
-| [[n00_revision_loop_policy_manifest]] | related | 0.29 |

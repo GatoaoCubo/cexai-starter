@@ -18,9 +18,6 @@ keywords: [llm agent memory systems, knowledge card, memory_architecture builder
 density_score: 0.91
 related:
   - memory-architecture-builder
-  - bld_output_template_memory_architecture
-  - p01_kc_memory_scope
-  - bld_knowledge_card_consolidation_policy
 ---
 ## Domain Overview
 
@@ -104,6 +101,5 @@ knowledge graphs, and key-value backends to serve each layer at appropriate late
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-architecture-builder]] | downstream | 0.56 |
-| [[bld_output_template_memory_architecture]] | downstream | 0.49 |
 | [[kc_memory_scope]] | sibling | 0.46 |
 | bld_knowledge_card_consolidation_policy | sibling | 0.43 |

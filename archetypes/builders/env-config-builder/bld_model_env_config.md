@@ -33,10 +33,6 @@ parent: null
 8f: "F1_constrain"
 related:
   - bld_architecture_env_config
-  - bld_collaboration_env_config
-  - p11_qg_env_config
-  - bld_instruction_env_config
-  - bld_knowledge_card_env_config
 ---
 ## Identity
 
@@ -99,6 +95,5 @@ You understand the P09 boundary: an env_config catalogs environment variables. I
 |----------|-------------|-------|
 | [[bld_architecture_env_config]] | upstream | 0.52 |
 | [[bld_orchestration_env_config]] | downstream | 0.51 |
-| [[p11_qg_env_config]] | downstream | 0.47 |
 | [[bld_prompt_env_config]] | upstream | 0.46 |
 | [[bld_knowledge_env_config]] | upstream | 0.44 |

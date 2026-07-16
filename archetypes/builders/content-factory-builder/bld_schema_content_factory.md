@@ -18,11 +18,7 @@ updated: "2026-07-03"
 keywords: [formal schema, content factory construction, schema content factory, content_factory, builder, content-fabric, brief schema, row schema, validation rules, unique post_id channel format]
 density_score: 0.90
 related:
-  - bld_schema_social_publisher
-  - p01_kc_content_factory
-  - bld_output_template_content_factory
   - bld_eval_content_factory
-  - p01_kc_content_library
 ---
 
 # Schema: content_factory
@@ -103,8 +99,4 @@ malformed row).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_schema_social_publisher]] | sibling | 0.52 |
-| [[p01_kc_content_factory]] | upstream | 0.50 |
-| [[bld_output_template_content_factory]] | downstream | 0.42 |
 | [[bld_eval_content_factory]] | downstream | 0.38 |
-| [[p01_kc_content_library]] | sibling | 0.36 |

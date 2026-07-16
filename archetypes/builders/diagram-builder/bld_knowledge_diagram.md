@@ -20,10 +20,6 @@ diagrams, spec table, ascii mermaid]
 density_score: 0.90
 related:
   - diagram-builder
-  - bld_instruction_diagram
-  - p10_lr_diagram_builder
-  - bld_collaboration_diagram
-  - p01_kc_diagram
 ---
 # Domain Knowledge: diagram
 ## Executive Summary
@@ -86,7 +82,3 @@ Diagrams are visual representations of system architecture using ASCII art or Me
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[diagram-builder]] | downstream | 0.58 |
-| [[bld_instruction_diagram]] | downstream | 0.51 |
-| [[p10_lr_diagram_builder]] | downstream | 0.49 |
-| [[bld_collaboration_diagram]] | downstream | 0.46 |
-| [[p01_kc_diagram]] | sibling | 0.45 |

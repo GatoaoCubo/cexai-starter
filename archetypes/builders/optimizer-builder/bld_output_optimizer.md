@@ -18,11 +18,9 @@ updated: "2026-04-07"
 keywords: [template with, for optimizer production, optimizer construction, output template optimizer, optimizer, builder, examples, output template, target process, secondary metrics]
 density_score: 0.90
 related:
-  - p03_ins_optimizer
   - optimizer-builder
   - bld_schema_optimizer
   - bld_memory_optimizer
-  - p11_qg_optimizer
 ---
 # Output Template: optimizer
 ```yaml
@@ -109,8 +107,6 @@ Cost: compute={{compute_overhead}}, time={{time_per_cycle}}s
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_optimizer]] | upstream | 0.43 |
 | [[optimizer-builder]] | downstream | 0.36 |
 | [[bld_schema_optimizer]] | downstream | 0.35 |
 | [[bld_memory_optimizer]] | downstream | 0.32 |
-| [[p11_qg_optimizer]] | downstream | 0.31 |

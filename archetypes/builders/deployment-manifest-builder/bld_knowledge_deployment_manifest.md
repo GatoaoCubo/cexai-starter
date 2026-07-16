@@ -17,10 +17,6 @@ tldr: "Domain knowledge for building deployment_manifest artifacts: patterns, an
 keywords: [knowledge card, and decision rules, knowledge_card, deployment_manifest, what it is, key patterns, why it fails, related artifacts, sibling, environment]
 density_score: null
 related:
-  - kc_deployment_manifest
-  - bld_manifest_deployment_manifest
-  - bld_instruction_deployment_manifest
-  - bld_quality_gate_deployment_manifest
   - bld_memory_deployment_manifest
 ---
 # Knowledge Card: deployment_manifest
@@ -59,8 +55,4 @@ A deployment_manifest specifies WHAT artifacts to deploy, WHERE (environment/tar
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_deployment_manifest]] | sibling | 0.45 |
-| [[bld_manifest_deployment_manifest]] | downstream | 0.43 |
-| [[bld_instruction_deployment_manifest]] | downstream | 0.32 |
-| [[bld_quality_gate_deployment_manifest]] | downstream | 0.29 |
 | [[bld_memory_deployment_manifest]] | sibling | 0.29 |

@@ -17,10 +17,7 @@ updated: "2026-04-13"
 keywords: [dataset_card construction, output template dataset card, frontmatter field guide, required body sections, filled example, dataset_card, builder, output_template, dataset card, data collection]
 density_score: 0.85
 related:
-  - bld_output_template_thinking_config
   - bld_config_dataset_card
-  - bld_output_template_collaboration_pattern
-  - bld_output_template_visual_workflow
   - bld_output_query_optimizer
 ---
 ```yaml

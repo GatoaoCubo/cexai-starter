@@ -33,14 +33,10 @@ keywords:
   - "**expected outcome:**"
 related:
   - bld_architecture_kind
-  - bld_instruction_kind
   - kind-builder
-  - bld_collaboration_kind
   - bld_schema_kind
   - bld_output_template_builder
   - bld_tools_kind
-  - p12_wf_spec_to_code
-  - p01_kc_wave2_quality_report
 density_score: 0.99
 ---
 

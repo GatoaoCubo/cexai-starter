@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [knowledge card construction, collaboration knowledge card, knowledge_card, builder, examples, "### crew: new agent end-to-end", "### crew: rag pipeline setup", my role, crew compositions, content foundation]
 density_score: 0.90
-related:
-  - bld_collaboration_agent
-  - bld_collaboration_knowledge_index
-  - bld_collaboration_system_prompt
-  - bld_collaboration_context_doc
-  - bld_collaboration_boot_config
 ---
 # Collaboration: knowledge-card-builder
 ## My Role in Crews

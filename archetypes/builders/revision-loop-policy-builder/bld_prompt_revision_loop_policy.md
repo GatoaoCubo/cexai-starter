@@ -22,10 +22,6 @@ atomic: false
 rollback: "Delete produced policy file. No downstream effects until referenced in a pipeline_template."
 related:
  - revision-loop-policy-builder
- - bld_kc_revision_loop_policy
- - p11_out_tpl_revision_loop_policy
- - n00_revision_loop_policy_manifest
- - kc_revision_loop_policy
 ---
 ## Context
 A `revision_loop_policy` governs iterative content-quality improvement cycles in AI agent pipelines.
@@ -137,7 +133,3 @@ Deliverable: PASS/FAIL on all HARD gates. Score on SOFT gates.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[revision-loop-policy-builder]] | related | 0.49 |
-| [[bld_kc_revision_loop_policy]] | upstream | 0.46 |
-| [[p11_out_tpl_revision_loop_policy]] | upstream | 0.45 |
-| [[n00_revision_loop_policy_manifest]] | related | 0.44 |
-| [[kc_revision_loop_policy]] | upstream | 0.43 |

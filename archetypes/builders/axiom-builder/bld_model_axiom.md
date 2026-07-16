@@ -30,11 +30,7 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_axiom
-  - p01_kc_axiom
   - bld_architecture_axiom
-  - bld_instruction_axiom
-  - bld_knowledge_card_axiom
 ---
 ## Identity
 

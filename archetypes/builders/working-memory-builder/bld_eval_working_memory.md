@@ -30,9 +30,6 @@ density_score: 0.90
 related:
   - bld_schema_working_memory
   - working-memory-builder
-  - bld_instruction_working_memory
-  - p01_kc_working_memory
-  - bld_output_template_working_memory
 ---
 ## Quality Gate
 

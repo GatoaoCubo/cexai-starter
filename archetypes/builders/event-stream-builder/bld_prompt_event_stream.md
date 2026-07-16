@@ -29,11 +29,7 @@ density_score: 0.83
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_instruction_aggregate_root
   - bld_schema_event_stream
-  - bld_instruction_action_prompt
-  - bld_instruction_data_contract
-  - kc_event_stream
 ---
 # Instructions: How to Produce an event_stream
 ## Phase 1: RESEARCH
@@ -86,8 +82,4 @@ python _tools/cex_prompt_optimizer.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_aggregate_root]] | sibling | 0.37 |
 | [[bld_schema_event_stream]] | related | 0.37 |
-| [[bld_instruction_action_prompt]] | sibling | 0.34 |
-| [[bld_instruction_data_contract]] | sibling | 0.34 |
-| [[kc_event_stream]] | upstream | 0.34 |

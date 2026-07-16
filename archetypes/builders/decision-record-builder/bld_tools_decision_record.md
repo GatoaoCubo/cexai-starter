@@ -21,7 +21,6 @@ related:
   - bld_tools_retriever_config
   - bld_tools_memory_scope
   - bld_tools_runtime_rule
-  - bld_collaboration_decision_record
 ---
 # Tools: decision-record-builder
 ## Production Tools

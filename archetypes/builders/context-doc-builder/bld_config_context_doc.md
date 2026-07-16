@@ -28,9 +28,7 @@ keywords: [context doc construction, config context doc, context_doc, builder, e
 density_score: 0.90
 related:
   - bld_schema_context_doc
-  - bld_output_template_context_doc
   - bld_tools_context_doc
-  - bld_instruction_context_doc
   - bld_config_rag_source
 ---
 # Config: context_doc
@@ -73,7 +71,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_context_doc]] | upstream | 0.31 |
-| [[bld_output_template_context_doc]] | upstream | 0.31 |
 | [[bld_tools_context_doc]] | upstream | 0.30 |
-| [[bld_instruction_context_doc]] | upstream | 0.22 |
 | [[bld_config_rag_source]] | sibling | 0.21 |

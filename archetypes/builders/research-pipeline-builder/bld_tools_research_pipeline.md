@@ -16,12 +16,6 @@ updated: "2026-04-07"
 8f: "F5_call"
 keywords: [research pipeline construction, tools research pipeline, research_pipeline, builder, examples, https://google.serper.dev/search, https://api.exa.ai/search, https://api.search.brave.com, https://api.tavily.com/search, npx -y firecrawl-mcp]
 density_score: 0.90
-related:
-  - p01_kc_source_catalog
-  - ex_research_pipeline_ecommerce_br
-  - bld_knowledge_card_search_tool
-  - p04_tool_mcp_config
-  - bld_collaboration_search_tool
 ---
 # Tools: research-pipeline-builder
 

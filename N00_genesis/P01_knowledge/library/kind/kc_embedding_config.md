@@ -18,11 +18,8 @@ keywords: [embedding, vector-model, dimensions, similarity]
 feeds_kinds: [embedding_config]
 density_score: null
 related:
-  - p01_emb_openai_text_embedding_3_small
   - embedding-config-builder
-  - bld_knowledge_card_embedding_config
   - bld_architecture_embedding_config
-  - p01_kc_vector_embedding_model_selection
 ---
 
 # Embedding Config
@@ -94,7 +91,6 @@ An embedding_config defines which vector model converts text into dense numerica
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_emb_openai_text_embedding_3_small]] | related | 0.49 |
 | [[embedding-config-builder]] | related | 0.49 |
 | [[bld_knowledge_embedding_config]] | sibling | 0.48 |
 | [[bld_architecture_embedding_config]] | downstream | 0.47 |

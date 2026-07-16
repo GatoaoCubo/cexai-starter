@@ -16,9 +16,7 @@ updated: "2026-04-13"
 keywords: [agent_computer_interface construction, tools agent computer interface, agent_computer_interface, tools, builder, python _tools/cex_doctor.py, "python _tools/cex_compile.py {path}", "python _tools/cex_hooks.py validate {path}", "python _tools/cex_score.py --apply {path}", "python _tools/cex_hooks.py pre-save {path}"]
 density_score: 0.88
 related:
-  - bld_knowledge_card_agent_computer_interface
   - bld_tools_model_architecture
-  - p11_tools_revision_loop_policy
   - bld_tools_context_map
   - bld_tools_event_schema
 ---
@@ -70,8 +68,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_agent_computer_interface]] | upstream | 0.49 |
 | [[bld_tools_model_architecture]] | sibling | 0.34 |
-| [[p11_tools_revision_loop_policy]] | related | 0.33 |
 | [[bld_tools_context_map]] | sibling | 0.32 |
 | [[bld_tools_event_schema]] | sibling | 0.31 |

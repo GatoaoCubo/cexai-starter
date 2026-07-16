@@ -31,10 +31,6 @@ keywords:
   - "write baseline"
 density_score: 0.90
 related:
-  - bld_instruction_prompt_version
-  - bld_instruction_output_validator
-  - bld_instruction_retriever_config
-  - bld_instruction_memory_scope
   - bld_schema_regression_check
 ---
 # Instructions: How to Produce a regression_check
@@ -78,8 +74,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_prompt_version]] | sibling | 0.44 |
-| [[bld_instruction_output_validator]] | sibling | 0.43 |
-| [[bld_instruction_retriever_config]] | sibling | 0.42 |
-| [[bld_instruction_memory_scope]] | sibling | 0.42 |
 | [[bld_schema_regression_check]] | downstream | 0.42 |

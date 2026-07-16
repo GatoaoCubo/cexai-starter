@@ -18,9 +18,6 @@ keywords: [safety_policy construction, tools safety policy, perspective api, ope
 density_score: 0.92
 related:
   - bld_tools_content_filter
-  - n06_audit_content_filter_builder
-  - bld_knowledge_card_content_filter
-  - bld_knowledge_card_safety_policy
   - bld_tools_compliance_framework
 ---
 ## CEX Internal Tools
@@ -74,7 +71,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_content_filter]] | sibling | 0.43 |
-| [[n06_audit_content_filter_builder]] | downstream | 0.34 |
-| [[bld_knowledge_card_content_filter]] | upstream | 0.33 |
-| [[bld_knowledge_card_safety_policy]] | upstream | 0.28 |
 | [[bld_tools_compliance_framework]] | sibling | 0.28 |

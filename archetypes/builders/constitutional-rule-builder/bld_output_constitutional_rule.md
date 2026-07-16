@@ -17,9 +17,6 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_schema_constitutional_rule
-  - bld_instruction_constitutional_rule
-  - bld_quality_gate_constitutional_rule
-  - bld_manifest_constitutional_rule
   - kc_constitutional_rule
 ---
 # Output Template: constitutional_rule
@@ -97,6 +94,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 |----------|-------------|-------|
 | [[bld_schema_constitutional_rule]] | related | 0.49 |
 | [[bld_prompt_constitutional_rule]] | related | 0.47 |
-| [[bld_quality_gate_constitutional_rule]] | related | 0.44 |
-| [[bld_manifest_constitutional_rule]] | related | 0.40 |
 | [[kc_constitutional_rule]] | upstream | 0.39 |

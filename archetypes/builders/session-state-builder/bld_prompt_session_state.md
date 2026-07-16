@@ -30,10 +30,8 @@ density_score: 0.87
 llm_function: REASON
 related:
   - session-state-builder
-  - bld_knowledge_card_session_state
   - bld_architecture_session_state
   - bld_schema_session_state
-  - bld_collaboration_session_state
 ---
 ## Context
 The session-state-builder produces `session_state` artifacts — ephemeral YAML snapshots

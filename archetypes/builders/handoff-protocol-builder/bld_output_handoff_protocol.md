@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_architecture_handoff_protocol
-  - bld_instruction_handoff_protocol
-  - bld_output_template_runtime_rule
-  - bld_output_template_output_validator
-  - bld_output_template_hook_config
 ---
 # Output Template: handoff_protocol
 ```yaml
@@ -97,5 +93,4 @@ escalation: "{{escalation}}}}"
 | [[bld_architecture_handoff_protocol]] | downstream | 0.39 |
 | [[bld_prompt_handoff_protocol]] | upstream | 0.37 |
 | bld_output_template_runtime_rule | sibling | 0.37 |
-| [[bld_output_template_output_validator]] | sibling | 0.36 |
 | bld_output_template_hook_config | sibling | 0.35 |

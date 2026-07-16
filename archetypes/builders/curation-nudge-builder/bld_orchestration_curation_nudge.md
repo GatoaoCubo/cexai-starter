@@ -36,10 +36,6 @@ keywords:
  - "on build complete"
 density_score: 0.87
 related:
- - p11_arch_curation_nudge
- - bld_kc_curation_nudge
- - n00_curation_nudge_manifest
- - kc_curation_nudge
  - curation-nudge-builder
 ---
 ## F8 COLLABORATE Protocol
@@ -104,8 +100,4 @@ Action: write confirmed knowledge to {destination}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_arch_curation_nudge]] | upstream | 0.43 |
-| [[bld_kc_curation_nudge]] | upstream | 0.41 |
-| [[n00_curation_nudge_manifest]] | upstream | 0.39 |
-| [[kc_curation_nudge]] | upstream | 0.38 |
 | [[curation-nudge-builder]] | upstream | 0.38 |

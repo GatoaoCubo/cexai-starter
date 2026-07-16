@@ -20,10 +20,6 @@ dispatch, spec table, related artif]
 density_score: 0.90
 related:
   - bld_schema_dispatch_rule
-  - p01_kc_dispatch_rule
-  - bld_collaboration_dispatch_rule
-  - p10_lr_dispatch_rule_builder
-  - bld_instruction_dispatch_rule
 ---
 # Domain Knowledge: dispatch_rule
 ## Executive Summary
@@ -82,7 +78,3 @@ Dispatch rules are routing policy records that map keywords to targets with prio
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_dispatch_rule]] | downstream | 0.49 |
-| [[p01_kc_dispatch_rule]] | sibling | 0.46 |
-| [[bld_collaboration_dispatch_rule]] | downstream | 0.37 |
-| [[p10_lr_dispatch_rule_builder]] | downstream | 0.35 |
-| [[bld_instruction_dispatch_rule]] | downstream | 0.33 |

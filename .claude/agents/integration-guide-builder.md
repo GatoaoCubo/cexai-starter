@@ -5,9 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
-  - n00_integration_guide_manifest
-  - p01_faq_cex_common_questions
   - bld_config_integration_guide
 ---
 
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[n00_integration_guide_manifest]] | related | 0.28 |
-| [[p01_faq_cex_common_questions]] | related | 0.27 |
 | [[bld_config_integration_guide]] | related | 0.27 |

@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - runtime-rule-builder
   - bld_memory_runtime_rule
-  - bld_collaboration_env_config
-  - bld_collaboration_circuit_breaker
-  - bld_collaboration_fallback_chain
 ---
 # Collaboration: runtime-rule-builder
 ## My Role in Crews
@@ -76,6 +73,3 @@ I produce technical operational parameters — timeouts, retry strategies, rate 
 |----------|-------------|-------|
 | [[runtime-rule-builder]] | related | 0.35 |
 | [[bld_memory_runtime_rule]] | downstream | 0.34 |
-| [[bld_collaboration_env_config]] | sibling | 0.34 |
-| [[bld_collaboration_circuit_breaker]] | sibling | 0.33 |
-| [[bld_collaboration_fallback_chain]] | sibling | 0.33 |

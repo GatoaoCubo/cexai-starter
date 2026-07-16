@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - checkpoint-builder
-  - bld_collaboration_checkpoint
   - bld_architecture_checkpoint
-  - bld_instruction_checkpoint
-  - p01_kc_checkpoint
 ---
 # Domain Knowledge: checkpoint
 ## Executive Summary

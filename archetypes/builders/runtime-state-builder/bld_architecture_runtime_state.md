@@ -18,9 +18,7 @@ keywords: [component map of runtime_state, and architectural position, runtime s
 density_score: 0.90
 related:
   - runtime-state-builder
-  - p03_ins_runtime_state
   - bld_memory_runtime_state
-  - bld_collaboration_runtime_state
   - bld_architecture_session_state
 ---
 # Architecture: runtime_state in the CEX
@@ -70,7 +68,6 @@ runtime_state   --signals-->      state_update
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[runtime-state-builder]] | downstream | 0.60 |
-| [[p03_ins_runtime_state]] | downstream | 0.52 |
 | [[bld_memory_runtime_state]] | downstream | 0.50 |
 | [[bld_orchestration_runtime_state]] | downstream | 0.49 |
 | [[bld_architecture_session_state]] | sibling | 0.47 |

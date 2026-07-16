@@ -34,7 +34,6 @@ related:
   - session-state-builder
   - bld_memory_session_state
   - bld_architecture_session_state
-  - bld_collaboration_session_state
   - bld_config_session_state
 ---
 # Domain Knowledge: session_state

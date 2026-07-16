@@ -20,7 +20,6 @@ related:
   - bld_config_roi_calculator
   - bld_config_scoring_rubric
   - bld_config_research_pipeline
-  - p08_adr_opportunity_matrix_kind
   - opportunity-matrix-builder
 ---
 ## Naming Convention

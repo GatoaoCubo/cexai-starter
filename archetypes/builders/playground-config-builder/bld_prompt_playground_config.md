@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [playground_config construction, instruction playground config, playground_config, builder, instruction, sandbox_id, evaluation_mode, constraints, resources, security]
 density_score: 0.85
-related:
-  - bld_instruction_judge_config
-  - bld_instruction_search_strategy
-  - bld_instruction_transport_config
-  - bld_instruction_edit_format
-  - bld_instruction_content_filter
 ---
 ## Phase 1: RESEARCH  
 1. Identify user intent and evaluation goals for the playground.  
@@ -48,12 +42,3 @@ related:
 - [ ] ✅ Template syntax validation (OUTPUT_TEMPLATE.md).  
 - [ ] ✅ Security policy audit (Phase 1 policies).  
 - [ ] ✅ Performance benchmark alignment (Phase 1 metrics).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_judge_config]] | sibling | 0.38 |
-| [[bld_instruction_search_strategy]] | sibling | 0.35 |
-| [[bld_instruction_transport_config]] | sibling | 0.33 |
-| [[bld_instruction_edit_format]] | sibling | 0.31 |
-| [[bld_instruction_content_filter]] | sibling | 0.31 |

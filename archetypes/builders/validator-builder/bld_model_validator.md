@@ -32,10 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_validator
   - bld_memory_validator
-  - p11_qg_validator
-  - bld_knowledge_card_validator
   - validation-schema-builder
 ---
 ## Identity
@@ -140,6 +137,5 @@ quality_target: 9.0
 |----------|-------------|-------|
 | [[bld_orchestration_validator]] | related | 0.51 |
 | [[bld_memory_validator]] | downstream | 0.48 |
-| [[p11_qg_validator]] | related | 0.47 |
 | [[bld_knowledge_validator]] | upstream | 0.47 |
 | [[validation-schema-builder]] | sibling | 0.42 |

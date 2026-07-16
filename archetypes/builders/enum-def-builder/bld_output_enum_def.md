@@ -20,10 +20,7 @@ keywords: [template with, enum def construction, output template enum def, enum_
 json schema:, output template]
 density_score: 0.90
 related:
-  - bld_knowledge_card_enum_def
-  - p06_enum_def
   - enum-def-builder
-  - bld_collaboration_enum_def
   - bld_schema_enum_def
 ---
 # Output Template: enum_def

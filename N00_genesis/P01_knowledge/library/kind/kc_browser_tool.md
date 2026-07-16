@@ -19,10 +19,6 @@ feeds_kinds: [browser_tool]
 density_score: null
 related:
   - browser-tool-builder
-  - n00_browser_tool_manifest
-  - bld_collaboration_browser_tool
-  - bld_knowledge_card_browser_tool
-  - p04_browser_tool_NAME
 ---
 
 # Browser Tool

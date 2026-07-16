@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [experiment_tracker construction, quality gate experiment tracker, hard gates, soft scoring, for experiment_tracker artifacts, experiment_tracker, builder, quality_gate, '^p07_et_[a-z0-9_]+\.md$', "kind:"]
 density_score: 0.90
-related:
-  - p07_qg_eval_framework
-  - p01_qg_dataset_card
-  - p11_qg_kind_builder
-  - bld_instruction_experiment_tracker
-  - p09_qg_marketplace_app_manifest
 ---
 ## Quality Gate
 

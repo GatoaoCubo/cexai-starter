@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [roi_calculator construction, instruction roi calculator, roi_calculator, builder, instruction, net profit, total investment, related artifacts, input parameters, define formula]
 density_score: 0.85
 related:
-  - p10_mem_roi_calculator_builder
-  - p11_qg_roi_calculator
   - roi-calculator-builder
   - kc_roi_calculator
-  - bld_knowledge_card_roi_calculator
 ---
 ## Phase 1: RESEARCH  
 1. Identify input parameters: initial investment, annual savings, implementation cost, maintenance fees, and time horizon.  
@@ -52,8 +49,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_roi_calculator_builder]] | downstream | 0.49 |
-| [[p11_qg_roi_calculator]] | downstream | 0.45 |
 | [[roi-calculator-builder]] | downstream | 0.44 |
 | [[kc_roi_calculator]] | upstream | 0.42 |
 | [[bld_knowledge_roi_calculator]] | upstream | 0.40 |

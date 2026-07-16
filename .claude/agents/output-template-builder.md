@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - output-template-builder
   - kind-builder
-  - n00_output_template_manifest
-  - p03_sp_builder_nucleus
   - prompt-template-builder
 ---
 

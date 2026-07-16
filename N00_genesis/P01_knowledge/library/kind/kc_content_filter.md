@@ -11,10 +11,6 @@ when_to_use: "When configuring automated content moderation with pass/block/flag
 keywords: [text normalization, tokenization, nsfw content detection, toxicity score, policy rule matching, contextual risk assessment, automated moderation recommendations, confidence score, filter decision, detected patterns]
 density_score: 1.0
 related:
-  - p03_ch_kc_to_notebooklm
-  - p11_schema_curation_nudge
-  - p11_schema_revision_loop_policy
-  - p03_ch_content_pipeline
   - content-filter-builder
 ---
 

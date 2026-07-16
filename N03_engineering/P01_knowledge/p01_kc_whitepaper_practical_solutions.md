@@ -12,8 +12,6 @@ domain: cex_architecture
 tags: [whitepaper, annex, failure-modes, solutions, 8f, evidence]
 tldr: "Each of the 10 failure modes from whitepaper Section 1 mapped to a concrete CEXAI tool, command, architecture pattern, and live evidence. Inventive Pride: prove every claim."
 related:
-  - p01_ctx_whitepaper_technical_deepdive
-  - p01_faq_cex_common_questions
   - p01_kc_cex_distribution_model
 ---
 
@@ -241,5 +239,4 @@ Every cell maps to a runnable command and a real file path.
 | Artifact | Relationship |
 |----------|--------------|
 | p01_ctx_whitepaper_technical_deepdive | upstream (Annex C: diagrams + transcripts) |
-| [[p01_faq_cex_common_questions]] | related |
 | [[p01_kc_cex_distribution_model]] | related |

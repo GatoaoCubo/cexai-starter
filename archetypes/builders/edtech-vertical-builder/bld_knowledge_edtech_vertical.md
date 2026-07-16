@@ -18,10 +18,6 @@ keywords: [edtech_vertical construction, knowledge card edtech vertical, edtech_
 the ed, google classroom, product certification, higher ed, academic technology]
 density_score: 0.85
 related:
-  - bld_output_template_edtech_vertical
-  - bld_instruction_edtech_vertical
-  - p01_kc_edtech_vertical
-  - p01_qg_edtech_vertical
   - edtech_vertical_lms_market
 ---
 ## Domain Overview
@@ -73,8 +69,4 @@ District procurement is a significant barrier: most K-12 districts require state
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_edtech_vertical]] | downstream | 0.56 |
-| [[bld_instruction_edtech_vertical]] | downstream | 0.56 |
-| [[p01_kc_edtech_vertical]] | sibling | 0.52 |
-| [[p01_qg_edtech_vertical]] | downstream | 0.49 |
 | [[edtech_vertical_lms_market]] | related | 0.48 |

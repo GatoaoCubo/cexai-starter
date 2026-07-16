@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [benchmark_suite construction, instruction benchmark suite, benchmark_suite, builder, instruction, schema.yaml, tasks/, workflow.yaml, related artifacts, schema yaml]
 density_score: 0.85
-related:
-  - bld_instruction_judge_config
-  - bld_instruction_playground_config
-  - bld_instruction_eval_framework
-  - bld_instruction_reward_model
-  - kc_workflow_run_crate
 ---
 ## Phase 1: RESEARCH  
 1. Identify benchmark objectives and scope (e.g., performance, scalability).  
@@ -48,12 +42,3 @@ related:
 - [ ] ✅ Execute benchmark_suite in test environment (dry-run)  
 - [ ] ✅ Verify output matches OUTPUT_TEMPLATE.md structure  
 - [ ] ✅ Review documentation for clarity and completeness
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_judge_config]] | sibling | 0.29 |
-| [[bld_instruction_playground_config]] | sibling | 0.29 |
-| [[bld_instruction_eval_framework]] | sibling | 0.27 |
-| [[bld_instruction_reward_model]] | sibling | 0.27 |
-| [[kc_workflow_run_crate]] | upstream | 0.27 |

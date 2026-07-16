@@ -18,9 +18,7 @@ updated: "2026-04-07"
 keywords: [template with, for bugloop production, bugloop construction, output template bugloop, bugloop, builder, examples, output template, fix strategy, related artifacts]
 density_score: 0.90
 related:
-  - bld_instruction_bugloop
   - bld_config_bugloop
-  - p11_qg_bugloop
   - bld_schema_bugloop
   - bugloop-builder
 ---
@@ -115,8 +113,6 @@ rollback:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_bugloop]] | upstream | 0.50 |
 | [[bld_config_bugloop]] | downstream | 0.44 |
-| [[p11_qg_bugloop]] | downstream | 0.43 |
 | [[bld_schema_bugloop]] | downstream | 0.38 |
 | [[bugloop-builder]] | downstream | 0.37 |

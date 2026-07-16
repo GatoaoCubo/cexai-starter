@@ -18,10 +18,6 @@ keywords: [component map of guardrail, and architectural position, guardrail con
 density_score: 0.90
 related:
   - guardrail-builder
-  - bld_instruction_guardrail
-  - n00_guardrail_manifest
-  - bld_collaboration_guardrail
-  - p11_qg_guardrail
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -74,4 +70,3 @@ permission (P09)   --depends-->  guardrail
 | [[bld_prompt_guardrail]] | upstream | 0.55 |
 | n00_guardrail_manifest | downstream | 0.52 |
 | [[bld_orchestration_guardrail]] | downstream | 0.50 |
-| [[p11_qg_guardrail]] | downstream | 0.48 |

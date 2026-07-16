@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_instruction_cohort_analysis
-  - kc_cohort_analysis
-  - p10_mem_cohort_analysis_builder
-  - n00_cohort_analysis_manifest
-  - bld_knowledge_card_cohort_analysis
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS USE CUSTOMER ACQUISITION DATE AS COHORT ORIGIN
 ALWAYS APPLY SURVIVAL ANALYSIS FOR RETENTION METRICS  
 NEVER INCLUDE BENCHMARK COMPARISONS OR MODEL EVALUATION METRICS  
 NEVER USE UNSTRUCTURED DATA SOURCES FOR COHORT SEGMENTATION
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_cohort_analysis]] | upstream | 0.67 |
-| [[kc_cohort_analysis]] | upstream | 0.63 |
-| [[p10_mem_cohort_analysis_builder]] | downstream | 0.58 |
-| [[n00_cohort_analysis_manifest]] | related | 0.57 |
-| [[bld_knowledge_card_cohort_analysis]] | upstream | 0.55 |

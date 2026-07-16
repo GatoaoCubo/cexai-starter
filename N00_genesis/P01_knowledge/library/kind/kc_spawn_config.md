@@ -19,8 +19,6 @@ feeds_kinds: [spawn_config]
 density_score: null
 related:
   - spawn-config-builder
-  - p11_qg_spawn_config
-  - bld_knowledge_card_spawn_config
   - bld_architecture_spawn_config
   - bld_memory_spawn_config
 ---
@@ -96,7 +94,6 @@ A spawn configuration defines how a agent node is launched — which model, CLI 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[spawn-config-builder]] | related | 0.46 |
-| [[p11_qg_spawn_config]] | related | 0.42 |
 | [[bld_knowledge_spawn_config]] | sibling | 0.41 |
 | [[bld_architecture_spawn_config]] | upstream | 0.37 |
 | [[bld_memory_spawn_config]] | upstream | 0.35 |

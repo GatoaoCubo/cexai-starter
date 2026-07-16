@@ -18,10 +18,7 @@ keywords: [rbac_policy construction, instruction rbac policy, rbac_policy, build
 density_score: 0.85
 related:
   - kc_rbac_policy
-  - p10_mem_rbac_policy_builder
   - rbac-policy-builder
-  - bld_knowledge_card_rbac_policy
-  - n00_rbac_policy_manifest
 ---
 ## Phase 1: RESEARCH  
 1. Identify tenant domains and their unique resource hierarchies.  
@@ -53,7 +50,6 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_rbac_policy]] | upstream | 0.48 |
-| [[p10_mem_rbac_policy_builder]] | downstream | 0.47 |
 | [[rbac-policy-builder]] | downstream | 0.47 |
 | [[bld_knowledge_rbac_policy]] | upstream | 0.43 |
 | n00_rbac_policy_manifest | downstream | 0.34 |

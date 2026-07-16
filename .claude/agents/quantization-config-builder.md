@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_quantization_config
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p01_faq_cex_common_questions
 ---
 
 # quantization-config-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_quantization_config]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |
-| [[p01_faq_cex_common_questions]] | related | 0.26 |

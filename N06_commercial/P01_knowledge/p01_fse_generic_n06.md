@@ -37,14 +37,7 @@ slots:
   margin_floor_pct: "<INTEGER -- the margin guard the recommendation must respect>"
 density_score: 1.0
 related:
-  - bld_collaboration_few_shot_example
   - few-shot-example-builder
-  - bld_knowledge_card_few_shot_example
-  - p01_ctx_monetization_audit_n06_2026_04_08
-  - p01_kc_few_shot_example
-  - p10_lr_few_shot_example_builder
-  - p08_pat_pricing_framework
-  - bld_collaboration_action_prompt
   - action-prompt-builder
 ---
 <!-- 8F: F1=P01/few_shot_example F2=few-shot-example-builder F3=nucleus_def_n06.md,kc_few_shot_example.md,P01_knowledge/_schema.yaml,N06 commercial knowledge examples F4=teach_commercial_prompt_output_with_revenue_ranked_reasoning F5=apply_patch;python _tools/cex_compile.py F6=author_dense_markdown_artifact F7=frontmatter_ascii_density_linecount_review F8=N06_commercial/P01_knowledge/kno_few_shot_example_n06.md -->
@@ -202,7 +195,6 @@ goal: move_customer_to_higher_value_offer_without_custom_scope_leak
 | [[bld_knowledge_few_shot_example]] | related | 0.20 |
 | p01_ctx_monetization_audit_n06_2026_04_08 | related | 0.20 |
 | [[kc_few_shot_example]] | related | 0.19 |
-| [[p10_lr_few_shot_example_builder]] | downstream | 0.19 |
 | p08_pat_pricing_framework | downstream | 0.19 |
 | [[bld_orchestration_action_prompt]] | downstream | 0.19 |
 | [[action-prompt-builder]] | downstream | 0.19 |

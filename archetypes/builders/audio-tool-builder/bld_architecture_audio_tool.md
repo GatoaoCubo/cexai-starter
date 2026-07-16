@@ -18,10 +18,6 @@ keywords: [component map of audio_tool, and architectural position, audio tool c
 density_score: 0.90
 related:
   - audio-tool-builder
-  - p10_lr_audio_tool_builder
-  - p11_qg_audio_tool
-  - bld_instruction_audio_tool
-  - bld_knowledge_card_audio_tool
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -102,7 +98,3 @@ notifier    --consumes--> audio_bytes
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[audio-tool-builder]] | upstream | 0.55 |
-| [[p10_lr_audio_tool_builder]] | downstream | 0.47 |
-| [[p11_qg_audio_tool]] | downstream | 0.46 |
-| [[bld_instruction_audio_tool]] | upstream | 0.42 |
-| [[bld_knowledge_card_audio_tool]] | upstream | 0.41 |

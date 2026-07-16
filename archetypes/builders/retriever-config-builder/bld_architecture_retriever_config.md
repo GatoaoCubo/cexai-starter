@@ -19,9 +19,6 @@ density_score: 0.90
 related:
   - retriever-config-builder
   - bld_architecture_chunk_strategy
-  - p11_qg_retriever_config
-  - n00_retriever_config_manifest
-  - p10_lr_retriever_config_builder
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -85,6 +82,4 @@ python _tools/cex_score.py --apply bld-architecture-retriever-config.md
 |----------|-------------|-------|
 | [[retriever-config-builder]] | upstream | 0.54 |
 | [[bld_architecture_chunk_strategy]] | sibling | 0.47 |
-| [[p11_qg_retriever_config]] | downstream | 0.44 |
 | n00_retriever_config_manifest | upstream | 0.38 |
-| [[p10_lr_retriever_config_builder]] | downstream | 0.35 |

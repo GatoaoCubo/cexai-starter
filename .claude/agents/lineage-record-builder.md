@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_lineage_record
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_faq_cex_common_questions
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # lineage-record-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[bld_tools_lineage_record]] | related | 0.33 |
 | [[kind-builder]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
-| [[p01_faq_cex_common_questions]] | related | 0.28 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |

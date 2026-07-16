@@ -41,11 +41,8 @@ keywords:
   - "openapi initiative"
 density_score: 1.0
 related:
-  - bld_knowledge_card_openapi_spec
   - kc_openapi_spec
-  - bld_collaboration_openapi_spec
   - bld_architecture_openapi_spec
-  - bld_instruction_openapi_spec
 ---
 ## Identity
 

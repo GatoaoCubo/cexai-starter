@@ -15,16 +15,14 @@ tags: [motion_scene, builder, schema, keyframes, P05]
 tldr: "Single source of truth for a motion_scene: six declarative groups, four motion primitives, a11y gate, and a mandatory leverage block with binds_design_system."
 density_score: 0.92
 related:
-  - p06_vs_motion_scene
   - bld_model_motion_scene
   - bld_output_motion_scene
   - bld_eval_motion_scene
-  - p01_kc_motion_scene
 ---
 
 # Schema: motion_scene
 Derivation hierarchy: **SCHEMA (this) > TEMPLATE (bld_output) > CONFIG (bld_config)**.
-The defining contract is [[p06_vs_motion_scene]]; this ISO is its builder-facing restatement.
+The defining contract is p06_vs_motion_scene; this ISO is its builder-facing restatement.
 
 ## Frontmatter Fields (required)
 | Field | Type | Notes |
@@ -73,8 +71,6 @@ only, never raw ffmpeg flags or filter strings.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p06_vs_motion_scene]] | upstream | 0.6 |
 | [[bld_output_motion_scene]] | downstream | 0.5 |
 | [[bld_eval_motion_scene]] | downstream | 0.48 |
 | [[bld_model_motion_scene]] | sibling | 0.4 |
-| [[p01_kc_motion_scene]] | related | 0.4 |

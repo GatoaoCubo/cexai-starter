@@ -18,10 +18,6 @@ keywords: [cohort_analysis construction, instruction cohort analysis, cohort_ana
 density_score: 0.85
 related:
   - cohort-analysis-builder
-  - kc_cohort_analysis
-  - p10_mem_cohort_analysis_builder
-  - n00_cohort_analysis_manifest
-  - bld_knowledge_card_cohort_analysis
 ---
 ## Phase 1: RESEARCH  
 1. Define retention cohort criteria (e.g., user acquisition date, engagement thresholds).  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cohort-analysis-builder]] | downstream | 0.61 |
-| [[kc_cohort_analysis]] | upstream | 0.55 |
-| [[p10_mem_cohort_analysis_builder]] | downstream | 0.49 |
-| [[n00_cohort_analysis_manifest]] | downstream | 0.48 |
-| [[bld_knowledge_card_cohort_analysis]] | upstream | 0.46 |

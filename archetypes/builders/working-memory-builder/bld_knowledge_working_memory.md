@@ -19,10 +19,7 @@ keywords: [working memory construction, knowledge card working memory, working_m
 working, cognitive science foundation, cognitive component, implementation patterns]
 density_score: 0.90
 related:
-  - p01_kc_working_memory
   - working-memory-builder
-  - p10_lr_working_memory_builder
-  - bld_collaboration_working_memory
   - bld_schema_working_memory
 ---
 # Domain Knowledge: working_memory
@@ -83,8 +80,5 @@ Working memory (cognitive origin: Baddeley & Hitch, 1974) is the short-term, lim
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_working_memory]] | sibling | 0.57 |
 | [[working-memory-builder]] | downstream | 0.53 |
-| [[p10_lr_working_memory_builder]] | downstream | 0.48 |
-| [[bld_collaboration_working_memory]] | downstream | 0.47 |
 | [[bld_schema_working_memory]] | downstream | 0.44 |

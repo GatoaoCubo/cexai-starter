@@ -19,10 +19,6 @@ keywords: [working memory construction, collaboration working memory, memory lay
 density_score: 0.90
 related:
   - working-memory-builder
-  - bld_collaboration_memory_scope
-  - bld_collaboration_episodic_memory
-  - bld_collaboration_prospective_memory
-  - p01_kc_working_memory
 ---
 # Collaboration: working-memory-builder
 
@@ -89,7 +85,3 @@ I provide the typed slot schema that a task uses while running, and define what 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[working-memory-builder]] | upstream | 0.52 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.44 |
-| [[bld_collaboration_episodic_memory]] | sibling | 0.40 |
-| [[bld_collaboration_prospective_memory]] | sibling | 0.38 |
-| [[p01_kc_working_memory]] | upstream | 0.35 |

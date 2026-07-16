@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of agent_card, and architectural position, agent card construction, architecture agent card, agent_card, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_agent_card
   - agent-card-builder
   - bld_architecture_spawn_config
-  - bld_knowledge_card_agent_card
-  - p03_ins_agent_card_builder
 ---
 # Architecture: agent_card in the CEX
 ## Component Inventory
@@ -74,4 +71,3 @@ agent_card  --signals-->        health_status
 | [[agent-card-builder]] | related | 0.50 |
 | [[bld_architecture_spawn_config]] | sibling | 0.46 |
 | [[bld_knowledge_agent_card]] | upstream | 0.44 |
-| [[p03_ins_agent_card_builder]] | upstream | 0.41 |

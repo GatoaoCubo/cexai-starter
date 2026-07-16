@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_toolkit
-  - n00_toolkit_manifest
   - bld_config_toolkit
-  - bld_collaboration_toolkit
-  - p01_kc_toolkit
 ---
 
 # toolkit-builder Sub-Agent

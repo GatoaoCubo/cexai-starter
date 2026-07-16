@@ -33,10 +33,8 @@ density_score: 0.85
 llm_function: REASON
 related:
   - path-config-builder
-  - bld_knowledge_card_path_config
   - bld_memory_path_config
   - bld_schema_path_config
-  - bld_collaboration_path_config
 ---
 ## Context
 The path-config-builder receives a **system scope** and produces a `path_config` artifact that formally specifies all filesystem paths used within that scope, including platform variants, resolution rules, and startup validation.

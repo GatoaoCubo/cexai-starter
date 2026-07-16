@@ -31,11 +31,7 @@ keywords:
   - "strategy phases"
 density_score: 0.90
 related:
-  - bld_knowledge_card_knowledge_card
   - knowledge-card-builder
-  - p01_kc_knowledge_best_practices
-  - bld_instruction_input_schema
-  - bld_instruction_instruction
 ---
 # Instructions: How to Produce a knowledge_card
 ## Phase 1: RESEARCH

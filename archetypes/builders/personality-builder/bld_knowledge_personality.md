@@ -19,9 +19,7 @@ density_score: 0.90
 related:
   - kc_personality
   - personality-builder
-  - n00_personality_manifest
   - bld_architecture_personality
-  - p11_qg_personality
 ---
 # KC: personality
 
@@ -84,4 +82,3 @@ Full canonical KC: `N00_genesis/P01_knowledge/library/kind/kc_personality.md`
 | [[personality-builder]] | downstream | 0.68 |
 | n00_personality_manifest | sibling | 0.66 |
 | [[bld_architecture_personality]] | downstream | 0.59 |
-| [[p11_qg_personality]] | downstream | 0.45 |

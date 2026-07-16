@@ -14,9 +14,6 @@ keywords: [claude-sonnet-4-6, context, claude, ab_testing_framework, brand_overr
 density_score: 1.0
 related:
   - prompt-version-builder
-  - output_sdk_validation_self_audit
-  - n00_p03_kind_index
-  - bld_collaboration_action_prompt
   - nucleus_def_n02
 ---
 

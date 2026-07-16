@@ -25,12 +25,6 @@ updated: "2026-04-07"
 8f: "F1_constrain"
 keywords: [naming conventions, file paths, size limits, operational constraints, multi modal config construction, config multi modal config, multi_modal_config, builder, examples, "p04_mmc_{capability_slug}.yaml"]
 density_score: 0.90
-related:
-  - bld_output_template_multi_modal_config
-  - bld_collaboration_multi_modal_config
-  - bld_knowledge_card_multi_modal_config
-  - p11_qg_multi_modal_config
-  - bld_instruction_multi_modal_config
 ---
 # Config: multi_modal_config Production Rules
 ## Naming Convention
@@ -67,12 +61,3 @@ scoring: hybrid_3_layer
 ```bash
 python _tools/cex_score.py --apply bld-config-multi-modal-config.md
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_multi_modal_config]] | upstream | 0.38 |
-| [[bld_collaboration_multi_modal_config]] | downstream | 0.38 |
-| [[bld_knowledge_card_multi_modal_config]] | upstream | 0.32 |
-| [[p11_qg_multi_modal_config]] | downstream | 0.32 |
-| [[bld_instruction_multi_modal_config]] | upstream | 0.31 |

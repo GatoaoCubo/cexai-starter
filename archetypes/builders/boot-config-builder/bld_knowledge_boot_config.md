@@ -20,10 +20,6 @@ boot, claude code]
 density_score: 0.90
 related:
   - boot-config-builder
-  - bld_instruction_boot_config
-  - bld_collaboration_boot_config
-  - p11_qg_boot_config
-  - p01_kc_boot_config
 ---
 # Domain Knowledge: boot_config
 ## Executive Summary
@@ -77,5 +73,4 @@ Boot configs define how an agent initializes on a specific provider runtime (Cla
 | [[boot-config-builder]] | downstream | 0.51 |
 | [[bld_prompt_boot_config]] | downstream | 0.45 |
 | [[bld_orchestration_boot_config]] | downstream | 0.44 |
-| [[p11_qg_boot_config]] | downstream | 0.42 |
 | [[kc_boot_config]] | sibling | 0.42 |

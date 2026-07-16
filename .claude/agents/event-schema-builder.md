@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - event-schema-builder
   - bld_tools_event_schema
-  - bld_collaboration_event_schema
   - kind-builder
-  - p03_sp_builder_nucleus
 ---
 
 # event-schema-builder Sub-Agent
@@ -88,6 +86,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[event-schema-builder]] | related | 0.35 |
 | [[bld_tools_event_schema]] | related | 0.32 |
-| [[bld_collaboration_event_schema]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |

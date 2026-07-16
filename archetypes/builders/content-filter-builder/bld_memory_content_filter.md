@@ -21,9 +21,7 @@ modular, evidence
 reviewed, related artifacts, input output]
 density_score: 0.85
 related:
-  - bld_collaboration_content_filter
   - content-filter-builder
-  - bld_instruction_content_filter
   - bld_schema_content_filter
   - bld_config_content_filter
 ---

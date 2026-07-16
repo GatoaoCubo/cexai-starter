@@ -17,10 +17,6 @@ tldr: "Recalled patterns and corrections for deployment_manifest builder session
 keywords: [deployment_manifest builder patterns, memory, deployment_manifest, persistent patterns, common corrections, context injection priority, related artifacts, user conflates, upstream, reference]
 density_score: null
 related:
-  - bld_rules_deployment_manifest
-  - bld_manifest_deployment_manifest
-  - kc_deployment_manifest
-  - bld_knowledge_card_deployment_manifest
   - bld_architecture_deployment_manifest
 ---
 # Memory: deployment_manifest Builder
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_rules_deployment_manifest]] | sibling | 0.37 |
-| [[bld_manifest_deployment_manifest]] | upstream | 0.33 |
-| [[kc_deployment_manifest]] | sibling | 0.30 |
-| [[bld_knowledge_card_deployment_manifest]] | sibling | 0.30 |
 | [[bld_architecture_deployment_manifest]] | sibling | 0.29 |

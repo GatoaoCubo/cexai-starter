@@ -5,8 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_churn_prevention_playbook
-  - p11_fb_churn_prevention_playbook
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_schema_churn_prevention_playbook
 ---
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_churn_prevention_playbook]] | related | 0.34 |
-| [[p11_fb_churn_prevention_playbook]] | related | 0.34 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |
 | [[bld_schema_churn_prevention_playbook]] | related | 0.29 |

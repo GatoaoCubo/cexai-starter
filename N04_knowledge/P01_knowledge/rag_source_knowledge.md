@@ -21,10 +21,7 @@ extraction_method: "file_glob"
 density_score: null
 related:
   - bld_memory_rag_source
-  - bld_collaboration_rag_source
   - bld_architecture_rag_source
-  - bld_knowledge_card_rag_source
-  - p03_ins_rag_source
   - p01_gl_rag
   - rag_source_supabase
   - retriever_config_knowledge
@@ -100,7 +97,6 @@ The `retriever_config` boosts this source when the user's query contains:
 | [[bld_orchestration_rag_source]] | related | 0.28 |
 | [[bld_architecture_rag_source]] | related | 0.26 |
 | [[bld_knowledge_rag_source]] | related | 0.25 |
-| [[p03_ins_rag_source]] | related | 0.25 |
 | [[p01_gl_rag]] | upstream | 0.32 |
 | rag_source_supabase | sibling | 0.50 |
 | retriever_config_knowledge | downstream | 0.40 |

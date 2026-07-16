@@ -19,10 +19,6 @@ keywords: [unidirectional api consumer specification, api client construction, k
 density_score: 0.90
 related:
   - api-client-builder
-  - p10_lr_client_builder
-  - bld_instruction_client
-  - bld_config_client
-  - bld_collaboration_client
 ---
 # Domain Knowledge: client
 ## Executive Summary
@@ -80,7 +76,3 @@ Clients are unidirectional API consumers that send requests and receive response
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[api-client-builder]] | downstream | 0.49 |
-| [[p10_lr_client_builder]] | downstream | 0.46 |
-| [[bld_instruction_client]] | downstream | 0.41 |
-| [[bld_config_client]] | downstream | 0.36 |
-| [[bld_collaboration_client]] | downstream | 0.35 |

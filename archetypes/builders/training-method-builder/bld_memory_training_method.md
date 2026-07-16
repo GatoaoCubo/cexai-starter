@@ -17,8 +17,6 @@ llm_function: INJECT
 related:
   - training-method-builder
   - bld_tools_training_method
-  - bld_knowledge_card_training_method
-  - bld_collaboration_training_method
   - bld_architecture_training_method
 ---
 # Memory: training-method-builder Learning Record
@@ -63,6 +61,4 @@ related:
 |----------|-------------|-------|
 | [[training-method-builder]] | upstream | 0.58 |
 | [[bld_tools_training_method]] | upstream | 0.55 |
-| [[bld_knowledge_card_training_method]] | upstream | 0.48 |
-| [[bld_collaboration_training_method]] | downstream | 0.47 |
 | [[bld_architecture_training_method]] | upstream | 0.42 |

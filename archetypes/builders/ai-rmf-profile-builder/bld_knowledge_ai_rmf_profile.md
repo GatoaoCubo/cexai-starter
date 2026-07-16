@@ -18,10 +18,6 @@ keywords: [ai_rmf_profile construction, ai_rmf_profile, builder, knowledge_card,
 density_score: 0.85
 related:
   - ai-rmf-profile-builder
-  - kc_ai_rmf_profile
-  - bld_instruction_ai_rmf_profile
-  - p11_qg_ai_rmf_profile
-  - bld_output_template_ai_rmf_profile
 ---
 ## Domain Overview
 The NIST AI Risk Management Framework (AI-RMF) provides a voluntary, flexible framework for organizations to manage risks associated with AI systems. Published January 2023; the GenAI Profile (AI 600-1) was released July 2024, adding 12 specific risk categories for generative AI. The Critical Infrastructure sector profile concept note appeared April 2026. Adopted by US federal agencies (NIST SP 800-series), major enterprises, and referenced by the EU-US AI Standards dialogue.
@@ -89,7 +85,3 @@ The AI-RMF organizes risk management into 4 core functions (GOVERN/MAP/MEASURE/M
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ai-rmf-profile-builder]] | downstream | 0.71 |
-| [[kc_ai_rmf_profile]] | sibling | 0.60 |
-| [[bld_instruction_ai_rmf_profile]] | downstream | 0.58 |
-| [[p11_qg_ai_rmf_profile]] | downstream | 0.51 |
-| [[bld_output_template_ai_rmf_profile]] | downstream | 0.47 |

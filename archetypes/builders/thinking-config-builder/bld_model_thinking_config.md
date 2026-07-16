@@ -26,10 +26,6 @@ author: n02_reviewer
 keywords: ["thinking config", "token budget", "reasoning budget", "extended thinking", "depth limit", "fallback strategy", "budget tier"]
 related:
   - bld_memory_thinking_config
-  - p11_qg_thinking_config
-  - bld_knowledge_card_thinking_config
-  - bld_collaboration_thinking_config
-  - bld_instruction_thinking_config
 ---
 ## Identity
 ## Identity
@@ -104,7 +100,3 @@ Deliver a `thinking_config` artifact with this structure:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_thinking_config]] | downstream | 0.53 |
-| [[p11_qg_thinking_config]] | downstream | 0.51 |
-| [[bld_knowledge_card_thinking_config]] | upstream | 0.44 |
-| [[bld_collaboration_thinking_config]] | downstream | 0.42 |
-| [[bld_instruction_thinking_config]] | upstream | 0.42 |

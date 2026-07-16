@@ -33,11 +33,8 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_router
   - bld_architecture_router
   - bld_memory_router
-  - bld_knowledge_card_router
-  - p11_qg_router
 ---
 ## Identity
 
@@ -129,4 +126,3 @@ Deliver a `router` artifact with this structure:
 | [[bld_architecture_router]] | downstream | 0.62 |
 | [[bld_memory_router]] | downstream | 0.57 |
 | [[bld_knowledge_router]] | related | 0.54 |
-| [[p11_qg_router]] | downstream | 0.52 |

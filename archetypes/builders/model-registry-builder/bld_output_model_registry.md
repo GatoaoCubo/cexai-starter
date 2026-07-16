@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [model_registry construction, output template model registry, model_registry, builder, output_template, model display name, model metadata, performance metrics, deployment information, models llama]
 density_score: 0.85
-related:
-  - bld_instruction_model_registry
-  - bld_knowledge_card_model_registry
-  - p11_qg_model_registry
-  - bld_collaboration_model_registry
-  - kc_model_registry
 ---
 ```yaml
 id: p10_mr_{{model_name_slug}}_{{version_slug}}
@@ -91,12 +85,3 @@ tldr: "{{model_name}} v{{version}} -- {{task description, e.g., instruction-tune
 | :--- | :--- | :--- | :--- |
 | {{YYYY-MM-DD}} | Experimental | `{{nucleus or person}}` | {{e.g., initial registration}} |
 | {{YYYY-MM-DD}} | Staging | {{e.g., N05 Operations}} | {{e.g., passed eval gate H09-H14}} |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_model_registry]] | upstream | 0.41 |
-| [[bld_knowledge_card_model_registry]] | upstream | 0.31 |
-| [[p11_qg_model_registry]] | downstream | 0.30 |
-| [[bld_collaboration_model_registry]] | downstream | 0.29 |
-| [[kc_model_registry]] | upstream | 0.28 |

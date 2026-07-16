@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [prosody_config construction, instruction prosody config, map emotions, prosody_config, builder, instruction, ssml, baseline, emotions:, ssml:]
 density_score: 0.90
-related:
-  - bld_output_template_prosody_config
-  - p09_qg_prosody_config
-  - bld_knowledge_card_prosody_config
-  - hybrid_review2_n03
-  - p10_lr_prosody_config_builder
 ---
 ## Phase 1: RESEARCH
 1. Identify target tts_provider(s) -- SSML-compliant (Azure/Google/AWS/IBM) vs native-only (ElevenLabs/Cartesia/Hume/PlayHT).
@@ -53,12 +47,3 @@ related:
 - [ ] At least one emotion variant differs measurably from baseline.
 - [ ] `target_providers` declared and reachable via tts_provider artifacts.
 - [ ] Round-trip render test passes on primary target provider.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_prosody_config]] | downstream | 0.55 |
-| [[p09_qg_prosody_config]] | downstream | 0.45 |
-| [[bld_knowledge_card_prosody_config]] | upstream | 0.43 |
-| [[hybrid_review2_n03]] | downstream | 0.42 |
-| [[p10_lr_prosody_config_builder]] | downstream | 0.24 |

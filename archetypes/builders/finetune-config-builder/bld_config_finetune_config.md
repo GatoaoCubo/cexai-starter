@@ -28,11 +28,9 @@ updated: "2026-04-13"
 keywords: [naming conventions, file paths, size limits, operational constraints, finetune_config construction, config finetune config, adapter enums, task enums, finetune_config, builder]
 density_score: 0.90
 related:
-  - p01_kc_finetune_config
   - bld_schema_finetune_config
   - bld_config_memory_scope
   - bld_config_prompt_version
-  - kc_training_method
 ---
 # Config: finetune_config Production Rules
 ## Naming Convention
@@ -97,8 +95,6 @@ python _tools/cex_score.py --apply bld_config_finetune_config.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_finetune_config]] | upstream | 0.32 |
 | [[bld_schema_finetune_config]] | upstream | 0.31 |
 | [[bld_config_memory_scope]] | sibling | 0.29 |
 | [[bld_config_prompt_version]] | sibling | 0.28 |
-| [[kc_training_method]] | upstream | 0.28 |

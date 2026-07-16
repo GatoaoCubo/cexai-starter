@@ -27,10 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - handoff-builder
-  - bld_knowledge_card_handoff
-  - p01_kc_handoff
-  - bld_instruction_handoff
-  - p12_ho_admin_template
 ---
 ## Summary
 Handoff documents are the primary transfer interface between agents. Document quality determines whether the receiving agent executes correctly or drifts. The two highest-leverage structural elements are: (1) a SCOPE FENCE section with explicit permitted and prohibited paths, and (2) numbered atomic task steps each containing exactly one action verb.
@@ -61,7 +57,3 @@ Pattern emerged from execution logs where agents caused unintended side effects 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[handoff-builder]] | downstream | 0.39 |
-| [[bld_knowledge_card_handoff]] | upstream | 0.36 |
-| [[p01_kc_handoff]] | downstream | 0.35 |
-| [[bld_instruction_handoff]] | upstream | 0.32 |
-| [[p12_ho_admin_template]] | downstream | 0.29 |

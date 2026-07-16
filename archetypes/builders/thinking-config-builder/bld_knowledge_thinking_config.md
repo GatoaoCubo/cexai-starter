@@ -20,10 +20,7 @@ this, key concepts, token budget, thinking depth, anthropic claude]
 density_score: 0.85
 related:
   - thinking-config-builder
-  - kc_thinking_config
   - bld_memory_thinking_config
-  - p01_kc_cost_budget
-  - p11_qg_thinking_config
 ---
 ## Domain Overview
 
@@ -81,7 +78,4 @@ Thinking_config artifacts define parameters governing AI system resource allocat
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[thinking-config-builder]] | downstream | 0.45 |
-| [[kc_thinking_config]] | sibling | 0.43 |
 | [[bld_memory_thinking_config]] | downstream | 0.33 |
-| [[p01_kc_cost_budget]] | sibling | 0.32 |
-| [[p11_qg_thinking_config]] | downstream | 0.32 |

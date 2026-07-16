@@ -31,10 +31,6 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_client
-  - bld_instruction_client
-  - bld_knowledge_card_client
-  - p01_kc_api_client
   - db-connector-builder
 ---
 ## Identity

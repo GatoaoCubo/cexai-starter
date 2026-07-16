@@ -19,9 +19,6 @@ keywords: [bugloop construction, instruction bugloop, bugloop, builder, examples
 density_score: 0.90
 related:
   - bugloop-builder
-  - p11_qg_bugloop
-  - bld_output_template_bugloop
-  - bld_knowledge_card_bugloop
   - bld_config_bugloop
 ---
 # Instructions: How to Produce a bugloop
@@ -59,7 +56,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bugloop-builder]] | downstream | 0.43 |
-| [[p11_qg_bugloop]] | downstream | 0.40 |
-| [[bld_output_template_bugloop]] | downstream | 0.37 |
-| [[bld_knowledge_card_bugloop]] | upstream | 0.37 |
 | [[bld_config_bugloop]] | downstream | 0.33 |

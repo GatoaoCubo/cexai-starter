@@ -23,8 +23,6 @@ updated: '2026-03-27'
 density_score: 0.85
 related:
   - signal-builder
-  - bld_knowledge_card_signal
-  - p03_ins_signal_builder
   - bld_architecture_signal
   - bld_schema_signal
 ---

@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - formatter-builder
   - bld_architecture_formatter
-  - bld_collaboration_input_schema
-  - bld_collaboration_response_format
-  - bld_collaboration_few_shot_example
 ---
 # Collaboration: formatter-builder
 ## My Role in Crews

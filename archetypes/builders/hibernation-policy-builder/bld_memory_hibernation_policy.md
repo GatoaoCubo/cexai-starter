@@ -17,10 +17,7 @@ updated: "2026-04-18"
 keywords: [hibernation_policy construction, hibernation_policy builder, hibernation_policy, builder, memory, memory hooks, memory anti, related artifacts, upstream, entity_memory]
 density_score: 0.90
 related:
-  - bld_collaboration_memory_type
   - bld_memory_terminal_backend
-  - p01_kc_memory_scope
-  - p01_kc_memory_persistence
   - bld_memory_default
 ---
 ## hibernation_policy Memory Hooks
@@ -47,8 +44,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_type]] | downstream | 0.38 |
 | [[bld_memory_terminal_backend]] | related | 0.33 |
-| [[p01_kc_memory_scope]] | upstream | 0.32 |
-| [[p01_kc_memory_persistence]] | upstream | 0.31 |
 | [[bld_memory_default]] | related | 0.31 |

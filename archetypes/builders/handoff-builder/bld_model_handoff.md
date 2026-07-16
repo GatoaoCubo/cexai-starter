@@ -29,11 +29,8 @@ llm_function: BECOME
 parent: null
 8f: "F8_collaborate"
 related:
-  - bld_collaboration_handoff
   - handoff-protocol-builder
-  - p01_kc_handoff
   - bld_architecture_handoff
-  - bld_collaboration_handoff_protocol
 ---
 ## Identity
 
@@ -134,8 +131,5 @@ Maximum document size: 600 lines. Use headers for task steps, not prose paragrap
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_handoff]] | related | 0.54 |
 | [[handoff-protocol-builder]] | sibling | 0.44 |
-| [[p01_kc_handoff]] | related | 0.44 |
 | [[bld_architecture_handoff]] | upstream | 0.43 |
-| [[bld_collaboration_handoff_protocol]] | related | 0.39 |

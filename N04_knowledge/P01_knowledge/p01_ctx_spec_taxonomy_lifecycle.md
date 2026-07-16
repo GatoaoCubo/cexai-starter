@@ -15,10 +15,7 @@ density_score: 1.0
 updated: "2026-07-05"
 related:
   - p01_kc_cex_llm_vocabulary_whitepaper
-  - bld_knowledge_card_capability_registry
-  - p01_kc_atom_23_multiagent_protocols
   - p01_kc_llm_vocabulary_atlas
-  - p01_kc_taxonomy_completeness_audit
   - p01_ctx_spec_taxonomy_lifecycle_ai2ai_deep
 ---
 

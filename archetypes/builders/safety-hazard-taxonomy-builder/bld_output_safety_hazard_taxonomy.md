@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [safety_hazard_taxonomy construction, safety_hazard_taxonomy, builder, output_template, mlcommons, ailuminate, llama-guard, hazard-category, cbrn, severity-level]
 density_score: 0.85
 related:
-  - bld_instruction_safety_hazard_taxonomy
-  - bld_knowledge_card_safety_hazard_taxonomy
   - bld_schema_safety_hazard_taxonomy
   - safety-hazard-taxonomy-builder
-  - p11_qg_safety_hazard_taxonomy
 ---
 ```markdown
 ---
@@ -97,8 +94,5 @@ author: "{{author}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_safety_hazard_taxonomy]] | upstream | 0.66 |
-| [[bld_knowledge_card_safety_hazard_taxonomy]] | upstream | 0.63 |
 | [[bld_schema_safety_hazard_taxonomy]] | downstream | 0.63 |
 | [[safety-hazard-taxonomy-builder]] | downstream | 0.60 |
-| [[p11_qg_safety_hazard_taxonomy]] | downstream | 0.57 |

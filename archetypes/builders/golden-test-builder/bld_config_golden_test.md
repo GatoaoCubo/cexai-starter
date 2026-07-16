@@ -30,7 +30,6 @@ density_score: 0.90
 related:
   - bld_config_quality_gate
   - bld_config_retriever_config
-  - bld_output_template_golden_test
   - bld_config_memory_scope
   - bld_config_prompt_version
 ---
@@ -85,6 +84,5 @@ python _tools/cex_score.py --apply bld-config-golden-test.md
 |----------|-------------|-------|
 | bld_config_quality_gate | sibling | 0.42 |
 | [[bld_config_retriever_config]] | sibling | 0.39 |
-| [[bld_output_template_golden_test]] | upstream | 0.37 |
 | [[bld_config_memory_scope]] | sibling | 0.37 |
 | [[bld_config_prompt_version]] | sibling | 0.36 |

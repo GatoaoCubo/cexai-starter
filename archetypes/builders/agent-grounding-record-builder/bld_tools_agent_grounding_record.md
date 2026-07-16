@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_config_agent_grounding_record
   - bld_architecture_agent_grounding_record
-  - bld_quality_gate_agent_grounding_record
-  - bld_collaboration_agent_grounding_record
-  - bld_manifest_agent_grounding_record
 ---
 # Agent Grounding Record Builder -- Tools
 
@@ -110,6 +107,3 @@ else:
 |----------|-------------|-------|
 | [[bld_config_agent_grounding_record]] | downstream | 0.47 |
 | [[bld_architecture_agent_grounding_record]] | downstream | 0.33 |
-| [[bld_quality_gate_agent_grounding_record]] | downstream | 0.32 |
-| [[bld_collaboration_agent_grounding_record]] | downstream | 0.30 |
-| [[bld_manifest_agent_grounding_record]] | downstream | 0.25 |

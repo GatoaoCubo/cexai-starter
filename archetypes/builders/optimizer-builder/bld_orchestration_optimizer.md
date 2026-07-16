@@ -19,10 +19,7 @@ keywords: [optimizer construction, collaboration optimizer, optimizer, builder, 
 density_score: 0.90
 related:
   - optimizer-builder
-  - p11_qg_optimizer
   - bld_architecture_optimizer
-  - p03_ins_optimizer
-  - n00_optimizer_manifest
 ---
 # Collaboration: optimizer-builder
 ## My Role in Crews
@@ -72,7 +69,4 @@ I define continuous improvement cycles: metric targets, tripartite thresholds (t
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[optimizer-builder]] | related | 0.45 |
-| [[p11_qg_optimizer]] | related | 0.40 |
 | [[bld_architecture_optimizer]] | upstream | 0.40 |
-| [[p03_ins_optimizer]] | upstream | 0.37 |
-| [[n00_optimizer_manifest]] | related | 0.36 |

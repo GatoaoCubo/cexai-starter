@@ -26,11 +26,7 @@ title: "Memory Chunk Strategy"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p10_lr_retriever_config_builder
-  - bld_knowledge_card_chunk_strategy
   - chunk-strategy-builder
-  - p10_lr_output_validator_builder
-  - p10_lr_handoff_protocol_builder
 ---
 ## Summary
 Chunking method configuration — how to split documents into retrievable segments. The difference between a useful chunk_strategy and a useless one is concrete values
@@ -78,8 +74,5 @@ python _tools/cex_score.py --apply p10-lr-chunk-strategy-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_retriever_config_builder]] | sibling | 0.46 |
 | [[bld_knowledge_chunk_strategy]] | upstream | 0.45 |
 | [[chunk-strategy-builder]] | upstream | 0.42 |
-| [[p10_lr_output_validator_builder]] | sibling | 0.41 |
-| [[p10_lr_handoff_protocol_builder]] | sibling | 0.40 |

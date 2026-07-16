@@ -28,8 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, lens construction, config lens, lens, builder, examples, "p02_lens_{perspective_slug}.yaml"]
 density_score: 0.90
 related:
-  - p03_ins_lens
-  - bld_collaboration_lens
   - bld_memory_lens
   - bld_architecture_lens
   - lens-builder
@@ -78,7 +76,6 @@ python _tools/cex_score.py --apply bld-config-lens.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_lens]] | upstream | 0.38 |
 | [[bld_orchestration_lens]] | upstream | 0.37 |
 | [[bld_memory_lens]] | downstream | 0.37 |
 | [[bld_architecture_lens]] | upstream | 0.36 |

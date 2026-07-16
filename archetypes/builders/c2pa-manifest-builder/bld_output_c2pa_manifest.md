@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [pa_manifest production, pa_manifest construction, output template c, pa manifest, c2pa_manifest, builder, output_template, c2pa, claim, assertion]
 density_score: 0.85
 related:
-  - bld_instruction_c2pa_manifest
-  - bld_knowledge_card_c2pa_manifest
   - c2pa-manifest-builder
-  - p10_lr_c2pa_manifest_builder
   - bld_tools_c2pa_manifest
 ---
 ```yaml
@@ -113,8 +110,5 @@ updated: "{{date}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_c2pa_manifest]] | upstream | 0.54 |
-| [[bld_knowledge_card_c2pa_manifest]] | upstream | 0.51 |
 | [[c2pa-manifest-builder]] | downstream | 0.47 |
-| [[p10_lr_c2pa_manifest_builder]] | downstream | 0.45 |
 | [[bld_tools_c2pa_manifest]] | upstream | 0.44 |

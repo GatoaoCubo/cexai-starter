@@ -16,9 +16,6 @@ density_score: 0.81
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_manifest_constitutional_rule
-  - bld_rules_process_manager
-  - bld_rules_value_object
   - guardrail-builder
   - kc_constitutional_rule
 ---
@@ -77,7 +74,6 @@ python _tools/cex_doctor.py --scope orchestration
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_constitutional_rule]] | sibling | 0.35 |
 | bld_rules_process_manager | sibling | 0.34 |
 | bld_rules_value_object | sibling | 0.32 |
 | [[guardrail-builder]] | related | 0.32 |

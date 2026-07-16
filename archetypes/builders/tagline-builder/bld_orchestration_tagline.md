@@ -20,7 +20,6 @@ related:
   - bld_architecture_tagline
   - bld_tools_tagline
   - bld_memory_tagline
-  - bld_collaboration_landing_page
   - tagline-builder
 ---
 # Collaboration: Tagline Builder

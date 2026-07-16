@@ -19,9 +19,6 @@ copy, flag aug, conformity assessment, aug- deadline]
 density_score: 0.85
 related:
   - bld_config_conformity_assessment
-  - bld_collaboration_conformity_assessment
-  - bld_quality_gate_conformity_assessment
-  - bld_collaboration_prompt_template
   - bld_memory_conformity_assessment
 ---
 # Conformity Assessment Builder -- Output Template
@@ -49,7 +46,4 @@ provider_name: "{{PROVIDER_NAME}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_conformity_assessment]] | downstream | 0.24 |
-| [[bld_collaboration_conformity_assessment]] | downstream | 0.24 |
-| [[bld_quality_gate_conformity_assessment]] | downstream | 0.20 |
-| [[bld_collaboration_prompt_template]] | upstream | 0.20 |
 | [[bld_memory_conformity_assessment]] | downstream | 0.20 |

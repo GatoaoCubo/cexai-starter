@@ -18,11 +18,7 @@ updated: "2026-07-07"
 keywords: [naming discrepancy, output template, reflexive usage, quality-gate, output-template, iso9, canonical id pattern]
 density_score: 0.87
 related:
-  - bld_instruction_output_template
   - bld_schema_output_template
-  - bld_knowledge_card_output_template
-  - p11_qg_field_manifest
-  - p10_lr_output_template_builder
 ---
 ## Quality Gate
 
@@ -141,4 +137,3 @@ row R-299 explicitly forbids; the convention choice must be disclosed, not just 
 | [[bld_schema_output_template]] | sibling | 0.42 |
 | [[bld_knowledge_output_template]] | sibling | 0.40 |
 | p11_qg_field_manifest | related | 0.36 |
-| [[p10_lr_output_template_builder]] | downstream | 0.33 |

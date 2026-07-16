@@ -17,9 +17,7 @@ updated: "2026-04-14"
 keywords: [usage_report construction, output template usage report, usage_report, builder, output_template, <!-- insert code snippet here -->, total users, session count, peak load, code example]
 density_score: 0.85
 related:
-  - bld_output_template_playground_config
   - bld_schema_usage_report
-  - bld_output_template_sales_playbook
   - bld_architecture_usage_report
   - bld_architecture_eval_metric
 ---

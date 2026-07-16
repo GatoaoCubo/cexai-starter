@@ -18,11 +18,8 @@ updated: "2026-04-18"
 keywords: [workspace instruction auto-injection, collaboration protocol for context-file-builder, crew roles, handoff protocol, downstream builders, context_file, builder, collaboration, hermes_origin, "### crew: nucleus setup"]
 density_score: 0.90
 related:
- - bld_collaboration_system_prompt
  - context-file-builder
- - n00_context_file_manifest
  - kc_context_file
- - bld_collaboration_agent
 ---
 # Collaboration: context-file-builder
 

@@ -19,9 +19,7 @@ density_score: 0.90
 related:
   - output-validator-builder
   - bld_architecture_constraint_spec
-  - p01_kc_output_validator
   - constraint-spec-builder
-  - bld_output_template_output_validator
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -89,4 +87,3 @@ python _tools/cex_score.py --apply bld-architecture-output-validator.md
 | [[bld_architecture_constraint_spec]] | sibling | 0.44 |
 | [[kc_output_validator]] | upstream | 0.36 |
 | [[constraint-spec-builder]] | upstream | 0.36 |
-| [[bld_output_template_output_validator]] | upstream | 0.35 |

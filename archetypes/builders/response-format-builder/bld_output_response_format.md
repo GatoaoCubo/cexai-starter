@@ -18,11 +18,9 @@ updated: "2026-04-07"
 keywords: [template with, for response_format production, response format construction, output template response format, response_format, builder, examples, "{{format_type}}", "{{complete_example_showing_expected_shape}}", output template]
 density_score: 0.90
 related:
-  - bld_output_template_validation_schema
   - response-format-builder
   - bld_schema_response_format
   - bld_config_response_format
-  - p11_qg_response_format
 ---
 # Output Template: response_format
 ```yaml

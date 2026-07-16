@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [bias_audit construction, knowledge card bias audit, stereoset benchmarks, nyc ll, colorado ai act, eu ai act articles, and commercial audit-as-product framing]
 density_score: 0.93
 related:
-  - n06_audit_bias_audit_builder
-  - p07_qg_bias_audit
-  - kc_bias_audit
   - bld_tools_bias_audit
-  - n00_bias_audit_manifest
 ---
 ## Domain Overview
 
@@ -96,8 +92,4 @@ Required public summary fields:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n06_audit_bias_audit_builder]] | downstream | 0.52 |
-| [[p07_qg_bias_audit]] | downstream | 0.42 |
-| [[kc_bias_audit]] | sibling | 0.38 |
 | [[bld_tools_bias_audit]] | downstream | 0.35 |
-| [[n00_bias_audit_manifest]] | sibling | 0.33 |

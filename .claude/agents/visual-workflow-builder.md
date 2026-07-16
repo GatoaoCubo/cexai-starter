@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_visual_workflow
-  - n00_visual_workflow_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
   - workflow-builder
 ---
 
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_visual_workflow]] | related | 0.33 |
-| [[n00_visual_workflow_manifest]] | related | 0.33 |
 | [[kind-builder]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[workflow-builder]] | related | 0.29 |

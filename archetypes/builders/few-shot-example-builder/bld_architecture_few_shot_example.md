@@ -17,11 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of few_shot_example, and architectural position, few shot example construction, architecture few shot example, few_shot_example, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - p11_qg_few_shot_example
   - few-shot-example-builder
-  - n00_few_shot_example_manifest
-  - p10_lr_few_shot_example_builder
-  - bld_instruction_few_shot_example
 ---
 
 ## Component Inventory
@@ -71,8 +67,6 @@ golden_test (P07)    --depends-->  few_shot_example
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_few_shot_example]] | downstream | 0.45 |
 | [[few-shot-example-builder]] | upstream | 0.42 |
 | n00_few_shot_example_manifest | upstream | 0.38 |
-| [[p10_lr_few_shot_example_builder]] | downstream | 0.34 |
 | [[bld_prompt_few_shot_example]] | upstream | 0.33 |

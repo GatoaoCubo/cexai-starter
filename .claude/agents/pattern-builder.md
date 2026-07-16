@@ -4,10 +4,7 @@ description: "Builds ONE pattern artifact via 8F pipeline. Loads pattern-builder
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p06_td_cex_artifact_type_n03
   - system-prompt-builder
 ---
 

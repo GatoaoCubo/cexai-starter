@@ -18,10 +18,7 @@ keywords: [component map of reverse_prompt, architecture reverse prompt, reverse
 density_score: 0.90
 related:
   - reverse-prompt-builder
-  - bld_knowledge_card_reverse_prompt
   - bld_memory_reverse_prompt
-  - p03_ins_reverse_prompt
-  - bld_collaboration_reverse_prompt
 ---
 # Architecture: reverse_prompt in the CEX
 ## Component Inventory (REAL, from GitReverseSynthesizer)
@@ -70,7 +67,4 @@ reverse_prompt --judged_by--> rubric_reverse_prompt_equivalence (C1-C5)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reverse-prompt-builder]] | upstream | 0.53 |
-| [[bld_knowledge_card_reverse_prompt]] | upstream | 0.50 |
 | [[bld_memory_reverse_prompt]] | downstream | 0.49 |
-| [[p03_ins_reverse_prompt]] | upstream | 0.45 |
-| [[bld_collaboration_reverse_prompt]] | upstream | 0.42 |

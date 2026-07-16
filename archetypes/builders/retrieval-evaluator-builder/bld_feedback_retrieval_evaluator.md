@@ -16,11 +16,7 @@ density_score: 0.85
 created: "2026-04-23"
 updated: "2026-04-23"
 related:
-  - p11_fb_quality_gate
-  - p11_fb_eval_metric
   - bld_feedback_few_shot_example
-  - p11_fb_pipeline_template
-  - p11_fb_domain_event
 ---
 # Feedback: Retrieval Evaluator
 
@@ -88,8 +84,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_quality_gate]] | sibling | 0.48 |
-| [[p11_fb_eval_metric]] | sibling | 0.47 |
 | [[bld_feedback_few_shot_example]] | sibling | 0.47 |
-| [[p11_fb_pipeline_template]] | sibling | 0.47 |
-| [[p11_fb_domain_event]] | sibling | 0.46 |

@@ -18,10 +18,6 @@ keywords: [fintech_vertical construction, quality gate fintech vertical, fintech
 density_score: 0.85
 related:
   - fintech-vertical-builder
-  - p10_mem_fintech_vertical_builder
-  - bld_instruction_fintech_vertical
-  - bld_knowledge_card_fintech_vertical
-  - p01_kc_fintech_vertical
 ---
 ## Quality Gate
 

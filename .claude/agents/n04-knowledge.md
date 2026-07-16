@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - nucleus_def_n04
   - agent_card_n04
-  - p10_pm_n04_knowledge
-  - n07-orchestrator
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_crew. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
@@ -140,5 +138,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[nucleus_def_n04]] | primary | 0.90 |
 | [[agent_card_n04]] | upstream | 0.60 |
-| [[p10_pm_n04_knowledge]] | upstream | 0.40 |
 | n07-orchestrator | related | 0.35 |

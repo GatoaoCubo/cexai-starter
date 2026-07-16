@@ -20,11 +20,8 @@ successful, evidence
 reviewed, related artifacts, comparison logic]
 density_score: 0.85
 related:
-  - bld_instruction_roi_calculator
   - roi-calculator-builder
-  - p11_qg_roi_calculator
   - kc_roi_calculator
-  - bld_knowledge_card_roi_calculator
 ---
 ## Observation
 Common issues include inconsistent formula definitions, missing TCO comparison logic, and unclear input parameter boundaries, leading to misaligned economic buyer expectations.
@@ -47,6 +44,5 @@ Reviewed artifacts from Q3 2023 demonstrated 30% faster validation when TCO was 
 |----------|-------------|-------|
 | [[bld_prompt_roi_calculator]] | upstream | 0.47 |
 | [[roi-calculator-builder]] | downstream | 0.41 |
-| [[p11_qg_roi_calculator]] | downstream | 0.34 |
 | [[kc_roi_calculator]] | upstream | 0.32 |
 | [[bld_knowledge_roi_calculator]] | upstream | 0.29 |

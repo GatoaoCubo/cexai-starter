@@ -18,9 +18,6 @@ keywords: [drift detector construction, collaboration drift detector, drift_dete
 density_score: 0.90
 related:
   - drift-detector-builder
-  - p01_kc_drift_detector
-  - bld_instruction_drift_detector
-  - bld_knowledge_card_drift_detector
   - bld_architecture_drift_detector
 ---
 # Collaboration: drift-detector-builder
@@ -87,7 +84,4 @@ I produce the runtime monitoring configuration that keeps a deployed model's beh
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[drift-detector-builder]] | upstream | 0.43 |
-| [[p01_kc_drift_detector]] | upstream | 0.36 |
-| [[bld_instruction_drift_detector]] | upstream | 0.36 |
-| [[bld_knowledge_card_drift_detector]] | upstream | 0.35 |
 | [[bld_architecture_drift_detector]] | upstream | 0.33 |

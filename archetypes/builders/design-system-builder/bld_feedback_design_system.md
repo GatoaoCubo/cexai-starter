@@ -17,9 +17,6 @@ density_score: 0.88
 related:
   - bld_eval_design_system
   - bld_memory_design_system
-  - um_founder_taste
-  - p03_ps_design_system_library_scale
-  - p06_vs_design_system
 ---
 
 # Feedback: design_system signals

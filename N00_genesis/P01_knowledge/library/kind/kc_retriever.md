@@ -24,8 +24,6 @@ related:
   - bld_architecture_retriever
   - retriever-builder
   - bld_memory_retriever
-  - n00_retriever_manifest
-  - bld_knowledge_card_retriever_config
 ---
 
 # Retriever

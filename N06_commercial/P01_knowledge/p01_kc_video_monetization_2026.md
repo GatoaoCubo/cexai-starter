@@ -20,16 +20,7 @@ long_tails:
   - "what are the viable video monetization paths for a solo creator in 2026"
   - "what is the fastest way for a creator to make their first 1000 dollars"
 related:
-  - n06_funnel_cex_product
-  - p01_ctx_monetization_audit_n06_2026_04_08
-  - n06_roi_content_factory
-  - p01_kc_brand_monetization_models
   - p01_kc_ai_saas_monetization
-  - p01_ctx_strategy_claude_native_n06
-  - n06_content_factory_pricing
-  - n06_funnel_content_factory
-  - n06_api_access_pricing
-  - p10_ax_commercial_n06
 ---
 
 # Video Monetization Paths 2026

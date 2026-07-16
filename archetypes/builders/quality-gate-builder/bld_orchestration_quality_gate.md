@@ -19,10 +19,6 @@ keywords: [quality gate construction, collaboration quality gate, quality_gate, 
 density_score: 0.90
 related:
   - quality-gate-builder
-  - bld_collaboration_scoring_rubric
-  - bld_collaboration_validator
-  - p03_ins_quality_gate
-  - bld_knowledge_card_quality_gate
 ---
 # Collaboration: quality-gate-builder
 ## My Role in Crews
@@ -75,7 +71,3 @@ I define HARD gates (block on fail) and SOFT gates (score contribution) with num
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[quality-gate-builder]] | related | 0.36 |
-| [[bld_collaboration_scoring_rubric]] | sibling | 0.35 |
-| [[bld_collaboration_validator]] | sibling | 0.32 |
-| [[p03_ins_quality_gate]] | related | 0.30 |
-| [[bld_knowledge_card_quality_gate]] | related | 0.30 |

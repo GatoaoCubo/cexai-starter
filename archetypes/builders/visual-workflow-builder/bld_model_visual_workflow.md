@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - kc_visual_workflow
-  - p10_mem_visual_workflow_builder
-  - bld_collaboration_workflow_node
   - workflow-node-builder
-  - bld_knowledge_card_visual_workflow
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER support backend logic execution or API call configuration within the edito
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_visual_workflow]] | upstream | 0.62 |
-| [[p10_mem_visual_workflow_builder]] | upstream | 0.53 |
-| [[bld_collaboration_workflow_node]] | related | 0.52 |
 | [[workflow-node-builder]] | sibling | 0.51 |
-| [[bld_knowledge_card_visual_workflow]] | upstream | 0.47 |

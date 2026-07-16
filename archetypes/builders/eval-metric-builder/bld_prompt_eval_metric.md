@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [eval_metric construction, instruction eval metric, eval_metric, builder, instruction, p07_<domain>_<measure>, description, formula, related artifacts, governance goals]
 density_score: 0.85
-related:
-  - bld_instruction_eval_framework
-  - bld_instruction_judge_config
-  - bld_instruction_reward_model
-  - bld_instruction_search_strategy
-  - bld_instruction_playground_config
 ---
 ## Phase 1: RESEARCH  
 1. Identify domain-specific KPIs aligned with P07 governance goals.  

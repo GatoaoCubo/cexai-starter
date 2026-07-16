@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [expansion_play construction, output template expansion play, expansion_play, builder, output_template, upsell, land-and-expand, expansion play, expansion trigger, time window]
 density_score: 0.85
 related:
-  - bld_instruction_expansion_play
   - bld_schema_expansion_play
-  - p03_qg_expansion_play
-  - bld_knowledge_card_expansion_play
   - expansion-play-builder
 ---
 ```markdown
@@ -98,8 +95,5 @@ tldr: "{{expansion_type}} play for {{account_name}} targeting {{expansion_ARR}} 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_expansion_play]] | upstream | 0.57 |
 | [[bld_schema_expansion_play]] | downstream | 0.56 |
-| [[p03_qg_expansion_play]] | downstream | 0.49 |
-| [[bld_knowledge_card_expansion_play]] | upstream | 0.47 |
 | [[expansion-play-builder]] | upstream | 0.42 |

@@ -32,11 +32,7 @@ keywords:
   - "{{required|optional}}):"
 density_score: 0.90
 related:
-  - p03_ins_mcp_server
   - mcp-server-builder
-  - p11_qg_mcp_server
-  - bld_output_template_function_def
-  - bld_knowledge_card_mcp_server
 ---
 # Output Template: mcp_server
 ```yaml
@@ -116,8 +112,5 @@ Auth: `{{auth_method_and_config}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_mcp_server]] | upstream | 0.41 |
 | [[mcp-server-builder]] | upstream | 0.38 |
-| [[p11_qg_mcp_server]] | downstream | 0.37 |
-| [[bld_output_template_function_def]] | sibling | 0.36 |
 | [[bld_knowledge_mcp_server]] | upstream | 0.36 |

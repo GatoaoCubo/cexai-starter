@@ -22,9 +22,6 @@ density_score: 0.89
 related:
  - rlp_{{name}}
  - revision-loop-policy-builder
- - n00_revision_loop_policy_manifest
- - p11_ins_revision_loop_policy
- - kc_revision_loop_policy
 ---
 ## Output Shape
 

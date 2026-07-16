@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [roi_calculator construction, quality gate roi calculator, roi_calculator, builder, quality_gate, quality gate, fail condition, scoring guide, golden example, cloud migration]
 density_score: 0.85
 related:
-  - bld_instruction_roi_calculator
   - kc_roi_calculator
   - roi-calculator-builder
-  - p10_mem_roi_calculator_builder
-  - bld_knowledge_card_roi_calculator
 ---
 ## Quality Gate
 

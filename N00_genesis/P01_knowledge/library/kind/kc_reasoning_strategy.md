@@ -12,10 +12,6 @@ keywords: [chain-of-thought, tree of thoughts, logical inference, conclusion val
 density_score: 0.94
 related:
   - reasoning-strategy-builder
-  - bld_instruction_reasoning_strategy
-  - p01_kc_chain_of_thought
-  - bld_knowledge_card_reasoning_strategy
-  - p03_qg_reasoning_strategy
 ---
 
 # Reasoning Strategy

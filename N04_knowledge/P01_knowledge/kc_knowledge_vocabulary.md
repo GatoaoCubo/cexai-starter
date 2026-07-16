@@ -18,9 +18,6 @@ tldr: "N04 controlled vocabulary: 26 canonical terms for knowledge management an
 keywords: [retrieval_augmented_generation, dense_retrieval, sparse_retrieval, bm25, faiss, cosine_similarity, embedding_space, document_chunking, named_entity_recognition, topological_sort, wikilink_integrity, cross_reference_density, knowledge_distillation]
 density_score: 0.92
 related:
-  - n00_p01_kind_index
-  - p02_ap_n04_knowledge
-  - p01_kc_knowledge_management
   - bld_architecture_supabase_data_layer
 ---
 
@@ -135,7 +132,5 @@ Terms N04 must NEVER use:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_p01_kind_index]] | sibling | 0.47 |
 | p02_ap_n04_knowledge | downstream | 0.46 |
-| [[p01_kc_knowledge_management]] | sibling | 0.38 |
 | bld_architecture_supabase_data_layer | downstream | 0.37 |

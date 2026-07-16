@@ -18,10 +18,6 @@ keywords: [integration_guide construction, instruction integration guide, integr
 density_score: 0.85
 related:
   - integration-guide-builder
-  - p10_lr_integration_guide_builder
-  - kc_integration_guide
-  - bld_instruction_quickstart_guide
-  - bld_instruction_tts_provider
 ---
 ## Phase 1: RESEARCH  
 1. Gather API specifications, SDKs, and authentication protocols from platform partners.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[integration-guide-builder]] | downstream | 0.41 |
-| [[p10_lr_integration_guide_builder]] | downstream | 0.32 |
-| [[kc_integration_guide]] | upstream | 0.32 |
-| [[bld_instruction_quickstart_guide]] | sibling | 0.30 |
-| [[bld_instruction_tts_provider]] | sibling | 0.30 |

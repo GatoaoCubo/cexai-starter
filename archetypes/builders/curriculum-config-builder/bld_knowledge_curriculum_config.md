@@ -21,7 +21,6 @@ curriculum, spec table]
 density_score: 0.88
 related:
   - curriculum-config-builder
-  - kc_curriculum_config
   - bld_prompt_curriculum_config
   - bld_memory_curriculum_config
   - bld_feedback_curriculum_config
@@ -56,7 +55,6 @@ Curriculum configs define the order and proportion in which training data is pre
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[curriculum-config-builder]] | downstream | 0.56 |
-| [[kc_curriculum_config]] | sibling | 0.50 |
 | [[bld_prompt_curriculum_config]] | downstream | 0.48 |
 | [[bld_memory_curriculum_config]] | downstream | 0.46 |
 | [[bld_feedback_curriculum_config]] | downstream | 0.36 |

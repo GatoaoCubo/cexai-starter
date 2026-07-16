@@ -19,9 +19,6 @@ density_score: 0.90
 related:
   - learning-record-builder
   - bld_architecture_session_state
-  - bld_collaboration_learning_record
-  - p01_kc_cex_lp10_memory
-  - p01_kc_learning_record
 ---
 # Architecture: learning_record in the CEX
 ## Component Inventory

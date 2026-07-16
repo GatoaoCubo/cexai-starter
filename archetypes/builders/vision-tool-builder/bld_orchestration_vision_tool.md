@@ -19,10 +19,6 @@ keywords: [vision tool construction, collaboration vision tool, vision_tool, bui
 density_score: 0.90
 related:
   - vision-tool-builder
-  - bld_collaboration_browser_tool
-  - bld_instruction_vision_tool
-  - bld_collaboration_computer_use
-  - bld_collaboration_search_tool
 ---
 # Collaboration: vision-tool-builder
 ## My Role in Crews

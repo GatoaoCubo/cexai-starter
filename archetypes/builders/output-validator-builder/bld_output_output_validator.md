@@ -30,12 +30,6 @@ keywords:
   - "## failure actions"
   - "## integration"
 density_score: 0.90
-related:
-  - bld_output_template_hook_config
-  - bld_output_template_runtime_rule
-  - bld_output_template_constraint_spec
-  - bld_instruction_output_validator
-  - bld_output_template_retriever_config
 ---
 # Output Template: output_validator
 ```yaml
@@ -94,6 +88,4 @@ applies_to: "{{applies_to}}}}"
 |----------|-------------|-------|
 | bld_output_template_hook_config | sibling | 0.38 |
 | bld_output_template_runtime_rule | sibling | 0.37 |
-| [[bld_output_template_constraint_spec]] | sibling | 0.36 |
 | [[bld_prompt_output_validator]] | upstream | 0.36 |
-| [[bld_output_template_retriever_config]] | sibling | 0.35 |

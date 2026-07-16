@@ -18,10 +18,8 @@ updated: "2026-04-07"
 keywords: [template with, for knowledge_index production, knowledge index construction, output template knowledge index, knowledge_index, builder, examples, output template, brain index, algorithm config]
 density_score: 0.90
 related:
-  - p11_qg_knowledge_index
   - knowledge-index-builder
   - bld_schema_knowledge_index
-  - bld_instruction_knowledge_index
 ---
 # Output Template: knowledge_index
 ```yaml
@@ -94,7 +92,6 @@ linked_artifacts:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_knowledge_index]] | downstream | 0.36 |
 | [[knowledge-index-builder]] | downstream | 0.35 |
 | [[bld_schema_knowledge_index]] | downstream | 0.30 |
 | [[bld_prompt_knowledge_index]] | upstream | 0.29 |

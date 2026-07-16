@@ -4,10 +4,8 @@ description: "Builds ONE enterprise_sla artifact via 8F pipeline. Loads enterpri
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_enterprise_sla_manifest
   - bld_config_enterprise_sla
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_tools_enterprise_sla
 ---
 
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_enterprise_sla_manifest]] | related | 0.35 |
 | [[bld_config_enterprise_sla]] | related | 0.33 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[bld_tools_enterprise_sla]] | related | 0.28 |

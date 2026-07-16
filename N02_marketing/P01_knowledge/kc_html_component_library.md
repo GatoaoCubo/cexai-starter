@@ -13,11 +13,6 @@ tags: [knowledge, frontend, components, radix, shadcn, design-system, tailwind]
 tldr: "shadcn/ui + Radix UI component patterns: unstyled primitives, variant APIs, composition patterns, and accessibility defaults that let N02 ship production-ready UI without reinventing interaction logic."
 keywords: [class-variance-authority, cva, radix ui, dialog system, dropdown menu, aria attributes, focus management, keyboard navigation]
 density_score: 0.88
-related:
-  - p01_kc_html_component_library
-  - p01_kc_shadcn_radix_patterns
-  - n02_kc_shadcn_radix_patterns
-  - p01_kc_accessibility_a11y
 ---
 
 # shadcn/ui & Radix UI Component Library
@@ -222,5 +217,4 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 |----------|-------------|-------|
 | p01_kc_html_component_library | sibling | 0.93 |
 | p01_kc_shadcn_radix_patterns | sibling | 0.64 |
-| [[n02_kc_shadcn_radix_patterns]] | sibling | 0.59 |
 | p01_kc_accessibility_a11y | sibling | 0.18 |

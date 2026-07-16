@@ -32,9 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_env_config
-  - n00_env_config_manifest
-  - p11_qg_env_config
-  - schema_prompt_template_builder
   - env-config-builder
 ---
 # Output Template: env_config
@@ -86,6 +83,4 @@ validation: "{{validation_strategy_summary}}"
 |----------|-------------|-------|
 | [[bld_schema_env_config]] | downstream | 0.45 |
 | n00_env_config_manifest | downstream | 0.40 |
-| [[p11_qg_env_config]] | downstream | 0.37 |
-| [[schema_prompt_template_builder]] | downstream | 0.32 |
 | [[env-config-builder]] | downstream | 0.30 |

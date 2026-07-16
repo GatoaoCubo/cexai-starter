@@ -20,9 +20,6 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_collaboration_agent
-  - bld_knowledge_card_agent
-  - p01_kc_agent
   - agent-builder
   - bld_architecture_agent
 ---

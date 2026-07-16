@@ -33,7 +33,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_retriever_config
-  - bld_schema_client
   - bld_schema_handoff_protocol
   - bld_schema_memory_scope
   - bld_schema_constraint_spec
@@ -91,7 +90,6 @@ Rule: id MUST equal filename stem.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_retriever_config]] | sibling | 0.56 |
-| [[bld_schema_client]] | sibling | 0.55 |
 | [[bld_schema_handoff_protocol]] | sibling | 0.55 |
 | [[bld_schema_memory_scope]] | sibling | 0.54 |
 | [[bld_schema_constraint_spec]] | sibling | 0.54 |

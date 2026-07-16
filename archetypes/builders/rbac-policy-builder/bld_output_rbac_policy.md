@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [rbac_policy construction, output template rbac policy, frontmatter field guide, required body sections, filled example, rbac_policy, builder, output_template, quality gate checklist, pass condition]
 density_score: 0.85
 related:
-  - bld_output_template_dataset_card
-  - bld_output_template_collaboration_pattern
-  - bld_output_template_thinking_config
-  - bld_output_template_visual_workflow
   - bld_output_query_optimizer
 ---
 ```yaml
@@ -75,7 +71,6 @@ rules:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_dataset_card]] | sibling | 0.30 |
 | bld_output_template_collaboration_pattern | sibling | 0.30 |
 | bld_output_template_thinking_config | sibling | 0.29 |
 | bld_output_template_visual_workflow | sibling | 0.28 |

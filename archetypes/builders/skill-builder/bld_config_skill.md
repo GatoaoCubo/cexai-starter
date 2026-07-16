@@ -22,11 +22,9 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, skill construction, config skill, skill, builder, examples, "p04_skill_{name}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_skill
   - skill-builder
   - bld_architecture_skill
   - bld_schema_skill
-  - p11_qg_skill
 ---
 # Config: skill Production Rules
 ## Naming Convention
@@ -72,8 +70,6 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_skill]] | upstream | 0.50 |
 | [[skill-builder]] | upstream | 0.42 |
 | [[bld_architecture_skill]] | upstream | 0.41 |
 | [[bld_schema_skill]] | upstream | 0.41 |
-| [[p11_qg_skill]] | downstream | 0.38 |

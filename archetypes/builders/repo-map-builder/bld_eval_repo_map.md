@@ -26,12 +26,6 @@ keywords:
   - "^p01_rm_[a-za-z0-9_]+$"
   - "token_budget"
 density_score: 0.85
-related:
-  - spec_05_skills_runtime
-  - bld_instruction_repo_map
-  - bld_knowledge_card_repo_map
-  - bld_output_template_repo_map
-  - p01_kc_pydantic_patterns
 ---
 ## Quality Gate
 ## Definition  

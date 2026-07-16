@@ -29,8 +29,6 @@ keywords: [workflow builder instructions, and error recovery, instruction, workf
 density_score: 0.93
 llm_function: REASON
 related:
-  - bld_knowledge_card_workflow
-  - p10_lr_chain_builder
   - bld_memory_workflow
   - workflow-builder
   - bld_architecture_chain
@@ -138,8 +136,6 @@ Required fields:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_workflow]] | upstream | 0.55 |
-| [[p10_lr_chain_builder]] | downstream | 0.51 |
 | [[bld_memory_workflow]] | downstream | 0.49 |
 | [[workflow-builder]] | downstream | 0.48 |
 | [[bld_architecture_chain]] | downstream | 0.46 |

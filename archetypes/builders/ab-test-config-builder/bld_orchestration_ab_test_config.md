@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [ab_test_config construction, collaboration ab test config, ab_test_config, builder, collaboration, feature_flag_builder, experiment_config_builder, crew role  
 creates, receives from, product owner]
 density_score: 0.85
-related:
-  - bld_collaboration_reranker_config
-  - bld_collaboration_sandbox_spec
-  - bld_collaboration_white_label_config
-  - bld_collaboration_reward_model
-  - bld_collaboration_integration_guide
 ---
 ## Crew Role  
 Creates and validates A/B test configurations, ensuring alignment with testing goals, statistical rigor, and technical feasibility.  
@@ -43,12 +37,3 @@ Creates and validates A/B test configurations, ensuring alignment with testing g
 
 ## Boundary  
 Does NOT handle feature flag toggles (use `feature_flag_builder`) or ML experiment configs (use `experiment_config_builder`). Deployment and monitoring are handled by deployment and analytics teams.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_reranker_config]] | sibling | 0.41 |
-| [[bld_collaboration_sandbox_spec]] | sibling | 0.36 |
-| [[bld_collaboration_white_label_config]] | sibling | 0.36 |
-| [[bld_collaboration_reward_model]] | sibling | 0.35 |
-| [[bld_collaboration_integration_guide]] | sibling | 0.31 |

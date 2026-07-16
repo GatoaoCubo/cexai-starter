@@ -16,11 +16,7 @@ density_score: 0.86
 created: "2026-07-10"
 updated: "2026-07-10"
 related:
-  - p11_qg_kind_manifest
-  - p11_fb_knowledge_card
-  - p11_fb_kind
   - bld_schema_kind_manifest
-  - p10_lr_kind_manifest_builder
 ---
 # Feedback: Kind Manifest
 
@@ -95,8 +91,4 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_kind_manifest]] | sibling | 0.80 |
-| [[p11_fb_knowledge_card]] | sibling (former mis-type contrast) | 0.70 |
-| [[p11_fb_kind]] | sibling (reflexive-case source) | 0.68 |
 | [[bld_schema_kind_manifest]] | related | 0.60 |
-| [[p10_lr_kind_manifest_builder]] | sibling | 0.55 |

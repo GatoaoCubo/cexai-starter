@@ -27,10 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - fallback-chain-builder
-  - bld_instruction_fallback_chain
-  - p01_kc_chain
-  - p10_lr_chain_builder
-  - bld_instruction_chain
 ---
 ## Summary
 A fallback chain is a sequence of model calls executed in order until one meets a quality threshold or the chain is exhausted. Without explicit timeout, cost, and quality fields on each step the chain becomes unpredictable under load. The terminal step must be a static response to guarantee resolution in all failure modes.

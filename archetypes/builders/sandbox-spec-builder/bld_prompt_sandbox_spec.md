@@ -18,10 +18,6 @@ keywords: [sandbox_spec construction, instruction sandbox spec, sandbox_spec, bu
 density_score: 0.85
 related:
   - sandbox-spec-builder
-  - kc_sandbox_spec
-  - p10_lr_sandbox_spec_builder
-  - bld_instruction_playground_config
-  - bld_instruction_judge_config
 ---
 ## Phase 1: RESEARCH  
 1. Identify procurement gate requirements for enterprise pilot environments.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[sandbox-spec-builder]] | downstream | 0.47 |
-| [[kc_sandbox_spec]] | upstream | 0.36 |
-| [[p10_lr_sandbox_spec_builder]] | downstream | 0.35 |
-| [[bld_instruction_playground_config]] | sibling | 0.33 |
-| [[bld_instruction_judge_config]] | sibling | 0.32 |

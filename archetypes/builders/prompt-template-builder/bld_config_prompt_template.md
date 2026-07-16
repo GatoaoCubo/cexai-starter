@@ -26,11 +26,8 @@ tldr: "Golden and anti-examples for prompt template construction, demonstrating 
 keywords: [config prompt template, config, prompt-template, naming, constraints, "p03_pt_{topic_slug}.md", "{topic_slug}", p03_pt_knowledge_card_production.md, p03_pt_research_synthesis.md, p03_pt_code_review_checklist.md]
 density_score: 0.90
 related:
-  - p03_ins_prompt_template
   - bld_memory_prompt_template
-  - bld_knowledge_card_prompt_template
   - prompt-template-builder
-  - bld_collaboration_prompt_template
 ---
 # Config — prompt-template-builder
 ## Naming Convention
@@ -101,7 +98,6 @@ NEVER mix tier-1 and tier-2 syntax in the same template. Set `variable_syntax` t
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_prompt_template]] | upstream | 0.40 |
 | [[bld_memory_prompt_template]] | downstream | 0.40 |
 | [[bld_knowledge_prompt_template]] | upstream | 0.38 |
 | [[prompt-template-builder]] | upstream | 0.36 |

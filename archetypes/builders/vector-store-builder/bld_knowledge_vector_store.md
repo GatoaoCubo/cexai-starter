@@ -20,8 +20,6 @@ density_score: 0.90
 related:
   - bld_memory_vector_store
   - vector-store-builder
-  - p03_ins_vector_store
-  - p11_qg_vector_store
   - bld_config_vector_store
 ---
 # Domain Knowledge: vector_store
@@ -87,6 +85,4 @@ Vectordb backend configs are storage infrastructure artifacts for RAG pipelines 
 |----------|-------------|-------|
 | [[bld_memory_vector_store]] | downstream | 0.66 |
 | [[vector-store-builder]] | downstream | 0.56 |
-| [[p03_ins_vector_store]] | downstream | 0.55 |
-| [[p11_qg_vector_store]] | downstream | 0.52 |
 | [[bld_config_vector_store]] | downstream | 0.49 |

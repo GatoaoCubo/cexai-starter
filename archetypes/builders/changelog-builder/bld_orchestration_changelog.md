@@ -18,10 +18,8 @@ keywords: [changelog construction, collaboration changelog, changelog, builder, 
 automates, receives from, version control system, issue tracker, produces for]
 density_score: 0.85
 related:
-  - bld_collaboration_response_format
   - bld_memory_response_format
   - bld_tools_edit_format
-  - bld_collaboration_edit_format
   - bld_tools_changelog
 ---
 ## Crew Role  
@@ -47,8 +45,6 @@ Does NOT write prose or rationale (handled by release_notes/decision_record). Do
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_response_format]] | sibling | 0.32 |
 | [[bld_memory_response_format]] | upstream | 0.28 |
 | [[bld_tools_edit_format]] | upstream | 0.28 |
-| [[bld_collaboration_edit_format]] | sibling | 0.23 |
 | [[bld_tools_changelog]] | upstream | 0.22 |

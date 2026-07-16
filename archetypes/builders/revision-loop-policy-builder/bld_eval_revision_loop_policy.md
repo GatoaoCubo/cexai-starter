@@ -20,11 +20,7 @@ target_kind: revision_loop_policy
 delivery_threshold: 0.85
 bypass_policy: owner
 related:
- - p11_ins_revision_loop_policy
  - revision-loop-policy-builder
- - p11_out_tpl_revision_loop_policy
- - n00_revision_loop_policy_manifest
- - kc_revision_loop_policy
 ---
 ## Quality Gate
 ## HARD Gates (all must pass)

@@ -21,7 +21,6 @@ related:
   - search-strategy-builder
   - bld_architecture_rl_algorithm
   - bld_architecture_reward_model
-  - p10_lr_search_strategy_builder
 ---
 ## Component Inventory
 | ISO | llm_function | Purpose | Status |
@@ -60,4 +59,3 @@ search_strategy-builder occupies P04 (Tools pillar) in the CEX taxonomy. It prod
 | [[search-strategy-builder]] | upstream | 0.37 |
 | [[bld_architecture_rl_algorithm]] | sibling | 0.36 |
 | [[bld_architecture_reward_model]] | sibling | 0.35 |
-| [[p10_lr_search_strategy_builder]] | downstream | 0.32 |

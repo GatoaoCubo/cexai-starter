@@ -13,9 +13,6 @@ tldr: "Comparative reference of crew orchestration topologies (star, mesh, pipel
 when_to_use: "Load (F3 INJECT) when designing a crew topology for a multi-model system. Consult for 'which orchestration pattern fits this scenario's communication + scalability needs?'"
 primary_8f: INJECT
 keywords: [large language models, llm, multimodal systems, crew orchestration, pipeline, mesh topology, star topology]
-related:
-  - n01_competitive_landscape
-  - p01_kc_multi_model_orchestration
 ---
 
 # Padrões de Orquestração de Equipes para Sistemas Multimodelo

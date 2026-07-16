@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F3_inject"
 keywords: [builder identity, routing for workflow_run_crate, workflow_run_crate construction, workflow_run_crate, builder, type_builder, ro-crate, workflow-run, research-object, provenance-graph]
 density_score: 0.85
-related:
-  - bld_knowledge_card_workflow_run_crate
-  - bld_collaboration_workflow_run_crate
-  - bld_instruction_workflow_run_crate
-  - p10_lr_workflow_run_crate_builder
-  - p10_qg_workflow_run_crate
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS include checksums for all input and output dataset entities.
 NEVER omit CreateAction entity -- it is the provenance graph spine.
 NEVER use relative IRIs for Person @id -- always full ORCID URL.
 NEVER self-assign quality score -- peer review only.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_workflow_run_crate]] | upstream | 0.67 |
-| [[bld_collaboration_workflow_run_crate]] | downstream | 0.64 |
-| [[bld_instruction_workflow_run_crate]] | upstream | 0.59 |
-| [[p10_lr_workflow_run_crate_builder]] | related | 0.57 |
-| [[p10_qg_workflow_run_crate]] | downstream | 0.54 |

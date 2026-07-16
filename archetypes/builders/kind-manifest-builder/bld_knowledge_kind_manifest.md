@@ -18,10 +18,6 @@ updated: "2026-07-10"
 keywords: [r-310 re-typing, per-kind identity document, kind manifest construction, knowledge card kind manifest, kind_manifest, builder, examples, domain knowledge, fixed filename axis, related artifacts]
 density_score: 0.88
 related:
-  - bld_instruction_kind_manifest
-  - p10_lr_kind_manifest_builder
-  - kind-manifest-builder
-  - p11_qg_kind_manifest
   - bld_schema_kind_manifest
 ---
 # Domain Knowledge: kind_manifest
@@ -69,8 +65,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_kind_manifest]] | downstream | 0.48 |
-| [[p10_lr_kind_manifest_builder]] | downstream | 0.42 |
-| [[kind-manifest-builder]] | downstream | 0.40 |
-| [[p11_qg_kind_manifest]] | downstream | 0.36 |
 | [[bld_schema_kind_manifest]] | downstream | 0.34 |

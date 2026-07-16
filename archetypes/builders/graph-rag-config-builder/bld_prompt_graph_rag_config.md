@@ -18,10 +18,6 @@ keywords: [graph_rag_config construction, instruction graph rag config, graph_ra
 density_score: 0.85
 related:
   - graph-rag-config-builder
-  - bld_collaboration_knowledge_graph
-  - kc_graph_rag_config
-  - bld_instruction_agentic_rag
-  - bld_collaboration_graph_rag_config
 ---
 ## Phase 1: RESEARCH  
 1. Analyze graph database schema requirements for RAG nodes/edges  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[graph-rag-config-builder]] | upstream | 0.43 |
-| [[bld_collaboration_knowledge_graph]] | downstream | 0.37 |
-| [[kc_graph_rag_config]] | upstream | 0.34 |
-| [[bld_instruction_agentic_rag]] | sibling | 0.31 |
-| [[bld_collaboration_graph_rag_config]] | downstream | 0.30 |

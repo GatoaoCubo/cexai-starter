@@ -29,12 +29,6 @@ keywords:
   - "| {{obligation}} |"
   - "harm category table real"
 density_score: 0.92
-related:
-  - bld_knowledge_card_safety_policy
-  - bld_knowledge_card_content_filter
-  - bld_output_template_content_filter
-  - n06_audit_safety_policy_builder
-  - p11_sp_cex_agent_output
 ---
 # p11_sp_{{name}}.md
 
@@ -132,12 +126,3 @@ What does a product DO when each severity level triggers?
 - Owner: `{{safety policy owner role}}`
 - Approval: {{legal + CISO sign-off}}
 - Version history: maintained in git, semantic versioning
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_safety_policy]] | upstream | 0.47 |
-| [[bld_knowledge_card_content_filter]] | upstream | 0.39 |
-| [[bld_output_template_content_filter]] | sibling | 0.33 |
-| [[n06_audit_safety_policy_builder]] | downstream | 0.31 |
-| [[p11_sp_cex_agent_output]] | downstream | 0.29 |

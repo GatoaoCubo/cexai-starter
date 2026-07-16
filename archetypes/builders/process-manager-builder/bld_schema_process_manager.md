@@ -29,7 +29,6 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_instruction_process_manager
   - bld_schema_aggregate_root
   - bld_schema_value_object
   - bld_schema_model_registry
@@ -102,7 +101,6 @@ python _tools/cex_schema_hydrate.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_process_manager]] | related | 0.44 |
 | [[bld_schema_aggregate_root]] | sibling | 0.43 |
 | [[bld_schema_value_object]] | sibling | 0.40 |
 | [[bld_schema_model_registry]] | sibling | 0.39 |

@@ -24,9 +24,6 @@ tldr: "Retriever schema: naming conventions, output paths, and production limits
 8f: "F1_constrain"
 keywords: [config iso - retriever, retriever schema, naming conventions, output paths, and production limits, config, retriever, naming, constraints, "p04_retr_{store_slug}.md"]
 related:
-  - p09_kc_retriever_domain
-  - bld_instruction_retriever
-  - bld_output_template_retriever
   - retriever-builder
   - bld_schema_retriever
 ---
@@ -103,8 +100,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p09_kc_retriever_domain]] | downstream | 0.41 |
 | [[bld_prompt_retriever]] | upstream | 0.39 |
-| [[bld_output_template_retriever]] | upstream | 0.38 |
 | [[retriever-builder]] | upstream | 0.38 |
 | [[bld_schema_retriever]] | related | 0.34 |

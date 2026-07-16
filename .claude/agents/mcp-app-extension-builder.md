@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_mcp_app_extension
-  - n00_mcp_app_extension_manifest
   - mcp-app-extension-builder
-  - p11_fb_mcp_app_extension
-  - bld_collaboration_mcp_app_extension
 ---
 
 # mcp-app-extension-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_mcp_app_extension]] | related | 0.40 |
-| [[n00_mcp_app_extension_manifest]] | related | 0.37 |
 | [[mcp-app-extension-builder]] | related | 0.32 |
-| [[p11_fb_mcp_app_extension]] | related | 0.32 |
-| [[bld_collaboration_mcp_app_extension]] | related | 0.30 |

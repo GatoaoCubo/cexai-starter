@@ -32,11 +32,8 @@ llm_function: BECOME
 parent: null
 8f: "F8_collaborate"
 related:
-  - bld_collaboration_workflow
   - bld_memory_workflow
-  - bld_knowledge_card_workflow
   - bld_architecture_workflow
-  - p01_kc_workflow
 ---
 ## Identity
 
@@ -124,8 +121,5 @@ Body MUST stay under 3072 bytes. Every step must have a defined completion signa
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_workflow]] | related | 0.58 |
 | [[bld_memory_workflow]] | upstream | 0.54 |
-| [[bld_knowledge_card_workflow]] | upstream | 0.50 |
 | [[bld_architecture_workflow]] | upstream | 0.49 |
-| [[p01_kc_workflow]] | related | 0.46 |

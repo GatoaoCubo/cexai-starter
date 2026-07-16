@@ -19,9 +19,6 @@ density_score: 0.88
 related:
   - role-assignment-builder
   - bld_tools_role_assignment
-  - p11_qg_role_assignment
-  - bld_knowledge_card_crew_template
-  - n00_role_assignment_manifest
 ---
 ## Domain Overview
 Role assignments are the atomic role-binding primitive of composable crews: one artifact = one (agent, role, tools, delegation, backstory, goal) tuple. They map directly to the CrewAI Agent class, AutoGen ConversableAgent, and OpenAI Swarm Agent. Crew_template instantiates a team by referencing N role_assignments; supervisor spawns the team at runtime. Decoupling role binding from crew composition enables role reuse (one `peer_reviewer` atom participates in 10+ crews) and agent swap (swap the underlying agent_id without rewriting every crew).
@@ -67,6 +64,5 @@ The CrewAI idiom of `role + goal + backstory` (the "persona triad") is the empir
 |----------|-------------|-------|
 | [[role-assignment-builder]] | downstream | 0.58 |
 | [[bld_tools_role_assignment]] | downstream | 0.40 |
-| [[p11_qg_role_assignment]] | downstream | 0.39 |
 | [[bld_knowledge_crew_template]] | sibling | 0.37 |
 | n00_role_assignment_manifest | sibling | 0.37 |

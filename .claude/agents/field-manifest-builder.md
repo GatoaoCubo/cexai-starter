@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - field-manifest-builder
   - kind-builder
-  - kc_field_manifest
-  - p03_sp_builder_nucleus
   - input-schema-builder
 ---
 
@@ -91,6 +89,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[field-manifest-builder]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[kc_field_manifest]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.28 |
 | [[input-schema-builder]] | related | 0.27 |

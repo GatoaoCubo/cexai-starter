@@ -19,10 +19,7 @@ keywords: [prospective memory construction, output template prospective memory, 
 mechanism]
 density_score: 0.90
 related:
-  - p10_qg_prospective_memory
   - bld_schema_prospective_memory
-  - bld_instruction_prospective_memory
-  - p01_kc_prospective_memory
   - prospective-memory-builder
 ---
 # Output Template: prospective_memory
@@ -74,8 +71,5 @@ Mechanism: `{{execution_mechanism}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_qg_prospective_memory]] | downstream | 0.49 |
 | [[bld_schema_prospective_memory]] | downstream | 0.49 |
-| [[bld_instruction_prospective_memory]] | upstream | 0.43 |
-| [[p01_kc_prospective_memory]] | downstream | 0.37 |
 | [[prospective-memory-builder]] | downstream | 0.34 |

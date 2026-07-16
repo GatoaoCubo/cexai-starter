@@ -17,11 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of formatter, and architectural position, formatter construction, architecture formatter, formatter, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_formatter
   - formatter-builder
-  - p01_kc_formatter
-  - n00_formatter_manifest
-  - p05_fmt_artifact_creation_report
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |

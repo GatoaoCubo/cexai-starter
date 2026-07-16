@@ -18,9 +18,6 @@ keywords: [and architectural position, hitl_config construction, architecture hi
 density_score: 0.90
 related:
   - hitl-config-builder
-  - p01_kc_hitl_config
-  - bld_collaboration_hitl_config
-  - n00_hitl_config_manifest
   - bld_schema_hitl_config
 ---
 ## Component Inventory
@@ -88,7 +85,4 @@ model_output --> [review_trigger evaluates] --> hitl_config gate
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[hitl-config-builder]] | downstream | 0.66 |
-| [[p01_kc_hitl_config]] | downstream | 0.54 |
-| [[bld_collaboration_hitl_config]] | downstream | 0.54 |
-| [[n00_hitl_config_manifest]] | downstream | 0.48 |
 | [[bld_schema_hitl_config]] | upstream | 0.42 |

@@ -17,10 +17,6 @@ updated: "2026-04-13"
 keywords: [content_filter construction, knowledge card content filter, perspective api, openai moderation, real enforcement actions, and dsa, gdpr legal framework]
 density_score: 0.92
 related:
-  - bld_knowledge_card_safety_policy
-  - bld_output_template_safety_policy
-  - bld_output_template_content_filter
-  - n06_audit_content_filter_builder
   - bld_tools_content_filter
 ---
 ## Domain Overview
@@ -104,6 +100,5 @@ Every harm category MUST map to exactly one of these actions:
 |----------|-------------|-------|
 | bld_knowledge_card_safety_policy | sibling | 0.54 |
 | bld_output_template_safety_policy | downstream | 0.48 |
-| [[bld_output_template_content_filter]] | downstream | 0.41 |
 | n06_audit_content_filter_builder | downstream | 0.35 |
 | [[bld_tools_content_filter]] | downstream | 0.33 |

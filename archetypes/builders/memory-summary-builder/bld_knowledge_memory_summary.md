@@ -20,10 +20,6 @@ memory, spec table, compression methods]
 density_score: 0.90
 related:
   - memory-summary-builder
-  - p10_lr_memory_summary_builder
-  - p01_kc_memory_summary
-  - p01_kc_memory_persistence
-  - bld_collaboration_memory_summary
 ---
 # Domain Knowledge: memory_summary
 ## Executive Summary
@@ -89,7 +85,6 @@ Drop: greetings, filler, redundant clarification loops, tool call details when o
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-summary-builder]] | downstream | 0.44 |
-| [[p10_lr_memory_summary_builder]] | downstream | 0.42 |
 | [[kc_memory_summary]] | sibling | 0.36 |
 | p01_kc_memory_persistence | sibling | 0.34 |
 | [[bld_orchestration_memory_summary]] | downstream | 0.34 |

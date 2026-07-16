@@ -28,11 +28,9 @@ updated: "2026-04-07"
 keywords: [limits for smoke_eval production, smoke eval construction, config smoke eval, smoke_eval, builder, examples, production rules, file paths, size limits, fail policy]
 density_score: 0.90
 related:
-  - bld_knowledge_card_smoke_eval
   - smoke-eval-builder
   - p07_se_{{SCOPE_SLUG}}
   - bld_memory_smoke_eval
-  - bld_collaboration_smoke_eval
 ---
 # Config: smoke_eval Production Rules
 ## Naming
@@ -82,8 +80,6 @@ python _tools/cex_score.py --apply bld-config-smoke-eval.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_smoke_eval]] | upstream | 0.41 |
 | [[smoke-eval-builder]] | upstream | 0.41 |
 | [\[p07_se_`{{SCOPE_SLUG}}`\]] | upstream | 0.38 |
 | [[bld_memory_smoke_eval]] | downstream | 0.37 |
-| [[bld_collaboration_smoke_eval]] | upstream | 0.37 |

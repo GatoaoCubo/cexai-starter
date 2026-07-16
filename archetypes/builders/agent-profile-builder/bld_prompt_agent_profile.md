@@ -18,10 +18,7 @@ updated: "2026-04-13"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - p11_qg_agent_profile
-  - bld_output_template_agent_profile
   - system-prompt-builder
-  - bld_instruction_agent
   - bld_config_agent_profile
 ---
 # Instructions: How to Produce an agent_profile
@@ -60,8 +57,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_agent_profile]] | downstream | 0.35 |
-| [[bld_output_template_agent_profile]] | downstream | 0.34 |
 | [[system-prompt-builder]] | related | 0.29 |
 | [[bld_prompt_agent]] | sibling | 0.27 |
 | [[bld_config_agent_profile]] | downstream | 0.26 |

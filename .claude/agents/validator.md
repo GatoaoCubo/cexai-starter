@@ -15,10 +15,7 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - kind-builder
-  - p01_faq_cex_common_questions
   - bld_architecture_kind
-  - bld_instruction_kind
-  - p11_fb_kind
 ---
 
 # Validator Sub-Agent
@@ -133,7 +130,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.35 |
-| [[p01_faq_cex_common_questions]] | related | 0.31 |
 | [[bld_architecture_kind]] | related | 0.31 |
-| [[bld_instruction_kind]] | related | 0.31 |
-| [[p11_fb_kind]] | related | 0.30 |

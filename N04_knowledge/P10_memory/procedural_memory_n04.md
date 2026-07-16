@@ -16,12 +16,6 @@ author: n04_knowledge
 tldr: "N04 task procedure memory: step-by-step SOPs for the most common operations -- KC creation, RAG corpus ingestion, retrieval debugging, memory consolidation, taxonomy extension, and artifact quality review."
 keywords: [knowledge management, procedural memory -- n, standard operating procedures, task procedure memory, rag corpus ingestion, retrieval debugging, memory consolidation, taxonomy extension, and artifact quality review, procedural_memory]
 density_score: null
-related:
-  - p02_ap_n04_knowledge
-  - bld_collaboration_kind
-  - p07_ds_n04_knowledge
-  - p12_wf_rag_ingestion_n04
-  - p06_td_cex_artifact_type_n03
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_memory_update. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

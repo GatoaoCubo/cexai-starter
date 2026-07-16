@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [multimodal_prompt construction, quality gate multimodal prompt, multimodal_prompt, builder, quality_gate, quality gate, fail condition, scoring guide, metric threshold, threshold operator]
 density_score: 0.85
 related:
-  - p10_mem_multimodal_prompt_builder
   - multimodal-prompt-builder
-  - n00_multimodal_prompt_manifest
-  - bld_knowledge_card_multimodal_prompt
-  - bld_instruction_multimodal_prompt
 ---
 ## Quality Gate
 

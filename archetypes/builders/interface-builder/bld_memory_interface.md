@@ -26,11 +26,7 @@ title: "Memory Interface"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_instruction_interface
   - interface-builder
-  - p10_lr_input_schema_builder
-  - bld_knowledge_card_interface
-  - bld_output_template_interface
 ---
 ## Summary
 Interfaces define bilateral contracts between a provider and a consumer. The most damaging failure is treating an interface as unilateral — defining only one party. The second most damaging failure is incrementing a version number without declaring what happens to old methods. Both failures cause breaking changes that are expensive to debug after deployment.
@@ -101,8 +97,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_interface_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_interface]] | upstream | 0.42 |
 | [[interface-builder]] | upstream | 0.37 |
-| [[p10_lr_input_schema_builder]] | sibling | 0.35 |
-| [[bld_knowledge_card_interface]] | upstream | 0.33 |
-| [[bld_output_template_interface]] | upstream | 0.30 |

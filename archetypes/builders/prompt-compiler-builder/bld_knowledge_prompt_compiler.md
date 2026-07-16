@@ -18,11 +18,8 @@ updated: "2026-04-12"
 keywords: [prompt_compiler construction, knowledge card prompt compiler, domain knowledge for prompt_compiler, intent resolution, dspy compilation, multilingual nlu, f integration, prompt_compiler, builder, knowledge_card]
 density_score: 0.90
 related:
-  - p01_kc_prompt_compiler
-  - p03_ins_prompt_compiler
   - prompt-compiler-builder
   - bld_memory_prompt_compiler
-  - p11_qg_prompt_compiler
 ---
 # Domain Knowledge: prompt_compiler
 ## Executive Summary
@@ -65,8 +62,5 @@ A prompt_compiler is a dense intent resolution artifact that maps natural langua
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prompt_compiler]] | sibling | 0.63 |
-| [[p03_ins_prompt_compiler]] | related | 0.57 |
 | [[prompt-compiler-builder]] | related | 0.56 |
 | [[bld_memory_prompt_compiler]] | downstream | 0.49 |
-| [[p11_qg_prompt_compiler]] | downstream | 0.47 |

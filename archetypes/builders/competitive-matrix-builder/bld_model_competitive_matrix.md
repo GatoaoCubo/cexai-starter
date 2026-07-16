@@ -20,10 +20,6 @@ triggers, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_competitive_matrix
-  - p01_qg_competitive_matrix
-  - n00_competitive_matrix_manifest
-  - bld_instruction_competitive_matrix
   - bld_schema_competitive_matrix
 ---
 ## Identity
@@ -81,7 +77,6 @@ Never fabricate counters. If counter-data is unavailable, note "no verified coun
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_competitive_matrix]] | related | 0.42 |
-| [[p01_qg_competitive_matrix]] | downstream | 0.34 |
 | n00_competitive_matrix_manifest | related | 0.30 |
 | [[bld_prompt_competitive_matrix]] | downstream | 0.29 |
 | [[bld_schema_competitive_matrix]] | downstream | 0.29 |

@@ -17,10 +17,6 @@ updated: "2026-04-13"
 keywords: [repo_map construction, instruction repo map, repo map production, tree-sitter symbol extraction, pagerank file ranking, token budget fit, output symbol table, repo_map, builder, instruction]
 density_score: 0.90
 related:
-  - bld_knowledge_card_repo_map
-  - bld_output_template_repo_map
-  - p01_qg_repo_map
-  - bld_instruction_agent_package
   - bld_tools_repo_map
 ---
 ## Phase 1: RESEARCH -- Discover and Extract
@@ -79,8 +75,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_repo_map]] | upstream | 0.47 |
-| [[bld_output_template_repo_map]] | downstream | 0.47 |
-| [[p01_qg_repo_map]] | downstream | 0.35 |
-| [[bld_instruction_agent_package]] | sibling | 0.29 |
 | [[bld_tools_repo_map]] | downstream | 0.28 |

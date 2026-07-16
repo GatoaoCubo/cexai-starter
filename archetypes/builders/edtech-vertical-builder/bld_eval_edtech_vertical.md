@@ -18,10 +18,7 @@ keywords: [edtech_vertical construction, quality gate edtech vertical, edtech_ve
 density_score: 0.85
 related:
   - edtech-vertical-builder
-  - p10_mem_edtech_vertical_builder
-  - bld_instruction_edtech_vertical
   - edtech_vertical_lms_market
-  - bld_output_template_edtech_vertical
 ---
 ## Quality Gate
 

@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_expansion_play
-  - n00_expansion_play_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p11_fb_expansion_play
 ---
 
 # expansion-play-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_expansion_play]] | related | 0.38 |
-| [[n00_expansion_play_manifest]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[p11_fb_expansion_play]] | related | 0.29 |

@@ -19,9 +19,6 @@ keywords: [curation_nudge construction, knowledge card, curation nudge builder, 
 density_score: 0.89
 related:
  - curation-nudge-builder
- - kc_curation_nudge
- - p11_mem_curation_nudge
- - n00_curation_nudge_manifest
  - cn_{{trigger}}
 ---
 ## Domain Knowledge
@@ -107,7 +104,4 @@ Long-term (persistent):
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[curation-nudge-builder]] | downstream | 0.54 |
-| [[kc_curation_nudge]] | sibling | 0.53 |
-| [[p11_mem_curation_nudge]] | downstream | 0.50 |
-| [[n00_curation_nudge_manifest]] | sibling | 0.49 |
 | [\[cn_`{{trigger}}`\]] | downstream | 0.48 |

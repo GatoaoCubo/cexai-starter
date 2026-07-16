@@ -18,11 +18,7 @@ when_to_use: "Teaching 8F live; onboarding a new nucleus or contributor; quick l
 keywords: [8f functions, constrain, become, inject, reason, call, produce, govern, collaborate, sub-steps, 8f trace, mode a, mode b, pipeline reference]
 density_score: null
 related:
-  - kc_8f_pipeline
-  - pattern_8f_full_trace
-  - reasoning_trace_8f_constrain
   - kc_8f_pipeline_implementation
-  - p01_kc_8f_pipeline
   - p01_kc_concept_graph
 ---
 

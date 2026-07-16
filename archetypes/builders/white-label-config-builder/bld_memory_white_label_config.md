@@ -21,10 +21,6 @@ reviewed, related artifacts, reseller-specific keys, reusable templates]
 density_score: 0.85
 related:
   - white-label-config-builder
-  - bld_knowledge_card_white_label_config
-  - n00_white_label_config_manifest
-  - p11_qg_white_label_config
-  - p10_lr_playground_config_builder
 ---
 ## Observation
 Common issues include inconsistent branding element mapping and missing reseller-specific overrides, leading to deployment mismatches. Overlapping configurations with brand_config often cause conflicts during runtime.
@@ -48,5 +44,4 @@ Reviewed artifacts used YAML anchors for shared reseller settings and included v
 | [[white-label-config-builder]] | upstream | 0.45 |
 | [[bld_knowledge_white_label_config]] | upstream | 0.37 |
 | n00_white_label_config_manifest | upstream | 0.29 |
-| [[p11_qg_white_label_config]] | downstream | 0.27 |
 | p10_lr_playground_config_builder | related | 0.25 |

@@ -19,10 +19,6 @@ usage, key concepts, tiered quotas, stack quota management docs, soft limits]
 density_score: 0.85
 related:
   - usage-quota-builder
-  - kc_usage_quota
-  - bld_instruction_usage_quota
-  - bld_collaboration_usage_quota
-  - p10_mem_usage_quota_builder
 ---
 ## Domain Overview
 Usage quota systems enforce predefined limits on resource consumption to ensure fair access, prevent abuse, and align with service-level agreements (SLAs). These systems are critical in cloud computing, API management, and SaaS platforms, where providers must balance scalability with sustainability. Unlike rate limiting (RPM) or cost-based budgets, usage quotas focus on aggregate consumption (e.g., storage, API calls, or compute hours) over defined periods. They enable providers to allocate resources equitably among users while avoiding overutilization that could degrade service quality.
@@ -68,7 +64,3 @@ Quota enforcement is often tied to tiered pricing models, compliance requirement
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[usage-quota-builder]] | downstream | 0.55 |
-| [[kc_usage_quota]] | sibling | 0.52 |
-| [[bld_instruction_usage_quota]] | downstream | 0.44 |
-| [[bld_collaboration_usage_quota]] | downstream | 0.42 |
-| [[p10_mem_usage_quota_builder]] | downstream | 0.38 |

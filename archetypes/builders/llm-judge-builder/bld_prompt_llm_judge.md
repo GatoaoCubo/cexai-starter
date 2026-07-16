@@ -31,11 +31,7 @@ keywords:
   - "write criteria"
 density_score: 0.90
 related:
-  - bld_instruction_reward_signal
   - llm-judge-builder
-  - p11_qg_llm_judge
-  - bld_instruction_output_validator
-  - bld_instruction_eval_dataset
 ---
 # Instructions: How to Produce a llm_judge
 ## Phase 1: RESEARCH
@@ -84,6 +80,5 @@ related:
 |----------|-------------|-------|
 | [[bld_prompt_reward_signal]] | sibling | 0.43 |
 | [[llm-judge-builder]] | downstream | 0.41 |
-| [[p11_qg_llm_judge]] | downstream | 0.39 |
 | [[bld_prompt_output_validator]] | sibling | 0.39 |
 | [[bld_prompt_eval_dataset]] | sibling | 0.39 |

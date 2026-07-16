@@ -18,10 +18,6 @@ updated: "2026-04-07"
 keywords: [template with, e_eval production, e eval construction, output template e, e eval, e2e_eval, builder, examples, output template, pipeline overview]
 density_score: 0.90
 related:
-  - bld_output_template_unit_eval
-  - bld_output_template_smoke_eval
-  - bld_output_template_golden_test
-  - p11_qg_e2e_eval
   - e2e-eval-builder
 ---
 # Output Template: e2e_eval
@@ -93,8 +89,4 @@ density_score: {{0.80_to_1.00}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_unit_eval]] | sibling | 0.42 |
-| [[bld_output_template_smoke_eval]] | sibling | 0.38 |
-| [[bld_output_template_golden_test]] | sibling | 0.36 |
-| [[p11_qg_e2e_eval]] | downstream | 0.35 |
 | [[e2e-eval-builder]] | downstream | 0.35 |

@@ -18,10 +18,7 @@ keywords: [component map of interface, and architectural position, interface con
 density_score: 0.90
 related:
   - interface-builder
-  - p01_kc_interface
   - bld_architecture_input_schema
-  - bld_knowledge_card_interface
-  - p10_lr_interface_builder
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -71,7 +68,4 @@ interface     --produces--> mock_spec
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[interface-builder]] | upstream | 0.46 |
-| [[p01_kc_interface]] | upstream | 0.43 |
 | [[bld_architecture_input_schema]] | sibling | 0.42 |
-| [[bld_knowledge_card_interface]] | upstream | 0.38 |
-| [[p10_lr_interface_builder]] | downstream | 0.35 |

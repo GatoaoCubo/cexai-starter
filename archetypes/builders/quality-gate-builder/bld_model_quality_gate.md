@@ -30,11 +30,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_collaboration_quality_gate
   - bld_memory_quality_gate
-  - bld_knowledge_card_quality_gate
-  - p03_ins_quality_gate
-  - p11_qg_quality_gate
 ---
 ## Identity
 
@@ -123,8 +119,4 @@ Deliver a `quality_gate` artifact with this structure:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_quality_gate]] | related | 0.46 |
 | [[bld_memory_quality_gate]] | upstream | 0.46 |
-| [[bld_knowledge_card_quality_gate]] | related | 0.45 |
-| [[p03_ins_quality_gate]] | related | 0.40 |
-| [[p11_qg_quality_gate]] | related | 0.38 |

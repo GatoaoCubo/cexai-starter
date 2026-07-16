@@ -19,10 +19,6 @@ referral, key concepts, viral coefficient, viral growth, referral reward]
 density_score: 0.85
 related:
   - referral-program-builder
-  - p11_qg_referral_program
-  - bld_instruction_referral_program
-  - n00_referral_program_manifest
-  - p10_mem_referral_program_builder
 ---
 ## Domain Overview
 Referral programs are critical growth mechanisms in SaaS, fintech, and consumer apps, leveraging user networks to drive acquisition. A key metric is the *viral coefficient* (K), which measures the average number of new users generated per existing user. When K > 1, growth becomes self-sustaining. Reward structures must balance incentive alignment, user motivation, and business cost, often using tiered rewards, discounts, or exclusive perks.
@@ -67,7 +63,3 @@ Designing effective referral loops requires understanding user behavior, such as
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[referral-program-builder]] | downstream | 0.52 |
-| [[p11_qg_referral_program]] | downstream | 0.45 |
-| [[bld_instruction_referral_program]] | downstream | 0.45 |
-| [[n00_referral_program_manifest]] | sibling | 0.44 |
-| [[p10_mem_referral_program_builder]] | downstream | 0.43 |

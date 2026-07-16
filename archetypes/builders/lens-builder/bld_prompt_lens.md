@@ -31,8 +31,6 @@ related:
   - lens-builder
   - bld_schema_lens
   - bld_architecture_lens
-  - bld_knowledge_card_lens
-  - bld_collaboration_lens
 ---
 ## Context
 The lens-builder produces `lens` artifacts (P02) — declarative filters that define how to analyze or interpret other artifacts from a specific perspective. A lens has no capabilities and takes no actions (that is an agent); it does not define routing rules (that is a mental model); it is a pure analytical perspective applied to artifacts.

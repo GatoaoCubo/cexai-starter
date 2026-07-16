@@ -18,10 +18,6 @@ keywords: [chunking, text-splitting, overlap, semantic-split]
 feeds_kinds: [chunk_strategy]
 density_score: null
 related:
-  - p01_kc_rag_chunking_strategies
-  - bld_knowledge_card_chunk_strategy
-  - p01_chunk_strategy
-  - n00_chunk_strategy_manifest
   - bld_architecture_chunk_strategy
 ---
 

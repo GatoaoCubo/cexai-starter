@@ -20,10 +20,6 @@ keywords: [realtime_session construction, vad tuning, ephemeral tokens, codec-tr
 density_score: 0.90
 related:
   - realtime-session-builder
-  - bld_knowledge_card_realtime_session
-  - bld_instruction_realtime_session
-  - p04_qg_realtime_session
-  - bld_output_template_realtime_session
 ---
 # Memory: realtime-session-builder
 
@@ -112,7 +108,3 @@ For reliable realtime session production:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[realtime-session-builder]] | upstream | 0.58 |
-| [[bld_knowledge_card_realtime_session]] | upstream | 0.52 |
-| [[bld_instruction_realtime_session]] | upstream | 0.51 |
-| [[p04_qg_realtime_session]] | downstream | 0.50 |
-| [[bld_output_template_realtime_session]] | upstream | 0.49 |

@@ -18,12 +18,6 @@ keywords: [builder identity, routing for stt_provider, stt_provider construction
 specializes, google speech, routing  
 keywords]
 density_score: 0.85
-related:
-  - kc_voice_pipeline
-  - p01_kc_audio_tool
-  - kc_stt_provider
-  - bld_knowledge_card_stt_provider
-  - bld_knowledge_card_audio_tool
 ---
 ## Identity
 
@@ -61,12 +55,3 @@ The stt_provider-builder agent is a configuration and integration specialist for
 3. Validate accuracy metrics (WER < 15%) for target languages and dialects.  
 4. Implement robust error handling for network failures and audio format mismatches.  
 5. Comply with security standards: GDPR, HIPAA, and AES-256 encryption for audio streams.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_voice_pipeline]] | upstream | 0.53 |
-| [[p01_kc_audio_tool]] | related | 0.53 |
-| [[kc_stt_provider]] | upstream | 0.50 |
-| [[bld_knowledge_card_stt_provider]] | upstream | 0.48 |
-| [[bld_knowledge_card_audio_tool]] | upstream | 0.45 |

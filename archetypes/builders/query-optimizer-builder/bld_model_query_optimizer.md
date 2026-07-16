@@ -21,7 +21,6 @@ llm_function: BECOME
 8f: "F2_become"
 related:
   - bld_orchestration_query_optimizer
-  - kc_query_optimizer
   - bld_architecture_query_optimizer
   - bld_knowledge_query_optimizer
   - bld_prompt_query_optimizer
@@ -66,7 +65,6 @@ I do NOT handle: index config (knowledge_index), embedding selection (embedding_
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_query_optimizer]] | downstream | 0.55 |
-| [[kc_query_optimizer]] | upstream | 0.52 |
 | [[bld_architecture_query_optimizer]] | downstream | 0.52 |
 | [[bld_knowledge_query_optimizer]] | upstream | 0.51 |
 | [[bld_prompt_query_optimizer]] | downstream | 0.51 |

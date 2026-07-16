@@ -26,7 +26,6 @@ title: "Memory Retry Policy"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_retry_policy
   - kc_retry_policy
   - retry-policy-builder
   - bld_architecture_retry_policy

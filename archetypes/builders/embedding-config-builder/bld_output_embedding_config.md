@@ -31,10 +31,6 @@ keywords:
   - "## integration"
 density_score: 0.90
 related:
-  - bld_output_template_agent_card
-  - bld_output_template_runtime_rule
-  - bld_output_template_feature_flag
-  - bld_output_template_golden_test
   - bld_schema_embedding_config
 ---
 # Output Template: embedding_config
@@ -99,8 +95,6 @@ tldr: "{{dense_summary_max_160ch}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_agent_card]] | sibling | 0.36 |
 | bld_output_template_runtime_rule | sibling | 0.35 |
 | bld_output_template_feature_flag | sibling | 0.34 |
-| [[bld_output_template_golden_test]] | sibling | 0.34 |
 | [[bld_schema_embedding_config]] | downstream | 0.33 |

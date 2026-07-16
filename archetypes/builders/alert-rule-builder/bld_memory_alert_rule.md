@@ -16,10 +16,7 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - alert-rule-builder
-  - bld_rules_alert_rule
-  - p01_kc_alert_rule
   - bld_architecture_alert_rule
-  - bld_qg_alert_rule
 ---
 # Memory Patterns: alert_rule
 ## What to Remember
@@ -75,7 +72,4 @@ python _tools/cex_memory_update.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[alert-rule-builder]] | upstream | 0.49 |
-| [[bld_rules_alert_rule]] | downstream | 0.46 |
-| [[p01_kc_alert_rule]] | upstream | 0.42 |
 | [[bld_architecture_alert_rule]] | upstream | 0.41 |
-| [[bld_qg_alert_rule]] | downstream | 0.38 |

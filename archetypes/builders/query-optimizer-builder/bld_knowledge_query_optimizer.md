@@ -20,7 +20,6 @@ keywords: [query optimization, and re-ranking strategies, query_optimizer, build
 query, spec table, user queries, retrieval queries]
 density_score: 0.88
 related:
-  - kc_query_optimizer
   - query-optimizer-builder
   - bld_prompt_query_optimizer
   - bld_feedback_query_optimizer
@@ -55,7 +54,6 @@ Query optimizers transform raw user queries into optimized retrieval queries tha
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_query_optimizer]] | sibling | 0.63 |
 | [[query-optimizer-builder]] | downstream | 0.55 |
 | [[bld_prompt_query_optimizer]] | downstream | 0.48 |
 | [[bld_feedback_query_optimizer]] | downstream | 0.42 |

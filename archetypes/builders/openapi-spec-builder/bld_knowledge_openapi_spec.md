@@ -20,7 +20,6 @@ related:
   - kc_openapi_spec
   - openapi-spec-builder
   - bld_schema_openapi_spec
-  - bld_collaboration_openapi_spec
   - bld_architecture_openapi_spec
 ---
 # Knowledge Card: openapi_spec

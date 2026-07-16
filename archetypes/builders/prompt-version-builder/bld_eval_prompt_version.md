@@ -29,10 +29,6 @@ keywords:
 density_score: 0.90
 related:
   - prompt-version-builder
-  - bld_instruction_prompt_version
-  - p11_qg_output_validator
-  - p11_qg_constraint_spec
-  - p11_qg_chunk_strategy
 ---
 ## Quality Gate
 

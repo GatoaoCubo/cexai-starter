@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [session backend construction, collaboration session backend, session_backend, builder, examples, "### crew: full agent infrastructure", my role, crew compositions, context management, full agent infrastructure]
 density_score: 0.90
 related:
-  - bld_collaboration_compression_config
   - session-backend-builder
-  - bld_collaboration_trace_config
-  - p01_kc_session_backend
-  - bld_collaboration_boot_config
 ---
 # Collaboration: session-backend-builder
 ## My Role in Crews

@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - workflow-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_workflow
-  - bld_collaboration_workflow
 ---
 
 # workflow-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[workflow-builder]] | related | 0.33 |
 | [[kind-builder]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[p01_kc_workflow]] | related | 0.30 |
-| [[bld_collaboration_workflow]] | related | 0.28 |

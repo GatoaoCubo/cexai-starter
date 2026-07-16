@@ -18,9 +18,6 @@ keywords: [component map of parser, and architectural position, parser construct
 density_score: 0.90
 related:
   - parser-builder
-  - bld_collaboration_parser
-  - n00_parser_manifest
-  - p01_kc_parser
   - bld_memory_parser
 ---
 # Architecture: parser in the CEX

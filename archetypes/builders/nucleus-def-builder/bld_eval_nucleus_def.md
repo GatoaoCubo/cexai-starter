@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [nucleus_def construction, quality gate nucleus def, nucleus_def, builder, quality_gate, quality gate, fail condition]
 density_score: 0.85
 related:
-  - bld_instruction_nucleus_def
-  - bld_knowledge_card_nucleus_def
   - bld_schema_nucleus_def
-  - p10_lr_nucleus_def_builder
-  - bld_collaboration_nucleus_def
 ---
 ## Quality Gate
 ## Definition

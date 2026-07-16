@@ -18,10 +18,6 @@ keywords: [component map of component_map, and architectural position, component
 density_score: 0.90
 related:
   - component-map-builder
-  - bld_collaboration_component_map
-  - bld_instruction_component_map
-  - p11_qg_component_map
-  - n00_component_map_manifest
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -80,7 +76,3 @@ component_map      --produces-->  knowledge_index
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[component-map-builder]] | related | 0.59 |
-| [[bld_collaboration_component_map]] | downstream | 0.41 |
-| [[bld_instruction_component_map]] | upstream | 0.38 |
-| [[p11_qg_component_map]] | downstream | 0.36 |
-| [[n00_component_map_manifest]] | related | 0.35 |

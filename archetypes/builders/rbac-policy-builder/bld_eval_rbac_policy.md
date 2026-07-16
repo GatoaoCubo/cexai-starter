@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [rbac_policy construction, quality gate rbac policy, rbac_policy, builder, quality_gate, quality gate, policy count, fail condition, scoring guide, golden example]
 density_score: 0.85
 related:
-  - p10_mem_rbac_policy_builder
-  - bld_knowledge_card_rbac_policy
   - kc_rbac_policy
-  - p09_qg_marketplace_app_manifest
   - rbac-policy-builder
 ---
 ## Quality Gate

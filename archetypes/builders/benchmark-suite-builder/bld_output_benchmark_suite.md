@@ -19,10 +19,7 @@ keywords: [benchmark_suite construction, output template benchmark suite, benchm
 this, key metrics, error rate, sample test script]
 density_score: 0.85
 related:
-  - bld_collaboration_client
-  - bld_output_template_memory_benchmark
   - api-client-builder
-  - bld_collaboration_benchmark
   - bld_architecture_benchmark
 ---
 ```markdown

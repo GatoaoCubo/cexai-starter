@@ -7,8 +7,6 @@ related:
   - marketplace-listing-builder
   - kind-builder
   - output-validator-builder
-  - spec_dual_output_contract
-  - p03_sp_builder_nucleus
 ---
 
 # marketplace-listing-builder Sub-Agent

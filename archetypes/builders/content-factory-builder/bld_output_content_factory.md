@@ -32,9 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_content_factory
-  - p01_kc_content_factory
-  - p01_kc_social_publisher
-  - bld_collaboration_content_factory
   - content-factory-builder
 ---
 # Output Template: content_factory
@@ -113,7 +110,4 @@ Per `.cex/kinds_meta.json`: instance files follow `p04_content_factory_{{name}}.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_content_factory]] | upstream | 0.53 |
-| [[p01_kc_content_factory]] | upstream | 0.44 |
-| [[p01_kc_social_publisher]] | related | 0.39 |
-| [[bld_collaboration_content_factory]] | downstream | 0.35 |
 | [[content-factory-builder]] | upstream | 0.34 |

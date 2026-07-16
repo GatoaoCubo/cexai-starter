@@ -18,10 +18,6 @@ keywords: [component map of embedding_config, and architectural position, embedd
 density_score: 0.90
 related:
   - embedding-config-builder
-  - bld_collaboration_embedding_config
-  - p01_kc_embedding_config
-  - p11_qg_embedding_config
-  - bld_collaboration_retriever_config
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -77,5 +73,4 @@ workflow (P12) --independent-- embedding_config (workflow orchestrates; config p
 | [[embedding-config-builder]] | upstream | 0.55 |
 | [[bld_orchestration_embedding_config]] | downstream | 0.51 |
 | [[kc_embedding_config]] | upstream | 0.41 |
-| [[p11_qg_embedding_config]] | downstream | 0.39 |
 | [[bld_orchestration_retriever_config]] | downstream | 0.38 |

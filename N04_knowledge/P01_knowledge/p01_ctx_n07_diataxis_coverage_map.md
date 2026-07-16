@@ -12,8 +12,6 @@ scope: "Diataxis quadrant coverage analysis of N07 orchestration doc corpus -- g
 quality: null
 tags: [context_doc, diataxis, coverage-map, N07, orchestration, P01]
 source_attribution: "Pattern applied: p08_pat_diataxis_for_cex. Source methodology: gstack (garrytan/gstack, MIT, commit 14fc0866d9)."
-related:
-  - p08_pat_diataxis_for_cex
 ---
 
 > Coverage map via p08_pat_diataxis_for_cex. Attribution: gstack (garrytan/gstack, MIT, 14fc0866d9).

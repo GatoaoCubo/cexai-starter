@@ -20,11 +20,7 @@ trigger, crew role
 acts]
 density_score: 0.85
 related:
-  - p10_mem_contributor_guide_builder
-  - bld_instruction_contributor_guide
-  - p05_qg_contributor_guide
   - bld_tools_contributor_guide
-  - bld_output_template_contributor_guide
 ---
 ## Identity
 
@@ -110,8 +106,4 @@ If the user requests an excluded format, name the boundary and stop.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_contributor_guide_builder]] | downstream | 0.54 |
-| [[bld_instruction_contributor_guide]] | upstream | 0.52 |
-| [[p05_qg_contributor_guide]] | downstream | 0.40 |
 | [[bld_tools_contributor_guide]] | upstream | 0.39 |
-| [[bld_output_template_contributor_guide]] | related | 0.39 |

@@ -18,8 +18,6 @@ keywords: [nucleus_def construction, knowledge card nucleus def, nucleus_def, bu
 density_score: 0.85
 related:
   - nucleus-def-builder
-  - bld_collaboration_nucleus_def
-  - n00_readme
   - p02_mm_cex_architecture_n04
 ---
 ## Domain Overview

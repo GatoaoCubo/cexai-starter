@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [domain knowledge for e, e_eval production, end-to-end pipeline testing, e eval construction, knowledge card e, e eval, e2e_eval, builder, examples, domain knowledge]
 density_score: 0.90
 related:
-  - p10_lr_e2e_eval_builder
-  - bld_instruction_e2e_eval
   - e2e-eval-builder
-  - p01_kc_e2e_eval
   - bld_architecture_e2e_eval
 ---
 # Domain Knowledge: e2e_eval
@@ -73,8 +70,5 @@ E2E evals verify complete pipeline behavior from initial input through all stage
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_e2e_eval_builder]] | downstream | 0.52 |
-| [[bld_instruction_e2e_eval]] | downstream | 0.49 |
 | [[e2e-eval-builder]] | downstream | 0.46 |
-| [[p01_kc_e2e_eval]] | sibling | 0.40 |
 | [[bld_architecture_e2e_eval]] | downstream | 0.38 |

@@ -33,10 +33,7 @@ keywords:
   - "official anthropic"
 density_score: 0.90
 related:
-  - p03_ins_rag_source
-  - bld_knowledge_card_rag_source
   - bld_schema_model_registry
-  - p11_qg_rag_source
   - bld_schema_benchmark_suite
 ---
 # Schema: rag_source
@@ -98,8 +95,6 @@ If the body contains paragraphs of extracted text — it is a knowledge_card, no
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_rag_source]] | upstream | 0.43 |
 | [[bld_knowledge_rag_source]] | upstream | 0.41 |
 | bld_schema_model_registry | sibling | 0.40 |
-| [[p11_qg_rag_source]] | downstream | 0.40 |
 | bld_schema_benchmark_suite | sibling | 0.38 |

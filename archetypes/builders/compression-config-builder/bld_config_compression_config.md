@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, compression config construction, config compression config, compression_config, builder, examples, "p10_cc_{{name}}.yaml"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_compression_config
-  - bld_instruction_compression_config
-  - p01_kc_compression_config
   - bld_schema_compression_config
-  - bld_output_template_compression_config
 ---
 # Config: compression_config Production Rules
 ## Naming Convention
@@ -70,8 +66,4 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_compression_config]] | upstream | 0.33 |
-| [[bld_instruction_compression_config]] | upstream | 0.33 |
-| [[p01_kc_compression_config]] | downstream | 0.32 |
 | [[bld_schema_compression_config]] | upstream | 0.31 |
-| [[bld_output_template_compression_config]] | upstream | 0.27 |

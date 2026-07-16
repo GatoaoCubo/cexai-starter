@@ -19,7 +19,6 @@ density_score: 0.85
 related:
   - bld_architecture_team_charter
   - bld_architecture_deployment_manifest
-  - kc_fabrication_manifest
   - fabrication-manifest-builder
   - bld_tools_fabrication_manifest
 ---
@@ -79,6 +78,5 @@ BrandBook  --[A INGEST]-->  brand config overlay  --[B PROVISION]-->  per-tenant
 |----------|-------------|-------|
 | [[bld_architecture_team_charter]] | sibling | 0.55 |
 | [[bld_architecture_deployment_manifest]] | sibling | 0.53 |
-| [[kc_fabrication_manifest]] | upstream | 0.48 |
 | [[fabrication-manifest-builder]] | downstream | 0.42 |
 | [[bld_tools_fabrication_manifest]] | related | 0.38 |

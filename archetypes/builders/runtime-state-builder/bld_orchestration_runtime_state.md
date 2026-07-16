@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - runtime-state-builder
   - bld_memory_runtime_state
-  - bld_collaboration_mental_model
-  - p03_ins_runtime_state
-  - bld_knowledge_card_runtime_state
 ---
 # Collaboration: runtime-state-builder
 ## My Role in Crews
@@ -75,5 +72,4 @@ I define variable mental state agents accumulate during sessions — decision tr
 | [[runtime-state-builder]] | related | 0.51 |
 | [[bld_memory_runtime_state]] | related | 0.47 |
 | [[bld_orchestration_mental_model]] | sibling | 0.46 |
-| [[p03_ins_runtime_state]] | related | 0.44 |
 | [[bld_knowledge_runtime_state]] | upstream | 0.37 |

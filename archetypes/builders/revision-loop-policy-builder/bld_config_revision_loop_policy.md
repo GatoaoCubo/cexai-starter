@@ -17,11 +17,8 @@ tldr: "P09 config knobs for revision_loop_policy builder"
 keywords: [revision_loop_policy construction, revision loop policy builder, config, revision_loop_policy, builder, governance, rlp_max_iterations, rlp_quality_floor, rlp_escalation_target, user]
 density_score: 0.87
 related:
- - n00_revision_loop_policy_manifest
  - rlp_{{name}}
  - bld_memory_revision_loop_policy
- - p11_out_tpl_revision_loop_policy
- - bld_kc_revision_loop_policy
 ---
 ## Builder Configuration
 
@@ -83,8 +80,4 @@ builder_config:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_revision_loop_policy_manifest]] | related | 0.33 |
-| [[rlp_{{name}}]] | related | 0.32 |
 | [[bld_memory_revision_loop_policy]] | upstream | 0.31 |
-| [[p11_out_tpl_revision_loop_policy]] | upstream | 0.31 |
-| [[bld_kc_revision_loop_policy]] | upstream | 0.30 |

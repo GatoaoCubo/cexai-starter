@@ -17,9 +17,6 @@ updated: "2026-04-14"
 keywords: [mcp_app_extension construction, mcp_app_extension, builder, output_template, markdown, app manifest, sandbox policy, related artifacts, app_id app_id, entry_url entry_url]
 density_score: 0.85
 related:
-  - p04_qg_mcp_app_extension
-  - bld_instruction_mcp_app_extension
-  - bld_knowledge_card_mcp_app_extension
   - bld_schema_mcp_app_extension
   - mcp-app-extension-builder
 ---

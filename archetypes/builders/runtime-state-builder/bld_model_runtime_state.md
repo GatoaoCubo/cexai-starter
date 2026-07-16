@@ -34,9 +34,6 @@ parent: null
 8f: "F3_inject"
 related:
   - bld_memory_runtime_state
-  - bld_collaboration_runtime_state
-  - bld_knowledge_card_runtime_state
-  - p03_ins_runtime_state
   - bld_architecture_runtime_state
 ---
 ## Identity
@@ -121,5 +118,4 @@ Deliver a `runtime_state` artifact with this structure:
 | [[bld_memory_runtime_state]] | related | 0.61 |
 | [[bld_orchestration_runtime_state]] | related | 0.61 |
 | [[bld_knowledge_runtime_state]] | upstream | 0.54 |
-| [[p03_ins_runtime_state]] | related | 0.51 |
 | [[bld_architecture_runtime_state]] | upstream | 0.49 |

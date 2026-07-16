@@ -30,12 +30,6 @@ keywords:
   - "agent_group"
   - "quality"
 density_score: 0.90
-related:
-  - bld_instruction_context_doc
-  - bld_instruction_handoff_protocol
-  - bld_instruction_memory_scope
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
 ---
 # Instructions: How to Produce a dispatch_rule
 ## Phase 1: CLASSIFY
@@ -92,12 +86,3 @@ python _tools/cex_skill_loader.py --verify dispatch
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_context_doc]] | sibling | 0.43 |
-| [[bld_instruction_handoff_protocol]] | sibling | 0.42 |
-| [[bld_instruction_memory_scope]] | sibling | 0.42 |
-| [[bld_instruction_retriever_config]] | sibling | 0.42 |
-| [[bld_instruction_output_validator]] | sibling | 0.41 |

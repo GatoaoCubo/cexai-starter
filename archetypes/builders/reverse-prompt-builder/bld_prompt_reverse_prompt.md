@@ -29,9 +29,6 @@ density_score: 0.91
 llm_function: REASON
 related:
   - reverse-prompt-builder
-  - bld_knowledge_card_reverse_prompt
-  - bld_collaboration_reverse_prompt
-  - schema_reverse_prompt_builder
   - bld_memory_reverse_prompt
 ---
 ## Context
@@ -135,7 +132,4 @@ HARD gates (all must pass -- fix before delivering):
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reverse-prompt-builder]] | related | 0.48 |
-| [[bld_knowledge_card_reverse_prompt]] | upstream | 0.47 |
-| [[bld_collaboration_reverse_prompt]] | related | 0.47 |
-| [[schema_reverse_prompt_builder]] | downstream | 0.45 |
 | [[bld_memory_reverse_prompt]] | downstream | 0.39 |

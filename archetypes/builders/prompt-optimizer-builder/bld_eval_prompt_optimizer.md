@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [prompt_optimizer construction, quality gate prompt optimizer, prompt_optimizer, builder, quality_gate, quality gate, fail condition]
 density_score: 0.85
-related:
-  - p03_qg_prompt_technique
-  - p11_qg_quality_gate
-  - p03_qg_reasoning_strategy
-  - p11_qg_validator
-  - p11_qg_usage_report
 ---
 ## Quality Gate
 

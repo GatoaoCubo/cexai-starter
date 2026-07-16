@@ -58,11 +58,6 @@ domain: brand-identity-monetization
 tags: [agent_card, commercial, N06, brand, identity, monetization, sonnet]
 tldr: "brand_architect: Sonnet 4.6 model (Opus for brand-from-scratch escalation), Anthropic Max subscription. Phase 1 = Brand Discovery (12-15 Qs -> brand book -> brand_config.yaml -> propagate). Phase 2 = Revenue (pricing, funnels, courses -- all brand-aligned)."
 density_score: 0.94
-related:
-  - p12_dr_commercial
-  - p02_agent_commercial_nucleus
-  - p08_ac_brand_nucleus
-  - p03_sp_brand_nucleus
 ---
 
 ## Role

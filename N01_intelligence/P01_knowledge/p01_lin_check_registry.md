@@ -15,11 +15,6 @@ author: "n01_intelligence"
 quality: null
 tags: [lineage_record, knowledge-provenance, ruff, pre-commit, great-expectations, MIT, Apache-2.0, r162, check_registry, d3_wave]
 tldr: "Provenance for _tools/cex_check_registry.py (R-162's first typed pluggable-check slice): clean-room mechanic transplant from 3 sources (Ruff MIT, pre-commit MIT, Great Expectations Apache-2.0) -- concepts only, no source code copied, both licenses double-verified."
-related:
-  - kc_oss_ruff
-  - kc_oss_pre_commit
-  - kc_oss_great_expectations
-  - improvement_register
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_distill. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

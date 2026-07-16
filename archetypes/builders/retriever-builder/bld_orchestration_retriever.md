@@ -14,10 +14,7 @@ keywords: [collaboration iso - retriever, retriever p, workflow coordination, an
 density_score: 1.0
 title: Collaboration ISO - retriever
 related:
-  - bld_collaboration_retriever_config
   - retriever-builder
-  - bld_collaboration_search_tool
-  - bld_collaboration_vector_store
   - bld_architecture_retriever
 ---
 # Collaboration: retriever-builder

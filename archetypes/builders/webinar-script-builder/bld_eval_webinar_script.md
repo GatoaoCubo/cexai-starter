@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [webinar_script construction, webinar script quality gate, hard gates and, minimum publish score, webinar_script, builder, quality_gate]
 density_score: 0.85
 related:
-  - bld_instruction_webinar_script
   - bld_schema_webinar_script
   - webinar-script-builder
-  - p10_lr_webinar_script_builder
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 ## Definition

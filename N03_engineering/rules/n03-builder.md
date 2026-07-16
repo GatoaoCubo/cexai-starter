@@ -21,10 +21,6 @@ keywords: [iso, yaml frontmatter]
 density_score: 0.90
 related:
   - kind-builder
-  - p03_sp_n03_creation_nucleus
-  - p01_faq_cex_common_questions
-  - p03_sp_builder_nucleus
-  - p11_fb_research_pipeline
 ---
 
 # N03 Builder Rules
@@ -124,6 +120,4 @@ the quality of meta-construction artifacts cascades into every downstream artifa
 |----------|-------------|-------|
 | kind-builder | related | 0.37 |
 | p03_sp_n03_creation_nucleus | upstream | 0.36 |
-| [[p01_faq_cex_common_questions]] | upstream | 0.35 |
 | p03_sp_builder_nucleus | upstream | 0.33 |
-| [[p11_fb_research_pipeline]] | downstream | 0.32 |

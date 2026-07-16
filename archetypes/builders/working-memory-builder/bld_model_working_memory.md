@@ -32,11 +32,7 @@ parent: null
 8f: "F3_inject"
 density_score: 1.0
 related:
-  - bld_collaboration_working_memory
-  - p01_kc_working_memory
   - bld_architecture_working_memory
-  - bld_knowledge_card_working_memory
-  - bld_instruction_working_memory
 ---
 ## Identity
 
@@ -139,8 +135,4 @@ context_slots: {slot_name: type}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_working_memory]] | downstream | 0.68 |
-| [[p01_kc_working_memory]] | related | 0.51 |
 | [[bld_architecture_working_memory]] | upstream | 0.50 |
-| [[bld_knowledge_card_working_memory]] | upstream | 0.48 |
-| [[bld_instruction_working_memory]] | upstream | 0.46 |

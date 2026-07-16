@@ -21,9 +21,6 @@ density_score: 0.85
 related:
   - reward-model-builder
   - rl-algorithm-builder
-  - n00_reward_model_manifest
-  - kc_reward_model
-  - p02_qg_rl_algorithm
 ---
 ## Crew Role  
 Designs and implements core reinforcement learning algorithms (e.g., policy gradient, Q-learning), ensuring compatibility with environment interfaces and training protocols.  
@@ -50,6 +47,3 @@ Does NOT define training loops, hyperparameter schedules, or reward functions. T
 |----------|-------------|-------|
 | [[reward-model-builder]] | upstream | 0.32 |
 | [[rl-algorithm-builder]] | upstream | 0.29 |
-| [[n00_reward_model_manifest]] | upstream | 0.29 |
-| [[kc_reward_model]] | upstream | 0.29 |
-| [[p02_qg_rl_algorithm]] | upstream | 0.29 |

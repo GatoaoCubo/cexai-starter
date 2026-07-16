@@ -24,10 +24,7 @@ for, knowledge boundaries]
 density_score: 0.90
 related:
   - system-prompt-builder
-  - bld_collaboration_system_prompt
-  - bld_knowledge_card_system_prompt
   - action-prompt-builder
-  - p11_qg_system_prompt
 ---
 # Memory: system-prompt-builder
 ## Summary
@@ -90,4 +87,3 @@ python _tools/cex_score.py --apply bld-memory-system-prompt.md
 | [[bld_orchestration_system_prompt]] | upstream | 0.44 |
 | [[bld_knowledge_system_prompt]] | upstream | 0.37 |
 | [[action-prompt-builder]] | upstream | 0.37 |
-| [[p11_qg_system_prompt]] | upstream | 0.35 |

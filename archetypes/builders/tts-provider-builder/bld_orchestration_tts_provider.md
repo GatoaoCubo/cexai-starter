@@ -20,10 +20,7 @@ does, related artifacts]
 density_score: 0.85
 related:
   - tts-provider-builder
-  - bld_collaboration_voice_pipeline
-  - bld_instruction_tts_provider
   - voice-pipeline-builder
-  - bld_collaboration_prosody_config
 ---
 ## Crew Role  
 Manages integration with external TTS APIs, ensuring compatibility, configuration management, and error handling for text-to-speech synthesis.  
@@ -49,7 +46,4 @@ Does NOT handle voice pipeline architecture (voice_pipeline_builder) or prosody 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[tts-provider-builder]] | upstream | 0.37 |
-| [[bld_collaboration_voice_pipeline]] | sibling | 0.33 |
-| [[bld_instruction_tts_provider]] | upstream | 0.28 |
 | [[voice-pipeline-builder]] | upstream | 0.27 |
-| [[bld_collaboration_prosody_config]] | sibling | 0.27 |

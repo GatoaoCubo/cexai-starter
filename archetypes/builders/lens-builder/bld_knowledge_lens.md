@@ -19,9 +19,7 @@ keywords: [atomic searchable facts, lens construction, knowledge card lens, lens
 density_score: 0.90
 related:
   - lens-builder
-  - p03_ins_lens
   - bld_architecture_lens
-  - bld_collaboration_lens
   - bld_memory_lens
 ---
 # Domain Knowledge: lens
@@ -74,7 +72,6 @@ Lenses are analytical perspectives applied to artifacts to filter, emphasize, or
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[lens-builder]] | related | 0.63 |
-| [[p03_ins_lens]] | downstream | 0.62 |
 | [[bld_architecture_lens]] | downstream | 0.58 |
 | [[bld_orchestration_lens]] | related | 0.53 |
 | [[bld_memory_lens]] | downstream | 0.52 |

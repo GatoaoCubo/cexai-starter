@@ -21,7 +21,6 @@ llm_function: BECOME
 8f: "F2_become"
 related:
   - bld_architecture_synthetic_data_config
-  - kc_synthetic_data_config
   - bld_orchestration_synthetic_data_config
   - bld_knowledge_synthetic_data_config
   - bld_prompt_synthetic_data_config
@@ -48,7 +47,6 @@ I do NOT handle: model training (distillation_config), evaluation (eval_metric),
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_synthetic_data_config]] | downstream | 0.47 |
-| [[kc_synthetic_data_config]] | upstream | 0.47 |
 | [[bld_orchestration_synthetic_data_config]] | downstream | 0.46 |
 | [[bld_knowledge_synthetic_data_config]] | upstream | 0.44 |
 | [[bld_prompt_synthetic_data_config]] | downstream | 0.43 |

@@ -28,8 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, db connector construction, config db connector, db_connector, builder, examples, "p04_conn_{service_slug}.md"]
 density_score: 0.90
 related:
-  - bld_config_client
-  - bld_schema_connector
   - bld_config_daemon
   - bld_config_memory_scope
   - bld_config_prompt_version
@@ -78,8 +76,6 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_config_client]] | sibling | 0.41 |
-| [[bld_schema_connector]] | upstream | 0.32 |
 | [[bld_config_daemon]] | sibling | 0.32 |
 | [[bld_config_memory_scope]] | sibling | 0.31 |
 | [[bld_config_prompt_version]] | sibling | 0.31 |

@@ -9,10 +9,6 @@ author: n03_engineering
 quality: null
 tags: [instruction, shared, constitution, producer_rail, governance, sub_agent, P11]
 tldr: "Five commandments (I ground, II never-self-score, VI type-contract, VII untrusted-input, IX canonical-vocabulary) that every bulk producer / native sub-agent obeys by construction. Duplicated into .claude/agents/*.md and tpl_prompt_package.md by cex_wire_producer_rail.py."
-related:
-  - p11_sp_constitution
-  - constitution
-  - tpl_prompt_package
 ---
 
 # Producer Rail

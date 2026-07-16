@@ -32,10 +32,6 @@ parent: null
 8f: "F7_govern"
 related:
   - bld_architecture_benchmark
-  - p01_kc_benchmark
-  - bld_collaboration_benchmark
-  - bld_instruction_benchmark
-  - bld_knowledge_card_benchmark
 ---
 ## Identity
 
@@ -132,7 +128,3 @@ Max body: 4096 bytes. All numeric values must include units. No vague performanc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_benchmark]] | downstream | 0.51 |
-| [[p01_kc_benchmark]] | related | 0.47 |
-| [[bld_collaboration_benchmark]] | downstream | 0.46 |
-| [[bld_instruction_benchmark]] | upstream | 0.46 |
-| [[bld_knowledge_card_benchmark]] | upstream | 0.42 |

@@ -18,10 +18,7 @@ keywords: [quantization_config construction, tools quantization config, quantiza
 density_score: 0.85
 related:
   - quantization-config-builder
-  - bld_knowledge_card_quantization_config
   - bld_schema_quantization_config
-  - p10_lr_quantization_config_builder
-  - bld_collaboration_quantization_config
 ---
 ## Production Tools
 | Tool | Purpose | When |
@@ -44,7 +41,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[quantization-config-builder]] | downstream | 0.41 |
-| [[bld_knowledge_card_quantization_config]] | upstream | 0.40 |
 | [[bld_schema_quantization_config]] | downstream | 0.34 |
-| [[p10_lr_quantization_config_builder]] | downstream | 0.34 |
-| [[bld_collaboration_quantization_config]] | downstream | 0.32 |

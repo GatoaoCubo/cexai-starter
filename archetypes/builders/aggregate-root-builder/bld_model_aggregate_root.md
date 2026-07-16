@@ -19,11 +19,8 @@ domain: aggregate_root
 triggers: ["define aggregate root", "create domain entity", "enforce domain invariants"]
 keywords: [aggregate_root, ddd, domain, invariant, entity, consistency_boundary]
 related:
-  - kc_aggregate_root
-  - bld_instruction_aggregate_root
   - bld_architecture_aggregate_root
   - bld_knowledge_aggregate_root
-  - bld_rules_aggregate_root
 ---
 ## Identity
 
@@ -89,8 +86,5 @@ You only handle aggregate root modeling.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_aggregate_root]] | sibling | 0.55 |
-| [[bld_instruction_aggregate_root]] | related | 0.48 |
 | [[bld_architecture_aggregate_root]] | sibling | 0.47 |
 | [[bld_knowledge_aggregate_root]] | sibling | 0.45 |
-| [[bld_rules_aggregate_root]] | sibling | 0.43 |

@@ -19,10 +19,6 @@ audit, key concepts, immutable log, event timestamp, log enrichment]
 density_score: 0.85
 related:
   - audit-log-builder
-  - bld_instruction_audit_log
-  - kc_audit_log
-  - n00_audit_log_manifest
-  - bld_collaboration_audit_log
 ---
 ## Domain Overview
 Audit logs are critical for SOC2 Type II compliance, ensuring data integrity, accountability, and traceability of system activities. They capture immutable records of user actions, system events, and configuration changes, enabling auditors to verify controls over security, availability, processing integrity, confidentiality, and privacy. SOC2 Type II requirements emphasize the need for logs that are tamper-evident, timestamped, and accessible for review, aligning with industry standards for forensic analysis and regulatory reporting.
@@ -70,7 +66,3 @@ Immutable audit logs prevent unauthorized modification, a key defense against da
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[audit-log-builder]] | downstream | 0.53 |
-| [[bld_instruction_audit_log]] | downstream | 0.47 |
-| [[kc_audit_log]] | sibling | 0.41 |
-| [[n00_audit_log_manifest]] | sibling | 0.32 |
-| [[bld_collaboration_audit_log]] | downstream | 0.31 |

@@ -19,9 +19,6 @@ keywords: [finetune_config construction, knowledge card finetune config, domain 
 density_score: 0.90
 related:
   - finetune-config-builder
-  - p01_kc_finetune_config
-  - bld_instruction_finetune_config
-  - p11_qg_finetune_config
   - bld_config_finetune_config
 ---
 # Domain Knowledge: finetune_config
@@ -109,7 +106,4 @@ finetune_config is NOT a model_provider (runtime API routing) and NOT a model_ca
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[finetune-config-builder]] | downstream | 0.49 |
-| [[p01_kc_finetune_config]] | sibling | 0.49 |
-| [[bld_instruction_finetune_config]] | downstream | 0.44 |
-| [[p11_qg_finetune_config]] | downstream | 0.41 |
 | [[bld_config_finetune_config]] | downstream | 0.37 |

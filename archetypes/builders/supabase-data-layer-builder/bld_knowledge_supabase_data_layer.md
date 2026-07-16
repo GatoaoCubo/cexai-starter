@@ -19,11 +19,8 @@ linked_artifacts:
   primary: null
 llm_function: INJECT
 related:
-  - bld_manifest_supabase_data_layer
-  - p12_wf_supabase_setup
   - bld_memory_supabase_data_layer
   - bld_architecture_supabase_data_layer
-  - p01_kc_supabase_data_layer_n04
 ---
 # Supabase Data Layer — Builder Knowledge
 
@@ -101,8 +98,5 @@ Supabase is a full data platform (not just a database): PostgreSQL 15+ with 12 i
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_supabase_data_layer]] | downstream | 0.50 |
-| [[p12_wf_supabase_setup]] | downstream | 0.46 |
 | [[bld_memory_supabase_data_layer]] | related | 0.44 |
 | [[bld_architecture_supabase_data_layer]] | downstream | 0.44 |
-| [[p01_kc_supabase_data_layer_n04]] | sibling | 0.44 |

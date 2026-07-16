@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - bld_architecture_kind
-  - bld_instruction_kind
   - kind-builder
-  - p06_td_cex_artifact_type_n03
-  - bld_collaboration_kind
 ---
 # Tools: kind-builder
 
@@ -128,7 +125,4 @@ python _tools/cex_score.py --apply bld_tools_kind.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_kind]] | downstream | 0.50 |
-| [[bld_instruction_kind]] | upstream | 0.43 |
 | [[kind-builder]] | downstream | 0.40 |
-| [[p06_td_cex_artifact_type_n03]] | downstream | 0.39 |
-| [[bld_collaboration_kind]] | downstream | 0.39 |

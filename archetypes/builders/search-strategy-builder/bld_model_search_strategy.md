@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - p10_lr_search_strategy_builder
-  - bld_knowledge_card_search_strategy
   - bld_architecture_search_strategy
-  - kc_search_strategy
-  - p04_qg_search_strategy
 ---
 ## Identity
 
@@ -66,8 +62,4 @@ The search_strategy-builder agent designs inference-time compute allocation stra
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_search_strategy_builder]] | downstream | 0.51 |
-| [[bld_knowledge_card_search_strategy]] | upstream | 0.49 |
 | [[bld_architecture_search_strategy]] | downstream | 0.40 |
-| [[kc_search_strategy]] | upstream | 0.39 |
-| [[p04_qg_search_strategy]] | downstream | 0.37 |

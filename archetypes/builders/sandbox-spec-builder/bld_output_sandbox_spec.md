@@ -20,7 +20,6 @@ related:
   - bld_schema_sandbox_spec
   - bld_config_sandbox_config
   - bld_config_sandbox_spec
-  - kc_sandbox_config
   - code-executor-builder
 ---
 ```yaml
@@ -68,5 +67,4 @@ sandbox:
 | [[bld_schema_sandbox_spec]] | downstream | 0.28 |
 | [[bld_config_sandbox_config]] | downstream | 0.26 |
 | [[bld_config_sandbox_spec]] | downstream | 0.26 |
-| [[kc_sandbox_config]] | upstream | 0.25 |
 | [[code-executor-builder]] | upstream | 0.25 |

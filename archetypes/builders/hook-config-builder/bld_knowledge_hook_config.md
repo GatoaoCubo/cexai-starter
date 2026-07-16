@@ -31,11 +31,7 @@ keywords:
   - "hub actions"
 density_score: 0.90
 related:
-  - p10_lr_hook_config_builder
   - hook-config-builder
-  - p01_kc_hook_config
-  - p11_qg_hook_config
-  - bld_instruction_hook_config
 ---
 # Domain Knowledge: hook_config
 ## Executive Summary
@@ -77,8 +73,4 @@ Hook lifecycle configuration — declares which hooks fire at each build phase. 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_hook_config_builder]] | downstream | 0.55 |
 | [[hook-config-builder]] | downstream | 0.48 |
-| [[p01_kc_hook_config]] | sibling | 0.47 |
-| [[p11_qg_hook_config]] | downstream | 0.47 |
-| [[bld_instruction_hook_config]] | downstream | 0.45 |

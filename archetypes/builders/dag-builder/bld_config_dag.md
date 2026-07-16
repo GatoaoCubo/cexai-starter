@@ -29,10 +29,7 @@ keywords: [naming conventions, file paths, and operational constraints, dag cons
 density_score: 0.90
 related:
   - bld_tools_dag
-  - bld_collaboration_dag
   - bld_architecture_dag
-  - bld_output_template_dag
-  - p11_qg_dag
 ---
 # Config: dag Production Rules
 ## Naming Convention
@@ -92,7 +89,4 @@ python _tools/cex_score.py --apply bld-config-dag.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_dag]] | upstream | 0.41 |
-| [[bld_collaboration_dag]] | downstream | 0.38 |
 | [[bld_architecture_dag]] | upstream | 0.38 |
-| [[bld_output_template_dag]] | upstream | 0.35 |
-| [[p11_qg_dag]] | downstream | 0.35 |

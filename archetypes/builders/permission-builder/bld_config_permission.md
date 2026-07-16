@@ -29,10 +29,7 @@ keywords: [limits for permission production, permission construction, config per
 density_score: 0.90
 related:
   - bld_schema_permission
-  - bld_output_template_permission
-  - p03_ins_permission
   - bld_memory_permission
-  - bld_knowledge_card_permission
 ---
 # Config: permission Production Rules
 ## Naming
@@ -73,7 +70,5 @@ python _tools/cex_score.py --apply bld-config-permission.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_permission]] | upstream | 0.47 |
-| [[bld_output_template_permission]] | upstream | 0.41 |
-| [[p03_ins_permission]] | upstream | 0.40 |
 | [[bld_memory_permission]] | downstream | 0.40 |
 | [[bld_knowledge_permission]] | upstream | 0.39 |

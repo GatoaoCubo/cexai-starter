@@ -31,11 +31,8 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - p01_kc_instruction
-  - bld_collaboration_instruction
   - system-prompt-builder
   - bld_architecture_instruction
-  - n00_instruction_manifest
 ---
 ## Identity
 

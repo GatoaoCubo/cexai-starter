@@ -16,12 +16,6 @@ updated: "2026-04-18"
 keywords: [builder identity, routing for curation_nudge, curation_nudge construction, type builder curation nudge, curation_nudge, builder, type_builder]
 density_score: 0.89
 tldr: "Builder identity, capabilities, routing for curation_nudge"
-related:
- - n00_curation_nudge_manifest
- - kc_curation_nudge
- - p11_ins_curation_nudge
- - bld_kc_curation_nudge
- - p11_arch_curation_nudge
 ---
 ## Identity
 
@@ -111,12 +105,3 @@ Always produce a single `curation_nudge` artifact with:
 - Mapping `destination = knowledge_card` with `auto_write = true`: KC requires full 8F pipeline, not direct write
 - Reusing same nudge id across trigger types: causes signal collision in multi-nudge session configs
 - Using prose prompt_template without `{{observation}}`: fires generically with no context for the agent to evaluate
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[n00_curation_nudge_manifest]] | related | 0.56 |
-| [[kc_curation_nudge]] | upstream | 0.55 |
-| [[p11_ins_curation_nudge]] | related | 0.47 |
-| [[bld_kc_curation_nudge]] | upstream | 0.46 |
-| [[p11_arch_curation_nudge]] | related | 0.41 |

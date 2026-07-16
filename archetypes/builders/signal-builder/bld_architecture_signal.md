@@ -18,10 +18,7 @@ keywords: [component map of signal, and architectural position, signal construct
 density_score: 0.90
 related:
   - signal-builder
-  - bld_collaboration_signal
   - bld_memory_signal
-  - bld_knowledge_card_signal
-  - p03_ins_signal_builder
 ---
 # Architecture: signal in the CEX
 ## Component Inventory
@@ -71,4 +68,3 @@ signal           --signals-->      downstream_action
 | [[bld_orchestration_signal]] | downstream | 0.51 |
 | [[bld_memory_signal]] | downstream | 0.42 |
 | [[bld_knowledge_signal]] | downstream | 0.42 |
-| [[p03_ins_signal_builder]] | upstream | 0.41 |

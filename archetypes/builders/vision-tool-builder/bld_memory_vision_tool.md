@@ -26,11 +26,8 @@ title: "Memory Vision Tool"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_instruction_vision_tool
-  - bld_output_template_vision_tool
   - vision-tool-builder
   - bld_schema_vision_tool
-  - p11_qg_vision_tool
 ---
 ## Summary
 Vision tools are consumed by data pipelines where low-confidence detections are indistinguishable from correct results unless filtered at the spec level. The two most common causes of vision tool integration failure are: (1) undeclared confidence_threshold producing noisy output, and (2) missing supported_formats causing callers to send incompatible image types.
@@ -95,7 +92,5 @@ python _tools/cex_score.py --apply p10-lr-vision-tool-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_prompt_vision_tool]] | upstream | 0.43 |
-| [[bld_output_template_vision_tool]] | upstream | 0.36 |
 | [[vision-tool-builder]] | upstream | 0.34 |
 | [[bld_schema_vision_tool]] | upstream | 0.34 |
-| [[p11_qg_vision_tool]] | downstream | 0.33 |

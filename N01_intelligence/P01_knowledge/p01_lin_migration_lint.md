@@ -13,11 +13,6 @@ author: n01_intelligence
 quality: null
 tags: [lineage_record, knowledge-provenance, golang-migrate, dbmate, alembic, mit, migration_lint, domain_d4, R-005]
 tldr: "Provenance for _tools/cex_migration_lint.py: 3-way MECHANIC-ONLY transplant (golang-migrate pairing, dbmate version-parse, Alembic chain-integrity), all MIT, clean-room re-derivation, no source code copied. Dogfood-verified against real supabase/migrations/ (catches the known missing down_20260625000001_public_catalog.sql)."  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
-related:
-  - kc_oss_golang_migrate
-  - kc_oss_dbmate
-  - kc_oss_alembic
-  - improvement_register
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_migration_lint, cex_rls_drift_check. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

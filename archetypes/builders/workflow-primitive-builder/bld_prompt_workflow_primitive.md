@@ -28,10 +28,7 @@ keywords: [workflow primitive builder instructions, typed outputs, composition c
 density_score: 0.86
 llm_function: REASON
 related:
-  - p11_qg_workflow_primitive
-  - bld_knowledge_card_workflow_primitive
   - workflow-primitive-builder
-  - bld_output_template_workflow_primitive
   - bld_config_workflow_primitive
 ---
 ## Context
@@ -159,8 +156,6 @@ OUTPUT: validated workflow_primitive YAML file
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_workflow_primitive]] | downstream | 0.55 |
 | [[bld_knowledge_workflow_primitive]] | upstream | 0.55 |
 | [[workflow-primitive-builder]] | downstream | 0.52 |
-| [[bld_output_template_workflow_primitive]] | downstream | 0.49 |
 | [[bld_config_workflow_primitive]] | downstream | 0.47 |

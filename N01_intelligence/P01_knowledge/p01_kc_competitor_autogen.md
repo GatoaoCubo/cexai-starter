@@ -18,11 +18,7 @@ tldr: "Microsoft AutoGen entered maintenance mode in October 2025, superseded by
 8f: "F3_inject"
 keywords: [multi-agent orchestration, conversation-based orchestration, distributed runtime, message passing, event-driven agents, structured conversation, llm clients, code execution]
 related:
-  - p01_kc_atom_09_autogen_ag2
-  - p01_kc_atom_05_semantic_kernel
-  - p01_kc_llm_agent_frameworks
   - p01_kc_competitor_live_supplement_2026q2
-  - cm_cex_vs_landscape
 ---
 
 # AutoGen — Competitive Intelligence Profile
@@ -195,6 +191,5 @@ The lesson: a framework that cannot govern itself cannot be trusted to govern pr
 |----------|-------------|-------|
 | p01_kc_atom_09_autogen_ag2 | sibling | 0.41 |
 | p01_kc_atom_05_semantic_kernel | sibling | 0.32 |
-| [[p01_kc_llm_agent_frameworks]] | sibling | 0.29 |
 | [[p01_kc_competitor_live_supplement_2026q2]] | sibling | 0.26 |
 | cm_cex_vs_landscape | downstream | 0.26 |

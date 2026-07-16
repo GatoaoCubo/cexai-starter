@@ -19,10 +19,7 @@ keywords: [cex system, 8f pipeline, 12 pillars, nucleus, n07 orchestrator, kind,
 density_score: null
 related:
   - kc_lens_index
-  - tpl_research_batch_maps
-  - tpl_research_batch_cnae
   - kc_lens_factory
-  - p03_pt_mentor_socratic
 ---
 
 # Lens: City

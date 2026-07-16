@@ -18,12 +18,6 @@ keywords: [competitive_matrix construction, collaboration competitive matrix, co
 analyzes, receives from, produces for, boundary  
 does, related artifacts]
 density_score: 0.85
-related:
-  - bld_collaboration_customer_segment
-  - bld_collaboration_cohort_analysis
-  - bld_collaboration_eval_metric
-  - bld_collaboration_discovery_questions
-  - bld_collaboration_reward_model
 ---
 ## Crew Role  
 Analyzes competitor data, structures features/benefits, and generates visual comparison matrices for strategic decision-making.  

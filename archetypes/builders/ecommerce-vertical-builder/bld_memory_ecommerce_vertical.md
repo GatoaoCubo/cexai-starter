@@ -22,10 +22,6 @@ this, related artifacts]
 density_score: 0.85
 related:
   - ecommerce-vertical-builder
-  - bld_instruction_ecommerce_vertical
-  - kc_ecommerce_vertical
-  - bld_knowledge_card_ecommerce_vertical
-  - p01_qg_ecommerce_vertical
 ---
 ## Observation
 Common issues include fragmented PCI-DSS compliance across checkout flows, inconsistent fraud detection logic, and misaligned recommendation engines with user intent. Cart/checkout abandonment often stems from poor UX or security friction.
@@ -50,7 +46,3 @@ This learning record applies to ecommerce vertical artifact construction, coveri
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ecommerce-vertical-builder]] | upstream | 0.59 |
-| [[bld_instruction_ecommerce_vertical]] | upstream | 0.55 |
-| [[kc_ecommerce_vertical]] | upstream | 0.53 |
-| [[bld_knowledge_card_ecommerce_vertical]] | upstream | 0.50 |
-| [[p01_qg_ecommerce_vertical]] | downstream | 0.40 |

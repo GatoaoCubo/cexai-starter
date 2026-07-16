@@ -25,11 +25,8 @@ failure, scoring
 dimensions, pass fail]
 density_score: 0.85
 related:
-  - bld_collaboration_smoke_eval
   - smoke-eval-builder
   - bld_memory_smoke_eval
-  - bld_knowledge_card_smoke_eval
-  - p11_qg_unit_eval
 ---
 ## Quality Gate
 

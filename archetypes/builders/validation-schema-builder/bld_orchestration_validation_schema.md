@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [validation schema construction, collaboration validation schema, validation_schema, builder, examples, "### crew: new kind onboarding", my role, crew compositions, output quality pipeline, new kind onboarding]
 density_score: 0.90
 related:
-  - bld_collaboration_validator
   - validation-schema-builder
-  - bld_collaboration_type_def
-  - bld_collaboration_response_format
-  - bld_collaboration_output_validator
 ---
 # Collaboration: validation-schema-builder
 ## My Role in Crews

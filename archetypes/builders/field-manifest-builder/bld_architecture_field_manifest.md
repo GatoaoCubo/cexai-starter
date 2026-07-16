@@ -17,11 +17,9 @@ updated: "2026-07-03"
 keywords: [component map of field_manifest, and architectural position, field manifest construction, architecture field manifest, field_manifest, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.88
 related:
-  - bld_knowledge_card_field_manifest
   - bld_architecture_input_schema
   - bld_architecture_type_def
   - field-manifest-builder
-  - bld_instruction_field_manifest
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -73,8 +71,6 @@ field_manifest.fields[].kind      --keys--> HandlerRegistry (field_kind, tenant)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_field_manifest]] | upstream | 0.40 |
 | [[bld_architecture_input_schema]] | sibling | 0.39 |
 | [[bld_architecture_type_def]] | sibling | 0.37 |
 | [[field-manifest-builder]] | upstream | 0.36 |
-| [[bld_instruction_field_manifest]] | upstream | 0.34 |

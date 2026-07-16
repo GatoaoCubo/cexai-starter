@@ -18,9 +18,6 @@ keywords: [workflow_node construction, instruction workflow node, workflow_node,
 density_score: 0.85
 related:
   - workflow-node-builder
-  - bld_instruction_visual_workflow
-  - bld_collaboration_workflow_node
-  - n00_workflow_node_manifest
   - visual-workflow-builder
 ---
 ## Phase 1: RESEARCH  
@@ -53,7 +50,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-node-builder]] | downstream | 0.47 |
-| [[bld_instruction_visual_workflow]] | sibling | 0.40 |
-| [[bld_collaboration_workflow_node]] | downstream | 0.37 |
-| [[n00_workflow_node_manifest]] | downstream | 0.33 |
 | [[visual-workflow-builder]] | downstream | 0.32 |

@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [role_assignment construction, output template role assignment, role_assignment, builder, output_template, composable, crewai, -- bound to, emits to, role header]
 density_score: 0.86
 related:
-  - p11_qg_role_assignment
   - role-assignment-builder
-  - bld_instruction_role_assignment
-  - bld_knowledge_card_role_assignment
   - bld_schema_role_assignment
 ---
 ```markdown

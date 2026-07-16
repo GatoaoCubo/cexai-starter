@@ -19,10 +19,6 @@ keywords: [product match construction, knowledge card product match, product_mat
 density_score: 0.90
 related:
   - bld_schema_product_match
-  - bld_knowledge_card_vision_tool
-  - p08_adr_opportunity_matrix_kind
-  - n01_sourcing_rigor
-  - n03_schema
 ---
 
 # Domain Knowledge: product_match

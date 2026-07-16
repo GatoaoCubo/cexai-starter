@@ -12,9 +12,6 @@ keywords: [agent, tool, function_def, handoff, guardrail, session, task, pipelin
 density_score: 0.95
 related:
   - p01_kc_cex_llm_vocabulary_whitepaper
-  - p01_kc_taxonomy_completeness_audit
-  - p01_kc_terminology_rosetta_stone
-  - p01_kc_atom_03_openai_agents_sdk
 ---
 
 # LLM Vocabulary Atlas: Universal Term Registry

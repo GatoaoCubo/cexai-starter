@@ -32,9 +32,6 @@ parent: null
 8f: "F1_constrain"
 related:
   - bld_memory_permission
-  - p03_ins_permission
-  - bld_knowledge_card_permission
-  - bld_collaboration_permission
   - bld_architecture_permission
 ---
 ## Identity
@@ -116,7 +113,6 @@ Produce a permission artifact with YAML frontmatter followed by: `## Roles` (tab
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_permission]] | downstream | 0.61 |
-| [[p03_ins_permission]] | upstream | 0.61 |
 | [[bld_knowledge_permission]] | upstream | 0.59 |
 | [[bld_orchestration_permission]] | related | 0.56 |
 | [[bld_architecture_permission]] | upstream | 0.55 |

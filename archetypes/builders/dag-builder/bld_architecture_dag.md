@@ -17,11 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of dag, and architectural position, dag construction, architecture dag, builder, examples, component inventory, dependency graph, boundary table, layer map]
 density_score: 0.90
 related:
-  - bld_collaboration_dag
-  - n00_dag_manifest
-  - p01_kc_dag
   - dag-builder
-  - p01_kc_orchestration_runtime
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -75,8 +71,4 @@ dispatch_rule (P12) --independent-- dag (routing policy is orthogonal to structu
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_dag]] | downstream | 0.68 |
-| [[n00_dag_manifest]] | downstream | 0.64 |
-| [[p01_kc_dag]] | downstream | 0.60 |
 | [[dag-builder]] | downstream | 0.57 |
-| [[p01_kc_orchestration_runtime]] | upstream | 0.51 |

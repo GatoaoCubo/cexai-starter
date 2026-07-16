@@ -17,11 +17,8 @@ keywords: [training_method construction, collaboration training method, collabor
 after completion:, upstream dependencies, downstream products, crew roles]
 density_score: 0.86
 related:
-  - bld_collaboration_model_architecture
   - bld_architecture_training_method
   - training-method-builder
-  - n00_training_method_manifest
-  - p10_lr_training_method_builder
 ---
 # Collaboration: training-method-builder
 
@@ -72,8 +69,5 @@ write_signal('n03', 'complete', 9.0)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_architecture]] | sibling | 0.46 |
 | [[bld_architecture_training_method]] | upstream | 0.42 |
 | [[training-method-builder]] | upstream | 0.39 |
-| [[n00_training_method_manifest]] | upstream | 0.37 |
-| [[p10_lr_training_method_builder]] | upstream | 0.34 |

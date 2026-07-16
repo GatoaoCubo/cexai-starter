@@ -13,9 +13,7 @@ tldr: "2026 toolchain reference for turning a long OBS recording into short clip
 when_to_use: "Load (F3 INJECT) when choosing a video-editing/shorts toolchain. Consult for 'what do I install today to cut a 60-min recording into captioned shorts?'"
 primary_8f: INJECT
 related:
-  - p01_kc_workflow
   - visual-workflow-builder
-  - kc_visual_workflow
 ---
 
 # Video Editing Toolchain 2026 -- Long Recording to Shorts Workflow

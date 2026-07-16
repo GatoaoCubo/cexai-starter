@@ -4,8 +4,6 @@ description: "Builds ONE lifecycle_rule artifact via 8F pipeline. Loads lifecycl
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_manifest_lifecycle_rule
-  - p03_sp_builder_nucleus
   - kind-builder
   - system-prompt-builder
   - p11_lc_{{RULE_SLUG}}
@@ -86,7 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_lifecycle_rule]] | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.30 |
 | kind-builder | related | 0.30 |
 | [[system-prompt-builder]] | related | 0.27 |

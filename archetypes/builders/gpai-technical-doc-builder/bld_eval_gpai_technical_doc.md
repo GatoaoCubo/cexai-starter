@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [gpai_technical_doc construction, gpai_technical_doc, builder, quality_gate, gpai, eu-ai-act, annex-iv]
 density_score: 0.85
 related:
-  - bld_instruction_gpai_technical_doc
   - bld_schema_gpai_technical_doc
   - gpai-technical-doc-builder
-  - bld_knowledge_card_gpai_technical_doc
-  - bld_output_template_gpai_technical_doc
 ---
 ## Quality Gate
 

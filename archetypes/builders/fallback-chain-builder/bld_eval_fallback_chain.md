@@ -18,10 +18,7 @@ updated: "2026-03-27"
 density_score: 0.92
 related:
   - fallback-chain-builder
-  - bld_instruction_fallback_chain
-  - p11_qg_chain
   - bld_architecture_fallback_chain
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 

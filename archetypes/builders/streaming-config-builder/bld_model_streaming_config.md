@@ -35,10 +35,6 @@ parent: null
 8f: "F6_produce"
 related:
   - bld_architecture_streaming_config
-  - bld_knowledge_card_streaming_config
-  - bld_collaboration_streaming_config
-  - n00_streaming_config_manifest
-  - bld_instruction_streaming_config
 ---
 ## Identity
 
@@ -121,7 +117,3 @@ not a trace_config (observability), not a rate_limit_config (throttling).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_streaming_config]] | downstream | 0.54 |
-| [[bld_knowledge_card_streaming_config]] | upstream | 0.52 |
-| [[bld_collaboration_streaming_config]] | downstream | 0.52 |
-| [[n00_streaming_config_manifest]] | related | 0.46 |
-| [[bld_instruction_streaming_config]] | upstream | 0.42 |

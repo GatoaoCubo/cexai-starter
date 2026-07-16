@@ -26,10 +26,6 @@ author: n02_reviewer
 keywords: ["collaboration pattern", "coordination topology", "agent roles", "communication channels", "consensus mechanism", "mesh network", "multi-agent coordination"]
 related:
   - bld_memory_collaboration_pattern
-  - p01_kc_pillar_brief_p12_orchestration_en
-  - p11_qg_collaboration_pattern
-  - bld_instruction_collaboration_pattern
-  - bld_collaboration_agent
 ---
 ## Identity
 
@@ -120,7 +116,3 @@ Deliver a `collaboration_pattern` artifact with this structure:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_collaboration_pattern]] | upstream | 0.51 |
-| [[p01_kc_pillar_brief_p12_orchestration_en]] | related | 0.40 |
-| [[p11_qg_collaboration_pattern]] | upstream | 0.39 |
-| [[bld_instruction_collaboration_pattern]] | upstream | 0.39 |
-| [[bld_collaboration_agent]] | related | 0.36 |

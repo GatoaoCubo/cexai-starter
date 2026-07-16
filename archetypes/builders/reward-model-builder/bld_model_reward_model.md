@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - kc_reward_model
-  - bld_knowledge_card_reward_model
-  - p10_lr_reward_model_builder
-  - n00_reward_model_manifest
-  - bld_output_template_reward_model
 ---
 ## Identity
 
@@ -62,12 +56,3 @@ The reward_model-builder agent designs and configures process/outcome reward mod
 3. Model configurations must include explainability hooks for auditability and transparency.  
 4. Parameters must be calibrated to prevent reward hacking or over-optimization of narrow metrics.  
 5. Complies with regulatory requirements for fairness, accountability, and transparency in AI governance.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_reward_model]] | upstream | 0.66 |
-| [[bld_knowledge_card_reward_model]] | upstream | 0.65 |
-| [[p10_lr_reward_model_builder]] | downstream | 0.58 |
-| [[n00_reward_model_manifest]] | related | 0.54 |
-| [[bld_output_template_reward_model]] | upstream | 0.48 |

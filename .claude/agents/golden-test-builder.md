@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - golden-test-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_golden_test
-  - p11_fb_golden_test
 ---
 
 # golden-test-builder Sub-Agent
@@ -90,4 +87,3 @@ Five duties bind any agent that emits an artifact:
 | kind-builder | related | 0.31 |
 | p03_sp_builder_nucleus | related | 0.30 |
 | [[bld_orchestration_golden_test]] | related | 0.28 |
-| [[p11_fb_golden_test]] | related | 0.27 |

@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_config_usage_quota
-  - bld_collaboration_usage_quota
-  - bld_instruction_usage_quota
 ---
 
 # usage-quota-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[bld_config_usage_quota]] | related | 0.31 |
-| [[bld_collaboration_usage_quota]] | related | 0.30 |
-| [[bld_instruction_usage_quota]] | related | 0.29 |

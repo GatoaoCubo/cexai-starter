@@ -27,7 +27,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_prompt_template
-  - p03_ins_prompt_package
   - prompt-package-builder
   - bld_architecture_prompt_package
   - bld_config_prompt_package
@@ -121,7 +120,6 @@ f6_prompt_package`; missing `## TEMPLATE`; `target_kind` not in `.cex/kinds_meta
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_schema_prompt_template | sibling | 0.56 |
-| [[p03_ins_prompt_package]] | related | 0.55 |
 | [[prompt-package-builder]] | related | 0.53 |
 | [[bld_architecture_prompt_package]] | related | 0.50 |
 | bld_config_prompt_package | sibling | 0.48 |

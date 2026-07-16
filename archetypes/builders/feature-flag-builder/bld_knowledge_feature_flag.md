@@ -20,10 +20,6 @@ feature, spec table, feature toggles]
 density_score: 0.90
 related:
   - feature-flag-builder
-  - bld_collaboration_feature_flag
-  - p10_lr_feature_flag_builder
-  - p09_ff_n05
-  - p01_kc_feature_flag
 ---
 # Domain Knowledge: feature_flag
 ## Executive Summary
@@ -77,7 +73,3 @@ Feature flags are on/off toggles that control feature availability at runtime wi
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[feature-flag-builder]] | downstream | 0.62 |
-| [[bld_collaboration_feature_flag]] | downstream | 0.55 |
-| [[p10_lr_feature_flag_builder]] | downstream | 0.50 |
-| [[p09_ff_n05]] | downstream | 0.46 |
-| [[p01_kc_feature_flag]] | sibling | 0.44 |

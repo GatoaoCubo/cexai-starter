@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - messaging-gateway-builder
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_messaging_gateway_manifest
-  - bld_kc_messaging_gateway
 ---
 
 # messaging-gateway-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[messaging-gateway-builder]] | related | 0.36 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.30 |
-| [[n00_messaging_gateway_manifest]] | related | 0.30 |
-| [[bld_kc_messaging_gateway]] | related | 0.29 |

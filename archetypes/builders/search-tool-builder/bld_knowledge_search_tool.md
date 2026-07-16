@@ -20,10 +20,6 @@ search, spec table, provider comparison, best for]
 density_score: 0.90
 related:
   - search-tool-builder
-  - p10_lr_search_tool_builder
-  - bld_collaboration_search_tool
-  - p11_qg_search_tool
-  - bld_instruction_search_tool
 ---
 # Domain Knowledge: search_tool
 ## Executive Summary
@@ -85,7 +81,5 @@ Search tools connect LLM agents to external search services, returning ranked re
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[search-tool-builder]] | downstream | 0.58 |
-| [[p10_lr_search_tool_builder]] | downstream | 0.55 |
 | [[bld_orchestration_search_tool]] | downstream | 0.48 |
-| [[p11_qg_search_tool]] | downstream | 0.47 |
 | [[bld_prompt_search_tool]] | downstream | 0.46 |

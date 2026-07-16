@@ -25,9 +25,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - preference-dataset-builder
-  - bld_collaboration_preference_dataset
-  - bld_knowledge_card_preference_dataset
-  - p11_qg_preference_dataset
   - bld_architecture_preference_dataset
 ---
 ## Summary
@@ -75,7 +72,4 @@ This ISO operates within the `preference-dataset-builder` stack. Preference_data
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[preference-dataset-builder]] | related | 0.45 |
-| [[bld_collaboration_preference_dataset]] | downstream | 0.43 |
-| [[bld_knowledge_card_preference_dataset]] | upstream | 0.40 |
-| [[p11_qg_preference_dataset]] | related | 0.36 |
 | [[bld_architecture_preference_dataset]] | upstream | 0.34 |

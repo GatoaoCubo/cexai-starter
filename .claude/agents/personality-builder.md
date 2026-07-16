@@ -4,11 +4,9 @@ description: "Builds ONE personality artifact via 8F pipeline. Loads personality
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p02_model_en
   - bld_architecture_personality
   - personality-builder
   - kind-builder
-  - n00_personality_manifest
 ---
 
 # personality-builder Sub-Agent

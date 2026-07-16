@@ -15,11 +15,7 @@ keywords: [lifecycle rule construction, output template lifecycle rule, lifecycl
 density_score: 0.90
 llm_function: PRODUCE
 related:
-  - bld_output_template_runtime_state
-  - bld_manifest_lifecycle_rule
-  - p03_ins_lifecycle_rule
   - bld_architecture_lifecycle_rule
-  - bld_knowledge_card_lifecycle_rule
 ---
 ```yaml
 pillar: P05
@@ -85,8 +81,5 @@ linked_artifacts:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_runtime_state]] | sibling | 0.33 |
-| [[bld_manifest_lifecycle_rule]] | related | 0.31 |
-| [[p03_ins_lifecycle_rule]] | related | 0.31 |
 | [[bld_architecture_lifecycle_rule]] | related | 0.30 |
 | [[bld_knowledge_lifecycle_rule]] | related | 0.30 |

@@ -4,10 +4,7 @@ description: "Builds ONE marketplace_app_manifest artifact via 8F pipeline. Load
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_marketplace_app_manifest
   - bld_config_marketplace_app_manifest
-  - p11_fb_marketplace_app_manifest
-  - n00_marketplace_app_manifest_manifest
   - kind-builder
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_marketplace_app_manifest]] | related | 0.38 |
 | [[bld_config_marketplace_app_manifest]] | related | 0.36 |
-| [[p11_fb_marketplace_app_manifest]] | related | 0.32 |
-| [[n00_marketplace_app_manifest_manifest]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |

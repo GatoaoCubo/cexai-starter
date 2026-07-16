@@ -31,8 +31,6 @@ keywords:
 density_score: 0.90
 related:
   - preference-dataset-builder
-  - bld_instruction_preference_dataset
-  - p11_lr_preference_dataset_builder
   - bld_architecture_preference_dataset
   - bld_schema_preference_dataset
 ---

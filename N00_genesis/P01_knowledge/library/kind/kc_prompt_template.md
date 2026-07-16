@@ -30,10 +30,7 @@ cross_provider:
   haystack: "PromptBuilder with Jinja2"
 related:
   - bld_memory_prompt_template
-  - bld_collaboration_prompt_template
   - prompt-template-builder
-  - bld_knowledge_card_prompt_template
-  - p03_ins_prompt_template
 ---
 
 # Prompt Template
@@ -110,4 +107,3 @@ A prompt template is a reusable mold containing {{variable}} placeholders that, 
 | [[bld_orchestration_prompt_template]] | related | 0.42 |
 | [[prompt-template-builder]] | related | 0.41 |
 | [[bld_knowledge_prompt_template]] | sibling | 0.39 |
-| [[p03_ins_prompt_template]] | related | 0.39 |

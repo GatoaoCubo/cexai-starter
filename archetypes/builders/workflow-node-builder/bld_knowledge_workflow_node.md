@@ -18,10 +18,7 @@ keywords: [workflow_node construction, knowledge card workflow node, canonical r
 density_score: 0.92
 related:
   - bld_schema_workflow_node
-  - p01_kc_atom_06_langchain_langgraph
   - workflow-node-builder
-  - p12_qg_workflow_node
-  - bld_collaboration_workflow_node
 ---
 ## Domain Overview
 
@@ -81,7 +78,4 @@ In modern LLM agent systems, LangGraph made the state-graph model the de facto s
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_workflow_node]] | downstream | 0.37 |
-| [[p01_kc_atom_06_langchain_langgraph]] | sibling | 0.36 |
 | [[workflow-node-builder]] | downstream | 0.35 |
-| [[p12_qg_workflow_node]] | downstream | 0.29 |
-| [[bld_collaboration_workflow_node]] | downstream | 0.28 |

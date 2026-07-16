@@ -30,11 +30,7 @@ keywords:
   - "calculation method"
 density_score: 0.85
 related:
-  - n00_reward_model_manifest
   - reward-model-builder
-  - bld_knowledge_card_reward_model
-  - kc_reward_model
-  - p10_lr_reward_model_builder
 ---
 ```yaml
 id: p07_rwm_{{slug}}               # e.g. p07_rwm_dialogue_quality
@@ -94,8 +90,4 @@ where:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_reward_model_manifest]] | downstream | 0.43 |
 | [[reward-model-builder]] | downstream | 0.43 |
-| [[bld_knowledge_card_reward_model]] | upstream | 0.41 |
-| [[kc_reward_model]] | upstream | 0.41 |
-| [[p10_lr_reward_model_builder]] | downstream | 0.40 |

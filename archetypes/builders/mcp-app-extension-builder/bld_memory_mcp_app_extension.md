@@ -19,10 +19,7 @@ early, apps extension]
 density_score: 0.85
 related:
   - mcp-app-extension-builder
-  - bld_knowledge_card_mcp_app_extension
   - bld_tools_mcp_app_extension
-  - bld_collaboration_mcp_app_extension
-  - bld_instruction_mcp_app_extension
 ---
 ## Observation
 Early mcp_app_extension drafts conflated Apps Extension manifests with plain mcp_server contracts, asked for broad permission scopes without justification, and skipped the terminate handler. Several drafts treated the parent-frame DOM as reachable, violating the SEP-1865 sandbox policy and failing Anthropic + OpenAI client review.
@@ -45,7 +42,4 @@ Across a sample of early drafts, manifests with explicit install/launch/terminat
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mcp-app-extension-builder]] | upstream | 0.50 |
-| [[bld_knowledge_card_mcp_app_extension]] | upstream | 0.47 |
 | [[bld_tools_mcp_app_extension]] | upstream | 0.47 |
-| [[bld_collaboration_mcp_app_extension]] | downstream | 0.46 |
-| [[bld_instruction_mcp_app_extension]] | upstream | 0.39 |

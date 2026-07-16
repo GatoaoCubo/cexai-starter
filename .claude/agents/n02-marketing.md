@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - nucleus_def_n02
   - agent_card_n02
-  - n02_marketing
-  - p10_pm_n02
-  - n07-orchestrator
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_crew. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
@@ -131,6 +128,5 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[nucleus_def_n02]] | primary | 0.90 |
 | [[agent_card_n02]] | upstream | 0.60 |
-| [[n02_marketing]] | upstream | 0.55 |
 | p10_pm_n02 | upstream | 0.40 |
 | n07-orchestrator | related | 0.35 |

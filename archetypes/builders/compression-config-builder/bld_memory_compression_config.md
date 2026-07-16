@@ -34,10 +34,7 @@ context]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_compression_config
-  - p11_qg_compression_config
   - compression-config-builder
-  - p01_kc_compression_config
   - bld_tools_memory_type
 ---
 ## Summary
@@ -78,8 +75,5 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_compression_config]] | upstream | 0.45 |
-| [[p11_qg_compression_config]] | downstream | 0.35 |
 | [[compression-config-builder]] | upstream | 0.33 |
-| [[p01_kc_compression_config]] | related | 0.33 |
 | [[bld_tools_memory_type]] | upstream | 0.31 |

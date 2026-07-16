@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [model card construction, collaboration model card, model_card, builder, examples, "### crew: bootstrap new agent_group", "### crew: model comparison", my role, crew compositions, build new agent]
 density_score: 0.90
 related:
-  - bld_collaboration_model_provider
   - model-card-builder
-  - bld_collaboration_agent_card
-  - bld_collaboration_agent
-  - bld_collaboration_mental_model
 ---
 # Collaboration: model-card-builder
 ## My Role in Crews
@@ -75,8 +71,4 @@ None. model-card-builder is INDEPENDENT (layer 0 infrastructure).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_provider]] | sibling | 0.48 |
 | [[model-card-builder]] | related | 0.38 |
-| [[bld_collaboration_agent_card]] | sibling | 0.36 |
-| [[bld_collaboration_agent]] | sibling | 0.36 |
-| [[bld_collaboration_mental_model]] | sibling | 0.35 |

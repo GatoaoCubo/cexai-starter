@@ -32,11 +32,8 @@ keywords:
   - "| treatment | {{treatment_description}} |"
 density_score: 0.90
 related:
-  - p11_qg_experiment_config
   - bld_schema_experiment_config
   - bld_config_experiment_config
-  - bld_instruction_experiment_config
-  - bld_knowledge_card_experiment_config
 ---
 # Output Template: experiment_config
 ```yaml
@@ -116,8 +113,5 @@ Allocation total: 100%. `{{hold_out_rule_if_any}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_experiment_config]] | downstream | 0.54 |
 | [[bld_schema_experiment_config]] | downstream | 0.40 |
 | [[bld_config_experiment_config]] | downstream | 0.36 |
-| [[bld_instruction_experiment_config]] | upstream | 0.36 |
-| [[bld_knowledge_card_experiment_config]] | upstream | 0.31 |

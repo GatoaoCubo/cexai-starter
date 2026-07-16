@@ -16,10 +16,7 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_tools_aggregate_root
-  - bld_context_sources_value_object
   - bld_knowledge_aggregate_root
-  - bld_instruction_aggregate_root
-  - bld_rules_aggregate_root
 ---
 # Context Sources: aggregate_root
 ## Mandatory Loads (F3 INJECT)
@@ -72,7 +69,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_aggregate_root]] | sibling | 0.49 |
-| [[bld_context_sources_value_object]] | sibling | 0.46 |
 | [[bld_knowledge_aggregate_root]] | sibling | 0.44 |
-| [[bld_instruction_aggregate_root]] | related | 0.40 |
-| [[bld_rules_aggregate_root]] | sibling | 0.39 |

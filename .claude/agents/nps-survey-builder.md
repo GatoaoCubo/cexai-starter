@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_nps_survey
   - nps-survey-builder
-  - n00_nps_survey_manifest
-  - bld_collaboration_nps_survey
-  - p11_fb_nps_survey
 ---
 
 # nps-survey-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[bld_config_nps_survey]] | related | 0.36 |
 | [[nps-survey-builder]] | related | 0.34 |
-| [[n00_nps_survey_manifest]] | related | 0.34 |
-| [[bld_collaboration_nps_survey]] | related | 0.33 |
-| [[p11_fb_nps_survey]] | related | 0.32 |

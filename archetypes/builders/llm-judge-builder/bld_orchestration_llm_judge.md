@@ -19,10 +19,6 @@ keywords: [llm judge construction, collaboration llm judge, llm_judge, builder, 
 density_score: 0.90
 related:
   - llm-judge-builder
-  - p01_kc_llm_judge
-  - bld_collaboration_judge_config
-  - n00_llm_judge_manifest
-  - n00_judge_config_manifest
 ---
 # Collaboration: llm-judge-builder
 ## My Role in Crews

@@ -18,9 +18,6 @@ keywords: [partner_listing construction, tools partner listing, partner_listing,
 density_score: 0.85
 related:
   - partner-listing-builder
-  - bld_output_template_partner_listing
-  - bld_collaboration_partner_listing
-  - bld_knowledge_card_partner_listing
 ---
 ## Production Tools
 | Tool              | Purpose                  | When                      |
@@ -49,6 +46,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[partner-listing-builder]] | downstream | 0.41 |
-| [[bld_output_template_partner_listing]] | downstream | 0.39 |
-| [[bld_collaboration_partner_listing]] | downstream | 0.38 |
-| [[bld_knowledge_card_partner_listing]] | upstream | 0.35 |

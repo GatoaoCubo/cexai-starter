@@ -22,7 +22,6 @@ related:
   - bld_schema_pitch_deck
   - bld_schema_quickstart_guide
   - bld_schema_reranker_config
-  - bld_schema_social_publisher
 ---
 
 # Schema: research_pipeline

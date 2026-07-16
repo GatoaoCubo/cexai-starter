@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [api_reference construction, knowledge card api reference, api_reference, builder, knowledge_card, domain overview, key concepts, status codes, query parameters, path parameters]
 density_score: 0.85
 related:
-  - bld_knowledge_card_quickstart_guide
-  - kc_api_reference
-  - bld_knowledge_card_sdk_example
   - api-reference-builder
-  - bld_knowledge_card_oauth_app_config
 ---
 ## Domain Overview
 API reference documentation serves as a critical interface between API providers and consumers, enabling developers to understand and integrate with an API effectively. It standardizes communication by detailing endpoints, request/response formats, authentication mechanisms, and usage examples. In modern software ecosystems, especially in SaaS, microservices, and platform economies, comprehensive API references are essential for onboarding developers, ensuring interoperability, and reducing integration friction. They also act as a contract, defining expected behavior and constraints for both producers and consumers of an API.
@@ -65,8 +61,4 @@ API reference documentation serves as a critical interface between API providers
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_quickstart_guide]] | sibling | 0.46 |
-| [[kc_api_reference]] | sibling | 0.42 |
-| [[bld_knowledge_card_sdk_example]] | sibling | 0.38 |
 | [[api-reference-builder]] | downstream | 0.37 |
-| [[bld_knowledge_card_oauth_app_config]] | sibling | 0.32 |

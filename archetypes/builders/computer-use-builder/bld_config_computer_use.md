@@ -29,10 +29,6 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_schema_computer_use
-  - bld_output_template_computer_use
-  - p11_qg_computer_use
-  - bld_knowledge_card_computer_use
-  - bld_instruction_computer_use
 ---
 # Config: computer_use Production Rules
 
@@ -76,7 +72,5 @@ Rule: resolution MUST be WxH format (e.g., "1024x768").
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_computer_use]] | upstream | 0.38 |
-| [[bld_output_template_computer_use]] | upstream | 0.38 |
-| [[p11_qg_computer_use]] | downstream | 0.38 |
 | [[bld_knowledge_computer_use]] | upstream | 0.38 |
 | [[bld_prompt_computer_use]] | upstream | 0.35 |

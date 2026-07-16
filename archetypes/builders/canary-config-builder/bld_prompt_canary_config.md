@@ -21,12 +21,6 @@ tldr: "Build a canary_config with traffic stages, analysis intervals, and rollba
 8f: "F6_produce"
 keywords: [canary config builder instructions, analysis intervals, and rollback trigger configuration, instruction, canary_config, rollout, service_name, canary_version, stable_version, stages]
 density_score: null
-related:
-  - bld_manifest_canary_config
-  - kc_canary_config
-  - bld_quality_gate_canary_config
-  - bld_knowledge_card_canary_config
-  - bld_output_template_canary_config
 ---
 ## Context
 The canary-config-builder produces a `canary_config` -- a progressive delivery specification that shifts traffic incrementally from stable to canary version with automatic rollback if metrics breach thresholds. NOT feature_flag (boolean toggle), NOT ab_test_config (statistical experiment), NOT deployment_manifest (artifact list).
@@ -62,12 +56,3 @@ Conditions that cause automatic rollback to stable_version:
 ### Phase 4: Compose Artifact
 Required frontmatter: id, kind, pillar, service_name, canary_version, stable_version, stages_count, quality: null.
 Required body: Traffic Stages, Rollback Triggers, Analysis Configuration.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_manifest_canary_config]] | related | 0.48 |
-| [[kc_canary_config]] | upstream | 0.46 |
-| [[bld_quality_gate_canary_config]] | upstream | 0.45 |
-| [[bld_knowledge_card_canary_config]] | upstream | 0.42 |
-| [[bld_output_template_canary_config]] | upstream | 0.38 |

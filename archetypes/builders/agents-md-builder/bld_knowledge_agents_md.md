@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - agents-md-builder
   - bld_tools_agents_md
-  - p10_lr_agents_md_builder
-  - bld_instruction_agents_md
-  - bld_collaboration_agents_md
 ---
 ## Domain Overview
 AGENTS.md is the AAIF/OpenAI standardized project-root manifest that instructs coding-agent tooling how to operate inside a repository. It was originated by OpenAI for the Codex CLI in August 2025, and by December 2025 had been adopted by 60,000+ open-source projects. Governance moved to the Agentic AI Foundation (AAIF) under the Linux Foundation in December 2025. The canonical specification lives at https://agents.md/.
@@ -73,6 +70,3 @@ AGENTS.md is complementary to -- not a replacement for -- vendor-specific files.
 |----------|-------------|-------|
 | [[agents-md-builder]] | downstream | 0.70 |
 | [[bld_tools_agents_md]] | downstream | 0.52 |
-| [[p10_lr_agents_md_builder]] | downstream | 0.47 |
-| [[bld_instruction_agents_md]] | downstream | 0.47 |
-| [[bld_collaboration_agents_md]] | downstream | 0.46 |

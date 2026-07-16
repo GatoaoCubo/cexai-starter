@@ -19,9 +19,7 @@ density_score: 0.88
 related:
   - bld_memory_subscription_tier
   - subscription-tier-builder
-  - p11_qg_subscription_tier
   - bld_schema_subscription_tier
-  - p08_pat_pricing_framework
 ---
 ## Domain Overview
 Subscription tiers are the structural unit of SaaS monetization: each tier is a priced bundle of features with a recurring billing cadence. Effective tier design balances simplicity (3-4 tiers max to avoid decision fatigue) with price discrimination across customer segments. Industry systems of record -- Stripe Billing, Chargebee, Recurly, Paddle, Zuora -- impose a canonical contract: an integer `unit_amount` in the smallest currency unit, an ISO 4217 `currency`, a `recurring.interval` in {day, week, month, year}, and an `interval_count`. Tier artifacts that deviate from these semantics break multi-region billing, tax calculation, and proration.
@@ -77,6 +75,5 @@ Beyond mechanics, tier design governs two SaaS metrics that determine enterprise
 |----------|-------------|-------|
 | [[bld_memory_subscription_tier]] | downstream | 0.58 |
 | [[subscription-tier-builder]] | downstream | 0.49 |
-| [[p11_qg_subscription_tier]] | downstream | 0.41 |
 | [[bld_schema_subscription_tier]] | downstream | 0.40 |
 | p08_pat_pricing_framework | downstream | 0.34 |

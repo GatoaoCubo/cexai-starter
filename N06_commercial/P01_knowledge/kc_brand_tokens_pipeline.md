@@ -28,12 +28,6 @@ linked_artifacts:
   related: [n06_output_visual_identity, p03_constraint_brand_config_n06, n06_output_brand_config, p01_kc_agentskills_spec]
 density_score: 0.93
 data_source: "https://www.designtokens.org/glossary/"
-related:
-  - p01_kc_brand_skill
-  - p12_wf_brand_propagation
-  - p03_sp_brand_nucleus
-  - p01_kc_brand_book_patterns
-  - p01_kc_brand_propagation_arch
 ---
 
 ## TL;DR

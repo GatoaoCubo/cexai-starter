@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - motion-scene-builder
   - kind-builder
-  - p06_vs_motion_scene
-  - p01_kc_motion_scene
-  - p03_sp_builder_nucleus
 ---
 
 # motion-scene-builder Sub-Agent
@@ -95,6 +92,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[motion-scene-builder]] | related | 0.35 |
 | [[kind-builder]] | related | 0.32 |
-| [[p06_vs_motion_scene]] | upstream | 0.4 |
-| [[p01_kc_motion_scene]] | related | 0.35 |
-| [[p03_sp_builder_nucleus]] | related | 0.3 |

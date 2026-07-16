@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of diagram, and architectural position, diagram construction, architecture diagram, diagram, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_diagram
-  - n00_diagram_manifest
   - p08_diag_{{SCOPE_SLUG}}
   - diagram-builder
-  - p01_kc_diagram
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -77,8 +74,5 @@ connector (P04) --independent-- diagram (diagram visualizes, does not integrate)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_diagram]] | downstream | 0.71 |
-| [[n00_diagram_manifest]] | related | 0.63 |
 | [\[p08_diag_`{{SCOPE_SLUG}}`\]] | related | 0.60 |
 | [[diagram-builder]] | related | 0.57 |
-| [[p01_kc_diagram]] | related | 0.54 |

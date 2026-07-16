@@ -17,10 +17,6 @@ updated: "2026-04-13"
 keywords: [experiment_tracker construction, output template experiment tracker, frontmatter field guide, required body sections, filled example, experiment_tracker, builder, output_template, execution steps, next steps]
 density_score: 0.85
 related:
-  - bld_output_template_collaboration_pattern
-  - bld_output_template_dataset_card
-  - bld_output_template_thinking_config
-  - bld_output_template_visual_workflow
   - bld_output_retrieval_evaluator
 ---
 ```yaml
@@ -93,8 +89,4 @@ tags: [{{tags}}]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_collaboration_pattern]] | sibling | 0.37 |
-| [[bld_output_template_dataset_card]] | sibling | 0.36 |
-| [[bld_output_template_thinking_config]] | sibling | 0.35 |
-| [[bld_output_template_visual_workflow]] | sibling | 0.34 |
 | [[bld_output_retrieval_evaluator]] | sibling | 0.32 |

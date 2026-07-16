@@ -18,11 +18,7 @@ keywords: [builder identity, routing for mcp_app_extension, mcp_app_extension co
 specializes, apps extension, linux foundation, model context protocol]
 density_score: 0.85
 related:
-  - bld_knowledge_card_mcp_app_extension
-  - bld_collaboration_mcp_app_extension
-  - bld_instruction_mcp_app_extension
   - bld_tools_mcp_app_extension
-  - p04_qg_mcp_app_extension
 ---
 ## Identity
 
@@ -71,8 +67,4 @@ NEVER emit a plain mcp_server artifact here -- those belong to the mcp_server ki
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_mcp_app_extension]] | upstream | 0.66 |
-| [[bld_collaboration_mcp_app_extension]] | downstream | 0.58 |
-| [[bld_instruction_mcp_app_extension]] | upstream | 0.56 |
 | [[bld_tools_mcp_app_extension]] | upstream | 0.54 |
-| [[p04_qg_mcp_app_extension]] | downstream | 0.54 |

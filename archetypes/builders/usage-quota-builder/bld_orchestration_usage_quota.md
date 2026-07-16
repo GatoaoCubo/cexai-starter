@@ -19,10 +19,6 @@ defines, receives from, quota policy validator]
 density_score: 0.85
 related:
   - usage-quota-builder
-  - p10_mem_usage_quota_builder
-  - kc_usage_quota
-  - bld_instruction_usage_quota
-  - bld_knowledge_card_usage_quota
 ---
 ## Crew Role  
 Defines and enforces usage quotas across services, ensuring compliance with predefined limits and policies.  
@@ -48,7 +44,3 @@ Does NOT handle rate_limit_config (RPM) or cost_budget (dollars). Rate limits ar
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[usage-quota-builder]] | upstream | 0.43 |
-| [[p10_mem_usage_quota_builder]] | upstream | 0.41 |
-| [[kc_usage_quota]] | upstream | 0.38 |
-| [[bld_instruction_usage_quota]] | upstream | 0.38 |
-| [[bld_knowledge_card_usage_quota]] | upstream | 0.35 |

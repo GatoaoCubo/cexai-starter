@@ -19,10 +19,6 @@ most]
 density_score: 0.85
 related:
   - gpai-technical-doc-builder
-  - bld_instruction_gpai_technical_doc
-  - p11_qg_gpai_technical_doc
-  - bld_knowledge_card_gpai_technical_doc
-  - bld_collaboration_gpai_technical_doc
 ---
 ## Observation
 Most GPAI providers submitted incomplete technical documentation in the first wave (August-September 2025) due to missing energy consumption data and vague downstream-limit clauses. EU AI Office review guidance highlighted these as the two most common rejection reasons.
@@ -44,7 +40,3 @@ EU AI Office public guidance (Q3 2025) cited 3 most common deficiencies: (1) vag
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[gpai-technical-doc-builder]] | downstream | 0.41 |
-| [[bld_instruction_gpai_technical_doc]] | upstream | 0.34 |
-| [[p11_qg_gpai_technical_doc]] | downstream | 0.34 |
-| [[bld_knowledge_card_gpai_technical_doc]] | upstream | 0.32 |
-| [[bld_collaboration_gpai_technical_doc]] | downstream | 0.28 |

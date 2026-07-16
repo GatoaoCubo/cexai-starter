@@ -26,9 +26,6 @@ title: "Memory Input Schema"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_input_schema
-  - bld_instruction_input_schema
-  - bld_output_template_input_schema
   - bld_schema_input_schema
   - bld_config_memory_type
 ---
@@ -102,6 +99,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_input_schema_builder.md
 |----------|-------------|-------|
 | [[bld_knowledge_input_schema]] | upstream | 0.38 |
 | [[bld_prompt_input_schema]] | upstream | 0.38 |
-| [[bld_output_template_input_schema]] | upstream | 0.34 |
 | [[bld_schema_input_schema]] | upstream | 0.31 |
 | bld_config_memory_type | upstream | 0.30 |

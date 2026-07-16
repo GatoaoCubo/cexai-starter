@@ -14,7 +14,6 @@ keywords: [readme, github stars, content formats, star history chart, show hn, e
 related:
   - p01_kc_seeding_playbook
   - p01_kc_growth_casestudy_organic
-  - p04_browser_awesome_list
   - p01_kc_competitor_live_supplement_2026q2
   - p01_kc_growth_casestudy_viral
 ---

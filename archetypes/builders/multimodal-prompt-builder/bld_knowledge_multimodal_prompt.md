@@ -19,10 +19,7 @@ multimodal, key concepts, visual pretraining]
 density_score: 0.85
 related:
   - multimodal-prompt-builder
-  - p10_mem_multimodal_prompt_builder
-  - bld_instruction_multimodal_prompt
   - multi-modal-config-builder
-  - p03_qg_multimodal_prompt
 ---
 ## Domain Overview
 Multimodal prompts enable systems to process and generate content across vision, audio, and text, driving advancements in AI applications like healthcare diagnostics, AR/VR interfaces, and customer service chatbots. These prompts require alignment between modalities to ensure coherent cross-modal reasoning, often leveraging pretraining on large-scale datasets such as MM-100 or MMBench. Challenges include modality-specific biases, computational overhead, and ensuring semantic consistency across heterogeneous data.
@@ -68,7 +65,5 @@ The field is shaped by research emphasizing cross-modal retrieval, fusion archit
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[multimodal-prompt-builder]] | downstream | 0.65 |
-| [[p10_mem_multimodal_prompt_builder]] | downstream | 0.54 |
 | [[bld_prompt_multimodal_prompt]] | downstream | 0.45 |
 | multi-modal-config-builder | downstream | 0.40 |
-| [[p03_qg_multimodal_prompt]] | downstream | 0.39 |

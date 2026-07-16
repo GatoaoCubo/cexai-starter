@@ -18,10 +18,7 @@ keywords: [contributor_guide construction, contributor guide builder memory, top
 density_score: 0.85
 related:
   - contributor-guide-builder
-  - bld_instruction_contributor_guide
-  - bld_output_template_contributor_guide
   - bld_tools_contributor_guide
-  - p05_qg_contributor_guide
 ---
 ## Observations
 
@@ -63,7 +60,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[contributor-guide-builder]] | upstream | 0.51 |
-| [[bld_instruction_contributor_guide]] | upstream | 0.42 |
-| [[bld_output_template_contributor_guide]] | upstream | 0.34 |
 | [[bld_tools_contributor_guide]] | upstream | 0.32 |
-| [[p05_qg_contributor_guide]] | downstream | 0.30 |

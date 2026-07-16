@@ -19,10 +19,6 @@ changelogs, hub releases]
 density_score: 0.85
 related:
   - changelog-builder
-  - p01_qg_changelog
-  - kc_changelog
-  - bld_output_template_changelog
-  - bld_instruction_changelog
 ---
 ## Domain Overview
 Changelogs are structured records of product changes that enable users to assess upgrade impact and migration effort. The de-facto standard is Keep a Changelog (keepachangelog.com) which defines six change categories per release. Version numbering follows SemVer 2.0 (semver.org): MAJOR for breaking changes, MINOR for backward-compatible features, PATCH for backward-compatible fixes.
@@ -72,7 +68,3 @@ Industry references include Stripe API versioning (date-based API versions with 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[changelog-builder]] | related | 0.57 |
-| [[p01_qg_changelog]] | downstream | 0.54 |
-| [[kc_changelog]] | sibling | 0.53 |
-| [[bld_output_template_changelog]] | downstream | 0.53 |
-| [[bld_instruction_changelog]] | downstream | 0.52 |

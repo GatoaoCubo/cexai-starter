@@ -18,10 +18,7 @@ keywords: [ap style, and wire service distribution, press_release construction, 
 density_score: 0.85
 related:
   - press-release-builder
-  - bld_collaboration_press_release
   - bld_tools_press_release
-  - bld_instruction_press_release
-  - n00_press_release_manifest
 ---
 ## Domain Overview
 
@@ -88,7 +85,4 @@ and owned media (company newsroom/press page).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[press-release-builder]] | downstream | 0.62 |
-| [[bld_collaboration_press_release]] | downstream | 0.44 |
 | [[bld_tools_press_release]] | downstream | 0.43 |
-| [[bld_instruction_press_release]] | downstream | 0.38 |
-| [[n00_press_release_manifest]] | sibling | 0.37 |

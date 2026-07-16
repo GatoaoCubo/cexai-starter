@@ -20,9 +20,6 @@ density_score: 0.88
 related:
   - batch-config-builder
   - bld_architecture_batch_config
-  - bld_knowledge_card_batch_config
-  - bld_instruction_batch_config
-  - p01_kc_batch_config
 ---
 # Collaboration: batch-config-builder
 
@@ -96,6 +93,3 @@ I specify async bulk API job parameters so batch processing is cost-controlled a
 |----------|-------------|-------|
 | [[batch-config-builder]] | upstream | 0.48 |
 | [[bld_architecture_batch_config]] | upstream | 0.44 |
-| [[bld_knowledge_card_batch_config]] | upstream | 0.36 |
-| [[bld_instruction_batch_config]] | upstream | 0.35 |
-| [[p01_kc_batch_config]] | upstream | 0.34 |

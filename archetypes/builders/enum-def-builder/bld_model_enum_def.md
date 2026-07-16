@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_enum_def
-  - bld_instruction_enum_def
   - bld_architecture_enum_def
-  - bld_knowledge_card_enum_def
-  - p01_kc_enum_def
 ---
 ## Identity
 

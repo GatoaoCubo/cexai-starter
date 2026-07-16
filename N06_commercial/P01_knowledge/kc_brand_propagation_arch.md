@@ -22,12 +22,6 @@ axioms:
 linked_artifacts:
   primary: p01_kc_brand_tokens_pipeline
   related: [n06_output_visual_identity, p03_constraint_brand_config_n06, n06_output_brand_config]
-related:
-  - p01_kc_design_token_arch
-  - p01_kc_brand_tokens_pipeline
-  - p01_kc_brand_skill
-  - p01_kc_color_theory_applied
-  - n02_kc_color_theory_applied
 ---
 
 # Brand Propagation Architecture
@@ -458,4 +452,3 @@ Brad Frost defines 5 component levels — tokens permeate all levels:
 | [[kc_brand_tokens_pipeline]] | sibling | 0.40 |
 | p01_kc_brand_skill | sibling | 0.38 |
 | p01_kc_color_theory_applied | sibling | 0.35 |
-| [[n02_kc_color_theory_applied]] | sibling | 0.35 |

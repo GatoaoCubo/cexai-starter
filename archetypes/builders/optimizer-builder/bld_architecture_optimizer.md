@@ -18,10 +18,7 @@ keywords: [component map of optimizer, and architectural position, optimizer con
 density_score: 0.90
 related:
   - optimizer-builder
-  - bld_collaboration_optimizer
   - bld_memory_optimizer
-  - p11_qg_optimizer
-  - n00_optimizer_manifest
 ---
 # Architecture: optimizer in the CEX
 ## Component Inventory
@@ -70,7 +67,4 @@ optimizer       --produces-->  action_execution
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[optimizer-builder]] | downstream | 0.58 |
-| [[bld_collaboration_optimizer]] | downstream | 0.53 |
 | [[bld_memory_optimizer]] | downstream | 0.52 |
-| [[p11_qg_optimizer]] | downstream | 0.50 |
-| [[n00_optimizer_manifest]] | downstream | 0.47 |

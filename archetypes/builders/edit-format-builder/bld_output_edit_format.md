@@ -20,10 +20,8 @@ updated: "2026-04-13"
 keywords: [edit_format, output_template, whole_file, search_replace, unified_diff]
 density_score: 0.90
 related:
-  - bld_knowledge_card_edit_format
   - bld_schema_edit_format
   - edit-format-builder
-  - n00_edit_format_manifest
   - bld_architecture_edit_format
 ---
 ## Variant A: Whole File Format
@@ -232,8 +230,6 @@ Best for: git workflows, code review tools, standard patch application.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_edit_format]] | upstream | 0.36 |
 | [[bld_schema_edit_format]] | downstream | 0.35 |
 | [[edit-format-builder]] | downstream | 0.35 |
-| [[n00_edit_format_manifest]] | downstream | 0.30 |
 | [[bld_architecture_edit_format]] | downstream | 0.26 |

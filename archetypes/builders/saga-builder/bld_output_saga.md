@@ -30,11 +30,7 @@ keywords:
   - "topology topology"
 density_score: null
 related:
-  - bld_instruction_saga
   - bld_schema_saga
-  - bld_quality_gate_saga
-  - bld_manifest_saga
-  - kc_saga
 ---
 # Output Template: saga
 
@@ -107,8 +103,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_saga]] | downstream | 0.39 |
 | [[bld_schema_saga]] | downstream | 0.37 |
-| [[bld_quality_gate_saga]] | downstream | 0.36 |
-| [[bld_manifest_saga]] | downstream | 0.30 |
-| [[kc_saga]] | sibling | 0.29 |

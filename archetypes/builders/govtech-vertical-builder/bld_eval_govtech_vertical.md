@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [govtech_vertical construction, quality gate govtech vertical, govtech_vertical, builder, quality_gate, quality gate, fail condition]
 density_score: 0.85
 related:
-  - bld_instruction_govtech_vertical
   - govtech-vertical-builder
-  - bld_knowledge_card_govtech_vertical
-  - p10_mem_govtech_vertical_builder
   - govtech_vertical_digital_services
 ---
 ## Quality Gate

@@ -16,11 +16,8 @@ long_tails:
 density_score: 1.0
 updated: "2026-04-13"
 related:
-  - p01_kc_agent
   - p01_kc_cex_llm_vocabulary_whitepaper
   - p01_kc_competitor_autogen
-  - p01_kc_taxonomy_completeness_audit
-  - cm_cex_vs_landscape
 ---
 
 # LLM Agent Frameworks Comparison

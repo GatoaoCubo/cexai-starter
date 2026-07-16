@@ -18,11 +18,8 @@ updated: "2026-04-18"
 keywords: [persona construction, config knobs for personality-builder, tone presets, verbosity defaults, humor defaults, anti-pattern strictness, personality, builder, config, hermes_origin]
 density_score: 0.87
 related:
-  - bld_instruction_personality
   - bld_config_default
   - bld_schema_personality
-  - p11_qg_personality
-  - n00_personality_manifest
 ---
 # Config: personality-builder
 
@@ -101,5 +98,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 | [[bld_prompt_personality]] | upstream | 0.29 |
 | [[bld_config_default]] | related | 0.28 |
 | [[bld_schema_personality]] | upstream | 0.27 |
-| [[p11_qg_personality]] | downstream | 0.26 |
 | n00_personality_manifest | upstream | 0.26 |

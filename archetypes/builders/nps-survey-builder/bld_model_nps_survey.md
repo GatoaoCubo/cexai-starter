@@ -18,12 +18,6 @@ keywords: [builder identity, routing for nps_survey, nps_survey construction, ty
 specializes, net promoter score, routing  
 keywords]
 density_score: 0.85
-related:
-  - bld_knowledge_card_nps_survey
-  - bld_collaboration_nps_survey
-  - bld_instruction_nps_survey
-  - n00_nps_survey_manifest
-  - kc_nps_survey
 ---
 ## Identity
 
@@ -67,12 +61,3 @@ ALWAYS use standardized NPS terminology and validated routing logic.
 ALWAYS ensure compliance with data privacy regulations (e.g., GDPR, CCPA) in segmentation and storage.  
 NEVER include customer segment definitions or cohort analysis parameters.  
 NEVER generate surveys without explicit scale, question, or routing configuration inputs.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_nps_survey]] | upstream | 0.50 |
-| [[bld_collaboration_nps_survey]] | downstream | 0.47 |
-| [[bld_instruction_nps_survey]] | upstream | 0.45 |
-| [[n00_nps_survey_manifest]] | related | 0.39 |
-| [[kc_nps_survey]] | upstream | 0.39 |

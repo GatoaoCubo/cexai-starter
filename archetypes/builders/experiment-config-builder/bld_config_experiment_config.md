@@ -28,9 +28,7 @@ updated: "2026-04-13"
 keywords: [naming conventions, file paths, size limits, operational constraints for experiment_config, experiment config construction, config experiment config, experiment_config, builder, config, "p09_ec_{name_slug}.yaml"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_experiment_config
   - bld_schema_experiment_config
-  - bld_output_template_experiment_config
   - bld_config_retriever_config
   - bld_config_memory_scope
 ---
@@ -104,8 +102,6 @@ python _tools/cex_score.py --apply bld_config_experiment_config.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_experiment_config]] | upstream | 0.32 |
 | [[bld_schema_experiment_config]] | upstream | 0.32 |
-| [[bld_output_template_experiment_config]] | upstream | 0.31 |
 | [[bld_config_retriever_config]] | sibling | 0.31 |
 | [[bld_config_memory_scope]] | sibling | 0.30 |

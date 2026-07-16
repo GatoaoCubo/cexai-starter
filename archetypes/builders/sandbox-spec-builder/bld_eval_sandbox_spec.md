@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [sandbox_spec construction, quality gate sandbox spec, sandbox_spec, builder, quality_gate, "## anti-example 1: missing security controls", quality gate, isolation level, fail condition, scoring guide]
 density_score: 0.85
 related:
-  - p09_qg_playground_config
   - sandbox-spec-builder
-  - kc_sandbox_spec
-  - bld_instruction_sandbox_spec
-  - p09_qg_marketplace_app_manifest
 ---
 ## Quality Gate
 

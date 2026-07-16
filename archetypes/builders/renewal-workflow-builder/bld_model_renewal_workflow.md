@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for renewal_workflow, renewal_workflow construction, type builder renewal workflow, renewal_workflow, builder, type_builder, renewal, gainsight, identity
 specializes]
 density_score: 0.85
-related:
-  - bld_knowledge_card_renewal_workflow
-  - bld_instruction_renewal_workflow
-  - bld_output_template_renewal_workflow
-  - bld_collaboration_renewal_workflow
-  - p10_lr_renewal_workflow_builder
 ---
 ## Identity
 
@@ -69,12 +63,3 @@ ALWAYS separate multi-year incentive structure from standard renewal pricing.
 NEVER build renewal workflows without contract end date and ARR tier as inputs.
 NEVER use auto-renewal language without specifying jurisdiction-compliant notice periods.
 NEVER conflate renewal workflows with expansion plays -- renewal protects existing ARR, expansion grows it.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_renewal_workflow]] | upstream | 0.72 |
-| [[bld_instruction_renewal_workflow]] | upstream | 0.65 |
-| [[bld_output_template_renewal_workflow]] | upstream | 0.62 |
-| [[bld_collaboration_renewal_workflow]] | related | 0.61 |
-| [[p10_lr_renewal_workflow_builder]] | upstream | 0.60 |

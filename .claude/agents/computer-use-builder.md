@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
   - computer-use-builder
-  - bld_collaboration_computer_use
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # computer-use-builder Sub-Agent

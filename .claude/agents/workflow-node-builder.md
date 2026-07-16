@@ -4,9 +4,7 @@ description: "Builds ONE workflow_node artifact via 8F pipeline. Loads workflow-
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_workflow_node
   - bld_config_workflow_node
-  - n00_workflow_node_manifest
   - workflow-node-builder
   - visual-workflow-builder
 ---
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_workflow_node]] | related | 0.38 |
 | [[bld_config_workflow_node]] | related | 0.37 |
-| [[n00_workflow_node_manifest]] | related | 0.36 |
 | [[workflow-node-builder]] | related | 0.36 |
 | [[visual-workflow-builder]] | related | 0.32 |

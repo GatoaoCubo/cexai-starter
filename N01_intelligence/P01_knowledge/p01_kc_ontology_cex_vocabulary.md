@@ -26,11 +26,8 @@ sources:
   - .cex/kinds_meta.json
 type: ontology
 related:
-  - vocabulary_cex_rosetta
   - p02_mm_cex_architecture_n04
   - p01_kc_concept_graph
-  - p06_td_cex_artifact_type_n03
-  - p01_faq_cex_common_questions
 ---
 
 ## Purpose
@@ -282,4 +279,3 @@ OUTPUT: artifacts written in the canonical CEX vocabulary.
 | [[p02_mm_cex_architecture_n04]] | related | 0.33 |
 | [[p01_kc_concept_graph]] | sibling | 0.29 |
 | p06_td_cex_artifact_type_n03 | downstream | 0.28 |
-| [[p01_faq_cex_common_questions]] | related | 0.28 |

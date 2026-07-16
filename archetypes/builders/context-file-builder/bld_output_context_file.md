@@ -33,8 +33,6 @@ keywords:
 density_score: 0.91
 related:
   - kc_context_file
-  - p11_qg_context_file
-  - p03_ins_context_file
   - bld_config_context_file
   - bld_memory_context_file
 ---
@@ -113,7 +111,5 @@ density_score: {{0.80-1.00}}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_context_file]] | upstream | 0.42 |
-| [[p11_qg_context_file]] | upstream | 0.42 |
-| [[p03_ins_context_file]] | upstream | 0.42 |
 | [[bld_config_context_file]] | downstream | 0.41 |
 | [[bld_memory_context_file]] | downstream | 0.41 |

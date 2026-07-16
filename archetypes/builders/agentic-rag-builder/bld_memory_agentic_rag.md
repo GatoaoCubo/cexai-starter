@@ -21,9 +21,6 @@ reviewed, related artifacts, retrieval queries]
 density_score: 0.85
 related:
   - agentic-rag-builder
-  - n00_agentic_rag_manifest
-  - kc_retrieval_evaluator
-  - bld_instruction_agentic_rag
   - retrieval-evaluator-builder
 ---
 ## Observation
@@ -46,7 +43,4 @@ Reviewed artifacts showed 30% improvement in relevance scores when retrieval que
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agentic-rag-builder]] | upstream | 0.46 |
-| [[n00_agentic_rag_manifest]] | upstream | 0.33 |
-| [[kc_retrieval_evaluator]] | upstream | 0.30 |
-| [[bld_instruction_agentic_rag]] | upstream | 0.29 |
 | [[retrieval-evaluator-builder]] | upstream | 0.27 |

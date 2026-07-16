@@ -16,8 +16,6 @@ tldr: "Atomic facts for building design systems: token taxonomy, modular type sc
 density_score: 0.92
 related:
   - bld_schema_design_system
-  - p01_kc_design_system
-  - p06_vs_design_system
   - bld_memory_design_system
   - design-system-builder
 ---

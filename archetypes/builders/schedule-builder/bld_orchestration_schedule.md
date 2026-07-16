@@ -19,10 +19,7 @@ keywords: [schedule construction, collaboration schedule, schedule, builder, exa
 density_score: 0.90
 related:
   - schedule-builder
-  - bld_collaboration_workflow
   - bld_architecture_schedule
-  - p11_qg_schedule
-  - bld_knowledge_card_schedule
 ---
 # Collaboration: schedule-builder
 ## My Role in Crews
@@ -85,5 +82,4 @@ When a request arrives that is NOT a schedule, redirect explicitly:
 | [[schedule-builder]] | related | 0.44 |
 | bld_collaboration_workflow | sibling | 0.37 |
 | [[bld_architecture_schedule]] | upstream | 0.36 |
-| [[p11_qg_schedule]] | upstream | 0.33 |
 | [[bld_knowledge_schedule]] | upstream | 0.32 |

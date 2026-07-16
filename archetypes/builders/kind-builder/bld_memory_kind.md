@@ -41,9 +41,6 @@ llm_function: INJECT
 related:
   - bld_architecture_kind
   - kind-builder
-  - bld_instruction_kind
-  - p06_td_cex_artifact_type_n03
-  - bld_knowledge_card_kind
 ---
 ## Summary
 Builder package quality depends on three factors: boundary clarity (does the builder
@@ -126,6 +123,3 @@ python _tools/cex_score.py --apply --verbose p10_lr_kind_builder.md
 |----------|-------------|-------|
 | [[bld_architecture_kind]] | upstream | 0.40 |
 | [[kind-builder]] | upstream | 0.39 |
-| [[bld_instruction_kind]] | upstream | 0.35 |
-| [[p06_td_cex_artifact_type_n03]] | upstream | 0.34 |
-| [[bld_knowledge_card_kind]] | upstream | 0.34 |

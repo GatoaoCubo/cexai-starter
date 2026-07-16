@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [eval_metric construction, collaboration eval metric, eval_metric, builder, collaboration, crew role  
 defines, receives from, data provider, metric specifier, domain expert]
 density_score: 0.85
-related:
-  - bld_collaboration_reranker_config
-  - bld_collaboration_reward_model
-  - bld_collaboration_cohort_analysis
-  - bld_collaboration_ab_test_config
-  - bld_collaboration_white_label_config
 ---
 ## Crew Role  
 Defines and structures individual evaluation metrics, specifying calculation logic, input requirements, and output formats for quantitative assessment.  

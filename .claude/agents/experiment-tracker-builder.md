@@ -5,7 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_experiment_tracker
-  - n00_experiment_tracker_manifest
   - experiment-tracker-builder
   - kind-builder
   - experiment-config-builder
@@ -87,7 +86,6 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_experiment_tracker]] | related | 0.34 |
-| [[n00_experiment_tracker_manifest]] | related | 0.31 |
 | [[experiment-tracker-builder]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[experiment-config-builder]] | related | 0.30 |

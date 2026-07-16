@@ -34,10 +34,7 @@ keywords:
 density_score: 0.90
 related:
   - agent-builder
-  - bld_collaboration_agent
-  - bld_instruction_agent
   - bld_architecture_agent
-  - bld_knowledge_card_agent
 ---
 ## Quality Gate
 

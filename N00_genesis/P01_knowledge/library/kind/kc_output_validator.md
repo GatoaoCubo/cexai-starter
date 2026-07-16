@@ -19,10 +19,6 @@ feeds_kinds: [output_validator]
 density_score: null
 related:
   - output-validator-builder
-  - bld_knowledge_card_output_validator
-  - n00_output_validator_manifest
-  - p01_kc_pillar_brief_p05_output_en
-  - p01_kc_parser
 ---
 
 # Output Validator

@@ -4,11 +4,8 @@ description: "Builds ONE llm_evaluation_scenario artifact via 8F pipeline. Loads
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_llm_evaluation_scenario
   - llm-evaluation-scenario-builder
-  - n00_llm_evaluation_scenario_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
 ---
 
 # llm-evaluation-scenario-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_llm_evaluation_scenario]] | related | 0.37 |
 | [[llm-evaluation-scenario-builder]] | related | 0.33 |
-| [[n00_llm_evaluation_scenario_manifest]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.29 |

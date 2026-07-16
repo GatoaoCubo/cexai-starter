@@ -21,11 +21,7 @@ effective, evidence
 reviewed, related artifacts, inner loop, upstream]
 density_score: 0.85
 related:
-  - bld_collaboration_dual_loop_architecture
   - dual-loop-architecture-builder
-  - bld_knowledge_card_dual_loop_architecture
-  - kc_dual_loop_architecture
-  - bld_instruction_dual_loop_architecture
 ---
 ## Observation
 
@@ -48,8 +44,4 @@ Reviewed artifacts showed success when outer loops prioritized long-term goals w
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.60 |
 | [[dual-loop-architecture-builder]] | upstream | 0.59 |
-| [[bld_knowledge_card_dual_loop_architecture]] | upstream | 0.56 |
-| [[kc_dual_loop_architecture]] | upstream | 0.54 |
-| [[bld_instruction_dual_loop_architecture]] | upstream | 0.49 |

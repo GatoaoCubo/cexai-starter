@@ -17,12 +17,6 @@ updated: "2026-03-27"
 8f: "F7_govern"
 keywords: [command-line tool definition, and exit codes, command completeness, exit code semantics, output format declaration, and flag documentation, quality-gate]
 density_score: 0.90
-related:
-  - p11_qg_quality_gate
-  - p11_qg_kind_builder
-  - p11_qg_eval_dataset
-  - p11_qg_enum_def
-  - bld_knowledge_card_quality_gate
 ---
 ## Quality Gate
 

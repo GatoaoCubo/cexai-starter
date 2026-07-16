@@ -4,11 +4,7 @@ description: "Builds ONE vector_store artifact via 8F pipeline. Loads vector-sto
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_collaboration_vector_store
-  - n00_vector_store_manifest
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # vector-store-builder Sub-Agent

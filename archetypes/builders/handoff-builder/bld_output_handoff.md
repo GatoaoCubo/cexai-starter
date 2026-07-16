@@ -17,11 +17,8 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - p12_ho_admin_template
-  - bld_knowledge_card_handoff
   - bld_config_handoff
   - bld_schema_handoff
-  - p01_kc_handoff
 ---
 # Output Template: handoff
 Naming pattern: `p12_ho_{task}.md`
@@ -105,8 +102,5 @@ python -c "from records.core.python.signal_writer import write_signal; write_sig
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p12_ho_admin_template]] | downstream | 0.40 |
-| [[bld_knowledge_card_handoff]] | upstream | 0.40 |
 | [[bld_config_handoff]] | downstream | 0.38 |
 | [[bld_schema_handoff]] | downstream | 0.37 |
-| [[p01_kc_handoff]] | downstream | 0.36 |

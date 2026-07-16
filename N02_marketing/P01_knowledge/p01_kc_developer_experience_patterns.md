@@ -11,9 +11,6 @@ keywords: [api endpoints, cli tools, ide integrations, sdk, documentation covera
 density_score: 0.97
 related:
   - quickstart-guide-builder
-  - kc_integration_guide
-  - kc_api_reference
-  - bld_instruction_sdk_example
   - api-reference-builder
 ---
 

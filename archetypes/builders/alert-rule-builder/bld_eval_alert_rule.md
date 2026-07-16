@@ -26,10 +26,8 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - p01_kc_alert_rule
   - alert-rule-builder
   - bld_output_alert_rule
-  - bld_rules_alert_rule
   - bld_memory_alert_rule
 ---
 ## Quality Gate

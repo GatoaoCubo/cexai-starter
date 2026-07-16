@@ -28,9 +28,6 @@ llm_function: CONSTRAIN
 related:
   - p08_diag_{{SCOPE_SLUG}}
   - diagram-builder
-  - bld_collaboration_diagram
-  - bld_instruction_diagram
-  - p01_kc_diagram
 ---
 # diagram-builder — CONFIG
 ## Naming Conventions
@@ -78,6 +75,3 @@ related:
 |----------|-------------|-------|
 | [\[p08_diag_`{{SCOPE_SLUG}}`\]] | related | 0.48 |
 | [[diagram-builder]] | related | 0.48 |
-| [[bld_collaboration_diagram]] | related | 0.47 |
-| [[bld_instruction_diagram]] | related | 0.46 |
-| [[p01_kc_diagram]] | related | 0.46 |

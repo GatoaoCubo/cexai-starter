@@ -18,11 +18,7 @@ keywords: [quickstart_guide construction, knowledge card quickstart guide, quick
 modern, key concepts, roy fielding, martin fowler, rate limiting]
 density_score: 0.85
 related:
-  - bld_knowledge_card_api_reference
-  - bld_knowledge_card_sdk_example
-  - bld_knowledge_card_oauth_app_config
   - api-reference-builder
-  - kc_api_reference
 ---
 ## Domain Overview  
 Modern software ecosystems rely on APIs to enable interoperability, scalability, and rapid innovation. Quickstart guides are critical for reducing onboarding friction, ensuring users can achieve initial value within minutes. They focus on minimal setup, core functionality, and immediate use cases, avoiding deep technical integration details. This approach aligns with industry trends toward developer-centric design, where simplicity and clarity drive adoption.  
@@ -67,8 +63,4 @@ API onboarding often involves authentication, endpoint discovery, and basic requ
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_api_reference]] | sibling | 0.50 |
-| [[bld_knowledge_card_sdk_example]] | sibling | 0.41 |
-| [[bld_knowledge_card_oauth_app_config]] | sibling | 0.31 |
 | [[api-reference-builder]] | downstream | 0.30 |
-| [[kc_api_reference]] | sibling | 0.29 |

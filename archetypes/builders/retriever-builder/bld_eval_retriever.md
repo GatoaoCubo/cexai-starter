@@ -30,9 +30,6 @@ title: Quality Gate ISO - retriever
 tldr: "10 HARD gates block delivery. 12 SOFT dimensions score 0-10. Threshold 7.0."
 related:
   - retriever-builder
-  - bld_instruction_retriever
-  - p11_qg_quality_gate
-  - p11_qg_retriever_config
   - bld_tools_retriever
 ---
 ## Quality Gate

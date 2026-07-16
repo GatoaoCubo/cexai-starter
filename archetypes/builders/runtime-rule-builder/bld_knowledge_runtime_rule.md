@@ -31,11 +31,8 @@ keywords:
   - "scope"
 density_score: 0.90
 related:
-  - p03_ins_runtime_rule
   - runtime-rule-builder
   - bld_schema_runtime_rule
-  - p11_qg_runtime_rule
-  - bld_collaboration_runtime_rule
 ---
 # Domain Knowledge: runtime_rule
 ## Executive Summary
@@ -91,8 +88,5 @@ A runtime_rule specifies concrete numeric parameters governing system behavior a
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_runtime_rule]] | related | 0.54 |
 | [[runtime-rule-builder]] | related | 0.51 |
 | [[bld_schema_runtime_rule]] | upstream | 0.42 |
-| [[p11_qg_runtime_rule]] | downstream | 0.42 |
-| [[bld_collaboration_runtime_rule]] | related | 0.35 |

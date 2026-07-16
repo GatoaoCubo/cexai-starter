@@ -21,11 +21,8 @@ prerequisites:
 -, output template]
 density_score: 0.90
 related:
-  - bld_instruction_checkpoint
   - checkpoint-builder
   - bld_architecture_checkpoint
-  - bld_collaboration_checkpoint
-  - bld_knowledge_card_checkpoint
 ---
 # Output Template: checkpoint
 ```yaml

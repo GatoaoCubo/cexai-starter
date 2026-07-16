@@ -15,10 +15,7 @@ density_score: 0.93
 updated: "2026-04-17"
 related:
   - bld_architecture_constitutional_rule
-  - bld_manifest_constitutional_rule
-  - bld_knowledge_card_constitutional_rule
   - bld_memory_constitutional_rule
-  - bld_instruction_constitutional_rule
 ---
 # Knowledge Card: constitutional_rule
 
@@ -110,7 +107,6 @@ constitutional_rule (hard constraint, bypass_policy: none, core: true)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_constitutional_rule]] | sibling | 0.56 |
-| [[bld_manifest_constitutional_rule]] | sibling | 0.54 |
 | [[bld_knowledge_constitutional_rule]] | sibling | 0.52 |
 | [[bld_memory_constitutional_rule]] | sibling | 0.46 |
 | [[bld_prompt_constitutional_rule]] | downstream | 0.45 |

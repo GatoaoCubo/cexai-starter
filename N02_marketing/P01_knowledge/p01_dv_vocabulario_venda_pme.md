@@ -17,7 +17,6 @@ tags: [vocabulary, venda, pt-br, transmutation, go_online]
 tldr: "Crosswalk termo-tecnico -> termo-de-venda para o dono de PME (spec 23_go_online, User Story P2a, FR-004). Aplicado em /intake, /dashboard/research e nas CTAs da landing."
 related:
   - p03_pc_cex_universal
-  - n07-input-transmutation
 ---
 
 # Vocabulario de Venda PME -- Domain Vocabulary

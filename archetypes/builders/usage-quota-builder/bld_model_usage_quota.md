@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - kc_usage_quota
-  - bld_knowledge_card_usage_quota
-  - bld_instruction_usage_quota
-  - bld_collaboration_usage_quota
-  - p10_mem_usage_quota_builder
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS USE INDUSTRY-STANDARD TERMS FOR RESOURCE METRICS AND ENFORCEMENT LOGIC.
 ALWAYS VALIDATE QUOTA SPECIFICATIONS AGAINST ORGANIZATIONAL COMPLIANCE FRAMEWORKS.  
 NEVER INCLUDE RATE-LIMITING CONFIGURATIONS (RPM) OR COST-BUDGET PARAMETERS (DOLLARS).  
 NEVER ASSUME SYSTEM-SPECIFIC BEHAVIOR; QUOTA SPECS MUST BE PLATFORM-AGNOSTIC.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_usage_quota]] | upstream | 0.53 |
-| [[bld_knowledge_card_usage_quota]] | upstream | 0.53 |
-| [[bld_instruction_usage_quota]] | upstream | 0.51 |
-| [[bld_collaboration_usage_quota]] | downstream | 0.50 |
-| [[p10_mem_usage_quota_builder]] | downstream | 0.48 |

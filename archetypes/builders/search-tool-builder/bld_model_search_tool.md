@@ -31,11 +31,7 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_search_tool
   - bld_architecture_search_tool
-  - bld_knowledge_card_search_tool
-  - bld_instruction_search_tool
-  - p11_qg_search_tool
 ---
 ## Identity
 
@@ -136,4 +132,3 @@ quality_target: 9.0
 | [[bld_architecture_search_tool]] | downstream | 0.56 |
 | [[bld_knowledge_search_tool]] | upstream | 0.55 |
 | [[bld_prompt_search_tool]] | upstream | 0.50 |
-| [[p11_qg_search_tool]] | downstream | 0.49 |

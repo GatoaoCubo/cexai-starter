@@ -18,9 +18,6 @@ updated: "2026-04-23"
 related:
   - bld_feedback_inference_config
   - bld_feedback_retrieval_evaluator
-  - p11_fb_quality_gate
-  - p11_fb_content_filter
-  - p11_fb_path_config
 ---
 # Feedback: Synthetic Data Config
 
@@ -89,6 +86,3 @@ related:
 |----------|-------------|-------|
 | [[bld_feedback_inference_config]] | sibling | 0.45 |
 | [[bld_feedback_retrieval_evaluator]] | sibling | 0.44 |
-| [[p11_fb_quality_gate]] | sibling | 0.41 |
-| [[p11_fb_content_filter]] | sibling | 0.41 |
-| [[p11_fb_path_config]] | sibling | 0.41 |

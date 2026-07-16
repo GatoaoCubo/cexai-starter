@@ -27,9 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - memory-scope-builder
-  - bld_knowledge_card_memory_scope
-  - bld_collaboration_memory_type
-  - bld_collaboration_memory_scope
   - bld_architecture_memory_scope
 ---
 ## Summary

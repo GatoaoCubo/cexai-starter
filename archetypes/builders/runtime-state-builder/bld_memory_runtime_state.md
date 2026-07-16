@@ -24,10 +24,7 @@ for, runtime states]
 density_score: 0.90
 related:
   - runtime-state-builder
-  - bld_collaboration_runtime_state
-  - bld_knowledge_card_runtime_state
   - bld_memory_session_state
-  - bld_collaboration_session_state
 ---
 # Memory: runtime-state-builder
 ## Summary

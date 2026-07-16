@@ -32,10 +32,8 @@ keywords:
   - "{{default}}):"
 density_score: 0.90
 related:
-  - p11_qg_cli_tool
   - cli-tool-builder
   - bld_schema_cli_tool
-  - p10_lr_cli_tool_builder
   - p04_cli_{{TOOL_SLUG}}
 ---
 # Output Template: cli_tool
@@ -116,8 +114,6 @@ Env vars: `{{env_var_list_with_purpose}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_cli_tool]] | downstream | 0.39 |
 | [[cli-tool-builder]] | upstream | 0.38 |
 | [[bld_schema_cli_tool]] | downstream | 0.36 |
-| [[p10_lr_cli_tool_builder]] | downstream | 0.34 |
 | [\[p04_cli_`{{TOOL_SLUG}}`\]] | upstream | 0.32 |

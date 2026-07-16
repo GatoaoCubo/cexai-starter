@@ -21,7 +21,6 @@ related:
   - bld_knowledge_card_builder
   - bld_config_builder
   - bld_output_template_builder
-  - _builder-builder
 ---
 # Architecture: builder in the CEX
 
@@ -91,4 +90,3 @@ Generated MANIFEST.md --signals-->   target builder (becomes operational)
 | [[bld_knowledge_card_builder]] | upstream | 0.38 |
 | [[bld_config_builder]] | downstream | 0.36 |
 | [[bld_output_template_builder]] | upstream | 0.32 |
-| [[_builder-builder]] | upstream | 0.32 |

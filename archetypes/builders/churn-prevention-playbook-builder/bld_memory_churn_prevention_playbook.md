@@ -20,10 +20,7 @@ effective, evidence
 reviewed, related artifacts, signal definitions, intervention triggers]
 density_score: 0.85
 related:
-  - bld_knowledge_card_churn_prevention_playbook
   - churn-prevention-playbook-builder
-  - p10_mem_sales_playbook_builder
-  - p03_qg_churn_prevention_playbook
 ---
 ## Observation
 Common issues include vague signal definitions, inconsistent intervention triggers, and generic save-the-account scripts that lack personalization or alignment with customer lifecycle stages.
@@ -44,7 +41,4 @@ Reviewed artifacts showed success with playbooks using tiered triggers (e.g., "h
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_churn_prevention_playbook]] | upstream | 0.35 |
 | [[churn-prevention-playbook-builder]] | upstream | 0.32 |
-| [[p10_mem_sales_playbook_builder]] | related | 0.24 |
-| [[p03_qg_churn_prevention_playbook]] | downstream | 0.23 |

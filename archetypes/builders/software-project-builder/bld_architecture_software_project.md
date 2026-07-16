@@ -30,11 +30,7 @@ keywords:
 density_score: 1.0
 llm_function: CONSTRAIN
 related:
-  - p04_ex_software_project_api_service
-  - bld_sp_knowledge_card_software_project
-  - bld_sp_manifest_software_project
   - bld_architecture_interface
-  - p04_ex_software_project_cli_tool
 ---
 # Architecture
 
@@ -117,8 +113,4 @@ Domain raises AppError → Infra wraps DB/HTTP errors → Interface returns HTTP
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p04_ex_software_project_api_service]] | upstream | 0.38 |
-| [[bld_sp_knowledge_card_software_project]] | upstream | 0.24 |
-| [[bld_sp_manifest_software_project]] | upstream | 0.22 |
 | [[bld_architecture_interface]] | sibling | 0.21 |
-| [[p04_ex_software_project_cli_tool]] | upstream | 0.20 |

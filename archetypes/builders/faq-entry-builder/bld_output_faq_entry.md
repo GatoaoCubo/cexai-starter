@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [faq_entry construction, output template faq entry, faq_entry, builder, output_template, related artifacts, step_ step_, related_topic_ related_link_, downstream, question_text]
 density_score: 0.85
 related:
-  - n00_faq_entry_manifest
   - bld_schema_faq_entry
-  - bld_instruction_faq_entry
-  - p01_kc_faq_entry
   - faq-entry-builder
 ---
 ```markdown
@@ -78,8 +75,5 @@ related_topics:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_faq_entry_manifest]] | upstream | 0.32 |
 | [[bld_schema_faq_entry]] | downstream | 0.30 |
-| [[bld_instruction_faq_entry]] | upstream | 0.26 |
-| [[p01_kc_faq_entry]] | upstream | 0.26 |
 | [[faq-entry-builder]] | upstream | 0.22 |

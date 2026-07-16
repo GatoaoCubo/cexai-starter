@@ -19,9 +19,6 @@ produces]
 density_score: 0.85
 related:
   - safety-hazard-taxonomy-builder
-  - bld_collaboration_ai_rmf_profile
-  - n00_safety_hazard_taxonomy_manifest
-  - bld_collaboration_llm_evaluation_scenario
   - bld_config_safety_hazard_taxonomy
 ---
 ## Crew Role
@@ -51,7 +48,4 @@ Does NOT produce runtime filtering configurations (use content_filter-builder), 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[safety-hazard-taxonomy-builder]] | upstream | 0.45 |
-| [[bld_collaboration_ai_rmf_profile]] | sibling | 0.35 |
-| [[n00_safety_hazard_taxonomy_manifest]] | upstream | 0.34 |
-| [[bld_collaboration_llm_evaluation_scenario]] | sibling | 0.31 |
 | [[bld_config_safety_hazard_taxonomy]] | upstream | 0.30 |

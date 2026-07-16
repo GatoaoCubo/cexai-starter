@@ -18,10 +18,7 @@ keywords: [component map of computer_use, and architectural position, computer u
 density_score: 0.90
 related:
   - computer-use-builder
-  - n00_computer_use_manifest
-  - p11_qg_computer_use
   - bld_architecture_browser_tool
-  - bld_collaboration_computer_use
 ---
 # Architecture: computer_use
 
@@ -94,6 +91,5 @@ target           --determines-> resolution + actions
 |----------|-------------|-------|
 | [[computer-use-builder]] | upstream | 0.65 |
 | n00_computer_use_manifest | upstream | 0.52 |
-| [[p11_qg_computer_use]] | downstream | 0.48 |
 | [[bld_architecture_browser_tool]] | sibling | 0.43 |
 | [[bld_orchestration_computer_use]] | downstream | 0.41 |

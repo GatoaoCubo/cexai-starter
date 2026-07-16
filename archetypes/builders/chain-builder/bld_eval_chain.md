@@ -18,11 +18,8 @@ updated: "2026-03-27"
 keywords: [prompt pipeline design, step atomicity, typed data flow, error handling strategy, and pipeline completeness, quality-gate, chain]
 density_score: 0.91
 related:
-  - p10_lr_chain_builder
   - bld_architecture_chain
-  - p01_kc_chain
   - chain-builder
-  - bld_instruction_chain
 ---
 ## Quality Gate
 

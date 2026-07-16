@@ -21,11 +21,8 @@ tldr: Structural gate (H01-H10) plus the real cross-runtime equivalence rubric
 8f: "F7_govern"
 density_score: 0.87
 related:
-  - p11_qg_prompt_template
   - reverse-prompt-builder
-  - p03_ins_reverse_prompt
   - bld_feedback_reverse_prompt
-  - bld_knowledge_card_reverse_prompt
 ---
 ## Quality Gate
 
@@ -106,8 +103,5 @@ Body opens with `## Provenance` disclosing `mode: dry_run`, `byte-deterministic:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_prompt_template]] | sibling | 0.52 |
 | [[reverse-prompt-builder]] | upstream | 0.50 |
-| [[p03_ins_reverse_prompt]] | related | 0.48 |
 | [[bld_feedback_reverse_prompt]] | downstream | 0.46 |
-| [[bld_knowledge_card_reverse_prompt]] | related | 0.42 |

@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_config_content_filter
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
 ---
 

@@ -15,11 +15,7 @@ tldr: "3 golden patterns injected at F3: Agent (quality 9.5, Identity>Capabiliti
 keywords: [frontmatter, artifact kinds, spec block, yaml, quality gates, depends_on, signals, density]
 density_score: 0.85
 related:
-  - bld_knowledge_card_few_shot_example
   - few-shot-example-builder
-  - bld_collaboration_few_shot_example
-  - bld_collaboration_golden_test
-  - p01_kc_few_shot_example
 ---
 
 # Golden Examples for Builder

@@ -26,11 +26,7 @@ title: "Memory Function Def"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_function_def
-  - p01_kc_function_def
-  - p11_qg_function_def
   - function-def-builder
-  - bld_instruction_function_def
 ---
 ## Summary
 Function definitions live or die by their description field. The LLM reads the description to decide whether to call the function — a vague or missing description means the LLM either picks the wrong function or invents parameters. Parameter schema accuracy drops sharply with nesting depth beyond 2 levels.
@@ -85,6 +81,5 @@ python _tools/cex_score.py --apply p10-lr-function-def-builder.md
 |----------|-------------|-------|
 | [[bld_knowledge_function_def]] | upstream | 0.50 |
 | [[kc_function_def]] | upstream | 0.34 |
-| [[p11_qg_function_def]] | downstream | 0.31 |
 | [[function-def-builder]] | upstream | 0.30 |
 | [[bld_prompt_function_def]] | upstream | 0.28 |

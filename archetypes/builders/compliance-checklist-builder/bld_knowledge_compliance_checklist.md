@@ -19,10 +19,7 @@ compliance, key concepts, data protection impact assessment, access controls, tr
 density_score: 0.85
 related:
   - compliance-checklist-builder
-  - bld_instruction_compliance_checklist
   - p01_kc_ai_compliance_gdpr
-  - kc_compliance_checklist
-  - p10_mem_compliance_checklist_builder
 ---
 ## Domain Overview  
 Compliance checklists are structured artifacts used to validate adherence to regulatory and industry-specific requirements during audits. For SOC2, GDPR, HIPAA, and the EU AI Act, these checklists ensure organizations meet standards for data protection, privacy, security, and AI governance. SOC2 focuses on trust services criteria (security, availability, processing integrity, confidentiality, and privacy) for cloud service providers. GDPR mandates strict data subject rights and breach notification protocols for EU data processing. HIPAA enforces safeguards for protected health information (PHI) in healthcare. The EU AI Act introduces risk-based requirements for AI systems, including transparency and human oversight. Checklists help map controls to these frameworks, ensuring audit readiness.  
@@ -68,7 +65,4 @@ Compliance checklists are structured artifacts used to validate adherence to reg
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[compliance-checklist-builder]] | downstream | 0.53 |
-| [[bld_instruction_compliance_checklist]] | downstream | 0.53 |
 | [[p01_kc_ai_compliance_gdpr]] | sibling | 0.45 |
-| [[kc_compliance_checklist]] | sibling | 0.44 |
-| [[p10_mem_compliance_checklist_builder]] | downstream | 0.42 |

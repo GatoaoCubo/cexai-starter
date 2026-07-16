@@ -4,10 +4,8 @@ description: "Builds ONE govtech_vertical artifact via 8F pipeline. Loads govtec
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p11_fb_govtech_vertical
   - bld_config_govtech_vertical
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_tools_govtech_vertical
 ---
 
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_govtech_vertical]] | related | 0.34 |
 | [[bld_config_govtech_vertical]] | related | 0.34 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[bld_tools_govtech_vertical]] | related | 0.27 |

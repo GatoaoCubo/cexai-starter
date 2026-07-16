@@ -20,9 +20,7 @@ density_score: 0.85
 related:
   - enterprise-sla-builder
   - bld_tools_enterprise_sla
-  - bld_collaboration_compliance_framework
   - bld_config_enterprise_sla
-  - n00_enterprise_sla_manifest
 ---
 ## Crew Role  
 Coordinates SLA contract creation, aligns service expectations, and ensures legal/operational alignment.  
@@ -49,6 +47,4 @@ Does NOT enforce runtime quality gates (handled by `runtime_quality_builder`) or
 |----------|-------------|-------|
 | [[enterprise-sla-builder]] | upstream | 0.40 |
 | [[bld_tools_enterprise_sla]] | upstream | 0.33 |
-| [[bld_collaboration_compliance_framework]] | sibling | 0.31 |
 | [[bld_config_enterprise_sla]] | upstream | 0.29 |
-| [[n00_enterprise_sla_manifest]] | upstream | 0.28 |

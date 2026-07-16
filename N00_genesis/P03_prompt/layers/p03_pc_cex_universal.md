@@ -23,11 +23,8 @@ tags: [prompt_compiler, intent-resolution, cex, multilingual, transmutation, n07
 tldr: "Source of truth for intent transmutation: maps natural-language input into {kind, pillar, nucleus, verb} for all 300 CEX kinds. EN-first; community-contributed language patterns welcome (PT-BR seeded). Loaded BEFORE every 8F run (F1 CONSTRAIN)."
 density_score: 0.93
 related:
-  - n00_p01_kind_index
   - bld_architecture_supabase_data_layer
-  - p02_ap_n04_knowledge
   - kc_knowledge_vocabulary
-  - bld_collaboration_supabase_data_layer
 ---
 
 ## Preamble
@@ -535,7 +532,6 @@ When NO kind matches:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_p01_kind_index]] | upstream | 0.52 |
 | bld_architecture_supabase_data_layer | upstream | 0.38 |
 | p02_ap_n04_knowledge | upstream | 0.38 |
 | [[kc_knowledge_vocabulary]] | upstream | 0.38 |

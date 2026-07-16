@@ -18,10 +18,6 @@ keywords: [capability_registry construction, quality gate capability registry, c
 density_score: 0.85
 related:
   - bld_schema_capability_registry
-  - bld_instruction_capability_registry
-  - p09_qg_marketplace_app_manifest
-  - bld_output_template_capability_registry
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 

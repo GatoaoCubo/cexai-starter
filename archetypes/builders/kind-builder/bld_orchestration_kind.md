@@ -20,8 +20,6 @@ density_score: 0.90
 related:
   - bld_architecture_kind
   - kind-builder
-  - p06_td_cex_artifact_type_n03
-  - bld_instruction_kind
   - bld_tools_kind
 ---
 # Collaboration: kind-builder
@@ -93,6 +91,4 @@ myself. I do not modify the kind registry. I do not deploy or activate builders.
 |----------|-------------|-------|
 | [[bld_architecture_kind]] | upstream | 0.52 |
 | [[kind-builder]] | upstream | 0.47 |
-| [[p06_td_cex_artifact_type_n03]] | upstream | 0.39 |
-| [[bld_instruction_kind]] | upstream | 0.36 |
 | [[bld_tools_kind]] | upstream | 0.32 |

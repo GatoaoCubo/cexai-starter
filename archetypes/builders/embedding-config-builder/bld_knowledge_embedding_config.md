@@ -19,11 +19,7 @@ keywords: [vector model configuration, embedding config construction, knowledge 
 embedding, spec table, dense passage retrieval]
 density_score: 0.90
 related:
-  - p11_qg_embedding_config
-  - p10_lr_embedding_config_builder
   - embedding-config-builder
-  - p01_kc_embedding_config
-  - p01_emb_nomic_embed_text
 ---
 # Domain Knowledge: embedding_config
 ## Executive Summary
@@ -76,8 +72,6 @@ Embedding configs define how text is converted to vectors for semantic search: m
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_embedding_config]] | downstream | 0.47 |
-| [[p10_lr_embedding_config_builder]] | downstream | 0.47 |
 | [[embedding-config-builder]] | related | 0.46 |
 | [[kc_embedding_config]] | sibling | 0.45 |
 | p01_emb_nomic_embed_text | related | 0.42 |

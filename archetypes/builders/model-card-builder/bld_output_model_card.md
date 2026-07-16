@@ -18,10 +18,6 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - bld_schema_model_card
-  - p06_bp_model_card
-  - bld_output_template_embedder_provider
-  - p11_qg_model_card
-  - n00_model_provider_manifest
 ---
 # Output Template: model_card
 ```yaml
@@ -112,7 +108,3 @@ model_card IS NOT: boot_config, agent, benchmark.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_model_card]] | downstream | 0.62 |
-| [[p06_bp_model_card]] | downstream | 0.38 |
-| [[bld_output_template_embedder_provider]] | sibling | 0.38 |
-| [[p11_qg_model_card]] | downstream | 0.27 |
-| [[n00_model_provider_manifest]] | upstream | 0.25 |

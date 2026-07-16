@@ -18,11 +18,9 @@ updated: "2026-04-17"
 keywords: [fail gate for retry_policy, id pattern, max_attempts range, jitter not none, xx in retryable_errors, quality-gate, retry-policy]
 density_score: 0.90
 related:
-  - bld_output_template_retry_policy
   - bld_schema_retry_policy
   - bld_architecture_retry_policy
   - bld_config_retry_policy
-  - bld_knowledge_card_retry_policy
 ---
 ## Quality Gate
 

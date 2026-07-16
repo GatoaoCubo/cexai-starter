@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - model-card-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - bld_collaboration_model_card
   - kind-builder
-  - p03_sp_builder_nucleus
 ---
 
 # model-card-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[model-card-builder]] | related | 0.37 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.36 |
-| [[bld_collaboration_model_card]] | related | 0.33 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |

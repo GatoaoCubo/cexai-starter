@@ -30,11 +30,7 @@ keywords:
   - "resilience"
 density_score: 0.90
 related:
-  - bld_output_template_circuit_breaker
   - bld_architecture_circuit_breaker
-  - bld_instruction_circuit_breaker
-  - bld_knowledge_card_circuit_breaker
-  - p01_kc_circuit_breaker
 ---
 ## Quality Gate
 

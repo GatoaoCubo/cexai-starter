@@ -30,10 +30,7 @@ density_score: 0.88
 llm_function: REASON
 related:
   - learning-record-builder
-  - bld_knowledge_card_learning_record
-  - bld_collaboration_learning_record
   - bld_memory_learning_record
-  - bld_instruction_input_schema
 ---
 ## Context
 The learning-record-builder produces `learning_record` artifacts (P10) — persistent, structured captures of experience that accumulate into system memory. Learning records differ from knowledge cards (atomic external facts), session state (ephemeral runtime data), and axioms (abstract truths): a learning record encodes what was tried, what happened, and what to do or avoid next time.

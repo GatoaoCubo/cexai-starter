@@ -18,11 +18,7 @@ keywords: [fintech vertical, payment compliance analysis, fintech, payment, pci_
 density_score: 1.0
 updated: "2026-04-22"
 related:
-  - p01_kc_fintech_vertical
   - fintech-vertical-builder
-  - bld_knowledge_card_fintech_vertical
-  - p01_qg_fintech_vertical
-  - p10_mem_fintech_vertical_builder
 ---
 
 ## Market Overview

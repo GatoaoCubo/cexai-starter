@@ -21,11 +21,7 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - bld_knowledge_card_code_executor
   - code-executor-builder
-  - p04_exec_python_sandbox
-  - bld_collaboration_code_executor
-  - p10_lr_code_executor_builder
 ---
 
 # Code Executor
@@ -101,4 +97,3 @@ A code executor is a sandboxed runtime environment where LLM-generated code runs
 | [[code-executor-builder]] | related | 0.48 |
 | p04_exec_python_sandbox | related | 0.44 |
 | [[bld_orchestration_code_executor]] | downstream | 0.41 |
-| [[p10_lr_code_executor_builder]] | downstream | 0.37 |

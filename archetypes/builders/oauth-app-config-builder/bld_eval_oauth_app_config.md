@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [oauth_app_config construction, oauth_app_config, builder, quality_gate, "## anti-example 1: missing redirect uris", quality gate, fail condition, scoring guide, golden example, missing redirect]
 density_score: 0.85
 related:
-  - bld_instruction_oauth_app_config
-  - p09_qg_marketplace_app_manifest
-  - n00_oauth_app_config_manifest
-  - oauth-app-config-builder
   - kc_oauth_app_config
 ---
 ## Quality Gate

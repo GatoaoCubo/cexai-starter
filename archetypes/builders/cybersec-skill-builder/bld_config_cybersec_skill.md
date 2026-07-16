@@ -26,7 +26,6 @@ related:
   - bld_schema_cybersec_skill
   - cybersec-skill-builder
   - bld_architecture_cybersec_skill
-  - p11_qg_cybersec_skill
 ---
 
 # Config: cybersec_skill Production Rules
@@ -125,4 +124,3 @@ H_AF1-H_AF3 grep blocks. Do not edit these without updating the eval ISO.
 | [[bld_schema_cybersec_skill]] | upstream | 0.62 |
 | [[cybersec-skill-builder]] | upstream | 0.58 |
 | [[bld_architecture_cybersec_skill]] | upstream | 0.55 |
-| [[p11_qg_cybersec_skill]] | downstream | 0.55 |

@@ -23,7 +23,6 @@ keywords:
   - "autonomous dispatch"
 related:
   - quickstart_guide_cexai_operator
-  - faq_entry_cexai_user
   - api_reference_cex_cli
 density_score: 0.95
 ---
@@ -240,8 +239,6 @@ Consolidation Report
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_qs_cexai_operator]] | upstream | 0.80 |
 | faq_entry_cexai_user | sibling | 0.70 |
 | api_reference_cex_cli | downstream | 0.60 |
-| [[rule_system_overview]] | upstream | 0.55 |
 | guided-decisions | upstream | 0.50 |

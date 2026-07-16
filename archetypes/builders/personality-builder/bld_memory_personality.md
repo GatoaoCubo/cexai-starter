@@ -19,9 +19,6 @@ density_score: 0.87
 related:
   - bld_architecture_personality
   - kc_personality
-  - n00_personality_manifest
-  - bld_knowledge_card_personality
-  - bld_collaboration_personality
 ---
 # Memory: personality-builder
 

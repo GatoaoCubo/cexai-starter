@@ -28,10 +28,8 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, and operational constraints, handoff construction, config handoff, handoff, builder, examples, "p12_ho_{task}.md", p12_ho_wave19_builders.md]
 density_score: 0.90
 related:
-  - bld_collaboration_handoff_protocol
   - bld_tools_handoff
   - handoff-builder
-  - p01_kc_handoff
   - bld_schema_handoff
 ---
 # Config: handoff Production Rules
@@ -94,8 +92,6 @@ python _tools/cex_score.py --apply bld-config-handoff.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_handoff_protocol]] | downstream | 0.42 |
 | [[bld_tools_handoff]] | upstream | 0.40 |
 | [[handoff-builder]] | downstream | 0.40 |
-| [[p01_kc_handoff]] | downstream | 0.37 |
 | [[bld_schema_handoff]] | upstream | 0.36 |

@@ -19,11 +19,7 @@ keywords: [event interception specification, hook construction, knowledge card h
 hooks, spec table, claude code]
 density_score: 0.90
 related:
-  - bld_instruction_hook
   - hook-builder
-  - bld_collaboration_hook
-  - bld_knowledge_card_hook_config
-  - p10_lr_hook_builder
 ---
 # Domain Knowledge: hook
 ## Executive Summary
@@ -87,4 +83,3 @@ Hooks are event interception points that execute code before or after system eve
 | [[hook-builder]] | downstream | 0.56 |
 | [[bld_orchestration_hook]] | downstream | 0.54 |
 | bld_knowledge_card_hook_config | sibling | 0.48 |
-| [[p10_lr_hook_builder]] | downstream | 0.48 |

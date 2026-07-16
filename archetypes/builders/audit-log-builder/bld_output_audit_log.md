@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [audit_log construction, output template audit log, frontmatter field guide, required body sections, filled example, type ii compliance, audit_log, builder, output_template, quality gate checklist]
 density_score: 0.85
 related:
-  - bld_output_template_collaboration_pattern
-  - bld_output_template_visual_workflow
-  - bld_output_template_dataset_card
-  - bld_output_template_thinking_config
   - bld_config_audit_log
 ---
 ```yaml
@@ -83,8 +79,4 @@ sample_data:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_collaboration_pattern]] | sibling | 0.36 |
-| [[bld_output_template_visual_workflow]] | sibling | 0.34 |
-| [[bld_output_template_dataset_card]] | sibling | 0.33 |
-| [[bld_output_template_thinking_config]] | sibling | 0.30 |
 | [[bld_config_audit_log]] | downstream | 0.30 |

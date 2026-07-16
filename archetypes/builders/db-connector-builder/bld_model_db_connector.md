@@ -31,10 +31,6 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_connector
-  - bld_instruction_connector
-  - bld_knowledge_card_connector
-  - bld_architecture_connector
   - api-client-builder
 ---
 ## Identity
@@ -123,8 +119,4 @@ SCHEMA.md is the source of truth. Artifact id must match `^p04_conn_[a-z][a-z0-9
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_connector]] | downstream | 0.62 |
-| [[bld_instruction_connector]] | upstream | 0.56 |
-| [[bld_knowledge_card_connector]] | upstream | 0.49 |
-| [[bld_architecture_connector]] | downstream | 0.47 |
 | [[api-client-builder]] | sibling | 0.47 |

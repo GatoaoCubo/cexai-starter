@@ -18,7 +18,6 @@ updated: "2026-04-18"
 keywords: [f pipeline, terminal_backend construction, tools terminal backend, builder tools, kinds_meta lookup, secret_config reference checker, terminal_backend, builder, tools, "python _tools/cex_compile.py {path}"]
 density_score: 0.88
 related:
-  - p11_tools_revision_loop_policy
   - bld_tools_personality
   - bld_tools_messaging_gateway
   - bld_tools_value_object
@@ -67,7 +66,6 @@ write_signal('n03', 'complete', 9.0, mission='builder_example')
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_tools_revision_loop_policy]] | related | 0.46 |
 | [[bld_tools_personality]] | related | 0.40 |
 | [[bld_tools_messaging_gateway]] | sibling | 0.39 |
 | [[bld_tools_value_object]] | downstream | 0.32 |

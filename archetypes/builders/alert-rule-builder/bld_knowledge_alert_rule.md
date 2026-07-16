@@ -15,11 +15,8 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_alert_rule
-  - bld_rules_alert_rule
   - bld_output_alert_rule
   - bld_memory_alert_rule
-  - bld_qg_alert_rule
 ---
 # Domain Knowledge: alert_rule
 ## Core Facts
@@ -77,8 +74,5 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_alert_rule]] | sibling | 0.47 |
-| [[bld_rules_alert_rule]] | downstream | 0.39 |
 | [[bld_output_alert_rule]] | downstream | 0.37 |
 | [[bld_memory_alert_rule]] | downstream | 0.34 |
-| [[bld_qg_alert_rule]] | downstream | 0.34 |

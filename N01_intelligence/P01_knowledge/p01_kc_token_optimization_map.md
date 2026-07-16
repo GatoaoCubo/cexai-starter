@@ -15,9 +15,6 @@ keywords: [token cost, prompt compression, deterministic tools, llm dependency, 
 related:
   - p01_kc_tool_first_patterns
   - p01_kc_benchmark_tool_vs_llm
-  - p01_kc_token_budgeting
-  - p01_kc_anti_file_storage
-  - p01_kc_token_efficiency_gap_map
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_crew_runner, cex_run. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

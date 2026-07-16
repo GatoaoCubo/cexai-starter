@@ -18,10 +18,7 @@ updated: "2026-04-13"
 keywords: [retry policy, o format, gates for batch_config artifacts, validates provider, cost cap, completion window, credential hygiene]
 density_score: 0.92
 related:
-  - bld_output_template_batch_config
   - bld_architecture_batch_config
-  - bld_instruction_batch_config
-  - bld_knowledge_card_batch_config
   - bld_schema_batch_config
 ---
 ## Quality Gate

@@ -19,10 +19,6 @@ quality: null
 tags: [quality-gate, multi-modal-config, modality, routing, resolution]
 related:
   - multi-modal-config-builder
-  - bld_instruction_multi_modal_config
-  - bld_output_template_multi_modal_config
-  - bld_collaboration_multi_modal_config
-  - p01_kc_multi_modal_config
 ---
 ## Quality Gate
 

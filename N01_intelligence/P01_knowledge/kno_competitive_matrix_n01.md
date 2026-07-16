@@ -11,9 +11,7 @@ tags: [competitive_matrix, n01, p01, analytical_envy, comparison]
 keywords: [competitive_matrix, battle cards, procurement briefs, positioning notes, analytical envy, evidence rule, deployment_model, proof_quality]
 density_score: 0.97
 related:
-  - n00_competitive_matrix_manifest
   - p01_fse_generic_n01
-  - n01_intelligence
   - p01_cit_n01
   - p01_chunk_n01
 ---
@@ -155,6 +153,5 @@ When built correctly, it tells N01 where envy is justified, where it is misplace
 |----------|-------------|-------|
 | n00_competitive_matrix_manifest | related | 0.29 |
 | [[p01_fse_generic_n01]] | related | 0.29 |
-| [[n01_intelligence]] | downstream | 0.28 |
 | [[p01_cit_n01]] | related | 0.27 |
 | [[p01_chunk_n01]] | related | 0.26 |

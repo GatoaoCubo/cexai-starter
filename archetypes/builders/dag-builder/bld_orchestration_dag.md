@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [dag construction, collaboration dag, builder, examples, "### crew: pipeline architecture", my role, crew compositions, orchestration design, pipeline architecture, handoff protocol]
 density_score: 0.90
 related:
-  - bld_collaboration_dispatch_rule
   - bld_architecture_dag
-  - bld_collaboration_handoff
   - dag-builder
-  - bld_collaboration_component_map
 ---
 # Collaboration: dag-builder
 ## My Role in Crews
@@ -65,8 +62,5 @@ I model dependency structures so orchestrators can determine execution order and
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_dispatch_rule]] | sibling | 0.45 |
 | [[bld_architecture_dag]] | upstream | 0.45 |
-| [[bld_collaboration_handoff]] | sibling | 0.40 |
 | [[dag-builder]] | related | 0.37 |
-| [[bld_collaboration_component_map]] | sibling | 0.37 |

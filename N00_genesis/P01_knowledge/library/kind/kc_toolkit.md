@@ -18,11 +18,8 @@ keywords: [toolkit, tools, bundle, capability, function-calling, MCP]
 feeds_kinds: [toolkit]
 density_score: null
 related:
-  - bld_knowledge_card_toolkit
-  - p03_ins_toolkit_builder
   - toolkit-builder
   - bld_config_toolkit
-  - bld_collaboration_toolkit
 ---
 
 # Toolkit
@@ -68,7 +65,6 @@ A toolkit groups related tools into a coherent capability package. Instead of as
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_toolkit]] | sibling | 0.61 |
-| [[p03_ins_toolkit_builder]] | upstream | 0.59 |
 | [[toolkit-builder]] | related | 0.58 |
 | [[bld_config_toolkit]] | downstream | 0.57 |
 | [[bld_orchestration_toolkit]] | upstream | 0.57 |

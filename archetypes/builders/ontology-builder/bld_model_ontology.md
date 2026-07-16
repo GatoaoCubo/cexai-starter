@@ -35,8 +35,6 @@ parent: null
 8f: "F3_inject"
 related:
   - bld_architecture_ontology
-  - bld_collaboration_ontology
-  - n00_ontology_manifest
   - kc_ontology
   - bld_schema_ontology
 ---

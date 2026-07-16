@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - experiment-config-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_experiment_config
   - bld_architecture_experiment_config
 ---
 
@@ -88,6 +86,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[experiment-config-builder]] | related | 0.36 |
 | [[kind-builder]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[bld_collaboration_experiment_config]] | related | 0.29 |
 | [[bld_architecture_experiment_config]] | related | 0.29 |

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [playground_config construction, quality gate playground config, playground_config, builder, quality_gate, quality gate, fail condition]
 density_score: 0.85
-related:
-  - p09_qg_sandbox_spec
-  - p07_qg_eval_framework
-  - p07_qg_benchmark_suite
-  - p09_qg_marketplace_app_manifest
-  - p01_qg_reranker_config
 ---
 ## Quality Gate
 

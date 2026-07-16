@@ -20,9 +20,7 @@ this, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_output_template_reasoning_strategy
   - reasoning-strategy-builder
-  - bld_collaboration_search_strategy
   - kc_reasoning_strategy
   - bld_tools_reasoning_strategy
 ---
@@ -51,7 +49,6 @@ Does NOT handle prompt engineering (prompt_technique) or resource allocation (th
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_reasoning_strategy]] | upstream | 0.27 |
 | [[reasoning-strategy-builder]] | upstream | 0.27 |
 | bld_collaboration_search_strategy | sibling | 0.24 |
 | [[kc_reasoning_strategy]] | upstream | 0.24 |

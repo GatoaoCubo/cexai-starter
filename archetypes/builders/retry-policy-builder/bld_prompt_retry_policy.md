@@ -33,10 +33,8 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_retry_policy
-  - p11_qg_retry_policy
   - retry-policy-builder
   - bld_config_retry_policy
-  - bld_instruction_client
 ---
 # Instructions: How to Produce a retry_policy
 
@@ -82,7 +80,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_retry_policy]] | downstream | 0.41 |
-| [[p11_qg_retry_policy]] | downstream | 0.40 |
 | [[retry-policy-builder]] | downstream | 0.38 |
 | [[bld_config_retry_policy]] | downstream | 0.36 |
-| [[bld_instruction_client]] | sibling | 0.36 |

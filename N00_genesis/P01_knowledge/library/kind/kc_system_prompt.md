@@ -13,10 +13,8 @@ keywords: [system prompt, role definition, task scope, format requirements, json
 density_score: 0.99
 related:
   - system-prompt-builder
-  - p01_kc_pillar_brief_p03_prompt_en
   - action-prompt-builder
   - bld_memory_system_prompt
-  - bld_collaboration_response_format
 ---
 
 # System Prompt Engineering

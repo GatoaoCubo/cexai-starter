@@ -14,10 +14,7 @@ tldr: "5-tier RAG source config: T1 (arXiv/JSTOR/SEC EDGAR, daily), T2 (GitHub t
 keywords: [retrieval augmented generation, embedding, vector database, semantic chunking, evidence quality, arxiv, pubmed central, jstor]
 density_score: 0.97
 related:
-  - p10_out_source_dossier
-  - search_strategy_n01
   - bld_memory_rag_source
-  - p07_sr_intelligence_evaluation
 ---
 
 ## 1. PURPOSE

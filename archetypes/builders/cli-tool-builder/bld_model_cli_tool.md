@@ -30,12 +30,6 @@ tldr: Golden and anti-examples for cli tool construction, demonstrating ideal st
 llm_function: BECOME
 parent: null
 8f: "F5_call"
-related:
-  - bld_collaboration_cli_tool
-  - bld_instruction_cli_tool
-  - p11_qg_cli_tool
-  - p10_lr_cli_tool_builder
-  - bld_knowledge_card_cli_tool
 ---
 ## Identity
 

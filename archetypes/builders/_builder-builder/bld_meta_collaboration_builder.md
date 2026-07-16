@@ -21,9 +21,7 @@ density_score: 0.90
 related:
   - bld_meta_manifest_builder
   - bld_collaboration_builder
-  - bld_collaboration_kind
   - bld_meta_system_prompt_builder
-  - bld_collaboration_workflow
 ---
 # Collaboration: {{builder_name}}
 <!-- This meta-file generates the COLLABORATION.md of any builder -->
@@ -116,6 +114,4 @@ I {{primary_verb}} so {{downstream_consumers}} can {{consumer_benefit}}.
 |----------|-------------|-------|
 | [[bld_meta_manifest_builder]] | upstream | 0.34 |
 | [[bld_collaboration_builder]] | related | 0.32 |
-| [[bld_collaboration_kind]] | related | 0.31 |
 | [[bld_meta_system_prompt_builder]] | upstream | 0.27 |
-| [[bld_collaboration_workflow]] | related | 0.27 |

@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [case_study construction, instruction case study, case_study, builder, instruction, write challenge, write solution, write outcome, lessons learned, related artifacts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_case_study
   - bld_schema_case_study
-  - bld_output_template_case_study
-  - p05_qg_case_study
   - case-study-builder
 ---
 ## Phase 1: RESEARCH (case study discovery)
@@ -54,8 +51,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_case_study]] | upstream | 0.55 |
 | [[bld_schema_case_study]] | downstream | 0.49 |
-| [[bld_output_template_case_study]] | downstream | 0.39 |
-| [[p05_qg_case_study]] | downstream | 0.35 |
 | [[case-study-builder]] | downstream | 0.32 |

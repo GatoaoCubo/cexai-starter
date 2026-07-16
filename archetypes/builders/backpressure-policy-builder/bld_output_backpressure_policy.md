@@ -19,8 +19,6 @@ updated: "2026-04-17"
 keywords: [template with, backpressure policy construction, output template backpressure policy, fill-in template for backpressure_policy, overflow strategy, shed threshold, batch size, backpressure_policy, builder, output_template]
 density_score: 0.90
 related:
-  - p11_qg_backpressure_policy
-  - bld_instruction_backpressure_policy
   - bld_schema_backpressure_policy
   - bld_architecture_backpressure_policy
   - backpressure-policy-builder
@@ -95,8 +93,6 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_backpressure_policy]] | downstream | 0.52 |
-| [[bld_instruction_backpressure_policy]] | upstream | 0.46 |
 | [[bld_schema_backpressure_policy]] | downstream | 0.46 |
 | [[bld_architecture_backpressure_policy]] | downstream | 0.44 |
 | [[backpressure-policy-builder]] | downstream | 0.41 |

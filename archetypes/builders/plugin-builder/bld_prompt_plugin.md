@@ -19,10 +19,8 @@ feeds_kinds: [skill]
 density_score: null
 llm_function: REASON
 related:
-  - bld_collaboration_plugin
   - plugin-builder
   - bld_prompt_synthetic_data_config
-  - n00_plugin_manifest
   - bld_prompt_query_optimizer
 ---
 # Skill

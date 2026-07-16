@@ -29,11 +29,7 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_constraint_spec
   - bld_architecture_constraint_spec
-  - p10_lr_constraint_spec_builder
-  - p11_qg_constraint_spec
-  - bld_instruction_constraint_spec
 ---
 ## Identity
 
@@ -131,6 +127,4 @@ quality_target: 9.0
 |----------|-------------|-------|
 | [[bld_orchestration_constraint_spec]] | downstream | 0.54 |
 | [[bld_architecture_constraint_spec]] | downstream | 0.53 |
-| [[p10_lr_constraint_spec_builder]] | downstream | 0.52 |
-| [[p11_qg_constraint_spec]] | downstream | 0.45 |
 | [[bld_prompt_constraint_spec]] | related | 0.44 |

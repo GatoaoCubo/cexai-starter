@@ -17,11 +17,7 @@ updated: "2026-04-07"
 keywords: [content monetization construction, tools content monetization, content_monetization, builder, examples, payment providers, hotmart club, other providers, email providers, react email]
 density_score: 0.90
 related:
-  - bld_instruction_content_monetization
-  - bld_knowledge_card_content_monetization
   - bld_architecture_content_monetization
-  - p01_kc_content_platform_comparison
-  - bld_collaboration_content_monetization
 ---
 # Tools: content-monetization-builder
 

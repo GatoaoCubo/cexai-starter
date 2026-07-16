@@ -18,11 +18,9 @@ keywords: [case_study construction, knowledge card case study, roi call-out, gar
 customer, key concepts, harvard business review]
 density_score: 0.85
 related:
-  - bld_instruction_case_study
   - bld_schema_case_study
   - case-study-builder
   - bld_tools_case_study
-  - n00_case_study_manifest
 ---
 ## Domain Overview
 Customer case studies are narrative evidence artifacts that demonstrate product value through verified customer outcomes. The industry standard structure is Challenge-Solution-Outcome (CSO): start with the before-state pain, describe the solution adopted, quantify the after-state result. High-credibility case studies include a named champion pullquote, a ROI call-out with headline metric, and before/after KPI comparison tables.
@@ -68,8 +66,6 @@ Industry references: Gartner customer reference program requires verified ROI fi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_case_study]] | downstream | 0.53 |
 | [[bld_schema_case_study]] | downstream | 0.46 |
 | [[case-study-builder]] | downstream | 0.42 |
 | [[bld_tools_case_study]] | downstream | 0.42 |
-| [[n00_case_study_manifest]] | sibling | 0.38 |

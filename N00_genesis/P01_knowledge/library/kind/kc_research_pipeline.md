@@ -18,11 +18,7 @@ keywords: [research_pipeline, STORM, CRAG, CRITIC, retrieval, synthesis, verific
 feeds_kinds: [research_pipeline]
 density_score: null
 related:
-  - bld_knowledge_card_research_pipeline
   - research-pipeline-builder
-  - bld_instruction_research_pipeline
-  - p02_agent_research_pipeline_intelligence
-  - p04_cli_research_pipeline_n01
 ---
 
 # Research Pipeline

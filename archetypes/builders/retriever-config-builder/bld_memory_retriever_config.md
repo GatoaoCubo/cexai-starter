@@ -25,12 +25,6 @@ title: "Memory Retriever Config"
 8f: "F7_govern"
 density_score: 0.90
 llm_function: INJECT
-related:
-  - p10_lr_chunk_strategy_builder
-  - p10_lr_handoff_protocol_builder
-  - p10_lr_output_validator_builder
-  - bld_knowledge_card_retriever_config
-  - p10_lr_prompt_version_builder
 ---
 ## Summary
 Retrieval parameters — how to search and rank chunks from a vector/hybrid store. The difference between a useful retriever_config and a useless one is concrete values
@@ -78,8 +72,4 @@ python _tools/cex_score.py --apply p10-lr-retriever-config-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_chunk_strategy_builder]] | sibling | 0.44 |
-| [[p10_lr_handoff_protocol_builder]] | sibling | 0.41 |
-| [[p10_lr_output_validator_builder]] | sibling | 0.41 |
 | [[bld_knowledge_retriever_config]] | upstream | 0.40 |
-| [[p10_lr_prompt_version_builder]] | sibling | 0.38 |

@@ -26,10 +26,8 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - bld_qg_domain_vocabulary
   - bounded-context-builder
   - bld_output_bounded_context
-  - bld_qg_domain_event
   - bld_schema_bounded_context
 ---
 ## Quality Gate

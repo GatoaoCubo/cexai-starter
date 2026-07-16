@@ -33,11 +33,7 @@ parent: null
 8f: "F3_inject"
 density_score: 1.0
 related:
-  - bld_collaboration_episodic_memory
   - bld_architecture_episodic_memory
-  - bld_knowledge_card_episodic_memory
-  - p01_kc_episodic_memory
-  - bld_instruction_episodic_memory
 ---
 ## Identity
 

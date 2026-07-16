@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - e2e-eval-builder
-  - bld_collaboration_e2e_eval
   - kind-builder
-  - p03_sp_builder_nucleus
-  - n00_e2e_eval_manifest
 ---
 
 # e2e-eval-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[e2e-eval-builder]] | related | 0.35 |
-| [[bld_collaboration_e2e_eval]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[n00_e2e_eval_manifest]] | related | 0.30 |

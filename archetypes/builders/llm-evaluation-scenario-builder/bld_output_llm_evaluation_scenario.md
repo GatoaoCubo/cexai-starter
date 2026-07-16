@@ -18,8 +18,6 @@ keywords: [llm_evaluation_scenario construction, llm_evaluation_scenario, builde
 density_score: 0.85
 related:
   - bld_schema_llm_evaluation_scenario
-  - p07_qg_llm_evaluation_scenario
-  - bld_instruction_llm_evaluation_scenario
   - bld_config_llm_evaluation_scenario
   - llm-evaluation-scenario-builder
 ---

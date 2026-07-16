@@ -18,11 +18,7 @@ keywords: [builder identity, routing for roi_calculator, roi_calculator construc
 specializes, net profit, total investment]
 density_score: 0.85
 related:
-  - bld_knowledge_card_roi_calculator
-  - bld_instruction_roi_calculator
-  - p10_mem_roi_calculator_builder
   - kc_roi_calculator
-  - p11_qg_roi_calculator
 ---
 ## Identity
 
@@ -71,6 +67,4 @@ NEVER MAKE UNSPECIFIED ASSUMPTIONS ABOUT DISCOUNT RATES OR TIME HORIZONS
 |----------|-------------|-------|
 | [[bld_knowledge_roi_calculator]] | upstream | 0.54 |
 | [[bld_prompt_roi_calculator]] | upstream | 0.50 |
-| [[p10_mem_roi_calculator_builder]] | upstream | 0.48 |
 | [[kc_roi_calculator]] | upstream | 0.48 |
-| [[p11_qg_roi_calculator]] | related | 0.41 |

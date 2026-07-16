@@ -45,10 +45,6 @@ keywords:
 density_score: 0.99
 related:
   - bld_architecture_circuit_breaker
-  - bld_knowledge_card_circuit_breaker
-  - p01_kc_circuit_breaker
-  - bld_instruction_circuit_breaker
-  - p11_qg_circuit_breaker
 ---
 ## Identity
 
@@ -124,7 +120,3 @@ ID must match `^p09_cb_[a-z][a-z0-9_]+$`. Body must not exceed 3072 bytes.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_circuit_breaker]] | upstream | 0.61 |
-| [[bld_knowledge_card_circuit_breaker]] | upstream | 0.54 |
-| [[p01_kc_circuit_breaker]] | related | 0.51 |
-| [[bld_instruction_circuit_breaker]] | upstream | 0.47 |
-| [[p11_qg_circuit_breaker]] | downstream | 0.46 |

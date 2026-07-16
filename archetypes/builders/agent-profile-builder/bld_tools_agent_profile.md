@@ -17,10 +17,7 @@ updated: "2026-04-13"
 keywords: [agent_profile construction, tools agent profile, agent_profile, builder, tools, production tools, validation tools, external references, hugging face transformers, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_agent
-  - p01_kc_agent
   - bld_architecture_agent
-  - bld_knowledge_card_agent
   - agent-profile-builder
 ---
 ## Production Tools

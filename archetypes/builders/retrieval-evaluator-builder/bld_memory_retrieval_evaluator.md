@@ -24,9 +24,7 @@ density_score: 0.85
 llm_function: INJECT
 related:
   - bld_knowledge_retrieval_evaluator
-  - p07_regression_check
   - retrieval-evaluator-builder
-  - p03_ins_optimizer
 ---
 ## Summary
 Single-metric retrieval evaluation creates blind spots. NDCG misses latency; precision misses recall. Reliable evaluation requires complementary metrics, sufficient query volume, and baseline comparison.
@@ -43,6 +41,4 @@ Single-metric retrieval evaluation creates blind spots. NDCG misses latency; pre
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_retrieval_evaluator]] | upstream | 0.42 |
-| [[p07_regression_check]] | upstream | 0.30 |
 | [[retrieval-evaluator-builder]] | upstream | 0.30 |
-| [[p03_ins_optimizer]] | upstream | 0.27 |

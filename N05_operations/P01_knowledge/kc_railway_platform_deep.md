@@ -17,12 +17,6 @@ sources:
   - https://docs.railway.com/reference/config-as-code
 created: 2026-04-01
 keywords: [railway platform - architecture, railway, deploy, infra, cloud, platform, production, staging, "pr", railway up]
-related:
-  - p01_kc_railway_platform_deep
-  - p01_kc_railway_cli_patterns
-  - p01_kc_deploy_paas
-  - p02_agent_railway_superintendent
-  - p03_sp_railway_superintendent
 ---
 
 # Railway Platform — Architecture, Deploy & Operations

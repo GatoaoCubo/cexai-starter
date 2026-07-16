@@ -5,9 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_saga
-  - bld_manifest_saga
-  - bld_context_sources_saga
-  - kc_saga
   - bld_architecture_saga
 ---
 
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_saga]] | related | 0.39 |
-| [[bld_manifest_saga]] | related | 0.38 |
-| [[bld_context_sources_saga]] | related | 0.34 |
-| [[kc_saga]] | related | 0.34 |
 | [[bld_architecture_saga]] | related | 0.32 |

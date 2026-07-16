@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - few-shot-example-builder
-  - p10_lr_few_shot_example_builder
-  - bld_instruction_golden_test
-  - p11_qg_few_shot_example
-  - bld_instruction_action_prompt
 ---
 # Instructions: How to Produce a few_shot_example
 ## Phase 1: RESEARCH
@@ -103,7 +99,5 @@ python _tools/cex_skill_loader.py --verify few
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[few-shot-example-builder]] | upstream | 0.45 |
-| [[p10_lr_few_shot_example_builder]] | downstream | 0.43 |
 | [[bld_prompt_golden_test]] | sibling | 0.42 |
-| [[p11_qg_few_shot_example]] | downstream | 0.42 |
 | [[bld_prompt_action_prompt]] | sibling | 0.40 |

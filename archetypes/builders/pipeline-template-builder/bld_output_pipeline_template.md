@@ -18,11 +18,7 @@ keywords: [pipeline_template construction, output template pipeline template, pi
 max]
 density_score: 0.87
 related:
- - p11_qg_pipeline_template
  - pipeline-template-builder
- - bld_instruction_pipeline_template
- - n00_pipeline_template_manifest
- - kc_pipeline_template
 ---
 ```yaml
 ---

@@ -18,10 +18,7 @@ keywords: [action_paradigm construction, output template action paradigm, and fi
 density_score: null
 related:
   - bld_memory_action_paradigm
-  - p11_qg_action_paradigm
   - action-paradigm-builder
-  - bld_instruction_action_paradigm
-  - bld_knowledge_card_action_paradigm
 ---
 ## Frontmatter Template
 ```yaml
@@ -126,7 +123,4 @@ Do NOT embed transport protocols here -- reference agent_computer_interface arti
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_action_paradigm]] | downstream | 0.38 |
-| [[p11_qg_action_paradigm]] | downstream | 0.38 |
 | [[action-paradigm-builder]] | upstream | 0.33 |
-| [[bld_instruction_action_paradigm]] | upstream | 0.25 |
-| [[bld_knowledge_card_action_paradigm]] | upstream | 0.23 |

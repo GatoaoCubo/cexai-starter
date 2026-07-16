@@ -16,10 +16,7 @@ keywords: [bm25, tf-idf, cosine similarity, bi-encoder, cross-encoder, rrf, prec
 density_score: 0.93
 updated: "2026-04-17"
 related:
-  - p07_em_n04_knowledge
   - bld_knowledge_retrieval_evaluator
-  - kc_retrieval_evaluator
-  - p04_retr_n01
   - bld_knowledge_query_optimizer
 ---
 

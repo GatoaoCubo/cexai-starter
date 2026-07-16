@@ -19,9 +19,6 @@ density_score: 0.92
 related:
   - edit-format-builder
   - bld_tools_diff_strategy
-  - bld_output_template_edit_format
-  - bld_knowledge_card_diff_strategy
-  - n00_edit_format_manifest
 ---
 ## Domain Overview
 
@@ -109,6 +106,3 @@ Most resilient format for LLM edits. Uses `<<<<<<< SEARCH` / `=======` / `>>>>>>
 |----------|-------------|-------|
 | [[edit-format-builder]] | downstream | 0.54 |
 | [[bld_tools_diff_strategy]] | downstream | 0.44 |
-| [[bld_output_template_edit_format]] | downstream | 0.43 |
-| [[bld_knowledge_card_diff_strategy]] | sibling | 0.38 |
-| [[n00_edit_format_manifest]] | sibling | 0.37 |

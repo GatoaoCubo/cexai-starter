@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - constraint-spec-builder
   - kind-builder
-  - bld_collaboration_constraint_spec
-  - p03_sp_builder_nucleus
   - system-prompt-builder
 ---
 

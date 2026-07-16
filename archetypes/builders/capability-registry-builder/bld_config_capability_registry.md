@@ -18,10 +18,7 @@ keywords: [limits for capability_registry production, capability_registry constr
 density_score: 0.85
 related:
   - capability-registry-builder
-  - n00_capability_registry_manifest
   - bld_architecture_kind
-  - bld_collaboration_capability_registry
-  - bld_output_template_capability_registry
 ---
 ## Naming Convention
 Pattern: `p08_cr_`{{registry_name}}`.md`
@@ -67,4 +64,3 @@ Recommended cadence: after each WAVE dispatch cycle.
 | n00_capability_registry_manifest | upstream | 0.33 |
 | bld_architecture_kind | upstream | 0.31 |
 | [[bld_orchestration_capability_registry]] | downstream | 0.29 |
-| [[bld_output_template_capability_registry]] | upstream | 0.29 |

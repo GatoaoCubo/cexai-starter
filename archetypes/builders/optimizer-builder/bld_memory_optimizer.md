@@ -24,10 +24,7 @@ reliable, threshold ordering]
 density_score: 0.90
 related:
   - optimizer-builder
-  - p03_ins_optimizer
-  - p11_qg_optimizer
   - bld_architecture_optimizer
-  - bld_knowledge_card_optimizer
 ---
 # Memory: optimizer-builder
 ## Summary
@@ -86,7 +83,4 @@ python _tools/cex_score.py --apply bld-memory-optimizer.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[optimizer-builder]] | downstream | 0.56 |
-| [[p03_ins_optimizer]] | upstream | 0.52 |
-| [[p11_qg_optimizer]] | downstream | 0.43 |
 | [[bld_architecture_optimizer]] | upstream | 0.43 |
-| [[bld_knowledge_card_optimizer]] | upstream | 0.41 |

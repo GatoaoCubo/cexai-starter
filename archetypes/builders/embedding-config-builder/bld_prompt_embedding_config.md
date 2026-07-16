@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - embedding-config-builder
-  - bld_instruction_chunk_strategy
-  - bld_instruction_retriever_config
-  - bld_instruction_search_tool
-  - bld_instruction_knowledge_index
 ---
 # Instructions: How to Produce an embedding_config
 ## Phase 1: RESEARCH

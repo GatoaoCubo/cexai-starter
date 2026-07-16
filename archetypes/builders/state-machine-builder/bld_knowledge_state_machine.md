@@ -17,10 +17,8 @@ author: n03_builder
 keywords: [formal fsm with states, not workflow, nor process_manager, event coordinator, state_machine, xstate, entity-lifecycle]
 density_score: 0.90
 related:
-  - kc_state_machine
   - state-machine-builder
   - bld_schema_state_machine
-  - bld_collaboration_state_machine
   - bld_architecture_state_machine
 ---
 # Knowledge Card: state_machine
@@ -153,8 +151,6 @@ const orderMachine = createMachine({
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_state_machine]] | sibling | 0.82 |
 | [[state-machine-builder]] | downstream | 0.65 |
 | [[bld_schema_state_machine]] | downstream | 0.62 |
-| [[bld_collaboration_state_machine]] | downstream | 0.59 |
 | [[bld_architecture_state_machine]] | downstream | 0.59 |

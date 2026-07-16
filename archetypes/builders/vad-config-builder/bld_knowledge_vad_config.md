@@ -18,10 +18,6 @@ keywords: [vad_config construction, knowledge card vad config, vad_config, build
 density_score: 0.85
 related:
   - vad-config-builder
-  - p01_kc_audit_vad_config_builder
-  - kc_vad_config
-  - n00_vad_config_manifest
-  - p01_kc_atom_29_voice_realtime
 ---
 ## Domain Overview  
 Voice Activity Detection (VAD) is a critical preprocessing step in speech processing systems, enabling the separation of speech from non-speech segments (e.g., silence, noise). It underpins applications like conferencing, voice assistants, and transcription by improving signal quality and reducing computational load. VAD configurations balance sensitivity (detecting speech) and specificity (avoiding false positives), often tailored to environments with varying noise levels, speaker characteristics, and language nuances.  
@@ -86,7 +82,3 @@ Modern VAD systems leverage machine learning models (e.g., neural networks) or r
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[vad-config-builder]] | downstream | 0.66 |
-| [[p01_kc_audit_vad_config_builder]] | sibling | 0.52 |
-| [[kc_vad_config]] | sibling | 0.51 |
-| [[n00_vad_config_manifest]] | sibling | 0.47 |
-| [[p01_kc_atom_29_voice_realtime]] | sibling | 0.41 |

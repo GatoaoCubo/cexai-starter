@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [interactive_demo construction, quality gate interactive demo, interactive_demo, builder, quality_gate, quality gate, fail condition, scoring guide, talk track, metric threshold]
 density_score: 0.85
-related:
-  - kc_interactive_demo
-  - p05_qg_product_tour
-  - bld_output_template_interactive_demo
-  - p05_qg_pricing_page
-  - p10_mem_interactive_demo_builder
 ---
 ## Quality Gate
 

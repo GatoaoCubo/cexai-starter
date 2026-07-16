@@ -19,7 +19,6 @@ density_score: 0.90
 related:
   - bld_config_dispatch_rule
   - dispatch-rule-builder
-  - p11_qg_dispatch_rule
   - bld_architecture_dispatch_rule
   - bld_schema_dispatch_rule
 ---
@@ -87,6 +86,5 @@ routing_strategy: {{keyword_match|semantic|hybrid_or_omit}}
 |----------|-------------|-------|
 | [[bld_config_dispatch_rule]] | downstream | 0.42 |
 | [[dispatch-rule-builder]] | downstream | 0.41 |
-| [[p11_qg_dispatch_rule]] | downstream | 0.34 |
 | [[bld_architecture_dispatch_rule]] | downstream | 0.33 |
 | [[bld_schema_dispatch_rule]] | downstream | 0.31 |

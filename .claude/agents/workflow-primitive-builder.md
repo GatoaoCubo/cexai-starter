@@ -7,8 +7,6 @@ related:
   - bld_architecture_workflow_primitive
   - workflow-primitive-builder
   - bld_tools_workflow_primitive
-  - bld_collaboration_workflow_primitive
-  - n00_workflow_primitive_manifest
 ---
 
 # workflow-primitive-builder Sub-Agent

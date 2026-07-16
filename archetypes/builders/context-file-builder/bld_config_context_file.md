@@ -32,8 +32,6 @@ related:
   - ctx_{{scope}}
   - kc_context_file
   - bld_schema_context_file
-  - bld_knowledge_card_context_file
-  - p11_qg_context_file
 ---
 
 # Config: context_file Production Rules
@@ -97,4 +95,3 @@ Rule: lower number = loads earlier; higher number = overrides on conflict (last 
 | [[kc_context_file]] | upstream | 0.37 |
 | [[bld_schema_context_file]] | upstream | 0.36 |
 | [[bld_knowledge_context_file]] | upstream | 0.36 |
-| [[p11_qg_context_file]] | upstream | 0.36 |

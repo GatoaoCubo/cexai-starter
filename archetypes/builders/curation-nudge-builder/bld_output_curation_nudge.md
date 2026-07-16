@@ -34,10 +34,6 @@ keywords:
  - "replace"
 density_score: 0.89
 related:
- - n00_curation_nudge_manifest
- - p11_ins_curation_nudge
- - p11_schema_curation_nudge
- - p11_arch_curation_nudge
  - curation-nudge-builder
 ---
 ## Output Shape

@@ -18,9 +18,6 @@ keywords: [product_tour construction, instruction product tour, product_tour, bu
 density_score: 0.85
 related:
   - product-tour-builder
-  - kc_product_tour
-  - bld_knowledge_card_product_tour
-  - n00_product_tour_manifest
   - bld_tools_product_tour
 ---
 ## Phase 1: RESEARCH  
@@ -53,7 +50,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[product-tour-builder]] | downstream | 0.43 |
-| [[kc_product_tour]] | upstream | 0.42 |
-| [[bld_knowledge_card_product_tour]] | upstream | 0.39 |
-| [[n00_product_tour_manifest]] | downstream | 0.38 |
 | [[bld_tools_product_tour]] | downstream | 0.34 |

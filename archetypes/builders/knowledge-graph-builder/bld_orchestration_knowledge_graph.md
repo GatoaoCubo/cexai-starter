@@ -20,9 +20,7 @@ density_score: 0.90
 related:
   - knowledge-graph-builder
   - bld_architecture_knowledge_graph
-  - n00_graph_rag_config_manifest
   - graph-rag-config-builder
-  - p01_kc_knowledge_graph
 ---
 # Collaboration: knowledge-graph-builder
 
@@ -108,6 +106,4 @@ timestamp: "{{ISO8601}}"
 |----------|-------------|-------|
 | [[knowledge-graph-builder]] | upstream | 0.43 |
 | [[bld_architecture_knowledge_graph]] | upstream | 0.40 |
-| [[n00_graph_rag_config_manifest]] | upstream | 0.39 |
 | [[graph-rag-config-builder]] | upstream | 0.38 |
-| [[p01_kc_knowledge_graph]] | upstream | 0.36 |

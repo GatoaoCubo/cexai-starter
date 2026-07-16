@@ -26,11 +26,7 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - bld_qg_domain_event
-  - bld_manifest_aggregate_root
   - bld_schema_aggregate_root
-  - bld_output_template_aggregate_root
-  - bld_instruction_aggregate_root
 ---
 ## Quality Gate
 

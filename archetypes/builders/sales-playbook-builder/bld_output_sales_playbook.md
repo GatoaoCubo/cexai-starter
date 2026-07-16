@@ -18,9 +18,6 @@ density_score: 0.85
 related:
   - bld_schema_sales_playbook
   - bld_config_sales_playbook
-  - bld_output_template_visual_workflow
-  - bld_output_template_self_improvement_loop
-  - bld_output_template_sdk_example
 ---
 ```yaml
 ---
@@ -57,6 +54,3 @@ def generate_proposal(client_name):
 |----------|-------------|-------|
 | [[bld_schema_sales_playbook]] | downstream | 0.22 |
 | [[bld_config_sales_playbook]] | downstream | 0.20 |
-| [[bld_output_template_visual_workflow]] | sibling | 0.19 |
-| [[bld_output_template_self_improvement_loop]] | sibling | 0.18 |
-| [[bld_output_template_sdk_example]] | sibling | 0.18 |

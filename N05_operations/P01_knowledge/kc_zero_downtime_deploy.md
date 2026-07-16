@@ -31,17 +31,6 @@ keywords:
   - "rollback"
   - "factor"
   - ") - timeout: default 300s — override with"
-related:
-  - KC_N05_RAILWAY_PLATFORM_DEEP
-  - p01_kc_deploy_paas
-  - p02_agent_railway_superintendent
-  - KC_N05_RAILWAY_CLI_PATTERNS
-  - KC_N05_UVICORN_PRODUCTION
-  - p03_sp_railway_superintendent
-  - p02_agent_deploy_ops
-  - p01_kc_railway_platform_deep
-  - p08_ac_railway_superintendent
-  - p01_kc_zero_downtime_deploy
 ---
 
 # KC: Zero-Downtime Deploy Patterns
@@ -273,13 +262,9 @@ Use `/health` (shallow) for Railway health gate. Use `/ready` (deep) for interna
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[KC_N05_RAILWAY_PLATFORM_DEEP]] | sibling | 0.45 |
 | p01_kc_deploy_paas | sibling | 0.44 |
 | p02_agent_railway_superintendent | upstream | 0.42 |
-| [[KC_N05_RAILWAY_CLI_PATTERNS]] | sibling | 0.42 |
-| [[KC_N05_UVICORN_PRODUCTION]] | sibling | 0.41 |
 | p03_sp_railway_superintendent | upstream | 0.41 |
 | p02_agent_deploy_ops | upstream | 0.41 |
 | p01_kc_railway_platform_deep | sibling | 0.40 |
-| [[p08_ac_railway_superintendent]] | downstream | 0.40 |
 | p01_kc_zero_downtime_deploy | sibling | 0.39 |

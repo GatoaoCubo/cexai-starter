@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [guardrail construction, collaboration guardrail, guardrail, builder, examples, "### crew: governance foundation", my role, crew compositions, agent safety stack, governance foundation]
 density_score: 0.90
 related:
-  - bld_collaboration_agent
   - guardrail-builder
-  - bld_collaboration_system_prompt
-  - bld_collaboration_bugloop
   - bld_architecture_guardrail
 ---
 # Collaboration: guardrail-builder

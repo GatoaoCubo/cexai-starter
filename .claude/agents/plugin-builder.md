@@ -4,9 +4,7 @@ description: "Builds ONE plugin artifact via 8F pipeline. Loads plugin-builder s
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_plugin
   - kind-builder
-  - p03_sp_builder_nucleus
   - plugin-builder
   - bld_architecture_plugin
 ---
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_plugin]] | related | 0.34 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[plugin-builder]] | related | 0.30 |
 | [[bld_architecture_plugin]] | related | 0.30 |

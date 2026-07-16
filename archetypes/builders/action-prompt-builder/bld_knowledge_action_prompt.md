@@ -20,9 +20,6 @@ action, anthropic human, py signatures, spec table]
 density_score: 0.90
 related:
   - action-prompt-builder
-  - p01_kc_action_prompt
-  - bld_instruction_action_prompt
-  - bld_collaboration_action_prompt
   - bld_architecture_action_prompt
 ---
 # Domain Knowledge: action_prompt

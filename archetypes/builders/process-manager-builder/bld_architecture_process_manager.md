@@ -17,11 +17,7 @@ density_score: 0.99
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_manifest_process_manager
-  - kc_process_manager
   - bld_memory_process_manager
-  - bld_rules_process_manager
-  - bld_instruction_process_manager
 ---
 # Architecture: process_manager
 ## Pattern Origin
@@ -85,8 +81,4 @@ python _tools/cex_doctor.py --scope architecture
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_process_manager]] | sibling | 0.56 |
-| [[kc_process_manager]] | sibling | 0.52 |
 | [[bld_memory_process_manager]] | sibling | 0.45 |
-| [[bld_rules_process_manager]] | sibling | 0.41 |
-| [[bld_instruction_process_manager]] | related | 0.39 |

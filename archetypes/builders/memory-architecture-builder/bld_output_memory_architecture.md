@@ -17,10 +17,8 @@ updated: "2026-04-14"
 keywords: [llm agent memory systems, output template, layer table, storage backends, tier matrix, memory_architecture, builder]
 density_score: 0.90
 related:
-  - bld_knowledge_card_memory_architecture
   - memory-architecture-builder
   - bld_schema_memory_architecture
-  - bld_knowledge_card_consolidation_policy
 ---
 ```yaml
 ---

@@ -15,11 +15,8 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_instruction_domain_event
-  - bld_qg_domain_event
   - bld_schema_domain_event
   - domain-event-builder
-  - p01_kc_domain_event
 ---
 # Output Template: domain_event
 ```markdown
@@ -89,8 +86,5 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_domain_event]] | related | 0.32 |
-| [[bld_qg_domain_event]] | downstream | 0.31 |
 | [[bld_schema_domain_event]] | downstream | 0.31 |
 | [[domain-event-builder]] | downstream | 0.30 |
-| [[p01_kc_domain_event]] | upstream | 0.28 |

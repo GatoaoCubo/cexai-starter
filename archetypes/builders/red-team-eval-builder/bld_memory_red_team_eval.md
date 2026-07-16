@@ -28,7 +28,6 @@ llm_function: INJECT
 related:
   - red-team-eval-builder
   - bld_tools_memory_type
-  - p11_qg_red_team_eval
   - bld_config_memory_type
   - bld_config_tagline
 ---
@@ -121,6 +120,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_red_team_eval_builder.md
 |----------|-------------|-------|
 | [[red-team-eval-builder]] | upstream | 0.32 |
 | [[bld_tools_memory_type]] | upstream | 0.32 |
-| [[p11_qg_red_team_eval]] | downstream | 0.31 |
 | [[bld_config_memory_type]] | upstream | 0.30 |
 | [[bld_config_tagline]] | upstream | 0.29 |

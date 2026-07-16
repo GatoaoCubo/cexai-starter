@@ -32,11 +32,8 @@ keywords:
   - "## overview"
 density_score: 0.90
 related:
-  - p11_qg_circuit_breaker
   - bld_architecture_circuit_breaker
-  - bld_instruction_circuit_breaker
   - bld_schema_circuit_breaker
-  - bld_knowledge_card_circuit_breaker
 ---
 # Output Template: circuit_breaker
 
@@ -87,8 +84,5 @@ SLA impact: `{{what_callers_experience_during_open}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_circuit_breaker]] | downstream | 0.66 |
 | [[bld_architecture_circuit_breaker]] | downstream | 0.61 |
-| [[bld_instruction_circuit_breaker]] | upstream | 0.58 |
 | [[bld_schema_circuit_breaker]] | downstream | 0.56 |
-| [[bld_knowledge_card_circuit_breaker]] | upstream | 0.53 |

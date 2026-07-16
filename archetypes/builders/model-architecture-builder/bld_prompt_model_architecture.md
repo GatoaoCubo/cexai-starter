@@ -29,12 +29,6 @@ keywords:
   - "quality"
   - "layer structure"
 density_score: 0.85
-related:
-  - bld_output_template_model_architecture
-  - bld_instruction_retriever_config
-  - bld_instruction_memory_scope
-  - bld_instruction_chunk_strategy
-  - p11_qg_model_architecture
 ---
 # Instructions: How to Produce a model_architecture
 ## Phase 1: RESEARCH
@@ -66,12 +60,3 @@ related:
 8. Confirm `quality` is null
 9. Cross-check: structure spec -> model_architecture; training job -> finetune_config; deployed model docs -> model_card
 10. If score < 8.0: revise before outputting
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_model_architecture]] | downstream | 0.38 |
-| [[bld_instruction_retriever_config]] | sibling | 0.37 |
-| [[bld_instruction_memory_scope]] | sibling | 0.37 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.36 |
-| [[p11_qg_model_architecture]] | downstream | 0.36 |

@@ -47,12 +47,6 @@ tags: [agent_card, orchestrator, N07, multi-cli, dispatch]
 tldr: "N07 deployment spec -- claude opus 1M context, dispatch-only orchestrator with 7+ tools and 6 downstream nuclei."
 keywords: [agent card n07, deployment spec, claude opus, dispatch-only orchestrator, downstream nuclei, agent_card, orchestrator, multi-cli, dispatch]
 density_score: 0.91
-related:
-  - p01_kc_orchestration
-  - p03_sp_admin_orchestrator
-  - p02_agent_admin_orchestrator
-  - p12_wf_admin_orchestration
-  - p01_kc_orchestration_best_practices
 ---
 
 # Agent Card: N07 Orchestrator
@@ -214,7 +208,6 @@ directly -- it coordinates the work of N01-N06.
 
 | Artifact | Relationship | Score |
 |----------|--------------|-------|
-| [[p01_kc_orchestration]] | upstream | 0.62 |
 | p03_sp_admin_orchestrator | upstream | 0.62 |
 | p02_agent_admin_orchestrator | upstream | 0.53 |
 | p12_wf_admin_orchestration | downstream | 0.49 |

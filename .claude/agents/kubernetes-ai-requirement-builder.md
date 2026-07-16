@@ -4,11 +4,8 @@ description: "Builds ONE kubernetes_ai_requirement artifact via 8F pipeline. Loa
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_config_kubernetes_ai_requirement
-  - p01_kc_pillar_brief_p02_model_en
-  - p11_fb_kubernetes_ai_requirement
 ---
 
 # kubernetes-ai-requirement-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[bld_config_kubernetes_ai_requirement]] | related | 0.29 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |
-| [[p11_fb_kubernetes_ai_requirement]] | related | 0.26 |

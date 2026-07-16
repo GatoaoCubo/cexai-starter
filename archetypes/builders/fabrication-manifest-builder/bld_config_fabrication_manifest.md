@@ -19,7 +19,6 @@ density_score: 0.85
 related:
   - bld_config_deployment_manifest
   - bld_config_team_charter
-  - kc_fabrication_manifest
   - fabrication-manifest-builder
   - bld_schema_fabrication_manifest
 ---
@@ -68,6 +67,5 @@ framework tree. Never `git add -f` this file.
 |----------|-------------|-------|
 | [[bld_config_deployment_manifest]] | sibling | 0.30 |
 | [[bld_config_team_charter]] | sibling | 0.28 |
-| [[kc_fabrication_manifest]] | upstream | 0.34 |
 | [[fabrication-manifest-builder]] | downstream | 0.30 |
 | [[bld_schema_fabrication_manifest]] | related | 0.32 |

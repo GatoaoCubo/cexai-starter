@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [vc_credential construction, quality gate vc credential, vc_credential, builder, quality_gate, vc-2, data-integrity]
 density_score: 0.85
 related:
-  - bld_instruction_vc_credential
   - bld_tools_vc_credential
   - vc-credential-builder
-  - p10_lr_vc_credential_builder
-  - bld_knowledge_card_vc_credential
 ---
 ## Quality Gate
 

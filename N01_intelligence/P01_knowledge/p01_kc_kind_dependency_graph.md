@@ -16,7 +16,6 @@ keywords: [rag_source, knowledge_card, glossary_entry, embedding_config, retriev
 density_score: null
 related:
   - bld_architecture_citation
-  - cm_cex_vs_landscape
   - bld_architecture_agent
 ---
 

@@ -25,10 +25,7 @@ L1: Specialist in alert_rule artifacts -- observable threshold conditions with n
 L2: Defines metric expression, severity, routing, and automated response.
 L3: When a system condition must trigger a notification or automated remediation.
 related:
-  - p01_kc_alert_rule
-  - bld_rules_alert_rule
   - bld_memory_alert_rule
-  - bld_instruction_alert_rule
   - bld_architecture_alert_rule
 ---
 ## Identity
@@ -97,8 +94,5 @@ quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_alert_rule]] | upstream | 0.45 |
-| [[bld_rules_alert_rule]] | downstream | 0.44 |
 | [[bld_memory_alert_rule]] | downstream | 0.41 |
-| [[bld_instruction_alert_rule]] | upstream | 0.38 |
 | [[bld_architecture_alert_rule]] | upstream | 0.38 |

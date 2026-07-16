@@ -35,11 +35,8 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_runtime_rule
   - bld_architecture_runtime_rule
-  - bld_knowledge_card_runtime_rule
   - bld_memory_runtime_rule
-  - p03_ins_runtime_rule
 ---
 ## Identity
 
@@ -117,8 +114,5 @@ You know: fixed vs exponential vs decorrelated-jitter retry formulas, token buck
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_runtime_rule]] | related | 0.48 |
 | [[bld_architecture_runtime_rule]] | upstream | 0.48 |
-| [[bld_knowledge_card_runtime_rule]] | related | 0.46 |
 | [[bld_memory_runtime_rule]] | downstream | 0.46 |
-| [[p03_ins_runtime_rule]] | related | 0.46 |

@@ -19,10 +19,6 @@ keywords: [function def construction, collaboration function def, function_def, 
 density_score: 0.90
 related:
   - function-def-builder
-  - bld_collaboration_search_tool
-  - bld_collaboration_code_executor
-  - bld_instruction_function_def
-  - bld_knowledge_card_function_def
 ---
 # Collaboration: function-def-builder
 ## My Role in Crews

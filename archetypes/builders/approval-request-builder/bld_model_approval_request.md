@@ -34,11 +34,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - p01_kc_approval_request
-  - p01_kc_hitl_config
   - hitl-config-builder
-  - adr_v03_governance_taxonomy
-  - n00_approval_request_manifest
 ---
 ## Identity
 
@@ -131,8 +127,4 @@ pending decision itself).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_approval_request]] | upstream | 0.55 |
 | [[hitl-config-builder]] | related (emitting-policy builder) | 0.50 |
-| [[adr_v03_governance_taxonomy]] | related (scope-defining ADR) | 0.45 |
-| [[n00_approval_request_manifest]] | related | 0.40 |
-| [[p01_kc_hitl_config]] | related (contrast: the policy) | 0.35 |

@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [conformity_assessment construction, annex iii categories, annex iv requirements, key standards, conformity_assessment, builder, knowledge_card, conformity assessment builder, knowledge card, domain overview
 the]
 density_score: 0.85
-related:
-  - bld_instruction_conformity_assessment
-  - bld_manifest_conformity_assessment
-  - kc_conformity_assessment
-  - bld_collaboration_conformity_assessment
-  - n00_conformity_assessment_manifest
 ---
 # Conformity Assessment Builder -- Knowledge Card
 
@@ -100,12 +94,3 @@ it is NOT high-risk under Annex III and this builder does not apply.
 | High-risk AI (Annex III) -- existing systems | Aug 2026 [AUG-2026-DEADLINE] | Providers of already-deployed systems |
 | High-risk AI (Annex I -- product safety) | Aug 2027 | Providers of AI embedded in regulated products |
 | Full Act application | Aug 2026 | All actors |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_conformity_assessment]] | downstream | 0.66 |
-| [[bld_manifest_conformity_assessment]] | downstream | 0.62 |
-| [[kc_conformity_assessment]] | sibling | 0.53 |
-| [[bld_collaboration_conformity_assessment]] | downstream | 0.53 |
-| [[n00_conformity_assessment_manifest]] | sibling | 0.46 |

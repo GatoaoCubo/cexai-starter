@@ -18,10 +18,6 @@ keywords: [component map of handoff_protocol, and architectural position, handof
 density_score: 0.90
 related:
   - handoff-protocol-builder
-  - bld_output_template_handoff_protocol
-  - p01_kc_handoff_protocol
-  - bld_collaboration_handoff_protocol
-  - p10_lr_handoff_protocol_builder
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -86,7 +82,5 @@ python _tools/cex_score.py --apply bld-architecture-handoff-protocol.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[handoff-protocol-builder]] | upstream | 0.64 |
-| [[bld_output_template_handoff_protocol]] | upstream | 0.44 |
 | [[kc_handoff_protocol]] | upstream | 0.43 |
 | [[bld_orchestration_handoff_protocol]] | downstream | 0.40 |
-| [[p10_lr_handoff_protocol_builder]] | downstream | 0.37 |

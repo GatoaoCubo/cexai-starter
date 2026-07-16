@@ -18,9 +18,6 @@ keywords: [define crew role, upstream inputs, downstream outputs, press_release 
 density_score: 0.85
 related:
   - press-release-builder
-  - bld_instruction_press_release
-  - bld_knowledge_card_press_release
-  - n00_press_release_manifest
   - bld_tools_press_release
 ---
 ## Crew Role
@@ -83,7 +80,4 @@ When handing off for website publication:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[press-release-builder]] | upstream | 0.43 |
-| [[bld_instruction_press_release]] | upstream | 0.32 |
-| [[bld_knowledge_card_press_release]] | upstream | 0.32 |
-| [[n00_press_release_manifest]] | upstream | 0.32 |
 | [[bld_tools_press_release]] | upstream | 0.28 |

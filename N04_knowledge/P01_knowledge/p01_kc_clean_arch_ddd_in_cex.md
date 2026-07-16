@@ -30,14 +30,10 @@ density_score: 0.91
 data_source: "Evans 2003 DDD / Vernon 2013 Implementing DDD / Martin 2017 Clean Architecture / .cex/kinds_meta.json"
 related:
   - bld_architecture_kind
-  - p06_td_cex_artifact_type_n03
   - p01_kc_kind_gap_analysis
   - bld_knowledge_aggregate_root
   - bld_tools_context_map
   - kind-builder
-  - bld_knowledge_card_context_map
-  - bld_manifest_aggregate_root
-  - bld_collaboration_kind
   - context-map-builder
 ---
 

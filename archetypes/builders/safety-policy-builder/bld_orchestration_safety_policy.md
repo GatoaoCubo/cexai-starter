@@ -20,9 +20,6 @@ does, related artifacts]
 density_score: 0.85
 related:
   - safety-policy-builder
-  - bld_collaboration_compliance_framework
-  - bld_instruction_safety_policy
-  - kc_safety_policy
   - bld_config_safety_policy
 ---
 ## Crew Role  
@@ -49,7 +46,4 @@ Does NOT perform threat modeling (handled by threat_modeler) or map policies to 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[safety-policy-builder]] | upstream | 0.38 |
-| [[bld_collaboration_compliance_framework]] | sibling | 0.28 |
-| [[bld_instruction_safety_policy]] | upstream | 0.27 |
-| [[kc_safety_policy]] | upstream | 0.27 |
 | [[bld_config_safety_policy]] | upstream | 0.26 |

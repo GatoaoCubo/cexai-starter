@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - workflow-node-builder
   - visual-workflow-builder
-  - bld_collaboration_workflow_node
-  - bld_instruction_workflow_node
-  - kc_visual_workflow
 ---
 ## Phase 1: RESEARCH  
 1. Analyze existing GUI workflow tools for feature parity  
@@ -54,6 +51,3 @@ related:
 |----------|-------------|-------|
 | [[workflow-node-builder]] | downstream | 0.50 |
 | [[visual-workflow-builder]] | downstream | 0.48 |
-| [[bld_collaboration_workflow_node]] | downstream | 0.46 |
-| [[bld_instruction_workflow_node]] | sibling | 0.45 |
-| [[kc_visual_workflow]] | upstream | 0.45 |

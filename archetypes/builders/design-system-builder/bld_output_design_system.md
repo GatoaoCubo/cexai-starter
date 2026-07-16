@@ -17,9 +17,6 @@ density_score: 0.88
 related:
   - bld_schema_design_system
   - bld_prompt_design_system
-  - p06_ds_ferro
-  - p06_ds_sereno
-  - p06_vs_design_system
 ---
 
 # Template: design_system instance

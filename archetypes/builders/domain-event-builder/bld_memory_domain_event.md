@@ -15,11 +15,9 @@ density_score: 0.99
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_domain_event
   - bld_memory_data_contract
   - bld_memory_bounded_context
   - bld_memory_aggregate_root
-  - bld_rules_domain_event
 ---
 # Memory Patterns: domain_event
 ## What to Remember
@@ -72,8 +70,6 @@ python _tools/cex_memory_update.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_domain_event]] | upstream | 0.41 |
 | [[bld_memory_data_contract]] | sibling | 0.40 |
 | [[bld_memory_bounded_context]] | sibling | 0.39 |
 | [[bld_memory_aggregate_root]] | upstream | 0.38 |
-| [[bld_rules_domain_event]] | downstream | 0.37 |

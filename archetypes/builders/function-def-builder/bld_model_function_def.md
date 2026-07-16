@@ -31,11 +31,7 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - p01_kc_function_def
   - bld_architecture_function_def
-  - bld_collaboration_function_def
-  - bld_instruction_function_def
-  - bld_knowledge_card_function_def
 ---
 ## Identity
 

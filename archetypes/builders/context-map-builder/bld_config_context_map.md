@@ -28,12 +28,6 @@ updated: "2026-04-17"
 8f: "F1_constrain"
 keywords: [naming conventions, file paths, size limits, operational constraints, context map construction, config context map, contexts table, relationships table required, team coupling documented, context_map]
 density_score: 0.90
-related:
-  - p10_lr_context_map_builder
-  - kc_context_map
-  - bld_knowledge_card_context_map
-  - p11_qg_context_map
-  - bld_instruction_context_map
 ---
 # Config: context_map Production Rules
 
@@ -122,12 +116,3 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 | relationships_count | integer | Count of BC relationship rows |
 | Relationship table missing integration_type | Sync vs async gap | Always declare integration_type per relationship |
 | BC missing owning_team | Governance gap | Assign owning team to every BC |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p10_lr_context_map_builder]] | downstream | 0.52 |
-| [[kc_context_map]] | upstream | 0.46 |
-| [[bld_knowledge_card_context_map]] | upstream | 0.43 |
-| [[p11_qg_context_map]] | downstream | 0.41 |
-| [[bld_instruction_context_map]] | upstream | 0.41 |

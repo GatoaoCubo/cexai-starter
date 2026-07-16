@@ -19,10 +19,7 @@ online, sharable content object reference model, key concepts, learning objectiv
 density_score: 0.85
 related:
   - course-module-builder
-  - bld_instruction_course_module
   - bld_memory_course_module
-  - p05_qg_course_module
-  - p01_kc_course_module
 ---
 ## Domain Overview
 Online course modules are structured units of instructional content designed to deliver specific learning outcomes through curated materials, activities, and assessments. They are foundational in e-learning ecosystems, enabling scalability, personalization, and alignment with pedagogical frameworks. Modules often integrate multimedia, interactive elements, and adaptive learning paths to cater to diverse learner needs. Industry emphasis lies on aligning modules with standards like SCORM (Sharable Content Object Reference Model) and xAPI (Experience API) to ensure interoperability and data tracking across platforms.
@@ -71,7 +68,4 @@ Effective course modules balance pedagogical rigor with technological feasibilit
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[course-module-builder]] | downstream | 0.53 |
-| [[bld_instruction_course_module]] | downstream | 0.33 |
 | [[bld_memory_course_module]] | downstream | 0.30 |
-| [[p05_qg_course_module]] | downstream | 0.29 |
-| [[p01_kc_course_module]] | sibling | 0.28 |

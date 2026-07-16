@@ -19,9 +19,6 @@ keywords: [template with, context map construction, output template context map,
 density_score: 0.90
 related:
   - bld_schema_context_map
-  - kc_context_map
-  - bld_instruction_context_map
-  - bld_knowledge_card_context_map
   - context-map-builder
 ---
 # Output Template: context_map
@@ -70,7 +67,4 @@ tldr: "{{dense_summary_max_160ch}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_context_map]] | downstream | 0.40 |
-| [[kc_context_map]] | upstream | 0.38 |
-| [[bld_instruction_context_map]] | upstream | 0.36 |
-| [[bld_knowledge_card_context_map]] | upstream | 0.35 |
 | [[context-map-builder]] | downstream | 0.33 |

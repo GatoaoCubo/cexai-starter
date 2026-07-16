@@ -21,10 +21,6 @@ reviewed, related artifacts, procurement gate]
 density_score: 0.85
 related:
   - sandbox-spec-builder
-  - bld_instruction_sandbox_spec
-  - kc_sandbox_spec
-  - p09_qg_sandbox_spec
-  - p10_lr_sandbox_config_builder
 ---
 ## Observation
 Common issues include inconsistent resource limits, misaligned procurement gate dependencies, and unclear isolation boundaries leading to environment drift.
@@ -46,7 +42,3 @@ Reviewed artifacts showed 75% reduction in rework when resource limits were stan
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[sandbox-spec-builder]] | upstream | 0.45 |
-| [[bld_instruction_sandbox_spec]] | upstream | 0.37 |
-| [[kc_sandbox_spec]] | upstream | 0.34 |
-| [[p09_qg_sandbox_spec]] | downstream | 0.28 |
-| [[p10_lr_sandbox_config_builder]] | sibling | 0.26 |

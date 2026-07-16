@@ -17,11 +17,7 @@ tldr: "Recalled session patterns, corrections, and vocabulary for process_manage
 keywords: [recalled session patterns, builder, process_manager, memory, session patterns, common mistakes, user term, industry term, enterprise integration patterns, process instance]
 density_score: 0.95
 related:
-  - bld_manifest_process_manager
-  - kc_process_manager
-  - bld_instruction_process_manager
   - bld_architecture_process_manager
-  - bld_rules_process_manager
 ---
 # Memory: process_manager
 
@@ -78,8 +74,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_process_manager]] | sibling | 0.46 |
-| [[kc_process_manager]] | sibling | 0.46 |
-| [[bld_instruction_process_manager]] | related | 0.44 |
 | [[bld_architecture_process_manager]] | sibling | 0.41 |
-| [[bld_rules_process_manager]] | sibling | 0.40 |

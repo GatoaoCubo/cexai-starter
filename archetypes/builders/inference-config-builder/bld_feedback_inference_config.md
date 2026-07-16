@@ -20,7 +20,6 @@ related:
   - bld_feedback_synthetic_data_config
   - bld_feedback_retrieval_evaluator
   - bld_feedback_distillation_config
-  - p11_fb_quantization_config
 ---
 # Feedback: Inference Config
 
@@ -91,4 +90,3 @@ related:
 | [[bld_feedback_synthetic_data_config]] | sibling | 0.46 |
 | [[bld_feedback_retrieval_evaluator]] | sibling | 0.41 |
 | [[bld_feedback_distillation_config]] | sibling | 0.37 |
-| [[p11_fb_quantization_config]] | sibling | 0.37 |

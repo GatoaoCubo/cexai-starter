@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - ontology-builder
-  - n00_ontology_manifest
   - bld_architecture_ontology
-  - bld_collaboration_ontology
   - kind-builder
 ---
 

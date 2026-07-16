@@ -15,12 +15,6 @@ tldr: "Pass/fail gate for document_loader artifacts: format coverage, chunk stra
 keywords: [file ingestion and chunking, format coverage, chunk strategy validity, metadata preservation, and body size limit, quality-gate, document-loader]
 density_score: 0.90
 title: "Gate: document_loader"
-related:
-  - document_loader-builder
-  - p04_loader_pdf
-  - bld_instruction_document_loader
-  - bld_output_template_document_loader
-  - p11_qg_chunk_strategy
 ---
 ## Quality Gate
 

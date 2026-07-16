@@ -30,10 +30,6 @@ keywords:
   - "callback scope"
 density_score: 0.85
 related:
-  - kc_app_directory_entry
-  - ex-oauth-app-config-shopify
-  - bld_collaboration_app_directory_entry
-  - bld_collaboration_marketplace_app_manifest
   - bld_config_app_directory_entry
 ---
 ```yaml

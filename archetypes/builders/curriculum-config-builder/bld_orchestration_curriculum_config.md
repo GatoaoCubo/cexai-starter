@@ -21,7 +21,6 @@ related:
   - curriculum-config-builder
   - bld_orchestration_synthetic_data_config
   - bld_feedback_curriculum_config
-  - kc_curriculum_config
 ---
 # Collaboration: curriculum-config-builder
 ## My Role in Crews
@@ -84,4 +83,3 @@ I do not generate data. I do not define model architecture.
 | [[curriculum-config-builder]] | upstream | 0.48 |
 | [[bld_orchestration_synthetic_data_config]] | sibling | 0.46 |
 | [[bld_feedback_curriculum_config]] | upstream | 0.44 |
-| [[kc_curriculum_config]] | upstream | 0.40 |

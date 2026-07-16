@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_course_module
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_course_module_manifest
-  - p11_fb_course_module
 ---
 
 # course-module-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_course_module]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_course_module_manifest]] | related | 0.28 |
-| [[p11_fb_course_module]] | related | 0.28 |

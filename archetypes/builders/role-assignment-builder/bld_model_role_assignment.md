@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F2_become"
 keywords: [builder identity, routing for role_assignment, role_assignment construction, type builder role assignment, role_assignment, builder, type_builder, composable, crewai, autogen]
 density_score: 0.88
-related:
-  - bld_knowledge_card_role_assignment
-  - bld_collaboration_role_assignment
-  - n00_role_assignment_manifest
-  - bld_instruction_role_assignment
-  - p11_qg_role_assignment
 ---
 ## Identity
 
@@ -77,4 +71,3 @@ NEVER grant a role tools beyond its agent's native toolkit (phantom-tool anti-pa
 | [[bld_orchestration_role_assignment]] | downstream | 0.47 |
 | n00_role_assignment_manifest | related | 0.41 |
 | [[bld_prompt_role_assignment]] | downstream | 0.41 |
-| [[p11_qg_role_assignment]] | downstream | 0.40 |

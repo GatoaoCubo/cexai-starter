@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [workflow_node construction, output template workflow node, workflow_node, builder, output_template, configuration example, related artifacts, description description, status status, parameters param]
 density_score: 0.85
-related:
-  - p04_function_def_NAME
-  - p12_qg_workflow_node
-  - bld_output_template_playground_config
-  - bld_output_template_input_schema
-  - bld_output_template_eval_metric
 ---
 ```yaml
 ---
@@ -59,12 +53,3 @@ parameters:
 
 **Status**  
 `{{status}}` <!-- Current lifecycle stage -->
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p04_function_def_NAME]] | upstream | 0.27 |
-| [[p12_qg_workflow_node]] | downstream | 0.27 |
-| [[bld_output_template_playground_config]] | sibling | 0.26 |
-| [[bld_output_template_input_schema]] | sibling | 0.23 |
-| [[bld_output_template_eval_metric]] | sibling | 0.22 |

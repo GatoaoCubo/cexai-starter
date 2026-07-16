@@ -18,11 +18,7 @@ updated: "2026-04-12"
 keywords: [prompt_compiler construction, collaboration prompt compiler, collaboration protocol for prompt-compiler-builder, receives kinds registry, produces resolution tables, feeds routers and dispatchers, prompt_compiler, builder, collaboration, "### crew: bilingual user experience"]
 density_score: 0.90
 related:
-  - p03_ins_prompt_compiler
-  - bld_collaboration_prompt_version
   - bld_architecture_kind
-  - bld_collaboration_action_prompt
-  - p01_kc_prompt_compiler
 ---
 # Collaboration: prompt-compiler-builder
 ## My Role in Crews
@@ -71,8 +67,4 @@ I produce intent resolution tables that every other builder consumes. Without me
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_prompt_compiler]] | downstream | 0.34 |
-| [[bld_collaboration_prompt_version]] | sibling | 0.34 |
 | [[bld_architecture_kind]] | downstream | 0.33 |
-| [[bld_collaboration_action_prompt]] | sibling | 0.32 |
-| [[p01_kc_prompt_compiler]] | downstream | 0.31 |

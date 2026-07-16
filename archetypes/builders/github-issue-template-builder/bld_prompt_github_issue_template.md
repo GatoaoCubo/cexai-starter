@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [github_issue_template construction, instruction github issue template, github_issue_template, builder, instruction, issue_template, "{{field}}", question, textarea, checkbox]
 density_score: 0.85
 related:
-  - kc_github_issue_template
   - github-issue-template-builder
-  - bld_knowledge_card_github_issue_template
-  - p10_mem_github_issue_template_builder
-  - n00_github_issue_template_manifest
 ---
 ## Phase 1: RESEARCH  
 1. Analyze existing GitHub issue templates in the project’s repository.  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_github_issue_template]] | upstream | 0.39 |
 | [[github-issue-template-builder]] | downstream | 0.38 |
-| [[bld_knowledge_card_github_issue_template]] | upstream | 0.34 |
-| [[p10_mem_github_issue_template_builder]] | downstream | 0.32 |
-| [[n00_github_issue_template_manifest]] | downstream | 0.27 |

@@ -30,10 +30,7 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - openapi-spec-builder
-  - p10_lr_openapi_spec_builder
-  - bld_instruction_openapi_spec
   - bld_schema_openapi_spec
-  - bld_knowledge_card_openapi_spec
 ---
 # Config: openapi_spec Production Rules
 
@@ -127,7 +124,6 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[openapi-spec-builder]] | upstream | 0.33 |
-| [[p10_lr_openapi_spec_builder]] | downstream | 0.33 |
 | [[bld_prompt_openapi_spec]] | upstream | 0.31 |
 | [[bld_schema_openapi_spec]] | upstream | 0.31 |
 | [[bld_knowledge_openapi_spec]] | upstream | 0.29 |

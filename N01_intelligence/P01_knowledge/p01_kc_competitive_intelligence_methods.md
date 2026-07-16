@@ -17,9 +17,7 @@ density_score: 0.94
 updated: "2026-04-17"
 related:
   - p01_kc_community_directory_global
-  - p12_dr_intelligence
   - p01_kc_influencer_directory_global
-  - p01_kc_intelligence_domain
   - p01_kc_influencer_crm_unified
 ---
 
@@ -131,5 +129,4 @@ Each method block traces to validated sources from
 | [[p01_kc_community_directory_global]] | sibling | 0.31 |
 | p12_dr_intelligence | downstream | 0.28 |
 | [[p01_kc_influencer_directory_global]] | sibling | 0.28 |
-| [[p01_kc_intelligence_domain]] | sibling | 0.26 |
 | [[p01_kc_influencer_crm_unified]] | sibling | 0.26 |

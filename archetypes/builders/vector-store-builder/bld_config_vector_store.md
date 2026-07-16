@@ -28,8 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, vector store construction, config vector store, vector_store, builder, examples, "p01_vdb_{backend}.yaml"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_vector_store
-  - p03_ins_vector_store
   - bld_memory_vector_store
   - bld_schema_vector_store
   - vector-store-builder
@@ -87,7 +85,6 @@ If backend not in list: use "other" and add backend name in tags.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_vector_store]] | upstream | 0.45 |
-| [[p03_ins_vector_store]] | upstream | 0.45 |
 | [[bld_memory_vector_store]] | downstream | 0.42 |
 | [[bld_schema_vector_store]] | upstream | 0.38 |
 | [[vector-store-builder]] | upstream | 0.37 |

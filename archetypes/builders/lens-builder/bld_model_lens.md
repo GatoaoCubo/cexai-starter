@@ -30,9 +30,6 @@ parent: null
 8f: "F2_become"
 related:
   - bld_architecture_lens
-  - p03_ins_lens
-  - bld_collaboration_lens
-  - bld_knowledge_card_lens
   - bld_memory_lens
 ---
 ## Identity
@@ -120,7 +117,6 @@ Body sections: Purpose, Filter Attributes, Interpretation Weights, Limitations, 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_lens]] | downstream | 0.68 |
-| [[p03_ins_lens]] | downstream | 0.62 |
 | [[bld_orchestration_lens]] | related | 0.60 |
 | [[bld_knowledge_lens]] | related | 0.59 |
 | [[bld_memory_lens]] | downstream | 0.57 |

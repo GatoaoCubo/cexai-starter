@@ -19,9 +19,7 @@ keywords: [prompt cache construction, collaboration prompt cache, prompt_cache, 
 density_score: 0.90
 related:
   - prompt-cache-builder
-  - bld_knowledge_card_prompt_cache
   - bld_tools_prompt_cache
-  - p01_kc_caching
 ---
 # Collaboration: prompt-cache-builder
 ## My Role in Crews
@@ -66,6 +64,4 @@ I configure caching strategies that reduce redundant LLM calls.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-cache-builder]] | upstream | 0.40 |
-| [[bld_knowledge_card_prompt_cache]] | upstream | 0.36 |
 | [[bld_tools_prompt_cache]] | upstream | 0.35 |
-| [[p01_kc_caching]] | upstream | 0.34 |

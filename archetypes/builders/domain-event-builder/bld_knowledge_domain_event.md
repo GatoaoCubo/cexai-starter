@@ -15,11 +15,7 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_domain_event
   - domain-event-builder
-  - bld_collaboration_event_schema
-  - bld_rules_domain_event
-  - bld_knowledge_card_event_stream
 ---
 # Domain Knowledge: domain_event
 ## Core Facts
@@ -76,8 +72,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_domain_event]] | sibling | 0.51 |
 | [[domain-event-builder]] | downstream | 0.40 |
-| [[bld_collaboration_event_schema]] | downstream | 0.37 |
-| [[bld_rules_domain_event]] | downstream | 0.37 |
-| [[bld_knowledge_card_event_stream]] | sibling | 0.34 |

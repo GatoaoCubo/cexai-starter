@@ -26,10 +26,7 @@ author: n02_reviewer
 keywords: ["voice pipeline", "speech recognition", "STT", "TTS", "NLU", "dialogue management", "audio preprocessing"]
 related:
   - bld_memory_voice_pipeline
-  - p11_qg_voice_pipeline
-  - bld_knowledge_card_voice_pipeline
   - tts-provider-builder
-  - bld_collaboration_voice_pipeline
 ---
 ## Identity
 
@@ -118,7 +115,4 @@ Deliver a `voice_pipeline` artifact with this structure:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_voice_pipeline]] | downstream | 0.57 |
-| [[p11_qg_voice_pipeline]] | downstream | 0.46 |
-| [[bld_knowledge_card_voice_pipeline]] | upstream | 0.43 |
 | [[tts-provider-builder]] | sibling | 0.41 |
-| [[bld_collaboration_voice_pipeline]] | downstream | 0.41 |

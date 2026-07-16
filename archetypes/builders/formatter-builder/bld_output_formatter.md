@@ -18,10 +18,6 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - bld_schema_formatter
-  - p05_fmt_artifact_creation_report
-  - p11_qg_formatter
-  - n00_formatter_manifest
-  - p01_kc_formatter
 ---
 # Output Template: formatter
 ```yaml

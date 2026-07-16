@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_ecommerce_vertical
-  - n00_ecommerce_vertical_manifest
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p11_fb_ecommerce_vertical
 ---
 
 # ecommerce-vertical-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_ecommerce_vertical]] | related | 0.34 |
-| [[n00_ecommerce_vertical_manifest]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[p11_fb_ecommerce_vertical]] | related | 0.29 |

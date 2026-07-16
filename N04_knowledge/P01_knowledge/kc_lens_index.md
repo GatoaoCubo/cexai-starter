@@ -21,8 +21,6 @@ related:
   - kc_lens_factory
   - kc_lens_city
   - kc_lens_game
-  - mentor
-  - p03_pt_mentor_storyteller
 ---
 
 # Lens Index
@@ -168,5 +166,4 @@ lens_files:
 | [[kc_lens_factory]] | sibling | 0.39 |
 | [[kc_lens_city]] | sibling | 0.37 |
 | [[kc_lens_game]] | sibling | 0.33 |
-| [[mentor]] | downstream | 0.29 |
 | p03_pt_mentor_storyteller | downstream | 0.29 |

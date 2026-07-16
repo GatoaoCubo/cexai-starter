@@ -24,10 +24,6 @@ reliable, pass fail]
 density_score: 0.90
 related:
   - quality-gate-builder
-  - bld_knowledge_card_quality_gate
-  - bld_collaboration_quality_gate
-  - p03_ins_quality_gate
-  - p11_qg_quality_gate
 ---
 # Memory: quality-gate-builder
 ## Summary
@@ -86,7 +82,3 @@ python _tools/cex_score.py --apply bld-memory-quality-gate.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[quality-gate-builder]] | downstream | 0.50 |
-| [[bld_knowledge_card_quality_gate]] | downstream | 0.47 |
-| [[bld_collaboration_quality_gate]] | downstream | 0.42 |
-| [[p03_ins_quality_gate]] | downstream | 0.42 |
-| [[p11_qg_quality_gate]] | downstream | 0.38 |

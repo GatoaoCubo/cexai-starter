@@ -13,12 +13,6 @@ author: n02_marketing
 tldr: "Complete campaign mental model — brief structure, channel orchestration, funnel mapping, creative frameworks, budget allocation, and post-campaign analysis. Every campaign is a persuasion system, not a collection of ads."
 keywords: [touchpoints, funnel, positioning, channels, budget, timeline, success_metrics, constraints, assets_needed]
 density_score: 0.95
-related:
-  - schedule_n02
-  - p12_ho_n02
-  - p06_is_marketing_data_model
-  - p02_ra_campaign_strategist.md
-  - p06_is_campaign_brief_n02
 ---
 
 # KC: Campaign Architecture

@@ -21,10 +21,6 @@ product team]
 density_score: 0.85
 related:
   - github-issue-template-builder
-  - bld_collaboration_code_of_conduct
-  - p11_fb_github_issue_template
-  - kc_github_issue_template
-  - bld_collaboration_prompt_technique
 ---
 ## Crew Role  
 Creates standardized GitHub issue templates to guide users in reporting bugs, requesting features, or asking questions. Ensures consistency, clarity, and alignment with project workflows.  
@@ -50,7 +46,3 @@ Does NOT handle pull request templates (handled by `pull_request_template-builde
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[github-issue-template-builder]] | upstream | 0.37 |
-| [[bld_collaboration_code_of_conduct]] | sibling | 0.27 |
-| [[p11_fb_github_issue_template]] | upstream | 0.26 |
-| [[kc_github_issue_template]] | upstream | 0.25 |
-| [[bld_collaboration_prompt_technique]] | sibling | 0.25 |

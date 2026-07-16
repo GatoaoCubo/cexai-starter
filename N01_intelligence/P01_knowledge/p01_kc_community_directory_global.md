@@ -16,7 +16,6 @@ related:
   - p01_kc_influencer_crm_unified
   - p01_kc_seeding_playbook
   - p04_mg_{{platform}}
-  - p04_mg_n02
 ---
 
 # Global AI/ML Community Directory

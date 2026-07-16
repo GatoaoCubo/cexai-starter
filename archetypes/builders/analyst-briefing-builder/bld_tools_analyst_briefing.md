@@ -18,7 +18,6 @@ keywords: [analyst_briefing construction, tools analyst briefing, analyst_briefi
 density_score: 0.85
 related:
   - bld_tools_competitive_matrix
-  - bld_knowledge_card_analyst_briefing
   - analyst-briefing-builder
   - bld_tools_api_reference
   - bld_tools_quickstart_guide
@@ -49,7 +48,6 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_competitive_matrix]] | sibling | 0.43 |
-| [[bld_knowledge_card_analyst_briefing]] | upstream | 0.41 |
 | [[analyst-briefing-builder]] | downstream | 0.36 |
 | [[bld_tools_api_reference]] | sibling | 0.33 |
 | [[bld_tools_quickstart_guide]] | sibling | 0.33 |

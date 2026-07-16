@@ -17,11 +17,8 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_manifest_constitutional_rule
   - kc_constitutional_rule
-  - bld_rules_constitutional_rule
   - bld_architecture_constitutional_rule
-  - bld_knowledge_card_constitutional_rule
 ---
 # Memory: constitutional_rule
 ## Session Patterns
@@ -70,8 +67,6 @@ python _tools/cex_memory_update.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_constitutional_rule]] | sibling | 0.47 |
 | [[kc_constitutional_rule]] | sibling | 0.47 |
-| [[bld_rules_constitutional_rule]] | sibling | 0.45 |
 | [[bld_architecture_constitutional_rule]] | sibling | 0.44 |
 | [[bld_knowledge_constitutional_rule]] | sibling | 0.39 |

@@ -26,11 +26,7 @@ title: "Memory Kind Manifest"
 density_score: 0.87
 llm_function: INJECT
 related:
-  - bld_knowledge_card_kind_manifest
-  - bld_instruction_kind_manifest
-  - bld_output_template_kind_manifest
   - bld_schema_kind_manifest
-  - p10_lr_output_template_builder
 ---
 ## Summary
 kind_manifest artifacts document ONE registered kind's identity each, and this family's builder is ITSELF inaugural today -- R-310 registered the kind and authored the schema ISO only, same day this record was written. Since there is no accumulated review history yet, this record captures the landmines the R-310 re-typing and this scaffold's own corpus read already paid for.
@@ -97,8 +93,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_kind_manifest_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_kind_manifest]] | upstream | 0.38 |
-| [[bld_instruction_kind_manifest]] | upstream | 0.36 |
-| [[bld_output_template_kind_manifest]] | upstream | 0.32 |
 | [[bld_schema_kind_manifest]] | upstream | 0.30 |
-| [[p10_lr_output_template_builder]] | sibling (same resolution shape) | 0.28 |

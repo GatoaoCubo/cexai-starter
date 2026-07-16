@@ -32,9 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - bld_memory_pattern
-  - p03_ins_pattern
   - pattern-builder
-  - p01_kc_pattern
   - bld_architecture_pattern
 ---
 # Domain Knowledge: pattern
@@ -95,7 +93,6 @@ Patterns are named, reusable solutions to recurring problems in a given context.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_pattern]] | downstream | 0.46 |
-| [[p03_ins_pattern]] | downstream | 0.46 |
 | [[pattern-builder]] | downstream | 0.43 |
 | [[kc_pattern]] | sibling | 0.38 |
 | [[bld_architecture_pattern]] | downstream | 0.36 |

@@ -26,11 +26,7 @@ title: "Memory Golden Test"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p11_fb_golden_test
-  - p11_fb_ab_test_config
   - golden-test-builder
-  - bld_knowledge_card_golden_test
-  - p11_fb_quality_gate
 ---
 ## Summary
 A golden test is a high-quality artifact paired with gate-mapped rationale that serves as a regression anchor. Its purpose is to evaluate whether new outputs meet the same standard — not to teach format (that is few_shot_example). The source artifact must already score >= 9.5. The output must be complete. The rationale must reference specific gate IDs, not prose opinions.
@@ -102,7 +98,6 @@ python _tools/cex_score.py --apply --verbose p10_lr_golden_test_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_golden_test]] | downstream | 0.42 |
 | p11_fb_ab_test_config | downstream | 0.38 |
 | [[golden-test-builder]] | upstream | 0.38 |
 | [[bld_knowledge_golden_test]] | upstream | 0.37 |

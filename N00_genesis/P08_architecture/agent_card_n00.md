@@ -16,9 +16,6 @@ tldr: "N00 has no deployable identity. This card documents that absence structur
 keywords: [n00, genesis, archetype, reference-only, never-dispatched, pre-sin]
 related:
   - nucleus_def_n00
-  - component_map_n00
-  - n00_readme
-  - n07-orchestrator
 ---
 
 # N00 Genesis -- Agent Card

@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - bld_schema_validation_schema
   - validation-schema-builder
-  - p03_ins_validation_schema
-  - bld_collaboration_validation_schema
-  - p11_qg_validation_schema
 ---
 # Domain Knowledge: validation_schema
 ## Executive Summary
@@ -90,6 +87,4 @@ A `validation_schema` (P06) is a post-generation structural contract the system 
 |----------|-------------|-------|
 | [[bld_schema_validation_schema]] | downstream | 0.49 |
 | [[validation-schema-builder]] | downstream | 0.47 |
-| [[p03_ins_validation_schema]] | downstream | 0.43 |
 | [[bld_orchestration_validation_schema]] | downstream | 0.39 |
-| [[p11_qg_validation_schema]] | downstream | 0.38 |

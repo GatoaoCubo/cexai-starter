@@ -20,9 +20,6 @@ this, key concepts, threat agent, attack vector, risk exposure]
 density_score: 0.85
 related:
   - threat-model-builder
-  - p10_lr_threat_model_builder
-  - bld_collaboration_threat_model
-  - kc_threat_model
   - bld_tools_threat_model
 ---
 ## Domain Overview
@@ -69,7 +66,4 @@ Key challenges include mapping abstract AI risks (e.g., bias amplification) to t
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[threat-model-builder]] | downstream | 0.54 |
-| [[p10_lr_threat_model_builder]] | downstream | 0.42 |
-| [[bld_collaboration_threat_model]] | downstream | 0.40 |
-| [[kc_threat_model]] | sibling | 0.39 |
 | [[bld_tools_threat_model]] | downstream | 0.37 |

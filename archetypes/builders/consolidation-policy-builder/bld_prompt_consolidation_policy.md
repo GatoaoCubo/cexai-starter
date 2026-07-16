@@ -17,10 +17,8 @@ updated: "2026-04-14"
 keywords: [llm agent memory consolidation, load schema, define promotion rules, eviction strategy, importance scoring, tier matrix, consolidation_policy, builder, instruction, write overview]
 density_score: 0.90
 related:
-  - bld_instruction_memory_architecture
   - consolidation-policy-builder
   - bld_schema_consolidation_policy
-  - p10_qg_consolidation_policy
   - bld_schema_memory_architecture
 ---
 ## Phase 1: RESEARCH
@@ -69,8 +67,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_memory_architecture]] | sibling | 0.54 |
 | [[consolidation-policy-builder]] | downstream | 0.48 |
 | [[bld_schema_consolidation_policy]] | downstream | 0.42 |
-| [[p10_qg_consolidation_policy]] | downstream | 0.42 |
 | [[bld_schema_memory_architecture]] | downstream | 0.40 |

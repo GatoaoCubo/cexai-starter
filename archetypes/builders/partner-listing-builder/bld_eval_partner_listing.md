@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [partner_listing construction, quality gate partner listing, partner_listing, builder, quality_gate, "## anti-example 1: missing key fields", quality gate, fail condition, scoring guide, spot solutions]
 density_score: 0.85
 related:
-  - bld_instruction_partner_listing
   - partner-listing-builder
-  - bld_knowledge_card_partner_listing
   - bld_tools_partner_listing
-  - n00_partner_listing_manifest
 ---
 ## Quality Gate
 

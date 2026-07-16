@@ -18,9 +18,7 @@ keywords: [llm agent memory systems, memory_architecture-builder patterns, key l
 density_score: 0.90
 related:
   - memory-architecture-builder
-  - p10_qg_memory_architecture
   - bld_tools_memory_architecture
-  - bld_instruction_memory_architecture
   - consolidation-policy-builder
 ---
 ## Observation
@@ -60,7 +58,6 @@ These are all correct for computer architecture but wrong for LLM agent memory.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-architecture-builder]] | related | 0.54 |
-| [[p10_qg_memory_architecture]] | downstream | 0.48 |
 | [[bld_tools_memory_architecture]] | upstream | 0.36 |
 | [[bld_prompt_memory_architecture]] | upstream | 0.36 |
 | consolidation-policy-builder | related | 0.36 |

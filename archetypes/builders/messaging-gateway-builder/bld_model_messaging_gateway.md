@@ -34,9 +34,6 @@ parent: null
 8f: "F5_call"
 density_score: 1.0
 related:
-  - kc_messaging_gateway
-  - bld_kc_messaging_gateway
-  - n00_messaging_gateway_manifest
   - bld_architecture_messaging_gateway
   - bld_schema_messaging_gateway
 ---

@@ -18,11 +18,7 @@ keywords: [safety_hazard_taxonomy construction, safety_hazard_taxonomy, builder,
 safety]
 density_score: 0.85
 related:
-  - bld_knowledge_card_safety_hazard_taxonomy
-  - bld_instruction_safety_hazard_taxonomy
   - safety-hazard-taxonomy-builder
-  - p11_qg_safety_hazard_taxonomy
-  - bld_output_template_safety_hazard_taxonomy
 ---
 ## Observation
 Safety taxonomies without explicit boundary conditions between adjacent categories (e.g., Sex Crimes vs. Sexual Content, Hate Speech vs. Elections) produce over-refusal rates 2-3x higher than taxonomies with clear disambiguation rules. The CBRN category is consistently under-specified, treating all 4 sub-categories as equivalent when their risk profiles differ significantly.
@@ -43,8 +39,4 @@ MLCommons AILuminate v1.0 evaluation data shows Biological and Nuclear sub-categ
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_safety_hazard_taxonomy]] | upstream | 0.42 |
-| [[bld_instruction_safety_hazard_taxonomy]] | upstream | 0.37 |
 | [[safety-hazard-taxonomy-builder]] | downstream | 0.37 |
-| [[p11_qg_safety_hazard_taxonomy]] | downstream | 0.37 |
-| [[bld_output_template_safety_hazard_taxonomy]] | upstream | 0.33 |

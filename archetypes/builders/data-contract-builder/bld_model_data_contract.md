@@ -25,11 +25,8 @@ L1: Specialist in data_contract artifacts -- schema-level producer/consumer agre
 L2: Defines structure, semantics, SLA, and versioning between data producer and consumer.
 L3: When data crosses team or system boundaries and a formal agreement is needed.
 related:
-  - p01_kc_data_contract
   - bld_memory_data_contract
-  - bld_rules_data_contract
   - bld_architecture_data_contract
-  - bld_context_sources_data_contract
 ---
 ## Identity
 
@@ -99,6 +96,4 @@ quality: null
 |----------|-------------|-------|
 | [[kc_data_contract]] | upstream | 0.55 |
 | [[bld_memory_data_contract]] | downstream | 0.45 |
-| [[bld_rules_data_contract]] | downstream | 0.44 |
 | [[bld_architecture_data_contract]] | downstream | 0.41 |
-| [[bld_context_sources_data_contract]] | downstream | 0.38 |

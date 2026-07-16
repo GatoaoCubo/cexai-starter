@@ -21,9 +21,7 @@ density_score: 0.90
 related:
   - bld_schema_entity_memory
   - entity-memory-builder
-  - bld_instruction_entity_memory
   - bld_architecture_entity_memory
-  - bld_knowledge_card_entity_memory
 ---
 # Output Template: entity_memory
 ```yaml

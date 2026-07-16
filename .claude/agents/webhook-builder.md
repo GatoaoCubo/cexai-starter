@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - webhook-builder
-  - bld_collaboration_webhook
   - kind-builder
-  - n00_webhook_manifest
-  - p03_sp_builder_nucleus
 ---
 
 # webhook-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[webhook-builder]] | related | 0.37 |
-| [[bld_collaboration_webhook]] | related | 0.35 |
 | [[kind-builder]] | related | 0.32 |
-| [[n00_webhook_manifest]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |

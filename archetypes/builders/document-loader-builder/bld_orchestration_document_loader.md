@@ -15,12 +15,6 @@ tldr: "Crew compositions, handoff protocol, and dependency map for document_load
 keywords: [collaboration iso - document_loader, crew compositions, handoff protocol, collaboration, document_loader, ingestion, crew, my role, pipeline crew, data ingestion crew]
 density_score: 1.0
 title: Collaboration ISO - document_loader
-related:
-  - document_loader-builder
-  - bld_collaboration_retriever_config
-  - bld_collaboration_retriever
-  - p01_kc_document_loader
-  - p08_dir_rag_pipeline
 ---
 # Collaboration: document_loader-builder
 
@@ -95,7 +89,6 @@ None — document_loader-builder is layer 0. No other builder must complete befo
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[document_loader-builder]] | related | 0.37 |
 | [[bld_orchestration_retriever_config]] | sibling | 0.37 |
 | [[bld_orchestration_retriever]] | sibling | 0.33 |
 | [[kc_document_loader]] | upstream | 0.30 |

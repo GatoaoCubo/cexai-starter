@@ -16,7 +16,6 @@ related:
   - p01_kc_seeding_playbook
   - p01_kc_growth_casestudy_viral
   - p01_kc_content_formats_global
-  - p07_bm_contrib_stress_test_20260419
 ---
 
 # KC: Organic/Slow-Burn Growth Case Studies (LangChain + CrewAI)

@@ -30,10 +30,6 @@ keywords:
 density_score: 0.88
 related:
   - bld_schema_kind_manifest
-  - bld_instruction_kind_manifest
-  - p10_lr_kind_manifest_builder
-  - bld_output_template_output_template
-  - bld_output_template_knowledge_card
 ---
 # Output Template: kind_manifest
 This is the fill-in-the-blank shape a producing nucleus fills when documenting a NEWLY-registered kind. Every field traces to `bld_schema_kind_manifest.md` -- this template derives, never invents.
@@ -111,7 +107,3 @@ naming the real register row -- never a fabricated path.)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_kind_manifest]] | upstream | 0.42 |
-| [[bld_instruction_kind_manifest]] | upstream | 0.36 |
-| [[p10_lr_kind_manifest_builder]] | downstream | 0.33 |
-| [[bld_output_template_output_template]] | sibling (same resolution shape) | 0.30 |
-| [[bld_output_template_knowledge_card]] | sibling (former mis-type contrast) | 0.28 |

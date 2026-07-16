@@ -17,11 +17,9 @@ updated: "2026-04-14"
 keywords: [subscription_tier construction, tools subscription tier, subscription_tier, builder, tools, production tools, validation tools, external references, related artifacts, tools tool]
 density_score: 0.85
 related:
-  - bld_instruction_subscription_tier
   - kc_subscription_tier
   - bld_tools_edit_format
   - bld_tools_vad_config
-  - bld_collaboration_subscription_tier
 ---
 ## Production Tools
 | Tool | Purpose | When |

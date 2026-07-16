@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - bld_schema_personality
   - personality-builder
-  - bld_instruction_enum_def
-  - bld_instruction_output_validator
-  - bld_instruction_memory_scope
 ---
 # Instructions: How to Produce a personality
 

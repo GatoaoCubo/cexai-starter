@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [tools available for c, pa_manifest production, pa_manifest construction, tools c, pa manifest, c2pa_manifest, builder, tools, c2pa, cose]
 density_score: 0.85
 related:
-  - bld_knowledge_card_c2pa_manifest
-  - p10_lr_c2pa_manifest_builder
   - c2pa-manifest-builder
-  - bld_collaboration_c2pa_manifest
-  - bld_instruction_c2pa_manifest
 ---
 ## Production Tools
 | Tool             | Purpose                              | When                         |
@@ -51,8 +47,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_c2pa_manifest]] | upstream | 0.57 |
-| [[p10_lr_c2pa_manifest_builder]] | downstream | 0.56 |
 | [[c2pa-manifest-builder]] | downstream | 0.46 |
-| [[bld_collaboration_c2pa_manifest]] | downstream | 0.45 |
-| [[bld_instruction_c2pa_manifest]] | upstream | 0.44 |

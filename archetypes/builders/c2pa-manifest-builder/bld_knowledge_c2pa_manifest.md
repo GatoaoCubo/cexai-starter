@@ -18,10 +18,7 @@ keywords: [domain knowledge for c, pa_manifest production, pa_manifest construct
 density_score: 0.85
 related:
   - c2pa-manifest-builder
-  - p10_lr_c2pa_manifest_builder
-  - bld_instruction_c2pa_manifest
   - bld_tools_c2pa_manifest
-  - bld_collaboration_c2pa_manifest
 ---
 ## Domain Overview
 C2PA (Coalition for Content Provenance and Authenticity) 2.3 defines a technical standard for binding content provenance to digital media. Founded by Adobe, BBC, Intel, Microsoft, Nikon, and Sony, C2PA is the industry standard for content credentials. Version 2.3 adds Implementation Guidance for AI-ML specifics, with v2.4 adding further AI watermarking integration.
@@ -76,7 +73,4 @@ C2PA manifests answer: "Where did this content come from?" For AI-generated medi
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[c2pa-manifest-builder]] | downstream | 0.74 |
-| [[p10_lr_c2pa_manifest_builder]] | downstream | 0.68 |
-| [[bld_instruction_c2pa_manifest]] | downstream | 0.67 |
 | [[bld_tools_c2pa_manifest]] | downstream | 0.65 |
-| [[bld_collaboration_c2pa_manifest]] | downstream | 0.57 |

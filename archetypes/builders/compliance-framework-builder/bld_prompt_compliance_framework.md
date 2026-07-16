@@ -18,10 +18,6 @@ keywords: [compliance_framework construction, instruction compliance framework, 
 density_score: 0.85
 related:
   - compliance-framework-builder
-  - p11_qg_compliance_framework
-  - p10_lr_compliance_framework_builder
-  - bld_instruction_safety_policy
-  - bld_knowledge_card_compliance_framework
 ---
 ## Phase 1: RESEARCH  
 1. Identify applicable regulations (e.g., GDPR, AI Act) for AI system deployment.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[compliance-framework-builder]] | downstream | 0.49 |
-| [[p11_qg_compliance_framework]] | downstream | 0.43 |
-| [[p10_lr_compliance_framework_builder]] | downstream | 0.41 |
-| [[bld_instruction_safety_policy]] | sibling | 0.39 |
-| [[bld_knowledge_card_compliance_framework]] | upstream | 0.38 |

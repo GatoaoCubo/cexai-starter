@@ -91,5 +91,3 @@ You are the consuming agent that acts on this knowledge_card under F3 INJECT.
 | ex_knowledge_card_prompt_caching | related | 0.38 |
 | bld_knowledge_card_prompt_cache | related | 0.37 |
 | p10_lr_prompt_cache_builder | related | 0.29 |
-| [[p11_qg_citation]] | related | 0.28 |
-| [[p11_qg_golden_test]] | related | 0.28 |

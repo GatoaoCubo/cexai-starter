@@ -22,10 +22,7 @@ updated: '2026-03-27'
 8f: "F7_govern"
 density_score: 0.85
 related:
-  - p11_qg_quality_gate
   - router-builder
-  - p11_qg_runtime_state
-  - p11_qg_response_format
   - bld_architecture_router
 ---
 ## Quality Gate
@@ -134,6 +131,4 @@ Notification: signal `p12_sig_routing_ambiguous` with candidate list.
 |----------|-------------|-------|
 | p11_qg_quality_gate | sibling | 0.49 |
 | [[router-builder]] | upstream | 0.47 |
-| [[p11_qg_runtime_state]] | sibling | 0.42 |
-| [[p11_qg_response_format]] | sibling | 0.42 |
 | [[bld_architecture_router]] | upstream | 0.42 |

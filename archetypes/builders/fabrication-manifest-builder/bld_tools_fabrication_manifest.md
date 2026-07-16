@@ -18,10 +18,6 @@ keywords: [fabrication_manifest construction, tools fabrication manifest, fabric
 density_score: 0.85
 related:
   - fabrication-manifest-builder
-  - bld_knowledge_card_fabrication_manifest
-  - kc_fabrication_manifest
-  - bld_collaboration_fabrication_manifest
-  - p11_fb_fabrication_manifest
 ---
 ## Production Tools (real, verified this build)
 | Tool | Purpose | When |
@@ -64,7 +60,3 @@ kind's mechanics describe, but the founder-designated successor tool does not us
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fabrication-manifest-builder]] | downstream | 0.45 |
-| [[bld_knowledge_card_fabrication_manifest]] | upstream | 0.43 |
-| [[kc_fabrication_manifest]] | upstream | 0.42 |
-| [[bld_collaboration_fabrication_manifest]] | downstream | 0.38 |
-| [[p11_fb_fabrication_manifest]] | downstream | 0.33 |

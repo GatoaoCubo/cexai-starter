@@ -17,9 +17,6 @@ updated: "2026-04-14"
 keywords: [govtech_vertical construction, tools govtech vertical, govtech_vertical, builder, tools, production tools, external references, security policy, award management, authorized products list]
 density_score: 0.85
 related:
-  - p10_mem_govtech_vertical_builder
-  - bld_instruction_govtech_vertical
-  - bld_knowledge_card_govtech_vertical
   - govtech-vertical-builder
   - govtech_vertical_digital_services
 ---
@@ -45,8 +42,5 @@ These tools support govtech vertical artifact production, including FedRAMP auth
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_govtech_vertical_builder]] | downstream | 0.39 |
-| [[bld_instruction_govtech_vertical]] | upstream | 0.37 |
-| [[bld_knowledge_card_govtech_vertical]] | upstream | 0.37 |
 | [[govtech-vertical-builder]] | upstream | 0.36 |
 | [[govtech_vertical_digital_services]] | upstream | 0.31 |

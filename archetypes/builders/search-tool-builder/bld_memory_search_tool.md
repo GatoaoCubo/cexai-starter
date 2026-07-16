@@ -26,11 +26,7 @@ title: "Memory Search Tool"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_search_tool
   - search-tool-builder
-  - p04_search_tool_NAME
-  - p11_qg_search_tool
-  - bld_collaboration_search_tool
 ---
 ## Summary
 Search tools are the primary way agents access current information, and they are the most likely P04 kind to generate unexpected costs. The three load-bearing constraints are: max_results (prevents token waste), cost_per_query (enables budget tracking), and API key security (prevents credential exposure).
@@ -97,5 +93,4 @@ python _tools/cex_score.py --apply p10-lr-search-tool-builder.md
 | [[bld_knowledge_search_tool]] | upstream | 0.49 |
 | [[search-tool-builder]] | upstream | 0.40 |
 | p04_search_tool_NAME | upstream | 0.36 |
-| [[p11_qg_search_tool]] | downstream | 0.33 |
 | [[bld_orchestration_search_tool]] | downstream | 0.33 |

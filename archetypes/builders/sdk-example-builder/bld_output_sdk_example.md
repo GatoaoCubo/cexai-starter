@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [sdk_example construction, output template sdk example, sdk_example, builder, output_template, example name, example usage, parameter table, sample response, client client]
 density_score: 0.85
 related:
-  - kc_sdk_example
   - bld_config_sdk_example
-  - bld_collaboration_sdk_example
-  - n00_sdk_example_manifest
   - bld_schema_sdk_example
 ---
 ```yaml
@@ -65,8 +62,5 @@ print(response.json())
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_sdk_example]] | upstream | 0.41 |
 | [[bld_config_sdk_example]] | downstream | 0.37 |
-| [[bld_collaboration_sdk_example]] | downstream | 0.31 |
-| [[n00_sdk_example_manifest]] | upstream | 0.28 |
 | [[bld_schema_sdk_example]] | downstream | 0.28 |

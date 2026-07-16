@@ -18,10 +18,6 @@ keywords: [component map of mcp_server, and architectural position, mcp server c
 density_score: 0.90
 related:
   - mcp-server-builder
-  - n00_mcp_server_manifest
-  - bld_collaboration_mcp_server
-  - p03_ins_mcp_server
-  - p01_kc_mcp_server
 ---
 # Architecture: mcp_server in the CEX
 ## Component Inventory
@@ -72,5 +68,4 @@ mcp_server     --signals-->    health_status
 | [[mcp-server-builder]] | upstream | 0.51 |
 | n00_mcp_server_manifest | upstream | 0.49 |
 | [[bld_orchestration_mcp_server]] | upstream | 0.49 |
-| [[p03_ins_mcp_server]] | upstream | 0.47 |
 | [[kc_mcp_server]] | upstream | 0.46 |

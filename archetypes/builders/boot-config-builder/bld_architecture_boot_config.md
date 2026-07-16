@@ -19,9 +19,6 @@ density_score: 0.90
 related:
   - boot-config-builder
   - bld_architecture_agent
-  - bld_collaboration_boot_config
-  - p01_kc_boot_config
-  - bld_instruction_boot_config
 ---
 # Architecture: boot_config in the CEX
 ## Component Inventory

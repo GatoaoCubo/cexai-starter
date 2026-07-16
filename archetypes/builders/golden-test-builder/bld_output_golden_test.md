@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F6_produce"
 keywords: [template with, for golden_test production, golden test construction, output template golden test, golden_test, builder, examples, output template, input scenario, golden output]
 density_score: 0.90
-related:
-  - bld_output_template_runtime_rule
-  - bld_output_template_unit_eval
-  - bld_output_template_embedding_config
-  - bld_output_template_feature_flag
-  - bld_collaboration_golden_test
 ---
 # Output Template: golden_test
 ```yaml
@@ -89,7 +83,5 @@ linked_artifacts:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_output_template_runtime_rule | sibling | 0.36 |
-| [[bld_output_template_unit_eval]] | sibling | 0.35 |
-| [[bld_output_template_embedding_config]] | sibling | 0.34 |
 | bld_output_template_feature_flag | sibling | 0.34 |
 | [[bld_orchestration_golden_test]] | downstream | 0.34 |

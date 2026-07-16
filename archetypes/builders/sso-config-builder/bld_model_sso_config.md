@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_knowledge_card_sso_config
-  - kc_sso_config
-  - bld_instruction_sso_config
-  - p10_mem_sso_config_builder
-  - p09_qg_sso_config
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS USE standardized protocol bindings (e.g., SAML HTTP-Redirect, OIDC Author
 ALWAYS VALIDATE output against SAML/OIDC spec conformance tools.  
 NEVER INCLUDE credentials, passwords, or API keys in generated configurations.  
 NEVER ASSUME IdP-specific extensions or proprietary attributes.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_sso_config]] | upstream | 0.59 |
-| [[kc_sso_config]] | upstream | 0.55 |
-| [[bld_instruction_sso_config]] | upstream | 0.52 |
-| [[p10_mem_sso_config_builder]] | downstream | 0.49 |
-| [[p09_qg_sso_config]] | downstream | 0.44 |

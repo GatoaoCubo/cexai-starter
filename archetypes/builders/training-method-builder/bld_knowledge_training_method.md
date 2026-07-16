@@ -17,10 +17,7 @@ keywords: [training_method construction, knowledge card, learning paradigms, com
 density_score: 0.88
 related:
   - training-method-builder
-  - p10_lr_training_method_builder
   - bld_tools_training_method
-  - bld_output_template_training_method
-  - p02_qg_training_method
 ---
 # Knowledge: training_method
 
@@ -79,7 +76,4 @@ documentation (`model_card`).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[training-method-builder]] | downstream | 0.54 |
-| [[p10_lr_training_method_builder]] | downstream | 0.48 |
 | [[bld_tools_training_method]] | downstream | 0.42 |
-| [[bld_output_template_training_method]] | downstream | 0.41 |
-| [[p02_qg_training_method]] | downstream | 0.39 |

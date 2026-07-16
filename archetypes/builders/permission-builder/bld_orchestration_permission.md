@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [permission construction, collaboration permission, permission, builder, examples, "### crew: agent access governance", "### crew: plugin security layer", my role, crew compositions, system configuration bootstrap]
 density_score: 0.90
 related:
-  - bld_collaboration_path_config
   - permission-builder
   - bld_architecture_permission
-  - p03_ins_permission
-  - bld_collaboration_rbac_policy
 ---
 # Collaboration: permission-builder
 ## My Role in Crews
@@ -74,5 +71,4 @@ I define RBAC/ABAC/ACL rules, role hierarchies, allow/deny lists, and audit trai
 | [[bld_orchestration_path_config]] | sibling | 0.44 |
 | [[permission-builder]] | related | 0.43 |
 | [[bld_architecture_permission]] | upstream | 0.37 |
-| [[p03_ins_permission]] | upstream | 0.35 |
 | [[bld_orchestration_rbac_policy]] | sibling | 0.35 |

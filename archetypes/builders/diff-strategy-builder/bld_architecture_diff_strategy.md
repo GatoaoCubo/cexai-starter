@@ -18,8 +18,6 @@ keywords: [diff_strategy construction, architecture diff strategy, algorithm cor
 density_score: 0.90
 related:
   - diff-strategy-builder
-  - p04_qg_diff_strategy
-  - bld_knowledge_card_diff_strategy
   - bld_architecture_edit_format
   - edit-format-builder
 ---
@@ -61,7 +59,5 @@ Aider edit formats (whole, diff, udiff-simple, diff-fenced).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[diff-strategy-builder]] | upstream | 0.40 |
-| [[p04_qg_diff_strategy]] | downstream | 0.40 |
-| [[bld_knowledge_card_diff_strategy]] | upstream | 0.40 |
 | [[bld_architecture_edit_format]] | sibling | 0.39 |
 | [[edit-format-builder]] | upstream | 0.38 |

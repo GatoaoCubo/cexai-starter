@@ -26,11 +26,7 @@ title: "Memory Backpressure Policy"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p01_kc_backpressure_policy
-  - p11_qg_backpressure_policy
-  - bld_knowledge_card_backpressure_policy
   - bld_config_backpressure_policy
-  - bld_instruction_backpressure_policy
 ---
 ## Summary
 
@@ -68,8 +64,4 @@ Documentation discipline:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_backpressure_policy]] | upstream | 0.44 |
-| [[p11_qg_backpressure_policy]] | downstream | 0.36 |
-| [[bld_knowledge_card_backpressure_policy]] | upstream | 0.33 |
 | [[bld_config_backpressure_policy]] | upstream | 0.33 |
-| [[bld_instruction_backpressure_policy]] | upstream | 0.31 |

@@ -16,11 +16,8 @@ updated: "2026-04-07"
 keywords: [memory type construction, architecture memory type, memory_type, builder, examples, data flow, pipeline integration, related artifacts, should_save reject, correction preference]
 density_score: 0.90
 related:
-  - bld_manifest_memory_type
-  - bld_knowledge_card_memory_type
   - bld_tools_memory_type
   - bld_memory_memory_type
-  - bld_output_template_memory_type
 ---
 # Architecture: memory_type
 
@@ -61,8 +58,5 @@ obs -> should_save(obs, ctx) -> [reject | classify(correction|preference|convent
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_memory_type]] | upstream | 0.40 |
-| [[bld_knowledge_card_memory_type]] | upstream | 0.37 |
 | [[bld_tools_memory_type]] | upstream | 0.35 |
 | [[bld_memory_memory_type]] | downstream | 0.28 |
-| [[bld_output_template_memory_type]] | upstream | 0.27 |

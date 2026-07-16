@@ -19,10 +19,6 @@ keywords: [sample rates, capture rules, and retention policies, gates for trace_
 density_score: 0.91
 related:
   - bld_schema_trace_config
-  - bld_knowledge_card_trace_config
-  - p10_lr_trace_config_builder
-  - bld_output_template_trace_config
-  - p11_qg_kind_builder
 ---
 ## Quality Gate
 

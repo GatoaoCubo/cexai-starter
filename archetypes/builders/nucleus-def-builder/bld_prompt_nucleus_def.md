@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [nucleus_def construction, instruction nucleus def, nucleus_def, builder, instruction, .cex/config/nucleus_models.yaml, ".claude/rules/n0{x}-*.md", "n0{x}_*/agent_card_n0{x}.md", "n0{x}_*/agents/", "n0{x}_*/"]
 density_score: 0.85
 related:
-  - p02_qg_nucleus_def
   - bld_tools_nucleus_def
   - bld_schema_nucleus_def
-  - bld_knowledge_card_nucleus_def
-  - p10_lr_nucleus_def_builder
 ---
 ## Phase 1: RESEARCH
 1. Read `.cex/config/nucleus_models.yaml` to extract cli_binding and model_tier for the target nucleus.
@@ -59,8 +56,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p02_qg_nucleus_def]] | downstream | 0.46 |
 | [[bld_tools_nucleus_def]] | downstream | 0.43 |
 | [[bld_schema_nucleus_def]] | downstream | 0.40 |
 | [[bld_knowledge_nucleus_def]] | upstream | 0.38 |
-| [[p10_lr_nucleus_def_builder]] | downstream | 0.37 |

@@ -18,8 +18,6 @@ updated: "2026-04-13"
 keywords: [relation types, extraction logic, storage backend, and traversal strategies, gates for knowledge_graph artifacts, validates entity, relation lists]
 density_score: 0.92
 related:
-  - p11_qg_quality_gate
-  - bld_instruction_knowledge_graph
   - bld_config_knowledge_graph
   - knowledge-graph-builder
   - bld_schema_knowledge_graph

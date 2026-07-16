@@ -18,10 +18,7 @@ keywords: [deployment_manifest builder constraints, rules, deployment_manifest, 
 density_score: null
 related:
   - bld_memory_deployment_manifest
-  - bld_manifest_deployment_manifest
-  - kc_deployment_manifest
   - bld_schema_deployment_manifest
-  - bld_instruction_deployment_manifest
 ---
 # Rules: deployment_manifest Builder
 
@@ -59,7 +56,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_deployment_manifest]] | sibling | 0.37 |
-| [[bld_manifest_deployment_manifest]] | downstream | 0.33 |
-| [[kc_deployment_manifest]] | sibling | 0.30 |
 | [[bld_schema_deployment_manifest]] | upstream | 0.29 |
-| [[bld_instruction_deployment_manifest]] | downstream | 0.25 |

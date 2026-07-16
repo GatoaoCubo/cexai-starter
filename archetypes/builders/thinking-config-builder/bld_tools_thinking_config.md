@@ -32,7 +32,6 @@ keywords:
 density_score: 0.88
 related:
   - bld_tools_voice_pipeline
-  - tools_prompt_template_builder
   - bld_tools_collaboration_pattern
   - bld_tools_action_paradigm
   - bld_tools_realtime_session
@@ -138,7 +137,6 @@ without rewriting the full file.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_voice_pipeline]] | sibling | 0.59 |
-| [[tools_prompt_template_builder]] | sibling | 0.56 |
 | [[bld_tools_collaboration_pattern]] | sibling | 0.56 |
 | [[bld_tools_action_paradigm]] | sibling | 0.55 |
 | [[bld_tools_realtime_session]] | sibling | 0.45 |

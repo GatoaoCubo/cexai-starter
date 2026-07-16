@@ -18,10 +18,8 @@ updated: "2026-04-07"
 keywords: [diagram construction, collaboration diagram, diagram, builder, examples, "### crew: system overview", my role, crew compositions, architecture documentation, system overview]
 density_score: 0.90
 related:
-  - bld_collaboration_component_map
   - bld_architecture_diagram
   - diagram-builder
-  - n00_diagram_manifest
   - p08_diag_{{SCOPE_SLUG}}
 ---
 # Collaboration: diagram-builder
@@ -91,8 +89,6 @@ I visualize architecture so stakeholders can understand system structure at a gl
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_component_map]] | sibling | 0.51 |
 | [[bld_architecture_diagram]] | upstream | 0.47 |
 | [[diagram-builder]] | upstream | 0.47 |
-| [[n00_diagram_manifest]] | upstream | 0.41 |
 | [\[p08_diag_`{{SCOPE_SLUG}}`\]] | upstream | 0.40 |

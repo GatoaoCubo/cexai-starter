@@ -43,7 +43,6 @@ slots:
   sin_tiebreak: "<Creative Lust applied when goals tie>"
 related:
   - agent_card_n02
-  - n07-orchestrator
   - kc_nucleus_def
 tags: [nucleus_def, n02, identity]
 ---

@@ -25,11 +25,7 @@ L1: Specialist in bounded_context artifacts -- explicit domain model boundaries 
 L2: Defines what model applies within a boundary, its vocabulary, and integration patterns.
 L3: When modeling domain architecture for multi-team or multi-service systems.
 related:
-  - p01_kc_bounded_context
   - bld_output_bounded_context
-  - bld_instruction_bounded_context
-  - bld_context_sources_bounded_context
-  - bld_rules_bounded_context
 ---
 ## Identity
 
@@ -96,8 +92,4 @@ quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_bounded_context]] | upstream | 0.49 |
 | [[bld_output_bounded_context]] | upstream | 0.41 |
-| [[bld_instruction_bounded_context]] | upstream | 0.34 |
-| [[bld_context_sources_bounded_context]] | downstream | 0.34 |
-| [[bld_rules_bounded_context]] | downstream | 0.31 |

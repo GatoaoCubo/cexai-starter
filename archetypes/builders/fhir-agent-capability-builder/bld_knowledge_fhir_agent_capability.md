@@ -18,8 +18,6 @@ keywords: [fhir_agent_capability construction, fhir_agent_capability, builder, k
 density_score: 0.85
 related:
   - fhir-agent-capability-builder
-  - bld_instruction_fhir_agent_capability
-  - kc_fhir_agent_capability
   - bld_tools_fhir_agent_capability
   - healthcare_vertical_fhir_workflows
 ---
@@ -73,7 +71,5 @@ CDS Hooks is the HL7 standard for EHR-integrated clinical decision support. AI a
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fhir-agent-capability-builder]] | downstream | 0.80 |
-| [[bld_instruction_fhir_agent_capability]] | downstream | 0.69 |
-| [[kc_fhir_agent_capability]] | sibling | 0.67 |
 | [[bld_tools_fhir_agent_capability]] | downstream | 0.67 |
 | [[healthcare_vertical_fhir_workflows]] | related | 0.60 |

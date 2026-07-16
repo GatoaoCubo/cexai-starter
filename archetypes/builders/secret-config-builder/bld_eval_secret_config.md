@@ -17,12 +17,6 @@ updated: "2026-03-29"
 8f: "F7_govern"
 keywords: [rotation policy, encryption posture, and access pattern, provider validity, rotation policy completeness, access pattern, and no plaintext secrets]
 density_score: 0.90
-related:
-  - secret-config-builder
-  - p09_sec_n01
-  - bld_knowledge_card_secret_config
-  - p10_lr_secret_config_builder
-  - bld_collaboration_secret_config
 ---
 ## Quality Gate
 

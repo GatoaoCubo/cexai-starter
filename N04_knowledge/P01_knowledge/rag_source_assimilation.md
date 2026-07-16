@@ -22,12 +22,6 @@ reliability: "high"
 format: "normalized-text"
 extraction_method: "ingest_contract"
 density_score: null
-related:
-  - p01_chunk_assimilation_n04
-  - p01_retr_assimilation_n04
-  - p10_em_assimilation_seed
-  - bld_collaboration_rag_source
-  - kc_reverse_prompt
 ---
 
 # RAG Source: Assimilation Profile (user sources -> vertical brain)
@@ -71,8 +65,8 @@ transmuter pattern from `spec_cex_ingest_aitmpl_engine`.
 | Relevance | high | scoped to the user's chosen vertical |
 
 ## 6. Indexing Configuration (delegated)
-- **Chunk strategy**: [[p01_chunk_assimilation_n04]] (heading_based, 1024/200)
-- **Retriever**: [[p01_retr_assimilation_n04]] (hybrid, top_k 5, threshold 0.75)
+- **Chunk strategy**: p01_chunk_assimilation_n04 (heading_based, 1024/200)
+- **Retriever**: p01_retr_assimilation_n04 (hybrid, top_k 5, threshold 0.75)
 - **Entity store seed**: p10_em_assimilation_seed
 
 ## 7. Consumers
@@ -83,8 +77,6 @@ transmuter pattern from `spec_cex_ingest_aitmpl_engine`.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_chunk_assimilation_n04]] | downstream | 0.42 |
-| [[p01_retr_assimilation_n04]] | downstream | 0.40 |
 | p10_em_assimilation_seed | downstream | 0.34 |
 | [[bld_orchestration_rag_source]] | related | 0.28 |
 | kc_reverse_prompt | related | 0.24 |

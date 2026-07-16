@@ -15,12 +15,6 @@ tldr: "Comprehensive market sizing methodology: top-down (analyst reports) vs. b
 keywords: [total addressable market, serviceable addressable market, serviceable obtainable market, arpu, cagr, icp, unit economics, bottom-up]
 density_score: 0.93
 updated: "2026-04-17"
-related:
-  - p10_out_market_snapshot
-  - p03_ap_n01
-  - bld_knowledge_card_pitch_deck
-  - p02_agent_intelligence_n01
-  - p03_sp_intelligence_nucleus
 ---
 
 <!-- 8F: F1 constrain=P01/knowledge_card F2 become=knowledge-card-builder F3 inject=kc_competitive_intelligence_methods+reasoning_strategy_n01 F4 reason=market sizing is the most common N01 task after competitive analysis; this KC grounds every sizing exercise in methodology F5 call=cex_compile F6 produce=kc_market_sizing_methodology.md F7 govern=frontmatter+ascii+tables F8 collaborate=N01_intelligence/P01_knowledge/ -->

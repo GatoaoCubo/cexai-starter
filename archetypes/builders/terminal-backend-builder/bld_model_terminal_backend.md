@@ -18,9 +18,6 @@ updated: "2026-04-18"
 keywords: [builder identity, routing for terminal_backend, terminal_backend construction, type builder terminal backend, terminal_backend, builder, type_builder, environments/, limits.timeout_seconds]
 density_score: 0.90
 related:
-  - n00_terminal_backend_manifest
-  - bld_instruction_terminal_backend
-  - kc_terminal_backend
   - bld_schema_terminal_backend
   - tb_{{backend}}
 ---
@@ -65,8 +62,5 @@ The terminal_backend-builder agent is a specialized configuration generator for 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_terminal_backend_manifest]] | related | 0.60 |
-| [[bld_instruction_terminal_backend]] | upstream | 0.59 |
-| [[kc_terminal_backend]] | upstream | 0.50 |
 | [[bld_schema_terminal_backend]] | upstream | 0.49 |
 | [\[tb_`{{backend}}`\]] | related | 0.49 |

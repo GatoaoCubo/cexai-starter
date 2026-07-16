@@ -18,11 +18,8 @@ keywords: [fallback, cascade, model-routing, resilience, timeout]
 feeds_kinds: [fallback_chain]
 density_score: null
 related:
-  - p02_fb_model_cascade
   - fallback-chain-builder
   - bld_architecture_fallback_chain
-  - bld_collaboration_fallback_chain
-  - bld_instruction_fallback_chain
 ---
 
 # Fallback Chain

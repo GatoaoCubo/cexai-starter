@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [integration_guide construction, quality gate integration guide, integration_guide, builder, quality_gate, quality gate, fail condition]
 density_score: 0.85
-related:
-  - p01_qg_faq_entry
-  - p05_qg_quickstart_guide
-  - p06_qg_api_reference
-  - bld_instruction_integration_guide
-  - n00_integration_guide_manifest
 ---
 ## Quality Gate
 ## Definition  

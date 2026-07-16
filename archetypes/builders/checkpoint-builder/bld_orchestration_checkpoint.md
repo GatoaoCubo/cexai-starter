@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - checkpoint-builder
   - bld_architecture_checkpoint
-  - bld_knowledge_card_checkpoint
-  - p01_kc_checkpoint
-  - bld_instruction_checkpoint
 ---
 # Collaboration: checkpoint-builder
 ## My Role in Crews

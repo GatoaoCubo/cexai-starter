@@ -19,10 +19,6 @@ keywords: [mental model construction, collaboration mental model, mental_model, 
 density_score: 0.90
 related:
   - mental-model-builder
-  - bld_collaboration_agent
-  - bld_collaboration_model_card
-  - bld_collaboration_runtime_state
-  - p03_ins_mental_model
 ---
 # Collaboration: mental-model-builder
 
@@ -80,4 +76,3 @@ I produce cognitive maps with routing rules, decision trees, priorities, heurist
 | [[bld_orchestration_agent]] | sibling | 0.45 |
 | bld_collaboration_model_card | sibling | 0.44 |
 | [[bld_orchestration_runtime_state]] | sibling | 0.42 |
-| [[p03_ins_mental_model]] | downstream | 0.42 |

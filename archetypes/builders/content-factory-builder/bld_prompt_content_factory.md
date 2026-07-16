@@ -19,10 +19,7 @@ keywords: [content factory construction, instruction content factory, content_fa
 density_score: 0.90
 related:
   - content-factory-builder
-  - bld_knowledge_card_content_factory
   - bld_schema_content_factory
-  - bld_output_template_content_factory
-  - p01_kc_content_factory
 ---
 # Instructions: How to Produce a content_factory
 
@@ -104,7 +101,4 @@ python _tools/cex_skill_loader.py --verify content_factory
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[content-factory-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_content_factory]] | upstream | 0.40 |
 | [[bld_schema_content_factory]] | upstream | 0.38 |
-| [[bld_output_template_content_factory]] | downstream | 0.36 |
-| [[p01_kc_content_factory]] | upstream | 0.35 |

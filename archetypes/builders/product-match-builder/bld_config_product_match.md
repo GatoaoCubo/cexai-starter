@@ -29,10 +29,7 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_tools_product_match
-  - bld_instruction_product_match
-  - bld_output_template_product_match
   - bld_config_vision_tool
-  - bld_context_sources_data_contract
 ---
 # Config: product_match Production Rules
 ## Naming Convention
@@ -87,6 +84,4 @@ Reordering, renaming, or re-layouting any of the four is a HARD FAIL against
 |----------|-------------|-------|
 | [[bld_tools_product_match]] | upstream | 0.33 |
 | [[bld_prompt_product_match]] | upstream | 0.29 |
-| [[bld_output_template_product_match]] | upstream | 0.29 |
 | [[bld_config_vision_tool]] | sibling | 0.28 |
-| [[bld_context_sources_data_contract]] | sibling | 0.27 |

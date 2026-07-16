@@ -18,10 +18,7 @@ updated: "2026-03-29"
 keywords: [reward signals, or implicit feedback, signal_type validity, scale consistency, baseline calibration, criteria completeness, and application loop documentation]
 density_score: 0.90
 related:
-  - p11_qg_llm_judge
-  - bld_instruction_reward_signal
   - reward-signal-builder
-  - p11_qg_quality_gate
   - bld_architecture_reward_signal
 ---
 ## Quality Gate

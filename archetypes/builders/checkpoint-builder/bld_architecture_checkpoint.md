@@ -18,9 +18,6 @@ keywords: [component map of checkpoint, and architectural position, checkpoint c
 density_score: 0.90
 related:
   - checkpoint-builder
-  - bld_collaboration_checkpoint
-  - p01_kc_checkpoint
-  - bld_instruction_checkpoint
   - bld_schema_checkpoint
 ---
 ## Component Inventory

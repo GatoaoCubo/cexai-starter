@@ -17,12 +17,6 @@ axioms:
 tldr: "OpenAI Agents SDK is the gorilla in the room -- official, provider-backed, 25K stars, free MIT license, native MCP, but intentionally minimal with no typed knowledge system, no quality gates, and OpenAI-first model bias."
 8f: "F3_inject"
 keywords: [multi-agent workflows, harness system, sandbox execution, resume bookkeeping, human approval flows, litellm, any-llm, typed knowledge, multi-runtime governance]
-related:
-  - p01_kc_atom_03_openai_agents_sdk
-  - cm_cex_vs_landscape
-  - p01_kc_agent
-  - p01_kc_terminology_openai_canonical
-  - p01_kc_claude_agent_sdk_patterns
 ---
 
 # Competitor Profile: OpenAI Agents SDK

@@ -29,10 +29,7 @@ keywords: [validator builder instructions, auto-fix policy, and bypass audit tra
 density_score: 0.93
 llm_function: REASON
 related:
-  - p11_qg_validator
   - validator-builder
-  - p03_ins_validation_schema
-  - bld_knowledge_card_validator
   - bld_schema_validator
 ---
 ## Context

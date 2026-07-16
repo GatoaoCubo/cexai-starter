@@ -19,10 +19,6 @@ churn, key concepts, churn rate, early warning signals, harvard business review,
 density_score: 0.85
 related:
   - churn-prevention-playbook-builder
-  - p10_lr_churn_prevention_playbook_builder
-  - n00_churn_prevention_playbook_manifest
-  - kc_churn_prevention_playbook
-  - bld_instruction_churn_prevention_playbook
 ---
 ## Domain Overview
 Churn prevention is critical in SaaS, telecom, and subscription-based industries, where retaining existing customers often yields higher ROI than acquiring new ones. Playbooks focus on detecting early signals of dissatisfaction, triggering timely interventions, and deploying scripted strategies to re-engage at-risk accounts. Key metrics include churn rate, customer lifetime value (CLV), and net promoter score (NPS), with emphasis on predictive analytics and behavioral data.
@@ -67,7 +63,3 @@ Playbooks integrate customer success (CS) workflows, leveraging tools like CRM s
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[churn-prevention-playbook-builder]] | downstream | 0.45 |
-| [[p10_lr_churn_prevention_playbook_builder]] | downstream | 0.42 |
-| [[n00_churn_prevention_playbook_manifest]] | sibling | 0.35 |
-| [[kc_churn_prevention_playbook]] | sibling | 0.35 |
-| [[bld_instruction_churn_prevention_playbook]] | downstream | 0.34 |

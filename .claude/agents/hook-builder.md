@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - hook-builder
   - hook-config-builder
-  - bld_collaboration_hook_config
   - bld_architecture_hook
-  - n00_hook_manifest
 ---
 
 # hook-builder Sub-Agent

@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [incident_report construction, quality gate incident report, incident_report, builder, quality_gate, 'inc-\d{4}-\d{2}-\d{2}', summary]
 density_score: 0.85
 related:
-  - bld_instruction_incident_report
-  - p11_qg_quality_gate
   - incident-report-builder
-  - p11_qg_usage_report
-  - kc_incident_report
 ---
 ## Quality Gate
 
@@ -166,8 +162,4 @@ Incorrect tensor pinning in `torch.distributed` caused memory fragmentation.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_incident_report]] | upstream | 0.34 |
-| [[p11_qg_quality_gate]] | sibling | 0.29 |
 | [[incident-report-builder]] | related | 0.28 |
-| [[p11_qg_usage_report]] | sibling | 0.27 |
-| [[kc_incident_report]] | upstream | 0.26 |

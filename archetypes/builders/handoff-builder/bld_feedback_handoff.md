@@ -11,12 +11,6 @@ tldr: "Handoff feedback: anti-patterns, regression signals, and quality improvem
 keywords: [handoff feedback, regression signals, and quality improvement triggers, feedback, anti-patterns, handoff, common failure modes, correction protocol, key behaviors, quality thresholds]
 density_score: 1.0
 updated: "2026-04-22"
-related:
-  - p11_fb_retriever
-  - p11_fb_ab_test_config
-  - p11_fb_research_pipeline
-  - p11_fb_prompt_version
-  - p11_fb_retriever_config
 ---
 # Feedback: Handoff
 
@@ -76,12 +70,3 @@ average: 8.0+
 gates_passed: 7/7
 density: 0.85+
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p11_fb_retriever]] | sibling | 0.77 |
-| [[p11_fb_ab_test_config]] | sibling | 0.77 |
-| [[p11_fb_research_pipeline]] | sibling | 0.76 |
-| [[p11_fb_prompt_version]] | sibling | 0.76 |
-| [[p11_fb_retriever_config]] | sibling | 0.76 |

@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [template with, for validation_schema production, validation schema construction, output template validation schema, validation_schema, builder, examples, output template, validation schema, schema overview]
 density_score: 0.90
 related:
-  - p06_vs_frontmatter
   - bld_schema_validation_schema
-  - bld_output_template_input_schema
   - validation-schema-builder
-  - n00_validation_schema_manifest
 ---
 # Output Template: validation_schema
 ```yaml
@@ -97,6 +94,5 @@ linked_artifacts:
 |----------|-------------|-------|
 | p06_vs_frontmatter | downstream | 0.40 |
 | [[bld_schema_validation_schema]] | downstream | 0.35 |
-| [[bld_output_template_input_schema]] | sibling | 0.35 |
 | [[validation-schema-builder]] | downstream | 0.32 |
 | n00_validation_schema_manifest | downstream | 0.32 |

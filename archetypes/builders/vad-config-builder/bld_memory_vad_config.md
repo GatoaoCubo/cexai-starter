@@ -20,10 +20,6 @@ successful]
 density_score: 0.85
 related:
   - vad-config-builder
-  - kc_vad_config
-  - bld_collaboration_vad_config
-  - bld_knowledge_card_vad_config
-  - p10_lr_judge_config_builder
 ---
 ## Observation  
 Common issues include inconsistent threshold values across artifacts, leading to unreliable detection, and misalignment between sensitivity settings and environmental noise profiles. Overlooking silence timeout configurations often causes false triggers in low-activity scenarios.  
@@ -45,7 +41,3 @@ Reviewed artifacts from 2023 Q3 showed 30% fewer errors when using predefined th
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[vad-config-builder]] | upstream | 0.27 |
-| [[kc_vad_config]] | upstream | 0.26 |
-| [[bld_collaboration_vad_config]] | downstream | 0.24 |
-| [[bld_knowledge_card_vad_config]] | upstream | 0.22 |
-| [[p10_lr_judge_config_builder]] | sibling | 0.22 |

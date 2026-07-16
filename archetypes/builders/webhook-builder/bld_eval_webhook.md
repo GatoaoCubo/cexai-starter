@@ -30,10 +30,7 @@ target_kind: webhook
 hard_gates: 10
 soft_dims: 12
 related:
-  - n00_webhook_manifest
   - webhook-builder
-  - bld_instruction_webhook
-  - bld_output_template_webhook
   - bld_config_webhook
 ---
 ## Quality Gate

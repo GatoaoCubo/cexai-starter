@@ -19,9 +19,6 @@ density_score: 0.90
 related:
   - realtime-session-builder
   - bld_schema_realtime_session
-  - bld_output_template_realtime_session
-  - bld_instruction_realtime_session
-  - p04_qg_realtime_session
 ---
 ## Domain Overview
 
@@ -111,6 +108,3 @@ Integration platforms: LiveKit Agents, Daily Bots, Vapi, Retell AI, Twilio Voice
 |----------|-------------|-------|
 | [[realtime-session-builder]] | downstream | 0.65 |
 | [[bld_schema_realtime_session]] | downstream | 0.56 |
-| [[bld_output_template_realtime_session]] | downstream | 0.54 |
-| [[bld_instruction_realtime_session]] | downstream | 0.54 |
-| [[p04_qg_realtime_session]] | downstream | 0.51 |

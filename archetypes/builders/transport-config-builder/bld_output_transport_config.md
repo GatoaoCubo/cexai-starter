@@ -17,10 +17,7 @@ updated: "2026-04-13"
 keywords: [transport_config construction, output template transport config, grpc variants, transport_config, builder, output_template, "## variant b: websocket transport config"]
 density_score: 0.90
 related:
-  - p09_qg_transport_config
   - bld_schema_transport_config
-  - n00_transport_config_manifest
-  - bld_knowledge_card_transport_config
   - transport-config-builder
 ---
 ## Variant A: WebRTC Transport Config
@@ -234,8 +231,5 @@ notes: "{{additional_notes}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p09_qg_transport_config]] | downstream | 0.48 |
 | [[bld_schema_transport_config]] | downstream | 0.45 |
-| [[n00_transport_config_manifest]] | downstream | 0.38 |
-| [[bld_knowledge_card_transport_config]] | upstream | 0.32 |
 | [[transport-config-builder]] | downstream | 0.30 |

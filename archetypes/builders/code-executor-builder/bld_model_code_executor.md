@@ -32,10 +32,6 @@ parent: null
 8f: "F5_call"
 related:
   - bld_architecture_code_executor
-  - p01_kc_code_executor
-  - bld_collaboration_code_executor
-  - p11_qg_code_executor
-  - bld_instruction_code_executor
 ---
 ## Identity
 
@@ -136,5 +132,4 @@ quality_target: 9.0
 | [[bld_architecture_code_executor]] | downstream | 0.58 |
 | [[kc_code_executor]] | related | 0.53 |
 | [[bld_orchestration_code_executor]] | downstream | 0.49 |
-| [[p11_qg_code_executor]] | downstream | 0.48 |
 | [[bld_prompt_code_executor]] | upstream | 0.48 |

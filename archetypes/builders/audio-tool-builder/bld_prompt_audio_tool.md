@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - audio-tool-builder
-  - p10_lr_audio_tool_builder
-  - bld_knowledge_card_audio_tool
   - bld_schema_audio_tool
-  - p11_qg_audio_tool
 ---
 # Instructions: How to Produce an audio_tool
 ## Phase 1: RESEARCH
@@ -101,7 +98,4 @@ python _tools/cex_skill_loader.py --verify audio
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[audio-tool-builder]] | downstream | 0.55 |
-| [[p10_lr_audio_tool_builder]] | downstream | 0.50 |
-| [[bld_knowledge_card_audio_tool]] | upstream | 0.48 |
 | [[bld_schema_audio_tool]] | downstream | 0.46 |
-| [[p11_qg_audio_tool]] | downstream | 0.45 |

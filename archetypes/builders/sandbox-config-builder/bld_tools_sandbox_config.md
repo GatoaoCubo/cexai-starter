@@ -17,10 +17,6 @@ updated: "2026-04-13"
 keywords: [sandbox_config construction, tools sandbox config, real sandbox tools, docker sdk, firecracker api, gvisor runsc, sandbox_config, builder, tools, sandbox.create(template, timeout=30)]
 density_score: 0.90
 related:
-  - bld_knowledge_card_sandbox_config
-  - bld_instruction_sandbox_config
-  - p09_qg_sandbox_config
-  - p01_kc_code_executor
   - sandbox-config-builder
 ---
 ## Managed Sandbox Platforms
@@ -80,8 +76,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_sandbox_config]] | upstream | 0.40 |
-| [[bld_instruction_sandbox_config]] | upstream | 0.33 |
-| [[p09_qg_sandbox_config]] | downstream | 0.30 |
-| [[p01_kc_code_executor]] | related | 0.30 |
 | [[sandbox-config-builder]] | downstream | 0.29 |

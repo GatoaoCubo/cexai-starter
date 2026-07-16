@@ -18,10 +18,8 @@ keywords: [app_directory_entry construction, collaboration app directory entry, 
 constructs, receives from, app dev]
 density_score: 0.85
 related:
-  - bld_collaboration_marketplace_app_manifest
   - marketplace-app-manifest-builder
   - bld_config_app_directory_entry
-  - kc_app_directory_entry
   - app-directory-entry-builder
 ---
 ## Crew Role  
@@ -47,8 +45,6 @@ Does NOT handle marketplace app manifests (handled by `marketplace_app_manifest-
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_marketplace_app_manifest]] | sibling | 0.55 |
 | [[marketplace-app-manifest-builder]] | upstream | 0.39 |
 | [[bld_config_app_directory_entry]] | upstream | 0.38 |
-| [[kc_app_directory_entry]] | upstream | 0.37 |
 | [[app-directory-entry-builder]] | upstream | 0.36 |

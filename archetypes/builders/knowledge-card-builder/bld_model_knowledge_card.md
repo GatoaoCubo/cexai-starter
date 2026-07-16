@@ -29,10 +29,6 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_knowledge_card
-  - bld_knowledge_card_knowledge_card
-  - bld_instruction_knowledge_card
-  - n00_knowledge_card_manifest
   - model-card-builder
 ---
 ## Identity

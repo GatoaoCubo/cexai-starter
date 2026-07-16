@@ -30,12 +30,6 @@ keywords:
   - "enum check"
   - "sibling"
 density_score: 0.90
-related:
-  - p11_qg_prompt_cache
-  - bld_instruction_context_window_config
-  - bld_instruction_memory_scope
-  - bld_instruction_action_prompt
-  - bld_instruction_prompt_version
 ---
 # Instructions: How to Produce a prompt_cache
 ## Phase 1: RESEARCH
@@ -89,12 +83,3 @@ python _tools/cex_skill_loader.py --verify prompt
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p11_qg_prompt_cache]] | downstream | 0.34 |
-| [[bld_instruction_context_window_config]] | sibling | 0.32 |
-| [[bld_instruction_memory_scope]] | sibling | 0.32 |
-| [[bld_instruction_action_prompt]] | sibling | 0.32 |
-| [[bld_instruction_prompt_version]] | sibling | 0.31 |

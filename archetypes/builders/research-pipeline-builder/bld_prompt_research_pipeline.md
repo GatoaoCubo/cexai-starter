@@ -19,10 +19,6 @@ keywords: [research pipeline construction, instruction research pipeline, resear
 density_score: 0.90
 related:
   - research-pipeline-builder
-  - p04_cli_research_pipeline_n01
-  - p11_qg_research_pipeline
-  - p02_agent_research_pipeline_intelligence
-  - bld_knowledge_card_research_pipeline
 ---
 # Instructions: How to Produce a research_pipeline
 
@@ -71,6 +67,5 @@ related:
 |----------|-------------|-------|
 | [[research-pipeline-builder]] | downstream | 0.44 |
 | p04_cli_research_pipeline_n01 | downstream | 0.38 |
-| [[p11_qg_research_pipeline]] | downstream | 0.37 |
 | p02_agent_research_pipeline_intelligence | upstream | 0.36 |
 | [[bld_knowledge_research_pipeline]] | upstream | 0.34 |

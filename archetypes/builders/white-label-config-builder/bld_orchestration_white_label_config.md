@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [white_label_config construction, collaboration white label config, white_label_config, builder, collaboration, crew role
 handles, receives from, branding team, environment team, product team]
 density_score: 0.85
-related:
-  - bld_collaboration_reranker_config
-  - bld_collaboration_sandbox_spec
-  - bld_collaboration_reward_model
-  - bld_collaboration_ab_test_config
-  - bld_collaboration_integration_guide
 ---
 ## Crew Role
 Handles white-label configuration templates, enabling customization of UI/UX elements without altering brand identity or runtime environments.

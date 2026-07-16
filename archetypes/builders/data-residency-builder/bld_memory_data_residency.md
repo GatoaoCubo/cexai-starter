@@ -19,12 +19,6 @@ common, pattern
 successful, evidence
 reviewed, related artifacts, residency rules]
 density_score: 0.85
-related:
-  - data-residency-builder
-  - bld_knowledge_card_data_residency
-  - bld_collaboration_data_residency
-  - p01_kc_data_residency
-  - bld_instruction_data_residency
 ---
 ## Observation
 Common issues include ambiguous region boundaries, conflicting residency rules across systems, and incomplete mapping of data flows to regulatory zones. Overlooking hybrid cloud environments often leads to non-compliance gaps.
@@ -41,12 +35,3 @@ Reviewed artifacts showed EU regions using ISO codes with explicit data transfer
 - Automate validation of data flow paths against residency specs.
 - Document exceptions for cross-border transfers with legal review markers.
 - Periodically audit residency mappings against evolving regulatory updates.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[data-residency-builder]] | upstream | 0.43 |
-| [[bld_knowledge_card_data_residency]] | upstream | 0.43 |
-| [[bld_collaboration_data_residency]] | downstream | 0.38 |
-| [[p01_kc_data_residency]] | upstream | 0.37 |
-| [[bld_instruction_data_residency]] | upstream | 0.34 |

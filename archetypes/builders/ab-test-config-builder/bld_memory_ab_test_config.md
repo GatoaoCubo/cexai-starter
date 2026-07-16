@@ -21,9 +21,6 @@ density_score: 0.87
 related:
   - bld_schema_ab_test_config
   - ab-test-config-builder
-  - p11_qg_ab_test_config
-  - p10_lr_experiment_config_builder
-  - bld_knowledge_card_experiment_config
 ---
 # Memory: ab-test-config-builder
 
@@ -54,6 +51,3 @@ Kohavi et al. 2020 ("Trustworthy Online Controlled Experiments") formalized SRM,
 |----------|-------------|-------|
 | [[bld_schema_ab_test_config]] | upstream | 0.30 |
 | [[ab-test-config-builder]] | downstream | 0.28 |
-| [[p11_qg_ab_test_config]] | downstream | 0.25 |
-| [[p10_lr_experiment_config_builder]] | related | 0.23 |
-| [[bld_knowledge_card_experiment_config]] | upstream | 0.23 |

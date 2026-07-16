@@ -19,10 +19,7 @@ agent, key concepts, agent persona, identity attributes, behavioral traits]
 density_score: 0.85
 related:
   - agent-profile-builder
-  - bld_collaboration_agent
-  - bld_knowledge_card_agent
   - agent-builder
-  - p01_kc_agent
 ---
 ## Domain Overview
 Agent_profile artifacts define the persona and identity of AI agents, enabling consistent behavior, user interaction, and role-specific functionality. In industries like customer service, healthcare, and virtual assistants, personas are constructed using behavioral psychology, linguistics, and domain-specific knowledge to align with user expectations. Identity attributes (e.g., name, role, expertise) are critical for trust-building and contextual relevance, often derived from user data, organizational policies, or scenario-based requirements.

@@ -36,11 +36,7 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_knowledge_graph
-  - p01_kc_knowledge_graph
   - bld_architecture_knowledge_graph
-  - bld_knowledge_card_knowledge_graph
-  - bld_instruction_knowledge_graph
 ---
 ## Identity
 
@@ -126,8 +122,4 @@ text splitting config), NOT a retriever_config (P01, search params).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_knowledge_graph]] | downstream | 0.65 |
-| [[p01_kc_knowledge_graph]] | related | 0.62 |
 | [[bld_architecture_knowledge_graph]] | downstream | 0.58 |
-| [[bld_knowledge_card_knowledge_graph]] | related | 0.51 |
-| [[bld_instruction_knowledge_graph]] | downstream | 0.46 |

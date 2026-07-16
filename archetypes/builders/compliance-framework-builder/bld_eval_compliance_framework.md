@@ -31,9 +31,6 @@ keywords:
 density_score: 0.85
 related:
   - compliance-framework-builder
-  - bld_instruction_compliance_framework
-  - kc_compliance_framework
-  - bld_knowledge_card_compliance_framework
   - compliance-checklist-builder
 ---
 ## Quality Gate

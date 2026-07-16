@@ -19,12 +19,6 @@ common, pattern
 modular, evidence  
 reviewed, related artifacts, configuration validation]
 density_score: 0.85
-related:
-  - p10_lr_tts_provider_builder
-  - bld_instruction_tts_provider
-  - p10_lr_boot-config-builder
-  - p10_mem_graph_rag_config_builder
-  - p10_lr_playground_config_builder
 ---
 ## Observation  
 Common issues include inconsistent API handling across providers, leading to redundant code, and incomplete configuration validation causing runtime failures. Misaligned sample rates or encoding formats often result in silent fallbacks.  
@@ -41,12 +35,3 @@ Reviewed artifacts showed 30% faster integration using abstracted STT interfaces
 - Prioritize mock testing with provider-specific edge cases  
 - Document required provider credentials and environment variables  
 - Enforce error propagation for API failures instead of silent drops
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p10_lr_tts_provider_builder]] | sibling | 0.43 |
-| [[bld_instruction_tts_provider]] | upstream | 0.25 |
-| [[p10_lr_boot-config-builder]] | sibling | 0.25 |
-| [[p10_mem_graph_rag_config_builder]] | related | 0.24 |
-| [[p10_lr_playground_config_builder]] | sibling | 0.24 |

@@ -22,11 +22,7 @@ related:
   - p01_kc_competitor_crewai
   - p01_kc_benchmark_tool_vs_llm
   - p01_kc_token_optimization_map
-  - component_map_n01
-  - audit_self_review_n01
   - bld_tools_terminal_backend
-  - p11_tools_revision_loop_policy
-  - p05_cg_cex
 ---
 
 # CEXAI Tool Ecosystem Audit (STRESS_TEST)

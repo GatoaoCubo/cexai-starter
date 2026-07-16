@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_domain_vocabulary
   - kind-builder
-  - p03_sp_builder_nucleus
   - domain-vocabulary-builder
-  - bld_context_sources_domain_vocabulary
 ---
 
 # domain-vocabulary-builder Sub-Agent
@@ -90,4 +88,3 @@ Five duties bind any agent that emits an artifact:
 | kind-builder | related | 0.32 |
 | p03_sp_builder_nucleus | related | 0.32 |
 | [[domain-vocabulary-builder]] | related | 0.31 |
-| [[bld_context_sources_domain_vocabulary]] | related | 0.30 |

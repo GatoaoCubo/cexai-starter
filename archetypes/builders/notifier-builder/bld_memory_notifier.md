@@ -19,11 +19,7 @@ density_score: 0.83
 domain: "memory artifact construction"
 title: "Memory Notifier"
 related:
-  - bld_output_template_notifier
-  - bld_collaboration_notifier
-  - bld_instruction_notifier
   - notifier-builder
-  - p11_qg_notifier
 ---
 # Memory: notifier-builder Learnings
 
@@ -81,8 +77,4 @@ implementation detail, and couples spec to language. Code belongs in code-gen ou
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_notifier]] | related | 0.40 |
-| [[bld_collaboration_notifier]] | related | 0.39 |
-| [[bld_instruction_notifier]] | upstream | 0.39 |
 | [[notifier-builder]] | related | 0.38 |
-| [[p11_qg_notifier]] | downstream | 0.37 |

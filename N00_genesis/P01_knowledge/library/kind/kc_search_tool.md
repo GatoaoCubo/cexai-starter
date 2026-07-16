@@ -19,10 +19,6 @@ feeds_kinds: [search_tool]
 density_score: null
 related:
   - search-tool-builder
-  - bld_knowledge_card_search_tool
-  - p11_qg_search_tool
-  - n00_search_tool_manifest
-  - p04_search_tavily
 ---
 
 # Search Tool
@@ -98,6 +94,5 @@ A search_tool queries external search engines (Tavily, Serper, Perplexity, Brave
 |----------|-------------|-------|
 | [[search-tool-builder]] | downstream | 0.47 |
 | [[bld_knowledge_search_tool]] | sibling | 0.45 |
-| [[p11_qg_search_tool]] | downstream | 0.43 |
 | n00_search_tool_manifest | sibling | 0.43 |
 | p04_search_tavily | downstream | 0.39 |

@@ -18,10 +18,6 @@ updated: "2026-04-13"
 keywords: [and eval metrics, gates for finetune_config, validates adapter completeness, hyperparameter coverage, dataset spec, eval metrics, and no credentials]
 density_score: 0.92
 related:
-  - bld_output_template_finetune_config
-  - bld_instruction_finetune_config
-  - p01_kc_finetune_config
-  - p11_qg_quality_gate
   - bld_schema_finetune_config
 ---
 ## Quality Gate

@@ -18,10 +18,7 @@ updated: "2026-07-03"
 keywords: [schema-to-form derivation, field manifest construction, knowledge card field manifest, field_manifest, builder, examples, domain knowledge, executive summary, publish gate, handler registry, related artifacts]
 density_score: 0.88
 related:
-  - bld_instruction_field_manifest
-  - p10_lr_field_manifest_builder
   - field-manifest-builder
-  - p11_qg_field_manifest
   - bld_schema_field_manifest
 ---
 # Domain Knowledge: field_manifest
@@ -86,8 +83,5 @@ integration contract), and type_def (an abstract, unrendered structural type).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_field_manifest]] | downstream | 0.48 |
-| [[p10_lr_field_manifest_builder]] | downstream | 0.42 |
 | [[field-manifest-builder]] | downstream | 0.40 |
-| [[p11_qg_field_manifest]] | downstream | 0.36 |
 | [[bld_schema_field_manifest]] | downstream | 0.34 |

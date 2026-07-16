@@ -15,12 +15,6 @@ tldr: "Ordered context sources for F3 INJECT in saga builds."
 8f: "F3_inject"
 keywords: [context sources, saga builder, inject in saga builds, context_sources, saga, injection order, knowledge card, quality gate, configuration checklist, archetypes builders]
 density_score: null
-related:
-  - bld_context_sources_deployment_manifest
-  - bld_context_sources_lineage_record
-  - bld_context_sources_canary_config
-  - bld_context_sources_slo_definition
-  - bld_context_sources_process_manager
 ---
 # Context Sources: saga Builder
 
@@ -55,12 +49,3 @@ cross_refs_verified: true
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope {BUILDER}
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_context_sources_deployment_manifest]] | sibling | 0.51 |
-| [[bld_context_sources_lineage_record]] | sibling | 0.48 |
-| [[bld_context_sources_canary_config]] | sibling | 0.48 |
-| [[bld_context_sources_slo_definition]] | sibling | 0.47 |
-| [[bld_context_sources_process_manager]] | sibling | 0.39 |

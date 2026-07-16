@@ -20,10 +20,6 @@ tags: [vocabulary, whitepaper, taxonomy, ontology, framework, protocol, CEX, atl
 keywords: [a2a, mcp, langchain, llamaindex, rag, agent taxonomy, prompt engineering, multi-agent protocols, nist ai 100-3, w3c ml schema]
 related:
   - p01_kc_llm_vocabulary_atlas
-  - p01_kc_taxonomy_completeness_audit
-  - p01_kc_chinese_llm_ecosystem
-  - cm_cex_vs_landscape
-  - p01_kc_atom_03_openai_agents_sdk
 ---
 
 # CEX LLM Ecosystem Vocabulary Whitepaper

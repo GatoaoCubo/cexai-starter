@@ -13,9 +13,6 @@ density_score: 0.96
 related:
   - citation-builder
   - bld_schema_citation
-  - n00_citation_manifest
-  - p01_kc_citation
-  - bld_knowledge_card_citation
 ---
 <!-- 8F: F1=citation/P01 F2=citation-builder+kc_citation F3=nucleus_def_n01+citation_format_contract+source_quality_contract+kc_citation F4=structured provenance with reliability scoring
      F5=rg+Get-Content+apply_patch F6=target dense markdown artifact F7=self-check properties+8F+ascii+80lines F8=N01_intelligence/P01_knowledge/kno_citation_n01.md -->

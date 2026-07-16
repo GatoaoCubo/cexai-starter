@@ -19,10 +19,7 @@ keywords: [iso package, quality-gate, agent-package, packaging, portable, bundle
 density_score: 0.93
 related:
   - agent-package-builder
-  - bld_instruction_agent_package
   - bld_schema_agent_package
-  - bld_output_template_agent_package
-  - bld_knowledge_card_agent_package
 ---
 ## Quality Gate
 

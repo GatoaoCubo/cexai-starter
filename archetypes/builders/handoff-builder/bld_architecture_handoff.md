@@ -17,10 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of handoff, and architectural position, handoff construction, architecture handoff, handoff, builder, examples, "{mission}_{sat}.md", component inventory, dependency graph]
 density_score: 0.90
 related:
-  - bld_collaboration_handoff
   - handoff-builder
-  - bld_collaboration_handoff_protocol
-  - p01_kc_handoff
   - handoff-protocol-builder
 ---
 ## Component Inventory
@@ -72,8 +69,5 @@ handoff       --referenced_by--> workflow
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_handoff]] | downstream | 0.51 |
 | [[handoff-builder]] | downstream | 0.46 |
-| [[bld_collaboration_handoff_protocol]] | downstream | 0.42 |
-| [[p01_kc_handoff]] | downstream | 0.42 |
 | [[handoff-protocol-builder]] | upstream | 0.37 |

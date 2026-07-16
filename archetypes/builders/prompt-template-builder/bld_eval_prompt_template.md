@@ -19,12 +19,6 @@ tldr: Quality gate for reusable prompt molds with typed {{variables}}, injection
   and composable structure.
 8f: "F7_govern"
 density_score: 0.85
-related:
-  - p11_qg_quality_gate
-  - p11_qg_response_format
-  - p03_ins_prompt_template
-  - p11_qg_runtime_state
-  - bld_knowledge_card_prompt_template
 ---
 ## Quality Gate
 

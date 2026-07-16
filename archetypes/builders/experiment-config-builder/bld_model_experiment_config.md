@@ -35,10 +35,6 @@ parent: null
 8f: "F1_constrain"
 related:
   - bld_architecture_experiment_config
-  - bld_collaboration_experiment_config
-  - bld_knowledge_card_experiment_config
-  - p01_kc_experiment_config
-  - bld_instruction_experiment_config
 ---
 ## Identity
 
@@ -112,7 +108,3 @@ variables), not a quality_gate (scoring rubric), and not a runtime_rule (timeout
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_experiment_config]] | upstream | 0.61 |
-| [[bld_collaboration_experiment_config]] | downstream | 0.60 |
-| [[bld_knowledge_card_experiment_config]] | upstream | 0.49 |
-| [[p01_kc_experiment_config]] | related | 0.49 |
-| [[bld_instruction_experiment_config]] | upstream | 0.42 |

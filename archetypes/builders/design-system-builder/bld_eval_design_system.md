@@ -16,10 +16,7 @@ tldr: "HARD + SOFT gates for design_system: token completeness, single-signal, c
 density_score: 0.9
 related:
   - bld_schema_design_system
-  - p06_vs_design_system
   - bld_output_design_system
-  - p06_ds_ferro
-  - p01_kc_design_system
 ---
 
 # Gate: design_system

@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_tools_bias_audit
   - bias-audit-builder
-  - p10_lr_bias_audit_builder
-  - bld_output_template_bias_audit
-  - kc_bias_audit
 ---
 ## Phase 1: RESEARCH  
 
@@ -56,6 +53,3 @@ This ISO drives a bias audit: measuring fairness across demographic slices.
 |----------|-------------|-------|
 | [[bld_tools_bias_audit]] | downstream | 0.43 |
 | [[bias-audit-builder]] | downstream | 0.41 |
-| [[p10_lr_bias_audit_builder]] | downstream | 0.38 |
-| [[bld_output_template_bias_audit]] | downstream | 0.38 |
-| [[kc_bias_audit]] | upstream | 0.35 |

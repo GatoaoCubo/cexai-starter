@@ -19,8 +19,6 @@ keywords: [template with, for citation production, citation construction, output
 density_score: 0.90
 related:
   - bld_schema_citation
-  - p01_kc_citation
-  - bld_instruction_citation
   - bld_architecture_citation
   - citation-builder
 ---

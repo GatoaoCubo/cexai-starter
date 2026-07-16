@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [trace config construction, knowledge card trace config, trace_config, builder, examples, cex.pipeline, "cex.8f.{function}"]
 density_score: 0.90
 related:
-  - p10_lr_trace_config_builder
-  - p01_kc_trace_config
-  - n00_trace_config_manifest
   - bld_config_trace_config
-  - p11_qg_trace_config
 ---
 # Domain Knowledge: trace_config
 ## Executive Summary
@@ -96,8 +92,4 @@ Trace configs define the observability contract for agent execution — specifyi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_trace_config_builder]] | downstream | 0.43 |
-| [[p01_kc_trace_config]] | sibling | 0.40 |
-| [[n00_trace_config_manifest]] | sibling | 0.37 |
 | [[bld_config_trace_config]] | downstream | 0.37 |
-| [[p11_qg_trace_config]] | downstream | 0.35 |

@@ -18,11 +18,7 @@ keywords: [embedding, vector, rag, semantic, retrieval, openai, cohere, voyage]
 feeds_kinds: [embedder_provider]
 density_score: null
 related:
-  - p01_emb_openai_text_embedding_3_small
   - embedder-provider-builder
-  - p11_qg_embedder_provider
-  - bld_knowledge_card_embedder_provider
-  - p01_kc_vector_embedding_model_selection
 ---
 
 # Embedder Provider
@@ -76,8 +72,6 @@ An embedder provider config connects CEX's knowledge retrieval system to a speci
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_emb_openai_text_embedding_3_small]] | related | 0.53 |
 | [[embedder-provider-builder]] | downstream | 0.49 |
-| [[p11_qg_embedder_provider]] | downstream | 0.43 |
 | [[bld_knowledge_embedder_provider]] | sibling | 0.43 |
 | p01_kc_vector_embedding_model_selection | sibling | 0.43 |

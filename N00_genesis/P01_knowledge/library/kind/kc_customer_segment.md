@@ -27,11 +27,7 @@ linked_artifacts:
 density_score: 0.88
 data_source: "https://www.sequoiacap.com/article/icp-customer-development/"
 related:
-  - n00_customer_segment_manifest
-  - bld_collaboration_customer_segment
   - customer-segment-builder
-  - p02_ra_segment_researcher.md
-  - bld_instruction_customer_segment
 ---
 
 # Customer Segment: ICP Targeting and Cohort Definition

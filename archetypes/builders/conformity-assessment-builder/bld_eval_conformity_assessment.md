@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [conformity_assessment construction, hard gates, conformity_assessment, builder, quality_gate, quality gate, conformity assessment builder]
 density_score: 0.85
 related:
-  - p11_qg_kind_builder
-  - p11_qg_quality_gate
   - bld_eval_default
-  - bld_quality_gate_agent_grounding_record
-  - p11_fb_quality_gate
 ---
 ## Quality Gate
 # Conformity Assessment Builder -- Quality Gate

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [playground_config construction, output template playground config, playground_config, builder, output_template, example parameters table, parameter name, sample code block, related artifacts, version parameters]
 density_score: 0.85
-related:
-  - bld_output_template_workflow_node
-  - bld_output_template_judge_config
-  - bld_output_template_onboarding_flow
-  - bld_output_template_multimodal_prompt
-  - bld_output_template_reranker_config
 ---
 ```yaml
 ---
@@ -54,12 +48,3 @@ parameters:
   enable_logging: true
   api_key: {{api_key}}  <!-- Replace with actual key -->
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_workflow_node]] | sibling | 0.26 |
-| [[bld_output_template_judge_config]] | sibling | 0.24 |
-| [[bld_output_template_onboarding_flow]] | sibling | 0.23 |
-| [[bld_output_template_multimodal_prompt]] | sibling | 0.20 |
-| [[bld_output_template_reranker_config]] | sibling | 0.20 |

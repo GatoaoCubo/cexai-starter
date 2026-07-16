@@ -22,10 +22,6 @@ atomic: false
 rollback: "Delete produced nudge file. No downstream effects until embedded in an agent session config."
 related:
  - curation-nudge-builder
- - n00_curation_nudge_manifest
- - kc_curation_nudge
- - bld_kc_curation_nudge
- - p11_qg_curation_nudge
 ---
 ## Context
 A `curation_nudge` configures when an AI agent should prompt itself to persist observed
@@ -143,7 +139,3 @@ Deliverable: PASS/FAIL on all HARD gates. Score on SOFT gates.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[curation-nudge-builder]] | related | 0.45 |
-| [[n00_curation_nudge_manifest]] | related | 0.44 |
-| [[kc_curation_nudge]] | upstream | 0.42 |
-| [[bld_kc_curation_nudge]] | upstream | 0.41 |
-| [[p11_qg_curation_nudge]] | related | 0.40 |

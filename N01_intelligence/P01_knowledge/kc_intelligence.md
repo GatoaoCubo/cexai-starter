@@ -25,10 +25,6 @@ linked_artifacts:
 density_score: 0.94
 related:
   - p01_kc_competitive_intelligence_methods
-  - p02_agent_intelligence_n01
-  - p03_sp_intelligence_nucleus
-  - p12_dr_intelligence
-  - n01_intelligence
 ---
 
 ## 1. Core Research Methodologies
@@ -67,4 +63,3 @@ N01 uses a strict hierarchy to weigh the credibility of information sources duri
 | p02_agent_intelligence_n01 | downstream | 0.30 |
 | p03_sp_intelligence_nucleus | downstream | 0.30 |
 | p12_dr_intelligence | downstream | 0.28 |
-| [[n01_intelligence]] | downstream | 0.27 |

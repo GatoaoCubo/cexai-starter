@@ -16,11 +16,8 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - bld_knowledge_card_context_doc
   - bld_schema_context_doc
   - context-doc-builder
-  - p11_qg_context_doc
-  - bld_instruction_context_doc
 ---
 # Output Template: context_doc
 ## Frontmatter (copy and fill all fields)
@@ -77,8 +74,5 @@ Format: artifact_id or URL + one-line description.]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_context_doc]] | upstream | 0.39 |
 | [[bld_schema_context_doc]] | downstream | 0.34 |
 | [[context-doc-builder]] | upstream | 0.34 |
-| [[p11_qg_context_doc]] | downstream | 0.32 |
-| [[bld_instruction_context_doc]] | upstream | 0.31 |

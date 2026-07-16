@@ -20,11 +20,7 @@ keywords: [template with, computer use construction, output template computer us
 origin]
 density_score: 0.90
 related:
-  - p11_qg_computer_use
-  - p04_cu_desktop_agent
-  - bld_knowledge_card_computer_use
   - computer-use-builder
-  - bld_instruction_computer_use
 ---
 # Output Template: computer_use
 
@@ -99,7 +95,6 @@ Resolution: `{{width}}`x`{{height}}` — all coordinates within this space
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_computer_use]] | downstream | 0.48 |
 | p04_cu_desktop_agent | upstream | 0.44 |
 | [[bld_knowledge_computer_use]] | upstream | 0.43 |
 | [[computer-use-builder]] | upstream | 0.40 |

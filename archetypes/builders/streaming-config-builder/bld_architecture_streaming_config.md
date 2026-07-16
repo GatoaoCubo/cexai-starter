@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [and architectural position, streaming config construction, architecture streaming config, component map for streaming_config, protocol layer, flow control, and dependency graph, streaming_config, builder, architecture]
 density_score: 0.90
 related:
-  - bld_collaboration_streaming_config
   - streaming-config-builder
-  - p11_qg_streaming_config
-  - bld_output_template_streaming_config
-  - n00_streaming_config_manifest
 ---
 # Architecture: streaming_config
 
@@ -85,8 +81,4 @@ trace_config (P09) --independent-- streaming_config (observability vs transport 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_streaming_config]] | downstream | 0.57 |
 | [[streaming-config-builder]] | upstream | 0.55 |
-| [[p11_qg_streaming_config]] | downstream | 0.49 |
-| [[bld_output_template_streaming_config]] | upstream | 0.44 |
-| [[n00_streaming_config_manifest]] | upstream | 0.43 |

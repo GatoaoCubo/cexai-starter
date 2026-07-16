@@ -31,11 +31,7 @@ keywords:
   - "filesystem"
 density_score: 0.85
 related:
-  - p03_ins_path_config
   - bld_schema_path_config
-  - bld_output_template_path_config
-  - p01_kc_path_config
-  - bld_knowledge_card_path_config
 ---
 ## Quality Gate
 

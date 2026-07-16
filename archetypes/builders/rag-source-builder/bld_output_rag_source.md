@@ -17,9 +17,7 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - bld_schema_rag_source
-  - n00_rag_source_manifest
   - bld_schema_api_reference
-  - p11_qg_rag_source
   - bld_schema_dataset_card
 ---
 
@@ -83,5 +81,4 @@ Total body (all sections): <= 1024 bytes. Trim Extraction Notes if needed — So
 | [[bld_schema_rag_source]] | downstream | 0.32 |
 | n00_rag_source_manifest | upstream | 0.32 |
 | bld_schema_api_reference | downstream | 0.31 |
-| [[p11_qg_rag_source]] | downstream | 0.30 |
 | [[bld_schema_dataset_card]] | downstream | 0.30 |

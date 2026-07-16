@@ -28,11 +28,8 @@ keywords: [define declarative lifecycle states, instruction, lifecycle-rule, fre
 density_score: 0.89
 llm_function: REASON
 related:
-  - bld_manifest_lifecycle_rule
-  - p11_qg_lifecycle_rule
   - bld_memory_lifecycle_rule
   - bld_schema_lifecycle_rule
-  - bld_knowledge_card_lifecycle_rule
 ---
 ## Context
 The lifecycle-rule-builder produces `lifecycle_rule` artifacts (P11) — declarative governance rules that define how artifacts of a given kind move through states (creation, review, promotion, deprecation, sunset). Lifecycle rules differ from hooks (executable triggers), runtime rules (behavior at execution time), and quality gates (scoring thresholds): a lifecycle rule defines when artifact state changes and who decides, not how the system executes.
@@ -104,8 +101,6 @@ Score SOFT gates from `QUALITY_GATES.md`. If soft score < 8.0, revise in the sam
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_lifecycle_rule]] | related | 0.45 |
-| [[p11_qg_lifecycle_rule]] | downstream | 0.40 |
 | [[bld_memory_lifecycle_rule]] | downstream | 0.40 |
 | [[bld_schema_lifecycle_rule]] | downstream | 0.38 |
 | [[bld_knowledge_lifecycle_rule]] | downstream | 0.38 |

@@ -40,11 +40,7 @@ hooks:
 permission_scope: nucleus
 llm_function: CONSTRAIN
 related:
-  - p04_ex_software_project_api_service
   - bld_tools_prompt_cache
-  - tpl_validation_schema
-  - bld_sp_instruction_software_project
-  - bld_collaboration_prompt_cache
 ---
 # Config
 
@@ -119,8 +115,4 @@ APP_WORKERS=4
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p04_ex_software_project_api_service]] | upstream | 0.20 |
 | [[bld_tools_prompt_cache]] | upstream | 0.20 |
-| [[tpl_validation_schema]] | upstream | 0.20 |
-| [[bld_sp_instruction_software_project]] | upstream | 0.19 |
-| [[bld_collaboration_prompt_cache]] | downstream | 0.18 |

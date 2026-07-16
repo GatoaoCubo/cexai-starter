@@ -18,10 +18,7 @@ domain: "output_template artifact construction"
 title: "Output Template Retriever"
 related:
   - retriever-builder
-  - bld_instruction_retriever
   - bld_schema_retriever
-  - p04_retr_pinecone
-  - p11_qg_retriever
 ---
 # Output Template: retriever
 
@@ -107,4 +104,3 @@ If reranker: name the model, when it fires (after first-pass top_k), what it opt
 | [[bld_prompt_retriever]] | upstream | 0.42 |
 | [[bld_schema_retriever]] | downstream | 0.40 |
 | p04_retr_pinecone | upstream | 0.37 |
-| [[p11_qg_retriever]] | downstream | 0.36 |

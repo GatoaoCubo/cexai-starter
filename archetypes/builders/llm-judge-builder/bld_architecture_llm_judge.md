@@ -18,10 +18,6 @@ keywords: [component map of llm_judge, and architectural position, llm judge con
 density_score: 0.90
 related:
   - llm-judge-builder
-  - bld_collaboration_llm_judge
-  - p01_kc_llm_judge
-  - p11_qg_llm_judge
-  - bld_instruction_llm_judge
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -81,5 +77,4 @@ framework        --executes-->  judge_model
 | [[llm-judge-builder]] | upstream | 0.67 |
 | [[bld_orchestration_llm_judge]] | downstream | 0.60 |
 | [[kc_llm_judge]] | upstream | 0.51 |
-| [[p11_qg_llm_judge]] | downstream | 0.49 |
 | [[bld_prompt_llm_judge]] | upstream | 0.46 |

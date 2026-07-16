@@ -4,9 +4,7 @@ description: "Builds ONE retriever artifact via 8F pipeline. Loads retriever-bui
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
   - retriever-builder
 ---

@@ -16,12 +16,6 @@ updated: "2026-07-05"
 8f: "F6_produce"
 keywords: [rag, embedding_config, rag_source configs, competitor intel, benchmarks, analytical envy, domain-specific content]
 density_score: 0.90
-related:
-  - p02_agent_intelligence_n01
-  - p12_dr_intelligence
-  - p03_sp_intelligence_nucleus
-  - n01_dr_research_pipeline
-  - component_map_n01
 ---
 
 # N01 Intelligence Rules

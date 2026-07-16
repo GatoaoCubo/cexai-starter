@@ -19,11 +19,7 @@ this, crew role
 acting, precision optimizer]
 density_score: 0.85
 related:
-  - bld_collaboration_quantization_config
-  - p10_lr_quantization_config_builder
-  - bld_knowledge_card_quantization_config
   - bld_tools_quantization_config
-  - kc_quantization_config
 ---
 ## Identity
 ## Identity
@@ -62,8 +58,4 @@ The quantization_config-builder is a specialized technical agent responsible for
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_quantization_config]] | downstream | 0.57 |
-| [[p10_lr_quantization_config_builder]] | downstream | 0.55 |
-| [[bld_knowledge_card_quantization_config]] | upstream | 0.49 |
 | [[bld_tools_quantization_config]] | upstream | 0.49 |
-| [[kc_quantization_config]] | upstream | 0.46 |

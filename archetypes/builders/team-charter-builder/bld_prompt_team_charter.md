@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_schema_team_charter
   - team-charter-builder
-  - p12_qg_team_charter
-  - bld_knowledge_card_team_charter
-  - bld_output_template_team_charter
 ---
 ## Phase 1: RESEARCH
 1. Read the GDP decision manifest at `.cex/runtime/decisions/decision_manifest.yaml` to extract user's WHAT decisions.
@@ -61,6 +58,4 @@ related:
 |----------|-------------|-------|
 | [[bld_schema_team_charter]] | downstream | 0.45 |
 | [[team-charter-builder]] | downstream | 0.40 |
-| [[p12_qg_team_charter]] | downstream | 0.36 |
 | [[bld_knowledge_team_charter]] | upstream | 0.35 |
-| [[bld_output_template_team_charter]] | downstream | 0.34 |

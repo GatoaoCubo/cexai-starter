@@ -17,9 +17,7 @@ updated: "2026-04-14"
 keywords: [limits for llm_evaluation_scenario production, llm_evaluation_scenario construction, config llm evaluation scenario, llm_evaluation_scenario, builder, config, helm, "p07_evs_{{subject_area}}_{{capability_slug}}.md", p07_evs_medical_clinical_mcq.md, p07_evs_legal_contract_reasoning.md]
 density_score: 0.85
 related:
-  - bld_output_template_llm_evaluation_scenario
   - bld_schema_llm_evaluation_scenario
-  - p07_qg_llm_evaluation_scenario
   - bld_config_fhir_agent_capability
   - bld_config_model_registry
 ---
@@ -58,8 +56,6 @@ created: {{date}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_llm_evaluation_scenario]] | upstream | 0.45 |
 | [[bld_schema_llm_evaluation_scenario]] | upstream | 0.33 |
-| [[p07_qg_llm_evaluation_scenario]] | downstream | 0.32 |
 | [[bld_config_fhir_agent_capability]] | sibling | 0.30 |
 | [[bld_config_model_registry]] | sibling | 0.29 |

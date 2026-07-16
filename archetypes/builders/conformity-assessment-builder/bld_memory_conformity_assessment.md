@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [learned patterns, conformity_assessment construction, common rms gaps, and high-scoring patterns, conformity_assessment, builder, memory]
 density_score: 0.85
-related:
-  - bld_instruction_conformity_assessment
-  - bld_knowledge_card_conformity_assessment
-  - bld_collaboration_conformity_assessment
-  - bld_manifest_conformity_assessment
-  - kc_conformity_assessment
 ---
 # Conformity Assessment Builder -- Memory
 ## Learning Record Type
@@ -111,12 +105,3 @@ Injected at F3 INJECT to inform F4 REASON and F6 PRODUCE.
 | [AUG-2026-DEADLINE] on all 6 mandatory items | +0.3 D05 auditability | Deadline compliance |
 
 ---
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_conformity_assessment]] | upstream | 0.40 |
-| [[bld_knowledge_card_conformity_assessment]] | upstream | 0.37 |
-| [[bld_collaboration_conformity_assessment]] | downstream | 0.37 |
-| [[bld_manifest_conformity_assessment]] | downstream | 0.33 |
-| [[kc_conformity_assessment]] | upstream | 0.28 |

@@ -20,9 +20,6 @@ trigger, related artifacts]
 density_score: 0.85
 related:
   - expansion-play-builder
-  - bld_instruction_expansion_play
-  - bld_knowledge_card_expansion_play
-  - p03_qg_expansion_play
   - bld_tools_expansion_play
 ---
 ## Observation
@@ -47,7 +44,4 @@ Trigger specificity is the single highest-leverage quality dimension. A play wit
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[expansion-play-builder]] | upstream | 0.47 |
-| [[bld_instruction_expansion_play]] | upstream | 0.44 |
-| [[bld_knowledge_card_expansion_play]] | upstream | 0.39 |
-| [[p03_qg_expansion_play]] | downstream | 0.37 |
 | [[bld_tools_expansion_play]] | upstream | 0.34 |

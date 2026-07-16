@@ -18,10 +18,7 @@ keywords: [component map of pattern, and architectural position, pattern constru
 density_score: 0.90
 related:
   - pattern-builder
-  - bld_collaboration_pattern
-  - p01_kc_pattern
   - bld_memory_pattern
-  - bld_knowledge_card_pattern
 ---
 # Architecture: pattern in the CEX
 ## Component Inventory

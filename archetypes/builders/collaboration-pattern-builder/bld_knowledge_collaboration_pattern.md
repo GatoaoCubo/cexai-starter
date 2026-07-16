@@ -20,9 +20,6 @@ density_score: 0.85
 related:
   - collaboration-pattern-builder
   - bld_memory_collaboration_pattern
-  - p01_kc_multi_agent_orchestration_patterns
-  - kc_n07_orchestrator
-  - kc_collaboration_pattern
 ---
 ## Domain Overview  
 Collaboration_pattern artifacts define how autonomous agents interact to achieve shared goals in decentralized systems. These patterns are critical in robotics, autonomous vehicles, and distributed AI, where agents must dynamically negotiate roles, share information, and resolve conflicts without centralized control. Unlike workflows, which enforce rigid execution sequences, collaboration patterns emphasize emergent coordination through rules, protocols, and adaptive behaviors. They underpin systems like swarm robotics, multi-robot task allocation, and decentralized decision-making in IoT networks.  
@@ -84,6 +81,3 @@ Key challenges include ensuring scalability, fault tolerance, and real-time resp
 |----------|-------------|-------|
 | [[collaboration-pattern-builder]] | downstream | 0.44 |
 | [[bld_memory_collaboration_pattern]] | downstream | 0.43 |
-| [[p01_kc_multi_agent_orchestration_patterns]] | sibling | 0.39 |
-| [[kc_n07_orchestrator]] | sibling | 0.35 |
-| [[kc_collaboration_pattern]] | sibling | 0.34 |

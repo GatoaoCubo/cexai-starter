@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - runtime-state-builder
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p03_sp_builder_nucleus
   - bld_memory_runtime_state
 ---
 

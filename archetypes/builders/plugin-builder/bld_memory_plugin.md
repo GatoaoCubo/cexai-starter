@@ -24,10 +24,7 @@ for, isolation level]
 density_score: 0.90
 related:
   - plugin-builder
-  - bld_collaboration_plugin
   - bld_architecture_plugin
-  - p01_kc_plugin
-  - bld_knowledge_card_plugin
 ---
 # Memory: plugin-builder
 
@@ -88,7 +85,4 @@ python _tools/cex_score.py --apply bld-memory-plugin.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[plugin-builder]] | upstream | 0.62 |
-| [[bld_collaboration_plugin]] | upstream | 0.56 |
 | [[bld_architecture_plugin]] | upstream | 0.55 |
-| [[p01_kc_plugin]] | upstream | 0.49 |
-| [[bld_knowledge_card_plugin]] | upstream | 0.46 |

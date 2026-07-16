@@ -22,11 +22,6 @@ axioms:
 linked_artifacts:
   primary: n06_output_brand_book
   related: [p03_constraint_brand_book_n06, p03_pt_brand_book_generator, p01_kc_brand_archetypes, p01_kc_brand_voice_systems]
-related:
-  - p03_sp_brand_nucleus
-  - p02_agent_commercial_nucleus
-  - p01_kc_brand_best_practices
-  - p01_kc_brand_tokens_pipeline
 ---
 
 # Brand Book Patterns — Universal Frameworks

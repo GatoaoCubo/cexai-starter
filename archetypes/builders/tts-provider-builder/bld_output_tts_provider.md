@@ -30,11 +30,7 @@ keywords:
   - "| | languages |"
 density_score: 0.88
 related:
-  - bld_knowledge_card_tts_provider
   - tts-provider-builder
-  - bld_collaboration_model_provider
-  - p04_qg_tts_provider
-  - p09_qg_prosody_config
 ---
 ```yaml
 ---
@@ -169,8 +165,4 @@ fallback:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_tts_provider]] | upstream | 0.40 |
 | [[tts-provider-builder]] | upstream | 0.39 |
-| [[bld_collaboration_model_provider]] | upstream | 0.35 |
-| [[p04_qg_tts_provider]] | downstream | 0.32 |
-| [[p09_qg_prosody_config]] | downstream | 0.32 |

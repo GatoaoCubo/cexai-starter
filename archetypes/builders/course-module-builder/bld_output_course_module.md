@@ -18,9 +18,6 @@ keywords: [course_module construction, output template course module, course_mod
 density_score: 0.85
 related:
   - bld_config_course_module
-  - n00_course_module_manifest
-  - p01_kc_course_module
-  - bld_output_template_sales_playbook
   - bld_tools_course_module
 ---
 ```markdown

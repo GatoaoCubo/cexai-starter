@@ -18,12 +18,6 @@ keywords: [builder identity, routing for code_of_conduct, code_of_conduct constr
 specializes, contributor covenant, produces contributor covenant, routing
 keywords]
 density_score: 0.87
-related:
-  - bld_knowledge_card_code_of_conduct
-  - bld_instruction_code_of_conduct
-  - p05_qg_code_of_conduct
-  - n00_code_of_conduct_manifest
-  - p10_mem_code_of_conduct_builder
 ---
 ## Identity
 
@@ -69,12 +63,3 @@ ALWAYS include a reporting mechanism with confidentiality assurance.
 ALWAYS attribute to Contributor Covenant v2.1 or equivalent source.
 NEVER include legal liability language without legal review disclaimer.
 NEVER produce conduct documents that single out specific individuals or protected classes as examples.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_code_of_conduct]] | upstream | 0.59 |
-| [[bld_instruction_code_of_conduct]] | upstream | 0.51 |
-| [[p05_qg_code_of_conduct]] | downstream | 0.51 |
-| [[n00_code_of_conduct_manifest]] | related | 0.50 |
-| [[p10_mem_code_of_conduct_builder]] | downstream | 0.49 |

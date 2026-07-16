@@ -18,9 +18,7 @@ updated: "2026-07-03"
 keywords: [reverse prompt construction, collaboration reverse prompt, reverse_prompt, builder, examples, crew compositions, my role, handoff protocol, calibration pilot]
 density_score: 0.90
 related:
-  - bld_collaboration_prompt_template
   - reverse-prompt-builder
-  - p03_ins_reverse_prompt
   - bld_memory_reverse_prompt
   - bld_eval_reverse_prompt
 ---
@@ -67,8 +65,6 @@ I am a NARROW documentarian / repair specialist. I answer: "what does a hand-aut
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_template]] | sibling | 0.41 |
 | [[reverse-prompt-builder]] | related | 0.39 |
-| [[p03_ins_reverse_prompt]] | sibling | 0.39 |
 | [[bld_memory_reverse_prompt]] | sibling | 0.37 |
 | [[bld_eval_reverse_prompt]] | sibling | 0.36 |

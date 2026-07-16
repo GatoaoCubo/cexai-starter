@@ -19,10 +19,6 @@ keywords: [and architectural position, drift detector construction, architecture
 density_score: 0.90
 related:
   - drift-detector-builder
-  - p11_qg_drift_detector
-  - bld_instruction_drift_detector
-  - bld_collaboration_drift_detector
-  - p01_kc_drift_detector
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -73,7 +69,3 @@ drift_detector          --feeds-->     alerting system
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[drift-detector-builder]] | downstream | 0.54 |
-| [[p11_qg_drift_detector]] | downstream | 0.48 |
-| [[bld_instruction_drift_detector]] | upstream | 0.47 |
-| [[bld_collaboration_drift_detector]] | downstream | 0.43 |
-| [[p01_kc_drift_detector]] | downstream | 0.39 |

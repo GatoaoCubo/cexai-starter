@@ -30,11 +30,7 @@ keywords:
   - "related artifacts"
 density_score: 0.90
 related:
-  - p04_cli_research_pipeline_n01
-  - bld_instruction_research_pipeline
   - research-pipeline-builder
-  - bld_collaboration_research_pipeline
-  - p02_agent_research_pipeline_intelligence
 ---
 # Architecture: research_pipeline in the CEX
 

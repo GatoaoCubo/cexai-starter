@@ -20,11 +20,7 @@ target_kind: curation_nudge
 delivery_threshold: 0.85
 bypass_policy: owner
 related:
- - p11_ins_curation_nudge
- - n00_curation_nudge_manifest
  - curation-nudge-builder
- - p11_schema_curation_nudge
- - kc_curation_nudge
 ---
 ## Quality Gate
 

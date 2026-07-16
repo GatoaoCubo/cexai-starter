@@ -18,10 +18,6 @@ keywords: [referral_program construction, quality gate referral program, referra
 density_score: 0.85
 related:
   - referral-program-builder
-  - bld_instruction_referral_program
-  - n00_referral_program_manifest
-  - bld_knowledge_card_referral_program
-  - kc_referral_program
 ---
 ## Quality Gate
 

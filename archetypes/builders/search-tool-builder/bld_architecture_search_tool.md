@@ -18,9 +18,6 @@ keywords: [component map of search_tool, and architectural position, search tool
 density_score: 0.90
 related:
   - search-tool-builder
-  - n00_search_tool_manifest
-  - p11_qg_search_tool
-  - bld_collaboration_search_tool
   - bld_architecture_retriever
 ---
 # Architecture: search_tool
@@ -97,6 +94,5 @@ function_def --wraps-->     search_tool (as callable)
 |----------|-------------|-------|
 | [[search-tool-builder]] | upstream | 0.73 |
 | n00_search_tool_manifest | upstream | 0.53 |
-| [[p11_qg_search_tool]] | downstream | 0.52 |
 | [[bld_orchestration_search_tool]] | downstream | 0.48 |
 | [[bld_architecture_retriever]] | sibling | 0.46 |

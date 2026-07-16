@@ -16,10 +16,6 @@ density_score: 1.0
 title: Architecture ISO - webhook
 related:
   - webhook-builder
-  - p01_kc_webhook
-  - bld_knowledge_card_webhook
-  - bld_collaboration_webhook
-  - n00_webhook_manifest
 ---
 # Architecture: webhook
 
@@ -93,7 +89,3 @@ OUTBOUND FLOW:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[webhook-builder]] | related | 0.55 |
-| [[p01_kc_webhook]] | upstream | 0.52 |
-| [[bld_knowledge_card_webhook]] | downstream | 0.51 |
-| [[bld_collaboration_webhook]] | related | 0.50 |
-| [[n00_webhook_manifest]] | related | 0.43 |

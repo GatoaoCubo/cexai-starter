@@ -23,7 +23,6 @@ related:
   - p01_kc_competitor_autogen
   - p01_kc_competitor_llamaindex
   - p01_kc_competitive_intelligence_methods
-  - cm_cex_vs_landscape
 ---
 
 # Competitive Synthesis: 6 Agent Frameworks vs CEXAI

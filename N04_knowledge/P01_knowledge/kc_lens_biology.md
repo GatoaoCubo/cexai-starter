@@ -20,9 +20,6 @@ density_score: null
 related:
   - kc_lens_index
   - p01_kc_concept_graph
-  - p01_kc_pillar_brief_p12_orchestration_en
-  - vocabulary_cex_rosetta
-  - p06_td_cex_artifact_type_n03
 ---
 
 # Lens: Biology

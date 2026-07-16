@@ -29,12 +29,6 @@ keywords:
   - ".claude/rules/composable-crew.md"
   - "operations rules"
 density_score: 0.90
-related:
-  - n04_knowledge
-  - n01_intelligence
-  - n02_marketing
-  - n06_commercial
-  - build
 ---
 
 # N05 Operations Rules
@@ -108,12 +102,3 @@ and semantic (40%). All artifacts target quality >= 9.0.
 | Structural | 30% | Automated count-based checks |
 | Rubric | 30% | Quality gate dimension scoring |
 | Semantic | 40% | LLM evaluation (when L1+L2 >= 8.5) |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[n04_knowledge]] | sibling | 0.60 |
-| [[n01_intelligence]] | sibling | 0.58 |
-| [[n02_marketing]] | sibling | 0.56 |
-| [[n06_commercial]] | sibling | 0.53 |
-| [[build]] | sibling | 0.36 |

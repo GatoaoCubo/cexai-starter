@@ -18,11 +18,7 @@ keywords: [diff_strategy construction, collaboration diff strategy, diff_strateg
 determines, receives from, normalized data, structural metadata, matching constraints]
 density_score: 0.85
 related:
-  - bld_collaboration_parser
-  - bld_collaboration_search_strategy
-  - bld_collaboration_self_improvement_loop
   - bld_architecture_parser
-  - bld_collaboration_action_paradigm
 ---
 ## Crew Role
 Determines the optimal algorithmic approach for identifying
@@ -50,8 +46,4 @@ nor define the final output syntax or serialization
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_parser]] | sibling | 0.29 |
-| [[bld_collaboration_search_strategy]] | sibling | 0.25 |
-| [[bld_collaboration_self_improvement_loop]] | sibling | 0.25 |
 | [[bld_architecture_parser]] | upstream | 0.24 |
-| [[bld_collaboration_action_paradigm]] | sibling | 0.24 |

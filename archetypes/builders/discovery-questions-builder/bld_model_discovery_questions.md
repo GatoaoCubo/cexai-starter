@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_instruction_discovery_questions
-  - bld_knowledge_card_discovery_questions
-  - p10_mem_discovery_questions_builder
   - sales-playbook-builder
-  - p01_qg_discovery_questions
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER USE GENERIC OR NON-STRUCTURED QUESTION FORMATS.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_discovery_questions]] | downstream | 0.60 |
-| [[bld_knowledge_card_discovery_questions]] | related | 0.55 |
-| [[p10_mem_discovery_questions_builder]] | downstream | 0.55 |
 | [[sales-playbook-builder]] | sibling | 0.50 |
-| [[p01_qg_discovery_questions]] | downstream | 0.50 |

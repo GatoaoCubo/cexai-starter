@@ -28,12 +28,6 @@ cross_provider:
   openai: "File search chunk / knowledge base"
   anthropic: "Context window injection"
   haystack: "Document dataclass"
-related:
-  - p01_kc_pillar_brief_p01_knowledge_en
-  - p01_kc_context_doc
-  - bld_collaboration_knowledge_card
-  - n00_knowledge_card_manifest
-  - p06_td_cex_artifact_type_n03
 ---
 
 # Knowledge Card

@@ -35,9 +35,7 @@ domain_agents:
 fallback_cli: codex
 related:
   - agent_card_n05
-  - n07-orchestrator
   - kc_nucleus_def
-  - p02_boot_n05
 tags:
   - nucleus_def
   - n05

@@ -18,8 +18,6 @@ keywords: [kubernetes_ai_requirement construction, instruction kubernetes ai req
 density_score: 0.85
 related:
   - kubernetes-ai-requirement-builder
-  - bld_knowledge_card_kubernetes_ai_requirement
-  - p09_qg_kubernetes_ai_requirement
   - bld_tools_kubernetes_ai_requirement
   - bld_schema_kubernetes_ai_requirement
 ---
@@ -56,7 +54,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kubernetes-ai-requirement-builder]] | downstream | 0.63 |
-| [[bld_knowledge_card_kubernetes_ai_requirement]] | upstream | 0.58 |
-| [[p09_qg_kubernetes_ai_requirement]] | downstream | 0.55 |
 | [[bld_tools_kubernetes_ai_requirement]] | downstream | 0.51 |
 | [[bld_schema_kubernetes_ai_requirement]] | downstream | 0.50 |

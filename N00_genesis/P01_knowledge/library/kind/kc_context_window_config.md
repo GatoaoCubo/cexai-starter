@@ -19,10 +19,6 @@ feeds_kinds: [context_window_config]
 density_score: null
 related:
   - context-window-config-builder
-  - bld_knowledge_card_context_window_config
-  - bld_collaboration_context_window_config
-  - bld_output_template_context_window_config
-  - p11_qg_context_window_config
 ---
 
 # Context Window Config
@@ -106,5 +102,3 @@ model_card, system_prompt --> [context_window_config] --> prompt_template, agent
 | [[context-window-config-builder]] | related | 0.53 |
 | [[bld_knowledge_context_window_config]] | sibling | 0.52 |
 | [[bld_orchestration_context_window_config]] | downstream | 0.38 |
-| [[bld_output_template_context_window_config]] | downstream | 0.37 |
-| [[p11_qg_context_window_config]] | downstream | 0.34 |

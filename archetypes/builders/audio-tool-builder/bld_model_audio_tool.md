@@ -33,10 +33,6 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_instruction_audio_tool
-  - bld_collaboration_audio_tool
-  - p10_lr_audio_tool_builder
-  - bld_knowledge_card_audio_tool
   - bld_architecture_audio_tool
 ---
 ## Identity
@@ -140,8 +136,4 @@ languages: [en, pt-BR]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_audio_tool]] | upstream | 0.67 |
-| [[bld_collaboration_audio_tool]] | downstream | 0.65 |
-| [[p10_lr_audio_tool_builder]] | downstream | 0.62 |
-| [[bld_knowledge_card_audio_tool]] | upstream | 0.60 |
 | [[bld_architecture_audio_tool]] | downstream | 0.58 |

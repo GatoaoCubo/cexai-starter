@@ -17,10 +17,7 @@ tldr: "Domain knowledge for lineage_record: PROV-O vocabulary, derivation types,
 keywords: [knowledge card, domain knowledge for lineage_record, prov-o vocabulary, derivation types, and curation activities, knowledge_card, lineage_record, ingestion, synthesis, distillation]
 density_score: null
 related:
-  - kc_lineage_record
-  - bld_instruction_lineage_record
   - bld_memory_lineage_record
-  - bld_manifest_lineage_record
   - bld_architecture_lineage_record
 ---
 # Knowledge Card: lineage_record
@@ -82,8 +79,5 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_lineage_record]] | sibling | 0.46 |
-| [[bld_instruction_lineage_record]] | related | 0.39 |
 | [[bld_memory_lineage_record]] | sibling | 0.34 |
-| [[bld_manifest_lineage_record]] | related | 0.33 |
 | [[bld_architecture_lineage_record]] | sibling | 0.32 |

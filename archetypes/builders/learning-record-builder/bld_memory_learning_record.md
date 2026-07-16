@@ -23,11 +23,8 @@ records, reproducibility
 reliable, learning records]
 density_score: 0.90
 related:
-  - bld_knowledge_card_learning_record
   - learning-record-builder
-  - bld_collaboration_learning_record
   - skill_memory_update
-  - p03_ins_learning_record
 ---
 # Memory: learning-record-builder
 ## Summary
@@ -90,4 +87,3 @@ python _tools/cex_score.py --apply bld-memory-learning-record.md
 | [[learning-record-builder]] | related | 0.39 |
 | [[bld_orchestration_learning_record]] | related | 0.35 |
 | [[skill_memory_update]] | related | 0.33 |
-| [[p03_ins_learning_record]] | upstream | 0.33 |

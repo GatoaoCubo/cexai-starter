@@ -29,10 +29,6 @@ parent: null
 8f: "F1_constrain"
 related:
   - bld_architecture_effort_profile
-  - bld_collaboration_effort_profile
-  - p11_qg_effort_profile
-  - p10_lr_effort_profile_builder
-  - bld_instruction_effort_profile
 ---
 ## Identity
 
@@ -129,7 +125,3 @@ quality_target: 9.0
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_effort_profile]] | upstream | 0.53 |
-| [[bld_collaboration_effort_profile]] | downstream | 0.53 |
-| [[p11_qg_effort_profile]] | downstream | 0.52 |
-| [[p10_lr_effort_profile_builder]] | downstream | 0.51 |
-| [[bld_instruction_effort_profile]] | upstream | 0.50 |

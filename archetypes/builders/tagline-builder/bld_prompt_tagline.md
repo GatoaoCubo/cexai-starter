@@ -19,7 +19,6 @@ llm_function: REASON
 related:
   - tagline-builder
   - bld_architecture_tagline
-  - bld_output_template_tagline
   - bld_tools_tagline
   - bld_memory_tagline
 ---
@@ -79,6 +78,5 @@ python _tools/cex_skill_loader.py --verify tagline
 |----------|-------------|-------|
 | [[tagline-builder]] | related | 0.47 |
 | [[bld_architecture_tagline]] | downstream | 0.40 |
-| [[bld_output_template_tagline]] | downstream | 0.39 |
 | [[bld_tools_tagline]] | downstream | 0.39 |
 | [[bld_memory_tagline]] | downstream | 0.38 |

@@ -32,11 +32,8 @@ keywords:
   - "p02_tm_[a-z][a-z0-9_]+"
 density_score: 0.90
 related:
-  - bld_instruction_finetune_config
   - training-method-builder
-  - p02_qg_training_method
   - bld_schema_training_method
-  - bld_instruction_retriever_config
 ---
 # Instructions: How to Produce a training_method
 ## Phase 1: RESEARCH
@@ -78,8 +75,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_finetune_config]] | sibling | 0.48 |
 | [[training-method-builder]] | upstream | 0.44 |
-| [[p02_qg_training_method]] | downstream | 0.40 |
 | [[bld_schema_training_method]] | downstream | 0.39 |
-| [[bld_instruction_retriever_config]] | sibling | 0.37 |

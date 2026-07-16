@@ -18,12 +18,6 @@ keywords: [agent_computer_interface construction, collaboration agent computer i
 architects, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
-related:
-  - bld_collaboration_agent
-  - bld_collaboration_computer_use
-  - bld_collaboration_capability_registry
-  - bld_collaboration_agent_profile
-  - bld_collaboration_browser_tool
 ---
 ## Crew Role
 Architects the structured communication protocol and schema that enables an agent to interact with
@@ -48,12 +42,3 @@ architecture layer; consumed at F2 BECOME by downstream builder agents.
 Does NOT perform web automation or DOM scraping (handled by browser-tool-builder).
 Does NOT perform visual/pixel-based screen control (handled by computer-use-builder).
 Does NOT define agent identity or persona (handled by agent-builder).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_agent]] | sibling | 0.31 |
-| [[bld_collaboration_computer_use]] | sibling | 0.30 |
-| [[bld_collaboration_capability_registry]] | sibling | 0.29 |
-| [[bld_collaboration_agent_profile]] | sibling | 0.27 |
-| [[bld_collaboration_browser_tool]] | sibling | 0.26 |

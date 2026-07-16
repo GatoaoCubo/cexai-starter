@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - llm-evaluation-scenario-builder
   - bld_schema_llm_evaluation_scenario
-  - bld_instruction_llm_evaluation_scenario
-  - bld_output_template_llm_evaluation_scenario
-  - bld_knowledge_card_llm_evaluation_scenario
 ---
 ## Quality Gate
 

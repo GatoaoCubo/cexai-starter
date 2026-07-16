@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [api_reference construction, learning record api reference, api_reference, builder, learning_record, project-x, service-y, description, curl, http]
 density_score: 0.85
 related:
-  - bld_instruction_api_reference
   - api-reference-builder
-  - p06_qg_api_reference
-  - kc_api_reference
-  - bld_output_template_api_reference
 ---
 ## Observation
 Common issues include inconsistent parameter formatting, missing authentication details, and incomplete example responses that don't match real-world scenarios.
@@ -42,8 +38,4 @@ Reviewed artifacts from `project-x` and `service-y` showed 30% fewer user querie
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_api_reference]] | upstream | 0.32 |
 | [[api-reference-builder]] | upstream | 0.30 |
-| [[p06_qg_api_reference]] | downstream | 0.27 |
-| [[kc_api_reference]] | upstream | 0.26 |
-| [[bld_output_template_api_reference]] | upstream | 0.23 |

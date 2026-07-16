@@ -18,11 +18,7 @@ python _tools/cex_score.py --apply n0*/*.md, quality gate, landing page builder,
 density_score: 0.90
 llm_function: GOVERN
 related:
-  - p10_hos_html_output_visual_frontend
   - landing-page-builder
-  - landing_page_pet-shop-crm
-  - bld_instruction_landing_page
-  - landing_page_petshop_crm
 ---
 ## Quality Gate
 

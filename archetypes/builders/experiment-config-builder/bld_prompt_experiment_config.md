@@ -31,12 +31,6 @@ keywords:
   - "^p09_ec_[a-z][a-z0-9_]+$"
   - "quality"
 density_score: 0.90
-related:
-  - bld_instruction_feature_flag
-  - bld_instruction_context_doc
-  - bld_instruction_env_config
-  - bld_instruction_retriever_config
-  - bld_instruction_memory_scope
 ---
 # Instructions: How to Produce an experiment_config
 ## Phase 1: RESEARCH
@@ -74,12 +68,3 @@ related:
 11. Cross-check: is this a temporary controlled trial? If this is a permanent on/off toggle it belongs in `feature_flag`.
     If these are deployment variables they belong in `env_config`. If this is a scoring rubric it belongs in `quality_gate`.
 12. If score < 8.0: revise in the same pass before outputting
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_feature_flag]] | sibling | 0.41 |
-| [[bld_instruction_context_doc]] | sibling | 0.41 |
-| [[bld_instruction_env_config]] | sibling | 0.40 |
-| [[bld_instruction_retriever_config]] | sibling | 0.39 |
-| [[bld_instruction_memory_scope]] | sibling | 0.39 |

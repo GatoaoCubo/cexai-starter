@@ -20,11 +20,7 @@ successful, evidence
 reviewed, related artifacts, algorithm logic]
 density_score: 0.85
 related:
-  - bld_collaboration_rl_algorithm
   - rl-algorithm-builder
-  - bld_output_template_rl_algorithm
-  - p02_qg_rl_algorithm
-  - bld_instruction_rl_algorithm
 ---
 ## Observation
 Common issues include conflating algorithm logic with training infrastructure, leading to ambiguous definitions. Inconsistent state-action space formalization often causes misalignment between algorithm steps and environment interactions.
@@ -45,8 +41,4 @@ Reviewed artifacts using modular pseudocode (e.g., SAC, PPO) showed 30% faster i
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_rl_algorithm]] | downstream | 0.31 |
 | [[rl-algorithm-builder]] | upstream | 0.30 |
-| [[bld_output_template_rl_algorithm]] | upstream | 0.29 |
-| [[p02_qg_rl_algorithm]] | downstream | 0.28 |
-| [[bld_instruction_rl_algorithm]] | upstream | 0.27 |

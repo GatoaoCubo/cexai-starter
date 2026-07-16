@@ -28,10 +28,7 @@ updated: "2026-07-03"
 keywords: [naming conventions, file paths, size limits, content factory construction, config content factory, content_factory, builder, content-fabric, "p04_content_factory_{{name}}.md", hashtag caps, requires_external_context]
 density_score: 0.90
 related:
-  - bld_config_social_publisher
-  - bld_config_content_library
   - bld_config_kind
-  - p01_kc_content_factory
   - bld_schema_content_factory
 ---
 # Config: content_factory Production Rules
@@ -90,8 +87,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_config_social_publisher]] | sibling | 0.38 |
-| [[bld_config_content_library]] | sibling | 0.30 |
 | [[bld_config_kind]] | sibling | 0.28 |
-| [[p01_kc_content_factory]] | upstream | 0.27 |
 | [[bld_schema_content_factory]] | downstream | 0.25 |

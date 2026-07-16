@@ -20,9 +20,6 @@ brain, spec table, reciprocal rank fusion]
 density_score: 0.90
 related:
   - knowledge-index-builder
-  - p01_kc_knowledge_index
-  - p04_plug_brain_search
-  - bld_collaboration_knowledge_index
 ---
 # Domain Knowledge: knowledge_index
 ## Executive Summary

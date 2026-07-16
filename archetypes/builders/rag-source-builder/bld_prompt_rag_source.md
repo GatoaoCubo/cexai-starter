@@ -30,9 +30,6 @@ llm_function: REASON
 related:
   - rag-source-builder
   - bld_architecture_rag_source
-  - bld_knowledge_card_rag_source
-  - p11_qg_rag_source
-  - p01_kc_rag_source
 ---
 ## Context
 A **rag_source** is a pointer record: it catalogs where authoritative external data lives so a retrieval pipeline can schedule crawls and index the content. The artifact contains metadata about the source — URL, domain, format, freshness schedule, reliability classification — but it does NOT contain any extracted content. The 1024-byte body limit enforces this constraint structurally.

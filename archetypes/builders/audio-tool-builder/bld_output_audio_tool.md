@@ -31,11 +31,8 @@ keywords:
   - "output template"
 density_score: 0.90
 related:
-  - p11_qg_audio_tool
   - bld_schema_audio_tool
   - p01_kc_influencer_directory_global
-  - bld_instruction_audio_tool
-  - bld_output_template_llm_judge
 ---
 # Output Template: audio_tool
 ```yaml
@@ -93,8 +90,5 @@ provider: "{{primary_provider_name}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_audio_tool]] | downstream | 0.39 |
 | [[bld_schema_audio_tool]] | downstream | 0.35 |
 | [[p01_kc_influencer_directory_global]] | upstream | 0.29 |
-| [[bld_instruction_audio_tool]] | upstream | 0.28 |
-| [[bld_output_template_llm_judge]] | sibling | 0.26 |

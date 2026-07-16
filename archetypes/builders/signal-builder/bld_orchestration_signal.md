@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - signal-builder
   - bld_architecture_signal
-  - bld_collaboration_session_state
-  - bld_collaboration_dispatch_rule
-  - bld_collaboration_workflow
 ---
 # Collaboration: signal-builder
 ## My Role in Crews

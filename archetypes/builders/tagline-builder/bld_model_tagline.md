@@ -26,10 +26,6 @@ effort: medium
 max_turns: 15
 permission_scope: nucleus
 related:
-  - bld_output_template_tagline
-  - bld_instruction_tagline
-  - bld_collaboration_tagline
-  - n00_tagline_manifest
   - kc_tagline
 ---
 ## Identity
@@ -139,7 +135,6 @@ taglines:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_tagline]] | downstream | 0.54 |
 | [[bld_prompt_tagline]] | related | 0.53 |
 | [[bld_orchestration_tagline]] | downstream | 0.52 |
 | n00_tagline_manifest | related | 0.50 |

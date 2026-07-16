@@ -19,10 +19,6 @@ keywords: [cost budget construction, knowledge card cost budget, domain knowledg
 density_score: 0.90
 related:
   - cost-budget-builder
-  - p10_lr_cost_budget_builder
-  - p01_kc_cost_budget
-  - p11_qg_cost_budget
-  - bld_collaboration_cost_budget
 ---
 # Domain Knowledge: cost_budget
 ## Executive Summary
@@ -105,7 +101,3 @@ by the token budget SDK, preventing billing surprises by blocking or alerting be
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cost-budget-builder]] | downstream | 0.49 |
-| [[p10_lr_cost_budget_builder]] | downstream | 0.43 |
-| [[p01_kc_cost_budget]] | sibling | 0.42 |
-| [[p11_qg_cost_budget]] | downstream | 0.42 |
-| [[bld_collaboration_cost_budget]] | downstream | 0.41 |

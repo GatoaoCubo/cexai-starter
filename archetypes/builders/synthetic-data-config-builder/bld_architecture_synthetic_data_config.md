@@ -21,7 +21,6 @@ density_score: 0.85
 related:
   - bld_orchestration_synthetic_data_config
   - synthetic-data-config-builder
-  - kc_synthetic_data_config
   - bld_output_synthetic_data_config
   - bld_config_synthetic_data_config
 ---
@@ -90,6 +89,5 @@ Synthetic training data generation pipeline. NOT dataset_card (data documentatio
 |----------|-------------|-------|
 | [[bld_orchestration_synthetic_data_config]] | downstream | 0.61 |
 | [[synthetic-data-config-builder]] | upstream | 0.52 |
-| [[kc_synthetic_data_config]] | upstream | 0.47 |
 | [[bld_output_synthetic_data_config]] | upstream | 0.44 |
 | [[bld_config_synthetic_data_config]] | downstream | 0.42 |

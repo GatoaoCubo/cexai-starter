@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_cohort_analysis
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_cohort_analysis_manifest
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # cohort-analysis-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_cohort_analysis]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_cohort_analysis_manifest]] | related | 0.30 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |

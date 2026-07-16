@@ -14,7 +14,6 @@ keywords: [crm-ready, cex open-source ai framework, agent frameworks, llm toolin
 related:
   - p01_kc_influencer_crm_unified
   - p01_kc_community_directory_global
-  - p01_kc_outreach_wave1_top20
   - p01_kc_seeding_playbook
 ---
 

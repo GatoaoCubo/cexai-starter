@@ -18,10 +18,6 @@ keywords: [component map of env_config, and architectural position, env config c
 density_score: 0.90
 related:
   - env-config-builder
-  - bld_collaboration_env_config
-  - p01_kc_cex_lp09_config
-  - p11_qg_env_config
-  - n00_env_config_manifest
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -76,5 +72,4 @@ runtime_rule (P09) --independent-- env_config (runtime_rule governs behavior lik
 | [[env-config-builder]] | downstream | 0.59 |
 | [[bld_orchestration_env_config]] | downstream | 0.50 |
 | p01_kc_cex_lp09_config | upstream | 0.45 |
-| [[p11_qg_env_config]] | downstream | 0.42 |
 | n00_env_config_manifest | downstream | 0.39 |

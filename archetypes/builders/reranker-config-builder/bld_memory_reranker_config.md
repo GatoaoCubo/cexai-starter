@@ -21,8 +21,6 @@ reviewed, related artifacts, scoring functions]
 density_score: 0.85
 related:
   - bld_tools_reasoning_strategy
-  - p10_lr_reasoning_strategy_builder
-  - p10_mem_eval_metric_builder
   - bld_tools_search_strategy
   - bld_architecture_planning_strategy
 ---
@@ -46,7 +44,5 @@ Reviewed artifacts showed higher performance when scoring functions were version
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_reasoning_strategy]] | upstream | 0.26 |
-| [[p10_lr_reasoning_strategy_builder]] | related | 0.25 |
-| [[p10_mem_eval_metric_builder]] | sibling | 0.25 |
 | [[bld_tools_search_strategy]] | upstream | 0.24 |
 | [[bld_architecture_planning_strategy]] | upstream | 0.23 |

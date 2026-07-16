@@ -32,7 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_env_config
-  - schema_prompt_template_builder
   - bld_schema_retriever_config
   - bld_schema_action_prompt
   - bld_schema_cli_tool
@@ -103,7 +102,6 @@ Choose format_type based on consumer: machine = json, config = yaml, human = mar
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_env_config]] | sibling | 0.47 |
-| [[schema_prompt_template_builder]] | related | 0.47 |
 | [[bld_schema_retriever_config]] | sibling | 0.47 |
 | [[bld_schema_action_prompt]] | sibling | 0.47 |
 | bld_schema_cli_tool | sibling | 0.47 |

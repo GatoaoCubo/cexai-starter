@@ -33,12 +33,6 @@ tldr: Golden and anti-examples for vision tool construction, demonstrating ideal
 llm_function: BECOME
 parent: null
 8f: "F5_call"
-related:
-  - bld_collaboration_vision_tool
-  - bld_instruction_vision_tool
-  - bld_knowledge_card_vision_tool
-  - p01_kc_vision_tool
-  - n00_vision_tool_manifest
 ---
 ## Identity
 

@@ -29,11 +29,8 @@ updated: "2026-04-17"
 keywords: [naming conventions, file paths, size limits, operational constraints, retry policy construction, config retry policy, full or decorrelated, never retry, retry_policy, builder]
 density_score: 0.90
 related:
-  - p11_qg_retry_policy
-  - bld_output_template_retry_policy
   - kc_retry_policy
   - bld_schema_retry_policy
-  - bld_instruction_retry_policy
 ---
 # Config: retry_policy Production Rules
 
@@ -126,8 +123,6 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_retry_policy]] | downstream | 0.46 |
-| [[bld_output_template_retry_policy]] | upstream | 0.43 |
 | [[kc_retry_policy]] | upstream | 0.43 |
 | [[bld_schema_retry_policy]] | upstream | 0.42 |
 | [[bld_prompt_retry_policy]] | upstream | 0.41 |

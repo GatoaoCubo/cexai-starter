@@ -30,12 +30,6 @@ keywords:
   - "## parameters"
   - "## integration"
 density_score: 0.90
-related:
-  - bld_output_template_output_validator
-  - bld_output_template_hook_config
-  - bld_output_template_runtime_rule
-  - bld_output_template_retriever_config
-  - bld_instruction_chunk_strategy
 ---
 # Output Template: chunk_strategy
 ```yaml
@@ -94,8 +88,6 @@ keep_separator: "{{keep_separator}}}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_output_validator]] | sibling | 0.37 |
 | bld_output_template_hook_config | sibling | 0.36 |
 | bld_output_template_runtime_rule | sibling | 0.36 |
-| [[bld_output_template_retriever_config]] | sibling | 0.36 |
 | [[bld_prompt_chunk_strategy]] | upstream | 0.35 |

@@ -34,10 +34,8 @@ parent: null
 8f: "F3_inject"
 density_score: 1.0
 related:
-  - bld_collaboration_user_model
   - bld_architecture_user_model
   - kc_user_model
-  - bld_knowledge_card_user_model
 ---
 ## Identity
 

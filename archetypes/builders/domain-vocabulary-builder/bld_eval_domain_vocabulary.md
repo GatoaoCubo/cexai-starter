@@ -26,11 +26,8 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - p01_kc_domain_vocabulary
-  - bld_instruction_domain_vocabulary
   - bld_schema_domain_vocabulary
   - domain-vocabulary-builder
-  - bld_qg_bounded_context
 ---
 ## Quality Gate
 

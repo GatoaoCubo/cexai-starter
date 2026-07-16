@@ -15,9 +15,7 @@ density_score: 0.98
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_bounded_context
   - bounded-context-builder
-  - bld_kc_domain_vocabulary
   - bld_architecture_bounded_context
   - bld_memory_bounded_context
 ---
@@ -78,8 +76,6 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_bounded_context]] | sibling | 0.50 |
 | [[bounded-context-builder]] | downstream | 0.39 |
-| [[bld_kc_domain_vocabulary]] | sibling | 0.37 |
 | [[bld_architecture_bounded_context]] | downstream | 0.36 |
 | [[bld_memory_bounded_context]] | downstream | 0.35 |

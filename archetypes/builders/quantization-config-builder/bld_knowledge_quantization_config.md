@@ -21,8 +21,6 @@ related:
   - bld_schema_quantization_config
   - quantization-config-builder
   - bld_tools_quantization_config
-  - n00_quantization_config_manifest
-  - p10_lr_quantization_config_builder
 ---
 ## Domain Overview
 Quantization configuration defines the precision reduction strategies applied to model weights
@@ -102,5 +100,3 @@ Note: GGML is the legacy format superseded by GGUF. Avoid GGML references in new
 | [[bld_schema_quantization_config]] | downstream | 0.52 |
 | [[quantization-config-builder]] | downstream | 0.51 |
 | [[bld_tools_quantization_config]] | downstream | 0.46 |
-| [[n00_quantization_config_manifest]] | sibling | 0.45 |
-| [[p10_lr_quantization_config_builder]] | downstream | 0.40 |

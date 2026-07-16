@@ -18,10 +18,7 @@ keywords: [kubernetes_ai_requirement construction, kubernetes_ai_requirement, bu
 density_score: 0.85
 related:
   - kubernetes-ai-requirement-builder
-  - bld_instruction_kubernetes_ai_requirement
-  - p09_qg_kubernetes_ai_requirement
   - bld_tools_kubernetes_ai_requirement
-  - p10_lr_kubernetes_ai_requirement_builder
 ---
 ## Domain Overview
 kubernetes_ai_requirement (KAR) is a CNCF-governed conformance artifact introduced with the Kubernetes AI Conformance Program (GA Nov 2025, v1.35). It is the declarative contract AI workloads use to state what a Certified Kubernetes AI Platform must provide: GPU-topology (NVLink/NVSwitch pairs, PCIe affinity, NUMA alignment), InfiniBand RDMA fabric bandwidth and GPUDirect capability, NVIDIA MIG partitioning profiles, Dynamic Resource Allocation (DRA) scheduling primitives (K8s 1.32+ GA), and checkpoint-PVC durability semantics for multi-node training and disaggregated inference.
@@ -75,7 +72,4 @@ KAR artifacts make previously ad-hoc cluster-capability assumptions portable acr
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kubernetes-ai-requirement-builder]] | downstream | 0.74 |
-| [[bld_instruction_kubernetes_ai_requirement]] | downstream | 0.63 |
-| [[p09_qg_kubernetes_ai_requirement]] | downstream | 0.61 |
 | [[bld_tools_kubernetes_ai_requirement]] | downstream | 0.60 |
-| [[p10_lr_kubernetes_ai_requirement_builder]] | downstream | 0.59 |

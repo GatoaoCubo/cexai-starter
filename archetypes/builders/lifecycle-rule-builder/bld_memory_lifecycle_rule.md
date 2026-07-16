@@ -22,12 +22,6 @@ lifecycle, impact
 systems, reproducibility
 reliable, lifecycle rules]
 density_score: 0.90
-related:
-  - bld_manifest_lifecycle_rule
-  - bld_collaboration_lifecycle_rule
-  - bld_knowledge_card_lifecycle_rule
-  - p03_ins_lifecycle_rule
-  - p11_qg_lifecycle_rule
 ---
 # Memory: lifecycle-rule-builder
 ## Summary
@@ -85,8 +79,5 @@ python _tools/cex_score.py --apply bld-memory-lifecycle-rule.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_lifecycle_rule]] | related | 0.56 |
 | [[bld_orchestration_lifecycle_rule]] | downstream | 0.52 |
 | [[bld_knowledge_lifecycle_rule]] | downstream | 0.42 |
-| [[p03_ins_lifecycle_rule]] | upstream | 0.41 |
-| [[p11_qg_lifecycle_rule]] | downstream | 0.37 |

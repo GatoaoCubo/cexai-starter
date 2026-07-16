@@ -20,9 +20,6 @@ density_score: 0.91
 related:
   - bld_config_streaming_config
   - streaming-config-builder
-  - p10_lr_streaming_config_builder
-  - bld_instruction_streaming_config
-  - p11_qg_streaming_config
 ---
 # Domain Knowledge: streaming_config
 
@@ -102,6 +99,3 @@ strategy, and connection lifecycle -- not the data shape or serialization format
 |----------|-------------|-------|
 | [[bld_config_streaming_config]] | downstream | 0.51 |
 | [[streaming-config-builder]] | downstream | 0.49 |
-| [[p10_lr_streaming_config_builder]] | downstream | 0.47 |
-| [[bld_instruction_streaming_config]] | downstream | 0.45 |
-| [[p11_qg_streaming_config]] | downstream | 0.40 |

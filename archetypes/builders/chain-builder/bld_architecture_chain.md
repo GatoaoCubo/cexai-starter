@@ -17,10 +17,6 @@ updated: "2026-04-07"
 keywords: [component map of chain, and architectural position, chain construction, architecture chain, chain, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - p10_lr_chain_builder
-  - p01_kc_chain
-  - p11_qg_chain
-  - p12_wf_builder_8f_pipeline
   - chain-builder
 ---
 ## Component Inventory
@@ -79,8 +75,4 @@ workflow        --depends-->  chain
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_chain_builder]] | downstream | 0.57 |
-| [[p01_kc_chain]] | upstream | 0.47 |
-| [[p11_qg_chain]] | downstream | 0.45 |
-| [[p12_wf_builder_8f_pipeline]] | downstream | 0.45 |
 | [[chain-builder]] | upstream | 0.44 |

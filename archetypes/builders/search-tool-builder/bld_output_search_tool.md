@@ -35,9 +35,7 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_search_tool
-  - p11_qg_search_tool
   - search-tool-builder
-  - n00_search_tool_manifest
   - bld_architecture_search_tool
 ---
 # Output Template: search_tool
@@ -122,7 +120,6 @@ Each result contains:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_search_tool]] | downstream | 0.44 |
-| [[p11_qg_search_tool]] | downstream | 0.42 |
 | [[search-tool-builder]] | upstream | 0.41 |
 | n00_search_tool_manifest | upstream | 0.38 |
 | [[bld_architecture_search_tool]] | downstream | 0.37 |

@@ -29,10 +29,7 @@ updated: "2026-04-17"
 keywords: [naming conventions, file paths, size limits, operational constraints for preference_dataset, preference dataset construction, config preference dataset, preference_dataset, builder, config, "p11_pd_{scope}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_preference_dataset
-  - bld_collaboration_preference_dataset
   - bld_config_memory_scope
-  - p01_kc_preference_dataset
   - preference-dataset-builder
 ---
 # Config: preference_dataset Production Rules
@@ -85,8 +82,5 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_preference_dataset]] | upstream | 0.35 |
-| [[bld_collaboration_preference_dataset]] | downstream | 0.32 |
 | [[bld_config_memory_scope]] | sibling | 0.32 |
-| [[p01_kc_preference_dataset]] | downstream | 0.31 |
 | [[preference-dataset-builder]] | downstream | 0.31 |

@@ -4,11 +4,9 @@ description: "Builds ONE naming_rule artifact via 8F pipeline. Loads naming-rule
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_naming_rule
   - naming-rule-builder
   - bld_tools_naming_rule
   - kind-builder
-  - n00_naming_rule_manifest
 ---
 
 # naming-rule-builder Sub-Agent
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_naming_rule]] | related | 0.36 |
 | [[naming-rule-builder]] | related | 0.32 |
 | [[bld_tools_naming_rule]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_naming_rule_manifest]] | related | 0.31 |

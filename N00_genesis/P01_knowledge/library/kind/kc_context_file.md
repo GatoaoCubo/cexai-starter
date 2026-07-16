@@ -15,8 +15,6 @@ keywords: [context_file, injection_point, inheritance_chain, scope enum, llm_fun
 density_score: 0.95
 updated: "2026-04-22"
 related:
-  - bld_knowledge_card_context_file
-  - n00_context_file_manifest
   - ctx_{{scope}}
   - bld_schema_context_file
   - context-file-builder

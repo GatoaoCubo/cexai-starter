@@ -19,10 +19,6 @@ code, the contributor covenant, linux foundation, effective co, temporary ban, c
 density_score: 0.87
 related:
   - code-of-conduct-builder
-  - bld_instruction_code_of_conduct
-  - p05_qg_code_of_conduct
-  - p10_mem_code_of_conduct_builder
-  - n00_code_of_conduct_manifest
 ---
 ## Domain Overview
 Code of Conduct artifacts define behavioral expectations, enforcement mechanisms, and reporting channels for open-source communities. The Contributor Covenant (current version: 2.1) is the de facto standard, adopted by thousands of OSS projects including Linux Foundation, Apache, CNCF, and GitHub's own community guidelines. A well-structured CoC reduces maintainer burden by providing a pre-agreed enforcement ladder and reduces community risk by setting clear expectations.
@@ -69,7 +65,3 @@ Effective CoCs distinguish between online spaces (issues, PRs, chat, forums) and
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[code-of-conduct-builder]] | downstream | 0.61 |
-| [[bld_instruction_code_of_conduct]] | downstream | 0.53 |
-| [[p05_qg_code_of_conduct]] | downstream | 0.52 |
-| [[p10_mem_code_of_conduct_builder]] | downstream | 0.48 |
-| [[n00_code_of_conduct_manifest]] | sibling | 0.47 |

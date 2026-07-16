@@ -30,16 +30,7 @@ linked_artifacts:
 density_score: 0.91
 data_source: "https://ossalt.com/guides/open-source-business-models-how-oss-companies-make-money"
 related:
-  - p07_bm_competitive_business
-  - cm_agent_infrastructure_landscape
-  - p11_cm_cexai_monetization
-  - n02_competitive_positioning
-  - n01_showoff_analyst_briefing_typed_agent_oss
   - kc_whitepaper_business_case
-  - analyst_briefing_oss_typed_agent_frameworks_2026
-  - analyst_briefing_oss_typed_agents_20260503
-  - n06_content_monetization
-  - n06_intent_resolution_depth_spec
 ---
 
 ## Quick Reference

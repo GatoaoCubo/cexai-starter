@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_knowledge_card_enterprise_sla
-  - p10_mem_enterprise_sla_builder
-  - bld_collaboration_enterprise_sla
-  - n00_enterprise_sla_manifest
-  - bld_instruction_enterprise_sla
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS USE standardized SLA clauses from industry benchmarks.
 ALWAYS INCLUDE measurable KPIs with defined penalties.  
 NEVER USE vague language (e.g., "reasonable effort").  
 NEVER OMIT support commitment timelines (e.g., 1-hour resolution for critical issues).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_enterprise_sla]] | upstream | 0.56 |
-| [[p10_mem_enterprise_sla_builder]] | upstream | 0.49 |
-| [[bld_collaboration_enterprise_sla]] | downstream | 0.49 |
-| [[n00_enterprise_sla_manifest]] | related | 0.48 |
-| [[bld_instruction_enterprise_sla]] | upstream | 0.47 |

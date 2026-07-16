@@ -5,10 +5,8 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - batch-config-builder
-  - bld_collaboration_batch_config
   - bld_architecture_batch_config
   - bld_config_batch_config
-  - bld_instruction_batch_config
 ---
 
 # batch-config-builder Sub-Agent
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[batch-config-builder]] | related | 0.41 |
-| [[bld_collaboration_batch_config]] | related | 0.37 |
 | [[bld_architecture_batch_config]] | related | 0.37 |
 | [[bld_config_batch_config]] | related | 0.33 |
-| [[bld_instruction_batch_config]] | related | 0.32 |

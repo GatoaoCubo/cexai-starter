@@ -34,8 +34,6 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_knowledge_card_output_template
-  - bld_instruction_output_template
   - prompt-template-builder
   - response-format-builder
   - formatter-builder

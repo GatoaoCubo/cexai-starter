@@ -29,11 +29,8 @@ cross_provider:
   anthropic: "Claude with tool_use + system prompt"
   haystack: "Agent (preview) / pipeline-as-agent"
 related:
-  - bld_collaboration_agent
   - bld_architecture_agent
   - agent-builder
-  - bld_knowledge_card_agent
-  - p02_agent_n03_sdk_test
 ---
 
 # Agent

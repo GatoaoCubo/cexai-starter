@@ -17,11 +17,9 @@ updated: "2026-04-14"
 keywords: [experiment_tracker construction, instruction experiment tracker, neptune schemas, experiment_tracker, builder, instruction, reference standards, lflow tracking, related artifacts, metric schema]
 density_score: 0.90
 related:
-  - bld_knowledge_card_experiment_tracker
   - bld_tools_experiment_tracker
   - experiment-tracker-builder
   - bld_architecture_experiment_tracker
-  - p07_qg_experiment_tracker
 ---
 ## Phase 1: FRAME
 1. Define experiment_id (UUID or monotonic), experiment_name, project/workspace, owner.
@@ -62,8 +60,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_experiment_tracker]] | upstream | 0.27 |
 | [[bld_tools_experiment_tracker]] | downstream | 0.26 |
 | [[experiment-tracker-builder]] | downstream | 0.23 |
 | [[bld_architecture_experiment_tracker]] | downstream | 0.21 |
-| [[p07_qg_experiment_tracker]] | downstream | 0.21 |

@@ -32,9 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_working_memory
-  - p10_qg_working_memory
-  - bld_instruction_working_memory
-  - p10_lr_working_memory_builder
   - bld_config_working_memory
 ---
 # Output Template: working_memory
@@ -88,7 +85,4 @@ Promoted to: `{{target_memory_kind}}` (for slots: `{{which_slots}}`)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_working_memory]] | downstream | 0.41 |
-| [[p10_qg_working_memory]] | downstream | 0.39 |
-| [[bld_instruction_working_memory]] | upstream | 0.36 |
-| [[p10_lr_working_memory_builder]] | downstream | 0.31 |
 | [[bld_config_working_memory]] | downstream | 0.31 |

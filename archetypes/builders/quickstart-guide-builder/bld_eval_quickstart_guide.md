@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [quickstart_guide construction, quality gate quickstart guide, quickstart_guide, builder, quality_gate, npm install -g vercel, vercel login, vercel --github <your-repo>, api_key, endpoint]
 density_score: 0.85
-related:
-  - p05_qg_integration_guide
-  - p06_qg_api_reference
-  - p05_qg_product_tour
-  - p03_qg_reasoning_strategy
-  - p04_qg_stt_provider
 ---
 ## Quality Gate
 

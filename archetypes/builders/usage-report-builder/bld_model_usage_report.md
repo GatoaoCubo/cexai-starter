@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - kc_usage_report
-  - bld_knowledge_card_usage_report
-  - n00_usage_report_manifest
-  - kc_usage_quota
-  - bld_collaboration_usage_report
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS USE PRIMARY DATA SOURCES FOR METRIC COLLECTION
 ALWAYS VALIDATE TIME ZONES AND CURRENCY CODES  
 NEVER AGGREGATE DATA ACROSS UNDEFINED DIMENSIONS  
 NEVER INCLUDE COST PROJECTIONS OR BUDGETARY LIMITS
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_usage_report]] | upstream | 0.42 |
-| [[bld_knowledge_card_usage_report]] | upstream | 0.41 |
-| [[n00_usage_report_manifest]] | related | 0.37 |
-| [[kc_usage_quota]] | upstream | 0.34 |
-| [[bld_collaboration_usage_report]] | downstream | 0.32 |

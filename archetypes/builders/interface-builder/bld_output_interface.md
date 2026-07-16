@@ -32,9 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_interface
-  - bld_output_template_input_schema
-  - p10_lr_interface_builder
-  - bld_instruction_interface
   - interface-builder
 ---
 # Output Template: interface
@@ -121,7 +118,4 @@ density_score: {{0.80_to_1.00}}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_interface]] | downstream | 0.39 |
-| [[bld_output_template_input_schema]] | sibling | 0.35 |
-| [[p10_lr_interface_builder]] | downstream | 0.33 |
-| [[bld_instruction_interface]] | upstream | 0.33 |
 | [[interface-builder]] | downstream | 0.32 |

@@ -18,10 +18,6 @@ updated: "2026-07-03"
 keywords: [approval_request construction, knowledge card approval request, request lifecycle, m-of-n resolution, real runtime mechanics, fixture audit scope]
 density_score: 0.90
 related:
-  - p01_kc_approval_request
-  - p01_kc_hitl_config
-  - p11_qg_approval_request
-  - adr_v03_governance_taxonomy
   - approval-request-builder
 ---
 # Domain Knowledge: approval_request
@@ -97,8 +93,4 @@ while the CEX `id` still follows `p11_ar_{{name}}`.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_approval_request]] | sibling | 0.57 |
-| [[p01_kc_hitl_config]] | related (the emitting policy) | 0.45 |
-| [[p11_qg_approval_request]] | downstream | 0.41 |
-| [[adr_v03_governance_taxonomy]] | related (scope-defining ADR) | 0.40 |
 | [[approval-request-builder]] | downstream | 0.39 |

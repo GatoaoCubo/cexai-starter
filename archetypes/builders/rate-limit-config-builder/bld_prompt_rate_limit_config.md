@@ -31,11 +31,7 @@ keywords:
   - "write limits"
 density_score: 0.90
 related:
-  - p11_qg_rate_limit_config
   - rate-limit-config-builder
-  - bld_instruction_search_tool
-  - bld_instruction_retriever_config
-  - bld_knowledge_card_rate_limit_config
 ---
 # Instructions: How to Produce a rate_limit_config
 
@@ -105,7 +101,6 @@ python _tools/cex_skill_loader.py --verify rate
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_rate_limit_config]] | downstream | 0.53 |
 | [[rate-limit-config-builder]] | downstream | 0.53 |
 | [[bld_prompt_search_tool]] | sibling | 0.46 |
 | [[bld_prompt_retriever_config]] | sibling | 0.43 |

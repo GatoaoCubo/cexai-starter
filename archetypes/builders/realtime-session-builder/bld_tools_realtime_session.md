@@ -19,7 +19,6 @@ density_score: 0.90
 related:
   - bld_tools_voice_pipeline
   - bld_tools_collaboration_pattern
-  - tools_prompt_template_builder
   - bld_tools_thinking_config
   - bld_tools_action_paradigm
 ---
@@ -120,6 +119,5 @@ brain_query("p04_rs LLM streaming ephemeral token")
 |----------|-------------|-------|
 | [[bld_tools_voice_pipeline]] | sibling | 0.55 |
 | [[bld_tools_collaboration_pattern]] | sibling | 0.53 |
-| [[tools_prompt_template_builder]] | sibling | 0.52 |
 | [[bld_tools_thinking_config]] | sibling | 0.52 |
 | [[bld_tools_action_paradigm]] | sibling | 0.52 |

@@ -30,9 +30,6 @@ density_score: 0.85
 related:
   - type-def-builder
   - bld_memory_type_def
-  - p11_qg_quality_gate
-  - n00_type_def_manifest
-  - bld_knowledge_card_type_def
 ---
 ## Quality Gate
 

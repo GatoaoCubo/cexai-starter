@@ -19,10 +19,6 @@ authors, claude code]
 density_score: 0.85
 related:
   - agents-md-builder
-  - bld_knowledge_card_agents_md
-  - p10_lr_agents_md_builder
-  - bld_instruction_agents_md
-  - p02_qg_agents_md
 ---
 ## Crew Role
 Authors the vendor-neutral AGENTS.md at project-root, synthesizing setup-command / test-command / lint-command / pr-format / deploy-rule blocks from CI reality so every AAIF-compliant coding-agent (Codex, Claude Code, Aider, Cursor, goose) can bootstrap on fresh clone.
@@ -49,7 +45,3 @@ Does NOT author CLAUDE.md (handled by `claude_md-builder`, Claude-specific direc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agents-md-builder]] | upstream | 0.47 |
-| [[bld_knowledge_card_agents_md]] | upstream | 0.42 |
-| [[p10_lr_agents_md_builder]] | upstream | 0.37 |
-| [[bld_instruction_agents_md]] | upstream | 0.32 |
-| [[p02_qg_agents_md]] | upstream | 0.29 |

@@ -21,7 +21,6 @@ related:
   - plugin-builder
   - bld_architecture_plugin
   - bld_memory_plugin
-  - p01_kc_plugin
   - bld_tools_plugin
 ---
 # Collaboration: plugin-builder
@@ -76,5 +75,4 @@ I define interface contracts, lifecycle hooks (load/enable/disable/unload), API 
 | [[plugin-builder]] | related | 0.60 |
 | [[bld_architecture_plugin]] | downstream | 0.53 |
 | [[bld_memory_plugin]] | downstream | 0.50 |
-| [[p01_kc_plugin]] | upstream | 0.47 |
 | [[bld_tools_plugin]] | related | 0.45 |

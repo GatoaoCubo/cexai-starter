@@ -17,11 +17,7 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - p03_ins_model_provider
-  - p11_qg_model_provider
   - model-provider-builder
-  - bld_knowledge_card_model_provider
-  - bld_collaboration_model_provider
 ---
 # Output Template: model_provider
 ```yaml
@@ -101,8 +97,6 @@ model_provider IS NOT: model_card, embedder_provider, agent, boot_config.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_model_provider]] | upstream | 0.60 |
-| [[p11_qg_model_provider]] | downstream | 0.59 |
 | [[model-provider-builder]] | upstream | 0.57 |
 | [[bld_knowledge_model_provider]] | upstream | 0.57 |
 | [[bld_orchestration_model_provider]] | upstream | 0.54 |

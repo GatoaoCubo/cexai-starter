@@ -4,11 +4,8 @@ description: "Builds ONE sandbox_config artifact via 8F pipeline. Loads sandbox-
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_config_sandbox_config
-  - p01_kc_pillar_brief_p02_model_en
-  - p01_faq_cex_common_questions
 ---
 
 # sandbox-config-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[bld_config_sandbox_config]] | related | 0.27 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.26 |
-| [[p01_faq_cex_common_questions]] | related | 0.26 |

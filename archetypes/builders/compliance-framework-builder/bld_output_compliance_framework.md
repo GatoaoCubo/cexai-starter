@@ -17,10 +17,6 @@ updated: "2026-04-13"
 keywords: [compliance_framework construction, output template compliance framework, gap analysis, and signed attestation, compliance_framework, builder, output_template]
 density_score: 0.90
 related:
-  - p11_cfw_cex_ai_act
-  - p11_qg_compliance_framework
-  - bld_knowledge_card_compliance_checklist
-  - bld_knowledge_card_conformity_assessment
   - p01_kc_ai_compliance_gdpr
 ---
 ```yaml
@@ -117,8 +113,4 @@ _(Complete only if AI Act Art. 6 classification applies)_
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_cfw_cex_ai_act]] | downstream | 0.54 |
-| [[p11_qg_compliance_framework]] | downstream | 0.39 |
-| [[bld_knowledge_card_compliance_checklist]] | upstream | 0.37 |
-| [[bld_knowledge_card_conformity_assessment]] | upstream | 0.36 |
 | [[p01_kc_ai_compliance_gdpr]] | upstream | 0.36 |

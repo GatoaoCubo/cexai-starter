@@ -18,10 +18,8 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - alert-rule-builder
-  - bld_instruction_data_contract
   - bld_output_alert_rule
   - bld_schema_alert_rule
-  - p01_kc_alert_rule
 ---
 # Instructions: How to Produce an alert_rule
 ## Phase 1: IDENTIFY
@@ -80,7 +78,5 @@ python _tools/cex_prompt_optimizer.py --check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[alert-rule-builder]] | downstream | 0.37 |
-| [[bld_instruction_data_contract]] | sibling | 0.35 |
 | [[bld_output_alert_rule]] | related | 0.34 |
 | [[bld_schema_alert_rule]] | downstream | 0.34 |
-| [[p01_kc_alert_rule]] | upstream | 0.33 |

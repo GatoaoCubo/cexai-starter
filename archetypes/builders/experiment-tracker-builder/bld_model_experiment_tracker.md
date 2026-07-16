@@ -21,10 +21,6 @@ acts]
 density_score: 0.85
 related:
   - experiment-config-builder
-  - bld_knowledge_card_experiment_tracker
-  - n00_experiment_tracker_manifest
-  - bld_collaboration_experiment_config
-  - kc_experiment_tracker
 ---
 ## Identity
 
@@ -66,7 +62,3 @@ You are the experiment_tracker-builder agent, a specialized governance agent wit
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[experiment-config-builder]] | sibling | 0.40 |
-| [[bld_knowledge_card_experiment_tracker]] | upstream | 0.37 |
-| [[n00_experiment_tracker_manifest]] | related | 0.36 |
-| [[bld_collaboration_experiment_config]] | downstream | 0.36 |
-| [[kc_experiment_tracker]] | upstream | 0.34 |

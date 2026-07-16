@@ -31,10 +31,7 @@ keywords:
   - "expected"
 density_score: 0.90
 related:
-  - p03_ins_smoke_eval_builder
   - smoke-eval-builder
-  - p11_qg_smoke-eval
-  - bld_collaboration_smoke_eval
   - bld_memory_smoke_eval
 ---
 # Domain Knowledge: smoke_eval
@@ -95,8 +92,5 @@ Smoke evals are fast-fail sanity checks constrained to 30 seconds maximum — th
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_smoke_eval_builder]] | upstream | 0.48 |
 | [[smoke-eval-builder]] | related | 0.48 |
-| [[p11_qg_smoke-eval]] | downstream | 0.42 |
-| [[bld_collaboration_smoke_eval]] | related | 0.42 |
 | [[bld_memory_smoke_eval]] | downstream | 0.39 |

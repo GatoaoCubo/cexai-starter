@@ -16,10 +16,8 @@ created: "2026-07-03"
 updated: "2026-07-03"
 related:
   - bld_schema_canonical_product
-  - bld_instruction_canonical_product
   - kc_canonical_product
   - canonical-product-builder
-  - bld_qg_canonical_product
 ---
 # Output Template: canonical_product
 ```markdown
@@ -89,4 +87,3 @@ _conflicts: {{ per-field cross-source disagreement, surfaced for human review }}
 | [[bld_prompt_canonical_product]] | related | 0.37 |
 | [[kc_canonical_product]] | upstream | 0.36 |
 | [[canonical-product-builder]] | downstream | 0.35 |
-| [[bld_qg_canonical_product]] | downstream | 0.30 |

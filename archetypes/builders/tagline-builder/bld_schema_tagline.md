@@ -19,7 +19,6 @@ llm_function: CONSTRAIN
 related:
   - bld_schema_model_registry
   - bld_schema_experiment_tracker
-  - p03_constraint_brand_config_n06
   - bld_schema_training_method
   - bld_schema_multimodal_prompt
 ---

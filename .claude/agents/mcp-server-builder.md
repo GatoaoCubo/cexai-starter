@@ -4,11 +4,7 @@ description: "Builds ONE mcp_server artifact via 8F pipeline. Loads mcp-server-b
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_mcp_server
-  - n00_mcp_server_manifest
-  - p01_kc_mcp_server
   - mcp-server-builder
-  - p03_ins_mcp_server
 ---
 
 # mcp-server-builder Sub-Agent
@@ -90,4 +86,3 @@ Five duties bind any agent that emits an artifact:
 | n00_mcp_server_manifest | related | 0.35 |
 | [[kc_mcp_server]] | related | 0.34 |
 | [[mcp-server-builder]] | related | 0.32 |
-| [[p03_ins_mcp_server]] | related | 0.30 |

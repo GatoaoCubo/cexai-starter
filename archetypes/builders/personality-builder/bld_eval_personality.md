@@ -18,10 +18,7 @@ keywords: [govern validation, personality -- hot-swappable voice, md pattern, id
 density_score: 0.91
 related:
   - personality-builder
-  - n00_personality_manifest
   - kc_personality
-  - bld_output_template_personality
-  - bld_knowledge_card_personality
 ---
 ## Quality Gate
 

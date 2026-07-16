@@ -23,7 +23,6 @@ related:
   - inference-config-builder
   - bld_prompt_inference_config
   - bld_feedback_inference_config
-  - n00_quantization_config_manifest
   - bld_eval_inference_config
 ---
 # Domain Knowledge: inference_config
@@ -58,5 +57,4 @@ Inference configs define how a trained model is served for production prediction
 | [[inference-config-builder]] | downstream | 0.42 |
 | [[bld_prompt_inference_config]] | downstream | 0.40 |
 | [[bld_feedback_inference_config]] | downstream | 0.33 |
-| [[n00_quantization_config_manifest]] | sibling | 0.31 |
 | [[bld_eval_inference_config]] | downstream | 0.30 |

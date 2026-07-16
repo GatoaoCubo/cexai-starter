@@ -18,11 +18,8 @@ updated: "2026-03-28"
 keywords: [browser automation tool, and output contract, engine declaration, action completeness, selector fallback chains, timeout config, and output format contract]
 density_score: 0.90
 related:
-  - bld_instruction_browser_tool
   - bld_schema_browser_tool
   - browser-tool-builder
-  - bld_knowledge_card_browser_tool
-  - p11_qg_cli_tool
 ---
 ## Quality Gate
 

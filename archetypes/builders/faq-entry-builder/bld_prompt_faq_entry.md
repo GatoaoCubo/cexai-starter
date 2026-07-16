@@ -18,10 +18,6 @@ keywords: [faq_entry construction, instruction faq entry, faq_entry, builder, in
 density_score: 0.85
 related:
   - faq-entry-builder
-  - bld_knowledge_card_faq_entry
-  - p01_kc_faq_entry
-  - bld_output_template_faq_entry
-  - p10_mem_faq_entry_builder
 ---
 ## Phase 1: RESEARCH  
 1. Identify high-frequency customer inquiries from support tickets.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[faq-entry-builder]] | upstream | 0.38 |
-| [[bld_knowledge_card_faq_entry]] | upstream | 0.37 |
-| [[p01_kc_faq_entry]] | upstream | 0.31 |
-| [[bld_output_template_faq_entry]] | downstream | 0.26 |
-| [[p10_mem_faq_entry_builder]] | downstream | 0.25 |

@@ -19,10 +19,6 @@ keywords: [streaming config construction, collaboration streaming config, stream
 density_score: 0.90
 related:
   - bld_architecture_streaming_config
-  - bld_collaboration_mcp_server
-  - bld_collaboration_env_config
-  - bld_collaboration_retriever_config
-  - bld_collaboration_trace_config
 ---
 # Collaboration: streaming-config-builder
 
@@ -87,7 +83,3 @@ I specify transport parameters so any server implementation delivers real-time d
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_streaming_config]] | upstream | 0.34 |
-| [[bld_collaboration_mcp_server]] | sibling | 0.34 |
-| [[bld_collaboration_env_config]] | sibling | 0.33 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.32 |
-| [[bld_collaboration_trace_config]] | sibling | 0.31 |

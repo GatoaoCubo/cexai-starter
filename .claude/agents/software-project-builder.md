@@ -5,10 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p03_sp_builder_nucleus
-  - n00_software_project_manifest
-  - p01_kc_software_project
 ---
 
 # software-project-builder Sub-Agent
@@ -87,7 +83,3 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.32 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
-| [[n00_software_project_manifest]] | related | 0.29 |
-| [[p01_kc_software_project]] | related | 0.29 |

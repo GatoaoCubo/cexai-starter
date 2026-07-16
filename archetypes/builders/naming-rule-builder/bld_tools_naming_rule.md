@@ -16,8 +16,6 @@ updated: "2026-04-07"
 keywords: [tools naming rule, naming_rule, builder, examples, naming rule builder, tool registry, use grep, data sources, tool permissions, naming rule]
 density_score: 0.90
 related:
-  - tools_prompt_template_builder
-  - bld_collaboration_naming_rule
   - bld_tools_voice_pipeline
   - bld_tools_collaboration_pattern
   - bld_tools_action_paradigm
@@ -78,8 +76,6 @@ Glob: pattern="archetypes/builders/naming-rule-builder/*.md"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[tools_prompt_template_builder]] | sibling | 0.47 |
-| [[bld_collaboration_naming_rule]] | downstream | 0.46 |
 | [[bld_tools_voice_pipeline]] | sibling | 0.44 |
 | [[bld_tools_collaboration_pattern]] | sibling | 0.42 |
 | [[bld_tools_action_paradigm]] | sibling | 0.40 |

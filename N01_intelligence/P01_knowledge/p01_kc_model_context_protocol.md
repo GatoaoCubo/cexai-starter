@@ -23,9 +23,7 @@ density_score: 0.94
 related:
   - p01_kc_competitor_langchain
   - p01_kc_competitor_crewai
-  - atom_02_mcp_protocol
   - p01_kc_competitive_intelligence_methods
-  - n07-orchestrator
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_preflight_mcp. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

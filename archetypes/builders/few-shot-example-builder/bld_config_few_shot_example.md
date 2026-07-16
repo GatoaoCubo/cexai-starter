@@ -27,10 +27,7 @@ updated: "2026-04-07"
 keywords: [few shot example construction, config few shot example, few_shot_example, builder, examples, "cex/p01_knowledge/examples/p01_fse_{topic}.md", "cex/p01_knowledge/examples/p01_fse_{topic}.yaml", cex/archetypes/builders/few-shot-example-builder/, file naming, file paths]
 density_score: 0.90
 related:
-  - bld_output_template_few_shot_example
   - bld_schema_few_shot_example
-  - bld_instruction_few_shot_example
-  - p11_qg_few_shot_example
   - few-shot-example-builder
 ---
 # Config: few_shot_example
@@ -75,8 +72,6 @@ p01_fse_kc_frontmatter.md -> id: p01_fse_kc_frontmatter
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_few_shot_example]] | upstream | 0.42 |
 | [[bld_schema_few_shot_example]] | upstream | 0.36 |
 | [[bld_prompt_few_shot_example]] | upstream | 0.35 |
-| [[p11_qg_few_shot_example]] | downstream | 0.34 |
 | [[few-shot-example-builder]] | upstream | 0.30 |

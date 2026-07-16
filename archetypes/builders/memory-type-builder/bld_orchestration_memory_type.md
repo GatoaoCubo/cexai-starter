@@ -16,11 +16,8 @@ updated: "2026-04-07"
 keywords: [memory type construction, collaboration memory type, memory_type, builder, examples, produces for, consumes from, related artifacts, upstream, memory]
 density_score: 0.90
 related:
-  - bld_collaboration_memory_scope
   - bld_config_memory_type
-  - p10_lr_memory_scope_builder
   - memory-scope-builder
-  - bld_manifest_memory_type
 ---
 # Collaboration: memory_type
 
@@ -62,8 +59,5 @@ python _tools/cex_score.py --apply bld-collaboration-memory-type.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_scope]] | sibling | 0.50 |
 | [[bld_config_memory_type]] | upstream | 0.40 |
-| [[p10_lr_memory_scope_builder]] | upstream | 0.36 |
 | [[memory-scope-builder]] | upstream | 0.32 |
-| [[bld_manifest_memory_type]] | upstream | 0.32 |

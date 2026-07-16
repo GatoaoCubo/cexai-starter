@@ -31,10 +31,6 @@ keywords:
 density_score: 0.85
 related:
   - repo-map-builder
-  - p10_mem_prompt_technique_builder
-  - p10_mem_prompt_optimizer_builder
-  - p10_mem_eval_metric_builder
-  - p10_mem_benchmark_suite_builder
 ---
 ## Observation  
 Inconsistent module boundary definitions often lead to fragmented or overlapping repo_map entries. Over-reliance on file structure alone may miss implicit dependencies or cross-cutting concerns.  
@@ -56,7 +52,3 @@ Artifacts from `repo_map-builder-v2` showed 25% fewer inconsistencies after inte
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[repo-map-builder]] | upstream | 0.25 |
-| [[p10_mem_prompt_technique_builder]] | related | 0.17 |
-| [[p10_mem_prompt_optimizer_builder]] | related | 0.16 |
-| [[p10_mem_eval_metric_builder]] | related | 0.16 |
-| [[p10_mem_benchmark_suite_builder]] | related | 0.16 |

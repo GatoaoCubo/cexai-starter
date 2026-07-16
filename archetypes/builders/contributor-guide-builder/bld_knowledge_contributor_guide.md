@@ -19,10 +19,7 @@ open, contributor license agreements, linux kernel, apache software foundation, 
 density_score: 0.85
 related:
   - contributor-guide-builder
-  - bld_instruction_contributor_guide
-  - p05_qg_contributor_guide
   - bld_tools_contributor_guide
-  - bld_output_template_contributor_guide
 ---
 ## Domain Overview  
 Open source contributor guides standardize onboarding processes, ensuring consistency in code quality, collaboration, and legal compliance. They serve as critical artifacts for projects adopting meritocratic governance, enabling scalable community contributions. Key components include development environment setup, pull request (PR) workflows, coding conventions, peer review protocols, and legal agreements like Contributor License Agreements (CLAs). These guides align with industry practices such as the Linux Kernel’s documentation rigor and Apache Software Foundation’s contribution policies, balancing developer autonomy with project governance.  
@@ -71,7 +68,4 @@ Open source contributor guides standardize onboarding processes, ensuring consis
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[contributor-guide-builder]] | downstream | 0.36 |
-| [[bld_instruction_contributor_guide]] | downstream | 0.34 |
-| [[p05_qg_contributor_guide]] | downstream | 0.31 |
 | [[bld_tools_contributor_guide]] | downstream | 0.30 |
-| [[bld_output_template_contributor_guide]] | downstream | 0.29 |

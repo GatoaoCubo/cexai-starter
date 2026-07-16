@@ -4,11 +4,8 @@ description: "Builds ONE scoring_rubric artifact via 8F pipeline. Loads scoring-
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - scoring-rubric-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p01_faq_cex_common_questions
 ---
 
 # scoring-rubric-builder Sub-Agent
@@ -90,4 +87,3 @@ Five duties bind any agent that emits an artifact:
 | kind-builder | related | 0.32 |
 | [[scoring-rubric-builder]] | related | 0.28 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.28 |
-| [[p01_faq_cex_common_questions]] | related | 0.27 |

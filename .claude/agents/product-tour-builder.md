@@ -4,11 +4,8 @@ description: "Builds ONE product_tour artifact via 8F pipeline. Loads product-to
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_product_tour_manifest
   - bld_config_product_tour
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p11_fb_product_tour
 ---
 
 # product-tour-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_product_tour_manifest]] | related | 0.33 |
 | [[bld_config_product_tour]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[p11_fb_product_tour]] | related | 0.28 |

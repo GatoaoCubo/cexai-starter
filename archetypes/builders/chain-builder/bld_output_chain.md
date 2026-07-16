@@ -32,10 +32,8 @@ keywords:
 density_score: 0.90
 related:
   - chain-builder
-  - p11_qg_chain
   - bld_schema_chain
   - bld_config_chain
-  - p01_kc_chain
 ---
 # Output Template: chain
 ```yaml
@@ -106,7 +104,5 @@ Context passing: `{{context_passing_strategy_description}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[chain-builder]] | upstream | 0.46 |
-| [[p11_qg_chain]] | downstream | 0.42 |
 | [[bld_schema_chain]] | downstream | 0.40 |
 | [[bld_config_chain]] | downstream | 0.40 |
-| [[p01_kc_chain]] | upstream | 0.39 |

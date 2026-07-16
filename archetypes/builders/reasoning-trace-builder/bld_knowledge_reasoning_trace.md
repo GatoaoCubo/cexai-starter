@@ -31,11 +31,8 @@ keywords:
   - "spec table"
 density_score: 0.90
 related:
-  - p03_ins_reasoning_trace_builder
   - reasoning-trace-builder
-  - p11_qg_reasoning_trace
   - bld_memory_reasoning_trace
-  - bld_collaboration_reasoning_trace
 ---
 # Domain Knowledge: reasoning_trace
 ## Executive Summary
@@ -96,8 +93,5 @@ Reasoning traces are structured YAML decision records — the audit mechanism fo
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_reasoning_trace_builder]] | downstream | 0.67 |
 | [[reasoning-trace-builder]] | downstream | 0.67 |
-| [[p11_qg_reasoning_trace]] | downstream | 0.65 |
 | [[bld_memory_reasoning_trace]] | downstream | 0.65 |
-| [[bld_collaboration_reasoning_trace]] | downstream | 0.59 |

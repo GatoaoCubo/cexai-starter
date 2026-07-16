@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [subscription_tier construction, output template subscription tier, subscription_tier, builder, output_template, tier name, tier level, related artifacts, features pricing, downstream]
 density_score: 0.85
 related:
-  - bld_instruction_subscription_tier
   - kc_subscription_tier
-  - n00_pricing_page_manifest
-  - bld_instruction_pricing_page
 ---
 ```yaml
 ---

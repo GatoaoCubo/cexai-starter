@@ -18,10 +18,7 @@ keywords: [vc_credential construction, knowledge card vc credential, vc_credenti
 density_score: 0.85
 related:
   - vc-credential-builder
-  - kc_vc_credential
-  - bld_instruction_vc_credential
   - bld_tools_vc_credential
-  - p10_lr_vc_credential_builder
 ---
 ## Domain Overview
 W3C Verifiable Credentials 2.0 (May 2025 REC) provides a standard data model for expressing credentials in a cryptographically verifiable, machine-readable format. In AI agent ecosystems, VCs enable decentralized identity: an AI agent can hold credentials issued by a trusted authority (N07 orchestrator, enterprise CA) attesting its capabilities, compliance status, or training data provenance -- without contacting the issuer at verification time.
@@ -74,7 +71,4 @@ Enterprise adoption is accelerating as machine-to-human identity ratios reach 14
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[vc-credential-builder]] | downstream | 0.56 |
-| [[kc_vc_credential]] | sibling | 0.43 |
-| [[bld_instruction_vc_credential]] | downstream | 0.41 |
 | [[bld_tools_vc_credential]] | downstream | 0.40 |
-| [[p10_lr_vc_credential_builder]] | downstream | 0.39 |

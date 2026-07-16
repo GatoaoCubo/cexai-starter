@@ -45,16 +45,9 @@ linked_artifacts:
 density_score: 0.88
 data_source: "p12_ct_cross_provider_council; examples/09_council_review/council_trace.md; .claude/rules/composable-crew.md; https://arxiv.org/abs/2310.01848"
 related:
-  - p12_ct_cross_provider_council
   - bld_architecture_lens
   - lens-builder
   - bld_memory_lens
-  - p11_cr_convene_council
-  - p01_kc_cex_lens_concept
-  - bld_collaboration_lens
-  - p01_kc_lens
-  - n00_lens_manifest
-  - p03_ins_lens
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_council. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
@@ -181,4 +174,3 @@ available. No MISSING CONTEXT flags raised.
 | [[bld_orchestration_lens]] | downstream | 0.33 |
 | [[kc_lens]] | sibling | 0.33 |
 | n00_lens_manifest | sibling | 0.30 |
-| [[p03_ins_lens]] | downstream | 0.30 |

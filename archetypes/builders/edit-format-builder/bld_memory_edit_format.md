@@ -17,10 +17,6 @@ updated: "2026-04-13"
 keywords: [edit_format construction, learning record edit format, edit_format, builder, learning_record, replace, insert, operation, context, action]
 density_score: 0.85
 related:
-  - bld_instruction_edit_format
-  - p10_lr_workflow_node_builder
-  - p06_qg_edit_format
-  - p10_lr_marketplace_app_manifest_builder
   - edit-format-builder
 ---
 ## Observation  
@@ -46,8 +42,4 @@ Reviewed artifacts using JSON-based metadata with `operation` and `context` fiel
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_edit_format]] | upstream | 0.28 |
-| [[p10_lr_workflow_node_builder]] | sibling | 0.23 |
-| [[p06_qg_edit_format]] | downstream | 0.23 |
-| [[p10_lr_marketplace_app_manifest_builder]] | sibling | 0.23 |
 | [[edit-format-builder]] | upstream | 0.23 |

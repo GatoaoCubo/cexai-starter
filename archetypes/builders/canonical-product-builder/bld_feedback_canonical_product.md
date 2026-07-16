@@ -16,9 +16,6 @@ density_score: 0.88
 created: "2026-07-03"
 updated: "2026-07-03"
 related:
-  - p11_fb_data_contract
-  - bld_qg_canonical_product
-  - bld_rules_canonical_product
   - kc_canonical_product
   - canonical-product-builder
 ---
@@ -87,8 +84,5 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_data_contract]] | sibling | 0.75 |
-| [[bld_qg_canonical_product]] | sibling | 0.55 |
-| [[bld_rules_canonical_product]] | sibling | 0.50 |
 | [[kc_canonical_product]] | upstream | 0.42 |
 | [[canonical-product-builder]] | upstream | 0.40 |

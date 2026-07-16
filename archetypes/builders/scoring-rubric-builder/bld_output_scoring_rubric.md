@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [template with, for scoring_rubric production, scoring rubric construction, output template scoring rubric, scoring_rubric, builder, examples, output template, framework overview, related artifacts]
 density_score: 0.90
 related:
-  - bld_output_template_quality_gate
-  - p11_qg_scoring-rubric
   - bld_schema_scoring_rubric
   - bld_architecture_scoring_rubric
-  - bld_knowledge_card_scoring_rubric
 ---
 # Output Template: scoring_rubric
 ```yaml
@@ -84,7 +81,6 @@ linked_artifacts:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | bld_output_template_quality_gate | sibling | 0.35 |
-| [[p11_qg_scoring-rubric]] | downstream | 0.32 |
 | [[bld_schema_scoring_rubric]] | downstream | 0.31 |
 | [[bld_architecture_scoring_rubric]] | downstream | 0.27 |
 | [[bld_knowledge_scoring_rubric]] | upstream | 0.26 |

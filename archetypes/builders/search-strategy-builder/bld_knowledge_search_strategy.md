@@ -19,10 +19,6 @@ search, key concepts, compute allocation, perf inference benchmark, query priori
 density_score: 0.85
 related:
   - search-strategy-builder
-  - p10_lr_search_strategy_builder
-  - kc_search_strategy
-  - p04_qg_search_strategy
-  - bld_output_template_search_strategy
 ---
 ## Domain Overview  
 Search_strategy artifacts define how systems allocate computational resources during inference phases of search or retrieval tasks. In modern AI/ML pipelines, inference-time compute allocation balances latency, accuracy, and resource constraints, especially in distributed or edge environments. Strategies must account for dynamic workloads, heterogeneous hardware (e.g., GPUs, TPUs), and varying query complexity. Key challenges include avoiding over-provisioning, ensuring fairness across concurrent requests, and aligning with service-level agreements (SLAs).  
@@ -75,7 +71,3 @@ This domain overlaps with MLOps and system optimization, leveraging techniques f
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[search-strategy-builder]] | downstream | 0.54 |
-| [[p10_lr_search_strategy_builder]] | downstream | 0.40 |
-| [[kc_search_strategy]] | sibling | 0.32 |
-| [[p04_qg_search_strategy]] | downstream | 0.30 |
-| [[bld_output_template_search_strategy]] | downstream | 0.29 |

@@ -20,10 +20,7 @@ structured]
 density_score: 0.85
 related:
   - multimodal-prompt-builder
-  - bld_knowledge_card_multimodal_prompt
   - multi-modal-config-builder
-  - p03_qg_multimodal_prompt
-  - bld_output_template_multi_modal_config
 ---
 ## Observation
 Misalignment between modalities (e.g., text describing unrelated visual/audio content) and ambiguous modality roles (e.g., unclear which modality drives the task) frequently hinder effectiveness. Overloading prompts with unrelated modalities also reduces coherence.
@@ -47,5 +44,4 @@ Reviewed artifacts showed 30% higher success rates when modalities were labeled 
 | [[multimodal-prompt-builder]] | upstream | 0.51 |
 | [[bld_knowledge_multimodal_prompt]] | upstream | 0.48 |
 | multi-modal-config-builder | upstream | 0.42 |
-| [[p03_qg_multimodal_prompt]] | downstream | 0.42 |
 | bld_output_template_multi_modal_config | upstream | 0.40 |

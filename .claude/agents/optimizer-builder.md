@@ -4,10 +4,7 @@ description: "Builds ONE optimizer artifact via 8F pipeline. Loads optimizer-bui
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_optimizer
   - optimizer-builder
-  - p11_qg_optimizer
-  - n00_optimizer_manifest
   - kind-builder
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_optimizer]] | related | 0.39 |
 | [[optimizer-builder]] | related | 0.38 |
-| [[p11_qg_optimizer]] | related | 0.35 |
-| [[n00_optimizer_manifest]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |

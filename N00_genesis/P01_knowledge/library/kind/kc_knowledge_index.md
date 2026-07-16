@@ -19,9 +19,6 @@ feeds_kinds: [knowledge_index]
 density_score: null
 related:
   - knowledge-index-builder
-  - bld_collaboration_knowledge_index
-  - bld_knowledge_card_knowledge_index
-  - bld_collaboration_embedding_config
 ---
 
 # Brain Index

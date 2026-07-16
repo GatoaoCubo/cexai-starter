@@ -15,12 +15,6 @@ llm_function: GOVERN
 density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-22"
-related:
-  - p11_fb_quality_gate
-  - p11_fb_signal
-  - p11_fb_pattern
-  - p11_fb__builder
-  - p11_fb_pipeline_template
 ---
 # Feedback: Reward Signal
 
@@ -90,7 +84,5 @@ density: 0.85+
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p11_fb_quality_gate | sibling | 0.82 |
-| [[p11_fb_signal]] | sibling | 0.81 |
-| [[p11_fb_pattern]] | sibling | 0.81 |
 | p11_fb__builder | sibling | 0.80 |
 | p11_fb_pipeline_template | sibling | 0.80 |

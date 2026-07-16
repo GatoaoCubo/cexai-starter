@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [env config construction, collaboration env config, env_config, builder, examples, "### crew: multi-provider deployment", my role, crew compositions, deployment configuration, provider deployment]
 density_score: 0.90
 related:
-  - bld_collaboration_boot_config
-  - bld_collaboration_path_config
   - env-config-builder
-  - bld_collaboration_trace_config
-  - bld_collaboration_secret_config
 ---
 # Collaboration: env-config-builder
 ## My Role in Crews

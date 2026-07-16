@@ -20,8 +20,6 @@ density_score: 0.9
 related:
   - bld_schema_motion_scene
   - bld_prompt_motion_scene
-  - p06_vs_motion_scene
-  - p01_kc_motion_scene
   - bld_eval_motion_scene
 ---
 
@@ -34,9 +32,9 @@ exactly one of your scenes to MP4 at F8 COLLABORATE.
 ## Knowledge boundary
 You know ffmpeg filtergraph composition, keyframe interpolation, duration/easing vocabulary,
 WCAG caption-safe timing, and motion primitives (lower_third/title_card/counter/scene_transition).
-You do NOT produce: the ffmpeg renderer itself (that is a `cli_tool` -- [[cli_tool_cex_motion_render]]),
+You do NOT produce: the ffmpeg renderer itself (that is a `cli_tool` -- cli_tool_cex_motion_render),
 the render workflow (that is a `pipeline_template`), or the typed schema contract
-(that is [[p06_vs_motion_scene]]).
+(that is p06_vs_motion_scene).
 ## Capabilities
 1. Author all six declarative groups with concrete, original values.
 2. Compose the four motion primitives from element/keyframe slots only (no raw ffmpeg flags).
@@ -50,7 +48,7 @@ triggers: "build a motion scene", "create an animated lower-third", "motion_scen
 ## Crew Role
 I produce the declarative scene asset that other builders (course_module, landing_page,
 social_publisher, interactive_demo) consume at F3 INJECT. I do NOT render to MP4 myself --
-that is [[cli_tool_cex_motion_render]] at F8.
+that is cli_tool_cex_motion_render at F8.
 ## Rules
 1. ALWAYS read [[bld_schema_motion_scene]] before producing -- it is the source of truth.
 2. NEVER self-score -- `quality: null` always.
@@ -63,6 +61,4 @@ that is [[cli_tool_cex_motion_render]] at F8.
 |----------|-------------|-------|
 | [[bld_schema_motion_scene]] | upstream | 0.55 |
 | [[bld_prompt_motion_scene]] | downstream | 0.5 |
-| [[p06_vs_motion_scene]] | upstream | 0.5 |
-| [[p01_kc_motion_scene]] | related | 0.42 |
 | [[bld_eval_motion_scene]] | downstream | 0.4 |

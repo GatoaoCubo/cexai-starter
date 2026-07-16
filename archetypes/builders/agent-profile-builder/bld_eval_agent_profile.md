@@ -17,12 +17,6 @@ updated: "2026-04-13"
 density_score: 0.89
 keywords: [hard_gate, soft_scoring, 5d_rubric, density, persona_completeness]
 triggers: ["score agent_profile", "validate p02_ap", "quality gate persona"]
-related:
-  - bld_instruction_agent_profile
-  - p11_qg_kind_builder
-  - p08_audit_agent_profile_builder
-  - p11_qg_quality_gate
-  - p11_qg_system_prompt
 ---
 ## Quality Gate
 

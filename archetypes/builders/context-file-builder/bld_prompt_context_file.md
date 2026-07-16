@@ -30,9 +30,7 @@ density_score: 0.93
 llm_function: REASON
 related:
  - kc_context_file
- - p11_qg_context_file
  - context-file-builder
- - bld_knowledge_card_context_file
  - bld_memory_context_file
 ---
 ## Context
@@ -161,7 +159,6 @@ Verifiable exit: all HARD gates pass; SOFT gate failures logged with remediation
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_context_file]] | upstream | 0.56 |
-| [[p11_qg_context_file]] | related | 0.52 |
 | [[context-file-builder]] | related | 0.52 |
 | [[bld_knowledge_context_file]] | related | 0.50 |
 | [[bld_memory_context_file]] | downstream | 0.49 |

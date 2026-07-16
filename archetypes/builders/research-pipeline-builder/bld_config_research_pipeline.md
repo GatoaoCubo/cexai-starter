@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, research pipeline construction, config research pipeline, research_pipeline, builder, examples, "research_pipeline_config_{empresa}.yaml"]
 density_score: 0.90
 related:
-  - bld_config_social_publisher
-  - p01_kc_source_catalog
   - bld_config_content_monetization
-  - p04_cli_research_pipeline_n01
-  - tpl_research_pipeline
 ---
 # Config: research_pipeline Production Rules
 

@@ -28,11 +28,8 @@ updated: "2026-04-13"
 keywords: [naming conventions, file paths, size limits, operational constraints, streaming config construction, config streaming config, naming p, bytes body, protocol enum enforced, heartbeat required for sse]
 density_score: 0.90
 related:
-  - bld_knowledge_card_streaming_config
-  - bld_instruction_streaming_config
   - streaming-config-builder
   - bld_schema_streaming_config
-  - p10_lr_streaming_config_builder
 ---
 # Config: streaming_config Production Rules
 
@@ -101,8 +98,5 @@ python _tools/cex_score.py --apply bld_config_streaming_config.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_streaming_config]] | upstream | 0.47 |
-| [[bld_instruction_streaming_config]] | upstream | 0.39 |
 | [[streaming-config-builder]] | upstream | 0.37 |
 | [[bld_schema_streaming_config]] | upstream | 0.34 |
-| [[p10_lr_streaming_config_builder]] | downstream | 0.32 |

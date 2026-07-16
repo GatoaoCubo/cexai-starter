@@ -35,10 +35,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - cost-budget-builder
-  - bld_knowledge_card_cost_budget
-  - p11_qg_cost_budget
-  - bld_collaboration_cost_budget
-  - bld_instruction_cost_budget
 ---
 ## Summary
 Cost budget failures split into two categories: financial surprises (overages discovered
@@ -109,7 +105,3 @@ target: 9.0
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cost-budget-builder]] | upstream | 0.46 |
-| [[bld_knowledge_card_cost_budget]] | upstream | 0.40 |
-| [[p11_qg_cost_budget]] | downstream | 0.40 |
-| [[bld_collaboration_cost_budget]] | downstream | 0.39 |
-| [[bld_instruction_cost_budget]] | upstream | 0.37 |

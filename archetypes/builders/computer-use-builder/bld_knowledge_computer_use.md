@@ -19,11 +19,7 @@ keywords: [gui automation via llm, computer use construction, knowledge card com
 computer, spec table, implementation mapping]
 density_score: 0.90
 related:
-  - p11_qg_computer_use
-  - p10_lr_computer_use_builder
   - computer-use-builder
-  - p04_cu_desktop_agent
-  - bld_instruction_computer_use
 ---
 # Domain Knowledge: computer_use
 
@@ -80,8 +76,6 @@ Computer use tools enable LLMs to interact with graphical interfaces by capturin
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_computer_use]] | downstream | 0.53 |
-| [[p10_lr_computer_use_builder]] | downstream | 0.51 |
 | [[computer-use-builder]] | downstream | 0.49 |
 | p04_cu_desktop_agent | downstream | 0.44 |
 | [[bld_prompt_computer_use]] | downstream | 0.44 |

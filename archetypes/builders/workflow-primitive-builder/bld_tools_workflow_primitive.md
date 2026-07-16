@@ -18,10 +18,8 @@ keywords: [workflow primitive construction, tools workflow primitive, workflow_p
 density_score: 0.90
 related:
   - bld_architecture_workflow_primitive
-  - bld_collaboration_workflow_primitive
   - bld_config_workflow_primitive
   - workflow-primitive-builder
-  - p03_ins_workflow_primitive_builder
 ---
 # Tools: workflow-primitive-builder
 ## Production Tools
@@ -73,4 +71,3 @@ Until a dedicated workflow_primitive validator exists, validate manually:
 | [[bld_orchestration_workflow_primitive]] | upstream | 0.49 |
 | [[bld_config_workflow_primitive]] | downstream | 0.47 |
 | [[workflow-primitive-builder]] | downstream | 0.43 |
-| [[p03_ins_workflow_primitive_builder]] | upstream | 0.42 |

@@ -19,11 +19,8 @@ keywords: [bidirectional service integration, db connector construction, knowled
 connectors, spec table, enterprise integration patterns]
 density_score: 0.90
 related:
-  - p10_lr_connector_builder
-  - bld_instruction_connector
   - db-connector-builder
   - webhook-builder
-  - p01_kc_webhook
 ---
 # Domain Knowledge: connector
 
@@ -77,8 +74,5 @@ Connectors are bidirectional integration bridges that both send and receive data
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_connector_builder]] | downstream | 0.50 |
-| [[bld_instruction_connector]] | downstream | 0.42 |
 | [[db-connector-builder]] | downstream | 0.42 |
 | [[webhook-builder]] | downstream | 0.40 |
-| [[p01_kc_webhook]] | sibling | 0.39 |

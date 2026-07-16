@@ -26,11 +26,7 @@ title: "Memory Bugloop"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p01_kc_bugloop
-  - bld_knowledge_card_bugloop
   - bugloop-builder
-  - p12_wf_auto_debug
-  - p11_qg_bugloop
 ---
 ## Summary
 Automated bug-fix loops fail disproportionately when a single confidence threshold drives fix application without first classifying the failure type. Deterministic failures (syntax error, missing import, missing file) are reliably auto-fixable. Probabilistic failures (logic error, assertion mismatch, intermittent failure) require either manual review or a conservative retry with distinct strategies before escalating.
@@ -87,8 +83,4 @@ python _tools/cex_score.py --apply p10-lr-bugloop-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_bugloop]] | downstream | 0.39 |
-| [[bld_knowledge_card_bugloop]] | upstream | 0.38 |
 | [[bugloop-builder]] | downstream | 0.36 |
-| [[p12_wf_auto_debug]] | downstream | 0.35 |
-| [[p11_qg_bugloop]] | downstream | 0.35 |

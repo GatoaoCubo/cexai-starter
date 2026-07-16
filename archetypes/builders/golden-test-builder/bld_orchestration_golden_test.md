@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [golden test construction, collaboration golden test, golden_test, builder, examples, "### crew: builder calibration", my role, crew compositions, quality pipeline, builder calibration]
 density_score: 0.90
 related:
-  - bld_collaboration_few_shot_example
-  - bld_collaboration_action_prompt
   - golden-test-builder
-  - bld_collaboration_e2e_eval
-  - bld_collaboration_prompt_version
 ---
 # Collaboration: golden-test-builder
 ## My Role in Crews

@@ -26,11 +26,7 @@ title: Memory ISO - multi_modal_config
 8f: "F7_govern"
 density_score: 1.0
 related:
-  - bld_knowledge_card_multi_modal_config
-  - p01_kc_multi_modal_config
-  - bld_output_template_multi_modal_config
   - multi-modal-config-builder
-  - bld_collaboration_multi_modal_config
 ---
 ## Summary
 Multi-modal configs define how non-text inputs are processed in LLM pipelines. Primary failures are unlimited resolution (burns tokens), no format validation (API errors), and no fallback chains.
@@ -48,8 +44,4 @@ Multi-modal configs define how non-text inputs are processed in LLM pipelines. P
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_multi_modal_config]] | upstream | 0.42 |
-| [[p01_kc_multi_modal_config]] | upstream | 0.39 |
-| [[bld_output_template_multi_modal_config]] | upstream | 0.34 |
 | [[multi-modal-config-builder]] | upstream | 0.33 |
-| [[bld_collaboration_multi_modal_config]] | downstream | 0.29 |

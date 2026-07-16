@@ -19,10 +19,6 @@ keywords: [regression check construction, collaboration regression check, regres
 density_score: 0.90
 related:
   - regression-check-builder
-  - bld_collaboration_eval_dataset
-  - bld_collaboration_golden_test
-  - bld_collaboration_smoke_eval
-  - bld_knowledge_card_regression_check
 ---
 # Collaboration: regression-check-builder
 ## My Role in Crews
@@ -93,7 +89,3 @@ I configure comparison gates so pipelines can detect quality degradation before 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[regression-check-builder]] | upstream | 0.39 |
-| [[bld_collaboration_eval_dataset]] | sibling | 0.36 |
-| [[bld_collaboration_golden_test]] | sibling | 0.34 |
-| [[bld_collaboration_smoke_eval]] | sibling | 0.34 |
-| [[bld_knowledge_card_regression_check]] | upstream | 0.33 |

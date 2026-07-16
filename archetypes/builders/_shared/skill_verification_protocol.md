@@ -14,10 +14,8 @@ source_insight: "OpenClaude verificationAgent.ts -- adapted as shared builder sk
 tldr: "Every builder can invoke adversarial verification on its output before publishing"
 density_score: 0.86
 related:
-  - bld_collaboration_skill
   - skill-builder
   - bld_architecture_skill
-  - p04_skill_verify
   - bld_memory_skill
 ---
 

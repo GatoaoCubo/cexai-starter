@@ -4,11 +4,8 @@ description: "Builds ONE model_provider artifact via 8F pipeline. Loads model-pr
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_model_provider
   - model-provider-builder
   - bld_config_model_provider
-  - p01_kc_pillar_brief_p02_model_en
-  - n00_model_provider_manifest
 ---
 
 # model-provider-builder Sub-Agent

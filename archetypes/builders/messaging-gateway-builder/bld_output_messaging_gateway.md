@@ -18,11 +18,9 @@ updated: "2026-04-18"
 keywords: [messaging gateway construction, output template, fill-in-the-blanks template for messaging_gateway, required sections, platform matrix, security table, slash commands, stub notice, messaging_gateway, builder]
 density_score: 0.90
 related:
-  - n00_messaging_gateway_manifest
   - bld_architecture_messaging_gateway
   - messaging-gateway-builder
   - p04_mg_{{platform}}
-  - bld_instruction_messaging_gateway
 ---
 # Output Template: messaging_gateway
 
@@ -142,8 +140,6 @@ and run `messaging gateway setup` then `messaging gateway start`.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_messaging_gateway_manifest]] | upstream | 0.56 |
 | [[bld_architecture_messaging_gateway]] | downstream | 0.54 |
 | [[messaging-gateway-builder]] | upstream | 0.53 |
 | [\[p04_mg_`{{platform}}`\]] | upstream | 0.53 |
-| [[bld_instruction_messaging_gateway]] | upstream | 0.53 |

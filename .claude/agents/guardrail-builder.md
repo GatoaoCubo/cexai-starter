@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - guardrail-builder
   - bld_architecture_guardrail
-  - n00_guardrail_manifest
-  - bld_collaboration_guardrail
   - kind-builder
 ---
 

@@ -19,11 +19,7 @@ refines, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_self_improvement_loop
-  - bld_collaboration_prompt_technique
-  - bld_collaboration_discovery_questions
   - prompt-optimizer-builder
-  - bld_collaboration_action_paradigm
 ---
 ## Crew Role  
 Refines prompts for effectiveness, efficiency, and alignment with downstream tasks by iteratively testing, analyzing, and adjusting prompt structures and language.  
@@ -48,8 +44,4 @@ Does NOT compile prompts into code (handled by prompt_compiler) or perform gener
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_self_improvement_loop]] | sibling | 0.30 |
-| [[bld_collaboration_prompt_technique]] | sibling | 0.29 |
-| [[bld_collaboration_discovery_questions]] | sibling | 0.26 |
 | [[prompt-optimizer-builder]] | upstream | 0.26 |
-| [[bld_collaboration_action_paradigm]] | sibling | 0.25 |

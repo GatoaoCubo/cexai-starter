@@ -19,10 +19,6 @@ feeds_kinds: [handoff_protocol]
 density_score: null
 related:
   - handoff-protocol-builder
-  - bld_knowledge_card_handoff_protocol
-  - bld_collaboration_handoff_protocol
-  - p01_kc_pillar_brief_p12_orchestration_en
-  - p01_kc_agent
 ---
 
 # Handoff Protocol

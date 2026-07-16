@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [response format construction, collaboration response format, response_format, builder, examples, "### crew: agent prompt stack", "### crew: eval-ready agent pack", my role, crew compositions, structured output pipeline]
 density_score: 0.90
 related:
-  - bld_collaboration_prompt_template
   - response-format-builder
-  - bld_collaboration_action_prompt
-  - bld_collaboration_validation_schema
-  - bld_collaboration_system_prompt
 ---
 # Collaboration: response-format-builder
 ## My Role in Crews

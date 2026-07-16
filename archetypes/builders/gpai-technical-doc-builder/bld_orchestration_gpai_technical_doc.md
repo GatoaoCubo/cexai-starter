@@ -18,11 +18,7 @@ keywords: [gpai_technical_doc construction, collaboration gpai technical doc, gp
 produces]
 density_score: 0.85
 related:
-  - bld_collaboration_ai_rmf_profile
   - gpai-technical-doc-builder
-  - bld_collaboration_llm_evaluation_scenario
-  - bld_knowledge_card_gpai_technical_doc
-  - bld_collaboration_safety_hazard_taxonomy
 ---
 ## Crew Role
 Produces EU AI Act GPAI technical documentation (Article 53 / Annex IV) for submission to the EU AI Office, covering training data, compute, energy, evaluation, intended purpose, and downstream limits.
@@ -49,8 +45,4 @@ Does NOT handle NIST AI-RMF profiles (use ai_rmf_profile-builder), conformity as
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_ai_rmf_profile]] | sibling | 0.37 |
 | [[gpai-technical-doc-builder]] | upstream | 0.33 |
-| [[bld_collaboration_llm_evaluation_scenario]] | sibling | 0.29 |
-| [[bld_knowledge_card_gpai_technical_doc]] | upstream | 0.27 |
-| [[bld_collaboration_safety_hazard_taxonomy]] | sibling | 0.26 |

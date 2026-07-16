@@ -19,8 +19,6 @@ density_score: 0.90
 related:
   - quality-gate-builder
   - bld_architecture_validator
-  - p03_ins_quality_gate
-  - p01_kc_validator
   - bld_architecture_scoring_rubric
 ---
 # Architecture: quality_gate in the CEX
@@ -70,6 +68,4 @@ validator       --depends-->       quality_gate
 |----------|-------------|-------|
 | [[quality-gate-builder]] | downstream | 0.45 |
 | [[bld_architecture_validator]] | sibling | 0.41 |
-| [[p03_ins_quality_gate]] | downstream | 0.35 |
-| [[p01_kc_validator]] | upstream | 0.34 |
 | [[bld_architecture_scoring_rubric]] | sibling | 0.33 |

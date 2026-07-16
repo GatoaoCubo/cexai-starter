@@ -31,11 +31,7 @@ keywords:
   - "scope discipline"
 density_score: 0.90
 related:
-  - bld_knowledge_card_reverse_prompt
   - reverse-prompt-builder
-  - bld_collaboration_reverse_prompt
-  - p03_ins_reverse_prompt
-  - p01_kc_reverse_prompt
 ---
 # Memory: reverse-prompt-builder
 ## Summary
@@ -86,8 +82,4 @@ python _tools/cex_score.py --apply bld-memory-reverse-prompt.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_reverse_prompt]] | upstream | 0.57 |
 | [[reverse-prompt-builder]] | upstream | 0.55 |
-| [[bld_collaboration_reverse_prompt]] | upstream | 0.47 |
-| [[p03_ins_reverse_prompt]] | upstream | 0.46 |
-| [[p01_kc_reverse_prompt]] | upstream | 0.45 |

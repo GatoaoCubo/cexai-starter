@@ -29,11 +29,9 @@ keywords: [type def builder instructions, composition rules, nullable semantics,
 density_score: 0.91
 llm_function: REASON
 related:
-  - bld_knowledge_card_type_def
   - type-def-builder
   - bld_schema_type_def
   - bld_architecture_type_def
-  - p11_qg_type_def
 ---
 ## Context
 The type-def-builder produces a `type_def` artifact -- a machine-parseable YAML that declares a reusable costm type. These types form the vocabulary layer that other artifacts reference: `input_schema` uses them to define field types, `validator` uses them to enforce constraints, and `grammar` uses them for structural rules.

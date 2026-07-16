@@ -13,12 +13,6 @@ tags: [agent_card, n01, research, analyst, routing]
 tldr: "Research Analyst routing card — 12 capabilities, hybrid provider, input/output contracts, inter-nucleus handoffs."
 keywords: [competitive grid, market snapshot, trend report, source dossier, swot analysis, benchmark report, executive summary, web grounding, deep synthesis]
 density_score: 0.93
-related:
-  - p02_agent_intelligence_n01
-  - n01_dr_intelligence
-  - n01_intelligence
-  - component_map_n01
-  - n01_dr_research_pipeline
 ---
 
 # N01 Research Analyst — Agent Card
@@ -85,6 +79,5 @@ related:
 |----------|-------------|-------|
 | p02_agent_intelligence_n01 | related | 0.37 |
 | n01_dr_intelligence | downstream | 0.36 |
-| [[n01_intelligence]] | downstream | 0.36 |
 | component_map_n01 | downstream | 0.36 |
 | n01_dr_research_pipeline | downstream | 0.35 |

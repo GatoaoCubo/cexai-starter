@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_collaboration_prosody_config
-  - p10_lr_prosody_config_builder
-  - n00_prosody_config_manifest
-  - p01_kc_prosody_config
-  - kc_voice_pipeline
 ---
 ## Identity
 
@@ -61,12 +55,3 @@ The prosody_config-builder agent generates prosody configuration profiles that d
 3. Uses precise numerical ranges for prosody parameters (e.g., pitch: 180–260 Hz, rate: 160–220 WPM).  
 4. Validates compatibility with major tts platforms (e.g., Amazon Polly, Google Cloud Text-to-Speech).  
 5. Documents each parameter’s impact on perceived emotion (e.g., "higher pitch increases perceived urgency by 12–15%").
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_prosody_config]] | downstream | 0.51 |
-| [[p10_lr_prosody_config_builder]] | downstream | 0.45 |
-| [[n00_prosody_config_manifest]] | related | 0.39 |
-| [[p01_kc_prosody_config]] | related | 0.37 |
-| [[kc_voice_pipeline]] | upstream | 0.35 |

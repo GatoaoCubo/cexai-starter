@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [pricing_page construction, quality gate pricing page, pricing_page, builder, quality_gate, quality gate, fail condition, scoring guide, conversion copy, metric threshold]
 density_score: 0.85
-related:
-  - n00_pricing_page_manifest
-  - bld_instruction_pricing_page
-  - p09_qg_marketplace_app_manifest
-  - p11_qg_subscription_tier
-  - bld_knowledge_card_pricing_page
 ---
 ## Quality Gate
 ## Definition

@@ -23,7 +23,6 @@ tags: [market-gap, hotmart, infoproduto, cexai-s1, ptbr-llm-courses, refund-risk
 density_score: 0.91
 related:
   - competitive_matrix_ptbr_llm_courses
-  - case_study_lendaria_pricing_anchor
   - p01_kc_market_sizing_methodology
 primary_8f: INJECT
 ---

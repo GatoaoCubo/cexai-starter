@@ -18,10 +18,6 @@ keywords: [sales_playbook construction, quality gate sales playbook, sales_playb
 density_score: 0.85
 related:
   - sales-playbook-builder
-  - kc_sales_playbook
-  - bld_instruction_sales_playbook
-  - p10_mem_sales_playbook_builder
-  - p01_qg_discovery_questions
 ---
 ## Quality Gate
 

@@ -18,10 +18,7 @@ keywords: [planning_strategy construction, output template planning strategy, st
 density_score: 0.88
 related:
   - bld_schema_planning_strategy
-  - audit_planning_strategy_builder
   - planning-strategy-builder
-  - p01_kc_academic_agent_patterns
-  - n00_planning_strategy_manifest
 ---
 # Output Template -- planning_strategy
 

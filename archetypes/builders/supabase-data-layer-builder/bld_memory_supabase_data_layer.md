@@ -17,12 +17,6 @@ density_score: 0.85
 memory_scope: project
 observation_types: [user, feedback, project, reference]
 llm_function: INJECT
-related:
-  - bld_knowledge_card_supabase_data_layer
-  - bld_manifest_supabase_data_layer
-  - p12_wf_supabase_setup
-  - p01_kc_supabase_multi_tenant
-  - bld_quality_gate_supabase_data_layer
 ---
 # Builder Memory
 
@@ -58,12 +52,3 @@ The Supabase Data Layer builder produces configuration artifacts (YAML + SQL) th
 
 ## Context
 This builder was created for CEX (Codexa) to enable any company to get a complete data layer via config. N04 superintends — no nucleus writes to Supabase without N04's schema definition. Learning records are appended as companies onboard and edge cases surface.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_supabase_data_layer]] | related | 0.47 |
-| [[bld_manifest_supabase_data_layer]] | downstream | 0.45 |
-| [[p12_wf_supabase_setup]] | downstream | 0.44 |
-| [[p01_kc_supabase_multi_tenant]] | related | 0.42 |
-| [[bld_quality_gate_supabase_data_layer]] | downstream | 0.42 |

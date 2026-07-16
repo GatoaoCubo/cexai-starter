@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [ab_test_config construction, ab_test_config, builder, output_template, test name, control group, treatment group, start date, end date, feature_flag_test description]
 density_score: 0.85
 related:
-  - bld_output_template_cohort_analysis
-  - bld_output_template_collaboration_pattern
   - bld_config_ab_test_config
-  - p06_is_marketing_data_model
-  - bld_output_template_sales_playbook
 ---
 ```yaml
 ---
@@ -55,8 +51,4 @@ ab_test:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_cohort_analysis]] | sibling | 0.27 |
-| [[bld_output_template_collaboration_pattern]] | sibling | 0.26 |
 | [[bld_config_ab_test_config]] | downstream | 0.22 |
-| [[p06_is_marketing_data_model]] | downstream | 0.19 |
-| [[bld_output_template_sales_playbook]] | sibling | 0.19 |

@@ -18,10 +18,6 @@ keywords: [voice_pipeline construction, knowledge card, voice pipeline, voice pi
 density_score: 0.90
 related:
   - voice-pipeline-builder
-  - bld_output_template_voice_pipeline
-  - p01_kc_audio_tool
-  - p11_qg_voice_pipeline
-  - bld_knowledge_card_audio_tool
 ---
 ## Domain Overview
 
@@ -117,7 +113,3 @@ AWS Lex v2 for NLU; telephony via Twilio Voice Media Streams (SRTP/RTP), LiveKit
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[voice-pipeline-builder]] | downstream | 0.59 |
-| [[bld_output_template_voice_pipeline]] | downstream | 0.57 |
-| [[p01_kc_audio_tool]] | sibling | 0.53 |
-| [[p11_qg_voice_pipeline]] | downstream | 0.52 |
-| [[bld_knowledge_card_audio_tool]] | sibling | 0.47 |

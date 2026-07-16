@@ -17,11 +17,8 @@ long_tails:
   - "how do the five revenue flywheel phases map to CEX kinds"
   - "what governing metric drives each stage of the SaaS revenue loop"
 related:
-  - p12_wf_revenue_loop_n06
   - p01_kc_few_shot_examples_pricing_scenarios
-  - p01_kc_revenue_gap_map
   - kc_commercial_vocabulary
-  - eval_metric_commercial
 ---
 
 # Mental Model: Revenue Flywheel

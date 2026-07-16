@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - env-config-builder
-  - bld_instruction_input_schema
-  - bld_instruction_secret_config
-  - p11_qg_env_config
-  - bld_instruction_enum_def
 ---
 # Instructions: How to Produce an env_config
 ## Phase 1: RESEARCH
@@ -76,5 +72,4 @@ related:
 | [[env-config-builder]] | downstream | 0.39 |
 | [[bld_prompt_input_schema]] | sibling | 0.39 |
 | [[bld_prompt_secret_config]] | sibling | 0.38 |
-| [[p11_qg_env_config]] | downstream | 0.36 |
 | [[bld_prompt_enum_def]] | sibling | 0.36 |

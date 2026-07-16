@@ -28,11 +28,7 @@ updated: "2026-04-13"
 keywords: [naming conventions, file paths, size limits, operational constraints for knowledge_graph, knowledge graph construction, knowledge_graph production rules, knowledge_graph, builder, config, "p01_kg_{name}.md"]
 density_score: 0.90
 related:
-  - bld_instruction_knowledge_graph
-  - bld_knowledge_card_knowledge_graph
-  - p10_lr_knowledge_graph_builder
   - bld_schema_knowledge_graph
-  - p01_kc_knowledge_graph
 ---
 # Config: knowledge_graph Production Rules
 
@@ -123,8 +119,4 @@ python _tools/cex_score.py --apply bld_config_knowledge_graph.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_knowledge_graph]] | upstream | 0.45 |
-| [[bld_knowledge_card_knowledge_graph]] | upstream | 0.43 |
-| [[p10_lr_knowledge_graph_builder]] | downstream | 0.41 |
 | [[bld_schema_knowledge_graph]] | upstream | 0.39 |
-| [[p01_kc_knowledge_graph]] | upstream | 0.38 |

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [and per-inference provenance standards, agent_grounding_record construction, otel v, genai semconv, ai-ml guidance, agent_grounding_record, builder]
 density_score: 0.85
 related:
-  - bld_manifest_agent_grounding_record
-  - kc_agent_grounding_record
-  - bld_instruction_agent_grounding_record
   - bld_architecture_agent_grounding_record
-  - bld_collaboration_agent_grounding_record
 ---
 # Agent Grounding Record -- Knowledge Card
 ## Domain Overview
@@ -65,8 +61,4 @@ The OTel span identified by `otel_span_id` SHOULD contain these attributes. The 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_agent_grounding_record]] | downstream | 0.51 |
-| [[kc_agent_grounding_record]] | sibling | 0.43 |
-| [[bld_instruction_agent_grounding_record]] | downstream | 0.42 |
 | [[bld_architecture_agent_grounding_record]] | downstream | 0.42 |
-| [[bld_collaboration_agent_grounding_record]] | downstream | 0.39 |

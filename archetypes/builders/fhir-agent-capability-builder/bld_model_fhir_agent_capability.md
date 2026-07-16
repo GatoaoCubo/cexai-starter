@@ -18,10 +18,6 @@ keywords: [builder identity, routing for fhir_agent_capability, fhir_agent_capab
 specializes]
 density_score: 0.85
 related:
-  - bld_knowledge_card_fhir_agent_capability
-  - bld_instruction_fhir_agent_capability
-  - bld_collaboration_fhir_agent_capability
-  - kc_fhir_agent_capability
   - bld_tools_fhir_agent_capability
 ---
 ## Identity
@@ -76,8 +72,4 @@ NEVER self-score quality; peer review assigns quality field.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_fhir_agent_capability]] | upstream | 0.72 |
-| [[bld_instruction_fhir_agent_capability]] | upstream | 0.68 |
-| [[bld_collaboration_fhir_agent_capability]] | downstream | 0.68 |
-| [[kc_fhir_agent_capability]] | upstream | 0.66 |
 | [[bld_tools_fhir_agent_capability]] | upstream | 0.63 |

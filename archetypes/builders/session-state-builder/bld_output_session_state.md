@@ -18,9 +18,6 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - bld_config_session_state
-  - bld_knowledge_card_session_state
-  - p03_ins_session_state_builder
-  - bld_output_template_dag
   - bld_schema_session_state
 ---
 # Output Template: session_state
@@ -96,6 +93,5 @@ linked_artifacts:
 |----------|-------------|-------|
 | [[bld_config_session_state]] | downstream | 0.42 |
 | [[bld_knowledge_session_state]] | upstream | 0.40 |
-| [[p03_ins_session_state_builder]] | upstream | 0.37 |
 | bld_output_template_dag | sibling | 0.34 |
 | [[bld_schema_session_state]] | downstream | 0.33 |

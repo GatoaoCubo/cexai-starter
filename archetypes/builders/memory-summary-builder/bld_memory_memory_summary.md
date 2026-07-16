@@ -26,11 +26,9 @@ title: "Memory Memory Summary"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_memory_summary
   - memory-summary-builder
   - bld_tools_memory_type
   - bld_config_memory_type
-  - bld_collaboration_memory_summary
 ---
 ## Summary
 Memory summaries fail silently when retention policies are implicit. The difference between preserving agent commitments across sessions and losing them comes down to two spec-time decisions: whether action items are explicitly declared as retained, and whether the compression method preserves their exact phrasing.

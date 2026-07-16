@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - bld_memory_prompt_template
   - prompt-template-builder
-  - p03_ins_prompt_template
-  - bld_collaboration_prompt_template
-  - schema_prompt_template_builder
 ---
 # Domain Knowledge: prompt_template
 ## Executive Summary
@@ -83,6 +80,4 @@ Prompt templates are parameterized text molds where fixed structure and dynamic 
 |----------|-------------|-------|
 | [[bld_memory_prompt_template]] | downstream | 0.57 |
 | [[prompt-template-builder]] | downstream | 0.57 |
-| [[p03_ins_prompt_template]] | downstream | 0.55 |
 | [[bld_orchestration_prompt_template]] | downstream | 0.50 |
-| [[schema_prompt_template_builder]] | downstream | 0.45 |

@@ -25,11 +25,7 @@ keywords: [config iso - webhook, runtime config, naming convention, size limit, 
 density_score: 1.0
 title: Config ISO - webhook
 related:
-  - p11_qg_webhook
-  - bld_instruction_webhook
   - webhook-builder
-  - bld_knowledge_card_webhook
-  - n00_webhook_manifest
 ---
 # Config: webhook
 ## Naming Convention
@@ -99,8 +95,4 @@ JSON Schema (type:object, required+properties). Include: event_id, event_type, d
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_webhook]] | downstream | 0.45 |
-| [[bld_instruction_webhook]] | upstream | 0.44 |
 | [[webhook-builder]] | related | 0.40 |
-| [[bld_knowledge_card_webhook]] | downstream | 0.38 |
-| [[n00_webhook_manifest]] | related | 0.38 |

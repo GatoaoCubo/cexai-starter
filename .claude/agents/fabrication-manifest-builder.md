@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - fabrication-manifest-builder
   - kind-builder
-  - kc_fabrication_manifest
-  - p03_sp_builder_nucleus
   - team-charter-builder
 ---
 
@@ -102,6 +100,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[fabrication-manifest-builder]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |
-| [[kc_fabrication_manifest]] | related | 0.35 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[team-charter-builder]] | related | 0.28 |

@@ -18,10 +18,6 @@ keywords: [legal vertical, contract automation analysis, legal, contract, legalt
 density_score: 1.0
 updated: "2026-04-22"
 related:
-  - p06_td_cex_artifact_type_n03
-  - p01_qg_legal_vertical
-  - kc_renewal_workflow
-  - bld_context_sources_data_contract
   - bld_architecture_kind
 ---
 
@@ -166,5 +162,4 @@ related:
 | p06_td_cex_artifact_type_n03 | downstream | 0.25 |
 | p01_qg_legal_vertical | downstream | 0.23 |
 | kc_renewal_workflow | related | 0.22 |
-| [[bld_context_sources_data_contract]] | downstream | 0.22 |
 | bld_architecture_kind | downstream | 0.21 |

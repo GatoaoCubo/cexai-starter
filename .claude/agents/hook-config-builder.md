@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - hook-config-builder
   - hook-builder
-  - bld_collaboration_hook_config
-  - n00_hook_config_manifest
-  - bld_instruction_hook_config
 ---
 
 # hook-config-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[hook-config-builder]] | related | 0.45 |
 | [[hook-builder]] | related | 0.37 |
-| [[bld_collaboration_hook_config]] | related | 0.36 |
-| [[n00_hook_config_manifest]] | related | 0.35 |
-| [[bld_instruction_hook_config]] | related | 0.33 |

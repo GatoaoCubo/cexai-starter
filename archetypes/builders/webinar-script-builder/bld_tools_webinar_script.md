@@ -17,9 +17,7 @@ updated: "2026-04-14"
 keywords: [production tools, validation utilities, webinar_script construction, webinar script builder tools, cex production tools, time-budget calculator, a validators, and zoom, teams platform references, webinar_script]
 density_score: 0.85
 related:
-  - bld_instruction_webinar_script
   - webinar-script-builder
-  - bld_collaboration_webinar_script
   - bld_schema_webinar_script
   - bld_architecture_webinar_script
 ---
@@ -74,8 +72,6 @@ Checks specific to webinar_script quality gates.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_webinar_script]] | upstream | 0.40 |
 | [[webinar-script-builder]] | upstream | 0.40 |
-| [[bld_collaboration_webinar_script]] | downstream | 0.37 |
 | [[bld_schema_webinar_script]] | downstream | 0.36 |
 | [[bld_architecture_webinar_script]] | downstream | 0.31 |

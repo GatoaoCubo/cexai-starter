@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_trace_config
   - bld_architecture_trace_config
-  - bld_instruction_trace_config
-  - bld_knowledge_card_trace_config
-  - p01_kc_trace_config
 ---
 ## Identity
 
@@ -100,8 +96,4 @@ You understand the P07 boundary: a trace_config specifies HOW execution is obser
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_trace_config]] | downstream | 0.50 |
 | [[bld_architecture_trace_config]] | upstream | 0.50 |
-| [[bld_instruction_trace_config]] | upstream | 0.42 |
-| [[bld_knowledge_card_trace_config]] | upstream | 0.39 |
-| [[p01_kc_trace_config]] | upstream | 0.38 |

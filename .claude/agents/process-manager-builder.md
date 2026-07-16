@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_process_manager
-  - bld_manifest_process_manager
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_rules_process_manager
 ---
 
 # process-manager-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_process_manager]] | related | 0.36 |
-| [[bld_manifest_process_manager]] | related | 0.36 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[bld_rules_process_manager]] | related | 0.29 |

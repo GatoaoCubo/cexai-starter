@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [chunk strategy construction, collaboration chunk strategy, chunk_strategy, builder, examples, "### crew: document processing", my role, crew compositions, document processing, handoff protocol]
 density_score: 0.90
 related:
-  - bld_collaboration_retriever_config
   - chunk-strategy-builder
   - bld_config_chunk_strategy
-  - bld_collaboration_memory_scope
-  - bld_collaboration_context_window_config
 ---
 # Collaboration: chunk-strategy-builder
 ## My Role in Crews

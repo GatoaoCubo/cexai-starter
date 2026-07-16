@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_schema_marketplace_app_manifest
   - bld_config_marketplace_app_manifest
-  - n00_marketplace_app_manifest_manifest
-  - kc_marketplace_app_manifest
-  - bld_collaboration_marketplace_app_manifest
 ---
 ```yaml
 ---
@@ -75,6 +72,3 @@ dependencies:
 |----------|-------------|-------|
 | [[bld_schema_marketplace_app_manifest]] | downstream | 0.33 |
 | [[bld_config_marketplace_app_manifest]] | downstream | 0.29 |
-| [[n00_marketplace_app_manifest_manifest]] | downstream | 0.28 |
-| [[kc_marketplace_app_manifest]] | upstream | 0.27 |
-| [[bld_collaboration_marketplace_app_manifest]] | downstream | 0.26 |

@@ -17,11 +17,7 @@ updated: "2026-07-02"
 keywords: [opportunity_matrix construction, instruction opportunity matrix, opportunity_matrix, builder, instruction, catalog_sources, opp_score, sourcing_confiavel, demand join, margin math]
 density_score: 0.85
 related:
-  - p10_mem_opportunity_matrix_builder
-  - p11_qg_opportunity_matrix
   - opportunity-matrix-builder
-  - bld_knowledge_card_opportunity_matrix
-  - sourcing
 ---
 ## Phase 1: RESEARCH
 1. Read the 9 inputs from the frozen `input_contract` (`apps/dashboard_web/lib/molds.ts` `MOLD_SOURCING_OPPORTUNITY`): `catalog_sources` (required, object[]), `cost_source_strategy`, `tax_pct`, `region`, `demand_signal_basis`, `fee_model`, `freight_model`, `verify_top_n`, `show_net_margin`.
@@ -52,8 +48,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_opportunity_matrix_builder]] | downstream | 0.49 |
-| [[p11_qg_opportunity_matrix]] | downstream | 0.45 |
 | [[opportunity-matrix-builder]] | downstream | 0.44 |
 | [[bld_knowledge_opportunity_matrix]] | upstream | 0.40 |
 | sourcing | related | 0.38 |

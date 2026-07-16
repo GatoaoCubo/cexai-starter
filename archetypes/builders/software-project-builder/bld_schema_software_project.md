@@ -15,12 +15,6 @@ tldr: "Validation schema for software projects: required files, pyproject.toml f
 keywords: [software project builder, required files, toml fields, directory structure, test requirements, docker constraints, builder, schema, software-project, validation]
 density_score: 0.88
 llm_function: CONSTRAIN
-related:
-  - bld_sp_instruction_software_project
-  - bld_sp_quality_gate_software_project
-  - bld_sp_output_template_software_project
-  - bld_sp_manifest_software_project
-  - p04_cli_software_project_n03
 ---
 # Software Project Schema
 
@@ -121,12 +115,3 @@ no_secrets:
     - ".env.example"  # Only as placeholders
     - "tests/"        # Test-only keys
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_sp_instruction_software_project]] | downstream | 0.42 |
-| [[bld_sp_quality_gate_software_project]] | downstream | 0.41 |
-| [[bld_sp_output_template_software_project]] | downstream | 0.38 |
-| [[bld_sp_manifest_software_project]] | downstream | 0.38 |
-| [[p04_cli_software_project_n03]] | downstream | 0.36 |

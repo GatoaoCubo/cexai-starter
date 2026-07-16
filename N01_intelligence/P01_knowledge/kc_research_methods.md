@@ -16,11 +16,7 @@ tldr: "The three academic patterns powering CEX research: STORM (multi-perspecti
 keywords: [multi-perspective query planning, retrieval augmented generation, corrective retrieval, atomic sub-questions, fallback source, trustworthiness, completeness, reliability]
 density_score: 0.93
 related:
-  - bld_knowledge_card_research_pipeline
-  - p10_lr_research-pipeline-builder
   - research-pipeline-builder
-  - p02_agent_research_pipeline_intelligence
-  - p01_kc_research_pipeline
 ---
 
 # STORM + CRAG + CRITIC — Research Methods
@@ -91,7 +87,6 @@ The three patterns are multiplicative: STORM×CRAG×CRITIC >> sum of parts.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_research_pipeline]] | sibling | 0.52 |
-| [[p10_lr_research-pipeline-builder]] | downstream | 0.47 |
 | [[research-pipeline-builder]] | downstream | 0.43 |
 | p02_agent_research_pipeline_intelligence | downstream | 0.40 |
 | [[kc_research_pipeline]] | sibling | 0.37 |

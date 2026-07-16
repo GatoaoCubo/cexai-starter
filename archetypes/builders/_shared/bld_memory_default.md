@@ -17,10 +17,8 @@ created: "2026-04-17"
 updated: "2026-04-22"
 related:
   - bld_eval_default
-  - bld_collaboration_memory_type
   - bld_feedback_default
   - bld_architecture_default
-  - bld_collaboration_memory_scope
 ---
 # P10 Memory — Default Learning Record Schema
 ## What to Persist (F3b PERSIST)

@@ -14,7 +14,6 @@ updated: "2026-04-17"
 related:
   - p01_kc_ai2ai_exhaustive_scan_20260414
   - p01_kc_ai2ai_coverage_matrix_20260414
-  - p06_td_cex_artifact_type_n03
   - p01_kc_kind_gap_synthesis
   - p01_kc_kind_dependency_graph
 ---

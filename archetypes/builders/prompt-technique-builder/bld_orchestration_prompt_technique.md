@@ -19,9 +19,6 @@ designs, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_llm_evaluation_scenario
-  - bld_collaboration_agent_computer_interface
-  - bld_collaboration_action_paradigm
   - prompt-technique-builder
   - bld_architecture_kind
 ---
@@ -48,8 +45,5 @@ Does NOT implement templates (handled by prompt_template-builder) or reasoning l
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_llm_evaluation_scenario]] | sibling | 0.24 |
-| [[bld_collaboration_agent_computer_interface]] | sibling | 0.23 |
-| [[bld_collaboration_action_paradigm]] | sibling | 0.21 |
 | [[prompt-technique-builder]] | upstream | 0.21 |
 | [[bld_architecture_kind]] | upstream | 0.21 |

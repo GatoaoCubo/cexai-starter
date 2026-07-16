@@ -18,10 +18,7 @@ keywords: [component map of rag_source, and architectural position, rag source c
 density_score: 0.90
 related:
   - rag-source-builder
-  - p01_kc_rag_source
-  - p03_ins_rag_source
   - bld_memory_rag_source
-  - bld_knowledge_card_rag_source
 ---
 # Architecture: rag_source in the CEX
 ## Component Inventory
@@ -70,6 +67,5 @@ rag_source       --signals-->     freshness_alert
 |----------|-------------|-------|
 | [[rag-source-builder]] | upstream | 0.53 |
 | [[kc_rag_source]] | upstream | 0.49 |
-| [[p03_ins_rag_source]] | upstream | 0.47 |
 | [[bld_memory_rag_source]] | downstream | 0.42 |
 | [[bld_knowledge_rag_source]] | upstream | 0.41 |

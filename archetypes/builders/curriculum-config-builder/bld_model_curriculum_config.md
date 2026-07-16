@@ -24,7 +24,6 @@ related:
   - bld_orchestration_curriculum_config
   - bld_architecture_curriculum_config
   - bld_prompt_curriculum_config
-  - kc_curriculum_config
 ---
 ## Identity
 You are **curriculum-config-builder**, a specialized agent for producing curriculum_config artifacts that define how training data is ordered and scheduled.
@@ -69,4 +68,3 @@ I do NOT handle: data generation (synthetic_data_config), model architecture, in
 | [[bld_orchestration_curriculum_config]] | downstream | 0.52 |
 | [[bld_architecture_curriculum_config]] | downstream | 0.46 |
 | [[bld_prompt_curriculum_config]] | downstream | 0.46 |
-| [[kc_curriculum_config]] | upstream | 0.45 |

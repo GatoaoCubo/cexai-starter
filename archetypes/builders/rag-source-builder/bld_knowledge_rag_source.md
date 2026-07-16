@@ -32,8 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - rag-source-builder
-  - p03_ins_rag_source
-  - p11_qg_rag_source
   - bld_schema_rag_source
   - bld_memory_rag_source
 ---
@@ -88,7 +86,5 @@ A rag_source is a pointer-only artifact that catalogs an external indexable URL 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[rag-source-builder]] | related | 0.48 |
-| [[p03_ins_rag_source]] | related | 0.47 |
-| [[p11_qg_rag_source]] | downstream | 0.45 |
 | [[bld_schema_rag_source]] | downstream | 0.44 |
 | [[bld_memory_rag_source]] | downstream | 0.42 |

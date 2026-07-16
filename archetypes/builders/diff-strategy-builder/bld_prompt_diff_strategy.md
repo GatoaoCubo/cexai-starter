@@ -17,11 +17,8 @@ updated: "2026-04-13"
 keywords: [diff_strategy construction, instruction diff strategy, diff_strategy, builder, instruction, write algorithm, write patch application, write edge cases, related artifacts, aider format]
 density_score: 0.85
 related:
-  - bld_output_template_diff_strategy
   - bld_tools_diff_strategy
-  - p04_qg_diff_strategy
   - diff-strategy-builder
-  - bld_knowledge_card_diff_strategy
 ---
 ## Phase 1: RESEARCH
 1. Identify the target consumer: Aider format (whole/diff/udiff-simple/diff-fenced), git pipeline, or custom LLM agent.
@@ -54,8 +51,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_diff_strategy]] | downstream | 0.53 |
 | [[bld_tools_diff_strategy]] | downstream | 0.51 |
-| [[p04_qg_diff_strategy]] | downstream | 0.49 |
 | [[diff-strategy-builder]] | downstream | 0.48 |
-| [[bld_knowledge_card_diff_strategy]] | upstream | 0.44 |

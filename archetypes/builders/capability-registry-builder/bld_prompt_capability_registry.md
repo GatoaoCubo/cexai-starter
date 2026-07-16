@@ -18,10 +18,7 @@ keywords: [capability_registry construction, instruction capability registry, ca
 density_score: 0.85
 related:
   - capability-registry-builder
-  - bld_output_template_capability_registry
   - bld_schema_capability_registry
-  - p10_lr_capability_registry_builder
-  - p08_qg_capability_registry
 ---
 ## Phase 1: RESEARCH
 1. Scan `.claude/agents/` directory -- list all 252 builder sub-agent files.
@@ -56,7 +53,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[capability-registry-builder]] | downstream | 0.44 |
-| [[bld_output_template_capability_registry]] | downstream | 0.36 |
 | [[bld_schema_capability_registry]] | downstream | 0.36 |
-| [[p10_lr_capability_registry_builder]] | downstream | 0.36 |
-| [[p08_qg_capability_registry]] | downstream | 0.36 |

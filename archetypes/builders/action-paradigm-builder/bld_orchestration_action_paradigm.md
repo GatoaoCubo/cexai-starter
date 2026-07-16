@@ -18,12 +18,6 @@ keywords: [action_paradigm construction, collaboration action paradigm, action_p
 orchestrates, receives from, task planner, produces for, boundary
 does]
 density_score: 0.85
-related:
-  - bld_collaboration_collaboration_pattern
-  - bld_collaboration_self_improvement_loop
-  - bld_collaboration_thinking_config
-  - bld_collaboration_prompt_technique
-  - bld_collaboration_visual_workflow
 ---
 ## Crew Role
 Orchestrates action execution workflows, decomposing high-level goals into executable steps, ensuring alignment with domain constraints and resource availability.
@@ -62,12 +56,3 @@ workflow builder).
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_collaboration_pattern]] | sibling | 0.31 |
-| [[bld_collaboration_self_improvement_loop]] | sibling | 0.28 |
-| [[bld_collaboration_thinking_config]] | sibling | 0.26 |
-| [[bld_collaboration_prompt_technique]] | sibling | 0.25 |
-| [[bld_collaboration_visual_workflow]] | sibling | 0.24 |

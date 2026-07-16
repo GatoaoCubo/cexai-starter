@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - supervisor-builder
   - bld_architecture_supervisor
-  - p11_qg_director
-  - bld_instruction_supervisor
-  - p01_kc_supervisor
 ---
 # Collaboration: supervisor-builder
 ## My Role in Crews
@@ -71,6 +68,3 @@ I produce supervisor definitions so dispatch systems can coordinate multi-builde
 |----------|-------------|-------|
 | [[supervisor-builder]] | upstream | 0.49 |
 | [[bld_architecture_supervisor]] | upstream | 0.43 |
-| [[p11_qg_director]] | upstream | 0.40 |
-| [[bld_instruction_supervisor]] | upstream | 0.39 |
-| [[p01_kc_supervisor]] | upstream | 0.38 |

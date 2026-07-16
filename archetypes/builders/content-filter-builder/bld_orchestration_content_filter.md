@@ -20,10 +20,7 @@ this, receives from, content generator, policy manager, analytics module]
 density_score: 0.85
 related:
   - content-filter-builder
-  - p10_lr_content_filter_builder
   - bld_config_content_filter
-  - bld_instruction_content_filter
-  - p11_fb_content_filter
 ---
 ## Crew Role  
 
@@ -51,7 +48,5 @@ Does not enforce broad safety constraints (Guardrail) or validate output schemas
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[content-filter-builder]] | upstream | 0.36 |
-| [[p10_lr_content_filter_builder]] | upstream | 0.26 |
 | [[bld_config_content_filter]] | upstream | 0.26 |
 | [[bld_prompt_content_filter]] | upstream | 0.25 |
-| [[p11_fb_content_filter]] | upstream | 0.24 |

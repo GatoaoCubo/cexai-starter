@@ -31,10 +31,7 @@ parent: null
 8f: "F1_constrain"
 related:
   - bld_architecture_pattern
-  - bld_collaboration_pattern
   - bld_memory_pattern
-  - p03_ins_pattern
-  - bld_knowledge_card_pattern
 ---
 ## Identity
 
@@ -120,5 +117,4 @@ Produce a pattern artifact with YAML frontmatter followed by: `## Problem`, `## 
 | [[bld_architecture_pattern]] | related | 0.53 |
 | [[bld_orchestration_pattern]] | related | 0.51 |
 | [[bld_memory_pattern]] | downstream | 0.48 |
-| [[p03_ins_pattern]] | upstream | 0.44 |
 | [[bld_knowledge_pattern]] | upstream | 0.41 |

@@ -26,9 +26,7 @@ title: "Memory Enum Def"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_enum_def
   - bld_config_enum_def
-  - bld_instruction_enum_def
   - bld_architecture_enum_def
   - enum-def-builder
 ---

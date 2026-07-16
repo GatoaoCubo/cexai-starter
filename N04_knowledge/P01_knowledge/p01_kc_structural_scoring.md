@@ -22,11 +22,6 @@ axioms:
 density_score: 0.88
 data_source: "p07_sr_structural_score_v2.md (canonical spec)"
 quality: null
-related:
-  - p07_sr_structural_score_v2
-  - p01_kc_quality_gates
-  - p11_fb_judge_config
-  - p05_output_validator
 ---
 
 ## Executive Summary
@@ -185,5 +180,4 @@ Structural score plugs into **F7 GOVERN** (gate validation):
 | p01_kc_quality_gates | sibling | 0.82 |
 | p11_fb_judge_config | related | 0.75 |
 | p05_output_validator | downstream | 0.71 |
-| [[p11_fb_scoring_rubric]] | related | 0.68 |
 | p08_ac_verification | related | 0.65 |

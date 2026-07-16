@@ -21,11 +21,8 @@ aliases: ["golden record", "CanonicalProduct", "product golden record", "channel
 user_says: ["merge my product data from multiple sources", "single source of truth for my catalog", "golden record for products"]
 long_tails: ["merge product data from several sources into one record with conflicts flagged", "keep product specs separate from marketing prose in the catalog"]
 related:
-  - p01_kc_data_contract
-  - p01_kc_validation_schema
   - data-contract-builder
   - validation-schema-builder
-  - kc_value_object
 ---
 
 # Canonical Product

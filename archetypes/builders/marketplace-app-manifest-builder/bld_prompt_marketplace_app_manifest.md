@@ -18,10 +18,6 @@ keywords: [marketplace_app_manifest construction, instruction marketplace app ma
 density_score: 0.85
 related:
   - marketplace-app-manifest-builder
-  - p09_qg_marketplace_app_manifest
-  - kc_marketplace_app_manifest
-  - p10_lr_marketplace_app_manifest_builder
-  - bld_instruction_playground_config
 ---
 ## Phase 1: RESEARCH  
 1. Analyze existing Claude/LangChain/HuggingFace app manifests for metadata structure.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[marketplace-app-manifest-builder]] | downstream | 0.37 |
-| [[p09_qg_marketplace_app_manifest]] | downstream | 0.30 |
-| [[kc_marketplace_app_manifest]] | upstream | 0.30 |
-| [[p10_lr_marketplace_app_manifest_builder]] | downstream | 0.27 |
-| [[bld_instruction_playground_config]] | sibling | 0.26 |

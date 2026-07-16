@@ -19,10 +19,8 @@ keywords: [workflow construction, collaboration workflow, workflow, builder, exa
 density_score: 0.90
 related:
   - workflow-builder
-  - bld_collaboration_spawn_config
   - bld_architecture_workflow
   - bld_memory_workflow
-  - bld_knowledge_card_workflow
 ---
 # Collaboration: workflow-builder
 ## My Role in Crews
@@ -65,7 +63,5 @@ I design runtime orchestration: sequential and parallel steps, wave ordering, ag
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-builder]] | related | 0.49 |
-| [[bld_collaboration_spawn_config]] | sibling | 0.44 |
 | [[bld_architecture_workflow]] | upstream | 0.43 |
 | [[bld_memory_workflow]] | upstream | 0.38 |
-| [[bld_knowledge_card_workflow]] | upstream | 0.37 |

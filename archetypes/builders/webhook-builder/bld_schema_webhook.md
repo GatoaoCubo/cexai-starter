@@ -37,7 +37,6 @@ related:
   - bld_schema_retriever_config
   - bld_schema_memory_scope
   - bld_schema_output_validator
-  - bld_schema_client
 ---
 # Schema: webhook
 
@@ -96,4 +95,3 @@ Examples: `p04_webhook_payment_completed`, `p04_webhook_push`, `p04_webhook_mess
 | [[bld_schema_retriever_config]] | sibling | 0.61 |
 | [[bld_schema_memory_scope]] | sibling | 0.60 |
 | [[bld_schema_output_validator]] | sibling | 0.60 |
-| [[bld_schema_client]] | sibling | 0.59 |

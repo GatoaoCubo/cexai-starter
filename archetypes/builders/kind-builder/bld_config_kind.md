@@ -31,8 +31,6 @@ related:
   - bld_architecture_kind
   - bld_schema_kind
   - kind-builder
-  - p06_td_cex_artifact_type_n03
-  - bld_knowledge_card_kind
 ---
 # Config: kind_builder Production Rules
 
@@ -125,5 +123,3 @@ python _tools/cex_score.py --apply bld_config_kind.md
 | [[bld_architecture_kind]] | upstream | 0.48 |
 | [[bld_schema_kind]] | upstream | 0.43 |
 | [[kind-builder]] | upstream | 0.43 |
-| [[p06_td_cex_artifact_type_n03]] | upstream | 0.37 |
-| [[bld_knowledge_card_kind]] | upstream | 0.36 |

@@ -5,10 +5,8 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - agent-builder
-  - bld_collaboration_agent
   - agent-package-builder
   - kind-builder
-  - bld_collaboration_agent_package
 ---
 
 # agent-package-builder Sub-Agent

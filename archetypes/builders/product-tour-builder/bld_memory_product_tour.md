@@ -21,10 +21,6 @@ reviewed, related artifacts, upstream]
 density_score: 0.85
 related:
   - product-tour-builder
-  - bld_knowledge_card_product_tour
-  - p05_qg_product_tour
-  - p10_mem_onboarding_flow_builder
-  - kc_product_tour
 ---
 ## Observation
 Common issues include misaligned tooltip positions, unclear trigger logic (e.g., scroll vs. click), and overloading steps with too much text. Tours often lack clear end goals, leading to user confusion.
@@ -46,7 +42,3 @@ Reviewed artifacts showed 30% higher completion rates when tooltips used icons +
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[product-tour-builder]] | upstream | 0.32 |
-| [[bld_knowledge_card_product_tour]] | upstream | 0.31 |
-| [[p05_qg_product_tour]] | downstream | 0.26 |
-| [[p10_mem_onboarding_flow_builder]] | sibling | 0.25 |
-| [[kc_product_tour]] | upstream | 0.24 |

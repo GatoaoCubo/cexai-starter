@@ -19,9 +19,7 @@ keywords: [architectural position, episodic memory construction, architecture ep
 density_score: 0.90
 related:
   - episodic-memory-builder
-  - bld_collaboration_episodic_memory
   - bld_architecture_working_memory
-  - p01_kc_episodic_memory
   - working-memory-builder
 ---
 ## Component Inventory

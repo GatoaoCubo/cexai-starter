@@ -28,11 +28,8 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_retriever_config
   - bld_architecture_retriever_config
   - chunk-strategy-builder
-  - bld_instruction_retriever_config
-  - p11_qg_retriever_config
 ---
 ## Identity
 
@@ -132,4 +129,3 @@ quality_target: 9.0
 | [[bld_architecture_retriever_config]] | downstream | 0.42 |
 | [[chunk-strategy-builder]] | sibling | 0.41 |
 | [[bld_prompt_retriever_config]] | downstream | 0.40 |
-| [[p11_qg_retriever_config]] | downstream | 0.37 |

@@ -4,10 +4,7 @@ description: "Builds ONE enum_def artifact via 8F pipeline. Loads enum-def-build
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_collaboration_enum_def
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
 ---
 

@@ -26,11 +26,7 @@ title: "Memory Context Doc"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_context_doc
-  - bld_instruction_context_doc
   - context-doc-builder
-  - bld_output_template_context_doc
-  - bld_collaboration_context_doc
 ---
 ## Summary
 A context document's job is eliminating ambiguity about what a piece of work covers. The outside list in the scope section is more valuable than the inside list: consumers know what the work covers from the title; what they need — and almost never get explicitly — is what it does not cover. A missing or vague outside list causes downstream consumers to fill the gap with assumptions that diverge into scope creep, rework, or integration failures.
@@ -67,8 +63,4 @@ Write the outside list before any other section. This forces explicit exclusion 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_context_doc]] | upstream | 0.36 |
-| [[bld_instruction_context_doc]] | upstream | 0.31 |
 | [[context-doc-builder]] | upstream | 0.28 |
-| [[bld_output_template_context_doc]] | upstream | 0.23 |
-| [[bld_collaboration_context_doc]] | downstream | 0.21 |

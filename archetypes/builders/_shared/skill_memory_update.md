@@ -15,10 +15,8 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - bld_memory_learning_record
-  - bld_knowledge_card_learning_record
   - bld_meta_memory_builder
   - bld_memory_default
-  - p01_kc_pillar_brief_p10_memory_en
 ---
 # Skill: Memory Update After Execution
 

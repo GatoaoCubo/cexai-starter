@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [diff_strategy construction, tools diff strategy, real diff tools, git apply, aider formats, diff_strategy, builder, tools, patch -p1 < file.diff, git apply --3way --whitespace=fix]
 density_score: 0.90
 related:
-  - bld_knowledge_card_diff_strategy
-  - bld_instruction_diff_strategy
   - diff-strategy-builder
-  - kc_diff_strategy
-  - p04_qg_diff_strategy
 ---
 ## Core Diff Libraries
 | Tool                  | Purpose                                      | When to use                         |
@@ -66,8 +62,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_diff_strategy]] | upstream | 0.55 |
-| [[bld_instruction_diff_strategy]] | upstream | 0.50 |
 | [[diff-strategy-builder]] | related | 0.50 |
-| [[kc_diff_strategy]] | upstream | 0.48 |
-| [[p04_qg_diff_strategy]] | downstream | 0.45 |

@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - red-team-eval-builder
-  - bld_knowledge_card_red_team_eval
-  - p11_qg_red_team_eval
   - bld_architecture_red_team_eval
-  - bld_instruction_red_team_eval
 ---
 # Output Template: red_team_eval
 ```yaml
@@ -115,7 +112,4 @@ Expected output: `{{what_a_passing_report_looks_like}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[red-team-eval-builder]] | downstream | 0.39 |
-| [[bld_knowledge_card_red_team_eval]] | upstream | 0.35 |
-| [[p11_qg_red_team_eval]] | downstream | 0.33 |
 | [[bld_architecture_red_team_eval]] | downstream | 0.32 |
-| [[bld_instruction_red_team_eval]] | upstream | 0.31 |

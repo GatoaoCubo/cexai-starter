@@ -20,7 +20,6 @@ related:
   - bld_tools_interactive_demo
   - bld_tools_onboarding_flow
   - bld_tools_pitch_deck
-  - bld_knowledge_card_product_tour
   - product-tour-builder
 ---
 ## Production Tools
@@ -51,5 +50,4 @@ related:
 | [[bld_tools_interactive_demo]] | sibling | 0.35 |
 | [[bld_tools_onboarding_flow]] | sibling | 0.35 |
 | [[bld_tools_pitch_deck]] | sibling | 0.33 |
-| [[bld_knowledge_card_product_tour]] | upstream | 0.33 |
 | [[product-tour-builder]] | downstream | 0.32 |

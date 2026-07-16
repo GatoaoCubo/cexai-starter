@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - daemon-builder
   - bld_architecture_daemon
-  - n00_daemon_manifest
-  - bld_collaboration_hook
-  - p01_kc_daemon
 ---
 # Collaboration: daemon-builder
 ## My Role in Crews
@@ -66,6 +63,3 @@ None — independent builder (layer 0). Daemons can be defined standalone.
 |----------|-------------|-------|
 | [[daemon-builder]] | upstream | 0.50 |
 | [[bld_architecture_daemon]] | upstream | 0.48 |
-| [[n00_daemon_manifest]] | upstream | 0.45 |
-| [[bld_collaboration_hook]] | sibling | 0.44 |
-| [[p01_kc_daemon]] | upstream | 0.41 |

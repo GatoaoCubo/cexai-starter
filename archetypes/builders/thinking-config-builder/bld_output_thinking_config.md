@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [thinking_config construction, output template thinking config, frontmatter field guide, required body sections, filled example, thinking_config, builder, output_template, quality gate checklist, pass condition]
 density_score: 0.85
 related:
-  - bld_output_template_dataset_card
-  - bld_output_template_collaboration_pattern
   - bld_config_thinking_config
-  - bld_output_template_visual_workflow
-  - bld_collaboration_thinking_config
 ---
 This ISO configures a thinking budget: how many tokens the model may spend on internal reasoning before emitting.
 
@@ -78,8 +74,4 @@ outputs:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_dataset_card]] | sibling | 0.36 |
-| [[bld_output_template_collaboration_pattern]] | sibling | 0.35 |
 | [[bld_config_thinking_config]] | downstream | 0.33 |
-| [[bld_output_template_visual_workflow]] | sibling | 0.32 |
-| [[bld_collaboration_thinking_config]] | downstream | 0.30 |

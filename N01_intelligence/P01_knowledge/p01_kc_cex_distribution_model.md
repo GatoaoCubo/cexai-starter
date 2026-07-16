@@ -10,9 +10,6 @@ created: 2026-04-08
 tags: [distribution, runtime, claude-code, pi, migration, architecture]
 tldr: "CEX distributes as git repo + Claude Code CLI. PI wrapper abandoned 2026-04-08 due to Anthropic auth policy. 3 runtimes + 1 CLI + pip deps = full system."
 keywords: [oauth policy, api key, context window management, nucleus, extension system, subagents, handoffs, providers, git clone]
-related:
-  - p01_ctx_strategy_claude_native_n06
-  - p01_kc_audit_pi_references
 ---
 
 # CEX Distribution Model

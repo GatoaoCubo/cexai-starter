@@ -19,10 +19,7 @@ keywords: [pattern construction, collaboration pattern, pattern, builder, exampl
 density_score: 0.90
 related:
   - pattern-builder
-  - bld_collaboration_learning_record
-  - bld_collaboration_knowledge_card
   - bld_architecture_pattern
-  - bld_collaboration_agent
 ---
 # Collaboration: pattern-builder
 ## My Role in Crews

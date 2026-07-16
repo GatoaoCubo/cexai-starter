@@ -20,8 +20,6 @@ related:
   - bld_tools_landing_page
   - bld_architecture_landing_page
   - bld_memory_landing_page
-  - bld_collaboration_tagline
-  - bld_output_template_landing_page
 ---
 # Collaboration: Landing Page Builder
 
@@ -77,4 +75,3 @@ python _tools/cex_score.py --apply bld-collaboration-landing-page.md
 | [[bld_architecture_landing_page]] | upstream | 0.41 |
 | [[bld_memory_landing_page]] | upstream | 0.41 |
 | [[bld_orchestration_tagline]] | sibling | 0.39 |
-| [[bld_output_template_landing_page]] | upstream | 0.37 |

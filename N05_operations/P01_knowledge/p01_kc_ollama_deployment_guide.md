@@ -19,11 +19,7 @@ slots:
 pillar: P01
 keywords: [ollama deployment guide, winget install ollama, brew install ollama, sudo apt install ollama, docker run -p 11434:11434 ollama/ollama, requires windows, model management, recommended value, memory planning, http localhost]
 related:
-  - kc_test_ollama_wrapper
-  - p02_fc_cex_model_fallback
-  - p01_kc_ollama_deployment_patterns
   - bld_tools_model_provider
-  - p01_kc_docker_ai_containerization
 ---
 
 # Ollama Deployment Guide

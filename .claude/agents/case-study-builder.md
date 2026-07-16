@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
   - bld_config_case_study
-  - p03_sp_builder_nucleus
   - bld_tools_case_study
-  - p11_fb_case_study
 ---
 
 # case-study-builder Sub-Agent
@@ -88,6 +86,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.31 |
 | [[bld_config_case_study]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[bld_tools_case_study]] | related | 0.28 |
-| [[p11_fb_case_study]] | related | 0.28 |

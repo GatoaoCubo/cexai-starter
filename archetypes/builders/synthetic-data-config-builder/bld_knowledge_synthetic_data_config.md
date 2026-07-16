@@ -23,7 +23,6 @@ related:
   - synthetic-data-config-builder
   - bld_prompt_synthetic_data_config
   - bld_memory_synthetic_data_config
-  - kc_synthetic_data_config
   - bld_feedback_synthetic_data_config
 ---
 # Domain Knowledge: synthetic_data_config
@@ -60,5 +59,4 @@ Synthetic data configs define how to generate artificial training data for LLM f
 | [[synthetic-data-config-builder]] | downstream | 0.49 |
 | [[bld_prompt_synthetic_data_config]] | downstream | 0.48 |
 | [[bld_memory_synthetic_data_config]] | downstream | 0.37 |
-| [[kc_synthetic_data_config]] | sibling | 0.34 |
 | [[bld_feedback_synthetic_data_config]] | downstream | 0.30 |

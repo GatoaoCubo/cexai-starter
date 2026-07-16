@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [fintech_vertical construction, output template fintech vertical, fintech_vertical, builder, output_template, frontmatter template, example use cases, use case, related artifacts, use_case_ use_case_]
 density_score: 0.85
 related:
-  - bld_output_template_workflow_node
-  - bld_output_template_usage_report
   - bld_schema_fintech_vertical
-  - n00_fintech_vertical_manifest
   - bld_config_fintech_vertical
 ---
 ```markdown

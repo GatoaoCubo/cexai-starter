@@ -33,7 +33,6 @@ density_score: 0.90
 related:
   - bld_schema_action_prompt
   - bld_schema_instruction
-  - bld_knowledge_card_system_prompt
   - bld_schema_smoke_eval
   - bld_schema_runtime_state
 ---

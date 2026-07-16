@@ -18,10 +18,7 @@ keywords: [webinar_script construction, webinar script builder instructions, thr
 density_score: 0.85
 related:
   - bld_schema_webinar_script
-  - p03_qg_webinar_script
-  - bld_output_template_webinar_script
   - webinar-script-builder
-  - p10_lr_webinar_script_builder
 ---
 ## Phase 1: RESEARCH
 Gather all inputs before writing a single line of script. Incomplete research produces misaligned hooks and off-target CTAs.
@@ -108,7 +105,4 @@ If any HARD gate fails, return to Phase 2 and correct before delivery.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_webinar_script]] | downstream | 0.54 |
-| [[p03_qg_webinar_script]] | downstream | 0.51 |
-| [[bld_output_template_webinar_script]] | downstream | 0.50 |
 | [[webinar-script-builder]] | related | 0.46 |
-| [[p10_lr_webinar_script_builder]] | downstream | 0.42 |

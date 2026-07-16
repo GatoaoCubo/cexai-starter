@@ -28,11 +28,8 @@ updated: "2026-04-07"
 keywords: [limits for bugloop production, bugloop construction, config bugloop, bugloop, builder, examples, production rules, file paths, size limits, field constraints]
 density_score: 0.90
 related:
-  - bld_instruction_bugloop
-  - bld_output_template_bugloop
   - bld_schema_bugloop
   - bugloop-builder
-  - bld_knowledge_card_bugloop
 ---
 # Config: bugloop Production Rules
 ## Naming
@@ -76,8 +73,5 @@ Rule: scope slug MUST reflect monitored system, not the fix type.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_bugloop]] | upstream | 0.45 |
-| [[bld_output_template_bugloop]] | upstream | 0.44 |
 | [[bld_schema_bugloop]] | downstream | 0.42 |
 | [[bugloop-builder]] | downstream | 0.39 |
-| [[bld_knowledge_card_bugloop]] | upstream | 0.36 |

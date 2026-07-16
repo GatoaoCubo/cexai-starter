@@ -18,9 +18,6 @@ keywords: [component map of knowledge_index, and architectural position, knowled
 density_score: 0.90
 related:
   - knowledge-index-builder
-  - bld_collaboration_knowledge_index
-  - p11_qg_knowledge_index
-  - bld_instruction_knowledge_index
 ---
 # Architecture: knowledge_index in the CEX
 ## Component Inventory
@@ -74,5 +71,4 @@ knowledge_index      --signals-->   rebuild_trigger (when freshness_threshold ex
 |----------|-------------|-------|
 | [[knowledge-index-builder]] | downstream | 0.51 |
 | [[bld_orchestration_knowledge_index]] | downstream | 0.46 |
-| [[p11_qg_knowledge_index]] | downstream | 0.41 |
 | [[bld_prompt_knowledge_index]] | upstream | 0.39 |

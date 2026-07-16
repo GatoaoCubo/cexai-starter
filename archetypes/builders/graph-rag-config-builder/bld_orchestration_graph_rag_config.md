@@ -19,10 +19,6 @@ orchestrates graph, receives from, knowledge engineer, data curator, system arch
 density_score: 0.85
 related:
   - graph-rag-config-builder
-  - bld_collaboration_knowledge_graph
-  - kc_graph_rag_config
-  - p10_mem_graph_rag_config_builder
-  - bld_collaboration_agentic_rag
 ---
 ## Crew Role  
 Orchestrates Graph RAG pipeline configuration by defining schema, linking knowledge graphs to retrieval systems, and specifying query routing rules.  
@@ -48,7 +44,3 @@ Does NOT handle graph instance construction (knowledge_graph_builder) or documen
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[graph-rag-config-builder]] | upstream | 0.40 |
-| [[bld_collaboration_knowledge_graph]] | sibling | 0.33 |
-| [[kc_graph_rag_config]] | upstream | 0.31 |
-| [[p10_mem_graph_rag_config_builder]] | upstream | 0.29 |
-| [[bld_collaboration_agentic_rag]] | sibling | 0.29 |

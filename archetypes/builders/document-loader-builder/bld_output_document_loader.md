@@ -31,11 +31,7 @@ keywords:
 density_score: 1.0
 title: Output Template ISO - document_loader
 related:
-  - bld_instruction_document_loader
-  - document_loader-builder
   - bld_schema_document_loader
-  - p11_qg_document_loader
-  - p04_loader_pdf
 ---
 # Output Template: document_loader
 
@@ -101,7 +97,5 @@ for legal document RAG), and pipeline position (stage 1: raw file -> chunked Doc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_prompt_document_loader]] | related | 0.45 |
-| [[document_loader-builder]] | related | 0.45 |
 | [[bld_schema_document_loader]] | downstream | 0.44 |
-| [[p11_qg_document_loader]] | downstream | 0.43 |
 | p04_loader_pdf | related | 0.39 |

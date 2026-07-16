@@ -19,10 +19,7 @@ configures, receives from, produces for]
 density_score: 0.85
 related:
   - prosody-config-builder
-  - bld_collaboration_tts_provider
-  - p10_lr_prosody_config_builder
   - bld_config_prosody_config
-  - bld_collaboration_sso_config
 ---
 ## Crew Role  
 Configures prosody and emotion parameters for voice synthesis, ensuring alignment with emotional tone and speech rhythm requirements.  
@@ -48,7 +45,4 @@ Does NOT handle TTS provider integrations (handled by `tts_provider_builder`) or
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prosody-config-builder]] | upstream | 0.38 |
-| [[bld_collaboration_tts_provider]] | sibling | 0.33 |
-| [[p10_lr_prosody_config_builder]] | upstream | 0.33 |
 | [[bld_config_prosody_config]] | upstream | 0.30 |
-| [[bld_collaboration_sso_config]] | sibling | 0.25 |

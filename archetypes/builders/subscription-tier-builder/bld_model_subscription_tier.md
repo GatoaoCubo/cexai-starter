@@ -20,10 +20,7 @@ keywords]
 density_score: 0.85
 related:
   - bld_memory_subscription_tier
-  - bld_knowledge_card_subscription_tier
   - bld_schema_subscription_tier
-  - p11_qg_subscription_tier
-  - bld_instruction_subscription_tier
 ---
 ## Identity
 
@@ -81,5 +78,4 @@ NEVER use floating-point prices ("9.99") -- Stripe requires integer cents.
 | [[bld_memory_subscription_tier]] | upstream | 0.53 |
 | [[bld_knowledge_subscription_tier]] | upstream | 0.49 |
 | [[bld_schema_subscription_tier]] | upstream | 0.46 |
-| [[p11_qg_subscription_tier]] | related | 0.44 |
 | [[bld_prompt_subscription_tier]] | upstream | 0.42 |

@@ -30,10 +30,7 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_model_provider
   - bld_memory_model_provider
-  - bld_knowledge_card_model_provider
-  - p03_ins_model_provider
   - bld_config_model_provider
 ---
 ## Identity
@@ -135,5 +132,4 @@ Body sections: Boundary, Provider Matrix, Model Tiers, Fallback Chain, Rate Limi
 | [[bld_orchestration_model_provider]] | related | 0.68 |
 | [[bld_memory_model_provider]] | downstream | 0.64 |
 | [[bld_knowledge_model_provider]] | upstream | 0.61 |
-| [[p03_ins_model_provider]] | downstream | 0.59 |
 | [[bld_config_model_provider]] | downstream | 0.55 |

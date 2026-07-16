@@ -18,10 +18,6 @@ keywords: [interactive_demo construction, instruction interactive demo, interact
 density_score: 0.85
 related:
   - interactive-demo-builder
-  - bld_knowledge_card_interactive_demo
-  - p10_mem_interactive_demo_builder
-  - n00_interactive_demo_manifest
-  - bld_collaboration_interactive_demo
 ---
 ## Phase 1: RESEARCH  
 1. Conduct user interviews to identify key demo interaction points  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[interactive-demo-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_interactive_demo]] | upstream | 0.44 |
-| [[p10_mem_interactive_demo_builder]] | downstream | 0.36 |
-| [[n00_interactive_demo_manifest]] | downstream | 0.35 |
-| [[bld_collaboration_interactive_demo]] | downstream | 0.33 |

@@ -17,7 +17,6 @@ updated: "2026-04-07"
 keywords: [vision tool construction, tools vision tool, vision_tool, builder, examples, production tools, data sources, provider reference, input types, key capabilities]
 density_score: 0.90
 related:
-  - bld_tools_client
   - bld_tools_cli_tool
   - bld_tools_retriever_config
   - bld_tools_memory_scope
@@ -63,7 +62,6 @@ input_types are valid enum values.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_tools_client]] | sibling | 0.49 |
 | bld_tools_cli_tool | sibling | 0.48 |
 | [[bld_tools_retriever_config]] | sibling | 0.45 |
 | [[bld_tools_memory_scope]] | sibling | 0.45 |

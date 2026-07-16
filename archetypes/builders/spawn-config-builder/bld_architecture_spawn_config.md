@@ -17,10 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of spawn_config, and architectural position, spawn config construction, architecture spawn config, spawn_config, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_spawn_config
   - spawn-config-builder
   - bld_architecture_agent_card
-  - p01_kc_spawn_config
   - bld_architecture_workflow
 ---
 # Architecture: spawn_config in the CEX

@@ -26,8 +26,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - episodic-memory-builder
-  - bld_knowledge_card_episodic_memory
-  - bld_instruction_episodic_memory
   - bld_architecture_episodic_memory
   - bld_schema_episodic_memory
 ---

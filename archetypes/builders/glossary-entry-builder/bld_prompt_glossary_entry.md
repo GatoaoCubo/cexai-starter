@@ -31,11 +31,7 @@ keywords:
   - "write context"
 density_score: 0.90
 related:
-  - p01_kc_glossary_entry
-  - bld_knowledge_card_glossary_entry
   - glossary-entry-builder
-  - p01_gl_TERM_SLUG
-  - bld_instruction_context_doc
 ---
 # Instructions: How to Produce a glossary_entry
 ## Phase 1: CLASSIFY

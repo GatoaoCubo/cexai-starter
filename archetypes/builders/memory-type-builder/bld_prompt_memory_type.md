@@ -16,11 +16,7 @@ updated: "2026-04-07"
 keywords: [memory type construction, instruction memory type, memory_type, builder, examples, related artifacts, downstream, phase, sibling, memory]
 density_score: 0.90
 related:
-  - bld_manifest_memory_type
-  - bld_collaboration_memory_type
-  - bld_output_template_memory_type
   - bld_tools_memory_type
-  - bld_instruction_memory_scope
 ---
 # Instruction: Build a memory_type artifact
 
@@ -71,8 +67,4 @@ python _tools/cex_skill_loader.py --verify memory
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_memory_type]] | upstream | 0.36 |
-| [[bld_collaboration_memory_type]] | downstream | 0.36 |
-| [[bld_output_template_memory_type]] | downstream | 0.32 |
 | [[bld_tools_memory_type]] | downstream | 0.31 |
-| [[bld_instruction_memory_scope]] | sibling | 0.28 |

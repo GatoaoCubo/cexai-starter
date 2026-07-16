@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [glossary entry construction, collaboration glossary entry, glossary_entry, builder, examples, "### crew: onboarding package", my role, crew compositions, content foundation, onboarding package]
 density_score: 0.90
 related:
-  - bld_collaboration_context_doc
-  - bld_collaboration_knowledge_card
   - glossary-entry-builder
-  - p01_kc_glossary_entry
-  - p01_gl_TERM_SLUG
 ---
 # Collaboration: glossary-entry-builder
 ## My Role in Crews

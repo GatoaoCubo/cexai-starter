@@ -26,8 +26,6 @@ related:
   - p01_kc_ai_investment_thesis
   - p01_kc_cex_positioning_analysis
   - p01_kc_cex_distribution_model
-  - p12_dr_intelligence
-  - n01_intelligence
 ---
 
 # Intelligence as Digital Asset
@@ -131,4 +129,3 @@ competence resets at seat reassignment.
 | [[p01_kc_cex_positioning_analysis]] | upstream | 0.42 |
 | [[p01_kc_cex_distribution_model]] | related | 0.38 |
 | p12_dr_intelligence | related | 0.30 |
-| [[n01_intelligence]] | related | 0.28 |

@@ -21,10 +21,7 @@ reviewed, related artifacts, environment state, upstream]
 density_score: 0.85
 related:
   - agent-computer-interface-builder
-  - kc_agent_computer_interface
   - bld_architecture_cli_tool
-  - p11_fb_agent_computer_interface
-  - bld_instruction_action_paradigm
 ---
 ## Observation
 Builders often create overly complex schemas that increase latency and token consumption. There is a frequent lack of clear state synchronization between the agent's command and the interface's actual environment state.
@@ -46,7 +43,4 @@ Reviewed terminal-based protocols demonstrate higher success rates when using st
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agent-computer-interface-builder]] | upstream | 0.33 |
-| [[kc_agent_computer_interface]] | upstream | 0.22 |
 | [[bld_architecture_cli_tool]] | upstream | 0.20 |
-| [[p11_fb_agent_computer_interface]] | downstream | 0.19 |
-| [[bld_instruction_action_paradigm]] | upstream | 0.19 |

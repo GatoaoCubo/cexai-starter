@@ -21,9 +21,6 @@ sampled, scrub claude]
 density_score: 0.85
 related:
   - agents-md-builder
-  - bld_knowledge_card_agents_md
-  - bld_collaboration_agents_md
-  - bld_instruction_agents_md
   - bld_tools_agents_md
 ---
 ## Observation
@@ -46,7 +43,4 @@ Sampled 200 AGENTS.md files from the AAIF Dec 2025 adoption report. Top-quartile
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agents-md-builder]] | upstream | 0.53 |
-| [[bld_knowledge_card_agents_md]] | upstream | 0.50 |
-| [[bld_collaboration_agents_md]] | downstream | 0.43 |
-| [[bld_instruction_agents_md]] | upstream | 0.37 |
 | [[bld_tools_agents_md]] | upstream | 0.37 |

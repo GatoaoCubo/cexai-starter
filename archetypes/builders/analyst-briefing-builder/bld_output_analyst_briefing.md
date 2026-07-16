@@ -18,11 +18,8 @@ keywords: [analyst_briefing construction, output template analyst briefing, anal
 framework, strong performer, forrester wave]
 density_score: 0.85
 related:
-  - p05_qg_analyst_briefing
   - bld_schema_analyst_briefing
   - analyst-briefing-builder
-  - bld_knowledge_card_analyst_briefing
-  - bld_instruction_analyst_briefing
 ---
 ```markdown
 ---
@@ -83,8 +80,5 @@ Win rate vs {{competitor_1}}: {{win_rate_1}}%. Win rate vs {{competitor_2}}: {{w
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_qg_analyst_briefing]] | downstream | 0.49 |
 | [[bld_schema_analyst_briefing]] | downstream | 0.44 |
 | [[analyst-briefing-builder]] | related | 0.43 |
-| [[bld_knowledge_card_analyst_briefing]] | upstream | 0.42 |
-| [[bld_instruction_analyst_briefing]] | upstream | 0.41 |

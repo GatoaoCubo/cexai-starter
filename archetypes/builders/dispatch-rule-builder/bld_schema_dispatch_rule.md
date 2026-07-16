@@ -31,7 +31,6 @@ keywords:
   - "required fields"
 density_score: 0.90
 related:
-  - bld_knowledge_card_dispatch_rule
   - bld_schema_search_strategy
   - bld_schema_reranker_config
   - bld_schema_action_paradigm
@@ -113,7 +112,6 @@ Overlap resolution: (1) highest priority, (2) most keyword matches, (3) first de
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_dispatch_rule]] | upstream | 0.46 |
 | [[bld_schema_search_strategy]] | sibling | 0.45 |
 | [[bld_schema_reranker_config]] | sibling | 0.43 |
 | [[bld_schema_action_paradigm]] | sibling | 0.43 |

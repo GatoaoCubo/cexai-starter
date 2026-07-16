@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - type-def-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_type_def
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # type-def-builder Sub-Agent

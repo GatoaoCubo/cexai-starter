@@ -4,7 +4,6 @@ description: "Builds ONE dag artifact via 8F pipeline. Loads dag-builder specs. 
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_dag
   - dag-builder
   - bld_architecture_dag
   - kind-builder
@@ -86,7 +85,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_dag]] | related | 0.33 |
 | [[dag-builder]] | related | 0.33 |
 | [[bld_architecture_dag]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |

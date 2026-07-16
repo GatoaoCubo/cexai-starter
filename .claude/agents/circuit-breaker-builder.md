@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - circuit-breaker-builder
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_collaboration_circuit_breaker
-  - p11_fb_circuit_breaker
 ---
 
 # circuit-breaker-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[circuit-breaker-builder]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[bld_collaboration_circuit_breaker]] | related | 0.27 |
-| [[p11_fb_circuit_breaker]] | related | 0.27 |

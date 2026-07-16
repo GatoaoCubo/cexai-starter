@@ -19,11 +19,7 @@ specializes, longest common subsequence, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_diff_strategy
   - bld_tools_diff_strategy
-  - p04_qg_diff_strategy
-  - bld_instruction_diff_strategy
-  - kc_diff_strategy
 ---
 ## Identity
 
@@ -74,8 +70,4 @@ and debugged misapplied patches in production LLM code agents. Output is terse, 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_diff_strategy]] | upstream | 0.56 |
 | [[bld_tools_diff_strategy]] | related | 0.52 |
-| [[p04_qg_diff_strategy]] | downstream | 0.51 |
-| [[bld_instruction_diff_strategy]] | upstream | 0.51 |
-| [[kc_diff_strategy]] | upstream | 0.50 |

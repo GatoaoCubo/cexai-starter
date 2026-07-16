@@ -29,13 +29,7 @@ keywords:
 density_score: 0.96
 updated: "2026-04-13"
 related:
-  - p03_sp_taxonomy_engineer
-  - p02_agent_taxonomy_engineer_n04
-  - p04_cli_taxonomy_builder_n04
-  - p06_schema_taxonomy
   - ontology-builder
-  - p01_kc_capability_registry
-  - p06_is_knowledge_data_model
 ---
 
 # Taxonomy

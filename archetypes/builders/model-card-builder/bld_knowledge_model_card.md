@@ -18,10 +18,8 @@ updated: "2026-04-07"
 keywords: [atomic searchable facts, model card construction, knowledge card model card, model_card, builder, examples, "p02_mc_{provider}_{model_slug}", model_selection, 0.00, "domain: llm"]
 density_score: 0.90
 related:
-  - p03_ins_model_card
   - model-card-builder
   - bld_memory_model_card
-  - bld_collaboration_model_card
   - bld_schema_model_card
 ---
 # Domain Knowledge: model_card
@@ -80,8 +78,6 @@ Model cards are technical specification artifacts for LLMs — they encode prici
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_model_card]] | downstream | 0.48 |
 | [[model-card-builder]] | downstream | 0.45 |
 | [[bld_memory_model_card]] | downstream | 0.41 |
-| [[bld_collaboration_model_card]] | downstream | 0.35 |
 | [[bld_schema_model_card]] | downstream | 0.32 |

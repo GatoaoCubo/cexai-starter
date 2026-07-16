@@ -19,9 +19,7 @@ density_score: 0.90
 related:
   - bld_architecture_model_provider
   - model-card-builder
-  - p01_kc_model_card
   - bld_architecture_boot_config
-  - bld_collaboration_model_card
 ---
 # Architecture: model_card in the CEX
 ## Component Inventory
@@ -71,6 +69,4 @@ model_card     --signals-->      cost_estimate
 |----------|-------------|-------|
 | [[bld_architecture_model_provider]] | sibling | 0.46 |
 | [[model-card-builder]] | upstream | 0.43 |
-| [[p01_kc_model_card]] | upstream | 0.43 |
 | [[bld_architecture_boot_config]] | sibling | 0.42 |
-| [[bld_collaboration_model_card]] | upstream | 0.40 |

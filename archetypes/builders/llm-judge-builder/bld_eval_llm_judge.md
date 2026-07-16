@@ -19,10 +19,6 @@ keywords: [llm-as-judge configuration, and calibration examples, judge_model pre
 density_score: 0.90
 related:
   - llm-judge-builder
-  - bld_instruction_llm_judge
-  - bld_collaboration_llm_judge
-  - p11_qg_reward_signal
-  - bld_knowledge_card_llm_judge
 ---
 ## Quality Gate
 

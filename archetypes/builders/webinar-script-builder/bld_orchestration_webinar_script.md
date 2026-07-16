@@ -18,7 +18,6 @@ keywords: [define crew role, handoff interfaces, webinar_script construction, we
 density_score: 0.85
 related:
   - webinar-script-builder
-  - bld_instruction_webinar_script
   - bld_schema_webinar_script
   - bld_tools_webinar_script
   - bld_architecture_webinar_script
@@ -89,7 +88,6 @@ The webinar_script builder handles ONLY live session scripts. Adjacent content t
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[webinar-script-builder]] | upstream | 0.48 |
-| [[bld_instruction_webinar_script]] | upstream | 0.42 |
 | [[bld_schema_webinar_script]] | upstream | 0.41 |
 | [[bld_tools_webinar_script]] | upstream | 0.38 |
 | [[bld_architecture_webinar_script]] | upstream | 0.38 |

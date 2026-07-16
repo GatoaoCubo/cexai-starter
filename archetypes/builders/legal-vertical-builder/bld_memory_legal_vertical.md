@@ -21,10 +21,6 @@ reviewed, related artifacts, billable hour]
 density_score: 0.85
 related:
   - legal-vertical-builder
-  - p01_qg_legal_vertical
-  - bld_instruction_legal_vertical
-  - bld_knowledge_card_legal_vertical
-  - p10_mem_memory_benchmark_builder
 ---
 ## Observation
 Common issues include inconsistent terminology around privilege logs, misalignment between billable hour tracking and client expectations, and overcomplication of contract analysis workflows. Use cases often lack specificity, leading to ambiguity in implementation.
@@ -46,7 +42,3 @@ Reviewed artifacts with standardized privilege terminology reduced disputes by 4
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[legal-vertical-builder]] | upstream | 0.46 |
-| [[p01_qg_legal_vertical]] | downstream | 0.44 |
-| [[bld_instruction_legal_vertical]] | upstream | 0.41 |
-| [[bld_knowledge_card_legal_vertical]] | upstream | 0.33 |
-| [[p10_mem_memory_benchmark_builder]] | sibling | 0.22 |

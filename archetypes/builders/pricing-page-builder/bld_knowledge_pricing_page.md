@@ -19,10 +19,6 @@ pricing, key concepts, value proposition, harvard business review, tiered pricin
 density_score: 0.85
 related:
   - pricing-page-builder
-  - bld_instruction_pricing_page
-  - p10_mem_pricing_page_builder
-  - n00_pricing_page_manifest
-  - p08_pat_pricing_framework
 ---
 ## Domain Overview  
 Pricing pages are critical conversion touchpoints in SaaS and e-commerce, balancing transparency with persuasive design. Tiered pricing models dominate, leveraging psychological principles like anchoring (positioning premium tiers as benchmarks) and scarcity (limited-time upgrades). Effective pages use comparative layouts to highlight feature differentiation, while conversion copy emphasizes ROI, urgency, and trust signals. UI/UX research shows that clear value propositions and CTAs reduce friction, with A/B testing revealing that tiered comparisons boost conversion rates by 15–30% (HubSpot, 2022).  
@@ -69,7 +65,3 @@ Pricing pages are critical conversion touchpoints in SaaS and e-commerce, balanc
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pricing-page-builder]] | downstream | 0.59 |
-| [[bld_instruction_pricing_page]] | downstream | 0.51 |
-| [[p10_mem_pricing_page_builder]] | downstream | 0.44 |
-| [[n00_pricing_page_manifest]] | sibling | 0.42 |
-| [[p08_pat_pricing_framework]] | downstream | 0.36 |

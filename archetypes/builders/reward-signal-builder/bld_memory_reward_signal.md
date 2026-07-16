@@ -26,11 +26,7 @@ title: "Memory Reward Signal"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_reward_signal
-  - p07_llm_judge
   - bld_architecture_reward_signal
-  - bld_instruction_reward_signal
-  - p01_kc_reward_signal
 ---
 ## Summary
 Reward signals are the most consequential design decision in an RLHF pipeline. A miscalibrated signal does not produce a neutral outcome — it actively degrades the model by reinforcing the wrong behaviors. The two most common failure modes are reward hacking (single criterion) and baseline drift (uncalibrated threshold).

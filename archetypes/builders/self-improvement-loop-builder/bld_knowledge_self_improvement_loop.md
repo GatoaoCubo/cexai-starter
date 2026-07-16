@@ -20,9 +20,6 @@ density_score: 0.85
 related:
   - self-improvement-loop-builder
   - bld_tools_self_improvement_loop
-  - kc_self_improvement_loop
-  - p01_kc_gpai_technical_doc
-  - kc_agentic_rag
 ---
 ## Domain Overview
 Self-improvement loops are critical in autonomous systems, enabling agents to iteratively refine capabilities through feedback-driven adaptation. These loops underpin advanced AI systems, such as self-driving cars, robotics, and adaptive software, where continuous learning from operational data is essential. Unlike passive learning, self-improvement loops involve active system-level mechanisms to optimize performance, resilience, and goal alignment. They integrate feedback from environment interactions, internal diagnostics, and external evaluations to drive iterative enhancements.
@@ -72,6 +69,3 @@ The concept is rooted in fields like reinforcement learning, meta-learning, and 
 |----------|-------------|-------|
 | [[self-improvement-loop-builder]] | downstream | 0.43 |
 | [[bld_tools_self_improvement_loop]] | downstream | 0.35 |
-| [[kc_self_improvement_loop]] | sibling | 0.30 |
-| [[p01_kc_gpai_technical_doc]] | sibling | 0.25 |
-| [[kc_agentic_rag]] | sibling | 0.24 |

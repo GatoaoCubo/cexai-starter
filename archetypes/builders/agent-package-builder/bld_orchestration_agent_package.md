@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [agent package construction, collaboration agent package, agent_package, builder, examples, "### crew: distribution pipeline", my role, crew compositions, new agent end, distribution pipeline]
 density_score: 0.90
 related:
-  - bld_collaboration_agent
-  - bld_collaboration_boot_config
   - agent-package-builder
-  - bld_collaboration_instruction
-  - bld_collaboration_system_prompt
 ---
 # Collaboration: agent-package-builder
 ## My Role in Crews

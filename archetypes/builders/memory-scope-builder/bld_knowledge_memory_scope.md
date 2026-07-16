@@ -31,11 +31,7 @@ keywords:
   - "chain conversation"
 density_score: 0.90
 related:
-  - p10_lr_memory_scope_builder
-  - p01_kc_memory_scope
-  - bld_collaboration_memory_scope
   - memory-scope-builder
-  - bld_collaboration_memory_type
 ---
 # Domain Knowledge: memory_scope
 ## Executive Summary
@@ -76,7 +72,6 @@ Memory scope config — which memory types an agent uses, backends, TTL, and iso
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_memory_scope_builder]] | downstream | 0.56 |
 | [[kc_memory_scope]] | sibling | 0.52 |
 | [[bld_orchestration_memory_scope]] | downstream | 0.46 |
 | [[memory-scope-builder]] | related | 0.46 |

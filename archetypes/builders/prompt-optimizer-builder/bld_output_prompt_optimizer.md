@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [prompt_optimizer construction, output template prompt optimizer, prompt_optimizer, builder, output_template, input prompt, optimized prompt, clarity boost, tone adjust, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_prompt_version
-  - bld_collaboration_action_prompt
-  - n00_prompt_optimizer_manifest
   - prompt-version-builder
-  - bld_knowledge_card_prompt_optimizer
 ---
 ```yaml
 ---
@@ -52,8 +48,4 @@ def optimize_prompt(input_text):
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_prompt_version]] | downstream | 0.30 |
-| [[bld_collaboration_action_prompt]] | downstream | 0.28 |
-| [[n00_prompt_optimizer_manifest]] | upstream | 0.26 |
 | [[prompt-version-builder]] | upstream | 0.25 |
-| [[bld_knowledge_card_prompt_optimizer]] | upstream | 0.22 |

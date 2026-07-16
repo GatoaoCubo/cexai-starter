@@ -19,11 +19,7 @@ keywords: [template with, glossary entry construction, output template glossary 
 1.]
 density_score: 0.90
 related:
-  - p01_gl_TERM_SLUG
-  - p11_qg_glossary_entry
-  - bld_knowledge_card_glossary_entry
   - bld_config_glossary_entry
-  - bld_collaboration_glossary_entry
 ---
 # Output Template: glossary_entry
 ```yaml
@@ -84,7 +80,6 @@ tldr: "{{dense_summary_max_160ch}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p01_gl_TERM_SLUG | upstream | 0.38 |
-| [[p11_qg_glossary_entry]] | downstream | 0.36 |
 | [[bld_knowledge_glossary_entry]] | upstream | 0.35 |
 | [[bld_config_glossary_entry]] | downstream | 0.34 |
 | [[bld_orchestration_glossary_entry]] | downstream | 0.34 |

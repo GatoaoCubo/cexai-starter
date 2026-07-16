@@ -4,10 +4,8 @@ description: "Builds ONE workflow_run_crate artifact via 8F pipeline. Loads work
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_workflow_run_crate
   - workflow-run-crate-builder
   - bld_architecture_workflow_run_crate
-  - p11_fb_workflow_run_crate
 ---
 
 # workflow-run-crate-builder Sub-Agent
@@ -85,7 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_workflow_run_crate]] | related | 0.40 |
 | [[workflow-run-crate-builder]] | related | 0.39 |
 | [[bld_architecture_workflow_run_crate]] | related | 0.38 |
-| [[p11_fb_workflow_run_crate]] | related | 0.35 |

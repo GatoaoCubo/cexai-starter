@@ -4,11 +4,8 @@ description: "Builds ONE playground_config artifact via 8F pipeline. Loads playg
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_config_playground_config
-  - n00_playground_config_manifest
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # playground-config-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[bld_config_playground_config]] | related | 0.30 |
-| [[n00_playground_config_manifest]] | related | 0.28 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |

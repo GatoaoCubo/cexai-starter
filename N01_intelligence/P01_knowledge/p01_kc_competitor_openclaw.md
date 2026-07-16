@@ -22,7 +22,6 @@ related:
  - p01_kc_competitor_live_supplement_2026q2
  - kc_competitor_hermes
  - p01_kc_competitor_openai_sdk
- - cm_cex_vs_landscape
 ---
 
 # OpenClaw: Competitor Intelligence Profile

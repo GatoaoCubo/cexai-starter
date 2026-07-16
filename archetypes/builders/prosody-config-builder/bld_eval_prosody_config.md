@@ -26,12 +26,6 @@ keywords:
   - "^[a-za-z0-9_]+$"
   - "quality gate"
 density_score: 0.85
-related:
-  - bld_knowledge_card_prosody_config
-  - hybrid_review2_n03
-  - bld_output_template_prosody_config
-  - bld_instruction_prosody_config
-  - p04_qg_tts_provider
 ---
 ## Quality Gate
 

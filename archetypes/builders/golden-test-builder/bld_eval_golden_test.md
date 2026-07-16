@@ -18,11 +18,7 @@ updated: "2026-03-27"
 keywords: [validates golden_test artifacts, source quality, rationale-to-gate mapping, and non-self-referential target kind, quality-gate, golden-test, calibration]
 density_score: 0.93
 related:
-  - p11_qg_few_shot_example
   - golden-test-builder
-  - p11_qg_quality_gate
-  - p11_qg_knowledge_card
-  - bld_instruction_golden_test
 ---
 ## Quality Gate
 

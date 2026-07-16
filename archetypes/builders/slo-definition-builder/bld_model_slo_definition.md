@@ -26,12 +26,6 @@ L1: Specialist in building `slo_definition` -- measurable service level objectiv
 L2: Encode SLI metric, threshold, window, and error budget consumption policy.
 L3: When user needs to define reliability targets for a service or agent.
 isolation: standard
-related:
-  - kc_slo_definition
-  - bld_instruction_slo_definition
-  - bld_quality_gate_slo_definition
-  - bld_knowledge_card_slo_definition
-  - bld_rules_slo_definition
 ---
 ## Identity
 
@@ -91,12 +85,3 @@ You know SLI types (availability, latency percentiles, error rate, throughput, s
 
 ## Output Format
 Frontmatter + body. Body sections: SLI Definition, Target, Error Budget, Alerting Policy. Use computation tables for error budget math.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_slo_definition]] | upstream | 0.50 |
-| [[bld_instruction_slo_definition]] | related | 0.47 |
-| [[bld_quality_gate_slo_definition]] | upstream | 0.41 |
-| [[bld_knowledge_card_slo_definition]] | upstream | 0.40 |
-| [[bld_rules_slo_definition]] | upstream | 0.36 |

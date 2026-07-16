@@ -18,10 +18,6 @@ updated: "2026-04-07"
 keywords: [agent construction, collaboration agent, agent, builder, examples, "### crew: agent identity stack", my role, crew compositions, new agent end, agent identity stack]
 density_score: 0.90
 related:
-  - bld_collaboration_agent_package
-  - bld_collaboration_boot_config
-  - bld_collaboration_system_prompt
-  - p01_kc_agent
   - bld_architecture_agent
 ---
 # Collaboration: agent-builder

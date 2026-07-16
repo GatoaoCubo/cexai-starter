@@ -28,9 +28,6 @@ cross_provider:
   openai: "Thread summarization via gpt-4o"
   anthropic: "System prompt injection of compressed prior"
   haystack: "PromptBuilder + summarization pipeline"
-related:
-  - bld_collaboration_memory_summary
-  - p01_kc_session_state
 ---
 
 # Memory Summary

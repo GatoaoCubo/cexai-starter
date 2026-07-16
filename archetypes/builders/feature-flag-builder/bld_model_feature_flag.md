@@ -30,12 +30,6 @@ tldr: Golden and anti-examples for feature flag construction, demonstrating idea
 llm_function: BECOME
 parent: null
 8f: "F1_constrain"
-related:
-  - bld_collaboration_feature_flag
-  - bld_knowledge_card_feature_flag
-  - p01_kc_feature_flag
-  - p10_lr_feature_flag_builder
-  - bld_instruction_feature_flag
 ---
 ## Identity
 
@@ -123,12 +117,3 @@ Every response that produces an artifact must include:
 4. **Retirement note** ??? explicit condition under which this flag should be deleted.
 Maximum artifact size: 1024 bytes. Compress targeting rules to key-value form if needed.
 ## Constraints
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_feature_flag]] | downstream | 0.66 |
-| [[bld_knowledge_card_feature_flag]] | upstream | 0.61 |
-| [[p01_kc_feature_flag]] | related | 0.49 |
-| [[p10_lr_feature_flag_builder]] | downstream | 0.49 |
-| [[bld_instruction_feature_flag]] | upstream | 0.46 |

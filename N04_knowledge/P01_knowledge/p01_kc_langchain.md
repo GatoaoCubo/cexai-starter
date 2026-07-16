@@ -20,7 +20,6 @@ density_score: 0.89
 related:
   - p01_kc_crewai
   - p01_kc_dspy
-  - p01_kc_8f_pipeline
 ---
 
 # LangChain — Industry-Standard LLM Composition Framework

@@ -18,10 +18,6 @@ keywords: [component map of effort_profile, and architectural position, effort p
 density_score: 0.90
 related:
   - effort-profile-builder
-  - p11_qg_effort_profile
-  - p01_kc_effort_profile
-  - p10_lr_effort_profile_builder
-  - bld_output_template_effort_profile
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -80,7 +76,3 @@ python _tools/cex_score.py --apply bld-architecture-effort-profile.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[effort-profile-builder]] | downstream | 0.56 |
-| [[p11_qg_effort_profile]] | downstream | 0.48 |
-| [[p01_kc_effort_profile]] | downstream | 0.43 |
-| [[p10_lr_effort_profile_builder]] | downstream | 0.41 |
-| [[bld_output_template_effort_profile]] | upstream | 0.38 |

@@ -23,11 +23,8 @@ formats, reproducibility
 reliable, response formats]
 density_score: 0.90
 related:
-  - bld_collaboration_response_format
   - response-format-builder
   - bld_architecture_response_format
-  - p03_ins_response_format
-  - p11_qg_response_format
 ---
 # Memory: response-format-builder
 ## Summary
@@ -88,5 +85,3 @@ python _tools/cex_score.py --apply bld-memory-response-format.md
 | [[bld_orchestration_response_format]] | upstream | 0.52 |
 | [[response-format-builder]] | upstream | 0.50 |
 | [[bld_architecture_response_format]] | upstream | 0.44 |
-| [[p03_ins_response_format]] | upstream | 0.44 |
-| [[p11_qg_response_format]] | downstream | 0.40 |

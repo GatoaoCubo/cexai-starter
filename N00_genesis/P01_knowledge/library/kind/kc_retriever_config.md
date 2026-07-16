@@ -17,12 +17,6 @@ when_to_use: "Building, reviewing, or reasoning about retriever configuration ar
 keywords: [retriever_config, phases, trigger, reusable, capability, workflow, lifecycle]
 feeds_kinds: [retriever_config]
 density_score: null
-related:
-  - p01_kc_hook
-  - p01_kc_steps
-  - p01_kc_server_tools
-  - p01_kc_supabase_mcp
-  - p01_kc_skill
 ---
 
 # Retriever Configuration

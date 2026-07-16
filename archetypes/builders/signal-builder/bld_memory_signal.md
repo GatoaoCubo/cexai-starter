@@ -25,9 +25,6 @@ density_score: 0.90
 related:
   - signal-builder
   - bld_architecture_signal
-  - bld_collaboration_signal
-  - bld_knowledge_card_signal
-  - p11_qg_signal
 ---
 # Memory: signal-builder
 ## Summary
@@ -90,4 +87,3 @@ python _tools/cex_score.py --apply bld-memory-signal.md
 | [[bld_architecture_signal]] | upstream | 0.41 |
 | [[bld_orchestration_signal]] | downstream | 0.37 |
 | [[bld_knowledge_signal]] | downstream | 0.36 |
-| [[p11_qg_signal]] | downstream | 0.33 |

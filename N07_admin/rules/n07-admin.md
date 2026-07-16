@@ -22,9 +22,7 @@ slots:
   runtime_models: []
   date: "<YYYYMMDD>"
 related:
-  - n07-orchestrator
   - nucleus_def_n07
-  - 8f-reasoning
 tags:
   - rule
   - n07

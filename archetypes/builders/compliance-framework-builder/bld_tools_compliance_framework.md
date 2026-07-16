@@ -17,11 +17,9 @@ updated: "2026-04-13"
 keywords: [compliance_framework construction, tools compliance framework, compliance_framework, builder, tools, production tools, validation tools, external references, management systems, international association]
 density_score: 0.85
 related:
-  - bld_knowledge_card_compliance_framework
   - bld_tools_vad_config
   - bld_tools_edit_format
   - bld_tools_search_strategy
-  - kc_compliance_framework
 ---
 ## Production Tools
 | Tool | Purpose | When |
@@ -52,8 +50,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_compliance_framework]] | upstream | 0.32 |
 | [[bld_tools_vad_config]] | sibling | 0.30 |
 | [[bld_tools_edit_format]] | sibling | 0.30 |
 | [[bld_tools_search_strategy]] | sibling | 0.29 |
-| [[kc_compliance_framework]] | upstream | 0.29 |

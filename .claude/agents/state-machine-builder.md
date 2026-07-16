@@ -4,10 +4,8 @@ description: "Builds ONE state_machine artifact via 8F pipeline. Loads state-mac
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - state-machine-builder
-  - bld_collaboration_state_machine
   - bld_tools_state_machine
 ---
 
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[state-machine-builder]] | related | 0.30 |
-| [[bld_collaboration_state_machine]] | related | 0.29 |
 | [[bld_tools_state_machine]] | related | 0.29 |

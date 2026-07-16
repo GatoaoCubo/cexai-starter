@@ -19,10 +19,7 @@ usage, stack telemetry, microsoft azure, key concepts, resource consumption]
 density_score: 0.85
 related:
   - usage-report-builder
-  - bld_knowledge_card_usage_quota
   - bld_config_usage_report
-  - kc_usage_quota
-  - n00_usage_report_manifest
 ---
 ## Domain Overview  
 Usage reports are critical for SaaS and cloud providers to track resource consumption, enabling accurate billing, capacity planning, and compliance. These reports aggregate telemetry data on API calls, compute hours, storage usage, and network traffic, often aligned with metering frameworks like OpenStack Telemetry or Microsoft Azure’s usage analytics. CFOs rely on these metrics to forecast revenue, optimize infrastructure spending, and identify underutilized services. Regulatory requirements (e.g., GDPR, SOC 2) further mandate transparency in usage tracking to ensure data governance and audit readiness.  
@@ -90,7 +87,4 @@ Critical distinction for enterprise billing and FinOps alignment:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[usage-report-builder]] | downstream | 0.48 |
-| [[bld_knowledge_card_usage_quota]] | sibling | 0.35 |
 | [[bld_config_usage_report]] | downstream | 0.33 |
-| [[kc_usage_quota]] | sibling | 0.33 |
-| [[n00_usage_report_manifest]] | sibling | 0.31 |

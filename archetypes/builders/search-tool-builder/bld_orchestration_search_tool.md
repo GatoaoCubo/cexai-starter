@@ -19,10 +19,6 @@ keywords: [search tool construction, collaboration search tool, search_tool, bui
 density_score: 0.90
 related:
   - search-tool-builder
-  - bld_collaboration_function_def
-  - bld_knowledge_card_search_tool
-  - bld_instruction_search_tool
-  - bld_collaboration_retriever
 ---
 # Collaboration: search-tool-builder
 ## My Role in Crews

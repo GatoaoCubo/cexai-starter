@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [vector store construction, collaboration vector store, vector_store, builder, examples, "### crew: upgrade tf-idf to vector search", "### crew: scale vector storage", "### crew: multi-domain knowledge base", my role, crew compositions]
 density_score: 0.90
 related:
-  - bld_collaboration_embedder_provider
-  - bld_collaboration_embedding_config
-  - bld_collaboration_retriever_config
   - vector-store-builder
-  - bld_collaboration_knowledge_graph
 ---
 # Collaboration: vector-store-builder
 ## My Role in Crews

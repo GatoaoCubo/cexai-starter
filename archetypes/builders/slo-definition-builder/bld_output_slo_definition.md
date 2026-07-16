@@ -30,11 +30,7 @@ keywords:
   - "sli_type target_percent"
 density_score: null
 related:
-  - bld_quality_gate_slo_definition
-  - kc_slo_definition
-  - bld_instruction_slo_definition
   - bld_schema_slo_definition
-  - bld_manifest_slo_definition
 ---
 # Output Template: slo_definition
 
@@ -114,8 +110,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_quality_gate_slo_definition]] | downstream | 0.54 |
-| [[kc_slo_definition]] | sibling | 0.51 |
-| [[bld_instruction_slo_definition]] | downstream | 0.49 |
 | [[bld_schema_slo_definition]] | downstream | 0.41 |
-| [[bld_manifest_slo_definition]] | downstream | 0.36 |

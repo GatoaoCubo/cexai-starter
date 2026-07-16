@@ -30,12 +30,6 @@ keywords:
   - "yaml broken"
 density_score: 0.88
 llm_function: GOVERN
-related:
-  - p11_qg_quality_gate
-  - p11_qg_kind_builder
-  - p11_qg_agent
-  - p11_qg_creation_artifacts
-  - p11_qg_optimizer
 ---
 # Gate: builder
 
@@ -102,12 +96,3 @@ Weights sum: 9.5. Normalize: divide each by 9.5 before scoring.
 | audit_trail | Log bypass reason in records/audits/ with timestamp |
 | expiry | 72h — full gate pass required before expiry |
 | never_bypass | H01 (YAML), H05 (quality null) |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p11_qg_quality_gate]] | sibling | 0.34 |
-| [[p11_qg_kind_builder]] | sibling | 0.33 |
-| [[p11_qg_agent]] | sibling | 0.33 |
-| [[p11_qg_creation_artifacts]] | sibling | 0.30 |
-| [[p11_qg_optimizer]] | sibling | 0.30 |

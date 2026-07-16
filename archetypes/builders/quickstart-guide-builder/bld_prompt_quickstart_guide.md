@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [quickstart_guide construction, instruction quickstart guide, quickstart_guide, builder, instruction, related artifacts, quickstart guide, target audience, sibling, phase]
 density_score: 0.85
 related:
-  - bld_instruction_integration_guide
   - quickstart-guide-builder
-  - n00_quickstart_guide_manifest
-  - kc_quickstart_guide
-  - p10_lr_quickstart_guide_builder
 ---
 ## Phase 1: RESEARCH (quickstart guide scoping)
 1. Identify target audience for the quickstart guide (developers, admins, etc.)  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_integration_guide]] | sibling | 0.34 |
 | [[quickstart-guide-builder]] | downstream | 0.30 |
-| [[n00_quickstart_guide_manifest]] | downstream | 0.28 |
-| [[kc_quickstart_guide]] | upstream | 0.28 |
-| [[p10_lr_quickstart_guide_builder]] | downstream | 0.26 |

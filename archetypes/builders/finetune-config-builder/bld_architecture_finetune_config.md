@@ -18,10 +18,7 @@ keywords: [and architectural position, finetune_config construction, architectur
 density_score: 0.90
 related:
   - finetune-config-builder
-  - bld_collaboration_finetune_config
-  - n00_finetune_config_manifest
   - bld_schema_finetune_config
-  - bld_collaboration_training_method
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -87,7 +84,4 @@ guardrail (P11) --constrains--> finetune_config (safety rules for training data,
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[finetune-config-builder]] | upstream | 0.59 |
-| [[bld_collaboration_finetune_config]] | downstream | 0.54 |
-| [[n00_finetune_config_manifest]] | upstream | 0.45 |
 | [[bld_schema_finetune_config]] | upstream | 0.40 |
-| [[bld_collaboration_training_method]] | downstream | 0.40 |

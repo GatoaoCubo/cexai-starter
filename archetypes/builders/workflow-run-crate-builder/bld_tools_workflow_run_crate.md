@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [workflow_run_crate construction, tools workflow run crate, workflow_run_crate, builder, tools, ro-crate, galaxy, rocrate-py, fair, production tools]
 density_score: 0.85
 related:
-  - bld_knowledge_card_workflow_run_crate
-  - p10_lr_workflow_run_crate_builder
   - bld_architecture_workflow_run_crate
   - workflow-run-crate-builder
-  - bld_instruction_workflow_run_crate
 ---
 ## Production Tools
 | Tool             | Purpose                                  | When                          |
@@ -52,8 +49,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_workflow_run_crate]] | upstream | 0.64 |
-| [[p10_lr_workflow_run_crate_builder]] | downstream | 0.58 |
 | [[bld_architecture_workflow_run_crate]] | downstream | 0.56 |
 | [[workflow-run-crate-builder]] | downstream | 0.55 |
-| [[bld_instruction_workflow_run_crate]] | upstream | 0.47 |

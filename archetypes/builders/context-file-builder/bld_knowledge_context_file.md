@@ -22,7 +22,6 @@ related:
   - context-file-builder
   - bld_memory_context_file
   - ctx_{{scope}}
-  - n00_context_file_manifest
 ---
 # Domain Knowledge: context_file
 

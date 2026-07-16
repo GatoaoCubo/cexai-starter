@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [knowledge graph construction, component map for knowledge_graph, relation schema, extraction config, storage backend, traversal strategy, embedding integration]
 density_score: 0.90
 related:
-  - bld_collaboration_knowledge_graph
   - knowledge-graph-builder
-  - p01_kc_knowledge_graph
-  - n00_graph_rag_config_manifest
-  - n00_knowledge_graph_manifest
 ---
 # Architecture: knowledge_graph
 
@@ -100,8 +96,4 @@ guardrail (P11) --constrains--> knowledge_graph (data governance rules for graph
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_knowledge_graph]] | downstream | 0.70 |
 | [[knowledge-graph-builder]] | upstream | 0.64 |
-| [[p01_kc_knowledge_graph]] | upstream | 0.53 |
-| [[n00_graph_rag_config_manifest]] | upstream | 0.51 |
-| [[n00_knowledge_graph_manifest]] | upstream | 0.50 |

@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_white_label_config
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p11_fb_white_label_config
-  - bld_output_template_white_label_config
 ---
 
 # white-label-config-builder Sub-Agent
@@ -89,5 +86,3 @@ Five duties bind any agent that emits an artifact:
 | [[bld_config_white_label_config]] | related | 0.35 |
 | p03_sp_builder_nucleus | related | 0.31 |
 | kind-builder | related | 0.31 |
-| [[p11_fb_white_label_config]] | related | 0.30 |
-| [[bld_output_template_white_label_config]] | related | 0.27 |

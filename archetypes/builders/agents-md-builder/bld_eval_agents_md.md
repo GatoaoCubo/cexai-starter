@@ -28,9 +28,6 @@ keywords:
 density_score: 0.85
 related:
   - agents-md-builder
-  - bld_instruction_agents_md
-  - bld_knowledge_card_agents_md
-  - bld_output_template_agents_md
   - bld_schema_agents_md
 ---
 ## Quality Gate

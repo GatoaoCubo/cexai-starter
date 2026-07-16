@@ -18,10 +18,6 @@ keywords: [pa_manifest construction, instruction c, pa manifest, c2pa_manifest, 
 density_score: 0.85
 related:
   - c2pa-manifest-builder
-  - bld_knowledge_card_c2pa_manifest
-  - p10_qg_c2pa_manifest
-  - bld_output_template_c2pa_manifest
-  - p10_lr_c2pa_manifest_builder
 ---
 ## Phase 1: RESEARCH
 1. Identify content type: image (JPEG/PNG/AVIF), audio (MP3/WAV), video (MP4), or document (PDF).
@@ -54,7 +50,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[c2pa-manifest-builder]] | downstream | 0.62 |
-| [[bld_knowledge_card_c2pa_manifest]] | upstream | 0.61 |
-| [[p10_qg_c2pa_manifest]] | downstream | 0.53 |
-| [[bld_output_template_c2pa_manifest]] | downstream | 0.51 |
-| [[p10_lr_c2pa_manifest_builder]] | downstream | 0.49 |

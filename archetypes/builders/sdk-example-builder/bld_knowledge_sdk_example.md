@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [sdk_example construction, knowledge card sdk example, sdk_example, builder, knowledge_card, requests, httpclient, time.sleep(), domain overview, key concepts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_api_reference
-  - bld_knowledge_card_quickstart_guide
   - sdk-example-builder
-  - kc_api_reference
-  - p01_kc_api_client
 ---
 ## Domain Overview
 SDK examples serve as blueprints for integrating third-party services into applications, abstracting low-level details while exposing idiomatic APIs. They emphasize cross-language interoperability, standardization, and adherence to language-specific best practices (e.g., Python’s async/await, Java’s static imports). Examples often demonstrate REST, gRPC, or messaging patterns, ensuring developers can map business logic to API contracts without reinventing infrastructure.
@@ -67,8 +63,4 @@ SDKs must balance simplicity and flexibility, avoiding vendor lock-in while prov
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_api_reference]] | sibling | 0.40 |
-| [[bld_knowledge_card_quickstart_guide]] | sibling | 0.40 |
 | [[sdk-example-builder]] | downstream | 0.34 |
-| [[kc_api_reference]] | sibling | 0.30 |
-| [[p01_kc_api_client]] | sibling | 0.29 |

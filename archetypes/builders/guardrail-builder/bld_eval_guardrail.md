@@ -18,9 +18,6 @@ updated: "2026-07-04"
 keywords: [validates guardrail artifacts, enforcement mode specificity, concrete violation examples, severity classification, and bypass policy, quality-gate, guardrail]
 density_score: 0.94
 related:
-  - bld_instruction_guardrail
-  - p10_lr_guardrail_builder
-  - p11_qg_quality_gate
   - guardrail-builder
   - bld_architecture_guardrail
 ---

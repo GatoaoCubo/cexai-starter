@@ -17,9 +17,7 @@ updated: "2026-04-13"
 keywords: [realtime_session construction, crew role, session layer between model_provider, and voice_pipeline, realtime_session, builder, collaboration, voice_pipeline, stt_provider, tts_provider]
 density_score: 0.90
 related:
-  - bld_collaboration_voice_pipeline
   - realtime-session-builder
-  - bld_collaboration_stt_provider
   - bld_architecture_realtime_session
   - bld_architecture_voice_pipeline
 ---
@@ -77,8 +75,6 @@ Does NOT produce:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_voice_pipeline]] | sibling | 0.38 |
 | [[realtime-session-builder]] | upstream | 0.34 |
-| [[bld_collaboration_stt_provider]] | sibling | 0.33 |
 | [[bld_architecture_realtime_session]] | upstream | 0.31 |
 | [[bld_architecture_voice_pipeline]] | upstream | 0.30 |

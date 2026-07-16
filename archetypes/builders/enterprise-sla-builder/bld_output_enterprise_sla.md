@@ -18,10 +18,8 @@ keywords: [enterprise_sla construction, output template enterprise sla, enterpri
 density_score: 0.85
 related:
   - enterprise-sla-builder
-  - n00_enterprise_sla_manifest
   - bld_config_enterprise_sla
   - bld_tools_enterprise_sla
-  - bld_collaboration_enterprise_sla
 ---
 ```yaml
 ---
@@ -75,7 +73,5 @@ compliance_checks:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[enterprise-sla-builder]] | downstream | 0.27 |
-| [[n00_enterprise_sla_manifest]] | downstream | 0.24 |
 | [[bld_config_enterprise_sla]] | downstream | 0.23 |
 | [[bld_tools_enterprise_sla]] | upstream | 0.22 |
-| [[bld_collaboration_enterprise_sla]] | downstream | 0.22 |

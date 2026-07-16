@@ -32,10 +32,8 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_response_format
-  - p03_ins_response_format
   - response-format-builder
   - bld_architecture_response_format
-  - bld_collaboration_response_format
 ---
 # Domain Knowledge: response_format
 ## Executive Summary
@@ -90,7 +88,6 @@ A response_format is a template injected into the LLM prompt that specifies how 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_response_format]] | downstream | 0.49 |
-| [[p03_ins_response_format]] | related | 0.46 |
 | [[response-format-builder]] | related | 0.43 |
 | [[bld_architecture_response_format]] | downstream | 0.41 |
 | [[bld_orchestration_response_format]] | related | 0.36 |

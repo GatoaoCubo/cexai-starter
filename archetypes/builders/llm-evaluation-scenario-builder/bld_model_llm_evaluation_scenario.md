@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [builder identity, routing for llm_evaluation_scenario, llm_evaluation_scenario construction, llm_evaluation_scenario, builder, type_builder, helm, stanford-crfm, eval, "p07_evs_{{subject}}_{{capability}}.md"]
 density_score: 0.85
-related:
-  - bld_knowledge_card_llm_evaluation_scenario
-  - bld_collaboration_llm_evaluation_scenario
-  - bld_instruction_llm_evaluation_scenario
-  - n00_llm_evaluation_scenario_manifest
-  - kc_llm_evaluation_scenario
 ---
 ## Identity
 
@@ -71,12 +65,3 @@ ALWAYS include token cost estimate per scenario run.
 NEVER mix evaluation paradigms (generation vs. classification) within a single scenario.
 NEVER omit canonicalization rules -- unnormalized output makes metric computation nondeterministic.
 NEVER self-score quality; peer review assigns quality field.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_llm_evaluation_scenario]] | upstream | 0.57 |
-| [[bld_collaboration_llm_evaluation_scenario]] | downstream | 0.54 |
-| [[bld_instruction_llm_evaluation_scenario]] | upstream | 0.49 |
-| [[n00_llm_evaluation_scenario_manifest]] | related | 0.48 |
-| [[kc_llm_evaluation_scenario]] | upstream | 0.45 |

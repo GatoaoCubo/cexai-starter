@@ -18,11 +18,7 @@ updated: "2026-04-13"
 keywords: [experiment_config -- a, and traffic splits, gates for experiment_config, validates variant structure, traffic splits, metric definitions, and statistical parameter completeness]
 density_score: 0.92
 related:
-  - p11_qg_quality_gate
-  - bld_output_template_experiment_config
-  - p11_qg_kind_builder
   - bld_schema_experiment_config
-  - bld_instruction_experiment_config
 ---
 ## Quality Gate
 
@@ -142,8 +138,4 @@ WHY THIS IS GOLDEN:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_quality_gate]] | sibling | 0.34 |
-| [[bld_output_template_experiment_config]] | upstream | 0.31 |
-| [[p11_qg_kind_builder]] | sibling | 0.31 |
 | [[bld_schema_experiment_config]] | upstream | 0.31 |
-| [[bld_instruction_experiment_config]] | upstream | 0.31 |

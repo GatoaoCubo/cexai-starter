@@ -17,13 +17,10 @@ density_score: 0.88
 related:
   - bld_schema_motion_scene
   - bld_prompt_motion_scene
-  - p06_vs_motion_scene
-  - p05_ms_aurora_title
-  - p05_ms_ferro_lowerthird
 ---
 
 # Template: motion_scene instance
-Fill every placeholder; keep body <= 6144 bytes. Mirror [[p05_ms_aurora_title]] / [[p05_ms_ferro_lowerthird]].
+Fill every placeholder; keep body <= 6144 bytes. Mirror p05_ms_aurora_title / p05_ms_ferro_lowerthird.
 ## Frontmatter
 ```yaml
 id: p05_ms_{{name}}
@@ -63,8 +60,5 @@ related: [p06_vs_motion_scene, p05_ms_aurora_title, p05_ms_ferro_lowerthird]
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_ms_aurora_title]] | example | 0.55 |
-| [[p05_ms_ferro_lowerthird]] | example | 0.55 |
 | [[bld_schema_motion_scene]] | upstream | 0.5 |
 | [[bld_prompt_motion_scene]] | sibling | 0.42 |
-| [[p06_vs_motion_scene]] | upstream | 0.42 |

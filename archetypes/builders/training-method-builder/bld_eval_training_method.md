@@ -18,10 +18,7 @@ density_score: 0.88
 purpose: Quality gate with HARD and SOFT scoring for training_method
 related:
   - training-method-builder
-  - bld_output_template_training_method
-  - bld_instruction_training_method
   - bld_schema_training_method
-  - p10_lr_training_method_builder
 ---
 ## Quality Gate
 

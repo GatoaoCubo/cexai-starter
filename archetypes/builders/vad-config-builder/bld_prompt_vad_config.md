@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [vad_config construction, instruction vad config, vad_config, builder, instruction, related artifacts, audio sample, sibling, schema, phase]
 density_score: 0.85
-related:
-  - bld_instruction_playground_config
-  - bld_instruction_search_strategy
-  - bld_instruction_transport_config
-  - bld_instruction_judge_config
-  - bld_instruction_edit_format
 ---
 ## Phase 1: RESEARCH  
 1. Identify use case (e.g., noise suppression, call center)  
@@ -48,12 +42,3 @@ related:
 - [ ] Constraint rule enforcement  
 - [ ] Audio sample stress test (500+ files)  
 - [ ] Cross-platform compatibility (Linux/Windows)
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_playground_config]] | sibling | 0.35 |
-| [[bld_instruction_search_strategy]] | sibling | 0.30 |
-| [[bld_instruction_transport_config]] | sibling | 0.29 |
-| [[bld_instruction_judge_config]] | sibling | 0.27 |
-| [[bld_instruction_edit_format]] | sibling | 0.26 |

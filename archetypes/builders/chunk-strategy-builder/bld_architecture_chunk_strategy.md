@@ -19,9 +19,6 @@ density_score: 0.90
 related:
   - bld_architecture_retriever_config
   - chunk-strategy-builder
-  - n00_chunk_strategy_manifest
-  - p01_kc_chunk_strategy
-  - p11_qg_chunk_strategy
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -84,4 +81,3 @@ python _tools/cex_score.py --apply bld-architecture-chunk-strategy.md
 | [[chunk-strategy-builder]] | upstream | 0.47 |
 | n00_chunk_strategy_manifest | upstream | 0.40 |
 | [[kc_chunk_strategy]] | upstream | 0.39 |
-| [[p11_qg_chunk_strategy]] | downstream | 0.36 |

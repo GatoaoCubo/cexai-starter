@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [renewal_workflow construction, output template renewal workflow, renewal_workflow, builder, output_template, renewal, gainsight]
 density_score: 0.85
 related:
-  - bld_instruction_renewal_workflow
   - renewal-workflow-builder
-  - bld_knowledge_card_renewal_workflow
   - bld_config_renewal_workflow
-  - p10_lr_renewal_workflow_builder
 ---
 ```yaml
 ---
@@ -123,8 +120,5 @@ Incentive Framing: "Lock in current pricing and avoid annual increases."
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_renewal_workflow]] | upstream | 0.64 |
 | [[renewal-workflow-builder]] | downstream | 0.59 |
-| [[bld_knowledge_card_renewal_workflow]] | upstream | 0.59 |
 | [[bld_config_renewal_workflow]] | downstream | 0.55 |
-| [[p10_lr_renewal_workflow_builder]] | downstream | 0.54 |

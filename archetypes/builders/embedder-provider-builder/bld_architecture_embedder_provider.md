@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of embedder_provider, and architectural position, embedder provider construction, architecture embedder provider, embedder_provider, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - p03_ins_embedder_provider
   - bld_architecture_vector_store
   - embedder-provider-builder
-  - p11_qg_embedder_provider
-  - bld_collaboration_embedder_provider
 ---
 # Architecture: embedder_provider in the CEX
 ## Component Inventory
@@ -71,8 +68,6 @@ chunker_config     --constrains-->   embedder_provider (max_tokens)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_embedder_provider]] | upstream | 0.52 |
 | [[bld_architecture_vector_store]] | sibling | 0.50 |
 | [[embedder-provider-builder]] | upstream | 0.48 |
-| [[p11_qg_embedder_provider]] | downstream | 0.43 |
 | [[bld_orchestration_embedder_provider]] | upstream | 0.42 |

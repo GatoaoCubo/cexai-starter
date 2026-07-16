@@ -32,9 +32,6 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_secret_config
-  - bld_knowledge_card_secret_config
-  - bld_instruction_secret_config
   - bld_config_secret_config
   - bld_schema_secret_config
 ---

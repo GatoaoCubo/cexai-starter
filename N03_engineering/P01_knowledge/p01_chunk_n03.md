@@ -16,8 +16,6 @@ keywords: [chunk_strategy, recursive_token_header_aware, metadata, front matter,
 density_score: 0.95
 related:
   - p01_chunk_n05
-  - p01_kc_rag_chunking_strategies
-  - p01_kc_chunk_strategy
   - p01_chunk_n06
   - p01_chunk_n01
 ---

@@ -24,10 +24,6 @@ reliable, validation schemas]
 density_score: 0.90
 related:
   - validation-schema-builder
-  - bld_knowledge_card_validation_schema
-  - bld_collaboration_validation_schema
-  - p11_qg_validation_schema
-  - p01_kc_validation_schema
 ---
 # Memory: validation-schema-builder
 ## Summary
@@ -89,5 +85,4 @@ python _tools/cex_score.py --apply bld-memory-validation-schema.md
 | [[validation-schema-builder]] | upstream | 0.49 |
 | [[bld_knowledge_validation_schema]] | upstream | 0.43 |
 | [[bld_orchestration_validation_schema]] | upstream | 0.40 |
-| [[p11_qg_validation_schema]] | upstream | 0.38 |
 | [[kc_validation_schema]] | upstream | 0.37 |

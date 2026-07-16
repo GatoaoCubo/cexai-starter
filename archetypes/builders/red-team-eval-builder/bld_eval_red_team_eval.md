@@ -19,9 +19,6 @@ keywords: [adversarial llm safety evaluation, specific target, and measurable pa
 density_score: 0.90
 related:
   - red-team-eval-builder
-  - bld_instruction_red_team_eval
-  - bld_knowledge_card_red_team_eval
-  - bld_collaboration_red_team_eval
   - bld_architecture_red_team_eval
 ---
 ## Quality Gate

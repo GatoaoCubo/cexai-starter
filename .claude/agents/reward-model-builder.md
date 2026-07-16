@@ -4,11 +4,7 @@ description: "Builds ONE reward_model artifact via 8F pipeline. Loads reward-mod
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_reward_model_manifest
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p03_sp_builder_nucleus
-  - bld_output_template_reward_model
 ---
 
 # reward-model-builder Sub-Agent
@@ -86,8 +82,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_reward_model_manifest]] | related | 0.33 |
 | [[kind-builder]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[bld_output_template_reward_model]] | related | 0.27 |

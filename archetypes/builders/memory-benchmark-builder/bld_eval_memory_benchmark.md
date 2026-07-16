@@ -17,10 +17,6 @@ updated: "2026-04-14"
 density_score: 0.87
 related:
   - memory-benchmark-builder
-  - bld_instruction_memory_benchmark
-  - p07_qg_benchmark_suite
-  - bld_collaboration_memory_benchmark
-  - p01_kc_hybrid_review4_n05
 ---
 ## Quality Gate
 ## Definition

@@ -18,17 +18,15 @@ related:
   - bld_schema_motion_scene
   - bld_output_motion_scene
   - bld_eval_motion_scene
-  - p06_vs_motion_scene
-  - p01_kc_motion_scene
 ---
 
 # Process: build a motion_scene
 ## Inputs
 A target primitive type (lower_third|title_card|counter|scene_transition) + a bound
 `design_system` id (e.g. `p06_ds_ferro`) + an intent (e.g. "5-second course intro title") +
-the contract [[p06_vs_motion_scene]].
+the contract p06_vs_motion_scene.
 ## Step 1 -- RESEARCH (F3 INJECT)
-- Load [[bld_schema_motion_scene]] (source of truth) + [[p01_kc_motion_scene]].
+- Load [[bld_schema_motion_scene]] (source of truth) + p01_kc_motion_scene.
 - Read the bound design_system to extract color/type/motion tokens.
 - Confirm the scene primitive type is not a sibling of an existing scene binding the same system.
 - Decide easing stance from the design_system motion.ease tokens.
@@ -63,5 +61,3 @@ Emit only the artifact (frontmatter + body) per [[bld_output_motion_scene]]. No 
 | [[bld_schema_motion_scene]] | upstream | 0.55 |
 | [[bld_output_motion_scene]] | downstream | 0.5 |
 | [[bld_eval_motion_scene]] | downstream | 0.48 |
-| [[p06_vs_motion_scene]] | upstream | 0.45 |
-| [[p01_kc_motion_scene]] | related | 0.4 |

@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of toolkit, and architectural position, toolkit construction, architecture toolkit, toolkit, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_toolkit
   - bld_tools_toolkit
-  - p03_ins_toolkit_builder
   - toolkit-builder
-  - n00_toolkit_manifest
 ---
 # Architecture: toolkit in the CEX
 ## Component Inventory
@@ -71,6 +68,5 @@ nucleus  --scoped_by-->    toolkit          --restricts-->  available_tools
 |----------|-------------|-------|
 | [[bld_orchestration_toolkit]] | upstream | 0.73 |
 | [[bld_tools_toolkit]] | upstream | 0.71 |
-| [[p03_ins_toolkit_builder]] | upstream | 0.71 |
 | [[toolkit-builder]] | upstream | 0.67 |
 | n00_toolkit_manifest | upstream | 0.64 |

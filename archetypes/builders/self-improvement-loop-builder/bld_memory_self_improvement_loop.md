@@ -20,11 +20,7 @@ effective, evidence
 reviewed, related artifacts, upstream]
 density_score: 0.85
 related:
-  - p10_lr_dual_loop_architecture_builder
   - self-improvement-loop-builder
-  - kc_self_improvement_loop
-  - p10_mem_eval_metric_builder
-  - bld_collaboration_dual_loop_architecture
 ---
 ## Observation
 Common issues include feedback loops that lack specificity, leading to vague improvements, or over-reliance on single metrics causing misalignment with broader goals. Systems often fail to distinguish between beneficial evolution and harmful drift without explicit safeguards.
@@ -45,8 +41,4 @@ Reviewed artifacts showed that systems with structured feedback (e.g., A/B testi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_dual_loop_architecture_builder]] | related | 0.32 |
 | [[self-improvement-loop-builder]] | downstream | 0.31 |
-| [[kc_self_improvement_loop]] | upstream | 0.25 |
-| [[p10_mem_eval_metric_builder]] | sibling | 0.24 |
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.24 |

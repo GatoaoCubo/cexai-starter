@@ -15,12 +15,6 @@ tldr: "Ordered context sources for F3 INJECT in canary_config builds."
 8f: "F3_inject"
 keywords: [context sources, canary_config builder, inject in canary_config builds, context_sources, canary_config, injection order, knowledge card, quality gate, configuration checklist, archetypes builders]
 density_score: null
-related:
-  - bld_context_sources_deployment_manifest
-  - bld_context_sources_slo_definition
-  - bld_context_sources_lineage_record
-  - bld_context_sources_saga
-  - bld_context_sources_bounded_context
 ---
 # Context Sources: canary_config Builder
 
@@ -56,12 +50,3 @@ cross_refs_verified: true
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope {BUILDER}
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_context_sources_deployment_manifest]] | sibling | 0.55 |
-| [[bld_context_sources_slo_definition]] | sibling | 0.49 |
-| [[bld_context_sources_lineage_record]] | sibling | 0.46 |
-| [[bld_context_sources_saga]] | sibling | 0.40 |
-| [[bld_context_sources_bounded_context]] | downstream | 0.38 |

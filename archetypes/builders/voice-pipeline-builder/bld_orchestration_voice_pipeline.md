@@ -18,11 +18,8 @@ keywords: [voice_pipeline construction, collaboration voice pipeline, voice_pipe
 orchestrates, receives from, config manager, user interface, produces for]
 density_score: 0.85
 related:
-  - bld_collaboration_stt_provider
-  - bld_collaboration_tts_provider
   - voice-pipeline-builder
   - bld_memory_voice_pipeline
-  - bld_collaboration_realtime_session
 ---
 ## Crew Role  
 Orchestrates end-to-end voice pipeline workflows, integrating STT/TTS components, managing data flow, and ensuring compatibility between providers.  
@@ -65,8 +62,5 @@ state (handled by realtime_session builder).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_stt_provider]] | sibling | 0.42 |
-| [[bld_collaboration_tts_provider]] | sibling | 0.37 |
 | [[voice-pipeline-builder]] | upstream | 0.37 |
 | [[bld_memory_voice_pipeline]] | upstream | 0.37 |
-| [[bld_collaboration_realtime_session]] | sibling | 0.35 |

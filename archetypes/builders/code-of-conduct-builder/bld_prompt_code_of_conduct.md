@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [code_of_conduct construction, instruction code of conduct, code_of_conduct, builder, instruction, contributor covenant, temporary ban, permanent ban, temp ban, contact email]
 density_score: 0.87
 related:
-  - p05_qg_code_of_conduct
-  - bld_knowledge_card_code_of_conduct
   - code-of-conduct-builder
-  - p10_mem_code_of_conduct_builder
   - bld_schema_code_of_conduct
 ---
 ## Phase 1: RESEARCH
@@ -56,8 +53,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_qg_code_of_conduct]] | downstream | 0.51 |
-| [[bld_knowledge_card_code_of_conduct]] | upstream | 0.50 |
 | [[code-of-conduct-builder]] | downstream | 0.50 |
-| [[p10_mem_code_of_conduct_builder]] | downstream | 0.40 |
 | [[bld_schema_code_of_conduct]] | downstream | 0.32 |

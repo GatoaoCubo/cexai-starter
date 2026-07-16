@@ -33,10 +33,7 @@ keywords: [memory session backend, file-first with json, h prod, per-nucleus sco
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_session_backend
-  - p01_kc_session_backend
   - session-backend-builder
-  - p11_qg_session_backend
 ---
 ## Summary
 Session persistence failures divide into: data loss (in-memory backends, no TTL cleanup leading to storage exhaustion), security vulnerabilities (pickle deserialization, embedded credentials), and data corruption (global namespaces with concurrent writes). The file-first pattern with JSON serialization, TTL enforcement, and per-nucleus scoping addresses all three categories with zero external dependencies.
@@ -87,4 +84,3 @@ and produces artifacts that must pass the quality gate at F7 (Filter).
 | [[bld_knowledge_session_backend]] | upstream | 0.41 |
 | [[kc_session_backend]] | related | 0.40 |
 | [[session-backend-builder]] | upstream | 0.36 |
-| [[p11_qg_session_backend]] | downstream | 0.36 |

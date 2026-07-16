@@ -18,12 +18,6 @@ keywords: [builder identity, routing for faq_entry, faq_entry construction, type
 specializes, integrates schema, routing  
 triggers]
 density_score: 0.85
-related:
-  - bld_knowledge_card_faq_entry
-  - p10_mem_faq_entry_builder
-  - p01_kc_faq_entry
-  - bld_instruction_faq_entry
-  - n00_faq_entry_manifest
 ---
 ## Identity
 
@@ -66,12 +60,3 @@ ALWAYS use **plain text** and **explicit field delimiters** (e.g., "Question: ..
 ALWAYS validate against **existing knowledge base entries** to avoid duplication.  
 NEVER include **markdown, tables, or nested structures**.  
 NEVER use **hypothetical scenarios or unverified data** in canonical answers.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_faq_entry]] | related | 0.49 |
-| [[p10_mem_faq_entry_builder]] | downstream | 0.36 |
-| [[p01_kc_faq_entry]] | related | 0.35 |
-| [[bld_instruction_faq_entry]] | downstream | 0.33 |
-| [[n00_faq_entry_manifest]] | related | 0.33 |

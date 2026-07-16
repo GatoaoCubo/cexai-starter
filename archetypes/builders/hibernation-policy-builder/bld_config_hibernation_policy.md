@@ -18,10 +18,6 @@ keywords: [hibernation_policy construction, hibernation_policy builder, hibernat
 density_score: 0.90
 related:
   - bld_schema_terminal_backend
-  - p06_is_env_contract_n05
-  - p09_env_brand_override_n02
-  - hibernation_policy_n05
-  - n00_hibernation_policy_manifest
 ---
 ## hibernation_policy Builder Config Knobs
 
@@ -55,7 +51,3 @@ CEX_HP_REQUIRE_SIBLING_TB=false       # Enforce sibling terminal_backend check
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_terminal_backend]] | upstream | 0.32 |
-| [[p06_is_env_contract_n05]] | upstream | 0.32 |
-| [[p09_env_brand_override_n02]] | sibling | 0.32 |
-| [[hibernation_policy_n05]] | related | 0.28 |
-| [[n00_hibernation_policy_manifest]] | related | 0.28 |

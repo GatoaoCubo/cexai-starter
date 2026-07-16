@@ -18,9 +18,6 @@ keywords: [component map of instruction, and architectural position, instruction
 density_score: 0.90
 related:
   - instruction-builder
-  - p01_kc_instruction
-  - bld_collaboration_instruction
-  - n00_instruction_manifest
   - bld_architecture_skill
 ---
 ## Component Inventory

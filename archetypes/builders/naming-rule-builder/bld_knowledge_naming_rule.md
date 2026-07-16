@@ -19,10 +19,7 @@ keywords: [atomic searchable facts, naming rule construction, knowledge card nam
 density_score: 0.90
 related:
   - bld_memory_naming_rule
-  - p03_ins_naming_rule
   - naming-rule-builder
-  - p01_kc_naming_rule
-  - bld_collaboration_naming_rule
 ---
 # Domain Knowledge: naming_rule
 ## Executive Summary
@@ -82,7 +79,4 @@ Naming rules are formal specifications defining the string format that artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_naming_rule]] | downstream | 0.50 |
-| [[p03_ins_naming_rule]] | downstream | 0.49 |
 | [[naming-rule-builder]] | downstream | 0.41 |
-| [[p01_kc_naming_rule]] | sibling | 0.41 |
-| [[bld_collaboration_naming_rule]] | downstream | 0.39 |

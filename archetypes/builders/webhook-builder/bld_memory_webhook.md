@@ -18,10 +18,6 @@ density_score: 0.98
 title: Memory ISO - webhook
 related:
   - webhook-builder
-  - n00_webhook_manifest
-  - p01_kc_webhook
-  - bld_collaboration_webhook
-  - bld_knowledge_card_webhook
 ---
 # Memory: webhook-builder
 ## Critical Invariants (learned from failures)
@@ -68,7 +64,3 @@ Requests that required clarification before production:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[webhook-builder]] | upstream | 0.52 |
-| [[n00_webhook_manifest]] | upstream | 0.46 |
-| [[p01_kc_webhook]] | upstream | 0.44 |
-| [[bld_collaboration_webhook]] | upstream | 0.44 |
-| [[bld_knowledge_card_webhook]] | related | 0.43 |

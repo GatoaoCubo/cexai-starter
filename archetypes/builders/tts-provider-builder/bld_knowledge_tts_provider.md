@@ -19,10 +19,7 @@ text, google cloud, azure cognitive services, custom neural voice, amazon polly]
 density_score: 0.85
 related:
   - tts-provider-builder
-  - bld_knowledge_card_audio_tool
-  - bld_output_template_tts_provider
   - voice-pipeline-builder
-  - kc_voice_pipeline
 ---
 ## Domain Overview  
 Text-to-speech (TTS) provider integration converts text into spoken audio via third-party APIs or self-hosted models. The market has bifurcated into cloud APIs (high quality, instant availability) and generative open-source models (voice cloning, zero-shot synthesis).
@@ -84,7 +81,4 @@ Integration focuses on API compatibility, latency optimization, and SSML support
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[tts-provider-builder]] | downstream | 0.56 |
-| [[bld_knowledge_card_audio_tool]] | sibling | 0.38 |
-| [[bld_output_template_tts_provider]] | downstream | 0.38 |
 | [[voice-pipeline-builder]] | downstream | 0.36 |
-| [[kc_voice_pipeline]] | sibling | 0.36 |

@@ -33,8 +33,6 @@ density_score: 0.90
 related:
   - workflow-builder
   - bld_memory_workflow
-  - p03_ins_workflow
-  - p01_kc_workflow
   - bld_architecture_workflow
 ---
 # Domain Knowledge: workflow
@@ -107,6 +105,4 @@ A `workflow` (P12) is a runtime orchestration plan — numbered steps with agent
 |----------|-------------|-------|
 | [[workflow-builder]] | downstream | 0.54 |
 | [[bld_memory_workflow]] | downstream | 0.54 |
-| [[p03_ins_workflow]] | downstream | 0.53 |
-| [[p01_kc_workflow]] | sibling | 0.51 |
 | [[bld_architecture_workflow]] | downstream | 0.49 |

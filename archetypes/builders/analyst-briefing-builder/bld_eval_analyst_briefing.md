@@ -18,10 +18,7 @@ keywords: [analyst_briefing construction, quality gate analyst briefing, analyst
 density_score: 0.85
 related:
   - analyst-briefing-builder
-  - bld_knowledge_card_analyst_briefing
-  - bld_instruction_analyst_briefing
   - bld_schema_analyst_briefing
-  - p10_mem_analyst_briefing_builder
 ---
 ## Quality Gate
 

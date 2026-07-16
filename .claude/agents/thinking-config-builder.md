@@ -4,10 +4,7 @@ description: "Builds ONE thinking_config artifact via 8F pipeline. Loads thinkin
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_thinking_config_manifest
   - bld_config_thinking_config
-  - bld_instruction_thinking_config
-  - p03_sp_builder_nucleus
   - kind-builder
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_thinking_config_manifest]] | related | 0.33 |
 | [[bld_config_thinking_config]] | related | 0.32 |
-| [[bld_instruction_thinking_config]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.30 |

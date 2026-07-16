@@ -15,10 +15,8 @@ tags: [design_system, builder, orchestration, swarm, P06]
 tldr: "How design_system builds are dispatched (swarm over coordinates) and composed (taste loop + downstream surface builders)."
 density_score: 0.88
 related:
-  - p03_ps_design_system_library_scale
   - bld_architecture_design_system
   - bld_prompt_design_system
-  - p06_vs_design_system
   - design-system-builder
 ---
 

@@ -15,11 +15,9 @@ tags: [design_system, builder, schema, tokens, P06]
 tldr: "Single source of truth for a design_system: five token groups, four component recipes, four usage rules, a mandatory leverage block, and the instance frontmatter."
 density_score: 0.92
 related:
-  - p06_vs_design_system
   - bld_model_design_system
   - bld_output_design_system
   - bld_eval_design_system
-  - p01_kc_design_system
 ---
 
 # Schema: design_system

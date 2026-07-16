@@ -18,10 +18,6 @@ keywords: [gpai_technical_doc construction, gpai_technical_doc, builder, knowled
 density_score: 0.85
 related:
   - gpai-technical-doc-builder
-  - bld_knowledge_card_conformity_assessment
-  - bld_instruction_conformity_assessment
-  - bld_manifest_conformity_assessment
-  - bld_output_template_gpai_technical_doc
 ---
 ## Domain Overview
 The EU Artificial Intelligence Act (Regulation (EU) 2024/1689) entered into force August 1, 2024. GPAI (General Purpose AI) model obligations under Article 53 became active August 2, 2025. GPAI providers must submit technical documentation to the EU AI Office covering training procedures, model capabilities, evaluation results, and intended use. Annex IV (formerly Annex XI in committee drafts) specifies the required fields.
@@ -88,7 +84,3 @@ GPAI models are distinguished from high-risk AI systems -- they are general-purp
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[gpai-technical-doc-builder]] | downstream | 0.70 |
-| [[bld_knowledge_card_conformity_assessment]] | sibling | 0.50 |
-| [[bld_instruction_conformity_assessment]] | downstream | 0.45 |
-| [[bld_manifest_conformity_assessment]] | downstream | 0.45 |
-| [[bld_output_template_gpai_technical_doc]] | downstream | 0.43 |

@@ -33,9 +33,6 @@ density_score: 0.90
 related:
   - bld_memory_scoring_rubric
   - scoring-rubric-builder
-  - bld_collaboration_scoring_rubric
-  - p03_ins_scoring_rubric_builder
-  - p11_qg_scoring-rubric
 ---
 # Domain Knowledge: scoring_rubric
 ## Executive Summary
@@ -96,5 +93,3 @@ Scoring rubrics are multi-dimensional weighted evaluation frameworks that define
 | [[bld_memory_scoring_rubric]] | downstream | 0.53 |
 | [[scoring-rubric-builder]] | downstream | 0.51 |
 | [[bld_orchestration_scoring_rubric]] | downstream | 0.51 |
-| [[p03_ins_scoring_rubric_builder]] | downstream | 0.45 |
-| [[p11_qg_scoring-rubric]] | downstream | 0.42 |

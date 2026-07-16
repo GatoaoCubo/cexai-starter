@@ -19,11 +19,7 @@ keywords: [multi modal config construction, multi_modal_config, builder, example
 multi, spec table, provider multi, modal support, audio video]
 density_score: 0.90
 related:
-  - p01_kc_multi_modal_config
-  - bld_output_template_multi_modal_config
-  - p10_lr_multi_modal_config_builder
   - multi-modal-config-builder
-  - n00_multi_modal_config_manifest
 ---
 # Domain Knowledge: multi_modal_config
 ## Executive Summary
@@ -68,8 +64,4 @@ Multi-modal configs define processing rules for non-text LLM inputs — images, 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_multi_modal_config]] | sibling | 0.65 |
-| [[bld_output_template_multi_modal_config]] | downstream | 0.52 |
-| [[p10_lr_multi_modal_config_builder]] | downstream | 0.48 |
 | [[multi-modal-config-builder]] | downstream | 0.41 |
-| [[n00_multi_modal_config_manifest]] | sibling | 0.38 |

@@ -4,11 +4,8 @@ description: "Builds ONE eval_metric artifact via 8F pipeline. Loads eval-metric
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
-  - p06_td_cex_artifact_type_n03
 ---
 
 # eval-metric-builder Sub-Agent

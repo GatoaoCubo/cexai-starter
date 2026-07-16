@@ -29,10 +29,6 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_schema_validator
-  - bld_knowledge_card_validator
-  - p11_qg_validator
-  - bld_output_template_validator
-  - p03_ins_validator
 ---
 # Config: validator Production Rules
 ## Naming Convention
@@ -78,6 +74,3 @@ Rule: id MUST equal filename stem.
 |----------|-------------|-------|
 | [[bld_schema_validator]] | upstream | 0.37 |
 | [[bld_knowledge_validator]] | upstream | 0.35 |
-| [[p11_qg_validator]] | upstream | 0.35 |
-| [[bld_output_template_validator]] | upstream | 0.35 |
-| [[p03_ins_validator]] | upstream | 0.30 |

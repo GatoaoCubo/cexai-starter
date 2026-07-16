@@ -5,7 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_memory_type
-  - p03_sp_builder_nucleus
   - kind-builder
   - memory-scope-builder
 ---
@@ -86,6 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_memory_type]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |
 | [[memory-scope-builder]] | related | 0.30 |

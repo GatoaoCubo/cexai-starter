@@ -30,7 +30,6 @@ keywords:
   - "### langsmith"
 density_score: 0.90
 related:
-  - bld_tools_client
   - bld_tools_regression_check
   - bld_tools_cli_tool
   - bld_tools_retriever_config
@@ -107,7 +106,6 @@ quality == null, no actual data rows in body.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_tools_client]] | sibling | 0.47 |
 | bld_tools_regression_check | sibling | 0.44 |
 | bld_tools_cli_tool | sibling | 0.43 |
 | [[bld_tools_retriever_config]] | sibling | 0.43 |

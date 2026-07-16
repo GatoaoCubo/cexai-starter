@@ -18,11 +18,7 @@ keywords: [cohort_analysis construction, knowledge card cohort analysis, cohort_
 cohort, beta geometric, negative binomial, key concepts, mixpanel cohort docs]
 density_score: 0.85
 related:
-  - kc_cohort_analysis
   - cohort-analysis-builder
-  - bld_instruction_cohort_analysis
-  - n00_cohort_analysis_manifest
-  - p10_mem_cohort_analysis_builder
 ---
 ## Domain Overview
 Cohort analysis groups users by shared characteristics (e.g., acquisition date, first event, plan tier) and tracks how each group behaves over time -- measuring retention, engagement, and lifetime value (LTV). In product analytics, the canonical cohort definition is acquisition date (D0), with retention measured at D1, D7, D30, and D90. Tools like Mixpanel and Amplitude provide cohort retention curves out-of-the-box. For LTV prediction, the BG/NBD (Beta Geometric/Negative Binomial) model (Fader & Hardie, 2009) is the industry standard for non-contractual settings; Kaplan-Meier survival curves are used for contractual/subscription churn. RFM (Recency, Frequency, Monetary) scoring overlays behavioral segmentation on top of cohort groups.
@@ -87,8 +83,4 @@ Cohort analysis groups users by shared characteristics (e.g., acquisition date, 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_cohort_analysis]] | sibling | 0.59 |
 | [[cohort-analysis-builder]] | downstream | 0.59 |
-| [[bld_instruction_cohort_analysis]] | downstream | 0.54 |
-| [[n00_cohort_analysis_manifest]] | sibling | 0.49 |
-| [[p10_mem_cohort_analysis_builder]] | downstream | 0.47 |

@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [legal_vertical construction, output template legal vertical, legal_vertical, builder, output_template, legal vertical compliance framework, key requirements, regulatory body, required documentation, sample legal clause]
 density_score: 0.85
 related:
-  - n00_legal_vertical_manifest
   - bld_schema_legal_vertical
-  - n00_compliance_framework_manifest
   - bld_config_legal_vertical
-  - bld_output_template_govtech_vertical
 ---
 ```markdown
 ---

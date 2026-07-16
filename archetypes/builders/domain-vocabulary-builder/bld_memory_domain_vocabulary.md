@@ -15,11 +15,8 @@ density_score: 0.95
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_kc_domain_vocabulary
-  - p01_kc_domain_vocabulary
   - bld_architecture_domain_vocabulary
   - bld_memory_bounded_context
-  - bld_context_sources_domain_vocabulary
 ---
 # Memory Patterns: domain_vocabulary
 ## What to Remember
@@ -73,8 +70,6 @@ python _tools/cex_memory_update.py --check
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_kc_domain_vocabulary]] | upstream | 0.52 |
 | [[kc_domain_vocabulary]] | upstream | 0.50 |
 | [[bld_architecture_domain_vocabulary]] | upstream | 0.47 |
 | bld_memory_bounded_context | sibling | 0.47 |
-| [[bld_context_sources_domain_vocabulary]] | related | 0.44 |

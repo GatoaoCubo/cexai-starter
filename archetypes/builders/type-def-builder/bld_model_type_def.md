@@ -33,11 +33,8 @@ keywords: [manifest type def, demonstrating ideal structure, type_def, input_sch
 acts, spec architect, identity
 you, spec layer]
 related:
-  - bld_collaboration_type_def
   - bld_architecture_type_def
   - bld_memory_type_def
-  - n00_type_def_manifest
-  - bld_knowledge_card_type_def
 ---
 ## Identity
 

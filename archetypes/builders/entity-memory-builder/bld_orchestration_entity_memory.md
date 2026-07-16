@@ -20,8 +20,6 @@ density_score: 0.90
 related:
   - entity-memory-builder
   - bld_architecture_entity_memory
-  - bld_knowledge_card_entity_memory
-  - p01_kc_entity_memory
 ---
 # Collaboration: entity-memory-builder
 ## My Role in Crews

@@ -22,11 +22,6 @@ axioms:
 linked_artifacts:
   primary: n06_output_monetization_business_plan
   related: [p01_kc_commercial_nucleus, n06_output_pricing_page, p12_wf_content_monetization, p04_fn_content_monetization]
-related:
-  - p08_pat_pricing_framework
-  - p01_kc_pricing_strategy
-  - p01_kc_commercial_nucleus
-  - p03_pt_commercial_nucleus
 ---
 
 # Brand Monetization Models
@@ -281,5 +276,4 @@ Expansion Revenue                   = upsells + cross-sells em base existente
 |----------|-------------|-------|
 | p08_pat_pricing_framework | downstream | 0.48 |
 | p01_kc_pricing_strategy | sibling | 0.38 |
-| [[p01_kc_commercial_nucleus]] | sibling | 0.36 |
 | p03_pt_commercial_nucleus | downstream | 0.36 |

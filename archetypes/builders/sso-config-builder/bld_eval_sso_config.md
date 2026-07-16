@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [sso_config construction, quality gate sso config, sso_config, builder, quality_gate, quality gate, fail condition, scoring guide, security lead, present missing]
 density_score: 0.85
-related:
-  - bld_output_template_sso_config
-  - bld_knowledge_card_sso_config
-  - sso-config-builder
-  - kc_sso_config
-  - bld_instruction_sso_config
 ---
 ## Quality Gate
 

@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - chain-builder
-  - n00_chain_manifest
   - kind-builder
-  - p01_kc_pillar_brief_p03_prompt_en
-  - p03_sp_builder_nucleus
 ---
 
 # chain-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[chain-builder]] | related | 0.34 |
-| [[n00_chain_manifest]] | related | 0.33 |
 | [[kind-builder]] | related | 0.32 |
-| [[p01_kc_pillar_brief_p03_prompt_en]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |

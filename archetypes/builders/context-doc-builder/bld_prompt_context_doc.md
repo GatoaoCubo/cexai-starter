@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F6_produce"
 keywords: [context doc construction, instruction context doc, context_doc, builder, examples, ecommerce_imports, api_auth_jwt, "{{vars}}", "p01_cd_{{topic_slug}}", p01_cd_]
 density_score: 0.90
-related:
-  - bld_instruction_memory_scope
-  - bld_instruction_output_validator
-  - bld_instruction_retriever_config
-  - bld_instruction_handoff_protocol
-  - bld_instruction_chunk_strategy
 ---
 # Instructions: How to Produce a context_doc
 ## Phase 1: RESEARCH
@@ -84,12 +78,3 @@ python _tools/cex_skill_loader.py --verify context
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_memory_scope]] | sibling | 0.47 |
-| [[bld_instruction_output_validator]] | sibling | 0.45 |
-| [[bld_instruction_retriever_config]] | sibling | 0.45 |
-| [[bld_instruction_handoff_protocol]] | sibling | 0.44 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.44 |

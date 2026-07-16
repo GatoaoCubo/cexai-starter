@@ -20,7 +20,6 @@ related:
   - bld_tools_cli_tool
   - bld_tools_function_def
   - bld_tools_code_executor
-  - bld_tools_client
   - bld_tools_retriever_config
 ---
 # Tools: search-tool-builder
@@ -80,5 +79,4 @@ python _tools/cex_score.py --apply bld-tools-search-tool.md
 | bld_tools_cli_tool | sibling | 0.61 |
 | [[bld_tools_function_def]] | sibling | 0.60 |
 | [[bld_tools_code_executor]] | sibling | 0.59 |
-| [[bld_tools_client]] | sibling | 0.59 |
 | [[bld_tools_retriever_config]] | sibling | 0.59 |

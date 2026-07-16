@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F7_govern"
 keywords: [dataset_card construction, quality gate dataset card, dataset_card, builder, quality_gate, review_text, label, timestamp, eval_dataset, knowledge_card]
 density_score: 0.85
-related:
-  - p09_qg_marketplace_app_manifest
-  - p11_qg_usage_report
-  - p06_qg_edit_format
-  - p01_qg_reranker_config
-  - p11_qg_eval_dataset
 ---
 ## Quality Gate
 ## Definition

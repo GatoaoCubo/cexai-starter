@@ -27,10 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - few-shot-example-builder
-  - bld_instruction_few_shot_example
-  - p11_qg_few_shot_example
-  - bld_collaboration_few_shot_example
-  - p10_lr_golden_test_builder
 ---
 ## Summary
 Few-shot examples teach a model what format to produce, not what content to generate. The output field must be an actual demonstration of the target format. Difficulty must be calibrated across a set — easy examples establish the baseline, medium ones show variation, hard ones handle edge cases. The body limit is 1024 bytes, the tightest in the P01 pillar.
@@ -105,6 +101,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_few_shot_example_builder.md
 |----------|-------------|-------|
 | [[few-shot-example-builder]] | upstream | 0.45 |
 | [[bld_prompt_few_shot_example]] | upstream | 0.39 |
-| [[p11_qg_few_shot_example]] | downstream | 0.36 |
 | [[bld_orchestration_few_shot_example]] | downstream | 0.34 |
-| [[p10_lr_golden_test_builder]] | sibling | 0.34 |

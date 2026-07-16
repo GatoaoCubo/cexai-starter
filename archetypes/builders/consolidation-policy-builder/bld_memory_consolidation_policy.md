@@ -18,8 +18,6 @@ keywords: [llm agent memory consolidation, consolidation_policy-builder patterns
 density_score: 0.90
 related:
   - consolidation-policy-builder
-  - bld_instruction_consolidation_policy
-  - bld_collaboration_consolidation_policy
   - bld_tools_consolidation_policy
   - memory-architecture-builder
 ---
@@ -64,7 +62,5 @@ None of these are relevant to LLM agent memory consolidation.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[consolidation-policy-builder]] | related | 0.61 |
-| [[bld_instruction_consolidation_policy]] | upstream | 0.47 |
-| [[bld_collaboration_consolidation_policy]] | downstream | 0.42 |
 | [[bld_tools_consolidation_policy]] | upstream | 0.39 |
 | [[memory-architecture-builder]] | related | 0.38 |

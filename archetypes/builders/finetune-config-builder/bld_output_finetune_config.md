@@ -32,10 +32,7 @@ keywords:
   - "| | size |"
 density_score: 0.90
 related:
-  - p11_qg_finetune_config
-  - bld_instruction_finetune_config
   - bld_config_finetune_config
-  - p01_kc_finetune_config
   - bld_schema_finetune_config
 ---
 # Output Template: finetune_config
@@ -131,8 +128,5 @@ eval_metrics:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_finetune_config]] | downstream | 0.46 |
-| [[bld_instruction_finetune_config]] | upstream | 0.31 |
 | [[bld_config_finetune_config]] | downstream | 0.29 |
-| [[p01_kc_finetune_config]] | upstream | 0.29 |
 | [[bld_schema_finetune_config]] | downstream | 0.29 |

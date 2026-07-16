@@ -20,10 +20,6 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_data_residency
-  - p01_kc_data_residency
-  - bld_instruction_data_residency
-  - p10_mem_data_residency_builder
   - bld_tools_data_residency
 ---
 ## Identity
@@ -72,8 +68,4 @@ NEVER ASSUME jurisdictional equivalence without explicit legal validation.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_data_residency]] | upstream | 0.60 |
-| [[p01_kc_data_residency]] | related | 0.57 |
-| [[bld_instruction_data_residency]] | upstream | 0.47 |
-| [[p10_mem_data_residency_builder]] | downstream | 0.43 |
 | [[bld_tools_data_residency]] | upstream | 0.39 |

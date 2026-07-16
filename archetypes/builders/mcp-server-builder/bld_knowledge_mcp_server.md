@@ -18,10 +18,8 @@ updated: "2026-04-07"
 keywords: [atomic searchable facts, mcp server construction, knowledge card mcp server, mcp_server, builder, examples, "p04_mcp_{slug}", tools_provided, resources_provided, domain knowledge]
 density_score: 0.90
 related:
-  - p03_ins_mcp_server
   - bld_memory_mcp_server
   - mcp-server-builder
-  - p01_kc_mcp_server
   - bld_config_mcp_server
 ---
 # Domain Knowledge: mcp_server
@@ -81,7 +79,6 @@ MCP servers are protocol-compliant providers that expose tools and resources to 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_mcp_server]] | upstream | 0.62 |
 | [[bld_memory_mcp_server]] | downstream | 0.60 |
 | [[mcp-server-builder]] | related | 0.60 |
 | [[kc_mcp_server]] | sibling | 0.50 |

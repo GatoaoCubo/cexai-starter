@@ -16,11 +16,7 @@ updated: "2026-03-27"
 density_score: 0.90
 llm_function: GOVERN
 related:
-  - bld_collaboration_diagram
   - bld_architecture_diagram
-  - p11_qg_quality_gate
-  - bld_instruction_diagram
-  - p11_qg_component_map
 ---
 ## Quality Gate
 

@@ -7,7 +7,6 @@ related:
   - canonical-product-builder
   - bld_tools_canonical_product
   - kind-builder
-  - p03_sp_builder_nucleus
   - kc_canonical_product
 ---
 

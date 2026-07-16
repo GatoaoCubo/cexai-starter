@@ -15,12 +15,6 @@ tldr: "Standard output structure: pyproject.toml skeleton, src layout, conftest.
 keywords: [output template, software project builder, standard output structure, toml skeleton, src layout, ci workflow, for costmization, builder, output-template, software-project]
 density_score: 0.88
 llm_function: PRODUCE
-related:
-  - bld_sp_schema_software_project
-  - p01_kc_docker_patterns
-  - bld_sp_quality_gate_software_project
-  - p01_kc_ruff_uv
-  - p01_kc_python_project_structure
 ---
 # Output Template
 
@@ -147,12 +141,3 @@ jobs:
 | Template | Defines structure for output template outputs |
 | Validation | Checked against `validation_schema` |
 | Post-hook | Scored by `cex_score.py` after creation |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_sp_schema_software_project]] | upstream | 0.42 |
-| [[p01_kc_docker_patterns]] | upstream | 0.36 |
-| [[bld_sp_quality_gate_software_project]] | downstream | 0.32 |
-| [[p01_kc_ruff_uv]] | upstream | 0.32 |
-| [[p01_kc_python_project_structure]] | upstream | 0.31 |

@@ -24,10 +24,7 @@ last_reviewed: '2026-04-18'
 density_score: 0.85
 related:
   - session-state-builder
-  - bld_collaboration_session_state
   - bld_memory_session_state
-  - bld_knowledge_card_session_state
-  - p11_qg_runtime_state
 ---
 ## Quality Gate
 

@@ -17,10 +17,7 @@ updated: "2026-04-18"
 keywords: [output shape for hibernation_policy, hibernation_policy construction, output template, hibernation_policy, builder, output_template, "### section 2: policy overview (required)", "### section 3: idle trigger table (required)", "### section 4: wake conditions table (required)", "| {{description}} |"]
 density_score: 0.90
 related:
-  - bld_instruction_hibernation_policy
-  - n00_hibernation_policy_manifest
   - hp_{{backend}}
-  - bld_output_template_terminal_backend
   - bld_schema_hibernation_policy
 ---
 ## Output Shape
@@ -116,8 +113,5 @@ Minimum 5 sections. All tables populated. Frontmatter complete. Target density >
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_hibernation_policy]] | upstream | 0.35 |
-| [[n00_hibernation_policy_manifest]] | downstream | 0.33 |
 | [\[hp_`{{backend}}`\]] | downstream | 0.33 |
-| [[bld_output_template_terminal_backend]] | sibling | 0.32 |
 | [[bld_schema_hibernation_policy]] | downstream | 0.31 |

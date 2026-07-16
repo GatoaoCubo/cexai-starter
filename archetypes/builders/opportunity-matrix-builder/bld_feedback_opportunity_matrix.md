@@ -16,11 +16,7 @@ density_score: 0.88
 created: "2026-07-02"
 updated: "2026-07-02"
 related:
-  - p11_qg_opportunity_matrix
-  - bld_instruction_opportunity_matrix
   - opportunity-matrix-builder
-  - p11_fb_roi_calculator
-  - p08_adr_opportunity_matrix_kind
 ---
 # Feedback: Opportunity Matrix
 
@@ -85,8 +81,6 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_opportunity_matrix]] | sibling | 0.82 |
 | [[bld_prompt_opportunity_matrix]] | sibling | 0.75 |
 | [[opportunity-matrix-builder]] | sibling | 0.70 |
-| [[p11_fb_roi_calculator]] | related | 0.55 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.40 |

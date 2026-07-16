@@ -15,10 +15,7 @@ tldr: "Complete reference of all 23 CEX Python tools in _tools/. Organized by fu
 keywords: [intent parsing, kind resolution, eightf runner, llm reasoning plan, tool discovery, quality gates, seed-based generation, multi-builder orchestration, git pre-commit validation]
 density_score: 0.94
 related:
-  - p02_agent_builder_nucleus
   - agent_card_n03
-  - p01_kc_8f_pipeline
-  - p01_faq_cex_common_questions
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_auto, cex_batch, cex_kind_register, cex_system_test. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
@@ -149,4 +146,3 @@ cex_crew_runner → cex_8f_runner (per-builder execution)
 | p02_agent_builder_nucleus | downstream | 0.45 |
 | agent_card_n03 | related | 0.25 |
 | p01_kc_8f_pipeline | sibling | 0.24 |
-| [[p01_faq_cex_common_questions]] | related | 0.23 |

@@ -21,7 +21,6 @@ related:
   - bld_tools_output_validator
   - bld_schema_product_match
   - bld_config_product_match
-  - n01_sourcing_rigor
 ---
 # Tools: product-match-builder
 ## Production Tools

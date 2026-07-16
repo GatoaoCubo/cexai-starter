@@ -19,10 +19,6 @@ keywords: [preserve types, decay weights, and tiered pipelines, gates for compre
 density_score: 0.90
 related:
   - compression-config-builder
-  - bld_knowledge_card_compression_config
-  - p10_lr_compression_config_builder
-  - bld_instruction_compression_config
-  - bld_output_template_compression_config
 ---
 ## Quality Gate
 

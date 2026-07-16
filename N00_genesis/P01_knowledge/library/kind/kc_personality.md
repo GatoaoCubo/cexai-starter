@@ -15,8 +15,6 @@ keywords: [personality, voice.register, voice.verbosity, values, tone_examples, 
 density_score: 0.93
 updated: "2026-04-18"
 related:
-  - n00_personality_manifest
-  - bld_knowledge_card_personality
   - personality-builder
   - bld_architecture_personality
   - bld_schema_personality

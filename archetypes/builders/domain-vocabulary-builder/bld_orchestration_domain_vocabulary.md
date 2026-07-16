@@ -15,11 +15,7 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-07-04"
 related:
-  - bld_rules_data_contract
-  - bld_rules_bounded_context
   - domain-vocabulary-builder
-  - p01_kc_domain_vocabulary
-  - bld_instruction_domain_vocabulary
 ---
 # Collaboration: domain_vocabulary-builder (Builder Rules Retained)
 
@@ -92,7 +88,6 @@ python _tools/cex_doctor.py --scope orchestration
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_rules_data_contract]] | sibling | 0.37 |
 | bld_rules_bounded_context | sibling | 0.37 |
 | [[domain-vocabulary-builder]] | upstream | 0.36 |
 | [[kc_domain_vocabulary]] | upstream | 0.33 |

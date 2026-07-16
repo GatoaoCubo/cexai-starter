@@ -16,12 +16,6 @@ created: "2026-03-27"
 updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.94
-related:
-  - p11_qg_golden_test
-  - p11_qg_quality_gate
-  - p11_qg_response_format
-  - p11_qg_few_shot_example
-  - p11_qg_citation
 ---
 ## Quality Gate
 

@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [trace config construction, collaboration trace config, trace_config, builder, examples, "### crew: full agent infrastructure", my role, crew compositions, observability stack, full agent infrastructure]
 density_score: 0.90
-related:
-  - bld_collaboration_boot_config
-  - bld_collaboration_session_backend
-  - bld_collaboration_env_config
-  - bld_collaboration_agent
-  - bld_collaboration_retriever_config
 ---
 # Collaboration: trace-config-builder
 ## My Role in Crews
@@ -64,12 +58,3 @@ I specify execution tracing so operators can debug failures and measure performa
 | quality-gate-builder | Quality monitor reads trace data for regression detection |
 | agent-builder | Agent config references trace_config for observability setup |
 | daemon-builder | Background processes need tracing for long-running operation debugging |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_boot_config]] | sibling | 0.37 |
-| [[bld_collaboration_session_backend]] | sibling | 0.36 |
-| [[bld_collaboration_env_config]] | sibling | 0.35 |
-| [[bld_collaboration_agent]] | sibling | 0.33 |
-| [[bld_collaboration_retriever_config]] | sibling | 0.32 |

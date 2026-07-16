@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - ai-rmf-profile-builder
   - bld_config_ai_rmf_profile
-  - bld_instruction_ai_rmf_profile
-  - n00_ai_rmf_profile_manifest
-  - bld_output_template_ai_rmf_profile
 ---
 
 # ai-rmf-profile-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[ai-rmf-profile-builder]] | related | 0.44 |
 | [[bld_config_ai_rmf_profile]] | related | 0.39 |
-| [[bld_instruction_ai_rmf_profile]] | related | 0.38 |
-| [[n00_ai_rmf_profile_manifest]] | related | 0.38 |
-| [[bld_output_template_ai_rmf_profile]] | related | 0.37 |

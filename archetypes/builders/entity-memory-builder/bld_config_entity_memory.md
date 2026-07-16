@@ -29,10 +29,7 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - entity-memory-builder
-  - bld_knowledge_card_entity_memory
-  - bld_instruction_entity_memory
   - bld_config_memory_scope
-  - bld_output_template_entity_memory
 ---
 # Config: entity_memory Production Rules
 ## Naming Convention
@@ -84,4 +81,3 @@ Rule: every entity_memory MUST declare update_policy.
 | [[bld_knowledge_entity_memory]] | upstream | 0.33 |
 | [[bld_prompt_entity_memory]] | upstream | 0.33 |
 | [[bld_config_memory_scope]] | sibling | 0.32 |
-| [[bld_output_template_entity_memory]] | upstream | 0.32 |

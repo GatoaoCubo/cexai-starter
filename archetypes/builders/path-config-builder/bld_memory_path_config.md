@@ -24,10 +24,6 @@ reliable, relative paths]
 density_score: 0.90
 related:
   - path-config-builder
-  - p03_ins_path_config
-  - bld_knowledge_card_path_config
-  - bld_collaboration_path_config
-  - n00_path_config_manifest
 ---
 # Memory: path-config-builder
 ## Summary
@@ -86,7 +82,6 @@ python _tools/cex_score.py --apply bld-memory-path-config.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[path-config-builder]] | upstream | 0.55 |
-| [[p03_ins_path_config]] | upstream | 0.51 |
 | [[bld_knowledge_path_config]] | upstream | 0.48 |
 | [[bld_orchestration_path_config]] | upstream | 0.47 |
 | n00_path_config_manifest | upstream | 0.42 |

@@ -19,9 +19,7 @@ partner, key concepts, partner tier, gartner partner ecosystem framework, servic
 density_score: 0.85
 related:
   - partner-listing-builder
-  - bld_instruction_partner_listing
   - bld_tools_partner_listing
-  - p05_qg_partner_listing
 ---
 ## Domain Overview  
 Partner listing artifacts organize SI/reseller channel data to enable ecosystem collaboration, sales enablement, and compliance tracking. They standardize attributes like tier levels (e.g., platinum, gold), geographic regions, certifications (e.g., ISO/IEC 27001), and contact details, ensuring stakeholders can quickly identify qualified partners. These listings are critical for vendor-managed programs, channel incentives, and ensuring alignment with industry compliance frameworks.  
@@ -68,6 +66,4 @@ Effective partner listings integrate data from CRM systems, partner portals, and
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[partner-listing-builder]] | downstream | 0.59 |
-| [[bld_instruction_partner_listing]] | downstream | 0.49 |
 | [[bld_tools_partner_listing]] | downstream | 0.43 |
-| [[p05_qg_partner_listing]] | downstream | 0.42 |

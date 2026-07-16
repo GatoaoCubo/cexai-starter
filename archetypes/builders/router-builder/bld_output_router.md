@@ -17,10 +17,8 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - bld_knowledge_card_router
   - router-builder
   - bld_config_router
-  - p03_ins_router
   - bld_schema_router
 ---
 # Output Template: router
@@ -95,5 +93,4 @@ Notification: `{{signal_type_or_none}}`
 | [[bld_knowledge_router]] | upstream | 0.48 |
 | [[router-builder]] | upstream | 0.41 |
 | [[bld_config_router]] | downstream | 0.40 |
-| [[p03_ins_router]] | upstream | 0.38 |
 | [[bld_schema_router]] | downstream | 0.38 |

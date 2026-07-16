@@ -18,10 +18,7 @@ updated: "2026-04-13"
 keywords: [knowledge graph construction, knowledge card, graph knowledge schemas, constrained entity types, annotated relation types, dedup strategy, hybrid traversal]
 density_score: 0.91
 related:
-  - p10_lr_knowledge_graph_builder
-  - p01_kc_knowledge_graph
   - knowledge-graph-builder
-  - bld_instruction_knowledge_graph
   - bld_config_knowledge_graph
 ---
 # Domain Knowledge: knowledge_graph
@@ -123,8 +120,5 @@ knowledge graphs enable multi-hop queries, theme summarization, and relationship
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_knowledge_graph_builder]] | downstream | 0.62 |
-| [[p01_kc_knowledge_graph]] | sibling | 0.61 |
 | [[knowledge-graph-builder]] | related | 0.59 |
-| [[bld_instruction_knowledge_graph]] | downstream | 0.57 |
 | [[bld_config_knowledge_graph]] | downstream | 0.51 |

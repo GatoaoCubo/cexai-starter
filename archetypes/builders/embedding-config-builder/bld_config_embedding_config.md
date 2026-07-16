@@ -29,10 +29,7 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_config_embedder_provider
-  - bld_knowledge_card_embedding_config
   - bld_architecture_embedding_config
-  - p01_emb_openai_text_embedding_3_small
-  - p01_kc_embedding_config
 ---
 # Config: embedding_config Production Rules
 ## Naming Convention
@@ -83,5 +80,4 @@ python _tools/cex_score.py --apply bld-config-embedding-config.md
 | [[bld_config_embedder_provider]] | sibling | 0.36 |
 | [[bld_knowledge_embedding_config]] | upstream | 0.34 |
 | [[bld_architecture_embedding_config]] | upstream | 0.33 |
-| [[p01_emb_openai_text_embedding_3_small]] | upstream | 0.33 |
 | [[kc_embedding_config]] | upstream | 0.32 |

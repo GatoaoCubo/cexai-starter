@@ -30,12 +30,6 @@ keywords:
  - "p11_cn_{{trigger_type}}.yaml"
  - "is a lowercase slug (e.g."
 density_score: 0.90
-related:
- - p11_schema_revision_loop_policy
- - p06_is_env_contract_n05
- - p06_is_checkout_n06
- - n00_curation_nudge_manifest
- - p03_ch_content_pipeline
 ---
 ## Frontmatter Schema
 
@@ -161,12 +155,3 @@ Where `trigger_type` is a lowercase slug (e.g., `turn_count`, `density_threshold
 4. `### Target Memory` -- destination and auto-write config
 5. `### Boundaries` -- NOT-items (4 minimum)
 6. `### Usage in agent session` -- code block
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p11_schema_revision_loop_policy]] | sibling | 0.51 |
-| [[p06_is_env_contract_n05]] | upstream | 0.36 |
-| [[p06_is_checkout_n06]] | upstream | 0.32 |
-| [[n00_curation_nudge_manifest]] | related | 0.28 |
-| [[p03_ch_content_pipeline]] | upstream | 0.27 |

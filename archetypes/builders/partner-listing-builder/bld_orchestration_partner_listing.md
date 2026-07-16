@@ -19,9 +19,7 @@ curates, receives from, produces for]
 density_score: 0.85
 related:
   - bld_tools_partner_listing
-  - bld_collaboration_app_directory_entry
   - partner-listing-builder
-  - bld_output_template_partner_listing
   - bld_config_partner_listing
 ---
 ## Crew Role  
@@ -48,7 +46,5 @@ Does NOT handle case studies (handled by `case_study-builder`) or app directory 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_partner_listing]] | upstream | 0.36 |
-| [[bld_collaboration_app_directory_entry]] | sibling | 0.35 |
 | [[partner-listing-builder]] | upstream | 0.32 |
-| [[bld_output_template_partner_listing]] | upstream | 0.32 |
 | [[bld_config_partner_listing]] | upstream | 0.31 |

@@ -4,11 +4,8 @@ description: "Builds ONE compliance_framework artifact via 8F pipeline. Loads co
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
   - system-prompt-builder
-  - p03_sp_n03_creation_nucleus
 ---
 
 # compliance-framework-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |
 | [[system-prompt-builder]] | related | 0.27 |
-| [[p03_sp_n03_creation_nucleus]] | related | 0.26 |

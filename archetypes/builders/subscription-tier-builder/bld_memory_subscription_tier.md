@@ -20,11 +20,8 @@ keywords: [subscription_tier construction, memory subscription tier, stripe-alig
 tiers]
 density_score: 0.88
 related:
-  - bld_knowledge_card_subscription_tier
   - subscription-tier-builder
   - bld_schema_subscription_tier
-  - p11_qg_subscription_tier
-  - p08_pat_pricing_framework
 ---
 # Memory: subscription-tier-builder
 
@@ -58,5 +55,4 @@ Stripe Billing API schema and Chargebee plan docs are the de-facto industry cont
 | [[bld_knowledge_subscription_tier]] | upstream | 0.60 |
 | [[subscription-tier-builder]] | downstream | 0.56 |
 | [[bld_schema_subscription_tier]] | upstream | 0.49 |
-| [[p11_qg_subscription_tier]] | downstream | 0.40 |
 | p08_pat_pricing_framework | upstream | 0.33 |

@@ -18,10 +18,6 @@ keywords: [component map of trace_config, and architectural position, trace conf
 density_score: 0.90
 related:
   - trace-config-builder
-  - p01_kc_trace_config
-  - bld_collaboration_trace_config
-  - n00_trace_config_manifest
-  - p11_qg_trace_config
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -74,7 +70,3 @@ log_config --independent-- trace_config (log_config formats log messages; trace_
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[trace-config-builder]] | downstream | 0.57 |
-| [[p01_kc_trace_config]] | upstream | 0.51 |
-| [[bld_collaboration_trace_config]] | downstream | 0.49 |
-| [[n00_trace_config_manifest]] | upstream | 0.44 |
-| [[p11_qg_trace_config]] | downstream | 0.42 |

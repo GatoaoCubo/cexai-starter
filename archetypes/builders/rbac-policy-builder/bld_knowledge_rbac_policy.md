@@ -20,9 +20,6 @@ density_score: 0.85
 related:
   - rbac-policy-builder
   - kc_rbac_policy
-  - p10_mem_rbac_policy_builder
-  - bld_instruction_rbac_policy
-  - p09_qg_rbac_policy
 ---
 ## Domain Overview
 Role-based access control (RBAC) is a foundational mechanism for enforcing multi-tenant isolation in cloud and enterprise systems. By assigning permissions to roles rather than individual users, RBAC ensures that tenants cannot access resources outside their allocated scope. This model aligns with principles like least privilege and separation of duties, critical for compliance in regulated industries. Multi-tenant isolation relies on RBAC to prevent cross-tenant data leakage while enabling scalable, policy-driven access management.
@@ -68,6 +65,4 @@ RBAC policies must balance flexibility with strict boundary enforcement. For exa
 |----------|-------------|-------|
 | [[rbac-policy-builder]] | downstream | 0.70 |
 | [[kc_rbac_policy]] | sibling | 0.66 |
-| [[p10_mem_rbac_policy_builder]] | downstream | 0.53 |
 | [[bld_prompt_rbac_policy]] | downstream | 0.47 |
-| [[p09_qg_rbac_policy]] | downstream | 0.46 |

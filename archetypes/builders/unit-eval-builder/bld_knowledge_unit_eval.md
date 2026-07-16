@@ -33,9 +33,7 @@ density_score: 0.90
 related:
   - bld_schema_unit_eval
   - unit-eval-builder
-  - p03_ins_unit_eval
   - bld_architecture_unit_eval
-  - p11_qg_unit_eval
 ---
 # Domain Knowledge: unit_eval
 ## Executive Summary
@@ -108,6 +106,4 @@ A `unit_eval` (P07) is a deterministic test for a single agent or prompt in isol
 |----------|-------------|-------|
 | [[bld_schema_unit_eval]] | downstream | 0.46 |
 | [[unit-eval-builder]] | downstream | 0.45 |
-| [[p03_ins_unit_eval]] | downstream | 0.43 |
 | [[bld_architecture_unit_eval]] | downstream | 0.40 |
-| [[p11_qg_unit_eval]] | downstream | 0.39 |

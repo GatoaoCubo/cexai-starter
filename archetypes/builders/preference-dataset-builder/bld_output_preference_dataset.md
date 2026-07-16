@@ -33,10 +33,8 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_preference_dataset
-  - p11_qg_preference_dataset
   - bld_architecture_preference_dataset
   - preference-dataset-builder
-  - bld_instruction_preference_dataset
 ---
 # Output Template: preference_dataset
 ```yaml
@@ -113,7 +111,5 @@ pairs:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_preference_dataset]] | downstream | 0.48 |
-| [[p11_qg_preference_dataset]] | downstream | 0.47 |
 | [[bld_architecture_preference_dataset]] | downstream | 0.43 |
 | [[preference-dataset-builder]] | downstream | 0.41 |
-| [[bld_instruction_preference_dataset]] | upstream | 0.39 |

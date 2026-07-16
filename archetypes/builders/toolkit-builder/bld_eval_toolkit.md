@@ -31,8 +31,6 @@ keywords:
   - "gates failure"
 density_score: 0.85
 related:
-  - bld_knowledge_card_toolkit
-  - p03_ins_toolkit_builder
   - toolkit-builder
   - bld_schema_toolkit
   - bld_memory_toolkit

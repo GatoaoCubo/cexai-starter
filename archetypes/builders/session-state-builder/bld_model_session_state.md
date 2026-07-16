@@ -30,11 +30,8 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_session_state
   - bld_architecture_session_state
   - bld_memory_session_state
-  - p01_kc_session_state
-  - bld_knowledge_card_session_state
 ---
 ## Identity
 

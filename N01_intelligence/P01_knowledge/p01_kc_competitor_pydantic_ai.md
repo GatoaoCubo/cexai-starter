@@ -17,12 +17,6 @@ axioms:
 tldr: "Pydantic AI is the closest philosophical competitor to CEX -- both bet on typed infrastructure over conversational agents -- but Pydantic AI types LLM I/O while CEX types knowledge artifacts across 125 kinds and 12 pillars."
 8f: "F3_inject"
 keywords: [pydantic, llm, agent framework, type safety, runtime exchange, json schema]
-related:
-  - p01_kc_llm_output_parsing_validation
-  - cm_cex_vs_landscape
-  - p01_kc_response_format
-  - p01_kc_parser
-  - p01_kc_pillar_brief_p06_schema_en
 ---
 
 # Pydantic AI -- Competitive Intelligence Profile

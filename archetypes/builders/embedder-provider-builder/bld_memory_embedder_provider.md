@@ -23,11 +23,7 @@ configs, reproducibility
 for, embedder provider]
 density_score: 0.90
 related:
-  - bld_knowledge_card_embedder_provider
   - embedder-provider-builder
-  - p11_qg_embedder_provider
-  - bld_collaboration_embedder_provider
-  - p03_ins_embedder_provider
 ---
 # Memory: embedder-provider-builder
 ## Summary
@@ -89,6 +85,4 @@ python _tools/cex_score.py --apply bld-memory-embedder-provider.md
 |----------|-------------|-------|
 | [[bld_knowledge_embedder_provider]] | upstream | 0.62 |
 | [[embedder-provider-builder]] | upstream | 0.51 |
-| [[p11_qg_embedder_provider]] | downstream | 0.51 |
 | [[bld_orchestration_embedder_provider]] | upstream | 0.50 |
-| [[p03_ins_embedder_provider]] | upstream | 0.47 |

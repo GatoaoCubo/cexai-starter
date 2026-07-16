@@ -20,7 +20,6 @@ keywords: [tokenizer configuration, vocabulary size, and special tokens, tokeniz
 tokenizer, spec table, byte pair encoding]
 density_score: 0.88
 related:
-  - kc_tokenizer_config
   - tokenizer-config-builder
   - bld_prompt_tokenizer_config
   - bld_memory_tokenizer_config
@@ -56,7 +55,6 @@ Tokenizer configs define how raw text is split into tokens for LLM processing. T
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_tokenizer_config]] | sibling | 0.48 |
 | [[tokenizer-config-builder]] | downstream | 0.43 |
 | [[bld_prompt_tokenizer_config]] | downstream | 0.42 |
 | [[bld_memory_tokenizer_config]] | downstream | 0.42 |

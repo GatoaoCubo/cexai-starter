@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_graph_rag_config
   - graph-rag-config-builder
-  - n00_graph_rag_config_manifest
-  - p11_fb_graph_rag_config
-  - bld_collaboration_graph_rag_config
 ---
 
 # graph-rag-config-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[bld_config_graph_rag_config]] | related | 0.34 |
 | [[graph-rag-config-builder]] | related | 0.34 |
-| [[n00_graph_rag_config_manifest]] | related | 0.33 |
-| [[p11_fb_graph_rag_config]] | related | 0.33 |
-| [[bld_collaboration_graph_rag_config]] | related | 0.31 |

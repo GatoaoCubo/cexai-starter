@@ -28,10 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, browser tool construction, config browser tool, browser_tool, builder, examples, "p04_browser_{target_slug}.md"]
 density_score: 0.90
 related:
-  - bld_instruction_browser_tool
-  - bld_knowledge_card_browser_tool
   - browser-tool-builder
-  - p04_browser_tool_NAME
   - bld_schema_browser_tool
 ---
 # Config: browser_tool Production Rules

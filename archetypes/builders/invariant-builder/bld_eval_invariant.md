@@ -16,10 +16,6 @@ domain: law
 density_score: 0.85
 llm_function: GOVERN
 related:
-  - p11_qg_axiom
-  - bld_knowledge_card_invariant
-  - p11_qg_quality_gate
-  - p03_ins_law
   - bld_schema_invariant
 ---
 ## Quality Gate

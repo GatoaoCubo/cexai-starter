@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [knowledge index construction, collaboration knowledge index, knowledge_index, builder, examples, "### crew: knowledge infrastructure", my role, crew compositions, pipeline setup, knowledge infrastructure]
 density_score: 0.90
 related:
-  - bld_collaboration_embedding_config
-  - bld_collaboration_knowledge_card
   - knowledge-index-builder
-  - bld_collaboration_memory_scope
-  - bld_collaboration_rag_source
 ---
 # Collaboration: knowledge-index-builder
 ## My Role in Crews

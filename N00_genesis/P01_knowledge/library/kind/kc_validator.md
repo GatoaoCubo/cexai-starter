@@ -23,9 +23,6 @@ linked_artifacts:
 related:
   - validator-builder
   - bld_architecture_validator
-  - bld_knowledge_card_validator
-  - bld_collaboration_output_validator
-  - n00_validator_manifest
 ---
 
 # Validator

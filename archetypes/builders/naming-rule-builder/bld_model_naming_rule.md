@@ -32,9 +32,6 @@ parent: null
 keywords: [manifest naming rule, demonstrating ideal structure, naming_rule, become, "p05_nr_{{scope}}.md", "scope:", "pattern:"]
 related:
   - bld_memory_naming_rule
-  - bld_collaboration_naming_rule
-  - p03_ins_naming_rule
-  - bld_knowledge_card_naming_rule
   - bld_architecture_naming_rule
 ---
 ## Identity
@@ -97,7 +94,4 @@ Follow with one rationale paragraph (max 80 words) explaining the structural dec
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_naming_rule]] | downstream | 0.50 |
-| [[bld_collaboration_naming_rule]] | related | 0.46 |
-| [[p03_ins_naming_rule]] | upstream | 0.40 |
-| [[bld_knowledge_card_naming_rule]] | upstream | 0.39 |
 | [[bld_architecture_naming_rule]] | downstream | 0.34 |

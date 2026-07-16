@@ -19,9 +19,7 @@ keywords: [atomic searchable facts, embedder provider construction, knowledge ca
 density_score: 0.90
 related:
   - bld_memory_embedder_provider
-  - p03_ins_embedder_provider
   - embedder-provider-builder
-  - p11_qg_embedder_provider
   - bld_config_embedder_provider
 ---
 # Domain Knowledge: embedder_provider
@@ -82,7 +80,5 @@ Embedder provider configs are infrastructure artifacts for RAG pipelines — the
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_embedder_provider]] | downstream | 0.54 |
-| [[p03_ins_embedder_provider]] | downstream | 0.52 |
 | [[embedder-provider-builder]] | downstream | 0.48 |
-| [[p11_qg_embedder_provider]] | downstream | 0.46 |
 | [[bld_config_embedder_provider]] | downstream | 0.45 |

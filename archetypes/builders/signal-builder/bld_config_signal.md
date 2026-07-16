@@ -29,10 +29,6 @@ keywords: [naming conventions, file paths, and operational constraints, signal c
 density_score: 0.90
 related:
   - signal-builder
-  - bld_knowledge_card_signal
-  - bld_output_template_signal
-  - p11_qg_signal
-  - p03_ins_signal_builder
 ---
 # Config: signal Production Rules
 ## Naming Convention
@@ -93,6 +89,3 @@ python _tools/cex_score.py --apply bld-config-signal.md
 |----------|-------------|-------|
 | [[signal-builder]] | downstream | 0.42 |
 | [[bld_knowledge_signal]] | downstream | 0.41 |
-| [[bld_output_template_signal]] | upstream | 0.36 |
-| [[p11_qg_signal]] | downstream | 0.36 |
-| [[p03_ins_signal_builder]] | upstream | 0.36 |

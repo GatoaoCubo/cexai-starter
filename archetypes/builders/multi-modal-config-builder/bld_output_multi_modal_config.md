@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [template with, for multi_modal_config production, multi modal config construction, multi_modal_config, builder, examples, output template, capability name, modal config, multi-modal config]
 density_score: 0.90
 related:
-  - p01_kc_multi_modal_config
-  - bld_knowledge_card_multi_modal_config
   - multi-modal-config-builder
   - bld_schema_multi_modal_config
-  - p11_qg_multi_modal_config
 ---
 # Output Template: multi_modal_config
 ```yaml
@@ -94,8 +91,5 @@ tldr: "{{Dense <=160ch config summary}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_multi_modal_config]] | upstream | 0.62 |
-| [[bld_knowledge_card_multi_modal_config]] | upstream | 0.56 |
 | [[multi-modal-config-builder]] | upstream | 0.52 |
 | [[bld_schema_multi_modal_config]] | downstream | 0.47 |
-| [[p11_qg_multi_modal_config]] | downstream | 0.46 |

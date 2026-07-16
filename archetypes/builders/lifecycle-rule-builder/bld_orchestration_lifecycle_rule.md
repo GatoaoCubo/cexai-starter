@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [lifecycle rule construction, collaboration lifecycle rule, lifecycle_rule, builder, examples, "### crew: content maintenance pipeline", "### crew: knowledge freshness system", my role, crew compositions, full governance]
 density_score: 0.90
 related:
-  - bld_manifest_lifecycle_rule
   - bld_memory_lifecycle_rule
-  - bld_collaboration_state_machine
-  - bld_collaboration_quality_gate
-  - bld_collaboration_hook_config
 ---
 # Collaboration: lifecycle-rule-builder
 ## My Role in Crews
@@ -70,7 +66,6 @@ I define declarative state machines for artifact creation, review, promotion, de
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_lifecycle_rule]] | related | 0.41 |
 | [[bld_memory_lifecycle_rule]] | upstream | 0.39 |
 | bld_collaboration_state_machine | sibling | 0.37 |
 | bld_collaboration_quality_gate | sibling | 0.34 |

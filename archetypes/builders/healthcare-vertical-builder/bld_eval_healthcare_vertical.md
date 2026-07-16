@@ -18,9 +18,6 @@ keywords: [healthcare_vertical construction, quality gate healthcare vertical, h
 density_score: 0.85
 related:
   - healthcare-vertical-builder
-  - p10_mem_healthcare_vertical_builder
-  - bld_instruction_healthcare_vertical
-  - bld_knowledge_card_healthcare_vertical
   - healthcare_vertical_fhir_workflows
 ---
 ## Quality Gate

@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - design-system-builder
   - kind-builder
-  - p06_vs_design_system
-  - p01_kc_design_system
-  - p03_sp_builder_nucleus
 ---
 
 # design-system-builder Sub-Agent

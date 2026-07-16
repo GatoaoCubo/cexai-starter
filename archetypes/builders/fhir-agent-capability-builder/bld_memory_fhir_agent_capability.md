@@ -20,10 +20,7 @@ build, related artifacts, agent capability]
 density_score: 0.85
 related:
   - fhir-agent-capability-builder
-  - bld_instruction_fhir_agent_capability
-  - bld_knowledge_card_fhir_agent_capability
   - bld_tools_fhir_agent_capability
-  - bld_collaboration_fhir_agent_capability
 ---
 ## Observation
 The most frequent FHIR agent capability failure is missing PHI-handling declaration combined with over-scoped SMART permissions. Agents declared for "summarization" routinely request system/*.read, triggering EHR security review escalations. The second most common failure: using FHIR R4 resource patterns for AI extensions that only exist in R4B/R5.
@@ -46,7 +43,4 @@ HL7 AI Office pilot (2025): 67% of submitted agent capability declarations were 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fhir-agent-capability-builder]] | upstream | 0.47 |
-| [[bld_instruction_fhir_agent_capability]] | upstream | 0.45 |
-| [[bld_knowledge_card_fhir_agent_capability]] | upstream | 0.44 |
 | [[bld_tools_fhir_agent_capability]] | upstream | 0.39 |
-| [[bld_collaboration_fhir_agent_capability]] | downstream | 0.37 |

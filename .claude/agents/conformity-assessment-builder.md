@@ -4,11 +4,8 @@ description: "Builds ONE conformity_assessment artifact via 8F pipeline. Loads c
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_manifest_conformity_assessment
   - bld_architecture_conformity_assessment
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_conformity_assessment_manifest
 ---
 
 # conformity-assessment-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_conformity_assessment]] | related | 0.34 |
 | [[bld_architecture_conformity_assessment]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |
-| [[n00_conformity_assessment_manifest]] | related | 0.32 |

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [sso_config construction, output template sso config, sso_config, builder, output_template, assertion consumer service, single logout service, example configuration, google workspace, related artifacts]
 density_score: 0.85
 related:
-  - p09_qg_sso_config
-  - n00_sso_config_manifest
-  - kc_sso_config
   - bld_schema_sso_config
-  - sso-config-builder
 ---
 ```yaml
 ---
@@ -79,8 +75,4 @@ redirect_uri: "https://app.example.com/sso/callback"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p09_qg_sso_config]] | downstream | 0.56 |
-| [[n00_sso_config_manifest]] | downstream | 0.46 |
-| [[kc_sso_config]] | upstream | 0.44 |
 | [[bld_schema_sso_config]] | downstream | 0.42 |
-| [[sso-config-builder]] | downstream | 0.39 |

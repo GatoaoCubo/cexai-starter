@@ -19,10 +19,6 @@ keywords: [handoff protocol construction, collaboration handoff protocol, handof
 density_score: 0.90
 related:
   - handoff-protocol-builder
-  - bld_collaboration_handoff
-  - bld_collaboration_memory_scope
-  - bld_collaboration_dispatch_rule
-  - bld_collaboration_retriever_config
 ---
 # Collaboration: handoff-protocol-builder
 ## My Role in Crews

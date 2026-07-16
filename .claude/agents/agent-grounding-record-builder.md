@@ -4,9 +4,6 @@ description: "Builds ONE agent_grounding_record artifact via 8F pipeline. Loads 
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_manifest_agent_grounding_record
-  - kc_agent_grounding_record
-  - p01_kc_pillar_brief_p02_model_en
   - kind-builder
 ---
 
@@ -85,7 +82,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_agent_grounding_record]] | related | 0.34 |
-| [[kc_agent_grounding_record]] | related | 0.32 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.31 |
 | [[kind-builder]] | related | 0.30 |

@@ -20,10 +20,6 @@ this, dependency graph, boundary table]
 density_score: 0.90
 related:
   - db-connector-builder
-  - bld_architecture_client
-  - bld_collaboration_connector
-  - p11_qg_connector
-  - bld_instruction_connector
 ---
 ## Component Inventory
 
@@ -98,7 +94,3 @@ workflow           --depends-->   outbound_endpoint
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[db-connector-builder]] | upstream | 0.45 |
-| [[bld_architecture_client]] | sibling | 0.40 |
-| [[bld_collaboration_connector]] | downstream | 0.40 |
-| [[p11_qg_connector]] | downstream | 0.37 |
-| [[bld_instruction_connector]] | upstream | 0.34 |

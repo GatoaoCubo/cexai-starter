@@ -19,9 +19,6 @@ customer, ideal customer profile, key concepts, economic buyer, framework segmen
 density_score: 0.85
 related:
   - customer-segment-builder
-  - p01_kc_icp_frameworks
-  - p01_kc_customer_segment
-  - bld_collaboration_customer_segment
 ---
 ## Domain Overview
 Customer segmentation defines distinct groups of organizations or individuals sharing firmographic traits (e.g., industry, size, revenue) and unmet needs. In B2B contexts, this informs Ideal Customer Profile (ICP) development, aligning product/service offerings with market demand. Segmentation uses the STP framework (Segmentation, Targeting, Positioning) combined with firmographic and technographic signals. PLG (product-led growth) ICPs add behavioral triggers: activation milestones, usage frequency, and feature adoption patterns. Qualification frameworks like BANT and MEDDIC convert segment definitions into actionable sales criteria.

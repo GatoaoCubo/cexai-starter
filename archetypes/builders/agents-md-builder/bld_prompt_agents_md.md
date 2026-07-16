@@ -31,10 +31,7 @@ keywords:
 density_score: 0.85
 related:
   - agents-md-builder
-  - bld_knowledge_card_agents_md
-  - p02_qg_agents_md
   - bld_schema_agents_md
-  - p10_lr_agents_md_builder
 ---
 ## Phase 1: RESEARCH
 1. Inspect project-root files: package.json, pyproject.toml, Cargo.toml, Makefile, CI config.
@@ -66,7 +63,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[agents-md-builder]] | downstream | 0.46 |
-| [[bld_knowledge_card_agents_md]] | upstream | 0.42 |
-| [[p02_qg_agents_md]] | downstream | 0.37 |
 | [[bld_schema_agents_md]] | downstream | 0.35 |
-| [[p10_lr_agents_md_builder]] | downstream | 0.31 |

@@ -26,11 +26,7 @@ two]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p11_qg_drift_detector
-  - bld_instruction_drift_detector
   - drift-detector-builder
-  - p01_kc_drift_detector
-  - bld_knowledge_card_drift_detector
 ---
 ## Summary
 Two decisions dominate drift detector utility: what features to monitor (specific list vs generic "all") and how thresholds are calibrated (numeric vs vague). Generic feature monitoring generates alert fatigue; specific named dimensions produce actionable signals. Numeric thresholds with suppression windows prevent cascade failures after initial detection.
@@ -65,8 +61,4 @@ Two decisions dominate drift detector utility: what features to monitor (specifi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_drift_detector]] | related | 0.34 |
-| [[bld_instruction_drift_detector]] | upstream | 0.33 |
 | [[drift-detector-builder]] | related | 0.33 |
-| [[p01_kc_drift_detector]] | related | 0.31 |
-| [[bld_knowledge_card_drift_detector]] | upstream | 0.30 |

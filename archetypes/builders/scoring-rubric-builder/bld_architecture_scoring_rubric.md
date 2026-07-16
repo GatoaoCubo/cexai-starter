@@ -19,9 +19,6 @@ density_score: 0.90
 related:
   - scoring-rubric-builder
   - bld_memory_scoring_rubric
-  - bld_knowledge_card_scoring_rubric
-  - p01_kc_scoring_rubric
-  - bld_collaboration_scoring_rubric
 ---
 # Architecture: scoring_rubric in the CEX
 ## Component Inventory

@@ -18,9 +18,6 @@ keywords: [pricing_page construction, instruction pricing page, pricing_page, bu
 density_score: 0.85
 related:
   - pricing-page-builder
-  - bld_instruction_subscription_tier
-  - bld_knowledge_card_pricing_page
-  - n00_pricing_page_manifest
   - kc_subscription_tier
 ---
 ## Phase 1: RESEARCH  
@@ -53,7 +50,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pricing-page-builder]] | downstream | 0.48 |
-| [[bld_instruction_subscription_tier]] | sibling | 0.45 |
-| [[bld_knowledge_card_pricing_page]] | upstream | 0.45 |
-| [[n00_pricing_page_manifest]] | downstream | 0.42 |
 | [[kc_subscription_tier]] | upstream | 0.40 |

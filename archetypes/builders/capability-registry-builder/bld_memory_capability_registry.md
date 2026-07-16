@@ -18,10 +18,7 @@ keywords: [capability_registry construction, learning record capability registry
 density_score: 0.85
 related:
   - capability-registry-builder
-  - bld_instruction_capability_registry
   - bld_config_capability_registry
-  - p08_qg_capability_registry
-  - bld_output_template_capability_registry
 ---
 ## Observation
 Registry entries with all 8 required fields (capability_name, provider_agent, input_schema, output_schema, cost_tokens, quality_baseline, availability, keyword_index) produce 2-3x higher dispatch precision than partial entries. The most common omission is keyword_index, which prevents TF-IDF-based retrieval from surfacing the agent.
@@ -46,5 +43,3 @@ In the CEX WAVE6/WAVE7 grid cycles, orchestrators that used flat agent lists dis
 | [[capability-registry-builder]] | upstream | 0.41 |
 | [[bld_prompt_capability_registry]] | upstream | 0.38 |
 | [[bld_config_capability_registry]] | upstream | 0.33 |
-| [[p08_qg_capability_registry]] | downstream | 0.31 |
-| [[bld_output_template_capability_registry]] | upstream | 0.31 |

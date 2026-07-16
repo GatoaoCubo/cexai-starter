@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [team_charter construction, quality gate team charter, team_charter, builder, quality_gate, governance, quality gate]
 density_score: 0.85
 related:
-  - bld_output_template_team_charter
   - bld_schema_team_charter
   - team-charter-builder
-  - bld_instruction_team_charter
-  - n00_team_charter_manifest
 ---
 ## Quality Gate
 

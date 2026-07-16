@@ -17,15 +17,8 @@ tldr: "SINGLE canonical N04 agent card (R-030 merge): A2A routing (12 capabiliti
 keywords: [knowledge engineer, agent card, knowledge engineer routing card, inter-nucleus knowledge flows, agent_card, knowledge, engineer, routing, database, dispatch, capability declaration, a2a, rag pipelines, knowledge cards, embeddings, chunking, retrieval, taxonomy, memory management, entity memory, session state]
 density_score: null
 related:
-  - p02_agent_knowledge_n04
-  - p03_sp_knowledge_nucleus
-  - p02_ap_n04_knowledge
-  - p12_wf_knowledge
   - nucleus_def_n04
   - kc_knowledge_vocabulary
-  - bld_collaboration_knowledge_card
-  - bld_collaboration_memory_scope
-  - bld_collaboration_knowledge_graph
 ---
 
 > **Consolidation note (2026-07-06, register R-030):** this file is now the SINGLE

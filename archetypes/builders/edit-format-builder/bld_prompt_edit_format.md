@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [edit_format construction, instruction edit format, edit_format, builder, instruction, operation, file_path, content, replace, append]
 density_score: 0.85
-related:
-  - bld_instruction_playground_config
-  - bld_instruction_judge_config
-  - bld_instruction_planning_strategy
-  - bld_instruction_transport_config
-  - bld_instruction_search_strategy
 ---
 ## Phase 1: RESEARCH  
 
@@ -50,12 +44,3 @@ This ISO specifies an edit format: how diffs or patches are expressed and applie
 - [ ] Confirm tooling compatibility (e.g., parsers, validators).  
 - [ ] Ensure all P06 constraints are explicitly addressed.  
 - [ ] Perform peer review for clarity and completeness.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_playground_config]] | sibling | 0.35 |
-| [[bld_instruction_judge_config]] | sibling | 0.32 |
-| [[bld_instruction_planning_strategy]] | sibling | 0.30 |
-| [[bld_instruction_transport_config]] | sibling | 0.29 |
-| [[bld_instruction_search_strategy]] | sibling | 0.29 |

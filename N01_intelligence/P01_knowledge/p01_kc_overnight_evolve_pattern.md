@@ -21,10 +21,7 @@ axioms:
 keywords: [autoresearch, sweep, crew, cascade, grid, convergence, overnight evolution, density score, quality gate, ollama, haiku, opus]
 density_score: 0.95
 related:
-  - kc_workflow_run_crate
   - p01_kc_dispatch_modes
-  - p03_ins_doing_tasks
-  - bld_knowledge_card_benchmark_suite
   - p01_kc_competitive_intelligence_methods
 ---
 

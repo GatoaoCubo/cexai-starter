@@ -5,8 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - openapi-spec-builder
-  - bld_collaboration_openapi_spec
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_tools_openapi_spec
 ---

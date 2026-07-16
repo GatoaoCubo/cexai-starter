@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [eval_framework construction, output template eval framework, eval_framework, builder, output_template, example configurations, framework comparison, last updated, related artifacts, framework_name]
 density_score: 0.85
 related:
-  - n00_eval_framework_manifest
   - bld_config_eval_framework
-  - bld_output_template_playground_config
-  - bld_output_template_scoring_rubric
   - bld_schema_sdk_example
 ---
 ```yaml

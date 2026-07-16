@@ -17,10 +17,7 @@ updated: "2026-04-13"
 keywords: [reward_model construction, tools reward model, reward_model, builder, tools, production tools, validation tools, external references, hugging face transformers, related artifacts]
 density_score: 0.85
 related:
-  - n00_reward_model_manifest
-  - p10_lr_reward_model_builder
   - bld_tools_stt_provider
-  - bld_knowledge_card_reward_model
   - reward-model-builder
 ---
 ## Production Tools
@@ -47,8 +44,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_reward_model_manifest]] | downstream | 0.41 |
-| [[p10_lr_reward_model_builder]] | downstream | 0.37 |
 | [[bld_tools_stt_provider]] | sibling | 0.37 |
-| [[bld_knowledge_card_reward_model]] | upstream | 0.35 |
 | [[reward-model-builder]] | downstream | 0.35 |

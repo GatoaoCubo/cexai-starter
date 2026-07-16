@@ -19,10 +19,6 @@ keywords: [reward signal construction, collaboration reward signal, reward_signa
 density_score: 0.90
 related:
   - reward-signal-builder
-  - bld_knowledge_card_reward_signal
-  - n00_reward_signal_manifest
-  - n00_reward_model_manifest
-  - kc_reward_model
 ---
 # Collaboration: reward-signal-builder
 ## My Role in Crews

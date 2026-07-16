@@ -20,11 +20,7 @@ effective, evidence
 reviewed, related artifacts, meddic bant]
 density_score: 0.85
 related:
-  - bld_instruction_discovery_questions
   - discovery-questions-builder
-  - p01_qg_discovery_questions
-  - bld_knowledge_card_discovery_questions
-  - kc_discovery_questions
 ---
 ## Observation
 Discovery questions often lack alignment with specific buyer personas or deal stages, leading to generic, unactionable prompts. Over-reliance on broad frameworks without contextual customization reduces relevance and engagement.
@@ -45,8 +41,4 @@ Reviewed artifacts showed higher engagement when questions explicitly referenced
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_discovery_questions]] | upstream | 0.48 |
 | [[discovery-questions-builder]] | upstream | 0.48 |
-| [[p01_qg_discovery_questions]] | downstream | 0.46 |
-| [[bld_knowledge_card_discovery_questions]] | upstream | 0.41 |
-| [[kc_discovery_questions]] | upstream | 0.37 |

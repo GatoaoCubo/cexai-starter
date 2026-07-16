@@ -33,9 +33,6 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - p01_kc_prompt_cache
-  - bld_collaboration_prompt_cache
-  - bld_knowledge_card_prompt_cache
   - bld_architecture_prompt_cache
 ---
 ## Identity
@@ -137,7 +134,4 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prompt_cache]] | related | 0.56 |
-| [[bld_collaboration_prompt_cache]] | downstream | 0.55 |
-| [[bld_knowledge_card_prompt_cache]] | upstream | 0.54 |
 | [[bld_architecture_prompt_cache]] | upstream | 0.50 |

@@ -20,7 +20,6 @@ density_score: 0.85
 related:
   - bld_architecture_retrieval_evaluator
   - retrieval-evaluator-builder
-  - kc_retrieval_evaluator
   - bld_feedback_retrieval_evaluator
   - bld_tools_retrieval_evaluator
 ---
@@ -91,6 +90,5 @@ None -- independent builder (layer 0). Evaluators are defined from requirements.
 |----------|-------------|-------|
 | [[bld_architecture_retrieval_evaluator]] | upstream | 0.51 |
 | [[retrieval-evaluator-builder]] | upstream | 0.48 |
-| [[kc_retrieval_evaluator]] | upstream | 0.45 |
 | [[bld_feedback_retrieval_evaluator]] | upstream | 0.44 |
 | [[bld_tools_retrieval_evaluator]] | upstream | 0.42 |

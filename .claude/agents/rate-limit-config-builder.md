@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
   - rate-limit-config-builder
-  - bld_collaboration_rate_limit_config
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # rate-limit-config-builder Sub-Agent

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [app_directory_entry construction, instruction app directory entry, app_directory_entry, builder, instruction, app store, related artifacts, install steps, demo link, downstream]
 density_score: 0.85
 related:
-  - kc_app_directory_entry
   - app-directory-entry-builder
-  - p10_mem_app_directory_entry_builder
-  - bld_knowledge_card_app_directory_entry
-  - p05_qg_app_directory_entry
 ---
 ## Phase 1: RESEARCH  
 1. Identify app’s core value proposition and target audience.  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_app_directory_entry]] | upstream | 0.51 |
 | [[app-directory-entry-builder]] | downstream | 0.42 |
-| [[p10_mem_app_directory_entry_builder]] | downstream | 0.37 |
-| [[bld_knowledge_card_app_directory_entry]] | upstream | 0.37 |
-| [[p05_qg_app_directory_entry]] | downstream | 0.37 |

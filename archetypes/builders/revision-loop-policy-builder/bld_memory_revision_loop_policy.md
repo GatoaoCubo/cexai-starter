@@ -18,10 +18,7 @@ keywords: [revision_loop_policy construction, revision loop policy builder, memo
 density_score: 0.87
 related:
  - revision-loop-policy-builder
- - bld_kc_revision_loop_policy
- - p11_qg_revision_loop_policy
  - rlp_{{name}}
- - p11_out_tpl_revision_loop_policy
 ---
 ## Learned Patterns
 
@@ -68,7 +65,3 @@ Never use a generic message like "too many retries" -- it provides no actionable
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[revision-loop-policy-builder]] | downstream | 0.39 |
-| [[bld_kc_revision_loop_policy]] | upstream | 0.38 |
-| [[p11_qg_revision_loop_policy]] | downstream | 0.37 |
-| [[rlp_{{name}}]] | downstream | 0.36 |
-| [[p11_out_tpl_revision_loop_policy]] | upstream | 0.35 |

@@ -17,11 +17,8 @@ updated: "2026-07-03"
 keywords: [fabrication_manifest construction, quality gate fabrication manifest, fabrication_manifest, builder, quality_gate, stage_status, hosting_target, brand_config_ref]
 density_score: 0.85
 related:
-  - bld_output_template_fabrication_manifest
   - bld_schema_fabrication_manifest
   - fabrication-manifest-builder
-  - bld_instruction_fabrication_manifest
-  - kc_fabrication_manifest
 ---
 ## Definition
 | Metric | Threshold | Operator | Scope |
@@ -114,8 +111,5 @@ produces a file the real CLI cannot parse as its own state.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_fabrication_manifest]] | downstream | 0.43 |
 | [[bld_schema_fabrication_manifest]] | upstream | 0.40 |
 | [[fabrication-manifest-builder]] | related | 0.36 |
-| [[bld_instruction_fabrication_manifest]] | upstream | 0.34 |
-| [[kc_fabrication_manifest]] | upstream | 0.32 |

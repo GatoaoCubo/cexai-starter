@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [tts_provider construction, instruction tts provider, tts_provider, builder, instruction, class ttsprovider, google cloud, azure cognitive services, related artifacts, audio format]
 density_score: 0.85
 related:
-  - bld_instruction_stt_provider
-  - kc_tts_provider
-  - p10_lr_tts_provider_builder
   - tts-provider-builder
-  - bld_collaboration_tts_provider
 ---
 ## Phase 1: RESEARCH  
 1. Identify TTS provider API requirements (authentication, endpoints, rate limits)  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_stt_provider]] | sibling | 0.40 |
-| [[kc_tts_provider]] | upstream | 0.35 |
-| [[p10_lr_tts_provider_builder]] | downstream | 0.30 |
 | [[tts-provider-builder]] | downstream | 0.30 |
-| [[bld_collaboration_tts_provider]] | downstream | 0.28 |

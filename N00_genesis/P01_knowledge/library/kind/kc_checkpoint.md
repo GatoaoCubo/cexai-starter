@@ -19,10 +19,7 @@ feeds_kinds: [checkpoint]
 density_score: null
 related:
   - checkpoint-builder
-  - bld_collaboration_checkpoint
   - bld_architecture_checkpoint
-  - bld_instruction_checkpoint
-  - p12_checkpoint
 ---
 
 # Checkpoint

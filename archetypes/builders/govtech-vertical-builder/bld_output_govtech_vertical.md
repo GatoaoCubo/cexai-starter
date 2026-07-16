@@ -17,9 +17,6 @@ updated: "2026-04-14"
 keywords: [govtech_vertical construction, output template govtech vertical, govtech_vertical, builder, output_template, jurisdictional scope, legal basis, regulatory alignment, gap status, security policy]
 density_score: 0.85
 related:
-  - bld_instruction_govtech_vertical
-  - p01_qg_govtech_vertical
-  - bld_knowledge_card_govtech_vertical
   - govtech-vertical-builder
   - govtech_vertical_digital_services
 ---
@@ -85,8 +82,5 @@ Compliance scope: {{fedramp_level}} authorization, {{fisma_category}} FISMA cate
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_govtech_vertical]] | upstream | 0.40 |
-| [[p01_qg_govtech_vertical]] | downstream | 0.35 |
-| [[bld_knowledge_card_govtech_vertical]] | upstream | 0.32 |
 | [[govtech-vertical-builder]] | upstream | 0.32 |
 | [[govtech_vertical_digital_services]] | upstream | 0.28 |

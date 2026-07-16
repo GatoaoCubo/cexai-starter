@@ -5,8 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - knowledge-index-builder
-  - bld_collaboration_knowledge_index
-  - p03_sp_builder_nucleus
   - kind-builder
 ---
 

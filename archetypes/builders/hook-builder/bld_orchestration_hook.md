@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [hook construction, collaboration hook, hook, builder, examples, "### crew: lifecycle management", my role, crew compositions, driven system, lifecycle management]
 density_score: 0.90
 related:
-  - bld_collaboration_hook_config
   - hook-builder
-  - bld_instruction_hook
-  - bld_knowledge_card_hook
-  - bld_knowledge_card_hook_config
 ---
 # Collaboration: hook-builder
 ## My Role in Crews

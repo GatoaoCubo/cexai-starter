@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - bld_memory_reverse_prompt
   - reverse-prompt-builder
-  - p03_ins_reverse_prompt
-  - bld_collaboration_reverse_prompt
-  - p01_kc_reverse_prompt
 ---
 # Domain Knowledge: reverse_prompt
 ## Executive Summary
@@ -75,6 +72,3 @@ A `reverse_prompt` is the FILLED, FROZEN instance produced when a repo synthesiz
 |----------|-------------|-------|
 | [[bld_memory_reverse_prompt]] | downstream | 0.57 |
 | [[reverse-prompt-builder]] | downstream | 0.55 |
-| [[bld_collaboration_reverse_prompt]] | downstream | 0.47 |
-| [[p03_ins_reverse_prompt]] | downstream | 0.46 |
-| [[p01_kc_reverse_prompt]] | upstream | 0.45 |

@@ -26,10 +26,7 @@ title: "Memory Db Connector"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_connector
   - db-connector-builder
-  - p11_qg_connector
-  - bld_instruction_connector
   - webhook-builder
 ---
 ## Summary
@@ -94,8 +91,5 @@ python _tools/cex_score.py --apply p10-lr-connector-builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_connector]] | upstream | 0.53 |
 | [[db-connector-builder]] | upstream | 0.45 |
-| [[p11_qg_connector]] | downstream | 0.45 |
-| [[bld_instruction_connector]] | upstream | 0.43 |
 | [[webhook-builder]] | upstream | 0.41 |

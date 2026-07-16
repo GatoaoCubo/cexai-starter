@@ -16,10 +16,8 @@ density_score: 0.88
 created: "2026-07-03"
 updated: "2026-07-03"
 related:
-  - p11_fb_prompt_template
   - bld_eval_prompt_package
   - bld_memory_prompt_package
-  - p03_ins_prompt_package
   - prompt-package-builder
 ---
 # Feedback: Prompt Package
@@ -92,8 +90,6 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_prompt_template]] | sibling | 0.81 |
 | bld_eval_prompt_package | sibling | 0.79 |
 | [[bld_memory_prompt_package]] | sibling | 0.79 |
-| [[p03_ins_prompt_package]] | sibling | 0.77 |
 | [[prompt-package-builder]] | sibling | 0.75 |

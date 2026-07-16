@@ -21,7 +21,6 @@ density_score: 0.90
 related:
   - bld_architecture_reward_signal
   - reward-signal-builder
-  - bld_instruction_reward_signal
   - bld_schema_reward_signal
   - bld_config_reward_signal
 ---

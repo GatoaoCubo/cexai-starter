@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for kubernetes_ai_requirement, kubernetes_ai_requirement construction, kubernetes_ai_requirement, builder, type_builder, identity
 specializes, dynamic resource allocation, certified kubernetes, specifies infini]
 density_score: 0.85
-related:
-  - bld_knowledge_card_kubernetes_ai_requirement
-  - bld_instruction_kubernetes_ai_requirement
-  - p10_lr_kubernetes_ai_requirement_builder
-  - p09_qg_kubernetes_ai_requirement
-  - bld_collaboration_kubernetes_ai_requirement
 ---
 ## Identity
 
@@ -69,12 +63,3 @@ ALWAYS cite CNCF KAR v1.35 conformance keys and validate against the Kubernetes 
 ALWAYS encode quantitative requirements (Gbps, GPU count, MIG profile, snapshot frequency) -- never qualitative.
 NEVER emit a plain Deployment, Helm chart, or env_config -- these are NOT KAR artifacts.
 NEVER conflate runtime isolation (sandbox_config) with platform requirement (this artifact's scope).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_kubernetes_ai_requirement]] | upstream | 0.71 |
-| [[bld_instruction_kubernetes_ai_requirement]] | upstream | 0.66 |
-| [[p10_lr_kubernetes_ai_requirement_builder]] | downstream | 0.65 |
-| [[p09_qg_kubernetes_ai_requirement]] | downstream | 0.61 |
-| [[bld_collaboration_kubernetes_ai_requirement]] | downstream | 0.59 |

@@ -28,9 +28,6 @@ density_score: 0.85
 related:
   - skill-builder
   - bld_architecture_skill
-  - bld_collaboration_skill
-  - p03_ins_skill_builder
-  - bld_knowledge_card_skill
 ---
 ## Quality Gate
 

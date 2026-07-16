@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [browser tool construction, collaboration browser tool, browser_tool, builder, examples, "### crew: research pipeline", "### crew: e2e test automation", "### crew: autonomous web agent", my role, crew compositions]
 density_score: 0.90
 related:
-  - bld_collaboration_vision_tool
-  - bld_collaboration_search_tool
   - browser-tool-builder
-  - bld_collaboration_agent_computer_interface
-  - bld_collaboration_computer_use
 ---
 # Collaboration: browser-tool-builder
 ## My Role in Crews

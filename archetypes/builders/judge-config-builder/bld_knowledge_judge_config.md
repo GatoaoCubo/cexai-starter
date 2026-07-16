@@ -20,10 +20,6 @@ an, key concepts]
 density_score: 0.92
 related:
   - bld_tools_judge_config
-  - bld_knowledge_card_llm_judge
-  - p07_llm_judge
-  - p07_qg_judge_config
-  - p01_kc_llm_judge
 ---
 ## Domain Overview
 
@@ -82,7 +78,3 @@ A well-specified judge_config makes the judgment reproducible and calibrated: it
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_judge_config]] | downstream | 0.60 |
-| [[bld_knowledge_card_llm_judge]] | sibling | 0.51 |
-| [[p07_llm_judge]] | downstream | 0.49 |
-| [[p07_qg_judge_config]] | downstream | 0.48 |
-| [[p01_kc_llm_judge]] | sibling | 0.48 |

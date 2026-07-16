@@ -21,9 +21,6 @@ recent, related artifacts, model version]
 density_score: 0.85
 related:
   - model-registry-builder
-  - kc_model_registry
-  - bld_knowledge_card_model_registry
-  - bld_collaboration_model_registry
   - bld_tools_model_registry
 ---
 ## Observation
@@ -46,7 +43,4 @@ Recent audits of model registry manifests revealed orphaned versions lacking par
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[model-registry-builder]] | related | 0.42 |
-| [[kc_model_registry]] | upstream | 0.37 |
-| [[bld_knowledge_card_model_registry]] | upstream | 0.37 |
-| [[bld_collaboration_model_registry]] | downstream | 0.33 |
 | [[bld_tools_model_registry]] | upstream | 0.33 |

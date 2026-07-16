@@ -15,12 +15,6 @@ tldr: "Supabase Data Layer prompt: output template, formatting rules, and struct
 keywords: [output template, supabase data layer config, supabase data layer prompt, formatting rules, and structure, builder, supabase, data-layer, output-template, config]
 density_score: 0.87
 llm_function: PRODUCE
-related:
-  - bld_instruction_supabase_data_layer
-  - bld_quality_gate_supabase_data_layer
-  - p04_ex_supabase_data_layer_saas
-  - p01_kc_supabase_multi_tenant
-  - p04_tpl_supabase_data_layer
 ---
 # Output Template
 
@@ -134,12 +128,3 @@ CREATE INDEX idx_memberships_org ON memberships(org_id);
 | Template | Defines structure for output template outputs |
 | Validation | Checked against `validation_schema` |
 | Post-hook | Scored by `cex_score.py` after creation |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_supabase_data_layer]] | related | 0.48 |
-| [[bld_quality_gate_supabase_data_layer]] | upstream | 0.44 |
-| [[p04_ex_supabase_data_layer_saas]] | downstream | 0.43 |
-| [[p01_kc_supabase_multi_tenant]] | upstream | 0.43 |
-| [[p04_tpl_supabase_data_layer]] | downstream | 0.40 |

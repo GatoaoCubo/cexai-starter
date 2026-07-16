@@ -29,12 +29,6 @@ keywords:
   - "openapi-spec"
   - "oas3"
 density_score: 0.90
-related:
-  - bld_instruction_openapi_spec
-  - p11_qg_quality_gate
-  - p11_qg_cli_tool
-  - p11_qg_kind_builder
-  - p11_qg_enum_def
 ---
 ## Quality Gate
 # Gate: openapi_spec

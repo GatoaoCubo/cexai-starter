@@ -40,10 +40,7 @@ keywords:
 density_score: 0.90
 related:
   - bld_memory_naming_rule
-  - bld_collaboration_naming_rule
-  - p03_ins_naming_rule
   - bld_tools_naming_rule
-  - bld_knowledge_card_naming_rule
 ---
 # Config — Naming Rule Builder
 ## Artifact Naming
@@ -112,7 +109,4 @@ Fix/clarification: increment patch
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_naming_rule]] | downstream | 0.36 |
-| [[bld_collaboration_naming_rule]] | upstream | 0.36 |
-| [[p03_ins_naming_rule]] | upstream | 0.34 |
 | [[bld_tools_naming_rule]] | upstream | 0.33 |
-| [[bld_knowledge_card_naming_rule]] | upstream | 0.32 |

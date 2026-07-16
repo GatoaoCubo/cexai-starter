@@ -5,9 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - lens-builder
-  - p03_sp_builder_nucleus
-  - n00_lens_manifest
-  - p01_kc_pillar_brief_p02_model_en
   - bld_architecture_lens
 ---
 

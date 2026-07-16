@@ -20,10 +20,7 @@ treat, related artifacts]
 density_score: 0.87
 related:
  - pipeline-template-builder
- - bld_instruction_pipeline_template
  - bld_schema_pipeline_template
- - p11_qg_pipeline_template
- - n00_pipeline_template_manifest
 ---
 ## Observation
 The 7-scenario multi-agent catalog is comprehensive for standard software engineering tasks but teams frequently attempt to extend it with ad-hoc scenarios (database_migration, api_versioning, etc.). These extensions break scenario enum validation and downstream routing. The correct approach is to map novel tasks to the nearest canonical scenario (database_migration -> infra; api_versioning -> refactoring) rather than inventing new scenario names.
@@ -49,7 +46,4 @@ Treat pipeline_template as a closed vocabulary system: 7 scenarios, 15 roles, 4 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pipeline-template-builder]] | downstream | 0.45 |
-| [[bld_instruction_pipeline_template]] | upstream | 0.37 |
 | [[bld_schema_pipeline_template]] | upstream | 0.34 |
-| [[p11_qg_pipeline_template]] | downstream | 0.34 |
-| [[n00_pipeline_template_manifest]] | downstream | 0.34 |

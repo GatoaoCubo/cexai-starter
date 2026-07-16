@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [system prompt construction, collaboration system prompt, system_prompt, builder, examples, "### crew: full agent package", my role, crew compositions, agent bootstrap, full agent package]
 density_score: 0.90
 related:
-  - bld_collaboration_agent
   - system-prompt-builder
-  - bld_collaboration_knowledge_card
-  - bld_collaboration_action_prompt
   - agent-builder
 ---
 # Collaboration: system-prompt-builder

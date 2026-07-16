@@ -25,12 +25,6 @@ quality: null
 title: Memory ISO - knowledge_card
 8f: "F7_govern"
 density_score: 0.95
-related:
-  - p01_kc_creation_best_practices
-  - p01_kc_knowledge_best_practices
-  - p01_kc_artifact_quality_evaluation_methods
-  - p11_fb_axiom
-  - bld_instruction_knowledge_card
 ---
 ## Summary
 Knowledge cards distill domain knowledge into high-density atomic facts. The primary quality gate is density >= 0.80 — the ratio of informative content to total words. The most reliable path to high density is structural: replace prose with bullets, replace descriptions with tables, and eliminate all filler language.
@@ -79,5 +73,4 @@ Primary function: **INJECT**
 | p01_kc_creation_best_practices | upstream | 0.36 |
 | p01_kc_knowledge_best_practices | upstream | 0.32 |
 | p01_kc_artifact_quality_evaluation_methods | upstream | 0.32 |
-| [[p11_fb_axiom]] | downstream | 0.30 |
 | [[bld_prompt_knowledge_card]] | upstream | 0.28 |

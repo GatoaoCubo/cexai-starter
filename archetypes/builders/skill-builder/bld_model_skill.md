@@ -25,11 +25,7 @@ updated: '2026-03-26'
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_skill
   - bld_architecture_skill
-  - p03_ins_skill_builder
-  - n00_skill_manifest
-  - bld_knowledge_card_skill
 ---
 ## Identity
 
@@ -137,8 +133,4 @@ quality_target: 9.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_skill]] | downstream | 0.62 |
 | [[bld_architecture_skill]] | downstream | 0.60 |
-| [[p03_ins_skill_builder]] | upstream | 0.55 |
-| [[n00_skill_manifest]] | related | 0.53 |
-| [[bld_knowledge_card_skill]] | related | 0.52 |

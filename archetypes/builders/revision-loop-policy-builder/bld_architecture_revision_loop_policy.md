@@ -18,8 +18,6 @@ keywords: [revision_loop_policy construction, revision loop policy, architecture
 |, component relationships]
 density_score: 0.89
 related:
- - kc_revision_loop_policy
- - n00_revision_loop_policy_manifest
  - bld_architecture_compliance_checklist
  - bld_architecture_subscription_tier
  - bld_architecture_self_improvement_loop
@@ -102,8 +100,6 @@ Lives in nucleus P11 directories or shared `.cex/policies/` for cross-nucleus us
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_revision_loop_policy]] | upstream | 0.43 |
-| [[n00_revision_loop_policy_manifest]] | related | 0.41 |
 | [[bld_architecture_compliance_checklist]] | upstream | 0.34 |
 | [[bld_architecture_subscription_tier]] | upstream | 0.32 |
 | [[bld_architecture_self_improvement_loop]] | upstream | 0.32 |

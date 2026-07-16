@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - search-tool-builder
-  - bld_collaboration_search_tool
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p04_tools_en
 ---
 
 # search-tool-builder Sub-Agent

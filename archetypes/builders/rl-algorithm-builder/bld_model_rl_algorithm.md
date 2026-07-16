@@ -18,12 +18,6 @@ keywords: [builder identity, routing for rl_algorithm, rl_algorithm construction
 specializes, flow agents, routing  
 keywords]
 density_score: 0.85
-related:
-  - p02_qg_rl_algorithm
-  - bld_knowledge_card_rl_algorithm
-  - kc_rl_algorithm
-  - bld_collaboration_rl_algorithm
-  - bld_instruction_rl_algorithm
 ---
 ## Identity
 
@@ -61,12 +55,3 @@ The rl_algorithm-builder agent designs reinforcement learning (RL) training algo
 3. Specify scalability to high-dimensional state spaces and parallelizable computation.  
 4. Align with theoretical RL guarantees (e.g., convergence, sample efficiency).  
 5. Document reproducibility requirements (e.g., random seed handling, environment interfaces).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p02_qg_rl_algorithm]] | downstream | 0.50 |
-| [[bld_knowledge_card_rl_algorithm]] | upstream | 0.47 |
-| [[kc_rl_algorithm]] | upstream | 0.44 |
-| [[bld_collaboration_rl_algorithm]] | downstream | 0.41 |
-| [[bld_instruction_rl_algorithm]] | downstream | 0.40 |

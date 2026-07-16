@@ -32,11 +32,7 @@ cross_provider:
   anthropic: "tool definition with developer-side execution"
   haystack: "Custom @component making HTTP calls"
 related:
-  - bld_collaboration_client
   - api-client-builder
-  - n06_api_access_pricing
-  - bld_knowledge_card_client
-  - n00_api_client_manifest
 ---
 
 # API Client
@@ -107,8 +103,6 @@ An API client is a typed wrapper around an external REST, GraphQL, or gRPC endpo
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_client]] | downstream | 0.44 |
 | [[api-client-builder]] | related | 0.41 |
 | n06_api_access_pricing | downstream | 0.38 |
-| [[bld_knowledge_card_client]] | sibling | 0.34 |
 | n00_api_client_manifest | sibling | 0.33 |

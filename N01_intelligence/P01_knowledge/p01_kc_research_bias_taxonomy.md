@@ -16,10 +16,6 @@ keywords: [selection bias, availability bias, publication bias, geographic bias,
 density_score: 0.92
 updated: "2026-04-17"
 related:
-  - bias_audit_n01
-  - kc_bias_audit
-  - bld_collaboration_bias_audit
-  - p03_ap_n01
   - bld_tools_bias_audit
 ---
 

@@ -30,11 +30,7 @@ keywords:
   - "component inventory"
 density_score: 0.90
 related:
-  - bld_collaboration_supervisor
   - supervisor-builder
-  - p01_kc_supervisor
-  - bld_instruction_supervisor
-  - p11_qg_director
 ---
 # Architecture: supervisor in the CEX
 ## Component Inventory
@@ -85,8 +81,4 @@ workflow          --sequences--> supervisor   --produces-->   consolidated_outpu
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_supervisor]] | downstream | 0.64 |
 | [[supervisor-builder]] | upstream | 0.62 |
-| [[p01_kc_supervisor]] | related | 0.58 |
-| [[bld_instruction_supervisor]] | upstream | 0.55 |
-| [[p11_qg_director]] | downstream | 0.53 |

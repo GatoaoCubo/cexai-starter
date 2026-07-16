@@ -17,11 +17,8 @@ tldr: "Learned patterns and anti-patterns for curation_nudge builder"
 keywords: [curation_nudge construction, curation nudge builder, memory, curation_nudge, builder, anti_patterns, learned patterns, destination affinity, session profile tuning]
 density_score: 0.88
 related:
- - bld_kc_curation_nudge
- - kc_curation_nudge
  - cn_{{trigger}}
  - curation-nudge-builder
- - n00_curation_nudge_manifest
 ---
 ## Learned Patterns
 
@@ -80,8 +77,5 @@ Mixed: Use PT-BR (CEX default); agents understand both
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_kc_curation_nudge]] | upstream | 0.58 |
-| [[kc_curation_nudge]] | upstream | 0.54 |
 | [\[cn_`{{trigger}}`\]] | downstream | 0.53 |
 | [[curation-nudge-builder]] | downstream | 0.51 |
-| [[n00_curation_nudge_manifest]] | downstream | 0.48 |

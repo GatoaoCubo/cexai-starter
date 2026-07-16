@@ -19,10 +19,7 @@ density_score: 1.0
 updated: "2026-04-22"
 related:
   - fhir-agent-capability-builder
-  - bld_knowledge_card_fhir_agent_capability
-  - kc_fhir_agent_capability
   - bld_tools_fhir_agent_capability
-  - bld_instruction_fhir_agent_capability
 ---
 
 ## Market Overview

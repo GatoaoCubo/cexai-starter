@@ -30,10 +30,7 @@ keywords:
   - "file layout"
 density_score: 0.90
 related:
-  - n00_hibernation_policy_manifest
-  - bld_collaboration_hibernation_policy
   - hibernation-policy-builder
-  - kc_hibernation_policy
   - hp_{{backend}}
 ---
 ## Structural Decisions
@@ -107,8 +104,5 @@ hibernation_policy
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_hibernation_policy_manifest]] | downstream | 0.38 |
-| [[bld_collaboration_hibernation_policy]] | downstream | 0.37 |
 | [[hibernation-policy-builder]] | downstream | 0.34 |
-| [[kc_hibernation_policy]] | upstream | 0.33 |
 | [\[hp_`{{backend}}`\]] | downstream | 0.32 |

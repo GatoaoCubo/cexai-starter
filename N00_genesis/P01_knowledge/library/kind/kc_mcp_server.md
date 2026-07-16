@@ -33,10 +33,7 @@ cross_provider:
   haystack: "n/a (tool wrapping required)"
 related:
   - bld_memory_mcp_server
-  - bld_collaboration_mcp_server
   - mcp-server-builder
-  - n00_mcp_server_manifest
-  - p03_ins_mcp_server
 ---
 
 # MCP Server
@@ -112,4 +109,3 @@ An mcp_server is a process that speaks the Model Context Protocol (MCP), exposin
 | [[bld_orchestration_mcp_server]] | downstream | 0.51 |
 | [[mcp-server-builder]] | downstream | 0.51 |
 | n00_mcp_server_manifest | sibling | 0.46 |
-| [[p03_ins_mcp_server]] | downstream | 0.43 |

@@ -16,11 +16,8 @@ density_score: 0.88
 created: "2026-05-30"
 updated: "2026-05-30"
 related:
-  - p11_fb_skill
-  - p11_qg_cybersec_skill
   - bld_eval_cybersec_skill
   - cybersec-skill-builder
-  - bld_collaboration_cybersec_skill
 ---
 
 # Feedback: Cybersec Skill
@@ -141,8 +138,5 @@ density: 0.85+
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_skill]] | parent | 0.62 |
-| [[p11_qg_cybersec_skill]] | sibling | 0.80 |
 | [[bld_eval_cybersec_skill]] | upstream | 0.75 |
 | [[cybersec-skill-builder]] | upstream | 0.55 |
-| [[bld_collaboration_cybersec_skill]] | sibling | 0.50 |

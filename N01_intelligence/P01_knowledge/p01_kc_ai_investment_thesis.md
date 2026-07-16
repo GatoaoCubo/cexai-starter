@@ -26,8 +26,6 @@ related:
   - p01_kc_collective_cognition_exchange
   - p01_kc_cex_positioning_analysis
   - p01_kc_growth_casestudy_organic
-  - p12_dr_intelligence
-  - n01_intelligence
 ---
 
 # AI Investment Thesis for Entrepreneurs
@@ -135,4 +133,3 @@ repository is the balance sheet. Tenant or owner.
 | [[p01_kc_cex_positioning_analysis]] | related | 0.42 |
 | [[p01_kc_growth_casestudy_organic]] | related | 0.30 |
 | p12_dr_intelligence | related | 0.28 |
-| [[n01_intelligence]] | related | 0.26 |

@@ -29,9 +29,7 @@ keywords: [smoke eval builder instructions, binary assertions, s timeout, and fa
 density_score: 0.85
 llm_function: REASON
 related:
-  - bld_knowledge_card_smoke_eval
   - smoke-eval-builder
-  - bld_collaboration_smoke_eval
   - bld_architecture_smoke_eval
   - bld_schema_smoke_eval
 ---

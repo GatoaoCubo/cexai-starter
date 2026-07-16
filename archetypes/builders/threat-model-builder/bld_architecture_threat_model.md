@@ -19,11 +19,8 @@ keywords: [threat_model construction, architecture threat model, threat_model, b
 this, threat database, security team, model validator, dev team]
 density_score: 0.85
 related:
-  - bld_collaboration_threat_model
-  - p10_lr_threat_model_builder
   - threat-model-builder
   - bld_tools_threat_model
-  - n00_threat_model_manifest
 ---
 ## Component Inventory  
 
@@ -54,8 +51,5 @@ The threat_model-builder sits within the CEX P11 Feedback pillar as the pre-depl
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_threat_model]] | downstream | 0.47 |
-| [[p10_lr_threat_model_builder]] | downstream | 0.36 |
 | [[threat-model-builder]] | downstream | 0.36 |
 | [[bld_tools_threat_model]] | upstream | 0.33 |
-| [[n00_threat_model_manifest]] | downstream | 0.33 |

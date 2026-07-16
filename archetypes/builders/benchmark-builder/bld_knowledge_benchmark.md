@@ -20,10 +20,6 @@ benchmarks, spec table, the art]
 density_score: 0.90
 related:
   - benchmark-builder
-  - bld_instruction_benchmark
-  - bld_output_template_benchmark
-  - p01_kc_benchmark
-  - p11_qg_benchmark
 ---
 # Domain Knowledge: benchmark
 ## Executive Summary
@@ -77,7 +73,3 @@ Benchmarks measure quantitative performance (latency, cost, throughput, quality 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[benchmark-builder]] | downstream | 0.52 |
-| [[bld_instruction_benchmark]] | downstream | 0.45 |
-| [[bld_output_template_benchmark]] | downstream | 0.40 |
-| [[p01_kc_benchmark]] | sibling | 0.37 |
-| [[p11_qg_benchmark]] | downstream | 0.37 |

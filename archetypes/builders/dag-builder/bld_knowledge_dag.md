@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [dependency graph specification, dag construction, knowledge card dag, builder, examples, domain knowledge, executive summary, directed acyclic graphs, spec table, apache airflow]
 density_score: 0.90
 related:
-  - p01_kc_dag
   - dag-builder
-  - p10_lr_dag_builder
-  - n00_dag_manifest
-  - bld_instruction_dag
 ---
 # Domain Knowledge: dag
 ## Executive Summary
@@ -78,8 +74,4 @@ DAGs (Directed Acyclic Graphs) are static dependency specifications defining tas
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_dag]] | sibling | 0.51 |
 | [[dag-builder]] | downstream | 0.46 |
-| [[p10_lr_dag_builder]] | downstream | 0.46 |
-| [[n00_dag_manifest]] | sibling | 0.45 |
-| [[bld_instruction_dag]] | downstream | 0.45 |

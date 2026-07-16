@@ -21,10 +21,6 @@ reviewed, related artifacts, graph traversal]
 density_score: 0.85
 related:
   - graph-rag-config-builder
-  - kc_graph_rag_config
-  - bld_collaboration_graph_rag_config
-  - bld_collaboration_knowledge_graph
-  - bld_instruction_graph_rag_config
 ---
 ## Observation
 Common issues include inconsistent schema definitions across modules, leading to integration failures, and unclear parameterization causing misaligned retrieval/generation workflows. Overlooking edge cases in graph traversal logic often results in incomplete or redundant outputs.
@@ -46,7 +42,3 @@ Reviewed configs using standardized schema validation reduced integration errors
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[graph-rag-config-builder]] | upstream | 0.46 |
-| [[kc_graph_rag_config]] | upstream | 0.40 |
-| [[bld_collaboration_graph_rag_config]] | downstream | 0.34 |
-| [[bld_collaboration_knowledge_graph]] | downstream | 0.33 |
-| [[bld_instruction_graph_rag_config]] | upstream | 0.31 |

@@ -17,11 +17,8 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - p11_qg_fallback_chain
   - bld_schema_fallback_chain
   - bld_architecture_fallback_chain
-  - bld_instruction_fallback_chain
-  - bld_knowledge_card_fallback_chain
 ---
 # Output Template: fallback_chain
 ```yaml
@@ -80,7 +77,6 @@ Ceiling: `{{cost_ceiling_usd}}` USD.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_fallback_chain]] | downstream | 0.45 |
 | [[bld_schema_fallback_chain]] | downstream | 0.37 |
 | [[bld_architecture_fallback_chain]] | downstream | 0.33 |
 | [[bld_prompt_fallback_chain]] | upstream | 0.30 |

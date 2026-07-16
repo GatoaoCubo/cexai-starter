@@ -19,8 +19,6 @@ density_score: 0.92
 related:
   - bld_architecture_transport_config
   - transport-config-builder
-  - bld_collaboration_streaming_config
-  - bld_knowledge_card_streaming_config
   - streaming-config-builder
 ---
 ## Domain Overview
@@ -110,6 +108,4 @@ connection lifecycle), transport_config owns the raw packet-level transmission p
 |----------|-------------|-------|
 | [[bld_architecture_transport_config]] | downstream | 0.41 |
 | [[transport-config-builder]] | downstream | 0.38 |
-| [[bld_collaboration_streaming_config]] | downstream | 0.36 |
-| [[bld_knowledge_card_streaming_config]] | sibling | 0.36 |
 | [[streaming-config-builder]] | downstream | 0.36 |

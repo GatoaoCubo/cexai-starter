@@ -18,11 +18,7 @@ keywords: [define builder identity, webinar_script construction, webinar script 
 webinar, microsoft teams]
 density_score: 0.85
 related:
-  - bld_collaboration_webinar_script
-  - bld_instruction_webinar_script
   - bld_tools_webinar_script
-  - bld_knowledge_card_webinar_script
-  - p10_lr_webinar_script_builder
 ---
 ## Identity
 ## Identity
@@ -83,8 +79,4 @@ You have deep expertise in:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_webinar_script]] | downstream | 0.57 |
-| [[bld_instruction_webinar_script]] | related | 0.50 |
 | [[bld_tools_webinar_script]] | downstream | 0.48 |
-| [[bld_knowledge_card_webinar_script]] | upstream | 0.48 |
-| [[p10_lr_webinar_script_builder]] | downstream | 0.47 |

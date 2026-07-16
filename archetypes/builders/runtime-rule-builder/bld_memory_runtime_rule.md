@@ -23,11 +23,7 @@ exponential, reproducibility
 reliable, circuit breaker]
 density_score: 0.90
 related:
-  - bld_collaboration_runtime_rule
   - runtime-rule-builder
-  - p03_ins_runtime_rule
-  - bld_knowledge_card_runtime_rule
-  - bld_collaboration_circuit_breaker
 ---
 # Memory: runtime-rule-builder
 ## Summary
@@ -85,8 +81,4 @@ python _tools/cex_score.py --apply bld-memory-runtime-rule.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_runtime_rule]] | upstream | 0.48 |
 | [[runtime-rule-builder]] | upstream | 0.47 |
-| [[p03_ins_runtime_rule]] | upstream | 0.36 |
-| [[bld_knowledge_card_runtime_rule]] | upstream | 0.34 |
-| [[bld_collaboration_circuit_breaker]] | downstream | 0.33 |

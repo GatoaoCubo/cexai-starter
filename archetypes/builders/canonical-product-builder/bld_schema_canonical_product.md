@@ -19,7 +19,6 @@ related:
   - bld_schema_validation_schema
   - kc_canonical_product
   - bld_output_canonical_product
-  - bld_qg_canonical_product
 ---
 # Schema: canonical_product
 ## Frontmatter Fields (Required)
@@ -93,4 +92,3 @@ python _tools/cex_compile.py {FILE}
 | [[bld_schema_validation_schema]] | related | 0.50 |
 | [[kc_canonical_product]] | upstream | 0.48 |
 | [[bld_output_canonical_product]] | sibling | 0.44 |
-| [[bld_qg_canonical_product]] | downstream | 0.40 |

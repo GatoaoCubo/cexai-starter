@@ -32,10 +32,6 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - p01_kc_document_loader
-  - p11_qg_document_loader
-  - bld_collaboration_document_loader
-  - bld_knowledge_card_document_loader
   - bld_architecture_document_loader
 ---
 ## Identity

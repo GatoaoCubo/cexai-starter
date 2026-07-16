@@ -22,9 +22,7 @@ density_score: 0.85
 related:
   - eval-framework-builder
   - benchmark-suite-builder
-  - p10_mem_eval_metric_builder
   - judge-config-builder
-  - bld_knowledge_card_eval_metric
 ---
 ## Identity
 
@@ -74,6 +72,5 @@ NEVER allow **ambiguous phrasing** or **task-agnostic metrics** (e.g., "general 
 |----------|-------------|-------|
 | eval-framework-builder | sibling | 0.44 |
 | benchmark-suite-builder | sibling | 0.43 |
-| [[p10_mem_eval_metric_builder]] | downstream | 0.38 |
 | judge-config-builder | sibling | 0.29 |
 | [[bld_knowledge_eval_metric]] | upstream | 0.28 |

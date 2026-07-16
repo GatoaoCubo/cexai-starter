@@ -37,7 +37,6 @@ related:
   - bld_memory_personality
   - bld_tools_personality
   - kc_personality
-  - n00_personality_manifest
 ---
 # Collaboration: personality-builder
 

@@ -21,11 +21,7 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - document_loader-builder
   - bld_architecture_document_loader
-  - p08_dir_rag_pipeline
-  - bld_collaboration_document_loader
-  - p01_kc_retriever
 ---
 
 # Document Loader
@@ -99,7 +95,6 @@ A document_loader transforms raw files (PDF, HTML, CSV, DOCX, Markdown, JSON) in
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[document_loader-builder]] | downstream | 0.43 |
 | [[bld_architecture_document_loader]] | downstream | 0.41 |
 | p08_dir_rag_pipeline | downstream | 0.39 |
 | [[bld_orchestration_document_loader]] | downstream | 0.37 |

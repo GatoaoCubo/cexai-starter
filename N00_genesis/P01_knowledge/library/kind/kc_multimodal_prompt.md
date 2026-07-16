@@ -20,12 +20,6 @@ density_score: 0.95
 linked_artifacts:
   primary: null
   related: [action_prompt, prompt_template, multi_modal_config, vision_tool, audio_tool]
-related:
-  - p01_kc_multi_modal_config
-  - p01_kc_vision_tool
-  - n00_multimodal_prompt_manifest
-  - bld_knowledge_card_multi_modal_config
-  - p03_qg_multimodal_prompt
 ---
 
 # Multimodal Prompt
@@ -106,4 +100,3 @@ A multimodal_prompt is a prompt that interleaves text with non-text modalities (
 | [[kc_vision_tool]] | sibling | 0.40 |
 | n00_multimodal_prompt_manifest | sibling | 0.39 |
 | bld_knowledge_card_multi_modal_config | sibling | 0.37 |
-| [[p03_qg_multimodal_prompt]] | downstream | 0.30 |

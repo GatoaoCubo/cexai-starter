@@ -20,11 +20,7 @@ successful, evidence
 reviewed, related artifacts, reward criteria]
 density_score: 0.85
 related:
-  - kc_reward_model
-  - bld_knowledge_card_reward_model
   - reward-model-builder
-  - n00_reward_model_manifest
-  - bld_collaboration_reward_signal
 ---
 ## Observation
 Common issues include misalignment between reward signals and desired outcomes, overfitting to narrow examples, and ambiguous criteria leading to inconsistent model behavior.
@@ -45,8 +41,4 @@ Reviewed artifacts with well-defined reward criteria showed 20-30% higher alignm
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_reward_model]] | upstream | 0.51 |
-| [[bld_knowledge_card_reward_model]] | upstream | 0.51 |
 | [[reward-model-builder]] | upstream | 0.50 |
-| [[n00_reward_model_manifest]] | upstream | 0.45 |
-| [[bld_collaboration_reward_signal]] | downstream | 0.44 |

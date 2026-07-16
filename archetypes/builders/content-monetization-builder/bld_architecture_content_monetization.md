@@ -30,10 +30,7 @@ keywords:
   - "google ads"
 density_score: 0.90
 related:
-  - bld_collaboration_content_monetization
-  - bld_instruction_content_monetization
   - content-monetization-builder
-  - bld_knowledge_card_content_monetization
   - bld_config_content_monetization
 ---
 # Architecture: content_monetization in the CEX

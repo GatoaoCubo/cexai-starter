@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [agentdns registry records, agent_name_service_record construction, phase build process, research agent identity, compose registry-record, validate ans, agentdns compliance, agent_name_service_record, builder, instruction]
 density_score: 0.85
 related:
-  - bld_output_template_agent_name_service_record
   - bld_schema_agent_name_service_record
-  - bld_quality_gate_agent_name_service_record
-  - bld_knowledge_card_agent_name_service_record
-  - bld_manifest_agent_name_service_record
 ---
 # Agent Name Service Record Builder -- Instructions
 ## Overview
@@ -173,8 +169,4 @@ lifecycle:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_agent_name_service_record]] | downstream | 0.55 |
 | [[bld_schema_agent_name_service_record]] | downstream | 0.55 |
-| [[bld_quality_gate_agent_name_service_record]] | downstream | 0.50 |
-| [[bld_knowledge_card_agent_name_service_record]] | upstream | 0.49 |
-| [[bld_manifest_agent_name_service_record]] | downstream | 0.47 |

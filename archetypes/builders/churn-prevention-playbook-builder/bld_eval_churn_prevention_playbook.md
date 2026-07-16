@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [churn_prevention_playbook construction, churn_prevention_playbook, builder, quality_gate, '^p03_cpp_[a-z][a-z0-9_]+\.md$', quality gate, fail condition]
 density_score: 0.85
 related:
-  - bld_instruction_churn_prevention_playbook
   - churn-prevention-playbook-builder
-  - bld_output_template_churn_prevention_playbook
-  - bld_knowledge_card_churn_prevention_playbook
-  - p11_qg_usage_report
 ---
 ## Quality Gate
 

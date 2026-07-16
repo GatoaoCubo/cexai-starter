@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [changelog construction, output template changelog, changelog, builder, output_template, migration guide, related artifacts, release_date yyyy-mm-dd, upstream, semver]
 density_score: 0.85
 related:
-  - bld_instruction_changelog
-  - kc_changelog
-  - bld_knowledge_card_changelog
   - bld_schema_changelog
-  - p01_qg_changelog
 ---
 ```yaml
 ---
@@ -75,8 +71,4 @@ tldr: "{{one_sentence_summary_of_changes}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_changelog]] | upstream | 0.48 |
-| [[kc_changelog]] | upstream | 0.46 |
-| [[bld_knowledge_card_changelog]] | upstream | 0.44 |
 | [[bld_schema_changelog]] | downstream | 0.41 |
-| [[p01_qg_changelog]] | downstream | 0.41 |

@@ -18,11 +18,7 @@ keywords: [role_assignment construction, collaboration role assignment, role_ass
 acts, receives from, produces for]
 density_score: 0.87
 related:
-  - bld_collaboration_crew_template
   - role-assignment-builder
-  - bld_collaboration_toolkit
-  - bld_collaboration_agent
-  - n00_role_assignment_manifest
 ---
 ## Crew Role
 Acts as the atomic role-binding unit consumed by crew_template. Upstream from crew-template-builder (composition) and supervisor-builder (runtime instantiation). Sibling to agent-builder (provides identity source) and toolkit-builder (provides native tool set).

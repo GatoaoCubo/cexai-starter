@@ -18,10 +18,6 @@ keywords: [audit_log construction, instruction audit log, audit_log, builder, in
 density_score: 0.85
 related:
   - audit-log-builder
-  - bld_knowledge_card_audit_log
-  - kc_audit_log
-  - p10_mem_audit_log_builder
-  - n00_audit_log_manifest
 ---
 ## Phase 1: RESEARCH  
 1. Identify SOC2 Type II audit requirements for log immutability and retention  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[audit-log-builder]] | downstream | 0.55 |
-| [[bld_knowledge_card_audit_log]] | upstream | 0.49 |
-| [[kc_audit_log]] | upstream | 0.47 |
-| [[p10_mem_audit_log_builder]] | downstream | 0.44 |
-| [[n00_audit_log_manifest]] | downstream | 0.37 |

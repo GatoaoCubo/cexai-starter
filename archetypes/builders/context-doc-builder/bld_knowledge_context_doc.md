@@ -20,9 +20,6 @@ context, spec table, related artifacts, context docs]
 density_score: 0.90
 related:
   - context-doc-builder
-  - bld_collaboration_context_doc
-  - p01_kc_context_doc
-  - bld_instruction_context_doc
   - p01_kc_model_context_protocol
 ---
 # Domain Knowledge: context_doc
@@ -76,7 +73,4 @@ Context docs are domain background documents injected into agent context before 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[context-doc-builder]] | related | 0.43 |
-| [[bld_collaboration_context_doc]] | downstream | 0.40 |
-| [[p01_kc_context_doc]] | sibling | 0.33 |
-| [[bld_instruction_context_doc]] | downstream | 0.33 |
 | [[p01_kc_model_context_protocol]] | sibling | 0.31 |

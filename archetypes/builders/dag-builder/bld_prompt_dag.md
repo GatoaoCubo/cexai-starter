@@ -30,12 +30,6 @@ keywords:
   - "write edges"
   - "write topological order"
 density_score: 0.90
-related:
-  - bld_instruction_memory_scope
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
-  - bld_instruction_component_map
-  - bld_instruction_context_doc
 ---
 # Instructions: How to Produce a dag
 ## Phase 1: DISCOVER
@@ -96,12 +90,3 @@ python _tools/cex_skill_loader.py --verify dag
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_memory_scope]] | sibling | 0.40 |
-| [[bld_instruction_retriever_config]] | sibling | 0.40 |
-| [[bld_instruction_output_validator]] | sibling | 0.40 |
-| [[bld_instruction_component_map]] | sibling | 0.39 |
-| [[bld_instruction_context_doc]] | sibling | 0.39 |

@@ -17,11 +17,8 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - bld_instruction_knowledge_card
-  - p10_out_knowledge_card
   - bld_schema_knowledge_card
   - bld_config_knowledge_card
-  - bld_knowledge_card_knowledge_card
 ---
 # Output Template: knowledge_card (domain_kc)
 ```yaml

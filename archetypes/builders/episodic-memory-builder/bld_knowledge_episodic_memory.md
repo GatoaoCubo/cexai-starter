@@ -19,11 +19,7 @@ keywords: [episodic memory construction, knowledge card episodic memory, episodi
 episodic, cognitive science foundation, memory types, implementation patterns]
 density_score: 0.90
 related:
-  - p01_kc_episodic_memory
   - episodic-memory-builder
-  - bld_collaboration_episodic_memory
-  - bld_instruction_episodic_memory
-  - p10_lr_episodic_memory_builder
 ---
 # Domain Knowledge: episodic_memory
 
@@ -88,4 +84,3 @@ Episodic memory (Tulving, 1972) stores temporally indexed autobiographical event
 | [[episodic-memory-builder]] | downstream | 0.53 |
 | [[bld_orchestration_episodic_memory]] | downstream | 0.48 |
 | [[bld_prompt_episodic_memory]] | downstream | 0.44 |
-| [[p10_lr_episodic_memory_builder]] | downstream | 0.41 |

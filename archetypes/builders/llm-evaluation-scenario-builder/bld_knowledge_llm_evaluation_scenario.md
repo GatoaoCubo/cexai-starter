@@ -19,8 +19,6 @@ density_score: 0.85
 related:
   - llm-evaluation-scenario-builder
   - bld_tools_llm_evaluation_scenario
-  - n00_llm_evaluation_scenario_manifest
-  - bld_instruction_llm_evaluation_scenario
   - bld_schema_llm_evaluation_scenario
 ---
 ## Domain Overview
@@ -72,6 +70,4 @@ IBM Enterprise HELM (2024+) extends HELM with vertical domains: finance, legal, 
 |----------|-------------|-------|
 | [[llm-evaluation-scenario-builder]] | downstream | 0.74 |
 | [[bld_tools_llm_evaluation_scenario]] | downstream | 0.65 |
-| [[n00_llm_evaluation_scenario_manifest]] | sibling | 0.60 |
-| [[bld_instruction_llm_evaluation_scenario]] | downstream | 0.59 |
 | [[bld_schema_llm_evaluation_scenario]] | downstream | 0.47 |

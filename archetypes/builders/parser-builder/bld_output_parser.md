@@ -18,9 +18,7 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - bld_schema_parser
-  - p03_ins_parser
   - parser-builder
-  - p11_qg_parser
   - bld_architecture_parser
 ---
 # Output Template: parser

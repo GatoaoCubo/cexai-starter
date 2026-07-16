@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_schema_gpai_technical_doc
   - gpai-technical-doc-builder
-  - bld_knowledge_card_gpai_technical_doc
-  - bld_instruction_gpai_technical_doc
-  - p11_qg_gpai_technical_doc
 ---
 ```markdown
 ---
@@ -109,6 +106,3 @@ Required safeguards for integrators: {{required_safeguards}}
 |----------|-------------|-------|
 | [[bld_schema_gpai_technical_doc]] | downstream | 0.47 |
 | [[gpai-technical-doc-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_gpai_technical_doc]] | upstream | 0.46 |
-| [[bld_instruction_gpai_technical_doc]] | upstream | 0.46 |
-| [[p11_qg_gpai_technical_doc]] | downstream | 0.40 |

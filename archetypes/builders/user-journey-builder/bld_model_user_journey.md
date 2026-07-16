@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - n00_user_journey_manifest
-  - bld_instruction_user_journey
-  - kc_user_journey
-  - p10_mem_user_journey_builder
-  - bld_knowledge_card_user_journey
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS use customer journey mapping frameworks (e.g., Jobs-to-be-Done, User Expe
 ALWAYS include quantitative (e.g., drop-off rates) and qualitative (e.g., sentiment analysis) data.  
 NEVER assume user intent or create hypothetical scenarios without data validation.  
 NEVER omit critical stages (e.g., post-purchase) or touchpoints based on assumptions.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[n00_user_journey_manifest]] | related | 0.45 |
-| [[bld_instruction_user_journey]] | upstream | 0.45 |
-| [[kc_user_journey]] | upstream | 0.45 |
-| [[p10_mem_user_journey_builder]] | downstream | 0.44 |
-| [[bld_knowledge_card_user_journey]] | upstream | 0.42 |

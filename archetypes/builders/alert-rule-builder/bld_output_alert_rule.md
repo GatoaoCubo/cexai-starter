@@ -16,9 +16,6 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - alert-rule-builder
-  - bld_instruction_alert_rule
-  - p01_kc_alert_rule
-  - bld_qg_alert_rule
   - bld_schema_alert_rule
 ---
 # Output Template: alert_rule
@@ -93,7 +90,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[alert-rule-builder]] | downstream | 0.40 |
-| [[bld_instruction_alert_rule]] | related | 0.40 |
-| [[p01_kc_alert_rule]] | upstream | 0.39 |
-| [[bld_qg_alert_rule]] | downstream | 0.38 |
 | [[bld_schema_alert_rule]] | downstream | 0.36 |

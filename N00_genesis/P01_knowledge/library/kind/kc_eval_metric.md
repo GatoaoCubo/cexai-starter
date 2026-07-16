@@ -11,11 +11,8 @@ when_to_use: "When defining specific metrics like accuracy, F1, or AUC-ROC for m
 keywords: [accuracy, precision, recall, f1-score, auc-roc, mean absolute error (mae)]
 density_score: 0.96
 related:
-  - bld_knowledge_card_eval_metric
   - eval-metric-builder
-  - p10_mem_eval_metric_builder
   - eval-framework-builder
-  - bld_collaboration_eval_metric
 ---
 
 # Evaluation Metric Definition
@@ -66,6 +63,5 @@ Primary 8F verb: INJECT (this card grounds an eval at F3; the running gate lives
 |----------|-------------|-------|
 | [[bld_knowledge_eval_metric]] | sibling | 0.44 |
 | [[eval-metric-builder]] | downstream | 0.30 |
-| [[p10_mem_eval_metric_builder]] | downstream | 0.23 |
 | eval-framework-builder | downstream | 0.22 |
 | [[bld_orchestration_eval_metric]] | downstream | 0.22 |

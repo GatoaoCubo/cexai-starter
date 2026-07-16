@@ -16,10 +16,8 @@ created: "2026-07-03"
 updated: "2026-07-04"
 related:
   - canonical-product-builder
-  - bld_rules_data_contract
   - bld_memory_canonical_product
   - kc_canonical_product
-  - bld_qg_canonical_product
 ---
 # Collaboration: canonical_product-builder (Builder Rules Retained)
 
@@ -91,7 +89,5 @@ python _tools/cex_doctor.py --scope canonical-product-builder
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[canonical-product-builder]] | upstream | 0.40 |
-| [[bld_rules_data_contract]] | sibling | 0.35 |
 | [[bld_memory_canonical_product]] | upstream | 0.33 |
 | [[kc_canonical_product]] | upstream | 0.32 |
-| [[bld_qg_canonical_product]] | sibling | 0.30 |

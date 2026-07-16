@@ -5,9 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - bld_collaboration_streaming_config
-  - p03_sp_builder_nucleus
-  - n00_streaming_config_manifest
   - streaming-config-builder
 ---
 
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.31 |
-| [[bld_collaboration_streaming_config]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[n00_streaming_config_manifest]] | related | 0.28 |
 | [[streaming-config-builder]] | related | 0.28 |

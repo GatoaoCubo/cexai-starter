@@ -31,11 +31,7 @@ keywords:
   - "trigger condition"
 density_score: 0.90
 related:
-  - bld_instruction_memory_scope
   - memory-summary-builder
-  - bld_instruction_handoff_protocol
-  - bld_instruction_output_validator
-  - bld_instruction_retriever_config
 ---
 # Instructions: How to Produce a memory_summary
 ## Phase 1: RESEARCH

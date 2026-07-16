@@ -27,9 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - guardrail-builder
-  - bld_instruction_guardrail
-  - bld_knowledge_card_guardrail
-  - p11_qg_guardrail
   - bld_architecture_guardrail
 ---
 ## Summary
@@ -106,5 +103,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_guardrail_builder.md
 | [[guardrail-builder]] | downstream | 0.48 |
 | [[bld_prompt_guardrail]] | upstream | 0.47 |
 | [[bld_knowledge_guardrail]] | upstream | 0.46 |
-| [[p11_qg_guardrail]] | downstream | 0.43 |
 | [[bld_architecture_guardrail]] | upstream | 0.37 |

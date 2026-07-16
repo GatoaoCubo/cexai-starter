@@ -22,8 +22,6 @@ this, related artifacts]
 density_score: 0.85
 related:
   - edtech-vertical-builder
-  - p01_qg_edtech_vertical
-  - bld_instruction_edtech_vertical
   - bld_tools_edtech_vertical
   - edtech_vertical_lms_market
 ---
@@ -50,7 +48,5 @@ This learning record applies to edtech vertical artifact construction, covering 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[edtech-vertical-builder]] | upstream | 0.55 |
-| [[p01_qg_edtech_vertical]] | downstream | 0.47 |
-| [[bld_instruction_edtech_vertical]] | upstream | 0.46 |
 | [[bld_tools_edtech_vertical]] | upstream | 0.42 |
 | [[edtech_vertical_lms_market]] | upstream | 0.38 |

@@ -25,8 +25,6 @@ data_sources:
   - "LlamaIndex docs (docs.llamaindex.ai, 2026-06-11)"
 related:
   - kc_competitive_positioning
-  - pitch_deck_intelligence_as_asset
-  - p05_lp_cexai_oss_implementation_services
 ---
 
 # AI Brain Infrastructure -- CEXAI vs AI Frameworks

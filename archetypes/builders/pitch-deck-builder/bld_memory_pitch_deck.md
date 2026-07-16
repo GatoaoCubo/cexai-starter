@@ -20,10 +20,6 @@ strong, evidence
 reviewed, related artifacts, problem solution]
 density_score: 0.85
 related:
-  - bld_instruction_pitch_deck
-  - kc_pitch_deck
-  - bld_knowledge_card_pitch_deck
-  - p05_qg_pitch_deck
   - pitch-deck-builder
 ---
 ## Observation
@@ -45,8 +41,4 @@ Reviewed decks with problem-solution alignment and traction metrics (e.g., user 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_pitch_deck]] | upstream | 0.44 |
-| [[kc_pitch_deck]] | upstream | 0.41 |
-| [[bld_knowledge_card_pitch_deck]] | upstream | 0.41 |
-| [[p05_qg_pitch_deck]] | downstream | 0.39 |
 | [[pitch-deck-builder]] | upstream | 0.37 |

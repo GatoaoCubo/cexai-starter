@@ -18,11 +18,8 @@ tldr: "Agency Swarm is a lean, community-grown multi-agent framework built on Op
 8f: "F3_inject"
 keywords: [multi-agent orchestration, communication_flows, directed graph, pydantic, gpt-4o, litellm]
 related:
-  - cm_cex_vs_landscape
   - p01_kc_competitor_openai_sdk
-  - p01_kc_atom_03_openai_agents_sdk
   - p01_kc_competitor_autogen
-  - p01_kc_agent
 ---
 
 # Agency Swarm -- Competitive Intelligence Profile

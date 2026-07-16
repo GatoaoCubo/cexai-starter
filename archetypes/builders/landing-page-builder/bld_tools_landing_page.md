@@ -17,9 +17,7 @@ keywords: [landing page construction, tools landing page, landing_page, builder,
 density_score: 0.90
 llm_function: CALL
 related:
-  - bld_collaboration_landing_page
   - bld_memory_landing_page
-  - bld_output_template_landing_page
   - bld_schema_landing_page
   - bld_architecture_landing_page
 ---
@@ -80,6 +78,5 @@ python _tools/cex_score.py --apply bld-tools-landing-page.md
 |----------|-------------|-------|
 | [[bld_orchestration_landing_page]] | downstream | 0.46 |
 | [[bld_memory_landing_page]] | downstream | 0.42 |
-| [[bld_output_template_landing_page]] | downstream | 0.41 |
 | [[bld_schema_landing_page]] | downstream | 0.36 |
 | [[bld_architecture_landing_page]] | downstream | 0.36 |

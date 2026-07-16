@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [llm-as-judge configuration, llm judge construction, knowledge card llm judge, llm_judge, builder, examples, score(), {score: float, metadata: {rationale}}, criteria -> evaluation_steps -> model, assert type: llm-rubric]
 density_score: 0.90
 related:
-  - p10_lr_llm_judge_builder
   - llm-judge-builder
-  - bld_instruction_llm_judge
-  - p01_kc_llm_judge
-  - p11_qg_llm_judge
 ---
 # Domain Knowledge: llm_judge
 ## Executive Summary
@@ -85,8 +81,6 @@ LLM-as-Judge uses a language model to evaluate another model's output, returning
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_llm_judge_builder]] | downstream | 0.50 |
 | [[llm-judge-builder]] | downstream | 0.46 |
 | [[bld_prompt_llm_judge]] | downstream | 0.42 |
 | [[kc_llm_judge]] | sibling | 0.40 |
-| [[p11_qg_llm_judge]] | downstream | 0.40 |

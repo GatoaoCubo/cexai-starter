@@ -22,12 +22,6 @@ keywords: [memory iso - document_loader, overlap is mandatory, metadata is non-n
 chunk, silent unicode]
 density_score: 0.99
 title: Memory ISO - document_loader
-related:
-  - bld_knowledge_card_document_loader
-  - p01_kc_chunk_strategy
-  - document_loader-builder
-  - bld_instruction_document_loader
-  - p08_dir_rag_pipeline
 ---
 ## Summary
 Chunk strategy and metadata preservation are the two highest-leverage decisions in
@@ -70,6 +64,5 @@ but catastrophic at query time.
 |----------|-------------|-------|
 | [[bld_knowledge_document_loader]] | related | 0.43 |
 | [[kc_chunk_strategy]] | upstream | 0.34 |
-| [[document_loader-builder]] | related | 0.31 |
 | [[bld_prompt_document_loader]] | related | 0.31 |
 | p08_dir_rag_pipeline | downstream | 0.30 |

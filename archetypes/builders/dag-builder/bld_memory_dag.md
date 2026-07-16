@@ -34,11 +34,8 @@ task]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_instruction_dag
-  - bld_knowledge_card_dag
   - bld_schema_dag
   - dag-builder
-  - bld_collaboration_dag
 ---
 ## Summary
 Task dependency graphs fail silently when cycles exist or edge targets are undefined. Omitting topological order forces every consumer to recompute it - and different consumers may compute different valid orders, causing non-deterministic execution. Three-pass construction (nodes, edges, computed order) produces a self-contained, verifiable spec.
@@ -122,8 +119,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_dag_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_dag]] | upstream | 0.44 |
-| [[bld_knowledge_card_dag]] | upstream | 0.39 |
 | [[bld_schema_dag]] | upstream | 0.33 |
 | [[dag-builder]] | downstream | 0.32 |
-| [[bld_collaboration_dag]] | downstream | 0.32 |

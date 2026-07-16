@@ -20,10 +20,6 @@ does, related artifacts]
 density_score: 0.85
 related:
   - judge-config-builder
-  - bld_collaboration_llm_judge
-  - p01_kc_llm_judge
-  - n00_llm_judge_manifest
-  - n00_judge_config_manifest
 ---
 ## Crew Role  
 Defines and maintains judge configuration parameters, rules, and constraints for consistent evaluation.  
@@ -49,7 +45,3 @@ Does NOT handle LLM judge instances (llm_judge) or human-generated rubrics (scor
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[judge-config-builder]] | upstream | 0.47 |
-| [[bld_collaboration_llm_judge]] | sibling | 0.46 |
-| [[p01_kc_llm_judge]] | upstream | 0.43 |
-| [[n00_llm_judge_manifest]] | upstream | 0.40 |
-| [[n00_judge_config_manifest]] | upstream | 0.39 |

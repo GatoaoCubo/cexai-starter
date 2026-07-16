@@ -32,11 +32,8 @@ domain_agents:
 fallback_cli: codex
 related:
   - agent_card_n04
-  - n07-orchestrator
   - kc_knowledge_vocabulary
   - p01_kc_concept_graph
-  - taxonomy_contract
-  - rag_pipeline_architecture
   - kc_nucleus_def
 tags:
   - nucleus_def

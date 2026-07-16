@@ -25,10 +25,7 @@ failure, scoring
 dimensions, spec contains, tier thresholds, golden publish]
 density_score: 0.85
 related:
-  - bld_collaboration_scoring_rubric
   - scoring-rubric-builder
-  - bld_knowledge_card_scoring_rubric
-  - p01_kc_scoring_rubric
   - bld_memory_scoring_rubric
 ---
 ## Quality Gate

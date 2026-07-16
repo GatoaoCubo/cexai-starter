@@ -19,10 +19,7 @@ keywords: [entity memory specification, entity memory construction, knowledge ca
 density_score: 0.90
 related:
   - entity-memory-builder
-  - bld_collaboration_entity_memory
-  - p01_kc_entity_memory
   - bld_schema_entity_memory
-  - bld_instruction_entity_memory
 ---
 # Domain Knowledge: entity_memory
 ## Executive Summary

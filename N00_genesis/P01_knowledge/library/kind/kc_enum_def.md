@@ -22,10 +22,6 @@ linked_artifacts:
   related: []
 related:
   - enum-def-builder
-  - bld_knowledge_card_enum_def
-  - bld_collaboration_enum_def
-  - n00_enum_def_manifest
-  - p01_kc_type_def
 ---
 
 # Enum Def

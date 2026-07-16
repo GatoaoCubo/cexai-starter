@@ -18,10 +18,6 @@ keywords: [and architectural position, approval_request construction, architectu
 density_score: 0.90
 related:
   - approval-request-builder
-  - p01_kc_approval_request
-  - bld_collaboration_approval_request
-  - n00_approval_request_manifest
-  - adr_v03_governance_taxonomy
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -80,7 +76,3 @@ hitl_config (policy, P11)  --[review_trigger fires]-->  ApprovalGate.request(ope
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[approval-request-builder]] | downstream | 0.66 |
-| [[p01_kc_approval_request]] | downstream | 0.54 |
-| [[bld_collaboration_approval_request]] | downstream | 0.52 |
-| [[n00_approval_request_manifest]] | downstream | 0.46 |
-| [[adr_v03_governance_taxonomy]] | upstream (scope-defining ADR) | 0.44 |

@@ -29,7 +29,6 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_schema_function_def
-  - bld_output_template_function_def
   - bld_schema_validation_schema
   - bld_schema_bugloop
   - bld_schema_dataset_card
@@ -75,7 +74,6 @@ Rule: keep nesting <= 2 levels for maximum compatibility.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_function_def]] | upstream | 0.47 |
-| [[bld_output_template_function_def]] | upstream | 0.34 |
 | [[bld_schema_validation_schema]] | upstream | 0.34 |
 | bld_schema_bugloop | downstream | 0.32 |
 | [[bld_schema_dataset_card]] | upstream | 0.32 |

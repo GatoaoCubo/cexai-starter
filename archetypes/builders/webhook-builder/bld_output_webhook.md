@@ -27,11 +27,8 @@ density_score: 1.0
 domain: "output_template artifact construction"
 title: "Output Template Webhook"
 related:
-  - bld_instruction_webhook
   - bld_schema_webhook
-  - p11_qg_webhook
   - webhook-builder
-  - n00_webhook_manifest
 ---
 # Output Template: webhook
 

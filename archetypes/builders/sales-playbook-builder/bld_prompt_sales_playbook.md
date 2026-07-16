@@ -18,10 +18,7 @@ keywords: [sales_playbook construction, instruction sales playbook, sales_playbo
 density_score: 0.85
 related:
   - sales-playbook-builder
-  - p10_mem_sales_playbook_builder
-  - p03_qg_sales_playbook
   - discovery-questions-builder
-  - bld_instruction_discovery_questions
 ---
 ## Phase 1: RESEARCH  
 1. Identify target buyer personas via customer interviews and CRM data  
@@ -53,7 +50,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[sales-playbook-builder]] | related | 0.45 |
-| [[p10_mem_sales_playbook_builder]] | downstream | 0.41 |
-| [[p03_qg_sales_playbook]] | downstream | 0.37 |
 | [[discovery-questions-builder]] | upstream | 0.33 |
-| [[bld_instruction_discovery_questions]] | sibling | 0.33 |

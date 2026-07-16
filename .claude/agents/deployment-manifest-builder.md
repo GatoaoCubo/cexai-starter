@@ -4,11 +4,8 @@ description: "Builds ONE deployment_manifest artifact via 8F pipeline. Loads dep
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_manifest_deployment_manifest
   - bld_tools_deployment_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # deployment-manifest-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_deployment_manifest]] | related | 0.38 |
 | [[bld_tools_deployment_manifest]] | related | 0.34 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.29 |

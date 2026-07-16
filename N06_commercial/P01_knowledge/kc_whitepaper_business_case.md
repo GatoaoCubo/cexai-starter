@@ -23,8 +23,6 @@ updated: "2026-04-29"
 sin_lens: strategic_greed
 audience: technical_decision_makers
 related:
-  - roi_calculator_n06
-  - subscription_tier_n06
   - healthcare_vertical_fhir_workflows
   - fintech_vertical_payment_compliance
   - edtech_vertical_lms_market
@@ -32,7 +30,6 @@ related:
   - legal_vertical_contract_automation
   - p01_kc_ai_saas_monetization
   - kc_competitive_positioning
-  - p11_cm_cexai_monetization
 ---
 
 # Annex E -- Business Case & Adoption

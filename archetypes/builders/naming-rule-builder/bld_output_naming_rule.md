@@ -15,10 +15,7 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - p03_ins_naming_rule
   - bld_schema_naming_rule
-  - bld_knowledge_card_naming_rule
-  - p11_qg_naming_rule
   - bld_architecture_naming_rule
 ---
 # Output Template — Naming Rule
@@ -91,8 +88,5 @@ Strategy: `{{collision_strategy}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_naming_rule]] | upstream | 0.40 |
 | [[bld_schema_naming_rule]] | downstream | 0.36 |
-| [[bld_knowledge_card_naming_rule]] | upstream | 0.33 |
-| [[p11_qg_naming_rule]] | downstream | 0.31 |
 | [[bld_architecture_naming_rule]] | downstream | 0.26 |

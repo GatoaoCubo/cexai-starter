@@ -18,10 +18,6 @@ keywords: [multimodal_prompt construction, output template multimodal prompt, mu
 density_score: 0.85
 related:
   - kc_multimodal_prompt
-  - bld_output_template_playground_config
-  - n00_multimodal_prompt_manifest
-  - bld_output_template_onboarding_flow
-  - bld_knowledge_card_multi_modal_config
 ---
 ```yaml
 ---

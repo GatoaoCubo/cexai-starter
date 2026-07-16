@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [llm agent memory consolidation, quality gate, async flag, promotion rules, eviction completeness, commercial differentiation, and compliance]
 density_score: 0.90
 related:
-  - bld_instruction_consolidation_policy
-  - p10_qg_memory_architecture
   - bld_schema_consolidation_policy
   - consolidation-policy-builder
-  - p10_qg_procedural_memory
 ---
 ## Quality Gate
 

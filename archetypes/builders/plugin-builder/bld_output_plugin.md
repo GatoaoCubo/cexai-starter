@@ -18,9 +18,6 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - bld_schema_plugin
-  - bld_knowledge_card_plugin
-  - p11_qg_plugin
-  - bld_collaboration_plugin
   - plugin-builder
 ---
 # Output Template: plugin
@@ -113,7 +110,4 @@ Required methods:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_plugin]] | downstream | 0.50 |
-| [[bld_knowledge_card_plugin]] | upstream | 0.47 |
-| [[p11_qg_plugin]] | downstream | 0.42 |
-| [[bld_collaboration_plugin]] | upstream | 0.42 |
 | [[plugin-builder]] | upstream | 0.39 |

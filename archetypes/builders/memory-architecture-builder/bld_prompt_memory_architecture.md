@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [llm agent memory systems, load schema, define layers, specify backends, map eviction policy, add tier matrix, memory_architecture, builder, instruction, write overview]
 density_score: 0.90
 related:
-  - bld_instruction_consolidation_policy
   - memory-architecture-builder
   - bld_schema_memory_architecture
-  - p10_qg_memory_architecture
-  - bld_instruction_procedural_memory
 ---
 ## Phase 1: RESEARCH
 
@@ -66,5 +63,4 @@ related:
 | bld_instruction_consolidation_policy | sibling | 0.49 |
 | [[memory-architecture-builder]] | downstream | 0.47 |
 | [[bld_schema_memory_architecture]] | downstream | 0.43 |
-| [[p10_qg_memory_architecture]] | downstream | 0.39 |
 | bld_instruction_procedural_memory | sibling | 0.38 |

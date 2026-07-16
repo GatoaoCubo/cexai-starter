@@ -25,7 +25,6 @@ primary_8f: INJECT
 tags: [ai_video_generation, competitive_analysis, runway, sora, kling, pika, veo, hailuo, luma, seedance, 2026, solo_creator]
 feeds_kinds: [competitive_matrix, decision_record, model_provider, content_monetization]
 related:
-  - p01_kc_runway_api
   - p01_kc_competitor_langchain
   - p01_kc_content_formats_global
 ---

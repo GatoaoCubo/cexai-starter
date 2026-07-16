@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
   - bld_config_agent_computer_interface
-  - bld_collaboration_agent_computer_interface
-  - p01_kc_pillar_brief_p02_model_en
   - bld_architecture_agent_computer_interface
 ---
 
@@ -88,6 +86,4 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.33 |
 | [[bld_config_agent_computer_interface]] | related | 0.31 |
-| [[bld_collaboration_agent_computer_interface]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.30 |
 | [[bld_architecture_agent_computer_interface]] | related | 0.30 |

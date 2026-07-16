@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F3_inject"
 keywords: [safety_policy construction, knowledge card safety policy, openai moderation taxonomy, perspective api categories, eu ai act articles, and commercial enforcement protocol, safety_policy]
 density_score: 0.92
-related:
-  - bld_output_template_safety_policy
-  - bld_knowledge_card_content_filter
-  - n06_audit_safety_policy_builder
-  - bld_output_template_content_filter
-  - n06_audit_content_filter_builder
 ---
 ## Domain Overview
 AI safety policies define which behaviors an AI system must never produce, which require human review, and which may proceed with logging. They span three risk layers: (1) absolute prohibitions (CSAM, CBRN synthesis routes), (2) context-dependent restrictions (explicit content, political persuasion), and (3) monitored behaviors (sensitive topics, off-topic use). Effective policies name real harm categories from established taxonomies, cite applicable legal frameworks with article numbers, and specify a commercial response for every trigger (block, flag, degrade, escalate).
@@ -89,12 +83,3 @@ Every harm category in a safety policy MUST specify product behavior:
 | Safety by design | Safety constraints built into model fine-tuning, not post-hoc filters | NIST AI RMF |
 | Red-teaming | Adversarial testing to discover policy gaps before deployment | MITRE ATLAS |
 | Incident response | Documented procedure for safety failures: contain, assess, report, remediate | NIST AI RMF IR |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_safety_policy]] | downstream | 0.55 |
-| [[bld_knowledge_card_content_filter]] | sibling | 0.51 |
-| [[n06_audit_safety_policy_builder]] | downstream | 0.39 |
-| [[bld_output_template_content_filter]] | downstream | 0.36 |
-| [[n06_audit_content_filter_builder]] | downstream | 0.32 |

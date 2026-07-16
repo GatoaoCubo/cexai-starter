@@ -20,8 +20,6 @@ density_score: 0.85
 related:
   - govtech_vertical_digital_services
   - govtech-vertical-builder
-  - p01_qg_govtech_vertical
-  - bld_instruction_govtech_vertical
   - bld_tools_govtech_vertical
 ---
 ## Domain Overview
@@ -76,6 +74,4 @@ The CJIS Security Policy (SP 20-01, v5.9.1) governs any system touching criminal
 |----------|-------------|-------|
 | [[govtech_vertical_digital_services]] | related | 0.54 |
 | [[govtech-vertical-builder]] | related | 0.49 |
-| [[p01_qg_govtech_vertical]] | downstream | 0.48 |
-| [[bld_instruction_govtech_vertical]] | downstream | 0.48 |
 | [[bld_tools_govtech_vertical]] | downstream | 0.41 |

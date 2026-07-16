@@ -19,9 +19,7 @@ density_score: 0.90
 related:
   - bld_architecture_knowledge_index
   - knowledge-card-builder
-  - p01_kc_knowledge_card
   - bld_architecture_rag_source
-  - p01_kc_cex_lp01_knowledge
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |

@@ -15,11 +15,7 @@ tldr: "pgvector embedding config: VECTOR(1536) default, HNSW index, cosine dista
 keywords: [pgvector, hnsw, ivfflat, cosine similarity, vector_cosine_ops, embedding, index_params, column_type]
 density_score: 0.91
 related:
-  - p01_kc_supabase_vectors
-  - p01_kc_supabase_pgvector_rag_setup
-  - bld_collaboration_embedding_config
   - vector-store-builder
-  - p01_kc_embedding_config
 ---
 
 # Embedding Config: pgvector

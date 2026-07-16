@@ -28,9 +28,6 @@ updated: "2026-07-03"
 keywords: [naming conventions, file paths, size limits, operational constraints, approval_request construction, config approval request, status scope enums, approval_request, builder, config]
 density_score: 0.90
 related:
-  - bld_knowledge_card_approval_request
-  - bld_instruction_approval_request
-  - p10_lr_approval_request_builder
   - bld_config_hitl_config
   - bld_schema_approval_request
 ---
@@ -94,8 +91,5 @@ python _tools/cex_score.py --apply bld-config-approval-request.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_approval_request]] | upstream | 0.36 |
-| [[bld_instruction_approval_request]] | upstream | 0.36 |
-| [[p10_lr_approval_request_builder]] | downstream | 0.33 |
 | [[bld_config_hitl_config]] | sibling (emitting-policy config) | 0.33 |
 | [[bld_schema_approval_request]] | sibling | 0.32 |

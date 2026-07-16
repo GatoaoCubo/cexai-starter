@@ -19,10 +19,8 @@ keywords: [template with, for quality_gate production, quality gate construction
 density_score: 0.90
 related:
   - p11_qg_{{GATE_SLUG}}
-  - bld_knowledge_card_quality_gate
   - bld_memory_quality_gate
   - quality-gate-builder
-  - bld_output_template_scoring_rubric
 ---
 # Output Template: quality_gate
 ```yaml
@@ -73,7 +71,5 @@ python _tools/cex_score.py --apply bld-output-template-quality-gate.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [\[p11_qg_`{{GATE_SLUG}}`\]] | downstream | 0.34 |
-| [[bld_knowledge_card_quality_gate]] | downstream | 0.26 |
 | [[bld_memory_quality_gate]] | downstream | 0.25 |
 | [[quality-gate-builder]] | downstream | 0.24 |
-| [[bld_output_template_scoring_rubric]] | sibling | 0.24 |

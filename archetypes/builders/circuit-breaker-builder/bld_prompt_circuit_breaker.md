@@ -33,9 +33,7 @@ keywords:
 density_score: 0.90
 related:
   - bld_schema_circuit_breaker
-  - p11_qg_circuit_breaker
   - bld_architecture_circuit_breaker
-  - bld_output_template_circuit_breaker
   - circuit-breaker-builder
 ---
 # Instructions: How to Produce a circuit_breaker
@@ -77,7 +75,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_circuit_breaker]] | downstream | 0.47 |
-| [[p11_qg_circuit_breaker]] | downstream | 0.44 |
 | [[bld_architecture_circuit_breaker]] | downstream | 0.42 |
-| [[bld_output_template_circuit_breaker]] | downstream | 0.41 |
 | [[circuit-breaker-builder]] | downstream | 0.38 |

@@ -18,8 +18,6 @@ updated: "2026-04-07"
 density_score: 0.90
 related:
   - bld_schema_hook
-  - bld_instruction_hook
-  - p11_qg_hook
   - bld_architecture_hook
   - hook-builder
 ---

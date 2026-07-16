@@ -18,10 +18,6 @@ density_score: 0.96
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - kc_process_manager
-  - bld_manifest_process_manager
-  - bld_rules_process_manager
-  - bld_instruction_process_manager
   - bld_memory_process_manager
 ---
 # Knowledge: process_manager
@@ -76,8 +72,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_process_manager]] | sibling | 0.48 |
-| [[bld_manifest_process_manager]] | sibling | 0.43 |
-| [[bld_rules_process_manager]] | sibling | 0.40 |
-| [[bld_instruction_process_manager]] | related | 0.36 |
 | [[bld_memory_process_manager]] | sibling | 0.35 |

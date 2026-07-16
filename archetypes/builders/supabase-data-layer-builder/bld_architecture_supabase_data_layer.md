@@ -15,12 +15,6 @@ tldr: "Supabase Data Layer model: component map, dependencies, and structural co
 keywords: [supabase data layer builder, supabase data layer model, component map, and structural constraints, builder, supabase, data-layer, architecture, multi-nucleus, component inventory]
 density_score: 0.90
 llm_function: CONSTRAIN
-related:
-  - p01_kc_supabase_data_layer_n04
-  - bld_collaboration_supabase_data_layer
-  - p12_dag_mission_supabase_data_layer_n07
-  - n00_p01_kind_index
-  - p12_dispatch_rule_supabase
 ---
 # Architecture
 
@@ -86,12 +80,3 @@ related:
 | Multi-tenant by default | Single-tenant assumption |
 | All 12 modules, one config | Database-only setup |
 | Generic for any vertical | Hardcoded to one company |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p01_kc_supabase_data_layer_n04]] | upstream | 0.61 |
-| [[bld_collaboration_supabase_data_layer]] | downstream | 0.58 |
-| [[p12_dag_mission_supabase_data_layer_n07]] | downstream | 0.49 |
-| [[n00_p01_kind_index]] | upstream | 0.48 |
-| [[p12_dispatch_rule_supabase]] | downstream | 0.47 |

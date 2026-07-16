@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [research pipeline construction, collaboration research pipeline, research_pipeline, builder, examples, "### crew: research → content → publish", my role, crew compositions, market intelligence end, handoff protocol]
 density_score: 0.90
 related:
-  - bld_collaboration_social_publisher
   - research-pipeline-builder
-  - n01_dr_research_pipeline
-  - p04_cli_research_pipeline_n01
-  - bld_collaboration_content_monetization
 ---
 # Collaboration: research-pipeline-builder
 

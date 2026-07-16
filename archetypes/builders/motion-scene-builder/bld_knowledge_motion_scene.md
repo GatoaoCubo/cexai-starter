@@ -16,8 +16,6 @@ tldr: "Atomic facts for building motion scenes: keyframe interpolation, easing t
 density_score: 0.92
 related:
   - bld_schema_motion_scene
-  - p01_kc_motion_scene
-  - p06_vs_motion_scene
   - bld_memory_motion_scene
   - motion-scene-builder
 ---
@@ -64,7 +62,5 @@ Author from the primitive type + the bound design_system coordinate.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_motion_scene]] | downstream | 0.5 |
-| [[p01_kc_motion_scene]] | sibling | 0.48 |
-| [[p06_vs_motion_scene]] | upstream | 0.45 |
 | [[bld_memory_motion_scene]] | sibling | 0.4 |
 | [[motion-scene-builder]] | related | 0.4 |

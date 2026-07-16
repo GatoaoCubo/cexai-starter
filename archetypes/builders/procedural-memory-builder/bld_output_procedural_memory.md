@@ -18,10 +18,7 @@ keywords: [llm agent procedural memory, output template, skill definitions table
 density_score: 0.90
 related:
   - bld_schema_procedural_memory
-  - bld_instruction_procedural_memory
-  - p10_qg_procedural_memory
   - procedural-memory-builder
-  - bld_knowledge_card_procedural_memory
 ---
 ```yaml
 ---
@@ -120,7 +117,4 @@ Reference: Voyager (Wang 2023) verify-before-store pattern.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_procedural_memory]] | downstream | 0.63 |
-| [[bld_instruction_procedural_memory]] | upstream | 0.57 |
-| [[p10_qg_procedural_memory]] | downstream | 0.53 |
 | [[procedural-memory-builder]] | downstream | 0.50 |
-| [[bld_knowledge_card_procedural_memory]] | upstream | 0.47 |

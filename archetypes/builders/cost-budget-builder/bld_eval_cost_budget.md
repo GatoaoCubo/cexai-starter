@@ -19,8 +19,6 @@ keywords: [spend tracking, gates for cost_budget artifacts, validates budget cat
 density_score: 0.92
 related:
   - cost-budget-builder
-  - bld_instruction_cost_budget
-  - bld_knowledge_card_cost_budget
   - bld_architecture_cost_budget
   - bld_schema_cost_budget
 ---

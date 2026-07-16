@@ -30,11 +30,7 @@ keywords:
   - "related artifacts"
 density_score: 0.88
 related:
-  - bld_knowledge_card_kind_manifest
   - bld_schema_kind_manifest
-  - p10_lr_kind_manifest_builder
-  - bld_instruction_kind
-  - p11_qg_kind_manifest
 ---
 # Instructions: How to Produce a kind_manifest
 ## Phase 1: RESEARCH
@@ -75,8 +71,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_kind_manifest]] | upstream | 0.40 |
 | [[bld_schema_kind_manifest]] | downstream | 0.38 |
-| [[p10_lr_kind_manifest_builder]] | downstream | 0.34 |
-| [[bld_instruction_kind]] | sibling (reflexive-case source) | 0.32 |
-| [[p11_qg_kind_manifest]] | downstream | 0.30 |

@@ -21,7 +21,6 @@ related:
   - bld_tools_usage_report
   - enterprise-sla-builder
   - bld_tools_github_issue_template
-  - bld_collaboration_enterprise_sla
 ---
 ## Production Tools
 | Tool | Purpose | When |
@@ -54,4 +53,3 @@ related:
 | [[bld_tools_usage_report]] | sibling | 0.41 |
 | [[enterprise-sla-builder]] | downstream | 0.37 |
 | [[bld_tools_github_issue_template]] | sibling | 0.33 |
-| [[bld_collaboration_enterprise_sla]] | downstream | 0.33 |

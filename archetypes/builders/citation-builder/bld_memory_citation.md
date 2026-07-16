@@ -26,10 +26,7 @@ title: Memory ISO - citation
 8f: "F7_govern"
 density_score: 0.97
 related:
-  - bld_knowledge_card_citation
   - citation-builder
-  - p01_kc_citation
-  - bld_output_template_citation
   - bld_architecture_citation
 ---
 ## Summary
@@ -51,5 +48,4 @@ Citations ground LLM outputs in verifiable external evidence. The primary failur
 | [[bld_knowledge_citation]] | upstream | 0.48 |
 | [[citation-builder]] | upstream | 0.47 |
 | [[kc_citation]] | upstream | 0.47 |
-| [[bld_output_template_citation]] | upstream | 0.39 |
 | [[bld_architecture_citation]] | upstream | 0.39 |

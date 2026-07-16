@@ -14,11 +14,8 @@ updated: "2026-04-07"
 density_score: 0.90
 llm_function: PRODUCE
 related:
-  - bld_output_template_component_map
   - bld_config_diagram
   - bld_schema_diagram
-  - bld_output_template_runtime_rule
-  - bld_instruction_diagram
 ---
 id: p08_diag_`{{scope_slug}}`
 kind: diagram

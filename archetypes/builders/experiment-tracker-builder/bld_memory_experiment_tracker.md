@@ -20,11 +20,8 @@ effective, evidence
 reviewed, related artifacts, versioned schema]
 density_score: 0.85
 related:
-  - kc_experiment_tracker
   - experiment-tracker-builder
-  - bld_knowledge_card_experiment_tracker
   - bld_config_experiment_tracker
-  - p11_fb_experiment_tracker
 ---
 ## Observation
 Builders often struggle with managing the lifecycle of the tracker, leading to data loss during experiment crashes. There is also a common tendency to overlook the need for a unified, versioned schema, which prevents meaningful longitudinal comparisons.
@@ -45,8 +42,5 @@ Reviewed tracker-builder implementations show that a provider-agnostic API is es
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_experiment_tracker]] | upstream | 0.24 |
 | [[experiment-tracker-builder]] | upstream | 0.24 |
-| [[bld_knowledge_card_experiment_tracker]] | upstream | 0.22 |
 | [[bld_config_experiment_tracker]] | upstream | 0.21 |
-| [[p11_fb_experiment_tracker]] | downstream | 0.21 |

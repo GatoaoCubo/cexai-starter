@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [safety_policy construction, instruction safety policy, safety_policy, builder, instruction, related artifacts, phase research, technical constraints, sibling, phase]
 density_score: 0.85
 related:
-  - bld_instruction_playground_config
-  - bld_instruction_compliance_framework
-  - bld_instruction_judge_config
   - safety-policy-builder
-  - bld_instruction_eval_framework
 ---
 ## Phase 1: RESEARCH  
 1. Identify regulatory requirements (e.g., GDPR, AI Act)  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_playground_config]] | sibling | 0.36 |
-| [[bld_instruction_compliance_framework]] | sibling | 0.34 |
-| [[bld_instruction_judge_config]] | sibling | 0.32 |
 | [[safety-policy-builder]] | downstream | 0.32 |
-| [[bld_instruction_eval_framework]] | sibling | 0.30 |

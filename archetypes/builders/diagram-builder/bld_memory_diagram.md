@@ -40,11 +40,8 @@ title: "Memory Diagram"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_diagram
-  - bld_instruction_diagram
   - diagram-builder
   - bld_tools_memory_type
-  - p10_lr_instruction_builder
 ---
 ## Summary
 Architecture diagrams fail to communicate when symbols are ambiguous, notation is inconsistent, or scope is too broad. A four-step production process - choose notation and zoom, draw labeled components, add legend, add annotations - produces diagrams that readers interpret correctly on first read without author assistance.
@@ -121,8 +118,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_diagram_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_diagram]] | upstream | 0.38 |
-| [[bld_instruction_diagram]] | upstream | 0.37 |
 | [[diagram-builder]] | upstream | 0.32 |
 | [[bld_tools_memory_type]] | upstream | 0.31 |
-| [[p10_lr_instruction_builder]] | sibling | 0.31 |

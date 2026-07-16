@@ -20,8 +20,6 @@ density_score: 0.85
 related:
   - course-module-builder
   - bld_tools_course_module
-  - bld_instruction_course_module
-  - p01_kc_course_module
   - bld_config_course_module
 ---
 ## Crew Role  
@@ -49,6 +47,4 @@ Does NOT handle user authentication, enrollment management, or prompt/knowledge 
 |----------|-------------|-------|
 | [[course-module-builder]] | upstream | 0.28 |
 | [[bld_tools_course_module]] | upstream | 0.27 |
-| [[bld_instruction_course_module]] | upstream | 0.25 |
-| [[p01_kc_course_module]] | upstream | 0.23 |
 | [[bld_config_course_module]] | upstream | 0.22 |

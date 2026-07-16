@@ -15,11 +15,7 @@ status: active
 keywords: [conversion_rate_optimization, click_through_rate, cost_per_acquisition, a_b_testing, funnel_stage, tofu_mofu_bof, cohort_analysis, ab_test_config]
 density_score: 0.97
 related:
-  - user_journey_n02
-  - p01_kc_campaign
   - p01_kc_marketing
-  - p04_cli_copy_analyzer_n02
-  - p08_cm_n02
 ---
 
 # N02 Marketing Controlled Vocabulary

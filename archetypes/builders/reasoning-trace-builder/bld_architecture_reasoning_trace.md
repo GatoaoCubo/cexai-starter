@@ -18,10 +18,6 @@ keywords: [component map of reasoning_trace, and architectural position, reasoni
 density_score: 0.90
 related:
   - reasoning-trace-builder
-  - bld_collaboration_reasoning_trace
-  - p03_ins_reasoning_trace_builder
-  - p01_kc_reasoning_trace
-  - bld_knowledge_card_reasoning_trace
 ---
 # Architecture: reasoning_trace in the CEX
 ## Component Inventory
@@ -71,7 +67,3 @@ reasoning_trace   --consumed_by-->  quality_gate     --validates-->     confiden
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reasoning-trace-builder]] | upstream | 0.66 |
-| [[bld_collaboration_reasoning_trace]] | upstream | 0.61 |
-| [[p03_ins_reasoning_trace_builder]] | upstream | 0.59 |
-| [[p01_kc_reasoning_trace]] | upstream | 0.58 |
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.57 |

@@ -21,10 +21,7 @@ reviewed, related artifacts, discovery flows]
 density_score: 0.85
 related:
   - sales-playbook-builder
-  - bld_instruction_sales_playbook
   - discovery-questions-builder
-  - p10_mem_discovery_questions_builder
-  - bld_knowledge_card_sales_playbook
 ---
 ## Observation
 Common issues include vague personas lacking customer-specific data, discovery flows that skip critical decision-maker roles, and objection handling that relies on generic responses rather than tailored solutions. Close patterns often lack alignment with persona pain points.
@@ -46,7 +43,4 @@ Reviewed playbooks with defined personas saw 20% higher engagement; those with s
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[sales-playbook-builder]] | upstream | 0.51 |
-| [[bld_instruction_sales_playbook]] | upstream | 0.37 |
 | [[discovery-questions-builder]] | upstream | 0.31 |
-| [[p10_mem_discovery_questions_builder]] | sibling | 0.31 |
-| [[bld_knowledge_card_sales_playbook]] | upstream | 0.30 |

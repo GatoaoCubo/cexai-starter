@@ -4,11 +4,8 @@ description: "Builds ONE working_memory artifact via 8F pipeline. Loads working-
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_working_memory
   - working-memory-builder
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # working-memory-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_working_memory]] | related | 0.43 |
 | [[working-memory-builder]] | related | 0.41 |
-| [[p03_sp_builder_nucleus]] | related | 0.29 |
 | [[kind-builder]] | related | 0.29 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |

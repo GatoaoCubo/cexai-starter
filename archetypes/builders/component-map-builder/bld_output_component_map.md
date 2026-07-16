@@ -17,8 +17,6 @@ llm_function: PRODUCE
 related:
   - bld_schema_component_map
   - bld_config_component_map
-  - bld_instruction_component_map
-  - p11_qg_component_map
   - component-map-builder
 ---
 # Output Template — component-map-builder
@@ -80,6 +78,4 @@ keywords: [{{keyword_1}}, {{keyword_2}}, {{keyword_3}}]
 |----------|-------------|-------|
 | [[bld_schema_component_map]] | related | 0.37 |
 | [[bld_config_component_map]] | related | 0.34 |
-| [[bld_instruction_component_map]] | related | 0.33 |
-| [[p11_qg_component_map]] | related | 0.33 |
 | [[component-map-builder]] | related | 0.30 |

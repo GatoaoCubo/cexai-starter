@@ -20,8 +20,6 @@ density_score: 0.87
 related:
   - p03_pt_n07_workflow_build_cell
   - p03_pt_n07_workflow_fix_cell
-  - p07_jc_spec_fidelity
-  - verify
 ---
 
 # Prompt Template: N07 Workflow PROVE Cell

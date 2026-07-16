@@ -18,10 +18,6 @@ keywords: [govtech_vertical construction, instruction govtech vertical, govtech_
 density_score: 0.85
 related:
   - govtech-vertical-builder
-  - p10_mem_govtech_vertical_builder
-  - p01_qg_govtech_vertical
-  - bld_knowledge_card_govtech_vertical
-  - bld_output_template_govtech_vertical
 ---
 ## Phase 1: RESEARCH  
 1. Identify applicable federal regulations (FedRAMP, FISMA, CJIS).  
@@ -54,7 +50,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[govtech-vertical-builder]] | upstream | 0.51 |
-| [[p10_mem_govtech_vertical_builder]] | downstream | 0.46 |
-| [[p01_qg_govtech_vertical]] | downstream | 0.42 |
-| [[bld_knowledge_card_govtech_vertical]] | upstream | 0.40 |
-| [[bld_output_template_govtech_vertical]] | downstream | 0.38 |

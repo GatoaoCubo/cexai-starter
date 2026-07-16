@@ -17,8 +17,6 @@ keywords: [rest api, affiliate api, firecrawl, keepa, neural search, google serp
 density_score: 0.93
 related:
   - bld_tools_research_pipeline
-  - ex_research_pipeline_ecommerce_br
-  - bld_knowledge_card_search_tool
   - bld_config_research_pipeline
   - search-tool-builder
 ---

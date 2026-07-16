@@ -18,7 +18,6 @@ keywords: [opportunity_matrix construction, architecture opportunity matrix, opp
 density_score: 0.85
 related:
   - bld_architecture_roi_calculator
-  - p08_adr_opportunity_matrix_kind
   - roi-calculator-builder
   - research-pipeline-builder
   - scoring-rubric-builder

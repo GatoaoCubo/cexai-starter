@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F7_govern"
 keywords: [edit_format, quality_gate, file format compliance, fail condition, scoring guide]
 density_score: 0.85
-related:
-  - p09_qg_marketplace_app_manifest
-  - p11_qg_usage_report
-  - p11_qg_response_format
-  - p01_qg_reranker_config
-  - p11_qg_content_filter
 ---
 ## Quality Gate
 

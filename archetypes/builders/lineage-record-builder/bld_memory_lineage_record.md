@@ -17,10 +17,7 @@ tldr: "Recalled patterns and corrections for lineage_record builder sessions."
 keywords: [lineage_record builder patterns, memory, lineage_record, derived_from, sources_count, prov:entity, prov:activity, prov:agent, prov:wasderivedfrom, prov:wasgeneratedby]
 density_score: 0.87
 related:
-  - kc_lineage_record
   - bld_architecture_lineage_record
-  - bld_manifest_lineage_record
-  - bld_knowledge_card_lineage_record
   - bld_schema_lineage_record
 ---
 
@@ -69,8 +66,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_lineage_record]] | sibling | 0.48 |
 | [[bld_architecture_lineage_record]] | sibling | 0.44 |
-| [[bld_manifest_lineage_record]] | upstream | 0.44 |
-| [[bld_knowledge_card_lineage_record]] | sibling | 0.42 |
 | [[bld_schema_lineage_record]] | upstream | 0.41 |

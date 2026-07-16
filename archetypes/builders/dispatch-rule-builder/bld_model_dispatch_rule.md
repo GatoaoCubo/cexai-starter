@@ -32,10 +32,6 @@ parent: null
 8f: "F8_collaborate"
 related:
   - bld_architecture_dispatch_rule
-  - bld_collaboration_dispatch_rule
-  - bld_instruction_dispatch_rule
-  - p01_kc_dispatch_rule
-  - p11_qg_dispatch_rule
 ---
 ## Identity
 
@@ -123,7 +119,3 @@ If keyword overlap is detected between rules in the same request, emit a `## Con
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_dispatch_rule]] | upstream | 0.52 |
-| [[bld_collaboration_dispatch_rule]] | related | 0.44 |
-| [[bld_instruction_dispatch_rule]] | upstream | 0.43 |
-| [[p01_kc_dispatch_rule]] | related | 0.42 |
-| [[p11_qg_dispatch_rule]] | upstream | 0.41 |

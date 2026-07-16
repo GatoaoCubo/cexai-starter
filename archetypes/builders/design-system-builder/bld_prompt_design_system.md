@@ -18,8 +18,6 @@ related:
   - bld_schema_design_system
   - bld_output_design_system
   - bld_eval_design_system
-  - p06_vs_design_system
-  - p03_ps_design_system_library_scale
 ---
 
 # Process: build a design_system

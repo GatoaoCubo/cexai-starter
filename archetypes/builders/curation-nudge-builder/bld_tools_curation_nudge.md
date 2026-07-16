@@ -17,7 +17,6 @@ tldr: "F5 CALL tools for curation_nudge builder"
 keywords: [curation_nudge construction, curation nudge builder, tools, curation_nudge, builder, memory, "python _tools/cex_compile.py {path}", python _tools/cex_doctor.py, python _tools/cex_memory_select.py]
 density_score: 0.87
 related:
- - p11_tools_revision_loop_policy
  - bld_tools_context_map
  - bld_tools_event_schema
  - bld_tools_personality
@@ -77,7 +76,6 @@ def evaluate_nudge(nudge_config, session_state):
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_tools_revision_loop_policy]] | sibling | 0.38 |
 | [[bld_tools_context_map]] | related | 0.37 |
 | [[bld_tools_event_schema]] | related | 0.36 |
 | [[bld_tools_personality]] | related | 0.35 |

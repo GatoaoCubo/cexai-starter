@@ -30,9 +30,7 @@ density_score: 0.90
 related:
   - formatter-builder
   - bld_schema_formatter
-  - bld_knowledge_card_formatter
   - bld_config_parser
-  - p01_kc_formatter
 ---
 # Config: formatter Production Rules
 ## Naming Convention

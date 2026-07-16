@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - memory-scope-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_memory_scope
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # memory-summary-builder Sub-Agent

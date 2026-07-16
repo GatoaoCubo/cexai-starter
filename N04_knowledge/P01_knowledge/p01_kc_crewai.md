@@ -21,7 +21,6 @@ related:
   - p01_kc_langchain
   - p01_kc_dspy
   - kc_crew_template
-  - p12_ct_product_launch
 ---
 
 # CrewAI — Role-Based Multi-Agent Orchestration

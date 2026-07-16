@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [memory_benchmark construction, output template memory benchmark, memory_benchmark, builder, output_template, test cases, test case, memory usage, sample code, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_memory_benchmark
-  - bld_collaboration_memory_type
-  - bld_collaboration_memory_scope
-  - n00_memory_benchmark_manifest
   - bld_config_memory_benchmark
 ---
 ```yaml
@@ -54,8 +50,4 @@ def allocate_memory(size_mb):
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_benchmark]] | downstream | 0.38 |
-| [[bld_collaboration_memory_type]] | downstream | 0.37 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.34 |
-| [[n00_memory_benchmark_manifest]] | downstream | 0.33 |
 | [[bld_config_memory_benchmark]] | downstream | 0.30 |

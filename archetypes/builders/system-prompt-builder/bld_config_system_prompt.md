@@ -31,7 +31,6 @@ related:
   - bld_config_agent
   - bld_schema_system_prompt
   - bld_config_prompt_version
-  - bld_knowledge_card_system_prompt
   - bld_config_prompt_compiler
 ---
 # Config: system_prompt Production Rules

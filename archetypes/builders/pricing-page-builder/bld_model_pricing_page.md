@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_knowledge_card_pricing_page
-  - bld_instruction_pricing_page
-  - n00_pricing_page_manifest
-  - bld_collaboration_pricing_page
-  - p10_mem_pricing_page_builder
 ---
 ## Identity
 
@@ -69,12 +63,3 @@ ALWAYS use clear pricing hierarchy (e.g., "Most Popular" badges, feature compari
 ALWAYS include a free tier with limited functionality to drive upgrades.  
 NEVER use vague language (e.g., "best value" without metrics).  
 NEVER embed subscription_tier data or landing_page elements.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_pricing_page]] | upstream | 0.54 |
-| [[bld_instruction_pricing_page]] | upstream | 0.51 |
-| [[n00_pricing_page_manifest]] | related | 0.44 |
-| [[bld_collaboration_pricing_page]] | downstream | 0.42 |
-| [[p10_mem_pricing_page_builder]] | downstream | 0.39 |

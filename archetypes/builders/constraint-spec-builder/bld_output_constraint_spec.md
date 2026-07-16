@@ -30,12 +30,6 @@ keywords:
   - "## provider compatibility"
   - "## integration"
 density_score: 0.90
-related:
-  - bld_output_template_output_validator
-  - bld_output_template_hook_config
-  - bld_instruction_constraint_spec
-  - bld_output_template_runtime_rule
-  - bld_output_template_effort_profile
 ---
 # Output Template: constraint_spec
 ```yaml
@@ -92,7 +86,6 @@ max_tokens: "{{max_tokens}}}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_output_validator]] | sibling | 0.38 |
 | bld_output_template_hook_config | sibling | 0.37 |
 | [[bld_prompt_constraint_spec]] | upstream | 0.37 |
 | bld_output_template_runtime_rule | sibling | 0.36 |

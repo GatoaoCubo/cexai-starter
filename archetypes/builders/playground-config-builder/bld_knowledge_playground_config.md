@@ -19,10 +19,7 @@ playground, anthropic console, try it out, key concepts, openai playground]
 density_score: 0.85
 related:
   - bld_tools_playground_config
-  - bld_collaboration_playground_config
-  - p09_qg_playground_config
   - playground-config-builder
-  - n00_playground_config_manifest
 ---
 ## Domain Overview
 Playground_config artifacts define interactive, try-before-buy evaluation environments for AI products, APIs, and SDKs. The pattern is proven by OpenAI Playground (prompt + model + sampling controls), Anthropic Console, Swagger/OpenAPI "Try It Out" in-browser explorers, Replit and CodeSandbox embed APIs, and JupyterLite WASM kernels. The goal is zero-friction first-touch: the user runs a representative workload with sane defaults, hits resource caps safely, and sees a clear upgrade path to paid tiers.
@@ -70,7 +67,4 @@ A playground_config differs from a sandbox_spec: playground optimizes for conver
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_playground_config]] | downstream | 0.35 |
-| [[bld_collaboration_playground_config]] | downstream | 0.31 |
-| [[p09_qg_playground_config]] | downstream | 0.29 |
 | [[playground-config-builder]] | downstream | 0.29 |
-| [[n00_playground_config_manifest]] | sibling | 0.28 |

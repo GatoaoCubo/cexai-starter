@@ -31,10 +31,7 @@ keywords:
   - "spec table"
 density_score: 0.90
 related:
-  - bld_instruction_instruction
   - instruction-builder
-  - p01_kc_instruction
-  - bld_instruction_action_prompt
   - action-prompt-builder
 ---
 # Domain Knowledge: instruction

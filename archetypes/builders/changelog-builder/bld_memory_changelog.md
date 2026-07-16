@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [changelog construction, memory changelog, changelog, builder, memory, feat, breaking, features, bug fixes, breaking changes]
 density_score: 0.85
 related:
-  - kc_changelog
   - changelog-builder
-  - bld_knowledge_card_changelog
-  - bld_instruction_changelog
-  - bld_output_template_changelog
 ---
 ## Observation
 Inconsistent formatting and missing semver labels often lead to ambiguous changelogs. Mixing features, fixes, and breaking changes in a single entry can obscure impact and scope.
@@ -42,8 +38,4 @@ Reviewed artifacts from v2.1.0 to v3.0.0 showed that structured entries reduced 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_changelog]] | upstream | 0.39 |
 | [[changelog-builder]] | upstream | 0.37 |
-| [[bld_knowledge_card_changelog]] | upstream | 0.30 |
-| [[bld_instruction_changelog]] | upstream | 0.30 |
-| [[bld_output_template_changelog]] | upstream | 0.26 |

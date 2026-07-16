@@ -18,10 +18,7 @@ keywords: [govtech vertical, digital services analysis, govtech, digital_governm
 density_score: 1.0
 updated: "2026-04-22"
 related:
-  - bld_knowledge_card_govtech_vertical
   - govtech-vertical-builder
-  - p01_qg_govtech_vertical
-  - bld_instruction_govtech_vertical
   - bld_tools_govtech_vertical
 ---
 

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [self_improvement_loop construction, self_improvement_loop, builder, output_template, related artifacts, downstream, sibling, title, description, author]
 density_score: 0.85
-related:
-  - bld_output_template_sales_playbook
-  - p11_qg_self_improvement_loop
-  - kc_model_registry
-  - kc_benchmark_suite
-  - bld_output_template_course_module
 ---
 ```yaml
 ---
@@ -52,12 +46,3 @@ def self_improvement_loop():
         if metrics['accuracy'] > threshold:
             converged = True
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_sales_playbook]] | sibling | 0.20 |
-| [[p11_qg_self_improvement_loop]] | downstream | 0.17 |
-| [[kc_model_registry]] | upstream | 0.16 |
-| [[kc_benchmark_suite]] | upstream | 0.16 |
-| [[bld_output_template_course_module]] | sibling | 0.16 |

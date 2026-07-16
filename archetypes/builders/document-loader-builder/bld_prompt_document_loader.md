@@ -31,11 +31,7 @@ keywords:
 density_score: 0.92
 title: Instruction ISO - document_loader
 related:
-  - p11_qg_document_loader
-  - document_loader-builder
   - bld_schema_document_loader
-  - bld_output_template_document_loader
-  - bld_knowledge_card_document_loader
 ---
 # Instructions: How to Produce a document_loader
 
@@ -90,8 +86,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_document_loader]] | downstream | 0.42 |
-| [[document_loader-builder]] | related | 0.39 |
 | [[bld_schema_document_loader]] | downstream | 0.38 |
-| [[bld_output_template_document_loader]] | related | 0.38 |
 | [[bld_knowledge_document_loader]] | related | 0.37 |

@@ -33,8 +33,6 @@ density_score: 0.90
 related:
   - prompt-version-builder
   - bld_architecture_prompt_version
-  - bld_instruction_prompt_version
-  - bld_collaboration_prompt_version
   - bld_schema_prompt_version
 ---
 # Output Template: prompt_version

@@ -20,8 +20,6 @@ density_score: 0.90
 related:
   - bld_architecture_ontology
   - ontology-builder
-  - n00_ontology_manifest
-  - bld_instruction_ontology
   - bld_schema_ontology
 ---
 # Collaboration: ontology-builder

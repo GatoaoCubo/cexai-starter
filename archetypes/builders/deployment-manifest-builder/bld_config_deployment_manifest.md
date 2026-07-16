@@ -15,12 +15,6 @@ tldr: "Ordered list of context sources to inject at F3 INJECT for deployment_man
 8f: "F3_inject"
 keywords: [context sources, deployment_manifest builder, inject for deployment_manifest builds, context_sources, deployment_manifest, n0x_*/p09_config/p09_dm_*.md, injection order, knowledge card, quality gate, similarity scan]
 density_score: null
-related:
-  - bld_context_sources_canary_config
-  - bld_context_sources_slo_definition
-  - bld_context_sources_lineage_record
-  - bld_context_sources_saga
-  - bld_context_sources_bounded_context
 ---
 # Context Sources: deployment_manifest Builder
 
@@ -60,12 +54,3 @@ cross_refs_verified: true
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope {BUILDER}
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_context_sources_canary_config]] | sibling | 0.53 |
-| [[bld_context_sources_slo_definition]] | sibling | 0.48 |
-| [[bld_context_sources_lineage_record]] | sibling | 0.47 |
-| [[bld_context_sources_saga]] | sibling | 0.41 |
-| [[bld_context_sources_bounded_context]] | downstream | 0.40 |

@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [app_directory_entry construction, app_directory_entry, builder, output_template, related artifacts, category quality, downstream, category, sibling, description]
 density_score: 0.85
 related:
-  - bld_output_template_oauth_app_config
-  - bld_output_template_usage_quota
   - bld_schema_app_directory_entry
   - bld_config_app_directory_entry
-  - bld_output_template_marketplace_app_manifest
 ---
 ```yaml
 ---
@@ -54,8 +51,5 @@ cex-cli app show p05_ade_example_app
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_oauth_app_config]] | sibling | 0.25 |
-| [[bld_output_template_usage_quota]] | sibling | 0.24 |
 | [[bld_schema_app_directory_entry]] | downstream | 0.22 |
 | [[bld_config_app_directory_entry]] | downstream | 0.22 |
-| [[bld_output_template_marketplace_app_manifest]] | sibling | 0.19 |

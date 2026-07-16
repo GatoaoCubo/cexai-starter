@@ -45,11 +45,8 @@ keywords:
   - "full equal"
 density_score: 1.0
 related:
-  - bld_knowledge_card_retry_policy
   - bld_architecture_retry_policy
   - kc_retry_policy
-  - p10_lr_retry_policy_builder
-  - bld_collaboration_retry_policy
 ---
 ## Identity
 
@@ -131,5 +128,4 @@ ID must match `^p09_rtp_[a-z][a-z0-9_]+$`. Body must not exceed 2048 bytes.
 | [[bld_knowledge_retry_policy]] | upstream | 0.65 |
 | [[bld_architecture_retry_policy]] | upstream | 0.61 |
 | [[kc_retry_policy]] | upstream | 0.61 |
-| [[p10_lr_retry_policy_builder]] | downstream | 0.54 |
 | [[bld_orchestration_retry_policy]] | downstream | 0.48 |

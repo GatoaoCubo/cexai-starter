@@ -20,10 +20,7 @@ keywords: [workflow scheduling, cron validity, timezone declaration, workflow_re
 density_score: 0.90
 related:
   - schedule-builder
-  - bld_instruction_schedule
   - bld_schema_schedule
-  - bld_collaboration_schedule
-  - bld_knowledge_card_schedule
 ---
 ## Quality Gate
 

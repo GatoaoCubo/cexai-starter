@@ -20,8 +20,6 @@ related:
   - parser-builder
   - bld_schema_parser
   - bld_architecture_parser
-  - p03_ins_parser
-  - bld_output_template_parser
 ---
 ## Quality Gate
 
@@ -145,5 +143,3 @@ WHY THIS IS GOLDEN:
 | [[parser-builder]] | upstream | 0.47 |
 | [[bld_schema_parser]] | upstream | 0.45 |
 | [[bld_architecture_parser]] | upstream | 0.42 |
-| [[p03_ins_parser]] | upstream | 0.41 |
-| [[bld_output_template_parser]] | upstream | 0.38 |

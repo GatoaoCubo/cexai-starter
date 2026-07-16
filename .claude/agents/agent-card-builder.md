@@ -4,11 +4,8 @@ description: "Builds ONE agent_card artifact via 8F pipeline. Loads agent-card-b
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p01_kc_pillar_brief_p02_model_en
   - agent-builder
-  - bld_collaboration_agent
   - agent-card-builder
-  - p01_kc_pillar_brief_p08_architecture_en
 ---
 
 # agent-card-builder Sub-Agent

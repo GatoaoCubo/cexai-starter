@@ -19,9 +19,7 @@ density_score: 0.85
 related:
   - bld_tools_kind
   - bld_architecture_kind
-  - p11_fb_webinar_script
   - bld_config_kind
-  - p06_td_cex_artifact_type_n03
 ---
 ## Naming Convention
 
@@ -118,6 +116,4 @@ compile:
 |----------|-------------|-------|
 | [[bld_tools_kind]] | upstream | 0.29 |
 | [[bld_architecture_kind]] | upstream | 0.26 |
-| [[p11_fb_webinar_script]] | downstream | 0.26 |
 | [[bld_config_kind]] | sibling | 0.25 |
-| [[p06_td_cex_artifact_type_n03]] | upstream | 0.25 |

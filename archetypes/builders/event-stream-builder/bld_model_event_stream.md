@@ -19,10 +19,6 @@ domain: event_stream
 triggers: ["define event stream", "configure kafka topic", "set up kinesis stream", "real-time event feed"]
 keywords: [event_stream, kafka, kinesis, topic, partitioning, consumer_group, retention]
 related:
-  - bld_knowledge_card_event_stream
-  - kc_event_stream
-  - bld_rules_event_stream
-  - bld_instruction_event_stream
   - bld_architecture_event_stream
 ---
 ## Identity
@@ -87,8 +83,4 @@ coordination message. You only handle event stream configuration.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_event_stream]] | sibling | 0.47 |
-| [[kc_event_stream]] | sibling | 0.44 |
-| [[bld_rules_event_stream]] | sibling | 0.40 |
-| [[bld_instruction_event_stream]] | related | 0.38 |
 | [[bld_architecture_event_stream]] | sibling | 0.36 |

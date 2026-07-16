@@ -8,7 +8,6 @@ related:
   - bld_architecture_retrieval_evaluator
   - kind-builder
   - bld_orchestration_retrieval_evaluator
-  - p03_sp_builder_nucleus
 ---
 
 # retrieval-evaluator-builder Sub-Agent
@@ -88,4 +87,3 @@ Five duties bind any agent that emits an artifact:
 | [[bld_architecture_retrieval_evaluator]] | related | 0.33 |
 | [[kind-builder]] | related | 0.31 |
 | [[bld_orchestration_retrieval_evaluator]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |

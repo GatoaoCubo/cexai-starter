@@ -17,11 +17,8 @@ updated: "2026-07-03"
 keywords: [data flow, content factory construction, architecture content factory, content_factory, builder, content-fabric, component inventory, dependency map, depends_on, wire deferred]
 density_score: 0.90
 related:
-  - bld_architecture_social_publisher
-  - p01_kc_content_factory
   - content-factory-builder
   - bld_tools_content_factory
-  - p01_kc_content_library
 ---
 # Architecture: content_factory in the CEX
 
@@ -109,8 +106,5 @@ _instances/{tenant}/N02_marketing/   <- tenant-specific brief
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_architecture_social_publisher]] | sibling | 0.34 |
-| [[p01_kc_content_factory]] | upstream | 0.32 |
 | [[content-factory-builder]] | upstream | 0.30 |
 | [[bld_tools_content_factory]] | sibling | 0.28 |
-| [[p01_kc_content_library]] | related | 0.26 |

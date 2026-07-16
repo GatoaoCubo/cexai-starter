@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [competitive_matrix construction, instruction competitive matrix, competitive_matrix, builder, instruction, related artifacts, phase step, customer requirements, sales battle, propositions differentiators]
 density_score: 0.85
 related:
-  - bld_instruction_playground_config
-  - bld_instruction_planning_strategy
-  - bld_instruction_judge_config
-  - bld_instruction_eval_framework
   - competitive-matrix-builder
 ---
 ## Phase 1: RESEARCH  

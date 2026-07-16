@@ -17,10 +17,8 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - bld_output_template_learning_record
   - bld_memory_pattern
   - pattern-builder
-  - bld_output_template_axiom
   - bld_architecture_pattern
 ---
 # Output Template: pattern
@@ -104,8 +102,6 @@ Costs:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_learning_record]] | sibling | 0.33 |
 | [[bld_memory_pattern]] | downstream | 0.33 |
 | [[pattern-builder]] | downstream | 0.32 |
-| [[bld_output_template_axiom]] | sibling | 0.31 |
 | [[bld_architecture_pattern]] | downstream | 0.30 |

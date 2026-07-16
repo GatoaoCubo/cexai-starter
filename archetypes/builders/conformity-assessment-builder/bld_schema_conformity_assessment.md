@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [conformity_assessment construction, conformity_assessment, builder, schema, conformity assessment builder, level fields, clinical decision support]
 density_score: 0.85
 related:
-  - bld_instruction_conformity_assessment
   - bld_schema_model_registry
-  - bld_collaboration_conformity_assessment
-  - p03_constraint_brand_config_n06
   - bld_schema_dataset_card
 ---
 # Conformity Assessment Builder -- Schema
@@ -114,8 +111,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_conformity_assessment]] | upstream | 0.33 |
 | [[bld_schema_model_registry]] | sibling | 0.33 |
-| [[bld_collaboration_conformity_assessment]] | downstream | 0.32 |
-| [[p03_constraint_brand_config_n06]] | related | 0.30 |
 | [[bld_schema_dataset_card]] | sibling | 0.30 |

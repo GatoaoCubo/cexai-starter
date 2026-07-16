@@ -17,11 +17,7 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - kc_value_object
-  - bld_knowledge_card_value_object
-  - bld_manifest_value_object
   - bld_memory_value_object
-  - bld_context_sources_value_object
 ---
 # Architecture: value_object
 ## Pattern Origin
@@ -86,8 +82,4 @@ python _tools/cex_doctor.py --scope architecture
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_value_object]] | sibling | 0.45 |
-| [[bld_knowledge_card_value_object]] | sibling | 0.44 |
-| [[bld_manifest_value_object]] | sibling | 0.43 |
 | [[bld_memory_value_object]] | sibling | 0.36 |
-| [[bld_context_sources_value_object]] | sibling | 0.35 |

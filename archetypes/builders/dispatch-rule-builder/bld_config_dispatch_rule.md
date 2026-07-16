@@ -28,7 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, and operational constraints, dispatch rule construction, config dispatch rule, dispatch_rule, builder, examples, "p12_dr_{scope}.yaml", p12_dr_research.yaml]
 density_score: 0.90
 related:
-  - bld_output_template_dispatch_rule
   - dispatch-rule-builder
   - bld_schema_dispatch_rule
   - bld_config_signal
@@ -74,7 +73,6 @@ Rule: use `.yaml` only for this builder (frontmatter yaml + md body hybrid).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_dispatch_rule]] | upstream | 0.37 |
 | [[dispatch-rule-builder]] | downstream | 0.32 |
 | [[bld_schema_dispatch_rule]] | upstream | 0.31 |
 | [[bld_config_signal]] | sibling | 0.29 |

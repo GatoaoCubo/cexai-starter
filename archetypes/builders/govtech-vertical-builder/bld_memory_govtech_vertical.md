@@ -21,11 +21,8 @@ reviewed, domain scope
 this, related artifacts]
 density_score: 0.85
 related:
-  - bld_instruction_govtech_vertical
   - govtech-vertical-builder
-  - p01_qg_govtech_vertical
   - bld_tools_govtech_vertical
-  - bld_knowledge_card_govtech_vertical
 ---
 ## Observation
 Common issues include misalignment with FedRAMP or CJIS requirements during artifact design, leading to rework. Accessibility (Section 508) is often addressed late, causing gaps in user experience.
@@ -49,8 +46,5 @@ This learning record applies to govtech vertical artifact construction, covering
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_govtech_vertical]] | upstream | 0.47 |
 | [[govtech-vertical-builder]] | upstream | 0.46 |
-| [[p01_qg_govtech_vertical]] | downstream | 0.38 |
 | [[bld_tools_govtech_vertical]] | upstream | 0.38 |
-| [[bld_knowledge_card_govtech_vertical]] | upstream | 0.31 |

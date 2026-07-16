@@ -19,10 +19,6 @@ specializes, risk management, routing
 keywords]
 density_score: 0.85
 related:
-  - kc_safety_policy
-  - bld_collaboration_safety_policy
-  - p11_qg_safety_policy
-  - bld_instruction_safety_policy
   - compliance-framework-builder
 ---
 ## Identity
@@ -65,8 +61,4 @@ The safety_policy-builder agent is an AI governance specialist that creates orga
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_safety_policy]] | upstream | 0.50 |
-| [[bld_collaboration_safety_policy]] | downstream | 0.44 |
-| [[p11_qg_safety_policy]] | related | 0.40 |
-| [[bld_instruction_safety_policy]] | upstream | 0.39 |
 | [[compliance-framework-builder]] | sibling | 0.37 |

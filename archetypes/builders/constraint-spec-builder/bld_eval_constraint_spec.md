@@ -28,11 +28,7 @@ keywords:
   - "constraint-spec"
 density_score: 1.0
 related:
-  - p11_qg_output_validator
   - constraint-spec-builder
-  - p11_qg_chunk_strategy
-  - bld_instruction_constraint_spec
-  - p10_lr_constraint_spec_builder
 ---
 ## Quality Gate
 

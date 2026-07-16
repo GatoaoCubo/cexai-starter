@@ -19,10 +19,7 @@ keywords: [browser tool construction, knowledge card browser tool, browser_tool,
 browser, spec table, engine decision matrix, native chrome dev]
 density_score: 0.90
 related:
-  - p10_lr_browser_tool_builder
   - browser-tool-builder
-  - bld_instruction_browser_tool
-  - p04_browser_playwright
   - bld_config_browser_tool
 ---
 # Domain Knowledge: browser_tool
@@ -89,7 +86,6 @@ Fallback: attempt in priority order; try next if null.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_browser_tool_builder]] | downstream | 0.52 |
 | [[browser-tool-builder]] | downstream | 0.51 |
 | [[bld_prompt_browser_tool]] | downstream | 0.47 |
 | p04_browser_playwright | downstream | 0.46 |

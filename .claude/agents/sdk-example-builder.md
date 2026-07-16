@@ -4,11 +4,8 @@ description: "Builds ONE sdk_example artifact via 8F pipeline. Loads sdk-example
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_output_template_sdk_example
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_config_sdk_example
-  - n00_sdk_example_manifest
 ---
 
 # sdk-example-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_sdk_example]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
 | [[bld_config_sdk_example]] | related | 0.30 |
-| [[n00_sdk_example_manifest]] | related | 0.29 |

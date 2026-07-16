@@ -18,9 +18,7 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - kc_tagline
-  - n00_tagline_manifest
   - tagline-builder
-  - bld_output_template_tagline
   - bld_tools_tagline
 ---
 # Knowledge Card: Tagline
@@ -72,5 +70,4 @@ python _tools/cex_retriever.py "tagline construction" --top 5
 | [[kc_tagline]] | sibling | 0.63 |
 | n00_tagline_manifest | sibling | 0.46 |
 | [[tagline-builder]] | downstream | 0.45 |
-| [[bld_output_template_tagline]] | downstream | 0.42 |
 | [[bld_tools_tagline]] | downstream | 0.42 |

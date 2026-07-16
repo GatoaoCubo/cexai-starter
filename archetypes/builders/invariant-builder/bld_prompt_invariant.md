@@ -44,11 +44,9 @@ keywords:
 density_score: 0.91
 llm_function: REASON
 related:
-  - bld_knowledge_card_invariant
   - invariant-builder
   - bld_schema_invariant
   - bld_architecture_invariant
-  - p01_kc_invariant
 ---
 ## Context
 The invariant-builder produces `law` artifacts (P08) — inviolable operational mandates the system must always follow. Laws differ from instructions (flexible guides), guardrails (safety restrictions), and axioms (abstract truths): an invariant is an operational rule with enforcement consequences and a defined exception protocol.

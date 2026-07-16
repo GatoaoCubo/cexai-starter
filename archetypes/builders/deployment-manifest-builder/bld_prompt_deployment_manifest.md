@@ -24,11 +24,7 @@ tldr: "Build a deployment_manifest that specifies artifact list, target environm
 keywords: [deployment manifest builder instructions, target environment, config overrides, and rollback strategy, instruction, deployment_manifest, config, manifest_name, target_env, artifacts]
 density_score: null
 related:
-  - bld_manifest_deployment_manifest
-  - kc_deployment_manifest
   - bld_schema_deployment_manifest
-  - bld_quality_gate_deployment_manifest
-  - n00_env_config_manifest
 ---
 ## Context
 The deployment-manifest-builder produces a `deployment_manifest` artifact -- a structured specification of WHAT to deploy (artifacts + versions), WHERE (environment/target), HOW (config overrides, secrets), and what to do on failure (rollback). This is NOT env_config (runtime environment variables alone), NOT sandbox_spec (ephemeral test environment), NOT canary_config (traffic-split rollout).
@@ -82,8 +78,4 @@ Required body sections: Artifacts, Target Environment, Config Overrides, Rollbac
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_deployment_manifest]] | related | 0.48 |
-| [[kc_deployment_manifest]] | upstream | 0.47 |
 | [[bld_schema_deployment_manifest]] | upstream | 0.33 |
-| [[bld_quality_gate_deployment_manifest]] | upstream | 0.33 |
-| [[n00_env_config_manifest]] | related | 0.31 |

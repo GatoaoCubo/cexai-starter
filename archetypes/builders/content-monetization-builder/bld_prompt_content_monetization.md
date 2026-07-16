@@ -19,10 +19,7 @@ keywords: [content monetization construction, instruction content monetization, 
 density_score: 0.90
 related:
   - bld_architecture_content_monetization
-  - bld_knowledge_card_content_monetization
   - bld_tools_content_monetization
-  - bld_collaboration_content_monetization
-  - n06_kc_content_monetization
 ---
 # Instructions: How to Produce a content_monetization
 
@@ -109,4 +106,3 @@ related:
 | [[bld_knowledge_content_monetization]] | upstream | 0.48 |
 | [[bld_tools_content_monetization]] | downstream | 0.43 |
 | [[bld_orchestration_content_monetization]] | downstream | 0.40 |
-| [[n06_kc_content_monetization]] | upstream | 0.39 |

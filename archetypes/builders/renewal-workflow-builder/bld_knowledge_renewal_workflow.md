@@ -19,10 +19,6 @@ renewal]
 density_score: 0.85
 related:
   - renewal-workflow-builder
-  - bld_instruction_renewal_workflow
-  - bld_output_template_renewal_workflow
-  - p10_lr_renewal_workflow_builder
-  - bld_collaboration_renewal_workflow
 ---
 ## Domain Overview
 Renewal workflows are automated, stage-gated processes that manage the contract lifecycle from 90 days before expiration through close. Their primary metric is Gross Revenue Retention (GRR): the percentage of beginning ARR retained after renewal, excluding expansion. World-class GRR is >90% for enterprise SaaS. Renewal workflows are the operational backbone of CS teams, executed through Gainsight (health scoring + CTA automation) and Salesforce (opportunity management + contract amendments).
@@ -70,7 +66,3 @@ The 90/60/30-day cadence is the industry standard: 90 days for relationship buil
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[renewal-workflow-builder]] | downstream | 0.70 |
-| [[bld_instruction_renewal_workflow]] | downstream | 0.61 |
-| [[bld_output_template_renewal_workflow]] | downstream | 0.61 |
-| [[p10_lr_renewal_workflow_builder]] | downstream | 0.54 |
-| [[bld_collaboration_renewal_workflow]] | downstream | 0.54 |

@@ -22,7 +22,6 @@ related:
   - eval-metric-builder
   - eval-framework-builder
   - bld_knowledge_retrieval_evaluator
-  - p10_mem_eval_metric_builder
 ---
 ## Domain Overview
 Evaluation metrics are quantitative measures used to assess the performance of machine learning models, algorithms, or systems. They provide objective criteria for comparing alternatives, validating claims, and ensuring alignment with business or technical goals. In fields like NLP, computer vision, and recommendation systems, metrics such as accuracy, F1-score, or mean average precision (mAP) are critical for model iteration and deployment. Properly defined metrics ensure reproducibility, fairness, and transparency in AI systems, while poor definitions can lead to misleading conclusions or biased outcomes.
@@ -68,4 +67,3 @@ Evaluation metrics are quantitative measures used to assess the performance of m
 | [[eval-metric-builder]] | downstream | 0.34 |
 | eval-framework-builder | downstream | 0.25 |
 | bld_knowledge_retrieval_evaluator | sibling | 0.24 |
-| [[p10_mem_eval_metric_builder]] | downstream | 0.23 |

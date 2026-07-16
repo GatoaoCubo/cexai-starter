@@ -20,11 +20,7 @@ keywords: [template with, api client construction, output template api client, a
 1.]
 density_score: 0.90
 related:
-  - bld_output_template_mcp_server
-  - bld_schema_client
   - api-client-builder
-  - bld_instruction_client
-  - bld_collaboration_client
 ---
 # Output Template: client
 ```yaml
@@ -101,8 +97,4 @@ Headers: `{{required_headers}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_mcp_server]] | sibling | 0.37 |
-| [[bld_schema_client]] | downstream | 0.36 |
 | [[api-client-builder]] | upstream | 0.35 |
-| [[bld_instruction_client]] | upstream | 0.33 |
-| [[bld_collaboration_client]] | downstream | 0.31 |

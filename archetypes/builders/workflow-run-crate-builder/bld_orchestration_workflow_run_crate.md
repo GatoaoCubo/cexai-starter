@@ -19,9 +19,7 @@ packages]
 density_score: 0.85
 related:
   - workflow-run-crate-builder
-  - bld_knowledge_card_workflow_run_crate
   - bld_architecture_workflow_run_crate
-  - bld_collaboration_workflow_node
 ---
 ## Crew Role
 Packages scientific workflow execution provenance as FAIR-compliant RO-Crate 1.2 artifacts, enabling reproducibility verification and cross-platform workflow provenance sharing.
@@ -49,6 +47,4 @@ Does NOT handle: Galaxy workflow definition creation (use workflow-builder), raw
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-run-crate-builder]] | upstream | 0.46 |
-| [[bld_knowledge_card_workflow_run_crate]] | upstream | 0.37 |
 | [[bld_architecture_workflow_run_crate]] | upstream | 0.37 |
-| [[bld_collaboration_workflow_node]] | sibling | 0.35 |

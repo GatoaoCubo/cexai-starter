@@ -29,11 +29,7 @@ updated: "2026-04-17"
 keywords: [naming conventions, file paths, size limits, operational constraints, state machine construction, config state machine, states in upper_snake_case, events in upper_snake_case, guards as boolean expressions, state_machine]
 density_score: 0.90
 related:
-  - p10_lr_state_machine_builder
-  - kc_state_machine
-  - bld_collaboration_state_machine
   - bld_schema_state_machine
-  - bld_knowledge_card_state_machine
 ---
 # Config: state_machine Production Rules
 
@@ -126,8 +122,4 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_state_machine_builder]] | downstream | 0.60 |
-| [[kc_state_machine]] | upstream | 0.55 |
-| [[bld_collaboration_state_machine]] | downstream | 0.51 |
 | [[bld_schema_state_machine]] | upstream | 0.50 |
-| [[bld_knowledge_card_state_machine]] | upstream | 0.48 |

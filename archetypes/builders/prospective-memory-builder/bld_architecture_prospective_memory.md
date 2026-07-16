@@ -17,11 +17,7 @@ updated: "2026-04-17"
 keywords: [component map of prospective_memory, prospective memory construction, architecture prospective memory, distinct from p, workflow config, prospective_memory, builder, architecture, component inventory, boundary table]
 density_score: 0.90
 related:
-  - p01_kc_prospective_memory
   - prospective-memory-builder
-  - bld_knowledge_card_prospective_memory
-  - bld_collaboration_prospective_memory
-  - bld_instruction_prospective_memory
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -75,8 +71,4 @@ python _tools/cex_doctor.py --scope architecture
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prospective_memory]] | downstream | 0.47 |
 | [[prospective-memory-builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_prospective_memory]] | upstream | 0.40 |
-| [[bld_collaboration_prospective_memory]] | downstream | 0.37 |
-| [[bld_instruction_prospective_memory]] | upstream | 0.37 |

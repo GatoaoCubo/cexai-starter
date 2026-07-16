@@ -17,11 +17,7 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - kc_event_stream
   - bld_memory_event_stream
-  - bld_knowledge_card_event_stream
-  - bld_manifest_event_stream
-  - bld_instruction_event_stream
 ---
 # Architecture: event_stream
 ## Core Model
@@ -85,8 +81,4 @@ python _tools/cex_doctor.py --scope architecture
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_event_stream]] | sibling | 0.57 |
 | [[bld_memory_event_stream]] | sibling | 0.49 |
-| [[bld_knowledge_card_event_stream]] | sibling | 0.44 |
-| [[bld_manifest_event_stream]] | sibling | 0.38 |
-| [[bld_instruction_event_stream]] | related | 0.38 |

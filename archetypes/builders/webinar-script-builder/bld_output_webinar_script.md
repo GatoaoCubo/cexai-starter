@@ -27,10 +27,7 @@ keywords:
   - "template usage  copy"
 density_score: 0.85
 related:
-  - p05_ws_cex_intro
-  - bld_instruction_webinar_script
   - bld_schema_webinar_script
-  - p03_qg_webinar_script
   - webinar-script-builder
 ---
 ## Template Usage
@@ -130,8 +127,5 @@ See you next session."
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p05_ws_cex_intro]] | related | 0.58 |
-| [[bld_instruction_webinar_script]] | upstream | 0.57 |
 | [[bld_schema_webinar_script]] | downstream | 0.46 |
-| [[p03_qg_webinar_script]] | downstream | 0.45 |
 | [[webinar-script-builder]] | upstream | 0.35 |

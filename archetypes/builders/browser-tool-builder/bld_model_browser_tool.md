@@ -35,10 +35,6 @@ parent: null
 8f: "F5_call"
 related:
   - bld_architecture_browser_tool
-  - n00_browser_tool_manifest
-  - bld_knowledge_card_browser_tool
-  - bld_collaboration_browser_tool
-  - p01_kc_browser_tool
 ---
 ## Identity
 

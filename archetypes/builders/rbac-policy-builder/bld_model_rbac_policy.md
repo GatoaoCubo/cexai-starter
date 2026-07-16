@@ -20,11 +20,7 @@ acts, identity
 the]
 density_score: 0.85
 related:
-  - bld_knowledge_card_rbac_policy
   - kc_rbac_policy
-  - p10_mem_rbac_policy_builder
-  - bld_instruction_rbac_policy
-  - bld_collaboration_rbac_policy
 ---
 ## Identity
 
@@ -74,6 +70,5 @@ NEVER include identity management details (e.g., SSO, user attributes).
 |----------|-------------|-------|
 | [[bld_knowledge_rbac_policy]] | upstream | 0.67 |
 | [[kc_rbac_policy]] | upstream | 0.60 |
-| [[p10_mem_rbac_policy_builder]] | downstream | 0.56 |
 | [[bld_prompt_rbac_policy]] | upstream | 0.50 |
 | [[bld_orchestration_rbac_policy]] | downstream | 0.45 |

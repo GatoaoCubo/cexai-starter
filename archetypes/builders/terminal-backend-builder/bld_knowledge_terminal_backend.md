@@ -18,9 +18,6 @@ keywords: [terminal_backend construction, knowledge card link, terminal backend,
 density_score: 0.88
 related:
  - terminal-backend-builder
- - n00_terminal_backend_manifest
- - kc_terminal_backend
- - bld_instruction_terminal_backend
  - bld_architecture_terminal_backend
 ---
 
@@ -52,7 +49,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[terminal-backend-builder]] | downstream | 0.41 |
-| [[n00_terminal_backend_manifest]] | sibling | 0.36 |
-| [[kc_terminal_backend]] | sibling | 0.35 |
-| [[bld_instruction_terminal_backend]] | downstream | 0.34 |
 | [[bld_architecture_terminal_backend]] | downstream | 0.30 |

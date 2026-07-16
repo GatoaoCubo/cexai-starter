@@ -52,10 +52,6 @@ linked_artifacts:
 density_score: 0.90
 data_source: "docs/RELATORIO_DEV_GLM_ROTEAMENTO_CASCATA_2026_07_13.md; N05_operations/P07_evals/p07_bm_glm_openwebui.md; N01_intelligence/P07_evals/p07_bm_mission_bench.md; docs/IMPROVEMENT_REGISTER.md R-336..R-344"
 related:
-  - p07_bm_glm_openwebui
-  - p07_bm_mission_bench
-  - p02_mp_openwebui_glm
-  - p01_kc_prompt_caching_strategies_mode_b
   - kc_knowledge_vocabulary
 ---
 

@@ -19,10 +19,6 @@ keywords: [temporal workflow trigger specification, schedule construction, knowl
 density_score: 0.90
 related:
   - schedule-builder
-  - p11_qg_schedule
-  - bld_collaboration_schedule
-  - bld_instruction_schedule
-  - p01_kc_schedule
 ---
 # Domain Knowledge: schedule
 ## Executive Summary
@@ -93,7 +89,6 @@ Schedules are temporal trigger definitions that determine WHEN a workflow starts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[schedule-builder]] | downstream | 0.61 |
-| [[p11_qg_schedule]] | downstream | 0.53 |
 | [[bld_orchestration_schedule]] | downstream | 0.51 |
 | [[bld_prompt_schedule]] | downstream | 0.49 |
 | [[kc_schedule]] | sibling | 0.48 |

@@ -17,9 +17,7 @@ updated: "2026-07-03"
 related:
   - canonical-product-builder
   - kc_canonical_product
-  - bld_rules_canonical_product
   - bld_architecture_canonical_product
-  - bld_context_sources_canonical_product
 ---
 # Memory Patterns: canonical_product
 ## What to Remember
@@ -79,6 +77,4 @@ python _tools/cex_memory_update.py --check
 |----------|-------------|-------|
 | [[canonical-product-builder]] | upstream | 0.43 |
 | [[kc_canonical_product]] | upstream | 0.41 |
-| [[bld_rules_canonical_product]] | downstream | 0.38 |
 | [[bld_architecture_canonical_product]] | upstream | 0.36 |
-| [[bld_context_sources_canonical_product]] | related | 0.35 |

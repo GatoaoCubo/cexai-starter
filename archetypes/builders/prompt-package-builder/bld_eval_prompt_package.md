@@ -19,9 +19,6 @@ tldr: Quality gate for the Stage 1 -> Stage 2 handoff artifact -- validates the 
 8f: "F7_govern"
 density_score: 0.85
 related:
-  - p11_qg_prompt_template
-  - p03_ins_prompt_package
-  - bld_knowledge_card_prompt_package
   - prompt-package-builder
   - bld_memory_prompt_package
 ---
@@ -125,8 +122,6 @@ ISO, fill markers intact).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_prompt_template]] | sibling | 0.60 |
-| [[p03_ins_prompt_package]] | related | 0.52 |
 | [[bld_knowledge_prompt_package]] | related | 0.48 |
 | [[prompt-package-builder]] | upstream | 0.45 |
 | [[bld_memory_prompt_package]] | related | 0.40 |

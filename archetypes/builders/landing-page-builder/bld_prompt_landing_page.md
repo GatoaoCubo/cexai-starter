@@ -20,7 +20,6 @@ related:
   - landing-page-builder
   - kc_landing_page
   - bld_architecture_landing_page
-  - bld_quality_gate_landing_page
   - bld_schema_landing_page
 ---
 # Instruction: Landing Page Construction Pipeline
@@ -72,5 +71,4 @@ related:
 | [[landing-page-builder]] | downstream | 0.49 |
 | [[kc_landing_page]] | upstream | 0.45 |
 | [[bld_architecture_landing_page]] | downstream | 0.42 |
-| [[bld_quality_gate_landing_page]] | downstream | 0.39 |
 | [[bld_schema_landing_page]] | downstream | 0.36 |

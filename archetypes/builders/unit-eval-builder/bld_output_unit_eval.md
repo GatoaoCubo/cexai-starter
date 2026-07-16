@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F6_produce"
 keywords: [template with, for unit_eval production, unit eval construction, output template unit eval, unit_eval, builder, examples, output template, expected output, template standards]
 density_score: 0.90
-related:
-  - bld_output_template_e2e_eval
-  - bld_output_template_smoke_eval
-  - bld_output_template_golden_test
-  - bld_knowledge_card_unit_eval
-  - p11_qg_unit_eval
 ---
 # Output Template: unit_eval
 ```yaml
@@ -92,6 +86,4 @@ density_score: {{0.80_to_1.00}}
 |----------|-------------|-------|
 | bld_output_template_e2e_eval | sibling | 0.41 |
 | bld_output_template_smoke_eval | sibling | 0.41 |
-| [[bld_output_template_golden_test]] | sibling | 0.41 |
 | [[bld_knowledge_unit_eval]] | upstream | 0.37 |
-| [[p11_qg_unit_eval]] | downstream | 0.37 |

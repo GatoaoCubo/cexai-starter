@@ -29,12 +29,6 @@ tldr: Golden and anti-examples for context doc construction, demonstrating ideal
 llm_function: BECOME
 parent: null
 8f: "F3_inject"
-related:
-  - bld_collaboration_context_doc
-  - bld_knowledge_card_context_doc
-  - p01_kc_context_doc
-  - n00_context_doc_manifest
-  - bld_instruction_context_doc
 ---
 ## Identity
 

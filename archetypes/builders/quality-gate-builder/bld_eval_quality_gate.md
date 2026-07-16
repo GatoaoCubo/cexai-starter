@@ -21,12 +21,6 @@ updated: '2026-03-27'
 8f: "F7_govern"
 keywords: [quality gate, verifies hard, soft structure, kind: quality_gate, yaml.safe_load(frontmatter), p11_qg_*, id.startswith("p11_qg_")]
 density_score: 0.85
-related:
-  - bld_knowledge_card_quality_gate
-  - p11_qg_response_format
-  - p11_qg_prompt_template
-  - p11_qg_creation_artifacts
-  - p11_qg_orchestration_artifacts
 ---
 ## Quality Gate
 

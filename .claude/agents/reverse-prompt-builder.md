@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - prompt-template-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_reverse_prompt
   - kind-builder
-  - p01_kc_reverse_prompt
 ---
 
 # reverse-prompt-builder Sub-Agent
@@ -89,7 +86,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-template-builder]] | related | 0.34 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
-| [[bld_collaboration_reverse_prompt]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p01_kc_reverse_prompt]] | related | 0.31 |

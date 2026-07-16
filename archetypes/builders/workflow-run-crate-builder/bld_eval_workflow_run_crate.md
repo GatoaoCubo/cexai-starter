@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [workflow_run_crate construction, workflow_run_crate, builder, quality_gate, ro-crate, workflow-run, createaction]
 density_score: 0.85
 related:
-  - bld_knowledge_card_workflow_run_crate
-  - bld_instruction_workflow_run_crate
   - workflow-run-crate-builder
   - bld_tools_workflow_run_crate
-  - p10_lr_workflow_run_crate_builder
 ---
 ## Quality Gate
 
@@ -155,8 +152,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_workflow_run_crate]] | upstream | 0.55 |
-| [[bld_instruction_workflow_run_crate]] | upstream | 0.50 |
 | [[workflow-run-crate-builder]] | upstream | 0.49 |
 | [[bld_tools_workflow_run_crate]] | upstream | 0.43 |
-| [[p10_lr_workflow_run_crate_builder]] | upstream | 0.41 |

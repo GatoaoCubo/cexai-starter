@@ -31,10 +31,6 @@ parent: null
 8f: "F7_govern"
 related:
   - bld_memory_smoke_eval
-  - bld_collaboration_smoke_eval
-  - bld_knowledge_card_smoke_eval
-  - n00_smoke_eval_manifest
-  - p11_qg_smoke-eval
 ---
 ## Identity
 
@@ -131,7 +127,3 @@ Max body: 4096 bytes. Every check has a binary verdict. No subjective pass condi
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_smoke_eval]] | downstream | 0.59 |
-| [[bld_collaboration_smoke_eval]] | related | 0.56 |
-| [[bld_knowledge_card_smoke_eval]] | related | 0.50 |
-| [[n00_smoke_eval_manifest]] | related | 0.50 |
-| [[p11_qg_smoke-eval]] | downstream | 0.49 |

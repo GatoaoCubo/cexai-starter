@@ -44,11 +44,7 @@ keywords:
   - "identity prospective-memory-builder"
 density_score: 0.98
 related:
-  - p01_kc_prospective_memory
   - bld_architecture_prospective_memory
-  - bld_knowledge_card_prospective_memory
-  - bld_instruction_prospective_memory
-  - bld_collaboration_prospective_memory
 ---
 ## Identity
 
@@ -116,8 +112,4 @@ ID must match `^p10_pm_[a-z][a-z0-9_]+$`. Body must not exceed 2048 bytes.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prospective_memory]] | related | 0.62 |
 | [[bld_architecture_prospective_memory]] | upstream | 0.58 |
-| [[bld_knowledge_card_prospective_memory]] | upstream | 0.57 |
-| [[bld_instruction_prospective_memory]] | upstream | 0.53 |
-| [[bld_collaboration_prospective_memory]] | downstream | 0.50 |

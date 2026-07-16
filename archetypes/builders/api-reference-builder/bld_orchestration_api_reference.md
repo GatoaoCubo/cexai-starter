@@ -19,11 +19,7 @@ generates, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_sdk_example
-  - bld_collaboration_integration_guide
-  - bld_collaboration_openapi_spec
   - api-reference-builder
-  - bld_collaboration_ab_test_config
 ---
 ## Crew Role  
 Generates and maintains accurate, up-to-date API reference documentation from specifications, ensuring clarity for developers and users.  
@@ -48,8 +44,4 @@ Does NOT validate schema correctness (spec_validator handles this) or implement 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_sdk_example]] | sibling | 0.38 |
-| [[bld_collaboration_integration_guide]] | sibling | 0.26 |
-| [[bld_collaboration_openapi_spec]] | sibling | 0.25 |
 | [[api-reference-builder]] | upstream | 0.24 |
-| [[bld_collaboration_ab_test_config]] | sibling | 0.24 |

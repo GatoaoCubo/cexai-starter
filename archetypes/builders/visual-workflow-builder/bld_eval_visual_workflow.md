@@ -18,9 +18,6 @@ keywords: [visual_workflow construction, quality gate visual workflow, visual_wo
 density_score: 0.85
 related:
   - visual-workflow-builder
-  - kc_visual_workflow
-  - p01_kc_workflow
-  - bld_collaboration_visual_workflow
   - bld_architecture_workflow
 ---
 ## Quality Gate

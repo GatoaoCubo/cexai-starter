@@ -29,10 +29,7 @@ density_score: 0.91
 llm_function: REASON
 related:
   - vector-store-builder
-  - p11_qg_vector_store
-  - bld_output_template_vector_store
   - bld_schema_vector_store
-  - bld_knowledge_card_vector_store
 ---
 ## Context
 The vector-store-builder produces `vector_store` artifacts (P01) — vector database storage configurations for RAG pipelines. Configs specify the backend type, connection details, collection naming, dimension contract, distance metric, index type and parameters, metadata filtering, and lifecycle operations. A vector_store is a storage config, not an embedder_provider (embedding model), not a model_provider (LLM routing), and not a retriever (query pipeline).
@@ -109,7 +106,5 @@ Score all SOFT gates. If soft score < 8.0, revise in the same pass.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[vector-store-builder]] | upstream | 0.50 |
-| [[p11_qg_vector_store]] | downstream | 0.47 |
-| [[bld_output_template_vector_store]] | downstream | 0.47 |
 | [[bld_schema_vector_store]] | downstream | 0.46 |
 | [[bld_knowledge_vector_store]] | upstream | 0.46 |

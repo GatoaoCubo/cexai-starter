@@ -21,10 +21,6 @@ reviewed, related artifacts]
 density_score: 0.85
 related:
   - app-directory-entry-builder
-  - bld_knowledge_card_app_directory_entry
-  - bld_instruction_app_directory_entry
-  - kc_app_directory_entry
-  - p05_qg_app_directory_entry
 ---
 ## Observation
 Common issues include vague taglines, low-resolution screenshots, and incomplete install steps that omit critical prerequisites. Demo links often point to non-functional or outdated URLs.
@@ -46,7 +42,3 @@ Reviewed artifacts with "FREE-tier" taglines saw 30% higher engagement; entries 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[app-directory-entry-builder]] | upstream | 0.41 |
-| [[bld_knowledge_card_app_directory_entry]] | upstream | 0.40 |
-| [[bld_instruction_app_directory_entry]] | upstream | 0.38 |
-| [[kc_app_directory_entry]] | upstream | 0.37 |
-| [[p05_qg_app_directory_entry]] | downstream | 0.29 |

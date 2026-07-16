@@ -32,9 +32,6 @@ keywords:
 density_score: 0.88
 related:
   - bld_schema_field_manifest
-  - bld_output_template_input_schema
-  - p10_lr_field_manifest_builder
-  - bld_instruction_field_manifest
   - bld_schema_input_schema
 ---
 # Output Template: field_manifest
@@ -142,7 +139,4 @@ density_score: {{0.80_to_1.00}}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_field_manifest]] | downstream | 0.39 |
-| [[bld_output_template_input_schema]] | sibling | 0.37 |
-| [[p10_lr_field_manifest_builder]] | downstream | 0.33 |
-| [[bld_instruction_field_manifest]] | upstream | 0.30 |
 | [[bld_schema_input_schema]] | sibling | 0.28 |

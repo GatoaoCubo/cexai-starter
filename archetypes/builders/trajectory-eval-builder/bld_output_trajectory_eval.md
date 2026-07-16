@@ -18,9 +18,6 @@ keywords: [trajectory_eval construction, output template trajectory eval, templa
 density_score: 0.86
 related:
   - bld_schema_trajectory_eval
-  - p07_qg_trajectory_eval
-  - bld_knowledge_card_trajectory_eval
-  - bld_instruction_trajectory_eval
   - bld_architecture_trajectory_eval
 ---
 ```yaml
@@ -91,7 +88,4 @@ tool_call_accuracy: {{precision_float}}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_trajectory_eval]] | downstream | 0.44 |
-| [[p07_qg_trajectory_eval]] | downstream | 0.36 |
-| [[bld_knowledge_card_trajectory_eval]] | upstream | 0.32 |
-| [[bld_instruction_trajectory_eval]] | upstream | 0.25 |
 | [[bld_architecture_trajectory_eval]] | downstream | 0.25 |

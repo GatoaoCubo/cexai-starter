@@ -18,10 +18,7 @@ keywords: [crew_template construction, instruction crew template, crew_template,
 density_score: 0.87
 related:
   - crew-template-builder
-  - p11_qg_crew_template
-  - bld_knowledge_card_crew_template
   - bld_schema_crew_template
-  - p10_lr_crew_template_builder
 ---
 ## Phase 1: RESEARCH
 1. Identify crew purpose and task boundary (what the team will produce).
@@ -54,7 +51,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[crew-template-builder]] | downstream | 0.55 |
-| [[p11_qg_crew_template]] | downstream | 0.44 |
 | [[bld_knowledge_crew_template]] | upstream | 0.42 |
 | [[bld_schema_crew_template]] | downstream | 0.38 |
-| [[p10_lr_crew_template_builder]] | downstream | 0.38 |

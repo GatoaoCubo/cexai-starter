@@ -6,9 +6,7 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - axiom-builder
   - bld_architecture_axiom
-  - n00_axiom_manifest
   - bld_config_axiom
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # axiom-builder Sub-Agent

@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_user_journey
-  - n00_user_journey_manifest
   - kind-builder
-  - p03_sp_builder_nucleus
   - system-prompt-builder
 ---
 
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_user_journey]] | related | 0.33 |
-| [[n00_user_journey_manifest]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[system-prompt-builder]] | related | 0.27 |

@@ -4,11 +4,8 @@ description: "Builds ONE value_object artifact via 8F pipeline. Loads value-obje
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_manifest_value_object
   - bld_tools_value_object
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # value-object-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_value_object]] | related | 0.34 |
 | [[bld_tools_value_object]] | related | 0.33 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |

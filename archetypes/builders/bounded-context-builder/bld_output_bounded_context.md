@@ -17,9 +17,6 @@ updated: "2026-04-17"
 related:
   - bounded-context-builder
   - bld_schema_bounded_context
-  - bld_instruction_bounded_context
-  - p01_kc_bounded_context
-  - bld_qg_bounded_context
 ---
 # Output Template: bounded_context
 ```markdown
@@ -69,6 +66,3 @@ tags: [{{context}}, bounded-context, ddd]
 |----------|-------------|-------|
 | [[bounded-context-builder]] | downstream | 0.51 |
 | [[bld_schema_bounded_context]] | downstream | 0.44 |
-| [[bld_instruction_bounded_context]] | related | 0.36 |
-| [[p01_kc_bounded_context]] | upstream | 0.36 |
-| [[bld_qg_bounded_context]] | downstream | 0.34 |

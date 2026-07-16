@@ -19,10 +19,6 @@ the, key concepts, security standards council, collaborative filtering, sys conf
 density_score: 0.85
 related:
   - ecommerce-vertical-builder
-  - kc_ecommerce_vertical
-  - p10_mem_ecommerce_vertical_builder
-  - p01_qg_ecommerce_vertical
-  - bld_instruction_ecommerce_vertical
 ---
 ## Domain Overview
 The eCommerce industry vertical centers on digital commerce, encompassing user journeys from product discovery to purchase completion. Core components include cart/checkout systems, which must balance usability with security (e.g., PCI-DSS compliance), and recommendation engines that leverage user behavior data to drive conversions. Fraud detection is critical, with attacks like card-not-present (CNP) fraud rising 25% YoY (2023 Verizon DBIR). Use cases span personalized marketing, dynamic pricing, and inventory management, often requiring integration with third-party APIs and real-time analytics.
@@ -68,7 +64,3 @@ Key challenges involve reconciling scalability with compliance, optimizing conve
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ecommerce-vertical-builder]] | related | 0.57 |
-| [[kc_ecommerce_vertical]] | sibling | 0.52 |
-| [[p10_mem_ecommerce_vertical_builder]] | downstream | 0.51 |
-| [[p01_qg_ecommerce_vertical]] | downstream | 0.47 |
-| [[bld_instruction_ecommerce_vertical]] | downstream | 0.43 |

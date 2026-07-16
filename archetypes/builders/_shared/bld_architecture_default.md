@@ -17,10 +17,8 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-22"
 related:
-  - p06_td_cex_artifact_type_n03
   - bld_schema_kind
   - bld_eval_default
-  - p01_faq_cex_common_questions
   - bld_feedback_default
 ---
 # P08 Architecture — Default Component Map
@@ -131,5 +129,4 @@ python _tools/cex_doctor.py --scope architecture
 | p06_td_cex_artifact_type_n03 | upstream | 0.45 |
 | bld_schema_kind | upstream | 0.36 |
 | [[bld_eval_default]] | sibling | 0.35 |
-| [[p01_faq_cex_common_questions]] | upstream | 0.34 |
 | [[bld_feedback_default]] | sibling | 0.33 |

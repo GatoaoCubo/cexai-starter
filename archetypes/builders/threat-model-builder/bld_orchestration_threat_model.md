@@ -21,9 +21,7 @@ density_score: 0.85
 related:
   - threat-model-builder
   - bld_architecture_threat_model
-  - p10_lr_threat_model_builder
   - bld_config_threat_model
-  - p11_qg_threat_model
 ---
 ## Crew Role  
 
@@ -52,6 +50,4 @@ Does NOT enforce safety policies (handled by safety_policy) or implement runtime
 |----------|-------------|-------|
 | [[threat-model-builder]] | upstream | 0.48 |
 | [[bld_architecture_threat_model]] | upstream | 0.46 |
-| [[p10_lr_threat_model_builder]] | upstream | 0.39 |
 | [[bld_config_threat_model]] | upstream | 0.34 |
-| [[p11_qg_threat_model]] | upstream | 0.33 |

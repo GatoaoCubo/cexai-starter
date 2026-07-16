@@ -18,9 +18,7 @@ keywords: [competitive_matrix construction, knowledge card competitive matrix, g
 density_score: 0.85
 related:
   - competitive-matrix-builder
-  - bld_knowledge_card_analyst_briefing
   - bld_schema_competitive_matrix
-  - p01_qg_competitive_matrix
   - analyst-briefing-builder
 ---
 ## Domain Overview
@@ -72,5 +70,4 @@ Battle cards are per-competitor derivatives: 1-pager with us-vs-them per capabil
 | [[competitive-matrix-builder]] | related | 0.47 |
 | bld_knowledge_card_analyst_briefing | sibling | 0.41 |
 | [[bld_schema_competitive_matrix]] | downstream | 0.38 |
-| [[p01_qg_competitive_matrix]] | downstream | 0.34 |
 | analyst-briefing-builder | downstream | 0.33 |

@@ -28,11 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, workflow construction, config workflow, workflow, builder, examples, "p12_wf_{name_slug}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_workflow
   - bld_memory_workflow
-  - p03_ins_workflow
-  - bld_collaboration_workflow
-  - p01_kc_workflow
 ---
 # Config: workflow Production Rules
 ## Naming Convention
@@ -73,8 +69,4 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_workflow]] | upstream | 0.47 |
 | [[bld_memory_workflow]] | downstream | 0.38 |
-| [[p03_ins_workflow]] | upstream | 0.37 |
-| [[bld_collaboration_workflow]] | downstream | 0.37 |
-| [[p01_kc_workflow]] | downstream | 0.37 |

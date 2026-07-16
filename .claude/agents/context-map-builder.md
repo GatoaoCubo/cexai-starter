@@ -5,10 +5,8 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_tools_context_map
   - context-map-builder
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # context-map-builder Sub-Agent
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[bld_tools_context_map]] | related | 0.31 |
 | [[context-map-builder]] | related | 0.29 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |

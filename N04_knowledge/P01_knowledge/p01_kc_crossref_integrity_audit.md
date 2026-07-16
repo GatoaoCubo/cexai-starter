@@ -14,15 +14,8 @@ tags:
 audit_date: 2026-04-28
 audit_scope: all_nuclei
 related:
-  - bld_knowledge_card_nucleus_def
-  - audit_self_review_n05
-  - p12_ct_cex_full_grid
-  - audit_self_review_n01
-  - p07_bm_kind_gap_audit_m1
   - kc_orchestration_vocabulary
-  - audit_self_review_n03
   - bld_architecture_default
-  - p01_kc_cex_project_overview
 when_to_use: "Load when working on Cross-Reference Integrity Audit -- CEXAI Knowledge Base in P01. Consult for how to act on this knowledge_card."
 slots:
   query_context: "<the question this card is recalled to answer>"

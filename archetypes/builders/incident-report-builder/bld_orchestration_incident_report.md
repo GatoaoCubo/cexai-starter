@@ -20,9 +20,6 @@ does]
 density_score: 0.85
 related:
   - incident-report-builder
-  - p11_fb_incident_report
-  - n00_incident_report_manifest
-  - bld_knowledge_card_incident_report
   - bld_architecture_incident_report
 ---
 ## Crew Role  
@@ -49,7 +46,4 @@ Does NOT handle auto-fixes (bugloop) or generic learning (learning_record). Auto
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[incident-report-builder]] | upstream | 0.44 |
-| [[p11_fb_incident_report]] | upstream | 0.31 |
-| [[n00_incident_report_manifest]] | upstream | 0.31 |
-| [[bld_knowledge_card_incident_report]] | upstream | 0.30 |
 | [[bld_architecture_incident_report]] | upstream | 0.29 |

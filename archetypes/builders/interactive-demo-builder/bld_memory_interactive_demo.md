@@ -21,10 +21,6 @@ reviewed, analytics dashboard, related artifacts]
 density_score: 0.85
 related:
   - interactive-demo-builder
-  - kc_interactive_demo
-  - bld_instruction_interactive_demo
-  - bld_knowledge_card_interactive_demo
-  - p05_qg_interactive_demo
 ---
 ## Observation
 Common issues include inconsistent step numbering, mismatched talk track timing, and unclear user goals in demo scripts. Overlooking device-specific interaction nuances often leads to incomplete walkthroughs.
@@ -46,7 +42,3 @@ Reviewed artifacts showed 30% fewer errors when steps included both visual and v
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[interactive-demo-builder]] | upstream | 0.38 |
-| [[kc_interactive_demo]] | upstream | 0.33 |
-| [[bld_instruction_interactive_demo]] | upstream | 0.33 |
-| [[bld_knowledge_card_interactive_demo]] | upstream | 0.31 |
-| [[p05_qg_interactive_demo]] | downstream | 0.30 |

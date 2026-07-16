@@ -32,10 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - decision-record-builder
-  - p10_lr_decision_record_builder
-  - p01_kc_decision_record
   - bld_architecture_decision_record
-  - bld_collaboration_decision_record
 ---
 # Domain Knowledge: decision_record
 ## Executive Summary
@@ -109,7 +106,6 @@ proposed --> accepted --> deprecated
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[decision-record-builder]] | downstream | 0.66 |
-| [[p10_lr_decision_record_builder]] | downstream | 0.59 |
 | [[kc_decision_record]] | sibling | 0.57 |
 | [[bld_architecture_decision_record]] | downstream | 0.57 |
 | [[bld_orchestration_decision_record]] | downstream | 0.55 |

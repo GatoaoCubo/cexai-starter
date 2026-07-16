@@ -30,8 +30,6 @@ density_score: 0.86
 llm_function: REASON
 related:
   - signal-builder
-  - bld_knowledge_card_signal
-  - p11_qg_signal
   - bld_architecture_signal
   - bld_schema_signal
 ---

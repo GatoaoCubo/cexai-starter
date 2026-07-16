@@ -17,11 +17,8 @@ updated: "2026-04-13"
 keywords: [voice_pipeline construction, output template, pipeline stages table, data flow, fallback chains, error recovery, voice_pipeline]
 density_score: 0.90
 related:
-  - p11_qg_voice_pipeline
-  - bld_knowledge_card_voice_pipeline
   - voice-pipeline-builder
   - bld_memory_voice_pipeline
-  - bld_knowledge_card_audio_tool
 ---
 ## Artifact Frontmatter (emit verbatim, fill all `{{placeholders}}`)
 ```yaml
@@ -94,8 +91,5 @@ updated: {{updated_at}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_voice_pipeline]] | downstream | 0.59 |
-| [[bld_knowledge_card_voice_pipeline]] | upstream | 0.48 |
 | [[voice-pipeline-builder]] | upstream | 0.47 |
 | [[bld_memory_voice_pipeline]] | downstream | 0.47 |
-| [[bld_knowledge_card_audio_tool]] | upstream | 0.44 |

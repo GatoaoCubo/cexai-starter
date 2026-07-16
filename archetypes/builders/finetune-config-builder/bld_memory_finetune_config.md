@@ -34,10 +34,6 @@ fine, for llama, for mistral, for qwen]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p11_qg_finetune_config
-  - p01_kc_finetune_config
-  - p10_lr_batch_config_builder
-  - p11_fb_batch_config
   - finetune-config-builder
 ---
 ## Summary
@@ -113,8 +109,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_finetune_config_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_finetune_config]] | downstream | 0.26 |
-| [[p01_kc_finetune_config]] | upstream | 0.25 |
-| [[p10_lr_batch_config_builder]] | sibling | 0.25 |
-| [[p11_fb_batch_config]] | downstream | 0.25 |
 | [[finetune-config-builder]] | upstream | 0.24 |

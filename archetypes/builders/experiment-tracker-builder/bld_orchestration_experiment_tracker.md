@@ -17,12 +17,6 @@ updated: "2026-04-13"
 keywords: [experiment_tracker construction, collaboration experiment tracker, experiment_tracker, builder, collaboration, crew role
 architects, receives from, produces for, related artifacts, sibling]
 density_score: 0.85
-related:
-  - bld_collaboration_dataset_card
-  - bld_collaboration_usage_report
-  - bld_collaboration_eval_framework
-  - bld_collaboration_cohort_analysis
-  - bld_collaboration_benchmark_suite
 ---
 ## Crew Role
 Architects the centralized system for logging, storing, and
@@ -47,12 +41,3 @@ across all active experiment runs to enable longitudinal analysis.
 - Does NOT define single-run hyperparameters (handled by experiment_config).
 - Does NOT execute evaluation suites or test logic (handled by benchmark).
 - Does NOT manage raw data ingestion or cleaning (handled by data_pipeline).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_dataset_card]] | sibling | 0.30 |
-| [[bld_collaboration_usage_report]] | sibling | 0.27 |
-| [[bld_collaboration_eval_framework]] | sibling | 0.25 |
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.25 |
-| [[bld_collaboration_benchmark_suite]] | sibling | 0.24 |

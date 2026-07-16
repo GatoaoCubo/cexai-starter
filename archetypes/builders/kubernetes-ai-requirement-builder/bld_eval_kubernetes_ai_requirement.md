@@ -18,9 +18,6 @@ keywords: [kubernetes_ai_requirement construction, kubernetes_ai_requirement, bu
 density_score: 0.85
 related:
   - kubernetes-ai-requirement-builder
-  - bld_knowledge_card_kubernetes_ai_requirement
-  - bld_instruction_kubernetes_ai_requirement
-  - bld_output_template_kubernetes_ai_requirement
   - bld_schema_kubernetes_ai_requirement
 ---
 ## Quality Gate

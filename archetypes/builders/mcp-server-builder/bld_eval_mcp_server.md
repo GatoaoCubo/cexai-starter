@@ -18,11 +18,8 @@ updated: "2026-03-27"
 keywords: [mcp server, tool list, transport type, auth strategy, json-schema]
 density_score: 0.85
 related:
-  - p03_ins_mcp_server
   - bld_memory_mcp_server
-  - bld_collaboration_mcp_server
   - mcp-server-builder
-  - n00_mcp_server_manifest
 ---
 ## Quality Gate
 
@@ -154,7 +151,6 @@ Provides weather data to agents.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_mcp_server]] | upstream | 0.50 |
 | [[bld_memory_mcp_server]] | upstream | 0.45 |
 | [[bld_orchestration_mcp_server]] | upstream | 0.44 |
 | [[mcp-server-builder]] | upstream | 0.44 |

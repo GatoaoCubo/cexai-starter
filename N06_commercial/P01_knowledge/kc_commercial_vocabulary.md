@@ -14,11 +14,7 @@ keywords: [knowledge card -- n, commercial controlled vocabulary, vocabulary, co
 canonical, canonical terms]
 density_score: 0.99
 related:
-  - eval_metric_commercial
-  - p08_pat_pricing_framework
-  - subscription_tier_n06
   - p01_kc_few_shot_examples_pricing_scenarios
-  - bld_knowledge_card_subscription_tier
 updated: "2026-05-27"
 ---
 

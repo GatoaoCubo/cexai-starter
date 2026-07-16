@@ -21,10 +21,6 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_collaboration_threat_model
-  - bld_knowledge_card_threat_model
-  - p10_lr_threat_model_builder
-  - p11_qg_threat_model
   - bld_architecture_threat_model
 ---
 ## Identity
@@ -72,8 +68,4 @@ The threat_model-builder agent is a specialized AI system that produces structur
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_threat_model]] | downstream | 0.61 |
-| [[bld_knowledge_card_threat_model]] | upstream | 0.56 |
-| [[p10_lr_threat_model_builder]] | upstream | 0.50 |
-| [[p11_qg_threat_model]] | related | 0.47 |
 | [[bld_architecture_threat_model]] | upstream | 0.45 |

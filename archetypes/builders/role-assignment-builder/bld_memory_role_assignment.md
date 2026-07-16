@@ -19,11 +19,7 @@ in, pattern
 the crew, related artifacts]
 density_score: 0.87
 related:
-  - bld_knowledge_card_role_assignment
   - role-assignment-builder
-  - p11_qg_role_assignment
-  - bld_output_template_role_assignment
-  - bld_instruction_role_assignment
 ---
 ## Observation
 In WAVE8 role-assignment pilots, roles authored with activity-goals ("research topic X", "write draft") had 2x more rebuild cycles than roles with outcome-goals ("produce 8-12 sources with conf >= 0.75"). Generic backstories ("helpful assistant") correlated with steerability failures: the LLM drifted into off-topic responses 3x more often than with domain-grounded backstories. Tools_allowed with wildcards ([*]) led to phantom-tool crashes at F5 CALL stage.
@@ -50,6 +46,4 @@ The CrewAI persona triad (role + goal + backstory) is a steerability contract, n
 |----------|-------------|-------|
 | [[bld_knowledge_role_assignment]] | upstream | 0.39 |
 | [[role-assignment-builder]] | upstream | 0.35 |
-| [[p11_qg_role_assignment]] | downstream | 0.30 |
-| [[bld_output_template_role_assignment]] | upstream | 0.28 |
 | [[bld_prompt_role_assignment]] | upstream | 0.27 |

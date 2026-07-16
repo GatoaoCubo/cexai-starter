@@ -17,9 +17,7 @@ updated: "2026-04-14"
 keywords: [vc_credential construction, instruction vc credential, vc_credential, builder, instruction, proof, data integrity, related artifacts, proof cryptosuite, cryptosuite ecdsa-rdfc-]
 density_score: 0.85
 related:
-  - p10_qg_vc_credential
   - vc-credential-builder
-  - bld_knowledge_card_vc_credential
   - bld_tools_vc_credential
   - bld_schema_vc_credential
 ---
@@ -56,8 +54,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_qg_vc_credential]] | downstream | 0.58 |
 | [[vc-credential-builder]] | downstream | 0.48 |
-| [[bld_knowledge_card_vc_credential]] | upstream | 0.45 |
 | [[bld_tools_vc_credential]] | downstream | 0.44 |
 | [[bld_schema_vc_credential]] | downstream | 0.43 |

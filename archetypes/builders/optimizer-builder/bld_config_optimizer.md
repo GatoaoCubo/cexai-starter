@@ -28,10 +28,7 @@ updated: "2026-04-07"
 keywords: [limits for optimizer production, optimizer construction, config optimizer, optimizer, builder, examples, production rules, file paths, size limits, threshold ordering rules]
 density_score: 0.90
 related:
-  - p03_ins_optimizer
   - bld_schema_optimizer
-  - bld_knowledge_card_optimizer
-  - bld_output_template_optimizer
   - bld_config_quality_gate
 ---
 # Config: optimizer Production Rules
@@ -84,8 +81,5 @@ python _tools/cex_score.py --apply bld-config-optimizer.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_optimizer]] | upstream | 0.33 |
 | [[bld_schema_optimizer]] | upstream | 0.33 |
-| [[bld_knowledge_card_optimizer]] | upstream | 0.30 |
-| [[bld_output_template_optimizer]] | upstream | 0.30 |
 | [[bld_config_quality_gate]] | sibling | 0.30 |

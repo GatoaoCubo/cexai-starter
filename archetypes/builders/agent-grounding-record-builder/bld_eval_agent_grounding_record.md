@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [define hard gates h, agent_grounding_record construction, hard gates, all must pass, d soft scoring targeting, overall for compliance-grade provenance, agent_grounding_record]
 density_score: 0.85
-related:
-  - p11_fb_quality_gate
-  - p11_fb_agent_grounding_record
-  - p11_qg_quality_gate
-  - p11_fb_decision_record
-  - p11_fb_agent_name_service_record
 ---
 ## Quality Gate
 # Agent Grounding Record -- Quality Gate

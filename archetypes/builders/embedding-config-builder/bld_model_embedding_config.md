@@ -32,10 +32,7 @@ parent: null
 8f: "F3_inject"
 related:
   - bld_architecture_embedding_config
-  - bld_collaboration_embedding_config
-  - bld_instruction_embedding_config
   - embedder-provider-builder
-  - p01_kc_embedding_config
 ---
 ## Identity
 

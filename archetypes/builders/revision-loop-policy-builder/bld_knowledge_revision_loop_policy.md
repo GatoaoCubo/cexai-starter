@@ -19,10 +19,6 @@ keywords: [inject context, revision_loop_policy construction, knowledge card, bu
 density_score: 0.88
 related:
  - revision-loop-policy-builder
- - kc_revision_loop_policy
- - n00_revision_loop_policy_manifest
- - p11_ins_revision_loop_policy
- - p11_out_tpl_revision_loop_policy
 ---
 ## Builder Knowledge Injection
 
@@ -97,7 +93,3 @@ N00_genesis/P01_knowledge/library/kind/kc_revision_loop_policy.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[revision-loop-policy-builder]] | downstream | 0.48 |
-| [[kc_revision_loop_policy]] | sibling | 0.43 |
-| [[n00_revision_loop_policy_manifest]] | sibling | 0.42 |
-| [[p11_ins_revision_loop_policy]] | downstream | 0.41 |
-| [[p11_out_tpl_revision_loop_policy]] | downstream | 0.39 |

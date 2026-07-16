@@ -4,11 +4,9 @@ description: "Builds ONE safety_policy artifact via 8F pipeline. Loads safety-po
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_config_safety_policy
   - system-prompt-builder
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # safety-policy-builder Sub-Agent
@@ -86,8 +84,6 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
 | [[bld_config_safety_policy]] | related | 0.30 |
 | [[system-prompt-builder]] | related | 0.29 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |

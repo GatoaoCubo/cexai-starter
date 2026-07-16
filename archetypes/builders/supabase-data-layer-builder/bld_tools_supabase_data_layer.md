@@ -15,12 +15,6 @@ tldr: "Supabase Data Layer tools: tool integrations, CLI commands, and external 
 keywords: [supabase data layer builder, supabase data layer tools, tool integrations, cli commands, and external capabilities, builder, supabase, data-layer, tools, supabase init]
 density_score: 0.91
 llm_function: CALL
-related:
-  - p01_kc_supabase_cli
-  - ex_db_connector_supabase
-  - ex-supabase-data-layer
-  - p01_kc_supabase_edge_functions
-  - p12_dag_mission_supabase_data_layer_n07
 ---
 # Tool Catalog
 
@@ -89,12 +83,3 @@ related:
 | ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
 | DENIED | (none) | Explicitly blocked |
 | EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p01_kc_supabase_cli]] | upstream | 0.72 |
-| [[ex_db_connector_supabase]] | downstream | 0.71 |
-| [[ex-supabase-data-layer]] | downstream | 0.53 |
-| [[p01_kc_supabase_edge_functions]] | upstream | 0.50 |
-| [[p12_dag_mission_supabase_data_layer_n07]] | downstream | 0.45 |

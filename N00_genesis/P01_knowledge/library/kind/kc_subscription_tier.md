@@ -12,11 +12,7 @@ when_to_use: "When designing tiered pricing models with feature gating and upgra
 keywords: [subscription tier, saas products, per-user licensing, tiered pricing, feature matrix, value propositions, tier upgrades, adoption metrics]
 density_score: 1.0
 related:
-  - bld_instruction_subscription_tier
-  - bld_instruction_pricing_page
   - bld_tools_subscription_tier
-  - bld_output_template_subscription_tier
-  - bld_collaboration_subscription_tier
 ---
 
 **Subscription Tier** refers to predefined pricing levels offering distinct feature sets and cost structures for SaaS products. Tiers typically include:
@@ -66,5 +62,4 @@ related:
 | [[bld_prompt_subscription_tier]] | downstream | 0.39 |
 | bld_instruction_pricing_page | downstream | 0.36 |
 | [[bld_tools_subscription_tier]] | downstream | 0.36 |
-| [[bld_output_template_subscription_tier]] | downstream | 0.35 |
 | [[bld_orchestration_subscription_tier]] | downstream | 0.32 |

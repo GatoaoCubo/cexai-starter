@@ -30,9 +30,7 @@ llm_function: REASON
 related:
   - response-format-builder
   - bld_architecture_response_format
-  - bld_collaboration_response_format
   - bld_memory_response_format
-  - bld_knowledge_card_response_format
 ---
 ## Context
 A **response_format** is a prompt-injected specification that tells the LLM how to structure its output. It is placed into the prompt (system or user turn) so the model sees the format during generation. It governs the shape of every response the agent produces for a given task. The LLM reads this artifact; the system does not execute it.

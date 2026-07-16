@@ -18,11 +18,7 @@ keywords: [rl_algorithm construction, knowledge card rl algorithm, rl_algorithm,
 reinforcement, key concepts, value function, discount factor, reward shaping]
 density_score: 0.85
 related:
-  - kc_rl_algorithm
   - rl-algorithm-builder
-  - p02_qg_rl_algorithm
-  - bld_knowledge_card_reward_model
-  - kc_reward_model
 ---
 ## Domain Overview  
 Reinforcement learning (RL) algorithms define the decision-making logic for agents interacting with environments through trial-and-error. They balance exploration and exploitation to maximize cumulative rewards, forming the core of autonomous systems, robotics, and game AI. Modern RL algorithms, such as DQN, PPO, and SAC, integrate deep learning for function approximation, enabling scalability in complex domains. These algorithms are distinct from training methods (e.g., distributed training) and reward models (e.g., shaping functions), focusing instead on policy optimization, value estimation, and environment interaction mechanics.  
@@ -70,8 +66,4 @@ Reinforcement learning (RL) algorithms define the decision-making logic for agen
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_rl_algorithm]] | sibling | 0.55 |
 | [[rl-algorithm-builder]] | downstream | 0.44 |
-| [[p02_qg_rl_algorithm]] | downstream | 0.41 |
-| [[bld_knowledge_card_reward_model]] | sibling | 0.35 |
-| [[kc_reward_model]] | sibling | 0.32 |

@@ -23,10 +23,6 @@ updated: '2026-04-13'
 parent: null
 8f: "F1_constrain"
 related:
-  - audit_planning_strategy_builder
-  - bld_output_template_planning_strategy
-  - n00_planning_strategy_manifest
-  - bld_knowledge_card_planning_strategy
   - bld_schema_planning_strategy
 ---
 ## Identity
@@ -106,8 +102,4 @@ The planning_strategy-builder agent is a specialized system agent tasked with de
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[audit_planning_strategy_builder]] | upstream | 0.39 |
-| [[bld_output_template_planning_strategy]] | upstream | 0.33 |
-| [[n00_planning_strategy_manifest]] | upstream | 0.33 |
-| [[bld_knowledge_card_planning_strategy]] | upstream | 0.30 |
 | [[bld_schema_planning_strategy]] | upstream | 0.29 |

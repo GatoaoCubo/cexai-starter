@@ -19,12 +19,6 @@ specializes, routing
 trigger, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_knowledge_card_case_study
-  - p10_mem_case_study_builder
-  - n00_case_study_manifest
-  - bld_instruction_case_study
-  - p05_qg_case_study
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS use verified customer metrics and include a direct quote from the client.
 ALWAYS structure content chronologically, emphasizing transformational impact.  
 NEVER fabricate quotes or use unverified statistics.  
 NEVER deviate into sales pitches or generic value propositions.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_case_study]] | upstream | 0.42 |
-| [[p10_mem_case_study_builder]] | downstream | 0.41 |
-| [[n00_case_study_manifest]] | related | 0.36 |
-| [[bld_instruction_case_study]] | upstream | 0.31 |
-| [[p05_qg_case_study]] | downstream | 0.31 |

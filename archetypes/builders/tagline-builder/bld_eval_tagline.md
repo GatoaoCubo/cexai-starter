@@ -19,9 +19,7 @@ density_score: 0.90
 llm_function: GOVERN
 related:
   - tagline-builder
-  - bld_instruction_tagline
   - bld_schema_tagline
-  - bld_output_template_tagline
   - bld_config_tagline
 ---
 ## Quality Gate

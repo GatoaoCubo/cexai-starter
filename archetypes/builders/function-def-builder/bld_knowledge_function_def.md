@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [llm function calling specification, function def construction, knowledge card function def, function_def, builder, examples, search_web, get_weather, create_ticket, get_weather(location)]
 density_score: 0.90
 related:
-  - p10_lr_function_def_builder
-  - p01_kc_function_def
   - function-def-builder
-  - bld_instruction_function_def
-  - n00_function_def_manifest
 ---
 # Domain Knowledge: function_def
 ## Executive Summary
@@ -81,7 +77,6 @@ Function definitions are JSON Schema specifications that describe callable funct
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_function_def_builder]] | downstream | 0.47 |
 | [[kc_function_def]] | sibling | 0.47 |
 | [[function-def-builder]] | downstream | 0.43 |
 | [[bld_prompt_function_def]] | downstream | 0.38 |

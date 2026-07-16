@@ -18,12 +18,6 @@ keywords: [verticalization, knowledge-card, layer, already, master]
 linked_artifacts:
   primary: null
   related: []
-related:
-  - p12_dr_software_project
-  - bld_sp_manifest_software_project
-  - bld_sp_instruction_software_project
-  - bld_sp_collaboration_software_project
-  - p12_dag_mission_software_engineering_n03_n07
 ---
 
 # N03 Software Engineering — Master KC

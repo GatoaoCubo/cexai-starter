@@ -30,11 +30,7 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_daemon
   - bld_architecture_daemon
-  - p01_kc_daemon
-  - n00_daemon_manifest
-  - bld_knowledge_card_daemon
 ---
 ## Identity
 
@@ -119,8 +115,4 @@ Validate id against `^p04_daemon_[a-z][a-z0-9_]+$` before emitting. If any HARD 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_daemon]] | downstream | 0.62 |
 | [[bld_architecture_daemon]] | downstream | 0.55 |
-| [[p01_kc_daemon]] | related | 0.51 |
-| [[n00_daemon_manifest]] | related | 0.50 |
-| [[bld_knowledge_card_daemon]] | upstream | 0.48 |

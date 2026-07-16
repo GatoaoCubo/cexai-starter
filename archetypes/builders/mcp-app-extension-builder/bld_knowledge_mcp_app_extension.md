@@ -18,9 +18,6 @@ keywords: [mcp_app_extension construction, mcp_app_extension, builder, knowledge
 density_score: 0.85
 related:
   - mcp-app-extension-builder
-  - p04_qg_mcp_app_extension
-  - bld_collaboration_mcp_app_extension
-  - bld_instruction_mcp_app_extension
   - bld_tools_mcp_app_extension
 ---
 ## Domain Overview
@@ -70,7 +67,4 @@ An extension is a bundle of: an app-manifest (metadata + capabilities + permissi
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mcp-app-extension-builder]] | downstream | 0.75 |
-| [[p04_qg_mcp_app_extension]] | downstream | 0.60 |
-| [[bld_collaboration_mcp_app_extension]] | downstream | 0.54 |
-| [[bld_instruction_mcp_app_extension]] | downstream | 0.54 |
 | [[bld_tools_mcp_app_extension]] | downstream | 0.53 |

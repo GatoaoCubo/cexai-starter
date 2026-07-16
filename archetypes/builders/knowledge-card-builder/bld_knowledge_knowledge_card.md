@@ -31,11 +31,7 @@ keywords:
   - "spec table"
 density_score: 0.90
 related:
-  - p01_kc_knowledge_best_practices
   - knowledge-card-builder
-  - p01_kc_creation_best_practices
-  - bld_instruction_knowledge_card
-  - bld_collaboration_knowledge_card
 ---
 # Domain Knowledge: knowledge_card
 ## Executive Summary

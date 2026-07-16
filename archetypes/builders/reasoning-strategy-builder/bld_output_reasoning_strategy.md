@@ -31,10 +31,7 @@ keywords:
 density_score: 0.85
 related:
   - reasoning-strategy-builder
-  - p03_qg_reasoning_strategy
-  - bld_instruction_reasoning_strategy
   - bld_schema_reasoning_strategy
-  - bld_collaboration_reasoning_strategy
 ---
 ```yaml
 id: p03_rs_{{slug}}               # e.g. p03_rs_chain_of_thought
@@ -93,7 +90,6 @@ This ISO selects a reasoning strategy (e.g. chain-of-thought) and the conditions
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reasoning-strategy-builder]] | upstream | 0.35 |
-| [[p03_qg_reasoning_strategy]] | downstream | 0.33 |
 | [[bld_prompt_reasoning_strategy]] | upstream | 0.32 |
 | [[bld_schema_reasoning_strategy]] | downstream | 0.32 |
 | [[bld_orchestration_reasoning_strategy]] | downstream | 0.31 |

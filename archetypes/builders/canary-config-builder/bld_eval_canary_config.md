@@ -25,12 +25,6 @@ keywords:
   - "quality: null"
   - "soft_score = sum / 2.5 * 10"
 density_score: null
-related:
-  - bld_manifest_canary_config
-  - kc_canary_config
-  - bld_instruction_canary_config
-  - bld_quality_gate_deployment_manifest
-  - bld_knowledge_card_canary_config
 ---
 ## Quality Gate
 

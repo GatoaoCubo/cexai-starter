@@ -35,7 +35,6 @@ when_to_use: "Loaded (F2 BECOME) by routers/boot to constrain N03's identity. Co
 primary_8f: BECOME
 related:
   - agent_card_n03
-  - n07-orchestrator
   - kc_nucleus_def
 tags: [nucleus_def, n03, identity, become, constrain]
 ---

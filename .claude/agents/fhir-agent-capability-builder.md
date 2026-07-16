@@ -4,10 +4,7 @@ description: "Builds ONE fhir_agent_capability artifact via 8F pipeline. Loads f
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_fhir_agent_capability
   - fhir-agent-capability-builder
-  - n00_fhir_agent_capability_manifest
-  - p11_fb_fhir_agent_capability
   - bld_tools_fhir_agent_capability
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_fhir_agent_capability]] | related | 0.45 |
 | [[fhir-agent-capability-builder]] | related | 0.43 |
-| [[n00_fhir_agent_capability_manifest]] | related | 0.41 |
-| [[p11_fb_fhir_agent_capability]] | related | 0.41 |
 | [[bld_tools_fhir_agent_capability]] | related | 0.39 |

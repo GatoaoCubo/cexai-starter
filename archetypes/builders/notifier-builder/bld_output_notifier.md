@@ -30,11 +30,8 @@ keywords:
   - "2. auth:"
 density_score: 0.90
 related:
-  - bld_instruction_notifier
-  - p11_qg_notifier
   - notifier-builder
   - bld_schema_notifier
-  - p01_kc_notifier
 ---
 # Output Template: notifier
 
@@ -114,8 +111,5 @@ description: "{{<= 200ch description of what notifications this sends and when}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_notifier]] | upstream | 0.53 |
-| [[p11_qg_notifier]] | downstream | 0.50 |
 | [[notifier-builder]] | related | 0.49 |
 | [[bld_schema_notifier]] | downstream | 0.48 |
-| [[p01_kc_notifier]] | upstream | 0.42 |

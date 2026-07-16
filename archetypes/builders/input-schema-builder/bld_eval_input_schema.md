@@ -18,11 +18,7 @@ updated: "2026-03-27"
 keywords: [and coercion rules, input schema, coercion rules, quality-gate, input-schema, contract, fields]
 density_score: 0.89
 related:
-  - bld_instruction_input_schema
   - bld_schema_input_schema
-  - bld_knowledge_card_input_schema
-  - p11_qg_function_def
-  - p10_lr_input_schema_builder
 ---
 ## Quality Gate
 

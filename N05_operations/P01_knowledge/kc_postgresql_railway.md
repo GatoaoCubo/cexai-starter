@@ -28,17 +28,6 @@ keywords:
   - "### database_url format"
   - "most python/node/go libraries auto-detect"
   - "add plugin"
-related:
-  - p01_kc_railway_platform_deep
-  - p01_kc_postgresql_railway
-  - p08_ac_railway_superintendent
-  - KC_N05_RAILWAY_CLI_PATTERNS
-  - KC_N05_RAILWAY_PLATFORM_DEEP
-  - p02_agent_railway_superintendent
-  - p03_sp_railway_superintendent
-  - p12_dr_railway_superintendent
-  - p01_kc_railway_cli_patterns
-  - p01_kc_deploy_paas
 ---
 
 # PostgreSQL & Redis on Railway
@@ -364,9 +353,6 @@ CONFIG SET save "900 1 300 10 60 10000"  # RDB snapshots
 |----------|-------------|-------|
 | p01_kc_railway_platform_deep | sibling | 0.41 |
 | p01_kc_postgresql_railway | sibling | 0.39 |
-| [[p08_ac_railway_superintendent]] | downstream | 0.39 |
-| [[KC_N05_RAILWAY_CLI_PATTERNS]] | sibling | 0.38 |
-| [[KC_N05_RAILWAY_PLATFORM_DEEP]] | sibling | 0.37 |
 | p02_agent_railway_superintendent | downstream | 0.36 |
 | p03_sp_railway_superintendent | downstream | 0.35 |
 | p12_dr_railway_superintendent | downstream | 0.34 |

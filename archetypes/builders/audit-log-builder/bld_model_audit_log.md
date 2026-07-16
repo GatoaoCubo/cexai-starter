@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [builder identity, routing for audit_log, audit_log construction, type builder audit log, audit_log, builder, type_builder, event_id, timestamp, actor]
 density_score: 0.85
-related:
-  - bld_instruction_audit_log
-  - bld_knowledge_card_audit_log
-  - kc_audit_log
-  - n00_audit_log_manifest
-  - p10_mem_audit_log_builder
 ---
 ## Identity
 
@@ -64,12 +58,3 @@ ALWAYS USE standardized event classification codes (e.g., NIST SP 800-63B).
 ALWAYS APPLY cryptographic hashing to each log entry.  
 NEVER INCLUDE trace_config or regression_check data in output.  
 NEVER ALLOW manual edits or overrides to log content.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_audit_log]] | upstream | 0.54 |
-| [[bld_knowledge_card_audit_log]] | upstream | 0.53 |
-| [[kc_audit_log]] | upstream | 0.45 |
-| [[n00_audit_log_manifest]] | related | 0.43 |
-| [[p10_mem_audit_log_builder]] | upstream | 0.42 |

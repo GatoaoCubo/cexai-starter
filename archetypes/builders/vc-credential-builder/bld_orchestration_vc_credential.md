@@ -19,10 +19,6 @@ issues, receives from, produces for, boundary
 does]
 density_score: 0.85
 related:
-  - bld_collaboration_agent
-  - bld_collaboration_c2pa_manifest
-  - bld_collaboration_agent_profile
-  - bld_collaboration_system_prompt
   - vc-credential-builder
 ---
 ## Crew Role
@@ -50,8 +46,4 @@ Does NOT handle: Verifiable Presentations (aggregated VC envelope), DID document
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_agent]] | sibling | 0.31 |
-| [[bld_collaboration_c2pa_manifest]] | sibling | 0.28 |
-| [[bld_collaboration_agent_profile]] | sibling | 0.25 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.25 |
 | [[vc-credential-builder]] | upstream | 0.24 |

@@ -18,11 +18,8 @@ keywords: [user_journey construction, knowledge card user journey, user_journey,
 user, pirate metrics, nielsen norman group, key concepts, interest desire]
 density_score: 0.85
 related:
-  - n00_user_journey_manifest
   - user-journey-builder
   - bld_tools_user_journey
-  - kc_user_journey
-  - bld_instruction_user_journey
 ---
 ## Domain Overview
 User journey mapping documents the end-to-end experience of a customer across all touchpoints from first awareness to post-purchase advocacy. Two foundational frameworks structure journey analysis: AIDA (Awareness, Interest, Desire, Action) -- a funnel model for conversion paths -- and AARRR Pirate Metrics (Acquisition, Activation, Retention, Revenue, Referral) for product/growth teams. Nielsen Norman Group (NNg) defines the gold standard for journey map artifacts: stages, touchpoints, emotional arcs, pain points, and opportunities. Unlike system workflows or onboarding flows, journey maps are human-centered and cross-channel, capturing both digital and offline interactions.
@@ -86,8 +83,5 @@ User journey mapping documents the end-to-end experience of a customer across al
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_user_journey_manifest]] | sibling | 0.46 |
 | [[user-journey-builder]] | downstream | 0.46 |
 | [[bld_tools_user_journey]] | downstream | 0.41 |
-| [[kc_user_journey]] | sibling | 0.37 |
-| [[bld_instruction_user_journey]] | downstream | 0.36 |

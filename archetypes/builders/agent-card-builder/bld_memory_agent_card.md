@@ -23,11 +23,7 @@ correct, reproducibility
 reliable, boot sequence]
 density_score: 0.90
 related:
-  - bld_knowledge_card_agent_card
-  - bld_collaboration_agent_card
   - agent-card-builder
-  - p03_ins_agent_card_builder
-  - p11_qg_agent-card
 ---
 # Memory: agent-card-builder
 ## Summary
@@ -89,5 +85,3 @@ python _tools/cex_score.py --apply bld-memory-agent-card.md
 | [[bld_knowledge_agent_card]] | upstream | 0.50 |
 | [[bld_orchestration_agent_card]] | upstream | 0.47 |
 | [[agent-card-builder]] | upstream | 0.45 |
-| [[p03_ins_agent_card_builder]] | upstream | 0.40 |
-| [[p11_qg_agent-card]] | downstream | 0.35 |

@@ -30,10 +30,6 @@ linked_artifacts:
   related: [p02_agent_marketing_nucleus]
 density_score: 0.92
 data_source: shadcn_docs_2026
-related:
-  - p01_kc_html_component_library
-  - n02_kc_html_component_library
-  - p01_kc_shadcn_radix_patterns
 ---
 
 # shadcn/ui + Radix Primitives — Component Patterns
@@ -377,5 +373,4 @@ const { setTheme } = useTheme()
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p01_kc_html_component_library | sibling | 0.22 |
-| [[n02_kc_html_component_library]] | sibling | 0.22 |
 | p01_kc_shadcn_radix_patterns | sibling | 0.17 |

@@ -23,11 +23,7 @@ structured, reproducibility
 reliable, reasoning traces]
 density_score: 0.90
 related:
-  - bld_knowledge_card_reasoning_trace
   - reasoning-trace-builder
-  - p01_kc_reasoning_trace
-  - bld_collaboration_reasoning_trace
-  - p11_qg_reasoning_trace
 ---
 # Memory: reasoning-trace-builder
 ## Summary
@@ -88,8 +84,4 @@ python _tools/cex_score.py --apply bld-memory-reasoning-trace.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.73 |
 | [[reasoning-trace-builder]] | upstream | 0.67 |
-| [[p01_kc_reasoning_trace]] | upstream | 0.63 |
-| [[bld_collaboration_reasoning_trace]] | upstream | 0.61 |
-| [[p11_qg_reasoning_trace]] | downstream | 0.59 |

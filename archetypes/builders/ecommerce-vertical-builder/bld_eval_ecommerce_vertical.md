@@ -18,10 +18,6 @@ keywords: [ecommerce_vertical construction, quality gate ecommerce vertical, eco
 density_score: 0.85
 related:
   - ecommerce-vertical-builder
-  - bld_knowledge_card_ecommerce_vertical
-  - kc_ecommerce_vertical
-  - p10_mem_ecommerce_vertical_builder
-  - p01_qg_fintech_vertical
 ---
 ## Quality Gate
 

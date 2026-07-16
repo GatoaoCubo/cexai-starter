@@ -19,10 +19,6 @@ keywords: [critic patterns, research pipeline construction, knowledge card resea
 density_score: 0.90
 related:
   - research-pipeline-builder
-  - p02_agent_research_pipeline_intelligence
-  - p01_kc_research_pipeline
-  - p01_kc_research_methods
-  - bld_instruction_research_pipeline
 ---
 # Domain Knowledge: research_pipeline
 

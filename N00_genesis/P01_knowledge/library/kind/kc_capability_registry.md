@@ -22,10 +22,6 @@ long_tails:
   - "what capabilities does the knowledge nucleus expose for crew assembly"
 density_score: 1.0
 related:
-  - bld_collaboration_knowledge_card
-  - n00_knowledge_card_manifest
-  - p01_kc_pillar_brief_p01_knowledge_en
-  - p01_kc_case_study
   - agent_card_n04
 ---
 

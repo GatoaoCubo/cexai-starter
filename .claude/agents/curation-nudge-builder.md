@@ -4,11 +4,8 @@ description: "Builds ONE curation_nudge artifact via 8F pipeline. Loads curation
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - curation-nudge-builder
-  - p11_tools_curation_nudge
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # curation-nudge-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.32 |
 | [[curation-nudge-builder]] | related | 0.30 |
-| [[p11_tools_curation_nudge]] | related | 0.29 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |

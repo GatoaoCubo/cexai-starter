@@ -27,8 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - formatter-builder
-  - bld_instruction_formatter
-  - bld_collaboration_formatter
   - bld_architecture_formatter
   - bld_schema_formatter
 ---

@@ -21,11 +21,7 @@ acts, identity
 this]
 density_score: 0.85
 related:
-  - bld_knowledge_card_self_improvement_loop
-  - kc_self_improvement_loop
-  - bld_instruction_self_improvement_loop
   - dual-loop-architecture-builder
-  - kc_dual_loop_architecture
 ---
 ## Identity
 
@@ -73,8 +69,4 @@ NEVER DEPEND on unverified heuristics or black-box optimization techniques.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_self_improvement_loop]] | upstream | 0.44 |
-| [[kc_self_improvement_loop]] | upstream | 0.43 |
-| [[bld_instruction_self_improvement_loop]] | upstream | 0.36 |
 | [[dual-loop-architecture-builder]] | sibling | 0.34 |
-| [[kc_dual_loop_architecture]] | upstream | 0.33 |

@@ -18,9 +18,6 @@ keywords: [kind builder construction, architecture kind builder, builder archite
 density_score: 0.90
 related:
   - kind-builder
-  - p06_td_cex_artifact_type_n03
-  - bld_collaboration_kind
-  - bld_instruction_kind
   - bld_schema_kind
 ---
 # Architecture: kind-builder
@@ -128,7 +125,4 @@ archetypes/
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.41 |
-| [[p06_td_cex_artifact_type_n03]] | upstream | 0.39 |
-| [[bld_collaboration_kind]] | downstream | 0.37 |
-| [[bld_instruction_kind]] | upstream | 0.34 |
 | [[bld_schema_kind]] | upstream | 0.31 |

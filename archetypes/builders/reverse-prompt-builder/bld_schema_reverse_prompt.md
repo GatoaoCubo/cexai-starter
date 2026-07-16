@@ -29,11 +29,9 @@ keywords:
   - "two paths"
 density_score: 0.90
 related:
-  - bld_output_template_reverse_prompt
   - bld_config_reverse_prompt
   - bld_eval_reverse_prompt
   - reverse-prompt-builder
-  - schema_prompt_template_builder
 ---
 
 # Schema -- reverse-prompt-builder
@@ -82,8 +80,6 @@ Examples: `p03_rp_vercel_labs_skills_a1b2c3d`, `p03_rp_gitreverse_dry_run_exampl
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_reverse_prompt]] | downstream | 0.56 |
 | [[bld_config_reverse_prompt]] | related | 0.55 |
 | [[bld_eval_reverse_prompt]] | related | 0.54 |
 | [[reverse-prompt-builder]] | upstream | 0.53 |
-| [[schema_prompt_template_builder]] | sibling | 0.50 |

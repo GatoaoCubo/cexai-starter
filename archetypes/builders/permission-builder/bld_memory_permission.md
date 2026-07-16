@@ -23,11 +23,7 @@ deny, reproducibility
 reliable, access control]
 density_score: 0.90
 related:
-  - bld_knowledge_card_permission
   - permission-builder
-  - p03_ins_permission
-  - bld_collaboration_permission
-  - p01_kc_permission
 ---
 # Memory: permission-builder
 ## Summary
@@ -88,6 +84,5 @@ python _tools/cex_score.py --apply bld-memory-permission.md
 |----------|-------------|-------|
 | [[bld_knowledge_permission]] | upstream | 0.64 |
 | [[permission-builder]] | upstream | 0.64 |
-| [[p03_ins_permission]] | upstream | 0.49 |
 | [[bld_orchestration_permission]] | upstream | 0.47 |
 | [[kc_permission]] | upstream | 0.45 |

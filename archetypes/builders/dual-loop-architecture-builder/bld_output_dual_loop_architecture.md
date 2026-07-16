@@ -30,11 +30,7 @@ keywords:
   - "## notes"
 density_score: 0.85
 related:
-  - bld_collaboration_dual_loop_architecture
-  - p10_lr_dual_loop_architecture_builder
-  - bld_instruction_dual_loop_architecture
   - dual-loop-architecture-builder
-  - kc_dual_loop_architecture
 ---
 ```yaml
 title: {{title}}
@@ -77,8 +73,4 @@ This ISO applies to the dual loop pattern, coordinating an outer orchestrator wi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.38 |
-| [[p10_lr_dual_loop_architecture_builder]] | downstream | 0.35 |
-| [[bld_instruction_dual_loop_architecture]] | upstream | 0.33 |
 | [[dual-loop-architecture-builder]] | downstream | 0.33 |
-| [[kc_dual_loop_architecture]] | upstream | 0.32 |

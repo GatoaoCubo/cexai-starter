@@ -20,9 +20,7 @@ density_score: 0.90
 related:
   - bld_meta_schema_builder
   - bld_meta_manifest_builder
-  - bld_output_template_kind
   - bld_meta_instructions_builder
-  - bld_output_template_input_schema
 ---
 # Output Template: {{type_name}}
 <!-- This meta-file generates the OUTPUT_TEMPLATE.md of any builder -->
@@ -133,6 +131,4 @@ Derivation Notes:
 |----------|-------------|-------|
 | [[bld_meta_schema_builder]] | downstream | 0.28 |
 | [[bld_meta_manifest_builder]] | sibling | 0.27 |
-| [[bld_output_template_kind]] | related | 0.27 |
 | [[bld_meta_instructions_builder]] | upstream | 0.26 |
-| [[bld_output_template_input_schema]] | related | 0.25 |

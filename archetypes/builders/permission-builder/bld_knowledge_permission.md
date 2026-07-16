@@ -20,9 +20,7 @@ density_score: 0.90
 related:
   - bld_memory_permission
   - permission-builder
-  - p03_ins_permission
   - bld_schema_permission
-  - p09_perm_n07
 ---
 # Domain Knowledge: permission
 ## Executive Summary
@@ -83,6 +81,5 @@ Permissions are declarativand access control rules defining WHO can do WHAT (rea
 |----------|-------------|-------|
 | [[bld_memory_permission]] | downstream | 0.64 |
 | [[permission-builder]] | downstream | 0.64 |
-| [[p03_ins_permission]] | downstream | 0.54 |
 | [[bld_schema_permission]] | downstream | 0.51 |
 | p09_perm_n07 | downstream | 0.47 |

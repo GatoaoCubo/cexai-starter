@@ -31,11 +31,8 @@ keywords:
   - "after compression."
 density_score: 0.90
 related:
-  - p11_qg_compression_config
   - bld_schema_compression_config
   - bld_architecture_compression_config
-  - p01_kc_compression_config
-  - bld_knowledge_card_compression_config
 ---
 # Output Template: compression_config
 ```yaml
@@ -92,8 +89,5 @@ Trigger: `{{trigger_ratio}}` of context window. Target: `{{target_ratio}}` after
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_compression_config]] | downstream | 0.41 |
 | [[bld_schema_compression_config]] | downstream | 0.36 |
 | [[bld_architecture_compression_config]] | downstream | 0.35 |
-| [[p01_kc_compression_config]] | downstream | 0.33 |
-| [[bld_knowledge_card_compression_config]] | upstream | 0.32 |

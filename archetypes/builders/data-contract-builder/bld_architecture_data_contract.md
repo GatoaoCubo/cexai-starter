@@ -15,11 +15,8 @@ density_score: 1.0
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p01_kc_data_contract
   - data-contract-builder
   - bld_memory_data_contract
-  - bld_context_sources_data_contract
-  - bld_rules_data_contract
 ---
 # Architecture: data_contract
 ## Position in CEX Kind Taxonomy
@@ -75,5 +72,3 @@ data_contract maps to Apache Avro schema, Protobuf IDL, JSON Schema, or OpenAPI:
 | [[kc_data_contract]] | upstream | 0.41 |
 | [[data-contract-builder]] | upstream | 0.41 |
 | [[bld_memory_data_contract]] | downstream | 0.39 |
-| [[bld_context_sources_data_contract]] | downstream | 0.37 |
-| [[bld_rules_data_contract]] | downstream | 0.31 |

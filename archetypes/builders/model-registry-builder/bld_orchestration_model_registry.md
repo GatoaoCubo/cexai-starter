@@ -20,10 +20,7 @@ does, related artifacts]
 density_score: 0.85
 related:
   - model-registry-builder
-  - bld_knowledge_card_model_registry
-  - kc_model_registry
   - bld_architecture_model_registry
-  - bld_instruction_model_registry
 ---
 ## Crew Role
 Central orchestrator for aggregating, versioning, and indexing model
@@ -55,7 +52,4 @@ Does not manage live inference endpoints (deploy config -- N05 scope).
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[model-registry-builder]] | upstream | 0.43 |
-| [[bld_knowledge_card_model_registry]] | upstream | 0.36 |
-| [[kc_model_registry]] | upstream | 0.34 |
 | [[bld_architecture_model_registry]] | upstream | 0.33 |
-| [[bld_instruction_model_registry]] | upstream | 0.33 |

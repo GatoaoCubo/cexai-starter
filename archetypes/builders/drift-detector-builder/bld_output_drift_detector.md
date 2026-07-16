@@ -21,8 +21,6 @@ method:, parameters:]
 density_score: 0.90
 related:
   - bld_schema_drift_detector
-  - p11_qg_drift_detector
-  - bld_instruction_drift_detector
   - drift-detector-builder
   - bld_config_drift_detector
 ---
@@ -88,7 +86,5 @@ Payload: `{{what_data_is_sent_in_alert}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_drift_detector]] | downstream | 0.44 |
-| [[p11_qg_drift_detector]] | downstream | 0.40 |
-| [[bld_instruction_drift_detector]] | upstream | 0.32 |
 | [[drift-detector-builder]] | downstream | 0.30 |
 | [[bld_config_drift_detector]] | downstream | 0.28 |

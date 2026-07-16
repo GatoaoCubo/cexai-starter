@@ -4,10 +4,6 @@ description: "Builds ONE judge_config artifact via 8F pipeline. Loads judge-conf
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_judge_config_manifest
-  - bld_collaboration_judge_config
-  - n00_llm_judge_manifest
-  - bld_collaboration_llm_judge
   - bld_config_judge_config
 ---
 
@@ -86,8 +82,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_judge_config_manifest]] | related | 0.40 |
-| [[bld_collaboration_judge_config]] | related | 0.38 |
-| [[n00_llm_judge_manifest]] | related | 0.38 |
-| [[bld_collaboration_llm_judge]] | related | 0.38 |
 | [[bld_config_judge_config]] | related | 0.36 |

@@ -29,8 +29,6 @@ permission_scope: nucleus
 8f: "F6_produce"
 related:
   - kc_landing_page
-  - bld_knowledge_card_landing_page
-  - n00_landing_page_manifest
   - bld_schema_landing_page
   - bld_tools_landing_page
 ---

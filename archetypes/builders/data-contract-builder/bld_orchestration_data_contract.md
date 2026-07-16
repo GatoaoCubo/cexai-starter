@@ -16,9 +16,6 @@ created: "2026-04-17"
 updated: "2026-07-04"
 related:
   - data-contract-builder
-  - bld_rules_domain_vocabulary
-  - bld_rules_value_object
-  - bld_rules_alert_rule
   - bld_memory_data_contract
 ---
 # Collaboration: data_contract-builder (Builder Rules Retained)
@@ -92,7 +89,6 @@ python _tools/cex_doctor.py --scope orchestration
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[data-contract-builder]] | upstream | 0.35 |
-| [[bld_rules_domain_vocabulary]] | sibling | 0.34 |
 | bld_rules_value_object | upstream | 0.32 |
 | bld_rules_alert_rule | sibling | 0.32 |
 | [[bld_memory_data_contract]] | upstream | 0.32 |

@@ -20,10 +20,6 @@ keywords]
 density_score: 0.90
 related:
   - hp_{{backend}}
-  - n00_hibernation_policy_manifest
-  - kc_hibernation_policy
-  - hibernation_policy_n05
-  - bld_instruction_hibernation_policy
 ---
 ## Identity
 ## Identity
@@ -75,7 +71,3 @@ Output format: YAML frontmatter + body with four tables (idle trigger, wake cond
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [\[hp_`{{backend}}`\]] | related | 0.57 |
-| [[n00_hibernation_policy_manifest]] | related | 0.56 |
-| [[kc_hibernation_policy]] | upstream | 0.55 |
-| [[hibernation_policy_n05]] | related | 0.47 |
-| [[bld_instruction_hibernation_policy]] | upstream | 0.43 |

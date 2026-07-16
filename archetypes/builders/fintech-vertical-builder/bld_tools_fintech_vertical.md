@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [fintech_vertical construction, tools fintech vertical, fintech_vertical, builder, tools, production tools, validation tools, external references, security standards council, travel rule]
 density_score: 0.85
 related:
-  - bld_instruction_fintech_vertical
   - fintech-vertical-builder
-  - p10_mem_fintech_vertical_builder
-  - bld_knowledge_card_fintech_vertical
   - bld_tools_legal_vertical
 ---
 ## Production Tools (fintech vertical)
@@ -45,8 +42,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_fintech_vertical]] | upstream | 0.36 |
 | [[fintech-vertical-builder]] | upstream | 0.35 |
-| [[p10_mem_fintech_vertical_builder]] | downstream | 0.34 |
-| [[bld_knowledge_card_fintech_vertical]] | upstream | 0.34 |
 | [[bld_tools_legal_vertical]] | sibling | 0.34 |

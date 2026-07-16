@@ -17,9 +17,6 @@ updated: "2026-07-03"
 keywords: [fabrication_manifest construction, output template fabrication manifest, fabrication_manifest, builder, output_template, tenant_id, stage_status, hosting_target, chosen_capabilities]
 density_score: 0.85
 related:
-  - p12_qg_fabrication_manifest
-  - bld_instruction_fabrication_manifest
-  - bld_knowledge_card_fabrication_manifest
   - fabrication-manifest-builder
   - bld_schema_fabrication_manifest
 ---
@@ -87,8 +84,5 @@ wire:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p12_qg_fabrication_manifest]] | downstream | 0.43 |
-| [[bld_instruction_fabrication_manifest]] | upstream | 0.38 |
-| [[bld_knowledge_card_fabrication_manifest]] | upstream | 0.36 |
 | [[fabrication-manifest-builder]] | downstream | 0.36 |
 | [[bld_schema_fabrication_manifest]] | downstream | 0.36 |

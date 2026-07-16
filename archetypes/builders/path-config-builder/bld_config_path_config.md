@@ -29,10 +29,7 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_schema_path_config
-  - p03_ins_path_config
   - bld_config_env_config
-  - bld_output_template_path_config
-  - p11_qg_path_config
 ---
 # Config: path_config Production Rules
 ## Naming Convention
@@ -69,7 +66,4 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_path_config]] | upstream | 0.37 |
-| [[p03_ins_path_config]] | upstream | 0.36 |
 | [[bld_config_env_config]] | sibling | 0.35 |
-| [[bld_output_template_path_config]] | upstream | 0.35 |
-| [[p11_qg_path_config]] | downstream | 0.34 |

@@ -20,10 +20,7 @@ does, related artifacts]
 density_score: 0.85
 related:
   - nps-survey-builder
-  - bld_collaboration_churn_prevention_playbook
   - bld_config_nps_survey
-  - p11_fb_nps_survey
-  - n00_nps_survey_manifest
 ---
 ## Crew Role
 Configures NPS survey mechanics (question, scale, segmentation, cadence, routing).
@@ -54,7 +51,4 @@ Does NOT handle:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[nps-survey-builder]] | upstream | 0.41 |
-| [[bld_collaboration_churn_prevention_playbook]] | sibling | 0.37 |
 | [[bld_config_nps_survey]] | upstream | 0.32 |
-| [[p11_fb_nps_survey]] | upstream | 0.27 |
-| [[n00_nps_survey_manifest]] | upstream | 0.26 |

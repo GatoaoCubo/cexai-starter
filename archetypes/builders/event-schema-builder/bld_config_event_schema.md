@@ -29,11 +29,7 @@ updated: "2026-04-17"
 keywords: [naming conventions, file paths, size limits, operational constraints, event schema construction, config event schema, json schema payload]
 density_score: 0.90
 related:
-  - p10_lr_event_schema_builder
   - bld_schema_event_schema
-  - kc_event_schema
-  - p11_qg_event_schema
-  - bld_output_template_event_schema
 ---
 
 # Config: event_schema Production Rules
@@ -136,8 +132,4 @@ Never delete old event_type until all consumers have migrated.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_event_schema_builder]] | downstream | 0.57 |
 | [[bld_schema_event_schema]] | upstream | 0.52 |
-| [[kc_event_schema]] | upstream | 0.50 |
-| [[p11_qg_event_schema]] | downstream | 0.48 |
-| [[bld_output_template_event_schema]] | upstream | 0.46 |

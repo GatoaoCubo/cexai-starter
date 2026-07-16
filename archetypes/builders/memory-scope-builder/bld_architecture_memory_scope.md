@@ -18,10 +18,6 @@ keywords: [component map of memory_scope, and architectural position, memory sco
 density_score: 0.90
 related:
   - memory-scope-builder
-  - p01_kc_memory_scope
-  - p10_lr_memory_scope_builder
-  - p11_qg_memory_scope
-  - bld_collaboration_memory_scope
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -85,6 +81,4 @@ python _tools/cex_score.py --apply bld-architecture-memory-scope.md
 |----------|-------------|-------|
 | [[memory-scope-builder]] | upstream | 0.68 |
 | [[kc_memory_scope]] | upstream | 0.51 |
-| [[p10_lr_memory_scope_builder]] | downstream | 0.48 |
-| [[p11_qg_memory_scope]] | downstream | 0.46 |
 | [[bld_orchestration_memory_scope]] | downstream | 0.43 |

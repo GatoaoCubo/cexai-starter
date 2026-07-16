@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [accumulated observations, agent_name_service_record construction, ans vs agent_card confusion, missing protocol-adapters, incomplete pki chain, evidence and fixes, agent_name_service_record]
 density_score: 0.85
-related:
-  - bld_knowledge_card_agent_name_service_record
-  - bld_manifest_agent_name_service_record
-  - bld_collaboration_agent_name_service_record
-  - bld_instruction_agent_name_service_record
-  - bld_output_template_agent_name_service_record
 ---
 # Agent Name Service Record Builder -- Memory
 ## Learning Record Index
@@ -90,12 +84,3 @@ ls P04_tools/p04_ans_*.md | grep {agent_slug}
 ```
 If exists: UPDATE (bump version + `updated`) OR CREATE NEW (new ANS name). Never silently overwrite.
 ---
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_agent_name_service_record]] | upstream | 0.56 |
-| [[bld_manifest_agent_name_service_record]] | upstream | 0.49 |
-| [[bld_collaboration_agent_name_service_record]] | downstream | 0.48 |
-| [[bld_instruction_agent_name_service_record]] | upstream | 0.45 |
-| [[bld_output_template_agent_name_service_record]] | upstream | 0.44 |

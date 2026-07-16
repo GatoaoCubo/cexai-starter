@@ -17,11 +17,8 @@ updated: "2026-04-13"
 keywords: [ontology construction, architecture ontology, class hierarchy, and schema, ontology, architecture, taxonomy]
 density_score: 0.90
 related:
-  - bld_collaboration_ontology
   - ontology-builder
-  - n00_ontology_manifest
   - bld_schema_ontology
-  - bld_output_template_ontology
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -93,4 +90,3 @@ knowledge_card (P01) --independent--> ontology (KCs capture facts; ontology capt
 | [[ontology-builder]] | upstream | 0.69 |
 | n00_ontology_manifest | upstream | 0.67 |
 | [[bld_schema_ontology]] | upstream | 0.49 |
-| [[bld_output_template_ontology]] | upstream | 0.49 |

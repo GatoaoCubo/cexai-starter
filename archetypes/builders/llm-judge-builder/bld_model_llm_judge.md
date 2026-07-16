@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_collaboration_llm_judge
-  - p01_kc_llm_judge
   - bld_architecture_llm_judge
-  - p11_qg_llm_judge
-  - bld_instruction_llm_judge
 ---
 ## Identity
 
@@ -158,5 +154,4 @@ Rationale: {why this score}
 | [[bld_orchestration_llm_judge]] | downstream | 0.67 |
 | [[kc_llm_judge]] | related | 0.58 |
 | [[bld_architecture_llm_judge]] | downstream | 0.52 |
-| [[p11_qg_llm_judge]] | downstream | 0.48 |
 | [[bld_prompt_llm_judge]] | upstream | 0.46 |

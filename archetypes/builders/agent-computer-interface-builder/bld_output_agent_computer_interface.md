@@ -18,10 +18,7 @@ keywords: [agent_computer_interface construction, agent_computer_interface, buil
 density_score: 0.85
 related:
   - bld_schema_agent_computer_interface
-  - p11_qg_agent_computer_interface
-  - bld_knowledge_card_agent_computer_interface
   - bld_architecture_agent_computer_interface
-  - n00_agent_computer_interface_manifest
 ---
 Copy this template. Replace every `{{placeholder}}` with real content. Remove placeholder text.
 Use tables over prose. All sections are required.
@@ -81,7 +78,4 @@ tldr: "{{One-sentence description of what computing environment this ACI exposes
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_agent_computer_interface]] | downstream | 0.42 |
-| [[p11_qg_agent_computer_interface]] | downstream | 0.42 |
-| [[bld_knowledge_card_agent_computer_interface]] | upstream | 0.33 |
 | [[bld_architecture_agent_computer_interface]] | downstream | 0.31 |
-| [[n00_agent_computer_interface_manifest]] | downstream | 0.27 |

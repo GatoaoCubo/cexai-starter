@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [subscription_tier construction, instruction subscription tier, subscription_tier, builder, instruction, price_id, currency, recurring_interval, feature_matrix, constraints]
 density_score: 0.85
 related:
-  - bld_instruction_pricing_page
   - kc_subscription_tier
-  - bld_output_template_subscription_tier
   - bld_tools_subscription_tier
-  - n00_pricing_page_manifest
 ---
 ## Phase 1: RESEARCH  
 1. Analyze market trends for SaaS pricing models (e.g., freemium, tiered).  
@@ -54,6 +51,5 @@ related:
 |----------|-------------|-------|
 | bld_instruction_pricing_page | sibling | 0.42 |
 | [[kc_subscription_tier]] | upstream | 0.38 |
-| [[bld_output_template_subscription_tier]] | downstream | 0.36 |
 | [[bld_tools_subscription_tier]] | downstream | 0.34 |
 | n00_pricing_page_manifest | downstream | 0.34 |

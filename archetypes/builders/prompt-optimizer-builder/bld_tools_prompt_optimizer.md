@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_tools_multimodal_prompt
   - bld_tools_visual_workflow
-  - bld_knowledge_card_prompt_optimizer
-  - n00_prompt_optimizer_manifest
-  - kc_prompt_optimizer
 ---
 ## Production Tools
 | Tool | Purpose | When |
@@ -51,6 +48,3 @@ related:
 |----------|-------------|-------|
 | [[bld_tools_multimodal_prompt]] | sibling | 0.39 |
 | [[bld_tools_visual_workflow]] | sibling | 0.36 |
-| [[bld_knowledge_card_prompt_optimizer]] | upstream | 0.35 |
-| [[n00_prompt_optimizer_manifest]] | upstream | 0.27 |
-| [[kc_prompt_optimizer]] | upstream | 0.26 |

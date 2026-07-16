@@ -18,11 +18,7 @@ keywords: [onboarding_flow construction, knowledge card onboarding flow, onboard
 user, key concepts, activation milestone, activation framework, aha moment]
 density_score: 0.85
 related:
-  - kc_onboarding_flow
   - onboarding-flow-builder
-  - bld_instruction_onboarding_flow
-  - n00_onboarding_flow_manifest
-  - bld_collaboration_onboarding_flow
 ---
 ## Domain Overview  
 User onboarding flows are critical for converting new users into active, engaged product users. Activation milestones define sequential steps that guide users toward value realization, while aha-moment design focuses on creating emotional or functional breakthroughs that trigger retention. Effective flows balance simplicity with clarity, leveraging behavioral science principles to reduce friction and accelerate time-to-value. Industries like fintech, SaaS, and gaming prioritize onboarding as a competitive differentiator, often using data-driven activation funnels to optimize retention rates.  
@@ -65,8 +61,4 @@ User onboarding flows are critical for converting new users into active, engaged
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_onboarding_flow]] | sibling | 0.52 |
 | [[onboarding-flow-builder]] | downstream | 0.50 |
-| [[bld_instruction_onboarding_flow]] | downstream | 0.43 |
-| [[n00_onboarding_flow_manifest]] | sibling | 0.40 |
-| [[bld_collaboration_onboarding_flow]] | downstream | 0.39 |

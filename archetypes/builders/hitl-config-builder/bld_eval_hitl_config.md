@@ -18,10 +18,7 @@ updated: "2026-04-13"
 keywords: [escalation chains, and timeout, fallback behavior, gates for hitl_config, validates review trigger precision, escalation chain completeness, approval flow validity]
 density_score: 0.92
 related:
-  - p01_kc_hitl_config
-  - bld_knowledge_card_hitl_config
   - hitl-config-builder
-  - bld_instruction_hitl_config
   - bld_schema_hitl_config
 ---
 ## Quality Gate

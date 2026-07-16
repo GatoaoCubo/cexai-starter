@@ -17,9 +17,6 @@ updated: "2026-04-14"
 keywords: [vc_credential construction, tools vc credential, vc_credential, builder, tools, data-integrity, production tools, validation tools, external references, data integrity]
 density_score: 0.85
 related:
-  - p10_qg_vc_credential
-  - bld_knowledge_card_vc_credential
-  - bld_instruction_vc_credential
   - vc-credential-builder
   - bld_tools_ontology
 ---
@@ -50,8 +47,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_qg_vc_credential]] | downstream | 0.35 |
-| [[bld_knowledge_card_vc_credential]] | upstream | 0.32 |
-| [[bld_instruction_vc_credential]] | upstream | 0.32 |
 | [[vc-credential-builder]] | downstream | 0.28 |
 | [[bld_tools_ontology]] | sibling | 0.28 |

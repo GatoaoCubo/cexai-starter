@@ -32,10 +32,8 @@ keywords:
   - "| {{value}} |"
 density_score: 0.90
 related:
-  - p11_qg_streaming_config
   - bld_architecture_streaming_config
   - bld_schema_streaming_config
-  - bld_instruction_streaming_config
   - bld_config_streaming_config
 ---
 # Output Template: streaming_config
@@ -99,8 +97,6 @@ description: "{{what_this_stream_does_max_200ch}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_streaming_config]] | downstream | 0.50 |
 | [[bld_architecture_streaming_config]] | downstream | 0.44 |
 | [[bld_schema_streaming_config]] | downstream | 0.44 |
-| [[bld_instruction_streaming_config]] | upstream | 0.39 |
 | [[bld_config_streaming_config]] | downstream | 0.36 |

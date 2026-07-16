@@ -31,11 +31,7 @@ keywords:
   - "related artifacts"
 density_score: 0.88
 related:
-  - bld_knowledge_card_output_template
   - bld_schema_output_template
-  - p10_lr_output_template_builder
-  - bld_instruction_kind
-  - p11_qg_output_template
 ---
 # Instructions: How to Produce an output_template
 ## Phase 1: RESEARCH
@@ -98,6 +94,4 @@ related:
 |----------|-------------|-------|
 | [[bld_knowledge_output_template]] | upstream | 0.40 |
 | [[bld_schema_output_template]] | downstream | 0.38 |
-| [[p10_lr_output_template_builder]] | downstream | 0.34 |
 | bld_instruction_kind | sibling (reflexive-case source) | 0.32 |
-| [[p11_qg_output_template]] | downstream | 0.30 |

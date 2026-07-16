@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of workflow, and architectural position, workflow construction, architecture workflow, workflow, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_collaboration_workflow
   - bld_memory_workflow
   - workflow-builder
-  - bld_knowledge_card_workflow
-  - p01_kc_workflow
 ---
 # Architecture: workflow in the CEX
 ## Component Inventory
@@ -69,8 +66,5 @@ workflow        --depends-->    spawn_config
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_workflow]] | downstream | 0.57 |
 | [[bld_memory_workflow]] | downstream | 0.54 |
 | [[workflow-builder]] | downstream | 0.54 |
-| [[bld_knowledge_card_workflow]] | upstream | 0.52 |
-| [[p01_kc_workflow]] | downstream | 0.49 |

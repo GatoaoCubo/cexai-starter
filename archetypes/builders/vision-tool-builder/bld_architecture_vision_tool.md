@@ -17,10 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of vision_tool, and architectural position, vision tool construction, architecture vision tool, vision_tool, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - n00_vision_tool_manifest
   - vision-tool-builder
-  - p11_qg_vision_tool
-  - p01_kc_vision_tool
   - bld_architecture_browser_tool
 ---
 ## Component Inventory
@@ -97,6 +94,5 @@ parser              --consumes-->   output_format
 |----------|-------------|-------|
 | n00_vision_tool_manifest | upstream | 0.50 |
 | [[vision-tool-builder]] | upstream | 0.47 |
-| [[p11_qg_vision_tool]] | downstream | 0.44 |
 | [[kc_vision_tool]] | upstream | 0.42 |
 | [[bld_architecture_browser_tool]] | sibling | 0.36 |

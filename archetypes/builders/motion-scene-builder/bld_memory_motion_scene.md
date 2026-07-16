@@ -17,9 +17,6 @@ density_score: 0.9
 related:
   - bld_knowledge_motion_scene
   - bld_eval_motion_scene
-  - p01_kc_motion_scene
-  - p05_ms_aurora_title
-  - p05_ms_ferro_lowerthird
 ---
 
 # Patterns: motion_scene builds
@@ -42,12 +39,9 @@ related:
 | Empty binds_design_system | HARD gate fail; always bind a real p06_ds_* id before F6 |
 | Sibling scene (same system + same primitive) | shift the scene coordinate (different duration, different element layout, or different primitive) |
 ## Library shape
-[[p05_ms_ferro_lowerthird]] = cold/compact/stark system + lower_third primitive. [[p05_ms_aurora_title]] = warm/airy system + title_card primitive. Swarm fills interior coordinates (different systems x four primitives x duration variants).
+p05_ms_ferro_lowerthird = cold/compact/stark system + lower_third primitive. p05_ms_aurora_title = warm/airy system + title_card primitive. Swarm fills interior coordinates (different systems x four primitives x duration variants).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_eval_motion_scene]] | upstream | 0.45 |
 | [[bld_knowledge_motion_scene]] | sibling | 0.42 |
-| [[p01_kc_motion_scene]] | related | 0.42 |
-| [[p05_ms_aurora_title]] | example | 0.4 |
-| [[p05_ms_ferro_lowerthird]] | example | 0.4 |

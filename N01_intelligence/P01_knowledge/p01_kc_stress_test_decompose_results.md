@@ -33,14 +33,7 @@ linked_artifacts:
 density_score: 0.93
 data_source: "stress_results.tsv (78 rows) + session_20260428_v1_5 MEMORY"
 related:
-  - p02_fc_cex_model_fallback
-  - p08_adr_runtime_coverage_n05
-  - p01_kc_claude_model_capabilities_2026
   - p01_kc_ollama_deployment_guide
-  - p01_kc_spawn_config
-  - p01_kc_token_efficiency_gap_map
-  - p02_fb_model_cascade
-  - p02_mc_claude_opus_4
 ---
 
 # STRESS_TEST_DECOMPOSE: Multi-Runtime 8F Capability Matrix

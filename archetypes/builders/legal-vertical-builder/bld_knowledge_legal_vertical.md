@@ -19,10 +19,6 @@ the, model rules, professional conduct, key concepts, client privilege]
 density_score: 0.85
 related:
   - legal-vertical-builder
-  - bld_instruction_legal_vertical
-  - p01_qg_legal_vertical
-  - kc_legal_vertical
-  - p10_mem_legal_vertical_builder
 ---
 ## Domain Overview
 The legal vertical centers on specialized workflows critical to legal practice, including privilege management, billable hour tracking, and contract analysis. Privilege (e.g., attorney-client confidentiality) is foundational to legal work, governed by rules like the ABA Model Rules of Professional Conduct. Billable hour tracking remains a cornerstone of law firm billing, though challenges like time-padding and inefficiencies persist. Contract analysis involves parsing, negotiating, and monitoring agreements, often leveraging AI for clause extraction and risk identification. Use cases span litigation support, M&A due diligence, and compliance with regulatory frameworks.
@@ -75,7 +71,3 @@ Legal tech innovations increasingly target automation in these areas, balancing 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[legal-vertical-builder]] | related | 0.65 |
-| [[bld_instruction_legal_vertical]] | downstream | 0.57 |
-| [[p01_qg_legal_vertical]] | downstream | 0.54 |
-| [[kc_legal_vertical]] | sibling | 0.41 |
-| [[p10_mem_legal_vertical_builder]] | downstream | 0.38 |

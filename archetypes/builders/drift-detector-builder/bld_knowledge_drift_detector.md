@@ -19,10 +19,7 @@ keywords: [drift detector construction, knowledge card drift detector, drift_det
 distribution, statistical test selection, feature type, recommended test]
 density_score: 0.90
 related:
-  - p01_kc_drift_detector
   - drift-detector-builder
-  - bld_instruction_drift_detector
-  - bld_collaboration_drift_detector
   - bld_architecture_drift_detector
 ---
 # Domain Knowledge: drift_detector
@@ -74,8 +71,5 @@ Distribution drift detection compares a reference distribution (training data or
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_drift_detector]] | sibling | 0.70 |
 | [[drift-detector-builder]] | downstream | 0.51 |
-| [[bld_instruction_drift_detector]] | downstream | 0.49 |
-| [[bld_collaboration_drift_detector]] | downstream | 0.46 |
 | [[bld_architecture_drift_detector]] | downstream | 0.32 |

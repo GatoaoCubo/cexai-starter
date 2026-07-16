@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [output validator construction, collaboration output validator, output_validator, builder, examples, "### crew: output quality", my role, crew compositions, validation pipeline, output quality]
 density_score: 0.90
 related:
-  - bld_collaboration_constraint_spec
-  - bld_collaboration_validation_schema
   - output-validator-builder
-  - bld_collaboration_validator
-  - bld_collaboration_retriever_config
 ---
 # Collaboration: output-validator-builder
 ## My Role in Crews

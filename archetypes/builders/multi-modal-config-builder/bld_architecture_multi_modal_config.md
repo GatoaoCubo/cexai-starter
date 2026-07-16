@@ -18,10 +18,6 @@ keywords: [component map of multi_modal_config, architectural position, multi mo
 density_score: 0.90
 related:
   - multi-modal-config-builder
-  - p11_qg_multi_modal_config
-  - bld_output_template_multi_modal_config
-  - p01_kc_multi_modal_config
-  - n00_multi_modal_config_manifest
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -62,7 +58,3 @@ vision_tool, audio_tool --> [multi_modal_config] --> agent_card, context_window_
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[multi-modal-config-builder]] | upstream | 0.52 |
-| [[p11_qg_multi_modal_config]] | downstream | 0.43 |
-| [[bld_output_template_multi_modal_config]] | upstream | 0.42 |
-| [[p01_kc_multi_modal_config]] | upstream | 0.42 |
-| [[n00_multi_modal_config_manifest]] | upstream | 0.41 |

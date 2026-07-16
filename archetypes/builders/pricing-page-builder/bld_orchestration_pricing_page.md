@@ -19,11 +19,7 @@ designs, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_referral_program
   - pricing-page-builder
-  - bld_collaboration_subscription_tier
-  - n00_pricing_page_manifest
-  - bld_instruction_pricing_page
 ---
 ## Crew Role  
 Designs and builds interactive pricing page UI components, ensuring alignment with brand guidelines and user experience standards. Coordinates with data and marketing teams for integration.  
@@ -48,8 +44,4 @@ Does NOT handle subscription billing logic (content_monetization-builder), landi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_referral_program]] | sibling | 0.32 |
 | [[pricing-page-builder]] | upstream | 0.30 |
-| [[bld_collaboration_subscription_tier]] | sibling | 0.28 |
-| [[n00_pricing_page_manifest]] | upstream | 0.28 |
-| [[bld_instruction_pricing_page]] | upstream | 0.26 |

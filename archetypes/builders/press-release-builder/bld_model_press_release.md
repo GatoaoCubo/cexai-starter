@@ -20,11 +20,7 @@ activate, crew role
 the]
 density_score: 0.85
 related:
-  - bld_knowledge_card_press_release
-  - bld_collaboration_press_release
-  - p10_lr_press_release_builder
   - bld_tools_press_release
-  - n00_press_release_manifest
 ---
 ## Identity
 ## Identity
@@ -131,8 +127,4 @@ If the user requests one of the above, name the correct builder and stop.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_press_release]] | upstream | 0.55 |
-| [[bld_collaboration_press_release]] | downstream | 0.54 |
-| [[p10_lr_press_release_builder]] | downstream | 0.42 |
 | [[bld_tools_press_release]] | upstream | 0.41 |
-| [[n00_press_release_manifest]] | related | 0.39 |

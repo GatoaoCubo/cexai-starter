@@ -18,12 +18,6 @@ keywords: [knowledge-card, project, software-engineering, rich, archetypes]
 linked_artifacts:
   primary: null
 llm_function: INJECT
-related:
-  - p04_ex_software_project_pipeline_runner
-  - bld_sp_schema_software_project
-  - p04_tpl_software_project
-  - bld_sp_manifest_software_project
-  - bld_sp_quality_gate_software_project
 ---
 # Software Project Knowledge
 
@@ -133,12 +127,3 @@ dependencies = [..., "asyncpg>=0.29", "redis>=5.0", "celery>=5.3"]
 - Applying this artifact without understanding the domain context
 - Treating this as a standalone reference without checking linked artifacts
 - Ignoring version constraints when integrating
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p04_ex_software_project_pipeline_runner]] | downstream | 0.41 |
-| [[bld_sp_schema_software_project]] | downstream | 0.38 |
-| [[p04_tpl_software_project]] | downstream | 0.38 |
-| [[bld_sp_manifest_software_project]] | downstream | 0.37 |
-| [[bld_sp_quality_gate_software_project]] | downstream | 0.36 |

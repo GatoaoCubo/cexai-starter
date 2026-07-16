@@ -19,9 +19,6 @@ attaches]
 density_score: 0.85
 related:
   - c2pa-manifest-builder
-  - bld_collaboration_vc_credential
-  - bld_knowledge_card_c2pa_manifest
-  - p10_lr_c2pa_manifest_builder
 ---
 ## Crew Role
 Attaches C2PA 2.3 content credentials to AI-generated media, building signed provenance chains that survive distribution and enable content authenticity verification at any downstream point.
@@ -49,6 +46,3 @@ Does NOT handle: camera capture manifests (different COSE signing flow), documen
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[c2pa-manifest-builder]] | upstream | 0.33 |
-| [[bld_collaboration_vc_credential]] | sibling | 0.32 |
-| [[bld_knowledge_card_c2pa_manifest]] | upstream | 0.30 |
-| [[p10_lr_c2pa_manifest_builder]] | upstream | 0.28 |

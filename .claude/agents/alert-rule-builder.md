@@ -6,7 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
   - bld_tools_alert_rule
-  - p03_sp_builder_nucleus
   - alert-rule-builder
   - system-prompt-builder
 ---
@@ -88,6 +87,5 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.32 |
 | [[bld_tools_alert_rule]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[alert-rule-builder]] | related | 0.29 |
 | [[system-prompt-builder]] | related | 0.27 |

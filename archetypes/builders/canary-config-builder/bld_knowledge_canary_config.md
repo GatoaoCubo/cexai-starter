@@ -17,10 +17,6 @@ tldr: "Domain knowledge for canary_config: traffic stages, rollback triggers, Ar
 keywords: [knowledge card, domain knowledge for canary_config, traffic stages, rollback triggers, argo rollouts, knowledge_card, canary_config, what it is, standard traffic stages, typical pause]
 density_score: null
 related:
-  - kc_canary_config
-  - bld_manifest_canary_config
-  - bld_instruction_canary_config
-  - bld_quality_gate_canary_config
   - bld_tools_canary_config
 ---
 # Knowledge Card: canary_config
@@ -85,8 +81,4 @@ python _tools/cex_retriever.py --query "{DOMAIN}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_canary_config]] | sibling | 0.48 |
-| [[bld_manifest_canary_config]] | downstream | 0.45 |
-| [[bld_instruction_canary_config]] | downstream | 0.43 |
-| [[bld_quality_gate_canary_config]] | downstream | 0.39 |
 | [[bld_tools_canary_config]] | sibling | 0.36 |

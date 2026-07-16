@@ -22,11 +22,9 @@ related_topics:
 keywords: [kind, builder, iso, 8f pipeline, runtime, governance layer, typed knowledge system, quality scoring, fractal]
 density_score: 0.96
 related:
-  - p06_td_cex_artifact_type_n03
   - bld_architecture_kind
   - kind-builder
   - bld_schema_kind
-  - bld_instruction_kind
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_materialize. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.

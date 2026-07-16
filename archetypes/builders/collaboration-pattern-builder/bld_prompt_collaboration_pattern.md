@@ -20,8 +20,6 @@ related:
   - collaboration-pattern-builder
   - bld_memory_collaboration_pattern
   - bld_tools_collaboration_pattern
-  - p11_qg_collaboration_pattern
-  - bld_instruction_thinking_config
 ---
 ## Phase 1: RESEARCH  
 1. Define collaboration objectives and agent roles within the topology.  
@@ -71,5 +69,3 @@ related:
 | [[collaboration-pattern-builder]] | downstream | 0.40 |
 | [[bld_memory_collaboration_pattern]] | downstream | 0.35 |
 | [[bld_tools_collaboration_pattern]] | downstream | 0.29 |
-| [[p11_qg_collaboration_pattern]] | downstream | 0.29 |
-| [[bld_instruction_thinking_config]] | sibling | 0.28 |

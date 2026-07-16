@@ -33,9 +33,7 @@ llm_function: BECOME
 parent: null
 8f: "F6_produce"
 related:
-  - bld_collaboration_response_format
   - bld_architecture_response_format
-  - p03_ins_response_format
   - bld_memory_response_format
   - system-prompt-builder
 ---
@@ -122,6 +120,5 @@ Deliver a `response_format` artifact with this structure:
 |----------|-------------|-------|
 | [[bld_orchestration_response_format]] | related | 0.53 |
 | [[bld_architecture_response_format]] | downstream | 0.50 |
-| [[p03_ins_response_format]] | related | 0.50 |
 | [[bld_memory_response_format]] | downstream | 0.48 |
 | [[system-prompt-builder]] | sibling | 0.44 |

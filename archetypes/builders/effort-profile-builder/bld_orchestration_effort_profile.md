@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - effort-profile-builder
   - bld_config_effort_profile
-  - bld_collaboration_agent
-  - bld_collaboration_system_prompt
-  - bld_collaboration_memory_scope
 ---
 # Collaboration: effort-profile-builder
 ## My Role in Crews
@@ -80,6 +77,3 @@ None — independent builder (layer 0).
 |----------|-------------|-------|
 | [[effort-profile-builder]] | upstream | 0.38 |
 | [[bld_config_effort_profile]] | upstream | 0.34 |
-| [[bld_collaboration_agent]] | sibling | 0.33 |
-| [[bld_collaboration_system_prompt]] | sibling | 0.33 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.33 |

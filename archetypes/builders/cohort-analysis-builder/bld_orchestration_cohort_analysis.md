@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [cohort_analysis construction, collaboration cohort analysis, cohort_analysis, builder, collaboration, crew role  
 defines, receives from, data warehouse, product team, produces for]
 density_score: 0.85
-related:
-  - bld_collaboration_reward_model
-  - bld_collaboration_reranker_config
-  - bld_collaboration_integration_guide
-  - bld_collaboration_subscription_tier
-  - bld_collaboration_white_label_config
 ---
 ## Crew Role  
 Defines and analyzes user cohorts to identify trends and patterns, providing actionable insights for product and marketing teams.  
@@ -43,12 +37,3 @@ Defines and analyzes user cohorts to identify trends and patterns, providing act
 
 ## Boundary  
 Does NOT handle model evaluation (benchmark-builder) or billing data (usage_report-builder). Data pipeline issues are handled by data engineering.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_reward_model]] | sibling | 0.36 |
-| [[bld_collaboration_reranker_config]] | sibling | 0.35 |
-| [[bld_collaboration_integration_guide]] | sibling | 0.34 |
-| [[bld_collaboration_subscription_tier]] | sibling | 0.33 |
-| [[bld_collaboration_white_label_config]] | sibling | 0.32 |

@@ -31,11 +31,8 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_collaboration_unit_eval
   - bld_memory_unit_eval
-  - bld_knowledge_card_unit_eval
   - bld_architecture_unit_eval
-  - p11_qg_unit_eval
 ---
 ## Identity
 
@@ -138,4 +135,3 @@ quality_target: 9.0
 | [[bld_memory_unit_eval]] | downstream | 0.48 |
 | [[bld_knowledge_unit_eval]] | upstream | 0.47 |
 | [[bld_architecture_unit_eval]] | downstream | 0.47 |
-| [[p11_qg_unit_eval]] | related | 0.47 |

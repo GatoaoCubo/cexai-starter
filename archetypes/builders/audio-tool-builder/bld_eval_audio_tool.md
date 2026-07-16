@@ -19,10 +19,7 @@ keywords: [audio processing tool, and language coverage, direction declaration, 
 density_score: 0.91
 related:
   - bld_schema_audio_tool
-  - bld_instruction_audio_tool
   - audio-tool-builder
-  - bld_knowledge_card_audio_tool
-  - p10_lr_audio_tool_builder
 ---
 ## Quality Gate
 

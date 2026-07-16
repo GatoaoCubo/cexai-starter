@@ -21,8 +21,6 @@ related:
   - bld_memory_pattern
   - bld_architecture_pattern
   - pattern-builder
-  - p03_ins_pattern
-  - bld_knowledge_card_pattern
 ---
 
 # Pattern
@@ -97,5 +95,4 @@ law, decision_record --> [pattern] --> workflow, agent_card, instruction
 | [[bld_memory_pattern]] | downstream | 0.35 |
 | [[bld_architecture_pattern]] | related | 0.34 |
 | [[pattern-builder]] | related | 0.34 |
-| [[p03_ins_pattern]] | upstream | 0.32 |
 | [[bld_knowledge_pattern]] | sibling | 0.32 |

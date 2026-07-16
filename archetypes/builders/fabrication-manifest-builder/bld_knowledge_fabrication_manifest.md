@@ -18,9 +18,7 @@ keywords: [fabrication_manifest construction, knowledge card fabrication manifes
 density_score: 0.85
 related:
   - fabrication-manifest-builder
-  - bld_collaboration_fabrication_manifest
   - bld_tools_fabrication_manifest
-  - kc_fabrication_manifest
   - bld_schema_fabrication_manifest
 ---
 ## Domain Overview
@@ -85,7 +83,5 @@ something real to load (F2 BECOME), not to relaunch the deprecated engine as the
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[fabrication-manifest-builder]] | downstream | 0.61 |
-| [[bld_collaboration_fabrication_manifest]] | downstream | 0.44 |
 | [[bld_tools_fabrication_manifest]] | downstream | 0.43 |
-| [[kc_fabrication_manifest]] | sibling | 0.42 |
 | [[bld_schema_fabrication_manifest]] | downstream | 0.41 |

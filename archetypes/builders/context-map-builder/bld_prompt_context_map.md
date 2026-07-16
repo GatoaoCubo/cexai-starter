@@ -31,11 +31,8 @@ keywords:
   - "shared kernel"
 density_score: 0.90
 related:
-  - kc_context_map
   - context-map-builder
   - bld_architecture_context_map
-  - bld_instruction_output_validator
-  - bld_instruction_retriever_config
 ---
 # Instructions: How to Produce a context_map
 
@@ -82,8 +79,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_context_map]] | upstream | 0.36 |
 | [[context-map-builder]] | downstream | 0.36 |
 | [[bld_architecture_context_map]] | downstream | 0.35 |
-| [[bld_instruction_output_validator]] | sibling | 0.35 |
-| [[bld_instruction_retriever_config]] | sibling | 0.35 |

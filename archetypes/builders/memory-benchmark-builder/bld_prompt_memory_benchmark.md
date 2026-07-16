@@ -18,10 +18,7 @@ keywords: [memory_benchmark construction, instruction memory benchmark, memory_b
 density_score: 0.87
 related:
   - memory-benchmark-builder
-  - p01_kc_hybrid_review4_n05
   - bld_schema_memory_benchmark
-  - bld_knowledge_card_memory_benchmark
-  - bld_collaboration_memory_scope
 ---
 ## Phase 1: RESEARCH
 
@@ -58,7 +55,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[memory-benchmark-builder]] | downstream | 0.47 |
-| [[p01_kc_hybrid_review4_n05]] | upstream | 0.37 |
 | [[bld_schema_memory_benchmark]] | downstream | 0.34 |
-| [[bld_knowledge_card_memory_benchmark]] | upstream | 0.33 |
-| [[bld_collaboration_memory_scope]] | downstream | 0.32 |

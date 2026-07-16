@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - prompt-cache-builder
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_collaboration_prompt_cache
 ---
 
 # prompt-cache-builder Sub-Agent
@@ -86,6 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-cache-builder]] | related | 0.36 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.30 |
-| [[bld_collaboration_prompt_cache]] | related | 0.30 |

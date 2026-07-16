@@ -33,8 +33,6 @@ related:
   - cybersec-skill-builder
   - bld_schema_cybersec_skill
   - bld_eval_cybersec_skill
-  - bld_collaboration_cybersec_skill
-  - p01_kc_cybersec_skill
 ---
 
 ## Context
@@ -142,5 +140,3 @@ python _tools/cex_skill_loader.py --verify cybersec_skill
 | [[cybersec-skill-builder]] | upstream | 0.70 |
 | [[bld_schema_cybersec_skill]] | upstream | 0.65 |
 | [[bld_eval_cybersec_skill]] | downstream | 0.60 |
-| [[bld_collaboration_cybersec_skill]] | downstream | 0.50 |
-| [[p01_kc_cybersec_skill]] | sibling | 0.55 |

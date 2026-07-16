@@ -18,11 +18,8 @@ keywords: [citation, reference, provenance, attribution, source, evidence, groun
 feeds_kinds: [citation]
 density_score: null
 related:
-  - bld_knowledge_card_citation
   - citation-builder
   - bld_schema_citation
-  - bld_instruction_citation
-  - p10_lr_citation_builder
 ---
 
 # Citation
@@ -103,4 +100,3 @@ rag_source, search_tool --> [citation] --> knowledge_card, context_doc, agent ou
 | [[citation-builder]] | related | 0.56 |
 | [[bld_schema_citation]] | downstream | 0.53 |
 | [[bld_prompt_citation]] | downstream | 0.53 |
-| [[p10_lr_citation_builder]] | downstream | 0.50 |

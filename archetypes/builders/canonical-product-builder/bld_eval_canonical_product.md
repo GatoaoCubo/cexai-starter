@@ -13,11 +13,8 @@ keywords: [quality gate, canonical product feedback, fail criteria, canonical_pr
 density_score: 0.95
 updated: "2026-07-03"
 related:
-  - bld_qg_data_contract
-  - bld_rules_canonical_product
   - bld_schema_canonical_product
   - canonical-product-builder
-  - bld_instruction_canonical_product
 ---
 ## Quality Gate
 
@@ -106,8 +103,6 @@ kind: canonical_product   # WRONG: a channel projection is not the channel-neutr
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_qg_data_contract]] | sibling | 0.50 |
-| [[bld_rules_canonical_product]] | sibling | 0.48 |
 | [[bld_schema_canonical_product]] | upstream | 0.45 |
 | [[canonical-product-builder]] | upstream | 0.40 |
 | [[bld_prompt_canonical_product]] | sibling | 0.35 |

@@ -18,10 +18,6 @@ keywords: [pa_manifest construction, quality gate c, pa manifest, c2pa_manifest,
 density_score: 0.85
 related:
   - c2pa-manifest-builder
-  - bld_instruction_c2pa_manifest
-  - bld_knowledge_card_c2pa_manifest
-  - p10_lr_c2pa_manifest_builder
-  - bld_output_template_c2pa_manifest
 ---
 ## Quality Gate
 

@@ -19,10 +19,6 @@ these]
 density_score: 0.85
 related:
   - edtech-vertical-builder
-  - p10_mem_edtech_vertical_builder
-  - bld_instruction_edtech_vertical
-  - p01_qg_edtech_vertical
-  - bld_output_template_edtech_vertical
 ---
 ## Production Tools
 | Tool | Purpose | When |
@@ -47,7 +43,3 @@ These tools support edtech vertical artifact production, including LMS integrati
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[edtech-vertical-builder]] | upstream | 0.47 |
-| [[p10_mem_edtech_vertical_builder]] | downstream | 0.47 |
-| [[bld_instruction_edtech_vertical]] | upstream | 0.42 |
-| [[p01_qg_edtech_vertical]] | downstream | 0.39 |
-| [[bld_output_template_edtech_vertical]] | downstream | 0.36 |

@@ -18,11 +18,7 @@ keywords: [github_issue_template construction, github_issue_template, builder, k
 git, key concepts, required fields, hub docs, steps reproduce, github docs]
 density_score: 0.85
 related:
-  - kc_github_issue_template
   - github-issue-template-builder
-  - bld_instruction_github_issue_template
-  - p10_mem_github_issue_template_builder
-  - n00_github_issue_template_manifest
 ---
 ## Domain Overview
 GitHub issue templates standardize bug reports, feature requests, and questions by enforcing structured input. They reduce noise, improve triage efficiency, and ensure reproducibility through required fields like title, steps to reproduce, and environment details. Industry adoption emphasizes alignment with project workflows, such as linking to documentation or using labels for prioritization. Templates also support community-driven projects by fostering consistency and reducing onboarding friction for contributors.
@@ -68,8 +64,4 @@ GitHub issue templates standardize bug reports, feature requests, and questions 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_github_issue_template]] | sibling | 0.50 |
 | [[github-issue-template-builder]] | downstream | 0.49 |
-| [[bld_instruction_github_issue_template]] | downstream | 0.43 |
-| [[p10_mem_github_issue_template_builder]] | downstream | 0.40 |
-| [[n00_github_issue_template_manifest]] | sibling | 0.40 |

@@ -25,10 +25,8 @@ title: "Memory Content Factory"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p01_kc_content_factory
   - content-factory-builder
   - bld_architecture_content_factory
-  - bld_knowledge_card_content_factory
   - bld_eval_content_factory
 ---
 # Learning: content_factory
@@ -66,8 +64,6 @@ DIFFERENT system wearing the same name.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_content_factory]] | upstream | 0.36 |
 | [[content-factory-builder]] | upstream | 0.32 |
 | [[bld_architecture_content_factory]] | related | 0.28 |
-| [[bld_knowledge_card_content_factory]] | upstream | 0.27 |
 | [[bld_eval_content_factory]] | related | 0.25 |

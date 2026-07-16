@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [crew interfaces, handoff contracts, conformity_assessment construction, crew role definition, output contracts, conformity_assessment, builder]
 density_score: 0.85
 related:
-  - bld_instruction_conformity_assessment
   - bld_tools_conformity_assessment
-  - bld_knowledge_card_conformity_assessment
-  - bld_manifest_conformity_assessment
-  - n00_conformity_assessment_manifest
 ---
 # Conformity Assessment Builder -- Collaboration
 
@@ -135,8 +131,4 @@ write_signal('n03', 'complete', 9.2)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_conformity_assessment]] | upstream | 0.47 |
 | [[bld_tools_conformity_assessment]] | upstream | 0.41 |
-| [[bld_knowledge_card_conformity_assessment]] | upstream | 0.41 |
-| [[bld_manifest_conformity_assessment]] | upstream | 0.40 |
-| [[n00_conformity_assessment_manifest]] | upstream | 0.33 |

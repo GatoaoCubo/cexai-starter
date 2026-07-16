@@ -15,12 +15,6 @@ llm_function: GOVERN
 density_score: 0.88
 created: "2026-07-02"
 updated: "2026-07-02"
-related:
-  - p11_fb_vision_tool
-  - p11_fb_data_contract
-  - p11_fb_quality_gate
-  - p11_qg_product_match
-  - p10_lr_product_match_builder
 ---
 # Feedback: Product Match
 
@@ -92,8 +86,4 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_vision_tool]] | sibling | 0.82 |
-| [[p11_fb_data_contract]] | sibling | 0.78 |
 | p11_fb_quality_gate | sibling | 0.76 |
-| [[p11_qg_product_match]] | related | 0.50 |
-| [[p10_lr_product_match_builder]] | related | 0.44 |

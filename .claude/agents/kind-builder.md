@@ -14,11 +14,8 @@ created: "2026-04-07"
 updated: "2026-04-07"
 density_score: 0.90
 related:
-  - p06_td_cex_artifact_type_n03
   - bld_architecture_kind
   - kind-builder
-  - p01_faq_cex_common_questions
-  - bld_instruction_kind
 ---
 
 # Kind Builder Sub-Agent
@@ -124,8 +121,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p06_td_cex_artifact_type_n03]] | related | 0.44 |
 | [[bld_architecture_kind]] | related | 0.41 |
 | [[kind-builder]] | related | 0.41 |
-| [[p01_faq_cex_common_questions]] | related | 0.36 |
-| [[bld_instruction_kind]] | related | 0.36 |

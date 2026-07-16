@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [usage_report construction, instruction usage report, usage_report, builder, instruction, report_id, metric, timestamp, related artifacts, sibling]
 density_score: 0.85
-related:
-  - bld_instruction_judge_config
-  - bld_instruction_playground_config
-  - bld_instruction_eval_framework
-  - bld_instruction_reward_model
-  - bld_instruction_eval_metric
 ---
 ## Phase 1: RESEARCH  
 1. Identify stakeholders (billing, CFO, product teams) for requirement alignment.  
@@ -48,12 +42,3 @@ related:
 - [ ] Verify visualizations match data (e.g., bar chart axes, color coding).  
 - [ ] Confirm all required fields in OUTPUT_TEMPLATE.md are populated.  
 - [ ] Obtain stakeholder sign-off on accuracy and completeness.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_judge_config]] | sibling | 0.29 |
-| [[bld_instruction_playground_config]] | sibling | 0.29 |
-| [[bld_instruction_eval_framework]] | sibling | 0.28 |
-| [[bld_instruction_reward_model]] | sibling | 0.27 |
-| [[bld_instruction_eval_metric]] | sibling | 0.27 |

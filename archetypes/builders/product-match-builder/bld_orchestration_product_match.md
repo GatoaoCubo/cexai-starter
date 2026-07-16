@@ -19,10 +19,7 @@ keywords: [product match construction, collaboration product match, product_matc
 density_score: 0.90
 related:
   - product-match-builder
-  - bld_collaboration_vision_tool
-  - bld_instruction_product_match
   - opportunity-matrix-builder
-  - bld_rules_data_contract
 ---
 # Collaboration: product-match-builder
 ## My Role in Crews
@@ -92,4 +89,3 @@ none of them).
 | [[bld_orchestration_vision_tool]] | sibling | 0.35 |
 | [[bld_prompt_product_match]] | upstream | 0.32 |
 | [[opportunity-matrix-builder]] | sibling | 0.30 |
-| [[bld_rules_data_contract]] | sibling | 0.28 |

@@ -30,10 +30,6 @@ keywords:
   - "golden example"
 density_score: 0.85
 related:
-  - p09_qg_marketplace_app_manifest
-  - kc_github_issue_template
-  - bld_instruction_github_issue_template
-  - p10_mem_github_issue_template_builder
   - github-issue-template-builder
 ---
 ## Quality Gate

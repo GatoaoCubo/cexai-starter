@@ -19,10 +19,6 @@ keywords: [command-line tool specification, cli tool construction, knowledge car
 density_score: 0.90
 related:
   - cli-tool-builder
-  - p10_lr_cli_tool_builder
-  - bld_collaboration_cli_tool
-  - bld_instruction_cli_tool
-  - p11_qg_cli_tool
 ---
 # Domain Knowledge: cli_tool
 ## Executive Summary
@@ -75,7 +71,3 @@ CLI tools are atomic command-line executables that run a task and terminate. The
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cli-tool-builder]] | downstream | 0.45 |
-| [[p10_lr_cli_tool_builder]] | downstream | 0.39 |
-| [[bld_collaboration_cli_tool]] | downstream | 0.35 |
-| [[bld_instruction_cli_tool]] | downstream | 0.33 |
-| [[p11_qg_cli_tool]] | downstream | 0.32 |

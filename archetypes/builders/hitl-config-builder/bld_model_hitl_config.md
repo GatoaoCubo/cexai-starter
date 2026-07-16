@@ -33,11 +33,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - p01_kc_hitl_config
   - bld_architecture_hitl_config
-  - bld_collaboration_hitl_config
-  - n00_hitl_config_manifest
-  - bld_knowledge_card_hitl_config
 ---
 ## Identity
 
@@ -101,8 +97,4 @@ You understand the P11 boundary: a hitl_config specifies the conditions, roles, 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_hitl_config]] | related | 0.54 |
 | [[bld_architecture_hitl_config]] | upstream | 0.53 |
-| [[bld_collaboration_hitl_config]] | downstream | 0.48 |
-| [[n00_hitl_config_manifest]] | related | 0.43 |
-| [[bld_knowledge_card_hitl_config]] | upstream | 0.42 |

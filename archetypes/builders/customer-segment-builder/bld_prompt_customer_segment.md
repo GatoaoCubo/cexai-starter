@@ -18,10 +18,6 @@ keywords: [customer_segment construction, instruction customer segment, customer
 density_score: 0.85
 related:
   - customer-segment-builder
-  - p10_mem_customer_segment_builder
-  - bld_collaboration_customer_segment
-  - p02_qg_customer_segment
-  - p01_kc_customer_segment
 ---
 ## Phase 1: RESEARCH  
 1. Define segment objectives: Align with P02 goals and business constraints.  
@@ -53,7 +49,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[customer-segment-builder]] | upstream | 0.37 |
-| [[p10_mem_customer_segment_builder]] | downstream | 0.35 |
 | [[bld_orchestration_customer_segment]] | downstream | 0.30 |
-| [[p02_qg_customer_segment]] | downstream | 0.29 |
 | [[kc_customer_segment]] | upstream | 0.27 |

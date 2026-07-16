@@ -8,7 +8,6 @@ related:
   - bld_orchestration_cybersec_skill
   - bld_architecture_cybersec_skill
   - bld_eval_cybersec_skill
-  - kc_cybersec_skill
 ---
 
 # cybersec-skill-builder Sub-Agent
@@ -92,4 +91,3 @@ Five duties bind any agent that emits an artifact:
 | [[bld_orchestration_cybersec_skill]] | related | 0.39 |
 | [[bld_architecture_cybersec_skill]] | related | 0.37 |
 | [[bld_eval_cybersec_skill]] | related | 0.33 |
-| [[kc_cybersec_skill]] | related | 0.33 |

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F3_inject"
 keywords: [builder identity, routing for procedural_memory, llm agent procedural memory, voyager-style skill libraries, reflexion self-notes, expel experience extraction, commercial tier gating, procedural_memory, builder, type_builder]
 density_score: 0.90
-related:
-  - bld_knowledge_card_procedural_memory
-  - bld_instruction_procedural_memory
-  - bld_collaboration_procedural_memory
-  - bld_collaboration_skill
-  - p10_mem_procedural_memory_builder
 ---
 ## Identity
 ## Identity
@@ -90,12 +84,3 @@ NEVER describe motor schemas, basal ganglia, or cognitive neuroscience -- wrong 
 NEVER allow unverified skills into the library (Voyager verify-before-store pattern).
 NEVER conflate procedural memory (how to do) with semantic memory (what is true).
 NEVER self-score quality -- leave quality: null for peer review.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_procedural_memory]] | upstream | 0.69 |
-| [[bld_instruction_procedural_memory]] | upstream | 0.59 |
-| [[bld_collaboration_procedural_memory]] | downstream | 0.56 |
-| [[bld_collaboration_skill]] | downstream | 0.54 |
-| [[p10_mem_procedural_memory_builder]] | related | 0.51 |

@@ -19,9 +19,6 @@ keywords: [supervisor construction, instruction supervisor, supervisor, builder,
 density_score: 0.90
 related:
   - supervisor-builder
-  - bld_knowledge_card_supervisor
-  - p11_qg_director
-  - bld_collaboration_supervisor
   - bld_architecture_supervisor
 ---
 # Instructions: How to Produce a supervisor
@@ -89,7 +86,4 @@ python _tools/cex_skill_loader.py --verify supervisor
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[supervisor-builder]] | upstream | 0.52 |
-| [[bld_knowledge_card_supervisor]] | upstream | 0.47 |
-| [[p11_qg_director]] | downstream | 0.47 |
-| [[bld_collaboration_supervisor]] | downstream | 0.46 |
 | [[bld_architecture_supervisor]] | downstream | 0.44 |

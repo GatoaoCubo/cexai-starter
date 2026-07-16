@@ -19,10 +19,6 @@ keywords: [content factory construction, knowledge card content factory, content
 density_score: 0.90
 related:
   - content-factory-builder
-  - p01_kc_content_factory
-  - p01_kc_social_publisher
-  - p01_kc_content_library
-  - bld_instruction_content_factory
 ---
 # Domain Knowledge: content_factory
 
@@ -98,7 +94,3 @@ from `topic` + joined `source_facts` -- grounded by construction, fully offline-
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[content-factory-builder]] | downstream | 0.56 |
-| [[p01_kc_content_factory]] | upstream | 0.53 |
-| [[p01_kc_social_publisher]] | sibling | 0.47 |
-| [[p01_kc_content_library]] | sibling | 0.44 |
-| [[bld_instruction_content_factory]] | downstream | 0.40 |

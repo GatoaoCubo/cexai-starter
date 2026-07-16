@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F3_inject"
 keywords: [sso_config construction, knowledge card sso config, sso_config, builder, knowledge_card, email, domain overview, single sign, security assertion markup language, key concepts]
 density_score: 0.85
-related:
-  - sso-config-builder
-  - kc_sso_config
-  - bld_instruction_sso_config
-  - p10_mem_sso_config_builder
-  - p09_qg_sso_config
 ---
 ## Domain Overview  
 SSO (Single Sign-On) configurations enable users to authenticate once across multiple applications using standardized protocols like SAML (Security Assertion Markup Language) and OIDC (OpenID Connect). These configurations define how identity providers (IdPs) and service providers (SPs) exchange authentication and authorization data securely. As organizations adopt cloud services and zero-trust architectures, robust SSO configurations are critical for balancing user convenience with enterprise security. Misconfigurations here can lead to insecure access, data leaks, or failed integrations.  
@@ -67,12 +61,3 @@ SSO configurations typically involve metadata exchange, protocol bindings (e.g.,
 - Misconfiguring protocol bindings (e.g., using HTTP Redirect for SPs requiring POST).  
 - Overlooking attribute mapping, leading to incomplete user profiles.  
 - Failing to implement SLO, risking session persistence across systems.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[sso-config-builder]] | downstream | 0.60 |
-| [[kc_sso_config]] | sibling | 0.51 |
-| [[bld_instruction_sso_config]] | downstream | 0.47 |
-| [[p10_mem_sso_config_builder]] | downstream | 0.47 |
-| [[p09_qg_sso_config]] | downstream | 0.44 |

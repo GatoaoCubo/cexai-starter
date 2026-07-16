@@ -20,11 +20,7 @@ effective, evidence
 reviewed, safety officer, related artifacts]
 density_score: 0.85
 related:
-  - p10_mem_prompt_optimizer_builder
-  - p10_mem_prompt_technique_builder
   - safety-policy-builder
-  - p10_mem_eval_metric_builder
-  - p10_lr_judge_config_builder
 ---
 ## Observation
 Safety_policy artifacts often suffer from vague language, leading to inconsistent interpretation. Overly broad rules may fail to address specific risks, while overly restrictive ones can hinder innovation.
@@ -45,8 +41,4 @@ Reviewed artifacts with defined "stakeholder responsibilities" showed 30% higher
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_prompt_optimizer_builder]] | related | 0.27 |
-| [[p10_mem_prompt_technique_builder]] | related | 0.22 |
 | [[safety-policy-builder]] | downstream | 0.20 |
-| [[p10_mem_eval_metric_builder]] | related | 0.19 |
-| [[p10_lr_judge_config_builder]] | sibling | 0.19 |

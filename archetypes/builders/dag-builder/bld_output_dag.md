@@ -20,8 +20,6 @@ related:
   - bld_schema_dag
   - bld_config_dag
   - bld_architecture_dag
-  - n00_dag_manifest
-  - p11_qg_dag
 ---
 # Output Template: dag
 Naming pattern: `p12_dag_{pipeline}.yaml`
@@ -99,5 +97,3 @@ linked_artifacts:
 | [[bld_schema_dag]] | downstream | 0.41 |
 | [[bld_config_dag]] | downstream | 0.41 |
 | [[bld_architecture_dag]] | downstream | 0.40 |
-| [[n00_dag_manifest]] | downstream | 0.36 |
-| [[p11_qg_dag]] | downstream | 0.34 |

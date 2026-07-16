@@ -13,12 +13,6 @@ tags: [knowledge, frontend, accessibility, wcag, aria, conversion, seo]
 tldr: "WCAG 2.1 AA accessibility patterns that directly impact conversion: proper ARIA labeling increases form completion 26%, keyboard navigation retains power users, and semantic HTML improves SEO rankings. Accessible design is not charity -- it is untapped revenue."
 keywords: [wcag 2.1 aa, aria-label, aria-describedby, aria-live, aria-expanded, aria-hidden, focus-visible, outline, tabindex, semantic html]
 density_score: 0.88
-related:
-  - p01_kc_accessibility_a11y
-  - p10_hos_html_output_visual_frontend
-  - p06_is_a11y_checklist_n02
-  - p04_browser_railway_ui
-  - p05_oval_component_template_n02
 ---
 
 # Accessibility A11Y

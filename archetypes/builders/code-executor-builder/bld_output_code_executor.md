@@ -19,11 +19,8 @@ keywords: [template with, code executor construction, output template code execu
 isolation:, escape prevention:, session:]
 density_score: 0.90
 related:
-  - p11_qg_code_executor
   - bld_schema_code_executor
-  - bld_instruction_code_executor
   - code-executor-builder
-  - p04_exec_python_sandbox
 ---
 # Output Template: code_executor
 ```yaml
@@ -98,7 +95,6 @@ Libraries: `{{pre_installed_libraries_if_any}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_code_executor]] | downstream | 0.42 |
 | [[bld_schema_code_executor]] | downstream | 0.38 |
 | [[bld_prompt_code_executor]] | upstream | 0.37 |
 | [[code-executor-builder]] | upstream | 0.37 |

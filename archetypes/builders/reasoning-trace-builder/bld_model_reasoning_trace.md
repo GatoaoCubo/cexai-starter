@@ -30,10 +30,6 @@ tldr: Golden and anti-examples for reasoning trace construction, demonstrating i
 llm_function: BECOME
 8f: "F3_inject"
 related:
-  - bld_collaboration_reasoning_trace
-  - bld_knowledge_card_reasoning_trace
-  - p01_kc_reasoning_trace
-  - p03_ins_reasoning_trace_builder
   - bld_memory_reasoning_trace
 ---
 ## Identity
@@ -128,8 +124,4 @@ Max body: 8192 bytes. Every field definition is precise. No explanatory prose in
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_reasoning_trace]] | upstream | 0.65 |
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.62 |
-| [[p01_kc_reasoning_trace]] | related | 0.61 |
-| [[p03_ins_reasoning_trace_builder]] | related | 0.59 |
 | [[bld_memory_reasoning_trace]] | downstream | 0.57 |

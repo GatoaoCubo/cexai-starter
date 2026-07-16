@@ -19,8 +19,6 @@ related:
   - bld_feedback_default
   - bld_config_default
   - bld_orchestration_default
-  - p11_fb_quality_gate
-  - p11_fb_kind
 ---
 # P07 Eval — Universal Quality Gates
 

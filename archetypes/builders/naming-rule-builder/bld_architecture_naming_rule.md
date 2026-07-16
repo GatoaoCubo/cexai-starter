@@ -18,10 +18,7 @@ keywords: [component map of naming_rule, and architectural position, naming rule
 density_score: 0.90
 related:
   - naming-rule-builder
-  - p01_kc_naming_rule
-  - p03_ins_naming_rule
   - bld_memory_naming_rule
-  - bld_knowledge_card_naming_rule
 ---
 # Architecture: naming_rule in the CEX
 ## Component Inventory
@@ -70,7 +67,4 @@ naming_rule     --signals-->      naming_violation
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[naming-rule-builder]] | upstream | 0.43 |
-| [[p01_kc_naming_rule]] | related | 0.42 |
-| [[p03_ins_naming_rule]] | upstream | 0.38 |
 | [[bld_memory_naming_rule]] | downstream | 0.38 |
-| [[bld_knowledge_card_naming_rule]] | upstream | 0.37 |

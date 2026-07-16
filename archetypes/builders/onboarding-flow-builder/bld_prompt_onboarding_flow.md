@@ -18,10 +18,6 @@ keywords: [onboarding_flow construction, instruction onboarding flow, onboarding
 density_score: 0.85
 related:
   - onboarding-flow-builder
-  - kc_onboarding_flow
-  - bld_knowledge_card_onboarding_flow
-  - p10_mem_onboarding_flow_builder
-  - n00_onboarding_flow_manifest
 ---
 ## Phase 1: RESEARCH  
 1. Conduct user interviews to identify pain points during onboarding.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[onboarding-flow-builder]] | downstream | 0.50 |
-| [[kc_onboarding_flow]] | upstream | 0.49 |
-| [[bld_knowledge_card_onboarding_flow]] | upstream | 0.41 |
-| [[p10_mem_onboarding_flow_builder]] | downstream | 0.39 |
-| [[n00_onboarding_flow_manifest]] | downstream | 0.38 |

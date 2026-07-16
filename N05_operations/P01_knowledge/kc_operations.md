@@ -41,8 +41,6 @@ density_score: 0.97
 data_source: internal://N05_operations + railway_platform_docs
 related:
   - p01_fse_generic_n05
-  - p02_agent_deploy_ops
-  - p03_sp_deploy_ops
   - p01_retr_n05
 ---
 

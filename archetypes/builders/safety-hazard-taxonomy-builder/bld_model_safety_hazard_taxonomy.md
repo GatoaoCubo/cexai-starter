@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for safety_hazard_taxonomy, safety_hazard_taxonomy construction, safety_hazard_taxonomy, builder, type_builder, mlcommons, ailuminate, llama-guard, hazard-category]
 density_score: 0.85
 related:
-  - bld_instruction_safety_hazard_taxonomy
-  - bld_collaboration_safety_hazard_taxonomy
-  - bld_knowledge_card_safety_hazard_taxonomy
-  - n00_safety_hazard_taxonomy_manifest
   - bld_schema_safety_hazard_taxonomy
 ---
 ## Identity
@@ -72,8 +68,4 @@ NEVER produce a partial taxonomy without explicit scope declaration and justific
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_safety_hazard_taxonomy]] | upstream | 0.67 |
-| [[bld_collaboration_safety_hazard_taxonomy]] | downstream | 0.67 |
-| [[bld_knowledge_card_safety_hazard_taxonomy]] | upstream | 0.59 |
-| [[n00_safety_hazard_taxonomy_manifest]] | related | 0.57 |
 | [[bld_schema_safety_hazard_taxonomy]] | upstream | 0.50 |

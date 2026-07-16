@@ -23,8 +23,6 @@ related:
   - p01_kc_clean_arch_ddd_in_cex
   - p01_fse_entity_vs_value_object
   - p01_fse_clean_arch_layer_placement
-  - p08_pat_hexagonal_ports_adapters
-  - domain_event
   - p01_kc_repo_assimilation_candidates
 ---
 

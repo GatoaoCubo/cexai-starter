@@ -19,11 +19,7 @@ keywords: [immutable fundamental rules, axiom construction, knowledge card axiom
 axioms, spec table, driven design]
 density_score: 0.90
 related:
-  - p01_kc_axiom
   - axiom-builder
-  - p10_lr_axiom-builder
-  - bld_collaboration_axiom
-  - tpl_axiom
 ---
 # Domain Knowledge: axiom
 ## Executive Summary
@@ -78,6 +74,5 @@ Axioms are immutable foundational truths that define system identity — if an a
 |----------|-------------|-------|
 | [[kc_axiom]] | sibling | 0.52 |
 | [[axiom-builder]] | downstream | 0.49 |
-| [[p10_lr_axiom-builder]] | downstream | 0.47 |
 | [[bld_orchestration_axiom]] | downstream | 0.44 |
 | tpl_axiom | downstream | 0.42 |

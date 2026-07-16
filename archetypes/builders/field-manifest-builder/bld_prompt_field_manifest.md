@@ -31,11 +31,7 @@ keywords:
   - "related artifacts"
 density_score: 0.88
 related:
-  - bld_knowledge_card_field_manifest
   - bld_schema_field_manifest
-  - p10_lr_field_manifest_builder
-  - bld_instruction_input_schema
-  - p11_qg_field_manifest
 ---
 # Instructions: How to Produce a field_manifest
 ## Phase 1: RESEARCH
@@ -84,8 +80,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_field_manifest]] | upstream | 0.40 |
 | [[bld_schema_field_manifest]] | downstream | 0.36 |
-| [[p10_lr_field_manifest_builder]] | downstream | 0.34 |
-| [[bld_instruction_input_schema]] | sibling | 0.33 |
-| [[p11_qg_field_manifest]] | downstream | 0.33 |

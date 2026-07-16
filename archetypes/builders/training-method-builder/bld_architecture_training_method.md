@@ -17,10 +17,8 @@ keywords: [training_method construction, architecture training method, architect
 density_score: 0.86
 related:
   - bld_architecture_model_architecture
-  - bld_collaboration_training_method
   - bld_tools_training_method
   - training-method-builder
-  - p10_lr_training_method_builder
 ---
 # Architecture: training_method
 
@@ -73,7 +71,5 @@ training_method
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_model_architecture]] | sibling | 0.45 |
-| [[bld_collaboration_training_method]] | downstream | 0.43 |
 | [[bld_tools_training_method]] | upstream | 0.37 |
 | [[training-method-builder]] | upstream | 0.35 |
-| [[p10_lr_training_method_builder]] | downstream | 0.33 |

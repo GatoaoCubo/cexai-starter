@@ -21,10 +21,7 @@ reviewed, related artifacts, platform-specific configurations]
 density_score: 0.85
 related:
   - integration-guide-builder
-  - bld_instruction_integration_guide
   - quickstart-guide-builder
-  - p10_lr_quickstart_guide_builder
-  - kc_integration_guide
 ---
 ## Observation
 Common issues include missing context for platform-specific configurations, inconsistent terminology, and omitting prerequisite setup steps for paid-tier onboarding.
@@ -46,7 +43,4 @@ Reviewed guides with setup checklists and role-based scenarios (e.g., SaaS partn
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[integration-guide-builder]] | upstream | 0.34 |
-| [[bld_instruction_integration_guide]] | upstream | 0.31 |
 | [[quickstart-guide-builder]] | upstream | 0.26 |
-| [[p10_lr_quickstart_guide_builder]] | related | 0.25 |
-| [[kc_integration_guide]] | upstream | 0.22 |

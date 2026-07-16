@@ -19,10 +19,8 @@ updated: "2026-04-13"
 density_score: 0.88
 related:
   - bld_tools_dual_loop_architecture
-  - bld_collaboration_dual_loop_architecture
   - bld_architecture_dual_loop_architecture
   - dual-loop-architecture-builder
-  - bld_knowledge_card_dual_loop_architecture
 ---
 ## Naming Convention
 
@@ -94,7 +92,5 @@ on_budget_exhausted: freeze_plan_and_log
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_dual_loop_architecture]] | upstream | 0.65 |
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.55 |
 | [[bld_architecture_dual_loop_architecture]] | upstream | 0.53 |
 | [[dual-loop-architecture-builder]] | upstream | 0.52 |
-| [[bld_knowledge_card_dual_loop_architecture]] | upstream | 0.51 |

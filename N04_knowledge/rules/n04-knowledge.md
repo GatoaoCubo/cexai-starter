@@ -29,12 +29,6 @@ keywords:
   - ".claude/rules/composable-crew.md"
   - "knowledge rules"
 density_score: 0.90
-related:
-  - n05_operations
-  - n01_intelligence
-  - n02_marketing
-  - n06_commercial
-  - p03_sp_knowledge_nucleus
 slots:
   task_input: "<the work item the instruction governs>"
   constraints: "<the limits to honor>"
@@ -137,8 +131,4 @@ You are the consuming agent that acts on this instruction under F6 PRODUCE.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n05_operations]] | sibling | 0.59 |
-| [[n01_intelligence]] | sibling | 0.55 |
-| [[n02_marketing]] | sibling | 0.52 |
-| [[n06_commercial]] | sibling | 0.49 |
 | p03_sp_knowledge_nucleus | downstream | 0.39 |

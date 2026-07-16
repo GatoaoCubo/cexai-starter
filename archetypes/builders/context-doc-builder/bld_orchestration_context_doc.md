@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [context doc construction, collaboration context doc, context_doc, builder, examples, "### crew: prompt hydration", my role, crew compositions, content foundation, prompt hydration]
 density_score: 0.90
 related:
-  - bld_collaboration_action_prompt
   - context-doc-builder
-  - bld_collaboration_knowledge_card
-  - bld_knowledge_card_context_doc
-  - bld_collaboration_prompt_template
 ---
 # Collaboration: context-doc-builder
 ## My Role in Crews
@@ -66,8 +62,4 @@ None — independent builder (layer 0). Context docs are authored from domain an
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_action_prompt]] | sibling | 0.45 |
 | [[context-doc-builder]] | upstream | 0.38 |
-| [[bld_collaboration_knowledge_card]] | sibling | 0.35 |
-| [[bld_knowledge_card_context_doc]] | upstream | 0.34 |
-| [[bld_collaboration_prompt_template]] | sibling | 0.34 |

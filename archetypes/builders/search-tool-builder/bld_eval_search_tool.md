@@ -18,11 +18,7 @@ updated: "2026-03-28"
 keywords: [provider specification, result structure, cost documentation, and api key security, quality-gate, search-tool, web-search]
 density_score: 0.90
 related:
-  - p04_search_tavily
   - search-tool-builder
-  - p11_qg_function_def
-  - bld_knowledge_card_search_tool
-  - bld_output_template_search_tool
 ---
 ## Quality Gate
 

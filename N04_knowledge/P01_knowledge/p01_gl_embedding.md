@@ -15,11 +15,7 @@ keywords: [embedding, vector representation, cosine similarity, dot product, l2 
 density_score: 0.98
 updated: "2026-04-13"
 related:
-  - p01_kc_embedding_config
   - embedder-provider-builder
-  - p01_kc_supabase_vectors
-  - p01_kc_embedder_provider
-  - p01_kc_vector_embedding_model_selection
 ---
 
 # Embedding

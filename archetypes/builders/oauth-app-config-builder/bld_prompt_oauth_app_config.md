@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [oauth_app_config construction, instruction oauth app config, oauth_app_config, builder, instruction, client_id, client_secret, scopes, scope, redirect_uris]
 density_score: 0.85
 related:
-  - oauth-app-config-builder
   - kc_oauth_app_config
-  - p10_lr_oauth_app_config_builder
-  - p09_qg_oauth_app_config
-  - bld_knowledge_card_oauth_app_config
 ---
 ## Phase 1: RESEARCH  
 1. Identify partner integration requirements (scopes, redirect URIs).  
@@ -52,8 +48,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[oauth-app-config-builder]] | downstream | 0.44 |
 | [[kc_oauth_app_config]] | upstream | 0.40 |
-| [[p10_lr_oauth_app_config_builder]] | downstream | 0.38 |
-| [[p09_qg_oauth_app_config]] | downstream | 0.36 |
 | [[bld_knowledge_oauth_app_config]] | upstream | 0.30 |

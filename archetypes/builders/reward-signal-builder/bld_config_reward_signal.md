@@ -28,9 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, reward signal construction, config reward signal, reward_signal, builder, examples, "p11_reward_{scope}.md"]
 density_score: 0.90
 related:
-  - bld_instruction_reward_signal
-  - bld_output_template_reward_signal
-  - bld_knowledge_card_reward_signal
   - bld_schema_reward_signal
   - reward-signal-builder
 ---
@@ -86,7 +83,6 @@ Rule: baseline MUST fall within declared scale range.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_prompt_reward_signal]] | upstream | 0.35 |
-| [[bld_output_template_reward_signal]] | upstream | 0.32 |
 | [[bld_knowledge_reward_signal]] | upstream | 0.31 |
 | [[bld_schema_reward_signal]] | downstream | 0.31 |
 | [[reward-signal-builder]] | downstream | 0.30 |

@@ -20,10 +20,8 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - bld_tools_tagline
-  - bld_collaboration_tagline
   - bld_architecture_tagline
   - tagline-builder
-  - bld_instruction_tagline
 ---
 # Memory: Tagline Builder
 

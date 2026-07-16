@@ -5,8 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_benchmark_suite
-  - n00_benchmark_suite_manifest
-  - bld_collaboration_memory_benchmark
   - kind-builder
   - bld_tools_benchmark_suite
 ---
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_benchmark_suite]] | related | 0.36 |
-| [[n00_benchmark_suite_manifest]] | related | 0.31 |
-| [[bld_collaboration_memory_benchmark]] | related | 0.31 |
 | [[kind-builder]] | related | 0.29 |
 | [[bld_tools_benchmark_suite]] | related | 0.29 |

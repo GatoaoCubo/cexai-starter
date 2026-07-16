@@ -31,10 +31,7 @@ keywords:
 density_score: null
 related:
   - bld_tools_slo_definition
-  - kc_slo_definition
-  - bld_manifest_slo_definition
   - bld_architecture_slo_definition
-  - p11_fb_slo_definition
 ---
 # Rules: slo_definition Builder
 
@@ -92,7 +89,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_slo_definition]] | sibling | 0.40 |
-| [[kc_slo_definition]] | sibling | 0.39 |
-| [[bld_manifest_slo_definition]] | downstream | 0.38 |
 | [[bld_architecture_slo_definition]] | sibling | 0.38 |
-| [[p11_fb_slo_definition]] | downstream | 0.37 |

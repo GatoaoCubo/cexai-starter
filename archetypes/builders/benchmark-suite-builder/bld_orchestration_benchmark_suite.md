@@ -18,11 +18,7 @@ keywords: [benchmark_suite construction, collaboration benchmark suite, benchmar
 coordinates, receives from, benchmark author, config manager, data provider]
 density_score: 0.85
 related:
-  - bld_collaboration_memory_benchmark
-  - bld_collaboration_eval_framework
   - bld_config_benchmark_suite
-  - bld_collaboration_eval_metric
-  - bld_collaboration_cohort_analysis
 ---
 ## Crew Role  
 Coordinates integration of multiple benchmarks into cohesive suites, ensuring consistency, versioning, and dependency management across components.  
@@ -47,8 +43,4 @@ Does NOT execute benchmarks (Benchmark Runner handles execution), analyze result
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_benchmark]] | sibling | 0.36 |
-| [[bld_collaboration_eval_framework]] | sibling | 0.35 |
 | [[bld_config_benchmark_suite]] | upstream | 0.30 |
-| [[bld_collaboration_eval_metric]] | sibling | 0.29 |
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.28 |

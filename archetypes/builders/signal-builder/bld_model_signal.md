@@ -29,10 +29,6 @@ tldr: Golden and anti-examples for signal construction, demonstrating ideal stru
 llm_function: BECOME
 8f: "F8_collaborate"
 related:
-  - bld_collaboration_signal
-  - p11_qg_signal
-  - bld_knowledge_card_signal
-  - p03_ins_signal_builder
   - bld_architecture_signal
 ---
 ## Identity
@@ -127,7 +123,5 @@ Max body: 4096 bytes. Every field definition is precise. No explanatory prose in
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_orchestration_signal]] | related | 0.44 |
-| [[p11_qg_signal]] | upstream | 0.43 |
 | [[bld_knowledge_signal]] | related | 0.43 |
-| [[p03_ins_signal_builder]] | upstream | 0.42 |
 | [[bld_architecture_signal]] | upstream | 0.42 |

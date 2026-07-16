@@ -15,12 +15,6 @@ license: MIT
 schema_ref: _tools/cex_glue_logger.py
 language: en
 source: "_data/ft/glue/ (gitignored -- live ops + backfill replay + outcome_gold)"
-related:
-  - p02_ft_glue_hosted_lora_n05
-  - p11_pd_glue_brain_router
-  - p07_ds_glue_brain_held_out
-  - p07_ds_outcome_gold_n01
-  - p10_lr_ft_gold_train_2026_06_10
 ---
 
 ## Dataset Overview

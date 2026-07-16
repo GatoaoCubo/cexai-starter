@@ -4,10 +4,8 @@ description: "Builds ONE checkpoint artifact via 8F pipeline. Loads checkpoint-b
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_checkpoint_manifest
   - checkpoint-builder
   - bld_architecture_checkpoint
-  - bld_collaboration_checkpoint
   - kind-builder
 ---
 

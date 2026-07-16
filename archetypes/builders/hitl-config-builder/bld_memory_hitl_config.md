@@ -34,10 +34,6 @@ this, pipeline blocks]
 density_score: 0.88
 llm_function: INJECT
 related:
-  - bld_knowledge_card_hitl_config
-  - p01_kc_hitl_config
-  - bld_instruction_hitl_config
-  - p11_qg_hitl_config
   - bld_config_hitl_config
 ---
 ## Summary
@@ -105,8 +101,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_hitl_config_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_hitl_config]] | upstream | 0.45 |
-| [[p01_kc_hitl_config]] | downstream | 0.38 |
-| [[bld_instruction_hitl_config]] | upstream | 0.36 |
-| [[p11_qg_hitl_config]] | downstream | 0.32 |
 | [[bld_config_hitl_config]] | upstream | 0.31 |

@@ -18,8 +18,6 @@ keywords: [messaging gateway construction, kc link, builder-linked kc, boundarie
 density_score: 0.90
 related:
   - messaging-gateway-builder
-  - kc_messaging_gateway
-  - n00_messaging_gateway_manifest
   - bld_architecture_messaging_gateway
   - p04_mg_{{platform}}
 ---
@@ -72,7 +70,5 @@ Minimum acceptable messaging_gateway artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[messaging-gateway-builder]] | downstream | 0.52 |
-| [[kc_messaging_gateway]] | sibling | 0.49 |
-| [[n00_messaging_gateway_manifest]] | sibling | 0.43 |
 | [[bld_architecture_messaging_gateway]] | downstream | 0.43 |
 | [\[p04_mg_`{{platform}}`\]] | downstream | 0.35 |

@@ -21,7 +21,6 @@ related:
  - bld_schema_usage_report
  - bld_schema_pitch_deck
  - bld_schema_dataset_card
- - n00_pipeline_template_manifest
 ---
 
 ## Frontmatter Fields
@@ -79,4 +78,3 @@ escalation_target: user | nucleus | n07
 | [[bld_schema_usage_report]] | sibling | 0.52 |
 | [[bld_schema_pitch_deck]] | sibling | 0.51 |
 | [[bld_schema_dataset_card]] | sibling | 0.51 |
-| [[n00_pipeline_template_manifest]] | downstream | 0.51 |

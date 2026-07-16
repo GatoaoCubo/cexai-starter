@@ -33,11 +33,7 @@ llm_function: BECOME
 parent: null
 8f: "F1_constrain"
 related:
-  - bld_collaboration_cost_budget
   - bld_architecture_cost_budget
-  - p01_kc_cost_budget
-  - p11_qg_cost_budget
-  - bld_knowledge_card_cost_budget
 ---
 ## Identity
 
@@ -136,8 +132,4 @@ and not a runtime_rule (timeout and retry policies).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_cost_budget]] | downstream | 0.62 |
 | [[bld_architecture_cost_budget]] | upstream | 0.60 |
-| [[p01_kc_cost_budget]] | related | 0.52 |
-| [[p11_qg_cost_budget]] | downstream | 0.49 |
-| [[bld_knowledge_card_cost_budget]] | upstream | 0.49 |

@@ -18,10 +18,6 @@ keywords: [renewal_workflow construction, quality gate renewal workflow, renewal
 density_score: 0.85
 related:
   - bld_schema_renewal_workflow
-  - bld_output_template_renewal_workflow
-  - bld_instruction_renewal_workflow
-  - p09_qg_marketplace_app_manifest
-  - p03_qg_churn_prevention_playbook
 ---
 ## Quality Gate
 

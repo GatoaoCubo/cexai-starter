@@ -23,8 +23,6 @@ density_score: 0.90
 related:
   - p01_kc_community_directory_global
   - p01_kc_influencer_directory_global
-  - n06_api_access_pricing
-  - commercial_readiness_20260413
   - p01_kc_influencer_crm_unified
 ---
 

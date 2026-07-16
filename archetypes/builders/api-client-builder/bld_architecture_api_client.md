@@ -18,10 +18,6 @@ keywords: [component map of client, and architectural position, api client const
 density_score: 0.90
 related:
   - api-client-builder
-  - bld_instruction_client
-  - bld_collaboration_client
-  - bld_architecture_connector
-  - p01_kc_api_client
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -87,7 +83,5 @@ skill          --depends-->  endpoint
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[api-client-builder]] | upstream | 0.41 |
-| [[bld_instruction_client]] | upstream | 0.38 |
-| [[bld_collaboration_client]] | downstream | 0.37 |
 | bld_architecture_connector | sibling | 0.36 |
 | [[kc_api_client]] | upstream | 0.32 |

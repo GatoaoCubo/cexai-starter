@@ -28,11 +28,9 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, parser construction, config parser, parser, builder, examples, "p05_parser_{slug}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_parser
   - parser-builder
   - bld_config_formatter
   - bld_schema_parser
-  - n00_parser_manifest
 ---
 # Config: parser Production Rules
 ## Naming Convention

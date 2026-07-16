@@ -18,10 +18,6 @@ keywords: [component map of skill, and architectural position, skill constructio
 density_score: 0.90
 related:
   - skill-builder
-  - bld_collaboration_skill
-  - n00_skill_manifest
-  - p03_ins_skill_builder
-  - p11_qg_skill
 ---
 # Architecture: skill in the CEX
 ## Component Inventory
@@ -79,7 +75,3 @@ skill           --depends-->    knowledge_card
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[skill-builder]] | upstream | 0.69 |
-| [[bld_collaboration_skill]] | downstream | 0.67 |
-| [[n00_skill_manifest]] | upstream | 0.59 |
-| [[p03_ins_skill_builder]] | upstream | 0.58 |
-| [[p11_qg_skill]] | downstream | 0.55 |

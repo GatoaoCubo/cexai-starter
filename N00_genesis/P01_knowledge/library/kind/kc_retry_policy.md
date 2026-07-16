@@ -14,10 +14,8 @@ keywords: [retry_policy, backoff timing, jitter randomization, attempt limits, e
 density_score: 1.0
 updated: "2026-04-22"
 related:
-  - bld_knowledge_card_retry_policy
   - bld_schema_retry_policy
   - retry-policy-builder
-  - p10_lr_retry_policy_builder
   - bld_architecture_retry_policy
 ---
 
@@ -109,5 +107,4 @@ Operation failed?
 | [[bld_knowledge_retry_policy]] | sibling | 0.72 |
 | [[bld_schema_retry_policy]] | downstream | 0.53 |
 | [[retry-policy-builder]] | downstream | 0.52 |
-| [[p10_lr_retry_policy_builder]] | downstream | 0.48 |
 | [[bld_architecture_retry_policy]] | downstream | 0.46 |

@@ -17,12 +17,7 @@ tldr: "N05 task procedure memory: release gate sequence (doctor/sanitize/pytest/
 keywords: [operations sop, procedural memory -- n05, gate execution, doctor sanitize pytest, deploy discipline, ascii enforcement, browser computer-use guardrail, escalation ladder, regression check, gating wrath, procedural_memory]
 density_score: null
 related:
-  - p10_pm_n04_knowledge
   - procedural_memory_n06
-  - p07_rc_ops
-  - p05_oval_deploy_checklist_n05
-  - ex_director_ops_health_monitor
-  - n05_operations
 ---
 
 > **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): _courses_notebooklm_pipeline, _<internal-era-brand>_validator, _shorts_v51_karaoke, _shorts_v5_compose, cex_evolve, cex_flywheel_audit, cex_hooks, cex_mentor_swarm, cex_system_test. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
@@ -346,9 +341,7 @@ degraded run.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_pm_n04_knowledge]] | sibling | 0.35 |
 | [[procedural_memory_n06]] | sibling | 0.33 |
 | p07_rc_ops | upstream | 0.32 |
 | p05_oval_deploy_checklist_n05 | upstream | 0.31 |
 | ex_director_ops_health_monitor | related | 0.28 |
-| [[n05_operations]] | upstream | 0.25 |

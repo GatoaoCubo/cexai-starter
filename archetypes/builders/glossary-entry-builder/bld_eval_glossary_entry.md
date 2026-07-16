@@ -18,11 +18,7 @@ updated: "2026-03-27"
 keywords: [and usage context, validates glossary_entry artifacts, line definition constraint, synonym presence, disambiguation clarity, and no circular references, quality-gate]
 density_score: 0.89
 related:
-  - p11_qg_quality_gate
-  - p06_td_cex_artifact_type_n03
   - glossary-entry-builder
-  - bld_knowledge_card_glossary_entry
-  - p11_qg_validator
 ---
 ## Quality Gate
 

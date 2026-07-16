@@ -18,10 +18,7 @@ keywords: [ai_rmf_profile construction, ai_rmf_profile, builder, output_template
 density_score: 0.85
 related:
   - ai-rmf-profile-builder
-  - bld_instruction_ai_rmf_profile
   - bld_schema_ai_rmf_profile
-  - p11_qg_ai_rmf_profile
-  - bld_knowledge_card_ai_rmf_profile
 ---
 ```markdown
 ---
@@ -90,7 +87,4 @@ author: "{{author}}"
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ai-rmf-profile-builder]] | downstream | 0.51 |
-| [[bld_instruction_ai_rmf_profile]] | upstream | 0.51 |
 | [[bld_schema_ai_rmf_profile]] | downstream | 0.50 |
-| [[p11_qg_ai_rmf_profile]] | downstream | 0.50 |
-| [[bld_knowledge_card_ai_rmf_profile]] | upstream | 0.46 |

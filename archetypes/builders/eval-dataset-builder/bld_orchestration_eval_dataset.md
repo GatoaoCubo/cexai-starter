@@ -19,10 +19,6 @@ keywords: [eval dataset construction, collaboration eval dataset, eval_dataset, 
 density_score: 0.90
 related:
   - eval-dataset-builder
-  - p01_kc_eval_dataset
-  - n00_eval_dataset_manifest
-  - bld_collaboration_golden_test
-  - bld_collaboration_regression_check
 ---
 # Collaboration: eval-dataset-builder
 ## My Role in Crews

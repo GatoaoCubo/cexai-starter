@@ -22,7 +22,6 @@ related:
   - user-model-builder
   - kc_user_model
   - bld_architecture_user_model
-  - bld_knowledge_card_user_model
 ---
 # Collaboration: user-model-builder
 

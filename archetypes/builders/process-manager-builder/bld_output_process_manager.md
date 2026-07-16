@@ -16,10 +16,7 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_memory_process_manager
-  - bld_manifest_process_manager
   - bld_schema_process_manager
-  - bld_instruction_process_manager
-  - kc_process_manager
 ---
 # Output Template: process_manager
 ```yaml
@@ -90,7 +87,4 @@ On FAILED from state {X}:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_process_manager]] | related | 0.39 |
-| [[bld_manifest_process_manager]] | related | 0.36 |
 | [[bld_schema_process_manager]] | related | 0.35 |
-| [[bld_instruction_process_manager]] | related | 0.34 |
-| [[kc_process_manager]] | upstream | 0.33 |

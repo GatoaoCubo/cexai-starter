@@ -18,9 +18,6 @@ updated: "2026-04-13"
 keywords: [knowledge graph construction, phase process, research domain entities, compose schema with, required sections, knowledge_graph, builder, instruction, entity types, relation types]
 density_score: 0.90
 related:
-  - p10_lr_knowledge_graph_builder
-  - bld_knowledge_card_knowledge_graph
-  - p01_kc_knowledge_graph
   - knowledge-graph-builder
   - bld_config_knowledge_graph
 ---
@@ -101,8 +98,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_knowledge_graph_builder]] | downstream | 0.52 |
-| [[bld_knowledge_card_knowledge_graph]] | upstream | 0.52 |
-| [[p01_kc_knowledge_graph]] | upstream | 0.47 |
 | [[knowledge-graph-builder]] | upstream | 0.46 |
 | [[bld_config_knowledge_graph]] | downstream | 0.44 |

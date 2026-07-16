@@ -17,10 +17,6 @@ updated: "2026-04-14"
 keywords: [trajectory_eval construction, quality gate trajectory eval, hard structural checks, d scoring, trajectory_eval, builder, quality_gate, quality gate, fail condition, step log]
 density_score: 0.86
 related:
-  - bld_output_template_trajectory_eval
-  - p07_qg_benchmark_suite
-  - p07_qg_eval_framework
-  - p11_qg_self_improvement_loop
   - bld_schema_trajectory_eval
 ---
 ## Quality Gate

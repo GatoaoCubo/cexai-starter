@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [builder construction, instruction builder, builder, examples, _schema.yaml, taxonomy_layers.yaml, seed_bank.yaml, archetypes/builders/, related artifacts, crew role]
 density_score: 0.90
 related:
-  - bld_instruction_golden_test
-  - bld_instruction_memory_scope
-  - bld_instruction_action_prompt
   - bld_knowledge_card_builder
-  - bld_instruction_retriever_config
 ---
 # Instructions: How to Produce a type_builder
 
@@ -84,8 +80,4 @@ python _tools/cex_skill_loader.py --verify _builder
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_golden_test]] | sibling | 0.32 |
-| [[bld_instruction_memory_scope]] | sibling | 0.32 |
-| [[bld_instruction_action_prompt]] | sibling | 0.32 |
 | [[bld_knowledge_card_builder]] | upstream | 0.31 |
-| [[bld_instruction_retriever_config]] | sibling | 0.31 |

@@ -34,11 +34,8 @@ parent: null
 8f: "F2_become"
 density_score: 1.0
 related:
-  - bld_knowledge_card_personality
   - kc_personality
-  - n00_personality_manifest
   - bld_architecture_personality
-  - p11_qg_personality
 ---
 ## Identity
 

@@ -34,12 +34,6 @@ tldr: Golden and anti-examples for content_factory construction, demonstrating t
 llm_function: BECOME
 parent: null
 8f: "F5_call"
-related:
-  - p01_kc_content_factory
-  - p01_kc_social_publisher
-  - social-publisher-builder
-  - p01_kc_supabase_data_layer
-  - p01_kc_content_library
 ---
 ## Identity
 
@@ -165,12 +159,3 @@ content_library row contract, review/publish handoff specification.
 **Out of scope**: caption prompt authoring (prompt-template-builder), publish provider
 implementation (deferred), review-board persistence/UI (the tenant's DB), canonical-product
 golden-record derivation (canonical_product kind).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p01_kc_content_factory]] | upstream | 0.54 |
-| [[p01_kc_social_publisher]] | sibling | 0.52 |
-| [[social-publisher-builder]] | sibling | 0.50 |
-| [[p01_kc_supabase_data_layer]] | upstream | 0.40 |
-| [[p01_kc_content_library]] | related | 0.38 |

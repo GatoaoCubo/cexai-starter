@@ -32,8 +32,6 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_knowledge_card_field_manifest
-  - bld_instruction_field_manifest
   - input-schema-builder
   - type-def-builder
   - supabase-data-layer-builder

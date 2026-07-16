@@ -18,10 +18,6 @@ keywords: [component map of schedule, and architectural position, schedule const
 density_score: 0.90
 related:
   - schedule-builder
-  - bld_collaboration_schedule
-  - p11_qg_schedule
-  - bld_output_template_schedule
-  - bld_knowledge_card_schedule
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -86,6 +82,4 @@ monitor        --depends-->  trigger
 |----------|-------------|-------|
 | [[schedule-builder]] | downstream | 0.53 |
 | [[bld_orchestration_schedule]] | downstream | 0.53 |
-| [[p11_qg_schedule]] | downstream | 0.47 |
-| [[bld_output_template_schedule]] | upstream | 0.46 |
 | [[bld_knowledge_schedule]] | upstream | 0.43 |

@@ -26,10 +26,6 @@ author: n02_reviewer
 keywords: ["action paradigm", "state-action", "precondition", "postcondition", "failure recovery", "reactive agent", "deliberative agent"]
 related:
   - bld_memory_action_paradigm
-  - bld_instruction_action_paradigm
-  - bld_knowledge_card_action_paradigm
-  - p11_qg_action_paradigm
-  - kc_action_paradigm
 ---
 ## Identity
 
@@ -119,7 +115,3 @@ Deliver an `action_paradigm` artifact with this structure:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_memory_action_paradigm]] | downstream | 0.49 |
-| [[bld_instruction_action_paradigm]] | upstream | 0.41 |
-| [[bld_knowledge_card_action_paradigm]] | upstream | 0.40 |
-| [[p11_qg_action_paradigm]] | downstream | 0.38 |
-| [[kc_action_paradigm]] | upstream | 0.31 |

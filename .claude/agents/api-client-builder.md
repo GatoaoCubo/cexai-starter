@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - api-client-builder
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_collaboration_client
-  - n00_api_client_manifest
 ---
 
 # api-client-builder Sub-Agent
@@ -89,5 +86,4 @@ Five duties bind any agent that emits an artifact:
 | [[api-client-builder]] | related | 0.32 |
 | p03_sp_builder_nucleus | related | 0.31 |
 | kind-builder | related | 0.31 |
-| [[bld_collaboration_client]] | related | 0.30 |
 | n00_api_client_manifest | related | 0.26 |

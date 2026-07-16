@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F7_govern"
 keywords: [planning_strategy construction, quality gate planning strategy, planning_strategy, builder, quality_gate, "p[0-9]{2}-[a-z]{3}", quality gate, agent planning approach defined, strategy document, fail condition]
 density_score: 0.85
-related:
-  - p04_qg_search_strategy
-  - kc_planning_strategy
-  - p03_qg_reasoning_strategy
-  - p03_qg_prompt_technique
-  - p11_qg_usage_report
 ---
 ## Quality Gate
 

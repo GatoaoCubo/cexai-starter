@@ -19,8 +19,6 @@ designs, receives from, produces for]
 density_score: 0.85
 related:
   - renewal-workflow-builder
-  - bld_knowledge_card_renewal_workflow
-  - bld_output_template_renewal_workflow
   - bld_config_renewal_workflow
   - bld_tools_renewal_workflow
 ---
@@ -53,7 +51,5 @@ Does NOT handle expansion plays (expansion_play) -- renewal protects existing AR
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[renewal-workflow-builder]] | related | 0.52 |
-| [[bld_knowledge_card_renewal_workflow]] | upstream | 0.46 |
-| [[bld_output_template_renewal_workflow]] | upstream | 0.42 |
 | [[bld_config_renewal_workflow]] | upstream | 0.41 |
 | [[bld_tools_renewal_workflow]] | upstream | 0.40 |

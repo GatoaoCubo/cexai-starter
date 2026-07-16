@@ -23,10 +23,7 @@ linked_artifacts:
   primary: n06_output_competitive_map
   related: [p01_kc_brand_frameworks, p01_kc_icp_frameworks, n06_output_competitive_business]
 related:
-  - n06_output_competitive_map
   - kc_competitive_matrix
-  - p10_ax_commercial_n06
-  - p11_qg_lens
 ---
 
 # Competitive Positioning Methods — Universal Frameworks
@@ -357,4 +354,3 @@ When and how to shift your competitive position.
 | n06_output_competitive_map | downstream | 0.28 |
 | [[kc_competitive_matrix]] | sibling | 0.18 |
 | p10_ax_commercial_n06 | downstream | 0.17 |
-| [[p11_qg_lens]] | downstream | 0.16 |

@@ -18,10 +18,6 @@ keywords: [discovery_questions construction, instruction discovery questions, di
 density_score: 0.85
 related:
   - discovery-questions-builder
-  - p10_mem_discovery_questions_builder
-  - bld_knowledge_card_discovery_questions
-  - p01_qg_discovery_questions
-  - kc_discovery_questions
 ---
 ## Phase 1: RESEARCH  
 1. Map buyer personas (e.g., CFO, IT director) using company data and role-specific pain points.  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[discovery-questions-builder]] | upstream | 0.59 |
-| [[p10_mem_discovery_questions_builder]] | downstream | 0.54 |
-| [[bld_knowledge_card_discovery_questions]] | upstream | 0.46 |
-| [[p01_qg_discovery_questions]] | downstream | 0.46 |
-| [[kc_discovery_questions]] | upstream | 0.41 |

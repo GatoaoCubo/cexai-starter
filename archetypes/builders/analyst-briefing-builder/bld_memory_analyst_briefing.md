@@ -20,10 +20,6 @@ high]
 density_score: 0.85
 related:
   - analyst-briefing-builder
-  - bld_instruction_analyst_briefing
-  - bld_knowledge_card_analyst_briefing
-  - p05_qg_analyst_briefing
-  - bld_collaboration_analyst_briefing
 ---
 ## Observation
 Analyst briefings that lack quantified proof points consistently receive "insufficient evidence" feedback from Gartner and Forrester during evaluation cycles. Vendors who map claims to specific Magic Quadrant axes (Completeness of Vision, Ability to Execute) or Forrester Wave criteria (Current Offering, Strategy) score significantly higher in analyst engagement quality.
@@ -46,7 +42,3 @@ Review of 12 briefing artifacts showed that those with >=5 quantified proof poin
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[analyst-briefing-builder]] | upstream | 0.54 |
-| [[bld_instruction_analyst_briefing]] | upstream | 0.52 |
-| [[bld_knowledge_card_analyst_briefing]] | upstream | 0.52 |
-| [[p05_qg_analyst_briefing]] | downstream | 0.43 |
-| [[bld_collaboration_analyst_briefing]] | downstream | 0.41 |

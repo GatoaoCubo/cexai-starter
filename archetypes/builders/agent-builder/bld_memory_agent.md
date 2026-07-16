@@ -27,9 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - agent-builder
-  - bld_collaboration_agent
-  - bld_knowledge_card_agent
-  - p01_kc_agent
   - bld_architecture_agent
 ---
 ## Summary

@@ -31,10 +31,6 @@ keywords:
 density_score: 0.90
 related:
   - bld_config_context_map
-  - bld_knowledge_card_context_map
-  - bld_output_template_context_map
-  - bld_instruction_context_map
-  - kc_context_map
 ---
 ## Quality Gate
 # Gate: context_map

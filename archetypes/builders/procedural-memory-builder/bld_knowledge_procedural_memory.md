@@ -18,8 +18,6 @@ keywords: [llm agent procedural memory, knowledge card, procedural_memory builde
 density_score: 0.91
 related:
   - procedural-memory-builder
-  - bld_collaboration_skill
-  - bld_instruction_procedural_memory
   - bld_architecture_skill
   - skill-builder
 ---
@@ -104,7 +102,5 @@ self-notes that persist verbal reasoning about past failures for future guidance
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[procedural-memory-builder]] | downstream | 0.65 |
-| [[bld_collaboration_skill]] | downstream | 0.60 |
-| [[bld_instruction_procedural_memory]] | downstream | 0.53 |
 | [[bld_architecture_skill]] | downstream | 0.53 |
 | [[skill-builder]] | downstream | 0.52 |

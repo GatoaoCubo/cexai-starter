@@ -28,11 +28,7 @@ keywords: [s connection parameters, instruction, embedder-provider, embedding, d
 density_score: 0.90
 llm_function: REASON
 related:
-  - p03_ins_model_provider
   - embedder-provider-builder
-  - p11_qg_embedder_provider
-  - p03_ins_model_card
-  - bld_knowledge_card_embedder_provider
 ---
 ## Context
 The embedder-provider-builder produces `embedder_provider` artifacts (P01) — embedding model connection configurations for RAG pipelines. Configs specify the exact provider API, model identifier, embedding dimensions, normalization behavior, batch size limits, and authentication. An embedder_provider is a connection spec, not a vector database config (vector_store), not an LLM routing rule (model_provider), and not a retrieval pipeline (retriever).
@@ -105,8 +101,6 @@ Score all SOFT gates. If soft score < 8.0, revise in the same pass.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_model_provider]] | sibling | 0.48 |
 | [[embedder-provider-builder]] | upstream | 0.46 |
-| [[p11_qg_embedder_provider]] | downstream | 0.46 |
 | p03_ins_model_card | sibling | 0.46 |
 | [[bld_knowledge_embedder_provider]] | upstream | 0.43 |

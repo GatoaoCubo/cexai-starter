@@ -34,12 +34,6 @@ tldr: Golden and anti-examples for notifier construction, demonstrating ideal st
 llm_function: BECOME
 parent: null
 8f: "F5_call"
-related:
-  - bld_instruction_notifier
-  - p01_kc_notifier
-  - bld_output_template_notifier
-  - bld_knowledge_card_notifier
-  - n00_notifier_manifest
 ---
 ## Identity
 
@@ -143,12 +137,3 @@ Body must not exceed 1024 bytes.
 
 ## Output Format
 Markdown with YAML frontmatter. Body under 1024 bytes.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_notifier]] | upstream | 0.61 |
-| [[p01_kc_notifier]] | upstream | 0.56 |
-| [[bld_output_template_notifier]] | related | 0.54 |
-| [[bld_knowledge_card_notifier]] | related | 0.53 |
-| [[n00_notifier_manifest]] | related | 0.52 |

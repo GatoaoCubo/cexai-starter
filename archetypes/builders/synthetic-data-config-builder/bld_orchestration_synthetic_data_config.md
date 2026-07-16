@@ -19,7 +19,6 @@ none, dataset_card upstream]
 density_score: 0.85
 related:
   - bld_architecture_synthetic_data_config
-  - kc_synthetic_data_config
   - synthetic-data-config-builder
   - bld_orchestration_distillation_config
   - bld_orchestration_curriculum_config
@@ -78,7 +77,6 @@ None -- independent builder.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_synthetic_data_config]] | upstream | 0.51 |
-| [[kc_synthetic_data_config]] | upstream | 0.42 |
 | [[synthetic-data-config-builder]] | upstream | 0.42 |
 | [[bld_orchestration_distillation_config]] | sibling | 0.39 |
 | [[bld_orchestration_curriculum_config]] | sibling | 0.38 |

@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - finetune-config-builder
-  - p01_kc_pillar_brief_p02_model_en
   - kind-builder
-  - bld_collaboration_finetune_config
-  - p03_sp_builder_nucleus
 ---
 
 # finetune-config-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[finetune-config-builder]] | related | 0.32 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[bld_collaboration_finetune_config]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |

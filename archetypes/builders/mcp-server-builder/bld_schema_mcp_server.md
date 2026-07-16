@@ -31,7 +31,6 @@ keywords:
   - "## resources"
 density_score: 0.90
 related:
-  - bld_schema_client
   - bld_schema_retriever_config
   - bld_schema_cli_tool
   - bld_schema_output_validator
@@ -82,7 +81,6 @@ Rule: id MUST equal filename stem.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_schema_client]] | sibling | 0.61 |
 | [[bld_schema_retriever_config]] | sibling | 0.60 |
 | bld_schema_cli_tool | sibling | 0.59 |
 | [[bld_schema_output_validator]] | sibling | 0.58 |

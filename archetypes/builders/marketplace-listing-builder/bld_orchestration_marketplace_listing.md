@@ -18,7 +18,6 @@ related:
   - bld_architecture_marketplace_listing
   - bld_prompt_marketplace_listing
   - bld_tools_marketplace_listing
-  - spec_dual_output_contract
   - output-validator-builder
 ---
 

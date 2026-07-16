@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [visual_workflow construction, output template visual workflow, frontmatter field guide, required body sections, filled example, visual_workflow, builder, output_template, markdown, quality gate checklist]
 density_score: 0.85
 related:
-  - bld_output_template_dataset_card
-  - bld_output_template_collaboration_pattern
   - bld_config_visual_workflow
   - bld_output_query_optimizer
-  - bld_output_template_thinking_config
 ---
 ```markdown
 ```yaml

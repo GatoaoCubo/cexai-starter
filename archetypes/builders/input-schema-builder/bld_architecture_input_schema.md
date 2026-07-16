@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of input_schema, and architectural position, input schema construction, architecture input schema, input_schema, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - p01_kc_input_schema
   - bld_architecture_interface
-  - bld_knowledge_card_input_schema
   - input-schema-builder
-  - bld_instruction_input_schema
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |

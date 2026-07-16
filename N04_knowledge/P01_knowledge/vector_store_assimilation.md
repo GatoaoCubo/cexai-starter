@@ -40,11 +40,7 @@ linked_artifacts:
   primary: p01_emb_assimilation_n04
   related: [p01_retr_assimilation_n04, n04_rs_assimilation]
 related:
-  - p01_emb_assimilation_n04
-  - p01_retr_assimilation_n04
-  - n04_rs_assimilation
   - vector-store-builder
-  - p11_qg_vector_store
 slots:
   namespace: "<the collection to read or write>"
   query_vector: "<the embedding to search by>"
@@ -55,15 +51,15 @@ slots:
 ## Boundary
 vector_store IS: the storage + index config for DEEP-path dense vectors -- backend,
 dimensions, metric, index type, persistence. vector_store IS NOT: the embedding model
-([[p01_emb_assimilation_n04]] embedding_config), the search params ([[p01_retr_assimilation_n04]]
-retriever_config), nor the source contract ([[n04_rs_assimilation]] rag_source).
+(p01_emb_assimilation_n04 embedding_config), the search params (p01_retr_assimilation_n04
+retriever_config), nor the source contract (n04_rs_assimilation rag_source).
 
 ## Backend Matrix
 | Parameter | Value | Source |
 |-----------|-------|--------|
 | Backend | faiss (local, in-process, MIT) | https://github.com/facebookresearch/faiss |
 | Index type | IndexFlatIP (flat, exact) | https://github.com/facebookresearch/faiss/wiki/Faiss-indexes |
-| Dimensions | 384 | Upstream: [[p01_emb_assimilation_n04]] |
+| Dimensions | 384 | Upstream: p01_emb_assimilation_n04 |
 | Distance metric | cosine (L2-normalized vectors) | Mathematical property |
 | Auth | none (api_key_env: null) | Local/offline -- no key |
 | Degrade floor | offline JSON flat (pure stdlib) | Realized by cex_distill_orchestrator.py |
@@ -121,8 +117,4 @@ You are the consuming agent that acts on this vector_store under F3 INJECT.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_emb_assimilation_n04]] | upstream | 0.42 |
-| [[p01_retr_assimilation_n04]] | downstream | 0.36 |
-| [[n04_rs_assimilation]] | related | 0.32 |
 | [[vector-store-builder]] | related | 0.26 |
-| [[p11_qg_vector_store]] | related | 0.24 |

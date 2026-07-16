@@ -31,8 +31,6 @@ updated: "2026-04-17"
 related:
   - bld_schema_aggregate_root
   - bld_schema_value_object
-  - bld_output_template_constitutional_rule
-  - bld_instruction_constitutional_rule
   - bld_schema_guardrail
 ---
 # Schema: constitutional_rule
@@ -103,6 +101,5 @@ python _tools/cex_schema_hydrate.py --check
 |----------|-------------|-------|
 | bld_schema_aggregate_root | sibling | 0.41 |
 | bld_schema_value_object | sibling | 0.40 |
-| [[bld_output_template_constitutional_rule]] | related | 0.40 |
 | [[bld_prompt_constitutional_rule]] | related | 0.39 |
 | [[bld_schema_guardrail]] | sibling | 0.36 |

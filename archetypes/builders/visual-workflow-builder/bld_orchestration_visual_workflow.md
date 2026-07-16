@@ -19,9 +19,6 @@ enables, receives from, data source, logic builder, produces for]
 density_score: 0.85
 related:
   - visual-workflow-builder
-  - bld_collaboration_workflow_node
-  - kc_visual_workflow
-  - bld_collaboration_workflow
   - bld_config_visual_workflow
 ---
 ## Crew Role  
@@ -50,7 +47,4 @@ Does NOT execute workflows (Code Executor), store data (Data Storage Manager), v
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[visual-workflow-builder]] | related | 0.36 |
-| [[bld_collaboration_workflow_node]] | sibling | 0.34 |
-| [[kc_visual_workflow]] | upstream | 0.34 |
-| [[bld_collaboration_workflow]] | sibling | 0.29 |
 | [[bld_config_visual_workflow]] | upstream | 0.28 |

@@ -13,12 +13,6 @@ tags: [intent-resolution, kinds, mapping, natural-language, transmutation, canon
 tldr: "Complete mapping of all 123 CEX kinds to natural language trigger phrases (EN+PT), pillar, nucleus, and builder."
 keywords: [knowledge card, chunk strategy, citation, context document, embedding config, embedder provider, few shot example, glossary entry]
 density_score: 0.95
-related:
-  - bld_collaboration_agent
-  - bld_collaboration_boot_config
-  - n00_p01_kind_index
-  - bld_collaboration_vector_store
-  - bld_collaboration_embedder_provider
 ---
 
 # Intent Resolution Map
@@ -229,6 +223,5 @@ Every user intent must resolve to one or more kinds. This map is the exhaustive 
 |----------|-------------|-------|
 | [[bld_orchestration_agent]] | downstream | 0.36 |
 | [[bld_orchestration_boot_config]] | downstream | 0.35 |
-| [[n00_p01_kind_index]] | sibling | 0.32 |
 | [[bld_orchestration_vector_store]] | downstream | 0.32 |
 | [[bld_orchestration_embedder_provider]] | downstream | 0.32 |

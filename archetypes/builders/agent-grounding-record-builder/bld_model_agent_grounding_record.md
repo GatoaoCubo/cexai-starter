@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [define the identity, agent_grounding_record construction, tool-call traces, rag-chunk metadata, and output-hash for traceability, agent_grounding_record, builder]
 density_score: 0.85
 related:
-  - bld_knowledge_card_agent_grounding_record
-  - kc_agent_grounding_record
   - bld_architecture_agent_grounding_record
-  - bld_collaboration_agent_grounding_record
-  - bld_instruction_agent_grounding_record
 ---
 ## Identity
 
@@ -104,8 +100,4 @@ F8 COLLABORATE-- load bld_collaboration: signal upstream/downstream, commit, arc
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_agent_grounding_record]] | upstream | 0.53 |
-| [[kc_agent_grounding_record]] | upstream | 0.45 |
 | [[bld_architecture_agent_grounding_record]] | upstream | 0.45 |
-| [[bld_collaboration_agent_grounding_record]] | downstream | 0.44 |
-| [[bld_instruction_agent_grounding_record]] | upstream | 0.44 |

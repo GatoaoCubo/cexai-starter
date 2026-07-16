@@ -18,9 +18,6 @@ keywords: [analyst_briefing construction, instruction analyst briefing, analyst_
 density_score: 0.85
 related:
   - analyst-briefing-builder
-  - bld_knowledge_card_analyst_briefing
-  - p10_mem_analyst_briefing_builder
-  - p05_qg_analyst_briefing
   - bld_schema_analyst_briefing
 ---
 ## Phase 1: RESEARCH
@@ -53,7 +50,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[analyst-briefing-builder]] | downstream | 0.57 |
-| [[bld_knowledge_card_analyst_briefing]] | upstream | 0.50 |
-| [[p10_mem_analyst_briefing_builder]] | downstream | 0.48 |
-| [[p05_qg_analyst_briefing]] | downstream | 0.44 |
 | [[bld_schema_analyst_briefing]] | downstream | 0.40 |

@@ -20,11 +20,7 @@ acts, identity
 the, traffic allocation]
 density_score: 0.85
 related:
-  - kc_ab_test_config
-  - p01_kc_ab_testing_content_optimization
-  - bld_instruction_ab_test_config
   - experiment-config-builder
-  - bld_collaboration_ab_test_config
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER assume prior knowledge of technical systems; remain agnostic to deployment
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_ab_test_config]] | upstream | 0.39 |
-| [[p01_kc_ab_testing_content_optimization]] | upstream | 0.37 |
-| [[bld_instruction_ab_test_config]] | upstream | 0.37 |
 | [[experiment-config-builder]] | sibling | 0.32 |
-| [[bld_collaboration_ab_test_config]] | downstream | 0.32 |

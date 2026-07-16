@@ -21,10 +21,7 @@ reviewed, related artifacts, emotion tags]
 density_score: 0.85
 related:
   - prosody-config-builder
-  - bld_collaboration_prosody_config
-  - n00_prosody_config_manifest
   - bld_config_prosody_config
-  - p09_qg_prosody_config
 ---
 ## Observation  
 Inconsistent emotion tags often lead to unpredictable prosody outputs, while overly broad parameters (e.g., "happy" without pitch/rhythm bounds) reduce control. Overlapping configurations between voice profiles and emotion settings frequently cause conflicts.  
@@ -46,7 +43,4 @@ Reviewed artifacts with explicit emotion-to-prosody mappings (e.g., "sad" → 80
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prosody-config-builder]] | upstream | 0.40 |
-| [[bld_collaboration_prosody_config]] | downstream | 0.40 |
-| [[n00_prosody_config_manifest]] | upstream | 0.35 |
 | [[bld_config_prosody_config]] | upstream | 0.34 |
-| [[p09_qg_prosody_config]] | downstream | 0.24 |

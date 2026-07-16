@@ -20,10 +20,6 @@ updated: '2026-03-27'
 8f: "F7_govern"
 density_score: 0.85
 related:
-  - p11_qg_quality_gate
-  - p03_ins_rag_source
-  - bld_knowledge_card_rag_source
-  - p11_qg_response_format
   - bld_memory_rag_source
 ---
 ## Quality Gate

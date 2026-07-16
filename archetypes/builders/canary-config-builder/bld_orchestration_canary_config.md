@@ -30,11 +30,7 @@ keywords:
   - "downstream"
 density_score: null
 related:
-  - kc_canary_config
   - bld_memory_canary_config
-  - bld_manifest_canary_config
-  - bld_quality_gate_canary_config
-  - bld_instruction_canary_config
 ---
 # Rules: canary_config Builder
 
@@ -61,8 +57,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_canary_config]] | sibling | 0.36 |
 | [[bld_memory_canary_config]] | sibling | 0.36 |
-| [[bld_manifest_canary_config]] | downstream | 0.31 |
-| [[bld_quality_gate_canary_config]] | upstream | 0.30 |
-| [[bld_instruction_canary_config]] | downstream | 0.28 |

@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [churn_prevention_playbook construction, churn_prevention_playbook, builder, output_template, churn prevention playbook, health score model, red threshold, yellow threshold, data source, product]
 density_score: 0.85
 related:
-  - bld_instruction_churn_prevention_playbook
-  - p03_qg_churn_prevention_playbook
   - churn-prevention-playbook-builder
-  - churn_prevention_playbook_n06
   - bld_config_renewal_workflow
 ---
 ```yaml
@@ -103,8 +100,5 @@ success_criteria: "{{success_definition}}"  # e.g., renewal signed, health_score
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_churn_prevention_playbook]] | upstream | 0.53 |
-| [[p03_qg_churn_prevention_playbook]] | downstream | 0.43 |
 | [[churn-prevention-playbook-builder]] | upstream | 0.36 |
-| [[churn_prevention_playbook_n06]] | upstream | 0.32 |
 | [[bld_config_renewal_workflow]] | downstream | 0.32 |

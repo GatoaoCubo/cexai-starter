@@ -20,9 +20,6 @@ density_score: 0.87
 related:
  - bld_schema_pipeline_template
  - pipeline-template-builder
- - n00_pipeline_template_manifest
- - p11_qg_pipeline_template
- - bld_output_template_pipeline_template
 ---
 ## Phase 1: RESEARCH
 1. Identify target scenario from the 7 canonical values: new_feature, new_feature_security, bug_fix_unknown, bug_fix_known, refactoring, perf_opt, infra.
@@ -56,6 +53,3 @@ related:
 |----------|-------------|-------|
 | [[bld_schema_pipeline_template]] | downstream | 0.56 |
 | [[pipeline-template-builder]] | downstream | 0.53 |
-| [[n00_pipeline_template_manifest]] | downstream | 0.48 |
-| [[p11_qg_pipeline_template]] | downstream | 0.48 |
-| [[bld_output_template_pipeline_template]] | downstream | 0.46 |

@@ -31,10 +31,7 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_knowledge_index
-  - bld_knowledge_card_knowledge_index
   - bld_architecture_knowledge_index
-  - p01_kc_knowledge_index
 ---
 ## Identity
 

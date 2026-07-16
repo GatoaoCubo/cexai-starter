@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [model_registry construction, tools model registry, model_registry, builder, tools, external references, registry concept, key fields, lflow model registry, maker model registry]
 density_score: 0.85
 related:
-  - bld_knowledge_card_model_registry
-  - kc_model_registry
   - model-registry-builder
-  - p10_lr_model_registry_builder
-  - bld_collaboration_model_registry
 ---
 ## CEX Tools (real -- in _tools/)
 
@@ -46,8 +42,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_model_registry]] | upstream | 0.45 |
-| [[kc_model_registry]] | upstream | 0.39 |
 | [[model-registry-builder]] | downstream | 0.37 |
-| [[p10_lr_model_registry_builder]] | downstream | 0.33 |
-| [[bld_collaboration_model_registry]] | downstream | 0.32 |

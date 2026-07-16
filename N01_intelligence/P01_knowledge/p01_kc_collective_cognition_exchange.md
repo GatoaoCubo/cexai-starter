@@ -26,8 +26,6 @@ related:
   - p01_kc_ai_investment_thesis
   - p01_kc_cex_positioning_analysis
   - p01_kc_community_directory_global
-  - p12_dr_intelligence
-  - n01_intelligence
 ---
 
 # Collective Cognition Exchange
@@ -125,4 +123,3 @@ vertical table). This KC operationalizes those seeds.
 | [[p01_kc_cex_positioning_analysis]] | related | 0.40 |
 | [[p01_kc_community_directory_global]] | related | 0.32 |
 | p12_dr_intelligence | related | 0.28 |
-| [[n01_intelligence]] | related | 0.26 |

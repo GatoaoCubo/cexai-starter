@@ -28,11 +28,8 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_prompt_version
-  - p01_kc_prompt_version
   - bld_architecture_prompt_version
   - system-prompt-builder
-  - n00_prompt_version_manifest
 ---
 ## Identity
 

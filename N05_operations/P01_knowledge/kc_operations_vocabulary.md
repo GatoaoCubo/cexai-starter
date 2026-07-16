@@ -28,11 +28,7 @@ linked_artifacts:
 density_score: 0.91
 data_source: "archetypes/builders/knowledge-card-builder/bld_schema_knowledge_card.md"
 related:
-  - vocabulary_cex_rosetta
-  - p12_wf_create_orchestration_agent
-  - ctx_n05
   - nucleus_def_n05
-  - component_map_n05
 ---
 
 # N05 Operations Controlled Vocabulary

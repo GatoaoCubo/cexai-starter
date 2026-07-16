@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for vc_credential, vc_credential construction, type builder vc credential, vc_credential, builder, type_builder, verifiable-credential, identity
 specializes, verifiable credentials]
 density_score: 0.85
-related:
-  - bld_knowledge_card_vc_credential
-  - bld_instruction_vc_credential
-  - p10_qg_vc_credential
-  - p10_lr_vc_credential_builder
-  - bld_collaboration_vc_credential
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS include data-integrity proof with cryptosuite, proofPurpose, verification
 NEVER use JWT encoding in this kind (vc-jose-cose is separate).
 NEVER omit credentialSchema reference -- schema validation is mandatory for agent credentials.
 NEVER self-assign quality score -- peer review only.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_vc_credential]] | upstream | 0.55 |
-| [[bld_instruction_vc_credential]] | upstream | 0.42 |
-| [[p10_qg_vc_credential]] | downstream | 0.40 |
-| [[p10_lr_vc_credential_builder]] | related | 0.39 |
-| [[bld_collaboration_vc_credential]] | downstream | 0.37 |

@@ -30,9 +30,6 @@ keywords:
   - "related artifacts"
 density_score: 0.85
 related:
-  - p02_qg_agents_md
-  - kc_agents_md
-  - bld_instruction_agents_md
   - bld_schema_agents_md
   - agents-md-builder
 ---

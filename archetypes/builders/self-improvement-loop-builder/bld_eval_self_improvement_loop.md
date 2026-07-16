@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [self_improvement_loop construction, hard structural checks, d scoring, self_improvement_loop, builder, quality_gate, "## anti-example 1: no feedback mechanism", quality gate, fail condition, scoring guide]
 density_score: 0.86
-related:
-  - p07_qg_trajectory_eval
-  - p11_qg_usage_report
-  - p01_qg_agentic_rag
-  - p03_qg_prompt_technique
-  - p08_qg_dual_loop_architecture
 ---
 ## Quality Gate
 

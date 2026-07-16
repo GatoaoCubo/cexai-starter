@@ -21,10 +21,6 @@ action, proven patterns, observed benefit]
 density_score: null
 related:
   - action-paradigm-builder
-  - bld_instruction_action_paradigm
-  - p11_qg_action_paradigm
-  - bld_output_template_action_paradigm
-  - bld_knowledge_card_action_paradigm
 ---
 # Memory: action-paradigm-builder
 
@@ -97,7 +93,3 @@ Execute in order to ensure reliable paradigm production:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[action-paradigm-builder]] | upstream | 0.51 |
-| [[bld_instruction_action_paradigm]] | upstream | 0.40 |
-| [[p11_qg_action_paradigm]] | downstream | 0.39 |
-| [[bld_output_template_action_paradigm]] | upstream | 0.33 |
-| [[bld_knowledge_card_action_paradigm]] | upstream | 0.30 |

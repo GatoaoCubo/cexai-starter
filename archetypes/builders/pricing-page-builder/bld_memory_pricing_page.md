@@ -20,11 +20,7 @@ effective, evidence
 reviewed, start free trial, related artifacts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_pricing_page
   - pricing-page-builder
-  - bld_instruction_pricing_page
-  - n00_pricing_page_manifest
-  - bld_instruction_subscription_tier
 ---
 ## Observation
 Common issues include inconsistent visual hierarchy, unclear value differentiation between tiers, and weak CTAs that fail to drive conversions. Overloading pages with data often dilutes key messages.
@@ -45,8 +41,4 @@ Reviewed artifacts showed 25% higher engagement when tiers were compared via sid
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_pricing_page]] | upstream | 0.40 |
 | [[pricing-page-builder]] | upstream | 0.40 |
-| [[bld_instruction_pricing_page]] | upstream | 0.31 |
-| [[n00_pricing_page_manifest]] | upstream | 0.27 |
-| [[bld_instruction_subscription_tier]] | upstream | 0.24 |

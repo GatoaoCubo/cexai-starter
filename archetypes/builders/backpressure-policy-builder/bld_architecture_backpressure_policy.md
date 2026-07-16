@@ -31,10 +31,7 @@ keywords:
 density_score: 0.90
 related:
   - backpressure-policy-builder
-  - bld_knowledge_card_backpressure_policy
-  - bld_instruction_backpressure_policy
   - bld_schema_backpressure_policy
-  - p01_kc_backpressure_policy
 ---
 ## Component Inventory
 
@@ -110,7 +107,4 @@ rate_limit_config  --parallel-->  handles INBOUND RATE (not consumer lag)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[backpressure-policy-builder]] | downstream | 0.67 |
-| [[bld_knowledge_card_backpressure_policy]] | upstream | 0.62 |
-| [[bld_instruction_backpressure_policy]] | upstream | 0.60 |
 | [[bld_schema_backpressure_policy]] | upstream | 0.58 |
-| [[p01_kc_backpressure_policy]] | downstream | 0.57 |

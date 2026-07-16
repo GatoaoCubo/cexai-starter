@@ -21,9 +21,6 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - p01_kc_input_schema
-  - p01_kc_enum_def
-  - n00_type_def_manifest
   - bld_architecture_type_def
   - type-def-builder
 ---

@@ -19,7 +19,6 @@ keywords: [f pipeline execution, persona construction, personality-builder tools
 density_score: 0.85
 related:
   - bld_tools_terminal_backend
-  - p11_tools_revision_loop_policy
   - bld_tools_event_schema
   - bld_tools_context_map
   - bld_tools_retry_policy

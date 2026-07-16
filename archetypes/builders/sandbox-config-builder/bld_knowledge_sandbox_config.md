@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F3_inject"
 keywords: [sandbox_config construction, knowledge card sandbox config, sandbox isolation platforms, with cpu, filesystem specs, sandbox_config, builder]
 density_score: 0.92
-related:
-  - p09_qg_sandbox_config
-  - bld_instruction_sandbox_config
-  - bld_knowledge_card_code_executor
-  - bld_output_template_sandbox_config
-  - p10_lr_code_executor_builder
 ---
 ## Domain Overview
 
@@ -115,12 +109,3 @@ cold start, strong isolation) to gVisor (syscall interception, strongest isolati
 4. Set `no_new_privs` bit (prctl PR_SET_NO_NEW_PRIVS) on sandbox entry
 5. E2B template: define base image + resource limits in `e2b.toml`
 6. Firecracker: configure guest memory, vCPU count, root filesystem in `vm-config.json`
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p09_qg_sandbox_config]] | downstream | 0.47 |
-| [[bld_instruction_sandbox_config]] | downstream | 0.42 |
-| [[bld_knowledge_card_code_executor]] | sibling | 0.40 |
-| [[bld_output_template_sandbox_config]] | downstream | 0.39 |
-| [[p10_lr_code_executor_builder]] | downstream | 0.36 |

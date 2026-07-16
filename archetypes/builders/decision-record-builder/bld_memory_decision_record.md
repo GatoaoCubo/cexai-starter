@@ -27,10 +27,7 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - decision-record-builder
-  - bld_knowledge_card_decision_record
-  - bld_instruction_decision_record
   - bld_architecture_decision_record
-  - p01_kc_decision_record
 ---
 ## Summary
 ADRs fail in two ways: never written, or written incompletely. The second is more insidious — a reader finds an ADR and trusts it without realizing the rationale is incomplete or context has changed. The context section is the most load-bearing field: it answers whether to still follow the decision, or whether the situation has changed.

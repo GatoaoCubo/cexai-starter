@@ -11,16 +11,7 @@ slots:
   query_context: "<the question this card is recalled to answer>"
   target_audience: "<who consumes the answer>"
 related:
-  - kc_prompt_caching_strategies
-  - kc_prompt_caching_strategies_gemini
-  - kc_prompt_caching_codex
-  - ex_knowledge_card_prompt_caching
-  - bld_knowledge_card_prompt_cache
-  - p01_kc_prompt_cache
-  - bld_collaboration_prompt_cache
   - prompt-cache-builder
-  - n00_prompt_cache_manifest
-  - p01_kc_caching
 ---
 
 ## Overview

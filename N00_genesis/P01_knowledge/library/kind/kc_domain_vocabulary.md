@@ -23,9 +23,7 @@ long_tails: ["create a canonical term registry for a bounded context", "enforce 
 related:
   - bld_architecture_domain_vocabulary
   - domain-vocabulary-builder
-  - bld_kc_domain_vocabulary
   - bld_memory_domain_vocabulary
-  - bld_qg_domain_vocabulary
 ---
 
 # Domain Vocabulary
@@ -119,6 +117,4 @@ Prevention: domain_vocabulary loaded at EVERY session start within the BC.
 |----------|-------------|-------|
 | [[bld_architecture_domain_vocabulary]] | downstream | 0.63 |
 | [[domain-vocabulary-builder]] | related | 0.61 |
-| [[bld_kc_domain_vocabulary]] | sibling | 0.59 |
 | [[bld_memory_domain_vocabulary]] | downstream | 0.53 |
-| [[bld_qg_domain_vocabulary]] | downstream | 0.50 |

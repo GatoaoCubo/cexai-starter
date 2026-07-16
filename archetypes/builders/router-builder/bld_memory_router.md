@@ -24,10 +24,7 @@ for, load balancing]
 density_score: 0.90
 related:
   - router-builder
-  - p03_ins_router
-  - bld_collaboration_router
   - bld_architecture_router
-  - p11_qg_router
 ---
 # Memory: router-builder
 ## Summary
@@ -86,7 +83,5 @@ python _tools/cex_score.py --apply bld-memory-router.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[router-builder]] | upstream | 0.56 |
-| [[p03_ins_router]] | upstream | 0.52 |
 | [[bld_orchestration_router]] | upstream | 0.48 |
 | [[bld_architecture_router]] | upstream | 0.47 |
-| [[p11_qg_router]] | downstream | 0.46 |

@@ -14,12 +14,6 @@ keywords: [context sources, bounded context memory, naming conventions, output p
 density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
-related:
-  - bld_context_sources_data_contract
-  - bld_context_sources_domain_vocabulary
-  - bld_context_sources_domain_event
-  - bld_context_sources_deployment_manifest
-  - bld_context_sources_alert_rule
 ---
 # Context Sources: bounded_context
 ## Mandatory Sources (load at F3 INJECT)
@@ -69,12 +63,3 @@ cross_refs_verified: true
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope {BUILDER}
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_context_sources_data_contract]] | sibling | 0.54 |
-| [[bld_context_sources_domain_vocabulary]] | sibling | 0.49 |
-| [[bld_context_sources_domain_event]] | sibling | 0.47 |
-| [[bld_context_sources_deployment_manifest]] | upstream | 0.46 |
-| [[bld_context_sources_alert_rule]] | sibling | 0.44 |

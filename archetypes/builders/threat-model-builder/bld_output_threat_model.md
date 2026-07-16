@@ -17,8 +17,6 @@ updated: "2026-04-13"
 keywords: [threat_model construction, output template threat model, ck mapping, threat_model, builder, output_template, stride]
 density_score: 0.90
 related:
-  - p11_qg_threat_model
-  - bld_instruction_threat_model
   - bld_schema_threat_model
   - bld_tools_threat_model
   - threat-model-builder
@@ -126,8 +124,6 @@ _(Required when system includes ML models or AI pipelines)_
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_threat_model]] | downstream | 0.60 |
-| [[bld_instruction_threat_model]] | upstream | 0.57 |
 | [[bld_schema_threat_model]] | downstream | 0.47 |
 | [[bld_tools_threat_model]] | upstream | 0.43 |
 | [[threat-model-builder]] | downstream | 0.40 |

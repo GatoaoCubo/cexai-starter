@@ -32,8 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - memory-scope-builder
-  - bld_instruction_memory_scope
-  - p11_qg_memory_scope
   - bld_architecture_memory_scope
   - bld_schema_memory_scope
 ---
@@ -96,6 +94,5 @@ shared_with: "{{shared_with}}}}"
 |----------|-------------|-------|
 | [[memory-scope-builder]] | upstream | 0.42 |
 | [[bld_prompt_memory_scope]] | upstream | 0.38 |
-| [[p11_qg_memory_scope]] | downstream | 0.37 |
 | [[bld_architecture_memory_scope]] | downstream | 0.37 |
 | [[bld_schema_memory_scope]] | downstream | 0.36 |

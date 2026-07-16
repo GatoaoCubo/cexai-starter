@@ -19,11 +19,7 @@ specializes, voice activity detection, receives from, produces for, boundary
 does]
 density_score: 0.85
 related:
-  - kc_vad_config
   - vad-config-builder
-  - bld_collaboration_tts_provider
-  - n00_vad_config_manifest
-  - p10_lr_vad_config_builder
 ---
 ## Crew Role  
 Specializes in crafting and validating Voice Activity Detection (VAD) configurations, ensuring optimal silence/voice thresholds, sensitivity, and language-specific tuning for downstream processing.  
@@ -48,8 +44,4 @@ Does NOT handle full voice pipeline architecture (voice_pipeline_builder) or tra
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_vad_config]] | upstream | 0.32 |
 | [[vad-config-builder]] | upstream | 0.31 |
-| [[bld_collaboration_tts_provider]] | sibling | 0.30 |
-| [[n00_vad_config_manifest]] | upstream | 0.26 |
-| [[p10_lr_vad_config_builder]] | upstream | 0.24 |

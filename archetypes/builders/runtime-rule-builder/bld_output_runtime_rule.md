@@ -30,12 +30,6 @@ keywords:
   - "| {{value_2}} | {{unit_2}} |"
   - "| ## trigger behavior"
 density_score: 0.90
-related:
-  - bld_output_template_feature_flag
-  - bld_output_template_embedding_config
-  - bld_output_template_golden_test
-  - bld_output_template_skill
-  - bld_output_template_output_validator
 ---
 # Output Template: runtime_rule
 ```yaml
@@ -92,12 +86,3 @@ severity: {{critical|high|medium|low}}
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_feature_flag]] | sibling | 0.39 |
-| [[bld_output_template_embedding_config]] | sibling | 0.33 |
-| [[bld_output_template_golden_test]] | sibling | 0.33 |
-| [[bld_output_template_skill]] | sibling | 0.32 |
-| [[bld_output_template_output_validator]] | sibling | 0.32 |

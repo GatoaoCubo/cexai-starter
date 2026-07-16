@@ -18,10 +18,7 @@ updated: "2026-04-17"
 keywords: [preference dataset construction, knowledge card preference dataset, preference datasets are curated, preference_dataset, builder, knowledge_card, domain knowledge, executive summary, spec table, alignment technique map]
 density_score: 0.90
 related:
-  - p01_kc_preference_dataset
   - preference-dataset-builder
-  - p01_kc_reward_and_alignment
-  - p11_lr_preference_dataset_builder
   - bld_config_preference_dataset
 ---
 # Domain Knowledge: preference_dataset
@@ -85,8 +82,5 @@ A preference_dataset is a curated collection of (prompt, chosen_response, reject
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_preference_dataset]] | sibling | 0.55 |
 | [[preference-dataset-builder]] | downstream | 0.52 |
-| [[p01_kc_reward_and_alignment]] | sibling | 0.48 |
-| [[p11_lr_preference_dataset_builder]] | downstream | 0.47 |
 | [[bld_config_preference_dataset]] | downstream | 0.43 |

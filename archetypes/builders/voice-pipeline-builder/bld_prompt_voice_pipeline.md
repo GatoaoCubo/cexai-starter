@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_memory_voice_pipeline
   - voice-pipeline-builder
-  - p11_qg_voice_pipeline
-  - bld_output_template_voice_pipeline
-  - bld_instruction_tts_provider
 ---
 ## Phase 1: RESEARCH  
 1. Define voice_pipeline requirements: latency, accuracy, language support  
@@ -71,6 +68,3 @@ related:
 |----------|-------------|-------|
 | [[bld_memory_voice_pipeline]] | downstream | 0.46 |
 | [[voice-pipeline-builder]] | downstream | 0.40 |
-| [[p11_qg_voice_pipeline]] | downstream | 0.39 |
-| [[bld_output_template_voice_pipeline]] | downstream | 0.39 |
-| [[bld_instruction_tts_provider]] | sibling | 0.33 |

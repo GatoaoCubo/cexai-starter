@@ -20,10 +20,7 @@ modular, evidence
 reviewed, related artifacts]
 density_score: 0.85
 related:
-  - p10_lr_eval_framework_builder
   - eval-framework-builder
-  - p10_lr_judge_config_builder
-  - bld_collaboration_llm_evaluation_scenario
   - benchmark-suite-builder
 ---
 ## Observation
@@ -45,8 +42,5 @@ Reviewed artifacts showed that modular designs (e.g., `trajectory_eval-builder-v
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_eval_framework_builder]] | related | 0.38 |
 | [[eval-framework-builder]] | upstream | 0.32 |
-| [[p10_lr_judge_config_builder]] | related | 0.31 |
-| [[bld_collaboration_llm_evaluation_scenario]] | downstream | 0.29 |
 | [[benchmark-suite-builder]] | upstream | 0.26 |

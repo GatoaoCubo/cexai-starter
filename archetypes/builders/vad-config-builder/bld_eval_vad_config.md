@@ -30,11 +30,7 @@ keywords:
   - "fail condition"
 density_score: 0.85
 related:
-  - bld_output_template_vad_config
-  - p04_qg_stt_provider
   - vad-config-builder
-  - p11_qg_content_filter
-  - p07_qg_reward_model
 ---
 ## Quality Gate
 

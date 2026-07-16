@@ -21,7 +21,6 @@ llm_function: BECOME
 8f: "F2_become"
 related:
   - bld_knowledge_retrieval_evaluator
-  - kc_retrieval_evaluator
   - bld_architecture_retrieval_evaluator
   - bld_prompt_retrieval_evaluator
   - bld_orchestration_retrieval_evaluator
@@ -52,7 +51,6 @@ It is NOT a retriever (P02), NOT an embedding_config (P01), NOT a benchmark_suit
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_retrieval_evaluator]] | upstream | 0.52 |
-| [[kc_retrieval_evaluator]] | upstream | 0.50 |
 | [[bld_architecture_retrieval_evaluator]] | downstream | 0.47 |
 | [[bld_prompt_retrieval_evaluator]] | downstream | 0.47 |
 | [[bld_orchestration_retrieval_evaluator]] | downstream | 0.42 |

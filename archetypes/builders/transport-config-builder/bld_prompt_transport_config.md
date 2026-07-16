@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [transport_config construction, instruction transport config, transport_config, builder, instruction, define quality, related artifacts, sibling, schema, phase]
 density_score: 0.85
-related:
-  - bld_instruction_playground_config
-  - bld_instruction_edit_format
-  - bld_instruction_judge_config
-  - bld_instruction_search_strategy
-  - bld_instruction_vad_config
 ---
 ## Phase 1: RESEARCH  
 1. Analyze real-time protocol requirements (e.g., UDP, TCP, QUIC).  
@@ -48,12 +42,3 @@ related:
 - [ ] Simulate real-time traffic for performance.  
 - [ ] Audit security parameters (encryption, auth).  
 - [ ] Confirm compatibility with target infrastructure.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_playground_config]] | sibling | 0.40 |
-| [[bld_instruction_edit_format]] | sibling | 0.31 |
-| [[bld_instruction_judge_config]] | sibling | 0.30 |
-| [[bld_instruction_search_strategy]] | sibling | 0.30 |
-| [[bld_instruction_vad_config]] | sibling | 0.30 |

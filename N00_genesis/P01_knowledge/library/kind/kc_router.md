@@ -21,10 +21,7 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - p01_kc_dispatch_rule
   - router-builder
-  - n00_router_manifest
-  - p01_kc_routing_resilience
   - bld_architecture_router
 ---
 

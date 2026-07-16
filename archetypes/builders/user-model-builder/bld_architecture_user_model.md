@@ -19,7 +19,6 @@ keywords: [and architectural position, user model construction, component invent
 density_score: 0.91
 related:
   - user-model-builder
-  - bld_collaboration_user_model
   - kc_user_model
   - bld_schema_user_model
 ---

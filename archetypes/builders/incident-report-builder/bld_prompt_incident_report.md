@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [incident_report construction, instruction incident report, incident_report, builder, instruction, related artifacts, root cause, corrective actions, model outputs, downstream]
 density_score: 0.85
 related:
-  - kc_incident_report
-  - p11_qg_incident_report
   - incident-report-builder
-  - p10_lr_incident_report_builder
-  - bld_knowledge_card_incident_report
 ---
 ## Phase 1: RESEARCH  
 1. Gather incident details: date, time, affected systems, and user impact.  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_incident_report]] | upstream | 0.43 |
-| [[p11_qg_incident_report]] | downstream | 0.39 |
 | [[incident-report-builder]] | downstream | 0.39 |
-| [[p10_lr_incident_report_builder]] | downstream | 0.33 |
-| [[bld_knowledge_card_incident_report]] | upstream | 0.33 |

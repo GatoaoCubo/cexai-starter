@@ -35,9 +35,6 @@ this, extraction prompt]
 density_score: 0.91
 llm_function: INJECT
 related:
-  - bld_knowledge_card_knowledge_graph
-  - bld_instruction_knowledge_graph
-  - p01_kc_knowledge_graph
   - knowledge-graph-builder
   - bld_config_knowledge_graph
 ---
@@ -109,8 +106,5 @@ and produces artifacts that must pass the quality gate at F7 (Govern).
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_knowledge_graph]] | upstream | 0.54 |
-| [[bld_instruction_knowledge_graph]] | upstream | 0.50 |
-| [[p01_kc_knowledge_graph]] | upstream | 0.48 |
 | [[knowledge-graph-builder]] | upstream | 0.44 |
 | [[bld_config_knowledge_graph]] | upstream | 0.42 |

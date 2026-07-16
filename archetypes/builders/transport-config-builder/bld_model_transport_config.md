@@ -19,11 +19,7 @@ specializes, configures qo, crew role
 responsible]
 density_score: 0.85
 related:
-  - p09_qg_transport_config
-  - bld_knowledge_card_transport_config
-  - p10_lr_transport_config_builder
   - bld_architecture_transport_config
-  - n00_transport_config_manifest
 ---
 ## Identity
 ## Identity  
@@ -89,8 +85,4 @@ mandatory fields:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p09_qg_transport_config]] | downstream | 0.44 |
-| [[bld_knowledge_card_transport_config]] | upstream | 0.39 |
-| [[p10_lr_transport_config_builder]] | downstream | 0.37 |
 | [[bld_architecture_transport_config]] | upstream | 0.37 |
-| [[n00_transport_config_manifest]] | related | 0.36 |

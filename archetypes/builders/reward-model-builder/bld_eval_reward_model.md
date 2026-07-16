@@ -30,11 +30,7 @@ keywords:
   - "## anti-example 1: vague metrics"
 density_score: 0.85
 related:
-  - p02_qg_rl_algorithm
-  - n00_reward_model_manifest
-  - kc_reward_model
   - reward-model-builder
-  - p10_lr_reward_model_builder
 ---
 ## Quality Gate
 

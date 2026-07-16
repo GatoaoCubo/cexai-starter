@@ -19,9 +19,6 @@ density_score: 0.88
 related:
   - voice-pipeline-builder
   - bld_memory_voice_pipeline
-  - p11_qg_quality_gate
-  - bld_output_template_voice_pipeline
-  - p11_qg_response_format
 ---
 ## Quality Gate
 ## Definition

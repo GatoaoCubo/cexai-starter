@@ -19,11 +19,8 @@ keywords: [sequential prompt pipelines, chain construction, knowledge card chain
 chains, spec table, chain sequential]
 density_score: 0.90
 related:
-  - p10_lr_chain_builder
   - chain-builder
-  - bld_instruction_chain
   - bld_architecture_chain
-  - p01_kc_chain
 ---
 # Domain Knowledge: chain
 ## Executive Summary
@@ -75,8 +72,5 @@ Chains are sequential prompt pipelines where output A feeds input B across multi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_chain_builder]] | downstream | 0.60 |
 | [[chain-builder]] | downstream | 0.56 |
-| [[bld_instruction_chain]] | downstream | 0.56 |
 | [[bld_architecture_chain]] | downstream | 0.51 |
-| [[p01_kc_chain]] | sibling | 0.50 |

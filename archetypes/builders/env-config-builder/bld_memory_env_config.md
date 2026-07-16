@@ -35,9 +35,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - env-config-builder
-  - bld_instruction_env_config
-  - bld_knowledge_card_env_config
-  - p11_qg_env_config
   - bld_tools_memory_type
 ---
 ## Summary
@@ -113,5 +110,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_env_config_builder.md
 | [[env-config-builder]] | upstream | 0.41 |
 | [[bld_prompt_env_config]] | upstream | 0.38 |
 | [[bld_knowledge_env_config]] | upstream | 0.36 |
-| [[p11_qg_env_config]] | downstream | 0.34 |
 | bld_tools_memory_type | upstream | 0.32 |

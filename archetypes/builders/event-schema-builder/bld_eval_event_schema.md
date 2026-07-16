@@ -19,9 +19,6 @@ keywords: [event schema -- cloudevents, fail gate for event_schema, id pattern, 
 density_score: 0.90
 related:
   - bld_schema_event_schema
-  - kc_event_schema
-  - bld_output_template_event_schema
-  - bld_knowledge_card_event_schema
   - bld_architecture_event_schema
 ---
 ## Quality Gate
@@ -187,7 +184,4 @@ Deprecate v1 after all consumers migrate. Never delete v1 while consumers exist.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_event_schema]] | upstream | 0.50 |
-| [[kc_event_schema]] | upstream | 0.48 |
-| [[bld_output_template_event_schema]] | upstream | 0.46 |
-| [[bld_knowledge_card_event_schema]] | upstream | 0.44 |
 | [[bld_architecture_event_schema]] | upstream | 0.43 |

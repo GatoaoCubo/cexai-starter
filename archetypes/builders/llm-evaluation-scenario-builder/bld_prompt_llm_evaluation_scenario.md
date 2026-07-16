@@ -32,10 +32,7 @@ keywords:
 density_score: 0.85
 related:
   - llm-evaluation-scenario-builder
-  - bld_knowledge_card_llm_evaluation_scenario
   - bld_schema_llm_evaluation_scenario
-  - p07_qg_llm_evaluation_scenario
-  - bld_output_template_llm_evaluation_scenario
 ---
 ## Phase 1: RESEARCH
 1. Identify the capability under evaluation (e.g., commonsense reasoning, medical QA, code generation).
@@ -70,7 +67,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[llm-evaluation-scenario-builder]] | downstream | 0.57 |
-| [[bld_knowledge_card_llm_evaluation_scenario]] | upstream | 0.53 |
 | [[bld_schema_llm_evaluation_scenario]] | downstream | 0.45 |
-| [[p07_qg_llm_evaluation_scenario]] | downstream | 0.45 |
-| [[bld_output_template_llm_evaluation_scenario]] | downstream | 0.41 |

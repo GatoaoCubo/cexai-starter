@@ -18,10 +18,7 @@ keywords: [component map of workflow_primitive, and architectural position, work
 density_score: 0.90
 related:
   - workflow-primitive-builder
-  - bld_collaboration_workflow_primitive
-  - p03_ins_workflow_primitive_builder
   - bld_tools_workflow_primitive
-  - n00_workflow_primitive_manifest
 ---
 # Architecture: workflow_primitive in the CEX
 ## Component Inventory
@@ -73,6 +70,5 @@ parallel_primitive  --requires-->       merge_primitive --collects-->     fan_in
 |----------|-------------|-------|
 | [[workflow-primitive-builder]] | downstream | 0.70 |
 | [[bld_orchestration_workflow_primitive]] | upstream | 0.68 |
-| [[p03_ins_workflow_primitive_builder]] | upstream | 0.65 |
 | [[bld_tools_workflow_primitive]] | upstream | 0.61 |
 | n00_workflow_primitive_manifest | downstream | 0.58 |

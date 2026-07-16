@@ -19,10 +19,7 @@ feeds_kinds: [content_monetization]
 density_score: null
 related:
   - content-monetization-builder
-  - bld_collaboration_content_monetization
   - bld_architecture_content_monetization
-  - n06_integration_content_factory
-  - p04_fn_content_monetization
 ---
 
 # Content Monetization

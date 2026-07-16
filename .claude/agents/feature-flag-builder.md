@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - feature-flag-builder
-  - bld_collaboration_feature_flag
   - bld_config_feature_flag
-  - p01_kc_feature_flag
   - kind-builder
 ---
 
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[feature-flag-builder]] | related | 0.45 |
-| [[bld_collaboration_feature_flag]] | related | 0.39 |
 | [[bld_config_feature_flag]] | related | 0.29 |
-| [[p01_kc_feature_flag]] | related | 0.29 |
 | [[kind-builder]] | related | 0.29 |

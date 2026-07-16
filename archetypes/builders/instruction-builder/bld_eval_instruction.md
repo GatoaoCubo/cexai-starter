@@ -31,10 +31,7 @@ keywords:
   - "procedure"
 density_score: 0.90
 related:
-  - p11_qg_component_map
   - instruction-builder
-  - p11_qg_quality_gate
-  - p01_rs_brain_faiss_index
 ---
 ## Quality Gate
 

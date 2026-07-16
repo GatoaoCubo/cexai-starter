@@ -22,10 +22,6 @@ linked_artifacts:
   related: []
 related:
   - validation-schema-builder
-  - p01_kc_response_format
-  - bld_knowledge_card_validation_schema
-  - p01_kc_pillar_brief_p06_schema_en
-  - bld_collaboration_validation_schema
 ---
 
 # Validation Schema

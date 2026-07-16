@@ -17,12 +17,6 @@ updated: "2026-04-07"
 8f: "F6_produce"
 keywords: [component map construction, instruction component map, component_map, builder, examples, "{{vars}}", p08_cm_, write components, write connections, write dependencies]
 density_score: 0.90
-related:
-  - bld_instruction_context_doc
-  - bld_instruction_memory_scope
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
-  - bld_instruction_handoff_protocol
 ---
 # Instructions: How to Produce a component_map
 ## Phase 1: DISCOVER
@@ -82,12 +76,3 @@ python _tools/cex_skill_loader.py --verify component
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_context_doc]] | sibling | 0.45 |
-| [[bld_instruction_memory_scope]] | sibling | 0.45 |
-| [[bld_instruction_retriever_config]] | sibling | 0.43 |
-| [[bld_instruction_output_validator]] | sibling | 0.43 |
-| [[bld_instruction_handoff_protocol]] | sibling | 0.42 |

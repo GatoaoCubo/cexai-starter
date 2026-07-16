@@ -20,7 +20,6 @@ density_score: 1.0
 updated: "2026-04-13"
 related:
   - kc_subscription_tier
-  - n06_api_access_pricing
   - p01_kc_ai_saas_monetization
 ---
 

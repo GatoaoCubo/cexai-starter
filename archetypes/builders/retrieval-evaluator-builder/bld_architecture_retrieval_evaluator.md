@@ -19,7 +19,6 @@ density_score: 0.88
 related:
   - retrieval-evaluator-builder
   - bld_orchestration_retrieval_evaluator
-  - kc_retrieval_evaluator
   - bld_output_retrieval_evaluator
   - bld_prompt_retrieval_evaluator
 ---
@@ -59,6 +58,5 @@ retrieval_evaluator --independent-- knowledge_index (P10)
 |----------|-------------|-------|
 | [[retrieval-evaluator-builder]] | upstream | 0.62 |
 | [[bld_orchestration_retrieval_evaluator]] | downstream | 0.60 |
-| [[kc_retrieval_evaluator]] | upstream | 0.47 |
 | [[bld_output_retrieval_evaluator]] | upstream | 0.43 |
 | [[bld_prompt_retrieval_evaluator]] | upstream | 0.43 |

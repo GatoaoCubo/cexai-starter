@@ -34,10 +34,7 @@ keywords:
   - "## fair signposting"
 density_score: 0.85
 related:
-  - bld_knowledge_card_workflow_run_crate
-  - p10_qg_workflow_run_crate
   - bld_tools_workflow_run_crate
-  - bld_instruction_workflow_run_crate
   - workflow-run-crate-builder
 ---
 ```yaml
@@ -151,8 +148,5 @@ Link: <{{license_url}}>; rel="license"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_workflow_run_crate]] | upstream | 0.48 |
-| [[p10_qg_workflow_run_crate]] | downstream | 0.46 |
 | [[bld_tools_workflow_run_crate]] | upstream | 0.42 |
-| [[bld_instruction_workflow_run_crate]] | upstream | 0.41 |
 | [[workflow-run-crate-builder]] | downstream | 0.41 |

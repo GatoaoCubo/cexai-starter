@@ -30,12 +30,6 @@ keywords:
   - "## parameters"
   - "## integration"
 density_score: 0.90
-related:
-  - bld_output_template_output_validator
-  - bld_output_template_hook_config
-  - bld_output_template_runtime_rule
-  - bld_output_template_feature_flag
-  - bld_instruction_retriever_config
 ---
 # Output Template: retriever_config
 ```yaml
@@ -94,7 +88,6 @@ fetch_k: "{{fetch_k}}}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_output_validator]] | sibling | 0.37 |
 | bld_output_template_hook_config | sibling | 0.37 |
 | bld_output_template_runtime_rule | sibling | 0.35 |
 | bld_output_template_feature_flag | sibling | 0.35 |

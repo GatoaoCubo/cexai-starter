@@ -17,11 +17,7 @@ updated: "2026-04-07"
 8f: "F6_produce"
 density_score: 0.90
 related:
-  - p03_ins_vector_store
-  - p11_qg_vector_store
   - bld_schema_vector_store
-  - p01_kc_vector_store
-  - bld_knowledge_card_vector_store
 ---
 # Output Template: vector_store
 ```yaml
@@ -113,8 +109,6 @@ Scale guidance:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_vector_store]] | upstream | 0.62 |
-| [[p11_qg_vector_store]] | downstream | 0.47 |
 | [[bld_schema_vector_store]] | downstream | 0.44 |
 | [[kc_vector_store]] | upstream | 0.42 |
 | [[bld_knowledge_vector_store]] | upstream | 0.42 |

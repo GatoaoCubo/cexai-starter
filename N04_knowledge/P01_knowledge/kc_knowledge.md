@@ -33,11 +33,7 @@ linked_artifacts:
 density_score: 0.96
 data_source: "Distilled from first principles of information theory, data architecture, and the N04 mandate."
 related:
-  - p01_kc_pillar_brief_p01_knowledge_en
   - kc_knowledge_vocabulary
-  - bld_collaboration_knowledge_graph
-  - p01_kc_rag_hybrid
-  - n00_knowledge_card_manifest
 ---
 
 # KC: The CEX Knowledge Lifecycle

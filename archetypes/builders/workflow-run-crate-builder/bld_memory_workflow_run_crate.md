@@ -18,10 +18,8 @@ keywords: [workflow_run_crate construction, workflow_run_crate, builder, learnin
 density_score: 0.85
 related:
   - workflow-run-crate-builder
-  - bld_knowledge_card_workflow_run_crate
   - bld_tools_workflow_run_crate
   - bld_architecture_workflow_run_crate
-  - bld_instruction_workflow_run_crate
 ---
 ## Observation
 Most workflow provenance records use ad-hoc formats (log files, README.txt, spreadsheets). RO-Crate Workflow Run Crate standardizes this into a machine-readable, FAIR-compliant JSON-LD package. The most common error: generating a crate without the CreateAction entity, which removes the provenance graph spine entirely.
@@ -45,7 +43,5 @@ Galaxy EuroScienceGateway project (Horizon Europe, ended Aug 2025) produced 3000
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-run-crate-builder]] | related | 0.65 |
-| [[bld_knowledge_card_workflow_run_crate]] | upstream | 0.62 |
 | [[bld_tools_workflow_run_crate]] | upstream | 0.59 |
 | [[bld_architecture_workflow_run_crate]] | upstream | 0.55 |
-| [[bld_instruction_workflow_run_crate]] | upstream | 0.54 |

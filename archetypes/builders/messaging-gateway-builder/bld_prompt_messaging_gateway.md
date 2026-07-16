@@ -19,9 +19,7 @@ keywords: [messaging gateway construction, phase build, identify active platform
 density_score: 0.90
 related:
  - bld_schema_messaging_gateway
- - bld_output_template_messaging_gateway
  - messaging-gateway-builder
- - n00_messaging_gateway_manifest
  - bld_architecture_messaging_gateway
 ---
 # Instructions: How to Produce a messaging_gateway
@@ -80,7 +78,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_messaging_gateway]] | downstream | 0.53 |
-| [[bld_output_template_messaging_gateway]] | downstream | 0.46 |
 | [[messaging-gateway-builder]] | downstream | 0.45 |
-| [[n00_messaging_gateway_manifest]] | downstream | 0.42 |
 | [[bld_architecture_messaging_gateway]] | downstream | 0.41 |

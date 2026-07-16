@@ -18,10 +18,6 @@ keywords: [faq_entry construction, knowledge card faq entry, faq_entry, builder,
 density_score: 0.85
 related:
   - faq-entry-builder
-  - bld_instruction_faq_entry
-  - p01_kc_faq_entry
-  - p10_mem_faq_entry_builder
-  - n00_faq_entry_manifest
 ---
 ## Domain Overview  
 FAQ entries are structured artifacts used in customer support systems to centralize common questions and standardized responses. They aim to reduce agent workload by deflecting inquiries to self-service resources while ensuring consistency in communication. Modern implementations often integrate with knowledge management systems, analytics platforms, and AI-driven chatbots to optimize answer accuracy and user experience. Key considerations include linguistic clarity, cross-linking to related resources, and quantifying support deflection impact through metrics like resolution rate or time-to-answer.  
@@ -65,7 +61,3 @@ FAQ entries are structured artifacts used in customer support systems to central
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[faq-entry-builder]] | related | 0.55 |
-| [[bld_instruction_faq_entry]] | downstream | 0.37 |
-| [[p01_kc_faq_entry]] | sibling | 0.32 |
-| [[p10_mem_faq_entry_builder]] | downstream | 0.30 |
-| [[n00_faq_entry_manifest]] | sibling | 0.25 |

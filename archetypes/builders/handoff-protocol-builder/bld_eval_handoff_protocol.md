@@ -29,10 +29,6 @@ keywords:
 density_score: 0.90
 related:
   - handoff-protocol-builder
-  - p11_qg_memory_scope
-  - bld_instruction_handoff_protocol
-  - p11_qg_chunk_strategy
-  - p11_qg_retriever_config
 ---
 ## Quality Gate
 

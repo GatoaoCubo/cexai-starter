@@ -20,7 +20,6 @@ trigger, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_prompt_optimizer
   - prompt-technique-builder
   - system-prompt-builder
   - bld_memory_system_prompt
@@ -71,7 +70,6 @@ NEVER produce outputs that require further optimization by other agents.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_prompt_optimizer]] | upstream | 0.34 |
 | [[prompt-technique-builder]] | sibling | 0.33 |
 | [[system-prompt-builder]] | sibling | 0.32 |
 | [[bld_memory_system_prompt]] | downstream | 0.30 |

@@ -21,10 +21,6 @@ reviewed, related artifacts, task metadata]
 density_score: 0.85
 related:
   - benchmark-suite-builder
-  - bld_instruction_benchmark_suite
-  - kc_workflow_run_crate
-  - bld_knowledge_card_benchmark_suite
-  - p01_kc_plan_driven_dev
 ---
 ## Observation
 Common issues include inconsistent task metadata, overlapping dependencies between tasks, and unclear versioning of composite benchmarks. Misaligned evaluation metrics across tasks often complicate suite-wide analysis.
@@ -46,7 +42,3 @@ Reviewed artifacts with standardized metadata schemas showed 30% fewer integrati
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[benchmark-suite-builder]] | upstream | 0.35 |
-| [[bld_instruction_benchmark_suite]] | upstream | 0.28 |
-| [[kc_workflow_run_crate]] | upstream | 0.27 |
-| [[bld_knowledge_card_benchmark_suite]] | upstream | 0.26 |
-| [[p01_kc_plan_driven_dev]] | upstream | 0.23 |

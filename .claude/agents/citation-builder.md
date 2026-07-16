@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - citation-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_citation
-  - p01_faq_cex_common_questions
 ---
 
 # citation-builder Sub-Agent
@@ -90,4 +87,3 @@ Five duties bind any agent that emits an artifact:
 | kind-builder | related | 0.32 |
 | p03_sp_builder_nucleus | related | 0.32 |
 | [[bld_orchestration_citation]] | related | 0.30 |
-| [[p01_faq_cex_common_questions]] | related | 0.27 |

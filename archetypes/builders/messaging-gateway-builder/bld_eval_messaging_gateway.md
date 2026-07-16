@@ -18,11 +18,8 @@ updated: "2026-04-18"
 keywords: [messaging gateway construction, quality gate, hard gates, soft gates for messaging_gateway, target score, key hard, id pattern]
 density_score: 0.91
 related:
-  - n00_messaging_gateway_manifest
-  - bld_output_template_messaging_gateway
   - messaging-gateway-builder
   - bld_architecture_messaging_gateway
-  - bld_kc_messaging_gateway
 ---
 ## Quality Gate
 

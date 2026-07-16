@@ -31,11 +31,8 @@ keywords:
   - "outlines guide"
 density_score: 0.90
 related:
-  - p10_lr_constraint_spec_builder
   - constraint-spec-builder
-  - bld_collaboration_constraint_spec
   - bld_architecture_constraint_spec
-  - p01_kc_constraint_spec
 ---
 # Domain Knowledge: constraint_spec
 ## Executive Summary
@@ -76,7 +73,6 @@ Constraint spec — rules that govern the LLM decoder during generation (grammar
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_constraint_spec_builder]] | downstream | 0.52 |
 | [[constraint-spec-builder]] | related | 0.43 |
 | [[bld_orchestration_constraint_spec]] | downstream | 0.36 |
 | [[bld_architecture_constraint_spec]] | downstream | 0.36 |

@@ -28,10 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, router construction, config router, router, builder, examples, "p02_router_{slug}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_router
-  - p11_qg_router
   - bld_schema_router
-  - p03_ins_router
   - bld_memory_router
 ---
 # Config: router Production Rules
@@ -74,7 +71,5 @@ Rule: id MUST equal filename stem.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_router]] | upstream | 0.44 |
-| [[p11_qg_router]] | downstream | 0.39 |
 | [[bld_schema_router]] | upstream | 0.38 |
-| [[p03_ins_router]] | upstream | 0.37 |
 | [[bld_memory_router]] | downstream | 0.37 |

@@ -20,9 +20,6 @@ density_score: 0.92
 related:
   - env-config-builder
   - bld_schema_env_config
-  - p11_qg_kind_builder
-  - n00_env_config_manifest
-  - bld_knowledge_card_env_config
 ---
 ## Quality Gate
 

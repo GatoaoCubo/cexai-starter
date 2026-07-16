@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - learning-record-builder
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_learning_record
 ---
 
 # learning-record-builder Sub-Agent

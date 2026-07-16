@@ -32,9 +32,7 @@ keywords:
 density_score: 0.90
 related:
   - router-builder
-  - p03_ins_router
   - bld_schema_router
-  - p11_qg_router
   - bld_architecture_router
 ---
 # Domain Knowledge: router
@@ -92,7 +90,5 @@ A router is a dense rule table that maps task patterns to agent_group or agent d
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[router-builder]] | related | 0.58 |
-| [[p03_ins_router]] | related | 0.58 |
 | [[bld_schema_router]] | downstream | 0.51 |
-| [[p11_qg_router]] | downstream | 0.50 |
 | [[bld_architecture_router]] | downstream | 0.46 |

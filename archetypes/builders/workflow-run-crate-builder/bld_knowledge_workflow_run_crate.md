@@ -18,10 +18,7 @@ keywords: [workflow_run_crate construction, workflow_run_crate, builder, knowled
 density_score: 0.85
 related:
   - workflow-run-crate-builder
-  - p10_qg_workflow_run_crate
   - bld_tools_workflow_run_crate
-  - p10_lr_workflow_run_crate_builder
-  - bld_collaboration_workflow_run_crate
 ---
 ## Domain Overview
 RO-Crate (Research Object Crate) is a community specification for packaging research data with structured metadata, built on schema.org and JSON-LD. The Workflow Run Crate profile (stable as of 2025) extends RO-Crate to document the execution provenance of computational workflows: which inputs were used, which workflow ran, what outputs were produced, who executed it (ORCID), and what software environment was active.
@@ -86,7 +83,4 @@ Developed as part of the EuroScienceGateway project (Horizon Europe), Workflow R
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[workflow-run-crate-builder]] | downstream | 0.71 |
-| [[p10_qg_workflow_run_crate]] | downstream | 0.63 |
 | [[bld_tools_workflow_run_crate]] | downstream | 0.60 |
-| [[p10_lr_workflow_run_crate_builder]] | downstream | 0.57 |
-| [[bld_collaboration_workflow_run_crate]] | downstream | 0.56 |

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [pitch_deck construction, output template pitch deck, pitch_deck, builder, output_template, pain point, why now, market size, business model, revenue stream]
 density_score: 0.85
 related:
-  - bld_instruction_pitch_deck
-  - kc_webinar_script
   - pitch-deck-builder
-  - p01_kc_slide_generation
-  - bld_knowledge_card_pitch_deck
 ---
 <!-- Pitch deck output template. 10-slide Sequoia structure. Replace all `{{vars}}`. -->
 ```markdown
@@ -108,8 +104,4 @@ Notable milestones: {{milestones}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_pitch_deck]] | upstream | 0.45 |
-| [[kc_webinar_script]] | upstream | 0.44 |
 | [[pitch-deck-builder]] | related | 0.42 |
-| [[p01_kc_slide_generation]] | upstream | 0.38 |
-| [[bld_knowledge_card_pitch_deck]] | upstream | 0.37 |

@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_tools_slo_definition
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_rules_slo_definition
-  - bld_manifest_slo_definition
 ---
 
 # slo-definition-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[bld_tools_slo_definition]] | related | 0.35 |
 | [[kind-builder]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
-| [[bld_rules_slo_definition]] | related | 0.30 |
-| [[bld_manifest_slo_definition]] | related | 0.30 |

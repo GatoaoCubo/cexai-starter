@@ -19,12 +19,6 @@ specializes, crew role
 acts, identity  
 the]
 density_score: 0.85
-related:
-  - p10_mem_referral_program_builder
-  - p11_qg_referral_program
-  - bld_knowledge_card_referral_program
-  - bld_instruction_referral_program
-  - n00_referral_program_manifest
 ---
 ## Identity
 
@@ -67,12 +61,3 @@ ALWAYS INCLUDE viral coefficient formulas and tiered reward thresholds
 ALWAYS DEFINE referral window durations and redemption cooldown periods  
 NEVER USE vague terms like "generous rewards" or "flexible rules"  
 NEVER INCLUDE experimental configurations (e.g., beta features, test cohorts)
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p10_mem_referral_program_builder]] | upstream | 0.50 |
-| [[p11_qg_referral_program]] | related | 0.50 |
-| [[bld_knowledge_card_referral_program]] | upstream | 0.50 |
-| [[bld_instruction_referral_program]] | upstream | 0.49 |
-| [[n00_referral_program_manifest]] | related | 0.45 |

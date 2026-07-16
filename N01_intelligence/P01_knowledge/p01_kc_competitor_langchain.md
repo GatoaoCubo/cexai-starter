@@ -19,9 +19,7 @@ tldr: "LangChain (124K stars, $1.25B valuation) is the incumbent agent engineeri
 keywords: [langchain, langgraph, deep agents, agent engineering, open-source, python, javascript, typescript]
 related:
  - p01_kc_growth_casestudy_organic
- - cm_cex_vs_landscape
  - p01_kc_competitor_crewai
- - p01_kc_atom_06_langchain_langgraph
  - p01_kc_competitor_llamaindex
 ---
 

@@ -17,12 +17,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [finetune_config construction, instruction finetune config, phase process, research base model, compose all sections, validate gates, finetune_config, builder, instruction, quality: null]
 density_score: 0.90
-related:
-  - bld_instruction_training_method
-  - bld_instruction_eval_dataset
-  - bld_instruction_retriever_config
-  - bld_instruction_experiment_config
-  - bld_instruction_chunk_strategy
 ---
 # Instructions: How to Produce a finetune_config
 ## Phase 1: RESEARCH
@@ -61,12 +55,3 @@ related:
 11. Confirm body <= 4096 bytes
 12. Cross-check: is this a training specification? If this configures runtime API routing it belongs in `model_provider`. If it documents a trained model it belongs in `model_card`. If it starts a provider it belongs in `boot_config`. This artifact specifies HOW to train/adapt, not HOW to serve.
 13. If score < 8.0: revise in the same pass before outputting
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_training_method]] | sibling | 0.47 |
-| [[bld_instruction_eval_dataset]] | sibling | 0.39 |
-| [[bld_instruction_retriever_config]] | sibling | 0.38 |
-| [[bld_instruction_experiment_config]] | sibling | 0.38 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.38 |

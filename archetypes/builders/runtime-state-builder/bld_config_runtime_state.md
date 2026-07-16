@@ -30,7 +30,6 @@ density_score: 0.90
 related:
   - bld_tools_runtime_state
   - bld_schema_runtime_state
-  - bld_collaboration_runtime_state
   - bld_config_session_state
   - bld_memory_runtime_state
 ---

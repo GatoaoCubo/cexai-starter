@@ -28,10 +28,7 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, enum def construction, config enum def, enum_def, builder, examples, "p06_enum_{slug}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_enum_def
-  - p10_lr_enum_def_builder
   - bld_schema_enum_def
-  - bld_instruction_enum_def
   - enum-def-builder
 ---
 # Config: enum_def Production Rules
@@ -84,7 +81,6 @@ Rule: all values within a single enum MUST use the same case convention.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_enum_def]] | upstream | 0.49 |
-| [[p10_lr_enum_def_builder]] | downstream | 0.47 |
 | [[bld_schema_enum_def]] | upstream | 0.38 |
 | [[bld_prompt_enum_def]] | upstream | 0.38 |
 | [[enum-def-builder]] | upstream | 0.35 |

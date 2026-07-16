@@ -29,12 +29,6 @@ keywords:
   - "provider integration completeness"
   - "fail condition"
 density_score: 0.85
-related:
-  - p04_qg_tts_provider
-  - p06_qg_api_reference
-  - p11_qg_content_filter
-  - p01_qg_reranker_config
-  - p09_qg_vad_config
 ---
 ## Quality Gate
 

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [benchmark_suite construction, quality gate benchmark suite, benchmark_suite, builder, quality_gate, quality gate, fail condition]
 density_score: 0.85
-related:
-  - p09_qg_marketplace_app_manifest
-  - p11_qg_usage_report
-  - p07_qg_eval_framework
-  - p07_qg_reward_model
-  - p07_qg_cohort_analysis
 ---
 ## Quality Gate
 

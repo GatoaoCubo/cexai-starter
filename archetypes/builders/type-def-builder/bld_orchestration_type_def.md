@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [type def construction, collaboration type def, type_def, builder, examples, "### crew: full spec layer bootstrap", my role, crew compositions, domain type modeling, full spec layer bootstrap]
 density_score: 0.90
 related:
-  - bld_collaboration_validation_schema
   - type-def-builder
-  - bld_collaboration_validator
-  - bld_collaboration_enum_def
-  - n00_type_def_manifest
 ---
 # Collaboration: type-def-builder
 ## My Role in Crews

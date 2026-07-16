@@ -20,10 +20,6 @@ tools, validation tools
 tools, regex validation tools]
 density_score: 0.85
 related:
-  - bld_collaboration_conformity_assessment
-  - bld_instruction_conformity_assessment
-  - bld_manifest_conformity_assessment
-  - bld_knowledge_card_conformity_assessment
   - bld_tools_personality
 ---
 # Conformity Assessment Builder -- Tools
@@ -117,8 +113,4 @@ git log --oneline -1
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_conformity_assessment]] | downstream | 0.34 |
-| [[bld_instruction_conformity_assessment]] | upstream | 0.33 |
-| [[bld_manifest_conformity_assessment]] | downstream | 0.32 |
-| [[bld_knowledge_card_conformity_assessment]] | upstream | 0.32 |
 | [[bld_tools_personality]] | related | 0.31 |

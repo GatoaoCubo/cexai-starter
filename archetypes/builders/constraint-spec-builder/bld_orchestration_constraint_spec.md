@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [constraint spec construction, collaboration constraint spec, constraint_spec, builder, examples, "### crew: prompt engineering", my role, crew compositions, structured generation, prompt engineering]
 density_score: 0.90
 related:
-  - bld_collaboration_prompt_version
-  - bld_collaboration_output_validator
   - constraint-spec-builder
-  - p10_lr_constraint_spec_builder
   - bld_config_constraint_spec
 ---
 # Collaboration: constraint-spec-builder
@@ -80,5 +77,4 @@ None — independent builder (layer 0).
 | [[bld_orchestration_prompt_version]] | sibling | 0.51 |
 | [[bld_orchestration_output_validator]] | sibling | 0.50 |
 | [[constraint-spec-builder]] | upstream | 0.40 |
-| [[p10_lr_constraint_spec_builder]] | upstream | 0.37 |
 | [[bld_config_constraint_spec]] | upstream | 0.34 |

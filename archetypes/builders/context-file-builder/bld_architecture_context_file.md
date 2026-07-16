@@ -18,9 +18,7 @@ keywords: [and architectural position, workspace instruction auto-injection, con
 density_score: 0.91
 related:
   - kc_context_file
-  - n00_context_file_manifest
   - context-file-builder
-  - bld_knowledge_card_context_file
   - ctx_{{scope}}
 ---
 # Architecture: context_file in the CEX

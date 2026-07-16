@@ -18,9 +18,7 @@ title: Knowledge Card ISO - webhook
 related:
   - webhook-builder
   - bld_architecture_webhook
-  - p01_kc_webhook
   - bld_memory_webhook
-  - bld_collaboration_webhook
 ---
 # Knowledge Card: webhook
 ## Core Concept
@@ -83,6 +81,4 @@ After max_attempts exhausted: log full payload + error, emit to dead-letter queu
 |----------|-------------|-------|
 | [[webhook-builder]] | upstream | 0.54 |
 | [[bld_architecture_webhook]] | upstream | 0.51 |
-| [[p01_kc_webhook]] | sibling | 0.49 |
 | [[bld_memory_webhook]] | related | 0.42 |
-| [[bld_collaboration_webhook]] | upstream | 0.39 |

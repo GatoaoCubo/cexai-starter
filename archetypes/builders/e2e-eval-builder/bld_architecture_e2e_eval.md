@@ -18,10 +18,6 @@ keywords: [component map of e, and architectural position, e eval construction, 
 density_score: 0.90
 related:
   - e2e-eval-builder
-  - n00_e2e_eval_manifest
-  - p01_kc_e2e_eval
-  - p11_qg_e2e_eval
-  - bld_collaboration_e2e_eval
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -75,7 +71,3 @@ golden_test (P07) --independent-- e2e_eval (golden tests reference single artifa
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[e2e-eval-builder]] | upstream | 0.63 |
-| [[n00_e2e_eval_manifest]] | upstream | 0.58 |
-| [[p01_kc_e2e_eval]] | upstream | 0.55 |
-| [[p11_qg_e2e_eval]] | downstream | 0.52 |
-| [[bld_collaboration_e2e_eval]] | downstream | 0.48 |

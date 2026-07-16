@@ -32,10 +32,8 @@ keywords:
 density_score: 0.90
 related:
   - parser-builder
-  - p03_ins_parser
   - bld_schema_parser
   - bld_memory_parser
-  - p01_kc_parser
 ---
 # Domain Knowledge: parser
 ## Executive Summary
@@ -98,7 +96,6 @@ Parsers are data extraction artifacts that convert raw, semi-structured, or unst
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[parser-builder]] | downstream | 0.55 |
-| [[p03_ins_parser]] | downstream | 0.47 |
 | [[bld_schema_parser]] | downstream | 0.44 |
 | [[bld_memory_parser]] | downstream | 0.42 |
 | [[kc_parser]] | sibling | 0.42 |

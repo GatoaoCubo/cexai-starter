@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - e2e-eval-builder
-  - p10_lr_e2e_eval_builder
-  - bld_instruction_golden_test
-  - bld_instruction_action_prompt
-  - bld_knowledge_card_e2e_eval
 ---
 # Instructions: How to Produce an e2e_eval
 ## Phase 1: RESEARCH
@@ -93,7 +89,3 @@ python _tools/cex_skill_loader.py --verify e2e
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[e2e-eval-builder]] | downstream | 0.42 |
-| [[p10_lr_e2e_eval_builder]] | downstream | 0.41 |
-| [[bld_instruction_golden_test]] | sibling | 0.39 |
-| [[bld_instruction_action_prompt]] | sibling | 0.37 |
-| [[bld_knowledge_card_e2e_eval]] | upstream | 0.35 |

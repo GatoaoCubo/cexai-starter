@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [learning record construction, collaboration learning record, learning_record, builder, examples, "### crew: knowledge upgrade", "### crew: agent improvement loop", my role, crew compositions, execution review]
 density_score: 0.90
 related:
-  - bld_collaboration_pattern
   - learning-record-builder
-  - bld_collaboration_knowledge_card
-  - bld_collaboration_mental_model
-  - bld_collaboration_runtime_state
 ---
 # Collaboration: learning-record-builder
 ## My Role in Crews

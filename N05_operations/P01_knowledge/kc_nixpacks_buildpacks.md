@@ -28,16 +28,6 @@ keywords:
   - "| | node.js |"
   - "| | go |"
   - "| | ruby |"
-related:
-  - p01_kc_nixpacks_buildpacks
-  - p01_kc_deploy_paas
-  - p06_is_railway_toml_n05
-  - bld_sp_tools_software_project
-  - p02_agent_software_project_manifest
-  - p05_oval_railway_toml_n05
-  - p01_kc_ruff_uv
-  - bld_sp_output_template_software_project
-  - n05_readme_install
 ---
 
 # Nixpacks & Railpack — Build Configuration

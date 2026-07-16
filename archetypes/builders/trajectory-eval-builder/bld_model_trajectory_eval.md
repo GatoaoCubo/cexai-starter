@@ -20,11 +20,7 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_collaboration_trajectory_eval
-  - n00_trajectory_eval_manifest
-  - kc_trajectory_eval
   - reward-model-builder
-  - bld_collaboration_agent
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER assume environment perfection; account for partial observability and noise
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_trajectory_eval]] | downstream | 0.38 |
-| [[n00_trajectory_eval_manifest]] | related | 0.33 |
-| [[kc_trajectory_eval]] | upstream | 0.30 |
 | [[reward-model-builder]] | sibling | 0.29 |
-| [[bld_collaboration_agent]] | downstream | 0.28 |

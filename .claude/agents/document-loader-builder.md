@@ -4,11 +4,8 @@ description: "Builds ONE document_loader artifact via 8F pipeline. Loads documen
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - document_loader-builder
   - system-prompt-builder
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # document-loader-builder Sub-Agent
@@ -88,6 +85,5 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | p03_sp_builder_nucleus | related | 0.32 |
 | kind-builder | related | 0.31 |
-| [[document_loader-builder]] | related | 0.27 |
 | [[system-prompt-builder]] | related | 0.27 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.27 |

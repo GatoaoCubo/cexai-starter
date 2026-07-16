@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - signal-builder
   - bld_schema_signal
-  - p11_qg_signal
-  - p03_ins_signal_builder
-  - p01_kc_signal
 ---
 # Domain Knowledge: signal
 ## Executive Summary
@@ -80,6 +77,4 @@ Signals are atomic JSON runtime notifications — the smallest status exchange u
 |----------|-------------|-------|
 | [[signal-builder]] | related | 0.53 |
 | [[bld_schema_signal]] | upstream | 0.53 |
-| [[p11_qg_signal]] | upstream | 0.48 |
-| [[p03_ins_signal_builder]] | upstream | 0.48 |
 | [[kc_signal]] | sibling | 0.44 |

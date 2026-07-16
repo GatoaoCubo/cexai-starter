@@ -18,12 +18,6 @@ updated: "2026-04-17"
 8f: "F8_collaborate"
 keywords: [circuit breaker construction, collaboration circuit breaker, dependency fault isolation specialist, circuit_breaker, builder, collaboration, "### crew: production hardening", "### crew: multi-provider resilience", my role, crew compositions]
 density_score: 0.90
-related:
-  - bld_collaboration_retry_policy
-  - bld_collaboration_backpressure_policy
-  - bld_collaboration_runtime_rule
-  - bld_collaboration_rate_limit_config
-  - bld_collaboration_fallback_chain
 ---
 # Collaboration: circuit-breaker-builder
 
@@ -83,12 +77,3 @@ None -- independent builder (layer 0). Circuit breakers can be defined standalon
 | runtime-rule-builder | Retry policy may consult circuit state before retrying |
 | monitor-builder | Monitors track CLOSED/OPEN/HALF-OPEN state transition events |
 | backpressure-policy-builder | Backpressure may read circuit state to decide shedding policy |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_retry_policy]] | sibling | 0.48 |
-| [[bld_collaboration_backpressure_policy]] | sibling | 0.46 |
-| [[bld_collaboration_runtime_rule]] | sibling | 0.41 |
-| [[bld_collaboration_rate_limit_config]] | sibling | 0.37 |
-| [[bld_collaboration_fallback_chain]] | sibling | 0.30 |

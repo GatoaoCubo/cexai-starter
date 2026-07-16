@@ -34,9 +34,7 @@ density_score: 0.85
 related:
   - bld_architecture_permission
   - permission-builder
-  - n00_permission_manifest
   - p09_perm_{{SCOPE_SLUG}}
-  - bld_collaboration_permission
 ---
 ## Quality Gate
 

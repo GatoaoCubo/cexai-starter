@@ -22,9 +22,6 @@ density_score: 0.85
 related:
   - eval-framework-builder
   - eval-metric-builder
-  - bld_knowledge_card_benchmark_suite
-  - p10_mem_benchmark_suite_builder
-  - bld_collaboration_memory_benchmark
 ---
 ## Identity
 
@@ -73,6 +70,3 @@ NEVER LOCK TASKS INTO A SINGLE TECHNOLOGY STACK OR DATA FORMAT.
 |----------|-------------|-------|
 | [[eval-framework-builder]] | sibling | 0.48 |
 | [[eval-metric-builder]] | sibling | 0.43 |
-| [[bld_knowledge_card_benchmark_suite]] | upstream | 0.39 |
-| [[p10_mem_benchmark_suite_builder]] | downstream | 0.38 |
-| [[bld_collaboration_memory_benchmark]] | downstream | 0.35 |

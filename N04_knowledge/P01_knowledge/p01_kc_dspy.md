@@ -20,7 +20,6 @@ density_score: 0.89
 related:
   - p01_kc_langchain
   - p01_kc_crewai
-  - p01_kc_prompt_compiler
   - prompt-compiler-builder
 ---
 

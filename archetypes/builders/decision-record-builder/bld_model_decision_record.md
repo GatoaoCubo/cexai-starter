@@ -33,10 +33,6 @@ parent: null
 8f: "F1_constrain"
 related:
   - bld_architecture_decision_record
-  - bld_knowledge_card_decision_record
-  - bld_collaboration_decision_record
-  - bld_instruction_decision_record
-  - p01_kc_decision_record
 ---
 ## Identity
 

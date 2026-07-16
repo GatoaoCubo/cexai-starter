@@ -32,10 +32,6 @@ keywords: [memory approval request, adr conflict, scaffold vs lean registration,
 density_score: 0.88
 llm_function: INJECT
 related:
-  - bld_knowledge_card_approval_request
-  - p01_kc_approval_request
-  - adr_v03_governance_taxonomy
-  - p11_qg_approval_request
   - bld_config_approval_request
 ---
 ## Summary
@@ -122,8 +118,4 @@ python _tools/cex_score.py --apply --verbose p10_lr_approval_request_builder.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_approval_request]] | upstream | 0.45 |
-| [[p01_kc_approval_request]] | downstream | 0.40 |
-| [[adr_v03_governance_taxonomy]] | upstream (the conflicting prior decision) | 0.50 |
-| [[p11_qg_approval_request]] | downstream | 0.32 |
 | [[bld_config_approval_request]] | upstream | 0.30 |

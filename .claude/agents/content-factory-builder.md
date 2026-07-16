@@ -4,11 +4,7 @@ description: "Builds ONE content_factory artifact via 8F pipeline. Loads content
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - social-publisher-builder
-  - p01_kc_content_factory
 ---
 
 # content-factory-builder Sub-Agent
@@ -90,8 +86,4 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.33 |
 | [[kind-builder]] | related | 0.32 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |
-| [[social-publisher-builder]] | related | 0.27 |
-| [[p01_kc_content_factory]] | related | 0.27 |

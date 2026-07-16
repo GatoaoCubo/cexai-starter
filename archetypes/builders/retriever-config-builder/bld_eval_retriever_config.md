@@ -28,11 +28,7 @@ keywords:
   - "kind: retriever_config"
 density_score: 0.90
 related:
-  - p11_qg_chunk_strategy
   - retriever-config-builder
-  - bld_instruction_retriever_config
-  - p11_qg_output_validator
-  - p11_qg_constraint_spec
 ---
 ## Quality Gate
 

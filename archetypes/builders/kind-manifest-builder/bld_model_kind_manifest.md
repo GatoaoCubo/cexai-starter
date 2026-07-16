@@ -26,8 +26,6 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_knowledge_card_kind_manifest
-  - bld_instruction_kind_manifest
   - kind-builder
   - knowledge-card-builder
   - output-template-builder
@@ -114,8 +112,6 @@ density_score: 1.0
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_kind_manifest]] | upstream | 0.44 |
-| [[bld_instruction_kind_manifest]] | upstream | 0.42 |
 | [[kind-builder]] | sibling (reflexive-case source) | 0.38 |
 | [[knowledge-card-builder]] | related (former mis-type contrast) | 0.34 |
 | [[output-template-builder]] | related (same resolution shape, R-298/299) | 0.30 |

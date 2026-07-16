@@ -18,10 +18,6 @@ keywords: [component map of axiom, and architectural position, axiom constructio
 density_score: 0.90
 related:
   - axiom-builder
-  - bld_collaboration_axiom
-  - bld_instruction_axiom
-  - p01_kc_axiom
-  - tpl_axiom
 ---
 # Architecture: axiom in the CEX
 ## Component Inventory

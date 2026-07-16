@@ -21,7 +21,6 @@ related:
   - bld_architecture_approval_request
   - bld_config_approval_request
   - bld_schema_approval_request
-  - adr_v03_governance_taxonomy
 ---
 
 # Tools: approval-request-builder
@@ -96,4 +95,3 @@ python _tools/cex_score.py --apply bld-tools-approval-request.md
 | [[bld_architecture_approval_request]] | sibling | 0.52 |
 | [[bld_config_approval_request]] | sibling | 0.50 |
 | [[bld_schema_approval_request]] | sibling | 0.48 |
-| [[adr_v03_governance_taxonomy]] | related (scope-defining ADR) | 0.40 |

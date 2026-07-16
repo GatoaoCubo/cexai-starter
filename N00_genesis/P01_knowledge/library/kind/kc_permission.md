@@ -21,8 +21,6 @@ related:
   - bld_memory_permission
   - permission-builder
   - bld_architecture_permission
-  - n00_permission_manifest
-  - p11_qg_permission
 ---
 
 # Permission
@@ -98,4 +96,3 @@ law, feature_flag --> [permission] --> agent_card, runtime_rule, path_config
 | [[permission-builder]] | related | 0.45 |
 | [[bld_architecture_permission]] | upstream | 0.45 |
 | n00_permission_manifest | sibling | 0.44 |
-| [[p11_qg_permission]] | downstream | 0.42 |

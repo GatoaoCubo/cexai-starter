@@ -19,9 +19,6 @@ density_score: 0.90
 related:
   - memory-architecture-builder
   - bld_tools_consolidation_policy
-  - bld_collaboration_memory_type
-  - bld_knowledge_card_memory_architecture
-  - bld_instruction_memory_architecture
 ---
 ## CEX Production Tools
 

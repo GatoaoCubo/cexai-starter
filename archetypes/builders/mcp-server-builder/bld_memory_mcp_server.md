@@ -22,10 +22,6 @@ for, json schema, complete json]
 density_score: 0.90
 related:
   - mcp-server-builder
-  - p01_kc_mcp_server
-  - bld_knowledge_card_mcp_server
-  - bld_collaboration_mcp_server
-  - p03_ins_mcp_server
 ---
 # Memory: mcp-server-builder
 ## Summary
@@ -87,4 +83,3 @@ python _tools/cex_score.py --apply bld-memory-mcp-server.md
 | [[kc_mcp_server]] | upstream | 0.51 |
 | [[bld_knowledge_mcp_server]] | upstream | 0.51 |
 | [[bld_orchestration_mcp_server]] | upstream | 0.48 |
-| [[p03_ins_mcp_server]] | upstream | 0.47 |

@@ -44,9 +44,6 @@ llm_function: REASON
 related:
   - parser-builder
   - bld_schema_parser
-  - bld_knowledge_card_parser
-  - p11_qg_parser
-  - bld_instruction_input_schema
 ---
 ## Context
 The parser-builder receives a **raw input sample** and a **list of target fields**, then produces a `parser` artifact encoding how to extract structured data from that input format.
@@ -113,5 +110,4 @@ The parser-builder receives a **raw input sample** and a **list of target fields
 | [[parser-builder]] | downstream | 0.46 |
 | [[bld_schema_parser]] | downstream | 0.45 |
 | [[bld_knowledge_parser]] | upstream | 0.39 |
-| [[p11_qg_parser]] | downstream | 0.37 |
 | [[bld_prompt_input_schema]] | sibling | 0.37 |

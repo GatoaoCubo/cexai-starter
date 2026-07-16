@@ -17,10 +17,7 @@ tldr: "F1 CONSTRAIN structural architecture for curation_nudge"
 keywords: [curation_nudge construction, curation nudge, architecture, curation_nudge, builder, memory, component relationships, data flow, pillar placement]
 density_score: 0.89
 related:
- - n00_curation_nudge_manifest
- - kc_curation_nudge
  - curation-nudge-builder
- - bld_kc_curation_nudge
  - cn_{{trigger}}
 ---
 ## Position in CEX Architecture
@@ -114,8 +111,5 @@ Lives in nucleus P11 directories or shared `.cex/nudges/` for cross-nucleus use.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_curation_nudge_manifest]] | related | 0.58 |
-| [[kc_curation_nudge]] | upstream | 0.52 |
 | [[curation-nudge-builder]] | related | 0.49 |
-| [[bld_kc_curation_nudge]] | upstream | 0.49 |
 | [\[cn_`{{trigger}}`\]] | related | 0.48 |

@@ -28,10 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, spawn config construction, config spawn config, spawn_config, builder, examples, "p12_spawn_{mode_slug}.yaml"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_spawn_config
-  - p01_kc_spawn_config
-  - bld_output_template_spawn_config
-  - p11_qg_spawn_config
   - spawn-config-builder
 ---
 # Config: spawn_config Production Rules
@@ -77,6 +73,4 @@ Rule: id MUST equal filename stem.
 |----------|-------------|-------|
 | [[bld_knowledge_spawn_config]] | downstream | 0.36 |
 | [[kc_spawn_config]] | downstream | 0.36 |
-| [[bld_output_template_spawn_config]] | upstream | 0.33 |
-| [[p11_qg_spawn_config]] | downstream | 0.32 |
 | [[spawn-config-builder]] | downstream | 0.30 |

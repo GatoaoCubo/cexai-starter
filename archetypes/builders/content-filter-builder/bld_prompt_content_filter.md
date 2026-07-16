@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [content_filter construction, instruction content filter, content_filter, builder, instruction, filter_id, policy, rules, priority, related artifacts]
 density_score: 0.85
 related:
-  - bld_instruction_playground_config
-  - bld_instruction_judge_config
   - content-filter-builder
-  - bld_instruction_eval_framework
-  - bld_instruction_search_strategy
 ---
 ## Phase 1: RESEARCH  
 

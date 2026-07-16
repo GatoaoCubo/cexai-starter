@@ -29,12 +29,6 @@ linked_artifacts:
   related: [n02_kc_visual_hierarchy_principles, n02_kc_color_theory_applied]
 density_score: 0.91
 data_source: fonts.google.com/knowledge + typescale.com + refactoringui.com + internal_distillation
-related:
-  - p01_kc_responsive_layout_systems
-  - p01_kc_typography_web
-  - p06_is_responsive_breakpoints_n02
-  - n06_output_pricing_page
-  - p05_oval_email_template_n02
 ---
 
 # Web Typography — Scale, Pairing & Performance

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [discovery_questions construction, output template discovery questions, discovery_questions, builder, output_template, pain points, decision criteria, discovery questions, solution fit, expected insight]
 density_score: 0.85
 related:
-  - bld_instruction_discovery_questions
-  - bld_knowledge_card_discovery_questions
   - discovery-questions-builder
-  - p10_mem_discovery_questions_builder
-  - kc_discovery_questions
 ---
 ```yaml
 ---
@@ -84,8 +80,4 @@ target_audience: "{{target_audience}}"
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_discovery_questions]] | upstream | 0.37 |
-| [[bld_knowledge_card_discovery_questions]] | upstream | 0.32 |
 | [[discovery-questions-builder]] | upstream | 0.32 |
-| [[p10_mem_discovery_questions_builder]] | downstream | 0.31 |
-| [[kc_discovery_questions]] | upstream | 0.28 |

@@ -15,12 +15,6 @@ tldr: "Ordered context sources for F3 INJECT in slo_definition builds."
 8f: "F3_inject"
 keywords: [context sources, slo_definition builder, inject in slo_definition builds, context_sources, slo_definition, injection order, knowledge card, quality gate, configuration checklist, archetypes builders]
 density_score: null
-related:
-  - bld_context_sources_deployment_manifest
-  - bld_context_sources_canary_config
-  - bld_context_sources_lineage_record
-  - bld_context_sources_saga
-  - bld_context_sources_value_object
 ---
 # Context Sources: slo_definition Builder
 
@@ -55,12 +49,3 @@ cross_refs_verified: true
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope {BUILDER}
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_context_sources_deployment_manifest]] | sibling | 0.50 |
-| [[bld_context_sources_canary_config]] | sibling | 0.48 |
-| [[bld_context_sources_lineage_record]] | sibling | 0.46 |
-| [[bld_context_sources_saga]] | sibling | 0.39 |
-| [[bld_context_sources_value_object]] | sibling | 0.37 |

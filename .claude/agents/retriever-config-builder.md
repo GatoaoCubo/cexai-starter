@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - retriever-config-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
-  - p06_td_cex_artifact_type_n03
 ---
 
 # retriever-config-builder Sub-Agent

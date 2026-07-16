@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [crew_template construction, learning record crew template, crew_template, builder, learning_record, composable, crewai, peer_reviewer, p11_qg_*.md, sequential]
 density_score: 0.87
 related:
-  - bld_instruction_crew_template
   - crew-template-builder
-  - p11_qg_crew_template
-  - bld_knowledge_card_crew_template
   - bld_schema_crew_template
 ---
 ## Observation
@@ -47,6 +44,5 @@ Treat crew_template as a pure blueprint: reference role_assignment by id, declar
 |----------|-------------|-------|
 | [[bld_prompt_crew_template]] | upstream | 0.45 |
 | [[crew-template-builder]] | downstream | 0.39 |
-| [[p11_qg_crew_template]] | downstream | 0.39 |
 | [[bld_knowledge_crew_template]] | upstream | 0.28 |
 | [[bld_schema_crew_template]] | upstream | 0.26 |

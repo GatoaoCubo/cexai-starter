@@ -19,9 +19,6 @@ this, fail condition, scoring guide]
 density_score: 0.92
 related:
   - bld_schema_bias_audit
-  - bld_knowledge_card_bias_audit
-  - n06_audit_bias_audit_builder
-  - bld_output_template_bias_audit
   - bias-audit-builder
 ---
 ## Quality Gate

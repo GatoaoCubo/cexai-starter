@@ -26,9 +26,7 @@ tldr: "High-fidelity dense embedder for N04 retrieval, graph augmentation, and m
 keywords: [text-embedding-3-large, dense retrieval, vector embedding, cosine similarity, knowledge gluttony, semantic geometry, reranking, graph traversal]
 density_score: 1.0
 related:
-  - bld_collaboration_knowledge_graph
   - kno_embedder_provider_n02
-  - p01_kc_embedder_provider
   - kno_embedder_provider_n03
   - kno_embedder_provider_n06
 slots:

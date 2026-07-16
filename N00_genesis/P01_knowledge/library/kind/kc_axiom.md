@@ -19,10 +19,6 @@ feeds_kinds: [axiom]
 density_score: null
 related:
   - axiom-builder
-  - bld_knowledge_card_axiom
-  - p10_lr_axiom-builder
-  - bld_collaboration_axiom
-  - n00_axiom_manifest
 ---
 
 # Axiom
@@ -98,6 +94,5 @@ An axiom is a fundamental, immutable principle that forms part of an entity's de
 |----------|-------------|-------|
 | [[axiom-builder]] | downstream | 0.56 |
 | [[bld_knowledge_axiom]] | sibling | 0.55 |
-| [[p10_lr_axiom-builder]] | downstream | 0.51 |
 | [[bld_orchestration_axiom]] | downstream | 0.50 |
 | n00_axiom_manifest | sibling | 0.49 |

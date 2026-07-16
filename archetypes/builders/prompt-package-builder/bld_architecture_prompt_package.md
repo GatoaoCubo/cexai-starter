@@ -18,9 +18,7 @@ keywords: [component map of prompt_package, mode b decompose, stage 1, stage 2, 
 density_score: 0.90
 related:
   - prompt-package-builder
-  - bld_knowledge_card_prompt_package
   - bld_memory_prompt_package
-  - p03_ins_prompt_package
   - bld_orchestration_prompt_package
 ---
 # Architecture: prompt_package in the CEX
@@ -86,5 +84,4 @@ prompt_package  --signals-->      Stage 3 gate/validate/commit/signal
 | [[prompt-package-builder]] | upstream | 0.53 |
 | [[bld_knowledge_prompt_package]] | upstream | 0.50 |
 | [[bld_memory_prompt_package]] | downstream | 0.49 |
-| [[p03_ins_prompt_package]] | upstream | 0.45 |
 | [[bld_orchestration_prompt_package]] | upstream | 0.42 |

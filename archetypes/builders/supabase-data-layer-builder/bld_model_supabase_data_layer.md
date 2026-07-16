@@ -20,9 +20,6 @@ tldr: "Supabase Data Layer prompt: agent definition, personality, and behavioral
 8f: "F3_inject"
 keywords: [supabase data layer prompt, agent definition, and behavioral constraints, builder manifest, supabase module, edge functions, edge runtime]
 related:
-  - p12_wf_supabase_setup
-  - bld_knowledge_card_supabase_data_layer
-  - bld_instruction_supabase_data_layer
   - bld_architecture_supabase_data_layer
   - bld_memory_supabase_data_layer
 ---
@@ -134,8 +131,5 @@ N04 defines schemas, RLS policies, and data flow ??? nuclei follow.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p12_wf_supabase_setup]] | downstream | 0.55 |
-| [[bld_knowledge_card_supabase_data_layer]] | upstream | 0.46 |
-| [[bld_instruction_supabase_data_layer]] | related | 0.42 |
 | [[bld_architecture_supabase_data_layer]] | upstream | 0.41 |
 | [[bld_memory_supabase_data_layer]] | upstream | 0.39 |

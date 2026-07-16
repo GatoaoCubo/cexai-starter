@@ -17,8 +17,6 @@ updated: "2026-07-02"
 keywords: [opportunity_matrix construction, schema opportunity matrix, opportunity_matrix, builder, schema, frontmatter fields, body structure, input contract, output sections, sourcing_confiavel]
 density_score: 0.85
 related:
-  - bld_output_template_opportunity_matrix
-  - bld_instruction_opportunity_matrix
   - roi-calculator-builder
   - research-pipeline-builder
   - scoring-rubric-builder
@@ -78,7 +76,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_opportunity_matrix]] | sibling | 0.55 |
 | [[bld_prompt_opportunity_matrix]] | sibling | 0.50 |
 | [[roi-calculator-builder]] | related | 0.40 |
 | [[research-pipeline-builder]] | related | 0.38 |

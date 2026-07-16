@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [integration_guide construction, output template integration guide, integration_guide, builder, output_template, markdown, example request, related artifacts, downstream, sibling]
 density_score: 0.85
 related:
-  - bld_output_template_api_reference
-  - kc_api_reference
   - bld_schema_api_reference
-  - n00_api_reference_manifest
-  - bld_instruction_api_reference
 ---
 ```markdown
 ```yaml

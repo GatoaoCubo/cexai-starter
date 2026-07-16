@@ -20,9 +20,7 @@ this, validation tools, external classification, use case, comprehend detect tox
 density_score: 0.85
 related:
   - bld_tools_safety_policy
-  - bld_knowledge_card_content_filter
   - content-filter-builder
-  - n06_audit_content_filter_builder
   - kc_content_filter
 ---
 ## Production Tools

@@ -18,10 +18,7 @@ keywords: [team_charter construction, tools team charter, team_charter, builder,
 density_score: 0.85
 related:
   - team-charter-builder
-  - bld_knowledge_card_team_charter
   - kc_team_charter
-  - bld_collaboration_team_charter
-  - p11_fb_team_charter
 ---
 ## Production Tools
 | Tool                  | Purpose                                  | When                          |
@@ -55,4 +52,3 @@ related:
 | [[bld_knowledge_team_charter]] | upstream | 0.43 |
 | [[kc_team_charter]] | upstream | 0.42 |
 | [[bld_orchestration_team_charter]] | downstream | 0.38 |
-| [[p11_fb_team_charter]] | downstream | 0.33 |

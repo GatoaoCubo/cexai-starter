@@ -20,12 +20,6 @@ keywords, crew role
 acts, identity  
 this]
 density_score: 0.85
-related:
-  - kc_graph_rag_config
-  - bld_collaboration_knowledge_graph
-  - n00_graph_rag_config_manifest
-  - p10_mem_graph_rag_config_builder
-  - bld_collaboration_graph_rag_config
 ---
 ## Identity
 
@@ -69,12 +63,3 @@ ALWAYS USE STANDARDIZED CONFIG FORMATS (YAML/JSON) AND VALIDATE AGAINST SCHEMA
 ALWAYS INCLUDE VERSIONING AND DEPENDENCY DECLARATIONS  
 NEVER SPECIFY IMPLEMENTATION DETAILS (E.G., CODE SNIPPETS, API KEYS)  
 NEVER INCLUDE DATA-LEVEL CONTENT (E.G., NODE ATTRIBUTES, DOCUMENT TEXT)
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_graph_rag_config]] | related | 0.65 |
-| [[bld_collaboration_knowledge_graph]] | downstream | 0.53 |
-| [[n00_graph_rag_config_manifest]] | related | 0.46 |
-| [[p10_mem_graph_rag_config_builder]] | downstream | 0.44 |
-| [[bld_collaboration_graph_rag_config]] | downstream | 0.44 |

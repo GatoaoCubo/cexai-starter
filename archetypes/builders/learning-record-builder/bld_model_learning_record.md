@@ -30,10 +30,7 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_learning_record
   - bld_architecture_learning_record
-  - p03_ins_learning_record
-  - p01_kc_learning_record
 ---
 ## Identity
 
@@ -123,5 +120,4 @@ Body sections: Context, Patterns (what worked), Anti-Patterns (what failed), Fai
 |----------|-------------|-------|
 | [[bld_orchestration_learning_record]] | related | 0.45 |
 | [[bld_architecture_learning_record]] | upstream | 0.44 |
-| [[p03_ins_learning_record]] | upstream | 0.43 |
 | [[kc_learning_record]] | related | 0.38 |

@@ -26,10 +26,7 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - bld_output_template_event_stream
   - bld_schema_event_stream
-  - kc_event_stream
-  - bld_instruction_event_stream
   - bld_memory_event_stream
 ---
 ## Quality Gate

@@ -24,7 +24,6 @@ sources:
 related:
   - p02_mm_cex_architecture_n04
   - p01_fse_n07_dispatch
-  - p04_search_n04_knowledge
   - bld_architecture_default
 slots:
   query_context: "<the question this card is recalled to answer>"

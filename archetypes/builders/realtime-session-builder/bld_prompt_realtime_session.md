@@ -17,11 +17,8 @@ updated: "2026-04-13"
 keywords: [realtime_session construction, production process, pick provider, model pair, match codec to transport, configure vad, wire barge-in, mint ephemeral token, realtime_session, builder]
 density_score: 0.90
 related:
-  - bld_output_template_realtime_session
   - bld_schema_realtime_session
   - realtime-session-builder
-  - bld_knowledge_card_realtime_session
-  - p10_mem_realtime_session_builder
 ---
 ## Phase 1: RESEARCH
 
@@ -82,8 +79,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_realtime_session]] | downstream | 0.60 |
 | [[bld_schema_realtime_session]] | downstream | 0.59 |
 | [[realtime-session-builder]] | downstream | 0.55 |
-| [[bld_knowledge_card_realtime_session]] | upstream | 0.53 |
-| [[p10_mem_realtime_session_builder]] | downstream | 0.49 |

@@ -17,9 +17,6 @@ density_score: 0.88
 related:
   - bld_eval_motion_scene
   - bld_memory_motion_scene
-  - um_founder_taste
-  - p01_kc_motion_scene
-  - p06_vs_motion_scene
 ---
 
 # Feedback: motion_scene signals
@@ -30,7 +27,7 @@ related:
 | a11y_pass_first_try | prefers_reduced_motion + poster_frame declared without a rejection loop |
 | token_resolution_clean | all style fields use design_system token keys (no literal values) |
 | leverage_complete | binds_design_system + feeds_kinds + inject_hook + brand_config_relation all set |
-| founder_approved | taste-loop approval of a rendered MP4 -> update [[um_founder_taste]] |
+| founder_approved | taste-loop approval of a rendered MP4 -> update um_founder_taste |
 ## Regression signals (flag)
 | Signal | Meaning |
 |--------|---------|
@@ -49,6 +46,3 @@ pairs. Converge per coordinate region when a round adds no fresh signal.
 |----------|-------------|-------|
 | [[bld_eval_motion_scene]] | upstream | 0.48 |
 | [[bld_memory_motion_scene]] | sibling | 0.42 |
-| [[p01_kc_motion_scene]] | related | 0.42 |
-| [[um_founder_taste]] | related | 0.4 |
-| [[p06_vs_motion_scene]] | upstream | 0.38 |

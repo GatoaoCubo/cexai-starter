@@ -5,9 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - chunk-strategy-builder
-  - bld_collaboration_chunk_strategy
   - kind-builder
-  - p03_sp_builder_nucleus
   - bld_config_chunk_strategy
 ---
 

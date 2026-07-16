@@ -18,9 +18,7 @@ updated: "2026-03-27"
 density_score: 0.91
 related:
   - hook-builder
-  - bld_instruction_hook
   - bld_architecture_hook
-  - bld_knowledge_card_hook
   - bld_schema_hook
 ---
 ## Quality Gate

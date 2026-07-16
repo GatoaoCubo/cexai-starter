@@ -5,10 +5,8 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - reasoning-trace-builder
-  - p01_kc_reasoning_trace
   - bld_tools_reasoning_trace
   - bld_architecture_reasoning_trace
-  - bld_collaboration_reasoning_trace
 ---
 
 # reasoning-trace-builder Sub-Agent
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[reasoning-trace-builder]] | related | 0.39 |
-| [[p01_kc_reasoning_trace]] | related | 0.33 |
 | [[bld_tools_reasoning_trace]] | related | 0.33 |
 | [[bld_architecture_reasoning_trace]] | related | 0.33 |
-| [[bld_collaboration_reasoning_trace]] | related | 0.33 |

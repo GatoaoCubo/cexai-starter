@@ -17,11 +17,7 @@ updated: "2026-04-07"
 keywords: [supervisor construction, tools supervisor, supervisor, builder, examples, production tools, data sources, runtime handoffs, runtime signals, decision manifest]
 density_score: 0.90
 related:
-  - bld_collaboration_supervisor
   - bld_architecture_supervisor
-  - p12_wf_admin_orchestration
-  - bld_instruction_supervisor
-  - p01_kc_orchestration
 ---
 # Tools: supervisor-builder
 ## Production Tools
@@ -59,8 +55,4 @@ no task execution logic in body, wave_topology documented, fallback_per_builder 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_supervisor]] | downstream | 0.38 |
 | [[bld_architecture_supervisor]] | downstream | 0.36 |
-| [[p12_wf_admin_orchestration]] | downstream | 0.35 |
-| [[bld_instruction_supervisor]] | upstream | 0.34 |
-| [[p01_kc_orchestration]] | upstream | 0.33 |

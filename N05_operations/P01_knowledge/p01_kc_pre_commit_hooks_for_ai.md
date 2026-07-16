@@ -20,17 +20,6 @@ keywords:
   - "generated code"
 density_score: 0.92
 updated: "2026-04-13"
-related:
-  - p04_skill_verify
-  - p11_qg_artifact
-  - validate
-  - bld_instruction_function_def
-  - tpl_response_format
-  - bld_instruction_output_validator
-  - p02_agent_code_review
-  - bld_instruction_document_loader
-  - bld_instruction_kind
-  - p03_sp_verification_agent
 ---
 
 # Pre-Commit Hooks for AI-Generated Code
@@ -118,7 +107,6 @@ Primary function: **INJECT**
 |----------|-------------|-------|
 | p04_skill_verify | downstream | 0.23 |
 | p11_qg_artifact | downstream | 0.23 |
-| [[validate]] | downstream | 0.22 |
 | [[bld_prompt_function_def]] | downstream | 0.21 |
 | tpl_response_format | downstream | 0.21 |
 | [[bld_prompt_output_validator]] | downstream | 0.20 |

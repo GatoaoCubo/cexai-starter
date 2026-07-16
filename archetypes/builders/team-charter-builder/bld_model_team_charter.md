@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for team_charter, team_charter construction, type builder team charter, team_charter, builder, type_builder, governance, crew, dag-builder]
 density_score: 0.85
 related:
-  - bld_knowledge_card_team_charter
-  - bld_collaboration_team_charter
   - kc_team_charter
-  - p10_lr_team_charter_builder
   - bld_tools_team_charter
 ---
 ## Identity
@@ -75,5 +72,4 @@ NEVER conflate the charter with the handoff -- the charter is WHAT and WHY; the 
 | [[bld_knowledge_team_charter]] | upstream | 0.55 |
 | [[bld_orchestration_team_charter]] | related | 0.52 |
 | [[kc_team_charter]] | upstream | 0.46 |
-| [[p10_lr_team_charter_builder]] | upstream | 0.42 |
 | [[bld_tools_team_charter]] | upstream | 0.41 |

@@ -18,11 +18,7 @@ keywords: [agent_spec, deployment, autonomous_agent]
 feeds_kinds: [agent_card]
 density_score: null
 related:
-  - p01_kc_agent
-  - p01_kc_mental_model
-  - bld_collaboration_agent
   - agent-card-builder
-  - bld_knowledge_card_agent
 ---
 
 # Agent Card

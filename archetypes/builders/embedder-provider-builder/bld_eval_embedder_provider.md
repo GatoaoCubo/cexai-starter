@@ -17,9 +17,6 @@ updated: "2026-04-06"
 8f: "F7_govern"
 density_score: 0.87
 related:
-  - p03_ins_embedder_provider
-  - p01_emb_openai_text_embedding_3_small
-  - bld_knowledge_card_embedder_provider
   - embedder-provider-builder
   - bld_memory_embedder_provider
 ---

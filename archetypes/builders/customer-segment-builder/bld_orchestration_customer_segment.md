@@ -20,9 +20,6 @@ does]
 density_score: 0.85
 related:
   - customer-segment-builder
-  - bld_collaboration_competitive_matrix
-  - p01_kc_customer_segment
-  - bld_instruction_customer_segment
   - bld_config_customer_segment
 ---
 ## Crew Role  

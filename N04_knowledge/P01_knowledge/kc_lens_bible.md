@@ -31,10 +31,7 @@ linked_artifacts:
 data_source: "N04_knowledge/P01_knowledge/kc_lens_factory.md"
 related:
   - p01_kc_concept_graph
-  - p01_kc_pillar_brief_p02_model_en
   - p02_mm_cex_architecture_n04
-  - p06_td_cex_artifact_type_n03
-  - vocabulary_cex_rosetta
 ---
 
 # Lens: Biblical/Faith

@@ -31,10 +31,6 @@ keywords:
 density_score: 0.85
 related:
   - optimizer-builder
-  - bld_collaboration_optimizer
-  - p11_qg_quality_gate
-  - p03_ins_optimizer
-  - p11_qg_builder
 ---
 ## Quality Gate
 

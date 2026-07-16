@@ -18,10 +18,7 @@ tldr: "CrewAI is the leading role-based multi-agent orchestration framework with
 8f: "F3_inject"
 keywords: [multi-agent orchestration, role-playing agents, collaborative agent teams, event-driven workflows, state management, agentic executions, open source software, fortune 500 adoption]
 related:
-  - p01_kc_crewai_patterns
   - p01_kc_competitor_live_supplement_2026q2
-  - p01_kc_atom_08_crewai
-  - cm_cex_vs_landscape
   - p01_kc_competitor_openai_sdk
 ---
 

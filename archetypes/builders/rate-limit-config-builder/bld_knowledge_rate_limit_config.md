@@ -20,10 +20,7 @@ rate, spec table, provider reference, tier spent]
 density_score: 0.90
 related:
   - rate-limit-config-builder
-  - bld_collaboration_rate_limit_config
-  - p11_qg_rate_limit_config
   - bld_tools_rate_limit_config
-  - bld_instruction_rate_limit_config
 ---
 # Domain Knowledge: rate_limit_config
 
@@ -97,6 +94,5 @@ Rate limit configs declare the quota boundaries for LLM API providers: how many 
 |----------|-------------|-------|
 | [[rate-limit-config-builder]] | downstream | 0.59 |
 | [[bld_orchestration_rate_limit_config]] | downstream | 0.59 |
-| [[p11_qg_rate_limit_config]] | downstream | 0.56 |
 | [[bld_tools_rate_limit_config]] | downstream | 0.53 |
 | [[bld_prompt_rate_limit_config]] | downstream | 0.52 |

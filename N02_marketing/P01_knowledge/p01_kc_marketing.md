@@ -15,11 +15,8 @@ tldr: "Canonical knowledge base for N02: copy theory, campaign structure, channe
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - p04_cli_copy_analyzer_n02
-  - p03_sp_marketing_nucleus
   - agent_card_n02
   - p01_fse_generic_n02
-  - n02_marketing
 ---
 <!-- 8F: F1=knowledge_card/P01 F2=knowledge-card-builder F3=kc_marketing_vocabulary+kc_campaign+nucleus_def_n02 F4=full_domain_coverage F6=structured_tables F7=9.1/10 F8=N02_marketing/P01_knowledge/kc_marketing.md -->
 
@@ -195,4 +192,3 @@ Media kits always include: brand origin, founder story, audience profile, press 
 | p03_sp_marketing_nucleus | downstream | 0.43 |
 | [[agent_card_n02]] | downstream | 0.41 |
 | [[p01_fse_generic_n02]] | related | 0.40 |
-| [[n02_marketing]] | downstream | 0.39 |

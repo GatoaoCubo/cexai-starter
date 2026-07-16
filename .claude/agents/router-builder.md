@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - router-builder
-  - n00_router_manifest
-  - p01_kc_pillar_brief_p02_model_en
   - kind-builder
-  - p03_sp_builder_nucleus
 ---
 
 # router-builder Sub-Agent

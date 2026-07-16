@@ -19,10 +19,6 @@ specializes, conducts section, routing
 keywords]
 density_score: 0.85
 related:
-  - bld_instruction_govtech_vertical
-  - p10_mem_govtech_vertical_builder
-  - p01_qg_govtech_vertical
-  - bld_knowledge_card_govtech_vertical
   - govtech_vertical_digital_services
 ---
 ## Identity
@@ -70,8 +66,4 @@ NEVER GENERALIZE SECURITY OR ACCESSIBILITY REQUIREMENTS.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_govtech_vertical]] | downstream | 0.58 |
-| [[p10_mem_govtech_vertical_builder]] | downstream | 0.51 |
-| [[p01_qg_govtech_vertical]] | downstream | 0.48 |
-| [[bld_knowledge_card_govtech_vertical]] | related | 0.46 |
 | [[govtech_vertical_digital_services]] | related | 0.43 |

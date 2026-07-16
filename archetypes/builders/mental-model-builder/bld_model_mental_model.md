@@ -32,9 +32,6 @@ llm_function: BECOME
 parent: null
 8f: "F2_become"
 related:
-  - bld_collaboration_mental_model
-  - bld_knowledge_card_mental_model
-  - p03_ins_mental_model
   - bld_memory_mental_model
   - bld_architecture_mental_model
 ---
@@ -135,6 +132,5 @@ Body sections: Routing Rules, Decision Tree, Priority Ordering, Domain Map, Heur
 |----------|-------------|-------|
 | [[bld_orchestration_mental_model]] | related | 0.69 |
 | [[bld_knowledge_mental_model]] | upstream | 0.58 |
-| [[p03_ins_mental_model]] | downstream | 0.57 |
 | [[bld_memory_mental_model]] | downstream | 0.55 |
 | [[bld_architecture_mental_model]] | downstream | 0.49 |

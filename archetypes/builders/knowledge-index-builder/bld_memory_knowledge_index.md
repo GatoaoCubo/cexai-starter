@@ -27,9 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - knowledge-index-builder
-  - bld_knowledge_card_knowledge_index
-  - bld_collaboration_knowledge_index
-  - p01_kc_knowledge_index
 ---
 ## Summary
 A hybrid search index combines keyword-based retrieval (BM25) and semantic retrieval (vector similarity) to handle both exact-match and paraphrase queries. The combination outperforms either method alone on mixed query sets, but only if the blend weights are calibrated to the actual query distribution.

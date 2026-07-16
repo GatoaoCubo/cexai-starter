@@ -15,12 +15,6 @@ tags: [knowledge-card, social-media, auto-publishing, N02, marketing, automation
 tldr: "Everything N02 needs to know about automated social publishing: APIs, platforms, content strategy, scheduling, and quality control."
 keywords: [yaml config, publisher api, content mix strategy, posting time science, algorithm, audience fatigue, cooldown, rotation]
 density_score: 0.92
-related:
-  - social-publisher-builder
-  - bld_knowledge_card_social_publisher
-  - tpl_social_publisher
-  - p04_cli_social_publisher_n02
-  - bld_instruction_social_publisher
 ---
 
 # Knowledge Card — Social Media Auto-Publishing

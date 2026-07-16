@@ -31,11 +31,7 @@ keywords:
   - "catalog audit"
 density_score: 0.90
 related:
-  - bld_instruction_vision_tool
-  - bld_instruction_output_validator
-  - bld_instruction_data_contract
   - bld_schema_product_match
-  - bld_output_template_product_match
 ---
 # Instructions: How to Produce a product_match
 ## Phase 1: RESEARCH
@@ -113,4 +109,3 @@ python _tools/cex_skill_loader.py --verify product_match
 | [[bld_prompt_output_validator]] | sibling | 0.47 |
 | [[bld_prompt_data_contract]] | sibling | 0.45 |
 | [[bld_schema_product_match]] | upstream | 0.40 |
-| [[bld_output_template_product_match]] | downstream | 0.38 |

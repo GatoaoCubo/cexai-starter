@@ -21,7 +21,6 @@ related:
   - bld_tools_search_strategy
   - bld_tools_reasoning_strategy
   - bld_architecture_compliance_framework
-  - bld_collaboration_chunk_strategy
 ---
 ## Component Inventory  
 | Name | Role | Owner | Status |  
@@ -52,4 +51,3 @@ planning_strategy sits at the intersection of strategic decision-making and oper
 | [[bld_tools_search_strategy]] | upstream | 0.31 |
 | [[bld_tools_reasoning_strategy]] | upstream | 0.30 |
 | [[bld_architecture_compliance_framework]] | sibling | 0.25 |
-| [[bld_collaboration_chunk_strategy]] | downstream | 0.25 |

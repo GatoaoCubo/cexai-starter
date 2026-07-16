@@ -29,7 +29,6 @@ keywords: [limits for knowledge_index production, knowledge index construction, 
 density_score: 0.90
 related:
   - bld_schema_knowledge_index
-  - p11_qg_knowledge_index
   - bld_tools_knowledge_index
   - knowledge-index-builder
 ---
@@ -78,6 +77,5 @@ python _tools/cex_score.py --apply bld-config-knowledge-index.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_knowledge_index]] | upstream | 0.31 |
-| [[p11_qg_knowledge_index]] | downstream | 0.29 |
 | [[bld_tools_knowledge_index]] | upstream | 0.28 |
 | [[knowledge-index-builder]] | downstream | 0.28 |

@@ -21,9 +21,6 @@ acts]
 density_score: 0.85
 related:
   - product-tour-builder
-  - bld_instruction_interactive_demo
-  - bld_knowledge_card_interactive_demo
-  - n00_interactive_demo_manifest
   - quickstart-guide-builder
 ---
 ## Identity
@@ -73,7 +70,4 @@ NEVER include technical implementation details or backend references.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[product-tour-builder]] | sibling | 0.47 |
-| [[bld_instruction_interactive_demo]] | upstream | 0.46 |
-| [[bld_knowledge_card_interactive_demo]] | upstream | 0.45 |
-| [[n00_interactive_demo_manifest]] | related | 0.41 |
 | [[quickstart-guide-builder]] | sibling | 0.40 |

@@ -18,11 +18,8 @@ updated: "2026-04-13"
 keywords: [ontology construction, knowledge card ontology, org standards, class hierarchy design, axiom patterns, and interoperability, ontology]
 density_score: 0.90
 related:
-  - p10_lr_ontology_builder
-  - bld_instruction_ontology
   - kc_ontology
   - ontology-builder
-  - p11_qg_ontology
 ---
 # Domain Knowledge: ontology
 ## Executive Summary
@@ -101,8 +98,6 @@ Ontologies define formal classification structures for knowledge domains -- spec
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_ontology_builder]] | downstream | 0.44 |
 | [[bld_prompt_ontology]] | downstream | 0.43 |
 | [[kc_ontology]] | sibling | 0.41 |
 | [[ontology-builder]] | related | 0.39 |
-| [[p11_qg_ontology]] | downstream | 0.37 |

@@ -26,11 +26,8 @@ title: "Memory Browser Tool"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_browser_tool
-  - p11_qg_browser_tool
   - bld_architecture_browser_tool
   - browser-tool-builder
-  - bld_instruction_browser_tool
 ---
 ## Summary
 Browser automation tools are consumed by agents and pipelines that cannot gracefully handle silent extraction failures. The difference between a resilient browser_tool and a brittle one comes down to two spec-time decisions: selector fallback chain and timeout declaration. Both are invisible during happy-path execution and catastrophic on failure if undefined.
@@ -94,7 +91,6 @@ python _tools/cex_score.py --apply p10-lr-browser-tool-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_browser_tool]] | upstream | 0.46 |
-| [[p11_qg_browser_tool]] | downstream | 0.36 |
 | [[bld_architecture_browser_tool]] | upstream | 0.35 |
 | [[browser-tool-builder]] | upstream | 0.34 |
 | [[bld_prompt_browser_tool]] | upstream | 0.34 |

@@ -5,10 +5,8 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_opportunity_matrix
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_tools_opportunity_matrix
-  - p11_fb_opportunity_matrix
 ---
 
 # opportunity-matrix-builder Sub-Agent
@@ -93,4 +91,3 @@ Five duties bind any agent that emits an artifact:
 | p03_sp_builder_nucleus | related | 0.31 |
 | kind-builder | related | 0.31 |
 | [[bld_tools_opportunity_matrix]] | related | 0.29 |
-| [[p11_fb_opportunity_matrix]] | related | 0.29 |

@@ -18,11 +18,8 @@ keywords: [playground_config construction, collaboration playground config, play
 configures, receives from, spec author, template lib, env manager]
 density_score: 0.85
 related:
-  - bld_collaboration_sandbox_spec
-  - bld_collaboration_sandbox_config
   - bld_config_playground_config
   - playground-config-builder
-  - bld_collaboration_transport_config
 ---
 ## Crew Role  
 Configures playground environments by assembling spec-compliant settings, ensuring consistency across execution contexts.  
@@ -47,8 +44,5 @@ Does NOT enforce security isolation (handled by sandbox_spec) or build UIs (hand
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_sandbox_spec]] | sibling | 0.33 |
-| [[bld_collaboration_sandbox_config]] | sibling | 0.30 |
 | [[bld_config_playground_config]] | upstream | 0.29 |
 | [[playground-config-builder]] | upstream | 0.26 |
-| [[bld_collaboration_transport_config]] | sibling | 0.24 |

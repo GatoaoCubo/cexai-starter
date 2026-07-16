@@ -32,11 +32,7 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - p01_kc_citation
-  - bld_knowledge_card_citation
-  - bld_collaboration_citation
   - bld_architecture_citation
-  - p10_lr_citation_builder
 ---
 ## Identity
 
@@ -141,4 +137,3 @@ quality_target: 9.0
 | [[bld_knowledge_citation]] | related | 0.50 |
 | [[bld_orchestration_citation]] | downstream | 0.49 |
 | [[bld_architecture_citation]] | downstream | 0.47 |
-| [[p10_lr_citation_builder]] | downstream | 0.45 |

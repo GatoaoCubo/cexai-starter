@@ -20,11 +20,7 @@ keywords, crew role
 collaborates]
 density_score: 0.85
 related:
-  - kc_product_tour
   - interactive-demo-builder
-  - bld_knowledge_card_product_tour
-  - p05_qg_product_tour
-  - bld_instruction_product_tour
 ---
 ## Identity
 
@@ -72,8 +68,4 @@ NEVER ASSUME USER BEHAVIOR; TRIGGERS MUST BE EVENT-BASED, NOT GUESSWORK.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_product_tour]] | upstream | 0.49 |
 | [[interactive-demo-builder]] | sibling | 0.48 |
-| [[bld_knowledge_card_product_tour]] | upstream | 0.44 |
-| [[p05_qg_product_tour]] | downstream | 0.42 |
-| [[bld_instruction_product_tour]] | upstream | 0.41 |

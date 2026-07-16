@@ -25,12 +25,6 @@ hooks:
   on_quality_fail: null
 permission_scope: nucleus
 llm_function: CONSTRAIN
-related:
-  - instance_supabase_config_template
-  - p04_tpl_supabase_data_layer
-  - bld_knowledge_card_supabase_data_layer
-  - bld_output_template_supabase_data_layer
-  - bld_instruction_supabase_data_layer
 ---
 # Builder Config
 
@@ -101,12 +95,3 @@ environments:
     url: "https://[prod-ref].supabase.co"
     # service_role_key ONLY in server .env, NEVER in client
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[instance_supabase_config_template]] | sibling | 0.37 |
-| [[p04_tpl_supabase_data_layer]] | downstream | 0.34 |
-| [[bld_knowledge_card_supabase_data_layer]] | upstream | 0.33 |
-| [[bld_output_template_supabase_data_layer]] | downstream | 0.31 |
-| [[bld_instruction_supabase_data_layer]] | downstream | 0.30 |

@@ -10,12 +10,6 @@ tldr: "OAuth 2.0 PKCE application config: scopes, redirect URIs, token lifetimes
 when_to_use: "When registering an OAuth 2.0 application for partner integrations requiring secure token-based auth"
 keywords: [oauth 2.0, pkce, proof key for code exchange, redirect urls, access token, refresh token, client secret, token endpoint auth method]
 density_score: 1.0
-related:
-  - bld_knowledge_card_oauth_app_config
-  - ex_oauth_app_config_meli
-  - oauth-app-config-builder
-  - ex_oauth_app_config_bling
-  - bld_instruction_oauth_app_config
 ---
 
 # OAuth 2.0 Application Configuration for Partner Integrations

@@ -22,7 +22,6 @@ related:
   - bld_prompt_marketplace_listing
   - bld_eval_marketplace_listing
   - output-validator-builder
-  - spec_dual_output_contract
 ---
 
 # marketplace-listing-builder

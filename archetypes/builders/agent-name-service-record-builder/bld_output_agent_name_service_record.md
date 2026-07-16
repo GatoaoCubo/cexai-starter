@@ -27,10 +27,6 @@ keywords:
   - "| | registry id |"
 density_score: 0.85
 related:
-  - bld_instruction_agent_name_service_record
-  - bld_manifest_agent_name_service_record
-  - bld_knowledge_card_agent_name_service_record
-  - bld_collaboration_agent_name_service_record
   - bld_schema_agent_name_service_record
 ---
 # Agent Name Service Record Builder -- Output Template

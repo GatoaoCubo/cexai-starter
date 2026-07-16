@@ -19,10 +19,7 @@ interactive, key concepts, user journey mapping, nielsen norman group, script br
 density_score: 0.85
 related:
   - interactive-demo-builder
-  - bld_instruction_interactive_demo
   - bld_tools_interactive_demo
-  - n00_interactive_demo_manifest
-  - p10_mem_interactive_demo_builder
 ---
 ## Domain Overview  
 Interactive demos are critical for product onboarding, marketing, and training, enabling users to explore features through guided scenarios. Unlike in-app tours, they operate as standalone experiences, often embedded in websites or external platforms. Success hinges on balancing instructional clarity with engagement, leveraging storytelling, and aligning with user goals. Key challenges include maintaining narrative flow, ensuring technical reliability, and adapting to diverse user contexts.  
@@ -82,7 +79,4 @@ A demo script is not a feature tour. It follows a sales narrative:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[interactive-demo-builder]] | downstream | 0.48 |
-| [[bld_instruction_interactive_demo]] | downstream | 0.43 |
 | [[bld_tools_interactive_demo]] | downstream | 0.38 |
-| [[n00_interactive_demo_manifest]] | sibling | 0.38 |
-| [[p10_mem_interactive_demo_builder]] | downstream | 0.35 |

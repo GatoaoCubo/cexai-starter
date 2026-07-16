@@ -28,8 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, mcp server construction, config mcp server, mcp_server, builder, examples, "p04_mcp_{server_slug}.md"]
 density_score: 0.90
 related:
-  - p03_ins_mcp_server
-  - bld_knowledge_card_mcp_server
   - bld_schema_mcp_server
   - mcp-server-builder
   - bld_memory_mcp_server
@@ -76,7 +74,6 @@ Rule: id MUST equal filename stem. Hyphens in id = HARD FAIL.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_mcp_server]] | upstream | 0.55 |
 | [[bld_knowledge_mcp_server]] | upstream | 0.50 |
 | [[bld_schema_mcp_server]] | upstream | 0.47 |
 | [[mcp-server-builder]] | upstream | 0.43 |

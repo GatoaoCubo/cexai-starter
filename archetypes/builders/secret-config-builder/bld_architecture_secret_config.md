@@ -17,11 +17,7 @@ updated: "2026-04-07"
 keywords: [component map of secret_config, and architectural position, secret config construction, architecture secret config, secret_config, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - secret-config-builder
-  - bld_collaboration_secret_config
-  - bld_instruction_secret_config
   - bld_schema_secret_config
-  - bld_knowledge_card_secret_config
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -81,7 +77,6 @@ permission      --gates-->    agent
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[secret-config-builder]] | downstream | 0.51 |
 | [[bld_orchestration_secret_config]] | downstream | 0.43 |
 | [[bld_prompt_secret_config]] | upstream | 0.42 |
 | [[bld_schema_secret_config]] | downstream | 0.40 |

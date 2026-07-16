@@ -18,12 +18,6 @@ keywords: [code_of_conduct construction, collaboration code of conduct, code_of_
 produces, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.87
-related:
-  - n00_code_of_conduct_manifest
-  - bld_collaboration_github_issue_template
-  - bld_collaboration_llm_evaluation_scenario
-  - bld_collaboration_ai_rmf_profile
-  - bld_collaboration_gpai_technical_doc
 ---
 ## Crew Role
 Produces code of conduct documents defining behavioral standards and enforcement procedures for OSS projects. The code of conduct is the community safety layer, placed before contributor_guide-builder (technical onboarding) and github_issue_template-builder (issue reporting).
@@ -44,12 +38,3 @@ Produces code of conduct documents defining behavioral standards and enforcement
 
 ## Boundary
 Does NOT handle technical contribution workflows (contributor_guide-builder), governance/voting processes (governance artifacts), or legal compliance documentation. Enforcement decisions remain with human maintainers; this builder produces the framework, not the decisions.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[n00_code_of_conduct_manifest]] | upstream | 0.26 |
-| [[bld_collaboration_github_issue_template]] | sibling | 0.25 |
-| [[bld_collaboration_llm_evaluation_scenario]] | sibling | 0.25 |
-| [[bld_collaboration_ai_rmf_profile]] | sibling | 0.24 |
-| [[bld_collaboration_gpai_technical_doc]] | sibling | 0.24 |

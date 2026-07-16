@@ -18,10 +18,7 @@ updated: "2026-04-07"
 keywords: [memory summary construction, collaboration memory summary, memory_summary, builder, examples, "### crew: long-running agent memory", "### crew: multi-session knowledge", my role, crew compositions, memory stack]
 density_score: 0.90
 related:
-  - bld_collaboration_memory_scope
   - memory-summary-builder
-  - bld_collaboration_compression_config
-  - bld_collaboration_session_backend
 ---
 # Collaboration: memory-summary-builder
 ## My Role in Crews

@@ -18,10 +18,7 @@ keywords: [crew_template construction, knowledge card crew template, crew_templa
 density_score: 0.88
 related:
   - crew-template-builder
-  - bld_instruction_crew_template
-  - p01_kc_crewai_patterns
   - bld_schema_crew_template
-  - bld_knowledge_card_role_assignment
 ---
 ## Domain Overview
 Crew templates are the composable-crew primitive of the 2025-2026 multi-agent era. They declaratively specify a reusable team: which roles participate (role_assignment references), how they collaborate (process topology), what they remember (memory_scope), and how success is measured (success_criteria). The three reference implementations -- CrewAI Process, Microsoft AutoGen GroupChat, and OpenAI Swarm -- converge on this pattern: a blueprint that any runtime can instantiate to spawn a coordinated team.

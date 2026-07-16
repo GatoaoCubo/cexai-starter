@@ -23,7 +23,6 @@ related:
   - query-optimizer-builder
   - bld_feedback_query_optimizer
   - bld_prompt_query_optimizer
-  - kc_query_optimizer
 ---
 ## Component Inventory
 
@@ -92,4 +91,3 @@ Query transformation and decomposition rules for RAG retrieval. NOT search_strat
 | [[query-optimizer-builder]] | upstream | 0.62 |
 | [[bld_feedback_query_optimizer]] | downstream | 0.51 |
 | [[bld_prompt_query_optimizer]] | upstream | 0.50 |
-| [[kc_query_optimizer]] | upstream | 0.49 |

@@ -20,9 +20,7 @@ density_score: 0.90
 related:
   - bld_memory_prompt_package
   - prompt-package-builder
-  - p03_ins_prompt_package
   - bld_orchestration_prompt_package
-  - schema_prompt_package_builder
 ---
 # Domain Knowledge: prompt_package
 
@@ -99,6 +97,4 @@ concrete as a typed artifact -- `.claude/rules/8f-reasoning.md`'s "Mode B (decom
 |----------|-------------|-------|
 | [[bld_memory_prompt_package]] | downstream | 0.57 |
 | [[prompt-package-builder]] | downstream | 0.57 |
-| [[p03_ins_prompt_package]] | downstream | 0.55 |
 | [[bld_orchestration_prompt_package]] | downstream | 0.50 |
-| [[schema_prompt_package_builder]] | downstream | 0.45 |

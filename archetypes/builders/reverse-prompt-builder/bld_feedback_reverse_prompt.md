@@ -16,11 +16,8 @@ density_score: 0.88
 created: "2026-07-03"
 updated: "2026-07-03"
 related:
-  - p11_qg_reverse_prompt
   - reverse-prompt-builder
   - bld_memory_reverse_prompt
-  - p03_ins_reverse_prompt
-  - bld_collaboration_reverse_prompt
 ---
 # Feedback: Reverse Prompt
 
@@ -91,8 +88,5 @@ density: 0.85+
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_reverse_prompt]] | sibling | 0.81 |
 | [[reverse-prompt-builder]] | upstream | 0.79 |
 | [[bld_memory_reverse_prompt]] | sibling | 0.79 |
-| [[p03_ins_reverse_prompt]] | sibling | 0.79 |
-| [[bld_collaboration_reverse_prompt]] | sibling | 0.77 |

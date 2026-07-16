@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [customer_segment construction, quality gate customer segment, customer_segment, builder, quality_gate, "## anti-example 1: vague generalization", quality gate, fail condition, ideal customer profile, yaml title]
 density_score: 0.85
-related:
-  - p11_qg_usage_report
-  - p05_qg_pricing_page
-  - p03_qg_prompt_technique
-  - p01_qg_discovery_questions
-  - p06_qg_edit_format
 ---
 ## Quality Gate
 

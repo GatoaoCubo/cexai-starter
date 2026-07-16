@@ -32,9 +32,6 @@ keywords:
   - "extraction hint"
 density_score: 0.90
 related:
-  - bld_instruction_knowledge_graph
-  - p01_kc_knowledge_graph
-  - bld_knowledge_card_knowledge_graph
   - bld_schema_knowledge_graph
   - knowledge-graph-builder
 ---
@@ -138,8 +135,5 @@ Text: {text}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_knowledge_graph]] | upstream | 0.47 |
-| [[p01_kc_knowledge_graph]] | upstream | 0.46 |
-| [[bld_knowledge_card_knowledge_graph]] | upstream | 0.44 |
 | [[bld_schema_knowledge_graph]] | downstream | 0.44 |
 | [[knowledge-graph-builder]] | upstream | 0.39 |

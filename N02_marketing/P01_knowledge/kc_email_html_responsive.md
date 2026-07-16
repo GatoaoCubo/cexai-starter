@@ -12,12 +12,6 @@ keywords: [mso-table-lspace, mso-table-rspace, webkit-text-size-adjust, -ms-text
 density_score: 1.0
 source: react.email, caniemail.com, mjml.io
 created: 2026-04-01
-related:
-  - p05_oval_email_template_n02
-  - p01_kc_email_html_responsive
-  - p05_oval_social_card_n02
-  - n02_kc_typography_web
-  - n06_output_pricing_page
 ---
 
 # KC: Email HTML Responsive
@@ -368,5 +362,4 @@ const html = render(<WelcomeEmail name="Joao" />);
 | p05_oval_email_template_n02 | downstream | 0.67 |
 | p01_kc_email_html_responsive | sibling | 0.58 |
 | p05_oval_social_card_n02 | downstream | 0.43 |
-| [[n02_kc_typography_web]] | sibling | 0.37 |
 | n06_output_pricing_page | downstream | 0.30 |

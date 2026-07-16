@@ -18,8 +18,6 @@ keywords: [quantization_config construction, instruction quantization config, qu
 density_score: 0.85
 related:
   - bld_schema_quantization_config
-  - p09_qg_quantization_config
-  - bld_knowledge_card_quantization_config
   - quantization-config-builder
   - bld_tools_quantization_config
 ---
@@ -54,7 +52,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_quantization_config]] | downstream | 0.38 |
-| [[p09_qg_quantization_config]] | downstream | 0.37 |
-| [[bld_knowledge_card_quantization_config]] | upstream | 0.36 |
 | [[quantization-config-builder]] | downstream | 0.35 |
 | [[bld_tools_quantization_config]] | downstream | 0.35 |

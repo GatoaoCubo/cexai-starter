@@ -14,12 +14,6 @@ sources:
   - https://github.com/zhanymkanov/fastapi-best-practices
 created: 2026-04-01
 keywords: [uvicorn production configuration, fastapi practices, uvicorn, gunicorn, workers, uvloop, httptools, fastapi, production, graceful-reload]
-related:
-  - p01_kc_context_parallelization
-  - p01_kc_deploy_paas
-  - kc_test_dispatch_pattern
-  - p05_oval_railway_toml_n05
-  - p02_agent_railway_superintendent
 ---
 
 # KC: Uvicorn Production Configuration

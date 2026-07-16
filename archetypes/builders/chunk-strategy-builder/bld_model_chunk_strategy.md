@@ -28,10 +28,7 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - bld_collaboration_chunk_strategy
   - retriever-config-builder
-  - p10_lr_chunk_strategy_builder
-  - bld_instruction_chunk_strategy
   - bld_architecture_chunk_strategy
 ---
 ## Identity
@@ -130,6 +127,5 @@ quality_target: 9.0
 |----------|-------------|-------|
 | [[bld_orchestration_chunk_strategy]] | downstream | 0.53 |
 | [[retriever-config-builder]] | sibling | 0.48 |
-| [[p10_lr_chunk_strategy_builder]] | downstream | 0.47 |
 | [[bld_prompt_chunk_strategy]] | downstream | 0.45 |
 | [[bld_architecture_chunk_strategy]] | downstream | 0.44 |

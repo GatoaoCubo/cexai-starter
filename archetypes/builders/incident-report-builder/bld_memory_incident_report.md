@@ -21,10 +21,6 @@ reviewed, root cause, related artifacts]
 density_score: 0.85
 related:
   - incident-report-builder
-  - bld_instruction_incident_report
-  - p11_qg_incident_report
-  - kc_incident_report
-  - bld_knowledge_card_incident_report
 ---
 ## Observation
 Incident reports often lack consistent structure, leading to incomplete root cause analysis or omitted mitigation steps. Teams may prioritize speed over depth, resulting in superficial documentation that fails to capture systemic issues.
@@ -46,7 +42,3 @@ Reviewed artifacts showed that reports with detailed timelines and stakeholder i
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[incident-report-builder]] | downstream | 0.38 |
-| [[bld_instruction_incident_report]] | upstream | 0.34 |
-| [[p11_qg_incident_report]] | downstream | 0.30 |
-| [[kc_incident_report]] | upstream | 0.28 |
-| [[bld_knowledge_card_incident_report]] | upstream | 0.28 |

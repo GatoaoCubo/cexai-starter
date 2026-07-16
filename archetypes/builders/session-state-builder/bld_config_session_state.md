@@ -28,7 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, and operational constraints, session state construction, config session state, session_state, builder, examples, "p10_ss_{session}.yaml", p10_ss_edison_wave19_build.yaml]
 density_score: 0.90
 related:
-  - bld_knowledge_card_session_state
   - session-state-builder
   - bld_tools_session_state
   - bld_memory_session_state

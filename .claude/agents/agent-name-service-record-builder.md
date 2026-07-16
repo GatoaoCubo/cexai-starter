@@ -7,8 +7,6 @@ related:
   - bld_architecture_agent_name_service_record
   - kind-builder
   - agent-builder
-  - n00_agent_name_service_record_manifest
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # agent-name-service-record-builder Sub-Agent
@@ -89,5 +87,3 @@ Five duties bind any agent that emits an artifact:
 | [[bld_architecture_agent_name_service_record]] | related | 0.36 |
 | [[kind-builder]] | related | 0.31 |
 | [[agent-builder]] | related | 0.31 |
-| [[n00_agent_name_service_record_manifest]] | related | 0.30 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.30 |

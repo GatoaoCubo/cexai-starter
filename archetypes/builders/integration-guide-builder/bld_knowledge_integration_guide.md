@@ -20,8 +20,6 @@ density_score: 0.85
 related:
   - bld_tools_integration_guide
   - webhook-builder
-  - n00_integration_guide_manifest
-  - p05_qg_integration_guide
   - bld_memory_webhook
 ---
 ## Domain Overview
@@ -76,6 +74,4 @@ A good integration_guide answers four questions in order: (1) which auth flow? (
 |----------|-------------|-------|
 | [[bld_tools_integration_guide]] | downstream | 0.33 |
 | [[webhook-builder]] | downstream | 0.24 |
-| [[n00_integration_guide_manifest]] | sibling | 0.24 |
-| [[p05_qg_integration_guide]] | downstream | 0.22 |
 | [[bld_memory_webhook]] | downstream | 0.22 |

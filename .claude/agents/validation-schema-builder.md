@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - validation-schema-builder
   - kind-builder
-  - bld_collaboration_validation_schema
-  - p01_kc_pillar_brief_p06_schema_en
-  - p03_sp_builder_nucleus
 ---
 
 # validation-schema-builder Sub-Agent

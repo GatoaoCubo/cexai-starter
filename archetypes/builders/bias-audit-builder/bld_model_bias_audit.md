@@ -20,10 +20,6 @@ this, if tool, routing
 keywords]
 density_score: 0.85
 related:
-  - p10_lr_bias_audit_builder
-  - kc_bias_audit
-  - bld_instruction_bias_audit
-  - bld_collaboration_bias_audit
   - bld_tools_bias_audit
 ---
 ## Identity
@@ -71,8 +67,4 @@ The bias_audit-builder agent is a specialized tool for designing and executing f
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_bias_audit_builder]] | downstream | 0.61 |
-| [[kc_bias_audit]] | upstream | 0.60 |
-| [[bld_instruction_bias_audit]] | upstream | 0.57 |
-| [[bld_collaboration_bias_audit]] | downstream | 0.56 |
 | [[bld_tools_bias_audit]] | upstream | 0.55 |

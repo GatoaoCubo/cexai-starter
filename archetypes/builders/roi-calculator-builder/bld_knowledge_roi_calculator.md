@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - kc_roi_calculator
   - roi-calculator-builder
-  - bld_instruction_roi_calculator
-  - p11_qg_roi_calculator
-  - bld_output_template_roi_calculator
 ---
 ## Domain Overview
 ROI calculators quantify financial returns of technology investments by comparing total costs (hardware, software, integration) against quantifiable benefits (efficiency gains, revenue uplift). Economic buyers prioritize TCO comparisons over operational budgets, focusing on long-term value rather than short-term expenses. Industry adoption spans enterprise SaaS, infrastructure procurement, and digital transformation projects, with emphasis on NPV, payback periods, and risk-adjusted returns.
@@ -65,5 +62,3 @@ ROI calculators quantify financial returns of technology investments by comparin
 | [[kc_roi_calculator]] | sibling | 0.51 |
 | [[roi-calculator-builder]] | downstream | 0.49 |
 | [[bld_prompt_roi_calculator]] | downstream | 0.40 |
-| [[p11_qg_roi_calculator]] | downstream | 0.35 |
-| [[bld_output_template_roi_calculator]] | downstream | 0.32 |

@@ -31,11 +31,7 @@ llm_function: BECOME
 parent: null
 8f: "F6_produce"
 related:
-  - bld_collaboration_formatter
   - bld_architecture_formatter
-  - p01_kc_formatter
-  - bld_instruction_formatter
-  - p10_lr_formatter_builder
 ---
 ## Identity
 
@@ -124,4 +120,3 @@ Every response that produces an artifact must include:
 | [[bld_architecture_formatter]] | downstream | 0.53 |
 | [[kc_formatter]] | upstream | 0.48 |
 | [[bld_prompt_formatter]] | upstream | 0.48 |
-| [[p10_lr_formatter_builder]] | downstream | 0.46 |

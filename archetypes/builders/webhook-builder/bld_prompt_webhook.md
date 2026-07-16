@@ -18,10 +18,7 @@ domain: "instruction artifact construction"
 title: "Instruction Webhook"
 tldr: "Defines the instruction specification for instruction webhook, with structural rules, validation gates, and integration points."
 related:
-  - bld_output_template_webhook
   - webhook-builder
-  - p11_qg_webhook
-  - p01_kc_webhook
   - bld_config_webhook
 ---
 # Instructions: How to Produce a webhook
@@ -91,8 +88,5 @@ python _tools/cex_skill_loader.py --verify instruction artifact construction
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_webhook]] | downstream | 0.45 |
 | [[webhook-builder]] | downstream | 0.45 |
-| [[p11_qg_webhook]] | downstream | 0.42 |
-| [[p01_kc_webhook]] | upstream | 0.38 |
 | [[bld_config_webhook]] | downstream | 0.37 |

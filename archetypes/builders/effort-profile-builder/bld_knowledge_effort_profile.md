@@ -31,11 +31,7 @@ keywords:
   - "related artifacts"
 density_score: 0.90
 related:
-  - p10_lr_effort_profile_builder
   - effort-profile-builder
-  - p11_qg_effort_profile
-  - p01_kc_effort_profile
-  - bld_collaboration_effort_profile
 ---
 # Domain Knowledge: effort_profile
 ## Executive Summary
@@ -78,8 +74,4 @@ Effort and thinking level configuration for builder execution — maps builder t
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_effort_profile_builder]] | downstream | 0.55 |
 | [[effort-profile-builder]] | downstream | 0.42 |
-| [[p11_qg_effort_profile]] | downstream | 0.41 |
-| [[p01_kc_effort_profile]] | sibling | 0.41 |
-| [[bld_collaboration_effort_profile]] | downstream | 0.39 |

@@ -22,10 +22,6 @@ voice]
 density_score: 0.88
 related:
   - voice-pipeline-builder
-  - p11_qg_voice_pipeline
-  - bld_instruction_voice_pipeline
-  - bld_collaboration_voice_pipeline
-  - bld_output_template_voice_pipeline
 ---
 # Memory: voice-pipeline-builder
 ## Summary
@@ -91,7 +87,3 @@ provider-agnostic interfaces at each stage, (3) document fallback chain for each
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[voice-pipeline-builder]] | upstream | 0.58 |
-| [[p11_qg_voice_pipeline]] | downstream | 0.47 |
-| [[bld_instruction_voice_pipeline]] | upstream | 0.41 |
-| [[bld_collaboration_voice_pipeline]] | downstream | 0.40 |
-| [[bld_output_template_voice_pipeline]] | upstream | 0.39 |

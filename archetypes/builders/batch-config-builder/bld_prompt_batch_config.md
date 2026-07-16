@@ -32,10 +32,6 @@ keywords:
   - "^p09_bc_[a-z][a-z0-9_]+$"
 density_score: 0.88
 related:
-  - bld_knowledge_card_batch_config
-  - p01_kc_batch_config
-  - bld_output_template_batch_config
-  - p11_qg_batch_config
   - bld_config_batch_config
 ---
 # Instructions: How to Produce a batch_config
@@ -81,8 +77,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_batch_config]] | upstream | 0.52 |
-| [[p01_kc_batch_config]] | downstream | 0.48 |
-| [[bld_output_template_batch_config]] | downstream | 0.45 |
-| [[p11_qg_batch_config]] | downstream | 0.45 |
 | [[bld_config_batch_config]] | downstream | 0.45 |

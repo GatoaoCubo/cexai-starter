@@ -17,11 +17,7 @@ updated: "2026-04-13"
 keywords: [dual_loop_architecture construction, instruction dual loop architecture, dual_loop_architecture, builder, instruction, outer_loop, inner_loop, interface, related artifacts, inner loop]
 density_score: 0.85
 related:
-  - bld_collaboration_dual_loop_architecture
   - dual-loop-architecture-builder
-  - bld_knowledge_card_dual_loop_architecture
-  - kc_dual_loop_architecture
-  - p10_lr_dual_loop_architecture_builder
 ---
 ## Phase 1: RESEARCH  
 
@@ -54,8 +50,4 @@ This ISO applies to the dual loop pattern, coordinating an outer orchestrator wi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_dual_loop_architecture]] | downstream | 0.53 |
 | [[dual-loop-architecture-builder]] | downstream | 0.52 |
-| [[bld_knowledge_card_dual_loop_architecture]] | upstream | 0.51 |
-| [[kc_dual_loop_architecture]] | upstream | 0.49 |
-| [[p10_lr_dual_loop_architecture_builder]] | downstream | 0.47 |

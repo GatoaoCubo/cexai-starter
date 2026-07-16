@@ -21,11 +21,7 @@ toolkits, context
 toolkits]
 density_score: 0.90
 related:
-  - bld_knowledge_card_toolkit
   - toolkit-builder
-  - p03_ins_toolkit_builder
-  - p11_qg_toolkit
-  - bld_collaboration_toolkit
 ---
 # Memory: toolkit-builder
 ## Summary
@@ -91,6 +87,4 @@ python _tools/cex_score.py --apply bld-memory-toolkit.md
 |----------|-------------|-------|
 | [[bld_knowledge_toolkit]] | upstream | 0.67 |
 | [[toolkit-builder]] | upstream | 0.64 |
-| [[p03_ins_toolkit_builder]] | upstream | 0.56 |
-| [[p11_qg_toolkit]] | downstream | 0.54 |
 | [[bld_orchestration_toolkit]] | upstream | 0.51 |

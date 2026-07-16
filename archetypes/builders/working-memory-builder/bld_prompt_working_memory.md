@@ -33,10 +33,7 @@ keywords:
 density_score: 0.90
 related:
   - working-memory-builder
-  - p10_qg_working_memory
   - bld_schema_working_memory
-  - bld_output_template_working_memory
-  - p01_kc_working_memory
 ---
 # Instructions: How to Produce a working_memory
 
@@ -78,7 +75,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[working-memory-builder]] | downstream | 0.49 |
-| [[p10_qg_working_memory]] | downstream | 0.47 |
 | [[bld_schema_working_memory]] | downstream | 0.42 |
-| [[bld_output_template_working_memory]] | downstream | 0.40 |
-| [[p01_kc_working_memory]] | downstream | 0.39 |

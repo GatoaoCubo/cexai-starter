@@ -13,11 +13,8 @@ keywords: [architecture domain vocabulary, domain vocabulary architecture, compo
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - p01_kc_domain_vocabulary
   - domain-vocabulary-builder
   - bld_memory_domain_vocabulary
-  - bld_kc_domain_vocabulary
-  - bld_qg_domain_vocabulary
 ---
 # Architecture: domain_vocabulary
 ## Position in CEX Kind Taxonomy
@@ -69,5 +66,3 @@ domain_vocabulary is the target artifact for the F2b SPEAK sub-step:
 | [[kc_domain_vocabulary]] | upstream | 0.63 |
 | [[domain-vocabulary-builder]] | upstream | 0.49 |
 | [[bld_memory_domain_vocabulary]] | downstream | 0.48 |
-| [[bld_kc_domain_vocabulary]] | upstream | 0.48 |
-| [[bld_qg_domain_vocabulary]] | downstream | 0.42 |

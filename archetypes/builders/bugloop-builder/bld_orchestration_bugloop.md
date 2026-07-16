@@ -19,10 +19,6 @@ keywords: [bugloop construction, collaboration bugloop, bugloop, builder, exampl
 density_score: 0.90
 related:
   - bugloop-builder
-  - bld_collaboration_benchmark
-  - bld_collaboration_e2e_eval
-  - bld_collaboration_guardrail
-  - bld_collaboration_quality_gate
 ---
 # Collaboration: bugloop-builder
 ## My Role in Crews
@@ -65,7 +61,3 @@ I design automated correction cycles so systems self-heal without manual interve
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bugloop-builder]] | upstream | 0.39 |
-| [[bld_collaboration_benchmark]] | sibling | 0.37 |
-| [[bld_collaboration_e2e_eval]] | sibling | 0.37 |
-| [[bld_collaboration_guardrail]] | sibling | 0.36 |
-| [[bld_collaboration_quality_gate]] | sibling | 0.35 |

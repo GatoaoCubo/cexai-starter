@@ -22,10 +22,6 @@ linked_artifacts:
   related: []
 related:
   - design-system-builder
-  - p06_vs_design_system
-  - p06_ds_ferro
-  - p06_ds_sereno
-  - p08_adr_design_system_kind
 ---
 
 # Design System

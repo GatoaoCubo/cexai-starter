@@ -18,10 +18,6 @@ keywords: [component map of browser_tool, and architectural position, browser to
 density_score: 0.90
 related:
   - browser-tool-builder
-  - n00_browser_tool_manifest
-  - bld_knowledge_card_browser_tool
-  - p11_qg_browser_tool
-  - p10_lr_browser_tool_builder
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -102,5 +98,3 @@ workflow        --depends-->  action
 | [[browser-tool-builder]] | upstream | 0.51 |
 | n00_browser_tool_manifest | upstream | 0.38 |
 | [[bld_knowledge_browser_tool]] | upstream | 0.37 |
-| [[p11_qg_browser_tool]] | downstream | 0.33 |
-| [[p10_lr_browser_tool_builder]] | downstream | 0.33 |

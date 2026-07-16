@@ -20,10 +20,7 @@ prospective]
 density_score: 0.90
 related:
   - prospective-memory-builder
-  - p01_kc_prospective_memory
-  - bld_collaboration_prospective_memory
   - bld_architecture_prospective_memory
-  - p10_lr_prospective_memory_builder
 ---
 # Domain Knowledge: prospective_memory
 
@@ -72,7 +69,4 @@ Prospective memory = "remembering to remember." Unlike retrospective memory (wha
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prospective-memory-builder]] | downstream | 0.47 |
-| [[p01_kc_prospective_memory]] | sibling | 0.43 |
-| [[bld_collaboration_prospective_memory]] | downstream | 0.43 |
 | [[bld_architecture_prospective_memory]] | downstream | 0.41 |
-| [[p10_lr_prospective_memory_builder]] | downstream | 0.37 |

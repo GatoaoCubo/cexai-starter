@@ -18,11 +18,7 @@ keywords: [user_journey construction, collaboration user journey, user_journey, 
 maps, receives from, user research, product team, customer support]
 density_score: 0.85
 related:
-  - bld_collaboration_cohort_analysis
-  - bld_collaboration_integration_guide
   - user-journey-builder
-  - bld_collaboration_product_tour
-  - bld_collaboration_reward_model
 ---
 ## Crew Role  
 Maps end-to-end user experiences across touchpoints, aligning with business goals and user needs. Collaborates with researchers, designers, and strategists to ensure holistic journey insights.  
@@ -47,8 +43,4 @@ Does NOT handle technical implementation (engineers), workflow automation (syste
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_cohort_analysis]] | sibling | 0.31 |
-| [[bld_collaboration_integration_guide]] | sibling | 0.30 |
 | [[user-journey-builder]] | upstream | 0.30 |
-| [[bld_collaboration_product_tour]] | sibling | 0.28 |
-| [[bld_collaboration_reward_model]] | sibling | 0.28 |

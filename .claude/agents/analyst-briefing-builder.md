@@ -4,11 +4,8 @@ description: "Builds ONE analyst_briefing artifact via 8F pipeline. Loads analys
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_analyst_briefing_manifest
   - bld_config_analyst_briefing
   - analyst-briefing-builder
-  - p11_fb_analyst_briefing
-  - bld_collaboration_analyst_briefing
 ---
 
 # analyst-briefing-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_analyst_briefing_manifest]] | related | 0.38 |
 | [[bld_config_analyst_briefing]] | related | 0.33 |
 | [[analyst-briefing-builder]] | related | 0.32 |
-| [[p11_fb_analyst_briefing]] | related | 0.32 |
-| [[bld_collaboration_analyst_briefing]] | related | 0.31 |

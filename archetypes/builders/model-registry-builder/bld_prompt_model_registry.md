@@ -19,10 +19,6 @@ keywords: [model registry construction, instruction model registry, and lifecycl
 density_score: 0.88
 related:
   - model-registry-builder
-  - p11_qg_model_registry
-  - bld_collaboration_model_registry
-  - bld_knowledge_card_model_registry
-  - kc_model_registry
 ---
 # Instructions: How to Produce a model_registry
 
@@ -90,7 +86,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[model-registry-builder]] | downstream | 0.42 |
-| [[p11_qg_model_registry]] | downstream | 0.41 |
-| [[bld_collaboration_model_registry]] | downstream | 0.38 |
-| [[bld_knowledge_card_model_registry]] | upstream | 0.38 |
-| [[kc_model_registry]] | upstream | 0.37 |

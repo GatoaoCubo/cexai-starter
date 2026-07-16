@@ -31,10 +31,6 @@ parent: null
 8f: "F8_collaborate"
 related:
   - bld_architecture_dag
-  - bld_collaboration_dag
-  - n00_dag_manifest
-  - p01_kc_dag
-  - bld_knowledge_card_dag
 ---
 ## Identity
 
@@ -126,7 +122,3 @@ Naming convention: `p12_dag_{pipeline_name}.yaml`. Max artifact size: 4096 bytes
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_dag]] | upstream | 0.53 |
-| [[bld_collaboration_dag]] | related | 0.53 |
-| [[n00_dag_manifest]] | related | 0.50 |
-| [[p01_kc_dag]] | related | 0.49 |
-| [[bld_knowledge_card_dag]] | upstream | 0.45 |

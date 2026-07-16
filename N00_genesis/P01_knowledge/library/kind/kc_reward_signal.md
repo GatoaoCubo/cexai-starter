@@ -19,11 +19,7 @@ keywords: [score, feedback, reinforcement]
 feeds_kinds: [reward_signal]
 density_score: null
 related:
-  - p01_kc_llm_judge
-  - bld_collaboration_llm_judge
-  - p07_llm_judge
   - llm-judge-builder
-  - bld_knowledge_card_reward_signal
 ---
 
 # Reward Signal

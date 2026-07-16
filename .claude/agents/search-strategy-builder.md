@@ -4,11 +4,8 @@ description: "Builds ONE search_strategy artifact via 8F pipeline. Loads search-
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_search_strategy_manifest
   - system-prompt-builder
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # search-strategy-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_search_strategy_manifest]] | related | 0.27 |
 | [[system-prompt-builder]] | related | 0.27 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |

@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [ai_rmf_profile construction, ai_rmf_profile, builder, quality_gate, nist, ai-rmf, govern, measure, manage, genai-profile]
 density_score: 0.85
 related:
-  - bld_instruction_ai_rmf_profile
   - ai-rmf-profile-builder
   - bld_schema_ai_rmf_profile
-  - bld_knowledge_card_ai_rmf_profile
-  - kc_ai_rmf_profile
 ---
 ## Quality Gate
 

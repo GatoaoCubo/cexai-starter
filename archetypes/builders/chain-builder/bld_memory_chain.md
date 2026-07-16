@@ -27,9 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - bld_architecture_chain
-  - bld_instruction_chain
-  - p01_kc_chain
-  - bld_knowledge_card_chain
   - chain-builder
 ---
 ## Summary
@@ -63,7 +60,4 @@ The chain-vs-workflow boundary is the most common confusion point. A chain is pu
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_chain]] | upstream | 0.57 |
-| [[bld_instruction_chain]] | upstream | 0.55 |
-| [[p01_kc_chain]] | upstream | 0.54 |
-| [[bld_knowledge_card_chain]] | upstream | 0.52 |
 | [[chain-builder]] | upstream | 0.51 |

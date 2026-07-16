@@ -17,12 +17,6 @@ updated: "2026-04-18"
 keywords: [builder identity, routing for revision_loop_policy, revision_loop_policy construction, revision_loop_policy, builder, type_builder]
 density_score: 0.88
 tldr: "Builder identity, capabilities, routing for revision_loop_policy"
-related:
- - n00_revision_loop_policy_manifest
- - bld_kc_revision_loop_policy
- - kc_revision_loop_policy
- - p11_ins_revision_loop_policy
- - p11_out_tpl_revision_loop_policy
 ---
 ## Identity
 
@@ -112,12 +106,3 @@ Always produce a single `revision_loop_policy` artifact with:
 - Reusing same policy for all artifact types ignores scenario-specific budgets (security=5, docs=2)
 - Not injecting prior failing gates into revision context: loop repeats same failures without learning
 - Setting quality_floor to artifact's current score: forces immediate escalation on first run
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[n00_revision_loop_policy_manifest]] | related | 0.49 |
-| [[bld_kc_revision_loop_policy]] | upstream | 0.49 |
-| [[kc_revision_loop_policy]] | upstream | 0.47 |
-| [[p11_ins_revision_loop_policy]] | related | 0.45 |
-| [[p11_out_tpl_revision_loop_policy]] | upstream | 0.43 |

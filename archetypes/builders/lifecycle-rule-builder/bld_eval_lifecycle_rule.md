@@ -28,11 +28,7 @@ keywords:
 density_score: 0.85
 llm_function: GOVERN
 related:
-  - p03_ins_lifecycle_rule
-  - bld_manifest_lifecycle_rule
-  - bld_knowledge_card_lifecycle_rule
   - bld_memory_lifecycle_rule
-  - p11_qg_quality_gate
 ---
 ## Quality Gate
 

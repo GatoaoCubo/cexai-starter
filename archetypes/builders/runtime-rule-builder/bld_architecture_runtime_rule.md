@@ -18,10 +18,6 @@ keywords: [component map of runtime_rule, and architectural position, runtime ru
 density_score: 0.90
 related:
   - runtime-rule-builder
-  - p03_ins_runtime_rule
-  - bld_knowledge_card_runtime_rule
-  - p01_kc_cex_lp09_config
-  - n00_runtime_rule_manifest
 ---
 # Architecture: runtime_rule in the CEX
 ## Component Inventory
@@ -69,7 +65,3 @@ runtime_rule   --depends-->      env_config
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[runtime-rule-builder]] | downstream | 0.51 |
-| [[p03_ins_runtime_rule]] | downstream | 0.40 |
-| [[bld_knowledge_card_runtime_rule]] | downstream | 0.35 |
-| [[p01_kc_cex_lp09_config]] | upstream | 0.35 |
-| [[n00_runtime_rule_manifest]] | downstream | 0.33 |

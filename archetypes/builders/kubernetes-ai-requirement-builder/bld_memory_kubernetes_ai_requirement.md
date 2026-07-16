@@ -21,10 +21,7 @@ pilot, cncf conformance]
 density_score: 0.85
 related:
   - kubernetes-ai-requirement-builder
-  - bld_knowledge_card_kubernetes_ai_requirement
   - bld_tools_kubernetes_ai_requirement
-  - p09_qg_kubernetes_ai_requirement
-  - bld_collaboration_kubernetes_ai_requirement
 ---
 ## Observation
 Early KAR authors frequently confuse cluster-capability requirements with application packaging. Artifacts were emitted as plain Deployments or Helm values, omitting NVLink pair counts, InfiniBand bandwidth, MIG profile enumeration, and DRA ResourceClaim references. Multi-node training jobs failed admission because gang-scheduling directives (Kueue ClusterQueue, Volcano PodGroup) were missing and CNCF KAR v1.35 conformance profile tags were absent.
@@ -48,7 +45,4 @@ Pilot cohort of 12 training jobs on Certified K8s AI Platforms: templates with f
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kubernetes-ai-requirement-builder]] | upstream | 0.63 |
-| [[bld_knowledge_card_kubernetes_ai_requirement]] | upstream | 0.57 |
 | [[bld_tools_kubernetes_ai_requirement]] | upstream | 0.54 |
-| [[p09_qg_kubernetes_ai_requirement]] | downstream | 0.53 |
-| [[bld_collaboration_kubernetes_ai_requirement]] | downstream | 0.52 |

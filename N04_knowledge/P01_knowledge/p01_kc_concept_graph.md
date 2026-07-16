@@ -19,12 +19,8 @@ keywords: [concept graph, directed prerequisite graph, llm agent, 8f pipeline, k
 density_score: 0.88
 related:
   - kc_admin_vocabulary
-  - p03_sp_orchestration_nucleus
   - kc_orchestration_vocabulary
-  - p06_val_n07
   - p02_mm_cex_architecture_n04
-  - p01_kc_knowledge_card
-  - p01_kc_prompt_template
   - kc_crew_template
   - p01_gl_rag
 ---

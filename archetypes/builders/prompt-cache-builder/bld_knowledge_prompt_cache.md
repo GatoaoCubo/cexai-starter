@@ -19,11 +19,7 @@ keywords: [prompt cache construction, knowledge card prompt cache, prompt_cache,
 prompt, spec table, provider caching comparison, min tokens]
 density_score: 0.90
 related:
-  - p01_kc_prompt_cache
   - prompt-cache-builder
-  - p10_lr_prompt_cache_builder
-  - bld_collaboration_prompt_cache
-  - bld_output_template_prompt_cache
 ---
 # Domain Knowledge: prompt_cache
 ## Executive Summary
@@ -63,8 +59,4 @@ Prompt caches store LLM prompt/completion pairs to reduce latency and cost for r
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_prompt_cache]] | sibling | 0.61 |
 | [[prompt-cache-builder]] | downstream | 0.53 |
-| [[p10_lr_prompt_cache_builder]] | downstream | 0.48 |
-| [[bld_collaboration_prompt_cache]] | downstream | 0.46 |
-| [[bld_output_template_prompt_cache]] | downstream | 0.42 |

@@ -18,10 +18,7 @@ updated: "2026-04-17"
 keywords: [episodic memory construction, collaboration episodic memory, memory crews, episodic_memory, builder, collaboration, my role, crew compositions, memory system, handoff protocol]
 density_score: 0.90
 related:
-  - bld_collaboration_working_memory
   - episodic-memory-builder
-  - p01_kc_episodic_memory
-  - bld_knowledge_card_episodic_memory
   - bld_architecture_episodic_memory
 ---
 # Collaboration: episodic-memory-builder

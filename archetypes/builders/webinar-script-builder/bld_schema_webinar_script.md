@@ -17,7 +17,6 @@ updated: "2026-04-14"
 keywords: [define frontmatter schema, id pattern, webinar_script construction, webinar script schema, schema enforcement for webinar_script, required frontmatter fields, body sections, and byte constraints, webinar_script, builder]
 density_score: 0.85
 related:
-  - bld_instruction_webinar_script
   - bld_schema_customer_segment
   - bld_schema_interactive_demo
   - bld_schema_pitch_deck
@@ -98,7 +97,6 @@ Sections must appear in this order. Section headings must include timestamp mark
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_webinar_script]] | upstream | 0.47 |
 | [[bld_schema_customer_segment]] | sibling | 0.44 |
 | [[bld_schema_interactive_demo]] | sibling | 0.42 |
 | [[bld_schema_pitch_deck]] | sibling | 0.41 |

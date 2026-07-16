@@ -20,10 +20,8 @@ updated: "2026-04-07"
 keywords: [skill construction, memory skill, skill, builder, examples, alexa skills, semantic kernel skills, what worked, what failed, related artifacts]
 density_score: 0.90
 related:
-  - bld_collaboration_skill
   - skill-builder
   - bld_architecture_skill
-  - n00_skill_manifest
   - procedural-memory-builder
 ---
 # Memory: skill-builder
@@ -72,8 +70,6 @@ python _tools/cex_score.py --apply bld-memory-skill.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_skill]] | downstream | 0.57 |
 | [[skill-builder]] | upstream | 0.53 |
 | [[bld_architecture_skill]] | upstream | 0.42 |
-| [[n00_skill_manifest]] | upstream | 0.41 |
 | [[procedural-memory-builder]] | downstream | 0.40 |

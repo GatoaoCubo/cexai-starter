@@ -20,10 +20,6 @@ reviewed, related artifacts, healthcare vertical, templates hipaa]
 density_score: 0.85
 related:
   - healthcare-vertical-builder
-  - p01_qg_healthcare_vertical
-  - bld_instruction_healthcare_vertical
-  - kc_healthcare_vertical
-  - kc_fhir_agent_capability
 ---
 ## Observation (healthcare vertical)
 Common issues in the healthcare vertical include inconsistent PHI handling across modules, misalignment with HL7/FHIR standards during integration, and overcomplication of HIPAA-compliant workflows.
@@ -45,7 +41,3 @@ Reviewed artifacts using FHIR-based APIs reduced integration errors by 40% compa
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[healthcare-vertical-builder]] | upstream | 0.50 |
-| [[p01_qg_healthcare_vertical]] | downstream | 0.49 |
-| [[bld_instruction_healthcare_vertical]] | upstream | 0.46 |
-| [[kc_healthcare_vertical]] | upstream | 0.43 |
-| [[kc_fhir_agent_capability]] | upstream | 0.43 |

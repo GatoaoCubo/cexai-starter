@@ -31,8 +31,6 @@ related:
   - bld_config_model_provider
   - bld_config_model_card
   - bld_schema_embedder_provider
-  - bld_knowledge_card_embedder_provider
-  - bld_collaboration_model_provider
 ---
 # Config: embedder_provider Production Rules
 ## Naming Convention

@@ -31,10 +31,7 @@ keywords:
   - "env steps | time to reach target reward | |"
 density_score: 0.85
 related:
-  - p02_qg_rl_algorithm
   - bld_schema_rl_algorithm
-  - p10_lr_rl_algorithm_builder
-  - bld_instruction_rl_algorithm
   - rl-algorithm-builder
 ---
 ```yaml
@@ -100,8 +97,5 @@ hyperparameters:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p02_qg_rl_algorithm]] | downstream | 0.35 |
 | [[bld_schema_rl_algorithm]] | downstream | 0.33 |
-| [[p10_lr_rl_algorithm_builder]] | downstream | 0.32 |
-| [[bld_instruction_rl_algorithm]] | upstream | 0.31 |
 | [[rl-algorithm-builder]] | upstream | 0.30 |

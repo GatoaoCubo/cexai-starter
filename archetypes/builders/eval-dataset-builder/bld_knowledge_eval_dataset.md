@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - eval-dataset-builder
   - bld_schema_eval_dataset
-  - bld_instruction_eval_dataset
-  - bld_collaboration_eval_dataset
-  - p10_lr_eval_dataset_builder
 ---
 # Domain Knowledge: eval_dataset
 ## Executive Summary
@@ -92,4 +89,3 @@ Eval datasets are structured collections of test cases used to measure LLM behav
 | [[bld_schema_eval_dataset]] | downstream | 0.46 |
 | [[bld_prompt_eval_dataset]] | downstream | 0.42 |
 | [[bld_orchestration_eval_dataset]] | downstream | 0.41 |
-| [[p10_lr_eval_dataset_builder]] | downstream | 0.39 |

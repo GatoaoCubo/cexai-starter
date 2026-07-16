@@ -26,12 +26,6 @@ keywords:
   - "content_filter"
   - "builder"
 density_score: 0.92
-related:
-  - bld_knowledge_card_content_filter
-  - n06_audit_content_filter_builder
-  - bld_output_template_safety_policy
-  - bld_knowledge_card_safety_policy
-  - p03_pt_brand_config_extractor
 ---
 # p11_cf_{{name}}.md
 

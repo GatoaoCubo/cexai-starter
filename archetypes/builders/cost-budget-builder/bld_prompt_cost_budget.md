@@ -32,11 +32,8 @@ keywords:
   - "^p09_cb_[a-z][a-z0-9_]+$"
 density_score: 0.90
 related:
-  - p11_qg_cost_budget
   - cost-budget-builder
-  - bld_instruction_rate_limit_config
   - bld_schema_cost_budget
-  - bld_instruction_context_doc
 ---
 # Instructions: How to Produce a cost_budget
 ## Phase 1: RESEARCH
@@ -86,8 +83,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_cost_budget]] | downstream | 0.47 |
 | [[cost-budget-builder]] | downstream | 0.46 |
-| [[bld_instruction_rate_limit_config]] | sibling | 0.43 |
 | [[bld_schema_cost_budget]] | downstream | 0.38 |
-| [[bld_instruction_context_doc]] | sibling | 0.38 |

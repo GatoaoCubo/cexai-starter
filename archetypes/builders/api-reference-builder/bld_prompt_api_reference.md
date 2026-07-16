@@ -18,10 +18,6 @@ keywords: [api_reference construction, instruction api reference, api_reference,
 density_score: 0.85
 related:
   - api-reference-builder
-  - kc_api_reference
-  - p10_lr_api_reference_builder
-  - p06_qg_api_reference
-  - bld_knowledge_card_api_reference
 ---
 ## Phase 1: RESEARCH  
 1. Collect all endpoints from API spec (POST, GET, PUT, DELETE).  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[api-reference-builder]] | downstream | 0.41 |
-| [[kc_api_reference]] | upstream | 0.39 |
-| [[p10_lr_api_reference_builder]] | downstream | 0.38 |
-| [[p06_qg_api_reference]] | downstream | 0.32 |
-| [[bld_knowledge_card_api_reference]] | upstream | 0.28 |

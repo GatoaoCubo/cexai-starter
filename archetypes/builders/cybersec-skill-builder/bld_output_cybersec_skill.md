@@ -18,9 +18,7 @@ updated: "2026-05-30"
 keywords: [cybersec_skill, output template, frontmatter, source provenance, framework mapping, authorization notice, anti-fabrication checklist]
 density_score: 0.90
 related:
-  - bld_output_template_skill
   - bld_schema_cybersec_skill
-  - p03_ins_cybersec_skill_builder
   - bld_eval_cybersec_skill
   - cybersec-skill-builder
 ---
@@ -184,8 +182,6 @@ events emitted to: `_runtime/audit/cysk_{{name}}_<timestamp>.jsonl`.
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_skill]] | parent | 0.60 |
 | [[bld_schema_cybersec_skill]] | upstream | 0.70 |
-| [[p03_ins_cybersec_skill_builder]] | upstream | 0.55 |
 | [[bld_eval_cybersec_skill]] | downstream | 0.55 |
 | [[cybersec-skill-builder]] | upstream | 0.60 |

@@ -18,7 +18,6 @@ keywords: [audio tool construction, tools audio tool, audio_tool, builder, examp
 density_score: 0.90
 related:
   - bld_tools_cli_tool
-  - bld_tools_client
   - bld_tools_function_def
   - bld_tools_input_schema
   - bld_tools_retriever_config
@@ -64,7 +63,6 @@ body <= 2048 bytes, quality == null.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_cli_tool]] | sibling | 0.55 |
-| [[bld_tools_client]] | sibling | 0.54 |
 | [[bld_tools_function_def]] | sibling | 0.53 |
 | [[bld_tools_input_schema]] | sibling | 0.52 |
 | [[bld_tools_retriever_config]] | sibling | 0.52 |

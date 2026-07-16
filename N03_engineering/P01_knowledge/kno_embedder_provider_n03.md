@@ -20,7 +20,6 @@ density_score: 0.99
 related:
   - kno_embedder_provider_n05
   - kno_embedder_provider_n01
-  - bld_collaboration_embedder_provider
   - bld_memory_embedder_provider
   - kno_embedder_provider_n04
 ---

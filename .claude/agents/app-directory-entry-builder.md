@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_app_directory_entry
-  - bld_collaboration_app_directory_entry
-  - kc_app_directory_entry
   - kind-builder
-  - p11_fb_app_directory_entry
 ---
 
 # app-directory-entry-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_app_directory_entry]] | related | 0.44 |
-| [[bld_collaboration_app_directory_entry]] | related | 0.36 |
-| [[kc_app_directory_entry]] | related | 0.34 |
 | [[kind-builder]] | related | 0.32 |
-| [[p11_fb_app_directory_entry]] | related | 0.32 |

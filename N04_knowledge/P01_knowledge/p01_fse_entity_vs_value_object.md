@@ -18,8 +18,6 @@ tldr: "5-7 I/O pairs teaching LLM to classify a domain concept as DDD ENTITY or 
 keywords: [entity, value-object, ddd, aggregate, identity, immutability, classification]
 related:
   - p01_kc_clean_arch_ddd_in_cex
-  - value_object
-  - aggregate_root
 primary_8f: INJECT
 when_to_use: "Load when working on few_shot_example in P01. Consult for how to act on this few_shot_example."
 slots:

@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [reasoning trace construction, schema reasoning trace, reasoning_trace, builder, examples, yaml, "p03_rt_{agent}_{timestamp}.yaml"]
 density_score: 0.90
 related:
-  - p03_ins_reasoning_trace_builder
-  - p11_qg_reasoning_trace
-  - bld_knowledge_card_reasoning_trace
   - reasoning-trace-builder
-  - bld_output_template_reasoning_trace
 ---
 # Schema: reasoning_trace
 ## Artifact Identity
@@ -110,8 +106,4 @@ duration_ms: 4500
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_reasoning_trace_builder]] | upstream | 0.56 |
-| [[p11_qg_reasoning_trace]] | downstream | 0.52 |
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.51 |
 | [[reasoning-trace-builder]] | upstream | 0.45 |
-| [[bld_output_template_reasoning_trace]] | upstream | 0.40 |

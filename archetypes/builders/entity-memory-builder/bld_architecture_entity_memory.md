@@ -18,9 +18,6 @@ keywords: [component map of entity_memory, and architectural position, entity me
 density_score: 0.90
 related:
   - entity-memory-builder
-  - bld_collaboration_entity_memory
-  - bld_knowledge_card_entity_memory
-  - bld_instruction_entity_memory
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |

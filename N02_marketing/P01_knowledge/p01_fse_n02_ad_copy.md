@@ -29,9 +29,7 @@ density_score: 1.0
 related:
   - p01_fse_generic_n02
   - p01_kc_marketing
-  - p04_cli_copy_analyzer_n02
   - p01_fse_n02_landing_page
-  - p03_sp_marketing_nucleus
 ---
 <!-- 8F TRACE
 F1 CONSTRAIN: kind=few_shot_example, pillar=P01, max_bytes=5120, naming=p01_fse_{topic}.md

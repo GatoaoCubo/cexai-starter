@@ -17,7 +17,6 @@ updated: "2026-04-13"
 keywords: [tts_provider construction, tools tts provider, tts_provider, builder, tools, production tools, validation tools, external references, flow text, torch audio]
 density_score: 0.85
 related:
-  - bld_collaboration_audio_tool
   - bld_tools_stt_provider
   - tts-provider-builder
   - bld_config_tts_provider
@@ -47,7 +46,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_audio_tool]] | downstream | 0.36 |
 | [[bld_tools_stt_provider]] | sibling | 0.34 |
 | [[tts-provider-builder]] | related | 0.32 |
 | [[bld_config_tts_provider]] | downstream | 0.32 |

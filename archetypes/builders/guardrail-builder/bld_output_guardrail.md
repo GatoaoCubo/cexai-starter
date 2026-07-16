@@ -18,11 +18,8 @@ updated: "2026-04-07"
 keywords: [template with, for guardrail production, guardrail construction, output template guardrail, guardrail, builder, examples, output template, related artifacts, concrete_measurable_restriction_ concrete_measurable_restriction_]
 density_score: 0.90
 related:
-  - p11_qg_guardrail
-  - bld_instruction_guardrail
   - bld_config_guardrail
   - bld_architecture_guardrail
-  - p10_lr_guardrail_builder
 ---
 # Output Template: guardrail
 ```yaml
@@ -76,8 +73,6 @@ linked_artifacts:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_guardrail]] | downstream | 0.44 |
 | [[bld_prompt_guardrail]] | upstream | 0.41 |
 | [[bld_config_guardrail]] | downstream | 0.40 |
 | [[bld_architecture_guardrail]] | downstream | 0.36 |
-| [[p10_lr_guardrail_builder]] | downstream | 0.36 |

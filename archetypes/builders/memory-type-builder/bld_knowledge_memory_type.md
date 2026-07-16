@@ -16,11 +16,7 @@ updated: "2026-04-07"
 keywords: [memory type construction, knowledge card memory type, memory_type, builder, examples, knowledge card, signal words, classification priority, decay formula, why bad]
 density_score: 0.90
 related:
-  - bld_manifest_memory_type
   - bld_architecture_memory_type
-  - p01_kc_memory_type
-  - bld_output_template_memory_type
-  - bld_quality_gate_memory_type
 ---
 # Knowledge Card: memory_type
 
@@ -73,8 +69,4 @@ if confidence_new < 0.1: prune()  # MIN_CONFIDENCE
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_memory_type]] | downstream | 0.44 |
 | [[bld_architecture_memory_type]] | downstream | 0.35 |
-| [[p01_kc_memory_type]] | sibling | 0.34 |
-| [[bld_output_template_memory_type]] | downstream | 0.31 |
-| [[bld_quality_gate_memory_type]] | downstream | 0.30 |

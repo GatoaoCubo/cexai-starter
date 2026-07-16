@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F7_govern"
 keywords: [data_residency construction, quality gate data residency, data_residency, builder, quality_gate, quality gate, fail condition, scoring guide, golden example, access controls]
 density_score: 0.85
-related:
-  - p01_kc_data_residency
-  - p11_qg_compliance_checklist
-  - bld_output_template_data_residency
-  - n00_data_residency_manifest
-  - bld_knowledge_card_data_residency
 ---
 ## Quality Gate
 

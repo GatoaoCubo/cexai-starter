@@ -17,10 +17,7 @@ updated: "2026-04-14"
 keywords: [edtech_vertical construction, instruction edtech vertical, edtech_vertical, builder, instruction, security framework, global security framework, related artifacts, ferpa coppa, coppa compliance]
 density_score: 0.85
 related:
-  - p10_mem_edtech_vertical_builder
-  - p01_qg_edtech_vertical
   - edtech-vertical-builder
-  - bld_output_template_edtech_vertical
   - edtech_vertical_lms_market
 ---
 ## Phase 1: RESEARCH  
@@ -53,8 +50,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_mem_edtech_vertical_builder]] | downstream | 0.53 |
-| [[p01_qg_edtech_vertical]] | downstream | 0.53 |
 | [[edtech-vertical-builder]] | upstream | 0.53 |
-| [[bld_output_template_edtech_vertical]] | downstream | 0.49 |
 | [[edtech_vertical_lms_market]] | upstream | 0.47 |

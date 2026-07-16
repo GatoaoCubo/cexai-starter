@@ -21,10 +21,6 @@ reviewed, related artifacts, quota specs]
 density_score: 0.85
 related:
   - usage-quota-builder
-  - bld_collaboration_usage_quota
-  - bld_instruction_usage_quota
-  - kc_usage_quota
-  - bld_knowledge_card_usage_quota
 ---
 ## Observation
 Misalignment between quota limits and enforcement logic often leads to overuse or underutilization. Inconsistent units (e.g., MB vs. GB) and unclear boundary definitions complicate configuration validation.
@@ -46,7 +42,3 @@ Reviewed artifacts showed 70% used consistent units and modular structures, redu
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[usage-quota-builder]] | upstream | 0.47 |
-| [[bld_collaboration_usage_quota]] | downstream | 0.45 |
-| [[bld_instruction_usage_quota]] | upstream | 0.45 |
-| [[kc_usage_quota]] | upstream | 0.40 |
-| [[bld_knowledge_card_usage_quota]] | upstream | 0.37 |

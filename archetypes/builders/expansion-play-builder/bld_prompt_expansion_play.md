@@ -18,9 +18,6 @@ keywords: [expansion_play construction, instruction expansion play, expansion_pl
 density_score: 0.85
 related:
   - expansion-play-builder
-  - bld_knowledge_card_expansion_play
-  - bld_output_template_expansion_play
-  - p10_mem_expansion_play_builder
   - bld_schema_expansion_play
 ---
 ## Phase 1: RESEARCH
@@ -54,7 +51,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[expansion-play-builder]] | related | 0.60 |
-| [[bld_knowledge_card_expansion_play]] | upstream | 0.58 |
-| [[bld_output_template_expansion_play]] | downstream | 0.46 |
-| [[p10_mem_expansion_play_builder]] | downstream | 0.44 |
 | [[bld_schema_expansion_play]] | downstream | 0.44 |

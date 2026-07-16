@@ -32,12 +32,6 @@ tldr: Golden and anti-examples for multi modal config construction, demonstratin
 llm_function: BECOME
 parent: null
 8f: "F5_call"
-related:
-  - bld_collaboration_multi_modal_config
-  - bld_instruction_multi_modal_config
-  - p01_kc_multi_modal_config
-  - p11_qg_multi_modal_config
-  - bld_output_template_multi_modal_config
 ---
 ## Identity
 
@@ -134,12 +128,3 @@ nucleus: N03
 pipeline: 8F
 quality_target: 9.0
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_multi_modal_config]] | downstream | 0.59 |
-| [[bld_instruction_multi_modal_config]] | upstream | 0.56 |
-| [[p01_kc_multi_modal_config]] | related | 0.51 |
-| [[p11_qg_multi_modal_config]] | downstream | 0.50 |
-| [[bld_output_template_multi_modal_config]] | downstream | 0.49 |

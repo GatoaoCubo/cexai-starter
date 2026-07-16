@@ -18,9 +18,6 @@ keywords: [pitch_deck construction, knowledge card pitch deck, pitch_deck, build
 density_score: 0.85
 related:
   - pitch-deck-builder
-  - bld_instruction_pitch_deck
-  - p05_qg_pitch_deck
-  - n00_pitch_deck_manifest
   - bld_tools_pitch_deck
 ---
 ## Domain Overview
@@ -86,7 +83,4 @@ Catalysts: regulatory shifts, technology unlock (LLMs, new API), behavioral chan
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[pitch-deck-builder]] | downstream | 0.55 |
-| [[bld_instruction_pitch_deck]] | downstream | 0.44 |
-| [[p05_qg_pitch_deck]] | downstream | 0.41 |
-| [[n00_pitch_deck_manifest]] | sibling | 0.39 |
 | [[bld_tools_pitch_deck]] | downstream | 0.38 |

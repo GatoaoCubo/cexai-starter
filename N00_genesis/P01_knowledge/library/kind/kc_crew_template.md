@@ -10,12 +10,6 @@ tldr: "Reusable blueprint defining multi-role crew structure with process topolo
 when_to_use: "When a deliverable requires coordinated handoffs between multiple specialized roles"
 keywords: [template_id, crew_name, roles, process, memory, success_criteria, quality_gate, dependencies, validation phases, trigger conditions]
 density_score: 0.98
-related:
-  - bld_collaboration_quality_gate
-  - p01_kc_steps
-  - p11_qg_crew_template
-  - bld_collaboration_crew_template
-  - p01_kc_skill
 ---
 
 # Crew Template
@@ -67,6 +61,5 @@ author the three WAVE8 artifacts it describes.
 |----------|-------------|-------|
 | bld_collaboration_quality_gate | downstream | 0.21 |
 | p01_kc_steps | sibling | 0.20 |
-| [[p11_qg_crew_template]] | downstream | 0.20 |
 | [[bld_orchestration_crew_template]] | downstream | 0.19 |
 | p01_kc_skill | sibling | 0.19 |

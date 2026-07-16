@@ -17,9 +17,6 @@ updated: "2026-07-03"
 keywords: [builder identity, routing for fabrication_manifest, fabrication_manifest construction, type builder fabrication manifest, fabrication_manifest, builder, type_builder, tenant fabrication, bootstrap orchestrator, cex_bootstrap_orchestrator]
 density_score: 0.85
 related:
-  - bld_knowledge_card_fabrication_manifest
-  - bld_collaboration_fabrication_manifest
-  - kc_fabrication_manifest
   - bld_tools_fabrication_manifest
   - team-charter-builder
 ---
@@ -108,8 +105,5 @@ NEVER conflate this kind with `team_charter` (a crew mission contract) or `deplo
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_fabrication_manifest]] | upstream | 0.55 |
-| [[bld_collaboration_fabrication_manifest]] | related | 0.52 |
-| [[kc_fabrication_manifest]] | upstream | 0.48 |
 | [[bld_tools_fabrication_manifest]] | upstream | 0.41 |
 | [[team-charter-builder]] | sibling | 0.30 |

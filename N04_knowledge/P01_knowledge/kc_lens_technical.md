@@ -18,15 +18,8 @@ tldr: "Direct mapping of CEX concepts to industry-standard engineering terms. No
 keywords: [multi-agent orchestration framework, bounded contexts, autonomous agent, workflow orchestrator, schema type, code generator, config file, artifact, configuration wizard, loss function, dspy compilation, bm25, hybrid retrieval]
 density_score: 0.91
 related:
-  - vocabulary_cex_rosetta
-  - n00_mentor_context
   - p02_mm_cex_architecture_n04
-  - p06_td_cex_artifact_type_n03
-  - p01_faq_cex_common_questions
   - kc_crew_template
-  - p01_kc_quality_gate
-  - p01_kc_embedding_config
-  - p01_kc_agent
 ---
 
 # Lens: Technical
@@ -143,4 +136,3 @@ For these cases, switch to [[kc_lens_factory]] (procedural metaphor) or [[kc_len
 | n00_mentor_context | related | 0.34 |
 | [[p02_mm_cex_architecture_n04]] | related | 0.34 |
 | p06_td_cex_artifact_type_n03 | downstream | 0.33 |
-| [[p01_faq_cex_common_questions]] | related | 0.30 |

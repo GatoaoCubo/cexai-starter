@@ -33,10 +33,7 @@ keywords:
 density_score: 0.90
 related:
   - bld_knowledge_approval_request
-  - p01_kc_approval_request
-  - bld_instruction_hitl_config
   - bld_schema_approval_request
-  - adr_v03_governance_taxonomy
 ---
 # Instructions: How to Produce an approval_request
 ## Phase 1: RESEARCH
@@ -94,7 +91,4 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_approval_request]] | upstream | 0.38 |
-| [[p01_kc_approval_request]] | downstream | 0.38 |
-| [[bld_instruction_hitl_config]] | sibling (emitting-policy builder) | 0.36 |
 | [[bld_schema_approval_request]] | sibling | 0.35 |
-| [[adr_v03_governance_taxonomy]] | related (scope-defining ADR) | 0.33 |

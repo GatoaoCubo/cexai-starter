@@ -17,10 +17,6 @@ updated: "2026-04-07"
 keywords: [component map of lifecycle_rule, and architectural position, lifecycle rule construction, architecture lifecycle rule, lifecycle_rule, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - bld_manifest_lifecycle_rule
-  - p03_ins_lifecycle_rule
-  - bld_collaboration_lifecycle_rule
-  - p11_qg_lifecycle_rule
   - bld_memory_lifecycle_rule
 ---
 # Architecture: lifecycle_rule in the CEX
@@ -68,8 +64,5 @@ quality_gate    --depends-->      lifecycle_rule  --signals-->      state_change
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_lifecycle_rule]] | related | 0.49 |
-| [[p03_ins_lifecycle_rule]] | upstream | 0.45 |
 | [[bld_orchestration_lifecycle_rule]] | downstream | 0.42 |
-| [[p11_qg_lifecycle_rule]] | downstream | 0.39 |
 | [[bld_memory_lifecycle_rule]] | downstream | 0.39 |

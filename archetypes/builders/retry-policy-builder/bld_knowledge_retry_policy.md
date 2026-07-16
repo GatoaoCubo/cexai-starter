@@ -19,7 +19,6 @@ density_score: 0.90
 related:
   - kc_retry_policy
   - retry-policy-builder
-  - p10_lr_retry_policy_builder
   - bld_schema_retry_policy
   - bld_architecture_retry_policy
 ---
@@ -129,6 +128,5 @@ retry_policy (P09)
 |----------|-------------|-------|
 | [[kc_retry_policy]] | sibling | 0.77 |
 | [[retry-policy-builder]] | downstream | 0.60 |
-| [[p10_lr_retry_policy_builder]] | downstream | 0.55 |
 | [[bld_schema_retry_policy]] | downstream | 0.54 |
 | [[bld_architecture_retry_policy]] | downstream | 0.51 |

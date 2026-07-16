@@ -34,9 +34,6 @@ cross_provider:
 related:
   - bld_architecture_golden_test
   - golden-test-builder
-  - n00_golden_test_manifest
-  - bld_collaboration_golden_test
-  - p01_kc_eval_dataset
 ---
 
 # Golden Test

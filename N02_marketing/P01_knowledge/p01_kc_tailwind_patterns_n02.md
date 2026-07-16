@@ -14,12 +14,6 @@ long_tails:
   - "what tailwind pattern should I use for a responsive two-column layout"
   - "how do I switch dark mode and build component variants in tailwind"
 density_score: 0.97
-related:
-  - p05_oval_style_guide_n02
-  - landing_page_petshop_crm
-  - p01_kc_tailwind_patterns
-  - landing_page_pet-shop-crm
-  - p05_oval_landing_page_template_n02
 ---
 
 # Tailwind Patterns

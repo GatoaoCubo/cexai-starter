@@ -18,8 +18,6 @@ keywords: [component map of permission, and architectural position, permission c
 density_score: 0.90
 related:
   - permission-builder
-  - bld_collaboration_permission
-  - p11_qg_permission
   - bld_memory_permission
   - p09_perm_{{SCOPE_SLUG}}
 ---
@@ -71,6 +69,5 @@ guardrail      --depends-->      permission
 |----------|-------------|-------|
 | [[permission-builder]] | downstream | 0.59 |
 | [[bld_orchestration_permission]] | downstream | 0.56 |
-| [[p11_qg_permission]] | downstream | 0.55 |
 | [[bld_memory_permission]] | downstream | 0.49 |
 | [\[p09_perm_`{{SCOPE_SLUG}}`\]] | downstream | 0.48 |

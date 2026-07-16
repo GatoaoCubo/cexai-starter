@@ -27,10 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - instruction-builder
-  - p10_lr_chain_builder
-  - bld_instruction_chain
-  - p01_kc_instruction
-  - tpl_instruction
 ---
 ## Summary
 Instructions describe how to execute a procedure step by step. The primary failure mode is compound steps: packaging multiple actions into one step causes partial execution that appears complete. The secondary failure is unverifiable prerequisites that agents skip silently. Both are fixed at authoring time with simple structural rules.

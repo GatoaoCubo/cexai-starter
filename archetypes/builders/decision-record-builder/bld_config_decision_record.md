@@ -29,10 +29,7 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_schema_decision_record
-  - bld_instruction_decision_record
   - decision-record-builder
-  - bld_knowledge_card_decision_record
-  - p10_lr_decision_record_builder
 ---
 # Config: decision_record Production Rules
 ## Naming Convention
@@ -86,4 +83,3 @@ Rule: if status == superseded, superseded_by MUST be populated with a valid p08_
 | [[bld_prompt_decision_record]] | upstream | 0.43 |
 | [[decision-record-builder]] | upstream | 0.41 |
 | [[bld_knowledge_decision_record]] | upstream | 0.40 |
-| [[p10_lr_decision_record_builder]] | downstream | 0.40 |

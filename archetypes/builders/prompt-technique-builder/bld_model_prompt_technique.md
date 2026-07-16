@@ -20,11 +20,8 @@ keywords, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_prompt_optimizer
   - prompt-optimizer-builder
-  - p01_kc_prompt_engineering_best_practices
   - system-prompt-builder
-  - bld_collaboration_prompt_technique
 ---
 ## Identity
 
@@ -72,8 +69,5 @@ NEVER ASSUME PRIOR KNOWLEDGE OF LLM ARCHITECTURE OR TRAINING DATA.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_prompt_optimizer]] | upstream | 0.34 |
 | [[prompt-optimizer-builder]] | sibling | 0.33 |
-| [[p01_kc_prompt_engineering_best_practices]] | upstream | 0.33 |
 | [[system-prompt-builder]] | sibling | 0.30 |
-| [[bld_collaboration_prompt_technique]] | downstream | 0.30 |

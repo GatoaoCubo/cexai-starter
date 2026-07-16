@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_knowledge_card_course_module
-  - bld_instruction_course_module
-  - n00_course_module_manifest
-  - bld_collaboration_course_module
-  - p01_kc_course_module
 ---
 ## Identity
 
@@ -68,12 +62,3 @@ ALWAYS use structured outcomes (e.g., verbs from Bloom’s Taxonomy) and validat
 ALWAYS ensure modular content is version-controlled and metadata-rich (e.g., tags, taxonomies).  
 NEVER include unverified claims, proprietary formats, or platform-specific code.  
 NEVER assume prior knowledge beyond the module’s defined scope.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_course_module]] | upstream | 0.54 |
-| [[bld_instruction_course_module]] | upstream | 0.40 |
-| [[n00_course_module_manifest]] | related | 0.34 |
-| [[bld_collaboration_course_module]] | downstream | 0.33 |
-| [[p01_kc_course_module]] | related | 0.33 |

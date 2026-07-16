@@ -15,11 +15,7 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_context_sources_data_contract
-  - bld_context_sources_bounded_context
-  - bld_context_sources_domain_vocabulary
   - bld_tools_domain_event
-  - bld_context_sources_alert_rule
 ---
 # Context Sources: domain_event
 ## Mandatory Sources (load at F3 INJECT)
@@ -73,8 +69,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_context_sources_data_contract]] | sibling | 0.50 |
-| [[bld_context_sources_bounded_context]] | sibling | 0.49 |
-| [[bld_context_sources_domain_vocabulary]] | sibling | 0.40 |
 | [[bld_tools_domain_event]] | downstream | 0.40 |
-| [[bld_context_sources_alert_rule]] | sibling | 0.38 |

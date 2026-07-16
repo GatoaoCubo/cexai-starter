@@ -4,10 +4,7 @@ description: "Builds ONE crew_template artifact via 8F pipeline. Loads crew-temp
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_crew_template
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p06_td_cex_artifact_type_n03
   - system-prompt-builder
 ---
 

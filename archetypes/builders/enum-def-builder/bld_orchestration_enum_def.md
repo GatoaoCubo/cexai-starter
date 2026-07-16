@@ -18,11 +18,7 @@ updated: "2026-04-07"
 keywords: [enum def construction, collaboration enum def, enum_def, builder, examples, "### crew: api contract", "### crew: domain model", my role, crew compositions, schema definition]
 density_score: 0.90
 related:
-  - bld_collaboration_validation_schema
   - enum-def-builder
-  - bld_collaboration_type_def
-  - bld_collaboration_validator
-  - bld_knowledge_card_enum_def
 ---
 # Collaboration: enum-def-builder
 ## My Role in Crews

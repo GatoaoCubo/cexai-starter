@@ -27,12 +27,6 @@ keywords:
   - "sandbox_config"
   - "builder"
 density_score: 0.90
-related:
-  - bld_knowledge_card_sandbox_config
-  - bld_instruction_sandbox_config
-  - bld_output_template_sandbox_config
-  - p11_qg_code_executor
-  - p10_lr_code_executor_builder
 ---
 ## Quality Gate
 ## Definition

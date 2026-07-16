@@ -22,7 +22,6 @@ related:
   - bld_knowledge_synthetic_data_config
   - synthetic-data-config-builder
   - bld_orchestration_synthetic_data_config
-  - p01_kc_data_residency
   - p01_kc_ai_compliance_gdpr
 ---
 

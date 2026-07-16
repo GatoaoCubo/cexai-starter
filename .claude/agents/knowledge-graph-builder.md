@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - knowledge-graph-builder
-  - bld_collaboration_knowledge_graph
   - kind-builder
-  - n00_knowledge_graph_manifest
-  - p03_sp_builder_nucleus
 ---
 
 # knowledge-graph-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[knowledge-graph-builder]] | related | 0.36 |
-| [[bld_collaboration_knowledge_graph]] | related | 0.36 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_knowledge_graph_manifest]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |

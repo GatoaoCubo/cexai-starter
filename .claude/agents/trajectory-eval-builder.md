@@ -4,11 +4,8 @@ description: "Builds ONE trajectory_eval artifact via 8F pipeline. Loads traject
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_trajectory_eval_manifest
   - bld_config_trajectory_eval
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # trajectory-eval-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_trajectory_eval_manifest]] | related | 0.33 |
 | [[bld_config_trajectory_eval]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.28 |

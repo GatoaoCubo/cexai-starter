@@ -18,11 +18,7 @@ keywords: [collaboration_pattern construction, collaboration collaboration patte
 facilitates, receives from, design builder, content builder, code builder]
 density_score: 0.85
 related:
-  - bld_collaboration_action_paradigm
-  - bld_collaboration_handoff_protocol
-  - bld_collaboration_kind
   - bld_collaboration_builder
-  - bld_collaboration_memory_scope
 ---
 ## Crew Role
 Facilitates alignment, resolves conflicts, and ensures consistent communication among builders to maintain coherence in collaborative outputs.
@@ -63,8 +59,4 @@ builders.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_action_paradigm]] | sibling | 0.30 |
-| [[bld_collaboration_handoff_protocol]] | sibling | 0.28 |
-| [[bld_collaboration_kind]] | sibling | 0.28 |
 | [[bld_collaboration_builder]] | sibling | 0.25 |
-| [[bld_collaboration_memory_scope]] | sibling | 0.24 |

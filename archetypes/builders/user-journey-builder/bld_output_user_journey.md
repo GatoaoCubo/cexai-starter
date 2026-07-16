@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [user_journey construction, output template user journey, user_journey, builder, output_template, user onboarding, user action, system response, success metric, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_user_journey
-  - bld_instruction_user_journey
   - bld_config_user_journey
-  - n00_user_journey_manifest
-  - p10_mem_user_journey_builder
 ---
 ```yaml
 ---
@@ -55,8 +51,4 @@ quality: null
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_user_journey]] | downstream | 0.31 |
-| [[bld_instruction_user_journey]] | upstream | 0.31 |
 | [[bld_config_user_journey]] | downstream | 0.29 |
-| [[n00_user_journey_manifest]] | related | 0.28 |
-| [[p10_mem_user_journey_builder]] | downstream | 0.26 |

@@ -18,10 +18,6 @@ keywords: [product_tour construction, output template product tour, product_tour
 density_score: 0.85
 related:
   - product-tour-builder
-  - bld_instruction_product_tour
-  - n00_product_tour_manifest
-  - kc_product_tour
-  - p05_qg_product_tour
 ---
 <!-- Product tour spec template. In-app tooltip/step structure. Replace all `{{vars}}`. -->
 
@@ -86,7 +82,3 @@ platform: {{platform}}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[product-tour-builder]] | related | 0.34 |
-| [[bld_instruction_product_tour]] | upstream | 0.33 |
-| [[n00_product_tour_manifest]] | related | 0.32 |
-| [[kc_product_tour]] | upstream | 0.30 |
-| [[p05_qg_product_tour]] | downstream | 0.29 |

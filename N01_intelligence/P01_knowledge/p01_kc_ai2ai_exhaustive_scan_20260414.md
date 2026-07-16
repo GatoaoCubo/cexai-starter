@@ -28,10 +28,7 @@ sources:
 keywords: [ai2ai, exhaustive standardization, scan, layers]
 related:
   - p01_kc_ai2ai_coverage_matrix_20260414
-  - p01_kc_terminology_rosetta_stone
-  - leverage_map_v2_n05_verify
   - p01_kc_competitor_openai_sdk
-  - p01_kc_terminology_google_mcp_canonical
 ---
 
 # AI2AI Exhaustive Standardization Scan -- 9 Layers, April 2026

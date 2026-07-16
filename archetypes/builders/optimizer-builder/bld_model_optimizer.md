@@ -31,11 +31,8 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - p03_ins_optimizer
   - bld_memory_optimizer
-  - bld_collaboration_optimizer
   - bld_architecture_optimizer
-  - p11_qg_optimizer
 ---
 ## Identity
 
@@ -120,8 +117,5 @@ Produce a complete optimizer artifact with YAML frontmatter followed by five bod
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_optimizer]] | upstream | 0.57 |
 | [[bld_memory_optimizer]] | upstream | 0.53 |
-| [[bld_collaboration_optimizer]] | related | 0.49 |
 | [[bld_architecture_optimizer]] | upstream | 0.47 |
-| [[p11_qg_optimizer]] | related | 0.47 |

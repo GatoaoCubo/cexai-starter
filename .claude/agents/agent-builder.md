@@ -5,9 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - agent-builder
-  - bld_collaboration_agent
-  - p01_kc_pillar_brief_p02_model_en
-  - p01_kc_agent
   - system-prompt-builder
 ---
 

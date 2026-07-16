@@ -7,8 +7,6 @@ related:
   - dispatch-rule-builder
   - kind-builder
   - bld_architecture_dispatch_rule
-  - bld_collaboration_dispatch_rule
-  - p03_sp_admin_orchestrator
 ---
 
 # dispatch-rule-builder Sub-Agent
@@ -89,5 +87,3 @@ Five duties bind any agent that emits an artifact:
 | [[dispatch-rule-builder]] | related | 0.39 |
 | [[kind-builder]] | related | 0.31 |
 | [[bld_architecture_dispatch_rule]] | related | 0.31 |
-| [[bld_collaboration_dispatch_rule]] | related | 0.31 |
-| [[p03_sp_admin_orchestrator]] | related | 0.30 |

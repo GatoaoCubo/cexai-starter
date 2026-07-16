@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - handoff-builder
-  - bld_collaboration_handoff_protocol
   - handoff-protocol-builder
-  - bld_collaboration_handoff
-  - n00_handoff_manifest
 ---
 
 # handoff-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[handoff-builder]] | related | 0.41 |
-| [[bld_collaboration_handoff_protocol]] | related | 0.38 |
 | [[handoff-protocol-builder]] | related | 0.37 |
-| [[bld_collaboration_handoff]] | related | 0.37 |
-| [[n00_handoff_manifest]] | related | 0.34 |

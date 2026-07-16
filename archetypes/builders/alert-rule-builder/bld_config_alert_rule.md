@@ -14,12 +14,6 @@ keywords: [context sources, alert rule memory, naming conventions, output paths,
 density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
-related:
-  - bld_context_sources_data_contract
-  - bld_context_sources_bounded_context
-  - bld_context_sources_deployment_manifest
-  - bld_context_sources_slo_definition
-  - bld_context_sources_canary_config
 ---
 # Context Sources: alert_rule
 ## Mandatory Sources (load at F3 INJECT)
@@ -68,12 +62,3 @@ cross_refs_verified: true
 python _tools/cex_compile.py {FILE}
 python _tools/cex_doctor.py --scope {BUILDER}
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_context_sources_data_contract]] | sibling | 0.47 |
-| [[bld_context_sources_bounded_context]] | sibling | 0.47 |
-| [[bld_context_sources_deployment_manifest]] | upstream | 0.42 |
-| [[bld_context_sources_slo_definition]] | upstream | 0.42 |
-| [[bld_context_sources_canary_config]] | upstream | 0.41 |

@@ -29,9 +29,6 @@ density_score: 0.93
 llm_function: REASON
 related:
   - prompt-template-builder
-  - bld_knowledge_card_prompt_template
-  - bld_collaboration_prompt_template
-  - schema_prompt_template_builder
   - bld_memory_prompt_template
 ---
 ## Context

@@ -19,10 +19,7 @@ keywords: [architecture decision record, and consequences, context completeness,
 density_score: 0.90
 related:
   - bld_architecture_decision_record
-  - p11_qg_quality_gate
-  - bld_instruction_decision_record
   - decision-record-builder
-  - p11_qg_cli_tool
 ---
 ## Quality Gate
 

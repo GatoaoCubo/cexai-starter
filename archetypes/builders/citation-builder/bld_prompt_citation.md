@@ -31,10 +31,6 @@ keywords:
   - "present check"
 density_score: 0.90
 related:
-  - p01_kc_citation
-  - bld_output_template_citation
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
   - bld_schema_citation
 ---
 # Instructions: How to Produce a citation
@@ -94,7 +90,6 @@ python _tools/cex_skill_loader.py --verify citation
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kc_citation]] | upstream | 0.42 |
-| [[bld_output_template_citation]] | downstream | 0.40 |
 | [[bld_prompt_retriever_config]] | sibling | 0.39 |
 | [[bld_prompt_output_validator]] | sibling | 0.39 |
 | [[bld_schema_citation]] | downstream | 0.39 |

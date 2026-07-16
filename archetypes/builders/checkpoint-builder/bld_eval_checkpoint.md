@@ -19,8 +19,6 @@ keywords: [workflow checkpoint, auditable workflow execution, workflow_ref prese
 density_score: 0.90
 related:
   - checkpoint-builder
-  - bld_instruction_checkpoint
-  - bld_collaboration_checkpoint
   - bld_schema_checkpoint
   - bld_architecture_checkpoint
 ---

@@ -31,7 +31,6 @@ keywords:
   - "## file inventory"
 density_score: 0.90
 related:
-  - bld_instruction_agent_package
   - bld_schema_kind
   - bld_config_agent_package
   - bld_schema_scoring_rubric

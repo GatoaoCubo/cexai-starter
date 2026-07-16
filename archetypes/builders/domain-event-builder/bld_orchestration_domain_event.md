@@ -16,10 +16,6 @@ created: "2026-04-17"
 updated: "2026-07-04"
 related:
   - domain-event-builder
-  - p01_kc_domain_event
-  - bld_rules_aggregate_root
-  - bld_kc_domain_event
-  - bld_rules_bounded_context
 ---
 # Collaboration: domain_event-builder (Builder Rules Retained)
 
@@ -92,7 +88,3 @@ python _tools/cex_doctor.py --scope orchestration
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[domain-event-builder]] | downstream | 0.40 |
-| [[p01_kc_domain_event]] | upstream | 0.39 |
-| [[bld_rules_aggregate_root]] | upstream | 0.37 |
-| [[bld_kc_domain_event]] | upstream | 0.36 |
-| [[bld_rules_bounded_context]] | sibling | 0.36 |

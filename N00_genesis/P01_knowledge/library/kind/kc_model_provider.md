@@ -18,11 +18,8 @@ keywords: [model, provider, llm, routing, anthropic, openai, google, fallback]
 feeds_kinds: [model_provider]
 density_score: null
 related:
-  - bld_collaboration_model_provider
   - model-provider-builder
-  - bld_knowledge_card_model_provider
   - bld_memory_model_provider
-  - p03_ins_model_provider
 ---
 
 # Model Provider
@@ -83,4 +80,3 @@ A model provider config defines how CEX connects to an LLM API. Each provider ha
 | [[model-provider-builder]] | related | 0.56 |
 | [[bld_knowledge_model_provider]] | sibling | 0.54 |
 | [[bld_memory_model_provider]] | downstream | 0.53 |
-| [[p03_ins_model_provider]] | downstream | 0.52 |

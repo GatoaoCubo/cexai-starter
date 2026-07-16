@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - quality-gate-builder
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p11_fb_quality_gate
-  - bld_collaboration_quality_gate
 ---
 
 # quality-gate-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[quality-gate-builder]] | related | 0.35 |
 | [[kind-builder]] | related | 0.31 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[p11_fb_quality_gate]] | related | 0.26 |
-| [[bld_collaboration_quality_gate]] | related | 0.26 |

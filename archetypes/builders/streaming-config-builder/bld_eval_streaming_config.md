@@ -18,11 +18,8 @@ updated: "2026-04-13"
 keywords: [streaming_config -- sse, gates for streaming_config, validates protocol enum, buffer positivity, heartbeat presence, lifecycle completeness, quality-gate]
 density_score: 0.92
 related:
-  - bld_output_template_streaming_config
   - bld_architecture_streaming_config
-  - p11_qg_quality_gate
   - bld_schema_streaming_config
-  - bld_collaboration_streaming_config
 ---
 ## Quality Gate
 

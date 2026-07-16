@@ -18,12 +18,6 @@ keywords: [memory_benchmark construction, collaboration memory benchmark, memory
 generates, receives from, produces for, boundary  
 does, related artifacts]
 density_score: 0.85
-related:
-  - bld_collaboration_memory_scope
-  - bld_collaboration_benchmark_suite
-  - bld_collaboration_memory_type
-  - bld_output_template_memory_benchmark
-  - n00_memory_benchmark_manifest
 ---
 ## Crew Role  
 Generates and validates memory-specific benchmark tests, ensuring alignment with evaluation criteria and data integrity.  
@@ -44,12 +38,3 @@ Generates and validates memory-specific benchmark tests, ensuring alignment with
 
 ## Boundary  
 Does NOT handle system architecture design (memory_architecture) or general-purpose benchmarks (benchmark_suite).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_memory_scope]] | sibling | 0.38 |
-| [[bld_collaboration_benchmark_suite]] | sibling | 0.34 |
-| [[bld_collaboration_memory_type]] | sibling | 0.34 |
-| [[bld_output_template_memory_benchmark]] | upstream | 0.30 |
-| [[n00_memory_benchmark_manifest]] | upstream | 0.30 |

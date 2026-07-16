@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - preference-dataset-builder
-  - bld_collaboration_preference_dataset
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p11_fb_preference_dataset
 ---
 
 # preference-dataset-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[preference-dataset-builder]] | related | 0.37 |
-| [[bld_collaboration_preference_dataset]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.30 |
-| [[p11_fb_preference_dataset]] | related | 0.28 |

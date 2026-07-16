@@ -33,11 +33,8 @@ llm_function: BECOME
 parent: null
 8f: "F5_call"
 related:
-  - bld_collaboration_plugin
   - bld_architecture_plugin
   - bld_memory_plugin
-  - bld_knowledge_card_plugin
-  - n00_plugin_manifest
 ---
 ## Identity
 
@@ -118,8 +115,5 @@ You extend ??? you do not intercept single events (hook), orchestrate multi-phas
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_plugin]] | related | 0.73 |
 | [[bld_architecture_plugin]] | downstream | 0.65 |
 | [[bld_memory_plugin]] | downstream | 0.64 |
-| [[bld_knowledge_card_plugin]] | upstream | 0.58 |
-| [[n00_plugin_manifest]] | related | 0.54 |

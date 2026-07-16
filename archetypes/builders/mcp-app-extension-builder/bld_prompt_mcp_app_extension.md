@@ -31,10 +31,6 @@ keywords:
 density_score: 0.85
 related:
   - mcp-app-extension-builder
-  - bld_knowledge_card_mcp_app_extension
-  - p04_qg_mcp_app_extension
-  - bld_output_template_mcp_app_extension
-  - bld_collaboration_mcp_app_extension
 ---
 ## Phase 1: RESEARCH
 1. Read the latest SEP-1865 draft (Anthropic + OpenAI, AAIF Linux Foundation track).
@@ -68,7 +64,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[mcp-app-extension-builder]] | downstream | 0.58 |
-| [[bld_knowledge_card_mcp_app_extension]] | upstream | 0.51 |
-| [[p04_qg_mcp_app_extension]] | downstream | 0.50 |
-| [[bld_output_template_mcp_app_extension]] | downstream | 0.45 |
-| [[bld_collaboration_mcp_app_extension]] | downstream | 0.43 |

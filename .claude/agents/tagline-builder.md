@@ -4,11 +4,8 @@ description: "Builds ONE tagline artifact via 8F pipeline. Loads tagline-builder
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - n00_tagline_manifest
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_tools_tagline
-  - bld_collaboration_tagline
 ---
 
 # tagline-builder Sub-Agent

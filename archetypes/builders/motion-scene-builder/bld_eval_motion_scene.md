@@ -16,10 +16,7 @@ tldr: "HARD + SOFT gates for motion_scene: six groups, monotonic keyframes, a11y
 density_score: 0.9
 related:
   - bld_schema_motion_scene
-  - p06_vs_motion_scene
   - bld_output_motion_scene
-  - p05_ms_ferro_lowerthird
-  - p01_kc_motion_scene
 ---
 
 # Gate: motion_scene
@@ -54,7 +51,7 @@ Sum weights 8.0; `soft = sum(weight*score)/8.0*10`.
 | >= 7.0 | REVISE -- a11y or token resolution needs work |
 | < 7.0 | REJECT |
 ## Golden vs Anti
-- GOLDEN: [[p05_ms_ferro_lowerthird]] -- six groups, monotonic t, WCAG-safe text, reduced-motion
+- GOLDEN: p05_ms_ferro_lowerthird -- six groups, monotonic t, WCAG-safe text, reduced-motion
   variant, all four primitives, binds ferro design_system, leverage complete.
 - ANTI: keyframe t non-monotonic; literal hex values not resolved from design_system; missing
   prefers_reduced_motion; binds_design_system empty; spring easing with no reduced-motion fallback.
@@ -62,7 +59,4 @@ Sum weights 8.0; `soft = sum(weight*score)/8.0*10`.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_motion_scene]] | upstream | 0.55 |
-| [[p06_vs_motion_scene]] | upstream | 0.5 |
 | [[bld_output_motion_scene]] | sibling | 0.42 |
-| [[p05_ms_ferro_lowerthird]] | example | 0.42 |
-| [[p01_kc_motion_scene]] | related | 0.4 |

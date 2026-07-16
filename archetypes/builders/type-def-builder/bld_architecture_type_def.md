@@ -18,10 +18,7 @@ keywords: [component map of type_def, and architectural position, type def const
 density_score: 0.90
 related:
   - type-def-builder
-  - n00_type_def_manifest
-  - bld_collaboration_type_def
   - bld_memory_type_def
-  - bld_knowledge_card_type_def
 ---
 # Architecture: type_def in the CEX
 ## Component Inventory

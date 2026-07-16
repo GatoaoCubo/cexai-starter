@@ -34,9 +34,6 @@ parent: null
 8f: "F3_inject"
 related:
   - system-prompt-builder
-  - bld_collaboration_action_prompt
-  - bld_instruction_action_prompt
-  - bld_knowledge_card_action_prompt
   - prompt-version-builder
 ---
 ## Identity

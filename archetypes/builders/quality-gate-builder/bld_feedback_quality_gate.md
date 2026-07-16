@@ -15,12 +15,6 @@ llm_function: GOVERN
 density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-22"
-related:
-  - p11_fb_pattern
-  - p11_fb_context_file
-  - p11_fb_api_reference
-  - p11_fb_kind
-  - p11_fb_workflow
 ---
 # Feedback: Quality Gate
 
@@ -85,12 +79,3 @@ average: 8.0+
 gates_passed: 7/7
 density: 0.85+
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p11_fb_pattern]] | sibling | 0.79 |
-| [[p11_fb_context_file]] | sibling | 0.78 |
-| [[p11_fb_api_reference]] | sibling | 0.78 |
-| [[p11_fb_kind]] | sibling | 0.78 |
-| [[p11_fb_workflow]] | sibling | 0.78 |

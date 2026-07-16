@@ -20,10 +20,6 @@ domain: domain_driven_design
 tldr: "Architecture constraints for aggregate_root: Evans topology, invariant enforcement, event emission, repository pattern."
 related:
   - bld_knowledge_aggregate_root
-  - kc_aggregate_root
-  - bld_manifest_aggregate_root
-  - bld_instruction_aggregate_root
-  - bld_rules_aggregate_root
 ---
 # Architecture: aggregate_root
 
@@ -80,7 +76,3 @@ AggregateRoot (identity + invariant enforcer)
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_aggregate_root]] | sibling | 0.60 |
-| [[kc_aggregate_root]] | sibling | 0.57 |
-| [[bld_manifest_aggregate_root]] | sibling | 0.49 |
-| [[bld_instruction_aggregate_root]] | related | 0.47 |
-| [[bld_rules_aggregate_root]] | sibling | 0.45 |

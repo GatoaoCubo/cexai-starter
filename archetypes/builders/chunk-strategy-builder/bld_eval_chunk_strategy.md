@@ -27,12 +27,6 @@ keywords:
   - "chunk-strategy"
   - "kind: chunk_strategy"
 density_score: 1.0
-related:
-  - p11_qg_constraint_spec
-  - p11_qg_retriever_config
-  - p11_qg_quality_gate
-  - p11_qg_output_validator
-  - bld_instruction_chunk_strategy
 ---
 ## Quality Gate
 

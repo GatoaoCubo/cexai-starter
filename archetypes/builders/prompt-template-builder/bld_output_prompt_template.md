@@ -13,12 +13,6 @@ created: "2026-04-07"
 updated: "2026-04-07"
 density_score: 0.90
 llm_function: PRODUCE
-related:
-  - p03_ins_prompt_template
-  - bld_output_template_input_schema
-  - schema_prompt_template_builder
-  - bld_output_template_visual_workflow
-  - bld_output_template_env_config
 ---
 id: p03_pt_`{{topic_slug}}`
 kind: prompt_template
@@ -86,8 +80,4 @@ density_score: `{{density_score}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_prompt_template]] | related | 0.29 |
-| [[bld_output_template_input_schema]] | sibling | 0.25 |
-| [[schema_prompt_template_builder]] | related | 0.24 |
 | bld_output_template_visual_workflow | sibling | 0.23 |
-| [[bld_output_template_env_config]] | sibling | 0.21 |

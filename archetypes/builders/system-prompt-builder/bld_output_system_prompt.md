@@ -31,11 +31,8 @@ keywords:
   - "no filler. ## rules 1. always"
 density_score: 0.90
 related:
-  - bld_knowledge_card_system_prompt
   - system-prompt-builder
-  - p11_qg_system_prompt
   - bld_schema_system_prompt
-  - bld_output_template_action_prompt
 ---
 # Output Template: system_prompt
 ```yaml
@@ -107,6 +104,4 @@ If asked outside my boundary, I say so and suggest the correct `{{alternative}}`
 |----------|-------------|-------|
 | [[bld_knowledge_system_prompt]] | upstream | 0.38 |
 | [[system-prompt-builder]] | upstream | 0.37 |
-| [[p11_qg_system_prompt]] | upstream | 0.33 |
 | [[bld_schema_system_prompt]] | downstream | 0.32 |
-| [[bld_output_template_action_prompt]] | sibling | 0.32 |

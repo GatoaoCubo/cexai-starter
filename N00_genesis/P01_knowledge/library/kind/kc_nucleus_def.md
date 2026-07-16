@@ -23,8 +23,6 @@ related:
   - nucleus_def_n01
   - nucleus_def_n03
   - nucleus_def_n04
-  - bld_knowledge_card_nucleus_def
-  - component_map_n01
 ---
 
 # CEX Nucleus Definition (N00-N07)

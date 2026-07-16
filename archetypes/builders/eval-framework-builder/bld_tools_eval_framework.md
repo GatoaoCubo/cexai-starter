@@ -17,10 +17,8 @@ updated: "2026-04-14"
 keywords: [eval_framework construction, tools eval framework, real cex pipeline tools, eval_framework, builder, tools, production tools, domain tools, filesystem tools, related artifacts]
 density_score: 0.90
 related:
-  - bld_knowledge_card_eval_framework
   - bld_tools_workflow_node
   - bld_schema_eval_framework
-  - bld_collaboration_eval_dataset
   - bld_tools_judge_config
 ---
 ## Production Tools (CEX pipeline -- real, on disk)
@@ -56,8 +54,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_eval_framework]] | upstream | 0.43 |
 | [[bld_tools_workflow_node]] | sibling | 0.34 |
 | [[bld_schema_eval_framework]] | downstream | 0.27 |
-| [[bld_collaboration_eval_dataset]] | downstream | 0.27 |
 | [[bld_tools_judge_config]] | sibling | 0.27 |

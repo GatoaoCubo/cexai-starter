@@ -19,9 +19,6 @@ density_score: 0.85
 related:
   - bld_tools_roi_calculator
   - opportunity-matrix-builder
-  - sourcing
-  - p08_adr_opportunity_matrix_kind
-  - bld_instruction_opportunity_matrix
 ---
 ## Production Tools
 | Tool | Purpose | When |

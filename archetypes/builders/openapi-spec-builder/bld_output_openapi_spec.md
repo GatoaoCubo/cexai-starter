@@ -31,9 +31,6 @@ keywords:
   - "## openapi document"
 density_score: 0.90
 related:
-  - p06_oas_cex_sdk
-  - p10_lr_openapi_spec_builder
-  - p11_qg_openapi_spec
   - bld_architecture_openapi_spec
   - bld_schema_openapi_spec
 ---
@@ -154,7 +151,5 @@ Operations without auth: `{{list_public_paths_or_none}}`
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | p06_oas_cex_sdk | downstream | 0.67 |
-| [[p10_lr_openapi_spec_builder]] | downstream | 0.39 |
-| [[p11_qg_openapi_spec]] | downstream | 0.36 |
 | [[bld_architecture_openapi_spec]] | downstream | 0.34 |
 | [[bld_schema_openapi_spec]] | downstream | 0.30 |

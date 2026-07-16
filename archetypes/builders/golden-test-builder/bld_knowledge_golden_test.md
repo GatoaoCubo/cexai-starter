@@ -20,10 +20,6 @@ golden, spec table, golden tests]
 density_score: 0.90
 related:
   - golden-test-builder
-  - p10_lr_golden_test_builder
-  - bld_collaboration_golden_test
-  - bld_instruction_golden_test
-  - bld_output_template_golden_test
 ---
 # Domain Knowledge: golden_test
 ## Executive Summary
@@ -76,7 +72,5 @@ Golden tests are curated reference artifacts scoring >= 9.5 that serve as calibr
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[golden-test-builder]] | downstream | 0.46 |
-| [[p10_lr_golden_test_builder]] | downstream | 0.44 |
 | [[bld_orchestration_golden_test]] | downstream | 0.43 |
 | [[bld_prompt_golden_test]] | downstream | 0.39 |
-| [[bld_output_template_golden_test]] | downstream | 0.30 |

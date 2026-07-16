@@ -22,8 +22,6 @@ feeds_kinds: [learning_record]
 density_score: 0.9
 related:
   - learning-record-builder
-  - bld_collaboration_learning_record
-  - p01_kc_pillar_brief_p10_memory_en
   - bld_memory_learning_record
 ---
 

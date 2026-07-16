@@ -33,9 +33,7 @@ density_score: 0.90
 related:
   - bld_architecture_regression_check
   - regression-check-builder
-  - p11_qg_regression_check
   - bld_schema_regression_check
-  - bld_knowledge_card_regression_check
 ---
 # Output Template: regression_check
 ```yaml
@@ -113,6 +111,4 @@ scope: "{{which_prompt_model_or_pipeline}}"
 |----------|-------------|-------|
 | [[bld_architecture_regression_check]] | downstream | 0.38 |
 | [[regression-check-builder]] | downstream | 0.36 |
-| [[p11_qg_regression_check]] | downstream | 0.36 |
 | [[bld_schema_regression_check]] | downstream | 0.36 |
-| [[bld_knowledge_card_regression_check]] | upstream | 0.35 |

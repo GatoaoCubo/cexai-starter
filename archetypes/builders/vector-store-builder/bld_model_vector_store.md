@@ -31,10 +31,6 @@ parent: null
 8f: "F2_become"
 related:
   - bld_memory_vector_store
-  - bld_collaboration_vector_store
-  - bld_knowledge_card_vector_store
-  - p03_ins_vector_store
-  - n00_vector_store_manifest
 ---
 ## Identity
 
@@ -128,5 +124,4 @@ Body sections: Boundary, Backend Matrix, Index Configuration, Namespace Strategy
 | [[bld_memory_vector_store]] | downstream | 0.57 |
 | [[bld_orchestration_vector_store]] | related | 0.56 |
 | [[bld_knowledge_vector_store]] | upstream | 0.51 |
-| [[p03_ins_vector_store]] | downstream | 0.50 |
 | n00_vector_store_manifest | upstream | 0.46 |

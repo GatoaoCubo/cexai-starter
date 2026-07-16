@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - drift-detector-builder
-  - p03_sp_builder_nucleus
   - kind-builder
-  - bld_collaboration_drift_detector
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # drift-detector-builder Sub-Agent
@@ -87,7 +84,4 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[drift-detector-builder]] | related | 0.33 |
-| [[p03_sp_builder_nucleus]] | related | 0.32 |
 | [[kind-builder]] | related | 0.31 |
-| [[bld_collaboration_drift_detector]] | related | 0.30 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.29 |

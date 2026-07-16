@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - session-backend-builder
   - bld_architecture_session_backend
-  - bld_collaboration_session_backend
-  - p01_kc_session_backend
   - bld_tools_session_backend
 ---
 

@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [sandbox_config construction, instruction sandbox config, sandbox_config, builder, instruction, related artifacts, resource limits, network policy, filesystem scope, capabilities drop]
 density_score: 0.85
-related:
-  - bld_output_template_sandbox_config
-  - bld_knowledge_card_sandbox_config
-  - p09_qg_sandbox_config
-  - sandbox_config_n03
-  - n05_audit_hybrid_review2
 ---
 ## Phase 1: RESEARCH
 1. Identify platform: E2B (Firecracker microVM), Modal (container), Daytona (devcontainer),
@@ -55,12 +49,3 @@ related:
 - [ ] no_new_privs: true set
 - [ ] H01-H08 HARD gates pass (schema, pattern, limits, network, filesystem, seccomp, no-privileged)
 - [ ] SOFT score >= 8.0 before publish
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_output_template_sandbox_config]] | downstream | 0.48 |
-| [[bld_knowledge_card_sandbox_config]] | upstream | 0.44 |
-| [[p09_qg_sandbox_config]] | downstream | 0.43 |
-| [[sandbox_config_n03]] | downstream | 0.37 |
-| [[n05_audit_hybrid_review2]] | downstream | 0.32 |

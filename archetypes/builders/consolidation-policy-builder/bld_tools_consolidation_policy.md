@@ -19,9 +19,7 @@ density_score: 0.90
 related:
   - bld_tools_procedural_memory
   - bld_tools_memory_architecture
-  - bld_instruction_consolidation_policy
   - consolidation-policy-builder
-  - p10_qg_consolidation_policy
 ---
 ## CEX Production Tools
 
@@ -59,6 +57,4 @@ related:
 |----------|-------------|-------|
 | [[bld_tools_procedural_memory]] | sibling | 0.41 |
 | [[bld_tools_memory_architecture]] | sibling | 0.41 |
-| [[bld_instruction_consolidation_policy]] | upstream | 0.38 |
 | [[consolidation-policy-builder]] | downstream | 0.34 |
-| [[p10_qg_consolidation_policy]] | downstream | 0.31 |

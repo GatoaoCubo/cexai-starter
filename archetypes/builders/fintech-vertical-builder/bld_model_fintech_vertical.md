@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - p01_qg_fintech_vertical
-  - bld_instruction_fintech_vertical
-  - bld_knowledge_card_fintech_vertical
-  - p10_mem_fintech_vertical_builder
-  - p01_kc_fintech_vertical
 ---
 ## Identity
 
@@ -70,12 +64,3 @@ ALWAYS reference ISO 20022 for payment messaging and SOX 404 for financial contr
 NEVER produce compliance_checklist (audit) or case_study (reference) content
 NEVER generate legal interpretations or unactionable recommendations
 NEVER say "follow regulations" -- cite the specific regulation and requirement number
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p01_qg_fintech_vertical]] | downstream | 0.68 |
-| [[bld_instruction_fintech_vertical]] | downstream | 0.65 |
-| [[bld_knowledge_card_fintech_vertical]] | related | 0.60 |
-| [[p10_mem_fintech_vertical_builder]] | downstream | 0.60 |
-| [[p01_kc_fintech_vertical]] | related | 0.49 |

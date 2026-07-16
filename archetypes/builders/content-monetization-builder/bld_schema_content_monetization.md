@@ -18,7 +18,6 @@ updated: "2026-04-07"
 keywords: [formal schema, content monetization construction, schema content monetization, content_monetization, builder, examples, config schema, centavos cents, integer tier, signature_algo const]
 density_score: 0.90
 related:
-  - bld_schema_social_publisher
   - bld_schema_usage_report
   - bld_schema_dataset_card
   - bld_schema_quickstart_guide

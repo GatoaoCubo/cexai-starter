@@ -5,10 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - bld_collaboration_dual_loop_architecture
-  - p11_fb_dual_loop_architecture
-  - p03_sp_builder_nucleus
-  - bld_instruction_dual_loop_architecture
 ---
 
 # dual-loop-architecture-builder Sub-Agent
@@ -87,7 +83,3 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[kind-builder]] | related | 0.32 |
-| [[bld_collaboration_dual_loop_architecture]] | related | 0.30 |
-| [[p11_fb_dual_loop_architecture]] | related | 0.29 |
-| [[p03_sp_builder_nucleus]] | related | 0.29 |
-| [[bld_instruction_dual_loop_architecture]] | related | 0.28 |

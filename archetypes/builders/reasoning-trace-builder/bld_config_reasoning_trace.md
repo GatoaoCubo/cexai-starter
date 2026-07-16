@@ -28,9 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, and operational constraints, reasoning trace construction, config reasoning trace, reasoning_trace, builder, examples, "p03_rt_{agent}_{timestamp}.yaml", p03_rt_research_agent_20260406t143000.yaml]
 density_score: 0.90
 related:
-  - bld_knowledge_card_reasoning_trace
-  - bld_collaboration_reasoning_trace
-  - p01_kc_reasoning_trace
   - reasoning-trace-builder
   - bld_tools_reasoning_trace
 ---
@@ -98,8 +95,5 @@ python _tools/cex_score.py --apply bld-config-reasoning-trace.md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_reasoning_trace]] | upstream | 0.53 |
-| [[bld_collaboration_reasoning_trace]] | upstream | 0.52 |
-| [[p01_kc_reasoning_trace]] | upstream | 0.51 |
 | [[reasoning-trace-builder]] | upstream | 0.50 |
 | [[bld_tools_reasoning_trace]] | upstream | 0.50 |

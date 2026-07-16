@@ -31,9 +31,7 @@ keywords:
   - "| ## error handling 1. **message**:"
 density_score: 0.90
 related:
-  - p11_qg_validator
   - bld_schema_validator
-  - bld_knowledge_card_validator
   - bld_memory_validator
   - validator-builder
 ---
@@ -112,7 +110,6 @@ density_score: {{0.80_to_1.00}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_validator]] | downstream | 0.49 |
 | [[bld_schema_validator]] | downstream | 0.41 |
 | [[bld_knowledge_validator]] | upstream | 0.39 |
 | [[bld_memory_validator]] | downstream | 0.36 |

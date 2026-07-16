@@ -21,10 +21,6 @@ acts, identity
 this]
 density_score: 0.85
 related:
-  - kc_marketplace_app_manifest
-  - bld_instruction_marketplace_app_manifest
-  - bld_collaboration_marketplace_app_manifest
-  - bld_collaboration_app_directory_entry
   - app-directory-entry-builder
 ---
 ## Identity
@@ -73,8 +69,4 @@ NEVER assume platform-specific defaults; require explicit user input.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_marketplace_app_manifest]] | upstream | 0.50 |
-| [[bld_instruction_marketplace_app_manifest]] | upstream | 0.43 |
-| [[bld_collaboration_marketplace_app_manifest]] | downstream | 0.42 |
-| [[bld_collaboration_app_directory_entry]] | downstream | 0.41 |
 | [[app-directory-entry-builder]] | sibling | 0.40 |

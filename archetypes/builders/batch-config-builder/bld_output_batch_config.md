@@ -32,9 +32,6 @@ keywords:
   - "credential env var:"
 density_score: 0.90
 related:
-  - p11_qg_batch_config
-  - bld_instruction_batch_config
-  - bld_knowledge_card_batch_config
   - bld_schema_batch_config
   - bld_architecture_batch_config
 ---
@@ -109,8 +106,5 @@ Credential env var: `{{PROVIDER_API_KEY_ENV_VAR_NAME}}`
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_batch_config]] | downstream | 0.58 |
-| [[bld_instruction_batch_config]] | upstream | 0.51 |
-| [[bld_knowledge_card_batch_config]] | upstream | 0.51 |
 | [[bld_schema_batch_config]] | downstream | 0.49 |
 | [[bld_architecture_batch_config]] | downstream | 0.49 |

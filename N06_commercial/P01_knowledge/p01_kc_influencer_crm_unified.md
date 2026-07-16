@@ -15,7 +15,6 @@ keywords: [unified crm of, ai influencers, seed-intel, influencer, outreach, glo
 every]
 related:
   - p01_kc_influencer_directory_global
-  - p01_kc_outreach_wave1_top20
   - p01_kc_community_directory_global
   - p01_kc_seeding_playbook
 ---

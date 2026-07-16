@@ -33,7 +33,6 @@ keywords:
   - "discord"
 density_score: 0.91
 related:
-  - n00_messaging_gateway_manifest
   - bld_schema_usage_report
   - bld_schema_quickstart_guide
   - bld_schema_reranker_config
@@ -115,7 +114,6 @@ Valid values for platforms_supported and active_platforms:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[n00_messaging_gateway_manifest]] | related | 0.56 |
 | [[bld_schema_usage_report]] | sibling | 0.53 |
 | [[bld_schema_quickstart_guide]] | sibling | 0.51 |
 | [[bld_schema_reranker_config]] | sibling | 0.51 |

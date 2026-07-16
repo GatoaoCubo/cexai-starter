@@ -19,9 +19,6 @@ updated: "2026-04-17"
 keywords: [retry policy construction, collaboration retry policy, transient failure recovery specialist, complements circuit_breaker and rate_limit_config, retry_policy, builder, collaboration, "### crew: production hardening", my role, crew compositions]
 density_score: 0.90
 related:
-  - bld_collaboration_circuit_breaker
-  - bld_collaboration_runtime_rule
-  - bld_collaboration_backpressure_policy
   - retry-policy-builder
   - kc_retry_policy
 ---

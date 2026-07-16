@@ -12,10 +12,6 @@ keywords: [role definition, expertise matrix, communication framework, identity 
 density_score: 1.0
 related:
   - agent-profile-builder
-  - bld_collaboration_agent
-  - bld_knowledge_card_agent
-  - bld_collaboration_system_prompt
-  - p01_kc_agent
 updated: "2026-05-27"
 ---
 

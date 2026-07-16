@@ -18,11 +18,7 @@ last_reviewed: "2026-04-18"
 8f: "F7_govern"
 density_score: 0.88
 related:
-  - bld_collaboration_handoff
   - handoff-builder
-  - p12_ho_admin_template
-  - p01_kc_handoff
-  - bld_collaboration_handoff_protocol
 ---
 ## Quality Gate
 

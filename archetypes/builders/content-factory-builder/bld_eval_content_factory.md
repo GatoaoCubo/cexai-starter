@@ -18,10 +18,7 @@ updated: 2026-07-03
 keywords: [grounding, fan-out completeness, approval birth-state, and publish-seam safety, quality-gate, content-factory, content-fabric, governance]
 density_score: 1.0
 related:
-  - bld_instruction_content_factory
-  - bld_eval_social_publisher
   - content-factory-builder
-  - p01_kc_content_factory
   - bld_schema_content_factory
 ---
 ## Quality Gate

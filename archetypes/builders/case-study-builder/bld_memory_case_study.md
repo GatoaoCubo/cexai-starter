@@ -21,10 +21,6 @@ reviewed, related artifacts, narrative flow]
 density_score: 0.85
 related:
   - case-study-builder
-  - p05_qg_case_study
-  - bld_knowledge_card_case_study
-  - bld_collaboration_client
-  - p10_mem_competitive_matrix_builder
 ---
 ## Observation
 Common issues include vague challenge definitions, overly technical solutions, and outcomes that lack measurable impact. Quotes often feel generic or disconnected from the narrative flow.
@@ -46,7 +42,3 @@ Reviewed artifacts with 30% higher engagement used client-specific metrics (e.g.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[case-study-builder]] | upstream | 0.41 |
-| [[p05_qg_case_study]] | downstream | 0.25 |
-| [[bld_knowledge_card_case_study]] | upstream | 0.23 |
-| [[bld_collaboration_client]] | downstream | 0.23 |
-| [[p10_mem_competitive_matrix_builder]] | sibling | 0.21 |

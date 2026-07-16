@@ -30,12 +30,6 @@ keywords:
   - "write overview"
   - "write memory types"
 density_score: 0.90
-related:
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
-  - bld_instruction_chunk_strategy
-  - bld_instruction_prompt_version
-  - bld_instruction_handoff_protocol
 ---
 # Instructions: How to Produce a memory_scope
 ## Phase 1: RESEARCH

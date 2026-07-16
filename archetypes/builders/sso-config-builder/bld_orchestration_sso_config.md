@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [sso_config construction, collaboration sso config, sso_config, builder, collaboration, crew role  
 designs, receives from, identity provider, service provider, security team]
 density_score: 0.85
-related:
-  - bld_collaboration_eval_metric
-  - bld_collaboration_sandbox_config
-  - bld_collaboration_rbac_policy
-  - bld_collaboration_reranker_config
-  - bld_collaboration_oauth_app_config
 ---
 ## Crew Role  
 Designs and maintains SSO configuration templates and policies, ensuring alignment with identity provider (IdP) and service provider (SP) requirements.  
@@ -43,12 +37,3 @@ Designs and maintains SSO configuration templates and policies, ensuring alignme
 
 ## Boundary  
 Does NOT handle RBAC policies (rbac_policy-builder), secret management (secret_config-builder), or user authentication flows (auth_service).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_eval_metric]] | sibling | 0.28 |
-| [[bld_collaboration_sandbox_config]] | sibling | 0.27 |
-| [[bld_collaboration_rbac_policy]] | sibling | 0.27 |
-| [[bld_collaboration_reranker_config]] | sibling | 0.27 |
-| [[bld_collaboration_oauth_app_config]] | sibling | 0.26 |

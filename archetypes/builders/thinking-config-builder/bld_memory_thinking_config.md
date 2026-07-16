@@ -22,10 +22,6 @@ thinking]
 density_score: 0.88
 related:
   - thinking-config-builder
-  - p11_qg_thinking_config
-  - bld_instruction_thinking_config
-  - bld_collaboration_thinking_config
-  - n00_thinking_config_manifest
 ---
 # Memory: thinking-config-builder
 This ISO configures a thinking budget: how many tokens the model may spend on internal reasoning before emitting.
@@ -93,7 +89,3 @@ and context_window_config in boundary note, (6) validate against H01-H08 HARD ga
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[thinking-config-builder]] | upstream | 0.62 |
-| [[p11_qg_thinking_config]] | downstream | 0.47 |
-| [[bld_instruction_thinking_config]] | upstream | 0.45 |
-| [[bld_collaboration_thinking_config]] | downstream | 0.43 |
-| [[n00_thinking_config_manifest]] | upstream | 0.40 |

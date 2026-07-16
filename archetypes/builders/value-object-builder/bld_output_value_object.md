@@ -27,11 +27,7 @@ density_score: 0.88
 created: "2026-04-17"
 updated: "2026-04-17"
 related:
-  - bld_instruction_value_object
   - bld_schema_value_object
-  - bld_manifest_value_object
-  - bld_quality_gate_value_object
-  - kc_value_object
 ---
 # Output Template: value_object
 ```yaml
@@ -106,8 +102,4 @@ python _tools/cex_doctor.py --scope {BUILDER}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_value_object]] | related | 0.41 |
 | [[bld_schema_value_object]] | related | 0.40 |
-| [[bld_manifest_value_object]] | related | 0.35 |
-| [[bld_quality_gate_value_object]] | related | 0.31 |
-| [[kc_value_object]] | upstream | 0.28 |

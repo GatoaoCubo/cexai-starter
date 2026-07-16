@@ -18,12 +18,6 @@ keywords: [edtech_vertical construction, collaboration edtech vertical, edtech_v
 designs, receives from, produces for, boundary  
 does, related artifacts]
 density_score: 0.85
-related:
-  - bld_collaboration_govtech_vertical
-  - bld_collaboration_legal_vertical
-  - bld_collaboration_healthcare_vertical
-  - bld_collaboration_compliance_framework
-  - bld_collaboration_fintech_vertical
 ---
 ## Crew Role  
 Designs and structures vertical-specific components (e.g., K-12, higher ed, corporate training) for EdTech platforms, ensuring alignment with industry standards and stakeholder needs.  
@@ -44,12 +38,3 @@ Designs and structures vertical-specific components (e.g., K-12, higher ed, corp
 
 ## Boundary  
 Does NOT create course content (handled by course_module) or perform compliance audits (handled by compliance_checklist).
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_collaboration_govtech_vertical]] | sibling | 0.31 |
-| [[bld_collaboration_legal_vertical]] | sibling | 0.29 |
-| [[bld_collaboration_healthcare_vertical]] | sibling | 0.28 |
-| [[bld_collaboration_compliance_framework]] | sibling | 0.27 |
-| [[bld_collaboration_fintech_vertical]] | sibling | 0.27 |

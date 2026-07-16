@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [component inventory, dependency map, agent_grounding_record construction, external standards, pillar position, downstream artifact map, agent_grounding_record]
 density_score: 0.85
 related:
-  - bld_manifest_agent_grounding_record
-  - bld_collaboration_agent_grounding_record
-  - bld_knowledge_card_agent_grounding_record
   - bld_tools_agent_grounding_record
-  - bld_quality_gate_agent_grounding_record
 ---
 # Agent Grounding Record Builder -- Architecture
 
@@ -85,8 +81,4 @@ P10 (Memory) is appropriate because grounding records are persistence artifacts 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_agent_grounding_record]] | downstream | 0.45 |
-| [[bld_collaboration_agent_grounding_record]] | downstream | 0.39 |
-| [[bld_knowledge_card_agent_grounding_record]] | upstream | 0.37 |
 | [[bld_tools_agent_grounding_record]] | upstream | 0.32 |
-| [[bld_quality_gate_agent_grounding_record]] | downstream | 0.28 |

@@ -16,12 +16,6 @@ tldr: "How saga relates to workflow, process_manager, dispatch_rule, and signal.
 8f: "F3_inject"
 keywords: [saga relationships, and signal, architecture, saga, relationship graph, kind boundaries, topology comparison, compensation chain, compensate step, signal saga]
 density_score: null
-related:
-  - kc_saga
-  - bld_manifest_saga
-  - bld_knowledge_card_saga
-  - bld_quality_gate_saga
-  - bld_rules_saga
 ---
 # Architecture: saga
 
@@ -55,12 +49,3 @@ Step 1 OK -> Step 2 OK -> Step 3 FAIL
                 v
 Compensate Step 2 -> Compensate Step 1 (reverse order)
 ```
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_saga]] | sibling | 0.60 |
-| [[bld_manifest_saga]] | downstream | 0.58 |
-| [[bld_knowledge_card_saga]] | sibling | 0.50 |
-| [[bld_quality_gate_saga]] | upstream | 0.48 |
-| [[bld_rules_saga]] | sibling | 0.48 |

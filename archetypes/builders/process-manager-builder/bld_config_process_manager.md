@@ -16,10 +16,6 @@ created: "2026-04-17"
 updated: "2026-04-17"
 related:
   - bld_tools_process_manager
-  - bld_context_sources_value_object
-  - bld_context_sources_deployment_manifest
-  - bld_context_sources_saga
-  - bld_context_sources_slo_definition
 ---
 # Context Sources: process_manager
 ## Mandatory Loads (F3 INJECT)
@@ -70,7 +66,3 @@ python _tools/cex_doctor.py --scope {BUILDER}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_process_manager]] | sibling | 0.42 |
-| [[bld_context_sources_value_object]] | sibling | 0.39 |
-| [[bld_context_sources_deployment_manifest]] | sibling | 0.39 |
-| [[bld_context_sources_saga]] | sibling | 0.38 |
-| [[bld_context_sources_slo_definition]] | sibling | 0.37 |

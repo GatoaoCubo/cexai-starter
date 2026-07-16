@@ -19,9 +19,6 @@ keywords: [baseline comparison configuration, baseline_ref resolvability, thresh
 density_score: 0.90
 related:
   - regression-check-builder
-  - bld_knowledge_card_regression_check
-  - p10_lr_regression_check_builder
-  - bld_instruction_regression_check
   - bld_schema_regression_check
 ---
 ## Quality Gate

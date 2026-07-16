@@ -18,10 +18,6 @@ updated: "2026-03-28"
 keywords: [visual analysis tool definition, and structured output, input type coverage, capability documentation, provider mapping, confidence thresholds, and output schema]
 density_score: 0.90
 related:
-  - p11_qg_cli_tool
-  - p11_qg_document_loader
-  - p11_qg_quality_gate
-  - p11_qg_eval_dataset
   - bld_schema_vision_tool
 ---
 ## Quality Gate

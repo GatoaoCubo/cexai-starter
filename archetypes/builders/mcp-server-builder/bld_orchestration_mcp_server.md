@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - mcp-server-builder
   - bld_memory_mcp_server
-  - p01_kc_mcp_server
-  - p03_ins_mcp_server
-  - n00_mcp_server_manifest
 ---
 # Collaboration: mcp-server-builder
 ## My Role in Crews
@@ -75,5 +72,4 @@ I define MCP server contracts with transport selection, tool schemas, resource U
 | [[mcp-server-builder]] | related | 0.46 |
 | [[bld_memory_mcp_server]] | downstream | 0.43 |
 | [[kc_mcp_server]] | upstream | 0.43 |
-| [[p03_ins_mcp_server]] | upstream | 0.42 |
 | n00_mcp_server_manifest | related | 0.41 |

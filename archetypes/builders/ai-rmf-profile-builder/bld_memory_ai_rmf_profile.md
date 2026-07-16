@@ -20,10 +20,6 @@ profiles]
 density_score: 0.85
 related:
   - ai-rmf-profile-builder
-  - bld_instruction_ai_rmf_profile
-  - p11_qg_ai_rmf_profile
-  - bld_output_template_ai_rmf_profile
-  - bld_knowledge_card_ai_rmf_profile
 ---
 ## Observation
 Organizations commonly produce narrative AI governance documents that lack action-ID specificity, making profiles unauditable. The most frequent gap is missing implementation status per action-ID and no crosswalk to ISO 42001 or EU AI Act.
@@ -45,7 +41,3 @@ NIST AI-RMF Playbook data shows 12 GenAI-specific risk categories introduced in 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[ai-rmf-profile-builder]] | downstream | 0.46 |
-| [[bld_instruction_ai_rmf_profile]] | upstream | 0.43 |
-| [[p11_qg_ai_rmf_profile]] | downstream | 0.34 |
-| [[bld_output_template_ai_rmf_profile]] | upstream | 0.33 |
-| [[bld_knowledge_card_ai_rmf_profile]] | upstream | 0.33 |

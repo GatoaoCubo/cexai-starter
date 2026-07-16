@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [data_residency construction, instruction data residency, data_residency, builder, instruction, related artifacts, downstream, phase, legal, residency]
 density_score: 0.85
-related:
-  - data-residency-builder
-  - bld_knowledge_card_data_residency
-  - p01_kc_data_residency
-  - p10_mem_data_residency_builder
-  - p09_qg_data_residency
 ---
 ## Phase 1: RESEARCH  
 1. Identify applicable regulations (GDPR, CCPA, regional laws).  
@@ -48,12 +42,3 @@ related:
 - [ ] [OK] Encryption and access controls verified  
 - [ ] [OK] Legal compliance confirmed  
 - [ ] [OK] Artifact approved by governance team
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[data-residency-builder]] | downstream | 0.49 |
-| [[bld_knowledge_card_data_residency]] | upstream | 0.46 |
-| [[p01_kc_data_residency]] | downstream | 0.44 |
-| [[p10_mem_data_residency_builder]] | downstream | 0.35 |
-| [[p09_qg_data_residency]] | downstream | 0.34 |

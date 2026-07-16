@@ -27,10 +27,7 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - bld_config_state_machine
-  - kc_state_machine
-  - bld_instruction_state_machine
   - state-machine-builder
-  - bld_collaboration_state_machine
 ---
 ## Summary
 
@@ -101,7 +98,4 @@ Determinism discipline:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_config_state_machine]] | upstream | 0.63 |
-| [[kc_state_machine]] | upstream | 0.57 |
-| [[bld_instruction_state_machine]] | upstream | 0.53 |
 | [[state-machine-builder]] | downstream | 0.51 |
-| [[bld_collaboration_state_machine]] | downstream | 0.50 |

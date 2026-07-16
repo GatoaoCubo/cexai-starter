@@ -40,8 +40,6 @@ related:
   - bld_tools_embedder_provider
   - embedder-provider-builder
   - bld_tools_model_provider
-  - p01_emb_nomic_embed_text
-  - p11_qg_embedder_provider
 ---
 <!-- 8F: F1 kind=embedder_provider P01 | F2 embedder-provider-builder 12 ISOs | F3 schema+examples+memory injected | F4 N07 sloth lens: 512d MRL primary, Ollama fallback | F5 no prior artifact | F6 produced | F7 H01-H10 pass quality:null | F8 compile pending -->
 
@@ -178,4 +176,3 @@ def index_handoffs(paths: list[str]) -> None:
 | [[embedder-provider-builder]] | related | 0.34 |
 | [[bld_tools_model_provider]] | downstream | 0.34 |
 | p01_emb_nomic_embed_text | upstream | 0.33 |
-| [[p11_qg_embedder_provider]] | downstream | 0.32 |

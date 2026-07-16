@@ -19,9 +19,6 @@ keywords: [pipeline_template construction, collaboration pipeline template, pipe
 acts, receives from, produces for]
 density_score: 0.87
 related:
- - bld_collaboration_crew_template
- - kc_pipeline_template
- - bld_collaboration_role_assignment
  - pipeline-template-builder
  - bld_architecture_pipeline_template
 ---
@@ -57,8 +54,5 @@ A pipeline_template CAN be instantiated within a crew_template as the coordinati
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_crew_template]] | sibling | 0.42 |
-| [[kc_pipeline_template]] | upstream | 0.33 |
-| [[bld_collaboration_role_assignment]] | sibling | 0.33 |
 | [[pipeline-template-builder]] | related | 0.31 |
 | [[bld_architecture_pipeline_template]] | upstream | 0.30 |

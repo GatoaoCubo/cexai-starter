@@ -19,10 +19,7 @@ updated: "2026-04-07"
 keywords: [meta-template for generating quality_gates, md of any kind-builder, builder construction, meta quality gates builder, builder, examples, quality gates]
 density_score: 0.90
 related:
-  - bld_knowledge_card_quality_gate
   - bld_memory_quality_gate
-  - p03_ins_quality_gate
-  - p11_qg_quality_gate
   - bld_schema_quality_gate
 ---
 # Quality Gates: {{type_name}}
@@ -133,8 +130,5 @@ Interim: validate manually against this file, checking each gate.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_quality_gate]] | related | 0.46 |
 | [[bld_memory_quality_gate]] | upstream | 0.38 |
-| [[p03_ins_quality_gate]] | related | 0.37 |
-| [[p11_qg_quality_gate]] | related | 0.36 |
 | [[bld_schema_quality_gate]] | upstream | 0.34 |

@@ -18,7 +18,6 @@ keywords: [team_charter construction, knowledge card team charter, team_charter,
 density_score: 0.85
 related:
   - team-charter-builder
-  - bld_collaboration_team_charter
   - bld_tools_team_charter
   - kc_team_charter
   - bld_schema_team_charter

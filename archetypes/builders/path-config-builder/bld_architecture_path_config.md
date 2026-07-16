@@ -18,10 +18,7 @@ keywords: [component map of path_config, and architectural position, path config
 density_score: 0.90
 related:
   - path-config-builder
-  - p03_ins_path_config
-  - n00_path_config_manifest
   - bld_memory_path_config
-  - p01_kc_path_config
 ---
 # Architecture: path_config in the CEX
 ## Component Inventory
@@ -69,7 +66,6 @@ path_config     --signals-->   path_resolution_error
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[path-config-builder]] | downstream | 0.56 |
-| [[p03_ins_path_config]] | upstream | 0.52 |
 | n00_path_config_manifest | downstream | 0.48 |
 | [[bld_memory_path_config]] | downstream | 0.46 |
 | [[kc_path_config]] | downstream | 0.45 |

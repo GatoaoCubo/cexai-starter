@@ -19,7 +19,6 @@ related:
   - bld_orchestration_marketplace_listing
   - bld_tools_marketplace_listing
   - output-validator-builder
-  - spec_dual_output_contract
 ---
 
 # Architecture: where marketplace_listing sits

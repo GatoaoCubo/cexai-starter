@@ -18,10 +18,7 @@ keywords: [llm agent procedural memory, procedural_memory-builder consumes memor
 defines, receives from, produces for]
 density_score: 0.90
 related:
-  - bld_collaboration_memory_architecture
-  - bld_collaboration_consolidation_policy
   - procedural-memory-builder
-  - bld_collaboration_skill
   - memory-architecture-builder
 ---
 ## Crew Role
@@ -63,8 +60,5 @@ In a grid dispatch building a complete agent memory system:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_memory_architecture]] | sibling | 0.60 |
-| [[bld_collaboration_consolidation_policy]] | sibling | 0.57 |
 | [[procedural-memory-builder]] | upstream | 0.46 |
-| [[bld_collaboration_skill]] | sibling | 0.42 |
 | [[memory-architecture-builder]] | upstream | 0.41 |

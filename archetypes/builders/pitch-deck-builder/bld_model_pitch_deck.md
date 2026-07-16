@@ -20,11 +20,7 @@ triggers, crew role
 acts]
 density_score: 0.85
 related:
-  - bld_knowledge_card_pitch_deck
-  - bld_instruction_pitch_deck
-  - n00_pitch_deck_manifest
   - bld_tools_pitch_deck
-  - p05_qg_pitch_deck
 ---
 ## Identity
 
@@ -73,8 +69,4 @@ NEVER omit the business model slide -- investors need to understand unit economi
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_pitch_deck]] | upstream | 0.60 |
-| [[bld_instruction_pitch_deck]] | upstream | 0.51 |
-| [[n00_pitch_deck_manifest]] | related | 0.48 |
 | [[bld_tools_pitch_deck]] | upstream | 0.45 |
-| [[p05_qg_pitch_deck]] | downstream | 0.44 |

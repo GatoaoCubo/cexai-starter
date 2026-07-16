@@ -18,11 +18,7 @@ keywords: [event, notification, async]
 feeds_kinds: [signal]
 density_score: null
 related:
-  - bld_knowledge_card_signal
-  - bld_collaboration_event_schema
   - signal-builder
-  - bld_collaboration_signal
-  - p03_ins_signal_builder
 ---
 
 # Signal
@@ -99,4 +95,3 @@ A signal is a lightweight JSON event file written by one agent and read by anoth
 | bld_collaboration_event_schema | related | 0.42 |
 | [[signal-builder]] | related | 0.40 |
 | [[bld_orchestration_signal]] | related | 0.39 |
-| [[p03_ins_signal_builder]] | upstream | 0.35 |

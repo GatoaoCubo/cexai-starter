@@ -13,7 +13,6 @@ density_score: 0.97
 related:
   - kno_vector_store_n03
   - vector-store-builder
-  - bld_collaboration_vector_store
   - kno_vector_store_n01
 ---
 <!-- 8F: F1=vector_store/P01 F2=vector-store-builder F3=nucleus_def_n05+P01_schema+kc_vector_store+examples+W1 config F4=pgvector backend with auditable namespaces

@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [discovery_questions construction, quality gate discovery questions, discovery_questions, builder, quality_gate, quality gate, fail condition, scoring guide, golden example, deal stage]
 density_score: 0.85
 related:
-  - p10_mem_discovery_questions_builder
   - discovery-questions-builder
-  - bld_instruction_discovery_questions
-  - bld_knowledge_card_discovery_questions
-  - kc_discovery_questions
 ---
 ## Quality Gate
 

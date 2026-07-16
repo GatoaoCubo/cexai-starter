@@ -32,11 +32,8 @@ keywords:
   - "## kind resolution table ###"
 density_score: 0.90
 related:
-  - p03_ins_prompt_compiler
   - prompt-compiler-builder
-  - p11_qg_prompt_compiler
   - bld_architecture_prompt_compiler
-  - bld_knowledge_card_prompt_compiler
 ---
 # Output Template: prompt_compiler
 ```yaml
@@ -107,8 +104,5 @@ density_score: {{0.80_to_1.00}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_prompt_compiler]] | upstream | 0.52 |
 | [[prompt-compiler-builder]] | upstream | 0.44 |
-| [[p11_qg_prompt_compiler]] | downstream | 0.43 |
 | [[bld_architecture_prompt_compiler]] | downstream | 0.42 |
-| [[bld_knowledge_card_prompt_compiler]] | upstream | 0.40 |

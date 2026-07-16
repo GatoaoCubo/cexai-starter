@@ -18,8 +18,6 @@ keywords: [component map of compression_config, and architectural position, comp
 density_score: 0.90
 related:
   - compression-config-builder
-  - p01_kc_compression_config
-  - bld_collaboration_compression_config
   - bld_schema_compression_config
 ---
 ## Component Inventory
@@ -73,6 +71,4 @@ prompt_template (P05) --independent-- compression_config (prompt_template struct
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[compression-config-builder]] | downstream | 0.70 |
-| [[p01_kc_compression_config]] | downstream | 0.60 |
-| [[bld_collaboration_compression_config]] | downstream | 0.58 |
 | [[bld_schema_compression_config]] | upstream | 0.46 |

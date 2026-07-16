@@ -18,10 +18,6 @@ keywords: [and architectural position, cost budget construction, architecture co
 density_score: 0.90
 related:
   - cost-budget-builder
-  - bld_collaboration_cost_budget
-  - n00_cost_budget_manifest
-  - p11_qg_cost_budget
-  - p01_kc_cost_budget
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -79,7 +75,3 @@ feature_flag (P09) --independent-- cost_budget (feature_flag = on/off toggle; co
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cost-budget-builder]] | downstream | 0.70 |
-| [[bld_collaboration_cost_budget]] | downstream | 0.65 |
-| [[n00_cost_budget_manifest]] | downstream | 0.53 |
-| [[p11_qg_cost_budget]] | downstream | 0.52 |
-| [[p01_kc_cost_budget]] | downstream | 0.51 |

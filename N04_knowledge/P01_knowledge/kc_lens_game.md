@@ -19,9 +19,7 @@ keywords: [rpg, tabletop game, quest execution flow, item schema, crafting stati
 density_score: null
 related:
   - kc_lens_index
-  - p03_pt_mentor_journey
   - p01_kc_concept_graph
-  - p03_pt_mentor_storyteller
 ---
 
 # Lens: Game

@@ -32,9 +32,6 @@ density_score: 0.90
 related:
   - bld_tools_function_def
   - rate-limit-config-builder
-  - bld_collaboration_rate_limit_config
-  - bld_knowledge_card_rate_limit_config
-  - p11_qg_rate_limit_config
 ---
 # Tools: rate-limit-config-builder
 
@@ -82,4 +79,3 @@ When building for a known provider, verify limits from official docs before writ
 | [[rate-limit-config-builder]] | downstream | 0.47 |
 | [[bld_orchestration_rate_limit_config]] | downstream | 0.47 |
 | [[bld_knowledge_rate_limit_config]] | upstream | 0.46 |
-| [[p11_qg_rate_limit_config]] | downstream | 0.44 |

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [referral_program construction, output template referral program, referral_program, builder, output_template, referral tiers, referrals required, integration example, related artifacts, tier_ tier]
 density_score: 0.85
-related:
-  - kc_reward_model
-  - p10_lr_reward_model_builder
-  - bld_instruction_referral_program
-  - bld_output_template_reward_model
-  - bld_knowledge_card_reward_model
 ---
 ```yaml
 ---

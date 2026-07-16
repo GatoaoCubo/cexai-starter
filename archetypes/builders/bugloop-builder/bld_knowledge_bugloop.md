@@ -19,10 +19,7 @@ keywords: [automated correction cycles, bugloop construction, knowledge card bug
 bugloops, mean time to recovery, spec table]
 density_score: 0.90
 related:
-  - p01_kc_bugloop
   - bugloop-builder
-  - bld_instruction_bugloop
-  - p10_lr_bugloop_builder
   - bld_architecture_bugloop
 ---
 # Domain Knowledge: bugloop
@@ -82,8 +79,5 @@ DETECT (pattern match) → FIX (strategy, attempt N)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_bugloop]] | sibling | 0.55 |
 | [[bugloop-builder]] | downstream | 0.46 |
-| [[bld_instruction_bugloop]] | downstream | 0.45 |
-| [[p10_lr_bugloop_builder]] | downstream | 0.45 |
 | [[bld_architecture_bugloop]] | downstream | 0.41 |

@@ -17,11 +17,8 @@ updated: "2026-04-14"
 keywords: [pa_manifest construction, learning record c, pa manifest, c2pa_manifest, builder, learning_record, c2pa, content-credential, ai-ml-generator, adobe]
 density_score: 0.85
 related:
-  - bld_knowledge_card_c2pa_manifest
   - c2pa-manifest-builder
   - bld_tools_c2pa_manifest
-  - bld_instruction_c2pa_manifest
-  - p10_qg_c2pa_manifest
 ---
 ## Observation
 C2PA 2.2+ introduced explicit AI-ML generator guidance that was absent in 1.x. Teams using earlier spec versions omit the c2pa.ai_generator assertion entirely, producing manifests that lack attribution for AI-generated content. Adobe Firefly, Nikon, and Microsoft all use C2PA 2.3 natively; artifacts built for these platforms must conform to 2.3.
@@ -43,8 +40,5 @@ C2PA 2.3 spec released 2025. Adobe Firefly native integration confirmed. CAI ver
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_c2pa_manifest]] | upstream | 0.63 |
 | [[c2pa-manifest-builder]] | related | 0.61 |
 | [[bld_tools_c2pa_manifest]] | upstream | 0.59 |
-| [[bld_instruction_c2pa_manifest]] | upstream | 0.50 |
-| [[p10_qg_c2pa_manifest]] | downstream | 0.49 |

@@ -29,11 +29,8 @@ cross_provider:
   anthropic: "File-based MEMORY.md system"
   haystack: "ChatMessageStore"
 related:
-  - bld_knowledge_card_memory_scope
   - memory-scope-builder
-  - bld_collaboration_memory_scope
   - bld_architecture_memory_scope
-  - bld_collaboration_memory_type
 ---
 
 # Memory Scope

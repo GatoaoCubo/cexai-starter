@@ -20,7 +20,6 @@ related:
   - bld_tools_dataset_card
   - bld_tools_rbac_policy
   - bld_tools_usage_quota
-  - bld_instruction_experiment_tracker
   - bld_tools_churn_prevention_playbook
 ---
 ## Production Tools (real, present in `_tools/`)
@@ -60,5 +59,4 @@ related:
 | [[bld_tools_dataset_card]] | sibling | 0.34 |
 | [[bld_tools_rbac_policy]] | sibling | 0.30 |
 | [[bld_tools_usage_quota]] | sibling | 0.30 |
-| [[bld_instruction_experiment_tracker]] | upstream | 0.29 |
 | [[bld_tools_churn_prevention_playbook]] | sibling | 0.29 |

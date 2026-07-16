@@ -22,9 +22,6 @@ linked_artifacts:
   related: []
 related:
   - function-def-builder
-  - bld_knowledge_card_function_def
-  - n00_function_def_manifest
-  - bld_instruction_function_def
   - bld_architecture_function_def
 ---
 

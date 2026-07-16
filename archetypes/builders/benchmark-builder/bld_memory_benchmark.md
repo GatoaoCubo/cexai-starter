@@ -86,6 +86,3 @@ Baseline-anchored benchmark designs reproduced within 5% variance for 11/14 case
 |----------|-------------|-------|
 | [[benchmark-builder]] | upstream | 0.40 |
 | [[bld_architecture_benchmark]] | upstream | 0.39 |
-| [[n00_benchmark_manifest]] | upstream | 0.34 |
-| [[p01_kc_benchmark]] | upstream | 0.30 |
-| [[bld_instruction_benchmark]] | upstream | 0.29 |

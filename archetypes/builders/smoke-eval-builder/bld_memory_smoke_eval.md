@@ -24,10 +24,6 @@ reliable, smoke evals]
 density_score: 0.90
 related:
   - smoke-eval-builder
-  - n00_smoke_eval_manifest
-  - bld_collaboration_smoke_eval
-  - p11_qg_smoke-eval
-  - bld_knowledge_card_smoke_eval
 ---
 # Memory: smoke-eval-builder
 ## Summary
@@ -87,7 +83,3 @@ python _tools/cex_score.py --apply bld-memory-smoke-eval.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[smoke-eval-builder]] | upstream | 0.68 |
-| [[n00_smoke_eval_manifest]] | upstream | 0.54 |
-| [[bld_collaboration_smoke_eval]] | upstream | 0.54 |
-| [[p11_qg_smoke-eval]] | downstream | 0.54 |
-| [[bld_knowledge_card_smoke_eval]] | upstream | 0.49 |

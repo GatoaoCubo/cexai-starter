@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [agents_md construction, tools agents md, tools available for agents, md production, agents_md, builder, tools, production tools, validation tools, detect claude]
 density_score: 0.85
 related:
-  - bld_knowledge_card_agents_md
   - agents-md-builder
-  - p10_lr_agents_md_builder
-  - bld_collaboration_agents_md
-  - bld_instruction_agents_md
 ---
 ## Production Tools
 | Tool             | Purpose                                        | When                        |
@@ -51,8 +47,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_agents_md]] | upstream | 0.52 |
 | [[agents-md-builder]] | downstream | 0.42 |
-| [[p10_lr_agents_md_builder]] | downstream | 0.34 |
-| [[bld_collaboration_agents_md]] | downstream | 0.29 |
-| [[bld_instruction_agents_md]] | upstream | 0.26 |

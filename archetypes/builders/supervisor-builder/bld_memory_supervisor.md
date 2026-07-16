@@ -26,11 +26,8 @@ title: "Memory Supervisor"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_instruction_supervisor
   - supervisor-builder
-  - bld_collaboration_supervisor
   - bld_architecture_supervisor
-  - p01_kc_supervisor
 ---
 ## Summary
 A supervisor definition has one job: coordinate builders. It specifies who runs, when, in what order, what signals to wait for, and what to do when something fails. It does NOT contain the actual task instructions — those travel in handoff files written at dispatch time.
@@ -54,8 +51,5 @@ Clean supervisor definitions averaged 3.2 reuses across missions. Mixed director
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_supervisor]] | upstream | 0.50 |
 | [[supervisor-builder]] | upstream | 0.46 |
-| [[bld_collaboration_supervisor]] | downstream | 0.46 |
 | [[bld_architecture_supervisor]] | upstream | 0.45 |
-| [[p01_kc_supervisor]] | upstream | 0.43 |

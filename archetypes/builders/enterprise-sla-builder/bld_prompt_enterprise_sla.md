@@ -18,10 +18,6 @@ keywords: [enterprise_sla construction, instruction enterprise sla, enterprise_s
 density_score: 0.85
 related:
   - enterprise-sla-builder
-  - p10_mem_enterprise_sla_builder
-  - bld_knowledge_card_enterprise_sla
-  - bld_instruction_safety_policy
-  - bld_instruction_compliance_framework
 ---
 ## Phase 1: RESEARCH  
 1. Identify stakeholder uptime requirements (e.g., 99.99% annual availability).  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[enterprise-sla-builder]] | downstream | 0.44 |
-| [[p10_mem_enterprise_sla_builder]] | downstream | 0.37 |
-| [[bld_knowledge_card_enterprise_sla]] | upstream | 0.31 |
-| [[bld_instruction_safety_policy]] | sibling | 0.31 |
-| [[bld_instruction_compliance_framework]] | sibling | 0.28 |

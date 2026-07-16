@@ -19,12 +19,6 @@ specializes, routing
 keywords, crew role  
 acts]
 density_score: 0.85
-related:
-  - bld_instruction_healthcare_vertical
-  - bld_knowledge_card_healthcare_vertical
-  - p01_qg_healthcare_vertical
-  - p10_mem_healthcare_vertical_builder
-  - kc_healthcare_vertical
 ---
 ## Identity
 
@@ -69,12 +63,3 @@ ALWAYS encrypt PHI in transmission (TLS 1.2+) and storage (AES-256)
 ALWAYS specify 21 CFR Part 11 requirements for clinical trial or electronic signature contexts
 NEVER generate compliance checklists or audit tools
 NEVER include generic IT examples without specific healthcare clinical context (EHR, telehealth, medical devices)
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_healthcare_vertical]] | downstream | 0.60 |
-| [[bld_knowledge_card_healthcare_vertical]] | related | 0.58 |
-| [[p01_qg_healthcare_vertical]] | downstream | 0.57 |
-| [[p10_mem_healthcare_vertical_builder]] | downstream | 0.54 |
-| [[kc_healthcare_vertical]] | related | 0.54 |

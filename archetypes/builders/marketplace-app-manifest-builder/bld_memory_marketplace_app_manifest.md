@@ -19,10 +19,6 @@ common]
 density_score: 0.85
 related:
   - marketplace-app-manifest-builder
-  - bld_instruction_marketplace_app_manifest
-  - p09_qg_marketplace_app_manifest
-  - kc_marketplace_app_manifest
-  - p10_lr_edit_format_builder
 ---
 ## Observation
 Common issues include inconsistent metadata formatting, missing required permission fields, and ambiguous pricing structures that fail validation. Overlooking dependencies or specifying incompatible API versions also leads to deployment errors.
@@ -44,7 +40,3 @@ Reviewed artifacts showed 70% had permission gaps, and 30% lacked clear pricing 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[marketplace-app-manifest-builder]] | upstream | 0.34 |
-| [[bld_instruction_marketplace_app_manifest]] | upstream | 0.28 |
-| [[p09_qg_marketplace_app_manifest]] | downstream | 0.27 |
-| [[kc_marketplace_app_manifest]] | upstream | 0.25 |
-| [[p10_lr_edit_format_builder]] | sibling | 0.23 |

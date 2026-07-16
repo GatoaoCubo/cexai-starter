@@ -18,9 +18,6 @@ keywords: [vc_credential construction, learning record vc credential, vc_credent
 density_score: 0.85
 related:
   - vc-credential-builder
-  - p10_qg_vc_credential
-  - bld_knowledge_card_vc_credential
-  - bld_instruction_vc_credential
   - bld_tools_vc_credential
 ---
 ## Observation
@@ -43,7 +40,4 @@ W3C VC 2.0 became a Recommendation in May 2025. OpenAgents.org launched producti
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[vc-credential-builder]] | related | 0.41 |
-| [[p10_qg_vc_credential]] | downstream | 0.39 |
-| [[bld_knowledge_card_vc_credential]] | upstream | 0.39 |
-| [[bld_instruction_vc_credential]] | upstream | 0.36 |
 | [[bld_tools_vc_credential]] | upstream | 0.34 |

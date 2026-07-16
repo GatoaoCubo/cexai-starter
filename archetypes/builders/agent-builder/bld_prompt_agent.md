@@ -19,10 +19,6 @@ keywords: [agent construction, instruction agent, agent, builder, examples, p02_
 density_score: 0.90
 related:
   - agent-builder
-  - bld_collaboration_agent
-  - p01_kc_agent
-  - bld_knowledge_card_agent
-  - bld_instruction_boot_config
 ---
 # Instructions: How to Produce an agent
 ## Phase 1: RESEARCH

@@ -27,10 +27,6 @@ density_score: 0.90
 llm_function: INJECT
 related:
   - feature-flag-builder
-  - bld_knowledge_card_feature_flag
-  - bld_collaboration_feature_flag
-  - bld_instruction_feature_flag
-  - p09_ff_n05
 ---
 ## Summary
 Feature flags enable gradual rollout and emergency disable without code deployment. The builder must enforce four category types, integer rollout percentages, expiration dates, and kill switch documentation or flags become permanent liabilities that no one knows how to safely disable.
@@ -107,7 +103,3 @@ python _tools/cex_score.py --apply --verbose p10_lr_feature_flag_builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[feature-flag-builder]] | upstream | 0.50 |
-| [[bld_knowledge_card_feature_flag]] | upstream | 0.49 |
-| [[bld_collaboration_feature_flag]] | downstream | 0.42 |
-| [[bld_instruction_feature_flag]] | upstream | 0.41 |
-| [[p09_ff_n05]] | upstream | 0.38 |

@@ -25,10 +25,7 @@ prospective, related artifacts]
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_prospective_memory
   - prospective-memory-builder
-  - p01_kc_prospective_memory
-  - p10_qg_prospective_memory
   - bld_architecture_prospective_memory
 ---
 ## Summary
@@ -58,8 +55,5 @@ Prospective memory fails when action payloads are vague. An agent that restarts 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_prospective_memory]] | upstream | 0.38 |
 | [[prospective-memory-builder]] | related | 0.37 |
-| [[p01_kc_prospective_memory]] | related | 0.33 |
-| [[p10_qg_prospective_memory]] | downstream | 0.32 |
 | [[bld_architecture_prospective_memory]] | upstream | 0.30 |

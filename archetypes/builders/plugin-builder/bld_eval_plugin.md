@@ -17,7 +17,6 @@ updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.85
 related:
-  - bld_collaboration_plugin
   - plugin-builder
   - bld_architecture_plugin
   - bld_schema_plugin

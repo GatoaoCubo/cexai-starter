@@ -26,9 +26,7 @@ tldr: "Naming, paths, and size limits for prompt_package -- the registered conve
 keywords: [config prompt package, naming, p03_pp_task_id, pp_target_kind_session_id, cex_decompose.py, max_bytes, 16384]
 density_score: 0.90
 related:
-  - p03_ins_prompt_package
   - bld_memory_prompt_package
-  - bld_knowledge_card_prompt_package
   - prompt-package-builder
   - bld_orchestration_prompt_package
 ---
@@ -105,7 +103,6 @@ than resolved unilaterally.
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_prompt_package]] | upstream | 0.40 |
 | [[bld_memory_prompt_package]] | downstream | 0.40 |
 | [[bld_knowledge_prompt_package]] | upstream | 0.38 |
 | [[prompt-package-builder]] | upstream | 0.36 |

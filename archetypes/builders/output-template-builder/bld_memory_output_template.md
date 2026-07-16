@@ -26,11 +26,7 @@ title: "Memory Output Template"
 density_score: 0.87
 llm_function: INJECT
 related:
-  - bld_knowledge_card_output_template
-  - bld_instruction_output_template
-  - bld_output_template_output_template
   - bld_schema_output_template
-  - n00_output_template_manifest
 ---
 ## Summary
 output_template artifacts describe TWO distinct usages under one kind name, and the
@@ -135,6 +131,5 @@ python _tools/cex_score.py --apply --verbose p10_lr_output_template_builder.md
 |----------|-------------|-------|
 | [[bld_knowledge_output_template]] | upstream | 0.38 |
 | [[bld_prompt_output_template]] | upstream | 0.36 |
-| [[bld_output_template_output_template]] | upstream | 0.32 |
 | [[bld_schema_output_template]] | upstream | 0.30 |
 | n00_output_template_manifest | sibling (source investigation) | 0.28 |

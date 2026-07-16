@@ -21,10 +21,6 @@ code team, text
 design team]
 density_score: 0.85
 related:
-  - bld_collaboration_integration_guide
-  - bld_collaboration_white_label_config
-  - bld_collaboration_reward_model
-  - bld_collaboration_reranker_config
   - bld_config_contributor_guide
 ---
 ## Crew Role  
@@ -50,8 +46,4 @@ Does NOT handle code reviews, integration with external tools, or enforcement of
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_integration_guide]] | sibling | 0.40 |
-| [[bld_collaboration_white_label_config]] | sibling | 0.38 |
-| [[bld_collaboration_reward_model]] | sibling | 0.35 |
-| [[bld_collaboration_reranker_config]] | sibling | 0.35 |
 | [[bld_config_contributor_guide]] | upstream | 0.33 |

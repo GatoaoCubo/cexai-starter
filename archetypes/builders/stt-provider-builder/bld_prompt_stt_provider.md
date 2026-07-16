@@ -17,9 +17,6 @@ updated: "2026-04-13"
 keywords: [stt_provider construction, instruction stt provider, stt_provider, builder, instruction, post /v1/transcribe, related artifacts, call function, output transcript, unit tests]
 density_score: 0.85
 related:
-  - bld_instruction_tts_provider
-  - p04_audio_tool_NAME
-  - p01_kc_audio_tool
   - bld_architecture_stt_provider
   - stt-provider-builder
 ---
@@ -52,8 +49,5 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_tts_provider]] | sibling | 0.42 |
-| [[p04_audio_tool_NAME]] | downstream | 0.28 |
-| [[p01_kc_audio_tool]] | downstream | 0.27 |
 | [[bld_architecture_stt_provider]] | downstream | 0.27 |
 | [[stt-provider-builder]] | downstream | 0.26 |

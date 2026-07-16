@@ -6,8 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - output-validator-builder
   - kind-builder
-  - bld_collaboration_output_validator
-  - p03_sp_builder_nucleus
   - validator-builder
 ---
 

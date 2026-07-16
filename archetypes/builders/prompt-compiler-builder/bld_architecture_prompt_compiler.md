@@ -18,10 +18,6 @@ keywords: [and position, prompt_compiler construction, architecture prompt compi
 density_score: 0.90
 related:
   - prompt-compiler-builder
-  - p03_ins_prompt_compiler
-  - p01_kc_prompt_compiler
-  - n00_prompt_compiler_manifest
-  - bld_output_template_prompt_compiler
 ---
 # Architecture: prompt_compiler in CEX
 ## Component Inventory
@@ -70,7 +66,3 @@ user_input   --resolved_by-->  prompt_compiler  --produces-->  {kind, pillar, nu
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prompt-compiler-builder]] | upstream | 0.48 |
-| [[p03_ins_prompt_compiler]] | upstream | 0.44 |
-| [[p01_kc_prompt_compiler]] | upstream | 0.42 |
-| [[n00_prompt_compiler_manifest]] | upstream | 0.42 |
-| [[bld_output_template_prompt_compiler]] | upstream | 0.41 |

@@ -16,9 +16,7 @@ keywords: [software project builder, tool inventory, build tools, quality tools,
 density_score: 0.89
 llm_function: CALL
 related:
-  - p01_kc_ruff_uv
   - bld_tools_vector_store
-  - showcase_quickstart_guide_cexai
   - bld_tools_red_team_eval
 ---
 # Tools
@@ -103,7 +101,5 @@ This ISO describes a software project: its repository layout, modules, and build
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_ruff_uv]] | upstream | 0.40 |
 | [[bld_tools_vector_store]] | sibling | 0.36 |
-| [[showcase_quickstart_guide_cexai]] | downstream | 0.35 |
 | [[bld_tools_red_team_eval]] | sibling | 0.34 |

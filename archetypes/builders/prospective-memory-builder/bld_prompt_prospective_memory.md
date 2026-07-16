@@ -31,8 +31,6 @@ keywords:
 density_score: 0.90
 related:
   - prospective-memory-builder
-  - p10_qg_prospective_memory
-  - p01_kc_prospective_memory
   - bld_schema_prospective_memory
   - bld_architecture_prospective_memory
 ---
@@ -71,7 +69,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[prospective-memory-builder]] | downstream | 0.46 |
-| [[p10_qg_prospective_memory]] | downstream | 0.43 |
-| [[p01_kc_prospective_memory]] | downstream | 0.42 |
 | [[bld_schema_prospective_memory]] | downstream | 0.42 |
 | [[bld_architecture_prospective_memory]] | downstream | 0.39 |

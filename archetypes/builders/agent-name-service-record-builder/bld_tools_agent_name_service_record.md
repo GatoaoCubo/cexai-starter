@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F5_call"
 keywords: [tool inventory for building, agent_name_service_record construction, cex tools for compile, agent_name_service_record, builder, tools, ietf]
 density_score: 0.85
-related:
-  - bld_knowledge_card_agent_name_service_record
-  - bld_manifest_agent_name_service_record
-  - bld_instruction_agent_name_service_record
-  - bld_collaboration_agent_name_service_record
-  - bld_output_template_agent_name_service_record
 ---
 # Agent Name Service Record Builder -- Tools
 
@@ -132,12 +126,3 @@ write_signal    -- notify orchestrator
 | F8 COLLABORATE | cex_index.py | Update search index |
 | F8 COLLABORATE | signal_writer.py | Completion signal |
 | F8 COLLABORATE | cex_doctor.py | Post-build health check |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_agent_name_service_record]] | upstream | 0.56 |
-| [[bld_manifest_agent_name_service_record]] | related | 0.55 |
-| [[bld_instruction_agent_name_service_record]] | upstream | 0.44 |
-| [[bld_collaboration_agent_name_service_record]] | downstream | 0.43 |
-| [[bld_output_template_agent_name_service_record]] | downstream | 0.42 |

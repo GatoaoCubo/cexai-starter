@@ -26,11 +26,8 @@ title: "Memory Product Match"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_instruction_product_match
-  - bld_output_template_product_match
   - product-match-builder
   - bld_schema_product_match
-  - p11_qg_product_match
 ---
 ## Summary
 `product_match` is consumed by two callers today: the dashboard run path (N03, verb=analyze) and
@@ -106,7 +103,5 @@ python _tools/cex_score.py --apply p10-lr-product-match-builder.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_prompt_product_match]] | upstream | 0.43 |
-| [[bld_output_template_product_match]] | upstream | 0.36 |
 | [[product-match-builder]] | upstream | 0.34 |
 | [[bld_schema_product_match]] | upstream | 0.34 |
-| [[p11_qg_product_match]] | downstream | 0.33 |

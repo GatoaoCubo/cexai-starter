@@ -28,16 +28,7 @@ keywords:
   - "### proc-003: upgrade offer execution"
 density_score: 0.98
 related:
-  - bld_instruction_renewal_workflow
-  - bld_output_template_churn_prevention_playbook
-  - p10_lr_renewal_workflow_builder
   - bld_config_renewal_workflow
-  - bld_examples_renewal_workflow
-  - bld_output_template_renewal_workflow
-  - bld_knowledge_card_renewal_workflow
-  - bld_instruction_churn_prevention_playbook
-  - n06_funnel_cex_product
-  - p12_sp_renewal_workflow_builder
 ---
 
 # Procedural Memory: N06 Commercial SOPs

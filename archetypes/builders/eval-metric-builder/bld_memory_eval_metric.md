@@ -21,10 +21,6 @@ reviewed, related artifacts, metrics]
 density_score: 0.85
 related:
   - eval-metric-builder
-  - p10_lr_judge_config_builder
-  - p10_mem_reranker_config_builder
-  - p10_mem_prompt_optimizer_builder
-  - p10_mem_trajectory_eval_builder
 ---
 ## Observation
 Common issues include ambiguous definitions leading to inconsistent scoring, lack of alignment with task objectives, and over-reliance on simplistic metrics that fail to capture nuanced performance aspects.

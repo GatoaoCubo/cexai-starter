@@ -20,9 +20,6 @@ density_score: null
 related:
   - formatter-builder
   - bld_architecture_formatter
-  - bld_collaboration_formatter
-  - n00_formatter_manifest
-  - bld_collaboration_response_format
 ---
 
 # Formatter

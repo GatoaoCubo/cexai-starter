@@ -16,12 +16,6 @@ updated: "2026-04-13"
 8f: "F6_produce"
 keywords: [agent_computer_interface construction, instruction agent computer interface, agent_computer_interface, builder, instruction, related artifacts, terminal escape, feedback loops, agent execution, sibling]
 density_score: 0.85
-related:
-  - bld_instruction_playground_config
-  - bld_instruction_edit_format
-  - bld_instruction_planning_strategy
-  - bld_instruction_search_strategy
-  - bld_instruction_transport_config
 ---
 ## Phase 1: RESEARCH
 1. Analyze OS-level accessibility APIs (X11, Wayland, or Windows UI Automation).
@@ -49,12 +43,3 @@ related:
 - [ ] Ensure all HARD gates pass per bld_quality_gate_agent_computer_interface.md.
 - [ ] Confirm quality: null (never self-score).
 - [ ] Run: python _tools/cex_hooks.py validate {path}
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_playground_config]] | sibling | 0.25 |
-| [[bld_instruction_edit_format]] | sibling | 0.22 |
-| [[bld_instruction_planning_strategy]] | sibling | 0.22 |
-| [[bld_instruction_search_strategy]] | sibling | 0.21 |
-| [[bld_instruction_transport_config]] | sibling | 0.21 |

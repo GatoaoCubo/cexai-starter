@@ -4,11 +4,8 @@ description: "Builds ONE usage_report artifact via 8F pipeline. Loads usage-repo
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p03_sp_builder_nucleus
   - kind-builder
   - bld_config_usage_report
-  - n00_usage_report_manifest
-  - p01_kc_pillar_brief_p02_model_en
 ---
 
 # usage-report-builder Sub-Agent
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
 | [[bld_config_usage_report]] | related | 0.27 |
-| [[n00_usage_report_manifest]] | related | 0.27 |
-| [[p01_kc_pillar_brief_p02_model_en]] | related | 0.27 |

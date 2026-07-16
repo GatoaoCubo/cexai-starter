@@ -19,10 +19,7 @@ keywords: [and architectural position, retry policy construction, architecture r
 density_score: 0.90
 related:
   - retry-policy-builder
-  - bld_knowledge_card_retry_policy
   - kc_retry_policy
-  - p11_qg_retry_policy
-  - p10_lr_retry_policy_builder
 ---
 ## Component Inventory
 
@@ -83,5 +80,3 @@ related:
 | [[retry-policy-builder]] | downstream | 0.63 |
 | [[bld_knowledge_retry_policy]] | upstream | 0.57 |
 | [[kc_retry_policy]] | upstream | 0.55 |
-| [[p11_qg_retry_policy]] | downstream | 0.48 |
-| [[p10_lr_retry_policy_builder]] | downstream | 0.47 |

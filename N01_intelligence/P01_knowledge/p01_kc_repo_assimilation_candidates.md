@@ -28,16 +28,8 @@ linked_artifacts:
 density_score: 0.90
 data_source: "firecrawl live search 2026-06-03 + decision_manifest_repo_assimilation.yaml"
 related:
-  - p04_browser_awesome_list
-  - p02_agent_n03_sdk_test
-  - p03_sp_engineering_nucleus
-  - p12_dr_engineering
-  - p01_kc_prompt_engineering_best_practices
   - p01_kc_influencer_directory_global
   - p01_kc_kind_gap_synthesis
-  - research_prior_art_landscape
-  - p02_iso_n03
-  - p01_kc_engineering_best_practices
 ---
 
 # REPO_ASSIMILATION Candidate Catalog -- Architecture/DDD + AI-Engineering

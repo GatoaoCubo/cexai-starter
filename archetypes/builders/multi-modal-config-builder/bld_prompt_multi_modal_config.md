@@ -32,10 +32,6 @@ keywords:
 density_score: 0.90
 related:
   - multi-modal-config-builder
-  - p11_qg_multi_modal_config
-  - bld_collaboration_multi_modal_config
-  - bld_output_template_multi_modal_config
-  - p01_kc_multi_modal_config
 ---
 # Instructions: How to Produce a multi_modal_config
 ## Phase 1: RESEARCH
@@ -94,7 +90,3 @@ python _tools/cex_skill_loader.py --verify multi
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[multi-modal-config-builder]] | downstream | 0.50 |
-| [[p11_qg_multi_modal_config]] | downstream | 0.42 |
-| [[bld_collaboration_multi_modal_config]] | downstream | 0.40 |
-| [[bld_output_template_multi_modal_config]] | downstream | 0.40 |
-| [[p01_kc_multi_modal_config]] | downstream | 0.36 |

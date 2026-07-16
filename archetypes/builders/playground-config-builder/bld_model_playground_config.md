@@ -22,9 +22,6 @@ density_score: 0.85
 related:
   - sandbox-config-builder
   - sandbox-spec-builder
-  - kc_sandbox_config
-  - bld_collaboration_sandbox_spec
-  - p09_qg_playground_config
 ---
 ## Identity
 
@@ -74,6 +71,3 @@ NEVER INCLUDE UI mockups, frontend code, or interactive demo elements.
 |----------|-------------|-------|
 | [[sandbox-config-builder]] | sibling | 0.43 |
 | [[sandbox-spec-builder]] | sibling | 0.41 |
-| [[kc_sandbox_config]] | upstream | 0.34 |
-| [[bld_collaboration_sandbox_spec]] | downstream | 0.33 |
-| [[p09_qg_playground_config]] | downstream | 0.29 |

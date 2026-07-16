@@ -32,10 +32,6 @@ keywords:
   - "^p11_pd_[a-z][a-z0-9_]+$"
 density_score: 0.90
 related:
-  - bld_instruction_output_validator
-  - bld_instruction_memory_scope
-  - bld_instruction_reward_signal
-  - bld_instruction_retriever_config
   - preference-dataset-builder
 ---
 # Instructions: How to Produce a preference_dataset
@@ -79,8 +75,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_output_validator]] | sibling | 0.41 |
-| [[bld_instruction_memory_scope]] | sibling | 0.41 |
-| [[bld_instruction_reward_signal]] | sibling | 0.40 |
-| [[bld_instruction_retriever_config]] | sibling | 0.40 |
 | [[preference-dataset-builder]] | downstream | 0.40 |

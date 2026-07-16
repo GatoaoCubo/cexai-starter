@@ -17,11 +17,8 @@ updated: "2026-07-10"
 keywords: [component map of kind_manifest, and architectural position, kind_manifest construction, architecture kind manifest, kind_manifest, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.88
 related:
-  - bld_knowledge_card_kind_manifest
   - bld_architecture_kind
   - bld_architecture_knowledge_card
-  - kind-manifest-builder
-  - bld_instruction_kind_manifest
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -70,8 +67,5 @@ kind_manifest.{294 instances}  --scaffolded_under--> N00_genesis/P0X_*/kind_{{ki
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_kind_manifest]] | upstream | 0.40 |
 | [[bld_architecture_kind]] | sibling (reflexive-case source) | 0.39 |
 | [[bld_architecture_knowledge_card]] | sibling (former mis-type contrast) | 0.36 |
-| [[kind-manifest-builder]] | upstream | 0.34 |
-| [[bld_instruction_kind_manifest]] | upstream | 0.32 |

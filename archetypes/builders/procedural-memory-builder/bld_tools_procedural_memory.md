@@ -18,10 +18,8 @@ keywords: [llm agent procedural memory, voyager sdk, reflexion patterns, procedu
 density_score: 0.90
 related:
   - bld_tools_consolidation_policy
-  - bld_instruction_procedural_memory
   - procedural-memory-builder
   - bld_tools_memory_architecture
-  - bld_knowledge_card_procedural_memory
 ---
 ## CEX Production Tools
 
@@ -58,7 +56,5 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_tools_consolidation_policy]] | sibling | 0.41 |
-| [[bld_instruction_procedural_memory]] | upstream | 0.39 |
 | [[procedural-memory-builder]] | downstream | 0.37 |
 | [[bld_tools_memory_architecture]] | sibling | 0.34 |
-| [[bld_knowledge_card_procedural_memory]] | upstream | 0.32 |

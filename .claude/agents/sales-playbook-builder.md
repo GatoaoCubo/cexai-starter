@@ -6,9 +6,6 @@ tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_sales_playbook
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p11_fb_sales_playbook
-  - n00_sales_playbook_manifest
 ---
 
 # sales-playbook-builder Sub-Agent
@@ -88,6 +85,3 @@ Five duties bind any agent that emits an artifact:
 |----------|-------------|-------|
 | [[bld_config_sales_playbook]] | related | 0.35 |
 | [[kind-builder]] | related | 0.30 |
-| [[p03_sp_builder_nucleus]] | related | 0.30 |
-| [[p11_fb_sales_playbook]] | related | 0.30 |
-| [[n00_sales_playbook_manifest]] | related | 0.30 |

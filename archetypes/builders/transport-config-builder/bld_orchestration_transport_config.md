@@ -19,11 +19,7 @@ defines, receives from, produces for, boundary
 does, related artifacts]
 density_score: 0.85
 related:
-  - bld_collaboration_sandbox_config
   - bld_config_transport_config
-  - bld_collaboration_oauth_app_config
-  - bld_collaboration_sso_config
-  - bld_collaboration_reranker_config
 ---
 ## Crew Role  
 Defines transport layer protocols, endpoints, and security settings for system communication. Ensures compatibility and reliability across network boundaries.  
@@ -48,8 +44,4 @@ Does NOT handle session lifecycle (realtime_session_builder) or LLM streaming (s
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_sandbox_config]] | sibling | 0.30 |
 | [[bld_config_transport_config]] | upstream | 0.26 |
-| [[bld_collaboration_oauth_app_config]] | sibling | 0.24 |
-| [[bld_collaboration_sso_config]] | sibling | 0.24 |
-| [[bld_collaboration_reranker_config]] | sibling | 0.24 |

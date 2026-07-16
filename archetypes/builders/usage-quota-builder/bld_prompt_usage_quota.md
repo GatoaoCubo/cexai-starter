@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [usage_quota construction, instruction usage quota, usage_quota, builder, instruction, quota_limit, reset_interval, related artifacts, quota thresholds, fair-use exceptions]
 density_score: 0.85
 related:
-  - kc_usage_quota
   - usage-quota-builder
-  - p10_mem_usage_quota_builder
-  - bld_knowledge_card_usage_quota
-  - bld_collaboration_usage_quota
 ---
 ## Phase 1: RESEARCH  
 1. Analyze system usage patterns to identify peak load periods.  
@@ -52,8 +48,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_usage_quota]] | upstream | 0.52 |
 | [[usage-quota-builder]] | downstream | 0.51 |
-| [[p10_mem_usage_quota_builder]] | downstream | 0.47 |
-| [[bld_knowledge_card_usage_quota]] | upstream | 0.44 |
-| [[bld_collaboration_usage_quota]] | downstream | 0.44 |

@@ -25,12 +25,6 @@ permission_scope: nucleus
 keywords: [config iso - document_loader, production rules for document_loader, size limits, and enum definitions, config, document_loader, ingestion, production rules, naming convention, file paths]
 density_score: 1.0
 title: Config ISO - document_loader
-related:
-  - bld_output_template_document_loader
-  - bld_instruction_document_loader
-  - bld_collaboration_document_loader
-  - bld_knowledge_card_document_loader
-  - document_loader-builder
 ---
 # Config: document_loader Production Rules
 
@@ -89,8 +83,6 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_document_loader]] | related | 0.35 |
 | [[bld_prompt_document_loader]] | related | 0.30 |
 | [[bld_orchestration_document_loader]] | related | 0.29 |
 | [[bld_knowledge_document_loader]] | related | 0.27 |
-| [[document_loader-builder]] | related | 0.27 |

@@ -11,11 +11,7 @@ when_to_use: "When defining user roles, permission boundaries, and multi-tenant 
 keywords: [role-based access control, multi-tenant system, principle of least privilege, tenant isolation, role separation, identity and access management, api gateways, database row-level security, audit logging]
 density_score: 0.97
 related:
-  - bld_knowledge_card_rbac_policy
   - rbac-policy-builder
-  - bld_instruction_rbac_policy
-  - p10_mem_rbac_policy_builder
-  - p09_qg_rbac_policy
 ---
 
 # Role-Based Access Control (RBAC) Policy for Multi-Tenant Isolation
@@ -81,5 +77,3 @@ This policy ensures that tenants are completely isolated while allowing necessar
 | [[bld_knowledge_rbac_policy]] | sibling | 0.66 |
 | [[rbac-policy-builder]] | downstream | 0.61 |
 | [[bld_prompt_rbac_policy]] | downstream | 0.52 |
-| [[p10_mem_rbac_policy_builder]] | downstream | 0.52 |
-| [[p09_qg_rbac_policy]] | downstream | 0.45 |

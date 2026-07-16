@@ -5,8 +5,6 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - cost-budget-builder
-  - bld_collaboration_cost_budget
-  - n00_cost_budget_manifest
   - bld_architecture_cost_budget
   - kind-builder
 ---
@@ -87,7 +85,5 @@ Five duties bind any agent that emits an artifact:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[cost-budget-builder]] | related | 0.33 |
-| [[bld_collaboration_cost_budget]] | related | 0.32 |
-| [[n00_cost_budget_manifest]] | related | 0.32 |
 | [[bld_architecture_cost_budget]] | related | 0.30 |
 | [[kind-builder]] | related | 0.30 |

@@ -28,11 +28,8 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, agent package construction, config agent package, agent_package, builder, examples, "{agent_slug}/"]
 density_score: 0.90
 related:
-  - bld_instruction_agent_package
   - bld_schema_agent_package
-  - bld_knowledge_card_agent_package
   - agent-package-builder
-  - p02_iso_codexa_agent
 ---
 # Config: agent_package Production Rules
 ## Naming Convention

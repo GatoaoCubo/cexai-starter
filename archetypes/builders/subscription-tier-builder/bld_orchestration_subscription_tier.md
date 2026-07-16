@@ -17,12 +17,6 @@ updated: "2026-04-14"
 keywords: [subscription_tier construction, collaboration subscription tier, subscription_tier, builder, collaboration, crew role  
 defines, receives from, pricing strategy, product team, billing team]
 density_score: 0.85
-related:
-  - bld_collaboration_integration_guide
-  - bld_collaboration_cohort_analysis
-  - bld_collaboration_white_label_config
-  - bld_collaboration_reward_model
-  - bld_collaboration_ab_test_config
 ---
 ## Crew Role  
 Defines subscription pricing structures, benefits, and access levels. Collaborates with product, billing, and analytics teams to align tiers with business goals and user needs.  

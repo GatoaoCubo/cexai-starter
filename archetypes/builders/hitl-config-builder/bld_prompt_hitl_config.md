@@ -31,12 +31,6 @@ keywords:
   - "quality: null"
   - "^p11_hitl_[a-z][a-z0-9_]+$"
 density_score: 0.90
-related:
-  - bld_knowledge_card_hitl_config
-  - p01_kc_hitl_config
-  - bld_instruction_context_doc
-  - bld_instruction_output_validator
-  - bld_instruction_dispatch_rule
 ---
 # Instructions: How to Produce a hitl_config
 ## Phase 1: RESEARCH
@@ -74,12 +68,3 @@ related:
 11. Confirm body <= 3072 bytes
 12. Cross-check: does this require human judgment? If it can be fully automated, it belongs in `guardrail` (automated block) or `quality_gate` (automated score). hitl_config is ONLY for cases where human decision is required.
 13. If score < 8.0: revise in the same pass before outputting
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_knowledge_card_hitl_config]] | upstream | 0.38 |
-| [[p01_kc_hitl_config]] | downstream | 0.38 |
-| [[bld_instruction_context_doc]] | sibling | 0.38 |
-| [[bld_instruction_output_validator]] | sibling | 0.37 |
-| [[bld_instruction_dispatch_rule]] | sibling | 0.37 |

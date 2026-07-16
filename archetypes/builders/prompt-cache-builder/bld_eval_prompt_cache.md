@@ -33,10 +33,7 @@ keywords:
   - "^p10_pc_[a-z][a-z0-9_]+$"
 density_score: 0.90
 related:
-  - p01_kc_prompt_cache
-  - bld_output_template_prompt_cache
   - prompt-cache-builder
-  - bld_instruction_prompt_cache
   - bld_schema_prompt_cache
 ---
 ## Quality Gate

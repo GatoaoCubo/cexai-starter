@@ -18,10 +18,6 @@ keywords: [renewal_workflow construction, tools renewal workflow, renewal_workfl
 density_score: 0.85
 related:
   - renewal-workflow-builder
-  - bld_knowledge_card_renewal_workflow
-  - bld_collaboration_renewal_workflow
-  - bld_output_template_renewal_workflow
-  - bld_instruction_renewal_workflow
 ---
 ## Production Tools
 | Tool                  | Purpose                                        | When                          |
@@ -57,7 +53,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[renewal-workflow-builder]] | downstream | 0.48 |
-| [[bld_knowledge_card_renewal_workflow]] | upstream | 0.45 |
-| [[bld_collaboration_renewal_workflow]] | downstream | 0.43 |
-| [[bld_output_template_renewal_workflow]] | downstream | 0.40 |
-| [[bld_instruction_renewal_workflow]] | upstream | 0.37 |

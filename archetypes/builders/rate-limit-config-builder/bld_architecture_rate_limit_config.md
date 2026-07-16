@@ -20,10 +20,6 @@ this, dependency graph, boundary table]
 density_score: 0.90
 related:
   - rate-limit-config-builder
-  - p11_qg_rate_limit_config
-  - bld_knowledge_card_rate_limit_config
-  - bld_output_template_rate_limit_config
-  - bld_instruction_rate_limit_config
 ---
 ## Component Inventory
 
@@ -93,7 +89,5 @@ guardrail     --depends-->  rate_limit_config
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[rate-limit-config-builder]] | downstream | 0.70 |
-| [[p11_qg_rate_limit_config]] | downstream | 0.61 |
 | [[bld_knowledge_rate_limit_config]] | upstream | 0.55 |
-| [[bld_output_template_rate_limit_config]] | upstream | 0.54 |
 | [[bld_prompt_rate_limit_config]] | upstream | 0.54 |

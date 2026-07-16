@@ -19,9 +19,6 @@ keywords: [entity memory, entity_type validity, non-empty attributes, confidence
 density_score: 0.90
 related:
   - entity-memory-builder
-  - bld_instruction_entity_memory
-  - p11_qg_quality_gate
-  - p11_qg_enum_def
   - bld_schema_entity_memory
 ---
 ## Quality Gate

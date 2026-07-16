@@ -17,11 +17,7 @@ updated: "2026-07-02"
 keywords: [opportunity_matrix construction, memory opportunity matrix builder, opportunity_matrix, builder, memory, observation, pattern, evidence, honest-null discipline, gate conditions]
 density_score: 0.85
 related:
-  - bld_instruction_opportunity_matrix
   - opportunity-matrix-builder
-  - p11_qg_opportunity_matrix
-  - bld_knowledge_card_opportunity_matrix
-  - p08_adr_opportunity_matrix_kind
 ---
 ## Observation
 The generator's first production surface (W3 CAPGEN, `sourcing_opportunity.py`) shipped OFFLINE-only: no live network or LLM call at this level, so every early artifact built against it will show an offline scaffold (gate BLOQUEADO, demand cells honest-null) unless a credential + `demand_sources` are supplied. Builders that skip reading the generator source first tend to draft a "live-looking" example that the real output can never produce.
@@ -44,6 +40,5 @@ Successful artifacts transcribe section titles/columns byte-for-byte from `MOLD_
 |----------|-------------|-------|
 | [[bld_prompt_opportunity_matrix]] | upstream | 0.47 |
 | [[opportunity-matrix-builder]] | downstream | 0.41 |
-| [[p11_qg_opportunity_matrix]] | downstream | 0.36 |
 | [[bld_knowledge_opportunity_matrix]] | upstream | 0.32 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.30 |

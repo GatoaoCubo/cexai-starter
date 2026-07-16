@@ -15,10 +15,7 @@ keywords: [contract_first_design, interface_segregation, type_safety, schema_val
 density_score: 0.92
 updated: "2026-05-02"
 related:
-  - p03_rs_n03
-  - p01_kc_pillar_brief_p06_schema_en
   - p02_mm_cex_architecture_n04
-  - p01_kc_pillar_brief_p08_architecture_en
 ---
 
 # Knowledge Card: Engineering Vocabulary (N03 Controlled)

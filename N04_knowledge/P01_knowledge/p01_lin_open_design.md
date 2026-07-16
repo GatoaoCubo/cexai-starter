@@ -17,7 +17,6 @@ tldr: "Provenance for 150 design_system instances: clean-room concept extraction
 related:
   - p01_kc_gstack_attribution_ledger
   - p01_lin_graphify
-  - p06_ds_001
 ---
 
 # Lineage: design_system x150 (open-design)

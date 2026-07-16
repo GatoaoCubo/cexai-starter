@@ -19,12 +19,6 @@ specializes, crew role
 acts, identity  
 the]
 density_score: 0.85
-related:
-  - kc_ecommerce_vertical
-  - p10_mem_ecommerce_vertical_builder
-  - bld_instruction_ecommerce_vertical
-  - bld_knowledge_card_ecommerce_vertical
-  - p01_qg_ecommerce_vertical
 ---
 ## Identity
 
@@ -67,12 +61,3 @@ ALWAYS USE PCI-DSS COMPLIANCE TERMINOLOGY.
 ALWAYS INTEGRATE REAL-TIME FRAUD DETECTION FRAMEWORKS.  
 NEVER MENTION PAYMENT PROCESSORS DIRECTLY.  
 NEVER INCLUDE CASE STUDY-SPECIFIC DATA.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[kc_ecommerce_vertical]] | related | 0.63 |
-| [[p10_mem_ecommerce_vertical_builder]] | downstream | 0.59 |
-| [[bld_instruction_ecommerce_vertical]] | downstream | 0.57 |
-| [[bld_knowledge_card_ecommerce_vertical]] | related | 0.55 |
-| [[p01_qg_ecommerce_vertical]] | downstream | 0.51 |

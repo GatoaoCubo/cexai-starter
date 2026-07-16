@@ -16,7 +16,6 @@ related:
  - p01_kc_growth_casestudy_organic
  - p01_kc_content_formats_global
  - kc_competitor_hermes
- - n00_code_of_conduct_manifest
 ---
 
 # Community Seeding Playbook: CEX Open-Source Launch

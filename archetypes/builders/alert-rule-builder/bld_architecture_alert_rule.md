@@ -17,9 +17,6 @@ updated: "2026-04-17"
 related:
   - alert-rule-builder
   - bld_memory_alert_rule
-  - p01_kc_alert_rule
-  - bld_qg_alert_rule
-  - bld_context_sources_alert_rule
 ---
 # Architecture: alert_rule
 ## Position in CEX Kind Taxonomy
@@ -74,6 +71,3 @@ groups:
 |----------|-------------|-------|
 | [[alert-rule-builder]] | downstream | 0.49 |
 | [[bld_memory_alert_rule]] | downstream | 0.47 |
-| [[p01_kc_alert_rule]] | upstream | 0.44 |
-| [[bld_qg_alert_rule]] | downstream | 0.40 |
-| [[bld_context_sources_alert_rule]] | downstream | 0.34 |

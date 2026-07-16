@@ -19,7 +19,6 @@ builder, validation registry, featured builder
 builder]
 density_score: 0.90
 related:
-  - _builder-builder
   - bld_architecture_kind
   - bld_output_template_builder
   - bld_config_builder
@@ -83,7 +82,6 @@ python _tools/cex_retriever.py --kind examples --top 3
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[_builder-builder]] | upstream | 0.32 |
 | [[bld_architecture_kind]] | downstream | 0.28 |
 | [[bld_output_template_builder]] | related | 0.28 |
 | [[bld_config_builder]] | downstream | 0.27 |

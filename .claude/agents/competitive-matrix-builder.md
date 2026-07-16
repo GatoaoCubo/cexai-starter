@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - bld_config_competitive_matrix
-  - p03_sp_builder_nucleus
   - kind-builder
-  - p01_kc_pillar_brief_p02_model_en
-  - p01_faq_cex_common_questions
 ---
 
 # competitive-matrix-builder Sub-Agent
@@ -90,4 +87,3 @@ Five duties bind any agent that emits an artifact:
 | p03_sp_builder_nucleus | related | 0.31 |
 | kind-builder | related | 0.31 |
 | p01_kc_pillar_brief_p02_model_en | related | 0.27 |
-| [[p01_faq_cex_common_questions]] | related | 0.26 |

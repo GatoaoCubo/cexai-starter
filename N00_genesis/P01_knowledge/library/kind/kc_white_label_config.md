@@ -18,10 +18,8 @@ density_score: 1.0
 updated: "2026-04-17"
 related:
   - white-label-config-builder
-  - bld_collaboration_client
   - api-client-builder
   - integration-guide-builder
-  - bld_tools_client
 ---
 
 # White-Label Configuration Guide
@@ -202,7 +200,5 @@ By following this guide, you can effectively configure your white-label solution
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[white-label-config-builder]] | downstream | 0.29 |
-| [[bld_collaboration_client]] | downstream | 0.28 |
 | [[api-client-builder]] | downstream | 0.26 |
 | integration-guide-builder | downstream | 0.22 |
-| [[bld_tools_client]] | downstream | 0.22 |

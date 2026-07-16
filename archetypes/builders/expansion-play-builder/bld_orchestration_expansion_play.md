@@ -20,10 +20,6 @@ does]
 density_score: 0.85
 related:
   - expansion-play-builder
-  - n00_expansion_play_manifest
-  - kc_expansion_play
-  - bld_knowledge_card_expansion_play
-  - p10_lr_churn_prevention_playbook_builder
 ---
 ## Crew Role  
 Strategizes and executes growth initiatives for existing customers, identifying upsell/cross-sell opportunities, creating tailored solutions, and coordinating with product/eng teams to scale adoption.  
@@ -49,7 +45,3 @@ Does NOT handle churn prevention (churn_prevention_playbook) or new customer acq
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[expansion-play-builder]] | upstream | 0.30 |
-| [[n00_expansion_play_manifest]] | upstream | 0.28 |
-| [[kc_expansion_play]] | upstream | 0.26 |
-| [[bld_knowledge_card_expansion_play]] | upstream | 0.26 |
-| [[p10_lr_churn_prevention_playbook_builder]] | upstream | 0.24 |

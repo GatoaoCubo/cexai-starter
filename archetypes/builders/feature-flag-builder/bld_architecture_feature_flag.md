@@ -18,10 +18,6 @@ keywords: [component map of feature_flag, and architectural position, feature fl
 density_score: 0.90
 related:
   - feature-flag-builder
-  - p11_qg_feature_flag
-  - p01_kc_feature_flag
-  - n00_feature_flag_manifest
-  - bld_output_template_feature_flag
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -75,7 +71,3 @@ targeting_rules --depends--> evaluation_context
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[feature-flag-builder]] | downstream | 0.51 |
-| [[p11_qg_feature_flag]] | downstream | 0.42 |
-| [[p01_kc_feature_flag]] | downstream | 0.40 |
-| [[n00_feature_flag_manifest]] | downstream | 0.38 |
-| [[bld_output_template_feature_flag]] | upstream | 0.36 |

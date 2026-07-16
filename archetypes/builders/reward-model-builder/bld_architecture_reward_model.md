@@ -21,7 +21,6 @@ related:
   - bld_architecture_reasoning_strategy
   - bld_architecture_search_strategy
   - bld_architecture_tts_provider
-  - bld_instruction_reward_model
 ---
 ## Component Inventory
 | ISO | llm_function | Purpose | Status |
@@ -60,4 +59,3 @@ reward_model-builder occupies P07 (Evaluation pillar) in the CEX taxonomy. It pr
 | [[bld_architecture_reasoning_strategy]] | sibling | 0.50 |
 | [[bld_architecture_search_strategy]] | sibling | 0.35 |
 | [[bld_architecture_tts_provider]] | sibling | 0.27 |
-| [[bld_instruction_reward_model]] | upstream | 0.27 |

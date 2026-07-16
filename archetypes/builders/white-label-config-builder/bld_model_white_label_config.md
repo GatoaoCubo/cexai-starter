@@ -19,12 +19,6 @@ specializes, crew role
 acts, identity  
 the, access controls]
 density_score: 0.85
-related:
-  - bld_knowledge_card_white_label_config
-  - p10_mem_white_label_config_builder
-  - n00_white_label_config_manifest
-  - bld_instruction_white_label_config
-  - p11_qg_white_label_config
 ---
 ## Identity
 
@@ -72,7 +66,5 @@ NEVER include runtime environment variables or infrastructure-specific credentia
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_knowledge_white_label_config]] | upstream | 0.49 |
-| [[p10_mem_white_label_config_builder]] | downstream | 0.48 |
 | n00_white_label_config_manifest | related | 0.37 |
 | [[bld_prompt_white_label_config]] | upstream | 0.36 |
-| [[p11_qg_white_label_config]] | downstream | 0.35 |

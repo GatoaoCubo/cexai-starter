@@ -29,10 +29,6 @@ L3: When user needs to specify a deployment plan for an agent, service, or artif
 isolation: worktree
 isolation_reason: "deployment manifests touch infra config and may trigger live deployments; worktree isolates from main branch"
 related:
-  - bld_instruction_deployment_manifest
-  - kc_deployment_manifest
-  - bld_knowledge_card_deployment_manifest
-  - bld_quality_gate_deployment_manifest
   - bld_architecture_deployment_manifest
 ---
 ## Identity
@@ -111,8 +107,4 @@ python _tools/cex_8f_runner.py --kind deployment_manifest --execute
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_deployment_manifest]] | related | 0.47 |
-| [[kc_deployment_manifest]] | upstream | 0.47 |
-| [[bld_knowledge_card_deployment_manifest]] | upstream | 0.40 |
-| [[bld_quality_gate_deployment_manifest]] | upstream | 0.35 |
 | [[bld_architecture_deployment_manifest]] | upstream | 0.33 |

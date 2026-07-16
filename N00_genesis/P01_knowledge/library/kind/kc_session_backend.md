@@ -20,8 +20,6 @@ density_score: null
 related:
   - session-backend-builder
   - bld_architecture_session_backend
-  - bld_collaboration_session_backend
-  - bld_knowledge_card_session_backend
 ---
 
 # Session Backend

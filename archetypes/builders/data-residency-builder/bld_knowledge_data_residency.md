@@ -18,10 +18,6 @@ keywords: [data_residency construction, knowledge card data residency, data_resi
 data, key concepts, data localization, data processing agreement, data sovereignty]
 density_score: 0.85
 related:
-  - data-residency-builder
-  - p01_kc_data_residency
-  - bld_instruction_data_residency
-  - p10_mem_data_residency_builder
   - bld_tools_data_residency
 ---
 ## Domain Overview
@@ -67,8 +63,4 @@ Residency specs define technical and operational constraints, such as geographic
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[data-residency-builder]] | downstream | 0.59 |
-| [[p01_kc_data_residency]] | sibling | 0.58 |
-| [[bld_instruction_data_residency]] | downstream | 0.44 |
-| [[p10_mem_data_residency_builder]] | downstream | 0.42 |
 | [[bld_tools_data_residency]] | downstream | 0.41 |

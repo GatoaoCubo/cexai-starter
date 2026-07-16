@@ -18,11 +18,8 @@ keywords: [graph_rag_config construction, graph_rag_config, builder, knowledge_c
 graph, graph retrieval, augmented generation, knowledge graph question answering, key concepts, entity extraction]
 density_score: 0.85
 related:
-  - p01_kc_knowledge_graph
-  - bld_collaboration_knowledge_graph
   - knowledge-graph-builder
   - bld_tools_graph_rag_config
-  - n00_graph_rag_config_manifest
 ---
 ## Domain Overview
 GraphRAG (Graph Retrieval-Augmented Generation) is a distinct architecture from traditional KG-QA (Knowledge Graph Question Answering). Traditional KG-QA executes SPARQL/Cypher queries against structured triples. GraphRAG (Edge et al., Microsoft 2024) instead builds a text-derived knowledge graph via LLM entity extraction, then performs community detection (Leiden algorithm) to create hierarchical summaries, enabling global sensemaking queries that flat vector RAG cannot answer.
@@ -66,8 +63,5 @@ The `graph_rag_config` artifact defines the pipeline parameters: entity extracti
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_knowledge_graph]] | sibling | 0.57 |
-| [[bld_collaboration_knowledge_graph]] | downstream | 0.48 |
 | [[knowledge-graph-builder]] | related | 0.44 |
 | [[bld_tools_graph_rag_config]] | downstream | 0.42 |
-| [[n00_graph_rag_config_manifest]] | sibling | 0.37 |

@@ -7,8 +7,6 @@ related:
   - data-contract-builder
   - bld_tools_data_contract
   - kind-builder
-  - p03_sp_builder_nucleus
-  - p01_kc_data_contract
 ---
 
 # data-contract-builder Sub-Agent

@@ -30,12 +30,6 @@ keywords:
   - "write commands"
   - "write output format"
 density_score: 0.90
-related:
-  - bld_instruction_retriever_config
-  - bld_instruction_output_validator
-  - bld_instruction_memory_scope
-  - bld_instruction_chunk_strategy
-  - bld_instruction_prompt_version
 ---
 # Instructions: How to Produce a cli_tool
 ## Phase 1: RESEARCH
@@ -95,12 +89,3 @@ python _tools/cex_skill_loader.py --verify cli
 | Retriever | cex_retriever.py |
 | Quality target | 9.0+ |
 | Density target | 0.85+ |
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_retriever_config]] | sibling | 0.47 |
-| [[bld_instruction_output_validator]] | sibling | 0.47 |
-| [[bld_instruction_memory_scope]] | sibling | 0.46 |
-| [[bld_instruction_chunk_strategy]] | sibling | 0.44 |
-| [[bld_instruction_prompt_version]] | sibling | 0.44 |

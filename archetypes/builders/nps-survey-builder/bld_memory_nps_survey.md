@@ -20,11 +20,7 @@ three, evidence
 review, use bain, related artifacts]
 density_score: 0.85
 related:
-  - p11_qg_nps_survey
   - nps-survey-builder
-  - bld_collaboration_nps_survey
-  - bld_output_template_nps_survey
-  - bld_knowledge_card_nps_survey
 ---
 ## Observation
 Artifacts that omit routing for the passive band (7-8) leave the largest response cohort
@@ -50,8 +46,4 @@ Artifacts with all 3 bands routed scored avg 8.9/10 vs 6.2/10 for incomplete one
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_qg_nps_survey]] | downstream | 0.37 |
 | [[nps-survey-builder]] | downstream | 0.34 |
-| [[bld_collaboration_nps_survey]] | downstream | 0.28 |
-| [[bld_output_template_nps_survey]] | upstream | 0.26 |
-| [[bld_knowledge_card_nps_survey]] | upstream | 0.25 |

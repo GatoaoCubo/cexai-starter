@@ -4,10 +4,7 @@ description: "Builds ONE referral_program artifact via 8F pipeline. Loads referr
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - p11_fb_referral_program
-  - p03_sp_builder_nucleus
   - kind-builder
-  - n00_referral_program_manifest
   - bld_config_referral_program
 ---
 
@@ -86,8 +83,5 @@ Five duties bind any agent that emits an artifact:
 
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p11_fb_referral_program]] | related | 0.32 |
-| [[p03_sp_builder_nucleus]] | related | 0.31 |
 | [[kind-builder]] | related | 0.31 |
-| [[n00_referral_program_manifest]] | related | 0.30 |
 | [[bld_config_referral_program]] | related | 0.29 |

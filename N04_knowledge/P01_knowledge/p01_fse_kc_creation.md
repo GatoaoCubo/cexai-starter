@@ -13,12 +13,6 @@ tags: [few-shot, knowledge-card, template, creation-pattern]
 tldr: "Input/output example showing how to create a high-density KC from a raw topic — demonstrates frontmatter, section order, density rules."
 density_score: 0.94
 updated: "2026-04-17"
-related:
-  - p01_kc_chain_of_thought
-  - p01_kc_prompt_engineering_best_practices
-  - p06_schema_kc_structure
-  - p10_lr_chain_builder
-  - p01_kc_chain
 slots:
   new_input: "<the case the consuming LLM generalizes to>"
   expected_shape: "<the output contract>"

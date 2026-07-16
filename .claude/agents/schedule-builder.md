@@ -5,10 +5,7 @@ model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
   - kind-builder
-  - p03_sp_builder_nucleus
-  - bld_collaboration_schedule
   - schedule-builder
-  - p06_td_cex_artifact_type_n03
 ---
 
 # schedule-builder Sub-Agent

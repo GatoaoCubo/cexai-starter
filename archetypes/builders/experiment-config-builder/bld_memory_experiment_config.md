@@ -36,11 +36,7 @@ this, metric pre-registration, novelty effect, minimum runtime]
 density_score: 0.91
 llm_function: INJECT
 related:
-  - bld_knowledge_card_experiment_config
   - experiment-config-builder
-  - p01_kc_experiment_config
-  - bld_instruction_experiment_config
-  - bld_collaboration_experiment_config
 ---
 ## Summary
 Experiment configuration failures fall into two categories: validity failures (results are
@@ -114,8 +110,4 @@ config, tools, memory, manifest, architecture, collaboration, and knowledge card
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_experiment_config]] | upstream | 0.43 |
 | [[experiment-config-builder]] | upstream | 0.36 |
-| [[p01_kc_experiment_config]] | upstream | 0.33 |
-| [[bld_instruction_experiment_config]] | upstream | 0.30 |
-| [[bld_collaboration_experiment_config]] | downstream | 0.29 |

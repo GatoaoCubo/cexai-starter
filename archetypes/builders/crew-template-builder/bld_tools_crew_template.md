@@ -19,8 +19,6 @@ density_score: 0.86
 related:
   - bld_tools_role_assignment
   - bld_tools_pipeline_template
-  - bld_knowledge_card_crew_template
-  - bld_instruction_crew_template
   - bld_tools_discovery_questions
 ---
 ## Production Tools

@@ -34,9 +34,7 @@ llm_function: REASON
 related:
   - pattern-builder
   - bld_schema_pattern
-  - bld_knowledge_card_pattern
   - bld_memory_pattern
-  - bld_collaboration_pattern
 ---
 ## Context
 The pattern-builder receives a **recurring problem description** and produces a `pattern` artifact that formally encodes the named, reusable solution for that problem.

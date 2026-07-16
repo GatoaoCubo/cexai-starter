@@ -15,10 +15,8 @@ tags: [motion_scene, builder, orchestration, swarm, P05]
 tldr: "How motion_scene builds are dispatched (swarm over design_system x primitive coordinates) and composed (taste loop + downstream surface builders + cli_tool renderer)."
 density_score: 0.88
 related:
-  - p01_kc_motion_scene
   - bld_architecture_motion_scene
   - bld_prompt_motion_scene
-  - p06_vs_motion_scene
   - motion-scene-builder
 ---
 
@@ -45,8 +43,6 @@ already used for static PNG cutaways -- downstream pipeline sees no difference.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_motion_scene]] | upstream | 0.5 |
 | [[bld_architecture_motion_scene]] | sibling | 0.42 |
 | [[bld_prompt_motion_scene]] | related | 0.4 |
-| [[p06_vs_motion_scene]] | upstream | 0.4 |
 | [[motion-scene-builder]] | related | 0.4 |

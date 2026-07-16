@@ -27,11 +27,8 @@ L2: Encode derivation steps, transformation agents, and curation decisions.
 L3: When user needs to document how a knowledge artifact was created from sources.
 isolation: standard
 related:
-  - kc_lineage_record
-  - bld_instruction_lineage_record
   - bld_memory_lineage_record
   - bld_architecture_lineage_record
-  - bld_knowledge_card_lineage_record
 ---
 ## Identity
 
@@ -94,8 +91,5 @@ Frontmatter + body. Body sections: Entities, Activities, Agents, Derivation Rela
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_lineage_record]] | related | 0.51 |
-| [[bld_instruction_lineage_record]] | related | 0.49 |
 | [[bld_memory_lineage_record]] | downstream | 0.42 |
 | [[bld_architecture_lineage_record]] | downstream | 0.41 |
-| [[bld_knowledge_card_lineage_record]] | related | 0.41 |

@@ -18,11 +18,8 @@ updated: "2026-04-13"
 keywords: [finetune_config construction, collaboration finetune config, finetune-config-builder role in crews, receives base model, dataset seeds, produces training job spec, finetune_config, builder, collaboration, "### crew: custom domain model"]
 density_score: 0.90
 related:
-  - bld_collaboration_model_card
-  - bld_collaboration_model_provider
   - bld_architecture_finetune_config
   - finetune-config-builder
-  - bld_collaboration_boot_config
 ---
 # Collaboration: finetune-config-builder
 ## My Role in Crews
@@ -85,8 +82,5 @@ I specify training jobs so they can be handed to a framework and executed.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_model_card]] | sibling | 0.46 |
-| [[bld_collaboration_model_provider]] | sibling | 0.41 |
 | [[bld_architecture_finetune_config]] | upstream | 0.35 |
 | [[finetune-config-builder]] | upstream | 0.35 |
-| [[bld_collaboration_boot_config]] | sibling | 0.32 |

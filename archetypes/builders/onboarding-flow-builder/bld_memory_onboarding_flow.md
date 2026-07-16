@@ -21,10 +21,6 @@ reviewed, related artifacts, user goals]
 density_score: 0.85
 related:
   - onboarding-flow-builder
-  - bld_instruction_onboarding_flow
-  - bld_knowledge_card_onboarding_flow
-  - kc_onboarding_flow
-  - p05_qg_onboarding_flow
 ---
 ## Observation
 Common issues include unclear milestones leading to user confusion, and aha-moments being misaligned with user goals, reducing activation effectiveness. Overloading flows with too many steps often causes drop-offs before value realization.
@@ -46,7 +42,3 @@ Reviewed artifacts showed flows with milestone-driven progress bars had 20% high
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[onboarding-flow-builder]] | upstream | 0.47 |
-| [[bld_instruction_onboarding_flow]] | upstream | 0.42 |
-| [[bld_knowledge_card_onboarding_flow]] | upstream | 0.39 |
-| [[kc_onboarding_flow]] | upstream | 0.37 |
-| [[p05_qg_onboarding_flow]] | downstream | 0.30 |

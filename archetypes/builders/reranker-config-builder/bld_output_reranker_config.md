@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [reranker_config construction, output template reranker config, reranker_config, builder, output_template, my reranker, example reranker configuration, parameter definitions, related artifacts, model model]
 density_score: 0.85
 related:
-  - bld_output_template_graph_rag_config
-  - kc_reranker_config
-  - bld_output_template_playground_config
   - bld_schema_reranker_config
-  - n00_reranker_config_manifest
 ---
 ```yaml
 ---
@@ -52,8 +48,4 @@ parameters:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_output_template_graph_rag_config]] | sibling | 0.26 |
-| [[kc_reranker_config]] | upstream | 0.22 |
-| [[bld_output_template_playground_config]] | sibling | 0.21 |
 | [[bld_schema_reranker_config]] | downstream | 0.20 |
-| [[n00_reranker_config_manifest]] | upstream | 0.20 |

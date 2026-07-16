@@ -21,7 +21,6 @@ related:
   - bld_tools_output_template
   - bld_tools_knowledge_card
   - bld_schema_kind_manifest
-  - kind-manifest-builder
 ---
 # Tools: kind-manifest-builder
 ## Production Tools
@@ -88,4 +87,3 @@ python _tools/cex_score.py --apply bld-tools-kind-manifest.md
 | [[bld_tools_output_template]] | related (same resolution shape) | 0.40 |
 | [[bld_tools_knowledge_card]] | related (former mis-type contrast) | 0.36 |
 | [[bld_schema_kind_manifest]] | upstream | 0.33 |
-| [[kind-manifest-builder]] | sibling | 0.30 |

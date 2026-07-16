@@ -4,11 +4,8 @@ description: "Builds ONE llm_judge artifact via 8F pipeline. Loads llm-judge-bui
 model: sonnet
 tools: Read, Write, Edit, Bash, Glob, Grep
 related:
-  - bld_collaboration_llm_judge
   - llm-judge-builder
   - kind-builder
-  - n00_llm_judge_manifest
-  - p03_sp_builder_nucleus
 ---
 
 # llm-judge-builder Sub-Agent

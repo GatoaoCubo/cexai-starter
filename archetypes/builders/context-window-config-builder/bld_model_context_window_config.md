@@ -31,10 +31,6 @@ llm_function: BECOME
 parent: null
 8f: "F3_inject"
 related:
-  - p01_kc_context_window_config
-  - bld_knowledge_card_context_window_config
-  - bld_collaboration_context_window_config
-  - n00_context_window_config_manifest
   - system-prompt-builder
 ---
 ## Identity

@@ -22,11 +22,8 @@ model, impact
 tiered]
 density_score: 0.90
 related:
-  - bld_collaboration_model_provider
   - model-provider-builder
-  - bld_knowledge_card_model_provider
   - bld_config_model_provider
-  - p03_ins_model_provider
 ---
 # Memory: model-provider-builder
 ## Summary
@@ -90,4 +87,3 @@ python _tools/cex_score.py --apply bld-memory-model-provider.md
 | [[model-provider-builder]] | upstream | 0.62 |
 | [[bld_knowledge_model_provider]] | upstream | 0.60 |
 | [[bld_config_model_provider]] | upstream | 0.53 |
-| [[p03_ins_model_provider]] | upstream | 0.51 |

@@ -17,11 +17,7 @@ updated: "2026-04-17"
 keywords: [and architectural position, context map construction, architecture context map, component map, contexts list, context_map, builder, architecture, component inventory, integration pattern reference]
 density_score: 0.90
 related:
-  - bld_knowledge_card_context_map
-  - kc_context_map
   - context-map-builder
-  - bld_instruction_context_map
-  - p01_kc_bounded_context
 ---
 ## Component Inventory
 
@@ -81,8 +77,4 @@ Context A (U) --------[pattern]---------  Context B (D)
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_context_map]] | upstream | 0.45 |
-| [[kc_context_map]] | upstream | 0.45 |
 | [[context-map-builder]] | related | 0.41 |
-| [[bld_instruction_context_map]] | upstream | 0.35 |
-| [[p01_kc_bounded_context]] | upstream | 0.35 |

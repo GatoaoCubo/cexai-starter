@@ -21,11 +21,8 @@ linked_artifacts:
   primary: null
   related: []
 related:
-  - bld_knowledge_card_episodic_memory
   - episodic-memory-builder
-  - bld_collaboration_episodic_memory
   - bld_schema_episodic_memory
-  - bld_collaboration_working_memory
 ---
 
 # Episodic Memory

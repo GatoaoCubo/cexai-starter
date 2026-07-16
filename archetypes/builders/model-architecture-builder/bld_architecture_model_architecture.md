@@ -31,9 +31,7 @@ keywords:
 density_score: 0.88
 related:
   - bld_architecture_training_method
-  - bld_collaboration_model_architecture
   - bld_tools_model_architecture
-  - p10_lr_model_architecture_builder
   - model-architecture-builder
 ---
 # Architecture: model_architecture
@@ -86,7 +84,5 @@ model_architecture
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_training_method]] | sibling | 0.46 |
-| [[bld_collaboration_model_architecture]] | downstream | 0.41 |
 | [[bld_tools_model_architecture]] | upstream | 0.36 |
-| [[p10_lr_model_architecture_builder]] | downstream | 0.36 |
 | [[model-architecture-builder]] | upstream | 0.30 |

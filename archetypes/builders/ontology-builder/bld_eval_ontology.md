@@ -18,11 +18,7 @@ updated: "2026-04-13"
 keywords: [ontology, class hierarchy, property constraints, axiom, schema.org mapping]
 density_score: 0.92
 related:
-  - p10_lr_ontology_builder
-  - bld_output_template_ontology
   - ontology-builder
-  - bld_knowledge_card_ontology
-  - bld_instruction_ontology
 ---
 ## Quality Gate
 
@@ -137,8 +133,6 @@ structured data systems.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_ontology_builder]] | upstream | 0.36 |
-| [[bld_output_template_ontology]] | upstream | 0.35 |
 | [[ontology-builder]] | upstream | 0.35 |
 | [[bld_knowledge_ontology]] | upstream | 0.35 |
 | [[bld_prompt_ontology]] | upstream | 0.34 |

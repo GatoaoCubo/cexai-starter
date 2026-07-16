@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [dataset_card construction, instruction dataset card, hf dataset cards, dataset_card, builder, instruction, "python _tools/cex_compile.py {path}", verify datasheets, dataset cards, add croissant]
 density_score: 0.90
 related:
-  - p01_kc_dataset_card
   - dataset-card-builder
-  - bld_output_template_dataset_card
-  - n00_dataset_card_manifest
-  - n00_eval_dataset_manifest
 ---
 ## Phase 1: DISCOVER
 1. Identify dataset name, version, owner, and primary modality (tabular, text, image, audio, multimodal).
@@ -63,6 +59,5 @@ related:
 |----------|-------------|-------|
 | [[kc_dataset_card]] | upstream | 0.35 |
 | [[dataset-card-builder]] | upstream | 0.33 |
-| [[bld_output_template_dataset_card]] | downstream | 0.31 |
 | n00_dataset_card_manifest | upstream | 0.30 |
 | n00_eval_dataset_manifest | downstream | 0.28 |

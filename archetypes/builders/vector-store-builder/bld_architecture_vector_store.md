@@ -17,11 +17,8 @@ updated: "2026-04-07"
 keywords: [component map of vector_store, and architectural position, vector store construction, architecture vector store, vector_store, builder, examples, component inventory, dependency graph, boundary table]
 density_score: 0.90
 related:
-  - p03_ins_vector_store
-  - bld_collaboration_vector_store
   - bld_architecture_embedder_provider
   - vector-store-builder
-  - n00_vector_store_manifest
 ---
 # Architecture: vector_store in the CEX
 ## Component Inventory
@@ -73,7 +70,6 @@ chunker_config     --indirectly-->   vector_store (chunk count affects index siz
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p03_ins_vector_store]] | upstream | 0.48 |
 | [[bld_orchestration_vector_store]] | upstream | 0.47 |
 | [[bld_architecture_embedder_provider]] | sibling | 0.45 |
 | [[vector-store-builder]] | upstream | 0.43 |

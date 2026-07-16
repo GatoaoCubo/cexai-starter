@@ -26,11 +26,7 @@ title: "Memory Axiom"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - p01_kc_axiom
-  - bld_knowledge_card_axiom
   - axiom-builder
-  - bld_collaboration_axiom
-  - tpl_axiom
 ---
 ## Summary
 Axioms are the highest-confidence rules in a rule system: they are asserted to be unconditionally true and are not subject to override or exception. The authoring challenge is not writing axioms - it is identifying which candidate rules genuinely qualify as axioms versus which are laws (rules with conditions) or guardrails (enforcement mechanisms for laws).

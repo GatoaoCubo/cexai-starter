@@ -26,7 +26,6 @@ related:
   - bld_memory_retriever
   - bld_architecture_retriever
   - bld_config_retriever
-  - bld_instruction_retriever
 ---
 # Domain Knowledge: retriever
 

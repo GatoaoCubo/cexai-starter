@@ -22,10 +22,6 @@ tldr: "Build a saga with forward steps, compensating actions, failure modes, and
 keywords: [saga builder instructions, compensating actions, failure modes, and rollback sequence, instruction, saga, distributed_transaction, saga_name, goal, steps]
 density_score: null
 related:
-  - bld_manifest_saga
-  - kc_saga
-  - bld_quality_gate_saga
-  - bld_output_template_saga
   - bld_schema_saga
 ---
 ## Context
@@ -69,8 +65,4 @@ Required body: Goal, Steps (table with forward + compensating), Rollback Sequenc
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_manifest_saga]] | related | 0.53 |
-| [[kc_saga]] | upstream | 0.51 |
-| [[bld_quality_gate_saga]] | upstream | 0.47 |
-| [[bld_output_template_saga]] | upstream | 0.43 |
 | [[bld_schema_saga]] | upstream | 0.41 |

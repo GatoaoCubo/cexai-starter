@@ -18,11 +18,7 @@ keywords: [edtech vertical, lms market analysis, edtech, ferpa, coppa, vertical,
 density_score: 1.0
 updated: "2026-04-22"
 related:
-  - p01_qg_edtech_vertical
-  - bld_instruction_edtech_vertical
   - edtech-vertical-builder
-  - p01_kc_edtech_vertical
-  - p10_mem_edtech_vertical_builder
 ---
 
 ## Market Overview

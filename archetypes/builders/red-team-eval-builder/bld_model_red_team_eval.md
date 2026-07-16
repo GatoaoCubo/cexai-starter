@@ -34,10 +34,6 @@ parent: null
 8f: "F7_govern"
 related:
   - bld_architecture_red_team_eval
-  - bld_collaboration_red_team_eval
-  - p01_kc_red_team_eval
-  - n00_red_team_eval_manifest
-  - bld_instruction_red_team_eval
 ---
 ## Identity
 
@@ -148,7 +144,3 @@ OWASP ref: LLM{NN}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_red_team_eval]] | downstream | 0.59 |
-| [[bld_collaboration_red_team_eval]] | downstream | 0.55 |
-| [[p01_kc_red_team_eval]] | related | 0.46 |
-| [[n00_red_team_eval_manifest]] | related | 0.46 |
-| [[bld_instruction_red_team_eval]] | upstream | 0.45 |

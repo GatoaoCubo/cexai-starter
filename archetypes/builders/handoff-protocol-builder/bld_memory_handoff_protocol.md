@@ -26,11 +26,7 @@ title: "Memory Handoff Protocol"
 density_score: 0.90
 llm_function: INJECT
 related:
-  - bld_knowledge_card_handoff_protocol
   - handoff-protocol-builder
-  - p10_lr_retriever_config_builder
-  - p10_lr_output_validator_builder
-  - p10_lr_chunk_strategy_builder
 ---
 ## Summary
 Handoff protocol — trigger conditions, context passed, return contract between agents. The difference between a useful handoff_protocol and a useless one is concrete values
@@ -80,6 +76,3 @@ python _tools/cex_score.py --apply p10-lr-handoff-protocol-builder.md
 |----------|-------------|-------|
 | [[bld_knowledge_handoff_protocol]] | upstream | 0.44 |
 | [[handoff-protocol-builder]] | upstream | 0.44 |
-| [[p10_lr_retriever_config_builder]] | sibling | 0.40 |
-| [[p10_lr_output_validator_builder]] | sibling | 0.38 |
-| [[p10_lr_chunk_strategy_builder]] | sibling | 0.37 |

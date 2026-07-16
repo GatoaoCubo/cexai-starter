@@ -19,12 +19,6 @@ common, pattern
 modular, evidence
 reviewed, related artifacts, config parameters]
 density_score: 0.85
-related:
-  - p10_mem_graph_rag_config_builder
-  - p10_lr_judge_config_builder
-  - bld_collaboration_retriever_config
-  - p10_lr_stt_provider_builder
-  - p10_mem_white_label_config_builder
 ---
 ## Observation
 Common issues include misaligned config parameters with product features, leading to incomplete evaluations, and inconsistent environment setups causing reproducibility gaps.
@@ -41,12 +35,3 @@ Reviewed artifacts showed successful use of YAML-based templates with validation
 - Document config parameters with direct references to product feature specs.
 - Use versioned config templates to align with product release cycles.
 - Automate dependency checks to ensure all required components are included.
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[p10_mem_graph_rag_config_builder]] | related | 0.28 |
-| [[p10_lr_judge_config_builder]] | sibling | 0.25 |
-| [[bld_collaboration_retriever_config]] | downstream | 0.23 |
-| [[p10_lr_stt_provider_builder]] | sibling | 0.23 |
-| [[p10_mem_white_label_config_builder]] | related | 0.22 |

@@ -16,10 +16,8 @@ updated: "2026-04-13"
 keywords: [model_architecture construction, collaboration model architecture, collaboration patterns, upstream dependencies, downstream products, crew integration, model_architecture, collaboration, builder, crew roles]
 density_score: 0.88
 related:
-  - bld_collaboration_training_method
   - bld_architecture_model_architecture
   - bld_tools_model_architecture
-  - n00_model_architecture_manifest
   - bld_architecture_default
 ---
 # Collaboration: model-architecture-builder
@@ -64,8 +62,6 @@ Output: P02_model/architectures/p02_ma_[name].md
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_training_method]] | sibling | 0.41 |
 | [[bld_architecture_model_architecture]] | upstream | 0.38 |
 | [[bld_tools_model_architecture]] | upstream | 0.35 |
-| [[n00_model_architecture_manifest]] | upstream | 0.34 |
 | [[bld_architecture_default]] | upstream | 0.29 |

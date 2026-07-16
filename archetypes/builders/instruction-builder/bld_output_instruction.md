@@ -21,9 +21,7 @@ keywords: [template with, instruction construction, output template instruction,
 density_score: 0.90
 related:
   - instruction-builder
-  - bld_output_template_action_prompt
   - bld_architecture_instruction
-  - bld_output_template_workflow
   - bld_schema_instruction
 ---
 # Output Template: instruction
@@ -96,7 +94,6 @@ density_score: {{0.80-1.00}}
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[instruction-builder]] | upstream | 0.33 |
-| [[bld_output_template_action_prompt]] | sibling | 0.31 |
 | [[bld_architecture_instruction]] | downstream | 0.28 |
 | bld_output_template_workflow | sibling | 0.27 |
 | [[bld_schema_instruction]] | downstream | 0.27 |

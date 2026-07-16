@@ -19,7 +19,6 @@ keywords: [edit_format construction, tools edit format, edit_format, builder, to
 this, validation tools, external references, related artifacts, format rules]
 density_score: 0.85
 related:
-  - bld_collaboration_response_format
   - bld_memory_response_format
   - bld_tools_reasoning_strategy
   - bld_tools_vad_config
@@ -53,7 +52,6 @@ This ISO specifies an edit format: how diffs or patches are expressed and applie
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_collaboration_response_format]] | downstream | 0.34 |
 | [[bld_memory_response_format]] | downstream | 0.29 |
 | [[bld_tools_reasoning_strategy]] | sibling | 0.28 |
 | [[bld_tools_vad_config]] | sibling | 0.28 |

@@ -18,10 +18,6 @@ keywords: [user_journey construction, instruction user journey, user_journey, bu
 density_score: 0.85
 related:
   - user-journey-builder
-  - p10_mem_user_journey_builder
-  - n00_user_journey_manifest
-  - bld_knowledge_card_user_journey
-  - bld_collaboration_user_journey
 ---
 ## Phase 1: RESEARCH  
 1. Define user journey objectives (e.g., conversion rate improvement).  
@@ -53,7 +49,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[user-journey-builder]] | downstream | 0.48 |
-| [[p10_mem_user_journey_builder]] | downstream | 0.42 |
-| [[n00_user_journey_manifest]] | downstream | 0.41 |
-| [[bld_knowledge_card_user_journey]] | upstream | 0.36 |
-| [[bld_collaboration_user_journey]] | downstream | 0.34 |

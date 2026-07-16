@@ -27,10 +27,6 @@ keywords: [rag source construction, config rag source, rag_source, builder, exam
 density_score: 0.90
 related:
   - bld_schema_rag_source
-  - p11_qg_rag_source
-  - bld_knowledge_card_rag_source
-  - bld_output_template_rag_source
-  - p03_ins_rag_source
 ---
 # Config: rag_source
 ## File Naming
@@ -79,7 +75,4 @@ Always null at creation. Updated by validation pipeline, never by the builder.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_schema_rag_source]] | upstream | 0.34 |
-| [[p11_qg_rag_source]] | downstream | 0.29 |
 | [[bld_knowledge_rag_source]] | upstream | 0.29 |
-| [[bld_output_template_rag_source]] | upstream | 0.24 |
-| [[p03_ins_rag_source]] | upstream | 0.24 |

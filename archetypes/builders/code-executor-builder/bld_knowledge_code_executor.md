@@ -19,11 +19,7 @@ keywords: [sandboxed code execution, code executor construction, knowledge card 
 code, spec table, implementation mapping]
 density_score: 0.90
 related:
-  - p10_lr_code_executor_builder
-  - p01_kc_code_executor
   - code-executor-builder
-  - p11_qg_code_executor
-  - p04_exec_python_sandbox
 ---
 # Domain Knowledge: code_executor
 ## Executive Summary
@@ -82,8 +78,6 @@ Code executors are sandboxed environments where LLM-generated code runs safely. 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_code_executor_builder]] | downstream | 0.50 |
 | [[kc_code_executor]] | sibling | 0.50 |
 | [[code-executor-builder]] | downstream | 0.44 |
-| [[p11_qg_code_executor]] | downstream | 0.40 |
 | p04_exec_python_sandbox | downstream | 0.39 |

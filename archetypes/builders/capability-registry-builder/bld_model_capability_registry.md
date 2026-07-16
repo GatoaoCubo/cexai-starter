@@ -17,11 +17,7 @@ updated: "2026-04-14"
 keywords: [builder identity, routing for capability_registry, capability_registry construction, type builder capability registry, capability_registry, builder, type_builder, agent-discovery, .claude/agents/, n0x_*/agents/]
 density_score: 0.85
 related:
-  - bld_knowledge_card_capability_registry
-  - bld_collaboration_capability_registry
-  - bld_collaboration_agent
   - agent-builder
-  - p01_kc_agent
 ---
 ## Identity
 

@@ -30,10 +30,7 @@ keywords:
   - "step_ title"
 density_score: 0.85
 related:
-  - n00_quickstart_guide_manifest
   - bld_schema_quickstart_guide
-  - bld_instruction_quickstart_guide
-  - bld_output_template_integration_guide
 ---
 ```markdown
 ---

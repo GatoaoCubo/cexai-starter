@@ -28,9 +28,6 @@ updated: "2026-04-07"
 keywords: [naming conventions, file paths, size limits, operational constraints, regression check construction, config regression check, regression_check, builder, examples, "p07_rc_{check_slug}.md"]
 density_score: 0.90
 related:
-  - bld_knowledge_card_regression_check
-  - bld_collaboration_regression_check
-  - bld_instruction_regression_check
   - regression-check-builder
   - bld_schema_regression_check
 ---
@@ -95,8 +92,5 @@ Rule: ALWAYS document which convention is used in the artifact body. Mixed conve
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_knowledge_card_regression_check]] | upstream | 0.43 |
-| [[bld_collaboration_regression_check]] | downstream | 0.35 |
-| [[bld_instruction_regression_check]] | upstream | 0.34 |
 | [[regression-check-builder]] | upstream | 0.34 |
 | [[bld_schema_regression_check]] | upstream | 0.33 |

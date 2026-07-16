@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [judge_config construction, instruction judge config, judge_config, builder, instruction, judge_id, version, criteria, governance, output_template]
 density_score: 0.85
-related:
-  - bld_instruction_eval_framework
-  - bld_instruction_playground_config
-  - bld_instruction_eval_metric
-  - bld_instruction_reward_model
-  - bld_instruction_content_filter
 ---
 ## Phase 1: RESEARCH  
 1. Identify evaluation criteria (accuracy, fairness, compliance).  
@@ -48,12 +42,3 @@ related:
 - [ ] ✅ Confirm governance rules align with P07 policies  
 - [ ] ✅ Test config against sample LLM outputs  
 - [ ] ✅ Obtain stakeholder approval for deployment
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_eval_framework]] | sibling | 0.42 |
-| [[bld_instruction_playground_config]] | sibling | 0.37 |
-| [[bld_instruction_eval_metric]] | sibling | 0.36 |
-| [[bld_instruction_reward_model]] | sibling | 0.36 |
-| [[bld_instruction_content_filter]] | sibling | 0.30 |

@@ -16,12 +16,6 @@ updated: "2026-04-14"
 8f: "F6_produce"
 keywords: [eval_framework construction, instruction eval framework, eval_framework, builder, instruction, related artifacts, integration points, stakeholder requirements, sibling, evaluation]
 density_score: 0.85
-related:
-  - bld_instruction_judge_config
-  - bld_instruction_eval_metric
-  - bld_instruction_reward_model
-  - bld_instruction_playground_config
-  - bld_instruction_trajectory_eval
 ---
 ## Phase 1: RESEARCH  
 1. Define evaluation criteria aligned with P07 governance metrics  
@@ -48,12 +42,3 @@ related:
 - [ ] Test tool compatibility with P07-compliant systems  
 - [ ] Validate stakeholder requirements coverage  
 - [ ] Ensure compliance with governance and regulatory rules
-
-## Related Artifacts
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
-| [[bld_instruction_judge_config]] | sibling | 0.45 |
-| [[bld_instruction_eval_metric]] | sibling | 0.41 |
-| [[bld_instruction_reward_model]] | sibling | 0.33 |
-| [[bld_instruction_playground_config]] | sibling | 0.31 |
-| [[bld_instruction_trajectory_eval]] | sibling | 0.30 |

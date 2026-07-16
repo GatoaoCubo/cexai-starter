@@ -30,11 +30,7 @@ keywords:
   - "## recommendations"
 density_score: 0.85
 related:
-  - bld_instruction_bias_audit
   - bias-audit-builder
-  - p07_qg_bias_audit
-  - bld_collaboration_bias_audit
-  - p10_lr_bias_audit_builder
 ---
 # p07_ba_{{name}}.md
 
@@ -89,8 +85,4 @@ status: {{status}}
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_bias_audit]] | upstream | 0.40 |
 | [[bias-audit-builder]] | downstream | 0.35 |
-| [[p07_qg_bias_audit]] | downstream | 0.34 |
-| [[bld_collaboration_bias_audit]] | downstream | 0.33 |
-| [[p10_lr_bias_audit_builder]] | downstream | 0.32 |

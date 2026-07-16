@@ -21,9 +21,6 @@ density_score: 0.89
 related:
   - bld_schema_messaging_gateway
   - p04_mg_{{platform}}
-  - bld_instruction_messaging_gateway
-  - n00_messaging_gateway_manifest
-  - bld_output_template_messaging_gateway
 ---
 # Config: messaging_gateway
 
@@ -81,6 +78,3 @@ Mirror nuclei MUST NOT change:
 |----------|-------------|-------|
 | [[bld_schema_messaging_gateway]] | upstream | 0.39 |
 | [\[p04_mg_`{{platform}}`\]] | upstream | 0.36 |
-| [[bld_instruction_messaging_gateway]] | upstream | 0.35 |
-| [[n00_messaging_gateway_manifest]] | upstream | 0.35 |
-| [[bld_output_template_messaging_gateway]] | upstream | 0.34 |

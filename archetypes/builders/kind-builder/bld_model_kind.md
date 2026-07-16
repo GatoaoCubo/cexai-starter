@@ -31,9 +31,6 @@ L2: Reads kinds_meta.json, references existing builders as structural templates,
 L3: When user needs to add a new kind to CEX or scaffold a builder for an existing kind that lacks one.
 related:
   - bld_architecture_kind
-  - bld_collaboration_kind
-  - p06_td_cex_artifact_type_n03
-  - bld_instruction_kind
   - bld_schema_kind
 ---
 ## Identity
@@ -137,7 +134,4 @@ plus .claude/agents/{kind}-builder.md.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[bld_architecture_kind]] | related | 0.55 |
-| [[bld_collaboration_kind]] | downstream | 0.45 |
-| [[p06_td_cex_artifact_type_n03]] | upstream | 0.41 |
-| [[bld_instruction_kind]] | upstream | 0.40 |
 | [[bld_schema_kind]] | upstream | 0.34 |

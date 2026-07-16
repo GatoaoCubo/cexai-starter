@@ -31,11 +31,7 @@ keywords:
   - "chain hub"
 density_score: 0.90
 related:
-  - p10_lr_prompt_version_builder
   - prompt-version-builder
-  - p01_kc_prompt_version
-  - bld_collaboration_prompt_version
-  - bld_instruction_prompt_version
 ---
 # Domain Knowledge: prompt_version
 ## Executive Summary
@@ -76,7 +72,6 @@ Prompt version — immutable snapshot of a prompt at a point in time with metric
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p10_lr_prompt_version_builder]] | downstream | 0.51 |
 | [[prompt-version-builder]] | related | 0.50 |
 | [[kc_prompt_version]] | sibling | 0.46 |
 | [[bld_orchestration_prompt_version]] | downstream | 0.45 |

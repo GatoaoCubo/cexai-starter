@@ -29,8 +29,6 @@ keywords: [naming conventions, file paths, size limits, operational constraints,
 density_score: 0.90
 related:
   - bld_tools_vision_tool
-  - bld_instruction_vision_tool
-  - bld_output_template_vision_tool
   - bld_config_cli_tool
   - bld_config_memory_scope
 ---
@@ -84,6 +82,5 @@ Rule: use canonical provider names from registry — costm names must document f
 |----------|-------------|-------|
 | [[bld_tools_vision_tool]] | upstream | 0.33 |
 | [[bld_prompt_vision_tool]] | upstream | 0.29 |
-| [[bld_output_template_vision_tool]] | upstream | 0.29 |
 | bld_config_cli_tool | sibling | 0.28 |
 | [[bld_config_memory_scope]] | sibling | 0.28 |

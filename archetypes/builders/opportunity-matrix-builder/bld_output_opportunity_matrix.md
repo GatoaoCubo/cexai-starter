@@ -17,11 +17,8 @@ updated: "2026-07-02"
 keywords: [opportunity_matrix construction, output template opportunity matrix, opportunity_matrix, builder, output_template, catalog_sources, opp_score, sourcing_confiavel, matriz de oportunidade]
 density_score: 0.85
 related:
-  - bld_instruction_opportunity_matrix
   - bld_schema_opportunity_matrix
   - opportunity-matrix-builder
-  - p11_qg_opportunity_matrix
-  - p08_adr_opportunity_matrix_kind
 ---
 ```yaml
 ---
@@ -125,5 +122,4 @@ Emitted ONLY for rows carrying `photo_uri` or `dimension`; else one honest-skip 
 | [[bld_prompt_opportunity_matrix]] | upstream | 0.38 |
 | [[bld_schema_opportunity_matrix]] | downstream | 0.36 |
 | [[opportunity-matrix-builder]] | downstream | 0.35 |
-| [[p11_qg_opportunity_matrix]] | downstream | 0.34 |
 | p08_adr_opportunity_matrix_kind | upstream | 0.32 |

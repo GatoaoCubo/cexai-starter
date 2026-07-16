@@ -16,7 +16,6 @@ source_attribution: "Pattern applied: p08_pat_diataxis_for_cex. Framework: Diata
 keywords: [diataxis, coverage-map, tutorial, how-to, reference, explanation, gap-backlog, documentation-debt]
 density_score: null
 related:
-  - p08_pat_diataxis_for_cex
   - p01_ctx_n07_diataxis_coverage_map
 ---
 

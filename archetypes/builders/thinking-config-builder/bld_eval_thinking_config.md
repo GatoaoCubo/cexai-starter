@@ -18,10 +18,8 @@ keywords: [thinking_config construction, quality gate, thinking config, depth li
 density_score: 0.88
 related:
   - thinking-config-builder
-  - p11_qg_quality_gate
   - bld_memory_thinking_config
   - bld_tools_thinking_config
-  - bld_instruction_thinking_config
 ---
 ## Quality Gate
 ## Definition

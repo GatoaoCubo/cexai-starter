@@ -31,10 +31,6 @@ keywords:
   - "error contracts"
 density_score: 0.90
 related:
-  - bld_instruction_input_schema
-  - p10_lr_interface_builder
-  - p11_qg_interface
-  - bld_knowledge_card_interface
   - interface-builder
 ---
 # Instructions: How to Produce an interface
@@ -84,8 +80,4 @@ related:
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[bld_instruction_input_schema]] | sibling | 0.41 |
-| [[p10_lr_interface_builder]] | downstream | 0.38 |
-| [[p11_qg_interface]] | downstream | 0.36 |
-| [[bld_knowledge_card_interface]] | upstream | 0.34 |
 | [[interface-builder]] | downstream | 0.33 |

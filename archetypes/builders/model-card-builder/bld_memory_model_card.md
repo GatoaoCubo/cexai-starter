@@ -24,10 +24,6 @@ for, model cards]
 density_score: 0.90
 related:
   - model-card-builder
-  - bld_collaboration_model_card
-  - bld_knowledge_card_model_card
-  - p03_ins_model_card
-  - p01_kc_model_card
 ---
 # Memory: model-card-builder
 ## Summary
@@ -86,7 +82,3 @@ python _tools/cex_score.py --apply bld-memory-model-card.md
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[model-card-builder]] | upstream | 0.54 |
-| [[bld_collaboration_model_card]] | upstream | 0.49 |
-| [[bld_knowledge_card_model_card]] | upstream | 0.43 |
-| [[p03_ins_model_card]] | upstream | 0.36 |
-| [[p01_kc_model_card]] | upstream | 0.36 |

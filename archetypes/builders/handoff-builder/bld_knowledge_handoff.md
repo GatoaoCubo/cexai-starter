@@ -19,10 +19,7 @@ keywords: [task delegation packaging, handoff construction, knowledge card hando
 handoffs, spec table, scope fence]
 density_score: 0.90
 related:
-  - p01_kc_handoff
-  - bld_instruction_handoff
   - handoff-builder
-  - p12_ho_admin_template
   - bld_schema_handoff
 ---
 # Domain Knowledge: handoff
@@ -81,8 +78,5 @@ Handoffs are self-contained delegation packages that tell a agent_group WHAT to 
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[p01_kc_handoff]] | sibling | 0.46 |
-| [[bld_instruction_handoff]] | downstream | 0.41 |
 | [[handoff-builder]] | downstream | 0.40 |
-| [[p12_ho_admin_template]] | downstream | 0.38 |
 | [[bld_schema_handoff]] | downstream | 0.37 |

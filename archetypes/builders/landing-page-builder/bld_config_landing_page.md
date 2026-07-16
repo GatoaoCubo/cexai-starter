@@ -23,9 +23,7 @@ llm_function: CONSTRAIN
 related:
   - bld_schema_landing_page
   - bld_tools_landing_page
-  - bld_collaboration_landing_page
   - bld_memory_landing_page
-  - tpl_validation_schema
 ---
 # Config: Landing Page Builder
 

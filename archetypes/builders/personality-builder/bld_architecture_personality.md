@@ -35,9 +35,7 @@ keywords:
 density_score: 0.89
 related:
   - kc_personality
-  - bld_knowledge_card_personality
   - personality-builder
-  - n00_personality_manifest
   - bld_memory_personality
 ---
 # Architecture: personality

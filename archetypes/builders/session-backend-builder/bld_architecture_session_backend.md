@@ -18,10 +18,6 @@ keywords: [component map of session_backend, and architectural position, session
 density_score: 0.90
 related:
   - session-backend-builder
-  - p01_kc_session_backend
-  - bld_collaboration_session_backend
-  - p11_qg_session_backend
-  - bld_output_template_session_backend
 ---
 ## Component Inventory
 | Name | Role | Owner | Status |
@@ -77,5 +73,3 @@ guardrail (P11) --constrains--> session_backend (security rules for encryption a
 | [[session-backend-builder]] | downstream | 0.70 |
 | [[kc_session_backend]] | downstream | 0.62 |
 | [[bld_orchestration_session_backend]] | downstream | 0.56 |
-| [[p11_qg_session_backend]] | downstream | 0.53 |
-| [[bld_output_template_session_backend]] | upstream | 0.52 |

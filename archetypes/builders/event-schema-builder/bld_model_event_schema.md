@@ -42,11 +42,7 @@ keywords:
   - "versioning strategy"
 density_score: 1.0
 related:
-  - kc_event_schema
-  - bld_collaboration_event_schema
-  - bld_knowledge_card_event_schema
   - bld_architecture_event_schema
-  - bld_instruction_event_schema
 ---
 ## Identity
 
@@ -125,8 +121,4 @@ ID must match `^p06_evs_[a-z][a-z0-9_]+$`. Body must not exceed 4096 bytes.
 ## Related Artifacts
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| [[kc_event_schema]] | upstream | 0.63 |
-| [[bld_collaboration_event_schema]] | downstream | 0.61 |
-| [[bld_knowledge_card_event_schema]] | upstream | 0.60 |
 | [[bld_architecture_event_schema]] | downstream | 0.55 |
-| [[bld_instruction_event_schema]] | upstream | 0.47 |

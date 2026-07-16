@@ -34,11 +34,7 @@ llm_function: BECOME
 parent: null
 8f: "F7_govern"
 related:
-  - bld_collaboration_content_monetization
-  - p01_kc_content_monetization
   - bld_architecture_content_monetization
-  - p10_lr_content-monetization-builder
-  - bld_instruction_content_monetization
 ---
 ## Identity
 
@@ -142,5 +138,4 @@ Resend/SendGrid/SES, margin enforcement (>30%), and webhook idempotency.
 | [[bld_orchestration_content_monetization]] | downstream | 0.49 |
 | [[kc_content_monetization]] | related | 0.48 |
 | [[bld_architecture_content_monetization]] | upstream | 0.47 |
-| [[p10_lr_content-monetization-builder]] | upstream | 0.39 |
 | [[bld_prompt_content_monetization]] | upstream | 0.39 |

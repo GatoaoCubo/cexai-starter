@@ -19,7 +19,6 @@ density_score: 0.85
 related:
   - bld_config_usage_quota
   - bld_architecture_usage_quota
-  - bld_output_template_app_directory_entry
   - bld_schema_usage_quota
   - bld_architecture_api_reference
 ---
@@ -64,6 +63,5 @@ quota_config:
 |----------|-------------|-------|
 | [[bld_config_usage_quota]] | downstream | 0.24 |
 | [[bld_architecture_usage_quota]] | downstream | 0.21 |
-| [[bld_output_template_app_directory_entry]] | sibling | 0.20 |
 | [[bld_schema_usage_quota]] | downstream | 0.19 |
 | [[bld_architecture_api_reference]] | downstream | 0.18 |

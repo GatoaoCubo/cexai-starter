@@ -33,10 +33,6 @@ keywords:
 density_score: 0.90
 related:
   - drift-detector-builder
-  - p11_qg_drift_detector
-  - p01_kc_drift_detector
-  - bld_knowledge_card_drift_detector
-  - bld_instruction_output_validator
 ---
 # Instructions: How to Produce a drift_detector
 
@@ -77,7 +73,3 @@ related:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[drift-detector-builder]] | downstream | 0.42 |
-| [[p11_qg_drift_detector]] | downstream | 0.38 |
-| [[p01_kc_drift_detector]] | downstream | 0.37 |
-| [[bld_knowledge_card_drift_detector]] | upstream | 0.36 |
-| [[bld_instruction_output_validator]] | sibling | 0.35 |

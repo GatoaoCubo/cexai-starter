@@ -19,10 +19,7 @@ keywords: [multi modal config construction, collaboration multi modal config, mu
 density_score: 0.90
 related:
   - multi-modal-config-builder
-  - bld_instruction_multi_modal_config
   - bld_config_multi_modal_config
-  - bld_output_template_multi_modal_config
-  - p11_qg_multi_modal_config
 ---
 # Collaboration: multi-modal-config-builder
 ## My Role in Crews
@@ -68,7 +65,4 @@ I configure the constraints, routing, and preprocessing for multi-modal inputs.
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[multi-modal-config-builder]] | upstream | 0.46 |
-| [[bld_instruction_multi_modal_config]] | upstream | 0.38 |
 | [[bld_config_multi_modal_config]] | upstream | 0.36 |
-| [[bld_output_template_multi_modal_config]] | upstream | 0.35 |
-| [[p11_qg_multi_modal_config]] | upstream | 0.34 |

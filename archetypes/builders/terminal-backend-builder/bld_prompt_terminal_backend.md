@@ -20,9 +20,6 @@ density_score: 0.90
 related:
   - bld_schema_terminal_backend
   - terminal-backend-builder
-  - p09_qg_terminal_backend
-  - n00_terminal_backend_manifest
-  - kc_terminal_backend
 ---
 ## Phase 1: RESEARCH
 1. Identify the target backend: local | docker | ssh | daytona | modal | singularity.
@@ -61,6 +58,3 @@ related:
 |----------|-------------|-------|
 | [[bld_schema_terminal_backend]] | downstream | 0.62 |
 | [[terminal-backend-builder]] | downstream | 0.61 |
-| [[p09_qg_terminal_backend]] | downstream | 0.56 |
-| [[n00_terminal_backend_manifest]] | downstream | 0.54 |
-| [[kc_terminal_backend]] | upstream | 0.45 |

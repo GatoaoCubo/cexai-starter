@@ -20,10 +20,7 @@ two, passive voice]
 density_score: 0.85
 related:
   - press-release-builder
-  - bld_instruction_press_release
-  - bld_knowledge_card_press_release
   - bld_tools_press_release
-  - bld_collaboration_press_release
 ---
 ## Observation
 
@@ -73,7 +70,4 @@ outputs from LLM builders:
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
 | [[press-release-builder]] | upstream | 0.40 |
-| [[bld_instruction_press_release]] | upstream | 0.36 |
-| [[bld_knowledge_card_press_release]] | upstream | 0.36 |
 | [[bld_tools_press_release]] | upstream | 0.34 |
-| [[bld_collaboration_press_release]] | downstream | 0.30 |

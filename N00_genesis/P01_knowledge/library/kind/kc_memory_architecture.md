@@ -16,11 +16,7 @@ long_tails:
   - "when should I use virtual memory versus more RAM"
 density_score: 1.0
 related:
-  - p01_kc_memory_scope
-  - bld_collaboration_memory_type
-  - bld_collaboration_memory_scope
   - memory-architecture-builder
-  - bld_knowledge_card_memory_scope
 ---
 
 # Memory Architecture Design

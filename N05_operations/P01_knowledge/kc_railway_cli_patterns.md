@@ -26,16 +26,6 @@ keywords:
   - "## 3. project management"
   - "## 4. service management"
   - "## 5. deployment"
-related:
-  - p01_kc_railway_cli_patterns
-  - p01_kc_railway_platform_deep
-  - p08_ac_railway_superintendent
-  - p02_agent_railway_superintendent
-  - p12_dr_railway_superintendent
-  - p03_sp_railway_superintendent
-  - KC_N05_RAILWAY_PLATFORM_DEEP
-  - p01_kc_deploy_paas
-  - KC_N05_POSTGRESQL_RAILWAY
 ---
 
 # Railway CLI — Commands, CI/CD & Deploy Patterns
@@ -283,10 +273,7 @@ railway up --detach
 |----------|-------------|-------|
 | p01_kc_railway_cli_patterns | sibling | 0.81 |
 | p01_kc_railway_platform_deep | sibling | 0.73 |
-| [[p08_ac_railway_superintendent]] | downstream | 0.70 |
 | p02_agent_railway_superintendent | downstream | 0.61 |
 | p12_dr_railway_superintendent | downstream | 0.61 |
 | p03_sp_railway_superintendent | downstream | 0.58 |
-| [[KC_N05_RAILWAY_PLATFORM_DEEP]] | sibling | 0.57 |
 | p01_kc_deploy_paas | sibling | 0.56 |
-| [[KC_N05_POSTGRESQL_RAILWAY]] | sibling | 0.50 |

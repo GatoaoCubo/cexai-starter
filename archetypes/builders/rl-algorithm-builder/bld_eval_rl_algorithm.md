@@ -17,10 +17,6 @@ updated: "2026-04-13"
 density_score: 0.85
 related:
   - rl-algorithm-builder
-  - p07_qg_reward_model
-  - bld_knowledge_card_rl_algorithm
-  - bld_instruction_rl_algorithm
-  - bld_output_template_rl_algorithm
 ---
 ## Quality Gate
 

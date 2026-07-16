@@ -23,7 +23,6 @@ related:
   - bld_meta_quality_gates_builder
   - bld_meta_output_template_builder
   - bld_meta_tools_builder
-  - bld_instruction_chain
 ---
 # Instructions: How to Produce a {{type_name}}
 <!-- This meta-file generates the INSTRUCTIONS.md of any builder -->
@@ -88,4 +87,3 @@ pattern: 3-phase pipeline (research -> compose -> validate)
 | [[bld_meta_quality_gates_builder]] | downstream | 0.35 |
 | [[bld_meta_output_template_builder]] | downstream | 0.32 |
 | [[bld_meta_tools_builder]] | downstream | 0.32 |
-| [[bld_instruction_chain]] | related | 0.32 |

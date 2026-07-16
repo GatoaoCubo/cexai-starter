@@ -26,11 +26,8 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - kc_process_manager
   - bld_schema_process_manager
   - bld_memory_process_manager
-  - bld_instruction_process_manager
-  - bld_output_template_process_manager
 ---
 ## Quality Gate
 

@@ -27,11 +27,8 @@ keywords:
 density_score: 1.0
 updated: "2026-04-17"
 related:
-  - bld_qg_domain_event
-  - bld_rules_data_contract
   - bld_schema_data_contract
   - data-contract-builder
-  - bld_instruction_data_contract
 ---
 ## Quality Gate
 
