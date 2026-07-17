@@ -100,6 +100,24 @@
     .cap-card p{color:var(--text-dim);font-size:13px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
     .cap-open{margin-top:auto;color:var(--synapse);font-size:12.5px;font-weight:600;font-family:var(--mono)}
 
+    /* flagship (hand-built gold-standard agents) */
+    .flagship{background:var(--bg-raised)}
+    .flag-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .flag-card{display:flex;flex-direction:column;gap:11px;background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:22px 22px 20px;box-shadow:var(--shadow-sm);position:relative;overflow:hidden;transition:border-color .2s,box-shadow .2s,transform .2s}
+    .flag-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--synapse),#e67e22)}
+    .flag-card:hover{border-color:var(--synapse);box-shadow:var(--shadow-lg);transform:translateY(-3px)}
+    .flag-star{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#e67e22}
+    .flag-card h3{font-size:18px;line-height:1.25;letter-spacing:-.01em}
+    .flag-card p{color:var(--text-dim);font-size:13.5px;line-height:1.55}
+    .flag-contract{font-family:var(--mono);font-size:11.5px;color:var(--text-muted);border-top:1px solid var(--border-light);padding-top:10px;margin-top:2px}
+    .flag-actions{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:auto;padding-top:6px}
+    .flag-actions a{font-family:var(--mono);font-size:12px;font-weight:600;text-decoration:none}
+    .flag-open{color:var(--synapse)}
+    .flag-setup{color:var(--text-muted)}
+    .flag-actions a:hover{text-decoration:underline}
+    .flagship-cta{text-align:center;margin-top:34px}
+    @media(max-width:820px){.flag-grid{grid-template-columns:1fr}}
+
     /* upload guide */
     .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .guide-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:24px;box-shadow:var(--shadow-sm)}
@@ -133,6 +151,7 @@
       <a class="nav-brand" href="index.html">CEX<span>AI</span></a>
       <ul class="nav-links">
         <li><a href="index.html"><span data-en>Home</span><span data-pt hidden>Início</span></a></li>
+        <li><a href="#flagship"><span data-en>Flagship</span><span data-pt hidden>Flagship</span></a></li>
         <li><a href="#capabilities"><span data-en>Capabilities</span><span data-pt hidden>Capacidades</span></a></li>
         <li><a href="#guide"><span data-en>Upload guide</span><span data-pt hidden>Como subir</span></a></li>
         <li><a href="index.html#tiers"><span data-en>Plans</span><span data-pt hidden>Planos</span></a></li>
@@ -158,6 +177,51 @@
       <p class="dl-meta">cexai-demo-bundles.zip &middot; 21 &times; 12 <span data-en>pillar files + config</span><span data-pt hidden>arquivos-pilar + config</span></p>
     </div>
   </header>
+
+  <section id="flagship" class="flagship">
+    <div class="container">
+      <div class="section-center">
+        <p class="section-label"><span data-en>The gold standard</span><span data-pt hidden>O padr&atilde;o de excel&ecirc;ncia</span></p>
+        <h2 class="section-title"><span data-en>3 ready-made agents, hand-built</span><span data-pt hidden>3 agentes prontos, constru&iacute;dos &agrave; m&atilde;o</span></h2>
+        <p><span data-en>The founder's own flagship agents &mdash; the reference every capability bundle is measured against. Real, production-grade CEXAI agents from the practical class, each shipped as the full 12-pillar contract.</span><span data-pt hidden>Os agentes flagship do pr&oacute;prio founder &mdash; a refer&ecirc;ncia contra a qual cada pacote de capacidade &eacute; medido. Agentes CEXAI reais, de n&iacute;vel produ&ccedil;&atilde;o, da aula pr&aacute;tica, cada um entregue como o contrato completo de 12 pilares.</span></p>
+      </div>
+      <div class="flag-grid">
+        <div class="flag-card">
+          <span class="flag-star">&#9733; <span data-en>Gold standard</span><span data-pt hidden>Padr&atilde;o de excel&ecirc;ncia</span></span>
+          <h3>Pesquisa</h3>
+          <p><span data-en>Market research for Brazilian e-commerce (Mercado Livre, Shopee, Amazon BR, Magalu, Americanas). From one product it delivers search queries, a competitor map, price band, SEO taxonomy and gaps &mdash; ready to hand off to the ad agent.</span><span data-pt hidden>Pesquisa de mercado para e-commerce brasileiro (Mercado Livre, Shopee, Amazon BR, Magalu, Americanas). De um produto, entrega queries de busca, mapa de concorrentes, faixa de pre&ccedil;o, taxonomia de SEO e lacunas &mdash; pronto para a esteira do agente de an&uacute;ncio.</span></p>
+          <p class="flag-contract"><span data-en>Full 12-pillar contract (P01&ndash;P12) + instructions</span><span data-pt hidden>Contrato completo de 12 pilares (P01&ndash;P12) + instru&ccedil;&otilde;es</span></p>
+          <div class="flag-actions">
+            <a class="flag-open" href="demo/flagship/pesquisa/"><span data-en>Open the bundle &rarr;</span><span data-pt hidden>Abrir o pacote &rarr;</span></a>
+            <a class="flag-setup" href="demo/flagship/pesquisa/SETUP_chatgpt_custom_gpt.md"><span data-en>Setup guide</span><span data-pt hidden>Guia de setup</span></a>
+          </div>
+        </div>
+        <div class="flag-card">
+          <span class="flag-star">&#9733; <span data-en>Gold standard</span><span data-pt hidden>Padr&atilde;o de excel&ecirc;ncia</span></span>
+          <h3>An&uacute;ncio</h3>
+          <p><span data-en>Marketplace ad-listing generator for Brazil (Mercado Livre, Shopee, Amazon BR, Magalu): 3 optimized titles, a mobile-first 6-fold description, 2 keyword blocks, 10 traceable bullets and 5&ndash;7 FAQs &mdash; with a 5D self-check gate and an anti-fabrication block.</span><span data-pt hidden>Gerador de an&uacute;ncios de marketplace BR (Mercado Livre, Shopee, Amazon BR, Magalu): 3 t&iacute;tulos otimizados, descri&ccedil;&atilde;o mobile-first em 6 folds, 2 blocos de keywords, 10 bullets rastre&aacute;veis e 5&ndash;7 FAQs &mdash; com self-check 5D e bloco anti-fabrica&ccedil;&atilde;o.</span></p>
+          <p class="flag-contract"><span data-en>Full 12-pillar contract (P01&ndash;P12) + instructions</span><span data-pt hidden>Contrato completo de 12 pilares (P01&ndash;P12) + instru&ccedil;&otilde;es</span></p>
+          <div class="flag-actions">
+            <a class="flag-open" href="demo/flagship/anuncio/"><span data-en>Open the bundle &rarr;</span><span data-pt hidden>Abrir o pacote &rarr;</span></a>
+            <a class="flag-setup" href="demo/flagship/anuncio/SETUP_chatgpt_projects.md"><span data-en>Setup guide</span><span data-pt hidden>Guia de setup</span></a>
+          </div>
+        </div>
+        <div class="flag-card">
+          <span class="flag-star">&#9733; <span data-en>Gold standard</span><span data-pt hidden>Padr&atilde;o de excel&ecirc;ncia</span></span>
+          <h3>Imagens</h3>
+          <p><span data-en>Product-photo prompt engineering. It turns a product description or photo into positive/negative prompts for Midjourney, DALL&middot;E and Stable Diffusion, a 9-scene grid, Brazilian-marketplace TOS compliance scoring, and a C2PA AI-provenance disclosure block.</span><span data-pt hidden>Engenharia de prompt para foto de produto. Transforma uma descri&ccedil;&atilde;o ou foto em prompts positivo/negativo para Midjourney, DALL&middot;E e Stable Diffusion, grid de 9 cenas, score de conformidade com marketplaces BR, e um bloco de proveni&ecirc;ncia C2PA.</span></p>
+          <p class="flag-contract"><span data-en>Full 12-pillar contract (P01&ndash;P12) + instructions</span><span data-pt hidden>Contrato completo de 12 pilares (P01&ndash;P12) + instru&ccedil;&otilde;es</span></p>
+          <div class="flag-actions">
+            <a class="flag-open" href="demo/flagship/imagens/"><span data-en>Open the bundle &rarr;</span><span data-pt hidden>Abrir o pacote &rarr;</span></a>
+            <a class="flag-setup" href="demo/flagship/imagens/SETUP_chatgpt_projects.md"><span data-en>Setup guide</span><span data-pt hidden>Guia de setup</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="flagship-cta">
+        <a class="btn btn-primary btn-lg" href="{{SERVICE_HOTMART_URL}}" target="_blank" rel="noopener"><span data-en>Want these built for you? Done For You</span><span data-pt hidden>Quer esses prontos pra voc&ecirc;? Feito Para Voc&ecirc;</span></a>
+      </div>
+    </div>
+  </section>
 
   <section id="capabilities">
     <div class="container">
