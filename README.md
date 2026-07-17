@@ -20,9 +20,9 @@
   <img src="https://img.shields.io/badge/LLMs-Claude%20%7C%20GPT%20%7C%20Gemini%20%7C%20Ollama-8A2BE2" alt="LLMs">
   <img src="https://img.shields.io/badge/pillars-12-orange" alt="Pillars">
   <img src="https://img.shields.io/badge/nuclei-8-crimson" alt="Nuclei">
-  <img src="https://img.shields.io/badge/kinds-125-red" alt="Kinds">
-  <img src="https://img.shields.io/badge/builders-119-brightgreen" alt="Builders">
-  <img src="https://img.shields.io/badge/tools-88-informational" alt="Tools">
+  <img src="https://img.shields.io/badge/kinds-318-red" alt="Kinds">
+  <img src="https://img.shields.io/badge/builders-317-brightgreen" alt="Builders">
+  <img src="https://img.shields.io/badge/tools-94-informational" alt="Tools">
   <img src="https://img.shields.io/badge/status-UNFILLED%20starter-lightgrey" alt="Unfilled starter">
 </p>
 
@@ -55,7 +55,7 @@ knowledge system** -- the same one CEXAI itself runs on:
 | What you get | Where to look |
 |---|---|
 | An 8-function reasoning pipeline (F1 CONSTRAIN -> F8 COLLABORATE) that every artifact passes through | `.claude/rules/8f-reasoning.md` |
-| 125 typed artifact kinds (knowledge cards, prompts, agents, quality gates, ...) across 12 pillars | `.cex/kinds_meta.json`, `N00_genesis/P01_knowledge/library/kind/` |
+| 318 typed artifact kinds (knowledge cards, prompts, agents, quality gates, ...) across 12 pillars | `.cex/kinds_meta.json`, `N00_genesis/P01_knowledge/library/kind/` |
 | 8 nuclei -- one AI department per business function, each a full 12-pillar fractal | `N00_genesis/` .. `N07_admin/` |
 | A runnable storefront + admin + API wired to the brain's own capability registry | `apps/public_site`, `apps/dashboard_web`, `apps/dashboard_api` |
 | Multi-runtime brain: the same knowledge system runs on Claude, GPT, Gemini, or a local Ollama model | `.cex/config/nucleus_models.yaml` |
