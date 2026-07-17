@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """cex_vertical_detect.py -- heuristic-first vertical auto-detect (offline, no API).
 
-INIT_ASSIMILATION_ENGINE / Wave A / Gap#4 (Stage 0 PURPOSE, N06).
+assimilation engine / Wave A / Gap#4 (Stage 0 PURPOSE, N06).
 
 Given a free-form purpose statement (and/or source signals), map it to one of the
 10 vertical templates in the registry, or return 'derive_from_purpose' when no

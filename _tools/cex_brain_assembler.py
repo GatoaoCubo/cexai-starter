@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""cex_brain_assembler.py -- Stage 3 ASSEMBLE (INIT_ASSIMILATION_ENGINE, Gap#3, N03).
+"""cex_brain_assembler.py -- Stage 3 ASSEMBLE (assimilation engine, Gap#3, N03).
 
 Map a user's PURPOSE (N06 Wave A) + DISTILLED KNOWLEDGE (N04 Wave A) + a VERTICAL
 PALETTE (N06 registry) into a portable, 12-pillar vertical business brain emitted as
