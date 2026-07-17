@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Product Docs",
+  "description": "Capture product documentation as a RAG-ready knowledge card -- features, setup, and how-to reference structured for retrieval.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "product_docs",
+      "name": "Product Docs",
+      "description": "Capture product documentation as a RAG-ready knowledge card -- features, setup, and how-to reference structured for retrieval.",
+      "tags": [
+        "N04",
+        "knowledge_card",
+        "P01",
+        "document",
+        "base"
+      ],
+      "examples": [
+        "Document <product/feature> -- setup, usage, and reference"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:24+00:00",
+    "tenant": "public",
+    "scoped_capability": "product_docs",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

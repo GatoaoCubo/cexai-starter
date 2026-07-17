@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Sourcing Opportunity Matrix",
+  "description": "Cross supplier cost (the offer side, parsed from your supplier catalogs) against market price and demand per product type, rank by margin with a skeptical re-check of the top-N, and emit a go/no-go sourcing verdict.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "sourcing_opportunity",
+      "name": "Sourcing Opportunity Matrix",
+      "description": "Cross supplier cost (the offer side, parsed from your supplier catalogs) against market price and demand per product type, rank by margin with a skeptical re-check of the top-N, and emit a go/no-go sourcing verdict.",
+      "tags": [
+        "N06",
+        "opportunity_matrix",
+        "P11",
+        "analyze",
+        "base"
+      ],
+      "examples": [
+        "Find the best products to source from <supplier catalog> -- cost vs market margin"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:25+00:00",
+    "tenant": "public",
+    "scoped_capability": "sourcing_opportunity",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

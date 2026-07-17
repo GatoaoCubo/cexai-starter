@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- OAuth Connect",
+  "description": "Produce a typed OAuth app configuration -- client id/secret slots, scopes, redirect URIs, and token endpoints -- to wire a third-party integration.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "oauth_connect",
+      "name": "OAuth Connect",
+      "description": "Produce a typed OAuth app configuration -- client id/secret slots, scopes, redirect URIs, and token endpoints -- to wire a third-party integration.",
+      "tags": [
+        "N03",
+        "oauth_app_config",
+        "P04",
+        "create",
+        "base"
+      ],
+      "examples": [
+        "Configure an OAuth connection to <provider> -- scopes + redirect URIs"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:24+00:00",
+    "tenant": "public",
+    "scoped_capability": "oauth_connect",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

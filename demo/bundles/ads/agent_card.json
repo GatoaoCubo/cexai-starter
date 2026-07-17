@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Ads and Copy",
+  "description": "Generate brand-voice ad copy and campaign prompt templates -- hooks, CTAs, and platform-length variants for a campaign.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "ads",
+      "name": "Ads and Copy",
+      "description": "Generate brand-voice ad copy and campaign prompt templates -- hooks, CTAs, and platform-length variants for a campaign.",
+      "tags": [
+        "N02",
+        "prompt_template",
+        "P03",
+        "create",
+        "base"
+      ],
+      "examples": [
+        "Write ad copy for <product/offer> targeting <audience>"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:24+00:00",
+    "tenant": "public",
+    "scoped_capability": "ads",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

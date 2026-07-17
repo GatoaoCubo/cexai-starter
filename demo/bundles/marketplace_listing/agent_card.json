@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Marketplace Listing (Channel Projection)",
+  "description": "Map a canonical product into a per-channel marketplace listing payload (e.g. Mercado Livre Items API body) + a readiness report (PUBLISH-READY or NOT-READY with missing fields / warnings). Map/validate are pure; publish stays operator-gated.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "marketplace_listing",
+      "name": "Marketplace Listing (Channel Projection)",
+      "description": "Map a canonical product into a per-channel marketplace listing payload (e.g. Mercado Livre Items API body) + a readiness report (PUBLISH-READY or NOT-READY with missing fields / warnings). Map/validate are pure; publish stays operator-gated.",
+      "tags": [
+        "N06",
+        "marketplace_listing",
+        "P05",
+        "create",
+        "base"
+      ],
+      "examples": [
+        "Map <product> into a <marketplace> listing -- title, price, category, readiness"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:24+00:00",
+    "tenant": "public",
+    "scoped_capability": "marketplace_listing",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

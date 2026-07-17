@@ -1,0 +1,46 @@
+id: p02_iso_export_public_email_builder
+kind: agent_package
+pillar: P02
+version: 1.0.0
+created: '2026-07-17T07:08:24+00:00'
+updated: '2026-07-17T07:08:24+00:00'
+author: cex_export_agent
+agent_name: public_email_builder
+tier: standard
+files_count: 5
+domain: N02
+quality: null
+tags:
+- agent-package
+- export
+- email_builder
+- prompt_template
+- customgpt
+tldr: Portable single-capability agent package for 'email_builder' (target=customgpt,
+  tenant=public).
+portable: true
+llm_function: BECOME
+target: customgpt
+scoped_capability: email_builder
+runtime:
+  nucleus: N02
+  kind: prompt_template
+  pillar: P03
+  verb: create
+  source: base
+file_inventory:
+- file: manifest.yaml
+  pillar: P02
+- file: system_instruction.md
+  pillar: P03
+- file: agent_card.json
+  pillar: P08
+- file: customgpt_instructions.json
+  pillar: P05
+- file: README.md
+  pillar: P01
+provenance_notes:
+- brand_config.yaml not found for tenant 'public' -- brand fields are placeholders
+  (never fabricated).
+- no typed input_contract declared for this capability -- the agent takes a single
+  free-text 'intent' input.

@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Media and Photo",
+  "description": "Produce an image / photo BRIEF (a multimodal prompt). The downstream media render (ffmpeg / TTS pipeline) is a separate non-SDK step, out of scope here.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "media_photo",
+      "name": "Media and Photo",
+      "description": "Produce an image / photo BRIEF (a multimodal prompt). The downstream media render (ffmpeg / TTS pipeline) is a separate non-SDK step, out of scope here.",
+      "tags": [
+        "N02",
+        "multimodal_prompt",
+        "P03",
+        "create",
+        "base"
+      ],
+      "examples": [
+        "Create a photo brief for <scene/subject>"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:24+00:00",
+    "tenant": "public",
+    "scoped_capability": "media_photo",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

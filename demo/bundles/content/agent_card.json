@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Content",
+  "description": "Capture knowledge / documentation content (a knowledge card) -- RAG-ready docs, internal know-how, and reference material.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "content",
+      "name": "Content",
+      "description": "Capture knowledge / documentation content (a knowledge card) -- RAG-ready docs, internal know-how, and reference material.",
+      "tags": [
+        "N04",
+        "knowledge_card",
+        "P01",
+        "document",
+        "base"
+      ],
+      "examples": [
+        "Document <process/topic> as a knowledge card"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:24+00:00",
+    "tenant": "public",
+    "scoped_capability": "content",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

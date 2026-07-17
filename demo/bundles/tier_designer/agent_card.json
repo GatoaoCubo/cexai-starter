@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Plan Matrix / Tier Designer",
+  "description": "Design a subscription plan matrix -- differentiated tiers, feature gating, and price anchoring -- as a typed subscription_tier artifact.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "tier_designer",
+      "name": "Plan Matrix / Tier Designer",
+      "description": "Design a subscription plan matrix -- differentiated tiers, feature gating, and price anchoring -- as a typed subscription_tier artifact.",
+      "tags": [
+        "N06",
+        "subscription_tier",
+        "P11",
+        "create",
+        "base"
+      ],
+      "examples": [
+        "Design the plan matrix for <product> -- 3 tiers, feature gating, anchor price"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:25+00:00",
+    "tenant": "public",
+    "scoped_capability": "tier_designer",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

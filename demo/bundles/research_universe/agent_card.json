@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Research Universe (Multi-Source Brain)",
+  "description": "Run ONE seed (a product, brand, CNPJ, company, keyword, or store:id) through the full research brain -- firmographics (CNPJ/IBGE), social signal (app store / Reddit / YouTube), reputation (Reclame Aqui), PT sentiment, SEO keywords, and multi-perspective questions -- as ONE unified multi-source report with honest per-lane status (ok / blocked / skipped) and provenance.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "research_universe",
+      "name": "Research Universe (Multi-Source Brain)",
+      "description": "Run ONE seed (a product, brand, CNPJ, company, keyword, or store:id) through the full research brain -- firmographics (CNPJ/IBGE), social signal (app store / Reddit / YouTube), reputation (Reclame Aqui), PT sentiment, SEO keywords, and multi-perspective questions -- as ONE unified multi-source report with honest per-lane status (ok / blocked / skipped) and provenance.",
+      "tags": [
+        "N01",
+        "research_universe",
+        "P01",
+        "analyze",
+        "base"
+      ],
+      "examples": [
+        "Pesquise <produto/marca/CNPJ> -- firmografia, social, reputacao, SEO e perguntas"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:25+00:00",
+    "tenant": "public",
+    "scoped_capability": "research_universe",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)] -- Product Match + Catalog Audit",
+  "description": "Match a supplier item to a marketplace listing by photo, dimension, and supplier code (EAN excluded on purpose -- every reseller recodes it), with confidence, divergent-registration flags, and a reliability verdict.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "[fornecer: nome da marca (brand_config.identity.BRAND_NAME)]",
+    "url": ""
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "product_match",
+      "name": "Product Match + Catalog Audit",
+      "description": "Match a supplier item to a marketplace listing by photo, dimension, and supplier code (EAN excluded on purpose -- every reseller recodes it), with confidence, divergent-registration flags, and a reliability verdict.",
+      "tags": [
+        "N03",
+        "product_match",
+        "P04",
+        "analyze",
+        "base"
+      ],
+      "examples": [
+        "Match <supplier items> to marketplace listings by photo + dimension + code"
+      ]
+    }
+  ],
+  "supportedInterfaces": [],
+  "_meta": {
+    "generated_by": "cex_export_agent",
+    "generated_at": "2026-07-17T07:08:25+00:00",
+    "tenant": "public",
+    "scoped_capability": "product_match",
+    "note": "A2A AgentCard scoped to ONE CEXAI capability. supportedInterfaces is empty until this agent is deployed behind a URL endpoint."
+  }
+}
