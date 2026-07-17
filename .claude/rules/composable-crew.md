@@ -132,7 +132,7 @@ Implementation: `_tools/cex_crew_runner.py` -- `CONDITION_TABLE` (leaf
 dispatch) + `_evaluate_termination` (the recursive AND/OR evaluator) +
 `STRATEGY_TABLE` + `PROCESS_TO_STRATEGY` (the strategy dispatch, replacing the
 old `process ==` if/elif ladder -- see the R-172 module comment just above
-`CrewControlPlaneRunner`). Register row: `docs/IMPROVEMENT_REGISTER.md` R-172.
+`CrewControlPlaneRunner`). Register row: R-172.
 Source KC: `N01_intelligence/P01_knowledge/kc_oss_autogen.md`.
 
 ## How to instantiate a crew (end-to-end)
@@ -213,7 +213,7 @@ not a full crew with handoffs), use swarm instead of crew. Swarm trades
 coherence for breadth:
 
 ```bash
-# in-session dispatch (Task tool): swarm agent 5 "scaffold 5 niche sales agents"
+bash _spawn/dispatch.sh swarm agent 5 "scaffold 5 niche sales agents"
 # Spawns 5 agent-builders in parallel worktrees, each produces one artifact.
 ```
 
@@ -227,8 +227,8 @@ generating variants) rather than **integration** (roles depend on each other).
 
 **Two-phase reality (register vs. fan-out), verified on disk 2026-07-07 (R-058).**
 The `swarm` example above is honest about the OUTCOME but silent on the
-MECHANIC: `Task tool: dispatch swarm` does not itself launch any builder process. Its
-`swarm)` case (`Task tool: dispatch:507-516`) does exactly one thing --
+MECHANIC: `bash _spawn/dispatch.sh swarm` does not itself launch any builder process. Its
+`swarm)` case (`_spawn/dispatch.sh:507-516`) does exactly one thing --
 delegate to `bash _spawn/spawn_swarm.sh "$KIND" "$N" "$TASK"` -- and that
 script is two phases, only the first of which is automatic:
 
@@ -239,12 +239,12 @@ script is two phases, only the first of which is automatic:
    when this step finishes.
 2. **Fan-out** (manual -- the operator must run it): `spawn_swarm.sh` prints,
    but never executes, the real dispatch commands -- either one cell at a
-   time (`the Task tool (in-session) solo {nucleus} "Read {handoff} and execute"
+   time (`bash _spawn/dispatch.sh solo {nucleus} "Read {handoff} and execute"
    -w {swarm_id}`, `spawn_swarm.sh:105-106`) or a copy-paste "auto-fan-out"
-   loop that backgrounds one `Task tool: dispatch solo ... &` per cell followed by
+   loop that backgrounds one `bash _spawn/dispatch.sh solo ... &` per cell followed by
    `wait` (`spawn_swarm.sh:108-113`).
 
-So `Task tool: dispatch swarm agent 5 "..."` really does create 5
+So `bash _spawn/dispatch.sh swarm agent 5 "..."` really does create 5
 worktrees + 5 handoffs in one call, but nothing is *building* until the
 operator runs (or copy-pastes) the fan-out step it prints. Treat swarm as
 register-then-fan-out, not a single self-contained dispatch.
@@ -257,13 +257,17 @@ register-then-fan-out, not a single self-contained dispatch.
 - **No handoffs needed** -> if roles never consume each other's output, grid is cheaper
 
 <!-- cex:lean-surface-note -->
-> **Lean tenant note:** this sovereign repo ships a SINGLE in-session N07 orchestrator, not
-> the full multi-nucleus Central grid. Only `.claude/commands/{build,guide,mentor,run,
-> simplify,validate}.md` are shipped -- `/plan`, `/spec`, `/grid`, `/dispatch`, `/mission`,
-> `/status`, `/consolidate`, `/evolve`, `/crew`, `/init`, `/cex-doctor` and the
-> dispatch-oriented tools below (`cex_run.py`, `cex_crew.py`, `cex_evolve.py`,
-> `cex_mission_runner.py`, `cex_flywheel_audit.py`, `cex_capability_index.py`, `cex_hooks.py`,
-> `Task tool: dispatch`) are Central-only and are NOT present in this repo. The tables below describe
-> Central's full capability set for reference; treat any command/tool not in the shipped list
-> as unavailable here (rows below citing one are marked inline too -- see each row).
+> **Multi-orchestration note (updated):** this repo now ships the REAL dispatch mechanism
+> alongside the in-session Task-tool path -- both are available; pick per the cost/detachment
+> tie-breaker in `.claude/rules/n07-orchestrator.md`. Shipped: `.claude/commands/{batch,build,
+> consolidate,crew,dispatch,grid,guide,mentor,mission,monitor,plan,run,simplify,spec,status,
+> validate}.md`, `_spawn/dispatch.sh` (+ spawn_grid/spawn_solo/spawn_stop/spawn_monitor/
+> spawn_swarm.sh/grid_safe_launch/grid_watchdog), `.claude/workflows/grid.js` (Mode W),
+> `boot/n01.ps1..n07.ps1` + `boot/cex_codex.ps1` + `boot/cex_gemini.ps1` + `boot/cex_nucleus.sh`
+> (multi-runtime boot targets), and `_tools/{cex_mission,cex_wave_state,cex_evolve,
+> cex_system_test,cex_crew,cex_crew_runner}.py`. Still NOT present in this repo (genuinely
+> Central-only): `cex_run.py`, `cex_mission_runner.py`, `cex_flywheel_audit.py`,
+> `cex_capability_index.py`, `cex_hooks.py`, `cex_team_charter.py`, `cex_capability_router.py`
+> (ACR preflight), and the improvement register. Any command/tool not in the shipped list above
+> is unavailable here; a row below citing one is marked inline too.
 <!-- cex:lean-surface-note -->

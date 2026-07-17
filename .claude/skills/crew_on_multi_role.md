@@ -21,8 +21,6 @@ related:
   - crew_template
 ---
 
-> **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_crew. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
-
 # Crew on Multi Role
 
 ## When this fires
@@ -31,10 +29,10 @@ related:
 - Multiple specialties are needed AND they must hand off artifacts to each other.
 
 ## What to do
-1. Run `python _tools/cex_crew.py list` to discover existing crew_template artifacts.  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
-2. If a matching crew exists, run `python _tools/cex_crew.py show <name>` to inspect roles, process topology, and required charter fields.  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
+1. Run `python _tools/cex_crew.py list` to discover existing crew_template artifacts.
+2. If a matching crew exists, run `python _tools/cex_crew.py show <name>` to inspect roles, process topology, and required charter fields.
 3. Author or reuse a `team_charter` artifact with mission, budget, deadline, and quality gate.
-4. Execute via `python _tools/cex_crew.py run <name> --charter <charter_path> --execute`.  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
+4. Execute via `python _tools/cex_crew.py run <name> --charter <charter_path> --execute`.
 5. Pick topology by load: sequential (each role waits for prior artifact), hierarchical (manager + workers, 5+ roles), consensus (parallel + vote).
 6. Use crew when roles need handoffs. Use grid when N independent artifacts of different kinds. Use swarm when N parallel builders of the same kind. Never crowbar a crew where a solo build suffices.
 

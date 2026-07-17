@@ -15,16 +15,16 @@ related:
   - p01_kc_cex_orchestration_architecture
 ---
 
-> **[DISTILL ANNOTATION]** This file cites tool(s) not shipped in this tenant (Central-only): cex_team_charter, cex_wave_state. Inline citations are marked `[NOT SHIPPED in this tenant -- Central-only tool]`.
+> **[DISTILL ANNOTATION -- updated]** `cex_wave_state.py` is now shipped in this tenant (multi-orchestration carry). `cex_team_charter` remains Central-only; its one call below still carries an inline `[NOT SHIPPED in this tenant -- Central-only tool]` marker.
 
 # wave_run -- The In-Session Multi-Wave Mission Loop
 
 > **Mechanism**: N07 drives the live grid + the `Monitor` tool; the mechanical between-waves
-> gate is `python _tools/cex_wave_state.py gate` (the testable engine). One governed multi-wave  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
+> gate is `python _tools/cex_wave_state.py gate` (the testable engine). One governed multi-wave
 > mission instead of hand-driving each boundary + re-deriving the gate from memory.
 
 > **Mode note (R-008, 2026-07-02)**: this loop as written below is the MODE-X wave pattern
-> (`Task tool: dispatch` + Monitor + signals). For a Mode-W wave, dispatch via `Workflow({name: "grid",
+> (`_spawn/dispatch.sh` + Monitor + signals). For a Mode-W wave, dispatch via `Workflow({name: "grid",
 > args: {mission}})` instead -- no Monitor needed (harness notifications + structured returns
 > replace steps 3-4); the between-waves QUALITY gate (doctor + floor) still applies before the
 > next wave. Mode resolution table: `.claude/commands/grid.md`.
@@ -48,7 +48,7 @@ governed wave-to-wave advance.
 Resolve and SHOW the wave plan before dispatching anything:
 
 ```bash
-python _tools/cex_wave_state.py plan --plan <plan.md>  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
+python _tools/cex_wave_state.py plan --plan <plan.md>
 ```
 
 This prints every wave + its unique nuclei (empty waves are DROPPED by the parser -- never
@@ -62,9 +62,9 @@ Decide `-w` per wave using the `n07-orchestrator.md` rule (>= 3 cells AND multi-
 for each wave W in the plan:
   1. WRITE handoffs            .cex/runtime/handoffs/{MISSION}_{n0X}.md  (+ copy to {n0X}_task.md)
   2. ARCHIVE stale signals     mv .cex/runtime/signals/signal_n0*.json .cex/runtime/signals/archive/
-  3. DISPATCH the grid         the Task tool (in-session) grid <MISSION> [-w]
+  3. DISPATCH the grid         bash _spawn/dispatch.sh grid <MISSION> [-w]
   4. MONITOR (persistent)      the Monitor loop below -- N07 keeps working between notifications
-  5. on ALL-COMPLETE -> GATE   python _tools/cex_wave_state.py gate --mission <MISSION> --wave W [--worktree]  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
+  5. on ALL-COMPLETE -> GATE   python _tools/cex_wave_state.py gate --mission <MISSION> --wave W [--worktree]
        rc 0 (PASS) -> consolidate this wave, ADVANCE to W+1
        rc 2 (FAIL) -> append the gate feedback to the FAILING nuclei's handoffs,
                       re-dispatch ONLY those, re-MONITOR, re-GATE (bounded retries, default 1)
@@ -88,11 +88,11 @@ final: one consolidate + a one-line report
 ### Step 3 -- Dispatch (mirror n07-orchestrator)
 
 ```bash
-# in-session dispatch (Task tool): grid <MISSION>       # plain grid
-# in-session dispatch (Task tool): grid <MISSION> -w    # per-cell worktrees (race-free)
+bash _spawn/dispatch.sh grid <MISSION>       # plain grid
+bash _spawn/dispatch.sh grid <MISSION> -w    # per-cell worktrees (race-free)
 ```
 
-NEVER timeout/kill `Task tool: dispatch grid` (killing the spawn manager orphans the cells). Use the
+NEVER timeout/kill `bash _spawn/dispatch.sh grid` (killing the spawn manager orphans the cells). Use the
 Monitor (a `run_in_background` watcher) instead.
 
 ### Step 4 -- Monitor (reused verbatim from `monitor.md`)
@@ -142,7 +142,7 @@ per-nucleus quality) is the gate's source of truth; record each wave's quality i
 during consolidate so (c) has real scores to read.
 
 ```bash
-python _tools/cex_wave_state.py gate --mission <MISSION> --wave W [--worktree]  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
+python _tools/cex_wave_state.py gate --mission <MISSION> --wave W [--worktree]
 echo "rc=$?"   # 0 PASS -> advance ; 2 FAIL -> retry the failing nuclei
 ```
 
@@ -156,7 +156,7 @@ echo "rc=$?"   # 0 PASS -> advance ; 2 FAIL -> retry the failing nuclei
   mission -- that is the contract.)
 
 The gate's verdict is recorded to the side ledger `.cex/runtime/wave_state.json` for the audit
-trail. `python _tools/cex_wave_state.py status --mission <MISSION>` shows the MissionState  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
+trail. `python _tools/cex_wave_state.py status --mission <MISSION>` shows the MissionState
 summary + every recorded gate verdict.
 
 ## Anti-patterns (from `monitor.md` -- the gate adds two more)

@@ -14,8 +14,23 @@ related:
 
 # Consolidate on Grid Complete
 
-Promoted to `N07_admin/P10_memory/procedural_memory_n07.md` SOP-11 on
-2026-07-03 per `docs/IMPROVEMENT_REGISTER.md` R-166 (skill triage, destiny b:
-single-nucleus operating procedure). Read the SOP there for the full
-trigger/procedure/example -- this stub stays in place so the autofire
-trigger path keeps resolving.
+## When this fires
+
+All wave nuclei have signaled completion (`.cex/runtime/signals/signal_{nucleus}_*.json`
+present for every dispatched nucleus, or the Mode-W `grid` workflow returned its
+structured per-cell results).
+
+## What to do
+
+Run the Consolidate Protocol (`.claude/rules/n07-orchestrator.md` Consolidate Protocol,
+or `.claude/commands/consolidate.md` for the step-by-step form):
+
+1. VERIFY -- deliverable files exist; read each nucleus's report.
+2. GOVERN -- `python _tools/cex_doctor.py` (0 FAIL); `python _tools/cex_score.py --apply`
+   if present.
+3. STOP -- `bash _spawn/dispatch.sh stop` (kills only THIS session's idle nuclei; frees
+   the resources the finished processes were holding).
+4. COMMIT -- stage + commit the wave's work with an attributed message.
+5. REPORT -- summarize what landed.
+
+This stub stays in place so the autofire trigger path keeps resolving.

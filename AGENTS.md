@@ -41,7 +41,7 @@ Needs the `claude` CLI on `PATH`. No other setup.
 
 ### What Claude Code can do here out of the box
 
-Once booted (or in any Claude Code session opened at this repo's root), six slash
+Once booted (or in any Claude Code session opened at this repo's root), 16 slash
 commands are available (`.claude/commands/`):
 
 | Command | Does |
@@ -52,25 +52,46 @@ commands are available (`.claude/commands/`):
 | `/validate` | Repo-wide health check (`cex_doctor`) |
 | `/mentor [explain\|quiz] <concept>` | Teach a concept in this brain, hands-on |
 | `/simplify [path]` | Three-lens audit of a diff or path (reuse / quality / efficiency) |
+| `/spec [plan]` | Turn a plan + decisions into a detailed build blueprint |
+| `/monitor` | Watch a dispatched wave without blocking (commits + signals + PID liveness) |
+| `/plan <goal>` | Decompose a goal into tasks, nucleus assignments, dependencies |
+| `/dispatch <nucleus> <task>` | Write a handoff and spawn ONE nucleus (OS-window) |
+| `/grid [spec]` | Dispatch nuclei autonomously -- mode-resolving (in-session or OS-window) |
+| `/mission <goal>` | Full lifecycle shortcut: plan + guide + spec + grid + consolidate |
+| `/consolidate` | Post-dispatch: verify deliverables, stop idle processes, commit |
+| `/status` | System health + running-nucleus dashboard |
+| `/crew list\|show\|run <name>` | Composable multi-role teams with handoffs (`cex_crew.py`) |
+| `/batch <intents-file>` | N independent tasks fanned out across isolated git worktrees |
 
 Underneath these, `.claude/rules/` (10 files) and `.claude/skills/` (28 lazy-loaded files)
 carry the actual behavioral contract -- the 8F pipeline, GDP (guided decisions), the
-ASCII-code rule, dispatch-before-build discipline, and more. `.claude/agents/` ships 121
-builder sub-agent definitions (one per typed kind, plus nucleus identities) that Claude
-Code can invoke as in-session Task-tool agents.
+ASCII-code rule, dispatch-before-build discipline, and more -- including
+`.claude/rules/n07-orchestrator.md`, which documents BOTH dispatch transports
+(in-session Task tool, and the OS-window `_spawn/dispatch.sh` grid; see "Multi-orchestration"
+below). `.claude/agents/` ships 121 builder sub-agent definitions (one per typed kind, plus
+nucleus identities) that Claude Code can invoke as in-session Task-tool agents -- the path
+`/grid` and `/mission` resolve to when they pick the in-session transport.
 
 ## Track 2 -- any other agent (GPT, Gemini, Ollama-backed, custom loops)
 
-There is no dedicated per-runtime boot script in this tenant (no `boot/*_codex.ps1`, no
-`GEMINI.md`, no `OLLAMA.md` -- unlike CEXAI's own engine repo, this fabrication shipped
-lean). Two real options:
+Four real options, lightest to most integrated:
 
 1. **Point your agent at `CLAUDE.md` directly.** It is plain markdown; tell your agent
    "read `CLAUDE.md` first, then follow its pointers" and it has the same map a Claude
    Code session gets automatically. From there it can read
    `.claude/rules/8f-reasoning.md`, the nucleus rule files (`N0X_*/rules/n0X-*.md`), and
    `.cex/kinds_meta.json` the same way.
-2. **Keep the native `claude` CLI, swap the backend model.** This repo includes the "any
+2. **`boot/cex_nucleus.sh`** -- one self-contained, cross-platform (Mac/Linux/WSL) launcher
+   that boots ANY of the 7 nuclei via ANY CLI: `bash boot/cex_nucleus.sh n03 --cli gemini`
+   (also `--cli codex` / `--cli ollama`). It reads `.cex/config/nucleus_models.yaml` for the
+   CLI + model, builds the sin-lens system prompt itself, and reads
+   `.cex/runtime/handoffs/<nuc>_task.md` if one is waiting -- no per-nucleus-per-CLI file
+   required.
+3. **N07 direct multi-runtime boots (Windows)** -- `boot/cex_codex.ps1` and
+   `boot/cex_gemini.ps1` boot the ORCHESTRATOR specifically via Codex or Gemini
+   (`powershell -File boot/cex_gemini.ps1`). Useful for a non-Claude orchestrator that
+   still dispatches Claude-run nuclei underneath it via `_spawn/dispatch.sh`.
+4. **Keep the native `claude` CLI, swap the backend model.** This repo includes the "any
    model" seam: `boot/cex_anymodel.ps1` wires `ANTHROPIC_BASE_URL` to a local LiteLLM
    proxy (`boot/litellm_proxy.ps1`, config at `.cex/config/litellm_config.yaml`) that can
    route to Anthropic, a **free local Ollama model**, Groq, Cerebras, DeepSeek, or 100+
@@ -80,23 +101,60 @@ lean). Two real options:
 ## Who am I? (nucleus identity)
 
 `CLAUDE.md` resolves identity from the `CEX_NUCLEUS` environment variable. `boot/cex.sh` /
-`boot/cex.ps1` always set it to `N07` (the orchestrator) -- this is the only nucleus with a
-dedicated boot script in this tenant. To have an agent act as a **different** department
-(say, N02 Marketing) inside a plain Claude Code session, set `CEX_NUCLEUS=N02` yourself, or
-simply ask the agent to "act as N02" -- it self-loads `N02_marketing/rules/n02-marketing.md`
-the same way N07 loads its own. Every one of the 8 nuclei has a `rules/n0X-*.md` file; none
-needs a dedicated boot script to be read.
+`boot/cex.ps1` are N07's direct, manual boot (always sets `CEX_NUCLEUS=N07`); every one of
+the 7 operational nuclei also has its own dispatch-mechanism boot script
+(`boot/n01.ps1` .. `boot/n07.ps1`), each setting its own `CEX_NUCLEUS` and merging that
+nucleus's agent card + sin-lens identity before launch -- these are what
+`_spawn/dispatch.sh` spawns (see "Multi-orchestration" below). To have an agent act as a
+**different** department (say, N02 Marketing) inside a plain Claude Code session without
+booting through a script, set `CEX_NUCLEUS=N02` yourself, or simply ask the agent to "act
+as N02" -- it self-loads `N02_marketing/rules/n02-marketing.md` the same way N07 loads its
+own. Every one of the 8 nuclei has a `rules/n0X-*.md` file; reading it is what actually
+establishes identity -- the boot script is a convenience, not a requirement.
 
-## This is a solo-operator brain, not a multi-nucleus dispatch grid
+## Multi-orchestration: N07 dispatches, in two transports
 
-CEXAI's own engine repo runs N07 as an orchestrator that **dispatches** work to parallel
-nuclei (`grid`, `swarm`, crews). This tenant fabrication is leaner by design: `/build` runs
-the 8F pipeline **in-session**, one operator at a time -- "there is no nucleus dispatch and
-no grid" here (see `.claude/commands/build.md`). If you came from the engine repo expecting
-`_spawn/dispatch.sh`, it is not part of this fabrication. The 8 nuclei directories are still
-real, typed, 12-pillar knowledge departments -- you can read them, build from them, and
-address them by name -- you just do it yourself, in one session, rather than fanning work
-out to parallel processes.
+This repo ships the REAL N07 dispatch mechanism, not just in-session fan-out. `/build`
+still runs the 8F pipeline in-session for a single artifact -- but for multi-artifact,
+multi-nucleus work, N07 now has two transports, both running the full 8F pipeline per
+nucleus, both signaling completion, both ending at `/consolidate`:
+
+1. **In-session (Task tool)** -- N07 spawns subagents inside the current Claude Code
+   session. No OS window, no PID file, no `taskkill`. Cheaper, faster, the default for
+   the common case (same-runtime, attached, single session).
+2. **OS-window spawn (`_spawn/dispatch.sh`)** -- N07 spawns a REAL separate process
+   (`claude`, or `codex` / `gemini` via `-cli`) per nucleus, each in its own window,
+   tracked by PID in `.cex/runtime/pids/spawn_pids.txt`, killable, resumable across a
+   crashed session, and able to outlive this one:
+
+   ```bash
+   bash _spawn/dispatch.sh solo n03 "task description"              # 1 nucleus, new window
+   bash _spawn/dispatch.sh grid MISSION_NAME                        # up to 6 parallel nuclei
+   bash _spawn/dispatch.sh grid MISSION_NAME -w                     # + per-cell git worktrees
+   bash _spawn/dispatch.sh swarm agent 5 "scaffold 5 sales agents"  # N builders, same kind
+   bash _spawn/dispatch.sh status                                   # monitor
+   bash _spawn/dispatch.sh stop                                     # stop MY session's nuclei only
+   ```
+
+Which transport to use, and the full protocol for both, is in
+`.claude/rules/n07-orchestrator.md` ("Which transport?" decision table). The 8 nuclei
+directories are real, typed, 12-pillar knowledge departments either way -- the difference
+is WHO runs the work (this session vs. a separate process) and HOW you track it (a
+returned result vs. a PID + signal file).
+
+**Composable crews** (`/crew`, `cex_crew.py`) layer a coherent multi-role package
+(research -> copy -> design -> QA, with handoffs between roles) on top of either
+transport -- see `.claude/rules/composable-crew.md`.
+
+**What's genuinely still Central-only** (absent from this repo; referenced calls degrade
+gracefully -- fail open or print a clear error, never silently misfire): the `decompose`
+dispatch mode's execution tool (`cex_decompose.py`), the Autonomous Capability Router
+preflight (`cex_capability_router.py`), rate-limit / quota guards, team-charter
+enforcement, and the gated mentor-swarm batch topology. `cex_mission_runner.py` (fully
+headless, unattended overnight orchestration) is NOT shipped -- `cex_mission.py` (the
+interactive `/plan` + `/mission` decompose/execute engine) IS. `cex_router_v2.py` (the
+cost-tiered AUTOROUTE resolver `dispatch.sh solo` consults by default) WAS ALREADY
+shipped in this repo before this carry, and is fully functional.
 
 ## The 8F pipeline (what every build follows)
 
