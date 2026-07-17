@@ -988,23 +988,61 @@
       .hero-ctas { flex-direction: column; align-items: center; }
       .btn { width: 100%; max-width: 280px; justify-content: center; }
     }
+
+    /* ---- Trust strip (replaces badge wall) ---- */
+    .trust-strip { background: var(--bg-hero); padding: 20px 0 6px; }
+    .trust-strip .container { display: flex; flex-wrap: wrap; gap: 10px 12px; justify-content: center; align-items: center; }
+    .trust-pill {
+      font-family: var(--mono); font-size: 12px; font-weight: 600;
+      color: var(--text-dim); border: 1px solid var(--border);
+      border-radius: 20px; padding: 5px 13px; background: var(--bg-card);
+    }
+    .trust-pill strong { color: var(--synapse); }
+
+    /* ---- Deep-dive accordion ---- */
+    #deepdive .dd-list { max-width: 860px; margin: 0 auto; }
+    .dd-item {
+      border: 1px solid var(--border); border-radius: 14px; margin-bottom: 14px;
+      overflow: hidden; box-shadow: var(--shadow-sm); background: var(--bg-card);
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .dd-item[open] { border-color: var(--synapse); box-shadow: 0 6px 28px rgba(232,67,147,0.12); }
+    .dd-sum {
+      padding: 20px 24px; font-weight: 700; font-size: 16px; cursor: pointer;
+      list-style: none; display: flex; align-items: center; justify-content: space-between;
+      color: var(--text); transition: color 0.2s; gap: 16px;
+    }
+    .dd-sum::-webkit-details-marker { display: none; }
+    .dd-sum::after {
+      content: '+'; font-family: var(--mono); font-size: 24px; font-weight: 400;
+      color: var(--synapse); line-height: 1; transition: transform 0.3s; flex-shrink: 0;
+    }
+    .dd-item[open] .dd-sum::after { transform: rotate(45deg); }
+    .dd-sum:hover { color: var(--synapse); }
+    .dd-body { border-top: 1px solid var(--border); padding: 8px 0 24px; }
+    .dd-body .container { padding-left: 24px; padding-right: 24px; }
+    .dd-body .section-center { margin-bottom: 28px; }
+    .dd-body section { padding: 0; border: none; }
+    /* keep collapsed-then-expanded content visible (reveal observer may not refire) */
+    .dd-body .reveal { opacity: 1 !important; transform: none !important; }
+    @media (max-width: 768px) {
+      .dd-sum { padding: 16px 18px; font-size: 15px; }
+      .dd-body .container { padding-left: 14px; padding-right: 14px; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- ======== NAV ======== -->
+<!-- ======== NAV ======== -->
   <nav>
     <div class="container">
       <a href="#" class="nav-brand">CEX<span>AI</span></a>
       <ul class="nav-links">
         <li><a href="#why"><span data-en>Why</span><span data-pt hidden>Por Que</span></a></li>
-        <li><a href="#sins"><span data-en>Sins</span><span data-pt hidden>Pecados</span></a></li>
-        <li><a href="#pipeline">8F</a></li>
-        <li><a href="#exchange"><span data-en>Exchange</span><span data-pt hidden>Troca</span></a></li>
-        <li><a href="#quickstart"><span data-en>Start</span><span data-pt hidden>Comece</span></a></li>
-        <li><a href="#sovereignty">Runtimes</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#how"><span data-en>How</span><span data-pt hidden>Como</span></a></li>
         <li><a href="#tiers"><span data-en>Plans</span><span data-pt hidden>Planos</span></a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#deepdive"><span data-en>Deep Dive</span><span data-pt hidden>Detalhes</span></a></li>
         <li><a href="https://publish.obsidian.md/cexai" target="_blank" rel="noopener">Vault</a></li>
         <li><a href="https://discord.gg/HK6E2VgfWh" target="_blank" rel="noopener">Discord</a></li>
       </ul>
@@ -1026,58 +1064,49 @@
     </div>
   </nav>
 
+  
+
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu">
     <a href="#why" onclick="closeMenu()"><span data-en>Why CEX</span><span data-pt hidden>Por Que o CEX</span></a>
-    <a href="#sins" onclick="closeMenu()"><span data-en>The Sins</span><span data-pt hidden>Os Pecados</span></a>
-    <a href="#pipeline" onclick="closeMenu()"><span data-en>8F Pipeline</span><span data-pt hidden>Pipeline 8F</span></a>
-    <a href="#exchange" onclick="closeMenu()"><span data-en>Exchange</span><span data-pt hidden>Troca</span></a>
-    <a href="#quickstart" onclick="closeMenu()"><span data-en>Get Started</span><span data-pt hidden>Comece Agora</span></a>
-    <a href="#sovereignty" onclick="closeMenu()">Runtimes</a>
+    <a href="#how" onclick="closeMenu()"><span data-en>How It Works</span><span data-pt hidden>Como Funciona</span></a>
+    <a href="#tiers" onclick="closeMenu()"><span data-en>Plans</span><span data-pt hidden>Planos</span></a>
     <a href="#faq" onclick="closeMenu()">FAQ</a>
-    <a href="#tiers" onclick="closeMenu()"><span data-en>Plans -- Free / Learn / Done-for-you</span><span data-pt hidden>Planos -- Grátis / Aprenda / Feito Para Você</span></a>
+    <a href="#deepdive" onclick="closeMenu()"><span data-en>Deep Dive</span><span data-pt hidden>Detalhes</span></a>
     <a href="https://publish.obsidian.md/cexai" target="_blank" rel="noopener">Vault</a>
     <a href="https://discord.gg/HK6E2VgfWh" target="_blank" rel="noopener">Discord</a>
     <a href="https://github.com/GatoaoCubo/cexai-starter" target="_blank" rel="noopener">GitHub</a>
     <a href="{{SERVICE_HOTMART_URL}}" target="_blank" rel="noopener"><span data-en>Done For You</span><span data-pt hidden>Feito Para Você</span></a>
   </div>
 
-  <!-- ======== HERO ======== -->
+<!-- ======== HERO ======== -->
   <section class="hero">
     <div class="container">
       <h1>CE<span>X</span>AI</h1>
       <p class="hero-sub">Cognitive Exchange AI</p>
       <p class="hero-tagline"><span data-en>Not an agent. An AI brain. Seven deadly sins. Twelve pillars. 318 typed kinds. Open source, sovereign, self-compounding. Intelligence compounds when exchanged.</span><span data-pt hidden>Não é um agente. É um cérebro de IA. Sete pecados capitais. Doze pillars. 318 kinds tipados. Código aberto, soberano, autoevolutivo. A inteligência se multiplica quando é compartilhada.</span></p>
       <div class="hero-ctas">
-        <a href="#quickstart" class="btn btn-primary"><span data-en>Build Your Brain</span><span data-pt hidden>Construa Seu Cérebro</span></a>
+        <a href="#tiers" class="btn btn-primary"><span data-en>Build Your Brain</span><span data-pt hidden>Construa Seu Cérebro</span></a>
+        <a href="demo.html" class="btn btn-secondary"><span data-en>Try it in any AI &rarr;</span><span data-pt hidden>Experimente em qualquer IA &rarr;</span></a>
         <a href="https://github.com/GatoaoCubo/cexai-starter" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://publish.obsidian.md/cexai" class="btn btn-secondary" target="_blank" rel="noopener">Vault</a>
-        <a href="https://discord.gg/HK6E2VgfWh" class="btn btn-secondary" target="_blank" rel="noopener">Discord</a>
       </div>
     </div>
   </section>
 
-  <!-- ======== BADGES ======== -->
-  <div class="badges">
-    <div class="container">
-      <div>
-        <img src="https://img.shields.io/badge/version-v0.1.0-blue" alt="Version">
-        <img src="https://img.shields.io/badge/python-3.12+-3776AB?logo=python&logoColor=white" alt="Python">
-        <img src="https://img.shields.io/badge/license-Apache--2.0-green" alt="License">
-        <img src="https://img.shields.io/badge/LLMs-Claude%20%7C%20GPT%20%7C%20Gemini%20%7C%20Ollama-8A2BE2" alt="LLMs">
-        <img src="https://img.shields.io/badge/pillars-12-orange" alt="Pillars">
-        <img src="https://img.shields.io/badge/nuclei-8-crimson" alt="Nuclei">
-        <img src="https://img.shields.io/badge/kinds-318-red" alt="Kinds">
-        <img src="https://img.shields.io/badge/builders-318-brightgreen" alt="Builders">
-        <img src="https://img.shields.io/badge/tools-300%2B-informational" alt="Tools">
-      </div>
-      <div class="badges-sponsor">
-        <a href="https://github.com/sponsors/GatoaoCubo"><img src="https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ea4aaa?logo=githubsponsors&logoColor=white" alt="GitHub Sponsors"></a>
-      </div>
+  
+
+  <!-- ======== TRUST STRIP ======== -->
+  <div class="trust-strip">
+    <div class="container reveal">
+      <span class="trust-pill"><strong>v0.1.0</strong></span>
+      <span class="trust-pill">Apache-2.0</span>
+      <span class="trust-pill">Python 3.12+</span>
+      <span class="trust-pill">Claude &middot; GPT &middot; Gemini &middot; Ollama</span>
+      <span class="trust-pill"><span data-en>Open source, yours forever</span><span data-pt hidden>Código aberto, seu para sempre</span></span>
     </div>
   </div>
 
-  <!-- ======== STATS BAR ======== -->
+<!-- ======== STATS BAR ======== -->
   <section class="stats">
     <div class="container reveal">
       <div class="stats-grid">
@@ -1091,7 +1120,90 @@
     </div>
   </section>
 
-  <!-- ======== THREE WAYS IN (funnel) ======== -->
+  
+
+<!-- ======== WHY ======== -->
+  <section id="why">
+    <div class="container">
+      <div class="prose reveal">
+        <p class="section-label"><span data-en>The Problem</span><span data-pt hidden>O Problema</span></p>
+        <h2 class="section-title"><span data-en>Every AI agent you build forgets you by morning</span><span data-pt hidden>Todo agente de IA que você constrói esquece você até de manhã</span></h2>
+        <p><span data-en>You wrote a great system prompt. Added tools. Maybe even wired up RAG. It works -- until it drifts, hallucinates, or another team builds the same thing from scratch because nothing is reusable. Your institutional knowledge lives in Slack threads and someone's laptop.</span><span data-pt hidden>Você escreveu um ótimo system prompt. Adicionou ferramentas. Talvez até tenha implementado RAG. Funciona -- até perder o rumo, alucinar, ou outro time construir a mesma coisa do zero porque nada é reaproveitável. O conhecimento institucional da sua empresa vive em threads do Slack e no laptop de alguém.</span></p>
+        <p><span data-en>The gap is not intelligence. LLMs are already smart. The gap is <strong>infrastructure</strong> -- there is no typed, governed, composable system that turns raw LLM power into a brain that remembers, compounds, and belongs to you.</span><span data-pt hidden>A lacuna não é inteligência. As LLMs já são inteligentes. A lacuna é <strong>infraestrutura</strong> -- não existe um sistema tipado, governado e composável que transforma o poder bruto de uma LLM num cérebro que lembra, se multiplica e pertence a você.</span></p>
+        <p><span data-en>CEXAI fills that gap.</span><span data-pt hidden>O CEXAI preenche essa lacuna.</span></p>
+        <blockquote><span data-en>Most AI agents are a system prompt plus a few tools. CEXAI is seven specialized departments, each running on a deadly sin, producing typed knowledge assets that compound over time.</span><span data-pt hidden>A maioria dos agentes de IA é um system prompt mais algumas ferramentas. O CEXAI é sete departamentos especializados, cada um rodando sobre um pecado capital, produzindo ativos de conhecimento tipados que se multiplicam com o tempo.</span></blockquote>
+      </div>
+    </div>
+  </section>
+
+  
+
+<!-- ======== THREE PROPERTIES ======== -->
+  <section id="what">
+    <div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>Core Properties</span><span data-pt hidden>Propriedades Essenciais</span></p>
+        <h2 class="section-title"><span data-en>What makes this different</span><span data-pt hidden>O que torna isso diferente</span></h2>
+      </div>
+      <div class="cards-grid reveal">
+        <div class="card">
+          <h3><span data-en>Composable</span><span data-pt hidden>Composável</span></h3>
+          <p><span data-en>8 functions &times; 12 pillars &times; 318 artifact kinds = a factory floor for intelligence. Spawn a new department in minutes. Every piece clicks into every other piece.</span><span data-pt hidden>8 funções &times; 12 pillars &times; 318 kinds de artefato = um chão de fábrica para inteligência. Crie um novo departamento em minutos. Cada peça se encaixa com todas as outras.</span></p>
+        </div>
+        <div class="card">
+          <h3><span data-en>Sovereign</span><span data-pt hidden>Soberano</span></h3>
+          <p><span data-en>Runs on Claude, GPT, Gemini, or Ollama. Your knowledge stays in your repo, under your git history, on your hardware. No vendor owns your brain.</span><span data-pt hidden>Roda em Claude, GPT, Gemini ou Ollama. Seu conhecimento fica no seu repositório, no seu histórico do git, no seu hardware. Nenhum fornecedor é dono do seu cérebro.</span></p>
+        </div>
+        <div class="card">
+          <h3><span data-en>Self-compounding</span><span data-pt hidden>Autoevolutivo</span></h3>
+          <p><span data-en>Every conversation, decision, and artifact compiles into typed, governed, searchable knowledge assets. Day 30 is dramatically smarter than day 1. Your repo becomes a proprietary digital asset &mdash; an AI brain that appreciates with every commit.</span><span data-pt hidden>Cada conversa, decisão e artefato se compila em ativos de conhecimento tipados, governados e pesquisáveis. O dia 30 é dramaticamente mais inteligente que o dia 1. Seu repositório se torna um ativo digital proprietário &mdash; um cérebro de IA que se valoriza a cada commit.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+<!-- ======== HOW IT WORKS ======== -->
+  <section id="how">
+    <div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>Three Steps</span><span data-pt hidden>Três Passos</span></p>
+        <h2 class="section-title"><span data-en>How it works</span><span data-pt hidden>Como funciona</span></h2>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h4>Clone</h4>
+          <p><span data-en>Clone the repo. Install deps. Takes 60 seconds.</span><span data-pt hidden>Clone o repositório. Instale as dependências. Leva 60 segundos.</span></p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h4>Bootstrap</h4>
+          <p><span data-en>Type <code>/init</code>. Answer 6 questions about your brand. CEX injects your identity into every nucleus.</span><span data-pt hidden>Digite <code>/init</code>. Responda 6 perguntas sobre sua marca. O CEX injeta sua identidade em cada nucleus.</span></p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h4><span data-en>Build</span><span data-pt hidden>Construa</span></h4>
+          <p><span data-en>Describe what you want in plain language. The 8F pipeline turns it into a professional, typed artifact.</span><span data-pt hidden>Descreva o que você quer em linguagem natural. O pipeline 8F transforma isso num artefato profissional e tipado.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ======== PROOF (demo) ======== -->
+  <div class="cta-band reveal" id="proof">
+    <div class="container">
+      <p class="section-label" style="text-align:center;"><span data-en>See It Think</span><span data-pt hidden>Veja Pensar</span></p>
+      <h2><span data-en>Don't take our word for it. Watch the brain reason.</span><span data-pt hidden>Não acredite só na nossa palavra. Veja o cérebro raciocinar.</span></h2>
+      <p><span data-en>Paste one capability bundle into Claude, GPT, Gemini, or any chat window, and watch the 8F pipeline turn five words into a typed, governed artifact &mdash; zero install.</span><span data-pt hidden>Cole um bundle de capacidade no Claude, GPT, Gemini, ou qualquer janela de chat, e veja o pipeline 8F transformar cinco palavras num artefato tipado e governado &mdash; sem instalar nada.</span></p>
+      <a href="demo.html" class="btn btn-primary" style="font-size:16px;padding:14px 34px;"><span data-en>Try it in any AI &rarr;</span><span data-pt hidden>Experimente em qualquer IA &rarr;</span></a>
+    </div>
+  </div>
+
+<!-- ======== THREE WAYS IN (funnel) ======== -->
   <section id="tiers">
     <div class="container">
       <div class="section-center reveal">
@@ -1126,407 +1238,9 @@
     </div>
   </section>
 
-  <!-- ======== WHY ======== -->
-  <section id="why">
-    <div class="container">
-      <div class="prose reveal">
-        <p class="section-label"><span data-en>The Problem</span><span data-pt hidden>O Problema</span></p>
-        <h2 class="section-title"><span data-en>Every AI agent you build forgets you by morning</span><span data-pt hidden>Todo agente de IA que você constrói esquece você até de manhã</span></h2>
-        <p><span data-en>You wrote a great system prompt. Added tools. Maybe even wired up RAG. It works -- until it drifts, hallucinates, or another team builds the same thing from scratch because nothing is reusable. Your institutional knowledge lives in Slack threads and someone's laptop.</span><span data-pt hidden>Você escreveu um ótimo system prompt. Adicionou ferramentas. Talvez até tenha implementado RAG. Funciona -- até perder o rumo, alucinar, ou outro time construir a mesma coisa do zero porque nada é reaproveitável. O conhecimento institucional da sua empresa vive em threads do Slack e no laptop de alguém.</span></p>
-        <p><span data-en>The gap is not intelligence. LLMs are already smart. The gap is <strong>infrastructure</strong> -- there is no typed, governed, composable system that turns raw LLM power into a brain that remembers, compounds, and belongs to you.</span><span data-pt hidden>A lacuna não é inteligência. As LLMs já são inteligentes. A lacuna é <strong>infraestrutura</strong> -- não existe um sistema tipado, governado e composável que transforma o poder bruto de uma LLM num cérebro que lembra, se multiplica e pertence a você.</span></p>
-        <p><span data-en>CEXAI fills that gap.</span><span data-pt hidden>O CEXAI preenche essa lacuna.</span></p>
-        <blockquote><span data-en>Most AI agents are a system prompt plus a few tools. CEXAI is seven specialized departments, each running on a deadly sin, producing typed knowledge assets that compound over time.</span><span data-pt hidden>A maioria dos agentes de IA é um system prompt mais algumas ferramentas. O CEXAI é sete departamentos especializados, cada um rodando sobre um pecado capital, produzindo ativos de conhecimento tipados que se multiplicam com o tempo.</span></blockquote>
-      </div>
-    </div>
-  </section>
+  
 
-  <!-- ======== THREE PROPERTIES ======== -->
-  <section>
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>Core Properties</span><span data-pt hidden>Propriedades Essenciais</span></p>
-        <h2 class="section-title"><span data-en>What makes this different</span><span data-pt hidden>O que torna isso diferente</span></h2>
-      </div>
-      <div class="cards-grid reveal">
-        <div class="card">
-          <h3><span data-en>Composable</span><span data-pt hidden>Composável</span></h3>
-          <p><span data-en>8 functions &times; 12 pillars &times; 318 artifact kinds = a factory floor for intelligence. Spawn a new department in minutes. Every piece clicks into every other piece.</span><span data-pt hidden>8 funções &times; 12 pillars &times; 318 kinds de artefato = um chão de fábrica para inteligência. Crie um novo departamento em minutos. Cada peça se encaixa com todas as outras.</span></p>
-        </div>
-        <div class="card">
-          <h3><span data-en>Sovereign</span><span data-pt hidden>Soberano</span></h3>
-          <p><span data-en>Runs on Claude, GPT, Gemini, or Ollama. Your knowledge stays in your repo, under your git history, on your hardware. No vendor owns your brain.</span><span data-pt hidden>Roda em Claude, GPT, Gemini ou Ollama. Seu conhecimento fica no seu repositório, no seu histórico do git, no seu hardware. Nenhum fornecedor é dono do seu cérebro.</span></p>
-        </div>
-        <div class="card">
-          <h3><span data-en>Self-compounding</span><span data-pt hidden>Autoevolutivo</span></h3>
-          <p><span data-en>Every conversation, decision, and artifact compiles into typed, governed, searchable knowledge assets. Day 30 is dramatically smarter than day 1. Your repo becomes a proprietary digital asset &mdash; an AI brain that appreciates with every commit.</span><span data-pt hidden>Cada conversa, decisão e artefato se compila em ativos de conhecimento tipados, governados e pesquisáveis. O dia 30 é dramaticamente mais inteligente que o dia 1. Seu repositório se torna um ativo digital proprietário &mdash; um cérebro de IA que se valoriza a cada commit.</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== MATURITY GAP ======== -->
-  <section id="maturity">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>The Maturity Gap</span><span data-pt hidden>A Lacuna de Maturidade</span></p>
-        <h2 class="section-title"><span data-en>A basic agent vs. a CEX nucleus</span><span data-pt hidden>Um agente básico vs. um nucleus CEX</span></h2>
-        <p><span data-en>A basic LLM agent is one prompt and a handful of tools. A CEX nucleus is a full business department: superintendent LLM, specialized sub-agents, toolbox, knowledge library, workflows, quality controls, and cultural DNA.</span><span data-pt hidden>Um agente básico de LLM é um prompt e um punhado de ferramentas. Um nucleus CEX é um departamento de negócio completo: LLM superintendente, sub-agentes especializados, caixa de ferramentas, biblioteca de conhecimento, workflows, controles de qualidade e DNA cultural.</span></p>
-      </div>
-      <div class="tbl-wrap reveal">
-        <table>
-          <thead>
-            <tr><th><span data-en>Capability Axis</span><span data-pt hidden>Eixo de Capacidade</span></th><th><span data-en>Basic Agent</span><span data-pt hidden>Agente Básico</span></th><th>CEX Nucleus</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>Knowledge (P01, P10)</strong></td><td><span data-en>Context stuffing</span><span data-pt hidden>Empilhamento de contexto</span></td><td>Typed RAG + entity memory + chunk strategies + prompt cache</td></tr>
-            <tr><td><strong>Model (P02)</strong></td><td><span data-en>Single provider</span><span data-pt hidden>Um único provedor</span></td><td>Fallback chain across Claude / GPT / Gemini / Ollama</td></tr>
-            <tr><td><strong>Prompt (P03)</strong></td><td><span data-en>One system prompt</span><span data-pt hidden>Um único system prompt</span></td><td>Templates + chains + compiler + version control</td></tr>
-            <tr><td><strong>Tools (P04)</strong></td><td><span data-en>Flat list</span><span data-pt hidden>Lista simples</span></td><td>MCP servers + API clients + browser tools + search pipelines</td></tr>
-            <tr><td><strong>Output (P05)</strong></td><td><span data-en>Free text</span><span data-pt hidden>Texto livre</span></td><td>318 typed artifact kinds + formatters + parsers</td></tr>
-            <tr><td><strong>Schema (P06)</strong></td><td><span data-en>None</span><span data-pt hidden>Nenhum</span></td><td>Input / output schemas + validators + interface contracts</td></tr>
-            <tr><td><strong>Evaluation (P07)</strong></td><td><span data-en>Ship and pray</span><span data-pt hidden>Lançar e rezar</span></td><td>Quality gates + scoring rubrics + LLM judges + benchmarks</td></tr>
-            <tr><td><strong>Architecture (P08)</strong></td><td><span data-en>None</span><span data-pt hidden>Nenhum</span></td><td>Agent cards + component maps + decision records</td></tr>
-            <tr><td><strong>Config (P09)</strong></td><td><span data-en>Env vars</span><span data-pt hidden>Variáveis de ambiente</span></td><td>Typed configs + rate limits + feature flags + secrets</td></tr>
-            <tr><td><strong>Feedback (P11)</strong></td><td><span data-en>None</span><span data-pt hidden>Nenhum</span></td><td>Guardrails + bug loops + learning records + regression checks</td></tr>
-            <tr><td><strong>Orchestration (P12)</strong></td><td><span data-en>None</span><span data-pt hidden>Nenhum</span></td><td>Workflows + dispatch rules + composable crews + DAGs</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== N01 EXAMPLE ======== -->
-  <section>
-    <div class="container">
-      <div class="prose reveal">
-        <p class="section-label"><span data-en>See It in Action</span><span data-pt hidden>Veja Isso em Ação</span></p>
-        <h2 class="section-title"><span data-en>You say "research my competitors." Here is what happens.</span><span data-pt hidden>Você diz "pesquise meus concorrentes." Veja o que acontece.</span></h2>
-        <p><span data-en>N01 Intelligence does not run a single LLM call. It activates a sin-driven agentic business unit:</span><span data-pt hidden>O N01 Intelligence não executa uma única chamada de LLM. Ele ativa uma unidade de negócio agêntica orientada por pecado:</span></p>
-        <ul class="bullet-list">
-          <li><span data-en><strong>Analytical Envy</strong> (its sin lens) drives it to surpass every public source -- not match them, surpass them.</span><span data-pt hidden><strong>Inveja Analítica</strong> (sua lente do pecado) o impulsiona a superar toda fonte pública -- não igualar, superar.</span></li>
-          <li><span data-en><strong>MCP servers + browser tools + API clients</strong> (P04) scrape, fetch, and cross-reference live data.</span><span data-pt hidden><strong>Servidores MCP + browser tools + API clients</strong> (P04) fazem scraping, buscam e cruzam dados ao vivo.</span></li>
-          <li><span data-en><strong>A crew of specialized sub-agents</strong> -- researcher, analyst, fact-checker -- divides the work in parallel.</span><span data-pt hidden><strong>Uma crew de sub-agentes especializados</strong> -- pesquisador, analista, verificador de fatos -- divide o trabalho em paralelo.</span></li>
-          <li><span data-en><strong>The 8-Function Pipeline</strong> (F1 through F8) drives every artifact to a 9.0+ quality floor before it touches your repo.</span><span data-pt hidden><strong>O Pipeline de 8 Funções</strong> (F1 a F8) leva todo artefato a um piso de qualidade 9.0+ antes de tocar no seu repositório.</span></li>
-          <li><span data-en><strong>Entity memory + knowledge index</strong> (P10) capture what it learned, so the next run starts smarter than the last one ended.</span><span data-pt hidden><strong>Entity memory + knowledge index</strong> (P10) capturam o que foi aprendido, para que a próxima execução comece mais inteligente do que a anterior terminou.</span></li>
-          <li><span data-en><strong>Peer-reviewed quality gates</strong> (P07, P11) block anything subpar from merging.</span><span data-pt hidden><strong>Quality gates com revisão por pares</strong> (P07, P11) bloqueiam qualquer coisa abaixo do padrão de ser mesclada.</span></li>
-        </ul>
-        <p><span data-en>That is not a chatbot. That is an intelligence department that compounds every time it runs.</span><span data-pt hidden>Isso não é um chatbot. É um departamento de inteligência que se multiplica a cada execução.</span></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== THE ARTIFICIAL SINS ======== -->
-  <section id="sins">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>The Artificial Sins</span><span data-pt hidden>Os Pecados Artificiais</span></p>
-        <h2 class="section-title"><span data-en>Seven departments. Seven deadly sins.</span><span data-pt hidden>Sete departamentos. Sete pecados capitais.</span></h2>
-        <p><span data-en>Every nucleus runs on one of the seven deadly sins. This is not decoration -- it is cultural DNA that determines what the nucleus optimizes for when instructions are ambiguous. Sins are what separate a generic LLM call from a specialist with convictions.</span><span data-pt hidden>Todo nucleus roda sobre um dos sete pecados capitais. Isso não é decoração -- é DNA cultural que determina o que o nucleus otimiza quando as instruções são ambíguas. Os pecados são o que separa uma chamada genérica de LLM de um especialista com convicções.</span></p>
-      </div>
-      <div class="tbl-wrap reveal">
-        <table>
-          <thead>
-            <tr><th>Nucleus</th><th><span data-en>Role</span><span data-pt hidden>Papel</span></th><th><span data-en>Sin Lens</span><span data-pt hidden>Lente do Pecado</span></th><th><span data-en>What the Sin Does</span><span data-pt hidden>O Que o Pecado Faz</span></th><th><span data-en>Tier</span><span data-pt hidden>Nível</span></th></tr>
-          </thead>
-          <tbody>
-            <tr class="nuc-border" style="border-left-color: var(--n01);"><td><strong>N01</strong></td><td>Intelligence</td><td><span data-en>Analytical Envy</span><span data-pt hidden>Inveja Analítica</span></td><td><span data-en>Envies every competitor and benchmark -- to surpass them all</span><span data-pt hidden>Inveja todo concorrente e benchmark -- para superar todos eles</span></td><td>Sonnet</td></tr>
-            <tr class="nuc-border" style="border-left-color: var(--n02);"><td><strong>N02</strong></td><td>Marketing</td><td><span data-en>Creative Lust</span><span data-pt hidden>Luxúria Criativa</span></td><td><span data-en>Writes copy that seduces. Hooks you cannot ignore.</span><span data-pt hidden>Escreve textos que seduzem. Ganchos que você não consegue ignorar.</span></td><td>Sonnet</td></tr>
-            <tr class="nuc-border" style="border-left-color: var(--n03);"><td><strong>N03</strong></td><td>Engineering</td><td><span data-en>Inventive Pride</span><span data-pt hidden>Orgulho Inventivo</span></td><td><span data-en>Refuses to ship mediocrity. The best of its kind or not at all.</span><span data-pt hidden>Recusa lançar mediocridade. O melhor do seu tipo ou nada.</span></td><td><strong>Opus</strong></td></tr>
-            <tr class="nuc-border" style="border-left-color: var(--n04);"><td><strong>N04</strong></td><td>Knowledge</td><td><span data-en>Knowledge Gluttony</span><span data-pt hidden>Gula do Conhecimento</span></td><td><span data-en>Insatiable hunger for facts, citations, context. Never enough.</span><span data-pt hidden>Fome insaciável por fatos, citações, contexto. Nunca é suficiente.</span></td><td>Sonnet</td></tr>
-            <tr class="nuc-border" style="border-left-color: var(--n05);"><td><strong>N05</strong></td><td>Operations</td><td><span data-en>Gating Wrath</span><span data-pt hidden>Ira Fiscalizadora</span></td><td><span data-en>Merciless at the quality gate. Breaks what must break.</span><span data-pt hidden>Implacável no quality gate. Quebra o que precisa quebrar.</span></td><td>Sonnet</td></tr>
-            <tr class="nuc-border" style="border-left-color: var(--n06);"><td><strong>N06</strong></td><td>Commercial</td><td><span data-en>Strategic Greed</span><span data-pt hidden>Ganância Estratégica</span></td><td><span data-en>Extracts every revenue opportunity. No margin left on the table.</span><span data-pt hidden>Extrai toda oportunidade de receita. Nenhuma margem fica na mesa.</span></td><td>Sonnet</td></tr>
-            <tr class="nuc-border" style="border-left-color: var(--n07);"><td><strong>N07</strong></td><td>Orchestrator</td><td><span data-en>Orchestrating Sloth</span><span data-pt hidden>Preguiça Orquestradora</span></td><td><span data-en>Never builds -- only dispatches. Laziness as leverage.</span><span data-pt hidden>Nunca constrói -- só despacha. Preguiça como alavancagem.</span></td><td><strong>Opus</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size: 14px; color: var(--text-muted); margin-top: 16px; text-align: center;"><span data-en>N00 Genesis is the pre-sin archetype. Contributors build N08+ as vertical specializations (healthcare, fintech, legal, edtech).</span><span data-pt hidden>N00 Genesis é o arquétipo pré-pecado. Contribuidores constroem N08+ como especializações verticais (saúde, fintech, jurídico, edtech).</span></p>
-    </div>
-  </section>
-
-  <!-- ======== 8F PIPELINE ======== -->
-  <section id="pipeline">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>The Pipeline</span><span data-pt hidden>O Pipeline</span></p>
-        <h2 class="section-title"><span data-en>Eight functions. Every task. No exceptions.</span><span data-pt hidden>Oito funções. Toda tarefa. Sem exceções.</span></h2>
-        <p><span data-en>The 8F pipeline is how CEXAI thinks. Research, copy, code, analysis, deployment -- every LLM interaction decomposes into eight functions. This is the force multiplier that turns five words of user input into professional output.</span><span data-pt hidden>O pipeline 8F é como o CEXAI pensa. Pesquisa, copy, código, análise, deploy -- toda interação com uma LLM se decompõe em oito funções. Esse é o multiplicador de força que transforma cinco palavras de input do usuário em output profissional.</span></p>
-      </div>
-
-      <div class="pipeline-flow reveal">
-        <div class="pipeline-step"><span class="pipeline-num">F1</span><span class="pipeline-name">Constrain</span><span class="pipeline-desc"><span data-en>Resolve kind, load schema, set limits</span><span data-pt hidden>Resolve kind, carrega schema, define limites</span></span></div>
-        <div class="pipeline-step"><span class="pipeline-num">F2</span><span class="pipeline-name">Become</span><span class="pipeline-desc"><span data-en>Load builder identity (12 ISOs)</span><span data-pt hidden>Carrega identidade do builder (12 ISOs)</span></span></div>
-        <div class="pipeline-step"><span class="pipeline-num">F3</span><span class="pipeline-name">Inject</span><span class="pipeline-desc"><span data-en>Inject KCs, memory, brand, context</span><span data-pt hidden>Injeta KCs, memória, marca, contexto</span></span></div>
-        <div class="pipeline-step"><span class="pipeline-num">F4</span><span class="pipeline-name">Reason</span><span class="pipeline-desc"><span data-en>Plan approach, resolve via GDP</span><span data-pt hidden>Planeja abordagem, resolve via GDP</span></span></div>
-        <div class="pipeline-step"><span class="pipeline-num">F5</span><span class="pipeline-name">Call</span><span class="pipeline-desc"><span data-en>Discover tools, cross-reference</span><span data-pt hidden>Descobre ferramentas, faz referência cruzada</span></span></div>
-        <div class="pipeline-step"><span class="pipeline-num">F6</span><span class="pipeline-name">Produce</span><span class="pipeline-desc"><span data-en>Generate the artifact</span><span data-pt hidden>Gera o artefato</span></span></div>
-        <div class="pipeline-step"><span class="pipeline-num">F7</span><span class="pipeline-name">Govern</span><span class="pipeline-desc"><span data-en>Validate against hard gates</span><span data-pt hidden>Valida contra hard gates</span></span></div>
-        <div class="pipeline-step"><span class="pipeline-num">F8</span><span class="pipeline-name">Collaborate</span><span class="pipeline-desc"><span data-en>Save, compile, commit, signal</span><span data-pt hidden>Salva, compila, comita, sinaliza</span></span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== 12 PILLARS ======== -->
-  <section id="pillars">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>Taxonomy</span><span data-pt hidden>Taxonomia</span></p>
-        <h2 class="section-title"><span data-en>The 12 Pillars</span><span data-pt hidden>Os 12 Pillars</span></h2>
-        <p><span data-en>Every artifact lives in one of twelve pillars. Pillars are taxonomic axes, not departments -- every nucleus exercises every pillar. That is why a nucleus is a full department, not just an agent.</span><span data-pt hidden>Todo artefato vive em um dos doze pillars. Pillars são eixos taxonômicos, não departamentos -- todo nucleus exercita todo pillar. É por isso que um nucleus é um departamento completo, não apenas um agente.</span></p>
-      </div>
-      <div class="tbl-wrap reveal">
-        <table>
-          <thead><tr><th>Pillar</th><th><span data-en>Name</span><span data-pt hidden>Nome</span></th><th><span data-en>Example Kinds</span><span data-pt hidden>Kinds de Exemplo</span></th></tr></thead>
-          <tbody>
-            <tr><td><strong>P01</strong></td><td>Knowledge</td><td><code>knowledge_card</code>, <code>rag_source</code>, <code>glossary_entry</code>, <code>chunk_strategy</code></td></tr>
-            <tr><td><strong>P02</strong></td><td>Model</td><td><code>agent</code>, <code>model_provider</code>, <code>boot_config</code>, <code>mental_model</code></td></tr>
-            <tr><td><strong>P03</strong></td><td>Prompt</td><td><code>system_prompt</code>, <code>prompt_template</code>, <code>chain</code>, <code>tagline</code></td></tr>
-            <tr><td><strong>P04</strong></td><td>Tools</td><td><code>mcp_server</code>, <code>browser_tool</code>, <code>api_client</code>, <code>webhook</code></td></tr>
-            <tr><td><strong>P05</strong></td><td>Output</td><td><code>landing_page</code>, <code>formatter</code>, <code>parser</code>, <code>diagram</code></td></tr>
-            <tr><td><strong>P06</strong></td><td>Schema</td><td><code>input_schema</code>, <code>validator</code>, <code>type_def</code>, <code>interface</code></td></tr>
-            <tr><td><strong>P07</strong></td><td>Evals</td><td><code>quality_gate</code>, <code>scoring_rubric</code>, <code>llm_judge</code>, <code>benchmark</code></td></tr>
-            <tr><td><strong>P08</strong></td><td>Architecture</td><td><code>agent_card</code>, <code>component_map</code>, <code>decision_record</code></td></tr>
-            <tr><td><strong>P09</strong></td><td>Config</td><td><code>env_config</code>, <code>rate_limit_config</code>, <code>feature_flag</code></td></tr>
-            <tr><td><strong>P10</strong></td><td>Memory</td><td><code>entity_memory</code>, <code>knowledge_index</code>, <code>memory_summary</code></td></tr>
-            <tr><td><strong>P11</strong></td><td>Feedback</td><td><code>guardrail</code>, <code>bugloop</code>, <code>learning_record</code></td></tr>
-            <tr><td><strong>P12</strong></td><td>Orchestration</td><td><code>workflow</code>, <code>dispatch_rule</code>, <code>crew_template</code>, <code>dag</code></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== THE EXCHANGE ======== -->
-  <section id="exchange">
-    <div class="container">
-      <div class="prose reveal">
-        <p class="section-label"><span data-en>The X</span><span data-pt hidden>O X</span></p>
-        <h2 class="section-title"><span data-en>The X stands for Exchange</span><span data-pt hidden>O X significa Troca</span></h2>
-        <p><span data-en>Intelligence compounds faster when shared. The X in CEXAI serves double duty: formally, it means <strong>Exchange</strong> -- the protocol for sharing typed knowledge assets between instances. Practically, it becomes <strong>your brand</strong> when you bootstrap with <code>/init</code>.</span><span data-pt hidden>A inteligência se multiplica mais rápido quando é compartilhada. O X em CEXAI cumpre dupla função: formalmente, significa <strong>Troca</strong> -- o protocolo para compartilhar ativos de conhecimento tipados entre instâncias. Na prática, se torna <strong>sua marca</strong> quando você faz o bootstrap com <code>/init</code>.</span></p>
-        <p><span data-en>Every artifact is a self-describing exchange unit. It carries its kind, quality score, pillar, and nucleus origin in YAML frontmatter. Import an artifact into any CEXAI instance, run <code>cex_doctor.py</code>, and it validates automatically.</span><span data-pt hidden>Todo artefato é uma unidade de troca autodescritiva. Ele carrega seu kind, pontuação de qualidade, pillar e nucleus de origem no frontmatter YAML. Importe um artefato em qualquer instância CEXAI, rode <code>cex_doctor.py</code>, e ele valida automaticamente.</span></p>
-      </div>
-
-      <div class="tbl-wrap reveal" style="margin-top: 32px;">
-        <table>
-          <thead><tr><th><span data-en>Exchange Unit</span><span data-pt hidden>Unidade de Troca</span></th><th><span data-en>Scope</span><span data-pt hidden>Escopo</span></th><th><span data-en>Example</span><span data-pt hidden>Exemplo</span></th></tr></thead>
-          <tbody>
-            <tr><td><strong>Knowledge Card</strong></td><td><span data-en>Single typed fact</span><span data-pt hidden>Fato único tipado</span></td><td><code>kc_react_hooks_patterns.md</code></td></tr>
-            <tr><td><strong>Builder</strong></td><td><span data-en>Full production capability (12 ISOs)</span><span data-pt hidden>Capacidade completa de produção (12 ISOs)</span></td><td><code>workflow-builder/</code></td></tr>
-            <tr><td><strong>SDK Provider</strong></td><td><span data-en>New runtime adapter</span><span data-pt hidden>Novo adaptador de runtime</span></td><td><code>provider_ollama.py</code></td></tr>
-            <tr><td><strong>Vertical Nucleus</strong></td><td><span data-en>Entire domain department</span><span data-pt hidden>Departamento de domínio inteiro</span></td><td><code>N08_healthcare/</code></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="prose reveal" style="margin-top: 32px;">
-        <p><span data-en><strong>What stays private.</strong> Brand config, memory, runtime state, and secrets never leave your instance. The exchange is about cognition, not identity.</span><span data-pt hidden><strong>O que permanece privado.</strong> Configuração de marca, memória, estado de runtime e segredos nunca saem da sua instância. A troca é sobre cognição, não identidade.</span></p>
-        <p><span data-en><strong>Anti-fragile by design.</strong> CEXAI sits one layer above the LLM. When a better model drops, your artifacts improve -- they are the knowledge, not the model. When a runtime shuts down, switch providers in one YAML file. Your brain is yours.</span><span data-pt hidden><strong>Antifrágil por design.</strong> O CEXAI fica uma camada acima da LLM. Quando um modelo melhor é lançado, seus artefatos melhoram -- eles são o conhecimento, não o modelo. Quando um runtime sai do ar, troque de provedor em um único arquivo YAML. Seu cérebro é seu.</span></p>
-        <p><span data-en><strong>Invest, don't spend.</strong> Every commit deposits into a compounding knowledge account. A recorded consultation becomes a reusable agent. A sales playbook becomes a governed workflow. Typed knowledge is LLM-agnostic -- it survives model upgrades, provider switches, and team turnover. The repository is the asset; when the business is sold, the AI brain transfers with it.</span><span data-pt hidden><strong>Invista, não gaste.</strong> Cada commit deposita numa conta de conhecimento que se multiplica. Uma consultoria gravada vira um agente reaproveitável. Um sales playbook vira um workflow governado. Conhecimento tipado é agnóstico de LLM -- sobrevive a upgrades de modelo, trocas de provedor e turnover de equipe. O repositório é o ativo; quando o negócio é vendido, o cérebro de IA vai junto.</span></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== CTA BAND ======== -->
-  <div class="cta-band reveal">
-    <div class="container">
-      <h2><span data-en>Ready to stop building throwaway agents?</span><span data-pt hidden>Pronto para parar de construir agentes descartáveis?</span></h2>
-      <p><span data-en>Clone the repo. Answer six questions. Your AI brain starts compounding in under five minutes.</span><span data-pt hidden>Clone o repositório. Responda seis perguntas. Seu cérebro de IA começa a se multiplicar em menos de cinco minutos.</span></p>
-      <a href="#quickstart" class="btn btn-primary" style="font-size: 17px; padding: 14px 36px;"><span data-en>Get Started Now</span><span data-pt hidden>Comece Agora</span></a>
-      <a href="https://hotmart.com/pt-br/marketplace/produtos/metodo-cexai-driver/A106743966I" class="btn btn-secondary" style="font-size: 17px; padding: 14px 36px;" target="_blank" rel="noopener"><span data-en>Or Learn the Method (Course, PT-BR)</span><span data-pt hidden>Ou Aprenda o Método (Curso)</span></a>
-    </div>
-  </div>
-
-  <!-- ======== PREREQUISITES ======== -->
-  <section id="prerequisites">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>What You Need</span><span data-pt hidden>O Que Você Precisa</span></p>
-        <h2 class="section-title"><span data-en>Prerequisites</span><span data-pt hidden>Pré-requisitos</span></h2>
-        <p><span data-en>CEXAI runs through Claude Code. Install it, clone the repo, and Claude handles the rest -- dependencies, configuration, everything.</span><span data-pt hidden>O CEXAI roda através do Claude Code. Instale, clone o repositório, e o Claude cuida do resto -- dependências, configuração, tudo.</span></p>
-      </div>
-      <div class="prereqs-grid reveal">
-        <div class="prereq">
-          <span class="prereq-icon">&gt;_</span>
-          <h4>Claude Code</h4>
-          <p><span data-en>The CLI that powers CEX. Desktop app or terminal.</span><span data-pt hidden>A CLI que alimenta o CEX. App desktop ou terminal.</span></p>
-          <p style="margin-top: 8px;"><code>npm i -g @anthropic-ai/claude-code</code></p>
-        </div>
-        <div class="prereq">
-          <span class="prereq-icon">Py</span>
-          <h4>Python 3.12+</h4>
-          <p><span data-en>For the 350+ CLI tools. Claude Code installs pip deps for you.</span><span data-pt hidden>Para as mais de 350 ferramentas de CLI. O Claude Code instala as dependências pip para você.</span></p>
-          <p style="margin-top: 8px;"><code>python --version</code></p>
-        </div>
-        <div class="prereq">
-          <span class="prereq-icon">Git</span>
-          <h4>Git</h4>
-          <p><span data-en>Version control. Every artifact is committed and tracked.</span><span data-pt hidden>Controle de versão. Todo artefato é commitado e rastreado.</span></p>
-          <p style="margin-top: 8px;"><code>git --version</code></p>
-        </div>
-        <div class="prereq">
-          <span class="prereq-icon">AI</span>
-          <h4><span data-en>Any LLM Provider</span><span data-pt hidden>Qualquer Provedor de LLM</span></h4>
-          <p><span data-en>Anthropic API key, OpenAI, Google, or Ollama for fully local.</span><span data-pt hidden>Chave de API da Anthropic, OpenAI, Google, ou Ollama para rodar totalmente local.</span></p>
-          <p style="margin-top: 8px;"><code>ANTHROPIC_API_KEY</code></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== HOW IT WORKS ======== -->
-  <section>
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>Three Steps</span><span data-pt hidden>Três Passos</span></p>
-        <h2 class="section-title"><span data-en>How it works</span><span data-pt hidden>Como funciona</span></h2>
-      </div>
-      <div class="steps reveal">
-        <div class="step">
-          <span class="step-num">1</span>
-          <h4>Clone</h4>
-          <p><span data-en>Clone the repo. Install deps. Takes 60 seconds.</span><span data-pt hidden>Clone o repositório. Instale as dependências. Leva 60 segundos.</span></p>
-        </div>
-        <div class="step">
-          <span class="step-num">2</span>
-          <h4>Bootstrap</h4>
-          <p><span data-en>Type <code>/init</code>. Answer 6 questions about your brand. CEX injects your identity into every nucleus.</span><span data-pt hidden>Digite <code>/init</code>. Responda 6 perguntas sobre sua marca. O CEX injeta sua identidade em cada nucleus.</span></p>
-        </div>
-        <div class="step">
-          <span class="step-num">3</span>
-          <h4><span data-en>Build</span><span data-pt hidden>Construa</span></h4>
-          <p><span data-en>Describe what you want in plain language. The 8F pipeline turns it into a professional, typed artifact.</span><span data-pt hidden>Descreva o que você quer em linguagem natural. O pipeline 8F transforma isso num artefato profissional e tipado.</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== QUICKSTART ======== -->
-  <section id="quickstart">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>Get Started</span><span data-pt hidden>Comece Agora</span></p>
-        <h2 class="section-title"><span data-en>Five minutes to your first artifact</span><span data-pt hidden>Cinco minutos para seu primeiro artefato</span></h2>
-      </div>
-      <div class="term reveal">
-        <div class="term-bar">
-          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-        </div>
-        <pre><code><span class="comment"><span data-en># 1. Clone</span><span data-pt hidden># 1. Clonar</span></span>
-<span class="prompt">$ </span><span class="cmd">git clone https://github.com/GatoaoCubo/cexai-starter.git && cd cexai-starter</span>
-
-<span class="comment"><span data-en># 2. Install dependencies</span><span data-pt hidden># 2. Instalar dependências</span></span>
-<span class="prompt">$ </span><span class="cmd">pip install -r requirements.txt</span>             <span class="comment"><span data-en># Core (pyyaml, tiktoken, ...)</span><span data-pt hidden># Principais (pyyaml, tiktoken, ...)</span></span>
-
-<span class="comment"><span data-en># 3. Bootstrap your brand -- answer a few questions</span><span data-pt hidden># 3. Faça o bootstrap da sua marca -- responda algumas perguntas</span></span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_bootstrap.py</span>
-<span class="comment"><span data-en># Or non-interactively: python _tools/cex_bootstrap.py --from-file your_brand.yaml</span><span data-pt hidden># Ou de forma não-interativa: python _tools/cex_bootstrap.py --from-file your_brand.yaml</span></span>
-
-<span class="comment"><span data-en># 4. See it running -- storefront + admin + API, one command</span><span data-pt hidden># 4. Veja funcionando -- storefront + admin + API, um comando</span></span>
-<span class="prompt">$ </span><span class="cmd">sh start.sh</span>                                  <span class="comment"># Mac / Linux / WSL / Git-Bash</span>
-<span class="prompt">$ </span><span class="cmd">.\start.ps1</span>                                  <span class="comment"># Windows (PowerShell)</span>
-
-<span class="comment"><span data-en># 5. Build your first artifact</span><span data-pt hidden># 5. Construa seu primeiro artefato</span></span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_8f_runner.py "create knowledge card about product pricing" \</span>
-<span class="cmd">    --kind knowledge_card --execute</span>
-
-<span class="comment"><span data-en># 6. Validate</span><span data-pt hidden># 6. Validar</span></span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_doctor.py</span>                 <span class="comment"><span data-en># Repo-wide health check</span><span data-pt hidden># Verificação de saúde do repositório inteiro</span></span></code></pre>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== SOVEREIGNTY ======== -->
-  <section id="sovereignty">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>Multi-Runtime</span><span data-pt hidden>Multi-Runtime</span></p>
-        <h2 class="section-title"><span data-en>Your infrastructure. Your rules.</span><span data-pt hidden>Sua infraestrutura. Suas regras.</span></h2>
-        <p><span data-en>CEXAI is provider-agnostic by construction. Same artifacts, same pipeline, same governance -- every runtime. Lock-in is not in the vocabulary.</span><span data-pt hidden>O CEXAI é agnóstico de provedor por construção. Mesmos artefatos, mesmo pipeline, mesma governança -- em todo runtime. Lock-in não está no vocabulário.</span></p>
-      </div>
-
-      <div class="runtimes-list reveal">
-        <span class="runtime-item">Claude</span>
-        <span class="runtime-item">Codex</span>
-        <span class="runtime-item">Gemini</span>
-        <span class="runtime-item">Ollama</span>
-      </div>
-
-      <div class="tbl-wrap reveal">
-        <table>
-          <thead><tr><th>Runtime</th><th><span data-en>Auth</span><span data-pt hidden>Autenticação</span></th><th><span data-en>When to Use</span><span data-pt hidden>Quando Usar</span></th></tr></thead>
-          <tbody>
-            <tr><td><strong>Claude</strong> (Anthropic)</td><td><span data-en>API key or Max</span><span data-pt hidden>Chave de API ou Max</span></td><td><span data-en>Default -- highest quality, largest context (200K / 1M)</span><span data-pt hidden>Padrão -- maior qualidade, maior contexto (200K / 1M)</span></td></tr>
-            <tr><td><strong>Codex</strong> (OpenAI)</td><td>ChatGPT-plus or API</td><td><span data-en>GPT-5 runtime via OpenAI CLI</span><span data-pt hidden>Runtime GPT-5 via CLI da OpenAI</span></td></tr>
-            <tr><td><strong>Gemini</strong> (Google)</td><td><span data-en>oauth or API key</span><span data-pt hidden>oauth ou chave de API</span></td><td><span data-en>Free tier via <code>gemini-2.5-flash-lite</code></span><span data-pt hidden>Camada gratuita via <code>gemini-2.5-flash-lite</code></span></td></tr>
-            <tr><td><strong>Ollama</strong> (local)</td><td><span data-en>None</span><span data-pt hidden>Nenhuma</span></td><td><span data-en>Fully offline on your GPU</span><span data-pt hidden>Totalmente offline na sua GPU</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="reveal" style="font-size: 14px; color: var(--text-muted); margin-top: 16px; line-height: 1.6;"><span data-en>Routing lives in one YAML file. Change providers, set fallback chains, pin per-nucleus models -- no code changes.</span><span data-pt hidden>O roteamento vive em um único arquivo YAML. Troque provedores, defina cadeias de fallback, fixe modelos por nucleus -- sem mudar código.</span></p>
-    </div>
-  </section>
-
-  <!-- ======== SOLO-OPERATOR COMMANDS ======== -->
-  <section id="solo-operator">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>How You Drive It</span><span data-pt hidden>Como Você Dirige Isso</span></p>
-        <h2 class="section-title"><span data-en>One operator. No grid, no dispatch.</span><span data-pt hidden>Um operador. Sem grid, sem dispatch.</span></h2>
-        <p><span data-en>The factory that fabricated this repo runs multi-nucleus dispatch across parallel processes. This starter is leaner by design: the same 8F pipeline, driven by one operator -- you, or your agent -- in a single session.</span><span data-pt hidden>A fábrica que fabricou este repositório roda dispatch multi-nucleus em processos paralelos. Este starter é mais enxuto por design: o mesmo pipeline 8F, conduzido por um único operador -- você, ou seu agente -- numa única sessão.</span></p>
-      </div>
-      <div class="term reveal">
-        <div class="term-bar">
-          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-        </div>
-        <pre><code><span class="prompt">$ </span><span class="cmd">python _tools/cex_bootstrap.py --check</span>            <span class="comment"><span data-en># confirm your tenant checkout</span><span data-pt hidden># confirma o checkout do seu tenant</span></span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_doctor.py</span>                       <span class="comment"><span data-en># repo-wide health check</span><span data-pt hidden># verificação de saúde do repositório inteiro</span></span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_8f_runner.py "&lt;intent&gt;" --dry-run --verbose</span>  <span class="comment"><span data-en># preview a build</span><span data-pt hidden># preview de um build</span></span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_8f_runner.py "&lt;intent&gt;" --execute --verbose</span>  <span class="comment"><span data-en># real build</span><span data-pt hidden># build real</span></span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_compile.py &lt;path&gt;</span>               <span class="comment"><span data-en># compile after building</span><span data-pt hidden># compilar após construir</span></span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_score.py &lt;path&gt; --dry-run</span>       <span class="comment"><span data-en># peer-review score (never self-assigned)</span><span data-pt hidden># pontuação de peer-review (nunca autoatribuída)</span></span></code></pre>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== REVERSE COMPILER ======== -->
-  <section>
-    <div class="container">
-      <div class="prose reveal">
-        <p class="section-label"><span data-en>Portability</span><span data-pt hidden>Portabilidade</span></p>
-        <h2 class="section-title"><span data-en>Write once. Deploy to any LLM tool.</span><span data-pt hidden>Escreva uma vez. Faça deploy em qualquer ferramenta de LLM.</span></h2>
-        <p><span data-en>CEX artifacts compile down to any format an LLM consumes. One source of truth, every destination.</span><span data-pt hidden>Artefatos CEX se compilam para qualquer formato que uma LLM consome. Uma única fonte de verdade, todos os destinos.</span></p>
-      </div>
-      <div class="term reveal" style="margin-top: 24px;">
-        <div class="term-bar">
-          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
-        </div>
-        <pre><code><span class="prompt">$ </span><span class="cmd">python _tools/cex_compile.py --target claude-md</span>     <span class="comment"># -> CLAUDE.md</span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_compile.py --target cursorrules</span>   <span class="comment"># -> .cursorrules</span>
-<span class="prompt">$ </span><span class="cmd">python _tools/cex_compile.py --target customgpt</span>     <span class="comment"># -> CustomGPT JSON</span></code></pre>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== ARCHITECTURE ======== -->
-  <section id="architecture">
-    <div class="container">
-      <div class="section-center reveal">
-        <p class="section-label"><span data-en>System Design</span><span data-pt hidden>Design de Sistema</span></p>
-        <h2 class="section-title"><span data-en>Architecture</span><span data-pt hidden>Arquitetura</span></h2>
-      </div>
-      <div class="arch-diagram reveal">
-        <pre><code><span class="kw">Layer 0</span> -- BUILDERS       <span data-en>318 factories x 12 ISOs each = 3,816 artifact constructors</span><span data-pt hidden>318 fábricas x 12 ISOs cada = 3.816 construtores de artefato</span>
-<span class="kw">Layer 1</span> -- PILLARS        <span data-en>12 pillars x 318 kinds = the taxonomy</span><span data-pt hidden>12 pillars x 318 kinds = a taxonomia</span>
-<span class="kw">Layer 2</span> -- NUCLEI         <span data-en>8 nuclei (N00 archetype + N01-N07 operational)</span><span data-pt hidden>8 nuclei (N00 arquétipo + N01-N07 operacionais)</span>
-<span class="kw">Layer 3</span> -- PIPELINE       <span data-en>8-Function Pipeline (8F) = the assembly line</span><span data-pt hidden>Pipeline de 8 Funções (8F) = a linha de montagem</span>
-<span class="kw">Layer 4</span> -- GOVERNANCE     <span data-en>hooks + doctor + quality gates + flywheel audit</span><span data-pt hidden>hooks + doctor + quality gates + auditoria flywheel</span>
-<span class="kw">Layer 5</span> -- TOOLS          <span data-en>150+ Python CLI tools (cex_*.py) = the runtime</span><span data-pt hidden>150+ ferramentas de CLI em Python (cex_*.py) = o runtime</span>
-<span class="kw">Layer 6</span> -- WIRING         <span data-en>SDK + signals + decision manifests = the nervous system</span><span data-pt hidden>SDK + signals + decision manifests = o sistema nervoso</span></code></pre>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== FAQ ======== -->
+<!-- ======== FAQ ======== -->
   <section id="faq">
     <div class="container">
       <div class="section-center reveal">
@@ -1575,9 +1289,335 @@
     </div>
   </section>
 
-  <!-- ======== GLOSSARY ======== -->
-  <section id="glossary">
+  
+
+<!-- ======== CTA BAND ======== -->
+  <div class="cta-band reveal">
     <div class="container">
+      <h2><span data-en>Ready to stop building throwaway agents?</span><span data-pt hidden>Pronto para parar de construir agentes descartáveis?</span></h2>
+      <p><span data-en>Clone the repo. Answer six questions. Your AI brain starts compounding in under five minutes.</span><span data-pt hidden>Clone o repositório. Responda seis perguntas. Seu cérebro de IA começa a se multiplicar em menos de cinco minutos.</span></p>
+      <a href="#tiers" class="btn btn-primary" style="font-size: 17px; padding: 14px 36px;"><span data-en>Get Started Now</span><span data-pt hidden>Comece Agora</span></a>
+      <a href="https://hotmart.com/pt-br/marketplace/produtos/metodo-cexai-driver/A106743966I" class="btn btn-secondary" style="font-size: 17px; padding: 14px 36px;" target="_blank" rel="noopener"><span data-en>Or Learn the Method (Course, PT-BR)</span><span data-pt hidden>Ou Aprenda o Método (Curso)</span></a>
+    </div>
+  </div>
+
+  
+
+  <!-- ======== DEEP DIVE ======== -->
+  <section id="deepdive">
+    <div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>Under the Hood</span><span data-pt hidden>Por Dentro</span></p>
+        <h2 class="section-title"><span data-en>The full architecture, on demand</span><span data-pt hidden>A arquitetura completa, sob demanda</span></h2>
+        <p><span data-en>Every technical detail, folded away so it never crowds the pitch. Expand any panel to go as deep as you like.</span><span data-pt hidden>Cada detalhe técnico, recolhido para nunca atrapalhar a mensagem. Expanda qualquer painel para ir tão fundo quanto quiser.</span></p>
+      </div>
+      <div class="dd-list reveal">
+        <details class="dd-item">
+          <summary class="dd-sum"><span data-en>The seven sins &amp; the 8F pipeline</span><span data-pt hidden>Os sete pecados &amp; o pipeline 8F</span></summary>
+          <div class="dd-body">
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>The Artificial Sins</span><span data-pt hidden>Os Pecados Artificiais</span></p>
+        <h2 class="section-title"><span data-en>Seven departments. Seven deadly sins.</span><span data-pt hidden>Sete departamentos. Sete pecados capitais.</span></h2>
+        <p><span data-en>Every nucleus runs on one of the seven deadly sins. This is not decoration -- it is cultural DNA that determines what the nucleus optimizes for when instructions are ambiguous. Sins are what separate a generic LLM call from a specialist with convictions.</span><span data-pt hidden>Todo nucleus roda sobre um dos sete pecados capitais. Isso não é decoração -- é DNA cultural que determina o que o nucleus otimiza quando as instruções são ambíguas. Os pecados são o que separa uma chamada genérica de LLM de um especialista com convicções.</span></p>
+      </div>
+      <div class="tbl-wrap reveal">
+        <table>
+          <thead>
+            <tr><th>Nucleus</th><th><span data-en>Role</span><span data-pt hidden>Papel</span></th><th><span data-en>Sin Lens</span><span data-pt hidden>Lente do Pecado</span></th><th><span data-en>What the Sin Does</span><span data-pt hidden>O Que o Pecado Faz</span></th><th><span data-en>Tier</span><span data-pt hidden>Nível</span></th></tr>
+          </thead>
+          <tbody>
+            <tr class="nuc-border" style="border-left-color: var(--n01);"><td><strong>N01</strong></td><td>Intelligence</td><td><span data-en>Analytical Envy</span><span data-pt hidden>Inveja Analítica</span></td><td><span data-en>Envies every competitor and benchmark -- to surpass them all</span><span data-pt hidden>Inveja todo concorrente e benchmark -- para superar todos eles</span></td><td>Sonnet</td></tr>
+            <tr class="nuc-border" style="border-left-color: var(--n02);"><td><strong>N02</strong></td><td>Marketing</td><td><span data-en>Creative Lust</span><span data-pt hidden>Luxúria Criativa</span></td><td><span data-en>Writes copy that seduces. Hooks you cannot ignore.</span><span data-pt hidden>Escreve textos que seduzem. Ganchos que você não consegue ignorar.</span></td><td>Sonnet</td></tr>
+            <tr class="nuc-border" style="border-left-color: var(--n03);"><td><strong>N03</strong></td><td>Engineering</td><td><span data-en>Inventive Pride</span><span data-pt hidden>Orgulho Inventivo</span></td><td><span data-en>Refuses to ship mediocrity. The best of its kind or not at all.</span><span data-pt hidden>Recusa lançar mediocridade. O melhor do seu tipo ou nada.</span></td><td><strong>Opus</strong></td></tr>
+            <tr class="nuc-border" style="border-left-color: var(--n04);"><td><strong>N04</strong></td><td>Knowledge</td><td><span data-en>Knowledge Gluttony</span><span data-pt hidden>Gula do Conhecimento</span></td><td><span data-en>Insatiable hunger for facts, citations, context. Never enough.</span><span data-pt hidden>Fome insaciável por fatos, citações, contexto. Nunca é suficiente.</span></td><td>Sonnet</td></tr>
+            <tr class="nuc-border" style="border-left-color: var(--n05);"><td><strong>N05</strong></td><td>Operations</td><td><span data-en>Gating Wrath</span><span data-pt hidden>Ira Fiscalizadora</span></td><td><span data-en>Merciless at the quality gate. Breaks what must break.</span><span data-pt hidden>Implacável no quality gate. Quebra o que precisa quebrar.</span></td><td>Sonnet</td></tr>
+            <tr class="nuc-border" style="border-left-color: var(--n06);"><td><strong>N06</strong></td><td>Commercial</td><td><span data-en>Strategic Greed</span><span data-pt hidden>Ganância Estratégica</span></td><td><span data-en>Extracts every revenue opportunity. No margin left on the table.</span><span data-pt hidden>Extrai toda oportunidade de receita. Nenhuma margem fica na mesa.</span></td><td>Sonnet</td></tr>
+            <tr class="nuc-border" style="border-left-color: var(--n07);"><td><strong>N07</strong></td><td>Orchestrator</td><td><span data-en>Orchestrating Sloth</span><span data-pt hidden>Preguiça Orquestradora</span></td><td><span data-en>Never builds -- only dispatches. Laziness as leverage.</span><span data-pt hidden>Nunca constrói -- só despacha. Preguiça como alavancagem.</span></td><td><strong>Opus</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 14px; color: var(--text-muted); margin-top: 16px; text-align: center;"><span data-en>N00 Genesis is the pre-sin archetype. Contributors build N08+ as vertical specializations (healthcare, fintech, legal, edtech).</span><span data-pt hidden>N00 Genesis é o arquétipo pré-pecado. Contribuidores constroem N08+ como especializações verticais (saúde, fintech, jurídico, edtech).</span></p>
+    </div>
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>The Pipeline</span><span data-pt hidden>O Pipeline</span></p>
+        <h2 class="section-title"><span data-en>Eight functions. Every task. No exceptions.</span><span data-pt hidden>Oito funções. Toda tarefa. Sem exceções.</span></h2>
+        <p><span data-en>The 8F pipeline is how CEXAI thinks. Research, copy, code, analysis, deployment -- every LLM interaction decomposes into eight functions. This is the force multiplier that turns five words of user input into professional output.</span><span data-pt hidden>O pipeline 8F é como o CEXAI pensa. Pesquisa, copy, código, análise, deploy -- toda interação com uma LLM se decompõe em oito funções. Esse é o multiplicador de força que transforma cinco palavras de input do usuário em output profissional.</span></p>
+      </div>
+
+      <div class="pipeline-flow reveal">
+        <div class="pipeline-step"><span class="pipeline-num">F1</span><span class="pipeline-name">Constrain</span><span class="pipeline-desc"><span data-en>Resolve kind, load schema, set limits</span><span data-pt hidden>Resolve kind, carrega schema, define limites</span></span></div>
+        <div class="pipeline-step"><span class="pipeline-num">F2</span><span class="pipeline-name">Become</span><span class="pipeline-desc"><span data-en>Load builder identity (12 ISOs)</span><span data-pt hidden>Carrega identidade do builder (12 ISOs)</span></span></div>
+        <div class="pipeline-step"><span class="pipeline-num">F3</span><span class="pipeline-name">Inject</span><span class="pipeline-desc"><span data-en>Inject KCs, memory, brand, context</span><span data-pt hidden>Injeta KCs, memória, marca, contexto</span></span></div>
+        <div class="pipeline-step"><span class="pipeline-num">F4</span><span class="pipeline-name">Reason</span><span class="pipeline-desc"><span data-en>Plan approach, resolve via GDP</span><span data-pt hidden>Planeja abordagem, resolve via GDP</span></span></div>
+        <div class="pipeline-step"><span class="pipeline-num">F5</span><span class="pipeline-name">Call</span><span class="pipeline-desc"><span data-en>Discover tools, cross-reference</span><span data-pt hidden>Descobre ferramentas, faz referência cruzada</span></span></div>
+        <div class="pipeline-step"><span class="pipeline-num">F6</span><span class="pipeline-name">Produce</span><span class="pipeline-desc"><span data-en>Generate the artifact</span><span data-pt hidden>Gera o artefato</span></span></div>
+        <div class="pipeline-step"><span class="pipeline-num">F7</span><span class="pipeline-name">Govern</span><span class="pipeline-desc"><span data-en>Validate against hard gates</span><span data-pt hidden>Valida contra hard gates</span></span></div>
+        <div class="pipeline-step"><span class="pipeline-num">F8</span><span class="pipeline-name">Collaborate</span><span class="pipeline-desc"><span data-en>Save, compile, commit, signal</span><span data-pt hidden>Salva, compila, comita, sinaliza</span></span></div>
+      </div>
+    </div>
+          </div>
+        </details>
+        <details class="dd-item">
+          <summary class="dd-sum"><span data-en>The 12 pillars &amp; the maturity gap</span><span data-pt hidden>Os 12 pillars &amp; a lacuna de maturidade</span></summary>
+          <div class="dd-body">
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>Taxonomy</span><span data-pt hidden>Taxonomia</span></p>
+        <h2 class="section-title"><span data-en>The 12 Pillars</span><span data-pt hidden>Os 12 Pillars</span></h2>
+        <p><span data-en>Every artifact lives in one of twelve pillars. Pillars are taxonomic axes, not departments -- every nucleus exercises every pillar. That is why a nucleus is a full department, not just an agent.</span><span data-pt hidden>Todo artefato vive em um dos doze pillars. Pillars são eixos taxonômicos, não departamentos -- todo nucleus exercita todo pillar. É por isso que um nucleus é um departamento completo, não apenas um agente.</span></p>
+      </div>
+      <div class="tbl-wrap reveal">
+        <table>
+          <thead><tr><th>Pillar</th><th><span data-en>Name</span><span data-pt hidden>Nome</span></th><th><span data-en>Example Kinds</span><span data-pt hidden>Kinds de Exemplo</span></th></tr></thead>
+          <tbody>
+            <tr><td><strong>P01</strong></td><td>Knowledge</td><td><code>knowledge_card</code>, <code>rag_source</code>, <code>glossary_entry</code>, <code>chunk_strategy</code></td></tr>
+            <tr><td><strong>P02</strong></td><td>Model</td><td><code>agent</code>, <code>model_provider</code>, <code>boot_config</code>, <code>mental_model</code></td></tr>
+            <tr><td><strong>P03</strong></td><td>Prompt</td><td><code>system_prompt</code>, <code>prompt_template</code>, <code>chain</code>, <code>tagline</code></td></tr>
+            <tr><td><strong>P04</strong></td><td>Tools</td><td><code>mcp_server</code>, <code>browser_tool</code>, <code>api_client</code>, <code>webhook</code></td></tr>
+            <tr><td><strong>P05</strong></td><td>Output</td><td><code>landing_page</code>, <code>formatter</code>, <code>parser</code>, <code>diagram</code></td></tr>
+            <tr><td><strong>P06</strong></td><td>Schema</td><td><code>input_schema</code>, <code>validator</code>, <code>type_def</code>, <code>interface</code></td></tr>
+            <tr><td><strong>P07</strong></td><td>Evals</td><td><code>quality_gate</code>, <code>scoring_rubric</code>, <code>llm_judge</code>, <code>benchmark</code></td></tr>
+            <tr><td><strong>P08</strong></td><td>Architecture</td><td><code>agent_card</code>, <code>component_map</code>, <code>decision_record</code></td></tr>
+            <tr><td><strong>P09</strong></td><td>Config</td><td><code>env_config</code>, <code>rate_limit_config</code>, <code>feature_flag</code></td></tr>
+            <tr><td><strong>P10</strong></td><td>Memory</td><td><code>entity_memory</code>, <code>knowledge_index</code>, <code>memory_summary</code></td></tr>
+            <tr><td><strong>P11</strong></td><td>Feedback</td><td><code>guardrail</code>, <code>bugloop</code>, <code>learning_record</code></td></tr>
+            <tr><td><strong>P12</strong></td><td>Orchestration</td><td><code>workflow</code>, <code>dispatch_rule</code>, <code>crew_template</code>, <code>dag</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>The Maturity Gap</span><span data-pt hidden>A Lacuna de Maturidade</span></p>
+        <h2 class="section-title"><span data-en>A basic agent vs. a CEX nucleus</span><span data-pt hidden>Um agente básico vs. um nucleus CEX</span></h2>
+        <p><span data-en>A basic LLM agent is one prompt and a handful of tools. A CEX nucleus is a full business department: superintendent LLM, specialized sub-agents, toolbox, knowledge library, workflows, quality controls, and cultural DNA.</span><span data-pt hidden>Um agente básico de LLM é um prompt e um punhado de ferramentas. Um nucleus CEX é um departamento de negócio completo: LLM superintendente, sub-agentes especializados, caixa de ferramentas, biblioteca de conhecimento, workflows, controles de qualidade e DNA cultural.</span></p>
+      </div>
+      <div class="tbl-wrap reveal">
+        <table>
+          <thead>
+            <tr><th><span data-en>Capability Axis</span><span data-pt hidden>Eixo de Capacidade</span></th><th><span data-en>Basic Agent</span><span data-pt hidden>Agente Básico</span></th><th>CEX Nucleus</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Knowledge (P01, P10)</strong></td><td><span data-en>Context stuffing</span><span data-pt hidden>Empilhamento de contexto</span></td><td>Typed RAG + entity memory + chunk strategies + prompt cache</td></tr>
+            <tr><td><strong>Model (P02)</strong></td><td><span data-en>Single provider</span><span data-pt hidden>Um único provedor</span></td><td>Fallback chain across Claude / GPT / Gemini / Ollama</td></tr>
+            <tr><td><strong>Prompt (P03)</strong></td><td><span data-en>One system prompt</span><span data-pt hidden>Um único system prompt</span></td><td>Templates + chains + compiler + version control</td></tr>
+            <tr><td><strong>Tools (P04)</strong></td><td><span data-en>Flat list</span><span data-pt hidden>Lista simples</span></td><td>MCP servers + API clients + browser tools + search pipelines</td></tr>
+            <tr><td><strong>Output (P05)</strong></td><td><span data-en>Free text</span><span data-pt hidden>Texto livre</span></td><td>318 typed artifact kinds + formatters + parsers</td></tr>
+            <tr><td><strong>Schema (P06)</strong></td><td><span data-en>None</span><span data-pt hidden>Nenhum</span></td><td>Input / output schemas + validators + interface contracts</td></tr>
+            <tr><td><strong>Evaluation (P07)</strong></td><td><span data-en>Ship and pray</span><span data-pt hidden>Lançar e rezar</span></td><td>Quality gates + scoring rubrics + LLM judges + benchmarks</td></tr>
+            <tr><td><strong>Architecture (P08)</strong></td><td><span data-en>None</span><span data-pt hidden>Nenhum</span></td><td>Agent cards + component maps + decision records</td></tr>
+            <tr><td><strong>Config (P09)</strong></td><td><span data-en>Env vars</span><span data-pt hidden>Variáveis de ambiente</span></td><td>Typed configs + rate limits + feature flags + secrets</td></tr>
+            <tr><td><strong>Feedback (P11)</strong></td><td><span data-en>None</span><span data-pt hidden>Nenhum</span></td><td>Guardrails + bug loops + learning records + regression checks</td></tr>
+            <tr><td><strong>Orchestration (P12)</strong></td><td><span data-en>None</span><span data-pt hidden>Nenhum</span></td><td>Workflows + dispatch rules + composable crews + DAGs</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+          </div>
+        </details>
+        <details class="dd-item">
+          <summary class="dd-sum"><span data-en>See it in action &amp; the Exchange</span><span data-pt hidden>Veja em ação &amp; a Troca</span></summary>
+          <div class="dd-body">
+<div class="container">
+      <div class="prose reveal">
+        <p class="section-label"><span data-en>See It in Action</span><span data-pt hidden>Veja Isso em Ação</span></p>
+        <h2 class="section-title"><span data-en>You say "research my competitors." Here is what happens.</span><span data-pt hidden>Você diz "pesquise meus concorrentes." Veja o que acontece.</span></h2>
+        <p><span data-en>N01 Intelligence does not run a single LLM call. It activates a sin-driven agentic business unit:</span><span data-pt hidden>O N01 Intelligence não executa uma única chamada de LLM. Ele ativa uma unidade de negócio agêntica orientada por pecado:</span></p>
+        <ul class="bullet-list">
+          <li><span data-en><strong>Analytical Envy</strong> (its sin lens) drives it to surpass every public source -- not match them, surpass them.</span><span data-pt hidden><strong>Inveja Analítica</strong> (sua lente do pecado) o impulsiona a superar toda fonte pública -- não igualar, superar.</span></li>
+          <li><span data-en><strong>MCP servers + browser tools + API clients</strong> (P04) scrape, fetch, and cross-reference live data.</span><span data-pt hidden><strong>Servidores MCP + browser tools + API clients</strong> (P04) fazem scraping, buscam e cruzam dados ao vivo.</span></li>
+          <li><span data-en><strong>A crew of specialized sub-agents</strong> -- researcher, analyst, fact-checker -- divides the work in parallel.</span><span data-pt hidden><strong>Uma crew de sub-agentes especializados</strong> -- pesquisador, analista, verificador de fatos -- divide o trabalho em paralelo.</span></li>
+          <li><span data-en><strong>The 8-Function Pipeline</strong> (F1 through F8) drives every artifact to a 9.0+ quality floor before it touches your repo.</span><span data-pt hidden><strong>O Pipeline de 8 Funções</strong> (F1 a F8) leva todo artefato a um piso de qualidade 9.0+ antes de tocar no seu repositório.</span></li>
+          <li><span data-en><strong>Entity memory + knowledge index</strong> (P10) capture what it learned, so the next run starts smarter than the last one ended.</span><span data-pt hidden><strong>Entity memory + knowledge index</strong> (P10) capturam o que foi aprendido, para que a próxima execução comece mais inteligente do que a anterior terminou.</span></li>
+          <li><span data-en><strong>Peer-reviewed quality gates</strong> (P07, P11) block anything subpar from merging.</span><span data-pt hidden><strong>Quality gates com revisão por pares</strong> (P07, P11) bloqueiam qualquer coisa abaixo do padrão de ser mesclada.</span></li>
+        </ul>
+        <p><span data-en>That is not a chatbot. That is an intelligence department that compounds every time it runs.</span><span data-pt hidden>Isso não é um chatbot. É um departamento de inteligência que se multiplica a cada execução.</span></p>
+      </div>
+    </div>
+<div class="container">
+      <div class="prose reveal">
+        <p class="section-label"><span data-en>The X</span><span data-pt hidden>O X</span></p>
+        <h2 class="section-title"><span data-en>The X stands for Exchange</span><span data-pt hidden>O X significa Troca</span></h2>
+        <p><span data-en>Intelligence compounds faster when shared. The X in CEXAI serves double duty: formally, it means <strong>Exchange</strong> -- the protocol for sharing typed knowledge assets between instances. Practically, it becomes <strong>your brand</strong> when you bootstrap with <code>/init</code>.</span><span data-pt hidden>A inteligência se multiplica mais rápido quando é compartilhada. O X em CEXAI cumpre dupla função: formalmente, significa <strong>Troca</strong> -- o protocolo para compartilhar ativos de conhecimento tipados entre instâncias. Na prática, se torna <strong>sua marca</strong> quando você faz o bootstrap com <code>/init</code>.</span></p>
+        <p><span data-en>Every artifact is a self-describing exchange unit. It carries its kind, quality score, pillar, and nucleus origin in YAML frontmatter. Import an artifact into any CEXAI instance, run <code>cex_doctor.py</code>, and it validates automatically.</span><span data-pt hidden>Todo artefato é uma unidade de troca autodescritiva. Ele carrega seu kind, pontuação de qualidade, pillar e nucleus de origem no frontmatter YAML. Importe um artefato em qualquer instância CEXAI, rode <code>cex_doctor.py</code>, e ele valida automaticamente.</span></p>
+      </div>
+
+      <div class="tbl-wrap reveal" style="margin-top: 32px;">
+        <table>
+          <thead><tr><th><span data-en>Exchange Unit</span><span data-pt hidden>Unidade de Troca</span></th><th><span data-en>Scope</span><span data-pt hidden>Escopo</span></th><th><span data-en>Example</span><span data-pt hidden>Exemplo</span></th></tr></thead>
+          <tbody>
+            <tr><td><strong>Knowledge Card</strong></td><td><span data-en>Single typed fact</span><span data-pt hidden>Fato único tipado</span></td><td><code>kc_react_hooks_patterns.md</code></td></tr>
+            <tr><td><strong>Builder</strong></td><td><span data-en>Full production capability (12 ISOs)</span><span data-pt hidden>Capacidade completa de produção (12 ISOs)</span></td><td><code>workflow-builder/</code></td></tr>
+            <tr><td><strong>SDK Provider</strong></td><td><span data-en>New runtime adapter</span><span data-pt hidden>Novo adaptador de runtime</span></td><td><code>provider_ollama.py</code></td></tr>
+            <tr><td><strong>Vertical Nucleus</strong></td><td><span data-en>Entire domain department</span><span data-pt hidden>Departamento de domínio inteiro</span></td><td><code>N08_healthcare/</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="prose reveal" style="margin-top: 32px;">
+        <p><span data-en><strong>What stays private.</strong> Brand config, memory, runtime state, and secrets never leave your instance. The exchange is about cognition, not identity.</span><span data-pt hidden><strong>O que permanece privado.</strong> Configuração de marca, memória, estado de runtime e segredos nunca saem da sua instância. A troca é sobre cognição, não identidade.</span></p>
+        <p><span data-en><strong>Anti-fragile by design.</strong> CEXAI sits one layer above the LLM. When a better model drops, your artifacts improve -- they are the knowledge, not the model. When a runtime shuts down, switch providers in one YAML file. Your brain is yours.</span><span data-pt hidden><strong>Antifrágil por design.</strong> O CEXAI fica uma camada acima da LLM. Quando um modelo melhor é lançado, seus artefatos melhoram -- eles são o conhecimento, não o modelo. Quando um runtime sai do ar, troque de provedor em um único arquivo YAML. Seu cérebro é seu.</span></p>
+        <p><span data-en><strong>Invest, don't spend.</strong> Every commit deposits into a compounding knowledge account. A recorded consultation becomes a reusable agent. A sales playbook becomes a governed workflow. Typed knowledge is LLM-agnostic -- it survives model upgrades, provider switches, and team turnover. The repository is the asset; when the business is sold, the AI brain transfers with it.</span><span data-pt hidden><strong>Invista, não gaste.</strong> Cada commit deposita numa conta de conhecimento que se multiplica. Uma consultoria gravada vira um agente reaproveitável. Um sales playbook vira um workflow governado. Conhecimento tipado é agnóstico de LLM -- sobrevive a upgrades de modelo, trocas de provedor e turnover de equipe. O repositório é o ativo; quando o negócio é vendido, o cérebro de IA vai junto.</span></p>
+      </div>
+    </div>
+          </div>
+        </details>
+        <details class="dd-item">
+          <summary class="dd-sum"><span data-en>Multi-runtime &amp; architecture</span><span data-pt hidden>Multi-runtime &amp; arquitetura</span></summary>
+          <div class="dd-body">
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>Multi-Runtime</span><span data-pt hidden>Multi-Runtime</span></p>
+        <h2 class="section-title"><span data-en>Your infrastructure. Your rules.</span><span data-pt hidden>Sua infraestrutura. Suas regras.</span></h2>
+        <p><span data-en>CEXAI is provider-agnostic by construction. Same artifacts, same pipeline, same governance -- every runtime. Lock-in is not in the vocabulary.</span><span data-pt hidden>O CEXAI é agnóstico de provedor por construção. Mesmos artefatos, mesmo pipeline, mesma governança -- em todo runtime. Lock-in não está no vocabulário.</span></p>
+      </div>
+
+      <div class="runtimes-list reveal">
+        <span class="runtime-item">Claude</span>
+        <span class="runtime-item">Codex</span>
+        <span class="runtime-item">Gemini</span>
+        <span class="runtime-item">Ollama</span>
+      </div>
+
+      <div class="tbl-wrap reveal">
+        <table>
+          <thead><tr><th>Runtime</th><th><span data-en>Auth</span><span data-pt hidden>Autenticação</span></th><th><span data-en>When to Use</span><span data-pt hidden>Quando Usar</span></th></tr></thead>
+          <tbody>
+            <tr><td><strong>Claude</strong> (Anthropic)</td><td><span data-en>API key or Max</span><span data-pt hidden>Chave de API ou Max</span></td><td><span data-en>Default -- highest quality, largest context (200K / 1M)</span><span data-pt hidden>Padrão -- maior qualidade, maior contexto (200K / 1M)</span></td></tr>
+            <tr><td><strong>Codex</strong> (OpenAI)</td><td>ChatGPT-plus or API</td><td><span data-en>GPT-5 runtime via OpenAI CLI</span><span data-pt hidden>Runtime GPT-5 via CLI da OpenAI</span></td></tr>
+            <tr><td><strong>Gemini</strong> (Google)</td><td><span data-en>oauth or API key</span><span data-pt hidden>oauth ou chave de API</span></td><td><span data-en>Free tier via <code>gemini-2.5-flash-lite</code></span><span data-pt hidden>Camada gratuita via <code>gemini-2.5-flash-lite</code></span></td></tr>
+            <tr><td><strong>Ollama</strong> (local)</td><td><span data-en>None</span><span data-pt hidden>Nenhuma</span></td><td><span data-en>Fully offline on your GPU</span><span data-pt hidden>Totalmente offline na sua GPU</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="reveal" style="font-size: 14px; color: var(--text-muted); margin-top: 16px; line-height: 1.6;"><span data-en>Routing lives in one YAML file. Change providers, set fallback chains, pin per-nucleus models -- no code changes.</span><span data-pt hidden>O roteamento vive em um único arquivo YAML. Troque provedores, defina cadeias de fallback, fixe modelos por nucleus -- sem mudar código.</span></p>
+    </div>
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>System Design</span><span data-pt hidden>Design de Sistema</span></p>
+        <h2 class="section-title"><span data-en>Architecture</span><span data-pt hidden>Arquitetura</span></h2>
+      </div>
+      <div class="arch-diagram reveal">
+        <pre><code><span class="kw">Layer 0</span> -- BUILDERS       <span data-en>318 factories x 12 ISOs each = 3,816 artifact constructors</span><span data-pt hidden>318 fábricas x 12 ISOs cada = 3.816 construtores de artefato</span>
+<span class="kw">Layer 1</span> -- PILLARS        <span data-en>12 pillars x 318 kinds = the taxonomy</span><span data-pt hidden>12 pillars x 318 kinds = a taxonomia</span>
+<span class="kw">Layer 2</span> -- NUCLEI         <span data-en>8 nuclei (N00 archetype + N01-N07 operational)</span><span data-pt hidden>8 nuclei (N00 arquétipo + N01-N07 operacionais)</span>
+<span class="kw">Layer 3</span> -- PIPELINE       <span data-en>8-Function Pipeline (8F) = the assembly line</span><span data-pt hidden>Pipeline de 8 Funções (8F) = a linha de montagem</span>
+<span class="kw">Layer 4</span> -- GOVERNANCE     <span data-en>hooks + doctor + quality gates + flywheel audit</span><span data-pt hidden>hooks + doctor + quality gates + auditoria flywheel</span>
+<span class="kw">Layer 5</span> -- TOOLS          <span data-en>150+ Python CLI tools (cex_*.py) = the runtime</span><span data-pt hidden>150+ ferramentas de CLI em Python (cex_*.py) = o runtime</span>
+<span class="kw">Layer 6</span> -- WIRING         <span data-en>SDK + signals + decision manifests = the nervous system</span><span data-pt hidden>SDK + signals + decision manifests = o sistema nervoso</span></code></pre>
+      </div>
+    </div>
+          </div>
+        </details>
+        <details class="dd-item">
+          <summary class="dd-sum"><span data-en>Install, commands &amp; prerequisites</span><span data-pt hidden>Instalação, comandos &amp; pré-requisitos</span></summary>
+          <div class="dd-body">
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>What You Need</span><span data-pt hidden>O Que Você Precisa</span></p>
+        <h2 class="section-title"><span data-en>Prerequisites</span><span data-pt hidden>Pré-requisitos</span></h2>
+        <p><span data-en>CEXAI runs through Claude Code. Install it, clone the repo, and Claude handles the rest -- dependencies, configuration, everything.</span><span data-pt hidden>O CEXAI roda através do Claude Code. Instale, clone o repositório, e o Claude cuida do resto -- dependências, configuração, tudo.</span></p>
+      </div>
+      <div class="prereqs-grid reveal">
+        <div class="prereq">
+          <span class="prereq-icon">&gt;_</span>
+          <h4>Claude Code</h4>
+          <p><span data-en>The CLI that powers CEX. Desktop app or terminal.</span><span data-pt hidden>A CLI que alimenta o CEX. App desktop ou terminal.</span></p>
+          <p style="margin-top: 8px;"><code>npm i -g @anthropic-ai/claude-code</code></p>
+        </div>
+        <div class="prereq">
+          <span class="prereq-icon">Py</span>
+          <h4>Python 3.12+</h4>
+          <p><span data-en>For the 350+ CLI tools. Claude Code installs pip deps for you.</span><span data-pt hidden>Para as mais de 350 ferramentas de CLI. O Claude Code instala as dependências pip para você.</span></p>
+          <p style="margin-top: 8px;"><code>python --version</code></p>
+        </div>
+        <div class="prereq">
+          <span class="prereq-icon">Git</span>
+          <h4>Git</h4>
+          <p><span data-en>Version control. Every artifact is committed and tracked.</span><span data-pt hidden>Controle de versão. Todo artefato é commitado e rastreado.</span></p>
+          <p style="margin-top: 8px;"><code>git --version</code></p>
+        </div>
+        <div class="prereq">
+          <span class="prereq-icon">AI</span>
+          <h4><span data-en>Any LLM Provider</span><span data-pt hidden>Qualquer Provedor de LLM</span></h4>
+          <p><span data-en>Anthropic API key, OpenAI, Google, or Ollama for fully local.</span><span data-pt hidden>Chave de API da Anthropic, OpenAI, Google, ou Ollama para rodar totalmente local.</span></p>
+          <p style="margin-top: 8px;"><code>ANTHROPIC_API_KEY</code></p>
+        </div>
+      </div>
+    </div>
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>Get Started</span><span data-pt hidden>Comece Agora</span></p>
+        <h2 class="section-title"><span data-en>Five minutes to your first artifact</span><span data-pt hidden>Cinco minutos para seu primeiro artefato</span></h2>
+      </div>
+      <div class="term reveal">
+        <div class="term-bar">
+          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+        </div>
+        <pre><code><span class="comment"><span data-en># 1. Clone</span><span data-pt hidden># 1. Clonar</span></span>
+<span class="prompt">$ </span><span class="cmd">git clone https://github.com/GatoaoCubo/cexai-starter.git && cd cexai-starter</span>
+
+<span class="comment"><span data-en># 2. Install dependencies</span><span data-pt hidden># 2. Instalar dependências</span></span>
+<span class="prompt">$ </span><span class="cmd">pip install -r requirements.txt</span>             <span class="comment"><span data-en># Core (pyyaml, tiktoken, ...)</span><span data-pt hidden># Principais (pyyaml, tiktoken, ...)</span></span>
+
+<span class="comment"><span data-en># 3. Bootstrap your brand -- answer a few questions</span><span data-pt hidden># 3. Faça o bootstrap da sua marca -- responda algumas perguntas</span></span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_bootstrap.py</span>
+<span class="comment"><span data-en># Or non-interactively: python _tools/cex_bootstrap.py --from-file your_brand.yaml</span><span data-pt hidden># Ou de forma não-interativa: python _tools/cex_bootstrap.py --from-file your_brand.yaml</span></span>
+
+<span class="comment"><span data-en># 4. See it running -- storefront + admin + API, one command</span><span data-pt hidden># 4. Veja funcionando -- storefront + admin + API, um comando</span></span>
+<span class="prompt">$ </span><span class="cmd">sh start.sh</span>                                  <span class="comment"># Mac / Linux / WSL / Git-Bash</span>
+<span class="prompt">$ </span><span class="cmd">.\start.ps1</span>                                  <span class="comment"># Windows (PowerShell)</span>
+
+<span class="comment"><span data-en># 5. Build your first artifact</span><span data-pt hidden># 5. Construa seu primeiro artefato</span></span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_8f_runner.py "create knowledge card about product pricing" \</span>
+<span class="cmd">    --kind knowledge_card --execute</span>
+
+<span class="comment"><span data-en># 6. Validate</span><span data-pt hidden># 6. Validar</span></span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_doctor.py</span>                 <span class="comment"><span data-en># Repo-wide health check</span><span data-pt hidden># Verificação de saúde do repositório inteiro</span></span></code></pre>
+      </div>
+    </div>
+<div class="container">
+      <div class="section-center reveal">
+        <p class="section-label"><span data-en>How You Drive It</span><span data-pt hidden>Como Você Dirige Isso</span></p>
+        <h2 class="section-title"><span data-en>One operator. No grid, no dispatch.</span><span data-pt hidden>Um operador. Sem grid, sem dispatch.</span></h2>
+        <p><span data-en>The factory that fabricated this repo runs multi-nucleus dispatch across parallel processes. This starter is leaner by design: the same 8F pipeline, driven by one operator -- you, or your agent -- in a single session.</span><span data-pt hidden>A fábrica que fabricou este repositório roda dispatch multi-nucleus em processos paralelos. Este starter é mais enxuto por design: o mesmo pipeline 8F, conduzido por um único operador -- você, ou seu agente -- numa única sessão.</span></p>
+      </div>
+      <div class="term reveal">
+        <div class="term-bar">
+          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+        </div>
+        <pre><code><span class="prompt">$ </span><span class="cmd">python _tools/cex_bootstrap.py --check</span>            <span class="comment"><span data-en># confirm your tenant checkout</span><span data-pt hidden># confirma o checkout do seu tenant</span></span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_doctor.py</span>                       <span class="comment"><span data-en># repo-wide health check</span><span data-pt hidden># verificação de saúde do repositório inteiro</span></span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_8f_runner.py "&lt;intent&gt;" --dry-run --verbose</span>  <span class="comment"><span data-en># preview a build</span><span data-pt hidden># preview de um build</span></span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_8f_runner.py "&lt;intent&gt;" --execute --verbose</span>  <span class="comment"><span data-en># real build</span><span data-pt hidden># build real</span></span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_compile.py &lt;path&gt;</span>               <span class="comment"><span data-en># compile after building</span><span data-pt hidden># compilar após construir</span></span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_score.py &lt;path&gt; --dry-run</span>       <span class="comment"><span data-en># peer-review score (never self-assigned)</span><span data-pt hidden># pontuação de peer-review (nunca autoatribuída)</span></span></code></pre>
+      </div>
+    </div>
+<div class="container">
+      <div class="prose reveal">
+        <p class="section-label"><span data-en>Portability</span><span data-pt hidden>Portabilidade</span></p>
+        <h2 class="section-title"><span data-en>Write once. Deploy to any LLM tool.</span><span data-pt hidden>Escreva uma vez. Faça deploy em qualquer ferramenta de LLM.</span></h2>
+        <p><span data-en>CEX artifacts compile down to any format an LLM consumes. One source of truth, every destination.</span><span data-pt hidden>Artefatos CEX se compilam para qualquer formato que uma LLM consome. Uma única fonte de verdade, todos os destinos.</span></p>
+      </div>
+      <div class="term reveal" style="margin-top: 24px;">
+        <div class="term-bar">
+          <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+        </div>
+        <pre><code><span class="prompt">$ </span><span class="cmd">python _tools/cex_compile.py --target claude-md</span>     <span class="comment"># -> CLAUDE.md</span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_compile.py --target cursorrules</span>   <span class="comment"># -> .cursorrules</span>
+<span class="prompt">$ </span><span class="cmd">python _tools/cex_compile.py --target customgpt</span>     <span class="comment"># -> CustomGPT JSON</span></code></pre>
+      </div>
+    </div>
+          </div>
+        </details>
+        <details class="dd-item">
+          <summary class="dd-sum"><span data-en>Glossary, docs &amp; contributing</span><span data-pt hidden>Glossário, docs &amp; contribuição</span></summary>
+          <div class="dd-body">
+<div class="container">
       <div class="section-center reveal">
         <p class="section-label"><span data-en>Vocabulary</span><span data-pt hidden>Vocabulário</span></p>
         <h2 class="section-title"><span data-en>Glossary</span><span data-pt hidden>Glossário</span></h2>
@@ -1599,11 +1639,7 @@
         </table>
       </div>
     </div>
-  </section>
-
-  <!-- ======== DOCS ======== -->
-  <section id="docs">
-    <div class="container">
+<div class="container">
       <div class="section-center reveal">
         <p class="section-label"><span data-en>Learn More</span><span data-pt hidden>Saiba Mais</span></p>
         <h2 class="section-title"><span data-en>Documentation</span><span data-pt hidden>Documentação</span></h2>
@@ -1621,11 +1657,7 @@
         </table>
       </div>
     </div>
-  </section>
-
-  <!-- ======== CONTRIBUTING ======== -->
-  <section id="contributing">
-    <div class="container">
+<div class="container">
       <div class="prose reveal">
         <p class="section-label"><span data-en>Open Source</span><span data-pt hidden>Código Aberto</span></p>
         <h2 class="section-title"><span data-en>Contributing</span><span data-pt hidden>Contribuindo</span></h2>
@@ -1639,17 +1671,17 @@
         </ul>
       </div>
     </div>
-  </section>
-
-  <!-- ======== LICENSE ======== -->
-  <section>
-    <div class="container" style="text-align: center;">
+<div class="container" style="text-align: center;">
       <p class="section-label"><span data-en>License</span><span data-pt hidden>Licença</span></p>
       <p><a href="LICENSE" style="color: var(--synapse); text-decoration: none; font-size: 18px; font-weight: 700;">Apache-2.0</a></p>
     </div>
+          </div>
+        </details>
+      </div>
+    </div>
   </section>
 
-  <!-- ======== FOOTER ======== -->
+<!-- ======== FOOTER ======== -->
   <footer>
     <div class="container">
       <p class="footer-quote"><em><span data-en>SQL organized data. CEX organizes intelligence.</span><span data-pt hidden>SQL organizava dados. CEX organiza inteligência.</span></em></p>
