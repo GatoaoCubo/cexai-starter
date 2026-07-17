@@ -1330,7 +1330,7 @@ _CHECK_REGISTRY_EMPTY_SUMMARY = {
 }
 
 # R-162 PROMOTION (GDP-closed 2026-07-12 -- founder star-rec accepted verbatim; see
-# docs/FOUNDER_DESK_R162_PROMOTION_CALL_2026_07_12.md + docs/IMPROVEMENT_REGISTER.md
+# docs/FOUNDER_DESK_R162_PROMOTION_CALL_2026_07_12.md + docs/PROJECT_BACKLOG.md
 # row R-162). These 7 plugins were zero-legacy-debt clean on the day of the call and
 # are promoted from advisory to BLOCKING, DEFAULT-ON. This is a SET, not a severity
 # threshold: membership alone decides the fold (see _check_promoted_fold_exit below),

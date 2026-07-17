@@ -14,7 +14,7 @@ related:
 # Evolve on Low Quality
 
 Promoted to `N05_operations/P10_memory/procedural_memory_n05.md` SOP-06 on
-2026-07-03 per `docs/IMPROVEMENT_REGISTER.md` R-166 (skill triage, destiny b:
+2026-07-03 per `docs/PROJECT_BACKLOG.md` R-166 (skill triage, destiny b:
 single-nucleus operating procedure). Read the SOP there for the full
 trigger/procedure/example -- this stub stays in place so the autofire
 trigger path (`.claude/skills/evolve_on_low_quality.md`) keeps resolving.

@@ -49,7 +49,7 @@ These are the REAL files a kind_manifest artifact's own SCHEMA/CONFIG describe -
 | kinds_meta.json | `.cex/kinds_meta.json` (`kind_manifest` entry) | boundary, naming, max_bytes, depends_on, core, nucleus, pillar |
 | kind_tool_supplement.json | `.cex/kind_tool_supplement.json` | `kind_to_tools["kind_manifest"]` = 5 tools (see table above) |
 | Real corpus | `N00_genesis/P0[1-9]_*/kind_*/kind_manifest_n00.md`, `N00_genesis/P1[0-2]_*/kind_*/kind_manifest_n00.md` | 294 real instances across all 12 pillar directories |
-| Register history | `docs/IMPROVEMENT_REGISTER.md` R-077, R-298, R-307, R-310 | The lineage this kind's own scaffold traces |
+| Register history | `docs/PROJECT_BACKLOG.md` R-077, R-298, R-307, R-310 | The lineage this kind's own scaffold traces |
 ## Tool Permissions
 
 | Category | Tools | Status |

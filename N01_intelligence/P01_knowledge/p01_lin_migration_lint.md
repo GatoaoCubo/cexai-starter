@@ -122,4 +122,4 @@ any file under `supabase/`).
 | kc_oss_golang_migrate | upstream | 0.60 |
 | kc_oss_dbmate | upstream | 0.60 |
 | kc_oss_alembic | upstream | 0.55 |
-| improvement_register | related | 0.35 |
+| project_backlog | related | 0.35 |

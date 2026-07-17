@@ -46,7 +46,7 @@ provenance:
 | guardrails_src | prov:Entity | github.com/guardrails-ai/guardrails (main branch, `guardrails/validator_base.py` + `guardrails/types/on_fail.py`) | 2026-07-03T00:00:00Z |
 | promptfoo_dossier | prov:Entity | N01_intelligence/P01_knowledge/kc_oss_promptfoo.md (prior-session dossier, license MIT verified 2x, ASSERTION_HANDLERS mechanic) | 2026-07-03T00:00:00Z |
 | deepeval_dossier | prov:Entity | N01_intelligence/P01_knowledge/kc_oss_deepeval.md (prior-session dossier, license Apache-2.0 verified 2x, `assert_test()` re-execution mechanic) | 2026-07-03T00:00:00Z |
-| improvement_register_r173 | prov:Entity | docs/IMPROVEMENT_REGISTER.md (row R-173, self-certification class shared with R-007/R-162/R-174) | 2026-07-03T00:00:00Z |
+| project_backlog_r173 | prov:Entity | docs/PROJECT_BACKLOG.md (row R-173, self-certification class shared with R-007/R-162/R-174) | 2026-07-03T00:00:00Z |
 | cex_score_hard_gates | prov:Entity | _tools/cex_score.py `_parse_hard_gates` (line ~324, confirmed by direct Read) -- the artifact being fixed, UNCHANGED by this transplant | 2026-07-03T00:00:00Z |
 | carry_registry_precedent | prov:Entity | _tools/cex_distill.py (`CarryEntry` frozen-dataclass + `CARRY_REGISTRY` tuple, R-164) -- house-style precedent for typed registry tables | 2026-07-03T00:00:00Z |  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
 
@@ -66,7 +66,7 @@ re-derived in fresh CEXAI-native Python, no source code from any of the 3 projec
 | act_license_gate | license_verification_guardrails_2x_double_sourced | guardrails_src | license_gate_pass (Apache-2.0) | N01 | 2026-07-03T00:00:00Z |
 | act_extract_mechanics | clean_room_concept_extraction | guardrails_src, promptfoo_dossier, deepeval_dossier | mechanic_concepts (registry-decorator dispatch, ValidationResult/OnFailAction contract, Hub lazy-import) | N01 | 2026-07-03T00:00:00Z |
 | act_dossier | kc_oss_dossier_authoring | mechanic_concepts | kc_oss_guardrails | N01 | 2026-07-03T00:00:00Z |
-| act_build_engine | typed_registry_build_plus_tests | mechanic_concepts, improvement_register_r173, cex_score_hard_gates, carry_registry_precedent | cex_assertions_py, test_cex_assertions_py | N03 | 2026-07-03T00:00:00Z |
+| act_build_engine | typed_registry_build_plus_tests | mechanic_concepts, project_backlog_r173, cex_score_hard_gates, carry_registry_precedent | cex_assertions_py, test_cex_assertions_py | N03 | 2026-07-03T00:00:00Z |
 
 ## Agents
 
@@ -135,4 +135,4 @@ engine is not a rubber stamp).
 | kc_oss_guardrails | sibling | 0.55 |
 | kc_oss_promptfoo | sibling | 0.50 |
 | kc_oss_deepeval | sibling | 0.50 |
-| improvement_register | upstream | 0.45 |
+| project_backlog | upstream | 0.45 |

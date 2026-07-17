@@ -509,7 +509,7 @@ silently reuse the commerce-SaaS sense when a user's phrasing echoes it.
 
 Source: `N07_admin/P10_memory/taught_terms_registry.md` (2026-07-02 naming
 decision, N07 Decision Authority); register row
-`docs/IMPROVEMENT_REGISTER.md` R-154.
+`docs/PROJECT_BACKLOG.md` R-154.
 
 ## Fallback Heuristics
 

@@ -1121,7 +1121,7 @@ class UnregisteredModelError(UnsupportedTierError):
     THIS exception exactly as it did for the old silent-full_8f default (a
     swallow stays a swallow; an uncaught propagation is new and, for an
     unregistered id, the intended fail-loud outcome) -- see the R-337
-    blast-radius audit in docs/IMPROVEMENT_REGISTER.md for the full caller
+    blast-radius audit in docs/PROJECT_BACKLOG.md for the full caller
     table this router change was checked against.
     """
 

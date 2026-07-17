@@ -36,12 +36,12 @@ related:
 ## Naming Convention (per `.cex/kinds_meta.json`)
 | Scope | Convention | Example |
 |-------|-----------|---------|
-| Artifact | `p04_content_factory_{{name}}.md` | `p04_content_factory_petlux_launch.md` |
+| Artifact | `p04_content_factory_{{name}}.md` | `p04_content_factory_acme_launch.md` |
 | Template | `tpl_content_factory.md` | P04_tools/templates/ |
 | Examples | `ex_content_factory_{niche}.md` | `ex_content_factory_pet_shop.md` |
 | Compiled | `content_factory_{slug}.yaml` | P04_tools/compiled/ |
 | Instance | `content_factory_brief.md` | `_instances/{tenant}/N02_marketing/` |
-| Frontmatter id | `p04_content_factory_{slug}` | `p04_content_factory_petlux` |
+| Frontmatter id | `p04_content_factory_{slug}` | `p04_content_factory_acme` |
 
 ## Size Limits
 | Artifact | Max Size | Rationale |

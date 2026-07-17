@@ -35,7 +35,7 @@ triage evidence happened to surface.
 ## Patterns (what works)
 1. `load_manifest(tenant_id)` FIRST, always -- this kind's entire value proposition is
    resumability (constitution 4); treating every request as "start fresh" defeats the point.
-2. Reading a REAL on-disk instance (`petlux_showcase`) before describing the shape in the
+2. Reading a REAL on-disk instance (`acme_demo`) before describing the shape in the
    abstract catches details a spec/KC summary can miss (e.g. the exact placeholder strings
    `__CEX_MANAGED_REPO__/...`, or that `wire.edit_to_reflect` carries a concrete `record_id`).
 3. Checking `stage_status.C`'s roll-up rule (`_roll_up_stage_c`) BEFORE trusting a `C: done` value
@@ -46,7 +46,7 @@ triage evidence happened to surface.
 
 ## Evidence
 Re-run this build: `python -m pytest _tools/tests/test_bootstrap_orchestrator.py -q` -> 24 passed
-in 52.44s. Direct read of `.cex/tenants/petlux_showcase/runtime/fabrication_manifest.yaml`
+in 52.44s. Direct read of `.cex/tenants/acme_demo/runtime/fabrication_manifest.yaml`
 confirmed all 7 `stage_status` keys `done`, `hosting_target: cex_managed`, and a real
 `wire.run_to_readback` proof (1 row written, 1 read back, artifact matched).
 

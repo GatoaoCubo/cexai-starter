@@ -50,7 +50,7 @@ linked_artifacts:
     - p07_bm_mission_bench
     - p02_mp_openwebui_glm
 density_score: 0.90
-data_source: "docs/RELATORIO_DEV_GLM_ROTEAMENTO_CASCATA_2026_07_13.md; N05_operations/P07_evals/p07_bm_glm_openwebui.md; N01_intelligence/P07_evals/p07_bm_mission_bench.md; docs/IMPROVEMENT_REGISTER.md R-336..R-344"
+data_source: "docs/RELATORIO_DEV_GLM_ROTEAMENTO_CASCATA_2026_07_13.md; N05_operations/P07_evals/p07_bm_glm_openwebui.md; N01_intelligence/P07_evals/p07_bm_mission_bench.md; docs/PROJECT_BACKLOG.md R-336..R-344"
 related:
   - kc_knowledge_vocabulary
 ---
@@ -132,7 +132,7 @@ structural kinds only; YAML default = Sonnet until 1 week of ledger.
 - docs/RELATORIO_DEV_GLM_ROTEAMENTO_CASCATA_2026_07_13.md (proofs 3a-3g)
 - N05_operations/P07_evals/p07_bm_glm_openwebui.md (16 cells)
 - N01_intelligence/P07_evals/p07_bm_mission_bench.md (q=1.2 + frontier, T1)
-- docs/IMPROVEMENT_REGISTER.md R-336..R-344 (336/338/339 done)
+- docs/PROJECT_BACKLOG.md R-336..R-344 (336/338/339 done)
 - .cex/runtime/decisions/decision_manifest_glm_bench_2026_07_12.yaml (DP1-DP4)
 - https://arxiv.org/abs/2305.05176 (FrugalGPT: LLM cascade cost/quality)
 

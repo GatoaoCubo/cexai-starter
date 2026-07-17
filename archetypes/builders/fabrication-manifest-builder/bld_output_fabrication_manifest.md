@@ -56,9 +56,9 @@ fabricate: null
 ## B. Pipeline-only blocks (READ, never hand-write -- shown for recognition)
 ```yaml
 # Present ONLY after the real CLI has run the corresponding stage. A real example
-# (.cex/tenants/petlux_showcase/runtime/fabrication_manifest.yaml, read this build):
+# (.cex/tenants/acme_demo/runtime/fabrication_manifest.yaml, read this build):
 ingest:
-  brand_name: PetLux
+  brand_name: Acme
   mechanism: "brandbook cap (build) -> cex_brand_writeback.write_brand_overlay (B2)"
   ok: true
 provision:

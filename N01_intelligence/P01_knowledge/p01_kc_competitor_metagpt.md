@@ -231,7 +231,7 @@ commercial support of OpenAI.
 
 | Person | Role | Background | Social |
 |--------|------|-----------|--------|
-| Wu Chenglin (Alexander Wu / Chenglin Wu) | Founder & CEO, DeepWisdom | Founded DeepWisdom 2019; B-end AI infrastructure background; unveiled MGX | alexanderwu@deepwisdom.ai; LinkedIn: company/metagpt |
+| Wu Chenglin (Alexander Wu / Chenglin Wu) | Founder & CEO, DeepWisdom | Founded DeepWisdom 2019; B-end AI infrastructure background; unveiled MGX | LinkedIn: company/metagpt |
 | Foundation Agents org (GitHub) | OSS governance | Community org managing MetaGPT and related repos | github.com/FoundationAgents |
 
 Note: MetaGPT has notably low named leadership visibility compared to CrewAI (Moura) or LlamaIndex (Liu).

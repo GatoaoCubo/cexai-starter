@@ -222,7 +222,7 @@ python _tools/cex_hydration_doctor.py --audit          # regenerate this file
 |----------|---------------|
 | `docs/SPEC_CEXAI_TOTAL_HYDRATION_INDEX_2026_07_03.md` | spec (Sec 3.2 STREAM B + Sec 4.1 WAVE 3) |
 | `docs/DIAGNOSTICO_COBERTURA_CEXAI_2026_07_03.md` | predecessor (hand-made, one-time) |
-| `docs/IMPROVEMENT_REGISTER.md` | R-167 (origin method), R-249/R-250 (this generator) |
+| `docs/PROJECT_BACKLOG.md` | R-167 (origin method), R-249/R-250 (this generator) |
 | `_tools/cex_check_registry.py` | hydration_doctor plugin (the one implementation) |
 | `_tools/cex_total_index.py` | L1 document index this reads (never rescans the corpus) |
 """ % (

@@ -53,7 +53,7 @@ by hand -- surface the discrepancy if asked; changing it is a kinds_meta.json ed
 cell's mandate.
 
 ## max_bytes -- a DOCUMENTED overage
-`max_bytes: 4096` per kinds_meta. The real `petlux_showcase` instance observed this build is
+`max_bytes: 4096` per kinds_meta. The real `acme_demo` instance observed this build is
 larger (multi-stage manifests with `provision`/`fabricate`/`wire` populated commonly exceed 4 KiB
 -- the kind-KC records ~5,500B for that fixture). This is an existing, already-documented gap,
 not something this builder should silently paper over.

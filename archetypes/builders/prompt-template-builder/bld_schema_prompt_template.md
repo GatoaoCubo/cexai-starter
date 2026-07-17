@@ -68,7 +68,7 @@ Examples: `p03_pt_knowledge_card`, `p03_pt_research_synthesis`, `p03_pt_code_rev
 > 139 -- naive greps miss `.cex/` (hidden-dir) + `_courses/` (gitignored, 11 force-tracked
 > files); `git ls-files` is authoritative -- same blind-spot class as R-259's CRLF-anchor and
 > R-260's uncommitted-file gotchas.) `title`/`variables` were previously YES, demoted to REC
-> at 50.0% / 11.3% population. See `docs/IMPROVEMENT_REGISTER.md` R-262 (sub-lane a) +
+> at 50.0% / 11.3% population. See `docs/PROJECT_BACKLOG.md` R-262 (sub-lane a) +
 > `docs/SPEC_R259_SCHEMA_PRACTICE_RECONCILIATION_2026_07_04.md`.
 | Field | Type | Required | Default | Description |
 |---|---|---|---|---|

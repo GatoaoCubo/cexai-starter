@@ -54,8 +54,8 @@ something real to load (F2 BECOME), not to relaunch the deprecated engine as the
 - Central implementation: `_tools/cex_bootstrap_orchestrator.py` (`MANIFEST_KIND`, `MANIFEST_SCHEMA`,
   `MANIFEST_FILENAME` at lines 136-138; new/load/save/mutate lifecycle lines 269-410ish;
   `_cmd_status` CLI subcommand at lines 1978-1989).
-- A real, live tenant instance verified by direct read: `.cex/tenants/petlux_showcase/runtime/
-  fabrication_manifest.yaml` (`brand_name: PetLux`, 2 chosen capabilities, all 7 stage_status keys
+- A real, live tenant instance verified by direct read: `.cex/tenants/acme_demo/runtime/
+  fabrication_manifest.yaml` (`brand_name: Acme`, 2 chosen capabilities, all 7 stage_status keys
   `done`, a real `wire.edit_to_reflect` readback proof).
 - Passing tests re-run this build: `python -m pytest _tools/tests/test_bootstrap_orchestrator.py -q`
   -> 24 passed.

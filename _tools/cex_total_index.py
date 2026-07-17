@@ -25,7 +25,7 @@ Three layers, one substrate:
                             cross-builder ISO search cex_preflight.rank_isos
                             never had -- PLUS the existing file:line-anchored
                             finding convention already used by SHOKUNIN /
-                            CODE_REVIEW_CEXAI_FALTANTE / IMPROVEMENT_REGISTER
+                            CODE_REVIEW_CEXAI_FALTANTE / PROJECT_BACKLOG
                             parsed into individually-queryable records
                             (additive parsing over EXISTING doc conventions;
                             no new authoring format invented).
@@ -175,7 +175,7 @@ INDEX_META_PATH = TOTAL_INDEX_DIR / "index_meta.json"
 
 # The 3 findings/register source docs (spec Sec 3.1 L2 item, POSIX-relative
 # to ROOT -- matches `git ls-files` output format exactly).
-REGISTER_REL = "docs/IMPROVEMENT_REGISTER.md"
+REGISTER_REL = "docs/PROJECT_BACKLOG.md"
 SHOKUNIN_REL = "docs/SHOKUNIN_SECOND_HOUSE_2026_07_03.md"
 CODE_REVIEW_REL = "docs/CODE_REVIEW_CEXAI_FALTANTE_2026_07_03.md"
 FINDINGS_SOURCE_DOCS = (SHOKUNIN_REL, CODE_REVIEW_REL)
@@ -926,7 +926,7 @@ def _tokenize(text: str) -> list[str]:
     # 3-char floor) and the digit-only half is dropped as pure-digit noise
     # (both branches above). Yet register/finding cross-references like
     # "R-196" are load-bearing identifiers in this corpus (docs/
-    # IMPROVEMENT_REGISTER.md + the 2 review dossiers cite them constantly).
+    # PROJECT_BACKLOG.md + the 2 review dossiers cite them constantly).
     # Merge each such hyphenated id into ONE extra alnum token (e.g. "r196")
     # so a literal-id query tokenizes IDENTICALLY to how the id appears in
     # indexed text. Purely ADDITIVE -- never replaces a token the loop above
@@ -1523,7 +1523,7 @@ def _empty_l2_payload() -> dict[str, Any]:
 
 # ---------------------------------------------------------------------------
 # Findings + register-row parser (R-247) -- additive parsing over EXISTING
-# markdown-table conventions in IMPROVEMENT_REGISTER.md / SHOKUNIN_SECOND_
+# markdown-table conventions in PROJECT_BACKLOG.md / SHOKUNIN_SECOND_
 # HOUSE / CODE_REVIEW_CEXAI_FALTANTE. Invents NO new authoring format.
 # ---------------------------------------------------------------------------
 
@@ -1555,7 +1555,7 @@ def iter_markdown_tables(text: str):
     positions. A table = a header row + an all-dashes separator row + 0+
     data rows.
 
-    Tolerates 2 REAL, observed IMPROVEMENT_REGISTER.md authoring quirks
+    Tolerates 2 REAL, observed PROJECT_BACKLOG.md authoring quirks
     (neither is a section boundary -- the next "## heading" in both cases
     is many rows below):
       1. A blank line dropped mid-table with no new header (e.g. between
@@ -1635,7 +1635,7 @@ def _extract_file_citations(text: str) -> list[str]:
 
 def parse_register_rows(text: str, source_doc: str = REGISTER_REL) -> list[dict]:
     """Parse every `| R-NNN | ... |` row across ALL verb-section tables in
-    IMPROVEMENT_REGISTER.md into {register_row_id, title, files_cited,
+    PROJECT_BACKLOG.md into {register_row_id, title, files_cited,
     status, source_doc}. A row whose own `ID` cell is not a bare `R-NNN`
     token (or a table whose header doesn't look like the register's own
     id/item/... shape) degrades to a raw-text record (register_row_id=None)
@@ -1780,7 +1780,7 @@ def parse_dossier_findings(text: str, source_doc: str) -> list[dict]:
 
 def _parse_findings_and_register(special_texts: dict[str, str]) -> tuple[list[dict], list[dict]]:
     """Parse findings (from the 2 dossiers) + register rows (from
-    IMPROVEMENT_REGISTER.md) out of the SAME text `scan_corpus` already
+    PROJECT_BACKLOG.md) out of the SAME text `scan_corpus` already
     read -- no second disk pass for any of the 3 special docs."""
     findings: list[dict] = []
     register_rows: list[dict] = []

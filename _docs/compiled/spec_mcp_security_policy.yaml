@@ -224,7 +224,7 @@ hook_command_portability: 'Hook commands in `.claude/settings.json` MUST use `${
 
   // WRONG (locks the repo to one user''s machine)
 
-  "command": "cd C:/Users/CEX/... && python _tools/cex_hooks_native.py session-start"
+  "command": "cd <repo> && python _tools/cex_hooks_native.py session-start"
 
 
   This was a BLOCKER finding in the 2026-05-02 OSS audit (W7) and is

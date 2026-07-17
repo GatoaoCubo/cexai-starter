@@ -258,7 +258,7 @@ def _kill_tree(pid: int) -> None:
     (plus its node.exe/MCP children) running in the background -- free to keep
     writing to disk (e.g. the knowledge library) minutes after the caller has
     already moved on and reported failure. That orphan is a root cause of
-    R-156's fabricated self-KC content (docs/IMPROVEMENT_REGISTER.md)."""
+    R-156's fabricated self-KC content (docs/PROJECT_BACKLOG.md)."""
     import subprocess as _subprocess
     try:
         if sys.platform == "win32":
@@ -330,7 +330,7 @@ def _run_claude_cli(args: list, prompt: str, timeout: int = 120):
 # tree -- exactly the R-170 concern.
 #
 # Evidence (empirical, verified against installed CLI 2.1.200; see the
-# R-170 row in docs/IMPROVEMENT_REGISTER.md for the full probe transcript):
+# R-170 row in docs/PROJECT_BACKLOG.md for the full probe transcript):
 #   - --allowedTools "" alone did NOT block a live Bash call under this
 #     repo's bypassPermissions config. bypassPermissions skips the
 #     allow/deny permission gate entirely, so an allow-list -- even an
@@ -485,7 +485,7 @@ def _run_claude_cli_no_tools(model_args: list, prompt: str, timeout: int = 120):
             "WARN: installed claude CLI does not recognize --tools/"
             "--strict-mcp-config -- falling back to an unrestricted call "
             "(degrade-never). Upgrade the Claude Code CLI to close this "
-            "defense-in-depth gap (see docs/IMPROVEMENT_REGISTER.md R-170).",
+            "defense-in-depth gap (see docs/PROJECT_BACKLOG.md R-170).",
             file=sys.stderr,
         )
         _remember_no_tools_flag_support(False)

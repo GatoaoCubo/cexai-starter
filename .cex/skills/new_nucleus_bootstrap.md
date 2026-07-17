@@ -15,7 +15,7 @@ related:
 # New Nucleus Bootstrap
 
 Promoted to `N03_engineering/P10_memory/procedural_memory_n03.md` SOP-07 on
-2026-07-03 per `docs/IMPROVEMENT_REGISTER.md` R-166 (skill triage, destiny b:
+2026-07-03 per `docs/PROJECT_BACKLOG.md` R-166 (skill triage, destiny b:
 single-nucleus operating procedure -- only N03 scaffolds nuclei per RACI
 "Build artifact"). Read the SOP there for the full trigger/procedure --
 this stub stays in place so the autofire trigger path, plus

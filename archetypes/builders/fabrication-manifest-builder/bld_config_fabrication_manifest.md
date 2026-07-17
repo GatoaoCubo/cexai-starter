@@ -29,8 +29,8 @@ related:
 | `_tools/cex_bootstrap_orchestrator.py` (`MANIFEST_FILENAME`) | `fabrication_manifest.yaml` (FIXED, tenant scoping via directory) | ACTUAL runtime behavior |
 
 Both are real and verified this build (kinds_meta read directly; code read directly; the
-`petlux_showcase` instance on disk is literally named `fabrication_manifest.yaml`, not
-`p12_fm_petlux_showcase.yaml`). This builder surfaces the gap; reconciling `kinds_meta.json` is
+`acme_demo` instance on disk is literally named `fabrication_manifest.yaml`, not
+`p12_fm_acme_demo.yaml`). This builder surfaces the gap; reconciling `kinds_meta.json` is
 out of this cell's mandate (edits to that file are explicitly forbidden this wave).
 
 ## Paths (real, verified)
@@ -44,7 +44,7 @@ framework tree. Never `git add -f` this file.
 | Field | Value | Source |
 |-------|-------|--------|
 | max_bytes (declared) | 4096 | `.cex/kinds_meta.json` |
-| max_bytes (observed) | ~5,500B for a fully-fabricated instance | `kc_fabrication_manifest.md` (petlux_showcase fixture) -- OVER budget, already documented |
+| max_bytes (observed) | ~5,500B for a fully-fabricated instance | `kc_fabrication_manifest.md` (acme_demo fixture) -- OVER budget, already documented |
 | ISO max_bytes (this builder's own files) | 8192 (10240 for bld_prompt) | `_tools/cex_doctor.py` MAX_BYTES/MAX_BYTES_PROMPT |
 
 ## Hooks (adapted -- this kind has NO compile step)

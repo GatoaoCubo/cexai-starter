@@ -104,7 +104,7 @@ tags: [content-factory, content-fabric, {{nicho}}]
 
 ## Naming
 Per `.cex/kinds_meta.json`: instance files follow `p04_content_factory_{{name}}.md`
-(e.g. `p04_content_factory_petlux_launch.md`), max_bytes 8192, pillar P04.
+(e.g. `p04_content_factory_acme_launch.md`), max_bytes 8192, pillar P04.
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

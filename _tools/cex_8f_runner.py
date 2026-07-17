@@ -319,7 +319,7 @@ _PILLAR_SCHEMA_CACHE: dict[str, dict] = {}
 def load_pillar_schema(pillar: str) -> dict:
     """Load _schema.yaml for a pillar.
 
-    R-127 deferred-lookup (docs/IMPROVEMENT_REGISTER.md): memoized at module
+    R-127 deferred-lookup (docs/PROJECT_BACKLOG.md): memoized at module
     level for the life of the process. Pure function of `pillar` over an
     immutable repo file within a short-lived one-shot CLI invocation -- a
     cached read cannot return a stale value within a run. This pays off when
@@ -674,7 +674,7 @@ class EightFRunner:
 
         T04: Token budget allocation at pipeline start.
 
-        R-127 deferred-lookup (docs/IMPROVEMENT_REGISTER.md): bld_config's
+        R-127 deferred-lookup (docs/PROJECT_BACKLOG.md): bld_config's
         FULL body used to be read+retained unconditionally purely to (a)
         regex-extract max_bytes as a FALLBACK and (b) stash the raw body in
         constraints['config_rules'] -- a field audited 2026-07-11 (full-repo
@@ -727,7 +727,7 @@ class EightFRunner:
         constraints = dict(kind_schema.get("constraints", {}))
         # R-352: the kind THIS run was constrained to resolve, explicit in
         # constraints (not just state.kind) so any consumer that reads
-        # state.constraints["kind"] (the shape docs/IMPROVEMENT_REGISTER.md
+        # state.constraints["kind"] (the shape docs/PROJECT_BACKLOG.md
         # R-352 names) sees the real, authoritative, Stage-1-resolved value.
         # f7_govern's kind-drift check (below) prefers this key, falling back
         # to state.kind when absent (Mode B Stage-2-only dispatch, where F1
@@ -2021,7 +2021,7 @@ class EightFRunner:
             # including Mode B Stage-2-only dispatch where f1_constrain never
             # runs in-process). The Stage-1-constrained kind is AUTHORITATIVE
             # -- a model's own auto-declared frontmatter.kind is NEVER
-            # accepted over it, matching docs/IMPROVEMENT_REGISTER.md R-352.
+            # accepted over it, matching docs/PROJECT_BACKLOG.md R-352.
             artifact_kind = fm.get("kind", "")
             expected_kind = self.state.constraints.get("kind") or self.state.kind
             kind_matches = str(artifact_kind) == expected_kind if fm else True

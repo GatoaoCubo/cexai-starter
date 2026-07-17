@@ -30,7 +30,7 @@ CEX_ROOT = Path(__file__).resolve().parent.parent
 # _tools/cex_8f_runner.py already uses for the SAME job (PILLAR_DIRS, ~lines 222-227), so a 13th
 # pillar added under N00_genesis needs zero code changes here (the old hardcoded list was a
 # drift risk: nothing kept it in sync if a pillar were ever added/renamed). A/B-verified equal to
-# the prior hardcoded list for today's 12 pillars (docs/IMPROVEMENT_REGISTER.md R-073).
+# the prior hardcoded list for today's 12 pillars (docs/PROJECT_BACKLOG.md R-073).
 LP_DIRS = [
     "N00_genesis/" + d.name
     for d in sorted((CEX_ROOT / "N00_genesis").glob("P[0-9][0-9]_*"))
@@ -241,7 +241,7 @@ def compile_md(md_path: Path, schema_formats: dict) -> tuple[dict, str, str]:
     return compiled, ext, None
 
 
-# R-330 (docs/IMPROVEMENT_REGISTER.md): 3 stems used, BY DESIGN, by more than one sibling
+# R-330 (docs/PROJECT_BACKLOG.md): 3 stems used, BY DESIGN, by more than one sibling
 # pillar of the SAME nucleus, for a source living DIRECTLY in the pillar dir (not examples/
 # or kind_{X}/ -- only ONE level below the pillar). For that shape, compile_file()'s
 # `lp_dir = md_path.parent.parent` resolves to the NUCLEUS ROOT (`md_path.parent` IS the
@@ -283,7 +283,7 @@ def derive_out_name(md_path: Path, kind: str | None, ext: str) -> str:
     every one of the ~294 kind_manifest sources under an LP derived the SAME
     stem ("kind_manifest_n00"), so N sources collapsed onto ONE compiled
     output -- only the last-compiled survived on disk, N-1 silently vanished
-    (docs/IMPROVEMENT_REGISTER.md R-311, live-verified: 12 collision points,
+    (docs/PROJECT_BACKLOG.md R-311, live-verified: 12 collision points,
     one per N00_genesis/P0X_*/compiled/kind_manifest_n00.yaml).
 
     Fix: for THIS kind only, fold the parent directory's `kind_{X}` suffix

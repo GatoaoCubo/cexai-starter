@@ -61,14 +61,14 @@ related:
 ```yaml
 schema: cex.fabrication_manifest/1
 kind: fabrication_manifest
-tenant_id: petlux_showcase
-brand_config_ref: .cex/runtime/moldgen/petlux_showcase/brand.config.ts
+tenant_id: acme_demo
+brand_config_ref: .cex/runtime/moldgen/acme_demo/brand.config.ts
 chosen_capabilities: [landing, ads]
 hosting_target: cex_managed
 status: fabricated
 stage_status: {A: done, B: done, C: done, D: done, C_admin: done, C_brain: done, C_site: done}
 ```
-Source: `.cex/tenants/petlux_showcase/runtime/fabrication_manifest.yaml` (gitignored, read
+Source: `.cex/tenants/acme_demo/runtime/fabrication_manifest.yaml` (gitignored, read
 directly). All 7 stage_status keys terminal, `wire.closed: true` with a real
 `run_to_readback` (1 row written, 1 read back, artifact matched) -- this is what a COMPLETE,
 trustworthy manifest looks like.

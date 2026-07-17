@@ -46,7 +46,7 @@ provenance:
 | ruff_src | prov:Entity | github.com/astral-sh/ruff (main branch) | 2026-07-03T00:00:00Z |
 | precommit_src | prov:Entity | github.com/pre-commit/pre-commit (main branch) | 2026-07-03T00:00:00Z |
 | ge_src | prov:Entity | github.com/great-expectations/great_expectations (develop branch) | 2026-07-03T00:00:00Z |
-| improvement_register_r162 | prov:Entity | docs/IMPROVEMENT_REGISTER.md (row R-162) | 2026-07-03T00:00:00Z |
+| project_backlog_r162 | prov:Entity | docs/PROJECT_BACKLOG.md (row R-162) | 2026-07-03T00:00:00Z |
 | carry_registry_precedent | prov:Entity | _tools/cex_distill.py (CarryEntry frozen-dataclass table, R-164) | 2026-07-03T00:00:00Z |  <!-- [NOT SHIPPED in this tenant -- Central-only tool] -->
 
 Method for all 3 external sources: clean-room CONCEPT extraction only -- no source code
@@ -63,7 +63,7 @@ citations live in the 3 companion `kc_oss_*` dossiers.
 | act_license_gate | license_verification_3x_double_sourced | ruff_src, precommit_src, ge_src | license_gate_pass | N01 | 2026-07-03T00:00:00Z |
 | act_extract_mechanics | clean_room_concept_extraction | ruff_src, precommit_src, ge_src | mechanic_concepts (rule-registry+fix-tiers, hook-manifest-contract, result+aggregate) | N01 | 2026-07-03T00:00:00Z |
 | act_dossier | kc_oss_dossier_authoring | mechanic_concepts | kc_oss_ruff, kc_oss_pre_commit, kc_oss_great_expectations | N01 | 2026-07-03T00:00:00Z |
-| act_build_registry | typed_registry_build_plus_tests | mechanic_concepts, improvement_register_r162, carry_registry_precedent | cex_check_registry_py, test_cex_check_registry_py | N03 | 2026-07-03T00:00:00Z |
+| act_build_registry | typed_registry_build_plus_tests | mechanic_concepts, project_backlog_r162, carry_registry_precedent | cex_check_registry_py, test_cex_check_registry_py | N03 | 2026-07-03T00:00:00Z |
 
 ## Agents
 
@@ -117,4 +117,4 @@ separately-scoped `/mission` per this task's own instructions.
 | kc_oss_ruff | sibling | 0.55 |
 | kc_oss_pre_commit | sibling | 0.55 |
 | kc_oss_great_expectations | sibling | 0.55 |
-| improvement_register | upstream | 0.45 |
+| project_backlog | upstream | 0.45 |

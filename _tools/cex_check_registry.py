@@ -44,7 +44,7 @@ ALL nuclei, but only N07 is fill-eligible this cycle. Companion new thin CLI wra
 _tools/cex_hydration_doctor.py --audit (writes docs/HYDRATION_MAP.md, prints the top-10).
 
 2026-07-05 growth pass (fifth slice): added handoff_context_doctor -- register rows R-097/R-128
-(docs/IMPROVEMENT_REGISTER.md), a paired finding: "No doctor/lint check verifies a N06 handoff
+(docs/PROJECT_BACKLOG.md), a paired finding: "No doctor/lint check verifies a N06 handoff
 for external-context-required kinds actually received Phase-0 context before dispatch." Reuses
 _tools/cex_preflight_mcp.py's own requires_external_context() lookup (one parser of the
 kinds_meta.json flag, same precedent as schema_doctor/registry_drift) and scans N06's own
@@ -181,7 +181,7 @@ class CheckPlugin:
 # run_registry() had no per-plugin isolation -- would have silently lost EVERY sibling plugin's
 # finding too (cex_doctor.py's check_registry_advisory() catches an exception at the outer
 # run_registry() call and degrades the WHOLE advisory tail to empty). run_registry() now DOES
-# isolate each plugin's own crash (R-335, docs/IMPROVEMENT_REGISTER.md -- see run_registry()'s
+# isolate each plugin's own crash (R-335, docs/PROJECT_BACKLOG.md -- see run_registry()'s
 # own docstring), so that specific total-collapse risk is a defense-in-depth backstop today,
 # not a live exposure -- but this import stays guarded regardless: an expected "not carried in
 # this tenant" condition should degrade to a clean ok=True "unavailable" finding, not a noisy
@@ -594,7 +594,7 @@ def _run_frontmatter_doctor(root: Path) -> List[CheckFinding]:
 # isolation (R-335, see its own docstring) -- but this plugin still prefers to degrade to a clean
 # "unavailable" ok=True finding rather than lean on that generic safety net.
 #
-# R-334 FIX (docs/IMPROVEMENT_REGISTER.md): trusting index_meta.json's own `built_at` field alone
+# R-334 FIX (docs/PROJECT_BACKLOG.md): trusting index_meta.json's own `built_at` field alone
 # is NOT sufficient -- live-reproduced on this repo 2026-07-12: `built_at` read 0.9h old (i.e.
 # "fresh" by the ORIGINAL built_at-only logic below) while l1_documents.json's and
 # l2_subdocuments.json's own on-disk mtimes were 8 DAYS old (last actually rewritten 07-04/05) --
@@ -1457,7 +1457,7 @@ def _kind_id_patterns(root: Path) -> Tuple[dict, List[dict]]:
 # build's OWN sanity check -- live breakage proved 4 sub-populations are LOAD-BEARING FILENAME
 # CONVENTIONS (some OTHER tool constructs/globs the exact current filename by kind name) and a 5th
 # is structurally PATTERN-INADMISSIBLE (no rename under the CURRENT labeled pattern can ever
-# satisfy it). See commit af9552aaaf and docs/IMPROVEMENT_REGISTER.md row R-314 for the incident
+# satisfy it). See commit af9552aaaf and docs/PROJECT_BACKLOG.md row R-314 for the incident
 # this constant mechanizes.
 #
 # Each entry is {population, kind, matcher(rel, art_id) -> bool, citation} -- narrowly scoped to
@@ -2308,7 +2308,7 @@ def _run_trace_auditor(root: Path) -> List[CheckFinding]:
 # --------------------------------------------------------------------------------------------- #
 # Plugin 15: tenant_honesty -- mechanization of the R-162 row's own "tenant-mode honesty (S7)"
 # core-upgrade line, generalizing the SAME "kill self-certification" ethos R-007's S7 stream
-# applied to cex_distill.py's verify() step (docs/IMPROVEMENT_REGISTER.md R-007: doctor-status was
+# applied to cex_distill.py's verify() step (docs/PROJECT_BACKLOG.md R-007: doctor-status was
 # hardcoded, import-smoke was a text-grep proxy, not real execution) to THIS registry itself, when
 # it runs INSIDE a distilled tenant repo rather than Central.
 #
@@ -2336,7 +2336,7 @@ def _run_trace_auditor(root: Path) -> List[CheckFinding]:
 # to an ok=True "unavailable" finding; _iter_typed_md_files degrades to the rglob fallback its OWN
 # docstring already promised for the "no .git" case, now also covering "no cex_stats module".
 #
-# UPDATE (R-335, docs/IMPROVEMENT_REGISTER.md): run_registry() itself has since gained generic
+# UPDATE (R-335, docs/PROJECT_BACKLOG.md): run_registry() itself has since gained generic
 # per-plugin exception isolation (see its own docstring) -- a plugin that raises for ANY reason,
 # not just the 3 named imports above, now yields a synthetic plugin_crashed finding instead of
 # blanking the tail. This plugin's own value is now complementary rather than the last line of
@@ -2427,7 +2427,7 @@ def _run_tenant_honesty(root: Path) -> List[CheckFinding]:
 # collision"), generalized to a corpus-wide uniqueness gate so the DISEASE CLASS cannot recur,
 # not just the one kind that surfaced it.
 #
-# THE BUG (R-307 measure Sec 4 side-find, docs/IMPROVEMENT_REGISTER.md R-311): all ~294
+# THE BUG (R-307 measure Sec 4 side-find, docs/PROJECT_BACKLOG.md R-311): all ~294
 # kind_manifest source files (`kind_{kind}/kind_manifest_n00.md`, one per registered kind, an
 # INVARIANT filename that varies only by parent directory -- see
 # archetypes/builders/kind-manifest-builder/bld_config_kind_manifest.md) collapsed onto the SAME
@@ -2775,7 +2775,7 @@ _BY_ID = {p.id: p for p in CHECK_REGISTRY}
 def run_registry(root: Path, plugin_ids: Optional[List[str]] = None) -> List[CheckFinding]:
     """Run every selected+gated plugin in CHECK_REGISTRY order; return the flat finding list.
 
-    R-335 per-plugin exception isolation (docs/IMPROVEMENT_REGISTER.md R-335, judge
+    R-335 per-plugin exception isolation (docs/PROJECT_BACKLOG.md R-335, judge
     crash-simulation 2026-07-12): each plugin's run() is now wrapped in its OWN try/except.
     Before this fix, a plugin that RAISES (instead of the established ok=False convention
     every registered plugin uses today) propagated straight out of this loop -- and because
