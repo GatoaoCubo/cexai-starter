@@ -187,6 +187,84 @@ VERB_TABLE = {
 # Each entry: keyword_pattern -> (kind, pillar, nucleus)
 # Patterns are normalized (lowercase, no accents)
 KIND_PATTERNS = {
+    # === video-course phrases (carried from engine, R-415 style) ===
+    # Video-course dogfood 2026-07-17 (.cex/runtime/plans/plan_refazer_video_curso.md
+    # sec 0c, live MCP investigation): the new course teaches "destilar" as the
+    # star capability of the operator's kit ("aponta pra qualquer coisa -- projeto,
+    # URL, video -- e ele destila num documento que maquina entende"). Measured
+    # hedge 0.398 on the public box (corpus vocabulary for "destilacao" is 0.05-0.07
+    # weak -- 100%-OOV against the English-only kind descriptions). knowledge_card
+    # is the correct target -- its own kinds_meta boundary literally says
+    # "Distilled, static, versioned knowledge". Kept qualified (verb + object),
+    # never bare "destilar"/"destilacao" alone: the bare noun would also swallow a
+    # hypothetical ML-distillation phrase meant for distillation_config (P02, N03 --
+    # "teacher-student model compression", a real different kind with a similar EN
+    # name) -- same collision-avoidance discipline as "quem sao os concorrentes"
+    # and "contrato de integracao" elsewhere in this table.
+    "destilar conhecimento": ("knowledge_card", "P01", "N04"),
+    "destilar o conhecimento": ("knowledge_card", "P01", "N04"),
+    "destilacao de conhecimento": ("knowledge_card", "P01", "N04"),
+    "destilacao do conhecimento": ("knowledge_card", "P01", "N04"),
+    "destilar essa url": ("knowledge_card", "P01", "N04"),
+    "destilar uma url": ("knowledge_card", "P01", "N04"),
+    "destilar url": ("knowledge_card", "P01", "N04"),
+    "destilar esse video": ("knowledge_card", "P01", "N04"),
+    "destilar um video": ("knowledge_card", "P01", "N04"),
+    "destilar video": ("knowledge_card", "P01", "N04"),
+    # Video-course dogfood 2026-07-17 (plan_refazer_video_curso.md sec 0c): the
+    # course's operator kit teaches "criar um botao" (button = skill/comando, per
+    # the car-dashboard metaphor family) and "clonar minha voz" (voice-clone
+    # narration setup). Both measured hedged on the public box (0.559 for the
+    # voice phrase). skill is P04/N03 ("reusable capability with trigger");
+    # tts_provider is P04/N05 ("text-to-speech provider integration") -- distinct
+    # from the pre-existing bare "tts"->audio_tool pin above (that one is the
+    # general P04 audio tool kind; these new phrases are specifically about VOICE
+    # CLONING for narration, which kinds_meta scopes to tts_provider).
+    "criar um botao": ("skill", "P04", "N03"),
+    "cria um botao": ("skill", "P04", "N03"),
+    "novo botao": ("skill", "P04", "N03"),
+    "criar skill": ("skill", "P04", "N03"),
+    "clonar minha voz": ("tts_provider", "P04", "N05"),
+    "clonar voz": ("tts_provider", "P04", "N05"),
+    "narracao com minha voz": ("tts_provider", "P04", "N05"),
+    # Video-course dogfood 2026-07-17 (plan_refazer_video_curso.md sec 0c): the
+    # course teaches "colocar minha marca" (brand bootstrap, /init flow) as one
+    # of the operator's kit buttons. brandbook (P05/N06, "complete brand book:
+    # identity+persona+voice+visual+messaging") is the closest registry kind --
+    # confirmed no dedicated "brand_config"/"brand bootstrap" kind exists in
+    # kinds_meta.json (brand_config.yaml is a project-level file, not a taxonomy
+    # kind). Measured hedged on the public box.
+    "coloca minha marca": ("brandbook", "P05", "N06"),
+    "colocar minha marca": ("brandbook", "P05", "N06"),
+    "bootstrap da marca": ("brandbook", "P05", "N06"),
+    # Video-course dogfood 2026-07-17 (plan_refazer_video_curso.md sec 0c): FIXES
+    # a CONFIDENT-WRONG on the public box -- "me guia nas decisoes" resolved
+    # runtime_state 0.717 (method=tfidf), NOT a KIND_PATTERNS collision but a
+    # genuine kinds_meta vocabulary accident: runtime_state's own PT description
+    # ("routing, decisoes em runtime") literally contains the query's "decisoes"
+    # token, so TF-IDF scored a real (non-OOV) in-vocab hit on the wrong kind.
+    # No dedicated "decision_manifest"/"gdp_session" kind exists in the registry
+    # (confirmed) -- decision_record (P08/N03, "ADR: contexto, decisao,
+    # consequencias") is the closest artifact kind that names decisions, so this
+    # exact-match pin (Phase 1) preempts the Phase-2 TF-IDF misfire entirely for
+    # this phrase. The underlying corpus ambiguity in kinds_meta.json is
+    # untouched (out of this fence) -- only the resolver-side lane is fixed.
+    "me guia nas decisoes": ("decision_record", "P08", "N03"),
+    "guia nas decisoes": ("decision_record", "P08", "N03"),
+    "me guie nas decisoes": ("decision_record", "P08", "N03"),
+    # Video-course dogfood 2026-07-17 (plan_refazer_video_curso.md sec 0c): the
+    # course's kit teaches "planejar"/"missao" as two distinct operator buttons
+    # (planejar = seu objetivo vira lista de tarefas -> workflow; missao = "faz
+    # tudo de uma vez" super-button -> pipeline_template, N07's own
+    # scenario-indexed agent-sequence kind -- no dedicated "mission"/"plan" kind
+    # exists in kinds_meta.json, confirmed). Both measured hedged on the public
+    # box (the English-only bare "workflow" pin above never fires on these PT
+    # phrasings, which use no English loanword).
+    "planeja meu objetivo": ("workflow", "P12", "N03"),
+    "planejar meu objetivo": ("workflow", "P12", "N03"),
+    "plano de tarefas": ("workflow", "P12", "N03"),
+    "missao completa": ("pipeline_template", "P12", "N07"),
+    "quero uma missao": ("pipeline_template", "P12", "N07"),
     # P01 Knowledge
     "knowledge card": ("knowledge_card", "P01", "N04"),
     "kc": ("knowledge_card", "P01", "N04"),
