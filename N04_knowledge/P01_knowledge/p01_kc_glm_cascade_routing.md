@@ -50,7 +50,7 @@ linked_artifacts:
     - p07_bm_mission_bench
     - p02_mp_openwebui_glm
 density_score: 0.90
-data_source: "docs/RELATORIO_DEV_GLM_ROTEAMENTO_CASCATA_2026_07_13.md; N05_operations/P07_evals/p07_bm_glm_openwebui.md; N01_intelligence/P07_evals/p07_bm_mission_bench.md; docs/PROJECT_BACKLOG.md R-336..R-344"
+data_source: "docs/GLM_ROUTING_NOTES.md; N05_operations/P07_evals/p07_bm_glm_openwebui.md; N01_intelligence/P07_evals/p07_bm_mission_bench.md; docs/PROJECT_BACKLOG.md R-336..R-344"
 related:
   - kc_knowledge_vocabulary
 ---
@@ -129,7 +129,7 @@ tunnel chaos-drop ends honest. Practice: per-batch `-2 glm-cpw`, probe-gated,
 structural kinds only; YAML default = Sonnet until 1 week of ledger.
 
 ## References
-- docs/RELATORIO_DEV_GLM_ROTEAMENTO_CASCATA_2026_07_13.md (proofs 3a-3g)
+- docs/GLM_ROUTING_NOTES.md (proofs 3a-3g)
 - N05_operations/P07_evals/p07_bm_glm_openwebui.md (16 cells)
 - N01_intelligence/P07_evals/p07_bm_mission_bench.md (q=1.2 + frontier, T1)
 - docs/PROJECT_BACKLOG.md R-336..R-344 (336/338/339 done)

@@ -32,7 +32,7 @@ related:
 > Sonnet-default policy, active since 2026-07-01) and a "My Artifacts" table
 > using directory nicknames (`agents/`, `architecture/`, `knowledge/`, ...)
 > that predate the P01-P12 fractal rename and no longer exist on disk. Per
-> `docs/NUCLEUS_ARCHITECTURE_DOSSIER.md` (N02 section, "three unreconciled
+> `docs/ARCHITECTURE_NOTES.md` (N02 section, "three unreconciled
 > generations"), this is the root cause R-024/R-025 describe. Resolution
 > mirrors the N07_SELF_WIRING precedent (commit a7b808652c): root's Gen-2
 > content is moved here (the P08_architecture / `kind: agent_card` home, per
@@ -81,7 +81,7 @@ related:
 > `P05_output/`, `P06_schema/`, `P07_evals/`, `P08_architecture/`,
 > `P09_config/`, `P10_memory/`, `P11_feedback/`, `P12_orchestration/`). File
 > counts below were not individually re-verified in this pass (see
-> `docs/NUCLEUS_ARCHITECTURE_DOSSIER.md` N02 section); treat as directional,
+> `docs/ARCHITECTURE_NOTES.md` N02 section); treat as directional,
 > not exact.
 
 | Subdir (nickname) | Count | What's There |

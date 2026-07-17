@@ -83,7 +83,7 @@ operational scope, sin lens, and quality contract.
 > F1 CONSTRAIN reads from, not a 2-4-pillar domain specialist like an operational
 > nucleus). (2) `agent_card_path` pointed at `N00_genesis/agent_card_n00.md`,
 > which never existed (confirmed absent via `find`, also flagged independently
-> in `docs/NUCLEUS_ARCHITECTURE_DOSSIER.md`'s N00 card) -- the card is now
+> in `docs/ARCHITECTURE_NOTES.md`'s N00 card) -- the card is now
 > created at `N00_genesis/P08_architecture/agent_card_n00.md` (matching the
 > convention every other nucleus's agent_card follows post R-024/R-025) and this
 > path is repointed to match.

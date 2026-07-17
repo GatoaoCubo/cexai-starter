@@ -1129,7 +1129,7 @@ class UnregisteredModelError(UnsupportedTierError):
 # ---------------------------------------------------------------------------
 # R-205: boundary-aware model -> tier matching (get_mode / get_tier)
 # ---------------------------------------------------------------------------
-# SHOKUNIN (docs/SHOKUNIN_SECOND_HOUSE_2026_07_03.md, finding R-205): the old
+# Internal review doc (docs/CODE_REVIEW_NOTES.md, finding R-205): the old
 # match was bidirectional RAW substring containment (`m in model_name or
 # model_name in m`), which matches on ANY character range with no regard for
 # token boundaries. Confirmed pathological: model_name="ma4:2" raw-matched

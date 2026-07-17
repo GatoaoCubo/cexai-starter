@@ -72,7 +72,7 @@ execute. If no handoff, report ready."), or an in-session build request.
    mapped 1:1 to the 12 pillars").
 3. For a single-kind, single-artifact ask, prefer the pre-compiled sub-agent
    form: `.claude/agents/{kind}-builder.md` is the same 12 ISOs, Agent-tool
-   -invocable, no OS-window spawn tax (`NUCLEUS_ARCHITECTURE_DOSSIER.md:
+   -invocable, no OS-window spawn tax (`ARCHITECTURE_NOTES.md:
    336-340`). Reserve spawn+worktree for grid/wave/BOOTSTRAP-shaped work.
 4. If `{kind}` has no builder dir yet: do not freehand 12 ISOs by hand. Route
    through the `builder_factory` crew (spec_writer -> iso_generator ->
@@ -126,7 +126,7 @@ Constraints ("ALWAYS: ... compile after save").
    frontmatter field, which N03 never sets itself (SOP-05).
 4. Worktree discipline: if N03 was dispatched into a per-cell worktree (grid
    `-w`), N03 signals but does **NOT** `git commit` -- N07 consolidates via
-   the worktree-merge flow (`NUCLEUS_ARCHITECTURE_DOSSIER.md:324`;
+   the worktree-merge flow (`ARCHITECTURE_NOTES.md:324`;
    `n07-orchestrator.md` Step 4b).
 
 ---

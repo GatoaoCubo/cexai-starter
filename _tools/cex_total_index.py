@@ -24,8 +24,8 @@ Three layers, one substrate:
                             {builder, iso_role, kind} (R-247) -- enables
                             cross-builder ISO search cex_preflight.rank_isos
                             never had -- PLUS the existing file:line-anchored
-                            finding convention already used by SHOKUNIN /
-                            CODE_REVIEW_CEXAI_FALTANTE / PROJECT_BACKLOG
+                            finding convention already used by CODE_REVIEW_NOTES /
+                            CODE_REVIEW_GAPS / PROJECT_BACKLOG
                             parsed into individually-queryable records
                             (additive parsing over EXISTING doc conventions;
                             no new authoring format invented).
@@ -176,8 +176,8 @@ INDEX_META_PATH = TOTAL_INDEX_DIR / "index_meta.json"
 # The 3 findings/register source docs (spec Sec 3.1 L2 item, POSIX-relative
 # to ROOT -- matches `git ls-files` output format exactly).
 REGISTER_REL = "docs/PROJECT_BACKLOG.md"
-SHOKUNIN_REL = "docs/SHOKUNIN_SECOND_HOUSE_2026_07_03.md"
-CODE_REVIEW_REL = "docs/CODE_REVIEW_CEXAI_FALTANTE_2026_07_03.md"
+SHOKUNIN_REL = "docs/CODE_REVIEW_NOTES.md"
+CODE_REVIEW_REL = "docs/CODE_REVIEW_GAPS.md"
 FINDINGS_SOURCE_DOCS = (SHOKUNIN_REL, CODE_REVIEW_REL)
 FINDINGS_SOURCE_PATHS = frozenset({REGISTER_REL, SHOKUNIN_REL, CODE_REVIEW_REL})
 
@@ -1523,8 +1523,8 @@ def _empty_l2_payload() -> dict[str, Any]:
 
 # ---------------------------------------------------------------------------
 # Findings + register-row parser (R-247) -- additive parsing over EXISTING
-# markdown-table conventions in PROJECT_BACKLOG.md / SHOKUNIN_SECOND_
-# HOUSE / CODE_REVIEW_CEXAI_FALTANTE. Invents NO new authoring format.
+# markdown-table conventions in PROJECT_BACKLOG.md / CODE_REVIEW_NOTES
+# / CODE_REVIEW_GAPS. Invents NO new authoring format.
 # ---------------------------------------------------------------------------
 
 _UNESCAPED_PIPE_RE = re.compile(r"(?<!\\)\|")
@@ -1735,7 +1735,7 @@ def parse_dossier_findings(text: str, source_doc: str) -> list[dict]:
     Header fingerprint requires ALL THREE of finding/file/register columns
     (the Debt Table's real shape: `# | Finding | File:line | Sev |
     Second-house fix | Register row`) -- a looser finding+file-only test
-    false-positives on SHOKUNIN's unrelated "reviewer coverage" table
+    false-positives on the review doc's unrelated "reviewer coverage" table
     (`Packet | Files | Lines total | Lines read | Findings synthesized?`),
     which has no register column at all (verified on the real doc)."""
     findings: list[dict] = []
@@ -2091,7 +2091,7 @@ def _remove_iso(l2: dict[str, Any], rel: str) -> bool:
 def _reparse_special_doc(l2: dict[str, Any], rel: str, text: str | None) -> None:
     """Re-parse (or clear, on deletion -- `text=None`) findings/register for
     one of the 3 special docs. `l2['findings']` is filtered by source_doc
-    first so re-parsing SHOKUNIN never disturbs CODE_REVIEW's findings."""
+    first so re-parsing one review doc never disturbs the other's findings."""
     if rel == REGISTER_REL:
         l2["register_rows"] = parse_register_rows(text, source_doc=rel) if text else []
     elif rel in FINDINGS_SOURCE_DOCS:

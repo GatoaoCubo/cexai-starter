@@ -23,7 +23,7 @@ related:
 > **This card exists to close a dangling reference** (register row R-098):
 > `nucleus_def_n00.md`'s `agent_card_path` field cited this file before it
 > existed anywhere on disk (confirmed absent via `find` prior to this fix;
-> independently flagged in `docs/NUCLEUS_ARCHITECTURE_DOSSIER.md`'s N00 card,
+> independently flagged in `docs/ARCHITECTURE_NOTES.md`'s N00 card,
 > "Dead references found"). Unlike every other agent_card in the system, this
 > one documents an ABSENCE of deployability, not a live capability -- N00 is
 > the pre-sin archetype, never instantiated for production work.

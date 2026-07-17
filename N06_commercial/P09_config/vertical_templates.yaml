@@ -1,0 +1,201 @@
+# vertical_templates.yaml -- Vertical-Template Registry (DATA, not taxonomy)
+#
+# Owner:   N06 (Commercial -- Strategic Greed)
+# Mission: INIT_ASSIMILATION_ENGINE / Wave A / Gap#4 (Stage 0 PURPOSE)
+# Read by: _tools/cex_vertical_detect.py (heuristic vertical auto-detect)
+#          N06 purpose intake (p03_pt_purpose_intake) + N03 assembler (Wave C)
+#
+# >>> ZERO-NEW-KINDS CONTRACT <<<
+# Kind count stays 303. The 6 "existing" entries map 1:1 to real *_vertical KINDS.
+# The 4 "derived_template" entries (consultant / dev_shop / creator / agency) are
+# DATA ROWS ONLY -- they are NOT kinds, NOT taxonomy. They never create a
+# consultant_vertical / dev_shop_vertical kind. When no entry fits a purpose with
+# confidence, the classifier returns derive_from_purpose (see fallback below).
+#
+# Schema per entry:
+#   title                : human label
+#   kind                 : the backing *_vertical KIND, or null for derived templates
+#   status               : existing | derived_template
+#   signals              : weighted keyword/phrase list (multi-word phrase = stronger
+#                          signal; the classifier weights by word count).
+#                          pt-BR signals are ADDITIVE (all EN signals kept) and written in
+#                          ACCENT-FOLDED form (e.g. "manutencao", "solucoes") because callers
+#                          fold the input to ASCII before matching (cex_business_shape._fold);
+#                          the EN self-test runs on ASCII text and is unaffected.
+#   kind_palette         : CEX kinds N03's assembler should seed for this vertical
+#   nucleus_palette      : nuclei (N01-N06) most active for this vertical brain
+#   monetization_default : the revenue model N06 pre-seeds (commercial layer)
+#   icp_hint             : one-line ideal-customer hint for the user_model purpose layer
+
+version: 1.0.0
+updated: "2026-05-29"
+author: n06_commercial
+
+fallback:
+  # When the classifier's best weighted score < min_evidence OR confidence below
+  # threshold, it returns this instead of forcing a wrong vertical.
+  id: derive_from_purpose
+  min_evidence: 2          # minimum weighted signal score to commit to a vertical
+  confidence_threshold: 0.50
+  description: >
+    No pre-seeded template fits with confidence. Derive a bespoke kind/nucleus
+    palette directly from the purpose statement + distilled knowledge (Wave C).
+
+verticals:
+
+  ecommerce:
+    title: "E-Commerce / Online Retail"
+    kind: ecommerce_vertical
+    status: existing
+    signals: ["ecommerce", "e-commerce", "online store", "storefront", "shop",
+              "cart", "checkout", "product catalog", "retail", "dropshipping",
+              "shopify", "conversion rate", "abandoned cart", "sku", "fulfillment",
+              "loja", "lojas", "loja online", "produtos", "carrinho", "comprar",
+              "atacado", "varejo", "frete", "estoque", "catalogo",
+              "comercio eletronico", "vender online", "marketplace"]
+    kind_palette: [customer_segment, content_monetization, pricing_page,
+                   ab_test_config, churn_prevention_playbook, knowledge_card]
+    nucleus_palette: [n06, n02, n01]
+    monetization_default: "transaction_fee_plus_gmv_percentage"
+    icp_hint: "DTC brand or marketplace operator optimizing conversion + AOV"
+
+  fintech:
+    title: "FinTech / Payments / Banking"
+    kind: fintech_vertical
+    status: existing
+    signals: ["fintech", "payment", "payments", "neobank", "banking", "wallet",
+              "pci-dss", "kyc", "aml", "transaction", "lending", "card issuing",
+              "open banking", "fraud detection", "ledger",
+              "pagamento", "pagamentos", "banco", "neobanco", "carteira digital",
+              "financeiro", "credito", "emprestimo", "antifraude",
+              "meios de pagamento", "conta digital"]
+    kind_palette: [compliance_checklist, guardrail, audit_log, workflow,
+                   alert_rule, knowledge_card]
+    nucleus_palette: [n05, n03, n06]
+    monetization_default: "per_transaction_saas_tiered"
+    icp_hint: "payment processor / neobank / embedded-finance team under PCI+AML"
+
+  healthcare:
+    title: "Healthcare / Clinical / Life Sciences"
+    kind: healthcare_vertical
+    status: existing
+    signals: ["healthcare", "clinical", "patient", "fhir", "hl7", "hipaa", "ehr",
+              "medical", "telemedicine", "diagnosis", "phi", "care provider",
+              "life sciences",
+              "saude", "clinica", "clinico", "paciente", "medico", "telemedicina",
+              "prontuario", "consultorio", "plano de saude", "enfermagem"]
+    kind_palette: [fhir_agent_capability, compliance_framework, audit_log,
+                   guardrail, knowledge_card]
+    nucleus_palette: [n05, n04, n03]
+    monetization_default: "per_seat_enterprise_saas"
+    icp_hint: "provider / payer / health-IT vendor needing FHIR + HIPAA guardrails"
+
+  edtech:
+    title: "EdTech / Learning / Training"
+    kind: edtech_vertical
+    status: existing
+    signals: ["edtech", "education", "learning", "lms", "curriculum", "student",
+              "scorm", "training", "e-learning", "academy", "tutor",
+              "adaptive learning", "cohort",
+              "educacao", "ensino", "curso", "cursos", "aprendizagem", "treinamento",
+              "aluno", "alunos", "escola", "plataforma de ensino"]
+    kind_palette: [course_module, curriculum_config, user_journey, eval_metric,
+                   subscription_tier, knowledge_card]
+    nucleus_palette: [n04, n02, n06]
+    monetization_default: "per_learner_subscription_plus_course_sales"
+    icp_hint: "course platform / corporate L&D / school adopting adaptive learning"
+
+  legal:
+    title: "Legal / Compliance / Contracts"
+    kind: legal_vertical
+    status: existing
+    signals: ["legaltech", "legal", "law firm", "lawyer", "attorney", "contract",
+              "litigation", "clause", "case law", "matter management",
+              "due diligence", "regulatory filing",
+              "juridico", "advogado", "advogados", "advocacia",
+              "escritorio de advocacia", "contratos", "processo", "peticao",
+              "compliance juridico"]
+    kind_palette: [compliance_framework, guardrail, citation, audit_log,
+                   knowledge_card]
+    nucleus_palette: [n04, n05, n01]
+    monetization_default: "per_matter_plus_seat_based_saas"
+    icp_hint: "law firm / in-house counsel / legaltech automating contract review"
+
+  govtech:
+    title: "GovTech / Public Sector"
+    kind: govtech_vertical
+    status: existing
+    signals: ["govtech", "government", "public sector", "citizen", "municipal",
+              "public services", "permit", "civic", "e-government", "constituent",
+              "public records", "policy compliance",
+              "governo", "prefeitura", "cidadao", "cidadaos", "servico publico",
+              "servicos publicos", "orgao publico", "licitacao", "setor publico"]
+    kind_palette: [compliance_framework, workflow, audit_log, user_journey,
+                   knowledge_card]
+    nucleus_palette: [n05, n04, n01]
+    monetization_default: "annual_contract_per_agency_licensing"
+    icp_hint: "agency / municipality digitizing constituent-facing services"
+
+  # ---- DERIVED TEMPLATES (DATA ONLY -- no backing kind, never taxonomy) ----
+
+  consultant:
+    title: "Consultant / Advisory (derived template)"
+    kind: null
+    status: derived_template
+    signals: ["consultant", "consulting", "advisory", "advisor", "strategy",
+              "fractional", "client engagement", "deliverable", "framework",
+              "recommendations", "expertise", "diagnostic",
+              "consultoria", "consultor", "assessoria", "especialistas",
+              "estrategia", "diagnostico", "recomendacoes", "mentoria"]
+    kind_palette: [case_study, roi_calculator, pitch_deck, discovery_questions,
+                   sales_playbook, knowledge_card]
+    nucleus_palette: [n01, n06, n02]
+    monetization_default: "project_based_plus_retainer"
+    icp_hint: "independent or boutique advisor selling expertise + frameworks"
+
+  dev_shop:
+    title: "Dev Shop / Software Agency (derived template)"
+    kind: null
+    status: derived_template
+    signals: ["dev shop", "software agency", "development agency", "software house",
+              "custom software", "client projects", "saas development",
+              "app development", "web development", "mvp", "engineering team",
+              "outsourced development",
+              "tecnologia", "solucoes em tecnologia", "suporte tecnico", "suporte",
+              "manutencao", "sistemas", "desenvolvimento de software", "informatica",
+              "fabrica de software", "infraestrutura de ti", "automacao"]
+    kind_palette: [software_project, repo_map, api_reference, sdk_example,
+                   decision_record, knowledge_card]
+    nucleus_palette: [n03, n05, n01]
+    monetization_default: "project_based_plus_maintenance_retainer"
+    icp_hint: "software studio shipping custom builds + MVPs for clients"
+
+  creator:
+    title: "Creator / Audience Business (derived template)"
+    kind: null
+    status: derived_template
+    signals: ["creator", "content creator", "youtuber", "influencer", "audience",
+              "newsletter", "podcast", "personal brand", "infoproduct",
+              "membership", "subscribers", "monetize content", "sponsorship",
+              "criador de conteudo", "influenciador", "conteudo", "assinantes",
+              "inscritos", "infoproduto", "monetizar", "marca pessoal"]
+    kind_palette: [content_monetization, subscription_tier, social_publisher,
+                   landing_page, course_module, knowledge_card]
+    nucleus_palette: [n02, n06, n04]
+    monetization_default: "subscription_plus_infoproduct_plus_sponsorship"
+    icp_hint: "solo creator monetizing an audience across content + products"
+
+  agency:
+    title: "Marketing / Creative Agency (derived template)"
+    kind: null
+    status: derived_template
+    signals: ["marketing agency", "creative agency", "ad agency", "digital marketing",
+              "seo agency", "media buying", "branding services", "campaign",
+              "retainer", "creative services", "agency", "client roster",
+              "agencia", "agencia de marketing", "publicidade", "campanha",
+              "marketing digital", "gestao de trafego", "anuncios", "midia paga"]
+    kind_palette: [competitive_matrix, customer_segment, pricing_page,
+                   sales_playbook, content_monetization, knowledge_card]
+    nucleus_palette: [n02, n06, n01]
+    monetization_default: "monthly_retainer_plus_performance"
+    icp_hint: "marketing/creative shop billing retainers + campaign performance"

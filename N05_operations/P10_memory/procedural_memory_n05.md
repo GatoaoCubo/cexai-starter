@@ -142,7 +142,7 @@ Source: `N05_operations/P05_output/{deploy_checklist_template,rollback_plan_temp
 Source: `boot/n05.ps1` (grep-confirmed vs all 7 boot scripts); `.mcp-n05.json`;
 `.claude/rules/model-economy.md` (Opus Guardrails item 1);
 `N05_operations/P08_architecture/agent_card_n05.md`;
-`docs/NUCLEUS_ARCHITECTURE_DOSSIER.md` N05 section.
+`docs/ARCHITECTURE_NOTES.md` N05 section.
 
 ---
 
@@ -334,7 +334,7 @@ degraded run.
 
 | Date | Procedure | Change |
 |------|-----------|--------|
-| 2026-07-02 | SOP-01 to SOP-05 | Initial creation, grounded in N05_operations/rules + docs/NUCLEUS_ARCHITECTURE_DOSSIER.md + CI YAML + live boot-script/MCP-config inspection. |
+| 2026-07-02 | SOP-01 to SOP-05 | Initial creation, grounded in N05_operations/rules + docs/ARCHITECTURE_NOTES.md + CI YAML + live boot-script/MCP-config inspection. |
 | 2026-07-03 | SOP-06 | Promoted from `.claude/skills/evolve_on_low_quality.md` per R-166 skill triage (destiny b: single-nucleus operating procedure). |
 | 2026-07-03 | SOP-07 | Promoted (execution half) from a Central-only skill per R-166 skill triage (destiny d: SPLIT -- brand-canon half stayed Central-only, not shipped in this starter). |
 
