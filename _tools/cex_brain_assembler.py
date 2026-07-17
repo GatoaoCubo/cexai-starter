@@ -506,7 +506,7 @@ def compose_pillar(pnum, brain, vertical, purpose, by_pillar, distilled, today):
     body.append(_related_table([
         ("p02_iso_%s_brain" % _id_slug(brain), "upstream (manifest)", "0.40"),
         ("p01_kc_agent_package", "upstream", "0.30"),
-        ("spec_init_assimilation_engine", "related", "0.25"),
+        ("spec_brain_assembly", "related", "0.25"),
     ]))
     return _fm_block(fm) + "\n".join(body) + "\n"
 
@@ -548,7 +548,7 @@ def compose_manifest(brain, vertical, purpose, palette, by_pillar, distilled,
         ("tags", ["agent_package", "brain", vertical, "assimilated", "iso", "portable"]),
         ("tldr", ("Portable 12-pillar %s vertical brain assembled from purpose + "
                   "distilled knowledge (%d files, tier %s)." % (vertical, files_count, tier))[:159]),
-        ("related", ["p01_kc_agent_package", "spec_init_assimilation_engine",
+        ("related", ["p01_kc_agent_package", "spec_brain_assembly",
                      "agent-package-builder", "bld_model_agent_package"]),
     ])
     body = [
@@ -585,7 +585,7 @@ def compose_manifest(brain, vertical, purpose, palette, by_pillar, distilled,
         "- Assembler: `_tools/cex_brain_assembler.py` (Stage 3 ASSEMBLE).", "",
         _related_table([
             ("p01_kc_agent_package", "upstream", "0.40"),
-            ("spec_init_assimilation_engine", "upstream", "0.32"),
+            ("spec_brain_assembly", "upstream", "0.32"),
             ("agent-package-builder", "upstream", "0.28"),
             ("bld_model_agent_package", "related", "0.26"),
         ]),
