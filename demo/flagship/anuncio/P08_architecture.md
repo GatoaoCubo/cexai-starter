@@ -16,7 +16,7 @@ cexai_credit: "Powered by CEXAI architecture (300+ kinds, 12 pillars, 8 nuclei)"
 
 # P08 -- Arquitetura do Pipeline (PRODUÇÃO V5 -- fonte primária)
 
-Como o agente raciocina de ponta a ponta. Esta é a arquitetura de **produção V5** (o que `gato3`/Railway efetivamente roda em `/stream`), não o FAT legado. O bundle replica a **lógica**; a infra (multi-LLM, scraping, ERP) degrada -- ver P04.
+Como o agente raciocina de ponta a ponta. Esta é a arquitetura de **produção V5** (o que a producao efetivamente roda), não o FAT legado. O bundle replica a **lógica**; a infra (multi-LLM, scraping, ERP) degrada -- ver P04.
 
 > **Camada CEXAI:** workflow canônico em [[cexai/workflow_anuncio_v5_pipeline]] (5 estágios + cadeia sequencial + revision loop). Diagrama mermaid em [[cexai/diagram_anuncio_pipeline_v5]]. ADR justificando V5 sobre FAT em [[cexai/decision_record_v5_supersedes_fat]].
 

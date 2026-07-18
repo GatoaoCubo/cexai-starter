@@ -11,7 +11,7 @@ fidelity: full
 # P08 -- Arquitetura do Pipeline
 
 > Merge-to-live: o pipeline DIDATICO de 4 estagios (FAT) e a forma como o agente
-> raciocina e entrega. O pipeline de PRODUCAO (sec. 6) e o que o backend Railway
+> raciocina e entrega. O pipeline de PRODUCAO (sec. 6) e o que o backend de producao
 > rodava -- exposto aqui para fidelidade. O agente reproduz o raciocinio sem o
 > backend (Gemini/Supabase) por default; lanes opcionais cobrem o resto.
 
@@ -74,7 +74,7 @@ Ordem de prioridade das categorias (CATEGORY_PRIORITY):
 ## 4. Mapa de degradacao -> CEXAI lifts (backend -> bundle)
 
 ```
-backend FastAPI (Railway)                bundle codexa-v2 (CEXAI 12P)
+backend FastAPI (producao)                bundle codexa-v2 (CEXAI 12P)
 -------------------------                ----------------------------
 POST /generate-unified (Gemini grid 3x3) -> DALL-E nativo (primary) + L2 opcional (Gemini grid)
 POST /vision-analyze (Gemini Vision)     -> atributos da descricao + L1 / L4 opcionais (vision lanes)

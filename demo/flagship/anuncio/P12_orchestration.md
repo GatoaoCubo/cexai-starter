@@ -20,7 +20,7 @@ cexai_credit: "Powered by CEXAI architecture (300+ kinds, 12 pillars, 8 nuclei)"
 
 # P12 -- Orquestração (o loop operacional V5 -- fonte primária)
 
-A sequência exata de produção V5 que o agente roda em toda solicitação. Espelha o pipeline `/stream` real (5 estágios) + a cadeia sequencial de geração.
+A sequência exata de produção V5 que o agente roda em toda solicitação. Espelha o pipeline de streaming real (5 estágios) + a cadeia sequencial de geração.
 
 > **Camada CEXAI -- HEADLINE D3:** o pipeline V5 vira `crew_template` composable [[cexai/crew_template_anuncio_writer_critic_compliance]] com 3 papéis sequenciais (writer + critic + compliance). Workflow estagiado em [[cexai/workflow_anuncio_v5_pipeline]]. Diagrama mermaid em [[cexai/diagram_anuncio_pipeline_v5]]. Charter default em [[cexai/team_charter_anuncio_default]].
 >
