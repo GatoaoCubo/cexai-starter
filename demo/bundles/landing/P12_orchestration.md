@@ -5,15 +5,15 @@ pillar: P12
 builder: landing-page-builder
 version: 1.0.0
 quality: null
-title: "Collaboration Landing Page"
+title: "Colaboração Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F8_collaborate"
-keywords: [landing page construction, collaboration landing page, landing_page, builder, examples, landing page builder, hub pages, open graph, crew behavior, related artifacts]
+keywords: [construção de landing page, collaboration landing page, landing_page, builder, examples, landing page builder, open graph, comportamento no crew, artefatos relacionados]
 density_score: 0.90
 llm_function: COLLABORATE
 related:
@@ -21,28 +21,28 @@ related:
   - bld_architecture_landing_page
   - bld_memory_landing_page
 ---
-# Collaboration: Landing Page Builder
+# Colaboração: Landing Page Builder
 
-## Upstream (receives from)
-1. brand_config.yaml → colors, fonts, tone, logo URL
-2. tagline-builder → hero headline, sub-headline, CTA text
-3. content-monetization-builder → pricing tiers, feature lists
-4. N01 Research → competitor page analysis, market positioning
-5. N06 Commercial → pricing strategy, conversion goals
+## Upstream (recebe de)
+1. brand_config.yaml → cores, fontes, tom de voz, URL do logo
+2. tagline-builder → headline do hero, sub-headline, texto do CTA
+3. content-monetization-builder → planos de preço, listas de funcionalidades
+4. N01 Research → análise de páginas de concorrentes, posicionamento de mercado
+5. N06 Commercial → estratégia de preços, metas de conversão
 
-## Downstream (sends to)
-1. N05 Operations → deployment (Vercel, Netlify, S3, GitHub Pages)
-2. social-publisher-builder → Open Graph previews for social sharing
-3. N02 Marketing → campaign landing pages, A/B variants
-4. N04 Knowledge → page templates added to knowledge library
+## Downstream (envia para)
+1. N05 Operations → deploy (Vercel, Netlify, S3, GitHub Pages)
+2. social-publisher-builder → previews de Open Graph para compartilhamento social
+3. N02 Marketing → landing pages de campanha, variantes de teste A/B
+4. N04 Knowledge → templates de página adicionados à biblioteca de conhecimento
 
-## Crew Behavior
-1. In a crew, landing-page-builder runs LATE (needs tagline, pricing, brand tokens first)
-2. Consumes outputs from tagline-builder and content-monetization-builder
-3. Produces a DEPLOYABLE artifact, not a design spec
-4. If A/B testing requested, produces 2 variants with clear differentiators
+## Comportamento no Crew
+1. Em um crew, o landing-page-builder roda POR ÚLTIMO (precisa primeiro de tagline, pricing e brand tokens)
+2. Consome as saídas do tagline-builder e do content-monetization-builder
+3. Produz um artefato PRONTO PARA DEPLOY, não uma especificação de design
+4. Se testes A/B forem solicitados, produz 2 variantes com diferenciais claros
 
-## Metadata
+## Metadados
 
 ```yaml
 id: bld_collaboration_landing_page
@@ -54,22 +54,22 @@ scoring: hybrid_3_layer
 python _tools/cex_score.py --apply bld-collaboration-landing-page.md
 ```
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `collaboration` |
 | Pillar | P12 |
-| Domain | landing page construction |
+| Domain | construção de landing page |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[bld_tools_landing_page]] | upstream | 0.45 |
 | [[bld_architecture_landing_page]] | upstream | 0.41 |

@@ -3,14 +3,14 @@ kind: config
 id: bld_config_oauth_app_config
 pillar: P09
 llm_function: CONSTRAIN
-purpose: Naming, paths, limits for oauth_app_config production
+purpose: Nomenclatura, caminhos e limites para a produção de oauth_app_config
 quality: null
 title: "Config Oauth App Config"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [oauth_app_config, builder, config]
-tldr: "Production constraints for oauth app config: naming (p09_oauth_{{name}}.yaml), output paths (P09/), size limit 4096B. OAuth config."
-domain: "oauth_app_config construction"
+tldr: "Restrições de produção para a config de app OAuth: nomenclatura (p09_oauth_{{name}}.yaml), caminhos de saída (P09/), limite de tamanho 4096B. Configuração OAuth."
+domain: "construção de oauth_app_config"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
@@ -24,17 +24,17 @@ related:
   - bld_config_audit_log
 ---
 
-## Naming Convention
-Pattern: `p09_oauth_<app_name>.yaml`
-Examples:
+## Convenção de Nomenclatura
+Padrão: `p09_oauth_<app_name>.yaml`
+Exemplos:
 - `p09_oauth_authservice.yaml`
 - `p09_oauth_paymentgateway.yaml`
 
-## Paths
-Artifacts stored in: `/opt/cex/config/oauth/p09/<app_name>/`
+## Caminhos
+Artefatos armazenados em: `/opt/cex/config/oauth/p09/<app_name>/`
 Logs: `/var/log/cex/oauth/p09/<app_name>/`
 
-## Limits
+## Limites
 max_bytes: 4096
 max_turns: 10
 effort_level: 3
@@ -45,37 +45,37 @@ post_build: null
 on_error: null
 on_quality_fail: null
 
-## Domain-Specific Constraints
+## Restrições Específicas do Domínio
 
-| Constraint | Value |
+| Restrição | Valor |
 |-----------|-------|
-| Boundary | OAuth config |
-| Dependencies | secret_config, env_config |
-| Primary 8F function | F1_constrain |
-| Max artifact size | 4096 bytes |
+| Fronteira | Configuração OAuth |
+| Dependências | secret_config, env_config |
+| Função 8F primária | F1_constrain |
+| Tamanho máximo do artefato | 4096 bytes |
 
-## Edge Cases
+## Casos de Borda
 
-| Scenario | Handling |
+| Cenário | Tratamento |
 |----------|---------|
-| Missing required frontmatter field | Fail H01 gate; return to F6 |
-| ID collision with existing artifact | Append version suffix (_v2) |
-| Body exceeds 4096 bytes | Trim prose sections; preserve tables |
-| Dependency secret_config not found | Warn; proceed with defaults |
+| Campo obrigatório de frontmatter ausente | Falha no gate H01; retorna para F6 |
+| Colisão de ID com artefato existente | Anexa sufixo de versão (_v2) |
+| Corpo excede 4096 bytes | Corta seções de prosa; preserva tabelas |
+| Dependência secret_config não encontrada | Avisa; segue com padrões |
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `config` |
 | Pillar | P09 |
-| Domain | oauth app config construction |
+| Domínio | construção de configuração de app OAuth |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

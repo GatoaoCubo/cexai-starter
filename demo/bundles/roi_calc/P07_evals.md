@@ -3,123 +3,119 @@ kind: quality_gate
 id: p11_qg_roi_calculator
 pillar: P11
 llm_function: GOVERN
-purpose: Quality gate with HARD and SOFT scoring for roi_calculator
+purpose: Portão de qualidade com pontuação HARD e SOFT para roi_calculator
 quality: null
-title: "Quality Gate Roi Calculator"
+title: "Portão de Qualidade -- ROI Calculator"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [roi_calculator, builder, quality_gate]
-tldr: "Quality gate with HARD and SOFT scoring for roi_calculator"
-domain: "roi_calculator construction"
+tldr: "Portão de qualidade com pontuação HARD e SOFT para roi_calculator"
+domain: "construção de roi_calculator"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F7_govern"
-keywords: [roi_calculator construction, quality gate roi calculator, roi_calculator, builder, quality_gate, quality gate, fail condition, scoring guide, golden example, cloud migration]
+keywords: [construção de roi_calculator, portão de qualidade roi calculator, roi_calculator, builder, quality_gate, portão de qualidade, condição de falha, guia de pontuação, exemplo padrão ouro, migração para nuvem]
 density_score: 0.85
 related:
   - kc_roi_calculator
   - roi-calculator-builder
 ---
-## Quality Gate
-
-## Definition
-| metric         | threshold | operator | scope          |
+## Definição
+| métrica         | limiar | operador | escopo          |
 |----------------|-----------|----------|----------------|
-| Accuracy       | 95%       | >=       | Economic buyers|
-| Completeness   | 100%      | ==       | All inputs     |
+| Precisão       | 95%       | >=       | Compradores econômicos|
+| Completude   | 100%      | ==       | Todas as entradas     |
 
-## HARD Gates
-| ID             | Check                          | Fail Condition                              |
+## Gates HARD
+| ID             | Verificação                          | Condição de Falha                              |
 |----------------|--------------------------------|---------------------------------------------|
-| H01            | YAML frontmatter valid         | Missing or invalid frontmatter              |
-| H02            | ID matches pattern             | ID does not match ^p11_roi_[a-z][a-z0-9_]+$ |
-| H03            | kind field matches 'roi_calculator' | kind field invalid                          |
-| H04            | Input parameters defined       | Missing required input fields               |
-| H05            | ROI formula mathematically valid | Formula errors or undefined variables       |
-| H06            | TCO comparison included        | Missing TCO comparison table                |
-| H07            | Output units specified         | Missing or ambiguous output units           |
+| H01            | Frontmatter YAML válido         | Frontmatter ausente ou inválido              |
+| H02            | ID corresponde ao padrão             | ID não corresponde a ^p11_roi_[a-z][a-z0-9_]+$ |
+| H03            | Campo kind corresponde a 'roi_calculator' | Campo kind inválido                          |
+| H04            | Parâmetros de entrada definidos       | Campos de entrada obrigatórios ausentes              |
+| H05            | Fórmula de ROI matematicamente válida | Erros de fórmula ou variáveis não definidas       |
+| H06            | Comparação de TCO incluida        | Tabela de comparação de TCO ausente            |
+| H07            | Unidades de saída especificadas         | Unidades de saída ausentes ou ambíguas          |
 
-## SOFT Scoring
-| Dim        | Dimension         | Weight | Scoring Guide                          |
+## Pontuação SOFT
+| Dim        | Dimensão         | Peso | Guia de Pontuação                          |
 |------------|-------------------|--------|----------------------------------------|
-| D01        | Accuracy          | 0.15   | 100% = 1.0, 90% = 0.9                   |
-| D02        | Completeness      | 0.15   | 100% = 1.0, 80% = 0.8                   |
-| D03        | Clarity           | 0.10   | Clear = 1.0, ambiguous = 0.5            |
-| D04        | TCO comparison    | 0.15   | Detailed = 1.0, partial = 0.7           |
-| D05        | User-friendliness | 0.10   | Intuitive = 1.0, complex = 0.5          |
-| D06        | Consistency       | 0.10   | No contradictions = 1.0, 1+ errors = 0.5 |
-| D07        | Documentation     | 0.15   | Full = 1.0, partial = 0.7               |
-| D08        | Versioning        | 0.10   | Versioned = 1.0, unversioned = 0.5      |
+| D01        | Precisão          | 0.15   | 100% = 1.0, 90% = 0.9                   |
+| D02        | Completude      | 0.15   | 100% = 1.0, 80% = 0.8                   |
+| D03        | Clareza           | 0.10   | Clara = 1.0, ambígua = 0.5            |
+| D04        | Comparação de TCO    | 0.15   | Detalhada = 1.0, parcial = 0.7           |
+| D05        | Facilidade de uso | 0.10   | Intuitiva = 1.0, complexa = 0.5          |
+| D06        | Consistência       | 0.10   | Sem contradições = 1.0, 1+ erros = 0.5 |
+| D07        | Documentação     | 0.15   | Completa = 1.0, parcial = 0.7               |
+| D08        | Versionamento        | 0.10   | Versionado = 1.0, sem versão = 0.5      |
 
-## Actions
-| Score     | Action         |
+## Ações
+| Pontuação     | Ação         |
 |-----------|----------------|
-| GOLDEN    | Approve        |
-| PUBLISH   | Publish        |
-| REVIEW    | Peer review    |
-| REJECT    | Reject         |
+| GOLDEN    | Aprovar        |
+| PUBLISH   | Publicar        |
+| REVIEW    | Revisão por pares    |
+| REJECT    | Rejeitar        |
 
-## Bypass
-| conditions                          | approver       | audit trail              |
+## Exceção (Bypass)
+| condições                          | aprovador       | trilha de auditoria              |
 |------------------------------------|----------------|--------------------------|
-| Critical project with senior approval | CTO           | "Bypassed by CTO on 2023-10-01" |
+| Projeto crítico com aprovação sênior | CTO           | "Exceção aprovada pelo CTO em 2023-10-01" |
 
-## Examples
+## Exemplo Padrão-Ouro
+```yaml
+title: ROI Calculator for Cloud Migration
+author: A. Smith, Financial Analyst
+date: 2023-10-15
+inputs:
+  - Initial Investment: $5,000
+  - Monthly Cloud Cost (AWS EC2): $200
+  - Monthly Savings (vs. On-Premises): $1,000
+  - Time Horizon: 12 months
+formulas:
+  ROI: ((Monthly Savings × Time Horizon) - Initial Investment) / Initial Investment × 100
+  Payback Period: Initial Investment / Monthly Savings
+  TCO: Initial Investment + (Monthly Cloud Cost × Time Horizon)
+tco_comparison:
+  AWS: $7,400
+  Azure: $7,500
+  GCP: $7,300
+```
 
-## Golden Example  
-```yaml  
-title: ROI Calculator for Cloud Migration  
-author: A. Smith, Financial Analyst  
-date: 2023-10-15  
-inputs:  
-  - Initial Investment: $5,000  
-  - Monthly Cloud Cost (AWS EC2): $200  
-  - Monthly Savings (vs. On-Premises): $1,000  
-  - Time Horizon: 12 months  
-formulas:  
-  ROI: ((Monthly Savings × Time Horizon) - Initial Investment) / Initial Investment × 100  
-  Payback Period: Initial Investment / Monthly Savings  
-  TCO: Initial Investment + (Monthly Cloud Cost × Time Horizon)  
-tco_comparison:  
-  AWS: $7,400  
-  Azure: $7,500  
-  GCP: $7,300  
-```  
+## Anti-Exemplo 1: Nomes de Placeholder
+```yaml
+title: ROI Calculator for ProviderA
+inputs:
+  - Initial Investment: $X
+  - Monthly Cost: $Y
+formulas:
+  ROI: (Y - X) / X
+tco_comparison:
+  ProviderA: $Z
+```
+## Por que falha
+Usa placeholders genéricos como "ProviderA" e "$X" em vez de nomes reais de fornecedores e valores concretos, o que torna impossível para os compradores econômicos comparar opções ou validar premissas.
 
-## Anti-Example 1: Placeholder Names  
-```yaml  
-title: ROI Calculator for ProviderA  
-inputs:  
-  - Initial Investment: $X  
-  - Monthly Cost: $Y  
-formulas:  
-  ROI: (Y - X) / X  
-tco_comparison:  
-  ProviderA: $Z  
-```  
-## Why it fails  
-Uses generic placeholders like "ProviderA" and "$X" instead of real vendor names and concrete values, making it impossible for economic buyers to compare options or validate assumptions.  
+## Anti-Exemplo 2: Comparação de TCO Ausente
+```yaml
+title: ROI Calculator for AWS
+inputs:
+  - Initial Investment: $5,000
+  - Monthly Savings: $1,000
+formulas:
+  ROI: (1,000 × 12 - 5,000) / 5,000 × 100
+```
+## Por que falha
+Omite a seção de comparação de TCO, que é crítica para os compradores econômicos avaliarem os custos totais entre fornecedores. Sem o TCO, a calculadora carece de insights acionáveis para a tomada de decisão.
 
-## Anti-Example 2: Missing TCO Comparison  
-```yaml  
-title: ROI Calculator for AWS  
-inputs:  
-  - Initial Investment: $5,000  
-  - Monthly Savings: $1,000  
-formulas:  
-  ROI: (1,000 × 12 - 5,000) / 5,000 × 100  
-```  
-## Why it fails  
-Omits the TCO comparison section, which is critical for economic buyers to evaluate total costs across providers. Without TCO, the calculator lacks actionable insights for decision-making.
+### H_RELATED: Verificação de Referência Cruzada (HARD)
+- [ ] Campo de frontmatter `related:` preenchido (mínimo de 3 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream ou sibling
+- Gate: REJECT se < 3 entradas (auto-preenchido por cex_wikilink.py em F6.5)
 
-### H_RELATED: Cross-Reference Check (HARD)
-- [ ] `related:` frontmatter field populated (min 3 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream or sibling reference
-- Gate: REJECT if < 3 entries (auto-populated by cex_wikilink.py at F6.5)
-
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Verificação de Referência Cruzada (SOFT)
+- [ ] Campo de frontmatter `related:` preenchido (3-15 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, incentiva a interligação)

@@ -3,14 +3,14 @@ kind: knowledge_card
 id: bld_knowledge_card_oauth_app_config
 pillar: P01
 llm_function: INJECT
-purpose: Domain knowledge for oauth_app_config production
+purpose: Conhecimento de domínio para a produção de oauth_app_config
 quality: null
 title: "Knowledge Card Oauth App Config"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [oauth_app_config, builder, knowledge_card]
-tldr: "Domain knowledge for oauth_app_config production"
-domain: "oauth_app_config construction"
+tldr: "Conhecimento de domínio para a produção de oauth_app_config"
+domain: "construção de oauth_app_config"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F3_inject"
@@ -19,53 +19,53 @@ density_score: 0.85
 related:
   - kc_oauth_app_config
 ---
-## Domain Overview  
-OAuth2/PKCE app config defines secure integration parameters for third-party applications accessing protected APIs. It governs scope permissions, redirect endpoints, token lifetimes, and refresh policies to ensure compliance with security and privacy standards. Proper configuration prevents token misuse, redirect vulnerabilities, and unauthorized access, especially in partner ecosystems where apps may have varying trust levels. This differs from SSO (workforce) and secret management (raw credentials) by focusing on API access control and token lifecycle management.  
+## Visão Geral do Domínio
+A configuração de app OAuth2/PKCE define os parâmetros seguros de integração para aplicações de terceiros que acessam APIs protegidas. Ela governa permissões de escopo, endpoints de redirecionamento, tempo de vida dos tokens e políticas de refresh para garantir conformidade com padrões de segurança e privacidade. Uma configuração adequada previne uso indevido de tokens, vulnerabilidades de redirecionamento e acesso não autorizado, especialmente em ecossistemas de parceiros onde os apps podem ter níveis de confiança variados. Isso difere de SSO (identidade corporativa) e de gestão de segredos (credenciais brutas) por focar em controle de acesso a API e gestão do ciclo de vida do token.
 
-## Key Concepts  
-| Concept                  | Definition                                                                 | Source                      |  
-|-------------------------|----------------------------------------------------------------------------|----------------------------|  
-| Scopes                  | Permissions granted to an app (e.g., `read_user`, `write_orders`).        | RFC 6749 §3.3              |  
-| Redirect URIs           | URLs where authorization servers redirect after user consent.              | RFC 8252 §2.2              |  
-| Client ID/Secret        | Credentials for app identification (public vs. confidential clients).     | RFC 6749 §2.1              |  
-| Token Lifetime          | Duration before access tokens expire (typically 1–120 minutes).            | OAuth 2.0 Bearer Token     |  
-| Refresh Token           | Long-lived token for obtaining new access tokens without re-authenticating. | RFC 6749 §6                |  
-| PKCE Code Challenge     | Proof Key for Code Exchange (PKCE) to secure public client flows.         | RFC 7636                   |  
-| Authorization Grant Type | Flow type (e.g., Authorization Code, Implicit) defining token issuance.  | RFC 6749 §1.3              |  
-| Token Endpoint Auth     | Method to authenticate client at token endpoint (e.g., client_secret_post). | RFC 6749 §2.3.1            |  
-| Consent Scope           | User-granted permissions scope during authorization.                       | OpenID Connect Core 1.0    |  
-| Token Introspection     | Mechanism to check token validity and scope.                               | RFC 7662                   |  
-| Refresh Policy          | Rules for refresh token rotation, expiration, and reuse limits.           | OAuth 2.0 Security Best Practices |  
-| Token Rotation          | Periodic replacement of refresh tokens to mitigate long-term exposure.    | NIST SP 800-63B            |  
+## Conceitos-Chave
+| Conceito                 | Definição                                                                   | Fonte                       |
+|---------------------------|------------------------------------------------------------------------------|-----------------------------|
+| Scopes                   | Permissões concedidas a um app (ex.: `read_user`, `write_orders`).           | RFC 6749 §3.3               |
+| Redirect URIs            | URLs para onde o authorization server redireciona após o consentimento do usuário. | RFC 8252 §2.2                |
+| Client ID/Secret         | Credenciais para identificação do app (clientes públicos vs. confidenciais). | RFC 6749 §2.1               |
+| Token Lifetime           | Duração até o access token expirar (tipicamente 1-120 minutos).             | OAuth 2.0 Bearer Token      |
+| Refresh Token            | Token de longa duração para obter novos access tokens sem reautenticar.     | RFC 6749 §6                 |
+| PKCE Code Challenge      | Proof Key for Code Exchange (PKCE) para proteger fluxos de clientes públicos. | RFC 7636                    |
+| Authorization Grant Type | Tipo de fluxo (ex.: Authorization Code, Implicit) que define a emissão do token. | RFC 6749 §1.3                |
+| Token Endpoint Auth      | Método para autenticar o client no token endpoint (ex.: client_secret_post). | RFC 6749 §2.3.1              |
+| Consent Scope            | Escopo de permissões concedidas pelo usuário durante a autorização.          | OpenID Connect Core 1.0     |
+| Token Introspection      | Mecanismo para checar validade e escopo do token.                            | RFC 7662                    |
+| Refresh Policy           | Regras para rotação, expiração e limites de reuso do refresh token.          | OAuth 2.0 Security Best Practices |
+| Token Rotation           | Substituição periódica de refresh tokens para mitigar exposição de longo prazo. | NIST SP 800-63B              |
 
-## Industry Standards  
-- RFC 6749: OAuth 2.0 Authorization Framework  
-- RFC 7636: OAuth 2.0 Proof Key for Code Exchange by OAuth Public Clients (PKCE)  
-- RFC 8252: OAuth 2.0 for Native Apps  
-- OAuth 2.0 Bearer Token Usage (RFC 6750)  
-- OAuth 2.0 Token Introspection (RFC 7662)  
-- OAuth 2.0 Token Revocation (RFC 7009)  
-- OpenID Connect Core 1.0 (OpenID Foundation, not an IETF RFC)  
-- OpenID Connect Discovery 1.0 (.well-known/openid-configuration)  
-- OAuth 2.0 Security Best Current Practice (draft-ietf-oauth-security-topics, BCP)  
-- OAuth 2.1 (draft-ietf-oauth-v2-1: PKCE mandatory, no implicit, no ROPC)  
-- JWT (RFC 7519) and JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)  
-- NIST SP 800-63B: Digital Identity Guidelines  
+## Padrões da Indústria
+- RFC 6749: OAuth 2.0 Authorization Framework
+- RFC 7636: OAuth 2.0 Proof Key for Code Exchange by OAuth Public Clients (PKCE)
+- RFC 8252: OAuth 2.0 for Native Apps
+- OAuth 2.0 Bearer Token Usage (RFC 6750)
+- OAuth 2.0 Token Introspection (RFC 7662)
+- OAuth 2.0 Token Revocation (RFC 7009)
+- OpenID Connect Core 1.0 (OpenID Foundation, não é uma RFC IETF)
+- OpenID Connect Discovery 1.0 (.well-known/openid-configuration)
+- OAuth 2.0 Security Best Current Practice (draft-ietf-oauth-security-topics, BCP)
+- OAuth 2.1 (draft-ietf-oauth-v2-1: PKCE obrigatório, sem implicit, sem ROPC)
+- JWT (RFC 7519) e JWT Profile for OAuth 2.0 Access Tokens (RFC 9068)
+- NIST SP 800-63B: Digital Identity Guidelines
 
-## Common Patterns  
-1. Use scope-based access control for granular permissions.  
-2. Enforce HTTPS for all redirect URIs to prevent interception.  
-3. Set short access token lifetimes with long refresh tokens.  
-4. Implement PKCE for public clients to prevent code interception.  
-5. Use refresh token rotation to limit exposure.  
-6. Define refresh policies with expiration and reuse limits.  
+## Padrões Comuns
+1. Usar controle de acesso baseado em escopo para permissões granulares.
+2. Exigir HTTPS em todos os redirect URIs para evitar interceptação.
+3. Definir access tokens de vida curta com refresh tokens de vida longa.
+4. Implementar PKCE para clientes públicos, prevenindo interceptação do authorization code.
+5. Usar rotação de refresh token para limitar a exposição.
+6. Definir políticas de refresh com expiração e limites de reuso.
 
-## Pitfalls  
-- Overly broad scopes leading to excessive permissions.  
-- Allowing HTTP redirect URIs (vulnerable to MITM attacks).  
-- Not limiting token lifetimes, increasing replay risk.  
-- Misconfigured refresh policies enabling token reuse.  
-- Skipping PKCE in public client flows (exposes authorization codes).
+## Armadilhas
+- Escopos excessivamente amplos, concedendo permissões demais.
+- Permitir redirect URIs em HTTP (vulnerável a ataques MITM).
+- Não limitar o tempo de vida dos tokens, aumentando o risco de replay.
+- Políticas de refresh malconfiguradas que permitem reuso de token.
+- Pular o PKCE em fluxos de clientes públicos (expõe authorization codes).
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

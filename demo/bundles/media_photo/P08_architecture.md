@@ -3,19 +3,18 @@ kind: architecture
 id: bld_architecture_multimodal_prompt
 pillar: P08
 llm_function: CONSTRAIN
-purpose: Component map of multimodal_prompt -- inventory, dependencies
+purpose: Mapa de componentes de multimodal_prompt -- inventário, dependências
 quality: null
 title: "Architecture Multimodal Prompt"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [multimodal_prompt, builder, architecture]
-tldr: "Component map of multimodal_prompt -- inventory, dependencies"
-domain: "multimodal_prompt construction"
+tldr: "Mapa de componentes de multimodal_prompt -- inventário, dependências"
+domain: "construção de multimodal_prompt"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
-keywords: [multimodal_prompt construction, architecture multimodal prompt, multimodal_prompt, builder, architecture, component inventory, architectural position
-the, related artifacts, active, sibling]
+keywords: [construção de multimodal_prompt, architecture multimodal prompt, multimodal_prompt, builder, architecture, inventário de componentes, posição arquitetural, artefatos relacionados, active, sibling]
 density_score: 0.85
 related:
   - bld_architecture_prompt_optimizer
@@ -25,34 +24,34 @@ related:
   - bld_architecture_api_reference
 ---
 
-## Component Inventory
-| ISO Name             | Role                                      | Pillar | Status  |
+## Inventário de Componentes
+| Nome do ISO             | Papel                                      | Pilar | Status  |
 |----------------------|-------------------------------------------|--------|---------|
-| bld_manifest         | Defines structure and metadata            | P03    | Active  |
-| bld_instruction      | Encodes task-specific directives          | P03    | Active  |
-| bld_system_prompt    | Sets overarching behavior guidelines      | P03    | Active  |
-| bld_schema           | Enforces data format consistency          | P03    | Active  |
-| bld_quality_gate     | Validates output compliance               | P03    | Active  |
-| bld_output_template  | Structures final response format          | P03    | Active  |
-| bld_examples         | Provides reference outputs                | P03    | Active  |
-| bld_knowledge_card   | Embeds domain-specific knowledge          | P03    | Active  |
-| bld_architecture     | Maps component interactions              | P03    | Active  |
-| bld_collaboration    | Coordinates multi-agent workflows         | P03    | Active  |
-| bld_config           | Manages runtime parameters                | P03    | Active  |
-| bld_memory           | Stores session-state data                 | P03    | Active  |
-| bld_tools            | Integrates external APIs/functionalities  | P03    | Active  |
+| bld_manifest         | Define estrutura e metadados            | P03    | Ativo  |
+| bld_instruction      | Codifica diretivas específicas da tarefa            | P03    | Ativo  |
+| bld_system_prompt    | Define as diretrizes gerais de comportamento      | P03    | Ativo  |
+| bld_schema           | Reforça a consistência do formato de dados            | P03    | Ativo  |
+| bld_quality_gate     | Valida a conformidade da saída               | P03    | Ativo  |
+| bld_output_template  | Estrutura o formato final da resposta              | P03    | Ativo  |
+| bld_examples         | Fornece saídas de referência                | P03    | Ativo  |
+| bld_knowledge_card   | Incorpora conhecimento específico do domínio          | P03    | Ativo  |
+| bld_architecture     | Mapeia as interações entre componentes              | P03    | Ativo  |
+| bld_collaboration    | Coordena fluxos de trabalho multiagente         | P03    | Ativo  |
+| bld_config           | Gerencia parâmetros de runtime                | P03    | Ativo  |
+| bld_memory           | Armazena dados de estado de sessão                 | P03    | Ativo  |
+| bld_tools            | Integra APIs/funcionalidades externas  | P03    | Ativo  |
 
-## Dependencies
-| From         | To              | Type       |
+## Dependências
+| De         | Para              | Tipo       |
 |--------------|-----------------|------------|
-| bld_manifest | bld_schema      | Definition |
-| bld_instruction | bld_system_prompt | Inheritance |
-| bld_quality_gate | bld_output_template | Validation |
-| bld_knowledge_card | bld_examples | Reference |
-| bld_tools    | llm_engine      | Integration |
+| bld_manifest | bld_schema      | Definição |
+| bld_instruction | bld_system_prompt | Herança |
+| bld_quality_gate | bld_output_template | Validação |
+| bld_knowledge_card | bld_examples | Referência |
+| bld_tools    | llm_engine      | Integração |
 
-## Architectural Position
-The multimodal_prompt serves as the central orchestrator in P03, synthesizing heterogeneous modalities (text, data, logic) into coherent prompts. It acts as the nexus for quality assurance, collaboration, and schema enforcement, enabling CEX systems to generate robust, context-aware outputs while adhering to domain-specific constraints and interoperability standards.
+## Posição Arquitetural
+O multimodal_prompt atua como o orquestrador central no P03, sintetizando modalidades heterogêneas (texto, dado, lógica) em prompts coerentes. Funciona como o elo central de garantia de qualidade, colaboração e reforço de schema, permitindo que os sistemas CEX gerem saídas robustas e sensíveis ao contexto, respeitando restrições específicas de domínio e padrões de interoperabilidade.
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

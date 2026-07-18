@@ -3,14 +3,14 @@ kind: schema
 id: bld_schema_competitive_matrix
 pillar: P06
 llm_function: CONSTRAIN
-purpose: Formal schema -- SINGLE SOURCE OF TRUTH for competitive_matrix
+purpose: Schema formal -- FONTE ÚNICA DA VERDADE para competitive_matrix
 quality: null
 title: "Schema Competitive Matrix"
 version: "1.1.0"
 author: wave1_builder_gen_v2
 tags: [competitive_matrix, builder, schema]
-tldr: "Formal schema -- feature-parity grid + battle card + Gartner MQ positioning for competitive_matrix."
-domain: "competitive_matrix construction"
+tldr: "Schema formal -- feature-parity grid + battle card + posicionamento Gartner MQ para competitive_matrix."
+domain: "construção de competitive_matrix"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
@@ -24,57 +24,57 @@ related:
   - bld_schema_integration_guide
 ---
 
-## Frontmatter Fields
-### Required
-| Field | Type | Required | Default | Notes |
+## Campos do Frontmatter
+### Obrigatórios
+| Campo | Tipo | Obrigatório | Padrão | Notas |
 |-------|------|----------|---------|-------|
-| id | string | yes | | Must match ID Pattern |
-| kind | string | yes | | Always "competitive_matrix" |
-| pillar | string | yes | | P01 |
-| title | string | yes | | "{Market Segment} Competitive Matrix" |
-| version | string | yes | | Artifact version (e.g., "1.0.0") |
-| created | string | yes | | ISO 8601 YYYY-MM-DD |
-| updated | string | yes | | ISO 8601 YYYY-MM-DD |
-| author | string | yes | | Analyst username |
-| domain | string | yes | | Market domain |
-| quality | null | yes | null | Never self-score; peer review assigns |
-| tags | list | yes | | Market segment, competitive_matrix |
-| tldr | string | yes | | "Our product vs N competitors on M dimensions" |
-| competitors | list | yes | | Named vendors (min 3) |
-| metrics | list | yes | | Capability dimensions compared |
-| analysis_date | string | yes | | ISO 8601 YYYY-MM-DD of data collection |
-| key_insights | string | yes | | Top differentiator in one sentence |
+| id | string | sim | | Deve corresponder ao Padrão de ID |
+| kind | string | sim | | Sempre "competitive_matrix" |
+| pillar | string | sim | | P01 |
+| title | string | sim | | "Matriz Competitiva de {Segmento de Mercado}" |
+| version | string | sim | | Versão do artefato (ex.: "1.0.0") |
+| created | string | sim | | ISO 8601 AAAA-MM-DD |
+| updated | string | sim | | ISO 8601 AAAA-MM-DD |
+| author | string | sim | | Usuário do analista |
+| domain | string | sim | | Domínio de mercado |
+| quality | null | sim | null | Nunca se autoavalia; peer review atribui |
+| tags | list | sim | | Segmento de mercado, competitive_matrix |
+| tldr | string | sim | | "Nosso produto vs N concorrentes em M dimensões" |
+| competitors | list | sim | | Fornecedores nomeados (mínimo 3) |
+| metrics | list | sim | | Dimensões de capacidade comparadas |
+| analysis_date | string | sim | | ISO 8601 AAAA-MM-DD da coleta de dados |
+| key_insights | string | sim | | Principal diferencial em uma frase |
 
-### Recommended
-| Field | Type | Notes |
+### Recomendados
+| Campo | Tipo | Notas |
 |-------|------|-------|
-| primary_competitor | string | Competitor most frequently in evaluated deals |
-| data_sources | list | Source names with access dates |
-| reviewers | list | Peer reviewer usernames |
+| primary_competitor | string | Concorrente mais frequente nos negócios avaliados |
+| data_sources | list | Nomes das fontes com datas de acesso |
+| reviewers | list | Usuários dos revisores pares |
 
-## ID Pattern
+## Padrão de ID
 ^p01_cm_[a-z][a-z0-9_]+\\.md$
 
-## Body Structure
-1. **Market Context** -- Segment, analysis date, data sources, analyst
-2. **Feature Parity Grid** -- Rows = capabilities, cols = us + competitors; Yes/No/Partial/Roadmap Q# YYYY
-3. **Gartner MQ Positioning** -- Ability to Execute (1-5) x Completeness of Vision (1-5) per vendor
-4. **Battle Card** -- Us vs primary competitor: capability, our strength, their weakness, win reason
-5. **Pricing Comparison** -- Entry/mid/enterprise tiers + pricing model per vendor
-6. **Strategic Insights** -- Top 3 differentiators, 2 gaps, anti-FUD guide
+## Estrutura do Corpo
+1. **Contexto de Mercado** -- Segmento, data da análise, fontes de dados, analista
+2. **Feature Parity Grid** -- Linhas = capacidades, colunas = nos + concorrentes; Sim/Não/Parcial/Roadmap Q# AAAA
+3. **Posicionamento Gartner MQ** -- Capacidade de Execução (1-5) x Completude de Visão (1-5) por fornecedor
+4. **Battle Card** -- Nos vs concorrente primário: capacidade, nossa força, fraqueza deles, razão de vitória
+5. **Comparação de Preços** -- Camadas entrada/intermediária/enterprise + modelo de precificação por fornecedor
+6. **Insights Estratégicos** -- Top 3 diferenciais, 2 lacunas, guia anti-FUD
 
-## Constraints
-- ID must match ^p01_cm_[a-z][a-z0-9_]+\\.md$ exactly.
-- analysis_date must be ISO 8601 format.
-- competitors list must name at least 3 vendors (no placeholder names).
-- File size must not exceed 5120 bytes.
-- quality field must be null (peer-reviewed only).
-- All capability values must use: Yes / No / Partial / Roadmap Q# YYYY (no vague adjectives).
-- All claims must cite a primary source with access date.
-- Roadmap items must include target quarter and year.
+## Restrições
+- O ID deve corresponder exatamente a ^p01_cm_[a-z][a-z0-9_]+\\.md$.
+- analysis_date deve estar no formato ISO 8601.
+- A lista competitors deve nomear pelo menos 3 fornecedores (sem nomes placeholder).
+- O tamanho do arquivo não deve exceder 5120 bytes.
+- O campo quality deve ser null (somente peer review).
+- Todos os valores de capacidade devem usar: Sim / Não / Parcial / Roadmap Q# AAAA (nunca adjetivos vagos).
+- Toda alegação deve citar uma fonte primária com data de acesso.
+- Itens de roadmap devem incluir trimestre-alvo e ano.
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | bld_schema_usage_report | sibling | 0.64 |
 | bld_schema_pitch_deck | sibling | 0.63 |

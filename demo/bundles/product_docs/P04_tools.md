@@ -3,14 +3,14 @@ kind: tools
 id: bld_tools_knowledge_card
 pillar: P04
 llm_function: CALL
-purpose: Tools and APIs available for knowledge_card production
+purpose: Ferramentas e APIs disponíveis para a produção de knowledge_card
 quality: null
 title: "Tools Knowledge Card"
 version: "1.0.0"
 author: n03_builder
 tags: [knowledge_card, builder, examples]
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos ideais e anti-exemplos para a construção de knowledge_card, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F5_call"
@@ -24,15 +24,15 @@ related:
   - bld_tools_golden_test
 ---
 
-# Tools: knowledge-card-builder
-## Production Tools
-| Tool | Purpose | When | Status |
+# Ferramentas: knowledge-card-builder
+## Ferramentas de Produção
+| Ferramenta | Propósito | Quando | Status |
 |------|---------|------|--------|
-| validate_kc.py | Validate KC: 10 HARD + 20 SOFT gates | Phase 3 | CONDITIONAL |
-| brain_query [MCP] | Search existing KCs in pool | Phase 1 | CONDITIONAL |
-| validate_artifact.py | Generic artifact validator | — | [PLANNED] |
-| cex_forge.py | Generate artifact from seeds | Alt compose | [PLANNED] |
-## validate_kc.py Usage
+| validate_kc.py | Validar o KC: gates 10 HARD + 20 SOFT | Fase 3 | CONDITIONAL |
+| brain_query [MCP] | Buscar KCs existentes no pool | Fase 1 | CONDITIONAL |
+| validate_artifact.py | Validador genérico de artefatos | -- | [PLANNED] |
+| cex_forge.py | Gerar artefato a partir de seeds | Composição alternativa | [PLANNED] |
+## Uso do validate_kc.py
 ```bash
 # Single file
 python _tools/validate_kc.py path/to/p01_kc_topic.md
@@ -41,38 +41,38 @@ python _tools/validate_kc.py P01_knowledge/examples/ --summary
 # JSON output (machine-readable)
 python _tools/validate_kc.py path/to/file.md --json
 ```
-Output: HARD pass/fail + SOFT score 0-10 + verdict.
-Fix suggestions provided for failed gates.
-## brain_query Usage
+Saída: HARD pass/fail + pontuação SOFT 0-10 + veredito.
+Sugestões de correção são fornecidas para os gates que falharem.
+## Uso do brain_query
 ```python
 brain_query("knowledge card about {topic}")
 # Returns: existing KCs matching topic
 # Purpose: avoid duplicates, find linked_artifacts
 ```
-## Data Sources
-| Source | Path | Data |
+## Fontes de Dados
+| Fonte | Caminho | Dados |
 |--------|------|------|
-| CEX Schema | P01_knowledge/_schema.yaml | KC field definitions |
-| CEX Examples | P01_knowledge/examples/ | 63+ real KCs |
-| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Fillable template |
-| CEX Pool | artifacts/ (source repository) | 1957+ published artifacts |
-## Tool Permissions
+| CEX Schema | P01_knowledge/_schema.yaml | Definições de campos do KC |
+| CEX Examples | P01_knowledge/examples/ | 63+ KCs reais |
+| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Template preenchível |
+| CEX Pool | artifacts/ (repositório fonte) | 1957+ artefatos publicados |
+## Permissões de Ferramentas
 
-| Category | Tools | Status |
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitamente permitido |
+| DENIED | (nenhuma) | Explicitamente bloqueado |
+| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED menos DENIED |
 
-## Interim Validation
-validate_kc.py is ACTIVE — always run before committing.
-No manual gate-checking needed (unlike model-card-builder).
+## Validação Intermediária
+validate_kc.py está ATIVO -- rode sempre antes de commitar.
+Não precisa checar gates manualmente (diferente do model-card-builder).
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
-| [[bld_tools_validation_schema]] | sibling | 0.50 |
-| bld_tools_quality_gate | sibling | 0.46 |
-| [[bld_tools_scoring_rubric]] | sibling | 0.45 |
-| [[bld_tools_retriever_config]] | sibling | 0.44 |
-| [[bld_tools_golden_test]] | sibling | 0.43 |
+| [[bld_tools_validation_schema]] | irmão | 0.50 |
+| bld_tools_quality_gate | irmão | 0.46 |
+| [[bld_tools_scoring_rubric]] | irmão | 0.45 |
+| [[bld_tools_retriever_config]] | irmão | 0.44 |
+| [[bld_tools_golden_test]] | irmão | 0.43 |

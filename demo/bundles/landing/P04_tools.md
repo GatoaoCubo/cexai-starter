@@ -5,15 +5,15 @@ pillar: P04
 builder: landing-page-builder
 version: 1.0.0
 quality: null
-title: "Tools Landing Page"
+title: "Ferramentas Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F5_call"
-keywords: [landing page construction, tools landing page, landing_page, builder, examples, brand_config_reader, cex_query.py, cex_retriever.py, browser_playwright, browser_design_extractor]
+keywords: [construção de landing page, tools landing page, landing_page, builder, examples, brand_config_reader, cex_query.py, cex_retriever.py, browser_playwright, browser_design_extractor]
 density_score: 0.90
 llm_function: CALL
 related:
@@ -21,33 +21,34 @@ related:
   - bld_schema_landing_page
   - bld_architecture_landing_page
 ---
-# Tools: Landing Page Builder
+# Ferramentas: Landing Page Builder
 
-## Required Tools
-1. `brand_config_reader`: Read design tokens from .cex/brand/brand_config.yaml
-2. `cex_query.py`: Find tagline-builder output, pricing data, brand artifacts
-3. `cex_retriever.py`: Search existing page templates and design patterns
+## Ferramentas Obrigatórias
+1. `brand_config_reader`: lê os design tokens de .cex/brand/brand_config.yaml
+2. `cex_query.py`: encontra a saída do tagline-builder, dados de preço, artefatos de marca
+3. `cex_retriever.py`: busca templates de página e padrões de design existentes
 
-## Construction Tools (available in stack)
-1. `browser_playwright`: Preview generated page, take screenshots, test responsive
-2. `browser_design_extractor`: Extract design tokens from reference URLs
-3. `computer_use`: Visual validation of rendered page (optional)
+## Ferramentas de Construção (disponíveis na stack)
+1. `browser_playwright`: pré-visualiza a página gerada, tira screenshots, testa responsividade
+2. `browser_design_extractor`: extrai design tokens de URLs de referência
+3. `computer_use`: validação visual da página renderizada (opcional)
 
-## Reference Tools
-1. `browser_web_scraping`: Analyze competitor landing pages for inspiration
-2. `browser_awesome_list`: Find design resources, icon sets, font pairings
+## Ferramentas de Referência
+1. `browser_web_scraping`: analisa landing pages de concorrentes em busca de inspiração
+2. `browser_awesome_list`: encontra recursos de design, sets de ícones, combinações de fontes
 
-## No Build Dependencies for HTML Output
-Default HTML+Tailwind CDN output requires ZERO build tools. User saves file and deploys.
-React/Next.js outputs require user's existing project setup.
+## Sem Dependências de Build para Saída em HTML
+A saída padrão HTML+Tailwind CDN não exige NENHUMA ferramenta de build. O usuário salva
+o arquivo e faz o deploy. Saídas em React/Next.js exigem o setup de projeto que o usuário
+já tiver.
 
-## Tool Permissions
-1. READ: brand config, existing artifacts, competitor pages, design resources
-2. WRITE: output files only (landing page HTML/JSX + compiled YAML)
-3. EXECUTE: preview tools (browser_playwright, browser_design_extractor)
-4. DENY: no database writes, no deployment, no external API mutations
+## Permissões de Ferramentas
+1. LEITURA: brand config, artefatos existentes, páginas de concorrentes, recursos de design
+2. ESCRITA: somente arquivos de saída (HTML/JSX da landing page + YAML compilado)
+3. EXECUÇÃO: ferramentas de preview (browser_playwright, browser_design_extractor)
+4. NEGADO: sem escrita em banco de dados, sem deploy, sem mutação em APIs externas
 
-## Metadata
+## Metadados
 
 ```yaml
 id: bld_tools_landing_page
@@ -59,22 +60,22 @@ scoring: hybrid_3_layer
 python _tools/cex_score.py --apply bld-tools-landing-page.md
 ```
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `tools` |
 | Pillar | P04 |
-| Domain | landing page construction |
+| Domain | construção de landing page |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[bld_orchestration_landing_page]] | downstream | 0.46 |
 | [[bld_memory_landing_page]] | downstream | 0.42 |

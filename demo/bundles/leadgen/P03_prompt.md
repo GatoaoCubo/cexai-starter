@@ -3,15 +3,15 @@ kind: instruction
 id: bld_instruction_research_pipeline
 pillar: P03
 llm_function: REASON
-purpose: Step-by-step production process for research pipeline artifacts
-pattern: 3-phase pipeline (research -> compose -> validate)
+purpose: Processo de produção passo a passo para artefatos de research pipeline
+pattern: pipeline de 3 fases (pesquisar -> compor -> validar)
 quality: null
-title: "Instruction Research Pipeline"
+title: "Instruções: Pipeline de Pesquisa"
 version: "1.0.0"
 author: n03_builder
 tags: [research_pipeline, builder, examples]
-tldr: "Golden and anti-examples for research pipeline construction, demonstrating ideal structure and common pitfalls."
-domain: "research pipeline construction"
+tldr: "Exemplos-modelo e anti-exemplos para a construção de pipelines de pesquisa, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de pipeline de pesquisa"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F6_produce"
@@ -20,47 +20,47 @@ density_score: 0.90
 related:
   - research-pipeline-builder
 ---
-# Instructions: How to Produce a research_pipeline
+# Instruções: Como Produzir um research_pipeline
 
-## Phase 1: RESEARCH
-1. Identify target business: niche, country, language, marketplace landscape
-2. Catalog available data sources by category (inbound/outbound/search/trends/RAG)
-3. For each source: document API, auth, rate limit, cost, data quality
-4. Define STORM perspectives relevant to the niche (5 expert angles)
-5. Choose multi-model routing: which model handles which stage/domain
-6. Set budget constraints: monthly caps, per-research limits, credit pools
-7. Define output requirements: formats (HTML/PPTX/JSON), language, template style
-8. Check existing research_pipeline artifacts to avoid config overlap
+## Fase 1: PESQUISAR
+1. Identifique o negócio-alvo: nicho, país, idioma, panorama de marketplaces
+2. Catalogue as fontes de dados disponíveis por categoria (inbound/outbound/search/trends/RAG)
+3. Para cada fonte: documente API, autenticação, rate limit, custo, qualidade dos dados
+4. Defina perspectivas STORM relevantes para o nicho (5 ângulos de especialista)
+5. Escolha o roteamento multi-modelo: qual modelo cuida de qual etapa/domínio
+6. Defina restrições de orçamento: tetos mensais, limites por pesquisa, pools de créditos
+7. Defina os requisitos de output: formatos (HTML/PPTX/JSON), idioma, estilo de template
+8. Verifique artefatos research_pipeline existentes para evitar sobreposição de config
 
-## Phase 2: COMPOSE
-1. Read bld_schema_research_pipeline.md — source of truth for config fields
-2. Read bld_output_template_research_pipeline.md — template structure
-3. Fill frontmatter: id, kind, pillar, title, version, quality: null
-4. Write Pipeline section: 7 stages with detail per stage:
-   - **Stage 1 INTENT**: classify domain, verb, complexity → route
-   - **Stage 2 PLAN (STORM)**: 5 perspectives × 5-7 sub-questions each
-   - **Stage 3 RETRIEVE (CRAG)**: parallel fetch from sources, quality gate per result
-   - **Stage 4 RESOLVE**: entity dedup cross-source (EAN/GTIN/title similarity)
-   - **Stage 5 SCORE**: Gartner 7-dimension scoring per listing/result
-   - **Stage 6 SYNTHESIZE (GoT)**: Graph-of-Thoughts merge via domain-specific models
-   - **Stage 7 VERIFY (CRITIC)**: thinking model verifies, correct (max 3 iterations)
-5. Write Source Catalog: all sources grouped by category
-6. Write Config Schema: all variable fields grouped by section
-7. Write Multi-Model Routing: model per stage/domain with cost rationale
-8. Write Budget Controls: monthly caps, per-research limits
-9. Write Quality Gates: CRAG thresholds, CRITIC iterations, final minimum
-10. Ensure zero hardcoded country/marketplace names — ALL via config
+## Fase 2: COMPOR
+1. Leia bld_schema_research_pipeline.md -- fonte da verdade para os campos de config
+2. Leia bld_output_template_research_pipeline.md -- estrutura do template
+3. Preencha o frontmatter: id, kind, pillar, title, version, quality: null
+4. Escreva a seção Pipeline: 7 etapas com detalhe por etapa:
+   - **Etapa 1 INTENT**: classifica domínio, verbo, complexidade → rota
+   - **Etapa 2 PLAN (STORM)**: 5 perspectivas × 5-7 subperguntas cada
+   - **Etapa 3 RETRIEVE (CRAG)**: busca paralela nas fontes, gate de qualidade por resultado
+   - **Etapa 4 RESOLVE**: dedup de entidades cross-fonte (similaridade de EAN/GTIN/título)
+   - **Etapa 5 SCORE**: pontuação em 7 dimensões Gartner por listagem/resultado
+   - **Etapa 6 SYNTHESIZE (GoT)**: merge Graph-of-Thoughts via modelos específicos do domínio
+   - **Etapa 7 VERIFY (CRITIC)**: modelo de raciocínio verifica e corrige (max 3 iterações)
+5. Escreva o Catálogo de Fontes: todas as fontes agrupadas por categoria
+6. Escreva o Schema de Config: todos os campos variáveis agrupados por seção
+7. Escreva o Roteamento Multi-Modelo: modelo por etapa/domínio com justificativa de custo
+8. Escreva os Controles de Orçamento: tetos mensais, limites por pesquisa
+9. Escreva os Gates de Qualidade: limiares de CRAG, iterações de CRITIC, mínimo final
+10. Garanta zero nomes de país/marketplace hardcoded -- TUDO via config
 
-## Phase 3: VALIDATE
-1. Check all 7 pipeline stages documented with input/output/model
-2. Verify source catalog covers 4 categories (inbound, outbound, search, trends)
-3. Verify no API keys in plaintext — only ENV_VAR references
-4. Verify STORM perspectives are costmizable (not hardcoded)
-5. Verify budget controls present (monthly + per-research)
-6. Verify CRAG quality gate has minimum score threshold
-7. Verify CRITIC has max iterations defined
-8. Verify multi-model routing specifies model per stage
-9. Check body <= 4096 bytes per file
+## Fase 3: VALIDAR
+1. Verifique se as 7 etapas do pipeline estão documentadas com entrada/saída/modelo
+2. Verifique se o catálogo de fontes cobre 4 categorias (inbound, outbound, search, trends)
+3. Verifique que não há chaves de API em texto plano -- apenas referências a ENV_VAR
+4. Verifique se as perspectivas STORM são personalizáveis (não hardcoded)
+5. Verifique se os controles de orçamento estão presentes (mensal + por pesquisa)
+6. Verifique se o gate de qualidade do CRAG tem um limiar mínimo de nota
+7. Verifique se o CRITIC tem o número máximo de iterações definido
+8. Verifique se o roteamento multi-modelo especifica o modelo por etapa
+9. Verifique se o corpo tem <= 4096 bytes por arquivo
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

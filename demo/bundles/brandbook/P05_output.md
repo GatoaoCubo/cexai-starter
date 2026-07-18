@@ -11,14 +11,18 @@ tags: [response_format, brandbook, P05, output]
 llm_function: PRODUCE
 created: 2026-06-22
 updated: 2026-06-22
+related:
+  - bld_prompt_brandbook
+  - kc_brandbook
+  - bld_schema_brandbook
 ---
 
-## Output Contract
+## Contrato de Saída
 
-### File Naming
+### Nomenclatura de Arquivo
 `p05_bb_{brand_slug}.md`
 
-### Frontmatter (required)
+### Frontmatter (obrigatório)
 ```yaml
 ---
 id: p05_bb_{brand_slug}
@@ -32,41 +36,49 @@ created: {YYYY-MM-DD}
 ---
 ```
 
-### 8 Sections (frozen layout)
+### 8 Seções (layout fixo)
 
-1. **Identidade da Marca** -- layout: fields
-   Rows: Nome da marca, Essencia, Proposta de valor, Posicionamento, Missao, Valores
+1. **Identidade da Marca** -- layout: campos
+   Linhas: Nome da marca, Essência, Proposta de valor, Posicionamento, Missão, Valores
 
-2. **Paleta de Cores** -- layout: table
-   Columns: Funcao | Hex | Contraste | Uso principal
-   Rows: Primaria, Secundaria, Destaque/Accent, Neutra, Fundo
+2. **Paleta de Cores** -- layout: tabela
+   Colunas: Função | Hex | Contraste | Uso principal
+   Linhas: Primária, Secundária, Destaque, Neutra, Fundo
 
-3. **Tipografia** -- layout: fields
-   Rows: Primaria (headings), Secundaria (corpo), Display/especial, Escala de tamanhos
+3. **Tipografia** -- layout: campos
+   Linhas: Primária (títulos), Secundária (corpo), Display/especial, Escala de tamanhos
 
-4. **Persona da Marca** -- layout: fields
-   Rows: Arquetipo, Voz da marca, Tom geral, Tom em crises,
-         Copy sample 1 (headline), Copy sample 2 (beneficio), Copy sample 3 (CTA)
+4. **Persona da Marca** -- layout: campos
+   Linhas: Arquétipo, Voz da marca, Tom geral, Tom em crises,
+           Exemplo de copy 1 (headline), Exemplo de copy 2 (benefício), Exemplo de copy 3 (CTA)
 
-5. **Uso do Logotipo** -- layout: list
-   Items: versao principal, versao escura, espaco protecao, tamanho minimo,
-          distorcoes proibidas, versoes nao aprovadas
+5. **Uso do Logotipo** -- layout: lista
+   Itens: versão principal, versão escura, espaço de proteção, tamanho mínimo,
+          distorções proibidas, versões não aprovadas
 
-6. **Estilo de Imagem** -- layout: fields
-   Rows: Mood geral, Estilo de fotografia, Paleta de filtros, Elementos proibidos
+6. **Estilo de Imagem** -- layout: campos
+   Linhas: Mood geral, Estilo de fotografia, Paleta de filtros, Elementos proibidos
 
-7. **Framework de Mensagem** -- layout: table
-   Columns: Mensagem | Publico-alvo | Canal | Prioridade
+7. **Framework de Mensagem** -- layout: tabela
+   Colunas: Mensagem | Público-alvo | Canal | Prioridade
 
-8. **Dos e Nao-Faca** -- layout: table
-   Columns: Fazer | Nao Fazer
+8. **Faça e Não Faça** -- layout: tabela
+   Colunas: Fazer | Não Fazer
 
-### Honest Placeholder Convention
-Any field without source data: `[fornecer: {description}]`
-Example: `[fornecer: essencia em 1 frase -- ex. 'Conforto premium para pets']`
+### Convenção do Placeholder Honesto
+Qualquer campo sem dado de origem: `[fornecer: {description}]`
+Exemplo: `[fornecer: essência em 1 frase -- ex. 'Conforto premium para pets']`
 
-### Never-Fabricate Guarantee
-- No invented brand colors
-- No invented font names
-- No invented copy samples
-- No invented conversion metrics
+### Garantia Nunca-Fabricar
+- Nenhuma cor de marca inventada
+- Nenhum nome de fonte inventado
+- Nenhum exemplo de copy inventado
+- Nenhuma métrica de conversão inventada
+
+## Related Artifacts
+
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_prompt_brandbook]] | upstream | 0.23 |
+| [[kc_brandbook]] | related | 0.19 |
+| [[bld_schema_brandbook]] | downstream | 0.18 |

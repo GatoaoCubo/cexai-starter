@@ -3,18 +3,18 @@ kind: output_template
 id: bld_output_template_subscription_tier
 pillar: P05
 llm_function: PRODUCE
-purpose: Template with vars for subscription_tier production
+purpose: "Template com variáveis para a produção de subscription_tier"
 quality: null
 title: "Output Template Subscription Tier"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [subscription_tier, builder, output_template]
-tldr: "Template with vars for subscription_tier production"
-domain: "subscription_tier construction"
+tldr: "Template com variáveis para a produção de subscription_tier"
+domain: "construção de subscription_tier"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F6_produce"
-keywords: [subscription_tier construction, output template subscription tier, subscription_tier, builder, output_template, tier name, tier level, related artifacts, features pricing, downstream]
+keywords: [construção de subscription_tier, output template subscription tier, subscription_tier, builder, output_template, nome do tier, nível do tier, related artifacts, funcionalidades e preço]
 density_score: 0.85
 related:
   - kc_subscription_tier
@@ -33,22 +33,22 @@ quality: null
 ---
 ```
 
-<!-- id: Generated filename following p11_st_[a-z][a-z0-9_]+.yaml pattern -->
-<!-- name: Human-readable tier name (e.g., "Premium") -->
-<!-- description: Brief explanation of tier benefits -->
-<!-- features: Array of 2-5 bullet points describing included features -->
-<!-- pricing: Numerical value or "Free" -->
-<!-- tier_level: Numerical value (1=lowest, 5=highest) -->
-<!-- quality: Always null -->
+<!-- id: nome de arquivo gerado seguindo o padrao p11_st_[a-z][a-z0-9_]+.yaml -->
+<!-- name: nome do tier legivel por humanos (ex.: "Premium") -->
+<!-- description: explicacao breve dos beneficios do tier -->
+<!-- features: array de 2-5 bullets descrevendo as funcionalidades incluidas -->
+<!-- pricing: valor numerico ou "Free" -->
+<!-- tier_level: valor numerico (1=mais baixo, 5=mais alto) -->
+<!-- quality: sempre null -->
 
-| Tier Name   | Features                  | Pricing  | Tier Level |
+| Nome do Tier | Funcionalidades | Preço | Nível do Tier |
 |-------------|---------------------------|----------|------------|
-| Basic       | 10 API calls/day          | $9.99    | 1          |
-| Pro         | 100 API calls/day, support | $49.99   | 3          |
-| Enterprise  | Unlimited, dedicated team | Custom   | 5          |
+| Basic       | 10 chamadas de API/dia    | $9.99    | 1          |
+| Pro         | 100 chamadas de API/dia, suporte | $49.99   | 3          |
+| Enterprise  | Ilimitado, equipe dedicada | Custom   | 5          |
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[bld_prompt_subscription_tier]] | upstream | 0.33 |
 | [[kc_subscription_tier]] | upstream | 0.30 |

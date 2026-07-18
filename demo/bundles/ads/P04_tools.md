@@ -37,66 +37,66 @@ related:
   - bld_tools_naming_rule
 ---
 
-# Tools — prompt-template-builder
-## Tool Registry
-| Tool | Status | Tag | Purpose |
+# Ferramentas -- prompt-template-builder
+## Registro de Ferramentas
+| Ferramenta | Status | Tag | Propósito |
 |---|---|---|---|
-| brain_query | CONDITIONAL | [MCP] | Discover existing templates and variable patterns |
-| Read | ACTIVE | [FS] | Read SCHEMA.md, OUTPUT_TEMPLATE.md, sibling examples |
-| Glob | ACTIVE | [FS] | Find existing p03_pt_* files in the pool |
-| Grep | ACTIVE | [FS] | Search for variable name collisions or pattern reuse |
-| Write | ACTIVE | [FS] | Produce the final prompt_template artifact |
-| Edit | ACTIVE | [FS] | Patch frontmatter or template body during VALIDATE phase |
-## Tool Descriptions
-### brain_query [MCP] — CONDITIONAL
-Available only when the Brain MCP server is running. Use to:
-- Find existing `prompt_template` artifacts that overlap with the requested topic
-- Retrieve variable naming conventions used in the pool
-- Identify composable partials that could be referenced
+| brain_query | CONDICIONAL | [MCP] | Descobrir templates existentes e padrões de variável |
+| Read | ATIVA | [FS] | Ler SCHEMA.md, OUTPUT_TEMPLATE.md, exemplos irmãos |
+| Glob | ATIVA | [FS] | Encontrar arquivos p03_pt_* existentes no pool |
+| Grep | ATIVA | [FS] | Buscar colisões de nome de variável ou reuso de padrão |
+| Write | ATIVA | [FS] | Produzir o artefato final prompt_template |
+| Edit | ATIVA | [FS] | Corrigir frontmatter ou corpo do template durante a fase VALIDATE |
+## Descrição das Ferramentas
+### brain_query [MCP] -- CONDICIONAL
+Disponível apenas quando o servidor Brain MCP está rodando. Use para:
+- Encontrar artefatos `prompt_template` existentes que se sobrepõem ao tópico pedido
+- Recuperar convenções de nomenclatura de variável usadas no pool
+- Identificar partials composáveis que poderiam ser referenciados
 ```
 brain_query("prompt template {{topic}} variables")
 brain_query("P03 kind:prompt_template domain:{{domain}}")
 brain_query("reusable mold {{keyword}} CEX")
 ```
-Mark results as advisory — do not copy-paste variable names without validating types.
-### Read [FS] — ACTIVE
-Read before composing:
-- `SCHEMA.md` — source of truth for all field definitions
-- `OUTPUT_TEMPLATE.md` — exact frontmatter and body structure to follow
-- `QUALITY_GATES.md` — gate list to validate against
-- Sibling p03_pt_* files for naming and style reference
-### Glob [FS] — ACTIVE
+Marque os resultados como consultivos -- não copie e cole nomes de variável sem validar os tipos.
+### Read [FS] -- ATIVA
+Leia antes de compor:
+- `SCHEMA.md` -- fonte da verdade para todas as definições de campo
+- `OUTPUT_TEMPLATE.md` -- estrutura exata de frontmatter e corpo a seguir
+- `QUALITY_GATES.md` -- lista de gates para validar
+- Arquivos irmãos p03_pt_* como referência de nomenclatura e estilo
+### Glob [FS] -- ATIVA
 ```
 artifacts/**/p03_pt_*.md
 archetypes/builders/prompt-template-builder/
 ```
-Use to check for ID collisions before assigning a new `id`.
-### Grep [FS] — ACTIVE
+Use para checar colisões de ID antes de atribuir um novo `id`.
+### Grep [FS] -- ATIVA
 ```
 grep pattern: "{{variable_name}}"  -- check if a variable name is already standardized
 grep pattern: "kind: prompt_template" -- inventory existing templates
 ```
-### Write [FS] — ACTIVE
-Final delivery tool. Write the completed artifact to its target path under `artifacts/` or the caller-specified output path.
-### Edit [FS] — ACTIVE
-Use during VALIDATE phase to patch specific fields (quality score, updated date, variable defaults) without rewriting the full file.
-## Data Sources
-| Source | Content | When to use |
+### Write [FS] -- ATIVA
+Ferramenta de entrega final. Escreve o artefato completo no caminho alvo, sob `artifacts/` ou no caminho de saída especificado por quem chama.
+### Edit [FS] -- ATIVA
+Use durante a fase VALIDATE para corrigir campos específicos (nota de qualidade, data de updated, defaults de variável) sem reescrever o arquivo inteiro.
+## Fontes de Dados
+| Fonte | Conteúdo | Quando usar |
 |---|---|---|
-| SCHEMA.md | Field definitions, ID pattern, constraints | Every production run |
-| OUTPUT_TEMPLATE.md | Exact frontmatter + body structure | Every production run |
-| QUALITY_GATES.md | H01-H08 HARD, S01-S10 SOFT | Every validation run |
-| KNOWLEDGE.md | Industry implementations, syntax tiers | When choosing variable_syntax |
-| MEMORY.md | Common mistakes, anti-patterns | When stuck or producing a variant |
-| pool p03_pt_* files | Reference examples | When uncertain about style |
+| SCHEMA.md | Definições de campo, padrão de ID, restrições | Toda execução de produção |
+| OUTPUT_TEMPLATE.md | Estrutura exata de frontmatter + corpo | Toda execução de produção |
+| QUALITY_GATES.md | H01-H08 HARD, S01-S10 SOFT | Toda execução de validação |
+| KNOWLEDGE.md | Implementações de mercado, tiers de sintaxe | Ao escolher o variable_syntax |
+| MEMORY.md | Erros comuns, anti-padrões | Quando travado ou produzindo uma variante |
+| arquivos p03_pt_* do pool | Exemplos de referência | Quando houver dúvida sobre estilo |
 
-## Tool Permissions
+## Permissões de Ferramentas
 
-| Category | Tools | Status |
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| PERMITIDAS | Read, Write, Edit, Bash, Glob, Grep | Explicitamente permitidas |
+| NEGADAS | (nenhuma) | Explicitamente bloqueadas |
+| EFETIVAS | Bash, Edit, Glob, Grep, Read, Write | PERMITIDAS menos NEGADAS |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

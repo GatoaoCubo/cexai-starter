@@ -3,15 +3,15 @@ kind: schema
 id: bld_schema_research_pipeline
 pillar: P06
 llm_function: CONSTRAIN
-purpose: Formal schema — SINGLE SOURCE OF TRUTH for research_pipeline config
-pattern: CONFIG derives from this. TEMPLATE renders this.
+purpose: Schema formal -- FONTE ÚNICA DA VERDADE para a config do research_pipeline
+pattern: CONFIG deriva disto. TEMPLATE renderiza isto.
 quality: null
-title: "Schema Research Pipeline"
+title: "Schema: Pipeline de Pesquisa"
 version: "1.0.0"
 author: n03_builder
 tags: [research_pipeline, builder, examples]
-tldr: "Golden and anti-examples for research pipeline construction, demonstrating ideal structure and common pitfalls."
-domain: "research pipeline construction"
+tldr: "Exemplos-modelo e anti-exemplos para a construção de pipelines de pesquisa, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de pipeline de pesquisa"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
@@ -26,75 +26,75 @@ related:
 
 # Schema: research_pipeline
 
-## Config Schema (the YAML every company fills)
+## Schema de Config (o YAML que toda empresa preenche)
 
-### identity (required)
-| Field | Type | Required | Example |
+### identity (obrigatório)
+| Campo | Tipo | Obrigatório | Exemplo |
 |-------|------|----------|---------|
-| empresa | string | YES | "ACME" |
-| nicho | string | YES | "pet_ecommerce" |
-| idioma | enum(pt-BR,en,es,fr,de) | YES | "pt-BR" |
-| pais | enum(BR,US,EU,UK,LATAM,APAC,costm) | YES | "BR" |
+| empresa | string | SIM | "ACME" |
+| nicho | string | SIM | "pet_ecommerce" |
+| idioma | enum(pt-BR,en,es,fr,de) | SIM | "pt-BR" |
+| pais | enum(BR,US,EU,UK,LATAM,APAC,custom) | SIM | "BR" |
 
-### sources (required — at least 2 categories)
-| Category | Type | Required | Example |
+### sources (obrigatório -- pelo menos 2 categorias)
+| Categoria | Tipo | Obrigatório | Exemplo |
 |----------|------|----------|---------|
-| inbound | list[string] | YES | [mercadolivre, shopee, amazon_br] |
-| outbound | list[string] | NO | [youtube, reddit, reclameaqui] |
-| search | list[string] | YES | [serper, exa, gemini_search] |
-| trends | list[string] | NO | [pytrends, keepa] |
-| rag | list[string] | NO | [local_docs, supabase_embeddings] |
+| inbound | list[string] | SIM | [mercadolivre, shopee, amazon_br] |
+| outbound | list[string] | NÃO | [youtube, reddit, reclameaqui] |
+| search | list[string] | SIM | [serper, exa, gemini_search] |
+| trends | list[string] | NÃO | [pytrends, keepa] |
+| rag | list[string] | NÃO | [local_docs, supabase_embeddings] |
 
-### storm_perspectives (required, min 3)
-| Field | Type | Required | Example |
+### storm_perspectives (obrigatório, mínimo 3)
+| Campo | Tipo | Obrigatório | Exemplo |
 |-------|------|----------|---------|
-| role | string | YES | "buyer" |
-| focus | string | YES | "preco frete reviews confianca" |
+| role | string | SIM | "buyer" |
+| focus | string | SIM | "preço frete reviews confiança" |
 
-### multi_model (required)
-| Field | Type | Required | Default |
+### multi_model (obrigatório)
+| Campo | Tipo | Obrigatório | Padrão |
 |-------|------|----------|---------|
-| extraction | string (model ID) | YES | "gemini-2.5-flash" |
-| reasoning | string (model ID) | YES | "gpt-5-mini" |
-| social | string (model ID) | NO | same as extraction |
-| critic | string (model ID) | YES | "o4-mini" |
+| extraction | string (model ID) | SIM | "gemini-2.5-flash" |
+| reasoning | string (model ID) | SIM | "gpt-5-mini" |
+| social | string (model ID) | NÃO | mesmo valor de extraction |
+| critic | string (model ID) | SIM | "o4-mini" |
 
-### budget (required)
-| Field | Type | Required | Default |
+### budget (obrigatório)
+| Campo | Tipo | Obrigatório | Padrão |
 |-------|------|----------|---------|
-| firecrawl_monthly | int | NO | 3000 |
-| firecrawl_per_research | int | NO | 10 |
-| serper_daily | int | NO | 100 |
+| firecrawl_monthly | int | NÃO | 3000 |
+| firecrawl_per_research | int | NÃO | 10 |
+| serper_daily | int | NÃO | 100 |
 
-### output (required)
-| Field | Type | Required | Default |
+### output (obrigatório)
+| Campo | Tipo | Obrigatório | Padrão |
 |-------|------|----------|---------|
-| formats | list[enum(html,pptx,json,md)] | YES | [html, json] |
-| idioma | string | YES | same as identity.idioma |
-| template | enum(consulting,academic,brief,raw) | NO | "consulting" |
+| formats | list[enum(html,pptx,json,md)] | SIM | [html, json] |
+| idioma | string | SIM | mesmo valor de identity.idioma |
+| template | enum(consulting,academic,brief,raw) | NÃO | "consulting" |
 
-### quality (required)
-| Field | Type | Required | Default |
+### quality (obrigatório)
+| Campo | Tipo | Obrigatório | Padrão |
 |-------|------|----------|---------|
-| crag_min_score | float(0.0-1.0) | YES | 0.7 |
-| critic_max_iterations | int(1-5) | YES | 3 |
-| final_min_score | float(1.0-10.0) | YES | 8.0 |
+| crag_min_score | float(0.0-1.0) | SIM | 0.7 |
+| critic_max_iterations | int(1-5) | SIM | 3 |
+| final_min_score | float(1.0-10.0) | SIM | 8.0 |
 
-### marketplace_schemas (optional — for inbound sources)
-| Field | Type | Required | Example |
+### marketplace_schemas (opcional -- para fontes inbound)
+| Campo | Tipo | Obrigatório | Exemplo |
 |-------|------|----------|---------|
-| {source_name} | object | NO | {fields: [title, price, rating, sold_qty]} |
-| {source}.fields | list[string] | YES | extracted data fields per marketplace |
+| {source_name} | object | NÃO | {fields: [title, price, rating, sold_qty]} |
+| {source}.fields | list[string] | SIM | campos de dados extraídos por marketplace |
 
-## Validation Rules
-1. sources must have at least 2 categories populated (min: inbound + search)
-2. storm_perspectives must have at least 3 entries
-3. All *_env API key fields MUST be SCREAMING_SNAKE_CASE
-4. No plaintext secrets anywhere in config
-5. budget values must be positive integers
-6. crag_min_score must be between 0.0 and 1.0
-7. critic_max_iterations must be between 1 and 5
-8. multi_model.critic must be a thinking/reasoning model
+## Regras de Validação
+1. sources deve ter pelo menos 2 categorias preenchidas (mínimo: inbound + search)
+2. storm_perspectives deve ter pelo menos 3 entradas
+3. Todos os campos de chave de API *_env DEVEM estar em SCREAMING_SNAKE_CASE
+4. Nenhum segredo em texto plano em qualquer parte da config
+5. os valores de budget devem ser inteiros positivos
+6. crag_min_score deve estar entre 0.0 e 1.0
+7. critic_max_iterations deve estar entre 1 e 5
+8. multi_model.critic deve ser um modelo de raciocínio
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

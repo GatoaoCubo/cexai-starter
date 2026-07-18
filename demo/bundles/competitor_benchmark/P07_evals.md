@@ -3,14 +3,14 @@ kind: quality_gate
 id: p01_qg_competitive_matrix
 pillar: P11
 llm_function: GOVERN
-purpose: Quality gate with HARD and SOFT scoring for competitive_matrix
+purpose: Gate de qualidade com pontuação HARD e SOFT para competitive_matrix
 quality: null
 title: "Quality Gate Competitive Matrix"
 version: "1.1.0"
 author: wave1_builder_gen_v2
 tags: [competitive_matrix, builder, quality_gate]
-tldr: "Quality gate with HARD and SOFT scoring for competitive_matrix artifacts"
-domain: "competitive_matrix construction"
+tldr: "Gate de qualidade com pontuação HARD e SOFT para artefatos competitive_matrix"
+domain: "construção de competitive_matrix"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F7_govern"
@@ -19,50 +19,50 @@ density_score: 0.85
 related:
   - competitive-matrix-builder
 ---
-## Quality Gate
+## Gate de Qualidade
 
-## Definition
-| metric | threshold | operator | scope |
+## Definição
+| métrica | limiar | operador | escopo |
 |--------|-----------|----------|-------|
-| ID pattern | ^p01_cm_[a-z][a-z0-9_]+\\.md$ | matches | all competitive_matrix files |
+| Padrão de ID | ^p01_cm_[a-z][a-z0-9_]+\\.md$ | corresponde | todos os arquivos competitive_matrix |
 
-## HARD Gates
-| ID | Check | Fail Condition |
+## Gates HARD
+| ID | Verificação | Condição de Falha |
 |----|-------|----------------|
-| H01 | YAML frontmatter valid | invalid YAML syntax |
-| H02 | ID matches pattern ^p01_cm_[a-z][a-z0-9_]+\\.md$ | ID does not match pattern |
-| H03 | kind field equals "competitive_matrix" | kind != "competitive_matrix" |
-| H04 | Feature parity grid present with 3+ competitors | fewer than 3 competitors in matrix |
-| H05 | All data sources cited with access date | unverified or undated data |
-| H06 | Battle card section present for primary competitor | no us-vs-them comparison present |
-| H07 | No subjective language without data support | unsubstantiated claims (e.g., "best", "leading") |
+| H01 | Frontmatter YAML válido | sintaxe YAML inválida |
+| H02 | ID corresponde ao padrão ^p01_cm_[a-z][a-z0-9_]+\\.md$ | ID não corresponde ao padrão |
+| H03 | Campo kind igual a "competitive_matrix" | kind != "competitive_matrix" |
+| H04 | Feature parity grid presente com 3+ concorrentes | menos de 3 concorrentes na matriz |
+| H05 | Todas as fontes de dados citadas com data de acesso | dado não verificado ou sem data |
+| H06 | Seção de battle card presente para o concorrente primário | ausência de comparação nos-vs-eles |
+| H07 | Nenhuma linguagem subjetiva sem suporte de dados | alegações não comprovadas (ex.: "melhor", "líder") |
 
-## SOFT Scoring
-| Dim | Dimension | Weight | Scoring Guide |
+## Pontuação SOFT
+| Dim | Dimensão | Peso | Guia de Pontuação |
 |-----|-----------|--------|---------------|
-| D1 | Completeness | 0.20 | All features mapped to all competitors = 1.0; gaps = proportional |
-| D2 | Data accuracy | 0.20 | Primary sources cited, dated within 12 months = 1.0; outdated/secondary = 0.5 |
-| D3 | Differentiation clarity | 0.15 | Win reasons explicit per capability = 1.0; vague = 0.0 |
-| D4 | Battle card usability | 0.15 | Objection + counter present for primary competitor = 1.0; missing = 0.0 |
-| D5 | MQ positioning | 0.15 | Gartner-style quadrant placement with rationale = 1.0; absent = 0.0 |
-| D6 | Anti-FUD coverage | 0.15 | At least 3 factual FUD counters with sources = 1.0; none = 0.0 |
+| D1 | Completude | 0.20 | Todas as funcionalidades mapeadas para todos os concorrentes = 1.0; lacunas = proporcional |
+| D2 | Precisão dos dados | 0.20 | Fontes primárias citadas, datadas nos últimos 12 meses = 1.0; desatualizadas/secundárias = 0.5 |
+| D3 | Clareza da diferenciação | 0.15 | Razões de vitória explícitas por capacidade = 1.0; vago = 0.0 |
+| D4 | Usabilidade do battle card | 0.15 | Objeção + contra-argumento presentes para o concorrente primário = 1.0; ausente = 0.0 |
+| D5 | Posicionamento MQ | 0.15 | Posicionamento em quadrante estilo Gartner com justificativa = 1.0; ausente = 0.0 |
+| D6 | Cobertura anti-FUD | 0.15 | Pelo menos 3 contra-argumentos factuais com fontes = 1.0; nenhum = 0.0 |
 
-## Actions
-| Score | Action |
+## Ações
+| Pontuação | Ação |
 |-------|--------|
-| >= 9.5 | Auto-publish to sales portal |
-| >= 8.0 | Review by PM then publish |
-| >= 7.0 | Flag for QA revision |
-| < 7.0 | Revise and resubmit |
+| >= 9.5 | Publicação automática no portal de vendas |
+| >= 8.0 | Revisão pelo PM e depois publicação |
+| >= 7.0 | Sinalizar para revisão de QA |
+| < 7.0 | Revisar e reenviar |
 
 ## Bypass
-| conditions | approver | audit trail |
+| condições | aprovador | trilha de auditoria |
 |------------|----------|-------------|
-| Urgent RFP deadline with incomplete competitor data | CTO | Email log with RFP reference and deadline |
+| Prazo de RFP urgente com dados de concorrentes incompletos | CTO | Registro de e-mail com referência do RFP e prazo |
 
-## Examples
+## Exemplos
 
-## Golden Example
+## Exemplo de Referência
 ```markdown
 ---
 title: "Competitive Matrix: CRM Solutions"
@@ -82,7 +82,7 @@ version: 1.2
 | Weaknesses            | Complex UI       | Limited AI       | No marketing tools |
 ```
 
-## Anti-Example 1: Vague Vendor Names
+## Anti-Exemplo 1: Nomes de Fornecedores Vagos
 ```markdown
 | Feature       | ProviderA | ProviderB |
 |---------------|-----------|-----------|
@@ -90,25 +90,25 @@ version: 1.2
 | Cost          | High      | Low       |
 | Ease of Use   | Easy      | Hard      |
 ```
-## Why it fails: Uses generic placeholder names (ProviderA/ProviderB) instead of real vendor names, making the matrix unactionable for sales teams needing specific competitive insights.
+## Por que falha: Usa nomes de placeholder genéricos (ProviderA/ProviderB) em vez de nomes reais de fornecedores, tornando a matriz inacionável para times de vendas que precisam de insights competitivos específicos.
 
-## Anti-Example 2: Missing Competitive Dimensions
+## Anti-Exemplo 2: Dimensões Competitivas Ausentes
 ```markdown
 | Feature       | Salesforce | HubSpot |
 |---------------|------------|---------|
 | Pricing       | $150/user  | $50/user|
 | UI            | Complex    | Simple  |
 ```
-## Why it fails: Only includes basic features without critical competitive dimensions like automation capabilities, integration depth, or support models, which are essential for procurement evaluations.
+## Por que falha: Inclui apenas funcionalidades básicas sem dimensões competitivas críticas como capacidades de automação, profundidade de integração ou modelos de suporte, que são essenciais para avaliações de procurement.
 
-### H_RELATED: Cross-Reference Check (HARD)
-- [ ] `related:` frontmatter field populated (min 3 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream or sibling reference
-- Gate: REJECT if < 3 entries (auto-populated by cex_wikilink.py at F6.5)
+### H_RELATED: Verificação de Referência Cruzada (HARD)
+- [ ] Campo `related:` do frontmatter preenchido (mínimo 3 entradas)
+- [ ] Seção `## Artefatos Relacionados` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream ou sibling
+- Gate: REJEITAR se < 3 entradas (auto-preenchido por cex_wikilink.py em F6.5)
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Verificação de Referência Cruzada (SOFT)
+- [ ] Campo `related:` do frontmatter preenchido (3-15 entradas)
+- [ ] Seção `## Artefatos Relacionados` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, incentiva a conexão)

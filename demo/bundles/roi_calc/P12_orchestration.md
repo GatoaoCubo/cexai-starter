@@ -3,45 +3,43 @@ kind: collaboration
 id: bld_collaboration_roi_calculator
 pillar: P12
 llm_function: COLLABORATE
-purpose: How roi_calculator-builder works in crews with other builders
+purpose: Como o roi_calculator-builder atua em equipes com outros builders
 quality: null
-title: "Collaboration Roi Calculator"
+title: "Colaboração -- ROI Calculator"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [roi_calculator, builder, collaboration]
-tldr: "How roi_calculator-builder works in crews with other builders"
-domain: "roi_calculator construction"
+tldr: "Como o roi_calculator-builder atua em equipes com outros builders"
+domain: "construção de roi_calculator"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F8_collaborate"
-keywords: [roi_calculator construction, collaboration roi calculator, roi_calculator, builder, collaboration, crew role  
-calculates, receives from, produces for, boundary  
-does, related artifacts]
+keywords: [construção de roi_calculator, colaboração roi calculator, roi_calculator, builder, collaboration, papel na equipe, calcula, recebe de, produz para, limite, related artifacts]
 density_score: 0.85
 related:
   - roi-calculator-builder
   - bld_config_roi_calculator
   - kc_roi_calculator
 ---
-## Crew Role  
-Calculates ROI metrics using investment, revenue, and time-frame inputs. Translates raw data into actionable ROI insights for decision-making.  
+## Papel na Equipe
+Calcula métricas de ROI usando entradas de investimento, receita e prazo. Traduz dados brutos em insights acionáveis de ROI para a tomada de decisão.
 
-## Receives From  
-| Builder       | What                  | Format     |  
-|---------------|-----------------------|------------|  
-| data_collector| Investment data       | JSON       |  
-| revenue_tracker| Revenue figures      | CSV        |  
-| time_frame_provider| Time period       | API call   |  
+## Recebe De
+| Builder       | O que                  | Formato     |
+|---------------|-----------------------|------------|
+| data_collector| Dados de investimento       | JSON       |
+| revenue_tracker| Números de receita      | CSV        |
+| time_frame_provider| Período de tempo       | Chamada de API   |
 
-## Produces For  
-| Builder       | What                  | Format     |  
-|---------------|-----------------------|------------|  
-| reporting     | ROI summary report    | PDF        |  
-| dashboard     | Visual ROI metrics    | API call   |  
-| analytics     | ROI dataset           | JSON       |  
+## Produz Para
+| Builder       | O que                  | Formato     |
+|---------------|-----------------------|------------|
+| reporting     | Relatório-resumo de ROI    | PDF        |
+| dashboard     | Métricas visuais de ROI    | Chamada de API   |
+| analytics     | Dataset de ROI           | JSON       |
 
-## Boundary  
-Does NOT handle cost budgeting (ops team) or actual usage tracking (usage_report module).
+## Limite
+Não trata do orçamento de custos (equipe de operações) nem do rastreamento real de uso (módulo usage_report).
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

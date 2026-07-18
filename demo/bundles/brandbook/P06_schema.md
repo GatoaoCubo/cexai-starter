@@ -15,7 +15,7 @@ related:
   - bld_architecture_document_loader
 ---
 
-## Input Schema (MoldField[])
+## Schema de Entrada (MoldField[])
 
 ```yaml
 input_contract:
@@ -43,21 +43,21 @@ input_contract:
         brand_materials_data_uri -> uploaded image as data-uri
 ```
 
-## Field Mapping (generator internals)
+## Mapeamento de Campos (internos do gerador)
 
-| Input key | Generator field | Fallback |
-|-----------|----------------|---------|
+| Chave de entrada | Campo do gerador | Fallback |
+|-------------------|-------------------|----------|
 | brand_name | brand_name | [fornecer: nome da marca] |
-| brand_essence | brand_essence | [fornecer: essencia] |
-| brand_materials | materials_text (raw) | "" |
-| brand_materials_text | materials_text (Cell A extracted) | "" |
-| brand_materials_palette | colors list | [] |
-| brand_materials_data_uri | produced_media["logo_primary"] | upload-fallback slot |
+| brand_essence | brand_essence | [fornecer: essência] |
+| brand_materials | materials_text (bruto) | "" |
+| brand_materials_text | materials_text (extraído pela Cell A) | "" |
+| brand_materials_palette | lista de cores | [] |
+| brand_materials_data_uri | produced_media["logo_primary"] | slot de fallback de upload |
 
-## Related Artifacts
+## Artefatos Relacionados
 
-| Artifact | Relationship | Score |
-|----------|-------------|-------|
+| Artefato | Relacionamento | Pontuação |
+|----------|-----------------|-----------|
 | p04_ct_distill | upstream | 0.16 |
 | [[bld_architecture_document_loader]] | upstream | 0.16 |
 | p06_is_env_contract_n05 | sibling | 0.16 |

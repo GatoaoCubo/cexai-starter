@@ -12,7 +12,7 @@ title: "Schema: marketplace_listing"
 domain: marketplace_listing
 quality: null
 tags: [marketplace_listing, builder, schema, channel-projection, P06]
-tldr: "Single source of truth for a marketplace_listing: frontmatter + the 6 FROZEN sections + the embedded ml_listing payload + the readiness gate fields, mirrored 1:1 from the shipped capability generator."
+tldr: "Fonte única da verdade para um marketplace_listing: frontmatter + as 6 seções CONGELADAS + o payload ml_listing embutido + os campos do gate de prontidão, espelhados 1:1 a partir do capability generator em produção."
 density_score: 0.92
 related:
   - marketplace-listing-builder
@@ -23,62 +23,62 @@ related:
 ---
 
 # Schema: marketplace_listing
-Derivation hierarchy: **SCHEMA (this) > TEMPLATE (bld_output) > CONFIG (bld_config)**.
-Grounded in the SHIPPED generator `_tools/capability_generators/marketplace_listing.py`
-(registered capability slug `marketplace_listing`) + its frontend mirror
+Hierarquia de derivação: **SCHEMA (este) > TEMPLATE (bld_output) > CONFIG (bld_config)**.
+Fundamentado no generator EM PRODUÇÃO `_tools/capability_generators/marketplace_listing.py`
+(slug de capability registrado `marketplace_listing`) + seu espelho de frontend
 `apps/dashboard_web/lib/molds.ts` (`MOLD_MARKETPLACE_LISTING`). `.cex/kinds_meta.json`
-supplies naming/max_bytes/pillar; its declared `upstream_source` is a lower-level,
-differently-shaped seam (`_tools/cex_channel_adapter.py`) -- see
-[[bld_architecture_marketplace_listing]] for the vocabulary reconciliation.
+fornece naming/max_bytes/pillar; seu `upstream_source` declarado é uma camada de nível
+mais baixo, com formato diferente (`_tools/cex_channel_adapter.py`) -- veja
+[[bld_architecture_marketplace_listing]] para a reconciliação de vocabulário.
 
-## Frontmatter Fields (required)
-| Field | Type | Notes |
+## Campos de Frontmatter (obrigatórios)
+| Campo | Tipo | Notas |
 |-------|------|-------|
-| id | string `p05_ml_{name}` | equals filename stem |
-| kind | literal `marketplace_listing` | type integrity |
-| pillar | literal `P05` | pillar assignment |
-| title | string | "Name -- one-line description" |
-| version | semver | start 1.0.0 |
-| marketplace | enum, default `mercado_livre` | only channel wired in `CHANNEL_ADAPTERS` today |
-| sku | string | the G1 seller SKU this listing projects |
-| quality | null | never self-score (CEX meta-quality -- distinct from the readiness `score` below) |
-| tags | list >=3 | includes `marketplace-listing` |
+| id | string `p05_ml_{name}` | igual ao nome do arquivo (sem extensão) |
+| kind | literal `marketplace_listing` | integridade de tipo |
+| pillar | literal `P05` | atribuição de pilar |
+| title | string | "Nome -- descrição em uma linha" |
+| version | semver | começa em 1.0.0 |
+| marketplace | enum, padrão `mercado_livre` | único canal conectado em `CHANNEL_ADAPTERS` hoje |
+| sku | string | o SKU do vendedor (G1) que este anúncio projeta |
+| quality | null | nunca autoavaliar (a meta-qualidade do CEX -- distinta do `score` de prontidão abaixo) |
+| tags | lista >=3 | inclui `marketplace-listing` |
 
-## Readiness gate fields (frontmatter -- mirrors the generator's own StructuredOutput)
-| Field | Type | Notes |
+## Campos do gate de prontidão (frontmatter -- espelha o próprio StructuredOutput do generator)
+| Campo | Tipo | Notas |
 |-------|------|-------|
-| score | float 0.0-1.0 | starts 1.0, deducted per missing/weak field, floored at 0.0 |
-| passed | bool | zero missing_required AND score >= 0.70 |
-| missing_required | list | subset of `titulo_ml->title`, `categoria_ml->category_id`, `preco->price` only |
-| notes | list[str] | `[FAIL]`/`[WARN]`-prefixed; never silently dropped |
-| real | bool | always `true` for a builder-authored instance (never the mock/simulated chip) |
+| score | float 0.0-1.0 | começa em 1.0, deduzido por campo ausente/fraco, com piso em 0.0 |
+| passed | bool | zero missing_required E score >= 0.70 |
+| missing_required | lista | subconjunto apenas de `titulo_ml->title`, `categoria_ml->category_id`, `preco->price` |
+| notes | list[str] | prefixadas com `[FAIL]`/`[WARN]`; nunca descartadas silenciosamente |
+| real | bool | sempre `true` para uma instância autorada por builder (nunca o chip mock/simulado) |
 
-## Six FROZEN sections (all mandatory, exact titles + layout + order)
-| # | Title | Layout | Rows/Columns |
+## Seis seções CONGELADAS (todas obrigatórias, títulos + layout + ordem exatos)
+| # | Título | Layout | Linhas/Colunas |
 |---|-------|--------|--------------|
 | 1 | Listagem ML | fields | Titulo, Marketplace, Categoria ID, Condicao ML, Tipo de anuncio, Moeda |
 | 2 | Preco e Estoque | fields | Preco (R$), Estoque, SKU do vendedor, Marca |
-| 3 | Fotos | list | one item per photo URL (or the honest empty-state string) |
-| 4 | Atributos | table | columns [Atributo (id), Valor] |
+| 3 | Fotos | list | um item por URL de foto (ou a string honesta de estado vazio) |
+| 4 | Atributos | table | colunas [Atributo (id), Valor] |
 | 5 | Descricao | fields | Descricao completa |
 | 6 | Payload ML (pronto para publicar) | fields | Produto interno, Fotos mapeadas, Atributos mapeados, JSON do anuncio |
 
-## Embedded `ml_listing` payload (mirrors the ML Items API body)
-`title, category_id, price, currency_id (always BRL), available_quantity, condition
+## Payload `ml_listing` embutido (espelha o corpo da API de Items do ML)
+`title, category_id, price, currency_id (sempre BRL), available_quantity, condition
 (new|used|refurbished), listing_type_id, description.plain_text, pictures[].url,
-attributes[]{id,value_name} (BRAND + SELLER_SKU auto-injected when absent),
-seller_custom_field`. Serialized (ASCII, truncated at 900 chars + `...`) into section 6's
-`JSON do anuncio` field; the same 4-6 of those fields are ALSO restated human-readably in
-sections 1-2 -- keep both representations consistent. No `_meta` block (that belongs to
-the OTHER seam -- see [[bld_architecture_marketplace_listing]]).
+attributes[]{id,value_name} (BRAND + SELLER_SKU auto-injetados quando ausentes),
+seller_custom_field`. Serializado (ASCII, truncado em 900 caracteres + `...`) no campo
+`JSON do anuncio` da seção 6; os mesmos 4-6 desses campos são TAMBÉM restabelecidos de
+forma legível nas seções 1-2 -- mantenha as duas representações consistentes. Sem bloco
+`_meta` (isso pertence à OUTRA camada -- veja [[bld_architecture_marketplace_listing]]).
 
-## Constraints
-- max_bytes: 6144 (body); naming `p05_ml_{name}.md` (`.cex/kinds_meta.json`); machine_format md.
-- id == filename stem; quality: null always; clean-room (no fabricated URL/price/attribute).
-- Title <=60 chars preferred (soft warn only, ML_TITLE_MAX); currency_id always BRL.
+## Restrições
+- max_bytes: 6144 (corpo); naming `p05_ml_{name}.md` (`.cex/kinds_meta.json`); machine_format md.
+- id == nome do arquivo (sem extensão); quality: null sempre; clean-room (nenhuma URL/preço/atributo fabricado).
+- Título <=60 caracteres preferencial (apenas aviso suave, ML_TITLE_MAX); currency_id sempre BRL.
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[marketplace-listing-builder]] | sibling | 0.5 |
 | [[bld_output_marketplace_listing]] | downstream | 0.5 |

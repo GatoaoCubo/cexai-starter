@@ -3,37 +3,37 @@ kind: output_template
 id: bld_output_template_product_match
 pillar: P05
 llm_function: PRODUCE
-purpose: Template with {{vars}} that the LLM fills to produce a product_match artifact
-pattern: every field here exists in SCHEMA.md -- template derives, never invents
+purpose: Modelo com {{vars}} que o LLM preenche para produzir um artefato product_match
+pattern: todo campo aqui existe no SCHEMA.md -- o modelo deriva, nunca inventa
 quality: null
-title: "Output Template Product Match"
+title: "Modelo de Saída -- Product Match"
 version: "1.0.0"
 author: n03_builder
 tags:
   - "product_match"
   - "builder"
   - "examples"
-tldr: "Golden and anti-examples for product_match construction, demonstrating ideal structure and common pitfalls."
-domain: "product match construction"
+tldr: "Exemplos ideais (golden) e anti-exemplos para a construção de product_match, demonstrando a estrutura ideal e as armadilhas comuns."
+domain: "construção de product_match"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F6_produce"
 keywords:
-  - "template with"
-  - "product match construction"
-  - "output template product match"
+  - "modelo com"
+  - "construção de product_match"
+  - "modelo de saída product match"
   - "product_match"
   - "builder"
   - "examples"
   - "## overview"
   - "## input contract ###"
   - "## output sections ###"
-  - "confianca filtrada em:"
+  - "confiança filtrada em:"
 density_score: 0.90
 related:
   - bld_schema_product_match
 ---
-# Output Template: product_match
+# Modelo de Saída: product_match
 ```yaml
 id: p04_pm_{{name_slug}}
 kind: product_match
@@ -62,11 +62,11 @@ description: "{{what_is_matched_and_audited_max_200ch}}"
 `{{what_supplier_x_listing_join_this_spec_covers_1_to_2_sentences}}`
 `{{who_consumes_it_dashboard_run_and_or_sourcing_opportunity}}`
 ## Input Contract
-### `items` (required)
+### `items` (obrigatório)
 `object[]` -- `{{shape_description_e.g._code_photo_uri_dimension_desc}}`
 ### `match_join_keys`
 `{{default_photo_dimension_supplier_code_and_why}}`
-### `match_exclude_keys` (internal override, not in the dashboard mold)
+### `match_exclude_keys` (override interno, ausente do mold do dashboard)
 `{{default_ean_gtin_barcode_and_reseller_recoding_rationale}}`
 ### `match_engine`
 `{{closed_enum_choice_and_current_implementation_status}}`
@@ -76,7 +76,7 @@ description: "{{what_is_matched_and_audited_max_200ch}}"
 `{{defaults_true_200_and_what_the_audit_flags}}`
 ## Output Sections
 ### `Resultado do match` (table)
-Columns: `{{Codigo, Match?, Fonte casada, Confianca}}`. Confianca filtrada em:
+Colunas: `{{Codigo, Match?, Fonte casada, Confianca}}`. Confiança filtrada em:
 `{{match_confidence_floor}}`.
 ### `Auditoria de catalogo` (list)
 `{{cadastral_and_photo_divergence_flags_local_data_only}}`
@@ -85,30 +85,30 @@ Columns: `{{Codigo, Match?, Fonte casada, Confianca}}`. Confianca filtrada em:
 ### `Veredito` (fields)
 `{{match_confiavel_gate}}`, `{{Cobertura}}`, `{{Bloqueadores}}`
 
-## Template Standards
+## Padrões do Modelo
 
-1. Define all required sections for this output kind
-2. Include frontmatter schema with mandatory fields
-3. Provide structural markers for post-validation
-4. Specify format constraints for markdown YAML JSON
-5. Reference the validation_schema for automated checks
+1. Defina todas as seções obrigatórias para este kind de saída
+2. Inclua o schema de frontmatter com os campos obrigatórios
+3. Forneça marcadores estruturais para pós-validação
+4. Especifique restrições de formato para markdown, YAML e JSON
+5. Referencie o validation_schema para checagens automatizadas
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `output_template` |
 | Pillar | P05 |
-| Domain | product match construction |
+| Domain | construção de product_match |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[bld_schema_product_match]] | downstream | 0.38 |
 | [[bld_prompt_product_match]] | upstream | 0.35 |

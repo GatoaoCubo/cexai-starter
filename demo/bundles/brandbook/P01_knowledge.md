@@ -11,46 +11,72 @@ tags: [knowledge_card, brandbook, brand, identity, P01]
 llm_function: INJECT
 created: 2026-06-22
 updated: 2026-06-22
+related:
+  - p12_dr_commercial
+  - p12_wf_brand_propagation
+  - p01_kc_brand_book_patterns
+  - bld_schema_brandbook
+  - bld_output_brandbook
+  - bld_prompt_brandbook
+  - p01_dv_vocabulario_venda_pme
+  - p01_kc_brand_frameworks
+  - p02_agent_amazon_ads
+  - p02_agent_commercial_nucleus
 ---
 
-## Domain Knowledge
+## Conhecimento de Domínio
 
-### What is a Brandbook
-A brandbook (brand guide, brand bible) is the canonical reference that
-defines HOW a brand looks, sounds, and behaves across all touchpoints.
+### O que é um Manual de Marca
+Um manual de marca (brand guide, brand bible) é a referência canônica que
+define COMO uma marca se parece, soa e se comporta em todos os pontos de contato.
 
-It is NOT:
-- brand_config: the platform identity record (single YAML with 24 tokens)
-- design_system: tokens-only (no persona, no messaging framework)
-- tagline: a single positioning line
+NÃO é:
+- brand_config: o registro de identidade da plataforma (um único YAML com 24 tokens)
+- design_system: apenas tokens (sem persona, sem framework de mensagem)
+- tagline: uma única linha de posicionamento
 
-It IS: the COMPLETE brand OS -- identity + visual + voice + messaging.
+É: o sistema operacional COMPLETO da marca -- identidade + visual + voz + mensagem.
 
-### Composes These Kinds
-| Kind | Role in Brandbook | Where It Appears |
-|------|--------------------|------------------|
-| personality (P02) | voice + tone model | Section 4 (Persona) |
-| design_system (P06) | color + type tokens | Sections 2+3 |
-| white_label_config (P09) | 24 brand tokens HSL | Sections 2+3 |
-| tagline (P03) | positioning line | Section 1 |
+### Kinds Compostos
+| Kind | Papel no Manual de Marca | Onde Aparece |
+|------|---------------------------|---------------|
+| personality (P02) | modelo de voz + tom | Seção 4 (Persona) |
+| design_system (P06) | tokens de cor + tipografia | Seções 2+3 |
+| white_label_config (P09) | 24 tokens de marca HSL | Seções 2+3 |
+| tagline (P03) | linha de posicionamento | Seção 1 |
 
-### Brand Archetypes Reference (Carl Jung / 12 brand archetypes)
-| Archetype | Core drive | Brand examples |
-|-----------|------------|----------------|
-| Hero | Mastery, courage | Nike, FedEx |
-| Caregiver | Service, nurturing | Johnson & Johnson |
-| Creator | Innovation, expression | Lego, Apple |
-| Explorer | Freedom, discovery | REI, Jeep |
-| Ruler | Control, prestige | Mercedes |
-| Sage | Knowledge, wisdom | Google |
-| Innocent | Happiness, simplicity | Dove |
-| Jester | Fun, lightness | Old Spice |
-| Outlaw | Revolution, change | Harley-Davidson |
-| Lover | Intimacy, passion | Victoria's Secret |
-| Everyman | Belonging, equality | IKEA |
-| Magician | Transformation | Disney |
+### Referência de Arquétipos de Marca (Carl Jung / 12 arquétipos de marca)
+| Arquétipo | Motivação Central | Exemplos de Marca |
+|-----------|--------------------|--------------------|
+| Herói | Maestria, coragem | Nike, FedEx |
+| Cuidador | Serviço, acolhimento | Johnson & Johnson |
+| Criador | Inovação, expressão | Lego, Apple |
+| Explorador | Liberdade, descoberta | REI, Jeep |
+| Governante | Controle, prestígio | Mercedes |
+| Sábio | Conhecimento, sabedoria | Google |
+| Inocente | Felicidade, simplicidade | Dove |
+| Bobo da Corte | Diversão, leveza | Old Spice |
+| Rebelde | Revolução, mudança | Harley-Davidson |
+| Amante | Intimidade, paixão | Victoria's Secret |
+| Homem Comum | Pertencimento, igualdade | IKEA |
+| Mágico | Transformação | Disney |
 
-### ROI of a Consistent Brandbook
-- 3-7x brand recognition improvement (consistent visual use)
-- 23% average revenue increase from consistent brand presentation (Forbes)
-- Reduces creative asset production time by 40% (briefing clarity)
+### ROI de um Manual de Marca Consistente
+- Melhora de 3-7x no reconhecimento de marca (uso visual consistente)
+- Aumento médio de 23% na receita a partir de uma apresentação de marca consistente (Forbes)
+- Reduz o tempo de produção de assets criativos em 40% (clareza de briefing)
+
+## Related Artifacts
+
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[p12_dr_commercial]] | downstream | 0.25 |
+| [[p12_wf_brand_propagation]] | downstream | 0.22 |
+| [[p01_kc_brand_book_patterns]] | sibling | 0.22 |
+| [[bld_schema_brandbook]] | downstream | 0.22 |
+| [[bld_output_brandbook]] | downstream | 0.20 |
+| [[bld_prompt_brandbook]] | downstream | 0.19 |
+| [[p01_dv_vocabulario_venda_pme]] | related | 0.18 |
+| [[p01_kc_brand_frameworks]] | sibling | 0.17 |
+| [[p02_agent_amazon_ads]] | downstream | 0.17 |
+| [[p02_agent_commercial_nucleus]] | downstream | 0.17 |

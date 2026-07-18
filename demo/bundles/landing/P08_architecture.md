@@ -5,16 +5,15 @@ pillar: P08
 builder: landing-page-builder
 version: 1.0.0
 quality: null
-title: "Architecture Landing Page"
+title: "Arquitetura Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
-keywords: [landing page construction, architecture landing page, landing_page, builder, examples, ## stack architecture, landing page builder, section component model
-each, stack architecture, google fonts]
+keywords: [construção de landing page, arquitetura landing page, landing_page, builder, examples, arquitetura de stack, modelo de componente de seção, landing page builder, google fonts]
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
@@ -22,15 +21,15 @@ related:
   - bld_tools_landing_page
   - landing-page-builder
 ---
-# Architecture: Landing Page Builder
+# Arquitetura: Landing Page Builder
 
 ## Pipeline
 ```
 BRIEF → STRUCTURE → DESIGN_TOKENS → BUILD(12 sections) → ASSEMBLE → OPTIMIZE(SEO+A11y+Perf) → VALIDATE
 ```
 
-## Section Component Model
-Each section is a self-contained block:
+## Modelo de Componente de Seção
+Cada seção é um bloco autocontido:
 ```
 <section id="{name}" aria-label="{label}" class="py-16 md:py-24 {bg}">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +38,7 @@ Each section is a self-contained block:
 </section>
 ```
 
-## Stack Architecture
+## Arquitetura de Stack
 ```
 HTML + Tailwind CDN (default)
 ├── index.html (single file, everything inline)
@@ -61,34 +60,34 @@ Next.js App Router (optional)
 └── Deploy: Vercel
 ```
 
-## Dependencies
-1. brand_config.yaml (optional — design tokens fallback to defaults)
-2. tagline-builder output (optional — hero headline)
-3. No runtime dependencies for HTML output (zero-JS except interactions)
+## Dependências
+1. brand_config.yaml (opcional -- na ausência, os design tokens usam os padrões)
+2. saída do tagline-builder (opcional -- headline do hero)
+3. Sem dependências de runtime para a saída HTML (zero JS, exceto interações)
 
-## Integration Points
-1. tagline-builder → hero headline and sub-headline
-2. social-publisher-builder → Open Graph meta for social sharing
-3. content-monetization-builder → pricing section tiers
-4. N02 Marketing → campaign-specific landing pages
-5. N05 Operations → deploy pipeline (Vercel/Netlify/S3)
+## Pontos de Integração
+1. tagline-builder → headline e sub-headline do hero
+2. social-publisher-builder → meta tags de Open Graph para compartilhamento social
+3. content-monetization-builder → planos da seção de pricing
+4. N02 Marketing → landing pages específicas de campanha
+5. N05 Operations → pipeline de deploy (Vercel/Netlify/S3)
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `architecture` |
 | Pillar | P08 |
-| Domain | landing page construction |
+| Domain | construção de landing page |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[bld_orchestration_landing_page]] | downstream | 0.45 |
 | [[kc_landing_page]] | upstream | 0.38 |

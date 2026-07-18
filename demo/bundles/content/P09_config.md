@@ -3,8 +3,8 @@ kind: config
 id: bld_config_knowledge_card
 pillar: P09
 llm_function: CONSTRAIN
-purpose: Naming conventions, file paths, size limits, operational constraints
-pattern: CONFIG restricts SCHEMA, never contradicts it
+purpose: "Convencoes de nomenclatura, caminhos de arquivo, limites de tamanho, restricoes operacionais"
+pattern: "o CONFIG restringe o SCHEMA, nunca o contradiz"
 effort: medium
 max_turns: 25
 disallowed_tools: []
@@ -16,12 +16,12 @@ hooks:
   on_quality_fail: null
 permission_scope: nucleus
 quality: null
-title: "Config Knowledge Card"
+title: "Configuracao: knowledge_card"
 version: "1.0.0"
 author: n03_builder
 tags: [knowledge_card, builder, examples]
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos-modelo e anti-exemplos de construcao de knowledge_card, demonstrando estrutura ideal e armadilhas comuns."
+domain: "construcao de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
@@ -30,43 +30,43 @@ density_score: 0.90
 related:
   - bld_config_output_validator
 ---
-# Config: knowledge_card Production Rules
-## Naming Convention
-| Scope | Convention | Example |
+# Configuracao: Regras de Producao do knowledge_card
+## Convencao de Nomenclatura
+| Escopo | Convencao | Exemplo |
 |-------|-----------|---------|
-| Artifact files | `p01_kc_{topic_slug}.md` | `p01_kc_prompt_caching.md` |
-| Builder directory | kebab-case | `knowledge-card-builder/` |
-| Frontmatter fields | snake_case | `density_score`, `when_to_use` |
-| Topic slug | lowercase, underscores | `rag_fundamentals`, `prompt_caching` |
-Rule: id MUST equal filename stem (validator H02 checks this).
-## File Paths
-- Output: `cex/P01_knowledge/examples/p01_kc_{topic}.md`
-- Compiled: `cex/P01_knowledge/compiled/p01_kc_{topic}.yaml`
-## Size Limits (aligned with SCHEMA)
-- Body: 200-5120 bytes (validator H08)
-- Total (frontmatter + body): max ~6500 bytes
-- Density: >= 0.80
-- Bullet max: 80 chars (validator S10)
-- Title: 5-100 chars (validator S03)
-- tldr: <= 160 chars, no self-references (S01, S02)
-## Body Requirements
-- >= 4 sections (validator S06)
-- Each section >= 3 non-empty lines (validator S08)
-- Largest section >= 30% of body (validator S07)
-- >= 1 table (S11), >= 1 code block (S12), >= 1 URL (S13)
-## KC Type Selection
-| Content | Type | Body Structure |
+| Arquivos de artefato | `p01_kc_{topic_slug}.md` | `p01_kc_prompt_caching.md` |
+| Diretorio do builder | kebab-case | `knowledge-card-builder/` |
+| Campos de frontmatter | snake_case | `density_score`, `when_to_use` |
+| Slug do topico | minusculo, com underscores | `rag_fundamentals`, `prompt_caching` |
+Regra: o id DEVE ser igual ao stem do nome do arquivo (o validador confere isso no H02).
+## Caminhos de Arquivo
+- Saida: `cex/P01_knowledge/examples/p01_kc_{topic}.md`
+- Compilado: `cex/P01_knowledge/compiled/p01_kc_{topic}.yaml`
+## Limites de Tamanho (alinhados com o SCHEMA)
+- Corpo: 200-5120 bytes (validador H08)
+- Total (frontmatter + corpo): maximo ~6500 bytes
+- Densidade: >= 0.80
+- Bullet maximo: 80 caracteres (validador S10)
+- Title: 5-100 caracteres (validador S03)
+- tldr: <= 160 caracteres, sem auto-referencia (S01, S02)
+## Requisitos de Corpo
+- >= 4 secoes (validador S06)
+- Cada secao com >= 3 linhas nao vazias (validador S08)
+- A maior secao com >= 30% do corpo (validador S07)
+- >= 1 tabela (S11), >= 1 bloco de codigo (S12), >= 1 URL (S13)
+## Selecao do Tipo de KC
+| Conteudo | Tipo | Estrutura de Corpo |
 |---------|------|---------------|
-| External tech (APIs, patterns) | domain_kc | Quick Ref + Concepts + Phases + Rules + Flow + Compare + Refs |
-| CEX-internal (architecture) | meta_kc | Summary + Spec + Patterns + Anti + Application + Refs |
-Default: domain_kc. Use meta_kc only for CEX system documentation.
-## Freshness
-- updated field should reflect last meaningful edit
-- Knowledge degrades slower than model_cards (no 90-day hard gate)
-- Stale KCs identified by brain_query freshness ranking
+| Tecnologia externa (APIs, padroes) | domain_kc | Referencia Rapida + Conceitos + Fases + Regras + Fluxo + Comparativo + Referencias |
+| Interno ao CEX (arquitetura) | meta_kc | Resumo + Especificacao + Padroes + Anti-Padroes + Aplicacao + Referencias |
+Padrao: domain_kc. Use meta_kc somente para documentacao interna do sistema CEX.
+## Atualidade (Freshness)
+- o campo updated deve refletir a ultima edicao relevante
+- o conhecimento se degrada mais devagar que model_cards (sem portao duro de 90 dias)
+- KCs desatualizados sao identificados pelo ranking de atualidade do brain_query
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacao | Pontuacao |
 |----------|-------------|-------|
 | [[bld_config_output_validator]] | sibling | 0.35 |
 | [[bld_orchestration_output_validator]] | downstream | 0.34 |

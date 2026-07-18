@@ -3,19 +3,18 @@ kind: architecture
 id: bld_architecture_roi_calculator
 pillar: P08
 llm_function: CONSTRAIN
-purpose: Component map of roi_calculator -- inventory, dependencies
+purpose: Mapa de componentes do roi_calculator -- inventário, dependências
 quality: null
-title: "Architecture Roi Calculator"
+title: "Arquitetura -- ROI Calculator"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [roi_calculator, builder, architecture]
-tldr: "Component map of roi_calculator -- inventory, dependencies"
-domain: "roi_calculator construction"
+tldr: "Mapa de componentes do roi_calculator -- inventário, dependências"
+domain: "construção de roi_calculator"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
-keywords: [roi_calculator construction, architecture roi calculator, roi_calculator, builder, architecture, component inventory, architectural position
-the, related artifacts, bld_instruction task, task execution]
+keywords: [construção de roi_calculator, arquitetura roi calculator, roi_calculator, builder, architecture, inventário de componentes, posição arquitetural, related artifacts, tarefa bld_instruction, execução de tarefa]
 density_score: 0.85
 related:
   - bld_architecture_api_reference
@@ -25,34 +24,34 @@ related:
   - bld_architecture_benchmark_suite
 ---
 
-## Component Inventory
-| ISO Name            | Role                          | Pillar | Status  |
+## Inventário de Componentes
+| Nome do ISO            | Papel                          | Pilar | Status  |
 |---------------------|-------------------------------|--------|---------|
-| bld_manifest        | Builder configuration         | P11    | Active  |
-| bld_instruction     | Task execution guidelines     | P03    | Active  |
-| bld_system_prompt   | LLM interaction framework     | P03    | Active  |
-| bld_schema          | Data structure definition     | P06    | Active  |
-| bld_quality_gate    | Validation rules              | P11    | Active  |
-| bld_output_template | Result formatting             | P05    | Active  |
-| bld_examples        | Sample input/output           | P07    | Active  |
-| bld_knowledge_card  | Domain-specific knowledge     | P01    | Active  |
-| bld_architecture    | Builder system design         | P08    | Active  |
-| bld_collaboration   | Multi-builder coordination    | P12    | Active  |
-| bld_config          | Runtime parameter management  | P09    | Active  |
-| bld_memory          | State retention mechanism     | P10    | Active  |
-| bld_tools           | Utility functions             | P04    | Active  |
+| bld_manifest        | Configuração do builder         | P11    | Ativo  |
+| bld_instruction     | Diretrizes de execução de tarefa     | P03    | Ativo  |
+| bld_system_prompt   | Framework de interação com o LLM     | P03    | Ativo  |
+| bld_schema          | Definição da estrutura de dados     | P06    | Ativo  |
+| bld_quality_gate    | Regras de validação              | P11    | Ativo  |
+| bld_output_template | Formatação do resultado              | P05    | Ativo  |
+| bld_examples        | Exemplos de entrada/saída           | P07    | Ativo  |
+| bld_knowledge_card  | Conhecimento específico de domínio     | P01    | Ativo  |
+| bld_architecture    | Design do sistema do builder    | P08    | Ativo  |
+| bld_collaboration   | Coordenação entre múltiplos builders    | P12    | Ativo  |
+| bld_config          | Gestão de parâmetros de runtime  | P09    | Ativo  |
+| bld_memory          | Mecanismo de retenção de estado        | P10    | Ativo  |
+| bld_tools           | Funções utilitárias           | P04    | Ativo  |
 
-## Dependencies
-| From              | To                  | Type         |
+## Dependências
+| De              | Para                  | Tipo         |
 |-------------------|---------------------|--------------|
-| bld_config        | bld_manifest        | Configuration|
-| bld_instruction   | bld_system_prompt   | Execution    |
-| bld_quality_gate  | bld_schema          | Validation   |
-| bld_output_template | bld_examples      | Reference    |
-| bld_tools         | external_calculator | Integration  |
+| bld_config        | bld_manifest        | Configuração|
+| bld_instruction   | bld_system_prompt   | Execução    |
+| bld_quality_gate  | bld_schema          | Validação   |
+| bld_output_template | bld_examples      | Referência    |
+| bld_tools         | external_calculator | Integração  |
 
-## Architectural Position
-The roi_calculator operates as a specialized tool within CEX Pillar P11, focusing on quantifying return-on-investment metrics through structured builder ISOs. It integrates with bld_instruction for task execution, bld_schema for data consistency, and bld_quality_gate for accuracy checks, positioning itself as a core analytics component in the pillar's ecosystem.
+## Posição Arquitetural
+O roi_calculator opera como uma ferramenta especializada dentro do Pilar P11 do CEX, focada em quantificar métricas de retorno sobre investimento por meio de ISOs de builder estruturados. Ele se integra com o bld_instruction para execução de tarefas, com o bld_schema para consistência de dados e com o bld_quality_gate para verificações de precisão, posicionando-se como um componente central de analytics no ecossistema do pilar.
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

@@ -3,18 +3,18 @@ kind: architecture
 id: bld_architecture_subscription_tier
 pillar: P08
 llm_function: CONSTRAIN
-purpose: Component map of subscription_tier -- inventory, dependencies
+purpose: "Mapa de componentes de subscription_tier -- inventário, dependências"
 quality: null
 title: "Architecture Subscription Tier"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [subscription_tier, builder, architecture]
-tldr: "Component map of subscription_tier -- inventory, dependencies"
-domain: "subscription_tier construction"
+tldr: "Mapa de componentes de subscription_tier -- inventário, dependências"
+domain: "construção de subscription_tier"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
-keywords: [subscription_tier construction, architecture subscription tier, subscription_tier, builder, architecture, component inventory, knowledge sharing, architectural position, related artifacts, bld_knowledge_card knowledge]
+keywords: [construção de subscription_tier, architecture subscription tier, subscription_tier, builder, architecture, inventário de componentes, compartilhamento de conhecimento, posição arquitetural, related artifacts]
 density_score: 0.85
 related:
   - bld_architecture_self_improvement_loop
@@ -24,37 +24,37 @@ related:
   - bld_architecture_audit_log
 ---
 
-## Component Inventory
-| ISO Name             | Role                          | Pillar | Status |
+## Inventário de Componentes
+| Nome da ISO          | Papel                          | Pillar | Status |
 |----------------------|-------------------------------|--------|--------|
-| bld_manifest         | Core configuration definition | P11    | Active |
-| bld_instruction      | Instruction generation logic  | P11    | Active |
-| bld_system_prompt    | System-level guidance         | P11    | Active |
-| bld_schema           | Data structure validation     | P11    | Active |
-| bld_quality_gate     | Quality assurance checks      | P11    | Active |
-| bld_output_template  | Output formatting             | P11    | Active |
-| bld_examples         | Sample data provision         | P11    | Active |
-| bld_knowledge_card   | Knowledge management          | P11    | Active |
-| bld_architecture     | Structural design             | P11    | Active |
-| bld_collaboration    | Team coordination             | P11    | Active |
-| bld_config           | Configuration management      | P11    | Active |
-| bld_memory           | Data retention                 | P11    | Active |
-| bld_tools            | Tool integration              | P11    | Active |
+| bld_manifest         | Definição da configuração principal | P11    | Ativo |
+| bld_instruction      | Lógica de geração de instruções | P03    | Ativo |
+| bld_system_prompt    | Orientação em nível de sistema | P03    | Ativo |
+| bld_schema           | Validação da estrutura de dados | P06    | Ativo |
+| bld_quality_gate     | Verificações de garantia de qualidade | P11    | Ativo |
+| bld_output_template  | Formatação de saída | P05    | Ativo |
+| bld_examples         | Fornecimento de dados de exemplo | P11    | Ativo |
+| bld_knowledge_card   | Gestão de conhecimento | P01    | Ativo |
+| bld_architecture     | Desenho estrutural | P08    | Ativo |
+| bld_collaboration    | Coordenação de equipe | P12    | Ativo |
+| bld_config           | Gestão de configuração | P09    | Ativo |
+| bld_memory           | Retenção de dados | P10    | Ativo |
+| bld_tools            | Integração de ferramentas | P04    | Ativo |
 
-## Dependencies
-| From           | To               | Type         |
+## Dependências
+| De             | Para             | Tipo         |
 |----------------|------------------|--------------|
-| bld_config     | bld_manifest     | Configuration|
-| bld_quality_gate | bld_schema     | Validation   |
-| bld_output_template | bld_instruction | Formatting   |
-| bld_tools      | bld_memory       | Storage      |
-| bld_collaboration | bld_knowledge_card | Knowledge Sharing |
+| bld_config     | bld_manifest     | Configuração |
+| bld_quality_gate | bld_schema     | Validação    |
+| bld_output_template | bld_instruction | Formatação   |
+| bld_tools      | bld_memory       | Armazenamento |
+| bld_collaboration | bld_knowledge_card | Compartilhamento de Conhecimento |
 
-## Architectural Position
-subscription_tier is a foundational component in CEX pillar P11, orchestrating tier-specific configurations, ensuring consistency, quality, and collaboration across subscription levels through integrated tools, memory systems, and schema validation.
+## Posição Arquitetural
+subscription_tier é um componente fundamental no pillar P11 do CEX, orquestrando configurações específicas de tier, garantindo consistência, qualidade e colaboração entre níveis de assinatura através de ferramentas integradas, sistemas de memória e validação de schema.
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | bld_architecture_self_improvement_loop | sibling | 0.79 |
 | bld_architecture_compliance_checklist | sibling | 0.78 |

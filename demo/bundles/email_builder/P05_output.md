@@ -7,13 +7,31 @@ title: "Output Template Prompt Template"
 version: "1.0.0"
 author: n03_builder
 tags: [prompt_template, builder, examples]
-tldr: "Golden and anti-examples for prompt template construction, demonstrating ideal structure and common pitfalls."
-domain: "prompt template construction"
+tldr: "Exemplos-modelo e antiexemplos para a construção de prompt template, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de prompt template"
 created: "2026-04-07"
 updated: "2026-04-07"
 density_score: 0.90
 llm_function: PRODUCE
+related:
+  - p03_ins_prompt_template
+  - p11_qg_prompt_template
+  - bld_output_template_reverse_prompt
+  - bld_output_template_kind
+  - bld_output_template_input_schema
+  - bld_output_template_dataset_card
+  - bld_output_template_visual_workflow
+  - p11_qg_quality_gate
+  - bld_eval_default
+  - schema_prompt_template_builder
 ---
+
+> Este é o esqueleto estrutural que todo artefato `prompt_template` produzido DEVE seguir.
+> Os nomes de seção abaixo (Purpose, Variables Table, Template Body, Quality Gates, Examples)
+> são o contrato de schema do kind `prompt_template` -- mantidos em inglês porque são a
+> estrutura oficial que o gate de qualidade valida, não texto livre. Os placeholders
+> `{{...}}` são preenchidos pelo builder no momento da produção do artefato real.
+
 id: p03_pt_`{{topic_slug}}`
 kind: prompt_template
 pillar: P03
@@ -77,7 +95,18 @@ density_score: `{{density_score}}`
 {{example_rendered_output}}
 ```
 
+
 ## Related Artifacts
+
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| bld_output_template_visual_workflow | sibling | 0.23 |
+| [[p03_ins_prompt_template]] | related | 0.32 |
+| [[p11_qg_prompt_template]] | related | 0.30 |
+| [[bld_output_template_reverse_prompt]] | sibling | 0.28 |
+| [[bld_output_template_kind]] | sibling | 0.25 |
+| [[bld_output_template_input_schema]] | sibling | 0.24 |
+| [[bld_output_template_dataset_card]] | sibling | 0.24 |
+| [[bld_output_template_visual_workflow]] | sibling | 0.24 |
+| [[p11_qg_quality_gate]] | related | 0.22 |
+| [[bld_eval_default]] | related | 0.21 |
+| [[schema_prompt_template_builder]] | related | 0.21 |

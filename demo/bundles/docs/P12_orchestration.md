@@ -17,60 +17,76 @@ updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [knowledge card construction, collaboration knowledge card, knowledge_card, builder, examples, "### crew: new agent end-to-end", "### crew: rag pipeline setup", my role, crew compositions, content foundation]
 density_score: 0.90
+related:
+  - bld_collaboration_agent
+  - bld_architecture_kind
+  - bld_collaboration_system_prompt
+  - bld_collaboration_builder
+  - bld_collaboration_boot_config
+  - bld_collaboration_instruction
+  - bld_collaboration_agent_package
+  - bld_collaboration_model_card
+  - bld_collaboration_kind
+  - bld_collaboration_retriever
 ---
-# Collaboration: knowledge-card-builder
-## My Role in Crews
-I am a SPECIALIST. I answer ONE question: "what is the essential, searchable fact about this topic?"
-I do not define agent personas. I do not configure boot parameters.
-I distill knowledge into atomic facts so agents and builders have factual context for decisions.
-## Crew Compositions
-### Crew: "Content Foundation"
+# Colaboracao: knowledge-card-builder
+## Meu Papel nas Crews
+Eu sou um ESPECIALISTA. Eu respondo a UMA pergunta: "qual e o fato essencial e pesquisavel sobre este topico?"
+Eu nao defino personas de agent. Eu nao configuro parametros de boot.
+Eu destilo conhecimento em fatos atomicos para que agents e builders tenham contexto factual para decisoes.
+## Composicoes de Crew
+### Crew: "Fundacao de Conteudo"
 ```
-  1. context-doc-builder -> "domain scope and background"
-  2. knowledge-card-builder -> "atomic searchable facts (density > 0.8)"
-  3. glossary-entry-builder -> "term definitions"
-  4. few-shot-example-builder -> "format examples grounded in knowledge"
+  1. context-doc-builder -> "escopo e contexto de dominio"
+  2. knowledge-card-builder -> "fatos atomicos pesquisaveis (densidade > 0.8)"
+  3. glossary-entry-builder -> "definicoes de termos"
+  4. few-shot-example-builder -> "exemplos de formato fundamentados em conhecimento"
 ```
-### Crew: "New Agent End-to-End"
+### Crew: "Novo Agent Ponta a Ponta"
 ```
-  1. knowledge-card-builder -> "domain knowledge for agent expertise"
-  2. agent-builder -> "agent definition shaped by knowledge"
-  3. instruction-builder -> "execution steps grounded in facts"
-  4. boot-config-builder -> "provider configuration"
-  5. agent-package-builder -> "deployable package"
+  1. knowledge-card-builder -> "conhecimento de dominio para a expertise do agent"
+  2. agent-builder -> "definicao de agent moldada pelo conhecimento"
+  3. instruction-builder -> "passos de execucao fundamentados em fatos"
+  4. boot-config-builder -> "configuracao do provedor"
+  5. agent-package-builder -> "pacote implantavel"
 ```
-### Crew: "RAG Pipeline Setup"
+### Crew: "Configuracao do Pipeline de RAG"
 ```
-  1. knowledge-card-builder -> "content to embed and index"
-  2. embedding-config-builder -> "embedding model parameters"
-  3. knowledge-index-builder -> "search index configuration"
+  1. knowledge-card-builder -> "conteudo para embutir (embed) e indexar"
+  2. embedding-config-builder -> "parametros do modelo de embedding"
+  3. knowledge-index-builder -> "configuracao do indice de busca"
 ```
-## Handoff Protocol
-### I Receive
-- seeds: topic name, domain, source material or research brief
-- optional: density target, classification (domain_kc or meta_kc), related cards
-### I Produce
-- knowledge_card artifact (.md + .yaml frontmatter, max 5KB, density > 0.8)
-- committed to: `cex/P01/examples/p01_kc_{topic}.md`
-### I Signal
-- signal: complete (with quality score from QUALITY_GATES)
-- if quality < 8.0: signal retry with failure reasons
-## Builders I Depend On
-None — independent builder (layer 0). Knowledge cards are distilled from source material.
-## Builders That Depend On Me
-| Builder | Why |
+## Protocolo de Handoff
+### Eu Recebo
+- seeds: nome do topico, dominio, material-fonte ou briefing de pesquisa
+- opcional: meta de densidade, classificacao (domain_kc ou meta_kc), cards relacionados
+### Eu Produzo
+- artefato knowledge_card (.md + frontmatter .yaml, maximo 5KB, densidade > 0.8)
+- commitado em: `cex/P01/examples/p01_kc_{topic}.md`
+### Eu Sinalizo
+- sinal: complete (com a pontuacao de qualidade do QUALITY_GATES)
+- se quality < 8.0: sinaliza retry com os motivos da falha
+## Builders dos Quais Dependo
+Nenhum -- builder independente (layer 0). Artefatos knowledge_card sao destilados a partir de material-fonte.
+## Builders Que Dependem de Mim
+| Builder | Por que |
 |---------|-----|
-| agent-builder | Agent expertise is grounded in knowledge cards |
-| axiom-builder | Axioms are formalized from distilled facts |
-| context-doc-builder | Domain docs reference knowledge card facts |
-| knowledge-index-builder | Knowledge cards are primary content for indexing |
-| instruction-builder | Recipes reference factual knowledge for accuracy |
+| agent-builder | A expertise do agent e fundamentada em artefatos knowledge_card |
+| axiom-builder | Axiomas sao formalizados a partir de fatos destilados |
+| context-doc-builder | Docs de dominio referenciam fatos de artefatos knowledge_card |
+| knowledge-index-builder | Artefatos knowledge_card sao o conteudo primario para indexacao |
+| instruction-builder | Receitas referenciam conhecimento factual para precisao |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuacao |
 |----------|-------------|-------|
-| [[bld_orchestration_agent]] | sibling | 0.41 |
-| [[bld_orchestration_knowledge_index]] | sibling | 0.39 |
-| [[bld_orchestration_system_prompt]] | sibling | 0.37 |
-| bld_collaboration_context_doc | sibling | 0.33 |
-| [[bld_orchestration_boot_config]] | sibling | 0.33 |
+| [[bld_collaboration_agent]] | irmao | 0.39 |
+| [[bld_architecture_kind]] | a montante | 0.34 |
+| [[bld_collaboration_system_prompt]] | irmao | 0.34 |
+| [[bld_collaboration_builder]] | irmao | 0.33 |
+| [[bld_collaboration_boot_config]] | irmao | 0.32 |
+| [[bld_collaboration_instruction]] | irmao | 0.31 |
+| [[bld_collaboration_agent_package]] | irmao | 0.30 |
+| [[bld_collaboration_model_card]] | irmao | 0.30 |
+| [[bld_collaboration_kind]] | irmao | 0.29 |
+| [[bld_collaboration_retriever]] | irmao | 0.28 |

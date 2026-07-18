@@ -3,58 +3,58 @@ kind: knowledge_card
 id: bld_knowledge_card_roi_calculator
 pillar: P01
 llm_function: INJECT
-purpose: Domain knowledge for roi_calculator production
+purpose: Conhecimento de domínio para produção de roi_calculator
 quality: null
-title: "Knowledge Card Roi Calculator"
+title: "Ficha de Conhecimento -- ROI Calculator"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [roi_calculator, builder, knowledge_card]
-tldr: "Domain knowledge for roi_calculator production"
-domain: "roi_calculator construction"
+tldr: "Conhecimento de domínio para produção de roi_calculator"
+domain: "construção de roi_calculator"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F3_inject"
-keywords: [roi_calculator construction, knowledge card roi calculator, roi_calculator, builder, knowledge_card, domain overview, key concepts, net profit, total investment, harvard business review]
+keywords: [construção de roi_calculator, ficha de conhecimento roi calculator, roi_calculator, builder, knowledge_card, visão geral do domínio, conceitos-chave, lucro líquido, investimento total, harvard business review]
 density_score: 0.85
 related:
   - kc_roi_calculator
   - roi-calculator-builder
 ---
-## Domain Overview
-ROI calculators quantify financial returns of technology investments by comparing total costs (hardware, software, integration) against quantifiable benefits (efficiency gains, revenue uplift). Economic buyers prioritize TCO comparisons over operational budgets, focusing on long-term value rather than short-term expenses. Industry adoption spans enterprise SaaS, infrastructure procurement, and digital transformation projects, with emphasis on NPV, payback periods, and risk-adjusted returns.
+## Visão Geral do Domínio
+Calculadoras de ROI quantificam o retorno financeiro de investimentos em tecnologia comparando custos totais (hardware, software, integração) com benefícios quantificáveis (ganhos de eficiência, aumento de receita). Compradores econômicos priorizam comparações de TCO em vez de orçamentos operacionais, focando em valor de longo prazo em vez de despesas de curto prazo. A adoção no mercado abrange SaaS empresarial, aquisição de infraestrutura e projetos de transformação digital, com ênfase em NPV, prazos de retorno (payback) e retornos ajustados a risco.
 
-## Key Concepts
-| Concept         | Definition                                                                 | Source                          |
+## Conceitos-Chave
+| Conceito         | Definição                                                                 | Fonte                          |
 |-----------------|----------------------------------------------------------------------------|---------------------------------|
-| ROI Formula     | (Net Profit / Total Investment) × 100                                      | Investopedia (2023)            |
-| TCO           | Sum of all costs over a product’s lifecycle (acquisition, maintenance, disposal) | Gartner TCO Methodology (2022) |
-| NPV           | Present value of future cash flows minus initial investment                 | Harvard Business Review (2021)|
-| Payback Period  | Time required to recoup initial investment                                | PMI PMBOK Guide (7th Ed)      |
-| Discount Rate   | Rate used to calculate present value of future cash flows                 | CFA Institute (2022)          |
-| Opportunity Cost| Value of the next best alternative foregone                               | MIT Sloan (2020)              |
-| Marginal Cost   | Additional cost incurred by producing one more unit                       | OECD Economic Analysis (2021) |
-| Incremental Revenue | Additional revenue generated from an investment                       | Deloitte ROI Framework (2023) |
+| Fórmula de ROI  | (Lucro Líquido / Investimento Total) x 100                                 | Investopedia (2023)            |
+| TCO             | Soma de todos os custos ao longo do ciclo de vida de um produto (aquisição, manutenção, descarte) | Gartner TCO Methodology (2022) |
+| NPV             | Valor presente dos fluxos de caixa futuros menos o investimento inicial     | Harvard Business Review (2021)|
+| Prazo de Retorno (Payback) | Tempo necessário para recuperar o investimento inicial           | PMI PMBOK Guide (7a Ed)      |
+| Taxa de Desconto | Taxa usada para calcular o valor presente de fluxos de caixa futuros      | CFA Institute (2022)          |
+| Custo de Oportunidade | Valor da melhor alternativa não escolhida                           | MIT Sloan (2020)              |
+| Custo Marginal  | Custo adicional incorrido ao produzir uma unidade a mais                   | OECD Economic Analysis (2021) |
+| Receita Incremental | Receita adicional gerada por um investimento                          | Deloitte ROI Framework (2023) |
 
-## Industry Standards
-- ISO/IEC 15504: Software process assessment (includes cost-benefit analysis)
-- COBIT 2019: IT governance framework (ROI metrics for IT investments)
-- ITIL 4: Service value system (TCO considerations in service management)
-- PMBOK Guide: Project cost management (NPV, payback calculations)
+## Padrões do Setor
+- ISO/IEC 15504: avaliação de processo de software (inclui análise custo-benefício)
+- COBIT 2019: framework de governança de TI (métricas de ROI para investimentos em TI)
+- ITIL 4: sistema de valor de serviço (considerações de TCO na gestão de serviços)
+- PMBOK Guide: gestão de custos de projeto (cálculos de NPV e payback)
 - Harvard Business Review: "The New Science of Project Management" (2021)
 
-## Common Patterns
-1. Use TCO vs. initial cost for holistic comparisons
-2. Apply risk-adjusted discount rates for NPV calculations
-3. Benchmark ROI against industry-specific thresholds
-4. Include sensitivity analysis for variable inputs
-5. Align metrics with strategic KPIs (e.g., EBITDA, ROIC)
+## Padrões Comuns
+1. Usar TCO vs. custo inicial para comparações holísticas
+2. Aplicar taxas de desconto ajustadas a risco nos cálculos de NPV
+3. Comparar o ROI com limiares específicos do setor
+4. Incluir análise de sensibilidade para variáveis de entrada
+5. Alinhar as métricas com KPIs estratégicos (ex.: EBITDA, ROIC)
 
-## Pitfalls
-- Ignoring non-financial benefits (e.g., compliance, brand value)
-- Using static discount rates without inflation adjustments
-- Overlooking hidden costs (e.g., training, data migration)
-- Confusing ROI with cost savings alone
-- Failing to validate assumptions with historical data
+## Armadilhas
+- Ignorar benefícios não financeiros (ex.: conformidade, valor de marca)
+- Usar taxas de desconto estáticas sem ajuste de inflação
+- Negligenciar custos ocultos (ex.: treinamento, migração de dados)
+- Confundir ROI com economia de custos isoladamente
+- Deixar de validar premissas com dados históricos
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

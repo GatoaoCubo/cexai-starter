@@ -3,40 +3,40 @@ kind: memory
 id: p10_mem_opportunity_matrix_builder
 pillar: P10
 llm_function: INJECT
-purpose: Learned patterns and pitfalls for opportunity_matrix construction
+purpose: Padrões aprendidos e armadilhas para a construção de opportunity_matrix
 quality: null
-title: "Memory Opportunity Matrix Builder"
+title: "Memória -- Opportunity Matrix"
 version: "1.0.0"
 author: n03_builder
 tags: [opportunity_matrix, builder, memory]
-tldr: "Learned patterns and pitfalls for opportunity_matrix construction"
-domain: "opportunity_matrix construction"
+tldr: "Padrões aprendidos e armadilhas para a construção de opportunity_matrix"
+domain: "construção de opportunity_matrix"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F3_inject"
-keywords: [opportunity_matrix construction, memory opportunity matrix builder, opportunity_matrix, builder, memory, observation, pattern, evidence, honest-null discipline, gate conditions]
+keywords: [construção de opportunity_matrix, memória opportunity matrix builder, opportunity_matrix, builder, memory, observação, padrão, evidência, disciplina honest-null, condições do gate]
 density_score: 0.85
 related:
   - opportunity-matrix-builder
 ---
-## Observation
-The generator's first production surface (W3 CAPGEN, `sourcing_opportunity.py`) shipped OFFLINE-only: no live network or LLM call at this level, so every early artifact built against it will show an offline scaffold (gate BLOQUEADO, demand cells honest-null) unless a credential + `demand_sources` are supplied. Builders that skip reading the generator source first tend to draft a "live-looking" example that the real output can never produce.
+## Observação
+A primeira superfície de produção do gerador (W3 CAPGEN, `sourcing_opportunity.py`) foi lançada SOMENTE-OFFLINE: nenhuma chamada de rede ou LLM ao vivo neste nível, então todo artefato construído nos primeiros dias contra ele vai mostrar um scaffold offline (gate BLOQUEADO, células de demanda honest-null) a menos que uma credencial + `demand_sources` sejam fornecidas. Builders que pulam a leitura do código-fonte do gerador primeiro tendem a rascunhar um exemplo com "aparência ao vivo" que a saída real nunca consegue produzir.
 
-## Pattern
-Successful artifacts transcribe section titles/columns byte-for-byte from `MOLD_SOURCING_OPPORTUNITY` (`apps/dashboard_web/lib/molds.ts`) rather than paraphrasing them -- the renderer and `test_capgen_sourcing.py` both assert exact string equality on titles, layouts, and column arrays.
+## Padrão
+Artefatos bem-sucedidos transcrevem títulos/colunas de seção byte a byte de `MOLD_SOURCING_OPPORTUNITY` (`apps/dashboard_web/lib/molds.ts`) em vez de parafraseá-los -- tanto o renderizador quanto `test_capgen_sourcing.py` afirmam igualdade exata de string em títulos, layouts e arrays de coluna.
 
-## Evidence
-`_tools/tests/test_capgen_sourcing.py` (516 lines, read-only reference) locks section count = 8, section titles/layouts to a fixed list, and per-table column arrays for Matriz/Leitura/Verificacao/Match -- any drafted example that reorders or renames a section would fail these tests if it were ever used as generator test data (it is not; it is documentation, but the same shape discipline applies).
+## Evidência
+`_tools/tests/test_capgen_sourcing.py` (516 linhas, referência somente-leitura) trava a contagem de seções em 8, os títulos/layouts de seção numa lista fixa, e os arrays de coluna por tabela para Matriz/Leitura/Verificacao/Match -- qualquer exemplo rascunhado que reordene ou renomeie uma seção falharia esses testes se algum dia fosse usado como dado de teste do gerador (não é; é documentação, mas a mesma disciplina de forma se aplica).
 
-## Recommendations
-- Read `_tools/capability_generators/sourcing_opportunity.py` before drafting any example -- it is the single source of truth, not `capability_contracts_v1.0.md` (which summarizes it) or this memory file.
-- Keep the manual bucket ("manual / sem preco") and long-tail counts visible in Cobertura -- a builder that only shows the top-N ranked rows without accounting for the rest fails the S5 honest-null / no-silent-drop discipline.
-- State the `sourcing_confiavel` gate's 4 boolean conditions verbatim, not just the resulting true/false.
-- Do not import `n06_unit_econ`'s LTV/CAC section bundle into this kind's output -- that aspect targets `content_monetization`/`subscription_tier` only; opportunity_matrix computes its own gross/net margin directly.
-- Do not build the sibling `product_match` builder as part of an opportunity_matrix task -- it is a separate ADR-approved leaf kind (P04/N03) with its own follow-on scaffolding work.
+## Recomendações
+- Leia `_tools/capability_generators/sourcing_opportunity.py` antes de rascunhar qualquer exemplo -- é a fonte única da verdade, não `capability_contracts_v1.0.md` (que o resume) nem este arquivo de memória.
+- Mantenha o bucket manual ("manual / sem preco") e as contagens de cauda-longa visíveis em Cobertura -- um builder que só mostra as linhas ranqueadas do top-N sem contabilizar o resto falha a disciplina S5 de honest-null / sem-descarte-silencioso.
+- Declare as 4 condições booleanas do gate `sourcing_confiavel` textualmente, não só o true/false resultante.
+- Não importe o pacote de seção LTV/CAC de `n06_unit_econ` para a saída deste kind -- esse aspecto é voltado só a `content_monetization`/`subscription_tier`; opportunity_matrix calcula sua própria margem bruta/líquida diretamente.
+- Não construa o builder irmão `product_match` como parte de uma tarefa de opportunity_matrix -- é um kind folha separado, aprovado por ADR (P04/N03), com seu próprio trabalho de scaffolding subsequente.
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[bld_prompt_opportunity_matrix]] | upstream | 0.47 |
 | [[opportunity-matrix-builder]] | downstream | 0.41 |

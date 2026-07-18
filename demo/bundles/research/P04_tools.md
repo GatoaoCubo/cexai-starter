@@ -24,49 +24,49 @@ related:
   - bld_tools_golden_test
 ---
 
-# Tools: knowledge-card-builder
-## Production Tools
-| Tool | Purpose | When | Status |
+# Ferramentas: knowledge-card-builder
+## Ferramentas de Produção
+| Ferramenta | Propósito | Quando | Status |
 |------|---------|------|--------|
-| validate_kc.py | Validate KC: 10 HARD + 20 SOFT gates | Phase 3 | CONDITIONAL |
-| brain_query [MCP] | Search existing KCs in pool | Phase 1 | CONDITIONAL |
-| validate_artifact.py | Generic artifact validator | — | [PLANNED] |
-| cex_forge.py | Generate artifact from seeds | Alt compose | [PLANNED] |
-## validate_kc.py Usage
+| validate_kc.py | Valida a KC: gates 10 HARD + 20 SOFT | Fase 3 | CONDICIONAL |
+| brain_query [MCP] | Busca KCs existentes no pool | Fase 1 | CONDICIONAL |
+| validate_artifact.py | Validador genérico de artefato | -- | [PLANEJADO] |
+| cex_forge.py | Gera artefato a partir de seeds | Composição alternativa | [PLANEJADO] |
+## Uso do validate_kc.py
 ```bash
-# Single file
+# Arquivo único
 python _tools/validate_kc.py path/to/p01_kc_topic.md
-# Directory (batch)
+# Diretório (em lote)
 python _tools/validate_kc.py P01_knowledge/examples/ --summary
-# JSON output (machine-readable)
+# Saída JSON (legível por máquina)
 python _tools/validate_kc.py path/to/file.md --json
 ```
-Output: HARD pass/fail + SOFT score 0-10 + verdict.
-Fix suggestions provided for failed gates.
-## brain_query Usage
+Saída: passa/falha HARD + score SOFT de 0 a 10 + veredito.
+Sugestões de correção fornecidas para os gates que falharem.
+## Uso do brain_query
 ```python
 brain_query("knowledge card about {topic}")
-# Returns: existing KCs matching topic
-# Purpose: avoid duplicates, find linked_artifacts
+# Retorna: KCs existentes que correspondem ao tópico
+# Propósito: evitar duplicatas, encontrar linked_artifacts
 ```
-## Data Sources
-| Source | Path | Data |
+## Fontes de Dados
+| Fonte | Caminho | Dado |
 |--------|------|------|
-| CEX Schema | P01_knowledge/_schema.yaml | KC field definitions |
-| CEX Examples | P01_knowledge/examples/ | 63+ real KCs |
-| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Fillable template |
-| CEX Pool | artifacts/ (source repository) | 1957+ published artifacts |
-## Tool Permissions
+| CEX Schema | P01_knowledge/_schema.yaml | Definições de campo da KC |
+| CEX Examples | P01_knowledge/examples/ | 63+ KCs reais |
+| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Template preenchível |
+| CEX Pool | artifacts/ (repositório de origem) | 1957+ artefatos publicados |
+## Permissões de Ferramenta
 
-| Category | Tools | Status |
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| PERMITIDO | Read, Write, Edit, Bash, Glob, Grep | Explicitamente permitido |
+| NEGADO | (nenhuma) | Explicitamente bloqueado |
+| EFETIVO | Bash, Edit, Glob, Grep, Read, Write | PERMITIDO menos NEGADO |
 
-## Interim Validation
-validate_kc.py is ACTIVE — always run before committing.
-No manual gate-checking needed (unlike model-card-builder).
+## Validação Provisória
+O validate_kc.py está ATIVO -- sempre rode antes de commitar.
+Não é necessária checagem manual de gate (diferente do model-card-builder).
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

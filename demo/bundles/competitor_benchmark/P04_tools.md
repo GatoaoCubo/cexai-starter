@@ -3,14 +3,14 @@ kind: tools
 id: bld_tools_competitive_matrix
 pillar: P04
 llm_function: CALL
-purpose: Tools available for competitive_matrix production
+purpose: Ferramentas disponíveis para produção de competitive_matrix
 quality: null
 title: "Tools Competitive Matrix"
 version: "1.1.0"
 author: wave1_builder_gen_v2
 tags: [competitive_matrix, builder, tools]
-tldr: "CEX tools available for competitive_matrix production and validation"
-domain: "competitive_matrix construction"
+tldr: "Ferramentas CEX disponíveis para produção e validação de competitive_matrix"
+domain: "construção de competitive_matrix"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F5_call"
@@ -24,28 +24,28 @@ related:
   - bld_tools_nps_survey
 ---
 
-## Production Tools
-| Tool | Purpose | When |
+## Ferramentas de Produção
+| Ferramenta | Propósito | Quando |
 |------|---------|------|
-| cex_compile.py | Compile .md artifact to .yaml sidecar | After write |
-| cex_score.py | Score matrix against quality gate dimensions | Pre-publish |
-| cex_retriever.py | Find existing matrices for cross-reference | During research |
-| cex_doctor.py | Validate frontmatter, ID pattern, kind compliance | Pre-publish |
+| cex_compile.py | Compila o artefato .md para o sidecar .yaml | Após a escrita |
+| cex_score.py | Pontua a matriz contra as dimensões do gate de qualidade | Antes da publicação |
+| cex_retriever.py | Encontra matrizes existentes para referência cruzada | Durante a pesquisa |
+| cex_doctor.py | Valida frontmatter, padrão de ID e conformidade de kind | Antes da publicação |
 
-## Validation Tools
-| Tool | Purpose | When |
+## Ferramentas de Validação
+| Ferramenta | Propósito | Quando |
 |------|---------|------|
-| cex_wave_validator.py | Check all builder ISOs for schema compliance | Post-build |
-| cex_hooks.py | Pre-commit YAML validation and quality gate enforcement | On git commit |
+| cex_wave_validator.py | Verifica todos os ISOs do builder quanto a conformidade de schema | Após a construção |
+| cex_hooks.py | Validação de YAML e enforcement do gate de qualidade no pre-commit | No git commit |
 
-## External References
-- Gartner Magic Quadrant methodology (ability to execute x vision dimensions)
-- Forrester Wave scoring methodology (feature weighting and benchmarking)
-- G2 Grid (verified user review data for feature comparison)
-- Battlecard.io / Klue / Crayon (battle card structure references)
+## Referências Externas
+- Metodologia Gartner Magic Quadrant (dimensões de capacidade de execução x visão)
+- Metodologia de pontuação Forrester Wave (ponderação de funcionalidades e benchmarking)
+- G2 Grid (dados de avaliação verificada de usuários para comparação de funcionalidades)
+- Battlecard.io / Klue / Crayon (referências de estrutura de battle card)
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | bld_tools_changelog | sibling | 0.43 |
 | bld_tools_case_study | sibling | 0.43 |

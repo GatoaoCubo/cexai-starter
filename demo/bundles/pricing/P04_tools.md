@@ -3,109 +3,109 @@ kind: tools
 id: bld_tools_content_monetization
 pillar: P11
 llm_function: CALL
-purpose: Tools, APIs, and data sources for content monetization pipeline
+purpose: "Ferramentas, APIs e fontes de dados para o pipeline de monetizacao de conteudo"
 quality: null
 title: "Tools Content Monetization"
 version: "1.0.0"
 author: n03_builder
 tags: [content_monetization, builder, examples]
-tldr: "Golden and anti-examples for content monetization construction, demonstrating ideal structure and common pitfalls."
-domain: "content monetization construction"
+tldr: "Exemplos de referencia e antiexemplos para a construcao de content_monetization, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construcao de content_monetization"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F7_govern"
-keywords: [content monetization construction, tools content monetization, content_monetization, builder, examples, payment providers, hotmart club, other providers, email providers, react email]
+keywords: [construcao de content_monetization, tools content monetization, content_monetization, builder, examples, provedores de pagamento, hotmart club, outros provedores, provedores de e-mail, react email]
 density_score: 0.90
 related:
   - bld_architecture_content_monetization
 ---
-# Tools: content-monetization-builder
+# Ferramentas: content-monetization-builder
 
-## Payment Providers
+## Provedores de Pagamento
 
-### Platform A — Hotmart (BR)
-| Aspect | Detail |
+### Plataforma A -- Hotmart (BR)
+| Aspecto | Detalhe |
 |--------|--------|
-| API Base | https://developers.hotmart.com/docs/en/ |
-| Auth | OAuth2 Bearer token (client_credentials) → HOTMART_TOKEN |
+| Base da API | https://developers.hotmart.com/docs/en/ |
+| Autenticacao | Bearer token OAuth2 (client_credentials) → HOTMART_TOKEN |
 | Endpoints | /payments/api/v1/sales, /club/api/v1/modules, /affiliation |
-| Webhook | JSON, sha256 HMAC via X-Hotmart-Hottok header |
-| Events | PURCHASE_COMPLETE, PURCHASE_CANCELED, PURCHASE_REFUNDED, PURCHASE_CHARGEBACK, SUBSCRIPTION_CANCELLATION, SWITCH_PLAN |
-| Sandbox | hotmart.com/developer (test environment) |
-| Cost | varies by product category |
-| Market | BR/LATAM infoproducts, 500K+ affiliates |
-| Member area | Hotmart Club (native course delivery) |
+| Webhook | JSON, HMAC sha256 via header X-Hotmart-Hottok |
+| Eventos | PURCHASE_COMPLETE, PURCHASE_CANCELED, PURCHASE_REFUNDED, PURCHASE_CHARGEBACK, SUBSCRIPTION_CANCELLATION, SWITCH_PLAN |
+| Sandbox | hotmart.com/developer (ambiente de teste) |
+| Custo | varia por categoria de produto |
+| Mercado | Infoprodutos BR/LATAM, 500 mil+ afiliados |
+| Area de membros | Hotmart Club (entrega de curso nativa) |
 
-### Platform B — Digistore24 (International)
-| Aspect | Detail |
+### Plataforma B -- Digistore24 (Internacional)
+| Aspecto | Detalhe |
 |--------|--------|
-| API Base | https://www.digistore24.com/api/v1/ |
-| Auth | API key via X-DS-API-KEY header → DS24_API_KEY |
+| Base da API | https://www.digistore24.com/api/v1/ |
+| Autenticacao | Chave de API via header X-DS-API-KEY → DS24_API_KEY |
 | Endpoints | /products, /purchases, /affiliates, /transactions |
-| IPN | form-encoded (NOT JSON), sha512 signature (DS24_IPN_PASSPHRASE) |
-| IPN Response | body must be exact string "OK" (not JSON, not HTML) |
-| Events | on_payment, on_refund, on_chargeback, on_rebill_resumed, on_rebill_cancelled, on_affiliatelink, on_invoice_created, on_payment_missed |
-| Sandbox | DS24 test product mode |
-| Cost | varies, DS24 is Merchant of Record |
-| Market | EU/DACH dominant, EUR, auto EU VAT |
-| Languages | 7 native: DE, EN, ES, FR, IT, NL, PL |
-| Payment methods | SEPA+Sofort (DE), iDEAL (NL), cards+PayPal (global) |
-| Member area | DS24 member area or external redirect |
+| IPN | form-encoded (NAO JSON), assinatura sha512 (DS24_IPN_PASSPHRASE) |
+| Resposta do IPN | o corpo precisa ser a string exata "OK" (nao JSON, nao HTML) |
+| Eventos | on_payment, on_refund, on_chargeback, on_rebill_resumed, on_rebill_cancelled, on_affiliatelink, on_invoice_created, on_payment_missed |
+| Sandbox | modo de produto de teste da DS24 |
+| Custo | variavel, DS24 e Merchant of Record |
+| Mercado | Dominante em UE/DACH, EUR, VAT da UE automatico |
+| Idiomas | 7 nativos: DE, EN, ES, FR, IT, NL, PL |
+| Metodos de pagamento | SEPA+Sofort (DE), iDEAL (NL), cartoes+PayPal (global) |
+| Area de membros | Area de membros da DS24 ou redirect externo |
 
-### Other Providers
-| Provider | Auth | Market |
+### Outros Provedores
+| Provedor | Autenticacao | Mercado |
 |----------|------|--------|
 | Stripe | STRIPE_SECRET_KEY | Global |
 | Kiwify | KIWIFY_API_KEY | BR |
 | Monetizze | MONETIZZE_TOKEN | BR |
 | Eduzz | EDUZZ_API_KEY | BR |
 
-## Email Providers
-| Provider | API | Auth | Cost | Specialty |
+## Provedores de E-mail
+| Provedor | API | Autenticacao | Custo | Especialidade |
 |----------|-----|------|------|-----------|
-| Resend | REST | RESEND_API_KEY | Free 3K/mo, $20/50K | Dev-friendly, React Email |
-| SendGrid | REST | SENDGRID_API_KEY | Free 100/day, $19.95/50K | Scale, templates |
-| AWS SES | REST/SMTP | AWS_ACCESS_KEY_ID | $0.10/1K emails | Cost-effective at scale |
-| Mailchimp | REST | MAILCHIMP_API_KEY | Free 500 contacts | No-code, automations |
+| Resend | REST | RESEND_API_KEY | Gratis ate 3 mil/mes, $20/50 mil | Dev-friendly, React Email |
+| SendGrid | REST | SENDGRID_API_KEY | Gratis 100/dia, $19.95/50 mil | Escala, templates |
+| AWS SES | REST/SMTP | AWS_ACCESS_KEY_ID | $0.10/1000 e-mails | Custo-beneficio em escala |
+| Mailchimp | REST | MAILCHIMP_API_KEY | Gratis ate 500 contatos | No-code, automacoes |
 
-## Ad Platforms
-| Platform | API | Auth | Min Budget | Best For |
+## Plataformas de Anuncios
+| Plataforma | API | Autenticacao | Orcamento Minimo | Melhor Para |
 |----------|-----|------|-----------|----------|
-| Meta Ads | Marketing API | META_ACCESS_TOKEN | R$20/day | B2C awareness, retargeting |
-| Google Ads | REST | GOOGLE_ADS_TOKEN | R$10/day | Intent capture, search |
-| TikTok Ads | Marketing API | TIKTOK_ACCESS_TOKEN | R$50/day | Gen-Z, viral content |
-| LinkedIn Ads | Marketing API | LINKEDIN_TOKEN | $10/day | B2B, professional |
+| Meta Ads | Marketing API | META_ACCESS_TOKEN | R$20/dia | Conscientizacao B2C, retargeting |
+| Google Ads | REST | GOOGLE_ADS_TOKEN | R$10/dia | Captura de intencao, busca |
+| TikTok Ads | Marketing API | TIKTOK_ACCESS_TOKEN | R$50/dia | Gen-Z, conteudo viral |
+| LinkedIn Ads | Marketing API | LINKEDIN_TOKEN | $10/dia | B2B, publico profissional |
 
-## Course Platforms
-Hotmart Club (native), Teachable, Thinkific, DS24 member area, Custom LMS.
+## Plataformas de Curso
+Hotmart Club (nativa), Teachable, Thinkific, area de membros da DS24, LMS proprio.
 
-## CEX Production Tools
-| Tool | Purpose | When |
+## Ferramentas de Producao do CEX
+| Ferramenta | Finalidade | Quando |
 |------|---------|------|
-| cex_compile.py | .md → .yaml compilation | After save |
-| cex_hooks.py | Pre/post validation | Before commit |
-| cex_doctor.py | Builder health check | After build |
-| cex_score.py | 5D quality scoring | Peer review |
-| signal_writer.py | Inter-nucleus signals | After complete |
+| cex_compile.py | Compilacao .md → .yaml | Apos salvar |
+| cex_hooks.py | Validacao pre/pos | Antes do commit |
+| cex_doctor.py | Checagem de saude do builder | Apos o build |
+| cex_score.py | Pontuacao de qualidade 5D | Peer review |
+| signal_writer.py | Sinais entre nucleos | Apos concluir |
 
-## Data Sources
-| Source | Path | Data |
+## Fontes de Dados
+| Fonte | Caminho | Dado |
 |--------|------|------|
-| Schema | P06/_schema.yaml | Field definitions |
-| Kind KC | P01_knowledge/library/kind/ | Domain knowledge |
-| Examples | P11_feedback/examples/ | Reference configs |
-| SEED_BANK | archetypes/SEED_BANK.yaml | Builder seeds |
+| Schema | P06/_schema.yaml | Definicoes de campo |
+| Kind KC | P01_knowledge/library/kind/ | Conhecimento de dominio |
+| Exemplos | P11_feedback/examples/ | Configs de referencia |
+| SEED_BANK | archetypes/SEED_BANK.yaml | Seeds de builder |
 
-## Tool Permissions
+## Permissoes de Ferramentas
 
-| Category | Tools | Status |
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| PERMITIDO | Read, Write, Edit, Bash, Glob, Grep | Explicitamente permitido |
+| NEGADO | (nenhuma) | Explicitamente bloqueado |
+| EFETIVO | Bash, Edit, Glob, Grep, Read, Write | PERMITIDO menos NEGADO |
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuacao |
 |----------|-------------|-------|
 | [[bld_prompt_content_monetization]] | upstream | 0.39 |
 | [[bld_knowledge_content_monetization]] | upstream | 0.36 |

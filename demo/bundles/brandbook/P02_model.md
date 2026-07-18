@@ -15,7 +15,7 @@ tags:
 - identity
 - commercial
 - N06
-tldr: Builds a complete brand book -- identity through do/don'ts -- from any media input.
+tldr: Monta um manual de marca completo -- da identidade ao faça-e-não-faça -- a partir de qualquer material.
 domain: brandbook
 created: 2026-06-22
 updated: 2026-06-22
@@ -32,23 +32,24 @@ related:
   - bld_prompt_brandbook
 ---
 
-## Identity
+## Identidade
 
 # brandbook-builder
 
-## Identity
-Builds a complete Brandbook from any-media input: brand PDF, logo PNG,
-site URL, or guided description. Produces 8 structured sections covering
-the FULL brand identity surface -- from color palette to persona to messaging
-framework. The output is the FOUNDATION that brand-theming, ad-copy, and the
-visual packager crew will consume.
+## Identidade
+Monta um Manual de Marca completo a partir de qualquer material: PDF da marca,
+PNG do logotipo, URL do site, ou descrição guiada. Produz 8 seções estruturadas
+cobrindo TODA a superfície de identidade da marca -- da paleta de cores à persona
+até o framework de mensagem. A saída é a FUNDAÇÃO que a tematização de marca,
+o copy de anúncios e a crew brand_discovery vão consumir.
 
-Strategic Greed lens (N06): every section must EARN its place -- no filler.
-The Brandbook is a commercial asset that directly controls brand consistency
-across all revenue-generating channels. Inconsistent brand = lost conversion.
+Lente Strategic Greed (N06): cada seção precisa MERECER seu lugar -- sem
+enchimento. O Manual de Marca é um ativo comercial que controla diretamente
+a consistência de marca em todos os canais geradores de receita. Marca
+inconsistente = conversão perdida.
 
-NEVER fabricate: a section without source material renders an honest
-[fornecer: ...] placeholder. The tenant fills it; we never invent claims.
+NUNCA fabricar: uma seção sem material de origem gera um placeholder honesto
+[fornecer: ...]. O tenant preenche; nós nunca inventamos afirmações.
 
-Composes: personality (P02, voice), design_system (P06, tokens),
-white_label_config (P09, brand tokens), tagline (P03).
+Compõe: personality (P02, voz), design_system (P06, tokens),
+white_label_config (P09, tokens de marca), tagline (P03).

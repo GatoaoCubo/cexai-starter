@@ -3,43 +3,48 @@ kind: collaboration
 id: bld_collaboration_subscription_tier
 pillar: P12
 llm_function: COLLABORATE
-purpose: How subscription_tier-builder works in crews with other builders
+purpose: "Como o subscription-tier-builder trabalha em crews com outros builders"
 quality: null
 title: "Collaboration Subscription Tier"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [subscription_tier, builder, collaboration]
-tldr: "How subscription_tier-builder works in crews with other builders"
-domain: "subscription_tier construction"
+tldr: "Como o subscription-tier-builder trabalha em crews com outros builders"
+domain: "construção de subscription_tier"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F8_collaborate"
-keywords: [subscription_tier construction, collaboration subscription tier, subscription_tier, builder, collaboration, crew role  
-defines, receives from, pricing strategy, product team, billing team]
+keywords: [construção de subscription_tier, collaboration subscription tier, subscription_tier, builder, collaboration, papel na crew, recebe de, estratégia de precificação, time de produto, time de cobrança]
 density_score: 0.85
+related:
+  - bld_collaboration_integration_guide
+  - bld_collaboration_cohort_analysis
+  - bld_orchestration_white_label_config
+  - bld_collaboration_reward_model
+  - bld_collaboration_ab_test_config
 ---
-## Crew Role  
-Defines subscription pricing structures, benefits, and access levels. Collaborates with product, billing, and analytics teams to align tiers with business goals and user needs.  
+## Papel na Crew
+Define estruturas de precificação de assinatura, benefícios e níveis de acesso. Colabora com os times de produto, cobrança e analytics para alinhar os tiers aos objetivos de negócio e às necessidades dos usuários.
 
-## Receives From  
-| Builder        | What                  | Format  |  
-|----------------|-----------------------|---------|  
-| Pricing Strategy | Tier configuration inputs | JSON    |  
-| Product Team   | Feature access mappings | YAML    |  
-| Billing Team   | Payment plan details  | CSV     |  
+## Recebe De
+| Builder        | O Quê                  | Formato  |
+|----------------|-----------------------|---------|
+| Estratégia de Precificação | Entradas de configuração de tier | JSON    |
+| Time de Produto   | Mapeamentos de acesso a funcionalidades | YAML    |
+| Time de Cobrança   | Detalhes do plano de pagamento  | CSV     |
 
-## Produces For  
-| Builder        | What                  | Format  |  
-|----------------|-----------------------|---------|  
-| Pricing Page   | Tier definitions      | JSON    |  
-| Analytics Team | Tier performance data | CSV     |  
-| Customer Support | Tier documentation  | Markdown|  
+## Produz Para
+| Builder        | O Quê                  | Formato  |
+|----------------|-----------------------|---------|
+| Página de Preços   | Definições de tier      | JSON    |
+| Time de Analytics | Dados de performance do tier | CSV     |
+| Suporte ao Cliente | Documentação do tier  | Markdown|
 
-## Boundary  
-Does NOT handle content monetization strategies (Content Team) or pricing page UI (UI Team). Billing integration is handled by Billing Team.
+## Fronteira
+NÃO lida com estratégias de content monetization (Time de Conteúdo) nem com a UI da página de preços (Time de UI). A integração de cobrança é responsabilidade do Time de Cobrança.
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | bld_collaboration_integration_guide | sibling | 0.37 |
 | bld_collaboration_cohort_analysis | sibling | 0.36 |

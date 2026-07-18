@@ -3,41 +3,38 @@ kind: memory
 id: p10_mem_roi_calculator_builder
 pillar: P10
 llm_function: INJECT
-purpose: Learned patterns and pitfalls for roi_calculator construction
+purpose: Padrões aprendidos e armadilhas para a construção de roi_calculator
 quality: null
-title: "Memory Roi Calculator Builder"
+title: "Memória -- ROI Calculator Builder"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [roi_calculator, builder, memory]
-tldr: "Learned patterns and pitfalls for roi_calculator construction"
-domain: "roi_calculator construction"
+tldr: "Padrões aprendidos e armadilhas para a construção de roi_calculator"
+domain: "construção de roi_calculator"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F3_inject"
-keywords: [roi_calculator construction, memory roi calculator builder, roi_calculator, builder, memory, observation
-common, pattern
-successful, evidence
-reviewed, related artifacts, comparison logic]
+keywords: [construção de roi_calculator, memória do roi calculator builder, roi_calculator, builder, memory, observação comum, padrão bem-sucedido, evidência revisada, related artifacts, lógica de comparação]
 density_score: 0.85
 related:
   - roi-calculator-builder
   - kc_roi_calculator
 ---
-## Observation
-Common issues include inconsistent formula definitions, missing TCO comparison logic, and unclear input parameter boundaries, leading to misaligned economic buyer expectations.
+## Observação
+Os problemas mais comuns incluem definições de fórmula inconsistentes, lógica de comparação de TCO ausente e limites de parâmetros de entrada pouco claros, gerando expectativas desalinhadas para os compradores econômicos.
 
-## Pattern
-Successful artifacts use standardized input templates (e.g., upfront costs, annual savings) and explicit TCO formulas, ensuring transparency for decision-makers.
+## Padrão
+Os artefatos bem-sucedidos usam modelos de entrada padronizados (ex.: custos iniciais, economia anual) e fórmulas de TCO explícitas, garantindo transparência para os tomadores de decisão.
 
-## Evidence
-Reviewed artifacts from Q3 2023 demonstrated 30% faster validation when TCO was compared against baseline scenarios using identical metrics.
+## Evidência
+Artefatos revisados no 3o trimestre de 2023 demonstraram validação 30% mais rápida quando o TCO era comparado com cenários de linha de base usando as mesmas métricas.
 
-## Recommendations
-- Define input parameters with explicit units and ranges.
-- Embed TCO comparison logic as a core formula, not a post-calculation step.
-- Align formulas with economic buyer KPIs (e.g., payback period, NPV).
-- Avoid conflating ROI calculator logic with operational cost tracking.
-- Validate against edge cases (e.g., zero savings, infinite horizon).
+## Recomendações
+- Definir os parâmetros de entrada com unidades e faixas explícitas.
+- Incorporar a lógica de comparação de TCO como uma fórmula central, não como uma etapa pós-cálculo.
+- Alinhar as fórmulas com os KPIs do comprador econômico (ex.: prazo de retorno, NPV).
+- Evitar confundir a lógica da calculadora de ROI com o rastreamento de custos operacionais.
+- Validar contra casos-limite (ex.: economia zero, horizonte infinito).
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

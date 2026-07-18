@@ -3,8 +3,8 @@ kind: config
 id: bld_config_research_pipeline
 pillar: P09
 llm_function: CONSTRAIN
-purpose: Naming conventions, file paths, size limits, operational constraints
-pattern: CONFIG restricts SCHEMA, never contradicts it
+purpose: Convenções de nomenclatura, caminhos de arquivo, limites de tamanho, restrições operacionais
+pattern: CONFIG restringe SCHEMA, nunca o contradiz
 effort: high
 max_turns: 25
 disallowed_tools: [Write, Edit]
@@ -16,12 +16,12 @@ hooks:
   on_quality_fail: null
 permission_scope: nucleus
 quality: null
-title: "Config Research Pipeline"
+title: "Configuração: Pipeline de Pesquisa"
 version: "1.0.0"
 author: n03_builder
 tags: [research_pipeline, builder, examples]
-tldr: "Golden and anti-examples for research pipeline construction, demonstrating ideal structure and common pitfalls."
-domain: "research pipeline construction"
+tldr: "Exemplos-modelo e anti-exemplos para a construção de pipelines de pesquisa, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de pipeline de pesquisa"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
@@ -30,61 +30,61 @@ density_score: 0.90
 related:
   - bld_config_content_monetization
 ---
-# Config: research_pipeline Production Rules
+# Config: Regras de Produção do research_pipeline
 
-## Naming Convention
-| Scope | Convention | Example |
+## Convenção de Nomenclatura
+| Escopo | Convenção | Exemplo |
 |-------|-----------|---------|
-| Config file | `research_pipeline_config_{empresa}.yaml` | `research_pipeline_config_acme.yaml` |
+| Arquivo de config | `research_pipeline_config_{empresa}.yaml` | `research_pipeline_config_acme.yaml` |
 | Template | `tpl_research_pipeline.md` | P04_tools/templates/ |
-| Examples | `ex_research_pipeline_{niche}.md` | `ex_research_pipeline_ecommerce_br.md` |
-| Instance | `research_pipeline_config.md` | _instances/{co}/N01_intelligence/ |
-| Frontmatter id | `p04_cli_research_pipeline_{slug}` | `p04_cli_research_pipeline_acme` |
+| Exemplos | `ex_research_pipeline_{niche}.md` | `ex_research_pipeline_ecommerce_br.md` |
+| Instância | `research_pipeline_config.md` | _instances/{co}/N01_intelligence/ |
+| ID do frontmatter | `p04_cli_research_pipeline_{slug}` | `p04_cli_research_pipeline_acme` |
 
-## Size Limits
-| Artifact | Max Size | Rationale |
+## Limites de Tamanho
+| Artefato | Tamanho Máximo | Motivo |
 |----------|---------|-----------|
-| Config YAML | 4096 bytes | Dense config, human-editable |
-| Template | 4096 bytes | Builder ISO limit |
-| Example | 4096 bytes | Builder ISO limit |
-| KC | 4096 bytes | Standard KC size |
+| Config YAML | 4096 bytes | Config densa, editável por humanos |
+| Template | 4096 bytes | Limite do ISO do builder |
+| Exemplo | 4096 bytes | Limite do ISO do builder |
+| KC | 4096 bytes | Tamanho padrão de KC |
 
-## Source Categories (reference)
-| Category | Description | Common Sources |
+## Categorias de Fonte (referência)
+| Categoria | Descrição | Fontes Comuns |
 |----------|------------|----------------|
-| inbound | Product/listing data from marketplaces | mercadolivre, shopee, amazon, magalu, g2, capterra |
-| outbound | Social intelligence, reviews, community | youtube, reddit, reclameaqui, hackernews, twitter |
-| search | Web search engines | serper, exa, gemini_search, openai_search, brave, tavily |
-| trends | Price tracking, trend analysis | pytrends, keepa, semrush |
-| rag | Internal knowledge base | local_docs, supabase_embeddings, confluence |
+| inbound | Dados de produto/listagem de marketplaces | mercadolivre, shopee, amazon, magalu, g2, capterra |
+| outbound | Inteligência social, reviews, comunidade | youtube, reddit, reclameaqui, hackernews, twitter |
+| search | Motores de busca web | serper, exa, gemini_search, openai_search, brave, tavily |
+| trends | Rastreamento de preço, análise de tendência | pytrends, keepa, semrush |
+| rag | Base de conhecimento interna | local_docs, supabase_embeddings, confluence |
 
-## API Cost Reference
-| Source | Cost | Rate Limit | Auth |
+## Referência de Custo de API
+| Fonte | Custo | Rate Limit | Autenticação |
 |--------|------|-----------|------|
 | Serper | $0.30/1K queries | 100/min | SERPER_API_KEY |
-| Firecrawl | $19/mo (3K credits) | 10/min | FIRECRAWL_API_KEY |
+| Firecrawl | $19/mês (3K créditos) | 10/min | FIRECRAWL_API_KEY |
 | Exa | $0.10/query | 60/min | EXA_API_KEY |
-| YouTube | Free (10K/day) | 10K/day | YOUTUBE_API_KEY |
-| Keepa | €19/mo (5K tokens) | 5/min | KEEPA_API_KEY |
-| pytrends | Free | 1/3s (unofficial) | none |
-| Reddit | Free (OAuth) | 60/min | REDDIT_CLIENT_ID |
+| YouTube | Grátis (10K/dia) | 10K/dia | YOUTUBE_API_KEY |
+| Keepa | €19/mês (5K tokens) | 5/min | KEEPA_API_KEY |
+| pytrends | Grátis | 1/3s (não oficial) | nenhuma |
+| Reddit | Grátis (OAuth) | 60/min | REDDIT_CLIENT_ID |
 
-## File Placement Rules
-| Artifact Type | Directory | Pillar |
+## Regras de Posicionamento de Arquivos
+| Tipo de Artefato | Diretório | Pillar |
 |--------------|-----------|--------|
 | Template | P04_tools/templates/ | P04 |
-| Examples | P04_tools/examples/ | P04 |
-| Compiled | P04_tools/compiled/ | P04 |
-| Nucleus tool | N01_intelligence/P04_tools/ | P04 |
-| Nucleus KCs | N01_intelligence/P01_knowledge/ | P01 |
-| Dispatch rule | N01_intelligence/P12_orchestration/ | P12 |
-| Company config | _instances/{co}/N01_intelligence/ | instance |
+| Exemplos | P04_tools/examples/ | P04 |
+| Compilado | P04_tools/compiled/ | P04 |
+| Ferramenta do nucleus | N01_intelligence/P04_tools/ | P04 |
+| KCs do nucleus | N01_intelligence/P01_knowledge/ | P01 |
+| Regra de dispatch | N01_intelligence/P12_orchestration/ | P12 |
+| Config da empresa | _instances/{co}/N01_intelligence/ | instância |
 
-## Security Rules
-1. API keys: NEVER in plaintext → always ENV_VAR (SCREAMING_SNAKE_CASE)
-2. Source URLs: parameterize base URLs when possible
-3. Config files: NEVER commit with real secrets → `.env.example` pattern
-4. Marketplace schemas: safe to commit (extraction field names, not auth)
+## Regras de Segurança
+1. Chaves de API: NUNCA em texto plano → sempre ENV_VAR (SCREAMING_SNAKE_CASE)
+2. URLs de fonte: parametrize as URLs base sempre que possível
+3. Arquivos de config: NUNCA fazer commit com segredos reais → padrão `.env.example`
+4. Schemas de marketplace: seguro fazer commit (nomes de campo de extração, não autenticação)
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

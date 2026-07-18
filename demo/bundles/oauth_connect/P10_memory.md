@@ -3,14 +3,14 @@ kind: learning_record
 id: p10_lr_oauth_app_config_builder
 pillar: P10
 llm_function: INJECT
-purpose: Learned patterns and pitfalls for oauth_app_config construction
+purpose: Padrões aprendidos e armadilhas na construção de oauth_app_config
 quality: null
 title: "Learning Record Oauth App Config"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [oauth_app_config, builder, learning_record]
-tldr: "Learned patterns and pitfalls for oauth_app_config construction"
-domain: "oauth_app_config construction"
+tldr: "Padrões aprendidos e armadilhas na construção de oauth_app_config"
+domain: "construção de oauth_app_config"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F7_govern"
@@ -22,21 +22,21 @@ density_score: 0.85
 related:
   - kc_oauth_app_config
 ---
-## Observation
-Misconfigured redirect URIs and overly broad scopes are common, leading to security risks or integration failures. Token lifetimes and refresh policies often conflict with partner system constraints.
+## Observação
+Redirect URIs malconfigurados e escopos excessivamente amplos são comuns, gerando riscos de segurança ou falhas de integração. O tempo de vida dos tokens e as políticas de refresh frequentemente conflitam com as restrições dos sistemas parceiros.
 
-## Pattern
-Modular configs with environment-specific overrides work well. Clear separation of scope groups (e.g., "read-only," "admin") improves maintainability and security.
+## Padrão
+Configurações modulares com overrides específicos por ambiente funcionam bem. A separação clara de grupos de escopo (ex.: "somente leitura", "admin") melhora a manutenibilidade e a segurança.
 
-## Evidence
-Reviewed 15 configs; 70% had redundant scope definitions. 3 configs failed due to mismatched redirect URI schemes (http vs. https).
+## Evidência
+Foram revisadas 15 configurações; 70% tinham definições de escopo redundantes. 3 configurações falharam por incompatibilidade de esquema no redirect URI (http vs. https).
 
-## Recommendations
-- Validate redirect URIs against partner domains during config creation.
-- Use predefined scope groups to avoid duplication and enforce least-privilege principles.
-- Align token lifetimes with partner SLAs (e.g., 1 hour for sensitive APIs).
-- Document refresh policy thresholds (e.g., "token refresh disabled for short-lived sessions").
-- Automate checks for required fields (client_id, redirect_uri) in CI/CD pipelines.
+## Recomendações
+- Validar os redirect URIs contra os domínios do parceiro durante a criação da configuração.
+- Usar grupos de escopo predefinidos para evitar duplicação e reforçar o princípio do menor privilégio.
+- Alinhar o tempo de vida dos tokens aos SLAs do parceiro (ex.: 1 hora para APIs sensíveis).
+- Documentar os limites da política de refresh (ex.: "refresh de token desabilitado para sessões de curta duração").
+- Automatizar checagens de campos obrigatórios (client_id, redirect_uri) nos pipelines de CI/CD.
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

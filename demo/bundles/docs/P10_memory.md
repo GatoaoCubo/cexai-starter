@@ -25,52 +25,69 @@ quality: null
 title: Memory ISO - knowledge_card
 8f: "F7_govern"
 density_score: 0.95
+related:
+  - prompt_template_bullets_anuncio
+  - prompt-cache-builder
+  - bld_collaboration_prompt_cache
+  - n00_prompt_cache_manifest
+  - p01_kc_creation_best_practices
+  - bld_knowledge_card_prompt_cache
+  - ex_knowledge_card_prompt_caching
+  - p08_pat_caching_strategy
+  - bld_tools_prompt_cache
+  - p06_bp_knowledge_card
 ---
-## Summary
-Knowledge cards distill domain knowledge into high-density atomic facts. The primary quality gate is density >= 0.80 — the ratio of informative content to total words. The most reliable path to high density is structural: replace prose with bullets, replace descriptions with tables, and eliminate all filler language.
-## Pattern
-Density boosting techniques (apply in order):
-1. **Prose -> bullets** - Convert every paragraph into a bullet list. Each bullet = one fact. If a bullet needs a sub-fact, use a nested bullet, not a compound sentence.
-2. **Descriptions -> tables** - Convert any comparison, enumeration, or mapping into a markdown table. Tables carry ~3x the information per line compared to prose.
-3. **Remove transitions** - Delete: "as we can see", "it is worth noting", "in summary", "this document", "the following". These add zero information.
-4. **Bullet length** - Each bullet under 80 characters. If over, split into two bullets or use a table.
-5. **Axiom format** - Every axiom must be an imperative starting with ALWAYS or NEVER. Not "caching is important" but "ALWAYS declare TTL when caching, NEVER cache without expiry".
-Frontmatter rules:
-- `quality: null` always — scoring is external, never self-assigned
-- `id` slug uses underscores: `p01_kc_topic_name`
-- `tags` as YAML list, not comma-separated string
-- No paths containing `records/`, `.claude/`, `/home/`, `C:\` anywhere in the card
-Body size constraints: minimum 200 bytes (4+ sections with 3+ lines each), maximum 5KB.
-## Anti-Pattern
-- Prose paragraphs — density drops below 0.70 immediately.
-- Bullets over 80 chars — validator S10 catches, forces reformatting.
-- Axiom as observation: "Caching improves performance" — must be "ALWAYS declare cache TTL".
-- `quality: 8.5` — validator H05 rejects any non-null value.
-- `tags: "ai, ml, cache"` as string — validator H07 rejects, must be YAML list.
-- Internal paths in any field — validator H09 rejects, breaks portability.
-- Self-referencing tldr: "This card describes caching" — tldr must be the direct fact, not a description of the card.
-## Context
+## Resumo
+Artefatos knowledge_card destilam conhecimento de dominio em fatos atomicos de alta densidade. O principal gate de qualidade e densidade >= 0.80 -- a razao entre conteudo informativo e total de palavras. O caminho mais confiavel para alta densidade e estrutural: substituir prosa por bullets, substituir descricoes por tabelas, e eliminar toda linguagem de enchimento.
+## Padrao
+Tecnicas de aumento de densidade (aplicar em ordem):
+1. **Prosa -> bullets** - Converta cada paragrafo em uma lista de bullets. Cada bullet = um fato. Se um bullet precisar de um subfato, use um bullet aninhado, nao uma frase composta.
+2. **Descricoes -> tabelas** - Converta qualquer comparacao, enumeracao ou mapeamento em uma tabela markdown. Tabelas carregam ~3x mais informacao por linha do que prosa.
+3. **Remova transicoes** - Elimine: "como podemos ver", "vale notar", "em resumo", "este documento", "a seguir". Elas nao agregam nenhuma informacao.
+4. **Tamanho do bullet** - Cada bullet com menos de 80 caracteres. Se ultrapassar, divida em dois bullets ou use uma tabela.
+5. **Formato do axioma** - Todo axioma deve ser um imperativo comecando com ALWAYS ou NEVER. Nao "cache e importante" mas "ALWAYS declare o TTL ao usar cache, NEVER faca cache sem expiracao".
+Regras de frontmatter:
+- `quality: null` sempre -- a pontuacao e externa, nunca autoatribuida
+- o slug do `id` usa underscores: `p01_kc_topic_name`
+- `tags` como lista YAML, nao como string separada por virgulas
+- Nenhum caminho contendo `records/`, `.claude/`, `/home/`, `C:\` em nenhum lugar do card
+Restricoes de tamanho do corpo: minimo 200 bytes (4+ secoes com 3+ linhas cada), maximo 5KB.
+## Antipadrao
+- Paragrafos em prosa -- a densidade cai abaixo de 0.70 imediatamente.
+- Bullets com mais de 80 caracteres -- o validador S10 detecta e forca reformatacao.
+- Axioma como observacao: "Cache melhora a performance" -- deve ser "ALWAYS declare o TTL do cache".
+- `quality: 8.5` -- o validador H05 rejeita qualquer valor diferente de null.
+- `tags: "ai, ml, cache"` como string -- o validador H07 rejeita, deve ser lista YAML.
+- Caminhos internos em qualquer campo -- o validador H09 rejeita, quebra a portabilidade.
+- tldr autorreferente: "Este card descreve cache" -- o tldr deve ser o fato direto, nao uma descricao do card.
+## Contexto
 
 
-## Production Log
+## Log de Producao
 
 - [20260331_214115] PASS kind=knowledge_card retries=0 gates=6/6
 
 - [20260331_214308] PASS kind=knowledge_card retries=0 gates=6/6
 
-## Boundary
+## Fronteira
 
-Persistent learning record. NOT session_state (ephemeral) nor axiom (immutable, does not learn).
+Registro de aprendizado persistente. NAO e session_state (efemero) nem axiom (imutavel, nao aprende).
 
 
-## 8F Pipeline Function
+## Funcao no Pipeline 8F
 
-Primary function: **INJECT**
+Funcao primaria: **INJECT**
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuacao |
 |----------|-------------|-------|
-| p01_kc_creation_best_practices | upstream | 0.36 |
-| p01_kc_knowledge_best_practices | upstream | 0.32 |
-| p01_kc_artifact_quality_evaluation_methods | upstream | 0.32 |
-| [[bld_prompt_knowledge_card]] | upstream | 0.28 |
+| [[prompt_template_bullets_anuncio]] | a montante | 0.26 |
+| [[prompt-cache-builder]] | relacionado | 0.24 |
+| [[bld_collaboration_prompt_cache]] | a jusante | 0.23 |
+| [[n00_prompt_cache_manifest]] | relacionado | 0.19 |
+| [[p01_kc_creation_best_practices]] | a montante | 0.19 |
+| [[bld_knowledge_card_prompt_cache]] | a montante | 0.18 |
+| [[ex_knowledge_card_prompt_caching]] | a montante | 0.18 |
+| [[p08_pat_caching_strategy]] | a montante | 0.18 |
+| [[bld_tools_prompt_cache]] | a montante | 0.18 |
+| [[p06_bp_knowledge_card]] | a montante | 0.17 |

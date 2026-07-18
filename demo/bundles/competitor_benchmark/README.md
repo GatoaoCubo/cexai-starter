@@ -1,31 +1,52 @@
-# CEXAI capability bundle: Competitor Benchmark Matrix (`competitor_benchmark`)
+# Pacote de capacidade CEXAI: Matriz de Benchmark de Concorrentes (`competitive_matrix`)
 
-The **12 pillar contract** for the `competitive_matrix` kind, plus the setup config.
+O **contrato de 12 pilares** para o kind `competitive_matrix`, mais a configuração de setup.
 Nucleus N01 . kind `competitive_matrix` . pillar P01.
 
-This is the CEXAI "12 ISO" form -- one specification file per pillar
-(P01-P12), exactly the bundle shown in the course video. Upload the 12
-pillar files as Knowledge to any assistant, paste the instruction, and it
-becomes a working Competitor Benchmark Matrix agent.
+Esta é a forma "12 ISO" da CEXAI -- um arquivo de especificação por pilar
+(P01-P12), exatamente o pacote mostrado no vídeo do curso. Suba os 12
+arquivos de pilar como Knowledge em qualquer assistente, cole a instrução,
+e ele se torna um agente funcional de Matriz de Benchmark de Concorrentes.
 
-## Contents (15 files)
-- `P01_knowledge.md` ... `P12_orchestration.md` -- the 12 pillar ISOs (the
-  builder contract for this kind: one specification per pillar, P01-P12).
-- `customgpt_instructions.json` -- the Custom GPT config: name, description,
-  the `instructions` string to paste, and conversation starters.
-- `system_instruction.md` -- the same instruction as a paste-ready system
-  prompt (for Claude Projects or any model).
-- `README.md` -- this file.
+## Conteúdo (19 arquivos)
+- `P01_knowledge.md` ... `P12_orchestration.md` -- os 12 ISOs de pilar (o
+  contrato de builder para este kind: uma especificação por pilar, P01-P12).
+- `customgpt_instructions.json` -- a config do Custom GPT: nome, descrição,
+  a string `instructions` para colar, e os conversation starters.
+- `system_instruction.md` -- a mesma instrução como system prompt pronto
+  para colar (para Claude Projects ou qualquer modelo).
+- `README.md` -- este arquivo.
+- `SETUP_chatgpt_projects.md` -- passo a passo para ChatGPT Projects.
+- `SETUP_claude_projects.md` -- passo a passo para Claude Projects.
+- `SETUP_gemini_gems.md` -- passo a passo para Gemini Gems.
+- `SETUP_pt-br.md` -- guia geral combinado (visão de todos os runtimes).
 
-## Upload (3 ways)
-- **ChatGPT (Custom GPT):** Explore GPTs -> Create -> Configure. Upload the
-  12 `P0X_*.md` files as Knowledge. Paste the `instructions` field of
-  `customgpt_instructions.json` into the Instructions box.
-- **Claude (Project):** paste `system_instruction.md` into Custom
-  instructions; attach the 12 pillar files to the project knowledge.
-- **Any AI:** paste `system_instruction.md` as the system prompt.
+## Upload (funciona em qualquer IA)
 
-## Provenance / honesty
-Never-fabricate: any `[fornecer: ...]` marker is a field with no real input
--- fill it in with your own brand before use. The 12 pillar ISOs are the
-generic, public builder contract for `competitive_matrix` -- no tenant data.
+1. **Crie o container**: um Custom GPT (ChatGPT), um Project (ChatGPT ou
+   Claude) ou um Gem (Gemini). Veja o guia específico do seu runtime na
+   tabela abaixo.
+2. **Cole a instrução**: use o campo `instructions` de
+   `customgpt_instructions.json` (ou o conteúdo integral de
+   `system_instruction.md`, são equivalentes) no campo de instruções/system
+   prompt do seu runtime.
+3. **Suba os 12 arquivos de conhecimento**: `P01_knowledge.md` até
+   `P12_orchestration.md`, como Knowledge/Files/context do seu runtime.
+4. **Teste** com o conversation starter: "Comparar `<produto>` com
+   `<concorrentes>` em preço, funcionalidades e posicionamento".
+
+| Runtime | Guia dedicado | Esforço |
+|---------|----------------|--------|
+| **ChatGPT (Custom GPT)** | Explore GPTs -> Create -> Configure. Suba os 12 arquivos `P0X_*.md` como Knowledge. Cole o campo `instructions` de `customgpt_instructions.json` na caixa de Instructions. | ~10 min |
+| **ChatGPT (Projects, plano free)** | `SETUP_chatgpt_projects.md` | ~5 min |
+| **Claude (Project)** | `SETUP_claude_projects.md` | ~10 min |
+| **Gemini (Gems)** | `SETUP_gemini_gems.md` | ~5 min |
+| **Qualquer IA (fallback universal)** | Cole `system_instruction.md` como system prompt; anexe os 12 arquivos como contexto/arquivos se o runtime suportar. | ~5 min |
+
+Para uma visão combinada dos 4 caminhos acima, veja `SETUP_pt-br.md`.
+
+## Procedência / honestidade
+Nunca fabricar: todo marcador `[fornecer: ...]` é um campo sem entrada real
+-- preencha com a sua própria marca antes de usar. Os 12 ISOs de pilar são
+o contrato de builder genérico e público para `competitive_matrix` -- sem
+dados de nenhum tenant.

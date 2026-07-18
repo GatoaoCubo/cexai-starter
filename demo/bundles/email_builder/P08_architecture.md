@@ -3,14 +3,14 @@ kind: architecture
 id: bld_architecture_prompt_template
 pillar: P08
 llm_function: CONSTRAIN
-purpose: Component map of prompt_template — inventory, dependencies, and architectural position
+purpose: Mapa de componentes de prompt_template -- inventário, dependências e posição arquitetural
 quality: null
 title: "Architecture Prompt Template"
 version: "1.0.0"
 author: n03_builder
 tags: [prompt_template, builder, examples]
-tldr: "Golden and anti-examples for prompt template construction, demonstrating ideal structure and common pitfalls."
-domain: "prompt template construction"
+tldr: "Exemplos-modelo e antiexemplos para a construção de prompt template, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de prompt template"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
@@ -20,47 +20,51 @@ related:
   - prompt-template-builder
   - bld_memory_prompt_template
 ---
-# Architecture: prompt_template in the CEX
-## Component Inventory
-| Name | Role | Owner | Status |
+# Arquitetura: prompt_template no CEX
+
+## Inventário de Componentes
+| Nome | Papel | Dono | Status |
 |------|------|-------|--------|
-| frontmatter block | Metadata header (id, kind, pillar, domain, variables, syntax_tier, etc.) | prompt-template-builder | active |
-| variable_declarations | Typed variable slots with names, types, defaults, and descriptions | author | active |
-| template_body | Parameterized text with `{{variable}}` or [VAR] placeholders | author | active |
-| syntax_tier | Interpolation syntax level (tier-1 Mustache, tier-2 bracket) | author | active |
-| rendering_context | Runtime context required to fill variables (data sources, APIs) | author | active |
-| example_fills | Concrete variable fills demonstrating valid template usage | author | active |
-## Dependency Graph
+| frontmatter block | Cabeçalho de metadados (id, kind, pillar, domain, variables, syntax_tier, etc.) | prompt-template-builder | ativo |
+| variable_declarations | Slots de variável tipados, com nomes, tipos, defaults e descrições | autor | ativo |
+| template_body | Texto parametrizado com placeholders `{{variable}}` ou [VAR] | autor | ativo |
+| syntax_tier | Nível de sintaxe de interpolação (tier-1 Mustache, tier-2 bracket) | autor | ativo |
+| rendering_context | Contexto de runtime necessário para preencher as variáveis (fontes de dados, APIs) | autor | ativo |
+| example_fills | Preenchimentos concretos de variável demonstrando o uso válido do template | autor | ativo |
+
+## Grafo de Dependências
 ```
 type_def        --produces-->  prompt_template  --consumed_by-->  renderer
 knowledge_card  --produces-->  prompt_template  --produces-->     filled_prompt
 prompt_template --signals-->   render_error
 ```
-| From | To | Type | Data |
+| De | Para | Tipo | Dado |
 |------|----|------|------|
-| type_def (P06) | prompt_template | data_flow | type definitions for variable constraints |
-| knowledge_card (P01) | prompt_template | data_flow | domain facts injected as variable values |
-| prompt_template | renderer (LangChain/DSPy/Mustache) | consumes | template consumed by rendering engine |
-| prompt_template | filled_prompt | produces | concrete prompt after variable substitution |
-| prompt_template | render_error (P12) | signals | emitted when variable fill fails validation |
-| system_prompt (P03) | prompt_template | dependency | system identity may constrain template scope |
-## Boundary Table
-| prompt_template IS | prompt_template IS NOT |
+| type_def (P06) | prompt_template | data_flow | definições de tipo para as constraints de variável |
+| knowledge_card (P01) | prompt_template | data_flow | fatos de domínio injetados como valores de variável |
+| prompt_template | renderer (LangChain/DSPy/Mustache) | consumes | template consumido pelo motor de renderização |
+| prompt_template | filled_prompt | produces | prompt concreto após a substituição de variável |
+| prompt_template | render_error (P12) | signals | emitido quando o preenchimento de variável falha na validação |
+| system_prompt (P03) | prompt_template | dependency | a identidade de sistema pode restringir o escopo do template |
+
+## Tabela de Fronteira
+| prompt_template É | prompt_template NÃO É |
 |--------------------|------------------------|
-| A reusable mold with `{{variable}}` slots for multiple invocations | A one-time task instruction (action_prompt P03) |
-| Structure separated from content via parameterization | A fixed system identity definition (system_prompt P03) |
-| Rendered by LangChain, DSPy, Mustache, or Jinja2 engines | A step-by-step recipe without variables (instruction P03) |
-| Variable-typed with defaults and validation constraints | A raw user message without structure |
-| Invoked multiple times with different variable fills | A single-use prompt discarded after execution |
-| Produces filled prompts — not direct LLM responses | A meta-prompt that generates other prompts |
-## Layer Map
-| Layer | Components | Purpose |
+| Um molde reutilizável com slots `{{variable}}` para múltiplas invocações | Uma instrução de tarefa única (action_prompt P03) |
+| Estrutura separada do conteúdo via parametrização | Uma definição de identidade de sistema fixa (system_prompt P03) |
+| Renderizado por motores LangChain, DSPy, Mustache ou Jinja2 | Uma receita passo a passo sem variáveis (instruction P03) |
+| Tipado por variável, com defaults e constraints de validação | Uma mensagem de usuário crua, sem estrutura |
+| Invocado múltiplas vezes com diferentes preenchimentos de variável | Um prompt de uso único, descartado após a execução |
+| Produz prompts preenchidos -- não respostas diretas do LLM | Um meta-prompt que gera outros prompts |
+
+## Mapa de Camadas
+| Camada | Componentes | Propósito |
 |-------|------------|---------|
-| Types | type_def | Supply type definitions for variable constraints |
-| Definition | frontmatter, variable_declarations, syntax_tier | Specify template identity and variable slots |
-| Template | template_body, example_fills | The parameterized text and usage examples |
-| Rendering | rendering_context, renderer | Runtime fill and template engine execution |
-| Output | filled_prompt, render_error | Concrete prompt produced or error signaled |
+| Tipos | type_def | Fornecer definições de tipo para as constraints de variável |
+| Definição | frontmatter, variable_declarations, syntax_tier | Especificar a identidade do template e os slots de variável |
+| Template | template_body, example_fills | O texto parametrizado e os exemplos de uso |
+| Renderização | rendering_context, renderer | Preenchimento em runtime e execução do motor de template |
+| Saída | filled_prompt, render_error | Prompt concreto produzido ou erro sinalizado |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

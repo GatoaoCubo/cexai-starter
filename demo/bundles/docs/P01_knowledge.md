@@ -33,60 +33,60 @@ density_score: 0.90
 related:
   - knowledge-card-builder
 ---
-# Domain Knowledge: knowledge_card
-## Executive Summary
-Knowledge cards are atomic searchable facts — the smallest retrieval unit in a knowledge system. Each card answers ONE question about ONE topic with density >= 0.80 (>80% concrete data, no filler). Cards are retrieved via hybrid search (BM25 + vector) using frontmatter fields. They differ from model cards (LLM specs), learning records (internal experience), and context docs (domain background).
-## Spec Table
-| Property | Value |
+# Conhecimento de Dominio: knowledge_card
+## Resumo Executivo
+Artefatos knowledge_card sao fatos atomicos pesquisaveis -- a menor unidade de recuperacao em um sistema de conhecimento. Cada card responde a UMA pergunta sobre UM topico com densidade >= 0.80 (mais de 80% de dado concreto, sem enchimento). Os cards sao recuperados via busca hibrida (BM25 + vetor) usando os campos do frontmatter. Eles se diferenciam de model cards (especificacoes de LLM), learning records (experiencia interna) e context docs (contexto de dominio).
+## Tabela de Especificacao
+| Propriedade | Valor |
 |----------|-------|
 | Pillar | P01 (knowledge) |
-| Frontmatter fields | 14 required + 5 extended |
-| Quality gates | 10 HARD + 20 SOFT |
-| Max body | 5120 bytes |
-| Min body | 200 bytes |
-| Density minimum | >= 0.80 |
-| Size sweet spot | 50-80 lines (single concept), 80-120 (multi-pattern) |
-| Scoring dimensions | D1 Frontmatter, D2 Density, D3 Axioms, D4 Structure, D5 Format |
-## Patterns
-- **Retrieval surface**: frontmatter fields drive search discovery
-| Field | Retrieval role | Pattern |
+| Campos de frontmatter | 14 obrigatorios + 5 estendidos |
+| Gates de qualidade | 10 HARD + 20 SOFT |
+| Corpo maximo | 5120 bytes |
+| Corpo minimo | 200 bytes |
+| Densidade minima | >= 0.80 |
+| Faixa ideal de tamanho | 50-80 linhas (conceito unico), 80-120 (multiplos padroes) |
+| Dimensoes de pontuacao | D1 Frontmatter, D2 Densidade, D3 Axiomas, D4 Estrutura, D5 Formato |
+## Padroes
+- **Superficie de recuperacao**: os campos de frontmatter direcionam a descoberta na busca
+| Campo | Papel na recuperacao | Padrao |
 |-------|---------------|---------|
-| tldr | Primary match (BM25 + embedding) | Specific: "Execute CLI via subprocess, retry 3x" |
-| tags | Faceted filtering, clustering | 3-7 tags, mix domain + technique |
-| keywords | BM25 exact match boost | 2-5 terms user would literally type |
-| long_tails | Semantic/vector search | Full phrases: "how to handle concurrent token refresh" |
-| when_to_use | Agent activation trigger | Specific context, not "when needed" |
-- **Density hierarchy** (most to least info/token): tables > code blocks > bullets > ASCII diagrams > paragraphs
-- **Two body structures**: domain_kc (external knowledge: Quick Ref, Key Concepts, Strategy, Golden Rules, Flow, References) and meta_kc (system-internal: Exec Summary, Spec Table, Patterns, Anti-Patterns, Application, References)
-- **Density gate**: density = data_lines / total_non_empty_lines; < 0.80 = card fails regardless of other quality
-- **Axiom form**: ALWAYS/NEVER/IF-THEN with condition + action + consequence
-## Anti-Patterns
-| Anti-Pattern | Why it fails |
+| tldr | Match primario (BM25 + embedding) | Especifico: "Executar CLI via subprocess, retry 3x" |
+| tags | Filtragem por faceta, clustering | 3-7 tags, misturando dominio + tecnica |
+| keywords | Reforco de match exato no BM25 | 2-5 termos que o usuario realmente digitaria |
+| long_tails | Busca semantica/vetorial | Frases completas: "como lidar com refresh concorrente de token" |
+| when_to_use | Gatilho de ativacao do agente | Contexto especifico, nao "quando necessario" |
+- **Hierarquia de densidade** (do mais ao menos informativo por token): tabelas > blocos de codigo > bullets > diagramas ASCII > paragrafos
+- **Duas estruturas de corpo**: domain_kc (conhecimento externo: Referencia Rapida, Conceitos-Chave, Estrategia, Regras de Ouro, Fluxo, Referencias) e meta_kc (interno ao sistema: Resumo Executivo, Tabela de Especificacao, Padroes, Antipadroes, Aplicacao, Referencias)
+- **Gate de densidade**: densidade = linhas_de_dado / linhas_nao_vazias_totais; < 0.80 = o card falha independentemente da demais qualidade
+- **Forma do axioma**: ALWAYS/NEVER/IF-THEN com condicao + acao + consequencia
+## Antipadroes
+| Antipadrao | Por que falha |
 |-------------|-------------|
-| Vague tldr ("How to use CLI") | No search signal; returns wrong in BM25 |
-| Prose body | Low density; convert to tables, bullets, code |
-| Template residue (`{{placeholder}}`) | Unfilled fields; looks incomplete |
-| Frontmatter echo in body | Body repeats title/tldr; adds zero depth |
-| Giant monolith (300+ lines) | Split into 2+ focused atomic cards |
-| density < 0.80 | Card fails regardless of other quality scores |
-## Application
-1. Define ONE topic: what single question does this card answer?
-2. Write frontmatter: all 14 required fields with specific, search-optimized values
-3. Select body structure: domain_kc (external) or meta_kc (internal)
-4. Write dense body: tables first, bullets second, paragraphs only when necessary
-5. Check density: data_lines / total >= 0.80
-6. Validate: <= 5120 bytes, >= 200 bytes, axioms in ALWAYS/NEVER/IF-THEN form
-## References
-- validate_kc.py v2.0: 10 HARD + 20 SOFT gate validator
-- _schema.yaml v4.0: canonical field definitions for knowledge_card
-- 721 real knowledge cards: empirical patterns (p95 body = 4274 bytes)
-- Information retrieval: BM25 + vector hybrid search for dense retrieval
+| tldr vago ("Como usar a CLI") | Sem sinal de busca; retorna errado no BM25 |
+| Corpo em prosa | Densidade baixa; converta para tabelas, bullets, codigo |
+| Residuo de template (`{{placeholder}}`) | Campos nao preenchidos; parece incompleto |
+| Eco do frontmatter no corpo | O corpo repete title/tldr; nao agrega profundidade |
+| Monolito gigante (300+ linhas) | Divida em 2+ cards atomicos focados |
+| densidade < 0.80 | O card falha independentemente das demais pontuacoes de qualidade |
+## Aplicacao
+1. Defina UM topico: qual pergunta unica este card responde?
+2. Escreva o frontmatter: os 14 campos obrigatorios com valores especificos e otimizados para busca
+3. Selecione a estrutura do corpo: domain_kc (externo) ou meta_kc (interno)
+4. Escreva um corpo denso: tabelas primeiro, bullets em segundo, paragrafos somente quando necessario
+5. Verifique a densidade: linhas_de_dado / total >= 0.80
+6. Valide: <= 5120 bytes, >= 200 bytes, axiomas na forma ALWAYS/NEVER/IF-THEN
+## Referencias
+- validate_kc.py v2.0: validador de gates 10 HARD + 20 SOFT
+- _schema.yaml v4.0: definicoes canonicas de campos para knowledge_card
+- 721 knowledge cards reais: padroes empiricos (corpo p95 = 4274 bytes)
+- Information retrieval: busca hibrida BM25 + vetor para recuperacao densa
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuacao |
 |----------|-------------|-------|
-| p01_kc_knowledge_best_practices | sibling | 0.41 |
-| [[knowledge-card-builder]] | downstream | 0.39 |
-| p01_kc_creation_best_practices | sibling | 0.38 |
-| [[bld_prompt_knowledge_card]] | downstream | 0.38 |
-| [[bld_orchestration_knowledge_card]] | downstream | 0.32 |
+| p01_kc_knowledge_best_practices | irmao | 0.41 |
+| [[knowledge-card-builder]] | a jusante | 0.39 |
+| p01_kc_creation_best_practices | irmao | 0.38 |
+| [[bld_prompt_knowledge_card]] | a jusante | 0.38 |
+| [[bld_orchestration_knowledge_card]] | a jusante | 0.32 |

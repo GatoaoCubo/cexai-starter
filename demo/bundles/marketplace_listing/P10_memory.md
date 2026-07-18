@@ -8,11 +8,11 @@ version: 1.0.0
 created: "2026-07-02"
 updated: "2026-07-02"
 author: n03_builder
-title: "Patterns: marketplace_listing builds"
+title: "Padrões: construções de marketplace_listing"
 domain: marketplace_listing
 quality: null
 tags: [marketplace_listing, builder, memory, patterns, P10]
-tldr: "Learned patterns + recurring failure modes from marketplace_listing builds: map-first, gate-math verified upfront, honest placeholders, and the divergence traps."
+tldr: "Padrões aprendidos + modos de falha recorrentes nas construções de marketplace_listing: mapear primeiro, matemática do gate verificada com antecedência, placeholders honestos e as armadilhas de divergência."
 density_score: 0.9
 related:
   - bld_knowledge_marketplace_listing
@@ -22,33 +22,33 @@ related:
   - output-validator-builder
 ---
 
-# Patterns: marketplace_listing builds
-## What scored high
-| Pattern | Why |
+# Padrões: construções de marketplace_listing
+## O que pontuou alto
+| Padrão | Por quê |
 |---------|-----|
-| Map-first | walking the G1->G2 table before writing a single section -> no field left unmapped |
-| Gate math verified upfront | computing score/passed/missing_required at F4 REASON, before F6 -> no H06 surprise at F7 |
-| Honest placeholders, verbatim | using the generator's exact strings ("(sem sku)", "(sem marca -- obrigatorio pelo ML)") -> the artifact reads identically to a live tenant run |
-| BRAND/SELLER_SKU order preserved | BRAND prepended, SELLER_SKU appended, matching the generator's own list-construction order -> the Atributos table matches byte-for-byte |
-| Readiness in frontmatter, not a 7th section | score/passed/missing_required/notes live in frontmatter, mirroring the generator's StructuredOutput -- never invented as a body section |
+| Mapear primeiro | percorrer a tabela G1->G2 antes de escrever uma única seção -> nenhum campo fica sem mapear |
+| Matemática do gate verificada com antecedência | computar score/passed/missing_required no F4 REASON, antes do F6 -> nenhuma surpresa do H06 no F7 |
+| Placeholders honestos, ao pé da letra | usar as strings exatas do generator ("(sem sku)", "(sem marca -- obrigatorio pelo ML)") -> o artefato lê de forma idêntica a uma execução real de um tenant |
+| Ordem de BRAND/SELLER_SKU preservada | BRAND prependido, SELLER_SKU anexado, seguindo a mesma ordem de construção de lista do generator -> a tabela de Atributos bate byte a byte |
+| Prontidão no frontmatter, não em uma 7ª seção | score/passed/missing_required/notes vivem no frontmatter, espelhando o StructuredOutput do generator -- nunca inventados como uma seção do corpo |
 
-## Recurring failures
-| Failure | Fix |
+## Falhas recorrentes
+| Falha | Correção |
 |---------|-----|
-| Assuming an https filter | the shipped generator has none; only the lower-level `cex_channel_adapter.py` seam filters -- do not add a filter the artifact does not reflect |
-| Assuming a stock (available_quantity<=0) hard block | the shipped generator never gates on stock; only `buyability()` in the OTHER seam does |
-| Truncating the title | the shipped generator only warns past 60 chars, never truncates -- truncation is the OTHER seam's `clean_ml_title` behavior |
-| Section renamed "Payload ML" without the suffix | the exact title is `Payload ML (pronto para publicar)` -- dropping the suffix breaks H05 |
-| Conflating `quality` and `score` | `quality` is always `null` (CEX meta); `score` is the embedded 0.0-1.0 readiness float -- two different frontmatter fields |
-| Inventing a `_meta` block | the shipped generator's `ml_listing` has none; `_meta` belongs to the other seam's `map()` output |
+| Assumir um filtro https | o generator em produção não tem nenhum; somente a camada de nível mais baixo `cex_channel_adapter.py` filtra -- não adicione um filtro que o artefato não reflete |
+| Assumir um bloqueio forçado de estoque (available_quantity<=0) | o generator em produção nunca faz gate sobre estoque; somente `buyability()` na OUTRA camada faz isso |
+| Truncar o título | o generator em produção apenas avisa acima de 60 caracteres, nunca trunca -- truncar é comportamento do `clean_ml_title` da OUTRA camada |
+| Seção renomeada "Payload ML" sem o sufixo | o título exato é `Payload ML (pronto para publicar)` -- remover o sufixo quebra o H05 |
+| Confundir `quality` com `score` | `quality` é sempre `null` (meta do CEX); `score` é o float de prontidão embutido 0.0-1.0 -- dois campos de frontmatter diferentes |
+| Inventar um bloco `_meta` | o `ml_listing` do generator em produção não tem nenhum; `_meta` pertence à saída de `map()` da outra camada |
 
-## Library shape
-One instance per (SKU x marketplace) coordinate; today `marketplace` is effectively fixed
-to `mercado_livre` (the only entry in `CHANNEL_ADAPTERS`), so the coverage axis is SKU only
-until a second channel is wired.
+## Formato da biblioteca
+Uma instância por coordenada (SKU x marketplace); hoje `marketplace` está efetivamente
+fixo em `mercado_livre` (a única entrada em `CHANNEL_ADAPTERS`), então o eixo de cobertura
+é apenas o SKU até que um segundo canal seja conectado.
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[bld_knowledge_marketplace_listing]] | upstream | 0.45 |
 | [[bld_eval_marketplace_listing]] | sibling | 0.42 |

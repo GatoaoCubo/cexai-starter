@@ -3,15 +3,15 @@ kind: output_template
 id: bld_output_template_knowledge_card
 pillar: P05
 llm_function: PRODUCE
-purpose: Template with {{vars}} for knowledge_card production
-pattern: every field here exists in SCHEMA.md — template derives, never invents
+purpose: "Template com {{vars}} para producao de knowledge_card"
+pattern: "todo campo aqui existe no SCHEMA.md -- o template deriva, nunca inventa"
 quality: null
-title: "Output Template Knowledge Card"
+title: "Modelo de Saida: knowledge_card"
 version: "1.0.0"
 author: n03_builder
 tags: [knowledge_card, builder, examples]
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos-modelo e anti-exemplos de construcao de knowledge_card, demonstrando estrutura ideal e armadilhas comuns."
+domain: "construcao de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F6_produce"
@@ -20,70 +20,70 @@ related:
   - bld_schema_knowledge_card
   - bld_config_knowledge_card
 ---
-# Output Template: knowledge_card (domain_kc)
+# Modelo de Saida: knowledge_card (domain_kc)
 ```yaml
 id: p01_kc_{{topic_slug}}
 kind: knowledge_card
 pillar: P01
-title: "{{Title 5-100 chars}}"
+title: "{{Titulo, 5-100 caracteres}}"
 version: "1.0.0"
-created: "{{YYYY-MM-DD}}"
-updated: "{{YYYY-MM-DD}}"
-author: "{{agent_group_name}}"
-domain: {{domain_name}}
+created: "{{AAAA-MM-DD}}"
+updated: "{{AAAA-MM-DD}}"
+author: "{{nome_do_agent_group}}"
+domain: {{nome_do_dominio}}
 quality: null
 tags: [{{tag1}}, {{tag2}}, {{tag3}}, knowledge]
-tldr: "{{Dense <=160ch, no self-refs}}"
-when_to_use: "{{Retrieval condition}}"
+tldr: "{{Denso, <=160 caracteres, sem auto-referencia}}"
+when_to_use: "{{Condicao de recuperacao}}"
 keywords: [{{kw1}}, {{kw2}}, {{kw3}}]
 long_tails:
-  - {{long tail query 1}}
-  - {{long tail query 2}}
+  - {{consulta de cauda longa 1}}
+  - {{consulta de cauda longa 2}}
 axioms:
-  - {{ALWAYS/NEVER actionable rule}}
+  - {{regra acionavel SEMPRE/NUNCA}}
 linked_artifacts:
-  primary: {{artifact_id_or_null}}
-  related: [{{related_id_or_empty}}]
-density_score: {{0.80_to_1.00}}
-data_source: "{{source_url_or_artifact_ref}}"
-# {{Title}}
-## Quick Reference
+  primary: {{id_do_artefato_ou_null}}
+  related: [{{id_relacionado_ou_vazio}}]
+density_score: {{0.80_a_1.00}}
+data_source: "{{url_de_origem_ou_ref_de_artefato}}"
+# {{Titulo}}
+## Referencia Rapida
 ` ``yaml
-topic: {{topic_name}}
-scope: {{scope_description}}
-owner: {{owner_agent_group}}
-criticality: {{low|medium|high}}
+topic: {{nome_do_topico}}
+scope: {{descricao_do_escopo}}
+owner: {{agent_group_responsavel}}
+criticality: {{baixa|media|alta}}
 ` ``
-## Key Concepts
-- **{{Concept 1}}**: {{concrete detail with example}}
-- **{{Concept 2}}**: {{concrete detail with example}}
-- **{{Concept 3}}**: {{concrete detail with example}}
-## Strategy Phases
-1. **{{Phase 1}}**: {{action with measurable outcome}}
-2. **{{Phase 2}}**: {{action with measurable outcome}}
-3. **{{Phase 3}}**: {{action with measurable outcome}}
-## Golden Rules
-- {{RULE 1 — actionable, concrete}}
-- {{RULE 2 — actionable, concrete}}
-- {{RULE 3 — actionable, concrete}}
-## Flow
+## Conceitos-Chave
+- **{{Conceito 1}}**: {{detalhe concreto com exemplo}}
+- **{{Conceito 2}}**: {{detalhe concreto com exemplo}}
+- **{{Conceito 3}}**: {{detalhe concreto com exemplo}}
+## Fases da Estrategia
+1. **{{Fase 1}}**: {{acao com resultado mensuravel}}
+2. **{{Fase 2}}**: {{acao com resultado mensuravel}}
+3. **{{Fase 3}}**: {{acao com resultado mensuravel}}
+## Regras de Ouro
+- {{REGRA 1 -- acionavel, concreta}}
+- {{REGRA 2 -- acionavel, concreta}}
+- {{REGRA 3 -- acionavel, concreta}}
+## Fluxo
 ` ``text
-[{{Input}}] -> [{{Process}}] -> [{{Decide}}] -> [{{Output}}]
+[{{Entrada}}] -> [{{Processo}}] -> [{{Decisao}}] -> [{{Saida}}]
 ` ``
 ## Comparativo
-| {{Dimension}} | {{Option A}} | {{Option B}} |
+| {{Dimensao}} | {{Opcao A}} | {{Opcao B}} |
 |---------------|-------------|-------------|
-| {{Row 1}} | {{val}} | {{val}} |
-| {{Row 2}} | {{val}} | {{val}} |
-## References
-- Related artifact: {{artifact_ref}}
-- Source: {{external_url}}
+| {{Linha 1}} | {{val}} | {{val}} |
+| {{Linha 2}} | {{val}} | {{val}} |
+## Referencias
+- Artefato relacionado: {{ref_do_artefato}}
+- Fonte: {{url_externa}}
 ```
-NOTE: For meta_kc, replace body with:
-Executive Summary, Spec Table, Patterns, Anti-Patterns, Application, References.
+NOTA: para meta_kc, substitua o corpo por: Resumo Executivo, Tabela de Especificacao,
+Padroes, Anti-Padroes, Aplicacao, Referencias (ver `P06_schema.md` para a definicao completa).
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacao | Pontuacao |
 |----------|-------------|-------|
 | [[bld_prompt_knowledge_card]] | upstream | 0.24 |
 | p10_out_knowledge_card | downstream | 0.22 |

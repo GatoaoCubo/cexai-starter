@@ -3,15 +3,15 @@ kind: output_template
 id: bld_output_template_knowledge_card
 pillar: P05
 llm_function: PRODUCE
-purpose: Template with {{vars}} for knowledge_card production
-pattern: every field here exists in SCHEMA.md — template derives, never invents
+purpose: Template com {{vars}} para a produção de knowledge_card
+pattern: todo campo aqui existe no SCHEMA.md -- o template deriva, nunca inventa
 quality: null
-title: "Output Template Knowledge Card"
+title: "Template de Saída: Knowledge Card"
 version: "1.0.0"
 author: n03_builder
 tags: [knowledge_card, builder, examples]
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos ideais e contraexemplos para a construção de knowledge cards, demonstrando estrutura ideal e erros comuns."
+domain: "construção de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F6_produce"
@@ -20,7 +20,7 @@ related:
   - bld_schema_knowledge_card
   - bld_config_knowledge_card
 ---
-# Output Template: knowledge_card (domain_kc)
+# Template de Saída: knowledge_card (domain_kc)
 ```yaml
 id: p01_kc_{{topic_slug}}
 kind: knowledge_card
@@ -47,26 +47,26 @@ linked_artifacts:
 density_score: {{0.80_to_1.00}}
 data_source: "{{source_url_or_artifact_ref}}"
 # {{Title}}
-## Quick Reference
+## Referência Rápida
 ` ``yaml
 topic: {{topic_name}}
 scope: {{scope_description}}
 owner: {{owner_agent_group}}
 criticality: {{low|medium|high}}
 ` ``
-## Key Concepts
+## Conceitos-Chave
 - **{{Concept 1}}**: {{concrete detail with example}}
 - **{{Concept 2}}**: {{concrete detail with example}}
 - **{{Concept 3}}**: {{concrete detail with example}}
-## Strategy Phases
+## Fases da Estratégia
 1. **{{Phase 1}}**: {{action with measurable outcome}}
 2. **{{Phase 2}}**: {{action with measurable outcome}}
 3. **{{Phase 3}}**: {{action with measurable outcome}}
-## Golden Rules
+## Regras de Ouro
 - {{RULE 1 — actionable, concrete}}
 - {{RULE 2 — actionable, concrete}}
 - {{RULE 3 — actionable, concrete}}
-## Flow
+## Fluxo
 ` ``text
 [{{Input}}] -> [{{Process}}] -> [{{Decide}}] -> [{{Output}}]
 ` ``
@@ -75,12 +75,12 @@ criticality: {{low|medium|high}}
 |---------------|-------------|-------------|
 | {{Row 1}} | {{val}} | {{val}} |
 | {{Row 2}} | {{val}} | {{val}} |
-## References
+## Referências
 - Related artifact: {{artifact_ref}}
 - Source: {{external_url}}
 ```
-NOTE: For meta_kc, replace body with:
-Executive Summary, Spec Table, Patterns, Anti-Patterns, Application, References.
+NOTA: Para meta_kc, substitua o corpo por:
+Resumo Executivo, Tabela de Especificações, Padrões, Antipadrões, Aplicação, Referências.
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

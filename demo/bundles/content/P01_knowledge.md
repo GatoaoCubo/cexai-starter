@@ -3,18 +3,18 @@ kind: knowledge_card
 id: bld_knowledge_card_knowledge_card
 pillar: P01
 llm_function: INJECT
-purpose: Domain knowledge for knowledge_card production — atomic searchable facts
-sources: validate_kc.py v2.0, _schema.yaml v4.0, 721 real knowledge cards
+purpose: "Conhecimento de dominio para producao de knowledge_card -- fatos atomicos e pesquisaveis"
+sources: validate_kc.py v2.0, _schema.yaml v4.0, 721 knowledge cards reais
 quality: null
-title: "Knowledge Card Knowledge Card"
+title: "Base de Conhecimento: knowledge_card"
 version: "1.0.0"
 author: n03_builder
 tags:
   - "knowledge_card"
   - "builder"
   - "examples"
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos-modelo e anti-exemplos de construcao de knowledge_card, demonstrando estrutura ideal e armadilhas comuns."
+domain: "construcao de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F3_inject"
@@ -33,57 +33,57 @@ density_score: 0.90
 related:
   - knowledge-card-builder
 ---
-# Domain Knowledge: knowledge_card
-## Executive Summary
-Knowledge cards are atomic searchable facts — the smallest retrieval unit in a knowledge system. Each card answers ONE question about ONE topic with density >= 0.80 (>80% concrete data, no filler). Cards are retrieved via hybrid search (BM25 + vector) using frontmatter fields. They differ from model cards (LLM specs), learning records (internal experience), and context docs (domain background).
-## Spec Table
-| Property | Value |
+# Conhecimento de Dominio: knowledge_card
+## Resumo Executivo
+Knowledge cards sao fatos atomicos e pesquisaveis -- a menor unidade de recuperacao em um sistema de conhecimento. Cada card responde UMA pergunta sobre UM topico, com densidade >= 0.80 (mais de 80% de dado concreto, sem enchimento). Os cards sao recuperados via busca hibrida (BM25 + vetor) usando os campos do frontmatter. Eles se diferenciam do model card (especificacao de LLM), do learning_record (experiencia interna registrada) e do context_doc (contexto amplo de dominio).
+## Tabela de Especificacao
+| Propriedade | Valor |
 |----------|-------|
-| Pillar | P01 (knowledge) |
-| Frontmatter fields | 14 required + 5 extended |
-| Quality gates | 10 HARD + 20 SOFT |
-| Max body | 5120 bytes |
-| Min body | 200 bytes |
-| Density minimum | >= 0.80 |
-| Size sweet spot | 50-80 lines (single concept), 80-120 (multi-pattern) |
-| Scoring dimensions | D1 Frontmatter, D2 Density, D3 Axioms, D4 Structure, D5 Format |
-## Patterns
-- **Retrieval surface**: frontmatter fields drive search discovery
-| Field | Retrieval role | Pattern |
+| Pilar | P01 (knowledge) |
+| Campos de frontmatter | 14 obrigatorios + 5 estendidos |
+| Portoes de qualidade | 10 HARD + 20 SOFT |
+| Corpo maximo | 5120 bytes |
+| Corpo minimo | 200 bytes |
+| Densidade minima | >= 0.80 |
+| Tamanho ideal | 50-80 linhas (conceito unico), 80-120 (multi-padrao) |
+| Dimensoes de pontuacao | D1 Frontmatter, D2 Densidade, D3 Axiomas, D4 Estrutura, D5 Formato |
+## Padroes
+- **Superficie de recuperacao**: os campos do frontmatter guiam a descoberta na busca
+| Campo | Papel na recuperacao | Padrao |
 |-------|---------------|---------|
-| tldr | Primary match (BM25 + embedding) | Specific: "Execute CLI via subprocess, retry 3x" |
-| tags | Faceted filtering, clustering | 3-7 tags, mix domain + technique |
-| keywords | BM25 exact match boost | 2-5 terms user would literally type |
-| long_tails | Semantic/vector search | Full phrases: "how to handle concurrent token refresh" |
-| when_to_use | Agent activation trigger | Specific context, not "when needed" |
-- **Density hierarchy** (most to least info/token): tables > code blocks > bullets > ASCII diagrams > paragraphs
-- **Two body structures**: domain_kc (external knowledge: Quick Ref, Key Concepts, Strategy, Golden Rules, Flow, References) and meta_kc (system-internal: Exec Summary, Spec Table, Patterns, Anti-Patterns, Application, References)
-- **Density gate**: density = data_lines / total_non_empty_lines; < 0.80 = card fails regardless of other quality
-- **Axiom form**: ALWAYS/NEVER/IF-THEN with condition + action + consequence
-## Anti-Patterns
-| Anti-Pattern | Why it fails |
+| tldr | Match primario (BM25 + embedding) | Especifico: "Executa a CLI via subprocess, retry 3x" |
+| tags | Filtro facetado, agrupamento | 3-7 tags, mix de dominio + tecnica |
+| keywords | Reforco de match exato no BM25 | 2-5 termos que o usuario digitaria literalmente |
+| long_tails | Busca semantica/vetorial | Frases completas: "como tratar refresh de token concorrente" |
+| when_to_use | Gatilho de ativacao do agente | Contexto especifico, nunca "quando necessario" |
+- **Hierarquia de densidade** (do que mais informa por token ao que menos informa): tabelas > blocos de codigo > bullets > diagramas ASCII > paragrafos
+- **Duas estruturas de corpo**: domain_kc (conhecimento externo: Referencia Rapida, Conceitos-Chave, Estrategia, Regras de Ouro, Fluxo, Referencias) e meta_kc (interno ao sistema: Resumo Executivo, Tabela de Especificacao, Padroes, Anti-Padroes, Aplicacao, Referencias)
+- **Portao de densidade**: densidade = linhas_de_dado / linhas_nao_vazias_totais; abaixo de 0.80 o card reprova independente da demais qualidade
+- **Forma do axioma**: SEMPRE/NUNCA/SE-ENTAO com condicao + acao + consequencia
+## Anti-Padroes
+| Anti-Padrao | Por que falha |
 |-------------|-------------|
-| Vague tldr ("How to use CLI") | No search signal; returns wrong in BM25 |
-| Prose body | Low density; convert to tables, bullets, code |
-| Template residue (`{{placeholder}}`) | Unfilled fields; looks incomplete |
-| Frontmatter echo in body | Body repeats title/tldr; adds zero depth |
-| Giant monolith (300+ lines) | Split into 2+ focused atomic cards |
-| density < 0.80 | Card fails regardless of other quality scores |
-## Application
-1. Define ONE topic: what single question does this card answer?
-2. Write frontmatter: all 14 required fields with specific, search-optimized values
-3. Select body structure: domain_kc (external) or meta_kc (internal)
-4. Write dense body: tables first, bullets second, paragraphs only when necessary
-5. Check density: data_lines / total >= 0.80
-6. Validate: <= 5120 bytes, >= 200 bytes, axioms in ALWAYS/NEVER/IF-THEN form
-## References
-- validate_kc.py v2.0: 10 HARD + 20 SOFT gate validator
-- _schema.yaml v4.0: canonical field definitions for knowledge_card
-- 721 real knowledge cards: empirical patterns (p95 body = 4274 bytes)
-- Information retrieval: BM25 + vector hybrid search for dense retrieval
+| tldr vago ("Como usar a CLI") | Sem sinal de busca; retorna errado no BM25 |
+| Corpo em prosa | Densidade baixa; converter em tabelas, bullets, codigo |
+| Residuo de template (`{{placeholder}}`) | Campo nao preenchido; parece incompleto |
+| Eco do frontmatter no corpo | Corpo repete title/tldr; adiciona profundidade zero |
+| Monolito gigante (300+ linhas) | Dividir em 2 ou mais cards atomicos focados |
+| densidade < 0.80 | Card reprovado, independente das demais notas de qualidade |
+## Aplicacao
+1. Defina UM topico: qual pergunta unica este card responde?
+2. Escreva o frontmatter: os 14 campos obrigatorios com valores especificos e otimizados para busca
+3. Escolha a estrutura do corpo: domain_kc (externo) ou meta_kc (interno)
+4. Escreva um corpo denso: tabelas primeiro, bullets em segundo, paragrafos apenas quando necessario
+5. Confira a densidade: linhas_de_dado / total >= 0.80
+6. Valide: entre 200 e 5120 bytes, axiomas na forma SEMPRE/NUNCA/SE-ENTAO
+## Referencias
+- validate_kc.py v2.0: validador com 10 portoes HARD + 20 SOFT
+- _schema.yaml v4.0: definicoes canonicas de campo para knowledge_card
+- 721 knowledge cards reais: padroes empiricos (corpo no percentil 95 = 4274 bytes)
+- Information retrieval: busca hibrida BM25 + vetor para recuperacao densa
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacao | Pontuacao |
 |----------|-------------|-------|
 | p01_kc_knowledge_best_practices | sibling | 0.41 |
 | [[knowledge-card-builder]] | downstream | 0.39 |

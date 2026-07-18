@@ -1,0 +1,72 @@
+kind: collaboration
+id: bld_collaboration_subscription_tier
+pillar: P12
+llm_function: COLLABORATE
+purpose: Como o subscription-tier-builder trabalha em crews com outros builders
+quality: null
+title: Collaboration Subscription Tier
+version: 1.0.0
+author: wave1_builder_gen_v2
+tags:
+- subscription_tier
+- builder
+- collaboration
+tldr: Como o subscription-tier-builder trabalha em crews com outros builders
+domain: construção de subscription_tier
+created: '2026-04-14'
+updated: '2026-04-14'
+8f: F8_collaborate
+keywords:
+- construção de subscription_tier
+- collaboration subscription tier
+- subscription_tier
+- builder
+- collaboration
+- papel na crew
+- recebe de
+- estratégia de precificação
+- time de produto
+- time de cobrança
+density_score: 0.85
+related:
+- bld_collaboration_integration_guide
+- bld_collaboration_cohort_analysis
+- bld_orchestration_white_label_config
+- bld_collaboration_reward_model
+- bld_collaboration_ab_test_config
+papel_na_crew: Define estruturas de precificação de assinatura, benefícios e níveis de acesso. Colabora com os times de produto,
+  cobrança e analytics para alinhar os tiers aos objetivos de negócio e às necessidades dos usuários.
+recebe_de: '| Builder        | O Quê                  | Formato  |
+
+  |----------------|-----------------------|---------|
+
+  | Estratégia de Precificação | Entradas de configuração de tier | JSON    |
+
+  | Time de Produto   | Mapeamentos de acesso a funcionalidades | YAML    |
+
+  | Time de Cobrança   | Detalhes do plano de pagamento  | CSV     |'
+produz_para: '| Builder        | O Quê                  | Formato  |
+
+  |----------------|-----------------------|---------|
+
+  | Página de Preços   | Definições de tier      | JSON    |
+
+  | Time de Analytics | Dados de performance do tier | CSV     |
+
+  | Suporte ao Cliente | Documentação do tier  | Markdown|'
+fronteira: NÃO lida com estratégias de content monetization (Time de Conteúdo) nem com a UI da página de preços (Time de UI).
+  A integração de cobrança é responsabilidade do Time de Cobrança.
+related_artifacts: '| Artefato | Relacionamento | Pontuação |
+
+  |----------|-------------|-------|
+
+  | bld_collaboration_integration_guide | sibling | 0.37 |
+
+  | bld_collaboration_cohort_analysis | sibling | 0.36 |
+
+  | [[bld_orchestration_white_label_config]] | sibling | 0.36 |
+
+  | bld_collaboration_reward_model | sibling | 0.35 |
+
+  | bld_collaboration_ab_test_config | sibling | 0.34 |'
+structural_score: 8

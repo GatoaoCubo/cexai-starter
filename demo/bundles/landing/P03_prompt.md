@@ -5,15 +5,15 @@ pillar: P03
 builder: landing-page-builder
 version: 1.0.0
 quality: null
-title: "Instruction Landing Page"
+title: "Instrução Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F6_produce"
-keywords: [landing page construction, instruction landing page, landing_page, builder, examples, landing page construction pipeline, use tailwind, open graph, stack options, app router]
+keywords: [construção de landing page, instrução landing page, landing_page, builder, examples, pipeline de construção de landing page, usar tailwind, open graph, opções de stack, app router]
 density_score: 0.90
 llm_function: REASON
 related:
@@ -22,51 +22,51 @@ related:
   - bld_architecture_landing_page
   - bld_schema_landing_page
 ---
-# Instruction: Landing Page Construction Pipeline
+# Instrução: Pipeline de Construção de Landing Page
 
-## Steps
-1. **BRIEF** — Gather: brand_config OR user input (product, audience, goal, tone, stack preference)
-2. **STRUCTURE** — Choose section order based on goal:
-   - SaaS product: HERO > FEATURES > SOCIAL-PROOF > PRICING > FAQ > CTA
-   - Service/Agency: HERO > PROBLEM > SOLUTION > HOW-IT-WORKS > TESTIMONIALS > CTA
-   - Course/Infoproduct: HERO > PROBLEM > TRANSFORMATION > MODULES > PRICING > FAQ > CTA > GUARANTEE
-   - Portfolio: HERO > WORK > ABOUT > TESTIMONIALS > CONTACT
-3. **DESIGN TOKENS** — Extract from brand_config or define:
-   - Colors: primary, secondary, accent, bg, text, muted
-   - Fonts: heading (display), body (sans), mono
-   - Spacing: section padding, component gaps
-   - Border radius, shadow depth
-4. **BUILD** — Generate each section as a self-contained block:
-   - Each section has: id, aria-label, responsive classes, CTA or interaction
-   - Use Tailwind utility classes (no costm CSS unless unavoidable)
-   - shadcn/ui components for interactive elements (accordion, dialog, tabs)
-5. **ASSEMBLE** — Combine into single file with:
-   - DOCTYPE, html lang, head (meta, fonts, Tailwind CDN), body
-   - Smooth scroll, scroll-margin for anchored nav
-   - JS: mobile menu toggle, FAQ accordion, scroll animations (IntersectionObserver)
-6. **OPTIMIZE** — Add:
-   - Open Graph meta tags (title, description, image, url)
-   - JSON-LD structured data (Organization or Product)
-   - GTM/GA4 data attributes on CTAs
-   - Lazy loading on below-fold images
-   - Print stylesheet basics
-7. **VALIDATE** — Check:
-   - All 12 sections present (or justified omission)
-   - Mobile responsive (no horizontal scroll)
-   - All CTAs have href or onclick
-   - All images have alt text
-   - Color contrast passes WCAG AA
+## Etapas
+1. **BRIEF** -- Reúna: brand_config OU input do usuário (produto, público, objetivo, tom de voz, preferência de stack)
+2. **STRUCTURE** -- Escolha a ordem das seções com base no objetivo:
+   - Produto SaaS: HERO > FEATURES > SOCIAL-PROOF > PRICING > FAQ > CTA
+   - Serviço/Agência: HERO > PROBLEM > SOLUTION > HOW-IT-WORKS > TESTIMONIALS > CTA
+   - Curso/Infoproduto: HERO > PROBLEM > TRANSFORMATION > MODULES > PRICING > FAQ > CTA > GUARANTEE
+   - Portfólio: HERO > WORK > ABOUT > TESTIMONIALS > CONTACT
+3. **DESIGN TOKENS** -- Extraia do brand_config ou defina:
+   - Cores: primary, secondary, accent, bg, text, muted
+   - Fontes: heading (display), body (sans), mono
+   - Espaçamento: padding das seções, gaps entre componentes
+   - Border radius, profundidade de shadow
+4. **BUILD** -- Gere cada seção como um bloco autocontido:
+   - Cada seção tem: id, aria-label, classes responsivas, CTA ou interação
+   - Use classes utilitárias do Tailwind (CSS customizado somente quando inevitável)
+   - Componentes shadcn/ui para elementos interativos (accordion, dialog, tabs)
+5. **ASSEMBLE** -- Combine em um único arquivo com:
+   - DOCTYPE, html lang, head (meta, fontes, Tailwind CDN), body
+   - Smooth scroll, scroll-margin para nav ancorada
+   - JS: toggle do menu mobile, accordion do FAQ, animações de scroll (IntersectionObserver)
+6. **OPTIMIZE** -- Adicione:
+   - Meta tags de Open Graph (title, description, image, url)
+   - Dados estruturados JSON-LD (Organization ou Product)
+   - Atributos de dados GTM/GA4 nos CTAs
+   - Lazy loading nas imagens abaixo da dobra
+   - Stylesheet básico de impressão
+7. **VALIDATE** -- Verifique:
+   - Todas as 12 seções presentes (ou omissão justificada)
+   - Responsivo no mobile (sem rolagem horizontal)
+   - Todos os CTAs têm href ou onclick
+   - Todas as imagens têm texto alternativo (alt)
+   - Contraste de cor passa no WCAG AA
 
-## Stack Options
-| Stack | When | Output |
+## Opções de Stack
+| Stack | Quando | Saída |
 |-------|------|--------|
-| HTML + Tailwind CDN | Default, zero build | Single .html file |
-| React + Tailwind | User has React project | .tsx component |
-| Next.js App Router | User has Next.js | page.tsx + layout.tsx |
-| Astro | User wants static | .astro page |
+| HTML + Tailwind CDN | Padrão, zero build | Um único arquivo .html |
+| React + Tailwind | Usuário tem projeto React | Componente .tsx |
+| Next.js App Router | Usuário tem Next.js | page.tsx + layout.tsx |
+| Astro | Usuário quer saída estática | Página .astro |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[landing-page-builder]] | downstream | 0.49 |
 | [[kc_landing_page]] | upstream | 0.45 |

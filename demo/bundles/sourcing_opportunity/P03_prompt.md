@@ -3,50 +3,50 @@ kind: instruction
 id: bld_instruction_opportunity_matrix
 pillar: P03
 llm_function: REASON
-purpose: Step-by-step production process for opportunity_matrix
+purpose: Processo de produção passo a passo para opportunity_matrix
 quality: null
-title: "Instruction Opportunity Matrix"
+title: "Instruções -- Opportunity Matrix"
 version: "1.0.0"
 author: n03_builder
 tags: [opportunity_matrix, builder, instruction]
-tldr: "Step-by-step production process for opportunity_matrix"
-domain: "opportunity_matrix construction"
+tldr: "Processo de produção passo a passo para opportunity_matrix"
+domain: "construção de opportunity_matrix"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F6_produce"
-keywords: [opportunity_matrix construction, instruction opportunity matrix, opportunity_matrix, builder, instruction, catalog_sources, opp_score, sourcing_confiavel, demand join, margin math]
+keywords: [construção de opportunity_matrix, instruções opportunity matrix, opportunity_matrix, builder, instruction, catalog_sources, opp_score, sourcing_confiavel, join de demanda, matemática de margem]
 density_score: 0.85
 related:
   - opportunity-matrix-builder
 ---
-## Phase 1: RESEARCH
-1. Read the 9 inputs from the frozen `input_contract` (`apps/dashboard_web/lib/molds.ts` `MOLD_SOURCING_OPPORTUNITY`): `catalog_sources` (required, object[]), `cost_source_strategy`, `tax_pct`, `region`, `demand_signal_basis`, `fee_model`, `freight_model`, `verify_top_n`, `show_net_margin`.
-2. Read the generator that actually produces this kind: `_tools/capability_generators/sourcing_opportunity.py` (`@register("opportunity_matrix")`) -- it is the single source of truth for field names, defaults, and section text.
-3. Read the sourcing rigor contract (`_docs/specs/contract/n01_sourcing_rigor.md`): S1 triangulation+confidence, S2 provenance-as-section, S3 freshness band, S4 named gate, S5 honest-null.
-4. Read the margin/take-rate discipline referenced by the capability contract (`_docs/specs/contract/n06_unit_econ.md`, cited generically for cost->price->take-rate->margin math -- note this doc's own worked LTV/CAC section bundle targets `content_monetization`/`subscription_tier`, NOT this kind; opportunity_matrix implements its own gross/net margin math directly in the generator).
-5. Identify the join key: normalized `product_type` (lowercase, whitespace-collapsed) crosses supplier cost against market demand -- NEVER EAN/GTIN/barcode (`match_exclude_keys` default).
-6. Note the two row buckets the generator keeps (never drops): `priced` rows (derivable unit_cost) and the manual bucket `"manual / sem preco"` (no derivable cost -- kept, surfaced in Cobertura).
+## Fase 1: PESQUISA
+1. Leia as 9 entradas do `input_contract` congelado (`apps/dashboard_web/lib/molds.ts` `MOLD_SOURCING_OPPORTUNITY`): `catalog_sources` (obrigatório, object[]), `cost_source_strategy`, `tax_pct`, `region`, `demand_signal_basis`, `fee_model`, `freight_model`, `verify_top_n`, `show_net_margin`.
+2. Leia o gerador que de fato produz este kind: `_tools/capability_generators/sourcing_opportunity.py` (`@register("opportunity_matrix")`) -- é a fonte única da verdade para nomes de campo, padrões e texto de seção.
+3. Leia o contrato de rigor de sourcing (`_docs/specs/contract/n01_sourcing_rigor.md`): S1 triangulação+confiança, S2 proveniência-como-seção, S3 banda de frescor, S4 gate nomeado, S5 honest-null.
+4. Leia a disciplina de margem/take-rate referenciada pelo contrato de capability (`_docs/specs/contract/n06_unit_econ.md`, citado genericamente para a matemática custo->preço->take-rate->margem -- note que o próprio pacote de seção LTV/CAC desse documento é voltado a `content_monetization`/`subscription_tier`, NÃO a este kind; opportunity_matrix implementa sua própria matemática de margem bruta/líquida diretamente no gerador).
+5. Identifique a chave de join: `product_type` normalizado (minúsculas, espaços colapsados) cruza custo de fornecedor contra demanda de mercado -- NUNCA EAN/GTIN/código de barras (padrão de `match_exclude_keys`).
+6. Observe os dois buckets de linha que o gerador mantém (nunca descarta): linhas `priced` (unit_cost derivável) e o bucket manual `"manual / sem preco"` (sem custo derivável -- mantido, exposto em Cobertura).
 
-## Phase 2: COMPOSE
-1. Define schema in `bld_schema_opportunity_matrix.md`: frontmatter fields, ID pattern `^p11_om_[a-z][a-z0-9_]+$`, naming `p11_om_{{name}}.md`, max_bytes 5120.
-2. Build the 8 sections in FROZEN order (title + layout + columns byte-identical to `MOLD_SOURCING_OPPORTUNITY`): Resumo executivo (fields) -> Matriz de oportunidade (table, 9 cols) -> Leitura por categoria (table, 5 cols) -> Cobertura (fields) -> Verificacao top-N (table, 5 cols) -> Match / auditoria (table, 4 cols) -> Proveniencia (fields) -> Veredito + proximos passos (fields).
-3. Compute margin: `gross_margin = sell - cost`; `net_margin = sell - cost - fee - freight` (fee via `fee_model`, freight via `freight_model`); the display column shows BRUTA unless `show_net_margin=true`.
-4. Compute `opp_score` as the weighted sum of normalized margin/demand/stock/confidence factors (`score_weights`, default 0.4/0.3/0.2/0.1), then rank descending with the tie-break order.
-5. Render every missing market/demand cell as honest-null (`"nao pesquisado"`) when offline (no credential or no `demand_sources`) -- never invent a sell price.
-6. Populate Section 6 (Match / auditoria) ONLY when a row carries visual input (`photo_uri` or `dimension`); otherwise emit the single honest-skip row.
-7. Close with Section 8: name the gate `sourcing_confiavel`, spell out its boolean conditions, and state the next chainable step (feeds `marketplace_listing` / TUDAO on a passing gate).
-8. Peer-review section shapes against `_tools/tests/test_capgen_sourcing.py` expectations (read-only reference -- do not edit that file).
-9. Finalize artifact with `quality: null` and version control.
+## Fase 2: COMPOSIÇÃO
+1. Defina o schema em `bld_schema_opportunity_matrix.md`: campos de frontmatter, padrão de ID `^p11_om_[a-z][a-z0-9_]+$`, nomenclatura `p11_om_{{name}}.md`, max_bytes 5120.
+2. Construa as 8 seções na ordem CONGELADA (título + layout + colunas byte-idênticos a `MOLD_SOURCING_OPPORTUNITY`): Resumo executivo (fields) -> Matriz de oportunidade (table, 9 cols) -> Leitura por categoria (table, 5 cols) -> Cobertura (fields) -> Verificacao top-N (table, 5 cols) -> Match / auditoria (table, 4 cols) -> Proveniencia (fields) -> Veredito + proximos passos (fields).
+3. Calcule a margem: `gross_margin = venda - custo`; `net_margin = venda - custo - taxa - frete` (taxa via `fee_model`, frete via `freight_model`); a coluna de exibição mostra BRUTA a menos que `show_net_margin=true`.
+4. Calcule `opp_score` como a soma ponderada dos fatores normalizados de margem/demanda/estoque/confiança (`score_weights`, padrão 0.4/0.3/0.2/0.1), depois ranqueie decrescente com a ordem de desempate.
+5. Renderize toda célula de mercado/demanda ausente como honest-null (`"nao pesquisado"`) quando offline (sem credencial ou sem `demand_sources`) -- nunca invente um preço de venda.
+6. Popule a Seção 6 (Match / auditoria) SÓ quando uma linha carrega insumo visual (`photo_uri` ou `dimension`); caso contrário emita a única linha de honest-skip.
+7. Feche com a Seção 8: nomeie o gate `sourcing_confiavel`, explicite suas condições booleanas, e declare o próximo passo encadeável (alimenta `marketplace_listing` / TUDAO quando o gate passa).
+8. Faça peer-review das formas de seção contra as expectativas de `_tools/tests/test_capgen_sourcing.py` (referência somente-leitura -- não edite esse arquivo).
+9. Finalize o artefato com `quality: null` e controle de versão.
 
-## Phase 3: VALIDATE
-1. [ ] Verify all 8 section titles + layouts match `MOLD_SOURCING_OPPORTUNITY` exactly.
-2. [ ] Verify every table row has exactly `len(columns)` cells (no-drift rule).
-3. [ ] Confirm the gate `sourcing_confiavel` is named with explicit conditions, not just a boolean.
-4. [ ] Confirm no fabricated sell price/demand level appears where the source is offline or blocked.
-5. [ ] Confirm EAN/GTIN/barcode never appear as the join key.
+## Fase 3: VALIDAÇÃO
+1. [ ] Verifique se os 8 títulos + layouts de seção casam exatamente com `MOLD_SOURCING_OPPORTUNITY`.
+2. [ ] Verifique se toda linha de tabela tem exatamente `len(columns)` células (regra de não-drift).
+3. [ ] Confirme que o gate `sourcing_confiavel` é nomeado com condições explícitas, não só um booleano.
+4. [ ] Confirme que nenhum preço de venda/nível de demanda fabricado aparece onde a fonte está offline ou bloqueada.
+5. [ ] Confirme que EAN/GTIN/código de barras nunca aparecem como a chave de join.
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[opportunity-matrix-builder]] | downstream | 0.44 |
 | [[bld_knowledge_opportunity_matrix]] | upstream | 0.40 |

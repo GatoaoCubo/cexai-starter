@@ -3,18 +3,18 @@ kind: tools
 id: bld_tools_knowledge_card
 pillar: P04
 llm_function: CALL
-purpose: Tools and APIs available for knowledge_card production
+purpose: Ferramentas e APIs disponíveis para a produção de knowledge_card
 quality: null
-title: "Tools Knowledge Card"
+title: "Ferramentas: Knowledge Card"
 version: "1.0.0"
 author: n03_builder
 tags: [knowledge_card, builder, examples]
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos ideais e contraexemplos para a construção de knowledge cards, demonstrando estrutura ideal e erros comuns."
+domain: "construção de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F5_call"
-keywords: [knowledge card construction, tools knowledge card, knowledge_card, builder, examples, production tools, data sources, tool permissions, interim validation, related artifacts]
+keywords: [construção de knowledge_card, ferramentas knowledge card, knowledge_card, builder, examples, ferramentas de produção, fontes de dados, permissões de ferramentas, validação intermediária, related artifacts]
 density_score: 0.90
 related:
   - bld_tools_validation_schema
@@ -24,15 +24,15 @@ related:
   - bld_tools_golden_test
 ---
 
-# Tools: knowledge-card-builder
-## Production Tools
-| Tool | Purpose | When | Status |
+# Ferramentas: knowledge-card-builder
+## Ferramentas de Produção
+| Ferramenta | Propósito | Quando | Status |
 |------|---------|------|--------|
-| validate_kc.py | Validate KC: 10 HARD + 20 SOFT gates | Phase 3 | CONDITIONAL |
-| brain_query [MCP] | Search existing KCs in pool | Phase 1 | CONDITIONAL |
-| validate_artifact.py | Generic artifact validator | — | [PLANNED] |
-| cex_forge.py | Generate artifact from seeds | Alt compose | [PLANNED] |
-## validate_kc.py Usage
+| validate_kc.py | Validar o KC: 10 gates HARD + 20 SOFT | Fase 3 | CONDITIONAL |
+| brain_query [MCP] | Buscar KCs existentes no pool | Fase 1 | CONDITIONAL |
+| validate_artifact.py | Validador genérico de artifact | -- | [PLANNED] |
+| cex_forge.py | Gerar artifact a partir de seeds | Composição alternativa | [PLANNED] |
+## Uso do validate_kc.py
 ```bash
 # Single file
 python _tools/validate_kc.py path/to/p01_kc_topic.md
@@ -41,32 +41,32 @@ python _tools/validate_kc.py P01_knowledge/examples/ --summary
 # JSON output (machine-readable)
 python _tools/validate_kc.py path/to/file.md --json
 ```
-Output: HARD pass/fail + SOFT score 0-10 + verdict.
-Fix suggestions provided for failed gates.
-## brain_query Usage
+Saída: HARD pass/fail + nota SOFT 0-10 + veredito.
+Sugestões de correção são fornecidas para os gates que falharem.
+## Uso do brain_query
 ```python
 brain_query("knowledge card about {topic}")
 # Returns: existing KCs matching topic
 # Purpose: avoid duplicates, find linked_artifacts
 ```
-## Data Sources
-| Source | Path | Data |
+## Fontes de Dados
+| Fonte | Caminho | Dado |
 |--------|------|------|
-| CEX Schema | P01_knowledge/_schema.yaml | KC field definitions |
-| CEX Examples | P01_knowledge/examples/ | 63+ real KCs |
-| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Fillable template |
-| CEX Pool | artifacts/ (source repository) | 1957+ published artifacts |
-## Tool Permissions
+| CEX Schema | P01_knowledge/_schema.yaml | Definições de campo do KC |
+| CEX Examples | P01_knowledge/examples/ | 63+ KCs reais |
+| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Template preenchível |
+| CEX Pool | artifacts/ (repositório de origem) | 1957+ artifacts publicados |
+## Permissões de Ferramentas
 
-| Category | Tools | Status |
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitamente permitido |
+| DENIED | (nenhuma) | Explicitamente bloqueado |
+| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED menos DENIED |
 
-## Interim Validation
-validate_kc.py is ACTIVE — always run before committing.
-No manual gate-checking needed (unlike model-card-builder).
+## Validação Intermediária
+O validate_kc.py está ATIVO -- sempre rode antes de commitar.
+Não é necessário checar gates manualmente (diferente do model-card-builder).
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

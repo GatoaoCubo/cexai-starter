@@ -6,14 +6,14 @@ version: 1.0.0
 created: 2026-03-27
 updated: 2026-03-27
 author: builder_agent
-observation: "Knowledge cards with body density below 0.80 (ratio of informative content to total words) fail the density gate and require rewrite. Bullets over 80 characters are caught by validator and force reformatting. Filler phrases ('this document describes', 'it is worth noting') consume tokens without adding information and are the primary cause of low density scores. Axioms written as observations ('caching improves performance') instead of rules ('ALWAYS declare cache TTL, NEVER cache without expiry') are rejected by S18. Cards referencing internal system paths fail H09."
-pattern: "Achieve density >= 0.80 by: replacing prose paragraphs with bullet lists, replacing descriptions with comparison tables, removing all transition sentences, ensuring each bullet contains exactly one fact. Axioms must be ALWAYS/NEVER imperatives, not observations. Quality field must be null — scoring is external. Body size 200 bytes minimum, 5KB maximum. No internal paths in any field."
-evidence: "11 knowledge card productions: 6 failed first density check (avg density 0.64). ..."
+observation: "Knowledge cards com densidade de corpo abaixo de 0.80 (razão entre conteúdo informativo e total de palavras) falham no gate de densidade e exigem reescrita. Bullets com mais de 80 caracteres são pegos pelo validador e forçam reformatação. Frases de enchimento ('this document describes', 'it is worth noting') consomem tokens sem agregar informação e são a causa primária de notas de densidade baixas. Axiomas escritos como observações ('caching melhora performance') em vez de regras ('SEMPRE declare o TTL do cache, NUNCA faça cache sem expiração') são rejeitados pelo S18. Cards que referenciam caminhos internos do sistema falham no H09."
+pattern: "Alcance densidade >= 0.80 assim: substituindo parágrafos em prosa por listas de bullets, substituindo descrições por tabelas comparativas, removendo todas as frases de transição, garantindo que cada bullet contenha exatamente um fato. Os axiomas devem ser imperativos ALWAYS/NEVER, não observações. O campo quality deve ser null -- a pontuação é externa. Tamanho do corpo: 200 bytes no mínimo, 5KB no máximo. Sem caminhos internos em nenhum campo."
+evidence: "11 produções de knowledge card: 6 falharam na primeira checagem de densidade (densidade média 0.64). ..."
 confidence: 0.75
 outcome: SUCCESS
 domain: knowledge_card
 tags: [knowledge-card, density, axioms, frontmatter, atomic-facts, classification]
-tldr: "Density >= 0.80 requires bullets over prose and tables over descriptions. Axioms are ALWAYS/NEVER rules, not observations. quality:null always."
+tldr: "Densidade >= 0.80 exige bullets em vez de prosa e tabelas em vez de descrições. Axiomas são regras ALWAYS/NEVER, não observações. quality:null sempre."
 impact_score: 7.5
 decay_rate: 0.05
 agent_group: edison
@@ -22,55 +22,72 @@ memory_scope: project
 observation_types: [user, feedback, project, reference]
 llm_function: INJECT
 quality: null
-title: Memory ISO - knowledge_card
+title: "ISO de Memória - knowledge_card"
 8f: "F7_govern"
 density_score: 0.95
+related:
+  - prompt_template_bullets_anuncio
+  - p06_bp_knowledge_card
+  - p01_kc_creation_best_practices
+  - bld_collaboration_prompt_cache
+  - p01_kc_caching
+  - prompt-cache-builder
+  - revision_loop_policy_anuncio
+  - p01_kc_artifact_quality_evaluation_methods
+  - p01_kc_prompt_cache
 ---
-## Summary
-Knowledge cards distill domain knowledge into high-density atomic facts. The primary quality gate is density >= 0.80 — the ratio of informative content to total words. The most reliable path to high density is structural: replace prose with bullets, replace descriptions with tables, and eliminate all filler language.
-## Pattern
-Density boosting techniques (apply in order):
-1. **Prose -> bullets** - Convert every paragraph into a bullet list. Each bullet = one fact. If a bullet needs a sub-fact, use a nested bullet, not a compound sentence.
-2. **Descriptions -> tables** - Convert any comparison, enumeration, or mapping into a markdown table. Tables carry ~3x the information per line compared to prose.
-3. **Remove transitions** - Delete: "as we can see", "it is worth noting", "in summary", "this document", "the following". These add zero information.
-4. **Bullet length** - Each bullet under 80 characters. If over, split into two bullets or use a table.
-5. **Axiom format** - Every axiom must be an imperative starting with ALWAYS or NEVER. Not "caching is important" but "ALWAYS declare TTL when caching, NEVER cache without expiry".
-Frontmatter rules:
-- `quality: null` always — scoring is external, never self-assigned
-- `id` slug uses underscores: `p01_kc_topic_name`
-- `tags` as YAML list, not comma-separated string
-- No paths containing `records/`, `.claude/`, `/home/`, `C:\` anywhere in the card
-Body size constraints: minimum 200 bytes (4+ sections with 3+ lines each), maximum 5KB.
-## Anti-Pattern
-- Prose paragraphs — density drops below 0.70 immediately.
-- Bullets over 80 chars — validator S10 catches, forces reformatting.
-- Axiom as observation: "Caching improves performance" — must be "ALWAYS declare cache TTL".
-- `quality: 8.5` — validator H05 rejects any non-null value.
-- `tags: "ai, ml, cache"` as string — validator H07 rejects, must be YAML list.
-- Internal paths in any field — validator H09 rejects, breaks portability.
-- Self-referencing tldr: "This card describes caching" — tldr must be the direct fact, not a description of the card.
-## Context
+## Resumo
+Knowledge cards destilam conhecimento de domínio em fatos atômicos de alta densidade. O gate de qualidade primário é densidade >= 0.80 -- a razão entre conteúdo informativo e total de palavras. O caminho mais confiável para alta densidade é estrutural: substituir prosa por bullets, substituir descrições por tabelas, e eliminar toda linguagem de enchimento.
+## Padrão
+Técnicas de aumento de densidade (aplique em ordem):
+1. **Prosa -> bullets** - Converta todo parágrafo em uma lista de bullets. Cada bullet = um fato. Se um bullet precisa de um subfato, use um bullet aninhado, não uma frase composta.
+2. **Descrições -> tabelas** - Converta qualquer comparação, enumeração, ou mapeamento em uma tabela markdown. Tabelas carregam ~3x mais informação por linha que a prosa.
+3. **Remova transições** - Apague: "as we can see", "it is worth noting", "in summary", "this document", "the following". Elas não agregam informação nenhuma.
+4. **Tamanho do bullet** - Cada bullet com menos de 80 caracteres. Se passar disso, divida em dois bullets ou use uma tabela.
+5. **Formato do axioma** - Todo axioma deve ser um imperativo começando com ALWAYS ou NEVER. Não "caching é importante" mas "SEMPRE declare o TTL ao fazer cache, NUNCA faça cache sem expiração".
+Regras de frontmatter:
+- `quality: null` sempre -- a pontuação é externa, nunca autoatribuída
+- o slug do `id` usa underscores: `p01_kc_topic_name`
+- `tags` como lista YAML, nunca como string separada por vírgula
+- Nenhum caminho contendo `records/`, `.claude/`, `/home/`, `C:\` em nenhum lugar do card
+Restrições de tamanho do corpo: mínimo 200 bytes (4+ seções com 3+ linhas cada), máximo 5KB.
+## Antipadrão
+- Parágrafos em prosa -- a densidade cai abaixo de 0.70 imediatamente.
+- Bullets com mais de 80 caracteres -- o validador S10 pega e força reformatação.
+- Axioma como observação: "caching melhora a performance" -- deve ser "SEMPRE declare o TTL do cache".
+- `quality: 8.5` -- o validador H05 rejeita qualquer valor não nulo.
+- `tags: "ai, ml, cache"` como string -- o validador H07 rejeita, precisa ser lista YAML.
+- Caminhos internos em qualquer campo -- o validador H09 rejeita, quebra a portabilidade.
+- tldr autorreferente: "this card describes caching" -- o tldr deve ser o fato direto, não uma descrição do card.
+## Contexto
 
 
-## Production Log
+## Log de Produção
 
 - [20260331_214115] PASS kind=knowledge_card retries=0 gates=6/6
 
 - [20260331_214308] PASS kind=knowledge_card retries=0 gates=6/6
 
-## Boundary
+## Delimitação
 
-Persistent learning record. NOT session_state (ephemeral) nor axiom (immutable, does not learn).
+Learning_record persistente. NÃO é session_state (efêmero) nem axiom (imutável, não aprende).
 
 
-## 8F Pipeline Function
+## Função no Pipeline 8F
 
-Primary function: **INJECT**
+Função primária: **INJECT**
+
 
 ## Related Artifacts
+
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| p01_kc_creation_best_practices | upstream | 0.36 |
-| p01_kc_knowledge_best_practices | upstream | 0.32 |
-| p01_kc_artifact_quality_evaluation_methods | upstream | 0.32 |
-| [[bld_prompt_knowledge_card]] | upstream | 0.28 |
+| [[prompt_template_bullets_anuncio]] | upstream | 0.25 |
+| [[p06_bp_knowledge_card]] | upstream | 0.21 |
+| [[p01_kc_creation_best_practices]] | upstream | 0.18 |
+| [[bld_collaboration_prompt_cache]] | downstream | 0.18 |
+| [[p01_kc_caching]] | upstream | 0.18 |
+| [[prompt-cache-builder]] | related | 0.18 |
+| [[revision_loop_policy_anuncio]] | downstream | 0.15 |
+| [[p01_kc_artifact_quality_evaluation_methods]] | upstream | 0.15 |
+| [[p01_kc_prompt_cache]] | related | 0.15 |

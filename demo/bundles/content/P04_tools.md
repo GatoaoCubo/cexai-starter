@@ -3,14 +3,14 @@ kind: tools
 id: bld_tools_knowledge_card
 pillar: P04
 llm_function: CALL
-purpose: Tools and APIs available for knowledge_card production
+purpose: "Ferramentas e APIs disponiveis para a producao de knowledge_card"
 quality: null
-title: "Tools Knowledge Card"
+title: "Ferramentas: knowledge_card"
 version: "1.0.0"
 author: n03_builder
 tags: [knowledge_card, builder, examples]
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos-modelo e anti-exemplos de construcao de knowledge_card, demonstrando estrutura ideal e armadilhas comuns."
+domain: "construcao de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F5_call"
@@ -24,52 +24,52 @@ related:
   - bld_tools_golden_test
 ---
 
-# Tools: knowledge-card-builder
-## Production Tools
-| Tool | Purpose | When | Status |
+# Ferramentas: knowledge-card-builder
+## Ferramentas de Producao
+| Ferramenta | Proposito | Quando | Status |
 |------|---------|------|--------|
-| validate_kc.py | Validate KC: 10 HARD + 20 SOFT gates | Phase 3 | CONDITIONAL |
-| brain_query [MCP] | Search existing KCs in pool | Phase 1 | CONDITIONAL |
-| validate_artifact.py | Generic artifact validator | — | [PLANNED] |
-| cex_forge.py | Generate artifact from seeds | Alt compose | [PLANNED] |
-## validate_kc.py Usage
+| validate_kc.py | Valida o KC: 10 portoes HARD + 20 SOFT | Fase 3 | CONDICIONAL |
+| brain_query [MCP] | Busca KCs existentes no pool | Fase 1 | CONDICIONAL |
+| validate_artifact.py | Validador generico de artefato | -- | [PLANEJADO] |
+| cex_forge.py | Gera artefato a partir de seeds | Composicao alternativa | [PLANEJADO] |
+## Uso do validate_kc.py
 ```bash
-# Single file
+# Arquivo unico
 python _tools/validate_kc.py path/to/p01_kc_topic.md
-# Directory (batch)
+# Diretorio (lote)
 python _tools/validate_kc.py P01_knowledge/examples/ --summary
-# JSON output (machine-readable)
+# Saida JSON (legivel por maquina)
 python _tools/validate_kc.py path/to/file.md --json
 ```
-Output: HARD pass/fail + SOFT score 0-10 + verdict.
-Fix suggestions provided for failed gates.
-## brain_query Usage
+Saida: pass/fail dos HARD + pontuacao SOFT de 0 a 10 + veredito.
+Sugestoes de correcao sao fornecidas para os portoes que falharem.
+## Uso do brain_query
 ```python
 brain_query("knowledge card about {topic}")
-# Returns: existing KCs matching topic
-# Purpose: avoid duplicates, find linked_artifacts
+# Retorna: KCs existentes que casam com o topico
+# Proposito: evitar duplicatas, encontrar linked_artifacts
 ```
-## Data Sources
-| Source | Path | Data |
+## Fontes de Dado
+| Fonte | Caminho | Dado |
 |--------|------|------|
-| CEX Schema | P01_knowledge/_schema.yaml | KC field definitions |
-| CEX Examples | P01_knowledge/examples/ | 63+ real KCs |
-| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Fillable template |
-| CEX Pool | artifacts/ (source repository) | 1957+ published artifacts |
-## Tool Permissions
+| CEX Schema | P01_knowledge/_schema.yaml | Definicoes de campo do KC |
+| CEX Examples | P01_knowledge/examples/ | 63+ KCs reais |
+| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Template preenchivel |
+| CEX Pool | artifacts/ (repositorio de origem) | 1957+ artefatos publicados |
+## Permissoes de Ferramenta
 
-| Category | Tools | Status |
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| PERMITIDO | Read, Write, Edit, Bash, Glob, Grep | Explicitamente autorizado |
+| NEGADO | (nenhuma) | Explicitamente bloqueado |
+| EFETIVO | Bash, Edit, Glob, Grep, Read, Write | PERMITIDO menos NEGADO |
 
-## Interim Validation
-validate_kc.py is ACTIVE — always run before committing.
-No manual gate-checking needed (unlike model-card-builder).
+## Validacao Intermediaria
+validate_kc.py esta ATIVO -- sempre rode antes de commitar.
+Nenhuma checagem manual de portao e necessaria (diferente do model-card-builder).
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacao | Pontuacao |
 |----------|-------------|-------|
 | [[bld_tools_validation_schema]] | sibling | 0.50 |
 | bld_tools_quality_gate | sibling | 0.46 |

@@ -3,63 +3,62 @@ kind: knowledge_card
 id: bld_knowledge_card_multimodal_prompt
 pillar: P01
 llm_function: INJECT
-purpose: Domain knowledge for multimodal_prompt production
+purpose: Conhecimento de domínio para a produção de multimodal_prompt
 quality: null
 title: "Knowledge Card Multimodal Prompt"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [multimodal_prompt, builder, knowledge_card]
-tldr: "Domain knowledge for multimodal_prompt production"
-domain: "multimodal_prompt construction"
+tldr: "Conhecimento de domínio para a produção de multimodal_prompt"
+domain: "construção de multimodal_prompt"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F3_inject"
-keywords: [multimodal_prompt construction, knowledge card multimodal prompt, multimodal_prompt, builder, knowledge_card, <image>, <audio>, domain overview
-multimodal, key concepts, visual pretraining]
+keywords: [construção de multimodal_prompt, knowledge card multimodal prompt, multimodal_prompt, builder, knowledge_card, <image>, <audio>, visão geral de domínio, multimodal, conceitos-chave, pré-treinamento visual]
 density_score: 0.85
 related:
   - multimodal-prompt-builder
   - multi-modal-config-builder
 ---
-## Domain Overview
-Multimodal prompts enable systems to process and generate content across vision, audio, and text, driving advancements in AI applications like healthcare diagnostics, AR/VR interfaces, and customer service chatbots. These prompts require alignment between modalities to ensure coherent cross-modal reasoning, often leveraging pretraining on large-scale datasets such as MM-100 or MMBench. Challenges include modality-specific biases, computational overhead, and ensuring semantic consistency across heterogeneous data.
+## Visão Geral do Domínio
+Prompts multimodais permitem que sistemas processem e gerem conteúdo em visão, áudio e texto, impulsionando avanços em aplicações de IA como diagnóstico em saúde, interfaces de AR/VR e chatbots de atendimento ao cliente. Esses prompts exigem alinhamento entre modalidades para garantir raciocínio cross-modal coerente, muitas vezes aproveitando pré-treinamento em datasets de larga escala como MM-100 ou MMBench. Os desafios incluem vieses específicos de cada modalidade, sobrecarga computacional e a garantia de consistência semântica entre dados heterogêneos.
 
-The field is shaped by research emphasizing cross-modal retrieval, fusion architectures, and prompt engineering that bridge gaps between modalities. Industry adoption focuses on usability, scalability, and integration with existing workflows, often requiring adherence to standards like IEEE P2859 for multimodal AI systems.
+O campo é moldado por pesquisas que enfatizam recuperação cross-modal, arquiteturas de fusão e engenharia de prompt que preenchem lacunas entre modalidades. A adoção pela indústria foca em usabilidade, escalabilidade e integração com fluxos de trabalho existentes, muitas vezes exigindo aderência a padrões como o IEEE P2859 para sistemas de IA multimodais.
 
-## Key Concepts
-| Concept | Definition | Source |
+## Conceitos-Chave
+| Conceito | Definição | Fonte |
 |---|---|---|
-| Cross-modal alignment | Mapping representations between modalities (e.g., text-to-image) | CLIP (OpenAI) |
-| Modality-specific tokens | Unique embeddings for vision/audio/text inputs | Audio-Visual Pretraining (AVP, Facebook) |
-| Multimodal fusion | Combining features from multiple modalities | MML Framework (IEEE) |
-| Prompt injection | Embedding task-specific instructions into multimodal inputs | MMP (Stanford) |
-| Temporal synchronization | Aligning sequential data across modalities (e.g., video + speech) | VQA Dataset (AI2) |
-| Semantic grounding | Ensuring prompts reference real-world contexts | AVSE (Microsoft) |
-| Modality weighting | Adjusting contribution of each modality during inference | MPE (Meta) |
-| Zero-shot prompting | Generalizing to unseen modalities without retraining | MPZSL (MIT) |
-| Context-aware fusion | Using task context to guide modality interaction | MT Architecture (Google) |
-| Prompt normalization | Scaling embeddings for cross-modal consistency | MMR Benchmark (CMU) |
+| Cross-modal alignment | Mapeamento de representações entre modalidades (ex.: texto-para-imagem) | CLIP (OpenAI) |
+| Modality-specific tokens | Embeddings únicos para entradas de visão/áudio/texto | Audio-Visual Pretraining (AVP, Facebook) |
+| Multimodal fusion | Combinação de features de múltiplas modalidades | MML Framework (IEEE) |
+| Prompt injection | Incorporação de instruções específicas da tarefa em entradas multimodais | MMP (Stanford) |
+| Temporal synchronization | Alinhamento de dados sequenciais entre modalidades (ex.: vídeo + fala) | VQA Dataset (AI2) |
+| Semantic grounding | Garantia de que os prompts referenciam contextos do mundo real | AVSE (Microsoft) |
+| Modality weighting | Ajuste da contribuição de cada modalidade durante a inferência | MPE (Meta) |
+| Zero-shot prompting | Generalização para modalidades nunca vistas sem retreinamento | MPZSL (MIT) |
+| Context-aware fusion | Uso do contexto da tarefa para guiar a interação entre modalidades | MT Architecture (Google) |
+| Prompt normalization | Escalonamento de embeddings para consistência cross-modal | MMR Benchmark (CMU) |
 
-## Industry Standards
-- IEEE P2859: Standard for Multimodal AI Systems
-- W3C Media Fragments: Audio/visual metadata interoperability
-- Hugging Face Transformers: Multimodal model library
-- Common Voice (Mozilla): Open-source audio dataset
-- MM-100 (CMU): Multimodal benchmark for evaluation
+## Padrões da Indústria
+- IEEE P2859: padrão para sistemas de IA multimodais
+- W3C Media Fragments: interoperabilidade de metadados de áudio/vídeo
+- Hugging Face Transformers: biblioteca de modelos multimodais
+- Common Voice (Mozilla): dataset de áudio open-source
+- MM-100 (CMU): benchmark multimodal para avaliação
 
-## Common Patterns
-1. Use modality-specific prefixes (e.g., `<image>`, `<audio>`) for disambiguation
-2. Embed task instructions in all modalities for alignment (e.g., "Describe this scene")
-3. Apply hierarchical fusion (early vs. late integration) based on task complexity
-4. Use temporal markers for synchronized audio/video prompts
-5. Leverage pretraining on aligned multimodal corpora (e.g., WebVid)
+## Padrões Comuns
+1. Usar prefixos específicos de modalidade (ex.: `<image>`, `<audio>`) para desambiguação
+2. Incorporar instruções de tarefa em todas as modalidades para alinhamento (ex.: "Descreva esta cena")
+3. Aplicar fusão hierárquica (integração early vs. late) conforme a complexidade da tarefa
+4. Usar marcadores temporais para prompts de áudio/vídeo sincronizados
+5. Aproveitar pré-treinamento em corpora multimodais alinhados (ex.: WebVid)
 
-## Pitfalls
-- Ignoring modality-specific preprocessing (e.g., audio normalization)
-- Over-reliance on single modality during fusion
-- Poor alignment between text and visual/audio features
-- Neglecting temporal coherence in sequential prompts
-- Using generic prompts without modality-specific tuning
+## Armadilhas
+- Ignorar o pré-processamento específico de cada modalidade (ex.: normalização de áudio)
+- Depender excessivamente de uma única modalidade durante a fusão
+- Alinhamento fraco entre features de texto e de visão/áudio
+- Negligenciar a coerência temporal em prompts sequenciais
+- Usar prompts genéricos sem ajuste específico por modalidade
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

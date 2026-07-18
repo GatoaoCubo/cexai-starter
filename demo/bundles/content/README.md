@@ -1,31 +1,61 @@
-# CEXAI capability bundle: Content (`content`)
+# Bundle de capacidade CEXAI: Content (`content`)
 
-The **12 pillar contract** for the `knowledge_card` kind, plus the setup config.
+O **contrato de 12 pilares** para o kind `knowledge_card`, mais a
+configuracao de setup.
 Nucleus N04 . kind `knowledge_card` . pillar P01.
 
-This is the CEXAI "12 ISO" form -- one specification file per pillar
-(P01-P12), exactly the bundle shown in the course video. Upload the 12
-pillar files as Knowledge to any assistant, paste the instruction, and it
-becomes a working Content agent.
+Esta e a forma "12 ISO" da CEXAI -- um arquivo de especificacao por pilar
+(P01-P12), exatamente o bundle mostrado no video do curso. Suba os 12
+arquivos de pilar como Knowledge em qualquer assistente, cole a instrucao, e
+ele vira um agent funcional de Content (captura de conhecimento e
+documentacao).
 
-## Contents (15 files)
-- `P01_knowledge.md` ... `P12_orchestration.md` -- the 12 pillar ISOs (the
-  builder contract for this kind: one specification per pillar, P01-P12).
-- `customgpt_instructions.json` -- the Custom GPT config: name, description,
-  the `instructions` string to paste, and conversation starters.
-- `system_instruction.md` -- the same instruction as a paste-ready system
-  prompt (for Claude Projects or any model).
-- `README.md` -- this file.
+## Conteudo (19 arquivos)
 
-## Upload (3 ways)
-- **ChatGPT (Custom GPT):** Explore GPTs -> Create -> Configure. Upload the
-  12 `P0X_*.md` files as Knowledge. Paste the `instructions` field of
-  `customgpt_instructions.json` into the Instructions box.
-- **Claude (Project):** paste `system_instruction.md` into Custom
-  instructions; attach the 12 pillar files to the project knowledge.
-- **Any AI:** paste `system_instruction.md` as the system prompt.
+- `P01_knowledge.md` ate `P12_orchestration.md` -- os 12 ISOs de pilar (o
+  contrato do builder para este kind: uma especificacao por pilar, P01-P12).
+- `customgpt_instructions.json` -- a configuracao do Custom GPT: nome,
+  descricao, a string `instructions` para colar, e os conversation
+  starters.
+- `system_instruction.md` -- a mesma instrucao em formato de prompt de
+  sistema, pronta para colar (Claude Projects, Gemini, ou qualquer modelo).
+- `SETUP_chatgpt_projects.md` -- guia de setup para ChatGPT (Custom GPT e
+  Projects).
+- `SETUP_claude_projects.md` -- guia de setup para Claude Projects.
+- `SETUP_gemini_gems.md` -- guia de setup para Gemini Gems.
+- `SETUP_pt-br.md` -- guia combinado, visao geral de todos os runtimes.
+- `README.md` -- este arquivo.
 
-## Provenance / honesty
-Never-fabricate: any `[fornecer: ...]` marker is a field with no real input
--- fill it in with your own brand before use. The 12 pillar ISOs are the
-generic, public builder contract for `knowledge_card` -- no tenant data.
+## Como subir (passo a passo, em qualquer IA)
+
+1. Preencha os campos `[fornecer: ...]` de `system_instruction.md` (ou de
+   `customgpt_instructions.json`) com o nome, o tom de voz e os valores da
+   sua marca -- isso e o que faz o agent falar como voce, e nao de forma
+   generica.
+2. Suba os 12 arquivos `P0X_*.md` como Knowledge (ou Files, dependendo da
+   plataforma).
+3. Cole a instrucao de sistema:
+   - **ChatGPT (Custom GPT):** Explore GPTs -> Create -> Configure. Cole o
+     campo `instructions` de `customgpt_instructions.json` na caixa de
+     Instructions.
+   - **ChatGPT (Projects):** cole `system_instruction.md` nas Instructions
+     do projeto.
+   - **Claude (Project):** cole `system_instruction.md` nas Custom
+     Instructions; anexe os 12 arquivos de pilar a Knowledge do projeto.
+   - **Gemini (Gem):** cole `system_instruction.md` no campo Instructions
+     do Gem.
+   - **Qualquer outra IA:** cole `system_instruction.md` como prompt de
+     sistema.
+4. Teste com: `Documentar o processo de integracao de novos funcionarios
+   como um knowledge card`.
+
+Guias detalhados por runtime, com capturas de tela do fluxo e solucao de
+problemas: `SETUP_chatgpt_projects.md`, `SETUP_claude_projects.md`,
+`SETUP_gemini_gems.md`, ou o guia combinado `SETUP_pt-br.md`.
+
+## Procedencia / honestidade
+
+Nunca fabricar: todo marcador `[fornecer: ...]` e um campo sem dado real --
+preencha com a sua propria marca antes de usar. Os 12 ISOs de pilar sao o
+contrato de builder generico e publico para `knowledge_card` -- sem dado de
+tenant nenhum.

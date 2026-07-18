@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CEXAI - Cognitive Exchange AI | Open-Source AI Brain</title>
-  <meta name="description" content="CEXAI is not an agent. It is an AI brain. 318 typed kinds, 318 builders, 8 nuclei, 6 runtimes. Your knowledge, your repo, your rules. Intelligence compounds when exchanged.">
+  <meta name="description" content="CEXAI is not an agent. It is an AI brain. 318 typed kinds, 318 builders, 8 nuclei, 4 runtimes. Your knowledge, your repo, your rules. Intelligence compounds when exchanged.">
   <meta property="og:title" content="CEXAI - Cognitive Exchange AI">
   <meta property="og:description" content="Open-source AI brain. Seven Artificial Sins. Twelve pillars. 318 typed kinds. Intelligence compounds when exchanged.">
   <meta property="og:type" content="website">
@@ -27,7 +27,7 @@
     "@type": "SoftwareApplication",
     "name": "CEXAI",
     "alternateName": "Cognitive Exchange AI",
-    "description": "Open-source typed knowledge system for LLM agents. 318 kinds, 318 builders, 8 nuclei, 6 runtimes.",
+    "description": "Open-source typed knowledge system for LLM agents. 318 kinds, 318 builders, 8 nuclei, 4 runtimes.",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Windows, macOS, Linux",
     "license": "https://www.apache.org/licenses/LICENSE-2.0",
@@ -1036,7 +1036,7 @@
 <!-- ======== NAV ======== -->
   <nav>
     <div class="container">
-      <a href="#" class="nav-brand">CEX<span>AI</span></a>
+      <a href="index.html" class="nav-brand">CEX<span>AI</span></a>
       <ul class="nav-links">
         <li><a href="#why"><span data-en>Why</span><span data-pt hidden>Por Que</span></a></li>
         <li><a href="#how"><span data-en>How</span><span data-pt hidden>Como</span></a></li>
@@ -1052,7 +1052,7 @@
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
         </button>
-        <a href="{{SERVICE_HOTMART_URL}}" class="btn btn-primary btn-sm" target="_blank" rel="noopener"><span data-en>Done For You</span><span data-pt hidden>Feito Para Você</span></a>
+        <a href="#tiers" class="btn btn-primary btn-sm"><span data-en>Done For You</span><span data-pt hidden>Feito Para Você</span></a>
         <a href="https://github.com/GatoaoCubo/cexai-starter" class="nav-gh" target="_blank" rel="noopener">
           <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
           GitHub
@@ -1076,7 +1076,7 @@
     <a href="https://publish.obsidian.md/cexai" target="_blank" rel="noopener">Vault</a>
     <a href="https://discord.gg/HK6E2VgfWh" target="_blank" rel="noopener">Discord</a>
     <a href="https://github.com/GatoaoCubo/cexai-starter" target="_blank" rel="noopener">GitHub</a>
-    <a href="{{SERVICE_HOTMART_URL}}" target="_blank" rel="noopener"><span data-en>Done For You</span><span data-pt hidden>Feito Para Você</span></a>
+    <a href="#tiers" onclick="closeMenu()"><span data-en>Done For You</span><span data-pt hidden>Feito Para Você</span></a>
   </div>
 
 <!-- ======== HERO ======== -->
@@ -1113,7 +1113,7 @@
         <div class="stat-item"><span class="stat-num">318</span><span class="stat-label">kinds</span></div>
         <div class="stat-item"><span class="stat-num">318</span><span class="stat-label">builders</span></div>
         <div class="stat-item"><span class="stat-num">3,600+</span><span class="stat-label">ISOs</span></div>
-        <div class="stat-item"><span class="stat-num">150+</span><span class="stat-label">tools</span></div>
+        <div class="stat-item"><span class="stat-num">100+</span><span class="stat-label">tools</span></div>
         <div class="stat-item"><span class="stat-num">12</span><span class="stat-label">pillars</span></div>
         <div class="stat-item"><span class="stat-num">8</span><span class="stat-label">nuclei</span></div>
       </div>
@@ -1230,8 +1230,9 @@
         <div class="card funnel-card">
           <span class="funnel-tier"><span data-en>DONE-FOR-YOU</span><span data-pt hidden>FEITO PARA VOCÊ</span></span>
           <h3><span data-en>We Build Your Brain</span><span data-pt hidden>Nós Construímos Seu Cérebro</span></h3>
-          <p><span data-en>Skip the clone-and-configure. The <code>/genesis</code> fabrication service builds your company's own sovereign AI brain -- your brand, your catalog, your storefront and admin, wired end to end -- and hands you the finished, running repo.</span><span data-pt hidden>Pule o clone-e-configure. O serviço de fabricação <code>/genesis</code> constrói o cérebro de IA soberano da sua própria empresa -- sua marca, seu catálogo, sua loja e admin, tudo conectado de ponta a ponta -- e entrega para você o repositório pronto e funcionando.</span></p>
-          <a href="{{SERVICE_HOTMART_URL}}" class="btn btn-primary" target="_blank" rel="noopener"><span data-en>Talk to Us</span><span data-pt hidden>Fale Conosco</span></a>
+          <p><span data-en>Skip the clone-and-configure. Our <code>/genesis</code> service fabricates your company's sovereign AI brain -- your brand, catalog, storefront and admin, wired end to end -- and hands you the finished, running repo.</span><span data-pt hidden>Pule o clone-e-configure. Nosso serviço <code>/genesis</code> fabrica o cérebro de IA soberano da sua empresa -- sua marca, catálogo, loja e admin, tudo conectado de ponta a ponta -- e entrega para você o repositório pronto e funcionando.</span></p>
+          <a href="https://wa.me/5511981775973?text=Quero%20meu%20c%C3%A9rebro%20CEXAI%20(DONE-FOR-YOU)" class="btn btn-primary" target="_blank" rel="noopener"><span data-en>Talk on WhatsApp</span><span data-pt hidden>Fale no WhatsApp</span></a>
+          <a href="briefing.html" class="btn btn-secondary"><span data-en>Get the briefing form</span><span data-pt hidden>Baixar o briefing</span></a>
           <p class="funnel-note"><span data-en>Bespoke engagement, scoped per company. No fixed price -- let's talk.</span><span data-pt hidden>Engajamento sob medida, escopado por empresa. Sem preço fixo -- vamos conversar.</span></p>
         </div>
       </div>
@@ -1485,7 +1486,7 @@
         <table>
           <thead><tr><th>Runtime</th><th><span data-en>Auth</span><span data-pt hidden>Autenticação</span></th><th><span data-en>When to Use</span><span data-pt hidden>Quando Usar</span></th></tr></thead>
           <tbody>
-            <tr><td><strong>Claude</strong> (Anthropic)</td><td><span data-en>API key or Max</span><span data-pt hidden>Chave de API ou Max</span></td><td><span data-en>Default -- highest quality, largest context (200K / 1M)</span><span data-pt hidden>Padrão -- maior qualidade, maior contexto (200K / 1M)</span></td></tr>
+            <tr><td><strong>Claude</strong> (Anthropic)</td><td><span data-en>API key or Claude subscription</span><span data-pt hidden>Chave de API ou assinatura Claude</span></td><td><span data-en>Default -- highest quality, largest context (200K / 1M)</span><span data-pt hidden>Padrão -- maior qualidade, maior contexto (200K / 1M)</span></td></tr>
             <tr><td><strong>Codex</strong> (OpenAI)</td><td>ChatGPT-plus or API</td><td><span data-en>GPT-5 runtime via OpenAI CLI</span><span data-pt hidden>Runtime GPT-5 via CLI da OpenAI</span></td></tr>
             <tr><td><strong>Gemini</strong> (Google)</td><td><span data-en>oauth or API key</span><span data-pt hidden>oauth ou chave de API</span></td><td><span data-en>Free tier via <code>gemini-2.5-flash-lite</code></span><span data-pt hidden>Camada gratuita via <code>gemini-2.5-flash-lite</code></span></td></tr>
             <tr><td><strong>Ollama</strong> (local)</td><td><span data-en>None</span><span data-pt hidden>Nenhuma</span></td><td><span data-en>Fully offline on your GPU</span><span data-pt hidden>Totalmente offline na sua GPU</span></td></tr>
@@ -1506,7 +1507,7 @@
 <span class="kw">Layer 2</span> -- NUCLEI         <span data-en>8 nuclei (N00 archetype + N01-N07 operational)</span><span data-pt hidden>8 nuclei (N00 arquétipo + N01-N07 operacionais)</span>
 <span class="kw">Layer 3</span> -- PIPELINE       <span data-en>8-Function Pipeline (8F) = the assembly line</span><span data-pt hidden>Pipeline de 8 Funções (8F) = a linha de montagem</span>
 <span class="kw">Layer 4</span> -- GOVERNANCE     <span data-en>hooks + doctor + quality gates + flywheel audit</span><span data-pt hidden>hooks + doctor + quality gates + auditoria flywheel</span>
-<span class="kw">Layer 5</span> -- TOOLS          <span data-en>150+ Python CLI tools (cex_*.py) = the runtime</span><span data-pt hidden>150+ ferramentas de CLI em Python (cex_*.py) = o runtime</span>
+<span class="kw">Layer 5</span> -- TOOLS          <span data-en>100+ Python CLI tools (cex_*.py) = the runtime</span><span data-pt hidden>100+ ferramentas de CLI em Python (cex_*.py) = o runtime</span>
 <span class="kw">Layer 6</span> -- WIRING         <span data-en>SDK + signals + decision manifests = the nervous system</span><span data-pt hidden>SDK + signals + decision manifests = o sistema nervoso</span></code></pre>
       </div>
     </div>
@@ -1531,7 +1532,7 @@
         <div class="prereq">
           <span class="prereq-icon">Py</span>
           <h4>Python 3.12+</h4>
-          <p><span data-en>For the 350+ CLI tools. Claude Code installs pip deps for you.</span><span data-pt hidden>Para as mais de 350 ferramentas de CLI. O Claude Code instala as dependências pip para você.</span></p>
+          <p><span data-en>For the 100+ CLI tools. Claude Code installs pip deps for you.</span><span data-pt hidden>Para as mais de 100 ferramentas de CLI. O Claude Code instala as dependências pip para você.</span></p>
           <p style="margin-top: 8px;"><code>python --version</code></p>
         </div>
         <div class="prereq">

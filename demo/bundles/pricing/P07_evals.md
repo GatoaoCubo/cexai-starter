@@ -3,100 +3,100 @@ kind: quality_gate
 id: p11_qg_content_monetization
 pillar: P11
 llm_function: GOVERN
-purpose: Golden and anti-examples of content monetization configs
-pattern: few-shot learning — LLM reads these before producing
+purpose: "Exemplos de referencia (golden) e antiexemplos de configs de monetizacao de conteudo"
+pattern: "few-shot learning -- o LLM le estes antes de produzir"
 quality: null
 title: "Gate: content_monetization"
 version: 1.0.0
 author: n03_engineering
 tags: [quality-gate, content-monetization, P11, pricing, billing, credits, governance]
-tldr: "Gates for monetization artifacts — margin enforcement, webhook idempotency, credit tracking, mock-first development, checkout security."
+tldr: "Gates para artefatos de monetizacao -- aplicacao de margem, idempotencia de webhook, rastreio de creditos, desenvolvimento mock-first, seguranca de checkout."
 domain: content_monetization
 created: 2026-03-31
 updated: 2026-03-31
 8f: "F7_govern"
-keywords: [gates for monetization artifacts, margin enforcement, webhook idempotency, credit tracking, mock-first development, checkout security, quality-gate]
+keywords: [gates para artefatos de monetizacao, aplicacao de margem, idempotencia de webhook, rastreio de creditos, desenvolvimento mock-first, seguranca de checkout, quality-gate]
 density_score: 1.0
 related:
   - content-monetization-builder
   - bld_schema_content_monetization
 ---
-## Quality Gate
+## Gate de Qualidade
 
 # Gate: content_monetization
 
-## Definition
-| Field | Value |
+## Definicao
+| Campo | Valor |
 |-------|-------|
-| Kind | content_monetization (cli_tool/workflow instances) |
+| Kind | content_monetization (instancias de cli_tool/workflow) |
 | Pillar | P04 (tools) |
-| Function | CALL (monetization automation) |
-| Threshold | 8.0 minimum |
+| Funcao | CALL (automacao de monetizacao) |
+| Limiar | minimo de 8.0 |
 
-## HARD Gates (fail = reject)
-| # | Gate | Check |
-|---|------|-------|
-| H1 | 9-stage complete | All 9 stages documented (PARSE through DEPLOY) |
-| H2 | Margin enforcement | floor_margin_pct >= 0.30 and explicitly set |
-| H3 | Integer pricing | All prices in centavos/cents, no floats |
-| H4 | Zero secrets | No API keys/webhook secrets in plaintext — only ENV_VAR |
-| H5 | Webhook idempotent | idempotency: true and dedup mechanism described |
-| H6 | Mock mode default | mock_mode: true in all non-production configs |
+## Gates HARD (falha = rejeitar)
+| # | Gate | Verificacao |
+|---|------|------|
+| H1 | 9 estagios completos | Todos os 9 estagios documentados (de PARSE ate DEPLOY) |
+| H2 | Aplicacao de margem | floor_margin_pct >= 0.30 e definido explicitamente |
+| H3 | Precificacao em inteiros | Todos os precos em centavos/cents, sem float |
+| H4 | Zero segredos | Nenhuma chave de API/segredo de webhook em texto puro -- apenas ENV_VAR |
+| H5 | Webhook idempotente | idempotency: true e mecanismo de deduplicacao descrito |
+| H6 | Modo mock padrao | mock_mode: true em todas as configs fora de producao |
 
-## SOFT Gates (warn, don't reject)
-| # | Gate | Check | Weight |
-|---|------|-------|--------|
-| S1 | Multi-tier | At least 2 pricing tiers defined | 0.8 |
-| S2 | Credit packs | Pay-as-you-go packs available for non-subscribers | 0.7 |
-| S3 | Behavioral emails | Email sequences use behavioral triggers, not time-only | 0.8 |
-| S4 | Annual discount | Yearly pricing with discount available | 0.5 |
-| S5 | Fallback provider | Alternative checkout provider documented | 0.6 |
-| S6 | Course structure | If courses enabled: modules + lessons + drip defined | 0.7 |
+## Gates SOFT (aviso, nao rejeita)
+| # | Gate | Verificacao | Peso |
+|---|------|------|--------|
+| S1 | Multi-tier | Pelo menos 2 tiers de precificacao definidos | 0.8 |
+| S2 | Pacotes de creditos | Pacotes pay-as-you-go disponiveis para nao assinantes | 0.7 |
+| S3 | E-mails comportamentais | Sequencias de e-mail usam gatilhos comportamentais, nao so tempo | 0.8 |
+| S4 | Desconto anual | Precificacao anual com desconto disponivel | 0.5 |
+| S5 | Provedor de fallback | Provedor de checkout alternativo documentado | 0.6 |
+| S6 | Estrutura de curso | Se cursos habilitados: modulos + aulas + drip definidos | 0.7 |
 
-## Margin Validation Gate (per-tier, at config time)
-| Tier Type | Min Margin | Rationale |
+## Gate de Validacao de Margem (por tier, no momento da config)
+| Tipo de Tier | Margem Minima | Motivo |
 |-----------|-----------|-----------|
-| Free | N/A | No revenue, but must cap credit usage |
-| Starter/Basic | 30% | Minimum viable after pipeline costs |
-| Pro/Growth | 40% | Should fund scaling |
-| Enterprise | 50% | Custom support costs absorb margin |
-| Credit Pack | 35% | Per-unit must cover operation + overhead |
+| Free | N/A | Sem receita, mas precisa limitar o uso de creditos |
+| Starter/Basic | 30% | Minimo viavel apos os custos de pipeline |
+| Pro/Growth | 40% | Deve financiar a escala |
+| Enterprise | 50% | Custos de suporte customizado absorvem margem |
+| Credit Pack | 35% | Cada unidade precisa cobrir a operacao + overhead |
 
-## Scoring Formula
+## Formula de Pontuacao
 ```
 score = (HARD_pass / 8) * 6.0 + (SOFT_weighted / max_weight) * 4.0
 ```
 
-## Quality Tiers
-| Tier | Score | Meaning |
+## Niveis de Qualidade
+| Nivel | Pontuacao | Significado |
 |------|-------|---------|
-| REJECT | < 8.0 | Missing stages, no margin check, or security violation |
-| PUBLISH | 8.0-8.9 | Pipeline complete, margins enforced, webhooks idempotent |
-| EXEMPLARY | 9.0+ | Full funnel (ads→checkout→course→email), multi-provider, behavioral triggers |
+| REJECT | < 8.0 | Estagios faltando, sem checagem de margem, ou violacao de seguranca |
+| PUBLISH | 8.0-8.9 | Pipeline completo, margens aplicadas, webhooks idempotentes |
+| EXEMPLARY | 9.0+ | Funil completo (anuncios→checkout→curso→e-mail), multi-provedor, gatilhos comportamentais |
 
 ## Bypass
-| Field | Value |
+| Campo | Valor |
 |-------|-------|
-| conditions | Critical revenue stream requiring immediate launch |
+| conditions | Fluxo de receita critico exigindo lancamento imediato |
 | approver | n06-chief |
-| audit_trail | Log in records/audits/ with justification and timestamp |
-| expiry | 48h — full gate pass required before expiry |
-| never_bypass | H3 (integer pricing), H4 (zero secrets), H5 (webhook idempotency) |
+| audit_trail | Registrar em records/audits/ com justificativa e timestamp |
+| expiry | 48h -- precisa passar no gate completo antes de expirar |
+| never_bypass | H3 (precificacao em inteiros), H4 (zero segredos), H5 (idempotencia de webhook) |
 
-## Actions
-| Score | Tier | Action |
+## Acoes
+| Pontuacao | Nivel | Acao |
 |-------|------|--------|
-| >= 9.5 | GOLDEN | Publish as exemplar |
-| >= 8.0 | PUBLISH | Ready for runtime |
-| >= 7.0 | REVIEW | Flag for review |
-| < 7.0  | REJECT | Rework required |
+| >= 9.5 | GOLDEN | Publicar como exemplar |
+| >= 8.0 | PUBLISH | Pronto para producao |
+| >= 7.0 | REVIEW | Sinalizar para revisao |
+| < 7.0  | REJECT | Retrabalho necessario |
 
-## Examples
+## Exemplos
 
-# Examples: content-monetization-builder
+# Exemplos: content-monetization-builder
 
-## Golden — SaaS (Stripe, BR)
-INPUT: "Monetization config for AI research platform, BR"
+## Golden -- SaaS (Stripe, BR)
+ENTRADA: "Config de monetizacao para plataforma de pesquisa com IA, BR"
 ```yaml
 identity: { empresa: "ACME", domain: ai_tools, currency: BRL, currency_unit: centavos, country: BR }
 pricing:
@@ -109,10 +109,10 @@ credits: { pipeline_costs: { research: 50, publish: 10 }, overdraft_policy: noti
 checkout: { provider: stripe, webhook_secret_env: STRIPE_WEBHOOK_SECRET, idempotency: true, mock_mode: true }
 validation: { margin_check: true, webhook_test: true, mock_before_live: true }
 ```
-WHY GOOD: Hybrid pricing, centavos, ENV_VAR secrets, idempotent, mock on.
+POR QUE E BOM: Precificacao hibrida, centavos, segredos via ENV_VAR, idempotente, mock ligado.
 
-## Golden — Course (Hotmart, BR)
-INPUT: "Pet care course, Hotmart, BR"
+## Golden -- Curso (Hotmart, BR)
+ENTRADA: "Curso de cuidados com pets, Hotmart, BR"
 ```yaml
 identity: { empresa: "PetVida", domain: pet_education, currency: BRL, currency_unit: centavos, country: BR }
 pricing: { strategy: tiered, floor_margin_pct: 0.70, tiers: [{ name: basico, price_monthly: 4990 }, { name: complete, price_monthly: 9990 }] }
@@ -120,10 +120,10 @@ checkout: { provider: hotmart, webhook_secret_env: HOTMART_HOTTOK, signature: sh
 courses: { enabled: true, modules: [{ title: "Nutrição", drip_days: 0 }, { title: "Saúde", drip_days: 7 }], certification: true }
 validation: { margin_check: true, webhook_test: true, mock_before_live: true }
 ```
-WHY GOOD: Course-focused, Hotmart webhook (JSON/sha256), drip, 70% margins.
+POR QUE E BOM: Foco em curso, webhook Hotmart (JSON/sha256), drip, margens de 70%.
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Checagem de Cross-Reference (SOFT)
+- [ ] Campo de frontmatter `related:` preenchido (3-15 entradas)
+- [ ] Secao `## Related Artifacts` presente no corpo do artefato
+- [ ] Pelo menos 1 referencia upstream e 1 downstream
+- Penalidade: -0.3 se vazio (nao bloqueia, incentiva a conexao)

@@ -3,79 +3,79 @@ kind: quality_gate
 id: p11_qg_product_match
 pillar: P11
 llm_function: GOVERN
-purpose: Golden and anti-examples of product_match artifacts
-pattern: few-shot learning -- LLM reads these before producing
+purpose: Exemplos ideais (golden) e anti-exemplos de artefatos product_match
+pattern: aprendizado few-shot -- o LLM lê estes antes de produzir
 quality: null
-title: "Gate: product_match"
+title: "Gate -- product_match"
 version: "1.0.0"
 author: "builder_agent"
 tags: [quality-gate, product-match, P04, record-linkage, catalog-audit, confidence-floor]
-tldr: "Pass/fail gate for product_match artifacts: input contract coverage, output-section fidelity to MOLD_PRODUCT_MATCH, match-engine honesty, and the named match_confiavel gate."
-domain: "visual record-linkage / catalog-audit spec definition -- a supplier-item x marketplace-listing matcher with a composite non-key join and an offline catalog audit"
+tldr: "Gate de aprovação/reprovação para artefatos product_match: cobertura do contrato de entrada, fidelidade das seções de saída ao MOLD_PRODUCT_MATCH, honestidade do motor de match, e o gate nomeado match_confiavel."
+domain: "definição de spec de casamento visual de registros (record-linkage) / auditoria de catálogo -- um casador item-de-fornecedor x anúncio-de-marketplace com join por não-chave composta e uma auditoria de catálogo offline"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F7_govern"
-keywords: [visual record-linkage, catalog audit spec definition, input contract coverage, output section fidelity, match engine honesty, named gate match_confiavel]
+keywords: [casamento visual de registros, definição de spec de auditoria de catálogo, cobertura do contrato de entrada, fidelidade das seções de saída, honestidade do motor de match, gate nomeado match_confiavel]
 density_score: 0.90
 related:
   - bld_schema_product_match
 ---
-## Quality Gate
+## Gate de Qualidade
 
 # Gate: product_match
-## Definition
-| Field | Value |
+## Definição
+| Campo | Valor |
 |---|---|
-| metric | product_match artifact quality score |
-| threshold | 7.0 (publish >= 8.0, golden >= 9.5) |
-| operator | weighted_sum |
-| scope | all artifacts with `kind: product_match` |
-## HARD Gates
-All must pass (AND logic). Any single failure = REJECT.
-| ID | Check | Fail Condition |
+| métrica | pontuação de qualidade do artefato product_match |
+| limiar | 7.0 (publicar >= 8.0, golden >= 9.5) |
+| operador | soma ponderada |
+| escopo | todos os artefatos com `kind: product_match` |
+## Gates HARD
+Todos precisam passar (lógica AND). Qualquer falha isolada = REJEITAR.
+| ID | Verificação | Condição de Falha |
 |---|---|---|
-| H01 | Frontmatter parses as valid YAML | Parse error on frontmatter block |
-| H02 | ID matches `^p04_pm_[a-z][a-z0-9_]+$` | ID contains uppercase, hyphens, missing prefix, or spaces |
-| H03 | ID equals filename stem | `id: p04_pm_supplier_ml` but file is `p04_pm_supplier_amz.md` |
-| H04 | Kind equals literal `product_match` | `kind: tool` or `kind: catalog_audit` or any other value |
-| H05 | Quality field is null | `quality: 8.5` or any non-null value |
-| H06 | All required fields present | Missing any of: match_join_keys, match_engine, match_confidence_floor |
-| H07 | Output sections match `MOLD_PRODUCT_MATCH` order+layout | Missing, reordered, or re-layouted section (must be table/list/fields/fields) |
-| H08 | EAN/GTIN/barcode never documented as an active join key | `match_join_keys` includes `ean`/`gtin`/`barcode` without an exclusion note |
-| H09 | match_engine is one of the 4 closed-enum values | Any value outside {reverse_image, embedding, manual, none} |
-| H10 | Veredito section carries the named gate `match_confiavel` | Gate name absent, renamed, or blocker list omitted |
-## SOFT Scoring
-Weights sum to 100%.
-| Dimension | Weight | Criteria |
+| H01 | Frontmatter parseia como YAML válido | Erro de parse no bloco de frontmatter |
+| H02 | ID casa com `^p04_pm_[a-z][a-z0-9_]+$` | ID contém maiúsculas, hífens, prefixo ausente, ou espaços |
+| H03 | ID é igual ao stem do nome do arquivo | `id: p04_pm_supplier_ml` mas o arquivo é `p04_pm_supplier_amz.md` |
+| H04 | Kind é igual ao literal `product_match` | `kind: tool` ou `kind: catalog_audit` ou qualquer outro valor |
+| H05 | Campo quality é null | `quality: 8.5` ou qualquer valor não-null |
+| H06 | Todos os campos obrigatórios presentes | Falta algum de: match_join_keys, match_engine, match_confidence_floor |
+| H07 | Seções de saída casam com a ordem+layout de `MOLD_PRODUCT_MATCH` | Seção ausente, reordenada, ou com layout alterado (deve ser table/list/fields/fields) |
+| H08 | EAN/GTIN/código de barras nunca documentados como chave de join ativa | `match_join_keys` inclui `ean`/`gtin`/`barcode` sem uma nota de exclusão |
+| H09 | match_engine é um dos 4 valores do enum fechado | Qualquer valor fora de {reverse_image, embedding, manual, none} |
+| H10 | Seção Veredito carrega o gate nomeado `match_confiavel` | Nome do gate ausente, renomeado, ou lista de bloqueadores omitida |
+## Pontuação SOFT
+Os pesos somam 100%.
+| Dimensão | Peso | Critérios |
 |---|---|---|
-| Input contract coverage | 1.5 | All 6 dashboard fields documented with type/required/default; internal `match_exclude_keys` override noted |
-| Output section fidelity | 1.5 | Each of the 4 sections has the exact columns/keys from `MOLD_PRODUCT_MATCH` |
-| Match-engine honesty | 1.0 | Implementation status per enum value stated accurately (none = only distinct behavior today) |
-| Confidence-floor declared | 1.0 | `match_confidence_floor` present and its role in the SIM/PARCIAL/NAO split explained |
-| Join-key exclusion documented | 1.0 | `match_exclude_keys` default + rationale (reseller recoding) stated explicitly |
-| Gate + blockers completeness | 1.0 | `match_confiavel` + Cobertura + Bloqueadores all present and consistent |
-## Actions
-| Score | Tier | Action |
+| Cobertura do contrato de entrada | 1.5 | Os 6 campos do dashboard documentados com tipo/obrigatoriedade/padrão; override interno `match_exclude_keys` anotado |
+| Fidelidade das seções de saída | 1.5 | Cada uma das 4 seções tem exatamente as colunas/chaves de `MOLD_PRODUCT_MATCH` |
+| Honestidade do motor de match | 1.0 | Status de implementação por valor do enum declarado com precisão (none = único comportamento distinto hoje) |
+| Piso de confiança declarado | 1.0 | `match_confidence_floor` presente e seu papel no split SIM/PARCIAL/NAO explicado |
+| Exclusão de chave de join documentada | 1.0 | Padrão de `match_exclude_keys` + racional (recodificação pelo revendedor) declarado explicitamente |
+| Completude do gate + bloqueadores | 1.0 | `match_confiavel` + Cobertura + Bloqueadores todos presentes e consistentes |
+## Ações
+| Pontuação | Nível | Ação |
 |---|---|---|
-| >= 9.5 | Golden | Publish to pool as golden reference |
-| >= 8.0 | Publish | Publish to pool, add to routing index |
-| >= 7.0 | Review | Flag for improvement before publish |
-| < 7.0 | Reject | Return to author with specific gate failures |
+| >= 9.5 | Golden | Publicar no pool como referência golden |
+| >= 8.0 | Publicar | Publicar no pool, adicionar ao índice de roteamento |
+| >= 7.0 | Revisar | Sinalizar para melhoria antes de publicar |
+| < 7.0 | Rejeitar | Devolver ao autor com as falhas de gate específicas |
 ## Bypass
-| Field | Value |
+| Campo | Valor |
 |---|---|
-| conditions | Internal prototype used only while the live reverse-image engine is still unbuilt, never shipped to production |
-| approver | Author self-certification with comment explaining prototype-only scope |
-| audit_trail | Bypass note in frontmatter comment with expiry date |
-| expiry | 14d -- prototypes must be promoted to >= 7.0 or removed from repo |
-| never_bypass | H01 (unparseable YAML breaks all tooling), H05 (self-scored gates corrupt quality metrics), H07 (a reordered section breaks StructuredResultView, which is frozen to fields\|table\|list) |
+| condições | Protótipo interno usado apenas enquanto o motor de reverse-image ao vivo ainda não existe, nunca enviado a produção |
+| aprovador | Autocertificação do autor com comentário explicando o escopo de protótipo apenas |
+| trilha de auditoria | Nota de bypass em comentário do frontmatter com data de expiração |
+| expiração | 14d -- protótipos precisam ser promovidos a >= 7.0 ou removidos do repositório |
+| nunca_bypassar | H01 (YAML não-parseável quebra todo o tooling), H05 (gates autoavaliados corrompem as métricas de qualidade), H07 (uma seção reordenada quebra o StructuredResultView, que é fixo em fields|table|list) |
 
-## Examples
+## Exemplos
 
-# Examples: product-match-builder
-## Golden Example
-INPUT: "Create a product_match spec for the supplier-vs-MercadoLivre catalog matcher"
-OUTPUT:
+# Exemplos: product-match-builder
+## Exemplo Golden
+ENTRADA: "Crie uma spec product_match para o casador de catálogo fornecedor-vs-MercadoLivre"
+SAÍDA:
 ```yaml
 id: p04_pm_visual_catalog_match
 kind: product_match
@@ -95,43 +95,44 @@ audit_min_photo_px: 200
 quality: null
 ```
 ## Overview
-Joins a supplier catalog item to a marketplace listing by a composite non-key
-(photo+dimension+supplier_code); EAN/GTIN/barcode are structurally excluded because every
-reseller recodes them. Runs the catalog-audit side-effect (text-vs-photo divergence, low-res
-photo) on local item data regardless of network access. Consumed by the N03 dashboard run
-(verb=analyze) and soft-imported by `sourcing_opportunity.py` (N06) for its own audit stage.
+Une um item de catálogo de fornecedor a um anúncio de marketplace por uma não-chave composta
+(foto+dimensão+código do fornecedor); EAN/GTIN/código de barras são estruturalmente excluídos
+porque todo revendedor os recodifica. Roda o efeito colateral de auditoria de catálogo
+(divergência texto-vs-foto, foto de baixa resolução) sobre dados locais do item independente do
+acesso à rede. Consumido pela execução no dashboard N03 (verbo=analyze) e por soft-import de
+`sourcing_opportunity.py` (N06) para sua própria etapa de auditoria.
 ## Input Contract
-| key | type | required | default |
+| chave | tipo | obrigatório | padrão |
 |-----|------|:---:|---------|
-| items | object[] | yes | -- |
-| match_join_keys | string[] | no | [photo, dimension, supplier_code] |
-| match_engine | enum | no | none |
-| match_confidence_floor | number | no | 0.7 |
-| audit_enabled | boolean | no | true |
-| audit_min_photo_px | number | no | 200 |
-| match_exclude_keys (internal) | string[] | no | [ean, gtin, barcode] |
+| items | object[] | sim | -- |
+| match_join_keys | string[] | não | [photo, dimension, supplier_code] |
+| match_engine | enum | não | none |
+| match_confidence_floor | number | não | 0.7 |
+| audit_enabled | boolean | não | true |
+| audit_min_photo_px | number | não | 200 |
+| match_exclude_keys (interno) | string[] | não | [ean, gtin, barcode] |
 ## Output Sections
-The frozen shape below mirrors `MOLD_PRODUCT_MATCH` (apps/dashboard_web/lib/molds.ts) -- its own
-illustrative "dados simulados" reference rows. A REAL run today (match_engine=none, the default)
-returns every match row as honest NAO at 0.0 confidence instead (product_match.py:386-393); the
-audit section is the one that is genuinely live offline.
-1. `Resultado do match` (table) -- cols [Codigo, Match?, Fonte casada, Confianca]
-2. `Auditoria de catalogo` (list) -- cadastral/photo divergence flags
+A forma congelada abaixo espelha `MOLD_PRODUCT_MATCH` (apps/dashboard_web/lib/molds.ts) -- suas
+próprias linhas ilustrativas de referência com "dados simulados". Uma execução REAL hoje
+(match_engine=none, o padrão) retorna toda linha de match como NAO honesto com confiança 0.0
+(product_match.py:386-393); a seção de auditoria é a única genuinamente ao vivo offline.
+1. `Resultado do match` (table) -- colunas [Codigo, Match?, Fonte casada, Confianca]
+2. `Auditoria de catalogo` (list) -- sinalizações de divergência cadastral/de foto
 3. `Proveniencia` (fields) -- Motor de match, Chave de casamento, Fontes consultadas, Status por
    fonte, Honest-null offline
 4. `Veredito` (fields) -- `match_confiavel`, Cobertura, Bloqueadores
-WHY THIS IS GOLDEN:
-- quality: null (H05 pass)
-- id matches p04_pm_ pattern (H02 pass)
-- kind: product_match (H04 pass)
-- match_join_keys, match_engine, match_confidence_floor all present (H06 pass)
-- 4 sections in `MOLD_PRODUCT_MATCH` order/layout (H07 pass)
-- EAN/GTIN/barcode documented as excluded, not as a join key (H08 pass)
-- match_engine=none is a valid closed-enum value (H09 pass)
-- Veredito carries `match_confiavel` + Cobertura + Bloqueadores (H10 pass)
-## Anti-Example
-INPUT: "Create a product matcher"
-BAD OUTPUT:
+POR QUE ISTO É GOLDEN:
+- quality: null (H05 passa)
+- id casa com o padrão p04_pm_ (H02 passa)
+- kind: product_match (H04 passa)
+- match_join_keys, match_engine, match_confidence_floor todos presentes (H06 passa)
+- 4 seções na ordem/layout de `MOLD_PRODUCT_MATCH` (H07 passa)
+- EAN/GTIN/código de barras documentados como excluídos, não como chave de join (H08 passa)
+- match_engine=none é um valor válido do enum fechado (H09 passa)
+- Veredito carrega `match_confiavel` + Cobertura + Bloqueadores (H10 passa)
+## Anti-Exemplo
+ENTRADA: "Crie um casador de produtos"
+SAÍDA RUIM:
 ```yaml
 id: product-matcher
 kind: matcher
@@ -142,16 +143,16 @@ capabilities: [match]
 quality: 9.0
 tags: [match]
 ```
-Matches products by barcode using AI vision.
+Casa produtos por código de barras usando IA de visão.
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Checagem de Referência Cruzada (SOFT)
+- [ ] Campo `related:` do frontmatter preenchido (3-15 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, apenas incentiva a fiação)
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | p11_qg_quality_gate | sibling | 0.44 |
 | [[bld_schema_product_match]] | upstream | 0.40 |

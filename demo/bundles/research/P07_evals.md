@@ -16,57 +16,68 @@ created: "2026-03-27"
 updated: "2026-03-27"
 8f: "F7_govern"
 density_score: 0.94
+related:
+  - p11_qg_golden_test
+  - p06_bp_knowledge_card
+  - p11_qg_quality_gate
+  - p11_qg_citation
+  - p11_qg_response_format
+  - p11_qg_naming_rule
+  - knowledge-card-builder
+  - p11_qg_prompt_cache
+  - p11_qg_few_shot_example
+  - p11_qg_kind_manifest
 ---
-## Quality Gate
+## Gate de Qualidade
 
 # Gate: Knowledge Card
-## Definition
-| Field     | Value |
+## Definição
+| Campo     | Valor |
 |-----------|-------|
-| metric    | weighted soft score + all hard gates pass |
-| threshold | 7.0 to publish; 8.0 for pool; 9.5 for golden |
-| operator  | AND (all hard) + weighted average (soft) |
-| scope     | any artifact with `kind: knowledge_card` |
-## HARD Gates
-All must pass. Any failure = immediate reject.
-| ID  | Check | Fail Condition |
+| métrica   | score soft ponderado + todos os gates hard aprovados |
+| limiar    | 7.0 para publicar; 8.0 para o pool; 9.5 para golden |
+| operador  | AND (todos os hard) + média ponderada (soft) |
+| escopo    | qualquer artefato com `kind: knowledge_card` |
+## Gates HARD
+Todos precisam passar. Qualquer falha = rejeição imediata.
+| ID  | Verificação | Condição de Falha |
 |-----|-------|----------------|
-| H01 | Frontmatter parses as valid YAML | Parse error on any field |
-| H02 | ID matches `^KC_[A-Z0-9_]+$` | Lowercase, missing KC_ prefix, or non-alphanumeric chars |
-| H03 | ID equals filename stem | `id: KC_REDIS_TTL` in file `KC_CACHE_TTL.md` |
-| H04 | Kind equals literal `knowledge_card` | Any other kind value |
-| H05 | Quality field is `null` | Any non-null value |
-| H06 | All 19 required fields present | Missing: domain, tldr, density_score, sources, or card_type |
-## SOFT Scoring
-Total weights sum to 100%.
-| ID  | Dimension | Weight | 10 pts | 5 pts | 0 pts |
+| H01 | O frontmatter faz parse como YAML válido | Erro de parse em qualquer campo |
+| H02 | O ID corresponde a `^KC_[A-Z0-9_]+$` | Minúsculas, prefixo KC_ ausente, ou caracteres não alfanuméricos |
+| H03 | O ID é igual ao stem do nome do arquivo | `id: KC_REDIS_TTL` no arquivo `KC_CACHE_TTL.md` |
+| H04 | O kind é igual ao literal `knowledge_card` | Qualquer outro valor de kind |
+| H05 | O campo quality é `null` | Qualquer valor não nulo |
+| H06 | Todos os 19 campos obrigatórios presentes | Faltando: domain, tldr, density_score, sources, ou card_type |
+## Pontuação SOFT
+Os pesos totais somam 100%.
+| ID  | Dimensão | Peso | 10 pts | 5 pts | 0 pts |
 |-----|-----------|--------|--------|-------|-------|
-| S01 | Factual concreteness | 1.0 | Card contains specific values, numbers, or verifiable facts | Mix of facts and vague statements | Entirely vague or conceptual |
-| S02 | Atomicity | 1.0 | Card covers exactly one concept with no scope creep | Mostly one concept; minor tangents | Multiple unrelated concepts |
-| S03 | Searchability — tags | 1.0 | Tags cover domain, subtopic, and use-case angles (>= 4 distinct tags) | 3 tags | Fewer than 3 tags |
-| S04 | Source attribution | 1.0 | At least one specific source (URL, paper, spec version, date) | Source mentioned but not specific | No sources |
-| S05 | Card type classification | 0.5 | `card_type` is `domain_kc` or `meta_kc` with correct body structure for that type | Type present but body structure mismatches | Type absent |
-| S06 | Density discipline | 1.0 | No padding, no restatements, no filler sentences in body | Minor padding present | More than 20% filler content |
-**Score = sum(pts * weight) / sum(max_pts * weight) * 10**
-## Actions
-| Score | Tier | Action |
+| S01 | Concretude factual | 1.0 | O card contém valores específicos, números ou fatos verificáveis | Mistura de fatos e afirmações vagas | Inteiramente vago ou conceitual |
+| S02 | Atomicidade | 1.0 | O card cobre exatamente um conceito, sem fuga de escopo | Majoritariamente um conceito; pequenas tangentes | Múltiplos conceitos não relacionados |
+| S03 | Pesquisabilidade — tags | 1.0 | As tags cobrem ângulos de domínio, subtópico e caso de uso (>= 4 tags distintas) | 3 tags | Menos de 3 tags |
+| S04 | Atribuição de fonte | 1.0 | Ao menos uma fonte específica (URL, paper, versão de spec, data) | Fonte mencionada mas não específica | Nenhuma fonte |
+| S05 | Classificação do tipo de card | 0.5 | `card_type` é `domain_kc` ou `meta_kc` com a estrutura de corpo correta para o tipo | Tipo presente mas a estrutura de corpo não corresponde | Tipo ausente |
+| S06 | Disciplina de densidade | 1.0 | Sem enchimento, sem repetição, sem frases de preenchimento no corpo | Enchimento leve presente | Mais de 20% de conteúdo de enchimento |
+**Score = soma(pts * peso) / soma(pts_max * peso) * 10**
+## Ações
+| Score | Nível | Ação |
 |-------|------|--------|
-| >= 9.5 | Golden | Publish to knowledge pool as authoritative reference card |
-| >= 8.0 | Skilled | Publish to pool + log pattern |
-| >= 7.0 | Learning | Use but flag for improvement |
-| < 7.0 | Rejected | Return to author with gate report |
+| >= 9.5 | Golden | Publicar no pool de conhecimento como card de referência autoritativo |
+| >= 8.0 | Skilled | Publicar no pool + registrar o padrão |
+| >= 7.0 | Learning | Usar, mas sinalizar para melhoria |
+| < 7.0 | Rejected | Devolver ao autor com o relatório do gate |
 ## Bypass
-| Field | Value |
+| Campo | Valor |
 |-------|-------|
-| Conditions | Rapidly evolving topic where sources are not yet stabilized (e.g., new library release, breaking API change) |
-| Approver | Domain expert reviewer |
+| Condições | Tópico em rápida evolução, com fontes ainda não estabilizadas (ex.: novo release de biblioteca, mudança de API que quebra compatibilidade) |
+| Aprovador | Revisor especialista de domínio |
 
-## Examples
+## Exemplos
 
-# Examples: knowledge-card-builder
-## Golden Example
-INPUT: "Destila knowledge about prompt caching for optimize costs LLM"
-OUTPUT:
+# Exemplos: knowledge-card-builder
+## Exemplo Golden
+ENTRADA: "Destile conhecimento sobre prompt caching para otimizar custos de LLM"
+SAÍDA:
 ```yaml
 id: p01_kc_prompt_caching
 kind: knowledge_card
@@ -76,37 +87,38 @@ version: "1.0.0"
 created: "2026-03-24"
 updated: "2026-03-24"
 author: "builder"
+```
 ```yaml
 topic: prompt_caching
 scope: LLM API optimization (Anthropic, OpenAI, Google)
 owner: builder
 criticality: high
 ```
-## Key Concepts
-- **Cache-Control**: Anthropic `cache_control: {kind: "ephemeral"}`; TTL 5 min
-- **Prefix Matching**: cache hit when prefix identical byte-a-byte
-- **Minimum Tokens**: Anthropic >= 1024; OpenAI >= 1024 (auto)
-- **Pricing Split**: write 1.25x base, read 0.1x (90% savings on hit)
-## Strategy Phases
-1. **Audit**: identify prompts with >50% static content
-2. **Reorder**: static first (system > few-shot > RAG), dynamic last
+## Conceitos-Chave
+- **Cache-Control**: Anthropic `cache_control: {kind: "ephemeral"}`; TTL de 5 min
+- **Correspondência de Prefixo**: cache hit quando o prefixo é idêntico byte a byte
+- **Tokens Mínimos**: Anthropic >= 1024; OpenAI >= 1024 (automático)
+- **Divisão de Preço**: escrita 1.25x da base, leitura 0.1x (90% de economia no hit)
+## Fases da Estratégia
+1. **Auditoria**: identifique prompts com mais de 50% de conteúdo estático
+2. **Reordenação**: estático primeiro (system > few-shot > RAG), dinâmico por último
 ```text
 [Request] -> [Hash Prefix] -> [Cache Lookup]
                                    |
-                         HIT: 0.1x cost, 85% faster
-                         MISS: 1.25x cost, normal speed
+                         HIT: custo 0.1x, 85% mais rápido
+                         MISS: custo 1.25x, velocidade normal
                                    |
                              [Generate] -> [Response]
 ```
 ## Comparativo
-| Provider | Min Tokens | Config | Write | Read | TTL |
+| Provider | Tokens Mín. | Config | Escrita | Leitura | TTL |
 |----------|-----------|--------|-------|------|-----|
-| Anthropic | 1024 | Explicit | 1.25x | 0.1x | 5 min |
-| OpenAI | 1024 | Automatic | 1.0x | 0.5x | 5-60 min |
-| Google | 32768 | Explicit | 1.0x | 0.25x | config |
+| Anthropic | 1024 | Explícito | 1.25x | 0.1x | 5 min |
+| OpenAI | 1024 | Automático | 1.0x | 0.5x | 5-60 min |
+| Google | 32768 | Explícito | 1.0x | 0.25x | config |
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Checagem de Referência Cruzada (SOFT)
+- [ ] Campo de frontmatter `related:` populado (3-15 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Ao menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, apenas incentiva a interligação)

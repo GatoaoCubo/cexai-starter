@@ -3,18 +3,18 @@ kind: schema
 id: bld_schema_subscription_tier
 pillar: P06
 llm_function: CONSTRAIN
-purpose: Formal schema -- SINGLE SOURCE OF TRUTH for subscription_tier
+purpose: "Schema formal -- ÚNICA FONTE DE VERDADE para subscription_tier"
 quality: null
 title: "Schema Subscription Tier"
 version: "1.0.0"
 author: n03_builder
 tags: [subscription_tier, builder, schema]
-tldr: "Canonical SaaS subscription tier schema aligned with Stripe Billing, Chargebee, Recurly, and Paddle plan contracts."
-domain: "subscription_tier construction"
+tldr: "Schema canônico de tier de assinatura SaaS, alinhado aos contratos de plano da Stripe Billing, Chargebee, Recurly e Paddle."
+domain: "construção de subscription_tier"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
-keywords: [subscription_tier construction, schema subscription tier, and paddle plan contracts, subscription_tier, builder, schema, {feature, included, quota, addon_price}, {duration_days, payment_required, auto_convert}, {metric, included_quota, overage_price}, interval=year]
+keywords: [construção de subscription_tier, schema subscription tier, contratos de plano da stripe chargebee recurly e paddle, subscription_tier, builder, schema, "{feature, included, quota, addon_price}", "{duration_days, payment_required, auto_convert}", "{metric, included_quota, overage_price}", interval=year]
 density_score: 0.88
 related:
   - bld_schema_reranker_config
@@ -24,66 +24,66 @@ related:
   - bld_schema_eval_metric
 ---
 
-## Frontmatter Fields
+## Campos do Frontmatter
 
-### Required
-| Field | Type | Required | Default | Notes |
+### Obrigatórios
+| Campo | Tipo | Obrigatório | Padrão | Notas |
 |---|---|---|---|---|
-| id | string | yes | null | Must match ID Pattern |
-| kind | string | yes | "subscription_tier" | Fixed value |
-| pillar | string | yes | "P11" | Fixed value |
-| title | string | yes | null | Human-readable tier name (Starter, Pro, Business, Enterprise) |
-| version | string | yes | "1.0.0" | Semantic versioning |
-| created | date | yes | null | ISO 8601 |
-| updated | date | yes | null | ISO 8601 |
-| author | string | yes | null | Product/pricing owner |
-| domain | string | yes | null | Product line |
-| quality | null | yes | null | Never self-score; peer review assigns |
-| tags | list | yes | [] | Keywords for search |
-| tldr | string | yes | null | Who this tier is for + why in one line |
-| tier_name | string | yes | null | Free-form tier name (outcome-driven: Starter/Growth/Scale; not Bronze/Silver/Gold) |
-| monetization_unit | string | yes | null | "flat" \| "per_seat" \| "per_usage" \| "hybrid" |
-| price | object | yes | {} | `{unit_amount: <int cents>, currency: <ISO 4217>, interval: <day\|week\|month\|year>, interval_count: <int>}` (Stripe canonical) |
-| feature_matrix | list | yes | [] | Rows: `{feature, included, quota, addon_price}` |
+| id | string | sim | null | Deve corresponder ao ID Pattern |
+| kind | string | sim | "subscription_tier" | Valor fixo |
+| pillar | string | sim | "P11" | Valor fixo |
+| title | string | sim | null | Nome do tier legível por humanos (Starter, Pro, Business, Enterprise) |
+| version | string | sim | "1.0.0" | Versionamento semântico |
+| created | date | sim | null | ISO 8601 |
+| updated | date | sim | null | ISO 8601 |
+| author | string | sim | null | Responsável pelo produto/precificação |
+| domain | string | sim | null | Linha de produto |
+| quality | null | sim | null | Nunca autoavaliado; atribuído por revisão de pares |
+| tags | list | sim | [] | Palavras-chave para busca |
+| tldr | string | sim | null | Para quem é este tier + por quê, em uma linha |
+| tier_name | string | sim | null | Nome de tier em texto livre (orientado a resultado: Starter/Growth/Scale; não Bronze/Silver/Gold) |
+| monetization_unit | string | sim | null | "flat" \| "per_seat" \| "per_usage" \| "hybrid" |
+| price | object | sim | {} | `{unit_amount: <int cents>, currency: <ISO 4217>, interval: <day\|week\|month\|year>, interval_count: <int>}` (canônico Stripe) |
+| feature_matrix | list | sim | [] | Linhas: `{feature, included, quota, addon_price}` |
 
-### Recommended
-| Field | Type | Notes |
+### Recomendados
+| Campo | Tipo | Notas |
 |---|---|---|
 | trial_policy | object | `{duration_days, payment_required, auto_convert}` |
-| grandfathering_policy | object | `{price_lock_months, feature_freeze, migration_offer}` -- required when replacing a live tier |
-| seat_limit | integer | Max users (per_seat / hybrid tiers); null = unlimited |
-| usage_limits | object | `{metric, included_quota, overage_price}` per metered unit |
+| grandfathering_policy | object | `{price_lock_months, feature_freeze, migration_offer}` -- obrigatório ao substituir um tier ativo |
+| seat_limit | integer | Máximo de usuários (tiers per_seat / hybrid); null = ilimitado |
+| usage_limits | object | `{metric, included_quota, overage_price}` por unidade medida |
 | expansion_mrr | object | `{upgrade_to, add_on_catalog, seat_expansion_price}` |
-| proration_behavior | string | "none" \| "create_prorations" \| "always_invoice" (Stripe values) |
+| proration_behavior | string | "none" \| "create_prorations" \| "always_invoice" (valores do Stripe) |
 | tax_behavior | string | "inclusive" \| "exclusive" \| "unspecified" |
-| annual_discount_pct | number | Discount when `interval=year` vs `interval=month`; 15-25% industry norm |
+| annual_discount_pct | number | Desconto quando `interval=year` vs. `interval=month`; norma da indústria de 15-25% |
 | deprecation | object | `{status: active\|legacy\|sunset, sunset_date, successor_tier}` |
 
 ## ID Pattern
 `^p11_st_[a-z][a-z0-9_]+\.yaml$`
 
-## Body Structure
-1. **Audience** -- target customer segment and JTBD.
-2. **Pricing** -- Stripe-canonical price object + annual discount.
-3. **Monetization Unit** -- flat / per_seat / per_usage / hybrid + rationale.
-4. **Feature Matrix** -- explicit rows, no prose lists.
-5. **Trial & Conversion** -- trial_policy, upgrade path, proration.
-6. **Grandfathering** -- legacy protection when this tier replaces another.
-7. **Expansion Design** -- how customers grow within and across tiers (expansion MRR).
+## Estrutura do Corpo
+1. **Público-Alvo** -- segmento de cliente-alvo e JTBD (job-to-be-done).
+2. **Precificação** -- objeto de preço canônico do Stripe + desconto anual.
+3. **Unidade de Monetização** -- flat / per_seat / per_usage / hybrid + justificativa.
+4. **Matriz de Funcionalidades** -- linhas explícitas, sem listas em prosa.
+5. **Trial e Conversão** -- trial_policy, caminho de upgrade, rateio (proration).
+6. **Grandfathering** -- proteção de clientes legados quando este tier substitui outro.
+7. **Desenho de Expansão** -- como os clientes crescem dentro de um tier e entre tiers (expansão de MRR).
 
-## Constraints
-- File size <= 3072 bytes.
-- `price.unit_amount` MUST be an integer in smallest currency unit (cents, not dollars). Reject `9.99`; accept `999`.
-- `price.currency` MUST be ISO 4217 3-letter code.
-- `price.interval` MUST be one of `{day, week, month, year}` (Stripe canonical -- no "quarterly").
-- `monetization_unit` MUST be one of `{flat, per_seat, per_usage, hybrid}`.
-- `feature_matrix` MUST be non-empty; every row needs `{feature, included}` at minimum.
-- `grandfathering_policy` REQUIRED when `deprecation.status in {legacy, sunset}`.
-- Tier names MUST NOT use medal metaphors (Bronze/Silver/Gold/Platinum) -- use outcome language.
-- Quality field MUST be null (peer review assigns).
+## Restrições
+- Tamanho do arquivo <= 3072 bytes.
+- `price.unit_amount` DEVE ser um número inteiro na menor unidade de moeda (centavos, nunca em valores fracionados). Rejeite `9.99`; aceite `999`.
+- `price.currency` DEVE ser um código ISO 4217 de 3 letras.
+- `price.interval` DEVE ser um de `{day, week, month, year}` (canônico Stripe -- nada de "quarterly").
+- `monetization_unit` DEVE ser um de `{flat, per_seat, per_usage, hybrid}`.
+- `feature_matrix` DEVE ser não vazio; toda linha precisa de, no mínimo, `{feature, included}`.
+- `grandfathering_policy` OBRIGATÓRIO quando `deprecation.status` estiver em `{legacy, sunset}`.
+- Nomes de tier NÃO DEVEM usar metáforas de medalha (Bronze/Silver/Gold/Platinum) -- use linguagem orientada a resultado.
+- O campo quality DEVE ser null (atribuído por revisão de pares).
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | bld_schema_reranker_config | sibling | 0.57 |
 | bld_schema_integration_guide | sibling | 0.56 |

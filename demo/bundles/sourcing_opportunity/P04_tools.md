@@ -3,92 +3,92 @@ kind: tools
 id: bld_tools_opportunity_matrix
 pillar: P04
 llm_function: CALL
-purpose: Tools available for opportunity_matrix production
+purpose: Ferramentas disponíveis para a produção de opportunity_matrix
 quality: null
-title: "Tools Opportunity Matrix"
+title: "Ferramentas -- Opportunity Matrix"
 version: "1.0.0"
 author: n03_builder
 tags: [opportunity_matrix, builder, tools]
-tldr: "Tool registry for opportunity matrix builder: CEX pipeline tools (compile, score, retrieve), file system ops (Read/Write/Edit/Glob/Grep), and the real generator + capability wiring for scored supplier-cost x market-demand buy/sourcing decisions."
-domain: "opportunity_matrix construction"
+tldr: "Registro de ferramentas do builder de opportunity matrix: ferramentas do pipeline CEX (compile, score, retrieve), operações de sistema de arquivos (Read/Write/Edit/Glob/Grep), e o gerador real + fiação de capability para decisões de compra/sourcing pontuadas de custo-de-fornecedor x demanda-de-mercado."
+domain: "construção de opportunity_matrix"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F5_call"
-keywords: [opportunity_matrix construction, tools opportunity matrix, cex pipeline tools, file system ops, opportunity_matrix, builder, tools, sourcing_opportunity generator, capability wiring, production tools]
+keywords: [construção de opportunity_matrix, ferramentas opportunity matrix, ferramentas do pipeline cex, operações de sistema de arquivos, opportunity_matrix, builder, tools, gerador sourcing_opportunity, fiação de capability, ferramentas de produção]
 density_score: 0.85
 related:
   - bld_tools_roi_calculator
   - opportunity-matrix-builder
 ---
-## Production Tools
-| Tool | Purpose | When |
+## Ferramentas de Produção
+| Ferramenta | Propósito | Quando |
 |------|---------|------|
-| cex_compile.py | Compile artifact after production | F8 COLLABORATE |
-| cex_score.py | Score artifact quality (5D dimensions) | F7 GOVERN |
-| cex_retriever.py | Retrieve similar opportunity_matrix artifacts for reuse | F3 INJECT |
-| cex_doctor.py | Validate builder health, check ISO completeness | F7 GOVERN |
+| cex_compile.py | Compila o artefato após a produção | F8 COLLABORATE |
+| cex_score.py | Pontua a qualidade do artefato (dimensões 5D) | F7 GOVERN |
+| cex_retriever.py | Recupera artefatos opportunity_matrix similares para reuso | F3 INJECT |
+| cex_doctor.py | Valida a saúde do builder, checa completude dos ISOs | F7 GOVERN |
 
-## Runtime Reference (the real generator this builder documents)
-| Component | Path | Note |
+## Referência de Runtime (o gerador real que este builder documenta)
+| Componente | Caminho | Nota |
 |-----------|------|------|
-| Generator | `_tools/capability_generators/sourcing_opportunity.py` | `@register("opportunity_matrix")`; offline-deterministic, never raises |
-| Capability wiring | `_tools/cex_run_capability.py` | slug `sourcing_opportunity` -> (N06, opportunity_matrix, P11, analyze) |
-| Frozen I/O shape | `apps/dashboard_web/lib/molds.ts` | MOLD_SOURCING_OPPORTUNITY (9 inputs, 8 sections) |
-| Contract summary | `apps/dashboard_web/lib/capability_contracts_v1.0.md` | Section 15 |
-| CLI entry | `.claude/commands/sourcing.md` | `/sourcing <catalog_dir\|sources> [params]` |
-| Offline pytest | `_tools/tests/test_capgen_sourcing.py` | shape + honesty checks (read-only reference; do not edit) |
+| Gerador | `_tools/capability_generators/sourcing_opportunity.py` | `@register("opportunity_matrix")`; offline-determinístico, nunca lança exceção |
+| Fiação de capability | `_tools/cex_run_capability.py` | slug `sourcing_opportunity` -> (N06, opportunity_matrix, P11, analyze) |
+| Forma de I/O congelada | `apps/dashboard_web/lib/molds.ts` | MOLD_SOURCING_OPPORTUNITY (9 entradas, 8 seções) |
+| Resumo do contrato | `apps/dashboard_web/lib/capability_contracts_v1.0.md` | Seção 15 |
+| Entrada de CLI | `.claude/commands/sourcing.md` | `/sourcing <catalog_dir\|sources> [params]` |
+| Pytest offline | `_tools/tests/test_capgen_sourcing.py` | checagens de forma + honestidade (referência somente-leitura; não editar) |
 
-## Validation Tools
-| Tool | Purpose | When |
+## Ferramentas de Validação
+| Ferramenta | Propósito | Quando |
 |------|---------|------|
-| cex_wave_validator.py | Structural YAML + frontmatter validation | Post-production |
-| cex_hooks.py | Pre-commit ASCII and schema checks | Pre-commit |
+| cex_wave_validator.py | Validação estrutural de YAML + frontmatter | Pós-produção |
+| cex_hooks.py | Checagens de ASCII e schema no pre-commit | Pre-commit |
 
-## Domain-Rigor References
-- `_docs/specs/contract/n01_sourcing_rigor.md` -- S1-S5 invariants (triangulation, provenance, freshness, gate, honest-null)
-- `_docs/specs/contract/n06_unit_econ.md` -- cited for the general cost->price->take-rate->margin discipline (its own LTV/CAC section bundle targets other kinds, not this one)
-- `_docs/specs/contract/n06_benchmark.md` -- cited for the weighted-ranking-surface principle (opp_score); its own section bundle targets competitor_benchmark
-- `_docs/specs/contract/n03_schema.md` -- closed type vocabulary for the input_contract
+## Referências de Rigor de Domínio
+- `_docs/specs/contract/n01_sourcing_rigor.md` -- invariantes S1-S5 (triangulação, proveniência, frescor, gate, honest-null)
+- `_docs/specs/contract/n06_unit_econ.md` -- citado pela disciplina geral custo->preço->take-rate->margem (o próprio pacote de seção LTV/CAC desse documento é voltado a outros kinds, não a este)
+- `_docs/specs/contract/n06_benchmark.md` -- citado pelo princípio de superfície de ranking ponderado (opp_score); o próprio pacote de seção desse documento é voltado a competitor_benchmark
+- `_docs/specs/contract/n03_schema.md` -- vocabulário de tipo fechado para o input_contract
 
-## CEX Pipeline Tools
-| Tool | Purpose | When |
+## Ferramentas do Pipeline CEX
+| Ferramenta | Propósito | Quando |
 |------|---------|------|
-| cex_compile.py | Compile .md artifact to .yaml | After Write (F8) |
-| cex_score.py | Peer-review quality scoring | After production (F7) |
-| cex_retriever.py | Discover similar artifacts by TF-IDF | During F3 INJECT |
-| cex_doctor.py | Health check builder ISOs | Before dispatch |
+| cex_compile.py | Compila o artefato .md para .yaml | Após o Write (F8) |
+| cex_score.py | Pontuação de qualidade por peer-review | Após a produção (F7) |
+| cex_retriever.py | Descobre artefatos similares por TF-IDF | Durante F3 INJECT |
+| cex_doctor.py | Checagem de saúde dos ISOs do builder | Antes do dispatch |
 
-## Data Sources
-| Source | Content | When to use |
+## Fontes de Dados
+| Fonte | Conteúdo | Quando usar |
 |--------|---------|-------------|
-| SCHEMA.md | Field definitions, ID pattern, constraints | Every production run |
-| OUTPUT_TEMPLATE.md | Exact frontmatter + body structure | Every production run |
-| QUALITY_GATES.md | H01-H08 HARD gates | Every validation run |
-| KNOWLEDGE.md | Domain concepts for opportunity matrix | When designing structure |
-| MEMORY.md | Common mistakes, anti-patterns | When stuck or producing a variant |
+| SCHEMA.md | Definições de campo, padrão de ID, restrições | Toda execução de produção |
+| OUTPUT_TEMPLATE.md | Frontmatter + estrutura de corpo exatos | Toda execução de produção |
+| QUALITY_GATES.md | Gates HARD H01-H08 | Toda execução de validação |
+| KNOWLEDGE.md | Conceitos de domínio para opportunity matrix | Ao desenhar a estrutura |
+| MEMORY.md | Erros comuns, antipadrões | Ao travar ou produzir uma variante |
 
-## Tool Permissions
-| Category | Tools | Status |
+## Permissões de Ferramentas
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| PERMITIDAS | Read, Write, Edit, Bash, Glob, Grep | Explicitamente permitidas |
+| NEGADAS | (nenhuma) | Explicitamente bloqueadas |
+| EFETIVAS | Bash, Edit, Glob, Grep, Read, Write | PERMITIDAS menos NEGADAS |
 
-## Properties
-| Property | Value |
+## Propriedades
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `tools` |
 | Pillar | P04 |
-| Domain | opportunity matrix construction |
+| Domain | construção de opportunity matrix |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[bld_tools_roi_calculator]] | sibling | 0.52 |
 | [[opportunity-matrix-builder]] | related | 0.45 |

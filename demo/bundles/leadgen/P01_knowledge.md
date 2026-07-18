@@ -3,15 +3,15 @@ kind: knowledge_card
 id: bld_knowledge_card_research_pipeline
 pillar: P01
 llm_function: INJECT
-purpose: Domain knowledge for research pipeline design — STORM, CRAG, CRITIC patterns
-sources: Stanford STORM paper, CRAG paper (Yan et al 2024), CRITIC paper (Gou et al 2024), ACME production system (13908 lines)
+purpose: Conhecimento de domínio para o design de pipelines de pesquisa -- padrões STORM, CRAG, CRITIC
+sources: Artigo STORM (Stanford), artigo CRAG (Yan et al 2024), artigo CRITIC (Gou et al 2024), sistema de produção ACME (13,908 linhas)
 quality: null
-title: "Knowledge Card Research Pipeline"
+title: "Cartão de Conhecimento: Pipeline de Pesquisa"
 version: "1.0.0"
 author: n03_builder
 tags: [research_pipeline, builder, examples]
-tldr: "Golden and anti-examples for research pipeline construction, demonstrating ideal structure and common pitfalls."
-domain: "research pipeline construction"
+tldr: "Exemplos-modelo e anti-exemplos para a construção de pipelines de pesquisa, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de pipeline de pesquisa"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F3_inject"
@@ -20,47 +20,47 @@ density_score: 0.90
 related:
   - research-pipeline-builder
 ---
-# Domain Knowledge: research_pipeline
+# Conhecimento de Domínio: research_pipeline
 
-## Executive Summary
-A research pipeline is a config-driven system that collects, scores, synthesizes, and verifies market intelligence from 30+ sources. Built on three academic patterns: **STORM** (multi-perspective query planning from Stanford), **CRAG** (Corrective RAG with per-source quality gates), and **CRITIC** (iterative self-verification with thinking models). The CEX research-pipeline-builder distills a 13,908-line production system into a reusable 7-stage pattern.
+## Resumo Executivo
+Um research pipeline é um sistema orientado por configuração que coleta, pontua, sintetiza e verifica inteligência de mercado a partir de 30+ fontes. Construído sobre três padrões acadêmicos: **STORM** (planejamento de queries multi-perspectiva, de Stanford), **CRAG** (RAG corretivo com gates de qualidade por fonte) e **CRITIC** (auto-verificação iterativa com modelos de raciocínio). O research-pipeline-builder do CEX destila um sistema de produção de 13,908 linhas em um padrão reutilizável de 7 etapas.
 
-## The 3 Core Patterns
+## Os 3 Padrões Centrais
 
 ### STORM (Survey of Topic via Retrieval and Organization of Multi-perspective)
-- **Paper**: Stanford/UW 2024 — generates Wikipedia-quality articles from scratch
-- **CEX adaptation**: generate 5 expert perspectives per research query, each decomposed into 5-7 atomic sub-questions. This multiplies retrieval coverage 25-35x vs single-query.
-- **Why it works**: single-angle research misses competitor blind spots, buyer pain points, and market trends. STORM's multi-perspective approach covers all angles systematically.
+- **Artigo**: Stanford/UW 2024 -- gera artigos com qualidade de Wikipedia a partir do zero
+- **Adaptação CEX**: gera 5 perspectivas de especialista por query de pesquisa, cada uma decomposta em 5-7 subperguntas atômicas. Isso multiplica a cobertura de retrieval em 25-35x em relação a uma query única.
+- **Por que funciona**: pesquisa de ângulo único perde pontos cegos da concorrência, dores do comprador e tendências de mercado. A abordagem multi-perspectiva do STORM cobre todos os ângulos sistematicamente.
 
 ### CRAG (Corrective Retrieval-Augmented Generation)
-- **Paper**: Yan et al 2024 — evaluates retrieval quality before using it
-- **CEX adaptation**: every retrieved result gets a quality score (0.0-1.0). Below threshold (default 0.7) → trigger fallback source or discard. Prevents low-quality data from polluting synthesis.
-- **Quality dimensions**: relevance, recency, completeness, trustworthiness.
+- **Artigo**: Yan et al 2024 -- avalia a qualidade do retrieval antes de usa-lo
+- **Adaptação CEX**: todo resultado recuperado recebe uma nota de qualidade (0.0-1.0). Abaixo do limiar (padrão 0.7) → aciona uma fonte alternativa ou descarta. Evita que dados de baixa qualidade poluam a síntese.
+- **Dimensões de qualidade**: relevância, atualidade, completude, confiabilidade.
 
 ### CRITIC (Self-Correcting with Tool-Interactive Critique)
-- **Paper**: Gou et al 2024 — LLM verifies own output, correct with tools
-- **CEX adaptation**: Stage 7 uses a thinking model (o4-mini) to verify synthesis against source data. Catches hallucinations, numerical errors, contradictions. Max 3 iterations — diminishing returns after that.
+- **Artigo**: Gou et al 2024 -- o LLM verifica a própria saída e corrige com ferramentas
+- **Adaptação CEX**: a Etapa 7 usa um modelo de raciocínio (o4-mini) para verificar a síntese contra os dados-fonte. Captura alucinações, erros numéricos e contradições. Máximo de 3 iterações -- ganhos marginais depois disso.
 
-## 7-Stage Pipeline
-| Stage | Name | Model | Input | Output |
-|-------|------|-------|-------|--------|
-| 1 | INTENT | Fast classifier | User query | domain, verb, complexity, route |
-| 2 | PLAN (STORM) | Reasoning model | Intent + perspectives | 25-35 sub-questions |
-| 3 | RETRIEVE (CRAG) | APIs + scraping | Sub-questions | Scored results (≥0.7) |
-| 4 | RESOLVE | Deterministic | Raw results | Deduplicated entities |
-| 5 | SCORE | Fast model | Entities | Gartner 7-dim scored listings |
-| 6 | SYNTHESIZE (GoT) | Domain models | Scored data | Structured analysis |
-| 7 | VERIFY (CRITIC) | Thinking model | Synthesis + sources | Verified report |
+## Pipeline de 7 Etapas
+| Etapa | Nome | Modelo | Entrada | Saída |
+|-------|------|--------|---------|-------|
+| 1 | INTENT | Classificador rápido | Query do usuário | domínio, verbo, complexidade, rota |
+| 2 | PLAN (STORM) | Modelo de raciocínio | Intent + perspectivas | 25-35 subperguntas |
+| 3 | RETRIEVE (CRAG) | APIs + scraping | Subperguntas | Resultados pontuados (≥0.7) |
+| 4 | RESOLVE | Determinístico | Resultados brutos | Entidades deduplicadas |
+| 5 | SCORE | Modelo rápido | Entidades | Listagens pontuadas (7 dimensões Gartner) |
+| 6 | SYNTHESIZE (GoT) | Modelos de domínio | Dados pontuados | Análise estruturada |
+| 7 | VERIFY (CRITIC) | Modelo de raciocínio | Síntese + fontes | Relatório verificado |
 
-## Anti-Patterns
-| Anti-Pattern | Why It Fails |
+## Antipadrões
+| Antipadrão | Por Que Falha |
 |-------------|-------------|
-| Single-query retrieval | Misses 80% of relevant data (no perspective diversity) |
-| No quality gate on retrieval | Garbage in → garbage out; CRAG prevents this |
-| Single-model synthesis | Different domains need different models; Flash for extraction, GPT for reasoning |
-| No verification step | 15-20% of LLM synthesis contains hallucinations; CRITIC catches them |
-| Unlimited scraping budget | Firecrawl/Serper credits drain fast; budget caps are essential |
-| Hardcoded source list | Every niche needs different sources; config must be flexible |
+| Retrieval de query única | Perde 80% dos dados relevantes (sem diversidade de perspectiva) |
+| Sem gate de qualidade no retrieval | Entra lixo, sai lixo; o CRAG evita isso |
+| Síntese com modelo único | Domínios diferentes precisam de modelos diferentes; Flash para extração, GPT para raciocínio |
+| Sem etapa de verificação | 15-20% da síntese de LLM contém alucinações; o CRITIC as captura |
+| Orçamento de scraping ilimitado | Créditos de Firecrawl/Serper acabam rápido; tetos de orçamento são essenciais |
+| Lista de fontes hardcoded | Cada nicho precisa de fontes diferentes; a config precisa ser flexível |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

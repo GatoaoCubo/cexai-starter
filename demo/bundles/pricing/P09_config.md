@@ -3,8 +3,8 @@ kind: config
 id: bld_config_content_monetization
 pillar: P09
 llm_function: CONSTRAIN
-purpose: Naming conventions, file paths, size limits, operational constraints
-pattern: CONFIG restricts SCHEMA, never contradicts it
+purpose: "Convencoes de nomenclatura, caminhos de arquivo, limites de tamanho, restricoes operacionais"
+pattern: "CONFIG restringe o SCHEMA, nunca o contradiz"
 effort: high
 max_turns: 25
 disallowed_tools: []
@@ -20,95 +20,95 @@ title: "Config Content Monetization"
 version: "1.0.0"
 author: n03_builder
 tags: [content_monetization, builder, examples]
-tldr: "Golden and anti-examples for content monetization construction, demonstrating ideal structure and common pitfalls."
-domain: "content monetization construction"
+tldr: "Exemplos de referencia e antiexemplos para a construcao de content_monetization, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construcao de content_monetization"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
-keywords: [naming conventions, file paths, size limits, operational constraints, content monetization construction, config content monetization, content_monetization, builder, examples, "content_monetization_config_{empresa}.yaml"]
+keywords: [convencoes de nomenclatura, caminhos de arquivo, limites de tamanho, restricoes operacionais, construcao de content_monetization, config content monetization, content_monetization, builder, examples, "content_monetization_config_{empresa}.yaml"]
 density_score: 0.90
 related:
   - bld_architecture_content_monetization
   - bld_config_research_pipeline
 ---
-# Config: content_monetization Production Rules
+# Config: Regras de Producao de content_monetization
 
-## Naming Convention
-| Scope | Convention | Example |
+## Convencao de Nomenclatura
+| Escopo | Convencao | Exemplo |
 |-------|-----------|---------|
-| Config file | `content_monetization_config_{empresa}.yaml` | `content_monetization_config_acme.yaml` |
+| Arquivo de config | `content_monetization_config_{empresa}.yaml` | `content_monetization_config_acme.yaml` |
 | Template | `tpl_content_monetization.md` | P11_feedback/templates/ |
-| Examples | `ex_content_monetization_{model}.md` | `ex_content_monetization_saas.md` |
-| Instance | `content_monetization_config.md` | _instances/{co}/N06_commercial/ |
-| Frontmatter id | `p04_cli_content_monetization_{slug}` | `p04_cli_content_monetization_acme` |
+| Exemplos | `ex_content_monetization_{model}.md` | `ex_content_monetization_saas.md` |
+| Instancia | `content_monetization_config.md` | _instances/{co}/N06_commercial/ |
+| ID de frontmatter | `p04_cli_content_monetization_{slug}` | `p04_cli_content_monetization_acme` |
 
-## Size Limits
-| Artifact | Max Size | Rationale |
+## Limites de Tamanho
+| Artefato | Tamanho Maximo | Motivo |
 |----------|---------|-----------|
-| Config YAML | 4096 bytes | Dense config, human-editable |
-| Template | 4096 bytes | Builder spec limit |
-| Example | 4096 bytes | Builder spec limit |
-| Instruction | 6144 bytes | Extended for 9-step pipeline |
+| Config YAML | 4096 bytes | Config densa, editavel por humanos |
+| Template | 4096 bytes | Limite de especificacao do builder |
+| Exemplo | 4096 bytes | Limite de especificacao do builder |
+| Instruction | 6144 bytes | Estendido para o pipeline de 9 passos |
 
-## Pricing Constraints
-| Rule | Value | Rationale |
+## Restricoes de Precificacao
+| Regra | Valor | Motivo |
 |------|-------|-----------|
-| Min floor margin | 30% | Below this, LLM pipeline costs eat profit |
-| Min tier count | 1 | At least free or paid tier required |
-| Max tier count | 5 | More tiers = decision paralysis |
-| Price format | centavos/cents (integer) | Avoid float rounding (R$49.90 = 4990) |
-| Trial max | 30 days | Longer trials reduce conversion |
-| Credit pack min | 100 credits | Smaller packs have high transaction overhead |
+| Margem minima (piso) | 30% | Abaixo disso, os custos de pipeline de LLM corroem o lucro |
+| Quantidade minima de tiers | 1 | Precisa de ao menos um tier gratuito ou pago |
+| Quantidade maxima de tiers | 5 | Mais tiers = paralisia de decisao |
+| Formato de preco | centavos/cents (inteiro) | Evita arredondamento em float (R$49,90 = 4990) |
+| Trial maximo | 30 dias | Trials mais longos reduzem a conversao |
+| Pacote de creditos minimo | 100 creditos | Pacotes menores tem overhead de transacao alto |
 
-## Credit System Constraints
-| Rule | Value | Rationale |
+## Restricoes do Sistema de Creditos
+| Regra | Valor | Motivo |
 |------|-------|-----------|
-| Min pipeline cost | 1 credit | Zero-cost operations defeat credit purpose |
-| Max pipeline cost | 1000 credits | Single operation cannot drain account |
-| Overdraft default | block | Negative balances create billing disputes |
-| Rollover default | false | Rollover complicates revenue recognition |
+| Custo minimo de pipeline | 1 credito | Operacoes de custo zero anulam o proposito do credito |
+| Custo maximo de pipeline | 1000 creditos | Uma unica operacao nao pode esvaziar a conta |
+| Padrao de saldo negativo (overdraft) | block | Saldos negativos geram disputas de cobranca |
+| Padrao de rollover | false | Rollover complica o reconhecimento de receita |
 
-## Checkout Constraints
-| Rule | Hotmart (BR) | Digistore24 (INT) |
+## Restricoes de Checkout
+| Regra | Hotmart (BR) | Digistore24 (INT) |
 |------|-------------|-------------------|
-| Auth | OAuth2 Bearer (HOTMART_TOKEN) | API key (DS24_API_KEY) via header |
-| Webhook format | JSON | form-encoded (NOT JSON) |
-| Signature | sha256 HMAC (HOTMART_HOTTOK) | sha512 (DS24_IPN_PASSPHRASE) |
-| Response | HTTP 200 | exact string "OK" |
-| Idempotency key | transaction_id | order_id |
-| MoR | seller | DS24 (auto EU VAT) |
-| Mock default | true | true |
-| Retry max | 5, exponential backoff | retries until "OK" |
+| Autenticacao | Bearer OAuth2 (HOTMART_TOKEN) | Chave de API (DS24_API_KEY) via header |
+| Formato do webhook | JSON | form-encoded (NAO JSON) |
+| Assinatura | HMAC sha256 (HOTMART_HOTTOK) | sha512 (DS24_IPN_PASSPHRASE) |
+| Resposta | HTTP 200 | string exata "OK" |
+| Chave de idempotencia | transaction_id | order_id |
+| MoR | vendedor | DS24 (VAT da UE automatico) |
+| Padrao de mock | true | true |
+| Tentativas maximas | 5, backoff exponencial | reenvia ate receber "OK" |
 
-## File Placement Rules
-| Artifact Type | Directory | Pillar |
+## Regras de Posicionamento de Arquivos
+| Tipo de Artefato | Diretorio | Pillar |
 |--------------|-----------|--------|
 | Template | P11_feedback/templates/ | P04 |
-| Examples | P11_feedback/examples/ | P04 |
-| Compiled | P11_feedback/compiled/ | P04 |
-| Nucleus tool | N06_commercial/P04_tools/ | P04 |
-| Nucleus KCs | N06_commercial/P01_knowledge/ | P01 |
-| Company config | _instances/{co}/N06_commercial/ | instance |
+| Exemplos | P11_feedback/examples/ | P04 |
+| Compilado | P11_feedback/compiled/ | P04 |
+| Ferramenta do nucleus | N06_commercial/P04_tools/ | P04 |
+| KCs do nucleus | N06_commercial/P01_knowledge/ | P01 |
+| Config da empresa | _instances/{co}/N06_commercial/ | instancia |
 
-## Environment Variables
-| Variable | Platform | Purpose |
+## Variaveis de Ambiente
+| Variavel | Plataforma | Finalidade |
 |----------|----------|---------|
-| HOTMART_TOKEN | Hotmart | OAuth2 bearer token |
-| HOTMART_HOTTOK | Hotmart | Webhook sha256 HMAC secret |
-| DS24_API_KEY | Digistore24 | API auth (X-DS-API-KEY) |
-| DS24_IPN_PASSPHRASE | Digistore24 | IPN sha512 verification |
-| DS24_SANDBOX_MODE | Digistore24 | Sandbox toggle |
-| STRIPE_SECRET_KEY | Stripe | Global fallback API key |
+| HOTMART_TOKEN | Hotmart | Bearer token OAuth2 |
+| HOTMART_HOTTOK | Hotmart | Segredo HMAC sha256 do webhook |
+| DS24_API_KEY | Digistore24 | Autenticacao de API (X-DS-API-KEY) |
+| DS24_IPN_PASSPHRASE | Digistore24 | Verificacao sha512 do IPN |
+| DS24_SANDBOX_MODE | Digistore24 | Alternador de sandbox |
+| STRIPE_SECRET_KEY | Stripe | Chave de API de fallback global |
 
-## Security Rules
-1. Secrets: NEVER plaintext → ENV_VAR only. Rotate every 90 days.
-2. PCI: never store card numbers — provider tokenizes.
-3. Config files: NEVER commit real keys → `.env.example` pattern.
-4. Mock mode: enforced in CI/CD — live keys blocked in test environments.
-5. IPN passphrase / hottok: never log — used only for signature verification.
+## Regras de Seguranca
+1. Segredos: NUNCA em texto puro → apenas ENV_VAR. Rotacionar a cada 90 dias.
+2. PCI: nunca armazenar numeros de cartao -- o provedor tokeniza.
+3. Arquivos de config: NUNCA commitar chaves reais → padrao `.env.example`.
+4. Modo mock: aplicado no CI/CD -- chaves reais sao bloqueadas em ambientes de teste.
+5. Passphrase do IPN / hottok: nunca logar -- usados apenas para verificacao de assinatura.
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuacao |
 |----------|-------------|-------|
 | [[bld_architecture_content_monetization]] | upstream | 0.36 |
 | [[bld_prompt_content_monetization]] | upstream | 0.33 |

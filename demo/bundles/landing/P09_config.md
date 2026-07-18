@@ -9,15 +9,15 @@ max_turns: 30
 disallowed_tools: []
 permission_scope: nucleus
 quality: null
-title: "Config Landing Page"
+title: "Configuração Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
-keywords: [landing page construction, config landing page, landing_page, builder, examples, landing page builder, brains mono, pipeline integration, related artifacts, landing page]
+keywords: [construção de landing page, config landing page, landing_page, builder, examples, landing page builder, jetbrains mono, integração do pipeline, artefatos relacionados, landing page]
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
@@ -25,7 +25,7 @@ related:
   - bld_tools_landing_page
   - bld_memory_landing_page
 ---
-# Config: Landing Page Builder
+# Configuração: Landing Page Builder
 
 output_format: html
 quality_floor: 8.5
@@ -61,15 +61,15 @@ design_tokens:
   radius: "0.5rem"
   shadow: "0 4px 6px -1px rgb(0 0 0 / 0.1)"
 
-## Pipeline Integration
+## Integração do Pipeline
 
-1. Created via 8F pipeline from F1-Focus through F8-Furnish
-2. Scored by cex_score across three structural layers
-3. Compiled by cex_compile for structural validation
-4. Retrieved by cex_retriever for context injection
-5. Evolved by cex_evolve when quality regresses below target
+1. Criado via pipeline 8F, de F1-Focus a F8-Furnish
+2. Pontuado pelo cex_score em três camadas estruturais
+3. Compilado pelo cex_compile para validação estrutural
+4. Recuperado pelo cex_retriever para injeção de contexto
+5. Evoluído pelo cex_evolve quando a qualidade regride abaixo da meta
 
-## Metadata
+## Metadados
 
 ```yaml
 id: bld_config_landing_page
@@ -81,22 +81,22 @@ scoring: hybrid_3_layer
 python _tools/cex_score.py --apply bld-config-landing-page.md
 ```
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `config` |
 | Pillar | P06 |
-| Domain | landing page construction |
+| Domain | construção de landing page |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[bld_schema_landing_page]] | related | 0.51 |
 | [[bld_tools_landing_page]] | upstream | 0.41 |

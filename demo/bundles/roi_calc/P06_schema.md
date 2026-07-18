@@ -3,18 +3,18 @@ kind: schema
 id: bld_schema_roi_calculator
 pillar: P06
 llm_function: CONSTRAIN
-purpose: Formal schema -- SINGLE SOURCE OF TRUTH for roi_calculator
+purpose: Schema formal -- FONTE ÚNICA DA VERDADE para roi_calculator
 quality: null
-title: "Schema Roi Calculator"
+title: "Schema -- ROI Calculator"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [roi_calculator, builder, schema]
-tldr: "Formal schema -- SINGLE SOURCE OF TRUTH for roi_calculator"
-domain: "roi_calculator construction"
+tldr: "Schema formal -- FONTE ÚNICA DA VERDADE para roi_calculator"
+domain: "construção de roi_calculator"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
-keywords: [roi_calculator construction, schema roi calculator, roi_calculator, builder, schema, frontmatter fields, body structure, calculation methodology, input parameters, output metrics]
+keywords: [construção de roi_calculator, schema roi calculator, roi_calculator, builder, schema, campos de frontmatter, estrutura do corpo, metodologia de cálculo, parâmetros de entrada, métricas de saída]
 density_score: 0.85
 related:
   - bld_schema_reranker_config
@@ -24,63 +24,63 @@ related:
   - bld_schema_pitch_deck
 ---
 
-## Frontmatter Fields
-### Required
-| Field | Type | Required | Default | Notes |
+## Campos de Frontmatter
+### Obrigatórios
+| Campo | Tipo | Obrigatório | Padrão | Notas |
 |------|------|----------|---------|-------|
-| id | string | yes | null | Must match ID Pattern |
-| kind | string | yes | "roi_calculator" | CEX kind identifier |
-| pillar | string | yes | "P11" | Pillar classification |
-| title | string | yes | null | Descriptive title |
-| version | string | yes | "1.0.0" | Semantic versioning |
-| created | datetime | yes | null | ISO 8601 format |
-| updated | datetime | yes | null | ISO 8601 format |
-| author | string | yes | null | Responsible party |
-| domain | string | yes | "roi" | Domain context |
-| quality | null | yes | null | Never self-score; peer review assigns |
-| tags | list | yes | [] | Keyword metadata |
-| tldr | string | yes | null | Summary of purpose |
-| calculation_method | string | yes | null | ROI formula/algorithm |
-| input_parameters | list | yes | [] | Required variables |
-| output_metrics | list | yes | [] | Resulting values |
+| id | string | sim | null | Deve corresponder ao Padrão de ID |
+| kind | string | sim | "roi_calculator" | Identificador de kind do CEX |
+| pillar | string | sim | "P11" | Classificação de pilar |
+| title | string | sim | null | Título descritivo |
+| version | string | sim | "1.0.0" | Versionamento semântico |
+| created | datetime | sim | null | Formato ISO 8601 |
+| updated | datetime | sim | null | Formato ISO 8601 |
+| author | string | sim | null | Parte responsável |
+| domain | string | sim | "roi" | Contexto de domínio |
+| quality | null | sim | null | Nunca autoavaliar; a revisão por pares atribui |
+| tags | list | sim | [] | Metadados de palavras-chave |
+| tldr | string | sim | null | Resumo da finalidade |
+| calculation_method | string | sim | null | Fórmula/algoritmo de ROI |
+| input_parameters | list | sim | [] | Variáveis obrigatórias |
+| output_metrics | list | sim | [] | Valores resultantes |
 
-### Recommended
-| Field | Type | Notes |
+### Recomendados
+| Campo | Tipo | Notas |
 |------|------|-------|
-| last_reviewed | datetime | Peer review timestamp |
-| reviewers | list | Reviewer identifiers |
+| last_reviewed | datetime | Timestamp da revisão por pares |
+| reviewers | list | Identificadores dos revisores |
 | validation_status | string | "pending"/"approved" |
-| example_use_case | string | Sample application |
+| example_use_case | string | Exemplo de aplicação |
 
-## ID Pattern
+## Padrão de ID
 ^p11_roi_[a-z][a-z0-9_]+$
 
-## Body Structure
-1. **Calculation Methodology**
-   Detailed description of ROI formula and logic
+## Estrutura do Corpo
+1. **Metodologia de Cálculo**
+   Descrição detalhada da fórmula e da lógica de ROI
 
-2. **Input Parameters**
-   List of required variables with data types and ranges
+2. **Parâmetros de Entrada**
+   Lista das variáveis obrigatórias com tipos de dado e faixas
 
-3. **Output Metrics**
-   Definition of calculated values and their units
+3. **Métricas de Saída**
+   Definição dos valores calculados e suas unidades
 
-4. **Assumptions**
-   Conditions and limitations of the model
+4. **Premissas**
+   Condições e limitações do modelo
 
-5. **Validation Procedures**
-   Steps for verifying accuracy and edge cases
+5. **Procedimentos de Validação**
+   Passos para verificar a precisão e os casos-limite
 
-6. **Example Use Case**
-   Practical scenario with sample input/output
+6. **Exemplo de Caso de Uso**
+   Cenário prático com entrada/saída de exemplo
 
-## Constraints
-- ID must match exact regex pattern
-- All required fields must be present
-- YAML must be valid and under 4096 bytes
-- Domain-specific fields must follow schema
-- Quality field must be peer-reviewed
-- Versioning must follow semantic format
+## Restrições
+- O ID deve corresponder exatamente ao padrão regex
+- Todos os campos obrigatórios devem estar presentes
+- O YAML deve ser válido e ter menos de 4096 bytes
+- Os campos específicos de domínio devem seguir o schema
+- O campo quality deve passar por revisão de pares
+- O versionamento deve seguir o formato semântico
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

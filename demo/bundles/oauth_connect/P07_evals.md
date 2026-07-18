@@ -3,14 +3,14 @@ kind: quality_gate
 id: p09_qg_oauth_app_config
 pillar: P11
 llm_function: GOVERN
-purpose: Quality gate with HARD and SOFT scoring for oauth_app_config
+purpose: Quality gate com pontuação HARD e SOFT para oauth_app_config
 quality: null
 title: "Quality Gate Oauth App Config"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [oauth_app_config, builder, quality_gate]
-tldr: "Quality gate with HARD and SOFT scoring for oauth_app_config"
-domain: "oauth_app_config construction"
+tldr: "Quality gate com pontuação HARD e SOFT para oauth_app_config"
+domain: "construção de oauth_app_config"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F7_govern"
@@ -21,53 +21,53 @@ related:
 ---
 ## Quality Gate
 
-## Definition
-| metric | threshold | operator | scope |
+## Definição
+| métrica | limite | operador | escopo |
 |---|---|---|---|
-| schema_id | ^p09_oauth_[a-z][a-z0-9_]+.yaml$ | matches | H02 |
-| required_fields | 7 | >= | app config |
+| schema_id | ^p09_oauth_[a-z][a-z0-9_]+.yaml$ | corresponde a | H02 |
+| required_fields | 7 | >= | config do app |
 
-## HARD Gates
-| ID | Check | Fail Condition |
+## Gates HARD
+| ID | Checagem | Condição de Falha |
 |---|---|---|
-| H01 | YAML frontmatter valid | invalid YAML syntax |
-| H02 | ID matches pattern ^p09_oauth_[a-z][a-z0-9_]+.yaml$ | invalid schema ID |
-| H03 | kind field matches 'oauth_app_config' | incorrect kind value |
-| H04 | client_id present | missing client_id |
-| H05 | redirect_uris are valid URLs | invalid redirect URI format |
-| H06 | scopes are non-empty | empty or missing scopes |
-| H07 | access token_lifetime <= 3600 (OAuth BCP recommends 5-60 min) | token lifetime exceeds 1h |
-| H08 | refresh_token_policy is 'rotating' (OAuth 2.1 / BCP) | static refresh tokens not allowed |
-| H09 | grant_types subset of {authorization_code, client_credentials, refresh_token} | implicit/ROPC forbidden by OAuth 2.1 |
-| H10 | PKCE (S256) required for authorization_code flow | missing code_challenge_method |
+| H01 | Frontmatter YAML válido | sintaxe YAML inválida |
+| H02 | ID corresponde ao padrão ^p09_oauth_[a-z][a-z0-9_]+.yaml$ | ID de schema inválido |
+| H03 | Campo kind corresponde a 'oauth_app_config' | valor de kind incorreto |
+| H04 | client_id presente | client_id ausente |
+| H05 | redirect_uris são URLs válidas | formato de redirect URI inválido |
+| H06 | scopes não vazios | scopes vazios ou ausentes |
+| H07 | access_token_lifetime <= 3600 (OAuth BCP recomenda 5-60 min) | tempo de vida do token excede 1h |
+| H08 | refresh_token_policy é 'rotating' (OAuth 2.1 / BCP) | refresh tokens estáticos não permitidos |
+| H09 | grant_types é subconjunto de {authorization_code, client_credentials, refresh_token} | implicit/ROPC proibidos pela OAuth 2.1 |
+| H10 | PKCE (S256) obrigatório para o fluxo authorization_code | code_challenge_method ausente |
 
-## SOFT Scoring
-| Dim | Dimension | Weight | Scoring Guide |
+## Pontuação SOFT
+| Dim | Dimensão | Peso | Guia de Pontuação |
 |---|---|---|---|
-| D01 | Scope completeness | 0.15 | 1.0 if all required scopes present |
-| D02 | Redirect validity | 0.15 | 1.0 if all URIs are HTTPS and registered |
-| D03 | Token lifetime | 0.15 | 1.0 if <= 24h and aligned with policy |
-| D04 | Refresh policy | 0.15 | 1.0 if 'rolling' or 'fixed' with clear rules |
-| D05 | Security practices | 0.10 | 1.0 if PKCE enforced and client secrets rotated |
-| D06 | Documentation | 0.10 | 1.0 if app config includes usage examples |
-| D07 | Standards compliance | 0.20 | 1.0 if aligns with OAuth 2.1 + RFC 7636 PKCE + RFC 8252 |
+| D01 | Completude de escopo | 0.15 | 1.0 se todos os escopos obrigatórios presentes |
+| D02 | Validade do redirect | 0.15 | 1.0 se todos os URIs são HTTPS e registrados |
+| D03 | Tempo de vida do token | 0.15 | 1.0 se <= 24h e alinhado com a política |
+| D04 | Política de refresh | 0.15 | 1.0 se 'rolling' ou 'fixed' com regras claras |
+| D05 | Práticas de segurança | 0.10 | 1.0 se PKCE aplicado e client secrets rotacionados |
+| D06 | Documentação | 0.10 | 1.0 se a config do app inclui exemplos de uso |
+| D07 | Conformidade com padrões | 0.20 | 1.0 se alinhado com OAuth 2.1 + RFC 7636 PKCE + RFC 8252 |
 
-## Actions
-| Score | Action |
+## Ações
+| Score | Ação |
 |---|---|
-| GOLDEN | >=9.5 | Auto-approve and deploy |
-| PUBLISH | >=8.0 | Deploy after review |
-| REVIEW | >=7.0 | Require manual review |
-| REJECT | <7.0 | Block deployment |
+| GOLDEN | >=9.5 | Auto-aprovar e implantar |
+| PUBLISH | >=8.0 | Implantar após revisão |
+| REVIEW | >=7.0 | Exige revisão manual |
+| REJECT | <7.0 | Bloqueia o deployment |
 
-## Bypass
-| conditions | approver | audit trail |
+## Exceção (Bypass)
+| condições | aprovador | trilha de auditoria |
 |---|---|---|
-| Security exception | CTO | "Bypassed by [name] on [date] for [reason]" |
+| Exceção de segurança | CTO | "Bypassed by [nome] on [data] for [motivo]" |
 
-## Examples
+## Exemplos
 
-## Golden Example
+## Exemplo Golden
 ```yaml
 kind: oauth_app_config
 name: github_integration
@@ -85,7 +85,7 @@ spec:
   refresh_policy: "rotate"
 ```
 
-## Anti-Example 1: Missing Redirect URIs
+## Anti-Exemplo 1: Redirect URIs Ausentes
 ```yaml
 kind: oauth_app_config
 name: bad_github_integration
@@ -95,10 +95,10 @@ spec:
   scopes:
     - "all"
 ```
-## Why it fails
-Lacks redirect_uris, allowing any redirect URI which creates open redirect vulnerabilities. Also uses "all" scope, granting excessive permissions.
+## Por que falha
+Falta redirect_uris, permitindo qualquer redirect URI, o que cria vulnerabilidades de open redirect. Também usa o escopo "all", concedendo permissões excessivas.
 
-## Anti-Example 2: Insecure Token Lifetimes
+## Anti-Exemplo 2: Tempo de Vida de Token Inseguro
 ```yaml
 kind: oauth_app_config
 name: insecure_github_integration
@@ -114,17 +114,17 @@ spec:
     refresh_token_expires_in: 31536000
   refresh_policy: "reuse"
 ```
-## Why it fails
-Uses 1-year refresh tokens (31536000s) which is excessive and increases risk of token misuse. Refresh policy "reuse" allows tokens to be used indefinitely, violating security best practices.
+## Por que falha
+Usa refresh tokens de 1 ano (31536000s), o que é excessivo e aumenta o risco de uso indevido do token. A política de refresh "reuse" permite que os tokens sejam usados indefinidamente, violando as boas práticas de segurança.
 
-### H_RELATED: Cross-Reference Check (HARD)
-- [ ] `related:` frontmatter field populated (min 3 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream or sibling reference
-- Gate: REJECT if < 3 entries (auto-populated by cex_wikilink.py at F6.5)
+### H_RELATED: Checagem de Referência Cruzada (HARD)
+- [ ] Campo de frontmatter `related:` preenchido (mínimo 3 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream ou sibling
+- Gate: REJECT se < 3 entradas (auto-preenchido por cex_wikilink.py em F6.5)
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Checagem de Referência Cruzada (SOFT)
+- [ ] Campo de frontmatter `related:` preenchido (3-15 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, incentiva a conexão)

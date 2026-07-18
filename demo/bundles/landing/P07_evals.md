@@ -5,57 +5,56 @@ pillar: P07
 builder: landing-page-builder
 version: 1.0.0
 quality: null
-title: "Quality Gate Landing Page"
+title: "Portão de Qualidade Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F7_govern"
-keywords: [landing page construction, quality gate landing page, landing_page, builder, examples, bash
-python _tools/cex_score.py --apply n0*/*.md, quality gate, landing page builder, open graph, google fonts]
+keywords: [construção de landing page, quality gate landing page, landing_page, builder, examples, quality gate, landing page builder, open graph, google fonts, comando de pontuação]
 density_score: 0.90
 llm_function: GOVERN
 related:
   - landing-page-builder
 ---
-## Quality Gate
+## Portão de Qualidade
 
-# Quality Gate: Landing Page Builder
+# Portão de Qualidade: Landing Page Builder
 
-## HARD gates (must pass or artifact is rejected)
-1. H01: Frontmatter has id, kind, title, version, created, quality:null, stack
-2. H02: Output is syntactically valid HTML/JSX (no unclosed tags)
-3. H03: At least 6 sections present (hero + 4 content + footer minimum)
-4. H04: Primary CTA visible above the fold (first section)
-5. H05: Responsive: no fixed widths > 100vw, uses relative/flex/grid
-6. H06: All images have alt attributes
-7. H07: DOCTYPE, html lang attribute, meta charset present (HTML output)
+## Gates HARD (devem passar, senão o artefato é rejeitado)
+1. H01: Frontmatter tem id, kind, title, version, created, quality:null, stack
+2. H02: Saída é HTML/JSX sintaticamente válido (sem tags não fechadas)
+3. H03: Pelo menos 6 seções presentes (hero + 4 de conteúdo + footer, no mínimo)
+4. H04: CTA primário visível acima da dobra (primeira seção)
+5. H05: Responsivo: sem larguras fixas > 100vw, usa relative/flex/grid
+6. H06: Todas as imagens têm atributo alt
+7. H07: DOCTYPE, atributo html lang, meta charset presentes (saída HTML)
 
-## SOFT gates (warnings, not blockers)
-1. S01: All 12 sections present
-2. S02: Dark mode classes/variables included
-3. S03: Open Graph meta tags present
-4. S04: JSON-LD structured data present
-5. S05: Analytics data attributes on CTAs
-6. S06: Lazy loading on below-fold images
-7. S07: ARIA labels on interactive elements (accordion, menu, dialog)
-8. S08: Google Fonts loaded with display=swap
-9. S09: Color contrast >= 4.5:1 (WCAG AA)
-10. S10: Print stylesheet or print-friendly structure
+## Gates SOFT (avisos, não bloqueiam)
+1. S01: Todas as 12 seções presentes
+2. S02: Classes/variáveis de dark mode incluídas
+3. S03: Meta tags de Open Graph presentes
+4. S04: Dados estruturados JSON-LD presentes
+5. S05: Atributos de dados de analytics nos CTAs
+6. S06: Lazy loading nas imagens abaixo da dobra
+7. S07: Labels ARIA em elementos interativos (accordion, menu, dialog)
+8. S08: Google Fonts carregadas com display=swap
+9. S09: Contraste de cor >= 4.5:1 (WCAG AA)
+10. S10: Stylesheet de impressão ou estrutura print-friendly
 
-## Scoring Rubric
-| Dimension | Weight | 10/10 means |
+## Rubrica de Pontuação
+| Dimensão | Peso | O que significa 10/10 |
 |-----------|--------|-------------|
-| Completeness | 20% | All 12 sections, all meta, all analytics hooks |
-| Visual Quality | 20% | Professional design, consistent spacing, polished |
-| Responsiveness | 20% | Pixel-perfect on 375px, 768px, 1024px, 1440px |
-| Performance | 15% | < 2s load, lazy images, critical CSS inline |
-| Conversion | 15% | CTA above fold, clear value prop, urgency elements |
-| Accessibility | 10% | WCAG AA, keyboard nav, screen reader friendly |
+| Completude | 20% | Todas as 12 seções, todos os metas, todos os hooks de analytics |
+| Qualidade Visual | 20% | Design profissional, espaçamento consistente, polido |
+| Responsividade | 20% | Pixel-perfect em 375px, 768px, 1024px, 1440px |
+| Performance | 15% | Carregamento < 2s, imagens lazy, CSS crítico inline |
+| Conversão | 15% | CTA acima da dobra, proposta de valor clara, elementos de urgência |
+| Acessibilidade | 10% | WCAG AA, navegação por teclado, compatível com leitor de tela |
 
-## Scoring Command
+## Comando de Pontuação
 
 ```bash
 python _tools/cex_score.py --apply --verbose target.md
@@ -65,15 +64,15 @@ python _tools/cex_score.py --apply --verbose target.md
 python _tools/cex_score.py --apply N0*/*.md
 ```
 
-## Examples
+## Exemplos
 
-# Examples: Landing Page Builder
+# Exemplos: Landing Page Builder
 
-## Example 1: SaaS Product (HTML + Tailwind)
+## Exemplo 1: Produto SaaS (HTML + Tailwind)
 
-**Input**: "Create a landing page for CodeForge, an AI testing tool for developers"
+**Input**: "Crie uma landing page para o CodeForge, uma ferramenta de IA para testes de desenvolvedores"
 
-**Output sketch** (abbreviated — real output is complete HTML):
+**Esboço da saída** (abreviado -- a saída real é HTML completo):
 ```html
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
@@ -105,16 +104,16 @@ python _tools/cex_score.py --apply N0*/*.md
 </html>
 ```
 
-## Example 2: Infoproduct/Curso (PT-BR)
+## Exemplo 2: Infoproduto/Curso (PT-BR)
 
-**Input**: "Create landing page for AI automation course, R$497, 8 modules"
+**Input**: "Crie uma landing page para curso de automação com IA, R$497, 8 módulos"
 
-**Section order** (infoproduct template):
-HERO (transformation) > PROBLEMA (dor do manual) > TRANSFORMACAO (antes/depois) >
-MODULOS (8 cards) > DEPOIMENTOS > GARANTIA (7 dias) > PRICING (R$497 ou 12x) >
+**Ordem das seções** (modelo de infoproduto):
+HERO (transformação) > PROBLEMA (dor do processo manual) > TRANSFORMAÇÃO (antes/depois) >
+MÓDULOS (8 cards) > DEPOIMENTOS > GARANTIA (7 dias) > PRICING (R$497 ou 12x) >
 FAQ > CTA FINAL > FOOTER
 
-## Anti-Example
+## Contraexemplo
 ```html
 <!-- BAD: Not a landing page, just a wireframe -->
 <div>
@@ -125,36 +124,36 @@ FAQ > CTA FINAL > FOOTER
 <!-- Missing: responsive, dark mode, SEO, a11y, sections, styling, EVERYTHING -->
 ```
 
-## Exemplar Requirements
+## Requisitos do Exemplar
 
-1. Score 9.0+ to qualify as few-shot reference
-2. Demonstrate ideal structure for this artifact kind
-3. Populate all frontmatter fields with realistic values
-4. Use domain-specific content not generic placeholders
-5. Enable retrieval via tags and TF-IDF matching
+1. Pontuação 9.0+ para qualificar como referência few-shot
+2. Demonstrar a estrutura ideal para este kind de artefato
+3. Preencher todos os campos de frontmatter com valores realistas
+4. Usar conteúdo específico do domínio, não placeholders genéricos
+5. Permitir recuperação via tags e correspondência TF-IDF
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `examples` |
 | Pillar | P01 |
-| Domain | landing page construction |
+| Domain | construção de landing page |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-### H_RELATED: Cross-Reference Check (HARD)
-- [ ] `related:` frontmatter field populated (min 3 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream or sibling reference
-- Gate: REJECT if < 3 entries (auto-populated by cex_wikilink.py at F6.5)
+### H_RELATED: Verificação de Referências Cruzadas (HARD)
+- [ ] campo de frontmatter `related:` preenchido (mínimo 3 entradas)
+- [ ] seção `## Artefatos Relacionados` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream ou sibling
+- Gate: REJEITA se < 3 entradas (auto-preenchido pelo cex_wikilink.py em F6.5)
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Verificação de Referências Cruzadas (SOFT)
+- [ ] campo de frontmatter `related:` preenchido (3 a 15 entradas)
+- [ ] seção `## Artefatos Relacionados` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, incentiva a conexão)

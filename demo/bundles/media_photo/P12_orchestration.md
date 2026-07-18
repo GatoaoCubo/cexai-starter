@@ -3,43 +3,42 @@ kind: collaboration
 id: bld_collaboration_multimodal_prompt
 pillar: P12
 llm_function: COLLABORATE
-purpose: How multimodal_prompt-builder works in crews with other builders
+purpose: Como o multimodal_prompt-builder trabalha em crews com outros builders
 quality: null
 title: "Collaboration Multimodal Prompt"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [multimodal_prompt, builder, collaboration]
-tldr: "How multimodal_prompt-builder works in crews with other builders"
-domain: "multimodal_prompt construction"
+tldr: "Como o multimodal_prompt-builder trabalha em crews com outros builders"
+domain: "construção de multimodal_prompt"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F8_collaborate"
-keywords: [multimodal_prompt construction, collaboration multimodal prompt, multimodal_prompt, builder, collaboration, multi_modal_config, prompt_technique, crew role  
-synthesizes, receives from, produces for]
+keywords: [construção de multimodal_prompt, collaboration multimodal prompt, multimodal_prompt, builder, collaboration, multi_modal_config, prompt_technique, papel na crew, recebe de, produz para]
 density_score: 0.85
 related:
   - multimodal-prompt-builder
   - bld_tools_multimodal_prompt
 ---
-## Crew Role  
-Synthesizes multimodal prompts by integrating text, image, and audio inputs into cohesive instructions for AI models. Acts as a bridge between content creators and technical teams.  
+## Papel na Crew
+Sintetiza prompts multimodais integrando entradas de texto, imagem e áudio em instruções coesas para modelos de IA. Atua como ponte entre criadores de conteúdo e equipes técnicas.
 
-## Receives From  
-| Builder             | What                              | Format   |  
-|---------------------|-----------------------------------|----------|  
-| multi_modal_config  | Modality constraints and settings | YAML     |  
-| knowledge_card      | Domain context for grounding      | Markdown |  
-| embedding_config    | Token embedding specifications    | YAML     |  
+## Recebe De
+| Builder             | O quê                              | Formato   |
+|---------------------|-----------------------------------|----------|
+| multi_modal_config  | Restrições e configurações de modalidade | YAML     |
+| knowledge_card      | Contexto de domínio para grounding      | Markdown |
+| embedding_config    | Especificações de token embedding    | YAML     |
 
-## Produces For  
-| Builder             | What                              | Format   |  
-|---------------------|-----------------------------------|----------|  
-| prompt_template     | Multimodal prompt structures      | Markdown |  
-| llm_judge           | Test cases for cross-modal eval   | Markdown |  
-| benchmark           | Evaluation scenarios with inputs  | Markdown |  
+## Produz Para
+| Builder             | O quê                              | Formato   |
+|---------------------|-----------------------------------|----------|
+| prompt_template     | Estruturas de prompt multimodal      | Markdown |
+| llm_judge           | Casos de teste para avaliação cross-modal   | Markdown |
+| benchmark           | Cenários de avaliação com entradas  | Markdown |
 
-## Boundary  
-Does NOT handle model-specific configuration (handled by `multi_modal_config`) or text-only prompt optimization (handled by `prompt_technique`).
+## Fronteira
+NÃO trata de configuração específica de modelo (tratada por `multi_modal_config`) nem de otimização de prompt somente-texto (tratada por `prompt_technique`).
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

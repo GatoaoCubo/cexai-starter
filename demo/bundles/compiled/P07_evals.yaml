@@ -1,0 +1,143 @@
+kind: quality_gate
+id: p01_qg_research_universe
+pillar: P11
+llm_function: GOVERN
+purpose: Gate de qualidade com pontuação HARD e SOFT para research_universe
+quality: null
+title: Quality Gate Research Universe
+version: 1.0.0
+author: n03_builder
+tags:
+- research_universe
+- builder
+- quality_gate
+tldr: Gate de qualidade com pontuação HARD e SOFT para artefatos research_universe -- foco no mecanismo ok/blocked/skipped
+domain: construção de research_universe
+created: '2026-07-17'
+updated: '2026-07-17'
+8f: F7_govern
+keywords:
+- research_universe construction
+- quality gate research universe
+- status honesto
+- fabricação de dados
+- research_universe
+- builder
+- quality_gate
+- golden example
+- anti-example
+density_score: 0.88
+related:
+- research-universe-builder
+gate_de_qualidade: ''
+defini_o: '| métrica | limiar | operador | escopo |
+
+  |--------|-----------|----------|-------|
+
+  | Padrão de ID | `^p01_ru_[a-z][a-z0-9_]+\.md$` | corresponde | todos os arquivos research_universe |'
+gates_hard: '| ID | Verificação | Condição de Falha |
+
+  |----|-------|----------------|
+
+  | H01 | Frontmatter YAML válido | sintaxe YAML inválida |
+
+  | H02 | ID corresponde ao padrão `^p01_ru_[a-z][a-z0-9_]+\.md$` | ID não corresponde ao padrão |
+
+  | H03 | Campo kind igual a "research_universe" | kind != "research_universe" |
+
+  | H04 | Lista `lanes` com exatamente 6 entradas, uma por trilha canônica | trilha ausente, duplicada, ou fora das 6 canônicas
+  |
+
+  | H05 | Toda trilha com status `ok` cita >= 1 fonte com data de acesso | dado `ok` sem fonte ou sem data |
+
+  | H06 | Nenhum número de CNPJ, índice de reputação ou volume de busca sem fonte citada | valor numérico presente sem procedência
+  associada |
+
+  | H07 | Trilhas `blocked` ou `skipped` tem motivo explícito (não apenas o rótulo) | motivo ausente na Tabela de Status por
+  Trilha |'
+pontua_o_soft: '| Dim | Dimensão | Peso | Guia de Pontuação |
+
+  |-----|-----------|--------|---------------|
+
+  | D1 | Cobertura honesta das 6 trilhas | 0.20 | Todas tentadas e reportadas com precisão = 1.0; trilhas omitidas da tabela
+  final = 0.0 |
+
+  | D2 | Atualidade da procedência | 0.20 | Reputação/sentimento datados <= 90 dias, firmografia <= 12 meses = 1.0; sem data
+  ou muito antigo = 0.0 |
+
+  | D3 | Distinção `blocked` vs `skipped` | 0.20 | Sempre correta e justificada = 1.0; rótulos trocados ou sem motivo = 0.0
+  |
+
+  | D4 | Profundidade multi-perspectiva | 0.15 | >= 3 papéis distintos, perguntas específicas a semente = 1.0; genérico ou
+  < 3 papéis = 0.0 |
+
+  | D5 | Utilidade da trilha SEO | 0.10 | Termos + intenção + volume/estimativa rotulada = 1.0; termos genéricos sem intenção
+  = 0.0 |
+
+  | D6 | Síntese executiva acionável | 0.15 | 1 achado concreto por trilha `ok`, `coverage_score` bate com a tabela = 1.0;
+  síntese vaga ou número de cobertura incorreto = 0.0 |
+
+
+  Pontuação = soma(pts  peso) / soma(pts_max  peso) * 10'
+a_es: '| Pontuação | Ação |
+
+  |-------|--------|
+
+  | >= 9.5 | Publicação automática no repositório de pesquisa |
+
+  | >= 8.0 | Revisão por um analista sênior e depois publicação |
+
+  | >= 7.0 | Sinalizar para revisão antes de compartilhar com o solicitante |
+
+  | < 7.0 | Revisar e reenviar -- geralmente falha de procedência ou de honestidade `ok`/`blocked`/`skipped` |'
+bypass: '| condições | aprovador | trilha de auditoria |
+
+  |------------|----------|-------------|
+
+  | Prazo urgente com poucas trilhas acessíveis (ex.: due diligence rápida) | Analista sênior | Registro no próprio relatório,
+  seção "Limitações e Próximos Passos", com justificativa e prazo |'
+exemplos: ''
+exemplo_de_refer_ncia_trecho_tabela_de_status_por_trilha: '| Trilha | Status | Motivo (se blocked/skipped) |
+
+  |--------|--------|-------------------------------|
+
+  | Firmografia | ok | -- (CNPJ localizado, consulta pública em 2026-07-15) |
+
+  | Sinal Social | ok | -- (loja de app + Reddit acessados em 2026-07-15) |
+
+  | Reputação | blocked | Página do Reclame Aqui exigiu verificação adicional; não acessada nesta sessão |
+
+  | Sentimento em PT | ok | Classificado sobre o texto coletado na trilha Sinal Social |
+
+  | SEO | ok | Termos validados via busca nativa em 2026-07-15 |
+
+  | Perguntas Multi-Perspectiva | ok | 4 papéis cobertos |
+
+  Cobertura: 5/6 = 0.83. A trilha `blocked` fica explícita, com motivo -- não é escondida nem preenchida com um número estimado.'
+anti_exemplo_1_n_mero_sem_proced_ncia: '| Reputação | Valor |
+
+  |-----------|-------|
+
+  | Índice Reclame Aqui | 7.8 |'
+? por_que_falha_apresenta_um_ndice_de_reputa_o_como_se_fosse_dado_real_sem_citar_fonte_nem_data_de_acesso_viola_h05_e_h06_se_o_ndice_n_o_foi_de_fato_consultado_a_trilha_deveria_estar_blocked_com_o_campo_de_valor_vazio
+: ''
+anti_exemplo_2_confundir_blocked_com_skipped: '| Trilha | Status |
+
+  |--------|--------|
+
+  | Firmografia | skipped |
+
+  com a nota do agente: "não consegui acessar a Receita Federal agora."'
+? por_que_falha_a_justificativa_descreve_uma_falha_de_acesso_blocked_mas_o_status_registrado_skipped_que_deveria_significar_esta_trilha_n_o_se_aplica_a_esta_semente_rotular_errado_esconde_do_usu_rio_que_a_fonte_existe_e_vale_tentar_de_novo_viola_h07_e_a_dimens_o_d3
+: ''
+h_related_verifica_o_de_refer_ncia_cruzada_hard:
+- '[ ] Campo `related:` do frontmatter preenchido (mínimo 3 entradas)'
+- '[ ] Seção `## Artefatos Relacionados` presente no corpo do artefato'
+- '[ ] Pelo menos 1 referência upstream e 1 downstream ou sibling'
+- 'Gate: REJEITAR se < 3 entradas'
+s_related_verifica_o_de_refer_ncia_cruzada_soft:
+- '[ ] Campo `related:` do frontmatter preenchido (3-15 entradas)'
+- '[ ] Seção `## Artefatos Relacionados` presente no corpo do artefato'
+- '[ ] Pelo menos 1 referência upstream e 1 downstream'
+- 'Penalidade: -0.3 se vazio (não bloqueia, incentiva a conexão)'
+structural_score: 8

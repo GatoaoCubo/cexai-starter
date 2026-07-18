@@ -3,19 +3,19 @@ kind: schema
 id: bld_schema_knowledge_card
 pillar: P06
 llm_function: CONSTRAIN
-purpose: Formal schema for knowledge_card — SINGLE SOURCE OF TRUTH
-pattern: TEMPLATE derives from this. CONFIG restricts this. Never the inverse.
-source: P01_knowledge/_schema.yaml v4.0 + validate_kc.py v2.0 + 721 real KCs
+purpose: "Schema formal do knowledge_card -- FONTE UNICA DA VERDADE"
+pattern: "o TEMPLATE deriva disto. o CONFIG restringe isto. Nunca o inverso."
+source: P01_knowledge/_schema.yaml v4.0 + validate_kc.py v2.0 + 721 KCs reais
 quality: null
-title: "Schema Knowledge Card"
+title: "Schema: knowledge_card"
 version: "1.0.0"
 author: n03_builder
 tags:
   - "knowledge_card"
   - "builder"
   - "examples"
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos-modelo e anti-exemplos de construcao de knowledge_card, demonstrando estrutura ideal e armadilhas comuns."
+domain: "construcao de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
@@ -44,87 +44,90 @@ related:
 ---
 
 # Schema: knowledge_card
-## Frontmatter Fields (Required — 14)
-| Field | Type | Required | Default | Validator |
+## Campos de Frontmatter (Obrigatorios -- 14)
+| Campo | Tipo | Obrigatorio | Padrao | Validador |
 |-------|------|----------|---------|-----------|
-| id | string (p01_kc_{slug}) | YES | — | H02, H03 |
-| kind | literal "knowledge_card" | YES | — | H04 |
-| pillar | literal "P01" | YES | — | H06 |
-| title | string 5-100 chars | YES | — | H06, S03 |
-| version | semver X.Y.Z | YES | "1.0.0" | H06, S04 |
-| created | date YYYY-MM-DD | YES | — | H06, S05 |
-| updated | date YYYY-MM-DD | YES | — | H06, S05 |
-| author | string (not orchestrator) | YES | — | H06, H10 |
-| domain | string | YES | — | H06 |
-| quality | null | YES | null | H05 |
-| tags | list[string], len 3-7 | YES | — | H07 |
-| tldr | string <= 160 chars, must contain concrete data | YES | — | S01, S02 |
-| when_to_use | string (specific context, not "when needed") | YES | — | H06 |
-| axioms | list[string], len >= 1, ALWAYS/NEVER/IF-THEN form | YES | — | S18 |
-## Frontmatter Fields (CEX Extended — 5)
-| Field | Type | Required | Validator |
+| id | string (p01_kc_{slug}) | SIM | -- | H02, H03 |
+| kind | literal "knowledge_card" | SIM | -- | H04 |
+| pillar | literal "P01" | SIM | -- | H06 |
+| title | string, 5-100 caracteres | SIM | -- | H06, S03 |
+| version | semver X.Y.Z | SIM | "1.0.0" | H06, S04 |
+| created | data AAAA-MM-DD | SIM | -- | H06, S05 |
+| updated | data AAAA-MM-DD | SIM | -- | H06, S05 |
+| author | string (nao pode ser o orchestrator) | SIM | -- | H06, H10 |
+| domain | string | SIM | -- | H06 |
+| quality | null | SIM | null | H05 |
+| tags | list[string], 3-7 itens | SIM | -- | H07 |
+| tldr | string, <= 160 caracteres, precisa conter dado concreto | SIM | -- | S01, S02 |
+| when_to_use | string (contexto especifico, nunca "quando necessario") | SIM | -- | H06 |
+| axioms | list[string], >= 1 item, forma SEMPRE/NUNCA/SE-ENTAO | SIM | -- | S18 |
+## Campos de Frontmatter (Extensao CEX -- 5)
+| Campo | Tipo | Obrigatorio | Validador |
 |-------|------|----------|-----------|
-| keywords | list[string], len 2-5 (terms user would literally type) | REC | S16 |
-| long_tails | list[string], len 2-3 (full natural-language phrases) | REC | S17 |
-| linked_artifacts | object {primary, related} | REC | S14, S20 |
-| density_score | float 0.80-1.00 | REC | — |
-| data_source | URL or artifact ref | REC | S15 |
-## ID Pattern
+| keywords | list[string], 2-5 itens (termos que o usuario digitaria literalmente) | REC | S16 |
+| long_tails | list[string], 2-3 itens (frases completas em linguagem natural) | REC | S17 |
+| linked_artifacts | objeto {primary, related} | REC | S14, S20 |
+| density_score | float, 0.80-1.00 | REC | -- |
+| data_source | URL ou referencia de artefato | REC | S15 |
+## Padrao do ID
 Regex: `^p01_kc_[a-z][a-z0-9_]+$`
-Rule: id MUST equal filename stem (H02). Underscores only.
-## Naming Conventions (load-bearing filename populations)
-The Regex above is the FORWARD gate for new ids -- it does not retroactively govern 6 populations
-proven LOAD-BEARING or PATTERN-INADMISSIBLE by live breakage during the R-307 lane-4 rename sweep
-(af9552aaaf reverted 191/383 renames after exactly this). `identity_doctor`
-(`_tools/cex_check_registry.py`) carries the SAME 6 in its `EXEMPT_ID_CONVENTIONS` constant
-(R-314): removed from the counted mismatch total, but always visible via `exempted_by_convention`.
-| Population | Count | Example | Why exempt |
+Regra: o id DEVE ser igual ao stem do nome do arquivo (H02). Somente underscores.
+## Convencoes de Nomenclatura (populacoes de nome de arquivo estruturalmente essenciais)
+A Regex acima e o portao FORWARD, valido apenas para ids novos -- ela nao rege
+retroativamente 6 populacoes ja provadas LOAD-BEARING (estruturalmente essenciais) ou
+PATTERN-INADMISSIBLE (inadmissiveis ao padrao) por quebra real durante a varredura de
+renomeacao R-307 lane-4 (o commit `af9552aaaf` reverteu 191/383 renomeacoes exatamente
+por isso). O `identity_doctor` (`_tools/cex_check_registry.py`) carrega essas MESMAS 6
+populacoes na constante `EXEMPT_ID_CONVENTIONS` (R-314): elas saem do total de
+descompasso contado, mas continuam sempre visiveis via `exempted_by_convention`.
+| Populacao | Contagem | Exemplo | Por que e isenta |
 |---|---|---|---|
-| `library/kind/kc_{kind}.md` (bare) | 156 | `kc_ab_test_config` | `load_kc_library()` globs `kc_*.md` by filename; ~14 _tools modules build this path from the kind name |
-| `kc_oss_*` | 26 | `kc_oss_ruff` | `license_doctor` globs `kc_oss_*.md` |
-| `kc_lens_*` | 8 | `kc_lens_bible` | `cex_teach_lesson.py` LENS_DIR builds `kc_lens_{lens}.md` |
-| `kc_*_vocabulary` | 6 | `kc_intelligence_vocabulary` | `cex_distill._carry_vocabulary_kcs()` globs per nucleus |
-| `kc_competitor_hermes` | 1 | (exact name) | `cex_hygiene.py` R09 hardcodes this filename |
-| `kc_8f_*` (digit-leading) | 5 | `kc_8f_mode_a` | PATTERN-INADMISSIBLE: H02 needs `[a-z]` after the prefix; "8f" starts with a digit -- no rename can ever admit it |
-None of the 6 is retroactively "fixed" here -- mirrors `bld_schema_output_template.md`'s own
-"resolved not blessed" precedent (R-299). New knowledge_card ids still author against the Regex
-above; this is a closed, cited exception list, not a precedent for new drift.
-## Linked Artifacts Object
+| `library/kind/kc_{kind}.md` (forma simples) | 156 | `kc_ab_test_config` | `load_kc_library()` faz glob de `kc_*.md` pelo nome do arquivo; ~14 modulos em _tools constroem esse caminho a partir do nome do kind |
+| `kc_oss_*` | 26 | `kc_oss_ruff` | `license_doctor` faz glob de `kc_oss_*.md` |
+| `kc_lens_*` | 8 | `kc_lens_bible` | o `LENS_DIR` de `cex_teach_lesson.py` constroi `kc_lens_{lens}.md` |
+| `kc_*_vocabulary` | 6 | `kc_intelligence_vocabulary` | `cex_distill._carry_vocabulary_kcs()` faz glob por nucleo |
+| `kc_competitor_hermes` | 1 | (nome exato) | `cex_hygiene.py` R09 tem esse nome de arquivo fixo no codigo |
+| `kc_8f_*` (comeca com digito) | 5 | `kc_8f_mode_a` | PATTERN-INADMISSIBLE: o H02 exige `[a-z]` logo apos o prefixo; "8f" comeca com digito -- nenhuma renomeacao pode admitir isso |
+Nenhuma das 6 populacoes e "corrigida" retroativamente aqui -- isso espelha o precedente
+do proprio `bld_schema_output_template.md`, "resolvido mas nao abencoado" (R-299). Todo
+novo id de knowledge_card ainda deve ser autorado contra a Regex acima; esta e uma lista
+de excecao fechada e citada, nao um precedente para novo desvio.
+## Objeto linked_artifacts
 ```yaml
 linked_artifacts:
-  primary: null            # or artifact_id
-  related: [p01_kc_xxx]   # list of related ids
+  primary: null            # ou artifact_id
+  related: [p01_kc_xxx]   # lista de ids relacionados
 ```
-Both `primary` and `related` keys required (S20).
-## Body Structure: domain_kc
-1. `## Quick Reference` — yaml: topic, scope, owner, criticality
-2. `## Key Concepts` — bullets >= 3, concrete examples
-3. `## Strategy Phases` — numbered steps with outcomes
-4. `## Golden Rules` — actionable rules >= 3
-5. `## Flow` — text/ascii diagram
-6. `## Comparativo` — comparison table
-7. `## References` — artifact refs + URLs
-## Body Structure: meta_kc
-1. `## Executive Summary` — dense overview (2-3 sentences)
-2. `## Spec Table` — key-value specs
-3. `## Patterns` — what works
-4. `## Anti-Patterns` — what fails
-5. `## Application` — how to apply
-6. `## References` — artifact refs + URLs
-Density hierarchy (most to least info/token): tables > code blocks > bullet lists > ASCII diagrams > short paragraphs.
-## Constraints
-- max_bytes: 5120 (body) — H08. Covers 97%+ of 721 real KCs (p95=4274B)
-- min_bytes: 200 — KCs below 200B are empty/stub
+As chaves `primary` e `related` sao ambas obrigatorias (S20).
+## Estrutura do Corpo: domain_kc
+1. `## Referencia Rapida` -- yaml: topic, scope, owner, criticality
+2. `## Conceitos-Chave` -- bullets >= 3, exemplos concretos
+3. `## Fases da Estrategia` -- passos numerados com resultados
+4. `## Regras de Ouro` -- regras acionaveis >= 3
+5. `## Fluxo` -- diagrama de texto/ascii
+6. `## Comparativo` -- tabela comparativa
+7. `## Referencias` -- referencias de artefato + URLs
+## Estrutura do Corpo: meta_kc
+1. `## Resumo Executivo` -- visao geral densa (2-3 frases)
+2. `## Tabela de Especificacao` -- especificacoes chave-valor
+3. `## Padroes` -- o que funciona
+4. `## Anti-Padroes` -- o que falha
+5. `## Aplicacao` -- como aplicar
+6. `## Referencias` -- referencias de artefato + URLs
+Hierarquia de densidade (do que mais informa por token ao que menos informa): tabelas > blocos de codigo > listas de bullets > diagramas ASCII > paragrafos curtos.
+## Restricoes
+- max_bytes: 5120 (corpo) -- H08. Cobre mais de 97% dos 721 KCs reais (p95=4274B)
+- min_bytes: 200 -- KCs abaixo de 200B sao vazios/esboco
 - min_bullets: 3
 - density_min: 0.80
-- bullet_max_chars: 80 — S10
+- bullet_max_chars: 80 -- S10
 - naming: p01_kc_{topic_slug}.md
-- no internal paths (records/, .claude/, /home/) — H09
-- no filler phrases — S09
-- no self-references in tldr — S02
+- sem caminhos internos (records/, .claude/, /home/) -- H09
+- sem frases de enchimento -- S09
+- sem auto-referencia no tldr -- S02
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacao | Pontuacao |
 |----------|-------------|-------|
 | [[bld_schema_golden_test]] | sibling | 0.55 |
 | [[bld_schema_retriever_config]] | sibling | 0.54 |

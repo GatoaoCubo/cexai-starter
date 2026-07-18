@@ -3,14 +3,14 @@ kind: architecture
 id: bld_architecture_oauth_app_config
 pillar: P08
 llm_function: CONSTRAIN
-purpose: Component map of oauth_app_config -- inventory, dependencies
+purpose: Mapa de componentes do oauth_app_config -- inventário, dependências
 quality: null
 title: "Architecture Oauth App Config"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [oauth_app_config, builder, architecture]
-tldr: "Component map of oauth_app_config -- inventory, dependencies"
-domain: "oauth_app_config construction"
+tldr: "Mapa de componentes do oauth_app_config -- inventário, dependências"
+domain: "construção de oauth_app_config"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
@@ -24,34 +24,34 @@ related:
   - bld_architecture_white_label_config
 ---
 
-## Component Inventory
-| ISO Name             | Role                          | Pillar | Status |
+## Inventário de Componentes
+| Nome do ISO          | Papel                          | Pillar | Status |
 |----------------------|-------------------------------|--------|--------|
-| bld_manifest         | Application metadata          | P09    | Active |
-| bld_instruction      | User action definitions       | P09    | Active |
-| bld_system_prompt    | LLM interaction guidelines    | P09    | Active |
-| bld_schema           | Data structure validation     | P09    | Active |
-| bld_quality_gate     | Compliance checks             | P09    | Active |
-| bld_output_template  | Response formatting           | P09    | Active |
-| bld_examples         | Sample interaction scenarios  | P09    | Active |
-| bld_knowledge_card   | Security policy documentation | P09    | Active |
-| bld_architecture     | System blueprint              | P09    | Active |
-| bld_collaboration    | Multi-user coordination       | P09    | Active |
-| bld_config           | Configuration management      | P09    | Active |
-| bld_memory           | Session state tracking        | P09    | Active |
-| bld_tools            | External API integration      | P09    | Active |
+| bld_manifest         | Metadados da aplicação         | P09    | Ativo |
+| bld_instruction      | Definições de ações do usuário | P09    | Ativo |
+| bld_system_prompt    | Diretrizes de interação com o LLM | P09 | Ativo |
+| bld_schema           | Validação de estrutura de dados | P09   | Ativo |
+| bld_quality_gate     | Checagens de conformidade      | P09    | Ativo |
+| bld_output_template  | Formatação da resposta         | P09    | Ativo |
+| bld_examples         | Cenários de interação de exemplo | P09  | Ativo |
+| bld_knowledge_card   | Documentação de política de segurança | P09 | Ativo |
+| bld_architecture     | Blueprint do sistema           | P09    | Ativo |
+| bld_collaboration    | Coordenação multiusuário        | P09    | Ativo |
+| bld_config           | Gestão de configuração          | P09    | Ativo |
+| bld_memory           | Rastreamento de estado de sessão | P09  | Ativo |
+| bld_tools            | Integração com API externa      | P09    | Ativo |
 
-## Dependencies
-| From         | To             | Type         |
+## Dependências
+| De           | Para           | Tipo         |
 |--------------|----------------|--------------|
-| bld_config   | bld_instruction| Configuration|
-| bld_config   | bld_memory     | Configuration|
-| bld_schema   | bld_quality_gate| Validation   |
-| bld_tools    | OAuth2.0 Lib   | External     |
-| bld_manifest | bld_output_template | Reference |
+| bld_config   | bld_instruction| Configuração |
+| bld_config   | bld_memory     | Configuração |
+| bld_schema   | bld_quality_gate| Validação   |
+| bld_tools    | OAuth2.0 Lib   | Externa      |
+| bld_manifest | bld_output_template | Referência |
 
-## Architectural Position
-oauth_app_config is the central configuration orchestrator in CEX P09, ensuring secure, compliant OAuth app setups by integrating with builders for validation, policy enforcement, and external tool interoperability, while maintaining strict separation from business logic layers.
+## Posição Arquitetural
+oauth_app_config é o orquestrador central de configuração no CEX P09, garantindo setups de app OAuth seguros e conformes ao se integrar com builders de validação, aplicação de políticas e interoperabilidade com ferramentas externas, mantendo estrita separação das camadas de lógica de negócio.
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

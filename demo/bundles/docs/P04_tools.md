@@ -24,15 +24,15 @@ related:
   - bld_tools_golden_test
 ---
 
-# Tools: knowledge-card-builder
-## Production Tools
-| Tool | Purpose | When | Status |
+# Ferramentas: knowledge-card-builder
+## Ferramentas de Producao
+| Ferramenta | Proposito | Quando | Status |
 |------|---------|------|--------|
-| validate_kc.py | Validate KC: 10 HARD + 20 SOFT gates | Phase 3 | CONDITIONAL |
-| brain_query [MCP] | Search existing KCs in pool | Phase 1 | CONDITIONAL |
-| validate_artifact.py | Generic artifact validator | — | [PLANNED] |
-| cex_forge.py | Generate artifact from seeds | Alt compose | [PLANNED] |
-## validate_kc.py Usage
+| validate_kc.py | Valida o KC: gates 10 HARD + 20 SOFT | Fase 3 | CONDICIONAL |
+| brain_query [MCP] | Busca KCs existentes no pool | Fase 1 | CONDICIONAL |
+| validate_artifact.py | Validador generico de artefatos | -- | [PLANEJADO] |
+| cex_forge.py | Gera artefato a partir de seeds | Composicao alternativa | [PLANEJADO] |
+## Uso do validate_kc.py
 ```bash
 # Single file
 python _tools/validate_kc.py path/to/p01_kc_topic.md
@@ -41,38 +41,38 @@ python _tools/validate_kc.py P01_knowledge/examples/ --summary
 # JSON output (machine-readable)
 python _tools/validate_kc.py path/to/file.md --json
 ```
-Output: HARD pass/fail + SOFT score 0-10 + verdict.
-Fix suggestions provided for failed gates.
-## brain_query Usage
+Saida: aprovacao/reprovacao HARD + pontuacao SOFT 0-10 + veredito.
+Sugestoes de correcao fornecidas para os gates que falharem.
+## Uso do brain_query
 ```python
 brain_query("knowledge card about {topic}")
 # Returns: existing KCs matching topic
 # Purpose: avoid duplicates, find linked_artifacts
 ```
-## Data Sources
-| Source | Path | Data |
+## Fontes de Dados
+| Fonte | Caminho | Dado |
 |--------|------|------|
-| CEX Schema | P01_knowledge/_schema.yaml | KC field definitions |
-| CEX Examples | P01_knowledge/examples/ | 63+ real KCs |
-| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Fillable template |
-| CEX Pool | artifacts/ (source repository) | 1957+ published artifacts |
-## Tool Permissions
+| CEX Schema | P01_knowledge/_schema.yaml | Definicoes de campos do KC |
+| CEX Examples | P01_knowledge/examples/ | 63+ KCs reais |
+| CEX Template | P01_knowledge/templates/tpl_knowledge_card.md | Template preenchivel |
+| CEX Pool | artifacts/ (repositorio de origem) | 1957+ artefatos publicados |
+## Permissoes de Ferramentas
 
-| Category | Tools | Status |
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| PERMITIDO | Read, Write, Edit, Bash, Glob, Grep | Explicitamente permitido |
+| NEGADO | (nenhuma) | Explicitamente bloqueado |
+| EFETIVO | Bash, Edit, Glob, Grep, Read, Write | PERMITIDO menos NEGADO |
 
-## Interim Validation
-validate_kc.py is ACTIVE — always run before committing.
-No manual gate-checking needed (unlike model-card-builder).
+## Validacao Interina
+validate_kc.py esta ATIVO -- sempre execute antes de commitar.
+Nenhuma checagem manual de gate e necessaria (diferente do model-card-builder).
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuacao |
 |----------|-------------|-------|
-| [[bld_tools_validation_schema]] | sibling | 0.50 |
-| bld_tools_quality_gate | sibling | 0.46 |
-| [[bld_tools_scoring_rubric]] | sibling | 0.45 |
-| [[bld_tools_retriever_config]] | sibling | 0.44 |
-| [[bld_tools_golden_test]] | sibling | 0.43 |
+| [[bld_tools_validation_schema]] | irmao | 0.50 |
+| bld_tools_quality_gate | irmao | 0.46 |
+| [[bld_tools_scoring_rubric]] | irmao | 0.45 |
+| [[bld_tools_retriever_config]] | irmao | 0.44 |
+| [[bld_tools_golden_test]] | irmao | 0.43 |

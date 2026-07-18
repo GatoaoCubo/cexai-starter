@@ -3,18 +3,18 @@ kind: output_template
 id: bld_output_template_multimodal_prompt
 pillar: P05
 llm_function: PRODUCE
-purpose: Template with vars for multimodal_prompt production
+purpose: Template com variáveis para a produção de multimodal_prompt
 quality: null
 title: "Output Template Multimodal Prompt"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [multimodal_prompt, builder, output_template]
-tldr: "Template with vars for multimodal_prompt production"
-domain: "multimodal_prompt construction"
+tldr: "Template com variáveis para a produção de multimodal_prompt"
+domain: "construção de multimodal_prompt"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F6_produce"
-keywords: [multimodal_prompt construction, output template multimodal prompt, multimodal_prompt, builder, output_template, related artifacts, image image_url, replace, upstream, image]
+keywords: [construção de multimodal_prompt, output template multimodal prompt, multimodal_prompt, builder, output_template, artefatos relacionados, image image_url, replace, upstream, image]
 density_score: 0.85
 related:
   - kc_multimodal_prompt
@@ -33,12 +33,12 @@ content:
 ---
 ```
 
-<!-- Replace with prompt name -->
-<!-- Replace with descriptive title -->
-<!-- Replace with media type (text/image/audio) -->
-<!-- Replace with raw data or reference -->
+<!-- Substituir pelo nome do prompt -->
+<!-- Substituir por um título descritivo -->
+<!-- Substituir pelo tipo de mídia (text/image/audio) -->
+<!-- Substituir pelos dados brutos ou pela referência -->
 
-| Type   | Data                              |
+| Tipo   | Dado                              |
 |--------|-----------------------------------|
 | text   | `{{text_content}}`                 |
 | image  | `{{image_url}}`                    |

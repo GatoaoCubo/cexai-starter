@@ -3,18 +3,18 @@ kind: tools
 id: bld_tools_roi_calculator
 pillar: P04
 llm_function: CALL
-purpose: Tools available for roi_calculator production
+purpose: Ferramentas disponíveis para produção de roi_calculator
 quality: null
-title: "Tools Roi Calculator"
+title: "Ferramentas -- ROI Calculator"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [roi_calculator, builder, tools]
-tldr: "Tool registry for roi calculator builder: CEX pipeline tools (compile, score, retrieve), file system ops (Read/Write/Edit/Glob/Grep), and domain-specific automation for roi calculator spec with inputs, formulas, tco comparison for economic buyers."
-domain: "roi_calculator construction"
+tldr: "Registro de ferramentas do roi_calculator-builder: ferramentas do pipeline CEX (compilar, pontuar, recuperar), operações de sistema de arquivos (Read/Write/Edit/Glob/Grep) e automação específica de domínio para a especificação do roi calculator com entradas, fórmulas e comparação de TCO para compradores econômicos."
+domain: "construção de roi_calculator"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F5_call"
-keywords: [roi_calculator construction, tools roi calculator, cex pipeline tools, file system ops, roi_calculator, builder, tools, production tools, validation tools, external references]
+keywords: [construção de roi_calculator, ferramentas roi calculator, ferramentas do pipeline cex, operações de sistema de arquivos, roi_calculator, builder, tools, ferramentas de produção, ferramentas de validação, referências externas]
 density_score: 0.85
 related:
   - bld_tools_compliance_checklist
@@ -24,65 +24,65 @@ related:
   - bld_tools_skill
 ---
 
-## Production Tools
-| Tool | Purpose | When |
+## Ferramentas de Produção
+| Ferramenta | Finalidade | Quando |
 |------|---------|------|
-| cex_compile.py | Compile artifact after production | F8 COLLABORATE |
-| cex_score.py | Score artifact quality (5D dimensions) | F7 GOVERN |
-| cex_retriever.py | Retrieve similar ROI calculator artifacts for reuse | F3 INJECT |
-| cex_doctor.py | Validate builder health, check ISO completeness | F7 GOVERN |
+| cex_compile.py | Compilar o artefato após a produção | F8 COLLABORATE |
+| cex_score.py | Pontuar a qualidade do artefato (dimensões 5D) | F7 GOVERN |
+| cex_retriever.py | Recuperar artefatos similares de ROI calculator para reuso | F3 INJECT |
+| cex_doctor.py | Validar a saúde do builder, checar completude dos ISOs | F7 GOVERN |
 
-## Validation Tools
-| Tool | Purpose | When |
+## Ferramentas de Validação
+| Ferramenta | Finalidade | Quando |
 |------|---------|------|
-| cex_wave_validator.py | Structural YAML + frontmatter validation | Post-production |
-| cex_hooks.py | Pre-commit ASCII and schema checks | Pre-commit |
+| cex_wave_validator.py | Validação estrutural de YAML + frontmatter | Pós-produção |
+| cex_hooks.py | Checagens de ASCII e schema no pre-commit | Pre-commit |
 
-## External References
-- Forrester TEI (Total Economic Impact) methodology
-- Gartner TCO framework
-- IFRS/GAAP NPV calculation standards
+## Referências Externas
+- Metodologia Forrester TEI (Total Economic Impact)
+- Framework de TCO do Gartner
+- Padrões de cálculo de NPV IFRS/GAAP
 
-## CEX Pipeline Tools
+## Ferramentas do Pipeline CEX
 
-| Tool | Purpose | When |
+| Ferramenta | Finalidade | Quando |
 |------|---------|------|
-| cex_compile.py | Compile .md artifact to .yaml | After Write (F8) |
-| cex_score.py | Peer-review quality scoring | After production (F7) |
-| cex_retriever.py | Discover similar artifacts by TF-IDF | During F3 INJECT |
-| cex_doctor.py | Health check builder ISOs | Before dispatch |
+| cex_compile.py | Compilar o artefato .md para .yaml | Após o Write (F8) |
+| cex_score.py | Pontuação de qualidade por revisão de pares | Após a produção (F7) |
+| cex_retriever.py | Descobrir artefatos similares via TF-IDF | Durante F3 INJECT |
+| cex_doctor.py | Checagem de saúde dos ISOs do builder | Antes do dispatch |
 
-## Data Sources
+## Fontes de Dados
 
-| Source | Content | When to use |
+| Fonte | Conteúdo | Quando usar |
 |--------|---------|-------------|
-| SCHEMA.md | Field definitions, ID pattern, constraints | Every production run |
-| OUTPUT_TEMPLATE.md | Exact frontmatter + body structure | Every production run |
-| QUALITY_GATES.md | H01-H08 HARD gates | Every validation run |
-| KNOWLEDGE.md | Domain concepts for roi calculator | When designing structure |
-| MEMORY.md | Common mistakes, anti-patterns | When stuck or producing a variant |
+| SCHEMA.md | Definições de campo, padrão de ID, restrições | Toda execução de produção |
+| OUTPUT_TEMPLATE.md | Estrutura exata de frontmatter + corpo | Toda execução de produção |
+| QUALITY_GATES.md | Gates HARD H01-H08 | Toda execução de validação |
+| KNOWLEDGE.md | Conceitos de domínio para o roi calculator | Ao desenhar a estrutura |
+| MEMORY.md | Erros comuns, antipadrões | Quando travado ou produzindo uma variante |
 
-## Tool Permissions
+## Permissões de Ferramentas
 
-| Category | Tools | Status |
+| Categoria | Ferramentas | Status |
 |----------|-------|--------|
-| ALLOWED | Read, Write, Edit, Bash, Glob, Grep | Explicitly permitted |
-| DENIED | (none) | Explicitly blocked |
-| EFFECTIVE | Bash, Edit, Glob, Grep, Read, Write | ALLOWED minus DENIED |
+| PERMITIDO | Read, Write, Edit, Bash, Glob, Grep | Explicitamente permitido |
+| NEGADO | (nenhuma) | Explicitamente bloqueado |
+| EFETIVO | Bash, Edit, Glob, Grep, Read, Write | PERMITIDO menos NEGADO |
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `tools` |
 | Pillar | P04 |
-| Domain | roi calculator construction |
+| Domínio | construção de roi calculator |
 | Pipeline | 8F (F1-F8) |
-| Scorer | cex_score.py |
-| Compiler | cex_compile.py |
-| Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Avaliador (Scorer) | cex_score.py |
+| Compilador | cex_compile.py |
+| Recuperador (Retriever) | cex_retriever.py |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

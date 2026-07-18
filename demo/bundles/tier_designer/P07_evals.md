@@ -3,133 +3,133 @@ kind: quality_gate
 id: p11_qg_subscription_tier
 pillar: P11
 llm_function: GOVERN
-purpose: Quality gate with HARD and SOFT scoring for subscription_tier
+purpose: "Gate de qualidade com pontuação HARD e SOFT para subscription_tier"
 quality: null
 title: "Quality Gate Subscription Tier"
 version: "1.0.0"
 author: n03_builder
 tags: [subscription_tier, builder, quality_gate]
-tldr: "Artifact-level quality gate: validates subscription_tier YAML structure, Stripe/Chargebee field compliance, and pricing integrity (not runtime billing metrics)."
-domain: "subscription_tier construction"
+tldr: "Gate de qualidade em nível de artefato: valida a estrutura YAML de subscription_tier, a conformidade de campos Stripe/Chargebee e a integridade de precificação (não métricas de cobrança em tempo de execução)."
+domain: "construção de subscription_tier"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F7_govern"
-keywords: [subscription_tier construction, quality gate subscription tier, artifact-level quality gate, validates subscription_tier yaml structure, chargebee field compliance, and pricing integrity, not runtime billing metrics]
+keywords: [construção de subscription_tier, quality gate subscription tier, gate de qualidade em nível de artefato, valida a estrutura yaml de subscription_tier, conformidade de campos chargebee, integridade de precificação, não métricas de cobrança em tempo de execução]
 density_score: 0.87
 related:
   - bld_schema_subscription_tier
   - subscription-tier-builder
   - bld_memory_subscription_tier
 ---
-## Quality Gate
+## Gate de Qualidade
 
-## Definition
-| metric | threshold | operator | scope |
+## Definição
+| métrica | limiar | operador | escopo |
 |---|---|---|---|
 | schema_fields_present | 100% | == | frontmatter |
-| price_integrity | valid | == | price object |
-| score_minimum | 8.0 | >= | artifact |
+| price_integrity | valid | == | objeto de preço |
+| score_minimum | 8.0 | >= | artefato |
 
 ## HARD Gates
-| ID | Check | Fail Condition |
+| ID | Verificação | Condição de Falha |
 |---|---|---|
-| H01 | YAML frontmatter valid | Missing or malformed YAML |
-| H02 | ID matches `^p11_st_[a-z][a-z0-9_]+\.yaml$` | ID does not conform |
-| H03 | `kind` field == `subscription_tier` | kind is wrong or missing |
-| H04 | `tier_name` present and NOT in {bronze, silver, gold, platinum, diamond} | Medal-metaphor naming |
-| H05 | `monetization_unit` in {flat, per_seat, per_usage, hybrid} | Invalid or missing |
-| H06 | `price.unit_amount` is integer >= 0 (smallest currency unit, cents) | Decimal or negative |
-| H07 | `price.currency` is ISO 4217 3-letter code | Invalid currency |
-| H08 | `price.interval` in {day, week, month, year} AND `interval_count` is positive int | Non-canonical interval |
-| H09 | `feature_matrix` non-empty AND every row has `{feature, included}` minimum | Empty or malformed |
-| H10 | `grandfathering_policy` present when `deprecation.status in {legacy, sunset}` | Missing grandfathering on deprecated tier |
-| H11 | `quality: null` in frontmatter | Self-scored (must be null) |
+| H01 | Frontmatter YAML válido | YAML ausente ou malformado |
+| H02 | ID corresponde a `^p11_st_[a-z][a-z0-9_]+\.yaml$` | ID não está conforme |
+| H03 | Campo `kind` == `subscription_tier` | kind errado ou ausente |
+| H04 | `tier_name` presente e NÃO em `{bronze, silver, gold, platinum, diamond}` | Nomenclatura de metáfora de medalha |
+| H05 | `monetization_unit` em `{flat, per_seat, per_usage, hybrid}` | Inválido ou ausente |
+| H06 | `price.unit_amount` é inteiro >= 0 (menor unidade de moeda, centavos) | Decimal ou negativo |
+| H07 | `price.currency` é código ISO 4217 de 3 letras | Moeda inválida |
+| H08 | `price.interval` em `{day, week, month, year}` E `interval_count` é inteiro positivo | Interval não canônico |
+| H09 | `feature_matrix` não vazio E toda linha tem, no mínimo, `{feature, included}` | Vazio ou malformado |
+| H10 | `grandfathering_policy` presente quando `deprecation.status` está em `{legacy, sunset}` | Grandfathering ausente em tier depreciado |
+| H11 | `quality: null` no frontmatter | Autoavaliado (deve ser null) |
 
 ## SOFT Scoring
-| Dim | Dimension | Weight | Scoring Guide |
+| Dim | Dimensão | Peso | Guia de Pontuação |
 |---|---|---|---|
-| D1 | Audience specificity | 0.12 | 1.0: JTBD + segment + size; 0.5: segment only; 0.0: "general" |
-| D2 | Pricing canonicality | 0.12 | 1.0: Stripe-shaped price object + tax_behavior; 0.5: Stripe-ish; 0.0: freeform |
-| D3 | Feature matrix clarity | 0.12 | 1.0: rows with quota+addon_price; 0.5: included-only; 0.0: prose list |
-| D4 | Monetization unit fit | 0.10 | 1.0: unit matches product (per_seat for collab, per_usage for API); 0.0: mismatch |
-| D5 | Tier differentiation | 0.10 | 1.0: each tier adds 2+ differentiated capabilities; 0.5: 1; 0.0: overlap |
-| D6 | Trial & conversion design | 0.08 | 1.0: trial_policy + auto_convert + proration; 0.5: partial; 0.0: absent |
-| D7 | Grandfathering discipline | 0.08 | 1.0: price_lock + feature_freeze + migration offer; 0.0: ignored |
-| D8 | Expansion MRR hooks | 0.10 | 1.0: upgrade_to + add_ons + seat expansion priced; 0.5: upgrade path only; 0.0: none |
-| D9 | Annual/monthly discount economics | 0.08 | 1.0: 15-25% annual discount justified; 0.5: discount no rationale; 0.0: no annual option |
-| D10 | Deprecation planning | 0.10 | 1.0: sunset_date + successor_tier documented; 0.0: tier designed without lifecycle |
+| D1 | Especificidade de público | 0.12 | 1.0: JTBD + segmento + porte; 0.5: apenas segmento; 0.0: "genérico" |
+| D2 | Canonicidade de precificação | 0.12 | 1.0: objeto de preço no formato Stripe + tax_behavior; 0.5: parecido com Stripe; 0.0: formato livre |
+| D3 | Clareza da matriz de funcionalidades | 0.12 | 1.0: linhas com quota+addon_price; 0.5: apenas included; 0.0: lista em prosa |
+| D4 | Adequação da unidade de monetização | 0.10 | 1.0: unidade condizente com o produto (per_seat para colaboração, per_usage para API); 0.0: incompatível |
+| D5 | Diferenciação entre tiers | 0.10 | 1.0: cada tier adiciona 2+ capacidades diferenciadas; 0.5: adiciona 1; 0.0: sobreposição |
+| D6 | Desenho de trial e conversão | 0.08 | 1.0: trial_policy + auto_convert + proration; 0.5: parcial; 0.0: ausente |
+| D7 | Disciplina de grandfathering | 0.08 | 1.0: price_lock + feature_freeze + oferta de migração; 0.0: ignorado |
+| D8 | Ganchos de expansão de MRR | 0.10 | 1.0: upgrade_to + add_ons + expansão de seats precificada; 0.5: apenas caminho de upgrade; 0.0: nenhum |
+| D9 | Economia do desconto anual/mensal | 0.08 | 1.0: desconto anual de 15-25% justificado; 0.5: desconto sem justificativa; 0.0: sem opção anual |
+| D10 | Planejamento de depreciação | 0.10 | 1.0: sunset_date + successor_tier documentados; 0.0: tier desenhado sem ciclo de vida |
 
-Weights sum = 1.00.
+Soma dos pesos = 1.00.
 
-## Actions
-| Score | Action |
+## Ações
+| Pontuação | Ação |
 |---|---|
-| >= 9.5 | GOLDEN: publish to billing system |
-| >= 8.0 | PUBLISH: push to Stripe/Chargebee |
-| >= 7.0 | REVIEW: return to pricing/product lead |
-| < 7.0 | REJECT: rebuild -- price canonicality or feature matrix incomplete |
+| >= 9.5 | GOLDEN: publicar no sistema de cobrança |
+| >= 8.0 | PUBLISH: enviar para Stripe/Chargebee |
+| >= 7.0 | REVIEW: devolver ao responsável por precificação/produto |
+| < 7.0 | REJECT: reconstruir -- canonicidade de preço ou feature matrix incompletos |
 
 ## Bypass
-| condition | approver | audit trail |
+| condição | aprovador | trilha de auditoria |
 |---|---|---|
-| Custom enterprise contract (non-standard terms) | CRO + CFO | Contract + decision record |
-| Regulated-market pricing exception | Head of Legal | Compliance memo attached |
+| Contrato enterprise customizado (termos não padrão) | CRO + CFO | Contrato + registro de decisão |
+| Exceção de precificação em mercado regulado | Diretoria Jurídica | Memorando de conformidade anexado |
 
-## Examples
+## Exemplos
 
-## Golden Example
+## Exemplo Golden
 ---
 kind: subscription_tier
 name: Notion Team Plan
 provider: Notion
 pricing: "$15/user/month"
 features:
-  - Unlimited pages
-  - Collaborative editing
-  - Priority support
-  - 5GB storage
+  - Páginas ilimitadas
+  - Edição colaborativa
+  - Suporte prioritário
+  - 5GB de armazenamento
 billing_cycle: monthly
 limitations:
-  - No advanced analytics
-  - Limited integrations
+  - Sem analytics avançado
+  - Integrações limitadas
 
-Notion's Team Plan offers scalable collaboration tools for small teams. Pricing is transparent with a monthly billing cycle. Features include real-time editing and storage, but lacks advanced analytics for data-driven teams.
+O Team Plan da Notion oferece ferramentas de colaboração escaláveis para times pequenos. A precificação é transparente, com ciclo de cobrança mensal. As funcionalidades incluem edição em tempo real e armazenamento, mas falta analytics avançado para times orientados a dados.
 
-## Anti-Example 1: Missing Pricing
+## Antiexemplo 1: Precificação Ausente
 ---
 kind: subscription_tier
 name: Slack Premium
 provider: Slack
 features:
-  - Unlimited messages
-  - Custom emojis
-  - Advanced security
+  - Mensagens ilimitadas
+  - Emojis customizados
+  - Segurança avançada
 billing_cycle: annual
 
-## Why it fails: No pricing details make the tier definition incomplete. Users cannot evaluate cost-benefit without knowing the price.
+## Por que falha: A ausência de detalhes de preço torna a definição do tier incompleta. Os usuários não conseguem avaliar o custo-benefício sem saber o preço.
 
-## Anti-Example 2: Content Monetization Mix
+## Antiexemplo 2: Mistura com Content Monetization
 ---
 kind: subscription_tier
 name: Substack Creator Tier
 provider: Substack
 pricing: "$10/reader/month"
 features:
-  - Custom domain
-  - Email analytics
-  - Affiliate program access
+  - Domínio customizado
+  - Analytics de e-mail
+  - Acesso a programa de afiliados
 billing_cycle: yearly
 
-## Why it fails: Focuses on content monetization (affiliate programs) rather than SaaS subscription features. Violates boundary conditions by conflating pricing models.
+## Por que falha: Foca em monetização de conteúdo (programas de afiliados) em vez de funcionalidades de assinatura SaaS. Viola as condições de fronteira ao confundir modelos de precificação.
 
-### H_RELATED: Cross-Reference Check (HARD)
-- [ ] `related:` frontmatter field populated (min 3 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream or sibling reference
-- Gate: REJECT if < 3 entries (auto-populated by cex_wikilink.py at F6.5)
+### H_RELATED: Checagem de Referência Cruzada (HARD)
+- [ ] Campo `related:` do frontmatter preenchido (mínimo 3 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Ao menos 1 referência upstream e 1 downstream ou sibling
+- Gate: REJECT se < 3 entradas (auto-preenchido por cex_wikilink.py em F6.5)
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Checagem de Referência Cruzada (SOFT)
+- [ ] Campo `related:` do frontmatter preenchido (3-15 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Ao menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, incentiva a referenciação cruzada)

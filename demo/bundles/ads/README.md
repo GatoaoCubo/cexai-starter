@@ -1,31 +1,56 @@
-# CEXAI capability bundle: Ads and Copy (`ads`)
+# Bundle de Capacidade CEXAI: Ads and Copy (`ads`)
 
-The **12 pillar contract** for the `prompt_template` kind, plus the setup config.
-Nucleus N02 . kind `prompt_template` . pillar P03.
+O **contrato de 12 pilares** para o kind `prompt_template`, mais a configuração de setup.
+Núcleo N02 . kind `prompt_template` . pilar P03.
 
-This is the CEXAI "12 ISO" form -- one specification file per pillar
-(P01-P12), exactly the bundle shown in the course video. Upload the 12
-pillar files as Knowledge to any assistant, paste the instruction, and it
-becomes a working Ads and Copy agent.
+Este é o formato "12 ISO" da CEXAI -- um arquivo de especificação por pilar
+(P01-P12), exatamente o bundle mostrado no vídeo do curso. Faça upload dos 12
+arquivos de pilar como Knowledge (conhecimento) em qualquer assistente, cole a
+instrução, e ele vira um agente funcional de Ads and Copy.
 
-## Contents (15 files)
-- `P01_knowledge.md` ... `P12_orchestration.md` -- the 12 pillar ISOs (the
-  builder contract for this kind: one specification per pillar, P01-P12).
-- `customgpt_instructions.json` -- the Custom GPT config: name, description,
-  the `instructions` string to paste, and conversation starters.
-- `system_instruction.md` -- the same instruction as a paste-ready system
-  prompt (for Claude Projects or any model).
-- `README.md` -- this file.
+## Conteúdo (19 arquivos)
 
-## Upload (3 ways)
-- **ChatGPT (Custom GPT):** Explore GPTs -> Create -> Configure. Upload the
-  12 `P0X_*.md` files as Knowledge. Paste the `instructions` field of
-  `customgpt_instructions.json` into the Instructions box.
-- **Claude (Project):** paste `system_instruction.md` into Custom
-  instructions; attach the 12 pillar files to the project knowledge.
-- **Any AI:** paste `system_instruction.md` as the system prompt.
+### Núcleo do agente (15 arquivos)
+- `P01_knowledge.md` ... `P12_orchestration.md` -- os 12 ISOs de pilar (o
+  contrato de builder para este kind: uma especificação por pilar, P01-P12).
+- `customgpt_instructions.json` -- a configuração do Custom GPT: nome, descrição,
+  a string `instructions` para colar, e os conversation starters (sugestões iniciais).
+- `system_instruction.md` -- a mesma instrução em formato de system prompt
+  pronto para colar (para Claude Projects ou qualquer modelo).
+- `README.md` -- este arquivo.
 
-## Provenance / honesty
-Never-fabricate: any `[fornecer: ...]` marker is a field with no real input
--- fill it in with your own brand before use. The 12 pillar ISOs are the
-generic, public builder contract for `prompt_template` -- no tenant data.
+### Guias de setup (4 arquivos)
+- `SETUP_chatgpt_projects.md` -- passo a passo para ChatGPT (Custom GPT ou Projects).
+- `SETUP_claude_projects.md` -- passo a passo para Claude Projects.
+- `SETUP_gemini_gems.md` -- passo a passo para Gemini Gems.
+- `SETUP_pt-br.md` -- guia combinado, runtime-agnóstico, em PT-BR.
+
+## Upload -- passo a passo (qualquer IA)
+
+1. Baixe (ou copie) todos os arquivos deste bundle para uma pasta local.
+2. Escolha seu runtime e abra o guia de setup correspondente:
+   - **ChatGPT** -> `SETUP_chatgpt_projects.md`
+   - **Claude** -> `SETUP_claude_projects.md`
+   - **Gemini** -> `SETUP_gemini_gems.md`
+   - **Não sabe qual escolher?** -> `SETUP_pt-br.md` (visão geral runtime-agnóstica)
+3. Em qualquer plataforma, o padrão geral é o mesmo:
+   - Crie um assistente/agente/projeto novo.
+   - Cole o conteúdo de `system_instruction.md` (ou o campo `instructions` de
+     `customgpt_instructions.json`) como a instrução/persona do assistente.
+   - Anexe os 12 arquivos `P0X_*.md` como Knowledge/arquivos de contexto do projeto.
+   - Preencha os marcadores `[fornecer: ...]` com os dados reais da sua marca.
+   - Teste com o conversation starter: "Escreva a copy de anúncio para <produto/oferta> visando <público>".
+
+## Formas resumidas de upload (3 runtimes)
+- **ChatGPT (Custom GPT):** Explore GPTs -> Create -> Configure. Faça upload dos
+  12 arquivos `P0X_*.md` como Knowledge. Cole o campo `instructions` de
+  `customgpt_instructions.json` na caixa de Instructions.
+- **Claude (Project):** cole `system_instruction.md` nas Custom
+  instructions; anexe os 12 arquivos de pilar ao knowledge do projeto.
+- **Qualquer IA:** cole `system_instruction.md` como system prompt.
+
+## Procedência / honestidade
+Nunca fabricar: todo marcador `[fornecer: ...]` é um campo sem dado real de
+entrada -- preencha com a sua própria marca antes de usar. Os 12 ISOs de
+pilar são o contrato de builder genérico e público do kind `prompt_template`
+-- sem dado de nenhum tenant.

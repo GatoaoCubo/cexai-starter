@@ -7,22 +7,22 @@ created: 2026-03-27
 updated: 2026-03-27
 author: instruction-builder
 title: Prompt Template Builder Instructions
-target: "prompt-template-builder agent"
+target: "agente prompt-template-builder"
 phases_count: 4
 prerequisites:
-  - "Input describes a prompt with at least one dynamic slot (a value that changes per invocation)"
-  - "Target rendering engine is known or inferable (mustache, bracket, jinja2, langchain, dspy)"
-  - "Domain of the template is identifiable (e.g. research, code, marketing, knowledge)"
+  - "A entrada descreve um prompt com ao menos um slot dinâmico (um valor que muda a cada invocação)"
+  - "O motor de renderização de destino é conhecido ou inferível (mustache, bracket, jinja2, langchain, dspy)"
+  - "O domínio do template é identificável (ex.: research, code, marketing, knowledge)"
 validation_method: checklist
 domain: prompt_template
 quality: null
 tags: [instruction, prompt-template, P03, parameterization, reusable]
 idempotent: true
 atomic: false
-rollback: "Delete the produced .md file. No side effects — templates are inert until rendered."
+rollback: "Apagar o arquivo .md produzido. Sem efeitos colaterais -- templates são inertes até serem renderizados."
 dependencies: []
 logging: true
-tldr: "Extract variable slots, compose a reusable mustache template with full frontmatter, validate all 8 HARD gates, then deliver."
+tldr: "Extrair os slots de variável, compor um template mustache reutilizável com frontmatter completo, validar os 8 HARD gates e então entregar."
 8f: "F6_produce"
 keywords: [prompt template builder instructions, extract variable slots, validate all, hard gates, then deliver, instruction, prompt-template, parameterization, reusable, "{{variable}}"]
 density_score: 0.93
@@ -31,24 +31,29 @@ related:
   - prompt-template-builder
   - bld_memory_prompt_template
 ---
-## Context
-A **prompt_template** is a reusable mold: a prompt body where dynamic values are represented as named placeholders (`{{variable}}`). The same template produces many distinct prompts by substituting different values at invocation time. This builder operates at the prompt layer — above identity definitions (system_prompt) and below live execution.
-**Inputs**
-| Field | Type | Description |
+## Contexto
+Um **prompt_template** é um molde reutilizável: um corpo de prompt onde valores dinâmicos são representados como placeholders nomeados (`{{variable}}`). O mesmo template produz muitos prompts distintos ao substituir diferentes valores no momento da invocação. Este builder opera na camada de prompt -- acima das definições de identidade (system_prompt) e abaixo da execução ao vivo (P04).
+
+**Entradas**
+| Campo | Tipo | Descrição |
 |---|---|---|
-| `raw_prompt` | string | The prompt or prompt sketch provided by the caller |
-| `target_engine` | string | `mustache` (default) or `bracket` (only when `{{}}` conflicts with target system) |
-| `domain` | string | Subject area the template serves (e.g. `code_review`, `summarization`, `research`) |
-| `composable` | boolean | True if this template is designed to be embedded inside a larger template |
-**Output**
-A single `.md` file conforming to SCHEMA.md and OUTPUT_TEMPLATE.md. Contains YAML frontmatter (16 fields) + 5 mandatory body sections: Purpose, Variables Table, Template Body, Quality Gates, Examples.
-**Boundary rules**
-- If the input has zero variable slots → it is a fixed `user_prompt`, not a template. Reject and explain.
-- If the input defines an agent's identity/persona → it is a `system_prompt`. Route there.
-- If the input generates or improves other prompts → it is a `meta_prompt`. Route there.
-## Phases
-### Phase 1: Analyze — Extract Variables
-Scan `raw_prompt` and identify every value that will differ between invocations.
+| `raw_prompt` | string | O prompt ou esboço de prompt fornecido por quem chama |
+| `target_engine` | string | `mustache` (default) ou `bracket` (somente quando `{{}}` conflita com o sistema de destino) |
+| `domain` | string | Área de assunto que o template atende (ex.: `code_review`, `summarization`, `research`) |
+| `composable` | boolean | True se este template foi projetado para ser incorporado dentro de um template maior |
+
+**Saída**
+Um único arquivo `.md` em conformidade com SCHEMA.md e OUTPUT_TEMPLATE.md. Contém frontmatter YAML (16 campos) + 5 seções obrigatórias no corpo: Purpose, Variables Table, Template Body, Quality Gates, Examples.
+
+**Regras de fronteira**
+- Se a entrada não tem nenhum slot de variável -> é um `user_prompt` fixo, não um template. Rejeitar e explicar.
+- Se a entrada define a identidade/persona de um agente -> é um `system_prompt`. Rotear para lá.
+- Se a entrada gera ou aprimora outros prompts -> é um `meta_prompt`. Rotear para lá.
+
+## Fases
+
+### Fase 1: Analisar -- Extrair Variáveis
+Varra o `raw_prompt` e identifique todo valor que vai diferir entre invocações.
 ```
 FOR each token or phrase in raw_prompt:
   IF the value is domain-specific, caller-supplied, or context-dependent:
@@ -70,9 +75,10 @@ composable:
   true  if this template will be embedded in a larger template
   false otherwise (default)
 ```
-Deliverable: variable registry with name, type, required, default, description for every slot.
-### Phase 2: Classify — Boundary Check
-Confirm the artifact is `prompt_template` and not a sibling kind.
+Entregável: registro de variáveis com name, type, required, default e description para cada slot.
+
+### Fase 2: Classificar -- Checagem de Fronteira
+Confirme que o artefato é `prompt_template` e não um kind irmão.
 ```
 IF prompt defines agent role, values, or personality:
   RETURN "This is a system_prompt — route to system-prompt builder."
@@ -83,9 +89,10 @@ IF prompt's purpose is to generate or refine other prompts:
 IF variables.count >= 1 AND body will be rendered repeatedly:
   PROCEED as prompt_template
 ```
-Deliverable: confirmed `kind: prompt_template` with one-line justification.
-### Phase 3: Compose — Build the Artifact
-Assemble frontmatter and all 5 required body sections using OUTPUT_TEMPLATE.md as the structural guide.
+Entregável: `kind: prompt_template` confirmado, com justificativa de uma linha.
+
+### Fase 3: Compor -- Construir o Artefato
+Monte o frontmatter e as 5 seções obrigatórias do corpo usando OUTPUT_TEMPLATE.md como guia estrutural.
 ```
 ID generation:
   id = "p03_pt_" + topic_slug
@@ -114,9 +121,10 @@ Body sections (in this order):
       - Variables block (yaml): concrete values for each variable
       - Rendered Output block: the actual prompt text after substitution
 ```
-Deliverable: complete `.md` file with frontmatter + 5 body sections.
-### Phase 4: Validate — Gate Check
-Run all quality gates before delivering.
+Entregável: arquivo `.md` completo, com frontmatter + 5 seções de corpo.
+
+### Fase 4: Validar -- Checagem de Gates
+Rode todos os quality gates antes de entregar.
 ```
 HARD gates (all must pass — fix before delivering):
   H01: id matches ^p03_pt_[a-z][a-z0-9_]+$
@@ -125,6 +133,7 @@ HARD gates (all must pass — fix before delivering):
   H04: no variable in variables list that is absent from template body
   H05: file size <= 8192 bytes
   H06: variable_syntax is "mustache" or "bracket" (not mixed)
+```
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

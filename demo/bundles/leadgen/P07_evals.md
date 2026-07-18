@@ -3,14 +3,14 @@ kind: quality_gate
 id: p11_qg_research_pipeline
 pillar: P11
 llm_function: GOVERN
-purpose: Golden and anti-examples of research pipeline configs
-pattern: few-shot learning — LLM reads these before producing
+purpose: Exemplos-modelo e anti-exemplos de configs de research pipeline
+pattern: aprendizado few-shot -- o LLM le estes exemplos antes de produzir
 quality: null
 title: "Gate: research_pipeline"
 version: 1.0.0
 author: n03_engineering
 tags: [quality-gate, research-pipeline, P11, STORM, CRAG, CRITIC, governance]
-tldr: "Gates for research pipeline artifacts — 7-stage completeness, source diversity, CRAG thresholds, CRITIC verification, budget controls."
+tldr: "Gates para artefatos de research pipeline -- completude das 7 etapas, diversidade de fontes, limiares de CRAG, verificação CRITIC, controles de orçamento."
 domain: research_pipeline
 created: 2026-03-31
 updated: 2026-03-31
@@ -20,87 +20,87 @@ density_score: 1.0
 related:
   - research-pipeline-builder
 ---
-## Quality Gate
+## Gate de Qualidade
 
 # Gate: research_pipeline
 
-## Definition
-| Field | Value |
+## Definição
+| Campo | Valor |
 |-------|-------|
-| Kind | research_pipeline (cli_tool/workflow instances) |
+| Kind | research_pipeline (instâncias de cli_tool/workflow) |
 | Pillar | P04 (tools) |
-| Function | CALL (research automation) |
-| Threshold | 8.0 minimum |
+| Function | CALL (automação de pesquisa) |
+| Limiar | 8.0 mínimo |
 
-## HARD Gates (fail = reject)
-| # | Gate | Check |
+## Gates HARD (falha = rejeitado)
+| # | Gate | Verificação |
 |---|------|-------|
-| H1 | 7-stage complete | All 7 stages documented (INTENT through VERIFY) |
-| H2 | Source diversity | At least 2 source categories populated (inbound + search minimum) |
-| H3 | STORM perspectives | At least 3 perspectives defined with role + focus |
-| H4 | CRAG threshold | crag_min_score defined (0.0-1.0, default 0.7) |
-| H5 | CRITIC defined | critic_max_iterations defined, critic model is thinking model |
-| H6 | Zero secrets | No API keys in plaintext — only ENV_VAR references |
-| H7 | Budget controls | At least 1 budget cap defined (monthly or per-research) |
-| H8 | Multi-model routing | At least extraction + reasoning + critic models specified |
+| H1 | 7 etapas completas | Todas as 7 etapas documentadas (de INTENT até VERIFY) |
+| H2 | Diversidade de fontes | Pelo menos 2 categorias de fonte preenchidas (mínimo: inbound + search) |
+| H3 | Perspectivas STORM | Pelo menos 3 perspectivas definidas com role + focus |
+| H4 | Limiar de CRAG | crag_min_score definido (0.0-1.0, padrão 0.7) |
+| H5 | CRITIC definido | critic_max_iterations definido; o modelo critic é um modelo de raciocínio |
+| H6 | Zero segredos | Nenhuma chave de API em texto plano -- apenas referências a ENV_VAR |
+| H7 | Controles de orçamento | Pelo menos 1 teto de orçamento definido (mensal ou por pesquisa) |
+| H8 | Roteamento multi-modelo | Pelo menos os modelos extraction + reasoning + critic especificados |
 
-## SOFT Gates (warn, don't reject)
-| # | Gate | Check | Weight |
+## Gates SOFT (aviso, não rejeita)
+| # | Gate | Verificação | Peso |
 |---|------|-------|--------|
-| S1 | 5+ perspectives | STORM has 5+ expert angles | 0.8 |
-| S2 | Fallback chains | Each source has primary → fallback | 0.9 |
-| S3 | Entity resolution | Dedup strategy documented | 0.7 |
-| S4 | Marketplace schemas | Extraction fields per inbound source | 0.6 |
-| S5 | Output formats | 2+ output formats (html + json minimum) | 0.5 |
-| S6 | Gartner scoring | 7-dimension scoring documented | 0.7 |
-| S7 | Rate limits | Per-source rate limits documented | 0.6 |
-| S8 | Country-agnostic | No hardcoded country/marketplace names | 0.8 |
+| S1 | 5+ perspectivas | STORM tem 5+ ângulos de especialista | 0.8 |
+| S2 | Cadeias de fallback | Cada fonte tem primária → fallback | 0.9 |
+| S3 | Entity resolution | Estratégia de dedup documentada | 0.7 |
+| S4 | Schemas de marketplace | Campos de extração por fonte inbound | 0.6 |
+| S5 | Formatos de output | 2+ formatos de output (mínimo: html + json) | 0.5 |
+| S6 | Pontuação Gartner | Pontuação em 7 dimensões documentada | 0.7 |
+| S7 | Rate limits | Rate limits documentados por fonte | 0.6 |
+| S8 | Agnóstico de país | Nenhum nome de país/marketplace hardcoded | 0.8 |
 
-## CRAG Quality Gate (per-source, at runtime)
-| Source Category | Min Score | Fallback |
+## Gate de Qualidade CRAG (por fonte, em runtime)
+| Categoria de Fonte | Nota Mínima | Fallback |
 |----------------|----------|----------|
-| Inbound (marketplace) | 0.7 | Try next marketplace → Serper → skip |
-| Search (web) | 0.6 | Try next search engine → skip |
-| Outbound (social) | 0.5 | Lower threshold — social data is noisy |
-| Trends | 0.4 | Trend data is directional, not precise |
-| RAG (internal) | 0.8 | Internal docs should be high quality |
+| Inbound (marketplace) | 0.7 | Tenta o próximo marketplace → Serper → pula |
+| Search (web) | 0.6 | Tenta o próximo motor de busca → pula |
+| Outbound (social) | 0.5 | Limiar mais baixo -- dados sociais são ruidosos |
+| Trends | 0.4 | Dados de tendência são direcionais, não precisos |
+| RAG (interno) | 0.8 | Docs internos devem ter alta qualidade |
 
-## Scoring Formula
+## Fórmula de Pontuação
 ```
 score = (HARD_pass / 8) * 6.0 + (SOFT_weighted / max_weight) * 4.0
 ```
 
-## Quality Tiers
-| Tier | Score | Meaning |
+## Níveis de Qualidade
+| Nível | Score | Significado |
 |------|-------|---------|
-| REJECT | < 8.0 | Missing stages, no quality gates, or security violation |
-| PUBLISH | 8.0-8.9 | Pipeline complete, CRAG+CRITIC defined, budget controlled |
-| EXEMPLARY | 9.0+ | Full source catalog, fallback chains, Gartner scoring |
+| REJECT | < 8.0 | Faltam etapas, sem gates de qualidade, ou violação de segurança |
+| PUBLISH | 8.0-8.9 | Pipeline completo, CRAG+CRITIC definidos, orçamento controlado |
+| EXEMPLARY | 9.0+ | Catálogo de fontes completo, cadeias de fallback, pontuação Gartner |
 
-## Actions
-| Score | Tier | Action |
+## Ações
+| Score | Nível | Ação |
 |-------|------|--------|
-| >= 9.5 | GOLDEN | Publish as exemplar |
-| >= 8.0 | PUBLISH | Ready for runtime |
-| >= 7.0 | REVIEW | Flag for review |
-| < 7.0  | REJECT | Rework required |
+| >= 9.5 | GOLDEN | Publicar como exemplar |
+| >= 8.0 | PUBLISH | Pronto para runtime |
+| >= 7.0 | REVIEW | Sinalizar para revisão |
+| < 7.0  | REJECT | Retrabalho necessário |
 
 ## Bypass
-| Field | Value |
+| Campo | Valor |
 |-------|-------|
-| conditions | Experimental research_pipeline artifact under active A/B testing |
-| approver | Nucleus lead (written approval required) |
-| audit_trail | Log in records/audits/ with bypass reason and timestamp |
-| expiry | 48h — must pass all gates before expiry |
-| never_bypass | H01 (YAML parse), H05 (quality null) |
+| conditions | Artefato research_pipeline experimental sob teste A/B ativo |
+| approver | Líder do nucleus (aprovação por escrito obrigatória) |
+| audit_trail | Registrar em records/audits/ com o motivo do bypass e timestamp |
+| expiry | 48h -- precisa passar em todos os gates antes de expirar |
+| never_bypass | H01 (parse do YAML), H05 (quality null) |
 
-## Examples
+## Exemplos
 
-# Examples: research-pipeline-builder
+# Exemplos: research-pipeline-builder
 
-## Golden Example — E-commerce BR (ACME)
-INPUT: "Create research pipeline config for Brazilian pet e-commerce marketplace intelligence"
-OUTPUT:
+## Exemplo Ideal -- E-commerce BR (ACME)
+ENTRADA: "Crie uma config de research pipeline para inteligência de marketplace de e-commerce de pets no Brasil"
+SAÍDA:
 ```yaml
 identity:
   empresa: "ACME"
@@ -136,19 +136,19 @@ quality:
   critic_max_iterations: 3
   final_min_score: 8.0
 ```
-WHY GOOD: All source categories covered, STORM perspectives costmized to niche, budget caps defined, multi-model routing by task, quality gates explicit.
+POR QUE É BOM: Todas as categorias de fonte cobertas, perspectivas STORM personalizadas para o nicho, tetos de orçamento definidos, roteamento multi-modelo por tarefa, gates de qualidade explícitos.
 
-## Anti-Example — Single Source Research
+## Contraexemplo -- Pesquisa de Fonte Única
 ```python
 # BAD: single source, no quality gate, no verification
 results = google_search(query)  # only 1 source
 report = gpt4(f"analyze: {results}")  # no CRAG scoring
 return report  # no CRITIC verification
 ```
-WHY BAD: Single source (no STORM), no quality gate (no CRAG), no verification (no CRITIC), no budget control, no config.
+POR QUE É RUIM: Fonte única (sem STORM), sem gate de qualidade (sem CRAG), sem verificação (sem CRITIC), sem controle de orçamento, sem config.
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Verificação de Referências Cruzadas (SOFT)
+- [ ] campo `related:` do frontmatter preenchido (3-15 entradas)
+- [ ] seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Pelo menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, incentiva a conexão)

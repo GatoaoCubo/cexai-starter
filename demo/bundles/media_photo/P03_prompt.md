@@ -3,47 +3,47 @@ kind: instruction
 id: bld_instruction_multimodal_prompt
 pillar: P03
 llm_function: REASON
-purpose: Step-by-step production process for multimodal_prompt
+purpose: Processo de produção passo a passo para multimodal_prompt
 quality: null
 title: "Instruction Multimodal Prompt"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [multimodal_prompt, builder, instruction]
-tldr: "Step-by-step production process for multimodal_prompt"
-domain: "multimodal_prompt construction"
+tldr: "Processo de produção passo a passo para multimodal_prompt"
+domain: "construção de multimodal_prompt"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F6_produce"
-keywords: [multimodal_prompt construction, instruction multimodal prompt, multimodal_prompt, builder, instruction, modalities, vision, audio, text, cross_ref]
+keywords: [construção de multimodal_prompt, instruction multimodal prompt, multimodal_prompt, builder, instruction, modalidades, visão, áudio, texto, cross_ref]
 density_score: 0.85
 related:
   - multimodal-prompt-builder
 ---
-## Phase 1: RESEARCH  
-1. Identify target modalities (vision/audio/text) and their interdependencies.  
-2. Analyze domain-specific datasets for cross-modal correlations.  
-3. Review existing multimodal benchmarks for pattern consistency.  
-4. Map technical constraints (e.g., resolution limits, sampling rates).  
-5. Document use cases requiring simultaneous modality injection.  
-6. Evaluate prior prompt templates for adaptability.  
+## Fase 1: PESQUISA
+1. Identificar as modalidades-alvo (visão/áudio/texto) e suas interdependências.
+2. Analisar datasets específicos do domínio em busca de correlações cross-modais.
+3. Revisar benchmarks multimodais existentes para checar consistência de padrão.
+4. Mapear restrições técnicas (ex.: limites de resolução, taxas de amostragem).
+5. Documentar casos de uso que exigem injeção simultânea de modalidades.
+6. Avaliar templates de prompt anteriores quanto à adaptabilidade.
 
-## Phase 2: COMPOSE  
-1. Initialize schema with `modalities` array (ref: bld_schema_multimodal_prompt.md).  
-2. Define `vision` parameters: resolution, object labels, spatial relations.  
-3. Define `audio` parameters: duration, frequency ranges, semantic tags.  
-4. Define `text` parameters: language, sentiment, entity references.  
-5. Align modalities via `cross_ref` keys (e.g., `vision.id == audio.object_id`).  
-6. Structure prompt using `INJECT` syntax (ref: bld_output_template_multimodal_prompt.md).  
-7. Embed example triples: `<modality>:<value>:<context>`.  
-8. Validate schema compliance with bld_schema_multimodal_prompt.md validation rules.  
-9. Finalize with modality-specific placeholders for runtime injection.  
+## Fase 2: COMPOSIÇÃO
+1. Inicializar o schema com o array `modalities` (ref.: bld_schema_multimodal_prompt.md).
+2. Definir parâmetros de `vision`: resolução, rótulos de objeto, relações espaciais.
+3. Definir parâmetros de `audio`: duração, faixas de frequência, tags semânticas.
+4. Definir parâmetros de `text`: idioma, sentimento, referências de entidade.
+5. Alinhar modalidades via chaves `cross_ref` (ex.: `vision.id == audio.object_id`).
+6. Estruturar o prompt usando a sintaxe `INJECT` (ref.: bld_output_template_multimodal_prompt.md).
+7. Incorporar triplas de exemplo: `<modality>:<value>:<context>`.
+8. Validar a conformidade do schema com as regras de validação de bld_schema_multimodal_prompt.md.
+9. Finalizar com placeholders específicos de modalidade para injeção em runtime.
 
-## Phase 3: VALIDATE  
-[ ] All modalities present in `modalities` array  
-[ ] Cross-modal references resolve consistently  
-[ ] Technical constraints match dataset capabilities  
-[ ] Example triples align with domain use cases  
-[ ] Output conforms to bld_output_template_multimodal_prompt.md structure
+## Fase 3: VALIDAÇÃO
+[ ] Todas as modalidades presentes no array `modalities`
+[ ] Referências cross-modais resolvem de forma consistente
+[ ] Restrições técnicas compatíveis com as capacidades do dataset
+[ ] Triplas de exemplo alinhadas aos casos de uso do domínio
+[ ] Saída em conformidade com a estrutura de bld_output_template_multimodal_prompt.md
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

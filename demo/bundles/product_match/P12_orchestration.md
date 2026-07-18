@@ -3,87 +3,90 @@ kind: collaboration
 id: bld_collaboration_product_match
 pillar: P12
 llm_function: COLLABORATE
-purpose: How product-match-builder works in crews with other builders
-pattern: each builder must know its ROLE in a team, what it RECEIVES and PRODUCES
+purpose: Como o product-match-builder trabalha em equipes (crews) com outros builders
+pattern: cada builder precisa saber seu PAPEL numa equipe, o que RECEBE e o que PRODUZ
 quality: null
-title: "Collaboration Product Match"
+title: "Colaboração -- Product Match"
 version: "1.0.0"
 author: n03_builder
 tags: [product_match, builder, examples]
-tldr: "Golden and anti-examples for product_match construction, demonstrating ideal structure and common pitfalls."
-domain: "product match construction"
+tldr: "Exemplos ideais (golden) e anti-exemplos para a construção de product_match, demonstrando a estrutura ideal e as armadilhas comuns."
+domain: "construção de product_match"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F8_collaborate"
-keywords: [product match construction, collaboration product match, product_match, builder, examples, "### crew: sourcing audit", "### crew: golden-record merge", my role, crew compositions, catalog audit]
+keywords: [construção de product_match, colaboração product match, product_match, builder, examples, "### crew: auditoria de sourcing", "### crew: merge de golden-record", meu papel, composições de equipe, auditoria de catálogo]
 density_score: 0.90
 related:
   - product-match-builder
   - opportunity-matrix-builder
 ---
-# Collaboration: product-match-builder
-## My Role in Crews
-I am a SPECIALIST. I answer ONE question: "what composite key joins a supplier item to a
-marketplace listing, and what cadastral divergence does the audit surface along the way?"
-I do not implement reverse-image search or embeddings. I do not rank buy-side opportunities.
-I do not assess channel publish-readiness. I specify a record-linkage + catalog-audit contract
-so a dashboard run (N03) and other generators (e.g. N06's sourcing audit) can compose against it.
-NOTE: at RUNTIME, the `product_match` capability generation is fully owned by the deterministic
-Python generator (`@register("product_match")` in `_tools/capability_generators/product_match.py`)
--- the F2 BECOME step is deliberately skipped at runtime ("the structured-generator seam OWNS the
-output", `_tools/cex_run_capability.py:129,141`). I author/evolve the KIND's .md spec artifact
-(the CONTRACT documentation) that the generator is held to; I do not replace or run instead of it.
-## Crew Compositions
-### Crew: "Sourcing Audit"
+# Colaboração: product-match-builder
+## Meu Papel em Equipes (Crews)
+Eu sou um ESPECIALISTA. Eu respondo a UMA pergunta: "qual chave composta une um item de
+fornecedor a um anúncio de marketplace, e qual divergência cadastral a auditoria revela ao longo
+do caminho?"
+Eu não implemento busca reversa de imagem nem embeddings. Eu não ranqueio oportunidades de
+buy-side. Eu não avalio prontidão de publicação por canal. Eu especifico um contrato de
+casamento de registros + auditoria de catálogo para que uma execução no dashboard (N03) e outros
+geradores (ex.: a auditoria de sourcing do N06) possam compor contra ele.
+NOTA: em TEMPO DE EXECUÇÃO, a geração da capability `product_match` é inteiramente de
+propriedade do gerador Python determinístico (`@register("product_match")` em
+`_tools/capability_generators/product_match.py`) -- o passo F2 BECOME é deliberadamente pulado na
+execução ao vivo da capability ("o seam do gerador estruturado É O DONO da saída",
+`_tools/cex_run_capability.py:129,141`). Eu autoro/evoluo o artefato .md de spec do KIND (a
+documentação do CONTRATO) ao qual o gerador está sujeito; eu não o substituo nem rodo no lugar dele.
+## Composições de Equipe
+### Crew: "Auditoria de Sourcing"
 ```
-  1. product-match-builder      -> "supplier x listing match + catalog audit spec"
-  2. opportunity-matrix-builder -> "buy-side cost x demand join that consumes the audit flags"
-  3. data-contract-builder      -> "producer-consumer schema for the `items` input list"
+  1. product-match-builder      -> "spec de casamento fornecedor x anúncio + auditoria de catálogo"
+  2. opportunity-matrix-builder -> "join de custo x demanda no buy-side que consome as sinalizações da auditoria"
+  3. data-contract-builder      -> "schema produtor-consumidor para a lista de entrada `items`"
 ```
-### Crew: "Golden-Record Merge" (TUDAO / marketplace_listing)
+### Crew: "Merge de Golden-Record" (TUDAO / marketplace_listing)
 ```
-  1. product-match-builder -> "composite join key spec (photo+dimension+supplier_code)"
-  2. output-validator-builder -> "validates the 4 frozen output sections post-LLM"
-  3. vision-tool-builder    -> "the reverse-image/embedding primitive product_match would wrap"
+  1. product-match-builder -> "spec de chave composta de join (foto+dimensão+código do fornecedor)"
+  2. output-validator-builder -> "valida as 4 seções de saída congeladas pós-LLM"
+  3. vision-tool-builder    -> "o primitivo de reverse-image/embedding que product_match encapsularia"
 ```
-### Crew: "Catalog Quality Gate"
+### Crew: "Gate de Qualidade de Catálogo"
 ```
-  1. product-match-builder -> "text-vs-photo divergence + low-res photo audit spec"
-  2. quality-gate-builder  -> "match_confiavel gate definition + blocker vocabulary"
-  3. scoring-rubric-builder -> "score formula (offline penalty, no-photo penalty)"
+  1. product-match-builder -> "spec de auditoria de divergência texto-vs-foto + foto de baixa resolução"
+  2. quality-gate-builder  -> "definição do gate match_confiavel + vocabulário de bloqueadores"
+  3. scoring-rubric-builder -> "fórmula de pontuação (penalidade offline, penalidade sem-foto)"
 ```
-## Handoff Protocol
-### I Receive
-- seeds: the supplier-item shape being matched (code, photo_uri, dimension, desc), the target
-  marketplace, any match_engine preference, confidence-floor requirements
-### I Produce
-- product_match artifact (.md + .yaml frontmatter)
-- committed to: `N03_engineering/P04_tools/examples/p04_pm_{name}.md`
-### I Signal
-- signal: complete (with quality score from QUALITY_GATES)
-- if quality < 8.0: signal retry with specific gate failures
-## Builders I Depend On
-`vision_tool` (P04, the raw visual primitive `match_engine=reverse_image` would eventually wrap --
-NOT yet implemented; `data_contract` (P06, the `items` producer-consumer schema); `output_validator`
-(P05, validates the 4 frozen sections) -- all three are DECLARED taxonomy dependencies
-(`.cex/kinds_meta.json` `depends_on`), not Python imports (verified: product_match.py imports
-none of them).
-## Builders That Depend On Me
-| Builder | Why |
-|---------|-----|
-| opportunity-matrix-builder | Section 6 "Match / auditoria" of `opportunity_matrix` surfaces MY engine's result (per `bld_model_opportunity_matrix.md` Crew Role: "does NOT perform visual product matching... that is product_match") |
-| marketplace-listing-builder | The TUDAO golden-record merge shares my `_normalize_join_key` + `_audit_text_vs_photo` helpers (per the ADR's stated intent; not yet wired as of this read) |
-| agent-builder | Agents that run a sourcing/catalog-audit workflow invoke `product_match` as a step |
-## Boundary Enforcement
-| Request | My response |
+## Protocolo de Handoff
+### Eu Recebo
+- seeds: a forma do item de fornecedor sendo casado (code, photo_uri, dimension, desc), o
+  marketplace alvo, qualquer preferência de match_engine, requisitos de piso de confiança
+### Eu Produzo
+- artefato product_match (.md + frontmatter .yaml)
+- commitado em: `N03_engineering/P04_tools/examples/p04_pm_{name}.md`
+### Eu Sinalizo
+- sinal: complete (com a pontuação de qualidade vinda de QUALITY_GATES)
+- se quality < 8.0: sinal de retry com as falhas de gate específicas
+## Builders dos Quais Dependo
+`vision_tool` (P04, o primitivo visual bruto que `match_engine=reverse_image` eventualmente
+encapsularia -- AINDA NÃO implementado; `data_contract` (P06, o schema produtor-consumidor de
+`items`); `output_validator` (P05, valida as 4 seções congeladas) -- os três são dependências
+DECLARADAS de taxonomia (`.cex/kinds_meta.json` `depends_on`), não imports Python (verificado:
+product_match.py não importa nenhum deles).
+## Builders Que Dependem de Mim
+| Builder | Por quê |
+|---------|-------|
+| opportunity-matrix-builder | A seção 6 "Match / auditoria" de `opportunity_matrix` mostra o resultado do MEU motor (conforme `bld_model_opportunity_matrix.md` Crew Role: "NÃO realiza casamento visual de produtos... isso é product_match") |
+| marketplace-listing-builder | O merge de golden-record do TUDAO compartilha meus auxiliares `_normalize_join_key` + `_audit_text_vs_photo` (conforme a intenção declarada do ADR; ainda não conectado até esta leitura) |
+| agent-builder | Agentes que rodam um workflow de sourcing/auditoria de catálogo invocam `product_match` como um passo |
+## Aplicação de Fronteiras
+| Pedido | Minha resposta |
 |---------|-------------|
-| "Analyze this one product photo for labels/objects" | Redirect to vision-tool-builder (no join target = vision_tool, not product_match) |
-| "Rank my suppliers by cost vs market demand" | Redirect to opportunity-matrix-builder (P11/N06 buy-side economics) |
-| "Is this listing ready to publish on Mercado Livre" | Redirect to marketplace-listing-builder (P05/N06 channel readiness) |
-| "Match these two products by EAN/barcode" | Explain the structural exclusion (every reseller recodes EAN/GTIN/barcode); offer the composite photo+dimension+supplier_code key instead |
+| "Analisar esta foto de um produto para rótulos/objetos" | Redirecionar para vision-tool-builder (sem alvo de join = vision_tool, não product_match) |
+| "Ranquear meus fornecedores por custo vs demanda de mercado" | Redirecionar para opportunity-matrix-builder (economia buy-side, P11/N06) |
+| "Este anúncio está pronto para publicar no Mercado Livre" | Redirecionar para marketplace-listing-builder (prontidão de canal, P05/N06) |
+| "Casar estes dois produtos por EAN/código de barras" | Explicar a exclusão estrutural (todo revendedor recodifica EAN/GTIN/código de barras); oferecer a chave composta foto+dimensão+código do fornecedor no lugar |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[product-match-builder]] | upstream | 0.41 |
 | [[bld_orchestration_vision_tool]] | sibling | 0.35 |

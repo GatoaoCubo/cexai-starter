@@ -8,11 +8,11 @@ version: 1.0.0
 created: "2026-07-02"
 updated: "2026-07-02"
 author: n03_builder
-title: "Template: marketplace_listing instance"
+title: "Template: instância de marketplace_listing"
 domain: marketplace_listing
 quality: null
 tags: [marketplace_listing, builder, template, output, P05]
-tldr: "The exact shape a marketplace_listing instance fills: frontmatter + the 6 FROZEN sections + the embedded ml_listing JSON, byte-identical in structure to the runtime capability generator's output."
+tldr: "O formato exato que uma instância de marketplace_listing preenche: frontmatter + as 6 seções CONGELADAS + o JSON do ml_listing embutido, idêntico em estrutura à saída do capability generator em runtime."
 density_score: 0.88
 related:
   - bld_schema_marketplace_listing
@@ -22,10 +22,10 @@ related:
   - output-validator-builder
 ---
 
-# Template: marketplace_listing instance
-Fill every placeholder; keep body <= 6144 bytes. Mirror the runtime sample
-`_output/g2_sample_listing.md` (a live capability-generator run, not a builder-authored
-instance -- same section shape, different provenance).
+# Template: instância de marketplace_listing
+Preencha cada placeholder; mantenha o corpo <= 6144 bytes. Espelhe a amostra de runtime
+`_output/g2_sample_listing.md` (uma execução real do capability generator, não uma
+instância autorada por builder -- mesmo formato de seção, proveniência diferente).
 
 ## Frontmatter
 ```yaml
@@ -50,26 +50,27 @@ tldr: "{{dense one-line summary}}"
 related: [bld_schema_marketplace_listing, output-validator-builder]
 ```
 
-## Body sections (in order, EXACT titles -- 1:1 with the generator's 6 output_sections)
-1. `# {{Name}}` + one paragraph (product + marketplace + intent).
+## Seções do corpo (em ordem, TÍTULOS EXATOS -- 1:1 com as 6 output_sections do generator)
+1. `# {{Name}}` + um parágrafo (produto + marketplace + intenção).
 2. `## Listagem ML` (fields) -- Titulo, Marketplace, Categoria ID, Condicao ML, Tipo de
    anuncio, Moeda.
 3. `## Preco e Estoque` (fields) -- Preco (R$), Estoque, SKU do vendedor, Marca.
-4. `## Fotos` (list) -- one item per photo URL, or the honest empty-state line.
-5. `## Atributos` (table) -- columns `Atributo (id) | Valor`; when injected, BRAND is
-   prepended (listed first) and SELLER_SKU is appended (listed last), matching generator order.
+4. `## Fotos` (list) -- um item por URL de foto, ou a linha honesta de estado vazio.
+5. `## Atributos` (table) -- colunas `Atributo (id) | Valor`; quando injetado, BRAND é
+   prependido (listado primeiro) e SELLER_SKU é anexado (listado por último), seguindo a
+   mesma ordem do generator.
 6. `## Descricao` (fields) -- Descricao completa.
 7. `## Payload ML (pronto para publicar)` (fields) -- Produto interno, Fotos mapeadas,
-   Atributos mapeados, JSON do anuncio (the serialized ml_listing, truncated at 900 chars
-   with "..." past that length).
+   Atributos mapeados, JSON do anuncio (o ml_listing serializado, truncado em 900
+   caracteres com "..." a partir desse tamanho).
 
-Note: the DUAL-OUTPUT projection (`cex_dual_output.to_dual_output`, runtime-only) appends
-an 8th `## Media` section from the live media_slots ledger -- a builder-authored instance
-does NOT fabricate that section; media slots are populated only by a real tenant
-upload/pipeline run.
+Nota: a projeção DUAL-OUTPUT (`cex_dual_output.to_dual_output`, somente em runtime) anexa
+uma 8ª seção `## Media` a partir do ledger de media_slots ao vivo -- uma instância autorada
+por builder NÃO fabrica essa seção; os slots de mídia só são populados por uma execução
+real de upload/pipeline de um tenant.
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[bld_schema_marketplace_listing]] | upstream | 0.55 |
 | [[bld_prompt_marketplace_listing]] | sibling | 0.48 |

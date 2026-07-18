@@ -6,52 +6,52 @@ version: 1.0.0
 created: 2026-03-31
 updated: 2026-03-31
 author: n03_engineering
-observation: "Research pipelines that use single-query retrieval miss 80%+ of relevant data. STORM multi-perspective planning with 5 expert angles × 5-7 sub-questions retrieves 25-35x more relevant results. Combined with CRAG quality gating, this eliminates low-quality noise."
-pattern: "Always decompose research into multiple expert perspectives (minimum 3, optimal 5). Each perspective generates atomic sub-questions. Score every retrieved result before synthesis. Verify synthesis with a thinking model."
-evidence: "ACME pipeline: 13,908 lines handling 30+ sources. Before STORM: average 12 relevant results per research. After STORM: average 85-120 relevant results. CRAG gating at 0.7 threshold reduced noise by 60% while keeping 95% of valuable data. CRITIC verification caught factual errors in 18% of initial syntheses."
+observation: "Research pipelines que usam retrieval de query única perdem 80%+ dos dados relevantes. O planejamento multi-perspectiva STORM com 5 ângulos de especialista × 5-7 subperguntas recupera 25-35x mais resultados relevantes. Combinado com o gating de qualidade do CRAG, isso elimina ruído de baixa qualidade."
+pattern: "Sempre decomponha a pesquisa em múltiplas perspectivas de especialista (mínimo 3, ideal 5). Cada perspectiva gera subperguntas atômicas. Pontue cada resultado recuperado antes da síntese. Verifique a síntese com um modelo de raciocínio."
+evidence: "Pipeline da ACME: 13,908 linhas atendendo 30+ fontes. Antes do STORM: média de 12 resultados relevantes por pesquisa. Depois do STORM: média de 85-120 resultados relevantes. O gating de CRAG no limiar 0.7 reduziu o ruído em 60% mantendo 95% dos dados valiosos. A verificação CRITIC capturou erros factuais em 18% das sínteses iniciais."
 confidence: 0.90
 outcome: SUCCESS
 domain: research_pipeline
 tags: [STORM, CRAG, CRITIC, multi-perspective, quality-gate, verification]
-tldr: "STORM 5-perspective planning = 25-35x more retrieval. CRAG at 0.7 threshold = 60% less noise. CRITIC catches 18% synthesis errors."
+tldr: "Planejamento STORM com 5 perspectivas = 25-35x mais retrieval. CRAG no limiar 0.7 = 60% menos ruído. CRITIC captura 18% dos erros de síntese."
 impact_score: 9.2
 decay_rate: 0.02
 keywords: [research, STORM, CRAG, CRITIC, multi-model, retrieval, quality-gate]
 memory_scope: project
 observation_types: [user, feedback, project, reference]
 quality: null
-title: "Memory Research Pipeline"
+title: "Memória: Pipeline de Pesquisa"
 8f: "F7_govern"
 density_score: 0.90
 llm_function: INJECT
 related:
   - research-pipeline-builder
 ---
-# Learning: research_pipeline
+# Aprendizado: research_pipeline
 
-## Key Insight
-The three-pattern combination (STORM + CRAG + CRITIC) is multiplicative, not additive.
-STORM multiplies retrieval coverage. CRAG filters noise. CRITIC catches hallucinations.
-Each pattern addresses a different failure mode — without all three, research quality
-degrades significantly.
+## Insight Principal
+A combinação dos três padrões (STORM + CRAG + CRITIC) é multiplicativa, não aditiva.
+O STORM multiplica a cobertura de retrieval. O CRAG filtra o ruído. O CRITIC captura alucinações.
+Cada padrão ataca um modo de falha diferente -- sem os três juntos, a qualidade da pesquisa
+degrada significativamente.
 
-## Evidence from ACME Production
-| Metric | Without Patterns | With STORM+CRAG+CRITIC |
+## Evidências da Produção ACME
+| Métrica | Sem os Padrões | Com STORM+CRAG+CRITIC |
 |--------|-----------------|----------------------|
-| Relevant results per query | ~12 | 85-120 |
-| Noise in synthesis | ~40% | ~5% |
-| Factual errors in report | ~18% | <2% (after CRITIC) |
-| Sources contributing data | 3-5 | 15-25 |
-| Research time | 5-8 min | 2-3 min (parallel) |
-| User satisfaction | 6.5/10 | 8.8/10 |
+| Resultados relevantes por query | ~12 | 85-120 |
+| Ruído na síntese | ~40% | ~5% |
+| Erros factuais no relatório | ~18% | <2% (após o CRITIC) |
+| Fontes contribuindo com dados | 3-5 | 15-25 |
+| Tempo de pesquisa | 5-8 min | 2-3 min (paralelo) |
+| Satisfação do usuário | 6.5/10 | 8.8/10 |
 
-## Lessons Learned
-1. **STORM perspectives must match niche** — generic perspectives miss domain-specific angles
-2. **CRAG threshold 0.7 is sweet spot** — lower = too noisy, higher = too restrictive
-3. **CRITIC max 3 iterations** — after 3, improvements are marginal, cost doubles
-4. **Budget controls are essential** — one runaway Firecrawl research consumed 500 credits
-5. **Fallback chains save researches** — when MercadoLivre API was down, Serper site search caught 70% of data
-6. **Multi-model routing saves 80% cost** — Flash for extraction is 40x cheaper than Sonnet
+## Lições Aprendidas
+1. **As perspectivas STORM precisam combinar com o nicho** -- perspectivas genéricas perdem ângulos específicos do domínio
+2. **O limiar 0.7 do CRAG é o ponto ideal** -- mais baixo = ruidoso demais, mais alto = restritivo demais
+3. **CRITIC com máximo de 3 iterações** -- depois de 3, os ganhos são marginais e o custo dobra
+4. **Controles de orçamento são essenciais** -- uma pesquisa Firecrawl descontrolada consumiu 500 créditos
+5. **Cadeias de fallback salvam pesquisas** -- quando a API do MercadoLivre caiu, a busca via site do Serper capturou 70% dos dados
+6. **O roteamento multi-modelo economiza 80% do custo** -- o Flash para extração é 40x mais barato que o Sonnet
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

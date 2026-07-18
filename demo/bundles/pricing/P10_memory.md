@@ -6,17 +6,17 @@ version: 1.0.0
 created: 2026-03-31
 updated: 2026-03-31
 author: n03_engineering
-observation: "Content monetization configs that hardcode pricing in application code become unmaintainable when A/B testing tiers, changing providers, or expanding to new markets. Extracting all monetization parameters into config YAML reduced pricing change cycle from 2-3 dev hours to 5 minutes."
-pattern: "Externalize ALL monetization parameters: tiers, prices, credit costs, provider config, email triggers, ad budgets. Config-driven monetization enables non-dev pricing changes, A/B testing, and multi-market expansion without code changes."
-evidence: "3 content businesses analyzed: (1) ACME AI tools — credit system with 4 pipeline ops, hybrid pricing, 35% margin. (2) PetVida courses — Hotmart checkout, drip content, 70% margin. (3) DigitalPro infoproduct — Kiwify + Meta Ads funnel, 60% margin. All shared the same problem: pricing locked in code, provider switching required rewrite, no margin tracking."
+observation: "Configs de monetizacao de conteudo que fixam a precificacao no codigo da aplicacao ficam inviaveis de manter quando se faz teste A/B de tiers, troca de provedor ou expansao para novos mercados. Externalizar todos os parametros de monetizacao em config YAML reduziu o ciclo de mudanca de preco de 2-3 horas de desenvolvimento para 5 minutos."
+pattern: "Externalize TODOS os parametros de monetizacao: tiers, precos, custos de credito, config de provedor, gatilhos de e-mail, orcamentos de anuncio. Monetizacao orientada a config permite mudancas de preco sem dev, teste A/B e expansao multi-mercado sem alterar codigo."
+evidence: "3 negocios de conteudo analisados: (1) ACME ferramentas de IA -- sistema de creditos com 4 operacoes de pipeline, precificacao hibrida, margem de 35%. (2) PetVida cursos -- checkout Hotmart, conteudo em liberacao gradual, margem de 70%. (3) DigitalPro infoproduto -- funil Kiwify + Meta Ads, margem de 60%. Todos compartilhavam o mesmo problema: precificacao presa no codigo, troca de provedor exigia reescrita, nenhum rastreio de margem."
 confidence: 0.85
 outcome: SUCCESS
 domain: content_monetization
 tags: [monetization, pricing, config-driven, credits, checkout, margin-tracking]
-tldr: "Config-driven monetization: 2-3 dev hours → 5 min for pricing changes. Margin tracking prevents silent profit erosion."
+tldr: "Monetizacao orientada a config: 2-3 horas de dev → 5 min para mudancas de preco. O rastreio de margem evita a erosao silenciosa do lucro."
 impact_score: 8.5
 decay_rate: 0.03
-keywords: [monetization, pricing, credits, checkout, config, margin, webhook]
+keywords: [monetizacao, precificacao, creditos, checkout, config, margem, webhook]
 memory_scope: project
 observation_types: [user, feedback, project, reference]
 quality: null
@@ -29,72 +29,78 @@ related:
   - bld_tools_memory_type
   - bld_config_tagline
 ---
-## Summary
-Content monetization has two orthogonal concerns: business logic (what to charge, how
-credits work, what triggers an email) and technical integration (which payment API, which
-email provider, which ad platform). These evolve at wildly different rates — business
-changes weekly (A/B test a price), integration changes quarterly (switch from Stripe to
-Hotmart for BR market).
+## Resumo
+A monetizacao de conteudo tem duas preocupacoes ortogonais: logica de negocio (o
+que cobrar, como funcionam os creditos, o que dispara um e-mail) e integracao
+tecnica (qual API de pagamento, qual provedor de e-mail, qual plataforma de
+anuncio). Elas evoluem em velocidades muito diferentes -- o negocio muda toda
+semana (testar A/B um preco), a integracao muda a cada trimestre (trocar de
+Stripe para Hotmart no mercado BR).
 
-The 9-stage pipeline enforces this separation. PARSE through VALIDATE are business logic
-stages that operate on config values. CHECKOUT, ADS, and EMAILS are integration stages
-that operate on provider-specific APIs via ENV_VAR references.
+O pipeline de 9 estagios reforca essa separacao. De PARSE a VALIDATE sao
+estagios de logica de negocio que operam sobre valores de config. CHECKOUT,
+ADS e EMAILS sao estagios de integracao que operam sobre APIs especificas de
+cada provedor via referencias a ENV_VAR.
 
-## Key Insights
+## Principais Aprendizados
 
-### Margin Tracking is Non-Negotiable
-Without explicit floor_margin_pct per tier, pipeline costs (LLM tokens, API calls)
-silently erode profit. A "Pro" tier at R$99.90/month with 1000 credits costs ~R$50 in
-pipeline operations — margin is 50%. But if credit costs increase (model price hike,
-new expensive operation), margin drops without anyone noticing. floor_margin_pct >= 0.30
-with automated checking catches this before it becomes a P&L problem.
+### Rastreio de Margem Nao e Negociavel
+Sem um floor_margin_pct explicito por tier, os custos de pipeline (tokens de
+LLM, chamadas de API) corroem o lucro silenciosamente. Um tier "Pro" a
+R$99,90/mes com 1000 creditos custa ~R$50 em operacoes de pipeline -- a margem
+e 50%. Mas se os custos de credito aumentarem (reajuste de preco do modelo,
+nova operacao mais cara), a margem cai sem que ninguem perceba. floor_margin_pct
+>= 0.30 com checagem automatizada pega isso antes que vire um problema no P&L.
 
-### Credit Systems Need Overdraft Policy
-Undefined overdraft behavior causes three problems: (1) negative balances create
-billing disputes, (2) users who hit zero mid-operation get broken results, (3) support
-teams have no policy to reference. Explicit overdraft_policy (block, notify_then_block,
-allow_negative) eliminates ambiguity.
+### Sistemas de Creditos Precisam de Politica de Saldo Negativo
+Comportamento de saldo negativo (overdraft) indefinido causa tres problemas:
+(1) saldos negativos geram disputas de cobranca, (2) usuarios que zeram o
+saldo no meio de uma operacao recebem resultados quebrados, (3) o time de
+suporte nao tem uma politica de referencia. Um overdraft_policy explicito
+(block, notify_then_block, allow_negative) elimina a ambiguidade.
 
-### Mock Mode Prevents Costly Mistakes
-Every checkout integration must default to mock_mode: true. Live payment APIs in
-development environments cause: real charges (chargebacks), webhook floods (production
-data corruption), and API key exposure in logs. Mock-first development catches
-integration bugs before real money moves.
+### Modo Mock Evita Erros Caros
+Toda integracao de checkout precisa ter mock_mode: true por padrao. APIs de
+pagamento reais em ambientes de desenvolvimento causam: cobrancas reais
+(chargebacks), enxurradas de webhook (corrupcao de dados de producao) e
+exposicao de chaves de API em logs. Desenvolvimento mock-first pega bugs de
+integracao antes que dinheiro real se mova.
 
-## Anti-Pattern: Monolithic Checkout
-Embedding Stripe-specific logic throughout the application makes switching to Hotmart
-(for BR infoproducts) a rewrite. Config-driven checkout (provider + webhook_url +
-webhook_secret_env) allows provider swap with zero code changes — only config update.
+## Antipadrao: Checkout Monolitico
+Embutir a logica especifica do Stripe espalhada pela aplicacao torna a troca
+para Hotmart (para infoprodutos BR) uma reescrita completa. Checkout orientado
+a config (provider + webhook_url + webhook_secret_env) permite trocar de
+provedor com zero mudanca de codigo -- so atualizacao de config.
 
-## Builder Context
+## Contexto do Builder
 
-This ISO operates within the `content-monetization-builder` stack, one of 125
-specialized builders in the CEX architecture. Each builder has 12 ISOs
-covering system prompt, instruction, output template, quality gate,
-examples, schema, config, tools, memory, manifest, constraints,
-validation schema, and runtime rules.
+Esta ISO opera dentro do stack `content-monetization-builder`, um dos 125
+builders especializados na arquitetura CEX. Cada builder tem 12 ISOs cobrindo
+system prompt, instruction, output template, quality gate, examples, schema,
+config, tools, memory, manifest, constraints, validation schema e runtime
+rules.
 
-The builder loads ISOs via `cex_skill_loader.py` at pipeline stage F3
-(Compose), merges them with relevant memory from `cex_memory_select.py`,
-and produces artifacts that must pass the quality gate at F7 (Filter).
+O builder carrega as ISOs via `cex_skill_loader.py` no estagio F3 (Compose) do
+pipeline, mescla com a memoria relevante via `cex_memory_select.py`, e produz
+artefatos que precisam passar pelo quality gate no F7 (Filter).
 
-| Component | Purpose |
-|-----------|---------|
-| System prompt | Identity and behavioral rules |
-| Instruction | Step-by-step procedure |
-| Output template | Structural scaffold |
-| Quality gate | Scoring rubric |
-| Examples | Few-shot references |
+| Componente | Finalidade |
+|-----------|-----------|
+| System prompt | Identidade e regras de comportamento |
+| Instruction | Procedimento passo a passo |
+| Output template | Estrutura/esqueleto |
+| Quality gate | Rubrica de pontuacao |
+| Examples | Referencias few-shot |
 
 ## Checklist
 
-1. Created via 8F pipeline
-2. Scored by cex_score across three layers
-3. Compiled by cex_compile for validation
-4. Retrieved by cex_retriever for injection
-5. Evolved by cex_evolve when quality drops
+1. Criado via pipeline 8F
+2. Pontuado pelo cex_score nas tres camadas
+3. Compilado pelo cex_compile para validacao
+4. Recuperado pelo cex_retriever para injecao
+5. Evoluido pelo cex_evolve quando a qualidade cai
 
-## Reference
+## Referencia
 
 ```yaml
 id: p10_lr_content-monetization-builder
@@ -107,10 +113,10 @@ target: 9.0
 python _tools/cex_score.py --apply --verbose p10_lr_content-monetization-builder.md
 ```
 
-## Properties
+## Propriedades
 
-| Property | Value |
-|----------|-------|
+| Propriedade | Valor |
+|-----------|-------|
 | Kind | `learning_record` |
 | Pillar | P10 |
 | Domain | content_monetization |
@@ -118,11 +124,11 @@ python _tools/cex_score.py --apply --verbose p10_lr_content-monetization-builder
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Target | 9.0+ |
-| Density | 0.85+ |
+| Meta | 9.0+ |
+| Densidade | 0.85+ |
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuacao |
 |----------|-------------|-------|
 | [[content-monetization-builder]] | downstream | 0.34 |
 | bld_tools_memory_type | upstream | 0.30 |

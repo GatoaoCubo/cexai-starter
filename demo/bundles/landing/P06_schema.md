@@ -5,15 +5,15 @@ pillar: P06
 builder: landing-page-builder
 version: 1.0.0
 quality: null
-title: "Schema Landing Page"
+title: "Esquema Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
-keywords: [landing page construction, schema landing page, landing_page, builder, examples, landing page output, open graph, pipeline integration, related artifacts, landing page]
+keywords: [construção de landing page, esquema landing page, landing_page, builder, examples, saída da landing page, open graph, integração do pipeline, artefatos relacionados, landing page]
 density_score: 0.90
 llm_function: CONSTRAIN
 related:
@@ -22,7 +22,7 @@ related:
   - bld_config_landing_page
   - bld_schema_experiment_tracker
 ---
-# Schema: Landing Page Output
+# Esquema: Saída da Landing Page
 
 ```yaml
 # Required frontmatter
@@ -65,30 +65,30 @@ sections:
     responsive: boolean
 ```
 
-## Pipeline Integration
+## Integração do Pipeline
 
-1. Created via 8F pipeline from F1-Focus through F8-Furnish
-2. Scored by cex_score across three structural layers
-3. Compiled by cex_compile for structural validation
-4. Retrieved by cex_retriever for context injection
-5. Evolved by cex_evolve when quality regresses below target
+1. Criado via pipeline 8F, de F1-Focus a F8-Furnish
+2. Pontuado pelo cex_score em três camadas estruturais
+3. Compilado pelo cex_compile para validação estrutural
+4. Recuperado pelo cex_retriever para injeção de contexto
+5. Evoluído pelo cex_evolve quando a qualidade regride abaixo da meta
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `schema` |
 | Pillar | P06 |
-| Domain | landing page construction |
+| Domain | construção de landing page |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | n00_landing_page_manifest | upstream | 0.44 |
 | [[bld_schema_tagline]] | sibling | 0.43 |

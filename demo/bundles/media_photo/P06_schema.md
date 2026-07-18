@@ -3,18 +3,18 @@ kind: schema
 id: bld_schema_multimodal_prompt
 pillar: P06
 llm_function: CONSTRAIN
-purpose: Formal schema -- SINGLE SOURCE OF TRUTH for multimodal_prompt
+purpose: Schema formal -- FONTE ÚNICA DA VERDADE para multimodal_prompt
 quality: null
 title: "Schema Multimodal Prompt"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [multimodal_prompt, builder, schema]
-tldr: "Formal schema -- SINGLE SOURCE OF TRUTH for multimodal_prompt"
-domain: "multimodal_prompt construction"
+tldr: "Schema formal -- FONTE ÚNICA DA VERDADE para multimodal_prompt"
+domain: "construção de multimodal_prompt"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F1_constrain"
-keywords: [multimodal_prompt construction, schema multimodal prompt, multimodal_prompt, builder, schema, frontmatter fields, body structure, prompt structure, example usage, related artifacts]
+keywords: [construção de multimodal_prompt, schema multimodal prompt, multimodal_prompt, builder, schema, campos de frontmatter, estrutura do corpo, estrutura do prompt, exemplo de uso, artefatos relacionados]
 density_score: 0.85
 related:
   - bld_schema_benchmark_suite
@@ -24,50 +24,50 @@ related:
   - bld_schema_eval_metric
 ---
 
-## Frontmatter Fields
-### Required
-| Field     | Type             | Required | Default | Notes                              |
+## Campos de Frontmatter
+### Obrigatórios
+| Campo     | Tipo             | Obrigatório | Padrão | Notas                              |
 |-----------|------------------|----------|---------|------------------------------------|
-| id        | string           | yes      | null    | Unique identifier                  |
-| kind      | string           | yes      | null    | Must be "multimodal_prompt"        |
-| pillar    | string           | yes      | null    | P03                                |
-| title     | string           | yes      | null    | Descriptive title                  |
-| version   | string           | yes      | "1.0"   | Version control                    |
-| created   | datetime         | yes      | null    | ISO 8601                           |
-| updated   | datetime         | yes      | null    | ISO 8601                           |
-| author    | string           | yes      | null    | Author name                        |
-| domain    | string           | yes      | null    | Application domain                 |
-| quality   | null             | yes      | null    | Never self-score; peer review assigns |
-| tags      | array<string>    | yes      | []      | Keywords                           |
-| tldr      | string           | yes      | null    | One-sentence summary               |
-| modalities | array<string>   | yes      | null    | Supported modalities (e.g., text, image) |
-| prompt_type | string        | yes      | null    | Type (e.g., instruction, query)    |
+| id        | string           | sim      | null    | Identificador único                  |
+| kind      | string           | sim      | null    | Deve ser "multimodal_prompt"        |
+| pillar    | string           | sim      | null    | P03                                |
+| title     | string           | sim      | null    | Título descritivo                  |
+| version   | string           | sim      | "1.0"   | Controle de versão                    |
+| created   | datetime         | sim      | null    | ISO 8601                           |
+| updated   | datetime         | sim      | null    | ISO 8601                           |
+| author    | string           | sim      | null    | Nome do autor                         |
+| domain    | string           | sim      | null    | Domínio de aplicação                 |
+| quality   | null             | sim      | null    | Nunca autoavaliado; peer review atribui |
+| tags      | array<string>    | sim      | []      | Palavras-chave                           |
+| tldr      | string           | sim      | null    | Resumo em uma frase               |
+| modalities | array<string>   | sim      | null    | Modalidades suportadas (ex.: text, image) |
+| prompt_type | string        | sim      | null    | Tipo (ex.: instruction, query)    |
 
-### Recommended
-| Field           | Type             | Notes                          |
+### Recomendados
+| Campo           | Tipo             | Notas                          |
 |------------------|------------------|--------------------------------|
-| license          | string           | Open-source license            |
-| source           | string           | Original source                |
-| related_works    | array<string>    | Cited works                    |
-| validation_metrics | array<string> | Evaluation criteria            |
+| license          | string           | Licença open-source            |
+| source           | string           | Fonte original                 |
+| related_works    | array<string>    | Trabalhos citados                    |
+| validation_metrics | array<string> | Critérios de avaliação            |
 
-## ID Pattern
+## Padrão de ID
 ^p03_mmp_[a-z][a-z0-9_]+.md$
 
-## Body Structure
-1. **Introduction**: Purpose and scope of the prompt.
-2. **Modalities**: Detailed description of supported input/output types.
-3. **Prompt Structure**: Syntax, formatting rules, and examples.
-4. **Example Usage**: Real-world application scenarios.
-5. **Validation**: Metrics and peer review process.
+## Estrutura do Corpo
+1. **Introdução**: propósito e escopo do prompt.
+2. **Modalidades**: descrição detalhada dos tipos de entrada/saída suportados.
+3. **Estrutura do Prompt**: sintaxe, regras de formatação e exemplos.
+4. **Exemplo de Uso**: cenários de aplicação do mundo real.
+5. **Validação**: métricas e processo de peer review.
 
-## Constraints
-- ID must match ^p03_mmp_[a-z][a-z0-9_]+.md$
-- Total size <= 4096 bytes
-- All required fields must be present
-- Quality field is peer-reviewed only
-- ASCII-only characters required
-- <= 80 lines total
+## Restrições
+- O ID deve corresponder a ^p03_mmp_[a-z][a-z0-9_]+.md$
+- Tamanho total <= 4096 bytes
+- Todos os campos obrigatórios devem estar presentes
+- O campo quality é somente peer-reviewed
+- Caracteres somente ASCII são obrigatórios
+- <= 80 linhas no total
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

@@ -5,15 +5,15 @@ pillar: P01
 builder: landing-page-builder
 version: 1.0.0
 quality: null
-title: "Knowledge Card Landing Page"
+title: "Cartão de Conhecimento Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F3_inject"
-keywords: [landing page construction, knowledge card landing page, landing_page, builder, examples, knowledge card, landing page, section psychology, conversion role, static host]
+keywords: [construção de landing page, cartão de conhecimento landing page, landing_page, builder, examples, knowledge card, landing page, psicologia das seções, papel na conversão, hospedagem estática]
 density_score: 0.90
 llm_function: INJECT
 related:
@@ -22,54 +22,54 @@ related:
   - bld_architecture_landing_page
   - bld_tools_landing_page
 ---
-# Knowledge Card: Landing Page
+# Cartão de Conhecimento: Landing Page
 
-## What is a Landing Page?
-A landing page is a standalone web page designed for a single conversion goal.
-Unlike a full website with navigation, a landing page focuses the visitor on ONE action:
-sign up, buy, download, or schedule.
+## O que é uma Landing Page?
+Uma landing page é uma página web autônoma, projetada para uma única meta de conversão.
+Diferente de um site completo com navegação, a landing page foca o visitante em UMA ação:
+cadastrar-se, comprar, baixar ou agendar.
 
-## Section Psychology
-| Section | Purpose | Conversion Role |
+## Psicologia das Seções
+| Seção | Propósito | Papel na Conversão |
 |---------|---------|-----------------|
-| Hero | First impression, value prop | Hook (3-second decision) |
-| Problem | Empathy, "they understand me" | Pain amplification |
-| Solution | Relief, "this fixes it" | Promise |
-| Features | Rational justification | Logic backup |
-| Social Proof | Trust, "others trust this" | Risk reduction |
-| How It Works | Simplicity, "it's easy" | Objection handling |
-| Pricing | Decision, "what does it cost" | Value framing |
-| Testimonials | Stories, "people like me" | Social validation |
-| FAQ | Objections, "but what about..." | Final objection clearing |
-| CTA | Urgency, "do it now" | Conversion trigger |
+| Hero | Primeira impressão, proposta de valor | Gancho (decisão em 3 segundos) |
+| Problem | Empatia, "eles me entendem" | Amplificação da dor |
+| Solution | Alívio, "isso resolve" | Promessa |
+| Features | Justificativa racional | Reforço lógico |
+| Social Proof | Confiança, "outras pessoas confiam nisso" | Redução de risco |
+| How It Works | Simplicidade, "é fácil" | Tratamento de objeções |
+| Pricing | Decisão, "quanto custa" | Enquadramento de valor |
+| Testimonials | Histórias, "gente como eu" | Validação social |
+| FAQ | Objeções, "mas e quanto a..." | Eliminação final de objeções |
+| CTA | Urgência, "faça agora" | Gatilho de conversão |
 
-## Conversion Best Practices
-- Above fold: headline + sub + CTA visible without scroll
-- One CTA per section (repeated but consistent)
-- F-pattern reading for desktop, single-column for mobile
-- Visual hierarchy: largest text = most important message
-- White space > clutter (breathing room increases comprehension)
-- Loading speed: every 100ms delay = -7% conversion (Google data)
+## Boas Práticas de Conversão
+- Acima da dobra: headline + subheadline + CTA visíveis sem precisar rolar a página
+- Um CTA por seção (repetido, porém consistente)
+- Leitura em padrão F para desktop, coluna única para mobile
+- Hierarquia visual: texto maior = mensagem mais importante
+- Espaço em branco > poluição visual (respiro visual aumenta a compreensão)
+- Velocidade de carregamento: cada 100ms de atraso = -7% de conversão (dado do Google)
 
-## Stack Comparison
-| Stack | Build Step | Best For | Deploy |
+## Comparativo de Stacks
+| Stack | Etapa de Build | Melhor Para | Deploy |
 |-------|-----------|----------|--------|
-| HTML + Tailwind CDN | None | Quick pages, non-devs | Any static host |
-| React + Tailwind | npm build | Existing React apps | Vercel, Netlify |
-| Next.js | next build | SEO-critical, SSR needed | Vercel |
-| Astro | astro build | Multi-page, content-heavy | Any static host |
+| HTML + Tailwind CDN | Nenhuma | Páginas rápidas, não-devs | Qualquer hospedagem estática |
+| React + Tailwind | npm build | Apps React existentes | Vercel, Netlify |
+| Next.js | next build | Crítico para SEO, precisa de SSR | Vercel |
+| Astro | astro build | Multi-página, rico em conteúdo | Qualquer hospedagem estática |
 
-## Competitors We Replace
-| Tool | What they do | What we do differently |
+## Concorrentes que Substituímos
+| Ferramenta | O que fazem | O que fazemos diferente |
 |------|-------------|----------------------|
-| Lovable | AI builds web apps from prompts | We give you the CODE, not a platform lock |
-| Bolt.new | AI generates full-stack apps | We focus on conversion-optimized pages |
-| v0.dev | AI generates UI components | We build COMPLETE pages, not components |
-| Framer | Visual page builder | We produce code you own and modify |
-| Webflow | No-code page builder | We produce portable HTML/React, no vendor lock |
+| Lovable | IA constrói web apps a partir de prompts | Entregamos o CÓDIGO, sem prender você a uma plataforma |
+| Bolt.new | IA gera apps full-stack | Focamos em páginas otimizadas para conversão |
+| v0.dev | IA gera componentes de UI | Construímos páginas COMPLETAS, não componentes |
+| Framer | Construtor visual de páginas | Produzimos código que você possui e modifica |
+| Webflow | Construtor de páginas no-code | Produzimos HTML/React portável, sem vendor lock-in |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[kc_landing_page]] | sibling | 0.59 |
 | [[landing-page-builder]] | downstream | 0.46 |

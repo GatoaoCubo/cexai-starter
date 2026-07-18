@@ -3,18 +3,18 @@ kind: output_template
 id: bld_output_template_roi_calculator
 pillar: P05
 llm_function: PRODUCE
-purpose: Template with vars for roi_calculator production
+purpose: Modelo com variáveis para produção de roi_calculator
 quality: null
-title: "Output Template Roi Calculator"
+title: "Modelo de Saída -- ROI Calculator"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [roi_calculator, builder, output_template]
-tldr: "Template with vars for roi_calculator production"
-domain: "roi_calculator construction"
+tldr: "Modelo com variáveis para produção de roi_calculator"
+domain: "construção de roi_calculator"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F6_produce"
-keywords: [roi_calculator construction, output template roi calculator, roi_calculator, builder, output_template, year model, input parameters, output metrics, net profit, total investment]
+keywords: [construção de roi_calculator, modelo de saída roi calculator, roi_calculator, builder, output_template, modelo anual, parâmetros de entrada, métricas de saída, lucro líquido, investimento total]
 density_score: 0.85
 related:
   - kc_roi_calculator
@@ -41,47 +41,47 @@ output_metrics: [{{output_metrics}}]
 ---
 ```
 
-<!-- slug: lowercase identifier, e.g. saas_platform_3yr or manufacturing_automation -->
-<!-- title: Descriptive name, e.g. "SaaS Platform ROI - 3-Year Model" -->
-<!-- domain: Industry context, e.g. "SaaS", "manufacturing", "healthcare" -->
-<!-- calculation_method: Formula used, e.g. "NPV with 8% discount rate" or "Forrester TEI" -->
+<!-- slug: identificador em minusculas, ex. saas_platform_3yr ou manufacturing_automation -->
+<!-- title: nome descritivo, ex. "ROI da Plataforma SaaS -- Modelo de 3 Anos" -->
+<!-- domain: contexto do setor, ex. "SaaS", "manufatura", "saúde" -->
+<!-- calculation_method: fórmula usada, ex. "NPV com taxa de desconto de 8%" ou "Forrester TEI" -->
 <!-- input_parameters: ["initial_investment", "annual_savings", "implementation_cost", "time_horizon"] -->
 <!-- output_metrics: ["roi_percentage", "payback_period_months", "npv", "irr"] -->
 
-## Input Parameters
+## Parâmetros de Entrada
 
-| Parameter | Type | Unit | Description | Required |
+| Parâmetro | Tipo | Unidade | Descrição | Obrigatório |
 |-----------|------|------|-------------|----------|
-| initial_investment | float | USD | Total upfront cost | yes |
-| annual_savings | float | USD | Yearly cost reduction | yes |
-| implementation_cost | float | USD | One-time setup cost | yes |
-| time_horizon | int | years | Evaluation period | yes |
-| discount_rate | float | % | Cost of capital (NPV) | yes |
-| annual_maintenance | float | USD | Recurring platform costs | yes |
+| initial_investment | float | USD | Custo total inicial | sim |
+| annual_savings | float | USD | Economia anual de custos | sim |
+| implementation_cost | float | USD | Custo único de implantação | sim |
+| time_horizon | int | anos | Período de avaliação | sim |
+| discount_rate | float | % | Custo de capital (para NPV) | sim |
+| annual_maintenance | float | USD | Custos recorrentes da plataforma | sim |
 
-## Output Metrics
+## Métricas de Saída
 
-| Metric | Formula | Threshold |
+| Métrica | Fórmula | Limite |
 |--------|---------|-----------|
-| ROI % | (Net Profit / Total Investment) * 100 | >= 15% |
-| Payback Period | Total Investment / Annual Savings | <= 24 months |
-| NPV | Sum(Savings / (1+r)^t) - Investment | > 0 |
-| TCO Reduction | Baseline TCO - New TCO | > 20% |
+| ROI % | (Lucro Líquido / Investimento Total) * 100 | >= 15% |
+| Prazo de Retorno (Payback) | Investimento Total / Economia Anual | <= 24 meses |
+| NPV | Soma(Economia / (1+r)^t) - Investimento | > 0 |
+| Redução de TCO | TCO da Linha de Base - Novo TCO | > 20% |
 
-## Scenario Comparison
+## Comparação de Cenários
 
-| Scenario | Year 1 | Year 2 | Year 3 | ROI % |
+| Cenário | Ano 1 | Ano 2 | Ano 3 | ROI % |
 |----------|--------|--------|--------|-------|
-| Conservative | `{{y1_cons}}` | `{{y2_cons}}` | `{{y3_cons}}` | `{{roi_cons}}` |
-| Base Case | `{{y1_base}}` | `{{y2_base}}` | `{{y3_base}}` | `{{roi_base}}` |
-| Optimistic | `{{y1_opt}}` | `{{y2_opt}}` | `{{y3_opt}}` | `{{roi_opt}}` |
+| Conservador | `{{y1_cons}}` | `{{y2_cons}}` | `{{y3_cons}}` | `{{roi_cons}}` |
+| Caso Base | `{{y1_base}}` | `{{y2_base}}` | `{{y3_base}}` | `{{roi_base}}` |
+| Otimista | `{{y1_opt}}` | `{{y2_opt}}` | `{{y3_opt}}` | `{{roi_opt}}` |
 
-## Assumptions
+## Premissas
 
-- Discount rate: `{{discount_rate}}`% (WACC or cost of capital)
-- Savings realization: `{{ramp_months}}` months ramp-up
-- Maintenance growth: `{{maintenance_growth}}`% annually
-- Source: Forrester TEI methodology / customer-validated data
+- Taxa de desconto: `{{discount_rate}}`% (WACC ou custo de capital)
+- Realização da economia: rampa de adoção de `{{ramp_months}}` meses
+- Crescimento da manutenção: `{{maintenance_growth}}`% ao ano
+- Fonte: metodologia Forrester TEI / dados validados pelo cliente
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

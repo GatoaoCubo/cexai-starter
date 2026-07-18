@@ -3,51 +3,51 @@ kind: instruction
 id: bld_instruction_subscription_tier
 pillar: P03
 llm_function: REASON
-purpose: Step-by-step production process for subscription_tier
+purpose: "Processo de produção passo a passo para subscription_tier"
 quality: null
 title: "Instruction Subscription Tier"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [subscription_tier, builder, instruction]
-tldr: "Step-by-step production process for subscription_tier"
-domain: "subscription_tier construction"
+tldr: "Processo de produção passo a passo para subscription_tier"
+domain: "construção de subscription_tier"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F6_produce"
-keywords: [subscription_tier construction, instruction subscription tier, subscription_tier, builder, instruction, price_id, currency, recurring_interval, feature_matrix, constraints]
+keywords: [construção de subscription_tier, instruction subscription tier, subscription_tier, builder, instruction, price_id, currency, recurring_interval, feature_matrix, constraints]
 density_score: 0.85
 related:
   - kc_subscription_tier
   - bld_tools_subscription_tier
 ---
-## Phase 1: RESEARCH  
-1. Analyze market trends for SaaS pricing models (e.g., freemium, tiered).  
-2. Benchmark competitors’ subscription tiers for feature parity and pricing.  
-3. Identify core features to include in each tier (e.g., API calls, storage limits).  
-4. Prioritize features based on customer value and technical feasibility.  
-5. Segment target users by usage patterns (light, medium, enterprise).  
-6. Review legal requirements for pricing (e.g., tax compliance, refund policies).  
+## Fase 1: PESQUISA
+1. Analisar tendências de mercado para modelos de precificação SaaS (ex.: freemium, em tiers).
+2. Fazer benchmark dos tiers de assinatura de concorrentes quanto a paridade de funcionalidades e preço.
+3. Identificar as funcionalidades essenciais a incluir em cada tier (ex.: chamadas de API, limites de armazenamento).
+4. Priorizar funcionalidades com base no valor para o cliente e na viabilidade técnica.
+5. Segmentar os usuários-alvo por padrão de uso (leve, médio, enterprise).
+6. Revisar requisitos legais de precificação (ex.: conformidade fiscal, políticas de reembolso).
 
-## Phase 2: COMPOSE  
-1. Define tier name using SCHEMA.md’s `name` field (e.g., “Basic”, “Pro”).  
-2. Set pricing structure with `price_id`, `currency`, and `recurring_interval`.  
-3. Map features to tiers in `feature_matrix` (e.g., “unlimited users” → “Pro”).  
-4. Specify constraints via `constraints` (e.g., “max 100 API calls/month”).  
-5. Link to payment gateway configurations in `external_ids`.  
-6. Add tier description using OUTPUT_TEMPLATE.md’s `summary` section.  
-7. Validate feature dependencies (e.g., “Pro” requires “Basic” features).  
-8. Document onboarding workflows for each tier in `user_journey`.  
-9. Finalize artifact with metadata from SCHEMA.md’s `created_at` and `updated_at`.  
+## Fase 2: COMPOSIÇÃO
+1. Definir o nome do tier usando o campo `name` do SCHEMA.md (ex.: "Basic", "Pro").
+2. Definir a estrutura de preço com `price_id`, `currency` e `recurring_interval`.
+3. Mapear funcionalidades para tiers em `feature_matrix` (ex.: "usuários ilimitados" -> "Pro").
+4. Especificar restrições via `constraints` (ex.: "máximo de 100 chamadas de API/mês").
+5. Vincular às configurações do gateway de pagamento em `external_ids`.
+6. Adicionar a descrição do tier usando a seção `summary` do OUTPUT_TEMPLATE.md.
+7. Validar dependências entre funcionalidades (ex.: "Pro" requer as funcionalidades do "Basic").
+8. Documentar os fluxos de onboarding de cada tier em `user_journey`.
+9. Finalizar o artefato com os metadados `created_at` e `updated_at` do SCHEMA.md.
 
-## Phase 3: VALIDATE  
-- [ ] ✅ Check schema compliance via JSON schema validator.  
-- [ ] ✅ Confirm pricing consistency across all tiers and currencies.  
-- [ ] ✅ Ensure feature matrix aligns with technical implementation.  
-- [ ] ✅ Verify constraint enforcement logic in backend systems.  
-- [ ] ✅ Conduct user testing with sample tier configurations.
+## Fase 3: VALIDAÇÃO
+- [ ] Checar a conformidade com o schema via validador de JSON schema.
+- [ ] Confirmar a consistência de preço entre todos os tiers e moedas.
+- [ ] Garantir que a feature_matrix esteja alinhada com a implementação técnica.
+- [ ] Verificar a lógica de aplicação das restrições nos sistemas de backend.
+- [ ] Conduzir testes com usuários reais usando configurações de tier de exemplo.
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | bld_instruction_pricing_page | sibling | 0.42 |
 | [[kc_subscription_tier]] | upstream | 0.38 |

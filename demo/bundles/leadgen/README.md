@@ -1,31 +1,57 @@
-# CEXAI capability bundle: Captacao de Leads (Lead-gen / scraping) (`leadgen`)
+# Bundle de capacidade CEXAI: Captação de Leads (Lead-gen / scraping) (`leadgen`)
 
-The **12 pillar contract** for the `research_pipeline` kind, plus the setup config.
+O **contrato de 12 pillars** do kind `research_pipeline`, mais a config de setup.
 Nucleus N01 . kind `research_pipeline` . pillar P04.
 
-This is the CEXAI "12 ISO" form -- one specification file per pillar
-(P01-P12), exactly the bundle shown in the course video. Upload the 12
-pillar files as Knowledge to any assistant, paste the instruction, and it
-becomes a working Captacao de Leads (Lead-gen / scraping) agent.
+Esta é a forma "12 ISO" do CEXAI -- um arquivo de especificação por pillar
+(P01-P12), exatamente o bundle mostrado no vídeo do curso. Suba os 12
+arquivos de pillar como Knowledge em qualquer assistente, cole a instrução,
+e ele vira um agente funcional de Captação de Leads (Lead-gen / scraping).
 
-## Contents (15 files)
-- `P01_knowledge.md` ... `P12_orchestration.md` -- the 12 pillar ISOs (the
-  builder contract for this kind: one specification per pillar, P01-P12).
-- `customgpt_instructions.json` -- the Custom GPT config: name, description,
-  the `instructions` string to paste, and conversation starters.
-- `system_instruction.md` -- the same instruction as a paste-ready system
-  prompt (for Claude Projects or any model).
-- `README.md` -- this file.
+## Conteúdo (15 arquivos)
+- `P01_knowledge.md` ... `P12_orchestration.md` -- os 12 ISOs de pillar (o
+  contrato de builder deste kind: uma especificação por pillar, P01-P12).
+- `customgpt_instructions.json` -- a config do Custom GPT: nome, descrição,
+  a string de `instructions` para colar, e os conversation starters.
+- `system_instruction.md` -- a mesma instrução como um system prompt
+  pronto para colar (para Claude Projects ou qualquer modelo).
+- `README.md` -- este arquivo.
+- `SETUP_chatgpt_projects.md` -- passo a passo para ChatGPT Projects.
+- `SETUP_claude_projects.md` -- passo a passo para Claude Projects.
+- `SETUP_gemini_gems.md` -- passo a passo para Gemini Gems.
+- `SETUP_pt-br.md` -- guia combinado PT-BR (visão geral + todas as opções).
 
-## Upload (3 ways)
-- **ChatGPT (Custom GPT):** Explore GPTs -> Create -> Configure. Upload the
-  12 `P0X_*.md` files as Knowledge. Paste the `instructions` field of
-  `customgpt_instructions.json` into the Instructions box.
-- **Claude (Project):** paste `system_instruction.md` into Custom
-  instructions; attach the 12 pillar files to the project knowledge.
-- **Any AI:** paste `system_instruction.md` as the system prompt.
+## Upload (passo a passo, em qualquer IA)
 
-## Provenance / honesty
-Never-fabricate: any `[fornecer: ...]` marker is a field with no real input
--- fill it in with your own brand before use. The 12 pillar ISOs are the
-generic, public builder contract for `research_pipeline` -- no tenant data.
+1. **Escolha a plataforma**: ChatGPT (Custom GPT ou Projects), Claude (Projects)
+   ou Gemini (Gems). Veja o guia `SETUP_*.md` específico para o passo a passo
+   detalhado, ou siga o resumo abaixo.
+2. **Cole as instruções**: copie o conteúdo de `system_instruction.md` (ou o
+   campo `instructions` de `customgpt_instructions.json`) e cole no campo de
+   instruções/persona da plataforma escolhida (Instructions do Custom GPT,
+   Project Instructions do Claude, Instructions do Gem).
+3. **Suba os 12 arquivos de pillar**: adicione `P01_knowledge.md` até
+   `P12_orchestration.md` como Knowledge/Files/Base de conhecimento do
+   projeto ou assistente.
+4. **Preencha os placeholders**: qualquer marcador `[fornecer: ...]` precisa
+   do dado real da sua marca antes do uso (nome, tom de voz, valores).
+5. **Teste**: peça `Encontre leads para <perfil> a partir de <seed> --
+   marketplace, CNPJ, social` e confira se o agente responde com uma lista
+   tipada de leads e status honesto por fonte (nunca inventando contatos).
+
+### Resumo por plataforma
+- **ChatGPT (Custom GPT):** Explore GPTs -> Create -> Configure. Suba os
+  12 arquivos `P0X_*.md` como Knowledge. Cole o campo `instructions` de
+  `customgpt_instructions.json` na caixa de Instructions.
+- **ChatGPT (Projects):** veja `SETUP_chatgpt_projects.md`.
+- **Claude (Project):** cole `system_instruction.md` nas Custom
+  Instructions; anexe os 12 arquivos de pillar ao Project Knowledge. Veja
+  `SETUP_claude_projects.md`.
+- **Gemini (Gems):** veja `SETUP_gemini_gems.md`.
+- **Qualquer IA:** cole `system_instruction.md` como system prompt.
+
+## Procedência / honestidade
+Nunca-fabricar: todo marcador `[fornecer: ...]` é um campo sem dado real
+-- preencha com a sua própria marca antes de usar. Os 12 ISOs de pillar são
+o contrato de builder genérico e público do `research_pipeline` -- sem
+dado de nenhum tenant.

@@ -3,18 +3,18 @@ kind: output_template
 id: bld_output_template_opportunity_matrix
 pillar: P05
 llm_function: PRODUCE
-purpose: Template with vars for opportunity_matrix production
+purpose: Modelo com variáveis para a produção de opportunity_matrix
 quality: null
-title: "Output Template Opportunity Matrix"
+title: "Modelo de Saída -- Opportunity Matrix"
 version: "1.0.0"
 author: n03_builder
 tags: [opportunity_matrix, builder, output_template]
-tldr: "Template with vars for opportunity_matrix production"
-domain: "opportunity_matrix construction"
+tldr: "Modelo com variáveis para a produção de opportunity_matrix"
+domain: "construção de opportunity_matrix"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F6_produce"
-keywords: [opportunity_matrix construction, output template opportunity matrix, opportunity_matrix, builder, output_template, catalog_sources, opp_score, sourcing_confiavel, matriz de oportunidade]
+keywords: [construção de opportunity_matrix, modelo de saída opportunity matrix, opportunity_matrix, builder, output_template, catalog_sources, opp_score, sourcing_confiavel, matriz de oportunidade]
 density_score: 0.85
 related:
   - bld_schema_opportunity_matrix
@@ -41,29 +41,29 @@ verify_top_n: {{verify_top_n}}
 ---
 ```
 
-<!-- slug: lowercase identifier, e.g. ferramentas_q3 or hardware_catalog_2026 -->
-<!-- title: Descriptive name, e.g. "Sourcing Opportunity -- Ferragens Q3 2026" -->
-<!-- domain: Industry/catalog context, e.g. "tools/hardware", "pet supplies" -->
-<!-- region: demand market cut, e.g. "Brasil", "Global" (default Global) -->
-<!-- cost_source_strategy: one of column|filename|fixed|formula|none (default column) -->
-<!-- demand_signal_basis: one of reviews|price_scrape|sales_rank|spec_sheet|manual (default reviews) -->
-<!-- verify_top_n: int, top-N skeptical re-check count (default 10) -->
+<!-- slug: identificador em minúsculas, ex.: ferramentas_q3 ou hardware_catalog_2026 -->
+<!-- title: nome descritivo, ex.: "Sourcing Opportunity -- Ferragens Q3 2026" -->
+<!-- domain: contexto de indústria/catálogo, ex.: "tools/hardware", "pet supplies" -->
+<!-- region: recorte de mercado de demanda, ex.: "Brasil", "Global" (padrão Global) -->
+<!-- cost_source_strategy: um de column|filename|fixed|formula|none (padrão column) -->
+<!-- demand_signal_basis: um de reviews|price_scrape|sales_rank|spec_sheet|manual (padrão reviews) -->
+<!-- verify_top_n: inteiro, contagem de re-checagem cética top-N (padrão 10) -->
 
-## Input Contract
+## Contrato de Entrada
 
-| Key | Type | Required | Default | Note |
+| Chave | Tipo | Obrigatório | Padrão | Nota |
 |-----|------|----------|---------|------|
-| catalog_sources | object[] | yes | -- | >=1; supply side (PDF/CSV/XLSX/image), each `{uri, format, supplier_name, rows}` |
-| cost_source_strategy | enum | no | column | column\|filename\|fixed\|formula\|none |
-| tax_pct | number | no | 0 | tax on cost (e.g. IPI) |
-| region | string | no | Global | demand market cut |
-| demand_signal_basis | enum | no | reviews | reviews\|price_scrape\|sales_rank\|spec_sheet\|manual |
-| fee_model | enum | no | percent | percent\|fixed_plus_percent\|fixed_per_unit\|tiered |
-| freight_model | enum | no | none | none\|flat\|weight\|cubic |
-| verify_top_n | number | no | 10 | skeptical re-check count (web price = ceiling) |
-| show_net_margin | boolean | no | false | opt-in; default shows BRUTA |
+| catalog_sources | object[] | sim | -- | >=1; lado da oferta (PDF/CSV/XLSX/imagem), cada `{uri, format, supplier_name, rows}` |
+| cost_source_strategy | enum | não | column | column\|filename\|fixed\|formula\|none |
+| tax_pct | number | não | 0 | imposto sobre o custo (ex.: IPI) |
+| region | string | não | Global | recorte de mercado de demanda |
+| demand_signal_basis | enum | não | reviews | reviews\|price_scrape\|sales_rank\|spec_sheet\|manual |
+| fee_model | enum | não | percent | percent\|fixed_plus_percent\|fixed_per_unit\|tiered |
+| freight_model | enum | não | none | none\|flat\|weight\|cubic |
+| verify_top_n | number | não | 10 | contagem de re-checagem cética (preço web = teto) |
+| show_net_margin | boolean | não | false | opt-in; padrão mostra BRUTA |
 
-## Output Sections (frozen order, from MOLD_SOURCING_OPPORTUNITY)
+## Seções de Saída (ordem congelada, de MOLD_SOURCING_OPPORTUNITY)
 
 ### 1. Resumo executivo (fields)
 | Label | Value |
@@ -75,12 +75,12 @@ verify_top_n: {{verify_top_n}}
 | Alerta de dado critico | `{{critical_data_alert}}` |
 
 ### 2. Matriz de oportunidade (table, 9 cols)
-Columns: `#, Produto, Fornecedor (desc%), Custo, Preco mercado, Margem, Demanda, Relevancia, Score`
-Ranked by `opp_score` desc. Margem shows LIQUIDA only when `show_net_margin=true` (else BRUTA).
+Colunas: `#, Produto, Fornecedor (desc%), Custo, Preco mercado, Margem, Demanda, Relevancia, Score`
+Ranqueado por `opp_score` decrescente. Margem mostra LIQUIDA só quando `show_net_margin=true` (senão BRUTA).
 
 ### 3. Leitura por categoria (table, 5 cols)
-Columns: `Categoria, Itens, Custo, Preco verif., Veredito`
-Grouped by normalized `product_type`, sorted by group size desc.
+Colunas: `Categoria, Itens, Custo, Preco verif., Veredito`
+Agrupado por `product_type` normalizado, ordenado por tamanho de grupo decrescente.
 
 ### 4. Cobertura (fields)
 | Label | Value |
@@ -91,12 +91,12 @@ Grouped by normalized `product_type`, sorted by group size desc.
 | Itens sem preco verificado | `{{n_manual}} (bucket "manual / sem preco")` |
 
 ### 5. Verificacao (top-N) (table, 5 cols)
-Columns: `Produto, Preco estimado, Preco real (verif.), Fontes, Confianca`
-Slice = top `verify_top_n` ranked rows; web price treated as ceiling.
+Colunas: `Produto, Preco estimado, Preco real (verif.), Fontes, Confianca`
+Recorte = as `verify_top_n` linhas mais bem ranqueadas; preço web tratado como teto.
 
 ### 6. Match / auditoria (table, 4 cols)
-Columns: `Codigo, Match?, Confianca, Flag de auditoria`
-Emitted ONLY for rows carrying `photo_uri` or `dimension`; else one honest-skip row (`--, NAO, 0.0, sem insumo visual`). Shares the `product_match` engine.
+Colunas: `Codigo, Match?, Confianca, Flag de auditoria`
+Emitida SÓ para linhas que carregam `photo_uri` ou `dimension`; caso contrário, uma única linha de honest-skip (`--, NAO, 0.0, sem insumo visual`). Compartilha o motor `product_match`.
 
 ### 7. Proveniencia (fields)
 | Label | Value |
@@ -114,10 +114,10 @@ Emitted ONLY for rows carrying `photo_uri` or `dimension`; else one honest-skip 
 | Condicoes do gate | margem_bruta_top >= 25% AND top-N verificado AND nenhum item critico sem preco AND frescor != RED |
 | Avaliacao das condicoes | `{{gate_evaluation}}` |
 | Acoes ranqueadas | `{{ranked_actions}}` |
-| Proximo passo encadeavel | `{{next_step}}` (feeds `marketplace_listing` / TUDAO on APROVADO) |
+| Proximo passo encadeavel | `{{next_step}}` (alimenta `marketplace_listing` / TUDAO quando APROVADO) |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[bld_prompt_opportunity_matrix]] | upstream | 0.38 |
 | [[bld_schema_opportunity_matrix]] | downstream | 0.36 |

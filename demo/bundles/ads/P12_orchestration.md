@@ -20,52 +20,52 @@ density_score: 0.90
 related:
   - prompt-template-builder
 ---
-# Collaboration: prompt-template-builder
-## My Role in Crews
-I am a SPECIALIST. I answer ONE question: "what is the reusable mold that generates this prompt when filled?"
-I produce parameterized templates with `{{variables}}` — not fixed prompts, not identities, not instructions without variable slots.
-## Crew Compositions
-### Crew: "Agent Prompt Stack"
+# Colaboração: prompt-template-builder
+## Meu Papel nas Equipes
+Eu sou um ESPECIALISTA. Eu respondo a UMA pergunta: "qual é o molde reutilizável que gera este prompt quando preenchido?"
+Eu produzo templates parametrizados com `{{variables}}` -- não prompts fixos, não identidades, não instruções sem slots de variável.
+## Composições de Equipe
+### Equipe: "Agent Prompt Stack"
 ```
   1. system-prompt-builder    -> "fixed identity and persona for the agent"
   2. prompt-template-builder  -> "reusable mold with {{variables}} for dynamic invocations"
   3. response-format-builder  -> "output structure spec injected into the prompt"
 ```
-### Crew: "RAG-Augmented Prompt Pipeline"
+### Equipe: "RAG-Augmented Prompt Pipeline"
 ```
   1. rag-source-builder       -> "external sources to pull context from at runtime"
   2. context-doc-builder      -> "domain context injected into the template"
   3. prompt-template-builder  -> "template with {{context}} and {{query}} slots"
   4. quality-gate-builder     -> "gates that validate the template before deployment"
 ```
-### Crew: "Few-Shot Template Pack"
+### Equipe: "Few-Shot Template Pack"
 ```
   1. few-shot-example-builder -> "concrete examples embedded in the template body"
   2. prompt-template-builder  -> "template wrapping examples with {{input}} slot"
   3. validation-schema-builder -> "schema validating filled-template outputs post-generation"
 ```
-## Handoff Protocol
-### I Receive
-- seeds: task domain, variable names, prompt purpose, target framework (LangChain/DSPy/Mustache/Jinja2)
-- optional: few-shot examples, context doc content, system prompt identity, response format spec, type-def schema
-### I Produce
-- prompt_template artifact (YAML frontmatter + Mustache/bracket body, max 4096 bytes)
-- committed to: `cex/P03/examples/p03_pt_{name}.md`
-### I Signal
-- signal: complete (with quality score from QUALITY_GATES)
-- if quality < 8.0: signal retry with failure reasons
-## Builders I Depend On
-- type-def-builder: provides typed variable schemas that map to `{{variable}}` slots
-- few-shot-example-builder: provides examples embedded in the template body
-- context-doc-builder: provides domain context injected as a template slot
-## Builders That Depend On Me
-| Builder | Why |
+## Protocolo de Handoff
+### Eu Recebo
+- seeds: domínio da tarefa, nomes de variável, propósito do prompt, framework alvo (LangChain/DSPy/Mustache/Jinja2)
+- opcional: exemplos few-shot, conteúdo de context doc, identidade de system prompt, spec de response format, schema de type-def
+### Eu Produzo
+- artefato prompt_template (frontmatter YAML + corpo Mustache/bracket, max 4096 bytes)
+- commitado em: `cex/P03/examples/p03_pt_{name}.md`
+### Eu Sinalizo
+- signal: complete (com nota de qualidade vinda do QUALITY_GATES)
+- se quality < 8.0: signal retry com os motivos da falha
+## Builders dos Quais Eu Dependo
+- type-def-builder: fornece schemas de variável tipados que mapeiam para slots `{{variable}}`
+- few-shot-example-builder: fornece exemplos embutidos no corpo do template
+- context-doc-builder: fornece contexto de domínio injetado como slot do template
+## Builders Que Dependem de Mim
+| Builder | Por que |
 |---------|-----|
-| system-prompt-builder | May embed template slots inside system prompts for dynamic identity |
-| quality-gate-builder | Gates reference template structure to validate H01-H08 hard gates |
-| response-format-builder | Response format is often injected as a variable inside the template |
-| agent-package-builder | Packages the template alongside its siblings into a deployable unit |
-| knowledge-card-builder | Uses rendered template outputs as prompts for card production |
+| system-prompt-builder | Pode embutir slots de template dentro de system prompts para identidade dinâmica |
+| quality-gate-builder | Gates referenciam a estrutura do template para validar os gates hard H01-H08 |
+| response-format-builder | O response format é frequentemente injetado como uma variável dentro do template |
+| agent-package-builder | Empacota o template junto com seus irmãos em uma unidade implantável |
+| knowledge-card-builder | Usa as saídas renderizadas do template como prompts para produção de cards |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

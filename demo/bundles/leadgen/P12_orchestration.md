@@ -3,15 +3,15 @@ kind: collaboration
 id: bld_collaboration_research_pipeline
 pillar: P12
 llm_function: COLLABORATE
-purpose: How research-pipeline-builder works in crews with other builders
-pattern: each builder must know its ROLE, what it RECEIVES and PRODUCES
+purpose: Como o research-pipeline-builder atua em crews com outros builders
+pattern: cada builder precisa saber seu PAPEL, o que RECEBE e o que PRODUZ
 quality: null
-title: "Collaboration Research Pipeline"
+title: "Colaboração: Pipeline de Pesquisa"
 version: "1.0.0"
 author: n03_builder
 tags: [research_pipeline, builder, examples]
-tldr: "Golden and anti-examples for research pipeline construction, demonstrating ideal structure and common pitfalls."
-domain: "research pipeline construction"
+tldr: "Exemplos-modelo e anti-exemplos para a construção de pipelines de pesquisa, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de pipeline de pesquisa"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F8_collaborate"
@@ -20,16 +20,16 @@ density_score: 0.90
 related:
   - research-pipeline-builder
 ---
-# Collaboration: research-pipeline-builder
+# Colaboração: research-pipeline-builder
 
-## My Role in Crews
-I am a SPECIALIST. I answer ONE question: "how do we collect, score, synthesize, and verify market intelligence from multiple sources end-to-end?"
-I do not write API clients. I do not generate content. I do not deploy services.
-I produce pipeline architecture + config schema so downstream builders implement and deploy.
+## Meu Papel em Crews
+Eu sou um ESPECIALISTA. Eu respondo a UMA pergunta: "como coletamos, pontuamos, sintetizamos e verificamos inteligência de mercado de múltiplas fontes de ponta a ponta?"
+Eu não escrevo clientes de API. Eu não gero conteúdo. Eu não faço deploy de serviços.
+Eu produzo a arquitetura do pipeline + o schema de config para que os builders posteriores implementem e façam o deploy.
 
-## Crew Compositions
+## Composições de Crew
 
-### Crew: "Market Intelligence End-to-End"
+### Crew: "Inteligência de Mercado de Ponta a Ponta"
 ```
 1. research-pipeline-builder → "7-stage pipeline architecture + config + quality gates"
 2. knowledge-card-builder    → "domain knowledge cards from research output"
@@ -39,44 +39,44 @@ I produce pipeline architecture + config schema so downstream builders implement
 6. spawn-config-builder      → "cron deployment for scheduled research"
 ```
 
-### Crew: "Research → Content → Publish"
+### Crew: "Pesquisa → Conteúdo → Publicação"
 ```
 1. research-pipeline-builder → "collect market intelligence"
 2. prompt-template-builder   → "turn research into content briefs"
 3. social-publisher-builder  → "publish content to social platforms"
 ```
 
-## Handoff Protocol
-| I receive from | Data | Format |
+## Protocolo de Handoff
+| Eu recebo de | Dados | Formato |
 |---------------|------|--------|
-| User / N07 | Research query + niche requirements | Mission handoff .md |
-| knowledge-card-builder | Domain context for STORM perspectives | KC artifact |
+| Usuário / N07 | Query de pesquisa + requisitos do nicho | Handoff de missão .md |
+| knowledge-card-builder | Contexto de domínio para as perspectivas STORM | Artefato KC |
 
-| I send to | Data | Format |
+| Eu envio para | Dados | Formato |
 |----------|------|--------|
-| N02_marketing | Research results for content strategy | JSON + signal |
-| N06_commercial | Pricing intelligence, competitor data | JSON + signal |
-| N01_intelligence | Verified market report | HTML/PPTX/JSON |
-| cli-tool-builder | Pipeline spec for implementation | Architecture .md |
-| api-client-builder | Source API specs for client code | Tools .md |
+| N02_marketing | Resultados da pesquisa para a estratégia de conteúdo | JSON + signal |
+| N06_commercial | Inteligência de precificação, dados de concorrentes | JSON + signal |
+| N01_intelligence | Relatório de mercado verificado | HTML/PPTX/JSON |
+| cli-tool-builder | Spec do pipeline para implementação | Architecture .md |
+| api-client-builder | Specs de API das fontes para o código do cliente | Tools .md |
 
-## Nucleus Routing
-| Phase | Nucleus | Why |
+## Roteamento de Nucleus
+| Fase | Nucleus | Por que |
 |-------|---------|-----|
-| Pipeline design | N03 (engineering) | Architecture + schema work |
-| Research execution | N01 (intelligence) | Domain expertise, source knowledge |
-| Content from research | N02 (marketing) | Transform insights into content |
-| Pricing from research | N06 (commercial) | Market pricing strategy |
-| Deploy pipeline | N05 (operations) | Cron + monitoring |
+| Design do pipeline | N03 (engenharia) | Trabalho de arquitetura + schema |
+| Execução da pesquisa | N01 (intelligence) | Expertise de domínio, conhecimento de fontes |
+| Conteúdo a partir da pesquisa | N02 (marketing) | Transforma insights em conteúdo |
+| Precificação a partir da pesquisa | N06 (comercial) | Estratégia de precificação de mercado |
+| Deploy do pipeline | N05 (operações) | Cron + monitoramento |
 
-## Relationship to Social Publisher
+## Relação com o Social Publisher
 ```
 Research Pipeline (INPUT)        Social Publisher (OUTPUT)
   collect → score → verify  →→→    generate → schedule → publish
   N01_intelligence               N02_marketing
   STORM+CRAG+CRITIC              Calendar + API + Rotation
 ```
-Together they form the cycle: RESEARCH → DECISION → CONTENT → PUBLISH.
+Juntos, eles formam o ciclo: PESQUISA → DECISÃO → CONTEÚDO → PUBLICAÇÃO.
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

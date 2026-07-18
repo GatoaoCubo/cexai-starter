@@ -3,19 +3,19 @@ kind: schema
 id: bld_schema_content_monetization
 pillar: P06
 llm_function: CONSTRAIN
-purpose: Formal schema — SINGLE SOURCE OF TRUTH for content_monetization config
-pattern: CONFIG derives from this. TEMPLATE renders this.
+purpose: "Schema formal -- UNICA FONTE DE VERDADE para a config content_monetization"
+pattern: "CONFIG deriva disto. TEMPLATE renderiza isto."
 quality: null
 title: "Schema Content Monetization"
 version: "1.0.0"
 author: n03_builder
 tags: [content_monetization, builder, examples]
-tldr: "Golden and anti-examples for content monetization construction, demonstrating ideal structure and common pitfalls."
-domain: "content monetization construction"
+tldr: "Exemplos de referencia e antiexemplos para a construcao de content_monetization, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construcao de content_monetization"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
-keywords: [formal schema, content monetization construction, schema content monetization, content_monetization, builder, examples, config schema, centavos cents, integer tier, signature_algo const]
+keywords: [schema formal, construcao de content_monetization, schema content monetization, content_monetization, builder, examples, schema da config, centavos cents, tier inteiro, signature_algo const]
 density_score: 0.90
 related:
   - bld_schema_usage_report
@@ -26,51 +26,51 @@ related:
 
 # Schema: content_monetization
 
-## Config Schema (the YAML every company fills)
+## Schema da Config (o YAML que toda empresa preenche)
 
-### identity (required)
-| Field | Type | Required | Example |
+### identity (obrigatorio)
+| Campo | Tipo | Obrigatorio | Exemplo |
 |-------|------|----------|---------|
-| empresa | string | YES | "ACME" |
-| domain | string | YES | "ai_tools" |
-| currency | enum(BRL,USD,EUR) | YES | "BRL" |
-| currency_unit | enum(centavos,cents) | YES | "centavos" |
-| country | enum(BR,US,EU,UK,LATAM) | YES | "BR" |
+| empresa | string | SIM | "ACME" |
+| domain | string | SIM | "ai_tools" |
+| currency | enum(BRL,USD,EUR) | SIM | "BRL" |
+| currency_unit | enum(centavos,cents) | SIM | "centavos" |
+| country | enum(BR,US,EU,UK,LATAM) | SIM | "BR" |
 
-### pricing (required)
-| Field | Type | Required | Default |
+### pricing (obrigatorio)
+| Campo | Tipo | Obrigatorio | Padrao |
 |-------|------|----------|---------|
-| strategy | enum(freemium,tiered,usage,credit_pack,hybrid) | YES | "tiered" |
-| tiers | list[tier_object] | YES | - |
-| tier.name | string | YES | "pro" |
-| tier.price_monthly | integer (centavos/cents) | YES | 4990 |
-| tier.price_yearly | integer | NO | 49900 |
-| tier.credits_monthly | integer | YES | 1000 |
-| tier.features | list[string] | YES | ["research", "publish"] |
-| floor_margin_pct | float (0.0-1.0) | YES | 0.30 |
-| trial_days | integer | NO | 7 |
+| strategy | enum(freemium,tiered,usage,credit_pack,hybrid) | SIM | "tiered" |
+| tiers | list[tier_object] | SIM | - |
+| tier.name | string | SIM | "pro" |
+| tier.price_monthly | integer (centavos/cents) | SIM | 4990 |
+| tier.price_yearly | integer | NAO | 49900 |
+| tier.credits_monthly | integer | SIM | 1000 |
+| tier.features | list[string] | SIM | ["research", "publish"] |
+| floor_margin_pct | float (0.0-1.0) | SIM | 0.30 |
+| trial_days | integer | NAO | 7 |
 
-### credits (required)
-| Field | Type | Required | Default |
+### credits (obrigatorio)
+| Campo | Tipo | Obrigatorio | Padrao |
 |-------|------|----------|---------|
-| pipeline_costs | map[string,int] | YES | {research: 50} |
-| packs | list[pack] | NO | - |
-| overdraft_policy | enum(block,notify_then_block,allow_negative) | YES | "block" |
-| rollover | boolean | NO | false |
+| pipeline_costs | map[string,int] | SIM | {research: 50} |
+| packs | list[pack] | NAO | - |
+| overdraft_policy | enum(block,notify_then_block,allow_negative) | SIM | "block" |
+| rollover | boolean | NAO | false |
 
-### checkout (required)
-| Field | Type | Required | Default |
+### checkout (obrigatorio)
+| Campo | Tipo | Obrigatorio | Padrao |
 |-------|------|----------|---------|
-| provider | enum(stripe,hotmart,kiwify,monetizze,eduzz,digistore24) | YES | "stripe" |
-| webhook_url | string (URL) | YES | - |
-| webhook_secret_env | string (ENV_VAR) | YES | "CHECKOUT_WEBHOOK_SECRET" |
-| idempotency | boolean | YES | true |
-| success_redirect | string (URL) | YES | - |
-| cancel_redirect | string (URL) | YES | - |
-| mock_mode | boolean | NO | true |
+| provider | enum(stripe,hotmart,kiwify,monetizze,eduzz,digistore24) | SIM | "stripe" |
+| webhook_url | string (URL) | SIM | - |
+| webhook_secret_env | string (ENV_VAR) | SIM | "CHECKOUT_WEBHOOK_SECRET" |
+| idempotency | boolean | SIM | true |
+| success_redirect | string (URL) | SIM | - |
+| cancel_redirect | string (URL) | SIM | - |
+| mock_mode | boolean | NAO | true |
 
-### checkout_ds24 (when provider=digistore24)
-| Field | Type | Default |
+### checkout_ds24 (quando provider=digistore24)
+| Campo | Tipo | Padrao |
 |-------|------|---------|
 | ds24_product_id | string | - |
 | ds24_api_key_env | ENV_VAR | "DS24_API_KEY" |
@@ -82,8 +82,8 @@ related:
 | merchant_of_record | enum(ds24,self) | "ds24" |
 | eu_vat_included | boolean | true |
 
-### checkout_hotmart (when provider=hotmart)
-| Field | Type | Default |
+### checkout_hotmart (quando provider=hotmart)
+| Campo | Tipo | Padrao |
 |-------|------|---------|
 | hotmart_product_id | string | - |
 | hotmart_token_env | ENV_VAR | "HOTMART_TOKEN" |
@@ -91,40 +91,40 @@ related:
 | webhook_format | const | "json" |
 | signature_algo | const | "sha256_hmac" |
 
-### courses (optional)
-| Field | Type | Required | Default |
+### courses (opcional)
+| Campo | Tipo | Obrigatorio | Padrao |
 |-------|------|----------|---------|
-| enabled | boolean | YES | false |
+| enabled | boolean | SIM | false |
 | modules | list[module_object] | COND | - |
-| module.title | string | YES | - |
-| module.lessons | list[lesson_object] | YES | - |
-| module.drip_days | integer | NO | 0 |
-| certification | boolean | NO | false |
-| completion_threshold | float (0.0-1.0) | NO | 0.80 |
+| module.title | string | SIM | - |
+| module.lessons | list[lesson_object] | SIM | - |
+| module.drip_days | integer | NAO | 0 |
+| certification | boolean | NAO | false |
+| completion_threshold | float (0.0-1.0) | NAO | 0.80 |
 
-### ads (optional)
-| Field | Type | Default |
+### ads (opcional)
+| Campo | Tipo | Padrao |
 |-------|------|---------|
 | platforms | list[enum(meta,google,tiktok,linkedin)] | - |
 | monthly_budget | int (centavos) | - |
 | pixel_env | ENV_VAR | "META_PIXEL_ID" |
 
-### emails (optional)
-| Field | Type | Default |
+### emails (opcional)
+| Campo | Tipo | Padrao |
 |-------|------|---------|
 | provider | enum(resend,sendgrid,ses,mailchimp) | "resend" |
 | api_key_env | ENV_VAR | "EMAIL_API_KEY" |
 | sequences | list[sequence] | - |
 
-### validation (required)
+### validation (obrigatorio)
 margin_check: true, webhook_test: true, mock_before_live: true
 
-## Rules
-1. Prices in centavos/cents (integers). 2. floor_margin >= 0.30.
-3. Secrets: ENV_VAR only. 4. mock_mode: true in dev. 5. Min 1 tier.
+## Regras
+1. Precos em centavos/cents (inteiros). 2. floor_margin >= 0.30.
+3. Segredos: apenas ENV_VAR. 4. mock_mode: true em desenvolvimento. 5. Minimo de 1 tier.
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacionamento | Pontuacao |
 |----------|-------------|-------|
 | bld_schema_social_publisher | sibling | 0.54 |
 | bld_schema_usage_report | sibling | 0.51 |

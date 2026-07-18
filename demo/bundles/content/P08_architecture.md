@@ -3,14 +3,14 @@ kind: architecture
 id: bld_architecture_knowledge_card
 pillar: P08
 llm_function: CONSTRAIN
-purpose: Component map of knowledge_card — inventory, dependencies, and architectural position
+purpose: "Mapa de componentes do knowledge_card -- inventario, dependencias e posicao arquitetural"
 quality: null
-title: "Architecture Knowledge Card"
+title: "Arquitetura: knowledge_card"
 version: "1.0.0"
 author: n03_builder
 tags: [knowledge_card, builder, examples]
-tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+tldr: "Exemplos-modelo e anti-exemplos de construcao de knowledge_card, demonstrando estrutura ideal e armadilhas comuns."
+domain: "construcao de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
@@ -21,19 +21,20 @@ related:
   - knowledge-card-builder
   - bld_architecture_rag_source
 ---
-## Component Inventory
-| Name | Role | Owner | Status |
+
+## Inventario de Componentes
+| Nome | Papel | Dono | Status |
 |------|------|-------|--------|
-| title | Short searchable label identifying the fact | author | required |
-| body | Distilled atomic fact content, high information density >= 0.8 | author | required |
-| domain_tags | Topic labels enabling retrieval routing | author | required |
-| card_type | Classification: domain_kc or meta_kc | author | required |
-| sources | Origin references for the distilled fact | author | required |
-| confidence_score | Reliability rating of the fact (0.0–1.0) | author | required |
-| version | Revision counter for fact updates | author | required |
-| linked_artifacts | Other cards or artifacts this fact connects to | author | optional |
-| expiry_hint | Signal that the fact may become stale after a date | author | optional |
-## Dependency Graph
+| title | Rotulo curto e pesquisavel que identifica o fato | author | obrigatorio |
+| body | Conteudo do fato atomico destilado, densidade de informacao alta (>= 0.8) | author | obrigatorio |
+| domain_tags | Rotulos de topico que habilitam o roteamento de recuperacao | author | obrigatorio |
+| card_type | Classificacao: domain_kc ou meta_kc | author | obrigatorio |
+| sources | Referencias de origem do fato destilado | author | obrigatorio |
+| confidence_score | Nota de confiabilidade do fato (0.0-1.0) | author | obrigatorio |
+| version | Contador de revisao para atualizacoes do fato | author | obrigatorio |
+| linked_artifacts | Outros cards ou artefatos aos quais este fato se conecta | author | opcional |
+| expiry_hint | Sinaliza que o fato pode ficar desatualizado apos uma data | author | opcional |
+## Grafo de Dependencias
 ```
 rag_source     --produces--> knowledge_card
 knowledge_card --queried_by--> knowledge_index
@@ -42,34 +43,34 @@ knowledge_card --informs--> few_shot_example
 knowledge_card --referenced_by--> context_doc
 knowledge_card --referenced_by--> agent
 ```
-| From | To | Type | Data |
+| De | Para | Tipo | Dado |
 |------|----|------|------|
-| rag_source | knowledge_card | data_flow | raw source text to distill |
-| knowledge_card | knowledge_index | data_flow | title, body, tags for BM25 and vector indexing |
-| knowledge_index | system_prompt | data_flow | retrieved facts injected into prompt context |
-| knowledge_card | few_shot_example | data_flow | factual grounding for input/output pairs |
-| knowledge_card | context_doc | data_flow | referenced as supporting evidence |
-| knowledge_card | agent | data_flow | linked domain knowledge in agent definition |
-## Boundary Table
-| knowledge_card IS | knowledge_card IS NOT |
+| rag_source | knowledge_card | data_flow | texto de origem bruto para destilar |
+| knowledge_card | knowledge_index | data_flow | title, body, tags para indexacao BM25 e vetorial |
+| knowledge_index | system_prompt | data_flow | fatos recuperados injetados no contexto do prompt |
+| knowledge_card | few_shot_example | data_flow | embasamento factual para os pares de input/output |
+| knowledge_card | context_doc | data_flow | referenciado como evidencia de apoio |
+| knowledge_card | agent | data_flow | conhecimento de dominio vinculado na definicao do agent |
+## Tabela de Fronteira
+| knowledge_card E | knowledge_card NAO E |
 |-------------------|----------------------|
-| Atomic searchable fact with density >= 0.8 | Broad reference document without density gate |
-| Versioned and source-attributed | Spec for an LLM model or its parameters |
-| Classified as domain_kc or meta_kc | Short definition entry (3 lines max) |
-| Injected into prompts via retrieval index | External URL pointer without distilled content |
-| Max 5KB body (high signal-to-noise) | Input/output demonstration pair |
-| Expirable when facts can become stale | Agent identity or behavioral definition |
-## Layer Map
-| Layer | Components | Purpose |
+| Fato atomico e pesquisavel com densidade >= 0.8 | Documento de referencia amplo, sem portao de densidade |
+| Versionado e com fonte atribuida | Especificacao de um modelo de LLM ou de seus parametros |
+| Classificado como domain_kc ou meta_kc | Entrada de definicao curta (maximo 3 linhas) |
+| Injetado em prompts via indice de recuperacao | Ponteiro de URL externa sem conteudo destilado |
+| Corpo de no maximo 5KB (alta relacao sinal-ruido) | Par de demonstracao de input/output |
+| Pode expirar quando os fatos ficam desatualizados | Identidade do agent ou definicao comportamental |
+## Mapa de Camadas
+| Camada | Componentes | Proposito |
 |-------|------------|---------|
-| Identity | title, card_type, version | Name, classify, and version the fact |
-| Content | body, confidence_score, expiry_hint | Carry the distilled fact with reliability signal |
-| Discoverability | domain_tags, linked_artifacts | Enable retrieval routing and cross-referencing |
-| Provenance | sources | Trace the fact back to its origin |
-| Consumption | knowledge_index, system_prompt | Retrieve and inject facts into agent context at runtime |
+| Identidade | title, card_type, version | Nomear, classificar e versionar o fato |
+| Conteudo | body, confidence_score, expiry_hint | Carregar o fato destilado com sinal de confiabilidade |
+| Descobribilidade | domain_tags, linked_artifacts | Habilitar o roteamento de recuperacao e o cross-reference |
+| Procedencia | sources | Rastrear o fato ate sua origem |
+| Consumo | knowledge_index, system_prompt | Recuperar e injetar fatos no contexto do agent em tempo de execucao |
 
 ## Related Artifacts
-| Artifact | Relationship | Score |
+| Artefato | Relacao | Pontuacao |
 |----------|-------------|-------|
 | [[bld_architecture_knowledge_index]] | sibling | 0.32 |
 | [[knowledge-card-builder]] | upstream | 0.32 |

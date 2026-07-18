@@ -3,24 +3,24 @@ kind: instruction
 id: bld_instruction_product_match
 pillar: P03
 llm_function: REASON
-purpose: Step-by-step production process for product_match
-pattern: 3-phase pipeline (research -> compose -> validate)
+purpose: Processo de produção passo a passo para product_match
+pattern: pipeline de 3 fases (pesquisa -> compor -> validar)
 quality: null
-title: "Instruction Product Match"
+title: "Instruções -- Product Match"
 version: "1.0.0"
 author: n03_builder
 tags:
   - "product_match"
   - "builder"
   - "examples"
-tldr: "Golden and anti-examples for product_match construction, demonstrating ideal structure and common pitfalls."
-domain: "product match construction"
+tldr: "Exemplos ideais (golden) e anti-exemplos para a construção de product_match, demonstrando a estrutura ideal e as armadilhas comuns."
+domain: "construção de product_match"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F6_produce"
 keywords:
-  - "product match construction"
-  - "instruction product match"
+  - "construção de product_match"
+  - "instruções product match"
   - "product_match"
   - "builder"
   - "examples"
@@ -33,50 +33,56 @@ density_score: 0.90
 related:
   - bld_schema_product_match
 ---
-# Instructions: How to Produce a product_match
-## Phase 1: RESEARCH
-1. Identify the record-linkage task: which supplier catalog joins to which marketplace listing set
-2. Read `_tools/capability_generators/product_match.py` `build()` end-to-end -- the generator IS
-   the ground truth; a spec that contradicts it is wrong by definition
-3. Confirm the 6 dashboard-exposed input fields against `MOLD_PRODUCT_MATCH.input_contract`
+# Instruções: Como Produzir um product_match
+## Fase 1: PESQUISA
+1. Identifique a tarefa de casamento de registros: qual catálogo de fornecedor se une a qual
+   conjunto de anúncios de marketplace
+2. Leia `_tools/capability_generators/product_match.py` `build()` de ponta a ponta -- o gerador É
+   a fonte da verdade; uma spec que o contradiz está errada por definição
+3. Confirme os 6 campos de entrada expostos no dashboard contra `MOLD_PRODUCT_MATCH.input_contract`
    (apps/dashboard_web/lib/molds.ts): items, match_join_keys, match_engine,
    match_confidence_floor, audit_enabled, audit_min_photo_px
-4. Note the internal-only `match_exclude_keys` override (read by the generator, absent from the
-   dashboard mold) -- default `[ean, gtin, barcode]`
-5. Confirm the 4 output sections + frozen order/layout against `MOLD_PRODUCT_MATCH.output_sections`
-6. Check the match_engine implementation status (bld_knowledge_product_match.md) -- do NOT
-   describe an enum value as functional unless the code proves it
-7. Check for existing product_match artifacts to avoid duplicates (`p04_pm_*.md`)
-8. Confirm capability slug for id: snake_case, lowercase, no hyphens
-## Phase 2: COMPOSE
-1. Read `bld_schema_product_match.md` -- source of truth for all fields
-2. Read `bld_output_product_match.md` -- fill `{{vars}}` following SCHEMA constraints
-3. Fill frontmatter: all required fields (quality: null -- never self-score)
-4. Write Overview section: what is matched/audited, who consumes the output (dashboard run,
-   `sourcing_opportunity.py`), offline-first framing
-5. Write Input Contract section: all 6 dashboard fields + the internal `match_exclude_keys`
-   override, each with type/required/default exactly as in `MOLD_PRODUCT_MATCH`
-6. Write Output Sections: Resultado do match (table), Auditoria de catalogo (list), Proveniencia
-   (fields), Veredito (fields) -- in this exact order, with the exact declared columns/keys
-7. Write Gate section: the named gate `match_confiavel` + its blocker vocabulary (missing public
-   photo URL, low-res photo, match_engine still `none`)
-8. Verify body <= 5120 bytes
-9. Verify id matches `^p04_pm_[a-z][a-z0-9_]+$`
-## Phase 3: VALIDATE
-1. Check `p11_qg_product_match.md` -- verify each HARD gate manually
-2. Confirm YAML frontmatter parses without errors
-3. Confirm id matches `p04_pm_` prefix
-4. Confirm kind == product_match
-5. Confirm the 4 output sections match `MOLD_PRODUCT_MATCH` order, layout, and columns exactly
-6. Confirm match_engine is one of the 4 closed-enum values (reverse_image, embedding, manual, none)
-7. Confirm EAN/GTIN/barcode are documented as EXCLUDED, never as an active join key
-8. Confirm the offline honest-null rule is stated: match_engine=none or no credential -> every
-   match row is NAO at 0.0, never fabricated
-9. Cross-check boundary: record-linkage + catalog audit only (not vision_tool, not
-   opportunity_matrix, not marketplace_listing)?
-10. Revise if score < 8.0 before outputting
+4. Anote o override interno `match_exclude_keys` (lido pelo gerador, ausente do mold do
+   dashboard) -- padrão `[ean, gtin, barcode]`
+5. Confirme as 4 seções de saída + ordem/layout congelados contra `MOLD_PRODUCT_MATCH.output_sections`
+6. Verifique o status de implementação do match_engine (bld_knowledge_product_match.md) -- NÃO
+   descreva um valor do enum como funcional a menos que o código prove isso
+7. Verifique se já existem artefatos product_match para evitar duplicatas (`p04_pm_*.md`)
+8. Confirme o slug da capability para o id: snake_case, minúsculas, sem hifens
+## Fase 2: COMPOSIÇÃO
+1. Leia `bld_schema_product_match.md` -- fonte da verdade para todos os campos
+2. Leia `bld_output_product_match.md` -- preencha `{{vars}}` seguindo as restrições do SCHEMA
+3. Preencha o frontmatter: todos os campos obrigatórios (quality: null -- nunca se autoavalie)
+4. Escreva a seção Overview: o que é casado/auditado, quem consome a saída (execução no
+   dashboard, `sourcing_opportunity.py`), enquadramento offline-first
+5. Escreva a seção Input Contract: os 6 campos do dashboard + o override interno
+   `match_exclude_keys`, cada um com tipo/obrigatoriedade/padrão exatamente como em
+   `MOLD_PRODUCT_MATCH`
+6. Escreva as Output Sections: Resultado do match (table), Auditoria de catalogo (list),
+   Proveniencia (fields), Veredito (fields) -- nesta ordem exata, com as colunas/chaves
+   exatamente declaradas
+7. Escreva a seção Gate: o gate nomeado `match_confiavel` + seu vocabulário de bloqueadores (URL
+   pública de foto ausente, foto de baixa resolução, match_engine ainda `none`)
+8. Verifique se o corpo é <= 5120 bytes
+9. Verifique se o id casa com `^p04_pm_[a-z][a-z0-9_]+$`
+## Fase 3: VALIDAÇÃO
+1. Verifique `p11_qg_product_match.md` -- confirme manualmente cada gate HARD
+2. Confirme que o frontmatter YAML parseia sem erros
+3. Confirme que o id casa com o prefixo `p04_pm_`
+4. Confirme que kind == product_match
+5. Confirme que as 4 seções de saída casam exatamente com a ordem, o layout e as colunas de
+   `MOLD_PRODUCT_MATCH`
+6. Confirme que match_engine é um dos 4 valores do enum fechado (reverse_image, embedding,
+   manual, none)
+7. Confirme que EAN/GTIN/código de barras estão documentados como EXCLUÍDOS, nunca como chave de
+   join ativa
+8. Confirme que a regra honest-null offline está declarada: match_engine=none ou sem credencial
+   -> toda linha de match é NAO em 0.0, nunca fabricada
+9. Cheque cruzado de fronteira: apenas casamento de registros + auditoria de catálogo (não
+   vision_tool, não opportunity_matrix, não marketplace_listing)?
+10. Revise se a pontuação < 8.0 antes de entregar
 
-## ISO Loading
+## Carregamento de ISO
 
 ```yaml
 loader: cex_skill_loader
@@ -88,22 +94,22 @@ priority: high
 python _tools/cex_skill_loader.py --verify product_match
 ```
 
-## Properties
+## Propriedades
 
-| Property | Value |
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `instruction` |
 | Pillar | P03 |
-| Domain | product match construction |
+| Domain | construção de product_match |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[bld_prompt_vision_tool]] | sibling | 0.49 |
 | [[bld_prompt_output_validator]] | sibling | 0.47 |

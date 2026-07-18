@@ -3,59 +3,59 @@ kind: quality_gate
 id: p03_qg_multimodal_prompt
 pillar: P11
 llm_function: GOVERN
-purpose: Quality gate with HARD and SOFT scoring for multimodal_prompt
+purpose: Gate de qualidade com pontuação HARD e SOFT para multimodal_prompt
 quality: null
 title: "Quality Gate Multimodal Prompt"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [multimodal_prompt, builder, quality_gate]
-tldr: "Quality gate with HARD and SOFT scoring for multimodal_prompt"
-domain: "multimodal_prompt construction"
+tldr: "Gate de qualidade com pontuação HARD e SOFT para multimodal_prompt"
+domain: "construção de multimodal_prompt"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F7_govern"
-keywords: [multimodal_prompt construction, quality gate multimodal prompt, multimodal_prompt, builder, quality_gate, quality gate, fail condition, scoring guide, metric threshold, threshold operator]
+keywords: [construção de multimodal_prompt, quality gate multimodal prompt, multimodal_prompt, builder, quality_gate, gate de qualidade, condição de falha, guia de pontuação, limiar de métrica, operador de limiar]
 density_score: 0.85
 related:
   - multimodal-prompt-builder
 ---
-## Quality Gate
+## Gate de Qualidade
 
-## Definition
-(Table: metric, threshold, operator, scope)
-| metric         | threshold | operator | scope          |
+## Definição
+(Tabela: métrica, limiar, operador, escopo)
+| métrica         | limiar | operador | escopo          |
 |----------------|-----------|----------|----------------|
-| modalities     | 2         | >=       | each prompt    |
-| cross_ref      | 1         | >=       | metadata       |
+| modalities     | 2         | >=       | cada prompt    |
+| cross_ref      | 1         | >=       | metadados      |
 
-## HARD Gates
-(Table: ID | Check | Fail Condition)
-| ID         | Check                          | Fail Condition                                      |
+## Gates HARD
+(Tabela: ID | Verificação | Condição de Falha)
+| ID         | Verificação                          | Condição de Falha                                      |
 |------------|--------------------------------|-----------------------------------------------------|
-| H01        | YAML frontmatter valid         | Invalid YAML syntax or missing fields               |
-| H02        | ID matches ^p03_mmp_[a-z][a-z0-9_]+.md$ | ID format invalid or missing schema pattern        |
-| H03        | kind field matches 'multimodal_prompt' | Kind mismatch or missing field                     |
-| H04        | At least 2 modalities present  | Only 1 modality or none specified                   |
-| H05        | No conflicting instructions    | Contradictory commands across modalities          |
-| H06        | Metadata includes 'modality_type' | Missing required metadata field                   |
-| H07        | Prompt not empty               | Empty text/audio/vision content                     |
+| H01        | Frontmatter YAML válido         | Sintaxe YAML inválida ou campos ausentes               |
+| H02        | ID corresponde a ^p03_mmp_[a-z][a-z0-9_]+.md$ | Formato de ID inválido ou padrão de schema ausente        |
+| H03        | Campo kind corresponde a 'multimodal_prompt' | Kind incompatível ou campo ausente                     |
+| H04        | Pelo menos 2 modalidades presentes  | Apenas 1 modalidade ou nenhuma especificada                   |
+| H05        | Sem instruções conflitantes    | Comandos contraditórios entre modalidades          |
+| H06        | Metadados incluem 'modality_type' | Campo de metadado obrigatório ausente                   |
+| H07        | Prompt não vazio               | Conteúdo de texto/áudio/visão vazio                     |
 
-## SOFT Scoring
-(Table: Dim | Dimension | Weight | Scoring Guide)
-| Dim | Dimension         | Weight | Scoring Guide                                      |
+## Pontuação SOFT
+(Tabela: Dim | Dimensão | Peso | Guia de Pontuação)
+| Dim | Dimensão         | Peso | Guia de Pontuação                                      |
 |-----|-------------------|--------|----------------------------------------------------|
-| D1  | Coherence         | 0.15   | 1.0: Seamless; 0.5: Minor gaps; 0.0: Incoherent    |
-| D2  | Completeness      | 0.15   | 1.0: All modalities covered; 0.5: Missing 1 modality |
-| D3  | Clarity           | 0.12   | 1.0: Unambiguous; 0.5: Ambiguous; 0.0: Confusing   |
-| D4  | Cross-modal alignment | 0.18 | 1.0: Perfect alignment; 0.5: Partial; 0.0: None    |
-| D5  | Modality balance  | 0.10   | 1.0: Even distribution; 0.5: Skewed; 0.0: Overload |
-| D6  | Creativity        | 0.10   | 1.0: Novel; 0.5: Standard; 0.0: Dull                |
-| D7  | Technical accuracy| 0.10   | 1.0: Correct; 0.5: Minor errors; 0.0: Major flaws   |
-| D8  | User intent       | 0.10   | 1.0: Clear purpose; 0.5: Vague; 0.0: Misaligned    |
+| D1  | Coerência         | 0.15   | 1.0: Perfeita; 0.5: Pequenas lacunas; 0.0: Incoerente    |
+| D2  | Completude      | 0.15   | 1.0: Todas as modalidades cobertas; 0.5: Falta 1 modalidade |
+| D3  | Clareza           | 0.12   | 1.0: Inequívoco; 0.5: Ambíguo; 0.0: Confuso   |
+| D4  | Alinhamento cross-modal | 0.18 | 1.0: Alinhamento perfeito; 0.5: Parcial; 0.0: Nenhum    |
+| D5  | Equilíbrio de modalidade  | 0.10   | 1.0: Distribuição uniforme; 0.5: Desequilibrado; 0.0: Sobrecarregado |
+| D6  | Criatividade        | 0.10   | 1.0: Original; 0.5: Padrão; 0.0: Sem graça                |
+| D7  | Precisão técnica| 0.10   | 1.0: Correto; 0.5: Pequenos erros; 0.0: Falhas graves   |
+| D8  | Intenção do usuário       | 0.10   | 1.0: Propósito claro; 0.5: Vago; 0.0: Desalinhado    |
 
-## Actions
-(Table: Score | Action)
-| Score     | Action         |
+## Ações
+(Tabela: Pontuação | Ação)
+| Pontuação     | Ação         |
 |-----------|----------------|
 | >=9.5     | GOLDEN         |
 | >=8.0     | PUBLISH        |
@@ -63,14 +63,14 @@ related:
 | <7.0      | REJECT         |
 
 ## Bypass
-(Table: conditions, approver, audit trail)
-| conditions              | approver         | audit trail                          |
+(Tabela: condições, aprovador, trilha de auditoria)
+| condições              | aprovador         | trilha de auditoria                          |
 |-------------------------|------------------|--------------------------------------|
-| Emergency fix required  | Senior Engineer  | Bypass logged with reason and approver |
+| Correção emergencial necessária  | Engenheiro Sênior  | Bypass registrado com motivo e aprovador |
 
-## Examples
+## Exemplos
 
-## Golden Example
+## Exemplo Golden
 ```yaml
 model: "Salesforce/blip"
 modalities: [image, text, audio]
@@ -81,17 +81,17 @@ prompt: |
   Describe this scene and the audio in detail.
 ```
 
-## Anti-Example 1: Text-only prompt
+## Anti-Exemplo 1: Prompt somente-texto
 ```yaml
 model: "Salesforce/blip"
 modalities: [text]
 task: "Generate a caption"
 prompt: "Describe this image of a cat on a windowsill"
 ```
-## Why it fails
-Excludes required non-text modalities (image/audio) despite claiming to be multimodal. Fails to integrate cross-modal elements.
+## Por que falha
+Exclui as modalidades não-texto obrigatórias (imagem/áudio) apesar de afirmar ser multimodal. Não integra elementos cross-modais.
 
-## Anti-Example 2: Model configuration
+## Anti-Exemplo 2: Configuração de modelo
 ```yaml
 model: "Salesforce/blip"
 modalities: [image, text]
@@ -101,17 +101,17 @@ prompt: |
   max_tokens: 50
   temperature: 0.7
 ```
-## Why it fails
-Includes model parameters (max_tokens, temperature) which belong to multi_modal_config, not the actual multimodal prompt content.
+## Por que falha
+Inclui parâmetros de modelo (max_tokens, temperature) que pertencem ao multi_modal_config, não ao conteúdo real do multimodal prompt.
 
-### H_RELATED: Cross-Reference Check (HARD)
-- [ ] `related:` frontmatter field populated (min 3 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream or sibling reference
-- Gate: REJECT if < 3 entries (auto-populated by cex_wikilink.py at F6.5)
+### H_RELATED: Checagem de Referência Cruzada (HARD)
+- [ ] Campo de frontmatter `related:` preenchido (mín. 3 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Ao menos 1 referência upstream e 1 downstream ou sibling
+- Gate: REJECT se < 3 entradas (auto-preenchido por cex_wikilink.py no F6.5)
 
-### S_RELATED: Cross-Reference Check (SOFT)
-- [ ] `related:` frontmatter field populated (3-15 entries)
-- [ ] `## Related Artifacts` section present in artifact body
-- [ ] At least 1 upstream and 1 downstream reference
-- Penalty: -0.3 if empty (does not block, encourages wiring)
+### S_RELATED: Checagem de Referência Cruzada (SOFT)
+- [ ] Campo de frontmatter `related:` preenchido (3-15 entradas)
+- [ ] Seção `## Related Artifacts` presente no corpo do artefato
+- [ ] Ao menos 1 referência upstream e 1 downstream
+- Penalidade: -0.3 se vazio (não bloqueia, incentiva a interligação)

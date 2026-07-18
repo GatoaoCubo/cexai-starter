@@ -3,17 +3,17 @@ kind: architecture
 id: bld_architecture_research_pipeline
 pillar: P08
 llm_function: CONSTRAIN
-purpose: Component map of research pipeline — 7 stages, multi-model, data flow
+purpose: Mapa de componentes do research pipeline -- 7 etapas, multi-modelo, fluxo de dados
 quality: null
-title: "Architecture Research Pipeline"
+title: "Arquitetura: Pipeline de Pesquisa"
 version: "1.0.0"
 author: n03_builder
 tags:
   - "research_pipeline"
   - "builder"
   - "examples"
-tldr: "Golden and anti-examples for research pipeline construction, demonstrating ideal structure and common pitfalls."
-domain: "research pipeline construction"
+tldr: "Exemplos-modelo e anti-exemplos para a construção de pipelines de pesquisa, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de pipeline de pesquisa"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
@@ -32,9 +32,9 @@ density_score: 0.90
 related:
   - research-pipeline-builder
 ---
-# Architecture: research_pipeline in the CEX
+# Arquitetura: research_pipeline no CEX
 
-## 7-Stage Pipeline
+## Pipeline de 7 Etapas
 ```
 QUERY → S1 INTENT (classify) → S2 PLAN/STORM (5 perspectives × 5-7 sub-Qs)
   → S3 RETRIEVE/CRAG (30+ sources parallel, quality gate ≥0.7)
@@ -45,7 +45,7 @@ QUERY → S1 INTENT (classify) → S2 PLAN/STORM (5 perspectives × 5-7 sub-Qs)
   → REPORT [HTML + PPTX + JSON]
 ```
 
-## Data Flow
+## Fluxo de Dados
 ```
 config.yaml ──► intent_classifier ──► storm_planner
                                           │
@@ -77,33 +77,33 @@ config.yaml ──► intent_classifier ──► storm_planner
                           HTML   PPTX   JSON
 ```
 
-## Component Inventory
-| Component | Stage | Model | External |
+## Inventário de Componentes
+| Componente | Etapa | Modelo | Externo |
 |-----------|-------|-------|----------|
-| intent_classifier | S1 | regex+embed | none |
-| storm_planner | S2 | reasoning | LLM API |
-| parallel_retriever | S3 | APIs | 30+ sources |
-| crag_scorer | S3 | fast | LLM API |
-| entity_resolver | S4 | deterministic | Embedding API |
-| gartner_scorer | S5 | fast | LLM API |
-| got_synthesizer | S6 | multi-model | Multi-LLM |
-| critic_verifier | S7 | thinking | Thinking model |
+| intent_classifier | S1 | regex+embed | nenhum |
+| storm_planner | S2 | raciocínio | LLM API |
+| parallel_retriever | S3 | APIs | 30+ fontes |
+| crag_scorer | S3 | rápido | LLM API |
+| entity_resolver | S4 | determinístico | Embedding API |
+| gartner_scorer | S5 | rápido | LLM API |
+| got_synthesizer | S6 | multi-modelo | Multi-LLM |
+| critic_verifier | S7 | raciocínio | Modelo de raciocínio |
 | report_renderer | Out | template | Jinja2 |
 
-## Position in CEX
-| Layer | Location |
+## Posição no CEX
+| Camada | Localização |
 |-------|----------|
-| Template + Examples | P04_tools/{templates,examples}/ |
-| Nucleus instance | N01_intelligence/{tools,knowledge,orchestration}/ |
-| Company config | _instances/{co}/N01_intelligence/ |
+| Template + Exemplos | P04_tools/{templates,examples}/ |
+| Instância de nucleus | N01_intelligence/{tools,knowledge,orchestration}/ |
+| Config da empresa | _instances/{co}/N01_intelligence/ |
 
-## Boundaries
-| This builder | Other builder |
+## Limites
+| Este builder | Outro builder |
 |-------------|---------------|
-| Pipeline architecture | Python runtime → cli-tool-builder |
-| Source catalog | API client code → api-client-builder |
-| Config schema | DB schema → db-connector-builder |
-| Report structure | HTML/CSS → formatter-builder |
+| Arquitetura do pipeline | Runtime Python → cli-tool-builder |
+| Catálogo de fontes | Código de cliente de API → api-client-builder |
+| Schema de config | Schema de banco de dados → db-connector-builder |
+| Estrutura do relatório | HTML/CSS → formatter-builder |
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

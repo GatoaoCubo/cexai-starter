@@ -21,59 +21,59 @@ related:
   - bld_memory_prompt_template
   - prompt-template-builder
 ---
-# Domain Knowledge: prompt_template
-## Executive Summary
-Prompt templates are parameterized text molds where fixed structure and dynamic content are separated via typed `{{variable}}` slots filled at invocation time. The same template produces N distinct prompts by substituting different variable values — this is the core reuse contract. They differ from system prompts (fixed identity, no slots), user prompts (one-time tasks), few-shot examples (fixed examples), and meta-prompts (which generate other prompts) by being reusable molds with declared, typed variable slots.
-## Spec Table
-| Property | Value |
+# Conhecimento de Domínio: prompt_template
+## Resumo Executivo
+Prompt templates são moldes de texto parametrizados onde a estrutura fixa e o conteúdo dinâmico são separados por meio de slots tipados `{{variable}}` preenchidos no momento da invocação. O mesmo template produz N prompts distintos ao substituir diferentes valores de variável -- esse é o contrato central de reuso. Eles se diferenciam de system prompts (identidade fixa, sem slots), user prompts (tarefas únicas), few-shot examples (exemplos fixos) e meta-prompts (que geram outros prompts) por serem moldes reutilizáveis com slots de variável declarados e tipados.
+## Tabela de Especificação
+| Propriedade | Valor |
 |----------|-------|
-| Pillar | P03 (prompts) |
-| Kind | `prompt_template` (exact literal) |
-| ID pattern | `p03_pt_{slug}` |
-| Required frontmatter | 14 fields |
-| Quality gates | 8 HARD + 10 SOFT |
-| Max body | 4096 bytes |
-| Density minimum | >= 0.80 |
-| Quality field | always `null` |
-| Min variables | 1 (at least one `{{variable}}` slot) |
-| Injection point | `system` or `user` |
-| Tier-1 syntax | `{{variable}}` (Mustache-compatible) |
-| Tier-2 syntax | `[VARIABLE]` (when Mustache conflicts) |
-## Patterns
-| Pattern | Application |
+| Pilar | P03 (prompts) |
+| Kind | `prompt_template` (literal exato) |
+| Padrão de ID | `p03_pt_{slug}` |
+| Frontmatter obrigatório | 14 campos |
+| Gates de qualidade | 8 HARD + 10 SOFT |
+| Corpo máximo | 4096 bytes |
+| Densidade mínima | >= 0.80 |
+| Campo quality | sempre `null` |
+| Mínimo de variáveis | 1 (pelo menos um slot `{{variable}}`) |
+| Ponto de injeção | `system` ou `user` |
+| Sintaxe tier-1 | `{{variable}}` (compatível com Mustache) |
+| Sintaxe tier-2 | `[VARIABLE]` (quando há conflito com Mustache) |
+## Padrões
+| Padrão | Aplicação |
 |---------|-------------|
-| Uniform syntax | All {{}} Mustache OR all [] bracket — never mixed in one template |
-| Typed variables | Declare type (string, list, integer, boolean, object) for validation |
-| Required vs optional | Required variables have no default; optional carry default value |
-| Injection point | Declare system or user — determines where in conversation template lands |
-| Composability | Template designed for embedding in larger templates via partials |
-| Idempotency | Same template + same variables MUST always produce same rendered prompt |
-| Variable-body match | Every `{{variable}}` in body must be declared in Variables section |
-| Rendering pipeline | Template -> variable substitution -> rendered prompt -> LLM call |
-## Anti-Patterns
-| Anti-Pattern | Why it fails |
+| Sintaxe uniforme | Tudo em {{}} Mustache OU tudo em [] colchetes -- nunca misturado no mesmo template |
+| Variáveis tipadas | Declare o tipo (string, list, integer, boolean, object) para validação |
+| Obrigatória vs opcional | Variáveis obrigatórias não têm default; opcionais carregam valor default |
+| Ponto de injeção | Declare system ou user -- determina onde o template cai na conversa |
+| Composabilidade | Template projetado para ser embutido em templates maiores via partials |
+| Idempotência | O mesmo template + as mesmas variáveis DEVEM sempre produzir o mesmo prompt renderizado |
+| Correspondência variável-corpo | Toda `{{variable}}` no corpo deve estar declarada na seção Variables |
+| Pipeline de renderização | Template -> substituição de variáveis -> prompt renderizado -> chamada ao LLM |
+## Anti-Padrões
+| Anti-Padrão | Por que falha |
 |-------------|-------------|
-| No `{{variable}}` in body | Not a template — it's a fixed prompt |
-| Undeclared variable in body | Variable present in body but missing from Variables section |
-| Mixed syntax ({{}} and []) | Inconsistent; tools cannot reliably extract all variables |
-| Hardcoded content in variable slots | Slots must be empty placeholders only |
-| No injection_point declared | Consumer doesn't know where to place rendered text |
-| Variables without constraints | No type/enum/regex means any value accepted — fragile |
-| Template with side effects | Templates must be pure text transformation, no side effects |
-## Application
-1. Identify the reuse contract: what varies between invocations?
-2. Extract variables: name, type, required/optional, constraints
-3. Choose syntax tier: `{{variable}}` (tier-1) or [VARIABLE] (tier-2)
-4. Set injection_point: system or user
-5. Write template body with all variable slots as empty placeholders
-6. Provide at least one complete invocation example with all slots filled
-7. Declare output format (what rendered template produces)
-8. Validate: all body vars declared, 8 HARD + 10 SOFT gates, body <= 4096 bytes
-## References
+| Nenhuma `{{variable}}` no corpo | Não é um template -- é um prompt fixo |
+| Variável não declarada no corpo | Variável presente no corpo mas ausente da seção Variables |
+| Sintaxe mista ({{}} e []) | Inconsistente; ferramentas não conseguem extrair todas as variáveis de forma confiável |
+| Conteúdo fixo em slots de variável | Slots devem ser apenas placeholders vazios |
+| injection_point não declarado | O consumidor não sabe onde posicionar o texto renderizado |
+| Variáveis sem restrições | Sem type/enum/regex, qualquer valor é aceito -- frágil |
+| Template com efeitos colaterais | Templates devem ser transformação pura de texto, sem efeitos colaterais |
+## Aplicação
+1. Identifique o contrato de reuso: o que varia entre invocações?
+2. Extraia as variáveis: nome, tipo, obrigatória/opcional, restrições
+3. Escolha o tier de sintaxe: `{{variable}}` (tier-1) ou [VARIABLE] (tier-2)
+4. Defina o injection_point: system ou user
+5. Escreva o corpo do template com todos os slots de variável como placeholders vazios
+6. Forneça ao menos um exemplo completo de invocação com todos os slots preenchidos
+7. Declare o formato de saída (o que o template renderizado produz)
+8. Valide: todas as variáveis do corpo declaradas, 8 gates HARD + 10 SOFT, corpo <= 4096 bytes
+## Referências
 - prompt-template-builder SCHEMA.md v1.0.0
 - LangChain PromptTemplate / ChatPromptTemplate
-- Mustache specification (logic-less templates)
-- Jinja2 template engine documentation
+- Especificação do Mustache (templates sem lógica)
+- Documentação do motor de templates Jinja2
 
 ## Related Artifacts
 | Artifact | Relationship | Score |

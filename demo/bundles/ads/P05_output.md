@@ -13,6 +13,17 @@ created: "2026-04-07"
 updated: "2026-04-07"
 density_score: 0.90
 llm_function: PRODUCE
+related:
+  - p03_ins_prompt_template
+  - p11_qg_prompt_template
+  - bld_output_template_input_schema
+  - bld_output_template_reverse_prompt
+  - bld_output_template_dataset_card
+  - bld_output_template_kind
+  - bld_output_template_visual_workflow
+  - bld_schema_input_schema
+  - p11_qg_function_def
+  - bld_output_template_workflow_node
 ---
 id: p03_pt_`{{topic_slug}}`
 kind: prompt_template
@@ -44,6 +55,17 @@ density_score: `{{density_score}}`
 ---
 
 # `{{title}}`
+
+> NOTA (núcleo N02/N03, bundle `ads`): este arquivo é o OUTPUT_TEMPLATE literal
+> do kind `prompt_template` -- o esqueleto exato (frontmatter + as 5 seções de
+> corpo abaixo) que qualquer artefato `prompt_template` produzido pela CEXAI
+> deve seguir. Os nomes de seção abaixo (`## Purpose`, `## Variables Table`,
+> `## Template Body`, `## Quality Gates`, `## Examples`) e os cabeçalhos de
+> tabela (name/type/required/default/description; gate/status/notes) são
+> contrato literal do schema -- por isso permanecem em inglês, idênticos ao
+> `P06_schema.md` deste bundle. A prosa deste comentário está em PT-BR; o
+> esqueleto abaixo está no formato exato exigido pelo schema.
+
 ## Purpose
 `{{purpose_paragraph}}`
 ## Variables Table
@@ -77,7 +99,18 @@ density_score: `{{density_score}}`
 {{example_rendered_output}}
 ```
 
+
 ## Related Artifacts
+
 | Artifact | Relationship | Score |
 |----------|-------------|-------|
-| bld_output_template_visual_workflow | sibling | 0.23 |
+| [[p03_ins_prompt_template]] | related | 0.31 |
+| [[p11_qg_prompt_template]] | related | 0.27 |
+| [[bld_output_template_input_schema]] | sibling | 0.26 |
+| [[bld_output_template_reverse_prompt]] | sibling | 0.26 |
+| [[bld_output_template_dataset_card]] | sibling | 0.23 |
+| [[bld_output_template_kind]] | sibling | 0.23 |
+| [[bld_output_template_visual_workflow]] | sibling | 0.22 |
+| [[bld_schema_input_schema]] | related | 0.21 |
+| [[p11_qg_function_def]] | related | 0.21 |
+| [[bld_output_template_workflow_node]] | sibling | 0.21 |

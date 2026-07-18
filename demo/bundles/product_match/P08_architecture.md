@@ -3,98 +3,98 @@ kind: architecture
 id: bld_architecture_product_match
 pillar: P08
 llm_function: CONSTRAIN
-purpose: Component map of product_match -- inventory, dependencies, and architectural position
+purpose: Mapa de componentes do product_match -- inventário, dependências, e posição arquitetural
 quality: null
-title: "Architecture Product Match"
+title: "Arquitetura -- Product Match"
 version: "1.0.0"
 author: n03_builder
 tags: [product_match, builder, examples]
-tldr: "Golden and anti-examples for product_match construction, demonstrating ideal structure and common pitfalls."
-domain: "product match construction"
+tldr: "Exemplos ideais (golden) e anti-exemplos para a construção de product_match, demonstrando a estrutura ideal e as armadilhas comuns."
+domain: "construção de product_match"
 created: "2026-07-02"
 updated: "2026-07-02"
 8f: "F1_constrain"
-keywords: [component map of product_match, and architectural position, product match construction, architecture product match, product_match, builder, examples, component inventory, dependency graph, boundary table]
+keywords: [mapa de componentes do product_match, e posição arquitetural, construção de product_match, arquitetura product match, product_match, builder, examples, inventário de componentes, grafo de dependências, tabela de fronteiras]
 density_score: 0.90
 related:
   - product-match-builder
   - bld_architecture_vision_tool
   - opportunity-matrix-builder
 ---
-## Component Inventory
-| Name | Role | Owner | Status |
+## Inventário de Componentes
+| Nome | Papel | Dono | Status |
 |------|------|-------|--------|
-| items | Supplier item list to match/audit (code, photo_uri, dimension, desc) | product_match | required |
-| match_join_keys | Composite non-key join fields | product_match | required |
-| match_exclude_keys | Fields NEVER in the join (ean, gtin, barcode) | product_match | internal (not in dashboard mold) |
-| match_engine | Backing matcher (reverse_image/embedding/manual/none) | product_match | required |
-| match_confidence_floor | Piso a match must clear to count SIM | product_match | required |
-| audit_enabled | Toggles the catalog-audit side-effect | product_match | recommended |
-| audit_min_photo_px | Low-res threshold for the photo audit | product_match | recommended |
-| match_confiavel | Named verdict gate (F7) | product_match | required |
-| generator | `_tools/capability_generators/product_match.py` `@register("product_match")` | N03 | implementation |
-| mold | `MOLD_PRODUCT_MATCH` (apps/dashboard_web/lib/molds.ts) | N03 | contract mirror |
-| consumer (shared helpers) | `sourcing_opportunity.py` (N06) imports `_normalize_join_key` + `_audit_text_vs_photo` | N06 | consumer |
-## Dependency Graph
+| items | Lista de itens do fornecedor a casar/auditar (code, photo_uri, dimension, desc) | product_match | obrigatório |
+| match_join_keys | Campos de join por não-chave composta | product_match | obrigatório |
+| match_exclude_keys | Campos que NUNCA entram no join (ean, gtin, barcode) | product_match | interno (ausente do mold do dashboard) |
+| match_engine | Motor de casamento (reverse_image/embedding/manual/none) | product_match | obrigatório |
+| match_confidence_floor | Piso que um match precisa ultrapassar para contar SIM | product_match | obrigatório |
+| audit_enabled | Ativa/desativa o efeito colateral de auditoria de catálogo | product_match | recomendado |
+| audit_min_photo_px | Limiar de baixa resolução para a auditoria de foto | product_match | recomendado |
+| match_confiavel | Gate de veredito nomeado (F7) | product_match | obrigatório |
+| gerador | `_tools/capability_generators/product_match.py` `@register("product_match")` | N03 | implementação |
+| mold | `MOLD_PRODUCT_MATCH` (apps/dashboard_web/lib/molds.ts) | N03 | espelho do contrato |
+| consumidor (auxiliares compartilhados) | `sourcing_opportunity.py` (N06) importa `_normalize_join_key` + `_audit_text_vs_photo` | N06 | consumidor |
+## Grafo de Dependências
 ```
-items               --feeds-->        match_join_keys
-match_join_keys     --composes-->     _normalize_join_key (composite key)
-match_exclude_keys  --strips-->       match_join_keys (defensive, logged as note)
-match_engine        --selects-->      Resultado do match rows
-match_confidence_floor --gates-->     match_confiavel
-audit_enabled       --toggles-->      Auditoria de catalogo
-audit_min_photo_px  --thresholds-->   _audit_text_vs_photo (low-res flag)
-Resultado do match  --feeds-->        Veredito (Cobertura)
-Auditoria de catalogo --feeds-->      Veredito (Bloqueadores, no-photo/low-res items)
-sourcing_opportunity.py --imports--> _normalize_join_key + _audit_text_vs_photo (N06 reuse)
+items               --alimenta-->       match_join_keys
+match_join_keys     --compõe-->         _normalize_join_key (chave composta)
+match_exclude_keys  --remove-->         match_join_keys (defensivo, registrado como nota)
+match_engine        --seleciona-->      linhas de Resultado do match
+match_confidence_floor --limita-->      match_confiavel
+audit_enabled       --ativa/desativa--> Auditoria de catalogo
+audit_min_photo_px  --limiariza-->      _audit_text_vs_photo (sinalização de baixa resolução)
+Resultado do match  --alimenta-->       Veredito (Cobertura)
+Auditoria de catalogo --alimenta-->     Veredito (Bloqueadores, itens sem foto/baixa resolução)
+sourcing_opportunity.py --importa--> _normalize_join_key + _audit_text_vs_photo (reuso pelo N06)
 ```
-| From | To | Type | Data |
+| De | Para | Tipo | Dados |
 |------|----|------|------|
-| items | match_join_keys | feeds | raw item dicts |
-| match_join_keys | Resultado do match | composes | composite match key string |
-| match_engine | Resultado do match | selects | row reason text ("nao executado" vs "pendente") |
-| match_confidence_floor | Veredito | gates | Cobertura ratio + match_confiavel |
-| audit_min_photo_px | Auditoria de catalogo | thresholds | low-res flag emission |
-| Resultado do match + Auditoria de catalogo | Veredito | feeds | Cobertura + Bloqueadores |
-| product_match.py | sourcing_opportunity.py | shared helper | `_normalize_join_key`, `_audit_text_vs_photo` (soft-import, product_match.py:314-330) |
-## Boundary Table
-| product_match IS | product_match IS NOT |
+| items | match_join_keys | alimenta | dicts brutos de item |
+| match_join_keys | Resultado do match | compõe | string da chave composta de match |
+| match_engine | Resultado do match | seleciona | texto do motivo da linha ("nao executado" vs "pendente") |
+| match_confidence_floor | Veredito | limita | proporção de Cobertura + match_confiavel |
+| audit_min_photo_px | Auditoria de catalogo | limiariza | emissão da sinalização de baixa resolução |
+| Resultado do match + Auditoria de catalogo | Veredito | alimenta | Cobertura + Bloqueadores |
+| product_match.py | sourcing_opportunity.py | auxiliar compartilhado | `_normalize_join_key`, `_audit_text_vs_photo` (soft-import, product_match.py:314-330) |
+## Tabela de Fronteiras
+| product_match É | product_match NÃO É |
 |-------------------|------------------------|
-| A composite NON-key join (photo+dimension+supplier_code) between a supplier item and a marketplace listing | A raw visual-analysis primitive that returns arbitrary image labels (vision_tool) |
-| A catalog auditor that runs offline on LOCAL item data (text-vs-photo, low-res, piece-count) | A buy-side cost x demand ranking (opportunity_matrix, sibling capability #15, P11/N06) |
-| Degrade-never: offline (match_engine=none or no credential) always returns honest NAO, never a fabricated match | A channel-projection publish-readiness report (marketplace_listing, P05/N06) |
-| Spec-only: no reverse-image/embedding implementation code in the .md artifact | A competitor feature battle card (competitive_matrix) |
-| Shared-helper source for `sourcing_opportunity.py`'s own visual audit stage | A live reverse-image search -- as implemented, `reverse_image`/`embedding`/`manual` are enum values with NO working code path (product_match.py:396-406 emits the same honest placeholder as `none`) |
-## Layer Map
-| Layer | Components | Purpose |
+| Um join por NÃO-chave composta (foto+dimensão+código do fornecedor) entre um item de fornecedor e um anúncio de marketplace | Um primitivo bruto de análise visual que retorna rótulos de imagem arbitrários (vision_tool) |
+| Um auditor de catálogo que roda offline sobre dados LOCAIS do item (texto-vs-foto, baixa resolução, contagem de peças) | Um ranking de custo x demanda no buy-side (opportunity_matrix, capability irmã #15, P11/N06) |
+| Degrade-never: offline (match_engine=none ou sem credencial) sempre retorna NAO honesto, nunca um match fabricado | Um relatório de prontidão de publicação por projeção de canal (marketplace_listing, P05/N06) |
+| Só spec: nenhum código de implementação de reverse-image/embedding no artefato .md | Um battle card de comparação de concorrentes (competitive_matrix) |
+| Fonte de auxiliares compartilhados para a própria etapa de auditoria visual do `sourcing_opportunity.py` | Uma busca reversa de imagem ao vivo -- como implementado, `reverse_image`/`embedding`/`manual` são valores de enum SEM nenhum caminho de código funcional (product_match.py:396-406 emite o mesmo placeholder honesto que `none`) |
+## Mapa de Camadas
+| Camada | Componentes | Propósito |
 |-------|-----------|---------|
-| input | items, match_join_keys, match_exclude_keys | Define what is matched and by which composite key |
-| processing | match_engine, match_confidence_floor, audit_enabled, audit_min_photo_px | Select engine, gate confidence, run the audit |
-| output | Resultado do match, Auditoria de catalogo, Proveniencia, Veredito | 4 frozen sections (MOLD_PRODUCT_MATCH order) |
-| governance | match_confiavel gate, score formula (product_match.py:511-522) | F7 GOVERN verdict + score |
-| callers | dashboard run (N03, verb=analyze), sourcing_opportunity.py (N06, shared helpers) | Runtime consumers |
-## Confusion Zones
-| Scenario | Seems Like | Actually Is | Rule |
+| entrada | items, match_join_keys, match_exclude_keys | Define o que é casado e por qual chave composta |
+| processamento | match_engine, match_confidence_floor, audit_enabled, audit_min_photo_px | Seleciona o motor, limita a confiança, roda a auditoria |
+| saída | Resultado do match, Auditoria de catalogo, Proveniencia, Veredito | 4 seções congeladas (ordem de MOLD_PRODUCT_MATCH) |
+| governança | Gate match_confiavel, fórmula de pontuação (product_match.py:511-522) | Veredito F7 GOVERN + pontuação |
+| chamadores | execução no dashboard (N03, verbo=analyze), sourcing_opportunity.py (N06, auxiliares compartilhados) | Consumidores em runtime |
+## Zonas de Confusão
+| Cenário | Parece Ser | Na Verdade É | Regra |
 |---|---|---|---|
-| "Analyze this product photo" (no join target) | product_match | vision_tool | vision_tool=analyze one image; product_match=join TWO records via composite key |
-| "Rank suppliers by cost vs demand" | product_match | opportunity_matrix | opportunity_matrix=buy-side economics (P11/N06); product_match=record-linkage (P04/N03) |
-| "Is this listing ready to publish on Mercado Livre" | product_match | marketplace_listing | marketplace_listing=channel-projection readiness (P05/N06); product_match=match+audit only |
-| "Match by EAN/GTIN barcode" | product_match | (unsupported by design) | EAN/GTIN/barcode are structurally EXCLUDED -- every reseller recodes them |
-## Decision Tree
-- Join a supplier item to a marketplace listing by photo/dimension/code, EAN excluded? -> product_match
-- Analyze one image with no join target? -> vision_tool
-- Rank buy-side opportunities by cost vs demand? -> opportunity_matrix
-- Assess channel publish-readiness of an already-matched listing? -> marketplace_listing
-## Neighbor Comparison
-| Dimension | product_match | opportunity_matrix | Difference |
+| "Analisar esta foto de produto" (sem alvo de join) | product_match | vision_tool | vision_tool=analisa uma imagem; product_match=une DOIS registros por chave composta |
+| "Ranquear fornecedores por custo vs demanda" | product_match | opportunity_matrix | opportunity_matrix=economia buy-side (P11/N06); product_match=casamento de registros (P04/N03) |
+| "Este anúncio está pronto para publicar no Mercado Livre" | product_match | marketplace_listing | marketplace_listing=prontidão por projeção de canal (P05/N06); product_match=só casamento+auditoria |
+| "Casar por código de barras EAN/GTIN" | product_match | (não suportado por design) | EAN/GTIN/código de barras são ESTRUTURALMENTE EXCLUÍDOS -- todo revendedor os recodifica |
+## Árvore de Decisão
+- Unir um item de fornecedor a um anúncio de marketplace por foto/dimensão/código, com EAN excluído? -> product_match
+- Analisar uma imagem sem alvo de join? -> vision_tool
+- Ranquear oportunidades de buy-side por custo vs demanda? -> opportunity_matrix
+- Avaliar a prontidão de publicação por canal de um anúncio já casado? -> marketplace_listing
+## Comparação com Vizinhos
+| Dimensão | product_match | opportunity_matrix | Diferença |
 |---|---|---|---|
-| Pillar | P04 (tools) | P11 (feedback/gate) | Different pillar despite both being "sourcing" (catalog #15/#16) |
-| llm_function | CALL | GOVERN | product_match executes a join; opportunity_matrix renders a verdict |
-| Nucleus | N03 | N06 | RACI: N03 engineering builds tools; N06 commercial owns pricing/sourcing economics |
-| Output shape | table+list+fields+fields (4) | fields+table+table+fields+table+table+fields+fields (8, per capability_contracts_v1.0.md #15) | product_match is the narrower, shared visual-audit primitive |
+| Pillar | P04 (tools) | P11 (feedback/gate) | Pillar diferente apesar de ambos serem "sourcing" (catálogo #15/#16) |
+| llm_function | CALL | GOVERN | product_match executa um join; opportunity_matrix renderiza um veredito |
+| Nucleus | N03 | N06 | RACI: N03 engenharia constrói ferramentas; N06 comercial é dono da economia de preço/sourcing |
+| Formato de saída | table+list+fields+fields (4) | fields+table+table+fields+table+table+fields+fields (8, conforme capability_contracts_v1.0.md #15) | product_match é o primitivo de auditoria visual compartilhado, mais estreito |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
 | [[product-match-builder]] | upstream | 0.50 |
 | [[bld_architecture_vision_tool]] | sibling | 0.40 |

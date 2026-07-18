@@ -3,74 +3,91 @@ kind: collaboration
 id: bld_collaboration_knowledge_card
 pillar: P12
 llm_function: COLLABORATE
-purpose: How knowledge-card-builder works in crews with other builders
-pattern: each builder must know its ROLE in a team, what it RECEIVES and PRODUCES
+purpose: Como o knowledge-card-builder trabalha em equipes (crews) com outros builders
+pattern: todo builder deve saber seu PAPEL numa equipe, o que RECEBE e o que PRODUZ
 quality: null
 title: "Collaboration Knowledge Card"
 version: "1.0.0"
 author: n03_builder
 tags: [knowledge_card, builder, examples]
 tldr: "Golden and anti-examples for knowledge card construction, demonstrating ideal structure and common pitfalls."
-domain: "knowledge card construction"
+domain: "construção de knowledge_card"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F8_collaborate"
 keywords: [knowledge card construction, collaboration knowledge card, knowledge_card, builder, examples, "### crew: new agent end-to-end", "### crew: rag pipeline setup", my role, crew compositions, content foundation]
 density_score: 0.90
+related:
+  - bld_collaboration_agent
+  - bld_collaboration_system_prompt
+  - bld_architecture_kind
+  - bld_collaboration_builder
+  - bld_collaboration_boot_config
+  - bld_collaboration_instruction
+  - bld_collaboration_agent_package
+  - bld_collaboration_model_card
+  - bld_collaboration_kind
+  - bld_collaboration_retriever
 ---
 # Collaboration: knowledge-card-builder
-## My Role in Crews
-I am a SPECIALIST. I answer ONE question: "what is the essential, searchable fact about this topic?"
-I do not define agent personas. I do not configure boot parameters.
-I distill knowledge into atomic facts so agents and builders have factual context for decisions.
-## Crew Compositions
-### Crew: "Content Foundation"
+## Meu Papel nas Equipes
+Eu sou um ESPECIALISTA. Eu respondo a UMA pergunta: "qual é o fato essencial e pesquisável sobre este tópico?"
+Eu não defino personas de agent. Eu não configuro parâmetros de boot.
+Eu destilo conhecimento em fatos atômicos para que agents e builders tenham contexto factual para decisões.
+## Composições de Equipe
+### Equipe: "Fundação de Conteúdo"
 ```
-  1. context-doc-builder -> "domain scope and background"
-  2. knowledge-card-builder -> "atomic searchable facts (density > 0.8)"
-  3. glossary-entry-builder -> "term definitions"
-  4. few-shot-example-builder -> "format examples grounded in knowledge"
+  1. context-doc-builder -> "escopo e contexto de domínio"
+  2. knowledge-card-builder -> "fatos atômicos pesquisáveis (densidade > 0.8)"
+  3. glossary-entry-builder -> "definições de termos"
+  4. few-shot-example-builder -> "exemplos de formato baseados em conhecimento"
 ```
-### Crew: "New Agent End-to-End"
+### Equipe: "Novo Agent de Ponta a Ponta"
 ```
-  1. knowledge-card-builder -> "domain knowledge for agent expertise"
-  2. agent-builder -> "agent definition shaped by knowledge"
-  3. instruction-builder -> "execution steps grounded in facts"
-  4. boot-config-builder -> "provider configuration"
-  5. agent-package-builder -> "deployable package"
+  1. knowledge-card-builder -> "conhecimento de domínio para a expertise do agent"
+  2. agent-builder -> "definição de agent moldada pelo conhecimento"
+  3. instruction-builder -> "passos de execução baseados em fatos"
+  4. boot-config-builder -> "configuração de provider"
+  5. agent-package-builder -> "pacote implantável"
 ```
-### Crew: "RAG Pipeline Setup"
+### Equipe: "Configuração do Pipeline RAG"
 ```
-  1. knowledge-card-builder -> "content to embed and index"
-  2. embedding-config-builder -> "embedding model parameters"
-  3. knowledge-index-builder -> "search index configuration"
+  1. knowledge-card-builder -> "conteúdo para embedding e indexação"
+  2. embedding-config-builder -> "parâmetros do modelo de embedding"
+  3. knowledge-index-builder -> "configuração do índice de busca"
 ```
-## Handoff Protocol
-### I Receive
-- seeds: topic name, domain, source material or research brief
-- optional: density target, classification (domain_kc or meta_kc), related cards
-### I Produce
-- knowledge_card artifact (.md + .yaml frontmatter, max 5KB, density > 0.8)
-- committed to: `cex/P01/examples/p01_kc_{topic}.md`
-### I Signal
-- signal: complete (with quality score from QUALITY_GATES)
-- if quality < 8.0: signal retry with failure reasons
-## Builders I Depend On
-None — independent builder (layer 0). Knowledge cards are distilled from source material.
-## Builders That Depend On Me
-| Builder | Why |
+## Protocolo de Handoff
+### Eu Recebo
+- seeds: nome do tópico, domínio, material de origem ou brief de pesquisa
+- opcional: meta de densidade, classificação (domain_kc ou meta_kc), cards relacionados
+### Eu Produzo
+- artefato knowledge_card (.md + frontmatter .yaml, max 5KB, densidade > 0.8)
+- commitado em: `cex/P01/examples/p01_kc_{topic}.md`
+### Eu Sinalizo
+- signal: complete (com a pontuação de qualidade do QUALITY_GATES)
+- se quality < 8.0: signal retry com os motivos da falha
+## Builders dos Quais Dependo
+Nenhum -- builder independente (layer 0). Knowledge_cards são destilados a partir de material de origem.
+## Builders Que Dependem de Mim
+| Builder | Por Quê |
 |---------|-----|
-| agent-builder | Agent expertise is grounded in knowledge cards |
-| axiom-builder | Axioms are formalized from distilled facts |
-| context-doc-builder | Domain docs reference knowledge card facts |
-| knowledge-index-builder | Knowledge cards are primary content for indexing |
-| instruction-builder | Recipes reference factual knowledge for accuracy |
+| agent-builder | A expertise do agent é embasada em knowledge_cards |
+| axiom-builder | Axiomas são formalizados a partir de fatos destilados |
+| context-doc-builder | Docs de domínio referenciam fatos de knowledge_card |
+| knowledge-index-builder | Knowledge_cards são o conteúdo primário para indexação |
+| instruction-builder | Recipes referenciam conhecimento factual para precisão |
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
-| [[bld_orchestration_agent]] | sibling | 0.41 |
-| [[bld_orchestration_knowledge_index]] | sibling | 0.39 |
-| [[bld_orchestration_system_prompt]] | sibling | 0.37 |
-| bld_collaboration_context_doc | sibling | 0.33 |
-| [[bld_orchestration_boot_config]] | sibling | 0.33 |
+| [[bld_collaboration_agent]] | irmão | 0.39 |
+| [[bld_collaboration_system_prompt]] | irmão | 0.35 |
+| [[bld_architecture_kind]] | a montante | 0.34 |
+| [[bld_collaboration_builder]] | irmão | 0.33 |
+| [[bld_collaboration_boot_config]] | irmão | 0.32 |
+| [[bld_collaboration_instruction]] | irmão | 0.31 |
+| [[bld_collaboration_agent_package]] | irmão | 0.30 |
+| [[bld_collaboration_model_card]] | irmão | 0.30 |
+| [[bld_collaboration_kind]] | irmão | 0.29 |
+| [[bld_collaboration_retriever]] | irmão | 0.29 |

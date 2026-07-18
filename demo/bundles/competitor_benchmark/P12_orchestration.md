@@ -3,14 +3,14 @@ kind: collaboration
 id: bld_collaboration_competitive_matrix
 pillar: P12
 llm_function: COLLABORATE
-purpose: How competitive_matrix-builder works in crews with other builders
+purpose: Como o competitive_matrix-builder trabalha em crews com outros builders
 quality: null
 title: "Collaboration Competitive Matrix"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [competitive_matrix, builder, collaboration]
-tldr: "How competitive_matrix-builder works in crews with other builders"
-domain: "competitive_matrix construction"
+tldr: "Como o competitive_matrix-builder trabalha em crews com outros builders"
+domain: "construção de competitive_matrix"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F8_collaborate"
@@ -18,32 +18,42 @@ keywords: [competitive_matrix construction, collaboration competitive matrix, co
 analyzes, receives from, produces for, boundary  
 does, related artifacts]
 density_score: 0.85
+related:
+  - bld_collaboration_eval_metric
+  - bld_collaboration_customer_segment
+  - bld_collaboration_ecommerce_vertical
+  - p02_agent_web_researcher
+  - bld_collaboration_sales_playbook
+  - bld_collaboration_integration_guide
+  - bld_collaboration_subscription_tier
 ---
-## Crew Role  
-Analyzes competitor data, structures features/benefits, and generates visual comparison matrices for strategic decision-making.  
+## Papel na Crew
+Analisa dados de concorrentes, estrutura funcionalidades/benefícios e gera matrizes visuais de comparação para a tomada de decisão estratégica.
 
-## Receives From  
-| Builder         | What               | Format     |  
-|----------------|--------------------|------------|  
-| market_research| Competitor list    | CSV        |  
-| product_specs  | Feature definitions| JSON       |  
-| sales_team     | Market trends      | API        |  
+## Recebe De
+| Builder         | O Que               | Formato     |
+|----------------|--------------------|------------|
+| market_research| Lista de concorrentes    | CSV        |
+| product_specs  | Definições de funcionalidades| JSON       |
+| sales_team     | Tendências de mercado     | API        |
 
-## Produces For  
-| Builder         | What                  | Format     |  
-|----------------|-----------------------|------------|  
-| strategy_team  | Competitive matrix    | Markdown   |  
-| product_team   | Gap analysis report   | PDF        |  
-| sales_team     | Benchmarking data     | CSV        |  
+## Produz Para
+| Builder         | O Que                  | Formato     |
+|----------------|-----------------------|------------|
+| strategy_team  | Matriz competitiva    | Markdown   |
+| product_team   | Relatório de análise de lacunas   | PDF        |
+| sales_team     | Dados de benchmarking     | CSV        |
 
-## Boundary  
-Does NOT handle customer segment analysis (ICP) or narrative content (pitch_deck). Handled by customer_segment_builder and pitch_deck_builder respectively.
+## Limite
+NÃO trata análise de segmento de cliente (ICP) ou conteúdo narrativo (pitch_deck). Tratado pelo customer_segment_builder e pitch_deck_builder, respectivamente.
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relacionamento | Pontuação |
 |----------|-------------|-------|
-| [[bld_orchestration_customer_segment]] | sibling | 0.32 |
-| bld_collaboration_cohort_analysis | sibling | 0.26 |
-| [[bld_orchestration_eval_metric]] | sibling | 0.25 |
-| bld_collaboration_discovery_questions | sibling | 0.24 |
-| bld_collaboration_reward_model | sibling | 0.23 |
+| [[bld_collaboration_eval_metric]] | sibling | 0.20 |
+| [[bld_collaboration_customer_segment]] | sibling | 0.17 |
+| [[bld_collaboration_ecommerce_vertical]] | sibling | 0.17 |
+| [[p02_agent_web_researcher]] | upstream | 0.16 |
+| [[bld_collaboration_sales_playbook]] | sibling | 0.15 |
+| [[bld_collaboration_integration_guide]] | sibling | 0.15 |
+| [[bld_collaboration_subscription_tier]] | sibling | 0.15 |

@@ -7,15 +7,15 @@ version: 1.0.0
 memory_scope: project
 observation_types: [user, feedback, project, reference]
 quality: null
-title: "Memory Landing Page"
+title: "Memória Landing Page"
 author: n03_builder
 tags: [landing_page, builder, examples]
-tldr: "Golden and anti-examples for landing page construction, demonstrating ideal structure and common pitfalls."
-domain: "landing page construction"
+tldr: "Exemplos de referência e contraexemplos para a construção de landing page, demonstrando a estrutura ideal e as armadilhas mais comuns."
+domain: "construção de landing page"
 created: "2026-04-07"
 updated: "2026-04-07"
 8f: "F1_constrain"
-keywords: [landing page construction, memory landing page, landing_page, builder, examples, landing page builder, hub pages, memory types, production log, related artifacts]
+keywords: [construção de landing page, memory landing page, landing_page, builder, examples, landing page builder, tipos de memória, log de produção, artefatos relacionados]
 density_score: 0.90
 llm_function: INJECT
 related:
@@ -23,20 +23,20 @@ related:
   - bld_architecture_landing_page
   - bld_schema_landing_page
 ---
-# Memory: Landing Page Builder
-## What to Remember
-1. User's preferred stack (HTML/React/Next.js/Astro)
-2. Design token overrides (costm colors, fonts, spacing)
-3. Section preferences (which sections they always want/skip)
-4. Previous landing pages built (maintain design consistency)
-5. User's deployment target (Vercel, Netlify, S3, GitHub Pages)
-6. A/B test results from previous pages
-## Memory Types
-1. PREFERENCE: stack choice, section order, design token overrides
-2. CORRECTION: "make CTAs bigger", "remove testimonials section", "use dark bg"
-3. CONVENTION: brand design system rules, component naming, class patterns
-4. CONTEXT: target audience, conversion goals, industry norms
-## Metadata
+# Memória: Landing Page Builder
+## O que Lembrar
+1. Stack preferida do usuário (HTML/React/Next.js/Astro)
+2. Sobrescritas de design tokens (cores, fontes e espaçamento personalizados)
+3. Preferências de seção (quais seções sempre querem ou sempre pulam)
+4. Landing pages construídas anteriormente (manter consistência de design)
+5. Destino de deploy do usuário (Vercel, Netlify, S3, GitHub Pages)
+6. Resultados de testes A/B de páginas anteriores
+## Tipos de Memória
+1. PREFERENCE: escolha de stack, ordem das seções, sobrescritas de design tokens
+2. CORRECTION: "deixe os CTAs maiores", "remova a seção de depoimentos", "use fundo escuro"
+3. CONVENTION: regras do design system da marca, nomenclatura de componentes, padrões de classes
+4. CONTEXT: público-alvo, metas de conversão, normas do setor
+## Metadados
 ```yaml
 id: bld_memory_landing_page
 pipeline: 8F
@@ -45,25 +45,25 @@ scoring: hybrid_3_layer
 ```bash
 python _tools/cex_score.py --apply bld-memory-landing-page.md
 ```
-## Properties
-| Property | Value |
+## Propriedades
+| Propriedade | Valor |
 |----------|-------|
 | Kind | `memory` |
 | Pillar | P09 |
-| Domain | landing page construction |
+| Domain | construção de landing page |
 | Pipeline | 8F (F1-F8) |
 | Scorer | cex_score.py |
 | Compiler | cex_compile.py |
 | Retriever | cex_retriever.py |
-| Quality target | 9.0+ |
-| Density target | 0.85+ |
-## Production Log
+| Meta de qualidade | 9.0+ |
+| Meta de densidade | 0.85+ |
+## Log de Produção
 - [20260412_133929] PASS kind=landing_page retries=0 gates=6/6
 - [20260415_212614] PASS kind=landing_page retries=0 gates=6/6
 - [20260415_212946] PASS kind=landing_page retries=0 gates=6/6
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[bld_orchestration_landing_page]] | downstream | 0.38 |
 | [[bld_tools_landing_page]] | upstream | 0.38 |

@@ -3,14 +3,14 @@ kind: tools
 id: bld_tools_oauth_app_config
 pillar: P04
 llm_function: CALL
-purpose: Tools available for oauth_app_config production
+purpose: Ferramentas disponíveis para a produção de oauth_app_config
 quality: null
 title: "Tools Oauth App Config"
 version: "1.0.0"
 author: wave1_builder_gen_v2
 tags: [oauth_app_config, builder, tools]
-tldr: "Tools available for oauth_app_config production"
-domain: "oauth_app_config construction"
+tldr: "Ferramentas disponíveis para a produção de oauth_app_config"
+domain: "construção de oauth_app_config"
 created: "2026-04-14"
 updated: "2026-04-14"
 8f: "F5_call"
@@ -21,25 +21,25 @@ related:
   - bld_tools_prosody_config
   - bld_tools_ab_test_config
 ---
-## Production Tools
-| Tool | Purpose | When |
+## Ferramentas de Produção
+| Ferramenta | Propósito | Quando |
 |------|---------|------|
-| oauth_compile.py | Compiles OAuth app config from templates | Deploying new apps |
-| oauth_scope_validator.py | Validates scope definitions against policies | Configuring permissions |
-| oauth_retriever.py | Fetches config data from external sources | Integrating third-party services |
-| oauth_doctor.py | Diagnoses misconfigurations in app settings | Troubleshooting failures |
-| oauth_tokenizer.py | Generates and manages access tokens | Implementing authentication flows |
-| oauth_encryptor.py | Encrypts sensitive config fields | Securing production environments |
+| oauth_compile.py | Compila a configuração de app OAuth a partir de templates | Ao implantar novos apps |
+| oauth_scope_validator.py | Valida as definições de escopo contra as políticas | Ao configurar permissões |
+| oauth_retriever.py | Busca dados de configuração em fontes externas | Ao integrar serviços de terceiros |
+| oauth_doctor.py | Diagnostica configurações incorretas nas definições do app | Ao investigar falhas |
+| oauth_tokenizer.py | Gera e gerencia access tokens | Ao implementar fluxos de autenticação |
+| oauth_encryptor.py | Criptografa campos sensíveis da configuração | Ao proteger ambientes de produção |
 
-## Validation Tools
-| Tool | Purpose | When |
+## Ferramentas de Validação
+| Ferramenta | Propósito | Quando |
 |------|---------|------|
-| scope_checker.py | Ensures scopes match registered APIs | Pre-deployment checks |
-| compliance_tester.py | Verifies config adherence to OAuth 2.0 specs | Auditing configurations |
-| token_validator.py | Tests token lifecycle and revocation | Security testing |
-| endpoint_checker.py | Validates redirect URIs and endpoints | Configuring app redirects |
+| scope_checker.py | Garante que os escopos correspondam às APIs registradas | Checagens pré-deploy |
+| compliance_tester.py | Verifica a aderência da configuração às especificações OAuth 2.0 | Auditoria de configurações |
+| token_validator.py | Testa o ciclo de vida e a revogação do token | Testes de segurança |
+| endpoint_checker.py | Valida redirect URIs e endpoints | Ao configurar redirecionamentos do app |
 
-## External References
+## Referências Externas
 - [OAuthlib](https://oauthlib.readthedocs.io)
 - [Flask-OAuthlib](https://flask-oauthlib.readthedocs.io)
 - [OpenID Connect Core 1.0](https://openid.net/specs/openid-connect-core-1_0.html)

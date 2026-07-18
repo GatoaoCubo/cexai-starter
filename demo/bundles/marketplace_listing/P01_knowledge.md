@@ -8,11 +8,11 @@ version: 1.0.0
 created: "2026-07-02"
 updated: "2026-07-02"
 author: n03_builder
-title: "Domain Knowledge: marketplace_listing"
+title: "Conhecimento de Domínio: marketplace_listing"
 domain: marketplace_listing
 quality: null
 tags: [marketplace_listing, builder, knowledge, mercado-livre, P01]
-tldr: "Atomic facts for building marketplace_listing: the G1->G2 field mapping, condition vocabulary, BRAND/SELLER_SKU injection, ML title rule, media-slot wiring, and the two-implementation divergence."
+tldr: "Fatos atômicos para construir marketplace_listing: o mapeamento de campos G1->G2, o vocabulário de condição, a injeção de BRAND/SELLER_SKU, a regra de título do ML, a fiação de media-slot e a divergência entre as duas implementações."
 density_score: 0.92
 related:
   - bld_schema_marketplace_listing
@@ -22,51 +22,52 @@ related:
   - output-validator-builder
 ---
 
-# Domain Knowledge: marketplace_listing
-## G1 -> G2 field mapping (from `capability_generators/marketplace_listing.py`)
-| G1 field (dashboard) | G2 field (ML payload) | Notes |
+# Conhecimento de Domínio: marketplace_listing
+## Mapeamento de campos G1 -> G2 (a partir de `capability_generators/marketplace_listing.py`)
+| Campo G1 (dashboard) | Campo G2 (payload ML) | Notas |
 |---|---|---|
-| titulo_ml | title | <=60 chars preferred (ML_TITLE_MAX); no hard truncation by this builder |
-| descricao | description.plain_text | listing body |
-| categoria_ml | category_id | ML official category id, e.g. `MLB1055` |
-| marca | BRAND attribute | injected into attributes[] only if not already present |
-| condicao | condition | novo->new, usado->used, recondicionado->refurbished; unknown->new |
+| titulo_ml | title | <=60 caracteres preferencial (ML_TITLE_MAX); sem truncamento forçado por este builder |
+| descricao | description.plain_text | corpo do anúncio |
+| categoria_ml | category_id | id de categoria oficial do ML, ex. `MLB1055` |
+| marca | atributo BRAND | injetado em attributes[] somente se ainda não presente |
+| condicao | condition | novo->new, usado->used, recondicionado->refurbished; desconhecido->new |
 | preco | price | float, R$ |
-| estoque | available_quantity | integer >= 0; NOT gate-checked in the shipped generator |
-| fotos | pictures[].url | comma-sep string OR JSON array; NO https filter (see divergence below) |
-| atributos | attributes[]{id,value_name} | JSON `{"key":"value"}` object |
-| sku | seller_custom_field + SELLER_SKU attribute | injected into attributes[] only if not already present |
+| estoque | available_quantity | inteiro >= 0; NÃO verificado por gate no generator em produção |
+| fotos | pictures[].url | string separada por vírgula OU array JSON; SEM filtro https (ver divergência abaixo) |
+| atributos | attributes[]{id,value_name} | objeto JSON `{"key":"value"}` |
+| sku | seller_custom_field + atributo SELLER_SKU | injetado em attributes[] somente se ainda não presente |
 
-## ML title rule
-Preferred max 60 chars (`ML_TITLE_MAX`). The shipped generator does NOT truncate -- it only
-appends a `[WARN]` note and deducts 0.05 from score. (The lower-level
-`cex_channel_adapter.py` seam DOES truncate at a word boundary via `clean_ml_title` -- a
-different module, not what this builder mirrors.)
+## Regra de título do ML
+Máximo preferencial de 60 caracteres (`ML_TITLE_MAX`). O generator em produção NÃO trunca --
+apenas anexa uma nota `[WARN]` e deduz 0,05 do score. (A camada de nível mais baixo
+`cex_channel_adapter.py` TRUNCA sim, no limite de uma palavra, via `clean_ml_title` -- um
+módulo diferente, que este builder não espelha.)
 
-## Readiness gate (the score/passed/missing_required/notes contract)
-Starts at 1.0; deducts 0.20 (titulo_ml missing), 0.05 (title >60 chars), 0.15 (categoria_ml
-missing), 0.15 (preco<=0), 0.05 (descricao missing), 0.10 (no fotos), 0.05 (marca missing);
-floors at 0.0. `passed` requires zero `missing_required` (only titulo_ml/categoria_ml/preco
-populate that list) AND `score>=0.70`.
+## Gate de prontidão (o contrato score/passed/missing_required/notes)
+Começa em 1.0; deduz 0,20 (titulo_ml ausente), 0,05 (title >60 caracteres), 0,15 (categoria_ml
+ausente), 0,15 (preco<=0), 0,05 (descricao ausente), 0,10 (sem fotos), 0,05 (marca ausente);
+piso em 0,0. `passed` exige zero itens em `missing_required` (somente titulo_ml/categoria_ml/
+preco podem popular essa lista) E `score>=0.70`.
 
-## Media-slot wiring (for the dual-output projection, not authored by this builder)
-One image slot per foto URL (`foto_N`), or a single `foto_0` upload-fallback slot when no
-fotos are given; a `video_demo` slot is ALWAYS declared and NEVER auto-produced
-(never-fabricate). This is computed by `listing_media_requests`/`listing_produced_media` in
-the same generator module, discovered by `_base.resolve_media` via the `listing_` prefix
-convention.
+## Fiação de media-slot (para a projeção dual-output, não autorada por este builder)
+Um slot de imagem por URL de foto (`foto_N`), ou um único slot de fallback de upload `foto_0`
+quando nenhuma foto é fornecida; um slot `video_demo` é SEMPRE declarado e NUNCA
+auto-produzido (nunca-fabricar). Isso é computado por `listing_media_requests`/
+`listing_produced_media` no mesmo módulo generator, descoberto por `_base.resolve_media`
+via a convenção de prefixo `listing_`.
 
-## The two-implementation divergence (read before citing "the" contract)
-Two modules compute a related-but-different shape for "ML listing": the SHIPPED
-`capability_generators/marketplace_listing.py` (this builder's ground truth: score/passed/
-missing_required/notes, no `_meta`, no https filter, no stock gate) and the lower-level
-`cex_channel_adapter.py` `MercadoLivreAdapter` (`.cex/kinds_meta.json`'s declared
-`upstream_source`: `_meta` block, `PUBLISH-READY`/`NOT-READY` + `missing[]`/`warnings[]`
-each `{field,severity,message}`, https-only pictures, hard-blocks on zero stock via
-`buyability()`). Never present one module's behavior as the other's.
+## A divergência entre as duas implementações (leia antes de citar "o" contrato)
+Dois módulos computam uma forma relacionada-mas-diferente para "anúncio ML": o generator EM
+PRODUÇÃO `capability_generators/marketplace_listing.py` (a fonte da verdade deste builder:
+score/passed/missing_required/notes, sem `_meta`, sem filtro https, sem gate de estoque) e o
+`MercadoLivreAdapter` de nível mais baixo em `cex_channel_adapter.py` (o `upstream_source`
+declarado em `.cex/kinds_meta.json`: bloco `_meta`, `PUBLISH-READY`/`NOT-READY` +
+`missing[]`/`warnings[]`, cada um `{field,severity,message}`, fotos somente https,
+bloqueio forçado com estoque zero via `buyability()`). Nunca apresente o comportamento
+de um módulo como se fosse do outro.
 
-## Related Artifacts
-| Artifact | Relationship | Score |
+## Artefatos Relacionados
+| Artefato | Relação | Pontuação |
 |----------|-------------|-------|
 | [[bld_schema_marketplace_listing]] | downstream | 0.5 |
 | [[bld_architecture_marketplace_listing]] | upstream | 0.45 |
