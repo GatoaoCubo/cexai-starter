@@ -110,6 +110,31 @@ _DEFAULT_REDIRECT_URIS: List[str] = [
     "http://localhost:3000/oauth/callback",
 ]
 
+# The single OAuth grant type this generator ever emits (n03_validation -- flow rule). Read
+# by BOTH build() (identity section + artifact JSON) and domain_contract() below -- single
+# source of truth, never a re-typed literal in either place.
+_GRANT_TYPE = "authorization_code"
+
+# The "Identidade do app" section note -- generic (no per-run data), so domain_contract()
+# below reuses it verbatim as the credential-resolution LAW description. Read by BOTH build()
+# and domain_contract() -- single source of truth.
+_CLIENT_CREDENTIAL_CUSTODY_NOTE = (
+    "client_id e client_secret sao <SLOT: NAME> resolvidos do Vault por tenant -- "
+    "nenhum segredo real e gravado aqui nem no repo."
+)
+
+# The 2 STATIC (non-templated) "Invariantes de segredo" rows -- (label, value) pairs. The row
+# NOT here (the slot-form example) is per-provider templated in build() with the resolved
+# slot_secret; domain_contract() below exposes the GENERIC slot pattern for that one instead
+# (_SLOT_RE.pattern) rather than duplicating one provider's worked example. Read by BOTH
+# build() and domain_contract() below -- single source of truth, never a re-typed literal.
+_SECRET_INVARIANT_STATIC_ROWS: Tuple[Tuple[str, str], ...] = (
+    ("client_secret nunca renderizado",
+     "Apenas a forma <SLOT: NAME> aparece -- o valor real nunca e exibido nem logado."),
+    ("custodia",
+     "Vault por tenant -- resolvido em runtime, fora do contrato e fora do cliente."),
+)
+
 
 def _resolve_provider(raw: Any) -> Tuple[str, bool, bool]:
     """Return (provider, was_absent, is_invalid).
@@ -249,7 +274,7 @@ def _artifact(provider: str, scopes: List[str], redirect_rows: List[Tuple[str, s
         "endpoints": {"auth_url": prov["auth_url"], "token_url": prov["token_url"]},
         "client_id_slot": slot_id,
         "client_secret_slot": slot_secret,
-        "grant_type": "authorization_code",
+        "grant_type": _GRANT_TYPE,
     }
     try:
         return json.dumps(projection, ensure_ascii=True, sort_keys=True)
@@ -323,8 +348,7 @@ def build(
     has_offline = "offline_access" in scopes
 
     # -- F6 produce: the 5 frozen sections, REAL data from inputs + the per-provider map. --
-    _identity_note = ("client_id e client_secret sao <SLOT: NAME> resolvidos do Vault por tenant -- "
-                      "nenhum segredo real e gravado aqui nem no repo.")
+    _identity_note = _CLIENT_CREDENTIAL_CUSTODY_NOTE
     if _bnote:
         _identity_note = "%s %s" % (_identity_note, _bnote)
     sec_identity = fields_section(
@@ -335,19 +359,17 @@ def build(
             ("client_secret", slot_secret),
             ("client_id_origem", "Vault por tenant"),
             ("client_secret_origem", "Vault por tenant"),
-            ("grant_type", "authorization_code"),
+            ("grant_type", _GRANT_TYPE),
         ],
         note=_identity_note,
     )
     sec_secret = fields_section(
         "Invariantes de segredo",
         [
-            ("client_secret nunca renderizado",
-             "Apenas a forma <SLOT: NAME> aparece -- o valor real nunca e exibido nem logado."),
+            _SECRET_INVARIANT_STATIC_ROWS[0],
             ("forma legal de um segredo",
-             "Tem que casar ^<SLOT: [A-Z0-9_]+>$ (ex.: %s)." % slot_secret),
-            ("custodia",
-             "Vault por tenant -- resolvido em runtime, fora do contrato e fora do cliente."),
+             "Tem que casar %s (ex.: %s)." % (_SLOT_RE.pattern, slot_secret)),
+            _SECRET_INVARIANT_STATIC_ROWS[1],
         ],
         note="Contrato de seguranca explicito: o que pode e o que nunca pode aparecer renderizado.",
     )
@@ -421,3 +443,75 @@ def build(
         real=True,
         notes=notes,
     )
+
+
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant (or,
+# for the redirect-URI rule, the SAME function's own docstring) build() reads/documents
+# above -- never a re-typed literal -- so an exported bundle can never drift from what
+# build() actually enforces at runtime. Only the CONTAINER shape changes (e.g. the
+# _PROVIDERS dict-of-dicts becomes a list of per-provider row dicts) so the generic
+# markdown renderer in cex_export_agent.py (_render_domain_contract_body) produces a clean
+# table -- the leaf values themselves are never retyped.
+#
+# LAW vs SCAFFOLD (founder policy 2026-07-18): every key below is either real domain LAW
+# (enforced on every real run, degrade-never) or this generator's own deterministic
+# SCAFFOLD content (the fallback used only when the caller omits an optional input) -- the
+# `default_*_when_unspecified` keys are scaffold, everything else is law. NO secret VALUE is
+# ever exposed here -- only the RULE (e.g. the slot-form regex); client_id/client_secret
+# never appear as anything but the <SLOT: NAME> form even in build()'s own output, and this
+# contract carries no per-run slot example at all (just the generic pattern).
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law oauth_connect.py enforces on every generated oauth_app_config
+    (Missao A). Returns a structured, JSON-serialisable dict -- never {} for THIS generator
+    (oauth_connect DOES declare domain law: the closed provider/scope enums + each
+    provider's public OAuth endpoints/TTL, the single grant type, the secret-slot rendering
+    invariant + its 2 static security rules, the credential-custody rule, and the
+    redirect-URI security rule; {} is only the _base.py no-op default for a generator with
+    none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "supported_providers": [
+            {
+                "provider": name,
+                "slot_prefix": prov["slot_prefix"],
+                "auth_url": prov["auth_url"],
+                "token_url": prov["token_url"],
+                "access_ttl_h": prov["access_ttl_h"],
+                "access_ttl_s": prov["access_ttl_s"],
+            }
+            for name, prov in _PROVIDERS.items()
+        ],
+        "enums": {
+            "provider": list(_PROVIDER_ENUM),
+            "scope": list(_SCOPE_ENUM),
+        },
+        "scope_descriptions": dict(_SCOPE_DESC),
+        "grant_type": _GRANT_TYPE,
+        "secret_slot_pattern": _SLOT_RE.pattern,
+        "secret_invariant_rules": [
+            {"rule": label, "detail": detail}
+            for (label, detail) in _SECRET_INVARIANT_STATIC_ROWS
+        ],
+        "credential_resolution_note": _CLIENT_CREDENTIAL_CUSTODY_NOTE,
+        "redirect_uri_security_rule": " ".join((_classify_uri.__doc__ or "").split()),
+        "default_provider_when_unspecified": _DEFAULT_PROVIDER,
+        "default_redirect_uris_when_unspecified": list(_DEFAULT_REDIRECT_URIS),
+    }
+
+
+__all__ = [
+    "KIND",
+    "CAPABILITY",
+    "CONTRACT_VERSION",
+    "build",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
+]

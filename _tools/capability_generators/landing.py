@@ -76,6 +76,43 @@ _FORBIDDEN_SKEPTIC = [
     ("superlativo sem fonte", "sempre par com ranking + data + fonte auditavel"),
 ]
 
+# Voice mode per register: how each page zone (Hero/Body/Proof/CTA) should read
+# (n02_brand_voice). Hoisted to module level (was a local `mode_switch` dict inside
+# build()) so build()'s Voz da marca section and domain_contract() below share the SAME
+# object -- neither re-types the other's wording (mirrors the ads.py _COMPLIANCE_STATIC
+# hoist rationale).
+_VOICE_MODE_BY_REGISTER: dict = {
+    "warm": "Hero=Empatia, Body=Benefit, Proof=Testemunho, CTA=Convite",
+    "bold": "Hero=Founder/Desafio, Body=Mecanismo, Proof=VP-dados, CTA=Skeptic",
+    "playful": "Hero=Hook-viral, Body=Storytelling, Proof=Social, CTA=FOMO",
+}
+
+# Compliance / LGPD gates enforced on every generated page. Hoisted to module level (was
+# an inline list inside build()'s Compliance section) -- shared VERBATIM between build()
+# and domain_contract() below: single source of truth, neither re-types the other's wording.
+_COMPLIANCE_ITEMS: tuple = (
+    "Claim verificavel: toda afirmacao de resultado precisa de fonte e data",
+    "Sem superlativo nao-comprovado: 'melhor', 'n1', 'lider' so com ranking auditavel",
+    "Prova social real: depoimentos com nome completo, cargo, empresa (sem anon)",
+    "LGPD: politica de privacidade linkada no header + footer + formulario",
+    "Pixel de retargeting: consentimento informado antes de ativar rastreamento",
+    "Garantia: politica de devolucao descrita com clareza (prazo + processo)",
+)
+
+# Deterministic LLM-fallback scaffold: what build()/_scaffold_sections() emit ONLY when no
+# credential/LLM output is available ("%s" fills with target/product at call time). Hoisted
+# to module level (was inline literals in build() + _scaffold_sections()) so the SAME
+# templates back both the real fallback behavior and domain_contract()'s labelled
+# `llm_fallback_scaffold` below -- never re-typed, never silently dropped (founder policy
+# 2026-07-18: expose scaffold honestly, do not hide it).
+_LLM_FALLBACK_SCAFFOLD: dict = {
+    "hero_h1_a_template": "[H1-A: resultado para %s sem mencionar produto] (generation_pending)",
+    "hero_h1_b_template": "[H1-B: provocacao de dor especifica de %s] (generation_pending)",
+    "hero_winner_default": "A",
+    "cta_sub_default": "Sem cartao de credito. Cancele quando quiser. (generation_pending)",
+    "section_proof_template": "[Prova para '%s': dado verificavel + fonte] (generation_pending)",
+}
+
 
 def _pick(val: Any, valid: set, default: str) -> str:
     s = str(val or "").strip().lower()
@@ -89,7 +126,7 @@ def _scaffold_sections(funnel: str, product: str) -> List[List[str]]:
         rows.append([
             secao,
             funcao,
-            "[Prova para '%s': dado verificavel + fonte] (generation_pending)" % product,
+            _LLM_FALLBACK_SCAFFOLD["section_proof_template"] % product,
         ])
     return rows
 
@@ -180,15 +217,15 @@ def build(
         section_rows = _scaffold_sections(funnel, product)
         notes.append("generation_pending: scaffold sections (no credential or LLM failed)")
     if not hero_h1_a:
-        hero_h1_a = "[H1-A: resultado para %s sem mencionar produto] (generation_pending)" % target
+        hero_h1_a = _LLM_FALLBACK_SCAFFOLD["hero_h1_a_template"] % target
     if not hero_h1_b:
-        hero_h1_b = "[H1-B: provocacao de dor especifica de %s] (generation_pending)" % target
+        hero_h1_b = _LLM_FALLBACK_SCAFFOLD["hero_h1_b_template"] % target
     if not hero_winner:
-        hero_winner = "A"
+        hero_winner = _LLM_FALLBACK_SCAFFOLD["hero_winner_default"]
     if not cta_primary:
         cta_primary = _CTA_FORMULA.get(funnel, "CTA (generation_pending)").split("(")[0].strip()
     if not cta_sub:
-        cta_sub = "Sem cartao de credito. Cancele quando quiser. (generation_pending)"
+        cta_sub = _LLM_FALLBACK_SCAFFOLD["cta_sub_default"]
 
     # Section 1: Hero. The brand name (when present) frames the subheadline additively -- the
     # H1 A/B copy stays creative (LLM/scaffold), the 5 rows + the title are STABLE.
@@ -232,11 +269,6 @@ def build(
     )
 
     # Section 4: Voz da marca (4 canonical keys)
-    mode_switch = {
-        "warm": "Hero=Empatia, Body=Benefit, Proof=Testemunho, CTA=Convite",
-        "bold": "Hero=Founder/Desafio, Body=Mecanismo, Proof=VP-dados, CTA=Skeptic",
-        "playful": "Hero=Hook-viral, Body=Storytelling, Proof=Social, CTA=FOMO",
-    }
     forbidden_row = "; ".join("'%s' -> '%s'" % (w, r) for w, r in _FORBIDDEN_SKEPTIC[:2])
     sec4 = fields_section(
         "Voz da marca",
@@ -247,7 +279,7 @@ def build(
             ("Palavras removidas (segmento: Skeptic + B2C)", forbidden_row),
         ],
         note=brand_title(
-            "Mode switching por secao: %s" % mode_switch.get(reg, "registro %s" % reg),
+            "Mode switching por secao: %s" % _VOICE_MODE_BY_REGISTER.get(reg, "registro %s" % reg),
             inputs,
         ),
     )
@@ -255,14 +287,7 @@ def build(
     # Section 5: Compliance
     sec5 = list_section(
         "Compliance",
-        [
-            "Claim verificavel: toda afirmacao de resultado precisa de fonte e data",
-            "Sem superlativo nao-comprovado: 'melhor', 'n1', 'lider' so com ranking auditavel",
-            "Prova social real: depoimentos com nome completo, cargo, empresa (sem anon)",
-            "LGPD: politica de privacidade linkada no header + footer + formulario",
-            "Pixel de retargeting: consentimento informado antes de ativar rastreamento",
-            "Garantia: politica de devolucao descrita com clareza (prazo + processo)",
-        ],
+        list(_COMPLIANCE_ITEMS),
         note="Gate de compliance: verificar ANTES de publicar. Falha = PROCON ou chargebacks.",
     )
 
@@ -324,6 +349,65 @@ def build(
         }, ensure_ascii=True),
         real=True, notes=notes,
     )
+
+
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant
+# build() / _scaffold_sections() read above -- never a re-typed literal -- so an exported
+# bundle can never drift from what build() actually enforces at runtime.
+# _VOICE_MODE_BY_REGISTER and _COMPLIANCE_ITEMS were hoisted from what used to be inline
+# literals in build() (a local `mode_switch` dict and an inline Compliance items list)
+# specifically so this contract and build() share the exact same object -- mirroring the
+# ads.py precedent (its own _COMPLIANCE_STATIC hoist, same rationale). Only the CONTAINER
+# shape changes below (e.g. _SECTION_TEMPLATES' dict-of-tuples -> a row-dict per section)
+# so the generic markdown renderer in cex_export_agent.py (_render_domain_contract_body)
+# produces a clean table -- the leaf values themselves are never retyped.
+#
+# LAW vs SCAFFOLD (founder policy 2026-07-18): goal/register/funnel_stage enums, the
+# funnel->CTA formula, the per-funnel-stage section structure (+ the objection each section
+# breaks), the voice mode per register, the forbidden-word list, and the compliance/LGPD
+# gates are REAL domain law -- they gate every run regardless of whether a credential/LLM
+# is present. `llm_fallback_scaffold` is the DETERMINISTIC placeholder content this
+# generator emits ONLY when no credential/LLM output is available (see build()'s
+# `if not hero_h1_a: ...` fallbacks and `_scaffold_sections()`) -- labelled `_scaffold` so a
+# consumer never mistakes a "%s"-templated placeholder for live, per-run-authored copy.
+# KIND is seam plumbing (excluded); CONTRACT_VERSION is kept as `contract_version`, as in
+# ads.py/docs.py, so a consumer can tell which shape of contract it received.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law landing.py enforces on every generated landing page (Missao A).
+    Returns a structured, JSON-serialisable dict -- never {} for THIS generator (landing
+    DOES declare domain law: goal/register/funnel_stage enums, the funnel->CTA formula, the
+    per-funnel-stage page structure + which objection each section breaks, the voice mode by
+    register, the forbidden-word list, and the compliance/LGPD gates -- plus the labelled
+    deterministic LLM-fallback scaffold; {} is only the _base.py no-op default for a
+    generator with none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "enums": {
+            "goal": sorted(_GOAL_ENUM),
+            "register": sorted(_REGISTER_ENUM),
+            "funnel_stage": sorted(_FUNNEL_ENUM),
+        },
+        "cta_formula_by_funnel_stage": dict(_CTA_FORMULA),
+        "section_structure_by_funnel_stage": [
+            {"funnel_stage": stage, "order": i + 1, "section": secao, "breaks_objection": funcao}
+            for stage, rows in _SECTION_TEMPLATES.items()
+            for i, (secao, funcao) in enumerate(rows)
+        ],
+        "voice_mode_by_register": dict(_VOICE_MODE_BY_REGISTER),
+        "forbidden_words": [
+            {"word": w, "replacement": r} for (w, r) in _FORBIDDEN_SKEPTIC
+        ],
+        "compliance_gates": list(_COMPLIANCE_ITEMS),
+        "llm_fallback_scaffold": dict(_LLM_FALLBACK_SCAFFOLD),
+    }
 
 
 # --------------------------------------------------------------------------- #
@@ -407,4 +491,6 @@ __all__ = [
     "build",
     "landing_media_requests",
     "landing_produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

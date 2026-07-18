@@ -427,6 +427,68 @@ def build(
     )
 
 
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to one of the SAME 5 module
+# constants build() reads above (_PALETTE_ROLES, _HEX_RE, _DEFAULT_TYPEFACES,
+# _LOGO_DEFAULTS, _IMAGERY_DEFAULTS) -- never a re-typed literal -- so an exported bundle
+# can never drift from what build() actually enforces at runtime. The ONE derived step is
+# a mechanical filter over _LOGO_DEFAULTS using the SAME "[fornecer:" placeholder marker
+# this module's own NEVER-FABRICATE convention already uses (see the module docstring): a
+# live filter over the SAME list elements, splitting the 2 fixed law lines (protection
+# space, no-distortion rule) from the 4 placeholder scaffold lines -- never a hand-copied
+# second list.
+#
+# HONEST FRAMING (what is deliberately NOT included, and why): the Identidade/Persona/
+# Framework de Mensagem/Dos-e-Nao-Faca sections build their rows from literals INSIDE
+# their own functions (_identity_rows / _persona_rows / _messaging_rows / _dodonts_rows),
+# not module-level constants -- including the formal/casual tone heuristic in
+# _persona_rows. There is nothing to reference there without either re-typing (a second,
+# driftable copy of the same fact) or refactoring those functions (out of scope for this
+# seam). Rather than fabricate a structure that is not truly a standalone constant, this
+# domain_contract() stays scoped to the 5 real constants + says so explicitly in `notes`.
+# GENERATOR_VERSION (brandbook.py never declared a separate CONTRACT_VERSION) is reused
+# verbatim as the versioning field, matching the same constant structured_output() itself
+# introspects for the artifact envelope.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law brandbook.py enforces on every generated brandbook artifact
+    (Missao A). Returns a structured, JSON-serialisable dict -- never {} for THIS
+    generator (brandbook DOES declare domain law: the palette role hierarchy, the hex
+    validation pattern, the logo-usage law split from its own scaffold placeholders, and
+    the typography/imagery field scaffolds; {} is only the _base.py no-op default for a
+    generator with none)."""
+    return {
+        "contract_version": GENERATOR_VERSION,
+        "palette_role_hierarchy": list(_PALETTE_ROLES),
+        "hex_color_validation_pattern": _HEX_RE.pattern,
+        "logo_usage_law": [line for line in _LOGO_DEFAULTS if "[fornecer:" not in line],
+        "logo_usage_scaffold": [line for line in _LOGO_DEFAULTS if "[fornecer:" in line],
+        "typography_fields_scaffold": [
+            {"field": label, "default_scaffold": value} for (label, value) in _DEFAULT_TYPEFACES
+        ],
+        "imagery_style_fields_scaffold": [
+            {"field": label, "default_scaffold": value} for (label, value) in _IMAGERY_DEFAULTS
+        ],
+        "notes": [
+            "brandbook.py declares no standalone voice/tone enum or output-section-title "
+            "constant -- persona/identity/messaging/do-donts content is generated inline "
+            "per-run inside its own functions (_identity_rows/_persona_rows/_messaging_rows/"
+            "_dodonts_rows), not module-level constants, so it is not represented here "
+            "(never re-typed, to avoid a second, driftable copy of the same fact).",
+            "the 8 output_sections themselves (Identidade da Marca/Paleta de Cores/"
+            "Tipografia/Persona da Marca/Uso do Logotipo/Estilo de Imagem/Framework de "
+            "Mensagem/Dos e Nao-Faca) are a frozen structural contract enforced by build()'s "
+            "section assembly -- see this module's own docstring for the full ordered list.",
+        ],
+    }
+
+
 __all__ = [
     "KIND",
     "GENERATOR_VERSION",
@@ -434,4 +496,6 @@ __all__ = [
     "build",
     "media_requests",
     "produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

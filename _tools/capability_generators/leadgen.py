@@ -47,6 +47,7 @@ from ._base import (
 
 KIND = "research_pipeline"
 CAPABILITY = "leadgen"
+CONTRACT_VERSION = "1.0.0"
 
 # The frozen output contract (spec 4.3): the 5 section titles + the Leads columns, in order.
 # Exposed as module constants so the REAL orchestrator (cex_leadgen_run) reproduces the SAME
@@ -63,9 +64,33 @@ _DEFAULT_REGION = "Brasil"
 _DEFAULT_TARGET = 25
 _DEFAULT_MIN_SINAIS = 1  # the N01 honesty floor: >=1 signal/source per lead to count
 
+# Default placeholder text for the 2 free-text inputs when left blank (spec 4.1's 7-field
+# input contract). Shared with parse_inputs() below + domain_contract() (Missao A /
+# MOLDED_REAL_SEAM export-deepening) -- single source of truth, never re-typed.
+_DEFAULT_OBJETIVO_PLACEHOLDER = "perfil de lead a encontrar"
+_DEFAULT_SEED_PLACEHOLDER = "termo/CNPJ/marca a pesquisar"
+
+# The go/no-go gate (spec 4.3.5, Veredito section): condition (b)'s confidence floor + the 2
+# verdict labels. Shared between build()'s assemble_output (the Veredito section below) and
+# domain_contract() (Missao A / MOLDED_REAL_SEAM export-deepening) -- single source of truth,
+# never re-typed, so an exported bundle can never drift from the gate build() actually applies.
+_GATE_CONFIANCA_MIN = 0.70   # condition (b): confianca_agregada must clear this floor
+_GATE_LABEL_PASS = "PROSSEGUIR"
+_GATE_LABEL_FAIL = "REVISAR"
+
 # The "absent contact" marker (never-fabricate): a lead with no contact a lane actually
 # returned carries EXACTLY this in the Contato column. Shared so the real path uses the same.
 CONTACT_ABSENT = "--"
+
+# The honest empty-state Leads row (build()'s Sect 2 when 0 real leads were found -- the
+# generator's OWN docstring calls this "an HONEST SCAFFOLD": never a fabricated lead). The
+# canal + sinal cells are filled at call time (channel selection + offline/credential branch);
+# these 4 cells are fixed. Shared with domain_contract() below (labeled offline_scaffold, per
+# POLICY: expose scaffold, never silently drop it) so the two can never drift.
+_EMPTY_LEAD_NOME = "(nenhum lead encontrado)"
+_EMPTY_LEAD_TIPO = "--"
+_EMPTY_LEAD_SCORE = 0.0
+_EMPTY_LEAD_STATUS = "vazio"
 
 # Per-channel default source labels for the OFFLINE honest scaffold + the Fontes list. These
 # are the lanes a real run (Phase 1b) would route to -- declared here so the offline path can
@@ -159,8 +184,8 @@ def _artifact_json(objetivo: str, seed: str, region: str,
 def parse_inputs(inputs: Mapping[str, Any], notes: List[str]) -> Dict[str, Any]:
     """Parse + default the 7-field input contract (degrade-never). Appends honest notes for any
     coerced field. Returns a dict of the resolved values the assembler needs. NEVER raises."""
-    objetivo = str(inputs.get("objetivo") or "").strip() or "perfil de lead a encontrar"
-    seed = str(inputs.get("seed") or "").strip() or "termo/CNPJ/marca a pesquisar"
+    objetivo = str(inputs.get("objetivo") or "").strip() or _DEFAULT_OBJETIVO_PLACEHOLDER
+    seed = str(inputs.get("seed") or "").strip() or _DEFAULT_SEED_PLACEHOLDER
     region = str(inputs.get("regiao") or "").strip() or _DEFAULT_REGION
     qualificacao = str(inputs.get("qualificacao") or "").strip()
     channels = _resolve_channels(inputs.get("canais"), notes)
@@ -310,25 +335,26 @@ def assemble_output(
     )
 
     # Sect 5: Veredito (fields) -- S4: named gate with 3 explicit conditions (spec 4.3.5).
-    c1_ok = leads_qualificados >= min_sinais        # (a) leads_qualificados >= floor?
-    c2_ok = confianca_agregada >= 0.70              # (b) confianca >= 0.70?
-    c3_ok = cobertura_ok                            # (c) >=1 canal retornou dado?
+    c1_ok = leads_qualificados >= min_sinais               # (a) leads_qualificados >= floor?
+    c2_ok = confianca_agregada >= _GATE_CONFIANCA_MIN      # (b) confianca >= floor?
+    c3_ok = cobertura_ok                                   # (c) >=1 canal retornou dado?
     gate_pass = c1_ok and c2_ok and c3_ok
-    gate = "PROSSEGUIR" if gate_pass else "REVISAR"
+    gate = _GATE_LABEL_PASS if gate_pass else _GATE_LABEL_FAIL
 
     s_veredito = fields_section(
         "Veredito",
         [
             ("Recomendacao",
-             "PROSSEGUIR -- alimentar o CRM (entidade leads)" if gate_pass
-             else "REVISAR -- execute com credencial + lanes reais (fase 1b) para captar leads"),
+             ("%s -- alimentar o CRM (entidade leads)" % _GATE_LABEL_PASS) if gate_pass
+             else ("%s -- execute com credencial + lanes reais (fase 1b) para captar leads"
+                   % _GATE_LABEL_FAIL)),
             ("Gate", gate),
             ("Condicao (a) -- leads qualificados",
              "qualificados %d >= piso %d -> %s"
              % (leads_qualificados, min_sinais, "OK" if c1_ok else "FAIL")),
             ("Condicao (b) -- confianca",
-             "confianca_agregada %.2f >= 0.70 -> %s"
-             % (confianca_agregada, "OK" if c2_ok else "FAIL")),
+             "confianca_agregada %.2f >= %.2f -> %s"
+             % (confianca_agregada, _GATE_CONFIANCA_MIN, "OK" if c2_ok else "FAIL")),
             ("Condicao (c) -- cobertura",
              "pelo menos 1 canal retornou dado -> %s"
              % ("OK" if c3_ok else "FAIL (nenhum canal com dado)")),
@@ -428,14 +454,14 @@ def build(
     # Sect 2 data: zero real leads -> ONE honest empty-state row (never a fabricated lead).
     canais_label = ", ".join(_CHANNEL_LABEL.get(ch, ch) for ch in channels)
     lead_rows: List[List[Any]] = [[
-        "(nenhum lead encontrado)",
-        "--",
+        _EMPTY_LEAD_NOME,
+        _EMPTY_LEAD_TIPO,
         canais_label,
         CONTACT_ABSENT,
         "execute com credencial + lanes reais (fase 1b)" if offline
         else "lanes reais chegam na fase 1b",
-        0.0,
-        "vazio",
+        _EMPTY_LEAD_SCORE,
+        _EMPTY_LEAD_STATUS,
     ]]
 
     # Sect 4 data: the planned sources, each honest-blocked (not executed).
@@ -496,9 +522,91 @@ def build(
     )
 
 
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant
+# build()/assemble_output() read above -- never a re-typed literal -- so an exported bundle
+# can never drift from what build() actually enforces at runtime.
+#
+# HONEST FRAMING (POLICY 2026-07-18: law + labeled scaffold): leadgen.py's OWN module
+# docstring calls its offline path "an HONEST SCAFFOLD" -- unlike docs.py, this generator
+# has NO fake/simulated example content to label (no invented lead names, companies, or
+# contacts; the never-fabricate gate in the module docstring forbids it). The real law is
+# the channel routing table, the frozen output shape, the 7-field input contract, and the
+# 3-condition go/no-go qualification gate (the actual business rule this pipeline enforces
+# before recommending a hand-off to the CRM). The one genuine SCAFFOLD here is the honest
+# empty-state Leads row + honest per-channel status this generator emits when 0 real leads
+# are found -- labeled ``offline_scaffold`` below (per POLICY, never silently dropped).
+# KIND/CAPABILITY (seam plumbing) are excluded, same as ads.py/docs.py; this generator has
+# no _DATE_MOCK-style dishonest frozen stub to exclude.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law leadgen.py enforces on every lead-gen run (Missao A). Returns a
+    structured, JSON-serialisable dict -- never {} for THIS generator (leadgen DOES declare
+    domain law: the channel enum + their real planned routing, the frozen 5-section output
+    shape + 7-col Leads table, the 7-field input contract, the 3-condition go/no-go
+    qualification gate, the never-fabricate contact contract, and the labeled offline
+    scaffold; {} is only the _base.py no-op default for a generator with none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "channels_enum": list(_CHANNEL_ENUM),
+        "channel_labels": dict(_CHANNEL_LABEL),
+        "planned_sources_by_channel": {
+            ch: list(srcs) for ch, srcs in _CHANNEL_SOURCES.items()
+        },
+        "output_section_titles": list(SECTION_TITLES),
+        "leads_table_columns": list(LEADS_COLUMNS),
+        "input_fields": {
+            "objetivo": "free text; default placeholder when blank: '%s'"
+                        % _DEFAULT_OBJETIVO_PLACEHOLDER,
+            "seed": "free text (termo/CNPJ/marca); default placeholder when blank: '%s'"
+                    % _DEFAULT_SEED_PLACEHOLDER,
+            "regiao": "free text; default: '%s'" % _DEFAULT_REGION,
+            "qualificacao": "free text; optional, no default (blank allowed)",
+            "canais": "list/CSV from channels_enum; unknown entries dropped honestly "
+                      "(noted); blank/all-invalid -> all channels",
+            "qtd_alvo": "int >= 1; default %d" % _DEFAULT_TARGET,
+            "min_sinais": "int >= 1; default %d (the honesty floor: >=1 signal/source "
+                          "per lead to count)" % _DEFAULT_MIN_SINAIS,
+        },
+        "qualification_gate": {
+            "condition_a_leads_qualificados_floor":
+                "leads_qualificados >= min_sinais (per-run floor; default %d)"
+                % _DEFAULT_MIN_SINAIS,
+            "condition_b_confianca_floor": _GATE_CONFIANCA_MIN,
+            "condition_c_channel_coverage":
+                "at least 1 channel must return data (cobertura_ok)",
+            "verdict_pass_label": _GATE_LABEL_PASS,
+            "verdict_fail_label": _GATE_LABEL_FAIL,
+        },
+        "never_fabricate_contract": {
+            "contact_absent_marker": CONTACT_ABSENT,
+            "rule": "unknown name/contact/CNPJ/signal -> field absent or the marker "
+                    "above, NEVER invented (S1-S5, n01_sourcing_rigor)",
+        },
+        "offline_scaffold": {
+            "example_lead_row_nome": _EMPTY_LEAD_NOME,
+            "example_lead_row_tipo": _EMPTY_LEAD_TIPO,
+            "example_lead_row_contato": CONTACT_ABSENT,
+            "example_lead_row_score": _EMPTY_LEAD_SCORE,
+            "example_lead_row_status": _EMPTY_LEAD_STATUS,
+            "default_when_offline": "every selected channel reported blocked (sem "
+                "credencial); 0 leads, confianca 0.0",
+            "default_when_credential_present": "phase 1a still reports honest-empty "
+                "-- real lanes are phase 1b, never fabricated in the meantime",
+        },
+    }
+
+
 __all__ = [
     "KIND",
     "CAPABILITY",
+    "CONTRACT_VERSION",
     "SECTION_TITLES",
     "LEADS_COLUMNS",
     "CONTACT_ABSENT",
@@ -506,4 +614,6 @@ __all__ = [
     "parse_inputs",
     "assemble_output",
     "_lead_row",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

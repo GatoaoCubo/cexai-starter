@@ -80,3 +80,49 @@ Sem preâmbulo, sem conversa paralela.
 | [[bld_eval_marketplace_listing]] | downstream | 0.48 |
 | [[bld_knowledge_marketplace_listing]] | related | 0.42 |
 | [[bld_config_marketplace_listing]] | related | 0.38 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/marketplace_listing.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Marketplace Law
+| Key | Value |
+|-----|-------|
+| currency_id | BRL |
+| title_max_len | 60 |
+
+### Condition Vocabulary
+| Key | Value |
+|-----|-------|
+| novo | new |
+| new | new |
+| usado | used |
+| used | used |
+| recondicionado | refurbished |
+| refurbished | refurbished |
+
+### Required Fields To Publish
+- available_quantity
+- category_id
+- condition
+- currency_id
+- listing_type_id
+- price
+- title
+
+**Required Fields Note**: Mercado Livre's real POST /items payload needs all 7 keys above non-empty/non-zero to publish. This generator's F7 gate hard-blocks 3 of them when absent (title, category_id, price); the other 4 (currency_id, available_quantity, condition, listing_type_id) always resolve to a safe default so they are never independently missing at gate time.
+
+### Defaults
+| Key | Value |
+|-----|-------|
+| default_marketplace | mercado_livre |
+| default_listing_type_id | gold_special |
+| default_nome_interno_when_unspecified | Produto |
+
+**Atributos Example Scaffold**: {"Material": "sisal", "Peso_kg": "1.5"}
+
+**Scope Note**: This generator targets Mercado Livre ONLY. It has no Shopee/Amazon/Magalu code path -- see env_config_marketplace_specs_anuncio.md for those marketplaces' rules (owned by a different generator, N02's anuncio pipeline).
+<!-- cex:domain_contract:end -->

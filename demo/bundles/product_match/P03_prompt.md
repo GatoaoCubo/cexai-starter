@@ -115,3 +115,69 @@ python _tools/cex_skill_loader.py --verify product_match
 | [[bld_prompt_output_validator]] | sibling | 0.47 |
 | [[bld_prompt_data_contract]] | sibling | 0.45 |
 | [[bld_schema_product_match]] | upstream | 0.40 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/product_match.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+**Run Mode**: offline-deterministic
+
+### Enums
+- **match_engine**: reverse_image, embedding, manual, none
+- **endpoint_status**: ok, blocked, skipped, failed
+
+### Defaults
+- **match_engine**: none
+- **join_keys**: photo, dimension, supplier_code
+- **confidence_floor**: 0.7
+- **min_photo_px**: 200
+
+### Excluded Join Keys
+- ean
+- gtin
+- barcode
+
+**Join Key Exclusion Reason**: EAN/GTIN/barcode excluidos de proposito -- todo revendedor recodifica esses campos, entao eles NUNCA entram no join (non-key composite linkage only)
+
+### Join Key Field Aliases
+- **photo**: photo_uri, photo, image, image_uri
+- **dimension**: dimension, dim, size
+- **supplier_code**: code, supplier_code, sku
+- **code**: code, supplier_code, sku
+
+### Piece Count Conflict Tokens
+-  pecas
+-  peca
+-  pcs
+-  pc
+- c
+-  unidades
+-  unid
+
+### Score Penalties
+| Key | Value |
+|-----|-------|
+| offline | 0.35 |
+| zero_items | 0.25 |
+| per_missing_photo | 0.05 |
+| missing_photo_cap | 0.15 |
+
+**Offline Endpoint Status**: blocked: offline (sem motor reverse-image)
+
+### Offline Fallback Messages
+| Key | Value |
+|-----|-------|
+| match_row_no_engine | nao executado -- sem motor de match |
+| match_row_engine_pending | pendente -- run live com o motor configurado (ver enums.match_engine) |
+
+### Section Rule Notes
+| Key | Value |
+|-----|-------|
+| resultado_do_match | Uma linha por item -- casou? contra qual fonte e com que confianca (>= match_confidence_floor para contar como match). Offline retorna NAO honesto, nunca um match inventado. |
+| auditoria_de_catalogo | Flags de cadastro divergente, foto divergente ou baixa-res (< audit_min_photo_px) detectadas durante o match (rodam offline sobre o dado local do item). |
+| proveniencia | Motor usado + fontes consultadas + status por fonte; offline retorna honest-null (nunca um match fabricado). Status: ok | blocked | skipped | failed. |
+| veredito | Gate nomeado (match_confiavel) -- cobertura do match e os bloqueadores que impedem um match confiavel. |
+<!-- cex:domain_contract:end -->

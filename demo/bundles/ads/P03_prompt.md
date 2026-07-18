@@ -135,3 +135,61 @@ HARD gates (all must pass — fix before delivering):
 | [[bld_orchestration_prompt_template]] | related | 0.47 |
 | [[schema_prompt_template_builder]] | downstream | 0.45 |
 | [[bld_memory_prompt_template]] | downstream | 0.39 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/ads.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Platform Char Limits
+| Key | Value |
+|-----|-------|
+| meta_feed | 125 |
+| google_search | 90 |
+| instagram_stories | 80 |
+| tiktok | 150 |
+
+### Enums
+- **register**: bold, playful, warm
+- **funnel_stage**: awareness, consideration, decision
+- **tone**: confiante, divertido, premium, urgente
+- **ab_axis**: cta, hook, offer
+
+### Funnel Copy Formulas
+| Key | Value |
+|-----|-------|
+| awareness | AIDA (Attention + Interest focus) |
+| consideration | PAS (Problem + Agitation + Solution) |
+| decision | Oferta + Urgencia + Garantia + CTA forte |
+
+### Cta Pressure By Funnel Stage
+| Key | Value |
+|-----|-------|
+| awareness | Soft: 'Saiba mais', 'Descubra', 'Explore' |
+| consideration | Medio: 'Veja como', 'Compare', 'Experimente gratis' |
+| decision | Forte: 'Comprar agora', 'Garantir desconto', 'Comecar hoje' |
+
+### Next Stage By Funnel Stage
+| Key | Value |
+|-----|-------|
+| awareness | consideration (nutrir lead com PAS) |
+| consideration | decision (oferta + urgencia) |
+| decision | reativacao (warm para churned) |
+
+### Forbidden Words
+| Word | Replacement |
+|-----|-----|
+| incrivel | resultado verificavel com fonte |
+| game-changer | a mudanca especifica neste contexto |
+| revolucionario | o mecanismo exato -- nunca adjetivo |
+
+### Compliance Gates
+- Afirmacao verificavel: toda claim precisa de fonte citavel antes de publicar
+- Sem superlativo nao-comprovado: 'melhor', 'n1' so com ranking + fonte auditavel
+- Meta/Instagram: sem imagens 'antes/depois' de saude sem aprovacao medica
+- LGPD: sem coleta implicita de dados pessoais no anuncio
+- Nenhuma promessa de resultado garantido sem evidencia auditavel
+- Chars <= limite contratual da plataforma alvo (ver platform_char_limits) -- verificado antes de publicar
+<!-- cex:domain_contract:end -->

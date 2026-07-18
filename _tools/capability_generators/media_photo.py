@@ -70,6 +70,57 @@ _NEGATIVE: dict = {
     "playful": ["tons neutros/acinzentados sem pop", "composicao estatica", "fundo branco simples"],
 }
 
+# Universal negative-prompt items appended to EVERY register (brand-safety + honesty gates
+# that apply regardless of visual register) -- real law, enforced unconditionally in build().
+_NEGATIVE_UNIVERSAL: list = [
+    "Claim de saude ou terapeutico no texto sobreposto sem aprovacao",
+    "Promessa visual nao-verificavel (ex: produto maior do que e na realidade)",
+    "Sombras duras nao intencionais que escondem detalhes do produto",
+]
+
+# Compliance / image-rights gates enforced on every photo brief regardless of register.
+_COMPLIANCE_ITEMS: list = [
+    "Direitos de imagem: fotos de clientes reais so com consentimento escrito assinado",
+    "Sem marca de terceiro visivel sem autorizacao de uso de marca",
+    "Rotulo 'imagem ilustrativa' quando a foto diferir do produto entregue ao cliente",
+    "Animal welfare: nenhum pet deve ser forcado a posicao desconfortavel para o shot",
+    "Nao usar foto de pet alheio sem permissao explicita do tutor",
+]
+
+# Creative-direction mood per register (Section 1 "Mood" field) -- real law, read
+# unconditionally in build() regardless of scaffold vs LLM branch.
+_MOOD_MAP: dict = {
+    "warm": "Aconchego domestico -- luz natural, texturas, conexao emocional com o pet",
+    "bold": "Hero de produto -- alto contraste, foco tecnico, autoridade visual",
+    "playful": "Energia e cor -- movimento, alegria, vibes de redes sociais",
+}
+
+# Aspect ratio -> target platform/surface + usage intent. Real law: governs the shot-list
+# annotation on BOTH the scaffold branch and the LLM-parsed branch (_intent_for_aspect below
+# is called from both _scaffold_shots and _parse_llm_shots).
+_ASPECT_INTENT: dict = {
+    "4:5": "Feed principal (Instagram/Facebook) -- produto hero",
+    "9:16": "Stories/Reels -- formato vertical imersivo",
+    "1:1": "Grid quadrado / packshot e-commerce",
+    "16:9": "Banner web / YouTube thumbnail",
+    "3:4": "Pinterest / portrait editorial",
+}
+
+# Deterministic shot-list SCAFFOLD (label, intent) -- the fallback content _scaffold_shots
+# emits ONLY when no credential is supplied or the LLM call fails/returns nothing. Example/
+# placeholder content, NOT per-topic authored law -- domain_contract() labels this honestly
+# as scaffold (key suffix _scaffold), never to be confused with a live authored shot list.
+_SHOT_TEMPLATES: list = [
+    ("Shot 1 -- produto isolado", "Estabelecer produto como hero: forma + material + escala"),
+    ("Shot 2 -- pet interagindo", "Prova de uso: gato no produto, comportamento natural"),
+    ("Shot 3 -- ambiente lifestyle", "Contexto emocional: produto integrado ao lar"),
+    ("Shot 4 -- detalhe de material", "Credibilidade tecnica: sisal, estrutura, acabamento"),
+    ("Shot 5 -- CTA visual", "Shot de conversao: produto + preco/oferta visivel"),
+    ("Shot 6 -- angulo criativo", "Diferenciar: perspectiva incomum, composicao ousada"),
+    ("Shot 7 -- embalagem + unboxing", "Confianca de compra online: o que o cliente recebe"),
+    ("Shot 8 -- comparativo de escala", "Contextualizar tamanho: produto + item conhecido"),
+]
+
 
 def _pick(val: Any, valid: set, default: str) -> str:
     s = str(val or "").strip().lower()
@@ -92,30 +143,13 @@ def _coerce_aspects(val: Any) -> List[str]:
 
 
 def _intent_for_aspect(aspect: str) -> str:
-    mapping: dict = {
-        "4:5": "Feed principal (Instagram/Facebook) -- produto hero",
-        "9:16": "Stories/Reels -- formato vertical imersivo",
-        "1:1": "Grid quadrado / packshot e-commerce",
-        "16:9": "Banner web / YouTube thumbnail",
-        "3:4": "Pinterest / portrait editorial",
-    }
-    return mapping.get(aspect, "Formato %s -- adaptar composicao" % aspect)
+    return _ASPECT_INTENT.get(aspect, "Formato %s -- adaptar composicao" % aspect)
 
 
 def _scaffold_shots(num: int, aspects: List[str], style: str) -> List[List[str]]:
-    templates = [
-        ("Shot 1 -- produto isolado", "Estabelecer produto como hero: forma + material + escala"),
-        ("Shot 2 -- pet interagindo", "Prova de uso: gato no produto, comportamento natural"),
-        ("Shot 3 -- ambiente lifestyle", "Contexto emocional: produto integrado ao lar"),
-        ("Shot 4 -- detalhe de material", "Credibilidade tecnica: sisal, estrutura, acabamento"),
-        ("Shot 5 -- CTA visual", "Shot de conversao: produto + preco/oferta visivel"),
-        ("Shot 6 -- angulo criativo", "Diferenciar: perspectiva incomum, composicao ousada"),
-        ("Shot 7 -- embalagem + unboxing", "Confianca de compra online: o que o cliente recebe"),
-        ("Shot 8 -- comparativo de escala", "Contextualizar tamanho: produto + item conhecido"),
-    ]
     rows: List[List[str]] = []
     for i in range(num):
-        label, intent = templates[i % len(templates)]
+        label, intent = _SHOT_TEMPLATES[i % len(_SHOT_TEMPLATES)]
         aspect = aspects[i % len(aspects)]
         rows.append([label, intent + " (generation_pending)", _intent_for_aspect(aspect)])
     return rows
@@ -191,12 +225,6 @@ def build(
         shot_rows = _scaffold_shots(num_shots, aspects, style)
         notes.append("generation_pending: scaffold shot list (no credential or LLM failed)")
 
-    mood_map: dict = {
-        "warm": "Aconchego domestico -- luz natural, texturas, conexao emocional com o pet",
-        "bold": "Hero de produto -- alto contraste, foco tecnico, autoridade visual",
-        "playful": "Energia e cor -- movimento, alegria, vibes de redes sociais",
-    }
-
     # Section 1: Brief
     sec1 = fields_section(
         "Brief",
@@ -205,7 +233,7 @@ def build(
             ("Sujeito", subject),
             ("Estilo", style),
             ("Proporcoes alvo", ", ".join(aspects)),
-            ("Mood (creative direction)", mood_map.get(reg, "Registro %s" % reg)),
+            ("Mood (creative direction)", _MOOD_MAP.get(reg, "Registro %s" % reg)),
         ],
         note="Direcionamento criativo ANTES do set. Compartilhar com fotografo antes da sessao.",
     )
@@ -254,11 +282,7 @@ def build(
 
     # Section 5: Negative prompt (list)
     neg_base = _NEGATIVE.get(reg, [])
-    neg_items = list(neg_base) + [
-        "Claim de saude ou terapeutico no texto sobreposto sem aprovacao",
-        "Promessa visual nao-verificavel (ex: produto maior do que e na realidade)",
-        "Sombras duras nao intencionais que escondem detalhes do produto",
-    ]
+    neg_items = list(neg_base) + list(_NEGATIVE_UNIVERSAL)
     sec5 = list_section(
         "Negative prompt",
         neg_items,
@@ -268,13 +292,7 @@ def build(
     # Section 6: Compliance / uso (list)
     sec6 = list_section(
         "Compliance / uso",
-        [
-            "Direitos de imagem: fotos de clientes reais so com consentimento escrito assinado",
-            "Sem marca de terceiro visivel sem autorizacao de uso de marca",
-            "Rotulo 'imagem ilustrativa' quando a foto diferir do produto entregue ao cliente",
-            "Animal welfare: nenhum pet deve ser forcado a posicao desconfortavel para o shot",
-            "Nao usar foto de pet alheio sem permissao explicita do tutor",
-        ],
+        list(_COMPLIANCE_ITEMS),
         note="Compliance de uso de imagem. Verificar ANTES de publicar qualquer foto.",
     )
 
@@ -305,6 +323,69 @@ def build(
         }, ensure_ascii=True),
         real=True, notes=notes,
     )
+
+
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant
+# build() reads above -- never a re-typed literal -- so an exported bundle can never drift
+# from what build() actually enforces at runtime. Only the CONTAINER shape changes (e.g.
+# lighting_camera_by_register flattens the per-register list of (parameter, value) tuples
+# into a list of {register, parameter, value} dicts, mirroring docs.py's
+# step_scaffold_by_format flattening) so the generic markdown renderer in
+# cex_export_agent.py (_render_domain_contract_body) produces a clean table -- the leaf
+# values themselves are never retyped.
+#
+# HONEST FRAMING: shot_list_scaffold is the DETERMINISTIC fallback shot-list content
+# _scaffold_shots() emits ONLY when no credential is supplied or the LLM call fails/returns
+# nothing (see build()'s F6 PRODUCE branch above) -- placeholder example content, not
+# per-topic authored law, hence the _scaffold key suffix. default_aspect_ratios_by_register
+# mirrors the module constant _REGISTER_ASPECT, which is DECLARED in this module but is NOT
+# currently read anywhere in build() -- aspect_ratios come straight from inputs (default
+# ["4:5"] via _coerce_aspects) regardless of register; exposed here for honesty (it is real
+# data living in the module) but deliberately named default_* rather than folded into the
+# enforced law above, so a consumer never assumes it gates a real run today. KIND (seam
+# plumbing, not document content) is deliberately NOT included, matching the ads.py/docs.py
+# precedent.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law media_photo.py enforces on every generated photo brief (Missao
+    A). Returns a structured, JSON-serialisable dict -- never {} for THIS generator
+    (media_photo DOES declare domain law: style/register enums, the aspect-ratio ->
+    platform/usage-intent mapping, per-register lighting+camera setup, per-register
+    creative-direction mood, per-register + universal negative-prompt rules, and the
+    compliance/image-rights gates; {} is only the _base.py no-op default for a generator
+    with none). See the comment block immediately above for the HONEST FRAMING of
+    ``shot_list_scaffold`` (placeholder fallback content) and
+    ``default_aspect_ratios_by_register`` (declared but not currently enforced by build())."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "enums": {
+            "style": sorted(_STYLE_ENUM),
+            "register": sorted(_REGISTER_ENUM),
+        },
+        "aspect_ratio_platform_intent": dict(_ASPECT_INTENT),
+        "lighting_camera_by_register": [
+            {"register": reg, "parameter": p, "value": v}
+            for reg, rows in _LIGHTING.items()
+            for (p, v) in rows
+        ],
+        "mood_by_register": dict(_MOOD_MAP),
+        "negative_prompt_by_register": {reg: list(items) for reg, items in _NEGATIVE.items()},
+        "negative_prompt_universal": list(_NEGATIVE_UNIVERSAL),
+        "compliance_gates": list(_COMPLIANCE_ITEMS),
+        "default_aspect_ratios_by_register": {
+            reg: list(vals) for reg, vals in _REGISTER_ASPECT.items()
+        },
+        "shot_list_scaffold": [
+            {"label": label, "intent": intent} for (label, intent) in _SHOT_TEMPLATES
+        ],
+    }
 
 
 # --------------------------------------------------------------------------- #
@@ -380,4 +461,6 @@ __all__ = [
     "build",
     "media_photo_media_requests",
     "media_photo_produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

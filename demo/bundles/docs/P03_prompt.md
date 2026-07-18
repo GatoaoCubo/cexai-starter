@@ -89,3 +89,85 @@ related:
 | p01_kc_knowledge_best_practices | a montante | 0.32 |
 | [[bld_prompt_input_schema]] | irmao | 0.30 |
 | [[bld_prompt_instruction]] | irmao | 0.28 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/docs.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Enums
+- **audience**: cliente_final, revendedor, suporte
+- **format**: faq, passo_a_passo, referencia
+- **chunk_target**: paragrafo, passo, secao
+
+### Audience Labels
+| Key | Value |
+|-----|-------|
+| cliente_final | Tutor/cliente final -- sem conhecimento tecnico previo |
+| suporte | Equipe de suporte tecnico (nivel 1 e 2) |
+| revendedor | Revendedor autorizado -- montagem e configuracao inicial |
+
+### Format Descriptions
+| Key | Value |
+|-----|-------|
+| passo_a_passo | passo_a_passo -- etapas sequenciais numeradas |
+| faq | faq -- perguntas e respostas agrupadas por tema |
+| referencia | referencia -- tabela de campos e valores aceitos |
+
+### Out Of Scope By Format
+| Key | Value |
+|-----|-------|
+| passo_a_passo | Nao e manual de servico tecnico; para reparo avancado consultar o guia do revendedor |
+| faq | Nao e guia de configuracao avancada; para integradores usar o SDK guide separado |
+| referencia | Nao e manual de uso final; para uso basico consultar o guia rapido incluso |
+
+### Chunk Size By Chunk Target
+| Key | Value |
+|-----|-------|
+| passo | 256 tokens (granularidade por passo) |
+| secao | 512 tokens |
+| paragrafo | 384 tokens |
+
+### Step Scaffold By Format
+| Format | Step | Instruction | Tip |
+|-----|-----|-----|-----|
+| passo_a_passo | 1 | Separe as 3 secoes e a base; confira os 6 parafusos | Superficie plana min 60x60cm; evite carpete (base desliza durante o aperto) |
+| passo_a_passo | 2 | Fixe a base reforcada primeiro (chave Allen inclusa) | Aperte em cruz -- 4 parafusos x 2Nm (rosca M6 plastico, quebra acima de 2Nm) |
+| passo_a_passo | 3 | Rosqueie as secoes de baixo para cima | Pare ao sentir resistencia; nao force (rosca M6 plastico) |
+| passo_a_passo | 4 | Posicione a 50-150cm de janela ou luz natural; evite corredor de passagem | Altura do topo >= altura dos olhos do gato sentado (ref 30-40cm SRD adulto) |
+| passo_a_passo | 5 | Aplique catnip no topo na 1a semana | Reaplicar a cada 3 dias; nao usar apos 7 dias (dependencia olfativa nao desejada) |
+| faq | 1 | Identifique a questao pelo codigo de erro ou sintoma visivel | Codigos: E01 (conexao), E02 (sensor), E03 (motor) |
+| faq | 2 | Consulte a secao de FAQ do manual na pagina indicada pelo codigo | Manter manual em local acessivel durante o uso |
+| faq | 3 | Siga as instrucoes na ordem indicada sem pular etapas | Cada passo depende do anterior para funcionar corretamente |
+| referencia | 1 | Localize o campo no painel de configuracao do produto | Campo identificado por etiqueta ou numero de serie |
+| referencia | 2 | Verifique o tipo de dado aceito (inteiro/string/enum) | Consulte a tabela de referencia de campos do manual |
+| referencia | 3 | Aplique o valor dentro da faixa declarada pelo fabricante | Valores fora da faixa sao rejeitados com codigo E04 |
+
+### Maintenance Schedule Scaffold
+| Task | Frequency | Indicator |
+|-----|-----|-----|
+| Limpar superficie e mecanismo externo | Semanal | Sem residuos, odor ou particulas visiveis |
+| Verificar fixacoes e conectores | Mensal | Nenhuma peca solta; conectores firmes ao toque |
+| Inspecionar desgaste de partes moveis | Trimestral | Sem folga excessiva (tolerancia >1mm = substituir) |
+| Substituir componente de consumivel | ~12 meses ou desgaste >30% | Componente em bom estado visual e funcional |
+
+### Troubleshooting Scaffold
+- Produto nao liga -> verificar conexao de energia e fusivel interno (manual sec 3.1)
+- Barulho incomum -> inspecionar partes moveis; se persistir contatar suporte com codigo de erro
+- Falha de conectividade -> resetar modulo WiFi (botao reset 5s); confirmar rede 2.4GHz
+- Peca danificada -> acionar garantia com nota fiscal; nao tentar reparo sem autorizacao tecnica
+
+### Default Sources When Unspecified
+- Manual do fabricante (exemplo simulado)
+- Base de suporte interna (simulado)
+
+### Source Trust By Rank
+| Rank | Confidence | Reliability |
+|-----|-----|-----|
+| 1 | 0.92 | alta |
+| 2 | 0.78 | media |
+| 3 | 0.61 | baixa |
+| 4 | 0.55 | baixa |
+<!-- cex:domain_contract:end -->

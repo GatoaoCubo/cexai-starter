@@ -52,3 +52,36 @@ Se qualquer item falhar, volte à Fase 1 ou 2 antes de entregar.
 | [[funnel-diagnostic-builder]] | downstream | 0.46 |
 | [[bld_schema_funnel_diag]] | sibling | 0.38 |
 | [[bld_output_template_funnel_diag]] | downstream | 0.34 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/funnel_diag.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Input Defaults
+| Key | Value |
+|-----|-------|
+| window_days | 30 |
+| health_threshold_pct | 60.0 |
+| baseline_window_days | 30 |
+| product_label | Funil |
+
+### Canonical Example Funnel
+| Stage | Stage Volume |
+|-----|-----|
+| Visitas | 42000.0 |
+| Ver produto | 18480.0 |
+| Adicionar ao carro | 5544.0 |
+| Iniciar checkout | 2218.0 |
+| Compra | 1109.0 |
+
+**Projection Closure Pp**: 5
+
+### Impact Grade Thresholds
+| Key | Value |
+|-----|-------|
+| alto_min_share_of_total_loss | 0.3 |
+| medio_min_share_of_total_loss | 0.12 |
+<!-- cex:domain_contract:end -->

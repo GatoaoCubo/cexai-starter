@@ -89,3 +89,48 @@ related:
 | p01_kc_knowledge_best_practices | a montante | 0.32 |
 | [[bld_prompt_input_schema]] | irmão | 0.30 |
 | [[bld_prompt_instruction]] | irmão | 0.28 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/product_docs.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Optional Sections
+- faq
+- referencia
+- setup
+
+### Section Labels
+| Key | Value |
+|-----|-------|
+| setup | Setup |
+| referencia | Referencia de campos |
+| faq | FAQ |
+
+### Audience Enum
+| Key | Value |
+|-----|-------|
+| cliente_final | Tutor/cliente final -- sem conhecimento tecnico previo |
+| suporte | Equipe de suporte tecnico (nivel 1 e 2) |
+| revendedor | Revendedor autorizado -- instalacao e configuracao |
+| integrador | Integrador de sistemas -- APIs e extensoes |
+
+**Out Of Scope Statement**: Nao e manual de servico tecnico; para desmontagem/reparo avancado consultar o guia de revendedor ou contatar suporte autorizado
+
+### Default Source Refs
+- Manual do fabricante v1.0 (exemplo simulado)
+
+### Source Confidence By Rank
+- 0.95
+- 0.88
+- 0.72
+- 0.6
+
+### Source Reliability By Rank
+- alta
+- alta
+- media
+- baixa
+<!-- cex:domain_contract:end -->

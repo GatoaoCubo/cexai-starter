@@ -956,6 +956,89 @@ def _audit_call(audit_fn: Any, rec: Dict[str, Any], min_photo_px: int) -> str:
 
 
 # --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring; pattern
+# copied verbatim from ads.py's own domain_contract()).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant
+# build() reads above -- never a re-typed literal -- so an exported bundle can never drift
+# from what build() actually enforces at runtime. Groups mirror the module's own Stage
+# comments (cost-source adapter = Stage B, demand normalization = Stage C, take-rate =
+# Stage E, score+rank = Stage G, coverage report = Stage F, match/audit = Stage I) plus the
+# S1-S5 sourcing-rigor lanes + N06 unit-econ lane named in the module docstring.
+#
+# EXCLUDED ON PURPOSE: the named gate's numeric thresholds (margin_top >= 25.0 percent,
+# rfactor >= 0.6 -- see ``gate_pass`` in build() above) ARE real domain law, but they are inline
+# literals inside build(), not module-level constants -- there is nothing to reference
+# without re-typing a bare literal, which the fabrication discipline forbids. Same for the
+# data_window_days > 365 freshness-RED check (also an inline literal) and the GREEN/AMBER/
+# RED band boundaries themselves (owned by the sibling competitor_benchmark._freshness(),
+# outside this module -- not this generator's own constant to expose).
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law sourcing_opportunity.py enforces on every buy-side sourcing run
+    (Missao A). Returns a structured, JSON-serialisable dict -- never {} for THIS generator
+    (sourcing_opportunity DOES declare domain law; {} is only the _base.py no-op default for
+    a generator that has none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "enums": {
+            "cost_source_strategy": list(_COST_STRATEGY_ENUM),
+            "demand_signal_basis": list(_DEMAND_BASIS_ENUM),
+            "fee_model": list(_FEE_MODEL_ENUM),
+            "freight_model": list(_FREIGHT_MODEL_ENUM),
+        },
+        "cost_sourcing": {
+            "default_strategy": _DEFAULT_COST_STRATEGY,
+            "discount_filename_pattern": _DEFAULT_DISCOUNT_FILENAME_PATTERN,
+            "cost_column_aliases": list(_DEFAULT_COST_COLUMN_ALIASES),
+        },
+        "demand_signal": {
+            "default_basis": _DEFAULT_DEMAND_BASIS,
+            "level_labels": list(_DEFAULT_DEMAND_LEVEL_LABELS),
+            "level_weights": list(_DEFAULT_DEMAND_LEVEL_WEIGHTS),
+        },
+        "take_rate": {
+            "default_fee_model": _DEFAULT_FEE_MODEL,
+            "default_freight_model": _DEFAULT_FREIGHT_MODEL,
+            "marketplace_fee_pct": _DEFAULT_MARKETPLACE_FEE_PCT,
+            "marketplace_fee_fixed": _DEFAULT_MARKETPLACE_FEE_FIXED,
+            "tax_pct": _DEFAULT_TAX_PCT,
+            "show_net_margin_default": _DEFAULT_SHOW_NET,
+        },
+        "score_weights": dict(_DEFAULT_SCORE_WEIGHTS),
+        "ranking": {
+            "tie_break_order": list(_DEFAULT_TIE_BREAK_ORDER),
+            "type_cap": _DEFAULT_TYPE_CAP,
+        },
+        "coverage_and_rigor": {
+            "min_sources_per_type": _DEFAULT_MIN_SOURCES_PER_TYPE,
+            "data_window_days": _DEFAULT_DATA_WINDOW_DAYS,
+            "treat_web_price_as_ceiling": _DEFAULT_TREAT_WEB_PRICE_AS_CEILING,
+            "coverage_report": _DEFAULT_COVERAGE_REPORT,
+            "verify_top_n": _DEFAULT_VERIFY_TOP_N,
+            "region": _DEFAULT_REGION,
+        },
+        "honest_null_tokens": list(_DEFAULT_HONEST_NULL_TOKENS),
+        "relevance_taxonomy": list(_DEFAULT_RELEVANCE_TAXONOMY),
+        "match_and_audit": {
+            "join_keys": list(_DEFAULT_MATCH_JOIN_KEYS),
+            "exclude_keys": list(_DEFAULT_MATCH_EXCLUDE_KEYS),
+            "min_photo_px": _DEFAULT_AUDIT_MIN_PHOTO_PX,
+        },
+        "honest_null_labels": {
+            "demand": _NULL_DEMAND,
+            "price": _NULL_PRICE,
+            "manual_bucket": _MANUAL_BUCKET,
+            "not_applicable": _NA,
+        },
+    }
+
+
+# --------------------------------------------------------------------------- #
 # Media helpers (public -- called by tests and the edge runtime via resolve_media).
 # --------------------------------------------------------------------------- #
 def sourcing_opportunity_media_requests(inputs: Mapping[str, Any]) -> List[Dict[str, Any]]:
@@ -992,4 +1075,6 @@ __all__ = [
     "build",
     "sourcing_opportunity_media_requests",
     "sourcing_opportunity_produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

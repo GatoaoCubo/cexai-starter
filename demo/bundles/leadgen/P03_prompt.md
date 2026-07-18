@@ -69,3 +69,81 @@ related:
 | p04_cli_research_pipeline_n01 | downstream | 0.38 |
 | p02_agent_research_pipeline_intelligence | upstream | 0.36 |
 | [[bld_knowledge_research_pipeline]] | upstream | 0.34 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/leadgen.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Channels Enum
+- b2c_marketplace
+- b2b_cnpj
+- ugc_social
+
+### Channel Labels
+| Key | Value |
+|-----|-------|
+| b2c_marketplace | B2C marketplace |
+| b2b_cnpj | B2B CNPJ |
+| ugc_social | UGC social |
+
+### Planned Sources By Channel
+- **b2c_marketplace**: mercadolivre.com.br, shopee.com.br
+- **b2b_cnpj**: cnpj.gov (Receita/CNPJ), ibge (firmografia)
+- **ugc_social**: reddit.com, youtube.com, instagram.com
+
+### Output Section Titles
+- Resumo
+- Leads
+- Proveniencia
+- Fontes
+- Veredito
+
+### Leads Table Columns
+- Nome/Handle
+- Tipo
+- Canal
+- Contato
+- Sinal
+- Confianca
+- Status
+
+### Input Fields
+| Key | Value |
+|-----|-------|
+| objetivo | free text; default placeholder when blank: 'perfil de lead a encontrar' |
+| seed | free text (termo/CNPJ/marca); default placeholder when blank: 'termo/CNPJ/marca a pesquisar' |
+| regiao | free text; default: 'Brasil' |
+| qualificacao | free text; optional, no default (blank allowed) |
+| canais | list/CSV from channels_enum; unknown entries dropped honestly (noted); blank/all-invalid -> all channels |
+| qtd_alvo | int >= 1; default 25 |
+| min_sinais | int >= 1; default 1 (the honesty floor: >=1 signal/source per lead to count) |
+
+### Qualification Gate
+| Key | Value |
+|-----|-------|
+| condition_a_leads_qualificados_floor | leads_qualificados >= min_sinais (per-run floor; default 1) |
+| condition_b_confianca_floor | 0.7 |
+| condition_c_channel_coverage | at least 1 channel must return data (cobertura_ok) |
+| verdict_pass_label | PROSSEGUIR |
+| verdict_fail_label | REVISAR |
+
+### Never Fabricate Contract
+| Key | Value |
+|-----|-------|
+| contact_absent_marker | -- |
+| rule | unknown name/contact/CNPJ/signal -> field absent or the marker above, NEVER invented (S1-S5, n01_sourcing_rigor) |
+
+### Offline Scaffold
+| Key | Value |
+|-----|-------|
+| example_lead_row_nome | (nenhum lead encontrado) |
+| example_lead_row_tipo | -- |
+| example_lead_row_contato | -- |
+| example_lead_row_score | 0.0 |
+| example_lead_row_status | vazio |
+| default_when_offline | every selected channel reported blocked (sem credencial); 0 leads, confianca 0.0 |
+| default_when_credential_present | phase 1a still reports honest-empty -- real lanes are phase 1b, never fabricated in the meantime |
+<!-- cex:domain_contract:end -->

@@ -143,3 +143,104 @@ HARD gates (all must pass — fix before delivering):
 | [[bld_orchestration_prompt_template]] | related | 0.47 |
 | [[schema_prompt_template_builder]] | downstream | 0.45 |
 | [[bld_memory_prompt_template]] | downstream | 0.39 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/email_builder.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Enums
+- **goal**: anuncio, conversao, lancamento, nutricao, reativacao
+- **register**: bold, playful, warm
+- **funnel_stage**: awareness, consideration, decision
+- **ab_axis**: assunto, cta, oferta, personalizacao
+
+### Register Default By Goal
+| Key | Value |
+|-----|-------|
+| nutricao | warm |
+| reativacao | warm |
+| conversao | bold |
+| lancamento | bold |
+| anuncio | bold |
+
+### Ab Axis Labels
+| Key | Value |
+|-----|-------|
+| assunto | Linha de assunto (assunto A vs B) |
+| cta | Call to action (texto e cor do botao) |
+| oferta | Oferta apresentada (desconto vs bonus vs gratis) |
+| personalizacao | Nivel de personalizacao (nome vs segmento vs generico) |
+
+### Forbidden Words
+| Word | Replacement |
+|-----|-----|
+| amazing | resultado especifico com numero |
+| voce vai amar | 'se voce ja quis X, isso entrega X' |
+| limited time | data de expiracao real + razao |
+| engagement | a acao concreta: clique, abertura, resposta |
+
+### Ab Decision Metric
+| Key | Value |
+|-----|-------|
+| metric | Taxa de abertura no primeiro 2h |
+| min_sample_size | 200 envios |
+
+### Preheader Rules
+| Key | Value |
+|-----|-------|
+| length_target | 40-60 caracteres (exibido em Gmail/Outlook sem corte) |
+| function | Complementar o assunto, nao repetiir -- aumenta abertura em 10-15% |
+
+### Compliance Gates
+- LGPD: link de descadastramento (unsubscribe) obrigatorio e funcional
+- CAN-SPAM: razao de contato explicita no rodape + endereco fisico do remetente
+- Sem claim nao-verificavel: depoimentos exigem nome real + resultado mensuravel
+- Remetente autenticado: SPF + DKIM + DMARC configurados antes de enviar
+- Sem domain spoofing: remetente deve ser dominio proprio (nunca gmail/yahoo)
+- LGPD art. 7: base legal de consentimento documentada para cada segmento
+
+### Render Constraints
+| Aspect | Rule |
+|-----|-----|
+| Largura maxima | 600px (Outlook 2016 + Gmail clips acima disso) |
+| CSS | Inline apenas -- clientes de email ignoram stylesheets externos |
+| Outlook MSO | Usar tabelas HTML para layout; evitar CSS flexbox/grid |
+| Dark mode | media prefers-color-scheme:dark + meta[name=color-scheme] content=light dark |
+| Imagens | Alt text em todas -- 40% dos leitores bloqueiam imagens por padrao |
+| CTA botao | VML fallback para Outlook: <!--[if mso]>...<!endif--> |
+
+### Funnel Copy Formulas
+| Key | Value |
+|-----|-------|
+| awareness | AIDA (Attention + Interest + Desire + Action suave) |
+| consideration | PAS (Problem + Agitation + Solution) ou BAB (Before + After + Bridge) |
+| decision | Oferta + Urgencia + Garantia + CTA forte |
+
+### Body Block Persuasive Functions
+- Estabelecer credibilidade (por que ouvir?)
+- Provocar dor latente (o problema que voce nao nomeou)
+- Apresentar solucao (o mecanismo, nao o produto)
+- Prova social (resultado verificavel de cliente real)
+- CTA primario (uma acao, sem alternativa)
+- Urgencia + garantia (reducao de risco de compra)
+
+### Body Block Scaffold
+| Block | Content Template | Function |
+|-----|-----|-----|
+| Abertura | [Hook: provocacao ou empatia baseada no perfil %s] | Estabelecer credibilidade e relevancia imediata (generation_pending) |
+| Problema | [Nomear dor especifica do perfil %s sem solucao ainda] | Provocar dor latente -- leitora nao nomeou, mas reconhece (generation_pending) |
+| Solucao | [Apresentar mecanismo sem vender produto diretamente] | Apresentar solucao: o como funciona, nao o produto (generation_pending) |
+| Prova | [Depoimento real: nome + cargo + resultado especifico + foto] | Prova social verificavel -- nome real, resultado mensuravel (generation_pending) |
+| CTA | [Uma acao, claro, sem opcoes paralelas: link destacado + botao] | CTA primario: uma acao, zero alternativas (generation_pending) |
+| Urgencia | [Prazo real ou escassez verificavel -- nunca fabricar] | Urgencia + garantia: reducao do risco de nao-compra (generation_pending) |
+
+### Default Subject And Preheader When Unspecified
+| Key | Value |
+|-----|-------|
+| subject_a | [Assunto A: benefit-driven, sem superlativo] (generation_pending) |
+| subject_b | [Assunto B: curiosidade ou numero] (generation_pending) |
+| preheader | [Preheader: 40-60 chars, complementa assunto sem repetir] (generation_pending) |
+<!-- cex:domain_contract:end -->

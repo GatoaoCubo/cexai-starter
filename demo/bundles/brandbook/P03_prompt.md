@@ -74,3 +74,50 @@ inventados não são.
 | [[p12_ct_brand_discovery]] | downstream | 0.17 |
 | [[ap01_starter_roteiro]] | downstream | 0.17 |
 | [[p01_dq_tenant_intake_form]] | upstream | 0.16 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/brandbook.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Palette Role Hierarchy
+- Primaria
+- Secundaria
+- Destaque/Accent
+- Neutra
+- Fundo
+
+**Hex Color Validation Pattern**: #[0-9A-Fa-f]{6}
+
+### Logo Usage Law
+- Espaco de protecao: ao menos 1x a altura do simbolo em volta
+- Nao distorcer proporcoes -- usar somente as versoes aprovadas
+
+### Logo Usage Scaffold
+- [fornecer: versao principal do logotipo (fundo claro)]
+- [fornecer: versao invertida do logotipo (fundo escuro)]
+- [fornecer: tamanho minimo em pixels/mm]
+- [fornecer: versoes proibidas (ex. sem fundo, monocromatico)]
+
+### Typography Fields Scaffold
+| Field | Default Scaffold |
+|-----|-----|
+| Primaria (headings) | [fornecer: ex. Montserrat Bold] |
+| Secundaria (corpo) | [fornecer: ex. Open Sans Regular] |
+| Display / especial | [fornecer: ex. Playfair Display] |
+| Escala de tamanhos | [fornecer: ex. h1=48px, h2=32px, body=16px] |
+
+### Imagery Style Fields Scaffold
+| Field | Default Scaffold |
+|-----|-----|
+| Mood geral | [fornecer: ex. confiante, acessivel, moderno] |
+| Estilo de fotografia | [fornecer: ex. lifestyle, produto plano, editorial] |
+| Paleta de filtros | [fornecer: ex. quente, dessaturado, alto contraste] |
+| Elementos proibidos | [fornecer: ex. fotos de banco 'generico', rostos borrados] |
+
+### Notes
+- brandbook.py declares no standalone voice/tone enum or output-section-title constant -- persona/identity/messaging/do-donts content is generated inline per-run inside its own functions (_identity_rows/_persona_rows/_messaging_rows/_dodonts_rows), not module-level constants, so it is not represented here (never re-typed, to avoid a second, driftable copy of the same fact).
+- the 8 output_sections themselves (Identidade da Marca/Paleta de Cores/Tipografia/Persona da Marca/Uso do Logotipo/Estilo de Imagem/Framework de Mensagem/Dos e Nao-Faca) are a frozen structural contract enforced by build()'s section assembly -- see this module's own docstring for the full ordered list.
+<!-- cex:domain_contract:end -->

@@ -50,8 +50,80 @@ _DEFAULT_EXCLUDE_KEYS = ("ean", "gtin", "barcode")
 _DEFAULT_CONFIDENCE_FLOOR = 0.7
 _DEFAULT_MIN_PHOTO_PX = 200
 
-# The honest-null offline endpoint status (frozen palette: ok|blocked|skipped|failed).
+# join_key name -> the item field(s) it reads, first non-empty wins (the join-key -> item-
+# field resolution rule _normalize_join_key applies below). Module-level (Missao A /
+# MOLDED_REAL_SEAM export-deepening) so domain_contract() further down can reference the
+# SAME dict _normalize_join_key reads at runtime -- never a re-typed literal.
+_JOIN_KEY_FIELD_ALIASES: dict = {
+    "photo": ("photo_uri", "photo", "image", "image_uri"),
+    "dimension": ("dimension", "dim", "size"),
+    "supplier_code": ("code", "supplier_code", "sku"),
+    "code": ("code", "supplier_code", "sku"),
+}
+
+# The GENERIC (run-independent) phrasing of the join-key-exclusion rule, for
+# domain_contract() further down -- domain_contract() has no specific per-run
+# effective_join list (it describes the LAW, not one run's output), so it restates the
+# rule already in the module docstring + the "Chave de casamento" field in build() (s_prov)
+# without the run-specific interpolation. Mirrors ads.py's _COMPLIANCE_CHARS_GENERIC.
+_JOIN_KEY_EXCLUSION_RULE_GENERIC = (
+    "EAN/GTIN/barcode excluidos de proposito -- todo revendedor recodifica esses campos,"
+    " entao eles NUNCA entram no join (non-key composite linkage only)"
+)
+
+# Piece-count recognition tokens -- the ONLY tokens _piece_count treats as a piece-count
+# marker (e.g. "12 pecas"). Module-level so domain_contract() can reference the SAME tuple
+# _piece_count reads at runtime (never re-typed).
+_PIECE_COUNT_TOKENS = (" pecas", " peca", " pcs", " pc", "c", " unidades", " unid")
+
+# The frozen per-source endpoint_status palette (n01_sourcing_rigor S2) -- every
+# capability's per-source status is one of these 4; _OFFLINE_ENDPOINT_STATUS below is
+# THIS generator's own value from it ("blocked: ...").
+_ENDPOINT_STATUS_ENUM = ("ok", "blocked", "skipped", "failed")
+# The honest-null offline endpoint status (frozen palette above: ok|blocked|skipped|failed).
 _OFFLINE_ENDPOINT_STATUS = "blocked: offline (sem motor reverse-image)"
+
+# The two honest match-row reasons emitted in the "Fonte casada" column (S1-S5 honest-null:
+# a match is NEVER fabricated, live or offline -- see build()'s own comment on the live
+# branch below). _NO_ENGINE has no interpolation (hoisted verbatim); _ENGINE_PENDING_TEMPLATE
+# is %-formatted with the resolved engine name at runtime, so domain_contract() uses the
+# GENERIC (non-interpolated) phrasing instead (same split as _JOIN_KEY_EXCLUSION_RULE_GENERIC
+# above / ads.py's _COMPLIANCE_CHARS_GENERIC).
+_MATCH_ROW_REASON_NO_ENGINE = "nao executado -- sem motor de match"
+_MATCH_ROW_REASON_ENGINE_PENDING_TEMPLATE = "pendente -- run live com motor '%s'"
+_MATCH_ROW_REASON_ENGINE_PENDING_GENERIC = (
+    "pendente -- run live com o motor configurado (ver enums.match_engine)"
+)
+
+# Scoring weights -- the F7 GOVERN penalties build() actually subtracts from the 0..1
+# score. Module-level so domain_contract() references the SAME numbers, never re-typed
+# magic numbers.
+_SCORE_PENALTY_OFFLINE = 0.35
+_SCORE_PENALTY_ZERO_ITEMS = 0.25
+_SCORE_PENALTY_PER_NO_PHOTO = 0.05
+_SCORE_PENALTY_NO_PHOTO_CAP = 0.15
+
+# Per-section rule notes -- hoisted so build() (each section's note=) and domain_contract()
+# share ONE source of truth (same pattern as ads.py's _COMPLIANCE_STATIC). Text unchanged
+# from the original inline notes.
+_NOTE_MATCH = (
+    "Uma linha por item -- casou? contra qual fonte e com que confianca"
+    " (>= match_confidence_floor para contar como match). Offline retorna NAO"
+    " honesto, nunca um match inventado."
+)
+_NOTE_AUDIT = (
+    "Flags de cadastro divergente, foto divergente ou baixa-res"
+    " (< audit_min_photo_px) detectadas durante o match (rodam offline sobre o"
+    " dado local do item)."
+)
+_NOTE_PROVENANCE = (
+    "Motor usado + fontes consultadas + status por fonte; offline retorna"
+    " honest-null (nunca um match fabricado). Status: %s."
+) % " | ".join(_ENDPOINT_STATUS_ENUM)
+_NOTE_VEREDITO = (
+    "Gate nomeado (match_confiavel) -- cobertura do match e os bloqueadores que"
+    " impedem um match confiavel."
+)
 
 
 # --------------------------------------------------------------------------- #
@@ -89,14 +161,6 @@ def _normalize_join_key(item: Any, join_keys: Any, exclude_keys: Any) -> str:
             except Exception:
                 continue
 
-        # join_key name -> the item field(s) it reads (first non-empty wins).
-        alias = {
-            "photo": ("photo_uri", "photo", "image", "image_uri"),
-            "dimension": ("dimension", "dim", "size"),
-            "supplier_code": ("code", "supplier_code", "sku"),
-            "code": ("code", "supplier_code", "sku"),
-        }
-
         keys = list(join_keys or _DEFAULT_JOIN_KEYS)
         parts: List[str] = []
         seen: set = set()
@@ -108,7 +172,7 @@ def _normalize_join_key(item: Any, join_keys: Any, exclude_keys: Any) -> str:
             if not jk or jk in excl or jk in seen:
                 continue  # never join on an excluded key (ean/gtin/barcode), no dups
             seen.add(jk)
-            fields = alias.get(jk, (jk,))
+            fields = _JOIN_KEY_FIELD_ALIASES.get(jk, (jk,))
             val = ""
             for f in fields:
                 try:
@@ -252,10 +316,9 @@ def _piece_count_conflict(item: Mapping[str, Any]) -> "Optional[str]":
 def _piece_count(text: str) -> "Optional[int]":
     """Extract an integer piece-count from ``<n> pecas|pcs|pc|c`` in ``text``, else None. TOTAL."""
     try:
-        tokens = (" pecas", " peca", " pcs", " pc", "c", " unidades", " unid")
         low = text.lower()
         n = len(low)
-        for tok in tokens:
+        for tok in _PIECE_COUNT_TOKENS:
             idx = low.find(tok)
             while idx > 0:
                 # walk back over the digits immediately preceding the token
@@ -397,7 +460,7 @@ def build(
             mat_rows.append([
                 code,
                 "NAO",
-                "nao executado -- sem motor de match",
+                _MATCH_ROW_REASON_NO_ENGINE,
                 0.0,
             ])
             method = "offline"
@@ -408,7 +471,7 @@ def build(
             mat_rows.append([
                 code,
                 "NAO",
-                "pendente -- run live com motor '%s'" % engine,
+                _MATCH_ROW_REASON_ENGINE_PENDING_TEMPLATE % engine,
                 0.0,
             ])
             method = engine
@@ -425,9 +488,7 @@ def build(
         "Resultado do match",
         mat_cols,
         mat_rows,
-        note="Uma linha por item -- casou? contra qual fonte e com que confianca"
-             " (>= match_confidence_floor para contar como match). Offline retorna NAO"
-             " honesto, nunca um match inventado.",
+        note=_NOTE_MATCH,
     )
 
     # F6: SECTION 2 -- Auditoria de catalogo (list; runs offline on local data) ---
@@ -447,9 +508,7 @@ def build(
     s_audit = list_section(
         "Auditoria de catalogo",
         audit_flags,
-        note="Flags de cadastro divergente, foto divergente ou baixa-res"
-             " (< audit_min_photo_px) detectadas durante o match (rodam offline sobre o"
-             " dado local do item).",
+        note=_NOTE_AUDIT,
     )
 
     # F6: SECTION 3 -- Proveniencia (fields; S2 always a section) -----------------
@@ -478,8 +537,7 @@ def build(
             ("Status por fonte", status_str),
             ("Honest-null offline", honest_str),
         ],
-        note="Motor usado + fontes consultadas + status por fonte; offline retorna"
-             " honest-null (nunca um match fabricado). Status: ok | blocked | skipped | failed.",
+        note=_NOTE_PROVENANCE,
     )
 
     # F6: SECTION 4 -- Veredito (fields; S4 named gate match_confiavel) -----------
@@ -510,8 +568,7 @@ def build(
             ("Cobertura", cobertura),
             ("Bloqueadores", "; ".join(blockers) if blockers else "nenhum (gate APROVADO)"),
         ],
-        note="Gate nomeado (match_confiavel) -- cobertura do match e os bloqueadores que"
-             " impedem um match confiavel.",
+        note=_NOTE_VEREDITO,
     )
 
     sections = [s_match, s_audit, s_prov, s_veredito]
@@ -519,14 +576,14 @@ def build(
     # F7: govern (S1-S5 from n01_sourcing_rigor) --------------------------------
     score = 1.0
     if offline:
-        score -= 0.35
+        score -= _SCORE_PENALTY_OFFLINE
         notes.append("offline scaffold -- score reduzido (sem motor de match real)")
     if total == 0:
-        score -= 0.25
+        score -= _SCORE_PENALTY_ZERO_ITEMS
     # audit findings are valuable signal, not a penalty; only no-photo coverage hurts trust
     no_photo = sum(1 for it in items if not str(it.get("photo_uri") or "").strip())
     if total and no_photo:
-        score -= min(0.15, 0.05 * no_photo)
+        score -= min(_SCORE_PENALTY_NO_PHOTO_CAP, _SCORE_PENALTY_PER_NO_PHOTO * no_photo)
         notes.append("%d/%d itens sem foto -- cobertura de match por imagem limitada"
                      % (no_photo, total))
 
@@ -551,6 +608,86 @@ def build(
         provenance=prov_list,
         confidence_breakdown=confidence_breakdown,
     )
+
+
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to a module constant build() (or
+# one of its PURE helpers -- _normalize_join_key / _piece_count) reads above -- never a
+# re-typed literal -- so an exported bundle can never drift from what this generator
+# actually enforces at runtime. Two entries are GENERIC (non-interpolated) siblings of a
+# %-templated runtime string (_JOIN_KEY_EXCLUSION_RULE_GENERIC,
+# _MATCH_ROW_REASON_ENGINE_PENDING_GENERIC): domain_contract() has no specific per-run value
+# to interpolate, so it uses the rule's generic phrasing instead (same split as ads.py's
+# _COMPLIANCE_CHARS_TEMPLATE / _COMPLIANCE_CHARS_GENERIC).
+#
+# HONEST FRAMING: product_match.py is NOT an LLM-creative / wave-1-scaffold generator like
+# ads.py/docs.py -- it is RUN_MODE="offline-deterministic" BY DESIGN (the live branch above
+# still emits an honest "pendente" rather than invent a match). So there is no fake/
+# placeholder creative scaffold to expose here the way ads.py's _scaffold_row or docs.py's
+# step-by-step content are -- every value below is real, permanent domain law, not
+# provisional filler standing in for a future LLM pass. 'offline_fallback_messages' are the
+# literal, honest-null text this generator always emits when no live reverse-image engine
+# ran -- included for transparency, not because they are placeholders awaiting replacement.
+#
+# ALSO HONEST: 'defaults.confidence_floor' is a DECLARED, threaded-through contract value
+# (parsed, clamped, surfaced in the artifact JSON + the Cobertura text) -- but no live
+# reverse-image/embedding engine is implemented yet, so no code path in build() today ever
+# computes a confidence > 0.0 and compares it against this floor to promote a row to
+# SIM/PARCIAL. It is forward-declared law for the engine this generator will call once one
+# is wired in, not (yet) an actively-exercised gate (see the "matched_count is 0 offline by
+# construction" comment above).
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law product_match.py enforces on every match/audit run (Missao A).
+    Returns a structured, JSON-serialisable dict -- never {} for THIS generator (product_match
+    DOES declare domain law: the match_engine/endpoint_status enums, the input-contract
+    defaults, the EAN/GTIN/barcode join-exclusion rule + the join-key -> item-field alias
+    map _normalize_join_key uses, the piece-count divergence tokens _piece_count recognizes,
+    the F7 scoring penalties, and the per-section rule notes baked into every run; {} is
+    only the _base.py no-op default for a generator with none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "run_mode": RUN_MODE,
+        "enums": {
+            "match_engine": list(_MATCH_ENGINE_ENUM),
+            "endpoint_status": list(_ENDPOINT_STATUS_ENUM),
+        },
+        "defaults": {
+            "match_engine": _DEFAULT_MATCH_ENGINE,
+            "join_keys": list(_DEFAULT_JOIN_KEYS),
+            "confidence_floor": _DEFAULT_CONFIDENCE_FLOOR,
+            "min_photo_px": _DEFAULT_MIN_PHOTO_PX,
+        },
+        "excluded_join_keys": list(_DEFAULT_EXCLUDE_KEYS),
+        "join_key_exclusion_reason": _JOIN_KEY_EXCLUSION_RULE_GENERIC,
+        "join_key_field_aliases": {
+            k: list(v) for k, v in _JOIN_KEY_FIELD_ALIASES.items()
+        },
+        "piece_count_conflict_tokens": list(_PIECE_COUNT_TOKENS),
+        "score_penalties": {
+            "offline": _SCORE_PENALTY_OFFLINE,
+            "zero_items": _SCORE_PENALTY_ZERO_ITEMS,
+            "per_missing_photo": _SCORE_PENALTY_PER_NO_PHOTO,
+            "missing_photo_cap": _SCORE_PENALTY_NO_PHOTO_CAP,
+        },
+        "offline_endpoint_status": _OFFLINE_ENDPOINT_STATUS,
+        "offline_fallback_messages": {
+            "match_row_no_engine": _MATCH_ROW_REASON_NO_ENGINE,
+            "match_row_engine_pending": _MATCH_ROW_REASON_ENGINE_PENDING_GENERIC,
+        },
+        "section_rule_notes": {
+            "resultado_do_match": _NOTE_MATCH,
+            "auditoria_de_catalogo": _NOTE_AUDIT,
+            "proveniencia": _NOTE_PROVENANCE,
+            "veredito": _NOTE_VEREDITO,
+        },
+    }
 
 
 # --------------------------------------------------------------------------- #
@@ -590,4 +727,6 @@ __all__ = [
     "_audit_text_vs_photo",
     "product_match_media_requests",
     "product_match_produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

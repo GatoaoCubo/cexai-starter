@@ -334,10 +334,54 @@ def build(
     )
 
 
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain
+# law this generator enforces, exposed for cex_export_agent.py to bake into an
+# exported agent package (system_instruction GROUNDING + a new knowledge/
+# domain_contract.md bundle file) instead of a generic ISO-scaffold. Discovered via
+# capability_generators._base.get_domain_contract (module-level convention -- see
+# that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module
+# constant build() reads above -- never a re-typed literal -- so an exported bundle
+# can never drift from what build() actually enforces at runtime.
+#
+# DELIBERATELY EXCLUDED: _SCAFFOLD_SETUP / _SCAFFOLD_REFERENCIA / _SCAFFOLD_FAQ /
+# _DATE_MOCK. Those are wave-1 illustrative placeholder CONTENT (a generic,
+# tenant-neutral pet-feeder IoT example -- see the module docstring above), not
+# enforceable domain LAW -- the same distinction ads.py's own domain_contract()
+# already draws by excluding its analogous _scaffold_row placeholder ad copy.
+# Baking example body text into an exported agent's grounding would risk exactly
+# the kind of content leak this repo has flagged before (brand-leak, R-405) --
+# an exported product_docs agent for a real tenant must never be primed to talk
+# about automatic pet feeders.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law product_docs.py enforces on every generated product
+    document (Missao A). Returns a structured, JSON-serialisable dict -- never {}
+    for THIS generator (product_docs DOES declare domain law): the optional-section
+    enum + canonical titles, the audience enum, the fixed out-of-scope/compliance
+    statement, the default source refs, and the confidence/reliability-by-rank
+    ladder applied to Fontes rows. See the module comment above for what is
+    deliberately left out and why."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "optional_sections": sorted(_SECTIONS_ALL),
+        "section_labels": dict(_SECTION_LABELS),
+        "audience_enum": dict(_AUDIENCE_LABEL),
+        "out_of_scope_statement": _NOT_SCOPE_PRODUCT,
+        "default_source_refs": list(_DEFAULT_SOURCE_REFS),
+        "source_confidence_by_rank": list(_CONF_MAP),
+        "source_reliability_by_rank": list(_REL_MAP),
+    }
+
+
 __all__ = [
     "KIND",
     "CONTRACT_VERSION",
     "build",
     "product_docs_media_requests",
     "product_docs_produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

@@ -75,6 +75,27 @@ _FORBIDDEN_B2C = [
     ("revolucionario", "o mecanismo exato -- nunca adjetivo"),
 ]
 
+# Compliance gates enforced on every ad (brand_voice_templates sec. 7 + LGPD). Item 3 (the
+# char-limit gate) is TEMPLATED per-run (platform + its actual limit); the other 5 are
+# static text -- shared VERBATIM between build()'s sec4 below and domain_contract() (Missao
+# A / MOLDED_REAL_SEAM export-deepening): single source of truth, neither re-types the
+# other's wording.
+_COMPLIANCE_STATIC: tuple = (
+    "Afirmacao verificavel: toda claim precisa de fonte citavel antes de publicar",
+    "Sem superlativo nao-comprovado: 'melhor', 'n1' so com ranking + fonte auditavel",
+    "Meta/Instagram: sem imagens 'antes/depois' de saude sem aprovacao medica",
+    "LGPD: sem coleta implicita de dados pessoais no anuncio",
+    "Nenhuma promessa de resultado garantido sem evidencia auditavel",
+)
+_COMPLIANCE_CHARS_TEMPLATE = "Chars <= %d: limite contratual para %s (verificado)"
+# The generic (run-independent) phrasing of the same char-limit gate, for domain_contract()
+# below -- domain_contract() has no specific platform/lim (it describes the LAW, not one
+# run's output), so it references platform_char_limits by name instead of a specific number.
+_COMPLIANCE_CHARS_GENERIC = (
+    "Chars <= limite contratual da plataforma alvo (ver platform_char_limits) -- "
+    "verificado antes de publicar"
+)
+
 
 def _limit(platform: str) -> int:
     return _PLATFORM_LIMITS.get(str(platform).strip().lower(), 125)
@@ -335,12 +356,12 @@ def build(
     sec4 = list_section(
         "Compliance",
         [
-            "Afirmacao verificavel: toda claim precisa de fonte citavel antes de publicar",
-            "Sem superlativo nao-comprovado: 'melhor', 'n1' so com ranking + fonte auditavel",
-            "Chars <= %d: limite contratual para %s (verificado)" % (lim, platform),
-            "Meta/Instagram: sem imagens 'antes/depois' de saude sem aprovacao medica",
-            "LGPD: sem coleta implicita de dados pessoais no anuncio",
-            "Nenhuma promessa de resultado garantido sem evidencia auditavel",
+            _COMPLIANCE_STATIC[0],
+            _COMPLIANCE_STATIC[1],
+            _COMPLIANCE_CHARS_TEMPLATE % (lim, platform),
+            _COMPLIANCE_STATIC[2],
+            _COMPLIANCE_STATIC[3],
+            _COMPLIANCE_STATIC[4],
         ],
         note="Gate de compliance: verificar ANTES de subir o anuncio.",
     )
@@ -403,6 +424,40 @@ def build(
         run_mode=run_mode_val,
         model_used=model_used_val,
     )
+
+
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant
+# build() reads above -- never a re-typed literal -- so an exported bundle can never drift
+# from what build() actually enforces at runtime.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law ads.py enforces on every generated ad (Missao A). Returns a
+    structured, JSON-serialisable dict -- never {} for THIS generator (ads DOES declare
+    domain law; {} is only the _base.py no-op default for a generator that has none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "platform_char_limits": dict(_PLATFORM_LIMITS),
+        "enums": {
+            "register": sorted(_REGISTER_ENUM),
+            "funnel_stage": sorted(_FUNNEL_ENUM),
+            "tone": sorted(_TONE_ENUM),
+            "ab_axis": sorted(_AB_AXIS_ENUM),
+        },
+        "funnel_copy_formulas": dict(_FORMULA_MAP),
+        "cta_pressure_by_funnel_stage": dict(_CTA_PRESSURE),
+        "next_stage_by_funnel_stage": dict(_NEXT_STAGE),
+        "forbidden_words": [
+            {"word": w, "replacement": r} for (w, r) in _FORBIDDEN_B2C
+        ],
+        "compliance_gates": list(_COMPLIANCE_STATIC) + [_COMPLIANCE_CHARS_GENERIC],
+    }
 
 
 # --------------------------------------------------------------------------- #
@@ -512,4 +567,6 @@ __all__ = [
     # mission R-350: live-LLM branch seams (module-level so tests can monkeypatch).
     "_import_chat",
     "_live_llm_gate",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

@@ -73,6 +73,20 @@ _ML_REQUIRED_KEYS = {
     "available_quantity", "condition", "listing_type_id",
 }
 
+# The ONLY marketplace this generator targets today (unlike ads.py's multi-platform
+# _PLATFORM_LIMITS, this generator has no Shopee/Amazon/Magalu code path). Applied when
+# the G1 row omits inputs['marketplace'].
+_DEFAULT_MARKETPLACE = "mercado_livre"
+
+# Deterministic example shown in the "Atributos" section when the G1 row supplies none --
+# a worked FORMAT SAMPLE (never a fabricated product attribute) guiding the seller on the
+# expected atributos JSON shape.
+_ATRIBUTOS_EXAMPLE_SCAFFOLD = '{"Material": "sisal", "Peso_kg": "1.5"}'
+
+# Deterministic fallback for the internal product label in the "Payload ML" section when
+# the G1 row has neither nome/name nor titulo_ml.
+_DEFAULT_NOME_INTERNO = "Produto"
+
 
 # --------------------------------------------------------------------------- #
 # Helpers -- pure parsers (TOTAL: never raise, never fabricate).
@@ -221,7 +235,7 @@ def build(
     _kind = effective_kind(resolved_kind, KIND)
 
     # F1 CONSTRAIN -- parse G1 inputs (no crash on missing optional fields).
-    marketplace = str(inputs.get("marketplace") or "mercado_livre").strip().lower()
+    marketplace = str(inputs.get("marketplace") or _DEFAULT_MARKETPLACE).strip().lower()
     titulo_ml = str(inputs.get("titulo_ml") or inputs.get("title") or "").strip()
     descricao = str(inputs.get("descricao") or inputs.get("description") or "").strip()
     categoria_ml = str(inputs.get("categoria_ml") or inputs.get("category_id") or "").strip()
@@ -234,7 +248,9 @@ def build(
     fotos_raw = inputs.get("fotos") or inputs.get("pictures") or ""
     atributos_raw = inputs.get("atributos") or inputs.get("attributes") or ""
     listing_type = str(inputs.get("listing_type_id") or _ML_LISTING_TYPE_DEFAULT).strip()
-    nome_interno = str(inputs.get("nome") or inputs.get("name") or titulo_ml or "Produto").strip()
+    nome_interno = str(
+        inputs.get("nome") or inputs.get("name") or titulo_ml or _DEFAULT_NOME_INTERNO
+    ).strip()
 
     # F3 INJECT -- derive ML schema fields from the G1 row.
     picture_urls = _parse_fotos(fotos_raw)
@@ -340,7 +356,7 @@ def build(
         sec4 = table_section(
             "Atributos",
             ["Atributo (id)", "Valor"],
-            [["(sem atributos)", 'Adicione em atributos: {"Material": "sisal", "Peso_kg": "1.5"}']],
+            [["(sem atributos)", "Adicione em atributos: %s" % _ATRIBUTOS_EXAMPLE_SCAFFOLD]],
             note="Nenhum atributo mapeado. ML pode exigir atributos especificos por categoria.",
         )
 
@@ -425,10 +441,76 @@ def build(
     )
 
 
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant
+# build() reads above -- never a re-typed literal -- so an exported bundle can never drift
+# from what build() actually enforces at runtime. _DEFAULT_MARKETPLACE /
+# _ATRIBUTOS_EXAMPLE_SCAFFOLD / _DEFAULT_NOME_INTERNO were PROMOTED from inline literals to
+# module constants (this same change) specifically so build() and domain_contract() share
+# one definition each -- zero behavior change (build()'s output is byte-identical).
+#
+# HONEST FRAMING (marketplace_listing.py is Mercado-Livre-only -- read before extending):
+# this generator has NO Shopee/Amazon/Magalu code path, unlike the 4-marketplace matrix
+# documented in env_config_marketplace_specs_anuncio.md (N02's anuncio pipeline -- a
+# DIFFERENT generator). Inventing those marketplaces' limits here would be fabrication --
+# absent means absent, not "not yet found". _ML_REQUIRED_KEYS is the module's OWN declared
+# "ML needs these 7 fields to publish" claim (real Mercado Livre API law); tracing build()'s
+# F7 GOVERN block shows it currently hard-blocks ``passed`` on only 3 of the 7 (title,
+# category_id, price) -- the other 4 (currency_id, available_quantity, condition,
+# listing_type_id) always resolve to a safe default (BRL / 0 / 'new' /
+# default_listing_type_id) so they can never independently register as "missing" at gate
+# time. Exposed by reference AS DECLARED, with that nuance stated plainly in
+# ``required_fields_note`` rather than silently implied.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law marketplace_listing.py enforces on every generated Mercado Livre
+    listing (Missao A). Returns a structured, JSON-serialisable dict -- never {} for THIS
+    generator (marketplace_listing DOES declare domain law: the ML currency + title-length
+    limit, the condicao->condition vocabulary, the declared required-to-publish field set,
+    plus this generator's own deterministic default/scaffold content -- default
+    marketplace, default listing type, default product label, and the atributos example
+    format; {} is only the _base.py no-op default for a generator with none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "marketplace_law": {
+            "currency_id": _ML_CURRENCY_ID,
+            "title_max_len": _ML_TITLE_MAX_LEN,
+        },
+        "condition_vocabulary": dict(_CONDITION_MAP),
+        "required_fields_to_publish": sorted(_ML_REQUIRED_KEYS),
+        "required_fields_note": (
+            "Mercado Livre's real POST /items payload needs all 7 keys above "
+            "non-empty/non-zero to publish. This generator's F7 gate hard-blocks 3 of "
+            "them when absent (title, category_id, price); the other 4 (currency_id, "
+            "available_quantity, condition, listing_type_id) always resolve to a safe "
+            "default so they are never independently missing at gate time."
+        ),
+        "defaults": {
+            "default_marketplace": _DEFAULT_MARKETPLACE,
+            "default_listing_type_id": _ML_LISTING_TYPE_DEFAULT,
+            "default_nome_interno_when_unspecified": _DEFAULT_NOME_INTERNO,
+        },
+        "atributos_example_scaffold": _ATRIBUTOS_EXAMPLE_SCAFFOLD,
+        "scope_note": (
+            "This generator targets Mercado Livre ONLY. It has no Shopee/Amazon/Magalu "
+            "code path -- see env_config_marketplace_specs_anuncio.md for those "
+            "marketplaces' rules (owned by a different generator, N02's anuncio pipeline)."
+        ),
+    }
+
+
 __all__ = [
     "KIND",
     "CONTRACT_VERSION",
     "build",
     "listing_media_requests",
     "listing_produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

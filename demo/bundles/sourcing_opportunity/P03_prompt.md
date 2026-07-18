@@ -51,3 +51,82 @@ related:
 | [[opportunity-matrix-builder]] | downstream | 0.44 |
 | [[bld_knowledge_opportunity_matrix]] | upstream | 0.40 |
 | sourcing | related | 0.38 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/sourcing_opportunity.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Enums
+- **cost_source_strategy**: column, filename, fixed, formula, none
+- **demand_signal_basis**: reviews, price_scrape, sales_rank, spec_sheet, manual
+- **fee_model**: percent, fixed_plus_percent, fixed_per_unit, tiered
+- **freight_model**: none, flat, weight, cubic
+
+### Cost Sourcing
+- **default_strategy**: column
+- **discount_filename_pattern**: (\d{1,2})
+- **cost_column_aliases**: cost, unit_cost, custo, preco_custo, cost_price
+
+### Demand Signal
+- **default_basis**: reviews
+- **level_labels**: high, medium, low, uncertain
+- **level_weights**: 3, 2, 1, 0
+
+### Take Rate
+| Key | Value |
+|-----|-------|
+| default_fee_model | percent |
+| default_freight_model | none |
+| marketplace_fee_pct | 0.18 |
+| marketplace_fee_fixed | 0.0 |
+| tax_pct | 0.0 |
+| show_net_margin_default | False |
+
+### Score Weights
+| Key | Value |
+|-----|-------|
+| margin | 0.4 |
+| demand | 0.3 |
+| stock | 0.2 |
+| confidence | 0.1 |
+
+### Ranking
+- **tie_break_order**: has_market, demand, spread
+- **type_cap**: 0
+
+### Coverage And Rigor
+| Key | Value |
+|-----|-------|
+| min_sources_per_type | 3 |
+| data_window_days | 90 |
+| treat_web_price_as_ceiling | True |
+| coverage_report | True |
+| verify_top_n | 10 |
+| region | Global |
+
+### Honest Null Tokens
+- [UNAVAILABLE]
+- [LOW]
+
+### Relevance Taxonomy
+- core
+- adjacent
+- both
+- other
+
+### Match And Audit
+- **join_keys**: photo, dimension, supplier_code
+- **exclude_keys**: ean, gtin, barcode
+- **min_photo_px**: 200
+
+### Honest Null Labels
+| Key | Value |
+|-----|-------|
+| demand | nao pesquisado |
+| price | nao pesquisado |
+| manual_bucket | manual / sem preco |
+| not_applicable | N/A |
+<!-- cex:domain_contract:end -->

@@ -37,6 +37,7 @@ from ._base import (
 
 KIND = "knowledge_card"
 CAPABILITY = "research"
+CONTRACT_VERSION = "1.0.0"
 
 _SCOPE_ENUM = ("competitive", "market", "pricing", "trends")
 _DEFAULT_SCOPE = "competitive"
@@ -61,14 +62,42 @@ _SCOPE_DIMS: Dict[str, List[str]] = {
     "trends":      ["Tendencia macro", "Inovacao", "Comportamento consumidor", "Tech", "Regulatorio"],
 }
 
+# S1 confidence formula weights (n01_sourcing_rigor.md sec 3) -- source_count + agreement +
+# recency factors, each 0..1, weighted-summed by _confidence() below. SINGLE SOURCE OF TRUTH
+# shared with domain_contract() (Missao A / MOLDED_REAL_SEAM export-deepening): _confidence()
+# reads these by name below -- never a re-typed literal.
+_CONFIDENCE_WEIGHTS: Dict[str, float] = {
+    "source_count": 0.50,
+    "agreement": 0.30,
+    "recency": 0.20,
+}
+
+# S3 freshness bands (n01_sourcing_rigor.md sec 3): label + recency_factor per band, keyed by
+# the SAME day thresholds as _HORIZON_DAYS above (90 = ultimos_90d, 365 = ultimos_12m). Shared
+# by reference between _freshness() below and domain_contract() -- single source of truth.
+_FRESHNESS_GREEN: Tuple[str, float] = ("GREEN (<90d)", 1.0)
+_FRESHNESS_AMBER: Tuple[str, float] = ("AMBER (90-365d)", 0.6)
+_FRESHNESS_RED: Tuple[str, float] = ("RED (>365d)", 0.2)
+
+# S1-S4 Veredito gate floors (n01_sourcing_rigor.md sec 4) -- read by build() below AND by
+# domain_contract(); never a re-typed literal in either place.
+_MIN_CONFIDENCE_GATE = 0.70   # condicao 1: confianca_geral >= this
+_MIN_SOURCES_GATE = 3         # condicao 2: fontes por achado >= this (independent constant
+                              # from _DEFAULT_MIN_SRC above, which is only the input default)
+
+# The fixed downstream capability chain a research gate feeds (build()'s "Encadeia para" row
+# + domain_contract()'s downstream_chain -- single source of truth).
+_DOWNSTREAM_CHAIN = "research -> pesquisa_produto -> ads"
+
 
 def _freshness(days: int) -> Tuple[str, float]:
-    """S3 freshness band: (label, recency_factor)."""
+    """S3 freshness band: (label, recency_factor). Bands are the shared module constants
+    above (single source of truth with domain_contract())."""
     if days < 90:
-        return "GREEN (<90d)", 1.0
+        return _FRESHNESS_GREEN
     if days <= 365:
-        return "AMBER (90-365d)", 0.6
-    return "RED (>365d)", 0.2
+        return _FRESHNESS_AMBER
+    return _FRESHNESS_RED
 
 
 def _str_list(raw: Any) -> List[str]:
@@ -80,10 +109,16 @@ def _str_list(raw: Any) -> List[str]:
 
 
 def _confidence(n_sources: int, agree: int, recency_factor: float) -> float:
-    """S1 confidence formula from n01_sourcing_rigor.md section 3."""
+    """S1 confidence formula from n01_sourcing_rigor.md section 3. Weights are the shared
+    _CONFIDENCE_WEIGHTS constant above (single source of truth with domain_contract())."""
     src_f = min(n_sources / 3.0, 1.0)
     agree_f = agree / max(n_sources, 1)
-    return round(0.50 * src_f + 0.30 * agree_f + 0.20 * recency_factor, 2)
+    return round(
+        _CONFIDENCE_WEIGHTS["source_count"] * src_f
+        + _CONFIDENCE_WEIGHTS["agreement"] * agree_f
+        + _CONFIDENCE_WEIGHTS["recency"] * recency_factor,
+        2,
+    )
 
 
 def _artifact_json(topic: str, scope: str, region: str,
@@ -272,9 +307,9 @@ def build(
     )
 
     # Sect 5: Veredito (fields) -- S4: named gate with 4 explicit conditions ---
-    c1_ok = confianca_geral >= 0.70
-    c2_ok = (not offline) and min_src >= 3
-    c3_ok = horizon_days <= 365
+    c1_ok = confianca_geral >= _MIN_CONFIDENCE_GATE
+    c2_ok = (not offline) and min_src >= _MIN_SOURCES_GATE
+    c3_ok = horizon_days <= _HORIZON_DAYS["ultimos_12m"]
     c4_ok = not offline
 
     gate_pass = c1_ok and c2_ok and c3_ok and c4_ok
@@ -288,15 +323,17 @@ def build(
              else "AGUARDANDO -- executar com credencial para calcular recomendacao"),
             ("Gate", gate),
             ("Condicao 1 -- confianca",
-             "confianca_geral %.2f >= 0.70 -> %s" % (confianca_geral, "OK" if c1_ok else "FAIL")),
+             "confianca_geral %.2f >= %.2f -> %s"
+             % (confianca_geral, _MIN_CONFIDENCE_GATE, "OK" if c1_ok else "FAIL")),
             ("Condicao 2 -- triangulacao",
              "fontes por achado >= %d -> %s" % (min_src, "OK" if c2_ok else "FAIL (offline)")),
             ("Condicao 3 -- frescor",
-             "dado mais antigo %dd < 365d -> %s (%s)" % (horizon_days, "OK" if c3_ok else "FAIL", band)),
+             "dado mais antigo %dd < %dd -> %s (%s)"
+             % (horizon_days, _HORIZON_DAYS["ultimos_12m"], "OK" if c3_ok else "FAIL", band)),
             ("Condicao 4 -- cobertura critica",
              "nenhuma dimensao critica sem dado -> %s" % ("OK" if c4_ok else "FAIL (offline)")),
             ("Encadeia para",
-             "research -> pesquisa_produto -> ads (gate %s)" % gate),
+             "%s (gate %s)" % (_DOWNSTREAM_CHAIN, gate)),
         ],
         note="Gate explicito para encadear capacidades a jusante (ads, pricing)."
              " Booleanos visiveis.",
@@ -424,10 +461,64 @@ def research_produced_media(inputs: Mapping[str, Any]) -> Dict[str, Any]:
     return produced
 
 
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant
+# build() / _freshness() / _confidence() read above -- never a re-typed literal -- so an
+# exported bundle can never drift from what build() actually enforces at runtime.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law research.py enforces on every generated research brief (Missao A).
+    Returns a structured, JSON-serialisable dict -- never {} for THIS generator (research DOES
+    declare domain law: scope/horizon/depth options + defaults, the S1 confidence formula, the
+    S3 freshness bands, and the S1-S4 Veredito gate; {} is only the _base.py no-op default for
+    a generator that has none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "scope_enum": list(_SCOPE_ENUM),
+        "default_scope": _DEFAULT_SCOPE,
+        "scope_dimensions": {k: list(v) for k, v in _SCOPE_DIMS.items()},
+        "time_horizon_enum": list(_HORIZON_ENUM),
+        "default_time_horizon": _DEFAULT_HORIZON,
+        "horizon_days": dict(_HORIZON_DAYS),
+        "depth_enum": list(_DEPTH_ENUM),
+        "default_depth": _DEFAULT_DEPTH,
+        "min_sources_per_claim_default": _DEFAULT_MIN_SRC,
+        "default_region": _DEFAULT_REGION,
+        "freshness_bands": [
+            {"label": _FRESHNESS_GREEN[0], "recency_factor": _FRESHNESS_GREEN[1],
+             "days_upper_bound": _HORIZON_DAYS["ultimos_90d"], "bound_type": "exclusive"},
+            {"label": _FRESHNESS_AMBER[0], "recency_factor": _FRESHNESS_AMBER[1],
+             "days_upper_bound": _HORIZON_DAYS["ultimos_12m"], "bound_type": "inclusive"},
+            {"label": _FRESHNESS_RED[0], "recency_factor": _FRESHNESS_RED[1],
+             "days_upper_bound": None, "bound_type": "open_ended"},
+        ],
+        "confidence_formula_weights": dict(_CONFIDENCE_WEIGHTS),
+        "veredito_gate_conditions": [
+            "Condicao 1 -- confianca: confianca_geral >= %.2f (S1)" % _MIN_CONFIDENCE_GATE,
+            "Condicao 2 -- triangulacao: fontes por achado >= %d, exige credencial (S1)"
+            % _MIN_SOURCES_GATE,
+            "Condicao 3 -- frescor: dado mais antigo <= %d dias (S3)"
+            % _HORIZON_DAYS["ultimos_12m"],
+            "Condicao 4 -- cobertura critica: nenhuma dimensao critica sem dado, exige"
+            " credencial (S4)",
+        ],
+        "downstream_chain": _DOWNSTREAM_CHAIN,
+    }
+
+
 __all__ = [
     "KIND",
     "CAPABILITY",
+    "CONTRACT_VERSION",
     "build",
     "research_media_requests",
     "research_produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

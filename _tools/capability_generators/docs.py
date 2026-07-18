@@ -389,6 +389,66 @@ def build(
     )
 
 
+# --------------------------------------------------------------------------- #
+# Domain contract (Missao A / MOLDED_REAL_SEAM export-deepening) -- the REAL domain law
+# this generator enforces, exposed for cex_export_agent.py to bake into an exported agent
+# package (system_instruction GROUNDING + a new knowledge/domain_contract.md bundle file)
+# instead of a generic ISO-scaffold. Discovered via capability_generators._base.
+# get_domain_contract (module-level convention -- see that function's docstring).
+#
+# SINGLE SOURCE OF TRUTH: every value below is a REFERENCE to the SAME module constant
+# build() reads above -- never a re-typed literal -- so an exported bundle can never drift
+# from what build() actually enforces at runtime. Only the CONTAINER shape changes (e.g. a
+# 3-col row -> a named dict {step, instruction, tip}) so the generic markdown renderer in
+# cex_export_agent.py (_render_domain_contract_body) produces a clean table -- the leaf
+# values themselves are never retyped.
+#
+# HONEST FRAMING (docs.py is a wave-1 scaffold generator -- LLM body generation is deferred
+# to wave 2, see build()'s docstring): the enums/labels/scope/chunk-size entries are durable
+# domain law (they gate every real run via _coerce_enum/_CHUNK_SIZE regardless of wave), while
+# the *_scaffold / default_*_when_unspecified / source_trust_by_rank entries describe the
+# DETERMINISTIC fallback content this generator emits today when no credential/LLM is used --
+# labelled as such so a consumer never mistakes placeholder text for a live, per-topic
+# authored template. _DATE_MOCK (a hardcoded "today" stub stamped on every Fontes row) and
+# KIND/CAPABILITY (seam plumbing, not document content) are deliberately NOT included here --
+# they are wave-1 implementation details, not domain law.
+# --------------------------------------------------------------------------- #
+def domain_contract() -> dict:
+    """The REAL domain law docs.py enforces on every generated docs/knowledge_card artifact
+    (Missao A). Returns a structured, JSON-serialisable dict -- never {} for THIS generator
+    (docs DOES declare domain law: audience/format/chunk_target enums + their descriptions,
+    per-format scope boundaries, RAG chunk sizing, the per-format section scaffold content,
+    and the source confidence/reliability-by-rank grounding rule; {} is only the _base.py
+    no-op default for a generator with none)."""
+    return {
+        "contract_version": CONTRACT_VERSION,
+        "enums": {
+            "audience": sorted(_AUDIENCE_ENUM),
+            "format": sorted(_FORMAT_ENUM),
+            "chunk_target": sorted(_CHUNK_ENUM),
+        },
+        "audience_labels": dict(_AUDIENCE_LABEL),
+        "format_descriptions": dict(_FORMAT_DESC),
+        "out_of_scope_by_format": dict(_NOT_SCOPE),
+        "chunk_size_by_chunk_target": dict(_CHUNK_SIZE),
+        "step_scaffold_by_format": [
+            {"format": fmt, "step": row[0], "instruction": row[1], "tip": row[2]}
+            for fmt, rows in _FORMAT_STEPS.items()
+            for row in rows
+        ],
+        "maintenance_schedule_scaffold": [
+            {"task": row[0], "frequency": row[1], "indicator": row[2]}
+            for row in _MANUTENCAO_ROWS
+        ],
+        "troubleshooting_scaffold": list(_TROUBLESHOOTING_ITEMS),
+        "default_sources_when_unspecified": list(_DEFAULT_SOURCES),
+        "source_trust_by_rank": [
+            {"rank": i + 1, "confidence": c, "reliability": r}
+            for i, (c, r) in enumerate(zip(_CONF_MAP, _REL_MAP))
+        ],
+    }
+
+
 __all__ = [
     "KIND",
     "CAPABILITY",
@@ -396,4 +456,6 @@ __all__ = [
     "build",
     "docs_media_requests",
     "docs_produced_media",
+    # Missao A / MOLDED_REAL_SEAM: the real domain-law contract (cex_export_agent.py).
+    "domain_contract",
 ]

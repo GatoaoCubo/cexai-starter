@@ -89,3 +89,72 @@ related:
 | p01_kc_knowledge_best_practices | upstream | 0.32 |
 | [[bld_prompt_input_schema]] | sibling | 0.30 |
 | [[bld_prompt_instruction]] | sibling | 0.28 |
+
+<!-- cex:domain_contract:start -->
+## Domain Contract -- Enforced Rules (real law from the generator)
+
+> Source: `_tools/capability_generators/research.py`'s `domain_contract()` -- read directly from the generator's own module constants (never re-typed by hand, never fabricated). Injected by `_tools/cex_bundle_deepen.py`; re-running regenerates this section idempotently.
+
+**Contract Version**: 1.0.0
+
+### Scope Enum
+- competitive
+- market
+- pricing
+- trends
+
+**Default Scope**: competitive
+
+### Scope Dimensions
+- **competitive**: Preco, Durabilidade, Avaliacoes, Frete/prazo, Pos-venda, Sazonalidade
+- **market**: Demanda, Crescimento, Segmentos, Canais, Regulatorio, Sazonalidade
+- **pricing**: Faixa de preco, Anchor, Elasticidade, Concorrencia, Margem tipica
+- **trends**: Tendencia macro, Inovacao, Comportamento consumidor, Tech, Regulatorio
+
+### Time Horizon Enum
+- ultimos_30d
+- ultimos_90d
+- ultimos_12m
+
+**Default Time Horizon**: ultimos_90d
+
+### Horizon Days
+| Key | Value |
+|-----|-------|
+| ultimos_30d | 30 |
+| ultimos_90d | 90 |
+| ultimos_12m | 365 |
+
+### Depth Enum
+- rapida
+- padrao
+- profunda
+
+**Default Depth**: padrao
+
+**Min Sources Per Claim Default**: 3
+
+**Default Region**: Brasil
+
+### Freshness Bands
+| Label | Recency Factor | Days Upper Bound | Bound Type |
+|-----|-----|-----|-----|
+| GREEN (<90d) | 1.0 | 90 | exclusive |
+| AMBER (90-365d) | 0.6 | 365 | inclusive |
+| RED (>365d) | 0.2 | None | open_ended |
+
+### Confidence Formula Weights
+| Key | Value |
+|-----|-------|
+| source_count | 0.5 |
+| agreement | 0.3 |
+| recency | 0.2 |
+
+### Veredito Gate Conditions
+- Condicao 1 -- confianca: confianca_geral >= 0.70 (S1)
+- Condicao 2 -- triangulacao: fontes por achado >= 3, exige credencial (S1)
+- Condicao 3 -- frescor: dado mais antigo <= 365 dias (S3)
+- Condicao 4 -- cobertura critica: nenhuma dimensao critica sem dado, exige credencial (S4)
+
+**Downstream Chain**: research -> pesquisa_produto -> ads
+<!-- cex:domain_contract:end -->
