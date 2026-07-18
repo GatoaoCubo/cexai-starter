@@ -24,7 +24,7 @@ keywords:
   - "knowledge_card"
   - "builder"
   - "examples"
-  - "python _tools/validate_kc.py <file>"
+  - "python _tools/cex_compile.py <file>"
   - "p01_kc_[a-z][a-z0-9_]+"
   - "quick reference"
   - "key concepts"
@@ -57,7 +57,7 @@ related:
 9. Escreva os axiomas no frontmatter como regras ALWAYS / NEVER / IF-THEN -- pelo menos um e obrigatorio
 10. Mantenha o corpo entre 200 e 5120 bytes
 ## Fase 3: VALIDACAO
-1. Execute `python _tools/validate_kc.py <file>` se disponivel -- esta e uma ferramenta automatizada ativa
+1. Execute `python _tools/cex_compile.py <file>` se disponivel -- esta e uma ferramenta automatizada ativa
 2. Gates HARD (todos devem passar):
    - o frontmatter YAML e interpretado sem erros
    - o id corresponde ao padrao `p01_kc_[a-z][a-z0-9_]+`
