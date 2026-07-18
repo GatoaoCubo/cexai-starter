@@ -1,0 +1,62 @@
+runtime: ollama-qwen-coder
+tier: free
+provider: ollama
+cli: none
+models:
+  default: qwen2.5-coder:7b
+  n01: qwen2.5-coder:7b
+  n02: qwen2.5-coder:7b
+  n03: qwen2.5-coder:7b
+  n04: qwen2.5-coder:7b
+  n05: qwen2.5-coder:7b
+  n06: qwen2.5-coder:7b
+  n07: qwen2.5-coder:7b
+context_window: 32000
+effective_context: 8192
+capabilities:
+  native_tool_calls: partial
+  done_native: true
+  sub_agents: false
+  task_tracking: false
+  large_context: false
+agentic_profile:
+  max_iters: 15
+  min_iters: 4
+  require_reads_before_done: 3
+  nudge_on_shallow: true
+  max_nudges: 2
+  anti_fabrication: true
+  reject_done_without_reads: true
+  reject_done_when_shallow: true
+  min_report_bytes: 1100
+  temperature: 0.3
+  num_predict: 1500
+boot_script: boot/n0x_ollama.ps1
+spawn_script: _spawn/spawn_grid_ollama.ps1
+runner: _tools/cex_agentic_nucleus.py
+cost_per_mtok_in: 0
+cost_per_mtok_out: 0
+strengths:
+  - calls done() natively (first free model observed doing so)
+  - agentic habits
+  - code-focused training; deeper reports than llama3.1:8b
+  - clean output (no <think> tag pollution, unlike qwen3:*)
+weaknesses:
+  - 'fabricates numbers/counts if unguarded (observed: 46 builders when real is 262)'
+  - 'submits a thin early done() if unguarded (observed: 286-byte n02 report)'
+  - repeats same reads (no tool-call memory)
+  - JSON-in-content for some iterations
+routing_pattern: |
+  UNIFORM qwen2.5-coder:7b across all nuclei. The agentic ReAct loop
+  (cex_agentic_nucleus.py) tested best uniform: full 6-nucleus measurement gave
+  qwen2.5-coder:7b 5/6 usable + clean vs llama3.1:8b 3/6 (thin). The OLD
+  per-nucleus split (qwen for code nuclei, llama for content) was tuned for the
+  retired single-shot runner and is no longer used by the agentic grid.
+  Fallback: the ollama-llama runtime (uniform llama3.1:8b) stays available.
+notes: |
+  Free local, uniform qwen2.5-coder:7b for the agentic grid. REQUIRES two guards
+  (both enforced in cex_agentic_nucleus.agentic_loop):
+    1. anti-fabrication -- done() must follow >= require_reads_before_done reads.
+    2. anti-shallow     -- done() report must be >= min_report_bytes, else it is
+       rejected (bounded retries) so the model gathers more evidence and
+       resubmits a complete report. Catches the 286-byte early done().

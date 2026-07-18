@@ -1,0 +1,42 @@
+runtime: gemini
+tier: mid
+provider: google
+cli: gemini
+models:
+  # 2026-06-01: 2.5-flash VALIDATED on oauth-personal (8s probe w/ boot flags).
+  #   Upgraded from flash-lite, which truncates multi-step F6 (/showoff W2 = 4/6).
+  #   2.5-flash has a separate, higher-ceiling free-tier pool (n07-orchestrator.md).
+  # Historical (2026-04-16): pro hangs on "Thinking..."; 2.0-flash 404s on oauth-personal.
+  default: gemini-2.5-flash
+  n01: gemini-2.5-flash
+  n02: gemini-2.5-flash
+  n03: gemini-2.5-flash
+  n04: gemini-2.5-flash
+  n05: gemini-2.5-flash
+  n06: gemini-2.5-flash
+  n07: gemini-2.5-flash
+context_window: 1000000
+capabilities:
+  native_tool_calls: true
+  sub_agents: false
+  task_tracking: false
+  large_context: true
+agentic_profile:
+  max_iters: 30
+  min_iters: 4
+  require_reads_before_done: 2
+  nudge_on_shallow: true
+boot_script: boot/n0x_gemini.ps1
+spawn_script: _spawn/spawn_grid.ps1
+cost_per_mtok_in: 0.10
+cost_per_mtok_out: 0.40
+notes: |
+  oauth-personal auth. 2026-06-01: 2.5-flash validated + locked as default across all nuclei
+  (probe PASS 8s; replaces flash-lite which truncated multi-step F6 in /showoff).
+  - 2.5-flash: working on personal subscription, higher-ceiling free-tier pool
+  - flash-lite: works but truncates multi-step tasks (deprecated as default 2026-06-01)
+  - pro: hangs on "Thinking..." (memory: project_gemini_free_tier_unusable_2026_04_15)
+  - 2.0-flash: 404 on oauth-personal
+  NOTE: the per-nucleus gemini boots HARDCODE --model (do not read this yaml yet);
+  keep this file in sync by hand until boots are refactored to read it.
+  Cannot git commit autonomously (no native shell-like tool) -- N07 auto-commits.
