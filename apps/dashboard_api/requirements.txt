@@ -6,7 +6,7 @@ uvicorn[standard]>=0.27
 PyJWT>=2.8
 pydantic>=2.5
 # Required at import time by FastAPI for any Form/File route -- the app
-# crash-loops without it (proven on the 9-IA-GLM deploy, 2026-07-11:
+# crash-loops without it (proven on a self-hosted deploy, 2026-07-11:
 # "RuntimeError: Form data requires python-multipart", 49 pm2 restarts).
 python-multipart>=0.0.9
 

@@ -100,9 +100,9 @@ model_list:
   # ============================================================
   # GLM via self-hosted Open WebUI (OpenAI-compat) -- NOT the OpenRouter
   # cloud "glm-5.2" route above (cex-n07-strong). This is the founder's own
-  # box (container 9-IA-GLM, reached via `ssh cexai-server`), Open WebUI
+  # own server (example ssh alias: `your-server`), Open WebUI
   # v0.10.2 on localhost:3000/api. Local (off-box) use requires a tunnel:
-  #   ssh -N -L 13000:localhost:3000 cexai-server
+  #   ssh -N -L 13000:localhost:3000 your-server
   # then point OPENWEBUI_API_BASE at the tunnel port instead of the box port.
   # glm-5.2 is a REASONING model -- use max_tokens >= 200 or content comes
   # back empty (thinking eats a small budget). Full writeup + the other 6

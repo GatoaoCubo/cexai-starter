@@ -187,7 +187,7 @@
       try{localStorage.setItem('cex-lang',lang);}catch(e){}}
     (function(){var u=null;try{u=new URLSearchParams(window.location.search).get('lang');}catch(e){}
       var s=null;try{s=localStorage.getItem('cex-lang');}catch(e){}
-      var lang=(u==='pt'||u==='en')?u:(s==='pt'?'pt':'en');if(lang==='pt'){setLang('pt');}})();
+      var lang=(u==='pt'||u==='en')?u:(s==='en'?'en':'pt');if(lang==='pt'){setLang('pt');}})();
 
     var WA_BASE='https://wa.me/5511981775973?text=';
     var FALLBACK_MSG={en:'I want to know more about CEXAI DONE-FOR-YOU.',pt:'Quero saber mais sobre o CEXAI Feito Para Voce.'};
