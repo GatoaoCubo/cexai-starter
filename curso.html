@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Construa o Cérebro da Sua Empresa — Curso CEXAI | R$147</title>
+<meta name="description" content="Pare de explicar sua empresa pra uma IA que esquece. Curso completo + pack de 21 capacidades prontas + kit open-source. R$147, garantia de 7 dias.">
+<meta property="og:title" content="Construa o Cérebro da Sua Empresa — Curso CEXAI">
+<meta property="og:description" content="Você fala em português. Um time de IA entrega. Curso + pack + kit open-source por R$147.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+<!-- META PIXEL: colar o snippet aqui quando o founder criar o pixel (ID pendente) -->
+<style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      /* ---- Light theme (default) ---- */
+      --bg: #ffffff;
+      --bg-raised: #f8f9fa;
+      --bg-card: #ffffff;
+      --bg-hero: #fafafa;
+      --synapse: #e84393;
+      --synapse-dim: #c0356e;
+      --synapse-bright: #ff6bb5;
+      --synapse-glow: rgba(232, 67, 147, 0.15);
+      --tissue: #d63384;
+      --cortex: #4a6fa5;
+      --text: #1a1a2e;
+      --text-dim: #555566;
+      --text-muted: #999aaa;
+      --border: #e5e7eb;
+      --border-light: #f0f0f3;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.10);
+      --nav-bg: rgba(255, 255, 255, 0.92);
+      --mobile-bg: rgba(255, 255, 255, 0.98);
+      --faq-gradient: linear-gradient(180deg, var(--bg) 0%, #fdf2f8 50%, var(--bg) 100%);
+      --mono: 'SF Mono', 'Cascadia Code', 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max-w: 980px;
+      --n01: #4a6fa5;
+      --n02: #e84393;
+      --n03: #e74c3c;
+      --n04: #d63384;
+      --n05: #c0392b;
+      --n06: #e67e22;
+      --n07: #00b4a6;
+    }
+
+    /* ---- Dark theme ---- */
+    [data-theme="dark"] {
+      --bg: #0a0a0f;
+      --bg-raised: #12121a;
+      --bg-card: #111118;
+      --bg-hero: #08080d;
+      --synapse-glow: rgba(232, 67, 147, 0.18);
+      --cortex: #6b8fc4;
+      --text: #e8e8f0;
+      --text-dim: #9999aa;
+      --text-muted: #666677;
+      --border: #1e1e2a;
+      --border-light: #16161f;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.30);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.40);
+      --shadow-lg: 0 8px 30px rgba(0,0,0,0.50);
+      --nav-bg: rgba(10, 10, 15, 0.88);
+      --mobile-bg: rgba(10, 10, 15, 0.96);
+      --faq-gradient: linear-gradient(180deg, var(--bg) 0%, #140a10 50%, var(--bg) 100%);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section { padding: 80px 0; }
+    section + section { border-top: 1px solid var(--border); }
+
+    /* ---- Scroll animations ---- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s;
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+    }
+    .nav-brand {
+      font-family: var(--mono);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+    .nav-brand span { color: var(--synapse); }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--synapse); }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .nav-gh {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .nav-gh:hover { color: var(--text); }
+    .nav-gh svg { width: 18px; height: 18px; fill: currentColor; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      width: 34px; height: 34px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.3s, transform 0.3s, background 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .theme-toggle:hover {
+      border-color: var(--synapse);
+      background: var(--synapse-glow);
+      transform: rotate(20deg);
+    }
+    .theme-toggle svg {
+      width: 16px; height: 16px;
+      transition: transform 0.4s, opacity 0.3s;
+      position: absolute;
+    }
+    .theme-toggle .icon-sun { color: #e67e22; opacity: 0; transform: rotate(-90deg) scale(0.5); }
+    .theme-toggle .icon-moon { color: var(--synapse); opacity: 1; transform: rotate(0) scale(1); }
+    [data-theme="dark"] .theme-toggle .icon-sun { opacity: 1; transform: rotate(0) scale(1); }
+    [data-theme="dark"] .theme-toggle .icon-moon { opacity: 0; transform: rotate(90deg) scale(0.5); }
+
+    /* Language toggle */
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3px 4px;
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      padding: 3px 8px;
+      border-radius: 14px;
+      transition: color 0.2s, background 0.2s;
+    }
+    .lang-btn.active { color: #fff; background: var(--synapse); }
+    .lang-btn:hover:not(.active) { color: var(--text); }
+    .lang-sep { color: var(--border); font-size: 11px; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text);
+      margin: 5px 0;
+      transition: all 0.3s;
+      border-radius: 1px;
+    }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 56px;
+      left: 0; right: 0; bottom: 0;
+      background: var(--mobile-bg);
+      backdrop-filter: blur(20px);
+      z-index: 99;
+      padding: 32px 24px;
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-menu a:hover { color: var(--synapse); }
+
+    /* ---- Hero ---- */
+    .hero {
+      padding: 150px 0 60px;
+      text-align: center;
+      background: var(--bg-hero);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-family: var(--mono);
+      font-size: clamp(52px, 9vw, 88px);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .hero h1 span {
+      color: var(--synapse);
+      text-shadow: 0 0 40px var(--synapse-glow), 0 0 80px rgba(232, 67, 147, 0.08);
+      animation: xpulse 3s ease-in-out infinite;
+    }
+    @keyframes xpulse {
+      0%, 100% { text-shadow: 0 0 40px var(--synapse-glow), 0 0 80px rgba(232, 67, 147, 0.08); }
+      50% { text-shadow: 0 0 60px rgba(232, 67, 147, 0.3), 0 0 120px rgba(232, 67, 147, 0.15); }
+    }
+    .hero-sub {
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: var(--text-dim);
+      font-weight: 400;
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+    }
+    .hero-tagline {
+      font-size: clamp(14px, 2vw, 17px);
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto 40px;
+      line-height: 1.75;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+      font-family: var(--sans);
+    }
+    .btn-primary {
+      background: var(--synapse);
+      color: #fff;
+      box-shadow: 0 2px 12px rgba(232, 67, 147, 0.3);
+    }
+    .btn-primary:hover {
+      background: var(--synapse-dim);
+      box-shadow: 0 4px 20px rgba(232, 67, 147, 0.4);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: var(--bg);
+      color: var(--text-dim);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      color: var(--text);
+      border-color: var(--synapse);
+      background: var(--bg-raised);
+    }
+    .btn-sm {
+      padding: 8px 18px;
+      font-size: 13px;
+      border-radius: 6px;
+    }
+
+    /* ---- Badges ---- */
+    .badges {
+      text-align: center;
+      padding: 28px 0 0;
+      background: var(--bg-hero);
+    }
+    .badges img { margin: 3px 2px; vertical-align: middle; }
+    .badges-sponsor { margin-top: 12px; }
+    .badges-sponsor a { text-decoration: none; }
+    .badges-sponsor img { margin: 3px 2px; vertical-align: middle; }
+
+    /* ---- Stats ---- */
+    .stats {
+      padding: 44px 0;
+      background: var(--bg);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+      text-align: center;
+    }
+    .stat-item { padding: 16px 8px; }
+    .stat-num {
+      font-family: var(--mono);
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 700;
+      color: var(--synapse);
+      display: block;
+    }
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-dim);
+      margin-top: 4px;
+      display: block;
+      font-weight: 500;
+    }
+
+    /* ---- Section chrome ---- */
+    .section-label {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--synapse);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .section-title {
+      font-size: clamp(24px, 3.5vw, 34px);
+      font-weight: 700;
+      margin-bottom: 24px;
+      line-height: 1.25;
+      color: var(--text);
+    }
+    .section-center {
+      max-width: 680px;
+      margin: 0 auto 48px;
+      text-align: center;
+    }
+    .section-center p {
+      color: var(--text-dim);
+      font-size: 16px;
+      margin-top: 16px;
+      line-height: 1.7;
+    }
+    .prose {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+    .prose p {
+      color: var(--text-dim);
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    .prose strong { color: var(--text); }
+    .prose blockquote {
+      border-left: 3px solid var(--synapse);
+      padding: 16px 20px;
+      background: var(--synapse-glow);
+      border-radius: 0 8px 8px 0;
+      color: var(--synapse-dim);
+      font-style: italic;
+      margin: 28px 0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* ---- Cards ---- */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 24px;
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+    .card:hover {
+      border-color: var(--synapse);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--synapse);
+    }
+    .card p {
+      font-size: 14px;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* ---- Tables ---- */
+    .tbl-wrap {
+      overflow-x: auto;
+      margin: 24px 0;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    thead th {
+      background: var(--text);
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    tbody td {
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-dim);
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even) td { background: var(--bg-raised); }
+    tbody tr:nth-child(odd)  td { background: var(--bg); }
+    tbody tr:hover td { background: var(--synapse-glow); }
+    td strong { color: var(--text); }
+    td code {
+      font-family: var(--mono);
+      font-size: 12px;
+      background: rgba(232, 67, 147, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--synapse-dim);
+    }
+
+    .nuc-border { border-left: 4px solid; }
+
+    /* ---- Code blocks (STAY DARK) ---- */
+    pre {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3e;
+      border-radius: 10px;
+      padding: 20px 24px;
+      overflow-x: auto;
+      margin: 16px 0;
+    }
+    pre code {
+      font-family: var(--mono);
+      font-size: 13px;
+      line-height: 1.7;
+      color: #b0b0c0;
+    }
+    pre code .cmd { color: #e0e0ee; }
+    pre code .comment { color: #555570; }
+    pre code .prompt { color: var(--synapse); user-select: none; }
+    pre code .kw { color: var(--cortex); }
+    pre code .str { color: var(--tissue); }
+    pre code .flag { color: var(--synapse-bright); }
+
+    .term {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3e;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 24px 0;
+      box-shadow: var(--shadow-lg);
+    }
+    .term-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: #141425;
+      border-bottom: 1px solid #2a2a3e;
+    }
+    .term-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+    }
+    .term-dot:nth-child(1) { background: #ff5f57; }
+    .term-dot:nth-child(2) { background: #febc2e; }
+    .term-dot:nth-child(3) { background: #28c840; }
+    .term pre {
+      border: none;
+      border-radius: 0;
+      margin: 0;
+    }
+
+    /* ---- Bullet lists ---- */
+    .bullet-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 16px 0;
+    }
+    .bullet-list li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 12px;
+      color: var(--text-dim);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    .bullet-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--synapse);
+    }
+    .bullet-list li strong { color: var(--text); }
+
+    /* ---- How it works ---- */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      max-width: 780px;
+      margin: 48px auto 0;
+      text-align: center;
+    }
+    .step {
+      position: relative;
+    }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--synapse);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 15px rgba(232, 67, 147, 0.3);
+    }
+    .step h4 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .step p {
+      font-size: 14px;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+    .step-arrow {
+      display: none;
+    }
+
+    /* ---- Pipeline visual ---- */
+    .pipeline-flow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      max-width: 840px;
+      margin: 40px auto 0;
+    }
+    .pipeline-step {
+      text-align: center;
+      padding: 18px 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+    .pipeline-step:hover {
+      border-color: var(--synapse);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .pipeline-num {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--synapse);
+      margin-bottom: 4px;
+      display: block;
+      font-weight: 600;
+    }
+    .pipeline-name {
+      font-family: var(--mono);
+      font-size: 14px;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .pipeline-desc {
+      font-size: 12px;
+      color: var(--text-dim);
+      line-height: 1.4;
+    }
+
+    /* ---- Runtimes ---- */
+    .runtimes-list {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 28px 0 20px;
+      flex-wrap: wrap;
+    }
+    .runtime-item {
+      font-family: var(--mono);
+      font-size: 17px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* ---- CTA band ---- */
+    .cta-band {
+      background: linear-gradient(135deg, rgba(232, 67, 147, 0.06), rgba(0, 180, 166, 0.04));
+      border-top: 1px solid rgba(232, 67, 147, 0.2);
+      border-bottom: 1px solid rgba(232, 67, 147, 0.2);
+      padding: 64px 0;
+      text-align: center;
+    }
+    .cta-band h2 {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    .cta-band p {
+      color: var(--text-dim);
+      font-size: 16px;
+      max-width: 520px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+    }
+
+    /* ---- Prerequisites ---- */
+    .prereqs-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .prereq {
+      text-align: center;
+      padding: 28px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--bg-card);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+    }
+    .prereq:hover {
+      border-color: var(--synapse);
+      box-shadow: var(--shadow-md);
+    }
+    .prereq-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+      display: block;
+      font-family: var(--mono);
+      color: var(--synapse);
+      font-weight: 700;
+    }
+    .prereq h4 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+    .prereq p {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+    .prereq code {
+      font-family: var(--mono);
+      font-size: 11px;
+      background: rgba(232, 67, 147, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--synapse-dim);
+    }
+
+    /* ---- Funnel tiers (reuses .cards-grid / .card) ---- */
+    .funnel-tier {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--synapse);
+      background: var(--synapse-glow);
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .funnel-card p { margin-bottom: 18px; }
+    .funnel-card .btn { width: 100%; justify-content: center; }
+    .funnel-note {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    /* ---- FAQ Accordion (seductive glow) ---- */
+    #faq {
+      background: var(--faq-gradient);
+    }
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+      counter-reset: faq-counter;
+    }
+    .faq-list details {
+      counter-increment: faq-counter;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+    .faq-list details::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--synapse);
+      border-radius: 14px 0 0 14px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .faq-list details:hover {
+      border-color: rgba(232, 67, 147, 0.35);
+      box-shadow: 0 4px 20px rgba(232, 67, 147, 0.10), var(--shadow-sm);
+      transform: translateY(-1px);
+    }
+    .faq-list details[open] {
+      border-color: var(--synapse);
+      box-shadow: 0 6px 28px rgba(232, 67, 147, 0.14), 0 0 0 1px rgba(232, 67, 147, 0.08);
+    }
+    .faq-list details[open]::before {
+      opacity: 1;
+    }
+    .faq-list summary {
+      padding: 18px 22px 18px 56px;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text);
+      background: var(--bg-card);
+      transition: background 0.25s, color 0.25s;
+      position: relative;
+    }
+    .faq-list summary::before {
+      content: counter(faq-counter, decimal-leading-zero);
+      position: absolute;
+      left: 18px;
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--synapse);
+      opacity: 0.5;
+      transition: opacity 0.3s;
+    }
+    .faq-list details:hover summary::before,
+    .faq-list details[open] summary::before {
+      opacity: 1;
+    }
+    .faq-list summary:hover {
+      background: linear-gradient(90deg, rgba(232, 67, 147, 0.04), var(--bg-card));
+    }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '';
+      width: 20px; height: 20px;
+      background: var(--synapse-glow);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M2 4l3 3 3-3' stroke='%23e84393' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .faq-list details[open] summary::after {
+      transform: rotate(180deg);
+      background-color: var(--synapse);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M2 4l3 3 3-3' stroke='white' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      box-shadow: 0 0 12px rgba(232, 67, 147, 0.4);
+    }
+    .faq-list .faq-body {
+      padding: 0 22px 18px 56px;
+      font-size: 14px;
+      color: var(--text-dim);
+      line-height: 1.75;
+      animation: faqSlideIn 0.3s ease;
+    }
+    @keyframes faqSlideIn {
+      from { opacity: 0; transform: translateY(-6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---- Architecture diagram ---- */
+    .arch-diagram pre { font-size: 12px; line-height: 1.6; }
+
+    /* ---- Back to top ---- */
+    .back-to-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--synapse);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(232, 67, 147, 0.35);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s;
+      z-index: 50;
+    }
+    .back-to-top.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .back-to-top:hover {
+      background: var(--synapse-dim);
+      transform: translateY(-2px);
+    }
+
+    /* ---- Footer ---- */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      text-align: center;
+      background: var(--bg-raised);
+    }
+    .footer-quote {
+      font-style: italic;
+      color: var(--text-dim);
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .footer-quote em { color: var(--synapse); }
+    .footer-links {
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .footer-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--synapse); }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 768px) {
+      section { padding: 56px 0; }
+      .hero { padding: 120px 0 48px; }
+      .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .cards-grid { grid-template-columns: 1fr; gap: 16px; }
+      .pipeline-flow { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .prereqs-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .steps { grid-template-columns: 1fr; gap: 24px; }
+      .nav-links { display: none; }
+      .hamburger { display: block; }
+      .runtimes-list { gap: 24px; }
+      table { font-size: 13px; }
+      thead th, tbody td { padding: 8px 10px; }
+    }
+    @media (max-width: 480px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .pipeline-flow { grid-template-columns: 1fr; }
+      .prereqs-grid { grid-template-columns: 1fr; }
+      .hero-ctas { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 280px; justify-content: center; }
+    }
+
+    /* ---- Trust strip (replaces badge wall) ---- */
+    .trust-strip { background: var(--bg-hero); padding: 20px 0 6px; }
+    .trust-strip .container { display: flex; flex-wrap: wrap; gap: 10px 12px; justify-content: center; align-items: center; }
+    .trust-pill {
+      font-family: var(--mono); font-size: 12px; font-weight: 600;
+      color: var(--text-dim); border: 1px solid var(--border);
+      border-radius: 20px; padding: 5px 13px; background: var(--bg-card);
+    }
+    .trust-pill strong { color: var(--synapse); }
+
+    /* ---- Deep-dive accordion ---- */
+    #deepdive .dd-list { max-width: 860px; margin: 0 auto; }
+    .dd-item {
+      border: 1px solid var(--border); border-radius: 14px; margin-bottom: 14px;
+      overflow: hidden; box-shadow: var(--shadow-sm); background: var(--bg-card);
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .dd-item[open] { border-color: var(--synapse); box-shadow: 0 6px 28px rgba(232,67,147,0.12); }
+    .dd-sum {
+      padding: 20px 24px; font-weight: 700; font-size: 16px; cursor: pointer;
+      list-style: none; display: flex; align-items: center; justify-content: space-between;
+      color: var(--text); transition: color 0.2s; gap: 16px;
+    }
+    .dd-sum::-webkit-details-marker { display: none; }
+    .dd-sum::after {
+      content: '+'; font-family: var(--mono); font-size: 24px; font-weight: 400;
+      color: var(--synapse); line-height: 1; transition: transform 0.3s; flex-shrink: 0;
+    }
+    .dd-item[open] .dd-sum::after { transform: rotate(45deg); }
+    .dd-sum:hover { color: var(--synapse); }
+    .dd-body { border-top: 1px solid var(--border); padding: 8px 0 24px; }
+    .dd-body .container { padding-left: 24px; padding-right: 24px; }
+    .dd-body .section-center { margin-bottom: 28px; }
+    .dd-body section { padding: 0; border: none; }
+    /* keep collapsed-then-expanded content visible (reveal observer may not refire) */
+    .dd-body .reveal { opacity: 1 !important; transform: none !important; }
+    @media (max-width: 768px) {
+      .dd-sum { padding: 16px 18px; font-size: 15px; }
+      .dd-body .container { padding-left: 14px; padding-right: 14px; }
+    }
+  
+/* curso-page tweaks */
+.hero-curso h1 { font-size: clamp(28px, 5vw, 46px); line-height: 1.2; letter-spacing: -0.5px; max-width: 900px; margin: 0 auto; }
+.price-card { text-align:center; border:2px solid var(--synapse); border-radius:16px; padding:36px 30px; max-width:560px; margin:0 auto; background:var(--bg-card); box-shadow: var(--shadow-lg); }
+.price-big { font-size:52px; font-weight:800; color:var(--synapse); }
+.guarantee { display:inline-block; margin-top:10px; font-size:13.5px; color:var(--text-muted); }
+.sticky-cta { position:fixed; bottom:0; left:0; right:0; background:var(--nav-bg); backdrop-filter:blur(10px); border-top:1px solid var(--border); padding:10px 16px; display:flex; gap:14px; align-items:center; justify-content:center; z-index:60; }
+.sticky-cta span { font-weight:700; }
+@media (max-width:640px) { .sticky-cta span.hide-m { display:none; } }
+</style>
+</head>
+<body>
+<nav>
+  <div class="container">
+    <a href="index.html" class="nav-brand">CEX<span>AI</span></a>
+    <ul class="nav-links">
+      <li><a href="#prova">A prova</a></li>
+      <li><a href="#oferta">Oferta</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="index.html">Site</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://pay.hotmart.com/A106743966I" class="btn btn-primary btn-sm">Comprar — R$147</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero hero-curso">
+  <div class="container" style="text-align:center;">
+    <p class="section-label">CURSO + PACK DO ALUNO + KIT OPEN-SOURCE</p>
+    <h1>Você já explicou sua empresa pro ChatGPT cem vezes. Ele esqueceu as cem. Chegou a hora de construir o cérebro da sua empresa.</h1>
+    <div class="hero-ctas" style="margin-top:28px;">
+      <a href="https://pay.hotmart.com/A106743966I" class="btn btn-primary">Quero construir o meu — R$147</a>
+      <a href="#prova" class="btn btn-secondary">Ver a prova de 23 minutos ↓</a>
+    </div>
+    <p class="guarantee">Pagamento único pela Hotmart · Garantia incondicional de 7 dias</p>
+  </div>
+</section>
+
+<section id="conteudo" style="padding: 40px 0 20px;">
+  <div class="container" style="max-width: 860px;">
+    
+      <div class="card reveal" style="margin-bottom:22px; padding:28px 30px;">
+        <p class="section-label">A DOR</p>
+        <h3 style="font-size:21px; margin:6px 0 12px; line-height:1.35;">Sabe quando você explica tudo de novo? Pois é.</h3>
+        <p style="color:var(--text-dim); font-size:15.5px; line-height:1.75;">Sabe quando você abre o chat e explica TUDO outra vez? Quem você é. O que vende. Como sua empresa fala. Pois é. A conversa boa de ontem sumiu. O prompt que funcionou uma vez, você nunca mais achou. E tudo que você já escreveu mora na plataforma dos outros — você paga o aluguel todo mês e não leva nada embora. Isso não é você usando IA errado. É a IA genérica sendo o que ela é: sem memória, sem a sua cara, sem nada seu.</p>
+        
+      </div>
+      <div class="card reveal" style="margin-bottom:22px; padding:28px 30px;">
+        <p class="section-label">O DIAGNÓSTICO</p>
+        <h3 style="font-size:21px; margin:6px 0 12px; line-height:1.35;">O problema não é o modelo. É a arquitetura.</h3>
+        <p style="color:var(--text-dim); font-size:15.5px; line-height:1.75;">Trocar de ChatGPT pra outra IA não resolve: os defeitos são de nascença. No módulo 1, eu mostro os sete, um por um — a amnésia, a evaporação, o aprisionamento, o custo que não acumula, e mais três. Você vai reconhecer cada um, porque já viveu todos. E aí a conclusão fica óbvia: a saída não é mais uma assinatura. É o ativo que você ainda não tem — o cérebro da SUA empresa. Patrimônio que acumula, como um imóvel. Não aluguel que vence todo mês. Ele fica com você e cresce a cada uso.</p>
+        
+      </div>
+      <div class="card reveal" style="margin-bottom:22px; padding:28px 30px;">
+        <p class="section-label">O MECANISMO</p>
+        <h3 style="font-size:21px; margin:6px 0 12px; line-height:1.35;">O mecanismo: um cérebro que mora no seu computador</h3>
+        <p style="color:var(--text-dim); font-size:15.5px; line-height:1.75;">Pensa numa pasta. Um grande arquivo zip que fica no SEU computador — e só vai pra nuvem se você quiser, privado. Dentro dela, o conhecimento da sua empresa, escrito do jeito que qualquer IA entende. Funciona como um carro. O motor é a engenharia — milhares de documentos e linhas de código que educam a sua IA. Já vem pronto, você não mexe. A chave liga o sistema — e quem acorda é um mentor de IA, um orquestrador que já fala a língua das máquinas: você fala em português, do seu jeito, e ele transforma o seu pedido em ordem técnica e distribui pro time. E o volante é seu — você dá a direção, ele cuida da execução. A parte técnica complexa? Já foi ensinada. Pra ela, não pra você.</p>
+        
+      </div>
+      <div class="card reveal" style="margin-bottom:22px; padding:28px 30px;">
+        <p class="section-label">O MÉTODO</p>
+        <h3 style="font-size:21px; margin:6px 0 12px; line-height:1.35;">Entender, não aprender</h3>
+        <p style="color:var(--text-dim); font-size:15.5px; line-height:1.75;">Este curso não te ensina a programar. Te ensina a operar. O método são quatro pilares ditos em português claro — Saber, Ser, Falar e Fazer: o que a sua IA conhece do seu negócio, como ela se comporta, como ela conversa (com você e com outras máquinas) e o que ela executa. Por baixo roda um protocolo de 8 passos, o 8F, que ela segue sozinha — do seu pedido até a entrega revisada. Você não decora nada disso. Entende o suficiente pra dirigir. E, quando quiser ir mais fundo, pergunta — ela explica.</p>
+        
+      </div>
+      <div class="card reveal" style="margin-bottom:22px; padding:28px 30px;">
+        <p class="section-label">A PROVA</p>
+        <h3 style="font-size:21px; margin:6px 0 12px; line-height:1.35;">A prova: 23 minutos ao vivo, do zero ao time de IA</h3>
+        <p style="color:var(--text-dim); font-size:15.5px; line-height:1.75;">Na aula prática de 23 minutos — ela vem logo depois das boas-vindas, a mágica primeiro — eu faço tudo na sua frente. Copio o projeto pro computador (o tal do &#x27;clone&#x27;). Ligo o sistema (o &#x27;boot&#x27; — a chave do carro). E dou UMA missão: um objetivo completo, de uma vez. Na tela, seis células de IA — pensa em seis funcionários, cada um na sua tarefa — trabalham em paralelo. Antes da aula terminar, seis entregas aterrissam prontas dentro da pasta da empresa. Um pedido, seis entregas. Você vê o comando, vê o processo, vê o resultado chegando. Não é slide de promessa: é a tela mostrando — e é esse caminho que o curso te mostra passo a passo.</p>
+        <div style="margin-top:22px"><a href="https://pay.hotmart.com/A106743966I" class="btn btn-primary">Quero construir o meu — R$147</a></div>
+      </div>
+      <div class="card reveal" style="margin-bottom:22px; padding:28px 30px;">
+        <p class="section-label">O QUE VOCÊ LEVA</p>
+        <h3 style="font-size:21px; margin:6px 0 12px; line-height:1.35;">O que você leva pra casa</h3>
+        <p style="color:var(--text-dim); font-size:15.5px; line-height:1.75;">1) O curso completo: 9 módulos, 17 aulas, ~1h45 de vídeo direto ao ponto — dos 7 defeitos da IA genérica ao método dos 4 pilares, da pilha completa com os núcleos (os departamentos de IA da sua empresa) até a conta do retorno. 2) O Pacote do Aluno: 21 capacidades prontas + 3 agentes construídos à mão — anúncio, imagens e pesquisa. É colar no ChatGPT, Claude ou Gemini e usar no mesmo dia. 3) O kit inicial em código aberto, gratuito, publicado no GitHub (github.com/GatoaoCubo/cexai-starter) — roda com Claude, Codex, Gemini ou Ollama, este último de graça, no seu próprio computador. 4) E, se preferir tudo pronto: o serviço opcional Feito Para Você — a gente constrói o cérebro da sua empresa e entrega com a chave na mão. O pacote é o carro na garagem. O curso é o que te põe no volante.</p>
+        <div style="margin-top:22px"><a href="https://pay.hotmart.com/A106743966I" class="btn btn-primary">Quero construir o meu — R$147</a></div>
+      </div>
+      <div class="card reveal" style="margin-bottom:22px; padding:28px 30px;">
+        <p class="section-label">PRA QUEM É</p>
+        <h3 style="font-size:21px; margin:6px 0 12px; line-height:1.35;">Pra quem é — e pra quem não é</h3>
+        <p style="color:var(--text-dim); font-size:15.5px; line-height:1.75;">É pra você que toca uma empresa, já usa ChatGPT e sente que recomeça do zero toda semana. Que não é técnico — e não quer virar. Que quer parar de alugar inteligência e começar a construir patrimônio. NÃO é pra quem procura botão mágico de dinheiro: aqui o que você vê é processo real, na tela. Não é pra quem quer largar o volante: a IA executa em seu nome, mas quem dá a direção é você. E não é curso de programação — programar não é pré-requisito nem promessa. O motor já vem pronto. Você dirige.</p>
+        
+      </div>
+      <div class="card reveal" style="margin-bottom:22px; padding:28px 30px;">
+        <p class="section-label">A OFERTA</p>
+        <h3 style="font-size:21px; margin:6px 0 12px; line-height:1.35;">R$147 — e 7 dias pra decidir com calma</h3>
+        <p style="color:var(--text-dim); font-size:15.5px; line-height:1.75;">Curso completo + Pacote do Aluno + kit inicial: R$147, pagamento único, pela Hotmart. Você assiste à aula prática, cola os 3 agentes na IA que você já usa e vira a chave quando quiser. Se em até 7 dias achar que não é pra você, pede o reembolso na própria plataforma e recebe 100% de volta — sem letra miúda, sem precisar justificar. Ou o curso te serve, ou não te custa nada. Já o custo de seguir explicando sua empresa todo dia pra uma IA que esquece — esse você já paga.</p>
+        
+      </div>
+  </div>
+</section>
+
+<section id="oferta" style="padding: 30px 0 50px;">
+  <div class="container">
+    <div class="price-card reveal">
+      <p class="section-label">TUDO INCLUSO</p>
+      <h3 style="font-size:22px; margin:8px 0 4px;">Curso completo + Pack do Aluno + Kit inicial</h3>
+      <p style="color:var(--text-dim); font-size:14.5px;">9 módulos · 17 aulas · 21 capacidades prontas · 3 agentes flagship · código aberto</p>
+      <div class="price-big" style="margin:16px 0 4px;">R$ 147</div>
+      <p style="color:var(--text-muted); font-size:13.5px; margin-bottom:18px;">pagamento único · sem mensalidade</p>
+      <a href="https://pay.hotmart.com/A106743966I" class="btn btn-primary" style="font-size:17px; padding:14px 34px;">Construir o cérebro da minha empresa</a>
+      <div class="guarantee">🛡️ 7 dias de garantia — reembolso 100% pela Hotmart, sem justificar</div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-center reveal">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">Você ia perguntar de qualquer jeito</h2>
+    </div>
+    <div class="faq-list reveal">
+        <details>
+          <summary>Preciso saber programar?</summary>
+          <div class="faq-body">Não. O curso foi feito pra quem não é técnico. A parte complexa já foi ensinada — pra IA, não pra você. Você aprende a ligar o sistema e a dar a direção, falando em português, do seu jeito. Todo comando aparece na tela, na ordem — e todo termo técnico que aparecer no caminho, eu traduzo na hora.</div>
+        </details>
+        <details>
+          <summary>Funciona com a IA que eu já uso? Preciso instalar algo?</summary>
+          <div class="faq-body">Funciona. O Pacote do Aluno não exige instalação nenhuma: é colar no ChatGPT, Claude ou Gemini — a IA que você já usa. Quando quiser dar o passo além, o kit inicial roda com Claude, Codex, Gemini ou Ollama (este é gratuito e roda no seu próprio computador) — e a aula prática mostra esse caminho na tela, do início ao fim.</div>
+        </details>
+        <details>
+          <summary>Onde fica o meu conhecimento? O que é esse tal de repositório?</summary>
+          <div class="faq-body">Pensa numa pasta — um grande arquivo zip que mora no SEU computador. É ali que o conhecimento da sua empresa vira arquivos organizados: o cérebro. Só sobe pra nuvem se você quiser, de forma privada. Por isso é ativo, não aluguel.</div>
+        </details>
+        <details>
+          <summary>Quanto tempo até ver funcionando?</summary>
+          <div class="faq-body">São ~1h45 de vídeo em 17 aulas curtas. A aula prática tem 23 minutos e mostra o caminho inteiro: copiar o projeto, ligar o sistema e dar a primeira missão. Dá pra assistir num fim de tarde e colar o pacote na sua IA no mesmo dia.</div>
+        </details>
+        <details>
+          <summary>E se eu travar na parte técnica?</summary>
+          <div class="faq-body">A aula prática mostra cada passo na tela, na ordem: copiar o projeto, virar a chave, fazer o primeiro pedido. E, se preferir receber tudo montado, existe o serviço opcional Feito Para Você — a gente constrói o cérebro da sua empresa pra você.</div>
+        </details>
+        <details>
+          <summary>Tem custo escondido depois?</summary>
+          <div class="faq-body">Não. R$147 é pagamento único. O kit inicial é código aberto e gratuito — dá até pra rodar com IA gratuita no seu próprio computador (Ollama). Se você já paga ChatGPT ou Claude, isso segue como está, direto com o fornecedor — não passa por nós. E o Feito Para Você é opcional, só pra quem preferir que a gente monte tudo.</div>
+        </details>
+        <details>
+          <summary>E se eu não gostar?</summary>
+          <div class="faq-body">Você tem 7 dias de garantia pela Hotmart. Pede o reembolso na própria plataforma e recebe 100% de volta, sem precisar justificar nada.</div>
+        </details>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 40px 0 90px;">
+  <div class="container" style="text-align:center; max-width:760px;">
+    <p class="reveal" style="font-size:17px; line-height:1.7; color:var(--text-dim);">Chega de explicar sua empresa pra quem esquece. Construa o cérebro dela — R$147, pagamento único, 7 dias de garantia</p>
+    <div style="margin-top:22px;" class="reveal"><a href="https://pay.hotmart.com/A106743966I" class="btn btn-primary" style="font-size:17px; padding:14px 34px;">Gira a chave — R$147</a></div>
+  </div>
+</section>
+
+<div class="sticky-cta">
+  <span class="hide-m">Construa o Cérebro da Sua Empresa</span>
+  <span style="color:var(--synapse);">R$ 147</span>
+  <a href="https://pay.hotmart.com/A106743966I" class="btn btn-primary btn-sm">Comprar agora</a>
+</div>
+
+<script>
+(function() {
+  var io2 = new IntersectionObserver(function(es) { es.forEach(function(x) { if (x.isIntersecting) x.target.classList.add('visible'); }); }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(function(el) { io2.observe(el); });
+})();
+</script>
+</body>
+</html>
