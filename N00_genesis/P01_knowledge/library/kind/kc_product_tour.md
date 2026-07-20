@@ -1,0 +1,58 @@
+---
+id: kc_product_tour
+kind: knowledge_card
+8f: F3_inject
+title: Product Tour Guide
+version: 1.0.0
+quality: null
+pillar: P01
+tldr: "Guided in-app walkthrough with tooltips, triggers, and sequential steps for feature discovery"
+when_to_use: "When you need to onboard users to a product via interactive step-by-step feature highlights"
+keywords: [tooltips, triggers, interactive triggers, on-page load, scroll detection, user action trigger, feature highlight, concise, visual cues]
+density_score: 0.96
+related:
+  - product-tour-builder
+  - bld_knowledge_card_product_tour
+  - n00_product_tour_manifest
+  - bld_instruction_product_tour
+  - interactive-demo-builder
+---
+
+# Product Tour Guide
+
+## Overview
+An in-app product tour is a guided walkthrough that helps users discover key features through contextual tooltips and interactive triggers. This guide explains how to create and customize effective product tours.
+
+## Key Elements
+1. **Steps**: Sequential actions to demonstrate features
+2. **Tooltips**: Contextual explanations for each step
+3. **Triggers**: User actions that initiate the tour
+
+## Step Specification
+- **Step 1**: Welcome screen with tour activation button
+- **Step 2**: Feature highlight with tooltip explanation
+- **Step 3**: Interactive demo with user action trigger
+- **Step 4**: Completion confirmation and feedback
+
+## Tooltip Examples
+- "Tap here to access advanced settings"
+- "Swipe left to view additional options"
+- "Hold the icon for extended functionality"
+
+## Trigger Mechanics
+- **On-page load**: Automatic tour initiation
+- **User click**: Manual tour activation
+- **Scroll detection**: Triggered when user reaches specific section
+
+## Best Practices
+- Keep tooltips concise (max 3 sentences)
+- Use visual cues to highlight interactive elements
+- Allow users to skip or pause the tour at any time
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[product-tour-builder]] | downstream | 0.50 |
+| [[bld_knowledge_card_product_tour]] | sibling | 0.45 |
+| [[bld_instruction_product_tour]] | downstream | 0.44 |
+| [[interactive-demo-builder]] | downstream | 0.38 |

@@ -1,0 +1,59 @@
+---
+id: kc_eval_framework
+kind: knowledge_card
+8f: F3_inject
+title: Evaluation Framework Integration
+version: 1.0.0
+quality: null
+pillar: P01
+tldr: "Systematic validation framework with setup, execution, and quality reporting for artifacts"
+when_to_use: "When you need end-to-end evaluation infrastructure including benchmarks and quality gates"
+keywords: [token efficiency analysis, schema validation, knowledge taxonomies, quality thresholds, remediation workflows, performance benchmarks, automated tests, continuous improvement loops]
+density_score: 0.87
+related:
+  - eval-framework-builder
+  - kc_judge_config
+  - judge-config-builder
+  - bld_instruction_eval_framework
+  - p01_kc_qa_validation
+---
+
+# Evaluation Framework Integration
+
+This framework enables systematic validation of CEX artifacts through structured testing and analysis. Key components include:
+
+1. **Setup**
+   - Install required dependencies
+   - Initialize evaluation environment
+   - Configure baseline metrics
+
+2. **Configuration**
+   - Define evaluation parameters
+   - Set quality thresholds
+   - Specify validation rules
+
+3. **Execution**
+   - Run automated tests
+   - Execute performance benchmarks
+   - Monitor real-time metrics
+
+4. **Validation**
+   - Compare results against benchmarks
+   - Generate quality reports
+   - Trigger remediation workflows
+
+5. **Integration Points**
+   - /validate command
+   - /evolve process
+   - Quality gate checks
+   - Continuous improvement loops
+
+The framework supports both manual and automated evaluation, with built-in support for token efficiency analysis, schema validation, and cross-referencing with knowledge taxonomies.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[eval-framework-builder]] | downstream | 0.29 |
+| [[kc_judge_config]] | sibling | 0.28 |
+| [[judge-config-builder]] | downstream | 0.26 |
+| [[bld_instruction_eval_framework]] | downstream | 0.24 |

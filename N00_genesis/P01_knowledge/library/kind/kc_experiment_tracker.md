@@ -1,0 +1,61 @@
+---
+id: kc_experiment_tracker
+kind: knowledge_card
+8f: F3_inject
+title: Experiment Tracker
+version: 1.0.0
+quality: null
+pillar: P01
+tldr: "Structured framework for documenting, executing, and analyzing experiments with result logging"
+when_to_use: "When running ML or system experiments that need reproducible tracking of parameters and results"
+keywords: [experiment tracker, configuration management, result logging, version control, statistical evaluation, visualization, metadata categories, semantic versioning, baseline comparisons, aggregated results]
+density_score: 0.99
+related:
+  - experiment-tracker-builder
+  - n00_experiment_tracker_manifest
+  - experiment-config-builder
+  - bld_collaboration_experiment_config
+  - bld_config_experiment_tracker
+---
+
+# Experiment Tracker
+
+## Purpose
+A structured framework for documenting, executing, and analyzing experiments with configurable parameters and result tracking.
+
+## Key Features
+- **Configuration Management**: Store hypotheses, variables, and control parameters
+- **Result Logging**: Automated tracking of metrics and observations
+- **Version Control**: Link experiments to code versions and dependencies
+- **Analysis Tools**: Built-in statistical evaluation and visualization
+
+## Usage Example
+```yaml
+experiment:
+  id: "exp-2023-04-15-01"
+  title: "Model Optimization Test"
+  parameters:
+    learning_rate: 0.001
+    batch_size: 32
+  results:
+    accuracy: 0.92
+    loss: 0.078
+  metadata:
+    created_at: 2023-04-15T14:30:00Z
+    researcher: "john.doe"
+```
+
+## Best Practices
+1. Use semantic versioning for experiment IDs
+2. Document all assumptions and constraints
+3. Include baseline comparisons
+4. Store raw data alongside aggregated results
+5. Tag experiments with relevant metadata categories
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[experiment-tracker-builder]] | downstream | 0.33 |
+| [[experiment-config-builder]] | downstream | 0.29 |
+| [[bld_collaboration_experiment_config]] | downstream | 0.29 |
+| [[bld_config_experiment_tracker]] | downstream | 0.28 |

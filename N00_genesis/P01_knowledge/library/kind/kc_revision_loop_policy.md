@@ -1,0 +1,126 @@
+---
+id: kc_revision_loop_policy
+kind: knowledge_card
+8f: F3_inject
+pillar: P01
+nucleus: n00
+title: "KC: revision_loop_policy"
+version: 1.0.0
+quality: null
+tags: [knowledge_card, revision_loop_policy, p11, escalation, iteration]
+tldr: "Declarative iteration budget for artifact revision cycles with quality floor and escalation targets"
+when_to_use: "When capping how many times an artifact can be revised before escalating to a human or senior nucleus"
+keywords: [revision_loop_policy, iteration_on_quality_floor, priority_order, escalation_target, per_scenario_overrides, quality_gate, pipeline, artifact, attempt_count]
+density_score: 0.92
+upstream_source: null
+related:
+  - n00_revision_loop_policy_manifest
+  - revision-loop-policy-builder
+  - p11_arch_revision_loop_policy
+  - bld_kc_revision_loop_policy
+  - p11_out_tpl_revision_loop_policy
+---
+
+## What is revision_loop_policy?
+
+A `revision_loop_policy` is a declarative artifact (P11, GOVERN) that specifies the maximum
+number of iterative revision cycles permitted on an artifact before the pipeline escalates
+to a human reviewer or a senior nucleus.
+
+The canonical rule: up to 3 iterations permitted before escalation. Conflict resolution is
+priority-based (security > quality > implementation).
+
+## Core Fields
+
+| Field | Type | Default | Description |
+|-------|------|---------|-------------|
+| `max_iterations` | int | 3 | Maximum revision cycles before escalation |
+| `iteration_on_quality_floor` | float | 8.5 | Score below which a new revision triggers |
+| `priority_order` | array | [security, quality, implementation] | Gate conflict resolution order |
+| `escalation_target` | enum | user | Where to route after exhausting iterations |
+| `escalation_message_template` | string | required | Message emitted on escalation |
+| `per_scenario_overrides` | map | {} | Kind- or scenario-specific iteration budgets |
+
+## Behavioral Contract
+
+```
+FOR each revision attempt:
+  evaluate all quality gates
+  IF all gates pass OR score >= iteration_on_quality_floor:
+    ACCEPT artifact, stop loop
+  ELSE IF attempt_count < max_iterations:
+    increment attempt_count
+    regenerate artifact with gate failure context injected
+  ELSE:
+    emit escalation_message_template
+    route to escalation_target
+```
+
+Priority resolution when gates conflict:
+1. security gates -- always evaluated first; failure blocks regardless of other scores
+2. quality gates -- evaluated second; determines iteration threshold
+3. implementation gates -- evaluated last; can be deferred to post-escalation
+
+## Boundary Analysis
+
+| Kind | What it does | Distinction |
+|------|-------------|-------------|
+| `revision_loop_policy` | Governs N iterative content-quality cycles | THIS kind |
+| `quality_gate` (P11) | Single pass/fail check at one pipeline stage | One gate; revision_loop_policy orchestrates N of them |
+| `retry_policy` (P09) | Transient-failure retries (network, timeout, rate-limit) | Infrastructure retries, not content quality |
+| `regression_check` (P11) | Compares artifact output against a known baseline | Diff-based; not iterative improvement |
+| `bugloop` (P11) | Auto-detect > fix > verify cycle for code bugs | Narrower domain (code bugs vs artifact quality) |
+
+## Design Rationale
+
+The `revision_loop_policy` is a first-class primitive alongside `pipeline_template`. The two
+kinds are designed to work together: `pipeline_template` encodes the stage sequence and
+references a `revision_loop_policy` for the iteration budget at each quality gate.
+
+## Usage Patterns
+
+### Embedded in pipeline_template
+```yaml
+revision_loop:
+  policy_ref: rlp_standard
+  max_iterations: 3
+  escalation_target: user
+```
+
+### Standalone policy for 8F F7 GOVERN
+```yaml
+---
+id: rlp_standard
+kind: revision_loop_policy
+max_iterations: 3
+iteration_on_quality_floor: 8.5
+priority_order: [security, quality, implementation]
+escalation_target: user
+escalation_message_template: "Reached 3 revisions without passing: {{failing_gates}}"
+---
+```
+
+### Security-critical override
+```yaml
+per_scenario_overrides:
+  security_critical: 5
+  documentation: 2
+  standard: 3
+```
+
+## Builder
+`archetypes/builders/revision-loop-policy-builder/`
+
+## Related Kinds
+- `quality_gate` (P11) -- the gate evaluated on each iteration
+- `pipeline_template` (P12) -- embeds revision_loop_policy as `revision_loop` block
+- `bugloop` (P11) -- auto-correction loop for code bugs
+- `retry_policy` (P09) -- transient-failure retries (different domain)
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[revision-loop-policy-builder]] | downstream | 0.56 |
+| [[p11_arch_revision_loop_policy]] | downstream | 0.54 |
+| [[bld_kc_revision_loop_policy]] | sibling | 0.53 |
+| [[p11_out_tpl_revision_loop_policy]] | downstream | 0.50 |

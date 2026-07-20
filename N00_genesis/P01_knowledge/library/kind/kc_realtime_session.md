@@ -1,0 +1,62 @@
+---
+id: kc_realtime_session
+kind: knowledge_card
+8f: F3_inject
+title: Realtime Session Configuration
+version: 1.0.0
+quality: null
+pillar: P01
+tldr: "Bidirectional low-latency session config for WebSocket/TCP with state sync and connection lifecycle"
+when_to_use: "When building live collaboration, streaming, or real-time communication features"
+keywords: [websocket, tcp, udp, tls, json, protocol buffers, latency thresholds, bandwidth management, flow control, reconnection strategies]
+density_score: 1.0
+related:
+  - kc_transport_config
+  - bld_memory_session_state
+  - bld_collaboration_session_state
+  - p01_kc_session_state
+  - p01_kc_session_backend
+---
+
+# Realtime Session Configuration
+
+A realtime session enables bidirectional, low-latency communication between participants. This configuration defines parameters for maintaining persistent, synchronized interactions.
+
+## Core Characteristics
+- **Live data exchange**: Real-time processing of input/output streams
+- **State synchronization**: Consistent session state across all participants
+- **Event-driven**: Responsive to user actions and system events
+- **Connection management**: Handles session lifecycle (establish, maintain, terminate)
+
+## Configuration Parameters
+1. **Connection settings** (WebSocket, TCP, UDP)
+2. **Security protocols** (TLS, authentication mechanisms)
+3. **Message formatting** (JSON, binary, protocol buffers)
+4. **Latency thresholds** (QoS guarantees)
+5. **Error handling** (reconnection strategies)
+6. **Bandwidth management** (flow control)
+
+## Use Cases
+- Collaborative document editing
+- Live monitoring dashboards
+- Remote desktop sharing
+- Real-time gaming
+- IoT device communication
+
+## Implementation Considerations
+- **Scalability**: Handle multiple concurrent sessions
+- **Reliability**: Ensure message delivery guarantees
+- **Security**: Protect against injection attacks
+- **Performance**: Optimize for low-latency processing
+- **Compatibility**: Support cross-platform clients
+
+This configuration is critical for applications requiring immediate feedback and synchronized interactions between participants.
+
+## Related Artifacts
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[kc_transport_config]] | sibling | 0.26 |
+| [[bld_memory_session_state]] | downstream | 0.25 |
+| [[bld_collaboration_session_state]] | downstream | 0.25 |
+| [[p01_kc_session_state]] | sibling | 0.25 |
+| [[p01_kc_session_backend]] | sibling | 0.24 |
