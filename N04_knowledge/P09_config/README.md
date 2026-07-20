@@ -2,13 +2,14 @@
 
 Environment config, feature flags, and runtime settings this nucleus reads at boot.
 
+## Ships with
+- `p09_rl_n04.md` -- rate_limit_config
+
 ## Example kinds (in P09, this checkout)
-- `tokenizer_config` -- BPE, sentencepiece, or tiktoken tokenizer parameters and vocabulary configuration
-- `alert_rule` -- Observable threshold condition that triggers a notification or automated response
-- `backpressure_policy` -- Policy defining how a system responds when downstream consumers cannot keep up with upstream producers
+- `rate_limit_config` -- Rate limiting: RPM, TPM, budget
 
 ## Schema
 See [N00_genesis/P09_config/_schema.yaml](../../N00_genesis/P09_config/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).

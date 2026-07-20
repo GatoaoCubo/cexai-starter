@@ -2,13 +2,14 @@
 
 Tool integrations -- API clients, connectors, and executable capabilities this nucleus can call.
 
+## Ships with
+- `p04_skill_n07.md` -- skill
+
 ## Example kinds (in P04, this checkout)
-- `mcp_app_extension` -- MCP Apps Extension (SEP-1865): app manifest, install/launch/terminate lifecycle, capabilities, permission g...
-- `action_paradigm` -- How agents execute actions in environments
-- `agent_name_service_record` -- IETF ANS + CNCF AgentDNS registry record for agent discovery: name, endpoint, PKI cert, protocol adapters
+- `skill` -- Reusable capability with trigger + phases (AgentSkills.io / Semantic Kernel pattern)
 
 ## Schema
 See [N00_genesis/P04_tools/_schema.yaml](../../N00_genesis/P04_tools/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).

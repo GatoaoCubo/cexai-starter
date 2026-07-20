@@ -2,13 +2,14 @@
 
 Environment config, feature flags, and runtime settings this nucleus reads at boot.
 
+## Ships with
+- `p09_env_brand_override_n02.md` -- env_config
+
 ## Example kinds (in P09, this checkout)
-- `prosody_config` -- Voice personality and emotion settings
-- `backpressure_policy` -- Policy defining how a system responds when downstream consumers cannot keep up with upstream producers
-- `quantization_config` -- Model quantization and compression settings
+- `env_config` -- Environment variables
 
 ## Schema
 See [N00_genesis/P09_config/_schema.yaml](../../N00_genesis/P09_config/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).

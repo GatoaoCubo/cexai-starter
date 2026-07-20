@@ -150,7 +150,7 @@ python _tools/cex_doctor.py
 ```
 
 Scans every artifact in the tenant -- frontmatter, size, density, naming, wiring -- and
-exits non-zero on a hard gate failure. The builder-integrity count (`Builders: 119 ... 0
+exits non-zero on a hard gate failure. The builder-integrity count (`Builders: 316 ... 0
 FAIL`) is the headline number; a few advisory MEDIUM findings elsewhere in the check
 registry are normal and do not block anything.
 
@@ -173,6 +173,9 @@ targets a specific department. On success, compile and re-check:
 python _tools/cex_compile.py <output_path>
 python _tools/cex_doctor.py
 ```
+
+Your nuclei are departments, not lone agents -- N01-N06 each ship a working crew on top of
+the single artifact you just built. Try: `python _tools/cex_crew.py list`.
 
 ## Troubleshooting
 

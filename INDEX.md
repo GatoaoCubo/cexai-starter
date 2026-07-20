@@ -45,10 +45,10 @@ https://github.com/GatoaoCubo/cexai-starter/
 +-- N00_genesis/                     -- archetype nucleus (12-pillar source of truth)
 +-- N01_intelligence/ .. N07_admin/  -- 7 operational nuclei, each a 12-pillar fractal
 |
-+-- archetypes/builders/  -- 119 typed builders (12 ISO files each)
++-- archetypes/builders/  -- 316 typed builders (12 ISO files each)
 +-- cexai/                -- the vendored cexai Python package (governance, memory, orchestration, ...)
 +-- cex_sdk/              -- Python SDK surface (agent, credentials, models, schema)
-+-- _tools/               -- 88 Python CLI tools (cex_doctor, cex_8f_runner, cex_bootstrap, ...)
++-- _tools/               -- 134 Python CLI tools (cex_doctor, cex_8f_runner, cex_bootstrap, ...)
 +-- boot/                 -- launchers: cex.sh/.ps1 (N07), run.sh/.ps1 (3 apps), anymodel/litellm
 |
 +-- brand/ . overlay/  -- this tenant's identity + enabled-capability overlay (committed, not secret)
@@ -96,7 +96,7 @@ For "I have concept X, which kind covers it?", see `CLAUDE.md`'s
 | N06_commercial | monetization | Strategic Greed | 12/12 |
 | N07_admin | orchestration | Orchestrating Sloth | 12/12 |
 
-> All 12 pillar folders ship in every nucleus: the identity kit comes pre-filled, the rest hold a README marking what belongs there until your builds fill them. `N00_genesis/` carries every schema. See [HOME -> Anatomy](HOME.md#anatomy-why-nuclei-look-incomplete).
+> All 12 pillar folders ship in every nucleus: the identity kit comes pre-filled, the rest ship working exemplar artifacts (and a crew per nucleus) that your builds extend. `N00_genesis/` carries every schema. See [HOME -> Anatomy](HOME.md#anatomy-each-nucleus-is-a-department).
 
 Details, department-vocabulary mapping, and per-nucleus sources:
 [COOKBOOK.md](COOKBOOK.md#nuclei-as-departments).
@@ -105,12 +105,12 @@ Details, department-vocabulary mapping, and per-nucleus sources:
 
 | Metric | Count |
 |---|---:|
-| Artifact kinds | 125 |
-| Builders (`archetypes/builders/*-builder/`) | 119 |
+| Artifact kinds | 318 |
+| Builders (`archetypes/builders/*-builder/`) | 316 |
 | Pillars per nucleus | 12 |
 | Nuclei (1 archetype + 7 operational) | 8 |
-| Python CLI tools (`_tools/*.py`) | 88 |
-| Claude Code builder sub-agents (`.claude/agents/*.md`) | 121 |
+| Python CLI tools (`_tools/*.py`) | 134 |
+| Claude Code builder sub-agents (`.claude/agents/*.md`) | 318 |
 | Slash commands (`.claude/commands/*.md`) | 6 |
 | Governance rules (`.claude/rules/*.md`) | 10 |
 | Lazy-loaded skills (`.claude/skills/*.md`) | 28 |

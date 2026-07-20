@@ -2,13 +2,14 @@
 
 Tool integrations -- API clients, connectors, and executable capabilities this nucleus can call.
 
+## Ships with
+- `p04_mg_n02.md` -- messaging_gateway
+
 ## Example kinds (in P04, this checkout)
-- `social_publisher` -- Automatic publishing agent: LOAD>FETCH>SELECT>GENERATE>OPTIMIZE>HASHTAGS>PUBLISH>LOG>NOTIFY>ROTATE
-- `content_library` -- Multi-channel content data layer: one row per (post_id, channel, format), approval triad, publish lifecycle...
-- `agent_name_service_record` -- IETF ANS + CNCF AgentDNS registry record for agent discovery: name, endpoint, PKI cert, protocol adapters
+- `messaging_gateway` -- Unified multi-platform messaging transport abstraction
 
 ## Schema
 See [N00_genesis/P04_tools/_schema.yaml](../../N00_genesis/P04_tools/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).

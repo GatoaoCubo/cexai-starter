@@ -2,13 +2,14 @@
 
 Output templates, formatters, and validators that shape what this nucleus produces.
 
+## Ships with
+- `fmt_content_adapter.md` -- formatter
+
 ## Example kinds (in P05, this checkout)
-- `code_of_conduct` -- Community code of conduct (Contributor Covenant pattern) with reporting + enforcement
-- `output_template` -- Builder ISO template (with {{vars}}) defining the shape of a kind-builder's F6 PRODUCE output artifact
-- `product_tour` -- In-app product tour walkthrough with step/tooltip/trigger spec
+- `formatter` -- Output formatter (json, md, yaml)
 
 ## Schema
 See [N00_genesis/P05_output/_schema.yaml](../../N00_genesis/P05_output/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).

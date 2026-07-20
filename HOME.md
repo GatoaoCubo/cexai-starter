@@ -1,6 +1,17 @@
 ---
 title: CEXAI Sovereign Starter
-description: A sovereign, unfilled AI brain -- 318 kinds, 318 builders, 12 pillars, 8 nuclei. Navigate the real architecture, not a diagram of it.
+description: A sovereign, unfilled AI brain -- 318 kinds, 316 builders, 12 pillars, 8 nuclei. Navigate the real architecture, not a diagram of it.
+related:
+  - bld_config_nucleus_def
+  - index
+  - p01_faq_cex_common_questions
+  - p01_rm_cex
+  - kc_nucleus_def
+  - p08_cm_n03
+  - faq
+  - p02_mm_cex_architecture_n04
+  - bld_knowledge_card_nucleus_def
+  - p12_dag_mission_bootstrap_2026q1_n07
 ---
 
 # CEXAI Sovereign Starter
@@ -18,14 +29,17 @@ front door into the graph you are looking at right now.
 > resolves to a real file in the tree you cloned. Nothing here is illustrative-only --
 > click through and you are reading the actual repo.
 
-## In numbers (measured against this exact checkout, 2026-07-15)
+## In numbers (measured against this exact checkout, 2026-07-20)
 
 | Kinds | Builders | Pillars | Nuclei | Tools | Docs |
 |---:|---:|---:|---:|---:|---:|
-| **125** | **119** | **12** | **8** | **88** | **10** |
+| **318** | **316** | **12** | **8** | **134** | **10** |
 
 - **Kinds** -- typed artifact categories, `.cex/kinds_meta.json`: `python -c "import json; print(len(json.load(open('.cex/kinds_meta.json', encoding='utf-8'))))"`
-- **Builders** -- `archetypes/builders/*-builder/` (12 ISO files each): `ls archetypes/builders | grep -c -- '-builder$'`
+- **Builders** -- `archetypes/builders/*-builder/` (12 ISO files each), per `cex_doctor.py`'s
+  own count: `python _tools/cex_doctor.py 2>/dev/null | head -6` (a raw
+  `grep -c -- '-builder$'` over-counts by 1 -- it also matches the `_builder-builder/`
+  meta-scaffold, which builds new builders rather than being a kind-builder itself)
 - **Pillars** -- P01..P12, the domain taxonomy every nucleus mirrors (fixed by design, not counted)
 - **Nuclei** -- N00 (archetype) + N01..N07 (operational): `ls -d N0*_*/ | wc -l`
 - **Tools** -- Python CLIs, `_tools/*.py`: `ls _tools/*.py | wc -l`
@@ -33,10 +47,10 @@ front door into the graph you are looking at right now.
   set in [[INDEX|INDEX.md]]'s repo map): `README, QUICKSTART, INDEX, AGENTS, CONTRIBUTING,
   CHANGELOG, CODE_OF_CONDUCT, COOKBOOK` + `docs/HYDRATION_MAP.md`, `docs/RUNTIME_ANY_MODEL.md`
 
-These are the same counts [[README|README.md]] and [[INDEX|INDEX.md]] already publish --
-re-verified against this checkout while building this page, not copied from a template or
-from CEXAI's own (much larger) engine repo. If you change the brain, re-run the commands
-above; nothing here auto-updates.
+These are the same counts [[README|README.md]] now publishes, re-verified against this
+checkout while updating this page, not copied from a template or from CEXAI's own (much
+larger) engine repo. If you change the brain, re-run the commands above; nothing here
+auto-updates.
 
 ## The 8 nuclei -- one department per business function
 
@@ -100,10 +114,10 @@ Every one of the 8 nuclei carries this same 12-pillar taxonomy on disk -- expand
 built into yet hold a short README describing what belongs there; the Anatomy section
 just below explains the design.
 
-## Anatomy: why nuclei look "incomplete"
+## Anatomy: each nucleus is a department
 
-Every `N0X_*` nucleus carries all 12 pillar folders. What differs is how much each one
-holds on day 1 -- a nucleus ships as an **identity kit**, not a pre-filled department:
+Every `N0X_*` nucleus is a **department**, not a lone agent -- it ships with more than an
+identity. Four things ship in every nucleus on day 1:
 
 | Ships in every nucleus | Lives in |
 |---|---|
@@ -112,12 +126,39 @@ holds on day 1 -- a nucleus ships as an **identity kit**, not a pre-filled depar
 | Capability card | `P08_architecture/agent_card_n0X.md` |
 | Domain vocabulary | `P01_knowledge/kc_*_vocabulary.md` |
 
-(most nuclei also carry `P10_memory/procedural_memory_n0X.md`, their operating SOPs). Every
-other pillar folder holds a short README naming its purpose and example kinds -- a labeled
-shelf, ready for your work. The complete 12-pillar mold -- every schema included -- ships as
-[[N00_genesis/rules/n00-genesis|N00_genesis]]. A pillar fills the first time your own
-`/build` writes into it; until then its README marks the spot. Nothing is missing:
-the factory floor is complete, and the shelves are yours to fill.
+(most nuclei also carry `P10_memory/procedural_memory_n0X.md`, their operating SOPs). On top
+of the identity kit, N01-N06 each ship **a working crew** -- role-bound agents with a defined
+handoff protocol, in `P12_orchestration/crews/` -- and every working pillar (P03-P07, P09,
+P11, P12) now carries 1-3 de-branded exemplar artifacts, `{{open_vars}}` standing in for
+anything brand-specific. The complete 12-pillar mold -- every schema included -- ships as
+[[N00_genesis/rules/n00-genesis|N00_genesis]]. A pillar fills FURTHER the first time your own
+`/build` writes into it -- the shelves already hold working samples; they are not empty, and
+they are still yours to add to.
+
+## The crews -- one team per department
+
+N01-N06 each ship a `crew_template`: a multi-role team (sequential handoff or consensus vote)
+plus a `team_charter` you fill with your own mission. N07 (orchestration) ships dispatch and
+handoff exemplars instead of a self-crew -- it coordinates the other 6 departments rather
+than running its own.
+
+| Crew | Nucleus | Process | Roles |
+|---|---|---|---|
+| research_sprint | N01 Intelligence | sequential | 3 |
+| product_launch | N02 Marketing | sequential | 4 |
+| build_review | N03 Engineering | sequential | 3 |
+| cross_provider_council | N03 Engineering | consensus | 4 |
+| knowledge_pipeline | N04 Knowledge | sequential | 3 |
+| release_gate | N05 Operations | sequential | 3 |
+| pricing_sprint | N06 Commercial | sequential | 3 |
+
+```bash
+python _tools/cex_crew.py list                                  # see all 7
+python _tools/cex_crew.py show research_sprint                  # inspect the resolved plan
+python _tools/cex_crew.py run research_sprint --charter <your_charter.md> --execute
+```
+
+Full protocol: `.claude/rules/composable-crew.md`.
 
 ## Navigate
 
@@ -134,7 +175,7 @@ the factory floor is complete, and the shelves are yours to fill.
 | The whole architecture, one glance, visually | architecture.canvas |
 | One kind's full contract, worked example | [[N00_genesis/P01_knowledge/library/kind/kc_agent\|kc_agent.md]], [[N00_genesis/P01_knowledge/library/kind/kc_knowledge_card\|kc_knowledge_card.md]], [[N00_genesis/P01_knowledge/library/kind/kc_prompt_template\|kc_prompt_template.md]] |
 
-The full kind registry (all 125, machine-readable) lives at `.cex/kinds_meta.json` and the
+The full kind registry (all 318, machine-readable) lives at `.cex/kinds_meta.json` and the
 complete kind-KC library at `N00_genesis/P01_knowledge/library/kind/` -- both are real,
 both ship in your clone; only the individual kind KCs are part of this published graph
 (the registry itself is JSON config, not a knowledge page, so it is not published here).
@@ -162,7 +203,7 @@ in one run. Open an issue with your company name, site, and industry:
 ## Em português (resumo)
 
 Este e o **CEXAI Sovereign Starter**: um cerebro de IA soberano e completo, porem **nao
-preenchido** de proposito -- 8 nucleos, 12 pilares, 125 tipos de artefato, o pipeline de
+preenchido** de proposito -- 8 nucleos, 12 pilares, 318 tipos de artefato, o pipeline de
 raciocinio 8F (F1 a F8). Nao e "um motor open-source": a fabrica fechada que gerou este
 repositorio (`/genesis`) nao esta aqui -- o que voce tem e a **saida** dela, com historico
 git proprio, sem telefonar para ninguem.
@@ -179,3 +220,17 @@ empresa, site e segmento.
 measured, every link was tested against this tree -- see this mission's build report for
 the exact verification commands.*
 
+## Related Artifacts
+
+| Artifact | Relationship | Score |
+|----------|-------------|-------|
+| [[bld_config_nucleus_def]] | related | 0.46 |
+| [[index]] | related | 0.40 |
+| [[p01_faq_cex_common_questions]] | related | 0.35 |
+| [[p01_rm_cex]] | related | 0.35 |
+| [[kc_nucleus_def]] | related | 0.34 |
+| [[p08_cm_n03]] | related | 0.34 |
+| [[faq]] | related | 0.30 |
+| [[p02_mm_cex_architecture_n04]] | related | 0.30 |
+| [[bld_knowledge_card_nucleus_def]] | related | 0.30 |
+| [[p12_dag_mission_bootstrap_2026q1_n07]] | related | 0.30 |

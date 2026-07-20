@@ -2,13 +2,14 @@
 
 Tool integrations -- API clients, connectors, and executable capabilities this nucleus can call.
 
+## Ships with
+- `p04_fn_content_monetization_n06.md` -- function_def
+
 ## Example kinds (in P04, this checkout)
-- `content_factory` -- Content production pipeline: PRODUCE (grounded, one brief -> N channel rows) > REVIEW (approved-list HITL g...
-- `product_match` -- Visual product matching / record-linkage that doubles as a catalog auditor (EAN-free join key)
-- `action_paradigm` -- How agents execute actions in environments
+- `function_def` -- LLM-callable function definition (JSON Schema tool)
 
 ## Schema
 See [N00_genesis/P04_tools/_schema.yaml](../../N00_genesis/P04_tools/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).

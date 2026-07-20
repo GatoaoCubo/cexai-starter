@@ -1,6 +1,6 @@
 # CEXAI -- Cognitive Exchange AI . Typed Knowledge System for LLM Agents
 
-> <!-- cex:stat:kinds -->125<!-- /cex:stat --> kinds . <!-- cex:stat:builders -->119<!-- /cex:stat --> builders . 12 pillars . 8 nuclei (N00-N07) . 8F pipeline . <!-- cex:stat:tools -->87<!-- /cex:stat --> tools . 6 runtimes
+> <!-- cex:stat:kinds -->318<!-- /cex:stat --> kinds . <!-- cex:stat:builders -->316<!-- /cex:stat --> builders . 12 pillars . 8 nuclei (N00-N07) . 8F pipeline . <!-- cex:stat:tools -->134<!-- /cex:stat --> tools . 6 runtimes
 
 ## Positioning
 
@@ -50,6 +50,7 @@ Nucleus self-load: read `N{0X}_*/rules/n{0X}-*.md` (N07: `.claude/rules/n07-*.md
 | **Nucleus rules** | `N0{1-6}_*/rules/n0{1-6}-*.md` (1 per nucleus, lazy-loaded) |
 | **Builders** | `archetypes/builders/{kind}-builder/` (12 ISOs each) |
 | **Kind registry** | `.cex/kinds_meta.json` (318 kinds) |
+| **Composable crews** | `python _tools/cex_crew.py list\|show\|run` -- 7 crews across N01-N06, protocol in `.claude/rules/composable-crew.md` |
 
 ## 4 Rules
 
@@ -86,18 +87,18 @@ User decides WHAT -> LLM builds HOW -> verify together. Full detail: `.claude/ru
 | If you want | Use the kind | Pillar | Already exists? |
 |-------------|--------------|--------|-----------------|
 | Formal item contract (ID/I/O/owner/acceptance) | builder ISOs (12 per kind) | per-pillar | yes |
-| Workflow contract (pre/step/post/error/fallback) | `workflow` or `pipeline_template` | P12 | no -- not in lean distill |
-| Quality rubric + threshold + retries | `quality_gate` + `scoring_rubric` + `revision_loop_policy` | P11 + P07 | no -- not in lean distill |
-| Memory governance (what/how-long/version/invalidate) | `memory_architecture` + `consolidation_policy` + `lifecycle_rule` | P10 + P11 | no -- not in lean distill |
+| Workflow contract (pre/step/post/error/fallback) | `workflow` or `pipeline_template` | P12 | yes |
+| Quality rubric + threshold + retries | `quality_gate` + `scoring_rubric` + `revision_loop_policy` | P11 + P07 | yes |
+| Memory governance (what/how-long/version/invalidate) | `memory_architecture` + `consolidation_policy` + `lifecycle_rule` | P10 + P11 | yes |
 | Permission layers (create/alter/approve/publish) | `rbac_policy` + `permission` + `role_assignment` | P11 + P02 | yes |
-| Audit trail (origin/version/decision/approver) | `audit_log` + `lineage_record` + frontmatter | P11 + P12 | no -- not in lean distill |
-| Multi-judge cross-provider review | `crew_template` (process: consensus) + `judge_config` (provider_override) | P12 + P07 | no -- not in lean distill |
+| Audit trail (origin/version/decision/approver) | `audit_log` + `lineage_record` + frontmatter | P11 + P12 | yes |
+| Multi-judge cross-provider review | `crew_template` (process: consensus) + `judge_config` (provider_override) | P12 + P07 | yes -- see the `cross_provider_council` crew |
 | RACI / role boundaries | `.claude/rules/raci-matrix.md` + nucleus_def | rule | yes |
-| Risk catalog | `_docs/RISK_CATALOG.md` + `threat_model` kind | P11 | no -- not in lean distill |
+| Risk catalog | `_docs/RISK_CATALOG.md` + `threat_model` kind | P11 | kind: yes -- catalog doc not carried |
 | Severity matrix | `.claude/rules/8f-reasoning.md` (Severity Matrix section) | rule | yes |
 | Honesty mechanic against sycophancy | F7c COUNCIL sub-step (cross-provider) | rule | yes |
 | End-to-end walkthrough | `examples/06_full_lifecycle/` | example | yes |
 | Executive summary | `docs/EXECUTIVE_SUMMARY.md` | doc | no -- not in lean distill |
 | Canonical glossary | `docs/glossary.md` | doc | no -- not in lean distill |
 
-> **Taxonomy Hygiene Rule**: if you don't see your concept here, apply the 5-question test in `.claude/rules/composable-crew.md` BEFORE proposing a new kind. The 125-kind taxonomy is sufficient -- gaps are usually composition gaps, not category gaps.
+> **Taxonomy Hygiene Rule**: if you don't see your concept here, apply the 5-question test in `.claude/rules/composable-crew.md` BEFORE proposing a new kind. The 318-kind taxonomy is sufficient -- gaps are usually composition gaps, not category gaps.

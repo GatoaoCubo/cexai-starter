@@ -2,13 +2,14 @@
 
 Tool integrations -- API clients, connectors, and executable capabilities this nucleus can call.
 
+## Ships with
+- `p04_cli_research_pipeline_n01.md` -- cli_tool
+
 ## Example kinds (in P04, this checkout)
-- `research_pipeline` -- 7-stage research engine: INTENT>PLAN>RETRIEVE>RESOLVE>SCORE>SYNTHESIZE>VERIFY
-- `retriever` -- Busca vetorial/keyword/hibrida sobre store local (RAG core)
-- `audio_tool` -- Speech-to-text, text-to-speech, audio analysis
+- `cli_tool` -- Command-line tool wrapping a nucleus capability
 
 ## Schema
 See [N00_genesis/P04_tools/_schema.yaml](../../N00_genesis/P04_tools/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).

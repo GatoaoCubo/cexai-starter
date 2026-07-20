@@ -2,13 +2,14 @@
 
 Tool integrations -- API clients, connectors, and executable capabilities this nucleus can call.
 
+## Ships with
+- `cli_tool_n03.md` -- cli_tool
+
 ## Example kinds (in P04, this checkout)
-- `skill` -- Reusable capability with trigger + phases (AgentSkills.io / Semantic Kernel pattern)
-- `product_match` -- Visual product matching / record-linkage that doubles as a catalog auditor (EAN-free join key)
-- `voice_pipeline` -- End-to-end voice agent architecture definition
+- `cli_tool` -- Command-line tool wrapping a nucleus capability
 
 ## Schema
 See [N00_genesis/P04_tools/_schema.yaml](../../N00_genesis/P04_tools/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).
