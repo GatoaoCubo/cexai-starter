@@ -1,5 +1,5 @@
 ---
-id: p12_tc_launch_template.md
+id: team_charter_launch_template
 kind: team_charter
 8f: F8_collaborate
 pillar: P12
