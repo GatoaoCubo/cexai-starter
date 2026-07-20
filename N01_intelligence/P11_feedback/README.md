@@ -2,13 +2,16 @@
 
 Quality gates, guardrails, and the revision loops that govern this nucleus's retries.
 
+## Ships with
+- `p11_cn_research_n01.md` -- curation_nudge
+- `p11_qg_research_n01.md` -- quality_gate
+
 ## Example kinds (in P11, this checkout)
-- `gpai_technical_doc` -- EU AI Act GPAI technical documentation (Annex IV / Article 53) -- training-data summary, compute-budget, en...
-- `incident_report` -- AI incident documentation and post-mortem
-- `opportunity_matrix` -- Scored/ranked join of supplier-cost vs market-demand for buy/sourcing decisions
+- `curation_nudge` -- Periodic prompt to persist knowledge to durable memory
+- `quality_gate` -- Quality barrier (pass/fail with score)
 
 ## Schema
 See [N00_genesis/P11_feedback/_schema.yaml](../../N00_genesis/P11_feedback/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).

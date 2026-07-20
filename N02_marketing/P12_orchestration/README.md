@@ -2,13 +2,16 @@
 
 Workflows, crews, and the handoff protocols this nucleus uses to coordinate work.
 
+## Ships with
+- `schedule_n02.md` -- schedule
+- `crews/` -- product_launch crew (sequential, 4 roles)
+
 ## Example kinds (in P12, this checkout)
-- `fabrication_manifest` -- Per-tenant fabrication recipe: {tenant_id, brand_config_ref, chosen_capabilities[], targets{brain,site,admi...
-- `checkpoint` -- Workflow state snapshot
-- `collaboration_pattern` -- Multi-agent coordination topology
+- `schedule` -- Time-based trigger that starts a workflow
+- `crew_template` -- CrewAI/AutoGen-style reusable crew blueprint (roles, process, memory, success)
 
 ## Schema
 See [N00_genesis/P12_orchestration/_schema.yaml](../../N00_genesis/P12_orchestration/_schema.yaml) for this pillar's field contract.
 
 ---
-This pillar is empty by design -- it fills the first time one of your builds writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-why-nuclei-look-incomplete).
+This pillar ships with the working exemplars above -- it fills further the first time your own `/build` writes here. See [HOME -> Anatomy](../../HOME.md#anatomy-each-nucleus-is-a-department).
