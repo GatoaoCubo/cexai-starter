@@ -22,3 +22,6 @@ node_modules/
 __pycache__/
 *.pyc
 *.tsbuildinfo
+
+# compiled artifact mirrors stay out of the public mirror (starter_mirror GDP 2026-07-16; enforced 2026-07-20)
+**/compiled/
