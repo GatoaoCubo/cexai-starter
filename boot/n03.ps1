@@ -2,8 +2,9 @@
 # No dependency on boot/_shared/*.ps1. Resolves repo root from its own location.
 # Model default: reads THIS repo's .cex/config/nucleus_models.yaml (n03 entry, full
 # claude-* ids only) with a degrade-never fallback to the hardcoded default below.
-# System prompt: sin identity + agent card CONTENT merge into ONE file passed via a
-# single content-carrying append flag -- never the literal-path form, never last-wins repeats.
+# System prompt: sin identity + agent card + context_self_select + nucleus_kinds_n03 +
+# constitution_manifest CONTENT all merge into ONE file passed via a single
+# content-carrying append flag -- never the literal-path form, never last-wins repeats.
 # This script lives in <root>/boot/ -- repo root is its parent directory.
 # Dispatched by _spawn/spawn_solo.ps1 / _spawn/spawn_grid.ps1 (boot/n03.ps1 convention);
 # also safe to run directly for a one-off interactive session in this nucleus.
@@ -67,12 +68,13 @@ if (-not (Get-Command claude -ErrorAction SilentlyContinue)) {
     exit 1
 }
 
-# --- System prompt: ONE merged append (sin identity + agent card CONTENT) ---
+# --- System prompt: ONE merged append (sin identity + agent card + L1 docs) ---
 # claude CLI facts: (1) the path-string form of --append-system-prompt injects the
 # literal PATH text, never file content -- only the -file form injects CONTENT;
 # (2) both forms are LAST-WINS across repeats; (3) the two forms are mutually
-# exclusive. So the sin identity + the agent card CONTENT merge into ONE file,
-# passed as a single flag. Degrade-never: a missing card only shrinks the merge;
+# exclusive. So the sin identity + the agent card + context_self_select +
+# nucleus_kinds_n03 + constitution_manifest CONTENT all merge into ONE file,
+# passed as a single flag. Degrade-never: a missing source only shrinks the merge;
 # a failed write skips the append entirely -- boot itself never breaks.
 $sysPrompt = "You are driven by Inventive Pride -- technical excellence and precision -- 8F is mandatory on every build. You are the N03 Engineering nucleus of this CEX tenant. Read CLAUDE.md and N03_engineering/rules/n03-builder.md before acting."
 $appendFile = $null
@@ -83,6 +85,24 @@ try {
         $parts += (Get-Content -Raw $cardPath)
     } else {
         Write-Host "[WARN] agent card not found: $card (merged append carries the identity only)" -ForegroundColor Yellow
+    }
+    $contextSelectPath = Join-Path $cexRoot ".cex/P09_config/context_self_select.md"
+    if (Test-Path $contextSelectPath) {
+        $parts += (Get-Content -Raw $contextSelectPath)
+    } else {
+        Write-Host "[WARN] context_self_select.md not found (merged append skips it)" -ForegroundColor Yellow
+    }
+    $nucleusKindsPath = Join-Path $cexRoot ".cex/P09_config/nucleus_kinds_n03.md"
+    if (Test-Path $nucleusKindsPath) {
+        $parts += (Get-Content -Raw $nucleusKindsPath)
+    } else {
+        Write-Host "[WARN] nucleus_kinds_n03.md not found (merged append skips it)" -ForegroundColor Yellow
+    }
+    $constitutionPath = Join-Path $cexRoot ".cex/P09_config/constitution_manifest.md"
+    if (Test-Path $constitutionPath) {
+        $parts += (Get-Content -Raw $constitutionPath)
+    } else {
+        Write-Host "[WARN] constitution_manifest.md not found (merged append skips it)" -ForegroundColor Yellow
     }
     $parts += $sysPrompt
     $cacheDir = Join-Path $cexRoot ".cex/cache/boot"

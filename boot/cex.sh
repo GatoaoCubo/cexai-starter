@@ -64,6 +64,22 @@ if mkdir -p "$CEX_ROOT/.cex/cache/boot" 2>/dev/null && : > "$APPEND_FILE" 2>/dev
   else
     echo "[WARN] agent card not found: $CARD (merged append carries the identity only)" >&2
   fi
+  # R-422 (boot consciousness): 3 more G8 sources, same guarded-append idiom as the agent card
+  # above -- mirrors Central's own boot/n07.ps1 $appendSources order (minus dispatch_catalog.md,
+  # which is N07-only/Central-only and deliberately never carried into any tenant tree -- see
+  # cex_distill.py's _emit_invariant/_emit_variable R-422 carry comments).
+  for extra in \
+    ".cex/P09_config/context_self_select.md" \
+    ".cex/P09_config/nucleus_kinds_n07.md" \
+    ".cex/P09_config/constitution_manifest.md"
+  do
+    if [ -f "$extra" ]; then
+      cat "$extra" >> "$APPEND_FILE" 2>/dev/null || true
+      printf '\n\n' >> "$APPEND_FILE" 2>/dev/null || true
+    else
+      echo "[WARN] boot-consciousness source not found: $extra (merged append shrinks by one source)" >&2
+    fi
+  done
   printf '%s' "$SYS_PROMPT" >> "$APPEND_FILE" 2>/dev/null || true
 else
   APPEND_FILE=""

@@ -17,6 +17,8 @@ secrets/
 .cex/cache/
 .cex/distill/
 .cex/total_index/
+# regenerable TF-IDF search index (cex_retriever.py --build); rebuild any time, never commit
+.cex/retriever_index.json
 node_modules/
 .next/
 __pycache__/

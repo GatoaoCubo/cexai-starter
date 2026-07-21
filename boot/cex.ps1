@@ -2,8 +2,9 @@
 # No dependency on boot/_shared/*.ps1. Resolves repo root from its own location.
 # Model default (R-126): reads the tenant's OWN .cex/config/nucleus_models.yaml (n07 entry,
 # full claude-* ids only) with a degrade-never fallback to the hardcoded default below.
-# System prompt (R-022): sin identity + agent card CONTENT merge into ONE file passed via a
-# single content-carrying append flag -- never the literal-path form, never last-wins repeats.
+# System prompt (R-022): sin identity + agent card + context_self_select + nucleus_kinds_n07 +
+# constitution_manifest CONTENT all merge into ONE file passed via a single
+# content-carrying append flag -- never the literal-path form, never last-wins repeats.
 # This script lives in <root>/boot/ -- repo root is its parent directory.
 
 $ErrorActionPreference = "Stop"
@@ -63,9 +64,10 @@ if (-not (Get-Command claude -ErrorAction SilentlyContinue)) {
 # (1) the path-string form of the append flag injects the literal PATH, never file
 # content -- only the -file form injects CONTENT; (2) both forms are LAST-WINS across
 # repeats; (3) the two forms are mutually exclusive. So the sin identity + the agent
-# card CONTENT merge into ONE file under the boot cache, passed as a single flag.
-# Degrade-never: a missing card only shrinks the merge; a failed write skips the
-# append entirely -- the boot itself never breaks.
+# card + context_self_select + nucleus_kinds_n07 + constitution_manifest CONTENT all
+# merge into ONE file under the boot cache, passed as a single flag. Degrade-never: a
+# missing source only shrinks the merge; a failed write skips the append entirely --
+# the boot itself never breaks.
 $sysPrompt = "You are driven by Orchestrating Sloth -- you delegate perfectly and never build directly. You are the N07 Orchestrator of this CEX tenant. Read CLAUDE.md and .claude/rules/n07-orchestrator.md before acting."
 $appendFile = $null
 try {
@@ -75,6 +77,24 @@ try {
         $parts += (Get-Content -Raw $cardPath)
     } else {
         Write-Host "[WARN] agent card not found: $card (merged append carries the identity only)" -ForegroundColor Yellow
+    }
+    $contextSelectPath = Join-Path $cexRoot ".cex/P09_config/context_self_select.md"
+    if (Test-Path $contextSelectPath) {
+        $parts += (Get-Content -Raw $contextSelectPath)
+    } else {
+        Write-Host "[WARN] context_self_select.md not found (merged append skips it)" -ForegroundColor Yellow
+    }
+    $nucleusKindsPath = Join-Path $cexRoot ".cex/P09_config/nucleus_kinds_n07.md"
+    if (Test-Path $nucleusKindsPath) {
+        $parts += (Get-Content -Raw $nucleusKindsPath)
+    } else {
+        Write-Host "[WARN] nucleus_kinds_n07.md not found (merged append skips it)" -ForegroundColor Yellow
+    }
+    $constitutionPath = Join-Path $cexRoot ".cex/P09_config/constitution_manifest.md"
+    if (Test-Path $constitutionPath) {
+        $parts += (Get-Content -Raw $constitutionPath)
+    } else {
+        Write-Host "[WARN] constitution_manifest.md not found (merged append skips it)" -ForegroundColor Yellow
     }
     $parts += $sysPrompt
     $cacheDir = Join-Path $cexRoot ".cex/cache/boot"

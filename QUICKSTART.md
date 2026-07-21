@@ -154,6 +154,18 @@ exits non-zero on a hard gate failure. The builder-integrity count (`Builders: 3
 FAIL`) is the headline number; a few advisory MEDIUM findings elsewhere in the check
 registry are normal and do not block anything.
 
+### Build the search index (optional, first run)
+
+```bash
+python _tools/cex_retriever.py --build
+```
+
+Builds `.cex/retriever_index.json` -- a TF-IDF index over every artifact's frontmatter
+and body preview (gitignored, regenerate any time). Powers `--query "<task>" --top-k 5`
+lookups that find related artifacts before you build something new; skip this step and
+those lookups just come back empty, nothing else depends on it. `--stats` shows what's
+indexed once built.
+
 ### Build one artifact via 8F
 
 ```bash
