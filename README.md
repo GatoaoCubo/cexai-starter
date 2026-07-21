@@ -30,6 +30,10 @@
   <img src="docs/assets/hero.png" alt="CEXAI Sovereign Starter" width="720">
 </p>
 
+<p align="center">
+  <strong>Want a guided, paid course instead?</strong> <a href="https://go.hotmart.com/A106743966I?src=github-readme">Método CEXAI Driver</a> walks through this exact brain, step by step, in Portuguese.
+</p>
+
 ## What this is
 
 This is an **unfilled, complete, runnable** AI-brain repository: 8 nuclei, 12 pillars, 318
