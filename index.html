@@ -317,8 +317,24 @@
       font-size: clamp(14px, 2vw, 17px);
       color: var(--text-muted);
       max-width: 580px;
-      margin: 0 auto 40px;
+      margin: 0 auto 14px;
       line-height: 1.75;
+    }
+    .hero-facts {
+      font-family: var(--mono);
+      font-size: clamp(12.5px, 1.8vw, 14.5px);
+      color: var(--text-dim);
+      max-width: 640px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+    .hero-thesis {
+      font-size: clamp(15px, 2.2vw, 18px);
+      font-weight: 700;
+      color: var(--synapse);
+      max-width: 520px;
+      margin: 0 auto 36px;
+      line-height: 1.5;
     }
     .hero-ctas {
       display: flex;
@@ -484,6 +500,59 @@
       font-size: 14px;
       color: var(--text-dim);
       line-height: 1.7;
+    }
+
+    /* ---- Defect taxonomy grid (The Problem) ---- */
+    .defect-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .defect-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px 24px;
+      transition: all 0.2s;
+      box-shadow: var(--shadow-sm);
+    }
+    .defect-card:hover {
+      border-color: var(--synapse);
+      box-shadow: var(--shadow-md);
+    }
+    .defect-card h4 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 8px 0 10px;
+    }
+    .defect-evidence {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .defect-evidence a {
+      color: var(--text-dim);
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      text-underline-offset: 2px;
+    }
+    .defect-evidence a:hover { color: var(--synapse); }
+    .defect-response {
+      font-size: 14px;
+      color: var(--text-dim);
+      line-height: 1.65;
+    }
+    .defect-response strong { color: var(--text); }
+    .defect-response code {
+      font-family: var(--mono);
+      font-size: 12px;
+      background: rgba(232, 67, 147, 0.08);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--synapse-dim);
     }
 
     /* ---- Tables ---- */
@@ -972,6 +1041,7 @@
       .hero { padding: 120px 0 48px; }
       .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
       .cards-grid { grid-template-columns: 1fr; gap: 16px; }
+      .defect-grid { grid-template-columns: 1fr; gap: 14px; }
       .pipeline-flow { grid-template-columns: repeat(2, 1fr); gap: 10px; }
       .prereqs-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
       .steps { grid-template-columns: 1fr; gap: 24px; }
@@ -1084,7 +1154,9 @@
     <div class="container">
       <h1>CE<span>X</span>AI</h1>
       <p class="hero-sub">Cognitive Exchange AI</p>
-      <p class="hero-tagline"><span data-en>Not an agent. An AI brain. Seven deadly sins. Twelve pillars. 318 typed kinds. Open source, sovereign, self-compounding. Intelligence compounds when exchanged.</span><span data-pt hidden>Não é um agente. É um cérebro de IA. Sete pecados capitais. Doze pillars. 318 kinds tipados. Código aberto, soberano, autoevolutivo. A inteligência se multiplica quando é compartilhada.</span></p>
+      <p class="hero-tagline"><span data-en>Not an agent. An AI brain that remembers, compounds &mdash; and belongs to you.</span><span data-pt hidden>Não é um agente. É um cérebro de IA &mdash; que lembra, acumula e é seu.</span></p>
+      <p class="hero-facts"><span data-en>8 specialized departments &middot; 19 ready agent crews &middot; 318 typed knowledge assets &mdash; open source (Apache 2.0), runs on any AI.</span><span data-pt hidden>8 departamentos especializados &middot; 19 times de agentes prontos &middot; 318 tipos de conhecimento &mdash; código aberto (Apache 2.0), roda em qualquer IA.</span></p>
+      <p class="hero-thesis"><span data-en>Intelligence compounds when exchanged.</span><span data-pt hidden>Inteligência se multiplica quando é trocada.</span></p>
       <div class="hero-ctas">
         <a href="#tiers" class="btn btn-primary"><span data-en>Build Your Brain</span><span data-pt hidden>Construa Seu Cérebro</span></a>
         <a href="demo.html" class="btn btn-secondary"><span data-en>Try it in any AI &rarr;</span><span data-pt hidden>Experimente em qualquer IA &rarr;</span></a>
@@ -1128,10 +1200,91 @@
       <div class="prose reveal">
         <p class="section-label"><span data-en>The Problem</span><span data-pt hidden>O Problema</span></p>
         <h2 class="section-title"><span data-en>Every AI agent you build forgets you by morning</span><span data-pt hidden>Todo agente de IA que você constrói esquece você até de manhã</span></h2>
-        <p><span data-en>You wrote a great system prompt. Added tools. Maybe even wired up RAG. It works -- until it drifts, hallucinates, or another team builds the same thing from scratch because nothing is reusable. Your institutional knowledge lives in Slack threads and someone's laptop.</span><span data-pt hidden>Você escreveu um ótimo system prompt. Adicionou ferramentas. Talvez até tenha implementado RAG. Funciona -- até perder o rumo, alucinar, ou outro time construir a mesma coisa do zero porque nada é reaproveitável. O conhecimento institucional da sua empresa vive em threads do Slack e no laptop de alguém.</span></p>
+        <p><span data-en>You wrote a great system prompt. Added tools. Maybe even wired up RAG. It works -- until it drifts, hallucinates, or another team builds the same thing from scratch because nothing is reusable. Your institutional knowledge lives in Slack threads and someone's laptop, not in a system either of you can query next year.</span><span data-pt hidden>Você escreveu um system prompt ótimo. Adicionou ferramentas. Talvez até tenha plugado um RAG. Funciona -- até derivar (drift), alucinar, ou outro time construir a mesma coisa do zero porque nada ali é reaproveitável. Seu conhecimento institucional mora em thread de Slack e no laptop de alguém -- não num sistema que qualquer um dos dois consiga consultar ano que vem.</span></p>
+        <p><span data-en>This is not one bug. It is a known, documented taxonomy of failure modes -- hallucination, context amnesia, behavior drift, prompt injection, non-reproducibility, knowledge silos, vendor lock-in, governance gaps, runaway cost, missing evaluation, sycophancy, context rot -- that every serious AI team runs into, roughly in this order, as soon as a prototype has to survive contact with real use. The grid below names each one plainly, with the research behind it, and says exactly what CEXAI does -- and does not do -- about it. We are not claiming to have solved model-level physics: hallucination and non-determinism are properties of the underlying LLM, not bugs CEXAI can patch. What CEXAI changes is the layer around the model -- whether a failure gets caught before it ships, whether the knowledge survives the session, and whether fixing it once fixes it everywhere you use it.</span><span data-pt hidden>Isso não é um bug isolado. É uma taxonomia conhecida e documentada de modos de falha -- alucinação, amnésia de contexto, drift de comportamento, prompt injection, não-reprodutibilidade, silos de conhecimento, lock-in de fornecedor, lacunas de governança, custo fora de controle, ausência de avaliação, sycophancy (concordância excessiva), context rot (degradação em contexto longo) -- que todo time sério de IA esbarra, mais ou menos nessa ordem, assim que um protótipo precisa sobreviver ao uso real. A grade abaixo nomeia cada um sem rodeio, com a pesquisa por trás, e diz exatamente o que o CEXAI faz -- e o que NÃO faz -- a respeito. Não estamos alegando ter resolvido a física do modelo: alucinação e não-determinismo são propriedades do LLM por baixo, não bugs que o CEXAI conserta. O que o CEXAI muda é a camada ao redor do modelo -- se uma falha é pega antes de publicar, se o conhecimento sobrevive à sessão, e se consertar uma vez conserta em todo lugar que você usa.</span></p>
         <p><span data-en>The gap is not intelligence. LLMs are already smart. The gap is <strong>infrastructure</strong> -- there is no typed, governed, composable system that turns raw LLM power into a brain that remembers, compounds, and belongs to you.</span><span data-pt hidden>A lacuna não é inteligência. As LLMs já são inteligentes. A lacuna é <strong>infraestrutura</strong> -- não existe um sistema tipado, governado e composável que transforma o poder bruto de uma LLM num cérebro que lembra, se multiplica e pertence a você.</span></p>
         <p><span data-en>CEXAI fills that gap.</span><span data-pt hidden>O CEXAI preenche essa lacuna.</span></p>
-        <blockquote><span data-en>Most AI agents are a system prompt plus a few tools. CEXAI is seven specialized departments, each running on a deadly sin, producing typed knowledge assets that compound over time.</span><span data-pt hidden>A maioria dos agentes de IA é um system prompt mais algumas ferramentas. O CEXAI é sete departamentos especializados, cada um rodando sobre um pecado capital, produzindo ativos de conhecimento tipados que se multiplicam com o tempo.</span></blockquote>
+        <blockquote><span data-en>Most AI agents are a system prompt plus a few tools. CEXAI is eight nuclei: N00, the genesis mold every department is cloned from, plus seven operating nuclei (N01-N07) -- six of them (N01-N06) specialized departments that actually produce, each biased by a different deadly sin, and N07 orchestrating (under its own sin, Sloth) but never building a thing itself. Every department produces typed knowledge assets that compound over time -- and gets checked against the taxonomy below before it ships.</span><span data-pt hidden>A maioria dos agentes de IA é um system prompt mais algumas ferramentas. O CEXAI são oito núcleos: N00, o molde-arquétipo do qual cada departamento nasce, mais sete núcleos operacionais (N01-N07) -- seis deles (N01-N06) departamentos especializados que de fato produzem, cada um enviesado por um pecado capital diferente, e N07 orquestrando (sob seu próprio pecado, a Preguiça) mas nunca construindo nada sozinho. Cada departamento produz ativos de conhecimento tipados que se acumulam com o tempo -- e passa pela taxonomia abaixo antes de ser publicado.</span></blockquote>
+      </div>
+
+      <div class="section-center reveal" style="margin-top: 56px;">
+        <p class="section-label"><span data-en>The Taxonomy</span><span data-pt hidden>A Taxonomia</span></p>
+        <h3 class="section-title" style="font-size: clamp(20px, 2.8vw, 26px);"><span data-en>12 known failure modes -- named, sourced, answered honestly</span><span data-pt hidden>12 modos de falha conhecidos -- nomeados, com fonte, respondidos com honestidade</span></h3>
+      </div>
+
+      <div class="defect-grid reveal">
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>MITIGATES</span><span data-pt hidden>MITIGA</span></span>
+          <h4>1. <span data-en>Hallucination</span><span data-pt hidden>Alucinação</span></h4>
+          <p class="defect-evidence"><span data-en>Frontier models still hallucinate ~3-15% on QA-style tasks and 40-80% on open-ended generation -- research argues it is statistically inevitable, given how models are trained and graded. (<a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank" rel="noopener">OpenAI</a>, <a href="https://www.vectara.com/blog/introducing-the-next-generation-of-vectaras-hallucination-leaderboard" target="_blank" rel="noopener">Vectara</a>)</span><span data-pt hidden>Modelos de ponta ainda alucinam ~3-15% em tarefas de QA e 40-80% em geração aberta -- pesquisa argumenta que é estatisticamente inevitável, dado como os modelos são treinados e avaliados. (<a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank" rel="noopener">OpenAI</a>, <a href="https://www.vectara.com/blog/introducing-the-next-generation-of-vectaras-hallucination-leaderboard" target="_blank" rel="noopener">Vectara</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>MITIGATES, does not eliminate</strong>: mandatory peer review (<code>quality: null</code>) plus cross-provider re-scoring catch ungrounded claims before publication. The root cause is a training-time property CEXAI cannot patch.</span><span data-pt hidden><strong>MITIGA, não elimina</strong>: peer review obrigatório (<code>quality: null</code>) mais repontuação cross-provider pegam afirmação sem lastro antes de publicar. A causa raiz é uma propriedade do treino do modelo -- o CEXAI não conserta isso.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>ADDRESSES</span><span data-pt hidden>ENDEREÇA</span></span>
+          <h4>2. <span data-en>Context amnesia</span><span data-pt hidden>Amnésia de contexto</span></h4>
+          <p class="defect-evidence"><span data-en>LLM APIs are stateless by design -- nothing persists between calls unless the caller re-supplies it. A marketed "1M-token window" is not the same as an assistant remembering yesterday.</span><span data-pt hidden>APIs de LLM são stateless por design -- nada persiste entre chamadas a menos que quem chama reenvie. A "janela de 1M tokens" vendida por modelos de ponta não é a mesma coisa que um assistente lembrar de ontem.</span></p>
+          <p class="defect-response"><span data-en><strong>ADDRESSES directly</strong>: every artifact is a typed, git-committed file (P10 Memory); the relevant ones reload at the start of every task instead of relying on the model to remember.</span><span data-pt hidden><strong>ENDEREÇA diretamente</strong>: cada artefato é um arquivo tipado e versionado em git (P10 Memory); os relevantes recarregam no início de cada tarefa em vez de depender do modelo lembrar.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>MITIGATES</span><span data-pt hidden>MITIGA</span></span>
+          <h4>3. <span data-en>Behavior drift</span><span data-pt hidden>Drift de comportamento</span></h4>
+          <p class="defect-evidence"><span data-en>The same GPT-4 checkpoint correctly answered the same prime-number question 97.6% of the time in March 2023, then 2.4% of the time three months later -- no warning given. (<a href="https://arxiv.org/abs/2307.09009" target="_blank" rel="noopener">Chen, Zaharia &amp; Zou, arXiv:2307.09009</a>)</span><span data-pt hidden>O mesmo checkpoint do GPT-4 acertou a mesma pergunta sobre número primo 97,6% das vezes em março de 2023, e 2,4% das vezes três meses depois -- sem aviso nenhum. (<a href="https://arxiv.org/abs/2307.09009" target="_blank" rel="noopener">Chen, Zaharia &amp; Zou, arXiv:2307.09009</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>MITIGATES by decoupling, not preventing</strong>: knowledge lives in typed <code>.md</code>/<code>.yaml</code>, not one model's weights, so a drifted model can be swapped (Claude/Codex/Gemini/Ollama) without losing the asset.</span><span data-pt hidden><strong>MITIGA desacoplando, não previne</strong>: o conhecimento mora em <code>.md</code>/<code>.yaml</code> tipado, não no peso de um modelo só -- dá pra trocar o modelo que derivou (Claude/Codex/Gemini/Ollama) sem perder o ativo.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>PARTIALLY ALIGNS</span><span data-pt hidden>ALINHA PARCIALMENTE</span></span>
+          <h4>4. <span data-en>Prompt injection</span><span data-pt hidden>Prompt injection</span></h4>
+          <p class="defect-evidence"><span data-en>Ranked the #1 risk in the 2025 OWASP Top 10 for LLM Applications -- recommended mitigation is least-privilege tooling plus human approval for high-risk actions. (<a href="https://www.oligo.security/academy/owasp-top-10-llm-updated-2025-examples-and-mitigation-strategies" target="_blank" rel="noopener">OWASP Top 10 LLM 2025</a>)</span><span data-pt hidden>Risco #1 no OWASP Top 10 for LLM Applications 2025 -- a mitigação recomendada é ferramenta de privilégio mínimo mais aprovação humana pra ação de alto risco. (<a href="https://www.oligo.security/academy/owasp-top-10-llm-updated-2025-examples-and-mitigation-strategies" target="_blank" rel="noopener">OWASP Top 10 LLM 2025</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>PARTIALLY ALIGNS, not a dedicated defense</strong>: scoped per-nucleus permissions, RBAC policy, and a graduated human-approval gate for irreversible actions mirror OWASP's own pattern -- but CEXAI ships no dedicated injection filter today.</span><span data-pt hidden><strong>ALINHA PARCIALMENTE, não é defesa dedicada</strong>: permissões escopadas por núcleo, política de RBAC, e um gate de aprovação humana graduado para ações irreversíveis espelham o padrão da própria OWASP -- mas o CEXAI não embarca filtro de injeção dedicado hoje.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>REFRAMES</span><span data-pt hidden>REENQUADRA</span></span>
+          <h4>5. <span data-en>Non-reproducibility</span><span data-pt hidden>Não-reprodutibilidade</span></h4>
+          <p class="defect-evidence"><span data-en>Temperature=0 is not a determinism guarantee -- floating-point rounding and GPU concurrency mean the same prompt can return a different answer; providers admit their APIs are only "mostly deterministic". (<a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/" target="_blank" rel="noopener">Thinking Machines Lab</a>)</span><span data-pt hidden>Temperature=0 não garante determinismo -- arredondamento de ponto flutuante e concorrência de GPU fazem o mesmo prompt retornar resposta diferente; os próprios provedores admitem que suas APIs são só "majoritariamente determinísticas". (<a href="https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/" target="_blank" rel="noopener">Thinking Machines Lab</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>REFRAMES the target</strong>: schema plus quality gates constrain what must be TRUE about an output (required fields, sections, quality floor), so the artifact's contract is reproducible even when the exact wording is not.</span><span data-pt hidden><strong>REENQUADRA o alvo</strong>: schema mais quality gates fixam o que precisa ser VERDADE na saída (campos obrigatórios, seções, piso de qualidade) -- o contrato do artefato é reprodutível mesmo quando a redação exata não é.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>ADDRESSES</span><span data-pt hidden>ENDEREÇA</span></span>
+          <h4>6. <span data-en>Knowledge silos</span><span data-pt hidden>Silos de conhecimento</span></h4>
+          <p class="defect-evidence"><span data-en>Institutional knowledge loss costs US companies an estimated $1.3T a year; Gartner estimates 70-80% of enterprise knowledge is tacit, living in Slack threads with no persistent record. (<a href="https://atlan.com/know/data-for-ai/institutional-knowledge-loss/" target="_blank" rel="noopener">Atlan</a>, <a href="https://bloomfire.com/blog/hidden-cost-of-disconnected-knowledge/" target="_blank" rel="noopener">Bloomfire</a>)</span><span data-pt hidden>Perda de conhecimento institucional custa um estimado de US$ 1,3 trilhão/ano só nos EUA; o Gartner estima que 70-80% do conhecimento corporativo é tácito, vivendo em thread de Slack sem registro persistente. (<a href="https://atlan.com/know/data-for-ai/institutional-knowledge-loss/" target="_blank" rel="noopener">Atlan</a>, <a href="https://bloomfire.com/blog/hidden-cost-of-disconnected-knowledge/" target="_blank" rel="noopener">Bloomfire</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>ADDRESSES directly</strong>: <code>knowledge_card</code> (P01) is the atomic, versioned, git-committed unit; a full-corpus index makes a fact written once findable by every future artifact, not re-typed into a chat thread.</span><span data-pt hidden><strong>ENDEREÇA diretamente</strong>: <code>knowledge_card</code> (P01) é a unidade atômica, versionada e commitada em git; um índice do corpus inteiro deixa um fato escrito uma vez achável por todo artefato futuro, em vez de reescrito numa thread de chat.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>ADDRESSES</span><span data-pt hidden>ENDEREÇA</span></span>
+          <h4>7. <span data-en>Vendor lock-in</span><span data-pt hidden>Lock-in de fornecedor</span></h4>
+          <p class="defect-evidence"><span data-en>A single-provider outage or a vendor collapse can strand a team whose entire workflow was built on one API -- while regulators now expect audit trails a black-box vendor makes structurally harder to produce. (<a href="https://konghq.com/blog/learning-center/vendor-lock-in" target="_blank" rel="noopener">Kong</a>)</span><span data-pt hidden>A queda de um único provedor ou o colapso de um vendor pode travar um time cujo fluxo inteiro foi construído numa API só -- e reguladores hoje esperam trilha de auditoria que um vendor caixa-preta torna estruturalmente mais difícil de produzir. (<a href="https://konghq.com/blog/learning-center/vendor-lock-in" target="_blank" rel="noopener">Kong</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>ADDRESSES directly</strong>: the same knowledge runs on Claude, Codex, Gemini, or Ollama via a documented fallback chain per nucleus; artifacts are portable <code>.md</code>/<code>.yaml</code>, not a proprietary format tied to one vendor.</span><span data-pt hidden><strong>ENDEREÇA diretamente</strong>: o mesmo conhecimento roda em Claude, Codex, Gemini ou Ollama via cadeia de fallback documentada por núcleo; artefato é <code>.md</code>/<code>.yaml</code> portável, não um formato proprietário preso a um fornecedor.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>ADDRESSES</span><span data-pt hidden>ENDEREÇA</span></span>
+          <h4>8. <span data-en>Governance / audit gaps</span><span data-pt hidden>Lacunas de governança/auditoria</span></h4>
+          <p class="defect-evidence"><span data-en>NIST published a dedicated Generative AI Profile (AI 600-1, July 2024) specifically because GenAI's risks -- confabulation, provenance, incident disclosure -- weren't covered by governance frameworks built for earlier AI. (<a href="https://digitalgovernmenthub.org/examples/nist-artificial-intelligence-risk-management-framework-generative-artificial-intelligence-profile/" target="_blank" rel="noopener">NIST AI RMF Generative AI Profile</a>)</span><span data-pt hidden>O NIST publicou um perfil dedicado de IA Generativa (AI 600-1, jul/2024) especificamente porque os riscos de GenAI -- confabulação, proveniência, divulgação de incidente -- não eram cobertos por framework de governança feito pra IA anterior. (<a href="https://digitalgovernmenthub.org/examples/nist-artificial-intelligence-risk-management-framework-generative-artificial-intelligence-profile/" target="_blank" rel="noopener">NIST AI RMF Generative AI Profile</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>ADDRESSES with a direct mapping</strong>: the <code>ai_rmf_profile</code> kind is built against NIST AI 600-1's 4 functions (GOVERN/MAP/MEASURE/MANAGE); <code>audit_log</code> and <code>lineage_record</code> kinds track origin, version, and approver per artifact.</span><span data-pt hidden><strong>ENDEREÇA com mapeamento direto</strong>: o kind <code>ai_rmf_profile</code> é construído contra as 4 funções do NIST AI 600-1 (GOVERN/MAP/MEASURE/MANAGE); os kinds <code>audit_log</code> e <code>lineage_record</code> rastreiam origem, versão e aprovador por artefato.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>MITIGATES</span><span data-pt hidden>MITIGA</span></span>
+          <h4>9. <span data-en>Unpredictable cost</span><span data-pt hidden>Custo imprevisível</span></h4>
+          <p class="defect-evidence"><span data-en>Enterprise LLM spend rose 36% in a year; agentic workflows burn 5-30x more tokens per task than plain chat -- a documented catalog logs 63 real budget-overrun incidents from unbounded retry loops. (<a href="https://arxiv.org/pdf/2606.04056" target="_blank" rel="noopener">arXiv:2606.04056</a>)</span><span data-pt hidden>Gasto empresarial com LLM subiu 36% num ano; fluxo agêntico queima 5-30x mais tokens por tarefa que um chat comum -- um catálogo documentado registra 63 incidentes reais de estouro de orçamento por loop de retry sem limite. (<a href="https://arxiv.org/pdf/2606.04056" target="_blank" rel="noopener">arXiv:2606.04056</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>MITIGATES with policy + guardrails</strong>: Sonnet is the default tier, Opus reserved for money-touching work only; every crew charter caps tokens, wall-clock, and USD. Cost discipline is policy-enforced, not automatic for every possible runaway loop.</span><span data-pt hidden><strong>MITIGA com política + guardrails</strong>: Sonnet é o nível padrão, Opus reservado só pra trabalho que toca dinheiro; todo charter de crew limita tokens, wall-clock e USD. Disciplina de custo é aplicada por política, não automática pra todo loop descontrolado possível.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>CORE MECHANIC</span><span data-pt hidden>MECÂNICA CENTRAL</span></span>
+          <h4>10. <span data-en>Missing evaluation</span><span data-pt hidden>Ausência de avaliação</span></h4>
+          <p class="defect-evidence"><span data-en>Auditing popular LLM benchmarks (GPQA, MMLU-Pro, SWE-bench), researchers found 9 of 10 used binary grading that rewards a confident wrong answer over "I don't know" -- the evaluation design itself is part of the problem. (<a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank" rel="noopener">OpenAI research</a>)</span><span data-pt hidden>Ao auditar benchmarks populares de LLM (GPQA, MMLU-Pro, SWE-bench), pesquisadores acharam que 9 de 10 usavam nota binária que premia resposta errada com confiança em vez de "não sei" -- o próprio desenho da avaliação é parte do problema. (<a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank" rel="noopener">pesquisa OpenAI</a>)</span></p>
+          <p class="defect-response"><span data-en>This is <strong>CEXAI's core mechanic, not an add-on</strong>: hard gates plus 5D scoring run on every artifact; <code>quality: null</code> is mandatory until a peer (never the producer) scores it -- nothing ships below the 8.0 floor.</span><span data-pt hidden>Essa é a <strong>mecânica central do CEXAI, não um adicional</strong>: hard gates mais pontuação 5D rodam em todo artefato; <code>quality: null</code> é obrigatório até um par (nunca quem produziu) pontuar -- nada publica abaixo do piso 8.0.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>ADDRESSES</span><span data-pt hidden>ENDEREÇA</span></span>
+          <h4>11. <span data-en>Sycophancy</span><span data-pt hidden>Sycophancy (concordância excessiva)</span></h4>
+          <p class="defect-evidence"><span data-en>Five state-of-the-art assistants consistently agreed with incorrect user claims and backed off correct answers under pushback, across four separate tasks. (<a href="https://arxiv.org/abs/2310.13548" target="_blank" rel="noopener">Sharma et al., ICLR 2024</a>)</span><span data-pt hidden>Cinco assistentes de ponta concordaram consistentemente com afirmação incorreta do usuário e recuaram de resposta correta sob pressão, em quatro tarefas distintas. (<a href="https://arxiv.org/abs/2310.13548" target="_blank" rel="noopener">Sharma et al., ICLR 2024</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>ADDRESSES directly, by design</strong>: an unusually high within-model score (&ge; 9.5) auto-triggers cross-provider re-scoring; publication blocks when the two scores diverge too much (&gt; 0.3) instead of trusting one model's self-satisfaction.</span><span data-pt hidden><strong>ENDEREÇA diretamente, por desenho</strong>: uma nota suspeitosamente alta dentro do próprio modelo (&ge; 9,5) dispara repontuação cross-provider; a publicação bloqueia quando as duas notas divergem demais (&gt; 0,3) em vez de confiar na autossatisfação de um modelo só.</span></p>
+        </div>
+        <div class="defect-card">
+          <span class="funnel-tier"><span data-en>PARTIALLY MITIGATES</span><span data-pt hidden>MITIGA PARCIALMENTE</span></span>
+          <h4>12. <span data-en>Context rot</span><span data-pt hidden>Context rot (degradação em contexto longo)</span></h4>
+          <p class="defect-evidence"><span data-en>Chroma tested 18 frontier models (GPT-4.1, Claude 4, Gemini 2.5, Qwen3) and found every one degraded as input length grew -- safe budgets land at 150K-400K tokens even on "2M-window" models. (<a href="https://www.trychroma.com/research/context-rot" target="_blank" rel="noopener">Chroma</a>)</span><span data-pt hidden>A Chroma testou 18 modelos de ponta (GPT-4.1, Claude 4, Gemini 2.5, Qwen3) e achou que todos degradam conforme a entrada cresce -- orçamento seguro fica em 150K-400K tokens mesmo em modelos de "janela de 2M". (<a href="https://www.trychroma.com/research/context-rot" target="_blank" rel="noopener">Chroma</a>)</span></p>
+          <p class="defect-response"><span data-en><strong>PARTIALLY MITIGATES, real tension flagged</strong>: retrieval loads only the relevant knowledge for a task instead of dumping full history into context -- but nuclei do run in large (up to 1M-token) windows for parallel work, which the same research says still degrades. Not fully solved.</span><span data-pt hidden><strong>MITIGA PARCIALMENTE, tensão real sinalizada</strong>: o retrieval carrega só o conhecimento relevante pra tarefa em vez de despejar o histórico inteiro no contexto -- mas os núcleos rodam em janelas grandes (até 1M tokens) pra trabalho paralelo, e a mesma pesquisa diz que isso ainda degrada. Não é resolvido de verdade.</span></p>
+        </div>
       </div>
     </div>
   </section>
