@@ -297,7 +297,7 @@
     "pillar": "P02",
     "spec_version": "AAIF 2025-12 / 60K+ project adoption",
     "status": "stable",
-    "upstream_source": "agents.md",
+    "upstream_source": "https://agents.md",
     "depends_on": [
       "agent",
       "agent_card"
