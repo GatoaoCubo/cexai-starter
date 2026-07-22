@@ -1,6 +1,6 @@
 # Material de divulgação — afiliados
 
-Artes oficiais para divulgar o curso **Construa o Cérebro da Sua Empresa** (Método CEXAI Driver).
+Artes oficiais para divulgar o curso **Construa o Cérebro da Sua Empresa** (Método CEXAI das 8 Funções de IA).
 
 | Arquivo | Uso |
 |---------|-----|
