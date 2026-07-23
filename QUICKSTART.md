@@ -122,8 +122,16 @@ You have the apps running. Now talk to the brain itself.
 
 ```bash
 sh boot/cex.sh       # Mac / Linux / WSL
-boot/cex.ps1          # Windows (PowerShell)
+boot\cex.cmd          # Windows (recommended -- no PowerShell policy friction)
+boot/cex.ps1          # Windows (PowerShell) -- if blocked, see note below
 ```
+
+> **Windows says "not digitally signed" / "não está assinado digitalmente"?**
+> That is PowerShell's execution policy (fresh Windows ships `Restricted`), plus the
+> Mark-of-the-Web on ZIP-downloaded files. Use `boot\cex.cmd` (a `.cmd` has no such
+> policy), or fix it once and keep using `.ps1`:
+> `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` then
+> `Get-ChildItem -Recurse -File | Unblock-File`
 
 This launches Claude Code pre-loaded as this tenant's N07 orchestrator, with `CLAUDE.md`,
 the brand, and all 318 kinds already in context. Needs the `claude` CLI on `PATH`. From
