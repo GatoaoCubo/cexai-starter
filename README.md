@@ -105,7 +105,7 @@ python _tools/cex_bootstrap.py --from-file your_brand.yaml
 
 # 4. See it
 sh start.sh          # Mac / Linux / WSL / Git-Bash
-.\start.ps1          # Windows (PowerShell)
+.\start.cmd          # Windows
 ```
 
 Pick option `4` (everything) in the menu. That fills in the **brain's own identity**
@@ -125,8 +125,8 @@ cd cexai-starter
 # Mac / Linux / WSL / Git-Bash
 sh start.sh
 
-# Windows (PowerShell)
-.\start.ps1
+# Windows (works on a fresh machine -- no PowerShell policy friction)
+.\start.cmd
 ```
 
 A menu comes up -- pick `4` to run the storefront, the admin, and the API together. The
@@ -179,7 +179,7 @@ raciocínio 8F, e uma vitrine + admin + API já conectados ao registro de capaci
 cérebro. Toda variável de marca fica em aberto ([preencher] / o nome neutro "Sua Empresa")
 até você preencher com os dados da sua própria empresa.
 
-**Para rodar**: `sh start.sh` (Mac/Linux/WSL/Git-Bash) ou `.\start.ps1` (Windows) -- um menu
+**Para rodar**: `sh start.sh` (Mac/Linux/WSL/Git-Bash) ou `.\start.cmd` (Windows) -- um menu
 para subir a vitrine, o admin, a API, ou tudo de uma vez, com o navegador abrindo sozinho.
 Guia completo: [QUICKSTART.md](QUICKSTART.md).
 

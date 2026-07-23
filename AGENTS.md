@@ -17,7 +17,7 @@ This repo ships real Claude Code automation:
 
 ```bash
 sh boot/cex.sh        # Mac / Linux / WSL
-boot/cex.ps1            # Windows (PowerShell)
+boot\cex.cmd            # Windows (no PowerShell execution-policy friction)
 ```
 
 What it does, concretely (read `boot/cex.sh` / `boot/cex.ps1` yourself -- both are short,
